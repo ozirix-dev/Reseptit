@@ -11,7 +11,7 @@ $RECYCLE.BIN/
 .DS_Store
 
 # -----------------------------
-# Linux
+# Linux / yleiset editorijaannot
 # -----------------------------
 *~
 
@@ -26,7 +26,7 @@ $RECYCLE.BIN/
 *.code-workspace
 
 # -----------------------------
-# Vim / swap / temp
+# Temp / backup / swap
 # -----------------------------
 *.swp
 *.swo
@@ -45,7 +45,7 @@ tmp/
 temp/
 
 # -----------------------------
-# PowerShell / shell history / exportit
+# Shell / PowerShell historia
 # -----------------------------
 *.ps1.history
 *.history
@@ -71,7 +71,7 @@ yarn-error.log*
 pnpm-debug.log*
 
 # -----------------------------
-# Build / generated
+# Build / generated / cache
 # -----------------------------
 dist/
 build/
@@ -89,8 +89,7 @@ coverage/
 *.gz
 
 # -----------------------------
-# Isot media- ja binääritiedostot
-# Estetään vahingossa versionhallintaan päätyvä raskas aineisto
+# Isot media- ja binaaritiedostot
 # -----------------------------
 *.psd
 *.ai
@@ -107,7 +106,6 @@ coverage/
 
 # -----------------------------
 # Yksityiset muistiinpanot ja luonnokset
-# Näitä voi säätää myöhemmin tarpeen mukaan
 # -----------------------------
 omatmuistiinpanot/
 private/
@@ -117,17 +115,22 @@ _secrets/
 *.local
 
 # -----------------------------
-# Ympäristömuuttujat / avaimet
+# Ymparistomuuttujat / salaisuudet
 # -----------------------------
 .env
 .env.*
 !.env.example
 *.pem
 *.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
 
 # -----------------------------
-# Kuvien tai datan väliaika-aineistot
-# Säilytä .gitkeep-tiedostot
+# Tuontikansioiden valiaikainen sisalto
+# Sailytetaan .gitkeep
 # -----------------------------
 tuonti/raakadata/*
 tuonti/siivottu/*
@@ -135,7 +138,8 @@ tuonti/siivottu/*
 !tuonti/siivottu/.gitkeep
 
 # -----------------------------
-# Kuvakansioiden placeholderit pidetään
+# Kuvakansioiden valiaikainen sisalto
+# Sailytetaan .gitkeep
 # -----------------------------
 kuvat/alkuruoat/*
 kuvat/paaruoat/*

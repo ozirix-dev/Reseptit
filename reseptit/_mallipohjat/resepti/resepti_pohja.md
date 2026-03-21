@@ -1,8 +1,10 @@
 ---
 title: ""
-slug: ""
+recipe_id: ""
+url_slug: ""
 category: ""
 diet_class: ""
+language: "fi"
 carbs_net_per_serving_g:
 carbs_total_per_serving_g:
 protein_per_serving_g:
