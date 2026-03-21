@@ -1,5 +1,19 @@
----
-title: ""
+# 
+
+Lyhyt kuvaus reseptista.
+
+## Ainekset
+
+## Valmistus
+
+## Ravintoarvio per annos
+
+## Muistiinpanot
+
+<details>
+<summary>Tekninen metadata</summary>
+
+```yaml
 recipe_id: ""
 url_slug: ""
 category: ""
@@ -18,16 +32,6 @@ time_total_min:
 difficulty: ""
 tags: []
 status: "draft"
----
+```
 
-# 
-
-## Kuvaus
-
-## Ainekset
-
-## Valmistus
-
-## Ravintoarvio per annos
-
-## Muistiinpanot
+</details>

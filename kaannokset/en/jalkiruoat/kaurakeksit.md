@@ -1,27 +1,6 @@
----
-title: "Crispy Oat Crisps"
-recipe_id: "kaurakeksit"
-url_slug: "crispy-oat-crisps"
-category: "jalkiruoka"
-diet_class: "vhh_valjempi"
-language: "en"
-source_language: "fi"
-source_recipe: "reseptit/jalkiruoat/kaurakeksit.md"
-translation_of: "kaurakeksit"
-carbs_net_per_serving_g:
-carbs_total_per_serving_g:
-protein_per_serving_g:
-fat_per_serving_g:
-servings: 24
-main_ingredient: ["kaura"]
-cooking_method: ["uuni"]
-time_total_min: 15
-difficulty: "helppo"
-tags: ["leivonta", "rapeat", "kahvipoyta", "jalkiruoka"]
-status: "draft"
----
-
 # Crispy Oat Crisps
+
+Thin and crisp oat cookies for coffee or dessert.
 
 ## Description
 
@@ -54,5 +33,31 @@ Quick and easy thin oat cookies that turn beautifully crisp as they cool. They a
 ## Notes
 
 - Translation draft only.
-- `recipe_id` matches the Finnish source recipe.
-- `url_slug` is English-specific and intended for future public routing if needed.
+
+<details>
+<summary>Technical metadata</summary>
+
+```yaml
+title: "Crispy Oat Crisps"
+recipe_id: "kaurakeksit"
+url_slug: "crispy-oat-crisps"
+category: "jalkiruoka"
+diet_class: "vhh_valjempi"
+language: "en"
+source_language: "fi"
+source_recipe: "reseptit/jalkiruoat/kaurakeksit.md"
+translation_of: "kaurakeksit"
+carbs_net_per_serving_g:
+carbs_total_per_serving_g:
+protein_per_serving_g:
+fat_per_serving_g:
+servings: 24
+main_ingredient: ["kaura"]
+cooking_method: ["uuni"]
+time_total_min: 15
+difficulty: "helppo"
+tags: ["leivonta", "rapeat", "kahvipoyta", "jalkiruoka"]
+status: "draft"
+```
+
+</details>
