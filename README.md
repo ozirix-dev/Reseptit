@@ -55,6 +55,7 @@ Projektin rungon ydin on taman kaltainen:
 D:\Reseptit
 ├── README.md
 ├── .gitignore
+├── kaannokset/
 ├── docs/
 ├── meta/
 ├── reseptit/
@@ -73,6 +74,14 @@ reseptit/
 ├── raakileet/
 ├── arkisto/
 └── _mallipohjat/
+```
+
+Mahdolliset kieliversiot voidaan tallentaa erikseen:
+
+```text
+kaannokset/
+├── en/
+└── th/
 ```
 
 ---
@@ -95,6 +104,10 @@ Sisaltaa varsinaiset reseptitiedostot.
 ### `docs/`
 
 Sisaltaa projektin ohjeistuksen, taustadokumentit ja rakenteelliset linjaukset. Tama kansio tukee yllapitoa, mutta ei ole varsinainen reseptisisallon paaalue.
+
+### `kaannokset/`
+
+Sisaltaa muiden kielten versiot silloin, kun monikielisyys otetaan kayttoon oikeasti. Suomenkielinen resepti toimii lahdeversiona, ja englanti- tai thai-versiot voidaan tallentaa erillisiin kielikohtaisiin tiedostoihin ilman, etta `reseptit/`-kansion perusrakenne rikkoutuu.
 
 ### `meta/`
 

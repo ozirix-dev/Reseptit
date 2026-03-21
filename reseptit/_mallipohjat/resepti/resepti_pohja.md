@@ -5,6 +5,8 @@ url_slug: ""
 category: ""
 diet_class: ""
 language: "fi"
+translation_languages: []
+translation_status: {}
 carbs_net_per_serving_g:
 carbs_total_per_serving_g:
 protein_per_serving_g:
