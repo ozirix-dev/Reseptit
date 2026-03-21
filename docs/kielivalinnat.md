@@ -240,6 +240,16 @@ Tarkea periaate:
 - vain loppukayttajalle nakyva sisalto muuttuu kielen mukaan
 - `recipe_id` pysyy vakaana, vaikka julkinen `url_slug` vaihtuisi kielesta toiseen
 
+Tama koskee myos otsikkorakennetta:
+
+- metatietokenttien nimet pysyvat samoina kaikissa kielissa
+- mutta reseptin varsinaiset osio-otsikot kirjoitetaan kohdekielella
+
+Esimerkki:
+
+- englanti: `Description`, `Ingredients`, `Preparation`, `Nutrition estimate per serving`, `Notes`
+- thai: kohdekielen omat vastaavat otsikot
+
 ---
 
 ## Yllapidon kaytanto
@@ -263,6 +273,7 @@ Hyva kaytannon saanto:
 
 - raakakaannos on sallittu
 - mutta sen status merkitsee selkeasti, ettei kaannos ole viela lopullinen
+- raakakaannoksessakin osio-otsikot kannattaa kirjoittaa kohdekielella heti alusta asti
 
 ---
 
