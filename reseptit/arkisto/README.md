@@ -1,4 +1,3 @@
-﻿# Arkisto
+# Arkisto
 
-T├ñh├ñn siirret├ñ├ñn arkistoidut reseptit.
-
+Tahan siirretaan arkistoidut reseptit.

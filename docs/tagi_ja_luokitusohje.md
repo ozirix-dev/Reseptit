@@ -1,6 +1,5 @@
-﻿# Tagi- ja luokitusohje
+# Tagi- ja luokitusohje
 
-- `category` kertoo p├ñ├ñluokan.
+- `category` kertoo paaluokan.
 - `diet_class` kertoo diettiluokan.
 - `tags` tarkentaa hakua.
-

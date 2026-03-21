@@ -1,6 +1,5 @@
-﻿# P├ñ├ñluokat
+# Paaluokat
 
 - alkuruoka
 - paaruoka
 - jalkiruoka
-
