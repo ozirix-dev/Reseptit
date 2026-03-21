@@ -1,4 +1,4 @@
-﻿# Reseptit
+# Reseptit
 
 Laajeneva reseptiarkisto GitHubissa.
 
@@ -6,11 +6,11 @@ Tämä projekti on rakennettu käytännölliseksi, pitkäikäiseksi ja ylläpide
 
 Tämä ei ole vain sekalainen kansio reseptejä varten, vaan tietoisesti rakennettu sisältörepo, jossa:
 
-▪ reseptejä on helppo kirjoittaa, muokata ja siivota
-▪ rakenne pysyy hallittavana myös silloin, kun reseptien määrä kasvaa
-▪ samaa reseptiä ei tarvitse kopioida useaan paikkaan
-▪ luokittelu voidaan pitää selkeänä sekä ihmiselle että myöhempää automaatiota varten
-▪ repo toimii samalla pohjana mahdolliselle verkkosivulle, haulle, suodatuksille tai muulle jatkokehitykselle
+- reseptejä on helppo kirjoittaa, muokata ja siivota
+- rakenne pysyy hallittavana myös silloin, kun reseptien määrä kasvaa
+- samaa reseptiä ei tarvitse kopioida useaan paikkaan
+- luokittelu voidaan pitää selkeänä sekä ihmiselle että myöhempää automaatiota varten
+- repo toimii samalla pohjana mahdolliselle verkkosivulle, haulle, suodatuksille tai muulle jatkokehitykselle
 
 ---
 
@@ -38,11 +38,11 @@ Tämä repo on tehty ensisijaisesti omaan käyttöön, mutta rakenne on suunnite
 
 Se sopii erityisesti tilanteisiin, joissa:
 
-▪ halutaan ylläpitää reseptejä tekstimuodossa ilman raskasta tietokantaa
-▪ halutaan käyttää GitHubia sisällön versionhallintaan
-▪ halutaan pitää mukana keto- ja VHH-ajattelu ilman sekavaa kansioräjähdystä
-▪ halutaan myöhemmin mahdollisuus julkaista sisältöä sivustona tai tuoda sitä muuhun järjestelmään
-▪ halutaan erottaa valmiit reseptit, raakileet, mallipohjat ja taustamateriaalit toisistaan
+- halutaan ylläpitää reseptejä tekstimuodossa ilman raskasta tietokantaa
+- halutaan käyttää GitHubia sisällön versionhallintaan
+- halutaan pitää mukana keto- ja VHH-ajattelu ilman sekavaa kansioräjähdystä
+- halutaan myöhemmin mahdollisuus julkaista sisältöä sivustona tai tuoda sitä muuhun järjestelmään
+- halutaan erottaa valmiit reseptit, raakileet, mallipohjat ja taustamateriaalit toisistaan
 
 ---
 
@@ -54,9 +54,9 @@ Tämän projektin rakenne nojaa yhteen lukittuun pääperiaatteeseen:
 
 Se pääkansio määräytyy ruokalajin mukaan:
 
-▪ alkuruoka
-▪ pääruoka
-▪ jälkiruoka
+- alkuruoka
+- pääruoka
+- jälkiruoka
 
 Muut tiedot, kuten keto, tiukka VHH, väljempi VHH, raaka-ainepainotus, valmistustapa, käyttötilanne ja ravintoarvot eivät muodosta omia rinnakkaisia kansiorakenteitaan. Ne kirjataan reseptin omiin metatietoihin.
 
@@ -134,19 +134,19 @@ Projektin taustadokumentaatio ja käytännön ohjeet.
 
 Tyypillisiä tiedostoja ovat esimerkiksi:
 
-▪ reseptirakenteen suunnitelma
-▪ kirjoitusohje
-▪ luokitusohje
-▪ ravintoarvojen kirjausohje
-▪ projektin rakennepuu
-▪ päivittäinen seuranta
+- reseptirakenteen suunnitelma
+- kirjoitusohje
+- luokitusohje
+- ravintoarvojen kirjausohje
+- projektin rakennepuu
+- päivittäinen seuranta
 
 Tarkoitus ei ole haudata repoa dokumenttivuoreen, vaan pitää täällä vain ne ohjeet, joista on oikeasti hyötyä rakenteen pysymisessä ehjänä.
 
 Tällä hetkellä `docs/`-kansion alla on myös:
 
-▪ `tree.md`, joka näyttää projektin rakenteen ASCII-muodossa
-▪ `seuranta/`, johon voidaan tallentaa päivittäiset projektiseurantatiedostot muodossa `YYYY-MM-DD.md`
+- `tree.md`, joka näyttää projektin rakenteen ASCII-muodossa
+- `seuranta/`, johon voidaan tallentaa päivittäiset projektiseurantatiedostot muodossa `YYYY-MM-DD.md`
 
 ---
 
@@ -156,10 +156,10 @@ Metatietojen, luokitusten ja tagien määrittelyt.
 
 Tänne voidaan pitää koottuna esimerkiksi:
 
-▪ pääluokat
-▪ diettiluokat
-▪ tagilistat
-▪ ravintokenttien nimet ja käyttöperiaatteet
+- pääluokat
+- diettiluokat
+- tagilistat
+- ravintokenttien nimet ja käyttöperiaatteet
 
 Tämä erottaa rakennepäätökset varsinaisesta reseptisisällöstä.
 
@@ -205,9 +205,9 @@ Tässä repossa käytetään kaksitasoista luokittelua.
 
 Jokaisella reseptillä on yksi pääluokka:
 
-▪ `alkuruoka`
-▪ `paaruoka`
-▪ `jalkiruoka`
+- `alkuruoka`
+- `paaruoka`
+- `jalkiruoka`
 
 Pääluokka määrittää, missä kansiossa resepti sijaitsee.
 
@@ -215,9 +215,9 @@ Pääluokka määrittää, missä kansiossa resepti sijaitsee.
 
 Jokaisella reseptillä voi olla yksi pääasiallinen diettiluokka:
 
-▪ `keto`
-▪ `vhh_tiukka`
-▪ `vhh_valjempi`
+- `keto`
+- `vhh_tiukka`
+- `vhh_valjempi`
 
 Tämä tieto kuuluu metatietoihin, ei kansiorakenteeseen.
 
@@ -257,11 +257,11 @@ status: "draft"
 
 Tämän jälkeen varsinainen resepti voi sisältää esimerkiksi:
 
-▪ kuvauksen
-▪ ainekset
-▪ valmistuksen
-▪ ravintoarvion per annos
-▪ muistiinpanot
+- kuvauksen
+- ainekset
+- valmistuksen
+- ravintoarvion per annos
+- muistiinpanot
 
 ---
 
@@ -273,12 +273,12 @@ Syy ei ole se, että Markdown olisi hieno tai trendikäs, vaan se on tässä yht
 
 Sen etuja ovat:
 
-▪ tiedostot pysyvät kevyinä ja pitkäikäisinä
-▪ sisältöä voi muokata millä tahansa kunnollisella editorilla
-▪ GitHub näyttää Markdownin siististi suoraan selaimessa
-▪ versionhallinta toimii luonnostaan
-▪ muutokset ovat helposti verrattavissa diffissä
-▪ rakenne toimii myöhemmin myös monissa staattisissa sivustotyökaluissa
+- tiedostot pysyvät kevyinä ja pitkäikäisinä
+- sisältöä voi muokata millä tahansa kunnollisella editorilla
+- GitHub näyttää Markdownin siististi suoraan selaimessa
+- versionhallinta toimii luonnostaan
+- muutokset ovat helposti verrattavissa diffissä
+- rakenne toimii myöhemmin myös monissa staattisissa sivustotyökaluissa
 
 Markdown on tässä projektissa riittävän yksinkertainen, mutta tarpeeksi jämäkkä.
 
@@ -288,18 +288,18 @@ Markdown on tässä projektissa riittävän yksinkertainen, mutta tarpeeksi jäm
 
 Tiedostonimissä käytetään seuraavia sääntöjä:
 
-▪ pienet kirjaimet
-▪ sanat erotetaan yhdysmerkeillä
-▪ ei ääkkösiä tiedostonimissä
-▪ ei turhia vuosilukuja tai versiotunnisteita nimeen
-▪ tiedostonimi kertoo reseptin ytimen mahdollisimman selvästi
+- pienet kirjaimet
+- sanat erotetaan yhdysmerkeillä
+- ei ääkkösiä tiedostonimissä
+- ei turhia vuosilukuja tai versiotunnisteita nimeen
+- tiedostonimi kertoo reseptin ytimen mahdollisimman selvästi
 
 Esimerkkejä:
 
-▪ `jauheliha-kaalipannu.md`
-▪ `kermainen-lohipata.md`
-▪ `suklaamousse-keto.md`
-▪ `marja-mascarponekulho.md`
+- `jauheliha-kaalipannu.md`
+- `kermainen-lohipata.md`
+- `suklaamousse-keto.md`
+- `marja-mascarponekulho.md`
 
 Tavoite on, että nimi on heti ymmärrettävä sekä hakemistonäkymässä että Git-diffiä tai projektipuuta selattaessa.
 
@@ -315,39 +315,39 @@ Mahdollisia tagiryhmiä:
 
 ### Raaka-aine
 
-▪ kana
-▪ kala
-▪ naudanliha
-▪ porsas
-▪ muna
-▪ kasvis
-▪ marjat
-▪ juusto
+- kana
+- kala
+- naudanliha
+- porsas
+- muna
+- kasvis
+- marjat
+- juusto
 
 ### Valmistustapa
 
-▪ uuni
-▪ pannu
-▪ keitto
-▪ salaatti
-▪ airfryer
-▪ no-cook
+- uuni
+- pannu
+- keitto
+- salaatti
+- airfryer
+- no-cook
 
 ### Käyttötilanne
 
-▪ arki
-▪ viikonloppu
-▪ juhla
-▪ meal-prep
-▪ nopea
-▪ helppo
+- arki
+- viikonloppu
+- juhla
+- meal-prep
+- nopea
+- helppo
 
 ### Erityisruokavalio tai lisätieto
 
-▪ gluteeniton
-▪ maidoton
-▪ laktoositon
-▪ sokeriton
+- gluteeniton
+- maidoton
+- laktoositon
+- sokeriton
 
 Tagien tarkoitus ei ole paisuttaa reseptiä metatietoviidakoksi, vaan mahdollistaa järkevä lisäluokitus ilman että sama tiedosto joudutaan kopioimaan useaan paikkaan.
 
@@ -385,12 +385,12 @@ Tämä repo on julkinen tarkoituksella.
 
 Se tarkoittaa käytännössä sitä, että tänne ei pidä tallentaa:
 
-▪ tunnuksia
-▪ API-avaimia
-▪ salasanoja
-▪ yksityisiä muistiinpanoja, joita ei haluta julkisiksi
-▪ lisenssiltään epäselvää ulkopuolista sisältöä sellaisenaan
-▪ muuta sellaista materiaalia, jonka näkyminen GitHubissa aiheuttaisi myöhemmin turhaa harmia
+- tunnuksia
+- API-avaimia
+- salasanoja
+- yksityisiä muistiinpanoja, joita ei haluta julkisiksi
+- lisenssiltään epäselvää ulkopuolista sisältöä sellaisenaan
+- muuta sellaista materiaalia, jonka näkyminen GitHubissa aiheuttaisi myöhemmin turhaa harmia
 
 Julkisuus on tässä projektissa ominaisuus, ei vahinko.
 
@@ -400,16 +400,16 @@ Julkisuus on tässä projektissa ominaisuus, ei vahinko.
 
 Moni reseptikokoelma alkaa viattomasti. Ensin on muutama tiedosto. Sitten tulee muutama kansio. Sen jälkeen syntyy sekalainen sekoitus tyyliä:
 
-▪ keto
-▪ kala
-▪ airfryer
-▪ nopeat
-▪ viikonloppu
-▪ suosikit
-▪ oikeat reseptit
-▪ testit
-▪ uudet
-▪ vielä-kerran-tämä
+- keto
+- kala
+- airfryer
+- nopeat
+- viikonloppu
+- suosikit
+- oikeat reseptit
+- testit
+- uudet
+- vielä-kerran-tämä
 
 Lopputuloksena kukaan ei enää oikein tiedä, missä mikäkin asuu.
 
@@ -427,14 +427,14 @@ Vaikka projekti on nyt Markdown-pohjainen reseptiarkisto, rakenne on tehty niin,
 
 Mahdollisia jatkosuuntia:
 
-▪ automaattiset listaukset metatietojen perusteella
-▪ haku ja suodatus
-▪ staattinen reseptisivusto
-▪ kuvien yhdistäminen resepteihin
-▪ ravintoarvojen automaattisempi laskenta tai tarkistus
-▪ tuonti muista tiedostomuodoista
-▪ reseptien vienti toiseen formaattiin
-▪ ateriakokonaisuudet ja ruokalistasuunnittelu
+- automaattiset listaukset metatietojen perusteella
+- haku ja suodatus
+- staattinen reseptisivusto
+- kuvien yhdistäminen resepteihin
+- ravintoarvojen automaattisempi laskenta tai tarkistus
+- tuonti muista tiedostomuodoista
+- reseptien vienti toiseen formaattiin
+- ateriakokonaisuudet ja ruokalistasuunnittelu
 
 Rakenne ei siis ole tehty vain tämän päivän käyttöä varten, vaan niin että se ei estä huomisen laajennuksia.
 
@@ -471,9 +471,9 @@ Lisenssiä ei ole vielä lopullisesti lukittu.
 
 Myöhemmin tähän voidaan lisätä projektin tavoitteeseen sopiva lisenssi sen mukaan, halutaanko painottaa enemmän:
 
-▪ sisällön jakamista
-▪ rakenteen ja työkalujen avointa käyttöä
-▪ molempia yhdessä
+- sisällön jakamista
+- rakenteen ja työkalujen avointa käyttöä
+- molempia yhdessä
 
 Siihen asti on hyvä muistaa yksi käytännön asia: julkinen näkyvyys GitHubissa ei yksinään tarkoita, että sisältö olisi automaattisesti vapaasti uudelleenkäytettävää missä tahansa muodossa.
 
@@ -483,9 +483,9 @@ Siihen asti on hyvä muistaa yksi käytännön asia: julkinen näkyvyys GitHubis
 
 Tämä repo on tarkoituksella rakennettu niin, että:
 
-▪ selaaminen pysyy ihmiselle helppona
-▪ ylläpito pysyy tekijälle järkevänä
-▪ luokittelu ei hajoa käsiin reseptimäärän kasvaessa
-▪ sisältöä voi käyttää myöhemmin myös muualla kuin vain GitHubissa
+- selaaminen pysyy ihmiselle helppona
+- ylläpito pysyy tekijälle järkevänä
+- luokittelu ei hajoa käsiin reseptimäärän kasvaessa
+- sisältöä voi käyttää myöhemmin myös muualla kuin vain GitHubissa
 
 Toisin sanoen: vähemmän kansiokaaosta, enemmän käyttökelpoista rakennetta.
