@@ -58,8 +58,10 @@ D:\Reseptit
 ├── kaannokset/
 ├── docs/
 ├── meta/
+├── omatmuistiinpanot/
 ├── reseptit/
 ├── kuvat/
+├── tmp/
 ├── tuonti/
 └── tools/
 ```
@@ -125,6 +127,14 @@ Varattu reseptikuville tai muulle media-aineistolle. Kuvien placeholder-rakenne 
 ### `tuonti/`
 
 Varattu raakadatalla, siivottavalla aineistolla ja mahdollisella import/export-tyoskentelylla. Taman tarkoitus on erottaa valiaikainen data varsinaisesta reseptisisallosta.
+
+### `omatmuistiinpanot/`
+
+Paikallinen tyokansio omille luonnoksille, kokeiluille tai muulle aineistolle, jota ei haluta osaksi varsinaista reseptiarkistoa. Taman kansion sisalto pidetaan poissa julkisesta yleisrakenteesta ja versionhallinnasta.
+
+### `tmp/`
+
+Valiaikainen tyokansio paikallisille paketeille, zip-arkistoille ja muille lyhytikaiseen kayttoon tarkoitetuille tiedostoille. Taman kansion tarkoitus on pysya projektin laidalla, ei varsinaisessa sisaltorungossa.
 
 ### `tools/`
 
