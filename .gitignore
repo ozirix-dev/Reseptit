@@ -89,6 +89,23 @@ coverage/
 *.gz
 
 # -----------------------------
+# Isot media- ja binääritiedostot
+# Estetään vahingossa versionhallintaan päätyvä raskas aineisto
+# -----------------------------
+*.psd
+*.ai
+*.tif
+*.tiff
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.flac
+*.sqlite
+*.db
+
+# -----------------------------
 # Yksityiset muistiinpanot ja luonnokset
 # Näitä voi säätää myöhemmin tarpeen mukaan
 # -----------------------------

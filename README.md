@@ -76,10 +76,13 @@ Alla on projektin ydinrakenne yleisellä tasolla.
 
 ```text
 D:\Reseptit
+├── .gitignore
 ├── docs/
 ├── kuvat/
 ├── meta/
+├── omatmuistiinpanot/
 ├── reseptit/
+├── tmp/
 ├── tools/
 ├── tuonti/
 └── README.md
@@ -135,8 +138,15 @@ Tyypillisiä tiedostoja ovat esimerkiksi:
 ▪ kirjoitusohje
 ▪ luokitusohje
 ▪ ravintoarvojen kirjausohje
+▪ projektin rakennepuu
+▪ päivittäinen seuranta
 
 Tarkoitus ei ole haudata repoa dokumenttivuoreen, vaan pitää täällä vain ne ohjeet, joista on oikeasti hyötyä rakenteen pysymisessä ehjänä.
+
+Tällä hetkellä `docs/`-kansion alla on myös:
+
+▪ `tree.md`, joka näyttää projektin rakenteen ASCII-muodossa
+▪ `seuranta/`, johon voidaan tallentaa päivittäiset projektiseurantatiedostot muodossa `YYYY-MM-DD.md`
 
 ---
 
@@ -172,6 +182,18 @@ Tämä on hyödyllinen, jos reseptejä myöhemmin tuodaan esimerkiksi muista tie
 ### `tools/`
 
 Apuskriptit ja pienet työkalut. Täällä voi olla esimerkiksi skripti, joka luo uuden reseptitiedoston valmiista mallipohjasta oikeaan kansioon.
+
+---
+
+### `tmp/`
+
+Väliaikaiset paketit, exportit ja muut hetkelliset aputiedostot. Tätä kansiota ei pidetä varsinaisen sisältörakenteen ytimenä, mutta se on käytännöllinen työskentelyssä.
+
+---
+
+### `omatmuistiinpanot/`
+
+Paikallinen oma työskentelytila yksityisille muistiinpanoille ja väliaikaisille paketeille. Tätä kansiota ei ole tarkoitus käyttää julkisena projektisisältönä, ja se on tarkoituksella rajattu versionhallinnan ulkopuolelle.
 
 ---
 
