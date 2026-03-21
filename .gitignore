@@ -1,0 +1,128 @@
+# -----------------------------
+# OS / Windows
+# -----------------------------
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# -----------------------------
+# macOS
+# -----------------------------
+.DS_Store
+
+# -----------------------------
+# Linux
+# -----------------------------
+*~
+
+# -----------------------------
+# Editorit / IDE:t
+# -----------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+.idea/
+*.code-workspace
+
+# -----------------------------
+# Vim / swap / temp
+# -----------------------------
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
+*.old
+
+# -----------------------------
+# Lokit ja debug
+# -----------------------------
+*.log
+logs/
+debug/
+tmp/
+temp/
+
+# -----------------------------
+# PowerShell / shell history / exportit
+# -----------------------------
+*.ps1.history
+*.history
+
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# -----------------------------
+# Node / JS
+# -----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -----------------------------
+# Build / generated
+# -----------------------------
+dist/
+build/
+out/
+coverage/
+.cache/
+
+# -----------------------------
+# Pakatut tiedostot
+# -----------------------------
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# -----------------------------
+# Yksityiset muistiinpanot ja luonnokset
+# Näitä voi säätää myöhemmin tarpeen mukaan
+# -----------------------------
+omatmuistiinpanot/
+private/
+_secret/
+_secrets/
+*.secret
+*.local
+
+# -----------------------------
+# Ympäristömuuttujat / avaimet
+# -----------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# -----------------------------
+# Kuvien tai datan väliaika-aineistot
+# Säilytä .gitkeep-tiedostot
+# -----------------------------
+tuonti/raakadata/*
+tuonti/siivottu/*
+!tuonti/raakadata/.gitkeep
+!tuonti/siivottu/.gitkeep
+
+# -----------------------------
+# Kuvakansioiden placeholderit pidetään
+# -----------------------------
+kuvat/alkuruoat/*
+kuvat/paaruoat/*
+kuvat/jalkiruoat/*
+!kuvat/alkuruoat/.gitkeep
+!kuvat/paaruoat/.gitkeep
+!kuvat/jalkiruoat/.gitkeep
