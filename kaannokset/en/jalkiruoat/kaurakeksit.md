@@ -25,7 +25,7 @@ status: "draft"
 
 ## Description
 
-Quick and easy thin oat cookies that turn beautifully crisp as they cool. They work well on their own, with coffee, or as an ice cream topping.
+Quick and easy thin oat cookies that turn beautifully crisp as they cool. They are lovely on their own, with coffee, or as an ice cream topping.
 
 ## Ingredients
 
@@ -40,7 +40,7 @@ Quick and easy thin oat cookies that turn beautifully crisp as they cool. They w
 ## Preparation
 
 1. Preheat the oven to 200 C.
-2. Combine the oats, sugar, vanilla sugar, flour and baking powder in a bowl.
+2. Combine the oats, sugar, vanilla sugar, flour, and baking powder in a bowl.
 3. Add the melted and cooled butter. Mix well.
 4. Add the eggs and stir into a smooth batter.
 5. Drop about 2/3 tablespoon portions onto parchment-lined baking trays. Leave plenty of space between them.
