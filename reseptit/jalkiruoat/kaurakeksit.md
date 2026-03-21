@@ -1,3 +1,27 @@
+---
+title: "Rapeat kauralastut"
+recipe_id: "kaurakeksit"
+url_slug: "rapeat-kauralastut"
+category: "jalkiruoka"
+language: "fi"
+diet_class: "vhh_valjempi"
+carbs_net_per_serving_g:
+carbs_total_per_serving_g:
+protein_per_serving_g:
+fat_per_serving_g:
+servings: 24
+main_ingredient: ["kaura"]
+cooking_method: ["uuni"]
+time_total_min: 15
+difficulty: "helppo"
+tags: ["leivonta", "rapeat", "kahvipoyta", "jalkiruoka"]
+translation_languages: ["en", "th"]
+translation_status:
+  en: "draft"
+  th: "draft"
+status: "draft"
+---
+
 # Rapeat kauralastut
 
 Nopeat ja rapeat kauralastut kahvin tai jaatelon seuraksi.
@@ -33,32 +57,3 @@ Rapeat kauralastut ovat nopeita, helppoja ja ohuita kaurakekseja, jotka sopivat 
 ## Muistiinpanot
 
 - Sopii tarjottavaksi sellaisenaan, jaatelon kanssa tai kahvin kera.
-
-<details>
-<summary>Tekninen metadata</summary>
-
-```yaml
-title: "Rapeat kauralastut"
-recipe_id: "kaurakeksit"
-url_slug: "rapeat-kauralastut"
-category: "jalkiruoka"
-diet_class: "vhh_valjempi"
-language: "fi"
-translation_languages: ["en", "th"]
-translation_status:
-  en: "draft"
-  th: "draft"
-carbs_net_per_serving_g:
-carbs_total_per_serving_g:
-protein_per_serving_g:
-fat_per_serving_g:
-servings: 24
-main_ingredient: ["kaura"]
-cooking_method: ["uuni"]
-time_total_min: 15
-difficulty: "helppo"
-tags: ["leivonta", "rapeat", "kahvipoyta", "jalkiruoka"]
-status: "draft"
-```
-
-</details>

@@ -1,5 +1,7 @@
 # Projektin tree
 
+Tama tiedosto on historiallinen tilannekuva projektin rakenteesta. Ajantasainen ensisijainen kuvaus on README.md:ssä ja muissa docs-kansion ohjeissa.
+
 ```text
 Reseptit
 +-- .gitignore

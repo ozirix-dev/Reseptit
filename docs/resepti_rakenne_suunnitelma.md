@@ -127,7 +127,8 @@ Suositeltu rakenne:
 ```yaml
 ---
 title: "Kermainen lohipata"
-slug: "kermainen-lohipata"
+recipe_id: "kermainen-lohipata"
+url_slug: "kermainen-lohipata"
 category: "paaruoka"
 diet_class: "keto"
 carbs_net_per_serving_g: 6
@@ -341,4 +342,3 @@ Tämä on tämän suunnitelman ydin, eikä sitä muuteta ilman selvää tarvetta
 ## Seuraava käytännön askel
 
 Kun tätä aletaan toteuttaa, seuraava vaihe on tehdä yksi valmis malliresepti tämän rakenteen mukaan, jotta formaatti lukittuu käytännössä eikä vain ajatustasolla.
-

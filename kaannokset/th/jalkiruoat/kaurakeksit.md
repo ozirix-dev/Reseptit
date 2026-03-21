@@ -1,3 +1,17 @@
+---
+title: "ข้าวโอ๊ตกรอบบาง"
+recipe_id: "kaurakeksit"
+url_slug: "khao-ot-krop-bang"
+category: "jalkiruoka"
+language: "th"
+source_language: "fi"
+source_recipe: "reseptit/jalkiruoat/kaurakeksit.md"
+translation_of: "kaurakeksit"
+diet_class: "vhh_valjempi"
+tags: ["leivonta", "rapeat", "kahvipoyta", "jalkiruoka"]
+status: "draft"
+---
+
 # ข้าวโอ๊ตกรอบบาง
 
 คุกกี้ข้าวโอ๊ตบางกรอบสำหรับกินกับกาแฟหรือเป็นของหวาน
@@ -33,31 +47,3 @@
 ## หมายเหตุ
 
 - ไฟล์นี้เป็นคำแปลภาษาไทยของสูตรต้นทางภาษาฟินแลนด์
-
-<details>
-<summary>ข้อมูลทางเทคนิค</summary>
-
-```yaml
-title: "ข้าวโอ๊ตกรอบบาง"
-recipe_id: "kaurakeksit"
-url_slug: "khao-ot-krop-bang"
-category: "jalkiruoka"
-diet_class: "vhh_valjempi"
-language: "th"
-source_language: "fi"
-source_recipe: "reseptit/jalkiruoat/kaurakeksit.md"
-translation_of: "kaurakeksit"
-carbs_net_per_serving_g:
-carbs_total_per_serving_g:
-protein_per_serving_g:
-fat_per_serving_g:
-servings: 24
-main_ingredient: ["kaura"]
-cooking_method: ["uuni"]
-time_total_min: 15
-difficulty: "helppo"
-tags: ["leivonta", "rapeat", "kahvipoyta", "jalkiruoka"]
-status: "draft"
-```
-
-</details>

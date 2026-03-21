@@ -58,10 +58,8 @@ D:\Reseptit
 ├── kaannokset/
 ├── docs/
 ├── meta/
-├── omatmuistiinpanot/
 ├── reseptit/
 ├── kuvat/
-├── tmp/
 ├── tuonti/
 └── tools/
 ```
@@ -85,6 +83,11 @@ kaannokset/
 ├── en/
 └── th/
 ```
+
+Huomio:
+
+- `omatmuistiinpanot/` on paikallinen apukansio, joka pidetaan irrallaan varsinaisesta projektirungosta
+- `tmp/` on paikallinen valiaikaiskansio, jota kaytetaan paketeille ja muille lyhytikaiseen kayttoon tarkoitetuille tiedostoille
 
 ---
 
@@ -170,15 +173,12 @@ Diettiluokka ei luo omaa kansiorakennetta, vaan se tallennetaan metatietoon.
 
 ## 7. Ravintoarvot ja metatiedot
 
-Reseptin loppuun lisataan yhtenainen piilotettu metadataosuus `details`-lohkona. Taman avulla tieto pysyy rakenteisena, helposti luettavana ja myohemmin jatkokaytettavana, mutta ei vie reseptin alkua kayttajalta.
+Reseptin alkuun lisataan yhtenainen YAML-frontmatter-lohko. Taman avulla tieto pysyy rakenteisena, helposti luettavana ja myohemmin jatkokaytettavana.
 
 Esimerkkirunko:
 
-```md
-<details>
-<summary>Tekninen metadata</summary>
-
 ```yaml
+---
 title: "Kermainen lohipata"
 recipe_id: "kermainen-lohipata"
 url_slug: "kermainen-lohipata"
@@ -195,10 +195,12 @@ cooking_method: ["uuni"]
 time_total_min: 40
 difficulty: "helppo"
 tags: ["arki", "gluteeniton", "uuniruoka", "vhh"]
+translation_languages: ["en", "th"]
+translation_status:
+  en: "draft"
+  th: "missing"
 status: "draft"
-```
-
-</details>
+---
 ```
 
 `recipe_id` on pysyva tekninen tunniste. `url_slug` on valinnainen julkaisu- tai reitityskayttoon tarkoitettu julkinen slug. Jos sita ei myohemmin tarvita, julkaisu voi kayttaa oletuksena `recipe_id`:ta.

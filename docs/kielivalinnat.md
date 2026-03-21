@@ -106,7 +106,6 @@ Tarkea saanto:
 - tiedostonimi pysyy toistaiseksi samana eri kieliversioiden valilla
 - kieli ratkaistaan hakemistopolulla ja metatiedoilla
 - `url_slug` voi olla kielikohtainen vain julkista URL- tai reitityskayttoa varten
-- tekninen metadata pidetaan reseptin lopussa piilotetussa `details`-lohkossa, ei frontmatterina tiedoston alussa
 
 Ei kayteta mallia:
 
@@ -149,11 +148,8 @@ Tama erottelu suojaa rakennetta kahdella tavalla:
 
 Suomenkielinen lahdetiedosto voi sisaltaa esimerkiksi:
 
-```md
-<details>
-<summary>Tekninen metadata</summary>
-
 ```yaml
+---
 title: "Kermainen lohipata"
 recipe_id: "kermainen-lohipata"
 url_slug: "kermainen-lohipata"
@@ -164,18 +160,13 @@ translation_status:
   en: "draft"
   th: "missing"
 status: "published"
-```
-
-</details>
+---
 ```
 
 Englanninkielinen kaannos voi sisaltaa esimerkiksi:
 
-```md
-<details>
-<summary>Technical metadata</summary>
-
 ```yaml
+---
 title: "Creamy salmon casserole"
 recipe_id: "kermainen-lohipata"
 url_slug: "creamy-salmon-casserole"
@@ -185,30 +176,23 @@ source_language: "fi"
 source_recipe: "reseptit/paaruoat/kermainen-lohipata.md"
 translation_of: "kermainen-lohipata"
 status: "draft"
-```
-
-</details>
+---
 ```
 
 Thaikielinen kaannos voi sisaltaa vastaavan rakenteen:
 
-```md
-<details>
-<summary>ข้อมูลทางเทคนิค</summary>
-
 ```yaml
-title: "..."
+---
+title: "ปลาแซลมอนอบซอสครีม"
 recipe_id: "kermainen-lohipata"
-url_slug: "..."
+url_slug: "pla-salmon-op-sauce-cream"
 category: "paaruoka"
 language: "th"
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/kermainen-lohipata.md"
 translation_of: "kermainen-lohipata"
 status: "draft"
-```
-
-</details>
+---
 ```
 
 Perussaanto:

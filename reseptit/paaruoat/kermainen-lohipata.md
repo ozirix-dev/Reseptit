@@ -1,3 +1,27 @@
+---
+title: "Kermainen lohipata"
+recipe_id: "kermainen-lohipata"
+url_slug: "kermainen-lohipata"
+category: "paaruoka"
+language: "fi"
+diet_class: "keto"
+carbs_net_per_serving_g: 6
+carbs_total_per_serving_g: 8
+protein_per_serving_g: 29
+fat_per_serving_g: 35
+servings: 4
+main_ingredient: ["kala", "lohi"]
+cooking_method: ["uuni"]
+time_total_min: 40
+difficulty: "helppo"
+tags: ["arki", "gluteeniton", "uuniruoka", "kala", "vhh"]
+translation_languages: ["en", "th"]
+translation_status:
+  en: "draft"
+  th: "draft"
+status: "published"
+---
+
 # Kermainen lohipata
 
 Kermainen lohipata on helppo ja tayttava arjen pääruoka.
@@ -41,32 +65,3 @@ Tama on pilottiresepti, jolla lukitaan kaytannon reseptiformaatti tahan projekti
 ## Muistiinpanot
 
 - Sopii hyvin tarjoiltavaksi esimerkiksi paistetun kesakurpitsan tai kukkakaalimuusin kanssa.
-
-<details>
-<summary>Tekninen metadata</summary>
-
-```yaml
-title: "Kermainen lohipata"
-recipe_id: "kermainen-lohipata"
-url_slug: "kermainen-lohipata"
-category: "paaruoka"
-diet_class: "keto"
-language: "fi"
-translation_languages: ["en", "th"]
-translation_status:
-  en: "draft"
-  th: "draft"
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 8
-protein_per_serving_g: 29
-fat_per_serving_g: 35
-servings: 4
-main_ingredient: ["kala", "lohi"]
-cooking_method: ["uuni"]
-time_total_min: 40
-difficulty: "helppo"
-tags: ["arki", "gluteeniton", "uuniruoka", "kala", "vhh"]
-status: "published"
-```
-
-</details>

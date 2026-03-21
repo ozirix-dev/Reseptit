@@ -3,20 +3,11 @@ title: "Creamy salmon casserole"
 recipe_id: "kermainen-lohipata"
 url_slug: "creamy-salmon-casserole"
 category: "paaruoka"
-diet_class: "keto"
 language: "en"
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/kermainen-lohipata.md"
 translation_of: "kermainen-lohipata"
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 8
-protein_per_serving_g: 29
-fat_per_serving_g: 35
-servings: 4
-main_ingredient: ["kala", "lohi"]
-cooking_method: ["uuni"]
-time_total_min: 40
-difficulty: "helppo"
+diet_class: "keto"
 tags: ["arki", "gluteeniton", "uuniruoka", "kala", "vhh"]
 status: "draft"
 ---
