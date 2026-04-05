@@ -22,17 +22,17 @@ Quick and easy thin oat cookies that turn beautifully crisp as they cool. They a
 
 ## Ingredients
 
-- 4 dl rolled oats
-- 2 dl sugar
+- 4 dl (1 2/3 cups) rolled oats
+- 2 dl (3/4 cup + 2 tbsp) sugar
 - 1 tsp vanilla sugar
 - 2 tbsp all-purpose flour
 - 2 tsp baking powder
-- 100 g butter
+- 100 g butter, melted and cooled
 - 2 eggs
 
 ## Preparation
 
-1. Preheat the oven to 200 C.
+1. Preheat the oven to 200 C / 390 F.
 2. Combine the oats, sugar, vanilla sugar, flour, and baking powder in a bowl.
 3. Add the melted and cooled butter. Mix well.
 4. Add the eggs and stir into a smooth batter.
@@ -46,4 +46,4 @@ Quick and easy thin oat cookies that turn beautifully crisp as they cool. They a
 
 ## Notes
 
-- Translation draft only.
+- Great on their own, with coffee, or as an ice cream topping.
