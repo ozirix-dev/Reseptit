@@ -32,7 +32,7 @@ Tama on jarkeva malli, koska nykyinen repo on jo vahvasti tiedostolahteinen ja m
 
 Lahde:
 
-- `D:\Reseptit`
+- `D:\Projects\Products\Reseptit`
 - reseptit Markdown-tiedostoina
 - frontmatter tekniselle metadatalle
 - kieliversiot omissa hakemistoissaan

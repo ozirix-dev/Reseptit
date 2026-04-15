@@ -7,7 +7,7 @@ param(
     [string]$Name
 )
 
-$Root = 'D:\Reseptit'
+$Root = 'D:\Projects\Products\Reseptit'
 $template = Join-Path $Root 'reseptit\_mallipohjat\resepti\resepti_pohja.md'
 
 $slug = $Name.ToLowerInvariant()

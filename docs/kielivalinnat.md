@@ -58,7 +58,7 @@ Tata ei toteuteta myoskaan mallilla, jossa jokainen kieli on suoraan `reseptit/`
 ## Suositeltu kansiorakenne
 
 ```text
-D:\Reseptit
+D:\Projects\Products\Reseptit
 ├── reseptit
 │   ├── alkuruoat
 │   ├── paaruoat

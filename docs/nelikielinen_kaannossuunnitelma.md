@@ -90,7 +90,7 @@ Tata ei kannata tehda myoskaan mallilla, jossa jokainen kieli olisi `reseptit/`-
 ## Suositeltu kansiorakenne
 
 ```text
-D:\Reseptit
+D:\Projects\Products\Reseptit
 ├── reseptit
 │   ├── alkuruoat
 │   ├── paaruoat
