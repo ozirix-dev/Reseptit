@@ -52,7 +52,7 @@ Tama malli estaa tiedostojen kopioinnin, yllapitokaaoksen ja turhan syvan kansio
 Projektin rungon ydin on taman kaltainen:
 
 ```text
-D:\Reseptit
+D:\Projects\Products\Reseptit
 ├── README.md
 ├── .gitignore
 ├── kaannokset/
@@ -379,3 +379,4 @@ Tama repo on rakennettu niin, etta:
 - sisalto sopii seka GitHub-kayttoon etta myohempaan julkaisuun
 
 Lyhyesti: mahdollisimman selkea reseptiarkisto nyt, mahdollisimman hyva pohja jatkoon myohemmin.
+
