@@ -195,6 +195,11 @@ cooking_method: ["uuni"]
 time_total_min: 40
 difficulty: "helppo"
 tags: ["arki", "gluteeniton", "uuniruoka", "vhh"]
+ingredients:
+  - amount: 200
+    unit: "g"
+    item: "ainesosa"
+    note: "valinnainen huomio"
 translation_languages: ["en", "th"]
 translation_status:
   en: "draft"
@@ -204,6 +209,10 @@ status: "draft"
 ```
 
 `recipe_id` on pysyva tekninen tunniste. `url_slug` on valinnainen julkaisu- tai reitityskayttoon tarkoitettu julkinen slug. Jos sita ei myohemmin tarvita, julkaisu voi kayttaa oletuksena `recipe_id`:ta.
+
+Ainekset tallennetaan rakenteisina riveina `ingredients`-kenttaan. Jokaisessa rivissa on numeerinen `amount` tai `null`, `unit`, `item` seka valinnainen `note`. Esimerkiksi pieni sipuli voidaan tallentaa muodossa `amount: 1`, `unit: ""`, `item: "sipuli"`, `note: "pieni"`. Maaraattomat ainekset kayttavat arvoa `null`, jotta annoslaskuri voi jattaa ne skaalaamatta. Ravintoarvot yllapidetaan vain metatiedossa, eika niita kopioida Markdown-runkoon.
+
+Sivustojulkaisu poimii vain tiedostot, joiden `status` on `published`. Luonnokset, arkisto, mallipohjat ja puutteelliset tiedostot eivat ole julkaistua reseptisisaltoa.
 
 ---
 

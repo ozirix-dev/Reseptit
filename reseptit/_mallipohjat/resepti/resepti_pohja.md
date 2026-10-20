@@ -15,6 +15,11 @@ cooking_method: []
 time_total_min:
 difficulty: ""
 tags: []
+ingredients:
+  - amount: 200
+    unit: "g"
+    item: "ainesosa"
+    note: "valinnainen huomio"
 translation_languages: []
 translation_status: {}
 status: "draft"
@@ -26,8 +31,15 @@ status: "draft"
 
 ## Ainekset
 
+Tallenna ainekset `ingredients`-metatietoon rakenteisina riveinä. Jokaisessa
+rivissä on `amount` (numero tai `null`), `unit` (yksikkö tai tyhjä merkkijono),
+`item` (ainesosa) ja tarvittaessa `note`. Jätä määrä arvoksi `null`, kun
+ainesosalla ei ole numeerista määrää; sitä ei skaalata annoslaskurissa.
+
 ## Valmistus
 
 ## Ravintoarvio per annos
+
+Tallenna ravintoarvot vain metatietokenttiin. Älä kopioi arvoja Markdown-runkoon.
 
 ## Muistiinpanot
