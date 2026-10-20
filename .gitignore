@@ -81,6 +81,7 @@ coverage/
 .playwright-cli/
 site/src/generated/content.generated.ts
 site/public/.nojekyll
+site/public/kuvat/
 site/public/robots.txt
 site/public/sitemap.xml
 
@@ -149,9 +150,15 @@ tuonti/siivottu/*
 kuvat/alkuruoat/*
 kuvat/paaruoat/*
 kuvat/jalkiruoat/*
+kuvat/leivonnaiset/*
+!kuvat/alkuruoat/*.webp
+!kuvat/paaruoat/*.webp
+!kuvat/jalkiruoat/*.webp
+!kuvat/leivonnaiset/*.webp
 !kuvat/alkuruoat/.gitkeep
 !kuvat/paaruoat/.gitkeep
 !kuvat/jalkiruoat/.gitkeep
+!kuvat/leivonnaiset/.gitkeep
 # Proton-backed backup slot
 Reseptit-Backup/**
 !Reseptit-Backup/

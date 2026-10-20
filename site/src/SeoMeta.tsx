@@ -8,6 +8,7 @@ const siteBase = "https://ozirix-dev.github.io/Reseptit";
 const sitePath = "/Reseptit";
 const baseByLocale: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" };
 const titleByLocale: Record<RecipeLocale, string> = { fi: "Reseptit", en: "Recipes", sv: "Recept", th: "สูตรอาหาร" };
+const openGraphLocale: Record<RecipeLocale, string> = { fi: "fi_FI", en: "en_GB", sv: "sv_SE", th: "th_TH" };
 
 function upsertMeta(key: string, keyValue: string, content: string): void {
   let element = document.head.querySelector<HTMLMetaElement>(`meta[${key}="${keyValue}"]`);
@@ -31,25 +32,35 @@ export function SeoMeta() {
     const strippedPath = pathname.replace(new RegExp(`^${sitePath}(?=/|$)`), "") || "/";
     const routeLocale = (Object.keys(baseByLocale) as RecipeLocale[]).find((locale) =>
       locale === "fi" ? strippedPath === "/" : strippedPath === `${baseByLocale[locale]}/` || strippedPath === baseByLocale[locale]);
+    const indexExists = routeLocale === "fi" || (routeLocale !== undefined && getRecipes(routeLocale).length > 0);
+    const known = recipe !== undefined || indexExists;
     const locale = recipe?.locale ?? routeLocale ?? "fi";
-    const title = recipe ? `${recipe.title} | ${titleByLocale[locale]}` : `${titleByLocale[locale]} | Ozirix`;
+    const title = known
+      ? recipe ? `${recipe.title} | ${titleByLocale[locale]}` : `${titleByLocale[locale]} | Ozirix`
+      : "Sivua ei löytynyt | Reseptit";
     const description = recipe?.description || (locale === "fi" ? "Selkeitä reseptejä arkeen." : `${titleByLocale[locale]} for everyday cooking.`);
-    const canonical = `${siteBase}${recipe?.routePath ?? indexPath(locale)}`;
+    const canonical = recipe ? `${siteBase}${recipe.routePath}` : indexExists ? `${siteBase}${indexPath(locale)}` : null;
     document.title = title;
     document.documentElement.lang = locale;
     upsertMeta("name", "description", description);
     upsertMeta("property", "og:title", title);
     upsertMeta("property", "og:description", description);
-    upsertMeta("property", "og:url", canonical);
-
-    document.head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang], script#recipe-jsonld').forEach((element) => element.remove());
-    const canonicalLink = document.createElement("link");
-    canonicalLink.rel = "canonical";
-    canonicalLink.href = canonical;
-    document.head.append(canonicalLink);
-
+    upsertMeta("property", "og:type", recipe ? "article" : "website");
+    upsertMeta("property", "og:locale", openGraphLocale[locale]);
+    upsertMeta("property", "og:url", canonical ?? `${siteBase}/404.html`);
+    upsertMeta("name", "twitter:card", recipe?.image ? "summary_large_image" : "summary");
+    upsertMeta("name", "twitter:title", title);
+    upsertMeta("name", "twitter:description", description);
+    document.head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang], meta[property="og:image"], meta[name="twitter:image"], script#recipe-jsonld, meta[name="robots"]').forEach((element) => element.remove());
+    if (!known) upsertMeta("name", "robots", "noindex,follow");
+    if (canonical) {
+      const canonicalLink = document.createElement("link");
+      canonicalLink.rel = "canonical";
+      canonicalLink.href = canonical;
+      document.head.append(canonicalLink);
+    }
     const translations = recipe ? getRecipeTranslations(recipe) : getRecipes().filter((entry) => entry.locale === locale);
-    const alternates = recipe
+    const alternates = !known ? [] : recipe
       ? translations.map((entry) => ({ locale: entry.locale, path: entry.routePath }))
       : (Object.keys(baseByLocale) as RecipeLocale[])
           .filter((entryLocale) => getRecipes(entryLocale).length > 0)
@@ -61,12 +72,17 @@ export function SeoMeta() {
       link.href = `${siteBase}${alternate.path}`;
       document.head.append(link);
     }
-    if (alternates.some((entry) => entry.locale === "fi")) {
+    const defaultAlternate = alternates.find((entry) => entry.locale === "fi") ?? alternates[0];
+    if (defaultAlternate) {
       const link = document.createElement("link");
       link.rel = "alternate";
       link.hreflang = "x-default";
-      link.href = `${siteBase}/`;
+      link.href = `${siteBase}${defaultAlternate.path}`;
       document.head.append(link);
+    }
+    if (recipe?.image) {
+      upsertMeta("property", "og:image", recipe.image.src);
+      upsertMeta("name", "twitter:image", recipe.image.src);
     }
     if (recipe) {
       const script = document.createElement("script");

@@ -28,6 +28,15 @@ export interface RecipeIngredient {
   note?: string;
 }
 
+export interface RecipeImage {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  sizes: string | null;
+  srcSet: string | null;
+}
+
 export interface RecipeEntry {
   kind: "recipe";
   recipeId: string;
@@ -36,6 +45,7 @@ export interface RecipeEntry {
   title: string;
   category: "alkuruoka" | "paaruoka" | "jalkiruoka" | "leivonnainen";
   routePath: string;
+  image: RecipeImage | null;
   description: string;
   ingredients: RecipeIngredient[];
   instructionsHtml: string;
