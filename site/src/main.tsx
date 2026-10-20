@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import { hydrateRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
-import { router } from "./router";
+import { createSiteRouter } from "./router";
 import "./styles.css";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+hydrateRoot(document.getElementById("root")!,
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={createSiteRouter()} />
   </React.StrictMode>,
 );

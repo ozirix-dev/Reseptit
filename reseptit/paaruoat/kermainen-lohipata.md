@@ -62,22 +62,22 @@ status: "published"
 
 # Kermainen lohipata
 
-Kermainen lohipata on helppo ja tayttava arjen pääruoka.
+Kermainen lohipata on helppo ja täyttävä arjen pääruoka.
 
 ## Kuvaus
 
-Tama on pilottiresepti, jolla lukitaan kaytannon reseptiformaatti tahan projektiin. Resepti on tarkoituksella riittavan valmis, jotta metatiedot, sisaltorakenne ja monikielisyysmalli voidaan testata oikeassa tiedostossa eika vain mallipohjassa.
+Lohi, pinaatti ja pehmeä kermakastike kypsyvät uunissa samaan aikaan. Tarjoa pata sellaisenaan tai kasvislisäkkeen kanssa.
 
 ## Valmistus
 
-1. Lammita uuni 200 asteeseen.
+1. Lämmitä uuni 200 asteeseen.
 2. Hienonna sipuli ja valkosipuli. Kuullota ne voissa pannulla.
-3. Lisaa joukkoon tuorejuusto, kuohukerma, sitruunamehu, sinappi ja mausteet. Sekoita tasaiseksi kastikkeeksi.
-4. Kaanna pinaatti nopeasti kastikkeen joukkoon.
-5. Aseta lohifilee uunivuokaan ja kaada kastike paalle.
-6. Kypsenna uunissa noin 25 minuuttia, kunnes lohi on juuri kypsaa.
-7. Anna vetaytya hetki ennen tarjoilua.
+3. Lisää joukkoon tuorejuusto, kuohukerma, sitruunamehu, sinappi ja mausteet. Sekoita tasaiseksi kastikkeeksi.
+4. Käännä pinaatti nopeasti kastikkeen joukkoon.
+5. Aseta lohifilee uunivuokaan ja kaada kastike päälle.
+6. Kypsennä uunissa noin 25 minuuttia, kunnes lohi on juuri kypsää.
+7. Anna vetäytyä hetki ennen tarjoilua.
 
 ## Muistiinpanot
 
-- Sopii hyvin tarjoiltavaksi esimerkiksi paistetun kesakurpitsan tai kukkakaalimuusin kanssa.
+- Sopii hyvin tarjoiltavaksi esimerkiksi paistetun kesäkurpitsan tai kukkakaalimuusin kanssa.

@@ -1,7 +1,7 @@
-import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
+import { copyFile, lstat, mkdir, readdir, readFile, realpath, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { marked } from "marked";
-import { parseMarkdown } from "../src/content/markdown";
+import { parseMarkdown, renderSafeMarkdown } from "../src/content/markdown";
+import { assertUniqueRecipes } from "../src/content/recipe-validation";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import type { RecipeEntry, RecipeLocale, SiteContentIndex } from "../src/types/content";
 
@@ -9,6 +9,8 @@ const siteDir = path.resolve(import.meta.dirname, "..");
 const repoDir = path.resolve(siteDir, "..");
 const outputDir = path.join(siteDir, "src", "generated");
 const baseUrl = "https://ozirix-dev.github.io/Reseptit";
+const imageSourceDir = path.join(repoDir, "kuvat");
+const imageOutputDir = path.join(siteDir, "public", "kuvat");
 const localeBase: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" };
 
 function routeForRecipe(locale: RecipeLocale, slug: string): string {
@@ -47,6 +49,24 @@ function recipeDescription(markdown: string, descriptionSection: string): string
   return stripHtml(lead ?? descriptionSection);
 }
 
+async function copyRecipeImage(relativePath: string): Promise<void> {
+  const source = path.resolve(imageSourceDir, relativePath);
+  const allowedRoot = `${path.resolve(imageSourceDir)}${path.sep}`;
+  if (!source.startsWith(allowedRoot)) throw new Error(`Recipe image path escapes kuvat/: ${relativePath}`);
+  const info = await stat(source).catch(() => null);
+  if (!info?.isFile()) throw new Error(`Recipe image file does not exist: kuvat/${relativePath}`);
+  const [sourceRealPath, imageRootRealPath] = await Promise.all([realpath(source), realpath(imageSourceDir)]);
+  if (!sourceRealPath.startsWith(`${imageRootRealPath}${path.sep}`)) throw new Error(`Recipe image resolves outside kuvat/: ${relativePath}`);
+  const target = path.join(imageOutputDir, relativePath);
+  await mkdir(path.dirname(target), { recursive: true });
+  const [outputRootRealPath, targetDirectoryRealPath] = await Promise.all([realpath(imageOutputDir), realpath(path.dirname(target))]);
+  if (targetDirectoryRealPath !== outputRootRealPath && !targetDirectoryRealPath.startsWith(`${outputRootRealPath}${path.sep}`)) {
+    throw new Error(`Recipe image output resolves outside site/public/kuvat/: ${relativePath}`);
+  }
+  if ((await lstat(target).catch(() => null))?.isSymbolicLink()) throw new Error(`Recipe image target cannot be a symbolic link: ${relativePath}`);
+  await copyFile(sourceRealPath, target);
+}
+
 async function buildRecipes(): Promise<RecipeEntry[]> {
   const paths = [
     ...await markdownFiles(path.join(repoDir, "reseptit", "alkuruoat")),
@@ -59,8 +79,13 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
   for (const filePath of paths) {
     const parsed = parseMarkdown(await readFile(filePath, "utf8"));
     if (!parsed) continue;
-    if (parsed.data.status !== "published") continue;
+    if (parsed.data.status === "draft") continue;
+    if (parsed.data.status !== "published") throw new Error(`Recipe status must be draft or published: ${filePath}`);
     const data = recipeFrontmatterSchema.parse(parsed.data);
+    const imagePaths = data.image
+      ? [data.image.src, ...(data.image.srcset ?? []).map((item) => item.src)]
+      : [];
+    await Promise.all(imagePaths.map(copyRecipeImage));
     const instructions = section(parsed.content, ["Valmistus", "Preparation", "Instructions", "Tillagning", "การทำ"]);
     if (!instructions) throw new Error(`Published recipe has no instructions: ${filePath}`);
     const descriptionSection = section(parsed.content, ["Kuvaus", "Description", "Beskrivning", "คำอธิบาย"]);
@@ -70,26 +95,23 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
       title: data.title, category: data.category, routePath: routeForRecipe(data.language, data.url_slug),
       description: recipeDescription(parsed.content, descriptionSection), ingredients: data.ingredients,
-      instructionsHtml: await marked.parse(instructions),
+      instructionsHtml: await renderSafeMarkdown(instructions),
       instructionsText: instructionSteps.length ? instructionSteps : instructions.split(/\n\s*\n/).filter(Boolean),
-      notesHtml: await marked.parse(notes), servings: data.servings, timeTotalMin: data.time_total_min ?? null,
+      notesHtml: await renderSafeMarkdown(notes), servings: data.servings, timeTotalMin: data.time_total_min ?? null,
       difficulty: data.difficulty ?? null, tags: data.tags,
+      image: data.image ? {
+        src: `${baseUrl}/kuvat/${data.image.src}`,
+        alt: data.image.alt, width: data.image.width, height: data.image.height,
+        sizes: data.image.sizes ?? null,
+        srcSet: data.image.srcset?.map((item) => `${baseUrl}/kuvat/${item.src} ${item.width}w`).join(", ") ?? null,
+      } : null,
       nutrition: {
         carbsNetG: data.carbs_net_per_serving_g ?? null, carbsTotalG: data.carbs_total_per_serving_g ?? null,
         proteinG: data.protein_per_serving_g ?? null, fatG: data.fat_per_serving_g ?? null,
       },
     });
   }
-  const ids = new Set<string>();
-  const routes = new Set<string>();
-  for (const recipe of recipes) {
-    const id = `${recipe.recipeId}:${recipe.locale}`;
-    const route = `${recipe.locale}:${recipe.routePath}`;
-    if (ids.has(id)) throw new Error(`Duplicate published recipe translation: ${id}`);
-    if (routes.has(route)) throw new Error(`Duplicate published recipe URL: ${route}`);
-    ids.add(id);
-    routes.add(route);
-  }
+  assertUniqueRecipes(recipes);
   return recipes.sort((a, b) => a.category.localeCompare(b.category) || a.title.localeCompare(b.title));
 }
 
@@ -110,7 +132,7 @@ async function main() {
   const publicDir = path.join(siteDir, "public");
   await mkdir(publicDir, { recursive: true });
   await writeFile(path.join(publicDir, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`, "utf8");
-  await writeFile(path.join(publicDir, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${baseUrl}/sitemap.xml\n`, "utf8");
+  await writeFile(path.join(publicDir, "robots.txt"), `# Project-path robots.txt; host-wide crawling policy is controlled at /robots.txt.\nUser-agent: *\nAllow: /Reseptit/\n\nSitemap: ${baseUrl}/sitemap.xml\n`, "utf8");
   await writeFile(path.join(publicDir, ".nojekyll"), "", "utf8");
   console.log(`Built ${recipes.length} published recipe translations from local Markdown.`);
 }

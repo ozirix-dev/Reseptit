@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "content:sync": "tsx scripts/build-content.ts",
-    "test": "npm run content:sync && tsx --test tests/servings.test.ts tests/published-content.test.ts",
+    "test": "npm run content:sync && tsx --test tests/servings.test.ts tests/published-content.test.ts tests/markdown-safety.test.ts tests/recipe-schema.test.ts",
+    "test:static": "tsx --test tests/static-output.test.ts",
     "build": "npm run content:sync && tsc -p tsconfig.json && vite build && tsx scripts/prerender.ts",
     "preview": "vite preview --host 127.0.0.1"
   },

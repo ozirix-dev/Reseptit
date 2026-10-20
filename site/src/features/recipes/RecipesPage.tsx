@@ -15,6 +15,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
       return entries.length ? <section className="recipe-category" key={category} aria-labelledby={`recipe-category-${category}`}>
         <h2 id={`recipe-category-${category}`}>{labels.category[category]}</h2>
         <div className="recipe-card-list">{entries.map((recipe) => <article className="recipe-card" key={recipe.recipeId}>
+          {recipe.image ? <img className="recipe-card__image" src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipe.image.sizes ?? undefined} alt={recipe.image.alt} width={recipe.image.width} height={recipe.image.height} loading="lazy" decoding="async" /> : null}
           <p className="post-card__meta">{[recipe.timeTotalMin ? `${recipe.timeTotalMin} ${labels.minutes}` : null, recipe.difficulty].filter(Boolean).join(" · ")}</p>
           <h3><Link to={recipe.routePath}>{recipe.title}</Link></h3><p>{recipe.description}</p>
         </article>)}</div>
