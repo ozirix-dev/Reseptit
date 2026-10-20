@@ -3,3 +3,4 @@
 - alkuruoka
 - paaruoka
 - jalkiruoka
+- leivonnainen

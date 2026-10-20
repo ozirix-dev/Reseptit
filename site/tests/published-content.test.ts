@@ -24,6 +24,7 @@ test("site content contains every published recipe and no drafts", async () => {
     ...await markdownFiles(path.join(repoDir, "reseptit", "alkuruoat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "paaruoat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "jalkiruoat")),
+    ...await markdownFiles(path.join(repoDir, "reseptit", "leivonnaiset")),
     ...await markdownFiles(path.join(repoDir, "kaannokset")),
   ];
   const expected = new Set<string>();

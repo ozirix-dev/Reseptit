@@ -73,6 +73,7 @@ reseptit/
 ├── alkuruoat/
 ├── paaruoat/
 ├── jalkiruoat/
+├── leivonnaiset/
 ├── raakileet/
 ├── arkisto/
 └── _mallipohjat/
@@ -102,6 +103,7 @@ Sisaltaa varsinaiset reseptitiedostot.
 - `reseptit/alkuruoat/`
 - `reseptit/paaruoat/`
 - `reseptit/jalkiruoat/`
+- `reseptit/leivonnaiset/`
 - `reseptit/raakileet/`
 - `reseptit/arkisto/`
 - `reseptit/_mallipohjat/`

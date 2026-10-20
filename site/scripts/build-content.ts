@@ -52,6 +52,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     ...await markdownFiles(path.join(repoDir, "reseptit", "alkuruoat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "paaruoat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "jalkiruoat")),
+    ...await markdownFiles(path.join(repoDir, "reseptit", "leivonnaiset")),
     ...await markdownFiles(path.join(repoDir, "kaannokset")),
   ];
   const recipes: RecipeEntry[] = [];
