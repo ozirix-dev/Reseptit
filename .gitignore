@@ -78,6 +78,11 @@ build/
 out/
 coverage/
 .cache/
+.playwright-cli/
+site/src/generated/content.generated.ts
+site/public/.nojekyll
+site/public/robots.txt
+site/public/sitemap.xml
 
 # -----------------------------
 # Pakatut tiedostot
