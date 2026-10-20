@@ -13,6 +13,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const location = useLocation();
   const navigate = useNavigate();
   const [filters, setFilters] = useState<RecipeFilters>(emptyRecipeFilters);
+  const [hydrated, setHydrated] = useState(false);
   const availableCategories = categories.filter((category) => recipes.some((recipe) => recipe.category === category));
   const hasDietClasses = recipes.some((recipe) => recipe.dietClass !== null);
   const hasKetoRecipes = recipes.some((recipe) => recipe.dietClass === "keto");
@@ -24,6 +25,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   // Start from the prerendered default state, then read query parameters after hydration.
   useEffect(() => {
     setFilters(parseRecipeFilters(location.search, ["all", ...availableCategories], availableDiets));
+    setHydrated(true);
   }, [location.search]);
 
   function updateFilters(patch: Partial<RecipeFilters>) {
@@ -43,7 +45,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
 
   return <section className="page-section recipe-index"><div className="container recipe-index__container">
     <div className="page-intro"><p className="eyebrow">{labels.eyebrow}</p><h1>{labels.indexTitle}</h1><p className="page-intro__description">{labels.intro}</p></div>
-    <form className="recipe-filters" role="search" aria-label={labels.search} onSubmit={(event) => event.preventDefault()}>
+    {hydrated ? <form className="recipe-filters" role="search" aria-label={labels.search} onSubmit={(event) => event.preventDefault()}>
       <div className="recipe-search-field">
         <label htmlFor="recipe-search">{labels.search}</label>
         <div className="recipe-search-field__control">
@@ -67,14 +69,14 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
         </select>
       </div> : null}
       {hasActiveFilters && filteredRecipes.length > 0 ? <button type="button" className="recipe-filter-reset" onClick={resetFilters}>{labels.resetFilters}</button> : null}
-    </form>
-    <p className="recipe-result-count" role="status" aria-live="polite" aria-atomic="true">{labels.results(filteredRecipes.length)}</p>
-    {hasActiveFilters ? <p className="recipe-active-filters">{[
+    </form> : null}
+    {hydrated ? <p className="recipe-result-count" role="status" aria-live="polite" aria-atomic="true">{labels.results(filteredRecipes.length)}</p> : null}
+    {hydrated && hasActiveFilters ? <p className="recipe-active-filters">{[
       filters.query ? `“${filters.query}”` : null,
       filters.category !== "all" ? labels.category[filters.category] : null,
       filters.diet === "keto" ? labels.keto : filters.diet === "vhh" ? labels.vhh : null,
     ].filter(Boolean).join(" · ")}</p> : null}
-    {filteredRecipes.length ? <div className="recipe-card-grid">{filteredRecipes.map((recipe, index) => <RecipeCard key={`${recipe.recipeId}-${recipe.locale}`} recipe={recipe} index={index} locale={locale} />)}</div>
+    {!hydrated || filteredRecipes.length ? <div className="recipe-card-grid">{(hydrated ? filteredRecipes : recipes).map((recipe, index) => <RecipeCard key={`${recipe.recipeId}-${recipe.locale}`} recipe={recipe} index={index} locale={locale} />)}</div>
       : <div className="recipe-empty-state"><p>{labels.noResults}</p><button type="button" className="recipe-filter-reset" onClick={resetFilters}>{labels.resetFilters}</button></div>}
   </div></section>;
 }
@@ -85,7 +87,7 @@ function RecipeCard({ recipe, index, locale }: { recipe: RecipeEntry; index: num
   const meta = [recipe.timeTotalMin ? `${recipe.timeTotalMin} ${labels.minutes}` : null, recipe.difficulty].filter(Boolean).join(" · ");
   return <article className="recipe-card">
     <Link className="recipe-card__link" to={recipe.routePath}>
-      {recipe.image ? <img className="recipe-card__image" src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipe.image.sizes ?? undefined} alt={recipe.image.alt} width={recipe.image.width} height={recipe.image.height} loading={index < 3 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : undefined} decoding="async" />
+      {recipe.image ? <img className="recipe-card__image" src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipe.image.sizes ?? undefined} alt={recipe.image.alt} width={recipe.image.width} height={recipe.image.height} loading={index === 0 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : undefined} decoding="async" />
         : <span className="recipe-card__image recipe-card__image--placeholder" aria-hidden="true" />}
       <span className="recipe-card__content">
         <span className="recipe-card__badges"><span className="recipe-card__category">{labels.category[recipe.category]}</span>{dietLabel ? <span className="recipe-card__diet">{dietLabel}</span> : null}</span>

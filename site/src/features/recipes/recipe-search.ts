@@ -12,7 +12,17 @@ export interface RecipeFilters {
 export const emptyRecipeFilters: RecipeFilters = { query: "", category: "all", diet: "all" };
 
 export function normalizeSearchText(value: string, locale: RecipeLocale = "fi"): string {
-  return value.normalize("NFKD").replace(/\p{M}/gu, "").toLocaleLowerCase(locale).replace(/\s+/gu, " ").trim();
+  let previousBaseIsThai = false;
+  let normalized = "";
+  for (const character of value.normalize("NFKD")) {
+    if (/\p{M}/u.test(character)) {
+      if (previousBaseIsThai) normalized += character;
+      continue;
+    }
+    previousBaseIsThai = /\p{Script=Thai}/u.test(character);
+    normalized += character;
+  }
+  return normalized.toLocaleLowerCase(locale).replace(/\s+/gu, " ").trim();
 }
 
 export function parseRecipeFilters(search: string, availableCategories: RecipeCategory[], availableDiets: RecipeDietFilter[] = ["keto", "vhh"]): RecipeFilters {

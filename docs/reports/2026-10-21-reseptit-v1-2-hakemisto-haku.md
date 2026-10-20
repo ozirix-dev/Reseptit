@@ -6,7 +6,7 @@
 - Repository: `ozirix-dev/Reseptit`
 - Tuotantoauditointi: `https://ozirix-dev.github.io/Reseptit/`
 - Työhaara: `codex/reseptit-v1-2-hakemisto-haku`
-- Toteutuscommit: `5f800a7a57eee9b298c3e93fcdd3d600a35dc88b`
+- Toteutuscommit: päivitetään viimeisen korjauscommitin jälkeen.
 - Pull Request: [#23 – Reseptit V1.2: Kuvallinen hakemisto ja reseptihaku](https://github.com/ozirix-dev/Reseptit/pull/23)
 - PR jätettiin yhdistämättä tehtävänannon mukaisesti.
 
@@ -40,7 +40,7 @@ Nykyisistä julkaistuista resepteistä:
 - vaikeustaso on ilmoitettu kaikissa
 - julkaistuissa sisältöteksteissä ei löytynyt `TODO`- tai `FIXME`-merkintöjä
 
-Sisältöauditoinnin aikana kuvakatselussa havaittiin perunaa kahdessa perunattomaksi tarkoitetussa VHH-kuvassa. Kaalikääryleiden ja jauheliha-kaalikeiton kuvitukset vaihdettiin vastaamaan reseptien sisältöä, ja uusien 20 reseptin alt-tekstit täsmennettiin reseptikohtaisiksi. Ravintoarvoja tai puuttuvia valmistusaikoja ei keksitty.
+Sisältöauditoinnin aikana kuvakatselussa havaittiin perunaa kahdessa perunattomaksi tarkoitetussa VHH-kuvassa. Kaalikääryleiden kuvitus vaihdettiin vastaamaan reseptin sisältöä, ja uusien 20 reseptin alt-tekstit täsmennettiin reseptikohtaisiksi. PR-reviewn jälkeen jauheliha-kaalikeiton porkkanaa näyttänyt kuva korvattiin reseptin nykyisiä aineksia vastaavalla kuvalla; aineslistaa ei muutettu. Samalla korjattiin liedellä valmistuvan keiton `cooking_method` ja poistettiin perusteeton maininta kermaisista aineksista. Ravintoarvoja tai puuttuvia valmistusaikoja ei keksitty.
 
 ## Toteutetut muutokset
 
@@ -50,17 +50,17 @@ Sisältöauditoinnin aikana kuvakatselussa havaittiin perunaa kahdessa perunatto
 - Hakemistolle annettiin 1160 px enimmäisleveys; yksittäisen reseptin lukuleveyteen ei koskettu.
 - Kortit sisältävät klikattavan kuvan, H3-otsikon, kuvauksen, valmistusajan, vaikeustason, kategorian ja rakenteisen ruokavaliomerkin silloin kun tieto löytyy.
 - Kortin kuva ja teksti ovat saman linkin sisällä; sisäkkäisiä linkkejä ei ole. Puuttuvalle kuvalle on vakaan kuvasuhteen paikkamerkki.
-- Kaikille korttikuville säilyvät lähteen `width`/`height`, `srcset`, `sizes` ja alt-tiedot. Kolme ensimmäistä tuloskuvaa ladataan eager-tilassa, vain ensimmäiselle asetetaan korkea prioriteetti; muut latautuvat laiskasti.
+- Kaikille korttikuville säilyvät lähteen `width`/`height`, `srcset`, `sizes` ja alt-tiedot. Vain ensimmäinen korttikuva ladataan eager-tilassa ja korkealla prioriteetilla; muut ovat natiivissa lazy-tilassa myös mobiilin yksisarakkeisessa näkymässä.
 
 ### Haku ja suodatus
 
 - Haku kohdistuu reseptinimeen, ainesosien nimiin ja huomioihin, kuvaukseen sekä tunnisteisiin.
-- Haku ei huomioi kirjainkokoa, normalisoi Unicode-merkkejä ja välilyöntejä sekä vaatii kaikkien hakusanojen osuman.
+- Haku ei huomioi kirjainkokoa, normalisoi Unicode-merkkejä ja välilyöntejä sekä vaatii kaikkien hakusanojen osuman. Suomen ja ruotsin tarkkeet taitetaan, mutta thain sävymerkit säilytetään, jotta esimerkiksi ข้าว ja ข่าว pysyvät erillisinä hakusanoina.
 - Kategoria- ja ruokavaliosuodattimet yhdistyvät hakutekstiin AND-logiikalla. Kategoriat näytetään vain, jos sillä kielellä on julkaistuja reseptejä.
 - Keto-suodatin käyttää vain `diet_class=keto`; VHH-suodatin sisältää kaikki kolme rakenteista luokkaa. Tuntemattomia luokituksia ei päätellä tekstistä.
 - Haku, kategoria ja ruokavalio tallentuvat `q`, `category` ja `diet` query-parametreihin. Tuntemattomat ja kielelle sopimattomat suodatusarvot sivuutetaan. Kielenvaihdon linkit eivät siirrä vanhoja suodattimia.
 - Tulosten määrä, tyhjän tuloksen viesti, haun tyhjennys ja kaikkien suodattimien nollaus ovat mukana.
-- Query-tila luetaan vasta hydraation jälkeen, jotta staattinen HTML vastaa ensimmäistä client-renderöintiä. Canonical pysyy aina kyseisen kielihakemiston perusosoitteessa; sitemapiin ei lisätty query-sivuja.
+- Query-tila luetaan vasta hydraation jälkeen, jotta staattinen HTML vastaa ensimmäistä client-renderöintiä. Hakulomake ja suodatinten dynaaminen tulosstatus tulevat näkyviin vasta JavaScriptin käynnistyttyä; ilman JavaScriptiä reseptikortit ja linkit ovat edelleen staattisessa HTML:ssä. Canonical pysyy aina kyseisen kielihakemiston perusosoitteessa; sitemapiin ei lisätty query-sivuja.
 
 ### Monikielisyys ja tietomalli
 
@@ -76,7 +76,7 @@ Build tuottaa edelleen etukäteen näkyvän hakemiston ja 46 staattista reittiä
 
 - Käytössä ovat nimetyt natiivit search-, input-, select- ja button-elementit sekä ruudunlukijalle päivittyvä tulosstatus.
 - Korttien otsikot säilyvät H3-elementteinä, kuvilla on kuvaavat alt-tekstit ja koko kortilla on näkyvä näppäimistöfokus.
-- Selainajot tarkistivat leveydet 320, 375, 390, 768, 1024 ja 1440 px: ei vaakavieritystä, sarakemäärä 1/2/3 odotetusti. Thaikielinen hakemisto tarkistettiin myös 320 px leveydellä.
+- Hakulomake ei sisälly JavaScriptittömään HTML:ään eikä näy ennen toimivan haun käynnistymistä; staattiset reseptikortit ja niiden linkit säilyvät.
 - Selainajo kattoi kirjoittamisen, ainesosahaun, yhdistelmäsuodattimet, nollatuloksen, nollauksen, jaetun URL:n, kaikkien neljän kielen hakutekstit, kortin linkkirakenteen ja näppäimistöfokuksen.
 - Erillistä ruudunlukija- tai manuaalista WCAG-auditointia ei tehty.
 
@@ -84,7 +84,7 @@ Build tuottaa edelleen etukäteen näkyvän hakemiston ja 46 staattista reittiä
 
 | Tiedosto | Ennen raaka / gzip | Jälkeen raaka / gzip | Muutos gzipissä |
 | --- | ---: | ---: | ---: |
-| JavaScript | 430.27 / 120.94 kB | 437.29 / 123.06 kB | +2.12 kB |
+| JavaScript | 430.27 / 120.94 kB | 437.37 / 123.17 kB | +2.23 kB |
 | CSS | 5.88 / 1.96 kB | 8.84 / 2.55 kB | +0.59 kB |
 
 Kaikkien pakattujen resurssien yhteenlaskettu lisäys on noin 2.71 kB. Uusia riippuvuuksia ei lisätty. Ensimmäinen näkymä renderöitiin selainajossa myös ilman JavaScriptiä, mutta LCP-, CLS-, INP- tai Lighthouse-mittausta ei tehty. Näille ei raportoida arvioituja arvoja.
@@ -93,7 +93,7 @@ Kaikkien pakattujen resurssien yhteenlaskettu lisäys on noin 2.71 kB. Uusia rii
 
 Kaikki seuraavat paikalliset tarkistukset menivät läpi:
 
-- `npm test` — 16 testiä läpi (sisältää haun, Unicode-normalisoinnin, ainesosahaun, kategoriat, ruokavalioluokat, yhdistelmäsuodattimet, URL-arvot ja kielirajat)
+- `npm test` — 17 testiä läpi (sisältää haun, suomen/ruotsin tarkkeiden taiton, thain ข้าว/ข่าว-sävymerkkien regressiotestin, ainesosahaun, kategoriat, ruokavalioluokat, yhdistelmäsuodattimet, URL-arvot, kielirajat sekä kaalikeiton aines- ja metatietovarmistuksen)
 - `npm run test:image` — 2 testiä läpi
 - `npm run build` — onnistui, 42 julkaistua reseptiversiota ja 46 esirenderöityä reittiä
 - `npm run test:static` — 6 testiä läpi

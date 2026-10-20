@@ -5,10 +5,17 @@ import { emptyRecipeFilters, filterRecipes, normalizeSearchText, parseRecipeFilt
 
 const finnishRecipes = siteContent.recipes.filter((recipe) => recipe.locale === "fi");
 
-test("search normalization handles case, whitespace, Finnish and Swedish diacritics, and Thai text", () => {
+test("search normalization folds Finnish and Swedish diacritics while preserving Thai tone marks", () => {
   assert.equal(normalizeSearchText("  ÄÄKKÖSET   LOHI ", "fi"), "aakkoset lohi");
   assert.equal(normalizeSearchText("ÅÄÖ", "sv"), "aao");
-  assert.ok(normalizeSearchText("โปรตีนสูง", "th").length > 0);
+  assert.equal(normalizeSearchText("ข้าว", "th"), "ข้าว");
+  assert.equal(normalizeSearchText("ข่าว", "th"), "ข่าว");
+  assert.notEqual(normalizeSearchText("ข้าว", "th"), normalizeSearchText("ข่าว", "th"));
+  const thaiRecipe = siteContent.recipes.find((recipe) => recipe.locale === "th");
+  assert.ok(thaiRecipe);
+  const riceRecipe = { ...thaiRecipe, title: "ข้าว", ingredients: [], description: "", tags: [] };
+  assert.equal(filterRecipes([riceRecipe], { ...emptyRecipeFilters, query: "ข้าว" }, "th").length, 1);
+  assert.equal(filterRecipes([riceRecipe], { ...emptyRecipeFilters, query: "ข่าว" }, "th").length, 0);
 });
 
 test("search finds titles, ingredients, descriptions and tags; all words must match", () => {

@@ -27,7 +27,8 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await noJs.goto(`${base}/`);
     assert.equal(await noJs.getByRole("heading", { name: "Reseptit" }).count(), 1);
     assert.ok(await noJs.locator(".recipe-card-grid .recipe-card").count() > 0);
-    assert.equal(await noJs.getByRole("searchbox", { name: "Hae reseptejä" }).count(), 1);
+    assert.equal(await noJs.getByRole("search").count(), 0);
+    assert.ok(await noJs.locator(".recipe-card-grid .recipe-card__link").count() > 0);
     await noJs.close();
 
     const page = await browser.newPage({ viewport: { width: 320, height: 800 } });
@@ -63,9 +64,9 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.getByText("Reseptejä ei löytynyt hakuehdoilla.").waitFor();
     assert.equal(await page.locator(".recipe-card-grid").count(), 0);
     await page.getByRole("button", { name: "Tyhjennä haku ja suodattimet" }).last().click();
-    assert.equal(await page.locator(".recipe-card__image[loading=eager]").count(), 3);
+    assert.equal(await page.locator(".recipe-card__image[loading=eager]").count(), 1);
     assert.equal(await page.locator('.recipe-card__image[fetchpriority="high"]').count(), 1);
-    assert.ok(await page.locator(".recipe-card__image[loading=lazy]").count() > 0);
+    assert.equal(await page.locator(".recipe-card__image[loading=lazy]").count(), await page.locator(".recipe-card__image").count() - 1);
     assert.equal(await page.locator(".recipe-card h3").count(), await page.locator(".recipe-card").count());
 
     for (const [width, columns] of [[320, 1], [375, 1], [390, 1], [768, 2], [1024, 2], [1440, 3]]) {

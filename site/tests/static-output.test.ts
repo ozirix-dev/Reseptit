@@ -11,8 +11,8 @@ test("recipe index is prerendered and links only published languages", async () 
   assert.match(html, /<a class="recipe-card__link" href="\/Reseptit\/kermainen-lohipata\/"[\s\S]*?<h3 class="recipe-card__title">Kermainen lohipata<\/h3>/);
   assert.match(html, /<a class="recipe-card__link" href="\/Reseptit\/keto-kauralesesampylat\/"[\s\S]*?<h3 class="recipe-card__title">Keto-kauralesesämpylät<\/h3>/);
   assert.match(html, /<div class="recipe-card-grid">/);
-  assert.match(html, /<form class="recipe-filters" role="search"/);
-  assert.match(html, /<label for="recipe-search">Hae reseptejä<\/label>/);
+  assert.doesNotMatch(html, /<form class="recipe-filters" role="search"/);
+  assert.doesNotMatch(html, /id="recipe-search"/);
   assert.match(html, /rel="canonical" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/"/);
   assert.match(html, /hreflang="fi"/);
   assert.match(html, /hreflang="en" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/en\/recipes\//);

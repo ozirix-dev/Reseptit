@@ -62,3 +62,19 @@ test("the high-protein macaroni bake has four aligned published language version
   assert.equal(translations.find((recipe) => recipe.locale === "sv")?.routePath, "/sv/recept/proteinrik-makaronilada-med-kottfars/");
   assert.equal(translations.find((recipe) => recipe.locale === "th")?.routePath, "/th/recipes/makaroni-op-nuea-bot-protein-sung/");
 });
+
+test("minced beef cabbage soup metadata and image match the existing ingredient list", async () => {
+  const repoDir = path.resolve(import.meta.dirname, "../..");
+  const source = await readFile(path.join(repoDir, "reseptit", "paaruoat", "jauheliha-kaalikeitto-vhh.md"), "utf8");
+  const parsed = parseMarkdown(source);
+  assert.ok(parsed);
+  const image = parsed.data.image as { src: string; alt: string };
+  const ingredients = parsed.data.ingredients as { item: string }[];
+  assert.deepEqual(parsed.data.cooking_method, ["liesi"]);
+  assert.equal(image.src, "paaruoat/jauheliha-kaalikeitto-vhh.webp");
+  assert.doesNotMatch(image.alt, /porkkana|peruna/i);
+  assert.doesNotMatch(parsed.content, /kermaiset ainekset|kerma/i);
+  assert.deepEqual(ingredients.map((ingredient) => ingredient.item), [
+    "naudan jauhelihaa", "valkokaalia", "sipuli", "lihalientä", "tomaattipyreetä", "suolaa", "mustapippuria", "meiramia",
+  ]);
+});
