@@ -3,7 +3,7 @@ import { getRecipes } from "@/lib/content";
 import type { RecipeEntry, RecipeLocale } from "@/types/content";
 import { recipeUi } from "./recipe-i18n";
 
-const categories: RecipeEntry["category"][] = ["alkuruoka", "paaruoka", "jalkiruoka"];
+const categories: RecipeEntry["category"][] = ["alkuruoka", "paaruoka", "jalkiruoka", "leivonnainen"];
 
 export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const recipes = getRecipes(locale);

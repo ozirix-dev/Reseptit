@@ -4,7 +4,7 @@ export const recipeFrontmatterSchema = z.object({
   title: z.string().min(1),
   recipe_id: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
   url_slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
-  category: z.enum(["alkuruoka", "paaruoka", "jalkiruoka"]),
+  category: z.enum(["alkuruoka", "paaruoka", "jalkiruoka", "leivonnainen"]),
   language: z.enum(["fi", "en", "sv", "th"]),
   status: z.enum(["draft", "published"]),
   ingredients: z.array(z.object({

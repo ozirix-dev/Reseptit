@@ -34,7 +34,7 @@ export interface RecipeEntry {
   slug: string;
   locale: RecipeLocale;
   title: string;
-  category: "alkuruoka" | "paaruoka" | "jalkiruoka";
+  category: "alkuruoka" | "paaruoka" | "jalkiruoka" | "leivonnainen";
   routePath: string;
   description: string;
   ingredients: RecipeIngredient[];
