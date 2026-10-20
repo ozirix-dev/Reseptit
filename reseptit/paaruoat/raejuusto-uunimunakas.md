@@ -4,12 +4,13 @@ recipe_id: "raejuusto-uunimunakas"
 url_slug: "raejuusto-uunimunakas"
 category: "paaruoka"
 language: "fi"
+diet_class: "vhh_tiukka"
 servings: 4
 main_ingredient: ["kananmuna", "raejuusto"]
 cooking_method: ["uuni"]
 time_total_min: 55
 difficulty: "helppo"
-tags: ["munakas", "uuniruoka", "raejuusto", "arki"]
+tags: ["munakas", "uuniruoka", "raejuusto", "arki", "VHH"]
 image:
   src: paaruoat/raejuusto-uunimunakas.webp
   alt: Pehmeästi paistunut raejuusto-uunimunakas, jonka pinnalla on tuoretta ruohosipulia
