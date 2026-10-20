@@ -28,15 +28,16 @@ test("prerendered recipe HTML includes useful content before JavaScript", async 
   assert.match(html, /rel="canonical" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kermainen-lohipata\/"/);
   assert.match(html, /hreflang="x-default" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kermainen-lohipata\/"/);
   assert.doesNotMatch(html, /en\/recipes|sv\/recept|th\/recipes/);
-  assert.match(html, /<meta name="twitter:card" content="summary"/);
-  assert.doesNotMatch(html, /property="og:image"|name="twitter:image"/);
+  assert.match(html, /<meta name="twitter:card" content="summary_large_image"/);
+  assert.match(html, /property="og:image" content="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/paaruoat\/kermainen-lohipata\.webp"/);
+  assert.match(root[1], /<img class="recipe-image" src="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/paaruoat\/kermainen-lohipata\.webp" alt="Kermainen lohipata lohipaloilla, pinaatilla ja tillillä" width="1254" height="1254"/);
   const jsonLdMatch = html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
   assert.ok(jsonLdMatch);
   const jsonLd = JSON.parse(jsonLdMatch[1]);
   assert.equal(jsonLd["@type"], "Recipe");
   assert.equal(jsonLd.name, "Kermainen lohipata");
   assert.equal(jsonLd.recipeYield, 4);
-  assert.equal("image" in jsonLd, false);
+  assert.deepEqual(jsonLd.image, ["https://ozirix-dev.github.io/Reseptit/kuvat/paaruoat/kermainen-lohipata.webp"]);
   assert.equal("author" in jsonLd, false);
   assert.equal("datePublished" in jsonLd, false);
   assert.equal("aggregateRating" in jsonLd, false);
@@ -48,6 +49,9 @@ test("published keto bun page includes its content and omitted amounts remain om
   assert.match(html, /seesaminsiemeniä/);
   assert.match(html, /halutessasi pinnalle/);
   assert.match(html, /Pehmeät, proteiinia sisältävät sämpylät/);
+  assert.match(html, /src="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/leivonnaiset\/keto-kauralesesampylat\.webp"/);
+  assert.match(html, /<meta name="twitter:card" content="summary_large_image"/);
+  assert.match(html, /"image":\["https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/leivonnaiset\/keto-kauralesesampylat\.webp"\]/);
 });
 
 test("unknown route output has no canonical or recipe structured data", async () => {
