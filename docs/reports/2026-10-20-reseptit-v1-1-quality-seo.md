@@ -65,5 +65,5 @@ Ennen käyttöliittymämuutoksia luettiin web-design-handbook sekä Ossi-foundat
 - GitHub Actionsin aiempi ajo commitille `1094aa4a83fa019087ae7d752411b12023b25a01` onnistui. Tämän viimeistelycommitin CI-tulos päivittyy pushin jälkeen.
 - PR #5 pysyy avoimena. PR:ää ei yhdistetä eikä tuotantoon julkaista tämän tehtävän aikana.
 - Viimeistelyn toteutuscommit: `f5a0251900add9d08810721de638923ca5b2227d`.
-- PR #5:n toteutuscommit on pushaattu; viimeistelyn Actions-ajo odottaa GitHubissa käynnistymistä/valmistumista.
+- PR #5:n commit `4d7f2665e7825a60899e899071b63dcfeec6e23e` läpäisi GitHub Actionsin kaikki build-vaiheet (run [39467111338](https://github.com/ozirix-dev/Reseptit/actions/runs/39467111338)). Chromium-selainajo onnistui; PR-tapahtumassa Pages-deploy on ohitettu.
 - Avoimet tekniset ongelmat: ei havaittu. Oikeita reseptikuvia ei lisätty.
