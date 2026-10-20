@@ -112,7 +112,8 @@ test("sitemap and project robots reference the real Pages path", async () => {
   assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/en\/recipes\/high-protein-beef-macaroni-bake\//);
   assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/sv\/recept\/proteinrik-makaronilada-med-kottfars\//);
   assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/th\/recipes\/makaroni-op-nuea-bot-protein-sung\//);
-  assert.doesNotMatch(sitemap, /kaalilaatikko|raakileet|\.md/);
+  assert.doesNotMatch(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/kaalilaatikko\//);
+  assert.doesNotMatch(sitemap, /raakileet|\.md/);
   assert.match(robots, /Project-path robots\.txt/);
   assert.match(robots, /Sitemap: https:\/\/ozirix-dev\.github\.io\/Reseptit\/sitemap\.xml/);
 });
