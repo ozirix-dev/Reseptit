@@ -6,6 +6,7 @@ on:
     paths:
       - "reseptit/**"
       - "kaannokset/**"
+      - "kuvat/**"
       - "site/**"
       - ".github/dependabot.yml"
       - ".github/workflows/pages.yml"
@@ -13,6 +14,7 @@ on:
     paths:
       - "reseptit/**"
       - "kaannokset/**"
+      - "kuvat/**"
       - "site/**"
       - ".github/dependabot.yml"
       - ".github/workflows/pages.yml"
@@ -27,13 +29,13 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       pages: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
@@ -42,9 +44,15 @@ jobs:
         working-directory: site
       - run: npm test
         working-directory: site
+      - run: npm run test:image
+        working-directory: site
       - run: npm run build
         working-directory: site
       - run: npm run test:static
+        working-directory: site
+      - run: npx playwright install --with-deps chromium
+        working-directory: site
+      - run: npm run test:browser
         working-directory: site
       - uses: actions/configure-pages@v5
         if: github.event_name != 'pull_request'

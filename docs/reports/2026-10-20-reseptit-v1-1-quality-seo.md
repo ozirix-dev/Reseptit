@@ -52,3 +52,17 @@
 ## Käytetty design-ohjeistus
 
 Ennen käyttöliittymämuutoksia luettiin web-design-handbook sekä Ossi-foundationin väri-, typografia-, layout-, komponentti-, sisältörakenne-, media-, saavutettavuus- ja token-muistiot. Sovellettiin vain tähän sivustoon tarpeellisia kohtia: selkeä reseptirakenne, mobiilinäkymä, näppäimistöfokus, kontrasti, kuva-altit, mittojen varaaminen ja tulostusasettelu.
+
+## Viimeinen laatukierros 20.10.2026
+
+- Aiemmin puuttuneet julkaistavat WebP-kuvat on vapautettu `.gitignore`-säännöissä; muut kuvaformaatit pysyvät ohitettuina. `git check-ignore --no-index` varmisti, että `.webp` ei ohitu ja `.jpg` ohittuu.
+- Actions käynnistyy myös `kuvat/**`-muutoksista pushissa ja pull requesteissa. Runner on lukittu Ubuntu 24.04 -kuvaan, ja viralliset vakaat `actions/checkout@v7`- sekä `actions/setup-node@v7`-versiot korvaavat vanhat pääversiot. Node pysyy versiossa 22.
+- Build muodostaa `site/public/kuvat/`-julkaisukansion uudelleen julkaistujen reseptien kuvista vaiheistetusti. Polkujen traversal, symlinkkien kautta ulos lähdehakemistosta lukeminen ja ulostulokansion symlinkki estetään. Lähdekuvia ei poisteta. Julkaisuoutput on Git-ignoroitu.
+- Uusi kuvaputken integrointitesti vahvistaa onnistuneen WebP-kopion, lopullisen HTML:n ja JSON-LD:n absoluuttisen kuvalinkin, puuttuvan kuvan build-virheen, vanhan kuvan poistumisen kuvaton-reseptin seuraavassa buildissa sekä traversal- ja symlink-estot. Testikuva luodaan käyttöjärjestelmän väliaikaiskansioon eikä sitä lisätä reseptisisältöön.
+- Tuntemattoman client-reitin SEO siivoaa canonicalin, Recipe JSON-LD:n ja kaikki hreflang-/x-default-linkit; sivulle asetetaan `noindex,follow`. Staattinen 404 ja selainajo tarkistavat tämän sekä navigoinnin tunnetulta reseptiltä ja takaisin.
+- Kevyt Playwright/Chromium-smoke-ajo on CI:ssä. Se tarkistaa JavaScriptittömän suoran latauksen, annoskoon ja määrien skaalauksen, etusivu-/reseptinavigoinnin, tuntemattoman reitin ja paluun, selainkonsolin virheettömyyden sekä vaakavierityksen puuttumisen 320 px leveydellä.
+- Paikallinen lopputarkistus: `npm ci`, `npm test` (**10/10**), `npm run test:image` (**2/2**), `npm run build`, `npm run test:static` (**5/5**), `npm run test:browser` (**1/1**), `npm audit --audit-level=low` (**0 haavoittuvuutta**), `git diff --check` ja Markdown-lint (**68 tiedostoa, 0 ongelmaa**) läpäisivät.
+- GitHub Actionsin aiempi ajo commitille `1094aa4a83fa019087ae7d752411b12023b25a01` onnistui. Tämän viimeistelycommitin CI-tulos päivittyy pushin jälkeen.
+- PR #5 pysyy avoimena. PR:ää ei yhdistetä eikä tuotantoon julkaista tämän tehtävän aikana.
+- Viimeistelycommit SHA ja sen CI-tulos: täydennetään pushin ja Actions-ajon jälkeen.
+- Avoimet tekniset ongelmat: ei havaittu. Oikeita reseptikuvia ei lisätty.

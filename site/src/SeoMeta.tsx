@@ -60,7 +60,7 @@ export function SeoMeta() {
       document.head.append(canonicalLink);
     }
     const translations = recipe ? getRecipeTranslations(recipe) : getRecipes().filter((entry) => entry.locale === locale);
-    const alternates = recipe
+    const alternates = !known ? [] : recipe
       ? translations.map((entry) => ({ locale: entry.locale, path: entry.routePath }))
       : (Object.keys(baseByLocale) as RecipeLocale[])
           .filter((entryLocale) => getRecipes(entryLocale).length > 0)

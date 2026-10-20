@@ -55,6 +55,7 @@ test("unknown route output has no canonical or recipe structured data", async ()
   assert.match(html, /<h1>Sivua ei löytynyt<\/h1>/);
   assert.match(html, /name="robots" content="noindex,follow"/);
   assert.doesNotMatch(html, /rel="canonical"|recipe-jsonld|"@type":"Recipe"/);
+  assert.doesNotMatch(html, /hreflang=|x-default/);
   assert.doesNotMatch(html, /<script type="module"/);
 });
 

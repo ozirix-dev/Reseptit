@@ -1,16 +1,16 @@
-import { copyFile, lstat, mkdir, readdir, readFile, realpath, stat, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { parseMarkdown, renderSafeMarkdown } from "../src/content/markdown";
 import { assertUniqueRecipes } from "../src/content/recipe-validation";
 import { recipeFrontmatterSchema } from "../src/content/schema";
+import { rebuildPublishedImages } from "../src/content/published-images";
 import type { RecipeEntry, RecipeLocale, SiteContentIndex } from "../src/types/content";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
-const repoDir = path.resolve(siteDir, "..");
+const repoDir = path.resolve(process.env.RECIPE_SOURCE_ROOT ?? path.resolve(siteDir, ".."));
 const outputDir = path.join(siteDir, "src", "generated");
 const baseUrl = "https://ozirix-dev.github.io/Reseptit";
 const imageSourceDir = path.join(repoDir, "kuvat");
-const imageOutputDir = path.join(siteDir, "public", "kuvat");
 const localeBase: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" };
 
 function routeForRecipe(locale: RecipeLocale, slug: string): string {
@@ -49,24 +49,6 @@ function recipeDescription(markdown: string, descriptionSection: string): string
   return stripHtml(lead ?? descriptionSection);
 }
 
-async function copyRecipeImage(relativePath: string): Promise<void> {
-  const source = path.resolve(imageSourceDir, relativePath);
-  const allowedRoot = `${path.resolve(imageSourceDir)}${path.sep}`;
-  if (!source.startsWith(allowedRoot)) throw new Error(`Recipe image path escapes kuvat/: ${relativePath}`);
-  const info = await stat(source).catch(() => null);
-  if (!info?.isFile()) throw new Error(`Recipe image file does not exist: kuvat/${relativePath}`);
-  const [sourceRealPath, imageRootRealPath] = await Promise.all([realpath(source), realpath(imageSourceDir)]);
-  if (!sourceRealPath.startsWith(`${imageRootRealPath}${path.sep}`)) throw new Error(`Recipe image resolves outside kuvat/: ${relativePath}`);
-  const target = path.join(imageOutputDir, relativePath);
-  await mkdir(path.dirname(target), { recursive: true });
-  const [outputRootRealPath, targetDirectoryRealPath] = await Promise.all([realpath(imageOutputDir), realpath(path.dirname(target))]);
-  if (targetDirectoryRealPath !== outputRootRealPath && !targetDirectoryRealPath.startsWith(`${outputRootRealPath}${path.sep}`)) {
-    throw new Error(`Recipe image output resolves outside site/public/kuvat/: ${relativePath}`);
-  }
-  if ((await lstat(target).catch(() => null))?.isSymbolicLink()) throw new Error(`Recipe image target cannot be a symbolic link: ${relativePath}`);
-  await copyFile(sourceRealPath, target);
-}
-
 async function buildRecipes(): Promise<RecipeEntry[]> {
   const paths = [
     ...await markdownFiles(path.join(repoDir, "reseptit", "alkuruoat")),
@@ -76,6 +58,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     ...await markdownFiles(path.join(repoDir, "kaannokset")),
   ];
   const recipes: RecipeEntry[] = [];
+  const publishedImagePaths = new Set<string>();
   for (const filePath of paths) {
     const parsed = parseMarkdown(await readFile(filePath, "utf8"));
     if (!parsed) continue;
@@ -85,7 +68,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     const imagePaths = data.image
       ? [data.image.src, ...(data.image.srcset ?? []).map((item) => item.src)]
       : [];
-    await Promise.all(imagePaths.map(copyRecipeImage));
+    imagePaths.forEach((imagePath) => publishedImagePaths.add(imagePath));
     const instructions = section(parsed.content, ["Valmistus", "Preparation", "Instructions", "Tillagning", "การทำ"]);
     if (!instructions) throw new Error(`Published recipe has no instructions: ${filePath}`);
     const descriptionSection = section(parsed.content, ["Kuvaus", "Description", "Beskrivning", "คำอธิบาย"]);
@@ -112,6 +95,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     });
   }
   assertUniqueRecipes(recipes);
+  await rebuildPublishedImages(imageSourceDir, path.join(siteDir, "public"), [...publishedImagePaths]);
   return recipes.sort((a, b) => a.category.localeCompare(b.category) || a.title.localeCompare(b.title));
 }
 
