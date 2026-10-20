@@ -1,0 +1,64 @@
+---
+title: "VHH-lihapiirakka"
+recipe_id: "vhh-lihapiirakka"
+url_slug: "vhh-lihapiirakka"
+category: "leivonnainen"
+language: "fi"
+status: "published"
+diet_class: "vhh_tiukka"
+main_ingredient: ["naudan jauheliha","juusto"]
+cooking_method: ["uuni"]
+servings: 8
+time_total_min: 55
+difficulty: "helppo"
+tags: ["suomalainen kotiruoka","VHH"]
+image:
+  src: leivonnaiset/vhh-lihapiirakka.webp
+  alt: "VHH-lihapiirakka tarjoiltuna valmiina annoksena"
+  width: 1280
+  height: 853
+ingredients:
+  - amount: 200
+    unit: "g"
+    item: "mantelijauhoa"
+  - amount: 150
+    unit: "g"
+    item: "juustoraastetta"
+  - amount: 100
+    unit: "g"
+    item: "tuorejuustoa"
+  - amount: 2
+    unit: "kpl"
+    item: "kananmunaa"
+  - amount: 300
+    unit: "g"
+    item: "naudan jauhelihaa"
+  - amount: 1
+    unit: "kpl"
+    item: "sipuli"
+  - amount: 1
+    unit: "tl"
+    item: "suolaa"
+  - amount: 0.5
+    unit: "tl"
+    item: "mustapippuria"
+---
+
+# VHH-lihapiirakka
+
+VHH-lihapiirakka on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+
+## Kuvaus
+
+Tämä gluteeniton leivonnainen valmistuu mantelijauhosta ja säilyttää tutun leivonnaisen maun vähähiilihydraattisessa muodossa.
+
+## Valmistus
+
+1. Kuumenna uuni 200 °C:seen. Sulata juusto ja tuorejuusto varovasti ja sekoita mantelijauho sekä yksi kananmuna joukkoon.
+2. Painele taikina leivinpaperilla vuoratun piirakkavuoan pohjalle ja reunoille.
+3. Ruskista jauheliha ja sipuli, mausta ja levitä pohjalle.
+4. Sekoita toinen kananmuna täytteeseen, kaada vuokaan ja paista noin 30 minuuttia.
+
+## Muistiinpanot
+
+- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.
