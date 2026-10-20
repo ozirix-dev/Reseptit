@@ -4,6 +4,12 @@
 **Työhaara:** `codex/reseptit-v1-1-quality-seo`  
 **Rajaus:** Reseptit-repo. Jeesitiimin repoihin tai tuotantoon ei tehty muutoksia.
 
+## GitHub-katselmointi
+
+- Toteutuscommit: `59ec7b3` (`Improve recipe site SEO and static rendering`).
+- Pull request: [#5](https://github.com/ozirix-dev/Reseptit/pull/5), avoin ja yhdistämättä.
+- GitHub Actionsin `build`-tarkistus oli viimeisessä tarkistuksessa jonossa; paikallinen vastaava testaus on yllä raportoitu. PR:n yhdistäminen ja tuotantojulkaisu eivät ole osa tätä työtä.
+
 ## Auditoinnin havainnot
 
 - Aiempi prerender tuotti title- ja head-metatiedot, mutta jätti React-sisällön tyhjäksi `#root`-elementtiin. Sivut tarvitsivat JavaScriptin ennen reseptin näyttämistä.
