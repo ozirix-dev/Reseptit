@@ -69,7 +69,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       ? [data.image.src, ...(data.image.srcset ?? []).map((item) => item.src)]
       : [];
     imagePaths.forEach((imagePath) => publishedImagePaths.add(imagePath));
-    const instructions = section(parsed.content, ["Valmistus", "Preparation", "Instructions", "Tillagning", "การทำ"]);
+    const instructions = section(parsed.content, ["Valmistus", "Preparation", "Instructions", "Tillagning", "Gör så här", "การทำ", "วิธีทำ"]);
     if (!instructions) throw new Error(`Published recipe has no instructions: ${filePath}`);
     const descriptionSection = section(parsed.content, ["Kuvaus", "Description", "Beskrivning", "คำอธิบาย"]);
     const notes = section(parsed.content, ["Muistiinpanot", "Notes", "Anteckningar", "หมายเหตุ"]);

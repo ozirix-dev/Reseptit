@@ -44,3 +44,21 @@ test("published route paths stay within the recipe site's path space", () => {
     assert.match(recipe.routePath, /^\/(?:en\/recipes\/|sv\/recept\/|th\/recipes\/)?[a-z0-9-]+\/$/);
   }
 });
+
+test("the high-protein macaroni bake has four aligned published language versions", () => {
+  const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === "jauheliha-makaronilaatikko");
+  assert.deepEqual(translations.map((recipe) => recipe.locale).sort(), ["en", "fi", "sv", "th"]);
+  const source = translations.find((recipe) => recipe.locale === "fi");
+  assert.ok(source);
+  for (const translation of translations) {
+    assert.equal(translation.servings, source.servings);
+    assert.equal(translation.timeTotalMin, source.timeTotalMin);
+    assert.deepEqual(translation.nutrition, source.nutrition);
+    assert.equal(translation.ingredients.length, source.ingredients.length);
+    assert.deepEqual(translation.ingredients.map((item) => item.amount), source.ingredients.map((item) => item.amount));
+    assert.equal(translation.image?.src, source.image?.src);
+  }
+  assert.equal(translations.find((recipe) => recipe.locale === "en")?.routePath, "/en/recipes/high-protein-beef-macaroni-bake/");
+  assert.equal(translations.find((recipe) => recipe.locale === "sv")?.routePath, "/sv/recept/proteinrik-makaronilada-med-kottfars/");
+  assert.equal(translations.find((recipe) => recipe.locale === "th")?.routePath, "/th/recipes/makaroni-op-nuea-bot-protein-sung/");
+});
