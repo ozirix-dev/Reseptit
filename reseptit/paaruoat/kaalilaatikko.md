@@ -1,66 +1,74 @@
 ---
-title: "Kaalilaatikko"
-recipe_id: "kaalilaatikko"
-url_slug: "kaalilaatikko"
+title: "VHH-kaalilaatikko ilman riisiä"
+recipe_id: "vhh-kaalilaatikko"
+url_slug: "vhh-kaalilaatikko"
 category: "paaruoka"
 language: "fi"
-diet_class: "vhh_valjempi"
-carbs_net_per_serving_g:
-carbs_total_per_serving_g:
-protein_per_serving_g:
-fat_per_serving_g:
-servings: 6
-main_ingredient: ["kaali", "raejuusto", "kerma"]
+status: "published"
+diet_class: "vhh_tiukka"
+main_ingredient: ["valkokaali", "naudan jauheliha"]
 cooking_method: ["uuni", "haudutus"]
-time_total_min: 90
-difficulty: "keskitaso"
-tags: ["paaruoka", "uuni", "kaali", "vuokaruoka"]
-translation_languages: ["th"]
-translation_status:
-  th: "draft"
-status: "draft"
+servings: 6
+time_total_min: 110
+difficulty: "helppo"
+tags: ["suomalainen kotiruoka", "VHH", "uuniruoka", "kaali"]
+image:
+  src: paaruoat/kaalilaatikko-vhh.webp
+  alt: VHH-kaalilaatikko, jossa on haudutettua kaalia ja jauhelihaa, tarjolla puolukan kanssa
+  width: 1280
+  height: 853
+ingredients:
+  - amount: 900
+    unit: "g"
+    item: "valkokaalia"
+    note: "ohuiksi suikaleiksi leikattuna"
+  - amount: 500
+    unit: "g"
+    item: "naudan jauhelihaa"
+  - amount: 1
+    unit: "kpl"
+    item: "sipuli"
+  - amount: 2
+    unit: "dl"
+    item: "kuohukermaa"
+  - amount: 2
+    unit: "kpl"
+    item: "kananmunaa"
+  - amount: 1
+    unit: "dl"
+    item: "lihalientä"
+  - amount: 1
+    unit: "rkl"
+    item: "voita"
+  - amount: 1
+    unit: "tl"
+    item: "suolaa"
+  - amount: 0.5
+    unit: "tl"
+    item: "mustapippuria"
+  - amount: 1
+    unit: "tl"
+    item: "kuivattua meiramia"
 ---
 
-# Kaalilaatikko
+# VHH-kaalilaatikko ilman riisiä
 
-Uunissa haudutettava kaaliruoka, jossa kaali, raejuusto ja kerma muodostavat pehmean ja proteiinipitoisen kokonaisuuden.
+Perinteisen kaalilaatikon tutut maut syntyvät haudutetusta kaalista, jauhelihasta ja mehevästä kermamunaseoksesta ilman riisiä tai siirappia.
 
 ## Kuvaus
 
-Tama versio rakentuu haudutetusta kaalista ja kermaisesta raejuustoseoksesta. Lopputulos on pehmea, tayttava ja perinteista kaalilaatikkoa kevyempi.
-
-## Ainekset
-
-- 1,5-2 kg valkokaalia, suikaloituna
-- 500-600 g raejuustoa
-- 2-3 dl kuohukermaa
-- 2 suurta sipulia, hienonnettuna
-- 2-4 valkosipulinkynta, hienonnettuna
-- 2-3 rkl voita tai oljya
-- 1-2 lihaliemikuutiota tai kasvisliemikuutiota
-- 2-3 dl vetta
-- 1-2 tl suolaa
-- 1 tl mustapippuria
-- 1-2 tl kuivattua meiramia
-- 1 tl paprikajauhetta
-- halutessa hieman juustoraastetta tai voinokareita pinnalle
+Tässä arkisessa uuniruoassa kaali saa rauhassa pehmetä ennen paistamista. Jauheliha ja meirami tuovat tuttua makua, ja kananmunalla kevyesti hyytyvä kerma sitoo vuoan ilman viljaa.
 
 ## Valmistus
 
-1. Suikaloi kaali ja poista kova kantaosa.
-2. Kuullota sipuli ja valkosipuli voissa tai oljyssa.
-3. Lisaa kaali, liemikuutio ja vesi. Hauduta 20-30 minuuttia, kunnes kaali pehmenee.
-4. Mausta suolalla, pippurilla, meiramiilla ja paprikalla.
-5. Sekoita raejuusto ja kerma keskenaan.
-6. Kokoa vuokaan kerroksittain kaalia ja raejuustoseosta. Paata paalle kaalikerros.
-7. Halutessa lisaa pinnalle voita tai juustoraastetta.
-8. Paista 175-200 asteessa 45-60 minuuttia. Anna vetaytya hetki ennen tarjoilua.
-
-## Ravintoarvio per annos
-
-- Ravintoarviota ei ole viela laskettu.
+1. Kuumenna uuni 175 asteeseen. Suikaloi kaali ja hienonna sipuli.
+2. Sulata voi isossa kattilassa. Lisää kaali ja lihaliemi. Hauduta kannen alla noin 20 minuuttia välillä sekoittaen, kunnes kaali pehmenee.
+3. Ruskista jauheliha pannulla. Lisää sipuli ja paista muutama minuutti. Mausta suolalla, mustapippurilla ja meiramilla.
+4. Sekoita kerma ja kananmunat kulhossa. Yhdistä kaaliseos ja jauheliha uunivuoassa ja kaada kermaseos päälle.
+5. Paista keskitasolla noin 60–70 minuuttia, kunnes pinta on saanut väriä ja vuoka on hyytynyt. Jos pinta tummuu liikaa, peitä kevyesti foliolla.
+6. Anna vetäytyä 10 minuuttia ennen tarjoilua.
 
 ## Muistiinpanot
 
-- Tarjoa esimerkiksi sokerittoman karpalolisakkeen tai raikkaan salaatin kanssa.
-- Sopii hyvin myos valmistettavaksi etukateen.
+- Tarjoa halutessasi pienen sokerittoman puolukkalisäkkeen tai vihersalaatin kanssa.
+- Kaali kutistuu haudutettaessa, joten aloita riittävän suurella kattilalla.
