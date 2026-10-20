@@ -12,7 +12,10 @@ test("recipe index is prerendered and links only published languages", async () 
   assert.match(html, /<h3><a href="\/Reseptit\/keto-kauralesesampylat\/"/);
   assert.match(html, /rel="canonical" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/"/);
   assert.match(html, /hreflang="fi"/);
-  assert.doesNotMatch(html, /hreflang="(?:en|sv|th)"|recipe-jsonld/);
+  assert.match(html, /hreflang="en" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/en\/recipes\//);
+  assert.match(html, /hreflang="sv" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/sv\/recept\//);
+  assert.match(html, /hreflang="th" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/th\/recipes\//);
+  assert.doesNotMatch(html, /recipe-jsonld/);
 });
 
 test("prerendered recipe HTML includes useful content before JavaScript", async () => {
@@ -27,7 +30,7 @@ test("prerendered recipe HTML includes useful content before JavaScript", async 
   assert.match(html, /<html lang="fi">/);
   assert.match(html, /rel="canonical" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kermainen-lohipata\/"/);
   assert.match(html, /hreflang="x-default" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kermainen-lohipata\/"/);
-  assert.doesNotMatch(html, /en\/recipes|sv\/recept|th\/recipes/);
+  assert.doesNotMatch(root[1], /class="recipe-languages"/);
   assert.match(html, /<meta name="twitter:card" content="summary_large_image"/);
   assert.match(html, /property="og:image" content="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/paaruoat\/kermainen-lohipata\.webp"/);
   assert.match(root[1], /<img class="recipe-image" src="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/paaruoat\/kermainen-lohipata\.webp" alt="Kermainen lohipata lohipaloilla, pinaatilla ja tillillä" width="1254" height="1254"/);
@@ -41,6 +44,44 @@ test("prerendered recipe HTML includes useful content before JavaScript", async 
   assert.equal("author" in jsonLd, false);
   assert.equal("datePublished" in jsonLd, false);
   assert.equal("aggregateRating" in jsonLd, false);
+});
+
+test("translated macaroni bake pages have localized content, SEO metadata and matching recipe data", async () => {
+  const expected = [
+    { file: "en/recipes/high-protein-beef-macaroni-bake", locale: "en", title: "High-Protein Beef Macaroni Bake", route: "/en/recipes/high-protein-beef-macaroni-bake/", instructionHeading: "Method" },
+    { file: "sv/recept/proteinrik-makaronilada-med-kottfars", locale: "sv", title: "Proteinrik makaronilåda med köttfärs", route: "/sv/recept/proteinrik-makaronilada-med-kottfars/", instructionHeading: "Gör så här" },
+    { file: "th/recipes/makaroni-op-nuea-bot-protein-sung", locale: "th", title: "มักกะโรนีอบเนื้อบดโปรตีนสูง", route: "/th/recipes/makaroni-op-nuea-bot-protein-sung/", instructionHeading: "วิธีทำ" },
+  ];
+  const hreflangPaths = [
+    ["fi", "/jauheliha-makaronilaatikko/"],
+    ["en", "/en/recipes/high-protein-beef-macaroni-bake/"],
+    ["sv", "/sv/recept/proteinrik-makaronilada-med-kottfars/"],
+    ["th", "/th/recipes/makaroni-op-nuea-bot-protein-sung/"],
+  ];
+  for (const translation of expected) {
+    const html = await readFile(path.join(dist, translation.file, "index.html"), "utf8");
+    const root = html.match(/<div id="root">([\s\S]*)<\/div>\s*<\/body>/);
+    assert.ok(root, `${translation.locale} page has prerendered content`);
+    assert.match(html, new RegExp(`<html lang="${translation.locale}">`));
+    assert.ok(root[1].includes(`<h1>${translation.title}</h1>`));
+    assert.ok(root[1].includes(`<h2>${translation.instructionHeading}</h2>`));
+    assert.match(root[1], /class="recipe-languages"/);
+    assert.match(root[1], /jauheliha-makaronilaatikko\.webp/);
+    assert.ok(html.includes(`rel="canonical" href="https://ozirix-dev.github.io/Reseptit${translation.route}"`));
+    for (const [locale, route] of hreflangPaths) {
+      assert.ok(html.includes(`hreflang="${locale}" href="https://ozirix-dev.github.io/Reseptit${route}"`));
+    }
+    assert.ok(html.includes("hreflang=\"x-default\" href=\"https://ozirix-dev.github.io/Reseptit/jauheliha-makaronilaatikko/\""));
+    const jsonLdMatch = html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
+    assert.ok(jsonLdMatch);
+    const jsonLd = JSON.parse(jsonLdMatch[1]);
+    assert.equal(jsonLd.name, translation.title);
+    assert.equal(jsonLd.inLanguage, translation.locale);
+    assert.equal(jsonLd.recipeYield, 8);
+    assert.equal(jsonLd.recipeInstructions.length, 7);
+    assert.equal(jsonLd.nutrition.proteinContent, "45 g");
+    assert.deepEqual(jsonLd.image, ["https://ozirix-dev.github.io/Reseptit/kuvat/paaruoat/jauheliha-makaronilaatikko.webp"]);
+  }
 });
 
 test("published keto bun page includes its content and omitted amounts remain omitted", async () => {
@@ -68,6 +109,9 @@ test("sitemap and project robots reference the real Pages path", async () => {
   const robots = await readFile(path.join(dist, "robots.txt"), "utf8");
   assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/kermainen-lohipata\//);
   assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/keto-kauralesesampylat\//);
+  assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/en\/recipes\/high-protein-beef-macaroni-bake\//);
+  assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/sv\/recept\/proteinrik-makaronilada-med-kottfars\//);
+  assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/th\/recipes\/makaroni-op-nuea-bot-protein-sung\//);
   assert.doesNotMatch(sitemap, /kaalilaatikko|raakileet|\.md/);
   assert.match(robots, /Project-path robots\.txt/);
   assert.match(robots, /Sitemap: https:\/\/ozirix-dev\.github\.io\/Reseptit\/sitemap\.xml/);
