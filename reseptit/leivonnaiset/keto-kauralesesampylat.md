@@ -14,6 +14,11 @@ cooking_method: ["uuni"]
 time_total_min: 45
 difficulty: "helppo"
 tags: ["keto", "vhh", "kaura", "sämpylä", "leivonta"]
+image:
+  src: leivonnaiset/keto-kauralesesampylat.webp
+  alt: Keto-kauralesesämpylöitä korissa teen ja veitsen vieressä
+  width: 2200
+  height: 1053
 translation_languages: []
 translation_status: {}
 ingredients:
