@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: paaruoat/poronkaristys-kukkakaalimuusilla.webp
-  alt: "Poronkäristys kukkakaalimuusilla tarjoiltuna valmiina annoksena"
+  alt: "Poronkäristystä kukkakaalimuusin, puolukoiden ja vihreiden papujen kanssa"
   width: 1280
   height: 853
 ingredients:

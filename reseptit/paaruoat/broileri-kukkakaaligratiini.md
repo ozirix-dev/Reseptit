@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: paaruoat/broileri-kukkakaaligratiini.webp
-  alt: "Broileri-kukkakaaligratiini tarjoiltuna valmiina annoksena"
+  alt: "Broileria ja kukkakaalia kermaisessa juustokuorrutetussa gratiinissa"
   width: 1280
   height: 853
 ingredients:

@@ -76,7 +76,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     const instructionSteps = [...instructions.matchAll(/^\s*\d+[.)]\s+(.+)$/gm)].map((match) => match[1].trim());
     recipes.push({
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
-      title: data.title, category: data.category, routePath: routeForRecipe(data.language, data.url_slug),
+      title: data.title, category: data.category, dietClass: data.diet_class ?? null, routePath: routeForRecipe(data.language, data.url_slug),
       description: recipeDescription(parsed.content, descriptionSection), ingredients: data.ingredients,
       instructionsHtml: await renderSafeMarkdown(instructions),
       instructionsText: instructionSteps.length ? instructionSteps : instructions.split(/\n\s*\n/).filter(Boolean),

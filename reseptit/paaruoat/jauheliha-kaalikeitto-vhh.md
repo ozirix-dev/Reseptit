@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","vähähiilihydraattinen"]
 image:
   src: paaruoat/jauheliha-kaalikeitto-vhh.webp
-  alt: "Jauheliha-kaalikeitto tarjoiltuna valmiina annoksena"
+  alt: "Kulhollinen jauheliha-kaalikeittoa, jossa näkyy kaalisuikaleita, jauhelihaa ja porkkanaa"
   width: 1280
   height: 853
 ingredients:

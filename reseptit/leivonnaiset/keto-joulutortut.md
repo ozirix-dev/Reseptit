@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: leivonnaiset/keto-joulutortut.webp
-  alt: "Keto-joulutortut tarjoiltuna valmiina annoksena"
+  alt: "Kullanruskeita joulutorttuja luumuhillokeskuksella vadilla"
   width: 1280
   height: 853
 ingredients:

@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: leivonnaiset/vhh-runebergintortut.webp
-  alt: "VHH-Runebergintortut tarjoiltuna valmiina annoksena"
+  alt: "Pieniä Runebergin torttuja, joiden päällä on vadelmahilloa ja valkoinen sokeriton kuorruterengas"
   width: 1280
   height: 853
 ingredients:

@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: paaruoat/vhh-kaalikaarryleet.webp
-  alt: "VHH-kaalikääryleet tarjoiltuna valmiina annoksena"
+  alt: "Kullanruskeita kaalikääryleitä kukkakaalimuusin ja puolukoiden kanssa"
   width: 1280
   height: 853
 ingredients:

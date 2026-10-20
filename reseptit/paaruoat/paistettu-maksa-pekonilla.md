@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: paaruoat/paistettu-maksa-pekonilla.webp
-  alt: "Paistettu maksa ja pekoni tarjoiltuna valmiina annoksena"
+  alt: "Paistettua maksaa pekonin, sipulin ja kukkakaalimuusin kanssa"
   width: 1280
   height: 853
 ingredients:
