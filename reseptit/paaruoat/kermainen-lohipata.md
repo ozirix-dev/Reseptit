@@ -15,6 +15,11 @@ cooking_method: ["uuni"]
 time_total_min: 40
 difficulty: "helppo"
 tags: ["arki", "gluteeniton", "uuniruoka", "kala", "vhh"]
+image:
+  src: paaruoat/kermainen-lohipata.webp
+  alt: Kermainen lohipata lohipaloilla, pinaatilla ja tillillä
+  width: 1254
+  height: 1254
 ingredients:
   - amount: 600
     unit: "g"
