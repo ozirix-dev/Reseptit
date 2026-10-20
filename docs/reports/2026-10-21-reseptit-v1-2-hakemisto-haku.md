@@ -6,7 +6,7 @@
 - Repository: `ozirix-dev/Reseptit`
 - Tuotantoauditointi: `https://ozirix-dev.github.io/Reseptit/`
 - Työhaara: `codex/reseptit-v1-2-hakemisto-haku`
-- Toteutuscommit: päivitetään viimeisen korjauscommitin jälkeen.
+- Toteutuscommit: `6f1175f937457adde92cafe6117187554631a3ff`
 - Pull Request: [#23 – Reseptit V1.2: Kuvallinen hakemisto ja reseptihaku](https://github.com/ozirix-dev/Reseptit/pull/23)
 - PR jätettiin yhdistämättä tehtävänannon mukaisesti.
 
@@ -97,12 +97,12 @@ Kaikki seuraavat paikalliset tarkistukset menivät läpi:
 - `npm run test:image` — 2 testiä läpi
 - `npm run build` — onnistui, 42 julkaistua reseptiversiota ja 46 esirenderöityä reittiä
 - `npm run test:static` — 6 testiä läpi
-- `npm run test:browser` — läpi
+- `npm run test:browser` — 1 selainajo läpi; JavaScriptittömän näkymän kortit/linkit ja hakulomakkeen puuttuminen sekä latausprioriteetit tarkistettu
 - `npm audit --audit-level=low` — 0 haavoittuvuutta
 - `git diff --check` — läpi
 - Markdown-lint — komentoa ei ole määritetty projektiin
 
-GitHub Actions: [PR-run #39512345354](https://github.com/ozirix-dev/Reseptit/actions/runs/39512345354) onnistui (build 55 s). Deploy-vaihe ohitettiin PR:lle, kuten workflow'ssa on määritetty; tuotantojulkaisua ei tehty tässä työssä.
+GitHub Actions: [PR-run #39514678876](https://github.com/ozirix-dev/Reseptit/actions/runs/39514678876) onnistui korjauscommitille (build, kuva-, staattinen HTML- ja selainajot). Deploy-vaihe ohitettiin PR:lle, kuten workflow'ssa on määritetty; tuotantojulkaisua ei tehty tässä työssä.
 
 ## Muutetut tiedostot
 
@@ -113,9 +113,10 @@ GitHub Actions: [PR-run #39512345354](https://github.com/ozirix-dev/Reseptit/act
 - `site/scripts/build-content.ts`
 - `site/src/styles.css`
 - `site/tests/recipe-search.test.ts`
+- `site/tests/published-content.test.ts`
 - `site/tests/static-output.test.ts`
 - `site/tests/browser-smoke.test.ts`
-- 20 reseptin kuvitusta sekä niitä vastaavat alt-tekstit
+- 20 reseptin kuvitusta sekä niitä vastaavat alt-tekstit; jauheliha-kaalikeiton korjattu kuva
 - Tämä raportti
 
 ## Avoimet asiat ja jatkoehdotukset
