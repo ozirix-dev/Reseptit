@@ -64,5 +64,6 @@ Ennen käyttöliittymämuutoksia luettiin web-design-handbook sekä Ossi-foundat
 - Paikallinen lopputarkistus: `npm ci`, `npm test` (**10/10**), `npm run test:image` (**2/2**), `npm run build`, `npm run test:static` (**5/5**), `npm run test:browser` (**1/1**), `npm audit --audit-level=low` (**0 haavoittuvuutta**), `git diff --check` ja Markdown-lint (**68 tiedostoa, 0 ongelmaa**) läpäisivät.
 - GitHub Actionsin aiempi ajo commitille `1094aa4a83fa019087ae7d752411b12023b25a01` onnistui. Tämän viimeistelycommitin CI-tulos päivittyy pushin jälkeen.
 - PR #5 pysyy avoimena. PR:ää ei yhdistetä eikä tuotantoon julkaista tämän tehtävän aikana.
-- Viimeistelycommit SHA ja sen CI-tulos: täydennetään pushin ja Actions-ajon jälkeen.
+- Viimeistelyn toteutuscommit: `f5a0251900add9d08810721de638923ca5b2227d`.
+- PR #5:n toteutuscommit on pushaattu; viimeistelyn Actions-ajo odottaa GitHubissa käynnistymistä/valmistumista.
 - Avoimet tekniset ongelmat: ei havaittu. Oikeita reseptikuvia ei lisätty.
