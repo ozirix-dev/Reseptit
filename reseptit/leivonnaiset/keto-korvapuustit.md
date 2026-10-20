@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: leivonnaiset/keto-korvapuustit.webp
-  alt: "Keto-korvapuustit tarjoiltuna valmiina annoksena"
+  alt: "Kanelilla ja sokerittomalla makeutuksella maustettuja korvapuusteja vadilla"
   width: 1280
   height: 853
 ingredients:

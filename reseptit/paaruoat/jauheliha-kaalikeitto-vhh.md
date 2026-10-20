@@ -7,14 +7,14 @@ language: "fi"
 status: "published"
 diet_class: "vhh_valjempi"
 main_ingredient: ["naudan jauheliha","kaali"]
-cooking_method: ["uuni"]
+cooking_method: ["liesi"]
 servings: 6
 time_total_min: 40
 difficulty: "helppo"
 tags: ["suomalainen kotiruoka","vähähiilihydraattinen"]
 image:
   src: paaruoat/jauheliha-kaalikeitto-vhh.webp
-  alt: "Jauheliha-kaalikeitto tarjoiltuna valmiina annoksena"
+  alt: "Kulhollinen jauheliha-kaalikeittoa, jossa näkyy kaalisuikaleita, jauhelihaa ja meiramia"
   width: 1280
   height: 853
 ingredients:
@@ -46,11 +46,11 @@ ingredients:
 
 # Jauheliha-kaalikeitto
 
-Jauheliha-kaalikeitto on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Jauheliha-kaalikeitto on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Tämä kattilassa liedellä valmistuva versio on mitoitettu kuudelle.
 
 ## Kuvaus
 
-Ruoassa tuttu maku rakentuu yksinkertaisista raaka-aineista. Kasvikset ja kermaiset ainekset tuovat mehevyyttä, ja annoskokoa voi säätää reseptin annoslaskurilla.
+Ruoan maku rakentuu kaalista, naudan jauhelihasta, sipulista ja meiramilla maustetusta liemestä. Annoskokoa voi säätää reseptin annoslaskurilla.
 
 ## Valmistus
 

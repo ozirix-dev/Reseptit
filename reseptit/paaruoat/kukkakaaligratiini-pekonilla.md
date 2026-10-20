@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: paaruoat/kukkakaaligratiini-pekonilla.webp
-  alt: "Pekoninen kukkakaaligratiini tarjoiltuna valmiina annoksena"
+  alt: "Kullanruskeaa juustokuorrutettua kukkakaaligratiinia pekonilla"
   width: 1280
   height: 853
 ingredients:

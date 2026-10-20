@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: paaruoat/kanakorma-kukkakaaliriisilla.webp
-  alt: "Kanakorma kukkakaaliriisillä tarjoiltuna valmiina annoksena"
+  alt: "Kermainen kanakorma kukkakaaliriisin ja tuoreen korianterin kanssa"
   width: 1280
   height: 853
 ingredients:

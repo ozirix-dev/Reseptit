@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","vähähiilihydraattinen"]
 image:
   src: jalkiruoat/vhh-mustikkapiirakka.webp
-  alt: "VHH-mustikkapiirakka tarjoiltuna valmiina annoksena"
+  alt: "Mustikkapiirakka tuoreiden mustikoiden ja kermavaahtonokareen kanssa"
   width: 1280
   height: 853
 ingredients:

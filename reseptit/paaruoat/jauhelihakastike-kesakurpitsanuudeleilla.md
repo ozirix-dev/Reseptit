@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: paaruoat/jauhelihakastike-kesakurpitsanuudeleilla.webp
-  alt: "Jauhelihakastike kesäkurpitsanuudeleilla tarjoiltuna valmiina annoksena"
+  alt: "Jauheliha-kermakastiketta kesäkurpitsanuudeleiden päällä"
   width: 1280
   height: 853
 ingredients:

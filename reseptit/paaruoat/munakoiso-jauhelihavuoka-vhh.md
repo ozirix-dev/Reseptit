@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: paaruoat/munakoiso-jauhelihavuoka-vhh.webp
-  alt: "Munakoiso-jauhelihavuoka tarjoiltuna valmiina annoksena"
+  alt: "Juustolla gratinoitua munakoiso-jauhelihavuokaa tarjoiluastiassa"
   width: 1280
   height: 853
 ingredients:

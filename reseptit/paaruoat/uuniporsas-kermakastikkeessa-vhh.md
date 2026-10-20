@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: paaruoat/uuniporsas-kermakastikkeessa-vhh.webp
-  alt: "Uuniporsas kermaisella pannukastikkeella tarjoiltuna valmiina annoksena"
+  alt: "Viipaloitua uuniporsasta kermaisella kastikkeella, kukkakaalimuusilla ja vihreillä pavuilla"
   width: 1280
   height: 853
 ingredients:

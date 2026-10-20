@@ -20,6 +20,7 @@ export interface ArticleEntry {
 }
 
 export type RecipeLocale = "fi" | "en" | "sv" | "th";
+export type RecipeDietClass = "keto" | "vhh_tiukka" | "vhh_valjempi";
 
 export interface RecipeIngredient {
   amount: number | null;
@@ -44,6 +45,7 @@ export interface RecipeEntry {
   locale: RecipeLocale;
   title: string;
   category: "alkuruoka" | "paaruoka" | "jalkiruoka" | "leivonnainen";
+  dietClass: RecipeDietClass | null;
   routePath: string;
   image: RecipeImage | null;
   description: string;

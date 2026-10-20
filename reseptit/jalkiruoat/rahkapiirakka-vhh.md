@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","vähähiilihydraattinen"]
 image:
   src: jalkiruoat/rahkapiirakka-vhh.webp
-  alt: "VHH-rahkapiirakka tarjoiltuna valmiina annoksena"
+  alt: "Pala rahkapiirakkaa marjojen kanssa"
   width: 1280
   height: 853
 ingredients:

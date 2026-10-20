@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: paaruoat/vhh-lihamureke.webp
-  alt: "Mehevä VHH-lihamureke tarjoiltuna valmiina annoksena"
+  alt: "Viipaloitua lihamureketta kukkakaalimuusin ja vihreiden papujen kanssa"
   width: 1280
   height: 853
 ingredients:

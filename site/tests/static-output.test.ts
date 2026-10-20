@@ -8,13 +8,17 @@ const dist = path.resolve(import.meta.dirname, "../dist");
 test("recipe index is prerendered and links only published languages", async () => {
   const html = await readFile(path.join(dist, "index.html"), "utf8");
   assert.match(html, /<h1>Reseptit<\/h1>/);
-  assert.match(html, /<h3><a href="\/Reseptit\/kermainen-lohipata\/"/);
-  assert.match(html, /<h3><a href="\/Reseptit\/keto-kauralesesampylat\/"/);
+  assert.match(html, /<a class="recipe-card__link" href="\/Reseptit\/kermainen-lohipata\/"[\s\S]*?<h3 class="recipe-card__title">Kermainen lohipata<\/h3>/);
+  assert.match(html, /<a class="recipe-card__link" href="\/Reseptit\/keto-kauralesesampylat\/"[\s\S]*?<h3 class="recipe-card__title">Keto-kauralesesämpylät<\/h3>/);
+  assert.match(html, /<div class="recipe-card-grid">/);
+  assert.doesNotMatch(html, /<form class="recipe-filters" role="search"/);
+  assert.doesNotMatch(html, /id="recipe-search"/);
   assert.match(html, /rel="canonical" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/"/);
   assert.match(html, /hreflang="fi"/);
   assert.match(html, /hreflang="en" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/en\/recipes\//);
   assert.match(html, /hreflang="sv" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/sv\/recept\//);
   assert.match(html, /hreflang="th" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/th\/recipes\//);
+  assert.doesNotMatch(html, /href="[^"]+\?q=/);
   assert.doesNotMatch(html, /recipe-jsonld/);
 });
 
@@ -114,6 +118,7 @@ test("sitemap and project robots reference the real Pages path", async () => {
   assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/th\/recipes\/makaroni-op-nuea-bot-protein-sung\//);
   assert.doesNotMatch(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/kaalilaatikko\//);
   assert.doesNotMatch(sitemap, /raakileet|\.md/);
+  assert.doesNotMatch(sitemap, /\?(?:q|category|diet)=/);
   assert.match(robots, /Project-path robots\.txt/);
   assert.match(robots, /Sitemap: https:\/\/ozirix-dev\.github\.io\/Reseptit\/sitemap\.xml/);
 });

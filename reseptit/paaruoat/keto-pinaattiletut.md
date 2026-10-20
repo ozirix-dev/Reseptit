@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: paaruoat/keto-pinaattiletut.webp
-  alt: "Keto-pinaattiletut tarjoiltuna valmiina annoksena"
+  alt: "Pino vihreitä pinaattilettuja yrttien ja kermaisen lisäkkeen kanssa"
   width: 1280
   height: 853
 ingredients:

@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: leivonnaiset/vhh-lihapiirakka.webp
-  alt: "VHH-lihapiirakka tarjoiltuna valmiina annoksena"
+  alt: "Puolikas lihapiirakka, jossa näkyy mehevä jauhelihatäyte ja kullanruskea kuori"
   width: 1280
   height: 853
 ingredients:

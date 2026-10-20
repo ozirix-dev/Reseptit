@@ -16,7 +16,7 @@ async function waitForServer() {
   throw new Error("Vite preview did not become ready.");
 }
 
-test("browser smoke: prerender, serving controls, navigation, SEO cleanup and 320px layout", async (t) => {
+test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use and responsive layouts", async (t) => {
   server = spawn(process.execPath, [path.join(import.meta.dirname, "..", "node_modules", "vite", "bin", "vite.js"), "preview", "--host", "127.0.0.1", "--port", "4173", "--strictPort"], { stdio: "ignore" });
   try {
     await waitForServer();
@@ -24,8 +24,11 @@ test("browser smoke: prerender, serving controls, navigation, SEO cleanup and 32
     t.after(async () => { await browser.close(); server.kill(); });
 
     const noJs = await browser.newPage({ javaScriptEnabled: false });
-    await noJs.goto(`${base}/kermainen-lohipata/`);
-    assert.equal(await noJs.getByRole("heading", { name: "Kermainen lohipata" }).count(), 1);
+    await noJs.goto(`${base}/`);
+    assert.equal(await noJs.getByRole("heading", { name: "Reseptit" }).count(), 1);
+    assert.ok(await noJs.locator(".recipe-card-grid .recipe-card").count() > 0);
+    assert.equal(await noJs.getByRole("search").count(), 0);
+    assert.ok(await noJs.locator(".recipe-card-grid .recipe-card__link").count() > 0);
     await noJs.close();
 
     const page = await browser.newPage({ viewport: { width: 320, height: 800 } });
@@ -41,6 +44,53 @@ test("browser smoke: prerender, serving controls, navigation, SEO cleanup and 32
     await page.getByRole("heading", { name: "Reseptit" }).waitFor();
     await page.getByRole("link", { name: "Kermainen lohipata" }).click();
     await page.getByRole("heading", { name: "Kermainen lohipata" }).waitFor();
+
+    await page.goto(`${base}/?q=lohi`);
+    await page.getByRole("searchbox", { name: "Hae reseptejä" }).waitFor();
+    await page.waitForFunction(() => (document.querySelector<HTMLInputElement>("#recipe-search")?.value ?? "") === "lohi");
+    assert.ok(await page.locator(".recipe-card-grid .recipe-card").count() > 0);
+    assert.ok((await page.locator('link[rel="canonical"]').getAttribute("href"))?.endsWith("/Reseptit/"));
+    await page.getByLabel("Kategoria").selectOption("jalkiruoka");
+    await page.getByRole("status").getByText("Löytyi 0 reseptiä").waitFor();
+    assert.match(page.url(), /[?&]q=lohi/);
+    assert.match(page.url(), /[?&]category=jalkiruoka/);
+    await page.getByRole("button", { name: "Tyhjennä haku ja suodattimet" }).click();
+    await page.getByRole("searchbox", { name: "Hae reseptejä" }).fill("kukkakaali");
+    await page.getByLabel("Kategoria").selectOption("paaruoka");
+    await page.getByLabel("Ruokavalio").selectOption("vhh");
+    assert.ok(await page.locator(".recipe-card-grid .recipe-card").count() > 0);
+    assert.equal(await page.locator(".recipe-card__diet").count(), await page.locator(".recipe-card").count());
+    await page.getByRole("searchbox", { name: "Hae reseptejä" }).fill("ei-tallaista-ainesosaa");
+    await page.getByText("Reseptejä ei löytynyt hakuehdoilla.").waitFor();
+    assert.equal(await page.locator(".recipe-card-grid").count(), 0);
+    await page.getByRole("button", { name: "Tyhjennä haku ja suodattimet" }).last().click();
+    assert.equal(await page.locator(".recipe-card__image[loading=eager]").count(), 1);
+    assert.equal(await page.locator('.recipe-card__image[fetchpriority="high"]').count(), 1);
+    assert.equal(await page.locator(".recipe-card__image[loading=lazy]").count(), await page.locator(".recipe-card__image").count() - 1);
+    assert.equal(await page.locator(".recipe-card h3").count(), await page.locator(".recipe-card").count());
+
+    for (const [width, columns] of [[320, 1], [375, 1], [390, 1], [768, 2], [1024, 2], [1440, 3]]) {
+      await page.setViewportSize({ width, height: 900 });
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `no horizontal overflow at ${width}px`);
+      assert.equal(await page.locator(".recipe-card-grid").evaluate((element) => getComputedStyle(element).gridTemplateColumns.split(" ").length), columns, `grid column count at ${width}px`);
+    }
+
+    await page.setViewportSize({ width: 390, height: 800 });
+    await page.goto(`${base}/en/recipes/`);
+    await page.getByRole("searchbox", { name: "Search recipes" }).waitFor();
+    await page.goto(`${base}/sv/recept/`);
+    await page.getByRole("searchbox", { name: "Sök recept" }).waitFor();
+    await page.goto(`${base}/th/recipes/`);
+    await page.getByRole("searchbox", { name: "ค้นหาสูตรอาหาร" }).waitFor();
+    await page.setViewportSize({ width: 320, height: 800 });
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+
+    await page.goto(`${base}/`);
+    const searchbox = page.getByRole("searchbox", { name: "Hae reseptejä" });
+    await searchbox.focus();
+    await searchbox.fill("lohi");
+    await page.keyboard.press("Tab");
+    assert.equal(await page.getByRole("button", { name: "Tyhjennä haku", exact: true }).evaluate((button) => button.matches(":focus-visible")), true);
 
     await page.evaluate(() => {
       history.pushState(null, "", "/Reseptit/no-such-recipe/");

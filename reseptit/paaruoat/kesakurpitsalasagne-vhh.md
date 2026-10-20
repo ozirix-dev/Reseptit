@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: paaruoat/kesakurpitsalasagne-vhh.webp
-  alt: "Kesäkurpitsalasagne tarjoiltuna valmiina annoksena"
+  alt: "Pala kesäkurpitsalasagnea tomaatilla ja juustolla kuorrutettuna"
   width: 1280
   height: 853
 ingredients:

@@ -14,7 +14,7 @@ difficulty: "helppo"
 tags: ["suomalainen kotiruoka","VHH"]
 image:
   src: jalkiruoat/keto-pannukakku.webp
-  alt: "Keto-pannukakku tarjoiltuna valmiina annoksena"
+  alt: "Pala pannukakkua mustikoiden, vadelmien ja kermavaahdon kanssa"
   width: 1280
   height: 853
 ingredients:
