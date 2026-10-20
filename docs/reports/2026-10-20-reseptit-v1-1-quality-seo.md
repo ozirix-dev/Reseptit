@@ -8,7 +8,8 @@
 
 - Toteutuscommit: `59ec7b3` (`Improve recipe site SEO and static rendering`).
 - Pull request: [#5](https://github.com/ozirix-dev/Reseptit/pull/5), avoin ja yhdistämättä.
-- GitHub Actionsin `build`-tarkistus oli viimeisessä tarkistuksessa jonossa; paikallinen vastaava testaus on yllä raportoitu. PR:n yhdistäminen ja tuotantojulkaisu eivät ole osa tätä työtä.
+- GitHub Actionsin `build`-tarkistus läpäisi commitin `d427816` testit, buildin ja staattisen HTML:n testit. PR:n yhdistäminen ja tuotantojulkaisu eivät ole osa tätä työtä.
+- GitHub Actions ilmoittaa nykyisistä `checkout@v4`- ja `setup-node@v4`-toimintojen Node 20 -deprekaatiovaroituksista sekä `ubuntu-latest`-kuvan siirtymästä Ubuntu 26:een. Nämä varoitukset eivät estäneet buildia.
 
 ## Auditoinnin havainnot
 
