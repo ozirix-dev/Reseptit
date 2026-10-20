@@ -10,6 +10,8 @@ Kyse ei ole vain sekalaisesta kansiosta, johon tallennetaan resepteja Markdownin
 - yllapidon kannalta johdonmukaisena tyokaluna
 - pohjana mahdolliselle myohemmalle julkaisulle, haulle, suodatuksille tai sivustolle
 
+Reseptisivuston build ja GitHub Pages -julkaisu sijaitsevat `site/`-kansiossa. Katso [julkaisuarkkitehtuuri](docs/julkaisuarkkitehtuuri_github_pages.md).
+
 ---
 
 ## 1. Projektin idea
