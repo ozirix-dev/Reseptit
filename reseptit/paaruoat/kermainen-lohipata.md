@@ -15,6 +15,44 @@ cooking_method: ["uuni"]
 time_total_min: 40
 difficulty: "helppo"
 tags: ["arki", "gluteeniton", "uuniruoka", "kala", "vhh"]
+ingredients:
+  - amount: 600
+    unit: "g"
+    item: "lohifilee"
+  - amount: 1
+    unit: ""
+    item: "sipuli"
+    note: "pieni"
+  - amount: 2
+    unit: ""
+    item: "valkosipulinkynttä"
+  - amount: 200
+    unit: "g"
+    item: "tuorejuustoa"
+  - amount: 2
+    unit: "dl"
+    item: "kuohukermaa"
+  - amount: 1
+    unit: "rkl"
+    item: "voita"
+  - amount: 1
+    unit: "tl"
+    item: "sitruunamehua"
+  - amount: 1
+    unit: "tl"
+    item: "Dijon-sinappia"
+  - amount: 1
+    unit: "tl"
+    item: "suolaa"
+  - amount: 0.5
+    unit: "tl"
+    item: "mustapippuria"
+  - amount: 1
+    unit: "tl"
+    item: "kuivattua tilliä"
+  - amount: 150
+    unit: "g"
+    item: "pinaattia"
 translation_languages: ["en", "th"]
 translation_status:
   en: "draft"
@@ -30,21 +68,6 @@ Kermainen lohipata on helppo ja tayttava arjen pääruoka.
 
 Tama on pilottiresepti, jolla lukitaan kaytannon reseptiformaatti tahan projektiin. Resepti on tarkoituksella riittavan valmis, jotta metatiedot, sisaltorakenne ja monikielisyysmalli voidaan testata oikeassa tiedostossa eika vain mallipohjassa.
 
-## Ainekset
-
-- 600 g lohifileeta
-- 1 pieni sipuli
-- 2 valkosipulinkynta
-- 200 g tuorejuustoa
-- 2 dl kuohukermaa
-- 1 rkl voita
-- 1 tl sitruunamehua
-- 1 tl Dijon-sinappia
-- 1 tl suolaa
-- 0,5 tl mustapippuria
-- 1 tl kuivattua tillia
-- 150 g pinaattia
-
 ## Valmistus
 
 1. Lammita uuni 200 asteeseen.
@@ -54,13 +77,6 @@ Tama on pilottiresepti, jolla lukitaan kaytannon reseptiformaatti tahan projekti
 5. Aseta lohifilee uunivuokaan ja kaada kastike paalle.
 6. Kypsenna uunissa noin 25 minuuttia, kunnes lohi on juuri kypsaa.
 7. Anna vetaytya hetki ennen tarjoilua.
-
-## Ravintoarvio per annos
-
-- nettohiilihydraatit: noin 6 g
-- hiilihydraatit yhteensa: noin 8 g
-- proteiini: noin 29 g
-- rasva: noin 35 g
 
 ## Muistiinpanot
 
