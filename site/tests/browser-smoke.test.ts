@@ -102,7 +102,24 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.equal(await page.locator('script#recipe-jsonld').count(), 0);
     assert.equal(await page.locator('link[rel="alternate"][hreflang]').count(), 0);
     assert.equal(await page.locator('link[rel="alternate"][hreflang="x-default"]').count(), 0);
-    await page.evaluate(() => history.back());
+
+    for (const missingPage of [
+      { path: "/Reseptit/en/recipes/no-such-recipe/", locale: "en", heading: "Page not found", title: "Page not found | Recipes" },
+      { path: "/Reseptit/sv/recept/recept-som-inte-finns/", locale: "sv", heading: "Sidan kunde inte hittas", title: "Sidan kunde inte hittas | Recept" },
+      { path: "/Reseptit/th/recipes/no-such-recipe/", locale: "th", heading: "ไม่พบหน้านี้", title: "ไม่พบหน้านี้ | สูตรอาหาร" },
+    ]) {
+      await page.evaluate((path) => {
+        history.pushState(null, "", path);
+        dispatchEvent(new PopStateEvent("popstate"));
+      }, missingPage.path);
+      await page.getByRole("heading", { name: missingPage.heading }).waitFor();
+      assert.equal(await page.locator("html").getAttribute("lang"), missingPage.locale);
+      assert.equal(await page.title(), missingPage.title);
+      assert.equal(await page.locator('meta[name="robots"]').getAttribute("content"), "noindex,follow");
+      assert.equal(await page.locator('link[rel="canonical"]').count(), 0);
+      assert.equal(await page.locator('link[rel="alternate"][hreflang]').count(), 0);
+    }
+    await page.goto(`${base}/kermainen-lohipata/`);
     await page.getByRole("heading", { name: "Kermainen lohipata" }).waitFor();
     await page.waitForFunction(() => Boolean(document.querySelector('link[rel="canonical"]')));
 

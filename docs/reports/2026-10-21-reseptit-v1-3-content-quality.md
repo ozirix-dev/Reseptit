@@ -21,6 +21,7 @@ Tarkistus säilytti `recipe_id`- ja `url_slug`-arvot. Sisältöbuildi tuottaa 15
 - Korjattiin nestemäisen kuohukerman sekoittuminen valmiiksi vatkattuun kermaan useissa EN- ja SV-ohjeissa. Samalla korjattiin lohikeittojen `fish fondue` -käännös kalafondille sekä lähteeseen liittyvät ohjetekstin kirjoitusvirheet.
 - Korjattiin EN/SV/TH-karjalanpaistin lihapalojen nimet, TH:n virheellinen jauheliha- ja porsaanlihatermi, kokonaisen maustepippurin käännös ja valmistusvaiheiden selkeys.
 - Korjattiin kaalilaatikon EN- ja TH-ruokanimen kirjaimellinen “cabbage box” -käännös sekä uunipaistamisen sanamuotoja.
+- Korjattiin koodikatselmoinnin löytämä lokalisoitujen tuntemattomien reittien SEO-virhe: `<html lang>`, sivun otsikko ja kuvaus johdetaan nyt saman kielen not-found-tekstistä. Lisättiin EN/SV/TH-selaintestit.
 - Korjattiin pinaattilettujen lähteen valmistustapa pannuksi sekä sitä vastaavat käännösmetatiedot ja ohjeen ristiriitainen annoskuvaus aiempien työmuutosten yhteydessä. Lähteen sisältömuutokset synkronoitiin kieliversioihin.
 - Käännösten tagit ja ainesosanimet täsmennettiin kontekstikohtaisesti. Ohjeita, määriä, URL:eja tai ravintoarvoja ei muutettu oletusten perusteella.
 - Luotiin FI–EN–SV–TH-sanasto: `meta/kaannokset/ruokasanasto.md`.
@@ -55,10 +56,10 @@ Tuotantobuildi työhaarasta:
 
 | Resurssi | Raaka koko | gzip |
 |---|---:|---:|
-| JavaScript | 768.31 kB | 175.70 kB |
+| JavaScript | 768.33 kB | 175.71 kB |
 | CSS | 9.07 kB | 2.57 kB |
 
-Vertailu käyttäjän antamaan aiemman tuotantobuildin mittaan (755.35 kB / 173.62 kB gzip) on **+12.96 kB raakaa ja +2.08 kB gzipattua JavaScriptiä**. Asetettu 150 kB:n gzip-raja ylittyy edelleen.
+Vertailu käyttäjän antamaan aiemman tuotantobuildin mittaan (755.35 kB / 173.62 kB gzip) on **+12.98 kB raakaa ja +2.09 kB gzipattua JavaScriptiä**. Asetettu 150 kB:n gzip-raja ylittyy edelleen.
 
 Nykyinen generated content JSON sisältää kaikkien neljän kielen 156 reseptitietuetta. Yksittäisen kielen tietueiden JSON-koko pakattuna erikseen on FI 15.41 kB, EN 15.47 kB, SV 15.61 kB ja TH 19.19 kB; koko JSON on 454.01 kB raakana / 70.73 kB gzipattuna. Tämä on mitattu sisältöaineiston koko, ei täsmällinen delta bundlesta, koska yhteispakkaus ja JavaScriptin koodaus muuttavat lopullista kokoa. Kaikkien kielten sisältö sisältyy nykyiseen samaan 175.84 kB:n gzip-JavaScriptiin myös yksittäisellä sivulla. Tässä buildissa Reactin ja reitityskirjaston tarkkaa pakattua osuutta ei eritelty moduulimetadatalla.
 
@@ -76,18 +77,18 @@ Paikalliset testit ennen pushia:
 - `npm run test:image`: PASS, 2 testiä.
 - `npm run build`: PASS, TypeScript + Vite ja 160 esirenderöityä reittiä.
 - `npm run test:static`: PASS, 6 testiä.
-- `npm run test:browser`: PASS, 1 selainkokonaisuus (nelikielinen haku, SEO, näppäimistö ja responsiivisuus).
+- `npm run test:browser`: PASS, 1 selainkokonaisuus (nelikielinen haku, SEO, näppäimistö ja responsiivisuus), mukaan lukien lokalisoitujen tuntemattomien reittien metatiedot.
 - `npm audit --audit-level=low`: PASS, 0 haavoittuvuutta.
 - `git diff --check`: PASS, ei whitespace-virheitä.
 
-GitHub Actionsin PR-tulos on vielä odottamassa.
+GitHub Actionsin ensimmäinen PR-ajo `39549006464` onnistui commitille `69968351beba291e00c08e9e277eb6b2f65b851a`. Sen jälkeen koodikatselmoinnin huomio lokalisoidusta not-found-metadatasta korjattiin. Korjauksen jälkeinen Actions-ajo odottaa pushia.
 
 ## GitHub
 
 - Tuotantoa ei julkaista eikä PR:ää yhdistetä tässä työssä.
-- Commit: täydennetään pushin jälkeen.
-- PR: täydennetään luomisen jälkeen.
-- GitHub Actions: täydennetään CI-ajon valmistuttua.
+- Sisältö- ja auditointimuutosten commit: `6002361`; ensimmäinen raporttipäivitys: `6996835`.
+- PR: https://github.com/ozirix-dev/Reseptit/pull/25
+- Viimeisimmän koodikatselmoinnin löytämä P2 korjattiin ja sille lisättiin testit. Korjauksen jälkeinen tarkistus käsitellään ennen työn valmistumista.
 
 ## Suositeltu tila
 

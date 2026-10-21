@@ -117,6 +117,13 @@ function knownTermErrors(source: Frontmatter, target: Frontmatter, locale: Local
   if (locale === "en" && hasIngredient(source, /kuohukerma/i) && /\bwhipped cream\b/i.test(targetContent)) issues.push("recipe text calls for ready-whipped cream instead of liquid cream");
   if (locale === "sv" && hasIngredient(source, /kuohukerma/i) && /\bvispad grädde\b/i.test(targetContent)) issues.push("recipe text calls for ready-whipped cream instead of liquid cream");
   if (locale === "en" && /kalafondi/i.test(source.ingredients.map((ingredient) => ingredient.item).join(" ")) && /fish fondue/i.test(`${target.title} ${targetContent}`)) issues.push("fish fondue is a mistranslation of stock concentrate");
+  if (locale === "en" && hasIngredient(source, /naudan jauheliha/i) && /\bground meat\b/i.test(target.title) && !/\bground beef\b/i.test(target.title)) issues.push("English title omits the source's beef type");
+  if (locale === "en" && hasIngredient(source, /naudan pataliha/i) && items.some((item) => /\bbeef patty\b/i.test(item))) issues.push("beef stewing meat mistranslated as a formed patty");
+  if (locale === "en" && hasIngredient(source, /porsaan pataliha/i) && items.some((item) => /\bpork patty\b/i.test(item))) issues.push("pork stewing meat mistranslated as a formed patty");
+  if (locale === "sv" && hasIngredient(source, /naudan pataliha/i) && items.some((item) => /\bnötbiff\b/i.test(item))) issues.push("beef stewing meat mistranslated as steak");
+  if (locale === "sv" && hasIngredient(source, /porsaan pataliha/i) && items.some((item) => /\bfläskbiff\b/i.test(item))) issues.push("pork stewing meat mistranslated as steak");
+  if (locale === "th" && hasIngredient(source, /naudan pataliha/i) && items.some((item) => /ขนมพายเนื้อ/.test(item))) issues.push("beef stewing meat mistranslated as a meat pie");
+  if (locale === "th" && hasIngredient(source, /porsaan pataliha/i) && items.some((item) => /ไส้หมู/.test(item))) issues.push("pork stewing meat mistranslated as sausage filling");
   if (locale === "en" && /kaalilaatikko/i.test(source.title) && /cabbage box/i.test(`${target.title} ${targetContent} ${target.image?.alt ?? ""}`)) issues.push("cabbage box is not a natural translation of cabbage casserole");
   if (locale === "th" && /kaalilaatikko/i.test(source.title) && /กะหล่ำปลีกล่อง/.test(`${target.title} ${targetContent}`)) issues.push("literal cabbage-box phrasing is not a natural dish name");
   return [...new Set(issues)];

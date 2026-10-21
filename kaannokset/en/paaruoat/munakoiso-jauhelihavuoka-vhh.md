@@ -1,5 +1,5 @@
 ---
-title: Aubergine and Ground Meat Bake
+title: Aubergine and Ground Beef Bake
 recipe_id: munakoiso-jauhelihavuoka-vhh
 url_slug: munakoiso-jauhelihavuoka-vhh
 category: paaruoka
