@@ -110,6 +110,30 @@ test("the twenty Chinese recipes are published in Finnish with their image asset
   }
 });
 
+test("the twenty Mediterranean recipes are published in Finnish with their image assets", async () => {
+  const expectedIds = [
+    "bouillabaisse", "caponata", "doner-kebab", "gazpacho", "hummus", "kana-tagine-sitruunalla",
+    "koshari", "kreikkalainen-moussaka", "marokkolainen-couscous", "menemen", "paella-valenciana",
+    "pasta-alla-norma", "pizza-margherita", "ratatouille", "souvlaki", "spanakopita", "tabbouleh",
+    "tortilla-de-patatas", "tunisialainen-brik", "tunisialainen-ojja",
+  ];
+  const recipes = siteContent.recipes.filter((recipe) => expectedIds.includes(recipe.recipeId));
+  assert.deepEqual(recipes.map((recipe) => recipe.recipeId).sort(), expectedIds);
+  assert.equal(recipes.length, 20);
+
+  const repoDir = path.resolve(import.meta.dirname, "../..");
+  for (const recipe of recipes) {
+    assert.equal(recipe.locale, "fi");
+    assert.ok(recipe.tags.includes("valimerellinen"), `${recipe.recipeId} has the Mediterranean tag`);
+    assert.ok(recipe.image, `${recipe.recipeId} has a recipe image`);
+    assert.equal(recipe.image.width, 1279);
+    assert.equal(recipe.image.height, 853);
+    const relativeImagePath = recipe.image.src.split("/kuvat/").at(-1);
+    assert.ok(relativeImagePath);
+    assert.ok((await readFile(path.join(repoDir, "kuvat", relativeImagePath))).byteLength > 0);
+  }
+});
+
 test("the high-protein macaroni bake has four aligned published language versions", () => {
   const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === "jauheliha-makaronilaatikko");
   assert.deepEqual(translations.map((recipe) => recipe.locale).sort(), ["en", "fi", "sv", "th"]);
