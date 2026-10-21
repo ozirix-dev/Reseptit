@@ -1,47 +1,60 @@
 ---
-title: "Uuniporsas kermaisella pannukastikkeella"
-recipe_id: "uuniporsas-kermakastikkeessa-vhh"
-url_slug: "uuniporsas-kermakastikkeessa-vhh"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["porsaan kassler"]
-cooking_method: ["uuni"]
+title: Uuniporsas kermaisella pannukastikkeella
+recipe_id: uuniporsas-kermakastikkeessa-vhh
+url_slug: uuniporsas-kermakastikkeessa-vhh
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - porsaan kassler
+cooking_method:
+  - uuni
 servings: 6
 time_total_min: 90
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","VHH"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
 image:
   src: paaruoat/uuniporsas-kermakastikkeessa-vhh.webp
-  alt: "Viipaloitua uuniporsasta kermaisella kastikkeella, kukkakaalimuusilla ja vihreillä pavuilla"
+  alt: Viipaloitua uuniporsasta kermaisella kastikkeella, kukkakaalimuusilla ja
+    vihreillä pavuilla
   width: 1280
   height: 853
 ingredients:
   - amount: 1.2
-    unit: "kg"
-    item: "porsaan kassleria"
+    unit: kg
+    item: porsaan kassleria
   - amount: 2
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: 2
-    unit: "dl"
-    item: "vettä"
+    unit: dl
+    item: vettä
   - amount: 1
-    unit: "kpl"
-    item: "sipuli"
+    unit: kpl
+    item: sipuli
   - amount: 1
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 1
-    unit: "tl"
-    item: "timjamia"
+    unit: tl
+    item: timjamia
   - amount: 1
-    unit: "rkl"
-    item: "voita"
+    unit: rkl
+    item: voita
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Uuniporsas kermaisella pannukastikkeella

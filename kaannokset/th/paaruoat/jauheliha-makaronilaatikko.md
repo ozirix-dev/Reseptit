@@ -1,21 +1,28 @@
 ---
-title: "มักกะโรนีอบเนื้อบดโปรตีนสูง"
-recipe_id: "jauheliha-makaronilaatikko"
-url_slug: "makaroni-op-nuea-bot-protein-sung"
-category: "paaruoka"
-language: "th"
-source_language: "fi"
-source_recipe: "reseptit/paaruoat/jauheliha-makaronilaatikko.md"
-translation_of: "jauheliha-makaronilaatikko"
+title: มักกะโรนีอบเนื้อบดโปรตีนสูง
+recipe_id: jauheliha-makaronilaatikko
+url_slug: makaroni-op-nuea-bot-protein-sung
+category: paaruoka
+language: th
+source_language: fi
+source_recipe: reseptit/paaruoat/jauheliha-makaronilaatikko.md
+translation_of: jauheliha-makaronilaatikko
 protein_per_serving_g: 45
 carbs_total_per_serving_g: 38
 fat_per_serving_g: 35
 servings: 8
-main_ingredient: ["naudanliha", "raejuusto"]
-cooking_method: ["uuni"]
+main_ingredient:
+  - naudanliha
+  - raejuusto
+cooking_method:
+  - uuni
 time_total_min: 75
-difficulty: "ง่าย"
-tags: ["อาหารประจำวัน", "เมนูอบ", "เนื้อวัว", "โปรตีนสูง"]
+difficulty: ง่าย
+tags:
+  - อาหารประจำวัน
+  - เมนูอบ
+  - เนื้อวัว
+  - โปรตีนสูง
 image:
   src: paaruoat/jauheliha-makaronilaatikko.webp
   alt: มักกะโรนีอบเนื้อบดหน้าชีสสีเหลืองทอง เนื้อด้านในแน่นและชุ่มฉ่ำ
@@ -23,52 +30,52 @@ image:
   height: 853
 ingredients:
   - amount: 400
-    unit: "กรัม"
-    item: "มักกะโรนี"
+    unit: กรัม
+    item: มักกะโรนี
   - amount: 600
-    unit: "กรัม"
-    item: "เนื้อบดไขมันต่ำ"
+    unit: กรัม
+    item: เนื้อบดไขมันต่ำ
   - amount: 1
     unit: ""
-    item: "หอมหัวใหญ่"
-    note: "หัวเล็ก"
+    item: หอมหัวใหญ่
+    note: หัวเล็ก
   - amount: 1
-    unit: "ช้อนโต๊ะ"
-    item: "น้ำมัน"
+    unit: ช้อนโต๊ะ
+    item: น้ำมัน
   - amount: 500
-    unit: "กรัม"
-    item: "คอตเทจชีส"
+    unit: กรัม
+    item: คอตเทจชีส
   - amount: 6
-    unit: "ฟอง"
-    item: "ไข่ไก่"
+    unit: ฟอง
+    item: ไข่ไก่
   - amount: 2
-    unit: "เดซิลิตร"
-    item: "นม"
+    unit: เดซิลิตร
+    item: นม
   - amount: 2
-    unit: "เดซิลิตร"
-    item: "ครีมสำหรับปรุงอาหาร"
+    unit: เดซิลิตร
+    item: ครีมสำหรับปรุงอาหาร
   - amount: 200
-    unit: "กรัม"
-    item: "ชีสขูด"
-    note: "สำหรับผสมกับไข่"
+    unit: กรัม
+    item: ชีสขูด
+    note: สำหรับผสมกับไข่
   - amount: 100
-    unit: "กรัม"
-    item: "ชีสขูด"
-    note: "สำหรับโรยหน้า"
+    unit: กรัม
+    item: ชีสขูด
+    note: สำหรับโรยหน้า
   - amount: 1.5
-    unit: "ช้อนชา"
-    item: "ผงกระเทียม"
+    unit: ช้อนชา
+    item: ผงกระเทียม
   - amount: 1
-    unit: "ช้อนชา"
-    item: "พริกไทยดำ"
+    unit: ช้อนชา
+    item: พริกไทยดำ
   - amount: 1
-    unit: "ช้อนชา"
-    item: "ผงปาปริกา"
+    unit: ช้อนชา
+    item: ผงปาปริกา
   - amount: null
     unit: ""
-    item: "เกลือ"
-    note: "ปรุงตามชอบ"
-status: "published"
+    item: เกลือ
+    note: ปรุงตามชอบ
+status: published
 ---
 
 # มักกะโรนีอบเนื้อบดโปรตีนสูง

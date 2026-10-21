@@ -1,15 +1,23 @@
 ---
-title: "Paprikainen VHH-gulassi"
-recipe_id: "paprikainen-vhh-gulassi"
-url_slug: "paprikainen-vhh-gulassi"
-category: "paaruoka"
-language: "fi"
-diet_class: "vhh_valjempi"
+title: Paprikainen VHH-gulassi
+recipe_id: paprikainen-vhh-gulassi
+url_slug: paprikainen-vhh-gulassi
+category: paaruoka
+language: fi
+diet_class: vhh_valjempi
 servings: 4
-main_ingredient: ["naudanliha", "paprika"]
-cooking_method: ["uuni"]
-difficulty: "helppo"
-tags: ["vhh", "gulassi", "naudanliha", "paprika", "pataruoka"]
+main_ingredient:
+  - naudanliha
+  - paprika
+cooking_method:
+  - uuni
+difficulty: helppo
+tags:
+  - vhh
+  - gulassi
+  - naudanliha
+  - paprika
+  - pataruoka
 image:
   src: paaruoat/paprikainen-gulassi.webp
   alt: Paprikainen naudanlihapata smetanasilmäkkeellä ja tuoreella persiljalla
@@ -17,61 +25,67 @@ image:
   height: 853
 ingredients:
   - amount: 700
-    unit: "g"
-    item: "naudan paistia"
-    note: "noin 3 cm:n kuutioina"
+    unit: g
+    item: naudan paistia
+    note: noin 3 cm:n kuutioina
   - amount: 150
-    unit: "g"
-    item: "sipulia"
-    note: "hienonnettuna"
+    unit: g
+    item: sipulia
+    note: hienonnettuna
   - amount: 3
-    unit: "kpl"
-    item: "valkosipulinkynttä"
-    note: "murskattuna"
+    unit: kpl
+    item: valkosipulinkynttä
+    note: murskattuna
   - amount: 1
-    unit: "kpl"
-    item: "punaista paprikaa"
-    note: "kuutioituna"
+    unit: kpl
+    item: punaista paprikaa
+    note: kuutioituna
   - amount: 1
-    unit: "kpl"
-    item: "tomaatti"
-    note: "kuutioituna"
+    unit: kpl
+    item: tomaatti
+    note: kuutioituna
   - amount: 1
-    unit: "rkl"
-    item: "tomaattipyreetä"
+    unit: rkl
+    item: tomaattipyreetä
   - amount: 1.5
-    unit: "rkl"
-    item: "paprikajauhetta"
-    note: "mielellään savupaprikaa tai makeaa paprikajauhetta"
+    unit: rkl
+    item: paprikajauhetta
+    note: mielellään savupaprikaa tai makeaa paprikajauhetta
   - amount: 1.5
-    unit: "rkl"
-    item: "voita tai öljyä"
-    note: "lihan ruskistamiseen"
+    unit: rkl
+    item: voita tai öljyä
+    note: lihan ruskistamiseen
   - amount: 0.5
-    unit: "tl"
-    item: "juustokuminaa"
+    unit: tl
+    item: juustokuminaa
   - amount: 3
-    unit: "dl"
-    item: "lihalientä"
+    unit: dl
+    item: lihalientä
   - amount: 1
-    unit: "tl"
-    item: "suolaa"
-    note: "tai maun mukaan"
+    unit: tl
+    item: suolaa
+    note: tai maun mukaan
   - amount: null
     unit: ""
-    item: "mustapippuria"
-    note: "maun mukaan"
+    item: mustapippuria
+    note: maun mukaan
   - amount: 150
-    unit: "g"
-    item: "smetanaa"
-    note: "tarjoiluun"
+    unit: g
+    item: smetanaa
+    note: tarjoiluun
   - amount: null
     unit: ""
-    item: "persiljaa"
-    note: "hienonnettuna, halutessasi"
-translation_languages: []
-translation_status: {}
-status: "published"
+    item: persiljaa
+    note: hienonnettuna, halutessasi
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
+status: published
 ---
 
 # Paprikainen VHH-gulassi
@@ -94,5 +108,3 @@ Tässä gulassissa reilusti naudanlihaa ja paprikaa haudutetaan ilman jauhosuuru
 
 - Pata sopii tarjottavaksi kukkakaalimuusin, paahdetun kaalin tai vihersalaatin kanssa.
 - Resepti ei sisällä perunaa eikä jauhosuurusta. VHH-luokitus on väljempi kuin kahdessa muussa reseptissä; tarkista ainesosien pakkausmerkinnät ja annoskoko oman ruokavaliosi mukaan.
-
-

@@ -1,15 +1,23 @@
 ---
-title: "Parsakaali-sinihomejuustofrittata"
-recipe_id: "parsakaali-sinihomejuustofrittata"
-url_slug: "parsakaali-sinihomejuustofrittata"
-category: "paaruoka"
-language: "fi"
-diet_class: "vhh_tiukka"
+title: Parsakaali-sinihomejuustofrittata
+recipe_id: parsakaali-sinihomejuustofrittata
+url_slug: parsakaali-sinihomejuustofrittata
+category: paaruoka
+language: fi
+diet_class: vhh_tiukka
 servings: 4
-main_ingredient: ["kananmuna", "parsakaali", "sinihomejuusto"]
-cooking_method: ["uuni"]
-difficulty: "helppo"
-tags: ["vhh", "frittata", "parsakaali", "sinihomejuusto"]
+main_ingredient:
+  - kananmuna
+  - parsakaali
+  - sinihomejuusto
+cooking_method:
+  - uuni
+difficulty: helppo
+tags:
+  - vhh
+  - frittata
+  - parsakaali
+  - sinihomejuusto
 image:
   src: paaruoat/parsakaali-sinihomejuustofrittata.webp
   alt: Kullanruskea parsakaali-sinihomejuustofrittata valurautapannussa
@@ -17,38 +25,44 @@ image:
   height: 853
 ingredients:
   - amount: 1
-    unit: "rkl"
-    item: "voita"
-    note: "paistamiseen"
+    unit: rkl
+    item: voita
+    note: paistamiseen
   - amount: 0.5
-    unit: "kpl"
-    item: "sipuli"
-    note: "hienonnettuna"
+    unit: kpl
+    item: sipuli
+    note: hienonnettuna
   - amount: 200
-    unit: "g"
-    item: "parsakaalia"
-    note: "pieninä nuppuina"
+    unit: g
+    item: parsakaalia
+    note: pieninä nuppuina
   - amount: 6
-    unit: "kpl"
-    item: "kananmunaa"
+    unit: kpl
+    item: kananmunaa
   - amount: 1.5
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: 100
-    unit: "g"
-    item: "sinihomejuustoa"
-    note: "murennettuna"
+    unit: g
+    item: sinihomejuustoa
+    note: murennettuna
   - amount: null
     unit: ""
-    item: "mustapippuria"
-    note: "maun mukaan"
+    item: mustapippuria
+    note: maun mukaan
   - amount: 0.25
-    unit: "tl"
-    item: "suolaa"
-    note: "tarvittaessa, juusto on suolaista"
-translation_languages: []
-translation_status: {}
-status: "published"
+    unit: tl
+    item: suolaa
+    note: tarvittaessa, juusto on suolaista
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
+status: published
 ---
 
 # Parsakaali-sinihomejuustofrittata
@@ -71,6 +85,3 @@ Frittata sopii lounaaksi tai kevyeksi päivälliseksi. Sen voi paistaa pyöreäs
 
 - Sinihomejuuston suolaisuus vaihtelee, joten lisää suolaa vasta maistamisen jälkeen.
 - VHH-luokitus perustuu reseptin ainesosiin. Tarkista käyttämiesi tuotteiden pakkausmerkinnät.
-
-
-

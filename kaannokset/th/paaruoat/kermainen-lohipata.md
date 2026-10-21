@@ -1,57 +1,95 @@
 ---
-title: "ปลาแซลมอนอบซอสครีม"
-recipe_id: "kermainen-lohipata"
-url_slug: "pla-salmon-op-sauce-cream"
-category: "paaruoka"
-language: "th"
-source_language: "fi"
-source_recipe: "reseptit/paaruoat/kermainen-lohipata.md"
-translation_of: "kermainen-lohipata"
-diet_class: "keto"
-tags: ["arki", "gluteeniton", "uuniruoka", "kala", "vhh"]
-status: "draft"
+title: สตูว์ปลาแซลมอนครีม
+recipe_id: kermainen-lohipata
+url_slug: kermainen-lohipata
+category: paaruoka
+language: th
+diet_class: keto
+carbs_net_per_serving_g: 6
+carbs_total_per_serving_g: 8
+protein_per_serving_g: 29
+fat_per_serving_g: 35
+servings: 4
+main_ingredient:
+  - kala
+  - lohi
+cooking_method:
+  - uuni
+time_total_min: 40
+difficulty: ง่าย
+tags:
+  - ทุกวัน
+  - ปราศจากกลูเตน
+  - อาหารเตาอบ
+  - ปลา
+  - ว้าว
+image:
+  src: paaruoat/kermainen-lohipata.webp
+  alt: สตูว์ปลาแซลมอนครีมพร้อมชิ้นปลาแซลมอน ผักโขม และผักชีลาว
+  width: 1254
+  height: 1254
+ingredients:
+  - amount: 600
+    unit: g
+    item: เนื้อปลาแซลมอน
+  - amount: 1
+    unit: ""
+    item: หัวหอม
+    note: เล็ก
+  - amount: 2
+    unit: ""
+    item: กลีบกระเทียม
+  - amount: 200
+    unit: g
+    item: ครีมชีส
+  - amount: 2
+    unit: dl
+    item: วิปครีม
+  - amount: 1
+    unit: ช้อนโต๊ะ
+    item: ชนะ
+  - amount: 1
+    unit: ช้อนชา
+    item: น้ำมะนาว
+  - amount: 1
+    unit: ช้อนชา
+    item: มัสตาร์ดดีฌง
+  - amount: 1
+    unit: ช้อนชา
+    item: เกลือ
+  - amount: 0.5
+    unit: ช้อนชา
+    item: พริกไทยดำ
+  - amount: 1
+    unit: ช้อนชา
+    item: ผักชีลาวแห้ง
+  - amount: 150
+    unit: g
+    item: ผักโขม
+status: published
+source_language: fi
+source_recipe: reseptit/paaruoat/kermainen-lohipata.md
+translation_of: kermainen-lohipata
 ---
 
-# ปลาแซลมอนอบซอสครีม
+#สตูว์ครีมปลาแซลมอน
+
+สตูว์ปลาแซลมอนครีมเป็นอาหารจานหลักที่ง่ายและอิ่มได้ทุกวัน
 
 ## คำอธิบาย
 
-ไฟล์นี้เป็นร่างคำแปลภาษาไทยของสูตรตัวอย่าง เพื่อทดสอบโมเดลหลายภาษาในโครงสร้างจริงของโปรเจกต์
-
-## วัตถุดิบ
-
-- ปลาแซลมอน 600 กรัม
-- หอมใหญ่ขนาดเล็ก 1 หัว
-- กระเทียม 2 กลีบ
-- ครีมชีส 200 กรัม
-- วิปปิงครีม 2 เดซิลิตร
-- เนย 1 ช้อนโต๊ะ
-- น้ำมะนาว 1 ช้อนชา
-- มัสตาร์ด Dijon 1 ช้อนชา
-- เกลือ 1 ช้อนชา
-- พริกไทยดำ 0.5 ช้อนชา
-- ผักชีลาวแห้ง 1 ช้อนชา
-- ผักโขม 150 กรัม
+ปลาแซลมอน ผักโขม และซอสครีมนุ่มปรุงในเตาอบในเวลาเดียวกัน เสิร์ฟสตูว์เพียงอย่างเดียวหรือกับข้าวกับผัก
 
 ## วิธีทำ
 
-1. อุ่นเตาอบที่ 200 องศาเซลเซียส
-2. สับหอมใหญ่และกระเทียมให้ละเอียด แล้วผัดกับเนย
-3. ใส่ครีมชีส ครีม น้ำมะนาว มัสตาร์ด และเครื่องปรุง คนให้เป็นซอสเนียน
-4. ใส่ผักโขมลงไปคลุกอย่างรวดเร็ว
-5. วางปลาแซลมอนในถาดอบ แล้วราดซอสด้านบน
-6. อบประมาณ 25 นาทีจนปลาเพิ่งสุก
-7. พักไว้เล็กน้อยก่อนเสิร์ฟ
-
-## โภชนาการโดยประมาณต่อหนึ่งที่
-
-- คาร์บสุทธิประมาณ 6 กรัม
-- คาร์บทั้งหมดประมาณ 8 กรัม
-- โปรตีนประมาณ 29 กรัม
-- ไขมันประมาณ 35 กรัม
+1. เปิดเตาอบที่ 200 องศา
+2. สับหัวหอมและกระเทียม ผัดในเนยในกระทะ
+3. ใส่ครีมชีส วิปครีม น้ำมะนาว มัสตาร์ด และเครื่องเทศ ผสมให้เข้ากันเป็นซอสเนื้อเนียน
+4. พับผักโขมลงในซอสอย่างรวดเร็ว
+5. วางเนื้อปลาแซลมอนลงในจานอบแล้วราดซอสลงไป
+6. อบในเตาอบประมาณ 25 นาที จนปลาแซลมอนสุก
+7. พักไว้สักครู่ก่อนเสิร์ฟ
 
 ## หมายเหตุ
 
-- ไฟล์นี้เป็นร่างคำแปล
-- `recipe_id` ตรงกับสูตรภาษาฟินแลนด์ต้นทาง
-- `url_slug` เป็นเพียง slug สำหรับการเผยแพร่สาธารณะในอนาคต
+- เข้ากันได้ดีกับ เช่น บวบทอด หรือดอกกะหล่ำบด

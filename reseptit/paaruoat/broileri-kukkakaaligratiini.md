@@ -1,44 +1,57 @@
 ---
-title: "Broileri-kukkakaaligratiini"
-recipe_id: "broileri-kukkakaaligratiini"
-url_slug: "broileri-kukkakaaligratiini"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["broileri","kukkakaali"]
-cooking_method: ["uuni"]
+title: Broileri-kukkakaaligratiini
+recipe_id: broileri-kukkakaaligratiini
+url_slug: broileri-kukkakaaligratiini
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - broileri
+  - kukkakaali
+cooking_method:
+  - uuni
 servings: 4
 time_total_min: 45
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","VHH"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
 image:
   src: paaruoat/broileri-kukkakaaligratiini.webp
-  alt: "Broileria ja kukkakaalia kermaisessa juustokuorrutetussa gratiinissa"
+  alt: Broileria ja kukkakaalia kermaisessa juustokuorrutetussa gratiinissa
   width: 1280
   height: 853
 ingredients:
   - amount: 500
-    unit: "g"
-    item: "broilerin paistileikettä"
+    unit: g
+    item: broilerin paistileikettä
   - amount: 600
-    unit: "g"
-    item: "kukkakaalia"
+    unit: g
+    item: kukkakaalia
   - amount: 2
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: 150
-    unit: "g"
-    item: "juustoraastetta"
+    unit: g
+    item: juustoraastetta
   - amount: 1
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 1
-    unit: "tl"
-    item: "valkosipulijauhetta"
+    unit: tl
+    item: valkosipulijauhetta
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Broileri-kukkakaaligratiini

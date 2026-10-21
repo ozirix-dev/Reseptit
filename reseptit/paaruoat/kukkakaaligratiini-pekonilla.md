@@ -1,41 +1,54 @@
 ---
-title: "Pekoninen kukkakaaligratiini"
-recipe_id: "kukkakaaligratiini-pekonilla"
-url_slug: "kukkakaaligratiini-pekonilla"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["kukkakaali","pekoni"]
-cooking_method: ["uuni"]
+title: Pekoninen kukkakaaligratiini
+recipe_id: kukkakaaligratiini-pekonilla
+url_slug: kukkakaaligratiini-pekonilla
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - kukkakaali
+  - pekoni
+cooking_method:
+  - uuni
 servings: 4
 time_total_min: 45
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","VHH"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
 image:
   src: paaruoat/kukkakaaligratiini-pekonilla.webp
-  alt: "Kullanruskeaa juustokuorrutettua kukkakaaligratiinia pekonilla"
+  alt: Kullanruskeaa juustokuorrutettua kukkakaaligratiinia pekonilla
   width: 1280
   height: 853
 ingredients:
   - amount: 700
-    unit: "g"
-    item: "kukkakaalia"
+    unit: g
+    item: kukkakaalia
   - amount: 150
-    unit: "g"
-    item: "pekonia"
+    unit: g
+    item: pekonia
   - amount: 2
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: 100
-    unit: "g"
-    item: "juustoraastetta"
+    unit: g
+    item: juustoraastetta
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 0.5
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Pekoninen kukkakaaligratiini

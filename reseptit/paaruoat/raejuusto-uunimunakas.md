@@ -1,49 +1,64 @@
 ---
-title: "Pehmeä raejuusto-uunimunakas"
-recipe_id: "raejuusto-uunimunakas"
-url_slug: "raejuusto-uunimunakas"
-category: "paaruoka"
-language: "fi"
-diet_class: "vhh_tiukka"
+title: Pehmeä raejuusto-uunimunakas
+recipe_id: raejuusto-uunimunakas
+url_slug: raejuusto-uunimunakas
+category: paaruoka
+language: fi
+diet_class: vhh_tiukka
 servings: 4
-main_ingredient: ["kananmuna", "raejuusto"]
-cooking_method: ["uuni"]
+main_ingredient:
+  - kananmuna
+  - raejuusto
+cooking_method:
+  - uuni
 time_total_min: 55
-difficulty: "helppo"
-tags: ["munakas", "uuniruoka", "raejuusto", "arki", "VHH"]
+difficulty: helppo
+tags:
+  - munakas
+  - uuniruoka
+  - raejuusto
+  - arki
+  - VHH
 image:
   src: paaruoat/raejuusto-uunimunakas.webp
-  alt: Pehmeästi paistunut raejuusto-uunimunakas, jonka pinnalla on tuoretta ruohosipulia
+  alt: Pehmeästi paistunut raejuusto-uunimunakas, jonka pinnalla on tuoretta
+    ruohosipulia
   width: 1280
   height: 853
 ingredients:
   - amount: 10
     unit: ""
-    item: "kananmunaa"
+    item: kananmunaa
   - amount: 2.5
-    unit: "dl"
-    item: "ruokakermaa"
+    unit: dl
+    item: ruokakermaa
   - amount: 200
-    unit: "g"
-    item: "raejuustoa"
+    unit: g
+    item: raejuustoa
   - amount: 0.25
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: null
     unit: ""
-    item: "valko- tai mustapippuria"
-    note: "ripaus"
+    item: valko- tai mustapippuria
+    note: ripaus
   - amount: null
     unit: ""
-    item: "voita"
-    note: "vuoan voiteluun"
+    item: voita
+    note: vuoan voiteluun
   - amount: null
     unit: ""
-    item: "ruohosipulia"
-    note: "halutessasi pinnalle"
-translation_languages: []
-translation_status: {}
-status: "published"
+    item: ruohosipulia
+    note: halutessasi pinnalle
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
+status: published
 ---
 
 # Pehmeä raejuusto-uunimunakas
@@ -65,4 +80,3 @@ Pieni muutos perinteiseen uunimunakkaaseen: raejuusto soseutetaan ja sekoitetaan
 ## Muistiinpanot
 
 - Vesihaude auttaa munakasta hyytymään pehmeästi ja tasaisesti.
-

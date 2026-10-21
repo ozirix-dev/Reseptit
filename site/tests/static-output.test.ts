@@ -34,7 +34,10 @@ test("prerendered recipe HTML includes useful content before JavaScript", async 
   assert.match(html, /<html lang="fi">/);
   assert.match(html, /rel="canonical" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kermainen-lohipata\/"/);
   assert.match(html, /hreflang="x-default" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kermainen-lohipata\/"/);
-  assert.doesNotMatch(root[1], /class="recipe-languages"/);
+  assert.match(root[1], /class="recipe-languages"/);
+  assert.match(root[1], /hrefLang="en" href="\/Reseptit\/en\/recipes\/kermainen-lohipata\/"/);
+  assert.match(root[1], /hrefLang="sv" href="\/Reseptit\/sv\/recept\/kermainen-lohipata\/"/);
+  assert.match(root[1], /hrefLang="th" href="\/Reseptit\/th\/recipes\/kermainen-lohipata\/"/);
   assert.match(html, /<meta name="twitter:card" content="summary_large_image"/);
   assert.match(html, /property="og:image" content="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/paaruoat\/kermainen-lohipata\.webp"/);
   assert.match(root[1], /<img class="recipe-image" src="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/paaruoat\/kermainen-lohipata\.webp" alt="Kermainen lohipata lohipaloilla, pinaatilla ja tillillä" width="1254" height="1254"/);

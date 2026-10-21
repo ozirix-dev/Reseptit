@@ -1,50 +1,63 @@
 ---
-title: "VHH-kaalikääryleet"
-recipe_id: "vhh-kaalikaarryleet"
-url_slug: "vhh-kaalikaarryleet"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["valkokaali","naudan jauheliha"]
-cooking_method: ["uuni"]
+title: VHH-kaalikääryleet
+recipe_id: vhh-kaalikaarryleet
+url_slug: vhh-kaalikaarryleet
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - valkokaali
+  - naudan jauheliha
+cooking_method:
+  - uuni
 servings: 4
 time_total_min: 100
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","VHH"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
 image:
   src: paaruoat/vhh-kaalikaarryleet.webp
-  alt: "Kullanruskeita kaalikääryleitä kukkakaalimuusin ja puolukoiden kanssa"
+  alt: Kullanruskeita kaalikääryleitä kukkakaalimuusin ja puolukoiden kanssa
   width: 1280
   height: 853
 ingredients:
   - amount: 1
-    unit: "kg"
-    item: "valkokaalia"
+    unit: kg
+    item: valkokaalia
   - amount: 600
-    unit: "g"
-    item: "naudan jauhelihaa"
+    unit: g
+    item: naudan jauhelihaa
   - amount: 250
-    unit: "g"
-    item: "kukkakaalirouhetta"
+    unit: g
+    item: kukkakaalirouhetta
   - amount: 1
-    unit: "kpl"
-    item: "sipuli"
+    unit: kpl
+    item: sipuli
   - amount: 1
-    unit: "kpl"
-    item: "kananmuna"
+    unit: kpl
+    item: kananmuna
   - amount: 1
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: 1
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 2
-    unit: "rkl"
-    item: "voita"
+    unit: rkl
+    item: voita
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # VHH-kaalikääryleet

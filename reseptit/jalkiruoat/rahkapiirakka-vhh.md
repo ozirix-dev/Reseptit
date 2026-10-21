@@ -1,47 +1,60 @@
 ---
-title: "VHH-rahkapiirakka"
-recipe_id: "rahkapiirakka-vhh"
-url_slug: "rahkapiirakka-vhh"
-category: "jalkiruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_valjempi"
-main_ingredient: ["rahka","kananmuna"]
-cooking_method: ["uuni"]
+title: VHH-rahkapiirakka
+recipe_id: rahkapiirakka-vhh
+url_slug: rahkapiirakka-vhh
+category: jalkiruoka
+language: fi
+status: published
+diet_class: vhh_valjempi
+main_ingredient:
+  - rahka
+  - kananmuna
+cooking_method:
+  - uuni
 servings: 8
 time_total_min: 55
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","vähähiilihydraattinen"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - vähähiilihydraattinen
 image:
   src: jalkiruoat/rahkapiirakka-vhh.webp
-  alt: "Pala rahkapiirakkaa marjojen kanssa"
+  alt: Pala rahkapiirakkaa marjojen kanssa
   width: 1280
   height: 853
 ingredients:
   - amount: 150
-    unit: "g"
-    item: "mantelijauhoa"
+    unit: g
+    item: mantelijauhoa
   - amount: 75
-    unit: "g"
-    item: "voita"
+    unit: g
+    item: voita
   - amount: 1
-    unit: "kpl"
-    item: "kananmuna"
+    unit: kpl
+    item: kananmuna
   - amount: 300
-    unit: "g"
-    item: "maitorahkaa"
+    unit: g
+    item: maitorahkaa
   - amount: 2
-    unit: "kpl"
-    item: "kananmunaa"
+    unit: kpl
+    item: kananmunaa
   - amount: 1
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: 2
-    unit: "rkl"
-    item: "erytritolia"
+    unit: rkl
+    item: erytritolia
   - amount: 1
-    unit: "tl"
-    item: "vaniljauutetta"
+    unit: tl
+    item: vaniljauutetta
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # VHH-rahkapiirakka

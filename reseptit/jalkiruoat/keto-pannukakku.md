@@ -1,44 +1,57 @@
 ---
-title: "Keto-pannukakku"
-recipe_id: "keto-pannukakku"
-url_slug: "keto-pannukakku"
-category: "jalkiruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["kananmuna","kerma"]
-cooking_method: ["uuni"]
+title: Keto-pannukakku
+recipe_id: keto-pannukakku
+url_slug: keto-pannukakku
+category: jalkiruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - kananmuna
+  - kerma
+cooking_method:
+  - uuni
 servings: 4
 time_total_min: 35
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","VHH"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
 image:
   src: jalkiruoat/keto-pannukakku.webp
-  alt: "Pala pannukakkua mustikoiden, vadelmien ja kermavaahdon kanssa"
+  alt: Pala pannukakkua mustikoiden, vadelmien ja kermavaahdon kanssa
   width: 1280
   height: 853
 ingredients:
   - amount: 4
-    unit: "kpl"
-    item: "kananmunaa"
+    unit: kpl
+    item: kananmunaa
   - amount: 2
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: 100
-    unit: "g"
-    item: "tuorejuustoa"
+    unit: g
+    item: tuorejuustoa
   - amount: 2
-    unit: "rkl"
-    item: "mantelijauhoa"
+    unit: rkl
+    item: mantelijauhoa
   - amount: 1
-    unit: "rkl"
-    item: "psylliumia"
+    unit: rkl
+    item: psylliumia
   - amount: 0.5
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 30
-    unit: "g"
-    item: "voita"
+    unit: g
+    item: voita
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Keto-pannukakku
