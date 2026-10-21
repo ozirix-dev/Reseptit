@@ -64,6 +64,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.getByText("Reseptejä ei löytynyt hakuehdoilla.").waitFor();
     assert.equal(await page.locator(".recipe-card-grid").count(), 0);
     await page.getByRole("button", { name: "Tyhjennä haku ja suodattimet" }).last().click();
+    await page.locator(".recipe-card__image[loading=eager]").waitFor();
     assert.equal(await page.locator(".recipe-card__image[loading=eager]").count(), 1);
     assert.equal(await page.locator('.recipe-card__image[fetchPriority="high"]').count(), 1);
     assert.equal(await page.locator(".recipe-card__image[loading=lazy]").count(), await page.locator(".recipe-card__image").count() - 1);
