@@ -5,7 +5,7 @@ import { auditTranslations } from "../scripts/translation-audit";
 test("all published translations match the source structure and known critical terms", async () => {
   const result = await auditTranslations();
   const translatedSources = result.publishedSources.filter((recipe) =>
-    ["en", "sv", "th"].every((locale) => recipe.data.translation_status?.[locale] === "published"),
+    (["en", "sv", "th"] as const).every((locale) => recipe.data.translation_status?.[locale] === "published"),
   );
   assert.equal(translatedSources.length, 39, "source recipes with all three published translations");
   assert.equal(result.publishedTranslations.length, translatedSources.length * 3, "published translation count");
