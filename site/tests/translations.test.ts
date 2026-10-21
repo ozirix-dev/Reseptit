@@ -8,8 +8,8 @@ test("all published translations match the source structure and known critical t
     (["en", "sv", "th"] as const).every((locale) => recipe.data.translation_status?.[locale] === "published"),
   );
   assert.equal(translatedSources.length, 39, "source recipes with all three published translations");
-  assert.equal(result.publishedTranslations.length, translatedSources.length * 3, "published translation count");
-  assert.equal(result.rows.length, translatedSources.length * 3, "one audit row per published translation");
+  assert.equal(result.publishedTranslations.length, translatedSources.length * 3 + 1, "39 complete sets plus the Thai som tam version");
+  assert.equal(result.rows.length, result.publishedTranslations.length, "one audit row per published translation");
   assert.deepEqual(result.errors, []);
   for (const recipe of translatedSources) {
     for (const locale of ["en", "sv", "th"] as const) {
@@ -20,6 +20,11 @@ test("all published translations match the source structure and known critical t
       assert.equal(target.data.image?.src, recipe.data.image?.src);
     }
   }
+  const somTam = result.publishedTranslations.find((recipe) => recipe.data.recipe_id === "som-tam-vhh-kurkkuna" && recipe.data.language === "th");
+  assert.ok(somTam, "som tam has a published Thai version");
+  assert.equal(somTam.data.url_slug, "som-tam-taeng-kwa-vhh");
+  assert.equal(somTam.data.source_recipe, "reseptit/alkuruoat/som-tam-vhh-kurkkuna.md");
+  assert.equal(somTam.data.ingredients.length, 9);
 });
 
 test("audit output distinguishes structural passes from pending human language review", async () => {

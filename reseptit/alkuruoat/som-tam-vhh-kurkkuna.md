@@ -31,8 +31,10 @@ ingredients:
   - {amount: 2, unit: rkl, item: limettimehua}
   - {amount: 1, unit: rkl, item: kalakastiketta}
   - {amount: 1, unit: tl, item: erytritolia}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - th
+translation_status:
+  th: published
 ---
 
 # VHH-som tam -tyylinen thaimaalainen kurkkusalaatti
