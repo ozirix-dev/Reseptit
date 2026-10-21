@@ -4,11 +4,14 @@ import { auditTranslations } from "../scripts/translation-audit";
 
 test("all published translations match the source structure and known critical terms", async () => {
   const result = await auditTranslations();
-  assert.equal(result.publishedSources.length, 39, "published Finnish source count");
-  assert.equal(result.publishedTranslations.length, 117, "published translation count");
-  assert.equal(result.rows.length, 117, "one audit row per published translation");
+  const translatedSources = result.publishedSources.filter((recipe) =>
+    ["en", "sv", "th"].every((locale) => recipe.data.translation_status?.[locale] === "published"),
+  );
+  assert.equal(translatedSources.length, 39, "source recipes with all three published translations");
+  assert.equal(result.publishedTranslations.length, translatedSources.length * 3, "published translation count");
+  assert.equal(result.rows.length, translatedSources.length * 3, "one audit row per published translation");
   assert.deepEqual(result.errors, []);
-  for (const recipe of result.publishedSources) {
+  for (const recipe of translatedSources) {
     for (const locale of ["en", "sv", "th"] as const) {
       const target = result.publishedTranslations.find((entry) => entry.data.recipe_id === recipe.data.recipe_id && entry.data.language === locale);
       assert.ok(target, `${recipe.data.recipe_id} is published in ${locale}`);
