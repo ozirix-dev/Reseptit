@@ -66,7 +66,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.getByRole("button", { name: "Tyhjennä haku ja suodattimet" }).last().click();
     await page.locator(".recipe-card__image[loading=eager]").waitFor();
     assert.equal(await page.locator(".recipe-card__image[loading=eager]").count(), 1);
-    assert.equal(await page.locator('.recipe-card__image[fetchPriority="high"]').count(), 1);
+    assert.equal(await page.locator(".recipe-card__image").evaluateAll((images) => images.filter((image) => image.getAttribute("fetchpriority") === "high").length), 1);
     assert.equal(await page.locator(".recipe-card__image[loading=lazy]").count(), await page.locator(".recipe-card__image").count() - 1);
     assert.equal(await page.locator(".recipe-card h3").count(), await page.locator(".recipe-card").count());
 
