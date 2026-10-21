@@ -1,5 +1,5 @@
 ---
-title: Pohjoisthaimaalainen khao soi kanalla ja konjaknuudeleilla
+title: VHH-khao soi kanalla ja konjaknuudeleilla
 recipe_id: khao-soi-vhh-konjac
 url_slug: khao-soi-vhh-konjac
 category: paaruoka
@@ -38,9 +38,9 @@ translation_languages: []
 translation_status: {}
 ---
 
-# Pohjoisthaimaalainen khao soi kanalla ja konjaknuudeleilla
+# VHH-khao soi kanalla ja konjaknuudeleilla
 
-Khao soi on pohjoisthaimaalainen curry-nuudelikeitto. Täyteläinen kookosliemi, broileri ja pikkelöity sinappikaali saavat VHH-versiossa seurakseen konjaknuudelit.
+Khao soi on pohjoisthaimaalainen curry-nuudelikeitto. Tämä VHH-muunnelma valmistetaan konjaknuudeleista perinteisten nuudelien sijaan. Täyteläinen kookosliemi, broileri ja pikkelöity sinappikaali säilyttävät tutun makuyhdistelmän.
 
 ## Kuvaus
 

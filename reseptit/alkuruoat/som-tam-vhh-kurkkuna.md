@@ -1,5 +1,5 @@
 ---
-title: Som tam -tyylinen thaimaalainen kurkkusalaatti
+title: VHH-som tam -tyylinen thaimaalainen kurkkusalaatti
 recipe_id: som-tam-vhh-kurkkuna
 url_slug: som-tam-vhh-kurkkuna
 category: alkuruoka
@@ -35,9 +35,9 @@ translation_languages: []
 translation_status: {}
 ---
 
-# Som tam -tyylinen thaimaalainen kurkkusalaatti
+# VHH-som tam -tyylinen thaimaalainen kurkkusalaatti
 
-Raikas, hapan, suolainen ja tulinen salaatti saa som tamista tutut maut, mutta vihreä papaija vaihtuu rapeaan kurkkuun. Tarjoa lisukkeena tai alkuruokana.
+Raikas, hapan, suolainen ja tulinen VHH-salaatti saa makunsa som tamista, mutta vihreä papaija vaihtuu rapeaan kurkkuun. Kyseessä on som tam -tyylinen muunnelma, ei perinteinen papaijasalaatti. Tarjoa lisukkeena tai alkuruokana.
 
 ## Kuvaus
 
