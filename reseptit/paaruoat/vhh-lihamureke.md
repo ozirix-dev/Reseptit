@@ -1,47 +1,59 @@
 ---
-title: "Mehevä VHH-lihamureke"
-recipe_id: "vhh-lihamureke"
-url_slug: "vhh-lihamureke"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["naudan jauheliha"]
-cooking_method: ["uuni"]
+title: Mehevä VHH-lihamureke
+recipe_id: vhh-lihamureke
+url_slug: vhh-lihamureke
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - naudan jauheliha
+cooking_method:
+  - uuni
 servings: 6
 time_total_min: 70
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","VHH"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
 image:
   src: paaruoat/vhh-lihamureke.webp
-  alt: "Viipaloitua lihamureketta kukkakaalimuusin ja vihreiden papujen kanssa"
+  alt: Viipaloitua lihamureketta kukkakaalimuusin ja vihreiden papujen kanssa
   width: 1280
   height: 853
 ingredients:
   - amount: 800
-    unit: "g"
-    item: "naudan jauhelihaa"
+    unit: g
+    item: naudan jauhelihaa
   - amount: 200
-    unit: "g"
-    item: "kesäkurpitsaa"
+    unit: g
+    item: kesäkurpitsaa
   - amount: 2
-    unit: "kpl"
-    item: "kananmunaa"
+    unit: kpl
+    item: kananmunaa
   - amount: 1
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: 1
-    unit: "kpl"
-    item: "sipuli"
+    unit: kpl
+    item: sipuli
   - amount: 1
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 1
-    unit: "tl"
-    item: "paprikajauhetta"
+    unit: tl
+    item: paprikajauhetta
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Mehevä VHH-lihamureke

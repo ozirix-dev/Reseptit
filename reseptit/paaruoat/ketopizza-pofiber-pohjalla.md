@@ -1,48 +1,65 @@
 ---
-title: "Ketopizza Pofiber-pohjalla"
-recipe_id: "ketopizza-pofiber-pohjalla"
-url_slug: "ketopizza-pofiber-pohjalla"
-category: "paaruoka"
-language: "fi"
-diet_class: "keto"
+title: Ketopizza Pofiber-pohjalla
+recipe_id: ketopizza-pofiber-pohjalla
+url_slug: ketopizza-pofiber-pohjalla
+category: paaruoka
+language: fi
+diet_class: keto
 servings: 2
-main_ingredient: ["juusto", "kananmuna", "Pofiber"]
-cooking_method: ["uuni"]
-difficulty: "helppo"
-tags: ["ketopizza", "vähähiilihydraattinen", "pofiber", "pannupizza"]
+main_ingredient:
+  - juusto
+  - kananmuna
+  - Pofiber
+cooking_method:
+  - uuni
+difficulty: helppo
+tags:
+  - ketopizza
+  - vähähiilihydraattinen
+  - pofiber
+  - pannupizza
 image:
   src: paaruoat/ketopizza-pofiber-pohjalla.webp
-  alt: Pofiber-pohjainen ketopizza, jossa on pepperonia, paprikaa, oliiveja ja sulanutta juustoa
+  alt: Pofiber-pohjainen ketopizza, jossa on pepperonia, paprikaa, oliiveja ja
+    sulanutta juustoa
   width: 1280
   height: 853
 ingredients:
   - amount: 175
-    unit: "g"
-    item: "juustoraastetta"
-    note: "150–200 g; esimerkiksi Oltermannia tai mozzarellaa, mielellään itse raastettuna"
+    unit: g
+    item: juustoraastetta
+    note: 150–200 g; esimerkiksi Oltermannia tai mozzarellaa, mielellään itse
+      raastettuna
   - amount: 2.5
-    unit: "rkl"
-    item: "tuorejuustoa"
-    note: "2–3 rkl; vaihtoehtona jogurtti, ranskankerma tai kermaviili"
+    unit: rkl
+    item: tuorejuustoa
+    note: 2–3 rkl; vaihtoehtona jogurtti, ranskankerma tai kermaviili
   - amount: 1
     unit: ""
-    item: "isoa kananmunaa"
-    note: "vaihtoehtona 2 pientä"
+    item: isoa kananmunaa
+    note: vaihtoehtona 2 pientä
   - amount: 3.5
-    unit: "rkl"
-    item: "Pofiberiä"
-    note: "3–4 rkl"
+    unit: rkl
+    item: Pofiberiä
+    note: 3–4 rkl
   - amount: 75
-    unit: "g"
-    item: "tomaattikastiketta"
-    note: "noin 4 rkl; esimerkiksi pizzakastiketta tai paseerattua tomaattia"
+    unit: g
+    item: tomaattikastiketta
+    note: noin 4 rkl; esimerkiksi pizzakastiketta tai paseerattua tomaattia
   - amount: null
     unit: ""
-    item: "haluamiasi pizzatäytteitä"
-    note: "esimerkiksi kinkkua, pepperonia, paprikaa, sipulia, oliiveja, mozzarellaa, fetaa tai yrttejä"
-translation_languages: []
-translation_status: {}
-status: "published"
+    item: haluamiasi pizzatäytteitä
+    note: esimerkiksi kinkkua, pepperonia, paprikaa, sipulia, oliiveja, mozzarellaa,
+      fetaa tai yrttejä
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
+status: published
 ---
 
 # Ketopizza Pofiber-pohjalla

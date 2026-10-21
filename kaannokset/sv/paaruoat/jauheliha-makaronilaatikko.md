@@ -1,21 +1,28 @@
 ---
-title: "Proteinrik makaronilåda med köttfärs"
-recipe_id: "jauheliha-makaronilaatikko"
-url_slug: "proteinrik-makaronilada-med-kottfars"
-category: "paaruoka"
-language: "sv"
-source_language: "fi"
-source_recipe: "reseptit/paaruoat/jauheliha-makaronilaatikko.md"
-translation_of: "jauheliha-makaronilaatikko"
+title: Proteinrik makaronilåda med köttfärs
+recipe_id: jauheliha-makaronilaatikko
+url_slug: proteinrik-makaronilada-med-kottfars
+category: paaruoka
+language: sv
+source_language: fi
+source_recipe: reseptit/paaruoat/jauheliha-makaronilaatikko.md
+translation_of: jauheliha-makaronilaatikko
 protein_per_serving_g: 45
 carbs_total_per_serving_g: 38
 fat_per_serving_g: 35
 servings: 8
-main_ingredient: ["naudanliha", "raejuusto"]
-cooking_method: ["uuni"]
+main_ingredient:
+  - naudanliha
+  - raejuusto
+cooking_method:
+  - uuni
 time_total_min: 75
-difficulty: "Enkel"
-tags: ["vardag", "ugnsrätt", "nötkött", "proteinrik"]
+difficulty: Enkel
+tags:
+  - vardag
+  - ugnsrätt
+  - nötkött
+  - proteinrik
 image:
   src: paaruoat/jauheliha-makaronilaatikko.webp
   alt: Gyllene makaronilåda med köttfärs, osttäcke och ett matigt inre
@@ -23,52 +30,52 @@ image:
   height: 853
 ingredients:
   - amount: 400
-    unit: "g"
-    item: "makaroner"
+    unit: g
+    item: makaroner
   - amount: 600
-    unit: "g"
-    item: "mager nötfärs"
+    unit: g
+    item: mager nötfärs
   - amount: 1
     unit: ""
-    item: "gul lök"
-    note: "liten"
+    item: gul lök
+    note: liten
   - amount: 1
-    unit: "msk"
-    item: "olja"
+    unit: msk
+    item: olja
   - amount: 500
-    unit: "g"
-    item: "keso"
+    unit: g
+    item: keso
   - amount: 6
     unit: ""
-    item: "ägg"
+    item: ägg
   - amount: 2
-    unit: "dl"
-    item: "mjölk"
+    unit: dl
+    item: mjölk
   - amount: 2
-    unit: "dl"
-    item: "matlagningsgrädde"
+    unit: dl
+    item: matlagningsgrädde
   - amount: 200
-    unit: "g"
-    item: "riven ost"
-    note: "till äggblandningen"
+    unit: g
+    item: riven ost
+    note: till äggblandningen
   - amount: 100
-    unit: "g"
-    item: "riven ost"
-    note: "till gratinering"
+    unit: g
+    item: riven ost
+    note: till gratinering
   - amount: 1.5
-    unit: "tsk"
-    item: "vitlökspulver"
+    unit: tsk
+    item: vitlökspulver
   - amount: 1
-    unit: "tsk"
-    item: "svartpeppar"
+    unit: tsk
+    item: svartpeppar
   - amount: 1
-    unit: "tsk"
-    item: "paprikapulver"
+    unit: tsk
+    item: paprikapulver
   - amount: null
     unit: ""
-    item: "salt"
-    note: "efter smak"
-status: "published"
+    item: salt
+    note: efter smak
+status: published
 ---
 
 # Proteinrik makaronilåda med köttfärs

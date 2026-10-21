@@ -1,52 +1,69 @@
 ---
-title: "VHH-pyttipannu makkarasta ja kasviksista"
-recipe_id: "vhh-pyttipannu"
-url_slug: "vhh-pyttipannu"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["makkara", "kananmuna", "kesäkurpitsa"]
-cooking_method: ["liesi"]
+title: VHH-pyttipannu makkarasta ja kasviksista
+recipe_id: vhh-pyttipannu
+url_slug: vhh-pyttipannu
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - makkara
+  - kananmuna
+  - kesäkurpitsa
+cooking_method:
+  - liesi
 servings: 4
 time_total_min: 30
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka", "VHH", "pyttipannu", "makkara"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
+  - pyttipannu
+  - makkara
 image:
   src: paaruoat/pyttipannu-vhh.webp
-  alt: Paistinpannullinen makkaraa, kesäkurpitsaa ja lanttua, päällä paistettu kananmuna
+  alt: Paistinpannullinen makkaraa, kesäkurpitsaa ja lanttua, päällä paistettu
+    kananmuna
   width: 1280
   height: 853
 ingredients:
   - amount: 300
-    unit: "g"
-    item: "vähähiilihydraattista makkaraa"
+    unit: g
+    item: vähähiilihydraattista makkaraa
   - amount: 250
-    unit: "g"
-    item: "kesäkurpitsaa"
+    unit: g
+    item: kesäkurpitsaa
   - amount: 200
-    unit: "g"
-    item: "lanttua"
+    unit: g
+    item: lanttua
   - amount: 1
-    unit: "kpl"
-    item: "sipuli"
+    unit: kpl
+    item: sipuli
   - amount: 2
-    unit: "rkl"
-    item: "voita"
-    note: "paistamiseen"
+    unit: rkl
+    item: voita
+    note: paistamiseen
   - amount: 4
-    unit: "kpl"
-    item: "kananmunaa"
+    unit: kpl
+    item: kananmunaa
   - amount: 0.5
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: null
     unit: ""
-    item: "ruohosipulia"
-    note: "silputtuna"
+    item: ruohosipulia
+    note: silputtuna
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # VHH-pyttipannu makkarasta ja kasviksista

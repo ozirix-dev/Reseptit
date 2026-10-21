@@ -1,44 +1,57 @@
 ---
-title: "Keto-korvapuustit"
-recipe_id: "keto-korvapuustit"
-url_slug: "keto-korvapuustit"
-category: "leivonnainen"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["mantelijauho","tuorejuusto"]
-cooking_method: ["uuni"]
+title: Keto-korvapuustit
+recipe_id: keto-korvapuustit
+url_slug: keto-korvapuustit
+category: leivonnainen
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - mantelijauho
+  - tuorejuusto
+cooking_method:
+  - uuni
 servings: 8
 time_total_min: 40
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","VHH"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
 image:
   src: leivonnaiset/keto-korvapuustit.webp
-  alt: "Kanelilla ja sokerittomalla makeutuksella maustettuja korvapuusteja vadilla"
+  alt: Kanelilla ja sokerittomalla makeutuksella maustettuja korvapuusteja vadilla
   width: 1280
   height: 853
 ingredients:
   - amount: 200
-    unit: "g"
-    item: "mantelijauhoa"
+    unit: g
+    item: mantelijauhoa
   - amount: 150
-    unit: "g"
-    item: "mozzarellaraastetta"
+    unit: g
+    item: mozzarellaraastetta
   - amount: 100
-    unit: "g"
-    item: "tuorejuustoa"
+    unit: g
+    item: tuorejuustoa
   - amount: 1
-    unit: "kpl"
-    item: "kananmuna"
+    unit: kpl
+    item: kananmuna
   - amount: 2
-    unit: "rkl"
-    item: "erytritolia"
+    unit: rkl
+    item: erytritolia
   - amount: 1
-    unit: "tl"
-    item: "kanelia"
+    unit: tl
+    item: kanelia
   - amount: 30
-    unit: "g"
-    item: "voita"
+    unit: g
+    item: voita
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Keto-korvapuustit

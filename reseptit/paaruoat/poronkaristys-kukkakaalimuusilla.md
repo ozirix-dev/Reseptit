@@ -1,47 +1,60 @@
 ---
-title: "Poronkäristys kukkakaalimuusilla"
-recipe_id: "poronkaristys-kukkakaalimuusilla"
-url_slug: "poronkaristys-kukkakaalimuusilla"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["poronkäristys","kukkakaali"]
-cooking_method: ["uuni"]
+title: Poronkäristys kukkakaalimuusilla
+recipe_id: poronkaristys-kukkakaalimuusilla
+url_slug: poronkaristys-kukkakaalimuusilla
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - poronkäristys
+  - kukkakaali
+cooking_method:
+  - uuni
 servings: 4
 time_total_min: 40
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","VHH"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
 image:
   src: paaruoat/poronkaristys-kukkakaalimuusilla.webp
-  alt: "Poronkäristystä kukkakaalimuusin, puolukoiden ja vihreiden papujen kanssa"
+  alt: Poronkäristystä kukkakaalimuusin, puolukoiden ja vihreiden papujen kanssa
   width: 1280
   height: 853
 ingredients:
   - amount: 500
-    unit: "g"
-    item: "poronkäristyslihaa"
+    unit: g
+    item: poronkäristyslihaa
   - amount: 1
-    unit: "kpl"
-    item: "sipuli"
+    unit: kpl
+    item: sipuli
   - amount: 2
-    unit: "rkl"
-    item: "voita"
+    unit: rkl
+    item: voita
   - amount: 1
-    unit: "dl"
-    item: "vettä"
+    unit: dl
+    item: vettä
   - amount: 1
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 700
-    unit: "g"
-    item: "kukkakaalia"
+    unit: g
+    item: kukkakaalia
   - amount: 1
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Poronkäristys kukkakaalimuusilla

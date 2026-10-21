@@ -1,54 +1,71 @@
 ---
-title: "VHH-kaalilaatikko ilman riisiä"
-recipe_id: "vhh-kaalilaatikko"
-url_slug: "vhh-kaalilaatikko"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["valkokaali", "naudan jauheliha"]
-cooking_method: ["uuni", "haudutus"]
+title: VHH-kaalilaatikko ilman riisiä
+recipe_id: vhh-kaalilaatikko
+url_slug: vhh-kaalilaatikko
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - valkokaali
+  - naudan jauheliha
+cooking_method:
+  - uuni
+  - haudutus
 servings: 6
 time_total_min: 110
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka", "VHH", "uuniruoka", "kaali"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
+  - uuniruoka
+  - kaali
 image:
   src: paaruoat/kaalilaatikko-vhh.webp
-  alt: VHH-kaalilaatikko, jossa on haudutettua kaalia ja jauhelihaa, tarjolla puolukan kanssa
+  alt: VHH-kaalilaatikko, jossa on haudutettua kaalia ja jauhelihaa, tarjolla
+    puolukan kanssa
   width: 1280
   height: 853
 ingredients:
   - amount: 900
-    unit: "g"
-    item: "valkokaalia"
-    note: "ohuiksi suikaleiksi leikattuna"
+    unit: g
+    item: valkokaalia
+    note: ohuiksi suikaleiksi leikattuna
   - amount: 500
-    unit: "g"
-    item: "naudan jauhelihaa"
+    unit: g
+    item: naudan jauhelihaa
   - amount: 1
-    unit: "kpl"
-    item: "sipuli"
+    unit: kpl
+    item: sipuli
   - amount: 2
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: 2
-    unit: "kpl"
-    item: "kananmunaa"
+    unit: kpl
+    item: kananmunaa
   - amount: 1
-    unit: "dl"
-    item: "lihalientä"
+    unit: dl
+    item: lihalientä
   - amount: 1
-    unit: "rkl"
-    item: "voita"
+    unit: rkl
+    item: voita
   - amount: 1
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 1
-    unit: "tl"
-    item: "kuivattua meiramia"
+    unit: tl
+    item: kuivattua meiramia
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # VHH-kaalilaatikko ilman riisiä

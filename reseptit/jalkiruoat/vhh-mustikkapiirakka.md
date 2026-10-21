@@ -1,44 +1,57 @@
 ---
-title: "VHH-mustikkapiirakka"
-recipe_id: "vhh-mustikkapiirakka"
-url_slug: "vhh-mustikkapiirakka"
-category: "jalkiruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_valjempi"
-main_ingredient: ["mustikka","rahka"]
-cooking_method: ["uuni"]
+title: VHH-mustikkapiirakka
+recipe_id: vhh-mustikkapiirakka
+url_slug: vhh-mustikkapiirakka
+category: jalkiruoka
+language: fi
+status: published
+diet_class: vhh_valjempi
+main_ingredient:
+  - mustikka
+  - rahka
+cooking_method:
+  - uuni
 servings: 8
 time_total_min: 50
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","vähähiilihydraattinen"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - vähähiilihydraattinen
 image:
   src: jalkiruoat/vhh-mustikkapiirakka.webp
-  alt: "Mustikkapiirakka tuoreiden mustikoiden ja kermavaahtonokareen kanssa"
+  alt: Mustikkapiirakka tuoreiden mustikoiden ja kermavaahtonokareen kanssa
   width: 1280
   height: 853
 ingredients:
   - amount: 150
-    unit: "g"
-    item: "mantelijauhoa"
+    unit: g
+    item: mantelijauhoa
   - amount: 75
-    unit: "g"
-    item: "voita"
+    unit: g
+    item: voita
   - amount: 1
-    unit: "kpl"
-    item: "kananmuna"
+    unit: kpl
+    item: kananmuna
   - amount: 250
-    unit: "g"
-    item: "maitorahkaa"
+    unit: g
+    item: maitorahkaa
   - amount: 2
-    unit: "kpl"
-    item: "kananmunaa"
+    unit: kpl
+    item: kananmunaa
   - amount: 150
-    unit: "g"
-    item: "mustikoita"
+    unit: g
+    item: mustikoita
   - amount: 1
-    unit: "tl"
-    item: "vaniljauutetta"
+    unit: tl
+    item: vaniljauutetta
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # VHH-mustikkapiirakka

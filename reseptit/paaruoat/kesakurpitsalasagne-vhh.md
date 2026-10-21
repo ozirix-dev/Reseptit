@@ -1,50 +1,63 @@
 ---
-title: "Kesäkurpitsalasagne"
-recipe_id: "kesakurpitsalasagne-vhh"
-url_slug: "kesakurpitsalasagne-vhh"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["kesäkurpitsa","naudan jauheliha"]
-cooking_method: ["uuni"]
+title: Kesäkurpitsalasagne
+recipe_id: kesakurpitsalasagne-vhh
+url_slug: kesakurpitsalasagne-vhh
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - kesäkurpitsa
+  - naudan jauheliha
+cooking_method:
+  - uuni
 servings: 6
 time_total_min: 75
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","VHH"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
 image:
   src: paaruoat/kesakurpitsalasagne-vhh.webp
-  alt: "Pala kesäkurpitsalasagnea tomaatilla ja juustolla kuorrutettuna"
+  alt: Pala kesäkurpitsalasagnea tomaatilla ja juustolla kuorrutettuna
   width: 1280
   height: 853
 ingredients:
   - amount: 700
-    unit: "g"
-    item: "kesäkurpitsaa"
+    unit: g
+    item: kesäkurpitsaa
   - amount: 500
-    unit: "g"
-    item: "naudan jauhelihaa"
+    unit: g
+    item: naudan jauhelihaa
   - amount: 400
-    unit: "g"
-    item: "tomaattimurskaa"
+    unit: g
+    item: tomaattimurskaa
   - amount: 2
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: 150
-    unit: "g"
-    item: "juustoraastetta"
+    unit: g
+    item: juustoraastetta
   - amount: 1
-    unit: "kpl"
-    item: "sipuli"
+    unit: kpl
+    item: sipuli
   - amount: 1
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 1
-    unit: "tl"
-    item: "oreganoa"
+    unit: tl
+    item: oreganoa
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Kesäkurpitsalasagne

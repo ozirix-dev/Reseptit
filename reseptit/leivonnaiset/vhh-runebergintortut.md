@@ -1,47 +1,61 @@
 ---
-title: "VHH-Runebergintortut"
-recipe_id: "vhh-runebergintortut"
-url_slug: "vhh-runebergintortut"
-category: "leivonnainen"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["mantelijauho","kananmuna"]
-cooking_method: ["uuni"]
+title: VHH-Runebergintortut
+recipe_id: vhh-runebergintortut
+url_slug: vhh-runebergintortut
+category: leivonnainen
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - mantelijauho
+  - kananmuna
+cooking_method:
+  - uuni
 servings: 6
 time_total_min: 35
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","VHH"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
 image:
   src: leivonnaiset/vhh-runebergintortut.webp
-  alt: "Pieniä Runebergin torttuja, joiden päällä on vadelmahilloa ja valkoinen sokeriton kuorruterengas"
+  alt: Pieniä Runebergin torttuja, joiden päällä on vadelmahilloa ja valkoinen
+    sokeriton kuorruterengas
   width: 1280
   height: 853
 ingredients:
   - amount: 120
-    unit: "g"
-    item: "mantelijauhoa"
+    unit: g
+    item: mantelijauhoa
   - amount: 50
-    unit: "g"
-    item: "voita"
+    unit: g
+    item: voita
   - amount: 2
-    unit: "kpl"
-    item: "kananmunaa"
+    unit: kpl
+    item: kananmunaa
   - amount: 100
-    unit: "g"
-    item: "maitorahkaa"
+    unit: g
+    item: maitorahkaa
   - amount: 2
-    unit: "rkl"
-    item: "erytritolia"
+    unit: rkl
+    item: erytritolia
   - amount: 1
-    unit: "tl"
-    item: "kardemummaa"
+    unit: tl
+    item: kardemummaa
   - amount: 1
-    unit: "tl"
-    item: "leivinjauhetta"
+    unit: tl
+    item: leivinjauhetta
   - amount: 6
-    unit: "tl"
-    item: "vadelmia"
+    unit: tl
+    item: vadelmia
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # VHH-Runebergintortut

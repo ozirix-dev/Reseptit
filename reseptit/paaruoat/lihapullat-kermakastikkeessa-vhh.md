@@ -1,17 +1,24 @@
 ---
-title: "Lihapullat kermakastikkeessa ja kukkakaalimuusi"
-recipe_id: "lihapullat-kermakastikkeessa-vhh"
-url_slug: "lihapullat-kermakastikkeessa-vhh"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["naudan jauheliha", "kukkakaali"]
-cooking_method: ["liesi"]
+title: Lihapullat kermakastikkeessa ja kukkakaalimuusi
+recipe_id: lihapullat-kermakastikkeessa-vhh
+url_slug: lihapullat-kermakastikkeessa-vhh
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - naudan jauheliha
+  - kukkakaali
+cooking_method:
+  - liesi
 servings: 4
 time_total_min: 45
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka", "VHH", "lihapullat", "kermakastike"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
+  - lihapullat
+  - kermakastike
 image:
   src: paaruoat/lihapullat-kermakastikkeessa.webp
   alt: Lihapullia kermaisessa kastikkeessa kukkakaalimuusin ja puolukoiden kanssa
@@ -19,54 +26,62 @@ image:
   height: 853
 ingredients:
   - amount: 600
-    unit: "g"
-    item: "naudan jauhelihaa"
+    unit: g
+    item: naudan jauhelihaa
   - amount: 1
-    unit: "kpl"
-    item: "kananmuna"
+    unit: kpl
+    item: kananmuna
   - amount: 1
-    unit: "dl"
-    item: "kuohukermaa"
-    note: "lihapullataikinaan"
+    unit: dl
+    item: kuohukermaa
+    note: lihapullataikinaan
   - amount: 2
-    unit: "rkl"
-    item: "mantelijauhoa"
+    unit: rkl
+    item: mantelijauhoa
   - amount: 1
-    unit: "kpl"
-    item: "pieni sipuli"
-    note: "hienonnettuna"
+    unit: kpl
+    item: pieni sipuli
+    note: hienonnettuna
   - amount: 1
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 0.5
-    unit: "tl"
-    item: "maustepippuria"
+    unit: tl
+    item: maustepippuria
   - amount: 2
-    unit: "rkl"
-    item: "voita"
-    note: "paistamiseen"
+    unit: rkl
+    item: voita
+    note: paistamiseen
   - amount: 2
-    unit: "dl"
-    item: "kuohukermaa"
-    note: "kastikkeeseen"
+    unit: dl
+    item: kuohukermaa
+    note: kastikkeeseen
   - amount: 1
-    unit: "dl"
-    item: "lihalientä"
+    unit: dl
+    item: lihalientä
   - amount: 700
-    unit: "g"
-    item: "kukkakaalia"
-    note: "muusiin"
+    unit: g
+    item: kukkakaalia
+    note: muusiin
   - amount: 40
-    unit: "g"
-    item: "voita"
-    note: "muusiin"
+    unit: g
+    item: voita
+    note: muusiin
   - amount: 0.5
-    unit: "tl"
-    item: "suolaa"
-    note: "muusiin tai maun mukaan"
+    unit: tl
+    item: suolaa
+    note: muusiin tai maun mukaan
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Lihapullat kermakastikkeessa ja kukkakaalimuusi

@@ -1,60 +1,76 @@
 ---
-title: "Jauhelihapihvit ja kermakastike ilman jauhoja"
-recipe_id: "jauhelihapihvit-vhh-kermakastikkeella"
-url_slug: "jauhelihapihvit-vhh-kermakastikkeella"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["naudan jauheliha", "kananmuna"]
-cooking_method: ["liesi"]
+title: Jauhelihapihvit ja kermakastike ilman jauhoja
+recipe_id: jauhelihapihvit-vhh-kermakastikkeella
+url_slug: jauhelihapihvit-vhh-kermakastikkeella
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - naudan jauheliha
+  - kananmuna
+cooking_method:
+  - liesi
 servings: 4
 time_total_min: 35
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka", "VHH", "jauhelihapihvit", "kermakastike"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
+  - jauhelihapihvit
+  - kermakastike
 image:
   src: paaruoat/jauhelihapihvit-kermakastikkeella.webp
-  alt: Jauhelihapihvejä pippurisessa kermakastikkeessa vihreiden papujen ja kukkakaalimuusin kanssa
+  alt: Jauhelihapihvejä pippurisessa kermakastikkeessa vihreiden papujen ja
+    kukkakaalimuusin kanssa
   width: 1280
   height: 853
 ingredients:
   - amount: 600
-    unit: "g"
-    item: "naudan jauhelihaa"
+    unit: g
+    item: naudan jauhelihaa
   - amount: 1
-    unit: "kpl"
-    item: "kananmuna"
+    unit: kpl
+    item: kananmuna
   - amount: 0.5
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: 1
-    unit: "kpl"
-    item: "pieni sipuli"
-    note: "hienoksi raastettuna"
+    unit: kpl
+    item: pieni sipuli
+    note: hienoksi raastettuna
   - amount: 1
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 1
-    unit: "rkl"
-    item: "voita"
-    note: "paistamiseen"
+    unit: rkl
+    item: voita
+    note: paistamiseen
   - amount: 2
-    unit: "dl"
-    item: "kuohukermaa"
-    note: "kastikkeeseen"
+    unit: dl
+    item: kuohukermaa
+    note: kastikkeeseen
   - amount: 1
-    unit: "dl"
-    item: "lihalientä"
+    unit: dl
+    item: lihalientä
   - amount: 1
-    unit: "tl"
-    item: "Dijon-sinappia"
+    unit: tl
+    item: Dijon-sinappia
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
-    note: "kastikkeeseen"
+    unit: tl
+    item: mustapippuria
+    note: kastikkeeseen
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Jauhelihapihvit ja kermakastike ilman jauhoja

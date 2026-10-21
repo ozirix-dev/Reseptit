@@ -1,20 +1,28 @@
 ---
-title: "Kermainen lohipata"
-recipe_id: "kermainen-lohipata"
-url_slug: "kermainen-lohipata"
-category: "paaruoka"
-language: "fi"
-diet_class: "keto"
+title: Kermainen lohipata
+recipe_id: kermainen-lohipata
+url_slug: kermainen-lohipata
+category: paaruoka
+language: fi
+diet_class: keto
 carbs_net_per_serving_g: 6
 carbs_total_per_serving_g: 8
 protein_per_serving_g: 29
 fat_per_serving_g: 35
 servings: 4
-main_ingredient: ["kala", "lohi"]
-cooking_method: ["uuni"]
+main_ingredient:
+  - kala
+  - lohi
+cooking_method:
+  - uuni
 time_total_min: 40
-difficulty: "helppo"
-tags: ["arki", "gluteeniton", "uuniruoka", "kala", "vhh"]
+difficulty: helppo
+tags:
+  - arki
+  - gluteeniton
+  - uuniruoka
+  - kala
+  - vhh
 image:
   src: paaruoat/kermainen-lohipata.webp
   alt: Kermainen lohipata lohipaloilla, pinaatilla ja tillillä
@@ -22,47 +30,51 @@ image:
   height: 1254
 ingredients:
   - amount: 600
-    unit: "g"
-    item: "lohifilee"
+    unit: g
+    item: lohifilee
   - amount: 1
     unit: ""
-    item: "sipuli"
-    note: "pieni"
+    item: sipuli
+    note: pieni
   - amount: 2
     unit: ""
-    item: "valkosipulinkynttä"
+    item: valkosipulinkynttä
   - amount: 200
-    unit: "g"
-    item: "tuorejuustoa"
+    unit: g
+    item: tuorejuustoa
   - amount: 2
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: 1
-    unit: "rkl"
-    item: "voita"
+    unit: rkl
+    item: voita
   - amount: 1
-    unit: "tl"
-    item: "sitruunamehua"
+    unit: tl
+    item: sitruunamehua
   - amount: 1
-    unit: "tl"
-    item: "Dijon-sinappia"
+    unit: tl
+    item: Dijon-sinappia
   - amount: 1
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 1
-    unit: "tl"
-    item: "kuivattua tilliä"
+    unit: tl
+    item: kuivattua tilliä
   - amount: 150
-    unit: "g"
-    item: "pinaattia"
-translation_languages: ["en", "th"]
+    unit: g
+    item: pinaattia
+translation_languages:
+  - en
+  - sv
+  - th
 translation_status:
-  en: "draft"
-  th: "draft"
-status: "published"
+  en: published
+  sv: published
+  th: published
+status: published
 ---
 
 # Kermainen lohipata

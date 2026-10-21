@@ -1,76 +1,87 @@
 ---
-title: "Runsasproteiininen jauheliha-makaronilaatikko"
-recipe_id: "jauheliha-makaronilaatikko"
-url_slug: "jauheliha-makaronilaatikko"
-category: "paaruoka"
-language: "fi"
+title: Runsasproteiininen jauheliha-makaronilaatikko
+recipe_id: jauheliha-makaronilaatikko
+url_slug: jauheliha-makaronilaatikko
+category: paaruoka
+language: fi
 protein_per_serving_g: 45
 carbs_total_per_serving_g: 38
 fat_per_serving_g: 35
 servings: 8
-main_ingredient: ["naudanliha", "raejuusto"]
-cooking_method: ["uuni"]
+main_ingredient:
+  - naudanliha
+  - raejuusto
+cooking_method:
+  - uuni
 time_total_min: 75
-difficulty: "helppo"
-tags: ["arki", "uuniruoka", "jauheliha", "runsasproteiininen"]
+difficulty: helppo
+tags:
+  - arki
+  - uuniruoka
+  - jauheliha
+  - runsasproteiininen
 image:
   src: paaruoat/jauheliha-makaronilaatikko.webp
-  alt: Kullanruskeaksi paistunut jauheliha-makaronilaatikko, jossa näkyy juustopinta ja mehevä sisus
+  alt: Kullanruskeaksi paistunut jauheliha-makaronilaatikko, jossa näkyy
+    juustopinta ja mehevä sisus
   width: 1280
   height: 853
 ingredients:
   - amount: 400
-    unit: "g"
-    item: "makaronia"
+    unit: g
+    item: makaronia
   - amount: 600
-    unit: "g"
-    item: "vähärasvaista jauhelihaa"
+    unit: g
+    item: vähärasvaista jauhelihaa
   - amount: 1
     unit: ""
-    item: "sipuli"
-    note: "pieni"
+    item: sipuli
+    note: pieni
   - amount: 1
-    unit: "rkl"
-    item: "öljyä"
+    unit: rkl
+    item: öljyä
   - amount: 500
-    unit: "g"
-    item: "raejuustoa"
+    unit: g
+    item: raejuustoa
   - amount: 6
     unit: ""
-    item: "kananmunaa"
+    item: kananmunaa
   - amount: 2
-    unit: "dl"
-    item: "maitoa"
+    unit: dl
+    item: maitoa
   - amount: 2
-    unit: "dl"
-    item: "ruokakermaa"
+    unit: dl
+    item: ruokakermaa
   - amount: 200
-    unit: "g"
-    item: "juustoraastetta"
-    note: "munaseokseen"
+    unit: g
+    item: juustoraastetta
+    note: munaseokseen
   - amount: 100
-    unit: "g"
-    item: "juustoraastetta"
-    note: "pinnalle"
+    unit: g
+    item: juustoraastetta
+    note: pinnalle
   - amount: 1.5
-    unit: "tl"
-    item: "valkosipulijauhetta"
+    unit: tl
+    item: valkosipulijauhetta
   - amount: 1
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 1
-    unit: "tl"
-    item: "paprikajauhetta"
+    unit: tl
+    item: paprikajauhetta
   - amount: null
     unit: ""
-    item: "suolaa"
-    note: "maun mukaan"
-translation_languages: ["en", "sv", "th"]
+    item: suolaa
+    note: maun mukaan
+translation_languages:
+  - en
+  - sv
+  - th
 translation_status:
-  en: "published"
-  sv: "published"
-  th: "published"
-status: "published"
+  en: published
+  sv: published
+  th: published
+status: published
 ---
 
 # Runsasproteiininen jauheliha-makaronilaatikko

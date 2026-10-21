@@ -1,53 +1,70 @@
 ---
-title: "Jauhelihalla ja juustolla täytetyt paprikat"
-recipe_id: "taytetyt-paprikat-vhh"
-url_slug: "taytetyt-paprikat-vhh"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_valjempi"
-main_ingredient: ["naudan jauheliha", "paprika", "juusto"]
-cooking_method: ["uuni"]
+title: Jauhelihalla ja juustolla täytetyt paprikat
+recipe_id: taytetyt-paprikat-vhh
+url_slug: taytetyt-paprikat-vhh
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_valjempi
+main_ingredient:
+  - naudan jauheliha
+  - paprika
+  - juusto
+cooking_method:
+  - uuni
 servings: 4
 time_total_min: 50
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka", "VHH", "täytetyt paprikat", "jauheliha"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
+  - täytetyt paprikat
+  - jauheliha
 image:
   src: paaruoat/taytetyt-paprikat-vhh.webp
-  alt: Jauhelihalla ja sulaneella juustolla täytettyjä paprikoita vihersalaatin kanssa
+  alt: Jauhelihalla ja sulaneella juustolla täytettyjä paprikoita vihersalaatin
+    kanssa
   width: 1280
   height: 853
 ingredients:
   - amount: 4
-    unit: "kpl"
-    item: "isoa paprikaa"
+    unit: kpl
+    item: isoa paprikaa
   - amount: 500
-    unit: "g"
-    item: "naudan jauhelihaa"
+    unit: g
+    item: naudan jauhelihaa
   - amount: 1
-    unit: "kpl"
-    item: "pieni sipuli"
+    unit: kpl
+    item: pieni sipuli
   - amount: 150
-    unit: "g"
-    item: "tomaattimurskaa"
+    unit: g
+    item: tomaattimurskaa
   - amount: 1
-    unit: "rkl"
-    item: "tomaattipyreetä"
+    unit: rkl
+    item: tomaattipyreetä
   - amount: 1
-    unit: "tl"
-    item: "kuivattua oreganoa"
+    unit: tl
+    item: kuivattua oreganoa
   - amount: 0.5
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 150
-    unit: "g"
-    item: "juustoraastetta"
+    unit: g
+    item: juustoraastetta
   - amount: 1
-    unit: "rkl"
-    item: "oliiviöljyä"
+    unit: rkl
+    item: oliiviöljyä
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Jauhelihalla ja juustolla täytetyt paprikat

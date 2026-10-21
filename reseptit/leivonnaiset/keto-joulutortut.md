@@ -1,38 +1,51 @@
 ---
-title: "Keto-joulutortut"
-recipe_id: "keto-joulutortut"
-url_slug: "keto-joulutortut"
-category: "leivonnainen"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["mantelijauho","tuorejuusto"]
-cooking_method: ["uuni"]
+title: Keto-joulutortut
+recipe_id: keto-joulutortut
+url_slug: keto-joulutortut
+category: leivonnainen
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - mantelijauho
+  - tuorejuusto
+cooking_method:
+  - uuni
 servings: 8
 time_total_min: 35
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","VHH"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
 image:
   src: leivonnaiset/keto-joulutortut.webp
-  alt: "Kullanruskeita joulutorttuja luumuhillokeskuksella vadilla"
+  alt: Kullanruskeita joulutorttuja luumuhillokeskuksella vadilla
   width: 1280
   height: 853
 ingredients:
   - amount: 150
-    unit: "g"
-    item: "mantelijauhoa"
+    unit: g
+    item: mantelijauhoa
   - amount: 100
-    unit: "g"
-    item: "voita"
+    unit: g
+    item: voita
   - amount: 100
-    unit: "g"
-    item: "tuorejuustoa"
+    unit: g
+    item: tuorejuustoa
   - amount: 1
-    unit: "kpl"
-    item: "kananmuna"
+    unit: kpl
+    item: kananmuna
   - amount: 8
-    unit: "tl"
-    item: "luumuhilloa"
+    unit: tl
+    item: luumuhilloa
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Keto-joulutortut

@@ -1,17 +1,26 @@
 ---
-title: "Karjalanpaisti ja paahdettu kaali"
-recipe_id: "karjalanpaisti-vhh"
-url_slug: "karjalanpaisti-vhh"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["naudanliha", "porsaanliha", "kaali"]
-cooking_method: ["uuni", "haudutus"]
+title: Karjalanpaisti ja paahdettu kaali
+recipe_id: karjalanpaisti-vhh
+url_slug: karjalanpaisti-vhh
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - naudanliha
+  - porsaanliha
+  - kaali
+cooking_method:
+  - uuni
+  - haudutus
 servings: 6
 time_total_min: 210
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka", "VHH", "karjalanpaisti", "pitkä haudutus"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
+  - karjalanpaisti
+  - pitkä haudutus
 image:
   src: paaruoat/karjalanpaisti-vhh.webp
   alt: Pitkään haudutettua karjalanpaistia ja paahdettuja kaalilohkoja
@@ -19,39 +28,47 @@ image:
   height: 853
 ingredients:
   - amount: 400
-    unit: "g"
-    item: "naudan patalihaa"
+    unit: g
+    item: naudan patalihaa
   - amount: 400
-    unit: "g"
-    item: "porsaan patalihaa"
+    unit: g
+    item: porsaan patalihaa
   - amount: 1
-    unit: "kpl"
-    item: "sipuli"
-    note: "lohkoina"
+    unit: kpl
+    item: sipuli
+    note: lohkoina
   - amount: 7
-    unit: "dl"
-    item: "vettä"
+    unit: dl
+    item: vettä
   - amount: 1
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 8
-    unit: "kpl"
-    item: "kokonaista maustepippuria"
+    unit: kpl
+    item: kokonaista maustepippuria
   - amount: 2
-    unit: "kpl"
-    item: "laakerinlehteä"
+    unit: kpl
+    item: laakerinlehteä
   - amount: 700
-    unit: "g"
-    item: "valkokaalia"
-    note: "lisäkkeeksi"
+    unit: g
+    item: valkokaalia
+    note: lisäkkeeksi
   - amount: 2
-    unit: "rkl"
-    item: "oliiviöljyä"
-    note: "kaalille"
+    unit: rkl
+    item: oliiviöljyä
+    note: kaalille
   - amount: null
     unit: ""
-    item: "mustapippuria"
-    note: "kaalille maun mukaan"
+    item: mustapippuria
+    note: kaalille maun mukaan
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Karjalanpaisti ja paahdettu kaali

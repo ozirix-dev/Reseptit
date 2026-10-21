@@ -1,21 +1,28 @@
 ---
-title: "High-Protein Beef Macaroni Bake"
-recipe_id: "jauheliha-makaronilaatikko"
-url_slug: "high-protein-beef-macaroni-bake"
-category: "paaruoka"
-language: "en"
-source_language: "fi"
-source_recipe: "reseptit/paaruoat/jauheliha-makaronilaatikko.md"
-translation_of: "jauheliha-makaronilaatikko"
+title: High-Protein Beef Macaroni Bake
+recipe_id: jauheliha-makaronilaatikko
+url_slug: high-protein-beef-macaroni-bake
+category: paaruoka
+language: en
+source_language: fi
+source_recipe: reseptit/paaruoat/jauheliha-makaronilaatikko.md
+translation_of: jauheliha-makaronilaatikko
 protein_per_serving_g: 45
 carbs_total_per_serving_g: 38
 fat_per_serving_g: 35
 servings: 8
-main_ingredient: ["naudanliha", "raejuusto"]
-cooking_method: ["uuni"]
+main_ingredient:
+  - naudanliha
+  - raejuusto
+cooking_method:
+  - uuni
 time_total_min: 75
-difficulty: "Easy"
-tags: ["everyday", "oven-baked", "beef", "high-protein"]
+difficulty: Easy
+tags:
+  - everyday
+  - oven-baked
+  - beef
+  - high-protein
 image:
   src: paaruoat/jauheliha-makaronilaatikko.webp
   alt: Golden-brown beef macaroni bake with a cheese topping and a hearty centre
@@ -23,52 +30,52 @@ image:
   height: 853
 ingredients:
   - amount: 400
-    unit: "g"
-    item: "macaroni"
+    unit: g
+    item: macaroni
   - amount: 600
-    unit: "g"
-    item: "lean minced beef"
+    unit: g
+    item: lean minced beef
   - amount: 1
     unit: ""
-    item: "onion"
-    note: "small"
+    item: onion
+    note: small
   - amount: 1
-    unit: "tbsp"
-    item: "oil"
+    unit: tbsp
+    item: oil
   - amount: 500
-    unit: "g"
-    item: "cottage cheese"
+    unit: g
+    item: cottage cheese
   - amount: 6
     unit: ""
-    item: "eggs"
+    item: eggs
   - amount: 2
-    unit: "dl"
-    item: "milk"
+    unit: dl
+    item: milk
   - amount: 2
-    unit: "dl"
-    item: "cooking cream"
+    unit: dl
+    item: cooking cream
   - amount: 200
-    unit: "g"
-    item: "grated cheese"
-    note: "for the egg mixture"
+    unit: g
+    item: grated cheese
+    note: for the egg mixture
   - amount: 100
-    unit: "g"
-    item: "grated cheese"
-    note: "for the topping"
+    unit: g
+    item: grated cheese
+    note: for the topping
   - amount: 1.5
-    unit: "tsp"
-    item: "garlic powder"
+    unit: tsp
+    item: garlic powder
   - amount: 1
-    unit: "tsp"
-    item: "black pepper"
+    unit: tsp
+    item: black pepper
   - amount: 1
-    unit: "tsp"
-    item: "paprika"
+    unit: tsp
+    item: paprika
   - amount: null
     unit: ""
-    item: "salt"
-    note: "to taste"
-status: "published"
+    item: salt
+    note: to taste
+status: published
 ---
 
 # High-Protein Beef Macaroni Bake

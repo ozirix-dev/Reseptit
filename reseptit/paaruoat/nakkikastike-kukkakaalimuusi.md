@@ -1,17 +1,24 @@
 ---
-title: "Nakkikastike ja kukkakaalimuusi"
-recipe_id: "nakkikastike-kukkakaalimuusi"
-url_slug: "nakkikastike-kukkakaalimuusi"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["nakit", "kukkakaali"]
-cooking_method: ["liesi"]
+title: Nakkikastike ja kukkakaalimuusi
+recipe_id: nakkikastike-kukkakaalimuusi
+url_slug: nakkikastike-kukkakaalimuusi
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - nakit
+  - kukkakaali
+cooking_method:
+  - liesi
 servings: 4
 time_total_min: 30
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka", "VHH", "nakit", "arkiruoka"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
+  - nakit
+  - arkiruoka
 image:
   src: paaruoat/nakkikastike-kukkakaalimuusi.webp
   alt: Nakkikastiketta kermaisessa kastikkeessa kukkakaalimuusin kanssa
@@ -19,33 +26,41 @@ image:
   height: 853
 ingredients:
   - amount: 400
-    unit: "g"
-    item: "nakkeja"
+    unit: g
+    item: nakkeja
   - amount: 1
-    unit: "kpl"
-    item: "pieni sipuli"
+    unit: kpl
+    item: pieni sipuli
   - amount: 2
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: 1
-    unit: "dl"
-    item: "lihalientä"
+    unit: dl
+    item: lihalientä
   - amount: 1
-    unit: "tl"
-    item: "Dijon-sinappia"
+    unit: tl
+    item: Dijon-sinappia
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 600
-    unit: "g"
-    item: "kukkakaalia"
+    unit: g
+    item: kukkakaalia
   - amount: 40
-    unit: "g"
-    item: "voita"
+    unit: g
+    item: voita
   - amount: null
     unit: ""
-    item: "suolaa"
-    note: "maun mukaan"
+    item: suolaa
+    note: maun mukaan
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Nakkikastike ja kukkakaalimuusi

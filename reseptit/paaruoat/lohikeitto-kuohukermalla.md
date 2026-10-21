@@ -1,63 +1,77 @@
 ---
-title: "Kermainen lohikeitto kuohukermalla"
-recipe_id: "lohikeitto-kuohukermalla"
-url_slug: "lohikeitto-kuohukermalla"
-category: "paaruoka"
-language: "fi"
+title: Kermainen lohikeitto kuohukermalla
+recipe_id: lohikeitto-kuohukermalla
+url_slug: lohikeitto-kuohukermalla
+category: paaruoka
+language: fi
 servings: 4
-main_ingredient: ["lohi", "peruna"]
-cooking_method: ["liesi"]
-difficulty: "helppo"
-tags: ["lohikeitto", "keitto", "kalaruoka", "kuohukerma"]
+main_ingredient:
+  - lohi
+  - peruna
+cooking_method:
+  - liesi
+difficulty: helppo
+tags:
+  - lohikeitto
+  - keitto
+  - kalaruoka
+  - kuohukerma
 image:
   src: paaruoat/lohikeitto-kuohukermalla.webp
-  alt: Kermainen lohikeitto kuohukermalla, perunalla, porkkanalla, purjolla ja tuoreella tillillä
+  alt: Kermainen lohikeitto kuohukermalla, perunalla, porkkanalla, purjolla ja
+    tuoreella tillillä
   width: 1280
   height: 853
 ingredients:
   - amount: 1
     unit: ""
-    item: "sipuli"
+    item: sipuli
   - amount: 50
-    unit: "g"
-    item: "purjoa"
+    unit: g
+    item: purjoa
   - amount: 6
     unit: ""
-    item: "perunaa"
+    item: perunaa
   - amount: 1
     unit: ""
-    item: "porkkana"
+    item: porkkana
   - amount: null
     unit: ""
-    item: "voita"
-    note: "oman maun mukaan kuullottamiseen"
+    item: voita
+    note: oman maun mukaan kuullottamiseen
   - amount: 8
-    unit: "dl"
-    item: "vettä"
+    unit: dl
+    item: vettä
   - amount: null
     unit: ""
-    item: "kalafondia"
-    note: "pakkauksen annostuksen mukaan 8 dl:lle vettä"
+    item: kalafondia
+    note: pakkauksen annostuksen mukaan 8 dl:lle vettä
   - amount: 8
-    unit: "kpl"
-    item: "kokonaista mustapippuria"
+    unit: kpl
+    item: kokonaista mustapippuria
   - amount: 400
-    unit: "g"
-    item: "lohifileetä"
+    unit: g
+    item: lohifileetä
   - amount: 2
-    unit: "dl"
-    item: "kuohukermaa"
+    unit: dl
+    item: kuohukermaa
   - amount: null
     unit: ""
-    item: "suolaa"
-    note: "tarvittaessa maun mukaan"
+    item: suolaa
+    note: tarvittaessa maun mukaan
   - amount: null
     unit: ""
-    item: "tuoretta tilliä"
-    note: "hienonnettuna"
-translation_languages: []
-translation_status: {}
-status: "published"
+    item: tuoretta tilliä
+    note: hienonnettuna
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
+status: published
 ---
 
 # Kermainen lohikeitto kuohukermalla

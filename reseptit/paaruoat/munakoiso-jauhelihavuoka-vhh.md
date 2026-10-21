@@ -1,47 +1,60 @@
 ---
-title: "Munakoiso-jauhelihavuoka"
-recipe_id: "munakoiso-jauhelihavuoka-vhh"
-url_slug: "munakoiso-jauhelihavuoka-vhh"
-category: "paaruoka"
-language: "fi"
-status: "published"
-diet_class: "vhh_tiukka"
-main_ingredient: ["munakoiso","naudan jauheliha"]
-cooking_method: ["uuni"]
+title: Munakoiso-jauhelihavuoka
+recipe_id: munakoiso-jauhelihavuoka-vhh
+url_slug: munakoiso-jauhelihavuoka-vhh
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - munakoiso
+  - naudan jauheliha
+cooking_method:
+  - uuni
 servings: 4
 time_total_min: 60
-difficulty: "helppo"
-tags: ["suomalainen kotiruoka","VHH"]
+difficulty: helppo
+tags:
+  - suomalainen kotiruoka
+  - VHH
 image:
   src: paaruoat/munakoiso-jauhelihavuoka-vhh.webp
-  alt: "Juustolla gratinoitua munakoiso-jauhelihavuokaa tarjoiluastiassa"
+  alt: Juustolla gratinoitua munakoiso-jauhelihavuokaa tarjoiluastiassa
   width: 1280
   height: 853
 ingredients:
   - amount: 2
-    unit: "kpl"
-    item: "munakoisoa"
+    unit: kpl
+    item: munakoisoa
   - amount: 500
-    unit: "g"
-    item: "naudan jauhelihaa"
+    unit: g
+    item: naudan jauhelihaa
   - amount: 400
-    unit: "g"
-    item: "tomaattimurskaa"
+    unit: g
+    item: tomaattimurskaa
   - amount: 150
-    unit: "g"
-    item: "juustoraastetta"
+    unit: g
+    item: juustoraastetta
   - amount: 1
-    unit: "kpl"
-    item: "sipuli"
+    unit: kpl
+    item: sipuli
   - amount: 1
-    unit: "tl"
-    item: "suolaa"
+    unit: tl
+    item: suolaa
   - amount: 0.5
-    unit: "tl"
-    item: "mustapippuria"
+    unit: tl
+    item: mustapippuria
   - amount: 1
-    unit: "tl"
-    item: "oreganoa"
+    unit: tl
+    item: oreganoa
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Munakoiso-jauhelihavuoka
