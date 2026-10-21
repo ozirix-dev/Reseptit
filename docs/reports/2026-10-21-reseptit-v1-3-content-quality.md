@@ -24,6 +24,7 @@ Tarkistus säilytti `recipe_id`- ja `url_slug`-arvot. Sisältöbuildi tuottaa 15
 - Korjattiin pinaattilettujen lähteen valmistustapa pannuksi sekä sitä vastaavat käännösmetatiedot ja ohjeen ristiriitainen annoskuvaus aiempien työmuutosten yhteydessä. Lähteen sisältömuutokset synkronoitiin kieliversioihin.
 - Käännösten tagit ja ainesosanimet täsmennettiin kontekstikohtaisesti. Ohjeita, määriä, URL:eja tai ravintoarvoja ei muutettu oletusten perusteella.
 - Luotiin FI–EN–SV–TH-sanasto: `meta/kaannokset/ruokasanasto.md`.
+- PR säilyttää myös jo työtilassa olleet käyttäjän aiemmin pyytämät muutokset: Italian padan julkaistut kieliversiot ja reseptinäkymän kielikohtaiset käyttöliittymätekstit sekä hakemisto-/virhetilan parannukset. Niitä ei poistettu tämän sisältöauditoinnin yhteydessä.
 
 Automaattinen tarkistus ei löytänyt jäljellä olevia rakenteellisia ristiriitoja tai määriteltyjä kriittisiä termivirheitä: **0 virhettä / 117 paria**. Tämä tulos ei todista käännösten semanttista oikeellisuutta.
 
