@@ -1,5 +1,5 @@
 ---
-title: Khao man gai – thaimaalainen kana ja kukkakaaliriisi
+title: VHH-khao man gai – thaimaalainen kana ja kukkakaaliriisi
 recipe_id: khao-man-gai-vhh
 url_slug: khao-man-gai-vhh
 category: paaruoka
@@ -37,9 +37,9 @@ translation_languages: []
 translation_status: {}
 ---
 
-# Khao man gai – thaimaalainen kana ja kukkakaaliriisi
+# VHH-khao man gai – thaimaalainen kana ja kukkakaaliriisi
 
-Hellästi kypsennetty broileri, inkiväärinen dippikastike ja lämmin kukkakaaliriisi muodostavat yksinkertaisen thaimaalaisen kotiruoan.
+Tämä VHH-muunnelma säilyttää khao man gain hellästi kypsennetyn broilerin ja inkiväärisen dippikastikkeen. Perinteisen maustetun riisin tilalla tarjoillaan lämmintä kukkakaaliriisiä.
 
 ## Kuvaus
 

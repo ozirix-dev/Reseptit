@@ -1,0 +1,60 @@
+---
+title: VHH-pad kee mao – tuliset kananuudelit
+recipe_id: pad-kee-mao-vhh-konjac
+url_slug: pad-kee-mao-vhh-konjac
+category: paaruoka
+language: fi
+status: published
+diet_class: vhh_valjempi
+main_ingredient: [broileri, thaibasilika]
+cooking_method: [paistinpannu]
+servings: 4
+time_total_min: 30
+difficulty: helppo
+tags: [thaimaalainen, wokki, nuudelit, tulinen, VHH]
+image:
+  src: paaruoat/pad-kee-mao-vhh-konjac.webp
+  alt: Tulinen pad kee mao -wokki konjaknuudeleilla, kanalla, chilillä ja thaibasilikalla
+  width: 1280
+  height: 853
+carbs_net_per_serving_g: 9
+carbs_total_per_serving_g: 13
+protein_per_serving_g: 32
+fat_per_serving_g: 21
+ingredients:
+  - {amount: 600, unit: g, item: valutettuja konjaknuudeleita}
+  - {amount: 500, unit: g, item: broilerin reisilihaa, note: suikaleina}
+  - {amount: 150, unit: g, item: vihreitä papuja, note: puolitettuna}
+  - {amount: 1, unit: kpl, item: punaista paprikaa, note: suikaleina}
+  - {amount: 30, unit: g, item: thaibasilikan lehtiä}
+  - {amount: 3, unit: kpl, item: valkosipulinkynttä, note: murskattuna}
+  - {amount: 2, unit: kpl, item: punaista chiliä, note: "viipaloituna, tulisuus oman maun mukaan"}
+  - {amount: 2, unit: rkl, item: kalakastiketta}
+  - {amount: 1, unit: rkl, item: soijakastiketta}
+  - {amount: 1, unit: rkl, item: osterikastiketta, note: vähäsokerista}
+  - {amount: 1, unit: tl, item: erytritolia}
+  - {amount: 2, unit: rkl, item: neutraalia öljyä}
+translation_languages: []
+translation_status: {}
+---
+
+# VHH-pad kee mao – tuliset kananuudelit
+
+Tulinen pad kee mao yhdistää nuudelit, valkosipulin, chilin ja aromaattisen thaibasilikan. Tämä VHH-muunnelma tehdään konjaknuudeleista riisinuudelien sijaan.
+
+## Kuvaus
+
+Valmistele ainekset ennen paistamista: ruoka kypsyy wokissa nopeasti. Kuivapaista nuudelit ensin, jotta kastike tarttuu niihin.
+
+## Valmistus
+
+1. Huuhtele ja valuta nuudelit. Kuivapaista niitä kuumalla pannulla 3–4 minuuttia ja siirrä sivuun.
+2. Sekoita kalakastike, soijakastike, osterikastike ja erytritoli.
+3. Kuumenna öljy wokissa. Paista broileri kypsäksi ja siirrä hetkeksi sivuun.
+4. Lisää valkosipuli ja chili pannulle. Paista noin 30 sekuntia, lisää pavut ja paprika ja paista muutama minuutti.
+5. Lisää nuudelit, broileri ja kastike. Kääntele kuumalla pannulla, kunnes kaikki on kuumaa.
+6. Nosta pannu liedeltä ja kääntele joukkoon thaibasilika. Tarjoa heti.
+
+## Muistiinpanot
+
+- Konjaknuudelit korvaavat riisinuudelit. Kastikkeiden hiilihydraattimäärät vaihtelevat tuotemerkeittäin.
