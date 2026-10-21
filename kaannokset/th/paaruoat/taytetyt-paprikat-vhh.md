@@ -17,7 +17,7 @@ time_total_min: 50
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - VHH
+  - คาร์โบไฮเดรตต่ำ
   - พริกยัดไส้
   - เนื้อสับ
 image:
@@ -31,7 +31,7 @@ ingredients:
     item: พริกหยวกขนาดใหญ่
   - amount: 500
     unit: g
-    item: เนื้อดิน
+    item: เนื้อวัวบด
   - amount: 1
     unit: ชิ้น
     item: หัวหอมเล็ก

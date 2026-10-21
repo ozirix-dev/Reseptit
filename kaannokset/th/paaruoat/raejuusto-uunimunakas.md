@@ -15,10 +15,10 @@ time_total_min: 55
 difficulty: ง่าย
 tags:
   - ไข่เจียว
-  - อาหารเตาอบ
+  - อาหารอบ
   - คอทเทจชีส
-  - ทุกวัน
-  - VHH
+  - อาหารประจำวัน
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: paaruoat/raejuusto-uunimunakas.webp
   alt: ไข่เจียวคอทเทจชีสทอดอย่างนุ่มนวลพร้อมกุ้ยช่ายสดด้านบน
@@ -43,7 +43,7 @@ ingredients:
     note: หยิก
   - amount: null
     unit: ""
-    item: ชนะ
+    item: เนย
     note: สำหรับทากระทะ
   - amount: null
     unit: ""

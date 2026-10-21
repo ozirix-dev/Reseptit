@@ -28,7 +28,7 @@ ingredients:
     item: แป้งอัลมอนด์
   - amount: 75
     unit: g
-    item: ชนะ
+    item: เนย
   - amount: 1
     unit: ชิ้น
     item: ไข่
@@ -40,7 +40,7 @@ ingredients:
     item: ไข่
   - amount: 1
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 2
     unit: ช้อนโต๊ะ
     item: อิริทริทอล

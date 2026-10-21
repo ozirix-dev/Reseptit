@@ -15,7 +15,7 @@ time_total_min: 90
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: paaruoat/uuniporsas-kermakastikkeessa-vhh.webp
   alt: Sliced ​​roast pork with creamy sauce, cauliflower mash and green beans
@@ -27,7 +27,7 @@ ingredients:
     item: pork kassler
   - amount: 2
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 2
     unit: dl
     item: water
@@ -45,7 +45,7 @@ ingredients:
     item: thyme
   - amount: 1
     unit: tbsp
-    item: win
+    item: butter
 source_language: fi
 source_recipe: reseptit/paaruoat/uuniporsas-kermakastikkeessa-vhh.md
 translation_of: uuniporsas-kermakastikkeessa-vhh

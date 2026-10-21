@@ -10,13 +10,13 @@ main_ingredient:
   - kananmuna
   - pinaatti
 cooking_method:
-  - uuni
+  - pannu
 servings: 3
 time_total_min: 25
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: paaruoat/keto-pinaattiletut.webp
   alt: En bunt grönspenat med örter och en krämig topping
@@ -40,7 +40,7 @@ ingredients:
     item: salt
   - amount: 2
     unit: msk
-    item: vinna
+    item: smör
 source_language: fi
 source_recipe: reseptit/paaruoat/keto-pinaattiletut.md
 translation_of: keto-pinaattiletut
@@ -48,16 +48,16 @@ translation_of: keto-pinaattiletut
 
 # Keto spenatplättar
 
-Keto-spenat letutu är en välbekant finsk mat som en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+De här lågkolhydratplättarna med spenat steks i panna. Receptet ger tre portioner.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Ägg, färskost och spenat mixas till en plättsmet. Servera plättarna som de är eller med en matig fyllning.
 
 ## Gör så här
 
-1. Purea ägg, färskost, spenat, mandelmjöl och salt till en slät massa.
-2. Stek små biffar i smör på medelvärme i 2-3 minuter på varje sida.
+1. Mixa ägg, färskost, spenat, mandelmjöl och salt till en jämn smet.
+2. Stek små plättar i smör på medelvärme i 2–3 minuter per sida.
 3. Servera som den är eller med en välsmakande fyllning.
 
 ## Anteckningar

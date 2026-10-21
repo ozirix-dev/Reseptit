@@ -16,7 +16,7 @@ time_total_min: 55
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: leivonnaiset/vhh-lihapiirakka.webp
   alt: En halv köttpaj som visar en saftig köttfärsfyllning och en gyllenbrun skorpa

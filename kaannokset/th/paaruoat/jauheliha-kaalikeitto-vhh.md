@@ -25,10 +25,10 @@ image:
 ingredients:
   - amount: 500
     unit: g
-    item: เนื้อดิน
+    item: เนื้อวัวบด
   - amount: 700
     unit: g
-    item: ผักกาดขาว
+    item: กะหล่ำปลี
   - amount: 1
     unit: ชิ้น
     item: หัวหอม

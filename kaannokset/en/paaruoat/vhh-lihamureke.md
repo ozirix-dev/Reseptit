@@ -15,7 +15,7 @@ time_total_min: 70
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: paaruoat/vhh-lihamureke.webp
   alt: Sliced ​​meatloaf with cauliflower puree and green beans
@@ -33,7 +33,7 @@ ingredients:
     item: eggs
   - amount: 1
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 1
     unit: ""
     item: onion

@@ -82,13 +82,14 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
 }
 
 function RecipeCard({ recipe, index, locale }: { recipe: RecipeEntry; index: number; locale: RecipeLocale }) {
+  const [imageFailed, setImageFailed] = useState(false);
   const labels = recipeUi[locale];
   const dietLabel = recipe.dietClass === "keto" ? labels.keto : recipe.dietClass ? labels.vhh : null;
   const meta = [recipe.timeTotalMin ? `${recipe.timeTotalMin} ${labels.minutes}` : null, recipe.difficulty].filter(Boolean).join(" · ");
   return <article className="recipe-card">
     <Link className="recipe-card__link" to={recipe.routePath}>
-      {recipe.image ? <img className="recipe-card__image" src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipe.image.sizes ?? undefined} alt={recipe.image.alt} width={recipe.image.width} height={recipe.image.height} loading={index === 0 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : undefined} decoding="async" />
-        : <span className="recipe-card__image recipe-card__image--placeholder" aria-hidden="true" />}
+      {recipe.image && !imageFailed ? <img className="recipe-card__image" src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipe.image.sizes ?? undefined} alt={recipe.image.alt} width={recipe.image.width} height={recipe.image.height} loading={index === 0 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : undefined} decoding="async" onError={() => setImageFailed(true)} />
+        : <span className="recipe-card__image recipe-card__image--placeholder">{labels.imageUnavailable}</span>}
       <span className="recipe-card__content">
         <span className="recipe-card__badges"><span className="recipe-card__category">{labels.category[recipe.category]}</span>{dietLabel ? <span className="recipe-card__diet">{dietLabel}</span> : null}</span>
         {meta ? <span className="recipe-card__meta">{meta}</span> : null}

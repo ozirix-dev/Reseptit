@@ -16,7 +16,7 @@ time_total_min: 75
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: paaruoat/kesakurpitsalasagne-vhh.webp
   alt: A piece of zucchini lasagna topped with tomato and cheese
@@ -34,7 +34,7 @@ ingredients:
     item: crushed tomatoes
   - amount: 2
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 150
     unit: g
     item: grated cheese

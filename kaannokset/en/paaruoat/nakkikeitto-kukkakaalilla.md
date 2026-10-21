@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
   - soup
   - jewelry
 image:

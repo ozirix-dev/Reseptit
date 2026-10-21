@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - VHH
+  - คาร์โบไฮเดรตต่ำ
   - ซุปปลาแซลมอน
   - กะหล่ำดอก
 image:
@@ -48,10 +48,10 @@ ingredients:
     note: ตามปริมาณบรรจุภัณฑ์ต่อน้ำ 8 เดซิลิตร
   - amount: 2
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: null
     unit: ""
-    item: ชนะ
+    item: เนย
     note: สำหรับตุ๋น
   - amount: 8
     unit: ชิ้น

@@ -1,5 +1,5 @@
 ---
-title: Aubergine and Ground Meat Bake
+title: Aubergine and Ground Beef Bake
 recipe_id: munakoiso-jauhelihavuoka-vhh
 url_slug: munakoiso-jauhelihavuoka-vhh
 category: paaruoka
@@ -16,7 +16,7 @@ time_total_min: 60
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: paaruoat/munakoiso-jauhelihavuoka-vhh.webp
   alt: Aubergine and mincemeat casserole with cheese gratin in a serving dish

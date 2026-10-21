@@ -13,7 +13,7 @@ cooking_method:
   - uuni
 difficulty: ง่าย
 tags:
-  - ว้าว
+  - คาร์โบไฮเดรตต่ำ
   - ปลาแซลมอนอบ
   - ครีมเปรี้ยว
   - อาหารปลา
@@ -50,7 +50,7 @@ ingredients:
     note: เพื่อลิ้มรส
   - amount: null
     unit: ""
-    item: ชนะ
+    item: เนย
     note: สำหรับทากระทะ
 status: published
 source_language: fi

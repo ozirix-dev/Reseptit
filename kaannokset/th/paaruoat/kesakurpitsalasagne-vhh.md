@@ -16,7 +16,7 @@ time_total_min: 75
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - วฮ
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: paaruoat/kesakurpitsalasagne-vhh.webp
   alt: ลาซานญ่าซูกินีชิ้นหนึ่ง โรยหน้าด้วยมะเขือเทศและชีส
@@ -28,13 +28,13 @@ ingredients:
     item: บวบ
   - amount: 500
     unit: g
-    item: เนื้อดิน
+    item: เนื้อวัวบด
   - amount: 400
     unit: g
     item: มะเขือเทศบด
   - amount: 2
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 150
     unit: g
     item: ชีสขูด

@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: leivonnaiset/vhh-runebergintortut.webp
   alt: Small Runeberg tarts topped with raspberry jam and a ring of white
@@ -29,7 +29,7 @@ ingredients:
     item: almond flour
   - amount: 50
     unit: g
-    item: win
+    item: butter
   - amount: 2
     unit: ""
     item: eggs

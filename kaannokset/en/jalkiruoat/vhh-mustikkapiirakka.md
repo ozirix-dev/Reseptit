@@ -28,7 +28,7 @@ ingredients:
     item: almond flour
   - amount: 75
     unit: g
-    item: win
+    item: butter
   - amount: 1
     unit: ""
     item: egg

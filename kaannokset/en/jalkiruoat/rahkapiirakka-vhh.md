@@ -28,7 +28,7 @@ ingredients:
     item: almond flour
   - amount: 75
     unit: g
-    item: win
+    item: butter
   - amount: 1
     unit: ""
     item: egg
@@ -40,7 +40,7 @@ ingredients:
     item: eggs
   - amount: 1
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 2
     unit: tbsp
     item: erythritol

@@ -43,14 +43,14 @@ ingredients:
     item: mustapippuria
   - amount: null
     unit: ""
-    item: valkosipulinkynttä
+    item: valkosipulia
     note: 1–2 kynttä
   - amount: 400
     unit: g
     item: kesäkurpitsaa
   - amount: 1
     unit: ""
-    item: suippopaprikaa
+    item: suippopaprika
     note: noin 90 g
   - amount: 150
     unit: g

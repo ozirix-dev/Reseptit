@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { recipeJsonLd } from "@/features/recipes/schema";
+import { recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { getRecipeByPath, getRecipeTranslations, getRecipes } from "@/lib/content";
 import type { RecipeLocale } from "@/types/content";
 
@@ -34,11 +35,12 @@ export function SeoMeta() {
       locale === "fi" ? strippedPath === "/" : strippedPath === `${baseByLocale[locale]}/` || strippedPath === baseByLocale[locale]);
     const indexExists = routeLocale === "fi" || (routeLocale !== undefined && getRecipes(routeLocale).length > 0);
     const known = recipe !== undefined || indexExists;
-    const locale = recipe?.locale ?? routeLocale ?? "fi";
+    // Keep unknown deep links' metadata in the same locale as the visible not-found page.
+    const locale = recipe?.locale ?? routeLocale ?? recipeLocaleFromPath(strippedPath);
     const title = known
       ? recipe ? `${recipe.title} | ${titleByLocale[locale]}` : `${titleByLocale[locale]} | Ozirix`
-      : "Sivua ei löytynyt | Reseptit";
-    const description = recipe?.description || (locale === "fi" ? "Selkeitä reseptejä arkeen." : `${titleByLocale[locale]} for everyday cooking.`);
+      : `${recipeUi[locale].notFound} | ${titleByLocale[locale]}`;
+    const description = recipe?.description || (!known ? recipeUi[locale].notFound : locale === "fi" ? "Selkeitä reseptejä arkeen." : `${titleByLocale[locale]} for everyday cooking.`);
     const canonical = recipe ? `${siteBase}${recipe.routePath}` : indexExists ? `${siteBase}${indexPath(locale)}` : null;
     document.title = title;
     document.documentElement.lang = locale;

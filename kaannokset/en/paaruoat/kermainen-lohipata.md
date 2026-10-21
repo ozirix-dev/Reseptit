@@ -20,9 +20,9 @@ difficulty: easy
 tags:
   - everyday
   - gluten free
-  - oven food
+  - oven dish
   - fish
-  - wow
+  - low carb
 image:
   src: paaruoat/kermainen-lohipata.webp
   alt: Creamy salmon stew with salmon chunks, spinach and dill
@@ -44,10 +44,10 @@ ingredients:
     item: cream cheese
   - amount: 2
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 1
     unit: tbsp
-    item: win
+    item: butter
   - amount: 1
     unit: tsp
     item: lemon juice
@@ -84,7 +84,7 @@ Salmon, spinach and soft cream sauce cook in the oven at the same time. Serve th
 
 1. Heat the oven to 200 degrees.
 2. Chop the onion and garlic. Sauté them in butter in a pan.
-3. Add cream cheese, whipped cream, lemon juice, mustard and spices. Mix into a smooth sauce.
+3. Add cream cheese, whipping cream, lemon juice, mustard and spices. Mix into a smooth sauce.
 4. Quickly fold the spinach into the sauce.
 5. Place the salmon fillet in the baking dish and pour the sauce over it.
 6. Cook in the oven for about 25 minutes until the salmon is just cooked.

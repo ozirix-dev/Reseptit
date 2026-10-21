@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: leivonnaiset/vhh-runebergintortut.webp
   alt: Små Runebergstårtor toppade med hallonsylt och en ring av vit sockerfri
@@ -29,7 +29,7 @@ ingredients:
     item: mandelmjöl
   - amount: 50
     unit: g
-    item: vinna
+    item: smör
   - amount: 2
     unit: st
     item: ägg

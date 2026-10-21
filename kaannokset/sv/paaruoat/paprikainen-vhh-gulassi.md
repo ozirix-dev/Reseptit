@@ -13,7 +13,7 @@ cooking_method:
   - uuni
 difficulty: lätt
 tags:
-  - wow
+  - lågkolhydrat
   - gulasch
   - nötkött
   - paprika
@@ -53,7 +53,7 @@ ingredients:
     note: gärna rökt paprika eller sött paprikapulver
   - amount: 1.5
     unit: msk
-    item: smör eller olja
+    item: smör
     note: för att bryna kött
   - amount: 0.5
     unit: tsk

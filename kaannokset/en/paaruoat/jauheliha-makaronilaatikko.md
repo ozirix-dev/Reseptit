@@ -20,7 +20,7 @@ time_total_min: 75
 difficulty: Easy
 tags:
   - everyday
-  - oven-baked
+  - oven dish
   - beef
   - high-protein
 image:

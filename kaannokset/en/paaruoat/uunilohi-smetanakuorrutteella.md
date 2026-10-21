@@ -13,7 +13,7 @@ cooking_method:
   - uuni
 difficulty: easy
 tags:
-  - wow
+  - low carb
   - baked salmon
   - sour cream
   - fish food
@@ -50,7 +50,7 @@ ingredients:
     note: to taste
   - amount: null
     unit: ""
-    item: win
+    item: butter
     note: for greasing the pan
 status: published
 source_language: fi

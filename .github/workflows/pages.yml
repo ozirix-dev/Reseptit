@@ -44,6 +44,8 @@ jobs:
         working-directory: site
       - run: npm test
         working-directory: site
+      - run: npm run test:translations
+        working-directory: site
       - run: npm run test:image
         working-directory: site
       - run: npm run build

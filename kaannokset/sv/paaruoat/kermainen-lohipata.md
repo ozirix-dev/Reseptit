@@ -18,11 +18,11 @@ cooking_method:
 time_total_min: 40
 difficulty: lätt
 tags:
-  - daglig-
+  - vardag
   - glutenfri
-  - ugnsmat
+  - ugnsrätt
   - fisk
-  - wow
+  - lågkolhydrat
 image:
   src: paaruoat/kermainen-lohipata.webp
   alt: Krämig laxgryta med laxbitar, spenat och dill
@@ -44,10 +44,10 @@ ingredients:
     item: färskost
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 1
     unit: msk
-    item: vinna
+    item: smör
   - amount: 1
     unit: tsk
     item: citronsaft

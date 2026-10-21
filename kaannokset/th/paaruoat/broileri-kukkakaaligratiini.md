@@ -16,7 +16,7 @@ time_total_min: 45
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - วฮ
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: paaruoat/broileri-kukkakaaligratiini.webp
   alt: ไก่เนื้อและดอกกะหล่ำในกราแตงเคลือบครีมชีส
@@ -31,7 +31,7 @@ ingredients:
     item: ดอกกะหล่ำ
   - amount: 2
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 150
     unit: g
     item: ขูดชีส

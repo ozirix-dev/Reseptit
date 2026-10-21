@@ -13,7 +13,7 @@ cooking_method:
   - uuni
 difficulty: easy
 tags:
-  - wow
+  - low carb
   - goulash
   - beef
   - paprika
@@ -53,7 +53,7 @@ ingredients:
     note: preferably smoked paprika or sweet paprika powder
   - amount: 1.5
     unit: tbsp
-    item: butter or oil
+    item: butter
     note: for browning meat
   - amount: 0.5
     unit: tsp

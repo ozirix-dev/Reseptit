@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: leivonnaiset/keto-joulutortut.webp
   alt: Golden brown Christmas tarts with a plum jam center on a platter
@@ -28,7 +28,7 @@ ingredients:
     item: almond flour
   - amount: 100
     unit: g
-    item: win
+    item: butter
   - amount: 100
     unit: g
     item: cream cheese

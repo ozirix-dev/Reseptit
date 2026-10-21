@@ -28,7 +28,7 @@ ingredients:
     item: mandelmjöl
   - amount: 75
     unit: g
-    item: vinna
+    item: smör
   - amount: 1
     unit: st
     item: ägg

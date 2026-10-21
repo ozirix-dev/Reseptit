@@ -10,16 +10,16 @@ main_ingredient:
   - kananmuna
   - pinaatti
 cooking_method:
-  - uuni
+  - pannu
 servings: 3
 time_total_min: 25
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: paaruoat/keto-pinaattiletut.webp
-  alt: A stack of spinach greens with herbs and a creamy topping
+  alt: A stack of green spinach pancakes with herbs and a creamy accompaniment
   width: 1280
   height: 853
 ingredients:
@@ -40,7 +40,7 @@ ingredients:
     item: salt
   - amount: 2
     unit: tbsp
-    item: win
+    item: butter
 source_language: fi
 source_recipe: reseptit/paaruoat/keto-pinaattiletut.md
 translation_of: keto-pinaattiletut
@@ -48,16 +48,16 @@ translation_of: keto-pinaattiletut
 
 # Keto spinach pancakes
 
-Keto-spinach letutu is a familiar Finnish food as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+These low-carb spinach pancakes are cooked in a frying pan. The recipe makes three servings.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+Eggs, cream cheese and spinach make a savoury pancake batter. Serve the pancakes on their own or with a savoury filling.
 
 ## Preparation
 
-1. Puree the eggs, cream cheese, spinach, almond flour and salt until smooth.
-2. Fry small patties in butter on medium heat for 2-3 minutes on each side.
+1. Blend the eggs, cream cheese, spinach, almond flour and salt until smooth.
+2. Fry small pancakes in butter over medium heat for 2–3 minutes on each side.
 3. Serve as is or with a savory filling.
 
 ## Notes

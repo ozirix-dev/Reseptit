@@ -16,7 +16,7 @@ time_total_min: 45
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: paaruoat/kukkakaaligratiini-pekonilla.webp
   alt: Golden brown cheese-topped cauliflower gratin with bacon
@@ -31,7 +31,7 @@ ingredients:
     item: bacon
   - amount: 2
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 100
     unit: g
     item: grated cheese

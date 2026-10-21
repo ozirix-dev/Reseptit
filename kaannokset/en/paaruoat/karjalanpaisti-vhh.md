@@ -18,7 +18,7 @@ time_total_min: 210
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
   - Karelian roast
   - long stewing
 image:
@@ -29,14 +29,14 @@ image:
 ingredients:
   - amount: 400
     unit: g
-    item: beef patty
+    item: beef stewing meat
   - amount: 400
     unit: g
-    item: pork patty
+    item: pork stewing meat
   - amount: 1
     unit: ""
     item: onion
-    note: in blocks
+    note: cut into wedges
   - amount: 7
     unit: dl
     item: water
@@ -45,14 +45,14 @@ ingredients:
     item: salt
   - amount: 8
     unit: ""
-    item: whole allspice
+    item: whole allspice berries
   - amount: 2
     unit: ""
     item: bay leaves
   - amount: 700
     unit: g
     item: white cabbage
-    note: in addition
+    note: for serving
   - amount: 2
     unit: tbsp
     item: olive oil
@@ -72,17 +72,17 @@ Karelian roast slowly cooked in the oven is low in carbohydrates as such. Roaste
 
 ## Description
 
-The combination of beef and pork is stewed until soft with onion, allspice and bay leaf. The recipe does not use root vegetables to keep the supplement low-carb.
+Beef and pork are slowly braised with onion, allspice and bay leaf until tender. Roasted cabbage makes a low-carb side in place of root vegetables.
 
 ## Preparation
 
-1. Heat the oven to 150 degrees. Put the meat and onion blocks in the oven pot with a lid.
+1. Heat the oven to 150°C. Put the meat and onion wedges in a lidded ovenproof casserole.
 2. Add water, salt, allspice and bay leaves. The liquid should reach almost to the level of the meat.
-3. Cook under the lid on the lower level of the oven for about 2.5-3 hours until the meats are soft. Check from time to time that there is enough liquid in the pan.
-4. Cut the cabbage into blocks and place on baking paper. Brush with oil and season with pepper. Roast at 225 degrees for 20-25 minutes, until the edges take on color.
+3. Cook, covered, on the lower oven rack for about 2.5–3 hours, until the meat is tender. Check occasionally that there is enough liquid in the casserole.
+4. Cut the cabbage into wedges and place on a lined baking tray. Brush with oil and season with pepper. Roast at 225°C for 20–25 minutes, until the edges are browned.
 5. Serve Karelian roast with roasted cabbage.
 
 ## Notes
 
-- In the traditional way, you can add carrots to the stew, but it increases the portion of carbohydrates.
+- Carrot can be added to the stew in the traditional way, but it increases the carbohydrate content per serving.
 - The length of the stewing time depends on the size of the pieces of meat.

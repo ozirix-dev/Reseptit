@@ -13,7 +13,7 @@ cooking_method:
   - uuni
 difficulty: lätt
 tags:
-  - wow
+  - lågkolhydrat
   - bakad lax
   - gräddfil
   - fiskmat
@@ -50,7 +50,7 @@ ingredients:
     note: efter smak
   - amount: null
     unit: ""
-    item: vinst
+    item: smör
     note: för att smörja pannan
 status: published
 source_language: fi

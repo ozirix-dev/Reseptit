@@ -16,7 +16,7 @@ time_total_min: 75
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: paaruoat/kesakurpitsalasagne-vhh.webp
   alt: En bit zucchinilasagne toppad med tomat och ost
@@ -34,7 +34,7 @@ ingredients:
     item: krossade tomater
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 150
     unit: g
     item: riven ost

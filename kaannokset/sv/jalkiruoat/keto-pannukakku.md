@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: jalkiruoat/keto-pannukakku.webp
   alt: En pannkakabit med blåbär, hallon och vispgrädde
@@ -28,7 +28,7 @@ ingredients:
     item: ägg
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 100
     unit: g
     item: färskost
@@ -43,7 +43,7 @@ ingredients:
     item: salt
   - amount: 30
     unit: g
-    item: vinna
+    item: smör
 source_language: fi
 source_recipe: reseptit/jalkiruoat/keto-pannukakku.md
 translation_of: keto-pannukakku

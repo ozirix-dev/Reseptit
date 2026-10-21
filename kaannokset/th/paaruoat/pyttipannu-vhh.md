@@ -17,7 +17,7 @@ time_total_min: 30
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - VHH
+  - คาร์โบไฮเดรตต่ำ
   - หม้อกระทะ
   - ไส้กรอก
 image:
@@ -40,7 +40,7 @@ ingredients:
     item: หัวหอม
   - amount: 2
     unit: ช้อนโต๊ะ
-    item: ชนะ
+    item: เนย
     note: สำหรับทอด
   - amount: 4
     unit: ชิ้น

@@ -16,7 +16,7 @@ time_total_min: 60
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: paaruoat/munakoiso-jauhelihavuoka-vhh.webp
   alt: Aubergine och köttfärsgryta med ostgratäng i serveringsfat

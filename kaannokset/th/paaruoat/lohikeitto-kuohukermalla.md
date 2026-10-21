@@ -36,7 +36,7 @@ ingredients:
     item: แครอท
   - amount: null
     unit: ""
-    item: ชนะ
+    item: เนย
     note: สำหรับผัดตามชอบ
   - amount: 8
     unit: dl
@@ -53,7 +53,7 @@ ingredients:
     item: เนื้อปลาแซลมอน
   - amount: 2
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: null
     unit: ""
     item: เกลือ

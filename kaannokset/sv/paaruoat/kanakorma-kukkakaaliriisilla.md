@@ -16,7 +16,7 @@ time_total_min: 40
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: paaruoat/kanakorma-kukkakaaliriisilla.webp
   alt: Krämig kycklingkorma med blomkålsris och färsk koriander
@@ -28,7 +28,7 @@ ingredients:
     item: kycklingkotletter
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 150
     unit: g
     item: Turkisk yoghurt
@@ -40,7 +40,7 @@ ingredients:
     item: korma krydda
   - amount: 1
     unit: msk
-    item: vinna
+    item: smör
   - amount: 600
     unit: g
     item: blomkål

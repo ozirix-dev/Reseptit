@@ -17,7 +17,7 @@ time_total_min: 50
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
   - fyllda paprika
   - köttfärs
 image:

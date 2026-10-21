@@ -1,5 +1,5 @@
 ---
-title: Ground Meat and Cabbage Soup
+title: Ground Beef and Cabbage Soup
 recipe_id: jauheliha-kaalikeitto-vhh
 url_slug: jauheliha-kaalikeitto-vhh
 category: paaruoka
@@ -19,7 +19,7 @@ tags:
   - low carb
 image:
   src: paaruoat/jauheliha-kaalikeitto-vhh.webp
-  alt: A bowl of minced meat-cabbage soup showing strips of cabbage, minced meat
+  alt: A bowl of beef and cabbage soup showing cabbage strips and ground beef
     and marjoram
   width: 1280
   height: 853

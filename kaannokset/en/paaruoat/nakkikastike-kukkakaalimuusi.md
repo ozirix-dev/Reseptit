@@ -16,7 +16,7 @@ time_total_min: 30
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
   - jewelry
   - everyday food
 image:
@@ -33,7 +33,7 @@ ingredients:
     item: small onion
   - amount: 2
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 1
     unit: dl
     item: meat broth
@@ -48,7 +48,7 @@ ingredients:
     item: cauliflower
   - amount: 40
     unit: g
-    item: win
+    item: butter
   - amount: null
     unit: ""
     item: salt
@@ -69,7 +69,7 @@ The familiar everyday food is suitable for a low-carbohydrate diet when the sauc
 ## Preparation
 
 1. Chop the walnuts and chop the onion. Brown the sausage in a pan and add the onion until soft.
-2. Pour the meat broth and whipped cream into the pan. Mix in the mustard and black pepper. Simmer gently for 8-10 minutes until the sauce thickens a bit. Taste before adding salt.
+2. Pour the meat broth and whipping cream into the pan. Mix in the mustard and black pepper. Simmer gently for 8-10 minutes until the sauce thickens a bit. Taste before adding salt.
 3. Chop the cauliflower and cook in salted water until soft. Drain carefully and allow excess steam to evaporate.
 4. Puree the cauliflower with butter. Season with salt and serve with sausage sauce.
 

@@ -18,11 +18,11 @@ cooking_method:
 time_total_min: 40
 difficulty: ง่าย
 tags:
-  - ทุกวัน
+  - อาหารประจำวัน
   - ปราศจากกลูเตน
-  - อาหารเตาอบ
+  - อาหารอบ
   - ปลา
-  - ว้าว
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: paaruoat/kermainen-lohipata.webp
   alt: สตูว์ปลาแซลมอนครีมพร้อมชิ้นปลาแซลมอน ผักโขม และผักชีลาว
@@ -44,10 +44,10 @@ ingredients:
     item: ครีมชีส
   - amount: 2
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 1
     unit: ช้อนโต๊ะ
-    item: ชนะ
+    item: เนย
   - amount: 1
     unit: ช้อนชา
     item: น้ำมะนาว

@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: jalkiruoat/keto-pannukakku.webp
   alt: A piece of pancake with blueberries, raspberries and whipped cream
@@ -28,7 +28,7 @@ ingredients:
     item: eggs
   - amount: 2
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 100
     unit: g
     item: cream cheese
@@ -43,7 +43,7 @@ ingredients:
     item: salt
   - amount: 30
     unit: g
-    item: win
+    item: butter
 source_language: fi
 source_recipe: reseptit/jalkiruoat/keto-pannukakku.md
 translation_of: keto-pannukakku

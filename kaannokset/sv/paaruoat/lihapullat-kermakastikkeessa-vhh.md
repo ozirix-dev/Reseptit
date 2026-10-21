@@ -16,7 +16,7 @@ time_total_min: 45
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
   - köttbullar
   - gräddsås
 image:
@@ -33,7 +33,7 @@ ingredients:
     item: ägg
   - amount: 1
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
     note: med köttbullsdeg
   - amount: 2
     unit: msk
@@ -53,11 +53,11 @@ ingredients:
     item: kryddpeppar
   - amount: 2
     unit: msk
-    item: vinst
+    item: smör
     note: för stekning
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
     note: för sås
   - amount: 1
     unit: dl
@@ -68,7 +68,7 @@ ingredients:
     note: att fundera
   - amount: 40
     unit: g
-    item: vinst
+    item: smör
     note: att fundera
   - amount: 0.5
     unit: tsk

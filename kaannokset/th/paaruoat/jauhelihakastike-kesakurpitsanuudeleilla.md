@@ -16,7 +16,7 @@ time_total_min: 30
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - วฮ
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: paaruoat/jauhelihakastike-kesakurpitsanuudeleilla.webp
   alt: เนื้อสับและซอสครีมบนบะหมี่ซูกินี
@@ -25,7 +25,7 @@ image:
 ingredients:
   - amount: 500
     unit: g
-    item: เนื้อดิน
+    item: เนื้อวัวบด
   - amount: 2
     unit: ชิ้น
     item: บวบ
@@ -34,7 +34,7 @@ ingredients:
     item: หัวหอม
   - amount: 2
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 1
     unit: ช้อนโต๊ะ
     item: มะเขือเทศบด
@@ -46,7 +46,7 @@ ingredients:
     item: พริกไทยดำ
   - amount: 1
     unit: ช้อนโต๊ะ
-    item: ชนะ
+    item: เนย
 source_language: fi
 source_recipe: reseptit/paaruoat/jauhelihakastike-kesakurpitsanuudeleilla.md
 translation_of: jauhelihakastike-kesakurpitsanuudeleilla

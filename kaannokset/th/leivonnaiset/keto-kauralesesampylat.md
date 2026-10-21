@@ -18,10 +18,10 @@ cooking_method:
 time_total_min: 45
 difficulty: ง่าย
 tags:
-  - สนาม
-  - ว้าว
+  - คีโต
+  - คาร์โบไฮเดรตต่ำ
   - ข้าวโอ๊ต
-  - ม้วน
+  - ขนมปัง
   - การอบ
 image:
   src: leivonnaiset/keto-kauralesesampylat.webp
@@ -47,10 +47,10 @@ ingredients:
     item: ไซเลี่ยม
   - amount: 0.5
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 30
     unit: g
-    item: ชนะ
+    item: เนย
     note: ละลาย
   - amount: 2
     unit: ช้อนชา

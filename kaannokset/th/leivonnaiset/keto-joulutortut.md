@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - VHH
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: leivonnaiset/keto-joulutortut.webp
   alt: ทาร์ตคริสต์มาสสีน้ำตาลทองพร้อมแยมลูกพลัมตรงกลางจาน
@@ -28,7 +28,7 @@ ingredients:
     item: แป้งอัลมอนด์
   - amount: 100
     unit: g
-    item: ชนะ
+    item: เนย
   - amount: 100
     unit: g
     item: ครีมชีส

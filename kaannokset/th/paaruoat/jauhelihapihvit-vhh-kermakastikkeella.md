@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - วฮ
+  - คาร์โบไฮเดรตต่ำ
   - ไส้เนื้อบด
   - ซอสครีม
 image:
@@ -27,13 +27,13 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: เนื้อดิน
+    item: เนื้อวัวบด
   - amount: 1
     unit: ชิ้น
     item: ไข่
   - amount: 0.5
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 1
     unit: ชิ้น
     item: หัวหอมเล็ก
@@ -46,11 +46,11 @@ ingredients:
     item: พริกไทยดำ
   - amount: 1
     unit: ช้อนโต๊ะ
-    item: ชนะ
+    item: เนย
     note: สำหรับทอด
   - amount: 2
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
     note: สำหรับซอส
   - amount: 1
     unit: dl

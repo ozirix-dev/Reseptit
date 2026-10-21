@@ -79,7 +79,7 @@ Pehmeät, proteiinia sisältävät sämpylät yhdistävät raakileiden raejuusto
 
 ## Kuvaus
 
-Kauraleseitä käytetään maltillinen määrä maun vuoksi. Kaurahiutaleet, kaurajauho, grahamjauho ja makeutus jätetään pois, jotta hiilihydraattimäärä pysyy selvästi alkuperäisiä kaurasämpylöitä pienempänä.
+Kauraleseitä käytetään maltillisesti maun vuoksi. Kaurahiutaleet, kaurajauho, grahamjauho ja makeutus jätetään pois, jotta hiilihydraattimäärä pysyy selvästi alkuperäisiä kaurasämpylöitä pienempänä.
 
 ## Valmistus
 

@@ -16,7 +16,7 @@ time_total_min: 40
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: paaruoat/poronkaristys-kukkakaalimuusilla.webp
   alt: Renryck med blomkålspuré, lingon och haricots verts
@@ -31,7 +31,7 @@ ingredients:
     item: lök
   - amount: 2
     unit: msk
-    item: vinna
+    item: smör
   - amount: 1
     unit: dl
     item: vatten
@@ -46,7 +46,7 @@ ingredients:
     item: blomkål
   - amount: 1
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
 source_language: fi
 source_recipe: reseptit/paaruoat/poronkaristys-kukkakaalimuusilla.md
 translation_of: poronkaristys-kukkakaalimuusilla

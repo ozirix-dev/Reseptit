@@ -16,7 +16,7 @@ time_total_min: 40
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - วฮ
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: paaruoat/kanakorma-kukkakaaliriisilla.webp
   alt: คอร์มาไก่ครีมพร้อมข้าวดอกกะหล่ำและผักชีสด
@@ -28,7 +28,7 @@ ingredients:
     item: ไก่ชิ้น
   - amount: 2
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 150
     unit: g
     item: โยเกิร์ตตุรกี
@@ -40,7 +40,7 @@ ingredients:
     item: เครื่องเทศกอร์มา
   - amount: 1
     unit: ช้อนโต๊ะ
-    item: ชนะ
+    item: เนย
   - amount: 600
     unit: g
     item: ดอกกะหล่ำ

@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
   - lax soppa
   - blomkål
 image:
@@ -48,10 +48,10 @@ ingredients:
     note: enligt förpackningens dosering för 8 dl vatten
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: null
     unit: ""
-    item: vinst
+    item: smör
     note: för stuvning
   - amount: 8
     unit: st
