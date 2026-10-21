@@ -65,6 +65,28 @@ test("the ten additional Thai recipes are published in Finnish with their image 
   }
 });
 
+test("the twenty Indian recipes are published in Finnish with their image assets", async () => {
+  const expectedIds = [
+    "aloo-paratha", "amritsari-kala", "butter-chicken", "chettinad-kana", "chole-bhature",
+    "dal-makhani", "gulab-jamun", "hyderabadi-kanabiryani", "idli-sambar", "kerala-kalacurry",
+    "masala-dosa", "medu-vada", "palak-paneer", "paneer-tikka", "pani-puri", "pav-bhaji",
+    "rogan-josh", "samosa", "tandoorikana", "vada-pav",
+  ];
+  const recipes = siteContent.recipes.filter((recipe) => expectedIds.includes(recipe.recipeId));
+  assert.deepEqual(recipes.map((recipe) => recipe.recipeId).sort(), expectedIds);
+  assert.equal(recipes.length, 20);
+
+  const repoDir = path.resolve(import.meta.dirname, "../..");
+  for (const recipe of recipes) {
+    assert.equal(recipe.locale, "fi");
+    assert.ok(recipe.tags.includes("intialainen"), `${recipe.recipeId} has the Indian tag`);
+    assert.ok(recipe.image, `${recipe.recipeId} has a recipe image`);
+    const relativeImagePath = recipe.image.src.split("/kuvat/").at(-1);
+    assert.ok(relativeImagePath);
+    assert.ok((await readFile(path.join(repoDir, "kuvat", relativeImagePath))).byteLength > 0);
+  }
+});
+
 test("the high-protein macaroni bake has four aligned published language versions", () => {
   const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === "jauheliha-makaronilaatikko");
   assert.deepEqual(translations.map((recipe) => recipe.locale).sort(), ["en", "fi", "sv", "th"]);
