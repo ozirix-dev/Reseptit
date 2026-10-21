@@ -81,14 +81,14 @@ Paikalliset testit ennen pushia:
 - `npm audit --audit-level=low`: PASS, 0 haavoittuvuutta.
 - `git diff --check`: PASS, ei whitespace-virheitä.
 
-GitHub Actionsin ensimmäinen PR-ajo `39549006464` onnistui commitille `69968351beba291e00c08e9e277eb6b2f65b851a`. Sen jälkeen koodikatselmoinnin huomio lokalisoidusta not-found-metadatasta korjattiin. Korjauksen jälkeinen Actions-ajo odottaa pushia.
+GitHub Actionsin jälkitarkistus `39549489576` onnistui sisältö- ja kielikorjausten commitille `f99641155a856a767138f76a5997620fa72c2be3`: `npm ci`, unit-testit, käännösvalidointi, kuvatesti, build, staattinen testi ja selainkoe läpäisivät. Deploy-job ohitettiin, koska kyseessä on pull request. Koodikatselmoinnin P2-huomio lokalisoitujen not-found-sivujen metatiedoista korjattiin ja selainregressiotestit lisättiin.
 
 ## GitHub
 
 - Tuotantoa ei julkaista eikä PR:ää yhdistetä tässä työssä.
-- Sisältö- ja auditointimuutosten commit: `6002361`; ensimmäinen raporttipäivitys: `6996835`.
+- Sisältö- ja auditointimuutosten commit: `6002361`; PR:n sisältöpäivitys ja review-korjaus: `f996411`.
 - PR: https://github.com/ozirix-dev/Reseptit/pull/25
-- Viimeisimmän koodikatselmoinnin löytämä P2 korjattiin ja sille lisättiin testit. Korjauksen jälkeinen tarkistus käsitellään ennen työn valmistumista.
+- Automaattikatselmoinnin P2-korjaus sisältyy PR:ään; PR jätettiin yhdistämättä eikä tuotantoa julkaistu.
 
 ## Suositeltu tila
 
