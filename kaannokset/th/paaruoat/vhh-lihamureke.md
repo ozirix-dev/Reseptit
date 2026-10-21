@@ -15,7 +15,7 @@ time_total_min: 70
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - VHH
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: paaruoat/vhh-lihamureke.webp
   alt: มีทโลฟหั่นบาง ๆ กับกะหล่ำดอกน้ำซุปข้นและถั่วเขียว
@@ -24,7 +24,7 @@ image:
 ingredients:
   - amount: 800
     unit: g
-    item: เนื้อดิน
+    item: เนื้อวัวบด
   - amount: 200
     unit: g
     item: บวบ
@@ -33,7 +33,7 @@ ingredients:
     item: ไข่
   - amount: 1
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 1
     unit: ชิ้น
     item: หัวหอม

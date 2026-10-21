@@ -18,7 +18,7 @@ time_total_min: 210
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
   - Karelsk stek
   - lång stuvning
 image:
@@ -29,14 +29,14 @@ image:
 ingredients:
   - amount: 400
     unit: g
-    item: nötbiff
+    item: nötkött i grytbitar
   - amount: 400
     unit: g
-    item: fläskbiff
+    item: fläskkött i grytbitar
   - amount: 1
     unit: st
     item: lök
-    note: i block
+    note: skuren i klyftor
   - amount: 7
     unit: dl
     item: vatten
@@ -45,14 +45,14 @@ ingredients:
     item: salt
   - amount: 8
     unit: st
-    item: hel kryddpeppar
+    item: hela kryddpepparkorn
   - amount: 2
     unit: st
     item: lagerblad
   - amount: 700
     unit: g
     item: vitkål
-    note: dessutom
+    note: till servering
   - amount: 2
     unit: msk
     item: olivolja

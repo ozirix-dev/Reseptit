@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - VHH
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: jalkiruoat/keto-pannukakku.webp
   alt: แพนเค้กชิ้นหนึ่งพร้อมบลูเบอร์รี่ ราสเบอร์รี่ และวิปครีม
@@ -28,7 +28,7 @@ ingredients:
     item: ไข่
   - amount: 2
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 100
     unit: g
     item: ครีมชีส
@@ -43,7 +43,7 @@ ingredients:
     item: เกลือ
   - amount: 30
     unit: g
-    item: ชนะ
+    item: เนย
 source_language: fi
 source_recipe: reseptit/jalkiruoat/keto-pannukakku.md
 translation_of: keto-pannukakku

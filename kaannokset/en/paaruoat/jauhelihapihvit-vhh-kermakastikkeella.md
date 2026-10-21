@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
   - ground beef patties
   - cream sauce
 image:
@@ -34,7 +34,7 @@ ingredients:
     item: egg
   - amount: 0.5
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 1
     unit: ""
     item: small onion
@@ -47,11 +47,11 @@ ingredients:
     item: black pepper
   - amount: 1
     unit: tbsp
-    item: win
+    item: butter
     note: for frying
   - amount: 2
     unit: dl
-    item: whipped cream
+    item: whipping cream
     note: for sauce
   - amount: 1
     unit: dl

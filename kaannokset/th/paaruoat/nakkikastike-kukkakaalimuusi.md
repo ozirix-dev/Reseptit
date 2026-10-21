@@ -16,7 +16,7 @@ time_total_min: 30
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - วฮ
+  - คาร์โบไฮเดรตต่ำ
   - เครื่องประดับ
   - อาหารทุกวัน
 image:
@@ -33,7 +33,7 @@ ingredients:
     item: หัวหอมเล็ก
   - amount: 2
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 1
     unit: dl
     item: น้ำซุปเนื้อ
@@ -48,7 +48,7 @@ ingredients:
     item: ดอกกะหล่ำ
   - amount: 40
     unit: g
-    item: ชนะ
+    item: เนย
   - amount: null
     unit: ""
     item: เกลือ

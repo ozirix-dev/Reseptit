@@ -15,10 +15,10 @@ time_total_min: 55
 difficulty: lätt
 tags:
   - omelett
-  - ugnsmat
+  - ugnsrätt
   - keso
-  - daglig-
-  - VHH
+  - vardag
+  - lågkolhydrat
 image:
   src: paaruoat/raejuusto-uunimunakas.webp
   alt: Mjukstekt kesougnsomelett med färsk gräslök på toppen
@@ -43,7 +43,7 @@ ingredients:
     note: en nypa
   - amount: null
     unit: ""
-    item: vinst
+    item: smör
     note: för att smörja pannan
   - amount: null
     unit: ""

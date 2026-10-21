@@ -28,7 +28,7 @@ ingredients:
     item: mandelmjöl
   - amount: 75
     unit: g
-    item: vinna
+    item: smör
   - amount: 1
     unit: st
     item: ägg
@@ -40,7 +40,7 @@ ingredients:
     item: ägg
   - amount: 1
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 2
     unit: msk
     item: erytritol

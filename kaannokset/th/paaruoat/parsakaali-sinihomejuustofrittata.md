@@ -14,7 +14,7 @@ cooking_method:
   - uuni
 difficulty: ง่าย
 tags:
-  - ว้าว
+  - คาร์โบไฮเดรตต่ำ
   - ฟริตทาทา
   - บรอกโคลี
   - บลูชีส
@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 1
     unit: ช้อนโต๊ะ
-    item: ชนะ
+    item: เนย
     note: สำหรับทอด
   - amount: 0.5
     unit: ชิ้น
@@ -41,7 +41,7 @@ ingredients:
     item: ไข่
   - amount: 1.5
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 100
     unit: g
     item: บลูชีส

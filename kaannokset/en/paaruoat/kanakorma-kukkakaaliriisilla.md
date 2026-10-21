@@ -16,7 +16,7 @@ time_total_min: 40
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: paaruoat/kanakorma-kukkakaaliriisilla.webp
   alt: Creamy chicken korma with cauliflower rice and fresh coriander
@@ -28,7 +28,7 @@ ingredients:
     item: chicken cutlets
   - amount: 2
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 150
     unit: g
     item: turkkilaista jogurttia
@@ -40,7 +40,7 @@ ingredients:
     item: korma spice
   - amount: 1
     unit: tbsp
-    item: win
+    item: butter
   - amount: 600
     unit: g
     item: cauliflower

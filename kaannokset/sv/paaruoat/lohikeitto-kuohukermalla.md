@@ -36,7 +36,7 @@ ingredients:
     item: morot
   - amount: null
     unit: ""
-    item: vinst
+    item: smör
     note: för stekning efter din smak
   - amount: 8
     unit: dl
@@ -53,7 +53,7 @@ ingredients:
     item: laxfilé
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: null
     unit: ""
     item: salt
@@ -70,7 +70,7 @@ translation_of: lohikeitto-kuohukermalla
 
 # Krämig laxsoppa med vispgrädde
 
-En rejäl laxsoppa görs på potatis, grönsaker och lax. Vispad grädde och färsk dill kompletterar den mjuka buljongen.
+En rejäl laxsoppa görs på potatis, grönsaker och lax. Vispgrädde och färsk dill kompletterar den milda buljongen.
 
 ## Beskrivning
 
@@ -82,10 +82,10 @@ Hemmasoppa med traditionell smak, där fiskfond ger djup åt buljongen och kan m
 2. Smält smöret i en kastrull efter smak. Fräs löken och purjolöken i några minuter tills de mjuknar men inte får färg.
 3. Tillsätt vatten, fiskfond enligt förpackningsdosering och hela svartpepparkorn i grytan. Tillsätt potatis och morot. Koka försiktigt tills grönsakerna nästan är kokta.
 4. Ta bort skinn och ben från laxen. Skär fisken i stora tärningar och lägg i grytan.
-5. Häll i den vispade grädden. Sjud på svag värme i några minuter tills laxen är genomstekt. Undvik kraftig kokning.
+5. Häll i vispgrädden. Sjud på svag värme i några minuter tills laxen är genomstekt. Undvik kraftig kokning.
 6. Smaka av buljongen och salt vid behov. Rör ner den hackade dillen och servera varm.
 
 ## Anteckningar
 
-– Sältan och styrkan hos fiskfondue varierar. Följ doseringen på förpackningen och kontrollera smaken innan du tillsätter salt.
+– Fiskfond varierar i styrka och sälta. Följ doseringen på förpackningen och smaka av innan du tillsätter salt.
 – Rågbröd passar att servera till soppa.

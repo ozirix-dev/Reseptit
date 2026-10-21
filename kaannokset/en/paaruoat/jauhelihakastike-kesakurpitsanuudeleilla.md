@@ -1,5 +1,5 @@
 ---
-title: Ground Meat Sauce with Courgette Noodles
+title: Ground Beef Sauce with Courgette Noodles
 recipe_id: jauhelihakastike-kesakurpitsanuudeleilla
 url_slug: jauhelihakastike-kesakurpitsanuudeleilla
 category: paaruoka
@@ -16,7 +16,7 @@ time_total_min: 30
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: paaruoat/jauhelihakastike-kesakurpitsanuudeleilla.webp
   alt: Minced meat and cream sauce on top of zucchini noodles
@@ -34,7 +34,7 @@ ingredients:
     item: onion
   - amount: 2
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 1
     unit: tbsp
     item: tomato puree
@@ -46,7 +46,7 @@ ingredients:
     item: black pepper
   - amount: 1
     unit: tbsp
-    item: win
+    item: butter
 source_language: fi
 source_recipe: reseptit/paaruoat/jauhelihakastike-kesakurpitsanuudeleilla.md
 translation_of: jauhelihakastike-kesakurpitsanuudeleilla

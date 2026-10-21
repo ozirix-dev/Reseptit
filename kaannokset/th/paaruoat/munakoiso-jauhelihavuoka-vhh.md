@@ -16,7 +16,7 @@ time_total_min: 60
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - วฮ
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: paaruoat/munakoiso-jauhelihavuoka-vhh.webp
   alt: หม้อปรุงอาหารมะเขือและเนื้อสับพร้อมกราแตงชีสในจานเสิร์ฟ
@@ -28,7 +28,7 @@ ingredients:
     item: มะเขือยาว
   - amount: 500
     unit: g
-    item: เนื้อดิน
+    item: เนื้อวัวบด
   - amount: 400
     unit: g
     item: มะเขือเทศบด

@@ -16,7 +16,7 @@ time_total_min: 100
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: paaruoat/vhh-kaalikaarryleet.webp
   alt: Golden brown cabbage rolls with cauliflower puree and lingonberries
@@ -40,7 +40,7 @@ ingredients:
     item: egg
   - amount: 1
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 1
     unit: tsp
     item: salt
@@ -49,7 +49,7 @@ ingredients:
     item: black pepper
   - amount: 2
     unit: tbsp
-    item: win
+    item: butter
 source_language: fi
 source_recipe: reseptit/paaruoat/vhh-kaalikaarryleet.md
 translation_of: vhh-kaalikaarryleet

@@ -16,7 +16,7 @@ time_total_min: 100
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: paaruoat/vhh-kaalikaarryleet.webp
   alt: Gyllene kålrullar med blomkålspuré och lingon
@@ -40,7 +40,7 @@ ingredients:
     item: ägg
   - amount: 1
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 1
     unit: tsk
     item: salt
@@ -49,7 +49,7 @@ ingredients:
     item: svartpeppar
   - amount: 2
     unit: msk
-    item: vinna
+    item: smör
 source_language: fi
 source_recipe: reseptit/paaruoat/vhh-kaalikaarryleet.md
 translation_of: vhh-kaalikaarryleet

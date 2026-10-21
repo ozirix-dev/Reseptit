@@ -15,7 +15,7 @@ time_total_min: 70
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: paaruoat/vhh-lihamureke.webp
   alt: Skivad köttfärslimpa med blomkålspuré och gröna bönor
@@ -33,7 +33,7 @@ ingredients:
     item: ägg
   - amount: 1
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 1
     unit: st
     item: lök

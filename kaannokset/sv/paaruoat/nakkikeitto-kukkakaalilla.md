@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
   - soppa
   - smycke
 image:

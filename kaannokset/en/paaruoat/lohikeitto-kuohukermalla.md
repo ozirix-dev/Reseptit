@@ -1,5 +1,5 @@
 ---
-title: Creamy Salmon Soup with Double Cream
+title: Creamy Salmon Soup with Whipping Cream
 recipe_id: lohikeitto-kuohukermalla
 url_slug: lohikeitto-kuohukermalla
 category: paaruoka
@@ -18,7 +18,7 @@ tags:
   - whipping cream
 image:
   src: paaruoat/lohikeitto-kuohukermalla.webp
-  alt: Creamy salmon soup with whipped cream, potato, carrot, leek and fresh dill
+  alt: Creamy salmon soup with potato, carrot, leek and fresh dill
   width: 1280
   height: 853
 ingredients:
@@ -36,7 +36,7 @@ ingredients:
     item: carrot
   - amount: null
     unit: ""
-    item: win
+    item: butter
     note: for sauteing to your taste
   - amount: 8
     unit: dl
@@ -53,7 +53,7 @@ ingredients:
     item: salmon fillet
   - amount: 2
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: null
     unit: ""
     item: salt
@@ -68,9 +68,9 @@ source_recipe: reseptit/paaruoat/lohikeitto-kuohukermalla.md
 translation_of: lohikeitto-kuohukermalla
 ---
 
-# Creamy salmon soup with whipped cream
+# Creamy salmon soup with whipping cream
 
-A hearty salmon soup is made from potatoes, vegetables and salmon. Whipped cream and fresh dill complete the soft broth.
+A hearty salmon soup is made from potatoes, vegetables and salmon. Whipping cream and fresh dill complete the soft broth.
 
 ## Description
 
@@ -82,10 +82,10 @@ Home soup with a traditional taste, where fish stock gives depth to the broth an
 2. Melt the butter in a saucepan according to your taste. Saute the onion and leek for a few minutes until they soften but do not brown.
 3. Add water, fish stock according to package dosage and whole black peppercorns to the pot. Add potatoes and carrot. Cook gently until the vegetables are almost cooked.
 4. Remove the skin and bones from the salmon. Cut the fish into large cubes and add to the pot.
-5. Pour in the whipped cream. Simmer on low heat for a few minutes until the salmon is cooked. Avoid vigorous boiling.
+5. Pour in the whipping cream. Simmer on low heat for a few minutes until the salmon is cooked. Avoid vigorous boiling.
 6. Taste the broth and add salt if necessary. Stir in the chopped dill and serve hot.
 
 ## Notes
 
-- The saltiness and strength of fish fondues vary. Follow the dosage on the package and check the taste before adding salt.
+- Fish stock concentrate varies in strength and saltiness. Follow the package directions and taste before adding salt.
 - Rye bread is suitable for serving with soup.

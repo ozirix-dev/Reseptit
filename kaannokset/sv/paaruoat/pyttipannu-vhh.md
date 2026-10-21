@@ -17,7 +17,7 @@ time_total_min: 30
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
   - kastrull
   - korv
 image:
@@ -40,7 +40,7 @@ ingredients:
     item: lök
   - amount: 2
     unit: msk
-    item: vinst
+    item: smör
     note: för stekning
   - amount: 4
     unit: st

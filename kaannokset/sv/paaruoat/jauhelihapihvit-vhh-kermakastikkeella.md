@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
   - nötfärsbiffar
   - gräddsås
 image:
@@ -33,7 +33,7 @@ ingredients:
     item: ägg
   - amount: 0.5
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 1
     unit: st
     item: liten lök
@@ -46,11 +46,11 @@ ingredients:
     item: svartpeppar
   - amount: 1
     unit: msk
-    item: vinst
+    item: smör
     note: för stekning
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
     note: för sås
   - amount: 1
     unit: dl

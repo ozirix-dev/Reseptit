@@ -15,10 +15,10 @@ time_total_min: 55
 difficulty: easy
 tags:
   - omelette
-  - oven food
+  - oven dish
   - cottage cheese
   - everyday
-  - VHH
+  - low carb
 image:
   src: paaruoat/raejuusto-uunimunakas.webp
   alt: Softly fried cottage cheese oven omelet with fresh chives on top
@@ -43,7 +43,7 @@ ingredients:
     note: a pinch
   - amount: null
     unit: ""
-    item: win
+    item: butter
     note: for greasing the pan
   - amount: null
     unit: ""

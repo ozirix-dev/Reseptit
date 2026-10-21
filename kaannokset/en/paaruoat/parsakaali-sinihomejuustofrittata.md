@@ -14,7 +14,7 @@ cooking_method:
   - uuni
 difficulty: easy
 tags:
-  - wow
+  - low carb
   - frittata
   - broccoli
   - blue cheese
@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 1
     unit: tbsp
-    item: win
+    item: butter
     note: for frying
   - amount: 0.5
     unit: ""
@@ -41,7 +41,7 @@ ingredients:
     item: eggs
   - amount: 1.5
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 100
     unit: g
     item: blue cheese
@@ -72,7 +72,7 @@ Frittata is suitable for lunch or a light dinner. It can be baked in a round ove
 
 1. Heat the oven to 200 degrees. Grease a 20 x 25 cm baking dish or use an ovenproof frying pan.
 2. Melt the butter in a pan. Sauté the onion for a while and add the broccoli buds. Stir-fry for about 3 minutes until the broccoli takes on a little color.
-3. Transfer the vegetables to the pan. Beat the eggs until the texture is slightly broken and mix in the whipped cream, crumbled cheese and black pepper. Taste before adding salt.
+3. Transfer the vegetables to the pan. Beat the eggs until the texture is slightly broken and mix in the whipping cream, crumbled cheese and black pepper. Taste before adding salt.
 4. Pour the egg mixture over the broccoli. Bake for about 20-25 minutes until the center is set and the surface is golden brown.
 5. Let the frittata set for a few minutes before cutting. Serve as is or with a green salad.
 

@@ -18,10 +18,10 @@ cooking_method:
 time_total_min: 45
 difficulty: easy
 tags:
-  - field
-  - wow
+  - keto
+  - low carb
   - oats
-  - roll
+  - rolls
   - baking
 image:
   src: leivonnaiset/keto-kauralesesampylat.webp
@@ -47,10 +47,10 @@ ingredients:
     item: psyllium
   - amount: 0.5
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 30
     unit: g
-    item: win
+    item: butter
     note: melted
   - amount: 2
     unit: tsp

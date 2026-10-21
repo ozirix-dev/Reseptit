@@ -16,7 +16,7 @@ time_total_min: 55
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: leivonnaiset/vhh-lihapiirakka.webp
   alt: Half a meat pie showing a juicy minced meat filling and a golden brown crust

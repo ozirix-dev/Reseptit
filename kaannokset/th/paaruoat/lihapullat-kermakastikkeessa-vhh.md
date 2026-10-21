@@ -16,7 +16,7 @@ time_total_min: 45
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - วฮ
+  - คาร์โบไฮเดรตต่ำ
   - ลูกชิ้น
   - ซอสครีม
 image:
@@ -27,13 +27,13 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: เนื้อดิน
+    item: เนื้อวัวบด
   - amount: 1
     unit: ชิ้น
     item: ไข่
   - amount: 1
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
     note: พร้อมแป้งลูกชิ้น
   - amount: 2
     unit: ช้อนโต๊ะ
@@ -53,11 +53,11 @@ ingredients:
     item: ออลสไปซ์
   - amount: 2
     unit: ช้อนโต๊ะ
-    item: ชนะ
+    item: เนย
     note: สำหรับทอด
   - amount: 2
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
     note: สำหรับซอส
   - amount: 1
     unit: dl
@@ -68,7 +68,7 @@ ingredients:
     note: รำพึง
   - amount: 40
     unit: g
-    item: ชนะ
+    item: เนย
     note: รำพึง
   - amount: 0.5
     unit: ช้อนชา

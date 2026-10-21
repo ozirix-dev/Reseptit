@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
   - salmon soup
   - cauliflower
 image:
@@ -44,14 +44,14 @@ ingredients:
     item: water
   - amount: null
     unit: ""
-    item: fish fondue
+    item: fish stock concentrate
     note: according to the package dosage for 8 dl of water
   - amount: 2
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: null
     unit: ""
-    item: win
+    item: butter
     note: for stewing
   - amount: 8
     unit: ""
@@ -71,11 +71,11 @@ translation_of: vhh-lohikeitto-kukkakaalilla
 
 # Creamy VHH salmon soup with cauliflower
 
-In this low-carb version of Finnish creamy salmon soup, potato is replaced with cauliflower. Fish fondue, whipped cream and dill keep the taste familiar full.
+In this low-carb version of Finnish creamy salmon soup, potato is replaced with cauliflower. Fish stock concentrate, whipping cream and dill keep the flavour rich and familiar.
 
 ## Description
 
-The broth is seasoned according to the dosage instructions for the rice stock on the package. Cauliflower cooks quickly and maintains a nice texture in the soup, when you add it only after the broth has boiled.
+Season the broth according to the fish stock concentrate's package directions. Cauliflower cooks quickly and keeps a pleasant texture when added after the broth has come to a boil.
 
 ## Preparation
 
@@ -83,10 +83,10 @@ The broth is seasoned according to the dosage instructions for the rice stock on
 2. Heat the butter in a pot according to your taste. Sauté the onion and leek for a few minutes until soft.
 3. Add water, fish stock and whole black peppercorns. Bring to a boil.
 4. Add the cauliflower and cook slowly for about 6-8 minutes until just tender.
-5. Cut the salmon into large cubes and add to the pot. Pour in the whipped cream and simmer on low heat for a few minutes until the salmon is cooked.
+5. Cut the salmon into large cubes and add to the pot. Pour in the whipping cream and simmer on low heat for a few minutes until the salmon is cooked.
 6. Taste and add salt if necessary. Stir in the chopped dill and serve immediately.
 
 ## Notes
 
 - Do not boil the soup vigorously after adding the salmon to keep the fish juicy.
-- The strength and saltiness of fish fondues vary. Check the taste before adding salt.
+- Fish stock concentrate varies in strength and saltiness. Check the taste before adding salt.

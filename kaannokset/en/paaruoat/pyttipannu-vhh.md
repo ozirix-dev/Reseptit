@@ -17,7 +17,7 @@ time_total_min: 30
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
   - pot pan
   - sausage
 image:
@@ -40,7 +40,7 @@ ingredients:
     item: onion
   - amount: 2
     unit: tbsp
-    item: win
+    item: butter
     note: for frying
   - amount: 4
     unit: ""

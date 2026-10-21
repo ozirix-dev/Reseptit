@@ -16,7 +16,7 @@ time_total_min: 30
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
   - smycke
   - vardagsmat
 image:
@@ -33,7 +33,7 @@ ingredients:
     item: liten lök
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 1
     unit: dl
     item: köttbuljong
@@ -48,7 +48,7 @@ ingredients:
     item: blomkål
   - amount: 40
     unit: g
-    item: vinna
+    item: smör
   - amount: null
     unit: ""
     item: salt

@@ -17,12 +17,12 @@ time_total_min: 110
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
-  - oven food
+  - low carb
+  - oven dish
   - cabbage
 image:
   src: paaruoat/kaalilaatikko-vhh.webp
-  alt: VHH cabbage box with stewed cabbage and minced meat, served with lingonberry
+  alt: Finnish low-carb cabbage casserole with cabbage and minced beef, served with lingonberries
   width: 1280
   height: 853
 ingredients:
@@ -38,7 +38,7 @@ ingredients:
     item: onion
   - amount: 2
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 2
     unit: ""
     item: eggs
@@ -47,7 +47,7 @@ ingredients:
     item: meat broth
   - amount: 1
     unit: tbsp
-    item: win
+    item: butter
   - amount: 1
     unit: tsp
     item: salt
@@ -62,13 +62,13 @@ source_recipe: reseptit/paaruoat/kaalilaatikko.md
 translation_of: vhh-kaalilaatikko
 ---
 
-# VHH cabbage box without rice
+# Low-Carb Finnish Cabbage Casserole without Rice
 
-The familiar flavors of the traditional cabbage box are created from stewed cabbage, minced meat and a juicy creamed egg mixture without rice or syrup.
+This Finnish-style cabbage casserole combines softened cabbage, minced beef and a creamy egg mixture, without rice or syrup.
 
 ## Description
 
-In this everyday oven dish, the cabbage is allowed to soften before frying. Minced meat and marjoram bring a familiar taste, and the cream that coagulates lightly with the egg binds the dish without grains.
+For this everyday oven dish, the cabbage is softened before baking. Minced beef and marjoram add savoury flavour, while the egg helps the cream set and bind the casserole.
 
 ## Preparation
 
@@ -76,7 +76,7 @@ In this everyday oven dish, the cabbage is allowed to soften before frying. Minc
 2. Melt the butter in a large saucepan. Add cabbage and broth. Simmer under the lid for about 20 minutes, stirring occasionally, until the cabbage softens.
 3. Brown the minced meat in a pan. Add the onion and fry for a few minutes. Season with salt, black pepper and marjoram.
 4. Mix the cream and eggs in a bowl. Combine the cabbage mixture and minced meat in a baking dish and pour the cream mixture on top.
-5. Bake on a medium level for about 60-70 minutes, until the surface has acquired color and the pan has congealed. If the surface darkens too much, cover lightly with foil.
+5. Bake on the middle oven rack for about 60–70 minutes, until the top is golden and the casserole has set. If it browns too quickly, cover loosely with foil.
 6. Let it rest for 10 minutes before serving.
 
 ## Notes

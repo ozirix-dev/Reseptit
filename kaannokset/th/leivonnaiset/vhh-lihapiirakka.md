@@ -16,7 +16,7 @@ time_total_min: 55
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - VHH
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: leivonnaiset/vhh-lihapiirakka.webp
   alt: พายเนื้อครึ่งชิ้นเผยให้เห็นไส้เนื้อสับชุ่มฉ่ำและเปลือกสีน้ำตาลทอง
@@ -37,7 +37,7 @@ ingredients:
     item: ไข่
   - amount: 300
     unit: g
-    item: เนื้อดิน
+    item: เนื้อวัวบด
   - amount: 1
     unit: ชิ้น
     item: หัวหอม

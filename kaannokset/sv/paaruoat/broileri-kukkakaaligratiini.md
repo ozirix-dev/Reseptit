@@ -16,7 +16,7 @@ time_total_min: 45
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: paaruoat/broileri-kukkakaaligratiini.webp
   alt: Broiler och blomkål i krämig ostglaserad gratäng
@@ -31,7 +31,7 @@ ingredients:
     item: blomkål
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 150
     unit: g
     item: riven ost

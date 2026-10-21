@@ -15,7 +15,7 @@ time_total_min: 90
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: paaruoat/uuniporsas-kermakastikkeessa-vhh.webp
   alt: Skivad stekt fläsk med krämig sås, blomkålsröra och haricots verts
@@ -27,7 +27,7 @@ ingredients:
     item: fläsk kassler
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 2
     unit: dl
     item: vatten
@@ -45,7 +45,7 @@ ingredients:
     item: timjan
   - amount: 1
     unit: msk
-    item: vinna
+    item: smör
 source_language: fi
 source_recipe: reseptit/paaruoat/uuniporsas-kermakastikkeessa-vhh.md
 translation_of: uuniporsas-kermakastikkeessa-vhh

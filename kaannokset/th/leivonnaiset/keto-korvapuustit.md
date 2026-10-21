@@ -16,7 +16,7 @@ time_total_min: 40
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - VHH
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: leivonnaiset/keto-korvapuustit.webp
   alt: หูที่ปรุงด้วยอบเชยและสารให้ความหวานปราศจากน้ำตาลบนจาน
@@ -43,7 +43,7 @@ ingredients:
     item: อบเชย
   - amount: 30
     unit: g
-    item: ชนะ
+    item: เนย
 source_language: fi
 source_recipe: reseptit/leivonnaiset/keto-korvapuustit.md
 translation_of: keto-korvapuustit

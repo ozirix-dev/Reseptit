@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - VHH
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: leivonnaiset/vhh-runebergintortut.webp
   alt: ทาร์ต Runeberg ชิ้นเล็กราดด้วยแยมราสเบอร์รี่และไอซิ่งไร้น้ำตาลสีขาว
@@ -28,7 +28,7 @@ ingredients:
     item: แป้งอัลมอนด์
   - amount: 50
     unit: g
-    item: ชนะ
+    item: เนย
   - amount: 2
     unit: ชิ้น
     item: ไข่

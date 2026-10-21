@@ -18,10 +18,10 @@ cooking_method:
 time_total_min: 45
 difficulty: lätt
 tags:
-  - fält
-  - wow
+  - keto
+  - lågkolhydrat
   - havre
-  - rulla
+  - frallor
   - bakning
 image:
   src: leivonnaiset/keto-kauralesesampylat.webp
@@ -47,10 +47,10 @@ ingredients:
     item: psyllium
   - amount: 0.5
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 30
     unit: g
-    item: vinst
+    item: smör
     note: smält
   - amount: 2
     unit: tsk

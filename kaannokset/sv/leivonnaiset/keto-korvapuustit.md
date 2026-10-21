@@ -16,7 +16,7 @@ time_total_min: 40
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: leivonnaiset/keto-korvapuustit.webp
   alt: Öronproppar smaksatta med kanel och sockerfritt sötningsmedel på ett fat
@@ -43,7 +43,7 @@ ingredients:
     item: kanel
   - amount: 30
     unit: g
-    item: vinna
+    item: smör
 source_language: fi
 source_recipe: reseptit/leivonnaiset/keto-korvapuustit.md
 translation_of: keto-korvapuustit

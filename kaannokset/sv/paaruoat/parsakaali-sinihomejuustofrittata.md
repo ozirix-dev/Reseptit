@@ -14,7 +14,7 @@ cooking_method:
   - uuni
 difficulty: lätt
 tags:
-  - wow
+  - lågkolhydrat
   - frittata
   - broccoli
   - ädelost
@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 1
     unit: msk
-    item: vinst
+    item: smör
     note: för stekning
   - amount: 0.5
     unit: st
@@ -41,7 +41,7 @@ ingredients:
     item: ägg
   - amount: 1.5
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 100
     unit: g
     item: ädelost
@@ -72,7 +72,7 @@ Frittata passar till lunch eller en lätt middag. Den kan bakas i en rund ugnss�
 
 1. Värm ugnen till 200 grader. Smörj en ugnsform på 20 x 25 cm eller använd en ugnssäker långpanna.
 2. Smält smöret i en kastrull. Fräs löken en stund och tillsätt broccolibopparna. Fräs ca 3 minuter tills broccolin tar lite färg.
-3. Överför grönsakerna till pannan. Vispa äggen tills konsistensen är något bruten och blanda i vispad grädde, smulad ost och svartpeppar. Smaka av innan du tillsätter salt.
+3. Överför grönsakerna till pannan. Vispa äggen lätt och blanda i vispgrädde, smulad ost och svartpeppar. Smaka av innan du tillsätter salt.
 4. Häll äggblandningen över broccolin. Grädda i ca 20-25 minuter tills mitten stelnat och ytan är gyllenbrun.
 5. Låt frittatan stelna några minuter innan den skärs upp. Servera som den är eller med en grönsallad.
 

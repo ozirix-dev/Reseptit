@@ -16,7 +16,7 @@ time_total_min: 40
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: paaruoat/poronkaristys-kukkakaalimuusilla.webp
   alt: Reindeer jerky with cauliflower puree, lingonberries and green beans
@@ -31,7 +31,7 @@ ingredients:
     item: onion
   - amount: 2
     unit: tbsp
-    item: win
+    item: butter
   - amount: 1
     unit: dl
     item: water
@@ -46,7 +46,7 @@ ingredients:
     item: cauliflower
   - amount: 1
     unit: dl
-    item: whipped cream
+    item: whipping cream
 source_language: fi
 source_recipe: reseptit/paaruoat/poronkaristys-kukkakaalimuusilla.md
 translation_of: poronkaristys-kukkakaalimuusilla

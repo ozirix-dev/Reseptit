@@ -1,5 +1,5 @@
 ---
-title: Italian-Style Ground Meat and Courgette Bake
+title: Italian-Style Minced Beef and Courgette Bake
 recipe_id: italian-pata
 url_slug: italian-pata
 category: paaruoka
@@ -12,7 +12,7 @@ cooking_method:
   - uuni
 difficulty: easy
 tags:
-  - oven food
+  - oven dish
   - minced meat
   - zucchini
 carbs_total_per_serving_g: 7.5
@@ -26,10 +26,10 @@ image:
 ingredients:
   - amount: 500
     unit: g
-    item: fatty minced meat
+    item: minced beef with a higher fat content
   - amount: 200
     unit: g
-    item: tomato sauce or tomato paste
+    item: tomato sauce or chopped tomatoes
     note: about 1.5 dl
   - amount: 2
     unit: tsp
@@ -42,14 +42,14 @@ ingredients:
     item: black pepper
   - amount: null
     unit: ""
-    item: garlic clove
-    note: 1-2 cloves
+    item: garlic
+    note: 1–2 cloves
   - amount: 400
     unit: g
     item: zucchini
   - amount: 1
     unit: ""
-    item: bell peppers
+    item: pointed red pepper
     note: about 90 g
   - amount: 150
     unit: g
@@ -65,22 +65,22 @@ source_recipe: reseptit/paaruoat/italian-pata.md
 translation_of: italian-pata
 ---
 
-# Italian-Style Ground Meat and Courgette Bake
+# Italian-Style Minced Beef and Courgette Bake
 
-This tomato-based courgette and minced meat bake is topped with plenty of melted cheese. Serve with a salad.
+This tomatoey bake combines minced beef, courgette and pointed pepper under a golden layer of melted cheese. Serve with salad.
 
 ## Description
 
-Seasoned minced meat, courgette, pointed pepper and mozzarella bake together in the oven. Finish with a drizzle of olive oil.
+Seasoned minced beef, courgette, pointed pepper and mozzarella are baked together until bubbling. Finish each serving with a drizzle of olive oil.
 
 ## Preparation
 
 1. Preheat the oven to 225°C.
 2. Brown the minced meat in a frying pan. Add the crushed garlic, oregano, salt and black pepper.
-3. Stir in the tomato sauce or chopped tomatoes and simmer briefly to reduce.
-4. Rinse and coarsely grate the courgette. Spread it in a large baking dish.
+3. Stir in the tomato sauce or chopped tomatoes and let the sauce simmer briefly.
+4. Rinse and coarsely grate the courgette. Spread the grated courgette in a large baking dish.
 5. Dice the pointed pepper and add it to the dish.
-6. Taste the sauce and add salt if needed. Pour in the meat and tomato sauce and mix well.
+6. Taste the sauce and add salt if needed. Pour the minced beef and tomato mixture over the vegetables and mix well.
 7. Stir in most of the grated cheese, reserving a little for the top.
 8. Bake at 225°C for about 20 minutes.
 9. Leave to rest for at least 15 minutes. Serve with salad and drizzle olive oil over each portion.

@@ -16,7 +16,7 @@ time_total_min: 60
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: paaruoat/munakoiso-jauhelihavuoka-vhh.webp
   alt: Aubergine and mincemeat casserole with cheese gratin in a serving dish

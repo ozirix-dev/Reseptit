@@ -16,7 +16,7 @@ time_total_min: 30
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: paaruoat/paistettu-maksa-pekonilla.webp
   alt: Stekt lever med bacon, lök och blomkålspuré
@@ -34,10 +34,10 @@ ingredients:
     item: lök
   - amount: 2
     unit: msk
-    item: vinna
+    item: smör
   - amount: 1
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 0.5
     unit: tsk
     item: salt

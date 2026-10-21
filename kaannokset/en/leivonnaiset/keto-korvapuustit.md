@@ -16,7 +16,7 @@ time_total_min: 40
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: leivonnaiset/keto-korvapuustit.webp
   alt: Ear buds flavored with cinnamon and sugar-free sweetener on a platter
@@ -43,7 +43,7 @@ ingredients:
     item: cinnamon
   - amount: 30
     unit: g
-    item: win
+    item: butter
 source_language: fi
 source_recipe: reseptit/leivonnaiset/keto-korvapuustit.md
 translation_of: keto-korvapuustit

@@ -16,7 +16,7 @@ time_total_min: 45
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: paaruoat/kukkakaaligratiini-pekonilla.webp
   alt: Guldbrun osttoppad blomkålsgratäng med bacon
@@ -31,7 +31,7 @@ ingredients:
     item: bacon
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 100
     unit: g
     item: riven ost

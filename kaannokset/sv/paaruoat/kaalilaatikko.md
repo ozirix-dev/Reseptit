@@ -1,5 +1,5 @@
 ---
-title: VHH-kållåda utan ris
+title: Lågkolhydrat-kålpudding utan ris
 recipe_id: vhh-kaalilaatikko
 url_slug: vhh-kaalilaatikko
 category: paaruoka
@@ -17,8 +17,8 @@ time_total_min: 110
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
-  - ugnsmat
+  - lågkolhydrat
+  - ugnsrätt
   - kål
 image:
   src: paaruoat/kaalilaatikko-vhh.webp
@@ -38,7 +38,7 @@ ingredients:
     item: lök
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 2
     unit: st
     item: ägg
@@ -47,7 +47,7 @@ ingredients:
     item: köttbuljong
   - amount: 1
     unit: msk
-    item: vinna
+    item: smör
   - amount: 1
     unit: tsk
     item: salt
@@ -62,13 +62,13 @@ source_recipe: reseptit/paaruoat/kaalilaatikko.md
 translation_of: vhh-kaalilaatikko
 ---
 
-# VHH kållåda utan ris
+# Lågkolhydrat-kålpudding utan ris
 
-De välbekanta smakerna i den traditionella kållådan är skapade av stuvad kål, köttfärs och en saftig krämig äggblandning utan ris eller sirap.
+Den här finskinspirerade kålpuddingen kombinerar mjuk kål, köttfärs och en krämig äggblandning utan ris eller sirap.
 
 ## Beskrivning
 
-I denna vardagsugnsform får kålen mjukna innan stekning. Köttfärs och mejram ger en välbekant smak, och grädden som koagulerar lätt med ägget binder rätten utan korn.
+Kålen får mjukna innan rätten gräddas i ugnen. Köttfärs och mejram ger fyllig smak, medan ägget hjälper grädden att stelna och binda ihop rätten.
 
 ## Gör så här
 
@@ -76,7 +76,7 @@ I denna vardagsugnsform får kålen mjukna innan stekning. Köttfärs och mejram
 2. Smält smöret i en stor kastrull. Tillsätt kål och buljong. Sjud under lock i cirka 20 minuter, rör om då och då, tills kålen mjuknar.
 3. Bryn köttfärsen i en panna. Tillsätt löken och fräs några minuter. Krydda med salt, svartpeppar och mejram.
 4. Blanda grädden och äggen i en skål. Blanda kålblandningen och köttfärsen i en ugnsform och häll gräddblandningen ovanpå.
-5. Grädda på medelhög nivå i ca 60-70 minuter, tills ytan har fått färg och formen stelnat. Om ytan mörknar för mycket, täck lätt med folie.
+5. Grädda på ugnens mittersta fals i cirka 60–70 minuter, tills ytan fått färg och rätten har stelnat. Täck löst med folie om den får för mycket färg.
 6. Låt den vila i 10 minuter innan servering.
 
 ## Anteckningar

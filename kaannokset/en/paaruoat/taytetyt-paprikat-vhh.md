@@ -17,7 +17,7 @@ time_total_min: 50
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
   - stuffed peppers
   - minced meat
 image:

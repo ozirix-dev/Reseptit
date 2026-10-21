@@ -16,7 +16,7 @@ time_total_min: 30
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - วฮ
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: paaruoat/paistettu-maksa-pekonilla.webp
   alt: ตับผัดกับเบคอน หัวหอม และดอกกะหล่ำบด
@@ -34,10 +34,10 @@ ingredients:
     item: หัวหอม
   - amount: 2
     unit: ช้อนโต๊ะ
-    item: ชนะ
+    item: เนย
   - amount: 1
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 0.5
     unit: ช้อนชา
     item: เกลือ

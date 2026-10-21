@@ -16,7 +16,7 @@ time_total_min: 45
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: paaruoat/broileri-kukkakaaligratiini.webp
   alt: Broiler and cauliflower in a creamy cheese-glazed gratin
@@ -31,7 +31,7 @@ ingredients:
     item: cauliflower
   - amount: 2
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 150
     unit: g
     item: grated cheese

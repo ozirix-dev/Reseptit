@@ -16,7 +16,7 @@ time_total_min: 40
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - VHH
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: paaruoat/poronkaristys-kukkakaalimuusilla.webp
   alt: กวางเรนเดียร์เจอร์กี้กับกะหล่ำดอกบด ลิงกอนเบอร์รี่ และถั่วเขียว
@@ -31,7 +31,7 @@ ingredients:
     item: หัวหอม
   - amount: 2
     unit: ช้อนโต๊ะ
-    item: ชนะ
+    item: เนย
   - amount: 1
     unit: dl
     item: น้ำ
@@ -46,7 +46,7 @@ ingredients:
     item: ดอกกะหล่ำ
   - amount: 1
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
 source_language: fi
 source_recipe: reseptit/paaruoat/poronkaristys-kukkakaalimuusilla.md
 translation_of: poronkaristys-kukkakaalimuusilla

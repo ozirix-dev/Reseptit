@@ -16,7 +16,7 @@ time_total_min: 45
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - วฮ
+  - คาร์โบไฮเดรตต่ำ
 image:
   src: paaruoat/kukkakaaligratiini-pekonilla.webp
   alt: กราแตงดอกกะหล่ำสีน้ำตาลทองราดชีสพร้อมเบคอน
@@ -31,7 +31,7 @@ ingredients:
     item: เบคอน
   - amount: 2
     unit: dl
-    item: วิปครีม
+    item: วิปปิ้งครีม
   - amount: 100
     unit: g
     item: ขูดชีส

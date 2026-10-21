@@ -16,7 +16,7 @@ time_total_min: 35
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: leivonnaiset/keto-joulutortut.webp
   alt: Guldbruna jultårtor med plommonsyltcentrum på ett fat
@@ -28,7 +28,7 @@ ingredients:
     item: mandelmjöl
   - amount: 100
     unit: g
-    item: vinna
+    item: smör
   - amount: 100
     unit: g
     item: färskost

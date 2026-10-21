@@ -16,7 +16,7 @@ time_total_min: 30
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - VHH
+  - lågkolhydrat
 image:
   src: paaruoat/jauhelihakastike-kesakurpitsanuudeleilla.webp
   alt: Köttfärs och gräddsås ovanpå zucchininudlar
@@ -34,7 +34,7 @@ ingredients:
     item: lök
   - amount: 2
     unit: dl
-    item: vispad grädde
+    item: vispgrädde
   - amount: 1
     unit: msk
     item: tomatpuré
@@ -46,7 +46,7 @@ ingredients:
     item: svartpeppar
   - amount: 1
     unit: msk
-    item: vinna
+    item: smör
 source_language: fi
 source_recipe: reseptit/paaruoat/jauhelihakastike-kesakurpitsanuudeleilla.md
 translation_of: jauhelihakastike-kesakurpitsanuudeleilla

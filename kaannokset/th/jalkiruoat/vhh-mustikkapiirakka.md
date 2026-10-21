@@ -28,7 +28,7 @@ ingredients:
     item: แป้งอัลมอนด์
   - amount: 75
     unit: g
-    item: ชนะ
+    item: เนย
   - amount: 1
     unit: ชิ้น
     item: ไข่

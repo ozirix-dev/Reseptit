@@ -43,10 +43,25 @@ function stripHtml(value: string): string {
   return value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 }
 
-function recipeDescription(markdown: string, descriptionSection: string): string {
+function recipeDescription(markdown: string, descriptionSection: string, locale: RecipeLocale, ingredients: { item: string }[]): string {
   const paragraphs = markdown.replace(/^\s*#\s+.*$/m, "").split(/\n\s*\n/);
   const lead = paragraphs.find((paragraph) => paragraph.trim() && !paragraph.trim().startsWith("##"));
-  return stripHtml(lead ?? descriptionSection);
+  const isBoilerplate = (value: string) => /familiar finnish (?:food|dish)|rewritten to suit your own kitchen|familiar taste in food is built from simple ingredients|vegetables and creamy ingredients bring juiciness|portion size can be adjusted with the portion counter|tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona|kirjoitettu uudelleen omaan keittiöön sopivaksi|tuttu maku rakentuu yksinkertaisista raaka-aineista|annoskokoa voi säätää reseptin annoslaskurilla/i.test(value);
+  // Prefer a useful explicit description, then a useful lead. Older files often
+  // contain the same generic copy in both places, so fall back to actual ingredients.
+  const useful = [descriptionSection, lead].map((value) => stripHtml(value ?? "")).find((value) => value && !isBoilerplate(value));
+  if (useful) return useful;
+  const mainIngredients = ingredients.slice(0, 3).map(({ item }) => item);
+  const list = mainIngredients.length > 1
+    ? `${mainIngredients.slice(0, -1).join(", ")} ${locale === "fi" ? "ja" : locale === "sv" ? "och" : locale === "th" ? "และ" : "and"} ${mainIngredients.at(-1)}`
+    : mainIngredients[0] ?? "";
+  if (!list) return "";
+  return {
+    fi: `Valmistuksessa käytetään muun muassa ${list}.`,
+    en: `Made with ${list}.`,
+    sv: `Tillagas med bland annat ${list}.`,
+    th: `เมนูนี้ใช้วัตถุดิบหลัก ได้แก่ ${list}`,
+  }[locale];
 }
 
 async function buildRecipes(): Promise<RecipeEntry[]> {
@@ -77,7 +92,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     recipes.push({
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
       title: data.title, category: data.category, dietClass: data.diet_class ?? null, routePath: routeForRecipe(data.language, data.url_slug),
-      description: recipeDescription(parsed.content, descriptionSection), ingredients: data.ingredients,
+      description: recipeDescription(parsed.content, descriptionSection, data.language, data.ingredients), ingredients: data.ingredients,
       instructionsHtml: await renderSafeMarkdown(instructions),
       instructionsText: instructionSteps.length ? instructionSteps : instructions.split(/\n\s*\n/).filter(Boolean),
       notesHtml: await renderSafeMarkdown(notes), servings: data.servings, timeTotalMin: data.time_total_min ?? null,

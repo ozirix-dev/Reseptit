@@ -10,7 +10,7 @@ main_ingredient:
   - kananmuna
   - pinaatti
 cooking_method:
-  - uuni
+  - pannu
 servings: 3
 time_total_min: 25
 difficulty: helppo
@@ -53,11 +53,11 @@ translation_status:
 
 # Keto-pinaattiletut
 
-Keto-pinaattiletut on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Keto-pinaattiletut ovat pannulla paistettava vähähiilihydraattinen ruoka. Resepti on mitoitettu kolmelle annokselle.
 
 ## Kuvaus
 
-Ruoassa tuttu maku rakentuu yksinkertaisista raaka-aineista. Kasvikset ja kermaiset ainekset tuovat mehevyyttä, ja annoskokoa voi säätää reseptin annoslaskurilla.
+Kananmunista, tuorejuustosta ja pinaatista syntyy pannulla paistettava lettutaikina. Tarjoa letut sellaisenaan tai suolaisella täytteellä.
 
 ## Valmistus
 

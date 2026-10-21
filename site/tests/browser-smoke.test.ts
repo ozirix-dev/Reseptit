@@ -96,7 +96,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       history.pushState(null, "", "/Reseptit/no-such-recipe/");
       dispatchEvent(new PopStateEvent("popstate"));
     });
-    await page.getByRole("heading", { name: "Reseptiä ei löytynyt" }).waitFor();
+    await page.getByRole("heading", { name: "Sivua ei löytynyt" }).waitFor();
     await page.waitForFunction(() => document.querySelector<HTMLMetaElement>('meta[name="robots"]')?.content === "noindex,follow");
     assert.equal(await page.locator('link[rel="canonical"]').count(), 0);
     assert.equal(await page.locator('script#recipe-jsonld').count(), 0);

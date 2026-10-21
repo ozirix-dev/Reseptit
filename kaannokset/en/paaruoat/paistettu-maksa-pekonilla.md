@@ -16,7 +16,7 @@ time_total_min: 30
 difficulty: easy
 tags:
   - Finnish home cooking
-  - VHH
+  - low carb
 image:
   src: paaruoat/paistettu-maksa-pekonilla.webp
   alt: Fried liver with bacon, onion and cauliflower puree
@@ -34,10 +34,10 @@ ingredients:
     item: onion
   - amount: 2
     unit: tbsp
-    item: win
+    item: butter
   - amount: 1
     unit: dl
-    item: whipped cream
+    item: whipping cream
   - amount: 0.5
     unit: tsp
     item: salt
