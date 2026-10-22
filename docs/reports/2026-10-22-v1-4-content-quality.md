@@ -117,13 +117,20 @@ sekä järjestää EN/SV/TH-ihmistarkistus. Tämä työ ei yhdistä PR:ää eik�
 
 ## Paikallisten tarkistusten tulos
 
-`npm ci`, 21 yksikkötestiä, 7 käännöstestiä, 2 kuvatestiä,
+`npm ci`, 21 yksikkötestiä, 8 käännöstestiä, 2 kuvatestiä,
 tuotantobuild, 7 staattisen HTML:n testiä ja 2 selaintestiä läpäisivät.
 Selaimena käytettiin asennettua Bravea Playwrightin kautta. Riippuvuuksien
 `npm audit --audit-level=low` ei löytänyt haavoittuvuuksia.
 
 Build tuottaa 480 reittiä. Tämän itsenäisen sisältöhaaran JavaScript on
-1 719,88 kB (gzip 346,21 kB) ja CSS 9,07 kB (gzip 2,57 kB).
+1 719,97 kB (gzip 346,20 kB) ja CSS 9,07 kB (gzip 2,57 kB).
 Suorituskykymuutos on erillisessä PR:ssä eikä sisälly näihin lukuihin.
 Puuteluettelossa on 72 havaintoa; sisältö muuttui 338 kieliversiossa
 (FI 39, EN 92, SV 95, TH 112). Numerot kuvaavat tätä tarkistushetkeä.
+
+PR-katselmoinnin kaksi P2-havaintoa korjattiin: thai-lohikeiton kalafondi
+oli jäänyt kuvauksessa vääräksi, ja pyttipannun käännösten ingressissä,
+kuvauksessa ja huomioissa oli lanttu/linssi/ihra-sekaannuksia.
+Tekstit korjattiin lähteen mukaisiksi. Testit kattavat nyt myös kyseiset
+virheet otsikossa, tekstissä ja alt-tekstissä. Tämä jälkilöydös osoittaa,
+miksi automaattitulosta ei saa tulkita täydelliseksi semanttiseksi hyväksynnäksi.

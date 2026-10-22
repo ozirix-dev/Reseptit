@@ -1,5 +1,5 @@
 ---
-title: lågkolhydrat-pytt i panna med korv och grönsaker
+title: Lågkolhydratpytt i panna med korv och grönsaker
 recipe_id: vhh-pyttipannu
 url_slug: vhh-pyttipannu
 category: paaruoka
@@ -18,7 +18,7 @@ difficulty: lätt
 tags:
   - finsk husmanskost
   - lågkolhydrat
-  - kastrull
+  - pytt i panna
   - korv
 image:
   src: paaruoat/pyttipannu-vhh.webp
@@ -60,13 +60,13 @@ source_recipe: reseptit/paaruoat/pyttipannu-vhh.md
 translation_of: vhh-pyttipannu
 ---
 
-# lågkolhydrat-pytt i panna med korv och grönsaker
+# Lågkolhydratpytt i panna med korv och grönsaker
 
-De välbekanta stekta bitarna av Pyttipannu är gjorda av zucchini, lantus och korv. Varje portion avslutas med ett stekt ägg.
+Den här pyttipannan görs med stekt zucchini, kålrot och korv. Varje portion toppas med ett stekt ägg.
 
 ## Beskrivning
 
-Istället för potatis används lagom mängd linser och zucchini. Lantu har mer kolhydrater än zucchini, så portionen passar för en bredare lågkolhydrat-kost.
+Potatisen ersätts med en måttlig mängd kålrot och zucchini. Kålrot innehåller mer kolhydrater än zucchini, så rätten passar en mindre strikt lågkolhydratkost.
 
 ## Gör så här
 
@@ -79,4 +79,4 @@ Istället för potatis används lagom mängd linser och zucchini. Lantu har mer 
 ## Anteckningar
 
 - Använd en lågkolhydratkorv och kontrollera dess förpackningsetiketter.
-– För en strängare kolhydratgräns passar en liten mängd selleri istället för ister.
+- För en striktare kolhydratgräns kan kålroten ersättas med en liten mängd selleri.

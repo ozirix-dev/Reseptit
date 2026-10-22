@@ -112,6 +112,9 @@ function knownTermErrors(source: Frontmatter, target: Frontmatter, locale: Local
   const issues: string[] = [];
   issues.push(...semanticTermErrors(source.ingredients.map((item) => item.item), items, locale));
   issues.push(...semanticProseErrors(source.recipe_id, locale, `${target.title}\n${targetContent}\n${target.image?.alt ?? ""}`));
+  if (locale === "th" && hasIngredient(source, /kalafondi/i) && /ฟองดู(?:ว์)?ปลา|น้ำสต[็๊]อกข้าว/.test(`${target.title}\n${targetContent}\n${target.image?.alt ?? ""}`)) {
+    issues.push("fish stock concentrate mistranslated in Thai prose");
+  }
   const exactBad = {
     en: [/^win$/i, /^wow$/i, /^field$/i],
     sv: [/^vinna$/i, /^wow$/i],

@@ -119,12 +119,33 @@ test("known prose regressions are recipe-specific and cover captions", () => {
     ["gulab-jamun", "en", "Kiehauta sokeri", "Bring the sugar and water to the boil"],
     ["keto-korvapuustit", "sv", "Öronproppar på ett fat", "Kanelbullar på ett fat"],
     ["vhh-pyttipannu", "en", "sausage and linguine", "sausage and swede"],
+    ["vhh-pyttipannu", "en", "lentil, Lantu, lantus and lard", "swede and courgette"],
+    ["vhh-pyttipannu", "sv", "linser, Lantu, lantus och ister", "kålrot och zucchini"],
+    ["vhh-pyttipannu", "th", "ถั่วเลนทิล ลันตู ลันทัส น้ำมันหมู", "รูตาบากา ซูกินี"],
     ["xiaolongbao", "en", "steamed noodles", "steamed dumplings"],
   ] as const) {
     assert.equal(semanticProseErrors(id, locale, bad).length, 1, id);
     assert.deepEqual(semanticProseErrors(id, locale, good), []);
   }
   assert.deepEqual(semanticProseErrors("walnut-cake", "en", "walnuts"), []);
+  assert.deepEqual(semanticProseErrors("dal-makhani", "sv", "linser"), []);
+});
+
+test("fish-stock prose regressions include titles, descriptions, notes and image captions", async () => {
+  const result = await auditTranslations();
+  const source = result.publishedSources.find((r) => r.data.recipe_id === "vhh-lohikeitto-kukkakaalilla")!;
+  const target = result.publishedTranslations.find((r) => r.data.recipe_id === source.data.recipe_id && r.data.language === "th")!;
+  const allTargets = result.publishedTranslations.filter((r) => r.data.recipe_id === source.data.recipe_id);
+  for (const bad of ["ฟองดูปลา", "ฟองดูว์ปลา", "น้ำสต๊อกข้าว", "น้ำสต็อกข้าว"]) {
+    for (const field of ["title", "content", "alt"] as const) {
+      const changed = structuredClone(target);
+      if (field === "content") changed.content += `\n\n## หมายเหตุ\n\n${bad}`;
+      if (field === "title") changed.data.title += bad;
+      if (field === "alt") changed.data.image!.alt += bad;
+      const audit = auditRecipePairs([source], allTargets.map((r) => r === target ? changed : r));
+      assert.ok(audit.errors.some((error) => error.includes("fish stock concentrate mistranslated in Thai prose")), `${field}: ${bad}`);
+    }
+  }
 });
 
 test("audit output distinguishes structural passes from pending human language review", async () => {

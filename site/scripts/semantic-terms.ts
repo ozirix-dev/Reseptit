@@ -14,7 +14,7 @@ export const semanticTerms = [
   { source: /herkkusieniä/i, bad: { en: /edible mushrooms/i, sv: /ätbara svampar/i, th: /เห็ดที่กินได้/ }, meaning: "button mushrooms" },
   { source: /turkkilaista jogurttia/i, bad: { en: /turkkilaista jogurttia/i }, meaning: "Turkish-style yoghurt" },
   { source: /konjaknuudeleita/i, bad: { en: /\bbrandy\b|\bcognac\b/i, sv: /brandynudlar/i, th: /บรั่นดี|คอนยัค/ }, meaning: "konjac noodles" },
-  { source: /kalafondi/i, bad: { th: /ฟองดูว์ปลา/ }, meaning: "fish stock concentrate" },
+  { source: /kalafondi/i, bad: { th: /ฟองดู(?:ว์)?ปลา|น้ำสต[็๊]อกข้าว/ }, meaning: "fish stock concentrate" },
   { source: /osterivinokkaita/i, bad: { sv: /ostronmackor/i }, meaning: "oyster mushrooms" },
   { source: /^couscousia$/i, bad: { th: /เส้นก๋วยเตี๋ยว/ }, meaning: "couscous" },
   { source: /keitettyä kylmää riisiä/i, bad: { th: /ข้าวต้มเย็น/ }, meaning: "cooked cold rice, not rice porridge" },
@@ -38,7 +38,7 @@ export function semanticProseErrors(recipeId: string, locale: "en" | "sv" | "th"
     { ids: ["sichuan-hot-pot"], bad: { en: /\bkettle\b/i, sv: /vattenkokare/i, th: /กาต้มน้ำ/ }, issue: "hot-pot cooker mistranslated as kettle" },
     { ids: ["gulab-jamun"], bad: { en: /Kiehauta|Kuumenna|ruusuvesi/i, sv: /Kiehauta|Kuumenna|ruusuvesi/i }, issue: "untranslated Finnish instruction" },
     { ids: ["keto-korvapuustit"], bad: { en: /ear buds/i, sv: /öronpropp/i, th: /หูที่ปรุง/ }, issue: "cinnamon roll mistranslated as earplug" },
-    { ids: ["vhh-pyttipannu"], bad: { en: /linguine/i, sv: /linguine/i, th: /ลิงกวินี/ }, issue: "swede mistranslated as pasta" },
+    { ids: ["vhh-pyttipannu"], bad: { en: /\b(?:linguine|lentils?|lantus?|lard)\b/i, sv: /\b(?:linguine|linser|lantus?|ister)\b/i, th: /ลิงกวินี|ถั่วเลนทิล|ลันตู|ลันทัส|น้ำมันหมู/ }, issue: "swede mistranslated in recipe prose" },
     { ids: ["xiaolongbao"], bad: { en: /steamed noodles/i, sv: /ångade nudlar/i, th: /บะหมี่นึ่ง/ }, issue: "dumpling mistranslated as noodle" },
   ];
   return rules.flatMap((rule) => rule.ids.includes(recipeId) && rule.bad[locale]?.test(text) ? [rule.issue] : []);

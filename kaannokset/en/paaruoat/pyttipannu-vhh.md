@@ -18,7 +18,7 @@ difficulty: easy
 tags:
   - Finnish home cooking
   - low carb
-  - pot pan
+  - Finnish hash
   - sausage
 image:
   src: paaruoat/pyttipannu-vhh.webp
@@ -62,11 +62,11 @@ translation_of: vhh-pyttipannu
 
 # Low-Carb Sausage and Vegetable Skillet
 
-The familiar fried pieces of Pyttipannu are made from zucchini, lantus and sausage. Each portion is finished with a fried egg.
+This Finnish-style hash combines fried courgette, swede and sausage. Each serving is topped with a fried egg.
 
 ## Description
 
-Instead of potatoes, a reasonable amount of lentil and zucchini is used. Lantu has more carbohydrates than zucchini, so the portion is suitable for a wider low-carb diet.
+A moderate amount of swede and courgette replaces the potatoes. Swede contains more carbohydrates than courgette, so this dish suits a less restrictive low-carb diet.
 
 ## Preparation
 
@@ -79,4 +79,4 @@ Instead of potatoes, a reasonable amount of lentil and zucchini is used. Lantu h
 ## Notes
 
 - Use low-carbohydrate sausage and check its package labels.
-- For a stricter carbohydrate limit, a small amount of celery is suitable instead of lard.
+- For a stricter carbohydrate limit, a small amount of celery is suitable instead of swede.
