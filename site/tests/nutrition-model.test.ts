@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
-import { nutritionProvenance, inputPaths } from "../scripts/nutrition-provenance";
+import { nutritionProvenance, inputPaths, inputHash } from "../scripts/nutrition-provenance";
 import { salmonScenario, salmonComparison } from "../scripts/nutrition-pilot";
 import { calculate, normalizeCarbohydrate, round, type Calculation, type FoodRecord } from "../scripts/nutrition-model";
 const food: FoodRecord = { id: "test-fixture-not-real-food", name: "Synthetic exact test fixture", sourceUrl: "https://example.org/fixture", retrievedAt: "2026-10-22", licence: "test", state: "raw", basis: "per100g-edible", carbohydrateDefinition: "EU_AVAILABLE", per100g: { kcal: 100, protein: 10, fat: 5, carbohydrate: 20, fibre: 4, sugars: 2, polyols: 0 } };
@@ -16,6 +16,8 @@ test("provenance covers food records, calculator and loader inputs including dir
     assert.equal(result.sourceInputHashes[file], expected);
   }
   assert.equal(result.sourceWorkingTreeChanges, execFileSync("git", ["status", "--porcelain", "--untracked-files=all", "--", ...inputPaths], { cwd: root, encoding: "utf8" }).trim() || null);
+  assert.equal(await inputHash(path.join(root, "tmp", "nonexistent-provenance-fixture-4db15c96.md")), null);
+  await assert.rejects(() => inputHash(path.join(root, "site")));
 });
 function fixture(): Calculation { return { recipeId: "fixture", sourceHash: "a".repeat(64), calculatedAt: "2026-10-22", servings: 4, scope: "input estimate, no loss", reviewerStatus: "AUTOMATED ONLY", carbohydrateOutput: "AVAILABLE_EXCLUDING_FIBRE", ingredients: [{ item: "fixture", amount: 250, unit: "g", record: structuredClone(food), state: "raw", matchEvidence: "fixture", edibleFraction: 1, edibleEvidence: "fixture", retainedFraction: 1, retentionEvidence: "fixture" }] }; }
 test("salmon pilot follows ingredient identity and current values, never array order or old comparison", async () => {

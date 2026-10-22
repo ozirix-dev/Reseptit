@@ -109,3 +109,7 @@ Lohitietue ja lohifilee kohdistetaan yksilöidyillä tunnisteilla, eivät
 listan sijainnilla. Ehdollinen proteiinivertailu käyttää ajon nykyisiä
 määriä, annoksia ja vanhaa reseptiarvoa. Järjestyksen, määrän ja annosten
 muutos sekä puuttuva/moninkertainen lohiaine testataan.
+
+Työpuusta poistunut indeksoitu syötetiedosto tallentuu tiivistelistaan
+null-arvona. Muut lukuvirheet pysäyttävät ajon; puuttuvan tiedoston ja
+hakemiston regressiot erottavat nämä tilanteet.
