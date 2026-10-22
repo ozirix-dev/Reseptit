@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "content:sync": "tsx scripts/build-content.ts",
-    "test": "npm run content:sync && tsx --test tests/servings.test.ts tests/published-content.test.ts tests/markdown-safety.test.ts tests/recipe-schema.test.ts tests/recipe-search.test.ts tests/route-content.test.ts",
+    "test": "npm run content:sync && tsx --test tests/servings.test.ts tests/published-content.test.ts tests/markdown-safety.test.ts tests/recipe-schema.test.ts tests/recipe-search.test.ts tests/route-content.test.ts tests/nutrition-model.test.ts",
     "test:translations": "tsx --test tests/translations.test.ts",
     "test:image": "tsx --test --test-concurrency=1 tests/image-pipeline.test.ts",
     "test:browser": "tsx --test --test-concurrency=1 tests/browser-smoke.test.ts tests/route-loading.browser.test.ts tests/responsive-images.browser.test.ts",
     "test:static": "tsx --test tests/static-output.test.ts",
     "build": "npm run content:sync && tsc -p tsconfig.json && vite build && tsx scripts/prerender.ts",
     "preview": "vite preview --host 127.0.0.1",
-    "report:inventory": "npm run content:sync && tsx scripts/inventory.ts"
+    "report:inventory": "npm run content:sync && tsx scripts/inventory.ts",
+    "audit:nutrition": "tsx scripts/nutrition-audit.ts"
   },
   "dependencies": {
     "react": "^19.2.0",
