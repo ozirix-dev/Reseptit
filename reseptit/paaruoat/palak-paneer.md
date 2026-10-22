@@ -62,11 +62,14 @@ ingredients:
   - amount: 1
     unit: rkl
     item: sitruunamehua
+  - unit: dl
+    item: vettä
+    amount: 0.5
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
 ---
 
 # Palak paneer – pinaattia ja intialaista tuorejuustoa
@@ -82,7 +85,7 @@ Pehmeä pinaattikastike ja paistetut paneer-kuutiot muodostavat klassisen kasvis
 1. Huuhtele pinaatti ja ryöppää kiehuvassa vedessä minuutti. Jäähdytä nopeasti ja valuta.
 2. Soseuta pinaatti karkeaksi soseeksi.
 3. Ruskista paneer-kuutiot pannulla ruokalusikallisessa öljyä. Nosta sivuun.
-4. Kuullota sipuli lopussa öljyssä. Lisää valkosipuli, inkivääri, juustokumina ja kurkuma. Paista minuutti.
+4. Kuullota sipuli jäljellä olevassa öljyssä. Lisää valkosipuli, inkivääri, juustokumina ja kurkuma. Paista minuutti.
 5. Lisää pinaattisose, suola ja puoli desilitraa vettä. Hauduta 8 minuuttia.
 6. Lisää kerma, garam masala ja paneer. Kuumenna varovasti 5 minuuttia. Mausta sitruunamehulla.
 

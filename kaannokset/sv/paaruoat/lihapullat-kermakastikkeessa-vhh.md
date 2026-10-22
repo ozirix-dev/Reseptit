@@ -79,13 +79,13 @@ source_recipe: reseptit/paaruoat/lihapullat-kermakastikkeessa-vhh.md
 translation_of: lihapullat-kermakastikkeessa-vhh
 ---
 
-# Köttbullar i gräddsås och blomkålspuré
+# Köttbullar i gräddsås med blomkålsmos
 
 saftiga finska köttbullar åtföljs av pepprig gräddsås och smörig blomkålspuré.
 
 ## Beskrivning
 
-I denna VHH-version har ströbrödet ersatts med en liten mängd mandelmjöl och potatismoset med blomkål. Krydda saltet sparsamt eftersom köttbuljongen också påverkar såsens sälta.
+I denna lågkolhydrat-version har ströbrödet ersatts med en liten mängd mandelmjöl och potatismoset med blomkål. Krydda saltet sparsamt eftersom köttbuljongen också påverkar såsens sälta.
 
 ## Gör så här
 

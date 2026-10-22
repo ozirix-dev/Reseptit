@@ -1,5 +1,5 @@
 ---
-title: VHH red chicken curry with cauliflower rice
+title: low-carb red chicken curry with cauliflower rice
 recipe_id: punainen-kanacurry-vhh
 url_slug: punainen-kanacurry-vhh
 category: paaruoka
@@ -65,7 +65,7 @@ ingredients:
     item: cauliflower rice
   - amount: null
     unit: ""
-    item: lime blocks
+    item: lime wedges
     note: for serving
 translation_languages: []
 translation_status: {}
@@ -74,7 +74,7 @@ source_recipe: reseptit/paaruoat/punainen-kanacurry-vhh.md
 translation_of: punainen-kanacurry-vhh
 ---
 
-# VHH red chicken curry with cauliflower rice
+# low-carb red chicken curry with cauliflower rice
 
 Red curry paste, coconut milk and Thai basil form a rich sauce for chicken and bamboo shoots. Cauliflower rice keeps the portion low in carbohydrates.
 
@@ -94,3 +94,4 @@ The hotness and sugar content of curry pastes vary. Add the paste sparingly at f
 ## Notes
 
 - Cauliflower rice replaces regular rice. Check the packaging labels for curry paste and coconut milk.
+- Nutrition values are approximate estimates and depend on the products and portion size used.

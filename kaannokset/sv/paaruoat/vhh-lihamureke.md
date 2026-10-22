@@ -1,5 +1,5 @@
 ---
-title: Saftig VHH-köttfärslimpa
+title: Saftig lågkolhydrat-köttfärslimpa
 recipe_id: vhh-lihamureke
 url_slug: vhh-lihamureke
 category: paaruoka
@@ -51,20 +51,20 @@ source_recipe: reseptit/paaruoat/vhh-lihamureke.md
 translation_of: vhh-lihamureke
 ---
 
-# saftig VHH köttfärslimpa
+# Saftig lågkolhydrat-köttfärslimpa
 
-saftig VHH-köttfärslimpa är en välbekant finsk mat i en lågkolhydrathemversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Riven zucchini, ägg och grädde blandas i köttfärslimpan av nötfärs.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Paprikapulver och svartpeppar ger smak.
 
 ## Gör så här
 
 1. Värm ugnen till 200 °C. Riv zucchinin och krama ur överflödig vätska.
 2. Blanda ingredienserna till en slät massa och krydda.
-3. Forma en avlång mördegskaka i en smord form.
-4. Grädda i ca 50 minuter tills mördegen är genomstekt. Låt vila i 10 minuter innan du skär upp.
+3. Forma en avlång köttfärslimpa i en smord form.
+4. Grädda i ca 50 minuter tills köttfärssmeten är genomstekt. Låt vila i 10 minuter innan du skär upp.
 
 ## Anteckningar
 

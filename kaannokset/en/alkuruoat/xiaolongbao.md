@@ -17,7 +17,7 @@ tags:
   - pork
 image:
   src: paaruoat/xiaolongbao.webp
-  alt: Xiaolongbao steamed noodles in a bamboo basket with ginger and vinegar
+  alt: Xiaolongbao soup dumplings in a bamboo basket with ginger and vinegar
   width: 1279
   height: 853
 ingredients:
@@ -71,7 +71,7 @@ Shanghainese soup dumplings contain spicy pork filling and meat jelly, which mel
 
 ## Preparation
 
-1. Mix minced meat, spring onion, soy sauce, sesame oil, ginger and salt. Carefully fold the meat stock cubes into the filling.
+1. Mix the minced pork, spring onion, soy sauce, sesame oil, ginger and salt. Gently fold the cubes of jellied stock into the filling.
 2. Put a small spoonful of filling in the middle of the dough sheet. Fold the edges around and pinch in the middle.
 3. Place the dumplings on baking paper or cabbage leaves in the steaming basket so that they do not touch each other.
 4. Steam over boiling water for 8–10 minutes until the filling is cooked.

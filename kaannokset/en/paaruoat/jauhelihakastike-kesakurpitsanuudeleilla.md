@@ -10,7 +10,8 @@ main_ingredient:
   - naudan jauheliha
   - kesäkurpitsa
 cooking_method:
-  - uuni
+  - paistinpannu
+  - liesi
 servings: 4
 time_total_min: 30
 difficulty: easy
@@ -52,13 +53,13 @@ source_recipe: reseptit/paaruoat/jauhelihakastike-kesakurpitsanuudeleilla.md
 translation_of: jauhelihakastike-kesakurpitsanuudeleilla
 ---
 
-# Minced meat sauce with zucchini noodles
+# Ground Beef Sauce with Courgette Noodles
 
-Minced meat sauce with zucchini noodles is a familiar Finnish food as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+Beef mince, cream and tomato purée make a sauce in the frying pan.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+Serve it with briefly fried courgette ribbons instead of pasta.
 
 ## Preparation
 

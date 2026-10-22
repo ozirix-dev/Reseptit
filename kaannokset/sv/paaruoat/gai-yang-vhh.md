@@ -1,5 +1,5 @@
 ---
-title: Gai yang – Thai grillad kyckling med VHH-tillbehör
+title: Gai yang – Thai grillad kyckling med lågkolhydrat-tillbehör
 recipe_id: gai-yang-vhh
 url_slug: gai-yang-vhh
 category: paaruoka
@@ -73,7 +73,7 @@ source_recipe: reseptit/paaruoat/gai-yang-vhh.md
 translation_of: gai-yang-vhh
 ---
 
-# Gai yang – Thai grillad kyckling med VHH-tillbehör
+# Gai yang – Thai grillad kyckling med lågkolhydrat-tillbehör
 
 Gai yang i Isan-stil får sin smak från vitlök, koriander, fisksås och vitpeppar. Kycklingen marineras och grillas eller bakas i ugnen; Blomkålsris serveras som tillbehör.
 
@@ -86,7 +86,7 @@ Låt kycklingen marinera i minst 30 minuter om du har tid. Vid tillagning i ugne
 1. Blanda fisksås, soja, vitlök, koriander, vitpeppar, erytritol och limejuice.
 2. Vänd kycklingen i marinaden. Låt krydda i 30 minuter eller över natten i kylen.
 3. Värm ugnen till 220 grader eller förbered grillen för medelvärme.
-4. Grilla eller stek kycklingen tills den är genomstekt och finbrun, vänd då och då. Kontrollera om den tjockaste delen är klar.
+4. Grilla eller ugnsstek kycklingen tills den är genomstekt och har fin färg. Vänd då och då och kontrollera den tjockaste delen.
 5. Hetta upp blomkålsriset i en panna. Servera med kyckling och gurkskivor.
 
 ## Anteckningar

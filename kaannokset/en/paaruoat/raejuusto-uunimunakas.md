@@ -21,7 +21,7 @@ tags:
   - low carb
 image:
   src: paaruoat/raejuusto-uunimunakas.webp
-  alt: Softly fried cottage cheese oven omelet with fresh chives on top
+  alt: Soft baked cottage cheese omelette with fresh chives
   width: 1280
   height: 853
 ingredients:
@@ -55,7 +55,7 @@ source_recipe: reseptit/paaruoat/raejuusto-uunimunakas.md
 translation_of: raejuusto-uunimunakas
 ---
 
-# Soft cottage cheese oven omelette
+# Cottage Cheese Oven Omelette
 
 The soft baked omelette gets richness from smooth pureed cottage cheese.
 

@@ -53,4 +53,6 @@ Kuumassa öljyssä munakas kohoaa ja saa rapeat reunat. Käytä pientä, syvää
 
 ## Muistiinpanot
 
-- Tämä perusversio on vähähiilihydraattinen. Kalakastikkeiden suolaisuus vaihtelee, joten maista seos ennen paistamista.
+
+- Tämä perusversio on vähähiilihydraattinen. Kalakastikkeiden suolaisuus vaihtelee. Paista pieni koepala kypsäksi, jos haluat tarkistaa maun ennen koko munakkaan paistamista.
+- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.

@@ -77,7 +77,7 @@ Mjuka rullar gjorda av jästdeg är fyllda med saftigt fläsk, kål och vårlök
 2. Krama ur vätskan från kålen. Blanda kål, köttfärs, vårlök, sojasås, sesamolja, ingefära och majsstärkelse.
 3. Dela degen i 12 delar och rulla till bollar. Rulla var och en till en skiva så att mitten blir något tjockare.
 4. Lägg fyllningen i mitten och vik kanterna till en bulle. Lägg på en fyrkant med bakplåtspapper.
-5. Res i 15 minuter och ånga i omgångar i 12–15 minuter. Stäng av värmen och vänta 3 minuter innan du öppnar locket.
+5. Låt jäsa i 15 minuter och ånga i omgångar i 12–15 minuter. Stäng av värmen och vänta 3 minuter innan du öppnar locket.
 
 ## Anteckningar
 

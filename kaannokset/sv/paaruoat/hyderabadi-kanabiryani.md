@@ -64,7 +64,7 @@ ingredients:
     item: kanelstång
   - amount: 4
     unit: st
-    item: kardemumma hus
+    item: kardemummakapslar
   - amount: 1
     unit: g
     item: saffran
@@ -93,7 +93,7 @@ Kryddig kyckling biryani tillagas i lager av kryddad kyckling och doftande basma
 ## Tillagning
 
 1. Skölj riset och blötlägg i kallt vatten i 20 minuter. Dränera.
-2. Blanda kycklingen med yoghurt, garam masala, ostkummin, koriander, gurkmeja och salt. Låt krydda i 20 minuter.
+2. Blanda kycklingen med yoghurt, garam masala, spiskummin, koriander, gurkmeja och salt. Låt krydda i 20 minuter.
 3. Bryn löken i olja tills den är gyllenbrun. Ställ hälften åt sidan. Tillsätt kanel och kardemumma i grytan.
 4. Lägg i kycklingen och stek ytorna stängda. Täck över och koka på låg värme i 15 minuter.
 5. Koka riset i saltat vatten med kanelstång och kardemumma i 5-6 minuter tills det är halvkokt. Dränera.

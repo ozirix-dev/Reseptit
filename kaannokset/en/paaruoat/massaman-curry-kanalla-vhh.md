@@ -39,7 +39,7 @@ ingredients:
     item: massaman curry paste
   - amount: 250
     unit: g
-    item: from turnips
+    item: turnip
     note: cubed instead of potato
   - amount: 200
     unit: g

@@ -10,7 +10,8 @@ main_ingredient:
   - naudan jauheliha
   - kesäkurpitsa
 cooking_method:
-  - uuni
+  - paistinpannu
+  - liesi
 servings: 4
 time_total_min: 30
 difficulty: lätt
@@ -54,11 +55,11 @@ translation_of: jauhelihakastike-kesakurpitsanuudeleilla
 
 # Köttfärssås med zucchininudlar
 
-Köttfärssås med zucchininudlar är en välbekant finsk mat som en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Nötfärs, grädde och tomatpuré blir en sås i stekpannan.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Servera med hastigt stekta zucchiniremsor i stället för pasta.
 
 ## Gör så här
 

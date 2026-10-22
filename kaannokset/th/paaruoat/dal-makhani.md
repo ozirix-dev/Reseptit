@@ -43,7 +43,7 @@ ingredients:
     note: สับ
   - amount: 2
     unit: ชิ้น
-    item: กานพลูกระเทียม
+    item: กระเทียม
     note: สับ
   - amount: 20
     unit: g

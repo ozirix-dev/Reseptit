@@ -25,7 +25,7 @@ image:
 ingredients:
   - amount: 400
     unit: g
-    item: chicken cutlet
+    item: boneless chicken thigh fillets
     note: in thin strips
   - amount: 200
     unit: g
@@ -37,7 +37,7 @@ ingredients:
     note: in small inflorescences
   - amount: 150
     unit: g
-    item: edible mushrooms
+    item: button mushrooms
     note: in slices
   - amount: 1
     unit: piece

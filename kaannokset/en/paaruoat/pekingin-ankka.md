@@ -20,7 +20,7 @@ tags:
   - cucumber
 image:
   src: paaruoat/pekingin-ankka.webp
-  alt: Peking duck in thin slices with lettuce, cucumber and spring onion
+  alt: Thin slices of Peking duck with wheat pancakes, cucumber and spring onion
   width: 1279
   height: 853
 ingredients:
@@ -39,7 +39,7 @@ ingredients:
     item: salt
   - amount: 12
     unit: piece
-    item: Chinese wheat dumplings
+    item: Chinese wheat pancakes
   - amount: 1
     unit: piece
     item: cucumber
@@ -70,7 +70,7 @@ The home kitchen's version of Peking duck: crispy fried duck served in thin stri
 2. Put the duck on a rack in the refrigerator without a cover for at least 6 hours to dry the skin.
 3. Heat the oven to 220 degrees. Roast the duck on the grill for about 20 minutes, turn the heat to 170 degrees and continue cooking for about 90 minutes until the internal temperature is at least 74 °C.
 4. Let the duck rest for 15 minutes. Cut the meat and crispy skin into thin pieces.
-5. Heat the buns according to the instructions on the package. Serve the duck with cucumber, spring onion and hoisin sauce.
+5. Heat the wheat pancakes according to the packet instructions. Serve the duck with cucumber, spring onion and hoisin sauce.
 
 ## Notes
 

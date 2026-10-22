@@ -66,6 +66,9 @@ ingredients:
   - amount: 2
     unit: tbsp
     item: oil
+  - unit: dl
+    item: water to add with the vegetables
+    amount: 5
 source_language: fi
 source_recipe: reseptit/paaruoat/idli-sambar.md
 translation_of: idli-sambar

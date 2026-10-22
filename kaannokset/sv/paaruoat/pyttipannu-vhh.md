@@ -1,5 +1,5 @@
 ---
-title: VHH-pytt i panna med korv och grönsaker
+title: lågkolhydrat-pytt i panna med korv och grönsaker
 recipe_id: vhh-pyttipannu
 url_slug: vhh-pyttipannu
 category: paaruoka
@@ -22,7 +22,7 @@ tags:
   - korv
 image:
   src: paaruoat/pyttipannu-vhh.webp
-  alt: Korv, zucchini och linguine i en stekpanna, toppad med ett stekt ägg
+  alt: Korv, zucchini och kålrot i en stekpanna, toppat med ett stekt ägg
   width: 1280
   height: 853
 ingredients:
@@ -34,7 +34,7 @@ ingredients:
     item: zucchini
   - amount: 200
     unit: g
-    item: avtar
+    item: kålrot
   - amount: 1
     unit: st
     item: lök
@@ -60,21 +60,21 @@ source_recipe: reseptit/paaruoat/pyttipannu-vhh.md
 translation_of: vhh-pyttipannu
 ---
 
-# VHH gryta med korv och grönsaker
+# lågkolhydrat-pytt i panna med korv och grönsaker
 
 De välbekanta stekta bitarna av Pyttipannu är gjorda av zucchini, lantus och korv. Varje portion avslutas med ett stekt ägg.
 
 ## Beskrivning
 
-Istället för potatis används lagom mängd linser och zucchini. Lantu har mer kolhydrater än zucchini, så portionen passar för en bredare VHH-kost.
+Istället för potatis används lagom mängd linser och zucchini. Lantu har mer kolhydrater än zucchini, så portionen passar för en bredare lågkolhydrat-kost.
 
 ## Gör så här
 
-1. Skär lantun i små tärningar. Koka i saltat vatten i 5-7 minuter tills det mjuknar lite. Töm och torka ytan.
+1. Skär kålroten i små tärningar. Koka i saltat vatten i 5–7 minuter tills den mjuknat något. Häll av vattnet och torka ytan.
 2. Tärna korven och zucchinin. Hacka löken.
-3. Smält smöret i en stor stekpanna. Stek lantukuberna i 5 minuter tills de fått färg.
+3. Smält smöret i en stor stekpanna. Stek kålrotstärningarna i 5 minuter tills de får färg.
 4. Tillsätt korv och lök. Stek i några minuter och tillsätt sedan zucchinin. Fortsätt att steka tills grönsakerna är kokta men inte vattniga. Krydda med peppar och kontrollera saltet.
-5. Stek äggen i en annan panna och lägg dem ovanpå kastrullen. Avsluta med gräslök.
+5. Stek äggen i en annan panna och lägg dem ovanpå pyttipannan. Strö över gräslök.
 
 ## Anteckningar
 

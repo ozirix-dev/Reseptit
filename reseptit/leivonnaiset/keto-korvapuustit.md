@@ -56,11 +56,11 @@ translation_status:
 
 # Keto-korvapuustit
 
-Keto-korvapuustit on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Kanelitäyte rullataan mantelijauhoa, mozzarellaa ja tuorejuustoa sisältävään taikinaan.
 
 ## Kuvaus
 
-Tämä gluteeniton leivonnainen valmistuu mantelijauhosta ja säilyttää tutun leivonnaisen maun vähähiilihydraattisessa muodossa.
+Erytritoli makeuttaa voista ja kanelista tehdyn täytteen.
 
 ## Valmistus
 

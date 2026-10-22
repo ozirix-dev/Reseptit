@@ -65,7 +65,7 @@ An airy batter made from urad dal lentils is fried into rings and served with sa
 
 ## Preparation
 
-1. Rinse the lenses and soak in cold water for 3-4 hours. Drain well.
+1. Rinse the urad dal and soak in cold water for 3–4 hours. Drain well.
 2. Puree the lentils in small batches with very little water into a thick, spongy paste.
 3. Mix in chili, ginger, curry leaves, salt and rice flour.
 4. Wet your hands. Shape the dough into balls and make a hole in the middle.

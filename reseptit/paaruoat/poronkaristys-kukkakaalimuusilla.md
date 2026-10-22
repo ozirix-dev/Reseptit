@@ -10,7 +10,8 @@ main_ingredient:
   - poronkäristys
   - kukkakaali
 cooking_method:
-  - uuni
+  - paistinpannu
+  - liesi
 servings: 4
 time_total_min: 40
 difficulty: helppo
@@ -19,7 +20,7 @@ tags:
   - VHH
 image:
   src: paaruoat/poronkaristys-kukkakaalimuusilla.webp
-  alt: Poronkäristystä kukkakaalimuusin, puolukoiden ja vihreiden papujen kanssa
+  alt: Poronkäristystä kukkakaalimuusin ja puolukoiden kanssa
   width: 1280
   height: 853
 ingredients:
@@ -59,11 +60,11 @@ translation_status:
 
 # Poronkäristys kukkakaalimuusilla
 
-Poronkäristys kukkakaalimuusilla on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Poronkäristys ja sipuli haudutetaan pannulla pehmeiksi.
 
 ## Kuvaus
 
-Ruoassa tuttu maku rakentuu yksinkertaisista raaka-aineista. Kasvikset ja kermaiset ainekset tuovat mehevyyttä, ja annoskokoa voi säätää reseptin annoslaskurilla.
+Perunamuusin sijaan lisukkeena on kermalla soseutettua kukkakaalia.
 
 ## Valmistus
 

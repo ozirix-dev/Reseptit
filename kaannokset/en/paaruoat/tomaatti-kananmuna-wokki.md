@@ -19,7 +19,7 @@ tags:
   - tomato
 image:
   src: paaruoat/tomaatti-kananmuna-wokki.webp
-  alt: Chinese tomato-chicken-egg wok with soft scrambled eggs and spring onions
+  alt: Chinese tomato and egg stir-fry with soft scrambled eggs and spring onion
   width: 1279
   height: 853
 ingredients:

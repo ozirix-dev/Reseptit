@@ -67,7 +67,7 @@ source_recipe: reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md
 translation_of: jauhelihapihvit-vhh-kermakastikkeella
 ---
 
-# Köttfärsbiffar och gräddsås utan mjöl
+# Mjölfria köttfärsbiffar med gräddsås
 
 saftiga nötfärsbiffar och gräddsås tillagad i en panna ger välbekant husmanskost till bordet utan ströbröd eller vetemjöl.
 

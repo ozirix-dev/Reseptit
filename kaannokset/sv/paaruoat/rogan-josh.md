@@ -63,7 +63,7 @@ ingredients:
     item: kanelstång
   - amount: 4
     unit: st
-    item: kardemumma hus
+    item: kardemummakapslar
   - amount: 1
     unit: tsk
     item: salt
@@ -87,7 +87,7 @@ Kashmiri Rogan Josh är långbräserat lamm i en aromatisk sås mjukad med yoghu
 
 1. Bryn lammbitarna i olja i omgångar och ställ åt sidan.
 2. Fräs löken i samma panna. Tillsätt vitlök, ingefära, kanel och kardemumma.
-3. Blanda ostkummin, koriander, paprikapulver och chili med yoghurt. Tillsätt blandningen i grytan på låg värme under omrörning.
+3. Blanda spiskummin, koriander, paprikapulver och chili med yoghurt. Tillsätt blandningen i grytan på låg värme under omrörning.
 4. Lägg tillbaka köttet i grytan. Tillsätt salt och vatten. Koka upp.
 5. Täck med lock och låt sjuda på mycket svag värme i ca 1,5 timme tills lammet är mört. Rör om då och då.
 6. Ta bort kanelstången och kardemumman. Servera med ris eller bröd.

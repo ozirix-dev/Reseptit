@@ -68,7 +68,7 @@ source_recipe: reseptit/paaruoat/lohikeitto-kuohukermalla.md
 translation_of: lohikeitto-kuohukermalla
 ---
 
-# Creamy salmon soup with whipping cream
+# Creamy Salmon Soup with Whipping Cream
 
 A hearty salmon soup is made from potatoes, vegetables and salmon. Whipping cream and fresh dill complete the soft broth.
 

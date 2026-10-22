@@ -60,7 +60,7 @@ ingredients:
     item: salt
   - amount: 4
     unit: st
-    item: mjuka rullar
+    item: mjuka småfrallor
   - amount: null
     unit: ""
     item: olja
@@ -85,7 +85,7 @@ Mumbais populära street food-rätt kombinerar en kryddig, krispig friterad pota
 3. Forma potatisblandningen till 4 runda biffar.
 4. Blanda kikärtsmjöl, vatten, chili och salt till en tjock deg.
 5. Doppa biffarna i smeten och fritera i 170 graders olja tills de är gyllenbruna, ca 4 minuter.
-6. Dela rullarna och bred chutney inuti. Lägg potatisbiffen emellan och servera genast.
+6. Dela frallorna och bred chutney inuti. Lägg potatisbiffen emellan och servera genast.
 
 ## Anteckningar
 

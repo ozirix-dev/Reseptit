@@ -98,3 +98,4 @@ Lohi, pinaatti ja pehmeä kermakastike kypsyvät uunissa samaan aikaan. Tarjoa p
 ## Muistiinpanot
 
 - Sopii hyvin tarjoiltavaksi esimerkiksi paistetun kesäkurpitsan tai kukkakaalimuusin kanssa.
+- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.

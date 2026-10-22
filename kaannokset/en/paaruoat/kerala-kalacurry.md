@@ -65,6 +65,9 @@ ingredients:
   - amount: 1
     unit: tsp
     item: salt
+  - unit: dl
+    item: warm water for the tamarind
+    amount: 1
 source_language: fi
 source_recipe: reseptit/paaruoat/kerala-kalacurry.md
 translation_of: kerala-kalacurry

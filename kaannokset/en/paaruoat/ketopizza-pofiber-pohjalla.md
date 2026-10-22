@@ -55,7 +55,7 @@ source_recipe: reseptit/paaruoat/ketopizza-pofiber-pohjalla.md
 translation_of: ketopizza-pofiber-pohjalla
 ---
 
-# Ketopizza with Pofiber base
+# Keto Pizza with Pofiber Crust
 
 The cheesy, soft Pofiber base is baked in a hot oven into a pizza with crispy edges. You can choose the fillings according to your taste.
 

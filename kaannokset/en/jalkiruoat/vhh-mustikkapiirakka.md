@@ -34,7 +34,7 @@ ingredients:
     item: egg
   - amount: 250
     unit: g
-    item: curds
+    item: quark
   - amount: 2
     unit: ""
     item: eggs
@@ -49,18 +49,18 @@ source_recipe: reseptit/jalkiruoat/vhh-mustikkapiirakka.md
 translation_of: vhh-mustikkapiirakka
 ---
 
-# VHH blueberry pie
+# Low-Carb Blueberry Pie
 
-VHH blueberry pie is a familiar Finnish food as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+Blueberries and a quark filling bake in an almond-flour crust.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+Vanilla extract flavours the filling.
 
 ## Preparation
 
-1. Sift almond flour and soft butter. Add the egg and press the dough onto the bottom of the pie pan.
-2. Mix the curd, eggs and vanilla. Spread on the base and sprinkle the blueberries on top.
+1. Rub the almond flour and softened butter together. Add the egg and press the dough into the base of a pie dish.
+2. Mix the quark, eggs and vanilla. Spread on the base and sprinkle the blueberries on top.
 3. Bake at 180 °C for about 30 minutes. Cool before cutting.
 
 ## Notes

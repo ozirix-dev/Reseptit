@@ -10,7 +10,8 @@ main_ingredient:
   - broileri
   - kukkakaali
 cooking_method:
-  - uuni
+  - paistinpannu
+  - liesi
 servings: 4
 time_total_min: 40
 difficulty: lätt
@@ -25,13 +26,13 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: kycklingkotletter
+    item: kycklinglårfilé
   - amount: 2
     unit: dl
     item: vispgrädde
   - amount: 150
     unit: g
-    item: Turkisk yoghurt
+    item: turkisk yoghurt
   - amount: 1
     unit: st
     item: lök
@@ -54,11 +55,11 @@ translation_of: kanakorma-kukkakaaliriisilla
 
 # Kycklingkorma med blomkålsris
 
-Kycklingkorma med blomkålsris är en välbekant finsk rätt som lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Kyckling får sjuda i en sås med grädde, yoghurt och kormakrydda.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Grovriven blomkål steks som tillbehör i stället för ris.
 
 ## Gör så här
 

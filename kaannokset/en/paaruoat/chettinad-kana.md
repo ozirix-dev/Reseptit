@@ -82,7 +82,7 @@ Tamil Nadu's Chettinad chicken is known for its roasted whole spices, black pepp
 
 ## Preparation
 
-1. Roast the peppers, coriander and fennel seeds and cinnamon in a dry pan until fragrant. Cool and grind.
+1. Toast the black peppercorns, coriander seeds, fennel seeds and cinnamon in a dry pan until fragrant. Cool and grind.
 2. Heat the oil in a pot. Saute the onion. Add chopped garlic and ginger.
 3. Add the chicken and lightly brown on all sides.
 4. Mix in the spice mixture and curry leaves. Add tomatoes and salt.

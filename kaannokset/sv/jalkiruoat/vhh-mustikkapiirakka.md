@@ -1,5 +1,5 @@
 ---
-title: VHH-blåbärspaj
+title: lågkolhydrat-blåbärspaj
 recipe_id: vhh-mustikkapiirakka
 url_slug: vhh-mustikkapiirakka
 category: jalkiruoka
@@ -34,7 +34,7 @@ ingredients:
     item: ägg
   - amount: 250
     unit: g
-    item: ostmassa
+    item: kvarg
   - amount: 2
     unit: st
     item: ägg
@@ -49,17 +49,17 @@ source_recipe: reseptit/jalkiruoat/vhh-mustikkapiirakka.md
 translation_of: vhh-mustikkapiirakka
 ---
 
-# VHH blåbärspaj
+# lågkolhydrat-blåbärspaj
 
-VHH blåbärspaj är en välbekant finsk mat som en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Blåbär och kvargfyllning gräddas i ett pajskal av mandelmjöl.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Vaniljextrakt smaksätter fyllningen.
 
 ## Gör så här
 
-1. Sikta mandelmjöl och mjukt smör. Tillsätt ägget och tryck ut degen i botten av pajformen.
+1. Nyp ihop mandelmjöl och mjukt smör. Tillsätt ägget och tryck ut degen i botten av en pajform.
 2. Blanda kvarg, ägg och vanilj. Bred ut på botten och strö över blåbären.
 3. Grädda i 180 °C i ca 30 minuter. Kyl innan du skär.
 

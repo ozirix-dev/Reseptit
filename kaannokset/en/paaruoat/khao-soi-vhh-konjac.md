@@ -77,7 +77,7 @@ translation_of: khao-soi-vhh-konjac
 
 # Low-carb Khao Soi with chicken and konjac noodles
 
-Khao soi is a northern Thai curry noodle soup. This VHH variation is made with konjac noodles instead of traditional noodles. Rich coconut broth, chicken and pickled mustard cabbage retain the familiar flavor combination.
+Khao soi is a northern Thai curry noodle soup. This low-carb variation is made with konjac noodles instead of traditional noodles. Rich coconut broth, chicken and pickled mustard cabbage retain the familiar flavor combination.
 
 ## Description
 

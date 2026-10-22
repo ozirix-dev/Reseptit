@@ -43,13 +43,13 @@ source_recipe: reseptit/leivonnaiset/keto-joulutortut.md
 translation_of: keto-joulutortut
 ---
 
-# Keto Christmas Tarts
+# Keto Christmas Star Pastries
 
-Keto Christmas tarts are a familiar Finnish food as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+These star-shaped pastries use a dough of almond flour, butter and cream cheese.
 
 ## Description
 
-This gluten-free pastry is made from almond flour and retains the familiar pastry taste in a low-carb form.
+Plum jam fills the centres; its carbohydrate content depends on the product.
 
 ## Preparation
 

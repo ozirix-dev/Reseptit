@@ -28,7 +28,7 @@ ingredients:
     item: äggnudlar
   - amount: 400
     unit: g
-    item: kycklingkotlett
+    item: kycklinglårfilé
     note: i tunna remsor
   - amount: 2
     unit: msk

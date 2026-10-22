@@ -100,7 +100,7 @@ Tässä gulassissa reilusti naudanlihaa ja paprikaa haudutetaan ilman jauhosuuru
 
 1. Kuumenna uuni 160 asteeseen. Ota liha hetkeksi huoneenlämpöön ja kuivaa palat talouspaperilla.
 2. Ruskista lihapalat padassa pienissä erissä voissa tai öljyssä. Siirrä sivuun. Lisää kattilaan sipuli ja kuullota pehmeäksi. Sekoita joukkoon valkosipuli ja paprikajauhe.
-3. Lisää tomaattipyree, paprika ja tomaatti. Palauta liha pataan, kaada joukkoon lihaliemi ja mausta suolalla sekä mustapippurilla.
+3. Lisää tomaattipyree, paprika, tomaatti ja juustokumina. Palauta liha pataan, kaada joukkoon lihaliemi ja mausta suolalla sekä mustapippurilla.
 4. Peitä kannella ja hauduta uunissa noin 1 tunti 45 minuuttia, kunnes liha on mureaa. Tarkista välillä nesteen määrä ja lisää tarvittaessa tilkka vettä.
 5. Maista ja säädä mausteet. Tarjoa smetanan ja haluamasi vähähiilihydraattisen lisukkeen kanssa.
 

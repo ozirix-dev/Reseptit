@@ -63,7 +63,7 @@ ingredients:
     item: cinnamon stick
   - amount: 4
     unit: piece
-    item: cardamom house
+    item: cardamom pods
   - amount: 1
     unit: tsp
     item: salt

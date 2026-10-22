@@ -1,5 +1,5 @@
 ---
-title: VHH-köttfärspaj
+title: lågkolhydrat-köttfärspaj
 recipe_id: vhh-lihapiirakka
 url_slug: vhh-lihapiirakka
 category: leivonnainen
@@ -52,19 +52,19 @@ source_recipe: reseptit/leivonnaiset/vhh-lihapiirakka.md
 translation_of: vhh-lihapiirakka
 ---
 
-# VHH köttpaj
+# lågkolhydrat-köttfärspaj
 
-VHH köttpaj är en välbekant finsk mat som en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Den öppna köttpajen har ett pajskal av mandelmjöl, ost och ägg.
 
 ## Beskrivning
 
-Denna glutenfria bakelse är gjord av mandelmjöl och behåller den välbekanta bakverkssmaken i lågkolhydratform.
+Fyllningen består av nötfärs och lök.
 
 ## Gör så här
 
 1. Värm ugnen till 200 °C. Smält försiktigt osten och färskosten och blanda i mandelmjölet och ett ägg.
 2. Tryck ut degen på botten och sidorna av en pajform klädd med bakplåtspapper.
-3. Bryn köttfärsen och löken, krydda och fördela på botten.
+3. Bryn nötfärsen och löken och krydda.
 4. Blanda ner det andra ägget i fyllningen, häll i pannan och grädda i ca 30 minuter.
 
 ## Anteckningar

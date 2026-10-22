@@ -51,7 +51,7 @@ ingredients:
     note: into the syrup
   - amount: 4
     unit: piece
-    item: cardamom house
+    item: cardamom pods
     note: lightly crushed
   - amount: 1
     unit: tsp
@@ -80,11 +80,11 @@ The soft milk flour balls are slowly fried until golden brown and soaked in a sy
 
 ## Preparation
 
-1. Kiehauta sokeri, vesi ja kardemumma. Boil for 5 minutes. Ota liedeltä ja lisää ruusuvesi. Pidä siirappi lämpimänä.
+1. Bring the sugar, water and cardamom to the boil. Boil for 5 minutes. Remove from the heat and add the rose water. Keep the syrup warm.
 2. Mix milk powder, wheat flour and baking powder. Add clarified butter.
-3. Add milk a little at a time and mix into a soft dough. Don't bother for long.
+3. Add the milk a little at a time and mix to a soft dough. Do not knead for long.
 4. Shape the dough into small smooth balls without cracks.
-5. Kuumenna öljy miedolle lämmölle. Fry the balls slowly, turning for 6-8 minutes, until they are golden brown all over.
+5. Heat the oil gently. Fry the balls slowly, turning them, for 6–8 minutes until golden brown all over.
 6. Lift the balls for a moment on a paper towel and transfer them to the warm syrup for at least 30 minutes.
 7. Serve warm or at room temperature, garnished with pistachios.
 

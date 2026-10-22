@@ -10,7 +10,8 @@ main_ingredient:
   - poronkäristys
   - kukkakaali
 cooking_method:
-  - uuni
+  - paistinpannu
+  - liesi
 servings: 4
 time_total_min: 40
 difficulty: lätt
@@ -19,13 +20,13 @@ tags:
   - lågkolhydrat
 image:
   src: paaruoat/poronkaristys-kukkakaalimuusilla.webp
-  alt: Renryck med blomkålspuré, lingon och haricots verts
+  alt: Renskav med blomkålsmos och lingon
   width: 1280
   height: 853
 ingredients:
   - amount: 500
     unit: g
-    item: renryckig
+    item: renskav
   - amount: 1
     unit: st
     item: lök
@@ -52,17 +53,17 @@ source_recipe: reseptit/paaruoat/poronkaristys-kukkakaalimuusilla.md
 translation_of: poronkaristys-kukkakaalimuusilla
 ---
 
-# renskav med blomkålsröra
+# Renskav med blomkålsmos
 
-Poronkäristys med blomkålsröra är en välbekant finsk rätt som lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Renskav och lök får sjuda mjuka i en panna.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Blomkål som mosas med grädde ersätter det vanliga potatismoset.
 
 ## Gör så här
 
-1. Bryn ren jerky och lök i smör i en panna i omgångar.
+1. Bryn renskav och lök i smör i en panna i omgångar.
 2. Tillsätt vatten och låt sjuda under lock i ca 25 minuter. Smak.
 3. Koka blomkålen mjuk, låt rinna av försiktigt och puré med grädde.
 4. Servera med blomkålspuré.

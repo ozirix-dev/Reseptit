@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 700
     unit: g
-    item: fläsk kassler
+    item: fläskkarré (inte rökt kassler)
     note: i stora bitar
   - amount: 1
     unit: l

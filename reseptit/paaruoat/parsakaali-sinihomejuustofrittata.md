@@ -67,7 +67,7 @@ status: published
 
 # Parsakaali-sinihomejuustofrittata
 
-Pehmeän täyteläinen uunimunakas yhdistää parsakaalin, kananmunan ja voimakkaan sinihomejuustofrittatan.
+Pehmeän täyteläinen uunimunakas yhdistää parsakaalin, kananmunan ja voimakkaan sinihomejuuston.
 
 ## Kuvaus
 
@@ -77,11 +77,12 @@ Frittata sopii lounaaksi tai kevyeksi päivälliseksi. Sen voi paistaa pyöreäs
 
 1. Kuumenna uuni 200 asteeseen. Voitele noin 20 × 25 cm:n uunivuoka tai käytä uuninkestävää paistinpannua.
 2. Sulata voi pannulla. Kuullota sipulia hetki ja lisää parsakaalin nuput. Paista sekoitellen noin 3 minuuttia, kunnes parsakaali saa hieman väriä.
-3. Siirrä kasvikset vuokaan. Vatkaa munien rakenne kevyesti rikki ja sekoita joukkoon kuohukerma, murennettu juusto ja mustapippuri. Maista ennen suolan lisäämistä.
+3. Siirrä kasvikset vuokaan. Vatkaa munien rakenne kevyesti rikki ja sekoita joukkoon kuohukerma, murennettu juusto ja mustapippuri. Lisää suolaa harkiten, sillä juusto on suolaista.
 4. Kaada munaseos parsakaalien päälle. Paista noin 20–25 minuuttia, kunnes keskusta on hyytynyt ja pinta kullanruskea.
 5. Anna frittatan asettua muutama minuutti ennen leikkaamista. Tarjoa sellaisenaan tai vihersalaatin kanssa.
 
 ## Muistiinpanot
 
-- Sinihomejuuston suolaisuus vaihtelee, joten lisää suolaa vasta maistamisen jälkeen.
+
+- Sinihomejuuston suolaisuus vaihtelee. Paista pieni koepala kypsäksi, jos haluat tarkistaa munaseoksen maun.
 - VHH-luokitus perustuu reseptin ainesosiin. Tarkista käyttämiesi tuotteiden pakkausmerkinnät.

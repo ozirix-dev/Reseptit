@@ -60,3 +60,4 @@ Currytahnojen tulisuus ja sokeripitoisuus vaihtelevat. Lisää tahnaa aluksi mal
 ## Muistiinpanot
 
 - Kukkakaaliriisi korvaa tavallisen riisin. Tarkista currytahnan ja kookosmaidon pakkausmerkinnät.
+- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.

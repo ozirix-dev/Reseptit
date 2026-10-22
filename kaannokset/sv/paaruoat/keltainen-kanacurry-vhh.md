@@ -1,5 +1,5 @@
 ---
-title: VHH gul kycklingcurry med blomkål
+title: lågkolhydrat gul kycklingcurry med blomkål
 recipe_id: keltainen-kanacurry-vhh
 url_slug: keltainen-kanacurry-vhh
 category: paaruoka
@@ -72,9 +72,9 @@ source_recipe: reseptit/paaruoat/keltainen-kanacurry-vhh.md
 translation_of: keltainen-kanacurry-vhh
 ---
 
-# VHH gul kycklingcurry med blomkål
+# lågkolhydrat gul kycklingcurry med blomkål
 
-Gaeng garee eller gul curry är en milt kryddig kokoscurry. I denna VHH-version används blomkål istället för potatis som absorberar den aromatiska såsen.
+Gaeng garee eller gul curry är en milt kryddig kokoscurry. I denna lågkolhydrat-version används blomkål istället för potatis som absorberar den aromatiska såsen.
 
 ## Beskrivning
 
@@ -91,3 +91,4 @@ Blomkål kokar mjuk i curry men håller formen. Om du gillar en fastare konsiste
 ## Anteckningar
 
 – Blomkål ersätter potatisen som ofta används i gula curryrätter. Kontrollera kolhydraterna i currypasta och kokosmjölk.
+- Näringsvärdena är ungefärliga uppskattningar och påverkas av produkter och portionsstorlek.

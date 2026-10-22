@@ -22,7 +22,7 @@ tags:
   - sausage
 image:
   src: paaruoat/pyttipannu-vhh.webp
-  alt: Sausage, zucchini and linguine in a frying pan, topped with a fried egg
+  alt: Sausage, courgette and swede in a frying pan, topped with a fried egg
   width: 1280
   height: 853
 ingredients:
@@ -34,7 +34,7 @@ ingredients:
     item: zucchini
   - amount: 200
     unit: g
-    item: subside
+    item: swede
   - amount: 1
     unit: ""
     item: onion
@@ -60,21 +60,21 @@ source_recipe: reseptit/paaruoat/pyttipannu-vhh.md
 translation_of: vhh-pyttipannu
 ---
 
-# VHH pot of sausage and vegetables
+# Low-Carb Sausage and Vegetable Skillet
 
 The familiar fried pieces of Pyttipannu are made from zucchini, lantus and sausage. Each portion is finished with a fried egg.
 
 ## Description
 
-Instead of potatoes, a reasonable amount of lentil and zucchini is used. Lantu has more carbohydrates than zucchini, so the portion is suitable for a wider VHH diet.
+Instead of potatoes, a reasonable amount of lentil and zucchini is used. Lantu has more carbohydrates than zucchini, so the portion is suitable for a wider low-carb diet.
 
 ## Preparation
 
-1. Cut the lantu into small cubes. Cook in salted water for 5-7 minutes until it softens a little. Drain and dry the surface.
+1. Cut the swede into small cubes. Boil in salted water for 5–7 minutes until slightly softened. Drain and dry the surface.
 2. Dice the sausage and zucchini. Chop the onion.
-3. Melt the butter in a large frying pan. Fry the lantu cubes for 5 minutes until they get colored.
+3. Melt the butter in a large frying pan. Fry the swede cubes for 5 minutes until they take on some colour.
 4. Add sausage and onion. Fry for a few minutes and then add the zucchini. Continue to fry until the vegetables are cooked but not watery. Season with pepper and check the salt.
-5. Fry the eggs in another pan and put them on top of the pot pan. Finish with chives.
+5. Fry the eggs in another pan and place them on top of the hash. Finish with chives.
 
 ## Notes
 

@@ -25,7 +25,7 @@ image:
 ingredients:
   - amount: 400
     unit: g
-    item: kycklingkotlett
+    item: kycklinglårfilé
     note: i tunna remsor
   - amount: 200
     unit: g
@@ -37,7 +37,7 @@ ingredients:
     note: i små blomställningar
   - amount: 150
     unit: g
-    item: ätbara svampar
+    item: champinjoner
     note: i skivor
   - amount: 1
     unit: st

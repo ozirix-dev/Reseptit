@@ -39,7 +39,7 @@ ingredients:
     item: เครื่องแกงเขียวหวาน
   - amount: 200
     unit: g
-    item: บวบ
+    item: ซูกินี
     note: ในบล็อก
   - amount: 150
     unit: g
@@ -71,7 +71,7 @@ source_recipe: reseptit/paaruoat/thai-vihrea-curry-kanalla-vhh.md
 translation_of: thai-vihrea-curry-kanalla-vhh
 ---
 
-# แกงเขียวหวานไก่กับข้าวกะหล่ำดอก
+# แกงเขียวหวานไก่กับข้าวดอกกะหล่ำ
 
 แกงไก่กลิ่นกะทิ ใบมะนาว และใบโหระพา ข้าวดอกกะหล่ำช่วยให้คาร์โบไฮเดรตมีปริมาณน้อย
 

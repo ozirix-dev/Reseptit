@@ -46,13 +46,13 @@ source_recipe: reseptit/paaruoat/kukkakaaligratiini-pekonilla.md
 translation_of: kukkakaaligratiini-pekonilla
 ---
 
-# Bacon Cauliflower Gratin
+# Cauliflower and Bacon Gratin
 
-Bacon Cauliflower Gratin is a familiar Finnish dish in a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+Cauliflower and fried bacon are covered with cream and cheese.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+Baking browns the topping while the cauliflower sits in the creamy sauce.
 
 ## Preparation
 

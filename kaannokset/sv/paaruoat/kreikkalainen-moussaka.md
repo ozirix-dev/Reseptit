@@ -86,7 +86,7 @@ Moussaka bakas i lager där aubergine och potatis varvas med köttfärssås kryd
 ## Tillagning
 
 1. Värm ugnen till 200 grader. Pensla aubergine- och potatisskivorna med olja och rosta på plåt i 20 minuter.
-2. Bryn köttfärsen och löken i en panna. Tillsätt tomatpuré, kanel, salt och peppar. Sjud i 15 minuter.
+2. Bryn köttfärsen och löken i en panna. Tillsätt krossade tomater, kanel, salt och peppar. Sjud i 15 minuter.
 3. Smält smöret i en kastrull. Blanda i mjölet och tillsätt mjölken gradvis under vispning. Koka tills såsen tjocknar. Ta av från spisen, svalna en stund och blanda i ägget och hälften av osten.
 4. Lägg potatisen, hälften av auberginema, köttfärssåsen och resten av auberginerna i pannan. Häll över béchamelen och strö över resten av osten.
 5. Grädda i 190 grader i ca 35 minuter tills ytan är gyllenbrun. Låt stelna i 15 minuter innan du skär.

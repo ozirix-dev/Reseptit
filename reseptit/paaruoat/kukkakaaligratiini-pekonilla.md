@@ -53,11 +53,11 @@ translation_status:
 
 # Pekoninen kukkakaaligratiini
 
-Pekoninen kukkakaaligratiini on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Kukkakaali ja paistettu pekoni kuorrutetaan kermalla ja juustolla.
 
 ## Kuvaus
 
-Ruoassa tuttu maku rakentuu yksinkertaisista raaka-aineista. Kasvikset ja kermaiset ainekset tuovat mehevyyttä, ja annoskokoa voi säätää reseptin annoslaskurilla.
+Uunissa pinta saa väriä ja kukkakaali jää kermaisen kastikkeen peittoon.
 
 ## Valmistus
 

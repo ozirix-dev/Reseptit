@@ -10,7 +10,8 @@ main_ingredient:
   - naudanmaksa
   - pekoni
 cooking_method:
-  - uuni
+  - paistinpannu
+  - liesi
 servings: 4
 time_total_min: 30
 difficulty: easy
@@ -49,13 +50,13 @@ source_recipe: reseptit/paaruoat/paistettu-maksa-pekonilla.md
 translation_of: paistettu-maksa-pekonilla
 ---
 
-# Fried liver and bacon
+# Fried Liver with Bacon
 
-Fried liver and bacon is a familiar Finnish food in a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+Thin liver slices are pan-fried and combined with bacon and onion.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+Cream brings the pan sauce together.
 
 ## Preparation
 

@@ -87,5 +87,5 @@ Holy basil, fish sauce and chili bring a recognizable flavor to the dish. Caulif
 
 ## Notes
 
-- In the VHH variant, the rice is replaced by cauliflower rice. Check the product descriptions of the sauces.
+- In the low-carb variant, the rice is replaced by cauliflower rice. Check the product descriptions of the sauces.
 - The nutritional values ​​are indicative and depend on the fat content of the minced meat and the sauces.

@@ -25,7 +25,7 @@ image:
 ingredients:
   - amount: 500
     unit: g
-    item: kycklingkotletter
+    item: kycklinglårfilé
   - amount: 600
     unit: g
     item: blomkål
@@ -49,13 +49,13 @@ source_recipe: reseptit/paaruoat/broileri-kukkakaaligratiini.md
 translation_of: broileri-kukkakaaligratiini
 ---
 
-# kyckling blomkålsgratäng
+# Kyckling- och blomkålsgratäng
 
-Broilerblomkålsgratäng är en välbekant finsk mat som en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Kyckling och blomkål tillagas tillsammans under ett krämigt osttäcke.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Vitlökspulver och svartpeppar smaksätter gratängen.
 
 ## Gör så här
 

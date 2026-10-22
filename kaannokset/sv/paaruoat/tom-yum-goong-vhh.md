@@ -33,7 +33,7 @@ ingredients:
     item: råskalade räkor
   - amount: 200
     unit: g
-    item: ostronmackor eller champinjonsvampar
+    item: ostronskivling eller champinjoner
   - amount: 1
     unit: l
     item: vatten
@@ -93,5 +93,5 @@ Limejuice tillsätts i slutet för att bevara dess fräscha smak. Du kan uteläm
 
 ## Anteckningar
 
-- Dispensera fiskfondanten enligt anvisningarna på förpackningen; fondernas salthalt varierar.
+- Dispensera fiskfonden enligt anvisningarna på förpackningen; fondernas salthalt varierar.
 - Näringsvärdena innehåller inte ris eller kokosmjölk och är vägledande.

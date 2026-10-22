@@ -53,13 +53,13 @@ source_recipe: reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md
 translation_of: jauheliha-kaalikeitto-vhh
 ---
 
-# Minced meat and cabbage soup
+# Ground Beef and Cabbage Soup
 
-Minced meat and cabbage soup is a familiar Finnish food as a low-carb home version. This pot-on-the-stove version is sized for six.
+Beef mince and white cabbage simmer in stock in this soup.
 
 ## Description
 
-The flavor of the food is based on cabbage, ground beef, onion and marjoram flavored broth. The portion size can be adjusted with the portion counter in the recipe.
+Tomato purée and marjoram add flavour.
 
 ## Preparation
 

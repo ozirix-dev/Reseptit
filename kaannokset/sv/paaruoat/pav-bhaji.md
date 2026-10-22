@@ -65,7 +65,7 @@ ingredients:
     item: salt
   - amount: 6
     unit: st
-    item: mjuka rullar
+    item: mjuka småfrallor
     note: för servering
   - amount: null
     unit: ""
@@ -87,9 +87,9 @@ Mumbais klassiska gatukök: kryddig, mjuk mosad grönsakscurry och smörrostade 
 ## Tillagning
 
 1. Koka potatisen, blomkålen, ärterna och moroten tills de är mjuka. Häll av och spara kokvattnet.
-2. Fräs löken i olja. Tillsätt vitlök och pav bhaji masala. Grädda i en minut.
+2. Fräs löken i olja. Tillsätt vitlök och pav bhaji masala. Stek i en minut.
 3. Tillsätt tomaterna och salt. Sjud i 10 minuter.
-4. Tillsätt de mogna grönsakerna och mosa i pannan till en grov puré. Späd med kokande vatten för att passa.
+4. Tillsätt de kokta grönsakerna och mosa i pannan till en grov puré. Späd med kokande vatten för att passa.
 5. Sjud blandningen i 10–15 minuter, rör om då och då. Rör ner hälften av smöret och koriandern.
 6. Dela rullarna och rosta i en stekpanna i smör på slutet. Servera med bhaji.
 

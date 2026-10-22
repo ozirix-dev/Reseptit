@@ -1,5 +1,5 @@
 ---
-title: VHH-som Tam-style Thai cucumber salad
+title: low-carb-som Tam-style Thai cucumber salad
 recipe_id: som-tam-vhh-kurkkuna
 url_slug: som-tam-vhh-kurkkuna
 category: alkuruoka
@@ -69,9 +69,9 @@ source_recipe: reseptit/alkuruoat/som-tam-vhh-kurkkuna.md
 translation_of: som-tam-vhh-kurkkuna
 ---
 
-# VHH-som Tam-style Thai cucumber salad
+# low-carb-som Tam-style Thai cucumber salad
 
-The fresh, sour, salty and hot VHH salad gets its taste, but the green papaya is replaced by crunchy cucumber. This is a som tam style variation, not a traditional papaya salad. Serve as a side dish or as an appetizer.
+The fresh, sour, salty and hot low-carb salad gets its taste, but the green papaya is replaced by crunchy cucumber. This is a som tam style variation, not a traditional papaya salad. Serve as a side dish or as an appetizer.
 
 ## Description
 
@@ -80,7 +80,7 @@ Remove the watery seed part of the cucumber to keep the salad crunchy. Chili can
 ## Preparation
 
 1. Split the cucumber and scrape out the seed part. Cut into thin long strips.
-2. Boil the beans in salted water for 2 minutes and cool. Halve the tomatoes.
+2. Boil fresh green beans in salted water for 5–7 minutes until cooked, then cool. For frozen beans, follow the packet cooking instructions. Halve the tomatoes.
 3. Crush the garlic and chili in a mortar. Add half of the peanuts and grind coarsely.
 4. Add lime juice, fish sauce and erythritol. Stir the sauce and taste.
 5. Add the cucumber, beans and tomatoes. Carefully toss in the sauce.
@@ -88,4 +88,5 @@ Remove the watery seed part of the cucumber to keep the salad crunchy. Chili can
 
 ## Notes
 
-- This is a VHH-friendly som tam variation. Cucumber does not match the taste or texture of traditional green papaya.
+- This is a low-carb-friendly som tam variation. Cucumber does not match the taste or texture of traditional green papaya.
+- Nutrition values are approximate estimates and depend on the products and portion size used.

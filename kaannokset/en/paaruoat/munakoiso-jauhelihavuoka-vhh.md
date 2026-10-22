@@ -19,7 +19,7 @@ tags:
   - low carb
 image:
   src: paaruoat/munakoiso-jauhelihavuoka-vhh.webp
-  alt: Aubergine and mincemeat casserole with cheese gratin in a serving dish
+  alt: Aubergine and minced beef casserole with cheese gratin in a serving dish
   width: 1280
   height: 853
 ingredients:
@@ -52,18 +52,18 @@ source_recipe: reseptit/paaruoat/munakoiso-jauhelihavuoka-vhh.md
 translation_of: munakoiso-jauhelihavuoka-vhh
 ---
 
-# Eggplant-minced meat casserole
+# Aubergine and Ground Beef Bake
 
-Eggplant minced meat casserole is a familiar Finnish dish as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+Aubergine slices and a tomato and beef mince sauce are layered in a baking dish.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+Oregano seasons the sauce and grated cheese tops the bake.
 
 ## Preparation
 
 1. Slice the eggplants, sprinkle salt on the surface and let them soak for 15 minutes. Dry the slices.
-2. Brown the minced meat and onion. Add tomato paste and spices, simmer for 10 minutes.
+2. Brown the minced meat and onion. Add crushed tomatoes and spices, simmer for 10 minutes.
 3. Layer the eggplant and sauce in the pan. Sprinkle cheese on top.
 4. Bake at 200 °C for about 30 minutes.
 

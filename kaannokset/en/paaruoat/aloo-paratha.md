@@ -1,5 +1,5 @@
 ---
-title: Aloo paratha – potato filled pancake
+title: Aloo paratha – potato-stuffed flatbread
 recipe_id: aloo-paratha
 url_slug: aloo-paratha
 category: paaruoka
@@ -58,7 +58,7 @@ source_recipe: reseptit/paaruoat/aloo-paratha.md
 translation_of: aloo-paratha
 ---
 
-# Aloo paratha – potato filled pancake
+# Aloo paratha – potato-stuffed flatbread
 
 Soft wheat bread hides a potato filling seasoned with cumin and chili. Fry the paratha in a pan with ghee.
 
@@ -70,7 +70,7 @@ Soft wheat bread hides a potato filling seasoned with cumin and chili. Fry the p
 
 1. Mix flour, salt and water. Knead into a soft dough and cover for 20 minutes.
 2. Boil the potatoes until cooked. Peel and mash. Mix in the cumin, chili, garam masala and coriander.
-3. Divide the dough and filling into 6 parts. Roll the pieces of dough into small circles.
+3. Divide the dough into 12 pieces and the filling into 6 portions. Roll the dough pieces into small circles.
 4. Put the filling in the center of one circle, cover with the second dough and pinch the edges. Carefully roll into a thin loaf.
 5. Fry in a hot pan on both sides. Add a little ghee to the pan and fry until golden brown spots appear on the surface.
 6. Serve with yogurt, pickled mango or raita.

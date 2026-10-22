@@ -19,7 +19,7 @@ tags:
   - VHH
 image:
   src: paaruoat/keto-pinaattiletut.webp
-  alt: Pino vihreitä pinaattilettuja yrttien ja kermaisen lisäkkeen kanssa
+  alt: Pino pinaattilettuja marjojen ja vaalean lisäkkeen kanssa
   width: 1280
   height: 853
 ingredients:

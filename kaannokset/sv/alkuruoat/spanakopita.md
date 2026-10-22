@@ -68,7 +68,7 @@ Spenat, fetaost, dill och vårlök gömmer sig inuti de krispiga filolagren. Paj
 
 ## Tillagning
 
-1. Värm ugnen till 190 grader. Hacka spenaten snabbt eller stek den i panna. Kyl och krama försiktigt ur vätskan.
+1. Värm ugnen till 190 grader. Förväll spenaten hastigt eller låt den mjukna i en stekpanna. Låt svalna och krama ur vätskan ordentligt.
 2. Blanda spenat, vårlök, fetaost, ägg, dill och peppar.
 3. Olja in ugnsformen. Lägg fyra filodegsark ett i taget i pannan, pensla var och en lätt med olja.
 4. Bred ut fyllningen i pannan. Täck med resterande filoark, smörj in lagren med olja och vik in kanterna.

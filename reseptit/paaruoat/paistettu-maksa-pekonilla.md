@@ -10,7 +10,8 @@ main_ingredient:
   - naudanmaksa
   - pekoni
 cooking_method:
-  - uuni
+  - paistinpannu
+  - liesi
 servings: 4
 time_total_min: 30
 difficulty: helppo
@@ -56,11 +57,11 @@ translation_status:
 
 # Paistettu maksa ja pekoni
 
-Paistettu maksa ja pekoni on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Ohuet maksaviipaleet paistetaan pannulla ja yhdistetään pekoniin sekä sipuliin.
 
 ## Kuvaus
 
-Ruoassa tuttu maku rakentuu yksinkertaisista raaka-aineista. Kasvikset ja kermaiset ainekset tuovat mehevyyttä, ja annoskokoa voi säätää reseptin annoslaskurilla.
+Kerma kokoaa pannulle kastikkeen.
 
 ## Valmistus
 

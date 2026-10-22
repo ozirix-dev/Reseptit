@@ -20,7 +20,7 @@ tags:
   - gurka
 image:
   src: paaruoat/pekingin-ankka.webp
-  alt: Pekinganka i tunna skivor med sallad, gurka och vårlök
+  alt: Tunna skivor pekinganka med vetepannkakor, gurka och vårlök
   width: 1279
   height: 853
 ingredients:
@@ -39,7 +39,7 @@ ingredients:
     item: salt
   - amount: 12
     unit: st
-    item: Kinesiska vete dumplings
+    item: kinesiska vetepannkakor
   - amount: 1
     unit: st
     item: gurka
@@ -70,7 +70,7 @@ Hemkökets version av Pekinganka: knaperstekt anka serverad i tunna strimlor med
 2. Lägg ankan på galler i kylen utan lock i minst 6 timmar för att torka skinnet.
 3. Värm ugnen till 220 grader. Rosta ankan på grillen i cirka 20 minuter, vrid värmen till 170 grader och fortsätt tillagningen i cirka 90 minuter tills innertemperaturen är minst 74 °C.
 4. Låt ankan vila i 15 minuter. Skär köttet och det knapriga skinnet i tunna bitar.
-5. Värm bullarna enligt anvisningarna på förpackningen. Servera ankan med gurka, vårlök och hoisinsås.
+5. Värm vetepannkakorna enligt anvisningarna på förpackningen. Servera ankan med gurka, vårlök och hoisinsås.
 
 ## Anteckningar
 

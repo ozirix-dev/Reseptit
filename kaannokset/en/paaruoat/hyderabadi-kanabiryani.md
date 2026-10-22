@@ -20,8 +20,7 @@ tags:
   - rice
 image:
   src: paaruoat/hyderabadi-kanabiryani.webp
-  alt: Hyderabadi chicken biryani layered with cooked basmati rice, fried onions
-    and herbs
+  alt: Hyderabadi chicken biryani layered with cooked basmati rice, fried onions and herbs
   width: 1280
   height: 853
 ingredients:
@@ -65,7 +64,7 @@ ingredients:
     item: cinnamon stick
   - amount: 4
     unit: piece
-    item: cardamom house
+    item: cardamom pods
   - amount: 1
     unit: g
     item: saffron

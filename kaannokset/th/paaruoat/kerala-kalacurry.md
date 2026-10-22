@@ -37,7 +37,7 @@ ingredients:
     note: สับ
   - amount: 2
     unit: ชิ้น
-    item: กานพลูกระเทียม
+    item: กระเทียม
     note: สับ
   - amount: 15
     unit: g
@@ -65,6 +65,9 @@ ingredients:
   - amount: 1
     unit: ช้อนชา
     item: เกลือ
+  - unit: dl
+    item: น้ำอุ่นสำหรับมะขามเปียก
+    amount: 1
 source_language: fi
 source_recipe: reseptit/paaruoat/kerala-kalacurry.md
 translation_of: kerala-kalacurry

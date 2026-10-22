@@ -58,3 +58,4 @@ Kukkakaali kypsyy curryssa pehmeäksi mutta säilyttää muotonsa. Jos pidät na
 ## Muistiinpanot
 
 - Kukkakaali korvaa keltacurryissa usein käytetyn perunan. Tarkista currytahnan ja kookosmaidon hiilihydraatit.
+- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.

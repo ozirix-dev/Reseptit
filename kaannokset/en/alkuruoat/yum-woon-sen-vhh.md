@@ -31,7 +31,7 @@ fat_per_serving_g: 20
 ingredients:
   - amount: 400
     unit: g
-    item: konjac noodles
+    item: drained konjac noodles
   - amount: 200
     unit: g
     item: ground pork
@@ -79,7 +79,7 @@ translation_of: yum-woon-sen-vhh
 
 # Low-carb Yum Woon Sen with shrimp and konjac noodles
 
-Yum Woon Sen sen can be recognized by the fresh sauce of lime, fish sauce and chili. This VHH variation uses konjac noodles instead of mung bean noodles.
+Yum Woon Sen sen can be recognized by the fresh sauce of lime, fish sauce and chili. This low-carb variation uses konjac noodles instead of mung bean noodles.
 
 ## Description
 
@@ -97,3 +97,4 @@ The salad should be mixed with the dressing just before serving, so that the veg
 ## Notes
 
 - konjac noodles replace mung bean noodles. The amount of erythritol can be adjusted according to the sweet and sour balance.
+- Nutrition values are approximate estimates and depend on the products and portion size used.

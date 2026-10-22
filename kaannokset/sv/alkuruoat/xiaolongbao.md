@@ -17,7 +17,7 @@ tags:
   - fläsk
 image:
   src: paaruoat/xiaolongbao.webp
-  alt: Xiaolongbao ångade nudlar i en bambukorg med ingefära och vinäger
+  alt: Ångade xiaolongbao-dumplings i en bambukorg med ingefära och vinäger
   width: 1279
   height: 853
 ingredients:
@@ -71,7 +71,7 @@ Shanghainese soppdumplings innehåller kryddig fläskfyllning och köttgelé, so
 
 ## Tillagning
 
-1. Blanda köttfärs, vårlök, sojasås, sesamolja, ingefära och salt. Vänd försiktigt ner köttbuljongtärningarna i fyllningen.
+1. Blanda fläskfärs, vårlök, sojasås, sesamolja, ingefära och salt. Vänd försiktigt ner tärningarna av geléad buljong i fyllningen.
 2. Lägg en liten sked fyllning i mitten av degplåten. Vik kanterna runt och nyp på mitten.
 3. Lägg dumplingsna på bakplåtspapper eller kålblad i ångkorgen så att de inte rör vid varandra.
 4. Ånga över kokande vatten i 8–10 minuter tills fyllningen är kokt.

@@ -25,7 +25,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: ข้าวต้มเย็น
+    item: ข้าวสวยหุงสุกที่เย็นแล้ว
   - amount: 2
     unit: ชิ้น
     item: ไข่
@@ -35,7 +35,7 @@ ingredients:
     note: ปอกเปลือก
   - amount: 100
     unit: g
-    item: ถั่ว
+    item: ถั่วลันเตา
   - amount: 100
     unit: g
     item: แฮมปรุงสุก

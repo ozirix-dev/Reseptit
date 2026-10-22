@@ -1,5 +1,5 @@
 ---
-title: Gulab Jamun – söta bollar puttade i kardemummasirap
+title: Gulab jamun – söta bollar i kardemummalag
 recipe_id: gulab-jamun
 url_slug: gulab-jamun
 category: jalkiruoka
@@ -51,7 +51,7 @@ ingredients:
     note: ner i sirapen
   - amount: 4
     unit: st
-    item: kardemumma hus
+    item: kardemummakapslar
     note: lätt krossad
   - amount: 1
     unit: tsk
@@ -70,7 +70,7 @@ source_recipe: reseptit/jalkiruoat/gulab-jamun.md
 translation_of: gulab-jamun
 ---
 
-# Gulab Jamun – söta bollar puttade i kardemummasirap
+# Gulab jamun – söta bollar i kardemummalag
 
 De mjuka mjölkmjölsbollarna steks långsamt tills de är gyllenbruna och blötläggs i en sirap smaksatt med rosenvatten och kardemumma.
 
@@ -80,11 +80,11 @@ De mjuka mjölkmjölsbollarna steks långsamt tills de är gyllenbruna och blöt
 
 ## Tillagning
 
-1. Kiehauta sokeri, vesi ja kardemumma. Koka i 5 minuter. Ota liedeltä ja lisää ruusuvesi. Pidä siirappi lämpimänä.
+1. Koka upp socker, vatten och kardemumma. Koka i 5 minuter. Ta av från värmen och tillsätt rosenvatten. Håll sockerlagen varm.
 2. Blanda mjölkpulver, vetemjöl och bakpulver. Tillsätt klarnat smör.
-3. Tillsätt mjölk lite i taget och blanda till en mjuk deg. Bry dig inte länge.
+3. Tillsätt mjölken lite i taget och blanda till en mjuk deg. Knåda inte länge.
 4. Forma degen till små släta bollar utan sprickor.
-5. Kuumenna öljy miedolle lämmölle. Stek bollarna långsamt, vänd i 6-8 minuter, tills de är gyllenbruna överallt.
+5. Värm oljan försiktigt. Fritera bollarna långsamt i 6–8 minuter och vänd dem under tiden tills de är gyllenbruna runt om.
 6. Lyft upp bollarna en stund på hushållspapper och överför dem till den varma sirapen i minst 30 minuter.
 7. Servera varm eller i rumstemperatur, garnerad med pistagenötter.
 

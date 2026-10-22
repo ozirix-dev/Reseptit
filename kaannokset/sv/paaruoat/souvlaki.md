@@ -27,7 +27,7 @@ image:
 ingredients:
   - amount: 700
     unit: g
-    item: kycklingkotlett
+    item: kycklinglårfilé
     note: i kuber
   - amount: 3
     unit: msk

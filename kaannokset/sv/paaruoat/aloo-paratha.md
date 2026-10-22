@@ -1,5 +1,5 @@
 ---
-title: Aloo paratha – potatisfylld pannkaka
+title: Aloo paratha – potatisfyllt tunnbröd
 recipe_id: aloo-paratha
 url_slug: aloo-paratha
 category: paaruoka
@@ -19,8 +19,7 @@ tags:
   - en grönsak
 image:
   src: paaruoat/aloo-paratha.webp
-  alt: Aloo paratha - gyllene potatisfyllt bröd med yoghurt och ett picklat
-    tillbehör
+  alt: Aloo paratha - gyllene potatisfyllt bröd med yoghurt och ett picklat tillbehör
   width: 1280
   height: 853
 ingredients:
@@ -59,19 +58,19 @@ source_recipe: reseptit/paaruoat/aloo-paratha.md
 translation_of: aloo-paratha
 ---
 
-# Aloo paratha – potatisfylld pannkaka
+# Aloo paratha – potatisfyllt tunnbröd
 
-Mjukt vetebröd döljer en potatisfyllning kryddad med ostkummin och chili. Stek paratha i en panna med ghee.
+Mjukt vetebröd döljer en potatisfyllning kryddad med spiskummin och chili. Stek paratha i en panna med ghee.
 
 ## Beskrivning
 
-Mjukt vetebröd döljer en potatisfyllning kryddad med ostkummin och chili. Stek paratha i en panna med ghee.
+Mjukt vetebröd döljer en potatisfyllning kryddad med spiskummin och chili. Stek paratha i en panna med ghee.
 
 ## Tillagning
 
 1. Blanda mjöl, salt och vatten. Knåda ihop till en mjuk deg och täck i 20 minuter.
-2. Koka potatisen tills den är kokt. Skala och mosa. Blanda i osten spiskummin, chili, garam masala och koriander.
-3. Dela degen och fyllningen i 6 delar. Rulla degbitarna till små cirklar.
+2. Koka potatisen tills den är kokt. Skala och mosa. Blanda i spiskummin, chili, garam masala och koriander.
+3. Dela degen i 12 bitar och fyllningen i 6 portioner. Kavla ut degbitarna till små rundlar.
 4. Lägg fyllningen i mitten av en cirkel, täck med den andra degen och nyp ihop kanterna. Rulla försiktigt till en tunn limpa.
 5. Stek i het panna på båda sidor. Tillsätt lite ghee i pannan och stek tills gyllenbruna fläckar syns på ytan.
 6. Servera med yoghurt, inlagd mango eller raita.

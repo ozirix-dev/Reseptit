@@ -34,11 +34,11 @@ ingredients:
     note: i bitar
   - amount: 1
     unit: st
-    item: green pepper
+    item: grön paprika
     note: i bitar
   - amount: 150
     unit: g
-    item: plain yogurt
+    item: naturell yoghurt
   - amount: 1
     unit: msk
     item: citronsaft

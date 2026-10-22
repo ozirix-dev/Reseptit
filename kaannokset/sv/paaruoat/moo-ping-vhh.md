@@ -1,5 +1,5 @@
 ---
-title: VHH-moo ping – thailändska fläskspett
+title: lågkolhydrat-moo ping – thailändska fläskspett
 recipe_id: moo-ping-vhh
 url_slug: moo-ping-vhh
 category: paaruoka
@@ -71,7 +71,7 @@ source_recipe: reseptit/paaruoat/moo-ping-vhh.md
 translation_of: moo-ping-vhh
 ---
 
-# VHH-moo ping – thailändska fläskspett
+# lågkolhydrat-moo ping – thailändska fläskspett
 
 Moo ping är grillade fläskspett kryddade med kokosmjölk och vitlök. I denna version kommer marinadens sötma från erytritol istället för palmsocker.
 
@@ -89,5 +89,5 @@ Tunna köttskivor tillagas snabbt. Träpinnar ska blötläggas i vatten innan gr
 
 ## Anteckningar
 
-– Att ersätta det traditionella palmsockret med erytritol gör detta till en VHH-variation och påverkar karamelliseringen.
+– Att ersätta det traditionella palmsockret med erytritol gör detta till en lågkolhydrat-variation och påverkar karamelliseringen.
 - Kontrollera etiketterna på såserna. Näringsvärdena är vägledande.

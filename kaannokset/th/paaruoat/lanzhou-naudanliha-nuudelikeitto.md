@@ -25,7 +25,7 @@ image:
 ingredients:
   - amount: 700
     unit: g
-    item: เนื้อซี่โครงด้านหน้า
+    item: เนื้อวัวส่วนหัวไหล่สำหรับตุ๋น
     note: ในลูกบาศก์
   - amount: 2
     unit: l

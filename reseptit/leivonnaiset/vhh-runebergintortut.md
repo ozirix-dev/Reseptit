@@ -60,11 +60,11 @@ translation_status:
 
 # VHH-Runebergintortut
 
-VHH-Runebergintortut on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Runebergintorttujen mantelijauhotaikinassa on rahkaa ja kardemummaa.
 
 ## Kuvaus
 
-Tämä gluteeniton leivonnainen valmistuu mantelijauhosta ja säilyttää tutun leivonnaisen maun vähähiilihydraattisessa muodossa.
+Valmiit tortut viimeistellään vadelmalla.
 
 ## Valmistus
 

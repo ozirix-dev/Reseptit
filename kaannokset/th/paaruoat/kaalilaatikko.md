@@ -22,7 +22,7 @@ tags:
   - กะหล่ำปลี
 image:
   src: paaruoat/kaalilaatikko-vhh.webp
-  alt: กล่องกะหล่ำปลี VHH พร้อมกะหล่ำปลีตุ๋นและเนื้อสับ เสิร์ฟพร้อมลินกอนเบอร์รี่
+  alt: กะหล่ำปลีอบกับเนื้อวัวบด เสิร์ฟพร้อมลิงกอนเบอร์รี
   width: 1280
   height: 853
 ingredients:

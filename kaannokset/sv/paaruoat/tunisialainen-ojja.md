@@ -78,8 +78,8 @@ Ojja är en kryddig tomat-pepparpanna där ägg kokas ovanpå såsen. Harissa ti
 ## Tillagning
 
 1. Hetta upp oljan i en panna. Fräs löken och paprikan tills den är mjuk i cirka 6 minuter.
-2. Tillsätt vitlök, spiskummin och harissa. Grädda i en minut.
-3. Häll tomatpuré och salt i pannan. Sjud i 12-15 minuter tills såsen tjocknar.
+2. Tillsätt vitlök, spiskummin och harissa. Stek i en minut.
+3. Häll krossade tomater och salt i pannan. Sjud i 12-15 minuter tills såsen tjocknar.
 4. Gör fyra brunnar i såsen och bryt ner äggen i dem. Täck pannan och koka tills äggvitan stelnat.
 5. Avsluta med persilja och servera med bröd.
 

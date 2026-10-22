@@ -10,7 +10,8 @@ main_ingredient:
   - poronkäristys
   - kukkakaali
 cooking_method:
-  - uuni
+  - paistinpannu
+  - liesi
 servings: 4
 time_total_min: 40
 difficulty: easy
@@ -19,13 +20,13 @@ tags:
   - low carb
 image:
   src: paaruoat/poronkaristys-kukkakaalimuusilla.webp
-  alt: Reindeer jerky with cauliflower puree, lingonberries and green beans
+  alt: Sautéed reindeer with cauliflower mash and lingonberries
   width: 1280
   height: 853
 ingredients:
   - amount: 500
     unit: g
-    item: reindeer jerky
+    item: thinly sliced reindeer meat
   - amount: 1
     unit: ""
     item: onion
@@ -52,17 +53,17 @@ source_recipe: reseptit/paaruoat/poronkaristys-kukkakaalimuusilla.md
 translation_of: poronkaristys-kukkakaalimuusilla
 ---
 
-# sautéed reindeer with cauliflower mash
+# Sautéed Reindeer with Cauliflower Mash
 
-Poronkäristys with cauliflower mash is a familiar Finnish dish as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+Thinly sliced reindeer meat and onion are gently braised in a pan.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+Cauliflower mashed with cream replaces the usual mashed potatoes.
 
 ## Preparation
 
-1. Brown the sautéed reindeer and onion in butter in a pan in batches.
+1. Brown the thinly sliced reindeer meat in butter in a frying pan. Add the onion and soften it.
 2. Add water and simmer under the lid for about 25 minutes. Taste.
 3. Boil the cauliflower until soft, drain carefully and puree with cream.
 4. Serve with cauliflower mash.

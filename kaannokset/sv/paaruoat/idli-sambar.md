@@ -66,6 +66,9 @@ ingredients:
   - amount: 2
     unit: msk
     item: olja
+  - unit: dl
+    item: vatten att tillsätta med grönsakerna
+    amount: 5
 source_language: fi
 source_recipe: reseptit/paaruoat/idli-sambar.md
 translation_of: idli-sambar

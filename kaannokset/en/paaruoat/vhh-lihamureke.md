@@ -51,20 +51,20 @@ source_recipe: reseptit/paaruoat/vhh-lihamureke.md
 translation_of: vhh-lihamureke
 ---
 
-# Succulent VHH meatloaf
+# Juicy Low-Carb Meatloaf
 
-Succulent VHH meatloaf is a familiar Finnish food in a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+Grated courgette, eggs and cream are mixed into this beef meatloaf.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+Paprika and black pepper season the mixture.
 
 ## Preparation
 
 1. Heat the oven to 200 °C. Grate the zucchini and squeeze out the excess liquid.
 2. Mix the ingredients into a smooth mass and season.
-3. Form an oblong shortbread in a greased pan.
-4. Bake for about 50 minutes until the shortbread is cooked. Let rest for 10 minutes before slicing.
+3. Form an oblong meatloaf in a greased pan.
+4. Bake for about 50 minutes until the meatloaf is cooked. Let rest for 10 minutes before slicing.
 
 ## Notes
 

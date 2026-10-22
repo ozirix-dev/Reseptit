@@ -61,3 +61,4 @@ Pad see ew paistuu parhaiten kuumalla pannulla pienissä erissä. Kuivaa konjakn
 
 - Tämä on pad see ew -ruokalajin VHH-muunnelma; konjaknuudelit eivät vastaa riisinuudelien rakennetta.
 - Tarkista osteri- ja soijakastikkeiden hiilihydraatit pakkauksesta.
+- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.

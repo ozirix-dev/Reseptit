@@ -81,7 +81,7 @@ Långsambräserad kyckling är kryddad med ingefära, gurkmeja, konserverad citr
 
 1. Hetta upp oljan i en tjockbottnad panna. Bryn kycklingen på alla sidor och ställ åt sidan.
 2. Fräs löken och vitlöken i en kastrull. Tillsätt ingefära, gurkmeja och spiskummin.
-3. Lägg tillbaka kycklingen i grytan. Tillsätt citronskal och kycklingfond. Täck över och låt sjuda på låg värme i ca 45 minuter.
+3. Lägg tillbaka kycklingen i grytan. Tillsätt skal av konserverad citron och kycklingfond. Täck över och låt sjuda på låg värme i ca 45 minuter.
 4. Tillsätt oliverna och låt sjuda i ytterligare 10 minuter tills kycklingen är mör och kokt.
 5. Smaka av salt och avsluta med koriander. Servera med couscous eller bröd.
 

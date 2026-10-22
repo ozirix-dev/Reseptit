@@ -75,7 +75,7 @@ source_recipe: reseptit/paaruoat/kreikkalainen-moussaka.md
 translation_of: kreikkalainen-moussaka
 ---
 
-# มูสซาก้ากรีก
+# มูซาก้ากรีก
 
 มูสซาก้าอบเป็นชั้นๆ โดยให้มะเขือยาวและมันฝรั่งสลับกับซอสเนื้อบดปรุงรสด้วยอบเชยและเบชาเมล
 

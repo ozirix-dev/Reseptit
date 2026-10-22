@@ -40,7 +40,7 @@ ingredients:
     item: โยเกิร์ตไม่ปรุงแต่ง
   - amount: 2
     unit: ชิ้น
-    item: กานพลูกระเทียม
+    item: กระเทียม
     note: บดขยี้
   - amount: 15
     unit: g
@@ -63,7 +63,7 @@ ingredients:
     item: ไม้อบเชย
   - amount: 4
     unit: ชิ้น
-    item: บ้านกระวาน
+    item: ฝักกระวาน
   - amount: 1
     unit: ช้อนชา
     item: เกลือ
@@ -75,7 +75,7 @@ source_recipe: reseptit/paaruoat/rogan-josh.md
 translation_of: rogan-josh
 ---
 
-# แคชเมียร์โรแกนจอช
+# แคชเมียร์ โรแกน จอช
 
 Kashmiri Rogan Josh เป็นเนื้อแกะตุ๋นในซอสอะโรมาติกและโยเกิร์ตให้นุ่ม
 

@@ -12,7 +12,7 @@ main_ingredient:
   - tomaatti
 cooking_method:
   - liesi
-  - grilli
+  - paistinpannu
 difficulty: medium
 tags:
   - Indian

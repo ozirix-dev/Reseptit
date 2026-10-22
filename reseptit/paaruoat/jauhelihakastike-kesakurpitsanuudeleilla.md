@@ -10,7 +10,8 @@ main_ingredient:
   - naudan jauheliha
   - kesäkurpitsa
 cooking_method:
-  - uuni
+  - paistinpannu
+  - liesi
 servings: 4
 time_total_min: 30
 difficulty: helppo
@@ -59,11 +60,11 @@ translation_status:
 
 # Jauhelihakastike kesäkurpitsanuudeleilla
 
-Jauhelihakastike kesäkurpitsanuudeleilla on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Naudan jauhelihasta, kermasta ja tomaattipyreestä valmistuu pannulla kastike.
 
 ## Kuvaus
 
-Ruoassa tuttu maku rakentuu yksinkertaisista raaka-aineista. Kasvikset ja kermaiset ainekset tuovat mehevyyttä, ja annoskokoa voi säätää reseptin annoslaskurilla.
+Tarjoa se nopeasti paistettujen kesäkurpitsasuikaleiden kanssa pastan sijaan.
 
 ## Valmistus
 

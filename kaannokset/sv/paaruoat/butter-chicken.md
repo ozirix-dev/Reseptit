@@ -12,7 +12,7 @@ main_ingredient:
   - tomaatti
 cooking_method:
   - liesi
-  - grilli
+  - paistinpannu
 difficulty: mellannivå
 tags:
   - indiska
@@ -90,7 +90,7 @@ Mjukt kryddad butter chicken tillagas i yoghurtmarinad och en rik tomatgräddså
 
 ## Tillagning
 
-1. Blanda yoghurt, citronsaft, garam masala, ostkummin och hälften av saltet. Tillsätt kycklingen och låt marinera i minst 20 minuter.
+1. Blanda yoghurt, citronsaft, garam masala, spiskummin och hälften av saltet. Tillsätt kycklingen och låt marinera i minst 20 minuter.
 2. Bryn kycklingen i en panna i omgångar i en skvätt olja. Avsätta.
 3. Smält smöret i en kastrull. Fräs löken tills den är mjuk. Tillsätt vitlök, ingefära och paprika; stek en minut.
 4. Tillsätt krossade tomater och låt sjuda i 10 minuter. Puré såsen om så önskas.

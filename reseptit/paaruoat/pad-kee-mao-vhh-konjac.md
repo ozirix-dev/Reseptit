@@ -51,7 +51,7 @@ Valmistele ainekset ennen paistamista: ruoka kypsyy wokissa nopeasti. Kuivapaist
 
 ## Valmistus
 
-1. Huuhtele ja valuta nuudelit. Kuivapaista niitä kuumalla pannulla 3–4 minuuttia ja siirrä sivuun.
+1. Keitä tuoreet vihreät pavut 5–7 minuuttia, kunnes ne ovat kypsiä, ja valuta. Noudata pakastepavuille pakkauksen kypsennysohjetta. Huuhtele ja valuta nuudelit. Kuivapaista niitä kuumalla pannulla 3–4 minuuttia ja siirrä sivuun.
 2. Sekoita kalakastike, soijakastike, osterikastike ja erytritoli.
 3. Kuumenna öljy wokissa. Paista broileri kypsäksi ja siirrä hetkeksi sivuun.
 4. Lisää valkosipuli ja chili pannulle. Paista noin 30 sekuntia, lisää pavut ja paprika ja paista muutama minuutti.
@@ -61,3 +61,4 @@ Valmistele ainekset ennen paistamista: ruoka kypsyy wokissa nopeasti. Kuivapaist
 ## Muistiinpanot
 
 - Konjaknuudelit korvaavat riisinuudelit. Kastikkeiden hiilihydraattimäärät vaihtelevat tuotemerkeittäin.
+- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.

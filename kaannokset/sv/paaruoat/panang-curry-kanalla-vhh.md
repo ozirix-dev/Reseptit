@@ -88,4 +88,4 @@ Hettan i currypastan varierar. Tillsätt pastan gradvis och kontrollera kolhydra
 
 ## Anteckningar
 
-– I VHH-versionen är riset ersatt av blomkålsris. Näringsvärdena är vägledande och beror på currypastan.
+– I lågkolhydrat-versionen är riset ersatt av blomkålsris. Näringsvärdena är vägledande och beror på currypastan.

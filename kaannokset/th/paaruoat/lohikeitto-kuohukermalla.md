@@ -18,7 +18,7 @@ tags:
   - วิปปิ้งครีม
 image:
   src: paaruoat/lohikeitto-kuohukermalla.webp
-  alt: ซุปครีมปลาแซลมอนพร้อมวิปครีม มันฝรั่ง แครอท ต้นหอม และผักชีฝรั่งสด
+  alt: ซุปครีมปลาแซลมอนกับมันฝรั่ง แครอท กระเทียมหอม และผักชีลาว
   width: 1280
   height: 853
 ingredients:
@@ -43,7 +43,7 @@ ingredients:
     item: น้ำ
   - amount: null
     unit: ""
-    item: ฟองดูว์ปลา
+    item: น้ำสต็อกปลาเข้มข้น
     note: ตามปริมาณบรรจุภัณฑ์ต่อน้ำ 8 เดซิลิตร
   - amount: 8
     unit: ชิ้น
@@ -60,15 +60,15 @@ ingredients:
     note: ถ้าจำเป็นตามรสนิยม
   - amount: null
     unit: ""
-    item: ผักชีฝรั่งสด
-    note: กลั่น
+    item: ผักชีลาวสด
+    note: สับละเอียด
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/lohikeitto-kuohukermalla.md
 translation_of: lohikeitto-kuohukermalla
 ---
 
-# ซุปครีมแซลมอนวิปครีม
+# ซุปปลาแซลมอนครีมสด
 
 ซุปปลาแซลมอนแสนอร่อยทำจากมันฝรั่ง ผัก และปลาแซลมอน วิปครีมและผักชีลาวสดช่วยเติมเต็มน้ำซุปเนื้อนุ่ม
 
@@ -78,14 +78,14 @@ translation_of: lohikeitto-kuohukermalla
 
 ## วิธีทำ
 
-1. ปอกเปลือกและสับหัวหอม Split the leek lengthwise, rinse thoroughly and cut into thin slices. Peel or brush the potatoes and cut into bite-size pieces. สับแครอท
-2. Melt the butter in a saucepan according to your taste. Saute the onion and leek for a few minutes until they soften but do not brown.
-3. Add water, fish stock according to package dosage and whole black peppercorns to the pot. เพิ่มมันฝรั่งและแครอท Cook gently until the vegetables are almost cooked.
-4. แกะหนังและกระดูกออกจากปลาแซลมอน Cut the fish into large cubes and add to the pot.
-5. เทวิปครีมลงไป Simmer on low heat for a few minutes until the salmon is cooked. หลีกเลี่ยงการต้มแรงๆ
-6. ลิ้มรสน้ำซุปและเติมเกลือหากจำเป็น ผัดผักชีลาวสับแล้วเสิร์ฟร้อน
+1. ปอกและสับหัวหอม ผ่ากระเทียมหอมตามยาว ล้างให้สะอาดแล้วหั่นบาง ปอกหรือขัดมันฝรั่งแล้วหั่นพอดีคำ หั่นแครอท.
+2. ละลายเนยตามชอบในหม้อ ผัดหัวหอมและกระเทียมหอมสักครู่ให้นิ่มโดยไม่ให้เป็นสีน้ำตาล.
+3. เติมน้ำ น้ำสต็อกปลาเข้มข้นตามปริมาณที่ระบุบนบรรจุภัณฑ์ และพริกไทยดำทั้งเม็ด ใส่มันฝรั่งกับแครอท ต้มเบา ๆ จนผักเกือบสุก.
+4. ลอกหนังและเอาก้างปลาแซลมอนออก หั่นปลาเป็นชิ้นใหญ่แล้วใส่ลงหม้อ.
+5. เติมวิปปิงครีมชนิดเหลว เคี่ยวด้วยไฟอ่อนสักครู่จนปลาสุก หลีกเลี่ยงการต้มเดือดแรง.
+6. ชิมน้ำซุปและเติมเกลือหากจำเป็น ใส่ผักชีลาวสับ คนให้เข้ากันแล้วเสิร์ฟร้อน.
 
 ## หมายเหตุ
 
-- ความเค็มและความแรงของฟองดูว์ปลาจะแตกต่างกันไป ปฏิบัติตามปริมาณบนบรรจุภัณฑ์และตรวจสอบรสชาติก่อนเติมเกลือ
+- ความเค็มและความแรงของน้ำสต็อกปลาเข้มข้นจะแตกต่างกันไป ปฏิบัติตามปริมาณบนบรรจุภัณฑ์และตรวจสอบรสชาติก่อนเติมเกลือ
 - ขนมปังไรย์ เหมาะสำหรับเสิร์ฟพร้อมซุป

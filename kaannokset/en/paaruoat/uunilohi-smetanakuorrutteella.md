@@ -58,7 +58,7 @@ source_recipe: reseptit/paaruoat/uunilohi-smetanakuorrutteella.md
 translation_of: uunilohi-smetanakuorrutteella
 ---
 
-# Baked salmon with sour cream and herb glaze
+# Oven-Baked Salmon with Sour Cream Topping
 
 Succulent baked salmon gets a sour cream coating seasoned with lemon, leek and dill.
 
@@ -77,4 +77,4 @@ This simple salmon dish is cooked in the oven together with a rich glaze. Serve 
 ## Notes
 
 - The cooking time depends on the thickness of the fillet. Take the salmon out of the oven as soon as it is cooked and juicy.
-- The VHH classification is based on the ingredients of the recipe. Check the packaging labels of the products you use.
+- The low-carb classification is based on the ingredients of the recipe. Check the packaging labels of the products you use.

@@ -1,5 +1,5 @@
 ---
-title: VHH-khao kha moo – bräserat fläsk med blomkålsris
+title: lågkolhydrat-khao kha moo – bräserat fläsk med blomkålsris
 recipe_id: khao-kha-moo-vhh
 url_slug: khao-kha-moo-vhh
 category: paaruoka
@@ -50,7 +50,7 @@ ingredients:
     item: erytritol
   - amount: 1
     unit: tsk
-    item: kinesisk krydda
+    item: kinesisk femkrydda
   - amount: 1
     unit: st
     item: kanelstång
@@ -79,9 +79,9 @@ source_recipe: reseptit/paaruoat/khao-kha-moo-vhh.md
 translation_of: khao-kha-moo-vhh
 ---
 
-# VHH-khao kha moo – bräserat fläsk med blomkålsris
+# lågkolhydrat-khao kha moo – bräserat fläsk med blomkålsris
 
-Khao kha moo är griskött som stuvas länge i en kryddig buljong. I denna VHH-variant serveras portionen med blomkålsris, och buljongens sötma justeras med erytritol.
+Khao kha moo är griskött som stuvas länge i en kryddig buljong. I denna lågkolhydrat-variant serveras portionen med blomkålsris, och buljongens sötma justeras med erytritol.
 
 ## Beskrivning
 
@@ -90,7 +90,7 @@ Den milda bräseringen gör fläskmagen mör och låter kryddorna krydda hela bu
 ## Tillagning
 
 1. Bryn fläskbitarna i en panna på alla sidor. Ställ åt sidan en stund.
-2. Tillsätt vitlök, kryddpeppar, kanel och stjärnanis i grytan. Stek i ca 30 sekunder.
+2. Lägg vitlök, kinesisk femkrydda, kanel och stjärnanis i grytan. Fräs i cirka 30 sekunder.
 3. Häll i kycklingfonden. Tillsätt sojasås, fisksås och erytritol. Lägg tillbaka fläsket i grytan.
 4. Täck med lock och låt sjuda på mycket låg värme i ca 2,5 timme eller tills köttet är mjukt.
 5. Tillsätt de skalade kokta äggen de sista 20 minuterna. Ta bort fläsket och äggen från buljongen.

@@ -69,7 +69,7 @@ Pehmeät riisitaikinapallot täytetään makealla seesamitahnalla ja tarjotaan l
 ## Valmistus
 
 1. Jauha seesaminsiemenet hienoksi ja sekoita sokeriin sekä pehmeään voihin. Jäähdytä täyte, jotta se jähmettyy.
-2. Sekoita riisijauho ja lämmin vesi. Vaivaa pehmeäksi, tasaiseksi taikinaksi.
+2. Sekoita tahmea riisijauho eli glutinous rice flour ja lämmin vesi. Vaivaa pehmeäksi, tasaiseksi taikinaksi.
 3. Jaa taikina 16 palaan. Litistä pala, lisää keskelle pieni nokare täytettä ja sulje taikina palloksi.
 4. Kiehauta kattilassa vesi, sokeri ja viipaloitu inkivääri. Hauduta 10 minuuttia.
 5. Keitä riisipalloja erissä miedosti poreilevassa vedessä 5–6 minuuttia, kunnes ne nousevat pintaan. Nosta kulhoihin ja kaada päälle inkiväärilientä.

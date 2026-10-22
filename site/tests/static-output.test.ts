@@ -96,7 +96,8 @@ test("published keto bun page includes its content and omitted amounts remain om
   assert.match(html, /<h1>Keto-kauralesesämpylät<\/h1>/);
   assert.match(html, /seesaminsiemeniä/);
   assert.match(html, /halutessasi pinnalle/);
-  assert.match(html, /Kauraleseitä käytetään maltillisesti/);
+  assert.match(html, /Psyllium sitoo pehmeää taikinaa/);
+  assert.doesNotMatch(html, /raakileiden raejuustopohja/);
   assert.match(html, /src="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/leivonnaiset\/keto-kauralesesampylat\.webp"/);
   assert.match(html, /<meta name="twitter:card" content="summary_large_image"/);
   assert.match(html, /"image":\["https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/leivonnaiset\/keto-kauralesesampylat\.webp"\]/);

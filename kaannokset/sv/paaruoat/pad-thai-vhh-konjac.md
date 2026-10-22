@@ -20,7 +20,7 @@ tags:
   - VHH
 image:
   src: paaruoat/pad-thai-vhh-konjac.webp
-  alt: Brandynudlar i pad thai-stil med räkor, ägg, tofu och jordnötter
+  alt: Konjaknudlar i pad thai-stil med räkor, ägg, tofu och jordnötter
   width: 1280
   height: 853
 carbs_net_per_serving_g: 10
@@ -30,7 +30,7 @@ fat_per_serving_g: 23
 ingredients:
   - amount: 400
     unit: g
-    item: konjaknudlar
+    item: avrunna konjaknudlar
   - amount: 400
     unit: g
     item: skalade räkor
@@ -89,7 +89,7 @@ Skölj nudlarna väl och stek dem torra innan du lägger dem i woken. På så s�
 3. Hetta upp hälften av oljan i en wok. Stek tofun tills den är gyllene och ställ åt sidan.
 4. Tillsätt räkorna och stek tills de nästan är genomstekta. Flytta dem åt sidan, tillsätt resten av oljan och fräs äggen.
 5. Tillsätt nudlarna och såsen. Vänd i en het panna ett par minuter.
-6. Tillsätt tofu, groddar och hälften av jordnötterna. Grädda i en minut.
+6. Lägg tillbaka räkor och tofu i pannan. Tillsätt böngroddarna och hälften av jordnötterna. Stek under omrörning i ungefär en minut och vid behov längre, tills räkorna är helt tillagade.
 7. Servera med vårlök, koriander, resterande jordnötter och limeklyftor.
 
 ## Anteckningar

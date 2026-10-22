@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: chicken thighs or steak
+    item: chicken legs or boneless thigh fillets
   - amount: 250
     unit: g
     item: couscous

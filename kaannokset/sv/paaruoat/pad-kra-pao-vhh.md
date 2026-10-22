@@ -86,5 +86,5 @@ Helig basilika, fisksås och chili ger en igenkännlig smak till rätten. Blomk�
 
 ## Anteckningar
 
-– I VHH-varianten ersätts riset med blomkålsris. Kolla produktbeskrivningarna på såserna.
+– I lågkolhydrat-varianten ersätts riset med blomkålsris. Kolla produktbeskrivningarna på såserna.
 - Näringsvärdena är vägledande och beror på fetthalten i köttfärsen och såserna.

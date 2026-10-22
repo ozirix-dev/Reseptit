@@ -1,5 +1,5 @@
 ---
-title: VHH-moo ping – Thai pork skewers
+title: low-carb-moo ping – Thai pork skewers
 recipe_id: moo-ping-vhh
 url_slug: moo-ping-vhh
 category: paaruoka
@@ -71,7 +71,7 @@ source_recipe: reseptit/paaruoat/moo-ping-vhh.md
 translation_of: moo-ping-vhh
 ---
 
-# VHH-moo ping – Thai pork skewers
+# low-carb-moo ping – Thai pork skewers
 
 Moo ping is grilled pork skewers seasoned in coconut milk and garlic. In this version, the sweetness of the marinade comes from erythritol instead of palm sugar.
 
@@ -89,5 +89,5 @@ Thin slices of meat cook quickly. Wooden sticks should be soaked in water before
 
 ## Notes
 
-- Replacing the traditional palm sugar with erythritol makes this a VHH variation and affects the caramelization.
+- Replacing the traditional palm sugar with erythritol makes this a low-carb variation and affects the caramelization.
 - Check the labels on the sauces. The nutritional values ​​are indicative.

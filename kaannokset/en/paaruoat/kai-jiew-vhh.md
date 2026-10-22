@@ -74,4 +74,6 @@ In hot oil, the omelet rises and gets crispy edges. Use a small, deep pan and fr
 
 ## Notes
 
-- This basic version is low-carb. The saltiness of fish sauces varies, so taste the mixture before frying.
+
+- This basic version is low in carbohydrates. Fish sauces vary in saltiness. Cook a small test portion fully if you want to check the seasoning before frying the whole omelette.
+- Nutrition values are approximate estimates and depend on the products and portion size used.

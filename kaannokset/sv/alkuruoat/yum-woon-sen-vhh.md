@@ -31,7 +31,7 @@ fat_per_serving_g: 20
 ingredients:
   - amount: 400
     unit: g
-    item: konjaknudlar
+    item: avrunna konjaknudlar
   - amount: 200
     unit: g
     item: malet fläsk
@@ -79,7 +79,7 @@ translation_of: yum-woon-sen-vhh
 
 # Lågkolhydratversion av Yum Woon Sen med räkor och konjaknudlar
 
-Yum Woon Sen sen kan kännas igen på den fräscha såsen av lime, fisksås och chili. Denna VHH-variant använder konjaknudlar istället för mungbönnudlar.
+Yum Woon Sen sen kan kännas igen på den fräscha såsen av lime, fisksås och chili. Denna lågkolhydrat-variant använder konjaknudlar istället för mungbönnudlar.
 
 ## Beskrivning
 
@@ -97,3 +97,4 @@ Salladen ska blandas med dressingen precis innan servering, så att grönsakerna
 ## Anteckningar
 
 - konjaknudlar ersätter mungbönsnudlar. Mängden erytritol kan justeras efter den söta och sura balansen.
+- Näringsvärdena är ungefärliga uppskattningar och påverkas av produkter och portionsstorlek.

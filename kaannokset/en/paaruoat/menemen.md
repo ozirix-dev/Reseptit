@@ -1,5 +1,5 @@
 ---
-title: Turkish menemen with tomatoes and paprika
+title: Turkish menemen with tomatoes and peppers
 recipe_id: menemen
 url_slug: menemen
 category: paaruoka
@@ -60,7 +60,7 @@ source_recipe: reseptit/paaruoat/menemen.md
 translation_of: menemen
 ---
 
-# Turkish menemen with tomatoes and paprika
+# Turkish menemen with tomatoes and peppers
 
 In Menemen, eggs are cooked softly in a tomato and paprika mixture. Serve with fresh bread.
 

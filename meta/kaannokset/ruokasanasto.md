@@ -2,6 +2,27 @@
 
 Tämä sanasto tukee reseptien kääntämistä ja tarkistamista. Termi valitaan aina reseptin, tuotteen ja käyttötavan mukaan; taulukko ei ole automaattinen korvaussääntö. Suomenkielinen julkaistu resepti on käännösten sisällöllinen lähde.
 
+## V1.4-tarkistuksen täsmennykset
+
+| Suomi | English (UK) | Svenska | ไทย | Erottelu |
+|---|---|---|---|---|
+| nakki | frankfurter sausage | varmkorv | ไส้กรอกแฟรงก์เฟิร์ต | Ei saksanpähkinä tai koriste. |
+| rahka | quark | kvarg | ควาร์กชีส | Ei raejuusto tai hapanmaito. |
+| poronkäristysliha | thinly sliced reindeer meat | renskav | เนื้อกวางเรนเดียร์หั่นบาง | Ei kuivattu jerky. |
+| paksoi | pak choi | pak choi | ผักกวางตุ้งฮ่องเต้ | Kasvi, ei sakeuttamisverbi. |
+| kardemummakota | cardamom pod | kardemummakapsel | ฝักกระวาน | Maustekota, ei talo. |
+| kiinalainen viismauste | Chinese five-spice powder | kinesisk femkrydda | ผงพะโล้จีน | Ei timjami tai maustepippuri. |
+| konjaknuudelit | konjac noodles | konjaknudlar | เส้นบุก | Ei konjakki tai brandy. |
+| vihreät pavut | green beans | gröna bönor | ถั่วแขก | Ei mungpapu; kypsennä ohjeen mukaan. |
+| persilja | parsley | persilja | พาร์สลีย์ | Erota thaimaalaisesta culantrosta. |
+| tilli | dill | dill | ผักชีลาว | Erota persiljasta ja korianterista. |
+| porsaan ulkofilee | pork loin | fläskytterfilé | เนื้อสันนอกหมู | Ei sisäfilee/tenderloin. |
+| tahmea riisijauho | glutinous rice flour | klibbigt rismjöl | แป้งข้าวเหนียว | Tavallinen riisijauho käyttäytyy eri tavalla. |
+
+Höyrynyytti ei ole nuudeli, korvapuusti ei ole korvatulppa eikä hot pot
+-pöytäkeitin ole vedenkeitin. Näitä merkityseroja tarkistetaan myös ohjeissa
+ja alt-teksteissä, ei pelkästään ainesosaluettelossa.
+
 ## Lihat ja kala
 
 | Suomi | English | Svenska | ไทย | Huomio |

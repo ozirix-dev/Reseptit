@@ -46,7 +46,7 @@ ingredients:
     note: 1-2 กลีบ
   - amount: 400
     unit: g
-    item: บวบ
+    item: ซูกินี
   - amount: 1
     unit: ""
     item: พริกหวานทรงยาว

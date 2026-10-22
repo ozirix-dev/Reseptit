@@ -1,5 +1,5 @@
 ---
-title: VHH-som Tam-stil thailändsk gurksallad
+title: lågkolhydrat-som Tam-stil thailändsk gurksallad
 recipe_id: som-tam-vhh-kurkkuna
 url_slug: som-tam-vhh-kurkkuna
 category: alkuruoka
@@ -69,9 +69,9 @@ source_recipe: reseptit/alkuruoat/som-tam-vhh-kurkkuna.md
 translation_of: som-tam-vhh-kurkkuna
 ---
 
-# VHH-som Tam-stil thailändsk gurksallad
+# lågkolhydrat-som Tam-stil thailändsk gurksallad
 
-Den fräscha, syrliga, salta och varma VHH-salladen får sin smak, men den gröna papayan ersätts av knaprig gurka. Det här är en variant av som tam stil, inte en traditionell papayasallad. Servera som tillbehör eller som förrätt.
+Den fräscha, syrliga, salta och varma lågkolhydrat-salladen får sin smak, men den gröna papayan ersätts av knaprig gurka. Det här är en variant av som tam stil, inte en traditionell papayasallad. Servera som tillbehör eller som förrätt.
 
 ## Beskrivning
 
@@ -80,7 +80,7 @@ Ta bort den vattniga frödelen av gurkan för att hålla salladen krispig. Chili
 ## Tillagning
 
 1. Dela gurkan och skrapa ur frödelen. Skär i tunna långa strimlor.
-2. Koka bönorna i saltat vatten i 2 minuter och svalna. Halvera tomaterna.
+2. Koka färska gröna bönor i saltat vatten i 5–7 minuter tills de är tillagade och låt svalna. Följ förpackningens tillagningsråd för frysta bönor. Halvera tomaterna.
 3. Krossa vitlöken och chilin i en mortel. Tillsätt hälften av jordnötterna och mal grovt.
 4. Tillsätt limejuice, fisksås och erytritol. Rör om såsen och smaka av.
 5. Tillsätt gurkan, bönorna och tomaterna. Häll försiktigt i såsen.
@@ -88,4 +88,5 @@ Ta bort den vattniga frödelen av gurkan för att hålla salladen krispig. Chili
 
 ## Anteckningar
 
-– Det här är en VHH-vänlig som tam variant. Gurka matchar inte smaken eller konsistensen hos traditionell grön papaya.
+– Det här är en lågkolhydrat-vänlig som tam variant. Gurka matchar inte smaken eller konsistensen hos traditionell grön papaya.
+- Näringsvärdena är ungefärliga uppskattningar och påverkas av produkter och portionsstorlek.

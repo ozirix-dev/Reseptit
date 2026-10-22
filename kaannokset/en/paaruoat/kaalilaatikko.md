@@ -62,7 +62,7 @@ source_recipe: reseptit/paaruoat/kaalilaatikko.md
 translation_of: vhh-kaalilaatikko
 ---
 
-# Low-Carb Finnish Cabbage Casserole without Rice
+# Low-Carb Cabbage Casserole without Rice
 
 This Finnish-style cabbage casserole combines softened cabbage, minced beef and a creamy egg mixture, without rice or syrup.
 

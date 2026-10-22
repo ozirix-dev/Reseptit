@@ -60,17 +60,17 @@ translation_status:
 
 # VHH-lihapiirakka
 
-VHH-lihapiirakka on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Avoimen lihapiirakan pohja tehdään mantelijauhosta, juustosta ja kananmunasta.
 
 ## Kuvaus
 
-Tämä gluteeniton leivonnainen valmistuu mantelijauhosta ja säilyttää tutun leivonnaisen maun vähähiilihydraattisessa muodossa.
+Täytteeksi tulee sipulilla maustettua naudan jauhelihaa.
 
 ## Valmistus
 
 1. Kuumenna uuni 200 °C:seen. Sulata juusto ja tuorejuusto varovasti ja sekoita mantelijauho sekä yksi kananmuna joukkoon.
 2. Painele taikina leivinpaperilla vuoratun piirakkavuoan pohjalle ja reunoille.
-3. Ruskista jauheliha ja sipuli, mausta ja levitä pohjalle.
+3. Ruskista jauheliha ja sipuli ja mausta.
 4. Sekoita toinen kananmuna täytteeseen, kaada vuokaan ja paista noin 30 minuuttia.
 
 ## Muistiinpanot

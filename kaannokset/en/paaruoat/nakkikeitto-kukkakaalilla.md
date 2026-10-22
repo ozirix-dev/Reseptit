@@ -21,13 +21,13 @@ tags:
   - jewelry
 image:
   src: paaruoat/nakkikeitto-vhh.webp
-  alt: Nakki soup with cauliflower, celery, leek and parsley in a clear broth
+  alt: Frankfurter sausage soup with cauliflower, celery, leek and parsley in clear stock
   width: 1280
   height: 853
 ingredients:
   - amount: 350
     unit: g
-    item: trinkets
+    item: frankfurter sausages
   - amount: 500
     unit: g
     item: cauliflower
@@ -61,7 +61,7 @@ source_recipe: reseptit/paaruoat/nakkikeitto-kukkakaalilla.md
 translation_of: nakkikeitto-kukkakaalilla
 ---
 
-# Nakkikeitto with cauliflower
+# Sausage Soup with Cauliflower
 
 The familiar clear sausage soup is replaced by potatoes with cauliflower, celery and leeks. The broth is simply seasoned with bay leaves and black pepper.
 
@@ -74,9 +74,9 @@ Low-carbohydrate sausage soup is prepared in one pot. Nak are added only after t
 1. Chop the onion, slice the celery and leek and divide the cauliflower into small florets.
 2. Heat the meat broth to a boil. Add onion, celery, leek, bay leaf and black pepper. Cook on low heat for 5 minutes.
 3. Add the cauliflower and cook for another 8 minutes until it is very soft.
-4. Slice the walnuts and add to the soup. Heat for 3-4 minutes without boiling strongly.
+4. Slice the frankfurter sausages and add to the soup. Heat for 3-4 minutes without boiling strongly.
 5. Remove the bay leaf, taste the broth and add salt if necessary. Finish with parsley.
 
 ## Notes
 
-- Choose Low-Carbohydrate snacks and check the labels. The amount of cauliflower and leek makes this a VHH version, not a strict keto recipe.
+- Choose Low-Carbohydrate snacks and check the labels. The amount of cauliflower and leek makes this a low-carb version, not a strict keto recipe.

@@ -24,7 +24,7 @@ image:
 ingredients:
   - amount: 1.2
     unit: kg
-    item: pork kassler
+    item: pork collar (uncured)
   - amount: 2
     unit: dl
     item: whipping cream
@@ -51,13 +51,13 @@ source_recipe: reseptit/paaruoat/uuniporsas-kermakastikkeessa-vhh.md
 translation_of: uuniporsas-kermakastikkeessa-vhh
 ---
 
-# Roast pork with creamy pan sauce
+# Roast Pork with Cream Sauce
 
-Roast pork with creamy pan sauce is a familiar Finnish dish as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+Fresh pork collar is cooked in the oven with onion and water.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+The juices, seasoned with thyme and black pepper, are then used to make a cream sauce.
 
 ## Preparation
 

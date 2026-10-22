@@ -21,13 +21,13 @@ tags:
   - smycke
 image:
   src: paaruoat/nakkikeitto-vhh.webp
-  alt: Nakkisoppa med blomkål, selleri, purjolök och persilja i klar buljong
+  alt: Korvsoppa med blomkål, selleri, purjolök och persilja i klar buljong
   width: 1280
   height: 853
 ingredients:
   - amount: 350
     unit: g
-    item: prydnadssaker
+    item: varmkorv
   - amount: 500
     unit: g
     item: blomkål
@@ -61,7 +61,7 @@ source_recipe: reseptit/paaruoat/nakkikeitto-kukkakaalilla.md
 translation_of: nakkikeitto-kukkakaalilla
 ---
 
-# Nakkikeitto med blomkål
+# Korvsoppa med blomkål
 
 Den välbekanta klara nakkisoppan ersätts av potatis med blomkål, selleri och purjolök. Buljongen är helt enkelt kryddad med lagerblad och svartpeppar.
 
@@ -74,9 +74,9 @@ Lågkolhydratsoppa korv tillagas i en kastrull. Nak tillsätts först efter att 
 1. Hacka löken, skiva sellerin och purjolöken och dela blomkålen i små buketter.
 2. Koka upp köttbuljongen. Tillsätt lök, selleri, purjolök, lagerblad och svartpeppar. Koka på låg värme i 5 minuter.
 3. Tillsätt blomkålen och koka ytterligare 8 minuter tills den är väldigt mjuk.
-4. Skiva valnötterna och lägg i soppan. Värm i 3-4 minuter utan att koka kraftigt.
+4. Skiva korvarna och lägg i soppan. Värm i 3-4 minuter utan att koka kraftigt.
 5. Ta bort lagerbladet, smaka av buljongen och salt vid behov. Avsluta med persilja.
 
 ## Anteckningar
 
-- Välj mellanmål med låga kolhydrater och kontrollera etiketterna. Mängden blomkål och purjolök gör detta till en VHH-version, inte ett strikt keto-recept.
+- Välj mellanmål med låga kolhydrater och kontrollera etiketterna. Mängden blomkål och purjolök gör detta till en lågkolhydrat-version, inte ett strikt keto-recept.

@@ -74,4 +74,6 @@ I het olja stiger omeletten och får krispiga kanter. Använd en liten djup pann
 
 ## Anteckningar
 
-– Den här basversionen är lågkolhydratsnål. Sältan i fisksåser varierar, så smaka av blandningen innan stekning.
+
+- Grundreceptet har lite kolhydrater. Fisksåsers sälta varierar. Stek en liten provbit helt färdig om du vill kontrollera smaken innan du steker hela omeletten.
+- Näringsvärdena är ungefärliga uppskattningar och påverkas av produkter och portionsstorlek.

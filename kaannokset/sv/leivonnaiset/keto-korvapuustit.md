@@ -19,7 +19,7 @@ tags:
   - lågkolhydrat
 image:
   src: leivonnaiset/keto-korvapuustit.webp
-  alt: Öronproppar smaksatta med kanel och sockerfritt sötningsmedel på ett fat
+  alt: Kanelbullar på ett fat
   width: 1280
   height: 853
 ingredients:
@@ -49,13 +49,13 @@ source_recipe: reseptit/leivonnaiset/keto-korvapuustit.md
 translation_of: keto-korvapuustit
 ---
 
-# Keto kanelbullar
+# Keto-kanelbullar
 
-Keto korvapuusti är en välbekant finsk mat som en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Kanelfyllning rullas in i en deg med mandelmjöl, mozzarella och färskost.
 
 ## Beskrivning
 
-Denna glutenfria bakelse är gjord av mandelmjöl och behåller den välbekanta bakverkssmaken i lågkolhydratform.
+Erytritol sötar fyllningen av smör och kanel.
 
 ## Gör så här
 

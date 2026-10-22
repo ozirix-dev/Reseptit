@@ -20,7 +20,7 @@ tags:
   - ข้าว
 image:
   src: paaruoat/paella-valenciana.webp
-  alt: Paella วาเลนเซียพร้อมข้าวแซฟฟรอน ไก่ กระต่าย และถั่วเขียว
+  alt: Paella วาเลนเซียพร้อมข้าวแซฟฟรอน ไก่ กระต่าย และถั่วแขก
   width: 1279
   height: 853
 ingredients:
@@ -37,7 +37,7 @@ ingredients:
     item: ข้าว Paella หรือข้าวต้ม
   - amount: 150
     unit: g
-    item: ถั่วเขียว
+    item: ถั่วแขก
     note: สับขึ้น
   - amount: 150
     unit: g

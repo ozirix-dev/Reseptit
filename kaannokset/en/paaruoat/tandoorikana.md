@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 1
     unit: kg
-    item: chicken drumsticks
+    item: whole chicken legs (thigh and drumstick)
     note: skinless, sliced
   - amount: 200
     unit: g

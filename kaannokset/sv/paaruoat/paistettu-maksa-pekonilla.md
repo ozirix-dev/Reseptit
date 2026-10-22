@@ -10,7 +10,8 @@ main_ingredient:
   - naudanmaksa
   - pekoni
 cooking_method:
-  - uuni
+  - paistinpannu
+  - liesi
 servings: 4
 time_total_min: 30
 difficulty: lätt
@@ -49,13 +50,13 @@ source_recipe: reseptit/paaruoat/paistettu-maksa-pekonilla.md
 translation_of: paistettu-maksa-pekonilla
 ---
 
-# Stekt lever och bacon
+# Stekt lever med bacon
 
-Stekt lever och bacon är en välbekant finsk mat i en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Tunna leverskivor steks i panna och blandas med bacon och lök.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Grädde binder ihop såsen i pannan.
 
 ## Gör så här
 
