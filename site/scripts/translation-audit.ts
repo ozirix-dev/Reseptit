@@ -106,7 +106,7 @@ function instructionFacts(instructions: string): string[] {
   return facts;
 }
 
-function knownTermErrors(source: Frontmatter, target: Frontmatter, locale: Locale, targetContent: string): string[] {
+export function knownTermErrors(source: Frontmatter, target: Frontmatter, locale: Locale, targetContent: string): string[] {
   const items = target.ingredients.map((ingredient) => ingredient.item);
   const allItems = items.join(" | ");
   const issues: string[] = [];
@@ -160,14 +160,18 @@ export function auditRecipePairs(allSources: TranslationAuditResult["publishedSo
   const translationsByIdLocale = new Map(publishedTranslations.map((recipe) => [`${recipe.data.recipe_id}:${recipe.data.language}`, recipe]));
   const errors: string[] = [];
   const rows: TranslationAuditRow[] = [];
-  const ids = new Set<string>();
-  const routes = new Set<string>();
-  for (const entry of [...sources, ...publishedTranslations]) {
+  const entries = [...sources, ...publishedTranslations];
+  const ids = new Map<string, number>();
+  const routes = new Map<string, number>();
+  for (const entry of entries) {
+    const key = `${entry.data.recipe_id}:${entry.data.language}`, route = `${entry.data.language}:${entry.data.url_slug}`;
+    ids.set(key, (ids.get(key) ?? 0) + 1); routes.set(route, (routes.get(route) ?? 0) + 1);
+  }
+  for (const entry of entries) {
     const key = `${entry.data.recipe_id}:${entry.data.language}`;
     const route = `${entry.data.language}:${entry.data.url_slug}`;
-    if (ids.has(key)) errors.push(`${key}: duplicate published recipe locale`);
-    if (routes.has(route)) errors.push(`${key}: duplicate published route ${route}`);
-    ids.add(key); routes.add(route);
+    if (ids.get(key)! > 1) errors.push(`${key}: duplicate published recipe locale`);
+    if (routes.get(route)! > 1) errors.push(`${key}: duplicate published route ${route}`);
     if (sources.includes(entry) && entry.data.language !== "fi") errors.push(`${key}: source language must be fi`);
     if (publishedTranslations.includes(entry) && !locales.includes(entry.data.language as Locale)) errors.push(`${key}: unexpected translation language`);
   }
