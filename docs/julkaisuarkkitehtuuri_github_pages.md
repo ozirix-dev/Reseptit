@@ -64,7 +64,7 @@ saatavuuden, ei Search Consolen omistajuusvahvistuksen onnistumista.
 ## Kuvien lisääminen
 
 - Lisää aidot, optimoidut WebP-tiedostot polkuun `kuvat/<luokka>/<tiedosto>.webp`, esimerkiksi `kuvat/leivonnaiset/keto-kauralesesampylat.webp`.
-- Reseptin `image`-frontmatter sisältää `src`, kuvailevan `alt`-tekstin sekä oikeat pikselimitat. Tarvittaessa lisää `srcset`-variantit ja `sizes`.
+- Reseptin `image`-frontmatter sisältää `src`, kuvailevan `alt`-tekstin sekä oikeat pikselimitat. V1.5 muodostaa `srcset`-variantit ja `sizes`-arvot automaattisesti Sharpilla; älä ylläpidä niitä käsin.
 - Build validoi suhteellisen WebP-polun, tarkistaa tiedoston olemassaolon `kuvat/`-kansion alla ja kopioi tiedoston julkiseen buildiin. Älä lisää placeholder-kuvia tai kuvaa, joka ei esitä kyseistä reseptiä.
 - Hakemiston kuvat ladataan viiveellä. Yksittäisen reseptisivun kuva ladataan ensisijaisesti, ja sen mitat varataan asetteluun.
 
@@ -101,8 +101,8 @@ retry-linkki lataa ajantasaisen sivun kokonaan.
 
 Hakemiston ensimmäinen kuva on eager/high. Toisen ja kolmannen kortin
 esilataus on sidottu 700/1100 px:n grid-rajoihin; mobiili ei esilataa kolmea
-kuvaa. Muut kortit ovat lazy. Suuret alkuperäiset kuvat ovat edelleen merkittävä
-siirtokuorma; responsive-kuvaversiot ovat seuraava erillinen optimointikohde.
+kuvaa. Muut kortit ovat lazy. V1.5 tuottaa automaattiset responsiiviset
+WebP-variantit; selain valitsee asetteluun ja pikselitiheyteen sopivan kuvan.
 
 ### Suorituskyvyn seuranta
 
