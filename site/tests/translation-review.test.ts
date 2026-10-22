@@ -64,7 +64,18 @@ test("source-level failures prevent complete status on all affected translations
   const target = all.publishedTranslations.find((r) => r.data.recipe_id === source.data.recipe_id && r.data.language === "en")!;
   const hashes = { [source.path]: proof.source_content_hash, [target.path]: proof.translation_content_hash };
   const evidence = { ...proof, recipe_id: source.data.recipe_id };
-  const rows = buildRegistry(auditRecipePairs([source, source], [target]), hashes, [evidence]);
+  assert.throws(() => buildRegistry(auditRecipePairs([source, source], [target]), hashes, [evidence]), /exactly one registry pair/);
+  const rows = buildRegistry(auditRecipePairs([source, source], [target]), hashes, []);
   assert.ok(rows.every((row) => row.structural_status === "FAIL" && row.human_review_status !== "HUMAN REVIEW COMPLETE"));
   assert.ok(rows.every((row) => row.notes.some((note) => note.includes(":fi: duplicate"))));
+});
+test("orphaned evidence fails for unknown recipe or removed translation", async () => {
+  const all = await auditTranslations();
+  const source = structuredClone(all.publishedSources[0]); source.data.translation_status = {}; source.data.translation_languages = [];
+  const target = all.publishedTranslations.find((r) => r.data.recipe_id === source.data.recipe_id && r.data.language === "en")!;
+  const hashes = { [source.path]: proof.source_content_hash, [target.path]: proof.translation_content_hash };
+  const evidence = evidenceSchema.parse([{ ...proof, recipe_id: source.data.recipe_id }]);
+  assert.equal(buildRegistry(auditRecipePairs([source], [target]), hashes, evidence).length, 1);
+  assert.throws(() => buildRegistry(auditRecipePairs([source], [target]), hashes, [proof]), /0 matches/);
+  assert.throws(() => buildRegistry(auditRecipePairs([source], []), hashes, evidence), /0 matches/);
 });

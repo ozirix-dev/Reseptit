@@ -65,6 +65,10 @@ export function buildRegistry(audit: TranslationAuditResult, hashes: Record<stri
       risk_level: risk.level, notes: [...risk.reasons, ...pairErrors, ...semantic],
     }];
   }));
+  for (const key of keys) {
+    const matches = rows.filter((row) => `${row.recipe_id}:${row.locale}` === key);
+    if (matches.length !== 1) throw Error(`Review evidence must match exactly one registry pair: ${key} (${matches.length} matches)`);
+  }
   const order = { th: 0, en: 1, sv: 2 }, priority: Record<string, number> = { high: 0, medium: 1, low: 2 };
   return rows.sort((a, b) => order[a.locale] - order[b.locale] || priority[a.risk_level] - priority[b.risk_level] || a.recipe_id.localeCompare(b.recipe_id));
 }
