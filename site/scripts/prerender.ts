@@ -1,3 +1,4 @@
+import { contentForRoute, serializeRouteContent } from "../src/content/route-data";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import React from "react";
@@ -54,6 +55,11 @@ function routeMetadata(route: string) {
   const jsonLd = recipe
     ? `<script id="recipe-jsonld" type="application/ld+json">${JSON.stringify(recipeJsonLd(recipe)).replaceAll("<", "\\u003c")}</script>`
     : "";
+  // Match the card grid breakpoints. Do not eagerly fetch three cards on mobile.
+  const desktopImages = recipe ? [] : siteContent.recipes.filter((item) => item.locale === locale)
+    .slice(1, 3).flatMap((item, index) => item.image ? [
+      `<link rel="preload" as="image" fetchpriority="high" href="${escapeHtml(item.image.src)}" media="(min-width: ${index === 0 ? 700 : 1100}px)"${item.image.srcSet ? ` imagesrcset="${escapeHtml(item.image.srcSet)}"` : ""}${item.image.sizes ? ` imagesizes="${escapeHtml(item.image.sizes)}"` : ""} />`,
+    ] : []);
   return {
     lang: locale,
     head: [
@@ -68,7 +74,7 @@ function routeMetadata(route: string) {
       `<meta name="twitter:card" content="${recipe?.image ? "summary_large_image" : "summary"}" />`,
       `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
       `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
-      ...imageTags, ...alternates, jsonLd,
+      ...imageTags, ...alternates, ...desktopImages, jsonLd,
     ].filter(Boolean).join("\n    "),
   };
 }
@@ -90,6 +96,9 @@ const vite = await createServer({
 try {
   const { createStaticRouter } = await vite.ssrLoadModule("/src/router.tsx");
   const shell = await readFile(path.join(distDir, "index.html"), "utf8");
+  if (!shell.includes('<div id="root"></div>')) {
+    throw new Error("Prerender requires a fresh Vite build. Run npm run build.");
+  }
   const routes = [...new Set([
     "/",
     ...(Object.keys(localeBase) as RecipeLocale[])
@@ -101,16 +110,17 @@ try {
   for (const route of routes) {
     const metadata = routeMetadata(route);
     if (!metadata) continue;
-    const router = createStaticRouter(route);
+    const initial = contentForRoute(siteContent.recipes, route);
+    const router = createStaticRouter(route, initial);
     const body = renderToString(React.createElement(RouterProvider, { router }));
-    const html = replaceDocument(shell, metadata.head, metadata.lang, body);
+    const html = replaceDocument(shell, `${metadata.head}\n<script id="page-content" type="application/json">${serializeRouteContent(initial)}</script>`, metadata.lang, body);
     for (const outputPath of outputPaths(route)) {
       await mkdir(path.dirname(outputPath), { recursive: true });
       await writeFile(outputPath, html, "utf8");
     }
   }
 
-  const notFoundRouter = createStaticRouter("/404");
+  const notFoundRouter = createStaticRouter("/404", contentForRoute(siteContent.recipes, "/404"));
   const notFoundBody = renderToString(React.createElement(RouterProvider, { router: notFoundRouter }));
   const notFoundHead = [
     "<title>Sivua ei löytynyt | Reseptit</title>",

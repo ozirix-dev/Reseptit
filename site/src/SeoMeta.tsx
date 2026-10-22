@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { recipeJsonLd } from "@/features/recipes/schema";
 import { recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
-import { getRecipeByPath, getRecipeTranslations, getRecipes } from "@/lib/content";
+import { useContent } from "@/lib/content";
 import type { RecipeLocale } from "@/types/content";
 
 const siteBase = "https://ozirix-dev.github.io/Reseptit";
@@ -28,13 +28,14 @@ function indexPath(locale: RecipeLocale): string {
 export function SeoMeta() {
   const { pathname } = useLocation();
 
+  const { recipe, translations, locales } = useContent();
+
   useEffect(() => {
-    const recipe = getRecipeByPath(pathname);
     const strippedPath = pathname.replace(new RegExp(`^${sitePath}(?=/|$)`), "") || "/";
     const routeLocale = (Object.keys(baseByLocale) as RecipeLocale[]).find((locale) =>
       locale === "fi" ? strippedPath === "/" : strippedPath === `${baseByLocale[locale]}/` || strippedPath === baseByLocale[locale]);
-    const indexExists = routeLocale === "fi" || (routeLocale !== undefined && getRecipes(routeLocale).length > 0);
-    const known = recipe !== undefined || indexExists;
+    const indexExists = routeLocale === "fi" || (routeLocale !== undefined && locales.includes(routeLocale));
+    const known = recipe !== null || indexExists;
     // Keep unknown deep links' metadata in the same locale as the visible not-found page.
     const locale = recipe?.locale ?? routeLocale ?? recipeLocaleFromPath(strippedPath);
     const title = known
@@ -61,11 +62,10 @@ export function SeoMeta() {
       canonicalLink.href = canonical;
       document.head.append(canonicalLink);
     }
-    const translations = recipe ? getRecipeTranslations(recipe) : getRecipes().filter((entry) => entry.locale === locale);
     const alternates = !known ? [] : recipe
       ? translations.map((entry) => ({ locale: entry.locale, path: entry.routePath }))
       : (Object.keys(baseByLocale) as RecipeLocale[])
-          .filter((entryLocale) => getRecipes(entryLocale).length > 0)
+          .filter((entryLocale) => locales.includes(entryLocale))
           .map((entryLocale) => ({ locale: entryLocale, path: indexPath(entryLocale) }));
     for (const alternate of alternates) {
       const link = document.createElement("link");
@@ -93,7 +93,7 @@ export function SeoMeta() {
       script.textContent = JSON.stringify(recipeJsonLd(recipe));
       document.head.append(script);
     }
-  }, [pathname]);
+  }, [pathname, recipe, translations, locales]);
 
   return null;
 }

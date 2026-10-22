@@ -1,0 +1,1456 @@
+{
+  "lighthouse-before": {
+    "version": "13.5.0",
+    "settings": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 20000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance"
+      ],
+      "skipAudits": null
+    },
+    "rows": [
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/",
+        "run": 1,
+        "score": 0.66,
+        "lcp": 4407.016,
+        "cls": 0.2801016012897721,
+        "tbt": 23.5,
+        "requests": 12,
+        "transfer": 2194729,
+        "jsTransfer": 346514,
+        "imagesTransfer": 1830840,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/",
+        "run": 2,
+        "score": 0.68,
+        "lcp": 4128.617,
+        "cls": 0.2801016012897721,
+        "tbt": 37.5,
+        "requests": 12,
+        "transfer": 2194628,
+        "jsTransfer": 346514,
+        "imagesTransfer": 1830739,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/",
+        "run": 3,
+        "score": 0.69,
+        "lcp": 4106.876,
+        "cls": 0.2801016012897721,
+        "tbt": 31.5,
+        "requests": 12,
+        "transfer": 2194637,
+        "jsTransfer": 346514,
+        "imagesTransfer": 1830748,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/kermainen-lohipata/",
+        "run": 1,
+        "score": 0.79,
+        "lcp": 4839.1391,
+        "cls": 0,
+        "tbt": 56,
+        "requests": 5,
+        "transfer": 695756,
+        "jsTransfer": 346514,
+        "imagesTransfer": 343383,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/kermainen-lohipata/",
+        "run": 2,
+        "score": 0.79,
+        "lcp": 4832.6078,
+        "cls": 0,
+        "tbt": 47,
+        "requests": 5,
+        "transfer": 695671,
+        "jsTransfer": 346514,
+        "imagesTransfer": 343298,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/kermainen-lohipata/",
+        "run": 3,
+        "score": 0.79,
+        "lcp": 4695.2499,
+        "cls": 0,
+        "tbt": 28,
+        "requests": 5,
+        "transfer": 695671,
+        "jsTransfer": 346514,
+        "imagesTransfer": 343298,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/en/recipes/",
+        "run": 1,
+        "score": 0.68,
+        "lcp": 4114.485000000001,
+        "cls": 0.2801016012897721,
+        "tbt": 32.5,
+        "requests": 12,
+        "transfer": 2168157,
+        "jsTransfer": 346514,
+        "imagesTransfer": 1804644,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/en/recipes/",
+        "run": 2,
+        "score": 0.69,
+        "lcp": 4107.216500000001,
+        "cls": 0.2801016012897721,
+        "tbt": 26,
+        "requests": 12,
+        "transfer": 2168190,
+        "jsTransfer": 346514,
+        "imagesTransfer": 1804677,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/en/recipes/",
+        "run": 3,
+        "score": 0.63,
+        "lcp": 5076.8943,
+        "cls": 0.2801016012897721,
+        "tbt": 53,
+        "requests": 12,
+        "transfer": 2168166,
+        "jsTransfer": 346514,
+        "imagesTransfer": 1804653,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/sv/recept/proteinrik-makaronilada-med-kottfars/",
+        "run": 1,
+        "score": 0.83,
+        "lcp": 4059.9294999999993,
+        "cls": 0,
+        "tbt": 26.5,
+        "requests": 5,
+        "transfer": 553738,
+        "jsTransfer": 346514,
+        "imagesTransfer": 201068,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/sv/recept/proteinrik-makaronilada-med-kottfars/",
+        "run": 2,
+        "score": 0.83,
+        "lcp": 4062.6865000000003,
+        "cls": 0,
+        "tbt": 15.499999999999773,
+        "requests": 5,
+        "transfer": 553677,
+        "jsTransfer": 346514,
+        "imagesTransfer": 201007,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/sv/recept/proteinrik-makaronilada-med-kottfars/",
+        "run": 3,
+        "score": 0.84,
+        "lcp": 3966.35,
+        "cls": 0,
+        "tbt": 25.5,
+        "requests": 5,
+        "transfer": 553661,
+        "jsTransfer": 346514,
+        "imagesTransfer": 200991,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/th/recipes/makaroni-op-nuea-bot-protein-sung/",
+        "run": 1,
+        "score": 0.84,
+        "lcp": 3952.1985999999997,
+        "cls": 0,
+        "tbt": 47.5,
+        "requests": 5,
+        "transfer": 554299,
+        "jsTransfer": 346514,
+        "imagesTransfer": 201142,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/th/recipes/makaroni-op-nuea-bot-protein-sung/",
+        "run": 2,
+        "score": 0.84,
+        "lcp": 3951.2005999999997,
+        "cls": 0,
+        "tbt": 19,
+        "requests": 5,
+        "transfer": 554240,
+        "jsTransfer": 346514,
+        "imagesTransfer": 201083,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "mobile",
+        "route": "/th/recipes/makaroni-op-nuea-bot-protein-sung/",
+        "run": 3,
+        "score": 0.84,
+        "lcp": 3955.9615999999996,
+        "cls": 0,
+        "tbt": 18,
+        "requests": 5,
+        "transfer": 554164,
+        "jsTransfer": 346514,
+        "imagesTransfer": 201007,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/",
+        "run": 1,
+        "score": 0.91,
+        "lcp": 1793.0365000000002,
+        "cls": 0.0850428026256923,
+        "tbt": 0,
+        "requests": 28,
+        "transfer": 5419384,
+        "jsTransfer": 346514,
+        "imagesTransfer": 5055495,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/",
+        "run": 2,
+        "score": 0.98,
+        "lcp": 845.149,
+        "cls": 0.0850428026256923,
+        "tbt": 0,
+        "requests": 28,
+        "transfer": 5419074,
+        "jsTransfer": 346514,
+        "imagesTransfer": 5055185,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/",
+        "run": 3,
+        "score": 0.98,
+        "lcp": 828.6945000000001,
+        "cls": 0.0850428026256923,
+        "tbt": 0,
+        "requests": 28,
+        "transfer": 5419089,
+        "jsTransfer": 346514,
+        "imagesTransfer": 5055200,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/kermainen-lohipata/",
+        "run": 1,
+        "score": 0.99,
+        "lcp": 897.7574000000001,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 695816,
+        "jsTransfer": 346514,
+        "imagesTransfer": 343443,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/kermainen-lohipata/",
+        "run": 2,
+        "score": 0.99,
+        "lcp": 875.2847,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 695671,
+        "jsTransfer": 346514,
+        "imagesTransfer": 343298,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/kermainen-lohipata/",
+        "run": 3,
+        "score": 0.99,
+        "lcp": 913.5027,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 695671,
+        "jsTransfer": 346514,
+        "imagesTransfer": 343298,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/en/recipes/",
+        "run": 1,
+        "score": 0.98,
+        "lcp": 828.3013000000001,
+        "cls": 0.0850428026256923,
+        "tbt": 0,
+        "requests": 28,
+        "transfer": 5418702,
+        "jsTransfer": 346514,
+        "imagesTransfer": 5055189,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/en/recipes/",
+        "run": 2,
+        "score": 0.96,
+        "lcp": 1122.8421,
+        "cls": 0.0850428026256923,
+        "tbt": 0,
+        "requests": 28,
+        "transfer": 5418729,
+        "jsTransfer": 346514,
+        "imagesTransfer": 5055216,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/en/recipes/",
+        "run": 3,
+        "score": 0.98,
+        "lcp": 835.5848,
+        "cls": 0.0850428026256923,
+        "tbt": 0,
+        "requests": 28,
+        "transfer": 5418750,
+        "jsTransfer": 346514,
+        "imagesTransfer": 5055237,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/sv/recept/proteinrik-makaronilada-med-kottfars/",
+        "run": 1,
+        "score": 1,
+        "lcp": 777.1046999999999,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 553728,
+        "jsTransfer": 346514,
+        "imagesTransfer": 201058,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/sv/recept/proteinrik-makaronilada-med-kottfars/",
+        "run": 2,
+        "score": 1,
+        "lcp": 779.5676000000001,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 553663,
+        "jsTransfer": 346514,
+        "imagesTransfer": 200993,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/sv/recept/proteinrik-makaronilada-med-kottfars/",
+        "run": 3,
+        "score": 1,
+        "lcp": 768.0153000000001,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 553768,
+        "jsTransfer": 346514,
+        "imagesTransfer": 201098,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/th/recipes/makaroni-op-nuea-bot-protein-sung/",
+        "run": 1,
+        "score": 1,
+        "lcp": 775.6508,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 554221,
+        "jsTransfer": 346514,
+        "imagesTransfer": 201064,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/th/recipes/makaroni-op-nuea-bot-protein-sung/",
+        "run": 2,
+        "score": 1,
+        "lcp": 768.8647999999998,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 554229,
+        "jsTransfer": 346514,
+        "imagesTransfer": 201072,
+        "errors": null
+      },
+      {
+        "phase": "before",
+        "mode": "desktop",
+        "route": "/th/recipes/makaroni-op-nuea-bot-protein-sung/",
+        "run": 3,
+        "score": 1,
+        "lcp": 768.7225000000002,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 554151,
+        "jsTransfer": 346514,
+        "imagesTransfer": 200994,
+        "errors": null
+      }
+    ]
+  },
+  "lighthouse-after": {
+    "version": "13.5.0",
+    "settings": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 20000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance"
+      ],
+      "skipAudits": null
+    },
+    "rows": [
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/",
+        "run": 1,
+        "score": 0.92,
+        "lcp": 3222.955,
+        "cls": 0,
+        "tbt": 50,
+        "requests": 11,
+        "transfer": 1756738,
+        "jsTransfer": 115419,
+        "imagesTransfer": 1603295,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/",
+        "run": 2,
+        "score": 0.93,
+        "lcp": 3107.6322,
+        "cls": 0,
+        "tbt": 57,
+        "requests": 11,
+        "transfer": 1756636,
+        "jsTransfer": 115419,
+        "imagesTransfer": 1603193,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/",
+        "run": 3,
+        "score": 0.93,
+        "lcp": 3128.3965,
+        "cls": 0,
+        "tbt": 44,
+        "requests": 11,
+        "transfer": 1756636,
+        "jsTransfer": 115419,
+        "imagesTransfer": 1603193,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/kermainen-lohipata/",
+        "run": 1,
+        "score": 0.9,
+        "lcp": 3509.0887,
+        "cls": 0,
+        "tbt": 42,
+        "requests": 5,
+        "transfer": 465215,
+        "jsTransfer": 115419,
+        "imagesTransfer": 343338,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/kermainen-lohipata/",
+        "run": 2,
+        "score": 0.9,
+        "lcp": 3567.5334,
+        "cls": 0,
+        "tbt": 49,
+        "requests": 5,
+        "transfer": 465197,
+        "jsTransfer": 115419,
+        "imagesTransfer": 343320,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/kermainen-lohipata/",
+        "run": 3,
+        "score": 0.9,
+        "lcp": 3642.1543999999994,
+        "cls": 0,
+        "tbt": 35,
+        "requests": 5,
+        "transfer": 465353,
+        "jsTransfer": 115419,
+        "imagesTransfer": 343476,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/en/recipes/",
+        "run": 1,
+        "score": 0.93,
+        "lcp": 3146.4696000000004,
+        "cls": 0,
+        "tbt": 51,
+        "requests": 11,
+        "transfer": 1676120,
+        "jsTransfer": 115419,
+        "imagesTransfer": 1523638,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/en/recipes/",
+        "run": 2,
+        "score": 0.93,
+        "lcp": 3102.4353,
+        "cls": 0,
+        "tbt": 48,
+        "requests": 11,
+        "transfer": 1676265,
+        "jsTransfer": 115419,
+        "imagesTransfer": 1523783,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/en/recipes/",
+        "run": 3,
+        "score": 0.93,
+        "lcp": 3107.0259,
+        "cls": 0,
+        "tbt": 57,
+        "requests": 11,
+        "transfer": 1676290,
+        "jsTransfer": 115419,
+        "imagesTransfer": 1523808,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/sv/recept/proteinrik-makaronilada-med-kottfars/",
+        "run": 1,
+        "score": 0.95,
+        "lcp": 2798.5742,
+        "cls": 0,
+        "tbt": 47,
+        "requests": 5,
+        "transfer": 323262,
+        "jsTransfer": 115419,
+        "imagesTransfer": 201035,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/sv/recept/proteinrik-makaronilada-med-kottfars/",
+        "run": 2,
+        "score": 0.96,
+        "lcp": 2768.1385,
+        "cls": 0,
+        "tbt": 28,
+        "requests": 5,
+        "transfer": 323349,
+        "jsTransfer": 115419,
+        "imagesTransfer": 201122,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/sv/recept/proteinrik-makaronilada-med-kottfars/",
+        "run": 3,
+        "score": 0.95,
+        "lcp": 2794.2823,
+        "cls": 0,
+        "tbt": 22,
+        "requests": 5,
+        "transfer": 323234,
+        "jsTransfer": 115419,
+        "imagesTransfer": 201007,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/th/recipes/makaroni-op-nuea-bot-protein-sung/",
+        "run": 1,
+        "score": 0.96,
+        "lcp": 2741.9118999999996,
+        "cls": 0,
+        "tbt": 30,
+        "requests": 5,
+        "transfer": 323826,
+        "jsTransfer": 115419,
+        "imagesTransfer": 201049,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/th/recipes/makaroni-op-nuea-bot-protein-sung/",
+        "run": 2,
+        "score": 0.96,
+        "lcp": 2731.7982,
+        "cls": 0,
+        "tbt": 31,
+        "requests": 5,
+        "transfer": 323826,
+        "jsTransfer": 115419,
+        "imagesTransfer": 201049,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "mobile",
+        "route": "/th/recipes/makaroni-op-nuea-bot-protein-sung/",
+        "run": 3,
+        "score": 0.96,
+        "lcp": 2754.3705,
+        "cls": 0,
+        "tbt": 27,
+        "requests": 5,
+        "transfer": 323899,
+        "jsTransfer": 115419,
+        "imagesTransfer": 201122,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/",
+        "run": 1,
+        "score": 0.99,
+        "lcp": 1034.5195999999999,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 28,
+        "transfer": 5208712,
+        "jsTransfer": 115419,
+        "imagesTransfer": 5055269,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/",
+        "run": 2,
+        "score": 0.98,
+        "lcp": 1054.0050999999999,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 28,
+        "transfer": 5208646,
+        "jsTransfer": 115419,
+        "imagesTransfer": 5055203,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/",
+        "run": 3,
+        "score": 0.98,
+        "lcp": 1044.7849,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 28,
+        "transfer": 5208665,
+        "jsTransfer": 115419,
+        "imagesTransfer": 5055222,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/kermainen-lohipata/",
+        "run": 1,
+        "score": 1,
+        "lcp": 712.425,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 465251,
+        "jsTransfer": 115419,
+        "imagesTransfer": 343374,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/kermainen-lohipata/",
+        "run": 2,
+        "score": 1,
+        "lcp": 721.7455,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 465247,
+        "jsTransfer": 115419,
+        "imagesTransfer": 343370,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/kermainen-lohipata/",
+        "run": 3,
+        "score": 1,
+        "lcp": 730.8208999999999,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 465270,
+        "jsTransfer": 115419,
+        "imagesTransfer": 343393,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/en/recipes/",
+        "run": 1,
+        "score": 0.99,
+        "lcp": 1004.1814999999999,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 28,
+        "transfer": 5207674,
+        "jsTransfer": 115419,
+        "imagesTransfer": 5055192,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/en/recipes/",
+        "run": 2,
+        "score": 0.99,
+        "lcp": 1004.658,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 28,
+        "transfer": 5207713,
+        "jsTransfer": 115419,
+        "imagesTransfer": 5055231,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/en/recipes/",
+        "run": 3,
+        "score": 0.99,
+        "lcp": 853.6138000000001,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 28,
+        "transfer": 5207747,
+        "jsTransfer": 115419,
+        "imagesTransfer": 5055265,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/sv/recept/proteinrik-makaronilada-med-kottfars/",
+        "run": 1,
+        "score": 1,
+        "lcp": 597.3067,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 323285,
+        "jsTransfer": 115419,
+        "imagesTransfer": 201058,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/sv/recept/proteinrik-makaronilada-med-kottfars/",
+        "run": 2,
+        "score": 1,
+        "lcp": 777.9275,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 323505,
+        "jsTransfer": 115419,
+        "imagesTransfer": 201278,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/sv/recept/proteinrik-makaronilada-med-kottfars/",
+        "run": 3,
+        "score": 1,
+        "lcp": 598.7677,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 323219,
+        "jsTransfer": 115419,
+        "imagesTransfer": 200992,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/th/recipes/makaroni-op-nuea-bot-protein-sung/",
+        "run": 1,
+        "score": 1,
+        "lcp": 598.9852000000001,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 323770,
+        "jsTransfer": 115419,
+        "imagesTransfer": 200993,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/th/recipes/makaroni-op-nuea-bot-protein-sung/",
+        "run": 2,
+        "score": 1,
+        "lcp": 611.5368,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 323769,
+        "jsTransfer": 115419,
+        "imagesTransfer": 200992,
+        "errors": null
+      },
+      {
+        "phase": "after",
+        "mode": "desktop",
+        "route": "/th/recipes/makaroni-op-nuea-bot-protein-sung/",
+        "run": 3,
+        "score": 1,
+        "lcp": 590.6544,
+        "cls": 0,
+        "tbt": 0,
+        "requests": 5,
+        "transfer": 324027,
+        "jsTransfer": 115419,
+        "imagesTransfer": 201250,
+        "errors": null
+      }
+    ]
+  },
+  "scale-before": [
+    {
+      "count": 119,
+      "versions": 476,
+      "routes": 480,
+      "dataMs": 32.43730000000005,
+      "viteMs": 701.2033999999999,
+      "renderMs": 1335.1566000000003,
+      "pipelineMs": 2068.7973,
+      "jsRaw": 1714648,
+      "jsGzip": 355817,
+      "fullContent": {
+        "raw": 1446560,
+        "gzip": 254360
+      },
+      "fiFull": {
+        "raw": 313664,
+        "gzip": 52009
+      },
+      "fiIndex": {
+        "raw": 120890,
+        "gzip": 20663
+      },
+      "recipe": {
+        "raw": 2593,
+        "gzip": 1015
+      },
+      "manifest": {
+        "raw": 27996,
+        "gzip": 8653
+      },
+      "renderedHtmlBytes": 2765383,
+      "searchMedianMs": 15.214600000000019
+    },
+    {
+      "count": 250,
+      "versions": 1000,
+      "routes": 1004,
+      "dataMs": 60.49709999999959,
+      "viteMs": 568.6500999999989,
+      "renderMs": 2617.7587000000003,
+      "pipelineMs": 3246.905899999999,
+      "jsRaw": 3246625,
+      "jsGzip": 631856,
+      "fullContent": {
+        "raw": 3050529,
+        "gzip": 533076
+      },
+      "fiFull": {
+        "raw": 662184,
+        "gzip": 108725
+      },
+      "fiIndex": {
+        "raw": 256741,
+        "gzip": 42943
+      },
+      "recipe": {
+        "raw": 2593,
+        "gzip": 1015
+      },
+      "manifest": {
+        "raw": 64523,
+        "gzip": 17778
+      },
+      "renderedHtmlBytes": 5823495,
+      "searchMedianMs": 27.67070000000058
+    },
+    {
+      "count": 500,
+      "versions": 2000,
+      "routes": 2004,
+      "dataMs": 160.8887999999988,
+      "viteMs": 1146.0404000000017,
+      "renderMs": 6806.2249999999985,
+      "pipelineMs": 8113.154199999999,
+      "jsRaw": 6177348,
+      "jsGzip": 1158967,
+      "fullContent": {
+        "raw": 6118400,
+        "gzip": 1066029
+      },
+      "fiFull": {
+        "raw": 1328233,
+        "gzip": 216774
+      },
+      "fiIndex": {
+        "raw": 515440,
+        "gzip": 84912
+      },
+      "recipe": {
+        "raw": 2593,
+        "gzip": 1015
+      },
+      "manifest": {
+        "raw": 134886,
+        "gzip": 36373
+      },
+      "renderedHtmlBytes": 11675523,
+      "searchMedianMs": 57.439299999998184
+    }
+  ],
+  "scale-results": [
+    {
+      "count": 119,
+      "versions": 476,
+      "routes": 480,
+      "dataMs": 41.75790000000006,
+      "viteMs": 376.7709,
+      "renderMs": 1511.4174999999996,
+      "pipelineMs": 1929.9462999999996,
+      "jsRaw": 363779,
+      "jsGzip": 115058,
+      "fullContent": {
+        "raw": 1446560,
+        "gzip": 254360
+      },
+      "fiFull": {
+        "raw": 313664,
+        "gzip": 52009
+      },
+      "fiIndex": {
+        "raw": 120890,
+        "gzip": 20663
+      },
+      "recipe": {
+        "raw": 2593,
+        "gzip": 1015
+      },
+      "manifest": {
+        "raw": 27996,
+        "gzip": 8653
+      },
+      "renderedHtmlBytes": 2767703,
+      "searchMedianMs": 15.66879999999992
+    },
+    {
+      "count": 250,
+      "versions": 1000,
+      "routes": 1004,
+      "dataMs": 70.16299999999956,
+      "viteMs": 213.2453999999998,
+      "renderMs": 2968.3169000000016,
+      "pipelineMs": 3251.725300000001,
+      "jsRaw": 400306,
+      "jsGzip": 124602,
+      "fullContent": {
+        "raw": 3050529,
+        "gzip": 533076
+      },
+      "fiFull": {
+        "raw": 662184,
+        "gzip": 108725
+      },
+      "fiIndex": {
+        "raw": 256741,
+        "gzip": 42943
+      },
+      "recipe": {
+        "raw": 2593,
+        "gzip": 1015
+      },
+      "manifest": {
+        "raw": 64523,
+        "gzip": 17778
+      },
+      "renderedHtmlBytes": 5825815,
+      "searchMedianMs": 27.868499999999585
+    },
+    {
+      "count": 500,
+      "versions": 2000,
+      "routes": 2004,
+      "dataMs": 159.1895999999997,
+      "viteMs": 186.52189999999973,
+      "renderMs": 5535.9499,
+      "pipelineMs": 5881.661399999999,
+      "jsRaw": 470669,
+      "jsGzip": 143200,
+      "fullContent": {
+        "raw": 6118400,
+        "gzip": 1066029
+      },
+      "fiFull": {
+        "raw": 1328233,
+        "gzip": 216774
+      },
+      "fiIndex": {
+        "raw": 515440,
+        "gzip": 84912
+      },
+      "recipe": {
+        "raw": 2593,
+        "gzip": 1015
+      },
+      "manifest": {
+        "raw": 134886,
+        "gzip": 36373
+      },
+      "renderedHtmlBytes": 11677843,
+      "searchMedianMs": 62.30529999999999
+    }
+  ],
+  "modules-before": [
+    {
+      "id": "\u0000rolldown/runtime.js",
+      "renderedLength": 1175
+    },
+    {
+      "id": "\u0000vite/modulepreload-polyfill.js",
+      "renderedLength": 1205
+    },
+    {
+      "id": "site/node_modules/react/cjs/react.production.js",
+      "renderedLength": 16028
+    },
+    {
+      "id": "site/node_modules/react/index.js",
+      "renderedLength": 205
+    },
+    {
+      "id": "site/node_modules/scheduler/cjs/scheduler.production.js",
+      "renderedLength": 9093
+    },
+    {
+      "id": "site/node_modules/scheduler/index.js",
+      "renderedLength": 217
+    },
+    {
+      "id": "site/node_modules/react-dom/cjs/react-dom.production.js",
+      "renderedLength": 6299
+    },
+    {
+      "id": "site/node_modules/react-dom/index.js",
+      "renderedLength": 497
+    },
+    {
+      "id": "site/node_modules/react-dom/cjs/react-dom-client.production.js",
+      "renderedLength": 530259
+    },
+    {
+      "id": "site/node_modules/react-dom/client.js",
+      "renderedLength": 502
+    },
+    {
+      "id": "\u0000vite/preload-helper.js",
+      "renderedLength": 2999
+    },
+    {
+      "id": "site/node_modules/react-router/dist/development/chunk-OB3PAWPO.mjs",
+      "renderedLength": 208949
+    },
+    {
+      "id": "site/node_modules/react-router/dist/development/dom-export.mjs",
+      "renderedLength": 389
+    },
+    {
+      "id": "site/src/generated/content.generated.ts",
+      "renderedLength": 1439137
+    },
+    {
+      "id": "site/src/lib/content.ts",
+      "renderedLength": 584
+    },
+    {
+      "id": "site/src/features/recipes/recipe-i18n.ts",
+      "renderedLength": 5936
+    },
+    {
+      "id": "site/src/features/recipes/servings.ts",
+      "renderedLength": 451
+    },
+    {
+      "id": "site/node_modules/react/cjs/react-jsx-runtime.production.js",
+      "renderedLength": 802
+    },
+    {
+      "id": "site/node_modules/react/jsx-runtime.js",
+      "renderedLength": 229
+    },
+    {
+      "id": "site/src/features/recipes/RecipePage.tsx",
+      "renderedLength": 7627
+    },
+    {
+      "id": "site/src/features/recipes/recipe-search.ts",
+      "renderedLength": 2291
+    },
+    {
+      "id": "site/src/features/recipes/RecipesPage.tsx",
+      "renderedLength": 9181
+    },
+    {
+      "id": "site/src/features/recipes/schema.ts",
+      "renderedLength": 1238
+    },
+    {
+      "id": "site/src/SeoMeta.tsx",
+      "renderedLength": 4438
+    },
+    {
+      "id": "site/src/router.tsx",
+      "renderedLength": 5075
+    },
+    {
+      "id": "site/src/styles.css",
+      "renderedLength": 0
+    },
+    {
+      "id": "site/src/main.tsx",
+      "renderedLength": 308
+    },
+    {
+      "id": "site/index.html",
+      "renderedLength": 0
+    }
+  ],
+  "modules-after": [
+    {
+      "id": "\u0000rolldown/runtime.js",
+      "renderedLength": 1175
+    },
+    {
+      "id": "\u0000vite/modulepreload-polyfill.js",
+      "renderedLength": 1205
+    },
+    {
+      "id": "site/node_modules/react/cjs/react.production.js",
+      "renderedLength": 16004
+    },
+    {
+      "id": "site/node_modules/react/index.js",
+      "renderedLength": 181
+    },
+    {
+      "id": "site/node_modules/scheduler/cjs/scheduler.production.js",
+      "renderedLength": 9069
+    },
+    {
+      "id": "site/node_modules/scheduler/index.js",
+      "renderedLength": 193
+    },
+    {
+      "id": "site/node_modules/react-dom/cjs/react-dom.production.js",
+      "renderedLength": 6275
+    },
+    {
+      "id": "site/node_modules/react-dom/index.js",
+      "renderedLength": 473
+    },
+    {
+      "id": "site/node_modules/react-dom/cjs/react-dom-client.production.js",
+      "renderedLength": 530235
+    },
+    {
+      "id": "site/node_modules/react-dom/client.js",
+      "renderedLength": 478
+    },
+    {
+      "id": "\u0000vite/preload-helper.js",
+      "renderedLength": 2999
+    },
+    {
+      "id": "site/node_modules/react-router/dist/development/chunk-OB3PAWPO.mjs",
+      "renderedLength": 209036
+    },
+    {
+      "id": "site/node_modules/react-router/dist/development/dom-export.mjs",
+      "renderedLength": 365
+    },
+    {
+      "id": "site/src/lib/content.ts",
+      "renderedLength": 150
+    },
+    {
+      "id": "site/src/features/recipes/recipe-i18n.ts",
+      "renderedLength": 5912
+    },
+    {
+      "id": "site/src/features/recipes/servings.ts",
+      "renderedLength": 427
+    },
+    {
+      "id": "site/node_modules/react/cjs/react-jsx-runtime.production.js",
+      "renderedLength": 778
+    },
+    {
+      "id": "site/node_modules/react/jsx-runtime.js",
+      "renderedLength": 205
+    },
+    {
+      "id": "site/src/features/recipes/RecipePage.tsx",
+      "renderedLength": 7555
+    },
+    {
+      "id": "site/src/features/recipes/recipe-search.ts",
+      "renderedLength": 2267
+    },
+    {
+      "id": "site/src/features/recipes/RecipesPage.tsx",
+      "renderedLength": 9155
+    },
+    {
+      "id": "site/src/generated/routes.generated.ts",
+      "renderedLength": 29578
+    },
+    {
+      "id": "site/src/content/route-data.ts",
+      "renderedLength": 181
+    },
+    {
+      "id": "site/src/lib/load-content.ts",
+      "renderedLength": 1702
+    },
+    {
+      "id": "site/src/features/recipes/schema.ts",
+      "renderedLength": 1214
+    },
+    {
+      "id": "site/src/SeoMeta.tsx",
+      "renderedLength": 4336
+    },
+    {
+      "id": "site/src/router.tsx",
+      "renderedLength": 5865
+    },
+    {
+      "id": "site/src/styles.css",
+      "renderedLength": 0
+    },
+    {
+      "id": "site/src/main.tsx",
+      "renderedLength": 425
+    },
+    {
+      "id": "site/index.html",
+      "renderedLength": 0
+    }
+  ]
+}

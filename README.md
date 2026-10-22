@@ -1,395 +1,105 @@
 # Reseptit
 
-Markdown-pohjainen reseptiarkisto GitHubissa.
+Nelikielinen reseptisivusto ja sen kanoninen Markdown-sisältö.
+[Sivusto](https://ozirix-dev.github.io/Reseptit/) julkaistaan GitHub Pagesissa.
+Suomi on lähdekieli; englanti, ruotsi ja thai ovat reseptikohtaisia käännöksiä.
+Hakemisto, haku, suodattimet ja annoslaskuri ovat käytössä.
 
-Tama projekti on rakennettu kaytannolliseksi, pitkalla aikavalilla yllapidettavaksi reseptirepoksi, jossa reseptit, luokittelut ja taustadokumentaatio pysyvat selkeasti erillaan mutta toimivat yhteen. Painotus on vahahiilihydraattisissa ja ketoon sopivissa resepteissa, mutta rakenne on tehty niin, etta sama repo kestaa myos laajempaa kayttoa ilman kansiokaaosta tai rinnakkaisia tiedostoversioita.
+## Sisältö ja rakenne
 
-Kyse ei ole vain sekalaisesta kansiosta, johon tallennetaan resepteja Markdownina, vaan tarkoituksella rakennetusta sisaltoreposta, joka toimii:
+- `reseptit/{alkuruoat,paaruoat,jalkiruoat,leivonnaiset}/`: lähdereseptit.
+- `kaannokset/{en,sv,th}/`: kieliversiot samalla `recipe_id`-tunnuksella.
+- `kuvat/`: versionoidut WebP-kuvat.
+- `site/`: Vite/React-sovellus, sisältöbuild, esirenderöinti ja testit.
+- `meta/`: luokitukset, ravintokentät ja käännössanasto.
+- `docs/`: ylläpito-ohjeet ja päivätyt tarkistusraportit.
+- `reseptit/raakileet/`, `arkisto/`, `_mallipohjat/` ja `tmp/` eivät ole julkaisulähteitä.
 
-- selattavana reseptiarkistona suoraan GitHubissa
-- yllapidon kannalta johdonmukaisena tyokaluna
-- pohjana mahdolliselle myohemmalle julkaisulle, haulle, suodatuksille tai sivustolle
+Ruokalaji määrää sisältökansion. Ruokavalioluokka ja tagit tallennetaan
+metatietoihin. Julkaisuun pääsee vain `status: published` -sisältö.
+Ajantasainen määrä saadaan lähteistä, ei tästä dokumentista:
 
-Reseptisivuston build ja GitHub Pages -julkaisu sijaitsevat `site/`-kansiossa. Katso [julkaisuarkkitehtuuri](docs/julkaisuarkkitehtuuri_github_pages.md).
-
----
-
-## 1. Projektin idea
-
-Projektin ideana on yllapitaa resepteja tavallisina Markdown-tiedostoina ilman raskasta tietokanta- tai julkaisujarjestelmaa.
-
-Reseptit jarjestetaan ensisijaisesti ruokalajin mukaan, ja tarkempi tieto kuten diettiluokka, ravintoarvot, tunnisteet ja muut tarkenteet tallennetaan metatietoihin. Tama pitaa rakenteen yksinkertaisena, mutta mahdollistaa silti tarkemman luokittelun ja myohemman jatkokayton.
-
----
-
-## 2. Projektin tavoite
-
-Projektin tavoite on yhdistaa kaksi tarvetta:
-
-- reseptien nopea ja kaytannollinen yllapito
-- rakenteen hallittavuus myos silloin, kun sisalto kasvaa paljon
-
-Tarkoitus on valttaa tilanne, jossa sama resepti loytyy useasta kansiosta, nimeaminen hajoaa tai luokittelu alkaa elaa hallitsemattomasti. Repo on siis rakennettu niin, etta sisalto pysyy helposti yllapidettavana jo alusta asti.
-
----
-
-## 3. Paa-periaate
-
-Taman repon ydinajatus on yksinkertainen:
-
-**Ruokalaji maarittaa kansiorakenteen. Diettiluokka, ravintoarvot ja tagit kuuluvat metatietoihin.**
-
-Kaytannossa tama tarkoittaa seuraavaa:
-
-- yksi resepti tallennetaan vain yhteen paakansioon
-- paakansio maaraytyy ruokalajin mukaan
-- tarkempi luokittelu ei luo uusia rinnakkaisia kansioita
-
-Tama malli estaa tiedostojen kopioinnin, yllapitokaaoksen ja turhan syvan kansiorakenteen.
-
----
-
-## 4. Projektin rakenne
-
-Projektin rungon ydin on taman kaltainen:
-
-```text
-D:\Projects\Products\Reseptit
-├── README.md
-├── .gitignore
-├── kaannokset/
-├── docs/
-├── meta/
-├── reseptit/
-├── kuvat/
-├── tuonti/
-└── tools/
+```powershell
+cd site
+npm ci
+npm run report:inventory
 ```
 
-Varsinainen reseptisisalto sijaitsee `reseptit/`-kansiossa:
+Komento generoi sisällön ja näyttää kieliversioiden, reittien ja kuvien määrät.
+Päivätyt raportit ovat oman tarkistushetkensä tilannekuvia.
 
-```text
-reseptit/
-├── alkuruoat/
-├── paaruoat/
-├── jalkiruoat/
-├── leivonnaiset/
-├── raakileet/
-├── arkisto/
-└── _mallipohjat/
+## Uuden reseptin lisääminen
+
+1. Käytä `reseptit/_mallipohjat/resepti/`-pohjaa. Valitse oikea sisältökansio.
+2. Valitse pysyvät `recipe_id` ja `url_slug`: pienet ASCII-kirjaimet ja
+   yhdysmerkit. Älä muuta julkaistua URL-osoitetta toimituksellisen korjauksen vuoksi.
+3. Tallenna ainekset frontmatterin `ingredients`-riveiksi: `amount`, `unit`,
+   `item` ja tarvittaessa `note`. Määrät ovat numeroita tai `null`.
+4. Kirjoita yksilöllinen ingressi, kuvaus, numeroidut valmistusvaiheet ja
+   valmistamista auttavat muistiinpanot. Tarkista annokset, työjärjestys ja ajat.
+5. Ilmoita ravintoarvot vain perustellusta laskennasta ja merkitse arviot.
+   Tavallista riisiä, pastaa tai perunaa sisältävä ruoka ei saa keto-luokitusta.
+6. Lisää WebP-kuva `kuvat/`-hakemistoon. `image.src` on suhteellinen polku
+   kuvan juureen; `alt`, `width` ja `height` vastaavat oikeaa kuvaa.
+   Lisäresoluutiot kuvataan valinnaisissa `srcset`- ja `sizes`-kentissä.
+7. Pidä keskeneräinen resepti luonnoksena. Suorita alla olevat tarkistukset ennen PR:ää.
+
+Metatietojen tarkka sopimus on [schema.ts](site/src/content/schema.ts).
+Kuvien build validoi polut ja tiedostot ja kopioi vain julkaistun sisällön kuvat.
+
+## Käännöksen lisääminen
+
+Kopioi rakenne saman luokan kielikansioon. Säilytä `recipe_id`, määrät,
+annokset, valmistuksen merkitys ja ravintoarvot. Aseta `language`,
+`translation_of`, `source_recipe` ja kohdekielen pysyvä `url_slug`.
+Käännä myös kuvaus, huomiot ja kuvan vaihtoehtoinen teksti.
+
+Päivitä lähteen `translation_languages` ja `translation_status` samassa
+muutoksessa. Noudata [käännösten tarkistuskäytäntöä](docs/translation-review-policy.md)
+ja [ruokasanastoa](meta/kaannokset/ruokasanasto.md).
+Automaattinen läpäisy ei ole ihmisen kielentarkistus.
+
+## Kehitys ja tarkistukset
+
+Suorita `site/`-kansiossa:
+
+```powershell
+npm ci
+npm test
+npm run test:translations
+npm run test:image
+npm run build
+npm run test:static
+npm run test:browser
+npm audit --audit-level=low
+npm run preview
 ```
 
-Mahdolliset kieliversiot voidaan tallentaa erikseen:
-
-```text
-kaannokset/
-├── en/
-└── th/
-```
-
-Huomio:
-
-- `omatmuistiinpanot/` on paikallinen apukansio, joka pidetaan irrallaan varsinaisesta projektirungosta
-- `tmp/` on paikallinen valiaikaiskansio, jota kaytetaan paketeille ja muille lyhytikaiseen kayttoon tarkoitetuille tiedostoille
-
----
-
-## 5. Kansioiden tarkoitus
-
-### `reseptit/`
-
-Sisaltaa varsinaiset reseptitiedostot.
-
-- `reseptit/alkuruoat/`
-- `reseptit/paaruoat/`
-- `reseptit/jalkiruoat/`
-- `reseptit/leivonnaiset/`
-- `reseptit/raakileet/`
-- `reseptit/arkisto/`
-- `reseptit/_mallipohjat/`
-
-`raakileet/` on tarkoitettu keskeneraisille ideoille ja luonnoksille. `arkisto/` taas vanhoille, poistuville tai muuten sivuun siirtyville resepteille.
-
-### `docs/`
-
-Sisaltaa projektin ohjeistuksen, taustadokumentit ja rakenteelliset linjaukset. Tama kansio tukee yllapitoa, mutta ei ole varsinainen reseptisisallon paaalue.
-
-### `kaannokset/`
-
-Sisaltaa muiden kielten versiot silloin, kun monikielisyys otetaan kayttoon oikeasti. Suomenkielinen resepti toimii lahdeversiona, ja englanti- tai thai-versiot voidaan tallentaa erillisiin kielikohtaisiin tiedostoihin ilman, etta `reseptit/`-kansion perusrakenne rikkoutuu.
-
-### `meta/`
-
-Sisaltaa metatietoihin liittyvia maarittelyja, kuten:
-
-- paaluokat
-- diettiluokat
-- tagit
-- ravintokentat
-
-### `kuvat/`
-
-Varattu reseptikuville tai muulle media-aineistolle. Kuvien placeholder-rakenne voidaan pitaa valmiina, vaikka varsinaiset kuvat lisattaisiin vasta myohemmin.
-
-### `tuonti/`
-
-Varattu raakadatalla, siivottavalla aineistolla ja mahdollisella import/export-tyoskentelylla. Taman tarkoitus on erottaa valiaikainen data varsinaisesta reseptisisallosta.
-
-### `omatmuistiinpanot/`
-
-Paikallinen tyokansio omille luonnoksille, kokeiluille tai muulle aineistolle, jota ei haluta osaksi varsinaista reseptiarkistoa. Taman kansion sisalto pidetaan poissa julkisesta yleisrakenteesta ja versionhallinnasta.
-
-### `tmp/`
-
-Valiaikainen tyokansio paikallisille paketeille, zip-arkistoille ja muille lyhytikaiseen kayttoon tarkoitetuille tiedostoille. Taman kansion tarkoitus on pysya projektin laidalla, ei varsinaisessa sisaltorungossa.
-
-### `tools/`
-
-Sisaltaa apuskripteja, kuten reseptipohjan perusteella uuden tiedoston luontia helpottavat tyokalut.
-
----
-
-## 6. Luokittelumalli
-
-Projektissa kaytetaan kahta tasoa:
-
-### Paa-luokka
-
-Jokaisella reseptilla on yksi paa-luokka:
-
-- `alkuruoka`
-- `paaruoka`
-- `jalkiruoka`
-
-Tama ratkaisee, mihin kansioon tiedosto kuuluu.
-
-### Diettiluokka
-
-Jokaisella reseptilla voi olla yksi paaasiallinen diettiluokka:
-
-- `keto`
-- `vhh_tiukka`
-- `vhh_valjempi`
-
-Diettiluokka ei luo omaa kansiorakennetta, vaan se tallennetaan metatietoon.
-
----
-
-## 7. Ravintoarvot ja metatiedot
-
-Reseptin alkuun lisataan yhtenainen YAML-frontmatter-lohko. Taman avulla tieto pysyy rakenteisena, helposti luettavana ja myohemmin jatkokaytettavana.
-
-Esimerkkirunko:
-
-```yaml
----
-title: "Kermainen lohipata"
-recipe_id: "kermainen-lohipata"
-url_slug: "kermainen-lohipata"
-category: "paaruoka"
-diet_class: "keto"
-language: "fi"
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 8
-protein_per_serving_g: 28
-fat_per_serving_g: 34
-servings: 4
-main_ingredient: ["kala", "lohi"]
-cooking_method: ["uuni"]
-time_total_min: 40
-difficulty: "helppo"
-tags: ["arki", "gluteeniton", "uuniruoka", "vhh"]
-ingredients:
-  - amount: 200
-    unit: "g"
-    item: "ainesosa"
-    note: "valinnainen huomio"
-translation_languages: ["en", "th"]
-translation_status:
-  en: "draft"
-  th: "missing"
-status: "draft"
----
-```
-
-`recipe_id` on pysyva tekninen tunniste. `url_slug` on valinnainen julkaisu- tai reitityskayttoon tarkoitettu julkinen slug. Jos sita ei myohemmin tarvita, julkaisu voi kayttaa oletuksena `recipe_id`:ta.
-
-Ainekset tallennetaan rakenteisina riveina `ingredients`-kenttaan. Jokaisessa rivissa on numeerinen `amount` tai `null`, `unit`, `item` seka valinnainen `note`. Esimerkiksi pieni sipuli voidaan tallentaa muodossa `amount: 1`, `unit: ""`, `item: "sipuli"`, `note: "pieni"`. Maaraattomat ainekset kayttavat arvoa `null`, jotta annoslaskuri voi jattaa ne skaalaamatta. Ravintoarvot yllapidetaan vain metatiedossa, eika niita kopioida Markdown-runkoon.
-
-Sivustojulkaisu poimii vain tiedostot, joiden `status` on `published`. Luonnokset, arkisto, mallipohjat ja puutteelliset tiedostot eivat ole julkaistua reseptisisaltoa.
-
----
-
-## 8. Miksi Markdown
-
-Markdown on tahan projektiin sopiva valinta, koska se on:
-
-- kevyt
-- pitkalla aikavalilla turvallinen
-- helposti versionhallittava
-- luettava suoraan GitHubissa
-- editorista riippumaton
-
-Se toimii hyvin juuri taman tyyppisessa sisaltorepossa, jossa tiedostojen hallittavuus ja muutosten vertailtavuus ovat tarkeita.
-
----
-
-## 9. Nimeamissaannot
-
-Tiedostonimissa noudatetaan seuraavia saantoja:
-
-- pienet kirjaimet
-- sanat erotetaan yhdysmerkeilla
-- ei aakkosia tiedostonimissa
-- ei vuosilukuja tai turhia versiotunnisteita
-- tiedostonimi kertoo reseptin ytimen mahdollisimman selkeasti
-
-Esimerkkeja:
-
-- `jauheliha-kaalipannu.md`
-- `kermainen-lohipata.md`
-- `marja-mascarponekulho.md`
-
----
-
-## 10. Tagit ja tarkenteet
-
-Paa-luokan ja diettiluokan lisaksi reseptit voivat saada tageja, jotka tukevat hakua ja myohempaa suodatusta.
-
-Tyypillisia tagiryhmia ovat:
-
-### Raaka-aine
-
-- kana
-- kala
-- naudanliha
-- porsas
-- muna
-- kasvis
-- marjat
-- juusto
-
-### Valmistustapa
-
-- uuni
-- pannu
-- keitto
-- salaatti
-- airfryer
-- no-cook
-
-### Kayttotilanne
-
-- arki
-- viikonloppu
-- juhla
-- meal-prep
-- nopea
-- helppo
-
-### Erityisruokavalio tai lisatieto
-
-- gluteeniton
-- maidoton
-- laktoositon
-- sokeriton
-
-Tagit ovat tarkenteita, eivat rinnakkainen kansiorakenne.
-
----
-
-## 11. Tyoskentelyperiaatteet
-
-Projektissa noudatetaan seuraavia kaytannon periaatteita:
-
-1. Yksi resepti, yksi paikka.
-2. Paa-luokka ratkaisee fyysisen sijainnin.
-3. Diettiluokka, ravintoarvot ja tagit kuuluvat metatietoihin.
-4. Raakile saa olla keskenerainen.
-5. Arkisto on sallittu ja suositeltu vanhoille tai poistuville versioille.
-6. Nimeaminen ja kentat pidetaan johdonmukaisina.
-
----
-
-## 12. Julkinen repository
-
-Tama repo on tarkoituksella julkinen. Siksi tanne ei kuulu tallentaa:
-
-- tunnuksia
-- salaisuuksia
-- API-avaimia
-- yksityisia muistiinpanoja
-- lisenssiltaan epaselvaa ulkopuolista sisaltoa
-
-Julkisuus ei ole vahinko vaan osa taman projektin toimintamallia.
-
----
-
-## 13. Mahdollinen myohempi kehitys
-
-Rakenne on tehty niin, etta sen paalle voidaan myohemmin rakentaa esimerkiksi:
-
-- automaattiset listaukset metatietojen perusteella
-- haku ja suodatus
-- staattinen reseptisivusto
-- kuvien kytkenta resepteihin
-- ravintoarvojen tarkempi laskenta
-- tuonti muista tiedostomuodoista
-- monikielisyys kaannosrakenteen kautta
-
-Repo toimii siis seka sellaisenaan GitHubissa etta mahdollisena julkaisun pohjana.
-
----
-
-## 14. Aloitusohje uudelle reseptille
-
-Kun lisat uuden reseptin:
-
-1. paata, onko kyse alkuruoasta, paaruoasta vai jalkiruoasta
-2. luo tiedosto oikeaan paakansioon yhtenaisella nimella
-3. tayta metatietorunko
-4. lisaa reseptin sisalto
-5. arvioi ravintoarvot ja tarvittavat tagit
-6. jata resepti tarvittaessa aluksi `draft`-tilaan
-
-Jos resepti on vasta puolikas idea, se kuuluu mieluummin `reseptit/raakileet/`-kansioon kuin valmiiden joukkoon.
-
----
-
-## 15. Status
-
-Nykyinen vaihe on perusteltu bootstrap-vaihe:
-
-- kansiorakenne on luotu
-- mallipohjat ovat olemassa
-- dokumentaatio ohjaa yllapitoa
-- sisaltoa voidaan alkaa kasvattaa hallitusti
-
-Tassa vaiheessa tarkeinta ei ole reseptien maara vaan se, etta rakenne pysyy eheana ja johdonmukaisena.
-
----
-
-## 16. Lisenssi
-
-Lisenssia ei ole talla hetkella lopullisesti lukittu.
-
-Se tarkoittaa kaytannossa sita, etta vaikka repo on julkinen, sisallon uudelleenkaytto ei ole automaattisesti vapaa ilman erillista lisenssia. Myohemmin projektiin voidaan lisata tarkoitukseen sopiva lisenssi sen mukaan, painottuuko:
-
-- sisallon jakaminen
-- rakenteen ja tyokalujen avoin kaytto
-- molemmat yhdessa
-
----
-
-## 17. Yhteenveto
-
-Tama repo on rakennettu niin, etta:
-
-- selaaminen on ihmiselle helppoa
-- yllapito pysyy tekijalle hallittavana
-- samaa reseptia ei tarvitse kopioida
-- luokittelu ei hajoa kasista reseptimaaraan kasvaessa
-- sisalto sopii seka GitHub-kayttoon etta myohempaan julkaisuun
-
-Lyhyesti: mahdollisimman selkea reseptiarkisto nyt, mahdollisimman hyva pohja jatkoon myohemmin.
-
+Selaintestit tarvitsevat Playwrightin Chromiumin (`npx playwright install chromium`)
+tai ympäristömuuttujan `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`, joka osoittaa
+asennettuun Braveen. Repon juuressa suoritetaan myös `git diff --check` ja
+`scripts/lint-markdown.ps1`. Testit eivät julkaise tuotantoon.
+
+## Lataus, SEO ja julkaisu
+
+Build tuottaa jokaiselle julkaistulle reitille valmiin HTML:n ja turvallisesti
+upotetun lähtödatan. Hakemisto käyttää yhden kielen hakutietoja ja reseptisivu
+yhden reseptin sisältöä. Siirtyminen toiselle reitille hakee tarvittaessa
+sisältötiivisteellä nimetyn JSON-tiedoston. Yhteinen JavaScript ei sisällä koko
+reseptikirjastoa. Haku ja suodattimet toimivat nykyisen hakemiston datassa.
+
+HTML sisältää reseptit ja linkit myös ilman JavaScriptiä. Hydraation jälkeen
+annoslaskuri, haku ja query-osoitteet toimivat. Canonicalit, hreflang,
+Recipe-JSON-LD ja sitemap syntyvät julkaistusta sisällöstä.
+
+GitHub Actions tarkistaa PR:t. `main`-haaran sivustomuutokset käynnistävät
+Pages-julkaisun; PR ei itsessään julkaise tuotantoon.
+Katso [julkaisuarkkitehtuuri](docs/julkaisuarkkitehtuuri_github_pages.md) ja
+[V1.4:n suorituskykymittaukset](docs/reports/2026-10-22-v1-4-performance.md).
+
+## Ylläpidon rajat
+
+Tämä julkinen repo ei ole salaisuuksien tai yksityisten muistiinpanojen säilytyspaikka.
+Reseptit ja tekninen toteutus kuuluvat tänne; ReportHub kokoaa päätös- ja
+handoff-kontekstin. Lisenssiä ei ole lukittu: julkisuus ei yksin anna vapaata
+sisällön uudelleenkäyttöoikeutta.

@@ -1,4 +1,6 @@
-import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
+import { contentForRoute } from "../src/content/route-data";
+import { mkdir, readdir, readFile, writeFile, rm } from "node:fs/promises";
 import path from "node:path";
 import { parseMarkdown, renderSafeMarkdown } from "../src/content/markdown";
 import { assertUniqueRecipes } from "../src/content/recipe-validation";
@@ -127,6 +129,23 @@ async function main() {
   for (const locale of ["en", "sv", "th"] as const) {
     if (recipes.some((recipe) => recipe.locale === locale)) routes.push(`${localeBase[locale]}/`);
   }
+  const dataDir = path.join(siteDir, "public", "data");
+  // This directory is exclusively generated; remove stale published payloads.
+  await rm(dataDir, { recursive: true, force: true });
+  await mkdir(dataDir, { recursive: true });
+  const manifest: Record<string, string> = {};
+  for (const route of routes) {
+    const json = JSON.stringify(contentForRoute(recipes, route));
+    const filename = `${createHash("sha256").update(json).digest("hex").slice(0, 20)}.json`;
+    manifest[route] = filename;
+    await writeFile(path.join(dataDir, filename), json, "utf8");
+  }
+  const locales = [...new Set(recipes.map((recipe) => recipe.locale))];
+  await writeFile(path.join(outputDir, "routes.generated.ts"), `/* Generated; route addresses only, no recipe content. */
+import type { RecipeLocale } from "../types/content";
+export const publishedLocales: RecipeLocale[] = ${JSON.stringify(locales)};
+export const contentManifest: Record<string, string> = ${JSON.stringify(manifest)};
+`, "utf8");
   const urls = [...new Set(routes)].map((route) => `  <url><loc>${xmlEscape(`${baseUrl}${route}`)}</loc></url>`).join("\n");
   const publicDir = path.join(siteDir, "public");
   await mkdir(publicDir, { recursive: true });
