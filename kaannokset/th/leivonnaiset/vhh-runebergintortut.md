@@ -19,7 +19,7 @@ tags:
   - คาร์โบไฮเดรตต่ำ
 image:
   src: leivonnaiset/vhh-runebergintortut.webp
-  alt: ทาร์ต Runeberg ชิ้นเล็กราดด้วยแยมราสเบอร์รี่และไอซิ่งไร้น้ำตาลสีขาว
+  alt: เค้กรูเนแบร์กชิ้นเล็ก แต่ละชิ้นตกแต่งด้วยราสเบอร์รี่สด
   width: 1280
   height: 853
 ingredients:

@@ -69,6 +69,10 @@ ingredients:
   - unit: dl
     item: vatten att tillsätta med grönsakerna
     amount: 5
+  - amount: null
+    unit: ""
+    item: vatten
+    note: efter behov för sköljning, blötläggning och mixning; mängden beror på riset och redskapet; även för kokning av de röda linserna, utöver de 5 dl till grönsakerna
 source_language: fi
 source_recipe: reseptit/paaruoat/idli-sambar.md
 translation_of: idli-sambar
@@ -84,12 +88,12 @@ Den sydindiska klassikern serverar jästa, ångade riskakor med en syrlig linsgr
 
 ## Tillagning
 
-1. Skölj riset och linserna separat. Blötlägg dem i 4 timmar. Dränera.
-2. Mosa riset och linserna separat till en deg. Blanda ihop, täck över och jäs på en varm plats i 8-12 timmar. Tillsätt salt.
-3. Koka de röda linserna mjuka i cirka 20 minuter. Tillsätt morot, tomat, lök och 5 dl vatten.
+1. Skölj ris och urad dal separat. Blötlägg i rikligt med vatten i 4 timmar och låt rinna av. De röda linserna används till sambarsoppan i steg 3.
+2. Mixa urad dal slät och luftig och riset finkornigt. Tillsätt lite vatten i taget, bara så mycket som behövs för att mixa. Blanda till en tjock smet som går att skeda och hälla; den får inte vara vattnig. Täck och låt jäsa varmt i 8–12 timmar. Tillsätt salt.
+3. Skölj de röda linserna och täck med vatten i en kastrull. Koka mjuka i cirka 20 minuter och tillsätt vatten vid behov så att linserna förblir täckta. Tillsätt morot, tomat, lök och de 5 dl vatten som anges i ingredienserna.
 4. Blanda ner tamarind och sambarkryddor i soppan. Sjud tills grönsakerna är mjuka.
 5. Hetta upp oljan i en liten panna. Tillsätt senapsfrön och curryblad. Häll kryddoljan i sambarsoppan.
-6. Häll idli-degen i de smorda urtagen på idli-nest- eller silikonmuffinsformen. Ånga i 10-12 minuter.
+6. Fördela idlismeten i smorda idliformar eller silikonmuffinsformar. Ångkoka i 10–12 minuter; en provsticka i en färdig idli ska komma ut utan rå smet.
 7. Låt idlisen vila en stund, ta ur pannan och servera med varm sambarsoppa.
 
 ## Anteckningar

@@ -69,6 +69,10 @@ ingredients:
   - unit: dl
     item: water to add with the vegetables
     amount: 5
+  - amount: null
+    unit: ""
+    item: water
+    note: as needed for rinsing, soaking and grinding; the amount depends on the rice and grinder; also for cooking the red lentils, in addition to the 5 dl water for the vegetables
 source_language: fi
 source_recipe: reseptit/paaruoat/idli-sambar.md
 translation_of: idli-sambar
@@ -84,12 +88,12 @@ The South Indian classic serves fermented, steamed rice cakes with a tangy lenti
 
 ## Preparation
 
-1. Rinse the rice and lentils separately. Soak them for 4 hours. Drain.
-2. Puree the rice and lentils separately into a dough. Mix together, cover and ferment in a warm place for 8-12 hours. Add salt.
-3. Cook the red lentils until soft in about 20 minutes. Add carrot, tomato, onion and 5 dl of water.
+1. Rinse the rice and urad dal separately. Soak in plenty of water for 4 hours, then drain. The red lentils are used for the sambar in step 3.
+2. Grind the urad dal until smooth and fluffy and the rice until finely grainy, adding water a little at a time, just enough for grinding. Combine into a thick, spoonable but pourable batter; it must not be watery. Cover and ferment in a warm place for 8–12 hours. Add the salt.
+3. Rinse the red lentils and cover with water in a saucepan. Cook until soft, about 20 minutes, adding water as needed to keep the lentils covered. Add the carrot, tomato, onion and the 5 dl water listed in the ingredients.
 4. Mix the tamarind and sambar spices into the soup. Simmer until the vegetables are soft.
 5. Heat the oil in a small pan. Add mustard seeds and curry leaves. Pour the spice oil into the sambar soup.
-6. Pour the idli dough into the greased recesses of the idli nest or silicone muffin tin. Steam for 10-12 minutes.
+6. Spoon the idli batter into greased idli moulds or silicone muffin moulds. Steam for 10–12 minutes; a skewer inserted into a cooked idli should come out without raw batter.
 7. Let the idlis rest for a while, remove from the pan and serve with warm sambar soup.
 
 ## Notes

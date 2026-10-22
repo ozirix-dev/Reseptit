@@ -17,7 +17,7 @@ tags:
   - ปลา
 image:
   src: paaruoat/kantonilainen-hoyrytetty-kala.webp
-  alt: ปลานึ่งสไตล์กวางตุ้งพร้อมขิง ต้นหอม และถั่วเหลือง
+  alt: เนื้อปลานึ่งสไตล์กวางตุ้งพร้อมขิง ต้นหอม และซีอิ๊ว
   width: 1279
   height: 853
 ingredients:

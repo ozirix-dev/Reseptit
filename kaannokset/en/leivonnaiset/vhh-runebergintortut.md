@@ -19,7 +19,7 @@ tags:
   - low carb
 image:
   src: leivonnaiset/vhh-runebergintortut.webp
-  alt: Small Runeberg tarts topped with raspberry jam and a ring of white sugar-free icing
+  alt: Small Runeberg cakes, each topped with a fresh raspberry
   width: 1280
   height: 853
 ingredients:

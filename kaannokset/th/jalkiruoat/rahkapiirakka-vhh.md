@@ -19,7 +19,7 @@ tags:
   - คาร์โบไฮเดรตต่ำ
 image:
   src: jalkiruoat/rahkapiirakka-vhh.webp
-  alt: พายนมเปรี้ยวกับผลเบอร์รี่
+  alt: พายควาร์กและชิ้นที่ตัดให้เห็นไส้ควาร์กวานิลลาสีอ่อน
   width: 1280
   height: 853
 ingredients:

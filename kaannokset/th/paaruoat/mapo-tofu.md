@@ -19,7 +19,7 @@ tags:
   - เนื้อหมู
 image:
   src: paaruoat/mapo-tofu.webp
-  alt: เต้าหู้มาโปผัดพริก เนื้อสับ เต้าหู้อ่อน และต้นหอม
+  alt: มาโผโต้วฟูใส่เต้าหู้หั่นเต๋า เนื้อบด พริก และต้นหอม
   width: 1279
   height: 853
 ingredients:

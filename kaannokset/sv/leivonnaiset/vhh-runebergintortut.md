@@ -19,7 +19,7 @@ tags:
   - lågkolhydrat
 image:
   src: leivonnaiset/vhh-runebergintortut.webp
-  alt: Små Runebergstårtor toppade med hallonsylt och en ring av vit sockerfri glasyr
+  alt: Små Runebergstårtor med ett färskt hallon på varje
   width: 1280
   height: 853
 ingredients:

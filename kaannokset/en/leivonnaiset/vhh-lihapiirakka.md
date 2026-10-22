@@ -19,7 +19,7 @@ tags:
   - low carb
 image:
   src: leivonnaiset/vhh-lihapiirakka.webp
-  alt: Half a meat pie showing a juicy minced meat filling and a golden brown crust
+  alt: Open meat pie with visible minced meat and onion filling and golden edges
   width: 1280
   height: 853
 ingredients:

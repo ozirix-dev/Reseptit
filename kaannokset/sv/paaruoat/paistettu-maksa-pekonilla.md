@@ -62,9 +62,9 @@ Grädde binder ihop såsen i pannan.
 
 1. Skär levern i tunna skivor och torka ytan. Skiva baconet.
 2. Stek baconet knaprigt och ställ åt sidan. Bryn löken i pannfett.
-3. Stek leverskivorna snabbt i en het panna, ca 1–2 minuter per sida.
-4. Tillsätt grädde, bacon och kryddor. Värm såsen och servera genast.
+3. Bryn leverskivorna i en het panna, först cirka 1–2 minuter per sida. Tiden i sig garanterar inte att levern är genomstekt.
+4. Tillsätt grädde, bacon och kryddor. Fortsätt tillaga i såsen tills leverns innertemperatur är minst 72 °C, mätt i den tjockaste delen. Servera varm.
 
 ## Anteckningar
 
-– Kontrollera om de är färdiga och krydda till sist efter egen smak.
+- Använd en matlagningstermometer. Tiden beror på skivornas tjocklek och pannans värme.

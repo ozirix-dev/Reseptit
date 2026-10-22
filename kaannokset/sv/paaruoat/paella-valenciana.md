@@ -20,7 +20,7 @@ tags:
   - ris
 image:
   src: paaruoat/paella-valenciana.webp
-  alt: Valenciansk paella med saffransris, kyckling, hare och gröna bönor
+  alt: Paella med saffransris, kyckling och gröna bönor
   width: 1279
   height: 853
 ingredients:

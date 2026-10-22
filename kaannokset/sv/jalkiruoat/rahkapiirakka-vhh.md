@@ -19,7 +19,7 @@ tags:
   - lågkolhydrat
 image:
   src: jalkiruoat/rahkapiirakka-vhh.webp
-  alt: En bit kvargpaj med bär
+  alt: Kvargpaj och en uppskuren bit med ljus vaniljkvargfyllning
   width: 1280
   height: 853
 ingredients:

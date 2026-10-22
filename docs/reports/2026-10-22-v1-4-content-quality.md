@@ -68,17 +68,30 @@ status-, annos-, määrä-, yksikkö- ja menetelmäristiriidat testataan.
 Vanhoja termitarkistuksia säilytettiin ja uudet säännöt rajattiin havaittuihin
 aineksiin tai resepteihin väärien hälytysten välttämiseksi.
 
-## Avoimet kuvat
+## Kuvakorjaukset 22.10.2026
 
-Kahdeksassa reseptissä kuva esittää selvästi toista ruokaa:
-medu vada, paneer tikka, aloo paratha, Amritsari-kala, dal makhani,
-idli/sambar, rogan josh ja tandoorikana. Puuteluettelo ehdottaa olemassa
-olevien kuvien oikeita vastineita. Lisäksi yhdeksän kuvan ainesosa-/esitystapaero
-tarvitsee tarkemman tarkistuksen.
+Kahdeksan intialaisen reseptin ristiin menneet kuvat kohdistettiin oikeisiin
+ruokiin: medu vada, paneer tikka, aloo paratha, Amritsari-kala, dal makhani,
+idli/sambar, rogan josh ja tandoorikana. Rogan joshin luulliset palat korvattiin
+lisäksi ohjeen mukaisilla luuttomilla lammaspaloilla.
 
-Kuvatiedostoja ei vaihdettu eikä generoitu. Reseptin ainesosia ei muutettu
-kuvan vuoksi. Alt-teksti ei voi todistaa esimerkiksi kuorrutteen sokerittomuutta.
-Kuvakorjaukset on syytä käsitellä erillisenä, visuaalisesti tarkistettavana PR:nä.
+Seitsemästä muusta kuvasta korjattiin vahvistettu ristiriita: kantonilaisen
+kalan kokonainen kala fileiksi; kosharista kikherneet pois; kung paosta
+paprikapalat pois; paellasta härkäpavut pois; rahkapiirakasta marjat pois;
+lihapiirakka avoimeksi; Runebergin torttujen hillo ja kuorrute tuoreeksi vadelmaksi.
+Yhteensä 15 kuvatiedostoa vaihtui (7 uudelleenkohdistusta, 8 imagegen-muokkausta).
+Alkuperäiset generointitulokset säilytettiin paikallisessa generated_images-kansiossa.
+WebP-vienti säilyttää alkuperäiset mitat. Raaka-aineita ei muutettu kuvan vuoksi.
+
+Mapo tofun kuva sopii kuutioituun tofuun; perusteeton silkkisyys poistettiin
+alt-teksteistä. Pad see ew'n kuva tarkistettiin täydessä koossa: leveä nuudeli
+ei todista riisijauhoa, joten vahvistamatonta virhettä ei väitetä korjatuksi.
+Kaikki muuttuneet alt-tekstit päivitettiin FI/EN/SV/TH-versioihin.
+
+[Kuvien korjausmanifesti](2026-10-22-v1-4-image-corrections.json) tallentaa
+alkuperäiset ja uudet SHA-256-tunnisteet, vaihtojen lähteet sekä kuvauspyyntöjen
+yhteenvedot. Regressiotesti varmistaa tarkistettujen tiedostojen säilymisen.
+Kuvat ovat kuvituksia; niitä ei esitetä koekeittiössä valmistettujen annosten kuvina.
 
 ## Ravintoarvot ja luokitukset
 
@@ -95,13 +108,31 @@ ehdotus on VHH-nimi URL ennallaan tai luotettava laskelma ennen keto-lupausta.
 Myös muiden keto-leivonnaisten ja pizzapohjan väitteet tarvitsevat laskentapohjan.
 [Ravintonäytön malli](../nutrition-evidence.md) ohjaa myöhempää laskentaa.
 
-## Päätettäväksi jäävät lähdeohjeet
+## P0/P1-jatkokorjaukset 22.10.2026
 
-Puuteluettelo sisältää biryanin jakamattomat kaneli-/kardemummamäärät,
-dosa-/idlitaikinan määrittelemättömän veden, käyttövaihetta vailla olevat
-ainesosat ja marinointi-/lepoajan ohittavat kokonaisajat. Maksan nopea
-paisto-ohje tarvitsee ruokaturvallisuuteen perehtyneen tarkistajan arvion.
-Puuttuvia suhteita, turvallisuuslämpötiloja tai kokonaisaikoja ei arvattu.
+- Maksan kypsennystä jatketaan kastikkeessa vähintään 72 °C:n sisälämpötilaan.
+  Mittaus tehdään paksuimmasta kohdasta. Alkuperäinen 1–2 minuuttia puoleltaan
+  on ruskistamisen aloitusaika, ei kypsyyden tae.
+  [USDA:n sisäelinlihan ohje](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/meat-catfish/beef-farm-table)
+  on 160 °F / 71,1 °C; reseptin kokonaisluku pyöristetään ylöspäin.
+- Biryanin kaikki kaneli ja kardemumma lisätään broilerikattilaan vaiheessa 3;
+  riisin keitinveteen ei tule toista annosta. Tämä on toimituksellinen täsmennys
+  olemassa oleviin määriin, ei lisämausteiden keksimistä.
+  [Vertailuohje](https://www.indianhealthyrecipes.com/chicken-biryani-recipe/).
+- Dosa- ja idlitaikinoiden tarvitsema vesi lisättiin aineksiin määrättömänä.
+  Ohje kertoo lisäyksen pienissä erissä, tavoitekoostumuksen ja dosa-taikinan
+  ohentamisen ennen paistoa. Tarkkaa suhdetta ei esitetä yleispätevänä, koska
+  riisi ja jauhatuslaite vaikuttavat veden tarpeeseen.
+  [Dosa-vertailu](https://www.vegrecipesofindia.com/dosa-recipe-dosa-batter-recipe/)
+  ja [idli-vertailu](https://www.vegrecipesofindia.com/idli-recipe-how-to-make-soft-idlis/).
+- Idlin urad-dal ja sambar-keiton punaiset linssit eroteltiin vaiheissa.
+  Taikinan vesi ja linssien keittovesi erotetaan kasvisten 5 dl lisävedestä.
+  Idlin kypsyydelle lisättiin tikkutarkistus. Dosa-käännösten lettu/salaatti-virhe
+  korjattiin samalla.
+
+Korjaukset ovat kaikilla neljällä kielellä. Auditoinnin luettelossa ei ole enää
+avoimia P0/P1-havaintoja. P2/P3-aika-, ravintolaskenta- ja käyttövaihepuutteet
+sekä riippumaton ihmiskielentarkistus ovat yhä avoinna. Koekeittiötestiä ei tehty.
 
 ## Tarkistaminen ja seuraava vaihe
 
@@ -112,21 +143,21 @@ ja selaintestit säilyvät. Neljä kielihakemistoa ja reseptiä tarkistetaan
 leveyksillä 320/375/390/768/1024/1440 sekä ilman JavaScriptiä.
 
 Tekninen CI voi hyväksyä muutoksen, vaikka toimituksellisia riskejä jää.
-Omistajan seuraava askel on tarkistaa P0/P1-lähdehavainnot ja korjausehdotukset
-sekä järjestää EN/SV/TH-ihmistarkistus. Tämä työ ei yhdistä PR:ää eikä julkaise.
+Omistajan seuraava askel on katselmoida korjaukset ja järjestää
+EN/SV/TH-ihmistarkistus sekä priorisoida jäljellä olevat P2/P3-havainnot. Tämä työ ei yhdistä PR:ää eikä julkaise.
 
 ## Paikallisten tarkistusten tulos
 
-`npm ci`, 21 yksikkötestiä, 8 käännöstestiä, 2 kuvatestiä,
+`npm ci`, 21 yksikkötestiä, 10 käännöstestiä, 3 kuvatestiä,
 tuotantobuild, 7 staattisen HTML:n testiä ja 2 selaintestiä läpäisivät.
 Selaimena käytettiin asennettua Bravea Playwrightin kautta. Riippuvuuksien
 `npm audit --audit-level=low` ei löytänyt haavoittuvuuksia.
 
 Build tuottaa 480 reittiä. Tämän itsenäisen sisältöhaaran JavaScript on
-1 719,97 kB (gzip 346,20 kB) ja CSS 9,07 kB (gzip 2,57 kB).
+1 730,08 kB (gzip 348,80 kB) ja CSS 9,07 kB (gzip 2,57 kB).
 Suorituskykymuutos on erillisessä PR:ssä eikä sisälly näihin lukuihin.
-Puuteluettelossa on 72 havaintoa; sisältö muuttui 338 kieliversiossa
-(FI 39, EN 92, SV 95, TH 112). Numerot kuvaavat tätä tarkistushetkeä.
+Puuteluettelossa on 72 havaintoa; sisältö muuttui 348 kieliversiossa
+(FI 43, EN 95, SV 98, TH 112). Numerot kuvaavat tätä tarkistushetkeä.
 
 PR-katselmoinnin kaksi P2-havaintoa korjattiin: thai-lohikeiton kalafondi
 oli jäänyt kuvauksessa vääräksi, ja pyttipannun käännösten ingressissä,

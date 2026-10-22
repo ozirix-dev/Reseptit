@@ -19,8 +19,7 @@ tags:
   - VHH
 image:
   src: leivonnaiset/vhh-lihapiirakka.webp
-  alt: Puolikas lihapiirakka, jossa näkyy mehevä jauhelihatäyte ja kullanruskea
-    kuori
+  alt: Avoin lihapiirakka, jossa näkyy jauheliha-sipulitäyte ja kullanruskeat reunat
   width: 1280
   height: 853
 ingredients:

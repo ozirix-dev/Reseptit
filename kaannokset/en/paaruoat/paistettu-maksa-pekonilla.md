@@ -62,9 +62,9 @@ Cream brings the pan sauce together.
 
 1. Cut the liver into thin slices and dry the surface. Slice the bacon.
 2. Fry the bacon until crispy and set aside. Brown the onion in pan fat.
-3. Fry the liver slices quickly in a hot pan, about 1–2 minutes per side.
-4. Add cream, bacon and spices. Heat the sauce and serve immediately.
+3. Brown the liver slices in a hot pan, initially for about 1–2 minutes per side. This time alone does not guarantee doneness.
+4. Add the cream, bacon and spices. Continue cooking in the sauce until the liver reaches an internal temperature of at least 72 °C, measured in the thickest part. Serve hot.
 
 ## Notes
 
-- Check for doneness and finally season according to your own taste.
+- Use a food thermometer. The cooking time depends on the thickness of the slices and the heat of the pan.

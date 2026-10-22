@@ -69,6 +69,10 @@ ingredients:
   - unit: dl
     item: vettä kasvisten lisäämiseen
     amount: 5
+  - amount: null
+    unit: ""
+    item: vettä
+    note: tarpeen mukaan huuhteluun, liotukseen ja jauhamiseen; määrä riippuu riisistä ja jauhatuslaitteesta; lisäksi punaisten linssien keittämiseen, erillään kasvisten 5 dl vesimäärästä
 translation_languages:
   - en
   - sv
@@ -86,12 +90,12 @@ Eteläintialainen klassikko tarjoilee fermentoidut, höyrytetyt riisikakut hapan
 
 ## Valmistus
 
-1. Huuhtele riisi ja linssit erikseen. Liota niitä 4 tuntia. Valuta.
-2. Soseuta riisi ja linssit erikseen taikinaksi. Sekoita yhteen, peitä ja fermentoi lämpimässä 8–12 tuntia. Lisää suola.
-3. Keitä punaiset linssit pehmeiksi noin 20 minuutissa. Lisää porkkana, tomaatti, sipuli ja 5 dl vettä.
+1. Huuhtele riisi ja urad-dal erikseen. Liota niitä väljässä vedessä 4 tuntia ja valuta. Punaiset linssit käytetään sambar-keittoon vaiheessa 3.
+2. Jauha urad-dal sileäksi ja kuohkeaksi sekä riisi hienorakeiseksi, lisäten vettä vähän kerrallaan vain jauhamisen tarvitseman määrän. Yhdistä paksuksi, lusikoitavaksi mutta kaadettavaksi taikinaksi; se ei saa olla vetistä. Peitä ja fermentoi lämpimässä 8–12 tuntia. Lisää suola.
+3. Huuhtele punaiset linssit ja peitä vedellä kattilassa. Keitä pehmeiksi noin 20 minuutissa; lisää vettä tarvittaessa, jotta linssit pysyvät veden peitossa. Lisää porkkana, tomaatti, sipuli ja ainesluettelon 5 dl vettä.
 4. Sekoita tamarindi ja sambar-mausteet keittoon. Hauduta, kunnes kasvikset ovat pehmeitä.
 5. Kuumenna öljy pienessä pannussa. Lisää sinapinsiemenet ja currylehdet. Kaada mausteöljy sambar-keittoon.
-6. Kaada idlitaikina voideltuihin idlipesän tai silikonimuffinivuoan syvennyksiin. Höyrytä 10–12 minuuttia.
+6. Annostele idlitaikina voideltuihin idlimuotteihin tai silikonimuffinivuoan syvennyksiin. Höyrytä 10–12 minuuttia; kypsään idliin työnnetty tikku tulee ulos ilman raakaa taikinaa.
 7. Anna idlien levätä hetki, irrota vuoasta ja tarjoa lämpimän sambar-keiton kanssa.
 
 ## Muistiinpanot

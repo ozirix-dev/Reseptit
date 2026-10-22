@@ -19,7 +19,7 @@ tags:
   - vähähiilihydraattinen
 image:
   src: jalkiruoat/rahkapiirakka-vhh.webp
-  alt: Pala rahkapiirakkaa marjojen kanssa
+  alt: Rahkapiirakka ja leikattu pala, jossa näkyy vaalea vaniljainen rahkatäyte
   width: 1280
   height: 853
 ingredients:

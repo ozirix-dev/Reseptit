@@ -153,3 +153,37 @@ test("audit output distinguishes structural passes from pending human language r
   assert.ok(result.rows.every((row) => row.language_review.includes("independent human language review pending")));
   assert.ok(result.rows.every((row) => row.review_status.includes("HUMAN REVIEW PENDING")));
 });
+
+test("V1.4 source safety and batter corrections remain aligned in all languages", async () => {
+  const result = await auditTranslations();
+  const recipes = [...result.publishedSources, ...result.publishedTranslations];
+  for (const locale of ["fi", "en", "sv", "th"]) {
+    const get = (id: string) => recipes.find((r) => r.data.recipe_id === id && r.data.language === locale)!;
+    const liver = get("paistettu-maksa-pekonilla");
+    assert.match(liver.content.match(/^4\. (.+)$/m)?.[1] ?? "", /72 °C/);
+    for (const id of ["masala-dosa", "idli-sambar"]) {
+      const recipe = get(id);
+      const water = recipe.data.ingredients.at(-1)!;
+      assert.equal(water.amount, null, `${id}/${locale}: water added gradually`);
+      assert.equal(water.unit, "");
+      assert.ok(water.note && water.note.length > 30);
+      assert.match(recipe.content.match(/^2\. (.+)$/m)?.[1] ?? "", /kaadettavaksi|pourable|häll|เทได้/);
+    }
+    const biryani = get("hyderabadi-kanabiryani");
+    const spices = /kaneli|kardemumma|cinnamon|cardamom|kanel|อบเชย|กระวาน/i;
+    assert.match(biryani.content.match(/^3\. (.+)$/m)?.[1] ?? "", spices);
+    assert.doesNotMatch(biryani.content.match(/^5\. (.+)$/m)?.[1] ?? "", spices);
+    assert.doesNotMatch(get("masala-dosa").content, /crispy lettu|krispig sallad|ผักกาดกรอบ/i);
+  }
+});
+
+test("corrected image captions do not reintroduce absent fillings or toppings", async () => {
+  const result = await auditTranslations();
+  for (const recipe of [...result.publishedSources, ...result.publishedTranslations]) {
+    const alt = recipe.data.image?.alt ?? "";
+    if (recipe.data.recipe_id === "rahkapiirakka-vhh") assert.doesNotMatch(alt, /marj|berr|bär|เบอร์รี่/i);
+    if (recipe.data.recipe_id === "vhh-runebergintortut") assert.doesNotMatch(alt, /hillo|kuorrute|icing|jam|sylt|glasyr|แยม|ไอซิ่ง/i);
+    if (recipe.data.recipe_id === "vhh-lihapiirakka") assert.match(alt, /avoin|open|öppen|เปิดหน้า/i);
+    if (recipe.data.recipe_id === "mapo-tofu") assert.doesNotMatch(alt, /silk|silkig|silken|ไหม/i);
+  }
+});

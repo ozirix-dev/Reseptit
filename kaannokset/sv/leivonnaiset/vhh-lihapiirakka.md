@@ -19,7 +19,7 @@ tags:
   - lågkolhydrat
 image:
   src: leivonnaiset/vhh-lihapiirakka.webp
-  alt: En halv köttpaj som visar en saftig köttfärsfyllning och en gyllenbrun skorpa
+  alt: Öppen köttfärspaj med synlig köttfärs- och lökfyllning och gyllenbruna kanter
   width: 1280
   height: 853
 ingredients:

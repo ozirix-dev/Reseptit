@@ -19,7 +19,7 @@ tags:
   - low carb
 image:
   src: jalkiruoat/rahkapiirakka-vhh.webp
-  alt: A piece of quark pie with berries
+  alt: Quark pie and a cut slice showing the pale vanilla quark filling
   width: 1280
   height: 853
 ingredients:

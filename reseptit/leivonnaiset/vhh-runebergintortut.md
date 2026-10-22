@@ -19,8 +19,7 @@ tags:
   - VHH
 image:
   src: leivonnaiset/vhh-runebergintortut.webp
-  alt: Pieniä Runebergin torttuja, joiden päällä on vadelmahilloa ja valkoinen
-    sokeriton kuorruterengas
+  alt: Pieniä Runebergin torttuja, joiden päällä on tuore vadelma
   width: 1280
   height: 853
 ingredients:

@@ -20,7 +20,7 @@ tags:
   - ข้าว
 image:
   src: paaruoat/paella-valenciana.webp
-  alt: Paella วาเลนเซียพร้อมข้าวแซฟฟรอน ไก่ กระต่าย และถั่วแขก
+  alt: ปาเอยาใส่ข้าวหญ้าฝรั่น ไก่ และถั่วแขก
   width: 1279
   height: 853
 ingredients:

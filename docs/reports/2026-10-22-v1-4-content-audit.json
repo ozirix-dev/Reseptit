@@ -3365,23 +3365,26 @@
     {
       "recipe_id": "hyderabadi-kanabiryani",
       "severity": "P1",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "Kaneli ja kardemumma lisätään vaiheissa 3 ja 5 ilman määrän jakamista. Omistajan on täsmennettävä jako."
+      "detail": "Koko kanelitanko ja kaikki kardemummakodat kattilaan vaiheessa 3. Vaiheen 5 riisivesi vain suolataan; mausteita ei lisätä kahdesti.",
+      "original_detail": "Kaneli ja kardemumma lisätään vaiheissa 3 ja 5 ilman määrän jakamista. Omistajan on täsmennettävä jako."
     },
     {
       "recipe_id": "masala-dosa",
       "severity": "P1",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "Taikinan veden määrää ei ole yksilöity. Ei arvata fermentoitavan taikinan nestesuhdetta."
+      "detail": "Määrätön vesi aineksiin; lisätään vähitellen jauhamisen tarvitsema määrä. Paksu mutta kaadettava taikina ennen fermentointia, ohueksi levittyvä ennen paistoa. Veden tarve riippuu riisistä ja laitteesta.",
+      "original_detail": "Taikinan veden määrää ei ole yksilöity. Ei arvata fermentoitavan taikinan nestesuhdetta."
     },
     {
       "recipe_id": "idli-sambar",
       "severity": "P1",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "Vaiheen 3 täsmällinen 5 dl lisävesi lisättiin aineksiin, mutta taikinan soseutus-/fermentointiveden määrä jää täsmennettäväksi."
+      "detail": "Määrätön liotus-/jauhatus-/linssien keittovesi aineksiin erillään kasvisten 5 dl:sta. Paksu lusikoitava/kaadettava taikina, ei vetinen. Urad-dal ja punaiset linssit eroteltu vaiheissa.",
+      "original_detail": "Vaiheen 3 täsmällinen 5 dl lisävesi lisättiin aineksiin, mutta taikinan soseutus-/fermentointiveden määrä jää täsmennettäväksi."
     },
     {
       "recipe_id": "uuniporsas-kermakastikkeessa-vhh",
@@ -3414,9 +3417,10 @@
     {
       "recipe_id": "paistettu-maksa-pekonilla",
       "severity": "P0",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "1–2 minuutin paisto-ohje riippuu viipaleen paksuudesta. Kypsyyden varmistaminen tarvitsee ruokaturvallisuuteen perehtyneen tarkistajan; turvallista lämpötila-arvoa ei arvata."
+      "detail": "Kypsennystä jatketaan kastikkeessa vähintään 72 °C sisälämpötilaan; paksuimman kohdan mittaus kaikilla kielillä. USDA 160 °F / 71,1 °C sisäelinlihoille, pyöristetty ylöspäin.",
+      "original_detail": "1–2 minuutin paisto-ohje riippuu viipaleen paksuudesta. Kypsyyden varmistaminen tarvitsee ruokaturvallisuuteen perehtyneen tarkistajan; turvallista lämpötila-arvoa ei arvata."
     },
     {
       "recipe_id": "pekingin-ankka",
@@ -3498,121 +3502,138 @@
     {
       "recipe_id": "medu-vada",
       "severity": "P1",
-      "status": "separate-image-correction-proposed",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kuvassa paistettua kalaa; ehdotettu oikea nykyinen asset idli-sambar."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kuvassa paistettua kalaa; ehdotettu oikea nykyinen asset idli-sambar."
     },
     {
       "recipe_id": "paneer-tikka",
       "severity": "P1",
-      "status": "separate-image-correction-proposed",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kuvassa lammascurry; ehdotettu oikea nykyinen asset aloo-paratha."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kuvassa lammascurry; ehdotettu oikea nykyinen asset aloo-paratha."
     },
     {
       "recipe_id": "aloo-paratha",
       "severity": "P1",
-      "status": "separate-image-correction-proposed",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kuvassa paneervartaita; ehdotettu oikea nykyinen asset rogan-josh."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kuvassa paneervartaita; ehdotettu oikea nykyinen asset rogan-josh."
     },
     {
       "recipe_id": "amritsari-kala",
       "severity": "P1",
-      "status": "separate-image-correction-proposed",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kuvassa idli/sambar; ehdotettu oikea nykyinen asset medu-vada."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kuvassa idli/sambar; ehdotettu oikea nykyinen asset medu-vada."
     },
     {
       "recipe_id": "dal-makhani",
       "severity": "P1",
-      "status": "separate-image-correction-proposed",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kuvassa tandoorikanaa; ehdotettu oikea nykyinen asset tandoorikana."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kuvassa tandoorikanaa; ehdotettu oikea nykyinen asset tandoorikana."
     },
     {
       "recipe_id": "idli-sambar",
       "severity": "P1",
-      "status": "separate-image-correction-proposed",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kuvassa medu vada; ehdotettu oikea nykyinen asset amritsari-kala."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kuvassa medu vada; ehdotettu oikea nykyinen asset amritsari-kala."
     },
     {
       "recipe_id": "rogan-josh",
       "severity": "P1",
-      "status": "separate-image-correction-proposed",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kuvassa parathaleipää; ehdotettu oikea nykyinen asset paneer-tikka."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kuvassa parathaleipää; ehdotettu oikea nykyinen asset paneer-tikka."
     },
     {
       "recipe_id": "tandoorikana",
       "severity": "P1",
-      "status": "separate-image-correction-proposed",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kuvassa dal makhani; ehdotettu oikea nykyinen asset dal-makhani."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kuvassa dal makhani; ehdotettu oikea nykyinen asset dal-makhani."
     },
     {
       "recipe_id": "kantonilainen-hoyrytetty-kala",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kokonainen kala kuvassa; ohje käsittelee fileetä."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kokonainen kala kuvassa; ohje käsittelee fileetä."
     },
     {
       "recipe_id": "koshari",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kuvassa kikherneiltä näyttäviä lisäkkeitä, joita ainesosissa ei ole."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kuvassa kikherneiltä näyttäviä lisäkkeitä, joita ainesosissa ei ole."
     },
     {
       "recipe_id": "kung-pao-kana",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "image",
-      "detail": "Punaiset palat voivat olla paprikaa tai chiliä; tarkista alkuperäinen kuva."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Punaiset palat voivat olla paprikaa tai chiliä; tarkista alkuperäinen kuva."
     },
     {
       "recipe_id": "mapo-tofu",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "image",
-      "detail": "Alt-teksti kutsuu tofua silkkiseksi, ainesosissa kiinteä tofu."
+      "detail": "Tofukuutiot sopivat ohjeeseen; perusteeton silkkisyys poistettu alt-tekstistä kaikilla kielillä. Kuva ennallaan.",
+      "original_detail": "Alt-teksti kutsuu tofua silkkiseksi, ainesosissa kiinteä tofu."
     },
     {
       "recipe_id": "pad-see-ew-vhh-konjac",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "reviewed-no-confirmed-defect",
       "area": "image",
-      "detail": "Kuvan leveät nuudelit eivät yksiselitteisesti vastaa konjaknuudeleita."
+      "detail": "Kokokokoinen kuva tarkistettu. Nuudelien leveydestä ei voi päätellä jauho-/konjakkoostumusta; ei vahvistettua ristiriitaa. Kuva ennallaan.",
+      "original_detail": "Kuvan leveät nuudelit eivät yksiselitteisesti vastaa konjaknuudeleita."
     },
     {
       "recipe_id": "paella-valenciana",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kuvan palkokasvit vaativat tarkemman vertailun."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kuvan palkokasvit vaativat tarkemman vertailun."
     },
     {
       "recipe_id": "rahkapiirakka-vhh",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kuvassa marjoja myös täytteessä, ainesosissa ei marjoja."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kuvassa marjoja myös täytteessä, ainesosissa ei marjoja."
     },
     {
       "recipe_id": "vhh-lihapiirakka",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kuva suljetusta piirakasta, ohje avoimesta piirakasta."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kuva suljetusta piirakasta, ohje avoimesta piirakasta."
     },
     {
       "recipe_id": "vhh-runebergintortut",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "image",
-      "detail": "Kuvassa hilloa ja kuorruterengas, ohjeessa vadelma. Sokerittomuutta ei voi nähdä kuvasta."
+      "detail": "Visuaalisesti tarkistettu korvaava kuva ja alt-tekstit. Katso 2026-10-22-v1-4-image-corrections.json; reseptin ainesosat ennallaan.",
+      "original_detail": "Kuvassa hilloa ja kuorruterengas, ohjeessa vadelma. Sokerittomuutta ei voi nähdä kuvasta."
     }
   ],
   "changed_versions": [
@@ -3669,13 +3690,21 @@
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
     {
+      "recipe_id": "hyderabadi-kanabiryani",
+      "locale": "fi",
+      "path": "reseptit/paaruoat/hyderabadi-kanabiryani.md",
+      "metadata_fields": [],
+      "prose_changed": true,
+      "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
+    },
+    {
       "recipe_id": "idli-sambar",
       "locale": "fi",
       "path": "reseptit/paaruoat/idli-sambar.md",
       "metadata_fields": [
         "ingredients"
       ],
-      "prose_changed": false,
+      "prose_changed": true,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
     {
@@ -3767,6 +3796,26 @@
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
     {
+      "recipe_id": "mapo-tofu",
+      "locale": "fi",
+      "path": "reseptit/paaruoat/mapo-tofu.md",
+      "metadata_fields": [
+        "image"
+      ],
+      "prose_changed": false,
+      "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
+    },
+    {
+      "recipe_id": "masala-dosa",
+      "locale": "fi",
+      "path": "reseptit/paaruoat/masala-dosa.md",
+      "metadata_fields": [
+        "ingredients"
+      ],
+      "prose_changed": true,
+      "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
+    },
+    {
       "recipe_id": "munakoiso-jauhelihavuoka-vhh",
       "locale": "fi",
       "path": "reseptit/paaruoat/munakoiso-jauhelihavuoka-vhh.md",
@@ -3796,6 +3845,16 @@
       "path": "reseptit/paaruoat/pad-thai-vhh-konjac.md",
       "metadata_fields": [],
       "prose_changed": true,
+      "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
+    },
+    {
+      "recipe_id": "paella-valenciana",
+      "locale": "fi",
+      "path": "reseptit/paaruoat/paella-valenciana.md",
+      "metadata_fields": [
+        "image"
+      ],
+      "prose_changed": false,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
     {
@@ -3889,7 +3948,9 @@
       "recipe_id": "rahkapiirakka-vhh",
       "locale": "fi",
       "path": "reseptit/jalkiruoat/rahkapiirakka-vhh.md",
-      "metadata_fields": [],
+      "metadata_fields": [
+        "image"
+      ],
       "prose_changed": true,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
@@ -3937,7 +3998,9 @@
       "recipe_id": "vhh-lihapiirakka",
       "locale": "fi",
       "path": "reseptit/leivonnaiset/vhh-lihapiirakka.md",
-      "metadata_fields": [],
+      "metadata_fields": [
+        "image"
+      ],
       "prose_changed": true,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
@@ -3945,7 +4008,9 @@
       "recipe_id": "vhh-runebergintortut",
       "locale": "fi",
       "path": "reseptit/leivonnaiset/vhh-runebergintortut.md",
-      "metadata_fields": [],
+      "metadata_fields": [
+        "image"
+      ],
       "prose_changed": true,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
@@ -4112,7 +4177,9 @@
       "recipe_id": "vhh-lihapiirakka",
       "locale": "en",
       "path": "kaannokset/en/leivonnaiset/vhh-lihapiirakka.md",
-      "metadata_fields": [],
+      "metadata_fields": [
+        "image"
+      ],
       "prose_changed": true,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
@@ -4121,6 +4188,7 @@
       "locale": "en",
       "path": "kaannokset/en/leivonnaiset/vhh-runebergintortut.md",
       "metadata_fields": [
+        "image",
         "ingredients"
       ],
       "prose_changed": true,
@@ -4229,7 +4297,7 @@
       "metadata_fields": [
         "ingredients"
       ],
-      "prose_changed": false,
+      "prose_changed": true,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
     {
@@ -4239,7 +4307,7 @@
       "metadata_fields": [
         "ingredients"
       ],
-      "prose_changed": false,
+      "prose_changed": true,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
     {
@@ -4447,6 +4515,16 @@
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
     {
+      "recipe_id": "mapo-tofu",
+      "locale": "en",
+      "path": "kaannokset/en/paaruoat/mapo-tofu.md",
+      "metadata_fields": [
+        "image"
+      ],
+      "prose_changed": false,
+      "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
+    },
+    {
       "recipe_id": "marokkolainen-couscous",
       "locale": "en",
       "path": "kaannokset/en/paaruoat/marokkolainen-couscous.md",
@@ -4454,6 +4532,16 @@
         "ingredients"
       ],
       "prose_changed": false,
+      "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
+    },
+    {
+      "recipe_id": "masala-dosa",
+      "locale": "en",
+      "path": "kaannokset/en/paaruoat/masala-dosa.md",
+      "metadata_fields": [
+        "ingredients"
+      ],
+      "prose_changed": true,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
     {
@@ -4554,6 +4642,16 @@
         "ingredients"
       ],
       "prose_changed": true,
+      "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
+    },
+    {
+      "recipe_id": "paella-valenciana",
+      "locale": "en",
+      "path": "kaannokset/en/paaruoat/paella-valenciana.md",
+      "metadata_fields": [
+        "image"
+      ],
+      "prose_changed": false,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
     {
@@ -4984,6 +5082,7 @@
       "locale": "sv",
       "path": "kaannokset/sv/leivonnaiset/vhh-lihapiirakka.md",
       "metadata_fields": [
+        "image",
         "title"
       ],
       "prose_changed": true,
@@ -4994,6 +5093,7 @@
       "locale": "sv",
       "path": "kaannokset/sv/leivonnaiset/vhh-runebergintortut.md",
       "metadata_fields": [
+        "image",
         "ingredients",
         "title"
       ],
@@ -5129,7 +5229,7 @@
       "metadata_fields": [
         "ingredients"
       ],
-      "prose_changed": false,
+      "prose_changed": true,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
     {
@@ -5348,6 +5448,16 @@
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
     {
+      "recipe_id": "mapo-tofu",
+      "locale": "sv",
+      "path": "kaannokset/sv/paaruoat/mapo-tofu.md",
+      "metadata_fields": [
+        "image"
+      ],
+      "prose_changed": false,
+      "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
+    },
+    {
       "recipe_id": "marokkolainen-couscous",
       "locale": "sv",
       "path": "kaannokset/sv/paaruoat/marokkolainen-couscous.md",
@@ -5355,6 +5465,16 @@
         "ingredients"
       ],
       "prose_changed": false,
+      "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
+    },
+    {
+      "recipe_id": "masala-dosa",
+      "locale": "sv",
+      "path": "kaannokset/sv/paaruoat/masala-dosa.md",
+      "metadata_fields": [
+        "ingredients"
+      ],
+      "prose_changed": true,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
     {
@@ -5454,6 +5574,16 @@
         "ingredients"
       ],
       "prose_changed": true,
+      "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
+    },
+    {
+      "recipe_id": "paella-valenciana",
+      "locale": "sv",
+      "path": "kaannokset/sv/paaruoat/paella-valenciana.md",
+      "metadata_fields": [
+        "image"
+      ],
+      "prose_changed": false,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
     {
@@ -5890,6 +6020,7 @@
       "locale": "th",
       "path": "kaannokset/th/jalkiruoat/rahkapiirakka-vhh.md",
       "metadata_fields": [
+        "image",
         "ingredients"
       ],
       "prose_changed": true,
@@ -5945,7 +6076,9 @@
       "recipe_id": "vhh-lihapiirakka",
       "locale": "th",
       "path": "kaannokset/th/leivonnaiset/vhh-lihapiirakka.md",
-      "metadata_fields": [],
+      "metadata_fields": [
+        "image"
+      ],
       "prose_changed": true,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
@@ -5954,6 +6087,7 @@
       "locale": "th",
       "path": "kaannokset/th/leivonnaiset/vhh-runebergintortut.md",
       "metadata_fields": [
+        "image",
         "ingredients"
       ],
       "prose_changed": true,
@@ -6206,7 +6340,9 @@
       "recipe_id": "kantonilainen-hoyrytetty-kala",
       "locale": "th",
       "path": "kaannokset/th/paaruoat/kantonilainen-hoyrytetty-kala.md",
-      "metadata_fields": [],
+      "metadata_fields": [
+        "image"
+      ],
       "prose_changed": true,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
@@ -6389,6 +6525,7 @@
       "locale": "th",
       "path": "kaannokset/th/paaruoat/mapo-tofu.md",
       "metadata_fields": [
+        "image",
         "ingredients"
       ],
       "prose_changed": true,
@@ -6408,7 +6545,9 @@
       "recipe_id": "masala-dosa",
       "locale": "th",
       "path": "kaannokset/th/paaruoat/masala-dosa.md",
-      "metadata_fields": [],
+      "metadata_fields": [
+        "ingredients"
+      ],
       "prose_changed": true,
       "review": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING"
     },
@@ -6851,7 +6990,13 @@
     "No kitchen tests",
     "No independently documented native-language human review",
     "No nutrition recalculation",
-    "Image assets unchanged; visual contact-sheet review is not proof of composition",
-    "Absence of a finding is not a guarantee of correctness"
-  ]
+    "Absence of a finding is not a guarantee of correctness",
+    "Generated illustrations visually checked against recipes; ingredient composition cannot be verified from appearance alone"
+  ],
+  "followup": {
+    "date": "2026-10-22",
+    "scope": "User requested all P0/P1 and wrong image corrections",
+    "image_manifest": "2026-10-22-v1-4-image-corrections.json",
+    "remaining_open_P0_P1": 0
+  }
 }

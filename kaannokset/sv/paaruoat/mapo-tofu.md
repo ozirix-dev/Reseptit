@@ -19,7 +19,7 @@ tags:
   - fläsk
 image:
   src: paaruoat/mapo-tofu.webp
-  alt: Mapo tofu panna med chili, köttfärs, silkeslen tofu och vårlök
+  alt: Mapo tofu med tofutärningar, köttfärs, chili och salladslök
   width: 1279
   height: 853
 ingredients:
