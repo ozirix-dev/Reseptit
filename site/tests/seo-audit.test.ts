@@ -55,3 +55,28 @@ test("metadata mutations cannot silently pass", async () => {
     }
   }
 });
+
+test("JSON-LD and hydration require active scripts outside inert content", async () => {
+  const page = expectedPages(siteContent.recipes).find((p) => p.recipe)!;
+  const html = await readFile(path.join(dist, page.route.slice(1), "index.html"), "utf8");
+  assert.deepEqual(inspectPage(html, page), []);
+  const wrappers = [
+    (script: string) => `<!--${script}-->`,
+    ...["style", "textarea", "title", "xmp", "iframe", "noembed", "noframes", "template"].map((name) =>
+      (script: string) => `<${name}>${script}</${name}>`),
+    (script: string) => `<TeXtArEa class="example">${script}</TeXtArEa>`,
+  ];
+  for (const [pattern, code] of [
+    [/<script\b[^>]*type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/i, "JSONLD_COUNT"],
+    [/<script\b[^>]*id="page-content"[^>]*>[\s\S]*?<\/script>/i, "PAGE_CONTENT"],
+  ] as const) {
+    const script = html.match(pattern)?.[0];
+    assert.ok(script, `Fixture must contain ${code} script`);
+    for (const wrap of wrappers) {
+      assert.ok(inspectPage(html.replace(pattern, () => wrap(script)), page).some((f) => f.code === code), `${code}: ${wrap("...")}`);
+      // Inert copies must not count as duplicates of the real script either.
+      const duplicateFindings = inspectPage(html.replace("</body>", `${wrap(script)}</body>`), page);
+      assert.deepEqual(duplicateFindings.filter((f) => f.code.startsWith("JSONLD_") || f.code === "PAGE_CONTENT"), []);
+    }
+  }
+});

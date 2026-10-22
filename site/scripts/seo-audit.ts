@@ -17,6 +17,11 @@ export const decodeHtml = (value: string) => value.replace(/&(?:amp|quot|apos|lt
 const attrs = (tag: string) => Object.fromEntries([...tag.matchAll(/([\w-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g)].map((m) => [m[1].toLowerCase(), decodeHtml(m[2] ?? m[3])]));
 const activeDocument = (html: string) => html.replace(/<!--[\s\S]*?(?:-->|$)/g, "").replace(/<template\b[^>]*>[\s\S]*?<\/template>/gi, "");
 const activeMarkup = (html: string) => activeDocument(html).replace(/<(script|style|textarea|xmp|iframe|noembed|noframes)\b[^>]*>[\s\S]*?<\/\1>/gi, "");
+// Consume complete raw-text elements before selecting scripts: a script-looking
+// string inside one of these elements is text, not structured/hydration data.
+const activeScripts = (html: string) => [...activeDocument(html).matchAll(/<(script|style|textarea|title|xmp|iframe|noembed|noframes)\b([^>]*)>([\s\S]*?)(?:<\/\1\s*>|$)/gi)]
+  .filter((match) => match[1].toLowerCase() === "script")
+  .map((match) => ({ attributes: attrs(match[2]), content: match[3] }));
 const tags = (html: string, name: string) => [...activeMarkup(html).matchAll(new RegExp(`<${name}\\b[^>]*>`, "gi"))].map((m) => attrs(m[0]));
 const texts = (html: string, name: string) => [...activeMarkup(html).matchAll(new RegExp(`<${name}\\b[^>]*>([\\s\\S]*?)</${name}>`, "gi"))].map((m) => decodeHtml(m[1].replace(/<[^>]+>/g, "")).trim());
 
@@ -48,7 +53,8 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
   const alternateLinks = links.filter((l) => l.rel === "alternate" && l.hreflang);
   check(alternateLinks.length === Object.keys(expected.alternates).length && isDeepStrictEqual(Object.fromEntries(alternateLinks.map((l) => [l.hreflang, l.href])), expected.alternates), "HREFLANG", "Published alternates/x-default must match both ways; no extra, duplicate or missing locale");
   check(!metas.some((m) => ["robots", "googlebot"].includes(m.name) && /(?:noindex|none)/i.test(m.content)), "NOINDEX", "Published page blocks indexing");
-  const jsonScripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)].filter((m) => attrs(m[1]).type === "application/ld+json");
+  const scripts = activeScripts(html);
+  const jsonScripts = scripts.filter((script) => script.attributes.type === "application/ld+json");
   if (!expected.recipe) {
     check(jsonScripts.length === 0, "INDEX_JSONLD", "Index unexpectedly declares recipe data");
     return issues;
@@ -57,7 +63,7 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
   check(jsonScripts.length === 1, "JSONLD_COUNT", "Expected one Recipe JSON-LD block");
   if (jsonScripts.length !== 1) return issues;
   try {
-    const data = JSON.parse(jsonScripts[0][2]);
+    const data = JSON.parse(jsonScripts[0].content);
     const nutrition = Object.fromEntries(Object.entries({ carbohydrateContent: recipe.nutrition.carbsTotalG, proteinContent: recipe.nutrition.proteinG, fatContent: recipe.nutrition.fatG }).filter(([, n]) => n !== null).map(([k, n]) => [k, `${n} g`]));
     const expectedData = JSON.parse(JSON.stringify({
       "@context": "https://schema.org", "@type": "Recipe", name: recipe.title, description: recipe.description || undefined,
@@ -76,8 +82,8 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
     check(images.some((img) => img.src === recipe.image!.src && img.alt === recipe.image!.alt), "RECIPE_IMAGE", "Visible recipe image/alt differs from source");
     check(metas.some((m) => m.property === "og:image" && m.content === recipe.image!.src), "OG_IMAGE", "Open Graph image differs from source");
   }
-  const payload = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)].find((m) => attrs(m[1]).id === "page-content");
-  try { check(!!payload && isDeepStrictEqual(JSON.parse(payload![2]).recipe, recipe), "PAGE_CONTENT", "Hydration content differs from audited source"); }
+  const payload = scripts.find((script) => script.attributes.id === "page-content");
+  try { check(!!payload && isDeepStrictEqual(JSON.parse(payload!.content).recipe, recipe), "PAGE_CONTENT", "Hydration content differs from audited source"); }
   catch { check(false, "PAGE_CONTENT", "Invalid hydration JSON"); }
   return issues;
 }
