@@ -117,3 +117,12 @@ button { font: inherit; }
   .recipe-panel { margin-top: 1rem; padding: 0; border: 0; box-shadow: none; break-inside: avoid; }
   a { color: inherit; }
 }
+
+/* Reserve enhancement space only when scripting is enabled. No dead form without JS. */
+.recipe-filters--placeholder, .recipe-result-placeholder { display: none; }
+@media (scripting: enabled) {
+  .recipe-filters--placeholder { display: grid; visibility: hidden; }
+  .recipe-result-placeholder { display: block; visibility: hidden; }
+  .placeholder-label { font-size: .9rem; font-weight: 700; }
+  .placeholder-input { min-height: 2.8rem; }
+}

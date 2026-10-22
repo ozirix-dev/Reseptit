@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { getRecipes } from "@/lib/content";
-import type { RecipeEntry, RecipeLocale } from "@/types/content";
+import { useContent } from "@/lib/content";
+import type { RecipeLocale } from "@/types/content";
 import { recipeUi } from "./recipe-i18n";
 import { emptyRecipeFilters, filterRecipes, parseRecipeFilters, recipeFiltersToSearch, type RecipeCategory, type RecipeDietFilter, type RecipeFilters } from "./recipe-search";
 
-const categories: RecipeEntry["category"][] = ["alkuruoka", "paaruoka", "jalkiruoka", "leivonnainen"];
+import type { RecipeSummary } from "@/content/route-data";
+
+const categories: RecipeSummary["category"][] = ["alkuruoka", "paaruoka", "jalkiruoka", "leivonnainen"];
 
 export function RecipesPage({ locale }: { locale: RecipeLocale }) {
-  const recipes = getRecipes(locale);
+  const { recipes } = useContent();
   const labels = recipeUi[locale];
   const location = useLocation();
   const navigate = useNavigate();
@@ -69,8 +71,8 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
         </select>
       </div> : null}
       {hasActiveFilters && filteredRecipes.length > 0 ? <button type="button" className="recipe-filter-reset" onClick={resetFilters}>{labels.resetFilters}</button> : null}
-    </form> : null}
-    {hydrated ? <p className="recipe-result-count" role="status" aria-live="polite" aria-atomic="true">{labels.results(filteredRecipes.length)}</p> : null}
+    </form> : <div className="recipe-filters recipe-filters--placeholder" aria-hidden="true">{[labels.search, labels.categoryFilter, ...(hasDietClasses ? [labels.dietFilter] : [])].map((label) => <div className="recipe-filter-select" key={label}><span className="placeholder-label">{label}</span><span className="placeholder-input" /></div>)}</div>}
+    {hydrated ? <p className="recipe-result-count" role="status" aria-live="polite" aria-atomic="true">{labels.results(filteredRecipes.length)}</p> : <p className="recipe-result-count recipe-result-placeholder" aria-hidden="true">{labels.results(recipes.length)}</p>}
     {hydrated && hasActiveFilters ? <p className="recipe-active-filters">{[
       filters.query ? `“${filters.query}”` : null,
       filters.category !== "all" ? labels.category[filters.category] : null,
@@ -81,7 +83,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   </div></section>;
 }
 
-function RecipeCard({ recipe, index, locale }: { recipe: RecipeEntry; index: number; locale: RecipeLocale }) {
+function RecipeCard({ recipe, index, locale }: { recipe: RecipeSummary; index: number; locale: RecipeLocale }) {
   const [imageFailed, setImageFailed] = useState(false);
   const labels = recipeUi[locale];
   const dietLabel = recipe.dietClass === "keto" ? labels.keto : recipe.dietClass ? labels.vhh : null;

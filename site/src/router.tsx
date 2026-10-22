@@ -2,14 +2,16 @@ import { createBrowserRouter, createMemoryRouter, Link, Outlet, useLocation, typ
 import { RecipePage } from "@/features/recipes/RecipePage";
 import { RecipesPage } from "@/features/recipes/RecipesPage";
 import { recipeIndexPath, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
-import { getRecipes } from "@/lib/content";
+import { useContent } from "@/lib/content";
+import { loadContent } from "@/lib/load-content";
+import type { RouteContent } from "@/content/route-data";
 import { SeoMeta } from "@/SeoMeta";
 
 function SiteLayout() {
   const { pathname } = useLocation();
   const locale = recipeLocaleFromPath(pathname);
   const labels = recipeUi[locale];
-  const availableLocales = (["fi", "en", "sv", "th"] as const).filter((locale) => getRecipes(locale).length > 0);
+  const { locales: availableLocales } = useContent();
   return (
     <div className="site-shell">
       <SeoMeta />
@@ -38,11 +40,26 @@ function NotFoundPage() {
   return <section className="page-section"><div className="container container--narrow"><h1>{labels.notFound}</h1><p><Link to={recipeIndexPath(locale)}>{labels.backToRecipes}</Link></p></div></section>;
 }
 
+function ContentError() {
+  const { pathname } = useLocation();
+  const locale = recipeLocaleFromPath(pathname);
+  const text = {
+    fi: ["Sisällön lataaminen epäonnistui", "Yritä uudelleen"],
+    en: ["Could not load this page", "Try again"],
+    sv: ["Sidan kunde inte laddas", "Försök igen"],
+    th: ["โหลดเนื้อหาไม่สำเร็จ", "ลองอีกครั้ง"],
+  }[locale];
+  return <main className="container" lang={locale}><h1>{text[0]}</h1><a href={`${import.meta.env.BASE_URL.replace(/\/$/, "")}${pathname}`}>{text[1]}</a></main>;
+}
+
 export const siteRoutes: RouteObject[] = [
   {
+    id: "content",
     path: "/",
+    loader: loadContent,
+    shouldRevalidate: ({ currentUrl, nextUrl }) => currentUrl.pathname !== nextUrl.pathname,
     element: <SiteLayout />,
-    errorElement: <NotFoundPage />,
+    errorElement: <ContentError />,
     children: [
       { index: true, element: <RecipesPage locale="fi" /> },
       { path: ":slug", element: <RecipePage /> },
@@ -58,13 +75,14 @@ export const siteRoutes: RouteObject[] = [
   },
 ];
 
-export function createSiteRouter() {
-  return createBrowserRouter(siteRoutes, { basename: import.meta.env.BASE_URL });
+export function createSiteRouter(initial: RouteContent) {
+  return createBrowserRouter(siteRoutes, { basename: import.meta.env.BASE_URL, hydrationData: { loaderData: { content: initial } } });
 }
 
-export function createStaticRouter(route: string) {
+export function createStaticRouter(route: string, initial: RouteContent) {
   return createMemoryRouter(siteRoutes, {
     basename: import.meta.env.BASE_URL,
+    hydrationData: { loaderData: { content: initial } },
     initialEntries: [`${import.meta.env.BASE_URL.replace(/\/$/, "")}${route}`],
   });
 }

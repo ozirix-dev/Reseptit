@@ -1,6 +1,8 @@
-import type { RecipeEntry, RecipeLocale } from "@/types/content";
+import type { RecipeLocale } from "@/types/content";
 
-export type RecipeCategory = RecipeEntry["category"] | "all";
+import type { RecipeSummary } from "@/content/route-data";
+
+export type RecipeCategory = RecipeSummary["category"] | "all";
 export type RecipeDietFilter = "all" | "keto" | "vhh";
 
 export interface RecipeFilters {
@@ -48,7 +50,7 @@ export function recipeFiltersToSearch(filters: RecipeFilters): string {
   return search ? `?${search}` : "";
 }
 
-export function filterRecipes(recipes: RecipeEntry[], filters: RecipeFilters, locale: RecipeLocale): RecipeEntry[] {
+export function filterRecipes<T extends RecipeSummary>(recipes: T[], filters: RecipeFilters, locale: RecipeLocale): T[] {
   const terms = normalizeSearchText(filters.query, locale).split(" ").filter(Boolean);
   return recipes.filter((recipe) => {
     if (filters.category !== "all" && recipe.category !== filters.category) return false;

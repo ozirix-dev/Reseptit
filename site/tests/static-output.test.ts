@@ -20,6 +20,13 @@ test("recipe index is prerendered and links only published languages", async () 
   assert.match(html, /hreflang="th" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/th\/recipes\//);
   assert.doesNotMatch(html, /href="[^"]+\?q=/);
   assert.doesNotMatch(html, /recipe-jsonld/);
+  const allPreloads = [...html.matchAll(/<link rel="preload" as="image"[^>]*>/g)];
+  // React also emits an unconditional preload for the first eager card.
+  assert.equal(allPreloads.filter((item) => !item[0].includes("media=")).length, 1);
+  const preloads = allPreloads.filter((item) => item[0].includes("media="));
+  assert.equal(preloads.length, 2);
+  assert.match(preloads[0][0], /media="\(min-width: 700px\)"/);
+  assert.match(preloads[1][0], /media="\(min-width: 1100px\)"/);
 });
 
 test("prerendered recipe HTML includes useful content before JavaScript", async () => {

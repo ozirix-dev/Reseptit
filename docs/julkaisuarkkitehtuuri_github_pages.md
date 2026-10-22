@@ -21,8 +21,12 @@ Reseptisivuston lähdekoodi on `site/`-kansiossa. Komennot suoritetaan siellä:
 ```powershell
 npm ci
 npm test
+npm run test:translations
+npm run test:image
 npm run build
 npm run test:static
+npm run test:browser
+npm audit --audit-level=low
 npm run preview
 ```
 
@@ -36,7 +40,7 @@ GitHub Actions ajaa yksikkötestit, buildin ja esirenderöityjen tiedostojen tar
 - Canonical, hreflang ja sivukartta muodostuvat julkaistuista reiteistä. Reseptin `x-default` ohjaa julkaistuun suomenkieliseen versioon tai, jos sellaista ei ole, ensimmäiseen julkaistuun kieleen.
 - Tuntemattomalle reitille GitHub Pages palauttaa `404.html`-sivun. Se sisältää `noindex,follow`-merkinnän eikä canonical-osoitetta tai `Recipe`-JSON-LD:tä. Asiakasreitityksen tuntemattomat polut saavat saman noindex-käsittelyn.
 - JSON-LD vastaa sivulla näkyviä tietoja. Kuvamerkintä lisätään vain, kun frontmatterissa määritetty ja repo-työpuusta löytyvä kuva on mukana.
-- Julkaistuna ovat tällä hetkellä suomenkieliset kermainen lohipata ja keto-kauralesesämpylät. Niillä ei ole julkaistuja käännöksiä tai reseptikuvia.
+- Kielivalikoima, reseptit ja kuvat määräytyvät julkaistuista lähteistä. Ajantasainen inventaario: `cd site; npm run report:inventory`. Historiallisia reseptimääriä ei käytetä buildin oletuksena.
 
 ### Robots.txt ja sitemap
 
@@ -52,7 +56,10 @@ Sitemap on `https://ozirix-dev.github.io/Reseptit/sitemap.xml` ja sisältää va
 4. Suorita Search Consolessa vahvistus ja lisää sivukartaksi `https://ozirix-dev.github.io/Reseptit/sitemap.xml`.
 5. Tarkista URL-tarkastuksella hakemistosivu ja yksittäinen resepti. Lähettäminen ei takaa indeksointia tai rich result -näkyvyyttä.
 
-Googlen Recipe-rich-result-ohjeissa `image` on pakollinen ominaisuus. Nykyisillä kuvattomilla resepteillä on Schema.org `Recipe` -dataa, mutta ne eivät nykyohjeiden mukaan ole kelpoisia Googlen reseptin rich result -esitykseen ennen aidon, sisältöä vastaavan ja indeksoitavan kuvan lisäämistä. Rakenteisen datan on myös vastattava käyttäjälle näkyvää sisältöä. ([Recipe markup](https://developers.google.com/search/docs/appearance/structured-data/recipe), [structured data policies](https://developers.google.com/search/docs/appearance/structured-data/sd-policies))
+Reseptikuvat ja rakenteinen data ovat käytössä. Tekninen validointi ei takaa
+Googlen indeksointia tai rich result -näkyvyyttä. Kuva ja teksti täytyy tarkistaa
+myös sisällöllisesti. Vahvistustiedoston HTTP 200 todistaa vain tiedoston
+saatavuuden, ei Search Consolen omistajuusvahvistuksen onnistumista.
 
 ## Kuvien lisääminen
 
@@ -63,7 +70,47 @@ Googlen Recipe-rich-result-ohjeissa `image` on pakollinen ominaisuus. Nykyisill�
 
 ## Bundle ja ylläpito
 
-Asiakasbundle sisältää reseptitiedot hydratoidakseen aktiivisen reitin ja annoslaskurin. Lokakuun 2026 auditissa kaikkien reseptien JavaScript-bundle oli noin 331 kB ennen gzip-pakkausta ja 105 kB gzipattuna. Pienelle kokoelmalle tämä on kohtuullinen, mutta sisältö kasvaa yhteisen bundle-moduulin mukana. Arvioi reittikohtainen tietolataus uudelleen, kun julkaistuja reseptejä on noin sata tai sisältö kasvattaa gzipattua JavaScriptiä yli 150 kB.
+### Sisältödatan kulku
+
+1. `build-content.ts` lukee julkaistut Markdownit. Täysi
+   `content.generated.ts` on buildin ja testien käytössä.
+2. `contentForRoute` poimii hakemistoon vain kyseisen kielen tiivistelmät
+   (myös haun tarvitsemat ainesosanimet) tai reseptisivulle yhden reseptin.
+   Vastinkielten linkit ovat kevyitä locale/polku-pareja.
+3. Build kirjoittaa `public/data/<sha256-prefix>.json`-tiedostot ja
+   reittimanifestin. Generoitu datahakemisto rakennetaan uudelleen, jotta
+   poistunut julkaisutieto ei jää vahingossa jakeluun.
+4. Prerenderöinti upottaa saman lähtödatan HTML:n `page-content`-elementtiin.
+   `<`, U+2028 ja U+2029 escapetaan. Sivun sisältö ei tarvitse JSON-hakua
+   ensimmäisellä latauksella. Reactin alkuperäinen puu vastaa staattista HTML:ää.
+5. Routerin loader hakee navigoitaessa vain kohdereitin JSONin. Selainmuistin
+   välimuisti säilyttää enintään 24 reittiä. Query-muutos ei hae dataa uudelleen.
+   Puuttuva tai virheellinen payload näyttää lokalisoidun virheen ja retry-linkin.
+
+URL:n hakuparametrit sovelletaan vasta hydraation jälkeen: Pages ei generoi
+erillistä HTML:ää jokaiselle kyselylle. Ilman JavaScriptiä käyttäjä saa kaikki
+kortit ja linkit ilman toimimatonta hakulomaketta. JavaScriptiä tukevassa
+selaimessa lomakkeelle varattu tila ehkäisee asetteluhyppyä.
+
+Manifesti ja yhteinen sovelluskoodi kuuluvat JavaScriptiin, kokonainen
+reseptikirjasto ei. Sisältötiivisteet estävät eri versioiden JSONien sekoittumisen.
+Pagesin HTTP-välimuisti täydentää sovelluksen välimuistia; projekti ei aseta
+omaa palvelinpuolen Cache-Control-käytäntöä. Pitkään avoimen vanhan sivun
+navigointi uuden julkaisun jälkeen voi kohdata poistuneen datatiedoston:
+retry-linkki lataa ajantasaisen sivun kokonaan.
+
+Hakemiston ensimmäinen kuva on eager/high. Toisen ja kolmannen kortin
+esilataus on sidottu 700/1100 px:n grid-rajoihin; mobiili ei esilataa kolmea
+kuvaa. Muut kortit ovat lazy. Suuret alkuperäiset kuvat ovat edelleen merkittävä
+siirtokuorma; responsive-kuvaversiot ovat seuraava erillinen optimointikohde.
+
+### Suorituskyvyn seuranta
+
+Vite raportoi raakakoon ja gzip-koon jokaisessa buildissa. Ennen/jälkeen-labramittaus,
+moduulianalyysi ja 119/250/500-reseptin fixturevertailu ovat
+[V1.4-raportissa](reports/2026-10-22-v1-4-performance.md). Luvut eivät ole
+käyttäjädataa tai lupaus tuotantoverkon nopeudesta. Toista mittaus samanlaisilla
+laitteilla, selaimella, URL-osoitteilla ja kuristuksilla sisältömäärän kasvaessa.
 
 Dependabot tarkistaa viikoittain npm-paketit ja GitHub Actions -versiot. Päivitykset tehdään harkiten: merkittäviä versiohyppyjä ei sisällytetä tähän laatukierrokseen.
 

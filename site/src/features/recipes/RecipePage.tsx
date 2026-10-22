@@ -1,18 +1,17 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { getRecipeByPath, getRecipeTranslations } from "@/lib/content";
+import { useContent } from "@/lib/content";
 import { recipeIndexPath, recipeLocaleFromPath, recipeLocaleName, recipeUi } from "./recipe-i18n";
 import { formatIngredientAmount, nextServingCount } from "./servings";
 
 export function RecipePage() {
   const { pathname } = useLocation();
-  const recipe = getRecipeByPath(pathname);
+  const { recipe, translations } = useContent();
   const [servings, setServings] = useState(recipe?.servings ?? 1);
   const locale = recipe?.locale ?? recipeLocaleFromPath(pathname);
   const labels = recipeUi[locale];
   useEffect(() => { setServings(recipe?.servings ?? 1); }, [recipe?.recipeId, recipe?.locale]);
   if (!recipe) return <section className="page-section"><div className="container container--narrow"><h1>{labels.notFound}</h1><p><Link to={recipeIndexPath(locale)}>{labels.backToRecipes}</Link></p></div></section>;
-  const translations = getRecipeTranslations(recipe);
   const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale];
   const nutritionItems = Object.entries(recipe.nutrition).filter(([, value]) => value !== null) as [keyof typeof recipe.nutrition, number][];
   return <article className="page-section recipe-page"><div className="container container--narrow">
