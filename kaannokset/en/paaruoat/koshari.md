@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: medium
 tags:
-  - marine
-  - Egyptian
-  - rice
-  - lens
+  - "Mediterranean"
+  - "Egyptian"
+  - "rice"
+  - "lentils"
 image:
   src: paaruoat/koshari.webp
   alt: Egyptian koshari with layers of rice, lentils and pasta with tomato sauce

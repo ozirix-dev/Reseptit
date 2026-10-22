@@ -31,11 +31,11 @@ ingredients:
   - amount: 0.5
     unit: ชิ้น
     item: หัวหอม
-    note: ขัดเกลา
+    note: "สับละเอียด"
   - amount: 200
     unit: g
     item: บรอกโคลี
-    note: เป็นปุ่มเล็กๆ
+    note: "หั่นเป็นดอกเล็ก ๆ"
   - amount: 6
     unit: ชิ้น
     item: ไข่
@@ -49,7 +49,7 @@ ingredients:
   - amount: null
     unit: ""
     item: พริกไทยดำ
-    note: เพื่อลิ้มรส
+    note: "ปรุงตามชอบ"
   - amount: 0.25
     unit: ช้อนชา
     item: เกลือ

@@ -29,7 +29,7 @@ ingredients:
   - amount: 4
     unit: piece
     item: ripe tomato
-    note: in blocks
+    note: "cut into wedges"
   - amount: 2
     unit: tbsp
     item: neutral oil

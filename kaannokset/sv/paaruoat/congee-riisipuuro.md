@@ -26,7 +26,7 @@ ingredients:
     item: jasmin eller grötris
   - amount: 2
     unit: l
-    item: vatten eller kycklingfond
+    item: "vatten eller kycklingbuljong"
   - amount: 1
     unit: tsk
     item: salt
@@ -49,7 +49,7 @@ ingredients:
   - amount: 2
     unit: st
     item: kokt ägg
-    note: halverad, valfri
+    note: "halverat, valfritt"
 source_language: fi
 source_recipe: reseptit/paaruoat/congee-riisipuuro.md
 translation_of: congee-riisipuuro

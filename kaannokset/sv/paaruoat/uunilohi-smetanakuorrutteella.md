@@ -13,10 +13,10 @@ cooking_method:
   - uuni
 difficulty: lätt
 tags:
-  - lågkolhydrat
-  - bakad lax
-  - gräddfil
-  - fiskrätt
+  - "lågkolhydrat"
+  - "bakad lax"
+  - "smetana"
+  - "fiskrätt"
 image:
   src: paaruoat/uunilohi-smetanalla.webp
   alt: Ugnsbakad lax under ett täcke av smetana, purjolök och dill, med citronskivor
@@ -28,7 +28,7 @@ ingredients:
     item: laxfilé
   - amount: 200
     unit: g
-    item: gräddfil
+    item: "smetana"
   - amount: 100
     unit: g
     item: purjolök
@@ -40,7 +40,7 @@ ingredients:
   - amount: 1
     unit: dl
     item: färsk dill
-    note: förfinad
+    note: "finhackad"
   - amount: 0.75
     unit: tsk
     item: salt
@@ -51,7 +51,7 @@ ingredients:
   - amount: null
     unit: ""
     item: smör
-    note: för att smörja pannan
+    note: "för att smörja ugnsformen"
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/uunilohi-smetanakuorrutteella.md

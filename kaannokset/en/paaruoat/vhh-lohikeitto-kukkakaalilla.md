@@ -31,7 +31,7 @@ ingredients:
   - amount: 600
     unit: g
     item: cauliflower
-    note: divided into small flowers
+    note: "divided into small florets"
   - amount: 80
     unit: g
     item: leek
@@ -52,14 +52,14 @@ ingredients:
   - amount: null
     unit: ""
     item: butter
-    note: for stewing
+    note: "for gently sautéing"
   - amount: 8
     unit: ""
-    item: whole black pepper
+    item: "whole black peppercorns"
   - amount: null
     unit: ""
     item: fresh dill
-    note: refined
+    note: "finely chopped"
   - amount: null
     unit: ""
     item: salt

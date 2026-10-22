@@ -15,9 +15,9 @@ cooking_method:
   - grilli
 difficulty: ระดับกลาง
 tags:
-  - อินเดียน
-  - ผัก
-  - ย่าง
+  - "อินเดียน"
+  - "มังสวิรัติ"
+  - "ย่าง"
 image:
   src: paaruoat/paneer-tikka.webp
   alt: Paneer tikka เสียบไม้กับชีส paneer ย่างและพริกหลากสี
@@ -27,7 +27,7 @@ ingredients:
   - amount: 400
     unit: g
     item: ชีสพาเนียร์
-    note: ลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 1
     unit: ชิ้น
     item: พริกหวานแดง

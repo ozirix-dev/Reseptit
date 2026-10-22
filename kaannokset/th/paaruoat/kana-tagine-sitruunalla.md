@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: ระดับกลาง
 tags:
-  - มารีน
-  - โมร็อกโก
-  - ไก่
-  - มะกอก
+  - "เมดิเตอร์เรเนียน"
+  - "โมร็อกโก"
+  - "ไก่"
+  - "มะกอก"
 image:
   src: paaruoat/kana-tagine-sitruunalla.webp
   alt: ทาจีนไก่กับมะนาวดอง มะกอกเขียว และเครื่องเทศ
@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 800
     unit: g
-    item: ต้นขาไก่
+    item: "น่องไก่"
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
@@ -34,7 +34,7 @@ ingredients:
   - amount: 2
     unit: ชิ้น
     item: กระเทียม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 1
     unit: ช้อนชา
     item: ขิงบด
@@ -47,7 +47,7 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: มะนาวที่เก็บรักษาไว้
-    note: ปอกเปลือกสับละเอียด
+    note: "สับเปลือกให้ละเอียด"
   - amount: 120
     unit: g
     item: มะกอกเขียว

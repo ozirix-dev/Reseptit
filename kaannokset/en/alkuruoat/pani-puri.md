@@ -15,9 +15,9 @@ cooking_method:
   - friteeraus
 difficulty: medium
 tags:
-  - Indian
-  - street kitchen
-  - a vegetable
+  - "Indian"
+  - "street food"
+  - "vegetarian"
 image:
   src: paaruoat/pani-puri.webp
   alt: Pani Puri crispy filled dough balls with spicy herbal water
@@ -33,7 +33,7 @@ ingredients:
   - amount: 1
     unit: dl
     item: water
-    note: the dough
+    note: "for the dough"
   - amount: 300
     unit: g
     item: potatoes
@@ -93,4 +93,5 @@ Crispy puri shells are filled with potato and chickpeas, and finished with tangy
 
 ## Notes
 
-- Only assemble the bites just before serving, so that the shells stay crispy.
+
+- Fill and assemble the puris just before serving so that the shells stay crisp.

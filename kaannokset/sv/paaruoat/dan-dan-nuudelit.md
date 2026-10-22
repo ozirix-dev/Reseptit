@@ -50,7 +50,7 @@ ingredients:
     item: svart risvinäger
   - amount: 1
     unit: dl
-    item: det kokande vattnet till nudlarna
+    item: "sparat kokvatten från nudlarna"
   - amount: 2
     unit: msk
     item: rostade jordnötter

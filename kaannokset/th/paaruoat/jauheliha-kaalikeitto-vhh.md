@@ -37,7 +37,7 @@ ingredients:
     item: น้ำซุปเนื้อ
   - amount: 2
     unit: ช้อนโต๊ะ
-    item: มะเขือเทศบด
+    item: "มะเขือเทศบดเข้มข้น"
   - amount: 1
     unit: ช้อนชา
     item: เกลือ

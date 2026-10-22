@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 180
 difficulty: mellannivå
 tags:
-  - Thai
-  - en gris
-  - stuvad
-  - VHH
+  - "Thai"
+  - "fläskkött"
+  - "stuvad"
+  - "VHH"
 image:
   src: paaruoat/khao-kha-moo-vhh.webp
   alt: Bräserat fläsk i Khao kha moo-stil, ägg, gröna grönsaker och blomkålsris
@@ -31,7 +31,7 @@ fat_per_serving_g: 43
 ingredients:
   - amount: 800
     unit: g
-    item: fläskaxel
+    item: "fläskbog"
     note: i stora bitar
   - amount: 1
     unit: l

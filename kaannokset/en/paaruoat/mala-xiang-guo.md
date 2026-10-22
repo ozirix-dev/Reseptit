@@ -34,7 +34,7 @@ ingredients:
   - amount: 150
     unit: g
     item: broccoli
-    note: in small inflorescences
+    note: "in small florets"
   - amount: 150
     unit: g
     item: button mushrooms

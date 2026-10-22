@@ -14,10 +14,10 @@ cooking_method:
   - kylma
 difficulty: lätt
 tags:
-  - marina
-  - libanesiska
-  - persilja
-  - tomat
+  - "medelhavsmat"
+  - "libanesiska"
+  - "persilja"
+  - "tomat"
 image:
   src: paaruoat/tabbouleh.webp
   alt: Libanesisk tabbouleh med mycket persilja, tomat, mynta och bulgur
@@ -30,7 +30,7 @@ ingredients:
   - amount: 2
     unit: buntar
     item: bladpersilja
-    note: hackad
+    note: "finhackad"
   - amount: 2
     unit: st
     item: tomat

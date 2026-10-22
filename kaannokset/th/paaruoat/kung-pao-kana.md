@@ -26,15 +26,15 @@ ingredients:
   - amount: 600
     unit: g
     item: เนื้อสะโพกไก่เลาะกระดูก
-    note: ในลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 1
     unit: ช้อนโต๊ะ
     item: ซอสถั่วเหลือง
-    note: เพื่อน้ำดอง
+    note: "สำหรับน้ำหมัก"
   - amount: 1
     unit: ช้อนโต๊ะ
     item: แป้งข้าวโพด
-    note: เพื่อน้ำดอง
+    note: "สำหรับน้ำหมัก"
   - amount: 2
     unit: ช้อนโต๊ะ
     item: น้ำมันที่เป็นกลาง

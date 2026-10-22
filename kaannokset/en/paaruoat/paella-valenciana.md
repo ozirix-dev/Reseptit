@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: medium
 tags:
-  - marine
-  - spanish
-  - chicken
-  - rice
+  - "Mediterranean"
+  - "spanish"
+  - "chicken"
+  - "rice"
 image:
   src: paaruoat/paella-valenciana.webp
   alt: Paella with saffron rice, chicken and green beans

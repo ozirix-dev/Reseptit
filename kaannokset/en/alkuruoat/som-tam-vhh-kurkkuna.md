@@ -71,7 +71,7 @@ translation_of: som-tam-vhh-kurkkuna
 
 # low-carb-som Tam-style Thai cucumber salad
 
-The fresh, sour, salty and hot low-carb salad gets its taste, but the green papaya is replaced by crunchy cucumber. This is a som tam style variation, not a traditional papaya salad. Serve as a side dish or as an appetizer.
+This fresh, sour, salty and spicy low-carb salad takes its flavour from som tam, with crunchy cucumber replacing green papaya. This is a som tam style variation, not a traditional papaya salad. Serve as a side dish or as an appetizer.
 
 ## Description
 

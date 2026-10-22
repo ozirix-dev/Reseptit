@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: mellannivå
 tags:
-  - marina
-  - marockanskt
-  - kyckling
-  - kikärter
+  - "medelhavsmat"
+  - "marockanskt"
+  - "kyckling"
+  - "kikärter"
 image:
   src: paaruoat/marokkolainen-couscous.webp
   alt: Marockansk couscousrätt med kyckling, kikärter och färgglada grönsaker
@@ -33,7 +33,7 @@ ingredients:
   - amount: 1
     unit: st
     item: lök
-    note: hackad
+    note: "finhackad"
   - amount: 2
     unit: st
     item: morot
@@ -87,4 +87,5 @@ Kryddig kycklingbuljong kokar morötter, zucchini och kikärter. Servera grönsa
 
 ## Anteckningar
 
-– Lägg till harissa på bordet separat om matgästerna vill ha mer värme.
+
+- Servera harissa separat vid bordet för den som vill ha mer hetta.

@@ -40,7 +40,7 @@ ingredients:
   - amount: 150
     unit: g
     item: gröna bönor
-    note: halveras
+    note: "halverade"
   - amount: 30
     unit: g
     item: osaltade jordnötter

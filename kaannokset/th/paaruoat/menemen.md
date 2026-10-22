@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: ง่าย
 tags:
-  - มารีน
-  - ภาษาตุรกี
-  - ไข่
-  - มะเขือเทศ
+  - "เมดิเตอร์เรเนียน"
+  - "ตุรกี"
+  - "ไข่"
+  - "มะเขือเทศ"
 image:
   src: paaruoat/menemen.webp
   alt: เมนูตุรกีกับมะเขือเทศและพริกเขียวในกระทะขนาดเล็ก
@@ -30,7 +30,7 @@ ingredients:
   - amount: 3
     unit: ชิ้น
     item: มะเขือเทศสุก
-    note: ในลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 1
     unit: ชิ้น
     item: พริกหวานเขียว
@@ -38,7 +38,7 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 2
     unit: ช้อนโต๊ะ
     item: น้ำมันมะกอก

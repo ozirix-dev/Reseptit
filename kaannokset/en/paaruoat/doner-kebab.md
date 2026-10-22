@@ -15,10 +15,10 @@ cooking_method:
   - paistaminen
 difficulty: medium
 tags:
-  - marine
-  - Turkish
-  - beef
-  - yogurt
+  - "Mediterranean"
+  - "Turkish"
+  - "beef"
+  - "yogurt"
 image:
   src: paaruoat/doner-kebab.webp
   alt: Seasoned döner kebab beef with pita bread, salad and yogurt sauce
@@ -69,11 +69,11 @@ translation_of: doner-kebab
 
 # Homemade beef döner kebab
 
-In the home kitchen, döner-style meat is fried from seasoned ground beef and cut into thin chips. Serve with bread and a fresh salad.
+This homemade döner-style meat is baked from seasoned minced beef and cut into thin shavings. Serve with bread and a fresh salad.
 
 ## Description
 
-In the home kitchen, döner-style meat is fried from seasoned ground beef and cut into thin chips. Serve with bread and a fresh salad.
+This homemade döner-style meat is baked from seasoned minced beef and cut into thin shavings. Serve with bread and a fresh salad.
 
 ## Preparation
 

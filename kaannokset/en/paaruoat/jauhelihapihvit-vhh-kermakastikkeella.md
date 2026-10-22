@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 35
 difficulty: easy
 tags:
-  - Finnish home cooking
-  - low carb
-  - ground beef patties
-  - cream sauce
+  - "Finnish home cooking"
+  - "low carb"
+  - "minced meat patties"
+  - "cream sauce"
 image:
   src: paaruoat/jauhelihapihvit-kermakastikkeella.webp
   alt: Ground beef patties in a peppery cream sauce with green beans and

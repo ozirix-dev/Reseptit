@@ -14,9 +14,9 @@ cooking_method:
   - liesi
 difficulty: ระดับกลาง
 tags:
-  - อินเดียน
-  - ปัญจาบ
-  - ผัก
+  - "อินเดียน"
+  - "ปัญจาบ"
+  - "มังสวิรัติ"
 image:
   src: paaruoat/dal-makhani.webp
   alt: สตูว์ถั่วเลนทิลดำ Dal makhani พร้อมครีมและผักชี
@@ -40,11 +40,11 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 2
     unit: ชิ้น
     item: กระเทียม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 20
     unit: g
     item: ขิงสด

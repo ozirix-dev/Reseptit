@@ -15,10 +15,10 @@ cooking_method:
   - paistaminen
 difficulty: ง่าย
 tags:
-  - มารีน
-  - ภาษากรีก
-  - ไก่เนื้อ
-  - โยเกิร์ต
+  - "เมดิเตอร์เรเนียน"
+  - "กรีก"
+  - "ไก่เนื้อ"
+  - "โยเกิร์ต"
 image:
   src: paaruoat/souvlaki.webp
   alt: ซูฟลากีไก่สไตล์กรีกเสียบไม้พร้อมขนมปังพิต้า มะเขือเทศ และซาซิกิ
@@ -28,11 +28,11 @@ ingredients:
   - amount: 700
     unit: g
     item: เนื้อสะโพกไก่เลาะกระดูก
-    note: ในลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 3
     unit: ช้อนโต๊ะ
     item: น้ำมันมะกอก
-    note: เพื่อน้ำดอง
+    note: "สำหรับน้ำหมัก"
   - amount: 1
     unit: ชิ้น
     item: น้ำมะนาว
@@ -49,7 +49,7 @@ ingredients:
   - amount: 250
     unit: g
     item: โยเกิร์ตกรีก
-    note: ถึง tzatziki
+    note: "สำหรับซอสซาซิกิ"
   - amount: 0.5
     unit: ชิ้น
     item: แตงกวา
@@ -57,14 +57,14 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: กระเทียม
-    note: ถึง tzatziki
+    note: "สำหรับซอสซาซิกิ"
   - amount: 4
     unit: ชิ้น
     item: ขนมปังพิต้า
   - amount: 2
     unit: ชิ้น
     item: มะเขือเทศ
-    note: ในบล็อก
+    note: "หั่นเป็นเสี้ยว"
 source_language: fi
 source_recipe: reseptit/paaruoat/souvlaki.md
 translation_of: souvlaki

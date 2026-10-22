@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: easy
 tags:
-  - marine
-  - french
-  - summer squash
-  - eggplant
+  - "Mediterranean"
+  - "french"
+  - "courgette"
+  - "eggplant"
 image:
   src: paaruoat/ratatouille.webp
   alt: Provençal ratatouille from zucchini, eggplant, bell pepper and tomato
@@ -27,11 +27,11 @@ ingredients:
   - amount: 1
     unit: piece
     item: eggplant
-    note: in cubes
+    note: "diced"
   - amount: 2
     unit: piece
     item: zucchini
-    note: in cubes
+    note: "diced"
   - amount: 1
     unit: piece
     item: red pepper
@@ -39,7 +39,7 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 3
     unit: piece
     item: a clove of garlic
@@ -47,7 +47,7 @@ ingredients:
   - amount: 500
     unit: g
     item: ripe tomatoes
-    note: in cubes
+    note: "diced"
   - amount: 4
     unit: tbsp
     item: olive oil

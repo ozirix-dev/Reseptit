@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: medium
 tags:
-  - marine
-  - french
-  - fish
-  - a potato
+  - "Mediterranean"
+  - "french"
+  - "fish"
+  - "potato"
 image:
   src: paaruoat/bouillabaisse.webp
   alt: Bouillabaisse fish soup in saffron broth with white fish, mussels and shrimp
@@ -39,7 +39,7 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 1
     unit: piece
     item: fennel
@@ -66,7 +66,7 @@ ingredients:
   - amount: 400
     unit: g
     item: potatoes
-    note: in cubes
+    note: "diced"
   - amount: 4
     unit: slices
     item: white bread

@@ -15,11 +15,11 @@ servings: 4
 time_total_min: 30
 difficulty: ง่าย
 tags:
-  - ไทย
-  - กระทะ
-  - ก๋วยเตี๋ยว
-  - คะนอง
-  - วฮ
+  - "ไทย"
+  - "กระทะ"
+  - "ก๋วยเตี๋ยว"
+  - "เผ็ด"
+  - "วฮ"
 image:
   src: paaruoat/pad-kee-mao-vhh-konjac.webp
   alt: ผัดขี้เมาวอกกับเส้นบุก ไก่ พริก และใบโหระพา
@@ -35,12 +35,12 @@ ingredients:
     item: เส้นบุกสะเด็ดน้ำ
   - amount: 500
     unit: g
-    item: เนื้อน่องไก่
+    item: "เนื้อสะโพกไก่"
     note: เป็นแถบ
   - amount: 150
     unit: g
     item: ถั่วแขก
-    note: ลดลงครึ่งหนึ่ง
+    note: "ผ่าครึ่ง"
   - amount: 1
     unit: ชิ้น
     item: พริกหวานแดง
@@ -55,7 +55,7 @@ ingredients:
   - amount: 2
     unit: ชิ้น
     item: พริกแดง
-    note: หั่นเป็นชิ้นตั้งไฟตามชอบ
+    note: "หั่นเป็นแว่น ปรับความเผ็ดตามชอบ"
   - amount: 2
     unit: ช้อนโต๊ะ
     item: น้ำปลา

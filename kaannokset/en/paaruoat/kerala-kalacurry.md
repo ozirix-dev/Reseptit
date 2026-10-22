@@ -34,11 +34,11 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: piece
     item: a clove of garlic
-    note: chopped
+    note: "finely chopped"
   - amount: 15
     unit: g
     item: fresh ginger
@@ -92,4 +92,5 @@ South Indian fish curry combines the aromatic flavors of coconut milk, tamarind 
 
 ## Notes
 
-- Choose solid light fish such as cod or zander.
+
+- Choose firm white fish such as cod or zander.

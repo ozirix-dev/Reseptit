@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { auditTranslations, auditRecipePairs } from "../scripts/translation-audit";
-import { semanticTermErrors, semanticProseErrors } from "../scripts/semantic-terms";
+import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTagErrors } from "../scripts/semantic-terms";
 
 test("all published translations match the source structure and known critical terms", async () => {
   const result = await auditTranslations();
@@ -222,4 +222,72 @@ test("recipes without a documented calculation make no keto or low-carb promise"
     assert.doesNotMatch(content, /(?:alle|less than|mindre än|น้อยกว่า)\s*5\s*(?:g|กรัม)/i);
     assert.equal(data.carbs_total_per_serving_g, undefined, "no invented nutrition number");
   }
+});
+
+
+test("ingredient notes and tags reject observed false friends without rejecting unrelated senses", () => {
+  for (const [source, locale, bad, good] of [
+    ["hienonnettuna", "en", "refined", "finely chopped"],
+    ["hienonnettuna", "sv", "förfinad", "finhackad"],
+    ["hienonnettuna", "th", "ขัดเกลา", "สับละเอียด"],
+    ["muusiin", "en", "to muse", "for the mash"],
+    ["muusiin", "sv", "att fundera", "till moset"],
+    ["muusiin", "th", "รำพึง", "สำหรับส่วนผสมบด"],
+    ["nahallisina ja luullisina", "en", "leathery and bony", "skin-on and bone-in"],
+    ["nahattomina, viillotettuina", "th", "ไม่มีผิวหนังหั่นบาง ๆ", "ลอกหนังออกและบั้งเนื้อ"],
+    ["lohkoina", "sv", "i block", "i klyftor"],
+    ["halutessasi pinnalle", "en", "if you want to surface", "optional topping"],
+    ["pieninä nuppuina", "en", "small buttons", "small florets"],
+    ["esimerkiksi kuhaa tai turskaa", "en", "pike or cod", "zander or cod"],
+    ["viipaloituna, tulisuus oman maun mukaan", "th", "หั่นเป็นชิ้นตั้งไฟตามชอบ", "หั่นเป็นแว่น ปรับความเผ็ดตามชอบ"],
+  ] as const) {
+    assert.equal(semanticNoteErrors([source], [bad], locale).length, 1);
+    assert.deepEqual(semanticNoteErrors([source], [good], locale), []);
+  }
+  for (const [source, locale, bad, good] of [
+    ["Isan", "en", "Dad", "Isan"], ["Isan", "sv", "Pappa", "Isan"], ["Isan", "th", "พ่อ", "อีสาน"],
+    ["valimerellinen", "en", "marine", "Mediterranean"],
+    ["valimerellinen", "sv", "marina", "medelhavsmat"],
+    ["valimerellinen", "th", "มารีน", "เมดิเตอร์เรเนียน"],
+    ["nakit", "en", "jewelry", "frankfurter sausages"],
+    ["nakit", "sv", "smycke", "varmkorv"],
+    ["nakit", "th", "เครื่องประดับ", "ไส้กรอกแฟรงก์เฟิร์ต"],
+    ["linssi", "en", "lens", "lentils"], ["paneer", "th", "บานหน้าต่าง", "พาเนียร์"],
+  ] as const) {
+    assert.equal(semanticTagErrors([source], [bad], locale).length, 1);
+    assert.deepEqual(semanticTagErrors([source], [good], locale), []);
+  }
+  assert.deepEqual(semanticNoteErrors(["puhdistettua öljyä"], ["refined oil"], "en"), []);
+  assert.deepEqual(semanticTagErrors(["merenelävät"], ["marine"], "en"), []);
+  assert.deepEqual(semanticNoteErrors(["esimerkiksi kuhaa tai turskaa"], ["pikeperch or cod"], "en"), []);
+  assert.deepEqual(semanticNoteErrors(["esimerkiksi kuhaa tai turskaa"], ["pike-perch or cod"], "en"), []);
+});
+
+test("translation audit checks notes and tags as well as prose negation and cooking meaning", async () => {
+  const result = await auditTranslations();
+  for (const [id, locale, field, bad, message] of [
+    ["lihapullat-kermakastikkeessa-vhh", "en", "note", "to muse", "ingredient note"],
+    ["nakkikeitto-kukkakaalilla", "sv", "tag", "smycke", "tag"],
+    ["keto-kauralesesampylat", "th", "content", "รำข้าวโอ๊ตไม่มีคาร์โบไฮเดรต", "carbohydrate warning negated"],
+    ["char-siu", "th", "content", "โหระพา", "five-spice mistranslated"],
+    ["rogan-josh", "en", "content", "does not run", "curdling mistranslated"],
+    ["tunisialainen-brik", "th", "content", "น้ำมูก", "runny egg or frying"],
+    ["bouillabaisse", "th", "content", "ยี่หร่า", "fennel mistranslated"],
+  ] as const) {
+    const source = result.publishedSources.find((r) => r.data.recipe_id === id)!;
+    const targets = result.publishedTranslations.filter((r) => r.data.recipe_id === id);
+    const target = structuredClone(targets.find((r) => r.data.language === locale)!);
+    if (field === "content") target.content += `\n${bad}`;
+    if (field === "note") {
+      const index = source.data.ingredients.findIndex((i) => i.note === "muusiin");
+      assert.notEqual(index, -1);
+      target.data.ingredients[index].note = bad;
+    }
+    if (field === "tag") target.data.tags[source.data.tags.indexOf("nakit")] = bad;
+    const audit = auditRecipePairs([source], targets.map((r) => r.data.language === locale ? target : r));
+    assert.ok(audit.errors.some((error) => error.includes(message)), `${id}/${locale}/${field}`);
+  }
+  const buns = result.publishedTranslations.find((r) => r.data.recipe_id === "keto-kauralesesampylat" && r.data.language === "th")!;
+  assert.match(buns.content, /รำข้าวโอ๊ตมีคาร์โบไฮเดรต/);
+  assert.doesNotMatch(buns.content, /รำข้าวโอ๊ตไม่มีคาร์โบไฮเดรต/);
 });

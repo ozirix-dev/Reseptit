@@ -31,7 +31,7 @@ ingredients:
   - amount: 600
     unit: g
     item: ดอกกะหล่ำ
-    note: แบ่งเป็นดอกเล็กๆ
+    note: "แยกเป็นดอกเล็ก ๆ"
   - amount: 80
     unit: g
     item: กระเทียมหอม

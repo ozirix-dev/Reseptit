@@ -15,11 +15,11 @@ servings: 4
 time_total_min: 30
 difficulty: lätt
 tags:
-  - Thai
-  - wok
-  - nudlar
-  - eldig
-  - VHH
+  - "Thai"
+  - "wok"
+  - "nudlar"
+  - "stark"
+  - "VHH"
 image:
   src: paaruoat/pad-kee-mao-vhh-konjac.webp
   alt: Hot pad kee mao wok med konjaknudlar, kyckling, chili och thaibasilika
@@ -40,7 +40,7 @@ ingredients:
   - amount: 150
     unit: g
     item: gröna bönor
-    note: halveras
+    note: "halverad"
   - amount: 1
     unit: st
     item: röd paprika
@@ -55,7 +55,7 @@ ingredients:
   - amount: 2
     unit: st
     item: röd chili
-    note: skivad, värm efter smak
+    note: "skivad; anpassa styrkan efter smak"
   - amount: 2
     unit: msk
     item: fisksås

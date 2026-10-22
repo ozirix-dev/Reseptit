@@ -29,7 +29,7 @@ ingredients:
   - amount: 4
     unit: st
     item: mogen tomat
-    note: i block
+    note: "skuren i klyftor"
   - amount: 2
     unit: msk
     item: neutral olja

@@ -61,7 +61,7 @@ ingredients:
   - amount: 1
     unit: st
     item: vitlöksklyfta
-    note: hackad
+    note: "finhackad"
   - amount: null
     unit: ""
     item: färsk koriander

@@ -14,9 +14,9 @@ cooking_method:
   - liesi
 difficulty: medium
 tags:
-  - Indian
-  - a vegetable
-  - paneer
+  - "Indian"
+  - "vegetarian"
+  - "paneer"
 image:
   src: paaruoat/palak-paneer.webp
   alt: Palak paneer spinach curry with paneer cheese cubes
@@ -29,11 +29,11 @@ ingredients:
   - amount: 250
     unit: g
     item: paneer (Indian fresh cheese)
-    note: cubed
+    note: "diced"
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: piece
     item: a clove of garlic
@@ -55,7 +55,7 @@ ingredients:
     item: garam masala
   - amount: 1
     unit: dl
-    item: double cream
+    item: "whipping cream"
   - amount: 1
     unit: tsp
     item: salt

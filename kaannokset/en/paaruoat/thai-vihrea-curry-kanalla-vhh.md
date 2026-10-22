@@ -40,11 +40,11 @@ ingredients:
   - amount: 200
     unit: g
     item: zucchini
-    note: in blocks
+    note: "cut into wedges"
   - amount: 150
     unit: g
     item: eggplant
-    note: in blocks
+    note: "cut into wedges"
   - amount: 600
     unit: g
     item: cauliflower rice
@@ -81,7 +81,7 @@ The hotness and sugar content of curry pastes vary. Start with a moderate amount
 
 ## Preparation
 
-1. Cut the chicken into bite-sized pieces. A block of zucchini and eggplant.
+1. Cut the chicken into bite-sized pieces. Cut the courgette and aubergine into wedges.
 2. Heat the oil in a pot. Fry the curry paste on low heat for a minute.
 3. Add about a deciliter of coconut milk and mix. Add the chicken and cook, turning.
 4. Add the remaining coconut milk, fish sauce, erythritol and kaffir lime leaves. Simmer for 10 minutes.

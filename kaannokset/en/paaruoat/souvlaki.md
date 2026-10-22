@@ -15,10 +15,10 @@ cooking_method:
   - paistaminen
 difficulty: easy
 tags:
-  - marine
-  - Greek
-  - broiler
-  - yogurt
+  - "Mediterranean"
+  - "Greek"
+  - "broiler"
+  - "yogurt"
 image:
   src: paaruoat/souvlaki.webp
   alt: Greek chicken souvlaki skewers with pita bread, tomato and tzatziki
@@ -28,11 +28,11 @@ ingredients:
   - amount: 700
     unit: g
     item: boneless chicken thigh fillets
-    note: in cubes
+    note: "diced"
   - amount: 3
     unit: tbsp
     item: olive oil
-    note: to the marinade
+    note: "for the marinade"
   - amount: 1
     unit: piece
     item: lemon juice
@@ -49,7 +49,7 @@ ingredients:
   - amount: 250
     unit: g
     item: Greek yogurt
-    note: to tzatziki
+    note: "for the tzatziki"
   - amount: 0.5
     unit: piece
     item: cucumber
@@ -57,14 +57,14 @@ ingredients:
   - amount: 1
     unit: piece
     item: a clove of garlic
-    note: to tzatziki
+    note: "for the tzatziki"
   - amount: 4
     unit: piece
     item: pita bread
   - amount: 2
     unit: piece
     item: tomato
-    note: in blocks
+    note: "cut into wedges"
 source_language: fi
 source_recipe: reseptit/paaruoat/souvlaki.md
 translation_of: souvlaki

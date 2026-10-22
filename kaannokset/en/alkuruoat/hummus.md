@@ -14,10 +14,10 @@ cooking_method:
   - kylma
 difficulty: easy
 tags:
-  - marine
-  - Levantine
-  - chickpea
-  - Tahini
+  - "Mediterranean"
+  - "Levantine"
+  - "chickpea"
+  - "Tahini"
 image:
   src: paaruoat/hummus.webp
   alt: Hummus with olive oil, chickpeas and paprika finished with pita bread

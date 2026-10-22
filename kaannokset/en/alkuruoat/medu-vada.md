@@ -14,10 +14,10 @@ cooking_method:
   - friteeraus
 difficulty: medium
 tags:
-  - Indian
-  - south indian
-  - a vegetable
-  - an appetizer
+  - "Indian"
+  - "south indian"
+  - "vegetarian"
+  - "starter"
 image:
   src: paaruoat/medu-vada.webp
   alt: Medu Vada - crispy golden brown lentil rings with coconut chutney
@@ -31,11 +31,11 @@ ingredients:
   - amount: 1
     unit: piece
     item: green chili
-    note: chopped
+    note: "finely chopped"
   - amount: 10
     unit: g
     item: fresh ginger
-    note: chopped
+    note: "finely chopped"
   - amount: 10
     unit: g
     item: fresh curry leaves

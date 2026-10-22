@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: mellannivå
 tags:
-  - marina
-  - spanska
-  - kyckling
-  - ris
+  - "medelhavsmat"
+  - "spanska"
+  - "kyckling"
+  - "ris"
 image:
   src: paaruoat/paella-valenciana.webp
   alt: Paella med saffransris, kyckling och gröna bönor

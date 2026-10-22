@@ -15,9 +15,9 @@ cooking_method:
   - friteeraus
 difficulty: medium
 tags:
-  - Indian
-  - an appetizer
-  - a vegetable
+  - "Indian"
+  - "starter"
+  - "vegetarian"
 image:
   src: paaruoat/samosa.webp
   alt: Triangular crispy samosas with potato-pea filling and mint chutney
@@ -30,14 +30,14 @@ ingredients:
   - amount: 60
     unit: ml
     item: oil
-    note: the dough
+    note: "for the dough"
   - amount: 1
     unit: tsp
     item: salt
   - amount: 1.2
     unit: dl
     item: water
-    note: the dough
+    note: "for the dough"
   - amount: 400
     unit: g
     item: potatoes
@@ -56,7 +56,7 @@ ingredients:
   - amount: 15
     unit: g
     item: fresh coriander
-    note: chopped
+    note: "finely chopped"
   - amount: null
     unit: ""
     item: oil

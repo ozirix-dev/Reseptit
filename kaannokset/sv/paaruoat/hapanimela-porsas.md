@@ -27,7 +27,7 @@ ingredients:
   - amount: 600
     unit: g
     item: fläskytterfilé
-    note: i kuber
+    note: "tärnad"
   - amount: 1
     unit: st
     item: ägg
@@ -47,7 +47,7 @@ ingredients:
   - amount: 1
     unit: st
     item: lök
-    note: i block
+    note: "skuren i klyftor"
   - amount: 150
     unit: g
     item: av ananas

@@ -40,15 +40,15 @@ ingredients:
   - amount: null
     unit: ""
     item: พริกไทยขาวหรือดำ
-    note: หยิก
+    note: "หนึ่งหยิบมือ"
   - amount: null
     unit: ""
     item: เนย
-    note: สำหรับทากระทะ
+    note: "สำหรับทาถาดอบ"
   - amount: null
     unit: ""
     item: ไชฟ์
-    note: ถ้าคุณต้องการที่จะพื้นผิว
+    note: "สำหรับโรยหน้า ใส่หรือไม่ก็ได้"
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/raejuusto-uunimunakas.md

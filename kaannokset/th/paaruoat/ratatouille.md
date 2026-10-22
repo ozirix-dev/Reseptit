@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: ง่าย
 tags:
-  - มารีน
-  - ฝรั่งเศส
-  - สควอชฤดูร้อน
-  - มะเขือยาว
+  - "เมดิเตอร์เรเนียน"
+  - "ฝรั่งเศส"
+  - "ซูกินี"
+  - "มะเขือยาว"
 image:
   src: paaruoat/ratatouille.webp
   alt: Ratatouille โปรวองซ์จากบวบ มะเขือยาว พริกหยวก และมะเขือเทศ
@@ -27,11 +27,11 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: มะเขือยาว
-    note: ในลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 2
     unit: ชิ้น
     item: ซูกินี
-    note: ในลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 1
     unit: ชิ้น
     item: พริกหวานแดง
@@ -39,7 +39,7 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 3
     unit: ชิ้น
     item: กระเทียม
@@ -47,7 +47,7 @@ ingredients:
   - amount: 500
     unit: g
     item: มะเขือเทศสุก
-    note: ในลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 4
     unit: ช้อนโต๊ะ
     item: น้ำมันมะกอก

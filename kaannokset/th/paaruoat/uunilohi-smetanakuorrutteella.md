@@ -13,10 +13,10 @@ cooking_method:
   - uuni
 difficulty: ง่าย
 tags:
-  - คาร์โบไฮเดรตต่ำ
-  - ปลาแซลมอนอบ
-  - ครีมเปรี้ยว
-  - อาหารปลา
+  - "คาร์โบไฮเดรตต่ำ"
+  - "ปลาแซลมอนอบ"
+  - "สเมทานา"
+  - "อาหารปลา"
 image:
   src: paaruoat/uunilohi-smetanalla.webp
   alt: ปลาแซลมอนอบหน้าสเมตานา กระเทียมหอม และผักชีลาว เสิร์ฟกับเลมอนหั่นแว่น
@@ -28,7 +28,7 @@ ingredients:
     item: เนื้อปลาแซลมอน
   - amount: 200
     unit: g
-    item: ครีมเปรี้ยว
+    item: "สเมทานา (ครีมเปรี้ยวชนิดข้น)"
   - amount: 100
     unit: g
     item: กระเทียมหอม
@@ -40,18 +40,18 @@ ingredients:
   - amount: 1
     unit: dl
     item: ผักชีลาวสด
-    note: ขัดเกลา
+    note: "สับละเอียด"
   - amount: 0.75
     unit: ช้อนชา
     item: เกลือ
   - amount: null
     unit: ""
     item: พริกไทยขาว
-    note: เพื่อลิ้มรส
+    note: "ปรุงตามชอบ"
   - amount: null
     unit: ""
     item: เนย
-    note: สำหรับทากระทะ
+    note: "สำหรับทาถาดอบ"
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/uunilohi-smetanakuorrutteella.md

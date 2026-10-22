@@ -15,9 +15,9 @@ cooking_method:
   - friteeraus
 difficulty: mellannivå
 tags:
-  - indiska
-  - en aptitretare
-  - en grönsak
+  - "indiska"
+  - "förrätt"
+  - "vegetariskt"
 image:
   src: paaruoat/samosa.webp
   alt: Trekantiga krispiga samosas med potatis-ärtfyllning och mintchutney
@@ -30,14 +30,14 @@ ingredients:
   - amount: 60
     unit: ml
     item: olja
-    note: degen
+    note: "till degen"
   - amount: 1
     unit: tsk
     item: salt
   - amount: 1.2
     unit: dl
     item: vatten
-    note: degen
+    note: "till degen"
   - amount: 400
     unit: g
     item: potatis
@@ -56,7 +56,7 @@ ingredients:
   - amount: 15
     unit: g
     item: färsk koriander
-    note: hackad
+    note: "finhackad"
   - amount: null
     unit: ""
     item: olja

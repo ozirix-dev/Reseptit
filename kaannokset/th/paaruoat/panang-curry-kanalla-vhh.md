@@ -40,7 +40,7 @@ ingredients:
   - amount: 150
     unit: g
     item: ถั่วแขก
-    note: ลดลงครึ่งหนึ่ง
+    note: "ผ่าครึ่ง"
   - amount: 30
     unit: g
     item: ถั่วลิสงไม่ใส่เกลือ

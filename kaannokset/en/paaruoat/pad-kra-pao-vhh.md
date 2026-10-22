@@ -15,9 +15,9 @@ servings: 4
 time_total_min: 25
 difficulty: easy
 tags:
-  - Thai
-  - VHH
-  - fiery
+  - "Thai"
+  - "VHH"
+  - "spicy"
 image:
   src: paaruoat/pad-kra-pao-vhh.webp
   alt: Pad kra pao minced meat with Thai basil and chili, fried egg and

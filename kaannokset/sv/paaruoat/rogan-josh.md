@@ -26,15 +26,15 @@ image:
 ingredients:
   - amount: 800
     unit: g
-    item: lammskuldra
-    note: kubad
+    item: "lammbog"
+    note: "tärnad"
   - amount: 2
     unit: msk
     item: olja eller ghee
   - amount: 1
     unit: st
     item: lök
-    note: hackad
+    note: "finhackad"
   - amount: 200
     unit: g
     item: naturell yoghurt
@@ -94,4 +94,5 @@ Kashmiri Rogan Josh är långbräserat lamm i en aromatisk sås mjukad med yoghu
 
 ## Anteckningar
 
-– Tillsätt yoghurten i den varma grytan gradvis och rör om så att den inte rinner.
+
+- Rör ner yoghurten lite i taget i den varma grytan så att den inte skär sig.

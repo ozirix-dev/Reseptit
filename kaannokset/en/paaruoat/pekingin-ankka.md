@@ -58,11 +58,11 @@ translation_of: pekingin-ankka
 
 # Peking duck in the home kitchen
 
-The home kitchen's version of Peking duck: crispy fried duck served in thin strips with cucumber, spring onion and hoisin sauce.
+The home kitchen's version of Peking duck: crisply roasted duck served in thin strips with cucumber, spring onion and hoisin sauce.
 
 ## Description
 
-The home kitchen's version of Peking duck: crispy fried duck served in thin strips with cucumber, spring onion and hoisin sauce.
+The home kitchen's version of Peking duck: crisply roasted duck served in thin strips with cucumber, spring onion and hoisin sauce.
 
 ## Preparation
 

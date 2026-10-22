@@ -15,10 +15,10 @@ cooking_method:
   - paistinpannu
 difficulty: mellannivå
 tags:
-  - indiska
-  - Mumbai
-  - en grönsak
-  - gatukök
+  - "indiska"
+  - "Mumbai"
+  - "vegetariskt"
+  - "gatumat"
 image:
   src: paaruoat/pav-bhaji.webp
   alt: Pav bhaji grönsakspuré med smörrostade rullar, lök och lime
@@ -39,7 +39,7 @@ ingredients:
   - amount: 1
     unit: st
     item: morot
-    note: kubad
+    note: "tärnad"
   - amount: 2
     unit: msk
     item: olja
@@ -49,7 +49,7 @@ ingredients:
   - amount: 1
     unit: st
     item: lök
-    note: hackad
+    note: "finhackad"
   - amount: 2
     unit: st
     item: en vitlöksklyfta

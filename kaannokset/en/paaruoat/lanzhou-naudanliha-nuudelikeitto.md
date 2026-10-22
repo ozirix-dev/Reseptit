@@ -26,7 +26,7 @@ ingredients:
   - amount: 700
     unit: g
     item: beef chuck
-    note: in cubes
+    note: "diced"
   - amount: 2
     unit: l
     item: water
@@ -52,7 +52,7 @@ ingredients:
     item: wheat noodles
   - amount: 2
     unit: piece
-    item: radish
+    item: "daikon radish"
     note: in thin slices
   - amount: 2
     unit: piece

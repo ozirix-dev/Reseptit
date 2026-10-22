@@ -13,10 +13,10 @@ cooking_method:
   - uuni
 difficulty: easy
 tags:
-  - low carb
-  - baked salmon
-  - sour cream
-  - fish dish
+  - "low carb"
+  - "baked salmon"
+  - "smetana"
+  - "fish dish"
 image:
   src: paaruoat/uunilohi-smetanalla.webp
   alt: Oven-cooked salmon under a sour cream, leek and dill glaze with lemon slices
@@ -28,7 +28,7 @@ ingredients:
     item: salmon fillet
   - amount: 200
     unit: g
-    item: sour cream
+    item: "smetana (thick sour cream)"
   - amount: 100
     unit: g
     item: leek
@@ -40,7 +40,7 @@ ingredients:
   - amount: 1
     unit: dl
     item: fresh dill
-    note: refined
+    note: "finely chopped"
   - amount: 0.75
     unit: tsp
     item: salt
@@ -51,7 +51,7 @@ ingredients:
   - amount: null
     unit: ""
     item: butter
-    note: for greasing the pan
+    note: "for greasing the baking dish"
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/uunilohi-smetanakuorrutteella.md

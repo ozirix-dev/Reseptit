@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: easy
 tags:
-  - marine
-  - Tunisian
-  - egg
-  - tomato
+  - "Mediterranean"
+  - "Tunisian"
+  - "egg"
+  - "tomato"
 image:
   src: paaruoat/tunisialainen-ojja.webp
   alt: Tunisian ojja with eggs, tomato-pepper sauce and harissa
@@ -27,11 +27,11 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 1
     unit: piece
     item: red bell pepper
-    note: in cubes
+    note: "diced"
   - amount: 2
     unit: piece
     item: a clove of garlic

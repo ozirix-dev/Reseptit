@@ -36,7 +36,7 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: หั่นเป็นชิ้นเสี้ยว
+    note: "หั่นเป็นเสี้ยว"
   - amount: 7
     unit: dl
     item: น้ำ

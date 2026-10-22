@@ -35,7 +35,7 @@ ingredients:
   - amount: 200
     unit: g
     item: keso
-    note: välj smaklös
+    note: "välj naturell keso"
   - amount: 60
     unit: g
     item: mandelmjöl
@@ -61,7 +61,7 @@ ingredients:
   - amount: null
     unit: ""
     item: sesamfrön
-    note: om du vill komma upp till ytan
+    note: "att strö över, valfritt"
 status: published
 source_language: fi
 source_recipe: reseptit/leivonnaiset/keto-kauralesesampylat.md

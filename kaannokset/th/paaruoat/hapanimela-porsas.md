@@ -27,7 +27,7 @@ ingredients:
   - amount: 600
     unit: g
     item: เนื้อสันนอกหมู
-    note: ในลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 1
     unit: ชิ้น
     item: ไข่
@@ -47,7 +47,7 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: ในบล็อก
+    note: "หั่นเป็นเสี้ยว"
   - amount: 150
     unit: g
     item: ของสับปะรด

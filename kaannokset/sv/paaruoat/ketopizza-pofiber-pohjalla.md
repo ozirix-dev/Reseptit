@@ -28,11 +28,11 @@ ingredients:
   - amount: 2.5
     unit: msk
     item: färskost
-    note: 2–3 matskedar; som ett alternativ, yoghurt, gräddfil eller gräddfil
+    note: "2–3 msk; alternativt yoghurt, crème fraîche eller gräddfil"
   - amount: 1
     unit: ""
     item: stort ägg
-    note: som ett alternativ 2 små
+    note: "eller 2 små ägg"
   - amount: 3.5
     unit: msk
     item: Pofiber
@@ -40,7 +40,7 @@ ingredients:
   - amount: 75
     unit: g
     item: tomatsås
-    note: ca 4 matskedar; t.ex. pizzasås eller mosad tomat
+    note: "cirka 4 msk; till exempel pizzasås eller passerade tomater"
   - amount: null
     unit: ""
     item: valfria pizzapålägg

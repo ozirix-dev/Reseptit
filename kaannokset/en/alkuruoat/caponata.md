@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: medium
 tags:
-  - marine
-  - Sicilian
-  - eggplant
-  - tomato
+  - "Mediterranean"
+  - "Sicilian"
+  - "eggplant"
+  - "tomato"
 image:
   src: paaruoat/caponata.webp
   alt: Sicilian caponata of eggplant, tomato, celery, olives and capers
@@ -27,14 +27,14 @@ ingredients:
   - amount: 2
     unit: piece
     item: eggplant
-    note: in cubes
+    note: "diced"
   - amount: 2
     unit: tbsp
     item: olive oil
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: piece
     item: stalk of celery

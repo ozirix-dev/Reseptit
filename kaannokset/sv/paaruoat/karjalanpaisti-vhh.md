@@ -76,13 +76,13 @@ Kombinationen av nötkött och fläsk kokas tills den är mjuk med lök, kryddpe
 
 ## Gör så här
 
-1. Värm ugnen till 150 grader. Lägg kött- och lökblocken i ugnsgrytan med lock.
+1. Värm ugnen till 150 grader. Lägg köttbitarna och lökklyftorna i ugnsgrytan med lock.
 2. Tillsätt vatten, salt, kryddpeppar och lagerblad. Vätskan ska nå nästan upp till köttets nivå.
 3. Tillaga under lock på nedre delen av ugnen i ca 2,5-3 timmar tills köttet är mjukt. Kontrollera då och då att det finns tillräckligt med vätska i pannan.
-4. Skär kålen i block och lägg på bakplåtspapper. Pensla med olja och krydda med peppar. Rosta i 225 grader i 20-25 minuter, tills kanterna tar färg.
+4. Skär kålen i klyftor och lägg på bakplåtspapper. Pensla med olja och krydda med peppar. Rosta i 225 grader i 20-25 minuter, tills kanterna tar färg.
 5. Servera karelsk stek med rostad kål.
 
 ## Anteckningar
 
 – På traditionellt sätt kan man lägga morötter i grytan, men det ökar andelen kolhydrater.
-- Stektidens längd beror på storleken på köttbitarna.
+- Bräseringstidens längd beror på storleken på köttbitarna.

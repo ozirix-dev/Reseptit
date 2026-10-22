@@ -31,11 +31,11 @@ ingredients:
   - amount: 0.5
     unit: ""
     item: onion
-    note: refined
+    note: "finely chopped"
   - amount: 200
     unit: g
     item: broccoli
-    note: as small buttons
+    note: "in small florets"
   - amount: 6
     unit: ""
     item: eggs

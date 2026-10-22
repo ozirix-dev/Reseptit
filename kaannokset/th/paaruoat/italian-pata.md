@@ -12,9 +12,9 @@ cooking_method:
   - uuni
 difficulty: ง่าย
 tags:
-  - อาหารอบ
-  - เนื้อสับ
-  - บวบ
+  - "อาหารอบ"
+  - "เนื้อสับ"
+  - "ซูกินี"
 carbs_total_per_serving_g: 7.5
 fat_per_serving_g: 32.5
 protein_per_serving_g: 35

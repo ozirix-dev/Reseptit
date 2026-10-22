@@ -24,7 +24,7 @@ ingredients:
   - amount: 700
     unit: g
     item: vit fiskfilé
-    note: till exempel gädda eller torsk
+    note: "till exempel gös eller torsk"
   - amount: 1
     unit: msk
     item: färsk ingefära

@@ -14,10 +14,10 @@ cooking_method:
   - kylma
 difficulty: easy
 tags:
-  - marine
-  - Lebanese
-  - parsley
-  - tomato
+  - "Mediterranean"
+  - "Lebanese"
+  - "parsley"
+  - "tomato"
 image:
   src: paaruoat/tabbouleh.webp
   alt: Lebanese tabbouleh with plenty of parsley, tomato, mint and bulgur
@@ -30,7 +30,7 @@ ingredients:
   - amount: 2
     unit: bunches
     item: parsley leaves
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: piece
     item: tomato

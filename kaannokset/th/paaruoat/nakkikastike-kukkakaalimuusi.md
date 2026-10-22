@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 30
 difficulty: ง่าย
 tags:
-  - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - คาร์โบไฮเดรตต่ำ
-  - เครื่องประดับ
-  - อาหารทุกวัน
+  - "การปรุงอาหารที่บ้านแบบฟินแลนด์"
+  - "คาร์โบไฮเดรตต่ำ"
+  - "ไส้กรอกแฟรงก์เฟิร์ต"
+  - "อาหารทุกวัน"
 image:
   src: paaruoat/nakkikastike-kukkakaalimuusi.webp
   alt: ไส้กรอกแฟรงก์เฟิร์ตในซอสครีมกับกะหล่ำดอกบด
@@ -52,7 +52,7 @@ ingredients:
   - amount: null
     unit: ""
     item: เกลือ
-    note: เพื่อลิ้มรส
+    note: "ปรุงตามชอบ"
 source_language: fi
 source_recipe: reseptit/paaruoat/nakkikastike-kukkakaalimuusi.md
 translation_of: nakkikastike-kukkakaalimuusi

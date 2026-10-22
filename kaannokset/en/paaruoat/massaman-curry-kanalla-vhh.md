@@ -44,14 +44,14 @@ ingredients:
   - amount: 200
     unit: g
     item: cauliflower
-    note: in small inflorescences
+    note: "in small florets"
   - amount: 40
     unit: g
     item: unsalted peanuts
   - amount: 1
     unit: piece
     item: onion
-    note: in blocks
+    note: "cut into wedges"
   - amount: 1
     unit: tbsp
     item: fish sauce
@@ -82,7 +82,7 @@ Massamani combines warm spices and a slightly sweet coconut sauce. Serve with ca
 
 ## Preparation
 
-1. Cut the chicken into bite-sized pieces. Peel and dice the turnip. A block of onion.
+1. Cut the chicken into bite-sized pieces. Peel and dice the turnip. Cut the onion into wedges.
 2. Fry the curry paste in a pot on low heat for a minute.
 3. Add coconut milk gradually. Add chicken, turnip and onion.
 4. Bring to a boil and simmer under the lid for 20 minutes, stirring occasionally.

@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: mellannivå
 tags:
-  - marina
-  - marockanskt
-  - kyckling
-  - oliv
+  - "medelhavsmat"
+  - "marockanskt"
+  - "kyckling"
+  - "oliv"
 image:
   src: paaruoat/kana-tagine-sitruunalla.webp
   alt: Kycklingtagine med konserverad citron, gröna oliver och kryddor
@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 800
     unit: g
-    item: kycklinglår
+    item: "kycklingklubbor"
   - amount: 1
     unit: st
     item: lök
@@ -34,7 +34,7 @@ ingredients:
   - amount: 2
     unit: st
     item: en vitlöksklyfta
-    note: hackad
+    note: "finhackad"
   - amount: 1
     unit: tsk
     item: mald ingefära
@@ -47,7 +47,7 @@ ingredients:
   - amount: 1
     unit: st
     item: konserverad citron
-    note: skala fint hackat
+    note: "skalet finhackat"
   - amount: 120
     unit: g
     item: gröna oliver

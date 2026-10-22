@@ -67,7 +67,7 @@ ingredients:
   - amount: null
     unit: ""
     item: färsk koriander
-    note: till ytan
+    note: "att strö över"
 translation_languages: []
 translation_status: {}
 source_language: fi

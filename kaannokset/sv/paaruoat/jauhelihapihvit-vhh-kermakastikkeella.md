@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 35
 difficulty: lätt
 tags:
-  - finsk husmanskost
-  - lågkolhydrat
-  - nötfärsbiffar
-  - gräddsås
+  - "finsk husmanskost"
+  - "lågkolhydrat"
+  - "köttfärsbiffar"
+  - "gräddsås"
 image:
   src: paaruoat/jauhelihapihvit-kermakastikkeella.webp
   alt: Nötfärsbiffar i pepprig gräddsås med gröna bönor och blomkålspuré

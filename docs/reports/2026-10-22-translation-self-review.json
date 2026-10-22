@@ -1,0 +1,2247 @@
+{
+  "date": "2026-10-22",
+  "baseline_sha": "ba9549abd3581ec3699182a7202b03ff77fbaa6d",
+  "reviewer": "Codex self-review",
+  "coverage": {
+    "published_sources": 119,
+    "published_translations": 357,
+    "distinct_source_ingredient_note_pairs": 522,
+    "scope": "Aligned ingredient names and notes, tags and notes-section review; targeted descriptions, instructions, titles and captions. Not a complete independent proofread of every sentence."
+  },
+  "status": "AUTOMATED SEMANTIC REVIEW; HUMAN REVIEW PENDING",
+  "changed_versions": [
+    {
+      "recipe_id": "caponata",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/caponata.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "gazpacho",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/gazpacho.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "hummus",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/hummus.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "jiaozi",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/jiaozi.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "medu-vada",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/medu-vada.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "paneer-tikka",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/paneer-tikka.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "pani-puri",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/pani-puri.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "samosa",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/samosa.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "som-tam-vhh-kurkkuna",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/som-tam-vhh-kurkkuna.md",
+      "changed_fields": [
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "spanakopita",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/spanakopita.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "tabbouleh",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/tabbouleh.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "tunisialainen-brik",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/tunisialainen-brik.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "vada-pav",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/vada-pav.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "yum-woon-sen-vhh",
+      "language": "en",
+      "path": "kaannokset/en/alkuruoat/yum-woon-sen-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "gulab-jamun",
+      "language": "en",
+      "path": "kaannokset/en/jalkiruoat/gulab-jamun.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "tangyuan",
+      "language": "en",
+      "path": "kaannokset/en/jalkiruoat/tangyuan.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "keto-kauralesesampylat",
+      "language": "en",
+      "path": "kaannokset/en/leivonnaiset/keto-kauralesesampylat.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "aloo-paratha",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/aloo-paratha.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "baozi",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/baozi.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "bouillabaisse",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/bouillabaisse.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "butter-chicken",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/butter-chicken.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "chettinad-kana",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/chettinad-kana.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "chole-bhature",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/chole-bhature.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "dal-makhani",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/dal-makhani.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "dan-dan-nuudelit",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/dan-dan-nuudelit.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "doner-kebab",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/doner-kebab.md",
+      "changed_fields": [
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "gai-yang-vhh",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/gai-yang-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "hapanimela-porsas",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/hapanimela-porsas.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "hyderabadi-kanabiryani",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/hyderabadi-kanabiryani.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "idli-sambar",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/idli-sambar.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "italian-pata",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/italian-pata.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "jauhelihapihvit-vhh-kermakastikkeella",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "kana-tagine-sitruunalla",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/kana-tagine-sitruunalla.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "kantonilainen-hoyrytetty-kala",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/kantonilainen-hoyrytetty-kala.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "keltainen-kanacurry-vhh",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/keltainen-kanacurry-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "kerala-kalacurry",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/kerala-kalacurry.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "ketopizza-pofiber-pohjalla",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/ketopizza-pofiber-pohjalla.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "khao-kha-moo-vhh",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/khao-kha-moo-vhh.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "khao-man-gai-vhh",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/khao-man-gai-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "koshari",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/koshari.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "kreikkalainen-moussaka",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/kreikkalainen-moussaka.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "kung-pao-kana",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/kung-pao-kana.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "lanzhou-naudanliha-nuudelikeitto",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/lanzhou-naudanliha-nuudelikeitto.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "larb-moo-vhh",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/larb-moo-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "lihapullat-kermakastikkeessa-vhh",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/lihapullat-kermakastikkeessa-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "lohikeitto-kuohukermalla",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/lohikeitto-kuohukermalla.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "mala-xiang-guo",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/mala-xiang-guo.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "mapo-tofu",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/mapo-tofu.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "marokkolainen-couscous",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/marokkolainen-couscous.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "masala-dosa",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/masala-dosa.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "massaman-curry-kanalla-vhh",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/massaman-curry-kanalla-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "menemen",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/menemen.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "moo-ping-vhh",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/moo-ping-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "nakkikastike-kukkakaalimuusi",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/nakkikastike-kukkakaalimuusi.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "nakkikeitto-kukkakaalilla",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/nakkikeitto-kukkakaalilla.md",
+      "changed_fields": [
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "pad-kee-mao-vhh-konjac",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/pad-kee-mao-vhh-konjac.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "pad-kra-pao-vhh",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/pad-kra-pao-vhh.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "pad-see-ew-vhh-konjac",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/pad-see-ew-vhh-konjac.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "pad-thai-vhh-konjac",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/pad-thai-vhh-konjac.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "paella-valenciana",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/paella-valenciana.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "palak-paneer",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/palak-paneer.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "paprikainen-vhh-gulassi",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/paprikainen-vhh-gulassi.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "parsakaali-sinihomejuustofrittata",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/parsakaali-sinihomejuustofrittata.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "pasta-alla-norma",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/pasta-alla-norma.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "pav-bhaji",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/pav-bhaji.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "pekingin-ankka",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/pekingin-ankka.md",
+      "changed_fields": [
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "pizza-margherita",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/pizza-margherita.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "raejuusto-uunimunakas",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/raejuusto-uunimunakas.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "ratatouille",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/ratatouille.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "rogan-josh",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/rogan-josh.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "sichuan-hot-pot",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/sichuan-hot-pot.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "souvlaki",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/souvlaki.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "tandoorikana",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/tandoorikana.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "thai-vihrea-curry-kanalla-vhh",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "tom-yum-goong-vhh",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/tom-yum-goong-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "tomaatti-kananmuna-wokki",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/tomaatti-kananmuna-wokki.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "tortilla-de-patatas",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/tortilla-de-patatas.md",
+      "changed_fields": [
+        "tags",
+        "image"
+      ]
+    },
+    {
+      "recipe_id": "tunisialainen-ojja",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/tunisialainen-ojja.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "uunilohi-smetanakuorrutteella",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/uunilohi-smetanakuorrutteella.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "uuniporsas-kermakastikkeessa-vhh",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/uuniporsas-kermakastikkeessa-vhh.md",
+      "changed_fields": [
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "vhh-lohikeitto-kukkakaalilla",
+      "language": "en",
+      "path": "kaannokset/en/paaruoat/vhh-lohikeitto-kukkakaalilla.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "caponata",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/caponata.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "gazpacho",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/gazpacho.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "hummus",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/hummus.md",
+      "changed_fields": [
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "jiaozi",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/jiaozi.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "medu-vada",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/medu-vada.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "paneer-tikka",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/paneer-tikka.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "pani-puri",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/pani-puri.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "samosa",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/samosa.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "som-tam-vhh-kurkkuna",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/som-tam-vhh-kurkkuna.md",
+      "changed_fields": [
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "spanakopita",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/spanakopita.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "tabbouleh",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/tabbouleh.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "tunisialainen-brik",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/tunisialainen-brik.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "vada-pav",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/vada-pav.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "xiaolongbao",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/xiaolongbao.md",
+      "changed_fields": [
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "yum-woon-sen-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/alkuruoat/yum-woon-sen-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "gulab-jamun",
+      "language": "sv",
+      "path": "kaannokset/sv/jalkiruoat/gulab-jamun.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "keto-kauralesesampylat",
+      "language": "sv",
+      "path": "kaannokset/sv/leivonnaiset/keto-kauralesesampylat.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "aloo-paratha",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/aloo-paratha.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "baozi",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/baozi.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "bouillabaisse",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/bouillabaisse.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "butter-chicken",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/butter-chicken.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "chettinad-kana",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/chettinad-kana.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "chole-bhature",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/chole-bhature.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "congee-riisipuuro",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/congee-riisipuuro.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "dal-makhani",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/dal-makhani.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "dan-dan-nuudelit",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/dan-dan-nuudelit.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "doner-kebab",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/doner-kebab.md",
+      "changed_fields": [
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "gai-yang-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/gai-yang-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "hapanimela-porsas",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/hapanimela-porsas.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "hyderabadi-kanabiryani",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/hyderabadi-kanabiryani.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "idli-sambar",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/idli-sambar.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "jauheliha-makaronilaatikko",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/jauheliha-makaronilaatikko.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "jauhelihapihvit-vhh-kermakastikkeella",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "kana-tagine-sitruunalla",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/kana-tagine-sitruunalla.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "kantonilainen-hoyrytetty-kala",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/kantonilainen-hoyrytetty-kala.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "karjalanpaisti-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/karjalanpaisti-vhh.md",
+      "changed_fields": [
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "keltainen-kanacurry-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/keltainen-kanacurry-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "kerala-kalacurry",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/kerala-kalacurry.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "ketopizza-pofiber-pohjalla",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/ketopizza-pofiber-pohjalla.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "khao-kha-moo-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/khao-kha-moo-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "khao-man-gai-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/khao-man-gai-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "koshari",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/koshari.md",
+      "changed_fields": [
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "kreikkalainen-moussaka",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/kreikkalainen-moussaka.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "kung-pao-kana",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/kung-pao-kana.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "lanzhou-naudanliha-nuudelikeitto",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/lanzhou-naudanliha-nuudelikeitto.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "larb-moo-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/larb-moo-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "lihapullat-kermakastikkeessa-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/lihapullat-kermakastikkeessa-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "lohikeitto-kuohukermalla",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/lohikeitto-kuohukermalla.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "mala-xiang-guo",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/mala-xiang-guo.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "mapo-tofu",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/mapo-tofu.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "marokkolainen-couscous",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/marokkolainen-couscous.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "masala-dosa",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/masala-dosa.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "massaman-curry-kanalla-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/massaman-curry-kanalla-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "menemen",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/menemen.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "moo-ping-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/moo-ping-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "nakkikastike-kukkakaalimuusi",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/nakkikastike-kukkakaalimuusi.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "nakkikeitto-kukkakaalilla",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/nakkikeitto-kukkakaalilla.md",
+      "changed_fields": [
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "pad-kee-mao-vhh-konjac",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/pad-kee-mao-vhh-konjac.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "pad-kra-pao-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/pad-kra-pao-vhh.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "pad-see-ew-vhh-konjac",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/pad-see-ew-vhh-konjac.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "pad-thai-vhh-konjac",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/pad-thai-vhh-konjac.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "paella-valenciana",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/paella-valenciana.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "palak-paneer",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/palak-paneer.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "panang-curry-kanalla-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/panang-curry-kanalla-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "paprikainen-vhh-gulassi",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/paprikainen-vhh-gulassi.md",
+      "changed_fields": [
+        "ingredients",
+        "image",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "parsakaali-sinihomejuustofrittata",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/parsakaali-sinihomejuustofrittata.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "pasta-alla-norma",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/pasta-alla-norma.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "pav-bhaji",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/pav-bhaji.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "pizza-margherita",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/pizza-margherita.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "punainen-kanacurry-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/punainen-kanacurry-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "raejuusto-uunimunakas",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/raejuusto-uunimunakas.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "ratatouille",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/ratatouille.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "rogan-josh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/rogan-josh.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "sichuan-hot-pot",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/sichuan-hot-pot.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "souvlaki",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/souvlaki.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "tandoorikana",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/tandoorikana.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "thai-vihrea-curry-kanalla-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "tom-yum-goong-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/tom-yum-goong-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "tomaatti-kananmuna-wokki",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/tomaatti-kananmuna-wokki.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "tortilla-de-patatas",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/tortilla-de-patatas.md",
+      "changed_fields": [
+        "tags",
+        "image"
+      ]
+    },
+    {
+      "recipe_id": "tunisialainen-ojja",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/tunisialainen-ojja.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "uunilohi-smetanakuorrutteella",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/uunilohi-smetanakuorrutteella.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "uuniporsas-kermakastikkeessa-vhh",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/uuniporsas-kermakastikkeessa-vhh.md",
+      "changed_fields": [
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "vhh-lohikeitto-kukkakaalilla",
+      "language": "sv",
+      "path": "kaannokset/sv/paaruoat/vhh-lohikeitto-kukkakaalilla.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "caponata",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/caponata.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "gazpacho",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/gazpacho.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "hummus",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/hummus.md",
+      "changed_fields": [
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "jiaozi",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/jiaozi.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "medu-vada",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/medu-vada.md",
+      "changed_fields": [
+        "title",
+        "ingredients",
+        "tags",
+        "prose",
+        "image"
+      ]
+    },
+    {
+      "recipe_id": "paneer-tikka",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/paneer-tikka.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "pani-puri",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/pani-puri.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "samosa",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/samosa.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "som-tam-vhh-kurkkuna",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/som-tam-vhh-kurkkuna.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "spanakopita",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/spanakopita.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "tabbouleh",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/tabbouleh.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "tunisialainen-brik",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/tunisialainen-brik.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "vada-pav",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/vada-pav.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "xiaolongbao",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/xiaolongbao.md",
+      "changed_fields": [
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "yum-woon-sen-vhh",
+      "language": "th",
+      "path": "kaannokset/th/alkuruoat/yum-woon-sen-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "gulab-jamun",
+      "language": "th",
+      "path": "kaannokset/th/jalkiruoat/gulab-jamun.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "tangyuan",
+      "language": "th",
+      "path": "kaannokset/th/jalkiruoat/tangyuan.md",
+      "changed_fields": [
+        "title",
+        "ingredients",
+        "prose",
+        "image"
+      ]
+    },
+    {
+      "recipe_id": "keto-kauralesesampylat",
+      "language": "th",
+      "path": "kaannokset/th/leivonnaiset/keto-kauralesesampylat.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "aloo-paratha",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/aloo-paratha.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "baozi",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/baozi.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "bouillabaisse",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/bouillabaisse.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "butter-chicken",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/butter-chicken.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "char-siu",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/char-siu.md",
+      "changed_fields": [
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "chettinad-kana",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/chettinad-kana.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "chole-bhature",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/chole-bhature.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "congee-riisipuuro",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/congee-riisipuuro.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "dal-makhani",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/dal-makhani.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "dan-dan-nuudelit",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/dan-dan-nuudelit.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "doner-kebab",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/doner-kebab.md",
+      "changed_fields": [
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "gai-yang-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/gai-yang-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "hapanimela-porsas",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/hapanimela-porsas.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "hyderabadi-kanabiryani",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/hyderabadi-kanabiryani.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "idli-sambar",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/idli-sambar.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "italian-pata",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/italian-pata.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "jauheliha-kaalikeitto-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/jauheliha-kaalikeitto-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "jauhelihakastike-kesakurpitsanuudeleilla",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/jauhelihakastike-kesakurpitsanuudeleilla.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "jauhelihapihvit-vhh-kermakastikkeella",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "kana-tagine-sitruunalla",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/kana-tagine-sitruunalla.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "kantonilainen-hoyrytetty-kala",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/kantonilainen-hoyrytetty-kala.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "karjalanpaisti-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/karjalanpaisti-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "keltainen-kanacurry-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/keltainen-kanacurry-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "kerala-kalacurry",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/kerala-kalacurry.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "ketopizza-pofiber-pohjalla",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/ketopizza-pofiber-pohjalla.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "khao-kha-moo-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/khao-kha-moo-vhh.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "khao-man-gai-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/khao-man-gai-vhh.md",
+      "changed_fields": [
+        "title",
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "khao-soi-vhh-konjac",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/khao-soi-vhh-konjac.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "koshari",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/koshari.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "kreikkalainen-moussaka",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/kreikkalainen-moussaka.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "kung-pao-kana",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/kung-pao-kana.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "lanzhou-naudanliha-nuudelikeitto",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/lanzhou-naudanliha-nuudelikeitto.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "larb-moo-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/larb-moo-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "lihapullat-kermakastikkeessa-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/lihapullat-kermakastikkeessa-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "lohikeitto-kuohukermalla",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/lohikeitto-kuohukermalla.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "mala-xiang-guo",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/mala-xiang-guo.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "mapo-tofu",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/mapo-tofu.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "marokkolainen-couscous",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/marokkolainen-couscous.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "masala-dosa",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/masala-dosa.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "massaman-curry-kanalla-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/massaman-curry-kanalla-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "menemen",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/menemen.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "moo-ping-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/moo-ping-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "nakkikastike-kukkakaalimuusi",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/nakkikastike-kukkakaalimuusi.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "nakkikeitto-kukkakaalilla",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/nakkikeitto-kukkakaalilla.md",
+      "changed_fields": [
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "pad-kee-mao-vhh-konjac",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/pad-kee-mao-vhh-konjac.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "pad-kra-pao-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/pad-kra-pao-vhh.md",
+      "changed_fields": [
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "pad-see-ew-vhh-konjac",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/pad-see-ew-vhh-konjac.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "pad-thai-vhh-konjac",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/pad-thai-vhh-konjac.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "paella-valenciana",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/paella-valenciana.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "palak-paneer",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/palak-paneer.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "panang-curry-kanalla-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/panang-curry-kanalla-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "paprikainen-vhh-gulassi",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/paprikainen-vhh-gulassi.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "parsakaali-sinihomejuustofrittata",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/parsakaali-sinihomejuustofrittata.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "pasta-alla-norma",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/pasta-alla-norma.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "pav-bhaji",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/pav-bhaji.md",
+      "changed_fields": [
+        "title",
+        "ingredients",
+        "tags",
+        "prose",
+        "image"
+      ]
+    },
+    {
+      "recipe_id": "pizza-margherita",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/pizza-margherita.md",
+      "changed_fields": [
+        "ingredients",
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "punainen-kanacurry-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/punainen-kanacurry-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "raejuusto-uunimunakas",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/raejuusto-uunimunakas.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "ratatouille",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/ratatouille.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "rogan-josh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/rogan-josh.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "roujiamo",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/roujiamo.md",
+      "changed_fields": [
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "sichuan-hot-pot",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/sichuan-hot-pot.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "souvlaki",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/souvlaki.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "tandoorikana",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/tandoorikana.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "thai-vihrea-curry-kanalla-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "tom-kha-gai-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/tom-kha-gai-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "tom-yum-goong-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/tom-yum-goong-vhh.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "tomaatti-kananmuna-wokki",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/tomaatti-kananmuna-wokki.md",
+      "changed_fields": [
+        "ingredients"
+      ]
+    },
+    {
+      "recipe_id": "tortilla-de-patatas",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/tortilla-de-patatas.md",
+      "changed_fields": [
+        "tags",
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "tunisialainen-ojja",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/tunisialainen-ojja.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "uunilohi-smetanakuorrutteella",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/uunilohi-smetanakuorrutteella.md",
+      "changed_fields": [
+        "ingredients",
+        "tags"
+      ]
+    },
+    {
+      "recipe_id": "uuniporsas-kermakastikkeessa-vhh",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/uuniporsas-kermakastikkeessa-vhh.md",
+      "changed_fields": [
+        "prose"
+      ]
+    },
+    {
+      "recipe_id": "vhh-lohikeitto-kukkakaalilla",
+      "language": "th",
+      "path": "kaannokset/th/paaruoat/vhh-lohikeitto-kukkakaalilla.md",
+      "changed_fields": [
+        "ingredients",
+        "prose"
+      ]
+    }
+  ],
+  "counts": {
+    "en": 81,
+    "sv": 84,
+    "th": 91
+  },
+  "preserved": "Finnish source content; IDs, URLs, statuses, amounts, units, ingredient order, servings, time, nutrition and image assets",
+  "structural_errors": [],
+  "finding_groups": [
+    "Incorrect carbohydrate negation in Thai oat-bran buns",
+    "Ingredient notes: chopping, scoring, skin/bones, wedges, florets, mash, topping, seasoning",
+    "Ingredient identities: broth/concentrate, dairy, fish species, chicken cuts, herbs, uncooked rice",
+    "Tags: Mediterranean, Isan, sausages, lentils, paneer, regional cuisine",
+    "Prose: five-spice, fennel, curdling, rest/slicing, puri shells, brik frying, baking and grilling",
+    "Thai dish names and instructions for rice-flour balls, vegetable mash and cauliflower rice"
+  ]
+}

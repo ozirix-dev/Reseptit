@@ -34,14 +34,14 @@ ingredients:
   - amount: 1
     unit: dl
     item: vispgrädde
-    note: med köttbullsdeg
+    note: "till köttbullssmeten"
   - amount: 2
     unit: msk
     item: mandelmjöl
   - amount: 1
     unit: st
     item: liten lök
-    note: förfinad
+    note: "finhackad"
   - amount: 1
     unit: tsk
     item: salt
@@ -65,15 +65,15 @@ ingredients:
   - amount: 700
     unit: g
     item: blomkål
-    note: att fundera
+    note: "till moset"
   - amount: 40
     unit: g
     item: smör
-    note: att fundera
+    note: "till moset"
   - amount: 0.5
     unit: tsk
     item: salt
-    note: att mosa eller smaka
+    note: "till moset, eller efter smak"
 source_language: fi
 source_recipe: reseptit/paaruoat/lihapullat-kermakastikkeessa-vhh.md
 translation_of: lihapullat-kermakastikkeessa-vhh

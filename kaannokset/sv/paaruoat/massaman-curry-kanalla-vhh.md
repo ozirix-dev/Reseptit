@@ -44,14 +44,14 @@ ingredients:
   - amount: 200
     unit: g
     item: blomkål
-    note: i små blomställningar
+    note: "i små buketter"
   - amount: 40
     unit: g
     item: osaltade jordnötter
   - amount: 1
     unit: st
     item: lök
-    note: i block
+    note: "skuren i klyftor"
   - amount: 1
     unit: msk
     item: fisksås
@@ -82,7 +82,7 @@ Massamani kombinerar varma kryddor och en lite söt kokossås. Servera med blomk
 
 ## Tillagning
 
-1. Skär kycklingen i lagom stora bitar. Skala och tärna majrovaen. Ett block lök.
+1. Skär kycklingen i lagom stora bitar. Skala och tärna majrovaen. Skär löken i klyftor.
 2. Stek currypastan i en gryta på låg värme i någon minut.
 3. Tillsätt kokosmjölk gradvis. Tillsätt kyckling, majrova och lök.
 4. Koka upp och låt sjuda under lock i 20 minuter, rör om då och då.

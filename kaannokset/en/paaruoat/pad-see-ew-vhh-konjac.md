@@ -62,7 +62,7 @@ ingredients:
   - amount: 2
     unit: piece
     item: a clove of garlic
-    note: chopped
+    note: "finely chopped"
   - amount: null
     unit: ""
     item: white pepper

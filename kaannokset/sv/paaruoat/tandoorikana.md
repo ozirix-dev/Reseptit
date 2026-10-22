@@ -27,7 +27,7 @@ ingredients:
   - amount: 1
     unit: kg
     item: hela kycklingklubbor med lår
-    note: utan skinn, skivad
+    note: "utan skinn, med snitt i köttet"
   - amount: 200
     unit: g
     item: naturell yoghurt

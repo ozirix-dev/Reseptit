@@ -50,7 +50,7 @@ ingredients:
     item: black rice vinegar
   - amount: 1
     unit: dl
-    item: the boiling water for the noodles
+    item: "reserved noodle cooking water"
   - amount: 2
     unit: tbsp
     item: roasted peanuts

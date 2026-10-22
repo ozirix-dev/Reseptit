@@ -41,7 +41,7 @@ ingredients:
   - amount: 1
     unit: st
     item: tomat
-    note: i block
+    note: "skuren i klyftor"
   - amount: 0.5
     unit: st
     item: rödlök
@@ -58,18 +58,18 @@ ingredients:
   - amount: 1
     unit: st
     item: röd chili
-    note: hackad
+    note: "finhackad"
   - amount: 2
     unit: msk
     item: färsk koriander
-    note: hackad
+    note: "finhackad"
   - amount: 1
     unit: msk
     item: neutral olja
   - amount: null
     unit: ""
     item: färsk selleri eller kinesisk selleri
-    note: hackad
+    note: "finhackad"
 translation_languages: []
 translation_status: {}
 source_language: fi

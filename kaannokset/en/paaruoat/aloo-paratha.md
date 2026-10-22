@@ -14,9 +14,9 @@ cooking_method:
   - paistinpannu
 difficulty: medium
 tags:
-  - Indian
-  - Punjabi
-  - a vegetable
+  - "Indian"
+  - "Punjabi"
+  - "vegetarian"
 image:
   src: paaruoat/aloo-paratha.webp
   alt: Aloo paratha - golden potato-filled bread with yogurt and a pickled side dish
@@ -29,7 +29,7 @@ ingredients:
   - amount: 1.8
     unit: dl
     item: water
-    note: the dough
+    note: "for the dough"
   - amount: 1
     unit: tsp
     item: salt
@@ -48,7 +48,7 @@ ingredients:
   - amount: 15
     unit: g
     item: fresh coriander
-    note: chopped
+    note: "finely chopped"
   - amount: null
     unit: ""
     item: ghee or butter

@@ -36,7 +36,7 @@ ingredients:
   - amount: 2
     unit: msk
     item: klarnat smör
-    note: smälte ner
+    note: "smält"
   - amount: 100
     unit: ml
     item: mjölk
@@ -64,7 +64,7 @@ ingredients:
   - amount: null
     unit: ""
     item: pistagenötter
-    note: krossas till ytan
+    note: "grovhackade, att strö över"
 source_language: fi
 source_recipe: reseptit/jalkiruoat/gulab-jamun.md
 translation_of: gulab-jamun

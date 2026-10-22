@@ -26,7 +26,7 @@ ingredients:
   - amount: 600
     unit: g
     item: kycklinglårfilé
-    note: i kuber
+    note: "tärnad"
   - amount: 1
     unit: msk
     item: sojasås

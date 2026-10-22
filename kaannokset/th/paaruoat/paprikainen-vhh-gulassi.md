@@ -31,7 +31,7 @@ ingredients:
   - amount: 150
     unit: g
     item: หัวหอม
-    note: ขัดเกลา
+    note: "สับละเอียด"
   - amount: 3
     unit: ชิ้น
     item: กระเทียม
@@ -39,14 +39,14 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: พริกหวานแดง
-    note: ลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 1
     unit: ชิ้น
     item: มะเขือเทศ
-    note: ลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 1
     unit: ช้อนโต๊ะ
-    item: มะเขือเทศบด
+    item: "มะเขือเทศบดเข้มข้น"
   - amount: 1.5
     unit: ช้อนโต๊ะ
     item: ผงปาปริก้า
@@ -64,14 +64,14 @@ ingredients:
   - amount: 1
     unit: ช้อนชา
     item: เกลือ
-    note: หรือเพื่อลิ้มรส
+    note: "หรือปรุงตามชอบ"
   - amount: null
     unit: ""
     item: พริกไทยดำ
-    note: เพื่อลิ้มรส
+    note: "ปรุงตามชอบ"
   - amount: 150
     unit: g
-    item: ครีมเปรี้ยว
+    item: "สเมทานา (ครีมเปรี้ยวชนิดข้น)"
     note: ที่จะให้บริการ
   - amount: null
     unit: ""

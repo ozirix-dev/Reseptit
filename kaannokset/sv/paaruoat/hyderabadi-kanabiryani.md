@@ -72,11 +72,11 @@ ingredients:
   - amount: 20
     unit: g
     item: färsk koriander
-    note: hackad
+    note: "finhackad"
   - amount: 10
     unit: g
     item: färsk mynta
-    note: hackad
+    note: "finhackad"
 source_language: fi
 source_recipe: reseptit/paaruoat/hyderabadi-kanabiryani.md
 translation_of: hyderabadi-kanabiryani

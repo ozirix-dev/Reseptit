@@ -40,7 +40,7 @@ ingredients:
   - amount: 150
     unit: g
     item: fast tofu
-    note: kubad
+    note: "tärnad"
   - amount: 150
     unit: g
     item: mung böngroddar

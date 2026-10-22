@@ -12,9 +12,9 @@ cooking_method:
   - uuni
 difficulty: easy
 tags:
-  - oven dish
-  - minced meat
-  - zucchini
+  - "oven dish"
+  - "minced meat"
+  - "courgette"
 carbs_total_per_serving_g: 7.5
 fat_per_serving_g: 32.5
 protein_per_serving_g: 35

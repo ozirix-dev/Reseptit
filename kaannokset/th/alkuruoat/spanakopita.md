@@ -14,10 +14,10 @@ cooking_method:
   - uuni
 difficulty: ระดับกลาง
 tags:
-  - มารีน
-  - ภาษากรีก
-  - ผักโขม
-  - เฟต้า
+  - "เมดิเตอร์เรเนียน"
+  - "กรีก"
+  - "ผักโขม"
+  - "เฟต้า"
 image:
   src: paaruoat/spanakopita.webp
   alt: พายฟิโลสปานาโกปิต้าสีทองพร้อมไส้ผักโขมเฟต้า หั่นเป็นชิ้น
@@ -38,14 +38,14 @@ ingredients:
   - amount: 2
     unit: ชิ้น
     item: ไข่
-    note: วิปปิ้ง
+    note: "ตีให้เข้ากัน"
   - amount: 15
     unit: g
     item: ผักชีลาวสด
     note: หั่นฝอย
   - amount: 8
     unit: แผ่นแป้ง
-    item: ขนมฟิโล
+    item: "แป้งฟิโล"
   - amount: 100
     unit: ml
     item: น้ำมันมะกอก

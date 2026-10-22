@@ -15,10 +15,10 @@ cooking_method:
   - friteeraus
 difficulty: ระดับกลาง
 tags:
-  - อินเดียน
-  - มุมไบ
-  - ครัวข้างถนน
-  - ผัก
+  - "อินเดียน"
+  - "มุมไบ"
+  - "อาหารริมทาง"
+  - "มังสวิรัติ"
 image:
   src: paaruoat/vada-pav.webp
   alt: วาดา พาฟโรลกับมันฝรั่งกรอบรสเผ็ดและชัทนีย์
@@ -44,14 +44,14 @@ ingredients:
   - amount: 15
     unit: g
     item: ผักชีสด
-    note: สับ
+    note: "สับละเอียด"
   - amount: 100
     unit: g
     item: แป้งถั่วชิกพี
   - amount: 1
     unit: dl
     item: น้ำ
-    note: แป้ง
+    note: "สำหรับแป้งโด"
   - amount: 0.5
     unit: ช้อนชา
     item: ผงพริก

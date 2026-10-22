@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 30
 difficulty: lätt
 tags:
-  - finsk husmanskost
-  - lågkolhydrat
-  - smycke
-  - vardagsmat
+  - "finsk husmanskost"
+  - "lågkolhydrat"
+  - "varmkorv"
+  - "vardagsmat"
 image:
   src: paaruoat/nakkikastike-kukkakaalimuusi.webp
   alt: Korv i gräddsås med blomkålsmos

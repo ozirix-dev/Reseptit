@@ -16,11 +16,11 @@ servings: 4
 time_total_min: 60
 difficulty: ง่าย
 tags:
-  - ไทย
-  - พ่อ
-  - ไก่
-  - ย่าง
-  - วฮ
+  - "ไทย"
+  - "อีสาน"
+  - "ไก่"
+  - "ย่าง"
+  - "วฮ"
 image:
   src: paaruoat/gai-yang-vhh.webp
   alt: ไก่ย่างไก่ย่างบนจานสีน้ำตาลทอง ซอสสมุนไพร และข้าวดอกกะหล่ำ
@@ -33,8 +33,8 @@ fat_per_serving_g: 27
 ingredients:
   - amount: 900
     unit: g
-    item: ชิ้นน่องไก่
-    note: หนังและกระดูก
+    item: "ชิ้นสะโพกไก่"
+    note: "ติดหนังและกระดูก"
   - amount: 3
     unit: ช้อนโต๊ะ
     item: น้ำปลา

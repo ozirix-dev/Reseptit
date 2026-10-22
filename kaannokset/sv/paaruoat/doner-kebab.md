@@ -15,10 +15,10 @@ cooking_method:
   - paistaminen
 difficulty: mellannivå
 tags:
-  - marina
-  - turkiska
-  - nötkött
-  - yoghurt
+  - "medelhavsmat"
+  - "turkisk"
+  - "nötkött"
+  - "yoghurt"
 image:
   src: paaruoat/doner-kebab.webp
   alt: Kryddad döner kebabbiff med pitabröd, sallad och yoghurtsås
@@ -69,17 +69,17 @@ translation_of: doner-kebab
 
 # Hemlagad biff döner kebab
 
-I hemköket steks kött i döner-stil av kryddat nötfärs och skärs i tunna chips. Servera med bröd och en fräsch sallad.
+Den här hemlagade dönern görs av kryddad nötfärs som tillagas i ugnen och skärs i tunna skivor. Servera med bröd och en fräsch sallad.
 
 ## Beskrivning
 
-I hemköket steks kött i döner-stil av kryddat nötfärs och skärs i tunna chips. Servera med bröd och en fräsch sallad.
+Den här hemlagade dönern görs av kryddad nötfärs som tillagas i ugnen och skärs i tunna skivor. Servera med bröd och en fräsch sallad.
 
 ## Tillagning
 
 1. Värm ugnen till 220 grader. Blanda köttfärs, yoghurt, riven lök, vitlök och kryddor till en slät massa.
 2. Bred ut köttet i ett tunt lager på bakplåtspapper. Täck med ett annat papper och kavla ut platt.
-3. Grädda i 12–15 minuter tills köttet är genomstekt. Ta ut ur ugnen och skär eller riv i tunna chips.
+3. Grädda i 12–15 minuter tills köttet är genomstekt. Ta ut ur ugnen och skär eller riv i tunna skivor.
 4. Stek köttchipsen i en het panna i små omgångar för att bryna kanterna.
 5. Servera med varmt pitabröd och kålsallad.
 

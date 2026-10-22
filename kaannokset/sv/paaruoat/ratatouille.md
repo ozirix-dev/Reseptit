@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: lätt
 tags:
-  - marina
-  - franska
-  - sommar squash
-  - aubergine
+  - "medelhavsmat"
+  - "franska"
+  - "zucchini"
+  - "aubergine"
 image:
   src: paaruoat/ratatouille.webp
   alt: Provensalsk ratatouille från zucchini, aubergine, paprika och tomat
@@ -27,11 +27,11 @@ ingredients:
   - amount: 1
     unit: st
     item: aubergine
-    note: i kuber
+    note: "tärnad"
   - amount: 2
     unit: st
     item: zucchini
-    note: i kuber
+    note: "tärnad"
   - amount: 1
     unit: st
     item: röd paprika
@@ -39,7 +39,7 @@ ingredients:
   - amount: 1
     unit: st
     item: lök
-    note: hackad
+    note: "finhackad"
   - amount: 3
     unit: st
     item: en vitlöksklyfta
@@ -47,7 +47,7 @@ ingredients:
   - amount: 500
     unit: g
     item: mogna tomater
-    note: i kuber
+    note: "tärnad"
   - amount: 4
     unit: msk
     item: olivolja

@@ -14,10 +14,10 @@ cooking_method:
   - uuni
 difficulty: mellannivå
 tags:
-  - marina
-  - grekiska
-  - spenat
-  - fetaost
+  - "medelhavsmat"
+  - "grekisk"
+  - "spenat"
+  - "fetaost"
 image:
   src: paaruoat/spanakopita.webp
   alt: Gyllene spanakopita filo paj med spenat och feta fyllning, skuren i bitar
@@ -38,14 +38,14 @@ ingredients:
   - amount: 2
     unit: st
     item: ägg
-    note: vispad
+    note: "uppvispat"
   - amount: 15
     unit: g
     item: färsk dill
     note: strimlad
   - amount: 8
     unit: ark
-    item: filobakelse
+    item: "filodeg"
   - amount: 100
     unit: ml
     item: olivolja

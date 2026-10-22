@@ -41,7 +41,7 @@ ingredients:
   - amount: 150
     unit: g
     item: ผักกาดขาวปลี
-    note: สับ
+    note: "สับละเอียด"
   - amount: 2
     unit: ชิ้น
     item: ต้นหอม

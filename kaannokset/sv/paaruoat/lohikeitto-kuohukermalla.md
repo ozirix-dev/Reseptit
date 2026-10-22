@@ -47,7 +47,7 @@ ingredients:
     note: enligt förpackningens dosering för 8 dl vatten
   - amount: 8
     unit: st
-    item: hel svartpeppar
+    item: "hela svartpepparkorn"
   - amount: 400
     unit: g
     item: laxfilé

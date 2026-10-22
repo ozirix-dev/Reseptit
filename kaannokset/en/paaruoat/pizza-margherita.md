@@ -14,10 +14,10 @@ cooking_method:
   - uuni
 difficulty: medium
 tags:
-  - marine
-  - Italian
-  - wheat
-  - tomato
+  - "Mediterranean"
+  - "Italian"
+  - "wheat"
+  - "tomato"
 image:
   src: paaruoat/pizza-margherita.webp
   alt: Neapolitan Margherita pizza with tomato, mozzarella and fresh basil

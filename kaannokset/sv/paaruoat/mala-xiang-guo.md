@@ -34,7 +34,7 @@ ingredients:
   - amount: 150
     unit: g
     item: broccoli
-    note: i små blomställningar
+    note: "i små buketter"
   - amount: 150
     unit: g
     item: champinjoner

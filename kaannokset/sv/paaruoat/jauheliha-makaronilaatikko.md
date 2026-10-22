@@ -61,7 +61,7 @@ ingredients:
   - amount: 100
     unit: g
     item: riven ost
-    note: till gratinering
+    note: "att strö över"
   - amount: 1.5
     unit: tsk
     item: vitlökspulver

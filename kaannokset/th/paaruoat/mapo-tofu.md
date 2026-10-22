@@ -26,7 +26,7 @@ ingredients:
   - amount: 400
     unit: g
     item: เต้าหู้แข็ง
-    note: ในลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 200
     unit: g
     item: หมูบด
@@ -39,7 +39,7 @@ ingredients:
   - amount: 2
     unit: ชิ้น
     item: กระเทียม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 1
     unit: ช้อนโต๊ะ
     item: ขิงสด

@@ -24,7 +24,7 @@ ingredients:
   - amount: 700
     unit: g
     item: เนื้อปลาสีขาว
-    note: เช่น หอกหรือปลาคอด
+    note: "เช่น ปลาแซนเดอร์หรือปลาคอด"
   - amount: 1
     unit: ช้อนโต๊ะ
     item: ขิงสด

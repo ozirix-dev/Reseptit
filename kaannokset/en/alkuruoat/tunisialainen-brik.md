@@ -14,10 +14,10 @@ cooking_method:
   - paistaminen
 difficulty: medium
 tags:
-  - marine
-  - Tunisian
-  - egg
-  - tuna fish
+  - "Mediterranean"
+  - "Tunisian"
+  - "egg"
+  - "tuna fish"
 image:
   src: paaruoat/tunisialainen-brik.webp
   alt: Crispy fried Tunisian Brik with egg, tuna and parsley
@@ -37,7 +37,7 @@ ingredients:
   - amount: 2
     unit: tbsp
     item: capers
-    note: chopped
+    note: "finely chopped"
   - amount: 15
     unit: g
     item: fresh parsley
@@ -52,7 +52,7 @@ ingredients:
   - amount: 1
     unit: piece
     item: lemon
-    note: in blocks for serving
+    note: "cut into wedges, to serve"
 source_language: fi
 source_recipe: reseptit/alkuruoat/tunisialainen-brik.md
 translation_of: tunisialainen-brik
@@ -76,4 +76,5 @@ Tuna, parsley and egg are wrapped in thin dough. Brik is quickly fried until cri
 
 ## Notes
 
-- The egg traditionally remains runny from the inside. Use fresh eggs and bake the Brik immediately after filling.
+
+- The egg is traditionally left runny inside. Use fresh eggs and fry each brik immediately after filling it.

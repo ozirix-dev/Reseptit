@@ -14,9 +14,9 @@ cooking_method:
   - liesi
 difficulty: medium
 tags:
-  - Indian
-  - Punjabi
-  - a vegetable
+  - "Indian"
+  - "Punjabi"
+  - "vegetarian"
 image:
   src: paaruoat/dal-makhani.webp
   alt: Dal makhani black lentil stew with cream and coriander
@@ -40,11 +40,11 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: piece
     item: a clove of garlic
-    note: chopped
+    note: "finely chopped"
   - amount: 20
     unit: g
     item: fresh ginger
@@ -63,7 +63,7 @@ ingredients:
     item: salt
   - amount: 1
     unit: dl
-    item: double cream
+    item: "whipping cream"
   - amount: null
     unit: ""
     item: fresh coriander
@@ -92,4 +92,5 @@ A hearty dal makhani is stewed with black lentils and beans, and finished with b
 
 ## Notes
 
-- Slow brewing deepens the taste; add water if the stew thickens too much.
+
+- Slow simmering deepens the flavour; add water if the stew becomes too thick.

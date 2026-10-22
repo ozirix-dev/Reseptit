@@ -160,3 +160,25 @@ test("P2/P3 corrections reach static titles, route data and Recipe JSON-LD", asy
     }
   }
 });
+
+
+test("translation self-review corrections are present in static HTML and recipe metadata", async () => {
+  const { siteContent } = await import("../src/generated/content.generated");
+  const cases = [
+    ["keto-kauralesesampylat", "th", "รำข้าวโอ๊ตมีคาร์โบไฮเดรต", "รำข้าวโอ๊ตไม่มีคาร์โบไฮเดรต"],
+    ["char-siu", "th", "ผงพะโล้จีน", "โหระพา"],
+    ["lihapullat-kermakastikkeessa-vhh", "en", "for the mash", "to muse"],
+    ["nakkikeitto-kukkakaalilla", "sv", "varmkorv", "smycke"],
+    ["rogan-josh", "en", "curdling", "does not run"],
+    ["tunisialainen-brik", "th", "ทอดบริก", "น้ำมูก"],
+  ] as const;
+  for (const [id, locale, expected, rejected] of cases) {
+    const recipe = siteContent.recipes.find((r) => r.recipeId === id && r.locale === locale)!;
+    const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+    assert.ok(html.includes(expected), `${id}/${locale}: visible correction`);
+    assert.ok(!html.includes(rejected), `${id}/${locale}: no old mistranslation`);
+    const schema = JSON.parse(html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/)![1]);
+    assert.equal(schema.name, recipe.title);
+    assert.ok(html.includes(`rel="canonical" href="https://ozirix-dev.github.io/Reseptit${recipe.routePath}"`));
+  }
+});

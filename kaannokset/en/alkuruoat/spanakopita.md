@@ -14,10 +14,10 @@ cooking_method:
   - uuni
 difficulty: medium
 tags:
-  - marine
-  - Greek
-  - spinach
-  - feta
+  - "Mediterranean"
+  - "Greek"
+  - "spinach"
+  - "feta"
 image:
   src: paaruoat/spanakopita.webp
   alt: Golden spanakopita filo pie with spinach and feta filling, cut into pieces
@@ -38,7 +38,7 @@ ingredients:
   - amount: 2
     unit: piece
     item: egg
-    note: whipped
+    note: "beaten"
   - amount: 15
     unit: g
     item: fresh dill

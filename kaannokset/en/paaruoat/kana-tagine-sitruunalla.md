@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: medium
 tags:
-  - marine
-  - Moroccan
-  - chicken
-  - olive
+  - "Mediterranean"
+  - "Moroccan"
+  - "chicken"
+  - "olive"
 image:
   src: paaruoat/kana-tagine-sitruunalla.webp
   alt: Chicken tagine with preserved lemon, green olives and spices
@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 800
     unit: g
-    item: chicken thighs
+    item: "chicken legs"
   - amount: 1
     unit: piece
     item: onion
@@ -34,7 +34,7 @@ ingredients:
   - amount: 2
     unit: piece
     item: a clove of garlic
-    note: chopped
+    note: "finely chopped"
   - amount: 1
     unit: tsp
     item: ground ginger
@@ -47,7 +47,7 @@ ingredients:
   - amount: 1
     unit: piece
     item: preserved lemon
-    note: peel finely chopped
+    note: "rind finely chopped"
   - amount: 120
     unit: g
     item: green olives

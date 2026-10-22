@@ -35,7 +35,7 @@ ingredients:
   - amount: 200
     unit: g
     item: cottage cheese
-    note: choose unflavored
+    note: "choose plain cottage cheese"
   - amount: 60
     unit: g
     item: almond flour
@@ -61,7 +61,7 @@ ingredients:
   - amount: null
     unit: ""
     item: sesame seeds
-    note: if you want to surface
+    note: "for sprinkling on top, optional"
 status: published
 source_language: fi
 source_recipe: reseptit/leivonnaiset/keto-kauralesesampylat.md

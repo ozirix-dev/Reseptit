@@ -16,10 +16,10 @@ servings: 4
 time_total_min: 45
 difficulty: easy
 tags:
-  - Thai
-  - grill
-  - a pig
-  - VHH
+  - "Thai"
+  - "grill"
+  - "pork"
+  - "VHH"
 image:
   src: paaruoat/moo-ping-vhh.webp
   alt: Grilled moo ping pork skewers, cucumber and hot dipping sauce
@@ -50,7 +50,7 @@ ingredients:
   - amount: 2
     unit: tbsp
     item: cilantro stalks
-    note: chopped
+    note: "finely chopped"
   - amount: 0.5
     unit: tsp
     item: ground white pepper

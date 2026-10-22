@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: mellannivå
 tags:
-  - marina
-  - sicilianska
-  - aubergine
-  - tomat
+  - "medelhavsmat"
+  - "sicilianska"
+  - "aubergine"
+  - "tomat"
 image:
   src: paaruoat/caponata.webp
   alt: Siciliansk caponata av aubergine, tomat, selleri, oliver och kapris
@@ -27,14 +27,14 @@ ingredients:
   - amount: 2
     unit: st
     item: aubergine
-    note: i kuber
+    note: "tärnad"
   - amount: 2
     unit: msk
     item: olivolja
   - amount: 1
     unit: st
     item: lök
-    note: hackad
+    note: "finhackad"
   - amount: 2
     unit: st
     item: stjälk av selleri
@@ -45,7 +45,7 @@ ingredients:
   - amount: 80
     unit: g
     item: gröna oliver
-    note: halveras
+    note: "halverade"
   - amount: 1
     unit: msk
     item: kapris

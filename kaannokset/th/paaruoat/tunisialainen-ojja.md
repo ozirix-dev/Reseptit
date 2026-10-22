@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: ง่าย
 tags:
-  - มารีน
-  - ตูนิเซีย
-  - ไข่
-  - มะเขือเทศ
+  - "เมดิเตอร์เรเนียน"
+  - "ตูนิเซีย"
+  - "ไข่"
+  - "มะเขือเทศ"
 image:
   src: paaruoat/tunisialainen-ojja.webp
   alt: ออจจาตูนิเซียกับไข่ ซอสมะเขือเทศพริกไทยและฮาริสซา
@@ -27,11 +27,11 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 1
     unit: ชิ้น
     item: พริกหยวกแดง
-    note: ในลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 2
     unit: ชิ้น
     item: กระเทียม
@@ -60,7 +60,7 @@ ingredients:
     note: หั่นฝอย
   - amount: 4
     unit: แผ่น
-    item: ขนมปังประเทศ
+    item: "ขนมปังแบบชนบท"
     note: สำหรับการเสิร์ฟ
 source_language: fi
 source_recipe: reseptit/paaruoat/tunisialainen-ojja.md

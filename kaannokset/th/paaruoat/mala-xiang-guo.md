@@ -34,7 +34,7 @@ ingredients:
   - amount: 150
     unit: g
     item: บรอกโคลี
-    note: ในช่อดอกเล็กๆ
+    note: "หั่นเป็นดอกเล็ก ๆ"
   - amount: 150
     unit: g
     item: เห็ดแชมปิญอง

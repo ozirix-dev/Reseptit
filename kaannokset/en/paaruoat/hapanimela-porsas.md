@@ -27,7 +27,7 @@ ingredients:
   - amount: 600
     unit: g
     item: pork loin
-    note: in cubes
+    note: "diced"
   - amount: 1
     unit: piece
     item: egg
@@ -47,7 +47,7 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: in blocks
+    note: "cut into wedges"
   - amount: 150
     unit: g
     item: of pineapple

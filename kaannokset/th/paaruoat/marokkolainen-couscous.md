@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: ระดับกลาง
 tags:
-  - มารีน
-  - โมร็อกโก
-  - ไก่
-  - ถั่วชิกพี
+  - "เมดิเตอร์เรเนียน"
+  - "โมร็อกโก"
+  - "ไก่"
+  - "ถั่วชิกพี"
 image:
   src: paaruoat/marokkolainen-couscous.webp
   alt: จานคูสคูสโมร็อกโกกับไก่ ถั่วชิกพี และผักหลากสี
@@ -33,7 +33,7 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 2
     unit: ชิ้น
     item: แครอท
@@ -54,7 +54,7 @@ ingredients:
     item: ยี่หร่า
   - amount: 1
     unit: ช้อนชา
-    item: ผักชีบด
+    item: "เมล็ดผักชีป่น"
   - amount: 0.5
     unit: ช้อนชา
     item: ขมิ้น
@@ -87,4 +87,5 @@ translation_of: marokkolainen-couscous
 
 ## หมายเหตุ
 
-- เพิ่มฮาริสสาลงบนโต๊ะแยกกันหากผู้ที่มารับประทานอาหารต้องการความร้อนมากขึ้น
+
+- เสิร์ฟฮาริสสาแยกไว้บนโต๊ะสำหรับผู้ที่ต้องการเพิ่มความเผ็ด

@@ -15,9 +15,9 @@ cooking_method:
   - friteeraus
 difficulty: medium
 tags:
-  - Indian
-  - Punjabi
-  - a vegetable
+  - "Indian"
+  - "Punjabi"
+  - "vegetarian"
 image:
   src: paaruoat/chole-bhature.webp
   alt: "Chole bhature dish: spicy chickpea curry and airy fried bread"
@@ -38,11 +38,11 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: piece
     item: a clove of garlic
-    note: chopped
+    note: "finely chopped"
   - amount: 20
     unit: g
     item: fresh ginger

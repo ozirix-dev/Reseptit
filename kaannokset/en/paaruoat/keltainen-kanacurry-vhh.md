@@ -43,7 +43,7 @@ ingredients:
   - amount: 400
     unit: g
     item: cauliflower
-    note: in small inflorescences
+    note: "in small florets"
   - amount: 1
     unit: piece
     item: small onion
