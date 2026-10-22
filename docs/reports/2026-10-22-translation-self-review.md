@@ -105,3 +105,23 @@ vaikka määrät ja rakenteet täsmäävät. Jatkossa oma tarkistus kattaa näm�
 raaka/kypsä- ja liemi/tiiviste-erot sekä uuni/pannu/grilli-verbien merkityksen.
 Tarkistuksen rajaus ja löydökset tallennetaan aina; tekninen läpäisy ei muuta
 riippumattoman ihmiskielentarkistuksen tilaa hyväksytyksi.
+
+## Uudelleenkäynnistetyn PR #37 -katselmoinnin korjaus
+
+Käyttäjän pyynnöstä 22.10.2026 käynnistetty ulkoinen katselmointi valmistui
+ja löysi yhden P2-havainnon: hakutunnisteiden virhetarkistus vertasi taulukoiden
+samoja indeksejä, vaikka tunnisteiden järjestyksellä ei ole merkitystä.
+[Alkuperäinen havainto](https://github.com/ozirix-dev/Reseptit/pull/37#discussion_r4348074748).
+
+Korjaus tarkistaa jokaisen kohdekielen tunnisteen kaikkia lähteen aktivoimia
+sääntöjä vasten. Ainesosahuomautusten rivikohtainen vertailu säilyy ennallaan.
+Reseptisisältöjä ei muutettu. Regressiotestit vaihtavat lähteen ja kohteen
+järjestystä EN/SV/TH-esimerkeissä sekä varmistavat oikeiden käännösten ja
+asiaan liittymättömien lähdetunnisteiden hyväksymisen. Koko reseptiauditoinnin
+testi kierrättää nakkikeiton tunnisteiden järjestystä.
+
+Kaksi testiä epäonnistui ennen korjausta. Korjauksen jälkeen kaikki 14
+käännöstestiä ja yhdeksän staattista testiä sekä tuotantobuild läpäisivät
+(476 kieliversiota, 480 reittiä). Korjaus tehdään julkaistun version
+`c14914a49e8c87abfbbd3e0fde49d0c36a5a5463` päälle erillisellä haaralla
+`codex/reseptit-tag-review-fix`; yhdistäminen on erillinen vaihe.

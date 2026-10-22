@@ -256,6 +256,11 @@ test("ingredient notes and tags reject observed false friends without rejecting 
   ] as const) {
     assert.equal(semanticTagErrors([source], [bad], locale).length, 1);
     assert.deepEqual(semanticTagErrors([source], [good], locale), []);
+    // Tags are unordered: moving either side must not hide a bad translation.
+    assert.equal(semanticTagErrors(["other", source], [bad, "other"], locale).length, 1);
+    assert.equal(semanticTagErrors([source, "other"], ["other", bad], locale).length, 1);
+    assert.deepEqual(semanticTagErrors(["other", source], [good, "other"], locale), []);
+    assert.deepEqual(semanticTagErrors(["other"], [bad, "other"], locale), []);
   }
   assert.deepEqual(semanticNoteErrors(["puhdistettua öljyä"], ["refined oil"], "en"), []);
   assert.deepEqual(semanticTagErrors(["merenelävät"], ["marine"], "en"), []);
@@ -283,7 +288,13 @@ test("translation audit checks notes and tags as well as prose negation and cook
       assert.notEqual(index, -1);
       target.data.ingredients[index].note = bad;
     }
-    if (field === "tag") target.data.tags[source.data.tags.indexOf("nakit")] = bad;
+    if (field === "tag") {
+      const index = source.data.tags.indexOf("nakit");
+      assert.notEqual(index, -1);
+      target.data.tags[index] = bad;
+      target.data.tags.unshift(target.data.tags.pop()!);
+      assert.notEqual(target.data.tags.indexOf(bad), index);
+    }
     const audit = auditRecipePairs([source], targets.map((r) => r.data.language === locale ? target : r));
     assert.ok(audit.errors.some((error) => error.includes(message)), `${id}/${locale}/${field}`);
   }

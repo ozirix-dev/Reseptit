@@ -80,11 +80,16 @@ export function semanticNoteErrors(source: string[], target: string[], locale: R
 }
 
 export function semanticTagErrors(source: string[], target: string[], locale: ReviewLocale): string[] {
-  return alignedTextErrors(source, target, locale, [
+  const rules: AlignedRule[] = [
     { source: /^Isan$/, bad: { en: /^dad$/i, sv: /^pappa$/i, th: /^พ่อ$/ }, meaning: "Isan region" },
     { source: /^nakit$/, bad: { en: /jewelry/i, sv: /smycke/i, th: /เครื่องประดับ/ }, meaning: "frankfurter sausages" },
     { source: /^valimerellinen$/, bad: { en: /^marine$/i, sv: /^marina$/i, th: /^มารีน$/ }, meaning: "Mediterranean" },
     { source: /^linssi$/, bad: { en: /^lens$/i, th: /^เลนส์$/ }, meaning: "lentils" },
     { source: /^paneer$/, bad: { th: /บานหน้าต่าง/ }, meaning: "paneer cheese" },
-  ], "tag");
+  ];
+  // Tag order has no meaning. Source tags enable rules; each target tag is
+  // checked against all enabled rules, while ingredient notes stay positional.
+  return target.flatMap((value, index) => rules.flatMap((rule) =>
+    source.some((tag) => rule.source.test(tag)) && rule.bad[locale]?.test(value)
+      ? [`tag ${index + 1} mistranslated: expected ${rule.meaning}`] : []));
 }
