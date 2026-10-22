@@ -1,0 +1,52 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import { auditTranslations, auditRecipePairs } from "../scripts/translation-audit";
+import { buildRegistry, contentHash, humanStatus, scopes, escapeHtml, evidenceSchema, type ReviewEvidence } from "../scripts/translation-review";
+const proof: ReviewEvidence = { recipe_id: "synthetic-fixture", locale: "en", evidence_id: "synthetic-test-not-a-real-approval", source_content_hash: contentHash("source"), translation_content_hash: contentHash("translation"), reviewed_at: "2026-10-20", scope: [...scopes], status: "complete", human_attestation: true };
+test("evidence status and both content hashes protect approvals", () => {
+  const s = proof.source_content_hash, t = proof.translation_content_hash;
+  assert.equal(contentHash("a\r\nb"), contentHash("a\nb"));
+  assert.equal(humanStatus(s, t), "AUTOMATED REVIEW ONLY");
+  assert.equal(humanStatus(s, null), "NOT REVIEWED");
+  assert.equal(humanStatus(s, t, proof), "HUMAN REVIEW COMPLETE");
+  assert.equal(humanStatus(contentHash("changed source"), t, proof), "REVIEW STALE");
+  assert.equal(humanStatus(s, contentHash("changed translation"), proof), "REVIEW STALE");
+  assert.equal(humanStatus(s, t, proof, false), "REVIEW STALE");
+  assert.equal(humanStatus(s, t, { ...proof, status: "in-progress" }), "HUMAN REVIEW IN PROGRESS");
+  for (const change of [{ human_attestation: false }, { evidence_id: "" }, { scope: ["title"] }, { reviewed_at: "2026-99-99" }, { reviewed_at: "2026-02-30" }, { reviewed_at: "2099-01-01" }]) assert.equal(humanStatus(s, t, { ...proof, ...change }), "NOT REVIEWED");
+  assert.throws(() => evidenceSchema.parse([{ ...proof, human_attestation: "false" }]));
+  assert.throws(() => evidenceSchema.parse([{ ...proof, reviewer_email: "private@example.org" }]));
+});
+test("dynamic registry covers all published pairs, puts Thai first, no invented human approval", async () => {
+  const audit = await auditTranslations();
+  const hashes = Object.fromEntries([...audit.publishedSources, ...audit.publishedTranslations].map((r) => [r.path, contentHash(JSON.stringify(r))]));
+  const rows = buildRegistry(audit, hashes, []);
+  assert.equal(rows.length, audit.publishedTranslations.length);
+  assert.equal(rows[0].locale, "th");
+  assert.ok(rows.every((r) => r.human_review_status === "AUTOMATED REVIEW ONLY"));
+  assert.ok(rows.every((r) => r.structural_status === "PASS"));
+  assert.throws(() => buildRegistry(audit, hashes, [proof, proof]));
+});
+test("draft cannot satisfy published counterpart and amount/unit errors reach registry", async () => {
+  const all = await auditTranslations();
+  const source = structuredClone(all.publishedSources[0]); source.data.translation_status = { en: "published" }; source.data.translation_languages = ["en"];
+  const target = structuredClone(all.publishedTranslations.find((r) => r.data.recipe_id === source.data.recipe_id && r.data.language === "en")!);
+  const hashes = { [source.path]: contentHash("source"), [target.path]: contentHash("target") };
+  target.data.status = "draft";
+  const missing = buildRegistry(auditRecipePairs([source], [target]), hashes, [])[0];
+  assert.equal(missing.translation_path, null); assert.equal(missing.structural_status, "FAIL");
+  target.data.status = "published"; target.data.ingredients[0].amount = 12345; target.data.ingredients[0].unit = "l";
+  const row = buildRegistry(auditRecipePairs([source], [target]), hashes, [])[0];
+  assert.equal(row.structural_status, "FAIL"); assert.match(row.notes.join(" "), /amount=12345/);
+});
+test("known mistranslation and narrow negation guard remain visible", async () => {
+  const all = await auditTranslations();
+  const source = structuredClone(all.publishedSources.find((r) => r.data.recipe_id === "keto-kauralesesampylat")!);
+  source.data.translation_status = { th: "published" }; source.data.translation_languages = ["th"];
+  const target = structuredClone(all.publishedTranslations.find((r) => r.data.recipe_id === source.data.recipe_id && r.data.language === "th")!);
+  target.content += "\nรำข้าวโอ๊ตไม่มีคาร์โบไฮเดรต\n";
+  const hashes = { [source.path]: contentHash("source"), [target.path]: contentHash("target") };
+  const row = buildRegistry(auditRecipePairs([source], [target]), hashes, [])[0];
+  assert.equal(row.automated_semantic_status, "FINDINGS"); assert.match(row.notes.join(" "), /negated/);
+  assert.equal(escapeHtml('<script>"&'), "&lt;script&gt;&quot;&amp;");
+});

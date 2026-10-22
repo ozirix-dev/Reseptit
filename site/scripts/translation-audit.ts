@@ -106,7 +106,7 @@ function instructionFacts(instructions: string): string[] {
   return facts;
 }
 
-function knownTermErrors(source: Frontmatter, target: Frontmatter, locale: Locale, targetContent: string): string[] {
+export function knownTermErrors(source: Frontmatter, target: Frontmatter, locale: Locale, targetContent: string): string[] {
   const items = target.ingredients.map((ingredient) => ingredient.item);
   const allItems = items.join(" | ");
   const issues: string[] = [];
