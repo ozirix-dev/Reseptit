@@ -80,11 +80,19 @@ export function semanticNoteErrors(source: string[], target: string[], locale: R
 }
 
 export function semanticTagErrors(source: string[], target: string[], locale: ReviewLocale): string[] {
-  return alignedTextErrors(source, target, locale, [
+  const rules: (AlignedRule & { validForSource?: RegExp })[] = [
     { source: /^Isan$/, bad: { en: /^dad$/i, sv: /^pappa$/i, th: /^พ่อ$/ }, meaning: "Isan region" },
     { source: /^nakit$/, bad: { en: /jewelry/i, sv: /smycke/i, th: /เครื่องประดับ/ }, meaning: "frankfurter sausages" },
-    { source: /^valimerellinen$/, bad: { en: /^marine$/i, sv: /^marina$/i, th: /^มารีน$/ }, meaning: "Mediterranean" },
+    { source: /^valimerellinen$/, bad: { en: /^marine$/i, sv: /^marina$/i, th: /^มารีน$/ }, meaning: "Mediterranean", validForSource: /^(?:merenelävät|merellinen)$/i },
     { source: /^linssi$/, bad: { en: /^lens$/i, th: /^เลนส์$/ }, meaning: "lentils" },
     { source: /^paneer$/, bad: { th: /บานหน้าต่าง/ }, meaning: "paneer cheese" },
-  ], "tag");
+  ];
+  // Tag order has no meaning. Source tags enable rules; each target tag is
+  // checked against all enabled rules, while ingredient notes stay positional.
+  // A known alternate source sense can justify the otherwise suspicious word.
+  // This is a narrow regression guard, not a check for missing translations.
+  return target.flatMap((value, index) => rules.flatMap((rule) =>
+    source.some((tag) => rule.source.test(tag)) && rule.bad[locale]?.test(value)
+      && !source.some((tag) => rule.validForSource?.test(tag))
+      ? [`tag ${index + 1} mistranslated: expected ${rule.meaning}`] : []));
 }
