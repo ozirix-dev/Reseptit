@@ -79,3 +79,16 @@ test("orphaned evidence fails for unknown recipe or removed translation", async 
   assert.throws(() => buildRegistry(auditRecipePairs([source], [target]), hashes, [proof]), /0 matches/);
   assert.throws(() => buildRegistry(auditRecipePairs([source], []), hashes, evidence), /0 matches/);
 });
+test("misdeclared source language invalidates every target locale", async () => {
+  const all = await auditTranslations();
+  const source = structuredClone(all.publishedSources[0]);
+  const targets = all.publishedTranslations.filter((r) => r.data.recipe_id === source.data.recipe_id);
+  const hashes = Object.fromEntries([source, ...targets].map((r) => [r.path, r === source ? proof.source_content_hash : proof.translation_content_hash]));
+  for (const language of ["en", "sv", "th"] as const) {
+    source.data.language = language;
+    const evidence = targets.map((r) => ({ ...proof, recipe_id: source.data.recipe_id, locale: r.data.language as "en" | "sv" | "th" }));
+    const rows = buildRegistry(auditRecipePairs([source], targets), hashes, evidence);
+    assert.equal(rows.length, 3);
+    assert.ok(rows.every((r) => r.structural_status === "FAIL" && r.human_review_status !== "HUMAN REVIEW COMPLETE"));
+  }
+});

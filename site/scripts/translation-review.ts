@@ -51,7 +51,7 @@ export function buildRegistry(audit: TranslationAuditResult, hashes: Record<stri
     if (!target && source.data.translation_status?.[locale] !== "published") return [];
     const pair = audit.rows.find((r) => r.recipe_id === source.data.recipe_id && r.locale === locale);
     const semantic = target ? knownTermErrors(source.data, target.data, locale, target.content) : [];
-    const pairErrors = audit.errors.filter((e) => e.startsWith(`${source.data.recipe_id}:${locale}:`) || e.startsWith(`${source.data.recipe_id}:fi:`));
+    const pairErrors = audit.errors.filter((e) => e.startsWith(`${source.data.recipe_id}:${locale}:`) || e.startsWith(`${source.data.recipe_id}:${source.data.language}:`));
     const structural = !!pair && !pairErrors.some((e) => !semantic.some((s) => e.endsWith(s)));
     const sourceHash = hashes[source.path]; const translationHash = target ? hashes[target.path] : null;
     if (!sourceHash || (target && !translationHash)) throw Error("Missing file hash");
