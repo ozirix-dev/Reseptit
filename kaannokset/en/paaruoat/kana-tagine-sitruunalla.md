@@ -81,7 +81,7 @@ Slow-braised chicken is seasoned with ginger, turmeric, preserved lemon and oliv
 
 1. Heat the oil in a heavy-bottomed pan. Brown the chicken on all sides and set aside.
 2. Saute the onion and garlic in a pot. Add ginger, turmeric and cumin.
-3. Return the chicken to the pot. Add lemon zest and chicken broth. Cover and simmer on low heat for about 45 minutes.
+3. Return the chicken to the pot. Add preserved lemon peel and chicken broth. Cover and simmer on low heat for about 45 minutes.
 4. Add the olives and simmer for another 10 minutes until the chicken is tender and cooked.
 5. Taste for salt and finish with coriander. Serve with couscous or bread.
 

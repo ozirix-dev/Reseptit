@@ -55,7 +55,7 @@ source_recipe: reseptit/paaruoat/ketopizza-pofiber-pohjalla.md
 translation_of: ketopizza-pofiber-pohjalla
 ---
 
-# Ketopizza med Pofiber-bas
+# Ketopizza med Pofiberbotten
 
 Den ostiga, mjuka Pofiberbotten bakas i varm ugn till en pizza med krispiga kanter. Du kan välja fyllningar efter din smak.
 

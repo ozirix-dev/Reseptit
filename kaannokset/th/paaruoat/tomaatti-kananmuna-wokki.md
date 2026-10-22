@@ -19,7 +19,7 @@ tags:
   - มะเขือเทศ
 image:
   src: paaruoat/tomaatti-kananmuna-wokki.webp
-  alt: กระทะไข่ไก่มะเขือเทศจีนพร้อมไข่คนนุ่มและต้นหอม
+  alt: มะเขือเทศผัดไข่แบบจีน ใส่ไข่คนนุ่มและต้นหอม
   width: 1279
   height: 853
 ingredients:
@@ -55,7 +55,7 @@ source_recipe: reseptit/paaruoat/tomaatti-kananmuna-wokki.md
 translation_of: tomaatti-kananmuna-wokki
 ---
 
-# กระทะจีน-ไข่มะเขือเทศ
+# กระทะไข่มะเขือเทศจีน
 
 อาหารโฮมเมดจานด่วนสุดคลาสสิกที่ผสมผสานมะเขือเทศฉ่ำกับไข่นุ่มๆ ในกระทะที่มีรสหวานเล็กน้อย
 

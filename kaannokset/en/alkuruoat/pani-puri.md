@@ -39,7 +39,7 @@ ingredients:
     item: potatoes
   - amount: 150
     unit: g
-    item: ripe chickpeas
+    item: cooked chickpeas
   - amount: 20
     unit: g
     item: fresh mint
@@ -63,6 +63,12 @@ ingredients:
     unit: ""
     item: oil
     note: for deep frying
+  - unit: dl
+    item: cold water for the herb water
+    amount: 4
+  - unit: ""
+    item: salt
+    amount: null
 source_language: fi
 source_recipe: reseptit/alkuruoat/pani-puri.md
 translation_of: pani-puri

@@ -39,7 +39,7 @@ ingredients:
     item: massaman currypasta
   - amount: 250
     unit: g
-    item: från kålrot
+    item: majrova
     note: i tärningar istället för potatis
   - amount: 200
     unit: g
@@ -82,14 +82,14 @@ Massamani kombinerar varma kryddor och en lite söt kokossås. Servera med blomk
 
 ## Tillagning
 
-1. Skär kycklingen i lagom stora bitar. Skala och tärna kålroten. Ett block lök.
+1. Skär kycklingen i lagom stora bitar. Skala och tärna majrovaen. Ett block lök.
 2. Stek currypastan i en gryta på låg värme i någon minut.
-3. Tillsätt kokosmjölk gradvis. Tillsätt kyckling, kålrot och lök.
+3. Tillsätt kokosmjölk gradvis. Tillsätt kyckling, majrova och lök.
 4. Koka upp och låt sjuda under lock i 20 minuter, rör om då och då.
 5. Tillsätt blomkål och jordnötter. Sjud i ytterligare 10 minuter tills kycklingen och grönsakerna är kokta.
 6. Smaksätt med fisksås, limejuice och erytritol. Hetta upp blomkålsriset och servera med curryn.
 
 ## Anteckningar
 
-– Potatisen har bytts ut mot kålrot och blomkål. Currypasta kan innehålla socker; kontrollera förpackningen.
+– Potatisen har bytts ut mot majrova och blomkål. Currypasta kan innehålla socker; kontrollera förpackningen.
 - Näringsvärdena är vägledande.

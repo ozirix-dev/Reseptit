@@ -1,5 +1,5 @@
 ---
-title: VHH tom kha gai – coconut chicken soup
+title: low-carb tom kha gai – coconut chicken soup
 recipe_id: tom-kha-gai-vhh
 url_slug: tom-kha-gai-vhh
 category: paaruoka
@@ -40,7 +40,7 @@ ingredients:
     item: chicken broth
   - amount: 200
     unit: g
-    item: edible mushrooms
+    item: button mushrooms
     note: sliced
   - amount: 2
     unit: piece
@@ -79,9 +79,9 @@ source_recipe: reseptit/paaruoat/tom-kha-gai-vhh.md
 translation_of: tom-kha-gai-vhh
 ---
 
-# VHH tom kha gai – coconut chicken soup
+# low-carb tom kha gai – coconut chicken soup
 
-Tom kha gai is an aromatic Thai chicken soup where coconut milk softens the flavors of lime, galangal and lemongrass. This VHH version is served without rice.
+Tom kha gai is an aromatic Thai chicken soup where coconut milk softens the flavors of lime, galangal and lemongrass. This low-carb version is served without rice.
 
 ## Description
 

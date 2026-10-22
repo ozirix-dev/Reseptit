@@ -39,7 +39,7 @@ ingredients:
     item: มันฝรั่ง
   - amount: 150
     unit: g
-    item: ถั่วชิกพีสุก
+    item: ถั่วชิกพีต้มสุก
   - amount: 20
     unit: g
     item: สะระแหน่สด
@@ -63,6 +63,12 @@ ingredients:
     unit: ""
     item: น้ำมัน
     note: สำหรับการทอด
+  - unit: dl
+    item: น้ำเย็นสำหรับน้ำสมุนไพร
+    amount: 4
+  - unit: ""
+    item: เกลือ
+    amount: null
 source_language: fi
 source_recipe: reseptit/alkuruoat/pani-puri.md
 translation_of: pani-puri

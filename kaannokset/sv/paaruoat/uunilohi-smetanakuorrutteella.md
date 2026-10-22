@@ -1,5 +1,5 @@
 ---
-title: Ugnsbakad lax med gräddfilstäcke
+title: Ugnsbakad lax med smetanatäcke
 recipe_id: uunilohi-smetanakuorrutteella
 url_slug: uunilohi-smetanakuorrutteella
 category: paaruoka
@@ -19,7 +19,7 @@ tags:
   - fiskrätt
 image:
   src: paaruoat/uunilohi-smetanalla.webp
-  alt: Ugnskokt lax under gräddfil, purjolök och dillglasyr med citronskivor
+  alt: Ugnsbakad lax under ett täcke av smetana, purjolök och dill, med citronskivor
   width: 1280
   height: 853
 ingredients:
@@ -58,9 +58,9 @@ source_recipe: reseptit/paaruoat/uunilohi-smetanakuorrutteella.md
 translation_of: uunilohi-smetanakuorrutteella
 ---
 
-# Ugnsbakad lax med gräddfil och örtglasyr
+# Ugnsbakad lax med smetanatäcke
 
-saftig bakad lax får en gräddfilsbeläggning kryddad med citron, purjolök och dill.
+saftig bakad lax får en smetanasbeläggning kryddad med citron, purjolök och dill.
 
 ## Beskrivning
 
@@ -70,11 +70,11 @@ Denna enkla laxrätt tillagas i ugnen tillsammans med en fyllig glasyr. Servera 
 
 1. Värm ugnen till 180 grader och smörj ugnsformen lätt.
 2. Kontrollera om det finns ben i laxfilén och lägg den i pannan med skinnsidan nedåt. Krydda med salt och vitpeppar.
-3. Riv skalet från citronen och pressa ur saften. Hacka dillen och skiva den sköljda purjolöken. Blanda dem med gräddfil och ös blandningen över laxen.
+3. Riv skalet från citronen och pressa ur saften. Hacka dillen och skiva den sköljda purjolöken. Blanda dem med smetana och ös blandningen över laxen.
 4. Grädda i mitten av ugnen i ca 25–30 minuter, tills fisken precis är genomstekt och lätt splittras.
 5. Låt den vila några minuter och servera varm.
 
 ## Anteckningar
 
 - Tillagningstiden beror på filéns tjocklek. Ta ut laxen ur ugnen så fort den är genomstekt och saftig.
-- VHH-klassificeringen baseras på ingredienserna i receptet. Kontrollera förpackningsetiketterna för de produkter du använder.
+- lågkolhydrat-klassificeringen baseras på ingredienserna i receptet. Kontrollera förpackningsetiketterna för de produkter du använder.

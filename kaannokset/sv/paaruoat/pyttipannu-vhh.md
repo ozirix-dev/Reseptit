@@ -1,5 +1,5 @@
 ---
-title: VHH-pytt i panna med korv och grönsaker
+title: Lågkolhydratpytt i panna med korv och grönsaker
 recipe_id: vhh-pyttipannu
 url_slug: vhh-pyttipannu
 category: paaruoka
@@ -18,11 +18,11 @@ difficulty: lätt
 tags:
   - finsk husmanskost
   - lågkolhydrat
-  - kastrull
+  - pytt i panna
   - korv
 image:
   src: paaruoat/pyttipannu-vhh.webp
-  alt: Korv, zucchini och linguine i en stekpanna, toppad med ett stekt ägg
+  alt: Korv, zucchini och kålrot i en stekpanna, toppat med ett stekt ägg
   width: 1280
   height: 853
 ingredients:
@@ -34,7 +34,7 @@ ingredients:
     item: zucchini
   - amount: 200
     unit: g
-    item: avtar
+    item: kålrot
   - amount: 1
     unit: st
     item: lök
@@ -60,23 +60,23 @@ source_recipe: reseptit/paaruoat/pyttipannu-vhh.md
 translation_of: vhh-pyttipannu
 ---
 
-# VHH gryta med korv och grönsaker
+# Lågkolhydratpytt i panna med korv och grönsaker
 
-De välbekanta stekta bitarna av Pyttipannu är gjorda av zucchini, lantus och korv. Varje portion avslutas med ett stekt ägg.
+Den här pyttipannan görs med stekt zucchini, kålrot och korv. Varje portion toppas med ett stekt ägg.
 
 ## Beskrivning
 
-Istället för potatis används lagom mängd linser och zucchini. Lantu har mer kolhydrater än zucchini, så portionen passar för en bredare VHH-kost.
+Potatisen ersätts med en måttlig mängd kålrot och zucchini. Kålrot innehåller mer kolhydrater än zucchini, så rätten passar en mindre strikt lågkolhydratkost.
 
 ## Gör så här
 
-1. Skär lantun i små tärningar. Koka i saltat vatten i 5-7 minuter tills det mjuknar lite. Töm och torka ytan.
+1. Skär kålroten i små tärningar. Koka i saltat vatten i 5–7 minuter tills den mjuknat något. Häll av vattnet och torka ytan.
 2. Tärna korven och zucchinin. Hacka löken.
-3. Smält smöret i en stor stekpanna. Stek lantukuberna i 5 minuter tills de fått färg.
+3. Smält smöret i en stor stekpanna. Stek kålrotstärningarna i 5 minuter tills de får färg.
 4. Tillsätt korv och lök. Stek i några minuter och tillsätt sedan zucchinin. Fortsätt att steka tills grönsakerna är kokta men inte vattniga. Krydda med peppar och kontrollera saltet.
-5. Stek äggen i en annan panna och lägg dem ovanpå kastrullen. Avsluta med gräslök.
+5. Stek äggen i en annan panna och lägg dem ovanpå pyttipannan. Strö över gräslök.
 
 ## Anteckningar
 
 - Använd en lågkolhydratkorv och kontrollera dess förpackningsetiketter.
-– För en strängare kolhydratgräns passar en liten mängd selleri istället för ister.
+- För en striktare kolhydratgräns kan kålroten ersättas med en liten mängd selleri.

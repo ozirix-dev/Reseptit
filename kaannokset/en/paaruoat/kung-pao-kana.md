@@ -25,7 +25,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: chicken cutlet
+    item: boneless chicken thigh fillets
     note: in cubes
   - amount: 1
     unit: tbsp

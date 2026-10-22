@@ -78,3 +78,18 @@ test("image rebuild rejects traversal and external symlinks without touching sou
     assert.deepEqual(await readFile(outside), fixtureWebp);
   } finally { await rm(root, { recursive: true, force: true }); }
 });
+
+test("visually reviewed V1.4 replacements match the correction manifest", async () => {
+  const { createHash } = await import("node:crypto");
+  const repoDir = path.resolve(siteDir, "..");
+  const manifest = JSON.parse(await readFile(path.join(repoDir, "docs/reports/2026-10-22-v1-4-image-corrections.json"), "utf8"));
+  assert.equal(manifest.images.length, 15);
+  assert.equal(new Set(manifest.images.map((entry: {path: string}) => entry.path)).size, 15);
+  for (const entry of manifest.images) {
+    const bytes = await readFile(path.join(repoDir, entry.path));
+    assert.equal(createHash("sha256").update(bytes).digest("hex"), entry.sha256, entry.path);
+    assert.notEqual(entry.sha256, entry.old_sha256, entry.path);
+    assert.equal(bytes.toString("ascii", 8, 12), "WEBP", entry.path);
+    assert.deepEqual(await readFile(path.join(siteDir, "dist", entry.path)), bytes, `published ${entry.path}`);
+  }
+});

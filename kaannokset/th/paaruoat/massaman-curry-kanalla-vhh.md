@@ -39,7 +39,7 @@ ingredients:
     item: น้ำพริกแกงมัสมั่น
   - amount: 250
     unit: g
-    item: จากหัวผักกาด
+    item: เทอร์นิพ
     note: หั่นสี่เหลี่ยมลูกเต๋าแทนมันฝรั่ง
   - amount: 200
     unit: g
@@ -72,7 +72,7 @@ source_recipe: reseptit/paaruoat/massaman-curry-kanalla-vhh.md
 translation_of: massaman-curry-kanalla-vhh
 ---
 
-# แกงมัสมั่นไก่กับข้าวกะหล่ำดอก
+# แกงมัสมั่นไก่พร้อมข้าวกะหล่ำดอก
 
 แกงมัสมั่นรสเผ็ดเล็กน้อยได้ความเข้มข้นจากกะทิและถั่วลิสง หัวผักกาดและดอกกะหล่ำให้คาร์โบไฮเดรตต่ำกว่ามันฝรั่ง
 

@@ -50,11 +50,11 @@ translation_status:
 
 # Keto-joulutortut
 
-Keto-joulutortut on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Tähtitorttujen taikina valmistetaan mantelijauhosta, voista ja tuorejuustosta.
 
 ## Kuvaus
 
-Tämä gluteeniton leivonnainen valmistuu mantelijauhosta ja säilyttää tutun leivonnaisen maun vähähiilihydraattisessa muodossa.
+Keskelle lisätään luumuhilloa, jonka hiilihydraattipitoisuus riippuu tuotteesta.
 
 ## Valmistus
 

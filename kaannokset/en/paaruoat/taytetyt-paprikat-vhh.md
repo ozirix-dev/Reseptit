@@ -61,7 +61,7 @@ source_recipe: reseptit/paaruoat/taytetyt-paprikat-vhh.md
 translation_of: taytetyt-paprikat-vhh
 ---
 
-# Peppers stuffed with minced meat and cheese
+# Low-Carb Stuffed Peppers with Beef and Cheese
 
 Juicy stuffed peppers get a minced meat-tomato filling and a cheese frosting. The rice is left out and the filling is kept simple.
 
@@ -79,5 +79,5 @@ Fried minced meat, oregano and tomato make up the filling, which cooks inside th
 
 ## Notes
 
-- The amount of carbohydrates in peppers is medium, so this is a food suitable for a wider VHH diet.
+- The amount of carbohydrates in peppers is medium, so this is a food suitable for a wider low-carb diet.
 - If the filling looks watery, cook it in the pan for a few more minutes before filling.

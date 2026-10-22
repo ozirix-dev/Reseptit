@@ -46,13 +46,13 @@ source_recipe: reseptit/paaruoat/kukkakaaligratiini-pekonilla.md
 translation_of: kukkakaaligratiini-pekonilla
 ---
 
-# Bacon Blomkålsgratäng
+# Blomkålsgratäng med bacon
 
-Bacon Blomkålsgratäng är en välbekant finsk rätt i en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Blomkål och stekt bacon täcks med grädde och ost.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+I ugnen får ytan färg medan blomkålen ligger i den krämiga såsen.
 
 ## Gör så här
 

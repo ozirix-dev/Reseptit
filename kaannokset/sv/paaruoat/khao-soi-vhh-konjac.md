@@ -77,7 +77,7 @@ translation_of: khao-soi-vhh-konjac
 
 # Lågkolhydrat-Khao Soi med kyckling och konjaknudlar
 
-Khao soi är en nordthailändsk currynudelsoppa. Denna VHH-variant är gjord med konjaknudlar istället för traditionella nudlar. Rik kokosbuljong, kyckling och inlagd senapskål behåller den välbekanta smakkombinationen.
+Khao soi är en nordthailändsk currynudelsoppa. Denna lågkolhydrat-variant är gjord med konjaknudlar istället för traditionella nudlar. Rik kokosbuljong, kyckling och inlagd senapskål behåller den välbekanta smakkombinationen.
 
 ## Beskrivning
 

@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 1
     unit: kg
-    item: kycklingklubbor
+    item: hela kycklingklubbor med lår
     note: utan skinn, skivad
   - amount: 200
     unit: g

@@ -79,13 +79,13 @@ source_recipe: reseptit/paaruoat/lihapullat-kermakastikkeessa-vhh.md
 translation_of: lihapullat-kermakastikkeessa-vhh
 ---
 
-# Meatballs in cream sauce and cauliflower mash
+# Meatballs in Cream Sauce with Cauliflower Mash
 
 Succulent Finnish meatballs are accompanied by peppery cream sauce and buttery cauliflower mash.
 
 ## Description
 
-In this VHH version, the breadcrumbs have been replaced with a small amount of almond flour and the mashed potatoes with cauliflower. Season the salt sparingly, as the meat broth also affects the saltiness of the sauce.
+In this low-carb version, the breadcrumbs have been replaced with a small amount of almond flour and the mashed potatoes with cauliflower. Season the salt sparingly, as the meat broth also affects the saltiness of the sauce.
 
 ## Preparation
 

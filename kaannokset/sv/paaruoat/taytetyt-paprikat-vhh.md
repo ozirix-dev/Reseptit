@@ -1,5 +1,5 @@
 ---
-title: VHH-fyllda paprikor med köttfärs och ost
+title: lågkolhydrat-fyllda paprikor med köttfärs och ost
 recipe_id: taytetyt-paprikat-vhh
 url_slug: taytetyt-paprikat-vhh
 category: paaruoka
@@ -61,7 +61,7 @@ source_recipe: reseptit/paaruoat/taytetyt-paprikat-vhh.md
 translation_of: taytetyt-paprikat-vhh
 ---
 
-# Paprika fyllda med köttfärs och ost
+# lågkolhydrat-fyllda paprikor med köttfärs och ost
 
 Saftig fylld paprika får en köttfärs-tomatfyllning och en ostfrosting. Riset lämnas ute och fyllningen hålls enkel.
 
@@ -79,5 +79,5 @@ Stekt köttfärs, oregano och tomat utgör fyllningen, som tillagas inne i papri
 
 ## Anteckningar
 
-– Mängden kolhydrater i paprika är medelhög, så det här är ett livsmedel som lämpar sig för en bredare VHH-kost.
+– Mängden kolhydrater i paprika är medelhög, så det här är ett livsmedel som lämpar sig för en bredare lågkolhydrat-kost.
 – Om fyllningen ser vattnig ut, koka den i pannan ytterligare några minuter innan du fyller på.

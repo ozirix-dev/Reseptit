@@ -20,8 +20,7 @@ tags:
   - riisi
 image:
   src: paaruoat/paella-valenciana.webp
-  alt: Valencialainen paella sahramiriisillä, kanalla, jäniksellä ja vihreillä
-    pavuilla
+  alt: Paella sahramiriisillä, kanalla ja vihreillä pavuilla
   width: 1279
   height: 853
 ingredients:

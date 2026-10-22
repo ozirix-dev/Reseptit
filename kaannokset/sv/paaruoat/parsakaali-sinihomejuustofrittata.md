@@ -60,7 +60,7 @@ source_recipe: reseptit/paaruoat/parsakaali-sinihomejuustofrittata.md
 translation_of: parsakaali-sinihomejuustofrittata
 ---
 
-# Broccoli och ädelostfrittata
+# Broccoli- och ädelostfrittata
 
 En mjuk, fyllig bakad omelett kombinerar broccoli, ägg och en stark ädelostfrittata.
 
@@ -71,12 +71,13 @@ Frittata passar till lunch eller en lätt middag. Den kan bakas i en rund ugnss�
 ## Gör så här
 
 1. Värm ugnen till 200 grader. Smörj en ugnsform på 20 x 25 cm eller använd en ugnssäker långpanna.
-2. Smält smöret i en kastrull. Fräs löken en stund och tillsätt broccolibopparna. Fräs ca 3 minuter tills broccolin tar lite färg.
-3. Överför grönsakerna till pannan. Vispa äggen lätt och blanda i vispgrädde, smulad ost och svartpeppar. Smaka av innan du tillsätter salt.
+2. Smält smöret i en kastrull. Fräs löken en stund och tillsätt broccolibuketterna. Fräs ca 3 minuter tills broccolin tar lite färg.
+3. Överför grönsakerna till pannan. Vispa äggen lätt och blanda i vispgrädde, smulad ost och svartpeppar. Salta försiktigt eftersom osten är salt.
 4. Häll äggblandningen över broccolin. Grädda i ca 20-25 minuter tills mitten stelnat och ytan är gyllenbrun.
 5. Låt frittatan stelna några minuter innan den skärs upp. Servera som den är eller med en grönsallad.
 
 ## Anteckningar
 
-– Sältan på ädelost varierar, så tillsätt salt först efter provsmakning.
-- VHH-klassificeringen baseras på ingredienserna i receptet. Kontrollera förpackningsetiketterna för de produkter du använder.
+
+- Sältan varierar mellan blåmögelostar. Stek en liten provbit helt färdig om du vill kontrollera äggblandningens smak.
+- Klassningen som lågkolhydratkost bygger på ingredienserna. Kontrollera förpackningarna på produkterna du använder.

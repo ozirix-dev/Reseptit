@@ -25,7 +25,7 @@ image:
 ingredients:
   - amount: 700
     unit: g
-    item: front loin of beef
+    item: beef chuck
     note: in cubes
   - amount: 2
     unit: l

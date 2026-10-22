@@ -72,7 +72,7 @@ source_recipe: reseptit/paaruoat/kermainen-lohipata.md
 translation_of: kermainen-lohipata
 ---
 
-# Creamy salmon stew
+# Creamy Salmon Casserole
 
 Creamy salmon stew is an easy and filling everyday main dish.
 
@@ -93,3 +93,4 @@ Salmon, spinach and soft cream sauce cook in the oven at the same time. Serve th
 ## Notes
 
 - Goes well with, for example, fried zucchini or mashed cauliflower.
+- Nutrition values are approximate estimates and depend on the products and portion size used.

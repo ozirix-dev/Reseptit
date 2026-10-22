@@ -49,7 +49,7 @@ Poista kurkun vetinen siemenosa, jotta salaatti pysyy napakkana. Chiliä voi lis
 ## Valmistus
 
 1. Halkaise kurkku ja kaavi siemenosa pois. Leikkaa ohuiksi pitkiksi suikaleiksi.
-2. Keitä pavut suolatussa vedessä 2 minuuttia ja jäähdytä. Puolita tomaatit.
+2. Keitä tuoreet vihreät pavut suolatussa vedessä 5–7 minuuttia, kunnes ne ovat kypsiä, ja jäähdytä. Noudata pakastepavuille pakkauksen kypsennysohjetta. Puolita tomaatit.
 3. Murskaa valkosipuli ja chili morttelissa. Lisää puolet maapähkinöistä ja rouhi karkeaksi.
 4. Lisää limettimehu, kalakastike ja erytritoli. Sekoita kastike ja maista.
 5. Lisää kurkku, pavut ja tomaatit. Kääntele varovasti kastikkeessa.
@@ -58,3 +58,4 @@ Poista kurkun vetinen siemenosa, jotta salaatti pysyy napakkana. Chiliä voi lis
 ## Muistiinpanot
 
 - Tämä on VHH-ystävällinen som tam -henkinen muunnelma. Kurkku ei vastaa perinteisen vihreän papaijan makua tai rakennetta.
+- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.

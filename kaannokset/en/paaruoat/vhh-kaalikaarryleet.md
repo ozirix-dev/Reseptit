@@ -31,7 +31,7 @@ ingredients:
     item: ground beef
   - amount: 250
     unit: g
-    item: cauliflower mash
+    item: finely chopped cauliflower
   - amount: 1
     unit: ""
     item: onion
@@ -55,13 +55,13 @@ source_recipe: reseptit/paaruoat/vhh-kaalikaarryleet.md
 translation_of: vhh-kaalikaarryleet
 ---
 
-# VHH cabbage rolls
+# Low-Carb Cabbage Rolls
 
-VHH cabbage rolls are a familiar Finnish food in a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+Cabbage leaves are wrapped around a filling of beef mince and finely chopped cauliflower.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+This version of cabbage rolls is made without rice.
 
 ## Preparation
 

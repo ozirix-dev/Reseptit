@@ -76,7 +76,7 @@ translation_of: khao-man-gai-vhh
 
 # Low-carb khao man gai – Thai chicken and cauliflower rice
 
-This VHH variation retains Khao man gai's gently cooked chicken and ginger dipping sauce. Warm cauliflower rice is served instead of the traditional seasoned rice.
+This low-carb variation retains Khao man gai's gently cooked chicken and ginger dipping sauce. Warm cauliflower rice is served instead of the traditional seasoned rice.
 
 ## Description
 
@@ -92,5 +92,5 @@ The cooking broth makes a light, clear broth for serving. The ginger sauce is sa
 
 ## Notes
 
-- In the VHH variant, the traditional seasoned rice is replaced by cauliflower rice. The compositions of the sauces vary.
+- In the low-carb variant, the traditional seasoned rice is replaced by cauliflower rice. The compositions of the sauces vary.
 - The nutritional values ​​are indicative.

@@ -20,8 +20,7 @@ tags:
   - rice
 image:
   src: paaruoat/hyderabadi-kanabiryani.webp
-  alt: Hyderabadi chicken biryani layered with cooked basmati rice, fried onions
-    and herbs
+  alt: Hyderabadi chicken biryani layered with cooked basmati rice, fried onions and herbs
   width: 1280
   height: 853
 ingredients:
@@ -65,7 +64,7 @@ ingredients:
     item: cinnamon stick
   - amount: 4
     unit: piece
-    item: cardamom house
+    item: cardamom pods
   - amount: 1
     unit: g
     item: saffron
@@ -95,9 +94,9 @@ Spicy chicken biryani is cooked in layers of seasoned chicken and fragrant basma
 
 1. Rinse the rice and soak in cold water for 20 minutes. Drain.
 2. Mix the chicken with yogurt, garam masala, cumin, coriander, turmeric and salt. Leave to season for 20 minutes.
-3. Brown the onions in oil until golden brown. Set half aside. Add cinnamon and cardamom to the pot.
-4. Add the chicken and fry the surfaces closed. Cover and cook on low heat for 15 minutes.
-5. Cook the rice in salted water with the cinnamon stick and cardamom for 5-6 minutes until it is half cooked. Drain.
+3. Brown the onions in oil until golden. Set half aside. Add the whole cinnamon stick and all the cardamom pods to the pot.
+4. Add the chicken and brown the surface. Cover and cook over a low heat for 15 minutes.
+5. Cook the rice in salted water for 5–6 minutes until partly cooked. Drain.
 6. Spread the rice over the chicken. Add saffron milk, ghee, fried onion, mint and coriander.
 7. Close the lid tightly and cook on very low heat for 20–25 minutes. Leave for 10 minutes and gently fluff.
 

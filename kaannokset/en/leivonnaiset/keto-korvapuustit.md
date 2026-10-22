@@ -19,7 +19,7 @@ tags:
   - low carb
 image:
   src: leivonnaiset/keto-korvapuustit.webp
-  alt: Ear buds flavored with cinnamon and sugar-free sweetener on a platter
+  alt: Cinnamon rolls on a platter
   width: 1280
   height: 853
 ingredients:
@@ -49,13 +49,13 @@ source_recipe: reseptit/leivonnaiset/keto-korvapuustit.md
 translation_of: keto-korvapuustit
 ---
 
-# Keto earplugs
+# Keto Cinnamon Rolls
 
-Keto korvapuusti is a familiar Finnish food as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+A cinnamon filling is rolled inside a dough made with almond flour, mozzarella and cream cheese.
 
 ## Description
 
-This gluten-free pastry is made from almond flour and retains the familiar pastry taste in a low-carb form.
+Erythritol sweetens the butter and cinnamon filling.
 
 ## Preparation
 

@@ -56,7 +56,7 @@ Huuhtele nuudelit hyvin ja kuivapaista ennen wokkiin lisäämistä. Näin ylimä
 3. Kuumenna puolet öljystä wokissa. Paista tofu kullanruskeaksi ja siirrä sivuun.
 4. Lisää katkaravut ja paista lähes kypsiksi. Siirrä ne sivuun, lisää loppu öljy ja paista kananmunat sekoittaen.
 5. Lisää nuudelit ja kastike. Kääntele kuumalla pannulla pari minuuttia.
-6. Lisää tofu, idut ja puolet maapähkinöistä. Paista minuutti.
+6. Palauta katkaravut ja tofu pannulle. Lisää idut ja puolet maapähkinöistä. Paista noin minuutti ja jatka tarvittaessa, kunnes katkaravut ovat täysin kypsiä.
 7. Tarjoa kevätsipulin, korianterin, lopun maapähkinän ja limelohkojen kanssa.
 
 ## Muistiinpanot

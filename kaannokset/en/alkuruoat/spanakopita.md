@@ -68,7 +68,7 @@ Spinach, feta, dill and spring onion are hidden inside the crispy phyllo layers.
 
 ## Preparation
 
-1. Heat the oven to 190 degrees. Chop the spinach quickly or fry it in a pan. Cool and carefully squeeze out the liquid.
+1. Heat the oven to 190 degrees. Briefly blanch the spinach or wilt it in a frying pan. Cool and squeeze out the liquid thoroughly.
 2. Mix spinach, spring onion, feta, eggs, dill and pepper.
 3. Oil the baking dish. Place four filo pastry sheets one at a time in the pan, brush each one lightly with oil.
 4. Spread the filling in the pan. Cover with the remaining filo sheets, grease the layers with oil and fold the edges in.

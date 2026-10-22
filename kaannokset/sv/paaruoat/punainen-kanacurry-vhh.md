@@ -1,5 +1,5 @@
 ---
-title: VHH röd kycklingcurry med blomkålsris
+title: lågkolhydrat röd kycklingcurry med blomkålsris
 recipe_id: punainen-kanacurry-vhh
 url_slug: punainen-kanacurry-vhh
 category: paaruoka
@@ -65,7 +65,7 @@ ingredients:
     item: blomkålsris
   - amount: null
     unit: ""
-    item: kalkblock
+    item: limeklyftor
     note: för servering
 translation_languages: []
 translation_status: {}
@@ -74,7 +74,7 @@ source_recipe: reseptit/paaruoat/punainen-kanacurry-vhh.md
 translation_of: punainen-kanacurry-vhh
 ---
 
-# VHH röd kycklingcurry med blomkålsris
+# lågkolhydrat röd kycklingcurry med blomkålsris
 
 Röd currypasta, kokosmjölk och thaibasilika bildar en rik sås för kyckling och bambuskott. Blomkålsris håller portionen låg i kolhydrater.
 
@@ -94,3 +94,4 @@ Hettan och sockerhalten i currypastor varierar. Tillsätt först sparsamt med pa
 ## Anteckningar
 
 – Blomkålsris ersätter vanligt ris. Kontrollera förpackningsetiketterna för currypasta och kokosmjölk.
+- Näringsvärdena är ungefärliga uppskattningar och påverkas av produkter och portionsstorlek.

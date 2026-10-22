@@ -93,5 +93,5 @@ Lime juice is added at the end to preserve its fresh taste. You can leave out th
 
 ## Notes
 
-- Dispense the fish fondant according to the instructions on the package; the salinity of the funds varies.
+- Dispense the fish stock concentrate according to the instructions on the package; the saltiness of stock concentrates varies.
 - The nutritional values ​​do not contain rice or coconut milk and are indicative.

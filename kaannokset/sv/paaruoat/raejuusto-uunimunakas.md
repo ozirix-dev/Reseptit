@@ -21,7 +21,7 @@ tags:
   - lågkolhydrat
 image:
   src: paaruoat/raejuusto-uunimunakas.webp
-  alt: Mjukstekt kesougnsomelett med färsk gräslök på toppen
+  alt: Mjukt gräddad ugnsomelett med keso och färsk gräslök
   width: 1280
   height: 853
 ingredients:
@@ -55,7 +55,7 @@ source_recipe: reseptit/paaruoat/raejuusto-uunimunakas.md
 translation_of: raejuusto-uunimunakas
 ---
 
-# Mjuk ugnsomelett med keso
+# Ugnsomelett med keso
 
 Den mjukgräddade omeletten får rikedom från len mosad keso.
 
@@ -68,7 +68,7 @@ En liten förändring till den traditionella bakade omeletten: kesoen mosas och 
 1. Värm varmluftsugnen till 125 grader eller vanlig ugn till 150 grader. Smörj en ugnsform på 22 cm.
 2. Purea kesoen tills den är slät. Bryt lätt konsistensen på äggen i en skål utan att vispa blandningen tills den blir skum. Blanda i matlagningsgrädde, mosad keso, salt och en nypa peppar.
 3. Häll blandningen i pannan. Placera formen på en djup bakplåt och häll hett vatten runt formen.
-4. Tillaga i nedre delen av ugnen i 45–55 minuter. Rör omeletten försiktigt i cirka 15 och 30 minuter. Ta ut pannan ur ugnen när blandningen stelnat men fortfarande är mjuk.
+4. Tillaga i nedre delen av ugnen i 45–55 minuter. Rör försiktigt om i omeletten när cirka 15 respektive 30 minuter har gått. Ta ut formen när smeten har stelnat men fortfarande är mjuk.
 5. Om du vill, hacka gräslök på toppen och servera varm.
 
 ## Anteckningar

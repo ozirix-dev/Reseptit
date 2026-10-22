@@ -61,7 +61,7 @@ ingredients:
     note: i skivor
   - amount: 100
     unit: g
-    item: tjockna
+    item: pak choi
     note: valfritt
 source_language: fi
 source_recipe: reseptit/paaruoat/dan-dan-nuudelit.md
@@ -78,7 +78,7 @@ Nudlar i Sichuan-stil serveras med fläsksås kryddad med sesam, chili och soja.
 
 ## Tillagning
 
-1. Koka nudlarna enligt anvisningarna på förpackningen. Tillsätt den förtjockade fonden i kokvattnet den sista minuten om du använder den. Spara en deciliter kokande vatten.
+1. Koka nudlarna enligt förpackningen. Tillsätt pak choi i kokvattnet den sista minuten om du använder det. Spara en deciliter kokvatten.
 2. Bryn köttfärsen i olja. Tillsätt vitlök och soja och fräs tills det är genomstekt.
 3. Blanda sesampasta, chiliolja, vinäger och kokande vatten i en skål för att få en slät sås.
 4. Dela såsen i skålar. Tillsätt nudlarna och malet fläsk.

@@ -52,18 +52,18 @@ source_recipe: reseptit/paaruoat/munakoiso-jauhelihavuoka-vhh.md
 translation_of: munakoiso-jauhelihavuoka-vhh
 ---
 
-# Aubergine-köttfärsgryta
+# Aubergine- och köttfärsgratäng
 
-Auberginefärsgryta är en välbekant finsk rätt som en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Aubergineskivor och en tomatsås med nötfärs varvas i en ugnsform.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Oregano smaksätter såsen och riven ost läggs överst.
 
 ## Gör så här
 
 1. Skiva auberginerna, strö salt på ytan och låt dem dra i 15 minuter. Torka skivorna.
-2. Bryn köttfärsen och löken. Tillsätt tomatpuré och kryddor, låt sjuda i 10 minuter.
+2. Bryn köttfärsen och löken. Tillsätt krossade tomater och kryddor, låt sjuda i 10 minuter.
 3. Varva aubergine och sås i pannan. Strö ost ovanpå.
 4. Grädda i 200 °C i ca 30 minuter.
 

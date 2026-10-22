@@ -12,7 +12,7 @@ main_ingredient:
   - tomaatti
 cooking_method:
   - liesi
-  - grilli
+  - paistinpannu
 difficulty: keskitaso
 tags:
   - intialainen
@@ -79,7 +79,7 @@ translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
 ---
 
 # Butter chicken – voikana tomaatti-kermakastikkeessa

@@ -25,7 +25,7 @@ tags:
   - baking
 image:
   src: leivonnaiset/keto-kauralesesampylat.webp
-  alt: Keto oatmeal rolls in a basket next to tea and a knife
+  alt: Oat-bran rolls in a basket beside a cup of tea and a knife
   width: 2200
   height: 1053
 ingredients:
@@ -68,20 +68,20 @@ source_recipe: reseptit/leivonnaiset/keto-kauralesesampylat.md
 translation_of: keto-kauralesesampylat
 ---
 
-# Keto oat-bran rolls
+# Keto Oat-Bran Rolls
 
-The soft, protein-containing rolls combine the raw cottage cheese base and the grainy taste of oat bran with almond flour and psyllium. The recipe makes eight small rolls.
+Cottage cheese, oat bran and almond flour form the dough for these rolls.
 
 ## Description
 
-Oat bran is used in moderation for taste. Oat flakes, oat flour, graham flour and sweetener are left out so that the amount of carbohydrates remains clearly lower than the original oat buns.
+Psyllium binds the soft dough, which rests before shaping.
 
 ## Preparation
 
 1. Heat the oven to 200 degrees and line a baking sheet with baking paper.
 2. Melt the butter and let it cool for a while. Mix almond flour, oat bran, psyllium, baking powder and salt in a bowl.
 3. Puree the cottage cheese and eggs until smooth with a stick blender or in a blender. Mix in the cream and cooled melted butter.
-4. Pour the wet ingredients into the dry ingredients mixture and mix until smooth. Let the dough rise for 10 minutes.
+4. Pour the wet ingredients into the dry ingredients mixture and mix until smooth. Let the dough rest and swell for 10 minutes.
 5. Divide the dough into eight parts and shape into rolls with wet hands. If you want, add sesame seeds on top.
 6. Bake on the medium of the oven for 20–25 minutes, until the surface has acquired color and the rolls feel cooked.
 7. Allow to cool completely before slicing, so the psyllium-bound insides have time to settle.
@@ -91,5 +91,3 @@ Oat bran is used in moderation for taste. Oat flakes, oat flour, graham flour an
 - The estimate is about 3.5 g of net carbohydrates, 9 g of protein and 12 g of fat per roll. The estimate is calculated and varies especially depending on the brand of oat bran, almond flour and cottage cheese; check the information on the product packaging.
 - Oat bran is not carbohydrate-free, so the recipe only contains a small amount of oats. Dose the rolls as part of your daily carbohydrate intake.
 - The dough is soft and sticky due to the swelling of the psyllium. If the mixture is still too loose to shape after 10 minutes, add psyllium a teaspoon at a time and let it swell for a few minutes.
-- The instructions combine the cottage cheese base, mixing and puffing of the dough from the previous oat bran-almond-cottage cheese rolls and Ninja oat rolls. Carbohydrate-rich flours and flakes are excluded.
-- The instruction is a combined version; baking time and dough moisture control may require a slight change depending on the brand of ingredients.

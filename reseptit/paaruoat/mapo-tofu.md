@@ -19,8 +19,7 @@ tags:
   - sianliha
 image:
   src: paaruoat/mapo-tofu.webp
-  alt: Mapo tofu -pannu chilillä, jauhelihalla, silkkisellä tofulla ja
-    kevätsipulilla
+  alt: Mapo tofu -pannu, jossa on tofukuutioita, jauhelihaa, chiliä ja kevätsipulia
   width: 1279
   height: 853
 ingredients:

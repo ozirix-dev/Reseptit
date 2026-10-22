@@ -1,5 +1,5 @@
 ---
-title: VHH yellow chicken curry with cauliflower
+title: low-carb yellow chicken curry with cauliflower
 recipe_id: keltainen-kanacurry-vhh
 url_slug: keltainen-kanacurry-vhh
 category: paaruoka
@@ -72,9 +72,9 @@ source_recipe: reseptit/paaruoat/keltainen-kanacurry-vhh.md
 translation_of: keltainen-kanacurry-vhh
 ---
 
-# VHH yellow chicken curry with cauliflower
+# low-carb yellow chicken curry with cauliflower
 
-Gaeng garee or yellow curry is a mildly spicy coconut curry. In this VHH version, cauliflower is used instead of potato, which absorbs the aromatic sauce.
+Gaeng garee or yellow curry is a mildly spicy coconut curry. In this low-carb version, cauliflower is used instead of potato, which absorbs the aromatic sauce.
 
 ## Description
 
@@ -91,3 +91,4 @@ Cauliflower cooks soft in curry but keeps its shape. If you like a firmer textur
 ## Notes
 
 - Cauliflower replaces the potato that is often used in yellow curries. Check the carbs in curry paste and coconut milk.
+- Nutrition values are approximate estimates and depend on the products and portion size used.

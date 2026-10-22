@@ -82,7 +82,7 @@ Tamil Nadus Chettinad-kyckling är känd för sina rostade hela kryddor, svartpe
 
 ## Tillagning
 
-1. Rosta paprika, koriander och fänkålsfrö och kanel i en torr panna tills de doftar. Kyl och mal.
+1. Rosta svartpepparkorn, korianderfrön, fänkålsfrön och kanel i en torr panna tills de doftar. Låt svalna och mal.
 2. Hetta upp oljan i en gryta. Fräs löken. Tillsätt hackad vitlök och ingefära.
 3. Lägg i kycklingen och bryn lätt på alla sidor.
 4. Blanda i kryddblandningen och currybladen. Tillsätt tomater och salt.

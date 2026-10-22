@@ -21,13 +21,13 @@ tags:
   - vardagsmat
 image:
   src: paaruoat/nakkikastike-kukkakaalimuusi.webp
-  alt: Nakkisås i krämig sås med blomkålspuré
+  alt: Korv i gräddsås med blomkålsmos
   width: 1280
   height: 853
 ingredients:
   - amount: 400
     unit: g
-    item: prydnadssaker
+    item: varmkorv
   - amount: 1
     unit: st
     item: liten lök
@@ -58,7 +58,7 @@ source_recipe: reseptit/paaruoat/nakkikastike-kukkakaalimuusi.md
 translation_of: nakkikastike-kukkakaalimuusi
 ---
 
-# Nakkisås och blomkålspuré
+# Korvsås med blomkålsmos
 
 Snabb Nakkikastike tillagas i panna tills den är krämig och istället för potatismos serveras blomkålsmos avslutat med smör.
 
@@ -68,12 +68,12 @@ Den välbekanta vardagsmaten passar till en lågkolhydratkost när såsen tjockn
 
 ## Gör så här
 
-1. Hacka valnötterna och hacka löken. Bryn korv i en panna och tillsätt löken tills den är mjuk.
+1. Skär korvarna i bitar och finhacka löken. Bryn korven i en stekpanna och tillsätt sedan löken och låt den mjukna.
 2. Häll köttbuljongen och vispgrädden i pannan. Blanda i senap och svartpeppar. Sjud försiktigt i 8-10 minuter tills såsen tjocknar något. Smaka av innan du tillsätter salt.
 3. Hacka blomkålen och koka i saltat vatten tills den är mjuk. Häll av försiktigt och låt överflödig ånga avdunsta.
 4. Purea blomkålen med smör. Smaka av med salt och servera med nakkisås.
 
 ## Anteckningar
 
-– Välj så lågkolhydratsnack som möjligt och kolla ingredienslistan.
+– Välj så kolhydratfattig korv som möjligt och kolla ingredienslistan.
 – Vill du att såsen ska vara tjockare, låt den koka lite längre. Använd inte vetemjöl.

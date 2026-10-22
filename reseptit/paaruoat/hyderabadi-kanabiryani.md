@@ -96,9 +96,9 @@ Mausteinen kanabiryani kypsyy maustetun broilerin ja tuoksuvan basmatiriisin ker
 
 1. Huuhtele riisi ja liota kylmässä vedessä 20 minuuttia. Valuta.
 2. Sekoita broileri jogurtin, garam masalan, juustokuminan, korianterin, kurkuman ja suolan kanssa. Anna maustua 20 minuuttia.
-3. Ruskista sipulit öljyssä kullanruskeiksi. Nosta puolet sivuun. Lisää kattilaan kaneli ja kardemumma.
-4. Lisää broileri ja paista pinnat kiinni. Peitä ja kypsennä miedolla lämmöllä 15 minuuttia.
-5. Keitä riisiä suolatussa vedessä kanelitangon ja kardemumman kanssa 5–6 minuuttia, kunnes se on puolikypsää. Valuta.
+3. Ruskista sipulit öljyssä kullanruskeiksi. Nosta puolet sivuun. Lisää kattilaan koko kanelitanko ja kaikki kardemummakodat.
+4. Lisää broileri ja ruskista pinta. Peitä ja kypsennä miedolla lämmöllä 15 minuuttia.
+5. Keitä riisiä suolatussa vedessä 5–6 minuuttia, kunnes se on puolikypsää. Valuta.
 6. Levitä riisi broilerin päälle. Lisää sahramimaito, ghee, paistettu sipuli, minttu ja korianteri.
 7. Sulje kansi tiiviisti ja kypsennä hyvin miedolla lämmöllä 20–25 minuuttia. Anna vetäytyä 10 minuuttia ja kuohkeuta varovasti.
 

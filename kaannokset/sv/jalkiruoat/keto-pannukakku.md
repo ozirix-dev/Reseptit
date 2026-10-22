@@ -49,13 +49,13 @@ source_recipe: reseptit/jalkiruoat/keto-pannukakku.md
 translation_of: keto-pannukakku
 ---
 
-# Keto pannkaka
+# Keto-pannkaka
 
-Keto pannkaka är en välbekant finsk mat som en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Ugnspannkakans smet görs av ägg, grädde, färskost och mandelmjöl.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Psyllium binder smeten utan vetemjöl.
 
 ## Gör så här
 

@@ -81,7 +81,7 @@ Koshari samlar ris, linser och pasta i samma skål. Kryddig tomatsås, vitlöksv
 
 1. Skölj linserna och koka dem i vatten tills de är kokta men mjuka, ca 20–25 minuter. Dränera.
 2. Koka riset tills det är kokt. Koka makaronerna i en separat gryta enligt anvisningarna på förpackningen och låt rinna av.
-3. Fräs en vitlöksklyfta i en liten gryta i en skvätt olja. Tillsätt tomatpuré, spiskummin, salt och citronsaft. Sjud i 15 minuter.
+3. Fräs en vitlöksklyfta i en liten gryta i en skvätt olja. Tillsätt krossade tomater, spiskummin, salt och citronsaft. Sjud i 15 minuter.
 4. Blanda resten av vitlöken med vinägern. Stek lökringar inslagna i majsstärkelse i olja tills de är knapriga. Låt rinna av med hushållspapper.
 5. Lägg ris, linser och makaroner i skålar. Häll tomatsås och vitlöksvinäger ovanpå. Avsluta med krispig lök.
 

@@ -23,7 +23,7 @@ image:
 ingredients:
   - amount: 800
     unit: g
-    item: pork tenderloin
+    item: pork loin
     note: cut into long bars
   - amount: 3
     unit: tbsp
@@ -39,7 +39,7 @@ ingredients:
     item: rice vinegar
   - amount: 1
     unit: tsp
-    item: Chinese spice
+    item: Chinese five-spice powder
   - amount: 1
     unit: piece
     item: a clove of garlic
@@ -59,15 +59,15 @@ translation_of: char-siu
 
 # Char siu – Cantonese barbecue pork
 
-Cantonese-style sweet and salty pork gets a red-brown surface from soy, honey and thyme.
+Cantonese-style sweet and salty pork gets a red-brown surface from soy, honey and Chinese five-spice.
 
 ## Description
 
-Cantonese-style sweet and salty pork gets a red-brown surface from soy, honey and thyme.
+Cantonese-style sweet and salty pork gets a red-brown surface from soy, honey and Chinese five-spice.
 
 ## Preparation
 
-1. Mix hoisin sauce, soy sauce, honey, rice wine vinegar, thyme and garlic. Save a tablespoon of marinade.
+1. Mix hoisin sauce, soy sauce, honey, rice vinegar, Chinese five-spice powder and garlic. Reserve a tablespoon of marinade.
 2. Turn the pork in the marinade and let it marinate in the fridge for at least 30 minutes.
 3. Heat the oven to 220 degrees. Put the meat on the rack on the baking sheet and bake for 25–35 minutes. Turn once and baste with marinade.
 4. Brush the surface with honey and bake for another 3–5 minutes until the surface is shiny. Make sure the internal temperature is at least 70 °C.

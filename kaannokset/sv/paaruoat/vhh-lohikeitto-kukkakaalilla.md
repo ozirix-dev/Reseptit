@@ -1,5 +1,5 @@
 ---
-title: Krämig VHH-laxsoppa med blomkål
+title: Krämig lågkolhydrat-laxsoppa med blomkål
 recipe_id: vhh-lohikeitto-kukkakaalilla
 url_slug: vhh-lohikeitto-kukkakaalilla
 category: paaruoka
@@ -69,7 +69,7 @@ source_recipe: reseptit/paaruoat/vhh-lohikeitto-kukkakaalilla.md
 translation_of: vhh-lohikeitto-kukkakaalilla
 ---
 
-# Krämig VHH laxsoppa med blomkål
+# Krämig lågkolhydrat-laxsoppa med blomkål
 
 I denna lågkolhydratversion av finsk krämig laxsoppa ersätts potatis med blomkål. Fiskfond, vispgrädde och dill håller smaken välbekant full.
 
@@ -83,7 +83,7 @@ Buljongen kryddas enligt doseringsanvisningen för fiskfonden på förpackningen
 2. Hetta upp smöret i en kastrull efter smak. Fräs löken och purjolöken i några minuter tills de är mjuka.
 3. Tillsätt vatten, fiskfond och hela svartpepparkorn. Koka upp.
 4. Tillsätt blomkålen och koka sakta i ca 6-8 minuter tills den precis är mjuk.
-5. Skär laxen i stora tärningar och lägg i grytan. Häll i den vispade grädden och låt puttra på svag värme i några minuter tills laxen är genomstekt.
+5. Skär laxen i stora tärningar och lägg i grytan. Häll i vispgrädden och låt puttra på svag värme i några minuter tills laxen är genomstekt.
 6. Smaka av och tillsätt salt om det behövs. Rör ner den hackade dillen och servera genast.
 
 ## Anteckningar

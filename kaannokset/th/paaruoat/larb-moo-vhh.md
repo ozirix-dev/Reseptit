@@ -1,5 +1,5 @@
 ---
-title: ลาบหมู – ยำหมูยอแบบไทยๆ
+title: ลาบหมูสมุนไพรรสเผ็ด
 recipe_id: larb-moo-vhh
 url_slug: larb-moo-vhh
 category: paaruoka
@@ -74,7 +74,7 @@ source_recipe: reseptit/paaruoat/larb-moo-vhh.md
 translation_of: larb-moo-vhh
 ---
 
-# ลาบหมู – ยำหมูยอ
+# ลาบหมูสมุนไพรรสเผ็ด
 
 สลัดเนื้อสับสไตล์อีสานอุ่น ๆ มีรสชาติของมะนาว น้ำปลา พริก และสมุนไพรสด เสิร์ฟพร้อมกะหล่ำปลีและแตงกวา
 

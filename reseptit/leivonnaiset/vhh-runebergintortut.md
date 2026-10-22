@@ -19,8 +19,7 @@ tags:
   - VHH
 image:
   src: leivonnaiset/vhh-runebergintortut.webp
-  alt: Pieniä Runebergin torttuja, joiden päällä on vadelmahilloa ja valkoinen
-    sokeriton kuorruterengas
+  alt: Pieniä Runebergin torttuja, joiden päällä on tuore vadelma
   width: 1280
   height: 853
 ingredients:
@@ -60,11 +59,11 @@ translation_status:
 
 # VHH-Runebergintortut
 
-VHH-Runebergintortut on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Runebergintorttujen mantelijauhotaikinassa on rahkaa ja kardemummaa.
 
 ## Kuvaus
 
-Tämä gluteeniton leivonnainen valmistuu mantelijauhosta ja säilyttää tutun leivonnaisen maun vähähiilihydraattisessa muodossa.
+Valmiit tortut viimeistellään vadelmalla.
 
 ## Valmistus
 

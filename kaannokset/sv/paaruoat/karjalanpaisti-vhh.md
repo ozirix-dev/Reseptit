@@ -66,7 +66,7 @@ source_recipe: reseptit/paaruoat/karjalanpaisti-vhh.md
 translation_of: karjalanpaisti-vhh
 ---
 
-# Karelsk stek och rostad kål
+# Karelsk gryta med rostad vitkål
 
 Karelsk stek som tillagas långsamt i ugnen är låg i kolhydrater som sådan. Rostad kål ger ett mättande tillskott till tallriken istället för potatis.
 

@@ -75,11 +75,11 @@ status: published
 
 # Keto-kauralesesämpylät
 
-Pehmeät, proteiinia sisältävät sämpylät yhdistävät raakileiden raejuustopohjan ja kauraleseiden viljaisen maun mantelijauhoon sekä psylliumiin. Reseptistä tulee kahdeksan pientä sämpylää.
+Raejuusto, kauraleseet ja mantelijauho muodostavat näiden sämpylöiden taikinan.
 
 ## Kuvaus
 
-Kauraleseitä käytetään maltillisesti maun vuoksi. Kaurahiutaleet, kaurajauho, grahamjauho ja makeutus jätetään pois, jotta hiilihydraattimäärä pysyy selvästi alkuperäisiä kaurasämpylöitä pienempänä.
+Psyllium sitoo pehmeää taikinaa, joka saa turvota ennen muotoilua.
 
 ## Valmistus
 
@@ -96,5 +96,3 @@ Kauraleseitä käytetään maltillisesti maun vuoksi. Kaurahiutaleet, kaurajauho
 - Arvio on noin 3,5 g nettohiilihydraatteja, 9 g proteiinia ja 12 g rasvaa sämpylää kohti. Arvio on laskennallinen ja vaihtelee etenkin kauraleseiden, mantelijauhon ja raejuuston tuotemerkin mukaan; tarkista tuotepakkausten tiedot.
 - Kauralese ei ole hiilihydraatiton, joten resepti sisältää kauraa vain pienen määrän. Annostele sämpylät osaksi omaa päivän hiilihydraattimäärää.
 - Taikina on pehmeä ja tahmea psylliumin turpoamisen vuoksi. Jos seos on vielä 10 minuutin jälkeen liian löysä muotoiltavaksi, lisää psylliumia teelusikallinen kerrallaan ja anna turvota muutama minuutti.
-- Ohje yhdistää aiempien kauralese-manteli-raejuustosämpylöiden sekä Ninja-kaurasämpylöiden raejuustopohjan, sekoittamisen ja taikinan turvotuksen. Hiilihydraattipitoiset jauhot ja hiutaleet on jätetty pois.
-- Ohje on yhdistelmäversio; paistoaika ja taikinan kosteuden säätö voivat vaatia pientä muutosta raaka-aineiden tuotemerkin mukaan.

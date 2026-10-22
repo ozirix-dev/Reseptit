@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 700
     unit: g
-    item: rostbiff
+    item: nötstek i grytbitar (rå)
     note: ca 3 cm kuber
   - amount: 150
     unit: g
@@ -53,7 +53,7 @@ ingredients:
     note: gärna rökt paprika eller sött paprikapulver
   - amount: 1.5
     unit: msk
-    item: smör
+    item: smör eller olja
     note: för att bryna kött
   - amount: 0.5
     unit: tsk
@@ -83,7 +83,7 @@ source_recipe: reseptit/paaruoat/paprikainen-vhh-gulassi.md
 translation_of: paprikainen-vhh-gulassi
 ---
 
-# Pepprig VHH-gulasch
+# Paprikagryta med nötkött
 
 Den långkokta nötgrytan får sin smak från paprika, vitlök och mjuk gräddfil.
 
@@ -95,11 +95,11 @@ I denna gulasch stuvas rikligt med nötkött och paprika utan mjöl. Servera med
 
 1. Värm ugnen till 160 grader. Ta köttet till rumstemperatur en stund och torka av bitarna med hushållspapper.
 2. Bryn köttbitarna i en panna i små omgångar smör eller olja. Flytta åt sidan. Tillsätt löken i grytan och fräs tills den är mjuk. Blanda i vitlök och paprikapulver.
-3. Tillsätt tomatpuré, paprika och tomat. Lägg tillbaka köttet i grytan, häll i köttbuljongen och smaka av med salt och svartpeppar.
+3. Tillsätt tomatpuré, paprika, tomat och spiskummin. Lägg tillbaka köttet i grytan, häll på köttbuljongen och krydda med salt och svartpeppar.
 4. Täck med lock och låt sjuda i ugnen i ca 1 timme 45 minuter tills köttet är mört. Kontrollera mängden vätska då och då och tillsätt en skvätt vatten om det behövs.
 5. Smaka av och justera kryddorna. Servera med gräddfil och valfritt lågkolhydrattillbehör.
 
 ## Anteckningar
 
 – Grytan passar att servera med mosad blomkål, rostad vitkål eller en grönsallad.
-– Receptet innehåller inte potatis eller mjöl. VHH-klassificeringen är bredare än i de andra två recepten; kontrollera ingrediensernas förpackningsetiketter och portionsstorleken enligt din egen kost.
+– Receptet innehåller inte potatis eller mjöl. lågkolhydrat-klassificeringen är bredare än i de andra två recepten; kontrollera ingrediensernas förpackningsetiketter och portionsstorleken enligt din egen kost.

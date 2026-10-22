@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: pork tenderloin
+    item: pork loin
     note: in cubes
   - amount: 1
     unit: piece

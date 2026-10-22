@@ -31,7 +31,7 @@ fat_per_serving_g: 22
 ingredients:
   - amount: 600
     unit: g
-    item: konjac noodles
+    item: drained konjac noodles
   - amount: 500
     unit: g
     item: chicken fillet
@@ -93,5 +93,6 @@ Pad see ew is best fried in a hot pan in small batches. Dry the konjac noodles w
 
 ## Notes
 
-- This is a VHH variation of the pad see ew dish; konjac noodles do not match the texture of rice noodles.
+- This is a low-carb variation of the pad see ew dish; konjac noodles do not match the texture of rice noodles.
 - Check the carbohydrates of oyster and soy sauces on the package.
+- Nutrition values are approximate estimates and depend on the products and portion size used.

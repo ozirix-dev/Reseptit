@@ -66,7 +66,7 @@ source_recipe: reseptit/paaruoat/karjalanpaisti-vhh.md
 translation_of: karjalanpaisti-vhh
 ---
 
-# Karelian roast and roasted cabbage
+# Karelian Stew with Roasted Cabbage
 
 Karelian roast slowly cooked in the oven is low in carbohydrates as such. Roasted cabbage brings a filling addition to the plate instead of potatoes.
 

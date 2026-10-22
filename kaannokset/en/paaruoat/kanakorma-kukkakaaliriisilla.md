@@ -10,7 +10,8 @@ main_ingredient:
   - broileri
   - kukkakaali
 cooking_method:
-  - uuni
+  - paistinpannu
+  - liesi
 servings: 4
 time_total_min: 40
 difficulty: easy
@@ -25,13 +26,13 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: chicken cutlets
+    item: boneless chicken thigh fillets
   - amount: 2
     unit: dl
     item: whipping cream
   - amount: 150
     unit: g
-    item: turkkilaista jogurttia
+    item: Turkish-style yoghurt
   - amount: 1
     unit: ""
     item: onion
@@ -52,13 +53,13 @@ source_recipe: reseptit/paaruoat/kanakorma-kukkakaaliriisilla.md
 translation_of: kanakorma-kukkakaaliriisilla
 ---
 
-# Chicken korma with cauliflower rice
+# Chicken Korma with Cauliflower Rice
 
-Chicken korma with cauliflower rice is a familiar Finnish dish as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+Chicken simmers in a cream and yoghurt sauce seasoned with korma spices.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+Coarsely grated cauliflower is fried as an alternative to rice.
 
 ## Preparation
 

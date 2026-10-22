@@ -49,13 +49,13 @@ source_recipe: reseptit/jalkiruoat/keto-pannukakku.md
 translation_of: keto-pannukakku
 ---
 
-# Keto pancake
+# Keto Pancake
 
-Keto pancake is a familiar Finnish food as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+This oven pancake is made with eggs, cream, cream cheese and almond flour.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+Psyllium binds the batter without wheat flour.
 
 ## Preparation
 

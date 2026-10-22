@@ -31,7 +31,7 @@ fat_per_serving_g: 22
 ingredients:
   - amount: 600
     unit: g
-    item: konjaknudlar
+    item: avrunna konjaknudlar
   - amount: 500
     unit: g
     item: kycklingfilé
@@ -93,5 +93,6 @@ Pad see ew steks bäst i het panna i små omgångar. Torka konjaknudlarna väl s
 
 ## Anteckningar
 
-- Detta är en VHH-variant av pad se ew fat; konjaknudlar matchar inte strukturen på risnudlar.
+- Detta är en lågkolhydrat-variant av pad se ew fat; konjaknudlar matchar inte strukturen på risnudlar.
 – Kontrollera kolhydraterna i ostron och sojasåser på förpackningen.
+- Näringsvärdena är ungefärliga uppskattningar och påverkas av produkter och portionsstorlek.

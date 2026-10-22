@@ -28,7 +28,7 @@ ingredients:
     item: egg noodles
   - amount: 400
     unit: g
-    item: chicken cutlet
+    item: boneless chicken thigh fillets
     note: in thin strips
   - amount: 2
     unit: tbsp

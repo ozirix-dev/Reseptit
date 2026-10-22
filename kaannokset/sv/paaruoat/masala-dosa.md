@@ -66,6 +66,10 @@ ingredients:
     unit: g
     item: färsk koriander
     note: hackad
+  - amount: null
+    unit: ""
+    item: vatten
+    note: efter behov för sköljning, blötläggning och mixning; mängden beror på riset och redskapet
 source_language: fi
 source_recipe: reseptit/paaruoat/masala-dosa.md
 translation_of: masala-dosa
@@ -73,22 +77,22 @@ translation_of: masala-dosa
 
 # Masala dosa och kryddig potatisfyllning
 
-Krispig sallad stekt av jäst ris-linsdeg är fylld med kryddig potatis. Servera med kokoschutney och sambarsås.
+En tunn, frasig dosa av jäst smet med ris och urad dal fylls med kryddig potatis. Servera med kokoschutney och sambar.
 
 ## Beskrivning
 
-Krispig sallad stekt av jäst ris-linsdeg är fylld med kryddig potatis. Servera med kokoschutney och sambarsås.
+En tunn, frasig dosa av jäst smet med ris och urad dal fylls med kryddig potatis. Servera med kokoschutney och sambar.
 
 ## Tillagning
 
 1. Skölj riset och linserna separat. Blötlägg dem med bockhornsklöver i 4 timmar. Dränera.
-2. Mosa ris och linser separat med vatten till en smidig, lite tjock deg. Blanda ihop.
-3. Täck över degen och jäs på en varm plats i 8–12 timmar. Blanda i saltet.
+2. Mixa ris och urad dal separat. Tillsätt lite vatten i taget, bara så mycket att blandningen går att mixa. Mixa urad dal slät och luftig och riset finkornigt. Blanda till en tjock men hällbar smet.
+3. Täck över smeten och jäs på en varm plats i 8–12 timmar. Blanda i saltet.
 4. Koka potatisen tills den är kokt och tärna den. Fräs senapsfrön, lök, ingefära, gurkmeja och curryblad i olja. Tillsätt potatisen och koriandern.
-5. Hetta upp en stekpanna med non-stick. Bred ut en skopa deg till en tunn cirkel.
+5. Rör om den jästa smeten och tillsätt vid behov lite vatten i taget tills den går att breda ut tunt med en slev. Hetta upp en stekpanna med non-stick-beläggning och bred ut en slev smet till en tunn cirkel.
 6. Stek på medelvärme tills ytan torkar och undersidan brunnar. Tillsätt lite olja i kanterna.
 7. Skeda potatisfyllningen i mitten, vik ihop dosan och servera genast.
 
 ## Anteckningar
 
-- Degen behöver en varm plats att jäsa på; i kallt väder kan det ta längre tid.
+- Smeten behöver en varm plats att jäsa på; i kallt väder kan det ta längre tid.

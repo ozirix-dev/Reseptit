@@ -30,11 +30,11 @@ ingredients:
     note: ในลูกบาศก์
   - amount: 2
     unit: ชิ้น
-    item: บวบ
+    item: ซูกินี
     note: ในลูกบาศก์
   - amount: 1
     unit: ชิ้น
-    item: พริกแดง
+    item: พริกหวานแดง
     note: เป็นชิ้น ๆ
   - amount: 1
     unit: ชิ้น
@@ -42,7 +42,7 @@ ingredients:
     note: สับ
   - amount: 3
     unit: ชิ้น
-    item: กานพลูกระเทียม
+    item: กระเทียม
     note: หั่นฝอย
   - amount: 500
     unit: g
@@ -53,7 +53,7 @@ ingredients:
     item: น้ำมันมะกอก
   - amount: 1
     unit: ช้อนชา
-    item: โหระพาแห้ง
+    item: ไทม์แห้ง
   - amount: 1
     unit: ช้อนชา
     item: เกลือ
@@ -68,7 +68,7 @@ source_recipe: reseptit/paaruoat/ratatouille.md
 translation_of: ratatouille
 ---
 
-# ราตาตูยโปรวองซ์
+# Ratatouille โปรวองซ์
 
 Ratatouille เป็นอาหารผักที่ตุ๋นอย่างช้าๆ โดยใส่บวบ มะเขือยาว พริกหยวก และมะเขือเทศ ปรุงรสด้วยสมุนไพรและน้ำมันมะกอก
 

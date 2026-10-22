@@ -93,3 +93,4 @@ Lax, spenat och mjuk gräddsås tillagas i ugnen samtidigt. Servera grytan för 
 ## Anteckningar
 
 – Passar bra till till exempel stekt zucchini eller mosad blomkål.
+- Näringsvärdena är ungefärliga uppskattningar och påverkas av produkter och portionsstorlek.

@@ -56,11 +56,11 @@ translation_status:
 
 # VHH-mustikkapiirakka
 
-VHH-mustikkapiirakka on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Mustikat ja rahkatäyte paistetaan mantelijauhosta tehdyllä piirakkapohjalla.
 
 ## Kuvaus
 
-Ruoassa tuttu maku rakentuu yksinkertaisista raaka-aineista. Kasvikset ja kermaiset ainekset tuovat mehevyyttä, ja annoskokoa voi säätää reseptin annoslaskurilla.
+Täytteen mausteena on vaniljauute.
 
 ## Valmistus
 

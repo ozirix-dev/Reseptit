@@ -67,8 +67,8 @@ The simple filling of a Neapolitan pizza is tomato, mozzarella, basil and olive 
 1. Mix water and yeast. Add the flour and salt and knead into a dough for about 8 minutes. Cover and rise in a warm place for about an hour.
 2. Heat the oven with the pizza stone as hot as possible, preferably 250 degrees or hotter.
 3. Divide the dough into two parts and stretch with your hands into thin bases. Leave the edges a little thicker.
-4. Spread the tomato crumble on the bases and add the torn mozzarella.
-5. Bake the pizzas one at a time on a hot baking sheet or stone for 7-10 minutes until the edges are browned. Add basil and olive oil after frying.
+4. Spread the crushed tomatoes on the bases and add the torn mozzarella.
+5. Bake the pizzas one at a time on a hot baking sheet or stone for 7-10 minutes until the edges are browned. Add basil and olive oil after baking.
 
 ## Notes
 

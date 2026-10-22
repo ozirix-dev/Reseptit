@@ -39,7 +39,7 @@ ingredients:
     item: potatis
   - amount: 150
     unit: g
-    item: mogna kikärtor
+    item: kokta kikärtor
   - amount: 20
     unit: g
     item: färsk mynta
@@ -63,6 +63,12 @@ ingredients:
     unit: ""
     item: olja
     note: för fritering
+  - unit: dl
+    item: kallt vatten till örtvattnet
+    amount: 4
+  - unit: ""
+    item: salt
+    amount: null
 source_language: fi
 source_recipe: reseptit/alkuruoat/pani-puri.md
 translation_of: pani-puri

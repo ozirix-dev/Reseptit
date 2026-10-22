@@ -19,7 +19,7 @@ tags:
   - low carb
 image:
   src: jalkiruoat/rahkapiirakka-vhh.webp
-  alt: A piece of curd pie with berries
+  alt: Quark pie and a cut slice showing the pale vanilla quark filling
   width: 1280
   height: 853
 ingredients:
@@ -34,7 +34,7 @@ ingredients:
     item: egg
   - amount: 300
     unit: g
-    item: curds
+    item: quark
   - amount: 2
     unit: ""
     item: eggs
@@ -52,18 +52,18 @@ source_recipe: reseptit/jalkiruoat/rahkapiirakka-vhh.md
 translation_of: rahkapiirakka-vhh
 ---
 
-# VHH curd pie
+# Low-Carb Quark Pie
 
-VHH curd pie is a familiar Finnish food as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+An almond-flour crust holds a filling of quark, eggs and cream.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+Vanilla and erythritol flavour the filling.
 
 ## Preparation
 
 1. Mix almond flour, butter and egg. Press the dough into the greased pie pan.
-2. Whisk together the curd, eggs, cream, erythritol and vanilla for the filling.
+2. Whisk together the quark, eggs, cream, erythritol and vanilla for the filling.
 3. Pour the filling on the bottom and bake at 175 °C for about 35 minutes.
 4. Cool properly so that the filling sets.
 

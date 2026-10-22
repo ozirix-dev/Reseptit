@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 700
     unit: g
-    item: pork kassler
+    item: pork collar (uncured)
     note: in large pieces
   - amount: 1
     unit: l

@@ -1,5 +1,5 @@
 ---
-title: VHH tom kha gai – kokosnötskycklingsoppa
+title: lågkolhydrat tom kha gai – kokosnötskycklingsoppa
 recipe_id: tom-kha-gai-vhh
 url_slug: tom-kha-gai-vhh
 category: paaruoka
@@ -40,7 +40,7 @@ ingredients:
     item: kycklingbuljong
   - amount: 200
     unit: g
-    item: ätbara svampar
+    item: champinjoner
     note: skivad
   - amount: 2
     unit: st
@@ -79,9 +79,9 @@ source_recipe: reseptit/paaruoat/tom-kha-gai-vhh.md
 translation_of: tom-kha-gai-vhh
 ---
 
-# VHH tom kha gai – kokosnötskycklingsoppa
+# lågkolhydrat tom kha gai – kokosnötskycklingsoppa
 
-Tom kha gai är en aromatisk thailändsk kycklingsoppa där kokosmjölk mjukar upp smakerna av lime, galangal och citrongräs. Denna VHH-version serveras utan ris.
+Tom kha gai är en aromatisk thailändsk kycklingsoppa där kokosmjölk mjukar upp smakerna av lime, galangal och citrongräs. Denna lågkolhydrat-version serveras utan ris.
 
 ## Beskrivning
 

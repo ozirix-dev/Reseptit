@@ -19,7 +19,7 @@ tags:
   - low carb
 image:
   src: leivonnaiset/vhh-lihapiirakka.webp
-  alt: Half a meat pie showing a juicy minced meat filling and a golden brown crust
+  alt: Open meat pie with visible minced meat and onion filling and golden edges
   width: 1280
   height: 853
 ingredients:
@@ -52,19 +52,19 @@ source_recipe: reseptit/leivonnaiset/vhh-lihapiirakka.md
 translation_of: vhh-lihapiirakka
 ---
 
-# VHH meat pie
+# Low-Carb Meat Pie
 
-VHH meat pie is a familiar Finnish food as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+This open meat pie has a crust made with almond flour, cheese and egg.
 
 ## Description
 
-This gluten-free pastry is made from almond flour and retains the familiar pastry taste in a low-carb form.
+Beef mince and onion make up the filling.
 
 ## Preparation
 
 1. Heat the oven to 200 °C. Carefully melt the cheese and cream cheese and mix in the almond flour and one egg.
 2. Press the dough onto the bottom and sides of a pie pan lined with baking paper.
-3. Brown the minced meat and onion, season and spread on the base.
+3. Brown the minced beef and onion, then season.
 4. Mix the second egg into the filling, pour into the pan and bake for about 30 minutes.
 
 ## Notes

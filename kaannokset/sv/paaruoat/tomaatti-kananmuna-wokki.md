@@ -19,7 +19,7 @@ tags:
   - tomat
 image:
   src: paaruoat/tomaatti-kananmuna-wokki.webp
-  alt: Kinesisk tomat-kyckling-ägg wok med mjuk äggröra och vårlök
+  alt: Kinesisk tomat- och äggwok med mjuk äggröra och vårlök
   width: 1279
   height: 853
 ingredients:

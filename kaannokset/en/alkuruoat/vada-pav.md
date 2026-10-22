@@ -60,7 +60,7 @@ ingredients:
     item: salt
   - amount: 4
     unit: piece
-    item: soft rolls
+    item: soft bread rolls
   - amount: null
     unit: ""
     item: oil
@@ -84,7 +84,7 @@ Mumbai's popular street food dish combines a spicy, crispy deep-fried potato pat
 2. Heat the oil, add the mustard seeds. When they pop, add garlic and turmeric. Mix with mashed potatoes and coriander.
 3. Shape the potato mixture into 4 round patties.
 4. Mix chickpea flour, water, chili and salt into a thick dough.
-5. Dip the steaks in the batter and deep-fry in 170-degree oil until golden brown, about 4 minutes.
+5. Dip the potato patties in the batter and deep-fry in 170-degree oil until golden brown, about 4 minutes.
 6. Split the rolls and spread chutney inside. Put the potato patty in between and serve immediately.
 
 ## Notes

@@ -62,6 +62,9 @@ ingredients:
   - amount: 1
     unit: tbsp
     item: lemon juice
+  - unit: dl
+    item: water
+    amount: 0.5
 source_language: fi
 source_recipe: reseptit/paaruoat/palak-paneer.md
 translation_of: palak-paneer
@@ -80,7 +83,7 @@ Soft spinach sauce and fried paneer cubes make for a classic vegetarian dish. Se
 1. Rinse the spinach and blanch in boiling water for a minute. Cool quickly and drain.
 2. Puree the spinach into a rough puree.
 3. Brown the paneer cubes in a pan in a tablespoon of oil. Set aside.
-4. At the end, saute the onion in oil. Add garlic, ginger, cumin and turmeric. Bake for a minute.
+4. Soften the onion in the remaining oil. Add garlic, ginger, cumin and turmeric. Fry for one minute.
 5. Add spinach puree, salt and half a deciliter of water. Simmer for 8 minutes.
 6. Add cream, garam masala and paneer. Heat gently for 5 minutes. Season with lemon juice.
 

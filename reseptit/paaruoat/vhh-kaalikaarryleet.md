@@ -62,11 +62,11 @@ translation_status:
 
 # VHH-kaalikääryleet
 
-VHH-kaalikääryleet on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Kaalinlehtiin kääritään naudan jauhelihasta ja kukkakaalirouheesta tehty täyte.
 
 ## Kuvaus
 
-Ruoassa tuttu maku rakentuu yksinkertaisista raaka-aineista. Kasvikset ja kermaiset ainekset tuovat mehevyyttä, ja annoskokoa voi säätää reseptin annoslaskurilla.
+Tämä kaalikääryleiden muunnelma valmistetaan ilman riisiä.
 
 ## Valmistus
 

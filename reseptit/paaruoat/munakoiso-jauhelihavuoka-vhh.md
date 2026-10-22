@@ -59,11 +59,11 @@ translation_status:
 
 # Munakoiso-jauhelihavuoka
 
-Munakoiso-jauhelihavuoka on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Munakoisoviipaleet ja tomaattinen jauhelihakastike kootaan kerroksiksi uunivuokaan.
 
 ## Kuvaus
 
-Ruoassa tuttu maku rakentuu yksinkertaisista raaka-aineista. Kasvikset ja kermaiset ainekset tuovat mehevyyttä, ja annoskokoa voi säätää reseptin annoslaskurilla.
+Oregano maustaa kastikkeen ja juustoraaste viimeistelee pinnan.
 
 ## Valmistus
 

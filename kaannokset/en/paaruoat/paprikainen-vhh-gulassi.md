@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 700
     unit: g
-    item: roast beef
+    item: raw beef roasting joint, cubed
     note: about 3 cm cubes
   - amount: 150
     unit: g
@@ -53,7 +53,7 @@ ingredients:
     note: preferably smoked paprika or sweet paprika powder
   - amount: 1.5
     unit: tbsp
-    item: butter
+    item: butter or oil
     note: for browning meat
   - amount: 0.5
     unit: tsp
@@ -83,7 +83,7 @@ source_recipe: reseptit/paaruoat/paprikainen-vhh-gulassi.md
 translation_of: paprikainen-vhh-gulassi
 ---
 
-# Peppery VHH goulash
+# Paprika Beef Goulash
 
 The long-simmered beef stew gets its flavor from paprika, garlic and soft sour cream.
 
@@ -95,11 +95,11 @@ In this goulash, plenty of beef and paprika are stewed without flour. Serve with
 
 1. Heat the oven to 160 degrees. Take the meat to room temperature for a while and dry the pieces with paper towels.
 2. Brown the pieces of meat in a pan in small batches of butter or oil. Move aside. Add the onion to the pot and saute until soft. Mix in the garlic and paprika powder.
-3. Add tomato puree, paprika and tomato. Return the meat to the pot, pour in the meat stock and season with salt and black pepper.
+3. Add the tomato purée, bell pepper, tomato and cumin. Return the meat to the pot, pour in the beef stock and season with salt and black pepper.
 4. Cover with a lid and simmer in the oven for about 1 hour 45 minutes until the meat is tender. Check the amount of liquid from time to time and add a splash of water if necessary.
 5. Taste and adjust the spices. Serve with sour cream and a low-carb side dish of your choice.
 
 ## Notes
 
 - The stew is suitable to be served with mashed cauliflower, roasted cabbage or a green salad.
-- The recipe does not contain potatoes or flour. The VHH classification is wider than in the other two recipes; check the packaging labels of the ingredients and the portion size according to your own diet.
+- The recipe does not contain potatoes or flour. The low-carb classification is wider than in the other two recipes; check the packaging labels of the ingredients and the portion size according to your own diet.

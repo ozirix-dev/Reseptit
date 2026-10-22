@@ -87,7 +87,7 @@ Provensalsk fisksoppa är smaksatt med tomat, fänkål och saffran. Servera med 
 ## Tillagning
 
 1. Fräs löken och fänkålen i olivolja i en kastrull i ca 8 minuter. Tillsätt vitlök och timjan.
-2. Tillsätt tomatpuré, fiskfond och saffran. Koka.
+2. Tillsätt krossade tomater, fiskfond och saffran. Koka.
 3. Tillsätt potatisen och koka i ca 15 minuter tills den nästan är mjuk.
 4. Lägg i fiskbitarna och musslorna. Täck över och koka i 5 minuter. Tillsätt räkorna och fortsätt koka tills fisken är genomstekt och musslorna har öppnat sig. Kassera oöppnade musslor.
 5. Servera soppan med rostat bröd.

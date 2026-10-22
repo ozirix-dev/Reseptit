@@ -10,7 +10,8 @@ main_ingredient:
   - broileri
   - kukkakaali
 cooking_method:
-  - uuni
+  - paistinpannu
+  - liesi
 servings: 4
 time_total_min: 40
 difficulty: helppo
@@ -59,11 +60,11 @@ translation_status:
 
 # Kanakorma kukkakaaliriisillä
 
-Kanakorma kukkakaaliriisillä on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Broileri hautuu kormamausteella maustetussa kerma-jogurttikastikkeessa.
 
 ## Kuvaus
 
-Ruoassa tuttu maku rakentuu yksinkertaisista raaka-aineista. Kasvikset ja kermaiset ainekset tuovat mehevyyttä, ja annoskokoa voi säätää reseptin annoslaskurilla.
+Lisukkeeksi paistetaan karkeaksi raastettua kukkakaalia riisin sijaan.
 
 ## Valmistus
 

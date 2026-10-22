@@ -19,7 +19,7 @@ tags:
   - low carb
 image:
   src: paaruoat/keto-pinaattiletut.webp
-  alt: A stack of green spinach pancakes with herbs and a creamy accompaniment
+  alt: A stack of spinach pancakes with berries and a pale accompaniment
   width: 1280
   height: 853
 ingredients:
@@ -46,7 +46,7 @@ source_recipe: reseptit/paaruoat/keto-pinaattiletut.md
 translation_of: keto-pinaattiletut
 ---
 
-# Keto spinach pancakes
+# Keto Spinach Pancakes
 
 These low-carb spinach pancakes are cooked in a frying pan. The recipe makes three servings.
 

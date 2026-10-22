@@ -55,18 +55,18 @@ source_recipe: reseptit/paaruoat/kesakurpitsalasagne-vhh.md
 translation_of: kesakurpitsalasagne-vhh
 ---
 
-# Zucchini lasagna
+# Courgette Lasagne
 
-Zucchini lasagna is a familiar Finnish dish as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+Courgette slices replace pasta sheets in this low-carb lasagne.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+The layers contain beef mince, tomato and cream, with cheese on top.
 
 ## Preparation
 
 1. Cut the zucchini into long thin slices and pat dry.
-2. Brown the minced meat and onion. Add tomato paste and spices, simmer for 10 minutes.
+2. Brown the minced meat and onion. Add crushed tomatoes and spices, simmer for 10 minutes.
 3. Layer the zucchini, sauce and cream in the pan. Finish with cheese.
 4. Bake at 200 °C for about 35 minutes. Let it sit for 10 minutes.
 

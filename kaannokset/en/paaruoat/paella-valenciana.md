@@ -20,7 +20,7 @@ tags:
   - rice
 image:
   src: paaruoat/paella-valenciana.webp
-  alt: Valencian paella with saffron rice, chicken, hare and green beans
+  alt: Paella with saffron rice, chicken and green beans
   width: 1279
   height: 853
 ingredients:

@@ -65,7 +65,7 @@ ingredients:
     item: salt
   - amount: 6
     unit: piece
-    item: soft rolls
+    item: soft bread rolls
     note: for serving
   - amount: null
     unit: ""
@@ -87,9 +87,9 @@ Mumbai's street cuisine classic: spicy, soft mashed vegetable curry and butter-t
 ## Preparation
 
 1. Cook the potatoes, cauliflower, peas and carrot until soft. Drain and save the cooking water.
-2. Saute the onion in oil. Add garlic and pav bhaji masala. Bake for a minute.
+2. Saute the onion in oil. Add garlic and pav bhaji masala. Fry for a minute.
 3. Add the tomatoes and salt. Simmer for 10 minutes.
-4. Add the ripe vegetables and mash in the pan into a rough puree. Thin with boiling water to suit.
+4. Add the cooked vegetables and mash in the pan into a rough puree. Thin with boiling water to suit.
 5. Simmer the mixture for 10–15 minutes, stirring occasionally. Stir in half the butter and coriander.
 6. Split the rolls and toast in a pan in butter at the end. Serve with bhaji.
 

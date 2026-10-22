@@ -1,5 +1,5 @@
 ---
-title: VHH-kåldolmar
+title: lågkolhydrat-kåldolmar
 recipe_id: vhh-kaalikaarryleet
 url_slug: vhh-kaalikaarryleet
 category: paaruoka
@@ -31,7 +31,7 @@ ingredients:
     item: nötfärs
   - amount: 250
     unit: g
-    item: blomkålsröra
+    item: finhackad blomkål
   - amount: 1
     unit: st
     item: lök
@@ -55,13 +55,13 @@ source_recipe: reseptit/paaruoat/vhh-kaalikaarryleet.md
 translation_of: vhh-kaalikaarryleet
 ---
 
-# VHH kålrullar
+# lågkolhydrat-kåldolmar
 
-VHH kålrullar är en välbekant finsk mat i en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Kålblad fylls med nötfärs och finhackad blomkål.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Den här varianten av kåldolmar görs utan ris.
 
 ## Gör så här
 

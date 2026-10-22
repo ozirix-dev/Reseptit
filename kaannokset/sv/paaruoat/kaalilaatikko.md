@@ -22,7 +22,7 @@ tags:
   - kål
 image:
   src: paaruoat/kaalilaatikko-vhh.webp
-  alt: VHH kållåda med stuvad kål och köttfärs, serverad med lingon
+  alt: lågkolhydrat kållåda med stuvad kål och köttfärs, serverad med lingon
   width: 1280
   height: 853
 ingredients:

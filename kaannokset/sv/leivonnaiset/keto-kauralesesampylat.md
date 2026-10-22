@@ -25,7 +25,7 @@ tags:
   - bakning
 image:
   src: leivonnaiset/keto-kauralesesampylat.webp
-  alt: Keto havregrynsrullar i en korg bredvid te och en kniv
+  alt: Frallor med havrekli i en korg bredvid en tekopp och en kniv
   width: 2200
   height: 1053
 ingredients:
@@ -68,20 +68,20 @@ source_recipe: reseptit/leivonnaiset/keto-kauralesesampylat.md
 translation_of: keto-kauralesesampylat
 ---
 
-# Keto havrekli-frallor
+# Keto-frallor med havrekli
 
-De mjuka, proteinhaltiga rullarna kombinerar den råa kesobasen och den gryniga smaken av havrekli med mandelmjöl och psyllium. Receptet gör åtta små semlor.
+Keso, havrekli och mandelmjöl bildar degen till de här frallorna.
 
 ## Beskrivning
 
-Havrekli används med måtta för smakens skull. Havreflingor, havremjöl, grahamsmjöl och sötningsmedel utelämnas så att mängden kolhydrater förblir klart lägre än de ursprungliga havrebullarna.
+Psyllium binder den mjuka degen, som får svälla före formning.
 
 ## Gör så här
 
 1. Värm ugnen till 200 grader och klä en plåt med bakplåtspapper.
 2. Smält smöret och låt det svalna en stund. Blanda mandelmjöl, havrekli, psyllium, bakpulver och salt i en skål.
 3. Mosa keso och ägg till en jämn smet med en stavmixer eller i en mixer. Blanda i grädden och avsvalnat smält smör.
-4. Häll de våta ingredienserna i blandningen av torra ingredienser och blanda tills det är slätt. Låt degen jäsa i 10 minuter.
+4. Häll de våta ingredienserna i blandningen av torra ingredienser och blanda tills det är slätt. Låt degen svälla i 10 minuter.
 5. Dela degen i åtta delar och forma till rullar med blöta händer. Om du vill, lägg sesamfrön ovanpå.
 6. Grädda i mitten av ugnen i 20–25 minuter, tills ytan har fått färg och rullarna känns kokta.
 7. Låt svalna helt innan du skivar, så att de psylliumbundna insidorna hinner sätta sig.
@@ -91,5 +91,3 @@ Havrekli används med måtta för smakens skull. Havreflingor, havremjöl, graha
 – Uppskattningen är cirka 3,5 g nettokolhydrater, 9 g protein och 12 g fett per rulle. Uppskattningen är beräknad och varierar särskilt beroende på märket på havrekli, mandelmjöl och keso; kontrollera informationen på produktens förpackning.
 – Havrekli är inte kolhydratfritt, så receptet innehåller bara en liten mängd havre. Dosera rullarna som en del av ditt dagliga kolhydratintag.
 – Degen är mjuk och klibbig på grund av psylliumets svullnad. Om blandningen fortfarande är för lös för att forma efter 10 minuter, tillsätt psyllium en tesked i taget och låt svälla i några minuter.
-- Instruktionerna kombinerar kesobasen, mixning och uppblåsning av degen från de tidigare havrekli-mandel-kesorullarna och Ninjahavrerullarna. Kolhydratrika mjöl och flingor är undantagna.
-- Instruktionen är en kombinerad version; baktid och kontroll av degfuktighet kan kräva en liten förändring beroende på ingrediensernas märke.

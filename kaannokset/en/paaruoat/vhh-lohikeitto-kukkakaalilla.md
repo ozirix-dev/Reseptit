@@ -69,7 +69,7 @@ source_recipe: reseptit/paaruoat/vhh-lohikeitto-kukkakaalilla.md
 translation_of: vhh-lohikeitto-kukkakaalilla
 ---
 
-# Creamy VHH salmon soup with cauliflower
+# Creamy Low-Carb Salmon Soup with Cauliflower
 
 In this low-carb version of Finnish creamy salmon soup, potato is replaced with cauliflower. Fish stock concentrate, whipping cream and dill keep the flavour rich and familiar.
 

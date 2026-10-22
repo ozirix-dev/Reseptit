@@ -19,8 +19,7 @@ tags:
   - low carb
 image:
   src: leivonnaiset/vhh-runebergintortut.webp
-  alt: Small Runeberg tarts topped with raspberry jam and a ring of white
-    sugar-free icing
+  alt: Small Runeberg cakes, each topped with a fresh raspberry
   width: 1280
   height: 853
 ingredients:
@@ -35,7 +34,7 @@ ingredients:
     item: eggs
   - amount: 100
     unit: g
-    item: curds
+    item: quark
   - amount: 2
     unit: tbsp
     item: erythritol
@@ -53,18 +52,18 @@ source_recipe: reseptit/leivonnaiset/vhh-runebergintortut.md
 translation_of: vhh-runebergintortut
 ---
 
-# VHH-Runeberg Tarts
+# Low-Carb Runeberg Tarts
 
-VHH-Runebergintortut is a familiar Finnish food in a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+These Runeberg-style cakes use almond flour, quark and cardamom.
 
 ## Description
 
-This gluten-free pastry is made from almond flour and retains the familiar pastry taste in a low-carb form.
+Each baked cake is finished with a raspberry.
 
 ## Preparation
 
 1. Preheat the oven to 175°C. Mix the dry ingredients together.
-2. Add melted butter, eggs and curd. Divide the batter into six greased muffin tins.
+2. Add melted butter, eggs and quark. Divide the batter into six greased muffin tins.
 3. Bake for 18–20 minutes and cool. Make a small well in the center and add a raspberry.
 
 ## Notes

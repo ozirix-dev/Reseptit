@@ -56,11 +56,11 @@ translation_status:
 
 # Broileri-kukkakaaligratiini
 
-Broileri-kukkakaaligratiini on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Broileri ja kukkakaali kypsyvät samassa vuoassa kermaisen juustokuorrutteen alla.
 
 ## Kuvaus
 
-Ruoassa tuttu maku rakentuu yksinkertaisista raaka-aineista. Kasvikset ja kermaiset ainekset tuovat mehevyyttä, ja annoskokoa voi säätää reseptin annoslaskurilla.
+Valkosipulijauhe ja mustapippuri maustavat gratiinin.
 
 ## Valmistus
 

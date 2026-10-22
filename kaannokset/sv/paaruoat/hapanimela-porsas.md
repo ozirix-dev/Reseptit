@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: fläskfilé
+    item: fläskytterfilé
     note: i kuber
   - amount: 1
     unit: st

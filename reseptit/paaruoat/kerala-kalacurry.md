@@ -65,11 +65,14 @@ ingredients:
   - amount: 1
     unit: tl
     item: suolaa
+  - unit: dl
+    item: lämmintä vettä tamarindiin
+    amount: 1
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
 ---
 
 # Keralalainen kookos-kalacurry

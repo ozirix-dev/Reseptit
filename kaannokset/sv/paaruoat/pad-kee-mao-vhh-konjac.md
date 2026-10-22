@@ -32,7 +32,7 @@ fat_per_serving_g: 21
 ingredients:
   - amount: 600
     unit: g
-    item: konjaknudlar
+    item: avrunna konjaknudlar
   - amount: 500
     unit: g
     item: kycklinglårkött
@@ -81,7 +81,7 @@ translation_of: pad-kee-mao-vhh-konjac
 
 # Lågkolhydratversion av pad kee mao med kyckling och konjaknudlar
 
-Den eldiga pad kee mao kombinerar nudlar, vitlök, chili och aromatisk thailändsk basilika. Denna VHH-variant är gjord med konjaknudlar istället för risnudlar.
+Den eldiga pad kee mao kombinerar nudlar, vitlök, chili och aromatisk thailändsk basilika. Denna lågkolhydrat-variant är gjord med konjaknudlar istället för risnudlar.
 
 ## Beskrivning
 
@@ -89,7 +89,7 @@ Förbered ingredienserna före stekning: maten tillagas snabbt i en wok. Torrste
 
 ## Tillagning
 
-1. Skölj och låt rinna av nudlarna. Torrstek dem i en het panna i 3-4 minuter och ställ åt sidan.
+1. Koka färska gröna bönor i 5–7 minuter tills de är tillagade och häll av vattnet. Följ förpackningens tillagningsråd för frysta bönor. Skölj och låt nudlarna rinna av. Torrstek dem i en het panna i 3–4 minuter och lägg åt sidan.
 2. Blanda fisksås, sojasås, ostronsås och erytritol.
 3. Hetta upp oljan i en wok. Stek kycklingen tills den är genomstekt och ställ den åt sidan en stund.
 4. Tillsätt vitlök och chili i pannan. Stek i ca 30 sekunder, tillsätt bönorna och paprikan och stek i några minuter.
@@ -99,3 +99,4 @@ Förbered ingredienserna före stekning: maten tillagas snabbt i en wok. Torrste
 ## Anteckningar
 
 - konjaknudlar ersätter risnudlar. Mängden kolhydrater i såser varierar beroende på märke.
+- Näringsvärdena är ungefärliga uppskattningar och påverkas av produkter och portionsstorlek.

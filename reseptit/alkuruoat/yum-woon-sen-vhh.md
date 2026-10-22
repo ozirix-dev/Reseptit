@@ -61,3 +61,4 @@ Salaatti kannattaa sekoittaa kastikkeeseen vasta juuri ennen tarjoilua, jotta ka
 ## Muistiinpanot
 
 - Konjaknuudelit korvaavat mungpapulasinuudelit. Erytritolin määrää voi säätää makean ja happaman tasapainon mukaan.
+- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.

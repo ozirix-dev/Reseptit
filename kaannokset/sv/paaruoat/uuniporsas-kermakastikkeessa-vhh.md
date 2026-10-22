@@ -24,7 +24,7 @@ image:
 ingredients:
   - amount: 1.2
     unit: kg
-    item: fläsk kassler
+    item: fläskkarré (inte rökt kassler)
   - amount: 2
     unit: dl
     item: vispgrädde
@@ -51,13 +51,13 @@ source_recipe: reseptit/paaruoat/uuniporsas-kermakastikkeessa-vhh.md
 translation_of: uuniporsas-kermakastikkeessa-vhh
 ---
 
-# Helstekt fläsk med krämig pannsås
+# Ugnsstekt fläskkött med gräddsås
 
-Fläskstek med krämig pannsås är en välbekant finsk rätt som en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Fläskkarré tillagas i ugnen med lök och vatten.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Skyn med timjan och svartpeppar används sedan till en gräddsås.
 
 ## Gör så här
 

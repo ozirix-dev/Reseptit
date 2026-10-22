@@ -1,5 +1,5 @@
 ---
-title: Gai yang – Thai grilled chicken with VHH side dishes
+title: Gai yang – Thai grilled chicken with low-carb side dishes
 recipe_id: gai-yang-vhh
 url_slug: gai-yang-vhh
 category: paaruoka
@@ -23,8 +23,7 @@ tags:
   - VHH
 image:
   src: paaruoat/gai-yang-vhh.webp
-  alt: Gai yang grilled chicken on a golden brown surface, herb sauce and
-    cauliflower rice
+  alt: Gai yang grilled chicken on a golden brown surface, herb sauce and cauliflower rice
   width: 1280
   height: 853
 carbs_net_per_serving_g: 7
@@ -74,7 +73,7 @@ source_recipe: reseptit/paaruoat/gai-yang-vhh.md
 translation_of: gai-yang-vhh
 ---
 
-# Gai yang – Thai grilled chicken with VHH side dishes
+# Gai yang – Thai grilled chicken with low-carb side dishes
 
 Isan-style gai yang gets its flavor from garlic, coriander, fish sauce and white pepper. The chicken is marinated and grilled or baked in the oven; Cauliflower rice is served as a side dish.
 
@@ -87,7 +86,7 @@ Let the chicken marinate for at least 30 minutes if you have time. When cooking 
 1. Mix fish sauce, soy sauce, garlic, coriander, white pepper, erythritol and lime juice.
 2. Turn the chicken in the marinade. Allow to season for 30 minutes or overnight in the refrigerator.
 3. Heat the oven to 220 degrees or prepare the grill for medium heat.
-4. Grill or fry the chicken until cooked and nicely browned, turning occasionally. Check the doneness of the thickest part.
+4. Grill or oven-roast the chicken until fully cooked and nicely browned, turning occasionally. Check the thickest part for doneness.
 5. Heat the cauliflower rice in a pan. Serve with chicken and cucumber slices.
 
 ## Notes

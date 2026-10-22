@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: เนื้อสันในหมู
+    item: เนื้อสันนอกหมู
     note: ในลูกบาศก์
   - amount: 1
     unit: ชิ้น
@@ -42,7 +42,7 @@ ingredients:
     item: น้ำมันที่เป็นกลาง
   - amount: 1
     unit: ชิ้น
-    item: พริกแดง
+    item: พริกหวานแดง
     note: เป็นชิ้น ๆ
   - amount: 1
     unit: ชิ้น
@@ -76,7 +76,7 @@ source_recipe: reseptit/paaruoat/hapanimela-porsas.md
 translation_of: hapanimela-porsas
 ---
 
-# ผัดเปรี้ยวหวานหมูและผัก
+# หมูเปรี้ยวหวานและผัก
 
 หมูทอดกรอบและผักหลากสีสันได้ซอสรสหวานอมเปรี้ยวที่ทำจากน้ำส้มสายชู สับปะรด และมะเขือเทศ
 

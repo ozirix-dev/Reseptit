@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import type { z } from "zod";
+import { semanticTermErrors, semanticProseErrors } from "./semantic-terms";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset"];
@@ -109,6 +110,11 @@ function knownTermErrors(source: Frontmatter, target: Frontmatter, locale: Local
   const items = target.ingredients.map((ingredient) => ingredient.item);
   const allItems = items.join(" | ");
   const issues: string[] = [];
+  issues.push(...semanticTermErrors(source.ingredients.map((item) => item.item), items, locale));
+  issues.push(...semanticProseErrors(source.recipe_id, locale, `${target.title}\n${targetContent}\n${target.image?.alt ?? ""}`));
+  if (locale === "th" && hasIngredient(source, /kalafondi/i) && /ฟองดู(?:ว์)?ปลา|น้ำสต[็๊]อกข้าว/.test(`${target.title}\n${targetContent}\n${target.image?.alt ?? ""}`)) {
+    issues.push("fish stock concentrate mistranslated in Thai prose");
+  }
   const exactBad = {
     en: [/^win$/i, /^wow$/i, /^field$/i],
     sv: [/^vinna$/i, /^wow$/i],
@@ -142,17 +148,34 @@ export async function auditTranslations(): Promise<TranslationAuditResult> {
   const sources = await readRecipes(sourcePaths);
   const translations = (await Promise.all(locales.map((locale) => markdownFiles(path.join(repoRoot, "kaannokset", locale))))).flat();
   const publishedTranslations = await readRecipes(translations);
+  return auditRecipePairs(sources, publishedTranslations);
+}
+
+export function auditRecipePairs(allSources: TranslationAuditResult["publishedSources"], allTranslations: TranslationAuditResult["publishedTranslations"]): TranslationAuditResult {
+  const sources = allSources.filter((r) => r.data.status === "published");
+  const publishedTranslations = allTranslations.filter((r) => r.data.status === "published");
   const sourcesById = new Map(sources.map((recipe) => [recipe.data.recipe_id, recipe]));
   const translationsByIdLocale = new Map(publishedTranslations.map((recipe) => [`${recipe.data.recipe_id}:${recipe.data.language}`, recipe]));
   const errors: string[] = [];
   const rows: TranslationAuditRow[] = [];
+  const ids = new Set<string>();
+  const routes = new Set<string>();
+  for (const entry of [...sources, ...publishedTranslations]) {
+    const key = `${entry.data.recipe_id}:${entry.data.language}`;
+    const route = `${entry.data.language}:${entry.data.url_slug}`;
+    if (ids.has(key)) errors.push(`${key}: duplicate published recipe locale`);
+    if (routes.has(route)) errors.push(`${key}: duplicate published route ${route}`);
+    ids.add(key); routes.add(route);
+    if (sources.includes(entry) && entry.data.language !== "fi") errors.push(`${key}: source language must be fi`);
+    if (publishedTranslations.includes(entry) && !locales.includes(entry.data.language as Locale)) errors.push(`${key}: unexpected translation language`);
+  }
 
   for (const source of sources) {
     for (const locale of locales) {
       const expectedStatus = source.data.translation_status?.[locale];
       const translation = translationsByIdLocale.get(`${source.data.recipe_id}:${locale}`);
       if (!translation) {
-        if (expectedStatus === "published" || source.data.translation_languages?.includes(locale)) errors.push(`${source.data.recipe_id}:${locale}: source marks translation published but no published file exists`);
+        if (expectedStatus === "published") errors.push(`${source.data.recipe_id}:${locale}: source marks translation published but no published file exists`);
         continue;
       }
       const target = translation.data;
@@ -210,7 +233,7 @@ export async function auditTranslations(): Promise<TranslationAuditResult> {
         image_check: source.data.image?.src === target.image?.src ? "SAME FILE; visual audit not automated" : "FAIL",
         language_review: "Automated checks only; independent human language review pending",
         issues: issues.join("; "), risk_level: risk,
-        review_status: issues.length ? "CORRECTION REQUIRED" : "STRUCTURE PASS; HUMAN REVIEW PENDING",
+        review_status: issues.length ? "CORRECTION REQUIRED; HUMAN REVIEW PENDING" : "STRUCTURE PASS; AUTOMATED SEMANTIC REVIEW (known terms); HUMAN REVIEW PENDING",
       });
       for (const issue of issues) errors.push(`${source.data.recipe_id}:${locale}: ${issue}`);
     }
@@ -231,7 +254,7 @@ export async function writeAuditReports(result: TranslationAuditResult): Promise
   await mkdir(reportDir, { recursive: true });
   const auditColumns: (keyof TranslationAuditRow)[] = ["recipe_id", "locale", "source_path", "translation_path", "ingredient_check", "instruction_check", "metadata_check", "image_check", "language_review", "issues", "risk_level", "review_status"];
   const auditCsv = [auditColumns.map(csv).join(","), ...result.rows.map((row) => auditColumns.map((key) => csv(row[key])).join(","))].join("\n");
-  await writeFile(path.join(reportDir, "2026-10-21-reseptit-v1-3-audit.csv"), `${auditCsv}\n`, "utf8");
+  await writeFile(path.join(reportDir, "translation-audit-current.csv"), `${auditCsv}\n`, "utf8");
 
   const inventoryRows = [
     ...result.publishedSources.map(({ path: sourcePath, data }) => ({ recipe_id: data.recipe_id, source_path: sourcePath, published_locales: ["fi", ...locales.filter((locale) => result.rows.some((row) => row.recipe_id === data.recipe_id && row.locale === locale))].join("|"), language: "fi", title: data.title, servings: data.servings, ingredients: data.ingredients.map((item) => `${item.amount ?? "∅"} ${item.unit} ${item.item}${item.note ? ` (${item.note})` : ""}`).join("; "), nutrition: JSON.stringify({ net_carbs_g: data.carbs_net_per_serving_g ?? null, total_carbs_g: data.carbs_total_per_serving_g ?? null, protein_g: data.protein_per_serving_g ?? null, fat_g: data.fat_per_serving_g ?? null }), time_total_min: data.time_total_min ?? "", cooking_method: (data.cooking_method ?? []).join("|"), diet_class: data.diet_class ?? "", image: data.image?.src ?? "", status: data.status })),
@@ -239,7 +262,7 @@ export async function writeAuditReports(result: TranslationAuditResult): Promise
   ].sort((a, b) => a.recipe_id.localeCompare(b.recipe_id) || a.language.localeCompare(b.language));
   const inventoryColumns = ["recipe_id", "source_path", "published_locales", "language", "title", "servings", "ingredients", "nutrition", "time_total_min", "cooking_method", "diet_class", "image", "status"] as const;
   const inventoryCsv = [inventoryColumns.map(csv).join(","), ...inventoryRows.map((row) => inventoryColumns.map((key) => csv(row[key])).join(","))].join("\n");
-  await writeFile(path.join(reportDir, "2026-10-21-reseptit-v1-3-inventory.csv"), `${inventoryCsv}\n`, "utf8");
+  await writeFile(path.join(reportDir, "recipe-inventory-current.csv"), `${inventoryCsv}\n`, "utf8");
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

@@ -36,7 +36,7 @@ ingredients:
     item: มะเขือเทศบด
   - amount: 2
     unit: ชิ้น
-    item: กานพลูกระเทียม
+    item: กระเทียม
     note: เป็นชิ้น
   - amount: 3
     unit: ช้อนโต๊ะ

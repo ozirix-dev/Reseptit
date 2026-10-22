@@ -62,6 +62,9 @@ ingredients:
   - amount: 1
     unit: msk
     item: citronsaft
+  - unit: dl
+    item: vatten
+    amount: 0.5
 source_language: fi
 source_recipe: reseptit/paaruoat/palak-paneer.md
 translation_of: palak-paneer
@@ -80,7 +83,7 @@ Mjuk spenatsås och stekta paneerkuber är en klassisk vegetarisk rätt. Servera
 1. Skölj spenaten och blanchera i kokande vatten i en minut. Kyl snabbt och låt rinna av.
 2. Purea spenaten till en grov puré.
 3. Bryn paneerkuberna i en panna i en matsked olja. Avsätta.
-4. Fräs på slutet löken i olja. Tillsätt vitlök, ingefära, spiskummin och gurkmeja. Grädda i en minut.
+4. Fräs löken mjuk i resten av oljan. Tillsätt vitlök, ingefära, spiskummin och gurkmeja. Fräs i en minut.
 5. Tillsätt spenatpuré, salt och en halv deciliter vatten. Sjud i 8 minuter.
 6. Tillsätt grädde, garam masala och paneer. Värm försiktigt i 5 minuter. Smaksätt med citronsaft.
 

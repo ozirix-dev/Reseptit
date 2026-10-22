@@ -73,7 +73,7 @@ Den sicilianska pastaklassikern kombinerar tomatsås, stekt aubergine, basilika 
 2. Stek auberginen i olivolja i omgångar tills den är gyllenbrun. Avsätta.
 3. Fräs vitlöken i en panna. Tillsätt krossade tomater, salt och peppar och låt sjuda i 15 minuter.
 4. Koka pastan i saltat vatten enligt anvisningarna på förpackningen. Spara en deciliter kokande vatten.
-5. Tillsätt pasta och aubergine i såsen. Uppståndelse; tillsätt kokande vatten om det behövs. Avsluta med basilika och riven ricotta.
+5. Tillsätt pasta och aubergine i såsen. Rör om; tillsätt kokande vatten om det behövs. Avsluta med basilika och riven ricotta.
 
 ## Anteckningar
 

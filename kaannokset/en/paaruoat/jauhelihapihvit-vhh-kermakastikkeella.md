@@ -68,7 +68,7 @@ source_recipe: reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md
 translation_of: jauhelihapihvit-vhh-kermakastikkeella
 ---
 
-# Ground meat steaks and cream sauce without flour
+# Flourless Beef Patties with Cream Sauce
 
 Succulent ground beef patties and cream sauce cooked in a pan bring familiar home cooking to the table without breadcrumbs or wheat flour.
 

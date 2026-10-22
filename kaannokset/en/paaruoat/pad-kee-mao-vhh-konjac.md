@@ -32,7 +32,7 @@ fat_per_serving_g: 21
 ingredients:
   - amount: 600
     unit: g
-    item: konjac noodles
+    item: drained konjac noodles
   - amount: 500
     unit: g
     item: chicken thigh meat
@@ -81,7 +81,7 @@ translation_of: pad-kee-mao-vhh-konjac
 
 # Low-carb pad kee mao with chicken and konjac noodles
 
-The fiery pad kee mao combines noodles, garlic, chili and aromatic Thai basil. This VHH variation is made with konjac noodles instead of rice noodles.
+The fiery pad kee mao combines noodles, garlic, chili and aromatic Thai basil. This low-carb variation is made with konjac noodles instead of rice noodles.
 
 ## Description
 
@@ -89,7 +89,7 @@ Prepare the ingredients before frying: food cooks quickly in a wok. Dry fry the 
 
 ## Preparation
 
-1. Rinse and drain the noodles. Dry fry them in a hot pan for 3-4 minutes and set aside.
+1. Boil fresh green beans for 5–7 minutes until cooked and drain. For frozen beans, follow the packet cooking instructions. Rinse and drain the noodles. Dry-fry them in a hot pan for 3–4 minutes and set aside.
 2. Mix fish sauce, soy sauce, oyster sauce and erythritol.
 3. Heat the oil in a wok. Fry the chicken until cooked and set it aside for a while.
 4. Add garlic and chili to the pan. Fry for about 30 seconds, add the beans and paprika and fry for a few minutes.
@@ -99,3 +99,4 @@ Prepare the ingredients before frying: food cooks quickly in a wok. Dry fry the 
 ## Notes
 
 - konjac noodles replace rice noodles. The amount of carbohydrates in sauces varies by brand.
+- Nutrition values are approximate estimates and depend on the products and portion size used.

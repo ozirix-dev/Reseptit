@@ -25,7 +25,7 @@ image:
 ingredients:
   - amount: 500
     unit: g
-    item: chicken cutlets
+    item: boneless chicken thigh fillets
   - amount: 600
     unit: g
     item: cauliflower
@@ -49,13 +49,13 @@ source_recipe: reseptit/paaruoat/broileri-kukkakaaligratiini.md
 translation_of: broileri-kukkakaaligratiini
 ---
 
-# Chicken cauliflower gratin
+# Chicken and Cauliflower Gratin
 
-Chicken cauliflower gratin is a familiar Finnish food as a low-carb home version. The recipe has been rewritten to suit your own kitchen and serves four or the stated amount of servings.
+Chicken and cauliflower bake together under a creamy cheese topping.
 
 ## Description
 
-The familiar taste in food is built from simple ingredients. Vegetables and creamy ingredients bring juiciness, and the portion size can be adjusted with the portion counter in the recipe.
+Garlic powder and black pepper season the gratin.
 
 ## Preparation
 

@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 700
     unit: g
-    item: คาสเลอร์หมู
+    item: เนื้อสันคอหมูสด
     note: เป็นชิ้นใหญ่
   - amount: 1
     unit: l

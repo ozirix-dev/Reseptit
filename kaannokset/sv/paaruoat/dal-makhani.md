@@ -85,7 +85,7 @@ En rejäl dal makhani är stuvad med svarta linser och bönor och avslutas med s
 
 1. Skölj de blötlagda linserna och bönorna. Koka dem i vatten tills de är mjuka, ca 60-75 minuter. Tillsätt vatten om det behövs.
 2. Smält smöret i en kastrull. Fräs löken tills den är mjuk. Tillsätt vitlök och ingefära.
-3. Blanda i tomatpuré, ostkummin och salt. Sjud i 10 minuter.
+3. Blanda i krossade tomater, spiskummin och salt. Sjud i 10 minuter.
 4. Tillsätt de kokta linserna och bönorna samt några deciliter matlagningsfond. Krossa några av linserna med en sked.
 5. Sjud på mycket låg värme i minst 45 minuter, rör om då och då.
 6. Tillsätt garam masala och grädde. Värm i ytterligare 5 minuter och avsluta med koriander.

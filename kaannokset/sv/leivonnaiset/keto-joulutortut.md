@@ -43,13 +43,13 @@ source_recipe: reseptit/leivonnaiset/keto-joulutortut.md
 translation_of: keto-joulutortut
 ---
 
-# Keto jultårtor
+# Keto-julstjärnor
 
-Keto jultårtor är en välbekant finsk mat som en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Stjärnformade bakverk görs av en deg med mandelmjöl, smör och färskost.
 
 ## Beskrivning
 
-Denna glutenfria bakelse är gjord av mandelmjöl och behåller den välbekanta bakverkssmaken i lågkolhydratform.
+I mitten läggs plommonsylt, vars kolhydratinnehåll varierar mellan produkter.
 
 ## Gör så här
 

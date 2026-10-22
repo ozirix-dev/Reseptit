@@ -19,8 +19,7 @@ tags:
   - tofu
 image:
   src: paaruoat/sichuan-hot-pot.webp
-  alt: Sichuan hot pot broth and meats, mushrooms, tofu and vegetables laid out on
-    the table
+  alt: Sichuan hot pot broth and meats, mushrooms, tofu and vegetables laid out on the table
   width: 1279
   height: 853
 ingredients:
@@ -60,7 +59,7 @@ ingredients:
     note: in cubes
   - amount: 200
     unit: g
-    item: edible mushrooms
+    item: button mushrooms
     note: halved
   - amount: 200
     unit: g
@@ -91,7 +90,7 @@ A shared table meal where thin pieces of meat and vegetables are cooked in a hot
 
 1. Heat the oil in a pot. Fry the chili paste, garlic, ginger, Sichuan pepper, cinnamon and star anise for a minute.
 2. Pour the stock into the pot and bring to a boil. Simmer on low heat for 20 minutes. If desired, strain the whole spices.
-3. Pour the broth into a heat-resistant pot suitable for table use. Keep it bubbling on the stove or in a tabletop kettle.
+3. Pour the stock into a heat-resistant pot suitable for use at the table. Keep it simmering on a hob or a tabletop hot-pot cooker designed for cooking food.
 4. Add small portions of meat, tofu, mushrooms and cabbage to the broth. Cook the meat all over and the vegetables until soft.
 5. Cook the noodles in the broth according to the instructions on the package and serve everything immediately.
 

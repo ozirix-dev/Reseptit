@@ -19,7 +19,7 @@ tags:
   - pork
 image:
   src: paaruoat/mapo-tofu.webp
-  alt: Mapo tofu pan with chili, minced meat, silky tofu and spring onions
+  alt: Mapo tofu with tofu cubes, minced meat, chilli and spring onion
   width: 1279
   height: 853
 ingredients:

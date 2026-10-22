@@ -89,4 +89,4 @@ The hotness of the curry paste varies. Add the paste gradually and check the car
 
 ## Notes
 
-- In the VHH version, the rice is replaced by cauliflower rice. The nutritional values ​​are indicative and depend on the curry paste.
+- In the low-carb version, the rice is replaced by cauliflower rice. The nutritional values ​​are indicative and depend on the curry paste.

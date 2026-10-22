@@ -66,6 +66,10 @@ ingredients:
     unit: g
     item: tuoretta korianteria
     note: hienonnettuna
+  - amount: null
+    unit: ""
+    item: vettä
+    note: tarpeen mukaan huuhteluun, liotukseen ja jauhamiseen; määrä riippuu riisistä ja jauhatuslaitteesta
 translation_languages:
   - en
   - sv
@@ -84,10 +88,10 @@ Fermentoidusta riisi-linssitaikinasta paistettu rapea lettu täytetään maustei
 ## Valmistus
 
 1. Huuhtele riisi ja linssit erikseen. Liota niitä sarviapilan kanssa 4 tuntia. Valuta.
-2. Soseuta riisi ja linssit erikseen veden kanssa tasaiseksi, hieman paksuksi taikinaksi. Sekoita yhteen.
+2. Jauha riisi ja urad-dal erikseen. Lisää vettä vähän kerrallaan vain sen verran, että seos jauhautuu: urad-dal sileäksi ja kuohkeaksi, riisi hienorakeiseksi. Yhdistä paksuksi mutta kaadettavaksi taikinaksi.
 3. Peitä taikina ja fermentoi lämpimässä paikassa 8–12 tuntia. Sekoita joukkoon suola.
 4. Keitä perunat kypsiksi ja kuutioi. Kuullota öljyssä sinapinsiemeniä, sipulia, inkivääriä, kurkumaa ja currylehtiä. Lisää perunat ja korianteri.
-5. Kuumenna tarttumaton paistinpannu. Levitä kauhallinen taikinaa ohueksi ympyräksi.
+5. Sekoita fermentoitu taikina ja lisää tarvittaessa vettä vähän kerrallaan, kunnes se leviää kauhalla ohueksi kerrokseksi. Kuumenna tarttumaton paistinpannu ja levitä kauhallinen taikinaa ohueksi ympyräksi.
 6. Paista keskilämmöllä, kunnes pinta kuivuu ja alapuoli ruskistuu. Lisää hieman öljyä reunoille.
 7. Lusikoi perunatäyte keskelle, taita dosa ja tarjoa heti.
 

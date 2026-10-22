@@ -19,7 +19,7 @@ tags:
   - lågkolhydrat
 image:
   src: paaruoat/keto-pinaattiletut.webp
-  alt: En bunt grönspenat med örter och en krämig topping
+  alt: En hög spenatplättar med bär och ett ljust tillbehör
   width: 1280
   height: 853
 ingredients:
@@ -46,7 +46,7 @@ source_recipe: reseptit/paaruoat/keto-pinaattiletut.md
 translation_of: keto-pinaattiletut
 ---
 
-# Keto spenatplättar
+# Keto-spenatplättar
 
 De här lågkolhydratplättarna med spenat steks i panna. Receptet ger tre portioner.
 

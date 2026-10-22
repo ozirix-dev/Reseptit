@@ -1,5 +1,5 @@
 ---
-title: VHH-khao kha moo – braised pork with cauliflower rice
+title: low-carb-khao kha moo – braised pork with cauliflower rice
 recipe_id: khao-kha-moo-vhh
 url_slug: khao-kha-moo-vhh
 category: paaruoka
@@ -50,7 +50,7 @@ ingredients:
     item: erythritol
   - amount: 1
     unit: tsp
-    item: Chinese spice
+    item: Chinese five-spice powder
   - amount: 1
     unit: piece
     item: cinnamon stick
@@ -79,9 +79,9 @@ source_recipe: reseptit/paaruoat/khao-kha-moo-vhh.md
 translation_of: khao-kha-moo-vhh
 ---
 
-# VHH-khao kha moo – braised pork with cauliflower rice
+# low-carb-khao kha moo – braised pork with cauliflower rice
 
-Khao kha moo is pork stewed for a long time in a spicy broth. In this VHH variation, the portion is served with cauliflower rice, and the sweetness of the broth is adjusted with erythritol.
+Khao kha moo is pork stewed for a long time in a spicy broth. In this low-carb variation, the portion is served with cauliflower rice, and the sweetness of the broth is adjusted with erythritol.
 
 ## Description
 
@@ -90,7 +90,7 @@ The mild braising makes the pork belly tender and allows the spices to season th
 ## Preparation
 
 1. Brown the pork pieces in a pan on all sides. Set aside for a moment.
-2. Add garlic, allspice, cinnamon and star anise to the pot. Fry for about 30 seconds.
+2. Add the garlic, Chinese five-spice powder, cinnamon and star anise to the pot. Fry for about 30 seconds.
 3. Pour in the chicken stock. Add soy sauces, fish sauce and erythritol. Return the pork to the pot.
 4. Cover with a lid and simmer on very low heat for about 2.5 hours or until the meat is soft.
 5. Add the peeled boiled eggs for the last 20 minutes. Remove the pork and eggs from the broth.

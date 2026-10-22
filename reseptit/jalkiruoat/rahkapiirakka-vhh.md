@@ -19,7 +19,7 @@ tags:
   - vähähiilihydraattinen
 image:
   src: jalkiruoat/rahkapiirakka-vhh.webp
-  alt: Pala rahkapiirakkaa marjojen kanssa
+  alt: Rahkapiirakka ja leikattu pala, jossa näkyy vaalea vaniljainen rahkatäyte
   width: 1280
   height: 853
 ingredients:
@@ -59,11 +59,11 @@ translation_status:
 
 # VHH-rahkapiirakka
 
-VHH-rahkapiirakka on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Resepti on kirjoitettu uudelleen omaan keittiöön sopivaksi ja palvelee neljää tai ilmoitettua annosmäärää.
+Mantelijauhopohjan päälle tulee rahkasta, kananmunista ja kermasta tehty täyte.
 
 ## Kuvaus
 
-Ruoassa tuttu maku rakentuu yksinkertaisista raaka-aineista. Kasvikset ja kermaiset ainekset tuovat mehevyyttä, ja annoskokoa voi säätää reseptin annoslaskurilla.
+Vanilja ja erytritoli maustavat täytteen.
 
 ## Valmistus
 

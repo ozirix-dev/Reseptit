@@ -37,7 +37,7 @@ ingredients:
     note: ขูด
   - amount: 2
     unit: ชิ้น
-    item: กานพลูกระเทียม
+    item: กระเทียม
     note: บดขยี้
   - amount: 1
     unit: ช้อนชา

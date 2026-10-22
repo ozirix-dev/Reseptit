@@ -55,18 +55,18 @@ source_recipe: reseptit/paaruoat/kesakurpitsalasagne-vhh.md
 translation_of: kesakurpitsalasagne-vhh
 ---
 
-# Zucchini lasagne
+# Zucchinilasagne
 
-Zucchini-lasagne är en välbekant finsk rätt som en lågkolhydrat-hemversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Zucchiniskivor ersätter pastaplattorna i den här lasagnen med mindre kolhydrater.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Varven fylls med nötfärs, tomat och grädde och toppas med ost.
 
 ## Gör så här
 
 1. Skär zucchinin i långa tunna skivor och torka torrt.
-2. Bryn köttfärsen och löken. Tillsätt tomatpuré och kryddor, låt sjuda i 10 minuter.
+2. Bryn köttfärsen och löken. Tillsätt krossade tomater och kryddor, låt sjuda i 10 minuter.
 3. Varva zucchinin, såsen och grädden i pannan. Avsluta med ost.
 4. Grädda i 200 °C i ca 35 minuter. Låt det sitta i 10 minuter.
 

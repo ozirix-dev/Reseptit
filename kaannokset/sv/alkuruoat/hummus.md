@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 400
     unit: g
-    item: mogna kikärtor
+    item: kokta kikärtor
     note: sköljd
   - amount: 3
     unit: msk

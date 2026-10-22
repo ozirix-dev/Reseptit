@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 400
     unit: g
-    item: ripe chickpeas
+    item: cooked chickpeas
     note: rinsed
   - amount: 3
     unit: tbsp

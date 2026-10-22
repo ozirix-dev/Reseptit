@@ -54,11 +54,11 @@ translation_of: jauheliha-kaalikeitto-vhh
 
 # Köttfärs- och kålsoppa
 
-Köttfärs- och kålsoppa är en välbekant finsk mat som en lågkolhydrat hemmaversion. Denna version med gryta på spisen är dimensionerad för sex.
+Nötfärs och vitkål får sjuda i buljong i den här soppan.
 
 ## Beskrivning
 
-Smaken på maten är baserad på buljong med smak av kål, nötfärs, lök och mejram. Portionsstorleken kan justeras med portionsräknaren i receptet.
+Tomatpuré och mejram ger smak.
 
 ## Gör så här
 

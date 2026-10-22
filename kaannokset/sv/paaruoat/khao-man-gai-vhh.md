@@ -75,7 +75,7 @@ translation_of: khao-man-gai-vhh
 
 # Lågkolhydrat-khao man gai – thailändsk kyckling och blomkålsris
 
-Denna VHH-variant behåller Khao man gais varsamt tillagade kyckling- och ingefärsdippsås. Varmt blomkålsris serveras istället för det traditionella kryddade riset.
+Denna lågkolhydrat-variant behåller Khao man gais varsamt tillagade kyckling- och ingefärsdippsås. Varmt blomkålsris serveras istället för det traditionella kryddade riset.
 
 ## Beskrivning
 
@@ -91,5 +91,5 @@ Kokbuljongen ger en lätt, klar buljong för servering. Ingefärssåsen är salt
 
 ## Anteckningar
 
-– I VHH-varianten är det traditionella kryddade riset ersatt av blomkålsris. Såsernas sammansättning varierar.
+– I lågkolhydrat-varianten är det traditionella kryddade riset ersatt av blomkålsris. Såsernas sammansättning varierar.
 - Näringsvärdena är vägledande.

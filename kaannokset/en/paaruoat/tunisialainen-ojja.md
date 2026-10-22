@@ -78,8 +78,8 @@ Ojja is a spicy tomato-pepper pan in which eggs are cooked on top of the sauce. 
 ## Preparation
 
 1. Heat the oil in a pan. Sauté the onion and paprika until soft for about 6 minutes.
-2. Add garlic, cumin and harissa. Bake for a minute.
-3. Pour tomato puree and salt into the pan. Simmer for 12-15 minutes until the sauce thickens.
+2. Add garlic, cumin and harissa. Fry for a minute.
+3. Pour crushed tomatoes and salt into the pan. Simmer for 12-15 minutes until the sauce thickens.
 4. Make four wells in the sauce and break the eggs into them. Cover the pan and cook until the egg whites are set.
 5. Finish with parsley and serve with bread.
 

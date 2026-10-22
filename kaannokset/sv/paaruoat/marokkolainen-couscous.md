@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: kycklinglår eller biff
+    item: kycklingklubbor eller kycklinglårfilé
   - amount: 250
     unit: g
     item: couscous

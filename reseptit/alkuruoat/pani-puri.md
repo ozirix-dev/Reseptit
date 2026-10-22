@@ -63,11 +63,17 @@ ingredients:
     unit: ""
     item: öljyä
     note: uppopaistamiseen
+  - unit: dl
+    item: kylmää vettä yrttiveteen
+    amount: 4
+  - unit: ""
+    item: suolaa
+    amount: null
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
 ---
 
 # Pani puri – rapeat täytetyt katukeittiöpallerot

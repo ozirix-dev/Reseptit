@@ -1,5 +1,5 @@
 ---
-title: แกงไก่แดง VHH กับข้าวดอกกะหล่ำ
+title: แกงไก่แดง คาร์โบไฮเดรตต่ำ กับข้าวดอกกะหล่ำ
 recipe_id: punainen-kanacurry-vhh
 url_slug: punainen-kanacurry-vhh
 category: paaruoka
@@ -45,7 +45,7 @@ ingredients:
     note: ระบายออก
   - amount: 1
     unit: ชิ้น
-    item: พริกแดง
+    item: พริกหวานแดง
     note: เป็นแถบ
   - amount: 1
     unit: ช้อนโต๊ะ
@@ -65,7 +65,7 @@ ingredients:
     item: ข้าวกะหล่ำดอก
   - amount: null
     unit: ""
-    item: บล็อกมะนาว
+    item: มะนาวหั่นเสี้ยว
     note: สำหรับการเสิร์ฟ
 translation_languages: []
 translation_status: {}
@@ -74,7 +74,7 @@ source_recipe: reseptit/paaruoat/punainen-kanacurry-vhh.md
 translation_of: punainen-kanacurry-vhh
 ---
 
-# แกงไก่แดงVHHกับข้าวกะหล่ำดอก
+# แกงไก่แดง คาร์โบไฮเดรตต่ำ กับข้าวดอกกะหล่ำ
 
 น้ำพริกแกงแดง กะทิ และโหระพาไทยเป็นซอสเข้มข้นสำหรับไก่และหน่อไม้ ข้าวดอกกะหล่ำช่วยให้คาร์โบไฮเดรตมีปริมาณน้อย
 
@@ -94,3 +94,4 @@ translation_of: punainen-kanacurry-vhh
 ## หมายเหตุ
 
 - ข้าวกะหล่ำมาแทนที่ข้าวธรรมดา ตรวจสอบฉลากบรรจุภัณฑ์สำหรับเครื่องแกงและกะทิ
+- คุณค่าทางโภชนาการเป็นค่าประมาณ ขึ้นอยู่กับผลิตภัณฑ์และขนาดเสิร์ฟที่ใช้.

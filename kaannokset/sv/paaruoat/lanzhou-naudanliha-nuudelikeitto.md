@@ -1,5 +1,5 @@
 ---
-title: Lanzhou Beef Nudelsoppa
+title: Nudelsoppa med nötkött från Lanzhou
 recipe_id: lanzhou-naudanliha-nuudelikeitto
 url_slug: lanzhou-naudanliha-nuudelikeitto
 category: paaruoka
@@ -25,7 +25,7 @@ image:
 ingredients:
   - amount: 700
     unit: g
-    item: främre delen av nötkött
+    item: högrev
     note: i kuber
   - amount: 2
     unit: l
@@ -71,7 +71,7 @@ source_recipe: reseptit/paaruoat/lanzhou-naudanliha-nuudelikeitto.md
 translation_of: lanzhou-naudanliha-nuudelikeitto
 ---
 
-# Lanzhou Beef Nudelsoppa
+# Nudelsoppa med nötkött från Lanzhou
 
 Varm nudelsoppa i klar nötbuljong, med kryddiga köttskivor, vårlök och koriander.
 
@@ -84,7 +84,7 @@ Varm nudelsoppa i klar nötbuljong, med kryddiga köttskivor, vårlök och koria
 1. Lägg köttet i en gryta och täck med vatten. Koka upp, skumma av skummet och häll av vattnet.
 2. Tillsätt 2 liter rent vatten, lök, ingefära, kanel, stjärnanis och salt i grytan. Sjud under lock tyst i ca 2 timmar tills köttet är mört.
 3. Ta bort köttet från buljongen och sila av buljongen. Skär köttet i skivor.
-4. Koka nudlarna enligt anvisningarna på förpackningen. Tillsätt rädisan i buljongen och koka i 5 minuter.
+4. Koka nudlarna enligt anvisningarna på förpackningen. Tillsätt rättikan i buljongen och koka i 5 minuter.
 5. Dela nudlarna i skålar, tillsätt köttet och het buljong. Avsluta med vårlök, koriander och chiliolja.
 
 ## Anteckningar

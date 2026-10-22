@@ -1,5 +1,5 @@
 ---
-title: Turkiska menener med tomater och paprika
+title: Turkisk menemen med tomater och paprika
 recipe_id: menemen
 url_slug: menemen
 category: paaruoka
@@ -60,7 +60,7 @@ source_recipe: reseptit/paaruoat/menemen.md
 translation_of: menemen
 ---
 
-# Turkiska menener med tomater och paprika
+# Turkisk menemen med tomater och paprika
 
 I Menemen kokas ägg mjukt i en tomat- och paprikablandning. Servera med färskt bröd.
 

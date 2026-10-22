@@ -60,11 +60,11 @@ translation_status:
 
 # Jauheliha-kaalikeitto
 
-Jauheliha-kaalikeitto on tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona. Tämä kattilassa liedellä valmistuva versio on mitoitettu kuudelle.
+Jauheliha-kaalikeitossa naudanliha ja valkokaali hautuvat lihaliemessä.
 
 ## Kuvaus
 
-Ruoan maku rakentuu kaalista, naudan jauhelihasta, sipulista ja meiramilla maustetusta liemestä. Annoskokoa voi säätää reseptin annoslaskurilla.
+Tomaattipyree ja meirami antavat keitolle makua.
 
 ## Valmistus
 

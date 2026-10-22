@@ -1,5 +1,5 @@
 ---
-title: VHH-kvargpaj
+title: lågkolhydrat-kvargpaj
 recipe_id: rahkapiirakka-vhh
 url_slug: rahkapiirakka-vhh
 category: jalkiruoka
@@ -19,7 +19,7 @@ tags:
   - lågkolhydrat
 image:
   src: jalkiruoat/rahkapiirakka-vhh.webp
-  alt: En bit ostmassapaj med bär
+  alt: Kvargpaj och en uppskuren bit med ljus vaniljkvargfyllning
   width: 1280
   height: 853
 ingredients:
@@ -34,7 +34,7 @@ ingredients:
     item: ägg
   - amount: 300
     unit: g
-    item: ostmassa
+    item: kvarg
   - amount: 2
     unit: st
     item: ägg
@@ -52,18 +52,18 @@ source_recipe: reseptit/jalkiruoat/rahkapiirakka-vhh.md
 translation_of: rahkapiirakka-vhh
 ---
 
-# VHH ostmassapaj
+# lågkolhydrat-kvargpaj
 
-VHH ostmassapaj är en välbekant finsk mat som en lågkolhydrat hemmaversion. Receptet har skrivits om för att passa ditt eget kök och serverar fyra eller angivet antal portioner.
+Ett pajskal av mandelmjöl fylls med kvarg, ägg och grädde.
 
 ## Beskrivning
 
-Den välbekanta smaken i mat är byggd av enkla råvaror. Grönsaker och krämiga ingredienser ger saftighet och portionsstorleken kan justeras med portionsräknaren i receptet.
+Vanilj och erytritol smaksätter fyllningen.
 
 ## Gör så här
 
 1. Blanda mandelmjöl, smör och ägg. Tryck ut degen i den smorda pajformen.
-2. Vispa samman ostmassa, ägg, grädde, erytritol och vanilj till fyllningen.
+2. Vispa samman kvarg, ägg, grädde, erytritol och vanilj till fyllningen.
 3. Häll fyllningen på botten och grädda i 175 °C i ca 35 minuter.
 4. Kyl ordentligt så att fyllningen stelnar.
 
