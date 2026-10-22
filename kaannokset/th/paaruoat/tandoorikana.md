@@ -6,7 +6,7 @@ category: paaruoka
 language: th
 status: published
 servings: 4
-time_total_min: 90
+time_total_min: 130
 main_ingredient:
   - broileri
   - jogurtti
@@ -84,3 +84,4 @@ translation_of: tandoorikana
 ## หมายเหตุ
 
 - ไก่ทันดูริมักจะได้สีแดงจากเครื่องเทศ ไม่จำเป็นต้องมีสีผสมอาหาร
+- เวลารวมโดยประมาณ 130 นาที: 15 min เตรียมส่วนผสม, 60 min หมัก, 45 min อบ, 5 min ย่างผิวด้วยไฟบน, 5 min พักเนื้อ. เวลาประมาณนี้ใช้การหมักหนึ่งชั่วโมง หากหมักข้ามคืนเวลารวมจะเพิ่มขึ้น ปรุงนานขึ้นหากจำเป็นโดยดูค่าจากเทอร์โมมิเตอร์

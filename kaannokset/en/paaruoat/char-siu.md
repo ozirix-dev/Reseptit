@@ -6,7 +6,7 @@ category: paaruoka
 language: en
 status: published
 servings: 4
-time_total_min: 70
+time_total_min: 90
 main_ingredient:
   - sianliha
 cooking_method:
@@ -76,3 +76,4 @@ Cantonese-style sweet and salty pork gets a red-brown surface from soy, honey an
 ## Notes
 
 - The marinade contains raw meat, so do not use it as a sauce for ready-made food without boiling it.
+- Estimated total time is 90 minutes: 15 min preparation, 30 min marinating, 35 min roasting, 5 min finishing the honey glaze, 5 min resting. The estimate includes the minimum 30-minute marinating time; longer marinating increases the total time.

@@ -92,7 +92,7 @@ En gemensam bordsmåltid där tunna köttbitar och grönsaker tillagas i en het,
 2. Häll fonden i grytan och låt koka upp. Sjud på låg värme i 20 minuter. Om så önskas, sila av hela kryddorna.
 3. Häll buljongen i en värmetålig gryta som passar för användning vid bordet. Håll den sjudande på spisen eller på en bordsapparat avsedd för hot pot.
 4. Tillsätt små portioner kött, tofu, svamp och kål i buljongen. Koka köttet överallt och grönsakerna tills de är mjuka.
-5. Koka nudlarna i buljongen enligt anvisningarna på förpackningen och servera allt direkt.
+5. Koka nudlarna i buljongen enligt förpackningens anvisningar. Finhacka salladslöken och fördela i små dippskålar. Tillsätt lite kokande buljong från grytan i varje skål. Servera genast som dipp till den färdiglagade maten.
 
 ## Anteckningar
 

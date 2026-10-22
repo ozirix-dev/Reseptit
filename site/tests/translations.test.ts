@@ -187,3 +187,39 @@ test("corrected image captions do not reintroduce absent fillings or toppings", 
     if (recipe.data.recipe_id === "mapo-tofu") assert.doesNotMatch(alt, /silk|silkig|silken|ไหม/i);
   }
 });
+
+test("P2/P3 corrections include waiting time and ingredient use in every language", async () => {
+  const result = await auditTranslations();
+  const recipes = [...result.publishedSources, ...result.publishedTranslations];
+  const times: Record<string, number> = { "pekingin-ankka": 510, gazpacho: 80, "pizza-margherita": 100, tandoorikana: 130, "char-siu": 90, "chole-bhature": 900 };
+  const uses: Record<string, [number, RegExp]> = {
+    "uuniporsas-kermakastikkeessa-vhh": [4, /voi|butter|smör|เนย/],
+    "kai-jiew-vhh": [1, /kevätsipuli|spring onion|salladslök|ต้นหอม/],
+    "sichuan-hot-pot": [5, /kevätsipuli|spring onion|salladslök|ต้นหอม/],
+    "paella-valenciana": [3, /rosmariini|rosemary|rosmarin|โรสแมรี/],
+  };
+  for (const locale of ["fi", "en", "sv", "th"]) {
+    for (const [id, time] of Object.entries(times)) {
+      const recipe = recipes.find((r) => r.data.recipe_id === id && r.data.language === locale)!;
+      assert.equal(recipe.data.time_total_min, time, `${id}/${locale}`);
+      assert.ok(recipe.content.includes(String(time)), `visible time explanation: ${id}/${locale}`);
+    }
+    for (const [id, [step, ingredient]] of Object.entries(uses)) {
+      const recipe = recipes.find((r) => r.data.recipe_id === id && r.data.language === locale)!;
+      assert.match(recipe.content.match(new RegExp(`^${step}\\. (.+)$`, "m"))?.[1] ?? "", ingredient, `${id}/${locale}`);
+    }
+  }
+});
+
+test("recipes without a documented calculation make no keto or low-carb promise", async () => {
+  const result = await auditTranslations();
+  const ids = ["keto-pinaattiletut", "keto-pannukakku", "keto-joulutortut", "keto-korvapuustit", "ketopizza-pofiber-pohjalla"];
+  const recipes = [...result.publishedSources, ...result.publishedTranslations].filter((r) => ids.includes(r.data.recipe_id));
+  assert.equal(recipes.length, 20);
+  for (const { data, content } of recipes) {
+    assert.equal(data.diet_class, undefined, data.recipe_id);
+    assert.doesNotMatch([data.title, ...data.tags, data.image?.alt, content].join(" "), /keto|คีโต|\bVHH\b|low.car[b]|lågkolhydrat|vähähiilihydraatti/i);
+    assert.doesNotMatch(content, /(?:alle|less than|mindre än|น้อยกว่า)\s*5\s*(?:g|กรัม)/i);
+    assert.equal(data.carbs_total_per_serving_g, undefined, "no invented nutrition number");
+  }
+});

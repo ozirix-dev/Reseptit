@@ -80,7 +80,7 @@ Valencialaistyylisessä paellassa lyhytjyväinen riisi kypsyy pannulla sahramili
 
 1. Kuumenna öljy leveässä pannussa. Ruskista broileri ja jäniksenpalat kauttaaltaan.
 2. Lisää pavut ja paista muutama minuutti. Sekoita joukkoon tomaatti ja savupaprika.
-3. Lisää riisi ja sekoita, jotta jyvät peittyvät öljyyn. Kaada pannulle kuuma liemi, johon sahrami on liotettu. Mausta suolalla.
+3. Lisää riisi ja sekoita, jotta jyvät peittyvät öljyyn. Kaada pannulle kuuma liemi, johon sahrami on liotettu. Mausta suolalla. Lisää halutessasi rosmariinin oksa liemeen; poista oksa ennen tarjoamista.
 4. Levitä ainekset tasaisesti pannulle. Keitä keskilämmöllä noin 8 minuuttia ja jatka miedommalla lämmöllä 12–15 minuuttia. Älä sekoita riisiä enää liemen lisäämisen jälkeen.
 5. Kun riisi on kypsää ja neste imeytynyt, nosta pannu liedeltä. Peitä kevyesti ja anna vetäytyä 5 minuuttia.
 

@@ -64,7 +64,7 @@ Skyn med timjan och svartpeppar används sedan till en gräddsås.
 1. Krydda fläsket med salt, peppar och timjan. Lägg i en ugnsform med lökblocken.
 2. Tillsätt vatten i pannan och grädda i 175 °C i ca 75 minuter eller tills köttet är genomstekt.
 3. Lyft köttet till vila. Sila ner stekfonden i grytan och tillsätt grädden.
-4. Koka såsen i några minuter och kolla smaken. Skiva fläsket och servera med såsen.
+4. Sjud såsen i några minuter och smaka av. Ta den från värmen och rör ner smöret. Skiva fläskköttet och servera med såsen.
 
 ## Anteckningar
 

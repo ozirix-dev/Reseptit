@@ -6,7 +6,7 @@ category: paaruoka
 language: th
 status: published
 servings: 4
-time_total_min: 120
+time_total_min: 510
 main_ingredient:
   - ankka
   - kurkku
@@ -75,3 +75,4 @@ translation_of: pekingin-ankka
 ## หมายเหตุ
 
 - เวลาในการปรุงเป็ดขึ้นอยู่กับขนาด ตรวจสอบความสุกด้วยหัววัดอุณหภูมิ
+- เวลารวมโดยประมาณ 510 นาที: 25 min เตรียมส่วนผสม, 360 min ผึ่งให้แห้งในตู้เย็น, 110 min อบ, 15 min พักเนื้อ. หากผึ่งนานกว่านี้ เวลารวมจะเพิ่มขึ้น ตรวจสอบความสุกด้วยเทอร์โมมิเตอร์อาหาร

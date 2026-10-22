@@ -1,10 +1,9 @@
 ---
-title: Ketopizza Pofiber-pohjalla
+title: Pizza Pofiber-pohjalla
 recipe_id: ketopizza-pofiber-pohjalla
 url_slug: ketopizza-pofiber-pohjalla
 category: paaruoka
 language: fi
-diet_class: keto
 servings: 2
 main_ingredient:
   - juusto
@@ -14,14 +13,11 @@ cooking_method:
   - uuni
 difficulty: helppo
 tags:
-  - ketopizza
-  - vähähiilihydraattinen
   - pofiber
   - pannupizza
 image:
   src: paaruoat/ketopizza-pofiber-pohjalla.webp
-  alt: Pofiber-pohjainen ketopizza, jossa on pepperonia, paprikaa, oliiveja ja
-    sulanutta juustoa
+  alt: Pizza Pofiber-pohjalla, pepperonilla, paprikalla, oliiveilla ja sulaneella juustolla
   width: 1280
   height: 853
 ingredients:
@@ -62,7 +58,7 @@ translation_status:
 status: published
 ---
 
-# Ketopizza Pofiber-pohjalla
+# Pizza Pofiber-pohjalla
 
 Juustoinen, pehmeäksi sekoittuva Pofiber-pohja paistuu kuumassa uunissa rapeareunaiseksi pizzaksi. Täytteet voit valita makusi mukaan.
 
@@ -83,4 +79,4 @@ Pohjan juusto, tuorejuusto ja kananmuna sitovat Pofiberin taikinaksi. Ohjeesta t
 ## Muistiinpanot
 
 - Pohjaa ei yleensä tarvitse esipaistaa.
-- Pohjassa on usein alle 5 g hiilihydraatteja koko pizzapohjassa. Määrä vaihtelee käytettyjen tuotteiden ja täytteiden mukaan.
+- Hiilihydraattimäärä riippuu käytetyistä tuotteista ja annoskoosta. Laske se valitsemiesi tuotteiden pakkaustiedoista ja huomioi myös lisäkkeet ja täytteet.

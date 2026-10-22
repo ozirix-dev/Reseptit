@@ -1,11 +1,10 @@
 ---
-title: Keto-spenatplättar
+title: Spenatplättar med mandelmjöl
 recipe_id: keto-pinaattiletut
 url_slug: keto-pinaattiletut
 category: paaruoka
 language: sv
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - kananmuna
   - pinaatti
@@ -16,7 +15,6 @@ time_total_min: 25
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - lågkolhydrat
 image:
   src: paaruoat/keto-pinaattiletut.webp
   alt: En hög spenatplättar med bär och ett ljust tillbehör
@@ -46,9 +44,9 @@ source_recipe: reseptit/paaruoat/keto-pinaattiletut.md
 translation_of: keto-pinaattiletut
 ---
 
-# Keto-spenatplättar
+# Spenatplättar med mandelmjöl
 
-De här lågkolhydratplättarna med spenat steks i panna. Receptet ger tre portioner.
+De här plättarna med spenat, färskost och mandelmjöl steks i panna. Receptet ger tre portioner.
 
 ## Beskrivning
 
@@ -63,3 +61,4 @@ De här lågkolhydratplättarna med spenat steks i panna. Receptet ger tre porti
 ## Anteckningar
 
 – Kontrollera om de är färdiga och krydda till sist efter egen smak.
+- Kolhydratmängden beror på vilka produkter du använder och portionsstorleken. Beräkna den utifrån förpackningarnas näringsvärden och räkna även med tillbehör och fyllningar.

@@ -6,7 +6,7 @@ category: paaruoka
 language: en
 status: published
 servings: 4
-time_total_min: 75
+time_total_min: 900
 main_ingredient:
   - kikherne
   - vehnäjauho
@@ -103,3 +103,4 @@ Punjabi chole bhature combines an aromatic chickpea curry sauce with airy fried 
 ## Notes
 
 - Hot oil should be handled with care.
+- Estimated total time is 900 minutes: 720 min overnight soaking, 180 min boiling, making the curry and dough, resting the dough and frying the breads. The estimate allows 12 hours for soaking. Follow the chickpea packet instructions for soaking; the cooking time varies with the chickpeas and the number of frying batches.

@@ -6,7 +6,7 @@ category: paaruoka
 language: en
 status: published
 servings: 4
-time_total_min: 120
+time_total_min: 510
 main_ingredient:
   - ankka
   - kurkku
@@ -75,3 +75,4 @@ The home kitchen's version of Peking duck: crispy fried duck served in thin stri
 ## Notes
 
 - The cooking time of the duck depends on the size. Check the doneness with a cooking probe.
+- Estimated total time is 510 minutes: 25 min preparation, 360 min drying in the fridge, 110 min roasting, 15 min resting. Longer drying increases the total time; check doneness with a food thermometer.

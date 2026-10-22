@@ -1,11 +1,10 @@
 ---
-title: Keto Cinnamon Rolls
+title: Cinnamon rolls with cheese dough
 recipe_id: keto-korvapuustit
 url_slug: keto-korvapuustit
 category: leivonnainen
 language: en
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - mantelijauho
   - tuorejuusto
@@ -16,7 +15,6 @@ time_total_min: 40
 difficulty: easy
 tags:
   - Finnish home cooking
-  - low carb
 image:
   src: leivonnaiset/keto-korvapuustit.webp
   alt: Cinnamon rolls on a platter
@@ -49,7 +47,7 @@ source_recipe: reseptit/leivonnaiset/keto-korvapuustit.md
 translation_of: keto-korvapuustit
 ---
 
-# Keto Cinnamon Rolls
+# Cinnamon rolls with cheese dough
 
 A cinnamon filling is rolled inside a dough made with almond flour, mozzarella and cream cheese.
 
@@ -67,3 +65,4 @@ Erythritol sweetens the butter and cinnamon filling.
 ## Notes
 
 - Check for doneness and finally season according to your own taste.
+- The carbohydrate content depends on the products used and the portion size. Calculate it from the labels of your chosen products, including any accompaniments and toppings.

@@ -78,7 +78,7 @@ I paellan i valenciansk stil tillagas kortkornigt ris i en panna i en saffransbu
 
 1. Hetta upp oljan i en vid panna. Bryn kyckling- och kaninbitarna överallt.
 2. Tillsätt bönorna och fräs i några minuter. Blanda i tomat och rökt paprika.
-3. Tillsätt riset och rör om för att belägga kornen i oljan. Häll den varma buljongen som saffran har blötts i i pannan. Krydda med salt.
+3. Tillsätt riset och rör om för att belägga kornen i oljan. Häll den varma buljongen som saffran har blötts i i pannan. Krydda med salt. Lägg rosmarinkvisten i buljongen om du använder den; ta bort kvisten före servering.
 4. Fördela ingredienserna jämnt på pannan. Koka på medelvärme i ca 8 minuter och fortsätt på lägre värme i 12-15 minuter. Rör inte om riset igen efter att ha tillsatt buljongen.
 5. När riset är kokt och vätskan har absorberats, ta bort kastrullen från spisen. Täck lätt och låt vila i 5 minuter.
 

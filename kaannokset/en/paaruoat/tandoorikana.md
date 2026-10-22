@@ -6,7 +6,7 @@ category: paaruoka
 language: en
 status: published
 servings: 4
-time_total_min: 90
+time_total_min: 130
 main_ingredient:
   - broileri
   - jogurtti
@@ -84,3 +84,4 @@ Chicken marinated in yogurt and spices is fried in a hot oven or grill until it 
 ## Notes
 
 - Tandoori chicken traditionally gets a red tint from the spices; no food coloring is needed.
+- Estimated total time is 130 minutes: 15 min preparation, 60 min marinating, 45 min roasting, 5 min browning under the grill, 5 min resting. The estimate assumes one hour of marinating; overnight marinating increases the total time. Cook longer if needed according to the thermometer reading.

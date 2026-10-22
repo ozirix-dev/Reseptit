@@ -1,11 +1,10 @@
 ---
-title: Keto Pancake
+title: Oven pancake with almond flour
 recipe_id: keto-pannukakku
 url_slug: keto-pannukakku
 category: jalkiruoka
 language: en
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - kananmuna
   - kerma
@@ -16,7 +15,6 @@ time_total_min: 35
 difficulty: easy
 tags:
   - Finnish home cooking
-  - low carb
 image:
   src: jalkiruoat/keto-pannukakku.webp
   alt: A piece of pancake with blueberries, raspberries and whipped cream
@@ -49,7 +47,7 @@ source_recipe: reseptit/jalkiruoat/keto-pannukakku.md
 translation_of: keto-pannukakku
 ---
 
-# Keto Pancake
+# Oven pancake with almond flour
 
 This oven pancake is made with eggs, cream, cream cheese and almond flour.
 
@@ -66,3 +64,4 @@ Psyllium binds the batter without wheat flour.
 ## Notes
 
 - Check for doneness and finally season according to your own taste.
+- The carbohydrate content depends on the products used and the portion size. Calculate it from the labels of your chosen products, including any accompaniments and toppings.

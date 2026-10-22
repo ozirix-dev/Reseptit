@@ -6,7 +6,7 @@ category: paaruoka
 language: fi
 status: published
 servings: 4
-time_total_min: 120
+time_total_min: 510
 main_ingredient:
   - ankka
   - kurkku
@@ -77,3 +77,4 @@ Kotikeittiön versio Pekingin ankasta: rapeaksi paistettu ankka tarjoillaan ohui
 ## Muistiinpanot
 
 - Ankan kypsymisaika riippuu koosta. Tarkista kypsyys paistomittarilla.
+- Kokonaisaika-arvio on 510 minuuttia: 25 min esivalmistelut, 360 min kuivatus jääkaapissa, 110 min paisto, 15 min lepo. Pidempi kuivatus lisää kokonaisaikaa; kypsyys varmistetaan lämpömittarilla.

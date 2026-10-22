@@ -92,7 +92,7 @@ A shared table meal where thin pieces of meat and vegetables are cooked in a hot
 2. Pour the stock into the pot and bring to a boil. Simmer on low heat for 20 minutes. If desired, strain the whole spices.
 3. Pour the stock into a heat-resistant pot suitable for use at the table. Keep it simmering on a hob or a tabletop hot-pot cooker designed for cooking food.
 4. Add small portions of meat, tofu, mushrooms and cabbage to the broth. Cook the meat all over and the vegetables until soft.
-5. Cook the noodles in the broth according to the instructions on the package and serve everything immediately.
+5. Cook the noodles in the stock according to the packet instructions. Finely chop the spring onions and divide between small dipping bowls. Add a little boiling stock from the pot to each bowl. Serve immediately as a dip for the cooked food.
 
 ## Notes
 

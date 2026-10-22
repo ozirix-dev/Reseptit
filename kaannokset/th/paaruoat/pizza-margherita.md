@@ -6,7 +6,7 @@ category: paaruoka
 language: th
 status: published
 servings: 2
-time_total_min: 40
+time_total_min: 100
 main_ingredient:
   - vehnä
   - tomaatti
@@ -73,3 +73,4 @@ translation_of: pizza-margherita
 ## หมายเหตุ
 
 - ระบายมอสซาเรลล่าชีสให้ดีเพื่อไม่ให้ไส้ชุ่มฐาน
+- เวลารวมโดยประมาณ 100 นาที: 20 min ทำแป้งและขึ้นรูปพิซซ่า, 60 min พักแป้งให้ขึ้น, 20 min อบพิซซ่าสองถาดทีละถาด. อุ่นเตาอบและหินพิซซ่าระหว่างพักแป้งให้ขึ้น

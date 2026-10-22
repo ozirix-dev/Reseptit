@@ -6,7 +6,7 @@ category: paaruoka
 language: sv
 status: published
 servings: 4
-time_total_min: 90
+time_total_min: 130
 main_ingredient:
   - broileri
   - jogurtti
@@ -84,3 +84,4 @@ Kyckling marinerad i yoghurt och kryddor steks i varm ugn eller grill tills den 
 ## Anteckningar
 
 - Tandoorikyckling får traditionellt en röd nyans av kryddorna; ingen matfärg behövs.
+- Beräknad totaltid är 130 minuter: 15 min förberedelser, 60 min marinering, 45 min stekning i ugn, 5 min grillning av ytan, 5 min vila. Beräkningen utgår från en timmes marinering; marinering över natten ökar totaltiden. Tillaga längre vid behov enligt termometerns värde.

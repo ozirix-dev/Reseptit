@@ -1,11 +1,10 @@
 ---
-title: ซินนามอนโรลคีโต
+title: ซินนามอนโรลแป้งชีส
 recipe_id: keto-korvapuustit
 url_slug: keto-korvapuustit
 category: leivonnainen
 language: th
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - mantelijauho
   - tuorejuusto
@@ -16,7 +15,6 @@ time_total_min: 40
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - คาร์โบไฮเดรตต่ำ
 image:
   src: leivonnaiset/keto-korvapuustit.webp
   alt: ซินนามอนโรลบนจาน
@@ -49,7 +47,7 @@ source_recipe: reseptit/leivonnaiset/keto-korvapuustit.md
 translation_of: keto-korvapuustit
 ---
 
-# ซินนามอนโรลคีโต
+# ซินนามอนโรลแป้งชีส
 
 ม้วนไส้อบเชยในแป้งที่ทำจากแป้งอัลมอนด์ มอสซาเรลลา และครีมชีส ไส้เนยและอบเชยใช้ความหวานจากอิริทริทอล.
 
@@ -67,3 +65,4 @@ translation_of: keto-korvapuustit
 ## หมายเหตุ
 
 - ตรวจสอบความสุกแล้วจึงปรุงรสตามรสนิยมของคุณเอง
+- ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับผลิตภัณฑ์ที่ใช้และขนาดเสิร์ฟ คำนวณจากข้อมูลโภชนาการบนบรรจุภัณฑ์ของผลิตภัณฑ์ที่เลือก โดยรวมเครื่องเคียง ไส้ และหน้าที่เพิ่มด้วย

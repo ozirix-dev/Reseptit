@@ -66,7 +66,7 @@ I het olja stiger omeletten och får krispiga kanter. Använd en liten djup pann
 
 ## Tillagning
 
-1. Bryt äggen i en skål. Tillsätt fisksås och vatten och vispa tills blandningen skummar lite.
+1. Bryt äggen i en skål. Tillsätt fisksås och vatten och vispa tills blandningen skummar lite. Rör ner den hackade salladslöken i äggblandningen om du använder den.
 2. Hetta upp oljan i en liten djup panna tills den är väldigt varm.
 3. Häll äggblandningen i pannan. Stek på medelvärme tills kanterna är krispiga och mitten stelnat.
 4. Vänd försiktigt och stek andra sidan tills den är gyllenbrun.

@@ -6,7 +6,7 @@ category: paaruoka
 language: fi
 status: published
 servings: 2
-time_total_min: 40
+time_total_min: 100
 main_ingredient:
   - vehnä
   - tomaatti
@@ -76,3 +76,4 @@ Napolilaisen pizzan yksinkertainen täyte on tomaatti, mozzarella, basilika ja o
 ## Muistiinpanot
 
 - Valuta mozzarella hyvin, jotta täyte ei vetistä pohjaa.
+- Kokonaisaika-arvio on 100 minuuttia: 20 min taikinan teko ja pizzojen muotoilu, 60 min kohotus, 20 min kahden pizzan paisto peräkkäin. Uunin ja pizzakiven kuumennus tehdään taikinan kohotessa.

@@ -1,11 +1,10 @@
 ---
-title: แพนเค้กผักโขมคีโต
+title: แพนเค้กผักโขมแป้งอัลมอนด์
 recipe_id: keto-pinaattiletut
 url_slug: keto-pinaattiletut
 category: paaruoka
 language: th
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - kananmuna
   - pinaatti
@@ -16,7 +15,6 @@ time_total_min: 25
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - คาร์โบไฮเดรตต่ำ
 image:
   src: paaruoat/keto-pinaattiletut.webp
   alt: แพนเค้กผักโขมวางซ้อนกันกับเบอร์รีและเครื่องเคียงสีขาว
@@ -46,9 +44,9 @@ source_recipe: reseptit/paaruoat/keto-pinaattiletut.md
 translation_of: keto-pinaattiletut
 ---
 
-# แพนเค้กผักโขมคีโต
+# แพนเค้กผักโขมแป้งอัลมอนด์
 
-แพนเค้กผักโขมคีโตสูตรนี้ทอดในกระทะ เป็นเมนูคาร์โบไฮเดรตต่ำสำหรับ 3 ที่
+แพนเค้กสูตรนี้ทำจากผักโขม ครีมชีส และแป้งอัลมอนด์ แล้วทอดในกระทะ สูตรนี้สำหรับ 3 ที่
 
 ## คำอธิบาย
 
@@ -63,3 +61,4 @@ translation_of: keto-pinaattiletut
 ## หมายเหตุ
 
 - ตรวจสอบความสุกแล้วจึงปรุงรสตามรสนิยมของคุณเอง
+- ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับผลิตภัณฑ์ที่ใช้และขนาดเสิร์ฟ คำนวณจากข้อมูลโภชนาการบนบรรจุภัณฑ์ของผลิตภัณฑ์ที่เลือก โดยรวมเครื่องเคียง ไส้ และหน้าที่เพิ่มด้วย

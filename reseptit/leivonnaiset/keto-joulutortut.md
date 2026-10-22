@@ -1,11 +1,10 @@
 ---
-title: Keto-joulutortut
+title: Mantelijauhoiset joulutortut
 recipe_id: keto-joulutortut
 url_slug: keto-joulutortut
 category: leivonnainen
 language: fi
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - mantelijauho
   - tuorejuusto
@@ -16,7 +15,6 @@ time_total_min: 35
 difficulty: helppo
 tags:
   - suomalainen kotiruoka
-  - VHH
 image:
   src: leivonnaiset/keto-joulutortut.webp
   alt: Kullanruskeita joulutorttuja luumuhillokeskuksella vadilla
@@ -48,7 +46,7 @@ translation_status:
   th: published
 ---
 
-# Keto-joulutortut
+# Mantelijauhoiset joulutortut
 
 Tähtitorttujen taikina valmistetaan mantelijauhosta, voista ja tuorejuustosta.
 
@@ -66,3 +64,4 @@ Keskelle lisätään luumuhilloa, jonka hiilihydraattipitoisuus riippuu tuottees
 ## Muistiinpanot
 
 - Tarkista kypsyys ja mausta lopuksi oman maun mukaan.
+- Hiilihydraattimäärä riippuu käytetyistä tuotteista ja annoskoosta. Laske se valitsemiesi tuotteiden pakkaustiedoista ja huomioi myös lisäkkeet ja täytteet.

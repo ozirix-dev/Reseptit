@@ -1,10 +1,9 @@
 ---
-title: Ketopizza med Pofiberbotten
+title: Pizza med Pofiberbotten
 recipe_id: ketopizza-pofiber-pohjalla
 url_slug: ketopizza-pofiber-pohjalla
 category: paaruoka
 language: sv
-diet_class: keto
 servings: 2
 main_ingredient:
   - juusto
@@ -14,13 +13,11 @@ cooking_method:
   - uuni
 difficulty: lätt
 tags:
-  - keto pizza
-  - lågkolhydrat
   - pofiber
   - panna pizza
 image:
   src: paaruoat/ketopizza-pofiber-pohjalla.webp
-  alt: Pofiberbaserad keto pizza med pepperoni, paprika, oliver och smält ost
+  alt: Pizza med Pofiberbotten, pepperoni, paprika, oliver och smält ost
   width: 1280
   height: 853
 ingredients:
@@ -55,7 +52,7 @@ source_recipe: reseptit/paaruoat/ketopizza-pofiber-pohjalla.md
 translation_of: ketopizza-pofiber-pohjalla
 ---
 
-# Ketopizza med Pofiberbotten
+# Pizza med Pofiberbotten
 
 Den ostiga, mjuka Pofiberbotten bakas i varm ugn till en pizza med krispiga kanter. Du kan välja fyllningar efter din smak.
 
@@ -76,4 +73,4 @@ Bottenosten, färskosten och ägget binder Pofiber till en deg. Receptet gör en
 ## Anteckningar
 
 – Botten behöver oftast inte vara förgräddad.
-– Botten har ofta mindre än 5 g kolhydrater i hela pizzabotten. Mängden varierar beroende på vilka produkter och fyllningar som används.
+- Kolhydratmängden beror på vilka produkter du använder och portionsstorleken. Beräkna den utifrån förpackningarnas näringsvärden och räkna även med tillbehör och fyllningar.

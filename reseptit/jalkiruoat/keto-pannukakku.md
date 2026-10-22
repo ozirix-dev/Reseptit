@@ -1,11 +1,10 @@
 ---
-title: Keto-pannukakku
+title: Uunipannukakku mantelijauholla
 recipe_id: keto-pannukakku
 url_slug: keto-pannukakku
 category: jalkiruoka
 language: fi
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - kananmuna
   - kerma
@@ -16,7 +15,6 @@ time_total_min: 35
 difficulty: helppo
 tags:
   - suomalainen kotiruoka
-  - VHH
 image:
   src: jalkiruoat/keto-pannukakku.webp
   alt: Pala pannukakkua mustikoiden, vadelmien ja kermavaahdon kanssa
@@ -54,7 +52,7 @@ translation_status:
   th: published
 ---
 
-# Keto-pannukakku
+# Uunipannukakku mantelijauholla
 
 Uunipannukakun taikina tehdään kananmunista, kermasta, tuorejuustosta ja mantelijauhosta.
 
@@ -71,3 +69,4 @@ Psyllium sitoo taikinaa ilman vehnäjauhoa.
 ## Muistiinpanot
 
 - Tarkista kypsyys ja mausta lopuksi oman maun mukaan.
+- Hiilihydraattimäärä riippuu käytetyistä tuotteista ja annoskoosta. Laske se valitsemiesi tuotteiden pakkaustiedoista ja huomioi myös lisäkkeet ja täytteet.

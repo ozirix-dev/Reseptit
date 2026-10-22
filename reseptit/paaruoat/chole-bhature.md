@@ -6,7 +6,7 @@ category: paaruoka
 language: fi
 status: published
 servings: 4
-time_total_min: 75
+time_total_min: 900
 main_ingredient:
   - kikherne
   - vehnäjauho
@@ -105,3 +105,4 @@ Punjabilainen chole bhature yhdistää aromaattisen kikhernecurry-kastikkeen ja 
 ## Muistiinpanot
 
 - Kuumaa öljyä tulee käsitellä varoen.
+- Kokonaisaika-arvio on 900 minuuttia: 720 min yön yli liotus, 180 min keitto, kastikkeen ja taikinan teko, taikinan lepo sekä leipien paisto. Liotukseen varataan arviossa 12 tuntia. Noudata kikherneiden pakkauksen liotusohjetta; valmistusaika vaihtelee papujen ja paistoerien mukaan.
