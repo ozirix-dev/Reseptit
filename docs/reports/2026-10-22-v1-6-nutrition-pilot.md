@@ -101,6 +101,11 @@ uuden laskenta-ajon päivästä. Korjausten yksikkötestit ja TypeScript läpäi
 
 Kertolaskut, summat ja annosjako säilyvät nyt tarkkoina rationaalilukuina
 ennen viimeistä pyöristystä. Regressio varmistaa 0,35 × 90 / 100 = 0,315
-→ 0,32 myös usean aineksen annosjaossa. Kahdeksan malliregressiota
+→ 0,32 myös usean aineksen annosjaossa. Yhdeksän malliregressiota
 kattavat lisäksi tietueiden, laskentakoodin, lataajan, skeeman ja
 riippuvuuslukituksen tiivisteet sekä muuttuneiden syötteiden tunnistuksen.
+
+Lohitietue ja lohifilee kohdistetaan yksilöidyillä tunnisteilla, eivät
+listan sijainnilla. Ehdollinen proteiinivertailu käyttää ajon nykyisiä
+määriä, annoksia ja vanhaa reseptiarvoa. Järjestyksen, määrän ja annosten
+muutos sekä puuttuva/moninkertainen lohiaine testataan.

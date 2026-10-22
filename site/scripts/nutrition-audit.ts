@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { nutritionProvenance } from "./nutrition-provenance";
+import { salmonScenario, salmonComparison } from "./nutrition-pilot";
 import path from "node:path";
 import { auditTranslations } from "./translation-audit";
 import { calculate, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
@@ -35,13 +36,13 @@ const pilots = [];
 for (const [id, uncertainties] of Object.entries(blockers)) {
   const source = audit.publishedSources.find((r) => r.data.recipe_id === id);
   if (!source) throw Error(`Pilot source missing: ${id}`);
-  const ingredients: IngredientInput[] = source.data.ingredients.map((i) => ({ ...i, state: "UNRESOLVED", matchEvidence: "" }));
+  let ingredients: IngredientInput[] = source.data.ingredients.map((i) => ({ ...i, state: "UNRESOLVED", matchEvidence: "" }));
   // This explicit input-only scenario demonstrates a sourced contribution, not a full dish estimate.
-  if (id === "kermainen-lohipata") ingredients[0] = { ...ingredients[0], record: records[0], state: records[0].state, matchEvidence: "Conditional scenario: 600 g edible raw farmed Salmo salar; species not confirmed by recipe", edibleFraction: 1, edibleEvidence: "Conditional raw edible fillet input, Fineli record edible share 100%", retainedFraction: 1, retentionEvidence: "Input nutrient contribution only, no claim about cooked retention" };
+  if (id === "kermainen-lohipata") ingredients = salmonScenario(ingredients, records);
   const input: Calculation = { recipeId: id, sourceHash: sourceHashes[source.path], calculatedAt, servings: source.data.servings, scope: "Unfinished ingredient-input evidence pilot; not cooked meal nutrition; no sides unless explicitly quantified", reviewerStatus: "AUTOMATED ONLY", carbohydrateOutput: "AVAILABLE_EXCLUDING_FIBRE", ingredients };
   const result = calculate(input);
   pilots.push({ ...result, source_path: source.path, uncertainties, existingPerServing: inventory.find((r) => r.recipe_id === id)!.values,
-    comparison: id === "kermainen-lohipata" ? "Conditional salmon alone contributes 30 g protein/serving, already above old whole-dish 29 g; investigate species/weights/retention, do not overwrite" : "Full comparison blocked; no inferred totals", comparisonStatus: id === "kermainen-lohipata" ? "CONFLICT REQUIRES REVIEW" : "INSUFFICIENT SOURCE DATA" });
+    ...(id === "kermainen-lohipata" ? salmonComparison(input, inventory.find((r) => r.recipe_id === id)!.values.protein_per_serving_g) : { comparison: "Full comparison blocked; no inferred totals", comparisonStatus: "INSUFFICIENT SOURCE DATA" }) });
 }
 const counts = Object.fromEntries(["VERIFIED", "ESTIMATE WITH EVIDENCE", "INSUFFICIENT SOURCE DATA", "CONFLICT REQUIRES REVIEW", "MISSING"].map((status) => [status, inventory.filter((r) => r.status === status).length]));
 const report = { ...provenance, calculatedAt, sources: inventory.length, counts, dietClasses: Object.fromEntries(["keto", "vhh_tiukka", "vhh_valjempi", "unclassified"].map((diet) => [diet, audit.publishedSources.filter((r) => (r.data.diet_class ?? "unclassified") === diet).length])), inventory, pilots };

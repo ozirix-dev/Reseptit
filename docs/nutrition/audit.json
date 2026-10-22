@@ -1,6 +1,6 @@
 {
-  "sourceRevision": "918b35fba058cedfa3a207b5c168986007eccd80",
-  "sourceWorkingTreeChanges": "M site/scripts/nutrition-audit.ts\n M site/scripts/nutrition-model.ts\n?? site/scripts/nutrition-provenance.ts",
+  "sourceRevision": "2a4216bb87d4d0da48c0d0642df6a844666ca4c3",
+  "sourceWorkingTreeChanges": "M site/scripts/nutrition-audit.ts\n?? site/scripts/nutrition-pilot.ts",
   "sourceInputHashes": {
     "docs/nutrition/food-records.json": "bb7948bbcf690a216b56500cfa0ddd76184dc1b0f27c949eeaceddeab19c0559",
     "reseptit/_mallipohjat/ateriakokonaisuus/ateriakokonaisuus_pohja.md": "1ea1e6ec5e4f9598909099c3f083179b09bedd9926a9ddc23536b2181a4e3a85",
@@ -170,8 +170,9 @@
     "site/scripts/build-content.ts": "412996f9d6af0cb846f4465e52766a131d7282ee6df31b67764ce17ec3ed7d80",
     "site/scripts/inventory.ts": "f10fef13e40a2bc6b63099f9708c3272b56f02e380bf6d45671aad6a59932229",
     "site/scripts/measure-images.mjs": "d41d5eeb11c31bc5e099d127d56892fe9226ff2142d90b2d52a8ef9fb604fd98",
-    "site/scripts/nutrition-audit.ts": "e8fa6c35e680567d97cc691d887894dce97c7921be5eaf5840af9f7cea307aca",
+    "site/scripts/nutrition-audit.ts": "bbced96d95db5b8def02ed19317c8012271cc68619040f80b57e0d768280c5a5",
     "site/scripts/nutrition-model.ts": "f05ec33fd2757c697c832819aba2bd75d40bab5838c7edde2ca04521ee4fcc9b",
+    "site/scripts/nutrition-pilot.ts": "89457cecaf3bec23c28e0d846c2e0a7c47a33d2c4681d1e6d5e1e6a60f9b8cb3",
     "site/scripts/nutrition-provenance.ts": "403516990afaaece237d6e4d96d1278bb1c5df2428df1e1039db270a563dac83",
     "site/scripts/prerender.ts": "84d1bedb055bfc970d67710ca9c93912f8a75646b90b58b1dfe15927ca31c978",
     "site/scripts/scale-images.ts": "a7fcb8a5a21d2bbb127a76477cbc92a7cc7fbc54b0f06abc17c27f01f7486595",
@@ -10405,7 +10406,7 @@
           "unit": "g",
           "item": "lohifilee",
           "state": "raw-edible-fillet",
-          "matchEvidence": "Conditional scenario: 600 g edible raw farmed Salmo salar; species not confirmed by recipe",
+          "matchEvidence": "Conditional raw farmed Salmo salar contribution using current recipe quantity; species not confirmed by recipe",
           "record": {
             "id": "fineli-34255-search-snapshot-2026-10-22",
             "name": "Lohi, filee, kasvatettu Salmo salar",
@@ -10807,7 +10808,17 @@
         "protein_per_serving_g": 29,
         "fat_per_serving_g": 35
       },
-      "comparison": "Conditional salmon alone contributes 30 g protein/serving, already above old whole-dish 29 g; investigate species/weights/retention, do not overwrite",
+      "conditionalSalmonPerServing": {
+        "kcal": 339,
+        "protein": 30,
+        "fat": 24.6,
+        "carbohydrate": 0,
+        "fibre": null,
+        "sugars": null,
+        "polyols": null,
+        "netCarbohydrate": null
+      },
+      "comparison": "Conditional salmon input protein/serving: 30 g; existing whole-dish protein/serving: 29 g. Input exceeds existing estimate; investigate species/weights/retention. Do not overwrite.",
       "comparisonStatus": "CONFLICT REQUIRES REVIEW"
     },
     {
