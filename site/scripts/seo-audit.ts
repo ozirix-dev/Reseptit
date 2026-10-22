@@ -120,8 +120,16 @@ export function inspectDiscovery(sitemap: string, robots: string, routes: string
   const body = document?.[1].replace(/<url>\s*<loc>(?:[^<&]|&amp;|&lt;|&gt;|&quot;|&apos;)*<\/loc>\s*<\/url>/g, "").trim();
   if (!document || body !== "" || !isDeepStrictEqual([...urls].sort(), routes.map((r) => siteBase + r).sort())) issues.push({ route: "/sitemap.xml", code: "SITEMAP", detail: "Malformed/unsupported sitemap XML or missing, extra or duplicate URLs" });
   const blocked = routes.some((r) => ["*", "googlebot", "googlebot-image"].some((agent) => blockedByRobots(robots, "/Reseptit" + r, agent)));
-  if (!robots.includes(`Sitemap: ${siteBase}/sitemap.xml`) || blocked) issues.push({ route: "/robots.txt", code: "ROBOTS", detail: "Project robots blocks published paths or lacks sitemap reference" });
+  const sitemapDirective = robots.split(/\r?\n/).map((line) => line.split("#")[0].trim()).some((line) => /^sitemap\s*:/i.test(line) && line.slice(line.indexOf(":") + 1).trim() === `${siteBase}/sitemap.xml`);
+  if (!sitemapDirective || blocked) issues.push({ route: "/robots.txt", code: "ROBOTS", detail: "Project robots blocks published paths or lacks sitemap reference" });
   return issues;
+}
+
+export function inspectNotFound(html: string): SeoFinding[] {
+  const document = html.replace(/<!--[\s\S]*?-->/g, "").replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+  const noindex = tags(document, "meta").some((m) => m.name?.toLowerCase() === "robots" && m.content?.toLowerCase().split(/[,\s]+/).includes("noindex"));
+  return !noindex || tags(document, "link").some((l) => l.rel === "canonical" || l.hreflang) || /application\/ld\+json/.test(html) || texts(document, "h1").length !== 1
+    ? [{ route: "/404.html", code: "404_POLICY", detail: "404 must have real robots noindex, one H1, no canonical/hreflang/JSON-LD" }] : [];
 }
 
 export async function auditSeo(dist: string, recipes: RecipeEntry[], manifestRoutes: string[]) {
@@ -157,7 +165,7 @@ export async function auditSeo(dist: string, recipes: RecipeEntry[], manifestRou
     } catch (error) { add("IMAGE_FILE", `${url}: ${String(error)}`); }
   }
   const missing = await readFile(path.join(dist, "404.html"), "utf8");
-  if (!tags(missing, "meta").some((m) => m.name === "robots" && m.content === "noindex,follow") || tags(missing, "link").some((l) => l.rel === "canonical" || l.hreflang) || /application\/ld\+json/.test(missing) || texts(missing, "h1").length !== 1) add("404_POLICY", "404 must be noindex, with no canonical, hreflang or Recipe data");
+  findings.push(...inspectNotFound(missing));
   const verification = await readFile(path.join(dist, "google0c6f9c0486376f0f.html"), "utf8");
   if (verification !== "google-site-verification: google0c6f9c0486376f0f.html") add("VERIFICATION_FILE", "Verification content changed");
   return { mode: "offline-dist", routes: pages.length, recipes: recipes.length, imageFiles: images.size, sitemapUrls: urls.length, findings,

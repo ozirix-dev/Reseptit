@@ -54,7 +54,7 @@ ominaisuuden ja näkyvät tilat, ei tilin henkilötietoja.
 `npm ci`, `npm test`, `test:translations`, `test:image`, `build`,
 `test:static`, `test:browser`, `npm audit --audit-level=low`, `audit:seo`
 ja `audit:seo:public` läpäisivät. Selaintestit ajettiin asennetulla Bravella.
-Staattisia testejä on 14, joista 4 uusia SEO-regressioita.
+Staattisia testejä on 15, joista 5 uusia SEO-regressioita.
 Build: JS 363,97 kB / gzip 116,46 kB; CSS 9,37 / 2,63 kB, ennallaan.
 Ei uusia riippuvuuksia eikä haavoittuvuuksia. Markdown-lint ja diff-check
 suoritetaan ennen commitia; GitHubin ajantasainen CI/review kuuluu PR:lle.
@@ -77,3 +77,8 @@ Robots-tulkinta huomioi user-agent-ryhmät, wildcardit, rivin lopun ja
 pisimmän Allow/Disallow-säännön. Regressiot ja uusi 480 URL:n julkinen ajo
 läpäisivät. Tuntemattomat sitemap-XML-laajennukset hylätään; tämä ei ole
 yleiskäyttöinen XML-parseri. PR:n viimeinen CI/review tarkistetaan erikseen.
+
+Lisäksi Sitemap-direktiivi luetaan nyt vain kommenttien ulkopuolelta.
+404-tarkistus vaatii todellisen robots-metaelementin noindex-arvon;
+kommentin, skriptin tai näkyvän tekstin maininta ei riitä. Molemmat
+regressiot läpäisivät.

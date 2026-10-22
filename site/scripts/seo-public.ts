@@ -1,6 +1,6 @@
 // Explicit network mode: GET only, no Search Console account operations.
 import { siteContent } from "../src/generated/content.generated";
-import { expectedPages, inspectPage, inspectDiscovery, siteBase } from "./seo-audit";
+import { expectedPages, inspectPage, inspectDiscovery, inspectNotFound, siteBase } from "./seo-audit";
 
 const findings: unknown[] = [];
 let checked = 0;
@@ -20,7 +20,7 @@ for (const file of ["robots.txt", "sitemap.xml", "google0c6f9c0486376f0f.html", 
   const expected = file.startsWith("v16-") ? 404 : 200;
   if (response.status !== expected) findings.push({ file, status: response.status, expected });
   if (file.startsWith("google") && body.trim() !== `google-site-verification: ${file}`) findings.push({ file, error: "verification mismatch" });
-  if (expected === 404 && !/noindex/.test(body)) findings.push({ file, error: "missing noindex" });
+  if (expected === 404) findings.push(...inspectNotFound(body));
 }
 findings.push(...inspectDiscovery(discovery["sitemap.xml"], discovery["robots.txt"], pages.map((p) => p.route)));
 console.log(JSON.stringify({ mode: "public-GET", checked, findings, note: "HTTP availability does not prove Google ownership or indexing" }, null, 2));

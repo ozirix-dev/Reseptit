@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { auditSeo, expectedPages, inspectPage, inspectDiscovery, blockedByRobots, siteBase } from "../scripts/seo-audit";
+import { auditSeo, expectedPages, inspectPage, inspectDiscovery, blockedByRobots, inspectNotFound, siteBase } from "../scripts/seo-audit";
 import { siteContent } from "../src/generated/content.generated";
 import { contentManifest } from "../src/generated/routes.generated";
 
@@ -12,9 +12,14 @@ test("HTTP 200 discovery bodies must contain the expected sitemap and crawling p
   const robots = `User-agent: *\nSitemap: ${siteBase}/sitemap.xml\n`;
   assert.deepEqual(inspectDiscovery(sitemap, robots, ["/"]), []);
   for (const wrong of ["<html>not XML</html>", "<urlset></urlset>", sitemap.replace("</urlset>", ""), sitemap.replace("</url>", "</broken>"), sitemap.replace("</urlset>", `<url><loc>${siteBase}/</loc></url></urlset>`)]) assert.ok(inspectDiscovery(wrong, robots, ["/"]).some((f) => f.code === "SITEMAP"));
-  for (const wrong of ["", robots + "Disallow: /\n", robots + "Disallow: /Reseptit/\n", robots + "Disallow: /Reseptit/*\n", robots + "Disallow: /*\n"]) assert.ok(inspectDiscovery(sitemap, wrong, ["/"]).some((f) => f.code === "ROBOTS"));
+  for (const wrong of ["", robots.replace("Sitemap:", "# Sitemap:"), robots + "Disallow: /\n", robots + "Disallow: /Reseptit/\n", robots + "Disallow: /Reseptit/*\n", robots + "Disallow: /*\n"]) assert.ok(inspectDiscovery(sitemap, wrong, ["/"]).some((f) => f.code === "ROBOTS"));
   assert.equal(blockedByRobots("User-agent: *\nDisallow: /\nAllow: /Reseptit/", "/Reseptit/test/", "googlebot"), false);
   assert.equal(blockedByRobots("User-agent: *\nAllow: /\nUser-agent: Googlebot\nDisallow: /Reseptit/*", "/Reseptit/test/", "googlebot"), true);
+});
+test("404 needs a real robots meta, not matching text or a comment", () => {
+  const meta = '<meta name="robots" content="noindex,follow">';
+  assert.deepEqual(inspectNotFound(`<html><head>${meta}</head><body><h1>Missing</h1></body></html>`), []);
+  for (const text of ["noindex", `<!--${meta}-->`, `<script>const html='${meta}'</script>`]) assert.ok(inspectNotFound(`<html><h1>Missing</h1>${text}</html>`).length);
 });
 test("all generated routes, images, sitemap and metadata match published source", async () => {
   const report = await auditSeo(dist, siteContent.recipes, Object.keys(contentManifest));
