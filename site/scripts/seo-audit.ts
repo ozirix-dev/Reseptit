@@ -19,7 +19,7 @@ const activeDocument = (html: string) => html.replace(/<!--[\s\S]*?(?:-->|$)/g, 
 const activeMarkup = (html: string) => activeDocument(html).replace(/<(script|style|textarea|xmp|iframe|noembed|noframes)\b[^>]*>[\s\S]*?<\/\1>/gi, "");
 // Consume complete raw-text elements before selecting scripts: a script-looking
 // string inside one of these elements is text, not structured/hydration data.
-const activeScripts = (html: string) => [...activeDocument(html).matchAll(/<(script|style|textarea|title|xmp|iframe|noembed|noframes)\b([^>]*)>([\s\S]*?)(?:<\/\1\s*>|$)/gi)]
+const activeScripts = (html: string) => [...activeDocument(html).matchAll(/<(script|style|textarea|title|xmp|iframe|noembed|noframes|noscript)\b([^>]*)>([\s\S]*?)(?:<\/\1\s*>|$)/gi)]
   .filter((match) => match[1].toLowerCase() === "script")
   .map((match) => ({ attributes: attrs(match[2]), content: match[3] }));
 const tags = (html: string, name: string) => [...activeMarkup(html).matchAll(new RegExp(`<${name}\\b[^>]*>`, "gi"))].map((m) => attrs(m[0]));

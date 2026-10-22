@@ -62,7 +62,7 @@ test("JSON-LD and hydration require active scripts outside inert content", async
   assert.deepEqual(inspectPage(html, page), []);
   const wrappers = [
     (script: string) => `<!--${script}-->`,
-    ...["style", "textarea", "title", "xmp", "iframe", "noembed", "noframes", "template"].map((name) =>
+    ...["style", "textarea", "title", "xmp", "iframe", "noembed", "noframes", "noscript", "template"].map((name) =>
       (script: string) => `<${name}>${script}</${name}>`),
     (script: string) => `<TeXtArEa class="example">${script}</TeXtArEa>`,
   ];
