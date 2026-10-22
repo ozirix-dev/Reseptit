@@ -42,6 +42,9 @@ test("multilingual content, image loading, responsive layout and JavaScript-free
         assert.equal(await page.locator("img").first().evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0), true);
       }
       const noJs = await browser.newPage({ javaScriptEnabled: false });
+      await noJs.route("https://ozirix-dev.github.io/Reseptit/kuvat/**", async (route) => {
+        await route.fulfill({ path: path.resolve("public/kuvat", new URL(route.request().url()).pathname.split("/kuvat/")[1]) });
+      });
       await noJs.goto(`${base}${index}`);
       assert.equal(await noJs.locator("form").count(), 0);
       assert.ok(await noJs.locator(".recipe-card__link").count() > 0);

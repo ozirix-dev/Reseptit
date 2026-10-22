@@ -48,3 +48,14 @@ test("client source never imports the full generated content index", async () =>
   }
   await visit(new URL("../src/", import.meta.url));
 });
+
+test("variant changes invalidate route JSON hashes without moving recipe routes", async () => {
+  const { createHash } = await import("node:crypto");
+  const original = contentForRoute(siteContent.recipes, "/");
+  const updated = structuredClone(original);
+  updated.recipes[0].image!.srcSet += ", https://example.test/new.webp 200w";
+  const hash = (value: unknown) => createHash("sha256").update(JSON.stringify(value)).digest("hex");
+  assert.notEqual(hash(original), hash(updated));
+  assert.equal(updated.path, original.path);
+  assert.equal(updated.recipes[0].routePath, original.recipes[0].routePath);
+});

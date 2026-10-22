@@ -1,0 +1,212 @@
+[
+  {
+    "count": 119,
+    "versions": 476,
+    "imageRuns": [
+      {
+        "pass": "cold",
+        "ms": 23707.7609,
+        "maxRssKiB": 104092,
+        "workers": 1,
+        "sources": 119,
+        "variants": 239,
+        "bytes": 15788118
+      },
+      {
+        "pass": "repeat",
+        "ms": 1252.8843000000002,
+        "maxRssKiB": 87492,
+        "workers": 1,
+        "sources": 119,
+        "variants": 239,
+        "bytes": 15788118
+      },
+      {
+        "pass": "cold",
+        "ms": 12999.399,
+        "maxRssKiB": 112756,
+        "workers": 2,
+        "sources": 119,
+        "variants": 239,
+        "bytes": 15788118
+      },
+      {
+        "pass": "repeat",
+        "ms": 710.7012,
+        "maxRssKiB": 89412,
+        "workers": 2,
+        "sources": 119,
+        "variants": 239,
+        "bytes": 15788118
+      },
+      {
+        "pass": "cold",
+        "ms": 6135.4583,
+        "maxRssKiB": 130524,
+        "workers": 4,
+        "sources": 119,
+        "variants": 239,
+        "bytes": 15788118
+      },
+      {
+        "pass": "repeat",
+        "ms": 521.6635000000001,
+        "maxRssKiB": 91824,
+        "workers": 4,
+        "sources": 119,
+        "variants": 239,
+        "bytes": 15788118
+      }
+    ],
+    "builds": [
+      {
+        "pass": "cold",
+        "ms": 25494.214400000004
+      },
+      {
+        "pass": "repeat",
+        "ms": 16037.2399
+      }
+    ]
+  },
+  {
+    "count": 250,
+    "versions": 1000,
+    "imageRuns": [
+      {
+        "pass": "cold",
+        "ms": 46196.231700000004,
+        "maxRssKiB": 103880,
+        "workers": 1,
+        "sources": 250,
+        "variants": 502,
+        "bytes": 33189370
+      },
+      {
+        "pass": "repeat",
+        "ms": 2434.1364999999996,
+        "maxRssKiB": 87436,
+        "workers": 1,
+        "sources": 250,
+        "variants": 502,
+        "bytes": 33189370
+      },
+      {
+        "pass": "cold",
+        "ms": 20210.950999999997,
+        "maxRssKiB": 111760,
+        "workers": 2,
+        "sources": 250,
+        "variants": 502,
+        "bytes": 33189370
+      },
+      {
+        "pass": "repeat",
+        "ms": 1462.9318,
+        "maxRssKiB": 90452,
+        "workers": 2,
+        "sources": 250,
+        "variants": 502,
+        "bytes": 33189370
+      },
+      {
+        "pass": "cold",
+        "ms": 10813.4162,
+        "maxRssKiB": 134592,
+        "workers": 4,
+        "sources": 250,
+        "variants": 502,
+        "bytes": 33189370
+      },
+      {
+        "pass": "repeat",
+        "ms": 1066.0441,
+        "maxRssKiB": 91568,
+        "workers": 4,
+        "sources": 250,
+        "variants": 502,
+        "bytes": 33189370
+      }
+    ],
+    "builds": [
+      {
+        "pass": "cold",
+        "ms": 42554.84400000001
+      },
+      {
+        "pass": "repeat",
+        "ms": 25222.147999999986
+      }
+    ]
+  },
+  {
+    "count": 500,
+    "versions": 2000,
+    "imageRuns": [
+      {
+        "pass": "cold",
+        "ms": 89161.0931,
+        "maxRssKiB": 104920,
+        "workers": 1,
+        "sources": 500,
+        "variants": 1004,
+        "bytes": 66316666
+      },
+      {
+        "pass": "repeat",
+        "ms": 4877.2717999999995,
+        "maxRssKiB": 88308,
+        "workers": 1,
+        "sources": 500,
+        "variants": 1004,
+        "bytes": 66316666
+      },
+      {
+        "pass": "cold",
+        "ms": 41806.883200000004,
+        "maxRssKiB": 116336,
+        "workers": 2,
+        "sources": 500,
+        "variants": 1004,
+        "bytes": 66316666
+      },
+      {
+        "pass": "repeat",
+        "ms": 3157.2776000000003,
+        "maxRssKiB": 102852,
+        "workers": 2,
+        "sources": 500,
+        "variants": 1004,
+        "bytes": 66316666
+      },
+      {
+        "pass": "cold",
+        "ms": 20663.385,
+        "maxRssKiB": 148124,
+        "workers": 4,
+        "sources": 500,
+        "variants": 1004,
+        "bytes": 66316666
+      },
+      {
+        "pass": "repeat",
+        "ms": 2136.7954,
+        "maxRssKiB": 103392,
+        "workers": 4,
+        "sources": 500,
+        "variants": 1004,
+        "bytes": 66316666
+      }
+    ],
+    "builds": [
+      {
+        "pass": "cold",
+        "ms": 85266.10700000002
+      },
+      {
+        "pass": "repeat",
+        "ms": 42235.10560000001
+      }
+    ]
+  }
+]

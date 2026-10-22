@@ -47,7 +47,7 @@ test("prerendered recipe HTML includes useful content before JavaScript", async 
   assert.match(root[1], /hrefLang="th" href="\/Reseptit\/th\/recipes\/kermainen-lohipata\/"/);
   assert.match(html, /<meta name="twitter:card" content="summary_large_image"/);
   assert.match(html, /property="og:image" content="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/paaruoat\/kermainen-lohipata\.webp"/);
-  assert.match(root[1], /<img class="recipe-image" src="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/paaruoat\/kermainen-lohipata\.webp" alt="Kermainen lohipata lohipaloilla, pinaatilla ja tillillä" width="1254" height="1254"/);
+  assert.match(root[1], /<img class="recipe-image" src="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/paaruoat\/kermainen-lohipata\.webp"[^>]* alt="Kermainen lohipata lohipaloilla, pinaatilla ja tillillä" width="1254" height="1254"/);
   const jsonLdMatch = html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
   assert.ok(jsonLdMatch);
   const jsonLd = JSON.parse(jsonLdMatch[1]);
@@ -180,5 +180,58 @@ test("translation self-review corrections are present in static HTML and recipe 
     const schema = JSON.parse(html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/)![1]);
     assert.equal(schema.name, recipe.title);
     assert.ok(html.includes(`rel="canonical" href="https://ozirix-dev.github.io/Reseptit${recipe.routePath}"`));
+  }
+});
+
+test("responsive image metadata reaches every route, SEO and matching preloads", async () => {
+  const { siteContent } = await import("../src/generated/content.generated");
+  const { contentManifest } = await import("../src/generated/routes.generated");
+  const { recipeCardSizes, recipeHeroSizes } = await import("../src/features/recipes/image-layout");
+  const { createHash } = await import("node:crypto");
+  const attributes = (tag: string) => Object.fromEntries([...tag.matchAll(/([\w-]+)="([^"]*)"/g)].map((m) => [m[1].toLowerCase(), m[2]]));
+  for (const [route, filename] of Object.entries(contentManifest)) {
+    const html = await readFile(path.join(dist, route.slice(1), "index.html"), "utf8");
+    const recipe = siteContent.recipes.find((r) => r.routePath === route);
+    const imgs = [...html.matchAll(/<img\b[^>]*>/g)].map((m) => attributes(m[0]));
+    const payloadText = await readFile(path.join(dist, "data", filename), "utf8");
+    assert.equal(filename, `${createHash("sha256").update(payloadText).digest("hex").slice(0, 20)}.json`);
+    const payload = JSON.parse(payloadText);
+    const expected = recipe ? [recipe] : payload.recipes;
+    assert.equal(imgs.length, expected.filter((r: {image: unknown}) => r.image).length);
+    for (const r of expected) {
+      if (!r.image) continue;
+      const img = imgs.find((image) => image.src === r.image.src)!;
+      assert.ok(img, route);
+      assert.equal(img.srcset, r.image.srcSet);
+      assert.equal(img.sizes, recipe ? recipeHeroSizes : recipeCardSizes);
+      assert.equal(Number(img.width), r.image.width);
+      assert.equal(Number(img.height), r.image.height);
+      assert.ok(img.alt);
+      for (const candidate of img.srcset.split(", ")) {
+        const [url, width] = candidate.split(" ");
+        assert.match(url, /^https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\//);
+        assert.match(width, /^\d+w$/);
+        assert.ok((await readFile(path.join(dist, "kuvat", url.split("/kuvat/")[1]))).length);
+      }
+    }
+    for (const tag of html.matchAll(/<link rel="preload" as="image"[^>]*>/g)) {
+      const preload = attributes(tag[0]);
+      const img = imgs.find((image) => image.srcset === preload.imagesrcset);
+      assert.ok(img, `${route}: preload must match an image`);
+      assert.equal(preload.imagesizes, img.sizes);
+      if (preload.href) assert.equal(preload.href, img.src);
+    }
+    assert.ok(html.includes(`rel="canonical" href="https://ozirix-dev.github.io/Reseptit${route}"`));
+    if (recipe) {
+      assert.deepEqual(payload.recipe.image, recipe.image);
+      const schema = JSON.parse(html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/)![1]);
+      if (recipe.image) {
+        assert.deepEqual(schema.image, [recipe.image.src]);
+        assert.ok(html.includes(`property="og:image" content="${recipe.image.src}"`));
+      }
+      for (const translation of siteContent.recipes.filter((r) => r.recipeId === recipe.recipeId)) {
+        assert.ok(html.includes(`hreflang="${translation.locale}" href="https://ozirix-dev.github.io/Reseptit${translation.routePath}"`));
+      }
+    }
   }
 });
