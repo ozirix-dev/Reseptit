@@ -47,7 +47,7 @@ ylläpitäjä varmistaa ne ennen tietueen lisäämistä. Henkilötietoja ei tarv
 
 ## Testaus
 
-`npm ci`, `npm test`, `test:translations` (18), `test:image` (7), `build`,
+`npm ci`, `npm test`, `test:translations` (20), `test:image` (7), `build`,
 `test:static` (10), `test:browser` (4, Brave), riippuvuusauditointi,
 Markdown-lint ja diff-check läpäisivät lopullisessa tarkistuksessa.
 Ensimmäinen build löysi uuden työkalun TypeScript-tyyppivirheen; se korjattiin.
@@ -70,3 +70,10 @@ Omistaja järjestää Thai-arvioijan ja sen jälkeen EN/SV-arvioinnin, säilytt�
 todisteet ja päättää mergeistä erikseen. Tässä työssä ei mergeä eikä deployta.
 Työpaketit A/B lähtevät samasta mainista; yhteinen package.json-tiedosto
 sovitetaan ja testataan erillisessä yhdistelmätyöpuussa.
+
+## Katselmointikorjaus
+
+Codex havaitsi, ettei FI-lähteen duplikaattivirhe kulkenut kaikkien sen
+käännösten rekisteririville. Lähteen virheet vaikuttavat nyt jokaiseen
+vastineeseen ja estävät HUMAN REVIEW COMPLETE -tilan. Uusi regressio
+testaa duplikaattilähteen myös muuten kelvollisella hyväksyntätodisteella.

@@ -51,7 +51,7 @@ export function buildRegistry(audit: TranslationAuditResult, hashes: Record<stri
     if (!target && source.data.translation_status?.[locale] !== "published") return [];
     const pair = audit.rows.find((r) => r.recipe_id === source.data.recipe_id && r.locale === locale);
     const semantic = target ? knownTermErrors(source.data, target.data, locale, target.content) : [];
-    const pairErrors = audit.errors.filter((e) => e.startsWith(`${source.data.recipe_id}:${locale}:`));
+    const pairErrors = audit.errors.filter((e) => e.startsWith(`${source.data.recipe_id}:${locale}:`) || e.startsWith(`${source.data.recipe_id}:fi:`));
     const structural = !!pair && !pairErrors.some((e) => !semantic.some((s) => e.endsWith(s)));
     const sourceHash = hashes[source.path]; const translationHash = target ? hashes[target.path] : null;
     if (!sourceHash || (target && !translationHash)) throw Error("Missing file hash");
@@ -69,6 +69,13 @@ export function buildRegistry(audit: TranslationAuditResult, hashes: Record<stri
   return rows.sort((a, b) => order[a.locale] - order[b.locale] || priority[a.risk_level] - priority[b.risk_level] || a.recipe_id.localeCompare(b.recipe_id));
 }
 export const escapeHtml = (text: string) => text.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
+export async function loadCurrentReview() {
+  const audit = await auditTranslations();
+  const files: Record<string, string> = Object.fromEntries(await Promise.all([...audit.publishedSources, ...audit.publishedTranslations].map(async (r) => [r.path, await readFile(path.join(root, r.path), "utf8")] as const)));
+  const hashes = Object.fromEntries(Object.entries(files).map(([name, content]) => [name, contentHash(content)]));
+  const evidence = evidenceSchema.parse(JSON.parse(await readFile(path.join(root, "meta/kaannokset/human-review-evidence.json"), "utf8")));
+  return { audit, files, rows: buildRegistry(audit, hashes, evidence) };
+}
 export async function writeReviewPack(output: string, audit: TranslationAuditResult, rows: ReturnType<typeof buildRegistry>, files: Record<string, string>) {
   await mkdir(output, { recursive: true });
   const links: string[] = [];
@@ -83,11 +90,7 @@ export async function writeReviewPack(output: string, audit: TranslationAuditRes
   await writeFile(path.join(output, "index.html"), `<!doctype html><html lang="fi"><meta charset="utf-8"><meta name="robots" content="noindex"><title>Käännösten toimituksellinen tarkistus</title><h1>Käännösten tarkistusjono</h1><p>Paikallinen aineisto. Thai: ainesosat ja valmistus ensin; sitten EN ja SV. Automaattinen tarkistus ei ole ihmisen hyväksyntä.</p><ol>${links.join("")}</ol></html>`);
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
-  const audit = await auditTranslations();
-  const files: Record<string, string> = Object.fromEntries(await Promise.all([...audit.publishedSources, ...audit.publishedTranslations].map(async (r) => [r.path, await readFile(path.join(root, r.path), "utf8")] as const)));
-  const hashes = Object.fromEntries(Object.entries(files).map(([name, content]) => [name, contentHash(content)]));
-  const evidence = evidenceSchema.parse(JSON.parse(await readFile(path.join(root, "meta/kaannokset/human-review-evidence.json"), "utf8")));
-  const rows = buildRegistry(audit, hashes, evidence);
+  const { audit, files, rows } = await loadCurrentReview();
   const output = path.join(root, "tmp/translation-review");
   await writeReviewPack(output, audit, rows, files);
   await writeFile(path.join(output, "registry.json"), JSON.stringify(rows, null, 2) + "\n");

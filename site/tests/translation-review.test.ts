@@ -1,8 +1,16 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { auditTranslations, auditRecipePairs } from "../scripts/translation-audit";
-import { buildRegistry, contentHash, humanStatus, scopes, escapeHtml, evidenceSchema, type ReviewEvidence } from "../scripts/translation-review";
+import { buildRegistry, contentHash, humanStatus, scopes, escapeHtml, evidenceSchema, loadCurrentReview, type ReviewEvidence } from "../scripts/translation-review";
 const proof: ReviewEvidence = { recipe_id: "synthetic-fixture", locale: "en", evidence_id: "synthetic-test-not-a-real-approval", source_content_hash: contentHash("source"), translation_content_hash: contentHash("translation"), reviewed_at: "2026-10-20", scope: [...scopes], status: "complete", human_attestation: true };
+test("checked-in evidence is validated against real current file hashes", async () => {
+  const { audit, rows } = await loadCurrentReview();
+  assert.deepEqual(audit.errors, []);
+  assert.equal(rows.length, audit.publishedTranslations.length);
+  for (const row of rows) if (row.human_review_status === "HUMAN REVIEW COMPLETE") {
+    assert.ok(row.review_evidence_id); assert.ok(row.last_reviewed_at); assert.equal(row.structural_status, "PASS");
+  }
+});
 test("evidence status and both content hashes protect approvals", () => {
   const s = proof.source_content_hash, t = proof.translation_content_hash;
   assert.equal(contentHash("a\r\nb"), contentHash("a\nb"));
@@ -49,4 +57,14 @@ test("known mistranslation and narrow negation guard remain visible", async () =
   const row = buildRegistry(auditRecipePairs([source], [target]), hashes, [])[0];
   assert.equal(row.automated_semantic_status, "FINDINGS"); assert.match(row.notes.join(" "), /negated/);
   assert.equal(escapeHtml('<script>"&'), "&lt;script&gt;&quot;&amp;");
+});
+test("source-level failures prevent complete status on all affected translations", async () => {
+  const all = await auditTranslations();
+  const source = structuredClone(all.publishedSources[0]); source.data.translation_status = { en: "published" }; source.data.translation_languages = ["en"];
+  const target = all.publishedTranslations.find((r) => r.data.recipe_id === source.data.recipe_id && r.data.language === "en")!;
+  const hashes = { [source.path]: proof.source_content_hash, [target.path]: proof.translation_content_hash };
+  const evidence = { ...proof, recipe_id: source.data.recipe_id };
+  const rows = buildRegistry(auditRecipePairs([source, source], [target]), hashes, [evidence]);
+  assert.ok(rows.every((row) => row.structural_status === "FAIL" && row.human_review_status !== "HUMAN REVIEW COMPLETE"));
+  assert.ok(rows.every((row) => row.notes.some((note) => note.includes(":fi: duplicate"))));
 });
