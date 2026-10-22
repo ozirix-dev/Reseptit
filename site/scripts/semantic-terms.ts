@@ -67,6 +67,7 @@ function alignedTextErrors(source: string[], target: string[], locale: ReviewLoc
 
 export function semanticNoteErrors(source: string[], target: string[], locale: ReviewLocale): string[] {
   return alignedTextErrors(source, target, locale, [
+    { source: /juustokumin/i, bad: { sv: /ostkummin/i }, meaning: "cumin / spiskummin" },
     { source: /^hienonnettuna$/, bad: { en: /refined/i, sv: /förfinad/i, th: /ขัดเกลา/ }, meaning: "finely chopped" },
     { source: /^muusiin$/, bad: { en: /muse/i, sv: /fundera/i, th: /รำพึง/ }, meaning: "for the mash" },
     { source: /^nahallisina ja luullisina$/, bad: { en: /leathery|bony/i, sv: /läderartad|benig/i }, meaning: "skin-on and bone-in" },

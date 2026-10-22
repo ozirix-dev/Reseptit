@@ -67,6 +67,10 @@ ingredients:
     unit: ""
     item: spring onions and coriander
     note: for serving
+  - amount: null
+    unit: ""
+    item: lime wedges
+    note: to serve
 translation_languages: []
 translation_status: {}
 source_language: fi

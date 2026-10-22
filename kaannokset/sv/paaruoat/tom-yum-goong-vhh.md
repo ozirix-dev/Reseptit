@@ -26,7 +26,6 @@ image:
 carbs_net_per_serving_g: 6
 carbs_total_per_serving_g: 8
 protein_per_serving_g: 28
-fat_per_serving_g: 8
 ingredients:
   - amount: 500
     unit: g

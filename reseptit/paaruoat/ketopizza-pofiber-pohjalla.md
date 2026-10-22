@@ -24,29 +24,26 @@ ingredients:
   - amount: 175
     unit: g
     item: juustoraastetta
-    note: 150–200 g; esimerkiksi Oltermannia tai mozzarellaa, mielellään itse
-      raastettuna
+    note: esimerkiksi Oltermannia tai mozzarellaa, mielellään itse raastettuna
   - amount: 2.5
     unit: rkl
     item: tuorejuustoa
-    note: 2–3 rkl; vaihtoehtona jogurtti, ranskankerma tai kermaviili
+    note: vaihtoehtona jogurtti, ranskankerma tai kermaviili
   - amount: 1
     unit: ""
     item: isoa kananmunaa
-    note: vaihtoehtona 2 pientä
+    note: jokaisen ison munan voi korvata kahdella pienellä
   - amount: 3.5
     unit: rkl
     item: Pofiberiä
-    note: 3–4 rkl
   - amount: 75
     unit: g
     item: tomaattikastiketta
-    note: noin 4 rkl; esimerkiksi pizzakastiketta tai paseerattua tomaattia
+    note: esimerkiksi pizzakastiketta tai paseerattua tomaattia
   - amount: null
     unit: ""
     item: haluamiasi pizzatäytteitä
-    note: esimerkiksi kinkkua, pepperonia, paprikaa, sipulia, oliiveja, mozzarellaa,
-      fetaa tai yrttejä
+    note: esimerkiksi kinkkua, pepperonia, paprikaa, sipulia, oliiveja, mozzarellaa, fetaa tai yrttejä
 translation_languages:
   - en
   - sv
@@ -68,12 +65,12 @@ Pohjan juusto, tuorejuusto ja kananmuna sitovat Pofiberin taikinaksi. Ohjeesta t
 
 ## Valmistus
 
-1. Kuumenna uuni mahdollisimman kuumaksi, noin 250–275 asteeseen. Käytä halutessasi pizzatoimintoa, alalämpöä tai kiertoilmaa.
+1. Kuumenna uuni noin 250–275 asteeseen vain, jos käyttämäsi leivinpaperi kestää valitun lämpötilan. Älä ylitä paperin pakkauksessa ilmoitettua enimmäislämpötilaa; laske uunin lämpöä tarvittaessa. Käytä halutessasi pizzatoimintoa, alalämpöä tai kiertoilmaa.
 2. Halutessasi sulata juustoraastetta ja tuorejuustoa mikrossa 30–60 sekuntia, jotta saat pehmeämmän taikinan.
 3. Sekoita juusto, tuorejuusto, kananmuna ja Pofiber tasaiseksi massaksi. Vaivaa käsin tai sekoita voimakkaasti, kunnes taikina on yhtenäinen. Taikina saa jäädä pehmeäksi.
 4. Levitä taikina leivinpaperille pellille. Aseta toinen leivinpaperi päälle ja levitä ohueksi pyöreäksi pohjaksi tai lusikoi paksummaksi pannupizzaksi. Poista päällimmäinen paperi.
 5. Levitä pohjalle tomaattikastike ja lisää haluamasi täytteet.
-6. Paista kuumassa uunissa noin 8–12 minuuttia, kunnes reunat ovat rapeat ja juusto on sulanut.
+6. Paista noin 8–12 minuuttia, kunnes reunat ovat rapeat ja juusto on sulanut. Matalammassa lämpötilassa paisto voi kestää pidempään; seuraa kypsymistä.
 7. Tarjoa heti kuumana.
 
 ## Muistiinpanot

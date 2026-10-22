@@ -30,7 +30,6 @@ ingredients:
   - amount: 200
     unit: g
     item: tomato sauce or chopped tomatoes
-    note: about 1.5 dl
   - amount: 2
     unit: tsp
     item: dried oregano
@@ -40,17 +39,16 @@ ingredients:
   - amount: 0.5
     unit: tsp
     item: black pepper
-  - amount: null
-    unit: ""
+  - amount: 1
+    unit: "clove"
     item: garlic
-    note: 1–2 cloves
+    note: add more to taste if desired
   - amount: 400
     unit: g
     item: zucchini
   - amount: 1
     unit: ""
     item: pointed red pepper
-    note: about 90 g
   - amount: 150
     unit: g
     item: grated cheese

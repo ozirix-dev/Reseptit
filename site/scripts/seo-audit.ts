@@ -68,7 +68,7 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
     const expectedData = JSON.parse(JSON.stringify({
       "@context": "https://schema.org", "@type": "Recipe", name: recipe.title, description: recipe.description || undefined,
       inLanguage: recipe.locale, recipeCategory: recipe.category, keywords: recipe.tags.length ? recipe.tags.join(", ") : undefined,
-      ...(recipe.image ? { image: [recipe.image.src] } : {}), recipeYield: recipe.servings,
+      ...(recipe.image ? { image: [recipe.image.src] } : {}), recipeYield: String(recipe.servings),
       recipeIngredient: recipe.ingredients.map((i) => [i.amount, i.unit, i.item, i.note].filter((v) => v !== null && v !== undefined && v !== "").join(" ")),
       recipeInstructions: recipe.instructionsText.map((text) => ({ "@type": "HowToStep", text })),
       totalTime: recipe.timeTotalMin ? `PT${recipe.timeTotalMin}M` : undefined,

@@ -41,7 +41,7 @@ export function SeoMeta() {
     const title = known
       ? recipe ? `${recipe.title} | ${titleByLocale[locale]}` : `${titleByLocale[locale]} | Ozirix`
       : `${recipeUi[locale].notFound} | ${titleByLocale[locale]}`;
-    const description = recipe?.description || (!known ? recipeUi[locale].notFound : locale === "fi" ? "Selkeitä reseptejä arkeen." : `${titleByLocale[locale]} for everyday cooking.`);
+    const description = recipe?.description || (!known ? recipeUi[locale].notFound : recipeUi[locale].intro);
     const canonical = recipe ? `${siteBase}${recipe.routePath}` : indexExists ? `${siteBase}${indexPath(locale)}` : null;
     document.title = title;
     document.documentElement.lang = locale;

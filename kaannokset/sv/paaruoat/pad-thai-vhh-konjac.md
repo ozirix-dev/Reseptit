@@ -67,6 +67,10 @@ ingredients:
     unit: ""
     item: vårlök och koriander
     note: för servering
+  - amount: null
+    unit: ""
+    item: limeklyftor
+    note: till servering
 translation_languages: []
 translation_status: {}
 source_language: fi

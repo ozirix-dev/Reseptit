@@ -88,9 +88,9 @@ Den här mättande varianten av klassisk makaronilåda får extra protein från 
 
 ## Gör så här
 
-1. Sätt ugnen på 180 °C. Smörj en stor ugnsform.
+1. Sätt ugnen på 180 °C. Smörj en stor ugnsform med en tredjedel av oljan i ingredienslistan.
 2. Koka makaronerna i saltat vatten ungefär två minuter kortare än vad förpackningen anger. Häll av vattnet.
-3. Finhacka löken. Hetta upp oljan i en stekpanna och bryn köttfärsen tillsammans med löken. Krydda med vitlökspulver, svartpeppar, paprikapulver och salt.
+3. Finhacka löken. Hetta upp resten av oljan i en stekpanna och bryn köttfärsen tillsammans med löken. Krydda med vitlökspulver, svartpeppar, paprikapulver och salt.
 4. Mixa keson slät. Rör ner ägg, mjölk och matlagningsgrädde. Blanda i 200 g riven ost.
 5. Blanda makaronerna och köttfärsen i ugnsformen. Häll över äggblandningen och rör försiktigt.
 6. Strö resten, 100 g, av den rivna osten över ytan. Grädda i 40–50 minuter, tills mitten har stannat. Täck löst med folie om ytan får för mycket färg.

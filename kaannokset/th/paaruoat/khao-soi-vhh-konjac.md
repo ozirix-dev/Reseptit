@@ -20,8 +20,8 @@ tags:
   - แกง
   - วฮ
 image:
-  src: paaruoat/khao-soi-vhh-konjac.webp
-  alt: ซุปแกงไก่ข้าวซอยพร้อมบะหมี่เส้นบุก หัวหอมกรอบ และสมุนไพร
+  src: paaruoat/khao-soi-vhh-konjac-v2.webp
+  alt: ข้าวซอยเส้นบุกในน้ำแกงกะทิ ใส่เนื้อไก่ไม่มีกระดูก หอมแดงสด และผักกาดดอง
   width: 1280
   height: 853
 carbs_net_per_serving_g: 10

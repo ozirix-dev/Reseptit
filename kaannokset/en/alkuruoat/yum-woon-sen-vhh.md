@@ -88,9 +88,9 @@ The salad should be mixed with the dressing just before serving, so that the veg
 ## Preparation
 
 1. Rinse the konjac noodles well, drain and dry-fry in a pan for 3–4 minutes. Transfer to a bowl to cool.
-2. Heat the oil in a pan and fry the minced meat until cooked. Season lightly with fish sauce and set aside.
+2. Heat the oil in a pan and fry the minced pork until cooked through. Season with one quarter of the fish sauce and set aside.
 3. Cook the prawns in boiling water for 1-2 minutes until cooked. Drain.
-4. Mix fish sauce, lime juice, erythritol and chili into a sauce.
+4. Mix the remaining fish sauce with the lime juice, erythritol and chilli to make the dressing.
 5. Add the noodles, minced meat, shrimp, tomato, onion and celery to the bowl. Pour the sauce over and mix.
 6. Finish with cilantro and serve immediately.
 

@@ -9,7 +9,7 @@ export function recipeJsonLd(recipe: RecipeEntry): Record<string, unknown> {
     description: recipe.description || undefined, inLanguage: recipe.locale, recipeCategory: recipe.category,
     keywords: recipe.tags.length ? recipe.tags.join(", ") : undefined,
     ...(recipe.image ? { image: [recipe.image.src] } : {}),
-    recipeYield: recipe.servings,
+    recipeYield: String(recipe.servings),
     recipeIngredient: recipe.ingredients.map((item) => [item.amount, item.unit, item.item, item.note]
       .filter((value) => value !== null && value !== undefined && value !== "").join(" ")),
     recipeInstructions: recipe.instructionsText.map((text) => ({ "@type": "HowToStep", text })),

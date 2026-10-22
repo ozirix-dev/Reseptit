@@ -20,8 +20,7 @@ fat_per_serving_g: 32.5
 protein_per_serving_g: 35
 image:
   src: paaruoat/italian-pata.webp
-  alt: Italialainen jauheliha-kesäkurpitsapata, jonka pinnalla on sulanutta
-    mozzarellaa ja basilikaa
+  alt: Italialainen jauheliha-kesäkurpitsapata, jonka pinnalla on sulanutta mozzarellaa ja basilikaa
   width: 1280
   height: 853
 ingredients:
@@ -31,7 +30,6 @@ ingredients:
   - amount: 200
     unit: g
     item: tomaattikastiketta tai tomaattimurskaa
-    note: noin 1,5 dl
   - amount: 2
     unit: tl
     item: kuivattua oreganoa
@@ -41,17 +39,16 @@ ingredients:
   - amount: 0.5
     unit: tl
     item: mustapippuria
-  - amount: null
-    unit: ""
-    item: valkosipulia
-    note: 1–2 kynttä
+  - amount: 1
+    unit: "kpl"
+    item: valkosipulinkynttä
+    note: lisää halutessasi maun mukaan
   - amount: 400
     unit: g
     item: kesäkurpitsaa
   - amount: 1
     unit: ""
     item: suippopaprika
-    note: noin 90 g
   - amount: 150
     unit: g
     item: juustoraastetta

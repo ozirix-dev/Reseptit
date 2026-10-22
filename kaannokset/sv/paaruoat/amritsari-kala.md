@@ -40,7 +40,7 @@ ingredients:
   - amount: 1
     unit: tsk
     item: ajwain frön
-    note: eller ostkummin
+    note: eller spiskummin
   - amount: 1
     unit: tsk
     item: paprikapulver

@@ -88,9 +88,9 @@ Salladen ska blandas med dressingen precis innan servering, så att grönsakerna
 ## Tillagning
 
 1. Skölj konjaknudlarna väl, låt rinna av och torrstek i panna i 3–4 minuter. Överför till en skål för att svalna.
-2. Hetta upp oljan i en panna och stek färsen tills den är genomstekt. Krydda lätt med fisksås och ställ åt sidan.
+2. Hetta upp oljan i en panna och stek fläskfärsen genomstekt. Krydda med en fjärdedel av fisksåsen och ställ åt sidan.
 3. Koka räkorna i kokande vatten i 1-2 minuter tills de är kokta. Dränera.
-4. Blanda fisksås, limejuice, erytritol och chili till en sås.
+4. Blanda resten av fisksåsen med limejuice, erytritol och chili till en dressing.
 5. Tillsätt nudlar, köttfärs, räkor, tomat, lök och selleri i skålen. Häll över såsen och blanda.
 6. Avsluta med koriander och servera genast.
 

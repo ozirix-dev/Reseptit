@@ -53,7 +53,7 @@ test("prerendered recipe HTML includes useful content before JavaScript", async 
   const jsonLd = JSON.parse(jsonLdMatch[1]);
   assert.equal(jsonLd["@type"], "Recipe");
   assert.equal(jsonLd.name, "Kermainen lohipata");
-  assert.equal(jsonLd.recipeYield, 4);
+  assert.equal(jsonLd.recipeYield, "4");
   assert.deepEqual(jsonLd.image, ["https://ozirix-dev.github.io/Reseptit/kuvat/paaruoat/kermainen-lohipata.webp"]);
   assert.equal("author" in jsonLd, false);
   assert.equal("datePublished" in jsonLd, false);
@@ -91,7 +91,7 @@ test("translated macaroni bake pages have localized content, SEO metadata and ma
     const jsonLd = JSON.parse(jsonLdMatch[1]);
     assert.equal(jsonLd.name, translation.title);
     assert.equal(jsonLd.inLanguage, translation.locale);
-    assert.equal(jsonLd.recipeYield, 8);
+    assert.equal(jsonLd.recipeYield, "8");
     assert.equal(jsonLd.recipeInstructions.length, 7);
     assert.equal(jsonLd.nutrition.proteinContent, "45 g");
     assert.deepEqual(jsonLd.image, ["https://ozirix-dev.github.io/Reseptit/kuvat/paaruoat/jauheliha-makaronilaatikko.webp"]);

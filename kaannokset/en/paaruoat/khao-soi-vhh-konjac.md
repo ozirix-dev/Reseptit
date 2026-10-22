@@ -20,8 +20,8 @@ tags:
   - curry
   - VHH
 image:
-  src: paaruoat/khao-soi-vhh-konjac.webp
-  alt: Khao soi chicken curry soup with konjac noodles, crispy onions and herbs
+  src: paaruoat/khao-soi-vhh-konjac-v2.webp
+  alt: Khao soi curry soup with konjac noodles, boneless chicken pieces, raw shallots and pickled mustard greens
   width: 1280
   height: 853
 carbs_net_per_serving_g: 10
