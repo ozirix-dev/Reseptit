@@ -55,6 +55,11 @@ ingredients:
     unit: g
     item: tuoretta persiljaa
     note: silputtuna
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Turkkilainen menemen tomaateilla ja paprikalla

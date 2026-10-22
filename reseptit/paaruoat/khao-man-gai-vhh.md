@@ -33,8 +33,11 @@ ingredients:
   - {amount: 1, unit: rkl, item: limettimehua}
   - {amount: 1, unit: kpl, item: valkosipulinkynsi, note: hienonnettuna}
   - {amount: null, unit: "", item: tuoretta korianteria, note: tarjoiluun}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # VHH-khao man gai – thaimaalainen kana ja kukkakaaliriisi

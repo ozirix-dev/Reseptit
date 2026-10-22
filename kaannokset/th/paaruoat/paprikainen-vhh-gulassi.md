@@ -57,7 +57,7 @@ ingredients:
     note: สำหรับเนื้อสีน้ำตาล
   - amount: 0.5
     unit: ช้อนชา
-    item: ยี่หร่าชีส
+    item: ยี่หร่า
   - amount: 3
     unit: dl
     item: น้ำซุปเนื้อ

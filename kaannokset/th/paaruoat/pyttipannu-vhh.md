@@ -60,7 +60,7 @@ source_recipe: reseptit/paaruoat/pyttipannu-vhh.md
 translation_of: vhh-pyttipannu
 ---
 
-#หม้อต้มไส้กรอกและผัก VHH
+# หม้อต้มไส้กรอกและผัก VHH
 
 Pyttipannu ชิ้นทอดที่คุ้นเคยทำจากซูกินี ลันทัส และไส้กรอก แต่ละส่วนปิดท้ายด้วยไข่ดาว
 

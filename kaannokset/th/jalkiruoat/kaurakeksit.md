@@ -9,6 +9,30 @@ source_recipe: "reseptit/jalkiruoat/kaurakeksit.md"
 translation_of: "kaurakeksit"
 diet_class: "vhh_valjempi"
 tags: ["leivonta", "rapeat", "kahvipoyta", "jalkiruoka"]
+servings: 24
+ingredients:
+  - amount: 4
+    unit: dl
+    item: ข้าวโอ๊ตแบบเกล็ด
+  - amount: 2
+    unit: dl
+    item: น้ำตาลทราย
+  - amount: 1
+    unit: ช้อนชา
+    item: น้ำตาลวานิลลา
+  - amount: 2
+    unit: ช้อนโต๊ะ
+    item: แป้งสาลี
+  - amount: 2
+    unit: ช้อนชา
+    item: ผงฟู
+  - amount: 100
+    unit: g
+    item: เนย
+    note: ละลายแล้วพักให้เย็น
+  - amount: 2
+    unit: ""
+    item: ไข่
 status: "draft"
 ---
 

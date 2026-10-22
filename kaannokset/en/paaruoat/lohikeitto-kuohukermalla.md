@@ -14,7 +14,7 @@ difficulty: easy
 tags:
   - salmon soup
   - soup
-  - fish food
+  - fish dish
   - whipping cream
 image:
   src: paaruoat/lohikeitto-kuohukermalla.webp
@@ -43,7 +43,7 @@ ingredients:
     item: water
   - amount: null
     unit: ""
-    item: fish fondue
+    item: fish stock concentrate
     note: according to the package dosage for 8 dl of water
   - amount: 8
     unit: ""
@@ -61,7 +61,7 @@ ingredients:
   - amount: null
     unit: ""
     item: fresh dill
-    note: refined
+    note: finely chopped
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/lohikeitto-kuohukermalla.md

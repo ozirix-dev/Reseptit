@@ -66,6 +66,11 @@ ingredients:
     unit: g
     item: tuoretta korianteria
     note: hienonnettuna
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Masala dosa ja mausteinen perunatäyte

@@ -35,8 +35,11 @@ ingredients:
   - {amount: 4, unit: kpl, item: kananmunaa, note: kovaksi keitettynä}
   - {amount: 300, unit: g, item: kiinankaalia tai paksoita}
   - {amount: 500, unit: g, item: kukkakaaliriisiä, note: tarjoiluun}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # VHH-khao kha moo – haudutettua porsasta kukkakaaliriisillä

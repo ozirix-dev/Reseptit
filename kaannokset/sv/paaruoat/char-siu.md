@@ -1,0 +1,78 @@
+---
+title: Char siu – Kantonesiskt grillfläsk
+recipe_id: char-siu
+url_slug: char-siu
+category: paaruoka
+language: sv
+status: published
+servings: 4
+time_total_min: 70
+main_ingredient:
+  - sianliha
+cooking_method:
+  - uuni
+difficulty: lätt
+tags:
+  - kinesiska
+  - fläsk
+image:
+  src: paaruoat/char-siu.webp
+  alt: Char siu grillad fläsk glittrande skivor med ris och gröna grönsaker
+  width: 1279
+  height: 853
+ingredients:
+  - amount: 800
+    unit: g
+    item: fläskfilé
+    note: skär i långa stänger
+  - amount: 3
+    unit: msk
+    item: hoisinsås
+  - amount: 2
+    unit: msk
+    item: sojasås
+  - amount: 2
+    unit: msk
+    item: honung
+  - amount: 1
+    unit: msk
+    item: risvinäger
+  - amount: 1
+    unit: tsk
+    item: kinesisk krydda
+  - amount: 1
+    unit: st
+    item: en vitlöksklyfta
+    note: riven
+  - amount: 1
+    unit: msk
+    item: honung
+    note: för att borsta ytan
+  - amount: 4
+    unit: portioner
+    item: kokt ris
+    note: för servering
+source_language: fi
+source_recipe: reseptit/paaruoat/char-siu.md
+translation_of: char-siu
+---
+
+# Char siu – Kantonesiskt grillfläsk
+
+Sött och salt fläsk i kantonesisk stil får en rödbrun yta av soja, honung och timjan.
+
+## Beskrivning
+
+Sött och salt fläsk i kantonesisk stil får en rödbrun yta av soja, honung och timjan.
+
+## Tillagning
+
+1. Blanda hoisinsås, sojasås, honung, risvinsvinäger, timjan och vitlök. Spara en matsked marinad.
+2. Vänd fläsket i marinaden och låt det marinera i kylen i minst 30 minuter.
+3. Värm ugnen till 220 grader. Lägg köttet på gallret på plåten och grädda i 25–35 minuter. Vänd en gång och peppra med marinad.
+4. Pensla ytan med honung och grädda i ytterligare 3–5 minuter tills ytan är blank. Se till att den inre temperaturen är minst 70 °C.
+5. Låt köttet vila i 5 minuter och skär i skivor. Servera med ris.
+
+## Anteckningar
+
+– Marinaden innehåller rått kött, så använd den inte som sås till färdigmat utan att koka den.

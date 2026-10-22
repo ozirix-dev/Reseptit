@@ -1,0 +1,90 @@
+---
+title: Pani puri – crisp filled Indian street-food shells
+recipe_id: pani-puri
+url_slug: pani-puri
+category: alkuruoka
+language: en
+status: published
+servings: 4
+time_total_min: 60
+main_ingredient:
+  - kikherne
+  - peruna
+cooking_method:
+  - liesi
+  - friteeraus
+difficulty: medium
+tags:
+  - Indian
+  - street kitchen
+  - a vegetable
+image:
+  src: paaruoat/pani-puri.webp
+  alt: Pani Puri crispy filled dough balls with spicy herbal water
+  width: 1280
+  height: 853
+ingredients:
+  - amount: 150
+    unit: g
+    item: semolina
+  - amount: 2
+    unit: tbsp
+    item: wheat flour
+  - amount: 1
+    unit: dl
+    item: water
+    note: the dough
+  - amount: 300
+    unit: g
+    item: potatoes
+  - amount: 150
+    unit: g
+    item: ripe chickpeas
+  - amount: 20
+    unit: g
+    item: fresh mint
+  - amount: 20
+    unit: g
+    item: fresh coriander
+  - amount: 2
+    unit: tbsp
+    item: tamarind paste
+  - amount: 1
+    unit: piece
+    item: lime
+    note: juice
+  - amount: 1
+    unit: tsp
+    item: ground cumin
+  - amount: 0.5
+    unit: tsp
+    item: chili powder
+  - amount: null
+    unit: ""
+    item: oil
+    note: for deep frying
+source_language: fi
+source_recipe: reseptit/alkuruoat/pani-puri.md
+translation_of: pani-puri
+---
+
+# Pani puri – crisp filled Indian street-food shells
+
+Crispy puri shells are filled with potato and chickpeas, and finished with tangy mint-tamarind water.
+
+## Description
+
+Crispy puri shells are filled with potato and chickpeas, and finished with tangy mint-tamarind water.
+
+## Preparation
+
+1. Mix semolina, wheat flour and water into a firm dough. Cover and let rest for 20 minutes.
+2. Roll the dough into a very thin disc and cut into small circles.
+3. Fry the circles in 180 degree oil. Press lightly to make them rise into a ball. Drain and cool.
+4. Boil the potatoes until cooked and dice them. Mix the potato and chickpeas with salt and a pinch of cumin.
+5. Purée mint, coriander, tamarind, lime juice, cumin, chili and 4 dl cold water. Season with salt.
+6. Make a small opening in the top of the puri, fill with potatoes and chickpeas and serve with herbal water.
+
+## Notes
+
+- Only assemble the bites just before serving, so that the shells stay crispy.

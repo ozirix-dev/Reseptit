@@ -15,7 +15,7 @@ cooking_method: ["uuni"]
 time_total_min: 15
 difficulty: "helppo"
 tags: ["leivonta", "rapeat", "kahvipoyta", "jalkiruoka"]
-translation_languages: ["en", "th"]
+translation_languages: []
 translation_status:
   en: "draft"
   th: "draft"

@@ -52,7 +52,7 @@ source_recipe: reseptit/paaruoat/poronkaristys-kukkakaalimuusilla.md
 translation_of: poronkaristys-kukkakaalimuusilla
 ---
 
-#เนื้อกวางเรนเดียร์กับกะหล่ำดอกบด
+# เนื้อกวางเรนเดียร์กับกะหล่ำดอกบด
 
 Poronkäristys กับดอกกะหล่ำบดเป็นอาหารฟินแลนด์ที่คุ้นเคยในรูปแบบโฮมเมดที่มีคาร์โบไฮเดรตต่ำ สูตรนี้ได้รับการเขียนใหม่เพื่อให้เหมาะกับครัวของคุณเอง และเสิร์ฟได้ 4 ที่หรือตามจำนวนที่ระบุไว้
 

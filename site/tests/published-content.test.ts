@@ -50,7 +50,7 @@ test("the ten additional Thai recipes are published in Finnish with their image 
     "gai-yang-vhh", "kai-jiew-vhh", "keltainen-kanacurry-vhh", "khao-kha-moo-vhh", "moo-ping-vhh",
     "pad-kee-mao-vhh-konjac", "pad-see-ew-vhh-konjac", "punainen-kanacurry-vhh", "tom-kha-gai-vhh", "yum-woon-sen-vhh",
   ];
-  const recipes = siteContent.recipes.filter((recipe) => expectedIds.includes(recipe.recipeId));
+  const recipes = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && expectedIds.includes(recipe.recipeId));
   assert.deepEqual(recipes.map((recipe) => recipe.recipeId).sort(), expectedIds);
   assert.equal(recipes.length, 10);
 
@@ -72,7 +72,7 @@ test("the twenty Indian recipes are published in Finnish with their image assets
     "masala-dosa", "medu-vada", "palak-paneer", "paneer-tikka", "pani-puri", "pav-bhaji",
     "rogan-josh", "samosa", "tandoorikana", "vada-pav",
   ];
-  const recipes = siteContent.recipes.filter((recipe) => expectedIds.includes(recipe.recipeId));
+  const recipes = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && expectedIds.includes(recipe.recipeId));
   assert.deepEqual(recipes.map((recipe) => recipe.recipeId).sort(), expectedIds);
   assert.equal(recipes.length, 20);
 
@@ -95,7 +95,7 @@ test("the twenty Chinese recipes are published in Finnish with their image asset
     "roujiamo", "sichuan-hot-pot", "tangyuan", "tomaatti-kananmuna-wokki",
     "xiaolongbao", "yangzhou-paistettu-riisi",
   ];
-  const recipes = siteContent.recipes.filter((recipe) => expectedIds.includes(recipe.recipeId));
+  const recipes = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && expectedIds.includes(recipe.recipeId));
   assert.deepEqual(recipes.map((recipe) => recipe.recipeId).sort(), expectedIds);
   assert.equal(recipes.length, 20);
 
@@ -117,7 +117,7 @@ test("the twenty Mediterranean recipes are published in Finnish with their image
     "pasta-alla-norma", "pizza-margherita", "ratatouille", "souvlaki", "spanakopita", "tabbouleh",
     "tortilla-de-patatas", "tunisialainen-brik", "tunisialainen-ojja",
   ];
-  const recipes = siteContent.recipes.filter((recipe) => expectedIds.includes(recipe.recipeId));
+  const recipes = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && expectedIds.includes(recipe.recipeId));
   assert.deepEqual(recipes.map((recipe) => recipe.recipeId).sort(), expectedIds);
   assert.equal(recipes.length, 20);
 

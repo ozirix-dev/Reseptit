@@ -51,6 +51,11 @@ ingredients:
     unit: kpl
     item: tuoretta inkivääriä
     note: noin 3 cm pala
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Tangyuan-riisipallot seesamitäytteellä

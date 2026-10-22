@@ -56,6 +56,11 @@ ingredients:
     unit: rkl
     item: inkivääriä
     note: ohueksi suikaloituna tarjoiluun
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Xiaolongbao-höyrynyytit

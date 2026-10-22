@@ -33,8 +33,11 @@ ingredients:
   - {amount: 4, unit: kpl, item: kaffirlimetinlehteä}
   - {amount: 20, unit: g, item: thaibasilikaa}
   - {amount: 1, unit: rkl, item: neutraalia öljyä}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Thaimaalainen vihreä kanacurry kukkakaaliriisillä

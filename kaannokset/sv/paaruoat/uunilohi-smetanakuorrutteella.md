@@ -16,7 +16,7 @@ tags:
   - lågkolhydrat
   - bakad lax
   - gräddfil
-  - fiskmat
+  - fiskrätt
 image:
   src: paaruoat/uunilohi-smetanalla.webp
   alt: Ugnskokt lax under gräddfil, purjolök och dillglasyr med citronskivor

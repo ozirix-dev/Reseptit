@@ -66,6 +66,11 @@ ingredients:
     unit: rkl
     item: chiliöljyä
     note: tarjoiluun
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Lanzhoun naudanliha-nuudelikeitto

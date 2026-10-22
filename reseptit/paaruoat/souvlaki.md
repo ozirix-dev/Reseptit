@@ -65,6 +65,11 @@ ingredients:
     unit: kpl
     item: tomaattia
     note: lohkoina
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Kreikkalainen kanasouvlaki tzatzikilla

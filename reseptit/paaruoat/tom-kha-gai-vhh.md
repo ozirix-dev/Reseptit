@@ -34,8 +34,11 @@ ingredients:
   - {amount: 1, unit: tl, item: erytritolia, note: valinnainen}
   - {amount: 1, unit: kpl, item: punaista chiliä, note: viipaloituna}
   - {amount: null, unit: "", item: tuoretta korianteria, note: tarjoiluun}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # VHH-tom kha gai – kookoksinen kanakeitto

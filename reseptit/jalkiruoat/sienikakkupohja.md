@@ -4,7 +4,7 @@ recipe_id: "sienikakkupohja"
 url_slug: "sienikakkupohja"
 category: "jalkiruoka"
 language: "fi"
-translation_languages: ["en", "th"]
+translation_languages: []
 translation_status:
   en: "draft"
   th: "draft"

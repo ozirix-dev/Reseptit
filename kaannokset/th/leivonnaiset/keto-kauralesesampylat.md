@@ -68,7 +68,7 @@ source_recipe: reseptit/leivonnaiset/keto-kauralesesampylat.md
 translation_of: keto-kauralesesampylat
 ---
 
-#คีโตข้าวโอ๊ตโรล
+# คีโตข้าวโอ๊ตโรล
 
 ขนมปังเนื้อนุ่มที่ประกอบด้วยโปรตีนผสมผสานระหว่างคอตเทจชีสดิบและรำข้าวโอ๊ตที่มีรสชาติเม็ดเล็กกับแป้งอัลมอนด์และไซเลี่ยม สูตรนี้ทำได้เป็นม้วนเล็ก 8 อัน
 

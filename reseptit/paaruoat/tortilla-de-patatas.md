@@ -44,6 +44,11 @@ ingredients:
   - amount: 0.25
     unit: tl
     item: mustapippuria
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Espanjalainen peruna-sipulimunakas

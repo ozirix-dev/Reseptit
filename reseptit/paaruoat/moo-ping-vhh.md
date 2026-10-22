@@ -32,8 +32,11 @@ ingredients:
   - {amount: 1, unit: tl, item: erytritolia}
   - {amount: 1, unit: rkl, item: neutraalia öljyä}
   - {amount: null, unit: "", item: kurkkua ja limelohkoja, note: tarjoiluun}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # VHH-moo ping – thaimaalaiset porsasvartaat

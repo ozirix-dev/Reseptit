@@ -51,6 +51,11 @@ ingredients:
   - amount: 4
     unit: rkl
     item: hoisinkastiketta
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Pekingin ankka kotikeittiössä

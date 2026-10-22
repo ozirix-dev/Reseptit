@@ -33,8 +33,11 @@ ingredients:
   - {amount: 1, unit: tl, item: erytritolia}
   - {amount: 2, unit: kpl, item: valkosipulinkynttä, note: hienonnettuna}
   - {amount: null, unit: "", item: valkopippuria, note: maun mukaan}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # VHH-pad see ew kanalla ja konjaknuudeleilla

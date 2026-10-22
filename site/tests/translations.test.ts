@@ -7,8 +7,8 @@ test("all published translations match the source structure and known critical t
   const translatedSources = result.publishedSources.filter((recipe) =>
     (["en", "sv", "th"] as const).every((locale) => recipe.data.translation_status?.[locale] === "published"),
   );
-  assert.equal(translatedSources.length, 39, "source recipes with all three published translations");
-  assert.equal(result.publishedTranslations.length, translatedSources.length * 3 + 1, "39 complete sets plus the Thai som tam version");
+  assert.equal(translatedSources.length, 119, "source recipes with all three published translations");
+  assert.equal(result.publishedTranslations.length, translatedSources.length * 3, "one published translation per locale for each source recipe");
   assert.equal(result.rows.length, result.publishedTranslations.length, "one audit row per published translation");
   assert.deepEqual(result.errors, []);
   for (const recipe of translatedSources) {

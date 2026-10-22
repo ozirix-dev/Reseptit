@@ -55,7 +55,7 @@ source_recipe: reseptit/paaruoat/ketopizza-pofiber-pohjalla.md
 translation_of: ketopizza-pofiber-pohjalla
 ---
 
-#คีโตพิซซ่าพร้อมฐานโพไฟเบอร์
+# คีโตพิซซ่าพร้อมฐานโพไฟเบอร์
 
 ฐานโพฟิเบอร์สุดชีสที่นุ่มละมุนอบในเตาอบร้อนจนกลายเป็นพิซซ่าที่มีขอบกรอบ คุณสามารถเลือกไส้ได้ตามรสนิยมของคุณ
 

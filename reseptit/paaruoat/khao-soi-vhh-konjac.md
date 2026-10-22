@@ -34,8 +34,11 @@ ingredients:
   - {amount: 1, unit: tl, item: erytritolia}
   - {amount: 100, unit: g, item: pikkelöityä sinappikaalia, note: huuhdeltuna}
   - {amount: 2, unit: kpl, item: salottisipulia, note: viipaloituna}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # VHH-khao soi kanalla ja konjaknuudeleilla

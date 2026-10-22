@@ -37,7 +37,7 @@ ingredients:
     item: liten lök
   - amount: 150
     unit: g
-    item: tomatpuré
+    item: krossade tomater
   - amount: 1
     unit: msk
     item: tomatpuré

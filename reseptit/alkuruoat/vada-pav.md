@@ -65,6 +65,11 @@ ingredients:
     unit: ""
     item: öljyä
     note: uppopaistamiseen
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Vada pav – mausteinen perunapihvi sämpylässä

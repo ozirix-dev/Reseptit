@@ -57,6 +57,11 @@ ingredients:
     unit: rkl
     item: öljyä
     note: paistamiseen
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Amritsari-kala maustetussa kikhernejauhokuoressa

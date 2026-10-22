@@ -61,8 +61,16 @@ async function readRecipes(paths: string[]): Promise<{ path: string; data: Front
 
 function canonicalUnit(unit: string, locale: string): string | null {
   const normalized = unit.trim().toLocaleLowerCase().replaceAll(".", "");
-  if (["", "kpl", "kpl.", "piece", "pieces", "each", "clove", "cloves", "st", "st.", "stk", "stk.", "ลูก", "กลีบ", "ฟอง", "ใบ", "ชิ้น", "ผล"].includes(normalized)) return "each";
-  const common: Record<string, string> = { g: "g", gr: "g", กรัม: "g", kg: "kg", ml: "ml", dl: "dl", เดซิลิตร: "dl", l: "l", ลิตร: "l", cl: "cl", เซนติเมตร: "cm" };
+  if (["", "kpl", "kpl.", "piece", "pieces", "each", "clove", "cloves", "st", "st.", "stk", "stk.", "ลูก", "กลีบ", "ฟอง", "ชิ้น", "ผล"].includes(normalized)) return "each";
+  const common: Record<string, string> = {
+    g: "g", gr: "g", กรัม: "g", kg: "kg", ml: "ml", dl: "dl", เดซิลิตร: "dl", l: "l", ลิตร: "l", cl: "cl", เซนติเมตร: "cm",
+    viipaletta: "slice", viipale: "slice", slices: "slice", slice: "slice", skivor: "slice", skiva: "slice", แผ่น: "slice",
+    arkkia: "sheet", arkki: "sheet", sheets: "sheet", sheet: "sheet", ark: "sheet", แผ่นแป้ง: "sheet",
+    nippua: "bunch", nippu: "bunch", bunches: "bunch", bunch: "bunch", buntar: "bunch", knippen: "bunch", กำ: "bunch",
+    annosta: "serving", annos: "serving", servings: "serving", portion: "serving", portions: "serving", portioner: "serving", ที่: "serving",
+    lehteä: "leaf", blad: "leaf", leaves: "leaf", leaf: "leaf", ใบ: "leaf",
+    siivua: "slice", แว่น: "slice",
+  };
   if (common[normalized]) return common[normalized];
   const localized: Record<string, Record<string, string>> = {
     fi: { tl: "tsp", rkl: "tbsp", ripaus: "pinch" },

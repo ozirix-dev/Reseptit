@@ -16,7 +16,7 @@ tags:
   - low carb
   - baked salmon
   - sour cream
-  - fish food
+  - fish dish
 image:
   src: paaruoat/uunilohi-smetanalla.webp
   alt: Oven-cooked salmon under a sour cream, leek and dill glaze with lemon slices
@@ -71,7 +71,7 @@ This simple salmon dish is cooked in the oven together with a rich glaze. Serve 
 1. Heat the oven to 180 degrees and lightly grease the baking dish.
 2. Check the salmon fillet for bones and place it in the pan, skin side down. Season with salt and white pepper.
 3. Grate the zest from the lemon and squeeze the juice. Chop the dill and slice the rinsed leek. Mix them with sour cream and spoon the mixture over the salmon.
-4. Bake on the middle level of the oven for about 25–30 minutes, until the fish is just cooked and easily splits.
+4. Bake on the medium of the oven for about 25–30 minutes, until the fish is just cooked and easily splits.
 5. Let it rest for a few minutes and serve warm.
 
 ## Notes

@@ -9,6 +9,30 @@ source_recipe: "reseptit/jalkiruoat/kaurakeksit.md"
 translation_of: "kaurakeksit"
 diet_class: "vhh_valjempi"
 tags: ["leivonta", "rapeat", "kahvipoyta", "jalkiruoka"]
+servings: 24
+ingredients:
+  - amount: 4
+    unit: dl
+    item: rolled oats
+  - amount: 2
+    unit: dl
+    item: sugar
+  - amount: 1
+    unit: tsp
+    item: vanilla sugar
+  - amount: 2
+    unit: tbsp
+    item: all-purpose flour
+  - amount: 2
+    unit: tsp
+    item: baking powder
+  - amount: 100
+    unit: g
+    item: butter
+    note: melted and cooled
+  - amount: 2
+    unit: ""
+    item: eggs
 status: "draft"
 ---
 

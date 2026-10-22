@@ -58,7 +58,7 @@ source_recipe: reseptit/paaruoat/nakkikastike-kukkakaalimuusi.md
 translation_of: nakkikastike-kukkakaalimuusi
 ---
 
-#น้ำจิ้มนักกี้และกะหล่ำดอกบด
+# น้ำจิ้มนักกี้และกะหล่ำดอกบด
 
 Quick ไส้กรอกkastike ปรุงในกระทะจนเป็นเนื้อครีม และแทนที่จะใช้มันฝรั่งบด กลับเสิร์ฟดอกกะหล่ำบดที่ปรุงด้วยเนยแทน
 

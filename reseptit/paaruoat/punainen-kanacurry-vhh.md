@@ -33,8 +33,11 @@ ingredients:
   - {amount: 20, unit: g, item: thaibasilikan lehtiä}
   - {amount: 600, unit: g, item: kukkakaaliriisiä}
   - {amount: null, unit: "", item: limelohkoja, note: tarjoiluun}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # VHH-punainen kanacurry kukkakaaliriisillä

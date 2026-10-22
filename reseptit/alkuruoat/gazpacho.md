@@ -56,6 +56,11 @@ ingredients:
     unit: viipaletta
     item: vaaleaa leipää
     note: valinnainen, sakeuttamiseen
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Andalusialainen gazpacho

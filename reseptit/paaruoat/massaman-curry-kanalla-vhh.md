@@ -33,8 +33,11 @@ ingredients:
   - {amount: 1, unit: rkl, item: limettimehua}
   - {amount: 1, unit: tl, item: erytritolia}
   - {amount: 400, unit: g, item: kukkakaaliriisiä, note: lisukkeeksi}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Massaman-kanacurry kukkakaaliriisillä

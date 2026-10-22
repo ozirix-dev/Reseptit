@@ -53,6 +53,11 @@ ingredients:
     unit: ""
     item: gheetä tai voita
     note: paistamiseen
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Aloo paratha – perunatäytteinen pannuleipä

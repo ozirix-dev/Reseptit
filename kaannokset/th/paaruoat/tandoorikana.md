@@ -1,0 +1,86 @@
+---
+title: ไก่ทันดูริในเตาอบ
+recipe_id: tandoorikana
+url_slug: tandoorikana
+category: paaruoka
+language: th
+status: published
+servings: 4
+time_total_min: 90
+main_ingredient:
+  - broileri
+  - jogurtti
+cooking_method:
+  - uuni
+  - grilli
+difficulty: ระดับกลาง
+tags:
+  - อินเดียน
+  - ไก่
+  - อาหารเตาอบ
+image:
+  src: paaruoat/tandoorikana.webp
+  alt: ไก่ทันดูริกับโยเกิร์ตเครื่องเทศ มะนาว และสมุนไพร
+  width: 1280
+  height: 853
+ingredients:
+  - amount: 1
+    unit: kg
+    item: น่องไก่
+    note: ไม่มีผิวหนังหั่นบาง ๆ
+  - amount: 200
+    unit: g
+    item: โยเกิร์ตไม่ปรุงแต่ง
+  - amount: 1
+    unit: ช้อนโต๊ะ
+    item: น้ำมะนาว
+  - amount: 2
+    unit: ช้อนชา
+    item: การัม มาซาลา
+  - amount: 2
+    unit: ช้อนชา
+    item: ผงปาปริก้า
+  - amount: 1
+    unit: ช้อนชา
+    item: ยี่หร่าบด
+  - amount: 1
+    unit: ช้อนชา
+    item: ผักชีบด
+  - amount: 2
+    unit: ชิ้น
+    item: กานพลูกระเทียม
+    note: บดขยี้
+  - amount: 15
+    unit: g
+    item: ขิงสด
+    note: ขูด
+  - amount: 1
+    unit: ช้อนชา
+    item: เกลือ
+  - amount: 1
+    unit: ช้อนโต๊ะ
+    item: น้ำมัน
+source_language: fi
+source_recipe: reseptit/paaruoat/tandoorikana.md
+translation_of: tandoorikana
+---
+
+# ไก่ทันดูริในเตาอบ
+
+ไก่หมักในโยเกิร์ตและเครื่องเทศจะถูกทอดในเตาอบหรือย่างร้อนจนเนื้อไก่ย่างและชุ่มฉ่ำด้านใน
+
+## คำอธิบาย
+
+ไก่หมักในโยเกิร์ตและเครื่องเทศจะถูกทอดในเตาอบหรือย่างร้อนจนเนื้อไก่ย่างและชุ่มฉ่ำด้านใน
+
+## วิธีทำ
+
+1. ผสมโยเกิร์ต น้ำมะนาว เครื่องเทศ กระเทียม ขิง เกลือ และน้ำมัน
+2. ม้วนไก่ในน้ำดองแล้วหมักในตู้เย็นอย่างน้อยหนึ่งชั่วโมง โดยควรข้ามคืน
+3. เปิดเตาอบที่ 230 องศา วางไก่ไว้บนตะแกรงบนถาดอบ
+4. อบประมาณ 35-45 นาที กลับด้าน 1 ครั้ง สุดท้ายปรุงโดยใช้ตะแกรงย่างจนกระทั่งพื้นผิวสุก
+5. ตรวจสอบว่าอุณหภูมิภายในของไก่เนื้ออยู่ที่อย่างน้อย 75 °C พักไว้ 5 นาทีก่อนเสิร์ฟ
+
+## หมายเหตุ
+
+- ไก่ทันดูริมักจะได้สีแดงจากเครื่องเทศ ไม่จำเป็นต้องมีสีผสมอาหาร

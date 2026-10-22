@@ -32,8 +32,11 @@ ingredients:
   - {amount: 1, unit: tl, item: erytritolia}
   - {amount: 20, unit: g, item: thaibasilikaa}
   - {amount: 500, unit: g, item: kukkakaaliriisiä, note: lisukkeeksi}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Panang-kanacurry kukkakaaliriisillä
