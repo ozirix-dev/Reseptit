@@ -8,6 +8,7 @@ on:
       - "kaannokset/**"
       - "kuvat/**"
       - "site/**"
+      - "docs/nutrition/food-records.json"
       - ".github/dependabot.yml"
       - ".github/workflows/pages.yml"
   pull_request:
@@ -16,6 +17,7 @@ on:
       - "kaannokset/**"
       - "kuvat/**"
       - "site/**"
+      - "docs/nutrition/food-records.json"
       - ".github/dependabot.yml"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
