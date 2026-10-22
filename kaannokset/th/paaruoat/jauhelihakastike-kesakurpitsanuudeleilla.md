@@ -52,7 +52,7 @@ source_recipe: reseptit/paaruoat/jauhelihakastike-kesakurpitsanuudeleilla.md
 translation_of: jauhelihakastike-kesakurpitsanuudeleilla
 ---
 
-#น้ำจิ้มเนื้อสับกับบะหมี่บวบ
+# น้ำจิ้มเนื้อสับกับบะหมี่บวบ
 
 ซอสเนื้อสับกับบะหมี่บวบเป็นอาหารฟินแลนด์ที่คุ้นเคยในรูปแบบโฮมเมดที่มีคาร์โบไฮเดรตต่ำ สูตรนี้ได้รับการเขียนใหม่เพื่อให้เหมาะกับครัวของคุณเอง และเสิร์ฟได้ 4 ที่หรือตามจำนวนที่ระบุไว้
 

@@ -55,7 +55,7 @@ source_recipe: reseptit/paaruoat/raejuusto-uunimunakas.md
 translation_of: raejuusto-uunimunakas
 ---
 
-#ไข่เจียวคอทเทจชีสเนื้อนุ่ม
+# ไข่เจียวคอทเทจชีสเนื้อนุ่ม
 
 ไข่เจียวที่อบอย่างนุ่มได้รสชาติเข้มข้นจากคอทเทจชีสบดละเอียด
 

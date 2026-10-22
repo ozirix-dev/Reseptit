@@ -64,6 +64,11 @@ ingredients:
     unit: g
     item: paksoita
     note: valinnainen
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Dan dan -nuudelit porsaskastikkeella

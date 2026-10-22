@@ -1,0 +1,91 @@
+---
+title: แกงพะแนงไก่พร้อมข้าวกะหล่ำดอก
+recipe_id: panang-curry-kanalla-vhh
+url_slug: panang-curry-kanalla-vhh
+category: paaruoka
+language: th
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - broileri
+  - kookosmaito
+cooking_method:
+  - liesi
+servings: 4
+time_total_min: 35
+difficulty: ง่าย
+tags:
+  - ไทย
+  - แกง
+  - วฮ
+image:
+  src: paaruoat/panang-curry-kanalla-vhh.webp
+  alt: แกงพะแนงไก่รสเข้มข้น ใส่กะทิ ใบมะกรูด และข้าวดอกกะหล่ำ
+  width: 1280
+  height: 853
+carbs_net_per_serving_g: 9
+carbs_total_per_serving_g: 13
+protein_per_serving_g: 33
+fat_per_serving_g: 37
+ingredients:
+  - amount: 600
+    unit: g
+    item: เนื้อสะโพกไก่ไม่มีกระดูก
+  - amount: 400
+    unit: ml
+    item: กะทิไขมันเต็ม
+  - amount: 2
+    unit: ช้อนโต๊ะ
+    item: น้ำพริกแกงพะแนง
+  - amount: 150
+    unit: g
+    item: ถั่วเขียว
+    note: ลดลงครึ่งหนึ่ง
+  - amount: 30
+    unit: g
+    item: ถั่วลิสงไม่ใส่เกลือ
+    note: บดขยี้
+  - amount: 4
+    unit: ชิ้น
+    item: ใบมะกรูด
+    note: ตัดเป็นเส้นบาง ๆ
+  - amount: 1
+    unit: ช้อนโต๊ะ
+    item: น้ำปลา
+  - amount: 1
+    unit: ช้อนชา
+    item: อิริทริทอล
+  - amount: 20
+    unit: g
+    item: โหระพาไทย
+  - amount: 500
+    unit: g
+    item: ข้าวกะหล่ำดอก
+    note: เป็นกับข้าว
+translation_languages: []
+translation_status: {}
+source_language: fi
+source_recipe: reseptit/paaruoat/panang-curry-kanalla-vhh.md
+translation_of: panang-curry-kanalla-vhh
+---
+
+# แกงพะแนงไก่กับข้าวกะหล่ำดอก
+
+พะแนงเป็นแกงกะทิเข้มข้นปรุงรสด้วยถั่วลิสงและมะกรูด เสิร์ฟไก่กับข้าวดอกกะหล่ำ
+
+## คำอธิบาย
+
+ความร้อนของพริกแกงจะแตกต่างกันไป ค่อยๆ เติมส่วนผสมและตรวจสอบปริมาณคาร์โบไฮเดรตของผลิตภัณฑ์
+
+## วิธีทำ
+
+1. หั่นไก่เป็นชิ้นขนาดพอดีคำแล้วผ่าถั่วออกครึ่งหนึ่ง
+2. ผัดพริกแกงในหม้อด้วยไฟอ่อนสักครู่
+3. ค่อยๆ ใส่กะทิลงไปผสมให้เข้ากัน เพิ่มไก่และเคี่ยวประมาณ 12 นาที
+4. ใส่ถั่วลงไปและปรุงต่อประมาณ 6 นาทีจนไก่สุกเต็มที่
+5. ปรุงรสด้วยน้ำปลาและอิริทริทอล ใส่ถั่วลิสงและใบมะกรูด
+6. ใส่ใบโหระพาก่อนเสิร์ฟ เสิร์ฟพร้อมข้าวดอกกะหล่ำอุ่น
+
+## หมายเหตุ
+
+- ในรุ่น VHH ข้าวจะถูกแทนที่ด้วยข้าวกะหล่ำดอก คุณค่าทางโภชนาการเป็นสิ่งบ่งชี้และขึ้นอยู่กับพริกแกง

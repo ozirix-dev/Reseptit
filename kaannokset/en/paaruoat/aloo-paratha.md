@@ -1,0 +1,80 @@
+---
+title: Aloo paratha – potato filled pancake
+recipe_id: aloo-paratha
+url_slug: aloo-paratha
+category: paaruoka
+language: en
+status: published
+servings: 4
+time_total_min: 60
+main_ingredient:
+  - peruna
+  - vehnäjauho
+cooking_method:
+  - paistinpannu
+difficulty: medium
+tags:
+  - Indian
+  - Punjabi
+  - a vegetable
+image:
+  src: paaruoat/aloo-paratha.webp
+  alt: Aloo paratha - golden potato-filled bread with yogurt and a pickled side dish
+  width: 1280
+  height: 853
+ingredients:
+  - amount: 300
+    unit: g
+    item: wheat flour
+  - amount: 1.8
+    unit: dl
+    item: water
+    note: the dough
+  - amount: 1
+    unit: tsp
+    item: salt
+  - amount: 400
+    unit: g
+    item: potatoes
+  - amount: 1
+    unit: tsp
+    item: cumin seeds
+  - amount: 0.5
+    unit: tsp
+    item: chili powder
+  - amount: 1
+    unit: tsp
+    item: garam masala
+  - amount: 15
+    unit: g
+    item: fresh coriander
+    note: chopped
+  - amount: null
+    unit: ""
+    item: ghee or butter
+    note: for frying
+source_language: fi
+source_recipe: reseptit/paaruoat/aloo-paratha.md
+translation_of: aloo-paratha
+---
+
+# Aloo paratha – potato filled pancake
+
+Soft wheat bread hides a potato filling seasoned with cumin and chili. Fry the paratha in a pan with ghee.
+
+## Description
+
+Soft wheat bread hides a potato filling seasoned with cumin and chili. Fry the paratha in a pan with ghee.
+
+## Preparation
+
+1. Mix flour, salt and water. Knead into a soft dough and cover for 20 minutes.
+2. Boil the potatoes until cooked. Peel and mash. Mix in the cumin, chili, garam masala and coriander.
+3. Divide the dough and filling into 6 parts. Roll the pieces of dough into small circles.
+4. Put the filling in the center of one circle, cover with the second dough and pinch the edges. Carefully roll into a thin loaf.
+5. Fry in a hot pan on both sides. Add a little ghee to the pan and fry until golden brown spots appear on the surface.
+6. Serve with yogurt, pickled mango or raita.
+
+## Notes
+
+- Roll the filled breads lightly so that the filling does not puncture the dough.

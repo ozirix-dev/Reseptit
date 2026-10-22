@@ -51,6 +51,11 @@ ingredients:
     unit: annosta
     item: keitettyä riisiä
     note: tarjoiluun
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Kiinalainen tomaatti-kananmunawokki

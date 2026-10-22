@@ -33,8 +33,11 @@ ingredients:
   - {amount: 15, unit: g, item: tuoretta korianteria}
   - {amount: 250, unit: g, item: valkokaalia, note: lohkoina tarjoiluun}
   - {amount: 1, unit: kpl, item: kurkkua, note: viipaloituna tarjoiluun}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Larb moo – thaimaalainen mausteinen porsassalaatti

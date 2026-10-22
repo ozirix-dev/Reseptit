@@ -83,7 +83,7 @@ Oat bran is used in moderation for taste. Oat flakes, oat flour, graham flour an
 3. Puree the cottage cheese and eggs until smooth with a stick blender or in a blender. Mix in the cream and cooled melted butter.
 4. Pour the wet ingredients into the dry ingredients mixture and mix until smooth. Let the dough rise for 10 minutes.
 5. Divide the dough into eight parts and shape into rolls with wet hands. If you want, add sesame seeds on top.
-6. Bake on the middle level of the oven for 20–25 minutes, until the surface has acquired color and the rolls feel cooked.
+6. Bake on the medium of the oven for 20–25 minutes, until the surface has acquired color and the rolls feel cooked.
 7. Allow to cool completely before slicing, so the psyllium-bound insides have time to settle.
 
 ## Notes

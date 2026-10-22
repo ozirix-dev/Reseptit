@@ -58,6 +58,11 @@ ingredients:
   - amount: 1
     unit: rkl
     item: maissitärkkelystä
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Baozi-höyrysämpylät porsastäytteellä

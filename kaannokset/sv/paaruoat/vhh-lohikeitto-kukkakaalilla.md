@@ -44,7 +44,7 @@ ingredients:
     item: vatten
   - amount: null
     unit: ""
-    item: fiskfondue
+    item: fiskfond
     note: enligt förpackningens dosering för 8 dl vatten
   - amount: 2
     unit: dl
@@ -59,7 +59,7 @@ ingredients:
   - amount: null
     unit: ""
     item: färsk dill
-    note: förfinad
+    note: finhackad
   - amount: null
     unit: ""
     item: salt
@@ -71,11 +71,11 @@ translation_of: vhh-lohikeitto-kukkakaalilla
 
 # Krämig VHH laxsoppa med blomkål
 
-I denna lågkolhydratversion av finsk krämig laxsoppa ersätts potatis med blomkål. Fiskfondue, vispgrädde och dill håller smaken välbekant full.
+I denna lågkolhydratversion av finsk krämig laxsoppa ersätts potatis med blomkål. Fiskfond, vispgrädde och dill håller smaken välbekant full.
 
 ## Beskrivning
 
-Buljongen kryddas enligt doseringsanvisningen för risfonden på förpackningen. Blomkål kokar snabbt och håller en fin konsistens i soppan, när du tillsätter den först efter att buljongen har kokat upp.
+Buljongen kryddas enligt doseringsanvisningen för fiskfonden på förpackningen. Blomkål kokar snabbt och håller en fin konsistens i soppan, när du tillsätter den först efter att buljongen har kokat upp.
 
 ## Gör så här
 
@@ -89,4 +89,4 @@ Buljongen kryddas enligt doseringsanvisningen för risfonden på förpackningen.
 ## Anteckningar
 
 – Koka inte soppan kraftigt efter att ha tillsatt laxen för att hålla fisken saftig.
-– Styrkan och sältan hos fiskfonduer varierar. Kontrollera smaken innan du tillsätter salt.
+– Styrkan och sältan hos fiskfondens styrka och sälta varierar. Kontrollera smaken innan du tillsätter salt.

@@ -28,8 +28,11 @@ ingredients:
   - {amount: 1, unit: rkl, item: vettä}
   - {amount: 1, unit: kpl, item: kevätsipulia, note: "hienonnettuna, valinnainen"}
   - {amount: null, unit: "", item: kurkkua ja korianteria, note: tarjoiluun}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Kai jiew – thaimaalainen rapeareunainen munakas

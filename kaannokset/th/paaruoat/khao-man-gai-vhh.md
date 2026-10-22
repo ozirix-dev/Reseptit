@@ -1,0 +1,95 @@
+---
+title: สูตรคาร์โบไฮเดรตต่ำ ข้าวมันไก่ – ข้าวมันไก่และดอกกะหล่ำไทย
+recipe_id: khao-man-gai-vhh
+url_slug: khao-man-gai-vhh
+category: paaruoka
+language: th
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - broileri
+  - kukkakaali
+cooking_method:
+  - liesi
+servings: 4
+time_total_min: 45
+difficulty: ง่าย
+tags:
+  - ไทย
+  - ไก่
+  - วฮ
+image:
+  src: paaruoat/khao-man-gai-vhh.webp
+  alt: ข้าวมันไก่กับไก่ต้ม ข้าวดอกกะหล่ำ แตงกวา และซอสขิง
+  width: 1280
+  height: 853
+carbs_net_per_serving_g: 7
+carbs_total_per_serving_g: 10
+protein_per_serving_g: 35
+fat_per_serving_g: 24
+ingredients:
+  - amount: 700
+    unit: g
+    item: เนื้อน่องไก่
+    note: ไม่มีกระดูกและไม่มีผิวหนัง
+  - amount: 700
+    unit: g
+    item: ข้าวกะหล่ำดอก
+  - amount: 1
+    unit: l
+    item: น้ำ
+  - amount: 1
+    unit: ช้อนโต๊ะ
+    item: น้ำสต็อกไก่ไม่ใส่เกลือหรือน้ำสต็อกเข้มข้น
+  - amount: 1
+    unit: ชิ้น
+    item: แตงกวา
+    note: หั่นบาง ๆ
+  - amount: 30
+    unit: g
+    item: ขิงสด
+    note: ขูด
+  - amount: 2
+    unit: ช้อนโต๊ะ
+    item: เต้าเจี้ยวไม่ใส่เกลือ
+  - amount: 1
+    unit: ช้อนโต๊ะ
+    item: น้ำปลา
+  - amount: 1
+    unit: ช้อนโต๊ะ
+    item: น้ำมะนาว
+  - amount: 1
+    unit: ชิ้น
+    item: กานพลูกระเทียม
+    note: สับ
+  - amount: null
+    unit: ""
+    item: ผักชีสด
+    note: สำหรับการเสิร์ฟ
+translation_languages: []
+translation_status: {}
+source_language: fi
+source_recipe: reseptit/paaruoat/khao-man-gai-vhh.md
+translation_of: khao-man-gai-vhh
+---
+
+# สูตรคาร์โบไฮเดรตต่ำ ข้าวมันไก่ – ข้าวมันไก่และดอกกะหล่ำไทย
+
+รูปแบบ VHH นี้ยังคงรักษาไก่ปรุงอย่างอ่อนโยนและน้ำจิ้มขิงของข้าวมันไก่ ข้าวดอกกะหล่ำอุ่นเสิร์ฟแทนข้าวปรุงรสแบบดั้งเดิม
+
+## คำอธิบาย
+
+น้ำซุปปรุงอาหารจะได้น้ำซุปใสสำหรับเสิร์ฟ ซอสขิงมีรสเค็ม เปรี้ยว และมีกลิ่นหอม
+
+## วิธีทำ
+
+1. ตั้งน้ำและน้ำซุปไก่ให้เดือด ใส่ไก่และลดไฟเพื่อให้น้ำซุปเดือดปุดๆ
+2. ปรุงใต้ฝาเป็นเวลา 15-20 นาที จนกระทั่งอุณหภูมิภายในของไก่เนื้ออยู่ที่อย่างน้อย 75 °C นำเนื้อออกจากน้ำซุปแล้วพักไว้
+3. ผสมขิง เต้าเจี้ยว น้ำปลา น้ำมะนาว และกระเทียมลงในซอส หากจำเป็น ให้ใช้น้ำสต๊อกประมาณหนึ่งช้อนโต๊ะ
+4. ตั้งข้าวดอกกะหล่ำในกระทะจนนิ่มและปรุงรสเล็กน้อย
+5. หั่นไก่แล้วเสิร์ฟพร้อมข้าว แตงกวา ซอส และผักชี หากต้องการ ให้เสิร์ฟน้ำซุปแยกกัน
+
+## หมายเหตุ
+
+- ในรูปแบบ VHH ข้าวปรุงรสแบบดั้งเดิมจะถูกแทนที่ด้วยข้าวดอกกะหล่ำ ส่วนผสมของซอสจะแตกต่างกันไป
+- คุณค่าทางโภชนาการเป็นตัวบ่งชี้

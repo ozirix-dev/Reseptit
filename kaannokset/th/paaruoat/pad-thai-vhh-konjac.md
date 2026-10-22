@@ -1,0 +1,98 @@
+---
+title: ผัดไทยกุ้งเส้นบุกแบบคาร์โบไฮเดรตต่ำ
+recipe_id: pad-thai-vhh-konjac
+url_slug: pad-thai-vhh-konjac
+category: paaruoka
+language: th
+status: published
+diet_class: vhh_valjempi
+main_ingredient:
+  - katkarapu
+  - kananmuna
+cooking_method:
+  - paistinpannu
+servings: 4
+time_total_min: 30
+difficulty: ง่าย
+tags:
+  - ไทย
+  - ก๋วยเตี๋ยว
+  - วฮ
+image:
+  src: paaruoat/pad-thai-vhh-konjac.webp
+  alt: ผัดหมี่บรั่นดีสไตล์ไทยใส่กุ้ง ไข่ เต้าหู้ และถั่วลิสง
+  width: 1280
+  height: 853
+carbs_net_per_serving_g: 10
+carbs_total_per_serving_g: 13
+protein_per_serving_g: 30
+fat_per_serving_g: 23
+ingredients:
+  - amount: 400
+    unit: g
+    item: เส้นบุก
+  - amount: 400
+    unit: g
+    item: กุ้งปอกเปลือก
+  - amount: 3
+    unit: ชิ้น
+    item: ไข่
+  - amount: 150
+    unit: g
+    item: เต้าหู้แข็ง
+    note: ลูกบาศก์
+  - amount: 150
+    unit: g
+    item: ถั่วเขียวงอก
+  - amount: 2
+    unit: ช้อนโต๊ะ
+    item: มะขามเปียก
+  - amount: 2
+    unit: ช้อนโต๊ะ
+    item: น้ำปลา
+  - amount: 1
+    unit: ช้อนโต๊ะ
+    item: น้ำมะนาว
+  - amount: 1
+    unit: ช้อนชา
+    item: อิริทริทอล
+  - amount: 30
+    unit: g
+    item: ถั่วลิสงไม่ใส่เกลือ
+    note: บดขยี้
+  - amount: 2
+    unit: ช้อนโต๊ะ
+    item: น้ำมันที่เป็นกลาง
+  - amount: null
+    unit: ""
+    item: ต้นหอมและผักชี
+    note: สำหรับการเสิร์ฟ
+translation_languages: []
+translation_status: {}
+source_language: fi
+source_recipe: reseptit/paaruoat/pad-thai-vhh-konjac.md
+translation_of: pad-thai-vhh-konjac
+---
+
+# ผัดไทยกุ้งเส้นบุกแบบคาร์โบไฮเดรตต่ำ
+
+ผัดไทยรสมะขาม รสเค็ม และหวานเล็กน้อย เส้นบุกแทนเส้นก๋วยเตี๋ยว กุ้ง เต้าหู้ และไข่ ทำให้อาหารจานนี้อิ่ม
+
+## คำอธิบาย
+
+ล้างบะหมี่ให้สะอาดและทอดให้แห้งก่อนใส่ลงในกระทะ วิธีนี้จะทำให้ของเหลวส่วนเกินระเหยออกไป
+
+## วิธีทำ
+
+1. ล้างบะหมี่ด้วยน้ำเย็นแล้วทอดให้แห้งในกระทะร้อนประมาณ 3-4 นาที ย้ายกัน.
+2. ผสมน้ำมะขามเปียก น้ำปลา น้ำมะนาว และอิริทริทอล
+3. ตั้งน้ำมันให้ร้อนครึ่งหนึ่งในกระทะ ทอดเต้าหู้จนเป็นสีทองแล้วพักไว้
+4. ใส่กุ้งลงไปผัดจนเกือบสุก ย้ายพวกมันออกไป เติมน้ำมันที่เหลือแล้วผัดไข่
+5. ใส่บะหมี่และซอส เปิดกระทะร้อนสักสองสามนาที
+6. ใส่เต้าหู้ ถั่วงอก และถั่วลิสงครึ่งหนึ่ง อบสักครู่
+7. เสิร์ฟพร้อมต้นหอม ผักชี ถั่วลิสงที่เหลือ และมะนาวฝาน
+
+## หมายเหตุ
+
+- เส้นคอนยัคแทนเส้นข้าว คาร์โบไฮเดรตในกะปิจะแตกต่างกันไป ตรวจสอบฉลากบรรจุภัณฑ์
+- คุณค่าทางโภชนาการเป็นตัวบ่งชี้

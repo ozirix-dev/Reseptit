@@ -34,8 +34,11 @@ ingredients:
   - {amount: 2, unit: rkl, item: tuoretta korianteria, note: hienonnettuna}
   - {amount: 1, unit: rkl, item: neutraalia öljyä}
   - {amount: null, unit: "", item: tuoretta selleriä tai kiinanselleriä, note: hienonnettuna}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # VHH-yum woon sen katkaravuilla ja konjaknuudeleilla

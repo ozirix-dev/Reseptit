@@ -72,6 +72,11 @@ ingredients:
   - amount: 4
     unit: annosta
     item: keitettyä riisiä
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Kung pao -kana maapähkinöillä

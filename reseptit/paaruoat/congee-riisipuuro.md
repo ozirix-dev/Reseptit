@@ -51,6 +51,11 @@ ingredients:
     unit: kpl
     item: keitettyä kananmunaa
     note: puolitettuna, valinnainen
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Kiinalainen congee-riisipuuro

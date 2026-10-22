@@ -62,6 +62,11 @@ ingredients:
     unit: kpl
     item: rosmariinin oksa
     note: valinnainen
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Valencialainen paella kanalla ja jäniksellä

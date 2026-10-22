@@ -52,7 +52,7 @@ source_recipe: reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md
 translation_of: jauheliha-kaalikeitto-vhh
 ---
 
-#เนื้อสับและซุปกะหล่ำปลี
+# เนื้อสับและซุปกะหล่ำปลี
 
 เนื้อสับและซุปกะหล่ำปลีเป็นอาหารฟินแลนด์ที่คุ้นเคยในรูปแบบโฮมเมดที่มีคาร์โบไฮเดรตต่ำ รุ่นหม้อบนเตานี้มีขนาดสำหรับหกคน
 

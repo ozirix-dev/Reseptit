@@ -57,6 +57,11 @@ ingredients:
   - amount: 1
     unit: rkl
     item: öljyä
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Paneer tikka – grillatut juusto-kasvisvartaat

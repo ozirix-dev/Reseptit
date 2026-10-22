@@ -58,6 +58,11 @@ ingredients:
     unit: kpl
     item: kevätsipulia
     note: viipaleina
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Chow mein -paistetut nuudelit kanalla

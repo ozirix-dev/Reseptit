@@ -13,6 +13,22 @@ cooking_method: ["oven"]
 time_total_min: 50
 difficulty: "easy"
 tags: ["baking", "cake", "base", "dessert"]
+ingredients:
+  - amount: 4
+    unit: ""
+    item: eggs
+  - amount: 2
+    unit: dl
+    item: sugar
+  - amount: 1
+    unit: dl
+    item: water
+  - amount: 3
+    unit: dl
+    item: all-purpose flour
+  - amount: 1.5
+    unit: tsp
+    item: baking powder
 status: "draft"
 ---
 

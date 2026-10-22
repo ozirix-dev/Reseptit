@@ -34,8 +34,11 @@ ingredients:
   - {amount: 1, unit: rkl, item: osterikastiketta, note: vähäsokerista}
   - {amount: 1, unit: tl, item: erytritolia}
   - {amount: 2, unit: rkl, item: neutraalia öljyä}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # VHH-pad kee mao – tuliset kananuudelit

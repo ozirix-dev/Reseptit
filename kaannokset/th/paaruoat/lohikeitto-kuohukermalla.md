@@ -68,7 +68,7 @@ source_recipe: reseptit/paaruoat/lohikeitto-kuohukermalla.md
 translation_of: lohikeitto-kuohukermalla
 ---
 
-#ซุปครีมแซลมอนวิปครีม
+# ซุปครีมแซลมอนวิปครีม
 
 ซุปปลาแซลมอนแสนอร่อยทำจากมันฝรั่ง ผัก และปลาแซลมอน วิปครีมและผักชีลาวสดช่วยเติมเต็มน้ำซุปเนื้อนุ่ม
 

@@ -52,6 +52,11 @@ ingredients:
     unit: tl
     item: paprikajauhetta
     note: tarjoiluun
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Kermainen hummus kikherneistä

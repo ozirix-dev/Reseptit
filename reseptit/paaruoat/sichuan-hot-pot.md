@@ -74,6 +74,11 @@ ingredients:
     unit: kpl
     item: kevätsipulia
     note: dippikastikkeeseen
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Sichuanilainen hot pot kotona

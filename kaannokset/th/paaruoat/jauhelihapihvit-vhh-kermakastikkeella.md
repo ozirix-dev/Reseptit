@@ -67,7 +67,7 @@ source_recipe: reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md
 translation_of: jauhelihapihvit-vhh-kermakastikkeella
 ---
 
-#สเต็กเนื้อบดและซอสครีมไร้แป้ง
+# สเต็กเนื้อบดและซอสครีมไร้แป้ง
 
 เนื้อบดเนื้อฉ่ำและซอสครีมปรุงในกระทะนำการปรุงอาหารที่บ้านที่คุณคุ้นเคยมาเสิร์ฟบนโต๊ะโดยไม่ต้องใช้เกล็ดขนมปังหรือแป้งสาลี
 

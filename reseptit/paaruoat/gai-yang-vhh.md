@@ -32,8 +32,11 @@ ingredients:
   - {amount: 1, unit: rkl, item: limettimehua}
   - {amount: 500, unit: g, item: kukkakaaliriisiä, note: tarjoiluun}
   - {amount: null, unit: "", item: kurkkuviipaleita, note: tarjoiluun}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Gai yang – thaimaalainen grillikana VHH-lisukkeilla

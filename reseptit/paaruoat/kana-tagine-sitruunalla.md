@@ -64,6 +64,11 @@ ingredients:
   - amount: 0.5
     unit: tl
     item: suolaa
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Marokkolainen kana-tagine sitruunalla ja oliiveilla

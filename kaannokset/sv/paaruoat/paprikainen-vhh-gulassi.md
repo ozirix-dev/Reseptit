@@ -57,7 +57,7 @@ ingredients:
     note: för att bryna kött
   - amount: 0.5
     unit: tsk
-    item: ost spiskummin
+    item: spiskummin
   - amount: 3
     unit: dl
     item: köttbuljong

@@ -46,7 +46,7 @@ source_recipe: reseptit/paaruoat/kukkakaaligratiini-pekonilla.md
 translation_of: kukkakaaligratiini-pekonilla
 ---
 
-#กราแตงกะหล่ำเบคอนเบคอน
+# กราแตงกะหล่ำเบคอนเบคอน
 
 Bacon Cauliflower Gratin เป็นอาหารฟินแลนด์ที่คุ้นเคยในรูปแบบโฮมเมดที่มีคาร์โบไฮเดรตต่ำ สูตรนี้ได้รับการเขียนใหม่เพื่อให้เหมาะกับครัวของคุณเอง และเสิร์ฟได้ 4 ที่หรือตามจำนวนที่ระบุไว้
 

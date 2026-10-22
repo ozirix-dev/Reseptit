@@ -37,7 +37,7 @@ ingredients:
     item: small onion
   - amount: 150
     unit: g
-    item: tomato paste
+    item: crushed tomatoes
   - amount: 1
     unit: tbsp
     item: tomato puree

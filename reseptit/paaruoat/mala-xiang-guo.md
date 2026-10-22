@@ -67,6 +67,11 @@ ingredients:
     unit: kpl
     item: kevätsipulia
     note: viipaleina
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Ma la xiang guo – Sichuanin mausteinen kuivapannu

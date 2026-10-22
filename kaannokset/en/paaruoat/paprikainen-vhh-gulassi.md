@@ -57,7 +57,7 @@ ingredients:
     note: for browning meat
   - amount: 0.5
     unit: tsp
-    item: cheese cumin
+    item: cumin
   - amount: 3
     unit: dl
     item: meat broth

@@ -14,7 +14,7 @@ difficulty: lätt
 tags:
   - lax soppa
   - soppa
-  - fiskmat
+  - fiskrätt
   - vispgrädde
 image:
   src: paaruoat/lohikeitto-kuohukermalla.webp
@@ -43,7 +43,7 @@ ingredients:
     item: vatten
   - amount: null
     unit: ""
-    item: fiskfondue
+    item: fiskfond
     note: enligt förpackningens dosering för 8 dl vatten
   - amount: 8
     unit: st
@@ -61,7 +61,7 @@ ingredients:
   - amount: null
     unit: ""
     item: färsk dill
-    note: raffinerad
+    note: finhackad
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/lohikeitto-kuohukermalla.md

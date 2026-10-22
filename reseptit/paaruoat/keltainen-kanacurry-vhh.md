@@ -32,8 +32,11 @@ ingredients:
   - {amount: 1, unit: tl, item: erytritolia, note: valinnainen}
   - {amount: 10, unit: g, item: kookosöljyä}
   - {amount: null, unit: "", item: tuoretta korianteria, note: tarjoiluun}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # VHH-keltainen kanacurry kukkakaalilla

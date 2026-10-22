@@ -61,7 +61,7 @@ source_recipe: reseptit/paaruoat/nakkikeitto-kukkakaalilla.md
 translation_of: nakkikeitto-kukkakaalilla
 ---
 
-#นักเก็ตโต้กับกะหล่ำดอก
+# นักเก็ตโต้กับกะหล่ำดอก
 
 ซุปนักกีใสที่คุ้นเคยถูกแทนที่ด้วยมันฝรั่งพร้อมดอกกะหล่ำ คื่นฉ่าย และกระเทียมหอม น้ำซุปปรุงรสด้วยใบกระวานและพริกไทยดำ
 

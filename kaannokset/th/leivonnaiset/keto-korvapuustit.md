@@ -49,7 +49,7 @@ source_recipe: reseptit/leivonnaiset/keto-korvapuustit.md
 translation_of: keto-korvapuustit
 ---
 
-#ซินนามอนโรลคีโต
+# ซินนามอนโรลคีโต
 
 Keto korvapuusti เป็นอาหารฟินแลนด์ที่คุ้นเคยในรูปแบบคาร์โบไฮเดรตต่ำสำหรับใช้ในบ้าน สูตรนี้ได้รับการเขียนใหม่เพื่อให้เหมาะกับครัวของคุณเอง และเสิร์ฟได้ 4 ที่หรือตามจำนวนที่ระบุไว้
 

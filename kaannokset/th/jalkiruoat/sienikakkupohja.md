@@ -13,6 +13,22 @@ cooking_method: ["oven"]
 time_total_min: 50
 difficulty: "easy"
 tags: ["baking", "cake", "base", "dessert"]
+ingredients:
+  - amount: 4
+    unit: ""
+    item: ไข่ไก่
+  - amount: 2
+    unit: dl
+    item: น้ำตาลทราย
+  - amount: 1
+    unit: dl
+    item: น้ำ
+  - amount: 3
+    unit: dl
+    item: แป้งสาลีอเนกประสงค์
+  - amount: 1.5
+    unit: ช้อนชา
+    item: ผงฟู
 status: "draft"
 ---
 

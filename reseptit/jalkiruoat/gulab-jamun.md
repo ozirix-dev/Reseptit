@@ -65,6 +65,11 @@ ingredients:
     unit: ""
     item: pistaasipähkinää
     note: rouhittuna pinnalle
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Gulab jamun – kardemummasiirapissa haudutetut makeat pallot

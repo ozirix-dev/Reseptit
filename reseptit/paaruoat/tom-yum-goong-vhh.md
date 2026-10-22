@@ -34,8 +34,11 @@ ingredients:
   - {amount: 3, unit: rkl, item: limettimehua}
   - {amount: 150, unit: g, item: kirsikkatomaatteja}
   - {amount: null, unit: "", item: tuoretta korianteria, note: pinnalle}
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Tom yum goong – thaimaalainen katkarapukeitto

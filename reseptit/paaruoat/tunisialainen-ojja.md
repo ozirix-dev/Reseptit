@@ -62,6 +62,11 @@ ingredients:
     unit: viipaletta
     item: maalaisleipää
     note: tarjoiluun
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Tunisialainen ojja harissalla ja kananmunilla

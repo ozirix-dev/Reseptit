@@ -1,0 +1,77 @@
+---
+title: Kai jiew – Thailändsk omelett med krispiga kanter
+recipe_id: kai-jiew-vhh
+url_slug: kai-jiew-vhh
+category: paaruoka
+language: sv
+status: published
+diet_class: keto
+main_ingredient:
+  - kananmuna
+cooking_method:
+  - paistinpannu
+servings: 4
+time_total_min: 15
+difficulty: lätt
+tags:
+  - Thai
+  - ägg
+  - keto
+  - VHH
+image:
+  src: paaruoat/kai-jiew-vhh.webp
+  alt: En hög krispig kai jiew omelett med gurkskivor och örter
+  width: 1280
+  height: 853
+carbs_net_per_serving_g: 2
+carbs_total_per_serving_g: 2
+protein_per_serving_g: 18
+fat_per_serving_g: 23
+ingredients:
+  - amount: 8
+    unit: st
+    item: ägg
+  - amount: 2
+    unit: tsk
+    item: fisksås
+  - amount: 2
+    unit: msk
+    item: neutral olja
+    note: för stekning
+  - amount: 1
+    unit: msk
+    item: vatten
+  - amount: 1
+    unit: st
+    item: vårlök
+    note: hackad, valfritt
+  - amount: null
+    unit: ""
+    item: gurka och koriander
+    note: för servering
+translation_languages: []
+translation_status: {}
+source_language: fi
+source_recipe: reseptit/paaruoat/kai-jiew-vhh.md
+translation_of: kai-jiew-vhh
+---
+
+# Kai jiew – Thailändsk omelett med krispiga kanter
+
+Kai jiew är en fluffig thailändsk omelett med knaprig kant kryddad med fisksås. Den tillagas snabbt och passar som en lätt måltid eller del av ett större matbord.
+
+## Beskrivning
+
+I het olja stiger omeletten och får krispiga kanter. Använd en liten djup panna och stek omeletten i två omgångar om det behövs.
+
+## Tillagning
+
+1. Bryt äggen i en skål. Tillsätt fisksås och vatten och vispa tills blandningen skummar lite.
+2. Hetta upp oljan i en liten djup panna tills den är väldigt varm.
+3. Häll äggblandningen i pannan. Stek på medelvärme tills kanterna är krispiga och mitten stelnat.
+4. Vänd försiktigt och stek andra sidan tills den är gyllenbrun.
+5. Servera genast med gurka och koriander.
+
+## Anteckningar
+
+– Den här basversionen är lågkolhydratsnål. Sältan i fisksåser varierar, så smaka av blandningen innan stekning.

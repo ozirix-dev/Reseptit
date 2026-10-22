@@ -77,6 +77,11 @@ ingredients:
     unit: g
     item: tuoretta minttua
     note: hienonnettuna
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Hyderabadilainen kanabiryani

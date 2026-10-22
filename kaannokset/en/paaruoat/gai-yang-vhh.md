@@ -1,0 +1,96 @@
+---
+title: Gai yang – Thai grilled chicken with VHH side dishes
+recipe_id: gai-yang-vhh
+url_slug: gai-yang-vhh
+category: paaruoka
+language: en
+status: published
+diet_class: vhh_tiukka
+main_ingredient:
+  - broileri
+  - kukkakaali
+cooking_method:
+  - uuni
+  - grilli
+servings: 4
+time_total_min: 60
+difficulty: easy
+tags:
+  - Thai
+  - Dad
+  - chicken
+  - grill
+  - VHH
+image:
+  src: paaruoat/gai-yang-vhh.webp
+  alt: Gai yang grilled chicken on a golden brown surface, herb sauce and
+    cauliflower rice
+  width: 1280
+  height: 853
+carbs_net_per_serving_g: 7
+carbs_total_per_serving_g: 10
+protein_per_serving_g: 38
+fat_per_serving_g: 27
+ingredients:
+  - amount: 900
+    unit: g
+    item: chicken thigh pieces
+    note: leathery and bony
+  - amount: 3
+    unit: tbsp
+    item: fish sauce
+  - amount: 1
+    unit: tbsp
+    item: soy sauce
+  - amount: 3
+    unit: piece
+    item: a clove of garlic
+    note: crushed
+  - amount: 20
+    unit: g
+    item: fresh coriander
+    note: stems and leaves chopped
+  - amount: 1
+    unit: tsp
+    item: ground white pepper
+  - amount: 1
+    unit: tsp
+    item: erythritol
+  - amount: 1
+    unit: tbsp
+    item: lime juice
+  - amount: 500
+    unit: g
+    item: cauliflower rice
+    note: for serving
+  - amount: null
+    unit: ""
+    item: cucumber slices
+    note: for serving
+translation_languages: []
+translation_status: {}
+source_language: fi
+source_recipe: reseptit/paaruoat/gai-yang-vhh.md
+translation_of: gai-yang-vhh
+---
+
+# Gai yang – Thai grilled chicken with VHH side dishes
+
+Isan-style gai yang gets its flavor from garlic, coriander, fish sauce and white pepper. The chicken is marinated and grilled or baked in the oven; Cauliflower rice is served as a side dish.
+
+## Description
+
+Let the chicken marinate for at least 30 minutes if you have time. When cooking in the oven, the grill resistance helps to brown the surface.
+
+## Preparation
+
+1. Mix fish sauce, soy sauce, garlic, coriander, white pepper, erythritol and lime juice.
+2. Turn the chicken in the marinade. Allow to season for 30 minutes or overnight in the refrigerator.
+3. Heat the oven to 220 degrees or prepare the grill for medium heat.
+4. Grill or fry the chicken until cooked and nicely browned, turning occasionally. Check the doneness of the thickest part.
+5. Heat the cauliflower rice in a pan. Serve with chicken and cucumber slices.
+
+## Notes
+
+- The cooking time depends on the size of the pieces and whether you use the grill or the oven.
+- Check the labels on the sauces. The nutritional values ​​are indicative.

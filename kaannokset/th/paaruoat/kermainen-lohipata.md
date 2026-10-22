@@ -72,7 +72,7 @@ source_recipe: reseptit/paaruoat/kermainen-lohipata.md
 translation_of: kermainen-lohipata
 ---
 
-#สตูว์ครีมปลาแซลมอน
+# สตูว์ครีมปลาแซลมอน
 
 สตูว์ปลาแซลมอนครีมเป็นอาหารจานหลักที่ง่ายและอิ่มได้ทุกวัน
 

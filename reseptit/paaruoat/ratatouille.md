@@ -64,6 +64,11 @@ ingredients:
   - amount: 15
     unit: g
     item: tuoretta basilikaa
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Provencelainen ratatouille

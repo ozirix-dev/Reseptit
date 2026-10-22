@@ -75,6 +75,11 @@ ingredients:
     unit: ""
     item: tuoretta korianteria
     note: tarjoiluun
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Butter chicken – voikana tomaatti-kermakastikkeessa

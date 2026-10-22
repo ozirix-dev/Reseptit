@@ -63,6 +63,11 @@ ingredients:
     unit: g
     item: kaalisalaattia
     note: tarjoiluun
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status: {en: published, sv: published, th: published}
 ---
 
 # Kotitekoinen döner kebab naudanlihasta
