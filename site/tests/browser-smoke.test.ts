@@ -25,6 +25,9 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     t.after(async () => { await browser.close(); server.kill(); });
 
     const noJs = await browser.newPage({ javaScriptEnabled: false });
+      await noJs.route("https://ozirix-dev.github.io/Reseptit/kuvat/**", async (route) => {
+        await route.fulfill({ path: path.resolve("public/kuvat", new URL(route.request().url()).pathname.split("/kuvat/")[1]) });
+      });
     await noJs.goto(`${base}/`);
     assert.equal(await noJs.getByRole("heading", { name: "Reseptit" }).count(), 1);
     assert.ok(await noJs.locator(".recipe-card-grid .recipe-card").count() > 0);

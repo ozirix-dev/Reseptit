@@ -41,11 +41,13 @@ Päivätyt raportit ovat oman tarkistushetkensä tilannekuvia.
    Tavallista riisiä, pastaa tai perunaa sisältävä ruoka ei saa keto-luokitusta.
 6. Lisää WebP-kuva `kuvat/`-hakemistoon. `image.src` on suhteellinen polku
    kuvan juureen; `alt`, `width` ja `height` vastaavat oikeaa kuvaa.
-   Lisäresoluutiot kuvataan valinnaisissa `srcset`- ja `sizes`-kentissä.
+   Build generoi responsiiviset lisäresoluutiot automaattisesti; niitä ei tarvitse
+   ylläpitää reseptien metatiedoissa.
 7. Pidä keskeneräinen resepti luonnoksena. Suorita alla olevat tarkistukset ennen PR:ää.
 
 Metatietojen tarkka sopimus on [schema.ts](site/src/content/schema.ts).
-Kuvien build validoi polut ja tiedostot ja kopioi vain julkaistun sisällön kuvat.
+Kuvien build validoi polut ja tiedostot ja käsittelee vain julkaistun sisällön kuvat.
+Katso [responsiivisten kuvien ylläpito](docs/responsive-images.md).
 
 ## Käännöksen lisääminen
 

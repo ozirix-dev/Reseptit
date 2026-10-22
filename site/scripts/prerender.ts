@@ -1,3 +1,4 @@
+import { recipeCardSizes } from "../src/features/recipes/image-layout";
 import { contentForRoute, serializeRouteContent } from "../src/content/route-data";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -58,7 +59,7 @@ function routeMetadata(route: string) {
   // Match the card grid breakpoints. Do not eagerly fetch three cards on mobile.
   const desktopImages = recipe ? [] : siteContent.recipes.filter((item) => item.locale === locale)
     .slice(1, 3).flatMap((item, index) => item.image ? [
-      `<link rel="preload" as="image" fetchpriority="high" href="${escapeHtml(item.image.src)}" media="(min-width: ${index === 0 ? 700 : 1100}px)"${item.image.srcSet ? ` imagesrcset="${escapeHtml(item.image.srcSet)}"` : ""}${item.image.sizes ? ` imagesizes="${escapeHtml(item.image.sizes)}"` : ""} />`,
+      `<link rel="preload" as="image" fetchpriority="high" href="${escapeHtml(item.image.src)}" media="(min-width: ${index === 0 ? 700 : 1100}px)"${item.image.srcSet ? ` imagesrcset="${escapeHtml(item.image.srcSet)}"` : ""}${item.image.srcSet ? ` imagesizes="${escapeHtml(recipeCardSizes)}"` : ""} />`,
     ] : []);
   return {
     lang: locale,
