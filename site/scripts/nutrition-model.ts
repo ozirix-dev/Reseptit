@@ -26,7 +26,14 @@ export const emptyValues = (): Values => Object.fromEntries(nutrients.map((n) =>
 const valid = (n: unknown): n is number => typeof n === "number" && Number.isFinite(n) && n >= 0;
 export function round(value: number, decimals = 2): number {
   if (!valid(value) || !Number.isInteger(decimals) || decimals < 0 || decimals > 6) throw Error("Invalid rounding input");
-  return Math.round((value + Number.EPSILON) * 10 ** decimals) / 10 ** decimals;
+  // Round the decimal representation, without binary scaling errors at ties.
+  const [mantissa, exponentText = "0"] = String(value).split("e");
+  const [whole, fraction = ""] = mantissa.split(".");
+  const shift = Number(exponentText) + decimals - fraction.length;
+  if (shift >= 0) return value;
+  const digits = BigInt(whole + fraction), divisor = 10n ** BigInt(-shift);
+  const rounded = digits / divisor + (digits % divisor * 2n >= divisor ? 1n : 0n);
+  return Number(`${rounded}e-${decimals}`);
 }
 export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE") {
   if (subtractFibre && record.carbohydrateDefinition !== "US_TOTAL_INCLUDING_FIBRE") throw Error("Fibre would be subtracted twice or definition is unknown");

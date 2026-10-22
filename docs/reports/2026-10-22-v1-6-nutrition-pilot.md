@@ -88,3 +88,13 @@ Seuraava sisältöpäätös: valitse tuotteet ja punnitse käytetyt syötävät 
 ratkaise butter chickenin öljymäärä ja dokumentoi valmistussaanto.
 Laskentanäytön valmistuttua tarvitaan erillinen arviointi ennen
 ravintonumeroiden julkaisua. V1.6 ei mergeä eikä julkaise tuotantoon.
+
+## Katselmointikorjaukset
+
+Codex havaitsi desimaalipyöristyksen rajatapaukset sekä ajonaikaisen
+lähdeversion ja päiväyksen kovakoodauksen. Pyöristys käyttää nyt
+desimaaliesityksen kokonaislukulaskentaa: myös 4,225 → 4,23 ja
+10,075 → 10,08 testataan. Raportti lukee HEAD-tunnisteen, ajopäivän,
+reseptien työpuumuutokset ja kaikkien lähdetiedostojen tiivisteet.
+Historiallinen lähdenäytön tarkistus ja tietueen hakupäivä pysyvät erillään
+uuden laskenta-ajon päivästä. Korjausten yksikkötestit ja TypeScript läpäisivät.

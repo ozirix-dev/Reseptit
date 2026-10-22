@@ -10,6 +10,9 @@ test("independent arithmetic and rounding only after totals/division", () => {
   assert.equal(result.perServing.protein, 6.25); assert.equal(result.total.carbohydrate, 50);
   assert.equal(result.total.netCarbohydrate, 50); assert.equal(round(1.005), 1.01);
   assert.throws(() => round(2, -1)); assert.throws(() => round(NaN));
+  assert.equal(round(4.225), 4.23); assert.equal(round(10.075), 10.08);
+  assert.equal(round(0.0000001), 0); assert.equal(round(1e25), 1e25);
+  assert.equal(round(4.2249), 4.22); assert.equal(round(4.225, 3), 4.225);
 });
 test("unknowns do not become zero, partial ingredients do not become recipe totals", () => {
   const mutations = [

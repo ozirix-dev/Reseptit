@@ -1,16 +1,21 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
 import path from "node:path";
 import { auditTranslations } from "./translation-audit";
 import { calculate, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
 const root = path.resolve(import.meta.dirname, "../..");
 const keys = ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const;
 const audit = await auditTranslations();
+const calculatedAt = new Date().toISOString().slice(0, 10);
+const sourceRevision = execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim();
+const sourceWorkingTreeChanges = execFileSync("git", ["status", "--porcelain", "--", "reseptit"], { cwd: root, encoding: "utf8" }).trim();
+const sourceHashes: Record<string, string> = Object.fromEntries(await Promise.all(audit.publishedSources.map(async (recipe) => [recipe.path, createHash("sha256").update((await readFile(path.join(root, recipe.path), "utf8")).replaceAll("\r\n", "\n")).digest("hex")] as const)));
 const inventory = audit.publishedSources.map((recipe) => {
   const values = Object.fromEntries(keys.map((key) => [key, recipe.data[key] ?? null]));
   const hasValues = Object.values(values).some((n) => n !== null);
   const conflicts = recipe.data.carbs_net_per_serving_g != null && recipe.data.carbs_total_per_serving_g != null && recipe.data.carbs_net_per_serving_g > recipe.data.carbs_total_per_serving_g;
-  return { recipe_id: recipe.data.recipe_id, source_path: recipe.path, values, servings: recipe.data.servings,
+  return { recipe_id: recipe.data.recipe_id, source_path: recipe.path, source_content_hash: sourceHashes[recipe.path], values, servings: recipe.data.servings,
     status: conflicts ? "CONFLICT REQUIRES REVIEW" : hasValues ? "INSUFFICIENT SOURCE DATA" : "MISSING",
     calculationEvidence: null, carbohydrateDefinition: "NOT DOCUMENTED", portionBasis: "metadata fields per serving", brandAndRawWeightEvidence: "NOT VERIFIED",
     missingFields: keys.filter((key) => recipe.data[key] == null),
@@ -31,17 +36,16 @@ const pilots = [];
 for (const [id, uncertainties] of Object.entries(blockers)) {
   const source = audit.publishedSources.find((r) => r.data.recipe_id === id);
   if (!source) throw Error(`Pilot source missing: ${id}`);
-  const raw = await readFile(path.join(root, source.path), "utf8");
   const ingredients: IngredientInput[] = source.data.ingredients.map((i) => ({ ...i, state: "UNRESOLVED", matchEvidence: "" }));
   // This explicit input-only scenario demonstrates a sourced contribution, not a full dish estimate.
   if (id === "kermainen-lohipata") ingredients[0] = { ...ingredients[0], record: records[0], state: records[0].state, matchEvidence: "Conditional scenario: 600 g edible raw farmed Salmo salar; species not confirmed by recipe", edibleFraction: 1, edibleEvidence: "Conditional raw edible fillet input, Fineli record edible share 100%", retainedFraction: 1, retentionEvidence: "Input nutrient contribution only, no claim about cooked retention" };
-  const input: Calculation = { recipeId: id, sourceHash: createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex"), calculatedAt: "2026-10-22", servings: source.data.servings, scope: "Unfinished ingredient-input evidence pilot; not cooked meal nutrition; no sides unless explicitly quantified", reviewerStatus: "AUTOMATED ONLY", carbohydrateOutput: "AVAILABLE_EXCLUDING_FIBRE", ingredients };
+  const input: Calculation = { recipeId: id, sourceHash: sourceHashes[source.path], calculatedAt, servings: source.data.servings, scope: "Unfinished ingredient-input evidence pilot; not cooked meal nutrition; no sides unless explicitly quantified", reviewerStatus: "AUTOMATED ONLY", carbohydrateOutput: "AVAILABLE_EXCLUDING_FIBRE", ingredients };
   const result = calculate(input);
   pilots.push({ ...result, source_path: source.path, uncertainties, existingPerServing: inventory.find((r) => r.recipe_id === id)!.values,
     comparison: id === "kermainen-lohipata" ? "Conditional salmon alone contributes 30 g protein/serving, already above old whole-dish 29 g; investigate species/weights/retention, do not overwrite" : "Full comparison blocked; no inferred totals", comparisonStatus: id === "kermainen-lohipata" ? "CONFLICT REQUIRES REVIEW" : "INSUFFICIENT SOURCE DATA" });
 }
 const counts = Object.fromEntries(["VERIFIED", "ESTIMATE WITH EVIDENCE", "INSUFFICIENT SOURCE DATA", "CONFLICT REQUIRES REVIEW", "MISSING"].map((status) => [status, inventory.filter((r) => r.status === status).length]));
-const report = { sourceMain: "02ffd5a92092d27fa8509ec47135d9ecb4c2a497", calculatedAt: "2026-10-22", sources: inventory.length, counts, dietClasses: Object.fromEntries(["keto", "vhh_tiukka", "vhh_valjempi", "unclassified"].map((diet) => [diet, audit.publishedSources.filter((r) => (r.data.diet_class ?? "unclassified") === diet).length])), inventory, pilots };
+const report = { sourceRevision, sourceWorkingTreeChanges: sourceWorkingTreeChanges || null, calculatedAt, sources: inventory.length, counts, dietClasses: Object.fromEntries(["keto", "vhh_tiukka", "vhh_valjempi", "unclassified"].map((diet) => [diet, audit.publishedSources.filter((r) => (r.data.diet_class ?? "unclassified") === diet).length])), inventory, pilots };
 const directory = path.join(root, process.argv.includes("--snapshot") ? "docs/nutrition" : "tmp/nutrition");
 await mkdir(directory, { recursive: true });
 await writeFile(path.join(directory, "audit.json"), JSON.stringify(report, null, 2) + "\n");
