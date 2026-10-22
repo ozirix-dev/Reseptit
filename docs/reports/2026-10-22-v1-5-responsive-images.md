@@ -211,6 +211,9 @@ reittimanifesti sisältää kaikkien reittien osoitteet. Tämä on säilytetyn
 arkkitehtuurin mittaustulos; julkaistun 119 lähteen bundle pysyi 116,46 kB gzip.
 
 [Skaalautuvuuden raakadata](2026-10-22-v1-5-data/scaling.json).
+Myös kolmella eri rinnakkaisuudella kylmästi generoitujen manifestien ja kaikkien
+varianttien SHA-256:t verrattiin jokaisella aineistokoolla: identtiset.
+[Determinismivarmennus](2026-10-22-v1-5-data/scaling-determinism.json).
 Alkuperäinen keskeytynyt 500-koe ja sen TS2590-loki säilyvät paikallisessa
 `tmp/v15/scaling.log`-tiedostossa; niitä ei esitetä onnistuneena mittauksena.
 
@@ -237,10 +240,27 @@ Viimeisen staging→output-renamen virhe pakotettiin erikseen, ja testi
 varmisti vanhan kuvatulosteen sekä manifestin palautumisen. Neljä kieltä, haku/suodattimet, näppäimistö,
 annoslaskuri, selainhistoria, JavaScriptitön sisältö ja 404/noindex säilyvät.
 
-PR:n ja CI:n tila tarkistetaan GitHubista tämän raportin dokumentointikierroksen
-jälkeen. Paikallinen toteutus ja testit ovat valmiit; ulkoista katselmointia ei
-ole tämän raporttiversion kirjoitushetkellä vielä saatu.
-Julkaisusuositus tässä vaiheessa: **REVIEW PENDING**.
+[PR #39](https://github.com/ozirix-dev/Reseptit/pull/39) on avoin main-haaraan.
+Toteutuksen ja testien tarkistettu commit on
+`4a668a156e60f2408d7a20b9e341e65f34acbf50`.
+[CI 39785677284](https://github.com/ozirix-dev/Reseptit/actions/runs/39785677284)
+valmistui onnistuneesti Ubuntu 24.04 / Node 22 -ympäristössä. Asennus,
+26 yksikkötestiä, 14 käännöstestiä, 7 kuvatestiä, build, 10 staattista testiä
+ja 4 selainkokonaisuutta läpäisivät. Deploy oli `skipped`, kuten PR-ajossa kuuluu.
+CI:n build-job kesti 8 min 54 s, josta Playwrightin asennus vei 7 min 4 s.
+Varsinainen `npm run build` kesti 8 s; kuvat olivat siinä vaiheessa jo
+aiempien testivaiheiden lämmittämässä paikallisessa cachessa.
+
+[Koodin Codex-katselmointi](https://github.com/ozirix-dev/Reseptit/pull/39#issuecomment-6341747147)
+valmistui samalle commitille ilman havaintoja. Avoimia review-keskusteluja ei ollut.
+Tämän jälkeen viimeistellään vain raportti ja rinnakkaisuusvertailun evidenssi.
+Viimeisimmän dokumentointicommitin täsmällinen SHA, CI-ajo ja katselmointitila
+kirjataan PR-kuvaukseen työn luovutuksessa; näin raportin oman commitin SHA:ta
+sisältävä dokumentointikierre ei synnytä loputtomasti uusia committeja.
+
+Julkaisusuositus: yhdistämisvalmis, kun myös viimeisimmän PR-pään CI on vihreä
+ja Codex-katselmointi valmis ilman avoimia havaintoja. Keskeneräinen katselmointi
+raportoidaan lopputilana **REVIEW PENDING**. PR:ää ei yhdistetä tässä tehtävässä.
 
 ## Kompromissit ja jatko
 
