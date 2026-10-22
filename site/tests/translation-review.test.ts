@@ -92,3 +92,18 @@ test("misdeclared source language invalidates every target locale", async () => 
     assert.ok(rows.every((r) => r.structural_status === "FAIL" && r.human_review_status !== "HUMAN REVIEW COMPLETE"));
   }
 });
+test("every participant of a source or translation route collision fails review", async () => {
+  const all = await auditTranslations();
+  for (const collideSource of [true, false]) {
+    const sources = structuredClone(all.publishedSources.slice(0, 2));
+    const targets = structuredClone(sources.map((s) => all.publishedTranslations.find((r) => r.data.recipe_id === s.data.recipe_id && r.data.language === "en")!));
+    for (const source of sources) { source.data.translation_status = { en: "published" }; source.data.translation_languages = ["en"]; }
+    const colliding = collideSource ? sources : targets;
+    colliding[1].data.url_slug = colliding[0].data.url_slug;
+    const hashes = Object.fromEntries([...sources, ...targets].map((r) => [r.path, sources.includes(r) ? proof.source_content_hash : proof.translation_content_hash]));
+    const evidence = sources.map((s) => ({ ...proof, recipe_id: s.data.recipe_id }));
+    const rows = buildRegistry(auditRecipePairs(sources, targets), hashes, evidence);
+    assert.equal(rows.length, 2);
+    assert.ok(rows.every((r) => r.structural_status === "FAIL" && r.human_review_status !== "HUMAN REVIEW COMPLETE"));
+  }
+});

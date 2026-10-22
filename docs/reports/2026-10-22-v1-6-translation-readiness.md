@@ -47,7 +47,7 @@ ylläpitäjä varmistaa ne ennen tietueen lisäämistä. Henkilötietoja ei tarv
 
 ## Testaus
 
-`npm ci`, `npm test`, `test:translations` (22), `test:image` (7), `build`,
+`npm ci`, `npm test`, `test:translations` (23), `test:image` (7), `build`,
 `test:static` (10), `test:browser` (4, Brave), riippuvuusauditointi,
 Markdown-lint ja diff-check läpäisivät lopullisessa tarkistuksessa.
 Ensimmäinen build löysi uuden työkalun TypeScript-tyyppivirheen; se korjattiin.
@@ -86,3 +86,7 @@ päätöksellä; niitä ei ohiteta tai hyväksytä hiljaisesti.
 Lähdekohtaiset virheet kohdistetaan kaikkiin vastineisiin myös silloin,
 kun FI-lähde ilmoittaa virheellisesti EN-, SV- tai TH-kielen. Kaikki kolme
 virheellistä lähdekieltä testataan muuten kelvollisilla hyväksyntätodisteilla.
+
+Reittitörmäys merkitään nyt jokaiselle osallistujalle, myös ensimmäiselle
+reseptille tai käännökselle. FI- ja EN-törmäysten regressiot estävät
+molempien osapuolten hyväksynnän.
