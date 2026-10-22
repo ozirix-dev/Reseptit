@@ -14,9 +14,9 @@ cooking_method:
   - liesi
 difficulty: ระดับกลาง
 tags:
-  - อินเดียน
-  - ผัก
-  - บานหน้าต่าง
+  - "อินเดียน"
+  - "มังสวิรัติ"
+  - "พาเนียร์"
 image:
   src: paaruoat/palak-paneer.webp
   alt: แกงผักโขม Palak Paneer กับก้อนชีส Paneer
@@ -29,11 +29,11 @@ ingredients:
   - amount: 250
     unit: g
     item: ชีสพาเนียร์
-    note: ลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 2
     unit: ชิ้น
     item: กระเทียม

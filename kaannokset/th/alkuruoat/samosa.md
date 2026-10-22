@@ -15,9 +15,9 @@ cooking_method:
   - friteeraus
 difficulty: ระดับกลาง
 tags:
-  - อินเดียน
-  - อาหารเรียกน้ำย่อย
-  - ผัก
+  - "อินเดียน"
+  - "อาหารเรียกน้ำย่อย"
+  - "มังสวิรัติ"
 image:
   src: paaruoat/samosa.webp
   alt: ซาโมซ่ากรอบสามเหลี่ยมไส้ถั่วลันเตาและชัทนีย์มิ้นต์
@@ -30,14 +30,14 @@ ingredients:
   - amount: 60
     unit: ml
     item: น้ำมัน
-    note: แป้ง
+    note: "สำหรับแป้งโด"
   - amount: 1
     unit: ช้อนชา
     item: เกลือ
   - amount: 1.2
     unit: dl
     item: น้ำ
-    note: แป้ง
+    note: "สำหรับแป้งโด"
   - amount: 400
     unit: g
     item: มันฝรั่ง
@@ -56,7 +56,7 @@ ingredients:
   - amount: 15
     unit: g
     item: ผักชีสด
-    note: สับ
+    note: "สับละเอียด"
   - amount: null
     unit: ""
     item: น้ำมัน
@@ -85,4 +85,5 @@ translation_of: samosa
 
 ## หมายเหตุ
 
-- ตรวจสอบให้แน่ใจว่าไส้เย็นลงก่อนเติมแป้ง
+
+- พักไส้ให้เย็นก่อนนำไปห่อด้วยแป้ง

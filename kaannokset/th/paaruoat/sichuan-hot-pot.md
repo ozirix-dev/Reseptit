@@ -56,11 +56,11 @@ ingredients:
   - amount: 200
     unit: g
     item: เต้าหู้แข็ง
-    note: ในลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 200
     unit: g
     item: เห็ดแชมปิญอง
-    note: ลดลงครึ่งหนึ่ง
+    note: "ผ่าครึ่ง"
   - amount: 200
     unit: g
     item: ผักกาดขาวปลี

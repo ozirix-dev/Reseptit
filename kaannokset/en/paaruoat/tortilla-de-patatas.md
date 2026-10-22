@@ -14,13 +14,13 @@ cooking_method:
   - liesi
 difficulty: medium
 tags:
-  - marine
-  - spanish
-  - egg
-  - a potato
+  - "Mediterranean"
+  - "spanish"
+  - "egg"
+  - "potato"
 image:
   src: paaruoat/tortilla-de-patatas.webp
-  alt: A thick Spanish potato and onion omelette cut into blocks
+  alt: A thick Spanish potato and onion omelette cut into wedges
   width: 1279
   height: 853
 ingredients:

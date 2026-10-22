@@ -56,11 +56,11 @@ ingredients:
   - amount: 200
     unit: g
     item: fast tofu
-    note: i kuber
+    note: "tärnad"
   - amount: 200
     unit: g
     item: champinjoner
-    note: halveras
+    note: "halverade"
   - amount: 200
     unit: g
     item: kinakål

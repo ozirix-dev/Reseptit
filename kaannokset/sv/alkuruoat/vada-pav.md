@@ -15,10 +15,10 @@ cooking_method:
   - friteeraus
 difficulty: mellannivå
 tags:
-  - indiska
-  - Mumbai
-  - gatukök
-  - en grönsak
+  - "indiska"
+  - "Mumbai"
+  - "gatumat"
+  - "vegetariskt"
 image:
   src: paaruoat/vada-pav.webp
   alt: Vada pavrulle med krispig kryddig potatisbiff och chutney
@@ -44,14 +44,14 @@ ingredients:
   - amount: 15
     unit: g
     item: färsk koriander
-    note: hackad
+    note: "finhackad"
   - amount: 100
     unit: g
     item: kikärtsmjöl
   - amount: 1
     unit: dl
     item: vatten
-    note: degen
+    note: "till degen"
   - amount: 0.5
     unit: tsk
     item: chilipulver

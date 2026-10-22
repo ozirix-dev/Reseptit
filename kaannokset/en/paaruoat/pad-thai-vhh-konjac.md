@@ -40,7 +40,7 @@ ingredients:
   - amount: 150
     unit: g
     item: firm tofu
-    note: cubed
+    note: "diced"
   - amount: 150
     unit: g
     item: mung bean sprouts

@@ -40,11 +40,11 @@ ingredients:
   - amount: 200
     unit: g
     item: zucchini
-    note: i block
+    note: "skuren i klyftor"
   - amount: 150
     unit: g
     item: aubergine
-    note: i block
+    note: "skuren i klyftor"
   - amount: 600
     unit: g
     item: blomkålsris
@@ -81,7 +81,7 @@ Hettan och sockerhalten i currypastor varierar. Börja med en måttlig mängd oc
 
 ## Tillagning
 
-1. Skär kycklingen i lagom stora bitar. Ett block med zucchini och aubergine.
+1. Skär kycklingen i lagom stora bitar. Skär zucchinin och auberginen i klyftor.
 2. Hetta upp oljan i en gryta. Stek currypastan på låg värme i någon minut.
 3. Tillsätt ungefär en deciliter kokosmjölk och blanda. Tillsätt kycklingen och koka, vänd.
 4. Tillsätt resterande kokosmjölk, fisksås, erytritol och kaffirlimeblad. Sjud i 10 minuter.

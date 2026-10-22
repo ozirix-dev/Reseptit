@@ -15,10 +15,10 @@ cooking_method:
   - höyrytys
 difficulty: medium
 tags:
-  - Indian
-  - south indian
-  - a vegetable
-  - breakfast
+  - "Indian"
+  - "south indian"
+  - "vegetarian"
+  - "breakfast"
 image:
   src: paaruoat/idli-sambar.webp
   alt: Soft idli rice cakes with sambar lentil soup and coconut chutney
@@ -41,15 +41,15 @@ ingredients:
   - amount: 1
     unit: piece
     item: carrot
-    note: cubed
+    note: "diced"
   - amount: 1
     unit: piece
     item: tomato
-    note: cubed
+    note: "diced"
   - amount: 1
     unit: piece
     item: onion
-    note: in blocks
+    note: "cut into wedges"
   - amount: 1
     unit: tbsp
     item: tamarind paste

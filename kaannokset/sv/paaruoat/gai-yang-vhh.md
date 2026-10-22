@@ -16,11 +16,11 @@ servings: 4
 time_total_min: 60
 difficulty: lätt
 tags:
-  - Thai
-  - Pappa
-  - kyckling
-  - grilla
-  - VHH
+  - "Thai"
+  - "Isan"
+  - "kyckling"
+  - "grilla"
+  - "VHH"
 image:
   src: paaruoat/gai-yang-vhh.webp
   alt: Gai yang grillad kyckling på gyllenbrun yta, örtsås och blomkålsris
@@ -34,7 +34,7 @@ ingredients:
   - amount: 900
     unit: g
     item: kycklinglårbitar
-    note: läderartad och benig
+    note: "med skinn och ben"
   - amount: 3
     unit: msk
     item: fisksås

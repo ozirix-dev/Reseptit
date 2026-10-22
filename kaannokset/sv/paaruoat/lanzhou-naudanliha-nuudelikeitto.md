@@ -26,14 +26,14 @@ ingredients:
   - amount: 700
     unit: g
     item: högrev
-    note: i kuber
+    note: "tärnad"
   - amount: 2
     unit: l
     item: vatten
   - amount: 1
     unit: st
     item: lök
-    note: halveras
+    note: "halverad"
   - amount: 1
     unit: st
     item: färsk ingefära
@@ -52,7 +52,7 @@ ingredients:
     item: vetenudlar
   - amount: 2
     unit: st
-    item: rädisa
+    item: "rättika"
     note: i tunna skivor
   - amount: 2
     unit: st

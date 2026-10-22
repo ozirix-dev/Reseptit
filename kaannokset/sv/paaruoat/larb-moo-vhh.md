@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 30
 difficulty: lätt
 tags:
-  - Thai
-  - Pappa
-  - sallad
-  - VHH
+  - "Thai"
+  - "Isan"
+  - "sallad"
+  - "VHH"
 image:
   src: paaruoat/larb-moo-vhh.webp
   alt: Larb moo fläsksallad med örter, lime, chili och kål och gurka
@@ -62,7 +62,7 @@ ingredients:
   - amount: 250
     unit: g
     item: vitkål
-    note: i block för servering
+    note: "i klyftor till servering"
   - amount: 1
     unit: st
     item: gurka
@@ -88,7 +88,7 @@ Rostat rispulver ger traditionell rostighet och konsistens. En liten mängd är 
 2. Ta bort kastrullen från spisen. Blanda i fisksås, limejuice och chili.
 3. Om så önskas, tillsätt rispulver. Rör ner schalottenlök, mynta och koriander.
 4. Smaka av och justera sälta, syra och hetta.
-5. Servera varm med kålblock och gurkskivor.
+5. Servera varm med kålklyftor och gurkskivor.
 
 ## Anteckningar
 

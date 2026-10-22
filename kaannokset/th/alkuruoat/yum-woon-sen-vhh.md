@@ -41,7 +41,7 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: มะเขือเทศ
-    note: ในบล็อก
+    note: "หั่นเป็นเสี้ยว"
   - amount: 0.5
     unit: ชิ้น
     item: หอมแดง
@@ -58,18 +58,18 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: พริกแดง
-    note: สับ
+    note: "สับละเอียด"
   - amount: 2
     unit: ช้อนโต๊ะ
     item: ผักชีสด
-    note: สับ
+    note: "สับละเอียด"
   - amount: 1
     unit: ช้อนโต๊ะ
     item: น้ำมันที่เป็นกลาง
   - amount: null
     unit: ""
     item: คื่นฉ่ายสดหรือขึ้นฉ่ายจีน
-    note: สับ
+    note: "สับละเอียด"
 translation_languages: []
 translation_status: {}
 source_language: fi

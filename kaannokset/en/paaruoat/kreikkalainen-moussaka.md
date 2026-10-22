@@ -15,10 +15,10 @@ cooking_method:
   - liesi
 difficulty: medium
 tags:
-  - marine
-  - Greek
-  - eggplant
-  - beef
+  - "Mediterranean"
+  - "Greek"
+  - "eggplant"
+  - "beef"
 image:
   src: paaruoat/kreikkalainen-moussaka.webp
   alt: Greek moussaka with layers of eggplant, potato, minced meat sauce and
@@ -40,7 +40,7 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 400
     unit: g
     item: crushed tomatoes
@@ -94,4 +94,5 @@ Moussaka is baked in layers where eggplant and potato alternate with ground meat
 
 ## Notes
 
-- The pan is cut more cleanly when you let it cool down after baking.
+
+- Let the moussaka rest after baking so that it is easier to cut into neat portions.

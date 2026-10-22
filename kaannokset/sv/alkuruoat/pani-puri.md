@@ -15,9 +15,9 @@ cooking_method:
   - friteeraus
 difficulty: mellannivå
 tags:
-  - indiska
-  - gatukök
-  - en grönsak
+  - "indiska"
+  - "gatumat"
+  - "vegetariskt"
 image:
   src: paaruoat/pani-puri.webp
   alt: Pani Puri krispiga fyllda degbollar med kryddigt örtvatten
@@ -33,7 +33,7 @@ ingredients:
   - amount: 1
     unit: dl
     item: vatten
-    note: degen
+    note: "till degen"
   - amount: 300
     unit: g
     item: potatis
@@ -93,4 +93,5 @@ Krispiga puriskal är fyllda med potatis och kikärter och avslutas med syrligt 
 
 ## Anteckningar
 
-– Montera bara bitarna precis innan servering, så att skalen håller sig krispiga.
+
+- Fyll och montera puribröden precis före servering så att de håller sig krispiga.

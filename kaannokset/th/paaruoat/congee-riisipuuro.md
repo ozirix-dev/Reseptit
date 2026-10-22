@@ -23,7 +23,7 @@ image:
 ingredients:
   - amount: 200
     unit: g
-    item: ข้าวหอมมะลิหรือข้าวต้ม
+    item: "ข้าวสารหอมมะลิหรือข้าวสารเมล็ดสั้นสำหรับทำโจ๊ก"
   - amount: 2
     unit: l
     item: น้ำหรือน้ำสต๊อกไก่
@@ -49,7 +49,7 @@ ingredients:
   - amount: 2
     unit: ชิ้น
     item: ไข่ต้ม
-    note: ลดลงครึ่งหนึ่งไม่จำเป็น
+    note: "ผ่าครึ่ง ใส่หรือไม่ก็ได้"
 source_language: fi
 source_recipe: reseptit/paaruoat/congee-riisipuuro.md
 translation_of: congee-riisipuuro

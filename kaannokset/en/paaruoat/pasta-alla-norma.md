@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: easy
 tags:
-  - marine
-  - Sicilian
-  - pasta
-  - eggplant
+  - "Mediterranean"
+  - "Sicilian"
+  - "pasta"
+  - "eggplant"
 image:
   src: paaruoat/pasta-alla-norma.webp
   alt: Pasta alla Norma with tomato sauce, eggplant, basil and grated ricotta cheese
@@ -30,7 +30,7 @@ ingredients:
   - amount: 1
     unit: piece
     item: eggplant
-    note: in cubes
+    note: "diced"
   - amount: 400
     unit: g
     item: crushed tomatoes

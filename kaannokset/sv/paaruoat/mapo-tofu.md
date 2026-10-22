@@ -26,7 +26,7 @@ ingredients:
   - amount: 400
     unit: g
     item: fast tofu
-    note: i kuber
+    note: "tärnad"
   - amount: 200
     unit: g
     item: malet fläsk
@@ -39,7 +39,7 @@ ingredients:
   - amount: 2
     unit: st
     item: en vitlöksklyfta
-    note: hackad
+    note: "finhackad"
   - amount: 1
     unit: msk
     item: färsk ingefära

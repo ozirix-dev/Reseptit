@@ -14,10 +14,10 @@ cooking_method:
   - uuni
 difficulty: mellannivå
 tags:
-  - marina
-  - italienska
-  - vete
-  - tomat
+  - "medelhavsmat"
+  - "italiensk"
+  - "vete"
+  - "tomat"
 image:
   src: paaruoat/pizza-margherita.webp
   alt: Napolitansk Margherita pizza med tomat, mozzarella och färsk basilika
@@ -42,7 +42,7 @@ ingredients:
   - amount: 200
     unit: g
     item: mozzarella
-    note: väl dränerad
+    note: "väl avrunnen"
   - amount: 8
     unit: blad
     item: färsk basilika

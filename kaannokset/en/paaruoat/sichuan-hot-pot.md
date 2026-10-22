@@ -56,7 +56,7 @@ ingredients:
   - amount: 200
     unit: g
     item: firm tofu
-    note: in cubes
+    note: "diced"
   - amount: 200
     unit: g
     item: button mushrooms

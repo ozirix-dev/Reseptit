@@ -44,11 +44,11 @@ ingredients:
   - amount: null
     unit: ""
     item: butter
-    note: for greasing the pan
+    note: "for greasing the baking dish"
   - amount: null
     unit: ""
     item: chives
-    note: if you want to surface
+    note: "for sprinkling on top, optional"
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/raejuusto-uunimunakas.md
@@ -61,7 +61,7 @@ The soft baked omelette gets richness from smooth pureed cottage cheese.
 
 ## Description
 
-A small change to the traditional baked omelette: the cottage cheese is pureed and mixed into the creamy egg mixture. When fried in a water bath, the omelet becomes evenly coagulated and soft.
+A small change to the traditional baked omelette: the cottage cheese is pureed and mixed into the creamy egg mixture. Baking in a water bath helps the omelette set evenly and stay soft.
 
 ## Preparation
 

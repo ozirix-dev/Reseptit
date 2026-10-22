@@ -28,11 +28,11 @@ ingredients:
   - amount: 2.5
     unit: tbsp
     item: cream cheese
-    note: 2–3 tablespoons; as an alternative, yogurt, sour cream or sour cream
+    note: "2–3 tbsp; alternatively yoghurt, crème fraîche or cultured sour cream"
   - amount: 1
     unit: ""
     item: large egg
-    note: as an option 2 small
+    note: "or 2 small eggs"
   - amount: 3.5
     unit: tbsp
     item: Pofiber
@@ -40,7 +40,7 @@ ingredients:
   - amount: 75
     unit: g
     item: tomato sauce
-    note: about 4 tablespoons; e.g. pizza sauce or pureed tomato
+    note: "about 4 tbsp; for example pizza sauce or passata"
   - amount: null
     unit: ""
     item: pizza toppings of your choice

@@ -15,10 +15,10 @@ cooking_method:
   - höyrytys
 difficulty: mellannivå
 tags:
-  - indiska
-  - sydindiska
-  - en grönsak
-  - frukost
+  - "indiska"
+  - "sydindiska"
+  - "vegetariskt"
+  - "frukost"
 image:
   src: paaruoat/idli-sambar.webp
   alt: Mjuka idli riskakor med sambar linssoppa och kokosnötchutney
@@ -41,15 +41,15 @@ ingredients:
   - amount: 1
     unit: st
     item: morot
-    note: kubad
+    note: "tärnad"
   - amount: 1
     unit: st
     item: tomat
-    note: kubad
+    note: "tärnad"
   - amount: 1
     unit: st
     item: lök
-    note: i block
+    note: "skuren i klyftor"
   - amount: 1
     unit: msk
     item: tamarindpasta

@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 180
 difficulty: ระดับกลาง
 tags:
-  - ไทย
-  - หมู
-  - ตุ๋น
-  - วฮ
+  - "ไทย"
+  - "เนื้อหมู"
+  - "ตุ๋น"
+  - "วฮ"
 image:
   src: paaruoat/khao-kha-moo-vhh.webp
   alt: หมูตุ๋นสไตล์เขาคาหมู ไข่ ผักใบเขียว และข้าวดอกกะหล่ำ

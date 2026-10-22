@@ -15,10 +15,10 @@ cooking_method:
   - liesi
 difficulty: mellannivå
 tags:
-  - indiska
-  - sydindiska
-  - en grönsak
-  - frukost
+  - "indiska"
+  - "sydindiska"
+  - "vegetariskt"
+  - "frukost"
 image:
   src: paaruoat/masala-dosa.webp
   alt: Tunn krispig masala dosa med potatisfyllning, kokoschutney och sambar
@@ -44,7 +44,7 @@ ingredients:
   - amount: 1
     unit: st
     item: lök
-    note: hackad
+    note: "finhackad"
   - amount: 2
     unit: msk
     item: olja
@@ -65,7 +65,7 @@ ingredients:
   - amount: 20
     unit: g
     item: färsk koriander
-    note: hackad
+    note: "finhackad"
   - amount: null
     unit: ""
     item: vatten

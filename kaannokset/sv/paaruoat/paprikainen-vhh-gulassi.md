@@ -20,7 +20,7 @@ tags:
   - gryta
 image:
   src: paaruoat/paprikainen-gulassi.webp
-  alt: Pepprig oxgryta med gräddfil och färsk persilja
+  alt: Pepprig oxgryta med smetana och färsk persilja
   width: 1280
   height: 853
 ingredients:
@@ -31,7 +31,7 @@ ingredients:
   - amount: 150
     unit: g
     item: lök
-    note: förfinad
+    note: "finhackad"
   - amount: 3
     unit: st
     item: vitlöksklyfta
@@ -39,11 +39,11 @@ ingredients:
   - amount: 1
     unit: st
     item: röd paprika
-    note: kubad
+    note: "tärnad"
   - amount: 1
     unit: st
     item: tomat
-    note: kubad
+    note: "tärnad"
   - amount: 1
     unit: msk
     item: tomatpuré
@@ -71,7 +71,7 @@ ingredients:
     note: efter smak
   - amount: 150
     unit: g
-    item: gräddfil
+    item: "smetana"
     note: att servera
   - amount: null
     unit: ""
@@ -85,11 +85,11 @@ translation_of: paprikainen-vhh-gulassi
 
 # Paprikagryta med nötkött
 
-Den långkokta nötgrytan får sin smak från paprika, vitlök och mjuk gräddfil.
+Den långkokta nötgrytan får sin smak från paprika, vitlök och mjuk smetana.
 
 ## Beskrivning
 
-I denna gulasch stuvas rikligt med nötkött och paprika utan mjöl. Servera med gräddfil och välj till exempel mosad blomkål eller kålsallad som tillbehör.
+I denna gulasch stuvas rikligt med nötkött och paprika utan mjöl. Servera med smetana och välj till exempel mosad blomkål eller kålsallad som tillbehör.
 
 ## Gör så här
 
@@ -97,7 +97,7 @@ I denna gulasch stuvas rikligt med nötkött och paprika utan mjöl. Servera med
 2. Bryn köttbitarna i en panna i små omgångar smör eller olja. Flytta åt sidan. Tillsätt löken i grytan och fräs tills den är mjuk. Blanda i vitlök och paprikapulver.
 3. Tillsätt tomatpuré, paprika, tomat och spiskummin. Lägg tillbaka köttet i grytan, häll på köttbuljongen och krydda med salt och svartpeppar.
 4. Täck med lock och låt sjuda i ugnen i ca 1 timme 45 minuter tills köttet är mört. Kontrollera mängden vätska då och då och tillsätt en skvätt vatten om det behövs.
-5. Smaka av och justera kryddorna. Servera med gräddfil och valfritt lågkolhydrattillbehör.
+5. Smaka av och justera kryddorna. Servera med smetana och valfritt lågkolhydrattillbehör.
 
 ## Anteckningar
 

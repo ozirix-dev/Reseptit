@@ -34,14 +34,14 @@ ingredients:
   - amount: 1
     unit: dl
     item: whipping cream
-    note: with meatball dough
+    note: "for the meatball mixture"
   - amount: 2
     unit: tbsp
     item: almond flour
   - amount: 1
     unit: ""
     item: small onion
-    note: refined
+    note: "finely chopped"
   - amount: 1
     unit: tsp
     item: salt
@@ -65,15 +65,15 @@ ingredients:
   - amount: 700
     unit: g
     item: cauliflower
-    note: to muse
+    note: "for the mash"
   - amount: 40
     unit: g
     item: butter
-    note: to muse
+    note: "for the mash"
   - amount: 0.5
     unit: tsp
     item: salt
-    note: to mash or to taste
+    note: "for the mash, or to taste"
 source_language: fi
 source_recipe: reseptit/paaruoat/lihapullat-kermakastikkeessa-vhh.md
 translation_of: lihapullat-kermakastikkeessa-vhh

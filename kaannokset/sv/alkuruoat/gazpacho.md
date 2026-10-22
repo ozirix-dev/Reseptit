@@ -14,10 +14,10 @@ cooking_method:
   - kylma
 difficulty: lätt
 tags:
-  - marina
-  - spanska
-  - tomat
-  - gurka
+  - "medelhavsmat"
+  - "spanska"
+  - "tomat"
+  - "gurka"
 image:
   src: paaruoat/gazpacho.webp
   alt: Kall andalusisk gazpacho med tomater, gurka och paprika
@@ -27,7 +27,7 @@ ingredients:
   - amount: 1
     unit: kg
     item: mogna tomater
-    note: i block
+    note: "skuren i klyftor"
   - amount: 1
     unit: st
     item: gurka
@@ -55,7 +55,7 @@ ingredients:
   - amount: 2
     unit: skivor
     item: vitt bröd
-    note: valfritt, för förtjockning
+    note: "valfritt, för att göra soppan tjockare"
 source_language: fi
 source_recipe: reseptit/alkuruoat/gazpacho.md
 translation_of: gazpacho

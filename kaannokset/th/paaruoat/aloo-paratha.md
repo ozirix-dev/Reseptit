@@ -14,9 +14,9 @@ cooking_method:
   - paistinpannu
 difficulty: ระดับกลาง
 tags:
-  - อินเดียน
-  - ปัญจาบ
-  - ผัก
+  - "อินเดียน"
+  - "ปัญจาบ"
+  - "มังสวิรัติ"
 image:
   src: paaruoat/aloo-paratha.webp
   alt: Aloo Paratha - ขนมปังไส้มันฝรั่งสีทองพร้อมโยเกิร์ตและเครื่องเคียงดอง
@@ -29,7 +29,7 @@ ingredients:
   - amount: 1.8
     unit: dl
     item: น้ำ
-    note: แป้ง
+    note: "สำหรับแป้งโด"
   - amount: 1
     unit: ช้อนชา
     item: เกลือ
@@ -48,7 +48,7 @@ ingredients:
   - amount: 15
     unit: g
     item: ผักชีสด
-    note: สับ
+    note: "สับละเอียด"
   - amount: null
     unit: ""
     item: เนยใสหรือเนย
@@ -77,4 +77,5 @@ translation_of: aloo-paratha
 
 ## หมายเหตุ
 
-- ม้วนขนมปังที่ไส้แล้วเบา ๆ เพื่อไม่ให้ไส้ทะลุแป้ง
+
+- คลึงแป้งที่ใส่ไส้แล้วเบา ๆ ให้แผ่ออก เพื่อไม่ให้ไส้ทะลุแป้ง

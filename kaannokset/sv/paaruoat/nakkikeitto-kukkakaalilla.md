@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 35
 difficulty: lätt
 tags:
-  - finsk husmanskost
-  - lågkolhydrat
-  - soppa
-  - smycke
+  - "finsk husmanskost"
+  - "lågkolhydrat"
+  - "soppa"
+  - "varmkorv"
 image:
   src: paaruoat/nakkikeitto-vhh.webp
   alt: Korvsoppa med blomkål, selleri, purjolök och persilja i klar buljong
@@ -67,7 +67,7 @@ Den välbekanta klara nakkisoppan ersätts av potatis med blomkål, selleri och 
 
 ## Beskrivning
 
-Lågkolhydratsoppa korv tillagas i en kastrull. Nak tillsätts först efter att grönsakerna har kokats, så att de förblir saftiga.
+Lågkolhydratsoppa korv tillagas i en kastrull. Korven tillsätts först efter att grönsakerna har kokats, så att de förblir saftiga.
 
 ## Gör så här
 
@@ -79,4 +79,5 @@ Lågkolhydratsoppa korv tillagas i en kastrull. Nak tillsätts först efter att 
 
 ## Anteckningar
 
-- Välj mellanmål med låga kolhydrater och kontrollera etiketterna. Mängden blomkål och purjolök gör detta till en lågkolhydrat-version, inte ett strikt keto-recept.
+
+- Välj kolhydratfattig varmkorv och kontrollera förpackningen. Mängden blomkål och purjolök gör detta till en lågkolhydratversion, inte ett strikt ketorecept.

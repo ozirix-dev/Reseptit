@@ -61,7 +61,7 @@ The juices, seasoned with thyme and black pepper, are then used to make a cream 
 
 ## Preparation
 
-1. Season the pork with salt, pepper and thyme. Place in a baking dish with the onion blocks.
+1. Season the pork with salt, pepper and thyme. Place in a baking dish with the onion wedges.
 2. Add water to the pan and bake at 175 °C for about 75 minutes or until the meat is cooked.
 3. Lift the meat to rest. Strain the frying stock into the pot and add the cream.
 4. Simmer the sauce for a few minutes and check the seasoning. Take it off the heat and stir in the butter. Slice the pork and serve with the sauce.

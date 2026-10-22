@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import type { z } from "zod";
-import { semanticTermErrors, semanticProseErrors } from "./semantic-terms";
+import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTagErrors } from "./semantic-terms";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset"];
@@ -111,6 +111,8 @@ function knownTermErrors(source: Frontmatter, target: Frontmatter, locale: Local
   const allItems = items.join(" | ");
   const issues: string[] = [];
   issues.push(...semanticTermErrors(source.ingredients.map((item) => item.item), items, locale));
+  issues.push(...semanticNoteErrors(source.ingredients.map((item) => item.note ?? ""), target.ingredients.map((item) => item.note ?? ""), locale));
+  issues.push(...semanticTagErrors(source.tags, target.tags, locale));
   issues.push(...semanticProseErrors(source.recipe_id, locale, `${target.title}\n${targetContent}\n${target.image?.alt ?? ""}`));
   if (locale === "th" && hasIngredient(source, /kalafondi/i) && /ฟองดู(?:ว์)?ปลา|น้ำสต[็๊]อกข้าว/.test(`${target.title}\n${targetContent}\n${target.image?.alt ?? ""}`)) {
     issues.push("fish stock concentrate mistranslated in Thai prose");

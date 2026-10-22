@@ -41,7 +41,7 @@ ingredients:
   - amount: 1
     unit: piece
     item: tomato
-    note: in blocks
+    note: "cut into wedges"
   - amount: 0.5
     unit: piece
     item: red onion
@@ -58,18 +58,18 @@ ingredients:
   - amount: 1
     unit: piece
     item: red chili
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: tbsp
     item: fresh coriander
-    note: chopped
+    note: "finely chopped"
   - amount: 1
     unit: tbsp
     item: neutral oil
   - amount: null
     unit: ""
     item: fresh celery or Chinese celery
-    note: chopped
+    note: "finely chopped"
 translation_languages: []
 translation_status: {}
 source_language: fi

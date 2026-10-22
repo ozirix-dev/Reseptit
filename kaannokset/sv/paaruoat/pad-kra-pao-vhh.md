@@ -15,9 +15,9 @@ servings: 4
 time_total_min: 25
 difficulty: lätt
 tags:
-  - Thai
-  - VHH
-  - eldig
+  - "Thai"
+  - "VHH"
+  - "stark"
 image:
   src: paaruoat/pad-kra-pao-vhh.webp
   alt: Pad kra pao köttfärs med thaibasilika och chili, stekt ägg och blomkålsris

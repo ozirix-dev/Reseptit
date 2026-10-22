@@ -31,11 +31,11 @@ ingredients:
   - amount: 1
     unit: st
     item: lök
-    note: hackad
+    note: "finhackad"
   - amount: 2
     unit: st
     item: tomat
-    note: kubad
+    note: "tärnad"
   - amount: 2
     unit: st
     item: en vitlöksklyfta

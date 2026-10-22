@@ -14,10 +14,10 @@ cooking_method:
   - kylma
 difficulty: lätt
 tags:
-  - marina
-  - Levantinsk
-  - kikärter
-  - Tahini
+  - "medelhavsmat"
+  - "Levantinsk"
+  - "kikärter"
+  - "Tahini"
 image:
   src: paaruoat/hummus.webp
   alt: Hummus med olivolja, kikärter och paprika avslutad med pitabröd
@@ -73,4 +73,5 @@ Smidig hummus är gjord av kikärter, tahini, citron och vitlök. Servera som br
 
 ## Anteckningar
 
-– Vill du ha en särskilt len hummus, skala kikärtorna innan du puréer.
+
+- Skala kikärtorna innan du mixar dem om du vill ha en särskilt len hummus.

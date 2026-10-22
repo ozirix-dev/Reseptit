@@ -34,14 +34,14 @@ ingredients:
   - amount: 1
     unit: dl
     item: วิปปิ้งครีม
-    note: พร้อมแป้งลูกชิ้น
+    note: "สำหรับส่วนผสมลูกชิ้น"
   - amount: 2
     unit: ช้อนโต๊ะ
     item: แป้งอัลมอนด์
   - amount: 1
     unit: ชิ้น
     item: หัวหอมเล็ก
-    note: ขัดเกลา
+    note: "สับละเอียด"
   - amount: 1
     unit: ช้อนชา
     item: เกลือ
@@ -65,15 +65,15 @@ ingredients:
   - amount: 700
     unit: g
     item: กะหล่ำดอก
-    note: รำพึง
+    note: "สำหรับส่วนผสมบด"
   - amount: 40
     unit: g
     item: เนย
-    note: รำพึง
+    note: "สำหรับส่วนผสมบด"
   - amount: 0.5
     unit: ช้อนชา
     item: เกลือ
-    note: เพื่อบดหรือลิ้มรส
+    note: "สำหรับส่วนผสมบด หรือปรุงตามชอบ"
 source_language: fi
 source_recipe: reseptit/paaruoat/lihapullat-kermakastikkeessa-vhh.md
 translation_of: lihapullat-kermakastikkeessa-vhh

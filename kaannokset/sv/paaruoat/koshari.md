@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: mellannivå
 tags:
-  - marina
-  - egyptisk
-  - ris
-  - lins
+  - "medelhavsmat"
+  - "egyptisk"
+  - "ris"
+  - "linser"
 image:
   src: paaruoat/koshari.webp
   alt: Egyptisk koshari med lager av ris, linser och pasta med tomatsås och
@@ -87,4 +87,5 @@ Koshari samlar ris, linser och pasta i samma skål. Kryddig tomatsås, vitlöksv
 
 ## Anteckningar
 
-– Erbjud såserna separat så att alla kan anpassa rättens syra och heta.
+
+- Servera såserna separat så att var och en kan anpassa rättens syra och hetta.

@@ -27,14 +27,14 @@ ingredients:
   - amount: 800
     unit: g
     item: lamb shoulder
-    note: cubed
+    note: "diced"
   - amount: 2
     unit: tbsp
     item: oil or ghee
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 200
     unit: g
     item: plain yogurt
@@ -94,4 +94,5 @@ Kashmiri Rogan Josh is long-braised lamb in an aromatic sauce softened with yogu
 
 ## Notes
 
-- Add the yogurt to the warm pot gradually and stir so that it does not run.
+
+- Gradually stir the yoghurt into the warm stew to keep it from curdling.

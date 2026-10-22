@@ -31,7 +31,7 @@ ingredients:
   - amount: 150
     unit: g
     item: onions
-    note: refined
+    note: "finely chopped"
   - amount: 3
     unit: ""
     item: garlic clove
@@ -39,11 +39,11 @@ ingredients:
   - amount: 1
     unit: ""
     item: red pepper
-    note: cubed
+    note: "diced"
   - amount: 1
     unit: ""
     item: tomato
-    note: cubed
+    note: "diced"
   - amount: 1
     unit: tbsp
     item: tomato puree
@@ -71,7 +71,7 @@ ingredients:
     note: to taste
   - amount: 150
     unit: g
-    item: sour cream
+    item: "smetana (thick sour cream)"
     note: to serve
   - amount: null
     unit: ""

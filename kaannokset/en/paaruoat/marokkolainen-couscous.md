@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: medium
 tags:
-  - marine
-  - Moroccan
-  - chicken
-  - chickpea
+  - "Mediterranean"
+  - "Moroccan"
+  - "chicken"
+  - "chickpea"
 image:
   src: paaruoat/marokkolainen-couscous.webp
   alt: Moroccan couscous dish with chicken, chickpeas and colorful vegetables
@@ -33,7 +33,7 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: piece
     item: carrot

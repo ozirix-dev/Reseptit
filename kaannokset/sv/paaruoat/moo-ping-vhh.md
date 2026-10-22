@@ -16,10 +16,10 @@ servings: 4
 time_total_min: 45
 difficulty: lätt
 tags:
-  - Thai
-  - grilla
-  - en gris
-  - VHH
+  - "Thai"
+  - "grilla"
+  - "fläskkött"
+  - "VHH"
 image:
   src: paaruoat/moo-ping-vhh.webp
   alt: Grillade moo ping fläskspett, gurka och varm dippsås
@@ -50,7 +50,7 @@ ingredients:
   - amount: 2
     unit: msk
     item: koriander stjälkar
-    note: hackad
+    note: "finhackad"
   - amount: 0.5
     unit: tsk
     item: mald vitpeppar

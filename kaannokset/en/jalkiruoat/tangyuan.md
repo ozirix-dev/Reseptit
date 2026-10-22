@@ -34,7 +34,7 @@ ingredients:
   - amount: 50
     unit: g
     item: sugar
-    note: to the filling
+    note: "for the filling"
   - amount: 40
     unit: g
     item: butter

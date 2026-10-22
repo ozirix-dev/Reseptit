@@ -67,7 +67,7 @@ ingredients:
   - amount: null
     unit: ""
     item: fresh coriander
-    note: to the surface
+    note: "for the topping"
 translation_languages: []
 translation_status: {}
 source_language: fi

@@ -26,14 +26,14 @@ ingredients:
   - amount: 700
     unit: g
     item: เนื้อวัวส่วนหัวไหล่สำหรับตุ๋น
-    note: ในลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 2
     unit: l
     item: น้ำ
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: ลดลงครึ่งหนึ่ง
+    note: "ผ่าครึ่ง"
   - amount: 1
     unit: ชิ้น
     item: ขิงสด

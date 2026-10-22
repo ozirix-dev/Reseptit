@@ -14,9 +14,9 @@ cooking_method:
   - liesi
 difficulty: mellannivå
 tags:
-  - indiska
-  - en grönsak
-  - paneer
+  - "indiska"
+  - "vegetariskt"
+  - "paneer"
 image:
   src: paaruoat/palak-paneer.webp
   alt: Palak paneer spenatcurry med paneerosttärningar
@@ -29,11 +29,11 @@ ingredients:
   - amount: 250
     unit: g
     item: paneerost
-    note: kubad
+    note: "tärnad"
   - amount: 1
     unit: st
     item: lök
-    note: hackad
+    note: "finhackad"
   - amount: 2
     unit: st
     item: en vitlöksklyfta

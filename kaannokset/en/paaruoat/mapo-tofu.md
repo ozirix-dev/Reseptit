@@ -26,7 +26,7 @@ ingredients:
   - amount: 400
     unit: g
     item: firm tofu
-    note: in cubes
+    note: "diced"
   - amount: 200
     unit: g
     item: ground pork
@@ -39,7 +39,7 @@ ingredients:
   - amount: 2
     unit: piece
     item: a clove of garlic
-    note: chopped
+    note: "finely chopped"
   - amount: 1
     unit: tbsp
     item: fresh ginger

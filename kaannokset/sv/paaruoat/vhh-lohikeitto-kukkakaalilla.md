@@ -31,7 +31,7 @@ ingredients:
   - amount: 600
     unit: g
     item: blomkål
-    note: delad i små blommor
+    note: "delad i små buketter"
   - amount: 80
     unit: g
     item: purjolök
@@ -52,10 +52,10 @@ ingredients:
   - amount: null
     unit: ""
     item: smör
-    note: för stuvning
+    note: "för att fräsa mjukt"
   - amount: 8
     unit: st
-    item: hel svartpeppar
+    item: "hela svartpepparkorn"
   - amount: null
     unit: ""
     item: färsk dill
@@ -88,5 +88,6 @@ Buljongen kryddas enligt doseringsanvisningen för fiskfonden på förpackningen
 
 ## Anteckningar
 
-– Koka inte soppan kraftigt efter att ha tillsatt laxen för att hålla fisken saftig.
-– Styrkan och sältan hos fiskfondens styrka och sälta varierar. Kontrollera smaken innan du tillsätter salt.
+
+- Koka inte soppan kraftigt efter att laxen tillsatts, så att fisken förblir saftig.
+- Fiskfonders styrka och sälta varierar. Smaka av innan du tillsätter salt.

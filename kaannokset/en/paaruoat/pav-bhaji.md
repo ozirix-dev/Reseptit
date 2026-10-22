@@ -15,10 +15,10 @@ cooking_method:
   - paistinpannu
 difficulty: medium
 tags:
-  - Indian
-  - Mumbai
-  - a vegetable
-  - street kitchen
+  - "Indian"
+  - "Mumbai"
+  - "vegetarian"
+  - "street food"
 image:
   src: paaruoat/pav-bhaji.webp
   alt: Pav bhaji vegetable puree with butter toasted rolls, onion and lime
@@ -39,7 +39,7 @@ ingredients:
   - amount: 1
     unit: piece
     item: carrot
-    note: cubed
+    note: "diced"
   - amount: 2
     unit: tbsp
     item: oil
@@ -49,7 +49,7 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: piece
     item: a clove of garlic

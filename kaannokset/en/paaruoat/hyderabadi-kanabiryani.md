@@ -72,11 +72,11 @@ ingredients:
   - amount: 20
     unit: g
     item: fresh coriander
-    note: chopped
+    note: "finely chopped"
   - amount: 10
     unit: g
     item: fresh mint
-    note: chopped
+    note: "finely chopped"
 source_language: fi
 source_recipe: reseptit/paaruoat/hyderabadi-kanabiryani.md
 translation_of: hyderabadi-kanabiryani

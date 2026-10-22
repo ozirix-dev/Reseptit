@@ -15,11 +15,11 @@ servings: 4
 time_total_min: 30
 difficulty: easy
 tags:
-  - Thai
-  - wok
-  - noodles
-  - fiery
-  - VHH
+  - "Thai"
+  - "wok"
+  - "noodles"
+  - "spicy"
+  - "VHH"
 image:
   src: paaruoat/pad-kee-mao-vhh-konjac.webp
   alt: Hot pad kee mao wok with konjac noodles, chicken, chili and Thai basil
@@ -55,7 +55,7 @@ ingredients:
   - amount: 2
     unit: piece
     item: red chili
-    note: sliced, heat according to your taste
+    note: "sliced; adjust the heat to taste"
   - amount: 2
     unit: tbsp
     item: fish sauce

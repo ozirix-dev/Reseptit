@@ -15,9 +15,9 @@ cooking_method:
   - grilli
 difficulty: mellannivå
 tags:
-  - indiska
-  - en grönsak
-  - grilla
+  - "indiska"
+  - "vegetariskt"
+  - "grilla"
 image:
   src: paaruoat/paneer-tikka.webp
   alt: Paneer tikka spett med rostad paneerost och färgglada paprika
@@ -27,7 +27,7 @@ ingredients:
   - amount: 400
     unit: g
     item: paneerost
-    note: kubad
+    note: "tärnad"
   - amount: 1
     unit: st
     item: röd paprika
@@ -64,18 +64,18 @@ translation_of: paneer-tikka
 
 # Paneer tikka – grillad ost och grönsaksspett
 
-Bitar av paneerost och grönsaker marinerade i yoghurt, citron och indiska kryddor steks snabbt på grillen eller under ugnens grillmotstånd.
+Bitar av paneerost och grönsaker marinerade i yoghurt, citron och indiska kryddor steks snabbt på grillen eller under ugnens grillelement.
 
 ## Beskrivning
 
-Bitar av paneerost och grönsaker marinerade i yoghurt, citron och indiska kryddor steks snabbt på grillen eller under ugnens grillmotstånd.
+Bitar av paneerost och grönsaker marinerade i yoghurt, citron och indiska kryddor steks snabbt på grillen eller under ugnens grillelement.
 
 ## Tillagning
 
 1. Blanda yoghurt, citronsaft, kryddor, salt och olja till en marinad.
 2. Vänd paneer och paprika i marinaden. Låt smaksättas i kylen i 30 minuter.
 3. Trä upp osten och paprikan på spetten växelvis.
-4. Grilla på medelvärme eller grädda under grillmotståndet i en 230 graders ugn i 10–14 minuter. Vänd en gång.
+4. Grilla på medelvärme eller grädda under grillelementet i en 230 graders ugn i 10–14 minuter. Vänd en gång.
 5. Servera varm med citronklyftor och mintchutney.
 
 ## Anteckningar

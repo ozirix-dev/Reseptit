@@ -40,7 +40,7 @@ ingredients:
   - amount: 150
     unit: g
     item: เต้าหู้แข็ง
-    note: ลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 150
     unit: g
     item: ถั่วเขียวงอก

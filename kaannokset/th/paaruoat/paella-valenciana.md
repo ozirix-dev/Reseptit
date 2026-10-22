@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: ระดับกลาง
 tags:
-  - มารีน
-  - สเปน
-  - ไก่
-  - ข้าว
+  - "เมดิเตอร์เรเนียน"
+  - "สเปน"
+  - "ไก่"
+  - "ข้าว"
 image:
   src: paaruoat/paella-valenciana.webp
   alt: ปาเอยาใส่ข้าวหญ้าฝรั่น ไก่ และถั่วแขก
@@ -34,7 +34,7 @@ ingredients:
     note: เป็นชิ้น ๆ สามารถแทนที่ด้วยไก่ได้
   - amount: 300
     unit: g
-    item: ข้าว Paella หรือข้าวต้ม
+    item: "ข้าวสารปาเอยาหรือข้าวสารเมล็ดสั้นสำหรับทำโจ๊ก"
   - amount: 150
     unit: g
     item: ถั่วแขก

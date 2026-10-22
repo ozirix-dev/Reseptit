@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: mellannivå
 tags:
-  - marina
-  - franska
-  - fisk
-  - en potatis
+  - "medelhavsmat"
+  - "franska"
+  - "fisk"
+  - "potatis"
 image:
   src: paaruoat/bouillabaisse.webp
   alt: Bouillabaisse fisksoppa i saffransbuljong med vit fisk, musslor och räkor
@@ -39,7 +39,7 @@ ingredients:
   - amount: 1
     unit: st
     item: lök
-    note: hackad
+    note: "finhackad"
   - amount: 1
     unit: st
     item: fänkål
@@ -53,7 +53,7 @@ ingredients:
     item: krossade tomater
   - amount: 1
     unit: l
-    item: fiskfond
+    item: "fiskbuljong"
   - amount: 0.25
     unit: tsk
     item: saffran
@@ -66,7 +66,7 @@ ingredients:
   - amount: 400
     unit: g
     item: potatis
-    note: i kuber
+    note: "tärnad"
   - amount: 4
     unit: skivor
     item: vitt bröd

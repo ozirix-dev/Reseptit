@@ -49,11 +49,11 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: piece
     item: a clove of garlic
-    note: chopped
+    note: "finely chopped"
   - amount: 20
     unit: g
     item: fresh ginger
@@ -63,7 +63,7 @@ ingredients:
     item: crushed tomatoes
   - amount: 2
     unit: dl
-    item: double cream
+    item: "whipping cream"
   - amount: 1
     unit: tsp
     item: paprika powder

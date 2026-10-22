@@ -14,10 +14,10 @@ cooking_method:
   - paistaminen
 difficulty: ระดับกลาง
 tags:
-  - มารีน
-  - ตูนิเซีย
-  - ไข่
-  - ปลาทูน่า
+  - "เมดิเตอร์เรเนียน"
+  - "ตูนิเซีย"
+  - "ไข่"
+  - "ปลาทูน่า"
 image:
   src: paaruoat/tunisialainen-brik.webp
   alt: ตูนิเซียบริคทอดกรอบกับไข่ ทูน่า และพาร์สลีย์
@@ -30,14 +30,14 @@ ingredients:
   - amount: 160
     unit: g
     item: ปลาทูน่า
-    note: ระบายออก
+    note: "สะเด็ดน้ำ"
   - amount: 4
     unit: ชิ้น
     item: ไข่
   - amount: 2
     unit: ช้อนโต๊ะ
     item: เคเปอร์
-    note: สับ
+    note: "สับละเอียด"
   - amount: 15
     unit: g
     item: พาร์สลีย์สด
@@ -52,7 +52,7 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: เลมอน
-    note: ในบล็อกสำหรับเสิร์ฟ
+    note: "หั่นเป็นเสี้ยวสำหรับเสิร์ฟ"
 source_language: fi
 source_recipe: reseptit/alkuruoat/tunisialainen-brik.md
 translation_of: tunisialainen-brik
@@ -76,4 +76,5 @@ translation_of: tunisialainen-brik
 
 ## หมายเหตุ
 
-- โดยทั่วไปแล้วไข่จะมีน้ำมูกไหลจากด้านใน ใช้ไข่สดและอบ Brik ทันทีหลังจากเติม
+
+- ตามแบบดั้งเดิม ไข่ด้านในยังเยิ้มอยู่ ใช้ไข่สดและทอดบริกทันทีหลังใส่ไส้

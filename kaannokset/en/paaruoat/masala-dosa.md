@@ -15,10 +15,10 @@ cooking_method:
   - liesi
 difficulty: medium
 tags:
-  - Indian
-  - south indian
-  - a vegetable
-  - breakfast
+  - "Indian"
+  - "south indian"
+  - "vegetarian"
+  - "breakfast"
 image:
   src: paaruoat/masala-dosa.webp
   alt: Thin crispy masala dosa with potato filling, coconut chutney and sambar
@@ -44,7 +44,7 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: tbsp
     item: oil
@@ -65,7 +65,7 @@ ingredients:
   - amount: 20
     unit: g
     item: fresh coriander
-    note: chopped
+    note: "finely chopped"
   - amount: null
     unit: ""
     item: water

@@ -43,7 +43,7 @@ ingredients:
   - amount: 400
     unit: g
     item: blomkål
-    note: i små blomställningar
+    note: "i små buketter"
   - amount: 1
     unit: st
     item: liten lök

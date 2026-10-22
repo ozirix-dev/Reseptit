@@ -30,7 +30,7 @@ fat_per_serving_g: 34
 ingredients:
   - amount: 600
     unit: g
-    item: เนื้อน่องไก่
+    item: "เนื้อสะโพกไก่"
     note: หั่นเป็นชิ้นขนาดพอดีคำ
   - amount: 400
     unit: ml
@@ -42,7 +42,7 @@ ingredients:
   - amount: 200
     unit: g
     item: หน่อไม้
-    note: ระบายออก
+    note: "สะเด็ดน้ำ"
   - amount: 1
     unit: ชิ้น
     item: พริกหวานแดง

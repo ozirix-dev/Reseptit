@@ -50,7 +50,7 @@ ingredients:
   - amount: 1
     unit: ลูก
     item: พริกแดง
-    note: ปรับปริมาณได้ตามชอบ
+    note: "หรือปรุงตามชอบ"
   - amount: 2
     unit: ช้อนโต๊ะ
     item: น้ำมะนาว

@@ -31,11 +31,11 @@ ingredients:
   - amount: 0.5
     unit: st
     item: lök
-    note: förfinad
+    note: "finhackad"
   - amount: 200
     unit: g
     item: broccoli
-    note: som små knappar
+    note: "i små buketter"
   - amount: 6
     unit: st
     item: ägg

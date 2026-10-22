@@ -15,10 +15,10 @@ cooking_method:
   - liesi
 difficulty: mellannivå
 tags:
-  - marina
-  - grekiska
-  - aubergine
-  - nötkött
+  - "medelhavsmat"
+  - "grekisk"
+  - "aubergine"
+  - "nötkött"
 image:
   src: paaruoat/kreikkalainen-moussaka.webp
   alt: Grekisk moussaka med lager av aubergine, potatis, köttfärssås och béchamel
@@ -39,7 +39,7 @@ ingredients:
   - amount: 1
     unit: st
     item: lök
-    note: hackad
+    note: "finhackad"
   - amount: 400
     unit: g
     item: krossade tomater
@@ -93,4 +93,5 @@ Moussaka bakas i lager där aubergine och potatis varvas med köttfärssås kryd
 
 ## Anteckningar
 
-– Pannan skärs renare när du låter den svalna efter gräddningen.
+
+- Låt moussakan vila efter gräddningen så blir den lättare att skära i fina portioner.

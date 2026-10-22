@@ -27,7 +27,7 @@ ingredients:
   - amount: 1
     unit: kg
     item: whole chicken legs (thigh and drumstick)
-    note: skinless, sliced
+    note: "skin removed, with slits cut into the meat"
   - amount: 200
     unit: g
     item: plain yogurt
@@ -67,18 +67,18 @@ translation_of: tandoorikana
 
 # Tandoori chicken in the oven
 
-Chicken marinated in yogurt and spices is fried in a hot oven or grill until it is roasted on the surface and juicy on the inside.
+Chicken marinated in yogurt and spices is cooked in a hot oven or on a grill until it is roasted on the surface and juicy on the inside.
 
 ## Description
 
-Chicken marinated in yogurt and spices is fried in a hot oven or grill until it is roasted on the surface and juicy on the inside.
+Chicken marinated in yogurt and spices is cooked in a hot oven or on a grill until it is roasted on the surface and juicy on the inside.
 
 ## Preparation
 
 1. Mix yogurt, lemon juice, spices, garlic, ginger, salt and oil.
 2. Roll the chicken in the marinade and let it marinate in the fridge for at least an hour, preferably overnight.
 3. Heat the oven to 230 degrees. Place the chicken on the rack on the baking sheet.
-4. Bake for 35-45 minutes, turning once. Finally, cook with a grill resistance until the surface is toasted.
+4. Bake for 35-45 minutes, turning once. Finally, cook under the oven grill until the surface is toasted.
 5. Check that the internal temperature of the broiler is at least 75 °C. Let rest for 5 minutes before serving.
 
 ## Notes

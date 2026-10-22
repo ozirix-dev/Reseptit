@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: เนื้อน่องไก่
+    item: "เนื้อสะโพกไก่"
     note: เป็นชิ้นไม่มีกระดูก
   - amount: 300
     unit: g
@@ -52,7 +52,7 @@ ingredients:
     item: ยี่หร่าบด
   - amount: 1
     unit: ช้อนชา
-    item: ผักชีบด
+    item: "เมล็ดผักชีป่น"
   - amount: 1
     unit: ช้อนชา
     item: เกลือ
@@ -72,11 +72,11 @@ ingredients:
   - amount: 20
     unit: g
     item: ผักชีสด
-    note: สับ
+    note: "สับละเอียด"
   - amount: 10
     unit: g
     item: สะระแหน่สด
-    note: สับ
+    note: "สับละเอียด"
 source_language: fi
 source_recipe: reseptit/paaruoat/hyderabadi-kanabiryani.md
 translation_of: hyderabadi-kanabiryani

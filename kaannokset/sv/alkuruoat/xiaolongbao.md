@@ -79,4 +79,5 @@ Shanghainese soppdumplings innehåller kryddig fläskfyllning och köttgelé, so
 
 ## Anteckningar
 
-– Köttgelé görs genom att kyla kryddat kött eller kycklingfond med gelatin. Låt fyllningen stå kall under hela monteringen.
+
+- Buljonggelén görs genom att kyla kryddad kött- eller kycklingbuljong med gelatin. Håll fyllningen kall under hela monteringen.

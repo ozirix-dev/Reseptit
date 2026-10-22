@@ -15,10 +15,10 @@ cooking_method:
   - höyrytys
 difficulty: ระดับกลาง
 tags:
-  - อินเดียน
-  - อินเดียใต้
-  - ผัก
-  - อาหารเช้า
+  - "อินเดียน"
+  - "อินเดียใต้"
+  - "มังสวิรัติ"
+  - "อาหารเช้า"
 image:
   src: paaruoat/idli-sambar.webp
   alt: เค้กข้าวอิดลีเนื้อนุ่มพร้อมซุปถั่วเลนทิลและชัทนีย์มะพร้าว
@@ -27,7 +27,7 @@ image:
 ingredients:
   - amount: 250
     unit: g
-    item: ข้าวอิดลีหรือข้าวโจ๊ก
+    item: "ข้าวสารสำหรับทำอิดลีหรือข้าวสารเมล็ดสั้นสำหรับทำโจ๊ก"
   - amount: 100
     unit: g
     item: ถั่วเลนทิล urad dal
@@ -41,15 +41,15 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: แครอท
-    note: ลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 1
     unit: ชิ้น
     item: มะเขือเทศ
-    note: ลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: ในบล็อก
+    note: "หั่นเป็นเสี้ยว"
   - amount: 1
     unit: ช้อนโต๊ะ
     item: มะขามเปียก

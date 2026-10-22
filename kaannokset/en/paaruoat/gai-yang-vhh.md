@@ -16,11 +16,11 @@ servings: 4
 time_total_min: 60
 difficulty: easy
 tags:
-  - Thai
-  - Dad
-  - chicken
-  - grill
-  - VHH
+  - "Thai"
+  - "Isan"
+  - "chicken"
+  - "grill"
+  - "VHH"
 image:
   src: paaruoat/gai-yang-vhh.webp
   alt: Gai yang grilled chicken on a golden brown surface, herb sauce and cauliflower rice
@@ -34,7 +34,7 @@ ingredients:
   - amount: 900
     unit: g
     item: chicken thigh pieces
-    note: leathery and bony
+    note: "skin-on and bone-in"
   - amount: 3
     unit: tbsp
     item: fish sauce
@@ -79,7 +79,7 @@ Isan-style gai yang gets its flavor from garlic, coriander, fish sauce and white
 
 ## Description
 
-Let the chicken marinate for at least 30 minutes if you have time. When cooking in the oven, the grill resistance helps to brown the surface.
+Let the chicken marinate for at least 30 minutes if you have time. When cooking in the oven, the oven grill helps to brown the surface.
 
 ## Preparation
 

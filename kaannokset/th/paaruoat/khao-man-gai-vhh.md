@@ -1,5 +1,5 @@
 ---
-title: สูตรคาร์โบไฮเดรตต่ำ ข้าวมันไก่ – ข้าวมันไก่และดอกกะหล่ำไทย
+title: ข้าวมันไก่แบบคาร์โบไฮเดรตต่ำ ใช้ข้าวกะหล่ำดอก
 recipe_id: khao-man-gai-vhh
 url_slug: khao-man-gai-vhh
 category: paaruoka
@@ -30,7 +30,7 @@ fat_per_serving_g: 24
 ingredients:
   - amount: 700
     unit: g
-    item: เนื้อน่องไก่
+    item: "เนื้อสะโพกไก่"
     note: ไม่มีกระดูกและไม่มีผิวหนัง
   - amount: 700
     unit: g
@@ -61,7 +61,7 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: กระเทียม
-    note: สับ
+    note: "สับละเอียด"
   - amount: null
     unit: ""
     item: ผักชีสด
@@ -73,7 +73,7 @@ source_recipe: reseptit/paaruoat/khao-man-gai-vhh.md
 translation_of: khao-man-gai-vhh
 ---
 
-# สูตรคาร์โบไฮเดรตต่ำ ข้าวมันไก่ – ข้าวมันไก่และดอกกะหล่ำไทย
+# ข้าวมันไก่แบบคาร์โบไฮเดรตต่ำ ใช้ข้าวกะหล่ำดอก
 
 รูปแบบ คาร์โบไฮเดรตต่ำ นี้ยังคงรักษาไก่ปรุงอย่างอ่อนโยนและน้ำจิ้มขิงของข้าวมันไก่ ข้าวดอกกะหล่ำอุ่นเสิร์ฟแทนข้าวปรุงรสแบบดั้งเดิม
 

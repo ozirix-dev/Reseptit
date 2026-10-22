@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: lätt
 tags:
-  - marina
-  - sicilianska
-  - pasta
-  - aubergine
+  - "medelhavsmat"
+  - "sicilianska"
+  - "pasta"
+  - "aubergine"
 image:
   src: paaruoat/pasta-alla-norma.webp
   alt: Pasta alla Norma med tomatsås, aubergine, basilika och riven ricottaost
@@ -30,7 +30,7 @@ ingredients:
   - amount: 1
     unit: st
     item: aubergine
-    note: i kuber
+    note: "tärnad"
   - amount: 400
     unit: g
     item: krossade tomater

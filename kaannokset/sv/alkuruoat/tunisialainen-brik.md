@@ -14,10 +14,10 @@ cooking_method:
   - paistaminen
 difficulty: mellannivå
 tags:
-  - marina
-  - tunisiska
-  - ägg
-  - tonfisk
+  - "medelhavsmat"
+  - "tunisiska"
+  - "ägg"
+  - "tonfisk"
 image:
   src: paaruoat/tunisialainen-brik.webp
   alt: Krispigt stekt tunisisk Brik med ägg, tonfisk och persilja
@@ -30,14 +30,14 @@ ingredients:
   - amount: 160
     unit: g
     item: tonfisk
-    note: dränerad
+    note: "avrunnen"
   - amount: 4
     unit: st
     item: ägg
   - amount: 2
     unit: msk
     item: kapris
-    note: hackad
+    note: "finhackad"
   - amount: 15
     unit: g
     item: färsk persilja
@@ -52,7 +52,7 @@ ingredients:
   - amount: 1
     unit: st
     item: citron
-    note: i block för servering
+    note: "i klyftor till servering"
 source_language: fi
 source_recipe: reseptit/alkuruoat/tunisialainen-brik.md
 translation_of: tunisialainen-brik
@@ -76,4 +76,5 @@ Tonfisk, persilja och ägg slås in i tunn deg. Brik steks snabbt tills det är 
 
 ## Anteckningar
 
-– Ägget förblir traditionellt rinnande från insidan. Använd färska ägg och baka Brik direkt efter fyllning.
+
+- Ägget är traditionellt rinnigt inuti. Använd färska ägg och fritera briken direkt efter fyllningen.

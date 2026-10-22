@@ -34,7 +34,7 @@ ingredients:
   - amount: 200
     unit: g
     item: kinakål
-    note: hackad
+    note: "finhackad"
   - amount: 2
     unit: st
     item: vårlök

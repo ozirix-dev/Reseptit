@@ -1,5 +1,5 @@
 ---
-title: Medu Vada – ถั่วเลนทิลกรอบๆ
+title: เมดูวาดา – โดนัทถั่วอูรัดกรอบ
 recipe_id: medu-vada
 url_slug: medu-vada
 category: alkuruoka
@@ -14,13 +14,13 @@ cooking_method:
   - friteeraus
 difficulty: ระดับกลาง
 tags:
-  - อินเดียน
-  - อินเดียใต้
-  - ผัก
-  - อาหารเรียกน้ำย่อย
+  - "อินเดียน"
+  - "อินเดียใต้"
+  - "มังสวิรัติ"
+  - "อาหารเรียกน้ำย่อย"
 image:
   src: paaruoat/medu-vada.webp
-  alt: Medu Vada - ถั่วเลนทิลสีน้ำตาลทองกรุบกรอบพร้อมชัทนีย์มะพร้าว
+  alt: เมดูวาดา โดนัทถั่วอูรัดทอดกรอบสีเหลืองทอง เสิร์ฟพร้อมชัทนีย์มะพร้าว
   width: 1280
   height: 853
 ingredients:
@@ -31,11 +31,11 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: พริกเขียว
-    note: สับ
+    note: "สับละเอียด"
   - amount: 10
     unit: g
     item: ขิงสด
-    note: สับ
+    note: "สับละเอียด"
   - amount: 10
     unit: g
     item: ใบแกงสด
@@ -55,7 +55,7 @@ source_recipe: reseptit/alkuruoat/medu-vada.md
 translation_of: medu-vada
 ---
 
-# Medu Vada – ถั่วเลนทิลกรอบๆ
+# เมดูวาดา – โดนัทถั่วอูรัดกรอบ
 
 แป้งโปร่งที่ทำจากถั่วเลนทิล urad dal ทอดเป็นวงแล้วเสิร์ฟพร้อมซุปซัมบาร์หรือชัทนีย์
 
@@ -74,4 +74,5 @@ translation_of: medu-vada
 
 ## หมายเหตุ
 
-- แป้งจะจับตัวกันดีขึ้นเมื่อนำถั่วเลนทิลออกอย่างระมัดระวังและบดให้ละเอียดโดยไม่ใช้น้ำมากเกินไป
+
+- สะเด็ดน้ำถั่วให้ดีแล้วบดโดยไม่เติมน้ำเกินจำเป็น จะช่วยให้แป้งเกาะตัวดีขึ้น

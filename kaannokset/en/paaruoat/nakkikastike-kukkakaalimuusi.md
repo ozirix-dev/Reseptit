@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 30
 difficulty: easy
 tags:
-  - Finnish home cooking
-  - low carb
-  - jewelry
-  - everyday food
+  - "Finnish home cooking"
+  - "low carb"
+  - "frankfurter sausages"
+  - "everyday food"
 image:
   src: paaruoat/nakkikastike-kukkakaalimuusi.webp
   alt: Frankfurter sausages in cream sauce with cauliflower mash

@@ -15,9 +15,9 @@ cooking_method:
   - friteeraus
 difficulty: mellannivå
 tags:
-  - indiska
-  - Punjabi
-  - en grönsak
+  - "indiska"
+  - "Punjabi"
+  - "vegetariskt"
 image:
   src: paaruoat/chole-bhature.webp
   alt: "Chole bhature-rätt: kryddig kikärtscurry och luftigt stekt bröd"
@@ -38,11 +38,11 @@ ingredients:
   - amount: 1
     unit: st
     item: lök
-    note: hackad
+    note: "finhackad"
   - amount: 2
     unit: st
     item: en vitlöksklyfta
-    note: hackad
+    note: "finhackad"
   - amount: 20
     unit: g
     item: färsk ingefära

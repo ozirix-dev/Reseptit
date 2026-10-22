@@ -14,13 +14,13 @@ cooking_method:
   - liesi
 difficulty: mellannivå
 tags:
-  - marina
-  - spanska
-  - ägg
-  - en potatis
+  - "medelhavsmat"
+  - "spanska"
+  - "ägg"
+  - "potatis"
 image:
   src: paaruoat/tortilla-de-patatas.webp
-  alt: En tjock spansk potatis- och lökomelett skuren i block
+  alt: En tjock spansk potatis- och lökomelett skuren i tårtbitar
   width: 1279
   height: 853
 ingredients:

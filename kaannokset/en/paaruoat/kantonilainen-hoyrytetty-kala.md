@@ -24,7 +24,7 @@ ingredients:
   - amount: 700
     unit: g
     item: white fish fillet
-    note: for example pike or cod
+    note: "for example zander or cod"
   - amount: 1
     unit: tbsp
     item: fresh ginger

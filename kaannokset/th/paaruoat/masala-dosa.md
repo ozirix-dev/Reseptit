@@ -15,10 +15,10 @@ cooking_method:
   - liesi
 difficulty: ระดับกลาง
 tags:
-  - อินเดียน
-  - อินเดียใต้
-  - ผัก
-  - อาหารเช้า
+  - "อินเดียน"
+  - "อินเดียใต้"
+  - "มังสวิรัติ"
+  - "อาหารเช้า"
 image:
   src: paaruoat/masala-dosa.webp
   alt: โดซามาซาลากรอบบางพร้อมไส้มันฝรั่ง ชัทนีย์มะพร้าว และซัมบาร์
@@ -44,7 +44,7 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 2
     unit: ช้อนโต๊ะ
     item: น้ำมัน
@@ -65,7 +65,7 @@ ingredients:
   - amount: 20
     unit: g
     item: ผักชีสด
-    note: สับ
+    note: "สับละเอียด"
   - amount: null
     unit: ""
     item: น้ำ

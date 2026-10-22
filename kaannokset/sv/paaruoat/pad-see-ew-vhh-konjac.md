@@ -62,11 +62,11 @@ ingredients:
   - amount: 2
     unit: st
     item: en vitlöksklyfta
-    note: hackad
+    note: "finhackad"
   - amount: null
     unit: ""
     item: vitpeppar
-    note: att smaka
+    note: "efter smak"
 translation_languages: []
 translation_status: {}
 source_language: fi
@@ -93,6 +93,7 @@ Pad see ew steks bäst i het panna i små omgångar. Torka konjaknudlarna väl s
 
 ## Anteckningar
 
-- Detta är en lågkolhydrat-variant av pad se ew fat; konjaknudlar matchar inte strukturen på risnudlar.
-– Kontrollera kolhydraterna i ostron och sojasåser på förpackningen.
+
+- Detta är en lågkolhydratvariant av pad see ew; konjaknudlar har inte samma konsistens som risnudlar.
+- Kontrollera kolhydraterna i ostronsås och sojasås på förpackningarna.
 - Näringsvärdena är ungefärliga uppskattningar och påverkas av produkter och portionsstorlek.

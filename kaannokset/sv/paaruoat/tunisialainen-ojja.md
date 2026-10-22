@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: lätt
 tags:
-  - marina
-  - tunisiska
-  - ägg
-  - tomat
+  - "medelhavsmat"
+  - "tunisiska"
+  - "ägg"
+  - "tomat"
 image:
   src: paaruoat/tunisialainen-ojja.webp
   alt: Tunisisk ojja med ägg, tomat-pepparsås och harissa
@@ -27,11 +27,11 @@ ingredients:
   - amount: 1
     unit: st
     item: lök
-    note: hackad
+    note: "finhackad"
   - amount: 1
     unit: st
     item: röd paprika
-    note: i kuber
+    note: "tärnad"
   - amount: 2
     unit: st
     item: en vitlöksklyfta

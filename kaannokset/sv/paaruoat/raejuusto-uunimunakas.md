@@ -44,11 +44,11 @@ ingredients:
   - amount: null
     unit: ""
     item: smör
-    note: för att smörja pannan
+    note: "för att smörja ugnsformen"
   - amount: null
     unit: ""
     item: gräslök
-    note: om du vill komma upp till ytan
+    note: "att strö över, valfritt"
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/raejuusto-uunimunakas.md

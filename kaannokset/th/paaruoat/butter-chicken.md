@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 700
     unit: g
-    item: เนื้อน่องไก่
+    item: "เนื้อสะโพกไก่"
     note: หั่นเป็นชิ้นขนาดพอดีคำ
   - amount: 150
     unit: g
@@ -49,11 +49,11 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 2
     unit: ชิ้น
     item: กระเทียม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 20
     unit: g
     item: ขิงสด

@@ -56,3 +56,16 @@ eivät saa hylätä samoja sanoja oikein käyttävää toista reseptiä.
 
 V1.4:n laajuus, korjaukset ja avoimet havainnot ovat
 [sisältöraportissa](reports/2026-10-22-v1-4-content-quality.md).
+
+## Jatkotarkistuksessa opittu
+
+Tarkista ainesosien nimien lisäksi jokainen tekstihuomautus ja hakutunniste.
+Huomioi kieltomuodot: niiden katoaminen voi kääntää ravintoa tai valmistusta
+koskevan väitteen vastakkaiseksi. Vertaa myös raaka/kypsä-, liemi/tiiviste-
+ja uuni/pannu/grilli-merkityksiä sekä täytteen, pinnan ja tarjoilun eroa.
+
+Toistuvat tekstit saa tarkistaa ryhmissä, mutta raportoi erikseen koko aineiston
+rakennetarkistus ja semanttisen lähdevertailun todellinen laajuus. Tallenna
+jokaisesta kierroksesta päivätty raportti ja muuttuneiden kieliversioiden luettelo.
+Lisää löydetyille merkitysvirheille lähteeseen tai reseptiin rajattu regressiosuoja.
+Katso [22.10.2026 jatkotarkistus](reports/2026-10-22-translation-self-review.md).

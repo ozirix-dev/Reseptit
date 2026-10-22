@@ -31,7 +31,7 @@ fat_per_serving_g: 35
 ingredients:
   - amount: 600
     unit: g
-    item: ชิ้นน่องไก่
+    item: "ชิ้นสะโพกไก่"
     note: ไม่มีกระดูก
   - amount: 400
     unit: ml

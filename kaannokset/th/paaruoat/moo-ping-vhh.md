@@ -16,10 +16,10 @@ servings: 4
 time_total_min: 45
 difficulty: ง่าย
 tags:
-  - ไทย
-  - ย่าง
-  - หมู
-  - วฮ
+  - "ไทย"
+  - "ย่าง"
+  - "เนื้อหมู"
+  - "วฮ"
 image:
   src: paaruoat/moo-ping-vhh.webp
   alt: หมูปิ้งหมูย่าง แตงกวา และน้ำจิ้มรสเด็ด
@@ -50,7 +50,7 @@ ingredients:
   - amount: 2
     unit: ช้อนโต๊ะ
     item: ก้านผักชี
-    note: สับ
+    note: "สับละเอียด"
   - amount: 0.5
     unit: ช้อนชา
     item: พริกไทยขาวป่น

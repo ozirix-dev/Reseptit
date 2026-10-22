@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 180
 difficulty: medium
 tags:
-  - Thai
-  - a pig
-  - stewed
-  - VHH
+  - "Thai"
+  - "pork"
+  - "stewed"
+  - "VHH"
 image:
   src: paaruoat/khao-kha-moo-vhh.webp
   alt: Khao kha moo-style braised pork, egg, green vegetables and cauliflower rice

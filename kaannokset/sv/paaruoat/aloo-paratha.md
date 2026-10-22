@@ -14,9 +14,9 @@ cooking_method:
   - paistinpannu
 difficulty: mellannivå
 tags:
-  - indiska
-  - Punjabi
-  - en grönsak
+  - "indiska"
+  - "Punjabi"
+  - "vegetariskt"
 image:
   src: paaruoat/aloo-paratha.webp
   alt: Aloo paratha - gyllene potatisfyllt bröd med yoghurt och ett picklat tillbehör
@@ -29,7 +29,7 @@ ingredients:
   - amount: 1.8
     unit: dl
     item: vatten
-    note: degen
+    note: "till degen"
   - amount: 1
     unit: tsk
     item: salt
@@ -48,7 +48,7 @@ ingredients:
   - amount: 15
     unit: g
     item: färsk koriander
-    note: hackad
+    note: "finhackad"
   - amount: null
     unit: ""
     item: ghee eller smör
@@ -77,4 +77,5 @@ Mjukt vetebröd döljer en potatisfyllning kryddad med spiskummin och chili. Ste
 
 ## Anteckningar
 
-- Rulla de fyllda bröden lätt så att fyllningen inte sticker hål i degen.
+
+- Kavla försiktigt ut de fyllda bröden så att fyllningen inte gör hål i degen.

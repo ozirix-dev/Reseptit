@@ -71,7 +71,7 @@ translation_of: som-tam-vhh-kurkkuna
 
 # lågkolhydrat-som Tam-stil thailändsk gurksallad
 
-Den fräscha, syrliga, salta och varma lågkolhydrat-salladen får sin smak, men den gröna papayan ersätts av knaprig gurka. Det här är en variant av som tam stil, inte en traditionell papayasallad. Servera som tillbehör eller som förrätt.
+Den fräscha, syrliga, salta och starka lågkolhydratsalladen hämtar sin smak från som tam, men grön papaya ersätts med krispig gurka. Det här är en variant av som tam stil, inte en traditionell papayasallad. Servera som tillbehör eller som förrätt.
 
 ## Beskrivning
 

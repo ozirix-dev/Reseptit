@@ -67,7 +67,7 @@ ingredients:
   - amount: null
     unit: ""
     item: ผักชีสด
-    note: สู่พื้นผิว
+    note: "สำหรับโรยหน้า"
 translation_languages: []
 translation_status: {}
 source_language: fi

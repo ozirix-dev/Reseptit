@@ -31,11 +31,11 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: piece
     item: tomato
-    note: cubed
+    note: "diced"
   - amount: 2
     unit: piece
     item: a clove of garlic

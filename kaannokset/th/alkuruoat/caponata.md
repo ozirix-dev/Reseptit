@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: ระดับกลาง
 tags:
-  - มารีน
-  - ซิซิลี
-  - มะเขือยาว
-  - มะเขือเทศ
+  - "เมดิเตอร์เรเนียน"
+  - "ซิซิลี"
+  - "มะเขือยาว"
+  - "มะเขือเทศ"
 image:
   src: paaruoat/caponata.webp
   alt: คาโปนาต้าซิซิลีประกอบด้วยมะเขือยาว มะเขือเทศ คื่นฉ่าย มะกอก และเคเปอร์
@@ -27,14 +27,14 @@ ingredients:
   - amount: 2
     unit: ชิ้น
     item: มะเขือยาว
-    note: ในลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 2
     unit: ช้อนโต๊ะ
     item: น้ำมันมะกอก
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 2
     unit: ชิ้น
     item: ก้านคื่นฉ่าย
@@ -45,7 +45,7 @@ ingredients:
   - amount: 80
     unit: g
     item: มะกอกเขียว
-    note: ลดลงครึ่งหนึ่ง
+    note: "ผ่าครึ่ง"
   - amount: 1
     unit: ช้อนโต๊ะ
     item: เคเปอร์

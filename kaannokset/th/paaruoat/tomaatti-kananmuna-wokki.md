@@ -29,7 +29,7 @@ ingredients:
   - amount: 4
     unit: ชิ้น
     item: มะเขือเทศสุก
-    note: ในบล็อก
+    note: "หั่นเป็นเสี้ยว"
   - amount: 2
     unit: ช้อนโต๊ะ
     item: น้ำมันที่เป็นกลาง

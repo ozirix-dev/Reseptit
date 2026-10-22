@@ -42,7 +42,7 @@ ingredients:
   - amount: 200
     unit: g
     item: bambuskott
-    note: dränerad
+    note: "avrunnen"
   - amount: 1
     unit: st
     item: röd paprika

@@ -34,11 +34,11 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: หัวหอม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 2
     unit: ชิ้น
     item: กระเทียม
-    note: สับ
+    note: "สับละเอียด"
   - amount: 15
     unit: g
     item: ขิงสด

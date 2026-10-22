@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 35
 difficulty: easy
 tags:
-  - Finnish home cooking
-  - low carb
-  - soup
-  - jewelry
+  - "Finnish home cooking"
+  - "low carb"
+  - "soup"
+  - "frankfurter sausages"
 image:
   src: paaruoat/nakkikeitto-vhh.webp
   alt: Frankfurter sausage soup with cauliflower, celery, leek and parsley in clear stock
@@ -67,7 +67,7 @@ The familiar clear sausage soup is replaced by potatoes with cauliflower, celery
 
 ## Description
 
-Low-carbohydrate sausage soup is prepared in one pot. Nak are added only after the vegetables are cooked, so that they remain juicy.
+Low-carbohydrate sausage soup is prepared in one pot. The sausages are added only after the vegetables are cooked, so that they remain juicy.
 
 ## Preparation
 
@@ -79,4 +79,5 @@ Low-carbohydrate sausage soup is prepared in one pot. Nak are added only after t
 
 ## Notes
 
-- Choose Low-Carbohydrate snacks and check the labels. The amount of cauliflower and leek makes this a low-carb version, not a strict keto recipe.
+
+- Choose low-carbohydrate frankfurter sausages and check the labels. The amounts of cauliflower and leek make this a low-carb version, not a strict keto recipe.

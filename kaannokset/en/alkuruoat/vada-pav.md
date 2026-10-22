@@ -15,10 +15,10 @@ cooking_method:
   - friteeraus
 difficulty: medium
 tags:
-  - Indian
-  - Mumbai
-  - street kitchen
-  - a vegetable
+  - "Indian"
+  - "Mumbai"
+  - "street food"
+  - "vegetarian"
 image:
   src: paaruoat/vada-pav.webp
   alt: Vada pav roll with crispy spicy potato patty and chutney
@@ -44,14 +44,14 @@ ingredients:
   - amount: 15
     unit: g
     item: fresh coriander
-    note: chopped
+    note: "finely chopped"
   - amount: 100
     unit: g
     item: chickpea flour
   - amount: 1
     unit: dl
     item: water
-    note: the dough
+    note: "for the dough"
   - amount: 0.5
     unit: tsp
     item: chili powder

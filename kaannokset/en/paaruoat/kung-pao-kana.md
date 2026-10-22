@@ -26,15 +26,15 @@ ingredients:
   - amount: 600
     unit: g
     item: boneless chicken thigh fillets
-    note: in cubes
+    note: "diced"
   - amount: 1
     unit: tbsp
     item: soy sauce
-    note: to the marinade
+    note: "for the marinade"
   - amount: 1
     unit: tbsp
     item: cornstarch
-    note: to the marinade
+    note: "for the marinade"
   - amount: 2
     unit: tbsp
     item: neutral oil

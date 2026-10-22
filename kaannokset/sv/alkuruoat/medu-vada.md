@@ -14,10 +14,10 @@ cooking_method:
   - friteeraus
 difficulty: mellannivå
 tags:
-  - indiska
-  - sydindiska
-  - en grönsak
-  - en aptitretare
+  - "indiska"
+  - "sydindiska"
+  - "vegetariskt"
+  - "förrätt"
 image:
   src: paaruoat/medu-vada.webp
   alt: Medu Vada - krispiga gyllenbruna linsringar med kokosnötchutney
@@ -31,11 +31,11 @@ ingredients:
   - amount: 1
     unit: st
     item: grön chili
-    note: hackad
+    note: "finhackad"
   - amount: 10
     unit: g
     item: färsk ingefära
-    note: hackad
+    note: "finhackad"
   - amount: 10
     unit: g
     item: färska curryblad

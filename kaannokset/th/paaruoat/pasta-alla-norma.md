@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: ง่าย
 tags:
-  - มารีน
-  - ซิซิลี
-  - พาสต้า
-  - มะเขือยาว
+  - "เมดิเตอร์เรเนียน"
+  - "ซิซิลี"
+  - "พาสต้า"
+  - "มะเขือยาว"
 image:
   src: paaruoat/pasta-alla-norma.webp
   alt: พาสต้าอัลลานอร์มากับซอสมะเขือเทศ มะเขือยาว ใบโหระพา และริคอตต้าชีสขูด
@@ -30,7 +30,7 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: มะเขือยาว
-    note: ในลูกบาศก์
+    note: "หั่นเต๋า"
   - amount: 400
     unit: g
     item: มะเขือเทศบด

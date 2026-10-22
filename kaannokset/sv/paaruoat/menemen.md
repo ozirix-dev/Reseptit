@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: lätt
 tags:
-  - marina
-  - turkiska
-  - ägg
-  - tomat
+  - "medelhavsmat"
+  - "turkisk"
+  - "ägg"
+  - "tomat"
 image:
   src: paaruoat/menemen.webp
   alt: Turkiska menener med tomater och grön paprika i en liten panna
@@ -30,7 +30,7 @@ ingredients:
   - amount: 3
     unit: st
     item: mogen tomat
-    note: i kuber
+    note: "tärnad"
   - amount: 1
     unit: st
     item: grön paprika
@@ -38,7 +38,7 @@ ingredients:
   - amount: 1
     unit: st
     item: lök
-    note: hackad
+    note: "finhackad"
   - amount: 2
     unit: msk
     item: olivolja

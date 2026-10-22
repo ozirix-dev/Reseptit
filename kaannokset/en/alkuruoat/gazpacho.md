@@ -14,10 +14,10 @@ cooking_method:
   - kylma
 difficulty: easy
 tags:
-  - marine
-  - spanish
-  - tomato
-  - cucumber
+  - "Mediterranean"
+  - "spanish"
+  - "tomato"
+  - "cucumber"
 image:
   src: paaruoat/gazpacho.webp
   alt: Cold Andalusian gazpacho with tomatoes, cucumber and paprika
@@ -27,7 +27,7 @@ ingredients:
   - amount: 1
     unit: kg
     item: ripe tomatoes
-    note: in blocks
+    note: "cut into wedges"
   - amount: 1
     unit: piece
     item: cucumber
@@ -63,15 +63,15 @@ translation_of: gazpacho
 
 # Andalusian gazpacho
 
-Pureed cold tomato soup is flavored with cucumber, paprika, garlic and olive oil. Serve well chilled.
+Pureed cold tomato soup is flavored with cucumber, peppers, garlic and olive oil. Serve well chilled.
 
 ## Description
 
-Pureed cold tomato soup is flavored with cucumber, paprika, garlic and olive oil. Serve well chilled.
+Pureed cold tomato soup is flavored with cucumber, peppers, garlic and olive oil. Serve well chilled.
 
 ## Preparation
 
-1. Put the tomatoes, cucumber, paprika, garlic, vinegar and salt in a blender. Add bread if you want.
+1. Put the tomatoes, cucumber, peppers, garlic, vinegar and salt in a blender. Add bread if you want.
 2. Puree until smooth. Add the oil while the machine is running and continue pureeing until the soup is smooth.
 3. Adjust the consistency with cold water and check the taste.
 4. Cover and refrigerate for at least an hour. Serve cold, garnished with small vegetable cubes.

@@ -14,10 +14,10 @@ cooking_method:
   - liesi
 difficulty: easy
 tags:
-  - marine
-  - Turkish
-  - egg
-  - tomato
+  - "Mediterranean"
+  - "Turkish"
+  - "egg"
+  - "tomato"
 image:
   src: paaruoat/menemen.webp
   alt: Turkish menemen with tomatoes and green peppers in a small pan
@@ -30,7 +30,7 @@ ingredients:
   - amount: 3
     unit: piece
     item: ripe tomato
-    note: in cubes
+    note: "diced"
   - amount: 1
     unit: piece
     item: green pepper
@@ -38,7 +38,7 @@ ingredients:
   - amount: 1
     unit: piece
     item: onion
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: tbsp
     item: olive oil

@@ -15,9 +15,9 @@ servings: 4
 time_total_min: 25
 difficulty: ง่าย
 tags:
-  - ไทย
-  - วฮ
-  - คะนอง
+  - "ไทย"
+  - "วฮ"
+  - "เผ็ด"
 image:
   src: paaruoat/pad-kra-pao-vhh.webp
   alt: ผัดกระเพราเนื้อสับพร้อมใบโหระพาและพริก ไข่ดาว และข้าวดอกกะหล่ำ

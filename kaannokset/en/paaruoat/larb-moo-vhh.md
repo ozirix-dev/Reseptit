@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 30
 difficulty: easy
 tags:
-  - Thai
-  - Dad
-  - salad
-  - VHH
+  - "Thai"
+  - "Isan"
+  - "salad"
+  - "VHH"
 image:
   src: paaruoat/larb-moo-vhh.webp
   alt: Larb moo pork salad with herbs, lime, chili and cabbage and cucumber
@@ -62,7 +62,7 @@ ingredients:
   - amount: 250
     unit: g
     item: white cabbage
-    note: in blocks for serving
+    note: "cut into wedges, to serve"
   - amount: 1
     unit: piece
     item: cucumber
@@ -88,7 +88,7 @@ Roasted rice powder brings traditional roastiness and texture. A small amount is
 2. Remove the pan from the stove. Mix in the fish sauce, lime juice and chili.
 3. If desired, add rice powder. Stir in the shallot, mint and coriander.
 4. Taste and adjust saltiness, acidity and hotness.
-5. Serve warm with cabbage blocks and cucumber slices.
+5. Serve warm with cabbage wedges and cucumber slices.
 
 ## Notes
 

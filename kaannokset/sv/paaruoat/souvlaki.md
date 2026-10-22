@@ -15,10 +15,10 @@ cooking_method:
   - paistaminen
 difficulty: lätt
 tags:
-  - marina
-  - grekiska
-  - broiler
-  - yoghurt
+  - "medelhavsmat"
+  - "grekisk"
+  - "broiler"
+  - "yoghurt"
 image:
   src: paaruoat/souvlaki.webp
   alt: Grekiska kycklingsouvlakispett med pitabröd, tomat och tzatziki
@@ -28,7 +28,7 @@ ingredients:
   - amount: 700
     unit: g
     item: kycklinglårfilé
-    note: i kuber
+    note: "tärnad"
   - amount: 3
     unit: msk
     item: olivolja
@@ -49,7 +49,7 @@ ingredients:
   - amount: 250
     unit: g
     item: Grekisk yoghurt
-    note: till tzatziki
+    note: "till tzatzikin"
   - amount: 0.5
     unit: st
     item: gurka
@@ -57,14 +57,14 @@ ingredients:
   - amount: 1
     unit: st
     item: en vitlöksklyfta
-    note: till tzatziki
+    note: "till tzatzikin"
   - amount: 4
     unit: st
     item: pitabröd
   - amount: 2
     unit: st
     item: tomat
-    note: i block
+    note: "skuren i klyftor"
 source_language: fi
 source_recipe: reseptit/paaruoat/souvlaki.md
 translation_of: souvlaki

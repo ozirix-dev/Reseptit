@@ -47,7 +47,7 @@ ingredients:
     note: according to the package dosage for 8 dl of water
   - amount: 8
     unit: ""
-    item: whole black pepper
+    item: "whole black peppercorns"
   - amount: 400
     unit: g
     item: salmon fillet

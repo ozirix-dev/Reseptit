@@ -41,7 +41,7 @@ ingredients:
   - amount: 150
     unit: g
     item: Chinese cabbage
-    note: chopped
+    note: "finely chopped"
   - amount: 2
     unit: piece
     item: spring onions

@@ -27,7 +27,7 @@ ingredients:
   - amount: 1
     unit: kg
     item: น่องไก่ติดสะโพก
-    note: ไม่มีผิวหนังหั่นบาง ๆ
+    note: "ลอกหนังออกและบั้งเนื้อ"
   - amount: 200
     unit: g
     item: โยเกิร์ตไม่ปรุงแต่ง
@@ -45,7 +45,7 @@ ingredients:
     item: ยี่หร่าบด
   - amount: 1
     unit: ช้อนชา
-    item: ผักชีบด
+    item: "เมล็ดผักชีป่น"
   - amount: 2
     unit: ชิ้น
     item: กระเทียม
