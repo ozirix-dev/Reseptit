@@ -199,3 +199,31 @@ test("output and cache junctions cannot escape the generated directory", async (
     await assert.rejects(readFile(path.join(publicDir, "kuvat", first.images[0].variants[0].path)));
   } finally { await rm(root, { recursive: true, force: true }); }
 });
+
+test("a failed final rename restores the previous image publication", async (t) => {
+  const fs = (await import("node:fs/promises")).default;
+  const { syncBuiltinESMExports } = await import("node:module");
+  const root = await mkdtemp(path.join(os.tmpdir(), "reseptit-rollback-"));
+  const source = path.join(root, "source"), publicDir = path.join(root, "public");
+  try {
+    await mkdir(source);
+    await writeFile(path.join(source, "one.webp"), fixtureWebp);
+    await rebuildPublishedImages(source, publicDir, ["one.webp"]);
+    const oldManifest = await readFile(path.join(publicDir, "kuvat/_variants/manifest.json"));
+    const rename = fs.rename;
+    let injected = false;
+    const stub = t.mock.method(fs, "rename", async (from: Parameters<typeof fs.rename>[0], to: Parameters<typeof fs.rename>[1]) => {
+      if (path.basename(String(from)).startsWith(".kuvat-staging-") && String(to) === path.join(publicDir, "kuvat")) {
+        injected = true; throw Error("injected final rename failure");
+      }
+      return rename(from, to);
+    });
+    syncBuiltinESMExports();
+    try { await assert.rejects(rebuildPublishedImages(source, publicDir, []), /injected final rename failure/); }
+    finally { stub.mock.restore(); syncBuiltinESMExports(); }
+    assert.equal(injected, true);
+    assert.deepEqual(await readFile(path.join(publicDir, "kuvat/_variants/manifest.json")), oldManifest);
+    assert.deepEqual(await readFile(path.join(publicDir, "kuvat/one.webp")), fixtureWebp);
+    assert.deepEqual(await readdir(publicDir), ["kuvat"]);
+  } finally { await rm(root, { recursive: true, force: true }); }
+});
