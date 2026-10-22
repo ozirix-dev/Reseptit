@@ -125,3 +125,8 @@ test("sitemap and project robots reference the real Pages path", async () => {
   assert.match(robots, /Project-path robots\.txt/);
   assert.match(robots, /Sitemap: https:\/\/ozirix-dev\.github\.io\/Reseptit\/sitemap\.xml/);
 });
+
+test("Google Search Console ownership verification file is published at the Pages root", async () => {
+  const verification = await readFile(path.join(dist, "google0c6f9c0486376f0f.html"), "utf8");
+  assert.equal(verification, "google-site-verification: google0c6f9c0486376f0f.html");
+});
