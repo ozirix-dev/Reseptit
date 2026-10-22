@@ -15,8 +15,10 @@ export const decodeHtml = (value: string) => value.replace(/&(?:amp|quot|apos|lt
   return named[entity] ?? String.fromCodePoint(parseInt(entity.slice(entity[2] === "x" ? 3 : 2, -1), entity[2] === "x" ? 16 : 10));
 });
 const attrs = (tag: string) => Object.fromEntries([...tag.matchAll(/([\w-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g)].map((m) => [m[1].toLowerCase(), decodeHtml(m[2] ?? m[3])]));
-const tags = (html: string, name: string) => [...html.matchAll(new RegExp(`<${name}\\b[^>]*>`, "gi"))].map((m) => attrs(m[0]));
-const texts = (html: string, name: string) => [...html.matchAll(new RegExp(`<${name}\\b[^>]*>([\\s\\S]*?)</${name}>`, "gi"))].map((m) => decodeHtml(m[1].replace(/<[^>]+>/g, "")).trim());
+const activeDocument = (html: string) => html.replace(/<!--[\s\S]*?(?:-->|$)/g, "").replace(/<template\b[^>]*>[\s\S]*?<\/template>/gi, "");
+const activeMarkup = (html: string) => activeDocument(html).replace(/<(script|style|textarea|xmp|iframe|noembed|noframes)\b[^>]*>[\s\S]*?<\/\1>/gi, "");
+const tags = (html: string, name: string) => [...activeMarkup(html).matchAll(new RegExp(`<${name}\\b[^>]*>`, "gi"))].map((m) => attrs(m[0]));
+const texts = (html: string, name: string) => [...activeMarkup(html).matchAll(new RegExp(`<${name}\\b[^>]*>([\\s\\S]*?)</${name}>`, "gi"))].map((m) => decodeHtml(m[1].replace(/<[^>]+>/g, "")).trim());
 
 export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {
   const locales = (Object.keys(localeIndexes) as RecipeLocale[]).filter((locale) => recipes.some((r) => r.locale === locale));
@@ -33,6 +35,7 @@ export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {
 }
 
 export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] {
+  html = activeDocument(html);
   const issues: SeoFinding[] = [];
   const check = (condition: boolean, code: string, detail: string) => { if (!condition) issues.push({ route: expected.route, code, detail }); };
   const links = tags(html, "link"), metas = tags(html, "meta");

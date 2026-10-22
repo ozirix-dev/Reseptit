@@ -82,3 +82,7 @@ Lisäksi Sitemap-direktiivi luetaan nyt vain kommenttien ulkopuolelta.
 404-tarkistus vaatii todellisen robots-metaelementin noindex-arvon;
 kommentin, skriptin tai näkyvän tekstin maininta ei riitä. Molemmat
 regressiot läpäisivät.
+
+Metatietojen poiminta ohittaa nyt kommentit sekä script-, style-, textarea-
+ja template-sisällön. Regressiot siirtävät canonical-, hreflang- ja
+kuvaustagit vuorotellen näihin sijainteihin ja vaativat virheilmoituksen.

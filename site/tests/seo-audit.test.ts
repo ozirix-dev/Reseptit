@@ -49,4 +49,9 @@ test("metadata mutations cannot silently pass", async () => {
     [html.replace(/property="og:image"/, 'property="missing"'), "OG_IMAGE"],
   ];
   for (const [broken, code] of cases) assert.ok(inspectPage(broken, page).some((f) => f.code === code), code);
+  for (const [pattern, code] of [[/<link\b[^>]*rel="canonical"[^>]*>/, "CANONICAL"], [/<link\b[^>]*hreflang="th"[^>]*>/, "HREFLANG"], [/<meta\b[^>]*name="description"[^>]*>/, "DESCRIPTION"]] as const) {
+    for (const wrap of [(tag: string) => `<!--${tag}-->`, (tag: string) => `<script>const fake='${tag}'</script>`, (tag: string) => `<style>/*${tag}*/</style>`, (tag: string) => `<textarea>${tag}</textarea>`, (tag: string) => `<template>${tag}</template>`]) {
+      assert.ok(inspectPage(html.replace(pattern, wrap), page).some((f) => f.code === code), code);
+    }
+  }
 });
