@@ -264,6 +264,13 @@ test("ingredient notes and tags reject observed false friends without rejecting 
   }
   assert.deepEqual(semanticNoteErrors(["puhdistettua öljyä"], ["refined oil"], "en"), []);
   assert.deepEqual(semanticTagErrors(["merenelävät"], ["marine"], "en"), []);
+  for (const source of [["valimerellinen", "merenelävät"], ["merenelävät", "valimerellinen"]]) {
+    for (const target of [["Mediterranean", "marine"], ["marine", "Mediterranean"]]) {
+      assert.deepEqual(semanticTagErrors(source, target, "en"), []);
+    }
+  }
+  assert.equal(semanticTagErrors(["valimerellinen", "kala"], ["fish", "marine"], "en").length, 1);
+  assert.equal(semanticTagErrors(["valimerellinen", "merenelävät", "nakit"], ["marine", "jewelry", "Mediterranean"], "en").length, 1);
   assert.deepEqual(semanticNoteErrors(["esimerkiksi kuhaa tai turskaa"], ["pikeperch or cod"], "en"), []);
   assert.deepEqual(semanticNoteErrors(["esimerkiksi kuhaa tai turskaa"], ["pike-perch or cod"], "en"), []);
 });

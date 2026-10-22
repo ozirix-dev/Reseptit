@@ -125,3 +125,11 @@ käännöstestiä ja yhdeksän staattista testiä sekä tuotantobuild läpäisiv
 (476 kieliversiota, 480 reittiä). Korjaus tehdään julkaistun version
 `c14914a49e8c87abfbbd3e0fde49d0c36a5a5463` päälle erillisellä haaralla
 `codex/reseptit-tag-review-fix`; yhdistäminen on erillinen vaihe.
+
+Jatko-PR #38:n katselmointi tunnisti myös sekatunnisteiden rajatapauksen:
+`marine` voi tarkoittaa toista lähdetunnistetta `merenelävät`. Tunnettu
+vaihtoehtoinen lähdemerkitys sallii tämän sanan, vaikka mukana on myös
+`valimerellinen`. Testi toisti virheellisen hylkäyksen ennen täsmennystä ja
+kattaa nyt molempien listojen järjestykset sekä sen, ettei poikkeus peitä
+muiden tunnisteiden virheitä. Säännöt tunnistavat rajattuja tunnettuja
+virheitä; ne eivät todista kaikkien tunnisteiden täydellistä kääntymistä.
