@@ -45,7 +45,7 @@ Kuumassa öljyssä munakas kohoaa ja saa rapeat reunat. Käytä pientä, syvää
 
 ## Valmistus
 
-1. Riko kananmunat kulhoon. Lisää kalakastike ja vesi ja vatkaa, kunnes seos vaahtoaa hieman.
+1. Riko kananmunat kulhoon. Lisää kalakastike ja vesi ja vatkaa, kunnes seos vaahtoaa hieman. Sekoita halutessasi hienonnettu kevätsipuli munaseokseen.
 2. Kuumenna öljy pienessä syvässä pannussa hyvin kuumaksi.
 3. Kaada munaseos pannulle. Paista keskilämmöllä, kunnes reunat ovat rapeat ja keskusta hyytynyt.
 4. Käännä varovasti ja paista toinen puoli kullanruskeaksi.

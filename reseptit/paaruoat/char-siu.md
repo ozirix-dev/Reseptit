@@ -6,7 +6,7 @@ category: paaruoka
 language: fi
 status: published
 servings: 4
-time_total_min: 70
+time_total_min: 90
 main_ingredient:
   - sianliha
 cooking_method:
@@ -79,3 +79,4 @@ Kantonilaistyylinen makeansuolainen porsas saa punaruskean pinnan soijasta, huna
 ## Muistiinpanot
 
 - Marinadi sisältää raakaa lihaa, joten älä käytä sitä valmiin ruoan kastikkeena ilman kiehauttamista.
+- Kokonaisaika-arvio on 90 minuuttia: 15 min esivalmistelut, 30 min marinointi, 35 min paisto, 5 min hunajapinnan viimeistely, 5 min lepo. Arvio sisältää vähintään 30 minuutin marinoinnin; pidempi marinointi lisää kokonaisaikaa.

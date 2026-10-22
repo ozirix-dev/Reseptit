@@ -66,7 +66,7 @@ In hot oil, the omelet rises and gets crispy edges. Use a small, deep pan and fr
 
 ## Preparation
 
-1. Break the eggs into a bowl. Add the fish sauce and water and beat until the mixture foams a little.
+1. Break the eggs into a bowl. Add the fish sauce and water and beat until the mixture foams a little. Stir the chopped spring onion into the egg mixture, if using.
 2. Heat the oil in a small deep pan until very hot.
 3. Pour the egg mixture into the pan. Fry on medium heat until the edges are crispy and the center is set.
 4. Carefully turn over and fry the other side until golden brown.

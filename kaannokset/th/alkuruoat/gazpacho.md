@@ -6,7 +6,7 @@ category: alkuruoka
 language: th
 status: published
 servings: 4
-time_total_min: 20
+time_total_min: 80
 main_ingredient:
   - tomaatti
   - kurkku
@@ -79,3 +79,4 @@ translation_of: gazpacho
 ## หมายเหตุ
 
 - ปอกมะเขือเทศหากต้องการให้เนื้อละเอียดยิ่งขึ้น
+- เวลารวมโดยประมาณ 80 นาที: 20 min เตรียมและปั่น, 60 min แช่เย็น. แช่เย็นนานขึ้นได้ตามจำเป็นเพื่อให้ซุปเย็นเมื่อเสิร์ฟ

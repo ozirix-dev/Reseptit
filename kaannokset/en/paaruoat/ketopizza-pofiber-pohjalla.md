@@ -1,10 +1,9 @@
 ---
-title: Keto Pizza with Pofiber Crust
+title: Pizza with a Pofiber crust
 recipe_id: ketopizza-pofiber-pohjalla
 url_slug: ketopizza-pofiber-pohjalla
 category: paaruoka
 language: en
-diet_class: keto
 servings: 2
 main_ingredient:
   - juusto
@@ -14,13 +13,11 @@ cooking_method:
   - uuni
 difficulty: easy
 tags:
-  - keto pizza
-  - low carb
   - pofiber
   - pan pizza
 image:
   src: paaruoat/ketopizza-pofiber-pohjalla.webp
-  alt: Pofiber-based keto pizza with pepperoni, paprika, olives and melted cheese
+  alt: Pizza with a Pofiber crust, pepperoni, peppers, olives and melted cheese
   width: 1280
   height: 853
 ingredients:
@@ -55,7 +52,7 @@ source_recipe: reseptit/paaruoat/ketopizza-pofiber-pohjalla.md
 translation_of: ketopizza-pofiber-pohjalla
 ---
 
-# Keto Pizza with Pofiber Crust
+# Pizza with a Pofiber crust
 
 The cheesy, soft Pofiber base is baked in a hot oven into a pizza with crispy edges. You can choose the fillings according to your taste.
 
@@ -76,4 +73,4 @@ The bottom cheese, cream cheese and egg bind Pofiber into a dough. The recipe ma
 ## Notes
 
 - The base usually does not need to be pre-baked.
-- The base often has less than 5 g of carbohydrates in the entire pizza base. The amount varies depending on the products and fillings used.
+- The carbohydrate content depends on the products used and the portion size. Calculate it from the labels of your chosen products, including any accompaniments and toppings.

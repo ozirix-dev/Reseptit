@@ -1,11 +1,10 @@
 ---
-title: Keto-pannkaka
+title: Ugnspannkaka med mandelmjöl
 recipe_id: keto-pannukakku
 url_slug: keto-pannukakku
 category: jalkiruoka
 language: sv
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - kananmuna
   - kerma
@@ -16,7 +15,6 @@ time_total_min: 35
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - lågkolhydrat
 image:
   src: jalkiruoat/keto-pannukakku.webp
   alt: En pannkakabit med blåbär, hallon och vispgrädde
@@ -49,7 +47,7 @@ source_recipe: reseptit/jalkiruoat/keto-pannukakku.md
 translation_of: keto-pannukakku
 ---
 
-# Keto-pannkaka
+# Ugnspannkaka med mandelmjöl
 
 Ugnspannkakans smet görs av ägg, grädde, färskost och mandelmjöl.
 
@@ -66,3 +64,4 @@ Psyllium binder smeten utan vetemjöl.
 ## Anteckningar
 
 – Kontrollera om de är färdiga och krydda till sist efter egen smak.
+- Kolhydratmängden beror på vilka produkter du använder och portionsstorleken. Beräkna den utifrån förpackningarnas näringsvärden och räkna även med tillbehör och fyllningar.

@@ -1,11 +1,10 @@
 ---
-title: Keto-korvapuustit
+title: Juustotaikinan kanelipullat
 recipe_id: keto-korvapuustit
 url_slug: keto-korvapuustit
 category: leivonnainen
 language: fi
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - mantelijauho
   - tuorejuusto
@@ -16,7 +15,6 @@ time_total_min: 40
 difficulty: helppo
 tags:
   - suomalainen kotiruoka
-  - VHH
 image:
   src: leivonnaiset/keto-korvapuustit.webp
   alt: Kanelilla ja sokerittomalla makeutuksella maustettuja korvapuusteja vadilla
@@ -54,7 +52,7 @@ translation_status:
   th: published
 ---
 
-# Keto-korvapuustit
+# Juustotaikinan kanelipullat
 
 Kanelitäyte rullataan mantelijauhoa, mozzarellaa ja tuorejuustoa sisältävään taikinaan.
 
@@ -72,3 +70,4 @@ Erytritoli makeuttaa voista ja kanelista tehdyn täytteen.
 ## Muistiinpanot
 
 - Tarkista kypsyys ja mausta lopuksi oman maun mukaan.
+- Hiilihydraattimäärä riippuu käytetyistä tuotteista ja annoskoosta. Laske se valitsemiesi tuotteiden pakkaustiedoista ja huomioi myös lisäkkeet ja täytteet.

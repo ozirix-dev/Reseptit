@@ -1,11 +1,10 @@
 ---
-title: แพนเค้กคีโต
+title: แพนเค้กอบแป้งอัลมอนด์
 recipe_id: keto-pannukakku
 url_slug: keto-pannukakku
 category: jalkiruoka
 language: th
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - kananmuna
   - kerma
@@ -16,7 +15,6 @@ time_total_min: 35
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - คาร์โบไฮเดรตต่ำ
 image:
   src: jalkiruoat/keto-pannukakku.webp
   alt: แพนเค้กชิ้นหนึ่งพร้อมบลูเบอร์รี่ ราสเบอร์รี่ และวิปครีม
@@ -49,7 +47,7 @@ source_recipe: reseptit/jalkiruoat/keto-pannukakku.md
 translation_of: keto-pannukakku
 ---
 
-# แพนเค้กคีโต
+# แพนเค้กอบแป้งอัลมอนด์
 
 แพนเค้กอบนี้ทำจากไข่ ครีม ครีมชีส และแป้งอัลมอนด์ ใช้ไซเลียมช่วยให้ส่วนผสมจับตัวโดยไม่ใช้แป้งสาลี.
 
@@ -66,3 +64,4 @@ translation_of: keto-pannukakku
 ## หมายเหตุ
 
 - ตรวจสอบความสุกแล้วจึงปรุงรสตามรสนิยมของคุณเอง
+- ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับผลิตภัณฑ์ที่ใช้และขนาดเสิร์ฟ คำนวณจากข้อมูลโภชนาการบนบรรจุภัณฑ์ของผลิตภัณฑ์ที่เลือก โดยรวมเครื่องเคียง ไส้ และหน้าที่เพิ่มด้วย

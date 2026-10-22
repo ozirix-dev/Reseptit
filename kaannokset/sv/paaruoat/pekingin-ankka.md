@@ -6,7 +6,7 @@ category: paaruoka
 language: sv
 status: published
 servings: 4
-time_total_min: 120
+time_total_min: 510
 main_ingredient:
   - ankka
   - kurkku
@@ -75,3 +75,4 @@ Hemkökets version av Pekinganka: knaperstekt anka serverad i tunna strimlor med
 ## Anteckningar
 
 – Koktiden för ankan beror på storleken. Kontrollera om den är klar med en koksond.
+- Beräknad totaltid är 510 minuter: 25 min förberedelser, 360 min torkning i kylskåp, 110 min stekning i ugn, 15 min vila. Längre torkning ökar totaltiden; kontrollera tillagningen med en matlagningstermometer.

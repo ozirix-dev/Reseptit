@@ -6,7 +6,7 @@ category: alkuruoka
 language: sv
 status: published
 servings: 4
-time_total_min: 20
+time_total_min: 80
 main_ingredient:
   - tomaatti
   - kurkku
@@ -79,3 +79,4 @@ Purerad kall tomatsoppa är smaksatt med gurka, paprika, vitlök och olivolja. S
 ## Anteckningar
 
 – Skala tomaterna om du vill ha en finare konsistens.
+- Beräknad totaltid är 80 minuter: 20 min förberedelser och mixning, 60 min kylning. Kyl längre vid behov så att soppan är kall vid servering.

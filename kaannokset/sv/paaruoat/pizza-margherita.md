@@ -6,7 +6,7 @@ category: paaruoka
 language: sv
 status: published
 servings: 2
-time_total_min: 40
+time_total_min: 100
 main_ingredient:
   - vehnä
   - tomaatti
@@ -73,3 +73,4 @@ Den enkla fyllningen av en napolitansk pizza är tomat, mozzarella, basilika och
 ## Anteckningar
 
 – Häll av mozzarellan väl så att fyllningen inte vattnar botten.
+- Beräknad totaltid är 100 minuter: 20 min degberedning och utbakning, 60 min jäsning, 20 min gräddning av två pizzor efter varandra. Värm ugnen och pizzastenen medan degen jäser.

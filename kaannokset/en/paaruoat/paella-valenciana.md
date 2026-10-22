@@ -78,7 +78,7 @@ In the Valencian-style paella, short-grain rice is cooked in a pan in a saffron 
 
 1. Heat the oil in a wide pan. Brown the chicken and rabbit pieces all over.
 2. Add the beans and fry for a few minutes. Mix in the tomato and smoked paprika.
-3. Add the rice and stir to coat the grains in the oil. Pour the hot broth in which the saffron has been soaked into the pan. Season with salt.
+3. Add the rice and stir to coat the grains in the oil. Pour the hot broth in which the saffron has been soaked into the pan. Season with salt. Add the rosemary sprig to the stock if using; remove it before serving.
 4. Spread the ingredients evenly on the pan. Cook on medium heat for about 8 minutes and continue on lower heat for 12-15 minutes. Do not stir the rice again after adding the broth.
 5. When the rice is cooked and the liquid has been absorbed, remove the pan from the stove. Cover lightly and let rest for 5 minutes.
 

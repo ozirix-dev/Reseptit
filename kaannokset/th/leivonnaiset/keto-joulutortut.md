@@ -1,11 +1,10 @@
 ---
-title: ขนมพายดาวคริสต์มาสคีโต
+title: ขนมพายดาวคริสต์มาสแป้งอัลมอนด์
 recipe_id: keto-joulutortut
 url_slug: keto-joulutortut
 category: leivonnainen
 language: th
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - mantelijauho
   - tuorejuusto
@@ -16,7 +15,6 @@ time_total_min: 35
 difficulty: ง่าย
 tags:
   - การปรุงอาหารที่บ้านแบบฟินแลนด์
-  - คาร์โบไฮเดรตต่ำ
 image:
   src: leivonnaiset/keto-joulutortut.webp
   alt: ทาร์ตคริสต์มาสสีน้ำตาลทองพร้อมแยมลูกพลัมตรงกลางจาน
@@ -43,7 +41,7 @@ source_recipe: reseptit/leivonnaiset/keto-joulutortut.md
 translation_of: keto-joulutortut
 ---
 
-# ขนมพายดาวคริสต์มาสคีโต
+# ขนมพายดาวคริสต์มาสแป้งอัลมอนด์
 
 ขนมรูปดาวใช้แป้งอัลมอนด์ เนย และครีมชีสทำแป้ง ใส่แยมพลัมตรงกลาง ซึ่งปริมาณคาร์โบไฮเดรตขึ้นอยู่กับผลิตภัณฑ์.
 
@@ -61,3 +59,4 @@ translation_of: keto-joulutortut
 ## หมายเหตุ
 
 - ตรวจสอบความสุกแล้วจึงปรุงรสตามรสนิยมของคุณเอง
+- ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับผลิตภัณฑ์ที่ใช้และขนาดเสิร์ฟ คำนวณจากข้อมูลโภชนาการบนบรรจุภัณฑ์ของผลิตภัณฑ์ที่เลือก โดยรวมเครื่องเคียง ไส้ และหน้าที่เพิ่มด้วย

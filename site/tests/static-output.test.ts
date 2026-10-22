@@ -138,3 +138,25 @@ test("Google Search Console ownership verification file is published at the Page
   const verification = await readFile(path.join(dist, "google0c6f9c0486376f0f.html"), "utf8");
   assert.equal(verification, "google-site-verification: google0c6f9c0486376f0f.html");
 });
+
+test("P2/P3 corrections reach static titles, route data and Recipe JSON-LD", async () => {
+  const { siteContent } = await import("../src/generated/content.generated");
+  const times: Record<string, number> = { "pekingin-ankka": 510, gazpacho: 80, "pizza-margherita": 100, tandoorikana: 130, "char-siu": 90, "chole-bhature": 900 };
+  const renamed = ["keto-pinaattiletut", "keto-pannukakku", "keto-joulutortut", "keto-korvapuustit", "ketopizza-pofiber-pohjalla"];
+  const recipes = siteContent.recipes.filter((recipe) => recipe.recipeId in times || renamed.includes(recipe.recipeId));
+  assert.equal(recipes.length, 44);
+  for (const recipe of recipes) {
+    const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+    const jsonld = JSON.parse(html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/)![1]);
+    const page = JSON.parse(html.match(/<script id="page-content" type="application\/json">([\s\S]*?)<\/script>/)![1]);
+    assert.equal(jsonld.name, recipe.title);
+    assert.equal(page.recipe.title, recipe.title);
+    assert.ok(html.includes(`<h1>${recipe.title}</h1>`));
+    assert.ok(html.includes(`rel="canonical" href="https://ozirix-dev.github.io/Reseptit${recipe.routePath}"`));
+    if (recipe.recipeId in times) assert.equal(jsonld.totalTime, `PT${times[recipe.recipeId]}M`);
+    if (renamed.includes(recipe.recipeId)) {
+      assert.equal(page.recipe.dietClass, null);
+      assert.doesNotMatch([jsonld.name, jsonld.keywords, jsonld.description].join(" "), /keto|คีโต|\bVHH\b|low.carb|lågkolhydrat/i);
+    }
+  }
+});

@@ -1,11 +1,10 @@
 ---
-title: Keto-julstjärnor
+title: Julstjärnor med mandelmjöl
 recipe_id: keto-joulutortut
 url_slug: keto-joulutortut
 category: leivonnainen
 language: sv
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - mantelijauho
   - tuorejuusto
@@ -16,7 +15,6 @@ time_total_min: 35
 difficulty: lätt
 tags:
   - finsk husmanskost
-  - lågkolhydrat
 image:
   src: leivonnaiset/keto-joulutortut.webp
   alt: Guldbruna jultårtor med plommonsyltcentrum på ett fat
@@ -43,7 +41,7 @@ source_recipe: reseptit/leivonnaiset/keto-joulutortut.md
 translation_of: keto-joulutortut
 ---
 
-# Keto-julstjärnor
+# Julstjärnor med mandelmjöl
 
 Stjärnformade bakverk görs av en deg med mandelmjöl, smör och färskost.
 
@@ -61,3 +59,4 @@ I mitten läggs plommonsylt, vars kolhydratinnehåll varierar mellan produkter.
 ## Anteckningar
 
 – Kontrollera om de är färdiga och krydda till sist efter egen smak.
+- Kolhydratmängden beror på vilka produkter du använder och portionsstorleken. Beräkna den utifrån förpackningarnas näringsvärden och räkna även med tillbehör och fyllningar.

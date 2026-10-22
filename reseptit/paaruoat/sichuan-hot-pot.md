@@ -95,7 +95,7 @@ Yhteinen pöytäruoka, jossa ohuet liha- ja kasvispalat kypsyvät kuumassa, maus
 2. Kaada liemi kattilaan ja kiehauta. Hauduta miedolla lämmöllä 20 minuuttia. Siivilöi halutessasi kokonaiset mausteet.
 3. Kaada liemi pöytäkäyttöön sopivaan kuumuutta kestävään kattilaan. Pidä se poreilevana liedellä tai pöytäkeittimellä.
 4. Nosta liemeen pieniä eriä lihaa, tofua, sieniä ja kaalia. Kypsennä liha kauttaaltaan ja kasvikset pehmeiksi.
-5. Kypsennä nuudelit liemessä pakkauksen ohjeen mukaan ja tarjoa kaikki heti.
+5. Kypsennä nuudelit liemessä pakkauksen ohjeen mukaan. Hienonna kevätsipulit ja jaa pieniin dippikulhoihin. Lisää kuhunkin hieman kiehuvaa lientä kattilasta. Tarjoa heti kypsän ruoan dippinä.
 
 ## Muistiinpanot
 

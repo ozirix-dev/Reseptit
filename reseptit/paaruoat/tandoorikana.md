@@ -6,7 +6,7 @@ category: paaruoka
 language: fi
 status: published
 servings: 4
-time_total_min: 90
+time_total_min: 130
 main_ingredient:
   - broileri
   - jogurtti
@@ -86,3 +86,4 @@ Jogurtissa ja mausteissa marinoitu kana paistuu kuumassa uunissa tai grillissä 
 ## Muistiinpanot
 
 - Tandoorikana saa perinteisesti punaisen sävyn mausteista; elintarvikeväriä ei tarvita.
+- Kokonaisaika-arvio on 130 minuuttia: 15 min esivalmistelut, 60 min marinointi, 45 min paisto, 5 min pinnan paahtaminen, 5 min lepo. Arvio perustuu tunnin marinointiin; yön yli marinointi lisää kokonaisaikaa. Kypsennä tarvittaessa pidempään lämpömittarin lukeman mukaan.

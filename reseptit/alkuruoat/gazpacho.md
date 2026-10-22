@@ -6,7 +6,7 @@ category: alkuruoka
 language: fi
 status: published
 servings: 4
-time_total_min: 20
+time_total_min: 80
 main_ingredient:
   - tomaatti
   - kurkku
@@ -81,3 +81,4 @@ Soseutettu kylmä tomaattikeitto saa makua kurkusta, paprikasta, valkosipulista 
 ## Muistiinpanot
 
 - Kuori tomaatit halutessasi hienompaa rakennetta varten.
+- Kokonaisaika-arvio on 80 minuuttia: 20 min valmistelu ja soseutus, 60 min jäähdytys. Jäähdytä pidempään tarvittaessa, jotta keitto on tarjoiltaessa kylmää.

@@ -1,11 +1,10 @@
 ---
-title: Keto Christmas Star Pastries
+title: Almond flour Christmas star pastries
 recipe_id: keto-joulutortut
 url_slug: keto-joulutortut
 category: leivonnainen
 language: en
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - mantelijauho
   - tuorejuusto
@@ -16,7 +15,6 @@ time_total_min: 35
 difficulty: easy
 tags:
   - Finnish home cooking
-  - low carb
 image:
   src: leivonnaiset/keto-joulutortut.webp
   alt: Golden brown Christmas tarts with a plum jam center on a platter
@@ -43,7 +41,7 @@ source_recipe: reseptit/leivonnaiset/keto-joulutortut.md
 translation_of: keto-joulutortut
 ---
 
-# Keto Christmas Star Pastries
+# Almond flour Christmas star pastries
 
 These star-shaped pastries use a dough of almond flour, butter and cream cheese.
 
@@ -61,3 +59,4 @@ Plum jam fills the centres; its carbohydrate content depends on the product.
 ## Notes
 
 - Check for doneness and finally season according to your own taste.
+- The carbohydrate content depends on the products used and the portion size. Calculate it from the labels of your chosen products, including any accompaniments and toppings.

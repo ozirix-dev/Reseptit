@@ -70,7 +70,7 @@ Timjamilla ja mustapippurilla maustetusta paistoliemestä tehdään lopuksi kerm
 1. Mausta porsas suolalla, pippurilla ja timjamilla. Nosta uunivuokaan sipulilohkojen kanssa.
 2. Lisää vesi vuokaan ja paista 175 °C:ssa noin 75 minuuttia tai kunnes liha on kypsää.
 3. Nosta liha lepäämään. Siivilöi paistoliemi kattilaan ja lisää kerma.
-4. Keitä kastiketta muutama minuutti ja tarkista maku. Viipaloi porsas ja tarjoa kastikkeen kanssa.
+4. Keitä kastiketta muutama minuutti ja tarkista maku. Nosta kastike liedeltä ja sekoita voi lämpimään kastikkeeseen. Viipaloi porsas ja tarjoa kastikkeen kanssa.
 
 ## Muistiinpanot
 

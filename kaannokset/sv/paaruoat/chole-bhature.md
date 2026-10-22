@@ -6,7 +6,7 @@ category: paaruoka
 language: sv
 status: published
 servings: 4
-time_total_min: 75
+time_total_min: 900
 main_ingredient:
   - kikherne
   - vehnäjauho
@@ -103,3 +103,4 @@ Punjabi chole bhature kombinerar en aromatisk kikärtscurrysås med luftigt stek
 ## Anteckningar
 
 - Het olja ska hanteras med försiktighet.
+- Beräknad totaltid är 900 minuter: 720 min blötläggning över natten, 180 min kokning, tillagning av curry och deg, degvila samt fritering av bröden. Beräkningen avsätter 12 timmar för blötläggning. Följ kikärtspaketets anvisningar; tillagningstiden varierar med kikärterna och antalet friteringsomgångar.

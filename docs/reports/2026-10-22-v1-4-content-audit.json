@@ -3389,30 +3389,34 @@
     {
       "recipe_id": "uuniporsas-kermakastikkeessa-vhh",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "Ainesosien voi jää ilman käyttövaihetta; ei arvata rasvan käyttötapaa."
+      "detail": "Ainesluettelon voi sekoitetaan lämpimään kastikkeeseen liedeltä nostamisen jälkeen ennen tarjoamista.",
+      "original_detail": "Ainesosien voi jää ilman käyttövaihetta; ei arvata rasvan käyttötapaa."
     },
     {
       "recipe_id": "kai-jiew-vhh",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "Valinnainen kevätsipuli tarvitsee selkeän käyttövaiheen."
+      "detail": "Valinnainen hienonnettu kevätsipuli sekoitetaan munaseokseen vaiheessa 1.",
+      "original_detail": "Valinnainen kevätsipuli tarvitsee selkeän käyttövaiheen."
     },
     {
       "recipe_id": "sichuan-hot-pot",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "Dippiin merkitty kevätsipuli tarvitsee tarjoiluohjeen."
+      "detail": "Kevätsipuli hienonnetaan dippikulhoihin; joukkoon lisätään kiehuvaa lientä kattilasta. Uusia aineksia ei lisätty.",
+      "original_detail": "Dippiin merkitty kevätsipuli tarvitsee tarjoiluohjeen."
     },
     {
       "recipe_id": "paella-valenciana",
       "severity": "P3",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "Valinnaisen rosmariinin käyttövaihe puuttuu."
+      "detail": "Valinnainen rosmariinin oksa lisätään liemeen ja poistetaan ennen tarjoamista.",
+      "original_detail": "Valinnaisen rosmariinin käyttövaihe puuttuu."
     },
     {
       "recipe_id": "paistettu-maksa-pekonilla",
@@ -3425,79 +3429,90 @@
     {
       "recipe_id": "pekingin-ankka",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "120 minuutin metadata ei kata vähintään kuuden tunnin kuivattamista ja koko kypsennystä/lepoa."
+      "detail": "Kokonaisaika-arvio 510 min: 25 min valmistelu + 360 min kuivatus + 110 min paisto + 15 min lepo.",
+      "original_detail": "120 minuutin metadata ei kata vähintään kuuden tunnin kuivattamista ja koko kypsennystä/lepoa."
     },
     {
       "recipe_id": "gazpacho",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "20 minuutin metadata ei kata tunnin jäähdytystä."
+      "detail": "Kokonaisaika-arvio 80 min: 20 min valmistelu + 60 min jäähdytys.",
+      "original_detail": "20 minuutin metadata ei kata tunnin jäähdytystä."
     },
     {
       "recipe_id": "pizza-margherita",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "40 minuutin metadata ei kata vähintään tunnin kohotusta."
+      "detail": "Kokonaisaika-arvio 100 min: 20 min taikinatyö + 60 min kohotus + 20 min kahden pizzan paisto. Uuni kuumennetaan kohotuksen aikana.",
+      "original_detail": "40 minuutin metadata ei kata vähintään tunnin kohotusta."
     },
     {
       "recipe_id": "tandoorikana",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "90 minuutin metadata ei kata kaikkia vähimmäisvaiheita ja marinointia."
+      "detail": "Kokonaisaika-arvio 130 min: 15 min valmistelu + 60 min marinointi + 45 min paisto + 5 min grilliviimeistely + 5 min lepo. Yön yli marinointi lisätään aikaan.",
+      "original_detail": "90 minuutin metadata ei kata kaikkia vähimmäisvaiheita ja marinointia."
     },
     {
       "recipe_id": "char-siu",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "70 minuutin kokonaisaika tarvitsee vertailun marinointi-, kypsennys- ja lepoaikoihin."
+      "detail": "Kokonaisaika-arvio 90 min: 15 min valmistelu + 30 min marinointi + 35 min paisto + 5 min viimeistely + 5 min lepo.",
+      "original_detail": "70 minuutin kokonaisaika tarvitsee vertailun marinointi-, kypsennys- ja lepoaikoihin."
     },
     {
       "recipe_id": "chole-bhature",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "Kokonaisaika ei kata kuivien kikherneiden liotusta."
+      "detail": "Kokonaisaika-arvio 900 min: 720 min yön yli liotus + 180 min valmistelut, keittäminen, taikinan lepo ja erissä paistaminen. Liotus tehdään pakkauksen ohjeen mukaan; 12 h on suunnitteluvaraus.",
+      "original_detail": "Kokonaisaika ei kata kuivien kikherneiden liotusta."
     },
     {
       "recipe_id": "keto-pinaattiletut",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "Keto-otsikko, vhh_tiukka-luokka ja puuttuva toistettava laskelma. Ehdotus: VHH-pinaattiletut, URL ennallaan, tai dokumentoitu laskelma."
+      "detail": "Todentamaton keto-nimi ja ruokavalioluokka poistettu kaikilta kieliltä; kuvaava nimi, neutraalit tagit ja tuotekohtainen hiilihydraattihuomio. ID, URL, annokset ja ainekset säilyvät. Ei keksittyä ravintolaskelmaa.",
+      "original_detail": "Keto-otsikko, vhh_tiukka-luokka ja puuttuva toistettava laskelma. Ehdotus: VHH-pinaattiletut, URL ennallaan, tai dokumentoitu laskelma."
     },
     {
       "recipe_id": "keto-pannukakku",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "Keto-otsikon sopivuus tarvitsee laskelman ja lisäkkeiden rajauksen."
+      "detail": "Todentamaton keto-nimi ja ruokavalioluokka poistettu kaikilta kieliltä; kuvaava nimi, neutraalit tagit ja tuotekohtainen hiilihydraattihuomio. ID, URL, annokset ja ainekset säilyvät. Ei keksittyä ravintolaskelmaa.",
+      "original_detail": "Keto-otsikon sopivuus tarvitsee laskelman ja lisäkkeiden rajauksen."
     },
     {
       "recipe_id": "keto-joulutortut",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "Luumuhillon hiilihydraatit riippuvat tuotteesta; keto-otsikko tarvitsee laskelman tai tarkennuksen."
+      "detail": "Todentamaton keto-nimi ja ruokavalioluokka poistettu kaikilta kieliltä; kuvaava nimi, neutraalit tagit ja tuotekohtainen hiilihydraattihuomio. ID, URL, annokset ja ainekset säilyvät. Ei keksittyä ravintolaskelmaa.",
+      "original_detail": "Luumuhillon hiilihydraatit riippuvat tuotteesta; keto-otsikko tarvitsee laskelman tai tarkennuksen."
     },
     {
       "recipe_id": "keto-korvapuustit",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "Keto-otsikon sopivuus tarvitsee toistettavan annoskohtaisen laskelman."
+      "detail": "Todentamaton keto-nimi ja ruokavalioluokka poistettu kaikilta kieliltä; kuvaava nimi, neutraalit tagit ja tuotekohtainen hiilihydraattihuomio. ID, URL, annokset ja ainekset säilyvät. Ei keksittyä ravintolaskelmaa.",
+      "original_detail": "Keto-otsikon sopivuus tarvitsee toistettavan annoskohtaisen laskelman."
     },
     {
       "recipe_id": "ketopizza-pofiber-pohjalla",
       "severity": "P2",
-      "status": "human-review-pending",
+      "status": "corrected",
       "area": "source",
-      "detail": "Alle 5 g koko pohjassa -väite ei sisällä toistettavaa laskentalähdettä; täytteet eivät sisälly arvioon."
+      "detail": "Todentamaton keto-nimi ja ruokavalioluokka poistettu kaikilta kieliltä; kuvaava nimi, neutraalit tagit ja tuotekohtainen hiilihydraattihuomio. ID, URL, annokset ja ainekset säilyvät. Ei keksittyä ravintolaskelmaa. Myös alle 5 g:n väite poistettu.",
+      "original_detail": "Alle 5 g koko pohjassa -väite ei sisällä toistettavaa laskentalähdettä; täytteet eivät sisälly arvioon."
     },
     {
       "recipe_id": "medu-vada",
@@ -6997,6 +7012,568 @@
     "date": "2026-10-22",
     "scope": "User requested all P0/P1 and wrong image corrections",
     "image_manifest": "2026-10-22-v1-4-image-corrections.json",
-    "remaining_open_P0_P1": 0
+    "remaining_open_P0_P1": 0,
+    "p2_p3": {
+      "date": "2026-10-22",
+      "baseline_sha": "93d74174f2374cbdc60d897e1cb99700fc381d15",
+      "corrected_findings": 15,
+      "changed_versions": [
+        {
+          "recipe_id": "gazpacho",
+          "locale": "fi",
+          "path": "reseptit/alkuruoat/gazpacho.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "char-siu",
+          "locale": "fi",
+          "path": "reseptit/paaruoat/char-siu.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "chole-bhature",
+          "locale": "fi",
+          "path": "reseptit/paaruoat/chole-bhature.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "kai-jiew-vhh",
+          "locale": "fi",
+          "path": "reseptit/paaruoat/kai-jiew-vhh.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-pinaattiletut",
+          "locale": "fi",
+          "path": "reseptit/paaruoat/keto-pinaattiletut.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "ketopizza-pofiber-pohjalla",
+          "locale": "fi",
+          "path": "reseptit/paaruoat/ketopizza-pofiber-pohjalla.md",
+          "metadata_fields": [
+            "diet_class",
+            "image",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "paella-valenciana",
+          "locale": "fi",
+          "path": "reseptit/paaruoat/paella-valenciana.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "pekingin-ankka",
+          "locale": "fi",
+          "path": "reseptit/paaruoat/pekingin-ankka.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "pizza-margherita",
+          "locale": "fi",
+          "path": "reseptit/paaruoat/pizza-margherita.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "sichuan-hot-pot",
+          "locale": "fi",
+          "path": "reseptit/paaruoat/sichuan-hot-pot.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "tandoorikana",
+          "locale": "fi",
+          "path": "reseptit/paaruoat/tandoorikana.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "uuniporsas-kermakastikkeessa-vhh",
+          "locale": "fi",
+          "path": "reseptit/paaruoat/uuniporsas-kermakastikkeessa-vhh.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-pannukakku",
+          "locale": "fi",
+          "path": "reseptit/jalkiruoat/keto-pannukakku.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-joulutortut",
+          "locale": "fi",
+          "path": "reseptit/leivonnaiset/keto-joulutortut.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-korvapuustit",
+          "locale": "fi",
+          "path": "reseptit/leivonnaiset/keto-korvapuustit.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "gazpacho",
+          "locale": "en",
+          "path": "kaannokset/en/alkuruoat/gazpacho.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-pannukakku",
+          "locale": "en",
+          "path": "kaannokset/en/jalkiruoat/keto-pannukakku.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-joulutortut",
+          "locale": "en",
+          "path": "kaannokset/en/leivonnaiset/keto-joulutortut.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-korvapuustit",
+          "locale": "en",
+          "path": "kaannokset/en/leivonnaiset/keto-korvapuustit.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "char-siu",
+          "locale": "en",
+          "path": "kaannokset/en/paaruoat/char-siu.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "chole-bhature",
+          "locale": "en",
+          "path": "kaannokset/en/paaruoat/chole-bhature.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "kai-jiew-vhh",
+          "locale": "en",
+          "path": "kaannokset/en/paaruoat/kai-jiew-vhh.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-pinaattiletut",
+          "locale": "en",
+          "path": "kaannokset/en/paaruoat/keto-pinaattiletut.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "ketopizza-pofiber-pohjalla",
+          "locale": "en",
+          "path": "kaannokset/en/paaruoat/ketopizza-pofiber-pohjalla.md",
+          "metadata_fields": [
+            "diet_class",
+            "image",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "paella-valenciana",
+          "locale": "en",
+          "path": "kaannokset/en/paaruoat/paella-valenciana.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "pekingin-ankka",
+          "locale": "en",
+          "path": "kaannokset/en/paaruoat/pekingin-ankka.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "pizza-margherita",
+          "locale": "en",
+          "path": "kaannokset/en/paaruoat/pizza-margherita.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "sichuan-hot-pot",
+          "locale": "en",
+          "path": "kaannokset/en/paaruoat/sichuan-hot-pot.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "tandoorikana",
+          "locale": "en",
+          "path": "kaannokset/en/paaruoat/tandoorikana.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "uuniporsas-kermakastikkeessa-vhh",
+          "locale": "en",
+          "path": "kaannokset/en/paaruoat/uuniporsas-kermakastikkeessa-vhh.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "gazpacho",
+          "locale": "sv",
+          "path": "kaannokset/sv/alkuruoat/gazpacho.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-pannukakku",
+          "locale": "sv",
+          "path": "kaannokset/sv/jalkiruoat/keto-pannukakku.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-joulutortut",
+          "locale": "sv",
+          "path": "kaannokset/sv/leivonnaiset/keto-joulutortut.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-korvapuustit",
+          "locale": "sv",
+          "path": "kaannokset/sv/leivonnaiset/keto-korvapuustit.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "char-siu",
+          "locale": "sv",
+          "path": "kaannokset/sv/paaruoat/char-siu.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "chole-bhature",
+          "locale": "sv",
+          "path": "kaannokset/sv/paaruoat/chole-bhature.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "kai-jiew-vhh",
+          "locale": "sv",
+          "path": "kaannokset/sv/paaruoat/kai-jiew-vhh.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-pinaattiletut",
+          "locale": "sv",
+          "path": "kaannokset/sv/paaruoat/keto-pinaattiletut.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "ketopizza-pofiber-pohjalla",
+          "locale": "sv",
+          "path": "kaannokset/sv/paaruoat/ketopizza-pofiber-pohjalla.md",
+          "metadata_fields": [
+            "diet_class",
+            "image",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "paella-valenciana",
+          "locale": "sv",
+          "path": "kaannokset/sv/paaruoat/paella-valenciana.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "pekingin-ankka",
+          "locale": "sv",
+          "path": "kaannokset/sv/paaruoat/pekingin-ankka.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "pizza-margherita",
+          "locale": "sv",
+          "path": "kaannokset/sv/paaruoat/pizza-margherita.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "sichuan-hot-pot",
+          "locale": "sv",
+          "path": "kaannokset/sv/paaruoat/sichuan-hot-pot.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "tandoorikana",
+          "locale": "sv",
+          "path": "kaannokset/sv/paaruoat/tandoorikana.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "uuniporsas-kermakastikkeessa-vhh",
+          "locale": "sv",
+          "path": "kaannokset/sv/paaruoat/uuniporsas-kermakastikkeessa-vhh.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "gazpacho",
+          "locale": "th",
+          "path": "kaannokset/th/alkuruoat/gazpacho.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-pannukakku",
+          "locale": "th",
+          "path": "kaannokset/th/jalkiruoat/keto-pannukakku.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-joulutortut",
+          "locale": "th",
+          "path": "kaannokset/th/leivonnaiset/keto-joulutortut.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-korvapuustit",
+          "locale": "th",
+          "path": "kaannokset/th/leivonnaiset/keto-korvapuustit.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "char-siu",
+          "locale": "th",
+          "path": "kaannokset/th/paaruoat/char-siu.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "chole-bhature",
+          "locale": "th",
+          "path": "kaannokset/th/paaruoat/chole-bhature.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "kai-jiew-vhh",
+          "locale": "th",
+          "path": "kaannokset/th/paaruoat/kai-jiew-vhh.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "keto-pinaattiletut",
+          "locale": "th",
+          "path": "kaannokset/th/paaruoat/keto-pinaattiletut.md",
+          "metadata_fields": [
+            "diet_class",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "ketopizza-pofiber-pohjalla",
+          "locale": "th",
+          "path": "kaannokset/th/paaruoat/ketopizza-pofiber-pohjalla.md",
+          "metadata_fields": [
+            "diet_class",
+            "image",
+            "tags",
+            "title"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "paella-valenciana",
+          "locale": "th",
+          "path": "kaannokset/th/paaruoat/paella-valenciana.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "pekingin-ankka",
+          "locale": "th",
+          "path": "kaannokset/th/paaruoat/pekingin-ankka.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "pizza-margherita",
+          "locale": "th",
+          "path": "kaannokset/th/paaruoat/pizza-margherita.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "sichuan-hot-pot",
+          "locale": "th",
+          "path": "kaannokset/th/paaruoat/sichuan-hot-pot.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "tandoorikana",
+          "locale": "th",
+          "path": "kaannokset/th/paaruoat/tandoorikana.md",
+          "metadata_fields": [
+            "time_total_min"
+          ],
+          "prose_changed": true
+        },
+        {
+          "recipe_id": "uuniporsas-kermakastikkeessa-vhh",
+          "locale": "th",
+          "path": "kaannokset/th/paaruoat/uuniporsas-kermakastikkeessa-vhh.md",
+          "metadata_fields": [],
+          "prose_changed": true
+        }
+      ],
+      "remaining_open_P0_P3": 0,
+      "review": "Codex semantic self-review; independent human review pending",
+      "report": "2026-10-22-v1-4-p2-p3.md"
+    }
   }
 }

@@ -165,3 +165,13 @@ kuvauksessa ja huomioissa oli lanttu/linssi/ihra-sekaannuksia.
 Tekstit korjattiin lähteen mukaisiksi. Testit kattavat nyt myös kyseiset
 virheet otsikossa, tekstissä ja alt-tekstissä. Tämä jälkilöydös osoittaa,
 miksi automaattitulosta ei saa tulkita täydelliseksi semanttiseksi hyväksynnäksi.
+
+## P2/P3-jatkokorjaus
+
+[Erillinen jatkoraportti](2026-10-22-v1-4-p2-p3.md) kirjaa tämän raportin
+alkuperäisen auditoinnin jälkeen tehdyt 15 P2/P3-korjausta. Edellä mainitut
+avoimet aika-, käyttövaihe- ja viiden reseptin keto-väitehavainnot on käsitelty.
+Koneellinen luettelo on päivitetty: siinä ei ole avoimia P0–P3-havaintoja.
+Viiden reseptin keto-/VHH-luokitus poistettiin puuttuvan laskentanäytön vuoksi;
+ravintoarvoja ei laskettu tai keksitty. Muut ruokavalioluokitukset ja
+riippumaton ihmiskielentarkistus eivät muutu tämän rajatun työn perusteella.

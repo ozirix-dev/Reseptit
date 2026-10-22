@@ -1,11 +1,10 @@
 ---
-title: Keto-pinaattiletut
+title: Pinaattiletut mantelijauholla
 recipe_id: keto-pinaattiletut
 url_slug: keto-pinaattiletut
 category: paaruoka
 language: fi
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - kananmuna
   - pinaatti
@@ -16,7 +15,6 @@ time_total_min: 25
 difficulty: helppo
 tags:
   - suomalainen kotiruoka
-  - VHH
 image:
   src: paaruoat/keto-pinaattiletut.webp
   alt: Pino pinaattilettuja marjojen ja vaalean lisäkkeen kanssa
@@ -51,9 +49,9 @@ translation_status:
   th: published
 ---
 
-# Keto-pinaattiletut
+# Pinaattiletut mantelijauholla
 
-Keto-pinaattiletut ovat pannulla paistettava vähähiilihydraattinen ruoka. Resepti on mitoitettu kolmelle annokselle.
+Pinaatista, tuorejuustosta ja mantelijauhosta valmistettavat letut paistetaan pannulla. Resepti on mitoitettu kolmelle annokselle.
 
 ## Kuvaus
 
@@ -68,3 +66,4 @@ Kananmunista, tuorejuustosta ja pinaatista syntyy pannulla paistettava lettutaik
 ## Muistiinpanot
 
 - Tarkista kypsyys ja mausta lopuksi oman maun mukaan.
+- Hiilihydraattimäärä riippuu käytetyistä tuotteista ja annoskoosta. Laske se valitsemiesi tuotteiden pakkaustiedoista ja huomioi myös lisäkkeet ja täytteet.

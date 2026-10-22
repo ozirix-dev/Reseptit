@@ -6,7 +6,7 @@ category: paaruoka
 language: th
 status: published
 servings: 4
-time_total_min: 70
+time_total_min: 90
 main_ingredient:
   - sianliha
 cooking_method:
@@ -76,3 +76,4 @@ translation_of: char-siu
 ## หมายเหตุ
 
 - น้ำดองมีเนื้อดิบจึงไม่ควรใช้เป็นซอสสำหรับอาหารสำเร็จรูปโดยไม่ต้องต้ม
+- เวลารวมโดยประมาณ 90 นาที: 15 min เตรียมส่วนผสม, 30 min หมัก, 35 min อบ, 5 min อบเคลือบน้ำผึ้ง, 5 min พักเนื้อ. เวลาประมาณนี้รวมการหมักอย่างน้อย 30 นาที หากหมักนานกว่านี้เวลารวมจะเพิ่มขึ้น

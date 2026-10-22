@@ -1,11 +1,10 @@
 ---
-title: Keto Spinach Pancakes
+title: Spinach pancakes with almond flour
 recipe_id: keto-pinaattiletut
 url_slug: keto-pinaattiletut
 category: paaruoka
 language: en
 status: published
-diet_class: vhh_tiukka
 main_ingredient:
   - kananmuna
   - pinaatti
@@ -16,7 +15,6 @@ time_total_min: 25
 difficulty: easy
 tags:
   - Finnish home cooking
-  - low carb
 image:
   src: paaruoat/keto-pinaattiletut.webp
   alt: A stack of spinach pancakes with berries and a pale accompaniment
@@ -46,9 +44,9 @@ source_recipe: reseptit/paaruoat/keto-pinaattiletut.md
 translation_of: keto-pinaattiletut
 ---
 
-# Keto Spinach Pancakes
+# Spinach pancakes with almond flour
 
-These low-carb spinach pancakes are cooked in a frying pan. The recipe makes three servings.
+These pancakes made with spinach, cream cheese and almond flour are cooked in a frying pan. The recipe makes three servings.
 
 ## Description
 
@@ -63,3 +61,4 @@ Eggs, cream cheese and spinach make a savoury pancake batter. Serve the pancakes
 ## Notes
 
 - Check for doneness and finally season according to your own taste.
+- The carbohydrate content depends on the products used and the portion size. Calculate it from the labels of your chosen products, including any accompaniments and toppings.

@@ -6,7 +6,7 @@ category: paaruoka
 language: en
 status: published
 servings: 2
-time_total_min: 40
+time_total_min: 100
 main_ingredient:
   - vehnä
   - tomaatti
@@ -73,3 +73,4 @@ The simple filling of a Neapolitan pizza is tomato, mozzarella, basil and olive 
 ## Notes
 
 - Drain the mozzarella well so that the filling does not water the base.
+- Estimated total time is 100 minutes: 20 min making the dough and shaping the pizzas, 60 min rising, 20 min baking two pizzas one after the other. Preheat the oven and pizza stone while the dough rises.

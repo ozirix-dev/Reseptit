@@ -1,10 +1,9 @@
 ---
-title: พิซซ่าคีโตแป้งโพไฟเบอร์
+title: พิซซ่าแป้งโพไฟเบอร์
 recipe_id: ketopizza-pofiber-pohjalla
 url_slug: ketopizza-pofiber-pohjalla
 category: paaruoka
 language: th
-diet_class: keto
 servings: 2
 main_ingredient:
   - juusto
@@ -14,13 +13,11 @@ cooking_method:
   - uuni
 difficulty: ง่าย
 tags:
-  - พิซซ่าคีโต
-  - คาร์โบไฮเดรตต่ำ
   - โปไฟเบอร์
   - กระทะพิซซ่า
 image:
   src: paaruoat/ketopizza-pofiber-pohjalla.webp
-  alt: พิซซ่าคีโตที่ใช้โพไฟเบอร์พร้อมเปปเปอโรนี ปาปริก้า มะกอก และชีสละลาย
+  alt: พิซซ่าแป้งโพไฟเบอร์หน้าเปปเปอโรนี พริกหวาน มะกอก และชีสละลาย
   width: 1280
   height: 853
 ingredients:
@@ -55,7 +52,7 @@ source_recipe: reseptit/paaruoat/ketopizza-pofiber-pohjalla.md
 translation_of: ketopizza-pofiber-pohjalla
 ---
 
-# พิซซ่าคีโตแป้งโพไฟเบอร์
+# พิซซ่าแป้งโพไฟเบอร์
 
 ฐานโพฟิเบอร์สุดชีสที่นุ่มละมุนอบในเตาอบร้อนจนกลายเป็นพิซซ่าที่มีขอบกรอบ คุณสามารถเลือกไส้ได้ตามรสนิยมของคุณ
 
@@ -76,4 +73,4 @@ translation_of: ketopizza-pofiber-pohjalla
 ## หมายเหตุ
 
 - โดยทั่วไปไม่จำเป็นต้องอบฐานล่วงหน้า
-- ฐานมักจะมีคาร์โบไฮเดรตน้อยกว่า 5 กรัมในฐานพิซซ่าทั้งหมด ปริมาณจะแตกต่างกันไปขึ้นอยู่กับผลิตภัณฑ์และไส้ที่ใช้
+- ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับผลิตภัณฑ์ที่ใช้และขนาดเสิร์ฟ คำนวณจากข้อมูลโภชนาการบนบรรจุภัณฑ์ของผลิตภัณฑ์ที่เลือก โดยรวมเครื่องเคียง ไส้ และหน้าที่เพิ่มด้วย

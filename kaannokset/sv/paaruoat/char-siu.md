@@ -6,7 +6,7 @@ category: paaruoka
 language: sv
 status: published
 servings: 4
-time_total_min: 70
+time_total_min: 90
 main_ingredient:
   - sianliha
 cooking_method:
@@ -76,3 +76,4 @@ Sött och salt fläsk i kantonesisk stil får en rödbrun yta av soja, honung oc
 ## Anteckningar
 
 – Marinaden innehåller rått kött, så använd den inte som sås till färdigmat utan att koka den.
+- Beräknad totaltid är 90 minuter: 15 min förberedelser, 30 min marinering, 35 min stekning i ugn, 5 min glasering med honung, 5 min vila. Beräkningen inkluderar minst 30 minuters marinering; längre marinering ökar totaltiden.

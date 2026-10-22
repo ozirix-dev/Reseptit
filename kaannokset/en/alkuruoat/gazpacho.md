@@ -6,7 +6,7 @@ category: alkuruoka
 language: en
 status: published
 servings: 4
-time_total_min: 20
+time_total_min: 80
 main_ingredient:
   - tomaatti
   - kurkku
@@ -79,3 +79,4 @@ Pureed cold tomato soup is flavored with cucumber, paprika, garlic and olive oil
 ## Notes
 
 - Peel the tomatoes if you want for a finer texture.
+- Estimated total time is 80 minutes: 20 min preparation and blending, 60 min chilling. Chill for longer if needed so the soup is cold when served.
