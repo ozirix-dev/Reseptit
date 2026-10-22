@@ -1,6 +1,6 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
-import { execFileSync } from "node:child_process";
+import { nutritionProvenance } from "./nutrition-provenance";
 import path from "node:path";
 import { auditTranslations } from "./translation-audit";
 import { calculate, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
@@ -8,8 +8,7 @@ const root = path.resolve(import.meta.dirname, "../..");
 const keys = ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const;
 const audit = await auditTranslations();
 const calculatedAt = new Date().toISOString().slice(0, 10);
-const sourceRevision = execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim();
-const sourceWorkingTreeChanges = execFileSync("git", ["status", "--porcelain", "--", "reseptit"], { cwd: root, encoding: "utf8" }).trim();
+const provenance = await nutritionProvenance(root);
 const sourceHashes: Record<string, string> = Object.fromEntries(await Promise.all(audit.publishedSources.map(async (recipe) => [recipe.path, createHash("sha256").update((await readFile(path.join(root, recipe.path), "utf8")).replaceAll("\r\n", "\n")).digest("hex")] as const)));
 const inventory = audit.publishedSources.map((recipe) => {
   const values = Object.fromEntries(keys.map((key) => [key, recipe.data[key] ?? null]));
@@ -45,7 +44,7 @@ for (const [id, uncertainties] of Object.entries(blockers)) {
     comparison: id === "kermainen-lohipata" ? "Conditional salmon alone contributes 30 g protein/serving, already above old whole-dish 29 g; investigate species/weights/retention, do not overwrite" : "Full comparison blocked; no inferred totals", comparisonStatus: id === "kermainen-lohipata" ? "CONFLICT REQUIRES REVIEW" : "INSUFFICIENT SOURCE DATA" });
 }
 const counts = Object.fromEntries(["VERIFIED", "ESTIMATE WITH EVIDENCE", "INSUFFICIENT SOURCE DATA", "CONFLICT REQUIRES REVIEW", "MISSING"].map((status) => [status, inventory.filter((r) => r.status === status).length]));
-const report = { sourceRevision, sourceWorkingTreeChanges: sourceWorkingTreeChanges || null, calculatedAt, sources: inventory.length, counts, dietClasses: Object.fromEntries(["keto", "vhh_tiukka", "vhh_valjempi", "unclassified"].map((diet) => [diet, audit.publishedSources.filter((r) => (r.data.diet_class ?? "unclassified") === diet).length])), inventory, pilots };
+const report = { ...provenance, calculatedAt, sources: inventory.length, counts, dietClasses: Object.fromEntries(["keto", "vhh_tiukka", "vhh_valjempi", "unclassified"].map((diet) => [diet, audit.publishedSources.filter((r) => (r.data.diet_class ?? "unclassified") === diet).length])), inventory, pilots };
 const directory = path.join(root, process.argv.includes("--snapshot") ? "docs/nutrition" : "tmp/nutrition");
 await mkdir(directory, { recursive: true });
 await writeFile(path.join(directory, "audit.json"), JSON.stringify(report, null, 2) + "\n");

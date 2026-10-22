@@ -95,6 +95,12 @@ Codex havaitsi desimaalipyöristyksen rajatapaukset sekä ajonaikaisen
 lähdeversion ja päiväyksen kovakoodauksen. Pyöristys käyttää nyt
 desimaaliesityksen kokonaislukulaskentaa: myös 4,225 → 4,23 ja
 10,075 → 10,08 testataan. Raportti lukee HEAD-tunnisteen, ajopäivän,
-reseptien työpuumuutokset ja kaikkien lähdetiedostojen tiivisteet.
+kaikkien laskentasyötteiden työpuumuutokset ja kaikkien lähdetiedostojen tiivisteet.
 Historiallinen lähdenäytön tarkistus ja tietueen hakupäivä pysyvät erillään
 uuden laskenta-ajon päivästä. Korjausten yksikkötestit ja TypeScript läpäisivät.
+
+Kertolaskut, summat ja annosjako säilyvät nyt tarkkoina rationaalilukuina
+ennen viimeistä pyöristystä. Regressio varmistaa 0,35 × 90 / 100 = 0,315
+→ 0,32 myös usean aineksen annosjaossa. Kahdeksan malliregressiota
+kattavat lisäksi tietueiden, laskentakoodin, lataajan, skeeman ja
+riippuvuuslukituksen tiivisteet sekä muuttuneiden syötteiden tunnistuksen.

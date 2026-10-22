@@ -1,8 +1,21 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
+import path from "node:path";
+import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
+import { nutritionProvenance, inputPaths } from "../scripts/nutrition-provenance";
 import { calculate, normalizeCarbohydrate, round, type Calculation, type FoodRecord } from "../scripts/nutrition-model";
 const food: FoodRecord = { id: "test-fixture-not-real-food", name: "Synthetic exact test fixture", sourceUrl: "https://example.org/fixture", retrievedAt: "2026-10-22", licence: "test", state: "raw", basis: "per100g-edible", carbohydrateDefinition: "EU_AVAILABLE", per100g: { kcal: 100, protein: 10, fat: 5, carbohydrate: 20, fibre: 4, sugars: 2, polyols: 0 } };
+test("provenance covers food records, calculator and loader inputs including dirty files", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const result = await nutritionProvenance(root);
+  for (const file of ["docs/nutrition/food-records.json", "site/scripts/nutrition-model.ts", "site/scripts/nutrition-audit.ts", "site/src/content/schema.ts", "site/package-lock.json"]) {
+    const expected = createHash("sha256").update((await readFile(path.join(root, file), "utf8")).replaceAll("\r\n", "\n")).digest("hex");
+    assert.equal(result.sourceInputHashes[file], expected);
+  }
+  assert.equal(result.sourceWorkingTreeChanges, execFileSync("git", ["status", "--porcelain", "--untracked-files=all", "--", ...inputPaths], { cwd: root, encoding: "utf8" }).trim() || null);
+});
 function fixture(): Calculation { return { recipeId: "fixture", sourceHash: "a".repeat(64), calculatedAt: "2026-10-22", servings: 4, scope: "input estimate, no loss", reviewerStatus: "AUTOMATED ONLY", carbohydrateOutput: "AVAILABLE_EXCLUDING_FIBRE", ingredients: [{ item: "fixture", amount: 250, unit: "g", record: structuredClone(food), state: "raw", matchEvidence: "fixture", edibleFraction: 1, edibleEvidence: "fixture", retainedFraction: 1, retentionEvidence: "fixture" }] }; }
 test("independent arithmetic and rounding only after totals/division", () => {
   const result = calculate(fixture());
@@ -58,4 +71,14 @@ test("documented salmon input contribution is reproducible without inventing dis
   assert.equal(result.perServing.protein, 30); assert.equal(result.total.netCarbohydrate, null);
   input.ingredients.push({ item: "cream with unverified density", amount: 2, unit: "dl", state: "unknown", matchEvidence: "" });
   assert.equal(calculate(input).total.protein, null);
+});
+test("decimal multiplication, subtraction, aggregation and serving division remain exact", () => {
+  const input = fixture(); input.ingredients[0].record!.per100g.protein = 0.35; input.ingredients[0].amount = 90; input.servings = 1;
+  assert.equal(calculate(input).total.protein, 0.32);
+  input.ingredients.push(structuredClone(input.ingredients[0])); input.servings = 2;
+  assert.equal(calculate(input).total.protein, 0.63); assert.equal(calculate(input).perServing.protein, 0.32);
+  input.ingredients[0].record!.carbohydrateDefinition = "US_TOTAL_INCLUDING_FIBRE";
+  input.ingredients[0].record!.per100g.carbohydrate = 0.7; input.ingredients[0].record!.per100g.fibre = 0.35;
+  input.ingredients = [input.ingredients[0]]; input.servings = 1;
+  assert.equal(calculate(input).total.carbohydrate, 0.32);
 });

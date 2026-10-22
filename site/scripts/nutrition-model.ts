@@ -24,16 +24,29 @@ export interface Calculation {
 }
 export const emptyValues = (): Values => Object.fromEntries(nutrients.map((n) => [n, null])) as Values;
 const valid = (n: unknown): n is number => typeof n === "number" && Number.isFinite(n) && n >= 0;
+type Fraction = { n: bigint; d: bigint };
+const fraction = (n: bigint, d: bigint): Fraction => {
+  let a = n < 0n ? -n : n, b = d;
+  while (b) { const remainder = a % b; a = b; b = remainder; }
+  return { n: n / (a || 1n), d: d / (a || 1n) };
+};
+const decimal = (value: number): Fraction => {
+  if (!valid(value)) throw Error("Invalid decimal input");
+  const [mantissa, exp = "0"] = String(value).split("e"), [whole, tail = ""] = mantissa.split(".");
+  const shift = Number(exp) - tail.length, digits = BigInt(whole + tail);
+  return shift >= 0 ? fraction(digits * 10n ** BigInt(shift), 1n) : fraction(digits, 10n ** BigInt(-shift));
+};
+const multiply = (a: Fraction, b: Fraction) => fraction(a.n * b.n, a.d * b.d);
+const add = (a: Fraction, b: Fraction) => fraction(a.n * b.d + b.n * a.d, a.d * b.d);
+const numeric = (value: Fraction) => Number(value.n) / Number(value.d);
+const roundFraction = (value: Fraction, decimals = 2): number => {
+  const scaled = value.n * 10n ** BigInt(decimals);
+  const rounded = scaled / value.d + (scaled % value.d * 2n >= value.d ? 1n : 0n);
+  return Number(`${rounded}e-${decimals}`);
+};
 export function round(value: number, decimals = 2): number {
   if (!valid(value) || !Number.isInteger(decimals) || decimals < 0 || decimals > 6) throw Error("Invalid rounding input");
-  // Round the decimal representation, without binary scaling errors at ties.
-  const [mantissa, exponentText = "0"] = String(value).split("e");
-  const [whole, fraction = ""] = mantissa.split(".");
-  const shift = Number(exponentText) + decimals - fraction.length;
-  if (shift >= 0) return value;
-  const digits = BigInt(whole + fraction), divisor = 10n ** BigInt(-shift);
-  const rounded = digits / divisor + (digits % divisor * 2n >= divisor ? 1n : 0n);
-  return Number(`${rounded}e-${decimals}`);
+  return roundFraction(decimal(value), decimals);
 }
 export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE") {
   if (subtractFibre && record.carbohydrateDefinition !== "US_TOTAL_INCLUDING_FIBRE") throw Error("Fibre would be subtracted twice or definition is unknown");
@@ -50,10 +63,14 @@ export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record
 export function calculate(input: Calculation) {
   if (!Number.isInteger(input.servings) || input.servings <= 0) throw Error("Invalid servings");
   if (!input.recipeId || !/^[a-f0-9]{64}$/.test(input.sourceHash) || !/^\d{4}-\d{2}-\d{2}$/.test(input.calculatedAt) || !input.scope || input.reviewerStatus !== "AUTOMATED ONLY" || input.carbohydrateOutput !== "AVAILABLE_EXCLUDING_FIBRE" || !input.ingredients.length) throw Error("Incomplete calculation provenance");
+  const exactRows: Record<Nutrient, Fraction | null>[] = [];
+  const exactMasses: (Fraction | null)[] = [];
   const rows = input.ingredients.map((ingredient) => {
     const issues: string[] = [];
     const fail = (message: string) => issues.push(message);
     if (ingredient.excludedReason) return { item: ingredient.item, excluded: ingredient.excludedReason, grams: null, values: emptyValues(), issues };
+    const exact = Object.fromEntries(nutrients.map((n) => [n, null])) as Record<Nutrient, Fraction | null>;
+    exactRows.push(exact);
     if (!valid(ingredient.amount)) fail("Missing/invalid amount");
     const record = ingredient.record;
     if (!record?.id || !/^https:\/\//.test(record.sourceUrl) || !record.retrievedAt || !record.licence) fail("Missing source reference");
@@ -66,26 +83,31 @@ export function calculate(input: Calculation) {
     if (record) for (const [key, value] of Object.entries(record.per100g)) {
       if (!(nutrients as readonly string[]).includes(key) || key === "netCarbohydrate" || (value !== null && !valid(value))) fail(`Invalid nutrient ${key}`);
     }
-    const grams = issues.length ? null : ingredient.amount! * factor! * ingredient.edibleFraction!;
+    const exactMass = issues.length ? null : [ingredient.amount!, factor!, ingredient.edibleFraction!].map(decimal).reduce(multiply);
+    exactMasses.push(exactMass);
+    const grams = exactMass ? numeric(exactMass) : null;
     if (grams !== null && record) {
-      for (const key of nutrients) if (key !== "netCarbohydrate" && valid(record.per100g[key])) values[key] = record.per100g[key]! * grams / 100 * ingredient.retainedFraction!;
+      const weight = multiply(multiply(exactMass!, decimal(ingredient.retainedFraction!)), { n: 1n, d: 100n });
+      for (const key of nutrients) if (key !== "netCarbohydrate" && valid(record.per100g[key])) exact[key] = multiply(decimal(record.per100g[key]!), weight);
       try {
         const carb = normalizeCarbohydrate(record);
-        values.carbohydrate = carb.available === null ? null : carb.available * grams / 100 * ingredient.retainedFraction!;
-        values.netCarbohydrate = carb.net === null ? null : carb.net * grams / 100 * ingredient.retainedFraction!;
-      } catch (error) { values.carbohydrate = null; fail(String(error)); }
+        let available = carb.available === null ? null : decimal(record.per100g.carbohydrate!);
+        if (available && record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE") { const fibre = decimal(record.per100g.fibre!); available = add(available, { n: -fibre.n, d: fibre.d }); }
+        exact.carbohydrate = available ? multiply(available, weight) : null;
+        exact.netCarbohydrate = carb.net === null ? null : exact.carbohydrate;
+      } catch (error) { exact.carbohydrate = null; fail(String(error)); }
+      for (const key of nutrients) values[key] = exact[key] ? numeric(exact[key]!) : null;
       for (const key of nutrients) if (values[key] === null) fail(`Unknown nutrient ${key}`);
     }
     return { item: ingredient.item, recordId: record?.id ?? null, grams, values, issues };
   });
-  const included = rows.filter((row) => !row.excluded);
   const total = emptyValues(), perServing = emptyValues();
   for (const key of nutrients) {
-    if (included.length && included.every((row) => row.values[key] !== null)) {
-      const sum = included.reduce((value, row) => value + row.values[key]!, 0);
-      total[key] = round(sum); perServing[key] = round(sum / input.servings);
+    if (exactRows.length && exactRows.every((row) => row[key] !== null)) {
+      const sum = exactRows.map((row) => row[key]!).reduce(add);
+      total[key] = roundFraction(sum); perServing[key] = roundFraction(multiply(sum, { n: 1n, d: BigInt(input.servings) }));
     }
   }
-  return { ...input, rows, total, perServing, edibleInputGrams: included.length && included.every((r) => r.grams !== null) ? round(included.reduce((n, r) => n + r.grams!, 0)) : null,
+  return { ...input, rows, total, perServing, edibleInputGrams: exactMasses.length && exactMasses.every((m) => m !== null) ? roundFraction((exactMasses as Fraction[]).reduce(add)) : null,
     status: nutrients.every((n) => total[n] !== null) ? "ESTIMATE WITH EVIDENCE" : "INSUFFICIENT SOURCE DATA" };
 }
