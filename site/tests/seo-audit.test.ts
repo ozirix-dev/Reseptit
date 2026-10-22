@@ -2,11 +2,20 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { auditSeo, expectedPages, inspectPage } from "../scripts/seo-audit";
+import { auditSeo, expectedPages, inspectPage, inspectDiscovery, blockedByRobots, siteBase } from "../scripts/seo-audit";
 import { siteContent } from "../src/generated/content.generated";
 import { contentManifest } from "../src/generated/routes.generated";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
+test("HTTP 200 discovery bodies must contain the expected sitemap and crawling policy", () => {
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${siteBase}/</loc></url></urlset>`;
+  const robots = `User-agent: *\nSitemap: ${siteBase}/sitemap.xml\n`;
+  assert.deepEqual(inspectDiscovery(sitemap, robots, ["/"]), []);
+  for (const wrong of ["<html>not XML</html>", "<urlset></urlset>", sitemap.replace("</urlset>", ""), sitemap.replace("</url>", "</broken>"), sitemap.replace("</urlset>", `<url><loc>${siteBase}/</loc></url></urlset>`)]) assert.ok(inspectDiscovery(wrong, robots, ["/"]).some((f) => f.code === "SITEMAP"));
+  for (const wrong of ["", robots + "Disallow: /\n", robots + "Disallow: /Reseptit/\n", robots + "Disallow: /Reseptit/*\n", robots + "Disallow: /*\n"]) assert.ok(inspectDiscovery(sitemap, wrong, ["/"]).some((f) => f.code === "ROBOTS"));
+  assert.equal(blockedByRobots("User-agent: *\nDisallow: /\nAllow: /Reseptit/", "/Reseptit/test/", "googlebot"), false);
+  assert.equal(blockedByRobots("User-agent: *\nAllow: /\nUser-agent: Googlebot\nDisallow: /Reseptit/*", "/Reseptit/test/", "googlebot"), true);
+});
 test("all generated routes, images, sitemap and metadata match published source", async () => {
   const report = await auditSeo(dist, siteContent.recipes, Object.keys(contentManifest));
   assert.deepEqual(report.findings, []);

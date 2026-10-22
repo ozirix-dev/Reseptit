@@ -54,7 +54,7 @@ ominaisuuden ja näkyvät tilat, ei tilin henkilötietoja.
 `npm ci`, `npm test`, `test:translations`, `test:image`, `build`,
 `test:static`, `test:browser`, `npm audit --audit-level=low`, `audit:seo`
 ja `audit:seo:public` läpäisivät. Selaintestit ajettiin asennetulla Bravella.
-Staattisia testejä on 13, joista 3 uusia SEO-regressioita.
+Staattisia testejä on 14, joista 4 uusia SEO-regressioita.
 Build: JS 363,97 kB / gzip 116,46 kB; CSS 9,37 / 2,63 kB, ennallaan.
 Ei uusia riippuvuuksia eikä haavoittuvuuksia. Markdown-lint ja diff-check
 suoritetaan ennen commitia; GitHubin ajantasainen CI/review kuuluu PR:lle.
@@ -66,3 +66,14 @@ erillisen luvan; sen jälkeen odotetaan oikeaa indeksointi- ja tulosdataa.
 Ei mergeä, tuotantojulkaisua, seurantaskriptejä eikä tiliasetusten muutoksia.
 Työpaketit B ja C lähtevät samasta mainista. Niiden package.json-muutokset
 on sovitettava yhdistetyssä tarkistuksessa ennen myöhempiä mergejä.
+
+## Katselmointikorjaukset
+
+Codex havaitsi kolme P2-puutetta: julkisen sitemap/robots-vastauksen sisältöä
+ei validoitu, rikkinäinen XML-sulkurakenne saattoi läpäistä ja robotsin
+wildcard-estot jäivät tunnistamatta. Julkinen ja paikallinen tila käyttävät
+nyt samaa kokonaisen tuetun XML-rakenteen ja URL-inventaarion tarkistusta.
+Robots-tulkinta huomioi user-agent-ryhmät, wildcardit, rivin lopun ja
+pisimmän Allow/Disallow-säännön. Regressiot ja uusi 480 URL:n julkinen ajo
+läpäisivät. Tuntemattomat sitemap-XML-laajennukset hylätään; tämä ei ole
+yleiskäyttöinen XML-parseri. PR:n viimeinen CI/review tarkistetaan erikseen.

@@ -89,18 +89,52 @@ async function indexFiles(root: string, relative = ""): Promise<string[]> {
   return result;
 }
 
+export function blockedByRobots(robots: string, pathname: string, agent: string): boolean {
+  const groups: { agents: string[]; rules: { allow: boolean; pattern: string }[] }[] = [];
+  let group: typeof groups[number] | undefined;
+  for (const line of robots.split(/\r?\n/)) {
+    const match = /^\s*([\w-]+)\s*:\s*(.*?)\s*$/.exec(line.split("#")[0]);
+    if (!match) continue;
+    const key = match[1].toLowerCase(), value = match[2];
+    if (key === "user-agent") {
+      if (!group || group.rules.length) { group = { agents: [], rules: [] }; groups.push(group); }
+      group.agents.push(value.toLowerCase());
+    } else if (group && ["allow", "disallow"].includes(key)) group.rules.push({ allow: key === "allow", pattern: value });
+  }
+  const specific = groups.filter((g) => g.agents.includes(agent));
+  const selected = specific.length ? specific : groups.filter((g) => g.agents.includes("*"));
+  const matches = selected.flatMap((g) => g.rules).filter((r) => r.pattern).filter((rule) => {
+    const end = rule.pattern.endsWith("$");
+    const pattern = (end ? rule.pattern.slice(0, -1) : rule.pattern).split("*").map((s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join(".*");
+    return new RegExp(`^${pattern}${end ? "$" : ""}`).test(pathname);
+  }).sort((a, b) => b.pattern.replaceAll("*", "").length - a.pattern.replaceAll("*", "").length || Number(b.allow) - Number(a.allow));
+  return !!matches.length && !matches[0].allow;
+}
+
+export function inspectDiscovery(sitemap: string, robots: string, routes: string[]): SeoFinding[] {
+  const issues: SeoFinding[] = [];
+  const urls = [...sitemap.matchAll(/<loc>([^<]*)<\/loc>/g)].map((m) => decodeHtml(m[1]));
+  // Validate the complete, deliberately small XML grammar emitted by our generator.
+  // Unknown XML extensions fail closed instead of pretending to be supported.
+  const document = /^\s*<\?xml version="1\.0" encoding="UTF-8"\?>\s*<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">([\s\S]*)<\/urlset>\s*$/.exec(sitemap);
+  const body = document?.[1].replace(/<url>\s*<loc>(?:[^<&]|&amp;|&lt;|&gt;|&quot;|&apos;)*<\/loc>\s*<\/url>/g, "").trim();
+  if (!document || body !== "" || !isDeepStrictEqual([...urls].sort(), routes.map((r) => siteBase + r).sort())) issues.push({ route: "/sitemap.xml", code: "SITEMAP", detail: "Malformed/unsupported sitemap XML or missing, extra or duplicate URLs" });
+  const blocked = routes.some((r) => ["*", "googlebot", "googlebot-image"].some((agent) => blockedByRobots(robots, "/Reseptit" + r, agent)));
+  if (!robots.includes(`Sitemap: ${siteBase}/sitemap.xml`) || blocked) issues.push({ route: "/robots.txt", code: "ROBOTS", detail: "Project robots blocks published paths or lacks sitemap reference" });
+  return issues;
+}
+
 export async function auditSeo(dist: string, recipes: RecipeEntry[], manifestRoutes: string[]) {
   const pages = expectedPages(recipes), findings: SeoFinding[] = [], images = new Set<string>();
   const add = (code: string, detail: string, route = "/") => findings.push({ route, code, detail });
-  const routes = pages.map((p) => p.route), expectedUrls = routes.map((r) => siteBase + r);
+  const routes = pages.map((p) => p.route);
   if (new Set(routes).size !== routes.length) add("DUPLICATE_ROUTE", "Duplicate source URL");
   if (!isDeepStrictEqual([...manifestRoutes].sort(), [...routes].sort())) add("MANIFEST", "Route manifest differs from published inventory");
   if (!isDeepStrictEqual((await indexFiles(dist)).sort(), [...routes].sort())) add("HTML_ROUTES", "Missing or extra prerendered route");
   const sitemap = await readFile(path.join(dist, "sitemap.xml"), "utf8");
   const urls = [...sitemap.matchAll(/<loc>([^<]*)<\/loc>/g)].map((m) => decodeHtml(m[1]));
-  if (!isDeepStrictEqual([...urls].sort(), expectedUrls.sort())) add("SITEMAP", "Sitemap has missing, extra or duplicate URLs");
   const robots = await readFile(path.join(dist, "robots.txt"), "utf8");
-  if (!robots.includes(`Sitemap: ${siteBase}/sitemap.xml`) || /^Disallow:\s*\/(?:Reseptit\/?)?\s*$/im.test(robots)) add("ROBOTS", "Project robots blocks site or lacks sitemap reference");
+  findings.push(...inspectDiscovery(sitemap, robots, routes));
   for (const page of pages) {
     let html: string;
     try { html = await readFile(path.join(dist, page.route.slice(1), "index.html"), "utf8"); }
