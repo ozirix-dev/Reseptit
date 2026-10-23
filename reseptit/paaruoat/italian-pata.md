@@ -5,6 +5,7 @@ url_slug: italian-pata
 category: paaruoka
 language: fi
 servings: 4
+time_total_min: 60
 main_ingredient:
   - jauheliha
   - kesäkurpitsa
@@ -90,4 +91,5 @@ Uunissa kypsyvässä padassa yhdistyvät maustettu jauheliha, kesäkurpitsa, sui
 
 ## Muistiinpanot
 
+- Arvioitu kokonaisaika on noin 60 minuuttia: valmistelu, ruskistus ja vuoan kokoaminen noin 25 minuuttia, paisto 20 minuuttia ja vetäytyminen vähintään 15 minuuttia. Uuni lämpenee valmistelun aikana. Aika on työvaiheisiin perustuva arvio, ei kellotettu koekeittiötulos; salaatin valmistus ei sisälly siihen.
 - Ravintoarvot ovat suuntaa-antavia arvioita yhtä annosta kohti, kun reseptistä tulee neljä annosta.

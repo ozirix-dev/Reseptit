@@ -5,6 +5,7 @@ url_slug: italian-pata
 category: paaruoka
 language: en
 servings: 4
+time_total_min: 60
 main_ingredient:
   - jauheliha
   - kesäkurpitsa
@@ -85,4 +86,5 @@ Seasoned minced beef, courgette, pointed pepper and mozzarella are baked togethe
 
 ## Notes
 
+- Estimated total time is about 60 minutes: allow around 25 minutes for preparation, browning and assembling the dish, 20 minutes for baking and at least 15 minutes for resting. Preheat the oven during preparation. This estimate is based on the steps, not a timed kitchen trial; preparing the salad is not included.
 - Nutrition values are estimates per serving, based on four servings.

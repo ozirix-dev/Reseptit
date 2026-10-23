@@ -2,8 +2,63 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { siteContent } from "../src/generated/content.generated";
 import { emptyRecipeFilters, filterRecipes, normalizeSearchText, parseRecipeFilters, recipeFiltersToSearch } from "../src/features/recipes/recipe-search";
+import { recipeFacets } from "../src/content/recipe-facets";
 
 const finnishRecipes = siteContent.recipes.filter((recipe) => recipe.locale === "fi");
+
+test("browse facets derive from source metadata and remain identical across translations", () => {
+  assert.deepEqual(recipeFacets(["kananmuna"], []), { cuisine: null, ingredientGroups: ["eggs"] });
+  assert.deepEqual(recipeFacets(["broileri", "kikherne"], ["intialainen"]), { cuisine: "indian", ingredientGroups: ["chicken", "legumes"] });
+  for (const recipe of siteContent.recipes) {
+    const source = finnishRecipes.find(item => item.recipeId === recipe.recipeId)!;
+    assert.equal(recipe.cuisine, source.cuisine);
+    assert.deepEqual(recipe.ingredientGroups, source.ingredientGroups);
+  }
+});
+
+test("egg facets match an individual metadata value among other ingredients in every locale", () => {
+  assert.deepEqual(recipeFacets(["kaura", " MUNA ", "kerma"], []).ingredientGroups, ["eggs"]);
+  assert.deepEqual(recipeFacets(["muna", "muna"], []).ingredientGroups, ["eggs"]);
+  assert.deepEqual(recipeFacets(["munakoiso"], []).ingredientGroups, ["vegetables"]);
+  // Exercise the metadata with localized fixtures; no draft needs publishing.
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const recipe = { ...siteContent.recipes.find(recipe => recipe.locale === locale)!, ...recipeFacets(["kaura", "muna", "kerma"], []) };
+    assert.ok(recipe.ingredientGroups?.includes("eggs"), recipe.locale);
+    assert.equal(filterRecipes([recipe], { ...emptyRecipeFilters, ingredient: "eggs" }, recipe.locale).length, 1);
+  }
+});
+
+test("browse groups cover observed Finnish inflections without substring false positives", () => {
+  for (const value of ["nakki", "nakit", "makkara", "poronkäristys", "ankka", "porsaan lapaa"]) {
+    assert.deepEqual(recipeFacets([value], []).ingredientGroups, ["meat"], value);
+  }
+  for (const value of ["sieni", "sienet", "kasvikset", "kesakurpitsa", "kesäkurpitsa"]) {
+    assert.deepEqual(recipeFacets([value], []).ingredientGroups, ["vegetables"], value);
+  }
+  assert.deepEqual(recipeFacets(["kananmuna", "munakoiso", "riisi", "kerma", "kanaliemi"], ["constructor"]).ingredientGroups, ["vegetables", "eggs"]);
+  assert.equal(recipeFacets([], ["constructor"]).cuisine, null);
+  for (const recipeId of ["nakkikeitto-kukkakaalilla", "nakkikastike-kukkakaalimuusi"]) {
+    const versions = siteContent.recipes.filter(recipe => recipe.recipeId === recipeId);
+    assert.equal(versions.length, 4, recipeId);
+    for (const recipe of versions) assert.equal(filterRecipes([recipe], { ...emptyRecipeFilters, ingredient: "meat" }, recipe.locale).length, 1, `${recipeId}/${recipe.locale}`);
+  }
+});
+
+test("time, cuisine and main ingredient filters combine and survive URL round trips", () => {
+  const filters = { ...emptyRecipeFilters, maxTime: 60, cuisine: "thai", ingredient: "chicken" };
+  assert.deepEqual(parseRecipeFilters(recipeFiltersToSearch(filters), ["all"]), filters);
+  assert.deepEqual(parseRecipeFilters("?time=-5&cuisine=bad&ingredient=bad", ["all"]), emptyRecipeFilters);
+  const results = filterRecipes(finnishRecipes, filters, "fi");
+  assert.ok(results.length > 0);
+  assert.ok(results.every(recipe => recipe.timeTotalMin !== null && recipe.timeTotalMin <= 60 && recipe.cuisine === "thai" && recipe.ingredientGroups?.includes("chicken")));
+  assert.equal(filterRecipes([{ ...results[0], timeTotalMin: null }], filters, "fi").length, 0);
+  const thai = siteContent.recipes.filter(recipe => recipe.locale === "th");
+  assert.deepEqual(filterRecipes(thai, filters, "th").map(recipe => recipe.recipeId).sort(), results.map(recipe => recipe.recipeId).sort());
+  for (const buns of siteContent.recipes.filter(recipe => recipe.recipeId === "keto-kauralesesampylat")) {
+    assert.equal(buns.timeTotalMin, null, "45-minute work and baking estimate excludes unmeasured required cooling");
+    assert.match(buns.notesHtml, /45/);
+  }
+});
 
 test("search normalization folds Finnish and Swedish diacritics while preserving Thai tone marks", () => {
   assert.equal(normalizeSearchText("  ÄÄKKÖSET   LOHI ", "fi"), "aakkoset lohi");

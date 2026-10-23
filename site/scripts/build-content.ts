@@ -1,8 +1,9 @@
 import { createHash } from "node:crypto";
+import { recipeFacets } from "../src/content/recipe-facets";
 import { contentForRoute } from "../src/content/route-data";
 import { mkdir, readdir, readFile, writeFile, rm } from "node:fs/promises";
 import path from "node:path";
-import { parseMarkdown, renderSafeMarkdown } from "../src/content/markdown";
+import { parseMarkdown, renderSafeMarkdown, renderInstructionSteps } from "../src/content/markdown";
 import { assertUniqueRecipes } from "../src/content/recipe-validation";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { rebuildPublishedImages } from "../src/content/published-images";
@@ -75,6 +76,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     ...await markdownFiles(path.join(repoDir, "kaannokset")),
   ];
   const recipes: RecipeEntry[] = [];
+  const sourceFacets = new Map<string, ReturnType<typeof recipeFacets>>();
   const publishedImagePaths = new Set<string>();
   for (const filePath of paths) {
     const parsed = parseMarkdown(await readFile(filePath, "utf8"));
@@ -82,6 +84,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     if (parsed.data.status === "draft") continue;
     if (parsed.data.status !== "published") throw new Error(`Recipe status must be draft or published: ${filePath}`);
     const data = recipeFrontmatterSchema.parse(parsed.data);
+    if (data.language === "fi") sourceFacets.set(data.recipe_id, recipeFacets(data.main_ingredient ?? [], data.tags));
     const imagePaths = data.image
       ? [data.image.src, ...(data.image.srcset ?? []).map((item) => item.src)]
       : [];
@@ -96,6 +99,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       title: data.title, category: data.category, dietClass: data.diet_class ?? null, routePath: routeForRecipe(data.language, data.url_slug),
       description: recipeDescription(parsed.content, descriptionSection, data.language, data.ingredients), ingredients: data.ingredients,
       instructionsHtml: await renderSafeMarkdown(instructions),
+      instructionStepsHtml: await renderInstructionSteps(instructions),
       instructionsText: instructionSteps.length ? instructionSteps : instructions.split(/\n\s*\n/).filter(Boolean),
       notesHtml: await renderSafeMarkdown(notes), servings: data.servings, timeTotalMin: data.time_total_min ?? null,
       difficulty: data.difficulty ?? null, tags: data.tags,
@@ -112,6 +116,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     });
   }
   assertUniqueRecipes(recipes);
+  for (const recipe of recipes) Object.assign(recipe, sourceFacets.get(recipe.recipeId) ?? { cuisine: null, ingredientGroups: [] });
   const images = await rebuildPublishedImages(imageSourceDir, path.join(siteDir, "public"), [...publishedImagePaths]);
   const byPath = new Map(images.images.map((image) => [image.path, image]));
   for (const recipe of recipes) {

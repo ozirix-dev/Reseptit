@@ -75,6 +75,10 @@ ingredients:
     unit: ""
     item: fresh coriander
     note: for serving
+  - amount: null
+    unit: ""
+    item: oil
+    note: a splash for browning the chicken
 source_language: fi
 source_recipe: reseptit/paaruoat/butter-chicken.md
 translation_of: butter-chicken
@@ -94,9 +98,9 @@ Softly seasoned butter chicken is cooked in yogurt marinade and a rich tomato-cr
 2. Brown the chicken in a pan in batches in a splash of oil. Set aside.
 3. Melt the butter in a pan. Saute the onion until soft. Add garlic, ginger and paprika; fry for a minute.
 4. Add crushed tomatoes and simmer for 10 minutes. Purée the sauce if desired.
-5. Mix in the cream and honey. Add the chicken and simmer until cooked for 10–15 minutes.
-6. Season with final salt and serve finished with coriander.
+5. Stir in the cream and add the honey if desired. Add the chicken and simmer for 10–15 minutes, until cooked through.
+6. Season with the remaining salt and serve garnished with coriander.
 
 ## Notes
 
-- Garam Masala's saltiness and hotness vary from brand to brand.
+- The salt content and heat of garam masala vary between brands.

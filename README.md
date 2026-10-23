@@ -49,6 +49,14 @@ Metatietojen tarkka sopimus on [schema.ts](site/src/content/schema.ts).
 Kuvien build validoi polut ja tiedostot ja käsittelee vain julkaistun sisällön kuvat.
 Katso [responsiivisten kuvien ylläpito](docs/responsive-images.md).
 
+Hakemiston raaka-aineryhmät johdetaan suomenkielisistä `main_ingredient`-arvoista
+ja aluekeittiöt tageista. Tunnistetut arvot ovat tiedostossa
+[recipe-facets.ts](site/src/content/recipe-facets.ts).
+Kun lisäät uuden sanamuodon olemassa olevaan ryhmään, päivitä sen arvolista
+ja hakusuodattimen regressiotesti. Ryhmät eivät kata kaikkia aineksia:
+esimerkiksi riisi, jauhot ja kerma eivät kuulu nykyisiin seitsemään ryhmään.
+Luokittelua ei päätellä kuvasta tai ravintoarvoista.
+
 ## Käännöksen lisääminen
 
 Kopioi rakenne saman luokan kielikansioon. Säilytä `recipe_id`, määrät,

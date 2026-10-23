@@ -3,8 +3,41 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 import { recipeUi } from "../src/features/recipes/recipe-i18n";
+import { toolUi } from "../src/features/recipes/recipe-tools";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
+
+test("recipe actions progressively enhance readable static pages in all four languages", async () => {
+  const { siteContent } = await import("../src/generated/content.generated");
+  for (const recipe of siteContent.recipes.filter(recipe => recipe.recipeId === "kermainen-lohipata")) {
+    const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+    const root = html.slice(html.indexOf('<div id="root">'));
+    assert.ok(root.indexOf('<h1>') < root.indexOf('class="recipe-image"'));
+    assert.ok(root.includes(toolUi[recipe.locale].jump));
+    assert.ok(root.includes(toolUi[recipe.locale].nutrition));
+    assert.ok(root.includes(toolUi[recipe.locale].about));
+    assert.ok(root.includes('id="recipe-instructions"'));
+    assert.doesNotMatch(root, /<button|type="checkbox"/);
+    assert.ok(recipe.instructionStepsHtml?.length === recipe.instructionsText.length);
+  }
+  for (const recipe of siteContent.recipes.filter(recipe => recipe.recipeId === "keto-kauralesesampylat")) {
+    const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+    const schema = JSON.parse(html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/)![1]);
+    assert.equal(schema.totalTime, undefined, "unmeasured cooling cannot be excluded from schema total time");
+  }
+});
+
+test("Italian bake estimated total time reaches visible notes and Recipe JSON-LD in every locale", async () => {
+  const { siteContent } = await import("../src/generated/content.generated");
+  const recipes = siteContent.recipes.filter((recipe) => recipe.recipeId === "italian-pata");
+  assert.equal(recipes.length, 4);
+  for (const recipe of recipes) {
+    const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+    const schema = JSON.parse(html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/)![1]);
+    assert.equal(schema.totalTime, "PT60M");
+    assert.match(html, /Arvioitu kokonaisaika|Estimated total time|Uppskattad totaltid|เวลารวมโดยประมาณ/);
+  }
+});
 
 test("all static index descriptions use their locale text before JavaScript", async () => {
   for (const [locale, route] of [["fi", ""], ["en", "en/recipes"], ["sv", "sv/recept"], ["th", "th/recipes"]] as const) {
@@ -46,7 +79,7 @@ test("prerendered recipe HTML includes useful content before JavaScript", async 
   assert.match(root[1], /<h1>Kermainen lohipata<\/h1>/);
   assert.match(root[1], /<h2 id="recipe-ingredients-title">Ainekset<\/h2>/);
   assert.match(root[1], /lohifilee/);
-  assert.match(root[1], /<h2>Valmistus<\/h2>/);
+  assert.match(root[1], /<h2 id="recipe-instructions" tabindex="-1">Valmistus<\/h2>/);
   assert.match(root[1], /<h2>Ravintoarvot annosta kohti<\/h2>/);
   assert.match(html, /<html lang="fi">/);
   assert.match(html, /rel="canonical" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kermainen-lohipata\/"/);
@@ -88,7 +121,7 @@ test("translated macaroni bake pages have localized content, SEO metadata and ma
     assert.ok(root, `${translation.locale} page has prerendered content`);
     assert.match(html, new RegExp(`<html lang="${translation.locale}">`));
     assert.ok(root[1].includes(`<h1>${translation.title}</h1>`));
-    assert.ok(root[1].includes(`<h2>${translation.instructionHeading}</h2>`));
+    assert.ok(root[1].includes(`<h2 id="recipe-instructions" tabindex="-1">${translation.instructionHeading}</h2>`));
     assert.match(root[1], /class="recipe-languages"/);
     assert.match(root[1], /jauheliha-makaronilaatikko\.webp/);
     assert.ok(html.includes(`rel="canonical" href="https://ozirix-dev.github.io/Reseptit${translation.route}"`));

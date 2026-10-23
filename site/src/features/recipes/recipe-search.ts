@@ -1,4 +1,5 @@
 import type { RecipeLocale } from "@/types/content";
+import { cuisines, ingredientGroups } from "@/content/recipe-facets";
 
 import type { RecipeSummary } from "@/content/route-data";
 
@@ -9,6 +10,9 @@ export interface RecipeFilters {
   query: string;
   category: RecipeCategory;
   diet: RecipeDietFilter;
+  maxTime?: number;
+  cuisine?: string;
+  ingredient?: string;
 }
 
 export const emptyRecipeFilters: RecipeFilters = { query: "", category: "all", diet: "all" };
@@ -37,7 +41,13 @@ export function parseRecipeFilters(search: string, availableCategories: RecipeCa
   const diet: RecipeDietFilter = (requestedDiet === "keto" || requestedDiet === "vhh") && availableDiets.includes(requestedDiet)
     ? requestedDiet
     : "all";
-  return { query: (params.get("q") ?? "").replace(/\s+/gu, " ").trim(), category, diet };
+  const maxTime = Number(params.get("time"));
+  const cuisine = params.get("cuisine");
+  const ingredient = params.get("ingredient");
+  return { query: (params.get("q") ?? "").replace(/\s+/gu, " ").trim(), category, diet,
+    ...([30, 60, 90].includes(maxTime) ? { maxTime } : {}),
+    ...(cuisines.includes(cuisine as typeof cuisines[number]) ? { cuisine: cuisine! } : {}),
+    ...(ingredientGroups.includes(ingredient as typeof ingredientGroups[number]) ? { ingredient: ingredient! } : {}) };
 }
 
 export function recipeFiltersToSearch(filters: RecipeFilters): string {
@@ -46,6 +56,9 @@ export function recipeFiltersToSearch(filters: RecipeFilters): string {
   if (query) params.set("q", query);
   if (filters.category !== "all") params.set("category", filters.category);
   if (filters.diet !== "all") params.set("diet", filters.diet);
+  if (filters.maxTime) params.set("time", String(filters.maxTime));
+  if (filters.cuisine) params.set("cuisine", filters.cuisine);
+  if (filters.ingredient) params.set("ingredient", filters.ingredient);
   const search = params.toString();
   return search ? `?${search}` : "";
 }
@@ -53,6 +66,9 @@ export function recipeFiltersToSearch(filters: RecipeFilters): string {
 export function filterRecipes<T extends RecipeSummary>(recipes: T[], filters: RecipeFilters, locale: RecipeLocale): T[] {
   const terms = normalizeSearchText(filters.query, locale).split(" ").filter(Boolean);
   return recipes.filter((recipe) => {
+    if (filters.maxTime && (recipe.timeTotalMin === null || recipe.timeTotalMin > filters.maxTime)) return false;
+    if (filters.cuisine && recipe.cuisine !== filters.cuisine) return false;
+    if (filters.ingredient && !recipe.ingredientGroups?.includes(filters.ingredient)) return false;
     if (filters.category !== "all" && recipe.category !== filters.category) return false;
     if (filters.diet === "keto" && recipe.dietClass !== "keto") return false;
     if (filters.diet === "vhh" && !recipe.dietClass) return false;

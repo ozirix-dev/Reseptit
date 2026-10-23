@@ -15,7 +15,7 @@ main_ingredient:
   - mantelijauho
 cooking_method:
   - uuni
-time_total_min: 45
+time_total_min: null
 difficulty: easy
 tags:
   - keto
@@ -83,11 +83,12 @@ Psyllium binds the soft dough, which rests before shaping.
 3. Puree the cottage cheese and eggs until smooth with a stick blender or in a blender. Mix in the cream and cooled melted butter.
 4. Pour the wet ingredients into the dry ingredients mixture and mix until smooth. Let the dough rest and swell for 10 minutes.
 5. Divide the dough into eight parts and shape into rolls with wet hands. If you want, add sesame seeds on top.
-6. Bake on the medium of the oven for 20–25 minutes, until the surface has acquired color and the rolls feel cooked.
-7. Allow to cool completely before slicing, so the psyllium-bound insides have time to settle.
+6. Bake on the middle shelf for 20–25 minutes, until golden and cooked through.
+7. Allow to cool completely before slicing, so the crumb has time to set.
 
 ## Notes
 
-- The estimate is about 3.5 g of net carbohydrates, 9 g of protein and 12 g of fat per roll. The estimate is calculated and varies especially depending on the brand of oat bran, almond flour and cottage cheese; check the information on the product packaging.
-- Oat bran is not carbohydrate-free, so the recipe only contains a small amount of oats. Dose the rolls as part of your daily carbohydrate intake.
+- The estimate is about 3.5 g of net carbohydrates, 9 g of protein and 12 g of fat per roll. These approximate values vary with the brands of oat bran, almond flour and cottage cheese; check the information on the product packaging.
+- Oat bran is not carbohydrate-free, so the recipe only contains a small amount of oats. Include the rolls when counting your daily carbohydrate intake.
 - The dough is soft and sticky due to the swelling of the psyllium. If the mixture is still too loose to shape after 10 minutes, add psyllium a teaspoon at a time and let it swell for a few minutes.
+- Preparation, resting the dough and baking take about 45 minutes. The rolls must then cool completely before slicing. Cooling time has not been measured, so no total time is given.

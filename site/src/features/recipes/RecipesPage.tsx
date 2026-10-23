@@ -4,6 +4,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContent } from "@/lib/content";
 import type { RecipeLocale } from "@/types/content";
 import { recipeUi } from "./recipe-i18n";
+import { toolUi } from "./recipe-tools";
+import { cuisines, ingredientGroups } from "@/content/recipe-facets";
 import { emptyRecipeFilters, filterRecipes, parseRecipeFilters, recipeFiltersToSearch, type RecipeCategory, type RecipeDietFilter, type RecipeFilters } from "./recipe-search";
 
 import type { RecipeSummary } from "@/content/route-data";
@@ -13,6 +15,7 @@ const categories: RecipeSummary["category"][] = ["alkuruoka", "paaruoka", "jalki
 export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const { recipes } = useContent();
   const labels = recipeUi[locale];
+  const tools = toolUi[locale];
   const location = useLocation();
   const navigate = useNavigate();
   const [filters, setFilters] = useState<RecipeFilters>(emptyRecipeFilters);
@@ -44,7 +47,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   }
 
   const filteredRecipes = filterRecipes(recipes, filters, locale);
-  const hasActiveFilters = filters.query !== "" || filters.category !== "all" || filters.diet !== "all";
+  const hasActiveFilters = filters.query !== "" || filters.category !== "all" || filters.diet !== "all" || !!filters.maxTime || !!filters.cuisine || !!filters.ingredient;
 
   return <section className="page-section recipe-index"><div className="container recipe-index__container">
     <div className="page-intro"><p className="eyebrow">{labels.eyebrow}</p><h1>{labels.indexTitle}</h1><p className="page-intro__description">{labels.intro}</p></div>
@@ -71,13 +74,22 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
           <option value="vhh">{labels.vhh}</option>
         </select>
       </div> : null}
+      <details className="recipe-more-filters"><summary>{tools.moreFilters}</summary><div>
+      <div className="recipe-filter-select"><label htmlFor="recipe-time">{tools.time}</label><select id="recipe-time" value={filters.maxTime ?? ""} onChange={(event) => updateFilters({ maxTime: Number(event.currentTarget.value) || undefined })}><option value="">{tools.anyTime}</option>{[30, 60, 90].map(time => <option key={time} value={time}>{time} {labels.minutes}</option>)}</select></div>
+      <div className="recipe-filter-select"><label htmlFor="recipe-cuisine">{tools.cuisine}</label><select id="recipe-cuisine" value={filters.cuisine ?? ""} onChange={(event) => updateFilters({ cuisine: event.currentTarget.value || undefined })}><option value="">{tools.anyCuisine}</option>{cuisines.filter(cuisine => recipes.some(recipe => recipe.cuisine === cuisine)).map(cuisine => <option key={cuisine} value={cuisine}>{tools.cuisines[cuisine]}</option>)}</select></div>
+      <div className="recipe-filter-select"><label htmlFor="recipe-ingredient">{tools.ingredient}</label><select id="recipe-ingredient" value={filters.ingredient ?? ""} onChange={(event) => updateFilters({ ingredient: event.currentTarget.value || undefined })}><option value="">{tools.anyIngredient}</option>{ingredientGroups.filter(group => recipes.some(recipe => recipe.ingredientGroups?.includes(group))).map(group => <option key={group} value={group}>{tools.ingredients[group]}</option>)}</select></div>
+      </div></details>
       {hasActiveFilters && filteredRecipes.length > 0 ? <button type="button" className="recipe-filter-reset" onClick={resetFilters}>{labels.resetFilters}</button> : null}
-    </form> : <div className="recipe-filters recipe-filters--placeholder" aria-hidden="true">{[labels.search, labels.categoryFilter, ...(hasDietClasses ? [labels.dietFilter] : [])].map((label) => <div className="recipe-filter-select" key={label}><span className="placeholder-label">{label}</span><span className="placeholder-input" /></div>)}</div>}
+    </form> : <div className="recipe-filters recipe-filters--placeholder" aria-hidden="true">{[labels.search, labels.categoryFilter, ...(hasDietClasses ? [labels.dietFilter] : [])].map((label) => <div className="recipe-filter-select" key={label}><span className="placeholder-label">{label}</span><span className="placeholder-input" /></div>)}<details className="recipe-more-filters"><summary>{tools.moreFilters}</summary></details></div>}
+    {hydrated && filters.diet !== "all" ? <p className="recipe-disclosure">{tools.diet}</p> : null}
     {hydrated ? <p className="recipe-result-count" role="status" aria-live="polite" aria-atomic="true">{labels.results(filteredRecipes.length)}</p> : <p className="recipe-result-count recipe-result-placeholder" aria-hidden="true">{labels.results(recipes.length)}</p>}
     {hydrated && hasActiveFilters ? <p className="recipe-active-filters">{[
       filters.query ? `“${filters.query}”` : null,
       filters.category !== "all" ? labels.category[filters.category] : null,
       filters.diet === "keto" ? labels.keto : filters.diet === "vhh" ? labels.vhh : null,
+      filters.maxTime ? `${tools.time}: ${filters.maxTime} ${labels.minutes}` : null,
+      filters.cuisine ? tools.cuisines[filters.cuisine as keyof typeof tools.cuisines] : null,
+      filters.ingredient ? tools.ingredients[filters.ingredient as keyof typeof tools.ingredients] : null,
     ].filter(Boolean).join(" · ")}</p> : null}
     {!hydrated || filteredRecipes.length ? <div className="recipe-card-grid">{(hydrated ? filteredRecipes : recipes).map((recipe, index) => <RecipeCard key={`${recipe.recipeId}-${recipe.locale}`} recipe={recipe} index={index} locale={locale} />)}</div>
       : <div className="recipe-empty-state"><p>{labels.noResults}</p><button type="button" className="recipe-filter-reset" onClick={resetFilters}>{labels.resetFilters}</button></div>}
