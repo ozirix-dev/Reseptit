@@ -10,7 +10,7 @@ import { emptyRecipeFilters, filterRecipes, parseRecipeFilters, recipeFiltersToS
 
 import type { RecipeSummary } from "@/content/route-data";
 
-const categories: RecipeSummary["category"][] = ["alkuruoka", "paaruoka", "jalkiruoka", "leivonnainen"];
+const categories: RecipeSummary["category"][] = ["aamupala", "alkuruoka", "paaruoka", "jalkiruoka", "leivonnainen"];
 
 export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const { recipes } = useContent();

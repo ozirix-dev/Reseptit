@@ -33,7 +33,7 @@ test("inventory is dynamic and duplicate URLs are rejected", async () => {
   assert.ok(report.findings.some((f) => f.code === "DUPLICATE_ROUTE"));
 });
 test("metadata mutations cannot silently pass", async () => {
-  const page = expectedPages(siteContent.recipes).find((p) => p.recipe)!;
+  const page = expectedPages(siteContent.recipes).find((p) => p.recipe?.recipeId === "som-tam-vhh-kurkkuna" && p.recipe.locale === "fi")!;
   const html = await readFile(path.join(dist, page.route.slice(1), "index.html"), "utf8");
   const cases: [string, string][] = [
     [html.replace(/rel="canonical"/g, 'rel="missing"'), "CANONICAL"],

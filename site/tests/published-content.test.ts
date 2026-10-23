@@ -21,6 +21,7 @@ async function markdownFiles(dir: string): Promise<string[]> {
 test("site content contains every published recipe and no drafts", async () => {
   const repoDir = path.resolve(import.meta.dirname, "../..");
   const candidates = [
+    ...await markdownFiles(path.join(repoDir, "reseptit", "aamupalat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "alkuruoat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "paaruoat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "jalkiruoat")),
@@ -62,6 +63,20 @@ test("the ten additional Thai recipes are published in Finnish with their image 
     const relativeImagePath = recipe.image.src.split("/kuvat/").at(-1);
     assert.ok(relativeImagePath);
     assert.ok((await readFile(path.join(repoDir, "kuvat", relativeImagePath))).byteLength > 0);
+  }
+});
+
+test("the new Finnish breakfast and dessert collections each contain ten published recipes with images", () => {
+  const breakfast = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && recipe.category === "aamupala");
+  const desserts = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && recipe.category === "jalkiruoka" && [
+    "vhh-brita-kakku", "keto-mutakakku", "vhh-mokkapalat", "keto-suklaakeksit", "vhh-omenapiirakka",
+    "vhh-juustokakku", "vhh-raparperipiirakka", "vhh-korvapuustit", "vhh-mansikkakakku", "vhh-letut",
+  ].includes(recipe.recipeId));
+  assert.equal(breakfast.length, 10);
+  assert.equal(desserts.length, 10);
+  for (const recipe of [...breakfast, ...desserts]) {
+    assert.ok(recipe.image, `${recipe.recipeId} has an image`);
+    assert.equal(recipe.nutrition.carbsNetG, null, "unverified nutrition values are not invented");
   }
 });
 

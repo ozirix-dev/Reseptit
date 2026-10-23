@@ -9,7 +9,7 @@ export const recipeFrontmatterSchema = z.object({
   title: z.string().min(1),
   recipe_id: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
   url_slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
-  category: z.enum(["alkuruoka", "paaruoka", "jalkiruoka", "leivonnainen"]),
+  category: z.enum(["alkuruoka", "paaruoka", "jalkiruoka", "leivonnainen", "aamupala"]),
   language: localeSchema,
   status: z.enum(["draft", "published"]),
   diet_class: z.enum(["keto", "vhh_tiukka", "vhh_valjempi"]).optional(),

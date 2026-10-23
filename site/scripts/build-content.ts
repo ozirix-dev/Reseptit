@@ -69,6 +69,7 @@ function recipeDescription(markdown: string, descriptionSection: string, locale:
 
 async function buildRecipes(): Promise<RecipeEntry[]> {
   const paths = [
+    ...await markdownFiles(path.join(repoDir, "reseptit", "aamupalat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "alkuruoat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "paaruoat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "jalkiruoat")),

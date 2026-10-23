@@ -33,13 +33,16 @@ Näin rakenne pysyy siistinä, mutta reseptit ovat silti helposti eroteltavissa.
 
 ## Pääluokitus
 
-Lukittu pääluokitus on tämä:
+Pääluokitus sisältää alkuperäiset yleisryhmät sekä aamupalan erillisenä
+selailuryhmänä:
 
 - **Alkuruoka**
 - **Pääruoka**
 - **Jälkiruoka**
+- **Aamupala**
 
-Tätä ei tässä vaiheessa muuteta.
+Muut luokat säilyvät ennallaan. Aamupalan voi merkitä lisäksi esimerkiksi
+leivonnaiseksi tarkentavalla tagilla, mutta sivuston kategoria on `aamupala`.
 
 Perustelu on yksinkertainen: tämä on yleisesti ymmärrettävä, käyttäjälle tuttu ja toimii hyvin sekä selaamisessa että myöhemmässä sivuston navigaatiossa.
 
