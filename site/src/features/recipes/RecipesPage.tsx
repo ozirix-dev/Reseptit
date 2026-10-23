@@ -108,7 +108,7 @@ function RecipeCard({ recipe, index, locale }: { recipe: RecipeSummary; index: n
       <span className="recipe-card__content">
         <span className="recipe-card__badges"><span className="recipe-card__category">{labels.category[recipe.category]}</span>{dietLabel ? <span className="recipe-card__diet">{dietLabel}</span> : null}</span>
         {meta ? <span className="recipe-card__meta">{meta}</span> : null}
-        <h3 className="recipe-card__title">{recipe.title}</h3>
+        <h2 className="recipe-card__title">{recipe.title}</h2>
         <span className="recipe-card__description">{recipe.description}</span>
       </span>
     </Link>
