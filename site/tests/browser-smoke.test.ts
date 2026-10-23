@@ -98,6 +98,14 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       for (const selector of ['meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]']) {
         assert.equal(await page.locator(selector).getAttribute("content"), recipeUi[locale].intro, `${locale}: ${selector}`);
       }
+      // Exercise React navigation back to the index, without a new document load.
+      await page.locator(".recipe-card__link").first().click();
+      await page.locator(".article-breadcrumbs a").click();
+      await page.getByRole("searchbox", { name: recipeUi[locale].search }).waitFor();
+      await page.waitForFunction((intro) => document.querySelector<HTMLMetaElement>('meta[name="description"]')?.content === intro, recipeUi[locale].intro);
+      for (const selector of ['meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]']) {
+        assert.equal(await page.locator(selector).getAttribute("content"), recipeUi[locale].intro, `${locale} after React navigation: ${selector}`);
+      }
     }
     await page.setViewportSize({ width: 320, height: 800 });
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
