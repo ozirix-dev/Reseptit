@@ -16,6 +16,18 @@ test("browse facets derive from source metadata and remain identical across tran
   }
 });
 
+test("egg facets match an individual metadata value among other ingredients in every locale", () => {
+  assert.deepEqual(recipeFacets(["kaura", " MUNA ", "kerma"], []).ingredientGroups, ["eggs"]);
+  assert.deepEqual(recipeFacets(["muna", "muna"], []).ingredientGroups, ["eggs"]);
+  assert.deepEqual(recipeFacets(["munakoiso"], []).ingredientGroups, ["vegetables"]);
+  // Exercise the metadata with localized fixtures; no draft needs publishing.
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const recipe = { ...siteContent.recipes.find(recipe => recipe.locale === locale)!, ...recipeFacets(["kaura", "muna", "kerma"], []) };
+    assert.ok(recipe.ingredientGroups?.includes("eggs"), recipe.locale);
+    assert.equal(filterRecipes([recipe], { ...emptyRecipeFilters, ingredient: "eggs" }, recipe.locale).length, 1);
+  }
+});
+
 test("time, cuisine and main ingredient filters combine and survive URL round trips", () => {
   const filters = { ...emptyRecipeFilters, maxTime: 60, cuisine: "thai", ingredient: "chicken" };
   assert.deepEqual(parseRecipeFilters(recipeFiltersToSearch(filters), ["all"]), filters);
