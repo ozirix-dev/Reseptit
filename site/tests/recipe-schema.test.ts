@@ -38,6 +38,16 @@ test("recipe images require relative WebP paths and descriptive dimensions", () 
   }).success, true);
 });
 
+test("aamupala is a supported recipe category", () => {
+  const recipe = siteContent.recipes.find((entry) => entry.category === "aamupala");
+  assert.ok(recipe);
+  assert.equal(recipeFrontmatterSchema.safeParse({
+    title: recipe.title, recipe_id: recipe.recipeId, url_slug: recipe.slug,
+    category: "aamupala", language: "fi", status: "published",
+    ingredients: recipe.ingredients, servings: recipe.servings,
+  }).success, true);
+});
+
 test("duplicate published recipe locale and route are rejected", () => {
   const recipe = siteContent.recipes[0];
   assert.throws(() => assertUniqueRecipes([recipe, { ...recipe }]), /Duplicate published recipe translation/);

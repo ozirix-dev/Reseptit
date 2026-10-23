@@ -32,7 +32,7 @@ if (process.argv[2] === "worker") {
     return (await Promise.all((await readdir(dir, { withFileTypes: true })).map((e) => e.isDirectory() ? markdown(path.join(dir, e.name)) : e.name.endsWith(".md") ? [path.join(dir, e.name)] : []))).flat();
   }
   const templates = [];
-  for (const dir of ["reseptit/alkuruoat", "reseptit/paaruoat", "reseptit/jalkiruoat", "reseptit/leivonnaiset", "kaannokset"]) {
+  for (const dir of ["reseptit/aamupalat", "reseptit/alkuruoat", "reseptit/paaruoat", "reseptit/jalkiruoat", "reseptit/leivonnaiset", "kaannokset"]) {
     for (const file of await markdown(path.join(repo, dir))) {
       const text = await readFile(file, "utf8"), match = text.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
       if (!match) continue;

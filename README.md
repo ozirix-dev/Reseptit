@@ -7,7 +7,7 @@ Hakemisto, haku, suodattimet ja annoslaskuri ovat käytössä.
 
 ## Sisältö ja rakenne
 
-- `reseptit/{alkuruoat,paaruoat,jalkiruoat,leivonnaiset}/`: lähdereseptit.
+- `reseptit/{aamupalat,alkuruoat,paaruoat,jalkiruoat,leivonnaiset}/`: lähdereseptit.
 - `kaannokset/{en,sv,th}/`: kieliversiot samalla `recipe_id`-tunnuksella.
 - `kuvat/`: versionoidut WebP-kuvat.
 - `site/`: Vite/React-sovellus, sisältöbuild, esirenderöinti ja testit.
@@ -15,7 +15,7 @@ Hakemisto, haku, suodattimet ja annoslaskuri ovat käytössä.
 - `docs/`: ylläpito-ohjeet ja päivätyt tarkistusraportit.
 - `reseptit/raakileet/`, `arkisto/`, `_mallipohjat/` ja `tmp/` eivät ole julkaisulähteitä.
 
-Ruokalaji määrää sisältökansion. Ruokavalioluokka ja tagit tallennetaan
+Ruokalaji määrää sisältökansion; aamupalat ovat oma selailukategoria. Ruokavalioluokka ja tagit tallennetaan
 metatietoihin. Julkaisuun pääsee vain `status: published` -sisältö.
 Ajantasainen määrä saadaan lähteistä, ei tästä dokumentista:
 

@@ -7,7 +7,7 @@ import type { z } from "zod";
 import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTagErrors } from "./semantic-terms";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset"];
+const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat"];
 const locales = ["en", "sv", "th"] as const;
 type Locale = typeof locales[number];
 type Frontmatter = z.infer<typeof recipeFrontmatterSchema>;
