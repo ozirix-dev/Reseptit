@@ -88,9 +88,9 @@ This filling take on a familiar macaroni bake gets plenty of protein from eggs, 
 
 ## Preparation
 
-1. Preheat the oven to 180°C. Grease a large ovenproof dish.
+1. Preheat the oven to 180°C. Grease a large ovenproof dish with one third of the listed oil.
 2. Cook the macaroni in salted water for about two minutes less than the packet instructions. Drain.
-3. Finely chop the onion. Heat the oil in a frying pan and brown the minced beef with the onion. Season with garlic powder, black pepper, paprika and salt.
+3. Finely chop the onion. Heat the remaining oil in a frying pan and brown the minced beef with the onion. Season with garlic powder, black pepper, paprika and salt.
 4. Blend the cottage cheese until smooth. Mix in the eggs, milk and cooking cream. Stir in 200 g of the grated cheese.
 5. Combine the macaroni and beef mixture in the baking dish. Pour over the egg mixture and stir gently.
 6. Scatter the remaining 100 g of grated cheese over the top. Bake for 40–50 minutes, until the centre is set. Cover loosely with foil if the top browns too quickly.

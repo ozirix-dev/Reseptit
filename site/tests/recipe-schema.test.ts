@@ -4,6 +4,13 @@ import { parseMarkdown } from "../src/content/markdown";
 import { assertUniqueRecipes } from "../src/content/recipe-validation";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { siteContent } from "../src/generated/content.generated";
+import { recipeJsonLd } from "../src/features/recipes/schema";
+
+test("Recipe yield is Schema.org Text and preserves the source serving count", () => {
+  for (const recipe of siteContent.recipes) {
+    assert.equal(recipeJsonLd(recipe).recipeYield, String(recipe.servings));
+  }
+});
 
 test("malformed frontmatter and unsupported fields are rejected", () => {
   assert.throws(() => parseMarkdown("---\ntitle: [broken\n---\nText"));

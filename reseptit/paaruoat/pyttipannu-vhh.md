@@ -5,7 +5,7 @@ url_slug: vhh-pyttipannu
 category: paaruoka
 language: fi
 status: published
-diet_class: vhh_tiukka
+diet_class: vhh_valjempi
 main_ingredient:
   - makkara
   - kananmuna
@@ -22,8 +22,7 @@ tags:
   - makkara
 image:
   src: paaruoat/pyttipannu-vhh.webp
-  alt: Paistinpannullinen makkaraa, kesäkurpitsaa ja lanttua, päällä paistettu
-    kananmuna
+  alt: Paistinpannullinen makkaraa, kesäkurpitsaa ja lanttua, päällä paistettu kananmuna
   width: 1280
   height: 853
 ingredients:

@@ -4,6 +4,7 @@ import { spawn, type ChildProcess } from "node:child_process";
 import path from "node:path";
 import test from "node:test";
 import { chromium, type Browser } from "playwright";
+import { recipeUi } from "../src/features/recipes/recipe-i18n";
 
 const base = "http://127.0.0.1:4173/Reseptit";
 let server: ChildProcess;
@@ -91,6 +92,21 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.getByRole("searchbox", { name: "Sök recept" }).waitFor();
     await page.goto(`${base}/th/recipes/`);
     await page.getByRole("searchbox", { name: "ค้นหาสูตรอาหาร" }).waitFor();
+    for (const [locale, route] of [["fi", "/"], ["en", "/en/recipes/"], ["sv", "/sv/recept/"], ["th", "/th/recipes/"]] as const) {
+      await page.goto(`${base}${route}`);
+      await page.getByRole("searchbox", { name: recipeUi[locale].search }).waitFor();
+      for (const selector of ['meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]']) {
+        assert.equal(await page.locator(selector).getAttribute("content"), recipeUi[locale].intro, `${locale}: ${selector}`);
+      }
+      // Exercise React navigation back to the index, without a new document load.
+      await page.locator(".recipe-card__link").first().click();
+      await page.locator(".article-breadcrumbs a").click();
+      await page.getByRole("searchbox", { name: recipeUi[locale].search }).waitFor();
+      await page.waitForFunction((intro) => document.querySelector<HTMLMetaElement>('meta[name="description"]')?.content === intro, recipeUi[locale].intro);
+      for (const selector of ['meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]']) {
+        assert.equal(await page.locator(selector).getAttribute("content"), recipeUi[locale].intro, `${locale} after React navigation: ${selector}`);
+      }
+    }
     await page.setViewportSize({ width: 320, height: 800 });
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
 

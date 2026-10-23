@@ -20,8 +20,8 @@ tags:
   - curry
   - VHH
 image:
-  src: paaruoat/khao-soi-vhh-konjac.webp
-  alt: Khao soi kycklingcurrysoppa med konjaknudlar, krispig lök och örter
+  src: paaruoat/khao-soi-vhh-konjac-v2.webp
+  alt: Khao soi-currysoppa med konjaknudlar, benfria kycklingbitar, rå schalottenlök och inlagd senapskål
   width: 1280
   height: 853
 carbs_net_per_serving_g: 10

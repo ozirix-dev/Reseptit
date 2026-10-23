@@ -3,6 +3,34 @@ import { test } from "node:test";
 import { auditTranslations, auditRecipePairs } from "../scripts/translation-audit";
 import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTagErrors } from "../scripts/semantic-terms";
 
+test("review backlog fixes stay aligned in all four recipe locales", async () => {
+  const real = await auditTranslations();
+  const all = [...real.publishedSources, ...real.publishedTranslations];
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const get = (id: string) => all.find(r => r.data.recipe_id === id && r.data.language === locale)!;
+    const garlic = get("italian-pata").data.ingredients[5];
+    assert.equal(garlic.amount, 1);
+    assert.doesNotMatch(garlic.note ?? "", /1[–-]2/);
+    const pizza = get("ketopizza-pofiber-pohjalla");
+    for (const ingredient of pizza.data.ingredients) assert.doesNotMatch(ingredient.note ?? "", /\d/);
+    assert.match(pizza.content.match(/^1\. (.+)$/m)?.[1] ?? "", /enimmäislämpötilaa|maximum temperature|maxvärmen|ค่าสูงสุด/);
+    assert.match(get("jauheliha-makaronilaatikko").content.match(/^1\. (.+)$/m)?.[1] ?? "", /kolmanneksella|one third|tredjedel|หนึ่งในสาม/);
+    assert.match(get("jauheliha-makaronilaatikko").content.match(/^3\. (.+)$/m)?.[1] ?? "", /loppu öljy|remaining oil|resten av oljan|น้ำมันที่เหลือ/);
+    assert.match(get("yum-woon-sen-vhh").content.match(/^2\. (.+)$/m)?.[1] ?? "", /neljänneksellä|one quarter|fjärdedel|หนึ่งในสี่/);
+    assert.match(get("yum-woon-sen-vhh").content.match(/^4\. (.+)$/m)?.[1] ?? "", /loppu kalakastike|remaining fish sauce|resten av fisksåsen|น้ำปลาที่เหลือ/);
+    assert.ok(get("pad-thai-vhh-konjac").data.ingredients.some(i => /limelohkoja|lime wedges|limeklyftor|มะนาวหั่นเสี้ยว/.test(i.item)));
+    assert.equal(get("vhh-pyttipannu").data.diet_class, "vhh_valjempi");
+    assert.equal(get("tom-yum-goong-vhh").data.fat_per_serving_g, undefined);
+    assert.equal(get("khao-soi-vhh-konjac").data.image?.src, "paaruoat/khao-soi-vhh-konjac-v2.webp");
+    assert.match(get("khao-soi-vhh-konjac").data.image?.alt ?? "", /luuttomilla|boneless|benfria|ไม่มีกระดูก/);
+  }
+  const somTam = all.find(r => r.data.recipe_id === "som-tam-vhh-kurkkuna" && r.data.language === "th")!;
+  assert.doesNotMatch(somTam.content + somTam.data.image?.alt, /ถั่วฝักยาว/);
+  assert.match(somTam.content, /ถั่วแขก/);
+  assert.ok(semanticNoteErrors(["tai juustokuminaa"], ["eller ostkummin"], "sv").length);
+  assert.deepEqual(semanticNoteErrors(["tai juustokuminaa"], ["eller spiskummin"], "sv"), []);
+});
+
 test("all published translations match the source structure and known critical terms", async () => {
   const result = await auditTranslations();
   const translatedSources = result.publishedSources;

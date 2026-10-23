@@ -67,6 +67,10 @@ ingredients:
     unit: ""
     item: ต้นหอมและผักชี
     note: สำหรับการเสิร์ฟ
+  - amount: null
+    unit: ""
+    item: มะนาวหั่นเสี้ยว
+    note: สำหรับเสิร์ฟ
 translation_languages: []
 translation_status: {}
 source_language: fi

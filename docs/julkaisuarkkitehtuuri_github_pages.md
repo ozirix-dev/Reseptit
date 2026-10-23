@@ -32,6 +32,11 @@ npm run preview
 
 GitHub Actions ajaa yksikkötestit, buildin ja esirenderöityjen tiedostojen tarkistukset pull requesteissa. `main`-haaraan yhdistetyt muutokset julkaistaan GitHub Pagesiin. Sivuston base path on `/Reseptit/`, koska julkaisu käyttää GitHub Pagesin projektisivustoa.
 
+Pages otetaan käyttöön kerran repon Settings → Pages -asetuksissa valitsemalla
+Source: GitHub Actions. Julkaisuworkflow käyttää jo käyttöön otettua Pages-sivustoa;
+se ei yritä perustaa sitä `GITHUB_TOKEN`-tunnuksella. Uudessa repossa tämä
+käyttöönotto on tehtävä ennen ensimmäistä julkaisua.
+
 ## Sivureitit ja SEO
 
 - Suomen hakemisto on `/Reseptit/`; reseptin osoite on `/Reseptit/<url_slug>/`.

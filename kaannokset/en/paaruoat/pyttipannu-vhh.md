@@ -5,7 +5,7 @@ url_slug: vhh-pyttipannu
 category: paaruoka
 language: en
 status: published
-diet_class: vhh_tiukka
+diet_class: vhh_valjempi
 main_ingredient:
   - makkara
   - kananmuna

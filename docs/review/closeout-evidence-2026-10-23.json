@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-23",
+  "scope": "Verification of the existing review backlog corrections; not a new full audit.",
+  "recipeMain": "3a68edc18ef89502391cce8462fe86d7232de59b",
+  "correctionBaseline": "91222d275a08b7e6cd76c9572839f25897a8af66",
+  "reportHubMain": "eb4200fee1b62c9dd5b1b8998e45b74cbe0c1950",
+  "gsc": {
+    "access": "Read-only authenticated Brave session",
+    "property": "https://ozirix-dev.github.io/Reseptit/",
+    "screen": "Sitemaps",
+    "submittedRowsVisible": 0,
+    "paginationText": "0–0/0",
+    "sitemapSubmitted": "No submission visible in this property",
+    "sitemapProcessed": "No processing result visible",
+    "urlIndexed": "Not checked",
+    "ownership": "Previously verified on 2026-10-22; ownership settings not rechecked in this pass",
+    "mutation": "None",
+    "reviewFinding": "PENDING EXTERNAL EVIDENCE"
+  },
+  "italianBake": {
+    "bakeMinutes": 20,
+    "minimumRestMinutes": 15,
+    "preparationMinutes": null,
+    "totalMinutes": null,
+    "reviewFinding": "PENDING SOURCE EVIDENCE"
+  },
+  "historicalAudit": "backlog-audit-2026-10-22.json",
+  "dependencyPlan": "dependency-follow-up-2026-10-23.md",
+  "releaseBoundary": "PR review only; no merge, deploy, sitemap submission or indexing request."
+}

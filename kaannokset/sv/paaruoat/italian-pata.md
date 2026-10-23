@@ -30,7 +30,6 @@ ingredients:
   - amount: 200
     unit: g
     item: tomatsås eller krossade tomater
-    note: ca 1,5 dl
   - amount: 2
     unit: tsk
     item: torkad oregano
@@ -40,17 +39,16 @@ ingredients:
   - amount: 0.5
     unit: tsk
     item: svartpeppar
-  - amount: null
-    unit: ""
-    item: vitlök
-    note: 1–2 klyftor
+  - amount: 1
+    unit: "st"
+    item: vitlöksklyfta
+    note: tillsätt mer efter smak om du vill
   - amount: 400
     unit: g
     item: zucchini
   - amount: 1
     unit: ""
     item: spetsig paprika
-    note: ca 90 g
   - amount: 150
     unit: g
     item: riven ost

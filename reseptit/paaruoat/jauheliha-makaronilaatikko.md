@@ -22,8 +22,7 @@ tags:
   - runsasproteiininen
 image:
   src: paaruoat/jauheliha-makaronilaatikko.webp
-  alt: Kullanruskeaksi paistunut jauheliha-makaronilaatikko, jossa näkyy
-    juustopinta ja mehevä sisus
+  alt: Kullanruskeaksi paistunut jauheliha-makaronilaatikko, jossa näkyy juustopinta ja mehevä sisus
   width: 1280
   height: 853
 ingredients:
@@ -94,9 +93,9 @@ Perinteisestä makaronilaatikosta tuttu jauheliha ja makaroni saavat reilusti pr
 
 ## Valmistus
 
-1. Kuumenna uuni 180 asteeseen. Voitele suuri uunivuoka.
+1. Kuumenna uuni 180 asteeseen. Voitele suuri uunivuoka kolmanneksella reseptin öljystä.
 2. Keitä makaronit suolatussa vedessä noin kaksi minuuttia pakkauksen ohjetta lyhyemmän ajan. Valuta.
-3. Hienonna sipuli. Kuumenna öljy pannulla ja ruskista jauheliha sekä sipuli. Mausta valkosipulijauheella, mustapippurilla, paprikajauheella ja suolalla.
+3. Hienonna sipuli. Kuumenna loppu öljy pannulla ja ruskista jauheliha sekä sipuli. Mausta valkosipulijauheella, mustapippurilla, paprikajauheella ja suolalla.
 4. Soseuta raejuusto tasaiseksi. Sekoita joukkoon kananmunat, maito ja ruokakerma. Lisää 200 g juustoraastetta ja sekoita.
 5. Yhdistä makaronit ja jauhelihaseos uunivuoassa. Kaada munaseos päälle ja sekoita varovasti.
 6. Ripottele pinnalle loput 100 g juustoraastetta. Paista 40–50 minuuttia, kunnes laatikon keskusta on hyytynyt. Peitä tarvittaessa foliolla, jos pinta tummuu liikaa.

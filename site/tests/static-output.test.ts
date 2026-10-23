@@ -2,8 +2,18 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
+import { recipeUi } from "../src/features/recipes/recipe-i18n";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
+
+test("all static index descriptions use their locale text before JavaScript", async () => {
+  for (const [locale, route] of [["fi", ""], ["en", "en/recipes"], ["sv", "sv/recept"], ["th", "th/recipes"]] as const) {
+    const html = await readFile(path.join(dist, route, "index.html"), "utf8");
+    for (const key of ['name="description"', 'property="og:description"', 'name="twitter:description"']) {
+      assert.ok(html.includes(`<meta ${key} content="${recipeUi[locale].intro}"`), `${locale}: ${key}`);
+    }
+  }
+});
 
 test("recipe index is prerendered and links only published languages", async () => {
   const html = await readFile(path.join(dist, "index.html"), "utf8");
@@ -53,7 +63,7 @@ test("prerendered recipe HTML includes useful content before JavaScript", async 
   const jsonLd = JSON.parse(jsonLdMatch[1]);
   assert.equal(jsonLd["@type"], "Recipe");
   assert.equal(jsonLd.name, "Kermainen lohipata");
-  assert.equal(jsonLd.recipeYield, 4);
+  assert.equal(jsonLd.recipeYield, "4");
   assert.deepEqual(jsonLd.image, ["https://ozirix-dev.github.io/Reseptit/kuvat/paaruoat/kermainen-lohipata.webp"]);
   assert.equal("author" in jsonLd, false);
   assert.equal("datePublished" in jsonLd, false);
@@ -91,7 +101,7 @@ test("translated macaroni bake pages have localized content, SEO metadata and ma
     const jsonLd = JSON.parse(jsonLdMatch[1]);
     assert.equal(jsonLd.name, translation.title);
     assert.equal(jsonLd.inLanguage, translation.locale);
-    assert.equal(jsonLd.recipeYield, 8);
+    assert.equal(jsonLd.recipeYield, "8");
     assert.equal(jsonLd.recipeInstructions.length, 7);
     assert.equal(jsonLd.nutrition.proteinContent, "45 g");
     assert.deepEqual(jsonLd.image, ["https://ozirix-dev.github.io/Reseptit/kuvat/paaruoat/jauheliha-makaronilaatikko.webp"]);

@@ -1,0 +1,9 @@
+{
+  "mode": "edit",
+  "tool": "built-in imagegen",
+  "input": "kuvat/paaruoat/khao-soi-vhh-konjac.webp",
+  "output": "kuvat/paaruoat/khao-soi-vhh-konjac-v2.webp",
+  "encoding": "WebP quality 82, 1280 x 853 via sharp; original retained",
+  "prompt": "Use case: precise-object-edit. Edit target is the attached existing khao soi recipe illustration. Preserve the rustic ceramic bowl, warm natural light, wooden table and landscape composition. Correct the food to exactly match this recipe: yellow-orange coconut curry soup with thin translucent white konjac noodles, cooked BONeless chicken thigh pieces, raw thinly sliced purple shallots and chopped pickled mustard greens as the toppings. Remove ALL crispy fried onion pieces from the soup and background; replace the large bone-in drumstick with several realistic boneless cooked thigh pieces. Remove coriander leaves and lime wedges from the frame since these are not specified as garnishes. Background may contain a small dish of the same raw shallots and pickled mustard greens. No other garnish, no fried noodles, no bones, no text, no watermark. Photorealistic appetising recipe illustration, 3:2 landscape.",
+  "visualReview": "Inspected generated result: boneless chicken, translucent noodles, raw shallot and pickled greens; corrected the reported fried-onion and bone-in-chicken mismatch. This is generated illustration, not a photograph of a cooked test batch."
+}

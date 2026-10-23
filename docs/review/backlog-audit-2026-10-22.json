@@ -1,0 +1,415 @@
+{
+  "observedAt": "2026-10-22T20:07:31.624Z",
+  "baselineRevision": "3a68edc18ef89502391cce8462fe86d7232de59b",
+  "branch": "codex/reseptit-review-backlog-audit",
+  "pullRequestsInspected": 43,
+  "reviewThreadsInspected": 68,
+  "unresolvedAtStart": 43,
+  "scope": "Review backlog plus bounded source, build, SEO, dependency and translation audit. Not exhaustive human culinary or translation certification.",
+  "checks": {
+    "core": 36,
+    "translations": 24,
+    "static": 16,
+    "image": 7,
+    "browser": 4,
+    "buildRoutes": 480,
+    "seoFindings": 0,
+    "productionDependencyVulnerabilities": 0,
+    "typescript7Typecheck": "PASS"
+  },
+  "pending": [
+    "Six Dependabot PRs remain open. PR #10 current CI is failed; this branch fixes its demonstrated baseUrl/path incompatibility but does not update that PR.",
+    "357 translations remain AUTOMATED ONLY; no human review approvals were manufactured.",
+    "Nutrition audit does not validate full recipe nutrient totals.",
+    "New branch is not merged or deployed and has no PR CI result."
+  ],
+  "threads": [
+    {
+      "pr": 2,
+      "threadId": "PRRT_kwDORsrw-c6uaoCw",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/2#discussion_r4327338958",
+      "path": "site/scripts/build-content.ts",
+      "status": "pending_external",
+      "evidence": "Origin-root robots/sitemap discovery needs origin-level ownership or confirmed GSC sitemap submission. Project robots is insufficient.",
+      "githubResolved": false
+    },
+    {
+      "pr": 3,
+      "threadId": "PRRT_kwDORsrw-c6uanyP",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/3#discussion_r4327337100",
+      "path": ".github/workflows/pages.yml",
+      "status": "fixed_in_branch",
+      "evidence": "Removed configure-pages enablement=true; documented one-time Pages setup in Settings.",
+      "githubResolved": false
+    },
+    {
+      "pr": 4,
+      "threadId": "PRRT_kwDORsrw-c6ubczr",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/4#discussion_r4327687625",
+      "path": "README.md",
+      "status": "already_fixed_main",
+      "evidence": "README includes leivonnaiset and references the schema including leivonnainen.",
+      "githubResolved": true
+    },
+    {
+      "pr": 5,
+      "threadId": "PRRT_kwDORsrw-c6ub8qf",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/5#discussion_r4327902432",
+      "path": ".gitignore",
+      "status": "already_fixed_main",
+      "evidence": ".gitignore explicitly unignores recipe WebP categories.",
+      "githubResolved": true
+    },
+    {
+      "pr": 5,
+      "threadId": "PRRT_kwDORsrw-c6ub8qh",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/5#discussion_r4327902437",
+      "path": "site/src/features/recipes/schema.ts",
+      "status": "fixed_in_branch",
+      "evidence": "Recipe recipeYield now Schema.org Text, with unit/static/SEO checks.",
+      "githubResolved": false
+    },
+    {
+      "pr": 14,
+      "threadId": "PRRT_kwDORsrw-c6uepsg",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/14#discussion_r4329053384",
+      "path": "reseptit/paaruoat/jauheliha-makaronilaatikko.md",
+      "status": "fixed_in_branch",
+      "evidence": "Macaroni dish greasing consumes one third of listed oil; frying consumes remainder in all locales.",
+      "githubResolved": false
+    },
+    {
+      "pr": 15,
+      "threadId": "PRRT_kwDORsrw-c6ufApF",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/15#discussion_r4329208294",
+      "path": "kaannokset/en/paaruoat/jauheliha-makaronilaatikko.md",
+      "status": "already_fixed_main",
+      "evidence": "SiteLayout uses localized recipeUi for skip link, brand and tagline.",
+      "githubResolved": true
+    },
+    {
+      "pr": 15,
+      "threadId": "PRRT_kwDORsrw-c6ufApP",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/15#discussion_r4329208310",
+      "path": "kaannokset/sv/paaruoat/jauheliha-makaronilaatikko.md",
+      "status": "fixed_in_branch",
+      "evidence": "Hydrated index description and social descriptions use recipeUi locale intro; browser assertions cover FI/EN/SV/TH.",
+      "githubResolved": false
+    },
+    {
+      "pr": 17,
+      "threadId": "PRRT_kwDORsrw-c6ugKPs",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/17#discussion_r4329705249",
+      "path": "reseptit/paaruoat/italian-pata.md",
+      "status": "fixed_in_branch",
+      "evidence": "Italian bake garlic is numeric one clove plus optional extra to taste; removed fixed equivalent quantity notes.",
+      "githubResolved": false
+    },
+    {
+      "pr": 17,
+      "threadId": "PRRT_kwDORsrw-c6ugKPx",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/17#discussion_r4329705260",
+      "path": "reseptit/paaruoat/italian-pata.md",
+      "status": "pending_source",
+      "evidence": "Italian bake source gives 20 minutes baking and 15 minutes resting but no preparation duration; total time cannot be asserted.",
+      "githubResolved": false
+    },
+    {
+      "pr": 18,
+      "threadId": "PRRT_kwDORsrw-c6ugRSs",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/18#discussion_r4329751816",
+      "path": "reseptit/paaruoat/ketopizza-pofiber-pohjalla.md",
+      "status": "fixed_in_branch",
+      "evidence": "Pizza notes no longer repeat unscaled quantity ranges; small-egg alternative is expressed per large egg.",
+      "githubResolved": false
+    },
+    {
+      "pr": 18,
+      "threadId": "PRRT_kwDORsrw-c6ugRS5",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/18#discussion_r4329751836",
+      "path": "reseptit/paaruoat/ketopizza-pofiber-pohjalla.md",
+      "status": "fixed_in_branch",
+      "evidence": "Pizza baking must respect baking-paper maximum temperature; lower-temperature baking may take longer.",
+      "githubResolved": false
+    },
+    {
+      "pr": 20,
+      "threadId": "PRRT_kwDORsrw-c6ug2vD",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/20#discussion_r4329999028",
+      "path": "reseptit/paaruoat/parsakaali-sinihomejuustofrittata.md",
+      "status": "already_fixed_main",
+      "evidence": "Frittata instructs cooking a test piece before tasting.",
+      "githubResolved": true
+    },
+    {
+      "pr": 20,
+      "threadId": "PRRT_kwDORsrw-c6ug2vR",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/20#discussion_r4329999046",
+      "path": "reseptit/paaruoat/paprikainen-vhh-gulassi.md",
+      "status": "already_fixed_main",
+      "evidence": "Goulash step 3 adds cumin.",
+      "githubResolved": true
+    },
+    {
+      "pr": 21,
+      "threadId": "PRRT_kwDORsrw-c6uiWAy",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/21#discussion_r4330635555",
+      "path": "reseptit/paaruoat/kaalilaatikko.md",
+      "status": "already_fixed_main",
+      "evidence": "Static sitemap assertions no longer expect published translations to be absent; static suite passes.",
+      "githubResolved": true
+    },
+    {
+      "pr": 21,
+      "threadId": "PRRT_kwDORsrw-c6uiWA3",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/21#discussion_r4330635562",
+      "path": "reseptit/paaruoat/kaalilaatikko.md",
+      "status": "already_fixed_main",
+      "evidence": "Thai cabbage casserole recipe_id/translation_of match vhh-kaalilaatikko.",
+      "githubResolved": true
+    },
+    {
+      "pr": 21,
+      "threadId": "PRRT_kwDORsrw-c6uiWA6",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/21#discussion_r4330635566",
+      "path": "reseptit/paaruoat/pyttipannu-vhh.md",
+      "status": "fixed_in_branch",
+      "evidence": "Pyttipannu classification changed to vhh_valjempi to agree with its source description.",
+      "githubResolved": false
+    },
+    {
+      "pr": 22,
+      "threadId": "PRRT_kwDORsrw-c6ujWIV",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/22#discussion_r4331065890",
+      "path": "reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md",
+      "status": "already_fixed_main",
+      "evidence": "Reported six recipes have corrected cooking_method metadata; source content inspected.",
+      "githubResolved": true
+    },
+    {
+      "pr": 24,
+      "threadId": "PRRT_kwDORsrw-c6un-F1",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/24#discussion_r4333060234",
+      "path": "kaannokset/en/jalkiruoat/keto-pannukakku.md",
+      "status": "already_fixed_main",
+      "evidence": "Butter rows translate butter as butter/smör/เนย; source-aware semantic tests guard critical terms.",
+      "githubResolved": true
+    },
+    {
+      "pr": 24,
+      "threadId": "PRRT_kwDORsrw-c6un-F4",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/24#discussion_r4333060240",
+      "path": "kaannokset/en/paaruoat/nakkikeitto-kukkakaalilla.md",
+      "status": "already_fixed_main",
+      "evidence": "Nakki rows use frankfurters rather than walnuts; semantic tests guard source meaning.",
+      "githubResolved": true
+    },
+    {
+      "pr": 24,
+      "threadId": "PRRT_kwDORsrw-c6un-F6",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/24#discussion_r4333060243",
+      "path": "kaannokset/en/jalkiruoat/keto-pannukakku.md",
+      "status": "already_fixed_main",
+      "evidence": "Ingredient cream uses whipping cream/vispgrädde rather than whipped cream.",
+      "githubResolved": true
+    },
+    {
+      "pr": 24,
+      "threadId": "PRRT_kwDORsrw-c6un-F9",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/24#discussion_r4333060249",
+      "path": "kaannokset/th/jalkiruoat/keto-pannukakku.md",
+      "status": "already_fixed_main",
+      "evidence": "Thai Markdown H1 headings have the required separating space.",
+      "githubResolved": true
+    },
+    {
+      "pr": 24,
+      "threadId": "PRRT_kwDORsrw-c6un-F_",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/24#discussion_r4333060251",
+      "path": "kaannokset/en/paaruoat/karjalanpaisti-vhh.md",
+      "status": "already_fixed_main",
+      "evidence": "Karelian stew ingredients specify beef/pork stewing meat rather than patties.",
+      "githubResolved": true
+    },
+    {
+      "pr": 24,
+      "threadId": "PRRT_kwDORsrw-c6un-GE",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/24#discussion_r4333060257",
+      "path": "kaannokset/en/paaruoat/kanakorma-kukkakaaliriisilla.md",
+      "status": "already_fixed_main",
+      "evidence": "Turkish yoghurt ingredient translations restored; semantic regression checks present.",
+      "githubResolved": true
+    },
+    {
+      "pr": 24,
+      "threadId": "PRRT_kwDORsrw-c6un-GG",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/24#discussion_r4333060262",
+      "path": "kaannokset/en/paaruoat/lohikeitto-kuohukermalla.md",
+      "status": "already_fixed_main",
+      "evidence": "Fish stock concentrate translations restored; semantic regression checks present.",
+      "githubResolved": true
+    },
+    {
+      "pr": 25,
+      "threadId": "PRRT_kwDORsrw-c6uokaY",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/25#discussion_r4333314734",
+      "path": "site/src/router.tsx",
+      "status": "already_fixed_main",
+      "evidence": "404 locale uses recipeLocaleFromPath; browser route coverage passes.",
+      "githubResolved": true
+    },
+    {
+      "pr": 26,
+      "threadId": "PRRT_kwDORsrw-c6upQto",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/26#discussion_r4333608835",
+      "path": "reseptit/paaruoat/tom-yum-goong-vhh.md",
+      "status": "fixed_in_branch",
+      "evidence": "Removed unsupported Tom Yum fat value in all locales; no replacement estimate invented.",
+      "githubResolved": false
+    },
+    {
+      "pr": 26,
+      "threadId": "PRRT_kwDORsrw-c6upQts",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/26#discussion_r4333608840",
+      "path": "reseptit/paaruoat/pad-thai-vhh-konjac.md",
+      "status": "fixed_in_branch",
+      "evidence": "Added serving lime wedges already required by Pad Thai instructions to ingredients in all locales.",
+      "githubResolved": false
+    },
+    {
+      "pr": 26,
+      "threadId": "PRRT_kwDORsrw-c6upQtz",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/26#discussion_r4333608847",
+      "path": "reseptit/paaruoat/khao-soi-vhh-konjac.md",
+      "status": "fixed_in_branch",
+      "evidence": "New Khao soi image matches boneless chicken, raw shallots and pickled greens; all locale image metadata aligned.",
+      "githubResolved": false
+    },
+    {
+      "pr": 27,
+      "threadId": "PRRT_kwDORsrw-c6uqFRi",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/27#discussion_r4333955064",
+      "path": "reseptit/paaruoat/kai-jiew-vhh.md",
+      "status": "already_fixed_main",
+      "evidence": "Kai jiew uses a cooked test piece for seasoning check.",
+      "githubResolved": true
+    },
+    {
+      "pr": 27,
+      "threadId": "PRRT_kwDORsrw-c6uqFRn",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/27#discussion_r4333955071",
+      "path": "reseptit/alkuruoat/yum-woon-sen-vhh.md",
+      "status": "fixed_in_branch",
+      "evidence": "Yum Woon Sen allocates one quarter of listed fish sauce to pork and remainder to dressing.",
+      "githubResolved": false
+    },
+    {
+      "pr": 28,
+      "threadId": "PRRT_kwDORsrw-c6uqfVx",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/28#discussion_r4334125615",
+      "path": "kaannokset/th/alkuruoat/som-tam-vhh-kurkkuna.md",
+      "status": "fixed_in_branch",
+      "evidence": "Thai Som Tam image alt and preparation now use green beans (ถั่วแขก), matching ingredient row.",
+      "githubResolved": false
+    },
+    {
+      "pr": 29,
+      "threadId": "PRRT_kwDORsrw-c6urYRr",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/29#discussion_r4334501401",
+      "path": "reseptit/paaruoat/aloo-paratha.md",
+      "status": "already_fixed_main",
+      "evidence": "Paratha divides dough into twelve portions and filling into six.",
+      "githubResolved": true
+    },
+    {
+      "pr": 29,
+      "threadId": "PRRT_kwDORsrw-c6urYRy",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/29#discussion_r4334501411",
+      "path": "reseptit/paaruoat/hyderabadi-kanabiryani.md",
+      "status": "already_fixed_main",
+      "evidence": "Biryani adds all whole spices to chicken once in step 3, not again to rice.",
+      "githubResolved": true
+    },
+    {
+      "pr": 30,
+      "threadId": "PRRT_kwDORsrw-c6usCIZ",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/30#discussion_r4334776752",
+      "path": "reseptit/paaruoat/pekingin-ankka.md",
+      "status": "already_fixed_main",
+      "evidence": "Peking duck duration is 510 minutes including drying, preparation, roasting and resting.",
+      "githubResolved": true
+    },
+    {
+      "pr": 32,
+      "threadId": "PRRT_kwDORsrw-c6vDovT",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/32#discussion_r4344822244",
+      "path": "kaannokset/en/jalkiruoat/gulab-jamun.md",
+      "status": "already_fixed_main",
+      "evidence": "Gulab Jamun English and Swedish prose translated from Finnish.",
+      "githubResolved": true
+    },
+    {
+      "pr": 32,
+      "threadId": "PRRT_kwDORsrw-c6vDovY",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/32#discussion_r4344822248",
+      "path": "kaannokset/en/paaruoat/dan-dan-nuudelit.md",
+      "status": "already_fixed_main",
+      "evidence": "Dan dan pak choi preserved in EN/SV/TH ingredient and preparation text.",
+      "githubResolved": true
+    },
+    {
+      "pr": 32,
+      "threadId": "PRRT_kwDORsrw-c6vDovd",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/32#discussion_r4344822255",
+      "path": "kaannokset/th/paaruoat/marokkolainen-couscous.md",
+      "status": "already_fixed_main",
+      "evidence": "Thai couscous uses คูสคูส.",
+      "githubResolved": true
+    },
+    {
+      "pr": 32,
+      "threadId": "PRRT_kwDORsrw-c6vDovi",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/32#discussion_r4344822261",
+      "path": "kaannokset/en/paaruoat/pekingin-ankka.md",
+      "status": "already_fixed_main",
+      "evidence": "Peking duck wheat pancakes preserved rather than translated as dumplings.",
+      "githubResolved": true
+    },
+    {
+      "pr": 32,
+      "threadId": "PRRT_kwDORsrw-c6vDovl",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/32#discussion_r4344822266",
+      "path": "kaannokset/en/paaruoat/marokkolainen-couscous.md",
+      "status": "already_fixed_main",
+      "evidence": "Chicken thigh/leg ingredient translations retain appropriate cuts.",
+      "githubResolved": true
+    },
+    {
+      "pr": 32,
+      "threadId": "PRRT_kwDORsrw-c6vDovo",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/32#discussion_r4344822273",
+      "path": "kaannokset/en/jalkiruoat/gulab-jamun.md",
+      "status": "already_fixed_main",
+      "evidence": "Cardamom pods preserved in EN/SV/TH Biryani, Gulab Jamun and Rogan Josh.",
+      "githubResolved": true
+    },
+    {
+      "pr": 32,
+      "threadId": "PRRT_kwDORsrw-c6vDovr",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/32#discussion_r4344822278",
+      "path": "kaannokset/en/paaruoat/char-siu.md",
+      "status": "already_fixed_main",
+      "evidence": "Chinese five-spice mixture specified in char siu and khao kha moo translations.",
+      "githubResolved": true
+    },
+    {
+      "pr": 32,
+      "threadId": "PRRT_kwDORsrw-c6vDovw",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/32#discussion_r4344822283",
+      "path": "kaannokset/sv/paaruoat/butter-chicken.md",
+      "status": "fixed_in_branch",
+      "evidence": "Removed remaining Swedish ostkummin in amritsari ingredient note; source-aware semantic regression added.",
+      "githubResolved": false
+    }
+  ]
+}

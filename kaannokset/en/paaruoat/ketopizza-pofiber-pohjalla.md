@@ -24,28 +24,26 @@ ingredients:
   - amount: 175
     unit: g
     item: grated cheese
-    note: 150–200 g; for example Oltermann or mozzarella, preferably grated yourself
+    note: for example Oltermanni or mozzarella, preferably freshly grated
   - amount: 2.5
     unit: tbsp
     item: cream cheese
-    note: "2–3 tbsp; alternatively yoghurt, crème fraîche or cultured sour cream"
+    note: "alternatively yoghurt, crème fraîche or cultured sour cream"
   - amount: 1
     unit: ""
     item: large egg
-    note: "or 2 small eggs"
+    note: "each large egg can be replaced with two small eggs"
   - amount: 3.5
     unit: tbsp
     item: Pofiber
-    note: 3–4 tbsp
   - amount: 75
     unit: g
     item: tomato sauce
-    note: "about 4 tbsp; for example pizza sauce or passata"
+    note: "for example pizza sauce or passata"
   - amount: null
     unit: ""
     item: pizza toppings of your choice
-    note: for example ham, pepperoni, paprika, onion, olives, mozzarella, feta or
-      herbs
+    note: for example ham, pepperoni, paprika, onion, olives, mozzarella, feta or herbs
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/ketopizza-pofiber-pohjalla.md
@@ -62,12 +60,12 @@ The bottom cheese, cream cheese and egg bind Pofiber into a dough. The recipe ma
 
 ## Preparation
 
-1. Preheat the oven to as hot as possible, around 250-275 degrees. If you wish, use the pizza function, bottom heat or circulating air.
+1. Preheat the oven to around 250–275°C only if your baking paper is rated for the chosen temperature. Never exceed the maximum temperature on the paper packaging; lower the oven temperature if necessary. Use the pizza setting, bottom heat or fan setting if desired.
 2. If you want, melt the grated cheese and cream cheese in the microwave for 30-60 seconds to get a softer dough.
 3. Mix the cheese, cream cheese, egg and Pofiber into a smooth mass. Knead by hand or mix vigorously until the dough is uniform. The dough should remain soft.
 4. Spread the dough on baking paper on a tray. Place another sheet of baking paper on top and spread into a thin round base or spoon into a thicker pan pizza. Remove the top paper.
 5. Spread the tomato sauce on the bottom and add the toppings you want.
-6. Bake in a hot oven for about 8-12 minutes until the edges are crispy and the cheese has melted.
+6. Bake for about 8–12 minutes, until the edges are crisp and the cheese has melted. Baking may take longer at a lower temperature; check for doneness.
 7. Serve immediately hot.
 
 ## Notes

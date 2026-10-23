@@ -30,7 +30,6 @@ ingredients:
   - amount: 200
     unit: g
     item: ซอสมะเขือเทศ หรือมะเขือเทศสับ
-    note: ประมาณ 1.5 เดซิลิตร
   - amount: 2
     unit: ช้อนชา
     item: ออริกาโนแห้ง
@@ -40,17 +39,16 @@ ingredients:
   - amount: 0.5
     unit: ช้อนชา
     item: พริกไทยดำ
-  - amount: null
-    unit: ""
+  - amount: 1
+    unit: "กลีบ"
     item: กระเทียม
-    note: 1-2 กลีบ
+    note: เพิ่มได้ตามชอบ
   - amount: 400
     unit: g
     item: ซูกินี
   - amount: 1
     unit: ""
     item: พริกหวานทรงยาว
-    note: ประมาณ 90 กรัม
   - amount: 150
     unit: g
     item: ชีสขูด
