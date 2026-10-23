@@ -28,6 +28,22 @@ test("egg facets match an individual metadata value among other ingredients in e
   }
 });
 
+test("browse groups cover observed Finnish inflections without substring false positives", () => {
+  for (const value of ["nakki", "nakit", "makkara", "poronkäristys", "ankka", "porsaan lapaa"]) {
+    assert.deepEqual(recipeFacets([value], []).ingredientGroups, ["meat"], value);
+  }
+  for (const value of ["sieni", "sienet", "kasvikset", "kesakurpitsa", "kesäkurpitsa"]) {
+    assert.deepEqual(recipeFacets([value], []).ingredientGroups, ["vegetables"], value);
+  }
+  assert.deepEqual(recipeFacets(["kananmuna", "munakoiso", "riisi", "kerma", "kanaliemi"], ["constructor"]).ingredientGroups, ["vegetables", "eggs"]);
+  assert.equal(recipeFacets([], ["constructor"]).cuisine, null);
+  for (const recipeId of ["nakkikeitto-kukkakaalilla", "nakkikastike-kukkakaalimuusi"]) {
+    const versions = siteContent.recipes.filter(recipe => recipe.recipeId === recipeId);
+    assert.equal(versions.length, 4, recipeId);
+    for (const recipe of versions) assert.equal(filterRecipes([recipe], { ...emptyRecipeFilters, ingredient: "meat" }, recipe.locale).length, 1, `${recipeId}/${recipe.locale}`);
+  }
+});
+
 test("time, cuisine and main ingredient filters combine and survive URL round trips", () => {
   const filters = { ...emptyRecipeFilters, maxTime: 60, cuisine: "thai", ingredient: "chicken" };
   assert.deepEqual(parseRecipeFilters(recipeFiltersToSearch(filters), ["all"]), filters);
