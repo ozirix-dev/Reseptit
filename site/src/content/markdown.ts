@@ -1,5 +1,5 @@
 import { parse } from "yaml";
-import { marked, Renderer } from "marked";
+import { marked, Renderer, type Tokens } from "marked";
 
 function escapeHtml(value: string): string {
   return value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")
@@ -36,6 +36,14 @@ export async function renderSafeMarkdown(source: string): Promise<string> {
     return `<img src="${escapeHtml(safeUrl)}" alt="${escapeHtml(text)}"${titleAttribute} loading="lazy" decoding="async">`;
   };
   return await marked.parse(source, { renderer });
+}
+
+// Enhance only a complete ordered list. Other Markdown remains intact in the
+// original renderer, including introductions, subheadings and trailing advice.
+export async function renderInstructionSteps(source: string): Promise<string[] | null> {
+  const tokens = marked.lexer(source).filter(token => token.type !== "space");
+  if (tokens.length !== 1 || tokens[0].type !== "list" || !tokens[0].ordered || tokens[0].start !== 1) return null;
+  return Promise.all((tokens[0] as Tokens.List).items.map(item => renderSafeMarkdown(item.text)));
 }
 
 export function parseMarkdown(text: string): { data: Record<string, unknown>; content: string } | null {

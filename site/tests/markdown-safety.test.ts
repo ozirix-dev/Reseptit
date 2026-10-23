@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { renderSafeMarkdown } from "../src/content/markdown";
+import { renderSafeMarkdown, renderInstructionSteps } from "../src/content/markdown";
 
 test("raw HTML is escaped and unsafe link and image URLs are removed", async () => {
   const html = await renderSafeMarkdown([
@@ -22,4 +22,13 @@ test("ordinary Markdown formatting and ordered steps render", async () => {
   assert.match(html, /<em>emphasis<\/em>/);
   assert.match(html, /<ol>/);
   assert.match(html, /<a href="\/Reseptit\/">local<\/a>/);
+});
+
+test("step enhancement preserves Markdown and continuation lines and never discards surrounding advice", async () => {
+  const steps = await renderInstructionSteps('1. **Mix** well.\n   Keep stirring.\n2. <script>bad()</script>');
+  assert.equal(steps?.length, 2);
+  assert.match(steps![0], /<strong>Mix<\/strong> well\.\nKeep stirring/);
+  assert.doesNotMatch(steps![1], /<script>/);
+  assert.equal(await renderInstructionSteps('Read first.\n\n1. Mix.\n2. Bake.'), null);
+  assert.equal(await renderInstructionSteps('1. Mix.\n\n## Finish\n\nServe.'), null);
 });

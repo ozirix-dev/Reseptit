@@ -39,6 +39,8 @@ export interface RecipeImage {
 }
 
 export interface RecipeEntry {
+  cuisine?: string | null;
+  ingredientGroups?: string[];
   kind: "recipe";
   recipeId: string;
   slug: string;
@@ -51,6 +53,7 @@ export interface RecipeEntry {
   description: string;
   ingredients: RecipeIngredient[];
   instructionsHtml: string;
+  instructionStepsHtml?: string[] | null;
   instructionsText: string[];
   notesHtml: string;
   servings: number;

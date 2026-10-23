@@ -15,7 +15,7 @@ main_ingredient:
   - mantelijauho
 cooking_method:
   - uuni
-time_total_min: 45
+time_total_min: null
 difficulty: lätt
 tags:
   - keto
@@ -82,12 +82,13 @@ Psyllium binder den mjuka degen, som får svälla före formning.
 2. Smält smöret och låt det svalna en stund. Blanda mandelmjöl, havrekli, psyllium, bakpulver och salt i en skål.
 3. Mosa keso och ägg till en jämn smet med en stavmixer eller i en mixer. Blanda i grädden och avsvalnat smält smör.
 4. Häll de våta ingredienserna i blandningen av torra ingredienser och blanda tills det är slätt. Låt degen svälla i 10 minuter.
-5. Dela degen i åtta delar och forma till rullar med blöta händer. Om du vill, lägg sesamfrön ovanpå.
-6. Grädda i mitten av ugnen i 20–25 minuter, tills ytan har fått färg och rullarna känns kokta.
-7. Låt svalna helt innan du skivar, så att de psylliumbundna insidorna hinner sätta sig.
+5. Dela degen i åtta delar och forma till frallor med fuktiga händer. Om du vill, lägg sesamfrön ovanpå.
+6. Grädda i mitten av ugnen i 20–25 minuter, tills ytan har fått färg och frallorna är genomgräddade.
+7. Låt svalna helt innan du skivar, så att inkråmet hinner sätta sig.
 
 ## Anteckningar
 
-– Uppskattningen är cirka 3,5 g nettokolhydrater, 9 g protein och 12 g fett per rulle. Uppskattningen är beräknad och varierar särskilt beroende på märket på havrekli, mandelmjöl och keso; kontrollera informationen på produktens förpackning.
-– Havrekli är inte kolhydratfritt, så receptet innehåller bara en liten mängd havre. Dosera rullarna som en del av ditt dagliga kolhydratintag.
-– Degen är mjuk och klibbig på grund av psylliumets svullnad. Om blandningen fortfarande är för lös för att forma efter 10 minuter, tillsätt psyllium en tesked i taget och låt svälla i några minuter.
+- Uppskattningen är cirka 3,5 g nettokolhydrater, 9 g protein och 12 g fett per fralla. Värdena är ungefärliga och varierar bland annat med valet av havrekli, mandelmjöl och keso; kontrollera informationen på produktens förpackning.
+- Havrekli är inte kolhydratfritt, så receptet innehåller bara en liten mängd havre. Räkna in frallorna i ditt dagliga kolhydratintag.
+- Degen är mjuk och klibbig på grund av psylliumets svullnad. Om blandningen fortfarande är för lös för att forma efter 10 minuter, tillsätt psyllium en tesked i taget och låt svälla i några minuter.
+- Förberedelser, degens svälltid och gräddning tar cirka 45 minuter. Frallorna måste sedan svalna helt innan de delas. Svalningstiden har inte mätts, så någon totaltid anges inte.

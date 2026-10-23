@@ -5,6 +5,7 @@ import path from "node:path";
 import test from "node:test";
 import { chromium, type Browser } from "playwright";
 import { recipeUi } from "../src/features/recipes/recipe-i18n";
+import { toolUi } from "../src/features/recipes/recipe-tools";
 
 const base = "http://127.0.0.1:4173/Reseptit";
 let server: ChildProcess;
@@ -34,6 +35,11 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.ok(await noJs.locator(".recipe-card-grid .recipe-card").count() > 0);
     assert.equal(await noJs.getByRole("search").count(), 0);
     assert.ok(await noJs.locator(".recipe-card-grid .recipe-card__link").count() > 0);
+    await noJs.goto(`${base}/kermainen-lohipata/`);
+    assert.equal(await noJs.locator(".recipe-actions button, .serving-control button, .recipe-steps input").count(), 0);
+    assert.ok(await noJs.locator(".rich-text ol li").count() > 0);
+    await noJs.getByRole("link", { name: toolUi.fi.jump }).click();
+    assert.ok(noJs.url().endsWith("#recipe-instructions"));
     await noJs.close();
 
     const page = await browser.newPage({ viewport: { width: 320, height: 800 } });
@@ -48,11 +54,36 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.getByRole("button", { name: "Lisää annos" }).click();
     assert.equal(await page.locator(".serving-control output").innerText(), "5");
     assert.match(await page.locator(".ingredient-list").innerText(), /750 g lohifilee/);
+    assert.equal(await page.locator(".recipe-scaled-note").innerText(), toolUi.fi.scaled(4));
+    await page.getByRole("link", { name: toolUi.fi.jump }).focus();
+    await page.keyboard.press("Enter");
+    assert.equal(await page.locator("#recipe-instructions").evaluate(element => element === document.activeElement), true);
+    const firstStep = page.getByRole("checkbox", { name: `${toolUi.fi.completed}: 1`, exact: true });
+    await firstStep.focus();
+    await page.keyboard.press("Space");
+    assert.equal(await firstStep.isChecked(), true);
+    assert.match(await page.locator(".step-controls").innerText(), /1\/7/);
+    await page.evaluate(() => { (window as unknown as { printCalled: boolean }).printCalled = false; window.print = () => { (window as unknown as { printCalled: boolean }).printCalled = true; }; });
+    await page.getByRole("button", { name: toolUi.fi.print }).click();
+    assert.equal(await page.evaluate(() => (window as unknown as { printCalled: boolean }).printCalled), true);
+    await page.emulateMedia({ media: "print" });
+    assert.equal(await page.locator(".print-servings").isVisible(), true);
+    assert.match(await page.locator(".print-servings").innerText(), /5/);
+    assert.equal(await page.locator(".recipe-actions").isVisible(), false);
+    assert.equal(await page.locator(".recipe-step-text").first().evaluate(element => getComputedStyle(element).textDecorationLine), "none");
+    assert.match(await page.locator(".ingredient-list").innerText(), /750 g lohifilee/);
+    await page.emulateMedia({ media: "screen", reducedMotion: "reduce" });
+    assert.equal(await page.locator("html").evaluate(element => getComputedStyle(element).scrollBehavior), "auto");
+    await page.getByRole("button", { name: toolUi.fi.reset }).click();
+    assert.equal(await firstStep.isChecked(), false);
+    await firstStep.check();
 
     await page.getByRole("link", { name: "Reseptit, etusivu" }).click();
     await page.getByRole("heading", { name: "Reseptit" }).waitFor();
     await page.getByRole("link", { name: "Kermainen lohipata" }).click();
     await page.getByRole("heading", { name: "Kermainen lohipata" }).waitFor();
+    assert.equal(await page.locator(".serving-control output").innerText(), "4");
+    assert.equal(await firstStep.isChecked(), false);
 
     await page.goto(`${base}/?q=lohi`);
     await page.getByRole("searchbox", { name: "Hae reseptejä" }).waitFor();
@@ -95,6 +126,16 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     for (const [locale, route] of [["fi", "/"], ["en", "/en/recipes/"], ["sv", "/sv/recept/"], ["th", "/th/recipes/"]] as const) {
       await page.goto(`${base}${route}`);
       await page.getByRole("searchbox", { name: recipeUi[locale].search }).waitFor();
+      await page.locator(".recipe-more-filters summary").click();
+      await page.getByLabel(toolUi[locale].time, { exact: true }).selectOption("60");
+      await page.getByLabel(toolUi[locale].cuisine, { exact: true }).selectOption("thai");
+      await page.getByLabel(toolUi[locale].ingredient, { exact: true }).selectOption("chicken");
+      assert.ok(await page.locator(".recipe-card").count() > 0);
+      assert.match(page.url(), /time=60&cuisine=thai&ingredient=chicken/);
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `${locale} advanced filters`);
+      await page.reload();
+      await page.waitForFunction(() => document.querySelector<HTMLSelectElement>("#recipe-cuisine")?.value === "thai");
+      await page.getByRole("button", { name: recipeUi[locale].resetFilters }).click();
       for (const selector of ['meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]']) {
         assert.equal(await page.locator(selector).getAttribute("content"), recipeUi[locale].intro, `${locale}: ${selector}`);
       }
@@ -159,6 +200,9 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.equal(await page.locator("html").getAttribute("lang"), recipe.locale);
       assert.equal(await page.locator(".recipe-languages a").count(), 4);
       assert.equal(await page.locator(".ingredient-list li").count(), 14);
+      assert.equal(await page.getByRole("button", { name: toolUi[recipe.locale as "en" | "sv" | "th"].print }).count(), 1);
+      await page.getByRole("checkbox").first().check();
+      assert.equal(await page.getByRole("checkbox").first().isChecked(), true);
       const increase = page.getByRole("button", { name: recipe.increase });
       await increase.focus();
       await page.keyboard.press("Enter");

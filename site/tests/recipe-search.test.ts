@@ -2,8 +2,35 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { siteContent } from "../src/generated/content.generated";
 import { emptyRecipeFilters, filterRecipes, normalizeSearchText, parseRecipeFilters, recipeFiltersToSearch } from "../src/features/recipes/recipe-search";
+import { recipeFacets } from "../src/content/recipe-facets";
 
 const finnishRecipes = siteContent.recipes.filter((recipe) => recipe.locale === "fi");
+
+test("browse facets derive from source metadata and remain identical across translations", () => {
+  assert.deepEqual(recipeFacets(["kananmuna"], []), { cuisine: null, ingredientGroups: ["eggs"] });
+  assert.deepEqual(recipeFacets(["broileri", "kikherne"], ["intialainen"]), { cuisine: "indian", ingredientGroups: ["chicken", "legumes"] });
+  for (const recipe of siteContent.recipes) {
+    const source = finnishRecipes.find(item => item.recipeId === recipe.recipeId)!;
+    assert.equal(recipe.cuisine, source.cuisine);
+    assert.deepEqual(recipe.ingredientGroups, source.ingredientGroups);
+  }
+});
+
+test("time, cuisine and main ingredient filters combine and survive URL round trips", () => {
+  const filters = { ...emptyRecipeFilters, maxTime: 60, cuisine: "thai", ingredient: "chicken" };
+  assert.deepEqual(parseRecipeFilters(recipeFiltersToSearch(filters), ["all"]), filters);
+  assert.deepEqual(parseRecipeFilters("?time=-5&cuisine=bad&ingredient=bad", ["all"]), emptyRecipeFilters);
+  const results = filterRecipes(finnishRecipes, filters, "fi");
+  assert.ok(results.length > 0);
+  assert.ok(results.every(recipe => recipe.timeTotalMin !== null && recipe.timeTotalMin <= 60 && recipe.cuisine === "thai" && recipe.ingredientGroups?.includes("chicken")));
+  assert.equal(filterRecipes([{ ...results[0], timeTotalMin: null }], filters, "fi").length, 0);
+  const thai = siteContent.recipes.filter(recipe => recipe.locale === "th");
+  assert.deepEqual(filterRecipes(thai, filters, "th").map(recipe => recipe.recipeId).sort(), results.map(recipe => recipe.recipeId).sort());
+  for (const buns of siteContent.recipes.filter(recipe => recipe.recipeId === "keto-kauralesesampylat")) {
+    assert.equal(buns.timeTotalMin, null, "45-minute work and baking estimate excludes unmeasured required cooling");
+    assert.match(buns.notesHtml, /45/);
+  }
+});
 
 test("search normalization folds Finnish and Swedish diacritics while preserving Thai tone marks", () => {
   assert.equal(normalizeSearchText("  ÄÄKKÖSET   LOHI ", "fi"), "aakkoset lohi");

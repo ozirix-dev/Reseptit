@@ -15,7 +15,7 @@ main_ingredient:
   - mantelijauho
 cooking_method:
   - uuni
-time_total_min: 45
+time_total_min: null
 difficulty: helppo
 tags:
   - keto
@@ -93,6 +93,7 @@ Psyllium sitoo pehmeää taikinaa, joka saa turvota ennen muotoilua.
 
 ## Muistiinpanot
 
-- Arvio on noin 3,5 g nettohiilihydraatteja, 9 g proteiinia ja 12 g rasvaa sämpylää kohti. Arvio on laskennallinen ja vaihtelee etenkin kauraleseiden, mantelijauhon ja raejuuston tuotemerkin mukaan; tarkista tuotepakkausten tiedot.
+- Arvio on noin 3,5 g nettohiilihydraatteja, 9 g proteiinia ja 12 g rasvaa sämpylää kohti. Suuntaa-antavat arvot vaihtelevat etenkin kauraleseiden, mantelijauhon ja raejuuston tuotemerkin mukaan; tarkista tuotepakkausten tiedot.
 - Kauralese ei ole hiilihydraatiton, joten resepti sisältää kauraa vain pienen määrän. Annostele sämpylät osaksi omaa päivän hiilihydraattimäärää.
 - Taikina on pehmeä ja tahmea psylliumin turpoamisen vuoksi. Jos seos on vielä 10 minuutin jälkeen liian löysä muotoiltavaksi, lisää psylliumia teelusikallinen kerrallaan ja anna turvota muutama minuutti.
+- Valmistelu, taikinan turvotus ja paistaminen vievät noin 45 minuuttia. Lisäksi sämpylöiden on jäähdyttävä kokonaan ennen halkaisemista. Jäähtymisaikaa ei ole mitattu, joten kokonaisaikaa ei ilmoiteta.

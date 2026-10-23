@@ -1,6 +1,6 @@
 import type { RecipeEntry, RecipeLocale } from "../types/content";
 
-export type RecipeSummary = Pick<RecipeEntry, "recipeId" | "locale" | "title" | "category" | "dietClass" | "routePath" | "image" | "description" | "timeTotalMin" | "difficulty" | "tags"> & {
+export type RecipeSummary = Pick<RecipeEntry, "recipeId" | "locale" | "title" | "category" | "dietClass" | "routePath" | "image" | "description" | "timeTotalMin" | "difficulty" | "tags" | "cuisine" | "ingredientGroups"> & {
   ingredients: Pick<RecipeEntry["ingredients"][number], "item" | "note">[];
 };
 export type TranslationLink = Pick<RecipeEntry, "locale" | "routePath">;
@@ -18,7 +18,7 @@ export function normalizePath(value: string): string {
 }
 export function summarizeRecipe(recipe: RecipeEntry): RecipeSummary {
   const { recipeId, locale, title, category, dietClass, routePath, image, description, timeTotalMin, difficulty, tags, ingredients } = recipe;
-  return { recipeId, locale, title, category, dietClass, routePath, image, description, timeTotalMin, difficulty, tags,
+  return { recipeId, locale, title, category, dietClass, routePath, image, description, timeTotalMin, difficulty, tags, cuisine: recipe.cuisine ?? null, ingredientGroups: recipe.ingredientGroups ?? [],
     ingredients: ingredients.map(({ item, note }) => ({ item, ...(note ? { note } : {}) })) };
 }
 export function contentForRoute(recipes: RecipeEntry[], route: string): RouteContent {

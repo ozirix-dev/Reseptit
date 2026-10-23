@@ -1,5 +1,6 @@
 import { createBrowserRouter, createMemoryRouter, Link, Outlet, useLocation, type RouteObject } from "react-router-dom";
 import { RecipePage } from "@/features/recipes/RecipePage";
+import { RecipeAbout } from "@/features/recipes/recipe-tools";
 import { RecipesPage } from "@/features/recipes/RecipesPage";
 import { recipeIndexPath, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { useContent } from "@/lib/content";
@@ -28,7 +29,7 @@ function SiteLayout() {
         </div>
       </header>
       <main id="main" className="site-main"><Outlet /></main>
-      <footer className="site-footer"><div className="container">{labels.footer}</div></footer>
+      <footer className="site-footer"><div className="container"><p>{labels.footer}</p><RecipeAbout locale={locale} /></div></footer>
     </div>
   );
 }

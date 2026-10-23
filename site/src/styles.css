@@ -105,7 +105,7 @@ button { font: inherit; }
 .article-breadcrumbs a { color: var(--accent); }
 .recipe-languages a:focus-visible, .serving-control button:focus-visible, .site-brand:focus-visible, .site-nav a:focus-visible, .article-breadcrumbs a:focus-visible, .skip-link:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 @media (min-width: 700px) { .recipe-filters { grid-template-columns: minmax(14rem, 1fr) repeat(2, minmax(10rem, .55fr)); align-items: end; } .recipe-filters > .recipe-filter-reset { justify-self: start; } .recipe-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (min-width: 1100px) { .recipe-filters { grid-template-columns: minmax(18rem, 1fr) repeat(2, minmax(12rem, .45fr)) auto; } .recipe-card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 1100px) { .recipe-card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (min-width: 740px) { .recipe-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .site-header__inner { align-items: flex-start; } .site-nav { width: 100%; } .site-nav a { padding-inline: .45rem; } .recipe-panel { padding: .95rem; } .recipe-panel__heading { align-items: flex-start; } }
 @media print {
@@ -116,6 +116,36 @@ button { font: inherit; }
   .recipe-layout { display: block; }
   .recipe-panel { margin-top: 1rem; padding: 0; border: 0; box-shadow: none; break-inside: avoid; }
   a { color: inherit; }
+}
+
+:where(a, button, input, select, summary, [tabindex]):focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.recipe-actions, .step-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.recipe-actions a, .recipe-actions button, .step-controls button { display: inline-flex; align-items: center; min-height: 44px; padding: .5rem .85rem; border: 1px solid #87988e; border-radius: .55rem; background: var(--surface); color: #19332e; font: inherit; cursor: pointer; }
+.recipe-actions a { color: white; background: var(--accent); border-color: var(--accent); text-decoration: none; font-weight: 650; }
+.step-controls { font-size: .9rem; justify-content: space-between; }
+.recipe-steps li > div { display: flex; align-items: flex-start; gap: .55rem; }
+.recipe-step-toggle { display: grid; place-items: center; flex: 0 0 44px; min-height: 44px; cursor: pointer; }
+.recipe-step-toggle input { width: 1.25rem; height: 1.25rem; accent-color: var(--accent); cursor: pointer; }
+.recipe-step-text { padding-block: .5rem; min-width: 0; }
+.recipe-steps [data-complete="true"] .recipe-step-text { text-decoration: line-through; color: var(--ink-soft); }
+.recipe-disclosure { color: var(--ink-soft); font-size: .9rem; }
+.recipe-more-filters { grid-column: 1 / -1; }
+.recipe-more-filters summary, .recipe-about summary { padding-block: .6rem; min-height: 44px; cursor: pointer; font-weight: 650; }
+.recipe-more-filters > div { display: grid; gap: .8rem; padding-top: .5rem; }
+.recipe-about { max-width: 75ch; margin-top: .6rem; }
+.recipe-about > div { display: grid; gap: .65rem; padding: .5rem 0; }
+.print-servings { display: none; }
+.serving-control button { width: 44px; height: 44px; }
+#recipe-instructions { scroll-margin-top: 1rem; }
+@media (min-width: 700px) { .recipe-more-filters > div { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+  .recipe-actions, .recipe-image, .step-controls, .recipe-step-toggle { display: none !important; }
+  .print-servings { display: block; font-weight: 700; }
+  .recipe-steps [data-complete="true"] .recipe-step-text { text-decoration: none; color: #000; }
+  .recipe-panel { break-inside: auto; }
+  .recipe-panel h2 { break-after: avoid; }
+  .ingredient-list li, .recipe-steps li { break-inside: avoid; }
 }
 
 /* Reserve enhancement space only when scripting is enabled. No dead form without JS. */
