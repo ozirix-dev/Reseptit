@@ -11,6 +11,13 @@ test("browse facets derive from source metadata and remain identical across tran
   assert.deepEqual(recipeFacets(["broileri", "kikherne"], ["intialainen"]), { cuisine: "indian", ingredientGroups: ["chicken", "legumes"] });
   assert.equal(recipeFacets(["naudan jauheliha"], ["meksikolainen"]).cuisine, "mexican");
   assert.equal(recipeFacets(["lohi"], ["japanilainen"]).cuisine, "japanese");
+  assert.equal(recipeFacets([], ["korealainen"]).cuisine, "korean");
+  assert.equal(recipeFacets([], ["vietnamilainen"]).cuisine, "vietnamese");
+  assert.equal(recipeFacets([], ["indonesialainen"]).cuisine, "indonesian");
+  assert.equal(recipeFacets([], ["malesialainen"]).cuisine, "malaysian");
+  assert.equal(recipeFacets([], ["karibia"]).cuisine, "caribbean");
+  assert.equal(recipeFacets([], ["lähi-itä"]).cuisine, "middle-eastern");
+  assert.equal(recipeFacets([], ["pohjoisafrikkalainen"]).cuisine, "north-african");
   for (const recipe of siteContent.recipes) {
     const source = finnishRecipes.find(item => item.recipeId === recipe.recipeId)!;
     assert.equal(recipe.cuisine, source.cuisine);

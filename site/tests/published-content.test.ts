@@ -197,6 +197,29 @@ test("the twenty Mediterranean recipes are published in Finnish with their image
   }
 });
 
+test("the regional recipe additions are published in Finnish, categorized, and illustrated", async () => {
+  const expected = new Map([
+    ["bulgogi", "korean"], ["bibimbap", "korean"], ["kimchi-jjigae", "korean"],
+    ["pho-bo", "vietnamese"], ["bun-cha-hanoi", "vietnamese"], ["goi-cuon", "vietnamese"],
+    ["rendang-padang", "indonesian"], ["sate-ayam", "indonesian"], ["nasi-lemak", "malaysian"],
+    ["jerk-kana", "caribbean"], ["ropa-vieja", "caribbean"], ["falafel", "middle-eastern"], ["harira", "north-african"],
+    ["pannacotta-marjakastikkeella", null], ["marjakiisseli-vaniljakastikkeella", null], ["meheva-suklaakakku", null],
+  ]);
+  const recipes = siteContent.recipes.filter(recipe => recipe.locale === "fi" && expected.has(recipe.recipeId));
+  assert.equal(recipes.length, expected.size);
+
+  const repoDir = path.resolve(import.meta.dirname, "../..");
+  for (const recipe of recipes) {
+    assert.ok(recipe.image, `${recipe.recipeId} has an image`);
+    assert.ok(recipe.ingredients.length > 0, `${recipe.recipeId} has structured ingredients`);
+    assert.ok(recipe.instructionsText.length > 0, `${recipe.recipeId} has preparation steps`);
+    const imagePath = recipe.image.src.split("/kuvat/").at(-1);
+    assert.ok(imagePath);
+    assert.ok((await readFile(path.join(repoDir, "kuvat", imagePath))).byteLength > 0, recipe.recipeId);
+    assert.equal(recipe.cuisine, expected.get(recipe.recipeId), recipe.recipeId);
+  }
+});
+
 test("the high-protein macaroni bake has four aligned published language versions", () => {
   const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === "jauheliha-makaronilaatikko");
   assert.deepEqual(translations.map((recipe) => recipe.locale).sort(), ["en", "fi", "sv", "th"]);
