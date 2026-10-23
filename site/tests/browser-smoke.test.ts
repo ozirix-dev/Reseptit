@@ -3,7 +3,8 @@ import assert from "node:assert/strict";
 import { spawn, type ChildProcess } from "node:child_process";
 import path from "node:path";
 import test from "node:test";
-import { chromium, type Browser } from "playwright";
+import type { Browser } from "playwright";
+import { launchBrowser } from "./launch-browser";
 import { recipeUi } from "../src/features/recipes/recipe-i18n";
 import { toolUi } from "../src/features/recipes/recipe-tools";
 
@@ -23,7 +24,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
   server = spawn(process.execPath, [path.join(import.meta.dirname, "..", "node_modules", "vite", "bin", "vite.js"), "preview", "--host", "127.0.0.1", "--port", "4173", "--strictPort"], { stdio: "ignore" });
   try {
     await waitForServer();
-    browser = await chromium.launch({ headless: true, executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH });
+    browser = await launchBrowser();
     t.after(async () => { await browser.close(); server.kill(); });
 
     const noJs = await browser.newPage({ javaScriptEnabled: false });

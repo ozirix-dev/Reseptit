@@ -56,10 +56,10 @@ jobs:
         working-directory: site
       - run: npm run test:static
         working-directory: site
-      - run: npx playwright install --with-deps chromium
-        working-directory: site
       - run: npm run test:browser
         working-directory: site
+        env:
+          PLAYWRIGHT_BROWSER_CHANNEL: chrome
       - uses: actions/configure-pages@v6
         if: github.event_name != 'pull_request'
       - uses: actions/upload-pages-artifact@v5

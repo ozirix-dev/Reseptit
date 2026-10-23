@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { spawn } from "node:child_process";
 import path from "node:path";
-import { chromium } from "playwright";
+import { launchBrowser } from "./launch-browser";
 import { siteContent } from "../src/generated/content.generated";
 import { localeIndexes } from "../src/content/route-data";
 
@@ -12,7 +12,7 @@ test("bounded page data, navigation cache, failures, history and multilingual st
   let output = "";
   server.stdout.on("data", (data) => { output += data; });
   server.stderr.on("data", (data) => { output += data; });
-  const browser = await chromium.launch({ headless: true, executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH });
+  const browser = await launchBrowser();
   try {
     let ready = false;
     for (let i = 0; i < 60; i++) {
