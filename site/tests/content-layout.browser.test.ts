@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { spawn } from "node:child_process";
 import path from "node:path";
-import { chromium } from "playwright";
+import { launchBrowser } from "./launch-browser";
 import { siteContent } from "../src/generated/content.generated";
 const localeIndexes = { fi: "/", en: "/en/recipes/", sv: "/sv/recept/", th: "/th/recipes/" };
 
@@ -12,7 +12,7 @@ test("multilingual content, image loading, responsive layout and JavaScript-free
   let output = "";
   server.stdout.on("data", (data) => { output += data; });
   server.stderr.on("data", (data) => { output += data; });
-  const browser = await chromium.launch({ headless: true, executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH });
+  const browser = await launchBrowser();
   try {
     let ready = false;
     for (let i = 0; i < 60; i++) {

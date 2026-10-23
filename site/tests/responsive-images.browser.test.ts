@@ -2,14 +2,14 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { chromium } from "playwright";
+import { launchBrowser } from "./launch-browser";
 import { localImageServer } from "./helpers/local-image-server";
 
 // Can also record the frozen baseline via IMAGE_TEST_ROOT/IMAGE_TEST_PHASE.
 test("fresh browser contexts choose correctly sized local images without duplicate loads", async () => {
   const phase = process.env.IMAGE_TEST_PHASE ?? "after";
   const server = await localImageServer(process.env.IMAGE_TEST_ROOT ?? "dist");
-  const browser = await chromium.launch({ headless: true, executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH });
+  const browser = await launchBrowser();
   const rows: unknown[] = [];
   try {
     for (const width of [320, 375, 390, 768, 1024, 1440]) for (const dpr of [1, 2, 3]) {
