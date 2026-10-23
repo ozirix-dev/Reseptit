@@ -66,17 +66,52 @@ test("the ten additional Thai recipes are published in Finnish with their image 
   }
 });
 
-test("the new Finnish breakfast and dessert collections each contain ten published recipes with images", () => {
+test("the Finnish breakfast and dessert collections each contain twenty and ten published recipes with images", () => {
   const breakfast = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && recipe.category === "aamupala");
   const desserts = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && recipe.category === "jalkiruoka" && [
     "vhh-brita-kakku", "keto-mutakakku", "vhh-mokkapalat", "keto-suklaakeksit", "vhh-omenapiirakka",
     "vhh-juustokakku", "vhh-raparperipiirakka", "vhh-korvapuustit", "vhh-mansikkakakku", "vhh-letut",
   ].includes(recipe.recipeId));
-  assert.equal(breakfast.length, 10);
+  assert.equal(breakfast.length, 20);
   assert.equal(desserts.length, 10);
   for (const recipe of [...breakfast, ...desserts]) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
     assert.equal(recipe.nutrition.carbsNetG, null, "unverified nutrition values are not invented");
+  }
+});
+
+test("the 40 new recipes are unique, published in Finnish, and have their own image assets", async () => {
+  const expectedIds = [
+    "marjainen-chiavanukas", "kaakao-kookos-chia", "rahka-marjakerroskulho", "siemengranola-jogurtilla", "savulohi-avokadokulho",
+    "kurkku-oliivi-aamiaiskulho", "pellava-puuro-pahkinoilla", "yrttituorejuusto-kinkkurullat", "raejuusto-pesto-kasviskulho", "paahdettu-aamiaismunakoiso",
+    "hernekeitto-savupotkalla", "kanaviillokki-kukkakaalilla", "siskonmakkarakeitto-juurekset", "janssoninkiusaus-juuriselleri", "lindstrominpihvit-kaalilla",
+    "uunimakkara-sipulipedilla", "silakkapihvit-tilli-kermakastike", "lanttulaatikko-kermainen", "liha-juureskeitto-perunaton", "maksalaatikko-kukkakaalilla",
+    "kreikkalainen-kanavuoka-oliiveilla", "uunikanapasta-kesakurpitsa", "kermainen-kanasienipannu", "sitruuna-yrttikana-parsa", "kanapyorykat-tomaattikastike",
+    "kookos-lime-kanacurry", "kanasalaatti-pesto-mozzarella", "kanakeitto-pinaatti-sitruuna", "hunaja-sinappikana-kaalilla", "kana-parmesaanipannu-parsakaali",
+    "chili-con-carne-kukkakaaliriisi", "kana-fajita-pelti", "kana-enchilada-kukkakaalivuoka", "tacokulho-nauta-avokado", "carnitas-salaattitacot",
+    "miso-lohi-paksoi", "shoyu-kanakeitto-konjac", "kana-yakitori-kaalilla", "okonomiyaki-kaaliletut", "japanilainen-curry-tofulla",
+  ];
+  const recipes = siteContent.recipes.filter(recipe => expectedIds.includes(recipe.recipeId));
+  assert.equal(recipes.length, 40);
+  assert.deepEqual(recipes.map(recipe => recipe.recipeId).sort(), [...expectedIds].sort());
+  assert.equal(new Set(recipes.map(recipe => recipe.recipeId)).size, 40);
+  assert.equal(new Set(recipes.map(recipe => recipe.image?.src)).size, 40);
+  assert.equal(recipes.filter(recipe => recipe.category === "aamupala").length, 10);
+  assert.equal(recipes.filter(recipe => recipe.tags.includes("suomalainen")).length, 10);
+  assert.equal(recipes.filter(recipe => ["kookos-lime-kanacurry", "kermainen-kanasienipannu", "kreikkalainen-kanavuoka-oliiveilla", "sitruuna-yrttikana-parsa", "kanapyorykat-tomaattikastike", "kanasalaatti-pesto-mozzarella", "kanakeitto-pinaatti-sitruuna", "hunaja-sinappikana-kaalilla", "kana-parmesaanipannu-parsakaali", "uunikanapasta-kesakurpitsa"].includes(recipe.recipeId)).length, 10);
+  assert.equal(recipes.filter(recipe => recipe.cuisine === "mexican").length, 5);
+  assert.equal(recipes.filter(recipe => recipe.cuisine === "japanese").length, 5);
+  for (const recipe of recipes.filter(recipe => recipe.category === "aamupala")) {
+    assert.ok(recipe.ingredients.every(ingredient => !/kananmuna/i.test(ingredient.item)), "breakfast recipes are egg-free");
+  }
+  const repoDir = path.resolve(import.meta.dirname, "../..");
+  for (const recipe of recipes) {
+    assert.equal(recipe.locale, "fi");
+    assert.ok(recipe.image, `${recipe.recipeId} has an image`);
+    const relativeImagePath = recipe.image.src.split("/kuvat/").at(-1);
+    assert.ok(relativeImagePath);
+    assert.ok((await readFile(path.join(repoDir, "kuvat", relativeImagePath))).byteLength > 0);
+    assert.equal(recipe.nutrition.carbsNetG, null, `${recipe.recipeId} has no invented nutrition total`);
   }
 });
 

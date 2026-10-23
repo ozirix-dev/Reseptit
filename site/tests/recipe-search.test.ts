@@ -9,6 +9,8 @@ const finnishRecipes = siteContent.recipes.filter((recipe) => recipe.locale === 
 test("browse facets derive from source metadata and remain identical across translations", () => {
   assert.deepEqual(recipeFacets(["kananmuna"], []), { cuisine: null, ingredientGroups: ["eggs"] });
   assert.deepEqual(recipeFacets(["broileri", "kikherne"], ["intialainen"]), { cuisine: "indian", ingredientGroups: ["chicken", "legumes"] });
+  assert.equal(recipeFacets(["naudan jauheliha"], ["meksikolainen"]).cuisine, "mexican");
+  assert.equal(recipeFacets(["lohi"], ["japanilainen"]).cuisine, "japanese");
   for (const recipe of siteContent.recipes) {
     const source = finnishRecipes.find(item => item.recipeId === recipe.recipeId)!;
     assert.equal(recipe.cuisine, source.cuisine);
@@ -53,11 +55,14 @@ test("time, cuisine and main ingredient filters combine and survive URL round tr
   assert.ok(results.every(recipe => recipe.timeTotalMin !== null && recipe.timeTotalMin <= 60 && recipe.cuisine === "thai" && recipe.ingredientGroups?.includes("chicken")));
   assert.equal(filterRecipes([{ ...results[0], timeTotalMin: null }], filters, "fi").length, 0);
   const thai = siteContent.recipes.filter(recipe => recipe.locale === "th");
-  assert.deepEqual(filterRecipes(thai, filters, "th").map(recipe => recipe.recipeId).sort(), results.map(recipe => recipe.recipeId).sort());
+  const resultsWithThaiVersion = results.filter(recipe => thai.some(thaiRecipe => thaiRecipe.recipeId === recipe.recipeId));
+  assert.deepEqual(filterRecipes(thai, filters, "th").map(recipe => recipe.recipeId).sort(), resultsWithThaiVersion.map(recipe => recipe.recipeId).sort());
   for (const buns of siteContent.recipes.filter(recipe => recipe.recipeId === "keto-kauralesesampylat")) {
     assert.equal(buns.timeTotalMin, null, "45-minute work and baking estimate excludes unmeasured required cooling");
     assert.match(buns.notesHtml, /45/);
   }
+  assert.equal(filterRecipes(finnishRecipes, { ...emptyRecipeFilters, cuisine: "mexican" }, "fi").length, 5);
+  assert.equal(filterRecipes(finnishRecipes, { ...emptyRecipeFilters, cuisine: "japanese" }, "fi").length, 5);
 });
 
 test("search normalization folds Finnish and Swedish diacritics while preserving Thai tone marks", () => {
