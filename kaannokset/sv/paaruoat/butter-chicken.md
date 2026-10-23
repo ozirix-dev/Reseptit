@@ -75,6 +75,10 @@ ingredients:
     unit: ""
     item: färsk koriander
     note: för servering
+  - amount: null
+    unit: ""
+    item: olja
+    note: en skvätt för att bryna kycklingen
 source_language: fi
 source_recipe: reseptit/paaruoat/butter-chicken.md
 translation_of: butter-chicken
@@ -91,12 +95,12 @@ Mjukt kryddad butter chicken tillagas i yoghurtmarinad och en rik tomatgräddså
 ## Tillagning
 
 1. Blanda yoghurt, citronsaft, garam masala, spiskummin och hälften av saltet. Tillsätt kycklingen och låt marinera i minst 20 minuter.
-2. Bryn kycklingen i en panna i omgångar i en skvätt olja. Avsätta.
-3. Smält smöret i en kastrull. Fräs löken tills den är mjuk. Tillsätt vitlök, ingefära och paprika; stek en minut.
-4. Tillsätt krossade tomater och låt sjuda i 10 minuter. Puré såsen om så önskas.
-5. Blanda i grädden och honungen. Tillsätt kycklingen och låt sjuda tills den är genomstekt i 10–15 minuter.
-6. Krydda med sista saltet och servera avslutat med koriander.
+2. Bryn kycklingen i en stekpanna i omgångar i en skvätt olja. Lägg åt sidan.
+3. Smält smöret i stekpannan. Fräs löken tills den är mjuk. Tillsätt vitlök, ingefära och paprikapulver; fräs i en minut.
+4. Tillsätt krossade tomater och låt sjuda i 10 minuter. Mixa såsen slät om du vill.
+5. Rör ner grädden och tillsätt honung om du vill. Lägg i kycklingen och låt sjuda i 10–15 minuter, tills den är genomkokt.
+6. Smaka av med resten av saltet och servera med koriander.
 
 ## Anteckningar
 
-– Garam Masalas sälta och heta varierar från märke till märke.
+- Sältan och hettan i garam masala varierar mellan olika märken.

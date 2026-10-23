@@ -176,6 +176,31 @@ test("fish-stock prose regressions include titles, descriptions, notes and image
   }
 });
 
+test("butter chicken lists frying oil and preserves optional honey and cooking meaning", async () => {
+  const result = await auditTranslations();
+  const recipes = [...result.publishedSources, ...result.publishedTranslations];
+  const expectations = {
+    fi: { oil: "öljyä", optional: /halutessasi hunaja/, aside: /Nosta sivuun/, minute: /minuutti/ },
+    en: { oil: "oil", optional: /honey if desired/, aside: /Set aside/, minute: /a minute/ },
+    sv: { oil: "olja", optional: /honung om du vill/, aside: /Lägg åt sidan/, minute: /en minut/ },
+    th: { oil: "น้ำมัน", optional: /น้ำผึ้งหากต้องการ/, aside: /ตักพักไว้/, minute: /หนึ่งนาที/ },
+  };
+  for (const [locale, expected] of Object.entries(expectations)) {
+    const recipe = recipes.find((r) => r.data.recipe_id === "butter-chicken" && r.data.language === locale)!;
+    assert.ok(recipe, locale);
+    const oil = recipe.data.ingredients.filter((i) => i.item === expected.oil);
+    assert.equal(oil.length, 1, `${locale}: frying oil must appear exactly once`);
+    assert.equal(oil[0].amount, null, `${locale}: no invented oil amount`);
+    assert.equal(oil[0].unit, "");
+    assert.ok(oil[0].note);
+    assert.match(recipe.content.match(/^2\. (.+)$/m)?.[1] ?? "", expected.aside);
+    assert.match(recipe.content.match(/^3\. (.+)$/m)?.[1] ?? "", expected.minute);
+    assert.match(recipe.content.match(/^5\. (.+)$/m)?.[1] ?? "", expected.optional);
+    assert.equal(recipe.data.servings, 4);
+    assert.equal(recipe.data.time_total_min, 60);
+  }
+});
+
 test("audit output distinguishes structural passes from pending human language review", async () => {
   const result = await auditTranslations();
   assert.ok(result.rows.every((row) => row.language_review.includes("independent human language review pending")));

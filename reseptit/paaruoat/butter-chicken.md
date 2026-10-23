@@ -75,6 +75,10 @@ ingredients:
     unit: ""
     item: tuoretta korianteria
     note: tarjoiluun
+  - amount: null
+    unit: ""
+    item: öljyä
+    note: tilkka broilerin ruskistamiseen
 translation_languages:
   - en
   - sv
@@ -96,7 +100,7 @@ Pehmeästi maustettu voikana kypsyy jogurttimarinadissa ja täyteläisessä toma
 2. Ruskista broileri pannulla erissä öljytilkassa. Nosta sivuun.
 3. Sulata voi pannulla. Kuullota sipuli pehmeäksi. Lisää valkosipuli, inkivääri ja paprikajauhe; paista minuutti.
 4. Lisää tomaattimurska ja hauduta 10 minuuttia. Soseuta kastike halutessasi.
-5. Sekoita joukkoon kerma ja hunaja. Lisää broileri ja hauduta kypsäksi 10–15 minuuttia.
+5. Sekoita joukkoon kerma ja halutessasi hunaja. Lisää broileri ja hauduta kypsäksi 10–15 minuuttia.
 6. Mausta loppusuolalla ja tarjoa korianterilla viimeisteltynä.
 
 ## Muistiinpanot
