@@ -108,7 +108,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.equal(await page.locator(".recipe-card__image[loading=eager]").count(), 1);
     assert.equal(await page.locator(".recipe-card__image").evaluateAll((images) => images.filter((image) => image.getAttribute("fetchpriority") === "high").length), 1);
     assert.equal(await page.locator(".recipe-card__image[loading=lazy]").count(), await page.locator(".recipe-card__image").count() - 1);
-    assert.equal(await page.locator(".recipe-card h3").count(), await page.locator(".recipe-card").count());
+    assert.equal(await page.locator(".recipe-card h2").count(), await page.locator(".recipe-card").count());
 
     for (const [width, columns] of [[320, 1], [375, 1], [390, 1], [768, 2], [1024, 2], [1440, 3]]) {
       await page.setViewportSize({ width, height: 900 });

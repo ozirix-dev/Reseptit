@@ -51,8 +51,8 @@ test("all static index descriptions use their locale text before JavaScript", as
 test("recipe index is prerendered and links only published languages", async () => {
   const html = await readFile(path.join(dist, "index.html"), "utf8");
   assert.match(html, /<h1>Reseptit<\/h1>/);
-  assert.match(html, /<a class="recipe-card__link" href="\/Reseptit\/kermainen-lohipata\/"[\s\S]*?<h3 class="recipe-card__title">Kermainen lohipata<\/h3>/);
-  assert.match(html, /<a class="recipe-card__link" href="\/Reseptit\/keto-kauralesesampylat\/"[\s\S]*?<h3 class="recipe-card__title">Keto-kauralesesämpylät<\/h3>/);
+  assert.match(html, /<a class="recipe-card__link" href="\/Reseptit\/kermainen-lohipata\/"[\s\S]*?<h2 class="recipe-card__title">Kermainen lohipata<\/h2>/);
+  assert.match(html, /<a class="recipe-card__link" href="\/Reseptit\/keto-kauralesesampylat\/"[\s\S]*?<h2 class="recipe-card__title">Keto-kauralesesämpylät<\/h2>/);
   assert.match(html, /<div class="recipe-card-grid">/);
   assert.doesNotMatch(html, /<form class="recipe-filters" role="search"/);
   assert.doesNotMatch(html, /id="recipe-search"/);
