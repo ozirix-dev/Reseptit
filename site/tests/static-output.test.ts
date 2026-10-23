@@ -6,6 +6,18 @@ import { recipeUi } from "../src/features/recipes/recipe-i18n";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
 
+test("Italian bake estimated total time reaches visible notes and Recipe JSON-LD in every locale", async () => {
+  const { siteContent } = await import("../src/generated/content.generated");
+  const recipes = siteContent.recipes.filter((recipe) => recipe.recipeId === "italian-pata");
+  assert.equal(recipes.length, 4);
+  for (const recipe of recipes) {
+    const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+    const schema = JSON.parse(html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/)![1]);
+    assert.equal(schema.totalTime, "PT60M");
+    assert.match(html, /Arvioitu kokonaisaika|Estimated total time|Uppskattad totaltid|เวลารวมโดยประมาณ/);
+  }
+});
+
 test("all static index descriptions use their locale text before JavaScript", async () => {
   for (const [locale, route] of [["fi", ""], ["en", "en/recipes"], ["sv", "sv/recept"], ["th", "th/recipes"]] as const) {
     const html = await readFile(path.join(dist, route, "index.html"), "utf8");

@@ -5,6 +5,7 @@ url_slug: italian-pata
 category: paaruoka
 language: sv
 servings: 4
+time_total_min: 60
 main_ingredient:
   - jauheliha
   - kesäkurpitsa
@@ -85,4 +86,5 @@ Kryddad köttfärs, zucchini, spetsig paprika och mozzarella bakas tillsammans i
 
 ## Anteckningar
 
+- Uppskattad totaltid är cirka 60 minuter: förberedelser, bryning och att lägga ihop gratängen tar cirka 25 minuter, gräddningen 20 minuter och vilan minst 15 minuter. Värm ugnen under förberedelserna. Tiden är en uppskattning utifrån arbetsmomenten, inte ett tidtaget prov i köket; tillagning av salladen ingår inte.
 - Näringsvärden är vägledande uppskattningar för en portion, när receptet ger fyra portioner.

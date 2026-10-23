@@ -201,6 +201,20 @@ test("butter chicken lists frying oil and preserves optional honey and cooking m
   }
 });
 
+test("Italian bake timing is an explicit estimate including preparation, baking and rest in all locales", async () => {
+  const result = await auditTranslations();
+  const recipes = [...result.publishedSources, ...result.publishedTranslations].filter((r) => r.data.recipe_id === "italian-pata");
+  assert.equal(recipes.length, 4);
+  const estimateWords = { fi: /Arvioitu kokonaisaika/, en: /Estimated total time/, sv: /Uppskattad totaltid/, th: /เวลารวมโดยประมาณ/ };
+  for (const recipe of recipes) {
+    assert.equal(recipe.data.time_total_min, 60);
+    assert.match(recipe.content, estimateWords[recipe.data.language as keyof typeof estimateWords]);
+    assert.match(recipe.content, /60.*25.*20.*15/);
+    assert.match(recipe.content.match(/^8\. (.+)$/m)?.[1] ?? "", /20/);
+    assert.match(recipe.content.match(/^9\. (.+)$/m)?.[1] ?? "", /15/);
+  }
+});
+
 test("audit output distinguishes structural passes from pending human language review", async () => {
   const result = await auditTranslations();
   assert.ok(result.rows.every((row) => row.language_review.includes("independent human language review pending")));
