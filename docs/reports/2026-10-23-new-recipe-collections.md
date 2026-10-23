@@ -19,7 +19,7 @@ hakemiston ruokakulttuurisuodattimiin neljällä käyttöliittymäkielellä.
 
 ## Tarkistukset
 
-- Julkaistujen sisältöjen testit: 44/44 läpi
+- Julkaistujen sisältöjen testit: 45/45 läpi
 - Käännösrakennetestit: 26/26 läpi
 - Kuvaputken testit: 7/7 läpi
 - Staattiset sivu- ja SEO-testit: 19/19 läpi

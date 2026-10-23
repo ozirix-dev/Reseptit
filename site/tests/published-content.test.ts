@@ -115,6 +115,19 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
   }
 });
 
+test("new recipe totals, servings, and ingredients match the preparation steps", () => {
+  const recipes = new Map(siteContent.recipes.filter(recipe => recipe.locale === "fi").map(recipe => [recipe.recipeId, recipe]));
+  assert.equal(recipes.get("marjainen-chiavanukas")?.timeTotalMin, 255);
+  assert.equal(recipes.get("kaakao-kookos-chia")?.timeTotalMin, 255);
+  assert.equal(recipes.get("hernekeitto-savupotkalla")?.timeTotalMin, 750);
+  assert.match(recipes.get("hernekeitto-savupotkalla")?.notesHtml ?? "", /12 tunnin/);
+  assert.match(recipes.get("savulohi-avokadokulho")?.instructionsText.join(" ") ?? "", /neljään kulhoon tai lautaselle/);
+  assert.match(recipes.get("lanttulaatikko-kermainen")?.instructionsText.join(" ") ?? "", /siirappi/);
+  const jansson = recipes.get("janssoninkiusaus-juuriselleri")!;
+  assert.equal(jansson.ingredients.find(ingredient => ingredient.item.includes("anjovis"))?.item, "anjovisfileitä mausteliemessä");
+  assert.match(jansson.instructionsText.join(" "), /anjovisten maustelientä/);
+});
+
 test("the twenty Indian recipes are published in Finnish with their image assets", async () => {
   const expectedIds = [
     "aloo-paratha", "amritsari-kala", "butter-chicken", "chettinad-kana", "chole-bhature",

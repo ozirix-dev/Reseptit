@@ -62,7 +62,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 1. Sekoita jogurtti, sitruunamehu, hienonnettu tilli ja mustapippuri kastikkeeksi.
 2. Puolita avokado, poista kivi ja leikkaa hedelmäliha viipaleiksi. Viipaloi kurkku.
-3. Asettele rucola, kurkku, avokado ja savulohi kahdelle lautaselle.
+3. Jaa rucola, kurkku, avokado ja savulohi neljään kulhoon tai lautaselle.
 4. Lisää kastike ja tarjoa heti.
 
 ## Muistiinpanot

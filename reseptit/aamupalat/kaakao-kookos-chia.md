@@ -37,7 +37,7 @@ ingredients:
     unit: ""
     item: makeutusainetta maun mukaan
 servings: 4
-time_total_min: 15
+time_total_min: 255
 difficulty: Helppo
 image:
   src: aamupalat/kaakao-kookos-chia.webp

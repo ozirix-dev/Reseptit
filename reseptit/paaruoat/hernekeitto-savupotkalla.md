@@ -40,7 +40,7 @@ ingredients:
     unit: rkl
     item: sinappia tarjoiluun
 servings: 4
-time_total_min: 150
+time_total_min: 750
 difficulty: Helppo
 image:
   src: paaruoat/hernekeitto-savupotkalla.webp
@@ -68,4 +68,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Muistiinpanot
 
-Hernekeitto sisältää runsaasti hiilihydraatteja eikä ole keto-ruoka. Pitkä liotusaika ja haudutus kuuluvat valmistukseen.
+Hernekeitto sisältää runsaasti hiilihydraatteja eikä ole keto-ruoka. Kokonaisaika sisältää noin 12 tunnin yön yli liotuksen ja haudutuksen.

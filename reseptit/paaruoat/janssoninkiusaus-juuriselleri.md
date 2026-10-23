@@ -20,7 +20,7 @@ ingredients:
     item: juuriselleriä
   - amount: 125
     unit: g
-    item: anjovisfileitä öljyssä
+    item: anjovisfileitä mausteliemessä
   - amount: 1
     unit: kpl
     item: sipuli
@@ -62,10 +62,10 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 1. Kuumenna uuni 200 asteeseen. Kuori juuriselleri ja leikkaa ohuiksi suikaleiksi. Hienonna sipuli.
 2. Voitele uunivuoka. Lado siihen juuriselleri, sipuli ja paloitellut anjovikset kerroksittain.
-3. Sekoita kerma ja maito. Kaada vuokaan ja lisää pari ruokalusikallista anjovislientä. Mausta kevyesti pippurilla.
+3. Sekoita kerma ja maito. Kaada vuokaan ja lisää pari ruokalusikallista anjovisten maustelientä. Mausta kevyesti pippurilla.
 4. Paista 50–60 minuuttia, kunnes selleri on pehmeää ja pinta kullanruskea. Peitä foliolla, jos pinta tummuu liikaa.
 5. Anna vetäytyä 10 minuuttia ja ripottele pinnalle tilli.
 
 ## Muistiinpanot
 
-Anjovis on suolaista, joten lisäsuolaa ei yleensä tarvita.
+Valitse mausteliemeen säilöttyjä anjovisfileitä, ei öljyyn säilöttyjä sardellifileitä. Anjovis on suolaista, joten lisäsuolaa ei yleensä tarvita.

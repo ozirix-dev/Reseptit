@@ -61,7 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 ## Valmistus
 
 1. Kuori ja kuutioi lanttu. Keitä suolatussa vedessä 20–25 minuuttia pehmeäksi. Valuta huolellisesti.
-2. Soseuta lanttu ja sekoita joukkoon voi, kerma ja kananmuna. Mausta suolalla, muskottipähkinällä ja valkopippurilla.
+2. Soseuta lanttu ja sekoita joukkoon voi, kerma ja kananmuna. Lisää halutessasi siirappi. Mausta suolalla, muskottipähkinällä ja valkopippurilla.
 3. Kaada seos voideltuun uunivuokaan ja tasoita pinta. Lisää pinnalle muutama voinokare.
 4. Paista 175 asteessa noin 60 minuuttia, kunnes pinta saa väriä ja laatikko on kypsä.
 5. Anna vetäytyä 10 minuuttia ennen tarjoamista.
