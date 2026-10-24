@@ -13,6 +13,10 @@ cooking_method:
   - paistinpannu
   - liesi
 servings: 4
+carbs_net_per_serving_g: 7.35
+carbs_total_per_serving_g: 10.88
+protein_per_serving_g: 35.06
+fat_per_serving_g: 31.01
 time_total_min: 40
 difficulty: lätt
 tags:

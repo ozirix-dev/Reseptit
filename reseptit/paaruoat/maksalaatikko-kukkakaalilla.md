@@ -43,6 +43,10 @@ ingredients:
     unit: g
     item: puolukoita tarjoiluun
 servings: 4
+carbs_net_per_serving_g: 12.07
+carbs_total_per_serving_g: 15.70
+protein_per_serving_g: 25.62
+fat_per_serving_g: 25.44
 time_total_min: 65
 difficulty: Helppo
 image:

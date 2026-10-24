@@ -1,9 +1,11 @@
 {
-  "sourceRevision": "cc2ecb4c666e44b81c0e35ee1ba4700cf4092a57",
-  "sourceWorkingTreeChanges": "M  site/scripts/nutrition-model.ts",
+  "sourceRevision": "f3c2b7615cf35d85ba2924285bd615d7696f7c67",
+  "sourceWorkingTreeChanges": "M docs/nutrition/food-records.json\n M reseptit/jalkiruoat/vhh-mustikkapiirakka.md\n M reseptit/paaruoat/broileri-kukkakaaligratiini.md\n M reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md\n M reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md\n M reseptit/paaruoat/kanakorma-kukkakaaliriisilla.md\n M reseptit/paaruoat/maksalaatikko-kukkakaalilla.md\n M reseptit/paaruoat/paistettu-maksa-pekonilla.md\n M reseptit/paaruoat/parsakaali-sinihomejuustofrittata.md\n M reseptit/paaruoat/raejuusto-uunimunakas.md\n M reseptit/paaruoat/uuniporsas-kermakastikkeessa-vhh.md\n M site/scripts/nutrition-audit.ts\n M site/scripts/nutrition-provenance.ts\n?? docs/nutrition/estimates-2026-10-24-batch-3.md",
   "sourceInputHashes": {
+    "docs/nutrition/estimates-2026-10-24-batch-2.md": "423355906d1cc88e800f647c02f313ec7eaae8bd0d543b7515336f5505e806fa",
+    "docs/nutrition/estimates-2026-10-24-batch-3.md": "fe689b3d3fd8977db556c2bd27493212482ef882ad2785c497525686f35022c3",
     "docs/nutrition/estimates-2026-10-24.md": "2d2458d8a65902f6e6b45a010e40202aea7e892d8bc5e2fc11876f88af2bd2f6",
-    "docs/nutrition/food-records.json": "5bdd5c47e40a8ca3a41c03bc4051f2380626c8e0c8d68d09ee3b6c58268df552",
+    "docs/nutrition/food-records.json": "e0ca0e1fa8d4f4b1c12ee938efea7228819090440a7ed4f5f84ecb4103388cdb",
     "reseptit/_mallipohjat/ateriakokonaisuus/ateriakokonaisuus_pohja.md": "1ea1e6ec5e4f9598909099c3f083179b09bedd9926a9ddc23536b2181a4e3a85",
     "reseptit/_mallipohjat/resepti/resepti_pohja.md": "8872ff8c2886ac87e550065071050b123f9e39d762a6da92b0c5165749ce4a2c",
     "reseptit/aamupalat/halloumimunakas.md": "f153038febb225c850e987258e3ab1d9e4386610b3a8091d102e1e34339668d3",
@@ -207,7 +209,7 @@
     "reseptit/jalkiruoat/vhh-letut.md": "205eddbfb58da254bf0c64c0ce6725eb9b0a89ef42231f7aea85ab6127f21a70",
     "reseptit/jalkiruoat/vhh-mansikkakakku.md": "2e9d735574ad78021e21add69a0c1ab4db308bdc73ef2e733ced830e58c6890c",
     "reseptit/jalkiruoat/vhh-mokkapalat.md": "163c6eea37202c229a56612021dfd606adc647f6de75b40578347684170402d1",
-    "reseptit/jalkiruoat/vhh-mustikkapiirakka.md": "c8c80ebecd4942d3b4bfb47f2b648c1558884e484f121e1d3131841424bca7b7",
+    "reseptit/jalkiruoat/vhh-mustikkapiirakka.md": "ea939525ce0607bdb5de121ad861ea796a2019e856b616bab6dca5311f63fa18",
     "reseptit/jalkiruoat/vhh-omenapiirakka.md": "d198f5a67bea9d07aef7698b83e03306569ae8c5ee2dd8fcf5ba8f69a3bfe89a",
     "reseptit/jalkiruoat/vhh-raparperipiirakka.md": "4745d04f5bca1e1e104c3ecd1099c6d0f0e76e157ef464d91405583f41248c6b",
     "reseptit/leivonnaiset/keto-joulutortut.md": "8a177936ddd4f53f5b481afa02b9b50549bc0f4bf5e29d37ee10406e45076367",
@@ -221,7 +223,7 @@
     "reseptit/paaruoat/bibimbap.md": "332f3f1b0dc5388eaecea810bf7613f596e9dc4a1013e6a2f6a46eb7331f5dba",
     "reseptit/paaruoat/bouillabaisse.md": "6e91a4ccc0ef03e39728519f71865fa4b9a5f82b51af0957972bebf96b979663",
     "reseptit/paaruoat/broileri-kermakastike.md": "775eec673ba9acf19b16f673c5d316045437f10dab7922f50df4dca4b3d8a594",
-    "reseptit/paaruoat/broileri-kukkakaaligratiini.md": "4456c36734fcd0f4e9f42ae567cbc292d9ce292cd8d26f48f2c92b8515253b37",
+    "reseptit/paaruoat/broileri-kukkakaaligratiini.md": "b9e077ee1eda5ed3158967f90d740c9bc49878d61b5125d2bc5288e6f58a1b92",
     "reseptit/paaruoat/bulgogi.md": "c0a771a61be1e38c427b66bfd6059ca29b6bf18d090ebec99c0fa89c952b4421",
     "reseptit/paaruoat/bun-cha-hanoi.md": "6f9033aea27fb32a2ba073302c4142bb5e8464d71c3e3e88a40f855c1cdc9eb1",
     "reseptit/paaruoat/butter-chicken.md": "a57705783f2659bf3395eb9439c92f27a931e0af7f5299f75240b70d018955b4",
@@ -247,12 +249,12 @@
     "reseptit/paaruoat/italian-pata.md": "c118903a31ed180cfd46bf9835eb65f85cf57df097289a587c38767f755a6900",
     "reseptit/paaruoat/janssoninkiusaus-juuriselleri.md": "36e5ba80dfd6c1843c42ee11373329a0ab5b598be8c0919f2c0bb50abe33800d",
     "reseptit/paaruoat/japanilainen-curry-tofulla.md": "f1a04ad7cd859a175188940d482bd7555a822ae6f45e3b29bbfcad66303ec2d7",
-    "reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md": "4c7a13061528d8354196942a908c7ceb2dd3d7a456d13673279b804f74e963fc",
+    "reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md": "add5c7fd2eefb6aa7f01c98c8921d91bafe2d27f54e2dcc29895e3f1553c91de",
     "reseptit/paaruoat/jauheliha-kaalikeitto-vhh.webp": "441a4c9cb043e28d494ae22f65e9afed12f9c6f8ca4b252bed030a2fafd722be",
     "reseptit/paaruoat/jauheliha-kaalipannu.md": "5256cd419075c5d310c3e8388866c5c279de5cc9ffa51d15ac31f357e5d4d71b",
     "reseptit/paaruoat/jauheliha-makaronilaatikko.md": "965227d5a833dc8ca5fd2f745fed8ea882aec7519e98ba2e00bcdc3c1588ed41",
     "reseptit/paaruoat/jauhelihakastike-kesakurpitsanuudeleilla.md": "6bf98dd32402877a406837368167b1991668ebf6f2a24c2f29366b74a797faff",
-    "reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md": "8f4c6539594a8b6f92b61d9c3273690cd58753d2f9d8474972928d18fac361e8",
+    "reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md": "376944f862c141d176614a6e47d14e6222b27ea624b3701efb160e7f1227070f",
     "reseptit/paaruoat/jerk-kana.md": "d0f74c9ce4b05db7f97022e30270bcf40e7b4baad6b4239906d2063abe642ce6",
     "reseptit/paaruoat/kaalilaatikko.md": "2938cc96a2907e372f6d113272488bf1cf70905fe10b54b2f5f776f5715b6902",
     "reseptit/paaruoat/kai-jiew-vhh.md": "94861d101127d37456e7e178f9f96c292a7fd3dbf1ffc615284b38e0a3346364",
@@ -263,7 +265,7 @@
     "reseptit/paaruoat/kana-tagine-sitruunalla.md": "1efaed05eda7723792938f24021539622d044cfa24263c4bacad1eaddb939f49",
     "reseptit/paaruoat/kana-yakitori-kaalilla.md": "aa5490468470a4d73de41b0ca3763b57bd9bfb65a9b6c3cd66bfbc6f2f2bf65c",
     "reseptit/paaruoat/kanakeitto-pinaatti-sitruuna.md": "9d4db9ce08b3eb499b18bf7e91d5af082f1d40734a238e836ba922c49f5ab902",
-    "reseptit/paaruoat/kanakorma-kukkakaaliriisilla.md": "c0b8ef9fa9997c9bedb10587787b820ce3e6a68879a994b912dc0bb3083c7879",
+    "reseptit/paaruoat/kanakorma-kukkakaaliriisilla.md": "f8ae264c0e8ac4bdbe8eacad1531515a984fa8a1d97ab12adb9cdd089adf8ba1",
     "reseptit/paaruoat/kanapyorykat-tomaattikastike.md": "4a9adac1acf864d1283ad4a5fd3e14294b2025c02f3549e583070c2bd24e1da8",
     "reseptit/paaruoat/kanasalaatti-pesto-mozzarella.md": "9cc9950407a6b69239a355737f8cef7f6ca9be2a619c7cba3c7e41b6eddb60a0",
     "reseptit/paaruoat/kanaviillokki-kukkakaalilla.md": "aa88e585b86afd036860eaf0c7a418d47354e8e4e29650cc89f467351889114a",
@@ -295,7 +297,7 @@
     "reseptit/paaruoat/lindstrominpihvit-kaalilla.md": "33a8de0ec4fff21794e7461de1d717a777bae7b7b065dbe57e45aadeab647592",
     "reseptit/paaruoat/lohikeitto-kuohukermalla.md": "3084de9e4c3e2bf53d6f8c6866b96d9d9fe3308307302526ee9b7c81aabc5c5e",
     "reseptit/paaruoat/makkara-kasvispelti.md": "8552f826b12509e8f6cd9dfe07301c56b65c879cf5cdb55cd8ba7491e26a5763",
-    "reseptit/paaruoat/maksalaatikko-kukkakaalilla.md": "410b48699459d2bcdb3fb2cf1663aa94803fc1635d1036efacf21e7a15f1ed0d",
+    "reseptit/paaruoat/maksalaatikko-kukkakaalilla.md": "0bc68c7f8a97e63f13b6dc778f1167979a4047b2e5f6a7286cd0c6bf185d0cb7",
     "reseptit/paaruoat/mala-xiang-guo.md": "b0236a1129edff415f95fcfdcbe48f12f2f761ecaa7b2588b49a9c3ffb8be887",
     "reseptit/paaruoat/mapo-tofu.md": "13ee33643135ded5d919c1263d5d4a5017a13b55024d2d2fa109d76709591895",
     "reseptit/paaruoat/marokkolainen-couscous.md": "019bb3ada3171590e436ddcf300fd2005fbdf9186e98cd0c31c5cb3e4aa5b97e",
@@ -315,11 +317,11 @@
     "reseptit/paaruoat/pad-see-ew-vhh-konjac.md": "3f68da131bc0e87b41fd322fb93168ab2d3953b2b330f0cf27a977e0a62af540",
     "reseptit/paaruoat/pad-thai-vhh-konjac.md": "f77c8e24c04809a8b81c1ce910d1257454d63cdbda15e83cc63187b25c4f0795",
     "reseptit/paaruoat/paella-valenciana.md": "d240d6f196582502c901074af048d560dbe27cc65b870adba55729012f7e3056",
-    "reseptit/paaruoat/paistettu-maksa-pekonilla.md": "5b218041cd8d199430bdc11273fc7a9ba4774509cbd0a3e13fa999431590bedc",
+    "reseptit/paaruoat/paistettu-maksa-pekonilla.md": "32114e6da3c578b2a968f55cbf659604d2b0f3970696e4ae995c059702f8aed9",
     "reseptit/paaruoat/palak-paneer.md": "a87a53457ea3df1d51b2d0ed933e997ad873fecee7ecd4331d82621eee71dfd9",
     "reseptit/paaruoat/panang-curry-kanalla-vhh.md": "77d981d9dafd086d395461543c311259cbab3ce86e2c87ffb33868f87b35548f",
     "reseptit/paaruoat/paprikainen-vhh-gulassi.md": "774bb7c59e6a9dc57af1f2f8865e9330a1a3b0186b5b0eaaf513246eecd82040",
-    "reseptit/paaruoat/parsakaali-sinihomejuustofrittata.md": "4ccff61fe7eab7271fddb1c878fcb82377d6e89b238e2e0cc0ccff6281c61ee7",
+    "reseptit/paaruoat/parsakaali-sinihomejuustofrittata.md": "2be279ace4500df9b18aaf694e3a7fcb102d7ad9bb9358dd647d8c1c9e1c18fa",
     "reseptit/paaruoat/pasta-alla-norma.md": "281c60a2a2a0f9b92ea54066bb8bcee6965bca2ba94452bde3b1e7927647f5b2",
     "reseptit/paaruoat/pav-bhaji.md": "10bf342a0ac4ff1f5f47cc97a5cd8040bf51fae1f4749881c11810bf5fba56f7",
     "reseptit/paaruoat/pekingin-ankka.md": "44b34eb169e274df3cba3d971a81ff8937b996b3857334b075e71bfb2a07f539",
@@ -330,7 +332,7 @@
     "reseptit/paaruoat/proteiinivihannes-sose.md": "e57fea6a29838350bd0f9949cd14eafc98148dda010f3c1bb42e319b650ec257",
     "reseptit/paaruoat/punainen-kanacurry-vhh.md": "5e6eadc09acb67a97fc32bae1191efed0d3def57e77d9408243beda4eb7cb8c7",
     "reseptit/paaruoat/pyttipannu-vhh.md": "26af9ddeded6d62ac3822aefece70d29d5e4df0e8d33468966a9e1bc16b34df5",
-    "reseptit/paaruoat/raejuusto-uunimunakas.md": "9ee57821fbc14af28c3d9cfc990e67487075d50e668cb1c993cd0fb997668097",
+    "reseptit/paaruoat/raejuusto-uunimunakas.md": "0284d94deed8e0c510b11b5b74f86bec6c35726e07ae3e360edeb5d22e813375",
     "reseptit/paaruoat/ratatouille.md": "d6eb5c2961ed0bb97327be45a337074ae5479c9f8b39491e5c87380f0313c637",
     "reseptit/paaruoat/rendang-padang.md": "4443c23ac32bb725bba230ff34b9b2e4574cfb28833dae8b8004a80d14a3b947",
     "reseptit/paaruoat/rogan-josh.md": "bfe9a8d71013748ec20ac245e8ca2d4687c0466b958f3d0037b86914223276a4",
@@ -357,7 +359,7 @@
     "reseptit/paaruoat/uunilohi-smetanakuorrutteella.md": "c2ef97d5f21988cce2516e64763a0e85d8d9b6c4d9abae1cc2f127019e9a5fe4",
     "reseptit/paaruoat/uunilohi-voikastike.md": "54ff578e8b0926ca288be34e362bf254bec5c6fd1915ae2f3641dd376fdd79b8",
     "reseptit/paaruoat/uunimakkara-sipulipedilla.md": "e4084d351cfd575fc4d84b4cb52f97b629029fa4bc5b6131a6d7882a2c197c70",
-    "reseptit/paaruoat/uuniporsas-kermakastikkeessa-vhh.md": "65cdea774c5e184bf23a3e1b9bacdc7290ac2170b2910f94df07812208c4e483",
+    "reseptit/paaruoat/uuniporsas-kermakastikkeessa-vhh.md": "9b4474d91f8067acf286b1a8672c31a42c0952d6916aefb83c48dacc1ce47112",
     "reseptit/paaruoat/vhh-kaalikaarryleet.md": "a3ccfb16a5fc3b5c54a02da4c6a2d3df368e470c9a1ce2c4bd0b83aa061bc4fb",
     "reseptit/paaruoat/vhh-lihamureke.md": "f64b583bb2c2fe17d9749aba03829847e123e13ebc423daeeed1a5cba5fd5bac",
     "reseptit/paaruoat/vhh-lohikeitto-kukkakaalilla.md": "5497f83d98845268ca9959f60eadae10c5a70b770696fbe1e3349ef6a9931ef4",
@@ -373,14 +375,16 @@
     "reseptit/raakileet/metabolic-boost-tomaattisoseella.md": "481cc89d966eecc91ad4b710332bc98ac4b6a0fbfc66710d6b64831a7aab81f9",
     "reseptit/raakileet/ninja-kaurasampylat.md": "69d5c18e21e61adc892ebef8f6969a2840a39fd478f30cfec56dbe3c36cf55c1",
     "site/package-lock.json": "0b91444c9b9f2ddcf895bcf2ef72b41c45d79606262b396e7a332d55d57a420d",
-    "site/package.json": "d4720c7ada9d3cc3007aff509e5595332aa760443ef6ea56d501b4e575419c9d",
+    "site/package.json": "96547ff6ac3e9da0e34f341e4d8c7b01dca3f03135b549bddac5dbee9e94d155",
     "site/scripts/build-content.ts": "5a66a6d73b794bb84e70d2b47b38242102d81d5fbd7519a5b10090ff35f9811c",
+    "site/scripts/glycemic-load-model.ts": "daf3bf4c0c8221390349249894547f565e034d8be43fa19dddee5630ae6cb837",
+    "site/scripts/glycemic-load-pilot.ts": "c7792b5bd763aa7b76ba83569a2d36fa4d892030fa91f19d2985538ffbf881b0",
     "site/scripts/inventory.ts": "f10fef13e40a2bc6b63099f9708c3272b56f02e380bf6d45671aad6a59932229",
     "site/scripts/measure-images.mjs": "d41d5eeb11c31bc5e099d127d56892fe9226ff2142d90b2d52a8ef9fb604fd98",
-    "site/scripts/nutrition-audit.ts": "bfec7c87d34a82b79d7cddc1613035d768eafa2a82f30c045bfcf2f4e9cc81c7",
+    "site/scripts/nutrition-audit.ts": "00092c415fe4a74125a3430db56a0ec5957fb486542250024d0733729f34b210",
     "site/scripts/nutrition-model.ts": "8d28fc8a53c63dd9a86a17e6add84346f3fa407b5b39ad4a1a231bcabbd15866",
     "site/scripts/nutrition-pilot.ts": "89457cecaf3bec23c28e0d846c2e0a7c47a33d2c4681d1e6d5e1e6a60f9b8cb3",
-    "site/scripts/nutrition-provenance.ts": "6331be322d0969ada151121f68d9432fb24230c999ecf94382cf08b9333ae8c4",
+    "site/scripts/nutrition-provenance.ts": "eacdf29a1dbda6b529d76a17c9ed13b94c6eae0d76720d0dcbd3b2d8afee8cd5",
     "site/scripts/prerender.ts": "04b3bfd5196b58736ced812e41c75b371e1279bf550c285a0073e07893df5b5e",
     "site/scripts/scale-images.ts": "5c2dd261bf4d71ea403907232697fd57316e47c9f2060f9285d0f35c792df0fe",
     "site/scripts/semantic-terms.ts": "7106b37388446f7ee8f27c949a32abd561e7adb95a4acbc15917f471a698faca",
@@ -416,10 +420,10 @@
   "sources": 325,
   "counts": {
     "VERIFIED": 0,
-    "ESTIMATE WITH EVIDENCE": 0,
-    "INSUFFICIENT SOURCE DATA": 54,
+    "ESTIMATE WITH EVIDENCE": 40,
+    "INSUFFICIENT SOURCE DATA": 24,
     "CONFLICT REQUIRES REVIEW": 0,
-    "MISSING": 271
+    "MISSING": 261
   },
   "dietClasses": {
     "keto": 12,
@@ -792,12 +796,12 @@
         "fat_per_serving_g": 15.79
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -845,11 +849,7 @@
         }
       ],
       "notes": "- Jos haluat erityisen sileän hummuksen, kuori kikherneet ennen soseutusta.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "jiaozi",
@@ -2361,26 +2361,21 @@
     {
       "recipe_id": "broileri-kukkakaaligratiini",
       "source_path": "reseptit/paaruoat/broileri-kukkakaaligratiini.md",
-      "source_content_hash": "4456c36734fcd0f4e9f42ae567cbc292d9ce292cd8d26f48f2c92b8515253b37",
+      "source_content_hash": "b9e077ee1eda5ed3158967f90d740c9bc49878d61b5125d2bc5288e6f58a1b92",
       "values": {
-        "carbs_net_per_serving_g": null,
-        "carbs_total_per_serving_g": null,
-        "protein_per_serving_g": null,
-        "fat_per_serving_g": null
+        "carbs_net_per_serving_g": 5.05,
+        "carbs_total_per_serving_g": 8.35,
+        "protein_per_serving_g": 38.91,
+        "fat_per_serving_g": 34.8
       },
       "servings": 4,
-      "status": "MISSING",
-      "calculationEvidence": null,
-      "carbohydrateDefinition": "NOT DOCUMENTED",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "carbs_net_per_serving_g",
-        "carbs_total_per_serving_g",
-        "protein_per_serving_g",
-        "fat_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 500,
@@ -2419,11 +2414,7 @@
         }
       ],
       "notes": "- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "bulgogi",
@@ -3026,12 +3017,12 @@
         "fat_per_serving_g": 28.87
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -3086,11 +3077,7 @@
         }
       ],
       "notes": "Pavut sisältävät hiilihydraatteja. Jätä ne pois tai pienennä määrää, jos tavoittelet vähähiilihydraattisempaa annosta.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "chole-bhature",
@@ -4669,26 +4656,21 @@
     {
       "recipe_id": "jauheliha-kaalikeitto-vhh",
       "source_path": "reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md",
-      "source_content_hash": "4c7a13061528d8354196942a908c7ceb2dd3d7a456d13673279b804f74e963fc",
+      "source_content_hash": "add5c7fd2eefb6aa7f01c98c8921d91bafe2d27f54e2dcc29895e3f1553c91de",
       "values": {
-        "carbs_net_per_serving_g": null,
-        "carbs_total_per_serving_g": null,
-        "protein_per_serving_g": null,
-        "fat_per_serving_g": null
+        "carbs_net_per_serving_g": 12.63,
+        "carbs_total_per_serving_g": 15.95,
+        "protein_per_serving_g": 18.23,
+        "fat_per_serving_g": 15.43
       },
       "servings": 6,
-      "status": "MISSING",
-      "calculationEvidence": null,
-      "carbohydrateDefinition": "NOT DOCUMENTED",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "carbs_net_per_serving_g",
-        "carbs_total_per_serving_g",
-        "protein_per_serving_g",
-        "fat_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 500,
@@ -4732,11 +4714,7 @@
         }
       ],
       "notes": "- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "jauheliha-makaronilaatikko",
@@ -4853,12 +4831,12 @@
         "fat_per_serving_g": 43.7
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -4903,35 +4881,26 @@
         }
       ],
       "notes": "- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "jauhelihapihvit-vhh-kermakastikkeella",
       "source_path": "reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md",
-      "source_content_hash": "8f4c6539594a8b6f92b61d9c3273690cd58753d2f9d8474972928d18fac361e8",
+      "source_content_hash": "376944f862c141d176614a6e47d14e6222b27ea624b3701efb160e7f1227070f",
       "values": {
-        "carbs_net_per_serving_g": null,
-        "carbs_total_per_serving_g": null,
-        "protein_per_serving_g": null,
-        "fat_per_serving_g": null
+        "carbs_net_per_serving_g": 3.17,
+        "carbs_total_per_serving_g": 3.34,
+        "protein_per_serving_g": 31.83,
+        "fat_per_serving_g": 53.44
       },
       "servings": 4,
-      "status": "MISSING",
-      "calculationEvidence": null,
-      "carbohydrateDefinition": "NOT DOCUMENTED",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "carbs_net_per_serving_g",
-        "carbs_total_per_serving_g",
-        "protein_per_serving_g",
-        "fat_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 600,
@@ -4994,11 +4963,7 @@
         }
       ],
       "notes": "- Jos lihaliemi on suolaista, maista kastike ennen lisäsuolan lisäämistä.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "jerk-kana",
@@ -5345,12 +5310,12 @@
         "fat_per_serving_g": 17.09
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -5405,12 +5370,7 @@
         }
       ],
       "notes": "Broilerin sisälämpötilan tulee olla vähintään 75 °C.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "kana-parmesaanipannu-parsakaali",
@@ -5739,26 +5699,21 @@
     {
       "recipe_id": "kanakorma-kukkakaaliriisilla",
       "source_path": "reseptit/paaruoat/kanakorma-kukkakaaliriisilla.md",
-      "source_content_hash": "c0b8ef9fa9997c9bedb10587787b820ce3e6a68879a994b912dc0bb3083c7879",
+      "source_content_hash": "f8ae264c0e8ac4bdbe8eacad1531515a984fa8a1d97ab12adb9cdd089adf8ba1",
       "values": {
-        "carbs_net_per_serving_g": null,
-        "carbs_total_per_serving_g": null,
-        "protein_per_serving_g": null,
-        "fat_per_serving_g": null
+        "carbs_net_per_serving_g": 7.35,
+        "carbs_total_per_serving_g": 10.88,
+        "protein_per_serving_g": 35.06,
+        "fat_per_serving_g": 31.01
       },
       "servings": 4,
-      "status": "MISSING",
-      "calculationEvidence": null,
-      "carbohydrateDefinition": "NOT DOCUMENTED",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "carbs_net_per_serving_g",
-        "carbs_total_per_serving_g",
-        "protein_per_serving_g",
-        "fat_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 600,
@@ -5802,11 +5757,7 @@
         }
       ],
       "notes": "- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "kanapyorykat-tomaattikastike",
@@ -6563,12 +6514,12 @@
         "fat_per_serving_g": 34.93
       },
       "servings": 6,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -6618,11 +6569,7 @@
         }
       ],
       "notes": "- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "keto-pinaattiletut",
@@ -7481,12 +7428,12 @@
         "fat_per_serving_g": 39
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -7521,11 +7468,7 @@
         }
       ],
       "notes": "- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "kung-pao-kana",
@@ -8265,26 +8208,21 @@
     {
       "recipe_id": "maksalaatikko-kukkakaalilla",
       "source_path": "reseptit/paaruoat/maksalaatikko-kukkakaalilla.md",
-      "source_content_hash": "410b48699459d2bcdb3fb2cf1663aa94803fc1635d1036efacf21e7a15f1ed0d",
+      "source_content_hash": "0bc68c7f8a97e63f13b6dc778f1167979a4047b2e5f6a7286cd0c6bf185d0cb7",
       "values": {
-        "carbs_net_per_serving_g": null,
-        "carbs_total_per_serving_g": null,
-        "protein_per_serving_g": null,
-        "fat_per_serving_g": null
+        "carbs_net_per_serving_g": 12.07,
+        "carbs_total_per_serving_g": 15.7,
+        "protein_per_serving_g": 25.62,
+        "fat_per_serving_g": 25.44
       },
       "servings": 4,
-      "status": "MISSING",
-      "calculationEvidence": null,
-      "carbohydrateDefinition": "NOT DOCUMENTED",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "carbs_net_per_serving_g",
-        "carbs_total_per_serving_g",
-        "protein_per_serving_g",
-        "fat_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 400,
@@ -8333,12 +8271,7 @@
         }
       ],
       "notes": "Tämä on maksalaatikon inspiroima versio, jossa ei ole perinteistä riisiä tai rusinoita.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "mala-xiang-guo",
@@ -8838,12 +8771,12 @@
         "fat_per_serving_g": 16.32
       },
       "servings": 3,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -8897,11 +8830,7 @@
         }
       ],
       "notes": "- Joissain versioissa sipulia ei käytetä; voit jättää sen pois.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "miso-lohi-paksoi",
@@ -9068,12 +8997,12 @@
         "fat_per_serving_g": 33.09
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -9118,11 +9047,7 @@
         }
       ],
       "notes": "- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "nakkikastike-kukkakaalimuusi",
@@ -9911,26 +9836,21 @@
     {
       "recipe_id": "paistettu-maksa-pekonilla",
       "source_path": "reseptit/paaruoat/paistettu-maksa-pekonilla.md",
-      "source_content_hash": "5b218041cd8d199430bdc11273fc7a9ba4774509cbd0a3e13fa999431590bedc",
+      "source_content_hash": "32114e6da3c578b2a968f55cbf659604d2b0f3970696e4ae995c059702f8aed9",
       "values": {
-        "carbs_net_per_serving_g": null,
-        "carbs_total_per_serving_g": null,
-        "protein_per_serving_g": null,
-        "fat_per_serving_g": null
+        "carbs_net_per_serving_g": 7.69,
+        "carbs_total_per_serving_g": 7.92,
+        "protein_per_serving_g": 31.42,
+        "fat_per_serving_g": 32.1
       },
       "servings": 4,
-      "status": "MISSING",
-      "calculationEvidence": null,
-      "carbohydrateDefinition": "NOT DOCUMENTED",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "carbs_net_per_serving_g",
-        "carbs_total_per_serving_g",
-        "protein_per_serving_g",
-        "fat_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 500,
@@ -9969,11 +9889,7 @@
         }
       ],
       "notes": "- Käytä ruokalämpömittaria. Tarvittava aika riippuu viipaleiden paksuudesta ja pannun lämmöstä.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "palak-paneer",
@@ -10273,26 +10189,21 @@
     {
       "recipe_id": "parsakaali-sinihomejuustofrittata",
       "source_path": "reseptit/paaruoat/parsakaali-sinihomejuustofrittata.md",
-      "source_content_hash": "4ccff61fe7eab7271fddb1c878fcb82377d6e89b238e2e0cc0ccff6281c61ee7",
+      "source_content_hash": "2be279ace4500df9b18aaf694e3a7fcb102d7ad9bb9358dd647d8c1c9e1c18fa",
       "values": {
-        "carbs_net_per_serving_g": null,
-        "carbs_total_per_serving_g": null,
-        "protein_per_serving_g": null,
-        "fat_per_serving_g": null
+        "carbs_net_per_serving_g": 2.49,
+        "carbs_total_per_serving_g": 4.36,
+        "protein_per_serving_g": 18.23,
+        "fat_per_serving_g": 32.19
       },
       "servings": 4,
-      "status": "MISSING",
-      "calculationEvidence": null,
-      "carbohydrateDefinition": "NOT DOCUMENTED",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "carbs_net_per_serving_g",
-        "carbs_total_per_serving_g",
-        "protein_per_serving_g",
-        "fat_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 1,
@@ -10341,13 +10252,8 @@
           "note": "tarvittaessa, juusto on suolaista"
         }
       ],
-      "notes": "- Sinihomejuuston suolaisuus vaihtelee. Paista pieni koepala kypsäksi, jos haluat tarkistaa munaseoksen maun.\r\n- VHH-luokitus perustuu reseptin ainesosiin. Tarkista käyttämiesi tuotteiden pakkausmerkinnät.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "notes": "- Sinihomejuuston suolaisuus vaihtelee. Paista pieni koepala kypsäksi, jos haluat tarkistaa munaseoksen maun.\n- VHH-luokitus perustuu reseptin ainesosiin. Tarkista käyttämiesi tuotteiden pakkausmerkinnät.",
+      "uncertainties": []
     },
     {
       "recipe_id": "pasta-alla-norma",
@@ -11041,26 +10947,21 @@
     {
       "recipe_id": "raejuusto-uunimunakas",
       "source_path": "reseptit/paaruoat/raejuusto-uunimunakas.md",
-      "source_content_hash": "9ee57821fbc14af28c3d9cfc990e67487075d50e668cb1c993cd0fb997668097",
+      "source_content_hash": "0284d94deed8e0c510b11b5b74f86bec6c35726e07ae3e360edeb5d22e813375",
       "values": {
-        "carbs_net_per_serving_g": null,
-        "carbs_total_per_serving_g": null,
-        "protein_per_serving_g": null,
-        "fat_per_serving_g": null
+        "carbs_net_per_serving_g": 3.3,
+        "carbs_total_per_serving_g": 3.3,
+        "protein_per_serving_g": 27.21,
+        "fat_per_serving_g": 22.77
       },
       "servings": 4,
-      "status": "MISSING",
-      "calculationEvidence": null,
-      "carbohydrateDefinition": "NOT DOCUMENTED",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "carbs_net_per_serving_g",
-        "carbs_total_per_serving_g",
-        "protein_per_serving_g",
-        "fat_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 10,
@@ -11102,12 +11003,7 @@
         }
       ],
       "notes": "- Vesihaude auttaa munakasta hyytymään pehmeästi ja tasaisesti.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "ratatouille",
@@ -11120,12 +11016,12 @@
         "fat_per_serving_g": 14.96
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -11191,11 +11087,7 @@
         }
       ],
       "notes": "- Vältä ylikypsentämistä, jotta kasviksista ei tule sosetta.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "rendang-padang",
@@ -12377,12 +12269,12 @@
         "fat_per_serving_g": 36.56
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -12437,11 +12329,7 @@
         }
       ],
       "notes": "- Paprikoiden hiilihydraattimäärä on keskitasoa, joten tämä on väljempään VHH-ruokavalioon sopiva ruoka.\r\n- Jos täyte näyttää vetiseltä, keitä sitä pannulla vielä muutama minuutti ennen täyttämistä.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "thai-vihrea-curry-kanalla-vhh",
@@ -12804,12 +12692,12 @@
         "fat_per_serving_g": 17.9
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -12846,11 +12734,7 @@
         }
       ],
       "notes": "- Jos haluat täysin kypsän keskustan, käytä matalaa lämpöä ja pidennä kypsennysaikaa.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "tunisialainen-ojja",
@@ -12955,12 +12839,12 @@
         "fat_per_serving_g": 24.27
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -13010,12 +12894,7 @@
         }
       ],
       "notes": "Tämä ei sisällä vehnäpastaa; kesäkurpitsa pehmenee uunissa nopeasti.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "uunilohi-smetanakuorrutteella",
@@ -13171,26 +13050,21 @@
     {
       "recipe_id": "uuniporsas-kermakastikkeessa-vhh",
       "source_path": "reseptit/paaruoat/uuniporsas-kermakastikkeessa-vhh.md",
-      "source_content_hash": "65cdea774c5e184bf23a3e1b9bacdc7290ac2170b2910f94df07812208c4e483",
+      "source_content_hash": "9b4474d91f8067acf286b1a8672c31a42c0952d6916aefb83c48dacc1ce47112",
       "values": {
-        "carbs_net_per_serving_g": null,
-        "carbs_total_per_serving_g": null,
-        "protein_per_serving_g": null,
-        "fat_per_serving_g": null
+        "carbs_net_per_serving_g": 1.43,
+        "carbs_total_per_serving_g": 1.59,
+        "protein_per_serving_g": 36.57,
+        "fat_per_serving_g": 44.57
       },
       "servings": 6,
-      "status": "MISSING",
-      "calculationEvidence": null,
-      "carbohydrateDefinition": "NOT DOCUMENTED",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "carbs_net_per_serving_g",
-        "carbs_total_per_serving_g",
-        "protein_per_serving_g",
-        "fat_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 1.2,
@@ -13234,11 +13108,7 @@
         }
       ],
       "notes": "- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "vhh-kaalikaarryleet",
@@ -13251,12 +13121,12 @@
         "fat_per_serving_g": 42.19
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -13306,11 +13176,7 @@
         }
       ],
       "notes": "- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "vhh-lihamureke",
@@ -13323,12 +13189,12 @@
         "fat_per_serving_g": 30.8
       },
       "servings": 6,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -13373,11 +13239,7 @@
         }
       ],
       "notes": "- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "vhh-lohikeitto-kukkakaalilla",
@@ -14709,26 +14571,21 @@
     {
       "recipe_id": "vhh-mustikkapiirakka",
       "source_path": "reseptit/jalkiruoat/vhh-mustikkapiirakka.md",
-      "source_content_hash": "c8c80ebecd4942d3b4bfb47f2b648c1558884e484f121e1d3131841424bca7b7",
+      "source_content_hash": "ea939525ce0607bdb5de121ad861ea796a2019e856b616bab6dca5311f63fa18",
       "values": {
-        "carbs_net_per_serving_g": null,
-        "carbs_total_per_serving_g": null,
-        "protein_per_serving_g": null,
-        "fat_per_serving_g": null
+        "carbs_net_per_serving_g": 4.22,
+        "carbs_total_per_serving_g": 7.18,
+        "protein_per_serving_g": 10.44,
+        "fat_per_serving_g": 19.45
       },
       "servings": 8,
-      "status": "MISSING",
-      "calculationEvidence": null,
-      "carbohydrateDefinition": "NOT DOCUMENTED",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "carbs_net_per_serving_g",
-        "carbs_total_per_serving_g",
-        "protein_per_serving_g",
-        "fat_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 150,
@@ -14767,11 +14624,7 @@
         }
       ],
       "notes": "- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "vhh-omenapiirakka",
@@ -15294,12 +15147,12 @@
         "fat_per_serving_g": 27.02
       },
       "servings": 2,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -15334,12 +15187,7 @@
         }
       ],
       "notes": "Halloumi on suolaista, joten lisää suolaa vasta maistamisen jälkeen.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "indialainen-poha-maapahkinoilla",
@@ -17202,12 +17050,12 @@
         "fat_per_serving_g": 16.99
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -17247,12 +17095,7 @@
         }
       ],
       "notes": "Kookosjuoman ja kerman voi korvata samalla määrällä makeuttamatonta kookosmaitoa.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "karibia-ackee-ja-suolakala",
@@ -19110,12 +18953,12 @@
         "fat_per_serving_g": 14.92
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -19160,12 +19003,7 @@
         }
       ],
       "notes": "Fetan suolaisuus vaihtelee. Maista ennen suolan lisäämistä.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "lahi-ita-fattet-hummus",
@@ -20408,12 +20246,12 @@
         "fat_per_serving_g": 6.53
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -20453,12 +20291,7 @@
         }
       ],
       "notes": "Mantelimaidon voi vaihtaa makeuttamattomaan kookosjuomaan. Tarkista tuotteen hiilihydraattimäärä pakkauksesta.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "meksikolainen-aamiais-tacot-mustapavuilla",
@@ -21101,12 +20934,12 @@
         "fat_per_serving_g": 24.6
       },
       "servings": 3,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -21141,12 +20974,7 @@
         }
       ],
       "notes": "Muffinit säilyvät jääkaapissa pari päivää ja lämpenevät nopeasti uudelleen.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "munakasrulla-pinaatti-tuorejuustolla",
@@ -21159,12 +20987,12 @@
         "fat_per_serving_g": 26.7
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -21204,12 +21032,7 @@
         }
       ],
       "notes": "Munakaslevy rullautuu parhaiten, kun se on vielä haalea eikä paistunut kuivaksi.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "munakokkeli",
@@ -21222,12 +21045,12 @@
         "fat_per_serving_g": 21.6
       },
       "servings": 2,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -21257,12 +21080,7 @@
         }
       ],
       "notes": "Miedolla lämmöllä munakokkeli jää pehmeäksi; kuuma pannu tekee siitä helposti kuivan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "munatacot-huevos-rancheros",
@@ -21275,12 +21093,12 @@
         "fat_per_serving_g": 34.6
       },
       "servings": 2,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -21335,12 +21153,7 @@
         }
       ],
       "notes": "Tämä on tortillaton kotiversio huevos rancheros -aamupalasta; tomaatin määrä pitää hiilihydraatit maltillisina.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "paahdettu-aamiaismunakoiso",
@@ -21353,12 +21166,12 @@
         "fat_per_serving_g": 14.49
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -21403,12 +21216,7 @@
         }
       ],
       "notes": "Munakoison voi paahtaa edellisenä iltana ja lämmittää aamulla.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "paprikauunimunakkaat",
@@ -21421,12 +21229,12 @@
         "fat_per_serving_g": 16.7
       },
       "servings": 2,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -21456,12 +21264,7 @@
         }
       ],
       "notes": "Jos paprikapuolikkaat kallistuvat, tue niitä tiiviisti vuokaan asetetuilla foliopalloilla.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "pellava-puuro-pahkinoilla",
@@ -22245,12 +22048,12 @@
         "fat_per_serving_g": 6.01
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -22290,12 +22093,7 @@
         }
       ],
       "notes": "Jos haluat kulhosta vähähiilihydraattisemman, vaihda mansikat vadelmiin ja vähennä marjojen määrää.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "savulohi-avokadokulho",
@@ -22308,12 +22106,12 @@
         "fat_per_serving_g": 9.6
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -22358,12 +22156,7 @@
         }
       ],
       "notes": "Kylmäsavulohi on suolaista, joten lisäsuolaa ei yleensä tarvita.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "shakshuka",
@@ -22376,12 +22169,12 @@
         "fat_per_serving_g": 17.5
       },
       "servings": 2,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -22431,12 +22224,7 @@
         }
       ],
       "notes": "Tomaatti sisältää hiilihydraatteja, joten tämä on VHH-versio eikä tiukka keto-ohje. Säädä chilin määrä oman maun mukaan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "siemengranola-jogurtilla",
@@ -23141,12 +22929,12 @@
         "fat_per_serving_g": 15.93
       },
       "servings": 3,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -23181,12 +22969,7 @@
         }
       ],
       "notes": "Muffinipellin sijasta voit käyttää silikonivuokia. Tonnikala kannattaa valuttaa huolellisesti, jotta rakenne ei jää vetiseksi.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "uunimuna-avokadot",
@@ -23199,12 +22982,12 @@
         "fat_per_serving_g": 28.7
       },
       "servings": 2,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -23234,12 +23017,7 @@
         }
       ],
       "notes": "Pienet kananmunat sopivat avokadon kuoppaan parhaiten. Ylimääräisen valkuaisen voi paistaa erikseen.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "uunimunat-pinaatilla",
@@ -23252,12 +23030,12 @@
         "fat_per_serving_g": 28.4
       },
       "servings": 2,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md",
+      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -23292,12 +23070,7 @@
         }
       ],
       "notes": "Paistoaika riippuu vuoan koosta ja siitä, haluatko keltuaisen pehmeäksi vai täysin kypsäksi.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "valimerellinen-appelsiini-aamiaiskakku",

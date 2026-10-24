@@ -6,6 +6,10 @@ category: paaruoka
 language: th
 diet_class: vhh_tiukka
 servings: 4
+carbs_net_per_serving_g: 3.30
+carbs_total_per_serving_g: 3.30
+protein_per_serving_g: 27.21
+fat_per_serving_g: 22.77
 main_ingredient:
   - kananmuna
   - raejuusto

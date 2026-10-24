@@ -7,7 +7,7 @@ Suorita `site/`-kansiossa `npm run audit:nutrition`.
 Tuloksena on `tmp/nutrition/audit.json`: kaikkien julkaistujen FI-lähteiden
 inventaariorivit ja viiden pilotin aineskohtaiset puutteet. `--snapshot`
 tallentaa tarkistuskierroksen tuloksen tähän hakemistoon. Auditointikuva
-päivitettiin 24.10.2026, ja ensimmäisen erän laskentamuistio sekä
+päivitettiin 24.10.2026, ja kolmen erän laskentamuistiot sekä
 Fineli-ruokatietueet sisältyvät nyt laskennan lähdetiivisteeseen. Uudet
 irralliset laskentamuistiot pitää lisätä lähteiden inventaarioon erikseen.
 
@@ -83,12 +83,20 @@ Ei kokonaisia tietokantoja, tuotetekstejä tai kuvia kopioitu.
 Seuraava kierros tarvitsee nimetyt tuotteet, syötävät punnitut määrät,
 ainekohtaiset muunnokset, valmistussaannon ja tarkistetut tietueet.
 
-## Reseptiarvioiden ensimmäinen erä, 24.10.2026
+## Reseptiarvioiden erät, 24.10.2026
 
-Kymmenelle reseptille lisättiin per-annos-arviot, joiden laskentamuistio,
-Fineli-tietueiden ID:t ja yksikköoletukset ovat tiedostossa
-`docs/nutrition/estimates-2026-10-24.md`. Luvut ovat toimituksellisia arvioita;
-niitä ei tuoteta julkaisun buildissa automaattisesti. Kokonaishiilihydraatit on lisätty yhteensä 30 reseptille Finelin CHO-, FIBT- ja POLYL-komponenttien pohjalta; lähdepoiminta on `food-records.json`-tiedostossa. Ensimmäisen erän laskentamuistio on `estimates-2026-10-24.md`, toisen erän `estimates-2026-10-24-batch-2.md`. Fineli-attribuutio ja lisenssi on kirjattu kumpaankin muistioon.
+Kolmen erän ravintoarviot, Fineli-tietueiden ID:t ja yksikköoletukset on
+kirjattu seuraaviin muistioihin:
+
+- `estimates-2026-10-24.md` — erä 1, 10 reseptiä.
+- `estimates-2026-10-24-batch-2.md` — erä 2, 20 reseptiä.
+- `estimates-2026-10-24-batch-3.md` — erä 3, 10 reseptiä.
+
+Luvut ovat toimituksellisia arvioita; niitä ei tuoteta julkaisun buildissa
+automaattisesti. Kokonaishiilihydraatit on lisätty yhteensä 40 reseptille
+Finelin CHO-, FIBT- ja POLYL-komponenttien pohjalta. Lähdepoiminta on
+`food-records.json`-tiedostossa, ja Fineli-attribuutio sekä lisenssi on
+kirjattu jokaiseen muistioon.
 
 ## Nykyisten lukujen luokitus
 
