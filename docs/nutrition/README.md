@@ -79,6 +79,31 @@ polyolikoostumus on epäselvä, nettoarvo jää puuttumaan.
   rakennettu ravintotietokantaa. Pyydä tarvittaessa käyttölupa tai käytä
   dokumentoitua pakkausmerkintää ja tarkista sen käyttöoikeus.
 
+### Muut avoimet tietokannat, tarkistettu 24.10.2026
+
+- USDA FoodData Centralin [API-ohje](https://fdc.nal.usda.gov/api-guide/)
+  kertoo aineiston olevan CC0 1.0 -lisenssillä ja suosittelee lähdemainintaa.
+  [Foundation Foods -lataus](https://fdc.nal.usda.gov/download-datasets/)
+  tarkistettiin huhtikuun 2026 CSV-pakettina. Sen `food_nutrient.csv` sisältää
+  hiilihydraatti (1005), ravintokuitu (1079), proteiini (1003) ja rasva (1004)
+  -arvoja, mutta latauksessa ei ollut yhtään `Total sugar alcohols` (1086)
+  -arvoriviä. USDA määrittelee hiilihydraatin by difference -arvon kuitua
+  sisältäväksi [Foundation Foods -dokumentaatiossa](https://fdc.nal.usda.gov/Foundation_Foods_Documentation/).
+  Siksi tätä poimintaa ei voi muuntaa tämän projektin kokonaishiilihydraatiksi
+  ilman polyolien erillistä lähdearvoa. Pakettia ei lisätty laskennan
+  ruokatietueisiin; CC0 sallii käytön, mutta puuttuva ravintotekijä ei muutu
+  luvaksi olettaa nollaa.
+- Open Food Facts ilmoittaa tietokannan ODbL-lisenssistä,
+  nimeämisvelvollisuudesta ja share-alike-ehdosta
+  ([lisenssiohje](https://github.com/openfoodfacts/openfoodfacts-server/blob/main/docs/api/tutorials/license-be-on-the-legal-side.md)).
+  Tuotekohtaiset pakkaustiedot eivät myöskään vastaa yleisnimisiä reseptiaineksia
+  ilman tuotemerkkiä ja tuotteen valintaa. Sitä ei yhdistetty Fineli-poimintaan.
+- Paikallisessa Fineli-poiminnassa on 69 tietuetta, joilla on 69 uniikkia
+  lähdetunnistetta ja 69 uniikkia täsmälleen normalisoitua nimeä. Koko ladatussa
+  Fineli-paketissa on 4 238 tietuetta ja samoin uniikit lähdetunnisteet sekä
+  nimet. Täsmänimien duplikaatteja ei löytynyt; samankaltaisia versioita ei
+  yhdistetä automaattisesti, koska niiden ravintoarvot voivat erota.
+
 Ei kokonaisia tietokantoja, tuotetekstejä tai kuvia kopioitu.
 Seuraava kierros tarvitsee nimetyt tuotteet, syötävät punnitut määrät,
 ainekohtaiset muunnokset, valmistussaannon ja tarkistetut tietueet.
