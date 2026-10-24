@@ -127,6 +127,35 @@ polyolikoostumus on epäselvä, nettoarvo jää puuttumaan.
   Fineli-paketissa on 4 238 tietuetta ja samoin uniikit lähdetunnisteet sekä
   nimet. Täsmänimien duplikaatteja ei löytynyt; samankaltaisia versioita ei
   yhdistetä automaattisesti, koska niiden ravintoarvot voivat erota.
+- FSANZ:n Australian Food Composition Database Release 3:n lähdeprofiilit
+  tarkistettiin 24.10.2026 ja lisättiin erilliseksi viiteaineistoksi
+  `afcd-release-3-reference.json`. Aineisto sisältää 1 588 ruokaa, viisi
+  laskennan perusmakroa, AFCD:n hiilihydraatit sokerialkoholeilla ja ilman
+  sekä saatavilla olevat erilliset polyolirivit. Jokaisella tietueella
+  säilyvät lähdetunniste, nimi, luokitus ja tietojen alkuperäluokka.
+  Lähdeprofiilin 1 588 tunnistetta ovat uniikkeja, normalisoituja
+  duplikaattinimiä ei havaittu, kaikki 1 588 tietuetta sisältävät viisi
+  vaadittua perusmakroarvoa eikä valituissa makroissa havaittu negatiivisia
+  tai yli 100 g/100 g -arvoja. Puuttuva polyoliarvo on silti tuntematon, ei
+  nolla.
+
+  AFCD:n julkaistun määritelmän mukaan `Available carbohydrate, without
+  sugar alcohols` on imeytyvä hiilihydraatti ilman polyoleja, ja versio `with
+  sugar alcohols` lisää laskentaan sorbitolin, mannitolin ja glyserolin.
+  Muita erillisiä polyolirivejä (erytritoli, maltitoli ja ksylitoli) ei
+  sisällytetä tähän kaavaan. Siksi AFCD-tietueita ei voi siirtää Finelin
+  laskentamalliin suoraan yhdellä sarakekartoituksella. Erillinen viitepoiminta
+  ei vielä ole laskennan hyväksytty lähdeadapteri, eikä sitä käytetty uusien
+  reseptiarvojen julkaisemiseen.
+
+  FSANZ sallii kopioinnin ja muokkauksen lisenssiehtojen täyttyessä. Ehtoihin
+  kuuluu johdannaisen CC BY-SA 3.0 Australia -lisenssi, FSANZ-attribuutio,
+  datarajoituslausuma ja Australian dataa koskeva käyttörajaus jokaisessa
+  jaetussa kopiossa. Nämä tiedot on upotettu viiteaineiston `source`-metatietoihin.
+  Lähde-XLSX muunnettiin JSONiksi ja rajattiin ravintoarvoihin, mutta arvot
+  säilytettiin muuttamatta. Aineiston voi tuottaa uudelleen komennolla
+  `python tools/import-afcd-reference.py <afcd-nutrient-profiles.xlsx>
+  docs/nutrition/afcd-release-3-reference.json`.
 
 Ei kokonaisia tietokantoja, tuotetekstejä tai kuvia kopioitu. CNF:stä on mukana
 vain yllä rajattu, lähderivien perusteella täydellinen osajoukko.
