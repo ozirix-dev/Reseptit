@@ -46,10 +46,10 @@ ingredients:
   - amount: 1
     unit: msk
     item: rismjöl
-  - amount: null
-    unit: ""
+  - amount: 50
+    unit: g
     item: olja
-    note: för fritering
+    note: "Uppskattad mängd som tas upp av satsen; använd cirka 1 l till fritering och låt överskottet rinna av. Överskottet ingår inte i näringsvärdet."
 source_language: fi
 source_recipe: reseptit/alkuruoat/medu-vada.md
 translation_of: medu-vada

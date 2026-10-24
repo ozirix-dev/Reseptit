@@ -71,14 +71,14 @@ ingredients:
     unit: rkl
     item: hunajaa
     note: valinnainen
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: tuoretta korianteria
-    note: tarjoiluun
-  - amount: null
-    unit: ""
+    note: "Hienonnettuna tarjoiluun."
+  - amount: 15
+    unit: ml
     item: öljyä
-    note: tilkka broilerin ruskistamiseen
+    note: "Broilerin ruskistamiseen."
 translation_languages:
   - en
   - sv

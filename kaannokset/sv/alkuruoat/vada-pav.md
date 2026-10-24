@@ -61,10 +61,10 @@ ingredients:
   - amount: 4
     unit: st
     item: mjuka småfrallor
-  - amount: null
-    unit: ""
+  - amount: 25
+    unit: g
     item: olja
-    note: för fritering
+    note: "Uppskattad mängd som tas upp av satsen; använd cirka 1 l till fritering och låt överskottet rinna av. Överskottet ingår inte i näringsvärdet."
 source_language: fi
 source_recipe: reseptit/alkuruoat/vada-pav.md
 translation_of: vada-pav

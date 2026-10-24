@@ -4,7 +4,7 @@ import { contentForRoute } from "../src/content/route-data";
 import { mkdir, readdir, readFile, writeFile, rm } from "node:fs/promises";
 import path from "node:path";
 import { parseMarkdown, renderSafeMarkdown, renderInstructionSteps } from "../src/content/markdown";
-import { assertUniqueRecipes } from "../src/content/recipe-validation";
+import { assertQuantifiedCriticalIngredients, assertUniqueRecipes } from "../src/content/recipe-validation";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { rebuildPublishedImages } from "../src/content/published-images";
 import type { RecipeEntry, RecipeLocale, SiteContentIndex } from "../src/types/content";
@@ -117,6 +117,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     });
   }
   assertUniqueRecipes(recipes);
+  assertQuantifiedCriticalIngredients(recipes);
   for (const recipe of recipes) Object.assign(recipe, sourceFacets.get(recipe.recipeId) ?? { cuisine: null, ingredientGroups: [] });
   const images = await rebuildPublishedImages(imageSourceDir, path.join(siteDir, "public"), [...publishedImagePaths]);
   const byPath = new Map(images.images.map((image) => [image.path, image]));

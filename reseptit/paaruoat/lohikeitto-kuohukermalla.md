@@ -35,17 +35,17 @@ ingredients:
   - amount: 1
     unit: ""
     item: porkkana
-  - amount: null
-    unit: ""
+  - amount: 15
+    unit: g
     item: voita
-    note: oman maun mukaan kuullottamiseen
+    note: "Kuullottamiseen."
   - amount: 8
     unit: dl
     item: vettä
-  - amount: null
-    unit: ""
+  - amount: 15
+    unit: ml
     item: kalafondia
-    note: pakkauksen annostuksen mukaan 8 dl:lle vettä
+    note: "Oletus 15 ml / 8 dl vettä; tarkista pakkauksen annostus."
   - amount: 8
     unit: kpl
     item: kokonaista mustapippuria
@@ -55,14 +55,14 @@ ingredients:
   - amount: 2
     unit: dl
     item: kuohukermaa
-  - amount: null
-    unit: ""
+  - amount: 3
+    unit: g
     item: suolaa
-    note: tarvittaessa maun mukaan
-  - amount: null
-    unit: ""
+    note: "Noin 1/2 tl; säädä kalafondin suolaisuuden mukaan."
+  - amount: 10
+    unit: g
     item: tuoretta tilliä
-    note: hienonnettuna
+    note: "Hienonnettuna."
 translation_languages:
   - en
   - sv

@@ -44,14 +44,14 @@ ingredients:
   - amount: 0.75
     unit: tsp
     item: salt
-  - amount: null
-    unit: ""
+  - amount: 0.5
+    unit: g
     item: white pepper
-    note: to taste
-  - amount: null
-    unit: ""
+    note: "About 1/4 tsp ground white pepper."
+  - amount: 5
+    unit: g
     item: butter
-    note: "for greasing the baking dish"
+    note: "For sautéing."
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/uunilohi-smetanakuorrutteella.md

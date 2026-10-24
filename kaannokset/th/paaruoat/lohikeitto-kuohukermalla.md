@@ -34,17 +34,17 @@ ingredients:
   - amount: 1
     unit: ""
     item: แครอท
-  - amount: null
-    unit: ""
+  - amount: 15
+    unit: g
     item: เนย
-    note: สำหรับผัดตามชอบ
+    note: "สำหรับผัด"
   - amount: 8
     unit: dl
     item: น้ำ
-  - amount: null
-    unit: ""
+  - amount: 15
+    unit: ml
     item: น้ำสต็อกปลาเข้มข้น
-    note: ตามปริมาณบรรจุภัณฑ์ต่อน้ำ 8 เดซิลิตร
+    note: "กำหนด 15 มล. ต่อน้ำ 800 มล.; ตรวจสอบปริมาณบนฉลาก"
   - amount: 8
     unit: ชิ้น
     item: "พริกไทยดำเม็ด"
@@ -54,14 +54,14 @@ ingredients:
   - amount: 2
     unit: dl
     item: วิปปิ้งครีม
-  - amount: null
-    unit: ""
+  - amount: 3
+    unit: g
     item: เกลือ
-    note: ถ้าจำเป็นตามรสนิยม
-  - amount: null
-    unit: ""
+    note: "ประมาณ 1/2 ช้อนชา ปรับตามความเค็มของน้ำสต็อกปลา"
+  - amount: 10
+    unit: g
     item: ผักชีลาวสด
-    note: สับละเอียด
+    note: "สับละเอียด"
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/lohikeitto-kuohukermalla.md

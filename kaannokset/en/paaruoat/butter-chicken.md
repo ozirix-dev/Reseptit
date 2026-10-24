@@ -71,14 +71,14 @@ ingredients:
     unit: tbsp
     item: honey
     note: optional
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: fresh coriander
-    note: for serving
-  - amount: null
-    unit: ""
+    note: "Chopped, for serving."
+  - amount: 15
+    unit: ml
     item: oil
-    note: a splash for browning the chicken
+    note: "For browning the chicken."
 source_language: fi
 source_recipe: reseptit/paaruoat/butter-chicken.md
 translation_of: butter-chicken

@@ -45,14 +45,14 @@ ingredients:
   - amount: 0.75
     unit: tl
     item: suolaa
-  - amount: null
-    unit: ""
+  - amount: 0.5
+    unit: g
     item: valkopippuria
-    note: maun mukaan
-  - amount: null
-    unit: ""
+    note: "Noin 1/4 tl jauhettua valkopippuria."
+  - amount: 5
+    unit: g
     item: voita
-    note: vuoan voiteluun
+    note: "Kuullottamiseen."
 translation_languages:
   - en
   - sv

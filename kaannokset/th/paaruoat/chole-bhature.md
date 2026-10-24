@@ -73,10 +73,10 @@ ingredients:
     unit: dl
     item: น้ำ
     note: ตามความจำเป็น
-  - amount: null
-    unit: ""
+  - amount: 60
+    unit: g
     item: น้ำมัน
-    note: สำหรับการทอด
+    note: "ปริมาณโดยประมาณที่อาหารดูดซึมทั้งสูตร ใช้น้ำมันประมาณ 1 ลิตรสำหรับทอดและสะเด็ดส่วนเกิน น้ำมันส่วนเกินไม่นำมาคำนวณคุณค่าทางโภชนาการ"
 source_language: fi
 source_recipe: reseptit/paaruoat/chole-bhature.md
 translation_of: chole-bhature

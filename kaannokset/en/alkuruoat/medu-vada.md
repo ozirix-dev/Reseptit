@@ -46,10 +46,10 @@ ingredients:
   - amount: 1
     unit: tbsp
     item: rice flour
-  - amount: null
-    unit: ""
+  - amount: 50
+    unit: g
     item: oil
-    note: for deep frying
+    note: "Estimated amount absorbed by the batch; use about 1 L for frying and drain the excess. Excess oil is excluded from the nutrition estimate."
 source_language: fi
 source_recipe: reseptit/alkuruoat/medu-vada.md
 translation_of: medu-vada

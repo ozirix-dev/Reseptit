@@ -64,6 +64,28 @@ hiilihydraattien yläraja ylittää annoskohtaisen gramman rajan. Näin yksittä
 mausteet eivät pysäytä arviota, mutta olennaiset ainesosat eivät katoa
 laskennasta.
 
+### Tarkat määrät resepteissä
+
+Jokaisessa uudessa tai ravintoarvoiltaan päivitettävässä reseptissä ilmoitetaan
+määrä ja yksikkö kaikille öljyille ja rasvoille, sokereille ja makeuttajille,
+hunajalle ja siirapeille, kastikkeille ja tiivisteille, pähkinöille ja siemenille,
+juustoille, lihalle, kalalle ja siipikarjalle sekä pizzan täytteille. Käytä
+ensisijaisesti punnittavaa g-määrää; nesteille ml käy. Älä jätä näitä määriä
+muotoon "maun mukaan", "tarpeen mukaan", vapaa valinta tai tyhjä määrä.
+Valinnaisellekin määrälle annetaan laskettava oletus ja kerrotaan, että määrää
+voi säätää. Tuotemerkistä riippuvissa tiivisteissä annetaan reseptin oletusmäärä
+ja kehotetaan tarkistamaan pakkauksen annostus.
+
+Uppopaistorasvan ravintoarvoon kirjataan koko erään arvioitu ruokaan imeytyvä
+määrä grammoina. Ohjeessa kerrotaan erikseen, kuinka paljon öljyä tarvitaan
+keittimeen tai kattilaan sekä että ylimääräinen öljy valutetaan pois. Kattilaan
+kaadettua määrää ei lasketa syödyksi määräksi.
+
+Tämä sääntö koskee kaikkia uusia reseptejä ja ravintoarvopäivityksiä. Vanhojen
+julkaisujen poikkeamat ovat siirtymävelkaa: niitä ei saa lisätä uusiin
+reseptiversioihin, ja ne tarkennetaan ennen kyseisen reseptin ravintoarvojen
+seuraavaa laskentaa.
+
 ## Hiilihydraatit
 
 Laskennan `carbohydrate` tarkoittaa aina imeytyvää, kuidun poissulkevaa

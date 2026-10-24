@@ -57,14 +57,14 @@ ingredients:
     unit: tsk
     item: rosenvatten
     note: valfritt
-  - amount: null
-    unit: ""
+  - amount: 30
+    unit: g
     item: olja
-    note: för fritering
-  - amount: null
-    unit: ""
+    note: "Uppskattad mängd som tas upp av satsen; använd cirka 1 l till fritering och låt överskottet rinna av. Överskottet ingår inte i näringsvärdet."
+  - amount: 10
+    unit: g
     item: pistagenötter
-    note: "grovhackade, att strö över"
+    note: "Hackade till garnering."
 source_language: fi
 source_recipe: reseptit/jalkiruoat/gulab-jamun.md
 translation_of: gulab-jamun

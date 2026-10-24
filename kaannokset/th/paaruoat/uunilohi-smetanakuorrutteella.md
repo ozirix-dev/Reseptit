@@ -44,14 +44,14 @@ ingredients:
   - amount: 0.75
     unit: ช้อนชา
     item: เกลือ
-  - amount: null
-    unit: ""
+  - amount: 0.5
+    unit: g
     item: พริกไทยขาว
-    note: "ปรุงตามชอบ"
-  - amount: null
-    unit: ""
+    note: "พริกไทยขาวป่นประมาณ 1/4 ช้อนชา"
+  - amount: 5
+    unit: g
     item: เนย
-    note: "สำหรับทาถาดอบ"
+    note: "สำหรับผัด"
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/uunilohi-smetanakuorrutteella.md

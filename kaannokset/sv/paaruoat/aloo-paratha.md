@@ -49,10 +49,10 @@ ingredients:
     unit: g
     item: färsk koriander
     note: "finhackad"
-  - amount: null
-    unit: ""
+  - amount: 30
+    unit: g
     item: ghee eller smör
-    note: för stekning
+    note: "Totalt för hela satsen."
 source_language: fi
 source_recipe: reseptit/paaruoat/aloo-paratha.md
 translation_of: aloo-paratha

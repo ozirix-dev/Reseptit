@@ -73,10 +73,10 @@ ingredients:
     unit: dl
     item: water
     note: as needed
-  - amount: null
-    unit: ""
+  - amount: 60
+    unit: g
     item: oil
-    note: for deep frying
+    note: "Estimated amount absorbed by the batch; use about 1 L for frying and drain the excess. Excess oil is excluded from the nutrition estimate."
 source_language: fi
 source_recipe: reseptit/paaruoat/chole-bhature.md
 translation_of: chole-bhature

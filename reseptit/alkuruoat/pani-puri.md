@@ -59,16 +59,17 @@ ingredients:
   - amount: 0.5
     unit: tl
     item: chilijauhetta
-  - amount: null
-    unit: ""
+  - amount: 25
+    unit: g
     item: öljyä
-    note: uppopaistamiseen
+    note: "Arvioitu imeytyvä määrä koko erälle; friteeraukseen käytä noin 1 l ja valuta ylimääräinen öljy pois. Ylimäärä ei sisälly ravintoarvioon."
   - unit: dl
     item: kylmää vettä yrttiveteen
     amount: 4
-  - unit: ""
+  - unit: g
     item: suolaa
-    amount: null
+    amount: 6
+    note: "Noin 1/2 tl; säädä kalafondin suolaisuuden mukaan."
 translation_languages:
   - en
   - sv

@@ -57,14 +57,14 @@ ingredients:
     unit: ช้อนชา
     item: น้ำกุหลาบ
     note: ไม่จำเป็น
-  - amount: null
-    unit: ""
+  - amount: 30
+    unit: g
     item: น้ำมัน
-    note: สำหรับการทอด
-  - amount: null
-    unit: ""
+    note: "ปริมาณโดยประมาณที่อาหารดูดซึมทั้งสูตร ใช้น้ำมันประมาณ 1 ลิตรสำหรับทอดและสะเด็ดส่วนเกิน น้ำมันส่วนเกินไม่นำมาคำนวณคุณค่าทางโภชนาการ"
+  - amount: 10
+    unit: g
     item: พิสตาชิโอ
-    note: "สับหยาบสำหรับโรยหน้า"
+    note: "สับสำหรับโรยหน้า"
 source_language: fi
 source_recipe: reseptit/jalkiruoat/gulab-jamun.md
 translation_of: gulab-jamun

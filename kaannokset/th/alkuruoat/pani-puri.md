@@ -59,16 +59,17 @@ ingredients:
   - amount: 0.5
     unit: ช้อนชา
     item: ผงพริก
-  - amount: null
-    unit: ""
+  - amount: 25
+    unit: g
     item: น้ำมัน
-    note: สำหรับการทอด
+    note: "ปริมาณโดยประมาณที่อาหารดูดซึมทั้งสูตร ใช้น้ำมันประมาณ 1 ลิตรสำหรับทอดและสะเด็ดส่วนเกิน น้ำมันส่วนเกินไม่นำมาคำนวณคุณค่าทางโภชนาการ"
   - unit: dl
     item: น้ำเย็นสำหรับน้ำสมุนไพร
     amount: 4
-  - unit: ""
+  - unit: g
     item: เกลือ
-    amount: null
+    amount: 6
+    note: "ประมาณ 1/2 ช้อนชา ปรับตามความเค็มของน้ำสต็อกปลา"
 source_language: fi
 source_recipe: reseptit/alkuruoat/pani-puri.md
 translation_of: pani-puri

@@ -61,10 +61,10 @@ ingredients:
   - amount: 4
     unit: piece
     item: soft bread rolls
-  - amount: null
-    unit: ""
+  - amount: 25
+    unit: g
     item: oil
-    note: for deep frying
+    note: "Estimated amount absorbed by the batch; use about 1 L for frying and drain the excess. Excess oil is excluded from the nutrition estimate."
 source_language: fi
 source_recipe: reseptit/alkuruoat/vada-pav.md
 translation_of: vada-pav

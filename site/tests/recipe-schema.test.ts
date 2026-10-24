@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { parseMarkdown } from "../src/content/markdown";
-import { assertUniqueRecipes } from "../src/content/recipe-validation";
+import { assertQuantifiedCriticalIngredients, assertUniqueRecipes } from "../src/content/recipe-validation";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { siteContent } from "../src/generated/content.generated";
 import { recipeJsonLd } from "../src/features/recipes/schema";
@@ -52,4 +52,14 @@ test("duplicate published recipe locale and route are rejected", () => {
   const recipe = siteContent.recipes[0];
   assert.throws(() => assertUniqueRecipes([recipe, { ...recipe }]), /Duplicate published recipe translation/);
   assert.throws(() => assertUniqueRecipes([recipe, { ...recipe, recipeId: "other-recipe" }]), /Duplicate published recipe URL/);
+});
+
+test("new recipes require exact amounts for nutrition-critical ingredients", () => {
+  const recipe = { ...siteContent.recipes[0], recipeId: "future-recipe", locale: "fi" as const,
+    ingredients: [{ amount: null, unit: "", item: "oliiviöljyä" }] };
+  assert.throws(() => assertQuantifiedCriticalIngredients([recipe]), /oliiviöljyä needs a numeric amount and unit/);
+  assert.doesNotThrow(() => assertQuantifiedCriticalIngredients([{
+    ...recipe, ingredients: [{ amount: 15, unit: "ml", item: "oliiviöljyä" }],
+  }]));
+  assert.doesNotThrow(() => assertQuantifiedCriticalIngredients(siteContent.recipes));
 });

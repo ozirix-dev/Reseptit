@@ -71,14 +71,14 @@ ingredients:
     unit: ช้อนโต๊ะ
     item: น้ำผึ้ง
     note: ไม่จำเป็น
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: ผักชีสด
-    note: สำหรับการเสิร์ฟ
-  - amount: null
-    unit: ""
+    note: "สับสำหรับโรยหน้า"
+  - amount: 15
+    unit: ml
     item: น้ำมัน
-    note: เล็กน้อยสำหรับจี่ไก่ให้ผิวเหลือง
+    note: "สำหรับจี่ไก่ให้เหลือง"
 source_language: fi
 source_recipe: reseptit/paaruoat/butter-chicken.md
 translation_of: butter-chicken

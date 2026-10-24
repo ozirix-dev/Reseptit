@@ -71,14 +71,14 @@ ingredients:
     unit: msk
     item: honung
     note: valfritt
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: färsk koriander
-    note: för servering
-  - amount: null
-    unit: ""
+    note: "Hackad till servering."
+  - amount: 15
+    unit: ml
     item: olja
-    note: en skvätt för att bryna kycklingen
+    note: "Till stekning av kycklingen."
 source_language: fi
 source_recipe: reseptit/paaruoat/butter-chicken.md
 translation_of: butter-chicken

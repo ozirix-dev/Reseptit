@@ -44,14 +44,14 @@ ingredients:
   - amount: 0.75
     unit: tsk
     item: salt
-  - amount: null
-    unit: ""
+  - amount: 0.5
+    unit: g
     item: vitpeppar
-    note: efter smak
-  - amount: null
-    unit: ""
+    note: "Cirka 1/4 tsk malen vitpeppar."
+  - amount: 5
+    unit: g
     item: smör
-    note: "för att smörja ugnsformen"
+    note: "Till stekning."
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/uunilohi-smetanakuorrutteella.md

@@ -30,7 +30,7 @@ ingredients:
     item: färskost
     note: "alternativt yoghurt, crème fraîche eller gräddfil"
   - amount: 1
-    unit: ""
+    unit: st
     item: stort ägg
     note: "varje stort ägg kan ersättas med två små ägg"
   - amount: 3.5
@@ -40,10 +40,10 @@ ingredients:
     unit: g
     item: tomatsås
     note: "till exempel pizzasås eller passerade tomater"
-  - amount: null
-    unit: ""
+  - amount: 150
+    unit: g
     item: valfria pizzapålägg
-    note: till exempel skinka, pepperoni, paprika, lök, oliver, mozzarella, fetaost eller örter
+    note: "Standardpålägg för två: 50 g skinka, 50 g paprika och 50 g champinjoner. Väg byten; näringsvärdena ändras."
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/ketopizza-pofiber-pohjalla.md
@@ -52,7 +52,7 @@ translation_of: ketopizza-pofiber-pohjalla
 
 # Pizza med Pofiberbotten
 
-Den ostiga, mjuka Pofiberbotten bakas i varm ugn till en pizza med krispiga kanter. Du kan välja fyllningar efter din smak.
+Den ostiga, mjuka Pofiberbotten bakas i varm ugn till en pizza med krispiga kanter. Receptet använder uppmätt skinka, paprika och champinjoner; väg eventuella byten.
 
 ## Beskrivning
 
@@ -64,7 +64,7 @@ Bottenosten, färskosten och ägget binder Pofiber till en deg. Receptet gör en
 2. Om du vill, smält den rivna osten och färskosten i mikron i 30-60 sekunder för att få en mjukare deg.
 3. Blanda ost, färskost, ägg och Pofiber till en slät massa. Knåda för hand eller blanda kraftigt tills degen är jämn. Degen ska förbli mjuk.
 4. Bred ut degen på bakplåtspapper på en plåt. Lägg ytterligare ett bakplåtspapper ovanpå och bred ut i en tunn rund botten eller skeda i en tjockare pannpizza. Ta bort det övre papperet.
-5. Bred ut tomatsåsen på botten och lägg på det pålägg du vill ha.
+5. Bred ut tomatsåsen på botten och lägg på de uppmätta standardpåläggen.
 6. Grädda i cirka 8–12 minuter tills kanterna är frasiga och osten har smält. Vid lägre temperatur kan det ta längre tid; kontrollera att pizzan är färdig.
 7. Servera genast varm.
 

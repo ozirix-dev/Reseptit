@@ -34,17 +34,17 @@ ingredients:
   - amount: 1
     unit: ""
     item: morot
-  - amount: null
-    unit: ""
+  - amount: 15
+    unit: g
     item: smör
-    note: för stekning efter din smak
+    note: "Till stekning."
   - amount: 8
     unit: dl
     item: vatten
-  - amount: null
-    unit: ""
+  - amount: 15
+    unit: ml
     item: fiskfond
-    note: enligt förpackningens dosering för 8 dl vatten
+    note: "Riktvärde 15 ml per 8 dl vatten; kontrollera förpackningens dosering."
   - amount: 8
     unit: st
     item: "hela svartpepparkorn"
@@ -54,14 +54,14 @@ ingredients:
   - amount: 2
     unit: dl
     item: vispgrädde
-  - amount: null
-    unit: ""
+  - amount: 3
+    unit: g
     item: salt
-    note: om nödvändigt efter smak
-  - amount: null
-    unit: ""
+    note: "Cirka 1/2 tsk; anpassa efter fondens salthalt."
+  - amount: 10
+    unit: g
     item: färsk dill
-    note: finhackad
+    note: "Hackad."
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/lohikeitto-kuohukermalla.md

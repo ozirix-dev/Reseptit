@@ -59,16 +59,17 @@ ingredients:
   - amount: 0.5
     unit: tsp
     item: chili powder
-  - amount: null
-    unit: ""
+  - amount: 25
+    unit: g
     item: oil
-    note: for deep frying
+    note: "Estimated amount absorbed by the batch; use about 1 L for frying and drain the excess. Excess oil is excluded from the nutrition estimate."
   - unit: dl
     item: cold water for the herb water
     amount: 4
-  - unit: ""
+  - unit: g
     item: salt
-    amount: null
+    amount: 6
+    note: "About 1/2 tsp; adjust for stock saltiness."
 source_language: fi
 source_recipe: reseptit/alkuruoat/pani-puri.md
 translation_of: pani-puri
