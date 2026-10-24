@@ -66,13 +66,13 @@ test("the ten additional Thai recipes are published in Finnish with their image 
   }
 });
 
-test("the Finnish breakfast and dessert collections each contain twenty and ten published recipes with images", () => {
+test("the Finnish breakfast and dessert collections contain 150 and ten published recipes with images", () => {
   const breakfast = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && recipe.category === "aamupala");
   const desserts = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && recipe.category === "jalkiruoka" && [
     "vhh-brita-kakku", "keto-mutakakku", "vhh-mokkapalat", "keto-suklaakeksit", "vhh-omenapiirakka",
     "vhh-juustokakku", "vhh-raparperipiirakka", "vhh-korvapuustit", "vhh-mansikkakakku", "vhh-letut",
   ].includes(recipe.recipeId));
-  assert.equal(breakfast.length, 20);
+  assert.equal(breakfast.length, 150);
   assert.equal(desserts.length, 10);
   for (const recipe of [...breakfast, ...desserts]) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
