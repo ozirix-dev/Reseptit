@@ -2,6 +2,7 @@ export interface GlycemicLoadDisplayCandidate {
   recipeId: string;
   status: "CALCULATED" | "INSUFFICIENT SOURCE DATA";
   glycemicLoadPerServing: number | null;
+  glycemicLoadRangePerServing?: { min: number; max: number } | null;
   confidence: "HIGH" | "MEDIUM" | "LOW" | null;
   sourceReferences: Array<{ title: string; url: string; matchKind: "EXACT" | "ANALOG" | "CATEGORY_MEAN" | "CALCULATION_POLICY"; confidence: "HIGH" | "MEDIUM" | "LOW"; note: string }>;
 }

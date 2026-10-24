@@ -35,7 +35,17 @@ export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {
   const indexes = locales.map((locale) => ({ locale, routePath: localeIndexes[locale] }));
   return [
     ...locales.map((locale) => ({ route: localeIndexes[locale], locale, h1: names[locale], title: `${names[locale]} | Ozirix`, description: recipeUi[locale].intro, alternates: alternateMap(indexes) })),
-    { route: "/glykeeminen-kuorma/", locale: "fi", h1: "Glykeemisen kuorman pilotti", title: "Glykeemisen kuorman pilotti | Reseptit", description: "Kymmenen reseptin glykeemisen kuorman laskentapilotti ja sen lähdetietojen tilanne.", alternates: {} },
+    ...([
+      { locale: "fi" as const, route: "/glykeeminen-kuorma/", h1: "Glykeeminen kuorma: lähteet ja laskenta", title: "Glykeeminen kuorma: lähteet ja laskenta | Reseptit", description: "Reseptien glykeemisen kuorman laskentatapa, lähteet ja reseptikohtaiset oletukset." },
+      { locale: "en" as const, route: "/en/glycemic-load/", h1: "Glycemic load: sources and method", title: "Glycemic load: sources and method | Recipes", description: "Calculation method, sources and recipe-specific assumptions for glycemic-load estimates." },
+      { locale: "sv" as const, route: "/sv/glykemisk-belastning/", h1: "Glykemisk belastning: källor och metod", title: "Glykemisk belastning: källor och metod | Recept", description: "Beräkningsmetod, källor och receptspecifika antaganden för uppskattningar av glykemisk belastning." },
+      { locale: "th" as const, route: "/th/glycemic-load/", h1: "ภาระน้ำตาลในเลือด: แหล่งข้อมูลและวิธีคำนวณ", title: "ภาระน้ำตาลในเลือด: แหล่งข้อมูลและวิธีคำนวณ | สูตรอาหาร", description: "วิธีคำนวณ แหล่งข้อมูล และสมมติฐานเฉพาะสูตรสำหรับค่าประมาณภาระน้ำตาลในเลือด" },
+    ]).map((page) => ({ ...page, alternates: alternateMap([
+      { locale: "fi" as const, routePath: "/glykeeminen-kuorma/" },
+      { locale: "en" as const, routePath: "/en/glycemic-load/" },
+      { locale: "sv" as const, routePath: "/sv/glykemisk-belastning/" },
+      { locale: "th" as const, routePath: "/th/glycemic-load/" },
+    ]) })),
     ...recipes.map((recipe) => ({ route: recipe.routePath, locale: recipe.locale, h1: recipe.title, title: `${recipe.title} | ${names[recipe.locale]}`, description: recipe.description || recipeUi[recipe.locale].intro, alternates: alternateMap(recipes.filter((r) => r.recipeId === recipe.recipeId)), recipe })),
   ];
 }

@@ -42,6 +42,13 @@
       "url": "https://doi.org/10.12944/CRNFSJ.4.1.02",
       "year": 2016,
       "use": "Primary-study discovery candidate for fried potato: eight participants and cultivar-specific sliced potato fried in extra-virgin olive oil. Not ISO-qualified and not preparation-matched to tortilla potato."
+    },
+    {
+      "id": "fine-foods-massaman-paste",
+      "title": "Spice Up! Massaman curry paste, Fine Foods Oy",
+      "url": "https://finefoods.fi/en/product/spice-up-for-professionals/spice-up-massaman-curry-paste-1000g/",
+      "year": 2026,
+      "use": "Product-label carbohydrate value used only as the high scenario for an unbranded recipe ingredient."
     }
   ],
   "records": [
@@ -478,6 +485,78 @@
         "qualityEvidence": "Published category mean calculated from the ISO-screened Supplemental Table 1 food measurements. It is not a beef-broth-specific measurement."
       },
       "note": "Broad soup category mean applied to broth carbohydrate; weak match."
+    },
+    {
+      "id": "coconut-milk-porridge-gi-31",
+      "gi": 31,
+      "foodKey": "coconut-milk",
+      "preparationKey": "rice-porridge-with-coconut-milk",
+      "food": "Coconut-milk porridge",
+      "preparation": "Rice porridge prepared with coconut milk",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "Glycemic index values of traditional South Indian foods",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22849311/",
+        "table": "Reported coconut-milk porridge result; n=10",
+        "year": 2012,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 10,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published GI value for a mixed rice porridge containing coconut milk; it is not a measurement of plain coconut milk and ISO compliance is not confirmed."
+      },
+      "note": "Low-confidence analogue for Fineli coconut milk/drink composite.",
+      "matchKind": "ANALOG",
+      "confidence": "LOW"
+    },
+    {
+      "id": "asian-regional-category-mean-gi-60",
+      "gi": 60,
+      "foodKey": "curry-paste",
+      "preparationKey": "asian-regional-food-category",
+      "food": "Asian regional foods, category mean",
+      "preparation": "Regional category mean; heterogeneous foods",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1, Asian foods: mean 60, SD 19, n=89",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 89,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published regional category mean, not a curry-paste measurement."
+      },
+      "note": "Broad low-confidence regional category proxy for curry paste; not preparation-matched.",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    },
+    {
+      "id": "nuts-category-mean-gi-22",
+      "gi": 22,
+      "foodKey": "peanut",
+      "preparationKey": "nuts-category-mean",
+      "food": "Nuts, category mean",
+      "preparation": "Nut category mean",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1, nuts: mean 22, SD 2, n=3",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 3,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published category mean with only three observations; not peanut-specific."
+      },
+      "note": "Low-confidence category mean for peanuts.",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
     }
   ]
 }

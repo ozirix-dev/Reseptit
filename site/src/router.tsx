@@ -3,7 +3,7 @@ import { RecipePage } from "@/features/recipes/RecipePage";
 import { RecipeAbout } from "@/features/recipes/recipe-tools";
 import { RecipesPage } from "@/features/recipes/RecipesPage";
 import { GlycemicLoadPilotPage } from "@/features/glycemic-load/GlycemicLoadPilotPage";
-import { recipeIndexPath, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
+import { glycemicLoadPath, recipeIndexPath, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { useContent } from "@/lib/content";
 import { loadContent } from "@/lib/load-content";
 import type { RouteContent } from "@/content/route-data";
@@ -13,6 +13,7 @@ function SiteLayout() {
   const { pathname } = useLocation();
   const locale = recipeLocaleFromPath(pathname);
   const labels = recipeUi[locale];
+  const isMethodPage = Object.values({ fi: "/glykeeminen-kuorma", en: "/en/glycemic-load", sv: "/sv/glykemisk-belastning", th: "/th/glycemic-load" }).includes(pathname.replace(/\/$/, ""));
   const { locales: availableLocales } = useContent();
   return (
     <div className="site-shell">
@@ -22,11 +23,11 @@ function SiteLayout() {
         <div className="container site-header__inner">
           <Link className="site-brand" to={recipeIndexPath(locale)} aria-label={labels.brandHome}><span className="site-brand__mark" aria-hidden="true">{labels.brand.slice(0, 1)}</span><span><strong>{labels.brand}</strong><small>{labels.tagline}</small></span></Link>
           {availableLocales.length > 1 ? <nav className="site-nav" aria-label={labels.languages}>
-            {availableLocales.includes("fi") ? <Link to="/" lang="fi" aria-current={locale === "fi" && !pathname.replace(/\/$/, "").endsWith("/glykeeminen-kuorma") ? "page" : undefined}>Suomi</Link> : null}
-            {availableLocales.includes("en") ? <Link to="/en/recipes/" lang="en" aria-current={locale === "en" ? "page" : undefined}>English</Link> : null}
-            {availableLocales.includes("sv") ? <Link to="/sv/recept/" lang="sv" aria-current={locale === "sv" ? "page" : undefined}>Svenska</Link> : null}
-            {availableLocales.includes("th") ? <Link to="/th/recipes/" lang="th" aria-current={locale === "th" ? "page" : undefined}>ไทย</Link> : null}
-            <Link to="/glykeeminen-kuorma/" lang="fi" aria-current={pathname.replace(/\/$/, "") === "/glykeeminen-kuorma" ? "page" : undefined}>GL-pilotti</Link>
+            {availableLocales.includes("fi") ? <Link to={isMethodPage ? glycemicLoadPath("fi") : "/"} lang="fi" aria-current={isMethodPage && locale === "fi" ? "page" : undefined}>Suomi</Link> : null}
+            {availableLocales.includes("en") ? <Link to={isMethodPage ? glycemicLoadPath("en") : "/en/recipes/"} lang="en" aria-current={isMethodPage && locale === "en" ? "page" : undefined}>English</Link> : null}
+            {availableLocales.includes("sv") ? <Link to={isMethodPage ? glycemicLoadPath("sv") : "/sv/recept/"} lang="sv" aria-current={isMethodPage && locale === "sv" ? "page" : undefined}>Svenska</Link> : null}
+            {availableLocales.includes("th") ? <Link to={isMethodPage ? glycemicLoadPath("th") : "/th/recipes/"} lang="th" aria-current={isMethodPage && locale === "th" ? "page" : undefined}>ไทย</Link> : null}
+            <Link to={glycemicLoadPath(locale)} lang={locale} aria-current={isMethodPage ? "page" : undefined}>{labels.glycemicLoadMethod}</Link>
           </nav> : null}
         </div>
       </header>
@@ -66,6 +67,9 @@ export const siteRoutes: RouteObject[] = [
     children: [
       { index: true, element: <RecipesPage locale="fi" /> },
       { path: "glykeeminen-kuorma", element: <GlycemicLoadPilotPage /> },
+      { path: "en/glycemic-load", element: <GlycemicLoadPilotPage /> },
+      { path: "sv/glykemisk-belastning", element: <GlycemicLoadPilotPage /> },
+      { path: "th/glycemic-load", element: <GlycemicLoadPilotPage /> },
       { path: ":slug", element: <RecipePage /> },
       { path: "en/recipes", element: <RecipesPage locale="en" /> },
       { path: "en/recipes/:slug", element: <RecipePage /> },

@@ -150,6 +150,23 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       }
     }
     await page.setViewportSize({ width: 320, height: 800 });
+    await page.goto(`${base}/massaman-curry-kanalla-vhh/`);
+    assert.match(await page.locator(".recipe-glycemic-load").innerText(), /GK-arvio[\s\S]*noin 5–6 \/ annos/);
+    const methodLink = page.locator(".recipe-glycemic-load__caption a");
+    await methodLink.focus();
+    assert.equal(await methodLink.evaluate((element) => element.matches(":focus-visible")), true);
+    await page.keyboard.press("Enter");
+    await page.getByRole("heading", { name: "Glykeeminen kuorma: lähteet ja laskenta" }).waitFor();
+    assert.ok(page.url().includes("#massaman-curry-kanalla-vhh"));
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, "central GK details fit 320px");
+    const sourceSummary = page.locator("#massaman-curry-kanalla-vhh summary");
+    await sourceSummary.focus();
+    await page.keyboard.press("Enter");
+    assert.equal(await page.locator("#massaman-curry-kanalla-vhh details").evaluate((element) => (element as HTMLDetailsElement).open), true);
+    await page.getByRole("link", { name: "English", exact: true }).click();
+    await page.getByRole("heading", { name: "Glycemic load: sources and method" }).waitFor();
+    assert.ok(page.url().includes("/en/glycemic-load/"));
+    await page.setViewportSize({ width: 320, height: 800 });
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
 
     await page.goto(`${base}/`);
