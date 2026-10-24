@@ -50,6 +50,11 @@ image:
   alt: Kanapyörykät tomaatti-kermakastikkeessa tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 4.94
+carbs_total_per_serving_g: 5.61
+protein_per_serving_g: 29.44
+fat_per_serving_g: 21.23
+
 ---
 # Kanapyörykät tomaatti-kermakastikkeessa
 

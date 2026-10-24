@@ -25,7 +25,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: เนื้อปลาสีขาว
+    item: เนื้อปลาพอลล็อกแช่แข็ง
     note: เป็นชิ้น ๆ
   - amount: 100
     unit: g
@@ -60,6 +60,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/amritsari-kala.md
 translation_of: amritsari-kala
+carbs_net_per_serving_g: 10.74
+carbs_total_per_serving_g: 16.33
+protein_per_serving_g: 32.17
+fat_per_serving_g: 10.81
+
 ---
 
 # ปลาอมฤตสารีในแป้งถั่วชิกพีปรุงรส

@@ -65,6 +65,11 @@ translation_status:
   en: published
   sv: published
   th: published
+carbs_net_per_serving_g: 11.55
+carbs_total_per_serving_g: 15.22
+protein_per_serving_g: 13.94
+fat_per_serving_g: 17.52
+
 ---
 
 # Nakkikeitto kukkakaalilla

@@ -25,7 +25,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: valkoista kalafileetä
+    item: pakastettua seitiä
     note: paloina
   - amount: 100
     unit: g
@@ -62,6 +62,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 10.74
+carbs_total_per_serving_g: 16.33
+protein_per_serving_g: 32.17
+fat_per_serving_g: 10.81
+
 ---
 
 # Amritsari-kala maustetussa kikhernejauhokuoressa

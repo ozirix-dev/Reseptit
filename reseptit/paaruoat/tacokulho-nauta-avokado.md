@@ -38,7 +38,7 @@ ingredients:
     item: cheddarjuustoa
   - amount: 100
     unit: g
-    item: kreikkalaista jogurttia
+    item: maustamatonta jogurttia 3,9 % rasvaa
   - amount: 1
     unit: kpl
     item: limetti
@@ -53,6 +53,11 @@ image:
   alt: Taco-kulho naudanlihalla ja avokadolla tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 2.71
+carbs_total_per_serving_g: 5.28
+protein_per_serving_g: 31.27
+fat_per_serving_g: 26.41
+
 ---
 # Taco-kulho naudanlihalla ja avokadolla
 

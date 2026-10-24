@@ -286,6 +286,11 @@ kirjattu seuraaviin muistioihin:
   lähdetietueet, muunnokset ja poisrajausten ylärajat.
 - `estimates-2026-10-25-batch-11.md` — erän valinnat, lähdevastaavuudet ja
   laskennan arviointi.
+- `batches/batch-12.json` — erän 12 20 reseptin täsmälliset lähdemäppäykset.
+- `calculations/<recipe_id>.json` — erän 12 uudelleenlaskettavat
+  ainesosasyötteet, lähdetietueet, yksikkömuunnokset ja rajaukset.
+- `estimates-2026-10-25-batch-12.md` — erän 12 laskentaperusteet, poikkeamat,
+  lähteet, arvot ja prosessin auditointi.
 
 Erissä 1–8 käytettiin aikaisempia laskentatyökaluja, jotka säilyvät niiden
 laskentojen historiallisina lähteinä. Uudet erät on luotava nykyisellä

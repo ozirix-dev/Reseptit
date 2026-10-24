@@ -64,6 +64,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/karjalanpaisti-vhh.md
 translation_of: karjalanpaisti-vhh
+carbs_net_per_serving_g: 6.6
+carbs_total_per_serving_g: 9.13
+protein_per_serving_g: 28.79
+fat_per_serving_g: 9.07
+
 ---
 
 # Karelian Stew with Roasted Cabbage

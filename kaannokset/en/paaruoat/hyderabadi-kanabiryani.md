@@ -80,6 +80,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/hyderabadi-kanabiryani.md
 translation_of: hyderabadi-kanabiryani
+carbs_net_per_serving_g: 60.47
+carbs_total_per_serving_g: 62.73
+protein_per_serving_g: 37.41
+fat_per_serving_g: 20.64
+
 ---
 
 # Hyderabadi chicken biryani

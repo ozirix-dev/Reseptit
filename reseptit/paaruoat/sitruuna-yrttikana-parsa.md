@@ -47,6 +47,11 @@ image:
   alt: Sitruuna-yrttikana ja paahdettu parsa tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 1.78
+carbs_total_per_serving_g: 4.33
+protein_per_serving_g: 36.34
+fat_per_serving_g: 16.09
+
 ---
 # Sitruuna-yrttikana ja paahdettu parsa
 

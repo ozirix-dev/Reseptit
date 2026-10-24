@@ -25,6 +25,11 @@ ingredients:
   - {amount: 1, unit: kpl, item: laakerinlehteä}
   - {amount: 60, unit: g, item: vihreitä oliiveja}
   - {amount: 1, unit: rkl, item: valkoviinietikkaa}
+carbs_net_per_serving_g: 7.67
+carbs_total_per_serving_g: 9.77
+protein_per_serving_g: 34.06
+fat_per_serving_g: 6.77
+
 ---
 
 # Kuubalainen ropa vieja

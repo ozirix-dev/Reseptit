@@ -81,6 +81,11 @@ status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/paprikainen-vhh-gulassi.md
 translation_of: paprikainen-vhh-gulassi
+carbs_net_per_serving_g: 8.72
+carbs_total_per_serving_g: 11.29
+protein_per_serving_g: 40.59
+fat_per_serving_g: 24.04
+
 ---
 
 # Paprikagryta med nötkött

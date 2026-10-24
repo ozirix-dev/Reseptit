@@ -20,7 +20,7 @@ ingredients:
     item: lenkkimakkaraa
   - amount: 100
     unit: g
-    item: juustoraastetta
+    item: cheddarjuustoraastetta
   - amount: 1
     unit: kpl
     item: sipuli
@@ -47,6 +47,11 @@ image:
   alt: Uunimakkara sipuli-sinappipeitteellä tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 12.02
+carbs_total_per_serving_g: 12.7
+protein_per_serving_g: 19.58
+fat_per_serving_g: 38.5
+
 ---
 # Uunimakkara sipuli-sinappipeitteellä
 
