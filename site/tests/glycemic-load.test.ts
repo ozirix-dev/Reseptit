@@ -27,8 +27,20 @@ const gi: GlycemicIndexRecord = {
   preparationKey: "raw",
   food: "Tested food",
   preparation: "raw",
+  qualityTier: "STRONG",
   referenceScale: "GLUCOSE_100",
-  source: { title: "Test source", url: "https://example.test/gi", table: "Supplemental Table 1", year: 2021 },
+  source: {
+    title: "Test source",
+    url: "https://example.test/gi",
+    table: "Supplemental Table 1",
+    year: 2021,
+    published: true,
+    iso26642Confirmed: true,
+    participants: 10,
+    referenceFood: "Glucose",
+    testDurationHours: 2,
+    qualityEvidence: "Table 1 ISO-standard inclusion criteria.",
+  },
 };
 
 test("single-ingredient GL uses available carbohydrate per serving and rounds only the total", () => {
@@ -67,6 +79,45 @@ test("zero-carbohydrate ingredients need no GI value and contribute zero", () =>
   assert.equal(result.status, "CALCULATED");
   assert.equal(result.glycemicLoadPerServing, 0);
   assert.equal(result.ingredients[0].giContribution, null);
+});
+
+test("supplementary and unpublished GI records never produce a public-ready GL", () => {
+  const supplementary = {
+    ...gi,
+    qualityTier: "SUPPLEMENTARY" as const,
+    source: { ...gi.source, published: false, iso26642Confirmed: false, qualityEvidence: "Database lists unpublished observation; protocol is not verifiable." },
+  };
+  const result = calculateGlycemicLoad({
+    recipeId: "supplementary",
+    servings: 1,
+    ingredients: [{ name: "food", grams: 100, fineliRecordId: "food", giRecordId: supplementary.id, foodKey: "tested-food", preparationKey: "raw", giMatchEvidence: "Exact food and preparation, lower quality source." }],
+  }, [food("food", 10)], [supplementary]);
+  assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(result.glycemicLoadPerServing, null);
+  assert.match(result.blockers[0], /strong, published ISO 26642/);
+});
+
+test("unweighed ingredients block totals and are not silently omitted", () => {
+  const result = calculateGlycemicLoad({
+    recipeId: "unweighed",
+    servings: 1,
+    ingredients: [{ name: "unmeasured seasoning", grams: null, fineliRecordId: null, giRecordId: null, excludedReason: "Amount not specified." }],
+  }, [], []);
+  assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(result.glycemicLoadPerServing, null);
+  assert.match(result.blockers[0], /not treated as zero/);
+});
+
+test("source discovery records food candidates but marks preparation mismatch", () => {
+  const rawCandidate = { ...gi, preparation: "whole, raw", preparationKey: "whole-raw" };
+  const result = calculateGlycemicLoad({
+    recipeId: "tomato-sauce",
+    servings: 1,
+    ingredients: [{ name: "crushed tomato", grams: 100, fineliRecordId: "tomato", giRecordId: null, foodKey: "tested-food", preparationKey: "crushed-cooked" }],
+  }, [food("tomato", 5)], [rawCandidate]);
+  assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(result.ingredients[0].giCandidates.length, 1);
+  assert.equal(result.ingredients[0].giCandidates[0].preparationMatches, false);
 });
 
 test("a GI from a different food or preparation blocks the recipe total", () => {

@@ -35,6 +35,7 @@ export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {
   const indexes = locales.map((locale) => ({ locale, routePath: localeIndexes[locale] }));
   return [
     ...locales.map((locale) => ({ route: localeIndexes[locale], locale, h1: names[locale], title: `${names[locale]} | Ozirix`, description: recipeUi[locale].intro, alternates: alternateMap(indexes) })),
+    { route: "/glykeeminen-kuorma/", locale: "fi", h1: "Glykeemisen kuorman pilotti", title: "Glykeemisen kuorman pilotti | Reseptit", description: "Kymmenen reseptin glykeemisen kuorman laskentapilotti ja sen lähdetietojen tilanne.", alternates: {} },
     ...recipes.map((recipe) => ({ route: recipe.routePath, locale: recipe.locale, h1: recipe.title, title: `${recipe.title} | ${names[recipe.locale]}`, description: recipe.description || recipeUi[recipe.locale].intro, alternates: alternateMap(recipes.filter((r) => r.recipeId === recipe.recipeId)), recipe })),
   ];
 }

@@ -2,6 +2,7 @@ import { createBrowserRouter, createMemoryRouter, Link, Outlet, useLocation, typ
 import { RecipePage } from "@/features/recipes/RecipePage";
 import { RecipeAbout } from "@/features/recipes/recipe-tools";
 import { RecipesPage } from "@/features/recipes/RecipesPage";
+import { GlycemicLoadPilotPage } from "@/features/glycemic-load/GlycemicLoadPilotPage";
 import { recipeIndexPath, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { useContent } from "@/lib/content";
 import { loadContent } from "@/lib/load-content";
@@ -21,10 +22,11 @@ function SiteLayout() {
         <div className="container site-header__inner">
           <Link className="site-brand" to={recipeIndexPath(locale)} aria-label={labels.brandHome}><span className="site-brand__mark" aria-hidden="true">{labels.brand.slice(0, 1)}</span><span><strong>{labels.brand}</strong><small>{labels.tagline}</small></span></Link>
           {availableLocales.length > 1 ? <nav className="site-nav" aria-label={labels.languages}>
-            {availableLocales.includes("fi") ? <Link to="/" lang="fi" aria-current={locale === "fi" ? "page" : undefined}>Suomi</Link> : null}
+            {availableLocales.includes("fi") ? <Link to="/" lang="fi" aria-current={locale === "fi" && !pathname.replace(/\/$/, "").endsWith("/glykeeminen-kuorma") ? "page" : undefined}>Suomi</Link> : null}
             {availableLocales.includes("en") ? <Link to="/en/recipes/" lang="en" aria-current={locale === "en" ? "page" : undefined}>English</Link> : null}
             {availableLocales.includes("sv") ? <Link to="/sv/recept/" lang="sv" aria-current={locale === "sv" ? "page" : undefined}>Svenska</Link> : null}
             {availableLocales.includes("th") ? <Link to="/th/recipes/" lang="th" aria-current={locale === "th" ? "page" : undefined}>ไทย</Link> : null}
+            <Link to="/glykeeminen-kuorma/" lang="fi" aria-current={pathname.replace(/\/$/, "") === "/glykeeminen-kuorma" ? "page" : undefined}>GL-pilotti</Link>
           </nav> : null}
         </div>
       </header>
@@ -63,6 +65,7 @@ export const siteRoutes: RouteObject[] = [
     errorElement: <ContentError />,
     children: [
       { index: true, element: <RecipesPage locale="fi" /> },
+      { path: "glykeeminen-kuorma", element: <GlycemicLoadPilotPage /> },
       { path: ":slug", element: <RecipePage /> },
       { path: "en/recipes", element: <RecipesPage locale="en" /> },
       { path: "en/recipes/:slug", element: <RecipePage /> },

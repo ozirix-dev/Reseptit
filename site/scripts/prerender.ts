@@ -17,6 +17,7 @@ const baseUrl = "https://ozirix-dev.github.io/Reseptit";
 const localeBase: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" };
 const indexNames: Record<RecipeLocale, string> = { fi: "Reseptit", en: "Recipes", sv: "Recept", th: "สูตรอาหาร" };
 const openGraphLocale: Record<RecipeLocale, string> = { fi: "fi_FI", en: "en_GB", sv: "sv_SE", th: "th_TH" };
+const pilotRoute = "/glykeeminen-kuorma/";
 function escapeHtml(value: string): string {
   return value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 }
@@ -28,15 +29,16 @@ function outputPaths(route: string): string[] {
 
 function routeMetadata(route: string) {
   const recipe = siteContent.recipes.find((item) => item.routePath === route);
+  const pilotPage = route === pilotRoute;
   const indexLocale = (Object.keys(localeBase) as RecipeLocale[]).find((locale) =>
     locale === "fi" ? route === "/" : route === `${localeBase[locale]}/` || route === localeBase[locale]);
-  if (!recipe && indexLocale !== "fi" && (!indexLocale || !siteContent.recipes.some((item) => item.locale === indexLocale))) return null;
+  if (!recipe && !pilotPage && indexLocale !== "fi" && (!indexLocale || !siteContent.recipes.some((item) => item.locale === indexLocale))) return null;
   const locale = recipe?.locale ?? indexLocale ?? "fi";
-  const title = recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
-  const description = recipe?.description || recipeUi[locale].intro;
+  const title = pilotPage ? "Glykeemisen kuorman pilotti | Reseptit" : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
+  const description = pilotPage ? "Kymmenen reseptin glykeemisen kuorman laskentapilotti ja sen lähdetietojen tilanne." : recipe?.description || recipeUi[locale].intro;
   const url = `${baseUrl}${route}`;
   const translations = recipe ? siteContent.recipes.filter((item) => item.recipeId === recipe.recipeId) : [];
-  const publishedLocales = recipe
+  const publishedLocales = pilotPage ? [] : recipe
     ? translations.map((item) => ({ locale: item.locale, path: item.routePath }))
     : (Object.keys(localeBase) as RecipeLocale[])
         .filter((itemLocale) => siteContent.recipes.some((item) => item.locale === itemLocale))
@@ -53,7 +55,7 @@ function routeMetadata(route: string) {
     ? `<script id="recipe-jsonld" type="application/ld+json">${JSON.stringify(recipeJsonLd(recipe)).replaceAll("<", "\\u003c")}</script>`
     : "";
   // Match the card grid breakpoints. Do not eagerly fetch three cards on mobile.
-  const desktopImages = recipe ? [] : siteContent.recipes.filter((item) => item.locale === locale)
+  const desktopImages = recipe || pilotPage ? [] : siteContent.recipes.filter((item) => item.locale === locale)
     .slice(1, 3).flatMap((item, index) => item.image ? [
       `<link rel="preload" as="image" fetchpriority="high" href="${escapeHtml(item.image.src)}" media="(min-width: ${index === 0 ? 700 : 1100}px)"${item.image.srcSet ? ` imagesrcset="${escapeHtml(item.image.srcSet)}"` : ""}${item.image.srcSet ? ` imagesizes="${escapeHtml(recipeCardSizes)}"` : ""} />`,
     ] : []);
@@ -98,6 +100,7 @@ try {
   }
   const routes = [...new Set([
     "/",
+    pilotRoute,
     ...(Object.keys(localeBase) as RecipeLocale[])
       .filter((locale) => locale !== "fi" && siteContent.recipes.some((recipe) => recipe.locale === locale))
       .map((locale) => `${localeBase[locale]}/`),
