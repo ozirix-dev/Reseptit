@@ -22,6 +22,8 @@ export interface GlycemicIndexRecord {
     qualityEvidence: string;
   };
   note?: string;
+  matchKind?: "EXACT" | "ANALOG" | "CATEGORY_MEAN";
+  confidence?: "HIGH" | "MEDIUM" | "LOW";
 }
 
 export interface GlycemicLoadIngredientInput {
@@ -34,6 +36,8 @@ export interface GlycemicLoadIngredientInput {
   massEvidence?: string;
   giMatchEvidence?: string;
   excludedReason?: string;
+  estimatedAvailableCarbohydratePerServingG?: number;
+  negligibleAssumption?: string;
 }
 
 export interface GlycemicLoadRecipeInput {
@@ -47,6 +51,8 @@ export interface GlycemicLoadResult {
   servings: number;
   status: "CALCULATED" | "INSUFFICIENT SOURCE DATA";
   glycemicLoadPerServing: number | null;
+  confidence: "HIGH" | "MEDIUM" | "LOW" | null;
+  interpretation: string;
   ingredients: Array<{
     name: string;
     grams: number | null;
@@ -56,6 +62,8 @@ export interface GlycemicLoadResult {
     gi: number | null;
     giRecordId: string | null;
     qualityTier: GlycemicIndexRecord["qualityTier"] | null;
+    matchKind: GlycemicIndexRecord["matchKind"] | null;
+    confidence: GlycemicIndexRecord["confidence"] | null;
     giContribution: number | null;
     giCandidates: Array<{
       id: string;
@@ -74,9 +82,9 @@ export interface GlycemicLoadResult {
 const valid = (value: unknown): value is number => typeof value === "number" && Number.isFinite(value) && value >= 0;
 
 /**
- * Calculate GL from each ingredient's available carbohydrate and an exact GI
- * match. Missing evidence blocks the recipe total; a partial GL is never
- * returned as if it represented the whole recipe.
+ * Calculate an ingredient-based GL estimate. Ingredient portions with <1 g
+ * available carbohydrate per serving are documented and excluded. All other
+ * portions require traceable GI evidence, including explicitly labelled analogs.
  */
 export function calculateGlycemicLoad(
   input: GlycemicLoadRecipeInput,
@@ -91,6 +99,7 @@ export function calculateGlycemicLoad(
   const giById = new Map(giRecords.map((record) => [record.id, record]));
   const blockers: string[] = [];
   let totalLoad = 0;
+  let confidence: "HIGH" | "MEDIUM" | "LOW" = "HIGH";
 
   const ingredients = input.ingredients.map((ingredient) => {
     const issues: string[] = [];
@@ -106,21 +115,28 @@ export function calculateGlycemicLoad(
       : [];
 
     if (ingredient.excludedReason) {
-      const issue = "Ingredient amount or Fineli mapping is missing; it is not treated as zero.";
-      blockers.push(`${input.recipeId}: ${ingredient.name}: ${issue}`);
+      const estimatedCarbs = ingredient.estimatedAvailableCarbohydratePerServingG;
+      const negligible = valid(estimatedCarbs) && estimatedCarbs < 1 && Boolean(ingredient.negligibleAssumption);
+      const issue = negligible
+        ? `Omitted using stated <1 g/serving estimate: ${ingredient.negligibleAssumption}`
+        : "Ingredient amount or Fineli mapping is missing; it is not treated as zero.";
+      if (!negligible) blockers.push(`${input.recipeId}: ${ingredient.name}: ${issue}`);
+      if (negligible) confidence = "LOW";
       return {
         name: ingredient.name,
         grams: ingredient.grams,
         fineliRecordId: ingredient.fineliRecordId,
         availableCarbohydratePer100g: null,
-        availableCarbohydratePerServingG: null,
+        availableCarbohydratePerServingG: negligible ? estimatedCarbs ?? null : null,
         gi: null,
         giRecordId: ingredient.giRecordId,
         qualityTier: null,
+        matchKind: null,
+        confidence: negligible ? "LOW" as const : null,
         giContribution: null,
         giCandidates,
         excludedReason: ingredient.excludedReason,
-        issues,
+        issues: negligible ? [issue] : issues,
       };
     }
 
@@ -147,24 +163,27 @@ export function calculateGlycemicLoad(
     let gi: number | null = null;
     let qualityTier: GlycemicIndexRecord["qualityTier"] | null = null;
     let giContribution: number | null = null;
+    let matchKind: GlycemicIndexRecord["matchKind"] | null = null;
+    let ingredientConfidence: GlycemicIndexRecord["confidence"] | null = null;
     if (availablePerServing !== null && availablePerServing > 0) {
-      if (!ingredient.foodKey || !ingredient.preparationKey) {
-        issues.push("Ingredient food and preparation keys are missing.");
-      }
+      if (availablePerServing < 1) confidence = "LOW";
       const matchedGi = ingredient.giRecordId ? giById.get(ingredient.giRecordId) : undefined;
-      if (!matchedGi) {
+      if (availablePerServing < 1) {
+        gi = null;
+      } else if (!matchedGi) {
         issues.push(ingredient.giMatchEvidence || "No exact, preparation-matched published GI value is recorded.");
-      } else if (matchedGi.foodKey !== ingredient.foodKey || matchedGi.preparationKey !== ingredient.preparationKey) {
-        issues.push("Published GI food or preparation does not exactly match the recipe ingredient.");
-      } else if (!valid(matchedGi.gi) || !ingredient.giMatchEvidence) {
-        issues.push("GI value or exact-match evidence is invalid.");
-      } else if (matchedGi.qualityTier !== "STRONG" || !matchedGi.source.published || !matchedGi.source.iso26642Confirmed) {
-        issues.push("GI source does not meet the strong, published ISO 26642 evidence tier.");
+      } else if (!valid(matchedGi.gi) || !ingredient.giMatchEvidence || !matchedGi.source.url
+        || !matchedGi.source.published || matchedGi.referenceScale !== "GLUCOSE_100") {
+        issues.push("GI value is missing, unpublished, off-scale, or lacks source and matching rationale.");
       } else {
         gi = matchedGi.gi;
         qualityTier = matchedGi.qualityTier;
+        matchKind = matchedGi.matchKind ?? "EXACT";
+        ingredientConfidence = matchedGi.confidence ?? (matchedGi.qualityTier === "STRONG" ? "HIGH" : "LOW");
         giContribution = availablePerServing * gi / 100;
         totalLoad += giContribution;
+        if (ingredientConfidence === "LOW" || matchKind === "CATEGORY_MEAN") confidence = "LOW";
+        else if (ingredientConfidence === "MEDIUM" && confidence === "HIGH") confidence = "MEDIUM";
       }
     }
 
@@ -178,6 +197,8 @@ export function calculateGlycemicLoad(
       gi,
       giRecordId: ingredient.giRecordId,
       qualityTier,
+      matchKind,
+      confidence: ingredientConfidence,
       giContribution,
       giCandidates,
       issues,
@@ -190,6 +211,8 @@ export function calculateGlycemicLoad(
     servings: input.servings,
     status: complete ? "CALCULATED" : "INSUFFICIENT SOURCE DATA",
     glycemicLoadPerServing: complete ? Math.round((totalLoad + Number.EPSILON) * 100) / 100 : null,
+    confidence: complete ? confidence : null,
+    interpretation: "Ingredient-based estimate only; actual prepared-meal response varies. Ingredient portions below 1 g available carbohydrate per serving are excluded.",
     ingredients,
     blockers,
   };
