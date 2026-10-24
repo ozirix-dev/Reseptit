@@ -23,6 +23,11 @@ ingredients:
   - {amount: 2, unit: kpl, item: kananmunankeltuaista}
   - {amount: 40, unit: g, item: sokeria, note: vaniljakastikkeeseen}
   - {amount: 1, unit: tl, item: vaniljasokeria}
+carbs_net_per_serving_g: 35.74
+carbs_total_per_serving_g: 38.56
+protein_per_serving_g: 3.6
+fat_per_serving_g: 19.32
+
 ---
 
 # Marjakiisseli ja vaniljakastike

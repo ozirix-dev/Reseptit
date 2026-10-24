@@ -1,7 +1,8 @@
 # Ravintoarvojen laskentapohja
 
-Toimituksellinen, paikallinen työkalu. Ei yhteyttä julkisen sivuston
-buildiin eikä automaattista metatietojen päivitystä.
+Toimituksellinen, paikallinen laskentatyökalu. Sivuston build ja tiukka
+ravintoarvoauditointi varmistavat, että julkaistut luvut vastaavat dokumentoitua
+laskentaa.
 
 Suorita `site/`-kansiossa `npm run audit:nutrition`.
 Tuloksena on `tmp/nutrition/audit.json`: kaikkien julkaistujen FI-lähteiden
@@ -17,6 +18,14 @@ syötävän osuuden, tilan ja valmistuksen retention eli säilyvän ravintomää
 Laskennan syöte sisältää reseptin ID:n, lähdetiivisteen, laskentapäivän,
 rajauksen ja tarkistajan tilan. Osatulokset eivät muutu koko reseptin arvoksi.
 
+Jokaisen evidenssillä tuetun arvion uudelleenlaskettava syöte tallennetaan
+tiedostoon `calculations/<recipe_id>.json`. Auditointi laskee syötteen uudelleen,
+tarkistaa reseptin ainesmäärät ja annoskoon sekä vertaa neljää ravintoarvoa FI-
+reseptiin ja sen julkaistuihin käännöksiin. Muistio tai tunnuslista ei yksin
+riitä `ESTIMATE WITH EVIDENCE` -luokitukseen. Jos vanhalta arviolta puuttuu
+toistettava syöte, sen julkaistut arvot säilyvät mutta audit luokittelee sen
+`INSUFFICIENT SOURCE DATA` -tilaan, kunnes syöte on koottu.
+
 ## Laskentasäännöt
 
 - Ravintomäärä = arvo / 100 g × määrä × g/yksikkö × syötävä osuus × retentio.
@@ -28,6 +37,11 @@ rajauksen ja tarkistajan tilan. Osatulokset eivät muutu koko reseptin arvoksi.
   aineksien saman ravintotekijän ollessa tiedossa. Puuttuva ei ole nolla.
 - Annosarvo lasketaan pyöristämättömästä summasta. Pyöristys on lopuksi
   enintään kaksi desimaalia; se ei ole väite lähtötiedon tarkkuudesta.
+- Finelin CHOAVL tarkoittaa tärkkelyksen ja sokereiden määrää. Siitä ei
+  vähennetä polyoleja toistamiseen. Nettohiilihydraatti vähennetään
+  polyoleista vain silloin, kun lähteen hiilihydraattiarvo sisältää ne.
+  Kokonaishiilihydraatti on saatavilla oleva hiilihydraatti + kuitu +
+  lähteistetyt polyolit.
 - Valinnainen aines voidaan jättää pois vain kirjatussa skenaariossa.
   Lisäkkeitä ei päätellä kuvasta eikä määrittelemätöntä öljyä keksitä.
 
@@ -263,12 +277,26 @@ kirjattu seuraaviin muistioihin:
 - `tools/calculate-nutrition-batch7.py` — erän 7 laskennan toistettava ohjelma.
 - `estimates-2026-10-24-batch-8.md` — Thai-erä B:n kymmenen reseptiä.
 - `tools/calculate-nutrition-batch8.py` — erän 8 laskennan toistettava ohjelma.
+- `batches/batch-10.json` — 20 reseptin erämanifesti ja lähdemäppäykset.
+- `calculations/<recipe_id>.json` — erän 10 reseptikohtaiset syötteet,
+  lähdetietueet, muunnokset ja rajaukset.
+- `estimates-2026-10-24-batch-10.md` — erän lähdemuistio ja poikkeamat.
+
+Erissä 1–8 käytettiin aikaisempia laskentatyökaluja, jotka säilyvät niiden
+laskentojen historiallisina lähteinä. Uudet erät on luotava nykyisellä
+TypeScript-mallilla ja manifestilla; uutta rinnakkaista eräkohtaista kaavaa ei
+lisätä.
 
 Luvut ovat toimituksellisia arvioita; niitä ei tuoteta julkaisun buildissa
 automaattisesti. Aiemmat arvot käyttävät Finelin CHO-, FIBT- ja POLYL-
-komponentteja. Uusissa erissä käytetään Fineliä, lisensoitua AFCD-dataa ja
-yksilöityjä pakkausmerkintöjä tai avoimen tietokannan tuotetietueita.
-Lähdetietueiden arvot, tunnisteet ja lisenssit kirjataan erämuistioihin.
+komponentteja. Uudet erät lasketaan yhteisellä `nutrition-model.ts`-mallilla
+batch-plan-syötteestä (`npm run nutrition:batch -- <polku.json>`). Erämanifesti
+on `docs/nutrition/batches/`-hakemistossa ja reseptikohtainen täydellinen
+laskentasyöte `docs/nutrition/calculations/`-hakemistossa. Lähdetietueiden
+arvot, tunnisteet, lisenssit, vastaavuudet, muunnokset ja rajaukset tallentuvat
+laskentasyötteeseen. Audit laskee arvot tästä syötteestä uudelleen ja vertaa
+niitä julkaistuun suomenkieliseen sisältöön sekä kaikkiin julkaistuihin
+käännöksiin kahden desimaalin tarkkuudella.
 
 ## Nykyisten lukujen luokitus
 
@@ -276,7 +304,9 @@ VERIFIED vaatii todennetun koko laskelman; ESTIMATE WITH EVIDENCE vaatii
 toistettavan, rajauksiltaan ilmoitetun arvion. INSUFFICIENT SOURCE DATA
 tarkoittaa puuttuvaa laskentanäyttöä. CONFLICT REQUIRES REVIEW tarkoittaa
 ristiriitaa, ei lupaa korvata lukua. MISSING tarkoittaa, ettei numeroita ole.
-Arvion tekstimerkintä yksin ei ole laskentatodiste.
+Arvion tekstimerkintä tai reseptitunnuksen sallittu lista yksin ei ole
+laskentatodiste. Aiemmat sivuarvot säilyvät näkyvissä, mutta ilman
+toistettavaa laskentasyötettä ne luokitellaan riittämättömäksi lähdenäytöksi.
 
 
 ## GK-pilotti, 20 reseptiä

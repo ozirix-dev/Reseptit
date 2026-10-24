@@ -47,6 +47,11 @@ image:
   alt: Paahdettu siemengranola jogurtilla tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 8.09
+carbs_total_per_serving_g: 16.54
+protein_per_serving_g: 18.68
+fat_per_serving_g: 40.86
+
 ---
 # Paahdettu siemengranola jogurtilla
 

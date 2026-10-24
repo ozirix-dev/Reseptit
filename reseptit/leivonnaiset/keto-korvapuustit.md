@@ -50,6 +50,11 @@ translation_status:
   en: published
   sv: published
   th: published
+carbs_net_per_serving_g: 1.99
+carbs_total_per_serving_g: 7.98
+protein_per_serving_g: 10.26
+fat_per_serving_g: 21.57
+
 ---
 
 # Juustotaikinan kanelipullat

@@ -27,6 +27,11 @@ image:
   alt: Kanelitäytteisiä mantelitaikinasta leivottuja korvapuusteja
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 1.66
+carbs_total_per_serving_g: 8.22
+protein_per_serving_g: 8.79
+fat_per_serving_g: 16.5
+
 ---
 
 # Korvapuustit mantelitaikinasta

@@ -1,0 +1,292 @@
+{
+  "recipeId": "vhh-mansikkakakku",
+  "sourceHash": "d33b45239a46c18502dbff173b2e4521af015aca191cec4cc9ca2b2157df5f97",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-10",
+  "servings": 10,
+  "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kananmunaa",
+      "amount": 4,
+      "unit": "kpl",
+      "state": "raw egg, shell excluded",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw egg, shell excluded",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    },
+    {
+      "item": "erytritolia",
+      "amount": 100,
+      "unit": "g",
+      "state": "as-sold; pure organic erythritol per ingredient list",
+      "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "foodin-erythritol-200g-label-2026-10-24",
+        "name": "Foodin Erytritoli, Luomu 200 g",
+        "sourceUrl": "https://foodin.fi/tuote/erytritoli-luomu-200g-2/",
+        "retrievedAt": "2026-10-24",
+        "licence": "Foodin product-label factual nutrient declaration; product reference only, not an open-database licence",
+        "state": "as-sold; pure organic erythritol per ingredient list",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "polyolsSourceVerified": true,
+        "per100g": {
+          "kcal": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbohydrate": 100,
+          "fibre": 0,
+          "sugars": 0,
+          "polyols": 100
+        },
+        "polyolsEvidence": "Foodin product label states that 100 g carbohydrates per 100 g are sugar alcohols."
+      }
+    },
+    {
+      "item": "mantelijauhoa",
+      "amount": 120,
+      "unit": "g",
+      "state": "dry almond meal",
+      "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006077-release-3",
+        "name": "Nut, almond meal",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dry almond meal",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 5.4,
+          "fibre": 11,
+          "polyols": 0,
+          "protein": 19.7,
+          "fat": 50.5
+        }
+      }
+    },
+    {
+      "item": "leivinjauhetta",
+      "amount": 1,
+      "unit": "tl",
+      "state": "dry baking powder",
+      "matchEvidence": "Ingredient mapped to afcd-release-3 record F000247; source state: dry baking powder.",
+      "gramsPerUnit": 4,
+      "conversionEvidence": "Ingredient-specific teaspoon mass estimate for leivinjauhetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F000247-release-3",
+        "name": "Baking powder, dry powder",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dry baking powder",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 19.8,
+          "fibre": 0.4,
+          "polyols": 0,
+          "protein": 0.8,
+          "fat": 0.3
+        }
+      }
+    },
+    {
+      "item": "kuohukermaa",
+      "amount": 2,
+      "unit": "dl",
+      "state": "liquid 38% cream",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 631; source state: liquid 38% cream.",
+      "gramsPerUnit": 100,
+      "conversionEvidence": "1 dl = 100 g for water and Fineli cream DL measure.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-631-release-20",
+        "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/631",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "liquid 38% cream",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 2.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 2.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.88,
+          "fat": 38
+        }
+      }
+    },
+    {
+      "item": "maitorahkaa",
+      "amount": 150,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 622; source state: raw/as listed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-622-release-20",
+        "name": "RAHKA, MAITORAHKA, MAUSTAMATON, RASVAA <0,5 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/622",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 9.81,
+          "fat": 0.4
+        }
+      }
+    },
+    {
+      "item": "tuoreita mansikoita",
+      "amount": 250,
+      "unit": "g",
+      "state": "raw strawberries",
+      "matchEvidence": "Ingredient mapped to afcd-release-3 record F008952; source state: raw strawberries.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F008952-release-3",
+        "name": "Strawberry, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw strawberries",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 5.6,
+          "fibre": 2.1,
+          "polyols": 0,
+          "protein": 0.7,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "vaniljauutetta",
+      "amount": 1,
+      "unit": "tl",
+      "state": "vanilla bean extract",
+      "matchEvidence": "Ingredient mapped to afcd-release-3 record F009350; source state: vanilla bean extract.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "Ingredient-specific teaspoon mass estimate for vaniljauutetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F009350-release-3",
+        "name": "Vanilla bean extract",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "vanilla bean extract",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 12.6,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.1,
+          "fat": 0.1
+        }
+      }
+    }
+  ]
+}

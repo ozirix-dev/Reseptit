@@ -96,6 +96,15 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     ["valimerellinen-menemen-fetalla", 5.38],
     ["valimerellinen-tortilla-espanola-aamupalaksi", 6.14],
     ["valimerellinen-kikherne-yrttiaamiainen", 11.98],
+    ["keto-mutakakku", 1.52], ["keto-suklaakeksit", 1.38],
+    ["marjakiisseli-vaniljakastikkeella", 35.74], ["meheva-suklaakakku", 43.76],
+    ["pannacotta-marjakastikkeella", 23.22], ["rahkapiirakka-vhh", 2.67],
+    ["vhh-brita-kakku", 2.72], ["vhh-juustokakku", 2.81],
+    ["vhh-korvapuustit", 1.66], ["vhh-letut", 2.57],
+    ["vhh-mansikkakakku", 3.25], ["vhh-mokkapalat", 1.15],
+    ["vhh-omenapiirakka", 4.24], ["vhh-raparperipiirakka", 3.46],
+    ["keto-korvapuustit", 1.99], ["vhh-lihapiirakka", 2.27],
+    ["vhh-runebergintortut", 2.16], ["siemengranola-jogurtilla", 8.09],
   ]);
   for (const recipe of [...breakfast, ...desserts]) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
@@ -131,7 +140,7 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
   for (const recipe of recipes.filter(recipe => recipe.category === "aamupala")) {
     assert.ok(recipe.ingredients.every(ingredient => !/kananmuna/i.test(ingredient.item)), "breakfast recipes are egg-free");
   }
-  const documentedFineliNetCarbs = new Map([
+  const documentedNetCarbs = new Map([
     ["marjainen-chiavanukas", 3.51], ["kaakao-kookos-chia", 2.53],
     ["rahka-marjakerroskulho", 6.32], ["savulohi-avokadokulho", 0.89],
     ["kurkku-oliivi-aamiaiskulho", 2.07], ["paahdettu-aamiaismunakoiso", 4.35],
@@ -139,6 +148,7 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
     ["uunikanapasta-kesakurpitsa", 7.10], ["chili-con-carne-kukkakaaliriisi", 17.32],
     ["kana-fajita-pelti", 5.78],
     ["kanakeitto-pinaatti-sitruuna", 4.87],
+    ["siemengranola-jogurtilla", 8.09],
   ]);
   const repoDir = path.resolve(import.meta.dirname, "../..");
   for (const recipe of recipes) {
@@ -149,8 +159,8 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
     assert.ok((await readFile(path.join(repoDir, "kuvat", relativeImagePath))).byteLength > 0);
     assert.equal(
       recipe.nutrition.carbsNetG,
-      documentedFineliNetCarbs.get(recipe.recipeId) ?? null,
-      `${recipe.recipeId} matches the documented Fineli estimate inventory`,
+      documentedNetCarbs.get(recipe.recipeId) ?? null,
+      `${recipe.recipeId} matches the documented nutrition estimate inventory`,
     );
   }
 });

@@ -21,6 +21,11 @@ ingredients:
   - {amount: 250, unit: g, item: pakastemarjoja}
   - {amount: 2, unit: rkl, item: sokeria, note: marjakastikkeeseen}
   - {amount: 1, unit: rkl, item: sitruunamehua, note: marjakastikkeeseen}
+carbs_net_per_serving_g: 23.22
+carbs_total_per_serving_g: 24.59
+protein_per_serving_g: 2.85
+fat_per_serving_g: 25.96
+
 ---
 
 # Pannacotta marjakastikkeella

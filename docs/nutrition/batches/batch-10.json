@@ -1,0 +1,1383 @@
+{
+  "batchId": "batch-10",
+  "recipes": [
+    {
+      "recipeId": "keto-mutakakku",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009837",
+          "state": "dark chocolate, no added sugar",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F009837; source state: dark chocolate, no added sugar."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "20",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 20; source state: raw/as listed.",
+          "gramsPerUnit": 5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for kaakaojauhetta."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009350",
+          "state": "vanilla bean extract",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F009350; source state: vanilla bean extract.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for vaniljauutetta."
+        },
+        {
+          "state": "minor unquantified seasoning",
+          "matchEvidence": "Unquantified pinch excluded with conservative macro bound.",
+          "excludedReason": "Unquantified minor seasoning; no numeric amount",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0.5,
+            "netCarbohydrate": 0.1,
+            "totalCarbohydrate": 0.1,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Salt is macro-free; small trace seasoning allowance is conservatively bounded."
+        }
+      ]
+    },
+    {
+      "recipeId": "keto-suklaakeksit",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmuna; edible-state basis documented."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F000247",
+          "state": "dry baking powder",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F000247; source state: dry baking powder.",
+          "gramsPerUnit": 4,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for leivinjauhetta."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009837",
+          "state": "dark chocolate, no added sugar",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F009837; source state: dark chocolate, no added sugar."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009350",
+          "state": "vanilla bean extract",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F009350; source state: vanilla bean extract.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for vaniljauutetta."
+        },
+        {
+          "state": "minor unquantified seasoning",
+          "matchEvidence": "Unquantified pinch excluded with conservative macro bound.",
+          "excludedReason": "Unquantified minor seasoning; no numeric amount",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0.5,
+            "netCarbohydrate": 0.1,
+            "totalCarbohydrate": 0.1,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Salt is macro-free; small trace seasoning allowance is conservatively bounded."
+        }
+      ]
+    },
+    {
+      "recipeId": "marjakiisseli-vaniljakastikkeella",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009881",
+          "state": "frozen mixed berries",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F009881; source state: frozen mixed berries."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "922",
+          "state": "tap water",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 922; source state: tap water.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Liquid density 1 g/ml."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "162",
+          "state": "dry potato starch",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 162; source state: dry potato starch.",
+          "gramsPerUnit": 9.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for perunajauhoja."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "922",
+          "state": "tap water",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 922; source state: tap water.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Liquid density 1 g/ml."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "liquid 38% cream",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 631; source state: liquid 38% cream.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Liquid density 1 g/ml."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "689",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 689; source state: raw/as listed.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Liquid density 1 g/ml."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "851",
+          "state": "raw egg yolk, edible portion",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 851; source state: raw egg yolk, edible portion.",
+          "gramsPerUnit": 20,
+          "conversionEvidence": "Per-unit mass estimate for kananmunankeltuaista; edible-state basis documented."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed.",
+          "gramsPerUnit": 4,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for vaniljasokeria."
+        }
+      ]
+    },
+    {
+      "recipeId": "meheva-suklaakakku",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "32",
+          "state": "dark chocolate as sold",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 32; source state: dark chocolate as sold."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "110",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 110; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "20",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 20; source state: raw/as listed."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F000247",
+          "state": "dry baking powder",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F000247; source state: dry baking powder.",
+          "gramsPerUnit": 4,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for leivinjauhetta."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "32",
+          "state": "dark chocolate as sold",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 32; source state: dark chocolate as sold."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "liquid 38% cream",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 631; source state: liquid 38% cream.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Liquid density 1 g/ml."
+        }
+      ]
+    },
+    {
+      "recipeId": "pannacotta-marjakastikkeella",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "liquid 38% cream",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 631; source state: liquid 38% cream.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Liquid density 1 g/ml."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "689",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 689; source state: raw/as listed.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Liquid density 1 g/ml."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed.",
+          "gramsPerUnit": 4,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for vaniljasokeria."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004196",
+          "state": "dry gelatine sheets",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F004196; source state: dry gelatine sheets.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Per-unit mass estimate for liivatelehteä; edible-state basis documented."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009881",
+          "state": "frozen mixed berries",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F009881; source state: frozen mixed berries."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed.",
+          "gramsPerUnit": 12.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for sokeria."
+        },
+        {
+          "state": "small acid omission",
+          "matchEvidence": "Measured tablespoon is small; omitted conservatively within per-serving tolerance.",
+          "excludedReason": "Small lemon juice quantity omitted",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.3,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "15 g lemon juice for whole recipe; conservative upper bound per serving."
+        }
+      ]
+    },
+    {
+      "recipeId": "rahkapiirakka-vhh",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmuna; edible-state basis documented."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "622",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 622; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "liquid 38% cream",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 631; source state: liquid 38% cream.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "1 dl = 100 g for water and Fineli cream DL measure."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list.",
+          "gramsPerUnit": 12,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for erytritolia."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009350",
+          "state": "vanilla bean extract",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F009350; source state: vanilla bean extract.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for vaniljauutetta."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-brita-kakku",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "851",
+          "state": "raw egg yolk, edible portion",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 851; source state: raw egg yolk, edible portion.",
+          "gramsPerUnit": 20,
+          "conversionEvidence": "Per-unit mass estimate for kananmunan keltuaista; edible-state basis documented."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F000247",
+          "state": "dry baking powder",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F000247; source state: dry baking powder.",
+          "gramsPerUnit": 4,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for leivinjauhetta."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "852",
+          "state": "raw egg white, edible portion",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 852; source state: raw egg white, edible portion.",
+          "gramsPerUnit": 35,
+          "conversionEvidence": "Per-unit mass estimate for kananmunan valkuaista; edible-state basis documented."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "liquid 38% cream",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 631; source state: liquid 38% cream.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "1 dl = 100 g for water and Fineli cream DL measure."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F008952",
+          "state": "raw strawberries",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F008952; source state: raw strawberries."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-juustokakku",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11571",
+          "state": "plain 11% cream cheese",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 11571; source state: plain 11% cream cheese."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "628",
+          "state": "28% creme fraiche, closest local sour-cream style record",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 628; source state: 28% creme fraiche, closest local sour-cream style record."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009350",
+          "state": "vanilla bean extract",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F009350; source state: vanilla bean extract.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for vaniljauutetta."
+        },
+        {
+          "state": "small acid omission",
+          "matchEvidence": "Measured tablespoon is small; omitted conservatively within per-serving tolerance.",
+          "excludedReason": "Small lemon juice quantity omitted",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.3,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "15 g lemon juice for whole recipe; conservative upper bound per serving."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-korvapuustit",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "29239",
+          "state": "fresh 20% mozzarella",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 29239; source state: fresh 20% mozzarella."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11571",
+          "state": "plain 11% cream cheese",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 11571; source state: plain 11% cream cheese."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F007502",
+          "state": "dry psyllium husk",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F007502; source state: dry psyllium husk.",
+          "gramsPerUnit": 8,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for psylliumia."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list.",
+          "gramsPerUnit": 12,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for erytritolia täytteeseen."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002963",
+          "state": "ground cinnamon",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F002963; source state: ground cinnamon.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for kanelia."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmunaa voiteluun; edible-state basis documented."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-letut",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11571",
+          "state": "plain 11% cream cheese",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 11571; source state: plain 11% cream cheese."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "liquid 38% cream",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 631; source state: liquid 38% cream.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "1 dl = 100 g for water and Fineli cream DL measure."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list.",
+          "gramsPerUnit": 12,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for erytritolia."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed.",
+          "gramsPerUnit": 4.5,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for voita paistamiseen."
+        },
+        {
+          "state": "minor unquantified seasoning",
+          "matchEvidence": "Unquantified pinch excluded with conservative macro bound.",
+          "excludedReason": "Unquantified minor seasoning; no numeric amount",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0.5,
+            "netCarbohydrate": 0.1,
+            "totalCarbohydrate": 0.1,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Salt is macro-free; small trace seasoning allowance is conservatively bounded."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-mansikkakakku",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F000247",
+          "state": "dry baking powder",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F000247; source state: dry baking powder.",
+          "gramsPerUnit": 4,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for leivinjauhetta."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "liquid 38% cream",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 631; source state: liquid 38% cream.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "1 dl = 100 g for water and Fineli cream DL measure."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "622",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 622; source state: raw/as listed."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F008952",
+          "state": "raw strawberries",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F008952; source state: raw strawberries."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009350",
+          "state": "vanilla bean extract",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F009350; source state: vanilla bean extract.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for vaniljauutetta."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-mokkapalat",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "liquid 38% cream",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 631; source state: liquid 38% cream.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "1 dl = 100 g for water and Fineli cream DL measure."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "20",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 20; source state: raw/as listed.",
+          "gramsPerUnit": 5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for kaakaojauhetta."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F000247",
+          "state": "dry baking powder",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F000247; source state: dry baking powder.",
+          "gramsPerUnit": 4,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for leivinjauhetta."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003041",
+          "state": "prepared black coffee",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F003041; source state: prepared black coffee.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for vahvaa kahvia."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "20",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 20; source state: raw/as listed.",
+          "gramsPerUnit": 5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for kaakaojauhetta kuorrutteeseen."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-omenapiirakka",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmuna; edible-state basis documented."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list.",
+          "gramsPerUnit": 12,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for erytritolia pohjaan."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F000095",
+          "state": "raw apple",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F000095; source state: raw apple.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Per-unit mass estimate for pientä omenaa; edible-state basis documented."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002963",
+          "state": "ground cinnamon",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F002963; source state: ground cinnamon.",
+          "gramsPerUnit": 2.6,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for kanelia."
+        },
+        {
+          "state": "small acid omission",
+          "matchEvidence": "Measured tablespoon is small; omitted conservatively within per-serving tolerance.",
+          "excludedReason": "Small lemon juice quantity omitted",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.3,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "15 g lemon juice for whole recipe; conservative upper bound per serving."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "622",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 622; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmuna täytteeseen; edible-state basis documented."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list.",
+          "gramsPerUnit": 12,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for erytritolia täytteeseen."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-raparperipiirakka",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmuna pohjaan; edible-state basis documented."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "338",
+          "state": "raw rhubarb",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 338; source state: raw rhubarb."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "622",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 622; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmunaa täytteeseen; edible-state basis documented."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009350",
+          "state": "vanilla bean extract",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F009350; source state: vanilla bean extract.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for vaniljauutetta."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F007502",
+          "state": "dry psyllium husk",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F007502; source state: dry psyllium husk.",
+          "gramsPerUnit": 8,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for psylliumia."
+        }
+      ]
+    },
+    {
+      "recipeId": "keto-korvapuustit",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "29239",
+          "state": "fresh 20% mozzarella",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 29239; source state: fresh 20% mozzarella."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11571",
+          "state": "plain 11% cream cheese",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 11571; source state: plain 11% cream cheese."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmuna; edible-state basis documented."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list.",
+          "gramsPerUnit": 12,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for erytritolia."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002963",
+          "state": "ground cinnamon",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F002963; source state: ground cinnamon.",
+          "gramsPerUnit": 2.6,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for kanelia."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-lihapiirakka",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "655",
+          "state": "semi-hard cheese, generic 25–35% fat",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 655; source state: semi-hard cheese, generic 25–35% fat."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11571",
+          "state": "plain 11% cream cheese",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 11571; source state: plain 11% cream cheese."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11562",
+          "state": "raw beef mince, 17% fat",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 11562; source state: raw beef mince, 17% fat."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "raw yellow onion",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 335; source state: raw yellow onion.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for sipuli; edible-state basis documented."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "30",
+          "state": "iodised salt",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 30; source state: iodised salt.",
+          "gramsPerUnit": 6.5,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for suolaa."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006618",
+          "state": "ground black pepper",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006618; source state: ground black pepper.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for mustapippuria."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-runebergintortut",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006077",
+          "state": "dry almond meal",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw egg, shell excluded",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "622",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 622; source state: raw/as listed."
+        },
+        {
+          "dataset": "food-records",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "state": "as-sold; pure organic erythritol per ingredient list",
+          "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list.",
+          "gramsPerUnit": 12,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for erytritolia."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002258",
+          "state": "ground cardamom",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F002258; source state: ground cardamom.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for kardemummaa."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F000247",
+          "state": "dry baking powder",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F000247; source state: dry baking powder.",
+          "gramsPerUnit": 4,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for leivinjauhetta."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F007619",
+          "state": "raw raspberries",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F007619; source state: raw raspberries.",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for vadelmia."
+        }
+      ]
+    },
+    {
+      "recipeId": "siemengranola-jogurtilla",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F008212",
+          "state": "hulled pumpkin seeds",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F008212; source state: hulled pumpkin seeds."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F008215",
+          "state": "dried sunflower seeds",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F008215; source state: dried sunflower seeds."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F008210",
+          "state": "ground linseed",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F008210; source state: ground linseed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "379",
+          "state": "almonds, sliced; whole almond composition proxy",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 379; source state: almonds, sliced; whole almond composition proxy."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002963",
+          "state": "ground cinnamon",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F002963; source state: ground cinnamon.",
+          "gramsPerUnit": 2.6,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for kanelia."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "32201",
+          "state": "plain Greek yogurt, 10% fat",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 32201; source state: plain Greek yogurt, 10% fat."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F007619",
+          "state": "raw raspberries",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F007619; source state: raw raspberries."
+        }
+      ]
+    },
+    {
+      "recipeId": "caponata",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "362",
+          "state": "raw eggplant",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 362; source state: raw eggplant.",
+          "gramsPerUnit": 400,
+          "conversionEvidence": "Per-unit mass estimate for munakoisoa; edible-state basis documented."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 536; source state: raw/as listed.",
+          "gramsPerUnit": 13.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for oliiviöljyä."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "raw yellow onion",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 335; source state: raw yellow onion.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Per-unit mass estimate for sipuli; edible-state basis documented."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002390",
+          "state": "raw celery stalk",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F002390; source state: raw celery stalk.",
+          "gramsPerUnit": 40,
+          "conversionEvidence": "Per-unit mass estimate for sellerinvartta; edible-state basis documented."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "398",
+          "state": "canned crushed tomato",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 398; source state: canned crushed tomato."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006198",
+          "state": "drained olives",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F006198; source state: drained olives."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002220",
+          "state": "drained capers",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F002220; source state: drained capers.",
+          "gramsPerUnit": 9,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for kapriksia."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "929",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 929; source state: raw/as listed.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for punaviinietikkaa."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed.",
+          "gramsPerUnit": 12.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for sokeria."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "30",
+          "state": "iodised salt",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 30; source state: iodised salt.",
+          "gramsPerUnit": 6.5,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for suolaa."
+        },
+        {
+          "state": "minor fresh herb omitted",
+          "matchEvidence": "Fresh basil is a small herb amount; conservatively bounded per serving.",
+          "excludedReason": "Small fresh basil quantity excluded because local source is missing fibre value",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 3,
+            "netCarbohydrate": 0.8,
+            "totalCarbohydrate": 0.8,
+            "protein": 0.4,
+            "fat": 0.2
+          },
+          "omissionImpactEvidence": "15 g garnish/herb basis; conservative upper bound includes all recipe basil and is per serving."
+        }
+      ]
+    },
+    {
+      "recipeId": "pizza-margherita",
+      "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "110",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 110; source state: raw/as listed."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "922",
+          "state": "tap water",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 922; source state: tap water.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "1 dl = 100 g for water and Fineli cream DL measure."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009606",
+          "state": "dry yeast",
+          "matchEvidence": "Ingredient mapped to afcd-release-3 record F009606; source state: dry yeast."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "30",
+          "state": "iodised salt",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 30; source state: iodised salt.",
+          "gramsPerUnit": 6.5,
+          "conversionEvidence": "Ingredient-specific teaspoon mass estimate for suolaa."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "398",
+          "state": "canned crushed tomato",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 398; source state: canned crushed tomato."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "29239",
+          "state": "fresh 20% mozzarella",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 29239; source state: fresh 20% mozzarella."
+        },
+        {
+          "state": "minor fresh herb omitted",
+          "matchEvidence": "Fresh basil is a small herb amount; conservatively bounded per serving.",
+          "excludedReason": "Small fresh basil quantity excluded because local source is missing fibre value",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 3,
+            "netCarbohydrate": 0.8,
+            "totalCarbohydrate": 0.8,
+            "protein": 0.4,
+            "fat": 0.2
+          },
+          "omissionImpactEvidence": "15 g garnish/herb basis; conservative upper bound includes all recipe basil and is per serving."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "raw/as listed",
+          "matchEvidence": "Ingredient mapped to fineli-release-20 record 536; source state: raw/as listed.",
+          "gramsPerUnit": 13.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass estimate for oliiviöljyä."
+        }
+      ]
+    }
+  ]
+}

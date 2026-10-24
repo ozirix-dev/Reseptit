@@ -27,6 +27,11 @@ image:
   alt: Brita-kakkupala mantelipohjalla, marengilla, kermalla ja mansikoilla
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 2.72
+carbs_total_per_serving_g: 20.74
+protein_per_serving_g: 5.83
+fat_per_serving_g: 28.21
+
 ---
 
 # Brita-kakku

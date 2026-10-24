@@ -55,6 +55,11 @@ translation_status:
   en: published
   sv: published
   th: published
+carbs_net_per_serving_g: 2.16
+carbs_total_per_serving_g: 8.6
+protein_per_serving_g: 8.06
+fat_per_serving_g: 18.67
+
 ---
 
 # VHH-Runebergintortut

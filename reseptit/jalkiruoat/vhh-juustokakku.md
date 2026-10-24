@@ -26,6 +26,11 @@ image:
   alt: Kermainen paistettu juustokakku mantelipohjalla ja mustikoilla
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 2.81
+carbs_total_per_serving_g: 12.36
+protein_per_serving_g: 7.76
+fat_per_serving_g: 20.25
+
 ---
 
 # Paistettu juustokakku

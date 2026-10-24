@@ -54,6 +54,11 @@ image:
   alt: Mantelipohjainen omenapiirakka kanelilla ja kermavaahdolla
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 4.24
+carbs_total_per_serving_g: 11.68
+protein_per_serving_g: 6.82
+fat_per_serving_g: 15.87
+
 ---
 
 # Omenapiirakka – VHH

@@ -45,6 +45,11 @@ image:
   alt: Ohuet VHH-letut marjojen ja kermavaahdon kanssa
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 2.57
+carbs_total_per_serving_g: 7.09
+protein_per_serving_g: 11.73
+fat_per_serving_g: 24.56
+
 ---
 
 # Letut – VHH

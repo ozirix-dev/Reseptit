@@ -48,6 +48,11 @@ image:
   alt: Tumma mutakakku pehmeällä keskuksella ja vadelmilla
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 1.52
+carbs_total_per_serving_g: 19.84
+protein_per_serving_g: 5.78
+fat_per_serving_g: 25.34
+
 ---
 
 # Mutakakku – keto

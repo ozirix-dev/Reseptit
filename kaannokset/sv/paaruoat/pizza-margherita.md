@@ -52,6 +52,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/pizza-margherita.md
 translation_of: pizza-margherita
+carbs_net_per_serving_g: 114.54
+carbs_total_per_serving_g: 120.6
+protein_per_serving_g: 37.12
+fat_per_serving_g: 30.07
+
 ---
 
 # Napolitansk Margherita pizza

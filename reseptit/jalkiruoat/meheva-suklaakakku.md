@@ -22,6 +22,11 @@ ingredients:
   - {amount: 1, unit: tl, item: leivinjauhetta}
   - {amount: 100, unit: g, item: tummaa suklaata, note: kuorrutteeseen}
   - {amount: 100, unit: ml, item: kuohukermaa, note: kuorrutteeseen}
+carbs_net_per_serving_g: 43.76
+carbs_total_per_serving_g: 47.47
+protein_per_serving_g: 6.61
+fat_per_serving_g: 32.23
+
 ---
 
 # Mehevä suklaakakku

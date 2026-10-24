@@ -57,6 +57,11 @@ image:
   alt: Kahvisuklaakuorrutteiset mokkapalat kookoshiutaleilla
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 1.15
+carbs_total_per_serving_g: 16.79
+protein_per_serving_g: 4.32
+fat_per_serving_g: 21.96
+
 ---
 
 # Mokkapalat – VHH

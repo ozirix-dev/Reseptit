@@ -65,6 +65,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/alkuruoat/caponata.md
 translation_of: caponata
+carbs_net_per_serving_g: 13.87
+carbs_total_per_serving_g: 20.66
+protein_per_serving_g: 2.35
+fat_per_serving_g: 11.74
+
 ---
 
 # Sicilian caponata

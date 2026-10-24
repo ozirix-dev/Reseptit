@@ -1,5 +1,6 @@
 // Editorial calculation only. Never imported by the public application.
 export const nutrients = ["kcal", "protein", "fat", "carbohydrate", "fibre", "sugars", "polyols", "netCarbohydrate"] as const;
+const requiredEstimateNutrients = ["protein", "fat", "carbohydrate", "fibre", "polyols", "netCarbohydrate"] as const;
 export type Nutrient = typeof nutrients[number];
 export type Values = Record<Nutrient, number | null>;
 export type CarbDefinition = "EU_AVAILABLE" | "EU_TOTAL_INCLUDING_POLYOLS" | "US_TOTAL_INCLUDING_FIBRE" | "UNKNOWN";
@@ -27,7 +28,7 @@ export interface IngredientInput {
   omissionImpactEvidence?: string;
 }
 export interface Calculation {
-  recipeId: string; sourceHash: string; calculatedAt: string; servings: number;
+  recipeId: string; sourceHash: string; calculatedAt: string; servings: number; batchId?: string;
   scope: string; reviewerStatus: "AUTOMATED ONLY"; ingredients: IngredientInput[];
   // Available carbohydrate is normalized to the same basis before aggregation.
   carbohydrateOutput: "AVAILABLE_EXCLUDING_FIBRE";
@@ -94,9 +95,13 @@ export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record
     return { available, net: null };
   }
   if (!valid(polyols)) return { available, net: null };
+  // Fineli CHOAVL and AFCD's paired carbohydrate-without-sugar-alcohols
+  // already exclude polyols. Subtract only when the source reports a total
+  // that includes polyols (EU_TOTAL_INCLUDING_POLYOLS or US total carbs).
+  if (record.carbohydrateDefinition === "EU_AVAILABLE") return { available, net: available };
   if (record.carbohydrateDefinition === "EU_TOTAL_INCLUDING_POLYOLS") return { available, net: available };
   if (available !== null && polyols > available) return { available, net: null };
-  return { available, net: available === null ? null : round(available - polyols, 6) };
+  return { available: available === null ? null : round(available, 6), net: available === null ? null : round(available - polyols, 6) };
 }
 /**
  * Total carbohydrate for this site's display means available carbohydrate +
@@ -110,7 +115,7 @@ export function totalCarbohydrate(available: number | null, fibre: number | null
 }
 export function calculate(input: Calculation) {
   if (!Number.isInteger(input.servings) || input.servings <= 0) throw Error("Invalid servings");
-  if (!input.recipeId || !/^[a-f0-9]{64}$/.test(input.sourceHash) || !/^\d{4}-\d{2}-\d{2}$/.test(input.calculatedAt) || !input.scope || input.reviewerStatus !== "AUTOMATED ONLY" || input.carbohydrateOutput !== "AVAILABLE_EXCLUDING_FIBRE" || !input.ingredients.length) throw Error("Incomplete calculation provenance");
+  if (!input.recipeId || !/^[a-f0-9]{64}$/.test(input.sourceHash) || !/^\d{4}-\d{2}-\d{2}$/.test(input.calculatedAt) || (input.batchId !== undefined && !/^batch-\d+$/.test(input.batchId)) || !input.scope || input.reviewerStatus !== "AUTOMATED ONLY" || input.carbohydrateOutput !== "AVAILABLE_EXCLUDING_FIBRE" || !input.ingredients.length) throw Error("Incomplete calculation provenance");
   const exactRows: Record<Nutrient, Fraction | null>[] = [];
   const exactMasses: (Fraction | null)[] = [];
   const omissionImpactUpperBoundPerServing = { kcal: 0, netCarbohydrate: 0, totalCarbohydrate: 0, protein: 0, fat: 0 };
@@ -161,7 +166,9 @@ export function calculate(input: Calculation) {
         exact.netCarbohydrate = carb.net === null ? null : multiply(decimal(carb.net), weight);
       } catch (error) { exact.carbohydrate = null; fail(String(error)); }
       for (const key of nutrients) values[key] = exact[key] ? numeric(exact[key]!) : null;
-      for (const key of nutrients) if (values[key] === null) fail(`Unknown nutrient ${key}`);
+      // Calories and sugars are optional source fields; they are not part of
+      // the four published macros or the carbohydrate calculation.
+      for (const key of requiredEstimateNutrients) if (values[key] === null) fail(`Unknown nutrient ${key}`);
     }
     return { item: ingredient.item, recordId: record?.id ?? null, grams, values, issues };
   });
@@ -184,5 +191,5 @@ export function calculate(input: Calculation) {
   return { ...input, rows, total, perServing, totalCarbohydrateGrams, totalCarbohydratePerServingG,
     edibleInputGrams: exactMasses.length && exactMasses.every((m) => m !== null) ? roundFraction((exactMasses as Fraction[]).reduce(add)) : null,
     omissionImpactUpperBoundPerServing, omissionWithinTolerance,
-    status: nutrients.every((n) => total[n] !== null) && omissionWithinTolerance ? "ESTIMATE WITH EVIDENCE" : "INSUFFICIENT SOURCE DATA" };
+    status: requiredEstimateNutrients.every((n) => total[n] !== null) && totalCarbohydrateGrams !== null && omissionWithinTolerance ? "ESTIMATE WITH EVIDENCE" : "INSUFFICIENT SOURCE DATA" };
 }
