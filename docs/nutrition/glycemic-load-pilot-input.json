@@ -2516,6 +2516,1433 @@
           "preparationKey": "category-mean"
         }
       ]
+    },
+    {
+      "recipeId": "koshari",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "ruskeita linssejä",
+          "grams": 200,
+          "fineliRecordId": "fineli-399-2026-10-24",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "massEvidence": "ruskeita linssejä maps to fineli-release-20 record 399; state: dry green/brown lentils.",
+          "giMatchEvidence": "Ingredient-category match: Legumes, category mean; Broad category mean; substantial uncertainty when applied to a specific cooked bean.",
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "name": "riisiä",
+          "grams": 200,
+          "fineliRecordId": "fineli-11521-2026-10-24",
+          "giRecordId": "rice-category-mean-gi-67",
+          "massEvidence": "riisiä maps to fineli-release-20 record 11521; state: uncooked long-grain rice.",
+          "giMatchEvidence": "Ingredient-category match: Rice category mean; rice category mean; rice flour is a broad grain-form analogue",
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "pientä makaronia",
+          "grams": 150,
+          "fineliRecordId": "fineli-117-2026-10-24",
+          "giRecordId": "pasta-category-mean-gi-52",
+          "massEvidence": "pientä makaronia maps to fineli-release-20 record 117; state: dry wheat macaroni.",
+          "giMatchEvidence": "Ingredient-category match: Pasta category mean; pasta category mean; product and cooking variation remains",
+          "foodKey": "pasta-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "sipulia",
+          "grams": 110,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for sipulia: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "maissitärkkelystä",
+          "grams": 16,
+          "fineliRecordId": "fineli-162-2026-10-24",
+          "giRecordId": "potatoes-category-mean-gi-71",
+          "massEvidence": "Ingredient-specific tablespoon mass: 8 g/rkl for maissitärkkelystä.",
+          "giMatchEvidence": "Ingredient-category match: Potatoes and potato products category mean; potato category mean; this is not preparation-specific",
+          "foodKey": "potatoes-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 40.5,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato.",
+          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 6,
+          "fineliRecordId": "afcd-F004193-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "punaviinietikkaa",
+          "grams": 30,
+          "fineliRecordId": "fineli-929-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for punaviinietikkaa."
+        },
+        {
+          "name": "juustokuminaa",
+          "grams": 2,
+          "fineliRecordId": "afcd-F003327-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for juustokuminaa.",
+          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        },
+        {
+          "name": "sitruunamehua",
+          "grams": 15,
+          "fineliRecordId": "afcd-F004726-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for sitruunamehua.",
+          "giMatchEvidence": "Ingredient-category match: Fruits and fruit products category mean; fruit category mean; used only as a broad tamarind-paste analogue",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
+    },
+    {
+      "recipeId": "baozi",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "vehnäjauhoja",
+          "grams": 400,
+          "fineliRecordId": "fineli-110-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "vehnäjauhoja maps to fineli-release-20 record 110; state: semi-coarse wheat flour.",
+          "giMatchEvidence": "Ingredient-category match: Bakery products category mean; bakery products category mean; flour and semolina are broad grain-product analogues",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "lämmintä vettä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        },
+        {
+          "name": "kuivahiivaa",
+          "grams": 7,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded minor dry yeast seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
+          "estimatedAvailableCarbohydratePerServingG": 0.4,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0.4 g per serving; kept below the pilot 1 g cutoff."
+        },
+        {
+          "name": "sokeria",
+          "grams": 12,
+          "fineliRecordId": "fineli-1-2026-10-24",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "massEvidence": "Ingredient-specific tablespoon mass: 12 g/rkl for sokeria.",
+          "giMatchEvidence": "Ingredient-category match: Sugars and syrups category mean; sugars and syrups category mean",
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "sian jauhelihaa",
+          "grams": 300,
+          "fineliRecordId": "fineli-28946-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "sian jauhelihaa maps to fineli-release-20 record 28946; state: raw pork mince, 16% fat."
+        },
+        {
+          "name": "kiinankaalia",
+          "grams": 150,
+          "fineliRecordId": "fineli-359-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "kiinankaalia maps to fineli-release-20 record 359; state: raw Chinese cabbage.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "kevätsipulia",
+          "grams": 30,
+          "fineliRecordId": "afcd-F006250-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "soijakastiketta",
+          "grams": 30,
+          "fineliRecordId": "fineli-31-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for soijakastiketta."
+        },
+        {
+          "name": "seesamiöljyä",
+          "grams": 4.5,
+          "fineliRecordId": "afcd-F006187-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass: 4.5 g/tl for seesamiöljyä."
+        },
+        {
+          "name": "raastettua inkivääriä",
+          "grams": 6,
+          "fineliRecordId": "afcd-F004213-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific tablespoon mass: 6 g/rkl for raastettua inkivääriä.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "maissitärkkelystä",
+          "grams": 8,
+          "fineliRecordId": "fineli-162-2026-10-24",
+          "giRecordId": "potatoes-category-mean-gi-71",
+          "massEvidence": "Ingredient-specific tablespoon mass: 8 g/rkl for maissitärkkelystä.",
+          "giMatchEvidence": "Ingredient-category match: Potatoes and potato products category mean; potato category mean; this is not preparation-specific",
+          "foodKey": "potatoes-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "broilerin koipia tai paistileikettä",
+          "grams": 600,
+          "fineliRecordId": "afcd-F002806-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "broilerin koipia tai paistileikettä maps to afcd-release-3 record F002806; state: raw lean chicken thigh flesh."
+        },
+        {
+          "name": "couscousia",
+          "grams": 250,
+          "fineliRecordId": "afcd-F003239-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "couscousia maps to afcd-release-3 record F003239; state: uncooked couscous.",
+          "giMatchEvidence": "Ingredient-category match: Bakery products category mean; bakery products category mean; flour and semolina are broad grain-product analogues",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "porkkanaa",
+          "grams": 110,
+          "fineliRecordId": "fineli-300-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Edible piece mass for porkkanaa: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "kesäkurpitsaa",
+          "grams": 55,
+          "fineliRecordId": "fineli-389-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Edible piece mass for kesäkurpitsaa: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "kikherneitä",
+          "grams": 400,
+          "fineliRecordId": "fineli-11089-2026-10-24",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "massEvidence": "kikherneitä maps to fineli-release-20 record 11089; state: cooked drained chickpeas.",
+          "giMatchEvidence": "Ingredient-category match: Legumes, category mean; Broad category mean; substantial uncertainty when applied to a specific cooked bean.",
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "name": "kanalientä",
+          "grams": 1000,
+          "fineliRecordId": "afcd-F008936-2026-10-24",
+          "giRecordId": "soups-category-mean-gi-49",
+          "massEvidence": "Ingredient-specific volume mass: 1000 g/l for kanalientä.",
+          "foodKey": "soup",
+          "preparationKey": "soup-category",
+          "giMatchEvidence": "Broth is matched to the published broad soup-category mean (GI 49), not a broth-specific measurement; low-confidence proxy."
+        },
+        {
+          "name": "juustokuminaa",
+          "grams": 2,
+          "fineliRecordId": "afcd-F003327-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for juustokuminaa.",
+          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "jauhettua korianteria",
+          "grams": 2,
+          "fineliRecordId": "afcd-F003190-2026-10-24",
+          "giRecordId": "nuts-category-mean-gi-22",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for jauhettua korianteria.",
+          "giMatchEvidence": "Ingredient-category match: Nuts, category mean; Low-confidence category mean for peanuts.",
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "name": "kurkumaa",
+          "grams": 1,
+          "fineliRecordId": "afcd-F009335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kurkumaa."
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 27,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        }
+      ]
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "rigatoni- tai pennepastaa",
+          "grams": 350,
+          "fineliRecordId": "fineli-117-2026-10-24",
+          "giRecordId": "pasta-category-mean-gi-52",
+          "massEvidence": "rigatoni- tai pennepastaa maps to fineli-release-20 record 117; state: dry wheat pasta.",
+          "giMatchEvidence": "Ingredient-category match: Pasta category mean; pasta category mean; product and cooking variation remains",
+          "foodKey": "pasta-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "munakoisoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-362-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Edible piece mass for munakoisoa: 400 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato.",
+          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 6,
+          "fineliRecordId": "afcd-F004193-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 40.5,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "name": "tuoretta basilikaa",
+          "grams": 20,
+          "fineliRecordId": "afcd-F000396-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "tuoretta basilikaa maps to afcd-release-3 record F000396; state: fresh basil.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "suolaista ricottaa",
+          "grams": 50,
+          "fineliRecordId": "afcd-F002488-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 50 g; AFCD Release 3 analysed Cheese, ricotta has 2.7 g available carbohydrate/100 g, or 0.3375 g per serving."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "afcd-F006618-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        }
+      ]
+    },
+    {
+      "recipeId": "bulgogi",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "naudan ulkofileetä",
+          "grams": 600,
+          "fineliRecordId": "afcd-F000810-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "naudan ulkofileetä maps to afcd-release-3 record F000810; state: raw lean beef sirloin."
+        },
+        {
+          "name": "jasmiiniriisiä",
+          "grams": 300,
+          "fineliRecordId": "afcd-F007682-2026-10-24",
+          "giRecordId": "rice-category-mean-gi-67",
+          "massEvidence": "jasmiiniriisiä maps to afcd-release-3 record F007682; state: uncooked white rice.",
+          "giMatchEvidence": "Ingredient-category match: Rice category mean; rice category mean; rice flour is a broad grain-form analogue",
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "soijakastiketta",
+          "grams": 60,
+          "fineliRecordId": "fineli-31-2026-10-24",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "massEvidence": "Ingredient-specific volume mass: 1 g/ml for soijakastiketta.",
+          "foodKey": "legume",
+          "preparationKey": "legume-category",
+          "giMatchEvidence": "Low-confidence broad proxy: unsweetened fermented soy sauce is mapped to the published legume-category mean; not a soy-sauce-specific measurement."
+        },
+        {
+          "name": "fariinisokeria",
+          "grams": 12,
+          "fineliRecordId": "afcd-F008969-2026-10-24",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "massEvidence": "Ingredient-specific tablespoon mass: 12 g/rkl for fariinisokeria.",
+          "giMatchEvidence": "Ingredient-category match: Sugars and syrups category mean; sugars and syrups category mean",
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "seesamiöljyä",
+          "grams": 13.5,
+          "fineliRecordId": "afcd-F006187-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for seesamiöljyä."
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 9,
+          "fineliRecordId": "afcd-F004193-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "päärynää",
+          "grams": 100,
+          "fineliRecordId": "fineli-11062-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "päärynää maps to fineli-release-20 record 11062; state: peeled pear.",
+          "giMatchEvidence": "Ingredient-category match: Fruits and fruit products category mean; fruit category mean; used only as a broad tamarind-paste analogue",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "keltasipulia",
+          "grams": 27.5,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for keltasipulia: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "kevätsipulia",
+          "grams": 30,
+          "fineliRecordId": "afcd-F006250-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "seesaminsiemeniä",
+          "grams": 8.5,
+          "fineliRecordId": "fineli-34245-2026-10-24",
+          "giRecordId": "nuts-category-mean-gi-22",
+          "massEvidence": "Ingredient-specific tablespoon mass: 8.5 g/rkl for seesaminsiemeniä.",
+          "giMatchEvidence": "Ingredient-category match: Nuts, category mean; Low-confidence category mean for peanuts.",
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "afcd-F006618-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        }
+      ]
+    },
+    {
+      "recipeId": "congee-riisipuuro",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "jasmiiniriisiä",
+          "grams": 200,
+          "fineliRecordId": "afcd-F007682-2026-10-24",
+          "giRecordId": "rice-category-mean-gi-67",
+          "massEvidence": "jasmiiniriisiä maps to afcd-release-3 record F007682; state: uncooked white rice.",
+          "giMatchEvidence": "Ingredient-category match: Rice category mean; rice category mean; rice flour is a broad grain-form analogue",
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "kanalientä",
+          "grams": 2000,
+          "fineliRecordId": "afcd-F008936-2026-10-24",
+          "giRecordId": "soups-category-mean-gi-49",
+          "massEvidence": "Ingredient-specific volume mass: 1000 g/l for kanalientä.",
+          "foodKey": "soup",
+          "preparationKey": "soup-category",
+          "giMatchEvidence": "Broth is matched to the published broad soup-category mean (GI 49), not a broth-specific measurement; low-confidence proxy."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        },
+        {
+          "name": "tuoretta inkivääriä",
+          "grams": 6,
+          "fineliRecordId": "afcd-F004213-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific tablespoon mass: 6 g/rkl for tuoretta inkivääriä.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "kevätsipulia",
+          "grams": 30,
+          "fineliRecordId": "afcd-F006250-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "soijakastiketta",
+          "grams": 30,
+          "fineliRecordId": "fineli-31-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for soijakastiketta."
+        },
+        {
+          "name": "seesamiöljyä",
+          "grams": 4.5,
+          "fineliRecordId": "afcd-F006187-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass: 4.5 g/tl for seesamiöljyä."
+        },
+        {
+          "name": "keitettyä kananmunaa",
+          "grams": 110,
+          "fineliRecordId": "fineli-8513-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for keitettyä kananmunaa: 55 g/unit, Fineli portion where available or standard piece."
+        }
+      ]
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "servings": 3,
+      "ingredients": [
+        {
+          "name": "kananmunaa",
+          "grams": 220,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for kananmunaa: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "name": "kypsää tomaattia",
+          "grams": 500,
+          "fineliRecordId": "fineli-352-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Edible piece mass for kypsää tomaattia: 125 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "name": "neutraalia öljyä",
+          "grams": 27,
+          "fineliRecordId": "afcd-F006159-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for neutraalia öljyä."
+        },
+        {
+          "name": "sokeria",
+          "grams": 4,
+          "fineliRecordId": "fineli-1-2026-10-24",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "massEvidence": "Ingredient-specific teaspoon mass: 4 g/tl for sokeria.",
+          "giMatchEvidence": "Ingredient-category match: Sugars and syrups category mean; sugars and syrups category mean",
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        },
+        {
+          "name": "soijakastiketta",
+          "grams": 15,
+          "fineliRecordId": "fineli-31-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for soijakastiketta."
+        },
+        {
+          "name": "kevätsipulia",
+          "grams": 15,
+          "fineliRecordId": "afcd-F006250-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "keitettyä riisiä",
+          "grams": 450,
+          "fineliRecordId": "fineli-1370-2026-10-24",
+          "giRecordId": "rice-category-mean-gi-67",
+          "massEvidence": "keitettyä riisiä maps to fineli-release-20 record 1370; state: cooked plain rice.",
+          "giMatchEvidence": "Ingredient-category match: Rice category mean; rice category mean; rice flour is a broad grain-form analogue",
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
+    },
+    {
+      "recipeId": "harira",
+      "servings": 6,
+      "ingredients": [
+        {
+          "name": "naudan jauhelihaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-11562-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "naudan jauhelihaa maps to fineli-release-20 record 11562; state: raw beef mince, 17% fat."
+        },
+        {
+          "name": "keltasipulia",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for keltasipulia: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "sellerinvartta",
+          "grams": 80,
+          "fineliRecordId": "fineli-339-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Edible piece mass for sellerinvartta: 40 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato.",
+          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "name": "kuivattuja vihreitä linssejä",
+          "grams": 150,
+          "fineliRecordId": "fineli-399-2026-10-24",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "massEvidence": "kuivattuja vihreitä linssejä maps to fineli-release-20 record 399; state: dry green/brown lentils.",
+          "giMatchEvidence": "Ingredient-category match: Legumes, category mean; Broad category mean; substantial uncertainty when applied to a specific cooked bean.",
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "name": "kikherneitä",
+          "grams": 400,
+          "fineliRecordId": "fineli-11089-2026-10-24",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "massEvidence": "kikherneitä maps to fineli-release-20 record 11089; state: cooked drained chickpeas.",
+          "giMatchEvidence": "Ingredient-category match: Legumes, category mean; Broad category mean; substantial uncertainty when applied to a specific cooked bean.",
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "name": "lihalientä",
+          "grams": 1000,
+          "fineliRecordId": "afcd-F008936-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific volume mass: 1000 g/l for lihalientä."
+        },
+        {
+          "name": "jauhettua inkivääriä",
+          "grams": 2,
+          "fineliRecordId": "afcd-F004210-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for jauhettua inkivääriä.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "kurkumaa",
+          "grams": 2,
+          "fineliRecordId": "afcd-F009335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kurkumaa."
+        },
+        {
+          "name": "kanelia",
+          "grams": 1,
+          "fineliRecordId": "afcd-F002963-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kanelia."
+        },
+        {
+          "name": "ohuita vermisellinuudeleita",
+          "grams": 60,
+          "fineliRecordId": "fineli-117-2026-10-24",
+          "giRecordId": "pasta-category-mean-gi-52",
+          "massEvidence": "ohuita vermisellinuudeleita maps to fineli-release-20 record 117; state: dry wheat pasta as vermicelli proxy.",
+          "giMatchEvidence": "Ingredient-category match: Pasta category mean; pasta category mean; product and cooking variation remains",
+          "foodKey": "pasta-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "tuoretta korianteria",
+          "grams": 20,
+          "fineliRecordId": "afcd-F003192-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Fresh coriander leaf mapped to AFCD Release 3 record F003192; selected state: fresh raw leaf."
+        },
+        {
+          "name": "sitruunamehua",
+          "grams": 30,
+          "fineliRecordId": "afcd-F004726-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for sitruunamehua.",
+          "giMatchEvidence": "Ingredient-category match: Fruits and fruit products category mean; fruit category mean; used only as a broad tamarind-paste analogue",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "servings": 6,
+      "ingredients": [
+        {
+          "name": "munakoisoa",
+          "grams": 800,
+          "fineliRecordId": "fineli-362-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Edible piece mass for munakoisoa: 400 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "perunoita",
+          "grams": 500,
+          "fineliRecordId": "fineli-205-2026-10-24",
+          "giRecordId": "potatoes-category-mean-gi-71",
+          "massEvidence": "perunoita maps to fineli-release-20 record 205; state: peeled raw potato.",
+          "giMatchEvidence": "Ingredient-category match: Potatoes and potato products category mean; potato category mean; this is not preparation-specific",
+          "foodKey": "potatoes-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "naudan jauhelihaa",
+          "grams": 500,
+          "fineliRecordId": "fineli-11562-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "naudan jauhelihaa maps to fineli-release-20 record 11562; state: raw beef mince, 17% fat."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato.",
+          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "name": "kanelia",
+          "grams": 2,
+          "fineliRecordId": "afcd-F002963-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kanelia."
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 27,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "name": "voita",
+          "grams": 60,
+          "fineliRecordId": "fineli-576-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "voita maps to fineli-release-20 record 576; state: unsalted butter."
+        },
+        {
+          "name": "vehnäjauhoja",
+          "grams": 60,
+          "fineliRecordId": "fineli-110-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "vehnäjauhoja maps to fineli-release-20 record 110; state: semi-coarse wheat flour.",
+          "giMatchEvidence": "Ingredient-category match: Bakery products category mean; bakery products category mean; flour and semolina are broad grain-product analogues",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "maitoa",
+          "grams": 600,
+          "fineliRecordId": "fineli-689-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient-specific volume mass: 100 g/dl for maitoa.",
+          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "kananmuna",
+          "grams": 55,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for kananmuna: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "name": "raastettua kovaa juustoa",
+          "grams": 80,
+          "fineliRecordId": "fineli-643-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "raastettua kovaa juustoa maps to fineli-release-20 record 643; state: semi-hard Edam cheese proxy.",
+          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "afcd-F006618-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        }
+      ]
+    },
+    {
+      "recipeId": "doner-kebab",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "naudan jauhelihaa",
+          "grams": 600,
+          "fineliRecordId": "fineli-11562-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "naudan jauhelihaa maps to fineli-release-20 record 11562; state: raw beef mince, 17% fat."
+        },
+        {
+          "name": "kreikkalaista jogurttia",
+          "grams": 100,
+          "fineliRecordId": "fineli-34611-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "kreikkalaista jogurttia maps to fineli-release-20 record 34611; state: Greek yoghurt 7% fat.",
+          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 6,
+          "fineliRecordId": "afcd-F004193-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "juustokuminaa",
+          "grams": 2,
+          "fineliRecordId": "afcd-F003327-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for juustokuminaa.",
+          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "paprikajauhetta",
+          "grams": 2,
+          "fineliRecordId": "afcd-F006316-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for paprikajauhetta.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "oreganoa",
+          "grams": 1,
+          "fineliRecordId": "afcd-F006281-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for oreganoa."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "afcd-F006618-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "pitaleipää",
+          "grams": 220,
+          "fineliRecordId": "fineli-1056-2026-10-24",
+          "giRecordId": "bread-category-mean-gi-64",
+          "massEvidence": "Edible piece mass for pitaleipää: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Breads category mean; bread category mean; product and processing variation is substantial",
+          "foodKey": "bread-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "kaalisalaattia",
+          "grams": 200,
+          "fineliRecordId": "fineli-33862-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "kaalisalaattia maps to fineli-release-20 record 33862; state: industrial coleslaw.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        }
+      ]
+    },
+    {
+      "recipeId": "souvlaki",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "broilerin paistileikettä",
+          "grams": 700,
+          "fineliRecordId": "afcd-F002806-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "broilerin paistileikettä maps to afcd-release-3 record F002806; state: raw lean chicken thigh flesh."
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 40.5,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "name": "sitruunan mehu",
+          "grams": 45,
+          "fineliRecordId": "afcd-F004726-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "Edible piece mass for sitruunan mehu: 45 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Fruits and fruit products category mean; fruit category mean; used only as a broad tamarind-paste analogue",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 6,
+          "fineliRecordId": "afcd-F004193-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "kuivattua oreganoa",
+          "grams": 6,
+          "fineliRecordId": "afcd-F006281-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 6 g/rkl for kuivattua oreganoa."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        },
+        {
+          "name": "kreikkalaista jogurttia",
+          "grams": 250,
+          "fineliRecordId": "fineli-34611-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "kreikkalaista jogurttia maps to fineli-release-20 record 34611; state: Greek yoghurt 7% fat.",
+          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "kurkkua",
+          "grams": 200,
+          "fineliRecordId": "fineli-346-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Edible piece mass for kurkkua: 400 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 3,
+          "fineliRecordId": "afcd-F004193-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "pitaleipää",
+          "grams": 220,
+          "fineliRecordId": "fineli-1056-2026-10-24",
+          "giRecordId": "bread-category-mean-gi-64",
+          "massEvidence": "Edible piece mass for pitaleipää: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Breads category mean; bread category mean; product and processing variation is substantial",
+          "foodKey": "bread-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "tomaattia",
+          "grams": 250,
+          "fineliRecordId": "fineli-352-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Edible piece mass for tomaattia: 125 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        }
+      ]
+    },
+    {
+      "recipeId": "gazpacho",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kypsiä tomaatteja",
+          "grams": 1000,
+          "fineliRecordId": "fineli-352-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Recipe amount 1 kg converted to 1,000 g.",
+          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "name": "kurkkua",
+          "grams": 400,
+          "fineliRecordId": "fineli-346-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Edible piece mass for kurkkua: 400 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "punaista paprikaa",
+          "grams": 160,
+          "fineliRecordId": "fineli-386-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Edible piece mass for punaista paprikaa: 160 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 3,
+          "fineliRecordId": "afcd-F004193-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "sherryviinietikkaa tai punaviinietikkaa",
+          "grams": 30,
+          "fineliRecordId": "fineli-929-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for sherryviinietikkaa tai punaviinietikkaa."
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 54,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        },
+        {
+          "name": "kylmää vettä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        },
+        {
+          "name": "vaaleaa leipää",
+          "grams": 50,
+          "fineliRecordId": "fineli-1107-2026-10-24",
+          "giRecordId": "bread-category-mean-gi-64",
+          "massEvidence": "Fineli #1107 medium slice: 25 g/slice.",
+          "giMatchEvidence": "Ingredient-category match: Breads category mean; bread category mean; product and processing variation is substantial",
+          "foodKey": "bread-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
+    },
+    {
+      "recipeId": "spanakopita",
+      "servings": 6,
+      "ingredients": [
+        {
+          "name": "tuoretta pinaattia",
+          "grams": 500,
+          "fineliRecordId": "afcd-F008761-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "tuoretta pinaattia maps to afcd-release-3 record F008761; state: mature fresh spinach.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "kevätsipulia",
+          "grams": 60,
+          "fineliRecordId": "afcd-F006250-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "fetajuustoa",
+          "grams": 250,
+          "fineliRecordId": "afcd-F002452-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "fetajuustoa maps to afcd-release-3 record F002452; state: feta cheese.",
+          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "kananmunaa",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for kananmunaa: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "name": "tuoretta tilliä",
+          "grams": 15,
+          "fineliRecordId": "fineli-369-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "tuoretta tilliä maps to fineli-release-20 record 369; state: fresh dill."
+        },
+        {
+          "name": "filotaikinaa",
+          "grams": 160,
+          "fineliRecordId": "afcd-F006497-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "filotaikinaa maps to afcd-release-3 record F006497; state: raw filo pastry.",
+          "giMatchEvidence": "Ingredient-category match: Bakery products category mean; bakery products category mean; flour and semolina are broad grain-product analogues",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 91,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific volume mass: 0.91 g/ml for oliiviöljyä."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 1,
+          "fineliRecordId": "afcd-F006618-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        }
+      ]
+    },
+    {
+      "recipeId": "tabbouleh",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "hienoa bulguria",
+          "grams": 50,
+          "fineliRecordId": "afcd-F001929-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "hienoa bulguria maps to afcd-release-3 record F001929; state: uncooked bulgur.",
+          "giMatchEvidence": "Ingredient-category match: Bakery products category mean; bakery products category mean; flour and semolina are broad grain-product analogues",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "lehtipersiljaa",
+          "grams": 60,
+          "fineliRecordId": "afcd-F006321-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "lehtipersiljaa maps to afcd-release-3 record F006321; state: fresh parsley.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "tomaattia",
+          "grams": 250,
+          "fineliRecordId": "fineli-352-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Edible piece mass for tomaattia: 125 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "name": "kevätsipulia",
+          "grams": 30,
+          "fineliRecordId": "afcd-F006250-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "tuoretta minttua",
+          "grams": 15,
+          "fineliRecordId": "afcd-F005700-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "tuoretta minttua maps to afcd-release-3 record F005700; state: fresh mint.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "sitruunamehua",
+          "grams": 45,
+          "fineliRecordId": "afcd-F004726-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for sitruunamehua.",
+          "giMatchEvidence": "Ingredient-category match: Fruits and fruit products category mean; fruit category mean; used only as a broad tamarind-paste analogue",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 54,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "afcd-F006618-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        }
+      ]
     }
   ],
   "selectionNotes": {
@@ -2536,7 +3963,24 @@
       "pannacotta-marjakastikkeella",
       "caponata",
       "siemengranola-jogurtilla"
+    ],
+    "nextBatch": "The next fourteen highest currently ranked recipes with ingredient calculation files are koshari, baozi, Moroccan couscous, pasta alla Norma, bulgogi, congee, tomato-egg stir-fry, harira, Greek moussaka, doner kebab, souvlaki, gazpacho, spanakopita and tabbouleh. Existing per-recipe available-carbohydrate values were used only for ranking; GI estimates are recalculated ingredient by ingredient. Missing material mappings or masses block publication.",
+    "nextBatchRecipeIds": [
+      "koshari",
+      "baozi",
+      "marokkolainen-couscous",
+      "pasta-alla-norma",
+      "bulgogi",
+      "congee-riisipuuro",
+      "tomaatti-kananmuna-wokki",
+      "harira",
+      "kreikkalainen-moussaka",
+      "doner-kebab",
+      "souvlaki",
+      "gazpacho",
+      "spanakopita",
+      "tabbouleh"
     ]
   },
-  "additionalCarbohydrateEvidence": "AFCD Release 3 was used only for chickpea flour in vada pav and pure tamarind paste in pani puri because no matching Fineli foods were found. Source: Food Standards Australia New Zealand, Australian Food Composition Database Release 3, CC BY-SA 3.0 Australia. Values with and without sugar alcohols were equal for both items. This batch also uses AFCD Release 3 items identified by source IDs in the input records where matching Fineli foods were unavailable."
+  "additionalCarbohydrateEvidence": "AFCD Release 3 was used only for chickpea flour in vada pav and pure tamarind paste in pani puri because no matching Fineli foods were found. Source: Food Standards Australia New Zealand, Australian Food Composition Database Release 3, CC BY-SA 3.0 Australia. Values with and without sugar alcohols were equal for both items. This batch also uses AFCD Release 3 items identified by source IDs in the input records where matching Fineli foods were unavailable. AFCD Release 3 Cheese, ricotta (F002488) is used for pasta alla Norma because no matching Fineli record exists."
 }
