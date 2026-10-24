@@ -33,6 +33,10 @@ const expectedRecipeIds = [
   "valimerellinen-tortilla-espanola-aamupalaksi", "kana-fajita-pelti", "italian-pata", "kukkakaaligratiini-pekonilla",
   "valimerellinen-menemen-fetalla", "khao-soi-vhh-konjac", "broileri-kukkakaaligratiini", "som-tam-vhh-kurkkuna",
   "kanakeitto-pinaatti-sitruuna", "pad-kra-pao-vhh", "pohjoisafrikkalainen-maakouda", "kermainen-lohipata",
+  "gai-yang-vhh", "tom-yum-goong-vhh", "pad-kee-mao-vhh-konjac", "paahdettu-aamiaismunakoiso", "vhh-mustikkapiirakka",
+  "ketopizza-pofiber-pohjalla", "tom-kha-gai-vhh", "marjainen-chiavanukas", "halloumimunakas", "pad-see-ew-vhh-konjac",
+  "raejuusto-uunimunakas", "keto-kauralesesampylat", "jauhelihapihvit-vhh-kermakastikkeella", "keto-pannukakku", "kaakao-kookos-chia",
+  "parsakaali-sinihomejuustofrittata", "yum-woon-sen-vhh", "keto-pinaattiletut", "kurkku-oliivi-aamiaiskulho", "uunilohi-smetanakuorrutteella",
 ];
 const recipeCategories: Record<string, string> = {
   "tortilla-de-patatas": "paaruoat", "vhh-lihamureke": "paaruoat", hummus: "alkuruoat",
@@ -71,6 +75,13 @@ const recipeCategories: Record<string, string> = {
   "kukkakaaligratiini-pekonilla": "paaruoat", "valimerellinen-menemen-fetalla": "aamupalat", "khao-soi-vhh-konjac": "paaruoat",
   "broileri-kukkakaaligratiini": "paaruoat", "som-tam-vhh-kurkkuna": "alkuruoat", "kanakeitto-pinaatti-sitruuna": "paaruoat",
   "pad-kra-pao-vhh": "paaruoat", "pohjoisafrikkalainen-maakouda": "aamupalat", "kermainen-lohipata": "paaruoat",
+  "gai-yang-vhh": "paaruoat", "tom-yum-goong-vhh": "paaruoat", "pad-kee-mao-vhh-konjac": "paaruoat",
+  "paahdettu-aamiaismunakoiso": "aamupalat", "vhh-mustikkapiirakka": "jalkiruoat", "ketopizza-pofiber-pohjalla": "paaruoat",
+  "tom-kha-gai-vhh": "paaruoat", "marjainen-chiavanukas": "aamupalat", "halloumimunakas": "aamupalat",
+  "pad-see-ew-vhh-konjac": "paaruoat", "raejuusto-uunimunakas": "paaruoat", "keto-kauralesesampylat": "leivonnaiset",
+  "jauhelihapihvit-vhh-kermakastikkeella": "paaruoat", "keto-pannukakku": "jalkiruoat", "kaakao-kookos-chia": "aamupalat",
+  "parsakaali-sinihomejuustofrittata": "paaruoat", "yum-woon-sen-vhh": "alkuruoat", "keto-pinaattiletut": "paaruoat",
+  "kurkku-oliivi-aamiaiskulho": "aamupalat", "uunilohi-smetanakuorrutteella": "paaruoat",
 };
 const recipeFileNames: Record<string, string> = { "vhh-kaalilaatikko": "kaalilaatikko" };
 
@@ -108,7 +119,6 @@ const sourceHashes = Object.fromEntries(await Promise.all(expectedRecipeIds.map(
 })));
 
 const results = inputs.map((recipe) => calculateGlycemicLoad(recipe, foodRecords, giRecords));
-input.selectionNotes.newBatch = "Twenty further recipes ranked by existing available-carbohydrate estimates were reviewed ingredient by ingredient in this batch. Two liver recipes remain without a total because a defensible liver GI is unavailable; the quark bowl remains incomplete because sweetener type and amount are unspecified. The other recipes use ingredient-level Fineli/AFCD values, documented recipe mass conversions and disclosed GI analogues or category means. Ranking estimates are not used in the GL formula.";
 const report = {
   generatedAt: new Date().toISOString(),
   scope: "Internal provenance report for ingredient-based per-serving estimates. These are not measurements of prepared meals or individual glucose responses.",
