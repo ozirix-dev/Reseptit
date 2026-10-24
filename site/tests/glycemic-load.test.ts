@@ -82,31 +82,38 @@ test("zero-carbohydrate ingredients need no GI value and contribute zero", () =>
   assert.equal(result.ingredients[0].giContribution, null);
 });
 
-test("supplementary and unpublished GI records never produce a public-ready GL", () => {
+test("published, explicitly labelled supplementary proxy values are accepted with lower confidence", () => {
   const supplementary = {
     ...gi,
     qualityTier: "SUPPLEMENTARY" as const,
-    source: { ...gi.source, published: false, iso26642Confirmed: false, qualityEvidence: "Database lists unpublished observation; protocol is not verifiable." },
+    matchKind: "ANALOG" as const,
+    confidence: "LOW" as const,
+    source: { ...gi.source, published: true, iso26642Confirmed: false, qualityEvidence: "Published generic analogue; study methods do not confirm ISO compliance." },
   };
   const result = calculateGlycemicLoad({
     recipeId: "supplementary",
     servings: 1,
     ingredients: [{ name: "food", grams: 100, fineliRecordId: "food", giRecordId: supplementary.id, foodKey: "tested-food", preparationKey: "raw", giMatchEvidence: "Exact food and preparation, lower quality source." }],
   }, [food("food", 10)], [supplementary]);
-  assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
-  assert.equal(result.glycemicLoadPerServing, null);
-  assert.match(result.blockers[0], /strong, published ISO 26642/);
+  assert.equal(result.status, "CALCULATED");
+  assert.equal(result.glycemicLoadPerServing, 5);
+  assert.equal(result.ingredients[0].matchKind, "ANALOG");
+  assert.equal(result.confidence, "LOW");
 });
 
-test("unweighed ingredients block totals and are not silently omitted", () => {
+test("standardized seasoning assumptions are visible and can be omitted below 1 g per serving", () => {
   const result = calculateGlycemicLoad({
     recipeId: "unweighed",
     servings: 1,
-    ingredients: [{ name: "unmeasured seasoning", grams: null, fineliRecordId: null, giRecordId: null, excludedReason: "Amount not specified." }],
+    ingredients: [{ name: "assumed seasoning", grams: 1.5, fineliRecordId: null, giRecordId: null, excludedReason: "Standard estimate; not weighed.", estimatedAvailableCarbohydratePerServingG: 0.3, negligibleAssumption: "1.5 g batch amount, assumed 0.6 g available carbohydrate total." }],
   }, [], []);
-  assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
-  assert.equal(result.glycemicLoadPerServing, null);
-  assert.match(result.blockers[0], /not treated as zero/);
+  assert.equal(result.status, "CALCULATED");
+  assert.equal(result.glycemicLoadPerServing, 0);
+  assert.equal(result.blockers.length, 0);
+  assert.equal(result.ingredients[0].grams, 1.5);
+  assert.equal(result.ingredients[0].availableCarbohydratePerServingG, 0.3);
+  assert.match(result.ingredients[0].issues[0], /<1 g\/serving/);
+  assert.equal(result.confidence, "LOW");
 });
 
 test("source discovery records food candidates but marks preparation mismatch", () => {
@@ -121,15 +128,27 @@ test("source discovery records food candidates but marks preparation mismatch", 
   assert.equal(result.ingredients[0].giCandidates[0].preparationMatches, false);
 });
 
-test("a GI from a different food or preparation blocks the recipe total", () => {
+test("an unpublished GI record still blocks an important ingredient", () => {
   const result = calculateGlycemicLoad({
-    recipeId: "mismatch",
+    recipeId: "unpublished",
     servings: 1,
-    ingredients: [{ name: "cooked food", grams: 100, fineliRecordId: "food", giRecordId: gi.id, foodKey: "tested-food", preparationKey: "cooked", giMatchEvidence: "Incorrectly assigned raw value." }],
-  }, [food("food", 10)], [gi]);
+    ingredients: [{ name: "food", grams: 100, fineliRecordId: "food", giRecordId: "unpublished", foodKey: "tested-food", preparationKey: "raw", giMatchEvidence: "Unpublished value." }],
+  }, [food("food", 10)], [{ ...gi, id: "unpublished", source: { ...gi.source, published: false } }]);
   assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
   assert.equal(result.glycemicLoadPerServing, null);
-  assert.match(result.blockers[0], /does not exactly match/);
+  assert.match(result.blockers[0], /unpublished/);
+});
+
+test("a sub-1 g ingredient needs no GI record and is excluded from the sum", () => {
+  const result = calculateGlycemicLoad({
+    recipeId: "small-contribution",
+    servings: 1,
+    ingredients: [{ name: "spinach", grams: 100, fineliRecordId: "spinach", giRecordId: null }],
+  }, [food("spinach", 0.2)], []);
+  assert.equal(result.status, "CALCULATED");
+  assert.equal(result.glycemicLoadPerServing, 0);
+  assert.equal(result.ingredients[0].availableCarbohydratePerServingG, 0.2);
+  assert.equal(result.ingredients[0].giContribution, null);
 });
 
 test("missing ingredient mass or GI evidence never returns a partial recipe GL", () => {
@@ -141,7 +160,7 @@ test("missing ingredient mass or GI evidence never returns a partial recipe GL",
       { name: "unknown GI", grams: 20, fineliRecordId: "unknown-gi", giRecordId: null },
       { name: "unknown mass", grams: null, fineliRecordId: "known", giRecordId: null },
     ],
-  }, [food("known", 20), food("unknown-gi", 5)], [gi]);
+  }, [food("known", 20), food("unknown-gi", 25)], [gi]);
   assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
   assert.equal(result.glycemicLoadPerServing, null);
   assert.ok(result.blockers.some((blocker) => blocker.includes("unknown GI")));
@@ -150,9 +169,9 @@ test("missing ingredient mass or GI evidence never returns a partial recipe GL",
 
 test("recipe pages receive only calculated, non-null complete GL results", () => {
   const results = [
-    { recipeId: "waiting", status: "INSUFFICIENT SOURCE DATA" as const, glycemicLoadPerServing: null, sourceReferences: [] },
-    { recipeId: "invalid", status: "CALCULATED" as const, glycemicLoadPerServing: null, sourceReferences: [] },
-    { recipeId: "ready", status: "CALCULATED" as const, glycemicLoadPerServing: 3.25, sourceReferences: [{ title: "Study", url: "https://example.test/study" }] },
+    { recipeId: "waiting", status: "INSUFFICIENT SOURCE DATA" as const, glycemicLoadPerServing: null, confidence: null, sourceReferences: [] },
+    { recipeId: "invalid", status: "CALCULATED" as const, glycemicLoadPerServing: null, confidence: "LOW" as const, sourceReferences: [] },
+    { recipeId: "ready", status: "CALCULATED" as const, glycemicLoadPerServing: 3.25, confidence: "MEDIUM" as const, sourceReferences: [{ title: "Study", url: "https://example.test/study", matchKind: "ANALOG" as const, confidence: "LOW" as const, note: "Analogue." }] },
   ];
   assert.equal(publishedGlycemicLoadForRecipe("waiting", results), null);
   assert.equal(publishedGlycemicLoadForRecipe("invalid", results), null);

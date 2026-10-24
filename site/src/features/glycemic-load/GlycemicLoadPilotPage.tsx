@@ -8,31 +8,30 @@ export function GlycemicLoadPilotPage() {
   return <section className="page-section glycemic-pilot">
     <div className="container container--narrow">
       <header className="page-intro glycemic-pilot__intro">
-        <p className="eyebrow">Sisäinen laskentapilotti</p>
+        <p className="eyebrow">Laskennallinen arvio</p>
         <h1>Glykeemisen kuorman pilotti</h1>
-        <p className="page-intro__description">Kokeilemme annoskohtaisen glykeemisen kuorman laskentaa kymmenellä ravintoarvolaskennan pilottireseptillä. Arviot julkaistaan vain, kun laskennan lähdetiedot riittävät.</p>
+        <p className="page-intro__description">Nämä kymmenen reseptikohtaista arviota lasketaan ainesosien imeytyvistä hiilihydraateista ja julkaistuista GI-arvoista. Ne eivät ole valmiin ruoan tai yksittäisen ihmisen verensokerin mittaustuloksia.</p>
       </header>
 
       <div className="glycemic-pilot__summary" aria-label="Pilotin tilanne">
         <article><strong>{glycemicLoadPilotResults.length}</strong><span>reseptiä pilotissa</span></article>
-        <article><strong>{calculated.length}</strong><span>laskettavissa</span></article>
-        <article><strong>{awaitingSources}</strong><span>odottaa lähdetietoja</span></article>
+        <article><strong>{calculated.length}</strong><span>arviota julkaistu</span></article>
+        <article><strong>{awaitingSources}</strong><span>odottaa olennaista lähdetietoa</span></article>
       </div>
 
       <section className="glycemic-pilot__method" aria-labelledby="glycemic-pilot-method">
         <h2 id="glycemic-pilot-method">Miten arvio lasketaan?</h2>
-        <p>GL = Σ (GI × imeytyvät hiilihydraatit annosta kohti) / 100. Reseptin kokonaisarvio lasketaan vain, kun hiilihydraatteja sisältävien ainesten GI-arvo vastaa sekä ruoka-ainetta että valmistustapaa.</p>
-        <p>GL on laskennallinen arvio, ei mittaus aterian vaikutuksesta verensokeriin. Puuttuvaa GI-arvoa ei korvata toisen ruoka-aineen tai valmistustavan arvolla.</p>
-        <p>ISO 26642 suosittelee GI-mittauksen rajaamista ruokiin, joissa on vähintään 10 g imeytyvää hiilihydraattia tavanomaisessa annoksessa. Tässä pilotissa 40:stä hiilihydraattia sisältävästä ainesosatapahtumasta 39 jää rajan alle; ainoa rajan ylittävä on tortilla-peruna, jolle ei löytynyt valmistustapaan sopivaa, vahvan laatutason GI-arvoa. Tämä selittää lähdetiedon puutetta, eikä pieniä määriä käsitellä nollana.</p>
-        <p>Fineli antaa ravintosisällön ja annosmäärän. GI-arvot haetaan erikseen ruokakohtaisista tutkimuslähteistä. Julkiseen laskelmaan hyväksytään vain vahvan laatutason arvo, jonka ruoka ja valmistustapa vastaavat reseptiä. Täydentävät tai julkaisemattomat tiedot jäävät sisäiseen vertailuun.</p>
+        <p>GK = Σ (ainesosan GI × sen imeytyvät hiilihydraatit annosta kohti) / 100. Hiilihydraatit perustuvat Finelin tietoihin ja reseptin määriin. Alle 1 g imeytyvää hiilihydraattia annosta kohti sisältävät ainesosat ohitetaan summassa.</p>
+        <p>GI-arvoa käytetään ensisijaisesti vastaavasta ruoasta. Jos täsmäarvo puuttuu, lähin julkaistu ruoka- tai valmistustapavastine voidaan käyttää arviona. Vastineen tai luokkakeskiarvon käyttö, tietolähde ja luottamustaso kerrotaan reseptikohtaisesti. Maustemäärien vakiot ovat oletuksia, eivät punnittuja määriä.</p>
+        <p>Valmiin ruoan todellinen vaste vaihtelee muun muassa raaka-aineen, valmistuksen, annoksen ja ihmisen mukaan. Ainesosien GI-arvojen summa on siksi ohjeellinen arvio; se ei mittaa sekalaisen aterian vastetta. Kun olennaiselle ainesosalle ei löydy julkaistua ja perusteltua arvoa tai määrää, resepti jää ilman kokonaislukua.</p>
         <ul className="glycemic-pilot__sources" aria-label="Käytetyt GI-lähteet">
-          <li><a href="https://doi.org/10.1093/ajcn/nqab233">International Tables 2021</a> — ensisijainen lähde; ISO-menetelmän laatukriteerit täyttävät arvot.</li>
-          <li><a href="https://glycemicindex.com/gi-search/">Sydneyn yliopiston GI-tietokanta</a> — hakemisto ja lähteiden tarkistus; julkaisemattomat tai puutteellisesti todennettavat tietueet eivät avaa julkista laskelmaa.</li>
-          <li><a href="https://doi.org/10.1038/s41387-020-00145-w">Non-western foods -koonti 2021</a> — alueellisten ruokien täydentävä lähde; arvo hyväksytään vahvalle tasolle vain, jos alkuperäistutkimuksen ISO-vastaavuus voidaan varmistaa.</li>
-          <li><a href="https://committee.iso.org/standard/43633.html">ISO 26642:2010</a> — GI-mittausten menetelmä ja ruoka-annoksen hiilihydraattiraja.</li>
-          <li><a href="https://doi.org/10.1093/ajcn/76.1.5">International Tables 2002</a> — taustalähde pienen hiilihydraattimäärän ruoka-aineille, kuten kananmunalle ja juustolle.</li>
+          <li><a href="https://doi.org/10.1093/ajcn/nqab233">International Tables 2021</a> — ruoka- ja valmistustapakohtaisia mittauksia sekä elintarvikeryhmien keskiarvoja. Arvot on luokiteltu menetelmän laadun perusteella.</li>
+          <li><a href="https://glycemicindex.com/gi-search/">Sydneyn yliopiston GI-tietokanta</a> — kansainvälisten GI-tietueiden haku ja lähdetarkistus; julkaisemattomat merkinnät eivät yksin riitä lähteeksi.</li>
+          <li><a href="https://doi.org/10.1038/s41387-020-00145-w">Non-western foods -koonti 2021</a> — julkaistujen alueellisten ruoka-arvojen täydentävä koonti.</li>
+          <li><a href="https://committee.iso.org/standard/43633.html">ISO 26642:2010</a> — GI-mittausten menetelmä. Se auttaa tulkitsemaan aineiston laatua; tämän sivun arvot eivät ole aterioiden ISO-mittauksia.</li>
+          <li><a href="https://doi.org/10.3390/nu12103041">Nutrients 2020, vihannesten GI-katsaus</a> — sisältää sekundaarisia paprika- ja sipuliarvoja, joiden alkuperäinen mittausmenetelmä ei ole tässä varmennettavissa; siksi luottamustaso on matala.</li>
         </ul>
-        <p className="glycemic-pilot__source">Esimerkki täsmäytyksestä: vuoden 2021 taulukko raportoi kokonaisen raa’an tomaatin GI-arvoksi 22. Sitä ei käytetä tomaattimurskalle. Paistetusta perunasta löytyi julkaistu GI-tutkimus, mutta siinä oli vain kahdeksan osallistujaa eli alle ISO-laatutason rajan, ja valmistus poikkesi tortillasta. Myöskään keitetyn, höyrytetyn tai sipsiksi paistetun perunan arvo ei vastaa öljyssä haudutettua, kananmunaan sekoitettua tortilla-perunaa. Laajempia GI-taulukoita ei tarvita tämän pilotin lähdehaun täydentämiseksi; tarvittava lisänäyttö olisi juuri tätä valmistustapaa vastaava hyväksyttävän laatutason tutkimus.</p>
+        <p className="glycemic-pilot__source">Esimerkki vastineesta: tomaattimurskan arviota varten käytetään vuoden 2021 taulukon kokonaisen raa’an tomaatin GI-arvoa 22. Valmistustapa poikkeaa, joten lähde näkyy vastineena eikä suorana osumana. Tortillan perunalle käytetään keitetyn perunan arvoa 66 matalalla luottamustasolla, sillä öljyssä kypsennys ja kananmunaan yhdistäminen muuttavat ruoan rakennetta.</p>
       </section>
 
       <section className="glycemic-pilot__recipes" aria-labelledby="glycemic-pilot-recipes">
@@ -41,7 +40,7 @@ export function GlycemicLoadPilotPage() {
           {glycemicLoadPilotResults.map((result) => <li key={result.recipeId}>
             <Link to={result.routePath}>{result.title}</Link>
             {result.status === "CALCULATED" && result.glycemicLoadPerServing !== null
-              ? <span className="glycemic-pilot__status">GL-arvio: {result.glycemicLoadPerServing} / annos</span>
+              ? <span className="glycemic-pilot__status">GK-arvio: {result.glycemicLoadPerServing} / annos — luottamus: {{ HIGH: "korkea", MEDIUM: "keskitasoinen", LOW: "matala" }[result.confidence ?? "LOW"]}</span>
               : <span className="glycemic-pilot__status">Kokonaisarvio odottaa luotettavaa, valmistustapaan sopivaa lähdetietoa.</span>}
           </li>)}
         </ol>
