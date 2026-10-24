@@ -252,3 +252,10 @@ toistettavan, rajauksiltaan ilmoitetun arvion. INSUFFICIENT SOURCE DATA
 tarkoittaa puuttuvaa laskentanäyttöä. CONFLICT REQUIRES REVIEW tarkoittaa
 ristiriitaa, ei lupaa korvata lukua. MISSING tarkoittaa, ettei numeroita ole.
 Arvion tekstimerkintä yksin ei ole laskentatodiste.
+
+
+## GK-pilotti, 20 reseptiä
+
+GK-laskennan koko Fineli Rel20 -viiteaineisto on `fineli-release-20-reference.json`. Se sisältää 4 238 Fineli-tietuetta sekä ruoka-ainekohtaisia annosmittoja; sen lähde-ID:t, imeytyvän hiilihydraatin CHOAVL, kuidun FIBT ja polyolit SUGOH säilytetään. Pilotin `food-records.json` sisältää vain laskennassa tarvittavan pienen tietuejoukon. Reseptimäärät otetaan reseptien rakenteisista aineksista, ja muu kuin grammamäärä muunnetaan vain Fineli-tietueen omalla massalla.
+
+`glycemic-load-pilot-input.json` ja `glycemic-index-records.json` sisältävät ainesosakohtaiset vastaavuudet, GI-lähteet ja epävarmuudet. Kymmenen uutta reseptiä lisättiin ensimmäisen kymmenen rinnalle. Massaman-curry vaihdettiin munakoiso-jauhelihavuokaan puuttuvan currytahnatietueen vuoksi; maksalaatikko vaihdettiin VHH-kaalilaatikkoon, koska maksalle ei löytynyt perusteltua GI-arvoa. Laajat vihannes-, palkokasvi-, keitto- ja maitotuoteryhmien keskiarvot ovat vain matalan luottamuksen vastineita, eivät ruokalajikohtaisia mittauksia. Laskelma on ainesosista tehty arvio, ei valmiin aterian mittaus.

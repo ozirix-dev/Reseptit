@@ -384,6 +384,100 @@
         "qualityEvidence": "Published category mean from ISO-screened individual food measurements. This is not a cream-cheese-specific value and is used only as a clearly labelled category-level proxy."
       },
       "note": "Category mean, not a measured GI for the recipe's cream cheese."
+    },
+    {
+      "id": "chickpea-canned-gi-35",
+      "gi": 35,
+      "foodKey": "chickpea",
+      "preparationKey": "canned-drained",
+      "food": "Canned, drained chickpeas",
+      "preparation": "Canned chickpeas, drained; used as analogue for cooked chickpeas",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "MEDIUM",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Supplemental Table 1, item 1284: chickpeas, canned, drained (Edgell), GI 35 ± 3",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "participants": 12,
+        "referenceFood": "Glucose",
+        "testDurationHours": 2,
+        "qualityEvidence": "The food measurement is listed in the review’s highest-quality Supplemental Table 1, which used methodology in accordance with ISO 26642. Recipe chickpeas are not branded Edgell; this is an explicit product analogue, not an exact match."
+      },
+      "note": "Measured for a specific Australian canned brand, not the recipe’s unspecified chickpea product."
+    },
+    {
+      "id": "legumes-category-mean-gi-34",
+      "gi": 34,
+      "foodKey": "legume",
+      "preparationKey": "legume-category",
+      "food": "Legumes, category mean",
+      "preparation": "Category mean of tested legume foods",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1 summary: legumes mean GI 34 ± 14 (n=32), values from Supplemental Table 1",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published category mean calculated from the ISO-screened Supplemental Table 1 food measurements. It is not a kidney-bean-specific GI or a measurement of the recipe."
+      },
+      "note": "Broad category mean; substantial uncertainty when applied to a specific cooked bean."
+    },
+    {
+      "id": "vegetables-category-mean-gi-66",
+      "gi": 66,
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "food": "Vegetables other than potatoes, category mean",
+      "preparation": "Broad category mean; preparation and individual vegetables vary",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1 summary: vegetables other than potatoes mean GI 66 ± 19 (n=91), values from Supplemental Table 1",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published broad category mean calculated from the ISO-screened Supplemental Table 1 food measurements. This category contains diverse vegetables and is not specific to cabbage, cauliflower, cucumber, zucchini, or eggplant."
+      },
+      "note": "Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence."
+    },
+    {
+      "id": "soups-category-mean-gi-49",
+      "gi": 49,
+      "foodKey": "soup",
+      "preparationKey": "soup-category",
+      "food": "Soups, category mean",
+      "preparation": "Broad category mean of tested soups",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1 summary: soups mean GI 49 ± 10 (n=21), values from Supplemental Table 1",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published category mean calculated from the ISO-screened Supplemental Table 1 food measurements. It is not a beef-broth-specific measurement."
+      },
+      "note": "Broad soup category mean applied to broth carbohydrate; weak match."
     }
   ]
 }
