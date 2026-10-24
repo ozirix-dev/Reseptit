@@ -6,6 +6,10 @@ category: alkuruoka
 language: en
 status: published
 servings: 4
+carbs_net_per_serving_g: 55
+carbs_total_per_serving_g: 63.21
+protein_per_serving_g: 11.64
+fat_per_serving_g: 14.48
 time_total_min: 60
 main_ingredient:
   - peruna

@@ -5,6 +5,10 @@ url_slug: ketopizza-pofiber-pohjalla
 category: paaruoka
 language: th
 servings: 2
+carbs_net_per_serving_g: 4.1
+carbs_total_per_serving_g: 7.72
+protein_per_serving_g: 34.32
+fat_per_serving_g: 31.79
 main_ingredient:
   - juusto
   - kananmuna

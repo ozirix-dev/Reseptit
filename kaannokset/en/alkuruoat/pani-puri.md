@@ -6,6 +6,10 @@ category: alkuruoka
 language: en
 status: published
 servings: 4
+carbs_net_per_serving_g: 50.2
+carbs_total_per_serving_g: 55
+protein_per_serving_g: 9.7
+fat_per_serving_g: 7.81
 time_total_min: 60
 main_ingredient:
   - kikherne

@@ -6,6 +6,10 @@ category: paaruoka
 language: fi
 status: published
 servings: 4
+carbs_net_per_serving_g: 105.3
+carbs_total_per_serving_g: 118.4
+protein_per_serving_g: 27.69
+fat_per_serving_g: 28.39
 time_total_min: 900
 main_ingredient:
   - kikherne

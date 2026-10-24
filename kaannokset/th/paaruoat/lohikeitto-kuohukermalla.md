@@ -5,6 +5,10 @@ url_slug: lohikeitto-kuohukermalla
 category: paaruoka
 language: th
 servings: 4
+carbs_net_per_serving_g: 17.8
+carbs_total_per_serving_g: 20.16
+protein_per_serving_g: 23.39
+fat_per_serving_g: 38.64
 main_ingredient:
   - lohi
   - peruna

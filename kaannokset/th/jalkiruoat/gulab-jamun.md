@@ -6,6 +6,10 @@ category: jalkiruoka
 language: th
 status: published
 servings: 4
+carbs_net_per_serving_g: 93.18
+carbs_total_per_serving_g: 93.87
+protein_per_serving_g: 14.96
+fat_per_serving_g: 16.36
 time_total_min: 60
 main_ingredient:
   - maitojauhe
