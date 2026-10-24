@@ -7,7 +7,7 @@ Suorita `site/`-kansiossa `npm run audit:nutrition`.
 Tuloksena on `tmp/nutrition/audit.json`: kaikkien julkaistujen FI-lähteiden
 inventaariorivit ja viiden pilotin aineskohtaiset puutteet. `--snapshot`
 tallentaa tarkistuskierroksen tuloksen tähän hakemistoon. Auditointikuva
-päivitettiin 24.10.2026, ja kolmen erän laskentamuistiot sekä
+päivitettiin 24.10.2026, ja neljän erän laskentamuistiot sekä
 Fineli-ruokatietueet sisältyvät nyt laskennan lähdetiivisteeseen. Uudet
 irralliset laskentamuistiot pitää lisätä lähteiden inventaarioon erikseen.
 
@@ -85,15 +85,16 @@ ainekohtaiset muunnokset, valmistussaannon ja tarkistetut tietueet.
 
 ## Reseptiarvioiden erät, 24.10.2026
 
-Kolmen erän ravintoarviot, Fineli-tietueiden ID:t ja yksikköoletukset on
+Neljän erän ravintoarviot, Fineli-tietueiden ID:t ja yksikköoletukset on
 kirjattu seuraaviin muistioihin:
 
 - `estimates-2026-10-24.md` — erä 1, 10 reseptiä.
 - `estimates-2026-10-24-batch-2.md` — erä 2, 20 reseptiä.
 - `estimates-2026-10-24-batch-3.md` — erä 3, 10 reseptiä.
+- `estimates-2026-10-24-batch-4.md` — erä 4, 10 reseptiä.
 
 Luvut ovat toimituksellisia arvioita; niitä ei tuoteta julkaisun buildissa
-automaattisesti. Kokonaishiilihydraatit on lisätty yhteensä 40 reseptille
+automaattisesti. Kokonaishiilihydraatit on lisätty yhteensä 50 reseptille
 Finelin CHO-, FIBT- ja POLYL-komponenttien pohjalta. Lähdepoiminta on
 `food-records.json`-tiedostossa, ja Fineli-attribuutio sekä lisenssi on
 kirjattu jokaiseen muistioon.

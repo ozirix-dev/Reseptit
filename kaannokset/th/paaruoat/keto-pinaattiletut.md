@@ -11,6 +11,10 @@ main_ingredient:
 cooking_method:
   - pannu
 servings: 3
+carbs_net_per_serving_g: 2.08
+carbs_total_per_serving_g: 3.71
+protein_per_serving_g: 11.82
+fat_per_serving_g: 19.93
 time_total_min: 25
 difficulty: ง่าย
 tags:

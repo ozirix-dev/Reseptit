@@ -4,7 +4,7 @@ import { createHash } from "node:crypto";
 import path from "node:path";
 
 // Include the loader/schema dependencies as well as calculation code and data.
-export const inputPaths = ["reseptit", "site/scripts", "site/src", "site/package.json", "site/package-lock.json", "docs/nutrition/food-records.json", "docs/nutrition/estimates-2026-10-24.md", "docs/nutrition/estimates-2026-10-24-batch-2.md", "docs/nutrition/estimates-2026-10-24-batch-3.md"];
+export const inputPaths = ["reseptit", "site/scripts", "site/src", "site/package.json", "site/package-lock.json", "docs/nutrition/food-records.json", "docs/nutrition/estimates-2026-10-24.md", "docs/nutrition/estimates-2026-10-24-batch-2.md", "docs/nutrition/estimates-2026-10-24-batch-3.md", "docs/nutrition/estimates-2026-10-24-batch-4.md"];
 export async function inputHash(file: string): Promise<string | null> {
   try { return createHash("sha256").update((await readFile(file, "utf8")).replaceAll("\r\n", "\n")).digest("hex"); }
   catch (error) { if ((error as NodeJS.ErrnoException).code === "ENOENT") return null; throw error; }

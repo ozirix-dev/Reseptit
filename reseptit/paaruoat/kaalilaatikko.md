@@ -13,6 +13,10 @@ cooking_method:
   - uuni
   - haudutus
 servings: 6
+carbs_net_per_serving_g: 9.48
+carbs_total_per_serving_g: 13.40
+protein_per_serving_g: 20.85
+fat_per_serving_g: 30.59
 time_total_min: 110
 difficulty: helppo
 tags:
