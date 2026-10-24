@@ -5,10 +5,11 @@ url_slug: keto-kauralesesampylat
 category: leivonnainen
 language: th
 diet_class: keto
-carbs_net_per_serving_g: 3.5
-protein_per_serving_g: 9
-fat_per_serving_g: 12
+carbs_net_per_serving_g: 3.19
+protein_per_serving_g: 8.98
+fat_per_serving_g: 12.41
 servings: 8
+carbs_total_per_serving_g: 6.77
 main_ingredient:
   - kauralese
   - raejuusto
@@ -30,38 +31,38 @@ image:
   height: 1053
 ingredients:
   - amount: 3
-    unit: ""
+    unit: ฟอง
     item: ไข่
   - amount: 200
     unit: g
-    item: คอทเทจชีส
+    item: "คอตเทจชีส ไขมัน 2–5%"
     note: "เลือกชนิดไม่ปรุงรส"
   - amount: 60
     unit: g
-    item: แป้งอัลมอนด์
+    item: "อัลมอนด์มีล"
   - amount: 25
     unit: g
     item: รำข้าวโอ๊ต
   - amount: 20
     unit: g
     item: ไซเลี่ยม
-  - amount: 0.5
-    unit: dl
-    item: วิปปิ้งครีม
+  - amount: 50
+    unit: g
+    item: "วิปปิ้งครีม ไขมัน 38%"
   - amount: 30
     unit: g
     item: เนย
     note: "ละลายแล้ว"
-  - amount: 2
-    unit: ช้อนชา
+  - amount: 10
+    unit: g
     item: ผงฟู
-  - amount: 0.5
-    unit: ช้อนชา
+  - amount: 3
+    unit: g
     item: เกลือ
-  - amount: null
-    unit: ""
+  - amount: 8
+    unit: g
     item: เมล็ดงา
-    note: "สำหรับโรยหน้า ใส่หรือไม่ก็ได้"
+    note: "ปริมาณทางเลือก; ค่าทางโภชนาการรวม 8 กรัม"
 status: published
 source_language: fi
 source_recipe: reseptit/leivonnaiset/keto-kauralesesampylat.md
@@ -88,7 +89,7 @@ translation_of: keto-kauralesesampylat
 
 ## หมายเหตุ
 
-- ค่าประมาณคือคาร์โบไฮเดรตสุทธิประมาณ 3.5 กรัม โปรตีน 9 กรัม และไขมัน 12 กรัมต่อก้อน ค่าเหล่านี้เป็นค่าประมาณและแตกต่างกันตามยี่ห้อของรำข้าวโอ๊ต แป้งอัลมอนด์ และคอทเทจชีส ตรวจสอบข้อมูลบนบรรจุภัณฑ์ของผลิตภัณฑ์
+- ค่าประมาณต่อชิ้นคือคาร์โบไฮเดรตสุทธิ 3.19 กรัม คาร์โบไฮเดรตรวม 6.77 กรัม โปรตีน 8.98 กรัม และไขมัน 12.41 กรัม การคำนวณรวมงา 8 กรัม
 - รำข้าวโอ๊ตมีคาร์โบไฮเดรต ดังนั้นสูตรจึงมีข้าวโอ๊ตเพียงเล็กน้อยเท่านั้น นับคาร์โบไฮเดรตจากขนมปังนี้รวมในปริมาณคาร์โบไฮเดรตประจำวัน
 - แป้งมีความนุ่มและเหนียวเนื่องจากการบวมของไซเลี่ยม หากส่วนผสมยังหลวมเกินไปที่จะขึ้นรูปหลังจากผ่านไป 10 นาที ให้เติมไซเลี่ยมทีละช้อนชาแล้วปล่อยให้พองตัวสักครู่
 - การเตรียม พักแป้ง และอบใช้เวลาประมาณ 45 นาที จากนั้นต้องพักขนมปังให้เย็นสนิทก่อนผ่าครึ่ง ยังไม่ได้วัดเวลาพักให้เย็น จึงไม่ระบุเวลารวม

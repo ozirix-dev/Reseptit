@@ -5,11 +5,11 @@ buildiin eikä automaattista metatietojen päivitystä.
 
 Suorita `site/`-kansiossa `npm run audit:nutrition`.
 Tuloksena on `tmp/nutrition/audit.json`: kaikkien julkaistujen FI-lähteiden
-inventaariorivit ja viiden pilotin aineskohtaiset puutteet. `--snapshot`
+inventaariorivit ja kolmen keskeneräisen pilotin aineskohtaiset puutteet. `--snapshot`
 tallentaa tarkistuskierroksen tuloksen tähän hakemistoon. Auditointikuva
-päivitettiin 24.10.2026, ja neljän erän laskentamuistiot sekä
-Fineli-ruokatietueet sisältyvät nyt laskennan lähdetiivisteeseen. Uudet
-irralliset laskentamuistiot pitää lisätä lähteiden inventaarioon erikseen.
+päivitettiin 24.10.2026, ja laskentamuistiot sekä Fineli- ja AFCD-
+viiteaineistot sisältyvät lähdetiivisteeseen. Uudet irralliset
+laskentamuistiot pitää lisätä lähteiden inventaarioon erikseen.
 
 `food-records.json` sisältää vain käytetyn pienen lähdeotoksen.
 `nutrition-model.ts` erottaa lähdetietueen, ainesmäärän, tuotteen vastaavuuden,

@@ -1,6 +1,6 @@
 {
-  "sourceRevision": "850b3e35f5195a72ec239102c63398d6e56a687d",
-  "sourceWorkingTreeChanges": "M docs/nutrition/food-records.json\n M reseptit/alkuruoat/yum-woon-sen-vhh.md\n M reseptit/paaruoat/gai-yang-vhh.md\n M reseptit/paaruoat/keltainen-kanacurry-vhh.md\n M reseptit/paaruoat/khao-kha-moo-vhh.md\n M reseptit/paaruoat/khao-man-gai-vhh.md\n M reseptit/paaruoat/khao-soi-vhh-konjac.md\n M reseptit/paaruoat/larb-moo-vhh.md\n M reseptit/paaruoat/massaman-curry-kanalla-vhh.md\n M reseptit/paaruoat/moo-ping-vhh.md\n M reseptit/paaruoat/pad-kee-mao-vhh-konjac.md\n M reseptit/paaruoat/pad-kra-pao-vhh.md\n M reseptit/paaruoat/pad-see-ew-vhh-konjac.md\n M reseptit/paaruoat/pad-thai-vhh-konjac.md\n M reseptit/paaruoat/panang-curry-kanalla-vhh.md\n M reseptit/paaruoat/punainen-kanacurry-vhh.md\n M reseptit/paaruoat/thai-vihrea-curry-kanalla-vhh.md\n M reseptit/paaruoat/tom-kha-gai-vhh.md\n M reseptit/paaruoat/tom-yum-goong-vhh.md\n M site/scripts/nutrition-audit.ts",
+  "sourceRevision": "865b5cc58081f9cba3177a4489fe895578953d0a",
+  "sourceWorkingTreeChanges": "M docs/nutrition/food-records.json\n M reseptit/leivonnaiset/keto-kauralesesampylat.md\n M reseptit/paaruoat/italian-pata.md\n M reseptit/paaruoat/jauheliha-makaronilaatikko.md\n M reseptit/paaruoat/kermainen-lohipata.md\n M site/scripts/nutrition-audit.ts\n M site/scripts/nutrition-pilot.ts\n M site/scripts/nutrition-provenance.ts\n M site/scripts/translation-audit.ts\n M site/src/features/recipes/recipe-tools.tsx\n?? docs/nutrition/estimates-2026-10-24-batch-9.md\n?? tools/calculate-nutrition-batch9.py",
   "sourceInputHashes": {
     "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
     "docs/nutrition/estimates-2026-10-24-batch-2.md": "423355906d1cc88e800f647c02f313ec7eaae8bd0d543b7515336f5505e806fa",
@@ -8,9 +8,12 @@
     "docs/nutrition/estimates-2026-10-24-batch-4.md": "2a793f59d4e8b53e06187574c9e1936c12de2a98f773d5451a16e56ee9be1852",
     "docs/nutrition/estimates-2026-10-24-batch-5.md": "fc8d31961c844e8e6ad1264997e9b190d8f49b29fd5dfd26c8ecb9f0da428d05",
     "docs/nutrition/estimates-2026-10-24-batch-6.md": "f61c27e40f3d2a107f2662c3f0b5676bdaf94d923d18c2b4c722ef593b56b2cf",
+    "docs/nutrition/estimates-2026-10-24-batch-7.md": "396e17ab3c248355a253435cae954292da756d2767c0e90da37fd34d92a07917",
+    "docs/nutrition/estimates-2026-10-24-batch-8.md": "3ca06295d6573d10cb54bfc747ea382f45c2d7337104c36ddbe6a3f3dea1bf61",
+    "docs/nutrition/estimates-2026-10-24-batch-9.md": "103ca782f6d2f8e8aa0594e22008ae07ce7c9607e4126faaa97557a0d2faaa1a",
     "docs/nutrition/estimates-2026-10-24.md": "2d2458d8a65902f6e6b45a010e40202aea7e892d8bc5e2fc11876f88af2bd2f6",
     "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
-    "docs/nutrition/food-records.json": "93495758a748267f559ba0a2f1d81782a0cbbc7a7b07b8b2b8d5946b649fd3ac",
+    "docs/nutrition/food-records.json": "113e3a9024aae4bbebb434b73d7a02b79ad400745f4b9bfa35d535a1d398b74a",
     "reseptit/_mallipohjat/ateriakokonaisuus/ateriakokonaisuus_pohja.md": "1ea1e6ec5e4f9598909099c3f083179b09bedd9926a9ddc23536b2181a4e3a85",
     "reseptit/_mallipohjat/resepti/resepti_pohja.md": "8872ff8c2886ac87e550065071050b123f9e39d762a6da92b0c5165749ce4a2c",
     "reseptit/aamupalat/halloumimunakas.md": "f153038febb225c850e987258e3ab1d9e4386610b3a8091d102e1e34339668d3",
@@ -218,7 +221,7 @@
     "reseptit/jalkiruoat/vhh-omenapiirakka.md": "d198f5a67bea9d07aef7698b83e03306569ae8c5ee2dd8fcf5ba8f69a3bfe89a",
     "reseptit/jalkiruoat/vhh-raparperipiirakka.md": "4745d04f5bca1e1e104c3ecd1099c6d0f0e76e157ef464d91405583f41248c6b",
     "reseptit/leivonnaiset/keto-joulutortut.md": "8a177936ddd4f53f5b481afa02b9b50549bc0f4bf5e29d37ee10406e45076367",
-    "reseptit/leivonnaiset/keto-kauralesesampylat.md": "61039688a13aceed0c64655f1d03826d1baddcf8bd25a7fa02e54411137225e1",
+    "reseptit/leivonnaiset/keto-kauralesesampylat.md": "440af17791363cba9823f3ab38fbd4ba813ba45e3a5f468084b86d91603d46c8",
     "reseptit/leivonnaiset/keto-korvapuustit.md": "b2d641ca5b7fac94949ab22f71c7bb9c2438633faac8b371a2dacc5d1d1e92af",
     "reseptit/leivonnaiset/vhh-lihapiirakka.md": "5184f1d1c0c5179e18294171ff510c1a6d502d10ed194dc32779ed5050b8e33b",
     "reseptit/leivonnaiset/vhh-runebergintortut.md": "01408f9363ff9123f0abdb0926c2dae9c8e2b67d68c85d50e617952af212f6dd",
@@ -251,13 +254,13 @@
     "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md": "b45c566a441fc9ea5b71cef9230b8cf829c408620bb21d482f0aceae110c6644",
     "reseptit/paaruoat/hyderabadi-kanabiryani.md": "b96106ee0f5804baea46d8fff44fe72dfc0fcaadd4e751bf2db7ae24a1a6c778",
     "reseptit/paaruoat/idli-sambar.md": "9c0b75e24940dd7a399a88ec7e05bd279429f5cac9f4e3a54a8f4e960a7d14f1",
-    "reseptit/paaruoat/italian-pata.md": "c118903a31ed180cfd46bf9835eb65f85cf57df097289a587c38767f755a6900",
+    "reseptit/paaruoat/italian-pata.md": "85d33c11752a956950883ae3b39c82ffdbdb245264b02da5183d051beb4865cb",
     "reseptit/paaruoat/janssoninkiusaus-juuriselleri.md": "36e5ba80dfd6c1843c42ee11373329a0ab5b598be8c0919f2c0bb50abe33800d",
     "reseptit/paaruoat/japanilainen-curry-tofulla.md": "f1a04ad7cd859a175188940d482bd7555a822ae6f45e3b29bbfcad66303ec2d7",
     "reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md": "add5c7fd2eefb6aa7f01c98c8921d91bafe2d27f54e2dcc29895e3f1553c91de",
     "reseptit/paaruoat/jauheliha-kaalikeitto-vhh.webp": "441a4c9cb043e28d494ae22f65e9afed12f9c6f8ca4b252bed030a2fafd722be",
     "reseptit/paaruoat/jauheliha-kaalipannu.md": "5256cd419075c5d310c3e8388866c5c279de5cc9ffa51d15ac31f357e5d4d71b",
-    "reseptit/paaruoat/jauheliha-makaronilaatikko.md": "965227d5a833dc8ca5fd2f745fed8ea882aec7519e98ba2e00bcdc3c1588ed41",
+    "reseptit/paaruoat/jauheliha-makaronilaatikko.md": "29d29a7faeff8029b9700b1d21f3e14bde10bedae2988112987437eee4e98eba",
     "reseptit/paaruoat/jauhelihakastike-kesakurpitsanuudeleilla.md": "6bf98dd32402877a406837368167b1991668ebf6f2a24c2f29366b74a797faff",
     "reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md": "376944f862c141d176614a6e47d14e6222b27ea624b3701efb160e7f1227070f",
     "reseptit/paaruoat/jerk-kana.md": "d0f74c9ce4b05db7f97022e30270bcf40e7b4baad6b4239906d2063abe642ce6",
@@ -279,7 +282,7 @@
     "reseptit/paaruoat/keltainen-kanacurry-vhh.md": "8b13271f5d045eceab072e1bd10020805a1edfb3fe00f5ee79ae3736c49ef668",
     "reseptit/paaruoat/kerala-kalacurry.md": "728e94afacbbed7c437bc7e0306e5b7ba6b26addf6b54e95aaade4b8bcc30481",
     "reseptit/paaruoat/kermainen-kanasienipannu.md": "3815b871d0c75aee29cc0c4ac169cb6ae97ca41a3c7a6c9b5926268844ee470e",
-    "reseptit/paaruoat/kermainen-lohipata.md": "a1b08248995e6e82ce770cb3974ad596e7a2846f8a48db50d287c71e5a4c7f07",
+    "reseptit/paaruoat/kermainen-lohipata.md": "af5bc750a2afdc3064242464063858fef1b4fc47e8a09721c4f4f25369f1afd8",
     "reseptit/paaruoat/kesakurpitsalasagne-vhh.md": "40da2e10ce13146a3fef732bf1b8829bc650c756e38908f5487bd2346dea680b",
     "reseptit/paaruoat/keto-pinaattiletut.md": "487c846353dc5847f97b032b3c8ee55ad72cae74acaabc411ad6d6bac036114e",
     "reseptit/paaruoat/ketopizza-pofiber-pohjalla.md": "c6b50996b2e5da2969621b430aca57472a41df7f420ba2f66457366e486fc56f",
@@ -386,16 +389,16 @@
     "site/scripts/glycemic-load-pilot.ts": "aa8faf64f527ca808ab56305359e171d7c6dd19d1dad73d58f195b332c90bccc",
     "site/scripts/inventory.ts": "f10fef13e40a2bc6b63099f9708c3272b56f02e380bf6d45671aad6a59932229",
     "site/scripts/measure-images.mjs": "d41d5eeb11c31bc5e099d127d56892fe9226ff2142d90b2d52a8ef9fb604fd98",
-    "site/scripts/nutrition-audit.ts": "b8a397346ca18b3bd9cbcbd5852e914260370ed01cce042663a417ce78e02881",
+    "site/scripts/nutrition-audit.ts": "fc43ac4660a4b0607137a8ee0cc5162861d75d26bf6ad30a09b119fba5cfdbf1",
     "site/scripts/nutrition-model.ts": "534b91e093e46c3a31b8aa5f906541ad932448af5b1806f3248375d2b8e8d105",
-    "site/scripts/nutrition-pilot.ts": "89457cecaf3bec23c28e0d846c2e0a7c47a33d2c4681d1e6d5e1e6a60f9b8cb3",
-    "site/scripts/nutrition-provenance.ts": "3af34b2379e4198a124209be98ab2a3b39f055bcf8cd8d4dbdadb00d07bd7065",
+    "site/scripts/nutrition-pilot.ts": "2a243c6e6b7ad504fd5ee04c3993da6576610a671d565cc3b9dc3d9aa49bb497",
+    "site/scripts/nutrition-provenance.ts": "5d2a5e3fead3263c4dbb810c48b12d82b95a52a00a8bc18e2f0989efcab9ef9a",
     "site/scripts/prerender.ts": "c7c3aeffaf1755617dddc90ce1c8001b92b8ceb6233360b027906a144de765ad",
     "site/scripts/scale-images.ts": "5c2dd261bf4d71ea403907232697fd57316e47c9f2060f9285d0f35c792df0fe",
     "site/scripts/semantic-terms.ts": "7106b37388446f7ee8f27c949a32abd561e7adb95a4acbc15917f471a698faca",
     "site/scripts/seo-audit.ts": "894c30eaa580df54ee25c46c99f606ddc7f89bba1b8e4d591055eb48adbab76b",
     "site/scripts/seo-public.ts": "b630e8b24a9f756031c5a15cc003c0490d6084270f33f92a8ac38a6a1d0468e3",
-    "site/scripts/translation-audit.ts": "8716cd6d291fd48ec6722e52ff681797a6c0645a5a6ec142cb493ca5c8423c9f",
+    "site/scripts/translation-audit.ts": "3721f4066fa71e474cb96c3851e94b832e9237225754a348d6dc5580b23dd5b8",
     "site/scripts/translation-review.ts": "d2317abe5f1887c03615f17aa929ef5af7690abb54f53d5a8bb9c7f88540c1e0",
     "site/src/SeoMeta.tsx": "fb88496a8e98f308774512f66e0ffa628605eb1603f917e604755a375effbb1c",
     "site/src/content/markdown.ts": "d136364fead63daae4344846716deaa7ac048164cd642d9829bf999a0049cefd",
@@ -412,7 +415,7 @@
     "site/src/features/recipes/image-layout.ts": "9ef278eea02d2603afe2747a5eac544f38dc4fdff66b82d8b669dd22c3a69546",
     "site/src/features/recipes/recipe-i18n.ts": "f278cde77a09e6ace41cd7da53822a75c77709268b65c53ea8b3fe90ef33f267",
     "site/src/features/recipes/recipe-search.ts": "91278c92443bc19d58fffb42a8e63eb5c1be5c5172a6656847fdae03d100c849",
-    "site/src/features/recipes/recipe-tools.tsx": "fa7e2c1ac9b8c315ef99897d82ca5b4832cfc93ca254d91533c9b3996c6374b3",
+    "site/src/features/recipes/recipe-tools.tsx": "e9948567c8615c7327da00aca66435663e0958592441a0eac80e3e425babcf10",
     "site/src/features/recipes/schema.ts": "3a377f1b0ad59632ae3416eddefe5fcdf4328c0f72afd96c3b8d0d0be1098584",
     "site/src/features/recipes/servings.ts": "cb9db8b416b93acf044200b73b023bbc0683bd4ecf4bc1ee8fcbdb03301f39c6",
     "site/src/lib/content.ts": "925a820c99b40269346e3032e9de74abd9c07f4411f885191af2227c34ba1ed2",
@@ -422,15 +425,18 @@
     "site/src/styles.css": "1676fdd5ff8cf4513c045400d74b7688f992fb745081f795bfa67f0501803685",
     "site/src/types/content.ts": "8ba6ed5ea52b61eba9638b2632d397c956dd9a5a4a51daa944a71172726a94ec",
     "tools/calculate-nutrition-batch5.py": "a346f6c4cd435ba72b8a517d2931b69ff63fc226a54a573c894a162bd5959062",
-    "tools/calculate-nutrition-batch6.py": "c39ef69b032350992d600cfc8d29634c047265b6e8126f6d4c9e980421e3c606"
+    "tools/calculate-nutrition-batch6.py": "c39ef69b032350992d600cfc8d29634c047265b6e8126f6d4c9e980421e3c606",
+    "tools/calculate-nutrition-batch7.py": "965d3ec7f3a8c079823100e6ef0a70aedd773966bc1b9e2de97a54abb7cfda85",
+    "tools/calculate-nutrition-batch8.py": "f5874bbaa1a0e5751502d5908ab281ebb14616abe2418e81e728f0422122b55c",
+    "tools/calculate-nutrition-batch9.py": "ccdb89569b2e0a0d6ad6b114c59f315d759f10f694b5f034eb6272815de54a64"
   },
   "nodeVersion": "v24.22.1",
   "calculatedAt": "2026-10-24",
   "sources": 325,
   "counts": {
     "VERIFIED": 0,
-    "ESTIMATE WITH EVIDENCE": 82,
-    "INSUFFICIENT SOURCE DATA": 4,
+    "ESTIMATE WITH EVIDENCE": 86,
+    "INSUFFICIENT SOURCE DATA": 0,
     "CONFLICT REQUIRES REVIEW": 0,
     "MISSING": 239
   },
@@ -4350,54 +4356,51 @@
     {
       "recipe_id": "italian-pata",
       "source_path": "reseptit/paaruoat/italian-pata.md",
-      "source_content_hash": "c118903a31ed180cfd46bf9835eb65f85cf57df097289a587c38767f755a6900",
+      "source_content_hash": "85d33c11752a956950883ae3b39c82ffdbdb245264b02da5183d051beb4865cb",
       "values": {
-        "carbs_net_per_serving_g": null,
-        "carbs_total_per_serving_g": 7.5,
-        "protein_per_serving_g": 35,
-        "fat_per_serving_g": 32.5
+        "carbs_net_per_serving_g": 5.66,
+        "carbs_total_per_serving_g": 8.58,
+        "protein_per_serving_g": 32.07,
+        "fat_per_serving_g": 32.56
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
-      "carbohydrateDefinition": "NOT DOCUMENTED",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-9.md; tools/calculate-nutrition-batch9.py; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "carbs_net_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-9.md; tools/calculate-nutrition-batch9.py; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 500,
           "unit": "g",
-          "item": "rasvaista jauhelihaa"
+          "item": "17 % naudan jauhelihaa"
         },
         {
           "amount": 200,
           "unit": "g",
-          "item": "tomaattikastiketta tai tomaattimurskaa"
+          "item": "tomaattimurskaa"
         },
         {
           "amount": 2,
-          "unit": "tl",
+          "unit": "g",
           "item": "kuivattua oreganoa"
         },
         {
-          "amount": 1,
-          "unit": "tl",
+          "amount": 5,
+          "unit": "g",
           "item": "suolaa"
         },
         {
-          "amount": 0.5,
-          "unit": "tl",
+          "amount": 1,
+          "unit": "g",
           "item": "mustapippuria"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
-          "item": "valkosipulinkynttä",
-          "note": "lisää halutessasi maun mukaan"
+          "amount": 3.5,
+          "unit": "g",
+          "item": "valkosipulia"
         },
         {
           "amount": 400,
@@ -4405,30 +4408,24 @@
           "item": "kesäkurpitsaa"
         },
         {
-          "amount": 1,
-          "unit": "",
-          "item": "suippopaprika"
+          "amount": 120,
+          "unit": "g",
+          "item": "punainen paprika"
         },
         {
           "amount": 150,
           "unit": "g",
-          "item": "juustoraastetta",
-          "note": "esimerkiksi mozzarellaa"
+          "item": "mozzarellaraastetta"
         },
         {
-          "amount": null,
-          "unit": "",
+          "amount": 12,
+          "unit": "g",
           "item": "oliiviöljyä",
-          "note": "annoksen päälle"
+          "note": "12 g koko vuokaan; ravintoarvio käyttää tätä määrää"
         }
       ],
       "notes": "- Arvioitu kokonaisaika on noin 60 minuuttia: valmistelu, ruskistus ja vuoan kokoaminen noin 25 minuuttia, paisto 20 minuuttia ja vetäytyminen vähintään 15 minuuttia. Uuni lämpenee valmistelun aikana. Aika on työvaiheisiin perustuva arvio, ei kellotettu koekeittiötulos; salaatin valmistus ei sisälly siihen.\r\n- Ravintoarvot ovat suuntaa-antavia arvioita yhtä annosta kohti, kun reseptistä tulee neljä annosta.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "janssoninkiusaus-juuriselleri",
@@ -4646,106 +4643,98 @@
     {
       "recipe_id": "jauheliha-makaronilaatikko",
       "source_path": "reseptit/paaruoat/jauheliha-makaronilaatikko.md",
-      "source_content_hash": "965227d5a833dc8ca5fd2f745fed8ea882aec7519e98ba2e00bcdc3c1588ed41",
+      "source_content_hash": "29d29a7faeff8029b9700b1d21f3e14bde10bedae2988112987437eee4e98eba",
       "values": {
-        "carbs_net_per_serving_g": null,
-        "carbs_total_per_serving_g": 38,
-        "protein_per_serving_g": 45,
-        "fat_per_serving_g": 35
+        "carbs_net_per_serving_g": 37.18,
+        "carbs_total_per_serving_g": 38.79,
+        "protein_per_serving_g": 47.63,
+        "fat_per_serving_g": 27.93
       },
       "servings": 8,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
-      "carbohydrateDefinition": "NOT DOCUMENTED",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-9.md; tools/calculate-nutrition-batch9.py; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "carbs_net_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-9.md; tools/calculate-nutrition-batch9.py; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 400,
           "unit": "g",
-          "item": "makaronia"
+          "item": "kuivattua makaronia"
         },
         {
           "amount": 600,
           "unit": "g",
-          "item": "vähärasvaista jauhelihaa"
+          "item": "7 % naudan jauhelihaa"
         },
         {
-          "amount": 1,
-          "unit": "",
-          "item": "sipuli",
-          "note": "pieni"
+          "amount": 70,
+          "unit": "g",
+          "item": "keltasipulia"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 13.5,
+          "unit": "g",
           "item": "öljyä"
         },
         {
           "amount": 500,
           "unit": "g",
-          "item": "raejuustoa"
+          "item": "raejuustoa, rasvaa 2–5 %"
         },
         {
           "amount": 6,
-          "unit": "",
+          "unit": "kpl",
           "item": "kananmunaa"
-        },
-        {
-          "amount": 2,
-          "unit": "dl",
-          "item": "maitoa"
-        },
-        {
-          "amount": 2,
-          "unit": "dl",
-          "item": "ruokakermaa"
         },
         {
           "amount": 200,
           "unit": "g",
-          "item": "juustoraastetta",
+          "item": "kevytmaitoa, rasvaa 1,5 %"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "ruokakermaa, rasvaa 15 %"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "raastettua emmentaljuustoa",
           "note": "munaseokseen"
         },
         {
           "amount": 100,
           "unit": "g",
-          "item": "juustoraastetta",
+          "item": "raastettua emmentaljuustoa",
           "note": "pinnalle"
         },
         {
-          "amount": 1.5,
-          "unit": "tl",
+          "amount": 3,
+          "unit": "g",
           "item": "valkosipulijauhetta"
         },
         {
           "amount": 1,
-          "unit": "tl",
+          "unit": "g",
           "item": "mustapippuria"
         },
         {
-          "amount": 1,
-          "unit": "tl",
+          "amount": 2,
+          "unit": "g",
           "item": "paprikajauhetta"
         },
         {
-          "amount": null,
-          "unit": "",
+          "amount": 6,
+          "unit": "g",
           "item": "suolaa",
           "note": "maun mukaan"
         }
       ],
       "notes": "- Maista jauhelihaseos ennen vuokaan siirtämistä ja säädä suola oman makusi mukaan.\r\n- Ravintoarvot ovat suuntaa-antavia arvioita ja vaihtelevat käytettyjen tuotteiden mukaan.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "jauhelihakastike-kesakurpitsanuudeleilla",
@@ -6321,76 +6310,75 @@
     {
       "recipe_id": "kermainen-lohipata",
       "source_path": "reseptit/paaruoat/kermainen-lohipata.md",
-      "source_content_hash": "a1b08248995e6e82ce770cb3974ad596e7a2846f8a48db50d287c71e5a4c7f07",
+      "source_content_hash": "af5bc750a2afdc3064242464063858fef1b4fc47e8a09721c4f4f25369f1afd8",
       "values": {
-        "carbs_net_per_serving_g": 6,
-        "carbs_total_per_serving_g": 8,
-        "protein_per_serving_g": 29,
-        "fat_per_serving_g": 35
+        "carbs_net_per_serving_g": 4.79,
+        "carbs_total_per_serving_g": 6.08,
+        "protein_per_serving_g": 35.85,
+        "fat_per_serving_g": 52.25
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-9.md; tools/calculate-nutrition-batch9.py; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-9.md; tools/calculate-nutrition-batch9.py; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
           "amount": 600,
           "unit": "g",
-          "item": "lohifilee"
+          "item": "lohifileetä, raakaa ja kasvatettua"
         },
         {
-          "amount": 1,
-          "unit": "",
-          "item": "sipuli",
-          "note": "pieni"
+          "amount": 70,
+          "unit": "g",
+          "item": "keltasipulia"
         },
         {
-          "amount": 2,
-          "unit": "",
-          "item": "valkosipulinkynttä"
+          "amount": 7,
+          "unit": "g",
+          "item": "valkosipulia"
         },
         {
           "amount": 200,
           "unit": "g",
-          "item": "tuorejuustoa"
+          "item": "maustamatonta tuorejuustoa, rasvaa 11 %"
         },
         {
-          "amount": 2,
-          "unit": "dl",
-          "item": "kuohukermaa"
+          "amount": 200,
+          "unit": "g",
+          "item": "kuohukermaa, rasvaa 38 %"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 14,
+          "unit": "g",
           "item": "voita"
         },
         {
-          "amount": 1,
-          "unit": "tl",
+          "amount": 5,
+          "unit": "g",
           "item": "sitruunamehua"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "Dijon-sinappia"
+          "amount": 5,
+          "unit": "g",
+          "item": "sinappia"
         },
         {
-          "amount": 1,
-          "unit": "tl",
+          "amount": 5,
+          "unit": "g",
           "item": "suolaa"
         },
         {
-          "amount": 0.5,
-          "unit": "tl",
+          "amount": 1,
+          "unit": "g",
           "item": "mustapippuria"
         },
         {
           "amount": 1,
-          "unit": "tl",
+          "unit": "g",
           "item": "kuivattua tilliä"
         },
         {
@@ -6400,11 +6388,7 @@
         }
       ],
       "notes": "- Sopii hyvin tarjoiltavaksi esimerkiksi paistetun kesäkurpitsan tai kukkakaalimuusin kanssa.\r\n- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "kesakurpitsalasagne-vhh",
@@ -14589,33 +14573,31 @@
     {
       "recipe_id": "keto-kauralesesampylat",
       "source_path": "reseptit/leivonnaiset/keto-kauralesesampylat.md",
-      "source_content_hash": "61039688a13aceed0c64655f1d03826d1baddcf8bd25a7fa02e54411137225e1",
+      "source_content_hash": "440af17791363cba9823f3ab38fbd4ba813ba45e3a5f468084b86d91603d46c8",
       "values": {
-        "carbs_net_per_serving_g": 3.5,
-        "carbs_total_per_serving_g": null,
-        "protein_per_serving_g": 9,
-        "fat_per_serving_g": 12
+        "carbs_net_per_serving_g": 3.19,
+        "carbs_total_per_serving_g": 6.77,
+        "protein_per_serving_g": 8.98,
+        "fat_per_serving_g": 12.41
       },
       "servings": 8,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-9.md; tools/calculate-nutrition-batch9.py; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "carbs_total_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-9.md; tools/calculate-nutrition-batch9.py; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 3,
-          "unit": "",
+          "unit": "kpl",
           "item": "kananmunaa"
         },
         {
           "amount": 200,
           "unit": "g",
-          "item": "raejuustoa",
+          "item": "raejuustoa, rasvaa 2–5 %",
           "note": "valitse maustamaton"
         },
         {
@@ -14634,9 +14616,9 @@
           "item": "psylliumia"
         },
         {
-          "amount": 0.5,
-          "unit": "dl",
-          "item": "kuohukermaa"
+          "amount": 50,
+          "unit": "g",
+          "item": "kuohukermaa, rasvaa 38 %"
         },
         {
           "amount": 30,
@@ -14645,29 +14627,24 @@
           "note": "sulatettuna"
         },
         {
-          "amount": 2,
-          "unit": "tl",
+          "amount": 10,
+          "unit": "g",
           "item": "leivinjauhetta"
         },
         {
-          "amount": 0.5,
-          "unit": "tl",
+          "amount": 3,
+          "unit": "g",
           "item": "suolaa"
         },
         {
-          "amount": null,
-          "unit": "",
+          "amount": 8,
+          "unit": "g",
           "item": "seesaminsiemeniä",
-          "note": "halutessasi pinnalle"
+          "note": "valinnainen määrä; ravintoarvio sisältää 8 g"
         }
       ],
-      "notes": "- Arvio on noin 3,5 g nettohiilihydraatteja, 9 g proteiinia ja 12 g rasvaa sämpylää kohti. Suuntaa-antavat arvot vaihtelevat etenkin kauraleseiden, mantelijauhon ja raejuuston tuotemerkin mukaan; tarkista tuotepakkausten tiedot.\r\n- Kauralese ei ole hiilihydraatiton, joten resepti sisältää kauraa vain pienen määrän. Annostele sämpylät osaksi omaa päivän hiilihydraattimäärää.\r\n- Taikina on pehmeä ja tahmea psylliumin turpoamisen vuoksi. Jos seos on vielä 10 minuutin jälkeen liian löysä muotoiltavaksi, lisää psylliumia teelusikallinen kerrallaan ja anna turvota muutama minuutti.\r\n- Valmistelu, taikinan turvotus ja paistaminen vievät noin 45 minuuttia. Lisäksi sämpylöiden on jäähdyttävä kokonaan ennen halkaisemista. Jäähtymisaikaa ei ole mitattu, joten kokonaisaikaa ei ilmoiteta.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "notes": "- Arvio per sämpylä on noin 3,19 g nettohiilihydraatteja, 6,77 g kokonaishiilihydraatteja, 8,98 g proteiinia ja 12,41 g rasvaa. Laskelma sisältää 8 g seesaminsiemeniä.\r\n- Kauralese ei ole hiilihydraatiton, joten resepti sisältää kauraa vain pienen määrän. Annostele sämpylät osaksi omaa päivän hiilihydraattimäärää.\r\n- Taikina on pehmeä ja tahmea psylliumin turpoamisen vuoksi. Jos seos on vielä 10 minuutin jälkeen liian löysä muotoiltavaksi, lisää psylliumia teelusikallinen kerrallaan ja anna turvota muutama minuutti.\r\n- Valmistelu, taikinan turvotus ja paistaminen vievät noin 45 minuuttia. Lisäksi sämpylöiden on jäähdyttävä kokonaan ennen halkaisemista. Jäähtymisaikaa ei ole mitattu, joten kokonaisaikaa ei ilmoiteta.",
+      "uncertainties": []
     },
     {
       "recipe_id": "keto-korvapuustit",
@@ -24061,795 +24038,6 @@
     }
   ],
   "pilots": [
-    {
-      "recipeId": "kermainen-lohipata",
-      "sourceHash": "a1b08248995e6e82ce770cb3974ad596e7a2846f8a48db50d287c71e5a4c7f07",
-      "calculatedAt": "2026-10-24",
-      "servings": 4,
-      "scope": "Unfinished ingredient-input evidence pilot; not cooked meal nutrition; no sides unless explicitly quantified",
-      "reviewerStatus": "AUTOMATED ONLY",
-      "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
-      "ingredients": [
-        {
-          "amount": 600,
-          "unit": "g",
-          "item": "lohifilee",
-          "state": "raw-edible-fillet",
-          "matchEvidence": "Conditional raw farmed Salmo salar contribution using current recipe quantity; species not confirmed by recipe",
-          "record": {
-            "id": "fineli-34255-search-snapshot-2026-10-22",
-            "name": "Lohi, filee, kasvatettu Salmo salar",
-            "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34255?component=2331&foodType=ANY&portionUnit=G",
-            "retrievedAt": "2026-10-22",
-            "licence": "THL, Fineli, CC BY 4.0; selected fields from search-indexed official record; direct fetch unavailable",
-            "state": "raw-edible-fillet",
-            "basis": "per100g-edible",
-            "carbohydrateDefinition": "EU_AVAILABLE",
-            "per100g": {
-              "kcal": 226,
-              "protein": 20,
-              "fat": 16.4,
-              "carbohydrate": 0,
-              "fibre": null,
-              "sugars": null,
-              "polyols": null
-            }
-          },
-          "edibleFraction": 1,
-          "edibleEvidence": "Conditional raw edible fillet input, Fineli record edible share 100%",
-          "retainedFraction": 1,
-          "retentionEvidence": "Input nutrient contribution only, no claim about cooked retention"
-        },
-        {
-          "amount": 1,
-          "unit": "",
-          "item": "sipuli",
-          "note": "pieni",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 2,
-          "unit": "",
-          "item": "valkosipulinkynttä",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 200,
-          "unit": "g",
-          "item": "tuorejuustoa",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 2,
-          "unit": "dl",
-          "item": "kuohukermaa",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 1,
-          "unit": "rkl",
-          "item": "voita",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 1,
-          "unit": "tl",
-          "item": "sitruunamehua",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 1,
-          "unit": "tl",
-          "item": "Dijon-sinappia",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 1,
-          "unit": "tl",
-          "item": "suolaa",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 0.5,
-          "unit": "tl",
-          "item": "mustapippuria",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 1,
-          "unit": "tl",
-          "item": "kuivattua tilliä",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 150,
-          "unit": "g",
-          "item": "pinaattia",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        }
-      ],
-      "rows": [
-        {
-          "item": "lohifilee",
-          "recordId": "fineli-34255-search-snapshot-2026-10-22",
-          "grams": 600,
-          "values": {
-            "kcal": 1356,
-            "protein": 120,
-            "fat": 98.4,
-            "carbohydrate": 0,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Unknown nutrient fibre",
-            "Unknown nutrient sugars",
-            "Unknown nutrient polyols",
-            "Unknown nutrient netCarbohydrate"
-          ]
-        },
-        {
-          "item": "sipuli",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "valkosipulinkynttä",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "tuorejuustoa",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "kuohukermaa",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "voita",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "sitruunamehua",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "Dijon-sinappia",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "suolaa",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "mustapippuria",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "kuivattua tilliä",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "pinaattia",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        }
-      ],
-      "total": {
-        "kcal": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrate": null,
-        "fibre": null,
-        "sugars": null,
-        "polyols": null,
-        "netCarbohydrate": null
-      },
-      "perServing": {
-        "kcal": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrate": null,
-        "fibre": null,
-        "sugars": null,
-        "polyols": null,
-        "netCarbohydrate": null
-      },
-      "totalCarbohydrateGrams": null,
-      "totalCarbohydratePerServingG": null,
-      "edibleInputGrams": null,
-      "omissionImpactUpperBoundPerServing": {
-        "kcal": 0,
-        "netCarbohydrate": 0,
-        "totalCarbohydrate": 0,
-        "protein": 0,
-        "fat": 0
-      },
-      "omissionWithinTolerance": true,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "source_path": "reseptit/paaruoat/kermainen-lohipata.md",
-      "uncertainties": [
-        "Salmon species/fat and edible skinless weight need confirmation",
-        "Cream cheese brand/fat missing",
-        "Cream density/fat and small onion/clove/spoon weights unknown",
-        "Vegetable side excluded from pilot; its amount is absent"
-      ],
-      "existingPerServing": {
-        "carbs_net_per_serving_g": 6,
-        "carbs_total_per_serving_g": 8,
-        "protein_per_serving_g": 29,
-        "fat_per_serving_g": 35
-      },
-      "conditionalSalmonPerServing": {
-        "kcal": 339,
-        "protein": 30,
-        "fat": 24.6,
-        "carbohydrate": 0,
-        "fibre": null,
-        "sugars": null,
-        "polyols": null,
-        "netCarbohydrate": null
-      },
-      "comparison": "Conditional salmon input protein/serving: 30 g; existing whole-dish protein/serving: 29 g. Input exceeds existing estimate; investigate species/weights/retention. Do not overwrite.",
-      "comparisonStatus": "CONFLICT REQUIRES REVIEW"
-    },
-    {
-      "recipeId": "keto-kauralesesampylat",
-      "sourceHash": "61039688a13aceed0c64655f1d03826d1baddcf8bd25a7fa02e54411137225e1",
-      "calculatedAt": "2026-10-24",
-      "servings": 8,
-      "scope": "Unfinished ingredient-input evidence pilot; not cooked meal nutrition; no sides unless explicitly quantified",
-      "reviewerStatus": "AUTOMATED ONLY",
-      "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
-      "ingredients": [
-        {
-          "amount": 3,
-          "unit": "",
-          "item": "kananmunaa",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 200,
-          "unit": "g",
-          "item": "raejuustoa",
-          "note": "valitse maustamaton",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 60,
-          "unit": "g",
-          "item": "mantelijauhoa",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 25,
-          "unit": "g",
-          "item": "kauraleseitä",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 20,
-          "unit": "g",
-          "item": "psylliumia",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 0.5,
-          "unit": "dl",
-          "item": "kuohukermaa",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 30,
-          "unit": "g",
-          "item": "voita",
-          "note": "sulatettuna",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 2,
-          "unit": "tl",
-          "item": "leivinjauhetta",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": 0.5,
-          "unit": "tl",
-          "item": "suolaa",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        },
-        {
-          "amount": null,
-          "unit": "",
-          "item": "seesaminsiemeniä",
-          "note": "halutessasi pinnalle",
-          "state": "UNRESOLVED",
-          "matchEvidence": ""
-        }
-      ],
-      "rows": [
-        {
-          "item": "kananmunaa",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "raejuustoa",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "mantelijauhoa",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "kauraleseitä",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "psylliumia",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "kuohukermaa",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "voita",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "leivinjauhetta",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "suolaa",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        },
-        {
-          "item": "seesaminsiemeniä",
-          "recordId": null,
-          "grams": null,
-          "values": {
-            "kcal": null,
-            "protein": null,
-            "fat": null,
-            "carbohydrate": null,
-            "fibre": null,
-            "sugars": null,
-            "polyols": null,
-            "netCarbohydrate": null
-          },
-          "issues": [
-            "Missing/invalid amount",
-            "Missing source reference",
-            "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
-            "Unknown edible fraction",
-            "Unknown preparation retention/loss"
-          ]
-        }
-      ],
-      "total": {
-        "kcal": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrate": null,
-        "fibre": null,
-        "sugars": null,
-        "polyols": null,
-        "netCarbohydrate": null
-      },
-      "perServing": {
-        "kcal": null,
-        "protein": null,
-        "fat": null,
-        "carbohydrate": null,
-        "fibre": null,
-        "sugars": null,
-        "polyols": null,
-        "netCarbohydrate": null
-      },
-      "totalCarbohydrateGrams": null,
-      "totalCarbohydratePerServingG": null,
-      "edibleInputGrams": null,
-      "omissionImpactUpperBoundPerServing": {
-        "kcal": 0,
-        "netCarbohydrate": 0,
-        "totalCarbohydrate": 0,
-        "protein": 0,
-        "fat": 0
-      },
-      "omissionWithinTolerance": true,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "source_path": "reseptit/leivonnaiset/keto-kauralesesampylat.md",
-      "uncertainties": [
-        "Egg edible weights missing",
-        "Cottage cheese fat, almond flour fat and psyllium product unidentified",
-        "Cream density and powder teaspoon weights missing",
-        "Optional sesame and extra psyllium quantities unspecified",
-        "Fineli oat bran record 170 identified but direct access failed; do not substitute whole oats"
-      ],
-      "existingPerServing": {
-        "carbs_net_per_serving_g": 3.5,
-        "carbs_total_per_serving_g": null,
-        "protein_per_serving_g": 9,
-        "fat_per_serving_g": 12
-      },
-      "comparison": "Full comparison blocked; no inferred totals",
-      "comparisonStatus": "INSUFFICIENT SOURCE DATA"
-    },
     {
       "recipeId": "butter-chicken",
       "sourceHash": "da247c385dd24627d43325ce12ff1b92a2c57e9b24881d58ae6f03c5d902a1f1",

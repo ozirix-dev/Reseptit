@@ -5,10 +5,11 @@ url_slug: keto-kauralesesampylat
 category: leivonnainen
 language: sv
 diet_class: keto
-carbs_net_per_serving_g: 3.5
-protein_per_serving_g: 9
-fat_per_serving_g: 12
+carbs_net_per_serving_g: 3.19
+protein_per_serving_g: 8.98
+fat_per_serving_g: 12.41
 servings: 8
+carbs_total_per_serving_g: 6.77
 main_ingredient:
   - kauralese
   - raejuusto
@@ -30,38 +31,38 @@ image:
   height: 1053
 ingredients:
   - amount: 3
-    unit: ""
+    unit: st
     item: ägg
   - amount: 200
     unit: g
-    item: keso
+    item: "keso, 2–5 % fett"
     note: "välj naturell keso"
   - amount: 60
     unit: g
-    item: mandelmjöl
+    item: "mandelmjöl"
   - amount: 25
     unit: g
     item: havrekli
   - amount: 20
     unit: g
     item: psyllium
-  - amount: 0.5
-    unit: dl
-    item: vispgrädde
+  - amount: 50
+    unit: g
+    item: "vispgrädde, 38 % fett"
   - amount: 30
     unit: g
     item: smör
     note: smält
-  - amount: 2
-    unit: tsk
+  - amount: 10
+    unit: g
     item: bakpulver
-  - amount: 0.5
-    unit: tsk
+  - amount: 3
+    unit: g
     item: salt
-  - amount: null
-    unit: ""
+  - amount: 8
+    unit: g
     item: sesamfrön
-    note: "att strö över, valfritt"
+    note: "valfri mängd; näringsvärdet inkluderar 8 g"
 status: published
 source_language: fi
 source_recipe: reseptit/leivonnaiset/keto-kauralesesampylat.md
@@ -88,7 +89,7 @@ Psyllium binder den mjuka degen, som får svälla före formning.
 
 ## Anteckningar
 
-- Uppskattningen är cirka 3,5 g nettokolhydrater, 9 g protein och 12 g fett per fralla. Värdena är ungefärliga och varierar bland annat med valet av havrekli, mandelmjöl och keso; kontrollera informationen på produktens förpackning.
+- Uppskattningen per fralla är cirka 3,19 g nettokolhydrater, 6,77 g totala kolhydrater, 8,98 g protein och 12,41 g fett. Beräkningen innehåller 8 g sesamfrön.
 - Havrekli är inte kolhydratfritt, så receptet innehåller bara en liten mängd havre. Räkna in frallorna i ditt dagliga kolhydratintag.
 - Degen är mjuk och klibbig på grund av psylliumets svullnad. Om blandningen fortfarande är för lös för att forma efter 10 minuter, tillsätt psyllium en tesked i taget och låt svälla i några minuter.
 - Förberedelser, degens svälltid och gräddning tar cirka 45 minuter. Frallorna måste sedan svalna helt innan de delas. Svalningstiden har inte mätts, så någon totaltid anges inte.

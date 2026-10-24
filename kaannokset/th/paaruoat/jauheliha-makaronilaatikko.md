@@ -7,10 +7,11 @@ language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/jauheliha-makaronilaatikko.md
 translation_of: jauheliha-makaronilaatikko
-protein_per_serving_g: 45
-carbs_total_per_serving_g: 38
-fat_per_serving_g: 35
+protein_per_serving_g: 47.63
+carbs_total_per_serving_g: 38.79
+fat_per_serving_g: 27.93
 servings: 8
+carbs_net_per_serving_g: 37.18
 main_ingredient:
   - naudanliha
   - raejuusto
@@ -30,49 +31,48 @@ image:
   height: 853
 ingredients:
   - amount: 400
-    unit: กรัม
-    item: มักกะโรนี
+    unit: g
+    item: "มักกะโรนีแห้ง"
   - amount: 600
-    unit: กรัม
-    item: เนื้อบดไขมันต่ำ
-  - amount: 1
-    unit: ""
-    item: หอมหัวใหญ่
-    note: หัวเล็ก
-  - amount: 1
-    unit: ช้อนโต๊ะ
+    unit: g
+    item: "เนื้อวัวบดไขมัน 7%"
+  - amount: 70
+    unit: g
+    item: "หอมหัวใหญ่"
+  - amount: 13.5
+    unit: g
     item: น้ำมัน
   - amount: 500
-    unit: กรัม
-    item: คอตเทจชีส
+    unit: g
+    item: "คอตเทจชีส ไขมัน 2–5%"
   - amount: 6
     unit: ฟอง
     item: ไข่ไก่
-  - amount: 2
-    unit: เดซิลิตร
-    item: นม
-  - amount: 2
-    unit: เดซิลิตร
-    item: ครีมสำหรับปรุงอาหาร
   - amount: 200
-    unit: กรัม
-    item: ชีสขูด
+    unit: g
+    item: "นมไขมัน 1.5%"
+  - amount: 200
+    unit: g
+    item: "ครีมทำอาหาร ไขมัน 15%"
+  - amount: 200
+    unit: g
+    item: "เอ็มเมนทัลชีสขูด"
     note: สำหรับผสมกับไข่
   - amount: 100
-    unit: กรัม
-    item: ชีสขูด
+    unit: g
+    item: "เอ็มเมนทัลชีสขูด"
     note: สำหรับโรยหน้า
-  - amount: 1.5
-    unit: ช้อนชา
+  - amount: 3
+    unit: g
     item: ผงกระเทียม
   - amount: 1
-    unit: ช้อนชา
+    unit: g
     item: พริกไทยดำ
-  - amount: 1
-    unit: ช้อนชา
+  - amount: 2
+    unit: g
     item: ผงปาปริกา
-  - amount: null
-    unit: ""
+  - amount: 6
+    unit: g
     item: เกลือ
     note: ปรุงตามชอบ
 status: published

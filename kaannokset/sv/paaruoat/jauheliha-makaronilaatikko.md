@@ -7,10 +7,11 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/jauheliha-makaronilaatikko.md
 translation_of: jauheliha-makaronilaatikko
-protein_per_serving_g: 45
-carbs_total_per_serving_g: 38
-fat_per_serving_g: 35
+protein_per_serving_g: 47.63
+carbs_total_per_serving_g: 38.79
+fat_per_serving_g: 27.93
 servings: 8
+carbs_net_per_serving_g: 37.18
 main_ingredient:
   - naudanliha
   - raejuusto
@@ -31,48 +32,47 @@ image:
 ingredients:
   - amount: 400
     unit: g
-    item: makaroner
+    item: "torr makaron"
   - amount: 600
     unit: g
-    item: mager nötfärs
-  - amount: 1
-    unit: ""
-    item: gul lök
-    note: liten
-  - amount: 1
-    unit: msk
+    item: "nötfärs med 7 % fett"
+  - amount: 70
+    unit: g
+    item: "gul lök"
+  - amount: 13.5
+    unit: g
     item: olja
   - amount: 500
     unit: g
-    item: keso
+    item: "keso, 2–5 % fett"
   - amount: 6
-    unit: ""
+    unit: st
     item: ägg
-  - amount: 2
-    unit: dl
-    item: mjölk
-  - amount: 2
-    unit: dl
-    item: matlagningsgrädde
   - amount: 200
     unit: g
-    item: riven ost
+    item: "lättmjölk, 1,5 %"
+  - amount: 200
+    unit: g
+    item: "matlagningsgrädde, 15 % fett"
+  - amount: 200
+    unit: g
+    item: "riven emmentalerost"
     note: till äggblandningen
   - amount: 100
     unit: g
-    item: riven ost
+    item: "riven emmentalerost"
     note: "att strö över"
-  - amount: 1.5
-    unit: tsk
+  - amount: 3
+    unit: g
     item: vitlökspulver
   - amount: 1
-    unit: tsk
+    unit: g
     item: svartpeppar
-  - amount: 1
-    unit: tsk
+  - amount: 2
+    unit: g
     item: paprikapulver
-  - amount: null
-    unit: ""
+  - amount: 6
+    unit: g
     item: salt
     note: efter smak
 status: published

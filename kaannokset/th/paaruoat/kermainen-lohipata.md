@@ -5,10 +5,10 @@ url_slug: kermainen-lohipata
 category: paaruoka
 language: th
 diet_class: keto
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 8
-protein_per_serving_g: 29
-fat_per_serving_g: 35
+carbs_net_per_serving_g: 4.79
+carbs_total_per_serving_g: 6.08
+protein_per_serving_g: 35.85
+fat_per_serving_g: 52.25
 servings: 4
 main_ingredient:
   - kala
@@ -31,37 +31,36 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: เนื้อปลาแซลมอน
-  - amount: 1
-    unit: ""
-    item: หัวหอม
-    note: เล็ก
-  - amount: 2
-    unit: ""
-    item: กระเทียม
+    item: "เนื้อปลาแซลมอนดิบจากฟาร์ม"
+  - amount: 70
+    unit: g
+    item: "หอมหัวใหญ่"
+  - amount: 7
+    unit: g
+    item: "กระเทียม"
   - amount: 200
     unit: g
-    item: ครีมชีส
-  - amount: 2
-    unit: dl
-    item: วิปปิ้งครีม
-  - amount: 1
-    unit: ช้อนโต๊ะ
+    item: "ครีมชีสธรรมชาติ ไขมัน 11%"
+  - amount: 200
+    unit: g
+    item: "วิปปิ้งครีม ไขมัน 38%"
+  - amount: 14
+    unit: g
     item: เนย
-  - amount: 1
-    unit: ช้อนชา
+  - amount: 5
+    unit: g
     item: น้ำเลมอน
-  - amount: 1
-    unit: ช้อนชา
-    item: มัสตาร์ดดีฌง
-  - amount: 1
-    unit: ช้อนชา
+  - amount: 5
+    unit: g
+    item: "มัสตาร์ด"
+  - amount: 5
+    unit: g
     item: เกลือ
-  - amount: 0.5
-    unit: ช้อนชา
+  - amount: 1
+    unit: g
     item: พริกไทยดำ
   - amount: 1
-    unit: ช้อนชา
+    unit: g
     item: ผักชีลาวแห้ง
   - amount: 150
     unit: g

@@ -175,7 +175,7 @@ test("translated macaroni bake pages have localized content, SEO metadata and ma
     assert.equal(jsonLd.inLanguage, translation.locale);
     assert.equal(jsonLd.recipeYield, "8");
     assert.equal(jsonLd.recipeInstructions.length, 7);
-    assert.equal(jsonLd.nutrition.proteinContent, "45 g");
+    assert.equal(jsonLd.nutrition.proteinContent, "47.63 g");
     assert.deepEqual(jsonLd.image, ["https://ozirix-dev.github.io/Reseptit/kuvat/paaruoat/jauheliha-makaronilaatikko.webp"]);
   }
 });
