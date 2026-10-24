@@ -24,47 +24,47 @@ image:
   alt: Yum Woon sen salad with konjac noodles, shrimp, minced pork and lime
   width: 1280
   height: 853
-carbs_net_per_serving_g: 8
-carbs_total_per_serving_g: 11
-protein_per_serving_g: 27
-fat_per_serving_g: 20
+carbs_net_per_serving_g: 3.15
+carbs_total_per_serving_g: 7.88
+protein_per_serving_g: 18.98
+fat_per_serving_g: 9.23
 ingredients:
   - amount: 400
     unit: g
-    item: drained konjac noodles
+    item: "KoRo prepared konjac noodles"
   - amount: 200
     unit: g
     item: ground pork
   - amount: 200
     unit: g
     item: peeled shrimps
-  - amount: 1
-    unit: piece
+  - amount: 125
+    unit: g
     item: tomato
     note: "cut into wedges"
-  - amount: 0.5
-    unit: piece
+  - amount: 40
+    unit: g
     item: red onion
     note: in thin slices
-  - amount: 2
-    unit: tbsp
-    item: fish sauce
-  - amount: 3
-    unit: tbsp
+  - amount: 30
+    unit: g
+    item: "Squid Brand fish sauce"
+  - amount: 45
+    unit: g
     item: lime juice
-  - amount: 1
-    unit: tsp
-    item: erythritol
-  - amount: 1
-    unit: piece
+  - amount: 4
+    unit: g
+    item: "Foodin erythritol"
+  - amount: 5
+    unit: g
     item: red chili
     note: "finely chopped"
-  - amount: 2
-    unit: tbsp
+  - amount: 6
+    unit: g
     item: fresh coriander
     note: "finely chopped"
-  - amount: 1
-    unit: tbsp
+  - amount: 13.5
+    unit: g
     item: neutral oil
   - amount: 40
     unit: g

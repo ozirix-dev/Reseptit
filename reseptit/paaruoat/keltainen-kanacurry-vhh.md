@@ -17,19 +17,19 @@ image:
   alt: Keltainen thaimaalainen kanacurry kookosmaidolla ja kukkakaalin paloilla
   width: 1280
   height: 853
-carbs_net_per_serving_g: 11
-carbs_total_per_serving_g: 14
-protein_per_serving_g: 31
-fat_per_serving_g: 34
+carbs_net_per_serving_g: 7.74
+carbs_total_per_serving_g: 11.79
+protein_per_serving_g: 33.08
+fat_per_serving_g: 22.78
 ingredients:
   - {amount: 600, unit: g, item: broilerin reisilihaa, note: suupaloiksi leikattuna}
-  - {amount: 400, unit: ml, item: täysrasvaista kookosmaitoa}
-  - {amount: 2, unit: rkl, item: keltaista currytahnaa, note: tarkista hiilihydraatit}
+  - {amount: 400, unit: g, item: täysrasvaista kookosmaitoa}
+  - {amount: 30, unit: g, item: "Mae Ploy -keltaista currytahnaa", note: tarkista hiilihydraatit}
   - {amount: 400, unit: g, item: kukkakaalia, note: pieninä kukintoina}
-  - {amount: 1, unit: kpl, item: pientä sipulia, note: viipaloituna}
-  - {amount: 1, unit: rkl, item: kalakastiketta}
-  - {amount: 0.5, unit: tl, item: kurkumaa}
-  - {amount: 1, unit: tl, item: erytritolia, note: valinnainen}
+  - {amount: 70, unit: g, item: pientä sipulia, note: viipaloituna}
+  - {amount: 15, unit: g, item: "Squid Brand -kalakastiketta"}
+  - {amount: 1.5, unit: g, item: kurkumaa}
+  - {amount: 4, unit: g, item: "Foodin-erytritolia", note: valinnainen}
   - {amount: 10, unit: g, item: kookosöljyä}
   - {amount: 5, unit: g, item: tuoretta korianteria, note: tarjoiluun}
 translation_languages:

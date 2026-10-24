@@ -23,10 +23,10 @@ image:
   alt: Khao man gai-rätt med kokt kyckling, blomkålsris, gurka och ingefärssås
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 35
-fat_per_serving_g: 24
+carbs_net_per_serving_g: 6.75
+carbs_total_per_serving_g: 11.16
+protein_per_serving_g: 38.57
+fat_per_serving_g: 6.0
 ingredients:
   - amount: 700
     unit: g
@@ -35,31 +35,31 @@ ingredients:
   - amount: 700
     unit: g
     item: blomkålsris
-  - amount: 1
-    unit: l
+  - amount: 1000
+    unit: g
     item: vatten
-  - amount: 1
-    unit: msk
+  - amount: 15
+    unit: g
     item: osaltad kycklingbuljong eller kycklingfond
-  - amount: 1
-    unit: st
+  - amount: 200
+    unit: g
     item: gurka
     note: skivad
   - amount: 30
     unit: g
     item: färsk ingefära
     note: riven
-  - amount: 2
-    unit: msk
-    item: osaltad sojabönpasta
-  - amount: 1
-    unit: msk
-    item: fisksås
-  - amount: 1
-    unit: msk
+  - amount: 30
+    unit: g
+    item: Healthy Boy sojabönpasta
+  - amount: 15
+    unit: g
+    item: "Squid Brand fisksås"
+  - amount: 15
+    unit: g
     item: limejuice
-  - amount: 1
-    unit: st
+  - amount: 3.5
+    unit: g
     item: vitlöksklyfta
     note: "finhackad"
   - amount: 5

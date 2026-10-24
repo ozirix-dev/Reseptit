@@ -24,48 +24,48 @@ image:
   alt: ข้าวซอยเส้นบุกในน้ำแกงกะทิ ใส่เนื้อไก่ไม่มีกระดูก หอมแดงสด และผักกาดดอง
   width: 1280
   height: 853
-carbs_net_per_serving_g: 10
-carbs_total_per_serving_g: 14
-protein_per_serving_g: 31
-fat_per_serving_g: 35
+carbs_net_per_serving_g: 6.35
+carbs_total_per_serving_g: 11.69
+protein_per_serving_g: 32.08
+fat_per_serving_g: 21.05
 ingredients:
   - amount: 600
     unit: g
     item: "ชิ้นสะโพกไก่"
     note: ไม่มีกระดูก
   - amount: 400
-    unit: ml
+    unit: g
     item: กะทิไขมันเต็ม
+  - amount: 30
+    unit: g
+    item: "พริกแกงแดง Mae Ploy"
   - amount: 2
-    unit: ช้อนโต๊ะ
-    item: น้ำพริกแกงแดง
-  - amount: 1
-    unit: ช้อนชา
+    unit: g
     item: ผงกะหรี่
-  - amount: 0.5
-    unit: ช้อนชา
+  - amount: 1.5
+    unit: g
     item: ขมิ้น
-  - amount: 5
-    unit: dl
+  - amount: 500
+    unit: g
     item: น้ำซุปไก่
   - amount: 400
     unit: g
-    item: เส้นบุก
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 1
-    unit: ช้อนโต๊ะ
+    item: "เส้นบุก KoRo แบบพร้อมรับประทาน"
+  - amount: 30
+    unit: g
+    item: "น้ำปลา Squid Brand"
+  - amount: 15
+    unit: g
     item: น้ำมะนาว
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
+  - amount: 4
+    unit: g
+    item: "อิริทริทอล Foodin"
   - amount: 100
     unit: g
     item: กะหล่ำปลีมัสตาร์ดดอง
     note: ล้างแล้ว
-  - amount: 2
-    unit: ชิ้น
+  - amount: 50
+    unit: g
     item: หอมแดง
     note: หั่นบาง ๆ
 translation_languages: []

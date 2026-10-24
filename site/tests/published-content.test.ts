@@ -223,6 +223,28 @@ test("the evidence-backed batch-six recipes expose synchronized values in all fo
   }
 });
 
+test("the eight evidence-backed Thai batch-seven recipes expose synchronized values in all four locales", () => {
+  const expected = new Map([
+    ["yum-woon-sen-vhh", [3.15, 7.88, 18.98, 9.23]],
+    ["gai-yang-vhh", [5.78, 10.45, 45.17, 35.05]],
+    ["keltainen-kanacurry-vhh", [7.74, 11.79, 33.08, 22.78]],
+    ["khao-kha-moo-vhh", [9.93, 16.87, 49.8, 38.91]],
+    ["khao-man-gai-vhh", [6.75, 11.16, 38.57, 6]],
+    ["khao-soi-vhh-konjac", [6.35, 11.69, 32.08, 21.05]],
+    ["larb-moo-vhh", [6.82, 9.61, 33.83, 16.13]],
+    ["massaman-curry-kanalla-vhh", [12.8, 20.38, 37.66, 24.85]],
+  ]);
+  const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
+  assert.equal(recipes.length, expected.size * 4);
+  for (const recipe of recipes) {
+    assert.deepEqual(
+      [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],
+      expected.get(recipe.recipeId),
+      `${recipe.recipeId}/${recipe.locale}`,
+    );
+  }
+});
+
 test("the twenty Chinese recipes are published in Finnish with their image assets", async () => {
   const expectedIds = [
     "baozi", "char-siu", "chow-mein", "congee-riisipuuro", "dan-dan-nuudelit", "dim-sum",

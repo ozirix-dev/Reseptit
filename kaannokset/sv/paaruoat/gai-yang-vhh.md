@@ -26,37 +26,37 @@ image:
   alt: Gai yang grillad kyckling på gyllenbrun yta, örtsås och blomkålsris
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 38
-fat_per_serving_g: 27
+carbs_net_per_serving_g: 5.78
+carbs_total_per_serving_g: 10.45
+protein_per_serving_g: 45.17
+fat_per_serving_g: 35.05
 ingredients:
   - amount: 900
     unit: g
-    item: kycklinglårbitar
-    note: "med skinn och ben"
-  - amount: 3
-    unit: msk
-    item: fisksås
-  - amount: 1
-    unit: msk
+    item: rått kycklinglårkött
+    note: "utan ben, med skinn"
+  - amount: 45
+    unit: g
+    item: "Squid Brand fisksås"
+  - amount: 15
+    unit: g
     item: sojasås
-  - amount: 3
-    unit: st
+  - amount: 10.5
+    unit: g
     item: en vitlöksklyfta
     note: krossad
   - amount: 20
     unit: g
     item: färsk koriander
     note: stjälkar och blad hackade
-  - amount: 1
-    unit: tsk
+  - amount: 2
+    unit: g
     item: mald vitpeppar
-  - amount: 1
-    unit: tsk
-    item: erytritol
-  - amount: 1
-    unit: msk
+  - amount: 4
+    unit: g
+    item: "Foodin erytritol"
+  - amount: 15
+    unit: g
     item: limejuice
   - amount: 500
     unit: g

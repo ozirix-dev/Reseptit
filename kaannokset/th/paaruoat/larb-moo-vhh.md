@@ -24,33 +24,33 @@ image:
   alt: ลาบหมูสมุนไพร มะนาว พริก กะหล่ำปลี และแตงกวา
   width: 1280
   height: 853
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 9
-protein_per_serving_g: 29
-fat_per_serving_g: 25
+carbs_net_per_serving_g: 6.82
+carbs_total_per_serving_g: 9.61
+protein_per_serving_g: 33.83
+fat_per_serving_g: 16.13
 ingredients:
   - amount: 600
     unit: g
     item: หมูบด
-  - amount: 2
-    unit: ช้อนโต๊ะ
+  - amount: 30
+    unit: g
     item: น้ำ
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 3
-    unit: ช้อนโต๊ะ
+  - amount: 30
+    unit: g
+    item: "น้ำปลา Squid Brand"
+  - amount: 45
+    unit: g
     item: น้ำมะนาว
-  - amount: 1
-    unit: ช้อนชา
+  - amount: 2
+    unit: g
     item: พริกป่น
     note: "หรือปรุงตามชอบ"
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 9
+    unit: g
     item: ผงข้าวคั่ว
     note: ไม่จำเป็น
-  - amount: 2
-    unit: ชิ้น
+  - amount: 50
+    unit: g
     item: หอมแดง
     note: หั่นบาง ๆ
   - amount: 15
@@ -63,8 +63,8 @@ ingredients:
     unit: g
     item: กะหล่ำปลีขาว
     note: "หั่นเป็นเสี้ยวสำหรับเสิร์ฟ"
-  - amount: 1
-    unit: ชิ้น
+  - amount: 200
+    unit: g
     item: แตงกวา
     note: หั่นบาง ๆ สำหรับเสิร์ฟ
 translation_languages: []

@@ -24,45 +24,45 @@ image:
   alt: หมูตุ๋นสไตล์เขาคาหมู ไข่ ผักใบเขียว และข้าวดอกกะหล่ำ
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 40
-fat_per_serving_g: 43
+carbs_net_per_serving_g: 9.93
+carbs_total_per_serving_g: 16.87
+protein_per_serving_g: 49.8
+fat_per_serving_g: 38.91
 ingredients:
   - amount: 800
     unit: g
     item: ไหล่หมู
     note: เป็นชิ้นใหญ่
-  - amount: 1
-    unit: l
+  - amount: 1000
+    unit: g
     item: น้ำซุปไก่
-  - amount: 2
-    unit: ช้อนโต๊ะ
+  - amount: 30
+    unit: g
     item: ซีอิ๊วขาว
-  - amount: 1
-    unit: ช้อนโต๊ะ
-    item: ซีอิ๊วดำ
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 15
+    unit: g
+    item: "น้ำปลา Squid Brand"
+  - amount: 15
+    unit: g
     item: น้ำปลา
-  - amount: 1
-    unit: ช้อนโต๊ะ
-    item: อิริทริทอล
-  - amount: 1
-    unit: ช้อนชา
-    item: ผงพะโล้จีน
-  - amount: 1
-    unit: ชิ้น
-    item: ไม้อบเชย
+  - amount: 12
+    unit: g
+    item: "อิริทริทอล Foodin"
   - amount: 2
-    unit: ชิ้น
+    unit: g
+    item: ผงพะโล้จีน
+  - amount: 3
+    unit: g
+    item: ไม้อบเชย
+  - amount: 1
+    unit: g
     item: โป๊ยกั๊ก
-  - amount: 4
-    unit: ชิ้น
+  - amount: 14
+    unit: g
     item: กระเทียม
     note: บดขยี้
-  - amount: 4
-    unit: ชิ้น
+  - amount: 220
+    unit: g
     item: ไข่
     note: ต้มสุก
   - amount: 300

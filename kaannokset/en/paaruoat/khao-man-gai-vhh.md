@@ -24,10 +24,10 @@ image:
     ginger sauce
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 35
-fat_per_serving_g: 24
+carbs_net_per_serving_g: 6.75
+carbs_total_per_serving_g: 11.16
+protein_per_serving_g: 38.57
+fat_per_serving_g: 6.0
 ingredients:
   - amount: 700
     unit: g
@@ -36,31 +36,31 @@ ingredients:
   - amount: 700
     unit: g
     item: cauliflower rice
-  - amount: 1
-    unit: l
+  - amount: 1000
+    unit: g
     item: water
-  - amount: 1
-    unit: tbsp
+  - amount: 15
+    unit: g
     item: unsalted chicken stock or stock concentrate
-  - amount: 1
-    unit: piece
+  - amount: 200
+    unit: g
     item: cucumber
     note: sliced
   - amount: 30
     unit: g
     item: fresh ginger
     note: grated
-  - amount: 2
-    unit: tbsp
-    item: unsalted soybean paste
-  - amount: 1
-    unit: tbsp
-    item: fish sauce
-  - amount: 1
-    unit: tbsp
+  - amount: 30
+    unit: g
+    item: Healthy Boy soybean paste
+  - amount: 15
+    unit: g
+    item: "Squid Brand fish sauce"
+  - amount: 15
+    unit: g
     item: lime juice
-  - amount: 1
-    unit: piece
+  - amount: 3.5
+    unit: g
     item: clove of garlic
     note: "finely chopped"
   - amount: 5

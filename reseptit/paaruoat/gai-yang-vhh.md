@@ -17,19 +17,19 @@ image:
   alt: Gai yang -grillikanaa kullanruskealla pinnalla, yrttikastiketta ja kukkakaaliriisiä
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 38
-fat_per_serving_g: 27
+carbs_net_per_serving_g: 5.78
+carbs_total_per_serving_g: 10.45
+protein_per_serving_g: 45.17
+fat_per_serving_g: 35.05
 ingredients:
-  - {amount: 900, unit: g, item: broilerin reisipaloja, note: nahallisina ja luullisina}
-  - {amount: 3, unit: rkl, item: kalakastiketta}
-  - {amount: 1, unit: rkl, item: soijakastiketta}
-  - {amount: 3, unit: kpl, item: valkosipulinkynttä, note: murskattuna}
+  - {amount: 900, unit: g, item: broilerin reisilihaa, note: "nahallisena, luuttomana ja raakaa"}
+  - {amount: 45, unit: g, item: "Squid Brand -kalakastiketta"}
+  - {amount: 15, unit: g, item: soijakastiketta}
+  - {amount: 10.5, unit: g, item: valkosipulinkynttä, note: murskattuna}
   - {amount: 20, unit: g, item: tuoretta korianteria, note: varret ja lehdet hienonnettuna}
-  - {amount: 1, unit: tl, item: jauhettua valkopippuria}
-  - {amount: 1, unit: tl, item: erytritolia}
-  - {amount: 1, unit: rkl, item: limettimehua}
+  - {amount: 2, unit: g, item: jauhettua valkopippuria}
+  - {amount: 4, unit: g, item: "Foodin-erytritolia"}
+  - {amount: 15, unit: g, item: limettimehua}
   - {amount: 500, unit: g, item: kukkakaaliriisiä, note: tarjoiluun}
   - {amount: 200, unit: g, item: kurkkuviipaleita, note: tarjoiluun}
 translation_languages:

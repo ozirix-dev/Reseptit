@@ -24,33 +24,33 @@ image:
   alt: Larb moo fläsksallad med örter, lime, chili och kål och gurka
   width: 1280
   height: 853
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 9
-protein_per_serving_g: 29
-fat_per_serving_g: 25
+carbs_net_per_serving_g: 6.82
+carbs_total_per_serving_g: 9.61
+protein_per_serving_g: 33.83
+fat_per_serving_g: 16.13
 ingredients:
   - amount: 600
     unit: g
     item: malet fläsk
-  - amount: 2
-    unit: msk
+  - amount: 30
+    unit: g
     item: vatten
-  - amount: 2
-    unit: msk
-    item: fisksås
-  - amount: 3
-    unit: msk
+  - amount: 30
+    unit: g
+    item: "Squid Brand fisksås"
+  - amount: 45
+    unit: g
     item: limejuice
-  - amount: 1
-    unit: tsk
+  - amount: 2
+    unit: g
     item: chiliflakes
     note: eller efter smak
-  - amount: 1
-    unit: msk
+  - amount: 9
+    unit: g
     item: rostat rispulver
     note: valfritt
-  - amount: 2
-    unit: st
+  - amount: 50
+    unit: g
     item: schalottenlök
     note: skivad
   - amount: 15
@@ -63,8 +63,8 @@ ingredients:
     unit: g
     item: vitkål
     note: "i klyftor till servering"
-  - amount: 1
-    unit: st
+  - amount: 200
+    unit: g
     item: gurka
     note: skivad för servering
 translation_languages: []

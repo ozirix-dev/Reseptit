@@ -26,37 +26,37 @@ image:
   alt: Gai yang grilled chicken on a golden brown surface, herb sauce and cauliflower rice
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 38
-fat_per_serving_g: 27
+carbs_net_per_serving_g: 5.78
+carbs_total_per_serving_g: 10.45
+protein_per_serving_g: 45.17
+fat_per_serving_g: 35.05
 ingredients:
   - amount: 900
     unit: g
-    item: chicken thigh pieces
-    note: "skin-on and bone-in"
-  - amount: 3
-    unit: tbsp
-    item: fish sauce
-  - amount: 1
-    unit: tbsp
+    item: raw chicken thigh meat
+    note: "boneless and skin-on"
+  - amount: 45
+    unit: g
+    item: "Squid Brand fish sauce"
+  - amount: 15
+    unit: g
     item: soy sauce
-  - amount: 3
-    unit: piece
+  - amount: 10.5
+    unit: g
     item: a clove of garlic
     note: crushed
   - amount: 20
     unit: g
     item: fresh coriander
     note: stems and leaves chopped
-  - amount: 1
-    unit: tsp
+  - amount: 2
+    unit: g
     item: ground white pepper
-  - amount: 1
-    unit: tsp
-    item: erythritol
-  - amount: 1
-    unit: tbsp
+  - amount: 4
+    unit: g
+    item: "Foodin erythritol"
+  - amount: 15
+    unit: g
     item: lime juice
   - amount: 500
     unit: g

@@ -17,22 +17,22 @@ image:
   alt: Khao kha moo -tyylinen haudutettu porsas, kananmunaa, vihreitä kasviksia ja kukkakaaliriisiä
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 40
-fat_per_serving_g: 43
+carbs_net_per_serving_g: 9.93
+carbs_total_per_serving_g: 16.87
+protein_per_serving_g: 49.8
+fat_per_serving_g: 38.91
 ingredients:
   - {amount: 800, unit: g, item: porsaan lapaa, note: isoina paloina}
-  - {amount: 1, unit: l, item: kanalientä}
-  - {amount: 2, unit: rkl, item: vaaleaa soijakastiketta}
-  - {amount: 1, unit: rkl, item: tummaa soijakastiketta}
-  - {amount: 1, unit: rkl, item: kalakastiketta}
-  - {amount: 1, unit: rkl, item: erytritolia}
-  - {amount: 1, unit: tl, item: kiinalaista viismaustetta}
-  - {amount: 1, unit: kpl, item: kanelitanko}
-  - {amount: 2, unit: kpl, item: tähtianista}
-  - {amount: 4, unit: kpl, item: valkosipulinkynttä, note: murskattuna}
-  - {amount: 4, unit: kpl, item: kananmunaa, note: kovaksi keitettynä}
+  - {amount: 1000, unit: g, item: kanalientä}
+  - {amount: 30, unit: g, item: vaaleaa soijakastiketta}
+  - {amount: 15, unit: g, item: "Squid Brand -kalakastiketta"}
+  - {amount: 15, unit: g, item: kalakastiketta}
+  - {amount: 12, unit: g, item: "Foodin-erytritolia"}
+  - {amount: 2, unit: g, item: kiinalaista viismaustetta}
+  - {amount: 3, unit: g, item: kanelitanko}
+  - {amount: 1, unit: g, item: tähtianista}
+  - {amount: 14, unit: g, item: valkosipulinkynttä, note: murskattuna}
+  - {amount: 220, unit: g, item: kananmunaa, note: kovaksi keitettynä}
   - {amount: 300, unit: g, item: kiinankaalia tai paksoita}
   - {amount: 500, unit: g, item: kukkakaaliriisiä, note: tarjoiluun}
 translation_languages:

@@ -23,10 +23,10 @@ image:
   alt: ข้าวมันไก่กับไก่ต้ม ข้าวดอกกะหล่ำ แตงกวา และซอสขิง
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 35
-fat_per_serving_g: 24
+carbs_net_per_serving_g: 6.75
+carbs_total_per_serving_g: 11.16
+protein_per_serving_g: 38.57
+fat_per_serving_g: 6.0
 ingredients:
   - amount: 700
     unit: g
@@ -35,31 +35,31 @@ ingredients:
   - amount: 700
     unit: g
     item: ข้าวกะหล่ำดอก
-  - amount: 1
-    unit: l
+  - amount: 1000
+    unit: g
     item: น้ำ
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 15
+    unit: g
     item: น้ำสต็อกไก่ไม่ใส่เกลือหรือน้ำสต็อกเข้มข้น
-  - amount: 1
-    unit: ชิ้น
+  - amount: 200
+    unit: g
     item: แตงกวา
     note: หั่นบาง ๆ
   - amount: 30
     unit: g
     item: ขิงสด
     note: ขูด
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: เต้าเจี้ยวไม่ใส่เกลือ
-  - amount: 1
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 30
+    unit: g
+    item: เต้าเจี้ยว Healthy Boy
+  - amount: 15
+    unit: g
+    item: "น้ำปลา Squid Brand"
+  - amount: 15
+    unit: g
     item: น้ำมะนาว
-  - amount: 1
-    unit: ชิ้น
+  - amount: 3.5
+    unit: g
     item: กระเทียม
     note: "สับละเอียด"
   - amount: 5

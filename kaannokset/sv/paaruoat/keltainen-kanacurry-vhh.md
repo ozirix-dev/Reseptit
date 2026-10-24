@@ -24,39 +24,39 @@ image:
   alt: Gul thailändsk kycklingcurry med kokosmjölk och bitar av blomkål
   width: 1280
   height: 853
-carbs_net_per_serving_g: 11
-carbs_total_per_serving_g: 14
-protein_per_serving_g: 31
-fat_per_serving_g: 34
+carbs_net_per_serving_g: 7.74
+carbs_total_per_serving_g: 11.79
+protein_per_serving_g: 33.08
+fat_per_serving_g: 22.78
 ingredients:
   - amount: 600
     unit: g
     item: kycklinglårkött
     note: skär i lagom stora bitar
   - amount: 400
-    unit: ml
+    unit: g
     item: fullfet kokosmjölk
-  - amount: 2
-    unit: msk
-    item: gul currypasta
+  - amount: 30
+    unit: g
+    item: "Mae Ploy gul currypasta"
     note: kolla kolhydraterna
   - amount: 400
     unit: g
     item: blomkål
     note: "i små buketter"
-  - amount: 1
-    unit: st
+  - amount: 70
+    unit: g
     item: liten lök
     note: skivad
-  - amount: 1
-    unit: msk
-    item: fisksås
-  - amount: 0.5
-    unit: tsk
+  - amount: 15
+    unit: g
+    item: "Squid Brand fisksås"
+  - amount: 1.5
+    unit: g
     item: gurkmeja
-  - amount: 1
-    unit: tsk
-    item: erytritol
+  - amount: 4
+    unit: g
+    item: "Foodin erytritol"
     note: valfritt
   - amount: 10
     unit: g

@@ -24,39 +24,39 @@ image:
   alt: Yellow Thai chicken curry with coconut milk and pieces of cauliflower
   width: 1280
   height: 853
-carbs_net_per_serving_g: 11
-carbs_total_per_serving_g: 14
-protein_per_serving_g: 31
-fat_per_serving_g: 34
+carbs_net_per_serving_g: 7.74
+carbs_total_per_serving_g: 11.79
+protein_per_serving_g: 33.08
+fat_per_serving_g: 22.78
 ingredients:
   - amount: 600
     unit: g
     item: chicken thigh meat
     note: cut into bite-sized pieces
   - amount: 400
-    unit: ml
+    unit: g
     item: full fat coconut milk
-  - amount: 2
-    unit: tbsp
-    item: yellow curry paste
+  - amount: 30
+    unit: g
+    item: "Mae Ploy yellow curry paste"
     note: check the carbs
   - amount: 400
     unit: g
     item: cauliflower
     note: "in small florets"
-  - amount: 1
-    unit: piece
+  - amount: 70
+    unit: g
     item: small onion
     note: sliced
-  - amount: 1
-    unit: tbsp
-    item: fish sauce
-  - amount: 0.5
-    unit: tsp
+  - amount: 15
+    unit: g
+    item: "Squid Brand fish sauce"
+  - amount: 1.5
+    unit: g
     item: turmeric
-  - amount: 1
-    unit: tsp
-    item: erythritol
+  - amount: 4
+    unit: g
+    item: "Foodin erythritol"
     note: optional
   - amount: 10
     unit: g

@@ -24,39 +24,39 @@ image:
   alt: แกงไก่เหลืองกับกะทิและดอกกะหล่ำ
   width: 1280
   height: 853
-carbs_net_per_serving_g: 11
-carbs_total_per_serving_g: 14
-protein_per_serving_g: 31
-fat_per_serving_g: 34
+carbs_net_per_serving_g: 7.74
+carbs_total_per_serving_g: 11.79
+protein_per_serving_g: 33.08
+fat_per_serving_g: 22.78
 ingredients:
   - amount: 600
     unit: g
     item: "เนื้อสะโพกไก่"
     note: หั่นเป็นชิ้นขนาดพอดีคำ
   - amount: 400
-    unit: ml
+    unit: g
     item: กะทิไขมันเต็ม
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: เครื่องแกงเหลือง
+  - amount: 30
+    unit: g
+    item: "พริกแกงเหลือง Mae Ploy"
     note: ตรวจสอบคาร์โบไฮเดรต
   - amount: 400
     unit: g
     item: กะหล่ำดอก
     note: "หั่นเป็นดอกเล็ก ๆ"
-  - amount: 1
-    unit: ชิ้น
+  - amount: 70
+    unit: g
     item: หัวหอมเล็ก
     note: หั่นบาง ๆ
-  - amount: 1
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 0.5
-    unit: ช้อนชา
+  - amount: 15
+    unit: g
+    item: "น้ำปลา Squid Brand"
+  - amount: 1.5
+    unit: g
     item: ขมิ้น
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
+  - amount: 4
+    unit: g
+    item: "อิริทริทอล Foodin"
     note: ไม่จำเป็น
   - amount: 10
     unit: g

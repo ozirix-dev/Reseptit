@@ -24,47 +24,47 @@ image:
   alt: Yum Woon sen sallad med konjaknudlar, räkor, fläskfärs och lime
   width: 1280
   height: 853
-carbs_net_per_serving_g: 8
-carbs_total_per_serving_g: 11
-protein_per_serving_g: 27
-fat_per_serving_g: 20
+carbs_net_per_serving_g: 3.15
+carbs_total_per_serving_g: 7.88
+protein_per_serving_g: 18.98
+fat_per_serving_g: 9.23
 ingredients:
   - amount: 400
     unit: g
-    item: avrunna konjaknudlar
+    item: "KoRo färdigkokta konjaknudlar"
   - amount: 200
     unit: g
     item: malet fläsk
   - amount: 200
     unit: g
     item: skalade räkor
-  - amount: 1
-    unit: st
+  - amount: 125
+    unit: g
     item: tomat
     note: "skuren i klyftor"
-  - amount: 0.5
-    unit: st
+  - amount: 40
+    unit: g
     item: rödlök
     note: i tunna skivor
-  - amount: 2
-    unit: msk
-    item: fisksås
-  - amount: 3
-    unit: msk
+  - amount: 30
+    unit: g
+    item: "Squid Brand fisksås"
+  - amount: 45
+    unit: g
     item: limejuice
-  - amount: 1
-    unit: tsk
-    item: erytritol
-  - amount: 1
-    unit: st
+  - amount: 4
+    unit: g
+    item: "Foodin erytritol"
+  - amount: 5
+    unit: g
     item: röd chili
     note: "finhackad"
-  - amount: 2
-    unit: msk
+  - amount: 6
+    unit: g
     item: färsk koriander
     note: "finhackad"
-  - amount: 1
-    unit: msk
+  - amount: 13.5
+    unit: g
     item: neutral olja
   - amount: 40
     unit: g
