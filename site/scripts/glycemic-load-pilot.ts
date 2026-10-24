@@ -41,6 +41,11 @@ const expectedRecipeIds = [
   "hyderabadi-kanabiryani", "bun-cha-hanoi", "bibimbap", "chow-mein", "dan-dan-nuudelit", "goi-cuon", "hapanimela-porsas",
   "idli-sambar", "indonesialainen-bubur-sumsum", "intialainen-rava-uttapam", "intialainen-aloo-paratha",
   "indonesialainen-bubur-ayam-kanariisipuuro", "indonesialainen-nasi-goreng-aamiaisriisi", "indonesialainen-serabi-kookospannukakku", "dim-sum",
+  "yangzhou-paistettu-riisi", "lanttulaatikko-kermainen", "uunimakkara-sipulipedilla", "nakkikeitto-kukkakaalilla",
+  "amritsari-kala", "lindstrominpihvit-kaalilla", "kana-yakitori-kaalilla", "paprikainen-vhh-gulassi",
+  "kana-enchilada-kukkakaalivuoka", "nakkikastike-kukkakaalimuusi", "ropa-vieja", "karjalanpaisti-vhh",
+  "kerala-kalacurry", "kanapyorykat-tomaattikastike", "silakkapihvit-tilli-kermakastike", "kantonilainen-hoyrytetty-kala",
+  "tacokulho-nauta-avokado", "kanasalaatti-pesto-mozzarella", "sitruuna-yrttikana-parsa", "pho-bo",
 ];
 const recipeCategories: Record<string, string> = {
   "tortilla-de-patatas": "paaruoat", "vhh-lihamureke": "paaruoat", hummus: "alkuruoat",
@@ -93,6 +98,13 @@ const recipeCategories: Record<string, string> = {
   "indonesialainen-bubur-sumsum": "aamupalat", "intialainen-rava-uttapam": "aamupalat", "intialainen-aloo-paratha": "aamupalat",
   "indonesialainen-bubur-ayam-kanariisipuuro": "aamupalat", "indonesialainen-nasi-goreng-aamiaisriisi": "aamupalat",
   "indonesialainen-serabi-kookospannukakku": "aamupalat", "dim-sum": "alkuruoat",
+  "yangzhou-paistettu-riisi": "paaruoat", "lanttulaatikko-kermainen": "paaruoat", "uunimakkara-sipulipedilla": "paaruoat",
+  "nakkikeitto-kukkakaalilla": "paaruoat", "amritsari-kala": "paaruoat", "lindstrominpihvit-kaalilla": "paaruoat",
+  "kana-yakitori-kaalilla": "paaruoat", "paprikainen-vhh-gulassi": "paaruoat", "kana-enchilada-kukkakaalivuoka": "paaruoat",
+  "nakkikastike-kukkakaalimuusi": "paaruoat", "ropa-vieja": "paaruoat", "karjalanpaisti-vhh": "paaruoat",
+  "kerala-kalacurry": "paaruoat", "kanapyorykat-tomaattikastike": "paaruoat", "silakkapihvit-tilli-kermakastike": "paaruoat",
+  "kantonilainen-hoyrytetty-kala": "paaruoat", "tacokulho-nauta-avokado": "paaruoat", "kanasalaatti-pesto-mozzarella": "paaruoat",
+  "sitruuna-yrttikana-parsa": "paaruoat", "pho-bo": "paaruoat",
 };
 const recipeFileNames: Record<string, string> = { "vhh-kaalilaatikko": "kaalilaatikko" };
 
