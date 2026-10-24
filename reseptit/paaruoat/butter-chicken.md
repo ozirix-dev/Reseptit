@@ -6,10 +6,10 @@ category: paaruoka
 language: fi
 status: published
 servings: 4
-carbs_net_per_serving_g: 7.79
-carbs_total_per_serving_g: 8.45
-protein_per_serving_g: 37.43
-fat_per_serving_g: 40.44
+carbs_net_per_serving_g: 12.99
+carbs_total_per_serving_g: 13.66
+protein_per_serving_g: 37.37
+fat_per_serving_g: 36.17
 time_total_min: 60
 main_ingredient:
   - broileri

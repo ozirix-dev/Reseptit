@@ -1,12 +1,12 @@
 {
-  "sourceRevision": "1d62850fbea40c42f5088828952da87a6cbbd983",
-  "sourceWorkingTreeChanges": "M reseptit/alkuruoat/medu-vada.md\n M reseptit/alkuruoat/pani-puri.md\n M reseptit/alkuruoat/samosa.md\n M reseptit/alkuruoat/vada-pav.md\n M reseptit/jalkiruoat/gulab-jamun.md\n M reseptit/paaruoat/aloo-paratha.md\n M reseptit/paaruoat/butter-chicken.md\n M reseptit/paaruoat/chole-bhature.md\n M reseptit/paaruoat/ketopizza-pofiber-pohjalla.md\n M reseptit/paaruoat/lohikeitto-kuohukermalla.md\n M reseptit/paaruoat/uunilohi-smetanakuorrutteella.md\n M reseptit/paaruoat/vhh-lohikeitto-kukkakaalilla.md\n M site/scripts/nutrition-audit.ts\n M site/scripts/nutrition-provenance.ts\n?? docs/nutrition/estimates-2026-10-24-batch-5.md\n?? tools/calculate-nutrition-batch5.py",
+  "sourceRevision": "dcf0937a8306cc2d8f0c0dbde8656c64c7f21df9",
+  "sourceWorkingTreeChanges": "M docs/nutrition/estimates-2026-10-24-batch-5.md\n M reseptit/paaruoat/butter-chicken.md\n M tools/calculate-nutrition-batch5.py",
   "sourceInputHashes": {
     "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
     "docs/nutrition/estimates-2026-10-24-batch-2.md": "423355906d1cc88e800f647c02f313ec7eaae8bd0d543b7515336f5505e806fa",
     "docs/nutrition/estimates-2026-10-24-batch-3.md": "fe689b3d3fd8977db556c2bd27493212482ef882ad2785c497525686f35022c3",
     "docs/nutrition/estimates-2026-10-24-batch-4.md": "2a793f59d4e8b53e06187574c9e1936c12de2a98f773d5451a16e56ee9be1852",
-    "docs/nutrition/estimates-2026-10-24-batch-5.md": "aa15666267eaa2f64dd4affbf3661edfda38d13a7659b4be911dce46b8cabafb",
+    "docs/nutrition/estimates-2026-10-24-batch-5.md": "fc8d31961c844e8e6ad1264997e9b190d8f49b29fd5dfd26c8ecb9f0da428d05",
     "docs/nutrition/estimates-2026-10-24.md": "2d2458d8a65902f6e6b45a010e40202aea7e892d8bc5e2fc11876f88af2bd2f6",
     "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
     "docs/nutrition/food-records.json": "f1239843fba46828bd8bf5957052fe622d3410338e6e1d2f566bd6bbee0836d0",
@@ -230,7 +230,7 @@
     "reseptit/paaruoat/broileri-kukkakaaligratiini.md": "b9e077ee1eda5ed3158967f90d740c9bc49878d61b5125d2bc5288e6f58a1b92",
     "reseptit/paaruoat/bulgogi.md": "c0a771a61be1e38c427b66bfd6059ca29b6bf18d090ebec99c0fa89c952b4421",
     "reseptit/paaruoat/bun-cha-hanoi.md": "6f9033aea27fb32a2ba073302c4142bb5e8464d71c3e3e88a40f855c1cdc9eb1",
-    "reseptit/paaruoat/butter-chicken.md": "43e70448335c658c9ac34537a6b0b53c99b129885a8c17be9027ea0858b0f1be",
+    "reseptit/paaruoat/butter-chicken.md": "da247c385dd24627d43325ce12ff1b92a2c57e9b24881d58ae6f03c5d902a1f1",
     "reseptit/paaruoat/carnitas-salaattitacot.md": "ac57c97ea417c921d85f9a1f6bc33633f2446e51dca47f4f8acd193eb0ac270d",
     "reseptit/paaruoat/char-siu.md": "187c3566725f3b43d8c43680865f058ae6cca82e834a8ba87c2f149f537ad9dd",
     "reseptit/paaruoat/chettinad-kana.md": "64eaca30c79d8e7fe0c7dd02fef61eb0297183c981f14b9bd4ec594c7b1fd5b0",
@@ -420,7 +420,7 @@
     "site/src/router.tsx": "db19f0dc0b4258671acdbf8f7d9c0772eb8661344127b64ef301ed514cdd9305",
     "site/src/styles.css": "1676fdd5ff8cf4513c045400d74b7688f992fb745081f795bfa67f0501803685",
     "site/src/types/content.ts": "8ba6ed5ea52b61eba9638b2632d397c956dd9a5a4a51daa944a71172726a94ec",
-    "tools/calculate-nutrition-batch5.py": "126d44fb3f7956e265ade867bb47a5725c53461650b9b2aa74ce4a818e61d4c5"
+    "tools/calculate-nutrition-batch5.py": "a346f6c4cd435ba72b8a517d2931b69ff63fc226a54a573c894a162bd5959062"
   },
   "nodeVersion": "v24.22.1",
   "calculatedAt": "2026-10-24",
@@ -2582,12 +2582,12 @@
     {
       "recipe_id": "butter-chicken",
       "source_path": "reseptit/paaruoat/butter-chicken.md",
-      "source_content_hash": "43e70448335c658c9ac34537a6b0b53c99b129885a8c17be9027ea0858b0f1be",
+      "source_content_hash": "da247c385dd24627d43325ce12ff1b92a2c57e9b24881d58ae6f03c5d902a1f1",
       "values": {
-        "carbs_net_per_serving_g": 7.79,
-        "carbs_total_per_serving_g": 8.45,
-        "protein_per_serving_g": 37.43,
-        "fat_per_serving_g": 40.44
+        "carbs_net_per_serving_g": 12.99,
+        "carbs_total_per_serving_g": 13.66,
+        "protein_per_serving_g": 37.37,
+        "fat_per_serving_g": 36.17
       },
       "servings": 4,
       "status": "ESTIMATE WITH EVIDENCE",
@@ -24950,7 +24950,7 @@
     },
     {
       "recipeId": "butter-chicken",
-      "sourceHash": "43e70448335c658c9ac34537a6b0b53c99b129885a8c17be9027ea0858b0f1be",
+      "sourceHash": "da247c385dd24627d43325ce12ff1b92a2c57e9b24881d58ae6f03c5d902a1f1",
       "calculatedAt": "2026-10-24",
       "servings": 4,
       "scope": "Unfinished ingredient-input evidence pilot; not cooked meal nutrition; no sides unless explicitly quantified",
@@ -25466,10 +25466,10 @@
         "Fineli prepared dish 34422 rejected: breast and 15% cream differ from source"
       ],
       "existingPerServing": {
-        "carbs_net_per_serving_g": 7.79,
-        "carbs_total_per_serving_g": 8.45,
-        "protein_per_serving_g": 37.43,
-        "fat_per_serving_g": 40.44
+        "carbs_net_per_serving_g": 12.99,
+        "carbs_total_per_serving_g": 13.66,
+        "protein_per_serving_g": 37.37,
+        "fat_per_serving_g": 36.17
       },
       "comparison": "Full comparison blocked; no inferred totals",
       "comparisonStatus": "INSUFFICIENT SOURCE DATA"

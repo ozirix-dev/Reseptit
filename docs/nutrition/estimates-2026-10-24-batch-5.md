@@ -39,7 +39,7 @@ RKL gheetä = 27 g.
 | Samosa | 73,37 | 78,17 | 11,99 | 27,48 |
 | Vada pav | 55,00 | 63,21 | 11,64 | 14,48 |
 | Aloo paratha | 71,00 | 75,02 | 10,63 | 8,78 |
-| Butter chicken | 7,79 | 8,45 | 37,43 | 40,44 |
+| Butter chicken | 12,99 | 13,66 | 37,37 | 36,17 |
 | Chole bhature | 105,30 | 118,40 | 27,69 | 28,39 |
 | Keto-pizza Pofiber-pohjalla | 4,10 | 7,72 | 34,32 | 31,79 |
 | Lohikeitto kuohukermalla | 17,80 | 20,16 | 23,39 | 38,64 |
