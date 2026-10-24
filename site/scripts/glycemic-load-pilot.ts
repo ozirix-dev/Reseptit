@@ -19,6 +19,9 @@ const expectedRecipeIds = [
   "uunikanapasta-kesakurpitsa", "khao-kha-moo-vhh", "larb-moo-vhh", "jauhelihakastike-kesakurpitsanuudeleilla",
   "pizza-margherita", "meheva-suklaakakku", "marjakiisseli-vaniljakastikkeella",
   "pannacotta-marjakastikkeella", "caponata", "siemengranola-jogurtilla",
+  "koshari", "baozi", "marokkolainen-couscous", "pasta-alla-norma", "bulgogi",
+  "congee-riisipuuro", "tomaatti-kananmuna-wokki", "harira", "kreikkalainen-moussaka",
+  "doner-kebab", "souvlaki", "gazpacho", "spanakopita", "tabbouleh",
 ];
 const recipeCategories: Record<string, string> = {
   "tortilla-de-patatas": "paaruoat", "vhh-lihamureke": "paaruoat", hummus: "alkuruoat",
@@ -37,6 +40,11 @@ const recipeCategories: Record<string, string> = {
   "pizza-margherita": "paaruoat", "meheva-suklaakakku": "jalkiruoat",
   "marjakiisseli-vaniljakastikkeella": "jalkiruoat", "pannacotta-marjakastikkeella": "jalkiruoat",
   caponata: "alkuruoat", "siemengranola-jogurtilla": "aamupalat",
+  koshari: "paaruoat", baozi: "paaruoat", "marokkolainen-couscous": "paaruoat",
+  "pasta-alla-norma": "paaruoat", bulgogi: "paaruoat", "congee-riisipuuro": "paaruoat",
+  "tomaatti-kananmuna-wokki": "paaruoat", harira: "paaruoat", "kreikkalainen-moussaka": "paaruoat",
+  "doner-kebab": "paaruoat", souvlaki: "paaruoat", gazpacho: "alkuruoat",
+  spanakopita: "alkuruoat", tabbouleh: "alkuruoat",
 };
 const recipeFileNames: Record<string, string> = { "vhh-kaalilaatikko": "kaalilaatikko" };
 
