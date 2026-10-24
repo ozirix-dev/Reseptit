@@ -62,8 +62,8 @@ ingredients:
     unit: ชิ้น
     item: กระเทียม
     note: "สับละเอียด"
-  - amount: null
-    unit: ""
+  - amount: 5
+    unit: g
     item: ผักชีสด
     note: สำหรับการเสิร์ฟ
 translation_languages: []

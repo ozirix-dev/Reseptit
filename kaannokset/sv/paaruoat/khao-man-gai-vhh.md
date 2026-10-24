@@ -62,8 +62,8 @@ ingredients:
     unit: st
     item: vitlöksklyfta
     note: "finhackad"
-  - amount: null
-    unit: ""
+  - amount: 5
+    unit: g
     item: färsk koriander
     note: för servering
 translation_languages: []

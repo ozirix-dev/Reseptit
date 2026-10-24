@@ -63,8 +63,8 @@ ingredients:
     unit: piece
     item: clove of garlic
     note: "finely chopped"
-  - amount: null
-    unit: ""
+  - amount: 5
+    unit: g
     item: fresh coriander
     note: for serving
 translation_languages: []

@@ -32,7 +32,7 @@ ingredients:
   - {amount: 1, unit: rkl, item: kalakastiketta}
   - {amount: 1, unit: rkl, item: limettimehua}
   - {amount: 1, unit: kpl, item: valkosipulinkynsi, note: hienonnettuna}
-  - {amount: null, unit: "", item: tuoretta korianteria, note: tarjoiluun}
+  - {amount: 5, unit: g, item: tuoretta korianteria, note: tarjoiluun}
 translation_languages:
   - en
   - sv
