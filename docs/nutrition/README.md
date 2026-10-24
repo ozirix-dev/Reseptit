@@ -100,8 +100,12 @@ polyolikoostumus on epäselvä, nettoarvo jää puuttumaan.
   ilman tuotemerkkiä ja tuotteen valintaa. Sitä ei yhdistetty Fineli-poimintaan.
 - Health Canadan [Canadian Nutrient File 2026](https://open.canada.ca/data/en/dataset/1b6139bd-ed7e-4043-bc28-ff00e10f3109)
   on julkaistu Open Government Licence – Canada -lisenssillä. Lisenssi sallii
-  kopioinnin, muokkauksen ja jakelun lähdemaininnalla
+  kopioinnin, muokkauksen ja jakelun lähdemaininnalla ilman Health Canadan
+  hyväksynnän vaikutelmaa
   ([lisenssiehdot](https://open.canada.ca/en/open-government-licence-canada)).
+  Health Canadan [CNF 2026 -käyttöopas](https://open.canada.ca/data/dataset/1b6139bd-ed7e-4043-bc28-ff00e10f3109/resource/86483321-6c76-4a5f-9061-04b9a0a48a8d/download/canadian-nutrient-file_users-guide_2026.pdf)
+  pyytää huolellisuutta eikä salli ravintoarvon muuttamista; siksi tämän
+  viiteaineiston lähdearvot on säilytetty täsmälleen alkuperäisinä.
   Paikalliseen raakaviitekantaan tuotiin 1 449/5 993 tietuetta, joilta löytyvät
   eksplisiittiset lähderivit proteiinille (203), rasvalle (204), kokonaishiilihydraatille
   by difference (205), kuidulle (291), mannitolille (260) ja sorbitolille (261).
