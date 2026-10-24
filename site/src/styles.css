@@ -38,12 +38,14 @@ button { font: inherit; }
 .site-nav a[aria-current="page"] { color: var(--accent); background: #e8f0e9; font-weight: 700; }
 .site-footer { padding: 1.5rem 0; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: .9rem; }
 .page-section { padding: 2.5rem 0 3.5rem; }
-.recipe-index .page-intro { margin-bottom: 1.6rem; }
+.recipe-index .page-intro { gap: .55rem; margin-bottom: 1.1rem; }
 .recipe-index__container { width: min(1160px, calc(100% - 2rem)); }
 .eyebrow { color: var(--accent); font-size: .83rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .page-intro { display: grid; gap: .45rem; }
 .page-intro h1, .recipe-header h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 6vw, 3rem); line-height: 1.12; }
 .page-intro__description, .article-excerpt { max-width: 60ch; color: var(--ink-soft); }
+.recipe-index .page-intro__description { max-width: 58ch; font-size: clamp(1.05rem, 1.3vw, 1.2rem); line-height: 1.5; }
+.recipe-index .recipe-filters { margin-top: 0; }
 .recipe-category { display: grid; gap: .8rem; margin-top: 1.8rem; }
 .recipe-category > h2 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.45rem, 3vw, 2rem); }
 .recipe-filters { display: grid; grid-template-columns: minmax(0, 1fr); gap: .8rem; margin: 1.6rem 0 .7rem; padding: 1rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--surface); }
