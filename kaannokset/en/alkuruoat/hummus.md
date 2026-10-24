@@ -5,6 +5,10 @@ url_slug: hummus
 category: alkuruoka
 language: en
 status: published
+carbs_net_per_serving_g: 18.54
+carbs_total_per_serving_g: 25.16
+protein_per_serving_g: 11.04
+fat_per_serving_g: 15.79
 servings: 4
 time_total_min: 15
 main_ingredient:

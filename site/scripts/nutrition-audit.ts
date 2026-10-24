@@ -7,7 +7,7 @@ import { auditTranslations } from "./translation-audit";
 import { calculate, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
 const root = path.resolve(import.meta.dirname, "../..");
 const keys = ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const;
-const fineliCarbohydrateEvidence = new Set(["munakokkeli", "munakasmuffinit", "munakasrulla-pinaatti-tuorejuustolla", "munatacot-huevos-rancheros", "paprikauunimunakkaat", "shakshuka", "uunimuna-avokadot", "uunimunat-pinaatilla", "tortilla-de-patatas", "vhh-lihamureke"]);
+const fineliCarbohydrateEvidence = new Set(["munakokkeli", "munakasmuffinit", "munakasrulla-pinaatti-tuorejuustolla", "munatacot-huevos-rancheros", "paprikauunimunakkaat", "shakshuka", "uunimuna-avokadot", "uunimunat-pinaatilla", "tortilla-de-patatas", "vhh-lihamureke", "halloumimunakas", "kaakao-kookos-chia", "kurkku-oliivi-aamiaiskulho", "marjainen-chiavanukas", "paahdettu-aamiaismunakoiso", "rahka-marjakerroskulho", "savulohi-avokadokulho", "tonnikalamunakkaat-uunissa", "chili-con-carne-kukkakaaliriisi", "kana-fajita-pelti", "ratatouille", "menemen", "munakoiso-jauhelihavuoka-vhh", "kesakurpitsalasagne-vhh", "taytetyt-paprikat-vhh", "kukkakaaligratiini-pekonilla", "jauhelihakastike-kesakurpitsanuudeleilla", "vhh-kaalikaarryleet", "uunikanapasta-kesakurpitsa", "hummus"]);
 const audit = await auditTranslations();
 const calculatedAt = new Date().toISOString().slice(0, 10);
 const provenance = await nutritionProvenance(root);

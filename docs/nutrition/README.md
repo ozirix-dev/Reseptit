@@ -88,10 +88,7 @@ ainekohtaiset muunnokset, valmistussaannon ja tarkistetut tietueet.
 Kymmenelle reseptille lisättiin per-annos-arviot, joiden laskentamuistio,
 Fineli-tietueiden ID:t ja yksikköoletukset ovat tiedostossa
 `docs/nutrition/estimates-2026-10-24.md`. Luvut ovat toimituksellisia arvioita;
-niitä ei tuoteta julkaisun buildissa automaattisesti. Nyt myös
-kokonaishiilihydraatit on lisätty 10 reseptille Finelin CHO-, FIBT- ja POLYL-
-komponenttien pohjalta; lähdepoiminta on `food-records.json`-tiedostossa.
-Fineli-attribuutio ja lisenssi on kirjattu muistioon.
+niitä ei tuoteta julkaisun buildissa automaattisesti. Kokonaishiilihydraatit on lisätty yhteensä 30 reseptille Finelin CHO-, FIBT- ja POLYL-komponenttien pohjalta; lähdepoiminta on `food-records.json`-tiedostossa. Ensimmäisen erän laskentamuistio on `estimates-2026-10-24.md`, toisen erän `estimates-2026-10-24-batch-2.md`. Fineli-attribuutio ja lisenssi on kirjattu kumpaankin muistioon.
 
 ## Nykyisten lukujen luokitus
 

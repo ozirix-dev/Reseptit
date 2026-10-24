@@ -36,6 +36,10 @@ ingredients:
   - amount: null
     unit: ""
     item: makeutusainetta maun mukaan
+carbs_net_per_serving_g: 3.51
+carbs_total_per_serving_g: 8.84
+protein_per_serving_g: 5.26
+fat_per_serving_g: 6.53
 servings: 4
 time_total_min: 255
 difficulty: Helppo

@@ -5,6 +5,10 @@ url_slug: menemen
 category: paaruoka
 language: en
 status: published
+carbs_net_per_serving_g: 8.06
+carbs_total_per_serving_g: 11.47
+protein_per_serving_g: 10.77
+fat_per_serving_g: 16.32
 servings: 3
 time_total_min: 25
 main_ingredient:

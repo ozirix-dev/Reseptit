@@ -45,6 +45,10 @@ ingredients:
   - amount: null
     unit: ""
     item: suolaa ja chilihiutaleita
+carbs_net_per_serving_g: 5.78
+carbs_total_per_serving_g: 9.80
+protein_per_serving_g: 31.89
+fat_per_serving_g: 17.09
 servings: 4
 time_total_min: 35
 difficulty: Helppo

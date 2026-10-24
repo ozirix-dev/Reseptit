@@ -83,6 +83,14 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     ["shakshuka", 8.9],
     ["uunimuna-avokadot", 1.1],
     ["uunimunat-pinaatilla", 1.3],
+    ["halloumimunakas", 3.42],
+    ["kaakao-kookos-chia", 2.53],
+    ["kurkku-oliivi-aamiaiskulho", 2.07],
+    ["marjainen-chiavanukas", 3.51],
+    ["paahdettu-aamiaismunakoiso", 4.35],
+    ["rahka-marjakerroskulho", 6.32],
+    ["savulohi-avokadokulho", 0.89],
+    ["tonnikalamunakkaat-uunissa", 0.53],
   ]);
   for (const recipe of [...breakfast, ...desserts]) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
@@ -118,6 +126,13 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
   for (const recipe of recipes.filter(recipe => recipe.category === "aamupala")) {
     assert.ok(recipe.ingredients.every(ingredient => !/kananmuna/i.test(ingredient.item)), "breakfast recipes are egg-free");
   }
+  const documentedFineliNetCarbs = new Map([
+    ["marjainen-chiavanukas", 3.51], ["kaakao-kookos-chia", 2.53],
+    ["rahka-marjakerroskulho", 6.32], ["savulohi-avokadokulho", 0.89],
+    ["kurkku-oliivi-aamiaiskulho", 2.07], ["paahdettu-aamiaismunakoiso", 4.35],
+    ["uunikanapasta-kesakurpitsa", 7.10], ["chili-con-carne-kukkakaaliriisi", 17.32],
+    ["kana-fajita-pelti", 5.78],
+  ]);
   const repoDir = path.resolve(import.meta.dirname, "../..");
   for (const recipe of recipes) {
     assert.equal(recipe.locale, "fi");
@@ -125,7 +140,11 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
     const relativeImagePath = recipe.image.src.split("/kuvat/").at(-1);
     assert.ok(relativeImagePath);
     assert.ok((await readFile(path.join(repoDir, "kuvat", relativeImagePath))).byteLength > 0);
-    assert.equal(recipe.nutrition.carbsNetG, null, `${recipe.recipeId} has no invented nutrition total`);
+    assert.equal(
+      recipe.nutrition.carbsNetG,
+      documentedFineliNetCarbs.get(recipe.recipeId) ?? null,
+      `${recipe.recipeId} matches the documented Fineli estimate inventory`,
+    );
   }
 });
 

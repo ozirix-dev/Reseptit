@@ -11,6 +11,10 @@ main_ingredient:
   - pekoni
 cooking_method:
   - uuni
+carbs_net_per_serving_g: 5.65
+carbs_total_per_serving_g: 9.50
+protein_per_serving_g: 16.75
+fat_per_serving_g: 39.00
 servings: 4
 time_total_min: 45
 difficulty: ง่าย
