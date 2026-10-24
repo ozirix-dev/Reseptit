@@ -23,13 +23,16 @@ export function GlycemicLoadPilotPage() {
         <h2 id="glycemic-pilot-method">Miten arvio lasketaan?</h2>
         <p>GL = Σ (GI × imeytyvät hiilihydraatit annosta kohti) / 100. Reseptin kokonaisarvio lasketaan vain, kun hiilihydraatteja sisältävien ainesten GI-arvo vastaa sekä ruoka-ainetta että valmistustapaa.</p>
         <p>GL on laskennallinen arvio, ei mittaus aterian vaikutuksesta verensokeriin. Puuttuvaa GI-arvoa ei korvata toisen ruoka-aineen tai valmistustavan arvolla.</p>
+        <p>ISO 26642 suosittelee GI-mittauksen rajaamista ruokiin, joissa on vähintään 10 g imeytyvää hiilihydraattia tavanomaisessa annoksessa. Tässä pilotissa 40:stä hiilihydraattia sisältävästä ainesosatapahtumasta 39 jää rajan alle; ainoa rajan ylittävä on tortilla-peruna, jolle ei löytynyt valmistustapaan sopivaa, vahvan laatutason GI-arvoa. Tämä selittää lähdetiedon puutetta, eikä pieniä määriä käsitellä nollana.</p>
         <p>Fineli antaa ravintosisällön ja annosmäärän. GI-arvot haetaan erikseen ruokakohtaisista tutkimuslähteistä. Julkiseen laskelmaan hyväksytään vain vahvan laatutason arvo, jonka ruoka ja valmistustapa vastaavat reseptiä. Täydentävät tai julkaisemattomat tiedot jäävät sisäiseen vertailuun.</p>
         <ul className="glycemic-pilot__sources" aria-label="Käytetyt GI-lähteet">
           <li><a href="https://doi.org/10.1093/ajcn/nqab233">International Tables 2021</a> — ensisijainen lähde; ISO-menetelmän laatukriteerit täyttävät arvot.</li>
           <li><a href="https://glycemicindex.com/gi-search/">Sydneyn yliopiston GI-tietokanta</a> — hakemisto ja lähteiden tarkistus; julkaisemattomat tai puutteellisesti todennettavat tietueet eivät avaa julkista laskelmaa.</li>
           <li><a href="https://doi.org/10.1038/s41387-020-00145-w">Non-western foods -koonti 2021</a> — alueellisten ruokien täydentävä lähde; arvo hyväksytään vahvalle tasolle vain, jos alkuperäistutkimuksen ISO-vastaavuus voidaan varmistaa.</li>
+          <li><a href="https://committee.iso.org/standard/43633.html">ISO 26642:2010</a> — GI-mittausten menetelmä ja ruoka-annoksen hiilihydraattiraja.</li>
+          <li><a href="https://doi.org/10.1093/ajcn/76.1.5">International Tables 2002</a> — taustalähde pienen hiilihydraattimäärän ruoka-aineille, kuten kananmunalle ja juustolle.</li>
         </ul>
-        <p className="glycemic-pilot__source">Esimerkki täsmäytyksestä: vuoden 2021 taulukko raportoi kokonaisen raa’an tomaatin GI-arvoksi 22. Sitä ei käytetä tomaattimurskalle. Samoin keitetyn perunan arvo ei vastaa öljyssä haudutettua, kananmunaan sekoitettua tortilla-perunaa. GL on laskennallinen arvio, ei valmiin aterian mittaustulos.</p>
+        <p className="glycemic-pilot__source">Esimerkki täsmäytyksestä: vuoden 2021 taulukko raportoi kokonaisen raa’an tomaatin GI-arvoksi 22. Sitä ei käytetä tomaattimurskalle. Paistetusta perunasta löytyi julkaistu GI-tutkimus, mutta siinä oli vain kahdeksan osallistujaa eli alle ISO-laatutason rajan, ja valmistus poikkesi tortillasta. Myöskään keitetyn, höyrytetyn tai sipsiksi paistetun perunan arvo ei vastaa öljyssä haudutettua, kananmunaan sekoitettua tortilla-perunaa. Laajempia GI-taulukoita ei tarvita tämän pilotin lähdehaun täydentämiseksi; tarvittava lisänäyttö olisi juuri tätä valmistustapaa vastaava hyväksyttävän laatutason tutkimus.</p>
       </section>
 
       <section className="glycemic-pilot__recipes" aria-labelledby="glycemic-pilot-recipes">
