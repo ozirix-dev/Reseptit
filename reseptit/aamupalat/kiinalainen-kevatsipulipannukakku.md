@@ -15,6 +15,9 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "vehnäjauho"
+  - amount: 60
+    unit: "ml"
+    item: "vettä"
   - amount: 2
     unit: "rkl"
     item: "kevätsipuli"
@@ -42,6 +45,11 @@ image:
   alt: "Scallion-pannukakut kevätsipulilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 38.13
+carbs_total_per_serving_g: 39.99
+protein_per_serving_g: 6.37
+fat_per_serving_g: 14.29
+
 ---
 
 # Scallion-pannukakut kevätsipulilla

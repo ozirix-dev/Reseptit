@@ -42,6 +42,11 @@ image:
   alt: "Gyeran-mari-kääryleet kasviksilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 2.11
+carbs_total_per_serving_g: 2.94
+protein_per_serving_g: 7.23
+fat_per_serving_g: 18.65
+
 ---
 
 # Gyeran-mari-kääryleet kasviksilla

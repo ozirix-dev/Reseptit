@@ -18,8 +18,8 @@ ingredients:
   - amount: 1
     unit: "kpl"
     item: "tomaatti"
-  - amount: 1
-    unit: "kpl"
+  - amount: 100
+    unit: "g"
     item: "pinaatti"
   - amount: 150
     unit: "g"
@@ -42,6 +42,11 @@ image:
   alt: "Shakshuka pinaatilla ja fetalla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 3.52
+carbs_total_per_serving_g: 5.02
+protein_per_serving_g: 21.98
+fat_per_serving_g: 30.91
+
 ---
 
 # Shakshuka pinaatilla ja fetalla

@@ -18,6 +18,9 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "jogurtti"
+  - amount: 100
+    unit: "ml"
+    item: "vettä"
   - amount: 1
     unit: "kpl"
     item: "tomaatti"
@@ -42,6 +45,11 @@ image:
   alt: "Rava-uttapam kasviksilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 36.98
+carbs_total_per_serving_g: 39.31
+protein_per_serving_g: 7.94
+fat_per_serving_g: 9.46
+
 ---
 
 # Rava-uttapam kasviksilla

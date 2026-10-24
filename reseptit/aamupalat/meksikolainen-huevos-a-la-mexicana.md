@@ -21,9 +21,9 @@ ingredients:
   - amount: 1
     unit: "kpl"
     item: "sipuli"
-  - amount: 150
+  - amount: 15
     unit: "g"
-    item: "jalapeno"
+    item: "tuoretta jalapeñoa"
   - amount: 1
     unit: "rkl"
     item: "neutraalia paistoöljyä"
@@ -42,6 +42,11 @@ image:
   alt: "Huevos a la mexicana tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 3.72
+carbs_total_per_serving_g: 5.26
+protein_per_serving_g: 7.83
+fat_per_serving_g: 12.06
+
 ---
 
 # Huevos a la mexicana

@@ -15,9 +15,12 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "riisijauho"
-  - amount: 1
-    unit: "kpl"
-    item: "sieni"
+  - amount: 250
+    unit: "ml"
+    item: "vettä"
+  - amount: 100
+    unit: "g"
+    item: "tuoreita herkkusieniä"
   - amount: 150
     unit: "g"
     item: "porsaan jauheliha"
@@ -39,6 +42,11 @@ image:
   alt: "Banh cuon sienitäytteellä tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 40.31
+carbs_total_per_serving_g: 42.76
+protein_per_serving_g: 21.37
+fat_per_serving_g: 9.05
+
 ---
 
 # Banh cuon sienitäytteellä

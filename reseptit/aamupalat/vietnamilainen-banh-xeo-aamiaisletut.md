@@ -17,7 +17,7 @@ ingredients:
     item: "riisijauho"
   - amount: 200
     unit: "ml"
-    item: "kookosmaito"
+    item: "täysrasvaista kookosmaitoa"
   - amount: 150
     unit: "g"
     item: "katkarapu"
@@ -42,6 +42,11 @@ image:
   alt: "Banh xeo -rapeat aamiaisletut tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 42.55
+carbs_total_per_serving_g: 44.68
+protein_per_serving_g: 17.47
+fat_per_serving_g: 23.37
+
 ---
 
 # Banh xeo -rapeat aamiaisletut

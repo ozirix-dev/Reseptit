@@ -123,6 +123,26 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     ["thai-khao-tom-katkaravuilla", 41.20],
     ["thai-porsasjok", 39.71],
     ["valimerellinen-ricotta-persikkakulho", 8.27],
+    ["korealainen-gyeran-mari-kasviksilla", 2.11],
+    ["intialainen-besan-chilla", 22.78],
+    ["intialainen-rava-uttapam", 36.98],
+    ["kiinalainen-kevatsipulipannukakku", 38.13],
+    ["indonesialainen-bubur-ayam-kanariisipuuro", 37.32],
+    ["indonesialainen-nasi-uduk-aamiaisella", 39.57],
+    ["intialainen-aloo-paratha", 39.58],
+    ["intialainen-pesarattu-mungpavuista", 68.49],
+    ["pohjoisafrikkalainen-bissara", 28.24],
+    ["vietnamilainen-banh-mi-munalla", 30.55],
+    ["vietnamilainen-banh-xeo-aamiaisletut", 42.55],
+    ["vietnamilainen-kahvijogurtti-banaanilla", 21.39],
+    ["valimerellinen-tahinipuuro", 40.33],
+    ["valimerellinen-jogurttikulho-hunajalla", 11.19],
+    ["valimerellinen-pinaatti-fetashakshuka", 3.52],
+    ["meksikolainen-huevos-a-la-mexicana", 3.72],
+    ["meksikolainen-atole-maissipuuro", 47.4],
+    ["thai-maissifritterit", 55.41],
+    ["karibia-mango-limejogurtti", 15.12],
+    ["vietnamilainen-banh-cuon-sienilla", 40.31],
   ]);
   for (const recipe of [...breakfast, ...desserts]) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
@@ -389,6 +409,41 @@ test("batch thirteen publishes recalculated macronutrients for every recipe and 
     ["thai-porsasjok", [39.71, 40.24, 25.12, 17.38]],
     ["valimerellinen-ricotta-persikkakulho", [8.27, 10.63, 8.3, 12.79]],
     ["yrttituorejuusto-kinkkurullat", [2.76, 3.66, 8.17, 6.26]],
+  ]);
+  const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
+  assert.ok(recipes.length >= expected.size, "all batch recipes have published Finnish pages");
+  assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(expected.keys()));
+  for (const recipe of recipes) {
+    assert.deepEqual(
+      [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],
+      expected.get(recipe.recipeId),
+      `${recipe.recipeId}/${recipe.locale}`,
+    );
+  }
+});
+
+test("batch fourteen publishes recalculated macronutrients for every recipe and available translation", () => {
+  const expected = new Map([
+    ["korealainen-gyeran-mari-kasviksilla", [2.11, 2.94, 7.23, 18.65]],
+    ["intialainen-besan-chilla", [22.78, 33.86, 10.63, 9.73]],
+    ["intialainen-rava-uttapam", [36.98, 39.31, 7.94, 9.46]],
+    ["kiinalainen-kevatsipulipannukakku", [38.13, 39.99, 6.37, 14.29]],
+    ["indonesialainen-bubur-ayam-kanariisipuuro", [37.32, 37.87, 20.49, 1.07]],
+    ["indonesialainen-nasi-uduk-aamiaisella", [39.57, 40.52, 12.16, 20.98]],
+    ["intialainen-aloo-paratha", [39.58, 44.53, 7.42, 7.84]],
+    ["intialainen-pesarattu-mungpavuista", [68.49, 79.38, 21.93, 8.7]],
+    ["pohjoisafrikkalainen-bissara", [28.24, 42.55, 18.49, 8.59]],
+    ["vietnamilainen-banh-mi-munalla", [30.55, 33.19, 11.93, 12.53]],
+    ["vietnamilainen-banh-xeo-aamiaisletut", [42.55, 44.68, 17.47, 23.37]],
+    ["vietnamilainen-kahvijogurtti-banaanilla", [21.39, 22.45, 3.8, 3.68]],
+    ["valimerellinen-tahinipuuro", [40.33, 47.15, 8.13, 9.19]],
+    ["valimerellinen-jogurttikulho-hunajalla", [11.19, 12.8, 6.7, 13.36]],
+    ["valimerellinen-pinaatti-fetashakshuka", [3.52, 5.02, 21.98, 30.91]],
+    ["meksikolainen-huevos-a-la-mexicana", [3.72, 5.26, 7.83, 12.06]],
+    ["meksikolainen-atole-maissipuuro", [47.4, 49.04, 5.85, 4.21]],
+    ["thai-maissifritterit", [55.41, 59.9, 14.82, 13.59]],
+    ["karibia-mango-limejogurtti", [15.12, 18.23, 2.65, 8.5]],
+    ["vietnamilainen-banh-cuon-sienilla", [40.31, 42.76, 21.37, 9.05]],
   ]);
   const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
   assert.ok(recipes.length >= expected.size, "all batch recipes have published Finnish pages");

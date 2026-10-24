@@ -10,7 +10,7 @@ main_ingredient:
   - "kahvi"
   - "banaani"
 cooking_method:
-  - "paistaminen"
+  - "sekoittaminen"
 ingredients:
   - amount: 100
     unit: "g"
@@ -21,12 +21,9 @@ ingredients:
   - amount: 1
     unit: "kpl"
     item: "banaani"
-  - amount: 200
-    unit: "ml"
+  - amount: 30
+    unit: "g"
     item: "kondensoitu maito"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -39,6 +36,11 @@ image:
   alt: "Vietnamilainen kahvijogurtti banaanilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 21.39
+carbs_total_per_serving_g: 22.45
+protein_per_serving_g: 3.8
+fat_per_serving_g: 3.68
+
 ---
 
 # Vietnamilainen kahvijogurtti banaanilla

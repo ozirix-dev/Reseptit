@@ -14,7 +14,7 @@ cooking_method:
 ingredients:
   - amount: 100
     unit: "g"
-    item: "maissijauho"
+    item: "hienoksi jauhettua maissijauhoa"
   - amount: 200
     unit: "ml"
     item: "maito"
@@ -23,10 +23,10 @@ ingredients:
     item: "kaneli"
   - amount: 1
     unit: "tl"
-    item: "vanilja"
+    item: "vaniljauutetta"
   - amount: 700
     unit: "ml"
-    item: "maitoa tai vettä"
+    item: "vettä"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -42,6 +42,11 @@ image:
   alt: "Meksikolainen maissipuuro canelalla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 47.4
+carbs_total_per_serving_g: 49.04
+protein_per_serving_g: 5.85
+fat_per_serving_g: 4.21
+
 ---
 
 # Meksikolainen maissipuuro canelalla

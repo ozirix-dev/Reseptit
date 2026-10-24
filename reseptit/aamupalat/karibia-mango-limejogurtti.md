@@ -10,18 +10,18 @@ main_ingredient:
   - "jogurtti"
   - "lime"
 cooking_method:
-  - "paistaminen"
+  - "sekoittaminen"
 ingredients:
-  - amount: 1
-    unit: "kpl"
-    item: "mango"
+  - amount: 200
+    unit: "g"
+    item: "kuorittua mangoa"
   - amount: 100
     unit: "g"
     item: "jogurtti"
-  - amount: 1
-    unit: "kpl"
-    item: "lime"
-  - amount: 150
+  - amount: 15
+    unit: "g"
+    item: "limemehua"
+  - amount: 20
     unit: "g"
     item: "kookoshiutale"
   - amount: null
@@ -39,6 +39,11 @@ image:
   alt: "Karibialainen mango-limejogurtti tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 15.12
+carbs_total_per_serving_g: 18.23
+protein_per_serving_g: 2.65
+fat_per_serving_g: 8.5
+
 ---
 
 # Karibialainen mango-limejogurtti

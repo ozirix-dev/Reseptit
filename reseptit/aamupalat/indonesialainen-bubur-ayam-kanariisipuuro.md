@@ -14,10 +14,10 @@ cooking_method:
 ingredients:
   - amount: 100
     unit: "g"
-    item: "riisi"
+    item: "kuivaa pitkäjyväistä valkoista riisiä"
   - amount: 150
     unit: "g"
-    item: "kana"
+    item: "broilerin nahatonta rintafileetä"
   - amount: 1
     unit: "tl"
     item: "inkivääri"
@@ -26,7 +26,7 @@ ingredients:
     item: "kevätsipuli"
   - amount: 700
     unit: "ml"
-    item: "vettä tai mietoa lientä"
+    item: "vettä"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -42,6 +42,11 @@ image:
   alt: "Bubur ayam -kanariisipuuro tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 37.32
+carbs_total_per_serving_g: 37.87
+protein_per_serving_g: 20.49
+fat_per_serving_g: 1.07
+
 ---
 
 # Bubur ayam -kanariisipuuro

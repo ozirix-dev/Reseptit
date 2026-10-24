@@ -14,16 +14,16 @@ cooking_method:
 ingredients:
   - amount: 100
     unit: "g"
-    item: "riisi"
+    item: "kuivaa pitkäjyväistä valkoista riisiä"
   - amount: 200
     unit: "ml"
-    item: "kookosmaito"
+    item: "täysrasvaista kookosmaitoa"
   - amount: 2
     unit: "kpl"
     item: "kananmuna"
-  - amount: 1
-    unit: "kpl"
-    item: "kurkku"
+  - amount: 100
+    unit: "g"
+    item: "kurkkua"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -39,6 +39,11 @@ image:
   alt: "Nasi uduk -kookosriisi ja muna tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 39.57
+carbs_total_per_serving_g: 40.52
+protein_per_serving_g: 12.16
+fat_per_serving_g: 20.98
+
 ---
 
 # Nasi uduk -kookosriisi ja muna
