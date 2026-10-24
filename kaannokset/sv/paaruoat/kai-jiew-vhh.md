@@ -23,32 +23,35 @@ image:
   alt: En hög krispig kai jiew omelett med gurkskivor och örter
   width: 1280
   height: 853
-carbs_net_per_serving_g: 2
-carbs_total_per_serving_g: 2
-protein_per_serving_g: 18
-fat_per_serving_g: 23
+carbs_net_per_serving_g: 1.14
+carbs_total_per_serving_g: 1.66
+protein_per_serving_g: 14.47
+fat_per_serving_g: 16.97
 ingredients:
-  - amount: 8
-    unit: st
+  - amount: 440
+    unit: g
     item: ägg
-  - amount: 2
-    unit: tsk
-    item: fisksås
-  - amount: 2
-    unit: msk
+  - amount: 10
+    unit: g
+    item: Squid Brand fisksås
+  - amount: 27
+    unit: g
     item: neutral olja
-    note: för stekning
-  - amount: 1
-    unit: msk
+  - amount: 15
+    unit: g
     item: vatten
-  - amount: 1
-    unit: st
+  - amount: 15
+    unit: g
     item: vårlök
     note: hackad, valfritt
-  - amount: null
-    unit: ""
-    item: gurka och koriander
-    note: för servering
+  - amount: 150
+    unit: g
+    item: gurka
+    note: till servering
+  - amount: 5
+    unit: g
+    item: koriander
+    note: till servering
 translation_languages: []
 translation_status: {}
 source_language: fi

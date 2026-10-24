@@ -2229,6 +2229,28 @@
       "fibre": 0,
       "sugars": 0,
       "polyols": 100
+    },
+    "polyolsEvidence": "Foodin product label states that 100 g carbohydrates per 100 g are sugar alcohols."
+  },
+  {
+    "id": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+    "name": "Squid Brand Fish Sauce, 725 ml",
+    "sourceUrl": "https://world.openfoodfacts.org/product/13692210/fish-sauce-squid-brand",
+    "retrievedAt": "2026-10-24",
+    "licence": "Open Food Facts database, ODbL 1.0; attribute Open Food Facts contributors and retain share-alike for derived database data",
+    "state": "as sold; label ingredients anchovy extract (77%), salt, sugar",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Open Food Facts product ingredient declaration lists anchovy extract (77%), salt and sugar, with no polyol ingredients; the declared available carbohydrate with and without sugar alcohols is 3.4 g/100 g.",
+    "per100g": {
+      "kcal": 54,
+      "protein": 10,
+      "fat": 0,
+      "carbohydrate": 3.4,
+      "fibre": 0,
+      "sugars": 3.4,
+      "polyols": 0
     }
   }
 ]

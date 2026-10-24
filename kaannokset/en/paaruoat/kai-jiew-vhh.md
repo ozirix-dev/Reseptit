@@ -23,31 +23,34 @@ image:
   alt: A tall crispy kai jiew omelette with cucumber slices and herbs
   width: 1280
   height: 853
-carbs_net_per_serving_g: 2
-carbs_total_per_serving_g: 2
-protein_per_serving_g: 18
-fat_per_serving_g: 23
+carbs_net_per_serving_g: 1.14
+carbs_total_per_serving_g: 1.66
+protein_per_serving_g: 14.47
+fat_per_serving_g: 16.97
 ingredients:
-  - amount: 8
-    unit: piece
-    item: egg
-  - amount: 2
-    unit: tsp
-    item: fish sauce
-  - amount: 2
-    unit: tbsp
+  - amount: 440
+    unit: g
+    item: eggs
+  - amount: 10
+    unit: g
+    item: Squid Brand fish sauce
+  - amount: 27
+    unit: g
     item: neutral oil
-    note: for frying
-  - amount: 1
-    unit: tbsp
+  - amount: 15
+    unit: g
     item: water
-  - amount: 1
-    unit: piece
+  - amount: 15
+    unit: g
     item: spring onions
     note: chopped, optional
-  - amount: null
-    unit: ""
-    item: cucumber and coriander
+  - amount: 150
+    unit: g
+    item: cucumber
+    note: for serving
+  - amount: 5
+    unit: g
+    item: coriander
     note: for serving
 translation_languages: []
 translation_status: {}

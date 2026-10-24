@@ -10,6 +10,8 @@ export interface FoodRecord {
   componentIds?: Partial<Record<"CHO" | "FIBT" | "POLYL", number>>;
   /** True only when the polyol value is explicitly reported by this source. */
   polyolsSourceVerified?: boolean;
+  /** Source text explaining how the polyol value, including an explicit zero, was established. */
+  polyolsEvidence?: string;
   per100g: Partial<Omit<Values, "netCarbohydrate">>;
 }
 export interface IngredientInput {
@@ -87,7 +89,7 @@ export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record
     available = carbohydrate - fibre;
   }
   // Subtract only a measured, source-backed polyol value. Unknown values are not zero.
-  const polyolsVerified = record.polyolsSourceVerified === true || Boolean(record.componentValues && record.componentIds?.POLYL === 2260 && Object.hasOwn(record.componentValues, "POLYL"));
+  const polyolsVerified = (record.polyolsSourceVerified === true && Boolean(record.polyolsEvidence?.trim())) || Boolean(record.componentValues && record.componentIds?.POLYL === 2260 && Object.hasOwn(record.componentValues, "POLYL"));
   if (!polyolsVerified) {
     return { available, net: null };
   }

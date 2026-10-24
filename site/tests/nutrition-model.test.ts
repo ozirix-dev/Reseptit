@@ -7,7 +7,7 @@ import { execFileSync } from "node:child_process";
 import { nutritionProvenance, inputPaths, inputHash } from "../scripts/nutrition-provenance";
 import { salmonScenario, salmonComparison } from "../scripts/nutrition-pilot";
 import { allowedOmissionErrorPerServing, calculate, normalizeCarbohydrate, round, totalCarbohydrate, type Calculation, type FoodRecord } from "../scripts/nutrition-model";
-const food: FoodRecord = { id: "test-fixture-not-real-food", name: "Synthetic exact test fixture", sourceUrl: "https://example.org/fixture", retrievedAt: "2026-10-22", licence: "test", state: "raw", basis: "per100g-edible", carbohydrateDefinition: "EU_AVAILABLE", polyolsSourceVerified: true, per100g: { kcal: 100, protein: 10, fat: 5, carbohydrate: 20, fibre: 4, sugars: 2, polyols: 0 } };
+const food: FoodRecord = { id: "test-fixture-not-real-food", name: "Synthetic exact test fixture", sourceUrl: "https://example.org/fixture", retrievedAt: "2026-10-22", licence: "test", state: "raw", basis: "per100g-edible", carbohydrateDefinition: "EU_AVAILABLE", polyolsSourceVerified: true, polyolsEvidence: "Synthetic source explicitly reports zero polyols", per100g: { kcal: 100, protein: 10, fat: 5, carbohydrate: 20, fibre: 4, sugars: 2, polyols: 0 } };
 test("provenance covers food records, calculator and loader inputs including dirty files", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const result = await nutritionProvenance(root);
@@ -86,6 +86,9 @@ test("Foodin erythritol label reports the polyol mass and contributes zero net c
   assert.equal(result.total.netCarbohydrate, 0); assert.equal(result.totalCarbohydrateGrams, 4);
   const missingPolyolEvidence = { ...erythritol, polyolsSourceVerified: false };
   assert.equal(normalizeCarbohydrate(missingPolyolEvidence).net, null);
+  const fishSauce = records.find((record) => record.id === "off-13692210-squid-brand-fish-sauce-2026-10-24");
+  assert.ok(fishSauce?.polyolsEvidence);
+  assert.deepEqual(normalizeCarbohydrate(fishSauce), { available: 3.4, net: 3.4 });
 });
 test("volume requires ingredient evidence, kg conversion and explicit exclusions", () => {
   const input = fixture(); input.ingredients[0].unit = "dl"; input.ingredients[0].amount = 1;

@@ -163,8 +163,11 @@ tuotteen tai tietokannan nimenomaisen koostumustiedon perusteella.
 - Open Food Facts ilmoittaa tietokannan ODbL-lisenssistä,
   nimeämisvelvollisuudesta ja share-alike-ehdosta
   ([lisenssiohje](https://github.com/openfoodfacts/openfoodfacts-server/blob/main/docs/api/tutorials/license-be-on-the-legal-side.md)).
-  Tuotekohtaiset pakkaustiedot eivät myöskään vastaa yleisnimisiä reseptiaineksia
-  ilman tuotemerkkiä ja tuotteen valintaa. Sitä ei yhdistetty Fineli-poimintaan.
+  Tuotekohtaiset tiedot liitetään laskentaan vain, kun reseptissä on valittu
+  sama tuote. Erän 6 kai jiew -reseptissä kalakastike täsmennettiin Squid
+  Brand -tuotteeksi; sen 100 g ravintoarvot ovat OFF-tietueessa
+  `13692210`. Tämä tuoteviite on lisensoitu ODbL 1.0 -ehdoin, eikä sitä
+  yhdistetä Fineli-poimintaan.
 - Health Canadan [Canadian Nutrient File 2026](https://open.canada.ca/data/en/dataset/1b6139bd-ed7e-4043-bc28-ff00e10f3109)
   on julkaistu Open Government Licence – Canada -lisenssillä. Lisenssi sallii
   kopioinnin, muokkauksen ja jakelun lähdemaininnalla ilman Health Canadan
