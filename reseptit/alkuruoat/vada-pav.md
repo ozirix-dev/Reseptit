@@ -61,10 +61,10 @@ ingredients:
   - amount: 4
     unit: kpl
     item: pehmeitä sämpylöitä
-  - amount: null
-    unit: ""
+  - amount: 25
+    unit: g
     item: öljyä
-    note: uppopaistamiseen
+    note: "Arvioitu imeytyvä määrä koko erälle; friteeraukseen käytä noin 1 l ja valuta ylimääräinen öljy pois. Ylimäärä ei sisälly ravintoarvioon."
 translation_languages:
   - en
   - sv

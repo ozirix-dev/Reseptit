@@ -42,28 +42,28 @@ ingredients:
   - amount: 8
     unit: dl
     item: น้ำ
-  - amount: null
-    unit: ""
+  - amount: 15
+    unit: ml
     item: น้ำสต็อกปลาเข้มข้น
-    note: ตามปริมาณบรรจุภัณฑ์ต่อน้ำ 8 เดซิลิตร
+    note: "กำหนด 15 มล. ต่อน้ำ 800 มล.; ตรวจสอบปริมาณบนฉลาก"
   - amount: 2
     unit: dl
     item: วิปปิ้งครีม
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: เนย
-    note: สำหรับผัดให้นิ่ม
+    note: "สำหรับผัด"
   - amount: 8
     unit: ชิ้น
     item: พริกไทยดำเม็ด
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: ผักชีลาวสด
-    note: สับละเอียด
-  - amount: null
-    unit: ""
+    note: "สับละเอียด"
+  - amount: 3
+    unit: g
     item: เกลือ
-    note: ถ้าจำเป็น
+    note: "ประมาณ 1/2 ช้อนชา ปรับตามความเค็มของน้ำสต็อกปลา"
 source_language: fi
 source_recipe: reseptit/paaruoat/vhh-lohikeitto-kukkakaalilla.md
 translation_of: vhh-lohikeitto-kukkakaalilla

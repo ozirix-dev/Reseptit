@@ -61,10 +61,10 @@ ingredients:
   - amount: 4
     unit: ชิ้น
     item: ขนมปังก้อนนุ่ม
-  - amount: null
-    unit: ""
+  - amount: 25
+    unit: g
     item: น้ำมัน
-    note: สำหรับการทอด
+    note: "ปริมาณโดยประมาณที่อาหารดูดซึมทั้งสูตร ใช้น้ำมันประมาณ 1 ลิตรสำหรับทอดและสะเด็ดส่วนเกิน น้ำมันส่วนเกินไม่นำมาคำนวณคุณค่าทางโภชนาการ"
 source_language: fi
 source_recipe: reseptit/alkuruoat/vada-pav.md
 translation_of: vada-pav

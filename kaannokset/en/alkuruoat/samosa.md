@@ -57,10 +57,10 @@ ingredients:
     unit: g
     item: fresh coriander
     note: "finely chopped"
-  - amount: null
-    unit: ""
+  - amount: 50
+    unit: g
     item: oil
-    note: for deep frying
+    note: "Estimated amount absorbed by the batch; use about 1 L for frying and drain the excess. Excess oil is excluded from the nutrition estimate."
 source_language: fi
 source_recipe: reseptit/alkuruoat/samosa.md
 translation_of: samosa

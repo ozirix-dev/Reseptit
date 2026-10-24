@@ -30,7 +30,7 @@ ingredients:
     item: tuorejuustoa
     note: vaihtoehtona jogurtti, ranskankerma tai kermaviili
   - amount: 1
-    unit: ""
+    unit: kpl
     item: isoa kananmunaa
     note: jokaisen ison munan voi korvata kahdella pienellä
   - amount: 3.5
@@ -40,10 +40,10 @@ ingredients:
     unit: g
     item: tomaattikastiketta
     note: esimerkiksi pizzakastiketta tai paseerattua tomaattia
-  - amount: null
-    unit: ""
+  - amount: 150
+    unit: g
     item: haluamiasi pizzatäytteitä
-    note: esimerkiksi kinkkua, pepperonia, paprikaa, sipulia, oliiveja, mozzarellaa, fetaa tai yrttejä
+    note: "Vakiotäyte kahdelle: 50 g kinkkua, 50 g paprikaa ja 50 g herkkusieniä. Punnitse vaihdot; ravintoarvot muuttuvat."
 translation_languages:
   - en
   - sv
@@ -57,7 +57,7 @@ status: published
 
 # Pizza Pofiber-pohjalla
 
-Juustoinen, pehmeäksi sekoittuva Pofiber-pohja paistuu kuumassa uunissa rapeareunaiseksi pizzaksi. Täytteet voit valita makusi mukaan.
+Juustoinen, pehmeäksi sekoittuva Pofiber-pohja paistuu kuumassa uunissa rapeareunaiseksi pizzaksi. Täytteinä ovat 50 g kinkkua, 50 g paprikaa ja 50 g herkkusieniä; punnitse mahdolliset vaihdot.
 
 ## Kuvaus
 
@@ -69,7 +69,7 @@ Pohjan juusto, tuorejuusto ja kananmuna sitovat Pofiberin taikinaksi. Ohjeesta t
 2. Halutessasi sulata juustoraastetta ja tuorejuustoa mikrossa 30–60 sekuntia, jotta saat pehmeämmän taikinan.
 3. Sekoita juusto, tuorejuusto, kananmuna ja Pofiber tasaiseksi massaksi. Vaivaa käsin tai sekoita voimakkaasti, kunnes taikina on yhtenäinen. Taikina saa jäädä pehmeäksi.
 4. Levitä taikina leivinpaperille pellille. Aseta toinen leivinpaperi päälle ja levitä ohueksi pyöreäksi pohjaksi tai lusikoi paksummaksi pannupizzaksi. Poista päällimmäinen paperi.
-5. Levitä pohjalle tomaattikastike ja lisää haluamasi täytteet.
+5. Levitä pohjalle tomaattikastike ja lisää punnitut vakiotäytteet.
 6. Paista noin 8–12 minuuttia, kunnes reunat ovat rapeat ja juusto on sulanut. Matalammassa lämpötilassa paisto voi kestää pidempään; seuraa kypsymistä.
 7. Tarjoa heti kuumana.
 

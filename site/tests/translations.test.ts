@@ -12,7 +12,7 @@ test("review backlog fixes stay aligned in all four recipe locales", async () =>
     assert.equal(garlic.amount, 1);
     assert.doesNotMatch(garlic.note ?? "", /1[–-]2/);
     const pizza = get("ketopizza-pofiber-pohjalla");
-    for (const ingredient of pizza.data.ingredients) assert.doesNotMatch(ingredient.note ?? "", /\d/);
+    assert.match(pizza.data.ingredients.at(-1)?.note ?? "", /50/);
     assert.match(pizza.content.match(/^1\. (.+)$/m)?.[1] ?? "", /enimmäislämpötilaa|maximum temperature|maxvärmen|ค่าสูงสุด/);
     assert.match(get("jauheliha-makaronilaatikko").content.match(/^1\. (.+)$/m)?.[1] ?? "", /kolmanneksella|one third|tredjedel|หนึ่งในสาม/);
     assert.match(get("jauheliha-makaronilaatikko").content.match(/^3\. (.+)$/m)?.[1] ?? "", /loppu öljy|remaining oil|resten av oljan|น้ำมันที่เหลือ/);
@@ -176,7 +176,7 @@ test("fish-stock prose regressions include titles, descriptions, notes and image
   }
 });
 
-test("butter chicken lists frying oil and preserves optional honey and cooking meaning", async () => {
+test("butter chicken quantifies frying oil and preserves optional honey and cooking meaning", async () => {
   const result = await auditTranslations();
   const recipes = [...result.publishedSources, ...result.publishedTranslations];
   const expectations = {
@@ -190,8 +190,8 @@ test("butter chicken lists frying oil and preserves optional honey and cooking m
     assert.ok(recipe, locale);
     const oil = recipe.data.ingredients.filter((i) => i.item === expected.oil);
     assert.equal(oil.length, 1, `${locale}: frying oil must appear exactly once`);
-    assert.equal(oil[0].amount, null, `${locale}: no invented oil amount`);
-    assert.equal(oil[0].unit, "");
+    assert.equal(oil[0].amount, 15, `${locale}: frying oil amount`);
+    assert.equal(oil[0].unit, "ml");
     assert.ok(oil[0].note);
     assert.match(recipe.content.match(/^2\. (.+)$/m)?.[1] ?? "", expected.aside);
     assert.match(recipe.content.match(/^3\. (.+)$/m)?.[1] ?? "", expected.minute);

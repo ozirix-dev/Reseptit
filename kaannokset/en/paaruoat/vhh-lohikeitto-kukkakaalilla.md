@@ -42,28 +42,28 @@ ingredients:
   - amount: 8
     unit: dl
     item: water
-  - amount: null
-    unit: ""
+  - amount: 15
+    unit: ml
     item: fish stock concentrate
-    note: according to the package dosage for 8 dl of water
+    note: "Default 15 ml per 800 ml water; check the package dosage."
   - amount: 2
     unit: dl
     item: whipping cream
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: butter
-    note: "for gently sautéing"
+    note: "For sautéing."
   - amount: 8
     unit: ""
     item: "whole black peppercorns"
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: fresh dill
-    note: "finely chopped"
-  - amount: null
-    unit: ""
+    note: "Chopped."
+  - amount: 3
+    unit: g
     item: salt
-    note: if necessary
+    note: "About 1/2 tsp; adjust for stock saltiness."
 source_language: fi
 source_recipe: reseptit/paaruoat/vhh-lohikeitto-kukkakaalilla.md
 translation_of: vhh-lohikeitto-kukkakaalilla

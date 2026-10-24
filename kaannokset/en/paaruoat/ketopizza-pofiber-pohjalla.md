@@ -30,7 +30,7 @@ ingredients:
     item: cream cheese
     note: "alternatively yoghurt, crème fraîche or cultured sour cream"
   - amount: 1
-    unit: ""
+    unit: piece
     item: large egg
     note: "each large egg can be replaced with two small eggs"
   - amount: 3.5
@@ -40,10 +40,10 @@ ingredients:
     unit: g
     item: tomato sauce
     note: "for example pizza sauce or passata"
-  - amount: null
-    unit: ""
+  - amount: 150
+    unit: g
     item: pizza toppings of your choice
-    note: for example ham, pepperoni, paprika, onion, olives, mozzarella, feta or herbs
+    note: "Default toppings for two: 50 g ham, 50 g bell pepper and 50 g button mushrooms. Weigh substitutions; nutrition changes."
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/ketopizza-pofiber-pohjalla.md
@@ -52,7 +52,7 @@ translation_of: ketopizza-pofiber-pohjalla
 
 # Pizza with a Pofiber crust
 
-The cheesy, soft Pofiber base is baked in a hot oven into a pizza with crispy edges. You can choose the fillings according to your taste.
+The cheesy, soft Pofiber base is baked in a hot oven into a pizza with crispy edges. This version uses measured ham, bell pepper and button mushrooms; weigh any substitutions.
 
 ## Description
 
@@ -64,7 +64,7 @@ The bottom cheese, cream cheese and egg bind Pofiber into a dough. The recipe ma
 2. If you want, melt the grated cheese and cream cheese in the microwave for 30-60 seconds to get a softer dough.
 3. Mix the cheese, cream cheese, egg and Pofiber into a smooth mass. Knead by hand or mix vigorously until the dough is uniform. The dough should remain soft.
 4. Spread the dough on baking paper on a tray. Place another sheet of baking paper on top and spread into a thin round base or spoon into a thicker pan pizza. Remove the top paper.
-5. Spread the tomato sauce on the bottom and add the toppings you want.
+5. Spread the tomato sauce on the base and add the measured default toppings.
 6. Bake for about 8–12 minutes, until the edges are crisp and the cheese has melted. Baking may take longer at a lower temperature; check for doneness.
 7. Serve immediately hot.
 

@@ -49,10 +49,10 @@ ingredients:
     unit: g
     item: tuoretta korianteria
     note: hienonnettuna
-  - amount: null
-    unit: ""
+  - amount: 30
+    unit: g
     item: gheetä tai voita
-    note: paistamiseen
+    note: "Yhteensä koko erään."
 translation_languages:
   - en
   - sv

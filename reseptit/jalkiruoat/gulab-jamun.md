@@ -57,14 +57,14 @@ ingredients:
     unit: tl
     item: ruusuvettä
     note: valinnainen
-  - amount: null
-    unit: ""
+  - amount: 30
+    unit: g
     item: öljyä
-    note: uppopaistamiseen
-  - amount: null
-    unit: ""
+    note: "Arvioitu imeytyvä määrä koko erälle; friteeraukseen käytä noin 1 l ja valuta ylimääräinen öljy pois. Ylimäärä ei sisälly ravintoarvioon."
+  - amount: 10
+    unit: g
     item: pistaasipähkinää
-    note: rouhittuna pinnalle
+    note: "Rouhittuna pinnalle."
 translation_languages:
   - en
   - sv

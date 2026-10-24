@@ -42,28 +42,28 @@ ingredients:
   - amount: 8
     unit: dl
     item: vettä
-  - amount: null
-    unit: ""
+  - amount: 15
+    unit: ml
     item: kalafondia
-    note: pakkauksen annostuksen mukaan 8 dl:lle vettä
+    note: "Oletus 15 ml / 8 dl vettä; tarkista pakkauksen annostus."
   - amount: 2
     unit: dl
     item: kuohukermaa
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: voita
-    note: kuullottamiseen
+    note: "Kuullottamiseen."
   - amount: 8
     unit: kpl
     item: kokonaista mustapippuria
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: tuoretta tilliä
-    note: hienonnettuna
-  - amount: null
-    unit: ""
+    note: "Hienonnettuna."
+  - amount: 3
+    unit: g
     item: suolaa
-    note: tarvittaessa
+    note: "Noin 1/2 tl; säädä kalafondin suolaisuuden mukaan."
 translation_languages:
   - en
   - sv

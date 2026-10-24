@@ -57,14 +57,14 @@ ingredients:
     unit: tsp
     item: rose water
     note: optional
-  - amount: null
-    unit: ""
+  - amount: 30
+    unit: g
     item: oil
-    note: for deep frying
-  - amount: null
-    unit: ""
+    note: "Estimated amount absorbed by the batch; use about 1 L for frying and drain the excess. Excess oil is excluded from the nutrition estimate."
+  - amount: 10
+    unit: g
     item: pistachios
-    note: "roughly chopped, for the topping"
+    note: "Chopped for topping."
 source_language: fi
 source_recipe: reseptit/jalkiruoat/gulab-jamun.md
 translation_of: gulab-jamun

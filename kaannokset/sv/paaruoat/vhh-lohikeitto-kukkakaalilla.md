@@ -42,28 +42,28 @@ ingredients:
   - amount: 8
     unit: dl
     item: vatten
-  - amount: null
-    unit: ""
+  - amount: 15
+    unit: ml
     item: fiskfond
-    note: enligt förpackningens dosering för 8 dl vatten
+    note: "Riktvärde 15 ml per 8 dl vatten; kontrollera förpackningens dosering."
   - amount: 2
     unit: dl
     item: vispgrädde
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: smör
-    note: "för att fräsa mjukt"
+    note: "Till stekning."
   - amount: 8
     unit: st
     item: "hela svartpepparkorn"
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: färsk dill
-    note: finhackad
-  - amount: null
-    unit: ""
+    note: "Hackad."
+  - amount: 3
+    unit: g
     item: salt
-    note: om så behövs
+    note: "Cirka 1/2 tsk; anpassa efter fondens salthalt."
 source_language: fi
 source_recipe: reseptit/paaruoat/vhh-lohikeitto-kukkakaalilla.md
 translation_of: vhh-lohikeitto-kukkakaalilla

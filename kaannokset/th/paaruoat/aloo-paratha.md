@@ -49,10 +49,10 @@ ingredients:
     unit: g
     item: ผักชีสด
     note: "สับละเอียด"
-  - amount: null
-    unit: ""
+  - amount: 30
+    unit: g
     item: เนยใสหรือเนย
-    note: สำหรับการทอด
+    note: "ปริมาณรวมสำหรับทั้งสูตร"
 source_language: fi
 source_recipe: reseptit/paaruoat/aloo-paratha.md
 translation_of: aloo-paratha

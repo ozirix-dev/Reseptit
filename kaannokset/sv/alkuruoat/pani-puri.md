@@ -59,16 +59,17 @@ ingredients:
   - amount: 0.5
     unit: tsk
     item: chilipulver
-  - amount: null
-    unit: ""
+  - amount: 25
+    unit: g
     item: olja
-    note: för fritering
+    note: "Uppskattad mängd som tas upp av satsen; använd cirka 1 l till fritering och låt överskottet rinna av. Överskottet ingår inte i näringsvärdet."
   - unit: dl
     item: kallt vatten till örtvattnet
     amount: 4
-  - unit: ""
+  - unit: g
     item: salt
-    amount: null
+    amount: 6
+    note: "Cirka 1/2 tsk; anpassa efter fondens salthalt."
 source_language: fi
 source_recipe: reseptit/alkuruoat/pani-puri.md
 translation_of: pani-puri
