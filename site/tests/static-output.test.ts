@@ -86,7 +86,7 @@ test("recipe index is prerendered and links only published languages", async () 
 });
 
 test("only complete GK results appear on every published translation of a pilot recipe", async () => {
-  assert.equal(glycemicLoadPilotResults.length, 10);
+  assert.equal(glycemicLoadPilotResults.length, 20);
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
     assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);
