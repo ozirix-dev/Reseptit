@@ -1,5 +1,28 @@
 {
-  "sourcePolicy": "Use exact, preparation-matched GI values from Supplemental Table 1 of the cited 2021 International Tables. Do not assign proxy values. Keep records local to this pilot and do not copy the full source table.",
+  "sourcePolicy": "Fineli supplies available carbohydrate quantities only. GI evidence is stored as individual, traceable records: STRONG records must be published, glucose-scale, ISO 26642-confirmed and preparation-matched; SUPPLEMENTARY records are for internal comparison and never produce a public GL. Do not copy complete source tables or substitute unmatched foods/preparations.",
+  "sources": [
+    {
+      "id": "international-tables-2021",
+      "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "url": "https://doi.org/10.1093/ajcn/nqab233",
+      "year": 2021,
+      "use": "Primary source; use Supplemental Table 1 for STRONG values and Supplemental Table 2 only as SUPPLEMENTARY candidates."
+    },
+    {
+      "id": "sydney-gi-search",
+      "title": "University of Sydney Glycemic Index Search database",
+      "url": "https://glycemicindex.com/gi-search/",
+      "year": 2026,
+      "use": "Discovery and cross-checking; unpublished or insufficiently verifiable records remain SUPPLEMENTARY."
+    },
+    {
+      "id": "nonwestern-compendium-2021",
+      "title": "A glycaemic index compendium of non-western foods",
+      "url": "https://doi.org/10.1038/s41387-020-00145-w",
+      "year": 2021,
+      "use": "Regional-food discovery; promote a value to STRONG only when the underlying record independently satisfies ISO 26642 criteria."
+    }
+  ],
   "records": [
     {
       "id": "whole-tomato-raw-gi-22",
@@ -7,15 +30,88 @@
       "foodKey": "tomato",
       "preparationKey": "whole-raw",
       "food": "Whole tomatoes",
-      "preparation": "Whole, raw tomato as reported in the article text",
+      "preparation": "Whole, raw tomato",
+      "qualityTier": "STRONG",
       "referenceScale": "GLUCOSE_100",
       "source": {
         "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
         "url": "https://doi.org/10.1093/ajcn/nqab233",
-        "table": "Supplemental Table 1; value noted in article text",
-        "year": 2021
+        "table": "Supplemental Table 1; article Results also reports the value",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "qualityEvidence": "The record is from Supplemental Table 1, which the review defines as the ISO-methodology set. The tables identify the food as whole/raw tomato."
       },
-      "note": "Not assigned to any pilot recipe: the recipes use crushed/cooked tomato, not whole raw tomato. This record demonstrates that a value is rejected when preparation does not match."
+      "note": "Candidate only. Not assigned to the recipes' crushed and cooked tomato."
+    },
+    {
+      "id": "tomato-juice-canned-gi-38",
+      "gi": 38,
+      "foodKey": "tomato",
+      "preparationKey": "canned-juice",
+      "food": "Tomato juice, canned, no added sugar",
+      "preparation": "Canned juice; Berri product, Australia",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "University of Sydney Glycemic Index Search database",
+        "url": "https://glycemicindex.com/gi-search/",
+        "table": "Fruit and Fruit Products search entry; Sydney University GI Research Service unpublished observation, test year 2002",
+        "year": 2002,
+        "published": false,
+        "iso26642Confirmed": false,
+        "participants": 10,
+        "referenceFood": "Not stated in the database entry",
+        "testDurationHours": 2,
+        "qualityEvidence": "Database entry identifies an unpublished test; the full protocol and ISO compliance cannot be verified."
+      },
+      "note": "Candidate only. Juice does not match crushed tomato."
+    },
+    {
+      "id": "potato-boiled-china-gi-66",
+      "gi": 66,
+      "foodKey": "potato",
+      "preparationKey": "boiled-unspecified",
+      "food": "Potato, unspecified variety, boiled",
+      "preparation": "Boiled; China; test year 2005",
+      "qualityTier": "STRONG",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Supplemental Table 1, entry 1842",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "participants": 10,
+        "referenceFood": "Glucose",
+        "testDurationHours": 2,
+        "qualityEvidence": "Supplemental Table 1 is the review's ISO-methodology set; source row describes boiled, unspecified potato. GI is rounded to the table's reported integer."
+      },
+      "note": "Candidate only. Boiled potato does not match the recipe's covered, low-heat oil-cooked slices mixed with egg and pan-set as a tortilla."
+    },
+    {
+      "id": "potato-cooked-china-nonwestern-gi-66-4",
+      "gi": 66.4,
+      "foodKey": "potato",
+      "preparationKey": "cooked-unspecified",
+      "food": "Potato, cooked",
+      "preparation": "China; preparation not further specified in the compendium table",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "Glycemic index of cereals and tubers produced in China",
+        "url": "https://doi.org/10.3748/wjg.v12.i21.3430",
+        "table": "Table 3, potato cooked; also listed as reference 101 in the 2021 non-western compendium",
+        "year": 2006,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 10,
+        "referenceFood": "Glucose",
+        "testDurationHours": 2,
+        "qualityEvidence": "Peer-reviewed primary source and n=10 are reported, but the record does not establish all ISO 26642 protocol requirements or precise cooking conditions."
+      },
+      "note": "Candidate only. Cooking description is insufficient to match the tortilla preparation."
     }
   ]
 }

@@ -2,7 +2,7 @@
   "calculationBasis": "Ingredient-level Fineli CHO (available carbohydrate) per 100 g, multiplied by edible grams, divided by recipe servings. Ingredient GI is applied only when an exact food and preparation match is cited.",
   "fineliEvidence": "docs/nutrition/food-records.json; THL Fineli, CC BY 4.0",
   "massEvidence": "docs/nutrition/estimates-2026-10-24.md, Fineli source records and mass assumptions section",
-  "excludedIngredientPolicy": "Unmeasured seasonings and herbs excluded from the batch-1 Fineli calculations stay explicitly excluded here; no missing amount is treated as zero.",
+  "excludedIngredientPolicy": "Unmeasured seasonings, herbs, and other ingredients are recorded as excluded from the batch-1 Fineli estimate but block a complete GL; no missing amount is treated as zero.",
   "recipes": [
     {
       "recipeId": "munakokkeli",
@@ -46,7 +46,7 @@
       "ingredients": [
         { "name": "kananmuna", "grams": 220, "fineliRecordId": "fineli-858-2026-10-24", "giRecordId": null, "massEvidence": "4 kpl × Fineli-annosmitta 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained." },
         { "name": "voi", "grams": 14, "fineliRecordId": "fineli-500-2026-10-24", "giRecordId": null, "massEvidence": "1 rkl × documented 14 g/rkl" },
-        { "name": "tomaattimurska", "grams": 150, "fineliRecordId": "fineli-352-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass; batch-1 estimate uses fresh tomato as an explicit proxy for tomato crush", "giMatchEvidence": "The published GI 22 is for whole raw tomato and does not match crushed tomato." },
+        { "name": "tomaattimurska", "grams": 150, "fineliRecordId": "fineli-352-2026-10-24", "giRecordId": null, "foodKey": "tomato", "preparationKey": "crushed-cooked-in-sauce", "massEvidence": "Recipe-listed mass; batch-1 estimate uses fresh tomato as an explicit proxy for tomato crush", "giMatchEvidence": "Whole raw tomato and canned tomato juice are not preparation-matched to crushed tomato cooked in sauce." },
         { "name": "punasipuli", "grams": 27.5, "fineliRecordId": "fineli-34234-2026-10-24", "giRecordId": null, "massEvidence": "0.5 small onion; documented 55 g per onion, half = 27.5 g", "giMatchEvidence": "No exact published GI value is recorded for red onion." },
         { "name": "avokado", "grams": 120, "fineliRecordId": "fineli-11057-2026-10-24", "giRecordId": null, "massEvidence": "1 medium avocado × documented 120 g edible weight", "giMatchEvidence": "No exact published GI value is recorded for avocado." },
         { "name": "cheddarjuusto", "grams": 40, "fineliRecordId": "fineli-698-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass", "giMatchEvidence": "No exact published GI value is recorded for this cheddar product." },
@@ -71,7 +71,7 @@
         { "name": "kananmuna", "grams": 220, "fineliRecordId": "fineli-858-2026-10-24", "giRecordId": null, "massEvidence": "4 kpl × Fineli-annosmitta 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained." },
         { "name": "punainen paprika", "grams": 170, "fineliRecordId": "fineli-386-2026-10-24", "giRecordId": null, "massEvidence": "1 kpl × documented Fineli mass 170 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for red pepper." },
         { "name": "keltasipuli", "grams": 55, "fineliRecordId": "fineli-335-2026-10-24", "giRecordId": null, "massEvidence": "1 small onion; documented 55 g per onion", "giMatchEvidence": "No exact published GI value is recorded for onion." },
-        { "name": "tomaattimurska", "grams": 200, "fineliRecordId": "fineli-352-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass; batch-1 estimate uses fresh tomato as an explicit proxy for tomato crush", "giMatchEvidence": "The published GI 22 is for whole raw tomato and does not match crushed tomato." },
+        { "name": "tomaattimurska", "grams": 200, "fineliRecordId": "fineli-352-2026-10-24", "giRecordId": null, "foodKey": "tomato", "preparationKey": "crushed-cooked-in-sauce", "massEvidence": "Recipe-listed mass; batch-1 estimate uses fresh tomato as an explicit proxy for tomato crush", "giMatchEvidence": "Whole raw tomato and canned tomato juice are not preparation-matched to crushed tomato cooked in sauce." },
         { "name": "oliiviöljy", "grams": 13.5, "fineliRecordId": "fineli-536-2026-10-24", "giRecordId": null, "massEvidence": "1 rkl × documented 13.5 g/rkl" },
         { "name": "juustokumina, savupaprika, suola, pippuri, chili ja persilja", "grams": null, "fineliRecordId": null, "giRecordId": null, "excludedReason": "Unmeasured spices/herb omitted from the batch-1 Fineli estimate; not treated as zero." }
       ]
@@ -103,7 +103,7 @@
       "recipeId": "tortilla-de-patatas",
       "servings": 4,
       "ingredients": [
-        { "name": "peruna", "grams": 600, "fineliRecordId": "fineli-205-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed peeled mass", "giMatchEvidence": "No exact GI match is recorded for the recipe's oil-cooked sliced potato. The paper's boiled-potato mean is not a preparation match." },
+        { "name": "peruna", "grams": 600, "fineliRecordId": "fineli-205-2026-10-24", "giRecordId": null, "foodKey": "potato", "preparationKey": "tortilla-slow-cooked-in-oil-and-pan-set-with-egg", "massEvidence": "Recipe-listed peeled mass", "giMatchEvidence": "Boiled, steamed, or unspecified cooked potato does not exactly match tortilla potatoes cooked covered in oil and pan-set with egg." },
         { "name": "keltasipuli", "grams": 55, "fineliRecordId": "fineli-335-2026-10-24", "giRecordId": null, "massEvidence": "1 kpl × documented 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for onion." },
         { "name": "kananmuna", "grams": 330, "fineliRecordId": "fineli-858-2026-10-24", "giRecordId": null, "massEvidence": "6 kpl × Fineli-annosmitta 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained." },
         { "name": "oliiviöljy, ruokaan jäävä", "grams": 40.5, "fineliRecordId": "fineli-536-2026-10-24", "giRecordId": null, "massEvidence": "Batch-1 calculation assumes 3 rkl / 40.5 g of the 5 rkl added oil remains in the dish" },

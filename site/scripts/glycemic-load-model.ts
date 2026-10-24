@@ -7,8 +7,20 @@ export interface GlycemicIndexRecord {
   preparationKey: string;
   food: string;
   preparation: string;
+  qualityTier: "STRONG" | "SUPPLEMENTARY";
   referenceScale: "GLUCOSE_100";
-  source: { title: string; url: string; table: string; year: number };
+  source: {
+    title: string;
+    url: string;
+    table: string;
+    year: number;
+    published: boolean;
+    iso26642Confirmed: boolean;
+    participants?: number;
+    referenceFood?: string;
+    testDurationHours?: number;
+    qualityEvidence: string;
+  };
   note?: string;
 }
 
@@ -43,7 +55,16 @@ export interface GlycemicLoadResult {
     availableCarbohydratePerServingG: number | null;
     gi: number | null;
     giRecordId: string | null;
+    qualityTier: GlycemicIndexRecord["qualityTier"] | null;
     giContribution: number | null;
+    giCandidates: Array<{
+      id: string;
+      gi: number;
+      preparation: string;
+      qualityTier: GlycemicIndexRecord["qualityTier"];
+      preparationMatches: boolean;
+      sourceUrl: string;
+    }>;
     excludedReason?: string;
     issues: string[];
   }>;
@@ -73,7 +94,20 @@ export function calculateGlycemicLoad(
 
   const ingredients = input.ingredients.map((ingredient) => {
     const issues: string[] = [];
+    const giCandidates = ingredient.foodKey
+      ? giRecords.filter((record) => record.foodKey === ingredient.foodKey).map((record) => ({
+        id: record.id,
+        gi: record.gi,
+        preparation: record.preparation,
+        qualityTier: record.qualityTier,
+        preparationMatches: record.preparationKey === ingredient.preparationKey,
+        sourceUrl: record.source.url,
+      }))
+      : [];
+
     if (ingredient.excludedReason) {
+      const issue = "Ingredient amount or Fineli mapping is missing; it is not treated as zero.";
+      blockers.push(`${input.recipeId}: ${ingredient.name}: ${issue}`);
       return {
         name: ingredient.name,
         grams: ingredient.grams,
@@ -82,7 +116,9 @@ export function calculateGlycemicLoad(
         availableCarbohydratePerServingG: null,
         gi: null,
         giRecordId: ingredient.giRecordId,
+        qualityTier: null,
         giContribution: null,
+        giCandidates,
         excludedReason: ingredient.excludedReason,
         issues,
       };
@@ -109,8 +145,12 @@ export function calculateGlycemicLoad(
     }
 
     let gi: number | null = null;
+    let qualityTier: GlycemicIndexRecord["qualityTier"] | null = null;
     let giContribution: number | null = null;
     if (availablePerServing !== null && availablePerServing > 0) {
+      if (!ingredient.foodKey || !ingredient.preparationKey) {
+        issues.push("Ingredient food and preparation keys are missing.");
+      }
       const matchedGi = ingredient.giRecordId ? giById.get(ingredient.giRecordId) : undefined;
       if (!matchedGi) {
         issues.push(ingredient.giMatchEvidence || "No exact, preparation-matched published GI value is recorded.");
@@ -118,8 +158,11 @@ export function calculateGlycemicLoad(
         issues.push("Published GI food or preparation does not exactly match the recipe ingredient.");
       } else if (!valid(matchedGi.gi) || !ingredient.giMatchEvidence) {
         issues.push("GI value or exact-match evidence is invalid.");
+      } else if (matchedGi.qualityTier !== "STRONG" || !matchedGi.source.published || !matchedGi.source.iso26642Confirmed) {
+        issues.push("GI source does not meet the strong, published ISO 26642 evidence tier.");
       } else {
         gi = matchedGi.gi;
+        qualityTier = matchedGi.qualityTier;
         giContribution = availablePerServing * gi / 100;
         totalLoad += giContribution;
       }
@@ -134,7 +177,9 @@ export function calculateGlycemicLoad(
       availableCarbohydratePerServingG: availablePerServing,
       gi,
       giRecordId: ingredient.giRecordId,
+      qualityTier,
       giContribution,
+      giCandidates,
       issues,
     };
   });
