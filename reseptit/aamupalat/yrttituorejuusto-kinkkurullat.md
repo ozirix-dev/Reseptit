@@ -17,16 +17,16 @@ tags:
 ingredients:
   - amount: 150
     unit: g
-    item: kinkkusiivuja
+    item: 3 %:n keittokinkkusiivuja
   - amount: 100
     unit: g
-    item: maustamatonta tuorejuustoa
+    item: maustamatonta tuorejuustoa, 20 % rasvaa
   - amount: 1
     unit: rkl
     item: silputtua ruohosipulia
   - amount: 100
     unit: g
-    item: paprikaa
+    item: punaista paprikaa
   - amount: 100
     unit: g
     item: kurkkua
@@ -44,6 +44,11 @@ image:
   alt: Yrttituorejuusto-kinkkurullat tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 2.76
+carbs_total_per_serving_g: 3.66
+protein_per_serving_g: 8.17
+fat_per_serving_g: 6.26
+
 ---
 # Yrttituorejuusto-kinkkurullat
 

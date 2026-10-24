@@ -23,7 +23,7 @@ image:
 ingredients:
   - amount: 800
     unit: g
-    item: pork loin
+    item: pork loin trimmed of visible fat
     note: cut into long bars
   - amount: 3
     unit: tbsp
@@ -48,13 +48,18 @@ ingredients:
     unit: tbsp
     item: honey
     note: for brushing the surface
-  - amount: 4
-    unit: servings
-    item: cooked rice
-    note: for serving
+  - amount: 600
+    unit: g
+    item: cooked long-grain white rice
+    note: 150 g per serving
 source_language: fi
 source_recipe: reseptit/paaruoat/char-siu.md
 translation_of: char-siu
+carbs_net_per_serving_g: 51.32
+carbs_total_per_serving_g: 53.07
+protein_per_serving_g: 50.97
+fat_per_serving_g: 5.5
+
 ---
 
 # Char siu – Cantonese barbecue pork

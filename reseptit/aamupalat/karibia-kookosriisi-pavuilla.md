@@ -14,16 +14,16 @@ cooking_method:
 ingredients:
   - amount: 100
     unit: "g"
-    item: "riisi"
+    item: "kuivaa pitkäjyväistä valkoista riisiä"
   - amount: 200
     unit: "ml"
-    item: "kookosmaito"
+    item: "täysrasvainen tölkkikookosmaito"
   - amount: 150
     unit: "g"
-    item: "kidney-papu"
+    item: "kypsiä, valutettuja kidneypapuja"
   - amount: 2
     unit: "rkl"
-    item: "timjami"
+    item: "tuoretta timjamia"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -39,6 +39,11 @@ image:
   alt: "Kookosriisi ja haudutetut pavut tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 51.6
+carbs_total_per_serving_g: 57.39
+protein_per_serving_g: 10.47
+fat_per_serving_g: 15.18
+
 ---
 
 # Kookosriisi ja haudutetut pavut
@@ -53,7 +58,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
-2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
-3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Keitä riisi kookosmaidossa ja tarjoa haudutettujen papujen sekä kevätsipulin kanssa.
+1. Huuhtele riisi, laita kattilaan kookosmaidon kanssa ja kuumenna kiehuvaksi.
+2. Peitä kattila ja hauduta miedolla lämmöllä, kunnes riisi on kypsää ja neste imeytynyt. Sekoita välillä.
+3. Lämmitä valutetut pavut erikseen ja sekoita tuore timjami joukkoon.
+4. Jaa kookosriisi ja pavut kahdelle lautaselle. Mausta suolalla.

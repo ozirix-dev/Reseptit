@@ -24,7 +24,7 @@ image:
 ingredients:
   - amount: 800
     unit: g
-    item: porsaan ulkofileetä
+    item: näkyvästä rasvasta siistittyä porsaan ulkofileetä
     note: pitkiksi tangoiksi leikattuna
   - amount: 3
     unit: rkl
@@ -49,15 +49,20 @@ ingredients:
     unit: rkl
     item: hunajaa
     note: pinnan sivelyyn
-  - amount: 4
-    unit: annosta
-    item: keitettyä riisiä
-    note: tarjoiluun
+  - amount: 600
+    unit: g
+    item: keitettyä pitkäjyväistä valkoista riisiä
+    note: 150 g annosta kohti
 translation_languages:
   - en
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 51.32
+carbs_total_per_serving_g: 53.07
+protein_per_serving_g: 50.97
+fat_per_serving_g: 5.5
+
 ---
 
 # Char siu – kantonilainen grilliporsas

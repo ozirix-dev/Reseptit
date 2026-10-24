@@ -17,7 +17,7 @@ ingredients:
     item: "kananmuna"
   - amount: 1
     unit: "rkl"
-    item: "kalakastike"
+    item: "Squid Brand -kalakastiketta"
   - amount: 2
     unit: "rkl"
     item: "thaibasilika"
@@ -42,6 +42,11 @@ image:
   alt: "Thaimaalainen munakas yrteillä tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 0.7
+carbs_total_per_serving_g: 0.92
+protein_per_serving_g: 7.87
+fat_per_serving_g: 11.85
+
 ---
 
 # Thaimaalainen munakas yrteillä
@@ -56,7 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Pilko täytteen kasvikset ja muut suuret ainekset pieniksi paloiksi. Kuullota ne pannulla tilkassa öljyä, kunnes ne ovat pehmenneet.
-2. Vatkaa kananmunat ja mausta ripauksella suolaa. Kaada munaseos pannulle ja laske lämpö miedoksi.
-3. Vedä hyytynyttä munaa reunoilta kohti keskustaa. Taita tai rullaa, kun pinta on juuri hyytynyt.
-4. Tarjoa riisin ja kurkkusiivujen kanssa.
+1. Vatkaa kananmunat kalakastikkeen kanssa. Hienonna kevätsipuli ja thaibasilika ja sekoita munien joukkoon.
+2. Kuumenna öljy pannulla kuumaksi ja kaada munaseos pannulle.
+3. Paista munakas rapeareunaiseksi ja kypsäksi, käännä tarvittaessa varovasti.
+4. Tarjoa heti.

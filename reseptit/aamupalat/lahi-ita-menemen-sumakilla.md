@@ -42,6 +42,11 @@ image:
   alt: "Menemen sumakilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 4.45
+carbs_total_per_serving_g: 6.23
+protein_per_serving_g: 8.08
+fat_per_serving_g: 12.27
+
 ---
 
 # Menemen sumakilla
@@ -56,7 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.
-2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.
-3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.
-4. Kypsennä tomaatit ja paprika pehmeiksi ja sekoita munat pannulla juuri hyytyviksi.
+1. Kuutioi tomaatti ja vihreä paprika.
+2. Kuumenna öljy pannulla ja paista paprika pehmeäksi. Lisää tomaatti ja kypsennä, kunnes se alkaa hajota.
+3. Riko munat pannulle ja sekoita ne tomaattien joukkoon. Kypsennä miedolla lämmöllä juuri hyytyviksi.
+4. Mausta sumakilla ja suolalla ja tarjoa heti.

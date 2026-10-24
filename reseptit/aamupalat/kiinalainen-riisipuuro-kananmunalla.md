@@ -14,7 +14,7 @@ cooking_method:
 ingredients:
   - amount: 100
     unit: "g"
-    item: "riisi"
+    item: "kuivaa pitkäjyväistä valkoista riisiä"
   - amount: 2
     unit: "kpl"
     item: "kananmuna"
@@ -26,7 +26,7 @@ ingredients:
     item: "kevätsipuli"
   - amount: 700
     unit: "ml"
-    item: "vettä tai mietoa lientä"
+    item: "vettä"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -42,6 +42,11 @@ image:
   alt: "Riisipuuro pehmeällä kananmunalla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 39.99
+carbs_total_per_serving_g: 40.63
+protein_per_serving_g: 11.11
+fat_per_serving_g: 5.61
+
 ---
 
 # Riisipuuro pehmeällä kananmunalla
@@ -56,7 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
-2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Kypsennä kananmuna erikseen ja nosta puuron päälle.
-4. Viimeistele seesamiöljyllä ja kevätsipulilla; tarjoa pikkelöidyn kasviksen kanssa.
+1. Huuhtele riisi ja keitä se vedessä miedolla lämmöllä pehmeäksi puuroksi. Sekoita usein.
+2. Lisää raastettu inkivääri ja jatka hauduttamista, kunnes puuro on sakeaa.
+3. Kypsennä kananmunat erikseen pehmeiksi ja tarjoa ne puuron päällä.
+4. Mausta suolalla ja viimeistele kevätsipulilla.

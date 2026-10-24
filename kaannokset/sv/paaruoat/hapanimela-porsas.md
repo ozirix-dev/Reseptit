@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: fläskytterfilé
+    item: fläskytterfilé, putsad från synligt fett
     note: "tärnad"
   - amount: 1
     unit: st
@@ -50,7 +50,7 @@ ingredients:
     note: "skuren i klyftor"
   - amount: 150
     unit: g
-    item: av ananas
+    item: konserverad ananas i egen juice, avrunnen
     note: i bitar
   - amount: 2
     unit: msk
@@ -67,13 +67,18 @@ ingredients:
   - amount: 1
     unit: dl
     item: vatten
-  - amount: 4
-    unit: portioner
-    item: kokt ris
-    note: för servering
+  - amount: 600
+    unit: g
+    item: kokt långkornigt vitt ris
+    note: 150 g per portion
 source_language: fi
 source_recipe: reseptit/paaruoat/hapanimela-porsas.md
 translation_of: hapanimela-porsas
+carbs_net_per_serving_g: 54.86
+carbs_total_per_serving_g: 56.87
+protein_per_serving_g: 41.4
+fat_per_serving_g: 15.4
+
 ---
 
 # Sötsyrligt fläsk och grönsaker

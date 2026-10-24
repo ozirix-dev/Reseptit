@@ -17,7 +17,7 @@ tags:
 ingredients:
   - amount: 500
     unit: g
-    item: kypsää broilerinlihaa
+    item: kypsää, nahatonta broilerin rintafileetä
   - amount: 400
     unit: ml
     item: broilerin lientä
@@ -50,6 +50,11 @@ image:
   alt: Kanaviillokki kukkakaaliriisillä tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 9.25
+carbs_total_per_serving_g: 12.57
+protein_per_serving_g: 38.04
+fat_per_serving_g: 34.37
+
 ---
 # Kanaviillokki kukkakaaliriisillä
 

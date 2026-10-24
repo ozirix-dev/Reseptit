@@ -20,7 +20,7 @@ ingredients:
     item: "tomaatti"
   - amount: 100
     unit: "g"
-    item: "riisi"
+    item: "kuivaa pitkäjyväistä valkoista riisiä"
   - amount: 2
     unit: "rkl"
     item: "kevätsipuli"
@@ -42,6 +42,11 @@ image:
   alt: "Munakas tomaatilla ja riisillä tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 42.1
+carbs_total_per_serving_g: 42.96
+protein_per_serving_g: 11.45
+fat_per_serving_g: 12.54
+
 ---
 
 # Munakas tomaatilla ja riisillä
@@ -59,4 +64,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Pilko täytteen kasvikset ja muut suuret ainekset pieniksi paloiksi. Kuullota ne pannulla tilkassa öljyä, kunnes ne ovat pehmenneet.
 2. Vatkaa kananmunat ja mausta ripauksella suolaa. Kaada munaseos pannulle ja laske lämpö miedoksi.
 3. Vedä hyytynyttä munaa reunoilta kohti keskustaa. Taita tai rullaa, kun pinta on juuri hyytynyt.
-4. Tarjoa pehmeä tomaatti-kananmunaseos kuuman riisin päällä.
+4. Tarjoa pehmeä tomaatti-kananmunaseos kuuman riisin päällä ja viimeistele kevätsipulilla.

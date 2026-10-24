@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: pork loin
+    item: pork loin trimmed of visible fat
     note: "diced"
   - amount: 1
     unit: piece
@@ -50,7 +50,7 @@ ingredients:
     note: "cut into wedges"
   - amount: 150
     unit: g
-    item: of pineapple
+    item: canned pineapple in its own juice, drained
     note: in pieces
   - amount: 2
     unit: tbsp
@@ -67,13 +67,18 @@ ingredients:
   - amount: 1
     unit: dl
     item: water
-  - amount: 4
-    unit: servings
-    item: cooked rice
-    note: for serving
+  - amount: 600
+    unit: g
+    item: cooked long-grain white rice
+    note: 150 g per serving
 source_language: fi
 source_recipe: reseptit/paaruoat/hapanimela-porsas.md
 translation_of: hapanimela-porsas
+carbs_net_per_serving_g: 54.86
+carbs_total_per_serving_g: 56.87
+protein_per_serving_g: 41.4
+fat_per_serving_g: 15.4
+
 ---
 
 # Sweet and sour pork and vegetables

@@ -1,0 +1,194 @@
+{
+  "recipeId": "lahi-ita-fattet-hummus",
+  "sourceHash": "58ca5f4bbfece3e7067536045e7be25047b49ff8c81f603670c535f58f3c5ce1",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-13",
+  "servings": 2,
+  "scope": "Two servings. Chickpeas are specified cooked and drained; pita is plain wheat pita, yogurt is plain unsweetened 3.9% yogurt, and tahini is unsalted. Practical estimate, not laboratory analysis.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kypsiä, valutettuja kikherneitä",
+      "amount": 100,
+      "unit": "g",
+      "state": "cooked chickpeas in unsalted water, drained",
+      "matchEvidence": "Cooked drained chickpeas; Fineli Release 20 record 11089.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11089-release-20",
+        "name": "KIKHERNE SUOLATTOMASSA VEDESSÄ",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11089",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "cooked chickpeas in unsalted water, drained",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 17.6,
+          "FIBT": 5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 17.6,
+          "fibre": 5,
+          "polyols": 0,
+          "protein": 8.44,
+          "fat": 2.5
+        }
+      }
+    },
+    {
+      "item": "pita",
+      "amount": 100,
+      "unit": "g",
+      "state": "plain wheat pita bread",
+      "matchEvidence": "Plain pita bread; Fineli Release 20 record 1056.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-1056-release-20",
+        "name": "VAALEA LEIPÄ, PITALEIPÄ",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1056",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain wheat pita bread",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 46.08,
+          "FIBT": 2.322,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 46.08,
+          "fibre": 2.322,
+          "polyols": 0,
+          "protein": 7.49,
+          "fat": 0.979
+        }
+      }
+    },
+    {
+      "item": "jogurtti",
+      "amount": 100,
+      "unit": "g",
+      "state": "plain unsweetened yogurt, 3.9% fat",
+      "matchEvidence": "Plain unsweetened yogurt represented by Fineli Bulgarian-style 3.9% yogurt record 620.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-620-release-20",
+        "name": "JOGURTTI, MAUSTAMATON, BULGARIAN, RASVAA 3,9%",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/620",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain unsweetened yogurt, 3.9% fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.4,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3.4,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.9
+        }
+      }
+    },
+    {
+      "item": "tahini",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "unsalted sesame tahini",
+      "matchEvidence": "Unsalted sesame tahini; Fineli Release 20 record 11087.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "Fineli record 11087 lists 15 g per tablespoon (RKL).",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11087-release-20",
+        "name": "TAHINI, SEESAMTAHNA, EI LISÄTTYÄ SUOLAA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11087",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "unsalted sesame tahini",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.9,
+          "FIBT": 6.8,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "fibre": 6.8,
+          "polyols": 0,
+          "protein": 21.81,
+          "fat": 58
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
+      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+    }
+  ]
+}

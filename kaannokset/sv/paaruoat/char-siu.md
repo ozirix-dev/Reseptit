@@ -23,7 +23,7 @@ image:
 ingredients:
   - amount: 800
     unit: g
-    item: fläskytterfilé
+    item: fläskytterfilé, putsad från synligt fett
     note: skär i långa stänger
   - amount: 3
     unit: msk
@@ -48,13 +48,18 @@ ingredients:
     unit: msk
     item: honung
     note: för att borsta ytan
-  - amount: 4
-    unit: portioner
-    item: kokt ris
-    note: för servering
+  - amount: 600
+    unit: g
+    item: kokt långkornigt vitt ris
+    note: 150 g per portion
 source_language: fi
 source_recipe: reseptit/paaruoat/char-siu.md
 translation_of: char-siu
+carbs_net_per_serving_g: 51.32
+carbs_total_per_serving_g: 53.07
+protein_per_serving_g: 50.97
+fat_per_serving_g: 5.5
+
 ---
 
 # Char siu – Kantonesiskt grillfläsk

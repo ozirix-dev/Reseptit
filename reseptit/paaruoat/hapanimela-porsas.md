@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: porsaan ulkofileetä
+    item: näkyvästä rasvasta siistittyä porsaan ulkofileetä
     note: kuutioina
   - amount: 1
     unit: kpl
@@ -50,7 +50,7 @@ ingredients:
     note: lohkoina
   - amount: 150
     unit: g
-    item: ananasta
+    item: valutettua ananasta omassa mehussaan
     note: paloina
   - amount: 2
     unit: rkl
@@ -61,21 +61,27 @@ ingredients:
   - amount: 2
     unit: rkl
     item: sokeria
+    note: laskenta-arvioon käytetty määrä; älä lisää ilman ravintoarvojen uudelleenlaskentaa
   - amount: 1
     unit: rkl
     item: soijakastiketta
   - amount: 1
     unit: dl
     item: vettä
-  - amount: 4
-    unit: annosta
-    item: keitettyä riisiä
-    note: tarjoiluun
+  - amount: 600
+    unit: g
+    item: keitettyä pitkäjyväistä valkoista riisiä
+    note: 150 g annosta kohti
 translation_languages:
   - en
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 54.86
+carbs_total_per_serving_g: 56.87
+protein_per_serving_g: 41.4
+fat_per_serving_g: 15.4
+
 ---
 
 # Hapanimelä porsas ja kasvikset

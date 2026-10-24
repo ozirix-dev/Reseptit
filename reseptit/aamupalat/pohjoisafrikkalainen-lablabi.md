@@ -14,7 +14,7 @@ cooking_method:
 ingredients:
   - amount: 100
     unit: "g"
-    item: "kikherne"
+    item: "kypsiä, valutettuja kikherneitä"
   - amount: 100
     unit: "g"
     item: "pita"
@@ -26,7 +26,7 @@ ingredients:
     item: "kananmuna"
   - amount: 700
     unit: "ml"
-    item: "kasvis- tai kanalientä"
+    item: "laimennettua kanalientä"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -42,6 +42,11 @@ image:
   alt: "Tunisialainen lablabi kikherneistä tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 33.84
+carbs_total_per_serving_g: 37.7
+protein_per_serving_g: 16.02
+fat_per_serving_g: 9.82
+
 ---
 
 # Tunisialainen lablabi kikherneistä
@@ -56,7 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Kuumenna kattilassa öljy tai liemi. Lisää aromit ja hitaammin kypsyvät ainekset; paista tai hauduta muutama minuutti.
-2. Kaada kattilaan liemi ja keitä miedosti, kunnes pääraaka-aineet ovat kypsiä.
-3. Lisää nuudelit, lehtivihannekset tai muut nopeasti kypsyvät ainekset niiden kypsymisajan mukaan.
-4. Kaada mausteinen kikhernekeitto kulhoon ja lisää päälle pala leipää sekä uppomuna.
+1. Kuumenna kanaliemi kattilassa ja lisää kikherneet sekä juustokumina.
+2. Hauduta 10 minuuttia, kunnes kikherneet ovat kuumia ja liemi maustunut.
+3. Kypsennä kananmunat uppomuniksi.
+4. Revi pita kulhoihin, kaada päälle kikherneet ja liemi ja viimeistele uppomunilla.
