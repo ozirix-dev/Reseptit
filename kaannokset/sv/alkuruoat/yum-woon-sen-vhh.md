@@ -66,8 +66,8 @@ ingredients:
   - amount: 1
     unit: msk
     item: neutral olja
-  - amount: null
-    unit: ""
+  - amount: 40
+    unit: g
     item: färsk selleri eller kinesisk selleri
     note: "finhackad"
 translation_languages: []

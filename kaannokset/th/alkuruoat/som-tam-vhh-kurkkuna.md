@@ -47,8 +47,8 @@ ingredients:
   - amount: 1
     unit: ชิ้น
     item: กระเทียม
-  - amount: 1
-    unit: ลูก
+  - amount: 5
+    unit: g
     item: พริกแดง
     note: "หรือปรุงตามชอบ"
   - amount: 2

@@ -31,7 +31,7 @@ ingredients:
   - {amount: 0.5, unit: tl, item: kurkumaa}
   - {amount: 1, unit: tl, item: erytritolia, note: valinnainen}
   - {amount: 10, unit: g, item: kookosöljyä}
-  - {amount: null, unit: "", item: tuoretta korianteria, note: tarjoiluun}
+  - {amount: 5, unit: g, item: tuoretta korianteria, note: tarjoiluun}
 translation_languages:
   - en
   - sv

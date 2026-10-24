@@ -62,8 +62,8 @@ ingredients:
     unit: g
     item: blomkålsris
     note: för servering
-  - amount: null
-    unit: ""
+  - amount: 200
+    unit: g
     item: gurkskivor
     note: för servering
 translation_languages: []

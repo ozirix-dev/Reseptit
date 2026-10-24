@@ -33,7 +33,7 @@ ingredients:
   - { amount: 1, unit: kpl, item: punaista chiliä, note: hienonnettuna }
   - { amount: 2, unit: rkl, item: tuoretta korianteria, note: hienonnettuna }
   - { amount: 1, unit: rkl, item: neutraalia öljyä }
-  - { amount: null, unit: "", item: tuoretta selleriä tai kiinanselleriä, note: hienonnettuna }
+  - { amount: 40, unit: g, item: tuoretta selleriä tai kiinanselleriä, note: hienonnettuna }
 translation_languages:
   - en
   - sv

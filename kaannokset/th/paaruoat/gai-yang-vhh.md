@@ -62,8 +62,8 @@ ingredients:
     unit: g
     item: ข้าวกะหล่ำดอก
     note: สำหรับการเสิร์ฟ
-  - amount: null
-    unit: ""
+  - amount: 200
+    unit: g
     item: ชิ้นแตงกวา
     note: สำหรับการเสิร์ฟ
 translation_languages: []

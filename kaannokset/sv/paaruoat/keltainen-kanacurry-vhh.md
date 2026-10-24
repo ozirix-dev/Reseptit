@@ -61,8 +61,8 @@ ingredients:
   - amount: 10
     unit: g
     item: kokosolja
-  - amount: null
-    unit: ""
+  - amount: 5
+    unit: g
     item: färsk koriander
     note: för servering
 translation_languages: []

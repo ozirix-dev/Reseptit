@@ -61,8 +61,8 @@ ingredients:
   - amount: 10
     unit: g
     item: น้ำมันมะพร้าว
-  - amount: null
-    unit: ""
+  - amount: 5
+    unit: g
     item: ผักชีสด
     note: สำหรับการเสิร์ฟ
 translation_languages: []

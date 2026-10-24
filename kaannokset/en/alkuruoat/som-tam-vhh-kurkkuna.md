@@ -47,8 +47,8 @@ ingredients:
   - amount: 1
     unit: piece
     item: clove of garlic
-  - amount: 1
-    unit: piece
+  - amount: 5
+    unit: g
     item: red chili
     note: or to taste
   - amount: 2

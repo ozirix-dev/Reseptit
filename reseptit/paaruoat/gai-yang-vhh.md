@@ -31,7 +31,7 @@ ingredients:
   - {amount: 1, unit: tl, item: erytritolia}
   - {amount: 1, unit: rkl, item: limettimehua}
   - {amount: 500, unit: g, item: kukkakaaliriisiä, note: tarjoiluun}
-  - {amount: null, unit: "", item: kurkkuviipaleita, note: tarjoiluun}
+  - {amount: 200, unit: g, item: kurkkuviipaleita, note: tarjoiluun}
 translation_languages:
   - en
   - sv

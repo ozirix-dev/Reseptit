@@ -66,8 +66,8 @@ ingredients:
   - amount: 1
     unit: tbsp
     item: neutral oil
-  - amount: null
-    unit: ""
+  - amount: 40
+    unit: g
     item: fresh celery or Chinese celery
     note: "finely chopped"
 translation_languages: []

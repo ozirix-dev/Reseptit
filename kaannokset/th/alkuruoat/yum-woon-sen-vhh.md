@@ -66,8 +66,8 @@ ingredients:
   - amount: 1
     unit: ช้อนโต๊ะ
     item: น้ำมันที่เป็นกลาง
-  - amount: null
-    unit: ""
+  - amount: 40
+    unit: g
     item: คื่นฉ่ายสดหรือขึ้นฉ่ายจีน
     note: "สับละเอียด"
 translation_languages: []

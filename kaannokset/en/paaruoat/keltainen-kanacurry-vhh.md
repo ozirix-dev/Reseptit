@@ -61,8 +61,8 @@ ingredients:
   - amount: 10
     unit: g
     item: coconut oil
-  - amount: null
-    unit: ""
+  - amount: 5
+    unit: g
     item: fresh coriander
     note: for serving
 translation_languages: []

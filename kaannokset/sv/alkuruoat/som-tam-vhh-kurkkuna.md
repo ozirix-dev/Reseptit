@@ -47,8 +47,8 @@ ingredients:
   - amount: 1
     unit: st
     item: vitlöksklyfta
-  - amount: 1
-    unit: st
+  - amount: 5
+    unit: g
     item: röd chili
     note: eller efter smak
   - amount: 2

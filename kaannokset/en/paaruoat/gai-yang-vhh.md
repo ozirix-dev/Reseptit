@@ -62,8 +62,8 @@ ingredients:
     unit: g
     item: cauliflower rice
     note: for serving
-  - amount: null
-    unit: ""
+  - amount: 200
+    unit: g
     item: cucumber slices
     note: for serving
 translation_languages: []

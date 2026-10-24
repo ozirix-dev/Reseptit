@@ -27,7 +27,7 @@ ingredients:
   - {amount: 100, unit: g, item: vihreitä papuja, note: ohuiksi paloiksi leikattuina}
   - {amount: 30, unit: g, item: suolattomia maapähkinöitä, note: paahdettuina}
   - {amount: 1, unit: kpl, item: valkosipulinkynsi}
-  - {amount: 1, unit: kpl, item: punainen chili, note: tai maun mukaan}
+  - {amount: 5, unit: g, item: punainen chili, note: tai maun mukaan}
   - {amount: 2, unit: rkl, item: limettimehua}
   - {amount: 1, unit: rkl, item: kalakastiketta}
   - {amount: 1, unit: tl, item: erytritolia}
