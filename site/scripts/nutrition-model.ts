@@ -6,6 +6,8 @@ export type CarbDefinition = "EU_AVAILABLE" | "US_TOTAL_INCLUDING_FIBRE" | "UNKN
 export interface FoodRecord {
   id: string; name: string; sourceUrl: string; retrievedAt: string; licence: string;
   state: string; basis: "per100g-edible"; carbohydrateDefinition: CarbDefinition;
+  componentValues?: Partial<Record<"CHO" | "FIBT" | "POLYL", number | null>>;
+  componentIds?: Partial<Record<"CHO" | "FIBT" | "POLYL", number>>;
   per100g: Partial<Omit<Values, "netCarbohydrate">>;
 }
 export interface IngredientInput {
@@ -19,7 +21,7 @@ export interface IngredientInput {
 export interface Calculation {
   recipeId: string; sourceHash: string; calculatedAt: string; servings: number;
   scope: string; reviewerStatus: "AUTOMATED ONLY"; ingredients: IngredientInput[];
-  // Only this definition is aggregated. US total is converted once, EU is not.
+  // Available carbohydrate is normalized to the same basis before aggregation.
   carbohydrateOutput: "AVAILABLE_EXCLUDING_FIBRE";
 }
 export const emptyValues = (): Values => Object.fromEntries(nutrients.map((n) => [n, null])) as Values;
@@ -48,9 +50,23 @@ export function round(value: number, decimals = 2): number {
   if (!valid(value) || !Number.isInteger(decimals) || decimals < 0 || decimals > 6) throw Error("Invalid rounding input");
   return roundFraction(decimal(value), decimals);
 }
+function nutrientValue(record: FoodRecord, nutrient: "carbohydrate" | "fibre" | "polyols"): number | null | undefined {
+  const component = { carbohydrate: "CHO", fibre: "FIBT", polyols: "POLYL" }[nutrient];
+  if (!record.componentValues) return record.per100g[nutrient];
+  const expectedId = { CHO: 2034, FIBT: 2168, POLYL: 2260 }[component];
+  if (record.componentIds?.[component] !== expectedId || !Object.hasOwn(record.componentValues, component)) {
+    throw Error(`Missing or mismatched Fineli component mapping for ${component}`);
+  }
+  const componentValue = record.componentValues[component];
+  const summaryValue = record.per100g[nutrient];
+  if (componentValue !== null && summaryValue !== componentValue) throw Error(`Fineli ${component} does not match its normalized value`);
+  return componentValue;
+}
 export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE") {
   if (subtractFibre && record.carbohydrateDefinition !== "US_TOTAL_INCLUDING_FIBRE") throw Error("Fibre would be subtracted twice or definition is unknown");
-  const { carbohydrate, fibre, polyols } = record.per100g;
+  const carbohydrate = nutrientValue(record, "carbohydrate");
+  const fibre = nutrientValue(record, "fibre");
+  const polyols = nutrientValue(record, "polyols");
   let available: number | null = null;
   if (record.carbohydrateDefinition === "EU_AVAILABLE" && valid(carbohydrate)) available = carbohydrate;
   if (record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE" && subtractFibre && valid(carbohydrate) && valid(fibre)) {
@@ -59,6 +75,16 @@ export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record
   }
   // No blanket polyol subtraction, including erythritol. A future policy needs evidence.
   return { available, net: polyols === 0 ? available : null };
+}
+/**
+ * Total carbohydrate for this site's display means available carbohydrate +
+ * dietary fibre + polyols. Fineli's CHO value is available carbohydrate even
+ * though its component type is named TOTALCAR. Missing fibre/polyol data is
+ * never treated as zero.
+ */
+export function totalCarbohydrate(available: number | null, fibre: number | null, polyols: number | null): number | null {
+  if (!valid(available) || !valid(fibre) || !valid(polyols)) return null;
+  return round(available + fibre + polyols, 6);
 }
 export function calculate(input: Calculation) {
   if (!Number.isInteger(input.servings) || input.servings <= 0) throw Error("Invalid servings");
@@ -83,16 +109,25 @@ export function calculate(input: Calculation) {
     if (record) for (const [key, value] of Object.entries(record.per100g)) {
       if (!(nutrients as readonly string[]).includes(key) || key === "netCarbohydrate" || (value !== null && !valid(value))) fail(`Invalid nutrient ${key}`);
     }
+    if (record?.componentValues) {
+      for (const key of ["carbohydrate", "fibre", "polyols"] as const) {
+        try { const value = nutrientValue(record, key); if (value !== null && !valid(value)) fail(`Invalid component value ${key}`); }
+        catch (error) { fail(String(error)); }
+      }
+    }
     const exactMass = issues.length ? null : [ingredient.amount!, factor!, ingredient.edibleFraction!].map(decimal).reduce(multiply);
     exactMasses.push(exactMass);
     const grams = exactMass ? numeric(exactMass) : null;
     if (grams !== null && record) {
       const weight = multiply(multiply(exactMass!, decimal(ingredient.retainedFraction!)), { n: 1n, d: 100n });
-      for (const key of nutrients) if (key !== "netCarbohydrate" && valid(record.per100g[key])) exact[key] = multiply(decimal(record.per100g[key]!), weight);
+      for (const key of nutrients) if (key !== "netCarbohydrate") {
+        const nutrient = key === "carbohydrate" || key === "fibre" || key === "polyols" ? nutrientValue(record, key) : record.per100g[key];
+        if (valid(nutrient)) exact[key] = multiply(decimal(nutrient), weight);
+      }
       try {
         const carb = normalizeCarbohydrate(record);
-        let available = carb.available === null ? null : decimal(record.per100g.carbohydrate!);
-        if (available && record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE") { const fibre = decimal(record.per100g.fibre!); available = add(available, { n: -fibre.n, d: fibre.d }); }
+        let available = carb.available === null ? null : decimal(nutrientValue(record, "carbohydrate")!);
+        if (available && record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE") { const fibre = decimal(nutrientValue(record, "fibre")!); available = add(available, { n: -fibre.n, d: fibre.d }); }
         exact.carbohydrate = available ? multiply(available, weight) : null;
         exact.netCarbohydrate = carb.net === null ? null : exact.carbohydrate;
       } catch (error) { exact.carbohydrate = null; fail(String(error)); }
@@ -108,6 +143,14 @@ export function calculate(input: Calculation) {
       total[key] = roundFraction(sum); perServing[key] = roundFraction(multiply(sum, { n: 1n, d: BigInt(input.servings) }));
     }
   }
-  return { ...input, rows, total, perServing, edibleInputGrams: exactMasses.length && exactMasses.every((m) => m !== null) ? roundFraction((exactMasses as Fraction[]).reduce(add)) : null,
+  const exactTotalCarbohydrate = exactRows.length && exactRows.every((row) => row.carbohydrate !== null && row.fibre !== null && row.polyols !== null)
+    ? exactRows.map((row) => add(add(row.carbohydrate!, row.fibre!), row.polyols!)).reduce(add)
+    : null;
+  const totalCarbohydrateGrams = exactTotalCarbohydrate === null ? null : roundFraction(exactTotalCarbohydrate);
+  const totalCarbohydratePerServingG = exactTotalCarbohydrate === null
+    ? null
+    : roundFraction({ n: exactTotalCarbohydrate.n, d: exactTotalCarbohydrate.d * BigInt(input.servings) });
+  return { ...input, rows, total, perServing, totalCarbohydrateGrams, totalCarbohydratePerServingG,
+    edibleInputGrams: exactMasses.length && exactMasses.every((m) => m !== null) ? roundFraction((exactMasses as Fraction[]).reduce(add)) : null,
     status: nutrients.every((n) => total[n] !== null) ? "ESTIMATE WITH EVIDENCE" : "INSUFFICIENT SOURCE DATA" };
 }

@@ -38,6 +38,10 @@ ingredients:
   - amount: 2
     unit: rkl
     item: silputtua persiljaa
+carbs_net_per_serving_g: 8.9
+carbs_total_per_serving_g: 12.4
+protein_per_serving_g: 15.6
+fat_per_serving_g: 17.5
 servings: 2
 time_total_min: 30
 difficulty: Helppo

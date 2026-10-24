@@ -7,6 +7,7 @@ import { auditTranslations } from "./translation-audit";
 import { calculate, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
 const root = path.resolve(import.meta.dirname, "../..");
 const keys = ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const;
+const fineliCarbohydrateEvidence = new Set(["munakokkeli", "munakasmuffinit", "munakasrulla-pinaatti-tuorejuustolla", "munatacot-huevos-rancheros", "paprikauunimunakkaat", "shakshuka", "uunimuna-avokadot", "uunimunat-pinaatilla", "tortilla-de-patatas", "vhh-lihamureke"]);
 const audit = await auditTranslations();
 const calculatedAt = new Date().toISOString().slice(0, 10);
 const provenance = await nutritionProvenance(root);
@@ -14,10 +15,14 @@ const sourceHashes: Record<string, string> = Object.fromEntries(await Promise.al
 const inventory = audit.publishedSources.map((recipe) => {
   const values = Object.fromEntries(keys.map((key) => [key, recipe.data[key] ?? null]));
   const hasValues = Object.values(values).some((n) => n !== null);
+  const hasFineliCarbohydrateEvidence = fineliCarbohydrateEvidence.has(recipe.data.recipe_id) && recipe.data.carbs_total_per_serving_g != null;
   const conflicts = recipe.data.carbs_net_per_serving_g != null && recipe.data.carbs_total_per_serving_g != null && recipe.data.carbs_net_per_serving_g > recipe.data.carbs_total_per_serving_g;
   return { recipe_id: recipe.data.recipe_id, source_path: recipe.path, source_content_hash: sourceHashes[recipe.path], values, servings: recipe.data.servings,
     status: conflicts ? "CONFLICT REQUIRES REVIEW" : hasValues ? "INSUFFICIENT SOURCE DATA" : "MISSING",
-    calculationEvidence: null, carbohydrateDefinition: "NOT DOCUMENTED", portionBasis: "metadata fields per serving", brandAndRawWeightEvidence: "NOT VERIFIED",
+    calculationEvidence: hasFineliCarbohydrateEvidence ? "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json" : null,
+    carbohydrateDefinition: recipe.data.carbs_net_per_serving_g == null ? "NOT DOCUMENTED" : "AVAILABLE_EXCLUDING_FIBRE",
+    totalCarbohydrateDefinition: hasFineliCarbohydrateEvidence ? "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS" : "NOT DOCUMENTED",
+    portionBasis: "metadata fields per serving", brandAndRawWeightEvidence: hasFineliCarbohydrateEvidence ? "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md" : "NOT VERIFIED",
     missingFields: keys.filter((key) => recipe.data[key] == null),
     ingredients: recipe.data.ingredients,
     notes: recipe.content.split("## Muistiinpanot")[1]?.trim() ?? "",
