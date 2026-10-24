@@ -23,7 +23,7 @@ ingredients:
     item: "skotlantilainen chili"
   - amount: 2
     unit: "rkl"
-    item: "timjami"
+    item: "tuoretta timjamia"
   - amount: 1
     unit: "rkl"
     item: "neutraalia paistoöljyä"
@@ -42,6 +42,11 @@ image:
   alt: "Jamaikalainen mausteinen munakokkeli tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 2.35
+carbs_total_per_serving_g: 3.02
+protein_per_serving_g: 7.45
+fat_per_serving_g: 12.06
+
 ---
 
 # Jamaikalainen mausteinen munakokkeli
@@ -59,4 +64,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Pilko täytteen kasvikset ja muut suuret ainekset pieniksi paloiksi. Kuullota ne pannulla tilkassa öljyä, kunnes ne ovat pehmenneet.
 2. Vatkaa kananmunat ja mausta ripauksella suolaa. Kaada munaseos pannulle ja laske lämpö miedoksi.
 3. Vedä hyytynyttä munaa reunoilta kohti keskustaa. Taita tai rullaa, kun pinta on juuri hyytynyt.
-4. Kypsennä tomaatti, sipuli ja timjami ensin, lisää munat ja sekoita pehmeäksi kokkeliksi.
+4. Kypsennä tomaatti ja timjami ensin, lisää munat ja sekoita pehmeäksi kokkeliksi.

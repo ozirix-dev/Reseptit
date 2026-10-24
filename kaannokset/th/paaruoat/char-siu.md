@@ -48,13 +48,18 @@ ingredients:
     unit: ช้อนโต๊ะ
     item: น้ำผึ้ง
     note: สำหรับการแปรงพื้นผิว
-  - amount: 4
-    unit: ที่
-    item: ข้าวสวย
-    note: สำหรับการเสิร์ฟ
+  - amount: 600
+    unit: g
+    item: ข้าวขาวเมล็ดยาวหุงสุก
+    note: 150 g ต่อหนึ่งที่
 source_language: fi
 source_recipe: reseptit/paaruoat/char-siu.md
 translation_of: char-siu
+carbs_net_per_serving_g: 51.32
+carbs_total_per_serving_g: 53.07
+protein_per_serving_g: 50.97
+fat_per_serving_g: 5.5
+
 ---
 
 # Char siu – หมูบาร์บีคิวกวางตุ้ง

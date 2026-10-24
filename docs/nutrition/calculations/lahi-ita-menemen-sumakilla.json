@@ -1,0 +1,220 @@
+{
+  "recipeId": "lahi-ita-menemen-sumakilla",
+  "sourceHash": "b85318cf6965234f4040a5b3cc9af1f6eadc69cfc39c81dca5adb3916b1a9028",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-13",
+  "servings": 2,
+  "scope": "Two servings. Uses two medium eggs, one medium tomato, one medium green pepper, and listed pan oil fully retained. One teaspoon sumac is excluded under its written bounded seasoning scenario. Practical estimate, not laboratory analysis.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kananmuna",
+      "amount": 2,
+      "unit": "kpl",
+      "state": "raw edible egg, shell removed",
+      "matchEvidence": "Raw edible egg; Fineli Release 20 record 858.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli record 858 medium egg portion KPL_M = 55 g edible egg without shell.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible egg, shell removed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    },
+    {
+      "item": "tomaatti",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "raw medium tomato, edible portion",
+      "matchEvidence": "Raw tomato; Fineli Release 20 record 352.",
+      "gramsPerUnit": 125,
+      "conversionEvidence": "Fineli record 352 medium tomato portion KPL_M = 125 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-352-release-20",
+        "name": "TOMAATTI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/352",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw medium tomato, edible portion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.45,
+          "FIBT": 0.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3.45,
+          "fibre": 0.4,
+          "polyols": 0,
+          "protein": 0.55,
+          "fat": 0.3
+        }
+      }
+    },
+    {
+      "item": "vihreä paprika",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "raw medium green bell pepper, edible portion",
+      "matchEvidence": "Raw green bell pepper; Fineli Release 20 record 387.",
+      "gramsPerUnit": 170,
+      "conversionEvidence": "Fineli record 387 medium green bell pepper portion KPL_M = 170 g edible pepper.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-387-release-20",
+        "name": "PAPRIKA, VIHREÄ",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/387",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw medium green bell pepper, edible portion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 2.5,
+          "FIBT": 1.8,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 2.5,
+          "fibre": 1.8,
+          "polyols": 0,
+          "protein": 0.94,
+          "fat": 0.3
+        }
+      }
+    },
+    {
+      "item": "sumakki",
+      "amount": 1,
+      "unit": "tl",
+      "state": "small spice omitted under bounded seasoning scenario",
+      "matchEvidence": "One teaspoon sumac is a low-dose dry seasoning; upper-bound impact per serving is documented.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "No complete local sumac nutrient record was available; omit this low-dose seasoning within the project omission tolerance.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 2,
+        "netCarbohydrate": 0.3,
+        "totalCarbohydrate": 0.4,
+        "protein": 0.1,
+        "fat": 0.1
+      },
+      "omissionImpactEvidence": "A 2 g teaspoon of dry sumac across the recipe is conservatively bounded below 4 kcal and 0.8 g total carbohydrate for the whole recipe."
+    },
+    {
+      "item": "neutraalia paistoöljyä",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "neutral vegetable cooking oil",
+      "matchEvidence": "Average neutral cooking oil; Fineli Release 20 record 541.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Fineli record 541 lists 13.5 g per tablespoon (RKL). All listed pan oil is counted as retained.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-541-release-20",
+        "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "neutral vegetable cooking oil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 99.9
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
+      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+    }
+  ]
+}

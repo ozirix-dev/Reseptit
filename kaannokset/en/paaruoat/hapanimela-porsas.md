@@ -67,13 +67,18 @@ ingredients:
   - amount: 1
     unit: dl
     item: water
-  - amount: 4
-    unit: servings
-    item: cooked rice
-    note: for serving
+  - amount: 600
+    unit: g
+    item: cooked long-grain white rice
+    note: 150 g per serving
 source_language: fi
 source_recipe: reseptit/paaruoat/hapanimela-porsas.md
 translation_of: hapanimela-porsas
+carbs_net_per_serving_g: 54.86
+carbs_total_per_serving_g: 56.87
+protein_per_serving_g: 41.4
+fat_per_serving_g: 15.4
+
 ---
 
 # Sweet and sour pork and vegetables

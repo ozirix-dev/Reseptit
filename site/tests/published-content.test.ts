@@ -106,6 +106,23 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     ["vhh-omenapiirakka", 4.24], ["vhh-raparperipiirakka", 3.46],
     ["keto-korvapuustit", 1.99], ["vhh-lihapiirakka", 2.27],
     ["vhh-runebergintortut", 2.16], ["siemengranola-jogurtilla", 8.09],
+    ["karibia-callaloo-munakas", 2.12],
+    ["yrttituorejuusto-kinkkurullat", 2.76],
+    ["karibia-jamaikalainen-munakokkeli", 2.35],
+    ["karibia-kookosriisi-pavuilla", 51.60],
+    ["kiinalainen-tomaattimunakas-riisilla", 42.10],
+    ["kiinalainen-riisipuuro-kananmunalla", 39.99],
+    ["korealainen-yachaejuk-kasvisjuk", 45.54],
+    ["lahi-ita-fattet-hummus", 33.61],
+    ["lahi-ita-kikhernejauho-yrttilettu", 20.94],
+    ["lahi-ita-menemen-sumakilla", 4.45],
+    ["malesialainen-congee-inkivaarilla", 40.68],
+    ["pohjoisafrikkalainen-lablabi", 33.84],
+    ["thai-jok-kanalla", 39.71],
+    ["thai-kai-jiao-yrteilla", 0.70],
+    ["thai-khao-tom-katkaravuilla", 41.20],
+    ["thai-porsasjok", 39.71],
+    ["valimerellinen-ricotta-persikkakulho", 8.27],
   ]);
   for (const recipe of [...breakfast, ...desserts]) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
@@ -156,6 +173,8 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
     ["kana-parmesaanipannu-parsakaali", 2.91],
     ["raejuusto-pesto-kasviskulho", 2.99],
     ["lindstrominpihvit-kaalilla", 9.54],
+    ["kanaviillokki-kukkakaalilla", 9.25],
+    ["yrttituorejuusto-kinkkurullat", 2.76],
     ["uunimakkara-sipulipedilla", 12.02],
     ["silakkapihvit-tilli-kermakastike", 3.82],
     ["lanttulaatikko-kermainen", 16.68],
@@ -335,6 +354,41 @@ test("batch twelve publishes recalculated macronutrients for every recipe and av
     ["ropa-vieja", [7.67, 9.77, 34.06, 6.77]],
     ["kerala-kalacurry", [5.54, 6.67, 28.28, 22.7]],
     ["kanapyorykat-tomaattikastike", [4.94, 5.61, 29.44, 21.23]],
+  ]);
+  const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
+  assert.ok(recipes.length >= expected.size, "all batch recipes have published Finnish pages");
+  assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(expected.keys()));
+  for (const recipe of recipes) {
+    assert.deepEqual(
+      [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],
+      expected.get(recipe.recipeId),
+      `${recipe.recipeId}/${recipe.locale}`,
+    );
+  }
+});
+
+test("batch thirteen publishes recalculated macronutrients for every recipe and available translation", () => {
+  const expected = new Map([
+    ["char-siu", [51.32, 53.07, 50.97, 5.5]],
+    ["hapanimela-porsas", [54.86, 56.87, 41.4, 15.4]],
+    ["kanaviillokki-kukkakaalilla", [9.25, 12.57, 38.04, 34.37]],
+    ["karibia-callaloo-munakas", [2.12, 4.83, 9.32, 12.14]],
+    ["karibia-jamaikalainen-munakokkeli", [2.35, 3.02, 7.45, 12.06]],
+    ["karibia-kookosriisi-pavuilla", [51.6, 57.39, 10.47, 15.18]],
+    ["kiinalainen-tomaattimunakas-riisilla", [42.1, 42.96, 11.45, 12.54]],
+    ["kiinalainen-riisipuuro-kananmunalla", [39.99, 40.63, 11.11, 5.61]],
+    ["korealainen-yachaejuk-kasvisjuk", [45.54, 50.26, 5.39, 8.03]],
+    ["lahi-ita-fattet-hummus", [33.61, 37.78, 11.1, 8.04]],
+    ["lahi-ita-kikhernejauho-yrttilettu", [20.94, 31.93, 10.49, 9.76]],
+    ["lahi-ita-menemen-sumakilla", [4.45, 6.23, 8.08, 12.27]],
+    ["malesialainen-congee-inkivaarilla", [40.68, 41.32, 4.64, 0.54]],
+    ["pohjoisafrikkalainen-lablabi", [33.84, 37.7, 16.02, 9.82]],
+    ["thai-jok-kanalla", [39.71, 40.24, 27.84, 7.11]],
+    ["thai-kai-jiao-yrteilla", [0.7, 0.92, 7.87, 11.85]],
+    ["thai-khao-tom-katkaravuilla", [41.2, 42.08, 15.01, 3.78]],
+    ["thai-porsasjok", [39.71, 40.24, 25.12, 17.38]],
+    ["valimerellinen-ricotta-persikkakulho", [8.27, 10.63, 8.3, 12.79]],
+    ["yrttituorejuusto-kinkkurullat", [2.76, 3.66, 8.17, 6.26]],
   ]);
   const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
   assert.ok(recipes.length >= expected.size, "all batch recipes have published Finnish pages");

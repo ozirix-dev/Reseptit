@@ -14,7 +14,7 @@ cooking_method:
 ingredients:
   - amount: 100
     unit: "g"
-    item: "kikherne"
+    item: "kypsiä, valutettuja kikherneitä"
   - amount: 100
     unit: "g"
     item: "pita"
@@ -39,6 +39,11 @@ image:
   alt: "Fattet hummus jogurtilla ja kikherneillä tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 33.61
+carbs_total_per_serving_g: 37.78
+protein_per_serving_g: 11.1
+fat_per_serving_g: 8.04
+
 ---
 
 # Fattet hummus jogurtilla ja kikherneillä

@@ -14,7 +14,7 @@ cooking_method:
 ingredients:
   - amount: 100
     unit: "g"
-    item: "riisi"
+    item: "kuivaa pitkäjyväistä valkoista riisiä"
   - amount: 1
     unit: "tl"
     item: "inkivääri"
@@ -26,7 +26,7 @@ ingredients:
     item: "kevätsipuli"
   - amount: 700
     unit: "ml"
-    item: "vettä tai mietoa lientä"
+    item: "vettä"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -42,6 +42,11 @@ image:
   alt: "Malesialainen congee soijalla ja inkiväärillä tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 40.68
+carbs_total_per_serving_g: 41.32
+protein_per_serving_g: 4.64
+fat_per_serving_g: 0.54
+
 ---
 
 # Malesialainen congee soijalla ja inkiväärillä
@@ -56,7 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
-2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
-4. Keitä riisi runsaassa vedessä pehmeäksi ja mausta inkiväärillä sekä soijalla.
+1. Huuhtele riisi, laita kattilaan veden kanssa ja kuumenna kiehuvaksi.
+2. Hauduta miedolla lämmöllä sekoittaen, kunnes riisi on pehmeää ja puuro sakeaa.
+3. Lisää raastettu inkivääri ja soijakastike. Sekoita ja kuumenna vielä minuutti.
+4. Mausta suolalla, jaa puuro kulhoihin ja ripottele pinnalle kevätsipuli.

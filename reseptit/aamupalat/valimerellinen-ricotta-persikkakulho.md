@@ -15,15 +15,16 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "ricotta"
-  - amount: 1
-    unit: "kpl"
-    item: "persikka"
-  - amount: 100
+  - amount: 150
+    unit: "g"
+    item: "kivettömiä persikkaviipaleita"
+  - amount: 30
     unit: "g"
     item: "pistaasi"
+    note: 15 g annosta kohti
   - amount: 1
-    unit: "kpl"
-    item: "sitruuna"
+    unit: "rkl"
+    item: "sitruunamehua"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -39,6 +40,11 @@ image:
   alt: "Ricotta-persikkakulho pistaasilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 8.27
+carbs_total_per_serving_g: 10.63
+protein_per_serving_g: 8.3
+fat_per_serving_g: 12.79
+
 ---
 
 # Ricotta-persikkakulho pistaasilla
@@ -56,4 +62,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Valmistele kulhon ainekset; kypsennä pavut tai proteiini, jos käytät niitä kuivina tai raakana. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
 2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
 3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Lusikoi kulhoon ricotta ja persikkaviipaleet, viimeistele pistaasilla.
+4. Lusikoi kulhoon ricotta ja persikkaviipaleet. Mausta sitruunamehulla ja viimeistele pistaasilla.

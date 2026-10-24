@@ -67,13 +67,18 @@ ingredients:
   - amount: 1
     unit: dl
     item: น้ำ
-  - amount: 4
-    unit: ที่
-    item: ข้าวสวย
-    note: สำหรับการเสิร์ฟ
+  - amount: 600
+    unit: g
+    item: ข้าวขาวเมล็ดยาวหุงสุก
+    note: 150 g ต่อหนึ่งที่
 source_language: fi
 source_recipe: reseptit/paaruoat/hapanimela-porsas.md
 translation_of: hapanimela-porsas
+carbs_net_per_serving_g: 54.86
+carbs_total_per_serving_g: 56.87
+protein_per_serving_g: 41.4
+fat_per_serving_g: 15.4
+
 ---
 
 # หมูเปรี้ยวหวานและผัก

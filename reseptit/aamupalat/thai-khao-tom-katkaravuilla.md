@@ -17,7 +17,7 @@ ingredients:
     item: "katkarapu"
   - amount: 100
     unit: "g"
-    item: "jasmiiniriisi"
+    item: "kuivaa valkoista pitkäjyväistä riisiä"
   - amount: 1
     unit: "tl"
     item: "valkosipuli"
@@ -26,7 +26,7 @@ ingredients:
     item: "inkivääri"
   - amount: 700
     unit: "ml"
-    item: "kasvis- tai kanalientä"
+    item: "laimennettua kanalientä"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -42,6 +42,11 @@ image:
   alt: "Khao tom katkaravuilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 41.2
+carbs_total_per_serving_g: 42.08
+protein_per_serving_g: 15.01
+fat_per_serving_g: 3.78
+
 ---
 
 # Khao tom katkaravuilla
@@ -56,7 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Kuumenna kattilassa öljy tai liemi. Lisää aromit ja hitaammin kypsyvät ainekset; paista tai hauduta muutama minuutti.
-2. Kaada kattilaan liemi ja keitä miedosti, kunnes pääraaka-aineet ovat kypsiä.
-3. Lisää nuudelit, lehtivihannekset tai muut nopeasti kypsyvät ainekset niiden kypsymisajan mukaan.
-4. Lisää päälle kevätsipulia, korianteria ja paahdettua valkosipulia.
+1. Huuhtele riisi ja keitä se kanaliemessä miedolla lämmöllä lähes pehmeäksi.
+2. Lisää valkosipuli ja inkivääri. Hauduta muutama minuutti.
+3. Lisää katkaravut ja kypsennä, kunnes ne ovat kauttaaltaan läpikuultamattomia.
+4. Mausta suolalla ja tarjoa kuumana.
