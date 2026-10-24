@@ -31,6 +31,10 @@ ingredients:
     unit: ""
     item: "suolaa maun mukaan"
 servings: 2
+carbs_net_per_serving_g: 6.14
+carbs_total_per_serving_g: 6.90
+protein_per_serving_g: 7.83
+fat_per_serving_g: 18.61
 time_total_min: 25
 difficulty: Helppo
 tags:

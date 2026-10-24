@@ -136,17 +136,27 @@
     "componentValues": {
       "CHO": 0,
       "FIBT": 0,
-      "POLYL": 0
+      "POLYL": 0,
+      "PROT": 0,
+      "FAT": 100
     },
     "componentIds": {
       "CHO": 2034,
       "FIBT": 2168,
-      "POLYL": 2260
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
     },
     "per100g": {
       "carbohydrate": 0,
       "fibre": 0,
-      "polyols": 0
+      "polyols": 0,
+      "protein": 0,
+      "fat": 100
+    },
+    "portionMasses_g": {
+      "DL": 90,
+      "RKL": 13.5
     }
   },
   {
@@ -159,19 +169,30 @@
     "basis": "per100g-edible",
     "carbohydrateDefinition": "EU_AVAILABLE",
     "componentValues": {
-      "CHO": 3.45000004768372,
+      "CHO": 3.5,
       "FIBT": 1.4,
-      "POLYL": 0
+      "POLYL": 0,
+      "PROT": 0.6,
+      "FAT": 0.3
     },
     "componentIds": {
       "CHO": 2034,
       "FIBT": 2168,
-      "POLYL": 2260
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
     },
     "per100g": {
-      "carbohydrate": 3.45000004768372,
+      "carbohydrate": 3.5,
       "fibre": 1.4,
-      "polyols": 0
+      "polyols": 0,
+      "protein": 0.6,
+      "fat": 0.3
+    },
+    "portionMasses_g": {
+      "KPL_S": 75,
+      "KPL_M": 125,
+      "KPL_L": 170
     }
   },
   {
@@ -273,17 +294,26 @@
     "componentValues": {
       "CHO": 15.5,
       "FIBT": 1,
-      "POLYL": 0
+      "POLYL": 0,
+      "PROT": 1.9,
+      "FAT": 0.1
     },
     "componentIds": {
       "CHO": 2034,
       "FIBT": 2168,
-      "POLYL": 2260
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
     },
     "per100g": {
       "carbohydrate": 15.5,
       "fibre": 1,
-      "polyols": 0
+      "polyols": 0,
+      "protein": 1.9,
+      "fat": 0.1
+    },
+    "portionMasses_g": {
+      "KPL_M": 60
     }
   },
   {
@@ -321,19 +351,29 @@
     "basis": "per100g-edible",
     "carbohydrateDefinition": "EU_AVAILABLE",
     "componentValues": {
-      "CHO": 0.25,
+      "CHO": 0.2,
       "FIBT": 1.9,
-      "POLYL": 0
+      "POLYL": 0,
+      "PROT": 2.1,
+      "FAT": 0.6
     },
     "componentIds": {
       "CHO": 2034,
       "FIBT": 2168,
-      "POLYL": 2260
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
     },
     "per100g": {
-      "carbohydrate": 0.25,
+      "carbohydrate": 0.2,
       "fibre": 1.9,
-      "polyols": 0
+      "polyols": 0,
+      "protein": 2.1,
+      "fat": 0.6
+    },
+    "portionMasses_g": {
+      "KPL_M": 2,
+      "DL": 50
     }
   },
   {
@@ -443,17 +483,27 @@
     "componentValues": {
       "CHO": 4,
       "FIBT": 0.5,
-      "POLYL": 0
+      "POLYL": 0,
+      "PROT": 7.4,
+      "FAT": 11
     },
     "componentIds": {
       "CHO": 2034,
       "FIBT": 2168,
-      "POLYL": 2260
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
     },
     "per100g": {
       "carbohydrate": 4,
       "fibre": 0.5,
-      "polyols": 0
+      "polyols": 0,
+      "protein": 7.4,
+      "fat": 11
+    },
+    "portionMasses_g": {
+      "DL": 100,
+      "RKL": 15
     }
   },
   {
@@ -468,17 +518,26 @@
     "componentValues": {
       "CHO": 2.5,
       "FIBT": 0.7,
-      "POLYL": 0
+      "POLYL": 0,
+      "PROT": 0.7,
+      "FAT": 0.4
     },
     "componentIds": {
       "CHO": 2034,
       "FIBT": 2168,
-      "POLYL": 2260
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
     },
     "per100g": {
       "carbohydrate": 2.5,
       "fibre": 0.7,
-      "polyols": 0
+      "polyols": 0,
+      "protein": 0.7,
+      "fat": 0.4
+    },
+    "portionMasses_g": {
+      "KPL_M": 350
     }
   },
   {
@@ -510,7 +569,8 @@
       "polyols": 0,
       "protein": 19.1,
       "fat": 16.9
-    }
+    },
+    "portionMasses_g": {}
   },
   {
     "id": "fineli-392-2026-10-24",
@@ -549,12 +609,16 @@
     "componentValues": {
       "CHO": 2.5,
       "FIBT": 1.9,
-      "POLYL": 0
+      "POLYL": 0,
+      "PROT": 0.9,
+      "FAT": 0.3
     },
     "componentIds": {
       "CHO": 2034,
       "FIBT": 2168,
-      "POLYL": 2260
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
     },
     "per100g": {
       "carbohydrate": 2.5,
@@ -564,7 +628,9 @@
       "fat": 0.3
     },
     "portionMasses_g": {
-      "KPL_M": 170
+      "KPL_M": 170,
+      "KPL_S": 120,
+      "KPL_L": 230
     }
   },
   {
@@ -707,12 +773,16 @@
     "componentValues": {
       "CHO": 0,
       "FIBT": 0,
-      "POLYL": 0
+      "POLYL": 0,
+      "PROT": 22.4,
+      "FAT": 2
     },
     "componentIds": {
       "CHO": 2034,
       "FIBT": 2168,
-      "POLYL": 2260
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
     },
     "per100g": {
       "carbohydrate": 0,
@@ -720,7 +790,8 @@
       "polyols": 0,
       "protein": 22.4,
       "fat": 2
-    }
+    },
+    "portionMasses_g": {}
   },
   {
     "id": "fineli-32385-2026-10-24",
@@ -834,12 +905,16 @@
     "componentValues": {
       "CHO": 17.6,
       "FIBT": 5,
-      "POLYL": 0
+      "POLYL": 0,
+      "PROT": 8.4,
+      "FAT": 2.5
     },
     "componentIds": {
       "CHO": 2034,
       "FIBT": 2168,
-      "POLYL": 2260
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
     },
     "per100g": {
       "carbohydrate": 17.6,
@@ -847,6 +922,10 @@
       "polyols": 0,
       "protein": 8.4,
       "fat": 2.5
+    },
+    "portionMasses_g": {
+      "DL": 60,
+      "RKL": 10
     }
   },
   {
@@ -888,12 +967,16 @@
     "componentValues": {
       "CHO": 1.1,
       "FIBT": 8,
-      "POLYL": 0
+      "POLYL": 0,
+      "PROT": 1.4,
+      "FAT": 0.2
     },
     "componentIds": {
       "CHO": 2034,
       "FIBT": 2168,
-      "POLYL": 2260
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
     },
     "per100g": {
       "carbohydrate": 1.1,
@@ -903,7 +986,7 @@
       "fat": 0.2
     },
     "portionMasses_g": {
-      "RKL": 7
+      "RKL": 2
     }
   },
   {
@@ -1039,12 +1122,16 @@
     "componentValues": {
       "CHO": 1.4,
       "FIBT": 0.7,
-      "POLYL": 0
+      "POLYL": 0,
+      "PROT": 0.7,
+      "FAT": 0.1
     },
     "componentIds": {
       "CHO": 2034,
       "FIBT": 2168,
-      "POLYL": 2260
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
     },
     "per100g": {
       "carbohydrate": 1.4,
@@ -1052,6 +1139,12 @@
       "polyols": 0,
       "protein": 0.7,
       "fat": 0.1
+    },
+    "portionMasses_g": {
+      "KPL_S": 250,
+      "KPL_M": 400,
+      "KPL_L": 600,
+      "DL": 45
     }
   },
   {
@@ -1066,12 +1159,16 @@
     "componentValues": {
       "CHO": 1.2,
       "FIBT": 0,
-      "POLYL": 0
+      "POLYL": 0,
+      "PROT": 18,
+      "FAT": 25
     },
     "componentIds": {
       "CHO": 2034,
       "FIBT": 2168,
-      "POLYL": 2260
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
     },
     "per100g": {
       "carbohydrate": 1.2,
@@ -1079,6 +1176,9 @@
       "polyols": 0,
       "protein": 18,
       "fat": 25
+    },
+    "portionMasses_g": {
+      "DL": 60
     }
   },
   {
@@ -1926,5 +2026,189 @@
       "DL": 60,
       "RKL": 12
     }
+  },
+  {
+    "id": "fineli-541-2026-10-24",
+    "name": "Ruokaöljy keskiarvo, 87 % rypsi-, 8 % auringonkukka- ja 5 % oliiviöljyä",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541?c=2034&c2=2168",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed; edible portion 100%; retention not modelled",
+    "basis": "per100g-as-listed",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0,
+      "FIBT": 0,
+      "POLYL": 0,
+      "PROT": 0,
+      "FAT": 99.9
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
+    },
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 0,
+      "fat": 99.9
+    },
+    "portionMasses_g": {
+      "DL": 90,
+      "RKL": 13.5,
+      "TL": 4.5
+    },
+    "ediblePortion": 100
+  },
+  {
+    "id": "fineli-31681-2026-10-24",
+    "name": "Psyllium, siemenkuorijauhe",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/31681?c=2034&c2=2168",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed; edible portion 100%; retention not modelled",
+    "basis": "per100g-as-listed",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0,
+      "FIBT": 85,
+      "POLYL": 0,
+      "PROT": 1.5,
+      "FAT": 0.6
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
+    },
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 85,
+      "polyols": 0,
+      "protein": 1.5,
+      "fat": 0.6
+    },
+    "portionMasses_g": {
+      "RKL": 10,
+      "TL": 3
+    },
+    "ediblePortion": 100
+  },
+  {
+    "id": "fineli-337-2026-10-24",
+    "name": "Purjosipuli",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/337?c=2034&c2=2168",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed; edible portion 100%; retention not modelled",
+    "basis": "per100g-as-listed",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 2.4,
+      "FIBT": 2.1,
+      "POLYL": 0,
+      "PROT": 1.8,
+      "FAT": 0.2
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
+    },
+    "per100g": {
+      "carbohydrate": 2.4,
+      "fibre": 2.1,
+      "polyols": 0,
+      "protein": 1.8,
+      "fat": 0.2
+    },
+    "portionMasses_g": {
+      "KPL_S": 120,
+      "KPL_M": 200,
+      "KPL_L": 280
+    },
+    "ediblePortion": 100
+  },
+  {
+    "id": "fineli-28925-2026-10-24",
+    "name": "Sitruuna, keskiarvo, punnittu kuorineen",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/28925?c=2034&c2=2168",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed; edible portion 65%; retention not modelled",
+    "basis": "per100g-as-listed",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 1.4,
+      "FIBT": 1.8,
+      "POLYL": 0,
+      "PROT": 0.4,
+      "FAT": 0.1
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
+    },
+    "per100g": {
+      "carbohydrate": 1.4,
+      "fibre": 1.8,
+      "polyols": 0,
+      "protein": 0.4,
+      "fat": 0.1
+    },
+    "portionMasses_g": {
+      "KPL_S": 90,
+      "KPL_M": 120,
+      "KPL_L": 150
+    },
+    "ediblePortion": 65
+  },
+  {
+    "id": "fineli-30315-2026-10-24",
+    "name": "Kanaliemi, laimennettu",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30315?c=2034&c2=2168",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed; edible portion 100%; retention not modelled",
+    "basis": "per100g-as-listed",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0.4,
+      "FIBT": 0.1,
+      "POLYL": 0,
+      "PROT": 0.3,
+      "FAT": 0.8
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260,
+      "PROT": 2230,
+      "FAT": 2157
+    },
+    "per100g": {
+      "carbohydrate": 0.4,
+      "fibre": 0.1,
+      "polyols": 0,
+      "protein": 0.3,
+      "fat": 0.8
+    },
+    "portionMasses_g": {
+      "DL": 100,
+      "RKL": 15,
+      "TL": 5
+    },
+    "ediblePortion": 100
   }
 ]

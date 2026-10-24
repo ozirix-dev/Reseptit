@@ -91,6 +91,11 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     ["rahka-marjakerroskulho", 6.32],
     ["savulohi-avokadokulho", 0.89],
     ["tonnikalamunakkaat-uunissa", 0.53],
+    ["lahi-ita-kikherne-shakshuka", 11.17],
+    ["pohjoisafrikkalainen-maakouda", 4.84],
+    ["valimerellinen-menemen-fetalla", 5.38],
+    ["valimerellinen-tortilla-espanola-aamupalaksi", 6.14],
+    ["valimerellinen-kikherne-yrttiaamiainen", 11.98],
   ]);
   for (const recipe of [...breakfast, ...desserts]) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
@@ -133,6 +138,7 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
     ["maksalaatikko-kukkakaalilla", 12.07],
     ["uunikanapasta-kesakurpitsa", 7.10], ["chili-con-carne-kukkakaaliriisi", 17.32],
     ["kana-fajita-pelti", 5.78],
+    ["kanakeitto-pinaatti-sitruuna", 4.87],
   ]);
   const repoDir = path.resolve(import.meta.dirname, "../..");
   for (const recipe of recipes) {

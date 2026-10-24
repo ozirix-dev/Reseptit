@@ -12,6 +12,10 @@ main_ingredient:
 cooking_method:
   - liesi
 servings: 4
+carbs_net_per_serving_g: 7.99
+carbs_total_per_serving_g: 12.62
+protein_per_serving_g: 36.88
+fat_per_serving_g: 72.00
 time_total_min: 45
 difficulty: helppo
 tags:

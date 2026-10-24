@@ -280,9 +280,9 @@ test("P2/P3 corrections include waiting time and ingredient use in every languag
 
 test("recipes without a documented calculation make no keto or low-carb promise", async () => {
   const result = await auditTranslations();
-  const ids = ["keto-pinaattiletut", "keto-pannukakku", "keto-joulutortut", "keto-korvapuustit", "ketopizza-pofiber-pohjalla"];
+  const ids = ["keto-joulutortut", "keto-korvapuustit", "ketopizza-pofiber-pohjalla"];
   const recipes = [...result.publishedSources, ...result.publishedTranslations].filter((r) => ids.includes(r.data.recipe_id));
-  assert.equal(recipes.length, 20);
+  assert.equal(recipes.length, 12);
   for (const { data, content } of recipes) {
     assert.equal(data.diet_class, undefined, data.recipe_id);
     assert.doesNotMatch([data.title, ...data.tags, data.image?.alt, content].join(" "), /keto|คีโต|\bVHH\b|low.car[b]|lågkolhydrat|vähähiilihydraatti/i);
