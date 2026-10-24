@@ -11,6 +11,10 @@ main_ingredient:
 cooking_method:
   - uuni
 servings: 6
+carbs_net_per_serving_g: 1.43
+carbs_total_per_serving_g: 1.59
+protein_per_serving_g: 36.57
+fat_per_serving_g: 44.57
 time_total_min: 90
 difficulty: helppo
 tags:

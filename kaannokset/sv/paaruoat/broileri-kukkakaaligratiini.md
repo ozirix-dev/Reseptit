@@ -12,6 +12,10 @@ main_ingredient:
 cooking_method:
   - uuni
 servings: 4
+carbs_net_per_serving_g: 5.05
+carbs_total_per_serving_g: 8.35
+protein_per_serving_g: 38.91
+fat_per_serving_g: 34.80
 time_total_min: 45
 difficulty: lätt
 tags:

@@ -12,6 +12,10 @@ main_ingredient:
 cooking_method:
   - liesi
 servings: 4
+carbs_net_per_serving_g: 3.17
+carbs_total_per_serving_g: 3.34
+protein_per_serving_g: 31.83
+fat_per_serving_g: 53.44
 time_total_min: 35
 difficulty: easy
 tags:

@@ -7,7 +7,8 @@ import { auditTranslations } from "./translation-audit";
 import { calculate, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
 const root = path.resolve(import.meta.dirname, "../..");
 const keys = ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const;
-const fineliCarbohydrateEvidence = new Set(["munakokkeli", "munakasmuffinit", "munakasrulla-pinaatti-tuorejuustolla", "munatacot-huevos-rancheros", "paprikauunimunakkaat", "shakshuka", "uunimuna-avokadot", "uunimunat-pinaatilla", "tortilla-de-patatas", "vhh-lihamureke", "halloumimunakas", "kaakao-kookos-chia", "kurkku-oliivi-aamiaiskulho", "marjainen-chiavanukas", "paahdettu-aamiaismunakoiso", "rahka-marjakerroskulho", "savulohi-avokadokulho", "tonnikalamunakkaat-uunissa", "chili-con-carne-kukkakaaliriisi", "kana-fajita-pelti", "ratatouille", "menemen", "munakoiso-jauhelihavuoka-vhh", "kesakurpitsalasagne-vhh", "taytetyt-paprikat-vhh", "kukkakaaligratiini-pekonilla", "jauhelihakastike-kesakurpitsanuudeleilla", "vhh-kaalikaarryleet", "uunikanapasta-kesakurpitsa", "hummus"]);
+const fineliCarbohydrateEvidence = new Set(["munakokkeli", "munakasmuffinit", "munakasrulla-pinaatti-tuorejuustolla", "munatacot-huevos-rancheros", "paprikauunimunakkaat", "shakshuka", "uunimuna-avokadot", "uunimunat-pinaatilla", "tortilla-de-patatas", "vhh-lihamureke", "halloumimunakas", "kaakao-kookos-chia", "kurkku-oliivi-aamiaiskulho", "marjainen-chiavanukas", "paahdettu-aamiaismunakoiso", "rahka-marjakerroskulho", "savulohi-avokadokulho", "tonnikalamunakkaat-uunissa", "chili-con-carne-kukkakaaliriisi", "kana-fajita-pelti", "ratatouille", "menemen", "munakoiso-jauhelihavuoka-vhh", "kesakurpitsalasagne-vhh", "taytetyt-paprikat-vhh", "kukkakaaligratiini-pekonilla", "jauhelihakastike-kesakurpitsanuudeleilla", "vhh-kaalikaarryleet", "uunikanapasta-kesakurpitsa", "hummus", "parsakaali-sinihomejuustofrittata", "paistettu-maksa-pekonilla", "jauhelihapihvit-vhh-kermakastikkeella", "jauheliha-kaalikeitto-vhh", "kanakorma-kukkakaaliriisilla", "raejuusto-uunimunakas", "vhh-mustikkapiirakka", "maksalaatikko-kukkakaalilla", "broileri-kukkakaaligratiini", "uuniporsas-kermakastikkeessa-vhh"]);
+const batch3Evidence = new Set(["parsakaali-sinihomejuustofrittata", "paistettu-maksa-pekonilla", "jauhelihapihvit-vhh-kermakastikkeella", "jauheliha-kaalikeitto-vhh", "kanakorma-kukkakaaliriisilla", "raejuusto-uunimunakas", "vhh-mustikkapiirakka", "maksalaatikko-kukkakaalilla", "broileri-kukkakaaligratiini", "uuniporsas-kermakastikkeessa-vhh"]);
 const audit = await auditTranslations();
 const calculatedAt = new Date().toISOString().slice(0, 10);
 const provenance = await nutritionProvenance(root);
@@ -16,17 +17,21 @@ const inventory = audit.publishedSources.map((recipe) => {
   const values = Object.fromEntries(keys.map((key) => [key, recipe.data[key] ?? null]));
   const hasValues = Object.values(values).some((n) => n !== null);
   const hasFineliCarbohydrateEvidence = fineliCarbohydrateEvidence.has(recipe.data.recipe_id) && recipe.data.carbs_total_per_serving_g != null;
+  const allValuesPresent = Object.values(values).every((n) => n !== null);
+  const evidencePath = batch3Evidence.has(recipe.data.recipe_id)
+    ? "docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json"
+    : "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json";
   const conflicts = recipe.data.carbs_net_per_serving_g != null && recipe.data.carbs_total_per_serving_g != null && recipe.data.carbs_net_per_serving_g > recipe.data.carbs_total_per_serving_g;
   return { recipe_id: recipe.data.recipe_id, source_path: recipe.path, source_content_hash: sourceHashes[recipe.path], values, servings: recipe.data.servings,
-    status: conflicts ? "CONFLICT REQUIRES REVIEW" : hasValues ? "INSUFFICIENT SOURCE DATA" : "MISSING",
-    calculationEvidence: hasFineliCarbohydrateEvidence ? "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/food-records.json" : null,
+    status: conflicts ? "CONFLICT REQUIRES REVIEW" : hasFineliCarbohydrateEvidence && allValuesPresent ? "ESTIMATE WITH EVIDENCE" : hasValues ? "INSUFFICIENT SOURCE DATA" : "MISSING",
+    calculationEvidence: hasFineliCarbohydrateEvidence ? evidencePath : null,
     carbohydrateDefinition: recipe.data.carbs_net_per_serving_g == null ? "NOT DOCUMENTED" : "AVAILABLE_EXCLUDING_FIBRE",
     totalCarbohydrateDefinition: hasFineliCarbohydrateEvidence ? "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS" : "NOT DOCUMENTED",
-    portionBasis: "metadata fields per serving", brandAndRawWeightEvidence: hasFineliCarbohydrateEvidence ? "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md" : "NOT VERIFIED",
+    portionBasis: "metadata fields per serving", brandAndRawWeightEvidence: hasFineliCarbohydrateEvidence ? `Fineli record IDs and mass assumptions in ${evidencePath}` : "NOT VERIFIED",
     missingFields: keys.filter((key) => recipe.data[key] == null),
     ingredients: recipe.data.ingredients,
     notes: recipe.content.split("## Muistiinpanot")[1]?.trim() ?? "",
-    uncertainties: ["No reproducible ingredient-to-record calculation found in repository", "Product, edible weight and preparation yield require evidence", ...(recipe.data.ingredients.some((i) => i.amount === null) ? ["Unmeasured ingredients present"] : []), ...(recipe.data.ingredients.some((i) => !["g", "kg"].includes(i.unit)) ? ["Ingredient-specific volume/piece weights required"] : [])],
+    uncertainties: hasFineliCarbohydrateEvidence ? [] : ["No reproducible ingredient-to-record calculation found in repository", "Product, edible weight and preparation yield require evidence", ...(recipe.data.ingredients.some((i) => i.amount === null) ? ["Unmeasured ingredients present"] : []), ...(recipe.data.ingredients.some((i) => !["g", "kg"].includes(i.unit)) ? ["Ingredient-specific volume/piece weights required"] : [])],
   };
 });
 const records: FoodRecord[] = JSON.parse(await readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8"));

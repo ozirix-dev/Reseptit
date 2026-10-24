@@ -6,6 +6,10 @@ category: paaruoka
 language: en
 diet_class: vhh_tiukka
 servings: 4
+carbs_net_per_serving_g: 2.49
+carbs_total_per_serving_g: 4.36
+protein_per_serving_g: 18.23
+fat_per_serving_g: 32.19
 main_ingredient:
   - kananmuna
   - parsakaali
