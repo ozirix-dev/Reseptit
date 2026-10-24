@@ -59,6 +59,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/nakkikeitto-kukkakaalilla.md
 translation_of: nakkikeitto-kukkakaalilla
+carbs_net_per_serving_g: 11.55
+carbs_total_per_serving_g: 15.22
+protein_per_serving_g: 13.94
+fat_per_serving_g: 17.52
+
 ---
 
 # Korvsoppa med blomkål

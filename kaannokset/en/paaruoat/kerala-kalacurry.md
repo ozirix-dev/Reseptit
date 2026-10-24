@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: white fish fillet
+    item: frozen pollock fillet
     note: in pieces
   - amount: 400
     unit: ml
@@ -71,6 +71,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/kerala-kalacurry.md
 translation_of: kerala-kalacurry
+carbs_net_per_serving_g: 5.54
+carbs_total_per_serving_g: 6.67
+protein_per_serving_g: 28.28
+fat_per_serving_g: 22.7
+
 ---
 
 # Kerala coconut fish curry

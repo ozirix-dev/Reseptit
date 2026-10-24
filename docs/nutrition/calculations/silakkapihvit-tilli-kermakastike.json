@@ -1,0 +1,324 @@
+{
+  "recipeId": "silakkapihvit-tilli-kermakastike",
+  "sourceHash": "7596eb9c1dd8b0039132e1f3cd6ec766647cf9ccbbde414c37e10e2dc6d0933a",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-12",
+  "servings": 4,
+  "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "silakkafileitä",
+      "amount": 500,
+      "unit": "g",
+      "state": "raw Baltic herring fillet",
+      "matchEvidence": "Raw Baltic herring fillet; Fineli record 29207.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-29207-release-20",
+        "name": "SILAKKAFILEE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29207",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw Baltic herring fillet",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 16,
+          "fat": 8.9
+        }
+      }
+    },
+    {
+      "item": "ruisjauhoja",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "wholegrain rye flour",
+      "matchEvidence": "Wholegrain rye flour; Fineli record 100.",
+      "gramsPerUnit": 8,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 8 g per rkl; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-100-release-20",
+        "name": "JAUHO, RUISJAUHO, TÄYSJYVÄJAUHO",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/100",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "wholegrain rye flour",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 59.391,
+          "FIBT": 13.6,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 59.391,
+          "fibre": 13.6,
+          "polyols": 0,
+          "protein": 9.56,
+          "fat": 1.93
+        }
+      }
+    },
+    {
+      "item": "voita paistamiseen",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "butter",
+      "matchEvidence": "Butter; Fineli record 500.",
+      "gramsPerUnit": 14,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 14 g per rkl; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "butter",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        }
+      }
+    },
+    {
+      "item": "kuohukermaa",
+      "amount": 150,
+      "unit": "ml",
+      "state": "whipping cream, 38% fat",
+      "matchEvidence": "Whipping cream, 38% fat; Fineli record 631.",
+      "gramsPerUnit": 0.92,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 0.92 g per ml; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-631-release-20",
+        "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/631",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "whipping cream, 38% fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 2.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 2.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.88,
+          "fat": 38
+        }
+      }
+    },
+    {
+      "item": "sitruunamehua",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "fresh lemon juice",
+      "matchEvidence": "Undiluted lemon juice; Fineli record 11557.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11557-release-20",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11557",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh lemon juice",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.6,
+          "FIBT": 0.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "fibre": 0.1,
+          "polyols": 0,
+          "protein": 0.31,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "tuoretta tilliä",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "fresh dill",
+      "matchEvidence": "Fresh dill; Fineli record 369.",
+      "gramsPerUnit": 3,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 3 g per rkl; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-369-release-20",
+        "name": "TILLI, TUORE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/369",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh dill",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.9,
+          "FIBT": 2.8,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "fibre": 2.8,
+          "polyols": 0,
+          "protein": 3.69,
+          "fat": 0.8
+        }
+      }
+    },
+    {
+      "item": "suolaa ja valkopippuria",
+      "amount": null,
+      "unit": "",
+      "state": "documented low-impact seasoning or nutrient-free item",
+      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Omitted suolaa ja valkopippuria; the per-serving nutrient upper bound is recorded.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Salt contributes none of the four displayed macronutrients."
+    },
+    {
+      "item": "sitruuna tarjoiluun",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "peeled raw lemon",
+      "matchEvidence": "Peeled raw lemon; Fineli record 11048.",
+      "gramsPerUnit": 58,
+      "conversionEvidence": "Edible portion set to 58 g per medium peeled lemon; Fineli peeled lemon record 11048.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11048-release-20",
+        "name": "SITRUUNA, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11048",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "peeled raw lemon",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 2.2,
+          "FIBT": 2.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 2.2,
+          "fibre": 2.4,
+          "polyols": 0,
+          "protein": 0.62,
+          "fat": 0.17
+        }
+      }
+    }
+  ]
+}

@@ -47,6 +47,11 @@ image:
   alt: Kermainen lanttulaatikko tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 16.68
+carbs_total_per_serving_g: 20.33
+protein_per_serving_g: 4.75
+fat_per_serving_g: 24.83
+
 ---
 # Kermainen lanttulaatikko
 

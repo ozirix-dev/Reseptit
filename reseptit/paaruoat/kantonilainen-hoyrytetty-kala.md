@@ -23,7 +23,7 @@ image:
 ingredients:
   - amount: 700
     unit: g
-    item: valkoista kalafileetä
+    item: pakastettua seitiä
     note: esimerkiksi kuhaa tai turskaa
   - amount: 1
     unit: rkl
@@ -51,6 +51,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 3.13
+carbs_total_per_serving_g: 4.58
+protein_per_serving_g: 31.99
+fat_per_serving_g: 9.04
+
 ---
 
 # Kantonilainen höyrytetty kala inkiväärillä

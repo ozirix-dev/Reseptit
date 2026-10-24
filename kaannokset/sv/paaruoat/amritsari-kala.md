@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: vit fiskfilé
+    item: fryst sejfilé
     note: i bitar
   - amount: 100
     unit: g
@@ -61,6 +61,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/amritsari-kala.md
 translation_of: amritsari-kala
+carbs_net_per_serving_g: 10.74
+carbs_total_per_serving_g: 16.33
+protein_per_serving_g: 32.17
+fat_per_serving_g: 10.81
+
 ---
 
 # Amritsari fisk i en kryddad kikärtsmjölskorpa

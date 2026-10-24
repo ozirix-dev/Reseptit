@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: valkoista kalafileetä
+    item: pakastettua seitiä
     note: paloina
   - amount: 400
     unit: ml
@@ -73,6 +73,11 @@ translation_languages:
   - sv
   - th
 translation_status: { en: published, sv: published, th: published }
+carbs_net_per_serving_g: 5.54
+carbs_total_per_serving_g: 6.67
+protein_per_serving_g: 28.28
+fat_per_serving_g: 22.7
+
 ---
 
 # Keralalainen kookos-kalacurry

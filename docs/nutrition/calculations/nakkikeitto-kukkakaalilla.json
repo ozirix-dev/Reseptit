@@ -1,0 +1,316 @@
+{
+  "recipeId": "nakkikeitto-kukkakaalilla",
+  "sourceHash": "235fa76e34cf993308b39ad742266f3b388f78d9cb63b84bbe557bd46622cfa8",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-12",
+  "servings": 4,
+  "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "nakkeja",
+      "amount": 350,
+      "unit": "g",
+      "state": "boiled frankfurter sausage",
+      "matchEvidence": "Frankfurter-style sausage represented by boiled nakki, Fineli record 7600; no brand or fat class is specified.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-7600-release-20",
+        "name": "NAKKI, KEITETTY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/7600",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "boiled frankfurter sausage",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.162,
+          "FIBT": 0.008,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.162,
+          "fibre": 0.008,
+          "polyols": 0,
+          "protein": 11.31,
+          "fat": 18.23
+        }
+      }
+    },
+    {
+      "item": "kukkakaalia",
+      "amount": 500,
+      "unit": "g",
+      "state": "raw cauliflower",
+      "matchEvidence": "Raw cauliflower; Fineli record 322.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-322-release-20",
+        "name": "KUKKAKAALI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/322",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw cauliflower",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 2.35,
+          "FIBT": 1.9,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 2.35,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 2,
+          "fat": 0.21
+        }
+      }
+    },
+    {
+      "item": "varsiselleriä",
+      "amount": 100,
+      "unit": "g",
+      "state": "raw celery stalk",
+      "matchEvidence": "Raw celery stalk; Fineli record 339.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-339-release-20",
+        "name": "LEHTISELLERI, VARSISELLERI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/339",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw celery stalk",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.1,
+          "FIBT": 2.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.1,
+          "fibre": 2.5,
+          "polyols": 0,
+          "protein": 1.12,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "purjoa",
+      "amount": 80,
+      "unit": "g",
+      "state": "raw leek",
+      "matchEvidence": "Raw leek; Fineli record 337.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-337-release-20",
+        "name": "PURJOSIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/337",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw leek",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 2.4,
+          "FIBT": 2.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 2.4,
+          "fibre": 2.1,
+          "polyols": 0,
+          "protein": 1.81,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "pieni sipuli",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "raw yellow onion",
+      "matchEvidence": "Raw yellow onion; Fineli record 335.",
+      "gramsPerUnit": 70,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 70 g per kpl; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-335-release-20",
+        "name": "SIPULI, KELTASIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw yellow onion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 1.2,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 1.25,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "lihalientä",
+      "amount": 8,
+      "unit": "dl",
+      "state": "diluted beef stock",
+      "matchEvidence": "Diluted beef stock; Fineli record 29.",
+      "gramsPerUnit": 100,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per dl; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-29-release-20",
+        "name": "LIHALIEMI, LAIMENNETTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "diluted beef stock",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3,
+          "FIBT": 0.017,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3,
+          "fibre": 0.017,
+          "polyols": 0,
+          "protein": 0.34,
+          "fat": 0.6
+        }
+      }
+    },
+    {
+      "item": "laakerinlehti",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "documented low-impact seasoning or nutrient-free item",
+      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Excluded low-impact laakerinlehti; exact nutrient impact is bounded per serving.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 1,
+        "netCarbohydrate": 0.2,
+        "totalCarbohydrate": 0.3,
+        "protein": 0.1,
+        "fat": 0.1
+      },
+      "omissionImpactEvidence": "Low-dose seasoning or garnish omitted; per-serving upper bound is conservatively budgeted below the project limits."
+    },
+    {
+      "item": "mustapippuria",
+      "amount": 0.5,
+      "unit": "tl",
+      "state": "documented low-impact seasoning or nutrient-free item",
+      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Measured low-dose ground black pepper omitted; upper-bound estimate recorded.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0.2,
+        "netCarbohydrate": 0.03,
+        "totalCarbohydrate": 0.05,
+        "protein": 0.01,
+        "fat": 0.01
+      },
+      "omissionImpactEvidence": "The recipe uses at most half a teaspoon of seasoning over multiple servings; per-serving bound is 0.2 kcal, 0.03 g net carbohydrate, 0.05 g total carbohydrate, 0.01 g protein, and 0.01 g fat."
+    },
+    {
+      "item": "tuoretta persiljaa",
+      "amount": null,
+      "unit": "",
+      "state": "documented low-impact seasoning or nutrient-free item",
+      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Omitted tuoretta persiljaa; the per-serving nutrient upper bound is recorded.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 2,
+        "netCarbohydrate": 0.35,
+        "totalCarbohydrate": 0.6,
+        "protein": 0.15,
+        "fat": 0.1
+      },
+      "omissionImpactEvidence": "Unmeasured minor seasoning/garnish omitted within the documented per-serving tolerance."
+    }
+  ]
+}

@@ -20,7 +20,7 @@ ingredients:
     item: broilerin reisilihaa
   - amount: 2
     unit: rkl
-    item: tamaria
+    item: soijakastiketta
   - amount: 1
     unit: rkl
     item: miriniä
@@ -50,6 +50,11 @@ image:
   alt: Kana-yakitori ja seesamikaali tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 9.16
+carbs_total_per_serving_g: 12.35
+protein_per_serving_g: 27.52
+fat_per_serving_g: 6.23
+
 ---
 # Kana-yakitori ja seesamikaali
 

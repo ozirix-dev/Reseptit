@@ -23,7 +23,7 @@ image:
 ingredients:
   - amount: 700
     unit: g
-    item: เนื้อปลาสีขาว
+    item: เนื้อปลาพอลล็อกแช่แข็ง
     note: "เช่น ปลาแซนเดอร์หรือปลาคอด"
   - amount: 1
     unit: ช้อนโต๊ะ
@@ -49,6 +49,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/kantonilainen-hoyrytetty-kala.md
 translation_of: kantonilainen-hoyrytetty-kala
+carbs_net_per_serving_g: 3.13
+carbs_total_per_serving_g: 4.58
+protein_per_serving_g: 31.99
+fat_per_serving_g: 9.04
+
 ---
 
 # ปลานึ่งกวางตุ้งใส่ขิง

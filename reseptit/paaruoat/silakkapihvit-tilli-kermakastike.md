@@ -47,6 +47,11 @@ image:
   alt: Silakkapihvit tilli-kermakastikkeella tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 3.82
+carbs_total_per_serving_g: 4.76
+protein_per_serving_g: 21.27
+fat_per_serving_g: 30.04
+
 ---
 # Silakkapihvit tilli-kermakastikkeella
 

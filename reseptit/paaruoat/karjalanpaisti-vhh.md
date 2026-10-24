@@ -69,6 +69,11 @@ translation_status:
   en: published
   sv: published
   th: published
+carbs_net_per_serving_g: 6.6
+carbs_total_per_serving_g: 9.13
+protein_per_serving_g: 28.79
+fat_per_serving_g: 9.07
+
 ---
 
 # Karjalanpaisti ja paahdettu kaali

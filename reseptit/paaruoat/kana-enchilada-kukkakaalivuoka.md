@@ -17,7 +17,7 @@ tags:
 ingredients:
   - amount: 500
     unit: g
-    item: kypsää broilerinlihaa
+    item: kypsää broilerin rintafileetä
   - amount: 500
     unit: g
     item: kukkakaalia
@@ -50,6 +50,11 @@ image:
   alt: Kana-enchiladavuoan kasvisversio tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 8.13
+carbs_total_per_serving_g: 11.64
+protein_per_serving_g: 46.66
+fat_per_serving_g: 29.27
+
 ---
 # Kana-enchiladavuoan kasvisversio
 

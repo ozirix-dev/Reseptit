@@ -155,6 +155,16 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
     ["kermainen-kanasienipannu", 3.06],
     ["kana-parmesaanipannu-parsakaali", 2.91],
     ["raejuusto-pesto-kasviskulho", 2.99],
+    ["lindstrominpihvit-kaalilla", 9.54],
+    ["uunimakkara-sipulipedilla", 12.02],
+    ["silakkapihvit-tilli-kermakastike", 3.82],
+    ["lanttulaatikko-kermainen", 16.68],
+    ["sitruuna-yrttikana-parsa", 1.78],
+    ["kanasalaatti-pesto-mozzarella", 1.88],
+    ["kana-enchilada-kukkakaalivuoka", 8.13],
+    ["tacokulho-nauta-avokado", 2.71],
+    ["kana-yakitori-kaalilla", 9.16],
+    ["kanapyorykat-tomaattikastike", 4.94],
   ]);
   const repoDir = path.resolve(import.meta.dirname, "../..");
   for (const recipe of recipes) {
@@ -294,6 +304,41 @@ test("the four evidence-backed batch-nine recipes expose synchronized values in 
   ]);
   const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
   assert.equal(recipes.length, expected.size * 4);
+  for (const recipe of recipes) {
+    assert.deepEqual(
+      [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],
+      expected.get(recipe.recipeId),
+      `${recipe.recipeId}/${recipe.locale}`,
+    );
+  }
+});
+
+test("batch twelve publishes recalculated macronutrients for every recipe and available translation", () => {
+  const expected = new Map([
+    ["kana-enchilada-kukkakaalivuoka", [8.13, 11.64, 46.66, 29.27]],
+    ["kanasalaatti-pesto-mozzarella", [1.88, 4.36, 32, 24.19]],
+    ["yangzhou-paistettu-riisi", [40.97, 43.14, 21.91, 11.19]],
+    ["tacokulho-nauta-avokado", [2.71, 5.28, 31.27, 26.41]],
+    ["silakkapihvit-tilli-kermakastike", [3.82, 4.76, 21.27, 30.04]],
+    ["sitruuna-yrttikana-parsa", [1.78, 4.33, 36.34, 16.09]],
+    ["karjalanpaisti-vhh", [6.6, 9.13, 28.79, 9.07]],
+    ["lindstrominpihvit-kaalilla", [9.54, 12.77, 31.9, 18.32]],
+    ["lanttulaatikko-kermainen", [16.68, 20.33, 4.75, 24.83]],
+    ["uunimakkara-sipulipedilla", [12.02, 12.7, 19.58, 38.5]],
+    ["paprikainen-vhh-gulassi", [8.72, 11.29, 40.59, 24.04]],
+    ["nakkikeitto-kukkakaalilla", [11.55, 15.22, 13.94, 17.52]],
+    ["nakkikastike-kukkakaalimuusi", [7.88, 10.96, 15.69, 45.87]],
+    ["amritsari-kala", [10.74, 16.33, 32.17, 10.81]],
+    ["kantonilainen-hoyrytetty-kala", [3.13, 4.58, 31.99, 9.04]],
+    ["hyderabadi-kanabiryani", [60.47, 62.73, 37.41, 20.64]],
+    ["kana-yakitori-kaalilla", [9.16, 12.35, 27.52, 6.23]],
+    ["ropa-vieja", [7.67, 9.77, 34.06, 6.77]],
+    ["kerala-kalacurry", [5.54, 6.67, 28.28, 22.7]],
+    ["kanapyorykat-tomaattikastike", [4.94, 5.61, 29.44, 21.23]],
+  ]);
+  const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
+  assert.ok(recipes.length >= expected.size, "all batch recipes have published Finnish pages");
+  assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(expected.keys()));
   for (const recipe of recipes) {
     assert.deepEqual(
       [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],

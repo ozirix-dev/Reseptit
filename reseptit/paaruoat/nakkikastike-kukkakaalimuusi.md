@@ -61,6 +61,11 @@ translation_status:
   en: published
   sv: published
   th: published
+carbs_net_per_serving_g: 7.88
+carbs_total_per_serving_g: 10.96
+protein_per_serving_g: 15.69
+fat_per_serving_g: 45.87
+
 ---
 
 # Nakkikastike ja kukkakaalimuusi

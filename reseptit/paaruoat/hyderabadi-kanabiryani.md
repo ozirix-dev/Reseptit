@@ -82,6 +82,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 60.47
+carbs_total_per_serving_g: 62.73
+protein_per_serving_g: 37.41
+fat_per_serving_g: 20.64
+
 ---
 
 # Hyderabadilainen kanabiryani

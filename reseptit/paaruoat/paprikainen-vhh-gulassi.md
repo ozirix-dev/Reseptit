@@ -86,6 +86,11 @@ translation_status:
   sv: published
   th: published
 status: published
+carbs_net_per_serving_g: 8.72
+carbs_total_per_serving_g: 11.29
+protein_per_serving_g: 40.59
+fat_per_serving_g: 24.04
+
 ---
 
 # Paprikainen VHH-gulassi

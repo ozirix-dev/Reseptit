@@ -1,0 +1,1754 @@
+{
+  "batchId": "batch-12",
+  "recipes": [
+    {
+      "recipeId": "kana-enchilada-kukkakaalivuoka",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "7530",
+          "state": "cooked skinless chicken breast",
+          "matchEvidence": "Cooked chicken breast specified in the source recipe; Fineli cooked skinless breast record 7530."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "322",
+          "state": "raw cauliflower",
+          "matchEvidence": "Raw cauliflower; Fineli record 322."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "33207",
+          "state": "commercial tomato salsa",
+          "matchEvidence": "Commercial tomato salsa; Fineli record 33207."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "698",
+          "state": "regular-fat cheddar cheese",
+          "matchEvidence": "Cheddar chosen for this recipe; Fineli cheddar, 34% fat, record 698."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "628",
+          "state": "crème fraîche, 28% fat",
+          "matchEvidence": "Fineli crème fraîche/sour cream, 28% fat, record 628."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003327",
+          "state": "ground cumin",
+          "matchEvidence": "Ground cumin; AFCD record F003327.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006316",
+          "state": "ground paprika, smoke-seasoned",
+          "matchEvidence": "Smoked paprika represented by AFCD dry paprika powder; smoking changes flavor but not materially the four macros at this small amount.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F005198",
+          "state": "raw lime",
+          "gramsPerUnit": 50,
+          "conversionEvidence": "Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.",
+          "matchEvidence": "Raw lime, peeled; AFCD record F005198."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003192",
+          "state": "fresh coriander",
+          "matchEvidence": "Fresh coriander; AFCD record F003192.",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 3 g per rkl; recipe quantity converted to edible mass."
+        }
+      ]
+    },
+    {
+      "recipeId": "kanasalaatti-pesto-mozzarella",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11565",
+          "state": "raw skinless chicken breast",
+          "matchEvidence": "Raw skinless chicken breast; Fineli Release 20 record 11565."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "29239",
+          "state": "fresh mozzarella, 20% fat",
+          "matchEvidence": "Fresh mozzarella, 20% fat; Fineli record 29239."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "34159",
+          "state": "raw rocket/arugula",
+          "matchEvidence": "Raw rocket/arugula; Fineli record 34159."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009190",
+          "state": "raw cherry tomatoes",
+          "matchEvidence": "Raw cherry tomatoes; AFCD record F009190."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11057",
+          "state": "peeled and pitted raw avocado",
+          "gramsPerUnit": 150,
+          "conversionEvidence": "Edible mass set to 150 g per medium avocado; Fineli peeled/pitted record 11057 provides the food state.",
+          "matchEvidence": "Peeled and pitted avocado; Fineli record 11057."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "3323",
+          "state": "commercial green herb pesto",
+          "matchEvidence": "Green basil/herb pesto represented by Fineli pesto sauce, herb sauce record 3323; brand variation is not specified by the recipe.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "olive oil",
+          "matchEvidence": "Olive oil; Fineli record 536.",
+          "gramsPerUnit": 13.7,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 13.7 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11557",
+          "state": "fresh lemon juice",
+          "matchEvidence": "Undiluted lemon juice; Fineli record 11557.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Omitted suolaa ja mustapippuria; the per-serving nutrient upper bound is recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Salt contributes none of the four displayed macronutrients."
+        }
+      ]
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "30346",
+          "state": "cooked long-grain white rice, unsalted",
+          "matchEvidence": "Cooked long-grain white rice; Fineli record 30346."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw edible egg, shell removed",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "One medium edible egg represented by 55 g without shell.",
+          "matchEvidence": "Raw edible egg; Fineli record 858."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F007433",
+          "state": "raw prawn flesh",
+          "matchEvidence": "Raw prawn flesh; AFCD paired available-carbohydrate values verify zero polyols, record F007433."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "370",
+          "state": "raw green peas",
+          "matchEvidence": "Green peas; Fineli record 370."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "779",
+          "state": "cooked lean ham, 3% fat",
+          "matchEvidence": "Cooked ham, 3% fat; Fineli record 779."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "541",
+          "state": "neutral vegetable oil",
+          "matchEvidence": "Neutral cooking oil represented by Fineli average cooking oil record 541.",
+          "gramsPerUnit": 13.7,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 13.7 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "31",
+          "state": "soy sauce",
+          "matchEvidence": "Soy sauce specified in the revised recipe; Fineli record 31.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006250",
+          "state": "raw spring onion",
+          "matchEvidence": "Raw spring onion; AFCD record F006250.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact suolaa; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Salt contributes none of the four published macronutrients; sodium is not displayed."
+        }
+      ]
+    },
+    {
+      "recipeId": "tacokulho-nauta-avokado",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F000678",
+          "state": "raw regular-fat beef mince",
+          "matchEvidence": "Unspecified beef mince represented by AFCD regular-fat raw mince record F000678; fat-class variation is included in scope."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003327",
+          "state": "ground cumin",
+          "matchEvidence": "Ground cumin; AFCD record F003327.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006316",
+          "state": "ground paprika, smoke-seasoned",
+          "matchEvidence": "Smoked paprika represented by AFCD dry paprika powder; smoking changes flavor but not materially the four macros at this small amount.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "330",
+          "state": "raw leaf lettuce",
+          "matchEvidence": "Raw leaf lettuce; Fineli record 330."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "352",
+          "state": "raw tomato",
+          "matchEvidence": "Raw tomato; Fineli record 352."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11057",
+          "state": "peeled and pitted raw avocado",
+          "gramsPerUnit": 150,
+          "conversionEvidence": "Edible mass set to 150 g per medium avocado; Fineli peeled/pitted record 11057 provides the food state.",
+          "matchEvidence": "Peeled and pitted avocado; Fineli record 11057."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "698",
+          "state": "regular-fat cheddar cheese",
+          "matchEvidence": "Cheddar chosen for this recipe; Fineli cheddar, 34% fat, record 698."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "620",
+          "state": "plain unsweetened yogurt, 3.9% fat",
+          "matchEvidence": "Plain unsweetened Bulgarian-style yogurt, 3.9% fat; Fineli record 620."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F005198",
+          "state": "raw lime",
+          "gramsPerUnit": 50,
+          "conversionEvidence": "Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.",
+          "matchEvidence": "Raw lime, peeled; AFCD record F005198."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Omitted suolaa ja chiliä; the per-serving nutrient upper bound is recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Salt contributes none of the four displayed macronutrients."
+        }
+      ]
+    },
+    {
+      "recipeId": "silakkapihvit-tilli-kermakastike",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "29207",
+          "state": "raw Baltic herring fillet",
+          "matchEvidence": "Raw Baltic herring fillet; Fineli record 29207."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "100",
+          "state": "wholegrain rye flour",
+          "matchEvidence": "Wholegrain rye flour; Fineli record 100.",
+          "gramsPerUnit": 8,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 8 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "butter",
+          "matchEvidence": "Butter; Fineli record 500.",
+          "gramsPerUnit": 14,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 14 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "whipping cream, 38% fat",
+          "matchEvidence": "Whipping cream, 38% fat; Fineli record 631.",
+          "gramsPerUnit": 0.92,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 0.92 g per ml; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11557",
+          "state": "fresh lemon juice",
+          "matchEvidence": "Undiluted lemon juice; Fineli record 11557.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "369",
+          "state": "fresh dill",
+          "matchEvidence": "Fresh dill; Fineli record 369.",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 3 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Omitted suolaa ja valkopippuria; the per-serving nutrient upper bound is recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Salt contributes none of the four displayed macronutrients."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11048",
+          "state": "peeled raw lemon",
+          "gramsPerUnit": 58,
+          "conversionEvidence": "Edible portion set to 58 g per medium peeled lemon; Fineli peeled lemon record 11048.",
+          "matchEvidence": "Peeled raw lemon; Fineli record 11048."
+        }
+      ]
+    },
+    {
+      "recipeId": "sitruuna-yrttikana-parsa",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11565",
+          "state": "raw skinless chicken breast",
+          "matchEvidence": "Raw skinless breast fillet; Fineli Release 20 record 11565."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F000155",
+          "state": "raw green asparagus",
+          "matchEvidence": "Raw green asparagus; AFCD record F000155."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11048",
+          "state": "peeled raw lemon",
+          "gramsPerUnit": 58,
+          "conversionEvidence": "Edible portion set to 58 g per medium peeled lemon; Fineli peeled lemon record 11048.",
+          "matchEvidence": "Peeled raw lemon; Fineli record 11048."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "olive oil",
+          "matchEvidence": "Olive oil; Fineli record 536.",
+          "gramsPerUnit": 13.7,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 13.7 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "butter",
+          "matchEvidence": "Butter; Fineli record 500."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small measured amount of dried thyme omitted because Fineli macro fields are incomplete.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0.5,
+            "netCarbohydrate": 0.1,
+            "totalCarbohydrate": 0.2,
+            "protein": 0.03,
+            "fat": 0.02
+          },
+          "omissionImpactEvidence": "Per-serving upper bound covers the recipe teaspoon divided across servings and stays within project tolerance."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact valkosipulijauhetta; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Low-dose seasoning or garnish omitted; per-serving upper bound is conservatively budgeted below the project limits."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Omitted suolaa ja mustapippuria; the per-serving nutrient upper bound is recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Salt contributes none of the four displayed macronutrients."
+        }
+      ]
+    },
+    {
+      "recipeId": "karjalanpaisti-vhh",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "719",
+          "state": "raw beef shoulder/stew cut",
+          "matchEvidence": "Beef stew meat mapped to Fineli beef shoulder/forequarter stew cut 719."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006933",
+          "state": "raw lean pork shoulder",
+          "matchEvidence": "Pork stew cut represented by lean raw forequarter shoulder roast, AFCD record F006933."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "raw yellow onion",
+          "matchEvidence": "Raw yellow onion; Fineli record 335.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water has no meaningful energy or four published macronutrients.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Ingredient is plain water, with zero energy and macronutrients."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact suolaa; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Salt contributes none of the four published macronutrients; sodium is not displayed."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact kokonaista maustepippuria; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Low-dose seasoning or garnish omitted; per-serving upper bound is conservatively budgeted below the project limits."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact laakerinlehteä; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Low-dose seasoning or garnish omitted; per-serving upper bound is conservatively budgeted below the project limits."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "320",
+          "state": "raw white cabbage",
+          "matchEvidence": "Raw white cabbage; Fineli record 320."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "olive oil",
+          "matchEvidence": "Olive oil; Fineli record 536.",
+          "gramsPerUnit": 13.7,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 13.7 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Omitted mustapippuria; the per-serving nutrient upper bound is recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Unmeasured minor seasoning/garnish omitted within the documented per-serving tolerance."
+        }
+      ]
+    },
+    {
+      "recipeId": "lindstrominpihvit-kaalilla",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F000678",
+          "state": "raw regular-fat beef mince",
+          "matchEvidence": "Unspecified beef mince represented by AFCD regular-fat raw mince record F000678; fat-class variation is included in scope."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F001010",
+          "state": "canned beetroot in brine, drained",
+          "matchEvidence": "Canned beetroot in brine, drained; AFCD analysed record F001010 has paired available carbohydrate values confirming zero sugar alcohols."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small measured beetroot brine portion omitted under a conservative bound.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 4,
+            "netCarbohydrate": 0.9,
+            "totalCarbohydrate": 0.9,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "2 tbsp is approximately 30 g over 4 servings; conservative upper concentration 12 g carbohydrate/100 g gives at most 0.9 g carbohydrate per serving and under 4 kcal."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "raw yellow onion",
+          "matchEvidence": "Raw yellow onion; Fineli record 335.",
+          "gramsPerUnit": 70,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 70 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw edible egg, shell removed",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "One medium edible egg represented by 55 g without shell.",
+          "matchEvidence": "Raw edible egg; Fineli record 858."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "28",
+          "state": "prepared mustard",
+          "matchEvidence": "Prepared mustard represented by Fineli mustard record 28; Dijon-specific product is not identified and the recipe quantity is small.",
+          "gramsPerUnit": 6,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 6 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "butter",
+          "matchEvidence": "Butter; Fineli record 500.",
+          "gramsPerUnit": 14,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 14 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "320",
+          "state": "raw white cabbage",
+          "matchEvidence": "Raw white cabbage; Fineli record 320."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Omitted suolaa ja mustapippuria; the per-serving nutrient upper bound is recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Salt contributes none of the four displayed macronutrients."
+        }
+      ]
+    },
+    {
+      "recipeId": "lanttulaatikko-kermainen",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "303",
+          "state": "raw rutabaga",
+          "matchEvidence": "Raw rutabaga; Fineli record 303."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "whipping cream, 38% fat",
+          "matchEvidence": "Whipping cream, 38% fat; Fineli record 631.",
+          "gramsPerUnit": 0.92,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 0.92 g per ml; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "butter",
+          "matchEvidence": "Butter; Fineli record 500."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw edible egg, shell removed",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "One medium edible egg represented by 55 g without shell.",
+          "matchEvidence": "Raw edible egg; Fineli record 858."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "3",
+          "state": "table syrup",
+          "matchEvidence": "Table syrup; Fineli record 3.",
+          "gramsPerUnit": 20,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 20 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact suolaa; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Salt contributes none of the four published macronutrients; sodium is not displayed."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006118",
+          "state": "ground nutmeg",
+          "matchEvidence": "Ground nutmeg; AFCD record F006118.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Omitted valkopippuria; the per-serving nutrient upper bound is recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Unmeasured minor seasoning/garnish omitted within the documented per-serving tolerance."
+        }
+      ]
+    },
+    {
+      "recipeId": "uunimakkara-sipulipedilla",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "7607",
+          "state": "boiled ring sausage",
+          "matchEvidence": "Ring sausage represented by boiled lenkkimakkara, Fineli record 7607; no brand is specified."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "698",
+          "state": "regular-fat cheddar cheese",
+          "matchEvidence": "Cheddar chosen for this recipe; Fineli cheddar, 34% fat, record 698."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "raw yellow onion",
+          "matchEvidence": "Raw yellow onion; Fineli record 335.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "28",
+          "state": "prepared mustard",
+          "matchEvidence": "Prepared mustard represented by Fineli mustard record 28; Dijon-specific product is not identified and the recipe quantity is small.",
+          "gramsPerUnit": 6,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 6 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "628",
+          "state": "crème fraîche, 28% fat",
+          "matchEvidence": "Fineli crème fraîche/sour cream, 28% fat, record 628."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "butter",
+          "matchEvidence": "Butter; Fineli record 500.",
+          "gramsPerUnit": 14,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 14 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006316",
+          "state": "dried paprika powder",
+          "matchEvidence": "Dried paprika powder; AFCD record F006316 provides paired carbohydrate values confirming zero sugar alcohols.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Omitted mustapippuria; the per-serving nutrient upper bound is recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Unmeasured minor seasoning/garnish omitted within the documented per-serving tolerance."
+        }
+      ]
+    },
+    {
+      "recipeId": "paprikainen-vhh-gulassi",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "718",
+          "state": "raw beef roast",
+          "matchEvidence": "Raw beef roast; Fineli record 718. The recipe does not identify a narrower roast cut."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "raw yellow onion",
+          "matchEvidence": "Raw yellow onion; Fineli record 335."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004193",
+          "state": "raw peeled garlic",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Garlic clove set to 3 g edible mass per clove.",
+          "matchEvidence": "Raw peeled garlic; AFCD record F004193 has paired carbohydrate values confirming zero sugar alcohols."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "386",
+          "state": "raw red bell pepper",
+          "matchEvidence": "Raw red pepper; Fineli record 386.",
+          "gramsPerUnit": 160,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 160 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "352",
+          "state": "raw tomato",
+          "matchEvidence": "Raw tomato; Fineli record 352.",
+          "gramsPerUnit": 120,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 120 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "354",
+          "state": "tomato paste",
+          "matchEvidence": "Tomato paste; Fineli record 354.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006316",
+          "state": "dried paprika powder",
+          "matchEvidence": "Dried paprika powder; AFCD record F006316 provides paired carbohydrate values confirming zero sugar alcohols.",
+          "gramsPerUnit": 6,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 6 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "butter (selected option)",
+          "gramsPerUnit": 14,
+          "conversionEvidence": "Recipe alternative resolved to butter; 14 g per tablespoon standard kitchen measure.",
+          "matchEvidence": "Butter selected from the recipe alternatives; Fineli record 500."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003327",
+          "state": "ground cumin",
+          "matchEvidence": "Ground cumin; AFCD record F003327.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "29",
+          "state": "diluted beef stock",
+          "matchEvidence": "Diluted beef stock; Fineli record 29.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per dl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact suolaa; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Salt contributes none of the four published macronutrients; sodium is not displayed."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Omitted mustapippuria; the per-serving nutrient upper bound is recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Unmeasured minor seasoning/garnish omitted within the documented per-serving tolerance."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003269",
+          "state": "full-fat sour cream, 36.3% fat proxy for smetana",
+          "matchEvidence": "Smetana represented by analysed AFCD full-fat sour cream record F003269 (36.3% fat), the closest paired-carbohydrate record; no product brand is specified."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Omitted persiljaa; the per-serving nutrient upper bound is recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 2,
+            "netCarbohydrate": 0.35,
+            "totalCarbohydrate": 0.6,
+            "protein": 0.15,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Unmeasured minor seasoning/garnish omitted within the documented per-serving tolerance."
+        }
+      ]
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "7600",
+          "state": "boiled frankfurter sausage",
+          "matchEvidence": "Frankfurter-style sausage represented by boiled nakki, Fineli record 7600; no brand or fat class is specified."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "322",
+          "state": "raw cauliflower",
+          "matchEvidence": "Raw cauliflower; Fineli record 322."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "339",
+          "state": "raw celery stalk",
+          "matchEvidence": "Raw celery stalk; Fineli record 339."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "337",
+          "state": "raw leek",
+          "matchEvidence": "Raw leek; Fineli record 337."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "raw yellow onion",
+          "matchEvidence": "Raw yellow onion; Fineli record 335.",
+          "gramsPerUnit": 70,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 70 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "29",
+          "state": "diluted beef stock",
+          "matchEvidence": "Diluted beef stock; Fineli record 29.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per dl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact laakerinlehti; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Low-dose seasoning or garnish omitted; per-serving upper bound is conservatively budgeted below the project limits."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Measured low-dose ground black pepper omitted; upper-bound estimate recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0.2,
+            "netCarbohydrate": 0.03,
+            "totalCarbohydrate": 0.05,
+            "protein": 0.01,
+            "fat": 0.01
+          },
+          "omissionImpactEvidence": "The recipe uses at most half a teaspoon of seasoning over multiple servings; per-serving bound is 0.2 kcal, 0.03 g net carbohydrate, 0.05 g total carbohydrate, 0.01 g protein, and 0.01 g fat."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Omitted tuoretta persiljaa; the per-serving nutrient upper bound is recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 2,
+            "netCarbohydrate": 0.35,
+            "totalCarbohydrate": 0.6,
+            "protein": 0.15,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Unmeasured minor seasoning/garnish omitted within the documented per-serving tolerance."
+        }
+      ]
+    },
+    {
+      "recipeId": "nakkikastike-kukkakaalimuusi",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "7600",
+          "state": "boiled frankfurter sausage",
+          "matchEvidence": "Frankfurter-style sausage represented by boiled nakki, Fineli record 7600; no brand or fat class is specified."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "raw yellow onion",
+          "matchEvidence": "Raw yellow onion; Fineli record 335.",
+          "gramsPerUnit": 70,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 70 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "whipping cream, 38% fat",
+          "matchEvidence": "Whipping cream, 38% fat; Fineli record 631.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per dl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "29",
+          "state": "diluted beef stock",
+          "matchEvidence": "Diluted beef stock; Fineli record 29.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per dl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "28",
+          "state": "prepared mustard",
+          "matchEvidence": "Prepared mustard represented by Fineli mustard record 28; Dijon-specific product is not identified and the recipe quantity is small.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Measured low-dose ground black pepper omitted; upper-bound estimate recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0.2,
+            "netCarbohydrate": 0.03,
+            "totalCarbohydrate": 0.05,
+            "protein": 0.01,
+            "fat": 0.01
+          },
+          "omissionImpactEvidence": "The recipe uses at most half a teaspoon of seasoning over multiple servings; per-serving bound is 0.2 kcal, 0.03 g net carbohydrate, 0.05 g total carbohydrate, 0.01 g protein, and 0.01 g fat."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "322",
+          "state": "raw cauliflower",
+          "matchEvidence": "Raw cauliflower; Fineli record 322."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "butter",
+          "matchEvidence": "Butter; Fineli record 500."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Omitted suolaa; the per-serving nutrient upper bound is recorded.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Salt contributes none of the four displayed macronutrients."
+        }
+      ]
+    },
+    {
+      "recipeId": "amritsari-kala",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "826",
+          "state": "raw frozen pollock fillet",
+          "matchEvidence": "Generic whitefish recipe clarified to frozen pollock, a lean white fish; Fineli frozen pollock record 826."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003986",
+          "state": "raw chickpea flour (besan)",
+          "matchEvidence": "Chickpea flour/besan; AFCD record F003986."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "620",
+          "state": "plain unsweetened yogurt, 3.9% fat",
+          "matchEvidence": "Plain unsweetened Bulgarian-style yogurt, 3.9% fat; Fineli record 620."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11557",
+          "state": "fresh lemon juice",
+          "matchEvidence": "Undiluted lemon juice; Fineli record 11557.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact ajwain-siemeniä; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Low-dose seasoning or garnish omitted; per-serving upper bound is conservatively budgeted below the project limits."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006316",
+          "state": "dried paprika powder",
+          "matchEvidence": "Dried paprika powder; AFCD record F006316 provides paired carbohydrate values confirming zero sugar alcohols.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002893",
+          "state": "ground dried chilli",
+          "matchEvidence": "Ground dried chilli; AFCD record F002893.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact suolaa; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Salt contributes none of the four published macronutrients; sodium is not displayed."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004193",
+          "state": "raw peeled garlic",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Garlic clove set to 3 g edible mass per clove.",
+          "matchEvidence": "Raw peeled garlic; AFCD record F004193 has paired carbohydrate values confirming zero sugar alcohols."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "541",
+          "state": "neutral vegetable oil",
+          "matchEvidence": "Neutral cooking oil represented by Fineli average cooking oil record 541.",
+          "gramsPerUnit": 13.7,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 13.7 g per rkl; recipe quantity converted to edible mass."
+        }
+      ]
+    },
+    {
+      "recipeId": "kantonilainen-hoyrytetty-kala",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "826",
+          "state": "raw frozen pollock fillet",
+          "matchEvidence": "Generic whitefish recipe clarified to frozen pollock, a lean white fish; Fineli frozen pollock record 826."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004213",
+          "state": "raw peeled ginger root",
+          "matchEvidence": "Raw peeled ginger; AFCD record F004213 has paired carbohydrate values confirming zero sugar alcohols.",
+          "gramsPerUnit": 6,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 6 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006250",
+          "state": "raw spring onion",
+          "matchEvidence": "Raw spring onion; AFCD record F006250.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "31",
+          "state": "soy sauce",
+          "matchEvidence": "Soy sauce specified in the revised recipe; Fineli record 31.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "541",
+          "state": "neutral vegetable oil",
+          "matchEvidence": "Neutral cooking oil represented by Fineli average cooking oil record 541.",
+          "gramsPerUnit": 13.7,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 13.7 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water has no meaningful energy or four published macronutrients.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Ingredient is plain water, with zero energy and macronutrients."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F005198",
+          "state": "raw lime",
+          "gramsPerUnit": 50,
+          "conversionEvidence": "Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.",
+          "matchEvidence": "Raw lime, peeled; AFCD record F005198."
+        }
+      ]
+    },
+    {
+      "recipeId": "hyderabadi-kanabiryani",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "30792",
+          "state": "raw skinless chicken thigh meat",
+          "matchEvidence": "Raw skinless chicken thigh meat; Fineli Release 20 record 30792."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F007682",
+          "state": "raw white long-grain rice",
+          "matchEvidence": "Basmati rice represented by uncooked white long-grain rice; AFCD record F007682."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "620",
+          "state": "plain unsweetened yogurt, 3.9% fat",
+          "matchEvidence": "Plain unsweetened Bulgarian-style yogurt, 3.9% fat; Fineli record 620."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "raw yellow onion",
+          "matchEvidence": "Raw yellow onion; Fineli record 335.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "541",
+          "state": "neutral vegetable oil",
+          "matchEvidence": "Neutral cooking oil represented by Fineli average cooking oil record 541.",
+          "gramsPerUnit": 13.7,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 13.7 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "500",
+          "state": "butter, selected option",
+          "gramsPerUnit": 14,
+          "conversionEvidence": "Recipe alternative resolved to butter; 14 g per tablespoon standard kitchen measure.",
+          "matchEvidence": "Butter selected from recipe alternatives; Fineli record 500."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact garam masalaa; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Low-dose seasoning or garnish omitted; per-serving upper bound is conservatively budgeted below the project limits."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003327",
+          "state": "ground cumin",
+          "matchEvidence": "Ground cumin; AFCD record F003327.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003190",
+          "state": "ground coriander seed",
+          "matchEvidence": "Ground coriander seed; AFCD record F003190.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact suolaa; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Salt contributes none of the four published macronutrients; sodium is not displayed."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009335",
+          "state": "ground turmeric",
+          "matchEvidence": "Ground turmeric; AFCD record F009335.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002963",
+          "state": "ground cinnamon proxy",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "One cinnamon stick represented by 2 g ground cinnamon equivalent.",
+          "matchEvidence": "Cinnamon stick represented by AFCD ground cinnamon record F002963; small spice contribution."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002258",
+          "state": "ground cardamom seed",
+          "gramsPerUnit": 0.45,
+          "conversionEvidence": "One cardamom pod represented by 0.45 g ground seed equivalent.",
+          "matchEvidence": "Cardamom pods represented by AFCD ground cardamom seed F002258."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact sahramia; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Low-dose seasoning or garnish omitted; per-serving upper bound is conservatively budgeted below the project limits."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003192",
+          "state": "fresh coriander",
+          "matchEvidence": "Fresh coriander; AFCD record F003192."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F005700",
+          "state": "fresh mint",
+          "matchEvidence": "Fresh mint; AFCD record F005700."
+        }
+      ]
+    },
+    {
+      "recipeId": "kana-yakitori-kaalilla",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "30792",
+          "state": "raw skinless chicken thigh meat",
+          "matchEvidence": "Raw skinless chicken thigh meat; Fineli Release 20 record 30792."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "31",
+          "state": "soy sauce",
+          "matchEvidence": "Soy sauce specified in the revised recipe; Fineli record 31.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F005701",
+          "state": "mirin",
+          "matchEvidence": "Mirin; AFCD record F005701.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006187",
+          "state": "sesame oil",
+          "matchEvidence": "Sesame oil; AFCD record F006187.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004213",
+          "state": "raw peeled ginger root",
+          "matchEvidence": "Raw peeled ginger; AFCD record F004213 has paired carbohydrate values confirming zero sugar alcohols.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "320",
+          "state": "raw white cabbage",
+          "matchEvidence": "Raw white cabbage; Fineli record 320."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "929",
+          "state": "wine vinegar",
+          "matchEvidence": "Wine vinegar represented by Fineli record 929; minor style variation at the stated dose.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F008214",
+          "state": "sesame seeds",
+          "matchEvidence": "Sesame seeds; AFCD record F008214.",
+          "gramsPerUnit": 9,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 9 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006250",
+          "state": "raw spring onion",
+          "matchEvidence": "Raw spring onion; AFCD record F006250.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per kpl; recipe quantity converted to edible mass."
+        }
+      ]
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "718",
+          "state": "raw beef roast",
+          "matchEvidence": "Ropa vieja alternative resolved to the listed beef roast option; Fineli record 718."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "raw yellow onion",
+          "matchEvidence": "Raw yellow onion; Fineli record 335.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "387",
+          "state": "raw green bell pepper",
+          "matchEvidence": "Raw green pepper; Fineli record 387.",
+          "gramsPerUnit": 120,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 120 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "386",
+          "state": "raw red bell pepper",
+          "matchEvidence": "Raw red pepper; Fineli record 386.",
+          "gramsPerUnit": 160,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 160 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "398",
+          "state": "crushed tomato",
+          "matchEvidence": "Crushed tomatoes; Fineli record 398."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "29",
+          "state": "diluted beef stock",
+          "matchEvidence": "Diluted beef stock; Fineli record 29.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 1 g per ml; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004193",
+          "state": "raw peeled garlic",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Garlic clove set to 3 g edible mass per clove.",
+          "matchEvidence": "Raw peeled garlic; AFCD record F004193 has paired carbohydrate values confirming zero sugar alcohols."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003327",
+          "state": "ground cumin",
+          "matchEvidence": "Ground cumin; AFCD record F003327.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006281",
+          "state": "dried oregano",
+          "matchEvidence": "Dried oregano; AFCD record F006281 has paired available-carbohydrate values confirming zero sugar alcohols.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact laakerinlehteä; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Low-dose seasoning or garnish omitted; per-serving upper bound is conservatively budgeted below the project limits."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "34972",
+          "state": "green olives in brine, pitted",
+          "matchEvidence": "Pitted green olives in brine; Fineli record 34972."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "929",
+          "state": "wine vinegar",
+          "matchEvidence": "Wine vinegar represented by Fineli record 929; minor style variation at the stated dose.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass."
+        }
+      ]
+    },
+    {
+      "recipeId": "kerala-kalacurry",
+      "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "826",
+          "state": "raw frozen pollock fillet",
+          "matchEvidence": "Generic whitefish recipe clarified to frozen pollock, a lean white fish; Fineli frozen pollock record 826."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002991",
+          "state": "canned regular-fat coconut milk",
+          "matchEvidence": "Canned regular-fat coconut milk; AFCD record F002991.",
+          "gramsPerUnit": 0.92,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 0.92 g per ml; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "raw yellow onion",
+          "matchEvidence": "Raw yellow onion; Fineli record 335.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per kpl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004193",
+          "state": "raw peeled garlic",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Garlic clove set to 3 g edible mass per clove.",
+          "matchEvidence": "Raw peeled garlic; AFCD record F004193 has paired carbohydrate values confirming zero sugar alcohols."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004213",
+          "state": "raw peeled ginger root",
+          "matchEvidence": "Raw peeled ginger; AFCD record F004213 has paired carbohydrate values confirming zero sugar alcohols."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009081",
+          "state": "pure tamarind paste",
+          "matchEvidence": "Pure tamarind paste; AFCD record F009081.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009335",
+          "state": "ground turmeric",
+          "matchEvidence": "Ground turmeric; AFCD record F009335.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002893",
+          "state": "ground dried chilli",
+          "matchEvidence": "Ground dried chilli; AFCD record F002893.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact sinapinsiemeniä; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.3,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Low-dose seasoning or garnish omitted; per-serving upper bound is conservatively budgeted below the project limits."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact tuoreita currylehtiä; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 2,
+            "netCarbohydrate": 0.35,
+            "totalCarbohydrate": 0.6,
+            "protein": 0.15,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Low-dose seasoning or garnish omitted; per-serving upper bound is conservatively budgeted below the project limits."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "541",
+          "state": "neutral vegetable oil",
+          "matchEvidence": "Neutral cooking oil represented by Fineli average cooking oil record 541.",
+          "gramsPerUnit": 13.7,
+          "conversionEvidence": "Ingredient-specific household measure conversion: 13.7 g per rkl; recipe quantity converted to edible mass."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded low-impact suolaa; exact nutrient impact is bounded per serving.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Salt contributes none of the four published macronutrients; sodium is not displayed."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water has no meaningful energy or four published macronutrients.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Ingredient is plain water, with zero energy and macronutrients."
+        }
+      ]
+    },
+    {
+      "recipeId": "kanapyorykat-tomaattikastike",
+      "scope": "Complete recipe divided by listed servings. Chicken mince uses raw Fineli mince. One onion is resolved to Fineli medium onion mass (55 g). Parmesan is represented by regular-fat fresh Parmesan. All added oil is counted as retained. Seasoning omission bounds are explicit; these are practical estimates, not laboratory analyses.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "28930",
+          "state": "raw chicken mince",
+          "matchEvidence": "Raw chicken mince; Fineli Release 20 record 28930."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw edible egg, shell removed",
+          "matchEvidence": "Raw edible egg; Fineli record 858.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Fineli record 858 medium shell-free egg portion KPL_M = 55 g."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002479",
+          "state": "fresh regular-fat Parmesan",
+          "matchEvidence": "Parmesan represented by AFCD fresh regular-fat Parmesan record F002479; the source recipe does not specify a grated/dried product."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006281",
+          "state": "dried oregano",
+          "matchEvidence": "Dried oregano; AFCD record F006281 has paired carbohydrate values confirming zero sugar alcohols.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "One level teaspoon of dried oregano represented as 1 g."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "raw yellow onion, medium",
+          "matchEvidence": "Raw yellow onion; Fineli record 335.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Fineli record 335 medium onion portion KPL_M = 55 g; one unspecified onion resolved as medium."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "398",
+          "state": "crushed tomato",
+          "matchEvidence": "Crushed tomatoes; Fineli record 398."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "whipping cream, 38% fat",
+          "matchEvidence": "Whipping cream, 38% fat; Fineli record 631.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Fineli record 631 has 100 g per dl; 100 ml equals 1 dl, so 1 g/ml for this measured product."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "olive oil",
+          "matchEvidence": "Olive oil; Fineli record 536.",
+          "gramsPerUnit": 13.5,
+          "conversionEvidence": "Fineli record 536 tablespoon portion RKL = 13.5 g."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Salt has no energy or four published macronutrients; pepper is unquantified and bounded below project tolerance.",
+          "excludedReason": "Salt and unspecified black pepper omitted; salt is nutrient-free for these four displayed values and pepper is a minor seasoning.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0.5,
+            "netCarbohydrate": 0.1,
+            "totalCarbohydrate": 0.15,
+            "protein": 0.05,
+            "fat": 0.05
+          },
+          "omissionImpactEvidence": "Unspecified pepper conservatively bounded per serving below 1 kcal and 1 g for each published nutrient; salt contributes zero."
+        }
+      ]
+    }
+  ]
+}

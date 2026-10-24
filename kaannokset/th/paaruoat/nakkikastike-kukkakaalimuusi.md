@@ -56,6 +56,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/nakkikastike-kukkakaalimuusi.md
 translation_of: nakkikastike-kukkakaalimuusi
+carbs_net_per_serving_g: 7.88
+carbs_total_per_serving_g: 10.96
+protein_per_serving_g: 15.69
+fat_per_serving_g: 45.87
+
 ---
 
 # ซอสไส้กรอกกับดอกกะหล่ำบด

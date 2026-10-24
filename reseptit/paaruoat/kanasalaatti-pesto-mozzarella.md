@@ -50,6 +50,11 @@ image:
   alt: Pesto-kanasalaatti mozzarellalla tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 1.88
+carbs_total_per_serving_g: 4.36
+protein_per_serving_g: 32
+fat_per_serving_g: 24.19
+
 ---
 # Pesto-kanasalaatti mozzarellalla
 

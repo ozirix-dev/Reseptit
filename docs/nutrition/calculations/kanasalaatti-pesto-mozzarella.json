@@ -1,0 +1,350 @@
+{
+  "recipeId": "kanasalaatti-pesto-mozzarella",
+  "sourceHash": "95d4d971d5af84be1e2f675c4ca21fcab5d2bab2199d9aeda57da852e5ba33d5",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-12",
+  "servings": 4,
+  "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "broilerin rintafileetä",
+      "amount": 400,
+      "unit": "g",
+      "state": "raw skinless chicken breast",
+      "matchEvidence": "Raw skinless chicken breast; Fineli Release 20 record 11565.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11565-release-20",
+        "name": "BROILERI, RINTAFILEE, NAHATON, SUIKALE, LEIKE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11565",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw skinless chicken breast",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 22.44,
+          "fat": 2.01
+        }
+      }
+    },
+    {
+      "item": "mozzarellaa",
+      "amount": 150,
+      "unit": "g",
+      "state": "fresh mozzarella, 20% fat",
+      "matchEvidence": "Fresh mozzarella, 20% fat; Fineli record 29239.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-29239-release-20",
+        "name": "JUUSTO, MOZZARELLA, RASVAA 20 %, TUOREJUUSTO",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29239",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh mozzarella, 20% fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 18.6,
+          "fat": 20.7
+        }
+      }
+    },
+    {
+      "item": "rucolaa",
+      "amount": 100,
+      "unit": "g",
+      "state": "raw rocket/arugula",
+      "matchEvidence": "Raw rocket/arugula; Fineli record 34159.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-34159-release-20",
+        "name": "RUKOLA, RUCOLA, SINAPPIKAALI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34159",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw rocket/arugula",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.452,
+          "FIBT": 1.6,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.452,
+          "fibre": 1.6,
+          "polyols": 0,
+          "protein": 2.607,
+          "fat": 0.303
+        }
+      }
+    },
+    {
+      "item": "kirsikkatomaatteja",
+      "amount": 150,
+      "unit": "g",
+      "state": "raw cherry tomatoes",
+      "matchEvidence": "Raw cherry tomatoes; AFCD record F009190.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F009190-release-3",
+        "name": "Tomato, cherry, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw cherry tomatoes",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 3.5,
+          "fibre": 1.7,
+          "polyols": 0,
+          "protein": 0.9,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "avokado",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "peeled and pitted raw avocado",
+      "matchEvidence": "Peeled and pitted avocado; Fineli record 11057.",
+      "gramsPerUnit": 150,
+      "conversionEvidence": "Edible mass set to 150 g per medium avocado; Fineli peeled/pitted record 11057 provides the food state.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11057-release-20",
+        "name": "AVOKADO, KUORITTU, KIVETÖN",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11057",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "peeled and pitted raw avocado",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.77,
+          "FIBT": 3.6,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.77,
+          "fibre": 3.6,
+          "polyols": 0,
+          "protein": 2.63,
+          "fat": 19.4
+        }
+      }
+    },
+    {
+      "item": "vihreää pestoa",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "commercial green herb pesto",
+      "matchEvidence": "Green basil/herb pesto represented by Fineli pesto sauce, herb sauce record 3323; brand variation is not specified by the recipe.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-3323-release-20",
+        "name": "PESTOKASTIKE, YRTTIKASTIKE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/3323",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "commercial green herb pesto",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.393,
+          "FIBT": 1.214,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.393,
+          "fibre": 1.214,
+          "polyols": 0,
+          "protein": 7.98,
+          "fat": 48.509
+        }
+      }
+    },
+    {
+      "item": "oliiviöljyä",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "olive oil",
+      "matchEvidence": "Olive oil; Fineli record 536.",
+      "gramsPerUnit": 13.7,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 13.7 g per rkl; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "olive oil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    },
+    {
+      "item": "sitruunamehua",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "fresh lemon juice",
+      "matchEvidence": "Undiluted lemon juice; Fineli record 11557.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11557-release-20",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11557",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh lemon juice",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.6,
+          "FIBT": 0.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "fibre": 0.1,
+          "polyols": 0,
+          "protein": 0.31,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa ja mustapippuria",
+      "amount": null,
+      "unit": "",
+      "state": "documented low-impact seasoning or nutrient-free item",
+      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Omitted suolaa ja mustapippuria; the per-serving nutrient upper bound is recorded.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Salt contributes none of the four displayed macronutrients."
+    }
+  ]
+}
