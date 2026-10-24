@@ -127,6 +127,18 @@ polyolikoostumus on epäselvä, nettoarvo jää puuttumaan.
   Fineli-paketissa on 4 238 tietuetta ja samoin uniikit lähdetunnisteet sekä
   nimet. Täsmänimien duplikaatteja ei löytynyt; samankaltaisia versioita ei
   yhdistetä automaattisesti, koska niiden ravintoarvot voivat erota.
+- Koneella ollut Fineli Rel20 -paketti lisättiin täydemmäksi paikalliseksi
+  viiteaineistoksi `fineli-release-20-reference.json`. Se sisältää 4 238
+  tietuetta, joista 3 995:llä on numeerisesti ilmoitettu CHOAVL-, FIBT-,
+  SUGOH-, PROT- ja FAT-arvo. Aineiston 4 238 lähdetunnistetta ja nimet ovat
+  uniikkeja; valituissa makroissa ei havaittu negatiivisia tai yli
+  100 g/100 g -arvoja. Lähteen `foodaddunit.csv`-taulukosta säilyy
+  7 347 ruokakohtaista mittaa (ruokalusikka, teelusikka, dl, l ja kpl-koot)
+  3 247 ruoalle. Yleistä muunnosta ei tehdä, vaan yksikkömuunnos edellyttää
+  täsmällistä ruokatietuetta ja samankokoista Fineli-yksikköä.
+  Aineisto voidaan tuottaa uudelleen komennolla
+  `python tools/import-fineli-reference.py <Fineli-Rel20.zip>
+  docs/nutrition/fineli-release-20-reference.json`.
 - FSANZ:n Australian Food Composition Database Release 3:n lähdeprofiilit
   tarkistettiin 24.10.2026 ja lisättiin erilliseksi viiteaineistoksi
   `afcd-release-3-reference.json`. Aineisto sisältää 1 588 ruokaa, viisi
