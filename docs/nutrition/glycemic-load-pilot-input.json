@@ -1,5 +1,5 @@
 {
-  "calculationBasis": "Per-serving ingredient-sum estimate: sum(GI × Fineli Rel20 available carbohydrate per serving)/100. Published exact values, explicit analogues, and category means may be used with source, match kind, and confidence disclosed. Ingredients below 1 g available carbohydrate per serving are omitted. Not a measured mixed-meal response.",
+  "calculationBasis": "Per-serving ingredient-sum estimate: sum(GI × available carbohydrate per serving)/100. Fineli Rel20 is the primary available-carbohydrate source; AFCD Release 3 fills only two missing Fineli foods (chickpea flour and tamarind paste). Published exact GI values, explicit analogues, and Table 1 category means may be used with source, match type, and confidence disclosed. Ingredients below 1 g available carbohydrate per serving are omitted. Not a measured mixed-meal response.",
   "fineliEvidence": "docs/nutrition/fineli-release-20-reference.json; only required records are copied into docs/nutrition/food-records.json. Finnish Institute for Health and Welfare (THL), Fineli Rel20, CC BY 4.0.",
   "massEvidence": "Amounts are from structured Finnish recipe frontmatter. Grams use listed weights; other units use food-specific Fineli Rel20 MASS values. If only dl mass exists, rkl/tl are converted from food-specific density using 15/5 ml spoon volume and documented per ingredient.",
   "excludedIngredientPolicy": "Trace seasonings and unspecified salt are conservative documented assumptions, omitted only below 1 g available carbohydrate per serving. Unresolved substantial ingredients block totals.",
@@ -1429,6 +1429,590 @@
           "massEvidence": "Recipe quantity estimates; no unified measured mass."
         }
       ]
+    },
+    {
+      "recipeId": "chole-bhature",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kuivattuja kikherneitä",
+          "grams": 300,
+          "fineliRecordId": "fineli-31218-2026-10-24",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "massEvidence": "Dry chickpeas, recipe-listed 300 g before soaking/cooking; Fineli #31218.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: legumes-category-mean-gi-34. Dry chickpeas, recipe-listed 300 g before soaking/cooking; Fineli #31218."
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Fineli #398; recipe-listed 400 g. GI is a raw-tomato analogue for cooked crushed tomato.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: tomato-raw-cooked-sauce-analogue-gi-22. Fineli #398; recipe-listed 400 g. GI is a raw-tomato analogue for cooked crushed tomato."
+        },
+        {
+          "name": "vehnäjauhoja",
+          "grams": 350,
+          "fineliRecordId": "fineli-110-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Fineli #110; recipe-listed 350 g. GI is a broad bakery-products category mean.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: bakery-products-category-mean-gi-58. Fineli #110; recipe-listed 350 g. GI is a broad bakery-products category mean."
+        }
+      ]
+    },
+    {
+      "recipeId": "gulab-jamun",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "maitojauhetta",
+          "grams": 150,
+          "fineliRecordId": "fineli-672-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Fineli #672 skimmed milk powder used for unspecified milk powder; recipe-listed 150 g, composition may differ.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #672 skimmed milk powder used for unspecified milk powder; recipe-listed 150 g, composition may differ."
+        },
+        {
+          "name": "vehnäjauhoja",
+          "grams": 50,
+          "fineliRecordId": "fineli-110-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Fineli #110; recipe-listed 50 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: bakery-products-category-mean-gi-58. Fineli #110; recipe-listed 50 g."
+        },
+        {
+          "name": "maitoa",
+          "grams": 103,
+          "fineliRecordId": "fineli-675-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Fineli #675; 100 ml recipe milk converted to 103 g from the source measure.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #675; 100 ml recipe milk converted to 103 g from the source measure."
+        },
+        {
+          "name": "sokeria",
+          "grams": 250,
+          "fineliRecordId": "fineli-1-2026-10-24",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "massEvidence": "Fineli #1; recipe-listed 250 g syrup sugar; all listed sugar is counted, though some syrup may remain.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: sugar-syrups-category-mean-gi-58. Fineli #1; recipe-listed 250 g syrup sugar; all listed sugar is counted, though some syrup may remain."
+        },
+        {
+          "name": "pistaasipähkinää",
+          "grams": 10,
+          "fineliRecordId": "fineli-33131-2026-10-24",
+          "giRecordId": "nuts-category-mean-gi-22",
+          "massEvidence": "Fineli #33131; 10 g batch garnish assumed from nutrition evidence; portion is under 1 g available carbohydrate per serving and is omitted.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: nuts-category-mean-gi-22. Fineli #33131; 10 g batch garnish assumed from nutrition evidence; portion is under 1 g available carbohydrate per serving and is omitted."
+        }
+      ]
+    },
+    {
+      "recipeId": "samosa",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "vehnäjauhoja",
+          "grams": 300,
+          "fineliRecordId": "fineli-110-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Fineli #110; recipe-listed 300 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: bakery-products-category-mean-gi-58. Fineli #110; recipe-listed 300 g."
+        },
+        {
+          "name": "perunoita",
+          "grams": 400,
+          "fineliRecordId": "fineli-205-2026-10-24",
+          "giRecordId": "potato-boiled-preparation-analogue-gi-66",
+          "massEvidence": "Fineli #205 peeled potato; 400 g. GI is a boiled-potato preparation analogue.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: potato-boiled-preparation-analogue-gi-66. Fineli #205 peeled potato; 400 g. GI is a boiled-potato preparation analogue."
+        },
+        {
+          "name": "pakasteherneitä",
+          "grams": 100,
+          "fineliRecordId": "fineli-370-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #370 fresh green peas used as an analogue for frozen peas; recipe-listed 100 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #370 fresh green peas used as an analogue for frozen peas; recipe-listed 100 g."
+        }
+      ]
+    },
+    {
+      "recipeId": "aloo-paratha",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "vehnäjauhoja",
+          "grams": 300,
+          "fineliRecordId": "fineli-110-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Fineli #110; recipe-listed 300 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: bakery-products-category-mean-gi-58. Fineli #110; recipe-listed 300 g."
+        },
+        {
+          "name": "perunoita",
+          "grams": 400,
+          "fineliRecordId": "fineli-205-2026-10-24",
+          "giRecordId": "potato-boiled-preparation-analogue-gi-66",
+          "massEvidence": "Fineli #205 peeled potato; filling is boiled and mashed, 400 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: potato-boiled-preparation-analogue-gi-66. Fineli #205 peeled potato; filling is boiled and mashed, 400 g."
+        }
+      ]
+    },
+    {
+      "recipeId": "vada-pav",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "perunoita",
+          "grams": 500,
+          "fineliRecordId": "fineli-205-2026-10-24",
+          "giRecordId": "potatoes-category-mean-gi-71",
+          "massEvidence": "Fineli #205 peeled potato; mashed, coated and fried. Broad category mean used because preparation differs.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: potatoes-category-mean-gi-71. Fineli #205 peeled potato; mashed, coated and fried. Broad category mean used because preparation differs."
+        },
+        {
+          "name": "kikhernejauhoja",
+          "grams": 100,
+          "fineliRecordId": "afcd-f003986-2026-10-24",
+          "giRecordId": "asian-indian-category-mean-gi-65",
+          "massEvidence": "AFCD F003986 chickpea flour (besan); recipe-listed 100 g. Regional category mean is a broad low-confidence GI proxy.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: asian-indian-category-mean-gi-65. AFCD F003986 chickpea flour (besan); recipe-listed 100 g. Regional category mean is a broad low-confidence GI proxy."
+        },
+        {
+          "name": "pehmeitä sämpylöitä",
+          "grams": 200,
+          "fineliRecordId": "fineli-1108-2026-10-24",
+          "giRecordId": "bread-category-mean-gi-64",
+          "massEvidence": "Fineli #1108 medium wheat rolls at 50 g each, four buns = 200 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: bread-category-mean-gi-64. Fineli #1108 medium wheat rolls at 50 g each, four buns = 200 g."
+        }
+      ]
+    },
+    {
+      "recipeId": "pani-puri",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "mannasuurimoita",
+          "grams": 150,
+          "fineliRecordId": "fineli-112-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Fineli #112; recipe-listed 150 g. Broad grain-product category mean.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: bakery-products-category-mean-gi-58. Fineli #112; recipe-listed 150 g. Broad grain-product category mean."
+        },
+        {
+          "name": "vehnäjauhoja",
+          "grams": 20,
+          "fineliRecordId": "fineli-110-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Fineli #110; 2 tbsp converted using food-specific 10 g/tbsp measure.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: bakery-products-category-mean-gi-58. Fineli #110; 2 tbsp converted using food-specific 10 g/tbsp measure."
+        },
+        {
+          "name": "perunoita",
+          "grams": 300,
+          "fineliRecordId": "fineli-205-2026-10-24",
+          "giRecordId": "potato-boiled-preparation-analogue-gi-66",
+          "massEvidence": "Fineli #205 peeled potato; boiled filling, recipe-listed 300 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: potato-boiled-preparation-analogue-gi-66. Fineli #205 peeled potato; boiled filling, recipe-listed 300 g."
+        },
+        {
+          "name": "kypsiä kikherneitä",
+          "grams": 150,
+          "fineliRecordId": "fineli-11089-2026-10-24",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "massEvidence": "Fineli #11089 cooked/canned chickpeas, recipe-listed 150 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: legumes-category-mean-gi-34. Fineli #11089 cooked/canned chickpeas, recipe-listed 150 g."
+        },
+        {
+          "name": "tamarinditahnaa",
+          "grams": 30,
+          "fineliRecordId": "afcd-f009081-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "AFCD F009081 pure tamarind paste; 2 tbsp converted to 30 g. Fruit category GI is a broad low-confidence proxy.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: fruit-category-mean-gi-51. AFCD F009081 pure tamarind paste; 2 tbsp converted to 30 g. Fruit category GI is a broad low-confidence proxy."
+        }
+      ]
+    },
+    {
+      "recipeId": "medu-vada",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "urad-dal-linssejä",
+          "grams": 250,
+          "fineliRecordId": "fineli-399-2026-10-24",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "massEvidence": "Fineli #399 dried green/brown lentils used as a legume-composition analogue for urad dal; recipe-listed 250 g. Low confidence.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: legumes-category-mean-gi-34. Fineli #399 dried green/brown lentils used as a legume-composition analogue for urad dal; recipe-listed 250 g. Low confidence."
+        },
+        {
+          "name": "riisijauhoja",
+          "grams": 8,
+          "fineliRecordId": "fineli-182-2026-10-24",
+          "giRecordId": "rice-category-mean-gi-67",
+          "massEvidence": "Fineli #182; one tablespoon converted to 8 g using the food-specific measure.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: rice-category-mean-gi-67. Fineli #182; one tablespoon converted to 8 g using the food-specific measure."
+        }
+      ]
+    },
+    {
+      "recipeId": "jauheliha-makaronilaatikko",
+      "servings": 8,
+      "ingredients": [
+        {
+          "name": "makaronia",
+          "grams": 400,
+          "fineliRecordId": "fineli-117-2026-10-24",
+          "giRecordId": "pasta-category-mean-gi-52",
+          "massEvidence": "Fineli #117 dry macaroni; recipe-listed 400 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: pasta-category-mean-gi-52. Fineli #117 dry macaroni; recipe-listed 400 g."
+        },
+        {
+          "name": "raejuustoa",
+          "grams": 500,
+          "fineliRecordId": "fineli-649-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Fineli #649 cottage cheese; recipe-listed 500 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #649 cottage cheese; recipe-listed 500 g."
+        },
+        {
+          "name": "maitoa",
+          "grams": 200,
+          "fineliRecordId": "fineli-675-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Fineli #675; 2 dl converted using the food-specific 100 g/dl measure.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #675; 2 dl converted using the food-specific 100 g/dl measure."
+        }
+      ]
+    },
+    {
+      "recipeId": "lohikeitto-kuohukermalla",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "perunaa",
+          "grams": 360,
+          "fineliRecordId": "fineli-205-2026-10-24",
+          "giRecordId": "potato-boiled-preparation-analogue-gi-66",
+          "massEvidence": "Fineli #205; six medium peeled potatoes converted to 360 g; boiled in soup.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: potato-boiled-preparation-analogue-gi-66. Fineli #205; six medium peeled potatoes converted to 360 g; boiled in soup."
+        },
+        {
+          "name": "porkkana",
+          "grams": 100,
+          "fineliRecordId": "fineli-300-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #300; one medium carrot converted to 100 g total for recipe calculation; category mean is broad.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #300; one medium carrot converted to 100 g total for recipe calculation; category mean is broad."
+        }
+      ]
+    },
+    {
+      "recipeId": "butter-chicken",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "maustamatonta jogurttia",
+          "grams": 150,
+          "fineliRecordId": "fineli-620-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Fineli #620 plain yogurt; recipe-listed 150 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #620 plain yogurt; recipe-listed 150 g."
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Fineli #398; recipe-listed 400 g. Raw whole tomato GI is a proxy for crushed cooked tomato.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: tomato-raw-cooked-sauce-analogue-gi-22. Fineli #398; recipe-listed 400 g. Raw whole tomato GI is a proxy for crushed cooked tomato."
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Fineli #631; 2 dl converted using food-specific mass, 100 g/dl.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 2 dl converted using food-specific mass, 100 g/dl."
+        },
+        {
+          "name": "hunajaa",
+          "grams": 21,
+          "fineliRecordId": "fineli-1-2026-10-24",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "massEvidence": "Fineli #1 sugar composition used as a carbohydrate proxy for optional 1 tbsp honey; 21 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: sugar-syrups-category-mean-gi-58. Fineli #1 sugar composition used as a carbohydrate proxy for optional 1 tbsp honey; 21 g."
+        }
+      ]
+    },
+    {
+      "recipeId": "punainen-kanacurry-vhh",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "giRecordId": "asian-regional-category-mean-gi-60",
+          "massEvidence": "Fineli #29014; 400 ml converted to 400 g using its 100 g/dl measure. Asian regional mean is a broad proxy, not coconut-milk-specific.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: asian-regional-category-mean-gi-60. Fineli #29014; 400 ml converted to 400 g using its 100 g/dl measure. Asian regional mean is a broad proxy, not coconut-milk-specific."
+        },
+        {
+          "name": "punaista paprikaa",
+          "grams": 120,
+          "fineliRecordId": "fineli-386-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #386; one medium red pepper edible portion 120 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #386; one medium red pepper edible portion 120 g."
+        },
+        {
+          "name": "kukkakaaliriisiä",
+          "grams": 600,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #322 raw cauliflower; 600 g recipe-listed cauliflower rice.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322 raw cauliflower; 600 g recipe-listed cauliflower rice."
+        }
+      ]
+    },
+    {
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "giRecordId": "asian-regional-category-mean-gi-60",
+          "massEvidence": "Fineli #29014; 400 ml converted to 400 g using its 100 g/dl measure. Asian regional mean is a broad proxy, not coconut-milk-specific.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: asian-regional-category-mean-gi-60. Fineli #29014; 400 ml converted to 400 g using its 100 g/dl measure. Asian regional mean is a broad proxy, not coconut-milk-specific."
+        },
+        {
+          "name": "kesäkurpitsaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-389-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #389; recipe-listed 200 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #389; recipe-listed 200 g."
+        },
+        {
+          "name": "munakoisoa",
+          "grams": 150,
+          "fineliRecordId": "fineli-362-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #362; recipe-listed 150 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #362; recipe-listed 150 g."
+        },
+        {
+          "name": "kukkakaaliriisiä",
+          "grams": 600,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #322 raw cauliflower; 600 g recipe-listed cauliflower rice.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322 raw cauliflower; 600 g recipe-listed cauliflower rice."
+        }
+      ]
+    },
+    {
+      "recipeId": "panang-curry-kanalla-vhh",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "giRecordId": "asian-regional-category-mean-gi-60",
+          "massEvidence": "Fineli #29014; 400 ml converted to 400 g using its 100 g/dl measure. Asian regional mean is a broad proxy, not coconut-milk-specific.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: asian-regional-category-mean-gi-60. Fineli #29014; 400 ml converted to 400 g using its 100 g/dl measure. Asian regional mean is a broad proxy, not coconut-milk-specific."
+        },
+        {
+          "name": "vihreitä papuja",
+          "grams": 150,
+          "fineliRecordId": "fineli-29022-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #29022 cooked green beans used for beans simmered in curry; 150 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #29022 cooked green beans used for beans simmered in curry; 150 g."
+        },
+        {
+          "name": "kukkakaaliriisiä",
+          "grams": 500,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #322 raw cauliflower; 500 g recipe-listed cauliflower rice.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322 raw cauliflower; 500 g recipe-listed cauliflower rice."
+        }
+      ]
+    },
+    {
+      "recipeId": "menemen",
+      "servings": 3,
+      "ingredients": [
+        {
+          "name": "kypsää tomaattia",
+          "grams": 375,
+          "fineliRecordId": "fineli-352-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Fineli #352 medium tomatoes at 125 g each, 3 tomatoes = 375 g; raw GI used as cooked-tomato analogue.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: tomato-raw-cooked-sauce-analogue-gi-22. Fineli #352 medium tomatoes at 125 g each, 3 tomatoes = 375 g; raw GI used as cooked-tomato analogue."
+        },
+        {
+          "name": "vihreää paprikaa",
+          "grams": 170,
+          "fineliRecordId": "fineli-387-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #387 medium green pepper measure = 170 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #387 medium green pepper measure = 170 g."
+        }
+      ]
+    },
+    {
+      "recipeId": "lihapullat-kermakastikkeessa-vhh",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kuohukermaa",
+          "grams": 300,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Fineli #631; 3 dl across meatball mixture and sauce converted to 300 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 3 dl across meatball mixture and sauce converted to 300 g."
+        },
+        {
+          "name": "kukkakaalia",
+          "grams": 700,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #322; recipe-listed 700 g cauliflower for mash.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322; recipe-listed 700 g cauliflower for mash."
+        }
+      ]
+    },
+    {
+      "recipeId": "kanakorma-kukkakaaliriisilla",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Fineli #631; 2 dl converted using 100 g/dl.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 2 dl converted using 100 g/dl."
+        },
+        {
+          "name": "turkkilaista jogurttia",
+          "grams": 150,
+          "fineliRecordId": "fineli-32201-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Fineli #32201 plain Turkish/Greek yogurt, 10% fat; recipe-listed 150 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #32201 plain Turkish/Greek yogurt, 10% fat; recipe-listed 150 g."
+        },
+        {
+          "name": "kukkakaalia",
+          "grams": 600,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #322 raw cauliflower; recipe-listed 600 g cauliflower rice.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322 raw cauliflower; recipe-listed 600 g cauliflower rice."
+        }
+      ]
+    },
+    {
+      "recipeId": "uunikanapasta-kesakurpitsa",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kesäkurpitsaa",
+          "grams": 500,
+          "fineliRecordId": "fineli-389-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #389; recipe-listed 500 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #389; recipe-listed 500 g."
+        },
+        {
+          "name": "kirsikkatomaatteja",
+          "grams": 200,
+          "fineliRecordId": "fineli-352-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Fineli #352 tomato used as an analogue for oven-cooked cherry tomatoes; recipe-listed 200 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: tomato-raw-cooked-sauce-analogue-gi-22. Fineli #352 tomato used as an analogue for oven-cooked cherry tomatoes; recipe-listed 200 g."
+        },
+        {
+          "name": "tuorejuustoa",
+          "grams": 150,
+          "fineliRecordId": "fineli-11571-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Fineli #11571 plain cream cheese; recipe-listed 150 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #11571 plain cream cheese; recipe-listed 150 g."
+        }
+      ]
+    },
+    {
+      "recipeId": "khao-kha-moo-vhh",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kiinankaalia tai paksoita",
+          "grams": 300,
+          "fineliRecordId": "fineli-359-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #359 Chinese cabbage used for the recipe option; recipe-listed 300 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #359 Chinese cabbage used for the recipe option; recipe-listed 300 g."
+        },
+        {
+          "name": "kukkakaaliriisiä",
+          "grams": 500,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #322 raw cauliflower; recipe-listed 500 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322 raw cauliflower; recipe-listed 500 g."
+        }
+      ]
+    },
+    {
+      "recipeId": "larb-moo-vhh",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "paahdettua riisijauhetta",
+          "grams": 8,
+          "fineliRecordId": "fineli-182-2026-10-24",
+          "giRecordId": "rice-category-mean-gi-67",
+          "massEvidence": "Fineli #182 rice flour; 1 tbsp converted to 8 g using the food-specific measure.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: rice-category-mean-gi-67. Fineli #182 rice flour; 1 tbsp converted to 8 g using the food-specific measure."
+        },
+        {
+          "name": "valkokaalia",
+          "grams": 250,
+          "fineliRecordId": "fineli-320-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #320 white cabbage; recipe-listed 250 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #320 white cabbage; recipe-listed 250 g."
+        }
+      ]
+    },
+    {
+      "recipeId": "jauhelihakastike-kesakurpitsanuudeleilla",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kesäkurpitsaa",
+          "grams": 700,
+          "fineliRecordId": "fineli-389-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Fineli #389 medium courgette 350 g each, 2 = 700 g.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #389 medium courgette 350 g each, 2 = 700 g."
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Fineli #631; 2 dl converted using 100 g/dl.",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 2 dl converted using 100 g/dl."
+        }
+      ]
     }
   ],
   "selectionNotes": {
@@ -1437,7 +2021,10 @@
       "Massaman curry is included as the 21st calculated estimate with a documented curry-paste carbohydrate scenario range; eggplant and minced-beef casserole remains in the cohort.",
       "Beef liver casserole remains without a published GL total because the earlier 3.45 estimate used an unmeasured zero-GI assumption for liver carbohydrates."
     ],
-    "massamanAdded": "Massaman chicken curry was added as the 21st calculated estimate. The curry-paste carbohydrate range uses Fineli Tikka paste and the named manufacturer product label as scenarios; it is not an overall confidence interval.",
-    "excludedPublication": "Beef liver casserole remains without a published total: the prior 3.45 estimate assigned an unmeasured GI of zero to liver carbohydrates."
-  }
+    "massamanAdded": "Massaman was the 21st estimate when originally added; the current pilot now includes 41 recipes after this 20-recipe extension.",
+    "excludedPublication": "Beef liver casserole remains without a published total: the prior 3.45 estimate assigned an unmeasured GI of zero to liver carbohydrates.",
+    "newCohort": "Twenty new recipes were chosen from the highest current available-carbohydrate estimates outside the existing 21. Selection rankings are not GK results; every estimate is recalculated from recipe ingredient amounts.",
+    "ingredientSources": "Fineli Rel20 remains the primary available-carbohydrate source. AFCD Release 3 supplies only chickpea flour and tamarind paste where Fineli had no matching item."
+  },
+  "additionalCarbohydrateEvidence": "AFCD Release 3 was used only for chickpea flour in vada pav and pure tamarind paste in pani puri because no matching Fineli foods were found. Source: Food Standards Australia New Zealand, Australian Food Composition Database Release 3, CC BY-SA 3.0 Australia. Values with and without sugar alcohols were equal for both items."
 }
