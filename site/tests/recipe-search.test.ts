@@ -68,8 +68,8 @@ test("time, cuisine and main ingredient filters combine and survive URL round tr
     assert.equal(buns.timeTotalMin, null, "45-minute work and baking estimate excludes unmeasured required cooling");
     assert.match(buns.notesHtml, /45/);
   }
-  assert.equal(filterRecipes(finnishRecipes, { ...emptyRecipeFilters, cuisine: "mexican" }, "fi").length, 5);
-  assert.equal(filterRecipes(finnishRecipes, { ...emptyRecipeFilters, cuisine: "japanese" }, "fi").length, 5);
+  assert.equal(filterRecipes(finnishRecipes, { ...emptyRecipeFilters, cuisine: "mexican" }, "fi").length, 15);
+  assert.equal(filterRecipes(finnishRecipes, { ...emptyRecipeFilters, cuisine: "japanese" }, "fi").length, 15);
 });
 
 test("search normalization folds Finnish and Swedish diacritics while preserving Thai tone marks", () => {
