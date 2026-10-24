@@ -6,37 +6,43 @@ category: paaruoka
 language: fi
 status: published
 diet_class: vhh_tiukka
-main_ingredient: [porsaan jauheliha, thaibasilika]
-cooking_method: [paistinpannu]
+main_ingredient: [ porsaan jauheliha, thaibasilika ]
+cooking_method: [ paistinpannu ]
 servings: 4
 time_total_min: 25
 difficulty: helppo
-tags: [thaimaalainen, VHH, tulinen]
+tags: [ thaimaalainen, VHH, tulinen ]
 image:
   src: paaruoat/pad-kra-pao-vhh.webp
-  alt: Pad kra pao -jauhelihaa thaibasilikan ja chilin kanssa, paistettu kananmuna ja kukkakaaliriisiä
+  alt: Pad kra pao -jauhelihaa thaibasilikan ja chilin kanssa, paistettu kananmuna
+    ja kukkakaaliriisiä
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 34
-fat_per_serving_g: 36
+carbs_net_per_serving_g: 4.87
+carbs_total_per_serving_g: 9.85
+protein_per_serving_g: 42.67
+fat_per_serving_g: 28.2
 ingredients:
-  - {amount: 600, unit: g, item: porsaan jauhelihaa}
-  - {amount: 600, unit: g, item: kukkakaaliriisiä, note: lisukkeeksi}
-  - {amount: 4, unit: kpl, item: kananmunaa}
-  - {amount: 30, unit: g, item: thaibasilikan lehtiä}
-  - {amount: 3, unit: kpl, item: valkosipulinkynttä}
-  - {amount: 2, unit: kpl, item: punaista chiliä, note: tulisuus oman maun mukaan}
-  - {amount: 2, unit: rkl, item: kalakastiketta}
-  - {amount: 1, unit: rkl, item: suolatonta soijakastiketta}
-  - {amount: 1, unit: tl, item: erytritolia}
-  - {amount: 2, unit: rkl, item: neutraalia öljyä}
+  - { amount: 600, unit: g, item: porsaan jauhelihaa }
+  - { amount: 600, unit: g, item: kukkakaaliriisiä, note: lisukkeeksi }
+  - { amount: 220, unit: g, item: kananmunaa }
+  - { amount: 30, unit: g, item: thaibasilikan lehtiä }
+  - { amount: 10.5, unit: g, item: valkosipulinkynttä }
+  - {
+      amount: 24,
+      unit: g,
+      item: punaista chiliä,
+      note: tulisuus oman maun mukaan
+    }
+  - { amount: 30, unit: g, item: Squid Brand -kalakastiketta }
+  - { amount: 15, unit: g, item: suolatonta soijakastiketta }
+  - { amount: 4, unit: g, item: Foodin-erytritolia }
+  - { amount: 27, unit: g, item: neutraalia öljyä }
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
 ---
 
 # Pad kra pao – thaimaalainen basilika-jauheliha kukkakaaliriisillä

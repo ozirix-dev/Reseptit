@@ -6,37 +6,48 @@ category: paaruoka
 language: fi
 status: published
 diet_class: vhh_tiukka
-main_ingredient: [broileri, kukkakaali]
-cooking_method: [uuni, grilli]
+main_ingredient: [ broileri, kukkakaali ]
+cooking_method: [ uuni, grilli ]
 servings: 4
 time_total_min: 60
 difficulty: helppo
-tags: [thaimaalainen, Isan, kana, grilli, VHH]
+tags: [ thaimaalainen, Isan, kana, grilli, VHH ]
 image:
   src: paaruoat/gai-yang-vhh.webp
-  alt: Gai yang -grillikanaa kullanruskealla pinnalla, yrttikastiketta ja kukkakaaliriisiä
+  alt: Gai yang -grillikanaa kullanruskealla pinnalla, yrttikastiketta ja
+    kukkakaaliriisiä
   width: 1280
   height: 853
-carbs_net_per_serving_g: 5.78
-carbs_total_per_serving_g: 10.45
+carbs_net_per_serving_g: 4.78
+carbs_total_per_serving_g: 9.45
 protein_per_serving_g: 45.17
 fat_per_serving_g: 35.05
 ingredients:
-  - {amount: 900, unit: g, item: broilerin reisilihaa, note: "nahallisena, luuttomana ja raakaa"}
-  - {amount: 45, unit: g, item: "Squid Brand -kalakastiketta"}
-  - {amount: 15, unit: g, item: soijakastiketta}
-  - {amount: 10.5, unit: g, item: valkosipulinkynttä, note: murskattuna}
-  - {amount: 20, unit: g, item: tuoretta korianteria, note: varret ja lehdet hienonnettuna}
-  - {amount: 2, unit: g, item: jauhettua valkopippuria}
-  - {amount: 4, unit: g, item: "Foodin-erytritolia"}
-  - {amount: 15, unit: g, item: limettimehua}
-  - {amount: 500, unit: g, item: kukkakaaliriisiä, note: tarjoiluun}
-  - {amount: 200, unit: g, item: kurkkuviipaleita, note: tarjoiluun}
+  - {
+      amount: 900,
+      unit: g,
+      item: broilerin reisilihaa,
+      note: "nahallisena, luuttomana ja raakaa"
+    }
+  - { amount: 45, unit: g, item: "Squid Brand -kalakastiketta" }
+  - { amount: 15, unit: g, item: soijakastiketta }
+  - { amount: 10.5, unit: g, item: valkosipulinkynttä, note: murskattuna }
+  - {
+      amount: 20,
+      unit: g,
+      item: tuoretta korianteria,
+      note: varret ja lehdet hienonnettuna
+    }
+  - { amount: 2, unit: g, item: jauhettua valkopippuria }
+  - { amount: 4, unit: g, item: "Foodin-erytritolia" }
+  - { amount: 15, unit: g, item: limettimehua }
+  - { amount: 500, unit: g, item: kukkakaaliriisiä, note: tarjoiluun }
+  - { amount: 200, unit: g, item: kurkkuviipaleita, note: tarjoiluun }
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
 ---
 
 # Gai yang – thaimaalainen grillikana VHH-lisukkeilla

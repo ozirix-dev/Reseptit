@@ -225,14 +225,38 @@ test("the evidence-backed batch-six recipes expose synchronized values in all fo
 
 test("the eight evidence-backed Thai batch-seven recipes expose synchronized values in all four locales", () => {
   const expected = new Map([
-    ["yum-woon-sen-vhh", [3.15, 7.88, 18.98, 9.23]],
-    ["gai-yang-vhh", [5.78, 10.45, 45.17, 35.05]],
-    ["keltainen-kanacurry-vhh", [7.74, 11.79, 33.08, 22.78]],
-    ["khao-kha-moo-vhh", [9.93, 16.87, 49.8, 38.91]],
+    ["yum-woon-sen-vhh", [2.15, 6.88, 18.98, 9.23]],
+    ["gai-yang-vhh", [4.78, 9.45, 45.17, 35.05]],
+    ["keltainen-kanacurry-vhh", [6.74, 10.79, 33.08, 22.78]],
+    ["khao-kha-moo-vhh", [6.93, 13.87, 49.8, 38.91]],
     ["khao-man-gai-vhh", [6.75, 11.16, 38.57, 6]],
-    ["khao-soi-vhh-konjac", [6.35, 11.69, 32.08, 21.05]],
+    ["khao-soi-vhh-konjac", [5.35, 10.69, 32.08, 21.05]],
     ["larb-moo-vhh", [6.82, 9.61, 33.83, 16.13]],
-    ["massaman-curry-kanalla-vhh", [12.8, 20.38, 37.66, 24.85]],
+    ["massaman-curry-kanalla-vhh", [11.8, 19.38, 37.66, 24.85]],
+  ]);
+  const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
+  assert.equal(recipes.length, expected.size * 4);
+  for (const recipe of recipes) {
+    assert.deepEqual(
+      [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],
+      expected.get(recipe.recipeId),
+      `${recipe.recipeId}/${recipe.locale}`,
+    );
+  }
+});
+
+test("the ten evidence-backed Thai batch-eight recipes expose synchronized values in all four locales", () => {
+  const expected = new Map([
+    ["moo-ping-vhh", [2, 4.44, 34.86, 34.69]],
+    ["pad-kee-mao-vhh-konjac", [4.53, 12.09, 26.37, 10.81]],
+    ["pad-kra-pao-vhh", [4.87, 9.85, 42.67, 28.2]],
+    ["pad-see-ew-vhh-konjac", [3.39, 10.62, 37.05, 12.05]],
+    ["pad-thai-vhh-konjac", [6.38, 12.71, 34.88, 18.21]],
+    ["panang-curry-kanalla-vhh", [8.79, 14.91, 36.09, 23.57]],
+    ["punainen-kanacurry-vhh", [9.15, 15.9, 34.74, 22.98]],
+    ["thai-vihrea-curry-kanalla-vhh", [9.01, 15.82, 34.97, 23.97]],
+    ["tom-kha-gai-vhh", [3.58, 6.85, 32.52, 21.37]],
+    ["tom-yum-goong-vhh", [4.66, 7.25, 28.8, 2.38]],
   ]);
   const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
   assert.equal(recipes.length, expected.size * 4);

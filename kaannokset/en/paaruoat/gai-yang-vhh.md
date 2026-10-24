@@ -23,11 +23,12 @@ tags:
   - "VHH"
 image:
   src: paaruoat/gai-yang-vhh.webp
-  alt: Gai yang grilled chicken on a golden brown surface, herb sauce and cauliflower rice
+  alt: Gai yang grilled chicken on a golden brown surface, herb sauce and
+    cauliflower rice
   width: 1280
   height: 853
-carbs_net_per_serving_g: 5.78
-carbs_total_per_serving_g: 10.45
+carbs_net_per_serving_g: 4.78
+carbs_total_per_serving_g: 9.45
 protein_per_serving_g: 45.17
 fat_per_serving_g: 35.05
 ingredients:

@@ -23,20 +23,20 @@ image:
   alt: Grön thailändsk kycklingcurry i kokosmjölk, thaibasilika och blomkålsris
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 35
+carbs_net_per_serving_g: 9.01
+carbs_total_per_serving_g: 15.82
+protein_per_serving_g: 34.97
+fat_per_serving_g: 23.97
 ingredients:
   - amount: 600
     unit: g
-    item: benfritt kycklinglårkött
+    item: skinnfritt kycklinglårkött
   - amount: 400
-    unit: ml
+    unit: g
     item: fullfet kokosmjölk
-  - amount: 2
-    unit: msk
-    item: grön currypasta
+  - amount: 30
+    unit: g
+    item: Mae Ploy grön currypasta
   - amount: 200
     unit: g
     item: zucchini
@@ -49,20 +49,20 @@ ingredients:
     unit: g
     item: blomkålsris
     note: som tillbehör
-  - amount: 2
-    unit: msk
-    item: fisksås
-  - amount: 1
-    unit: tsk
-    item: erytritol
+  - amount: 30
+    unit: g
+    item: Squid Brand-fisksås
   - amount: 4
-    unit: st
+    unit: g
+    item: erytritol från Foodin
+  - amount: 2
+    unit: g
     item: kaffir limeblad
   - amount: 20
     unit: g
     item: Thai basilika
-  - amount: 1
-    unit: msk
+  - amount: 13.5
+    unit: g
     item: neutral olja
 translation_languages: []
 translation_status: {}

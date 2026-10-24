@@ -25,52 +25,51 @@ image:
   alt: ผัดขี้เมาวอกกับเส้นบุก ไก่ พริก และใบโหระพา
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 21
+carbs_net_per_serving_g: 4.53
+carbs_total_per_serving_g: 12.09
+protein_per_serving_g: 26.37
+fat_per_serving_g: 10.81
 ingredients:
   - amount: 600
     unit: g
-    item: เส้นบุกสะเด็ดน้ำ
+    item: เส้นบุกพร้อมปรุง KoRo
   - amount: 500
     unit: g
-    item: "เนื้อสะโพกไก่"
+    item: "เนื้อสะโพกไก่เลาะหนัง"
     note: เป็นแถบ
   - amount: 150
     unit: g
     item: ถั่วแขก
     note: "ผ่าครึ่ง"
-  - amount: 1
-    unit: ชิ้น
+  - amount: 120
+    unit: g
     item: พริกหวานแดง
     note: เป็นแถบ
   - amount: 30
     unit: g
     item: ใบโหระพาไทย
-  - amount: 3
-    unit: ชิ้น
+  - amount: 10.5
+    unit: g
     item: กระเทียม
     note: บดขยี้
-  - amount: 2
-    unit: ชิ้น
+  - amount: 24
+    unit: g
     item: พริกแดง
     note: "หั่นเป็นแว่น ปรับความเผ็ดตามชอบ"
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 30
+    unit: g
+    item: น้ำปลา Squid Brand
+  - amount: 15
+    unit: g
     item: ซอสถั่วเหลือง
-  - amount: 1
-    unit: ช้อนโต๊ะ
-    item: ซอสหอยนางรม
-    note: น้ำตาลต่ำ
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
-  - amount: 2
-    unit: ช้อนโต๊ะ
+  - amount: 15
+    unit: g
+    item: ซอสหอยนางรมทั่วไป
+  - amount: 4
+    unit: g
+    item: อิริทริทอล Foodin
+  - amount: 27
+    unit: g
     item: น้ำมันที่เป็นกลาง
 translation_languages: []
 translation_status: {}

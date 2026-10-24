@@ -24,47 +24,45 @@ image:
   alt: Pad se ew wok med konjaknudlar, ägg, kyckling och broccoli
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 22
+carbs_net_per_serving_g: 3.39
+carbs_total_per_serving_g: 10.62
+protein_per_serving_g: 37.05
+fat_per_serving_g: 12.05
 ingredients:
   - amount: 600
     unit: g
-    item: avrunna konjaknudlar
+    item: KoRo tillagade konjaknudlar
   - amount: 500
     unit: g
     item: kycklingfilé
     note: i tunna remsor
   - amount: 300
     unit: g
-    item: kinakål eller broccoli
-    note: i tunna remsor
-  - amount: 3
-    unit: st
+    item: broccoli, tunt skivad
+  - amount: 165
+    unit: g
     item: ägg
-  - amount: 2
-    unit: msk
+  - amount: 27
+    unit: g
     item: neutral olja
-  - amount: 2
-    unit: msk
+  - amount: 30
+    unit: g
     item: sojasås
-  - amount: 1
-    unit: msk
+  - amount: 15
+    unit: g
     item: mörk sojasås
-  - amount: 1
-    unit: msk
-    item: ostronsås
-    note: lågt socker
-  - amount: 1
-    unit: tsk
-    item: erytritol
-  - amount: 2
-    unit: st
+  - amount: 15
+    unit: g
+    item: kommersiell ostronsås
+  - amount: 4
+    unit: g
+    item: erytritol från Foodin
+  - amount: 7
+    unit: g
     item: en vitlöksklyfta
     note: "finhackad"
-  - amount: null
-    unit: ""
+  - amount: 2
+    unit: "g"
     item: vitpeppar
     note: "efter smak"
 translation_languages: []

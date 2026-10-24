@@ -23,10 +23,10 @@ image:
   alt: ผัดกระเพราเนื้อสับพร้อมใบโหระพาและพริก ไข่ดาว และข้าวดอกกะหล่ำ
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 34
-fat_per_serving_g: 36
+carbs_net_per_serving_g: 4.87
+carbs_total_per_serving_g: 9.85
+protein_per_serving_g: 42.67
+fat_per_serving_g: 28.2
 ingredients:
   - amount: 600
     unit: g
@@ -35,30 +35,30 @@ ingredients:
     unit: g
     item: ข้าวกะหล่ำดอก
     note: เป็นกับข้าว
-  - amount: 4
-    unit: ชิ้น
+  - amount: 220
+    unit: g
     item: ไข่
   - amount: 30
     unit: g
     item: ใบโหระพาไทย
-  - amount: 3
-    unit: ชิ้น
+  - amount: 10.5
+    unit: g
     item: กระเทียม
-  - amount: 2
-    unit: ชิ้น
+  - amount: 24
+    unit: g
     item: พริกแดง
     note: ความเผ็ดร้อนตามรสนิยมของคุณ
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 30
+    unit: g
+    item: น้ำปลา Squid Brand
+  - amount: 15
+    unit: g
     item: ซีอิ๊วไม่เค็ม
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
-  - amount: 2
-    unit: ช้อนโต๊ะ
+  - amount: 4
+    unit: g
+    item: อิริทริทอล Foodin
+  - amount: 27
+    unit: g
     item: น้ำมันที่เป็นกลาง
 translation_languages: []
 translation_status: {}

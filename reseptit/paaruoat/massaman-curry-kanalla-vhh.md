@@ -6,38 +6,38 @@ category: paaruoka
 language: fi
 status: published
 diet_class: vhh_valjempi
-main_ingredient: [broileri, kookosmaito]
-cooking_method: [liesi]
+main_ingredient: [ broileri, kookosmaito ]
+cooking_method: [ liesi ]
 servings: 4
 time_total_min: 50
 difficulty: helppo
-tags: [thaimaalainen, curry, VHH]
+tags: [ thaimaalainen, curry, VHH ]
 image:
   src: paaruoat/massaman-curry-kanalla-vhh.webp
   alt: Massaman-kanacurry kookoskastikkeessa, maapähkinöitä ja kukkakaaliriisiä
   width: 1280
   height: 853
-carbs_net_per_serving_g: 12.8
-carbs_total_per_serving_g: 20.38
+carbs_net_per_serving_g: 11.8
+carbs_total_per_serving_g: 19.38
 protein_per_serving_g: 37.66
 fat_per_serving_g: 24.85
 ingredients:
-  - {amount: 600, unit: g, item: luutonta broilerin reisilihaa}
-  - {amount: 400, unit: g, item: täysrasvaista kookosmaitoa}
-  - {amount: 45, unit: g, item: "Mae Ploy -massaman-currytahnaa"}
-  - {amount: 250, unit: g, item: naurista, note: kuutioituna perunan sijaan}
-  - {amount: 200, unit: g, item: kukkakaalia, note: pieninä kukintoina}
-  - {amount: 40, unit: g, item: suolattomia maapähkinöitä}
-  - {amount: 70, unit: g, item: sipuli, note: lohkottuna}
-  - {amount: 15, unit: g, item: "Squid Brand -kalakastiketta"}
-  - {amount: 15, unit: g, item: limettimehua}
-  - {amount: 4, unit: g, item: "Foodin-erytritolia"}
-  - {amount: 400, unit: g, item: kukkakaaliriisiä, note: lisukkeeksi}
+  - { amount: 600, unit: g, item: luutonta broilerin reisilihaa }
+  - { amount: 400, unit: g, item: täysrasvaista kookosmaitoa }
+  - { amount: 45, unit: g, item: "Mae Ploy -massaman-currytahnaa" }
+  - { amount: 250, unit: g, item: naurista, note: kuutioituna perunan sijaan }
+  - { amount: 200, unit: g, item: kukkakaalia, note: pieninä kukintoina }
+  - { amount: 40, unit: g, item: suolattomia maapähkinöitä }
+  - { amount: 70, unit: g, item: sipuli, note: lohkottuna }
+  - { amount: 15, unit: g, item: "Squid Brand -kalakastiketta" }
+  - { amount: 15, unit: g, item: limettimehua }
+  - { amount: 4, unit: g, item: "Foodin-erytritolia" }
+  - { amount: 400, unit: g, item: kukkakaaliriisiä, note: lisukkeeksi }
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
 ---
 
 # Massaman-kanacurry kukkakaaliriisillä

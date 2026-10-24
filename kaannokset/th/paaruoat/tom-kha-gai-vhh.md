@@ -1,5 +1,5 @@
 ---
-title: คาร์โบไฮเดรตต่ำ ต้มข่าไก่ – ซุปไก่มะพร้าว
+title: คาร์โบไฮเดรตต่ำ ต้มขิงสดไก่ – ซุปไก่มะพร้าว
 recipe_id: tom-kha-gai-vhh
 url_slug: tom-kha-gai-vhh
 category: paaruoka
@@ -20,58 +20,53 @@ tags:
   - วฮ
 image:
   src: paaruoat/tom-kha-gai-vhh.webp
-  alt: ต้มข่าไก่ใส่กะทิ เห็ด พริก และใบมะนาว
+  alt: ต้มขิงสดไก่ใส่กะทิ เห็ด พริก และใบมะนาว
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 31
-fat_per_serving_g: 29
+carbs_net_per_serving_g: 3.58
+carbs_total_per_serving_g: 6.85
+protein_per_serving_g: 32.52
+fat_per_serving_g: 21.37
 ingredients:
   - amount: 600
     unit: g
-    item: "เนื้อสะโพกไก่"
+    item: "เนื้อสะโพกไก่เลาะหนัง"
     note: หั่นเป็นชิ้นขนาดพอดีคำ
   - amount: 400
-    unit: ml
+    unit: g
     item: กะทิไขมันเต็ม
   - amount: 500
-    unit: ml
-    item: น้ำซุปไก่
+    unit: g
+    item: น้ำสต๊อกไก่เจือจาง
   - amount: 200
     unit: g
     item: เห็ดแชมปิญอง
     note: หั่นบาง ๆ
-  - amount: 2
-    unit: ชิ้น
-    item: ก้านตะไคร้
-    note: บดและหั่นเป็นชิ้น
+  - amount: 40
+    unit: g
+    item: ตะไคร้ ทุบแล้วนำออกก่อนเสิร์ฟ
   - amount: 30
     unit: g
-    item: ข่า
-    note: หั่นบาง ๆ; ขิงถ้าจำเป็น
-  - amount: 5
-    unit: ชิ้น
-    item: ใบมะกรูด
-    note: ฉีกขาด
+    item: ขิงสดหั่นบาง
   - amount: 2
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 3
-    unit: ช้อนโต๊ะ
+    unit: g
+    item: ใบมะกรูด นำออกก่อนเสิร์ฟ
+  - amount: 30
+    unit: g
+    item: น้ำปลา Squid Brand
+  - amount: 45
+    unit: g
     item: น้ำมะนาว
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
-    note: ไม่จำเป็น
-  - amount: 1
-    unit: ชิ้น
+  - amount: 4
+    unit: g
+    item: อิริทริทอล Foodin
+  - amount: 12
+    unit: g
     item: พริกแดง
     note: หั่นบาง ๆ
-  - amount: null
-    unit: ""
+  - amount: 12
+    unit: "g"
     item: ผักชีสด
-    note: สำหรับการเสิร์ฟ
 translation_languages: []
 translation_status: {}
 source_language: fi
@@ -79,9 +74,9 @@ source_recipe: reseptit/paaruoat/tom-kha-gai-vhh.md
 translation_of: tom-kha-gai-vhh
 ---
 
-# คาร์โบไฮเดรตต่ำ ต้มข่าไก่ – ซุปไก่มะพร้าว
+# คาร์โบไฮเดรตต่ำ ต้มขิงสดไก่ – ซุปไก่มะพร้าว
 
-ต้มข่าไก่เป็นซุปไก่ที่มีกลิ่นหอมของไทย โดยกะทิจะทำให้รสชาติของมะนาว ข่า และตะไคร้อ่อนลง รุ่น คาร์โบไฮเดรตต่ำ นี้เสิร์ฟโดยไม่ใส่ข้าว
+ต้มขิงสดไก่เป็นซุปไก่ที่มีกลิ่นหอมของไทย โดยกะทิจะทำให้รสชาติของมะนาว ขิงสด และตะไคร้อ่อนลง รุ่น คาร์โบไฮเดรตต่ำ นี้เสิร์ฟโดยไม่ใส่ข้าว
 
 ## คำอธิบาย
 
@@ -89,7 +84,7 @@ translation_of: tom-kha-gai-vhh
 
 ## วิธีทำ
 
-1. ตั้งน้ำซุปไก่ในหม้อ ใส่ตะไคร้ ข่า และใบมะกรูดลงไป หลนด้วยไฟอ่อนเป็นเวลา 10 นาที
+1. ตั้งน้ำซุปไก่ในหม้อ ใส่ตะไคร้ ขิงสด และใบมะกรูดลงไป หลนด้วยไฟอ่อนเป็นเวลา 10 นาที
 2. ใส่ไก่และเห็ด ปรุงช้าๆจนไก่สุกทั่ว
 3. ใส่กะทิลงไป ตั้งไฟเบาๆ อย่าให้เดือดแรง
 4. ปรุงรสด้วยน้ำปลา และอิริทริทอลหากต้องการ นำหม้อออกจากเตาแล้วเติมน้ำมะนาว

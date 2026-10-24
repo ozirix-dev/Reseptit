@@ -25,45 +25,47 @@ image:
   alt: Grillade moo ping fläskspett, gurka och varm dippsås
   width: 1280
   height: 853
-carbs_net_per_serving_g: 5
-carbs_total_per_serving_g: 7
-protein_per_serving_g: 32
-fat_per_serving_g: 35
+carbs_net_per_serving_g: 2
+carbs_total_per_serving_g: 4.44
+protein_per_serving_g: 34.86
+fat_per_serving_g: 34.69
 ingredients:
   - amount: 700
     unit: g
     item: fläskhals
     note: i tunna skivor
   - amount: 100
-    unit: ml
+    unit: g
     item: kokosmjölk
-  - amount: 2
-    unit: msk
-    item: fisksås
-  - amount: 1
-    unit: msk
+  - amount: 30
+    unit: g
+    item: Squid Brand-fisksås
+  - amount: 15
+    unit: g
     item: sojasås
-  - amount: 2
-    unit: st
+  - amount: 7
+    unit: g
     item: en vitlöksklyfta
     note: krossad
-  - amount: 2
-    unit: msk
+  - amount: 6
+    unit: g
     item: koriander stjälkar
     note: "finhackad"
-  - amount: 0.5
-    unit: tsk
+  - amount: 2
+    unit: g
     item: mald vitpeppar
-  - amount: 1
-    unit: tsk
-    item: erytritol
-  - amount: 1
-    unit: msk
+  - amount: 4
+    unit: g
+    item: erytritol från Foodin
+  - amount: 13.5
+    unit: g
     item: neutral olja
-  - amount: null
-    unit: ""
-    item: gurka och limeklyftor
-    note: för servering
+  - amount: 200
+    unit: "g"
+    item: gurka
+  - amount: 60
+    unit: g
+    item: limeklyftor
 translation_languages: []
 translation_status: {}
 source_language: fi

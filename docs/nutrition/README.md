@@ -248,7 +248,7 @@ ainekohtaiset muunnokset, valmistussaannon ja tarkistetut tietueet.
 
 ## Reseptiarvioiden erät, 24.10.2026
 
-Viiden aiemman erän ravintoarviot, Fineli-tietueiden ID:t ja yksikköoletukset on
+Kahdeksan aiemman erän ravintoarviot, Fineli-tietueiden ID:t ja yksikköoletukset on
 kirjattu seuraaviin muistioihin:
 
 - `estimates-2026-10-24.md` — erä 1, 10 reseptiä.
@@ -257,11 +257,15 @@ kirjattu seuraaviin muistioihin:
 - `estimates-2026-10-24-batch-4.md` — erä 4, 10 reseptiä.
 - `estimates-2026-10-24-batch-5.md` — erä 5, 12 reseptiä; paikallinen Fineli Release 20 täydennettynä dokumentoiduilla AFCD- ja pakkaustiedoilla.
 - `tools/calculate-nutrition-batch5.py` — erän 5 toistettava laskentatiedosto.
-- `estimates-2026-10-24-batch-6.md` — erä A; kaksi reseptiä valmis ja kahdeksan työn alla.
+- `estimates-2026-10-24-batch-6.md` — erä A:n kaksi aiemmin viimeisteltyä reseptiä.
 - `tools/calculate-nutrition-batch6.py` — erän 6 laskennan toistettava ohjelma.
+- `estimates-2026-10-24-batch-7.md` — erä A:n kahdeksan muuta reseptiä.
+- `tools/calculate-nutrition-batch7.py` — erän 7 laskennan toistettava ohjelma.
+- `estimates-2026-10-24-batch-8.md` — Thai-erä B:n kymmenen reseptiä.
+- `tools/calculate-nutrition-batch8.py` — erän 8 laskennan toistettava ohjelma.
 
 Luvut ovat toimituksellisia arvioita; niitä ei tuoteta julkaisun buildissa
-automaattisesti. Aiemmat 62 reseptiä käyttävät Finelin CHO-, FIBT- ja POLYL-
+automaattisesti. Aiemmat arvot käyttävät Finelin CHO-, FIBT- ja POLYL-
 komponentteja. Uusissa erissä käytetään Fineliä, lisensoitua AFCD-dataa ja
 yksilöityjä pakkausmerkintöjä tai avoimen tietokannan tuotetietueita.
 Lähdetietueiden arvot, tunnisteet ja lisenssit kirjataan erämuistioihin.

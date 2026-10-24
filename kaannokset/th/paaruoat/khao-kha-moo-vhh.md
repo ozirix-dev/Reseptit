@@ -24,8 +24,8 @@ image:
   alt: หมูตุ๋นสไตล์เขาคาหมู ไข่ ผักใบเขียว และข้าวดอกกะหล่ำ
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9.93
-carbs_total_per_serving_g: 16.87
+carbs_net_per_serving_g: 6.93
+carbs_total_per_serving_g: 13.87
 protein_per_serving_g: 49.8
 fat_per_serving_g: 38.91
 ingredients:

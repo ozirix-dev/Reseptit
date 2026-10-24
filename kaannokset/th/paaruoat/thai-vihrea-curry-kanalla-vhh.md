@@ -23,20 +23,20 @@ image:
   alt: แกงเขียวหวานไก่ในกะทิ ใบโหระพา และข้าวดอกกะหล่ำ
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 35
+carbs_net_per_serving_g: 9.01
+carbs_total_per_serving_g: 15.82
+protein_per_serving_g: 34.97
+fat_per_serving_g: 23.97
 ingredients:
   - amount: 600
     unit: g
-    item: เนื้อสะโพกไก่ไม่มีกระดูก
+    item: เนื้อสะโพกไก่เลาะหนัง
   - amount: 400
-    unit: ml
+    unit: g
     item: กะทิไขมันเต็ม
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: เครื่องแกงเขียวหวาน
+  - amount: 30
+    unit: g
+    item: พริกแกงเขียวหวาน Mae Ploy
   - amount: 200
     unit: g
     item: ซูกินี
@@ -49,20 +49,20 @@ ingredients:
     unit: g
     item: ข้าวกะหล่ำดอก
     note: เป็นกับข้าว
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
+  - amount: 30
+    unit: g
+    item: น้ำปลา Squid Brand
   - amount: 4
-    unit: ชิ้น
+    unit: g
+    item: อิริทริทอล Foodin
+  - amount: 2
+    unit: g
     item: ใบมะกรูด
   - amount: 20
     unit: g
     item: โหระพาไทย
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 13.5
+    unit: g
     item: น้ำมันที่เป็นกลาง
 translation_languages: []
 translation_status: {}

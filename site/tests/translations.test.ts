@@ -20,7 +20,7 @@ test("review backlog fixes stay aligned in all four recipe locales", async () =>
     assert.match(get("yum-woon-sen-vhh").content.match(/^4\. (.+)$/m)?.[1] ?? "", /loppu kalakastike|remaining fish sauce|resten av fisksåsen|น้ำปลาที่เหลือ/);
     assert.ok(get("pad-thai-vhh-konjac").data.ingredients.some(i => /limelohkoja|lime wedges|limeklyftor|มะนาวหั่นเสี้ยว/.test(i.item)));
     assert.equal(get("vhh-pyttipannu").data.diet_class, "vhh_valjempi");
-    assert.equal(get("tom-yum-goong-vhh").data.fat_per_serving_g, undefined);
+    assert.equal(get("tom-yum-goong-vhh").data.fat_per_serving_g, 2.38);
     assert.equal(get("khao-soi-vhh-konjac").data.image?.src, "paaruoat/khao-soi-vhh-konjac-v2.webp");
     assert.match(get("khao-soi-vhh-konjac").data.image?.alt ?? "", /luuttomilla|boneless|benfria|ไม่มีกระดูก/);
   }

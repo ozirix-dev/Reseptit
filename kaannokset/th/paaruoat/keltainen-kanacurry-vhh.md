@@ -24,8 +24,8 @@ image:
   alt: แกงไก่เหลืองกับกะทิและดอกกะหล่ำ
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7.74
-carbs_total_per_serving_g: 11.79
+carbs_net_per_serving_g: 6.74
+carbs_total_per_serving_g: 10.79
 protein_per_serving_g: 33.08
 fat_per_serving_g: 22.78
 ingredients:

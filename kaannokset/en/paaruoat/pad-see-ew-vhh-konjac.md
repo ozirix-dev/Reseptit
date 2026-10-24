@@ -24,47 +24,45 @@ image:
   alt: Pad see ew wok with konjac noodles, egg, chicken and broccoli
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 22
+carbs_net_per_serving_g: 3.39
+carbs_total_per_serving_g: 10.62
+protein_per_serving_g: 37.05
+fat_per_serving_g: 12.05
 ingredients:
   - amount: 600
     unit: g
-    item: drained konjac noodles
+    item: KoRo prepared konjac noodles
   - amount: 500
     unit: g
     item: chicken fillet
     note: in thin strips
   - amount: 300
     unit: g
-    item: Chinese cabbage or broccoli
-    note: in thin strips
-  - amount: 3
-    unit: piece
+    item: broccoli, thinly sliced
+  - amount: 165
+    unit: g
     item: egg
-  - amount: 2
-    unit: tbsp
+  - amount: 27
+    unit: g
     item: neutral oil
-  - amount: 2
-    unit: tbsp
+  - amount: 30
+    unit: g
     item: soy sauce
-  - amount: 1
-    unit: tbsp
+  - amount: 15
+    unit: g
     item: dark soy sauce
-  - amount: 1
-    unit: tbsp
-    item: oyster sauce
-    note: low sugar
-  - amount: 1
-    unit: tsp
-    item: erythritol
-  - amount: 2
-    unit: piece
+  - amount: 15
+    unit: g
+    item: commercial oyster sauce
+  - amount: 4
+    unit: g
+    item: Foodin erythritol
+  - amount: 7
+    unit: g
     item: a clove of garlic
     note: "finely chopped"
-  - amount: null
-    unit: ""
+  - amount: 2
+    unit: "g"
     item: white pepper
     note: to taste
 translation_languages: []

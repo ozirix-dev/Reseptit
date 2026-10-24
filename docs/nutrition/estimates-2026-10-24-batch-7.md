@@ -19,6 +19,14 @@ arvojen erotuksena sokerialkoholien kanssa ja ilman niitä. Vesi jätetään
 laskematta. Kananmunan kuoret ja eläinruoan luut eivät sisälly punnittavaan
 syötävään massaan.
 
+Korjaus 24.10.2026: laskentaohjelman ensimmäinen versio laski Foodin-etiketin
+EU-kokonaishiilihydraatin imeytyväksi hiilihydraatiksi, vaikka se sisältää
+polyolit. Ohjelma normalisoi nyt etikettiarvon vähentämällä lähteistetyn
+polyolimassan ennen netto- ja kokonaishiilihydraatin laskua. Tämän vuoksi
+erytritolia sisältävien reseptien aiemmat netto- ja kokonaisarvot olivat
+liian suuret; alla olevat korjatut arvot ovat synkronoituja kaikkiin
+julkaisukieliin.
+
 Kaikki ainesmäärät on muutettu grammoiksi ja yhdenmukaistettu julkaistuihin
 käännöksiin. Ruokalusikallisina tai teelusikallisina aiemmin ilmoitetut
 määrät on punnittu seuraavasti: 1 rkl kastiketta tai mehua = 15 g, 1 rkl öljyä
@@ -40,14 +48,14 @@ attribuutiot on kuvattu `README.md`-tiedostossa.
 
 | Resepti | Nettohiilihydraatit g | Kokonaishiilihydraatit g | Proteiini g | Rasva g |
 | --- | ---: | ---: | ---: | ---: |
-| Yum woon sen katkaravuilla | 3,15 | 7,88 | 18,98 | 9,23 |
-| Gai yang | 5,78 | 10,45 | 45,17 | 35,05 |
-| Keltainen kanacurry | 7,74 | 11,79 | 33,08 | 22,78 |
-| Khao kha moo | 9,93 | 16,87 | 49,80 | 38,91 |
+| Yum woon sen katkaravuilla | 2,15 | 6,88 | 18,98 | 9,23 |
+| Gai yang | 4,78 | 9,45 | 45,17 | 35,05 |
+| Keltainen kanacurry | 6,74 | 10,79 | 33,08 | 22,78 |
+| Khao kha moo | 6,93 | 13,87 | 49,80 | 38,91 |
 | Khao man gai | 6,75 | 11,16 | 38,57 | 6,00 |
-| Khao soi konjacnuudeleilla | 6,35 | 11,69 | 32,08 | 21,05 |
+| Khao soi konjacnuudeleilla | 5,35 | 10,69 | 32,08 | 21,05 |
 | Larb moo | 6,82 | 9,61 | 33,83 | 16,13 |
-| Massaman-kanacurry | 12,80 | 20,38 | 37,66 | 24,85 |
+| Massaman-kanacurry | 11,80 | 19,38 | 37,66 | 24,85 |
 
 ## Lähdetietueet resepteittäin
 

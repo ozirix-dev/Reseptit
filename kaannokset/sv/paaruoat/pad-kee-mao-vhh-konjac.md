@@ -25,52 +25,51 @@ image:
   alt: Hot pad kee mao wok med konjaknudlar, kyckling, chili och thaibasilika
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 21
+carbs_net_per_serving_g: 4.53
+carbs_total_per_serving_g: 12.09
+protein_per_serving_g: 26.37
+fat_per_serving_g: 10.81
 ingredients:
   - amount: 600
     unit: g
-    item: avrunna konjaknudlar
+    item: KoRo tillagade konjaknudlar
   - amount: 500
     unit: g
-    item: kycklinglårkött
+    item: skinnfritt kycklinglårkött
     note: i remsor
   - amount: 150
     unit: g
     item: gröna bönor
     note: "halverad"
-  - amount: 1
-    unit: st
+  - amount: 120
+    unit: g
     item: röd paprika
     note: i remsor
   - amount: 30
     unit: g
     item: Thailändska basilikablad
-  - amount: 3
-    unit: st
+  - amount: 10.5
+    unit: g
     item: en vitlöksklyfta
     note: krossad
-  - amount: 2
-    unit: st
+  - amount: 24
+    unit: g
     item: röd chili
     note: "skivad; anpassa styrkan efter smak"
-  - amount: 2
-    unit: msk
-    item: fisksås
-  - amount: 1
-    unit: msk
+  - amount: 30
+    unit: g
+    item: Squid Brand-fisksås
+  - amount: 15
+    unit: g
     item: sojasås
-  - amount: 1
-    unit: msk
-    item: ostronsås
-    note: lågt socker
-  - amount: 1
-    unit: tsk
-    item: erytritol
-  - amount: 2
-    unit: msk
+  - amount: 15
+    unit: g
+    item: kommersiell ostronsås
+  - amount: 4
+    unit: g
+    item: erytritol från Foodin
+  - amount: 27
+    unit: g
     item: neutral olja
 translation_languages: []
 translation_status: {}

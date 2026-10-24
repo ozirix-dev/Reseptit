@@ -23,19 +23,19 @@ image:
   alt: Pad thai-style konjac noodles with shrimp, egg, tofu and peanuts
   width: 1280
   height: 853
-carbs_net_per_serving_g: 10
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 30
-fat_per_serving_g: 23
+carbs_net_per_serving_g: 6.38
+carbs_total_per_serving_g: 12.71
+protein_per_serving_g: 34.88
+fat_per_serving_g: 18.21
 ingredients:
   - amount: 400
     unit: g
-    item: drained konjac noodles
+    item: KoRo prepared konjac noodles
   - amount: 400
     unit: g
     item: peeled shrimps
-  - amount: 3
-    unit: piece
+  - amount: 165
+    unit: g
     item: egg
   - amount: 150
     unit: g
@@ -44,33 +44,31 @@ ingredients:
   - amount: 150
     unit: g
     item: mung bean sprouts
-  - amount: 2
-    unit: tbsp
+  - amount: 30
+    unit: g
     item: tamarind paste
-  - amount: 2
-    unit: tbsp
-    item: fish sauce
-  - amount: 1
-    unit: tbsp
+  - amount: 30
+    unit: g
+    item: Squid Brand fish sauce
+  - amount: 15
+    unit: g
     item: lime juice
-  - amount: 1
-    unit: tsp
-    item: erythritol
+  - amount: 4
+    unit: g
+    item: Foodin erythritol
   - amount: 30
     unit: g
     item: unsalted peanuts
     note: crushed
-  - amount: 2
-    unit: tbsp
+  - amount: 27
+    unit: g
     item: neutral oil
-  - amount: null
-    unit: ""
-    item: spring onions and coriander
-    note: for serving
-  - amount: null
-    unit: ""
+  - amount: 12
+    unit: "g"
+    item: fresh coriander
+  - amount: 60
+    unit: "g"
     item: lime wedges
-    note: to serve
 translation_languages: []
 translation_status: {}
 source_language: fi

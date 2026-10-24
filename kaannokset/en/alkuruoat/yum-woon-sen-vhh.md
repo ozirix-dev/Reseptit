@@ -24,8 +24,8 @@ image:
   alt: Yum Woon sen salad with konjac noodles, shrimp, minced pork and lime
   width: 1280
   height: 853
-carbs_net_per_serving_g: 3.15
-carbs_total_per_serving_g: 7.88
+carbs_net_per_serving_g: 2.15
+carbs_total_per_serving_g: 6.88
 protein_per_serving_g: 18.98
 fat_per_serving_g: 9.23
 ingredients:
