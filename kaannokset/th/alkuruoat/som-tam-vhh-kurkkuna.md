@@ -18,10 +18,10 @@ tags:
   - อาหารไทย
   - สลัด
   - คาร์โบไฮเดรตต่ำ
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 8
-protein_per_serving_g: 5
-fat_per_serving_g: 7
+carbs_net_per_serving_g: 4.92
+carbs_total_per_serving_g: 9.76
+protein_per_serving_g: 3.96
+fat_per_serving_g: 3.7
 image:
   src: paaruoat/som-tam-vhh-kurkkuna.webp
   alt: สลัดแตงกวาซอยสไตล์ส้มตำ ใส่มะเขือเทศ ถั่วแขก และถั่วลิสง
@@ -44,22 +44,22 @@ ingredients:
     unit: g
     item: ถั่วลิสงไม่ใส่เกลือ
     note: คั่วแล้ว
-  - amount: 1
-    unit: ชิ้น
+  - amount: 3.5
+    unit: g
     item: กระเทียม
   - amount: 5
     unit: g
     item: พริกแดง
     note: "หรือปรุงตามชอบ"
-  - amount: 2
-    unit: ช้อนโต๊ะ
+  - amount: 30
+    unit: g
     item: น้ำมะนาว
-  - amount: 1
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
+  - amount: 15
+    unit: g
+    item: น้ำปลา Squid Brand
+  - amount: 4
+    unit: g
+    item: อิริทริทอล Foodin
 source_language: fi
 source_recipe: reseptit/alkuruoat/som-tam-vhh-kurkkuna.md
 translation_of: som-tam-vhh-kurkkuna

@@ -23,10 +23,10 @@ image:
   alt: Som Tam-stil sallad av gurkstrimlor, tomater, bönor och jordnötter
   width: 1280
   height: 853
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 8
-protein_per_serving_g: 5
-fat_per_serving_g: 7
+carbs_net_per_serving_g: 4.92
+carbs_total_per_serving_g: 9.76
+protein_per_serving_g: 3.96
+fat_per_serving_g: 3.7
 ingredients:
   - amount: 500
     unit: g
@@ -44,22 +44,23 @@ ingredients:
     unit: g
     item: osaltade jordnötter
     note: rostade
-  - amount: 1
-    unit: st
-    item: vitlöksklyfta
+  - amount: 3.5
+    unit: g
+    item: vitlök
+    note: Finelis vikt för en klyfta
   - amount: 5
     unit: g
     item: röd chili
     note: eller efter smak
-  - amount: 2
-    unit: msk
+  - amount: 30
+    unit: g
     item: limejuice
-  - amount: 1
-    unit: msk
-    item: fisksås
-  - amount: 1
-    unit: tsk
-    item: erytritol
+  - amount: 15
+    unit: g
+    item: Squid Brand-fisksås
+  - amount: 4
+    unit: g
+    item: Foodin-erytritol
 translation_languages:
   - th
 translation_status:

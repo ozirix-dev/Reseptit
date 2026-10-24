@@ -225,10 +225,12 @@ tuotteen tai tietokannan nimenomaisen koostumustiedon perusteella.
   sugar alcohols` on imeytyvä hiilihydraatti ilman polyoleja, ja versio `with
   sugar alcohols` lisää laskentaan sorbitolin, mannitolin ja glyserolin.
   Muita erillisiä polyolirivejä (erytritoli, maltitoli ja ksylitoli) ei
-  sisällytetä tähän kaavaan. Siksi AFCD-tietueita ei voi siirtää Finelin
-  laskentamalliin suoraan yhdellä sarakekartoituksella. Erillinen viitepoiminta
-  ei vielä ole laskennan hyväksytty lähdeadapteri, eikä sitä käytetty uusien
-  reseptiarvojen julkaisemiseen.
+  sisällytetä tähän kaavaan. AFCD-tietueita ei siis siirretä Finelin
+  sarakekartoituksella: lähteistetty polyolilisä lasketaan saman tietueen
+  saatavilla olevien hiilihydraattien `with`- ja `without`-arvojen erotuksena,
+  ja muut erilliset polyolit jäävät tuntemattomiksi, jos niille ei ole
+  tietuetta. Thai-erän 6 käytetyt AFCD-tietueet, tunnisteet ja lisenssiehdot
+  on kirjattu erämuistioon.
 
   FSANZ sallii kopioinnin ja muokkauksen lisenssiehtojen täyttyessä. Ehtoihin
   kuuluu johdannaisen CC BY-SA 3.0 Australia -lisenssi, FSANZ-attribuutio,
@@ -246,7 +248,7 @@ ainekohtaiset muunnokset, valmistussaannon ja tarkistetut tietueet.
 
 ## Reseptiarvioiden erät, 24.10.2026
 
-Viiden erän ravintoarviot, Fineli-tietueiden ID:t ja yksikköoletukset on
+Viiden aiemman erän ravintoarviot, Fineli-tietueiden ID:t ja yksikköoletukset on
 kirjattu seuraaviin muistioihin:
 
 - `estimates-2026-10-24.md` — erä 1, 10 reseptiä.
@@ -255,12 +257,14 @@ kirjattu seuraaviin muistioihin:
 - `estimates-2026-10-24-batch-4.md` — erä 4, 10 reseptiä.
 - `estimates-2026-10-24-batch-5.md` — erä 5, 12 reseptiä; paikallinen Fineli Release 20 täydennettynä dokumentoiduilla AFCD- ja pakkaustiedoilla.
 - `tools/calculate-nutrition-batch5.py` — erän 5 toistettava laskentatiedosto.
+- `estimates-2026-10-24-batch-6.md` — erä A; kaksi reseptiä valmis ja kahdeksan työn alla.
+- `tools/calculate-nutrition-batch6.py` — erän 6 laskennan toistettava ohjelma.
 
 Luvut ovat toimituksellisia arvioita; niitä ei tuoteta julkaisun buildissa
-automaattisesti. Kokonaishiilihydraatit on lisätty yhteensä 62 reseptille
-Finelin CHO-, FIBT- ja POLYL-komponenttien pohjalta. Lähdepoiminta on
-`food-records.json`-tiedostossa tai eräkohtaisessa paikallisessa Fineli-
-viitepoiminnassa. Fineli-attribuutio ja lisenssi kirjataan jokaiseen muistioon.
+automaattisesti. Aiemmat 62 reseptiä käyttävät Finelin CHO-, FIBT- ja POLYL-
+komponentteja. Uusissa erissä käytetään Fineliä, lisensoitua AFCD-dataa ja
+yksilöityjä pakkausmerkintöjä tai avoimen tietokannan tuotetietueita.
+Lähdetietueiden arvot, tunnisteet ja lisenssit kirjataan erämuistioihin.
 
 ## Nykyisten lukujen luokitus
 

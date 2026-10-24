@@ -23,10 +23,10 @@ image:
   alt: Som Tam-style salad of cucumber strips, tomatoes, beans and peanuts
   width: 1280
   height: 853
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 8
-protein_per_serving_g: 5
-fat_per_serving_g: 7
+carbs_net_per_serving_g: 4.92
+carbs_total_per_serving_g: 9.76
+protein_per_serving_g: 3.96
+fat_per_serving_g: 3.7
 ingredients:
   - amount: 500
     unit: g
@@ -44,22 +44,23 @@ ingredients:
     unit: g
     item: unsalted peanuts
     note: roasted
-  - amount: 1
-    unit: piece
-    item: clove of garlic
+  - amount: 3.5
+    unit: g
+    item: garlic
+    note: Fineli clove mass
   - amount: 5
     unit: g
     item: red chili
     note: or to taste
-  - amount: 2
-    unit: tbsp
+  - amount: 30
+    unit: g
     item: lime juice
-  - amount: 1
-    unit: tbsp
-    item: fish sauce
-  - amount: 1
-    unit: tsp
-    item: erythritol
+  - amount: 15
+    unit: g
+    item: Squid Brand fish sauce
+  - amount: 4
+    unit: g
+    item: Foodin erythritol
 translation_languages:
   - th
 translation_status:

@@ -207,6 +207,22 @@ test("the twelve published batch-five recipes expose all four documented nutriti
   }
 });
 
+test("the evidence-backed batch-six recipes expose synchronized values in all four locales", () => {
+  const expected = new Map([
+    ["kai-jiew-vhh", [1.14, 1.66, 14.47, 16.97]],
+    ["som-tam-vhh-kurkkuna", [4.92, 9.76, 3.96, 3.7]],
+  ]);
+  const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
+  assert.equal(recipes.length, expected.size * 4);
+  for (const recipe of recipes) {
+    assert.deepEqual(
+      [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],
+      expected.get(recipe.recipeId),
+      `${recipe.recipeId}/${recipe.locale}`,
+    );
+  }
+});
+
 test("the twenty Chinese recipes are published in Finnish with their image assets", async () => {
   const expectedIds = [
     "baozi", "char-siu", "chow-mein", "congee-riisipuuro", "dan-dan-nuudelit", "dim-sum",
