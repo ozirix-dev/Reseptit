@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: pork loin
+    item: pork loin trimmed of visible fat
     note: "diced"
   - amount: 1
     unit: piece
@@ -50,7 +50,7 @@ ingredients:
     note: "cut into wedges"
   - amount: 150
     unit: g
-    item: of pineapple
+    item: canned pineapple in its own juice, drained
     note: in pieces
   - amount: 2
     unit: tbsp

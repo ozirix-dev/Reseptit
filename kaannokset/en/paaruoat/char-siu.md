@@ -23,7 +23,7 @@ image:
 ingredients:
   - amount: 800
     unit: g
-    item: pork loin
+    item: pork loin trimmed of visible fat
     note: cut into long bars
   - amount: 3
     unit: tbsp

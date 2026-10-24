@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: fläskytterfilé
+    item: fläskytterfilé, putsad från synligt fett
     note: "tärnad"
   - amount: 1
     unit: st
@@ -50,7 +50,7 @@ ingredients:
     note: "skuren i klyftor"
   - amount: 150
     unit: g
-    item: av ananas
+    item: konserverad ananas i egen juice, avrunnen
     note: i bitar
   - amount: 2
     unit: msk

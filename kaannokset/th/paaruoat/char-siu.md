@@ -23,7 +23,7 @@ image:
 ingredients:
   - amount: 800
     unit: g
-    item: เนื้อสันนอกหมู
+    item: เนื้อสันนอกหมูที่เลาะไขมันที่มองเห็นออกแล้ว
     note: ตัดเป็นแท่งยาว
   - amount: 3
     unit: ช้อนโต๊ะ

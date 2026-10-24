@@ -23,7 +23,7 @@ image:
 ingredients:
   - amount: 800
     unit: g
-    item: fläskytterfilé
+    item: fläskytterfilé, putsad från synligt fett
     note: skär i långa stänger
   - amount: 3
     unit: msk

@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: เนื้อสันนอกหมู
+    item: เนื้อสันนอกหมูที่เลาะไขมันที่มองเห็นออกแล้ว
     note: "หั่นเต๋า"
   - amount: 1
     unit: ชิ้น
@@ -50,7 +50,7 @@ ingredients:
     note: "หั่นเป็นเสี้ยว"
   - amount: 150
     unit: g
-    item: ของสับปะรด
+    item: สับปะรดกระป๋องในน้ำผลไม้ของตัวเอง สะเด็ดน้ำแล้ว
     note: เป็นชิ้น ๆ
   - amount: 2
     unit: ช้อนโต๊ะ
