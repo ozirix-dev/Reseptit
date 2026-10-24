@@ -15,12 +15,15 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "vehnäjauho"
-  - amount: 1
-    unit: "kpl"
-    item: "peruna"
-  - amount: 2
-    unit: "rkl"
-    item: "korianteri"
+  - amount: 60
+    unit: "ml"
+    item: "vettä"
+  - amount: 150
+    unit: "g"
+    item: "kuorittua perunaa"
+  - amount: 6
+    unit: "g"
+    item: "tuoretta korianteria"
   - amount: 1
     unit: "tl"
     item: "juustokumina"
@@ -42,6 +45,11 @@ image:
   alt: "Aloo paratha jogurtin kera tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 39.58
+carbs_total_per_serving_g: 44.53
+protein_per_serving_g: 7.42
+fat_per_serving_g: 7.84
+
 ---
 
 # Aloo paratha jogurtin kera

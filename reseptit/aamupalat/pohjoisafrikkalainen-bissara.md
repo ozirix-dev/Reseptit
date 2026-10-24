@@ -14,7 +14,7 @@ cooking_method:
 ingredients:
   - amount: 150
     unit: "g"
-    item: "härkäpapu"
+    item: "kuivattuja härkäpapuja"
   - amount: 1
     unit: "tl"
     item: "valkosipuli"
@@ -26,7 +26,7 @@ ingredients:
     item: "oliiviöljy"
   - amount: 700
     unit: "ml"
-    item: "kasvis- tai kanalientä"
+    item: "vettä"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -42,6 +42,11 @@ image:
   alt: "Bissara-härkäpapukeitto aamiaiseksi tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 28.24
+carbs_total_per_serving_g: 42.55
+protein_per_serving_g: 18.49
+fat_per_serving_g: 8.59
+
 ---
 
 # Bissara-härkäpapukeitto aamiaiseksi

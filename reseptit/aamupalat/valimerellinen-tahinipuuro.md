@@ -21,12 +21,12 @@ ingredients:
   - amount: 1
     unit: "rkl"
     item: "hunaja"
-  - amount: 1
-    unit: "kpl"
-    item: "appelsiini"
+  - amount: 130
+    unit: "g"
+    item: "kuorittua appelsiinia"
   - amount: 700
     unit: "ml"
-    item: "maitoa tai vettä"
+    item: "vettä"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -42,6 +42,11 @@ image:
   alt: "Kreikkalainen hunajainen tahinipuuro tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 40.33
+carbs_total_per_serving_g: 47.15
+protein_per_serving_g: 8.13
+fat_per_serving_g: 9.19
+
 ---
 
 # Kreikkalainen hunajainen tahinipuuro

@@ -14,7 +14,7 @@ cooking_method:
 ingredients:
   - amount: 150
     unit: "g"
-    item: "mungpapu"
+    item: "kuivattuja mungpapuja"
   - amount: 1
     unit: "tl"
     item: "inkivääri"
@@ -23,7 +23,7 @@ ingredients:
     item: "vihreä chili"
   - amount: 100
     unit: "g"
-    item: "riisi"
+    item: "kuivaa pitkäjyväistä valkoista riisiä"
   - amount: 1
     unit: "rkl"
     item: "neutraalia paistoöljyä"
@@ -42,6 +42,11 @@ image:
   alt: "Pesarattu mungpavuista tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 68.49
+carbs_total_per_serving_g: 79.38
+protein_per_serving_g: 21.93
+fat_per_serving_g: 8.7
+
 ---
 
 # Pesarattu mungpavuista

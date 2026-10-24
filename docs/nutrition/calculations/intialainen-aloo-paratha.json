@@ -1,0 +1,258 @@
+{
+  "recipeId": "intialainen-aloo-paratha",
+  "sourceHash": "28886299d0cb81f914b641164af80d3e8aa8b1c482d31b1236bfa0de19d104a7",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-14",
+  "servings": 2,
+  "scope": "Two servings. Uses 100 g medium wheat flour, 60 ml water for dough, 150 g peeled raw potato, 6 g fresh coriander, cumin, and all listed pan oil counted fully retained.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "vehnäjauho",
+      "amount": 100,
+      "unit": "g",
+      "state": "medium wheat flour, as sold",
+      "matchEvidence": "Fineli Release 20 record 110 is medium wheat flour; the recipe amount is the dry flour mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "medium wheat flour, as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "item": "vettä",
+      "amount": 60,
+      "unit": "ml",
+      "state": "tap water",
+      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Tap water density represented as 1 g/ml; Fineli record 922 confirms zero energy and macronutrients.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "kuorittua perunaa",
+      "amount": 150,
+      "unit": "g",
+      "state": "raw peeled potato, edible portion",
+      "matchEvidence": "Fineli Release 20 record 310 is raw potato; recipe amount is peeled edible weight.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-310-release-20",
+        "name": "MAA-ARTISOKKA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/310",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw peeled potato, edible portion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 2.91,
+          "FIBT": 4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 2.91,
+          "fibre": 4,
+          "polyols": 0,
+          "protein": 1.8,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "tuoretta korianteria",
+      "amount": 6,
+      "unit": "g",
+      "state": "fresh coriander leaf, raw",
+      "matchEvidence": "AFCD Release 3 record F003192 is fresh raw coriander leaves; exact gram amount is listed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F003192-release-3",
+        "name": "Coriander, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh coriander leaf, raw",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.9,
+          "fibre": 3.2,
+          "polyols": 0,
+          "protein": 3.1,
+          "fat": 0.6
+        }
+      }
+    },
+    {
+      "item": "juustokumina",
+      "amount": 1,
+      "unit": "tl",
+      "state": "ground cumin seed",
+      "matchEvidence": "Ground cumin; AFCD record F003327.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "One level teaspoon of ground cumin represented as 2 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F003327-release-3",
+        "name": "Cumin (cummin) seed, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground cumin seed",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 33.7,
+          "fibre": 10.5,
+          "polyols": 0,
+          "protein": 17.8,
+          "fat": 22.3
+        }
+      }
+    },
+    {
+      "item": "neutraalia paistoöljyä",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "neutral vegetable cooking oil",
+      "matchEvidence": "Average neutral cooking oil; Fineli Release 20 record 541.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Fineli record 541 lists 13.5 g per tablespoon (RKL). All listed pan oil is counted as retained.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-541-release-20",
+        "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "neutral vegetable cooking oil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 99.9
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
+      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+    }
+  ]
+}

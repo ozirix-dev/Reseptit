@@ -1,0 +1,484 @@
+{
+  "batchId": "batch-14",
+  "ingredientMappings": {
+    "g|broilerin nahatonta rintafileetä": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F002594",
+      "state": "raw lean skinless chicken breast meat",
+      "matchEvidence": "AFCD Release 3 record F002594 is raw lean chicken breast flesh; recipe quantity is raw edible weight."
+    },
+    "g|feta": {
+      "dataset": "fineli-release-20",
+      "sourceId": "11211",
+      "state": "feta cheese, 25% fat, goat milk, brined",
+      "matchEvidence": "Fineli Release 20 record 11211 is feta cheese with 25% fat, the local generic feta match."
+    },
+    "g|hienoksi jauhettua maissijauhoa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "29823",
+      "state": "fine-ground cornmeal as sold",
+      "matchEvidence": "Fineli Release 20 record 29823 is finely ground cornmeal, matching the specified fine corn flour."
+    },
+    "g|jogurtti": {
+      "dataset": "fineli-release-20",
+      "sourceId": "620",
+      "state": "plain unsweetened yogurt, 3.9% fat",
+      "matchEvidence": "Plain unsweetened yogurt represented by Fineli Bulgarian-style 3.9% yogurt record 620."
+    },
+    "g|katkarapu": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F007422",
+      "state": "raw peeled prawn flesh",
+      "matchEvidence": "Generic raw peeled shrimp represented by raw prawn flesh; AFCD record F007422 has complete fibre and paired carbohydrate data."
+    },
+    "g|kaurahiutale": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F006143",
+      "state": "rolled oats, uncooked",
+      "matchEvidence": "AFCD Release 3 record F006143 is uncooked rolled oats with paired carbohydrate and polyol values."
+    },
+    "g|kikhernejauho": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F003986",
+      "state": "dry chickpea flour (besan)",
+      "matchEvidence": "Chickpea flour/besan; AFCD record F003986."
+    },
+    "g|kondensoitu maito": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F005582",
+      "state": "regular sweetened condensed cow milk, as sold",
+      "matchEvidence": "AFCD Release 3 record F005582 is regular sweetened condensed milk, matching the listed product."
+    },
+    "g|kookoshiutale": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F002987",
+      "state": "grated desiccated coconut, unsweetened",
+      "matchEvidence": "AFCD Release 3 record F002987 is grated and desiccated coconut."
+    },
+    "g|kuivaa pitkäjyväistä valkoista riisiä": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F007682",
+      "state": "dry white long-grain rice, uncooked",
+      "matchEvidence": "AFCD Release 3 record F007682 is raw white long-grain rice; the recipes now specify the dry ingredient mass."
+    },
+    "g|kuivattuja härkäpapuja": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F000416",
+      "state": "dried broad beans, uncooked",
+      "matchEvidence": "AFCD Release 3 record F000416 is dried broad bean; recipe amount is the dry weight."
+    },
+    "g|kuivattuja mungpapuja": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F000446",
+      "state": "dried whole mung beans, uncooked",
+      "matchEvidence": "AFCD Release 3 record F000446 is dried whole mung beans, matching the specified dry weight."
+    },
+    "g|kuorittua appelsiinia": {
+      "dataset": "fineli-release-20",
+      "sourceId": "11045",
+      "state": "raw peeled orange",
+      "matchEvidence": "Fineli Release 20 record 11045 is peeled orange; the recipe lists 130 g edible orange."
+    },
+    "g|kuorittua mangoa": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F005299",
+      "state": "fresh raw mango, peeled",
+      "matchEvidence": "AFCD Release 3 record F005299 is raw peeled mango; recipe amount is edible fruit mass."
+    },
+    "g|kuorittua perunaa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "310",
+      "state": "raw peeled potato, edible portion",
+      "matchEvidence": "Fineli Release 20 record 310 is raw potato; recipe amount is peeled edible weight."
+    },
+    "g|kuorittua porkkanaa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "300",
+      "state": "raw peeled carrot, edible portion",
+      "matchEvidence": "Fineli Release 20 record 300 is raw carrot; recipe amount is peeled edible weight."
+    },
+    "g|kurkkua": {
+      "dataset": "fineli-release-20",
+      "sourceId": "346",
+      "state": "raw cucumber",
+      "matchEvidence": "Raw cucumber; Fineli Release 20 record 346."
+    },
+    "g|kypsennettyjä, valutettuja maissinjyviä": {
+      "dataset": "fineli-release-20",
+      "sourceId": "3040",
+      "state": "boiled corn kernels, drained, unsalted",
+      "matchEvidence": "Fineli Release 20 record 3040 is boiled unsalted corn kernels, matching the specified cooked, drained kernels."
+    },
+    "g|limemehua": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F004729",
+      "state": "lime juice as sold",
+      "matchEvidence": "AFCD Release 3 record F004729 is lime juice; recipe amount is measured juice."
+    },
+    "g|mannasuurimo": {
+      "dataset": "fineli-release-20",
+      "sourceId": "112",
+      "state": "dry semolina as sold",
+      "matchEvidence": "Fineli Release 20 record 112 is semolina; the recipe amount is the dry ingredient mass."
+    },
+    "g|maustamatonta kreikkalaista jogurttia, 7 % rasvaa": {
+      "dataset": "food-records",
+      "sourceId": "fineli-34611-2026-10-25",
+      "state": "IND",
+      "matchEvidence": "Local verified Fineli Release 20 record 34611 is plain Greek yogurt, 7% fat, lactose-free; the recipe now names the same fat level."
+    },
+    "g|patonki": {
+      "dataset": "fineli-release-20",
+      "sourceId": "1309",
+      "state": "plain industrial wheat baguette, as sold",
+      "matchEvidence": "Fineli Release 20 record 1309 is plain industrial baguette/French bread."
+    },
+    "g|pavunitu": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F008806",
+      "state": "fresh raw bean sprouts",
+      "matchEvidence": "AFCD Release 3 record F008806 is raw fresh bean sprouts; the recipe amount is the raw edible mass."
+    },
+    "g|pinaatti": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F008761",
+      "state": "fresh mature raw spinach leaves",
+      "matchEvidence": "AFCD Release 3 record F008761 is fresh raw mature spinach; recipe quantity is weighed raw leaves."
+    },
+    "g|porsaan jauheliha": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F007057",
+      "state": "pork mince, untrimmed, raw",
+      "matchEvidence": "AFCD Release 3 record F007057 is untrimmed raw pork mince; recipe amount is raw edible mass."
+    },
+    "g|riisijauho": {
+      "dataset": "fineli-release-20",
+      "sourceId": "182",
+      "state": "white rice flour as sold",
+      "matchEvidence": "Fineli Release 20 record 182 groups rice flour and rice flakes; used as the closest local generic white rice-flour entry. The source category combines the two forms, so this is a small product-level proxy."
+    },
+    "g|saksanpähkinä": {
+      "dataset": "fineli-release-20",
+      "sourceId": "376",
+      "state": "raw edible walnut kernels",
+      "matchEvidence": "Fineli Release 20 record 376 is walnuts; edible kernels are weighed directly."
+    },
+    "g|tuoreita herkkusieniä": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F005946",
+      "state": "common button mushroom, fresh raw",
+      "matchEvidence": "AFCD Release 3 record F005946 is fresh raw common mushroom; paired carbohydrate values include source-reported sugar alcohol content."
+    },
+    "g|tuoretta jalapeñoa": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F002896",
+      "state": "fresh jalapeño represented by fresh green chilli",
+      "matchEvidence": "AFCD Release 3 has no jalapeño cultivar entry; F002896 fresh green chilli is the closest product proxy for this 15 g small chilli amount."
+    },
+    "g|tuoretta korianteria": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F003192",
+      "state": "fresh coriander leaf, raw",
+      "matchEvidence": "AFCD Release 3 record F003192 is fresh raw coriander leaves; exact gram amount is listed."
+    },
+    "g|tuoretta viikunaa": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F003834",
+      "state": "fresh unpeeled raw fig",
+      "matchEvidence": "AFCD Release 3 record F003834 is fresh raw fig, unpeeled; recipe quantity is edible fruit weight."
+    },
+    "g|vehnäjauho": {
+      "dataset": "fineli-release-20",
+      "sourceId": "110",
+      "state": "medium wheat flour, as sold",
+      "matchEvidence": "Fineli Release 20 record 110 is medium wheat flour; the recipe amount is the dry flour mass."
+    },
+    "kpl|kananmuna": {
+      "dataset": "fineli-release-20",
+      "sourceId": "858",
+      "state": "raw edible egg, shell removed",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli record 858 medium egg portion KPL_M = 55 g edible egg without shell.",
+      "matchEvidence": "Raw edible egg; Fineli Release 20 record 858."
+    },
+    "kpl|porkkana": {
+      "dataset": "fineli-release-20",
+      "sourceId": "300",
+      "state": "raw medium carrot, edible portion",
+      "gramsPerUnit": 60,
+      "conversionEvidence": "Fineli record 300 medium carrot portion KPL_M = 60 g.",
+      "matchEvidence": "Raw carrot; Fineli Release 20 record 300."
+    },
+    "kpl|sipuli": {
+      "dataset": "fineli-release-20",
+      "sourceId": "335",
+      "state": "raw yellow onion, medium edible portion",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli record 335 medium yellow onion portion KPL_M = 55 g.",
+      "matchEvidence": "Raw yellow onion; Fineli Release 20 record 335."
+    },
+    "kpl|tomaatti": {
+      "dataset": "fineli-release-20",
+      "sourceId": "352",
+      "state": "raw medium tomato, edible portion",
+      "gramsPerUnit": 125,
+      "conversionEvidence": "Fineli record 352 medium tomato portion KPL_M = 125 g.",
+      "matchEvidence": "Raw tomato; Fineli Release 20 record 352."
+    },
+    "ml|kahvi": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F003065",
+      "state": "prepared black coffee from ground beans",
+      "matchEvidence": "AFCD Release 3 record F003065 is prepared long black coffee, an unsweetened brewed-coffee match.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Brewed coffee is represented as 1 g/ml; the listed volume is measured after brewing."
+    },
+    "ml|maito": {
+      "dataset": "fineli-release-20",
+      "sourceId": "689",
+      "state": "whole cow milk as sold",
+      "matchEvidence": "Fineli Release 20 record 689 is whole milk with added vitamin D, the closest generic full-fat milk entry.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "For liquid milk, 1 ml is represented as 1 g."
+    },
+    "ml|täysrasvaista kookosmaitoa": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F002991",
+      "state": "canned regular-fat coconut milk as sold",
+      "matchEvidence": "AFCD Release 3 record F002991 is regular-fat canned coconut milk, matching the recipe wording.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "For this pourable canned coconut milk, 1 ml is represented as 1 g; all listed amount is counted."
+    },
+    "ml|vettä": {
+      "dataset": "fineli-release-20",
+      "sourceId": "922",
+      "state": "tap water",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Tap water density represented as 1 g/ml; Fineli record 922 confirms zero energy and macronutrients.",
+      "matchEvidence": "Plain tap water; Fineli Release 20 record 922."
+    },
+    "rkl|hunaja": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F004380",
+      "state": "honey as sold",
+      "matchEvidence": "AFCD Release 3 record F004380 is honey with paired carbohydrate values; Fineli honey portion mass is used for tablespoon conversion.",
+      "gramsPerUnit": 20,
+      "conversionEvidence": "Fineli record 4 lists 20 g honey per tablespoon (RKL); used only for unit conversion."
+    },
+    "rkl|kalakastike": {
+      "dataset": "food-records",
+      "sourceId": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+      "state": "as sold; label ingredients anchovy extract (77%), salt, sugar",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "One tablespoon of the specified bottled fish sauce is represented as 15 g.",
+      "matchEvidence": "The recipe names fish sauce without a brand; the stored Squid Brand label record is selected as the explicit product. Its ingredient list contains anchovy extract, salt and sugar and no polyols."
+    },
+    "rkl|kevätsipuli": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F006250",
+      "state": "raw spring onion, chopped",
+      "gramsPerUnit": 6,
+      "conversionEvidence": "Two tablespoons chopped spring onion are represented as 6 g per tablespoon.",
+      "matchEvidence": "Raw spring onion; AFCD record F006250."
+    },
+    "rkl|neutraalia paistoöljyä": {
+      "dataset": "fineli-release-20",
+      "sourceId": "541",
+      "state": "neutral vegetable cooking oil",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Fineli record 541 lists 13.5 g per tablespoon (RKL). All listed pan oil is counted as retained.",
+      "matchEvidence": "Average neutral cooking oil; Fineli Release 20 record 541."
+    },
+    "rkl|oliiviöljy": {
+      "dataset": "fineli-release-20",
+      "sourceId": "536",
+      "state": "olive oil as sold",
+      "matchEvidence": "Fineli Release 20 record 536 is olive oil.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Fineli record 536 lists 13.5 g per tablespoon (RKL)."
+    },
+    "rkl|seesamiöljy": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F006187",
+      "state": "sesame oil",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "One tablespoon sesame oil represented as 13.5 g, matching Fineli cooking-oil portion RKL; all listed oil is counted as retained.",
+      "matchEvidence": "Sesame oil; AFCD record F006187."
+    },
+    "rkl|soijakastike": {
+      "dataset": "fineli-release-20",
+      "sourceId": "31",
+      "state": "soy sauce",
+      "gramsPerUnit": 18,
+      "conversionEvidence": "Fineli record 31 lists 18 g per tablespoon (RKL).",
+      "matchEvidence": "Soy sauce; Fineli Release 20 record 31."
+    },
+    "rkl|tahini": {
+      "dataset": "fineli-release-20",
+      "sourceId": "11087",
+      "state": "unsalted sesame tahini",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "Fineli record 11087 lists 15 g per tablespoon (RKL).",
+      "matchEvidence": "Unsalted sesame tahini; Fineli Release 20 record 11087."
+    },
+    "rkl|thaibasilika": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F000396",
+      "state": "fresh sweet basil, Thai basil nutrient proxy",
+      "gramsPerUnit": 3,
+      "conversionEvidence": "Chopped fresh basil represented as 3 g per tablespoon.",
+      "matchEvidence": "Fresh basil; AFCD record F000396 is used as a close nutrient proxy for the small listed Thai basil amount."
+    },
+    "tl|inkivääri": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F004213",
+      "state": "fresh peeled ginger, grated",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "One teaspoon finely grated fresh ginger represented as 2 g.",
+      "matchEvidence": "Fresh peeled ginger; AFCD record F004213 has paired available-carbohydrate values."
+    },
+    "tl|juustokumina": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F003327",
+      "state": "ground cumin seed",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "One level teaspoon of ground cumin represented as 2 g.",
+      "matchEvidence": "Ground cumin; AFCD record F003327."
+    },
+    "tl|kaneli": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F002963",
+      "state": "dried ground cinnamon",
+      "matchEvidence": "AFCD Release 3 record F002963 is dried ground cinnamon; one level teaspoon is represented as 2.6 g.",
+      "gramsPerUnit": 2.6,
+      "conversionEvidence": "One level teaspoon of ground cinnamon is represented as 2.6 g."
+    },
+    "tl|valkosipuli": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F004193",
+      "state": "raw peeled garlic, minced",
+      "gramsPerUnit": 3,
+      "conversionEvidence": "One teaspoon minced garlic represented as 3 g.",
+      "matchEvidence": "Raw peeled garlic; AFCD record F004193."
+    },
+    "tl|vaniljauutetta": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F009350",
+      "state": "vanilla bean extract as sold",
+      "matchEvidence": "AFCD Release 3 record F009350 is vanilla bean extract; a teaspoon is 5 g.",
+      "gramsPerUnit": 5,
+      "conversionEvidence": "One teaspoon vanilla extract is represented as 5 g."
+    },
+    "tl|vihreä chili": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F002896",
+      "state": "fresh green chilli, raw",
+      "matchEvidence": "AFCD Release 3 record F002896 is fresh raw green chilli; one level teaspoon chopped chilli is represented as 3 g.",
+      "gramsPerUnit": 3,
+      "conversionEvidence": "A level teaspoon of finely chopped fresh chilli is represented as 3 g."
+    },
+    "|suolaa maun mukaan": {
+      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
+      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
+      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+    },
+    "kpl|banaani": {
+      "dataset": "fineli-release-20",
+      "sourceId": "11049",
+      "state": "raw peeled banana, edible portion",
+      "gramsPerUnit": 125,
+      "conversionEvidence": "Fineli record 11049 medium peeled banana portion KPL_M = 125 g edible fruit.",
+      "matchEvidence": "Raw peeled banana; Fineli Release 20 record 11049."
+    }
+  },
+  "recipes": [
+    {
+      "recipeId": "korealainen-gyeran-mari-kasviksilla",
+      "scope": "Two servings. Uses two medium eggs (55 g edible each), one medium 65 g carrot, chopped spring onion and both listed oils. Pan oils are counted fully retained; salt is omitted because it contributes none of the displayed macros."
+    },
+    {
+      "recipeId": "intialainen-besan-chilla",
+      "scope": "Two servings. Uses dry chickpea flour, 100 ml water for batter, one medium tomato and onion, 6 g fresh coriander, and listed pan oil counted fully retained."
+    },
+    {
+      "recipeId": "intialainen-rava-uttapam",
+      "scope": "Two servings. Uses dry semolina, plain 3.9% yogurt and 100 ml water for batter, one medium tomato and onion, and listed pan oil counted fully retained."
+    },
+    {
+      "recipeId": "kiinalainen-kevatsipulipannukakku",
+      "scope": "Two servings. Uses 100 g medium wheat flour and 60 ml tap water, spring onion, sesame oil, soy sauce, and all listed pan oil counted fully retained."
+    },
+    {
+      "recipeId": "indonesialainen-bubur-ayam-kanariisipuuro",
+      "scope": "Two servings. Uses 100 g dry white long-grain rice, 150 g raw skinless chicken breast, ginger, spring onion and 700 ml water. Chicken is included at raw weight; cooking water is retained in the porridge."
+    },
+    {
+      "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
+      "scope": "Two servings. Uses 100 g dry white long-grain rice, 200 ml regular-fat canned coconut milk, two medium eggs (55 g edible each), and 100 g cucumber. All ingredients are counted as consumed."
+    },
+    {
+      "recipeId": "intialainen-aloo-paratha",
+      "scope": "Two servings. Uses 100 g medium wheat flour, 60 ml water for dough, 150 g peeled raw potato, 6 g fresh coriander, cumin, and all listed pan oil counted fully retained."
+    },
+    {
+      "recipeId": "intialainen-pesarattu-mungpavuista",
+      "scope": "Two servings. Uses 150 g dried whole mung beans and 100 g dry white long-grain rice; both are specified dry weights before soaking. Green chilli and ginger are measured as listed; listed pan oil is counted fully retained."
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-bissara",
+      "scope": "Two servings. Uses 150 g dried broad beans, garlic, cumin, olive oil, and 700 ml water. Water is the chosen cooking liquid; salt is omitted as nutrient-free for the four displayed macros."
+    },
+    {
+      "recipeId": "vietnamilainen-banh-mi-munalla",
+      "scope": "Two servings. Uses 100 g plain baguette, two medium eggs (55 g edible each), 100 g cucumber and 60 g peeled carrot. All listed pan oil is counted fully retained."
+    },
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "scope": "Two servings. Uses 100 g white rice flour, 200 ml regular-fat canned coconut milk, 150 g raw peeled shrimp and 150 g raw bean sprouts; listed pan oil is counted fully retained."
+    },
+    {
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "scope": "Two servings. Uses 100 g plain 3.9% yogurt, 200 ml prepared black coffee, one medium peeled banana (125 g edible mass), and 30 g regular sweetened condensed milk."
+    },
+    {
+      "recipeId": "valimerellinen-tahinipuuro",
+      "scope": "Two servings. Uses 100 g uncooked rolled oats, 15 g tahini, one tablespoon honey (20 g), 130 g peeled orange, and 700 ml water. Water replaces the original optional milk/water choice."
+    },
+    {
+      "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+      "scope": "Two servings. Uses 100 g plain Greek yogurt at 7% fat, 30 g walnut kernels, one tablespoon honey (20 g), and 50 g fresh fig. It is served uncooked; salt is removed."
+    },
+    {
+      "recipeId": "valimerellinen-pinaatti-fetashakshuka",
+      "scope": "Two servings. Uses two medium eggs (55 g edible each), one medium tomato, 100 g raw mature spinach, 150 g feta at 25% fat, and listed pan oil counted fully retained."
+    },
+    {
+      "recipeId": "meksikolainen-huevos-a-la-mexicana",
+      "scope": "Two servings. Uses two medium eggs (55 g edible each), one medium tomato and onion, 15 g fresh jalapeño (proxied with AFCD green chilli), and listed pan oil counted fully retained."
+    },
+    {
+      "recipeId": "meksikolainen-atole-maissipuuro",
+      "scope": "Two servings. Uses 100 g finely ground cornmeal, 200 ml whole milk and 700 ml water, plus one teaspoon cinnamon and vanilla extract. This resolves the optional milk-or-water ingredient as both specified milk and water in the recipe."
+    },
+    {
+      "recipeId": "thai-maissifritterit",
+      "scope": "Two servings. Uses 150 g cooked drained corn kernels, two medium eggs (55 g edible each), 100 g medium wheat flour and Thai basil proxied with fresh sweet basil; all listed pan oil counted fully retained."
+    },
+    {
+      "recipeId": "karibia-mango-limejogurtti",
+      "scope": "Two servings. Uses 200 g peeled raw mango, 100 g plain 3.9% yogurt, 15 g lime juice and 20 g unsweetened desiccated coconut. Served uncooked; salt is removed."
+    },
+    {
+      "recipeId": "vietnamilainen-banh-cuon-sienilla",
+      "scope": "Two servings. Uses 100 g white rice flour with 250 ml water for steamed sheets, 100 g fresh button mushrooms, 150 g untrimmed raw pork mince, and one tablespoon commercial fish sauce. Fish sauce is counted in full; unquantified salt contributes no macros."
+    }
+  ]
+}

@@ -10,23 +10,20 @@ main_ingredient:
   - "saksanpähkinä"
   - "hunaja"
 cooking_method:
-  - "paistaminen"
+  - "sekoittaminen"
 ingredients:
   - amount: 100
     unit: "g"
-    item: "kreikkalainen jogurtti"
-  - amount: 150
+    item: "maustamatonta kreikkalaista jogurttia, 7 % rasvaa"
+  - amount: 30
     unit: "g"
     item: "saksanpähkinä"
   - amount: 1
     unit: "rkl"
     item: "hunaja"
-  - amount: 1
-    unit: "kpl"
-    item: "viikuna"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+  - amount: 50
+    unit: "g"
+    item: "tuoretta viikunaa"
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -39,6 +36,11 @@ image:
   alt: "Kreikkalainen jogurttikulho hunajalla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 11.19
+carbs_total_per_serving_g: 12.8
+protein_per_serving_g: 6.7
+fat_per_serving_g: 13.36
+
 ---
 
 # Kreikkalainen jogurttikulho hunajalla

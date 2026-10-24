@@ -1,0 +1,206 @@
+{
+  "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+  "sourceHash": "dde4c5edfda11bb470d1bc5f9da072ac457b79f6c3d474807d87a018866daf20",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-14",
+  "servings": 2,
+  "scope": "Two servings. Uses 100 g white rice flour, 200 ml regular-fat canned coconut milk, 150 g raw peeled shrimp and 150 g raw bean sprouts; listed pan oil is counted fully retained.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "riisijauho",
+      "amount": 100,
+      "unit": "g",
+      "state": "white rice flour as sold",
+      "matchEvidence": "Fineli Release 20 record 182 groups rice flour and rice flakes; used as the closest local generic white rice-flour entry. The source category combines the two forms, so this is a small product-level proxy.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-182-release-20",
+        "name": "JAUHO, RIISIJAUHO, RIISIHIUTALE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/182",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "white rice flour as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 79.3,
+          "FIBT": 2.3,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 79.3,
+          "fibre": 2.3,
+          "polyols": 0,
+          "protein": 7.69,
+          "fat": 1.4
+        }
+      }
+    },
+    {
+      "item": "täysrasvaista kookosmaitoa",
+      "amount": 200,
+      "unit": "ml",
+      "state": "canned regular-fat coconut milk as sold",
+      "matchEvidence": "AFCD Release 3 record F002991 is regular-fat canned coconut milk, matching the recipe wording.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "For this pourable canned coconut milk, 1 ml is represented as 1 g; all listed amount is counted.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F002991-release-3",
+        "name": "Coconut, milk, canned, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "canned regular-fat coconut milk as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.7,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.4,
+          "fat": 15.4
+        }
+      }
+    },
+    {
+      "item": "katkarapu",
+      "amount": 150,
+      "unit": "g",
+      "state": "raw peeled prawn flesh",
+      "matchEvidence": "Generic raw peeled shrimp represented by raw prawn flesh; AFCD record F007422 has complete fibre and paired carbohydrate data.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F007422-release-3",
+        "name": "Prawn, banana, wild, flesh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw peeled prawn flesh",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 13.2,
+          "fat": 0.6
+        }
+      }
+    },
+    {
+      "item": "pavunitu",
+      "amount": 150,
+      "unit": "g",
+      "state": "fresh raw bean sprouts",
+      "matchEvidence": "AFCD Release 3 record F008806 is raw fresh bean sprouts; the recipe amount is the raw edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F008806-release-3",
+        "name": "Sprout, bean, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh raw bean sprouts",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "fibre": 1.3,
+          "polyols": 0,
+          "protein": 3.1,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "neutraalia paistoöljyä",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "neutral vegetable cooking oil",
+      "matchEvidence": "Average neutral cooking oil; Fineli Release 20 record 541.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Fineli record 541 lists 13.5 g per tablespoon (RKL). All listed pan oil is counted as retained.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-541-release-20",
+        "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "neutral vegetable cooking oil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 99.9
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
+      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+    }
+  ]
+}

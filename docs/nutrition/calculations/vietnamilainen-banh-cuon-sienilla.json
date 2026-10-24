@@ -1,0 +1,208 @@
+{
+  "recipeId": "vietnamilainen-banh-cuon-sienilla",
+  "sourceHash": "72add279fc7ed90cdb365397eea4399da7f7058fbc6b6e0d6500a012221a8bb7",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-14",
+  "servings": 2,
+  "scope": "Two servings. Uses 100 g white rice flour with 250 ml water for steamed sheets, 100 g fresh button mushrooms, 150 g untrimmed raw pork mince, and one tablespoon commercial fish sauce. Fish sauce is counted in full; unquantified salt contributes no macros.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "riisijauho",
+      "amount": 100,
+      "unit": "g",
+      "state": "white rice flour as sold",
+      "matchEvidence": "Fineli Release 20 record 182 groups rice flour and rice flakes; used as the closest local generic white rice-flour entry. The source category combines the two forms, so this is a small product-level proxy.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-182-release-20",
+        "name": "JAUHO, RIISIJAUHO, RIISIHIUTALE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/182",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "white rice flour as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 79.3,
+          "FIBT": 2.3,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 79.3,
+          "fibre": 2.3,
+          "polyols": 0,
+          "protein": 7.69,
+          "fat": 1.4
+        }
+      }
+    },
+    {
+      "item": "vettä",
+      "amount": 250,
+      "unit": "ml",
+      "state": "tap water",
+      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Tap water density represented as 1 g/ml; Fineli record 922 confirms zero energy and macronutrients.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "tuoreita herkkusieniä",
+      "amount": 100,
+      "unit": "g",
+      "state": "common button mushroom, fresh raw",
+      "matchEvidence": "AFCD Release 3 record F005946 is fresh raw common mushroom; paired carbohydrate values include source-reported sugar alcohol content.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F005946-release-3",
+        "name": "Mushroom, common, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "common button mushroom, fresh raw",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 1.4,
+          "polyols": 1.2,
+          "protein": 2.2,
+          "fat": 0.8
+        }
+      }
+    },
+    {
+      "item": "porsaan jauheliha",
+      "amount": 150,
+      "unit": "g",
+      "state": "pork mince, untrimmed, raw",
+      "matchEvidence": "AFCD Release 3 record F007057 is untrimmed raw pork mince; recipe amount is raw edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F007057-release-3",
+        "name": "Pork, mince, untrimmed, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "pork mince, untrimmed, raw",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 20.9,
+          "fat": 10.6
+        }
+      }
+    },
+    {
+      "item": "kalakastike",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "as sold; label ingredients anchovy extract (77%), salt, sugar",
+      "matchEvidence": "The recipe names fish sauce without a brand; the stored Squid Brand label record is selected as the explicit product. Its ingredient list contains anchovy extract, salt and sugar and no polyols.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "One tablespoon of the specified bottled fish sauce is represented as 15 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+        "name": "Squid Brand Fish Sauce, 725 ml",
+        "sourceUrl": "https://world.openfoodfacts.org/product/13692210/fish-sauce-squid-brand",
+        "retrievedAt": "2026-10-24",
+        "licence": "Open Food Facts database, ODbL 1.0; attribute Open Food Facts contributors and retain share-alike for derived database data",
+        "state": "as sold; label ingredients anchovy extract (77%), salt, sugar",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Open Food Facts product ingredient declaration lists anchovy extract (77%), salt and sugar, with no polyol ingredients; the declared available carbohydrate with and without sugar alcohols is 3.4 g/100 g.",
+        "per100g": {
+          "kcal": 54,
+          "protein": 10,
+          "fat": 0,
+          "carbohydrate": 3.4,
+          "fibre": 0,
+          "sugars": 3.4,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
+      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+    }
+  ]
+}

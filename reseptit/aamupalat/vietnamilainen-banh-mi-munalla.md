@@ -18,12 +18,12 @@ ingredients:
   - amount: 2
     unit: "kpl"
     item: "kananmuna"
-  - amount: 1
-    unit: "kpl"
-    item: "kurkku"
-  - amount: 1
-    unit: "kpl"
-    item: "porkkana"
+  - amount: 100
+    unit: "g"
+    item: "kurkkua"
+  - amount: 60
+    unit: "g"
+    item: "kuorittua porkkanaa"
   - amount: 1
     unit: "rkl"
     item: "neutraalia paistoöljyä"
@@ -42,6 +42,11 @@ image:
   alt: "Banh mi -munavoileipä kurkulla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 30.55
+carbs_total_per_serving_g: 33.19
+protein_per_serving_g: 11.93
+fat_per_serving_g: 12.53
+
 ---
 
 # Banh mi -munavoileipä kurkulla

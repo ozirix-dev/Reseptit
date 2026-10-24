@@ -1,0 +1,144 @@
+{
+  "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+  "sourceHash": "fd67b9349db2ff22fcebf7bdef78da957ad27c5093470811bd0be4f33bb8e520",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-14",
+  "servings": 2,
+  "scope": "Two servings. Uses 100 g plain Greek yogurt at 7% fat, 30 g walnut kernels, one tablespoon honey (20 g), and 50 g fresh fig. It is served uncooked; salt is removed.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "maustamatonta kreikkalaista jogurttia, 7 % rasvaa",
+      "amount": 100,
+      "unit": "g",
+      "state": "IND",
+      "matchEvidence": "Local verified Fineli Release 20 record 34611 is plain Greek yogurt, 7% fat, lactose-free; the recipe now names the same fat level.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-34611-2026-10-25",
+        "name": "JOGURTTI, MAUSTAMATON, KREIKKALAINEN, RASVAA 7 %, LAKTOOSITON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34611?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Rel20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 2.917,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 8.07,
+          "fat": 7.003
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component"
+      }
+    },
+    {
+      "item": "saksanpähkinä",
+      "amount": 30,
+      "unit": "g",
+      "state": "raw edible walnut kernels",
+      "matchEvidence": "Fineli Release 20 record 376 is walnuts; edible kernels are weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-376-release-20",
+        "name": "PÄHKINÄ, SAKSANPÄHKINÄ",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/376",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible walnut kernels",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.2,
+          "FIBT": 5.2,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3.2,
+          "fibre": 5.2,
+          "polyols": 0,
+          "protein": 15.23,
+          "fat": 65.21
+        }
+      }
+    },
+    {
+      "item": "hunaja",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "honey as sold",
+      "matchEvidence": "AFCD Release 3 record F004380 is honey with paired carbohydrate values; Fineli honey portion mass is used for tablespoon conversion.",
+      "gramsPerUnit": 20,
+      "conversionEvidence": "Fineli record 4 lists 20 g honey per tablespoon (RKL); used only for unit conversion.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F004380-release-3",
+        "name": "Honey",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "honey as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 72.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.3,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "tuoretta viikunaa",
+      "amount": 50,
+      "unit": "g",
+      "state": "fresh unpeeled raw fig",
+      "matchEvidence": "AFCD Release 3 record F003834 is fresh raw fig, unpeeled; recipe quantity is edible fruit weight.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F003834-release-3",
+        "name": "Fig, fresh, unpeeled, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh unpeeled raw fig",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 8.1,
+          "fibre": 3.3,
+          "polyols": 0,
+          "protein": 1.4,
+          "fat": 0.3
+        }
+      }
+    }
+  ]
+}

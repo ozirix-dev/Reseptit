@@ -1,0 +1,218 @@
+{
+  "recipeId": "valimerellinen-tahinipuuro",
+  "sourceHash": "283fbc2b9a0b4704bc219b68213124cc50a857fe5e43271249ec4fa3319502dd",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-14",
+  "servings": 2,
+  "scope": "Two servings. Uses 100 g uncooked rolled oats, 15 g tahini, one tablespoon honey (20 g), 130 g peeled orange, and 700 ml water. Water replaces the original optional milk/water choice.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kaurahiutale",
+      "amount": 100,
+      "unit": "g",
+      "state": "rolled oats, uncooked",
+      "matchEvidence": "AFCD Release 3 record F006143 is uncooked rolled oats with paired carbohydrate and polyol values.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006143-release-3",
+        "name": "Oats, rolled, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "rolled oats, uncooked",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 54.5,
+          "fibre": 9.5,
+          "polyols": 0,
+          "protein": 12.2,
+          "fat": 9.5
+        }
+      }
+    },
+    {
+      "item": "tahini",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "unsalted sesame tahini",
+      "matchEvidence": "Unsalted sesame tahini; Fineli Release 20 record 11087.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "Fineli record 11087 lists 15 g per tablespoon (RKL).",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11087-release-20",
+        "name": "TAHINI, SEESAMTAHNA, EI LISÄTTYÄ SUOLAA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11087",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "unsalted sesame tahini",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.9,
+          "FIBT": 6.8,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "fibre": 6.8,
+          "polyols": 0,
+          "protein": 21.81,
+          "fat": 58
+        }
+      }
+    },
+    {
+      "item": "hunaja",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "honey as sold",
+      "matchEvidence": "AFCD Release 3 record F004380 is honey with paired carbohydrate values; Fineli honey portion mass is used for tablespoon conversion.",
+      "gramsPerUnit": 20,
+      "conversionEvidence": "Fineli record 4 lists 20 g honey per tablespoon (RKL); used only for unit conversion.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F004380-release-3",
+        "name": "Honey",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "honey as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 72.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.3,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "kuorittua appelsiinia",
+      "amount": 130,
+      "unit": "g",
+      "state": "raw peeled orange",
+      "matchEvidence": "Fineli Release 20 record 11045 is peeled orange; the recipe lists 130 g edible orange.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11045-release-20",
+        "name": "APPELSIINI, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11045",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw peeled orange",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 8.9,
+          "FIBT": 2.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 8.9,
+          "fibre": 2.4,
+          "polyols": 0,
+          "protein": 0.56,
+          "fat": 0.14
+        }
+      }
+    },
+    {
+      "item": "vettä",
+      "amount": 700,
+      "unit": "ml",
+      "state": "tap water",
+      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Tap water density represented as 1 g/ml; Fineli record 922 confirms zero energy and macronutrients.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
+      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+    }
+  ]
+}

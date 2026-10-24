@@ -15,15 +15,18 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "kikhernejauho"
+  - amount: 100
+    unit: "ml"
+    item: "vettä"
   - amount: 1
     unit: "kpl"
     item: "tomaatti"
   - amount: 1
     unit: "kpl"
     item: "sipuli"
-  - amount: 2
-    unit: "rkl"
-    item: "korianteri"
+  - amount: 6
+    unit: "g"
+    item: "tuoretta korianteria"
   - amount: 1
     unit: "rkl"
     item: "neutraalia paistoöljyä"
@@ -42,6 +45,11 @@ image:
   alt: "Besan-chilla tomaatti-chutneylla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 22.78
+carbs_total_per_serving_g: 33.86
+protein_per_serving_g: 10.63
+fat_per_serving_g: 9.73
+
 ---
 
 # Besan-chilla tomaatti-chutneylla
