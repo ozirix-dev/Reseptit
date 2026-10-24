@@ -557,6 +557,207 @@
       "note": "Low-confidence category mean for peanuts.",
       "matchKind": "CATEGORY_MEAN",
       "confidence": "LOW"
+    },
+    {
+      "id": "bakery-products-category-mean-gi-58",
+      "gi": 58,
+      "foodKey": "bakery-products-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Bakery products category mean",
+      "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1; mean of Supplemental Table 1 entries for Bakery products (n=72)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+      },
+      "note": "bakery products category mean; flour and semolina are broad grain-product analogues",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    },
+    {
+      "id": "bread-category-mean-gi-64",
+      "gi": 64,
+      "foodKey": "bread-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Breads category mean",
+      "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1; mean of Supplemental Table 1 entries for Breads (n=214)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+      },
+      "note": "bread category mean; product and processing variation is substantial",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    },
+    {
+      "id": "potatoes-category-mean-gi-71",
+      "gi": 71,
+      "foodKey": "potatoes-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Potatoes and potato products category mean",
+      "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1; mean of Supplemental Table 1 entries for Potatoes and potato products (n=66)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+      },
+      "note": "potato category mean; this is not preparation-specific",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    },
+    {
+      "id": "pasta-category-mean-gi-52",
+      "gi": 52,
+      "foodKey": "pasta-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Pasta category mean",
+      "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1; mean of Supplemental Table 1 entries for Pasta (n=77)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+      },
+      "note": "pasta category mean; product and cooking variation remains",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    },
+    {
+      "id": "rice-category-mean-gi-67",
+      "gi": 67,
+      "foodKey": "rice-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Rice category mean",
+      "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1; mean of Supplemental Table 1 entries for Rice (n=128)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+      },
+      "note": "rice category mean; rice flour is a broad grain-form analogue",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    },
+    {
+      "id": "sugar-syrups-category-mean-gi-58",
+      "gi": 58,
+      "foodKey": "sugar-syrups-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Sugars and syrups category mean",
+      "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1; mean of Supplemental Table 1 entries for Sugars and syrups (n=50)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+      },
+      "note": "sugars and syrups category mean",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    },
+    {
+      "id": "fruit-category-mean-gi-51",
+      "gi": 51,
+      "foodKey": "fruit-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Fruits and fruit products category mean",
+      "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1; mean of Supplemental Table 1 entries for Fruits and fruit products (n=105)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+      },
+      "note": "fruit category mean; used only as a broad tamarind-paste analogue",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    },
+    {
+      "id": "asian-indian-category-mean-gi-65",
+      "gi": 65,
+      "foodKey": "asian-indian-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Asian Indian regional foods category mean",
+      "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1; mean of Supplemental Table 1 entries for Asian Indian regional foods (n=19)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+      },
+      "note": "Asian Indian regional-food mean; not a food-specific chickpea-flour measurement",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    },
+    {
+      "id": "potato-boiled-preparation-analogue-gi-66",
+      "gi": 66,
+      "foodKey": "potato",
+      "preparationKey": "boiled-unspecified",
+      "food": "Potato, unspecified variety, boiled",
+      "preparation": "Boiled; China; test year 2005",
+      "qualityTier": "STRONG",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Supplemental Table 1, entry 1842",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "participants": 10,
+        "referenceFood": "Glucose",
+        "testDurationHours": 2,
+        "qualityEvidence": "Supplemental Table 1 is the review's ISO-methodology set; source row describes boiled, unspecified potato. GI is rounded to the table's reported integer."
+      },
+      "note": "Measured boiled-potato value used as a preparation analogue for boiled potato pieces in these recipes; variety, region, cooling and recipe context differ.",
+      "matchKind": "ANALOG",
+      "confidence": "MEDIUM"
     }
   ]
 }

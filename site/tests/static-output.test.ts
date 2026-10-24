@@ -86,7 +86,7 @@ test("recipe index is prerendered and links only published languages", async () 
 });
 
 test("GK values link to centralized recipe details on every published translation", async () => {
-  assert.equal(glycemicLoadPilotResults.length, 21);
+  assert.equal(glycemicLoadPilotResults.length, 41);
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
     assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);
@@ -121,8 +121,9 @@ test("localized central GL pages render with their canonical and hreflang links"
     assert.match(html, /hreflang="sv"/);
     assert.match(html, /hreflang="th"/);
     assert.match(html, /hreflang="x-default"/);
-    assert.match(html, /id="maksalaatikko-kukkakaalilla"/);
-    assert.doesNotMatch(html, /GK-arvio: 3\.45|3,45 \/ annos/);
+    const liverResult = html.match(/<aside id="maksalaatikko-kukkakaalilla"[\s\S]*?<\/aside>/);
+    assert.ok(liverResult, "the liver recipe has a centralized explanation");
+    assert.doesNotMatch(liverResult[0], /GK-arvio|GL estimate|GL-uppskattning|GL-uppskattning|3,45 \/ annos/);
   }
 });
 
