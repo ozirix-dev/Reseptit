@@ -1,0 +1,126 @@
+{
+  "calculationBasis": "Ingredient-level Fineli CHO (available carbohydrate) per 100 g, multiplied by edible grams, divided by recipe servings. Ingredient GI is applied only when an exact food and preparation match is cited.",
+  "fineliEvidence": "docs/nutrition/food-records.json; THL Fineli, CC BY 4.0",
+  "massEvidence": "docs/nutrition/estimates-2026-10-24.md, Fineli source records and mass assumptions section",
+  "excludedIngredientPolicy": "Unmeasured seasonings and herbs excluded from the batch-1 Fineli calculations stay explicitly excluded here; no missing amount is treated as zero.",
+  "recipes": [
+    {
+      "recipeId": "munakokkeli",
+      "servings": 2,
+      "ingredients": [
+        { "name": "kananmuna", "grams": 220, "fineliRecordId": "fineli-858-2026-10-24", "giRecordId": null, "massEvidence": "4 kpl × Fineli-annosmitta 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained." },
+        { "name": "kuohukerma", "grams": 30, "fineliRecordId": "fineli-631-2026-10-24", "giRecordId": null, "massEvidence": "2 rkl × documented 15 g/rkl", "giMatchEvidence": "No exact published GI match for 38% whipping cream is recorded." },
+        { "name": "voi", "grams": 14, "fineliRecordId": "fineli-500-2026-10-24", "giRecordId": null, "massEvidence": "1 rkl × documented 14 g/rkl" },
+        { "name": "ruohosipuli", "grams": 7, "fineliRecordId": "fineli-392-2026-10-24", "giRecordId": null, "massEvidence": "1 rkl × documented herb mass 7 g/rkl", "giMatchEvidence": "No exact published GI value is recorded for chives." },
+        { "name": "suola ja mustapippuri", "grams": null, "fineliRecordId": null, "giRecordId": null, "excludedReason": "Unmeasured seasoning omitted from the batch-1 Fineli estimate; not treated as zero." }
+      ]
+    },
+    {
+      "recipeId": "munakasmuffinit",
+      "servings": 3,
+      "ingredients": [
+        { "name": "kananmuna", "grams": 275, "fineliRecordId": "fineli-858-2026-10-24", "giRecordId": null, "massEvidence": "5 kpl × Fineli-annosmitta 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained." },
+        { "name": "pekoni", "grams": 60, "fineliRecordId": "fineli-707-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass" },
+        { "name": "pinaatti", "grams": 40, "fineliRecordId": "fineli-33456-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass", "giMatchEvidence": "No exact published GI value is recorded for spinach." },
+        { "name": "cheddarjuusto", "grams": 50, "fineliRecordId": "fineli-698-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass", "giMatchEvidence": "No exact published GI value is recorded for this cheddar product." },
+        { "name": "kuohukerma", "grams": 30, "fineliRecordId": "fineli-631-2026-10-24", "giRecordId": null, "massEvidence": "2 rkl × documented 15 g/rkl", "giMatchEvidence": "No exact published GI match for 38% whipping cream is recorded." },
+        { "name": "mustapippuri", "grams": null, "fineliRecordId": null, "giRecordId": null, "excludedReason": "Unmeasured seasoning omitted from the batch-1 Fineli estimate; not treated as zero." }
+      ]
+    },
+    {
+      "recipeId": "munakasrulla-pinaatti-tuorejuustolla",
+      "servings": 4,
+      "ingredients": [
+        { "name": "kananmuna", "grams": 330, "fineliRecordId": "fineli-858-2026-10-24", "giRecordId": null, "massEvidence": "6 kpl × Fineli-annosmitta 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained." },
+        { "name": "tuorejuusto", "grams": 100, "fineliRecordId": "fineli-11571-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass", "giMatchEvidence": "No exact published GI match for unflavoured 11% cream cheese is recorded." },
+        { "name": "pinaatti", "grams": 100, "fineliRecordId": "fineli-33456-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass", "giMatchEvidence": "No exact published GI value is recorded for spinach." },
+        { "name": "kuohukerma", "grams": 100, "fineliRecordId": "fineli-631-2026-10-24", "giRecordId": null, "massEvidence": "1 dl × documented 100 g/dl", "giMatchEvidence": "No exact published GI match for 38% whipping cream is recorded." },
+        { "name": "juustoraaste (emmental)", "grams": 50, "fineliRecordId": "fineli-642-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass; Emmental mapping documented for unspecified grated cheese" },
+        { "name": "voi", "grams": 14, "fineliRecordId": "fineli-500-2026-10-24", "giRecordId": null, "massEvidence": "1 rkl × documented 14 g/rkl" },
+        { "name": "suola ja mustapippuri", "grams": null, "fineliRecordId": null, "giRecordId": null, "excludedReason": "Unmeasured seasoning omitted from the batch-1 Fineli estimate; not treated as zero." }
+      ]
+    },
+    {
+      "recipeId": "munatacot-huevos-rancheros",
+      "servings": 2,
+      "ingredients": [
+        { "name": "kananmuna", "grams": 220, "fineliRecordId": "fineli-858-2026-10-24", "giRecordId": null, "massEvidence": "4 kpl × Fineli-annosmitta 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained." },
+        { "name": "voi", "grams": 14, "fineliRecordId": "fineli-500-2026-10-24", "giRecordId": null, "massEvidence": "1 rkl × documented 14 g/rkl" },
+        { "name": "tomaattimurska", "grams": 150, "fineliRecordId": "fineli-352-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass; batch-1 estimate uses fresh tomato as an explicit proxy for tomato crush", "giMatchEvidence": "The published GI 22 is for whole raw tomato and does not match crushed tomato." },
+        { "name": "punasipuli", "grams": 27.5, "fineliRecordId": "fineli-34234-2026-10-24", "giRecordId": null, "massEvidence": "0.5 small onion; documented 55 g per onion, half = 27.5 g", "giMatchEvidence": "No exact published GI value is recorded for red onion." },
+        { "name": "avokado", "grams": 120, "fineliRecordId": "fineli-11057-2026-10-24", "giRecordId": null, "massEvidence": "1 medium avocado × documented 120 g edible weight", "giMatchEvidence": "No exact published GI value is recorded for avocado." },
+        { "name": "cheddarjuusto", "grams": 40, "fineliRecordId": "fineli-698-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass", "giMatchEvidence": "No exact published GI value is recorded for this cheddar product." },
+        { "name": "savupaprika, juustokumina, korianteri, suola ja pippuri", "grams": null, "fineliRecordId": null, "giRecordId": null, "excludedReason": "Unmeasured spices/herb omitted from the batch-1 Fineli estimate; not treated as zero." }
+      ]
+    },
+    {
+      "recipeId": "paprikauunimunakkaat",
+      "servings": 2,
+      "ingredients": [
+        { "name": "punainen paprika", "grams": 340, "fineliRecordId": "fineli-386-2026-10-24", "giRecordId": null, "massEvidence": "2 kpl × documented Fineli mass 170 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for red pepper." },
+        { "name": "kananmuna", "grams": 220, "fineliRecordId": "fineli-858-2026-10-24", "giRecordId": null, "massEvidence": "4 kpl × Fineli-annosmitta 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained." },
+        { "name": "juustoraaste (emmental)", "grams": 40, "fineliRecordId": "fineli-642-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass; Emmental mapping documented for unspecified grated cheese" },
+        { "name": "ruohosipuli", "grams": 7, "fineliRecordId": "fineli-392-2026-10-24", "giRecordId": null, "massEvidence": "1 rkl × documented herb mass 7 g/rkl", "giMatchEvidence": "No exact published GI value is recorded for chives." },
+        { "name": "suola ja mustapippuri", "grams": null, "fineliRecordId": null, "giRecordId": null, "excludedReason": "Unmeasured seasoning omitted from the batch-1 Fineli estimate; not treated as zero." }
+      ]
+    },
+    {
+      "recipeId": "shakshuka",
+      "servings": 2,
+      "ingredients": [
+        { "name": "kananmuna", "grams": 220, "fineliRecordId": "fineli-858-2026-10-24", "giRecordId": null, "massEvidence": "4 kpl × Fineli-annosmitta 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained." },
+        { "name": "punainen paprika", "grams": 170, "fineliRecordId": "fineli-386-2026-10-24", "giRecordId": null, "massEvidence": "1 kpl × documented Fineli mass 170 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for red pepper." },
+        { "name": "keltasipuli", "grams": 55, "fineliRecordId": "fineli-335-2026-10-24", "giRecordId": null, "massEvidence": "1 small onion; documented 55 g per onion", "giMatchEvidence": "No exact published GI value is recorded for onion." },
+        { "name": "tomaattimurska", "grams": 200, "fineliRecordId": "fineli-352-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass; batch-1 estimate uses fresh tomato as an explicit proxy for tomato crush", "giMatchEvidence": "The published GI 22 is for whole raw tomato and does not match crushed tomato." },
+        { "name": "oliiviöljy", "grams": 13.5, "fineliRecordId": "fineli-536-2026-10-24", "giRecordId": null, "massEvidence": "1 rkl × documented 13.5 g/rkl" },
+        { "name": "juustokumina, savupaprika, suola, pippuri, chili ja persilja", "grams": null, "fineliRecordId": null, "giRecordId": null, "excludedReason": "Unmeasured spices/herb omitted from the batch-1 Fineli estimate; not treated as zero." }
+      ]
+    },
+    {
+      "recipeId": "uunimuna-avokadot",
+      "servings": 2,
+      "ingredients": [
+        { "name": "avokado", "grams": 200, "fineliRecordId": "fineli-11057-2026-10-24", "giRecordId": null, "massEvidence": "2 small avocados × documented 100 g edible weight each", "giMatchEvidence": "No exact published GI value is recorded for avocado." },
+        { "name": "kananmuna", "grams": 200, "fineliRecordId": "fineli-858-2026-10-24", "giRecordId": null, "massEvidence": "4 small eggs × documented estimate 50 g each", "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained." },
+        { "name": "sitruunamehu", "grams": null, "fineliRecordId": null, "giRecordId": null, "excludedReason": "Small unweighed lemon juice omitted from the batch-1 Fineli estimate." },
+        { "name": "ruohosipuli", "grams": 7, "fineliRecordId": "fineli-392-2026-10-24", "giRecordId": null, "massEvidence": "1 rkl × documented herb mass 7 g/rkl", "giMatchEvidence": "No exact published GI value is recorded for chives." },
+        { "name": "suola ja mustapippuri", "grams": null, "fineliRecordId": null, "giRecordId": null, "excludedReason": "Unmeasured seasoning omitted from the batch-1 Fineli estimate; not treated as zero." }
+      ]
+    },
+    {
+      "recipeId": "uunimunat-pinaatilla",
+      "servings": 2,
+      "ingredients": [
+        { "name": "kananmuna", "grams": 220, "fineliRecordId": "fineli-858-2026-10-24", "giRecordId": null, "massEvidence": "4 kpl × Fineli-annosmitta 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained." },
+        { "name": "pinaatti", "grams": 60, "fineliRecordId": "fineli-33456-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass", "giMatchEvidence": "No exact published GI value is recorded for spinach." },
+        { "name": "kuohukerma", "grams": 60, "fineliRecordId": "fineli-631-2026-10-24", "giRecordId": null, "massEvidence": "4 rkl × documented 15 g/rkl", "giMatchEvidence": "No exact published GI match for 38% whipping cream is recorded." },
+        { "name": "juustoraaste (emmental)", "grams": 30, "fineliRecordId": "fineli-642-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass; Emmental mapping documented for unspecified grated cheese" },
+        { "name": "voi", "grams": 4.5, "fineliRecordId": "fineli-500-2026-10-24", "giRecordId": null, "massEvidence": "1 tl × documented 4.5 g/tl" },
+        { "name": "suola, mustapippuri ja muskottipähkinä", "grams": null, "fineliRecordId": null, "giRecordId": null, "excludedReason": "Unmeasured seasoning omitted from the batch-1 Fineli estimate; not treated as zero." }
+      ]
+    },
+    {
+      "recipeId": "tortilla-de-patatas",
+      "servings": 4,
+      "ingredients": [
+        { "name": "peruna", "grams": 600, "fineliRecordId": "fineli-205-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed peeled mass", "giMatchEvidence": "No exact GI match is recorded for the recipe's oil-cooked sliced potato. The paper's boiled-potato mean is not a preparation match." },
+        { "name": "keltasipuli", "grams": 55, "fineliRecordId": "fineli-335-2026-10-24", "giRecordId": null, "massEvidence": "1 kpl × documented 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for onion." },
+        { "name": "kananmuna", "grams": 330, "fineliRecordId": "fineli-858-2026-10-24", "giRecordId": null, "massEvidence": "6 kpl × Fineli-annosmitta 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained." },
+        { "name": "oliiviöljy, ruokaan jäävä", "grams": 40.5, "fineliRecordId": "fineli-536-2026-10-24", "giRecordId": null, "massEvidence": "Batch-1 calculation assumes 3 rkl / 40.5 g of the 5 rkl added oil remains in the dish" },
+        { "name": "suola ja mustapippuri", "grams": null, "fineliRecordId": null, "giRecordId": null, "excludedReason": "Unmeasured seasoning omitted from the batch-1 Fineli estimate; not treated as zero." }
+      ]
+    },
+    {
+      "recipeId": "vhh-lihamureke",
+      "servings": 6,
+      "ingredients": [
+        { "name": "naudan jauheliha 17 %", "grams": 800, "fineliRecordId": "fineli-11562-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass; 17% fat assumption documented in batch-1 estimate" },
+        { "name": "kesäkurpitsa", "grams": 200, "fineliRecordId": "fineli-389-2026-10-24", "giRecordId": null, "massEvidence": "Recipe-listed mass", "giMatchEvidence": "No exact published GI value is recorded for zucchini." },
+        { "name": "kananmuna", "grams": 110, "fineliRecordId": "fineli-858-2026-10-24", "giRecordId": null, "massEvidence": "2 kpl × Fineli-annosmitta 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained." },
+        { "name": "kuohukerma", "grams": 100, "fineliRecordId": "fineli-631-2026-10-24", "giRecordId": null, "massEvidence": "1 dl × documented 100 g/dl", "giMatchEvidence": "No exact published GI match for 38% whipping cream is recorded." },
+        { "name": "keltasipuli", "grams": 55, "fineliRecordId": "fineli-335-2026-10-24", "giRecordId": null, "massEvidence": "1 kpl × documented 55 g/kpl", "giMatchEvidence": "No exact published GI value is recorded for onion." },
+        { "name": "suola, mustapippuri ja paprikajauhe", "grams": null, "fineliRecordId": null, "giRecordId": null, "excludedReason": "Unmeasured seasoning omitted from the batch-1 Fineli estimate; not treated as zero." }
+      ]
+    }
+  ]
+}
