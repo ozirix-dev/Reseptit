@@ -74,9 +74,23 @@ test("the Finnish breakfast and dessert collections each contain twenty and ten 
   ].includes(recipe.recipeId));
   assert.equal(breakfast.length, 20);
   assert.equal(desserts.length, 10);
+  const documentedBreakfastNetCarbs = new Map([
+    ["munakokkeli", 0.8],
+    ["munakasmuffinit", 0.6],
+    ["munakasrulla-pinaatti-tuorejuustolla", 2.1],
+    ["munatacot-huevos-rancheros", 4.2],
+    ["paprikauunimunakkaat", 8.0],
+    ["shakshuka", 8.9],
+    ["uunimuna-avokadot", 1.1],
+    ["uunimunat-pinaatilla", 1.3],
+  ]);
   for (const recipe of [...breakfast, ...desserts]) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
-    assert.equal(recipe.nutrition.carbsNetG, null, "unverified nutrition values are not invented");
+    assert.equal(
+      recipe.nutrition.carbsNetG,
+      documentedBreakfastNetCarbs.get(recipe.recipeId) ?? null,
+      "only recipes with documented nutrition estimates have values",
+    );
   }
 });
 
