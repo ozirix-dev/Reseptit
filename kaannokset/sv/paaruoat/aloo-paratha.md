@@ -6,6 +6,10 @@ category: paaruoka
 language: sv
 status: published
 servings: 4
+carbs_net_per_serving_g: 71
+carbs_total_per_serving_g: 75.02
+protein_per_serving_g: 10.63
+fat_per_serving_g: 8.78
 time_total_min: 60
 main_ingredient:
   - peruna

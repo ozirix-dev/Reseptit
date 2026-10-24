@@ -231,19 +231,21 @@ ainekohtaiset muunnokset, valmistussaannon ja tarkistetut tietueet.
 
 ## Reseptiarvioiden erät, 24.10.2026
 
-Neljän erän ravintoarviot, Fineli-tietueiden ID:t ja yksikköoletukset on
+Viiden erän ravintoarviot, Fineli-tietueiden ID:t ja yksikköoletukset on
 kirjattu seuraaviin muistioihin:
 
 - `estimates-2026-10-24.md` — erä 1, 10 reseptiä.
 - `estimates-2026-10-24-batch-2.md` — erä 2, 20 reseptiä.
 - `estimates-2026-10-24-batch-3.md` — erä 3, 10 reseptiä.
 - `estimates-2026-10-24-batch-4.md` — erä 4, 10 reseptiä.
+- `estimates-2026-10-24-batch-5.md` — erä 5, 12 reseptiä; paikallinen Fineli Release 20 täydennettynä dokumentoiduilla AFCD- ja pakkaustiedoilla.
+- `tools/calculate-nutrition-batch5.py` — erän 5 toistettava laskentatiedosto.
 
 Luvut ovat toimituksellisia arvioita; niitä ei tuoteta julkaisun buildissa
-automaattisesti. Kokonaishiilihydraatit on lisätty yhteensä 50 reseptille
+automaattisesti. Kokonaishiilihydraatit on lisätty yhteensä 62 reseptille
 Finelin CHO-, FIBT- ja POLYL-komponenttien pohjalta. Lähdepoiminta on
-`food-records.json`-tiedostossa, ja Fineli-attribuutio sekä lisenssi on
-kirjattu jokaiseen muistioon.
+`food-records.json`-tiedostossa tai eräkohtaisessa paikallisessa Fineli-
+viitepoiminnassa. Fineli-attribuutio ja lisenssi kirjataan jokaiseen muistioon.
 
 ## Nykyisten lukujen luokitus
 

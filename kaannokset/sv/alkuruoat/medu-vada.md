@@ -6,6 +6,10 @@ category: alkuruoka
 language: sv
 status: published
 servings: 4
+carbs_net_per_serving_g: 30.54
+carbs_total_per_serving_g: 36.2
+protein_per_serving_g: 15.44
+fat_per_serving_g: 13.25
 time_total_min: 300
 main_ingredient:
   - urad-linssi

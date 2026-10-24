@@ -6,6 +6,10 @@ category: paaruoka
 language: sv
 diet_class: vhh_tiukka
 servings: 4
+carbs_net_per_serving_g: 2.03
+carbs_total_per_serving_g: 2.97
+protein_per_serving_g: 36.76
+fat_per_serving_g: 50.77
 main_ingredient:
   - lohi
   - smetana

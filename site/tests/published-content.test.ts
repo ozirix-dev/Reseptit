@@ -190,6 +190,23 @@ test("the twenty Indian recipes are published in Finnish with their image assets
   }
 });
 
+test("the twelve published batch-five recipes expose all four documented nutrition values in every locale", () => {
+  const expected = new Map([
+    ["medu-vada", [30.54, 36.2, 15.44, 13.25]], ["pani-puri", [50.2, 55, 9.7, 7.81]],
+    ["samosa", [73.37, 78.17, 11.99, 27.48]], ["vada-pav", [55, 63.21, 11.64, 14.48]],
+    ["aloo-paratha", [71, 75.02, 10.63, 8.78]], ["butter-chicken", [7.79, 8.45, 37.43, 40.44]],
+    ["chole-bhature", [105.3, 118.4, 27.69, 28.39]], ["ketopizza-pofiber-pohjalla", [4.1, 7.72, 34.32, 31.79]],
+    ["lohikeitto-kuohukermalla", [17.8, 20.16, 23.39, 38.64]], ["uunilohi-smetanakuorrutteella", [2.03, 2.97, 36.76, 50.77]],
+    ["vhh-lohikeitto-kukkakaalilla", [6.16, 9.66, 29.66, 41.89]], ["gulab-jamun", [93.18, 93.87, 14.96, 16.36]],
+  ]);
+  const recipes = siteContent.recipes.filter(recipe => expected.has(recipe.recipeId));
+  assert.equal(recipes.length, expected.size * 4);
+  for (const recipe of recipes) {
+    const values = expected.get(recipe.recipeId)!;
+    assert.deepEqual([recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG], values, `${recipe.recipeId}/${recipe.locale}`);
+  }
+});
+
 test("the twenty Chinese recipes are published in Finnish with their image assets", async () => {
   const expectedIds = [
     "baozi", "char-siu", "chow-mein", "congee-riisipuuro", "dan-dan-nuudelit", "dim-sum",
