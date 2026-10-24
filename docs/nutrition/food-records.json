@@ -9380,5 +9380,400 @@
       "protein": 0,
       "fat": 0
     }
+  },
+  {
+    "id": "fineli-11521-release-20",
+    "name": "RIISI PITKÄJYVÄINEN, PUUROUTUMATON",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11521",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "dry uncooked long-grain white rice",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 79,
+      "FIBT": 1,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 79,
+      "fibre": 1,
+      "polyols": 0,
+      "protein": 8.13,
+      "fat": 1.03
+    }
+  },
+  {
+    "id": "afcd-F000448-release-3",
+    "name": "Bean, red kidney, canned, drained",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "canned red kidney beans, drained",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 14,
+      "fibre": 6.5,
+      "polyols": 0,
+      "protein": 6.6,
+      "fat": 0.6
+    }
+  },
+  {
+    "id": "afcd-F010466-release-3",
+    "name": "Thyme, fresh, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "fresh thyme leaves",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 1.1,
+      "fibre": 14,
+      "polyols": 0,
+      "protein": 5.6,
+      "fat": 1.7
+    }
+  },
+  {
+    "id": "afcd-F007422-release-3",
+    "name": "Prawn, banana, wild, flesh, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "raw peeled prawn flesh",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 13.2,
+      "fat": 0.6
+    }
+  },
+  {
+    "id": "fineli-30315-release-20",
+    "name": "KANALIEMI, LAIMENNETTU",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30315",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "prepared diluted chicken stock",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0.427,
+      "FIBT": 0.029,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 0.427,
+      "fibre": 0.029,
+      "polyols": 0,
+      "protein": 0.27,
+      "fat": 0.792
+    }
+  },
+  {
+    "id": "afcd-F006321-release-3",
+    "name": "Parsley, continental, fresh, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "fresh continental parsley, chopped",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 1.1,
+      "fibre": 5,
+      "polyols": 0,
+      "protein": 3.9,
+      "fat": 0.7
+    }
+  },
+  {
+    "id": "fineli-922-release-20",
+    "name": "VESI, VESIJOHTOVESI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "tap water",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "fineli-300-release-20",
+    "name": "PORKKANA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/300",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "raw medium carrot, edible portion",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 5.56,
+      "FIBT": 2.4,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 5.56,
+      "fibre": 2.4,
+      "polyols": 0,
+      "protein": 0.63,
+      "fat": 0.2
+    }
+  },
+  {
+    "id": "fineli-389-release-20",
+    "name": "KESÄKURPITSA, ZUCCHINI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/389",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "raw medium zucchini, edible portion",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 2.5,
+      "FIBT": 2,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 2.5,
+      "fibre": 2,
+      "polyols": 0,
+      "protein": 0.65,
+      "fat": 0.4
+    }
+  },
+  {
+    "id": "fineli-28946-release-20",
+    "name": "JAUHELIHA, SIAN, RASVAA 16 %",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/28946",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "raw pork mince, 16% fat",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 18.81,
+      "fat": 15.7
+    }
+  },
+  {
+    "id": "fineli-11089-release-20",
+    "name": "KIKHERNE SUOLATTOMASSA VEDESSÄ",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11089",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "cooked chickpeas in unsalted water, drained",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 17.6,
+      "FIBT": 5,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 17.6,
+      "fibre": 5,
+      "polyols": 0,
+      "protein": 8.44,
+      "fat": 2.5
+    }
+  },
+  {
+    "id": "fineli-1056-release-20",
+    "name": "VAALEA LEIPÄ, PITALEIPÄ",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1056",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "plain wheat pita bread",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 46.08,
+      "FIBT": 2.322,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 46.08,
+      "fibre": 2.322,
+      "polyols": 0,
+      "protein": 7.49,
+      "fat": 0.979
+    }
+  },
+  {
+    "id": "fineli-11087-release-20",
+    "name": "TAHINI, SEESAMTAHNA, EI LISÄTTYÄ SUOLAA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11087",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "unsalted sesame tahini",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0.9,
+      "FIBT": 6.8,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 0.9,
+      "fibre": 6.8,
+      "polyols": 0,
+      "protein": 21.81,
+      "fat": 58
+    }
+  },
+  {
+    "id": "fineli-156-release-20",
+    "name": "RIISI PUUROUTUVA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/156",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "dry uncooked short-grain rice",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 75.6,
+      "FIBT": 2.3,
+      "POLYL": null
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "Fineli Rel20 has no reported polyol value for this record.",
+    "per100g": {
+      "carbohydrate": 75.6,
+      "fibre": 2.3,
+      "polyols": null,
+      "protein": 6.06,
+      "fat": 0.7
+    }
+  },
+  {
+    "id": "fineli-372-release-20",
+    "name": "PAPU, VIHREÄ TAITEPAPU, TUORE",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/372",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "fresh green beans, raw",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 4.754,
+      "FIBT": 2.4,
+      "POLYL": null
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "Fineli Rel20 has no reported polyol value for this record.",
+    "per100g": {
+      "carbohydrate": 4.754,
+      "fibre": 2.4,
+      "polyols": null,
+      "protein": 2.052,
+      "fat": 0.262
+    }
   }
 ]
