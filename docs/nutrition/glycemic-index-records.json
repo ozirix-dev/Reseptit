@@ -1,5 +1,5 @@
 {
-  "sourcePolicy": "Fineli supplies available carbohydrate quantities only. GI evidence is stored as individual, traceable records: STRONG records must be published, glucose-scale, ISO 26642-confirmed and preparation-matched; SUPPLEMENTARY records are for internal comparison and never produce a public GL. Do not copy complete source tables or substitute unmatched foods/preparations.",
+  "sourcePolicy": "Fineli supplies available carbohydrate quantities only. GI evidence is stored as individual, traceable records: STRONG records must be published, glucose-scale, ISO 26642-confirmed and preparation-matched; SUPPLEMENTARY records are for internal comparison and never produce a public GL. ISO 26642 says only tested foods receive GI values, advises against testing foods with <10 g glycaemic carbohydrate per usual serving, and does not define a component-weighted sum as a measured GI of a heterogeneous recipe. This pilot's formula is an ingredient-sum estimate, not a measurement of the prepared meal. Do not copy complete source tables or substitute unmatched foods/preparations.",
   "sources": [
     {
       "id": "international-tables-2021",
@@ -20,7 +20,28 @@
       "title": "A glycaemic index compendium of non-western foods",
       "url": "https://doi.org/10.1038/s41387-020-00145-w",
       "year": 2021,
-      "use": "Regional-food discovery; promote a value to STRONG only when the underlying record independently satisfies ISO 26642 criteria."
+      "use": "Regional-food discovery; Table 1 is available under CC BY 4.0. Promote a value to STRONG only when the underlying record independently satisfies ISO 26642 criteria."
+    },
+    {
+      "id": "iso-26642-standard",
+      "title": "ISO 26642:2010 Food products — Determination of the glycaemic index (GI) and recommendation for food classification",
+      "url": "https://committee.iso.org/standard/43633.html",
+      "year": 2010,
+      "use": "Method and eligibility standard. Clauses 4 and 5.5.1 restrict GI to tested foods and advise against GI testing below 10 g glycaemic carbohydrate per usual serving; clause 4 says heterogeneous-food GI is measured under the standard, not computed from component GIs."
+    },
+    {
+      "id": "international-tables-2002",
+      "title": "International table of glycemic index and glycemic load values: 2002",
+      "url": "https://doi.org/10.1093/ajcn/76.1.5",
+      "year": 2002,
+      "use": "Context for why the tables omit GI values for eggs, cheese, avocado and salad vegetables: these foods contain little or no carbohydrate and do not provide practical 25- or 50-g test portions."
+    },
+    {
+      "id": "fried-potato-evoo-2016",
+      "title": "Glycemic Index of Two Different Fried Potato Varieties Cultivated Under Organic Fertilization Conditions",
+      "url": "https://doi.org/10.12944/CRNFSJ.4.1.02",
+      "year": 2016,
+      "use": "Primary-study discovery candidate for fried potato: eight participants and cultivar-specific sliced potato fried in extra-virgin olive oil. Not ISO-qualified and not preparation-matched to tortilla potato."
     }
   ],
   "records": [
@@ -112,6 +133,144 @@
         "qualityEvidence": "Peer-reviewed primary source and n=10 are reported, but the record does not establish all ISO 26642 protocol requirements or precise cooking conditions."
       },
       "note": "Candidate only. Cooking description is insufficient to match the tortilla preparation."
+    },
+    {
+      "id": "potato-fried-evoo-lady-rosetta-gi-114",
+      "gi": 114,
+      "foodKey": "potato",
+      "preparationKey": "sliced-fried-extra-virgin-olive-oil-lady-rosetta",
+      "food": "Lady Rosetta potato, sliced",
+      "preparation": "Slices fried in extra-virgin olive oil",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "Glycemic Index of Two Different Fried Potato Varieties Cultivated Under Organic Fertilization Conditions",
+        "url": "https://doi.org/10.12944/CRNFSJ.4.1.02",
+        "table": "Results; Lady Rosetta fried in extra-virgin olive oil",
+        "year": 2016,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 8,
+        "referenceFood": "Glucose",
+        "testDurationHours": 2,
+        "qualityEvidence": "The study reports GI 114 ± 15 after a 50-g available-carbohydrate portion and standard 2-hour sampling, but tested only eight healthy men, below the ISO minimum of ten. Variety and sliced-fry preparation are specified; the recipe instead slow-cooks potato slices covered in oil, then sets them in egg."
+      },
+      "note": "Exploratory candidate only; n=8 does not meet the source policy, and fried slices do not match the recipe preparation."
+    },
+    {
+      "id": "potato-fried-evoo-spunta-gi-83",
+      "gi": 83,
+      "foodKey": "potato",
+      "preparationKey": "sliced-fried-extra-virgin-olive-oil-spunta",
+      "food": "Spunta potato, sliced",
+      "preparation": "Slices fried in extra-virgin olive oil",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "Glycemic Index of Two Different Fried Potato Varieties Cultivated Under Organic Fertilization Conditions",
+        "url": "https://doi.org/10.12944/CRNFSJ.4.1.02",
+        "table": "Results; Spunta fried in extra-virgin olive oil",
+        "year": 2016,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 8,
+        "referenceFood": "Glucose",
+        "testDurationHours": 2,
+        "qualityEvidence": "The study reports GI 83 ± 12 after a 50-g available-carbohydrate portion and standard 2-hour sampling, but tested only eight healthy men, below the ISO minimum of ten. Variety and sliced-fry preparation are specified; the recipe instead slow-cooks potato slices covered in oil, then sets them in egg."
+      },
+      "note": "Exploratory candidate only; n=8 does not meet the source policy, and fried slices do not match the recipe preparation."
+    },
+    {
+      "id": "potato-crisp-fried-china-nonwestern-gi-60-3",
+      "gi": 60.3,
+      "foodKey": "potato",
+      "preparationKey": "potato-crisp-oil-fried",
+      "food": "Potato crisp, oil fried",
+      "preparation": "Potato crisps, oil fried; China",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "Glycemic index of cereals and tubers produced in China",
+        "url": "https://doi.org/10.3748/wjg.v12.i21.3430",
+        "table": "Table 1, entry 442 in the 2021 non-western compendium",
+        "year": 2006,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 10,
+        "referenceFood": "Glucose",
+        "testDurationHours": 2,
+        "qualityEvidence": "The compendium reports GI 60.3 ± 7.0, n=10 and glucose/2 h; the primary record does not establish ISO compliance in this review, and crisp/chip processing is unlike tortilla potato."
+      },
+      "note": "Candidate only. A potato crisp is not a slow-cooked potato slice set in egg."
+    },
+    {
+      "id": "potato-steamed-nishiyutaka-nonwestern-gi-64",
+      "gi": 64,
+      "foodKey": "potato",
+      "preparationKey": "steamed-nishiyutaka",
+      "food": "Nishiyutaka potato",
+      "preparation": "Steamed; Japan",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "Consideration of the validity of glycemic index using blood glucose and insulin levels and breath hydrogen excretion in healthy subjects",
+        "url": "https://doi.org/10.1016/j.ijdm.2010.05.004",
+        "table": "Table 1, row 344 in the 2021 non-western compendium",
+        "year": 2010,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 12,
+        "referenceFood": "Glucose",
+        "testDurationHours": 2,
+        "qualityEvidence": "The compendium lists GI 64 with SD 15, n=12, 50 g available carbohydrate and glucose/2 h. The food is steamed potato cultivar Nishiyutaka, not oil-cooked tortilla potato; full ISO protocol was not confirmed here."
+      },
+      "note": "Candidate only. A steamed cultivar-specific potato is not preparation-matched to tortilla."
+    },
+    {
+      "id": "potato-steamed-ainoaka-nonwestern-gi-63",
+      "gi": 63,
+      "foodKey": "potato",
+      "preparationKey": "steamed-ainoaka",
+      "food": "Ainoaka potato",
+      "preparation": "Steamed; Japan",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "Consideration of the validity of glycemic index using blood glucose and insulin levels and breath hydrogen excretion in healthy subjects",
+        "url": "https://doi.org/10.1016/j.ijdm.2010.05.004",
+        "table": "Table 1, row 346 in the 2021 non-western compendium",
+        "year": 2010,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 12,
+        "referenceFood": "Glucose",
+        "testDurationHours": 2,
+        "qualityEvidence": "The compendium lists GI 63 with SD 19, n=12, 50 g available carbohydrate and glucose/2 h. The food is steamed potato cultivar Ainoaka, not oil-cooked tortilla potato; full ISO protocol was not confirmed here."
+      },
+      "note": "Candidate only. A steamed cultivar-specific potato is not preparation-matched to tortilla."
+    },
+    {
+      "id": "potato-steamed-dejima-nonwestern-gi-54",
+      "gi": 54,
+      "foodKey": "potato",
+      "preparationKey": "steamed-dejima",
+      "food": "Dejima potato",
+      "preparation": "Steamed; Japan",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "Consideration of the validity of glycemic index using blood glucose and insulin levels and breath hydrogen excretion in healthy subjects",
+        "url": "https://doi.org/10.1016/j.ijdm.2010.05.004",
+        "table": "Table 1, row 348 in the 2021 non-western compendium",
+        "year": 2010,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 12,
+        "referenceFood": "Glucose",
+        "testDurationHours": 2,
+        "qualityEvidence": "The compendium lists GI 54 with SD 17, n=12, 50 g available carbohydrate and glucose/2 h. The food is steamed potato cultivar Dejima, not oil-cooked tortilla potato; full ISO protocol was not confirmed here."
+      },
+      "note": "Candidate only. A steamed cultivar-specific potato is not preparation-matched to tortilla."
     }
   ]
 }
