@@ -5,10 +5,10 @@ url_slug: kermainen-lohipata
 category: paaruoka
 language: sv
 diet_class: keto
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 8
-protein_per_serving_g: 29
-fat_per_serving_g: 35
+carbs_net_per_serving_g: 4.79
+carbs_total_per_serving_g: 6.08
+protein_per_serving_g: 35.85
+fat_per_serving_g: 52.25
 servings: 4
 main_ingredient:
   - kala
@@ -31,37 +31,36 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: laxfilé
-  - amount: 1
-    unit: ""
-    item: lök
-    note: liten
-  - amount: 2
-    unit: ""
-    item: vitlöksklyftor
+    item: "rå odlad laxfilé"
+  - amount: 70
+    unit: g
+    item: "gul lök"
+  - amount: 7
+    unit: g
+    item: "vitlök"
   - amount: 200
     unit: g
-    item: färskost
-  - amount: 2
-    unit: dl
-    item: vispgrädde
-  - amount: 1
-    unit: msk
+    item: "naturell färskost, 11 % fett"
+  - amount: 200
+    unit: g
+    item: "vispgrädde, 38 % fett"
+  - amount: 14
+    unit: g
     item: smör
-  - amount: 1
-    unit: tsk
+  - amount: 5
+    unit: g
     item: citronsaft
-  - amount: 1
-    unit: tsk
-    item: Dijonsenap
-  - amount: 1
-    unit: tsk
+  - amount: 5
+    unit: g
+    item: "senap"
+  - amount: 5
+    unit: g
     item: salt
-  - amount: 0.5
-    unit: tsk
+  - amount: 1
+    unit: g
     item: svartpeppar
   - amount: 1
-    unit: tsk
+    unit: g
     item: torkad dill
   - amount: 150
     unit: g

@@ -269,6 +269,24 @@ test("the ten evidence-backed Thai batch-eight recipes expose synchronized value
   }
 });
 
+test("the four evidence-backed batch-nine recipes expose synchronized values in all four locales", () => {
+  const expected = new Map([
+    ["italian-pata", [5.66, 8.58, 32.07, 32.56]],
+    ["jauheliha-makaronilaatikko", [37.18, 38.79, 47.63, 27.93]],
+    ["kermainen-lohipata", [4.79, 6.08, 35.85, 52.25]],
+    ["keto-kauralesesampylat", [3.19, 6.77, 8.98, 12.41]],
+  ]);
+  const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
+  assert.equal(recipes.length, expected.size * 4);
+  for (const recipe of recipes) {
+    assert.deepEqual(
+      [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],
+      expected.get(recipe.recipeId),
+      `${recipe.recipeId}/${recipe.locale}`,
+    );
+  }
+});
+
 test("the twenty Chinese recipes are published in Finnish with their image assets", async () => {
   const expectedIds = [
     "baozi", "char-siu", "chow-mein", "congee-riisipuuro", "dan-dan-nuudelit", "dim-sum",

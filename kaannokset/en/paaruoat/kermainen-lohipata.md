@@ -5,10 +5,10 @@ url_slug: kermainen-lohipata
 category: paaruoka
 language: en
 diet_class: keto
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 8
-protein_per_serving_g: 29
-fat_per_serving_g: 35
+carbs_net_per_serving_g: 4.79
+carbs_total_per_serving_g: 6.08
+protein_per_serving_g: 35.85
+fat_per_serving_g: 52.25
 servings: 4
 main_ingredient:
   - kala
@@ -31,37 +31,36 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: salmon fillet
-  - amount: 1
-    unit: ""
-    item: onion
-    note: small
-  - amount: 2
-    unit: ""
-    item: cloves of garlic
+    item: "raw farmed salmon fillet"
+  - amount: 70
+    unit: g
+    item: "yellow onion"
+  - amount: 7
+    unit: g
+    item: "garlic"
   - amount: 200
     unit: g
-    item: cream cheese
-  - amount: 2
-    unit: dl
-    item: whipping cream
-  - amount: 1
-    unit: tbsp
+    item: "plain cream cheese, 11% fat"
+  - amount: 200
+    unit: g
+    item: "whipping cream, 38% fat"
+  - amount: 14
+    unit: g
     item: butter
-  - amount: 1
-    unit: tsp
+  - amount: 5
+    unit: g
     item: lemon juice
-  - amount: 1
-    unit: tsp
-    item: Dijon mustard
-  - amount: 1
-    unit: tsp
+  - amount: 5
+    unit: g
+    item: "prepared mustard"
+  - amount: 5
+    unit: g
     item: salt
-  - amount: 0.5
-    unit: tsp
+  - amount: 1
+    unit: g
     item: black pepper
   - amount: 1
-    unit: tsp
+    unit: g
     item: dried dill
   - amount: 150
     unit: g

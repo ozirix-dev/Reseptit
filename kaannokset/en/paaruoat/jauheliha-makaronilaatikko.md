@@ -7,10 +7,11 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/jauheliha-makaronilaatikko.md
 translation_of: jauheliha-makaronilaatikko
-protein_per_serving_g: 45
-carbs_total_per_serving_g: 38
-fat_per_serving_g: 35
+protein_per_serving_g: 47.63
+carbs_total_per_serving_g: 38.79
+fat_per_serving_g: 27.93
 servings: 8
+carbs_net_per_serving_g: 37.18
 main_ingredient:
   - naudanliha
   - raejuusto
@@ -31,48 +32,47 @@ image:
 ingredients:
   - amount: 400
     unit: g
-    item: macaroni
+    item: "dry macaroni"
   - amount: 600
     unit: g
-    item: lean minced beef
-  - amount: 1
-    unit: ""
-    item: onion
-    note: small
-  - amount: 1
-    unit: tbsp
+    item: "7% beef mince"
+  - amount: 70
+    unit: g
+    item: "yellow onion"
+  - amount: 13.5
+    unit: g
     item: oil
   - amount: 500
     unit: g
-    item: cottage cheese
+    item: "cottage cheese, 2–5% fat"
   - amount: 6
-    unit: ""
+    unit: pcs
     item: eggs
-  - amount: 2
-    unit: dl
-    item: milk
-  - amount: 2
-    unit: dl
-    item: cooking cream
   - amount: 200
     unit: g
-    item: grated cheese
+    item: "1.5% milk"
+  - amount: 200
+    unit: g
+    item: "15% cooking cream"
+  - amount: 200
+    unit: g
+    item: "grated Emmental cheese"
     note: for the egg mixture
   - amount: 100
     unit: g
-    item: grated cheese
+    item: "grated Emmental cheese"
     note: for the topping
-  - amount: 1.5
-    unit: tsp
+  - amount: 3
+    unit: g
     item: garlic powder
   - amount: 1
-    unit: tsp
+    unit: g
     item: black pepper
-  - amount: 1
-    unit: tsp
+  - amount: 2
+    unit: g
     item: paprika
-  - amount: null
-    unit: ""
+  - amount: 6
+    unit: g
     item: salt
     note: to taste
 status: published

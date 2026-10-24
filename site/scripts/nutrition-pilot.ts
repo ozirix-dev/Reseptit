@@ -1,6 +1,6 @@
 import { calculate, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
 export function salmonScenario(ingredients: IngredientInput[], records: FoodRecord[]) {
-  const matches = ingredients.filter((i) => i.item === "lohifilee");
+  const matches = ingredients.filter((i) => i.item.includes("lohifilee"));
   const foods = records.filter((r) => r.id === "fineli-34255-search-snapshot-2026-10-22");
   if (matches.length !== 1 || foods.length !== 1 || matches[0].unit !== "g" || !(matches[0].amount! > 0)) throw Error("Salmon pilot requires one identified lohifilee gram input and one identified Fineli record");
   const record = foods[0];

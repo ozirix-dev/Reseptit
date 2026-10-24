@@ -5,6 +5,7 @@ url_slug: italian-pata
 category: paaruoka
 language: sv
 servings: 4
+carbs_net_per_serving_g: 5.66
 time_total_min: 60
 main_ingredient:
   - jauheliha
@@ -16,9 +17,9 @@ tags:
   - ugnsrätt
   - köttfärs
   - zucchini
-carbs_total_per_serving_g: 7.5
-fat_per_serving_g: 32.5
-protein_per_serving_g: 35
+carbs_total_per_serving_g: 8.58
+fat_per_serving_g: 32.56
+protein_per_serving_g: 32.07
 image:
   src: paaruoat/italian-pata.webp
   alt: En italiensk köttfärs-zucchinigryta toppad med smält mozzarella och basilika
@@ -27,37 +28,35 @@ image:
 ingredients:
   - amount: 500
     unit: g
-    item: köttfärs med högre fetthalt
+    item: "nötfärs med 17 % fett"
   - amount: 200
     unit: g
-    item: tomatsås eller krossade tomater
+    item: "krossade tomater"
   - amount: 2
-    unit: tsk
+    unit: g
     item: torkad oregano
-  - amount: 1
-    unit: tsk
+  - amount: 5
+    unit: g
     item: salt
-  - amount: 0.5
-    unit: tsk
-    item: svartpeppar
   - amount: 1
-    unit: "st"
-    item: vitlöksklyfta
-    note: tillsätt mer efter smak om du vill
+    unit: g
+    item: svartpeppar
+  - amount: 3.5
+    unit: g
+    item: "vitlök"
   - amount: 400
     unit: g
     item: zucchini
-  - amount: 1
-    unit: ""
-    item: spetsig paprika
+  - amount: 120
+    unit: g
+    item: "röd paprika"
   - amount: 150
     unit: g
-    item: riven ost
-    note: t.ex. mozzarella
-  - amount: null
-    unit: ""
+    item: "riven mozzarella"
+  - amount: 12
+    unit: g
     item: olivolja
-    note: ovanpå serveringen
+    note: "12 g för hela formen; näringsvärdet beräknas på denna mängd"
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/italian-pata.md
@@ -76,13 +75,13 @@ Kryddad köttfärs, zucchini, spetsig paprika och mozzarella bakas tillsammans i
 
 1. Värm ugnen till 225 grader.
 2. Bryn köttfärsen i en panna. Tillsätt pressad vitlök, oregano, salt och svartpeppar.
-3. Tillsätt tomatsås eller krossade tomater och låt såsen sjuda en kort stund.
+3. Tillsätt de krossade tomaterna och låt såsen sjuda en kort stund.
 4. Skölj och grovriv zucchinin. Fördela den rivna zucchinin i en stor ugnsform.
 5. Tärna paprikan fint och lägg den i formen.
 6. Smaka av såsen och tillsätt mer salt vid behov. Häll köttfärssåsen i formen och blanda ordentligt med grönsakerna.
 7. Tillsätt det mesta av den rivna osten och blanda. Lämna lite ost på toppen för att strö över.
 8. Grädda i 225 grader i ca 20 minuter.
-9. Låt grytan vila i minst 15 minuter innan servering. Servera med en sallad och ringla olivolja över rätten.
+9. Låt grytan vila i minst 15 minuter innan servering. Servera med sallad och fördela totalt 12 g olivolja över portionerna.
 
 ## Anteckningar
 

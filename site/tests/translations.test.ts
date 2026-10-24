@@ -9,7 +9,8 @@ test("review backlog fixes stay aligned in all four recipe locales", async () =>
   for (const locale of ["fi", "en", "sv", "th"] as const) {
     const get = (id: string) => all.find(r => r.data.recipe_id === id && r.data.language === locale)!;
     const garlic = get("italian-pata").data.ingredients[5];
-    assert.equal(garlic.amount, 1);
+    assert.equal(garlic.amount, 3.5);
+    assert.equal(garlic.unit, "g");
     assert.doesNotMatch(garlic.note ?? "", /1[–-]2/);
     const pizza = get("ketopizza-pofiber-pohjalla");
     assert.match(pizza.data.ingredients.at(-1)?.note ?? "", /50/);

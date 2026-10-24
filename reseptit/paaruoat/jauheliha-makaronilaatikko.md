@@ -4,10 +4,11 @@ recipe_id: jauheliha-makaronilaatikko
 url_slug: jauheliha-makaronilaatikko
 category: paaruoka
 language: fi
-protein_per_serving_g: 45
-carbs_total_per_serving_g: 38
-fat_per_serving_g: 35
+protein_per_serving_g: 47.63
+carbs_total_per_serving_g: 38.79
+fat_per_serving_g: 27.93
 servings: 8
+carbs_net_per_serving_g: 37.18
 main_ingredient:
   - naudanliha
   - raejuusto
@@ -28,48 +29,47 @@ image:
 ingredients:
   - amount: 400
     unit: g
-    item: makaronia
+    item: "kuivattua makaronia"
   - amount: 600
     unit: g
-    item: vähärasvaista jauhelihaa
-  - amount: 1
-    unit: ""
-    item: sipuli
-    note: pieni
-  - amount: 1
-    unit: rkl
+    item: "7 % naudan jauhelihaa"
+  - amount: 70
+    unit: g
+    item: "keltasipulia"
+  - amount: 13.5
+    unit: g
     item: öljyä
   - amount: 500
     unit: g
-    item: raejuustoa
+    item: "raejuustoa, rasvaa 2–5 %"
   - amount: 6
-    unit: ""
+    unit: kpl
     item: kananmunaa
-  - amount: 2
-    unit: dl
-    item: maitoa
-  - amount: 2
-    unit: dl
-    item: ruokakermaa
   - amount: 200
     unit: g
-    item: juustoraastetta
+    item: "kevytmaitoa, rasvaa 1,5 %"
+  - amount: 200
+    unit: g
+    item: "ruokakermaa, rasvaa 15 %"
+  - amount: 200
+    unit: g
+    item: "raastettua emmentaljuustoa"
     note: munaseokseen
   - amount: 100
     unit: g
-    item: juustoraastetta
+    item: "raastettua emmentaljuustoa"
     note: pinnalle
-  - amount: 1.5
-    unit: tl
+  - amount: 3
+    unit: g
     item: valkosipulijauhetta
   - amount: 1
-    unit: tl
+    unit: g
     item: mustapippuria
-  - amount: 1
-    unit: tl
+  - amount: 2
+    unit: g
     item: paprikajauhetta
-  - amount: null
-    unit: ""
+  - amount: 6
+    unit: g
     item: suolaa
     note: maun mukaan
 translation_languages:

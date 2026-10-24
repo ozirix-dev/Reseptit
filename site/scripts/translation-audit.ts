@@ -62,7 +62,7 @@ async function readRecipes(paths: string[]): Promise<{ path: string; data: Front
 
 function canonicalUnit(unit: string, locale: string): string | null {
   const normalized = unit.trim().toLocaleLowerCase().replaceAll(".", "");
-  if (["", "kpl", "kpl.", "piece", "pieces", "each", "clove", "cloves", "st", "st.", "stk", "stk.", "ลูก", "กลีบ", "ฟอง", "ชิ้น", "ผล"].includes(normalized)) return "each";
+  if (["", "kpl", "kpl.", "pc", "pcs", "piece", "pieces", "each", "clove", "cloves", "st", "st.", "stk", "stk.", "ลูก", "กลีบ", "ฟอง", "ชิ้น", "ผล"].includes(normalized)) return "each";
   const common: Record<string, string> = {
     g: "g", gr: "g", กรัม: "g", kg: "kg", ml: "ml", dl: "dl", เดซิลิตร: "dl", l: "l", ลิตร: "l", cl: "cl", เซนติเมตร: "cm",
     viipaletta: "slice", viipale: "slice", slices: "slice", slice: "slice", skivor: "slice", skiva: "slice", แผ่น: "slice",
