@@ -57,11 +57,13 @@ def main() -> int:
     food_data = {row["FOODID"]: row for row in base_foods}
     values: dict[str, dict[str, float | None]] = defaultdict(dict)
     provenance: dict[str, dict[str, dict[str, str]]] = defaultdict(dict)
+    component_keys: list[tuple[str, str]] = []
     for row in component_values:
         code = row["EUFDNAME"]
         if code not in COMPONENTS:
             continue
         food_id = row["FOODID"]
+        component_keys.append((food_id, code))
         values[food_id][COMPONENTS[code]] = number(row["BESTLOC"])
         provenance[food_id][COMPONENTS[code]] = {
             "acquisition_type": row["ACQTYPE"],
@@ -69,8 +71,10 @@ def main() -> int:
             "method_indicator": row["METHIND"],
         }
     units: dict[str, dict[str, float]] = defaultdict(dict)
+    unit_keys: list[tuple[str, str]] = []
     for row in portions:
         if row["FOODUNIT"] in UNITS:
+            unit_keys.append((row["FOODID"], row["FOODUNIT"]))
             mass = number(row["MASS"])
             if mass is not None:
                 units[row["FOODID"]][row["FOODUNIT"]] = mass
@@ -96,6 +100,8 @@ def main() -> int:
     names_norm = [normalize(food["name"]) for food in foods]
     duplicate_ids = [key for key, count in Counter(ids).items() if count > 1]
     duplicate_names = [key for key, count in Counter(names_norm).items() if count > 1]
+    duplicate_component_rows = [key for key, count in Counter(component_keys).items() if count > 1]
+    duplicate_portion_rows = [key for key, count in Counter(unit_keys).items() if count > 1]
     invalid = []
     for food in foods:
         for field, value in food["per100g"].items():
@@ -104,8 +110,14 @@ def main() -> int:
         for unit, value in food["portion_mass_g"].items():
             if value <= 0 or value > 10000:
                 invalid.append((food["source_id"], unit, value))
-    if duplicate_ids or invalid:
-        raise SystemExit(f"Validation failed: duplicate IDs={duplicate_ids}; invalid values={invalid[:10]}")
+    if duplicate_ids or duplicate_component_rows or duplicate_portion_rows or invalid:
+        raise SystemExit(
+            "Validation failed: "
+            f"duplicate IDs={duplicate_ids}; "
+            f"duplicate component rows={duplicate_component_rows[:10]}; "
+            f"duplicate portion rows={duplicate_portion_rows[:10]}; "
+            f"invalid values={invalid[:10]}"
+        )
 
     complete = [
         food for food in foods
@@ -129,6 +141,8 @@ def main() -> int:
             "unique_source_ids": len(set(ids)),
             "duplicate_normalized_names": len(duplicate_names),
             "duplicate_normalized_name_values": sorted(duplicate_names),
+            "duplicate_component_rows": len(duplicate_component_rows),
+            "duplicate_portion_rows": len(duplicate_portion_rows),
             "records_with_all_five_macros": len(complete),
             "records_with_sugar_alcohol_value": sum(food["per100g"]["polyols_g_per_100g"] is not None for food in foods),
             "records_with_any_food_specific_portion_mass": sum(bool(food["portion_mass_g"]) for food in foods),
