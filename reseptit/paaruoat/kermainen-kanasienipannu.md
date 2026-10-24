@@ -50,6 +50,11 @@ image:
   alt: Kermainen kanasienipannu tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 3.06
+carbs_total_per_serving_g: 5.53
+protein_per_serving_g: 26.91
+fat_per_serving_g: 26.36
+
 ---
 # Kermainen kanasienipannu
 

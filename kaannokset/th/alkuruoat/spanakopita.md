@@ -43,9 +43,9 @@ ingredients:
     unit: g
     item: ผักชีลาวสด
     note: หั่นฝอย
-  - amount: 8
-    unit: แผ่นแป้ง
-    item: "แป้งฟิโล"
+  - amount: 160
+    unit: g
+    item: แป้งฟิโล
   - amount: 100
     unit: ml
     item: น้ำมันมะกอก
@@ -56,6 +56,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/alkuruoat/spanakopita.md
 translation_of: spanakopita
+carbs_net_per_serving_g: 16.15
+carbs_total_per_serving_g: 19.2
+protein_per_serving_g: 14.23
+fat_per_serving_g: 26.75
+
 ---
 
 # Spanakopita – ผักโขมกรีกและพายเฟต้า

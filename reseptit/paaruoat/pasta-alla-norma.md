@@ -60,6 +60,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 64.86
+carbs_total_per_serving_g: 70.84
+protein_per_serving_g: 12.66
+fat_per_serving_g: 11.56
+
 ---
 
 # Pasta alla Norma munakoisolla

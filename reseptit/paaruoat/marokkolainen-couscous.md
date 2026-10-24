@@ -69,6 +69,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 67.45
+carbs_total_per_serving_g: 76.5
+protein_per_serving_g: 46.82
+fat_per_serving_g: 14.71
+
 ---
 
 # Marokkolainen couscous kanalla ja kasviksilla

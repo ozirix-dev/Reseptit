@@ -27,8 +27,8 @@ ingredients:
   - amount: 50
     unit: g
     item: บัลเกอร์แบบละเอียด
-  - amount: 2
-    unit: กำ
+  - amount: 60
+    unit: g
     item: พาร์สลีย์ใบแบน
     note: "สับละเอียด"
   - amount: 2
@@ -58,6 +58,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/alkuruoat/tabbouleh.md
 translation_of: tabbouleh
+carbs_net_per_serving_g: 11.34
+carbs_total_per_serving_g: 13.99
+protein_per_serving_g: 2.54
+fat_per_serving_g: 14.11
+
 ---
 
 # ทับบูเลห์ – สลัดพาร์สลีย์แบบเลบานอน

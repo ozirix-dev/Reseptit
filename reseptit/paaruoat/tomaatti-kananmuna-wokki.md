@@ -47,8 +47,8 @@ ingredients:
     unit: kpl
     item: kevätsipulia
     note: viipaleina
-  - amount: 3
-    unit: annosta
+  - amount: 450
+    unit: g
     item: keitettyä riisiä
     note: tarjoiluun
 translation_languages:
@@ -56,6 +56,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 38.93
+carbs_total_per_serving_g: 40.64
+protein_per_serving_g: 12.98
+fat_per_serving_g: 16.58
+
 ---
 
 # Kiinalainen tomaatti-kananmunawokki

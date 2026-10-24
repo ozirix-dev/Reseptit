@@ -56,6 +56,11 @@ translation_status:
   en: published
   sv: published
   th: published
+carbs_net_per_serving_g: 5.65
+carbs_total_per_serving_g: 9.2
+protein_per_serving_g: 31.2
+fat_per_serving_g: 21.21
+
 ---
 
 # Poronkäristys kukkakaalimuusilla

@@ -72,6 +72,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 3.59
+carbs_total_per_serving_g: 5.1
+protein_per_serving_g: 34.21
+fat_per_serving_g: 12.37
+
 ---
 
 # Chettinad-kana paahdetuilla mausteilla

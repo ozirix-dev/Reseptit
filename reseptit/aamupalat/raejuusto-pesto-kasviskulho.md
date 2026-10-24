@@ -47,6 +47,11 @@ image:
   alt: Raejuusto-pestokasviskulho tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 2.99
+carbs_total_per_serving_g: 3.89
+protein_per_serving_g: 10.37
+fat_per_serving_g: 10.9
+
 ---
 # Raejuusto-pestokasviskulho
 

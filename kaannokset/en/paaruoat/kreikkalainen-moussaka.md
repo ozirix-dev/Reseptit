@@ -74,6 +74,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/kreikkalainen-moussaka.md
 translation_of: kreikkalainen-moussaka
+carbs_net_per_serving_g: 32.22
+carbs_total_per_serving_g: 37.65
+protein_per_serving_g: 27.59
+fat_per_serving_g: 35.19
+
 ---
 
 # Greek moussaka

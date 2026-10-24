@@ -24,10 +24,10 @@ image:
 ingredients:
   - amount: 200
     unit: g
-    item: jasmiini- tai puuroriisiä
+    item: jasmiiniriisiä
   - amount: 2
     unit: l
-    item: vettä tai kanalientä
+    item: kanalientä
   - amount: 1
     unit: tl
     item: suolaa
@@ -56,6 +56,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 40.21
+carbs_total_per_serving_g: 40.8
+protein_per_serving_g: 8.5
+fat_per_serving_g: 5.14
+
 ---
 
 # Kiinalainen congee-riisipuuro

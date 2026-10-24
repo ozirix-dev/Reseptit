@@ -28,8 +28,8 @@ ingredients:
   - amount: 50
     unit: g
     item: hienoa bulguria
-  - amount: 2
-    unit: nippua
+  - amount: 60
+    unit: g
     item: lehtipersiljaa
     note: hienonnettuna
   - amount: 2
@@ -61,6 +61,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 11.34
+carbs_total_per_serving_g: 13.99
+protein_per_serving_g: 2.54
+fat_per_serving_g: 14.11
+
 ---
 
 # Libanonilainen tabbouleh-persiljasalaatti

@@ -53,6 +53,11 @@ image:
   alt: Perunaton suomalainen lihakeitto tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 5.61
+carbs_total_per_serving_g: 9.04
+protein_per_serving_g: 39.75
+fat_per_serving_g: 1.19
+
 ---
 # Perunaton suomalainen lihakeitto
 

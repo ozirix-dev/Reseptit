@@ -23,10 +23,10 @@ image:
 ingredients:
   - amount: 200
     unit: g
-    item: "ข้าวสารหอมมะลิหรือข้าวสารเมล็ดสั้นสำหรับทำโจ๊ก"
+    item: ข้าวสารหอมมะลิ
   - amount: 2
     unit: l
-    item: น้ำหรือน้ำสต๊อกไก่
+    item: น้ำสต๊อกไก่
   - amount: 1
     unit: ช้อนชา
     item: เกลือ
@@ -53,6 +53,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/congee-riisipuuro.md
 translation_of: congee-riisipuuro
+carbs_net_per_serving_g: 40.21
+carbs_total_per_serving_g: 40.8
+protein_per_serving_g: 8.5
+fat_per_serving_g: 5.14
+
 ---
 
 # ข้าวต้มโจ๊กจีน

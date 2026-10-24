@@ -43,8 +43,8 @@ ingredients:
     unit: g
     item: fresh dill
     note: shredded
-  - amount: 8
-    unit: sheets
+  - amount: 160
+    unit: g
     item: filo pastry
   - amount: 100
     unit: ml
@@ -56,6 +56,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/alkuruoat/spanakopita.md
 translation_of: spanakopita
+carbs_net_per_serving_g: 16.15
+carbs_total_per_serving_g: 19.2
+protein_per_serving_g: 14.23
+fat_per_serving_g: 26.75
+
 ---
 
 # Spanakopita – Greek spinach and feta pie

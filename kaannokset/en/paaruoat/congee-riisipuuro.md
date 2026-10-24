@@ -23,10 +23,10 @@ image:
 ingredients:
   - amount: 200
     unit: g
-    item: jasmine or porridge rice
+    item: jasmine rice
   - amount: 2
     unit: l
-    item: water or chicken stock
+    item: chicken stock
   - amount: 1
     unit: tsp
     item: salt
@@ -53,6 +53,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/congee-riisipuuro.md
 translation_of: congee-riisipuuro
+carbs_net_per_serving_g: 40.21
+carbs_total_per_serving_g: 40.8
+protein_per_serving_g: 8.5
+fat_per_serving_g: 5.14
+
 ---
 
 # Chinese congee rice porridge

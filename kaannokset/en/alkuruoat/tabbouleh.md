@@ -27,8 +27,8 @@ ingredients:
   - amount: 50
     unit: g
     item: fine bulgur
-  - amount: 2
-    unit: bunches
+  - amount: 60
+    unit: g
     item: parsley leaves
     note: "finely chopped"
   - amount: 2
@@ -58,6 +58,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/alkuruoat/tabbouleh.md
 translation_of: tabbouleh
+carbs_net_per_serving_g: 11.34
+carbs_total_per_serving_g: 13.99
+protein_per_serving_g: 2.54
+fat_per_serving_g: 14.11
+
 ---
 
 # Lebanese tabbouleh parsley salad

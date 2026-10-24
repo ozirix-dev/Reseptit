@@ -86,6 +86,7 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     ["halloumimunakas", 3.42],
     ["kaakao-kookos-chia", 2.53],
     ["kurkku-oliivi-aamiaiskulho", 2.07],
+    ["raejuusto-pesto-kasviskulho", 2.99],
     ["marjainen-chiavanukas", 3.51],
     ["paahdettu-aamiaismunakoiso", 4.35],
     ["rahka-marjakerroskulho", 6.32],
@@ -144,11 +145,16 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
     ["marjainen-chiavanukas", 3.51], ["kaakao-kookos-chia", 2.53],
     ["rahka-marjakerroskulho", 6.32], ["savulohi-avokadokulho", 0.89],
     ["kurkku-oliivi-aamiaiskulho", 2.07], ["paahdettu-aamiaismunakoiso", 4.35],
+    ["raejuusto-pesto-kasviskulho", 2.99],
     ["maksalaatikko-kukkakaalilla", 12.07],
     ["uunikanapasta-kesakurpitsa", 7.10], ["chili-con-carne-kukkakaaliriisi", 17.32],
     ["kana-fajita-pelti", 5.78],
     ["kanakeitto-pinaatti-sitruuna", 4.87],
     ["siemengranola-jogurtilla", 8.09],
+    ["liha-juureskeitto-perunaton", 5.61],
+    ["kermainen-kanasienipannu", 3.06],
+    ["kana-parmesaanipannu-parsakaali", 2.91],
+    ["raejuusto-pesto-kasviskulho", 2.99],
   ]);
   const repoDir = path.resolve(import.meta.dirname, "../..");
   for (const recipe of recipes) {

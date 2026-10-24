@@ -70,6 +70,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/chettinad-kana.md
 translation_of: chettinad-kana
+carbs_net_per_serving_g: 3.59
+carbs_total_per_serving_g: 5.1
+protein_per_serving_g: 34.21
+fat_per_serving_g: 12.37
+
 ---
 
 # ไก่ Chettinad กับเครื่องเทศย่าง
