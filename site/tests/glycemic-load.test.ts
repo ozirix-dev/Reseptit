@@ -3,6 +3,7 @@ import test from "node:test";
 
 import type { FoodRecord } from "../scripts/nutrition-model";
 import { calculateGlycemicLoad, type GlycemicIndexRecord } from "../scripts/glycemic-load-model";
+import { publishedGlycemicLoadForRecipe } from "../src/features/recipes/glycemic-load-display";
 
 function food(id: string, availableCarbohydrate: number): FoodRecord {
   return {
@@ -145,4 +146,16 @@ test("missing ingredient mass or GI evidence never returns a partial recipe GL",
   assert.equal(result.glycemicLoadPerServing, null);
   assert.ok(result.blockers.some((blocker) => blocker.includes("unknown GI")));
   assert.ok(result.blockers.some((blocker) => blocker.includes("unknown mass")));
+});
+
+test("recipe pages receive only calculated, non-null complete GL results", () => {
+  const results = [
+    { recipeId: "waiting", status: "INSUFFICIENT SOURCE DATA" as const, glycemicLoadPerServing: null, sourceReferences: [] },
+    { recipeId: "invalid", status: "CALCULATED" as const, glycemicLoadPerServing: null, sourceReferences: [] },
+    { recipeId: "ready", status: "CALCULATED" as const, glycemicLoadPerServing: 3.25, sourceReferences: [{ title: "Study", url: "https://example.test/study" }] },
+  ];
+  assert.equal(publishedGlycemicLoadForRecipe("waiting", results), null);
+  assert.equal(publishedGlycemicLoadForRecipe("invalid", results), null);
+  assert.deepEqual(publishedGlycemicLoadForRecipe("ready", results), results[2]);
+  assert.equal(publishedGlycemicLoadForRecipe("unknown", results), null);
 });

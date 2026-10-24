@@ -4,6 +4,8 @@ import path from "node:path";
 import test from "node:test";
 import { recipeUi } from "../src/features/recipes/recipe-i18n";
 import { toolUi } from "../src/features/recipes/recipe-tools";
+import { siteContent } from "../src/generated/content.generated";
+import { glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
 
@@ -81,6 +83,26 @@ test("recipe index is prerendered and links only published languages", async () 
   assert.equal(preloads.length, 2);
   assert.match(preloads[0][0], /media="\(min-width: 700px\)"/);
   assert.match(preloads[1][0], /media="\(min-width: 1100px\)"/);
+});
+
+test("only complete GK results appear on every published translation of a pilot recipe", async () => {
+  assert.equal(glycemicLoadPilotResults.length, 10);
+  for (const result of glycemicLoadPilotResults) {
+    const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
+    assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);
+    for (const recipe of translations) {
+      const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+      if (result.status === "CALCULATED" && result.glycemicLoadPerServing !== null) {
+        assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoad));
+        assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoadNote));
+        assert.ok(html.includes(new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumFractionDigits: 2 }).format(result.glycemicLoadPerServing)));
+        assert.ok(result.sourceReferences.length > 0, `${result.recipeId}: calculated result has source references`);
+        for (const source of result.sourceReferences) assert.ok(html.includes(source.url), `${result.recipeId}: source citation is visible`);
+      } else {
+        assert.ok(!html.includes(recipeUi[recipe.locale].glycemicLoad), `${result.recipeId}/${recipe.locale}: incomplete GK stays hidden`);
+      }
+    }
+  }
 });
 
 test("prerendered recipe HTML includes useful content before JavaScript", async () => {

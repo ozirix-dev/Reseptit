@@ -5,6 +5,8 @@ import { useContent } from "@/lib/content";
 import { recipeIndexPath, recipeLocaleFromPath, recipeLocaleName, recipeUi } from "./recipe-i18n";
 import { formatIngredientAmount, nextServingCount } from "./servings";
 import { toolUi } from "./recipe-tools";
+import { glycemicLoadPilotResults } from "@/generated/glycemic-load-pilot.generated";
+import { publishedGlycemicLoadForRecipe } from "./glycemic-load-display";
 
 export function RecipePage() {
   const { pathname } = useLocation();
@@ -19,6 +21,7 @@ export function RecipePage() {
   if (!recipe) return <section className="page-section"><div className="container container--narrow"><h1>{labels.notFound}</h1><p><Link to={recipeIndexPath(locale)}>{labels.backToRecipes}</Link></p></div></section>;
   const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale];
   const nutritionItems = Object.entries(recipe.nutrition).filter(([, value]) => value !== null) as [keyof typeof recipe.nutrition, number][];
+  const glycemicLoad = publishedGlycemicLoadForRecipe(recipe.recipeId, glycemicLoadPilotResults);
   return <article className="page-section recipe-page"><div className="container container--narrow">
     <nav className="article-breadcrumbs" aria-label={labels.breadcrumb}><Link to={recipe.locale === "fi" ? "/" : `/${recipe.locale === "sv" ? "sv/recept" : `${recipe.locale}/recipes`}/`}>{labels.indexTitle}</Link><span aria-hidden="true">/</span><span>{recipe.title}</span></nav>
     <header className="recipe-header"><p className="eyebrow">{labels.category[recipe.category]}</p><h1>{recipe.title}</h1><p className="article-excerpt">{recipe.description}</p>
@@ -36,7 +39,7 @@ export function RecipePage() {
         {servings !== recipe.servings ? <p className="recipe-disclosure recipe-scaled-note">{tools.scaled(recipe.servings)}</p> : null}
         {hydrated && recipe.instructionStepsHtml?.length ? <><div className="step-controls"><p aria-live="polite">{tools.progress}: {completed.length}/{recipe.instructionStepsHtml.length}</p><button type="button" onClick={() => setCompleted([])}>{tools.reset}</button></div><div className="rich-text"><ol className="recipe-steps">{recipe.instructionStepsHtml.map((step, index) => <li key={index} data-complete={completed.includes(index)}><div><label className="recipe-step-toggle"><input type="checkbox" aria-label={`${tools.completed}: ${index + 1}`} checked={completed.includes(index)} onChange={(event) => { const checked = event.currentTarget.checked; setCompleted(values => checked ? [...values, index] : values.filter(value => value !== index)); }} /></label><div className="recipe-step-text" dangerouslySetInnerHTML={{ __html: step }} /></div></li>)}</ol></div></> : <div className="rich-text" dangerouslySetInnerHTML={{ __html: recipe.instructionsHtml }} />}
       </section>
-      <section className="recipe-panel"><h2>{labels.nutrition}</h2><p className="recipe-disclosure">{nutritionItems.length ? tools.nutrition : tools.missing}</p>{nutritionItems.length ? <dl className="nutrition-list">{nutritionItems.map(([key, value]) => <div key={key}><dt>{labels.nutrients[key]}</dt><dd>{formatIngredientAmount(value, 1, 1, numberLocale)} g</dd></div>)}</dl> : null}{recipe.dietClass ? <p className="recipe-disclosure">{tools.diet}</p> : null}</section>
+      <section className="recipe-panel"><h2>{labels.nutrition}</h2><p className="recipe-disclosure">{nutritionItems.length ? tools.nutrition : tools.missing}</p>{nutritionItems.length ? <dl className="nutrition-list">{nutritionItems.map(([key, value]) => <div key={key}><dt>{labels.nutrients[key]}</dt><dd>{formatIngredientAmount(value, 1, 1, numberLocale)} g</dd></div>)}</dl> : null}{glycemicLoad ? <div className="recipe-glycemic-load"><dl className="nutrition-list"><div><dt>{labels.glycemicLoad}</dt><dd>{new Intl.NumberFormat(numberLocale, { maximumFractionDigits: 2 }).format(glycemicLoad.glycemicLoadPerServing)}</dd></div></dl><p className="recipe-disclosure">{labels.glycemicLoadNote}</p><p><Link to="/glykeeminen-kuorma/">{labels.glycemicLoadMethod}</Link></p>{glycemicLoad.sourceReferences.length ? <ul className="recipe-glycemic-load__sources" aria-label={labels.glycemicLoadSources}>{glycemicLoad.sourceReferences.map((source) => <li key={source.url}><a href={source.url} rel="noopener noreferrer">{source.title}</a></li>)}</ul> : null}</div> : null}{recipe.dietClass ? <p className="recipe-disclosure">{tools.diet}</p> : null}</section>
       {recipe.notesHtml ? <section className="recipe-panel"><h2>{labels.notes}</h2><div className="rich-text" dangerouslySetInnerHTML={{ __html: recipe.notesHtml }} /></section> : null}
     </div>
   </div></article>;
