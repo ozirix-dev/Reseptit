@@ -22,6 +22,12 @@ const expectedRecipeIds = [
   "koshari", "baozi", "marokkolainen-couscous", "pasta-alla-norma", "bulgogi",
   "congee-riisipuuro", "tomaatti-kananmuna-wokki", "harira", "kreikkalainen-moussaka",
   "doner-kebab", "souvlaki", "gazpacho", "spanakopita", "tabbouleh",
+  "poronkaristys-kukkakaalimuusilla", "liha-juureskeitto-perunaton", "vhh-omenapiirakka",
+  "chettinad-kana", "vhh-raparperipiirakka", "vhh-mansikkakakku", "kermainen-kanasienipannu",
+  "raejuusto-pesto-kasviskulho", "kana-parmesaanipannu-parsakaali", "vhh-juustokakku",
+  "vhh-brita-kakku", "rahkapiirakka-vhh", "vhh-letut", "vhh-lihapiirakka",
+  "vhh-runebergintortut", "keto-korvapuustit", "vhh-korvapuustit", "keto-mutakakku",
+  "keto-suklaakeksit", "vhh-mokkapalat",
 ];
 const recipeCategories: Record<string, string> = {
   "tortilla-de-patatas": "paaruoat", "vhh-lihamureke": "paaruoat", hummus: "alkuruoat",
@@ -45,6 +51,14 @@ const recipeCategories: Record<string, string> = {
   "tomaatti-kananmuna-wokki": "paaruoat", harira: "paaruoat", "kreikkalainen-moussaka": "paaruoat",
   "doner-kebab": "paaruoat", souvlaki: "paaruoat", gazpacho: "alkuruoat",
   spanakopita: "alkuruoat", tabbouleh: "alkuruoat",
+  "poronkaristys-kukkakaalimuusilla": "paaruoat", "liha-juureskeitto-perunaton": "paaruoat",
+  "vhh-omenapiirakka": "jalkiruoat", "chettinad-kana": "paaruoat", "vhh-raparperipiirakka": "jalkiruoat",
+  "vhh-mansikkakakku": "jalkiruoat", "kermainen-kanasienipannu": "paaruoat",
+  "raejuusto-pesto-kasviskulho": "aamupalat", "kana-parmesaanipannu-parsakaali": "paaruoat",
+  "vhh-juustokakku": "jalkiruoat", "vhh-brita-kakku": "jalkiruoat", "rahkapiirakka-vhh": "jalkiruoat",
+  "vhh-letut": "jalkiruoat", "vhh-lihapiirakka": "leivonnaiset", "vhh-runebergintortut": "leivonnaiset",
+  "keto-korvapuustit": "leivonnaiset", "vhh-korvapuustit": "jalkiruoat", "keto-mutakakku": "jalkiruoat",
+  "keto-suklaakeksit": "jalkiruoat", "vhh-mokkapalat": "jalkiruoat",
 };
 const recipeFileNames: Record<string, string> = { "vhh-kaalilaatikko": "kaalilaatikko" };
 

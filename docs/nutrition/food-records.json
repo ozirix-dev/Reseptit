@@ -4602,5 +4602,522 @@
       "protein": 10.4,
       "fat": 11
     }
+  },
+  {
+    "id": "fineli-734-2026-10-24",
+    "name": "PORONLIHA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/734",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "raw reindeer",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 21.56,
+      "fat": 4.5
+    }
+  },
+  {
+    "id": "afcd-F000514-2026-10-24",
+    "name": "Beef, casserole meat, boneless or bone-in, shin, lean, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "raw lean beef shin",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 21.9,
+      "fat": 0.6
+    }
+  },
+  {
+    "id": "afcd-F009021-2026-10-24",
+    "name": "Swede, peeled, fresh, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "raw peeled swede",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 3.7,
+      "fibre": 2.2,
+      "polyols": 0,
+      "protein": 0.9,
+      "fat": 0
+    }
+  },
+  {
+    "id": "fineli-311-2026-10-24",
+    "name": "JUURISELLERI, MUKULASELLERI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/311",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "raw celeriac",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 2.65,
+      "FIBT": 3.1,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 2.65,
+      "fibre": 3.1,
+      "polyols": 0,
+      "protein": 1.3,
+      "fat": 0.1
+    }
+  },
+  {
+    "id": "afcd-F006077-2026-10-24",
+    "name": "Nut, almond meal",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "dry almond meal",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 5.4,
+      "fibre": 11,
+      "polyols": 0,
+      "protein": 19.7,
+      "fat": 50.5
+    }
+  },
+  {
+    "id": "afcd-F000095-2026-10-24",
+    "name": "Apple, granny-smith, unpeeled, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "raw apple",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 10.7,
+      "fibre": 2.5,
+      "polyols": 0.3000000000000007,
+      "protein": 0.3,
+      "fat": 0
+    }
+  },
+  {
+    "id": "fineli-338-2026-10-24",
+    "name": "RAPARPERI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/338",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "raw rhubarb",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 5.5,
+      "FIBT": 1.4,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 5.5,
+      "fibre": 1.4,
+      "polyols": 0,
+      "protein": 0.69,
+      "fat": 0.1
+    }
+  },
+  {
+    "id": "afcd-F009350-2026-10-24",
+    "name": "Vanilla bean extract",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "vanilla bean extract",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 12.6,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 0.1,
+      "fat": 0.1
+    }
+  },
+  {
+    "id": "afcd-F007502-2026-10-24",
+    "name": "Psyllium, uncooked",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "dry psyllium husk",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 1,
+      "fibre": 88.7,
+      "polyols": 0,
+      "protein": 3,
+      "fat": 1.3
+    }
+  },
+  {
+    "id": "afcd-F008952-2026-10-24",
+    "name": "Strawberry, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "raw strawberries",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 5.6,
+      "fibre": 2.1,
+      "polyols": 0,
+      "protein": 0.7,
+      "fat": 0.2
+    }
+  },
+  {
+    "id": "afcd-F005946-2026-10-24",
+    "name": "Mushroom, common, fresh, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "fresh common raw mushroom",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 0.8,
+      "fibre": 1.4,
+      "polyols": 1.2,
+      "protein": 2.2,
+      "fat": 0.8
+    }
+  },
+  {
+    "id": "afcd-F005973-2026-10-24",
+    "name": "Mustard, cream style",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "cream-style mustard proxy",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 6.2,
+      "fibre": 4.1,
+      "polyols": 0,
+      "protein": 5.8,
+      "fat": 3.1
+    }
+  },
+  {
+    "id": "afcd-F010466-2026-10-24",
+    "name": "Thyme, fresh, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "fresh thyme",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 1.1,
+      "fibre": 14,
+      "polyols": 0,
+      "protein": 5.6,
+      "fat": 1.7
+    }
+  },
+  {
+    "id": "fineli-3323-2026-10-24",
+    "name": "PESTOKASTIKE, YRTTIKASTIKE",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/3323",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "generic pesto sauce",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 1.393,
+      "FIBT": 1.214,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 1.393,
+      "fibre": 1.214,
+      "polyols": 0,
+      "protein": 7.98,
+      "fat": 48.509
+    }
+  },
+  {
+    "id": "fineli-30968-2026-10-24",
+    "name": "PINJANSIEMEN",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30968",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "pine nuts",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 5.02,
+      "FIBT": 3.7,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 5.02,
+      "fibre": 3.7,
+      "polyols": 0,
+      "protein": 17.4,
+      "fat": 66.8
+    }
+  },
+  {
+    "id": "afcd-F002594-2026-10-24",
+    "name": "Chicken, breast, lean flesh, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "raw lean chicken breast",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 22.5,
+      "fat": 0.8
+    }
+  },
+  {
+    "id": "afcd-F002479-2026-10-24",
+    "name": "Cheese, parmesan, fresh, regular fat",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "fresh parmesan",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 32,
+      "fat": 27
+    }
+  },
+  {
+    "id": "fineli-628-2026-10-24",
+    "name": "CREME FRAICHE, RANSKANKERMA, RASVAA 28 %",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/628",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "28% creme fraiche, closest local sour-cream style record",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 3,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 3,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 2,
+      "fat": 28
+    }
+  },
+  {
+    "id": "fineli-852-2026-10-24",
+    "name": "KANANMUNAN VALKUAINEN, 66 % KANANMUNAN MASSASTA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/852",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "raw egg white, edible portion",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0.4,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 0.4,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 10.79,
+      "fat": 0.03
+    }
+  },
+  {
+    "id": "fineli-655-2026-10-24",
+    "name": "JUUSTO, PUOLIKOVA JUUSTO, RASVAA 25-35 %, LAPPI/SMÅLAND/BILLINGE/RUSTHOLLI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/655",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "semi-hard cheese, generic 25–35% fat",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 27.88,
+      "fat": 28.4
+    }
+  },
+  {
+    "id": "afcd-F002258-2026-10-24",
+    "name": "Cardamom seed, dried, ground",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "ground cardamom",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 34.4,
+      "fibre": 28,
+      "polyols": 0,
+      "protein": 10.8,
+      "fat": 6.7
+    }
+  },
+  {
+    "id": "afcd-F009837-2026-10-24",
+    "name": "Chocolate, dark, no added sugar",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "dark chocolate, no added sugar",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 4.1,
+      "fibre": 9.9,
+      "polyols": 28,
+      "protein": 6.9,
+      "fat": 38.3
+    }
+  },
+  {
+    "id": "afcd-F003041-2026-10-24",
+    "name": "Coffee, espresso, from ground coffee beans",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-24",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "prepared black coffee",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 1.7,
+      "fat": 0.3
+    }
   }
 ]
