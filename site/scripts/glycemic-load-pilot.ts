@@ -46,6 +46,12 @@ const expectedRecipeIds = [
   "kana-enchilada-kukkakaalivuoka", "nakkikastike-kukkakaalimuusi", "ropa-vieja", "karjalanpaisti-vhh",
   "kerala-kalacurry", "kanapyorykat-tomaattikastike", "silakkapihvit-tilli-kermakastike", "kantonilainen-hoyrytetty-kala",
   "tacokulho-nauta-avokado", "kanasalaatti-pesto-mozzarella", "sitruuna-yrttikana-parsa", "pho-bo",
+  "karibia-kookosriisi-pavuilla", "thai-khao-tom-katkaravuilla", "lahi-ita-kikhernejauho-yrttilettu",
+  "korealainen-yachaejuk-kasvisjuk", "malesialainen-congee-inkivaarilla", "kiinalainen-tomaattimunakas-riisilla",
+  "kiinalainen-riisipuuro-kananmunalla", "thai-jok-kanalla", "thai-porsasjok", "lahi-ita-fattet-hummus",
+  "pohjoisafrikkalainen-lablabi", "jerk-kana", "tangyuan", "paella-valenciana", "rendang-padang",
+  "malesialainen-apam-balik", "malesialainen-kookos-banaanikulho", "meksikolainen-kurpitsapuuro-piloncillolla",
+  "indonesialainen-pisang-goreng-aamiaiseksi", "nasi-lemak",
 ];
 const recipeCategories: Record<string, string> = {
   "tortilla-de-patatas": "paaruoat", "vhh-lihamureke": "paaruoat", hummus: "alkuruoat",
@@ -105,6 +111,15 @@ const recipeCategories: Record<string, string> = {
   "kerala-kalacurry": "paaruoat", "kanapyorykat-tomaattikastike": "paaruoat", "silakkapihvit-tilli-kermakastike": "paaruoat",
   "kantonilainen-hoyrytetty-kala": "paaruoat", "tacokulho-nauta-avokado": "paaruoat", "kanasalaatti-pesto-mozzarella": "paaruoat",
   "sitruuna-yrttikana-parsa": "paaruoat", "pho-bo": "paaruoat",
+  "karibia-kookosriisi-pavuilla": "aamupalat", "thai-khao-tom-katkaravuilla": "aamupalat",
+  "lahi-ita-kikhernejauho-yrttilettu": "aamupalat", "korealainen-yachaejuk-kasvisjuk": "aamupalat",
+  "malesialainen-congee-inkivaarilla": "aamupalat", "kiinalainen-tomaattimunakas-riisilla": "aamupalat",
+  "kiinalainen-riisipuuro-kananmunalla": "aamupalat", "thai-jok-kanalla": "aamupalat", "thai-porsasjok": "aamupalat",
+  "lahi-ita-fattet-hummus": "aamupalat", "pohjoisafrikkalainen-lablabi": "aamupalat",
+  "jerk-kana": "paaruoat", tangyuan: "jalkiruoat", "paella-valenciana": "paaruoat", "rendang-padang": "paaruoat",
+  "malesialainen-apam-balik": "aamupalat", "malesialainen-kookos-banaanikulho": "aamupalat",
+  "meksikolainen-kurpitsapuuro-piloncillolla": "aamupalat", "indonesialainen-pisang-goreng-aamiaiseksi": "aamupalat",
+  "nasi-lemak": "paaruoat",
 };
 const recipeFileNames: Record<string, string> = { "vhh-kaalilaatikko": "kaalilaatikko" };
 

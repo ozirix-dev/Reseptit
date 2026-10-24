@@ -126,7 +126,7 @@ export function calculateGlycemicLoad(
       const negligible = valid(estimatedCarbs) && estimatedCarbs < 1 && Boolean(ingredient.negligibleAssumption);
       const issue = negligible
         ? `Omitted using stated <1 g/serving estimate: ${ingredient.negligibleAssumption}`
-        : "Ingredient amount or Fineli mapping is missing; it is not treated as zero.";
+        : ingredient.excludedReason || "Ingredient amount or Fineli mapping is missing; it is not treated as zero.";
       if (!negligible) blockers.push(`${input.recipeId}: ${ingredient.name}: ${issue}`);
       if (negligible) confidence = "LOW";
       return {
