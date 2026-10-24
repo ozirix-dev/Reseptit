@@ -45,6 +45,10 @@ ingredients:
   - amount: 2
     unit: rkl
     item: oliiviöljyä
+carbs_net_per_serving_g: 17.32
+carbs_total_per_serving_g: 26.76
+protein_per_serving_g: 32.32
+fat_per_serving_g: 28.87
 servings: 4
 time_total_min: 55
 difficulty: Helppo

@@ -39,6 +39,10 @@ ingredients:
   - amount: null
     unit: ""
     item: mustapippuria
+carbs_net_per_serving_g: 2.07
+carbs_total_per_serving_g: 3.03
+protein_per_serving_g: 7.93
+fat_per_serving_g: 14.92
 servings: 4
 time_total_min: 10
 difficulty: Helppo

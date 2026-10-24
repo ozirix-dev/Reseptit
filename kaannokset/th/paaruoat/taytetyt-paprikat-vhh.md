@@ -12,6 +12,10 @@ main_ingredient:
   - juusto
 cooking_method:
   - uuni
+carbs_net_per_serving_g: 12.29
+carbs_total_per_serving_g: 17.35
+protein_per_serving_g: 36.88
+fat_per_serving_g: 36.56
 servings: 4
 time_total_min: 50
 difficulty: ง่าย

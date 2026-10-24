@@ -5,6 +5,10 @@ url_slug: ratatouille
 category: paaruoka
 language: sv
 status: published
+carbs_net_per_serving_g: 16.40
+carbs_total_per_serving_g: 23.62
+protein_per_serving_g: 3.37
+fat_per_serving_g: 14.96
 servings: 4
 time_total_min: 60
 main_ingredient:
