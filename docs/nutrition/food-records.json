@@ -6631,5 +6631,829 @@
       "DL": 17,
       "RKL": 3
     }
+  },
+  {
+    "id": "fineli-713-2026-10-25",
+    "name": "SIANLIHA, KESKIARVO",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/713?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 18.87,
+      "fat": 13.4
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {}
+  },
+  {
+    "id": "fineli-393-2026-10-25",
+    "name": "VALKOSIPULI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/393?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 16.3,
+      "fibre": null,
+      "polyols": 0,
+      "protein": 7.9,
+      "fat": 0.6
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "KPL_M": 3.5
+    }
+  },
+  {
+    "id": "fineli-34238-2026-10-25",
+    "name": "KORIANTERI, TUORE",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34238?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 0.505,
+      "fibre": null,
+      "polyols": 0,
+      "protein": 2.444,
+      "fat": 0.403
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "DL": 13
+    }
+  },
+  {
+    "id": "fineli-11178-2026-10-25",
+    "name": "VALKOPIPPURI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11178?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "DRIE",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 42.41,
+      "fibre": null,
+      "polyols": null,
+      "protein": 10.4,
+      "fat": 2.1
+    },
+    "polyolsSourceVerified": false,
+    "portionMasses_g": {
+      "RKL": 6.5,
+      "TL": 2
+    }
+  },
+  {
+    "id": "fineli-540-2026-10-25",
+    "name": "AURINGONKUKKAÖLJY",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/540?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 0,
+      "fat": 100
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "DL": 90,
+      "RKL": 13.5,
+      "TL": 4.5
+    }
+  },
+  {
+    "id": "afcd-F006250-2026-10-25",
+    "name": "Onion, spring, fresh, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia",
+    "state": "as listed in AFCD Release 3",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 4.6,
+      "fibre": 1.9,
+      "polyols": 0,
+      "protein": 1.7,
+      "fat": 0.2
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available-carbohydrate values with and without sugar alcohols."
+  },
+  {
+    "id": "fineli-856-2026-10-25",
+    "name": "KALA, SAVUSTETTU, KESKIARVO, VÄHÄRASVAINEN",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/856?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "SMOK",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 20.51,
+      "fat": 4.344
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {}
+  },
+  {
+    "id": "fineli-11057-2026-10-25",
+    "name": "AVOKADO, KUORITTU, KIVETÖN",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11057?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 0.77,
+      "fibre": 3.6,
+      "polyols": 0,
+      "protein": 2.63,
+      "fat": 19.4
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "KPL_S": 100,
+      "KPL_M": 120
+    }
+  },
+  {
+    "id": "fineli-34159-2026-10-25",
+    "name": "RUKOLA, RUCOLA, SINAPPIKAALI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34159?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 0.452,
+      "fibre": 1.6,
+      "polyols": 0,
+      "protein": 2.607,
+      "fat": 0.303
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {}
+  },
+  {
+    "id": "fineli-32088-2026-10-25",
+    "name": "JOGURTTI, MAUSTAMATON, BULGARIAN, RASVAA 3,5 %, D-VIT 1 UG",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/32088?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 4.8,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 3,
+      "fat": 3.5
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "DL": 100,
+      "RKL": 15,
+      "TL": 5,
+      "KPL_VALM": 200
+    }
+  },
+  {
+    "id": "fineli-11557-2026-10-25",
+    "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11557?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "MASH",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 1.6,
+      "fibre": 0.1,
+      "polyols": 0,
+      "protein": 0.31,
+      "fat": 0
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "DL": 100,
+      "RKL": 15,
+      "TL": 5
+    }
+  },
+  {
+    "id": "fineli-11067-2026-10-25",
+    "name": "TONNIKALA, VEDESSÄ, SÄILYKE",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11067?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "CANN",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 22.44,
+      "fat": 0.9
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "DL": 55,
+      "RKL": 10
+    }
+  },
+  {
+    "id": "fineli-750-2026-10-25",
+    "name": "KANA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/750?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 20.25,
+      "fat": 12
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "KPL_M": 1500
+    }
+  },
+  {
+    "id": "fineli-11521-2026-10-25",
+    "name": "RIISI PITKÄJYVÄINEN, PUUROUTUMATON",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11521?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 79,
+      "fibre": 1,
+      "polyols": 0,
+      "protein": 8.13,
+      "fat": 1.03
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "DL": 85,
+      "RKL": 12
+    }
+  },
+  {
+    "id": "fineli-619-2026-10-25",
+    "name": "JOGURTTI, MAUSTAMATON, RASVAA 2,5 %, VL",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/619?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 5,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 3.19,
+      "fat": 2.5
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "DL": 100,
+      "RKL": 15,
+      "TL": 5
+    }
+  },
+  {
+    "id": "fineli-706-2026-10-25",
+    "name": "SIANKYLKI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/706?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 14.75,
+      "fat": 30.9
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {}
+  },
+  {
+    "id": "fineli-29055-2026-10-25",
+    "name": "NUUDELI, RIISINUUDELI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29055?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 81.64,
+      "fibre": 2.07,
+      "polyols": 0,
+      "protein": 3.44,
+      "fat": 0.56
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {}
+  },
+  {
+    "id": "fineli-1-2026-10-25",
+    "name": "SOKERI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 99.9,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 0,
+      "fat": 0
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "KPL_S": 2,
+      "KPL_M": 3,
+      "KPL_L": 4,
+      "DL": 85,
+      "RKL": 12,
+      "TL": 4
+    }
+  },
+  {
+    "id": "fineli-300-2026-10-25",
+    "name": "PORKKANA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/300?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 5.56,
+      "fibre": 2.4,
+      "polyols": 0,
+      "protein": 0.63,
+      "fat": 0.2
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "KPL_S": 35,
+      "KPL_M": 65,
+      "KPL_L": 100
+    }
+  },
+  {
+    "id": "fineli-714-2026-10-25",
+    "name": "NAUDANLIHA, RASVAINEN, KESKIARVO",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/714?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 16.94,
+      "fat": 8.4
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {}
+  },
+  {
+    "id": "fineli-33456-2026-10-25",
+    "name": "PINAATTI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/33456?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 0.25,
+      "fibre": 1.3,
+      "polyols": 0,
+      "protein": 2.1,
+      "fat": 0.56
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "KPL_M": 2,
+      "DL": 50
+    }
+  },
+  {
+    "id": "fineli-384-2026-10-25",
+    "name": "ITU, KESKIARVO, SINIMAILANEN, MUNGOPAPU",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/384?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 2.6,
+      "fibre": 1.6,
+      "polyols": 0,
+      "protein": 4,
+      "fat": 0.7
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "KPL_M": 0.4,
+      "DL": 40,
+      "RKL": 7
+    }
+  },
+  {
+    "id": "fineli-11734-2026-10-25",
+    "name": "SIITAKESIENI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11734?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 2.5,
+      "fibre": null,
+      "polyols": null,
+      "protein": 1.8,
+      "fat": 0.31
+    },
+    "polyolsSourceVerified": false,
+    "portionMasses_g": {
+      "KPL_S": 5,
+      "KPL_M": 12,
+      "KPL_L": 20
+    }
+  },
+  {
+    "id": "fineli-120-2026-10-25",
+    "name": "NUUDELI, VEHNÄNUUDELI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/120?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 66.4,
+      "fibre": 3,
+      "polyols": 0,
+      "protein": 11.16,
+      "fat": 3.3
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {}
+  },
+  {
+    "id": "fineli-320-2026-10-25",
+    "name": "VALKOKAALI, KERÄKAALI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/320?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 4.97,
+      "fibre": 2,
+      "polyols": 0,
+      "protein": 1.2,
+      "fat": 0.1
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "KPL_S": 800,
+      "KPL_M": 1200,
+      "KPL_L": 1500,
+      "DL": 40
+    }
+  },
+  {
+    "id": "fineli-378-2026-10-25",
+    "name": "PÄHKINÄ, MAAPÄHKINÄ",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/378?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 12.5,
+      "fibre": 8.1,
+      "polyols": 0,
+      "protein": 25.6,
+      "fat": 43
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "KPL_M": 0.7,
+      "DL": 70,
+      "RKL": 10
+    }
+  },
+  {
+    "id": "fineli-835-2026-10-25",
+    "name": "KATKARAPU",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/835?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": null,
+      "protein": 14.44,
+      "fat": 0.8
+    },
+    "polyolsSourceVerified": false,
+    "portionMasses_g": {
+      "KPL_M": 2,
+      "DL": 50
+    }
+  },
+  {
+    "id": "afcd-F008008-2026-10-25",
+    "name": "Sauce, hoi sin (hoisin), commercial",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia",
+    "state": "as listed in AFCD Release 3",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 37.2,
+      "fibre": 10.4,
+      "polyols": 0,
+      "protein": 1.6,
+      "fat": 5.4
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available-carbohydrate values with and without sugar alcohols."
+  },
+  {
+    "id": "fineli-27-2026-10-25",
+    "name": "JAUHO, MAISSITÄRKKELYS",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/27?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 86,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 0.35,
+      "fat": 0.6
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "DL": 55,
+      "RKL": 7
+    }
+  },
+  {
+    "id": "fineli-11056-2026-10-25",
+    "name": "ANANAS, KUORITTU",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11056?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 11.2,
+      "fibre": 1.3,
+      "polyols": 0,
+      "protein": 0.5,
+      "fat": 0.4
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "KPL_S": 400,
+      "KPL_L": 800,
+      "KPL_M": 600
+    }
+  },
+  {
+    "id": "fineli-156-2026-10-25",
+    "name": "RIISI PUUROUTUVA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/156?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 75.6,
+      "fibre": 2.3,
+      "polyols": null,
+      "protein": 6.06,
+      "fat": 0.7
+    },
+    "polyolsSourceVerified": false,
+    "portionMasses_g": {
+      "DL": 85,
+      "RKL": 12.5
+    }
+  },
+  {
+    "id": "fineli-31219-2026-10-25",
+    "name": "LINSSI, PUNAINEN, KUIVATTU",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/31219?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "DRIE",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 45.8,
+      "fibre": 5.4,
+      "polyols": null,
+      "protein": 23.8,
+      "fat": 1.3
+    },
+    "polyolsSourceVerified": false,
+    "portionMasses_g": {
+      "DL": 80
+    }
+  },
+  {
+    "id": "afcd-F009081-2026-10-25",
+    "name": "Tamarind, paste, pure",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia",
+    "state": "as listed in AFCD Release 3",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 57.4,
+      "fibre": 5.1,
+      "polyols": 0,
+      "protein": 2.8,
+      "fat": 0.6
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD paired available-carbohydrate values with and without sugar alcohols."
+  },
+  {
+    "id": "fineli-182-2026-10-25",
+    "name": "JAUHO, RIISIJAUHO, RIISIHIUTALE",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/182?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 79.3,
+      "fibre": 2.3,
+      "polyols": 0,
+      "protein": 7.69,
+      "fat": 1.4
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "DL": 55,
+      "RKL": 8
+    }
+  },
+  {
+    "id": "fineli-112-2026-10-25",
+    "name": "MANNASUURIMO",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/112?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 63.6,
+      "fibre": 3.5,
+      "polyols": 0,
+      "protein": 11.5,
+      "fat": 1.1
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "DL": 100,
+      "RKL": 15
+    }
+  },
+  {
+    "id": "fineli-110-2026-10-25",
+    "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 73.998,
+      "fibre": 3.5,
+      "polyols": 0,
+      "protein": 11.6,
+      "fat": 1.56
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "DL": 65,
+      "RKL": 10
+    }
+  },
+  {
+    "id": "fineli-205-2026-10-25",
+    "name": "PERUNA, VANHA, KUORITTU",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/205?c=2034&c2=2168",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Rel20, CC BY 4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "per100g": {
+      "carbohydrate": 15.5,
+      "fibre": 1.4,
+      "polyols": 0,
+      "protein": 1.88,
+      "fat": 0.114
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Rel20 POLYL component",
+    "portionMasses_g": {
+      "KPL_M": 60
+    }
   }
 ]

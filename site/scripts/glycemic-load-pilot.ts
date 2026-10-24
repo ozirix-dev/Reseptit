@@ -37,6 +37,10 @@ const expectedRecipeIds = [
   "ketopizza-pofiber-pohjalla", "tom-kha-gai-vhh", "marjainen-chiavanukas", "halloumimunakas", "pad-see-ew-vhh-konjac",
   "raejuusto-uunimunakas", "keto-kauralesesampylat", "jauhelihapihvit-vhh-kermakastikkeella", "keto-pannukakku", "kaakao-kookos-chia",
   "parsakaali-sinihomejuustofrittata", "yum-woon-sen-vhh", "keto-pinaattiletut", "kurkku-oliivi-aamiaiskulho", "uunilohi-smetanakuorrutteella",
+  "moo-ping-vhh", "uuniporsas-kermakastikkeessa-vhh", "kai-jiew-vhh", "savulohi-avokadokulho", "tonnikalamunakkaat-uunissa",
+  "hyderabadi-kanabiryani", "bun-cha-hanoi", "bibimbap", "chow-mein", "dan-dan-nuudelit", "goi-cuon", "hapanimela-porsas",
+  "idli-sambar", "indonesialainen-bubur-sumsum", "intialainen-rava-uttapam", "intialainen-aloo-paratha",
+  "indonesialainen-bubur-ayam-kanariisipuuro", "indonesialainen-nasi-goreng-aamiaisriisi", "indonesialainen-serabi-kookospannukakku", "dim-sum",
 ];
 const recipeCategories: Record<string, string> = {
   "tortilla-de-patatas": "paaruoat", "vhh-lihamureke": "paaruoat", hummus: "alkuruoat",
@@ -82,6 +86,13 @@ const recipeCategories: Record<string, string> = {
   "jauhelihapihvit-vhh-kermakastikkeella": "paaruoat", "keto-pannukakku": "jalkiruoat", "kaakao-kookos-chia": "aamupalat",
   "parsakaali-sinihomejuustofrittata": "paaruoat", "yum-woon-sen-vhh": "alkuruoat", "keto-pinaattiletut": "paaruoat",
   "kurkku-oliivi-aamiaiskulho": "aamupalat", "uunilohi-smetanakuorrutteella": "paaruoat",
+  "moo-ping-vhh": "paaruoat", "uuniporsas-kermakastikkeessa-vhh": "paaruoat", "kai-jiew-vhh": "paaruoat",
+  "savulohi-avokadokulho": "aamupalat", "tonnikalamunakkaat-uunissa": "aamupalat", "hyderabadi-kanabiryani": "paaruoat",
+  "bun-cha-hanoi": "paaruoat", bibimbap: "paaruoat", "chow-mein": "paaruoat", "dan-dan-nuudelit": "paaruoat",
+  "goi-cuon": "alkuruoat", "hapanimela-porsas": "paaruoat", "idli-sambar": "paaruoat",
+  "indonesialainen-bubur-sumsum": "aamupalat", "intialainen-rava-uttapam": "aamupalat", "intialainen-aloo-paratha": "aamupalat",
+  "indonesialainen-bubur-ayam-kanariisipuuro": "aamupalat", "indonesialainen-nasi-goreng-aamiaisriisi": "aamupalat",
+  "indonesialainen-serabi-kookospannukakku": "aamupalat", "dim-sum": "alkuruoat",
 };
 const recipeFileNames: Record<string, string> = { "vhh-kaalilaatikko": "kaalilaatikko" };
 
