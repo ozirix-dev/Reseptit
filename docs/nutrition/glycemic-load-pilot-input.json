@@ -2013,6 +2013,509 @@
           "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 2 dl converted using 100 g/dl."
         }
       ]
+    },
+    {
+      "recipeId": "pizza-margherita",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "vehnäjauhoja",
+          "grams": 300,
+          "fineliRecordId": "fineli-110-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 110; source state: raw/as listed.",
+          "giMatchEvidence": "Published GI analogue/category record bakery-products-category-mean-gi-58; source and limitations are listed centrally.",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "haaleaa vettä",
+          "grams": 200,
+          "fineliRecordId": "fineli-922-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "1 dl = 100 g for water and Fineli cream DL measure."
+        },
+        {
+          "name": "kuivahiivaa",
+          "grams": 3,
+          "fineliRecordId": "afcd-F009606-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to afcd-release-3 record F009606; source state: dry yeast."
+        },
+        {
+          "name": "suolaa",
+          "grams": 6.5,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass estimate for suolaa."
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 398; source state: canned crushed tomato.",
+          "giMatchEvidence": "Published GI analogue/category record tomato-raw-cooked-sauce-analogue-gi-22; source and limitations are listed centrally.",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "name": "mozzarellaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-29239-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 29239; source state: fresh 20% mozzarella."
+        },
+        {
+          "name": "tuoretta basilikaa",
+          "grams": 8,
+          "fineliRecordId": "fineli-11134-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Conservative maximum assumption: 1 g per listed leaf; not a weighed quantity.",
+          "excludedReason": "Leaf count has no documented mass measure; conservative 1 g per leaf cap used only to check the <1 g/serving omission threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.0424,
+          "negligibleAssumption": "8 basil leaves capped at 8 g total using Fineli #11134 (1.06 g available carbohydrate/100 g): at most 0.0424 g/serving; omitted under the <1 g rule."
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 13.5,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass estimate for oliiviöljyä."
+        }
+      ]
+    },
+    {
+      "recipeId": "meheva-suklaakakku",
+      "servings": 10,
+      "ingredients": [
+        {
+          "name": "tummaa suklaata",
+          "grams": 200,
+          "fineliRecordId": "fineli-32-2026-10-24",
+          "giRecordId": "dark-chocolate-international-tables-mean-gi-29",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 32; source state: dark chocolate as sold.",
+          "giMatchEvidence": "Published GI analogue/category record dark-chocolate-international-tables-mean-gi-29; source and limitations are listed centrally."
+        },
+        {
+          "name": "voita",
+          "grams": 200,
+          "fineliRecordId": "fineli-500-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "name": "kananmunaa",
+          "grams": 220,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "name": "sokeria",
+          "grams": 180,
+          "fineliRecordId": "fineli-1-2026-10-24",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed.",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "vehnäjauhoja",
+          "grams": 120,
+          "fineliRecordId": "fineli-110-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 110; source state: raw/as listed.",
+          "giMatchEvidence": "Published GI analogue/category record bakery-products-category-mean-gi-58; source and limitations are listed centrally.",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "kaakaojauhetta",
+          "grams": 30,
+          "fineliRecordId": "fineli-20-2026-10-24",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 20; source state: raw/as listed.",
+          "giMatchEvidence": "Published GI analogue/category record bakery-products-category-mean-gi-58; source and limitations are listed centrally.",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "leivinjauhetta",
+          "grams": 4,
+          "fineliRecordId": "afcd-F000247-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass estimate for leivinjauhetta."
+        },
+        {
+          "name": "tummaa suklaata",
+          "grams": 100,
+          "fineliRecordId": "fineli-32-2026-10-24",
+          "giRecordId": "dark-chocolate-international-tables-mean-gi-29",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 32; source state: dark chocolate as sold.",
+          "giMatchEvidence": "Published GI analogue/category record dark-chocolate-international-tables-mean-gi-29; source and limitations are listed centrally."
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 100,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Liquid density 1 g/ml.",
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        }
+      ]
+    },
+    {
+      "recipeId": "marjakiisseli-vaniljakastikkeella",
+      "servings": 6,
+      "ingredients": [
+        {
+          "name": "pakastemarjoja",
+          "grams": 500,
+          "fineliRecordId": "afcd-F009881-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "Ingredient mapped to afcd-release-3 record F009881; source state: frozen mixed berries.",
+          "giMatchEvidence": "Published GI analogue/category record fruit-category-mean-gi-51; source and limitations are listed centrally.",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "vettä",
+          "grams": 800,
+          "fineliRecordId": "fineli-922-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Liquid density 1 g/ml."
+        },
+        {
+          "name": "sokeria",
+          "grams": 80,
+          "fineliRecordId": "fineli-1-2026-10-24",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed.",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "perunajauhoja",
+          "grams": 28.5,
+          "fineliRecordId": "fineli-162-2026-10-24",
+          "giRecordId": "potatoes-category-mean-gi-71",
+          "massEvidence": "Ingredient-specific tablespoon mass estimate for perunajauhoja.",
+          "giMatchEvidence": "Published GI analogue/category record potatoes-category-mean-gi-71; source and limitations are listed centrally.",
+          "foodKey": "potatoes-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "kylmää vettä",
+          "grams": 100,
+          "fineliRecordId": "fineli-922-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Liquid density 1 g/ml."
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 250,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Liquid density 1 g/ml.",
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "täysmaitoa",
+          "grams": 250,
+          "fineliRecordId": "fineli-689-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Liquid density 1 g/ml.",
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "kananmunankeltuaista",
+          "grams": 40,
+          "fineliRecordId": "fineli-851-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Per-unit mass estimate for kananmunankeltuaista; edible-state basis documented."
+        },
+        {
+          "name": "sokeria",
+          "grams": 40,
+          "fineliRecordId": "fineli-1-2026-10-24",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed.",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "vaniljasokeria",
+          "grams": 4,
+          "fineliRecordId": "fineli-1-2026-10-24",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "massEvidence": "Ingredient-specific teaspoon mass estimate for vaniljasokeria.",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
+    },
+    {
+      "recipeId": "pannacotta-marjakastikkeella",
+      "servings": 6,
+      "ingredients": [
+        {
+          "name": "kuohukermaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Liquid density 1 g/ml.",
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "täysmaitoa",
+          "grams": 100,
+          "fineliRecordId": "fineli-689-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Liquid density 1 g/ml.",
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "sokeria",
+          "grams": 70,
+          "fineliRecordId": "fineli-1-2026-10-24",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed.",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "vaniljasokeria",
+          "grams": 4,
+          "fineliRecordId": "fineli-1-2026-10-24",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "massEvidence": "Ingredient-specific teaspoon mass estimate for vaniljasokeria.",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "liivatelehteä",
+          "grams": 6,
+          "fineliRecordId": "afcd-F004196-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Per-unit mass estimate for liivatelehteä; edible-state basis documented."
+        },
+        {
+          "name": "pakastemarjoja",
+          "grams": 250,
+          "fineliRecordId": "afcd-F009881-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "Ingredient mapped to afcd-release-3 record F009881; source state: frozen mixed berries.",
+          "giMatchEvidence": "Published GI analogue/category record fruit-category-mean-gi-51; source and limitations are listed centrally.",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "sokeria",
+          "grams": 25,
+          "fineliRecordId": "fineli-1-2026-10-24",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "massEvidence": "Ingredient-specific tablespoon mass estimate for sokeria.",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "sitruunamehua",
+          "grams": 15,
+          "fineliRecordId": "fineli-11557-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "1 tbsp × Fineli #11557 measure 15 g/tbsp; 1.6 g available carbohydrate/100 g gives 0.040 g/serving."
+        }
+      ]
+    },
+    {
+      "recipeId": "caponata",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "munakoisoa",
+          "grams": 800,
+          "fineliRecordId": "fineli-362-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Per-unit mass estimate for munakoisoa; edible-state basis documented.",
+          "giMatchEvidence": "Published GI analogue/category record vegetables-category-mean-gi-66; source and limitations are listed centrally.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 27,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass estimate for oliiviöljyä."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "Per-unit mass estimate for sipuli; edible-state basis documented.",
+          "giMatchEvidence": "Published GI analogue/category record onion-literature-analogue-gi-15; source and limitations are listed centrally.",
+          "foodKey": "onion",
+          "preparationKey": "cooked-in-recipe"
+        },
+        {
+          "name": "sellerinvartta",
+          "grams": 80,
+          "fineliRecordId": "afcd-F002390-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Per-unit mass estimate for sellerinvartta; edible-state basis documented.",
+          "giMatchEvidence": "Published GI analogue/category record vegetables-category-mean-gi-66; source and limitations are listed centrally.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 398; source state: canned crushed tomato.",
+          "giMatchEvidence": "Published GI analogue/category record tomato-raw-cooked-sauce-analogue-gi-22; source and limitations are listed centrally.",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "name": "vihreitä oliiveja",
+          "grams": 80,
+          "fineliRecordId": "afcd-F006198-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient mapped to afcd-release-3 record F006198; source state: drained olives.",
+          "giMatchEvidence": "Published GI analogue/category record vegetables-category-mean-gi-66; source and limitations are listed centrally.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "kapriksia",
+          "grams": 9,
+          "fineliRecordId": "afcd-F002220-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific tablespoon mass estimate for kapriksia.",
+          "giMatchEvidence": "Published GI analogue/category record vegetables-category-mean-gi-66; source and limitations are listed centrally.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "punaviinietikkaa",
+          "grams": 30,
+          "fineliRecordId": "fineli-929-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass estimate for punaviinietikkaa."
+        },
+        {
+          "name": "sokeria",
+          "grams": 12.5,
+          "fineliRecordId": "fineli-1-2026-10-24",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "massEvidence": "Ingredient-specific tablespoon mass estimate for sokeria.",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "name": "suolaa",
+          "grams": 6.5,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass estimate for suolaa."
+        },
+        {
+          "name": "tuoretta basilikaa",
+          "grams": 15,
+          "fineliRecordId": "fineli-11134-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 15 g. Fineli #11134 available carbohydrate is 1.06 g/100 g; 0.040 g/serving, below the 1 g cutoff."
+        }
+      ]
+    },
+    {
+      "recipeId": "siemengranola-jogurtilla",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kurpitsansiemeniä",
+          "grams": 80,
+          "fineliRecordId": "afcd-F008212-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to afcd-release-3 record F008212; source state: hulled pumpkin seeds."
+        },
+        {
+          "name": "auringonkukansiemeniä",
+          "grams": 60,
+          "fineliRecordId": "afcd-F008215-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to afcd-release-3 record F008215; source state: dried sunflower seeds."
+        },
+        {
+          "name": "pellavansiemenrouhetta",
+          "grams": 40,
+          "fineliRecordId": "afcd-F008210-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to afcd-release-3 record F008210; source state: ground linseed."
+        },
+        {
+          "name": "mantelilastuja",
+          "grams": 40,
+          "fineliRecordId": "fineli-379-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 379; source state: almonds, sliced; whole almond composition proxy."
+        },
+        {
+          "name": "voita",
+          "grams": 30,
+          "fineliRecordId": "fineli-500-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "name": "kanelia",
+          "grams": 2.6,
+          "fineliRecordId": "afcd-F002963-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass estimate for kanelia."
+        },
+        {
+          "name": "maustamatonta kreikkalaista jogurttia",
+          "grams": 400,
+          "fineliRecordId": "fineli-32201-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 32201; source state: plain Greek yogurt, 10% fat.",
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "vadelmia",
+          "grams": 100,
+          "fineliRecordId": "afcd-F007619-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "Ingredient mapped to afcd-release-3 record F007619; source state: raw raspberries.",
+          "giMatchEvidence": "Published GI analogue/category record fruit-category-mean-gi-51; source and limitations are listed centrally.",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
     }
   ],
   "selectionNotes": {
@@ -2024,7 +2527,16 @@
     "massamanAdded": "Massaman was the 21st estimate when originally added; the current pilot now includes 41 recipes after this 20-recipe extension.",
     "excludedPublication": "Beef liver casserole remains without a published total: the prior 3.45 estimate assigned an unmeasured GI of zero to liver carbohydrates.",
     "newCohort": "Twenty new recipes were chosen from the highest current available-carbohydrate estimates outside the existing 21. Selection rankings are not GK results; every estimate is recalculated from recipe ingredient amounts.",
-    "ingredientSources": "Fineli Rel20 remains the primary available-carbohydrate source. AFCD Release 3 supplies only chickpea flour and tamarind paste where Fineli had no matching item."
+    "ingredientSources": "Fineli Rel20 remains the primary available-carbohydrate source. AFCD Release 3 supplies only chickpea flour and tamarind paste where Fineli had no matching item.",
+    "newBatch": "Six further recipes were added because matching ingredient-level Fineli/AFCD calculation records were available. Fourteen other high-ranking candidates remain for later batches until ingredient mappings, masses and preparation details are checked. Existing recipe-level carbohydrate estimates were used only to rank candidates; each GL result is recalculated ingredient by ingredient.",
+    "newBatchRecipeIds": [
+      "pizza-margherita",
+      "meheva-suklaakakku",
+      "marjakiisseli-vaniljakastikkeella",
+      "pannacotta-marjakastikkeella",
+      "caponata",
+      "siemengranola-jogurtilla"
+    ]
   },
-  "additionalCarbohydrateEvidence": "AFCD Release 3 was used only for chickpea flour in vada pav and pure tamarind paste in pani puri because no matching Fineli foods were found. Source: Food Standards Australia New Zealand, Australian Food Composition Database Release 3, CC BY-SA 3.0 Australia. Values with and without sugar alcohols were equal for both items."
+  "additionalCarbohydrateEvidence": "AFCD Release 3 was used only for chickpea flour in vada pav and pure tamarind paste in pani puri because no matching Fineli foods were found. Source: Food Standards Australia New Zealand, Australian Food Composition Database Release 3, CC BY-SA 3.0 Australia. Values with and without sugar alcohols were equal for both items. This batch also uses AFCD Release 3 items identified by source IDs in the input records where matching Fineli foods were unavailable."
 }

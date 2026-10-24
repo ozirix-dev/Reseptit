@@ -758,6 +758,28 @@
       "note": "Measured boiled-potato value used as a preparation analogue for boiled potato pieces in these recipes; variety, region, cooling and recipe context differ.",
       "matchKind": "ANALOG",
       "confidence": "MEDIUM"
+    },
+    {
+      "id": "dark-chocolate-international-tables-mean-gi-29",
+      "gi": 29,
+      "foodKey": "chocolate",
+      "preparationKey": "dark-chocolate-as-sold",
+      "food": "Dark chocolate products",
+      "preparation": "As sold; mean of four tested products",
+      "qualityTier": "STRONG",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Supplemental Table 1, dark chocolate tests 1587–1590; mean GI 29",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "qualityEvidence": "The review identifies Supplemental Table 1 as ISO-method compliant. This mean summarizes four tested dark chocolate products and is not specific to the recipe brand or cacao percentage."
+      },
+      "note": "Mean of four ISO-tested dark chocolate products (GI 23, 44, 18, 29); not a brand-specific value.",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
     }
   ]
 }

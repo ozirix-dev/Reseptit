@@ -17,6 +17,8 @@ const expectedRecipeIds = [
   "medu-vada", "lohikeitto-kuohukermalla", "butter-chicken", "punainen-kanacurry-vhh", "thai-vihrea-curry-kanalla-vhh",
   "panang-curry-kanalla-vhh", "menemen", "lihapullat-kermakastikkeessa-vhh", "kanakorma-kukkakaaliriisilla",
   "uunikanapasta-kesakurpitsa", "khao-kha-moo-vhh", "larb-moo-vhh", "jauhelihakastike-kesakurpitsanuudeleilla",
+  "pizza-margherita", "meheva-suklaakakku", "marjakiisseli-vaniljakastikkeella",
+  "pannacotta-marjakastikkeella", "caponata", "siemengranola-jogurtilla",
 ];
 const recipeCategories: Record<string, string> = {
   "tortilla-de-patatas": "paaruoat", "vhh-lihamureke": "paaruoat", hummus: "alkuruoat",
@@ -32,6 +34,9 @@ const recipeCategories: Record<string, string> = {
   "lihapullat-kermakastikkeessa-vhh": "paaruoat", "kanakorma-kukkakaaliriisilla": "paaruoat",
   "uunikanapasta-kesakurpitsa": "paaruoat", "khao-kha-moo-vhh": "paaruoat", "larb-moo-vhh": "paaruoat",
   "jauhelihakastike-kesakurpitsanuudeleilla": "paaruoat",
+  "pizza-margherita": "paaruoat", "meheva-suklaakakku": "jalkiruoat",
+  "marjakiisseli-vaniljakastikkeella": "jalkiruoat", "pannacotta-marjakastikkeella": "jalkiruoat",
+  caponata: "alkuruoat", "siemengranola-jogurtilla": "aamupalat",
 };
 const recipeFileNames: Record<string, string> = { "vhh-kaalilaatikko": "kaalilaatikko" };
 
@@ -69,7 +74,7 @@ const sourceHashes = Object.fromEntries(await Promise.all(expectedRecipeIds.map(
 })));
 
 const results = inputs.map((recipe) => calculateGlycemicLoad(recipe, foodRecords, giRecords));
-input.selectionNotes.replacements[0] = "Massaman curry is included as the 21st estimate with a curry-paste carbohydrate scenario range; eggplant and minced-beef casserole remains in the cohort.";
+input.selectionNotes.newBatch = "Six further recipes were added in this batch because matching ingredient-level Fineli/AFCD calculation records were available. Fourteen other high-ranking candidates remain for later batches until ingredient mappings, masses and preparation details are checked. Existing recipe-level carbohydrate estimates were used only to rank candidates; each published GL is recalculated ingredient by ingredient.";
 const report = {
   generatedAt: new Date().toISOString(),
   scope: "Internal provenance report for ingredient-based per-serving estimates. These are not measurements of prepared meals or individual glucose responses.",
