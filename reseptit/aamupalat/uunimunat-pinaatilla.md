@@ -29,6 +29,10 @@ ingredients:
   - amount: null
     unit: ""
     item: suolaa, mustapippuria ja muskottipähkinää
+carbs_net_per_serving_g: 1.3
+carbs_total_per_serving_g: 1.9
+protein_per_serving_g: 19.0
+fat_per_serving_g: 28.4
 servings: 2
 time_total_min: 20
 difficulty: Helppo

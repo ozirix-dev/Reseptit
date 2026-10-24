@@ -8,6 +8,464 @@
     "state": "raw-edible-fillet",
     "basis": "per100g-edible",
     "carbohydrateDefinition": "EU_AVAILABLE",
-    "per100g": { "kcal": 226, "protein": 20, "fat": 16.4, "carbohydrate": 0, "fibre": null, "sugars": null, "polyols": null }
+    "per100g": {
+      "kcal": 226,
+      "protein": 20,
+      "fat": 16.4,
+      "carbohydrate": 0,
+      "fibre": null,
+      "sugars": null,
+      "polyols": null
+    }
+  },
+  {
+    "id": "fineli-858-2026-10-24",
+    "name": "Kananmuna, kuoreton",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "raw-edible-as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0.300000011920929,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 0.300000011920929,
+      "fibre": 0,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-500-2026-10-24",
+    "name": "Voi",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0.800000011920929,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 0.800000011920929,
+      "fibre": 0,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-631-2026-10-24",
+    "name": "Kerma, kuohukerma, rasvaa 38 %",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/631",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 2.90000009536743,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 2.90000009536743,
+      "fibre": 0,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-536-2026-10-24",
+    "name": "Oliiviöljy",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-352-2026-10-24",
+    "name": "Tomaatti",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/352",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 3.45000004768372,
+      "FIBT": 1.4,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 3.45000004768372,
+      "fibre": 1.4,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-335-2026-10-24",
+    "name": "Sipuli, keltasipuli",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 4.80000019073486,
+      "FIBT": 1.7,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 4.80000019073486,
+      "fibre": 1.7,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-34234-2026-10-24",
+    "name": "Sipuli, punasipuli",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34234",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 5.4474024772644,
+      "FIBT": 2,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 5.4474024772644,
+      "fibre": 2,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-386-2026-10-24",
+    "name": "Paprika, punainen",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/386",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 4.5,
+      "FIBT": 1.9,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 4.5,
+      "fibre": 1.9,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-205-2026-10-24",
+    "name": "Peruna, vanha, kuorittu",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/205",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 15.5,
+      "FIBT": 1,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 15.5,
+      "fibre": 1,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-11057-2026-10-24",
+    "name": "Avokado, kuorittu, kivetön",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11057",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0.769999980926514,
+      "FIBT": 6.7,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 0.769999980926514,
+      "fibre": 6.7,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-33456-2026-10-24",
+    "name": "Pinaatti",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/33456",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0.25,
+      "FIBT": 1.9,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 0.25,
+      "fibre": 1.9,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-698-2026-10-24",
+    "name": "Juusto, cheddar, rasvaa 34 %",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/698",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0.100000001490116,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 0.100000001490116,
+      "fibre": 0,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-642-2026-10-24",
+    "name": "Juusto, emmentaljuusto, rasvaa 27-30 %, punaleima",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/642",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-707-2026-10-24",
+    "name": "Pekoni, 32 % rasvaa",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/707",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-11571-2026-10-24",
+    "name": "Tuorejuusto, rasvaa 11 %, maustamaton",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11571",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 4,
+      "FIBT": 0.5,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 4,
+      "fibre": 0.5,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-389-2026-10-24",
+    "name": "Kesäkurpitsa, zucchini",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/389",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 2.5,
+      "FIBT": 0.7,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 2.5,
+      "fibre": 0.7,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-11562-2026-10-24",
+    "name": "Jauheliha, naudan, rasvaa 17 %",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11562",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-392-2026-10-24",
+    "name": "Ruohosipuli",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/392",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL, Fineli, CC BY 4.0",
+    "state": "as-listed",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0.730000019073486,
+      "FIBT": 2.7,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 0.730000019073486,
+      "fibre": 2.7,
+      "polyols": 0
+    }
   }
 ]

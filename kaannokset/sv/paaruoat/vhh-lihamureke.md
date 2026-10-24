@@ -10,6 +10,10 @@ main_ingredient:
   - naudan jauheliha
 cooking_method:
   - uuni
+carbs_net_per_serving_g: 1.8
+carbs_total_per_serving_g: 2.2
+protein_per_serving_g: 28.4
+fat_per_serving_g: 30.8
 servings: 6
 time_total_min: 70
 difficulty: lätt

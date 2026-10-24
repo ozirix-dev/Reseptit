@@ -32,6 +32,10 @@ ingredients:
   - amount: null
     unit: ""
     item: suolaa ja mustapippuria
+carbs_net_per_serving_g: 2.1
+carbs_total_per_serving_g: 2.7
+protein_per_serving_g: 16.8
+fat_per_serving_g: 26.7
 servings: 4
 time_total_min: 35
 difficulty: Helppo

@@ -5,6 +5,10 @@ url_slug: tortilla-de-patatas
 category: paaruoka
 language: th
 status: published
+carbs_net_per_serving_g: 24.2
+carbs_total_per_serving_g: 25.9
+protein_per_serving_g: 13.4
+fat_per_serving_g: 17.9
 servings: 4
 time_total_min: 45
 main_ingredient:

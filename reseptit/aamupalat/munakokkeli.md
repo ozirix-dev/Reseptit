@@ -26,6 +26,10 @@ ingredients:
   - amount: 1
     unit: rkl
     item: silputtua ruohosipulia
+carbs_net_per_serving_g: 0.8
+carbs_total_per_serving_g: 0.8
+protein_per_serving_g: 14.3
+fat_per_serving_g: 21.6
 servings: 2
 time_total_min: 10
 difficulty: Helppo

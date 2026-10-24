@@ -6,10 +6,10 @@ buildiin eikä automaattista metatietojen päivitystä.
 Suorita `site/`-kansiossa `npm run audit:nutrition`.
 Tuloksena on `tmp/nutrition/audit.json`: kaikkien julkaistujen FI-lähteiden
 inventaariorivit ja viiden pilotin aineskohtaiset puutteet. `--snapshot`
-tallentaa tarkistuskierroksen tuloksen tähän hakemistoon. Nykyinen
-lähdenäytön puuttumista koskeva luokitus perustuu 22.10.2026 repo-auditointiin;
-uusi laskentamuistio on arvioitava ja kytkettävä inventaarioon erikseen.
-Työkalu ei tunnista uusia irrallisia laskentamuistioita automaattisesti.
+tallentaa tarkistuskierroksen tuloksen tähän hakemistoon. Auditointikuva
+päivitettiin 24.10.2026, ja ensimmäisen erän laskentamuistio sekä
+Fineli-ruokatietueet sisältyvät nyt laskennan lähdetiivisteeseen. Uudet
+irralliset laskentamuistiot pitää lisätä lähteiden inventaarioon erikseen.
 
 `food-records.json` sisältää vain käytetyn pienen lähdeotoksen.
 `nutrition-model.ts` erottaa lähdetietueen, ainesmäärän, tuotteen vastaavuuden,
@@ -33,12 +33,24 @@ rajauksen ja tarkistajan tilan. Osatulokset eivät muutu koko reseptin arvoksi.
 
 ## Hiilihydraatit
 
-EU_AVAILABLE tarkoittaa lähteen ilmoittamaa imeytyvää/kuidun poissulkevaa
-hiilihydraattia. Siitä ei vähennetä kuitua. US_TOTAL_INCLUDING_FIBRE
-muunnetaan vähentämällä tunnettu kuitu täsmälleen kerran. UNKNOWN ei tuota
-vertailukelpoista hiilihydraattisummaa. US-total ja EU-available eivät ole
-suoraan yhteenlaskettavia: raportin carbohydrate on aina kuidun poissulkeva.
-Alkuperäinen lähteen määritelmä ja luvut säilyvät tietueessa.
+Laskennan `carbohydrate` tarkoittaa aina imeytyvää, kuidun poissulkevaa
+hiilihydraattia. `EU_AVAILABLE` kirjataan sellaisenaan.
+`US_TOTAL_INCLUDING_FIBRE` muunnetaan vähentämällä tunnettu kuitu täsmälleen
+kerran. Tuntematonta määritelmää ei yhdistetä laskelmaan.
+
+Sivun `carbs_total_per_serving_g` tarkoittaa kokonaishiilihydraattia:
+imeytyvä hiilihydraatti + ravintokuitu + polyolit. Tulos voidaan laskea vain,
+kun kaikkien mukaan otettujen ainesten imeytyvä hiilihydraatti, kuitu ja
+polyolit tunnetaan; puuttuva arvo ei ole nolla. Nettohiilihydraatti pysyy
+erillisenä arvona.
+
+Finelin API:ssa komponenttitunniste ratkaisee merkityksen, ei hakutuloksen
+yleisotsikko: `CHO` (komponentti 2034) on kuvauksen mukaan imeytyvä
+hiilihydraatti ja `FIBT` (komponentti 2168) kokonaisravintokuitu. Arvot
+yhdistetään vain komponenttimetadatan tunnisteilla. Hakuvasteen yleistä
+`fiber`-kenttää ei käytetä laskennassa, koska se on palauttanut epäluotettavia
+nollia. Polyolit säilytetään omana komponenttinaan ja lasketaan mukaan
+kokonaishiilihydraattiin, kun niiden määrä tunnetaan.
 
 Sokerit, kuitu ja polyolit ovat erillisiä kenttiä. NetCarbohydrate syntyy
 tässä varovaisessa pilotissa vain, jos polyolit ovat todistetusti nolla.
@@ -70,6 +82,16 @@ polyolikoostumus on epäselvä, nettoarvo jää puuttumaan.
 Ei kokonaisia tietokantoja, tuotetekstejä tai kuvia kopioitu.
 Seuraava kierros tarvitsee nimetyt tuotteet, syötävät punnitut määrät,
 ainekohtaiset muunnokset, valmistussaannon ja tarkistetut tietueet.
+
+## Reseptiarvioiden ensimmäinen erä, 24.10.2026
+
+Kymmenelle reseptille lisättiin per-annos-arviot, joiden laskentamuistio,
+Fineli-tietueiden ID:t ja yksikköoletukset ovat tiedostossa
+`docs/nutrition/estimates-2026-10-24.md`. Luvut ovat toimituksellisia arvioita;
+niitä ei tuoteta julkaisun buildissa automaattisesti. Nyt myös
+kokonaishiilihydraatit on lisätty 10 reseptille Finelin CHO-, FIBT- ja POLYL-
+komponenttien pohjalta; lähdepoiminta on `food-records.json`-tiedostossa.
+Fineli-attribuutio ja lisenssi on kirjattu muistioon.
 
 ## Nykyisten lukujen luokitus
 

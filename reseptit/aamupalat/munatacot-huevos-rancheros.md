@@ -41,6 +41,10 @@ ingredients:
   - amount: 1
     unit: rkl
     item: silputtua korianteria
+carbs_net_per_serving_g: 4.2
+carbs_total_per_serving_g: 9.6
+protein_per_serving_g: 21.3
+fat_per_serving_g: 34.6
 servings: 2
 time_total_min: 25
 difficulty: Helppo
