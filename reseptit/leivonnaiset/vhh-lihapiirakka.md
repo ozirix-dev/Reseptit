@@ -55,6 +55,11 @@ translation_status:
   en: published
   sv: published
   th: published
+carbs_net_per_serving_g: 2.27
+carbs_total_per_serving_g: 5.2
+protein_per_serving_g: 20.06
+fat_per_serving_g: 26.96
+
 ---
 
 # VHH-lihapiirakka

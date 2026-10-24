@@ -1,0 +1,308 @@
+{
+  "recipeId": "pizza-margherita",
+  "sourceHash": "dbd219f9f0863b81f0d165be06173a14711cf3ae7d0a303e0e08322a56624806",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-10",
+  "servings": 2,
+  "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "vehnäjauhoja",
+      "amount": 300,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 110; source state: raw/as listed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "item": "haaleaa vettä",
+      "amount": 2,
+      "unit": "dl",
+      "state": "tap water",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 922; source state: tap water.",
+      "gramsPerUnit": 100,
+      "conversionEvidence": "1 dl = 100 g for water and Fineli cream DL measure.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "kuivahiivaa",
+      "amount": 3,
+      "unit": "g",
+      "state": "dry yeast",
+      "matchEvidence": "Ingredient mapped to afcd-release-3 record F009606; source state: dry yeast.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F009606-release-3",
+        "name": "Yeast, dry powder",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dry yeast",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 6.3,
+          "fibre": 26.9,
+          "polyols": 0,
+          "protein": 36.4,
+          "fat": 5
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 1,
+      "unit": "tl",
+      "state": "iodised salt",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 30; source state: iodised salt.",
+      "gramsPerUnit": 6.5,
+      "conversionEvidence": "Ingredient-specific teaspoon mass estimate for suolaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "iodised salt",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "tomaattimurskaa",
+      "amount": 200,
+      "unit": "g",
+      "state": "canned crushed tomato",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 398; source state: canned crushed tomato.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-398-release-20",
+        "name": "TOMAATTIMURSKA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/398",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "canned crushed tomato",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.45,
+          "FIBT": 0.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3.45,
+          "fibre": 0.4,
+          "polyols": 0,
+          "protein": 0.55,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "mozzarellaa",
+      "amount": 200,
+      "unit": "g",
+      "state": "fresh 20% mozzarella",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 29239; source state: fresh 20% mozzarella.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-29239-release-20",
+        "name": "JUUSTO, MOZZARELLA, RASVAA 20 %, TUOREJUUSTO",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29239",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh 20% mozzarella",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 18.6,
+          "fat": 20.7
+        }
+      }
+    },
+    {
+      "item": "tuoretta basilikaa",
+      "amount": 8,
+      "unit": "lehteä",
+      "state": "minor fresh herb omitted",
+      "matchEvidence": "Fresh basil is a small herb amount; conservatively bounded per serving.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Small fresh basil quantity excluded because local source is missing fibre value",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 3,
+        "netCarbohydrate": 0.8,
+        "totalCarbohydrate": 0.8,
+        "protein": 0.4,
+        "fat": 0.2
+      },
+      "omissionImpactEvidence": "15 g garnish/herb basis; conservative upper bound includes all recipe basil and is per serving."
+    },
+    {
+      "item": "oliiviöljyä",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "raw/as listed",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 536; source state: raw/as listed.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Ingredient-specific tablespoon mass estimate for oliiviöljyä.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    }
+  ]
+}

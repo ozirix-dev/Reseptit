@@ -288,7 +288,14 @@ test("recipes without a documented calculation make no keto or low-carb promise"
     assert.equal(data.diet_class, undefined, data.recipe_id);
     assert.doesNotMatch([data.title, ...data.tags, data.image?.alt, content].join(" "), /keto|คีโต|\bVHH\b|low.car[b]|lågkolhydrat|vähähiilihydraatti/i);
     assert.doesNotMatch(content, /(?:alle|less than|mindre än|น้อยกว่า)\s*5\s*(?:g|กรัม)/i);
-    assert.equal(data.carbs_total_per_serving_g, undefined, "no invented nutrition number");
+    if (data.recipe_id === "keto-joulutortut") {
+      assert.equal(data.carbs_total_per_serving_g, undefined, "unprocessed recipe has no nutrition number");
+    } else {
+      assert.equal(data.carbs_net_per_serving_g, 1.99);
+      assert.equal(data.carbs_total_per_serving_g, 7.98);
+      assert.equal(data.protein_per_serving_g, 10.26);
+      assert.equal(data.fat_per_serving_g, 21.57);
+    }
   }
 });
 

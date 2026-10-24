@@ -1,0 +1,416 @@
+{
+  "recipeId": "marjakiisseli-vaniljakastikkeella",
+  "sourceHash": "f2cb1fea36a32b1b7db755aa2367e53365c2082bdce8e78f2e068eefa09994d4",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-10",
+  "servings": 6,
+  "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "pakastemarjoja",
+      "amount": 500,
+      "unit": "g",
+      "state": "frozen mixed berries",
+      "matchEvidence": "Ingredient mapped to afcd-release-3 record F009881; source state: frozen mixed berries.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F009881-release-3",
+        "name": "Mixed berry, frozen",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "frozen mixed berries",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 9.6,
+          "fibre": 3.3,
+          "polyols": 0,
+          "protein": 0.6,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "vettä",
+      "amount": 800,
+      "unit": "ml",
+      "state": "tap water",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 922; source state: tap water.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Liquid density 1 g/ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "sokeria",
+      "amount": 80,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 99.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "perunajauhoja",
+      "amount": 3,
+      "unit": "rkl",
+      "state": "dry potato starch",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 162; source state: dry potato starch.",
+      "gramsPerUnit": 9.5,
+      "conversionEvidence": "Ingredient-specific tablespoon mass estimate for perunajauhoja.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-162-release-20",
+        "name": "JAUHO, PERUNAJAUHO TAI -SUURIMO, PERUNATÄRKKELYS",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/162",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "dry potato starch",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 81.6,
+          "FIBT": 1.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 81.6,
+          "fibre": 1.4,
+          "polyols": 0,
+          "protein": 0.06,
+          "fat": 0.05
+        }
+      }
+    },
+    {
+      "item": "kylmää vettä",
+      "amount": 100,
+      "unit": "ml",
+      "state": "tap water",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 922; source state: tap water.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Liquid density 1 g/ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "kuohukermaa",
+      "amount": 250,
+      "unit": "ml",
+      "state": "liquid 38% cream",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 631; source state: liquid 38% cream.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Liquid density 1 g/ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-631-release-20",
+        "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/631",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "liquid 38% cream",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 2.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 2.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.88,
+          "fat": 38
+        }
+      }
+    },
+    {
+      "item": "täysmaitoa",
+      "amount": 250,
+      "unit": "ml",
+      "state": "raw/as listed",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 689; source state: raw/as listed.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Liquid density 1 g/ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-689-release-20",
+        "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/689",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.5
+        }
+      }
+    },
+    {
+      "item": "kananmunankeltuaista",
+      "amount": 2,
+      "unit": "kpl",
+      "state": "raw egg yolk, edible portion",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 851; source state: raw egg yolk, edible portion.",
+      "gramsPerUnit": 20,
+      "conversionEvidence": "Per-unit mass estimate for kananmunankeltuaista; edible-state basis documented.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-851-release-20",
+        "name": "KANANMUNAN KELTUAINEN, 34 % KANANMUNAN MASSASTA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/851",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw egg yolk, edible portion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.2,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.2,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 15.94,
+          "fat": 29.17
+        }
+      }
+    },
+    {
+      "item": "sokeria",
+      "amount": 40,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 99.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "vaniljasokeria",
+      "amount": 1,
+      "unit": "tl",
+      "state": "raw/as listed",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 1; source state: raw/as listed.",
+      "gramsPerUnit": 4,
+      "conversionEvidence": "Ingredient-specific teaspoon mass estimate for vaniljasokeria.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 99.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    }
+  ]
+}

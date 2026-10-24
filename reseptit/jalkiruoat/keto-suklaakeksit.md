@@ -48,6 +48,11 @@ image:
   alt: Mantelijauhoiset suklaakeksit suklaapaloilla
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 1.38
+carbs_total_per_serving_g: 12.63
+protein_per_serving_g: 4.77
+fat_per_serving_g: 20.03
+
 ---
 
 # Suklaakeksit – keto

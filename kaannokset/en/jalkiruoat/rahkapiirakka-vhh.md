@@ -50,6 +50,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/jalkiruoat/rahkapiirakka-vhh.md
 translation_of: rahkapiirakka-vhh
+carbs_net_per_serving_g: 2.67
+carbs_total_per_serving_g: 7.73
+protein_per_serving_g: 10.32
+fat_per_serving_g: 23.9
+
 ---
 
 # Low-Carb Quark Pie

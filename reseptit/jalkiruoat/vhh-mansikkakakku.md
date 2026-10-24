@@ -48,6 +48,11 @@ image:
   alt: Mantelijauhopohjainen mansikkakakku kermatäytteellä
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 3.25
+carbs_total_per_serving_g: 15.1
+protein_per_serving_g: 7.16
+fat_per_serving_g: 15.8
+
 ---
 
 # Mansikkakakku – VHH

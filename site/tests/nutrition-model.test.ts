@@ -58,20 +58,32 @@ test("unknowns do not become zero, partial ingredients do not become recipe tota
   const input = fixture(); delete input.ingredients[0].record!.per100g.protein;
   assert.equal(calculate(input).total.protein, null); assert.equal(calculate(input).total.kcal, 250);
 });
+test("missing optional energy or sugar source fields do not block the four supported macros", () => {
+  const input = fixture();
+  delete input.ingredients[0]!.record!.per100g.kcal;
+  delete input.ingredients[0]!.record!.per100g.sugars;
+  assert.equal(calculate(input).status, "ESTIMATE WITH EVIDENCE");
+  assert.equal(calculate(input).perServing.kcal, null);
+  assert.equal(calculate(input).perServing.sugars, null);
+});
 test("servings and provenance must be valid", () => {
   for (const servings of [0, -1, 1.5, NaN, Infinity]) assert.throws(() => calculate({ ...fixture(), servings }));
   assert.throws(() => calculate({ ...fixture(), sourceHash: "" }));
 });
-test("EU fibre is never subtracted again; US needs fibre; only sourced polyols are subtracted", () => {
+test("EU available carbohydrates already exclude polyols; total carbohydrate removes polyols only when source definition includes them", () => {
   assert.throws(() => normalizeCarbohydrate(food, true));
   const us = { ...food, carbohydrateDefinition: "US_TOTAL_INCLUDING_FIBRE" as const };
   assert.equal(normalizeCarbohydrate(us).available, 16);
   assert.equal(normalizeCarbohydrate({ ...us, per100g: { carbohydrate: 20 } }).available, null);
   assert.throws(() => normalizeCarbohydrate({ ...us, per100g: { carbohydrate: 2, fibre: 4 } }));
-  assert.equal(normalizeCarbohydrate({ ...food, per100g: { carbohydrate: 20, polyols: 3 } }).net, 17);
+  assert.equal(normalizeCarbohydrate({ ...food, per100g: { carbohydrate: 20, polyols: 3 } }).net, 20);
+  assert.equal(normalizeCarbohydrate({ ...food, carbohydrateDefinition: "EU_TOTAL_INCLUDING_POLYOLS", per100g: { carbohydrate: 20, polyols: 3 } }).net, 17);
   assert.equal(normalizeCarbohydrate({ ...food, polyolsSourceVerified: false, per100g: { carbohydrate: 20, polyols: 3 } }).net, null);
-  assert.equal(normalizeCarbohydrate({ ...food, per100g: { carbohydrate: 2, polyols: 3 } }).net, null);
+  assert.equal(normalizeCarbohydrate({ ...food, per100g: { carbohydrate: 2, polyols: 3 } }).net, 2);
   assert.equal(normalizeCarbohydrate({ ...food, per100g: { carbohydrate: 20, polyols: null } }).net, null);
+  const fineliSugarFreeChocolate = { ...food, per100g: { carbohydrate: 1.7, fibre: 3.5, polyols: 50, protein: 2.3, fat: 36.65 } };
+  assert.equal(normalizeCarbohydrate(fineliSugarFreeChocolate).net, 1.7);
+  assert.equal(totalCarbohydrate(1.7, 3.5, 50), 55.2);
   assert.equal(normalizeCarbohydrate({ ...food, carbohydrateDefinition: "UNKNOWN" }).available, null);
 });
 test("Foodin erythritol label reports the polyol mass and contributes zero net carbs", async () => {

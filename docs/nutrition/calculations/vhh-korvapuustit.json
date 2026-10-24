@@ -1,0 +1,344 @@
+{
+  "recipeId": "vhh-korvapuustit",
+  "sourceHash": "6be58f0453320634c0c1b54ac80147c668b08b77b59f3b713506bbe4e0915669",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-10",
+  "servings": 8,
+  "scope": "Complete recipe per documented serving; whole listed ingredient amounts included with documented edible/preparation states.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "mozzarella-raastetta",
+      "amount": 150,
+      "unit": "g",
+      "state": "fresh 20% mozzarella",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 29239; source state: fresh 20% mozzarella.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-29239-release-20",
+        "name": "JUUSTO, MOZZARELLA, RASVAA 20 %, TUOREJUUSTO",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29239",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh 20% mozzarella",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 18.6,
+          "fat": 20.7
+        }
+      }
+    },
+    {
+      "item": "maustamatonta tuorejuustoa",
+      "amount": 50,
+      "unit": "g",
+      "state": "plain 11% cream cheese",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 11571; source state: plain 11% cream cheese.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11571-release-20",
+        "name": "TUOREJUUSTO, RASVAA 11 %, MAUSTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11571",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain 11% cream cheese",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4,
+          "FIBT": 0.557,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4,
+          "fibre": 0.557,
+          "polyols": 0,
+          "protein": 7.4,
+          "fat": 11
+        }
+      }
+    },
+    {
+      "item": "mantelijauhoa",
+      "amount": 120,
+      "unit": "g",
+      "state": "dry almond meal",
+      "matchEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006077-release-3",
+        "name": "Nut, almond meal",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dry almond meal",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 5.4,
+          "fibre": 11,
+          "polyols": 0,
+          "protein": 19.7,
+          "fat": 50.5
+        }
+      }
+    },
+    {
+      "item": "psylliumia",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "dry psyllium husk",
+      "matchEvidence": "Ingredient mapped to afcd-release-3 record F007502; source state: dry psyllium husk.",
+      "gramsPerUnit": 8,
+      "conversionEvidence": "Ingredient-specific tablespoon mass estimate for psylliumia.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F007502-release-3",
+        "name": "Psyllium, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dry psyllium husk",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1,
+          "fibre": 88.7,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 1.3
+        }
+      }
+    },
+    {
+      "item": "kananmunaa",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "raw egg, shell excluded",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw egg, shell excluded",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    },
+    {
+      "item": "voita täytteeseen",
+      "amount": 30,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        }
+      }
+    },
+    {
+      "item": "erytritolia täytteeseen",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "as-sold; pure organic erythritol per ingredient list",
+      "matchEvidence": "Ingredient mapped to food-records record foodin-erythritol-200g-label-2026-10-24; source state: as-sold; pure organic erythritol per ingredient list.",
+      "gramsPerUnit": 12,
+      "conversionEvidence": "Ingredient-specific tablespoon mass estimate for erytritolia täytteeseen.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "foodin-erythritol-200g-label-2026-10-24",
+        "name": "Foodin Erytritoli, Luomu 200 g",
+        "sourceUrl": "https://foodin.fi/tuote/erytritoli-luomu-200g-2/",
+        "retrievedAt": "2026-10-24",
+        "licence": "Foodin product-label factual nutrient declaration; product reference only, not an open-database licence",
+        "state": "as-sold; pure organic erythritol per ingredient list",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "polyolsSourceVerified": true,
+        "per100g": {
+          "kcal": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbohydrate": 100,
+          "fibre": 0,
+          "sugars": 0,
+          "polyols": 100
+        },
+        "polyolsEvidence": "Foodin product label states that 100 g carbohydrates per 100 g are sugar alcohols."
+      }
+    },
+    {
+      "item": "kanelia",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "ground cinnamon",
+      "matchEvidence": "Ingredient mapped to afcd-release-3 record F002963; source state: ground cinnamon.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "Ingredient-specific tablespoon mass estimate for kanelia.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F002963-release-3",
+        "name": "Cinnamon, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground cinnamon",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 27.5,
+          "fibre": 53.1,
+          "polyols": 0,
+          "protein": 4,
+          "fat": 1.2
+        }
+      }
+    },
+    {
+      "item": "kananmunaa voiteluun",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "raw egg, shell excluded",
+      "matchEvidence": "Ingredient mapped to fineli-release-20 record 858; source state: raw egg, shell excluded.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Per-unit mass estimate for kananmunaa voiteluun; edible-state basis documented.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw egg, shell excluded",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    }
+  ]
+}

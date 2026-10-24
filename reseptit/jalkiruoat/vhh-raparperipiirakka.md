@@ -51,6 +51,11 @@ image:
   alt: Mantelipohjainen raparperipiirakka rahkatäytteellä
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 3.46
+carbs_total_per_serving_g: 15.59
+protein_per_serving_g: 8.47
+fat_per_serving_g: 17.59
+
 ---
 
 # Raparperipiirakka – VHH
