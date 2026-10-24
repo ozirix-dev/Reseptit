@@ -1,15 +1,16 @@
 {
-  "sourceRevision": "dcf0937a8306cc2d8f0c0dbde8656c64c7f21df9",
-  "sourceWorkingTreeChanges": "M docs/nutrition/estimates-2026-10-24-batch-5.md\n M reseptit/paaruoat/butter-chicken.md\n M tools/calculate-nutrition-batch5.py",
+  "sourceRevision": "e1b89062e0620d1345385adf713479d78b31ac43",
+  "sourceWorkingTreeChanges": "M docs/nutrition/food-records.json\n M reseptit/alkuruoat/yum-woon-sen-vhh.md\n M reseptit/paaruoat/gai-yang-vhh.md\n M reseptit/paaruoat/keltainen-kanacurry-vhh.md\n M reseptit/paaruoat/khao-kha-moo-vhh.md\n M reseptit/paaruoat/khao-man-gai-vhh.md\n M reseptit/paaruoat/khao-soi-vhh-konjac.md\n M reseptit/paaruoat/larb-moo-vhh.md\n M reseptit/paaruoat/massaman-curry-kanalla-vhh.md\n M site/scripts/nutrition-audit.ts",
   "sourceInputHashes": {
     "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
     "docs/nutrition/estimates-2026-10-24-batch-2.md": "423355906d1cc88e800f647c02f313ec7eaae8bd0d543b7515336f5505e806fa",
     "docs/nutrition/estimates-2026-10-24-batch-3.md": "fe689b3d3fd8977db556c2bd27493212482ef882ad2785c497525686f35022c3",
     "docs/nutrition/estimates-2026-10-24-batch-4.md": "2a793f59d4e8b53e06187574c9e1936c12de2a98f773d5451a16e56ee9be1852",
     "docs/nutrition/estimates-2026-10-24-batch-5.md": "fc8d31961c844e8e6ad1264997e9b190d8f49b29fd5dfd26c8ecb9f0da428d05",
+    "docs/nutrition/estimates-2026-10-24-batch-6.md": "f61c27e40f3d2a107f2662c3f0b5676bdaf94d923d18c2b4c722ef593b56b2cf",
     "docs/nutrition/estimates-2026-10-24.md": "2d2458d8a65902f6e6b45a010e40202aea7e892d8bc5e2fc11876f88af2bd2f6",
     "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
-    "docs/nutrition/food-records.json": "f1239843fba46828bd8bf5957052fe622d3410338e6e1d2f566bd6bbee0836d0",
+    "docs/nutrition/food-records.json": "696af056241c211a0c5913e9db400f36f6f3dd8124644ea52ee4f9bc1e42fde4",
     "reseptit/_mallipohjat/ateriakokonaisuus/ateriakokonaisuus_pohja.md": "1ea1e6ec5e4f9598909099c3f083179b09bedd9926a9ddc23536b2181a4e3a85",
     "reseptit/_mallipohjat/resepti/resepti_pohja.md": "8872ff8c2886ac87e550065071050b123f9e39d762a6da92b0c5165749ce4a2c",
     "reseptit/aamupalat/halloumimunakas.md": "f153038febb225c850e987258e3ab1d9e4386610b3a8091d102e1e34339668d3",
@@ -178,7 +179,7 @@
     "reseptit/alkuruoat/pani-puri.md": "052af1c31d78a31171f98e38c6b4b36fef89bce1b6a9a4bd442491d4873f5f1d",
     "reseptit/alkuruoat/samosa.md": "46434c90d2a686eba39107cb9fb68ee4a1d3004ba24adade63de81db470a3140",
     "reseptit/alkuruoat/savulohi-tuorejuustorulla.md": "140ba5812092695ba483827ddb1bbe837c6cb5ddb57dc164c0d0c573ac55ec04",
-    "reseptit/alkuruoat/som-tam-vhh-kurkkuna.md": "cf48630b81c57be2cdb0a59b355c8adbec6a67f9f668c9916dbce592c4714c46",
+    "reseptit/alkuruoat/som-tam-vhh-kurkkuna.md": "94fdf1223e462b8ab6bcb5f8511f2872c7d2d440508fe9c4e1d04117da14da27",
     "reseptit/alkuruoat/spanakopita.md": "9c62ee59cac6fb73e8ab5f694bf0d5a75f3832462352eb48a5235f8d2588b40f",
     "reseptit/alkuruoat/tabbouleh.md": "eaeabea8586ff26d714d431a5989fb33d70dde3f16b549b9141aea381bec7ec9",
     "reseptit/alkuruoat/tomaatti-mozzarella-vhh.md": "391453085ace496ab69d30d68b67d2e4593287d7bcfb414323446bdd65dbbc10",
@@ -186,7 +187,7 @@
     "reseptit/alkuruoat/uunifeta-oliivit-alkupala.md": "12e60b5dde9a367ba95fe6eb0b7496ee1b24d907593d519a35fd3a16683076b5",
     "reseptit/alkuruoat/vada-pav.md": "c9c0fa28820ada9ec13566a81e281a81d785c5632b3de6741b2823720021dd77",
     "reseptit/alkuruoat/xiaolongbao.md": "29680988226e6dd8d16ebeaa07bee5519f406c253c958ca1da91390073b081fa",
-    "reseptit/alkuruoat/yum-woon-sen-vhh.md": "818af770b8090d6b4afabddeb8ab9abf732d94684c94c0405ec09e84401de20a",
+    "reseptit/alkuruoat/yum-woon-sen-vhh.md": "1e4cd85a75736b06072109c88b2497a69e34c06bfa187033fdfaf741294fa3e8",
     "reseptit/arkisto/README.md": "b15d68a1747ba2e3e66ac4803c29154d3ecdbea185e03f5d72eafdce196e985b",
     "reseptit/jalkiruoat/belgialainen-proteiini-vohveli.md": "df9e535dce8777714e3f9684f7284386fb26d957a9ef2a24e0d6f9bdf9c95477",
     "reseptit/jalkiruoat/gulab-jamun.md": "963d9b79f962b790d752de2c6708c2564c67c1765a587580734c99d93ed08b11",
@@ -242,7 +243,7 @@
     "reseptit/paaruoat/dan-dan-nuudelit.md": "bbfa85709de64382f776a2471a548ba82f275afcc46fd49cee7042086277b3b6",
     "reseptit/paaruoat/doner-kebab.md": "6ee9bece43ed90260e2a252bef32eb125389c0ef3a64cc33ba22c4734145ef49",
     "reseptit/paaruoat/falafel.md": "3cebb872f8d56cce27ec0d9f88b59a80079a19e8e95b6d9d3919924455e4c57e",
-    "reseptit/paaruoat/gai-yang-vhh.md": "0c9afe75486901dec6f4fbff0a08aeef83b4a009d07a1b14e7de171048a9cae0",
+    "reseptit/paaruoat/gai-yang-vhh.md": "81edf96531e2c8263664efc3003bf88c8951c16a946926b394253565269650fc",
     "reseptit/paaruoat/hapanimela-porsas.md": "f7c2ee59306b6ef43ccdd1b6c5a4427196384f1f65630e94dc57f01ca5aae7b4",
     "reseptit/paaruoat/harira.md": "034ee2c89c15f9e7bd4db3f32f1b13d8f83d49a7d347ed58f53d819ee8978a5c",
     "reseptit/paaruoat/hernekeitto-savupotkalla.md": "5ecde580ab6f4707451004339aecf82bb956d9a32bfed7851e6fd9c862d2bd6d",
@@ -261,7 +262,7 @@
     "reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md": "376944f862c141d176614a6e47d14e6222b27ea624b3701efb160e7f1227070f",
     "reseptit/paaruoat/jerk-kana.md": "d0f74c9ce4b05db7f97022e30270bcf40e7b4baad6b4239906d2063abe642ce6",
     "reseptit/paaruoat/kaalilaatikko.md": "c2bce9525a0983643213a101150dd0e10a5db6be34e4318585c8c666f628cf3f",
-    "reseptit/paaruoat/kai-jiew-vhh.md": "94861d101127d37456e7e178f9f96c292a7fd3dbf1ffc615284b38e0a3346364",
+    "reseptit/paaruoat/kai-jiew-vhh.md": "5950758778853b04099353aaf3339c7063bc51551fa691345d98e7f01df19716",
     "reseptit/paaruoat/kana-enchilada-kukkakaalivuoka.md": "45fb4e01784aae0556a6761ae9eb8714ff16a182f6046a2ad7c4c48238cc9566",
     "reseptit/paaruoat/kana-fajita-pelti.md": "7e400e1644d08a6e5f07a95a8470a1b145af2e870ebcb70c82b5611d7203716c",
     "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md": "f6154fda4193442cc9d90bc4463c4489c659dd7bccf3899edd47a489fd75475c",
@@ -275,16 +276,16 @@
     "reseptit/paaruoat/kanaviillokki-kukkakaalilla.md": "aa88e585b86afd036860eaf0c7a418d47354e8e4e29650cc89f467351889114a",
     "reseptit/paaruoat/kantonilainen-hoyrytetty-kala.md": "55f9e6fb113bab22c857e02f1d2f331ab0fbc404ef2812885cca11e399c243b4",
     "reseptit/paaruoat/karjalanpaisti-vhh.md": "5ef9936853845a3b3a1fee0c412c3a8c4a47a42e3af7ccc6de3d39c8c57771e7",
-    "reseptit/paaruoat/keltainen-kanacurry-vhh.md": "194f8c428400bdbc080013b1a886ff9241fdde179d9f8c3d40ffb03ee1af477b",
+    "reseptit/paaruoat/keltainen-kanacurry-vhh.md": "4621846a905039b33d4c58c402299e5f8b870a9f7a413d13a884813fa3478010",
     "reseptit/paaruoat/kerala-kalacurry.md": "728e94afacbbed7c437bc7e0306e5b7ba6b26addf6b54e95aaade4b8bcc30481",
     "reseptit/paaruoat/kermainen-kanasienipannu.md": "3815b871d0c75aee29cc0c4ac169cb6ae97ca41a3c7a6c9b5926268844ee470e",
     "reseptit/paaruoat/kermainen-lohipata.md": "a1b08248995e6e82ce770cb3974ad596e7a2846f8a48db50d287c71e5a4c7f07",
     "reseptit/paaruoat/kesakurpitsalasagne-vhh.md": "40da2e10ce13146a3fef732bf1b8829bc650c756e38908f5487bd2346dea680b",
     "reseptit/paaruoat/keto-pinaattiletut.md": "487c846353dc5847f97b032b3c8ee55ad72cae74acaabc411ad6d6bac036114e",
     "reseptit/paaruoat/ketopizza-pofiber-pohjalla.md": "c6b50996b2e5da2969621b430aca57472a41df7f420ba2f66457366e486fc56f",
-    "reseptit/paaruoat/khao-kha-moo-vhh.md": "bbc5e19eb6e95dc177a132975f7e428173b597f543d14c4e659e461868092041",
-    "reseptit/paaruoat/khao-man-gai-vhh.md": "1ddbd8a9625cd5ff8e4259ee4ed082c238cb6f02304238f32cc3408c03f1e860",
-    "reseptit/paaruoat/khao-soi-vhh-konjac.md": "03ac543d7cf931e1dcfd5072a4bd5b7abfcac5cda3a6f4f79a827ed4e924a48f",
+    "reseptit/paaruoat/khao-kha-moo-vhh.md": "e91d83b50dd8ba3a48c92a6c5e019965c2158251c656541fff69e66a9f2f6045",
+    "reseptit/paaruoat/khao-man-gai-vhh.md": "0406d5d56f6aeeadc74dfb209162ba9fc2a017142bdac8c74af74968fc8f4707",
+    "reseptit/paaruoat/khao-soi-vhh-konjac.md": "d5bf800f396991652b535475c232ef8ad77ae9ad1a4989df5ed0644b506a80b0",
     "reseptit/paaruoat/kimchi-jjigae.md": "ddf90c6176447617f9e997b58c8587fb5a3979aa40656aec152cab4407afb561",
     "reseptit/paaruoat/kookos-kanakeitto.md": "8cf8fbbb4f799f7cc370acd1f30b5ce1ffa7b47dde4a214a15090e99cdc0e540",
     "reseptit/paaruoat/kookos-lime-kanacurry.md": "f8e80bc3bd1ef905b966874f8b1729abe62e4f65a7e56355c6d649c7faad0523",
@@ -295,7 +296,7 @@
     "reseptit/paaruoat/kung-pao-kana.md": "8ce8b2fdb6a9e9395bc8d7f36a325acf0d9fd31d4cf1098827b23de03f2b2561",
     "reseptit/paaruoat/lanttulaatikko-kermainen.md": "f9081f7610dbdfc54b836183b1eda85b45b3874505f31cbf4cea91b4bba80eba",
     "reseptit/paaruoat/lanzhou-naudanliha-nuudelikeitto.md": "07af0893f30f17b1316f5336826c6f5ade56c6d086a9a19612727a33d3ee71ea",
-    "reseptit/paaruoat/larb-moo-vhh.md": "c76eb4fb7bebf13b43e4d58db4847f6162c81677a418c2732736074c080d2bef",
+    "reseptit/paaruoat/larb-moo-vhh.md": "ea95cb233ffeca01d3ea7cada197edcad57e96a5ad7d7e6472cabe8ab58ba9aa",
     "reseptit/paaruoat/liha-juureskeitto-perunaton.md": "6085decb192192124301b8e1f54953ee28267f8205948f4b60afd52d1497e442",
     "reseptit/paaruoat/lihapullat-kermakastikkeessa-vhh.md": "75d564728182d7f7828dc2cce8007f6601c1bfdbb42efd4815857592ffad533c",
     "reseptit/paaruoat/lindstrominpihvit-kaalilla.md": "33a8de0ec4fff21794e7461de1d717a777bae7b7b065dbe57e45aadeab647592",
@@ -306,7 +307,7 @@
     "reseptit/paaruoat/mapo-tofu.md": "13ee33643135ded5d919c1263d5d4a5017a13b55024d2d2fa109d76709591895",
     "reseptit/paaruoat/marokkolainen-couscous.md": "019bb3ada3171590e436ddcf300fd2005fbdf9186e98cd0c31c5cb3e4aa5b97e",
     "reseptit/paaruoat/masala-dosa.md": "994a62ee4c1072ec20c689ef5955992b706580f75268331bad8617822bf36ab3",
-    "reseptit/paaruoat/massaman-curry-kanalla-vhh.md": "a60015e64ca719fa4e66849fd89f283a2012f782dd85170a89091b56c4020ef4",
+    "reseptit/paaruoat/massaman-curry-kanalla-vhh.md": "7edb459868c83b942ddda10e9f49ec6f11c700326a70478d5bd1bce40604baf1",
     "reseptit/paaruoat/menemen.md": "c3b72091f9b41c99cf63c2a396267e2cba82a7b8c569e6136ab8be11ac5623b9",
     "reseptit/paaruoat/miso-lohi-paksoi.md": "2400ae301f16815cb30554b2bcd9f68ef7397735ed84bc801233a5a4921adfdf",
     "reseptit/paaruoat/moo-ping-vhh.md": "017388703bb7b3b257aedd0599b6cdca21f7cc62743e3634bf19dba62f322a7a",
@@ -385,10 +386,10 @@
     "site/scripts/glycemic-load-pilot.ts": "2d6753c193c08f3399da48aef59918f6d54885a6d7fbf10472dbbbc2fa3628a5",
     "site/scripts/inventory.ts": "f10fef13e40a2bc6b63099f9708c3272b56f02e380bf6d45671aad6a59932229",
     "site/scripts/measure-images.mjs": "d41d5eeb11c31bc5e099d127d56892fe9226ff2142d90b2d52a8ef9fb604fd98",
-    "site/scripts/nutrition-audit.ts": "6623de8be2fc223f7ee3d59f0ea8cd63936c35ba01fb1994d5bb03d4b437dc9c",
-    "site/scripts/nutrition-model.ts": "0dc051e0a3a92e8e6ef7fe6e0d25c1a4c4e5a4115362236998819adce897c437",
+    "site/scripts/nutrition-audit.ts": "677552b3ed40b34988dc18341bfec201c0149b2e9ee47cb88521e6b5312ea3e4",
+    "site/scripts/nutrition-model.ts": "534b91e093e46c3a31b8aa5f906541ad932448af5b1806f3248375d2b8e8d105",
     "site/scripts/nutrition-pilot.ts": "89457cecaf3bec23c28e0d846c2e0a7c47a33d2c4681d1e6d5e1e6a60f9b8cb3",
-    "site/scripts/nutrition-provenance.ts": "f8a38f404c34d577eacebdcab41b14c4eb007899c59591d4d132470a110d0b54",
+    "site/scripts/nutrition-provenance.ts": "3af34b2379e4198a124209be98ab2a3b39f055bcf8cd8d4dbdadb00d07bd7065",
     "site/scripts/prerender.ts": "c7c3aeffaf1755617dddc90ce1c8001b92b8ceb6233360b027906a144de765ad",
     "site/scripts/scale-images.ts": "5c2dd261bf4d71ea403907232697fd57316e47c9f2060f9285d0f35c792df0fe",
     "site/scripts/semantic-terms.ts": "7106b37388446f7ee8f27c949a32abd561e7adb95a4acbc15917f471a698faca",
@@ -405,7 +406,7 @@
     "site/src/content/schema.ts": "cbecb3d07fd1d7c3d827bfc26083ab69caea6a5b4fc2c80aa7d0d9758084d27d",
     "site/src/env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
     "site/src/features/glycemic-load/GlycemicLoadPilotPage.tsx": "17e0fb9c0b396c1594eed192f9e01e5281b3f43953ff75dd028a3e7a9693303e",
-    "site/src/features/recipes/RecipePage.tsx": "cb78e26678f635db4781efbbc5e8259e819cad48bc22c8c190713306bb5fc842",
+    "site/src/features/recipes/RecipePage.tsx": "f96afb6cbe1e8000614016a8033a7a872af7445e89e08a3cb6efbcd6ff650a8f",
     "site/src/features/recipes/RecipesPage.tsx": "70270e41b5b041130cd888a8a157010b028f4b2ac1c9ebf1befde8b461db4460",
     "site/src/features/recipes/glycemic-load-display.ts": "bf2a63538f0da139612464797cb5a712cf9f3c845ad4b91661ce9555e6b97c43",
     "site/src/features/recipes/image-layout.ts": "9ef278eea02d2603afe2747a5eac544f38dc4fdff66b82d8b669dd22c3a69546",
@@ -420,15 +421,16 @@
     "site/src/router.tsx": "db19f0dc0b4258671acdbf8f7d9c0772eb8661344127b64ef301ed514cdd9305",
     "site/src/styles.css": "1676fdd5ff8cf4513c045400d74b7688f992fb745081f795bfa67f0501803685",
     "site/src/types/content.ts": "8ba6ed5ea52b61eba9638b2632d397c956dd9a5a4a51daa944a71172726a94ec",
-    "tools/calculate-nutrition-batch5.py": "a346f6c4cd435ba72b8a517d2931b69ff63fc226a54a573c894a162bd5959062"
+    "tools/calculate-nutrition-batch5.py": "a346f6c4cd435ba72b8a517d2931b69ff63fc226a54a573c894a162bd5959062",
+    "tools/calculate-nutrition-batch6.py": "c39ef69b032350992d600cfc8d29634c047265b6e8126f6d4c9e980421e3c606"
   },
   "nodeVersion": "v24.22.1",
   "calculatedAt": "2026-10-24",
   "sources": 325,
   "counts": {
     "VERIFIED": 0,
-    "ESTIMATE WITH EVIDENCE": 62,
-    "INSUFFICIENT SOURCE DATA": 24,
+    "ESTIMATE WITH EVIDENCE": 72,
+    "INSUFFICIENT SOURCE DATA": 14,
     "CONFLICT REQUIRES REVIEW": 0,
     "MISSING": 239
   },
@@ -808,7 +810,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -973,7 +975,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -1121,7 +1123,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -1218,7 +1220,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -1287,20 +1289,20 @@
     {
       "recipe_id": "som-tam-vhh-kurkkuna",
       "source_path": "reseptit/alkuruoat/som-tam-vhh-kurkkuna.md",
-      "source_content_hash": "cf48630b81c57be2cdb0a59b355c8adbec6a67f9f668c9916dbce592c4714c46",
+      "source_content_hash": "94fdf1223e462b8ab6bcb5f8511f2872c7d2d440508fe9c4e1d04117da14da27",
       "values": {
-        "carbs_net_per_serving_g": 6,
-        "carbs_total_per_serving_g": 8,
-        "protein_per_serving_g": 5,
-        "fat_per_serving_g": 7
+        "carbs_net_per_serving_g": 4.92,
+        "carbs_total_per_serving_g": 9.76,
+        "protein_per_serving_g": 3.96,
+        "fat_per_serving_g": 3.7
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-6.md; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-6.md; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -1328,38 +1330,35 @@
           "note": "paahdettuina"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
-          "item": "valkosipulinkynsi"
+          "amount": 3.5,
+          "unit": "g",
+          "item": "valkosipulia",
+          "note": "Finelin valkosipulinkynnen massa"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
+          "amount": 5,
+          "unit": "g",
           "item": "punainen chili",
           "note": "tai maun mukaan"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
+          "amount": 30,
+          "unit": "g",
           "item": "limettimehua"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 15,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia"
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         }
       ],
       "notes": "- Tämä on VHH-ystävällinen som tam -henkinen muunnelma. Kurkku ei vastaa perinteisen vihreän papaijan makua tai rakennetta.\r\n- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "spanakopita",
@@ -1612,7 +1611,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -1773,26 +1772,26 @@
     {
       "recipe_id": "yum-woon-sen-vhh",
       "source_path": "reseptit/alkuruoat/yum-woon-sen-vhh.md",
-      "source_content_hash": "818af770b8090d6b4afabddeb8ab9abf732d94684c94c0405ec09e84401de20a",
+      "source_content_hash": "1e4cd85a75736b06072109c88b2497a69e34c06bfa187033fdfaf741294fa3e8",
       "values": {
-        "carbs_net_per_serving_g": 8,
-        "carbs_total_per_serving_g": 11,
-        "protein_per_serving_g": 27,
-        "fat_per_serving_g": 20
+        "carbs_net_per_serving_g": 3.15,
+        "carbs_total_per_serving_g": 7.88,
+        "protein_per_serving_g": 18.98,
+        "fat_per_serving_g": 9.23
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
           "amount": 400,
           "unit": "g",
-          "item": "valutettuja konjaknuudeleita"
+          "item": "KoRo-kypsiä konjacnuudeleita"
         },
         {
           "amount": 200,
@@ -1805,63 +1804,58 @@
           "item": "kuorittuja katkarapuja"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
+          "amount": 125,
+          "unit": "g",
           "item": "tomaattia",
           "note": "lohkoina"
         },
         {
-          "amount": 0.5,
-          "unit": "kpl",
+          "amount": 40,
+          "unit": "g",
           "item": "punasipulia",
           "note": "ohuina viipaleina"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 3,
-          "unit": "rkl",
+          "amount": 45,
+          "unit": "g",
           "item": "limettimehua"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia"
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
+          "amount": 5,
+          "unit": "g",
           "item": "punaista chiliä",
           "note": "hienonnettuna"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
+          "amount": 6,
+          "unit": "g",
           "item": "tuoretta korianteria",
           "note": "hienonnettuna"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 13.5,
+          "unit": "g",
           "item": "neutraalia öljyä"
         },
         {
-          "amount": null,
-          "unit": "",
+          "amount": 40,
+          "unit": "g",
           "item": "tuoretta selleriä tai kiinanselleriä",
           "note": "hienonnettuna"
         }
       ],
-      "notes": "- Konjaknuudelit korvaavat mungpapulasinuudelit. Erytritolin määrää voi säätää makean ja happaman tasapainon mukaan.\r\n- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "notes": "- Konjaknuudelit korvaavat mungpapulasinuudelit. Erytritolin määrää voi säätää makean ja happaman tasapainon mukaan.\n- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.",
+      "uncertainties": []
     },
     {
       "recipe_id": "aloo-paratha",
@@ -1879,7 +1873,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -2332,7 +2326,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -2595,7 +2589,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -2970,7 +2964,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -3043,7 +3037,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -3130,7 +3124,7 @@
           "note": "Arvioitu imeytyvä määrä koko erälle; friteeraukseen käytä noin 1 l ja valuta ylimääräinen öljy pois. Ylimäärä ei sisälly ravintoarvioon."
         }
       ],
-      "notes": "- Kuumaa öljyä tulee käsitellä varoen.\n- Kokonaisaika-arvio on 900 minuuttia: 720 min yön yli liotus, 180 min keitto, kastikkeen ja taikinan teko, taikinan lepo sekä leipien paisto. Liotukseen varataan arviossa 12 tuntia. Noudata kikherneiden pakkauksen liotusohjetta; valmistusaika vaihtelee papujen ja paistoerien mukaan.",
+      "notes": "- Kuumaa öljyä tulee käsitellä varoen.\r\n- Kokonaisaika-arvio on 900 minuuttia: 720 min yön yli liotus, 180 min keitto, kastikkeen ja taikinan teko, taikinan lepo sekä leipien paisto. Liotukseen varataan arviossa 12 tuntia. Noudata kikherneiden pakkauksen liotusohjetta; valmistusaika vaihtelee papujen ja paistoerien mukaan.",
       "uncertainties": []
     },
     {
@@ -3698,41 +3692,41 @@
     {
       "recipe_id": "gai-yang-vhh",
       "source_path": "reseptit/paaruoat/gai-yang-vhh.md",
-      "source_content_hash": "0c9afe75486901dec6f4fbff0a08aeef83b4a009d07a1b14e7de171048a9cae0",
+      "source_content_hash": "81edf96531e2c8263664efc3003bf88c8951c16a946926b394253565269650fc",
       "values": {
-        "carbs_net_per_serving_g": 7,
-        "carbs_total_per_serving_g": 10,
-        "protein_per_serving_g": 38,
-        "fat_per_serving_g": 27
+        "carbs_net_per_serving_g": 5.78,
+        "carbs_total_per_serving_g": 10.45,
+        "protein_per_serving_g": 45.17,
+        "fat_per_serving_g": 35.05
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
           "amount": 900,
           "unit": "g",
-          "item": "broilerin reisipaloja",
-          "note": "nahallisina ja luullisina"
+          "item": "broilerin reisilihaa",
+          "note": "nahallisena, luuttomana ja raakaa"
         },
         {
-          "amount": 3,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 45,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "soijakastiketta"
         },
         {
-          "amount": 3,
-          "unit": "kpl",
+          "amount": 10.5,
+          "unit": "g",
           "item": "valkosipulinkynttä",
           "note": "murskattuna"
         },
@@ -3743,18 +3737,18 @@
           "note": "varret ja lehdet hienonnettuna"
         },
         {
-          "amount": 1,
-          "unit": "tl",
+          "amount": 2,
+          "unit": "g",
           "item": "jauhettua valkopippuria"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia"
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "limettimehua"
         },
         {
@@ -3764,19 +3758,14 @@
           "note": "tarjoiluun"
         },
         {
-          "amount": null,
-          "unit": "",
+          "amount": 200,
+          "unit": "g",
           "item": "kurkkuviipaleita",
           "note": "tarjoiluun"
         }
       ],
-      "notes": "- Kypsennysaika riippuu palojen koosta ja siitä, käytätkö grilliä vai uunia.\r\n- Tarkista kastikkeiden pakkausmerkinnät. Ravintoarvot ovat suuntaa-antavia.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "notes": "- Kypsennysaika riippuu palojen koosta ja siitä, käytätkö grilliä vai uunia.\n- Tarkista kastikkeiden pakkausmerkinnät. Ravintoarvot ovat suuntaa-antavia.",
+      "uncertainties": []
     },
     {
       "recipe_id": "hapanimela-porsas",
@@ -4607,7 +4596,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -4774,7 +4763,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -4837,7 +4826,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -5032,7 +5021,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -5093,63 +5082,63 @@
     {
       "recipe_id": "kai-jiew-vhh",
       "source_path": "reseptit/paaruoat/kai-jiew-vhh.md",
-      "source_content_hash": "94861d101127d37456e7e178f9f96c292a7fd3dbf1ffc615284b38e0a3346364",
+      "source_content_hash": "5950758778853b04099353aaf3339c7063bc51551fa691345d98e7f01df19716",
       "values": {
-        "carbs_net_per_serving_g": 2,
-        "carbs_total_per_serving_g": 2,
-        "protein_per_serving_g": 18,
-        "fat_per_serving_g": 23
+        "carbs_net_per_serving_g": 1.14,
+        "carbs_total_per_serving_g": 1.66,
+        "protein_per_serving_g": 14.47,
+        "fat_per_serving_g": 16.97
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-6.md; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-6.md; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
-          "amount": 8,
-          "unit": "kpl",
+          "amount": 440,
+          "unit": "g",
           "item": "kananmunaa"
         },
         {
-          "amount": 2,
-          "unit": "tl",
-          "item": "kalakastiketta"
+          "amount": 10,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "neutraalia öljyä",
-          "note": "paistamiseen"
+          "amount": 27,
+          "unit": "g",
+          "item": "neutraalia öljyä"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "vettä"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
+          "amount": 15,
+          "unit": "g",
           "item": "kevätsipulia",
           "note": "hienonnettuna, valinnainen"
         },
         {
-          "amount": null,
-          "unit": "",
-          "item": "kurkkua ja korianteria",
+          "amount": 150,
+          "unit": "g",
+          "item": "kurkkua",
+          "note": "tarjoiluun"
+        },
+        {
+          "amount": 5,
+          "unit": "g",
+          "item": "korianteria",
           "note": "tarjoiluun"
         }
       ],
       "notes": "- Tämä perusversio on vähähiilihydraattinen. Kalakastikkeiden suolaisuus vaihtelee. Paista pieni koepala kypsäksi, jos haluat tarkistaa maun ennen koko munakkaan paistamista.\r\n- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "kana-enchilada-kukkakaalivuoka",
@@ -5244,7 +5233,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -5563,7 +5552,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -5631,7 +5620,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -6073,20 +6062,20 @@
     {
       "recipe_id": "keltainen-kanacurry-vhh",
       "source_path": "reseptit/paaruoat/keltainen-kanacurry-vhh.md",
-      "source_content_hash": "194f8c428400bdbc080013b1a886ff9241fdde179d9f8c3d40ffb03ee1af477b",
+      "source_content_hash": "4621846a905039b33d4c58c402299e5f8b870a9f7a413d13a884813fa3478010",
       "values": {
-        "carbs_net_per_serving_g": 11,
-        "carbs_total_per_serving_g": 14,
-        "protein_per_serving_g": 31,
-        "fat_per_serving_g": 34
+        "carbs_net_per_serving_g": 7.74,
+        "carbs_total_per_serving_g": 11.79,
+        "protein_per_serving_g": 33.08,
+        "fat_per_serving_g": 22.78
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -6097,13 +6086,13 @@
         },
         {
           "amount": 400,
-          "unit": "ml",
+          "unit": "g",
           "item": "täysrasvaista kookosmaitoa"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "keltaista currytahnaa",
+          "amount": 30,
+          "unit": "g",
+          "item": "Mae Ploy -keltaista currytahnaa",
           "note": "tarkista hiilihydraatit"
         },
         {
@@ -6113,25 +6102,25 @@
           "note": "pieninä kukintoina"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
+          "amount": 70,
+          "unit": "g",
           "item": "pientä sipulia",
           "note": "viipaloituna"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 15,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 0.5,
-          "unit": "tl",
+          "amount": 1.5,
+          "unit": "g",
           "item": "kurkumaa"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia",
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia",
           "note": "valinnainen"
         },
         {
@@ -6140,19 +6129,14 @@
           "item": "kookosöljyä"
         },
         {
-          "amount": null,
-          "unit": "",
+          "amount": 5,
+          "unit": "g",
           "item": "tuoretta korianteria",
           "note": "tarjoiluun"
         }
       ],
-      "notes": "- Kukkakaali korvaa keltacurryissa usein käytetyn perunan. Tarkista currytahnan ja kookosmaidon hiilihydraatit.\r\n- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "notes": "- Kukkakaali korvaa keltacurryissa usein käytetyn perunan. Tarkista currytahnan ja kookosmaidon hiilihydraatit.\n- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.",
+      "uncertainties": []
     },
     {
       "recipe_id": "kerala-kalacurry",
@@ -6438,7 +6422,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -6506,7 +6490,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -6559,7 +6543,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -6598,26 +6582,26 @@
           "note": "Vakiotäyte kahdelle: 50 g kinkkua, 50 g paprikaa ja 50 g herkkusieniä. Punnitse vaihdot; ravintoarvot muuttuvat."
         }
       ],
-      "notes": "- Pohjaa ei yleensä tarvitse esipaistaa.\n- Hiilihydraattimäärä riippuu käytetyistä tuotteista ja annoskoosta. Laske se valitsemiesi tuotteiden pakkaustiedoista ja huomioi myös lisäkkeet ja täytteet.",
+      "notes": "- Pohjaa ei yleensä tarvitse esipaistaa.\r\n- Hiilihydraattimäärä riippuu käytetyistä tuotteista ja annoskoosta. Laske se valitsemiesi tuotteiden pakkaustiedoista ja huomioi myös lisäkkeet ja täytteet.",
       "uncertainties": []
     },
     {
       "recipe_id": "khao-kha-moo-vhh",
       "source_path": "reseptit/paaruoat/khao-kha-moo-vhh.md",
-      "source_content_hash": "bbc5e19eb6e95dc177a132975f7e428173b597f543d14c4e659e461868092041",
+      "source_content_hash": "e91d83b50dd8ba3a48c92a6c5e019965c2158251c656541fff69e66a9f2f6045",
       "values": {
-        "carbs_net_per_serving_g": 9,
-        "carbs_total_per_serving_g": 13,
-        "protein_per_serving_g": 40,
-        "fat_per_serving_g": 43
+        "carbs_net_per_serving_g": 9.93,
+        "carbs_total_per_serving_g": 16.87,
+        "protein_per_serving_g": 49.8,
+        "fat_per_serving_g": 38.91
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -6627,54 +6611,54 @@
           "note": "isoina paloina"
         },
         {
-          "amount": 1,
-          "unit": "l",
+          "amount": 1000,
+          "unit": "g",
           "item": "kanalientä"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
+          "amount": 30,
+          "unit": "g",
           "item": "vaaleaa soijakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
-          "item": "tummaa soijakastiketta"
+          "amount": 15,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "kalakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
-          "item": "erytritolia"
-        },
-        {
-          "amount": 1,
-          "unit": "tl",
-          "item": "kiinalaista viismaustetta"
-        },
-        {
-          "amount": 1,
-          "unit": "kpl",
-          "item": "kanelitanko"
+          "amount": 12,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         },
         {
           "amount": 2,
-          "unit": "kpl",
+          "unit": "g",
+          "item": "kiinalaista viismaustetta"
+        },
+        {
+          "amount": 3,
+          "unit": "g",
+          "item": "kanelitanko"
+        },
+        {
+          "amount": 1,
+          "unit": "g",
           "item": "tähtianista"
         },
         {
-          "amount": 4,
-          "unit": "kpl",
+          "amount": 14,
+          "unit": "g",
           "item": "valkosipulinkynttä",
           "note": "murskattuna"
         },
         {
-          "amount": 4,
-          "unit": "kpl",
+          "amount": 220,
+          "unit": "g",
           "item": "kananmunaa",
           "note": "kovaksi keitettynä"
         },
@@ -6690,30 +6674,26 @@
           "note": "tarjoiluun"
         }
       ],
-      "notes": "- Kukkakaaliriisi korvaa tavallisen riisin; erytritoli korvaa osan perinteisestä palmusokerista. Maku ei ole täysin sama kuin alkuperäisessä versiossa.\r\n- Ravintoarvot ovat suuntaa-antavia ja riippuvat lihan rasvaisuudesta sekä liemestä.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "notes": "- Kukkakaaliriisi korvaa tavallisen riisin; erytritoli korvaa osan perinteisestä palmusokerista. Maku ei ole täysin sama kuin alkuperäisessä versiossa.\n- Ravintoarvot ovat suuntaa-antavia ja riippuvat lihan rasvaisuudesta sekä liemestä.",
+      "uncertainties": []
     },
     {
       "recipe_id": "khao-man-gai-vhh",
       "source_path": "reseptit/paaruoat/khao-man-gai-vhh.md",
-      "source_content_hash": "1ddbd8a9625cd5ff8e4259ee4ed082c238cb6f02304238f32cc3408c03f1e860",
+      "source_content_hash": "0406d5d56f6aeeadc74dfb209162ba9fc2a017142bdac8c74af74968fc8f4707",
       "values": {
-        "carbs_net_per_serving_g": 7,
-        "carbs_total_per_serving_g": 10,
-        "protein_per_serving_g": 35,
-        "fat_per_serving_g": 24
+        "carbs_net_per_serving_g": 6.75,
+        "carbs_total_per_serving_g": 11.16,
+        "protein_per_serving_g": 38.57,
+        "fat_per_serving_g": 6
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -6728,18 +6708,18 @@
           "item": "kukkakaaliriisiä"
         },
         {
-          "amount": 1,
-          "unit": "l",
+          "amount": 1000,
+          "unit": "g",
           "item": "vettä"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "suolatonta kanalientä tai fondia"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
+          "amount": 200,
+          "unit": "g",
           "item": "kurkkua",
           "note": "viipaloituna"
         },
@@ -6750,58 +6730,53 @@
           "note": "raastettuna"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "suolatonta soijapaputahnaa"
+          "amount": 30,
+          "unit": "g",
+          "item": "Healthy Boy -soijapaputahnaa"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 15,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "limettimehua"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
+          "amount": 3.5,
+          "unit": "g",
           "item": "valkosipulinkynsi",
           "note": "hienonnettuna"
         },
         {
-          "amount": null,
-          "unit": "",
+          "amount": 5,
+          "unit": "g",
           "item": "tuoretta korianteria",
           "note": "tarjoiluun"
         }
       ],
-      "notes": "- VHH-muunnelmassa perinteinen maustettu riisi vaihtuu kukkakaaliriisiin. Kastikkeiden koostumukset vaihtelevat.\r\n- Ravintoarvot ovat suuntaa-antavia.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "notes": "- VHH-muunnelmassa perinteinen maustettu riisi vaihtuu kukkakaaliriisiin. Kastikkeiden koostumukset vaihtelevat.\n- Ravintoarvot ovat suuntaa-antavia.",
+      "uncertainties": []
     },
     {
       "recipe_id": "khao-soi-vhh-konjac",
       "source_path": "reseptit/paaruoat/khao-soi-vhh-konjac.md",
-      "source_content_hash": "03ac543d7cf931e1dcfd5072a4bd5b7abfcac5cda3a6f4f79a827ed4e924a48f",
+      "source_content_hash": "d5bf800f396991652b535475c232ef8ad77ae9ad1a4989df5ed0644b506a80b0",
       "values": {
-        "carbs_net_per_serving_g": 10,
-        "carbs_total_per_serving_g": 14,
-        "protein_per_serving_g": 31,
-        "fat_per_serving_g": 35
+        "carbs_net_per_serving_g": 6.35,
+        "carbs_total_per_serving_g": 11.69,
+        "protein_per_serving_g": 32.08,
+        "fat_per_serving_g": 21.05
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -6812,48 +6787,48 @@
         },
         {
           "amount": 400,
-          "unit": "ml",
+          "unit": "g",
           "item": "täysrasvaista kookosmaitoa"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "punaista currytahnaa"
+          "amount": 30,
+          "unit": "g",
+          "item": "Mae Ploy -punaista currytahnaa"
         },
         {
-          "amount": 1,
-          "unit": "tl",
+          "amount": 2,
+          "unit": "g",
           "item": "curryjauhetta"
         },
         {
-          "amount": 0.5,
-          "unit": "tl",
+          "amount": 1.5,
+          "unit": "g",
           "item": "kurkumaa"
         },
         {
-          "amount": 5,
-          "unit": "dl",
+          "amount": 500,
+          "unit": "g",
           "item": "kanalientä"
         },
         {
           "amount": 400,
           "unit": "g",
-          "item": "konjaknuudeleita"
+          "item": "KoRo-kypsiä konjacnuudeleita"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "limettimehua"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia"
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         },
         {
           "amount": 100,
@@ -6862,18 +6837,14 @@
           "note": "huuhdeltuna"
         },
         {
-          "amount": 2,
-          "unit": "kpl",
+          "amount": 50,
+          "unit": "g",
           "item": "salottisipulia",
           "note": "viipaloituna"
         }
       ],
-      "notes": "- Konjaknuudelit korvaavat perinteiset nuudelit. Currytahnan ja pikkelöidyn kaalin sokeripitoisuus vaihtelee.\r\n- Ravintoarvot ovat suuntaa-antavia.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "notes": "- Konjaknuudelit korvaavat perinteiset nuudelit. Currytahnan ja pikkelöidyn kaalin sokeripitoisuus vaihtelee.\n- Ravintoarvot ovat suuntaa-antavia.",
+      "uncertainties": []
     },
     {
       "recipe_id": "kimchi-jjigae",
@@ -7333,7 +7304,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -7654,20 +7625,20 @@
     {
       "recipe_id": "larb-moo-vhh",
       "source_path": "reseptit/paaruoat/larb-moo-vhh.md",
-      "source_content_hash": "c76eb4fb7bebf13b43e4d58db4847f6162c81677a418c2732736074c080d2bef",
+      "source_content_hash": "ea95cb233ffeca01d3ea7cada197edcad57e96a5ad7d7e6472cabe8ab58ba9aa",
       "values": {
-        "carbs_net_per_serving_g": 6,
-        "carbs_total_per_serving_g": 9,
-        "protein_per_serving_g": 29,
-        "fat_per_serving_g": 25
+        "carbs_net_per_serving_g": 6.82,
+        "carbs_total_per_serving_g": 9.61,
+        "protein_per_serving_g": 33.83,
+        "fat_per_serving_g": 16.13
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -7676,35 +7647,35 @@
           "item": "porsaan jauhelihaa"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
+          "amount": 30,
+          "unit": "g",
           "item": "vettä"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 3,
-          "unit": "rkl",
+          "amount": 45,
+          "unit": "g",
           "item": "limettimehua"
         },
         {
-          "amount": 1,
-          "unit": "tl",
+          "amount": 2,
+          "unit": "g",
           "item": "chilihiutaleita",
           "note": "tai maun mukaan"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 9,
+          "unit": "g",
           "item": "paahdettua riisijauhetta",
           "note": "valinnainen"
         },
         {
-          "amount": 2,
-          "unit": "kpl",
+          "amount": 50,
+          "unit": "g",
           "item": "salottisipulia",
           "note": "viipaloituna"
         },
@@ -7725,18 +7696,14 @@
           "note": "lohkoina tarjoiluun"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
+          "amount": 200,
+          "unit": "g",
           "item": "kurkkua",
           "note": "viipaloituna tarjoiluun"
         }
       ],
-      "notes": "- Riisijauheen voi jättää pois, jos haluat minimoida hiilihydraatit; pieni määrä kuuluu larbin perinteiseen makuun.\r\n- Ravintoarvot ovat suuntaa-antavia ja laskettu riisijauheen kanssa.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "notes": "- Riisijauheen voi jättää pois, jos haluat minimoida hiilihydraatit; pieni määrä kuuluu larbin perinteiseen makuun.\n- Ravintoarvot ovat suuntaa-antavia ja laskettu riisijauheen kanssa.",
+      "uncertainties": []
     },
     {
       "recipe_id": "liha-juureskeitto-perunaton",
@@ -7837,7 +7804,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -8015,7 +7982,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -8083,7 +8050,7 @@
           "note": "Hienonnettuna."
         }
       ],
-      "notes": "- Kalafondien suolaisuus ja vahvuus vaihtelevat. Noudata pakkauksen annostusta ja tarkista maku ennen suolan lisäämistä.\n- Ruisleipä sopii keiton kanssa tarjottavaksi.",
+      "notes": "- Kalafondien suolaisuus ja vahvuus vaihtelevat. Noudata pakkauksen annostusta ja tarkista maku ennen suolan lisäämistä.\r\n- Ruisleipä sopii keiton kanssa tarjottavaksi.",
       "uncertainties": []
     },
     {
@@ -8102,7 +8069,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -8558,20 +8525,20 @@
     {
       "recipe_id": "massaman-curry-kanalla-vhh",
       "source_path": "reseptit/paaruoat/massaman-curry-kanalla-vhh.md",
-      "source_content_hash": "a60015e64ca719fa4e66849fd89f283a2012f782dd85170a89091b56c4020ef4",
+      "source_content_hash": "7edb459868c83b942ddda10e9f49ec6f11c700326a70478d5bd1bce40604baf1",
       "values": {
-        "carbs_net_per_serving_g": 12,
-        "carbs_total_per_serving_g": 16,
-        "protein_per_serving_g": 32,
-        "fat_per_serving_g": 39
+        "carbs_net_per_serving_g": 12.8,
+        "carbs_total_per_serving_g": 20.38,
+        "protein_per_serving_g": 37.66,
+        "fat_per_serving_g": 24.85
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -8581,13 +8548,13 @@
         },
         {
           "amount": 400,
-          "unit": "ml",
+          "unit": "g",
           "item": "täysrasvaista kookosmaitoa"
         },
         {
-          "amount": 3,
-          "unit": "rkl",
-          "item": "massaman-currytahnaa"
+          "amount": 45,
+          "unit": "g",
+          "item": "Mae Ploy -massaman-currytahnaa"
         },
         {
           "amount": 250,
@@ -8607,25 +8574,25 @@
           "item": "suolattomia maapähkinöitä"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
+          "amount": 70,
+          "unit": "g",
           "item": "sipuli",
           "note": "lohkottuna"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 15,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "limettimehua"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia"
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         },
         {
           "amount": 400,
@@ -8634,12 +8601,8 @@
           "note": "lisukkeeksi"
         }
       ],
-      "notes": "- Peruna on vaihdettu nauriiseen ja kukkakaaliin. Currytahna voi sisältää sokeria; tarkista pakkaus.\r\n- Ravintoarvot ovat suuntaa-antavia.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "notes": "- Peruna on vaihdettu nauriiseen ja kukkakaaliin. Currytahna voi sisältää sokeria; tarkista pakkaus.\n- Ravintoarvot ovat suuntaa-antavia.",
+      "uncertainties": []
     },
     {
       "recipe_id": "menemen",
@@ -8657,7 +8620,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -8883,7 +8846,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -9730,7 +9693,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -10083,7 +10046,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -10133,7 +10096,7 @@
           "note": "tarvittaessa, juusto on suolaista"
         }
       ],
-      "notes": "- Sinihomejuuston suolaisuus vaihtelee. Paista pieni koepala kypsäksi, jos haluat tarkistaa munaseoksen maun.\n- VHH-luokitus perustuu reseptin ainesosiin. Tarkista käyttämiesi tuotteiden pakkausmerkinnät.",
+      "notes": "- Sinihomejuuston suolaisuus vaihtelee. Paista pieni koepala kypsäksi, jos haluat tarkistaa munaseoksen maun.\r\n- VHH-luokitus perustuu reseptin ainesosiin. Tarkista käyttämiesi tuotteiden pakkausmerkinnät.",
       "uncertainties": []
     },
     {
@@ -10841,7 +10804,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -10902,7 +10865,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -12155,7 +12118,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -12578,7 +12541,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -12725,7 +12688,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -12793,7 +12756,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -12842,7 +12805,7 @@
           "note": "Kuullottamiseen."
         }
       ],
-      "notes": "- Kypsennysaika riippuu fileen paksuudesta. Ota lohi uunista heti, kun se on kypsä ja mehevä.\n- VHH-luokitus perustuu reseptin ainesosiin. Tarkista käyttämiesi tuotteiden pakkausmerkinnät.",
+      "notes": "- Kypsennysaika riippuu fileen paksuudesta. Ota lohi uunista heti, kun se on kypsä ja mehevä.\r\n- VHH-luokitus perustuu reseptin ainesosiin. Tarkista käyttämiesi tuotteiden pakkausmerkinnät.",
       "uncertainties": []
     },
     {
@@ -12934,7 +12897,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -12997,7 +12960,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -13065,7 +13028,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -13128,7 +13091,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -13193,7 +13156,7 @@
           "note": "Noin 1/2 tl; säädä kalafondin suolaisuuden mukaan."
         }
       ],
-      "notes": "- Älä keitä keittoa voimakkaasti lohen lisäämisen jälkeen, jotta kala pysyy mehevänä.\n- Kalafondien vahvuus ja suolaisuus vaihtelevat. Tarkista maku ennen suolan lisäämistä.",
+      "notes": "- Älä keitä keittoa voimakkaasti lohen lisäämisen jälkeen, jotta kala pysyy mehevänä.\r\n- Kalafondien vahvuus ja suolaisuus vaihtelevat. Tarkista maku ennen suolan lisäämistä.",
       "uncertainties": []
     },
     {
@@ -13292,7 +13255,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -13451,7 +13414,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -14426,7 +14389,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-3.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -14994,7 +14957,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -16897,7 +16860,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -18800,7 +18763,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -18984,7 +18947,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -20083,7 +20046,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -20771,7 +20734,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -20824,7 +20787,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -20882,7 +20845,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -20930,7 +20893,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -21003,7 +20966,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -21066,7 +21029,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -21560,7 +21523,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -21875,7 +21838,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -21933,7 +21896,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -21996,7 +21959,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -22756,7 +22719,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -22809,7 +22772,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -22857,7 +22820,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -23157,7 +23120,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -23205,7 +23168,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -23442,7 +23405,7 @@
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
       "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "Fineli record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json",
       "missingFields": [],
       "ingredients": [
         {

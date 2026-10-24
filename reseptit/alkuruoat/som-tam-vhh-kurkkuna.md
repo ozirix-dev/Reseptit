@@ -17,20 +17,20 @@ image:
   alt: Som tam -tyylinen salaatti kurkkusuikaleista, tomaateista, pavuista ja maapähkinöistä
   width: 1280
   height: 853
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 8
-protein_per_serving_g: 5
-fat_per_serving_g: 7
+carbs_net_per_serving_g: 4.92
+carbs_total_per_serving_g: 9.76
+protein_per_serving_g: 3.96
+fat_per_serving_g: 3.7
 ingredients:
   - {amount: 500, unit: g, item: kurkkua, note: siemenet poistettuna ja suikaloituna}
   - {amount: 150, unit: g, item: kirsikkatomaatteja, note: puolikkaina}
   - {amount: 100, unit: g, item: vihreitä papuja, note: ohuiksi paloiksi leikattuina}
   - {amount: 30, unit: g, item: suolattomia maapähkinöitä, note: paahdettuina}
-  - {amount: 1, unit: kpl, item: valkosipulinkynsi}
-  - {amount: 1, unit: kpl, item: punainen chili, note: tai maun mukaan}
-  - {amount: 2, unit: rkl, item: limettimehua}
-  - {amount: 1, unit: rkl, item: kalakastiketta}
-  - {amount: 1, unit: tl, item: erytritolia}
+  - {amount: 3.5, unit: g, item: valkosipulia, note: Finelin valkosipulinkynnen massa}
+  - {amount: 5, unit: g, item: punainen chili, note: tai maun mukaan}
+  - {amount: 30, unit: g, item: limettimehua}
+  - {amount: 15, unit: g, item: Squid Brand -kalakastiketta}
+  - {amount: 4, unit: g, item: Foodin-erytritolia}
 translation_languages:
   - en
   - sv

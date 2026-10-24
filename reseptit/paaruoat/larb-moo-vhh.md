@@ -17,22 +17,22 @@ image:
   alt: Larb moo -porsassalaattia yrteillä, limellä, chilillä sekä kaalilla ja kurkulla
   width: 1280
   height: 853
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 9
-protein_per_serving_g: 29
-fat_per_serving_g: 25
+carbs_net_per_serving_g: 6.82
+carbs_total_per_serving_g: 9.61
+protein_per_serving_g: 33.83
+fat_per_serving_g: 16.13
 ingredients:
   - {amount: 600, unit: g, item: porsaan jauhelihaa}
-  - {amount: 2, unit: rkl, item: vettä}
-  - {amount: 2, unit: rkl, item: kalakastiketta}
-  - {amount: 3, unit: rkl, item: limettimehua}
-  - {amount: 1, unit: tl, item: chilihiutaleita, note: tai maun mukaan}
-  - {amount: 1, unit: rkl, item: paahdettua riisijauhetta, note: valinnainen}
-  - {amount: 2, unit: kpl, item: salottisipulia, note: viipaloituna}
+  - {amount: 30, unit: g, item: vettä}
+  - {amount: 30, unit: g, item: "Squid Brand -kalakastiketta"}
+  - {amount: 45, unit: g, item: limettimehua}
+  - {amount: 2, unit: g, item: chilihiutaleita, note: tai maun mukaan}
+  - {amount: 9, unit: g, item: paahdettua riisijauhetta, note: valinnainen}
+  - {amount: 50, unit: g, item: salottisipulia, note: viipaloituna}
   - {amount: 15, unit: g, item: tuoretta minttua}
   - {amount: 15, unit: g, item: tuoretta korianteria}
   - {amount: 250, unit: g, item: valkokaalia, note: lohkoina tarjoiluun}
-  - {amount: 1, unit: kpl, item: kurkkua, note: viipaloituna tarjoiluun}
+  - {amount: 200, unit: g, item: kurkkua, note: viipaloituna tarjoiluun}
 translation_languages:
   - en
   - sv

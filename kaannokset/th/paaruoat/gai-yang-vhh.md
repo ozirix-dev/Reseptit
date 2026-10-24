@@ -26,44 +26,44 @@ image:
   alt: ไก่ย่างไก่ย่างบนจานสีน้ำตาลทอง ซอสสมุนไพร และข้าวดอกกะหล่ำ
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 38
-fat_per_serving_g: 27
+carbs_net_per_serving_g: 5.78
+carbs_total_per_serving_g: 10.45
+protein_per_serving_g: 45.17
+fat_per_serving_g: 35.05
 ingredients:
   - amount: 900
     unit: g
-    item: "ชิ้นสะโพกไก่"
-    note: "ติดหนังและกระดูก"
-  - amount: 3
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 1
-    unit: ช้อนโต๊ะ
+    item: "เนื้อสะโพกไก่ดิบ"
+    note: "ไม่มีกระดูกและติดหนัง"
+  - amount: 45
+    unit: g
+    item: "น้ำปลา Squid Brand"
+  - amount: 15
+    unit: g
     item: ซอสถั่วเหลือง
-  - amount: 3
-    unit: ชิ้น
+  - amount: 10.5
+    unit: g
     item: กระเทียม
     note: บดขยี้
   - amount: 20
     unit: g
     item: ผักชีสด
     note: ลำต้นและใบสับ
-  - amount: 1
-    unit: ช้อนชา
+  - amount: 2
+    unit: g
     item: พริกไทยขาวป่น
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 4
+    unit: g
+    item: "อิริทริทอล Foodin"
+  - amount: 15
+    unit: g
     item: น้ำมะนาว
   - amount: 500
     unit: g
     item: ข้าวกะหล่ำดอก
     note: สำหรับการเสิร์ฟ
-  - amount: null
-    unit: ""
+  - amount: 200
+    unit: g
     item: ชิ้นแตงกวา
     note: สำหรับการเสิร์ฟ
 translation_languages: []

@@ -126,7 +126,7 @@
   },
   {
     "id": "fineli-536-2026-10-24",
-    "name": "Oliiviöljy",
+    "name": "OliiviÃ¶ljy",
     "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
     "retrievedAt": "2026-10-24",
     "licence": "THL, Fineli, CC BY 4.0",
@@ -318,7 +318,7 @@
   },
   {
     "id": "fineli-11057-2026-10-24",
-    "name": "Avokado, kuorittu, kivetön",
+    "name": "Avokado, kuorittu, kivetÃ¶n",
     "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11057",
     "retrievedAt": "2026-10-24",
     "licence": "THL, Fineli, CC BY 4.0",
@@ -508,7 +508,7 @@
   },
   {
     "id": "fineli-389-2026-10-24",
-    "name": "Kesäkurpitsa, zucchini",
+    "name": "KesÃ¤kurpitsa, zucchini",
     "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/389",
     "retrievedAt": "2026-10-24",
     "licence": "THL, Fineli, CC BY 4.0",
@@ -599,7 +599,7 @@
   },
   {
     "id": "fineli-387-2026-10-24",
-    "name": "Paprika, vihreä",
+    "name": "Paprika, vihreÃ¤",
     "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/387",
     "retrievedAt": "2026-10-24",
     "licence": "THL, Fineli, CC BY 4.0",
@@ -699,7 +699,7 @@
   },
   {
     "id": "fineli-320-2026-10-24",
-    "name": "Valkokaali, keräkaali",
+    "name": "Valkokaali, kerÃ¤kaali",
     "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/320?c=2034&c2=2168",
     "retrievedAt": "2026-10-24",
     "licence": "THL, Fineli, CC BY 4.0",
@@ -895,7 +895,7 @@
   },
   {
     "id": "fineli-11089-2026-10-24",
-    "name": "Kikherne, kypsä tai säilyke",
+    "name": "Kikherne, kypsÃ¤ tai sÃ¤ilyke",
     "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11089",
     "retrievedAt": "2026-10-24",
     "licence": "THL, Fineli, CC BY 4.0",
@@ -1267,7 +1267,7 @@
   },
   {
     "id": "fineli-442-2026-10-24",
-    "name": "Mustikka, metsämustikka",
+    "name": "Mustikka, metsÃ¤mustikka",
     "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/442?c=2034&c2=2168",
     "retrievedAt": "2026-10-24",
     "licence": "THL, Fineli, CC BY 4.0",
@@ -1553,7 +1553,7 @@
   },
   {
     "id": "fineli-375-2026-10-24",
-    "name": "Hasselpähkinä",
+    "name": "HasselpÃ¤hkinÃ¤",
     "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/375",
     "retrievedAt": "2026-10-24",
     "licence": "THL, Fineli, CC BY 4.0",
@@ -1580,7 +1580,7 @@
   },
   {
     "id": "fineli-33420-2026-10-24",
-    "name": "Lohi, kylmäsavustettu",
+    "name": "Lohi, kylmÃ¤savustettu",
     "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/33420",
     "retrievedAt": "2026-10-24",
     "licence": "THL, Fineli, CC BY 4.0",
@@ -1664,7 +1664,7 @@
   },
   {
     "id": "fineli-11067-2026-10-24",
-    "name": "Tonnikala, vedessä",
+    "name": "Tonnikala, vedessÃ¤",
     "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11067",
     "retrievedAt": "2026-10-24",
     "licence": "THL, Fineli, CC BY 4.0",
@@ -2029,7 +2029,7 @@
   },
   {
     "id": "fineli-541-2026-10-24",
-    "name": "Ruokaöljy keskiarvo, 87 % rypsi-, 8 % auringonkukka- ja 5 % oliiviöljyä",
+    "name": "RuokaÃ¶ljy keskiarvo, 87 % rypsi-, 8 % auringonkukka- ja 5 % oliiviÃ¶ljyÃ¤",
     "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541?c=2034&c2=2168",
     "retrievedAt": "2026-10-24",
     "licence": "THL, Fineli, CC BY 4.0",
@@ -2212,6 +2212,153 @@
     "ediblePortion": 100
   },
   {
+    "id": "foodin-erythritol-200g-label-2026-10-24",
+    "name": "Foodin Erytritoli, Luomu 200 g",
+    "sourceUrl": "https://foodin.fi/tuote/erytritoli-luomu-200g-2/",
+    "retrievedAt": "2026-10-24",
+    "licence": "Foodin product-label factual nutrient declaration; product reference only, not an open-database licence",
+    "state": "as-sold; pure organic erythritol per ingredient list",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+    "polyolsSourceVerified": true,
+    "per100g": {
+      "kcal": 0,
+      "protein": 0,
+      "fat": 0,
+      "carbohydrate": 100,
+      "fibre": 0,
+      "sugars": 0,
+      "polyols": 100
+    },
+    "polyolsEvidence": "Foodin product label states that 100 g carbohydrates per 100 g are sugar alcohols."
+  },
+  {
+    "id": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+    "name": "Squid Brand Fish Sauce, 725 ml",
+    "sourceUrl": "https://world.openfoodfacts.org/product/13692210/fish-sauce-squid-brand",
+    "retrievedAt": "2026-10-24",
+    "licence": "Open Food Facts database, ODbL 1.0; attribute Open Food Facts contributors and retain share-alike for derived database data",
+    "state": "as sold; label ingredients anchovy extract (77%), salt, sugar",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Open Food Facts product ingredient declaration lists anchovy extract (77%), salt and sugar, with no polyol ingredients; the declared available carbohydrate with and without sugar alcohols is 3.4 g/100 g.",
+    "per100g": {
+      "kcal": 54,
+      "protein": 10,
+      "fat": 0,
+      "carbohydrate": 3.4,
+      "fibre": 0,
+      "sugars": 3.4,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "mae-ploy-yellow-curry-paste-2026-10-24",
+    "name": "Mae Ploy Yellow Curry Paste",
+    "sourceUrl": "https://www.tfsltd.co.uk/en-gb/product/data-pdf/mae-ploy-yellow-curry-paste-24847/",
+    "retrievedAt": "2026-10-24",
+    "licence": "Retailer-published manufacturer-supplied product label facts; product reference only, not an open-database licence",
+    "state": "as sold; label values per 100 g",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Published ingredient declaration contains no polyol ingredient.",
+    "per100g": {
+      "kcal": 129,
+      "protein": 5.3,
+      "fat": 1.9,
+      "carbohydrate": 22.7,
+      "fibre": 11.9,
+      "sugars": 5.6,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "mae-ploy-red-curry-paste-2026-10-24",
+    "name": "Mae Ploy Red Curry Paste, 400 g",
+    "sourceUrl": "https://sainsburys.co.uk/groceries/product/mae-ploy-red-curry-paste-400g",
+    "retrievedAt": "2026-10-24",
+    "licence": "Retailer-published product label facts; product reference only, not an open-database licence",
+    "state": "as sold; label values per 100 g",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Published ingredient declaration contains no polyol ingredient.",
+    "per100g": {
+      "kcal": 163,
+      "protein": 6.1,
+      "fat": 1.6,
+      "carbohydrate": 24.2,
+      "fibre": 13.5,
+      "sugars": 7.3,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "mae-ploy-massaman-curry-paste-2026-10-24",
+    "name": "Mae Ploy Massaman Curry Paste, 1 kg",
+    "sourceUrl": "https://www.tfsltd.co.uk/en/product/data-pdf/mae-ploy-massaman-curry-paste-24849/",
+    "retrievedAt": "2026-10-24",
+    "licence": "Retailer-published manufacturer-supplied product label facts; product reference only, not an open-database licence",
+    "state": "as sold; label values per 100 g",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Published ingredient declaration contains no polyol ingredient.",
+    "per100g": {
+      "kcal": 140,
+      "protein": 6,
+      "fat": 2.2,
+      "carbohydrate": 24.3,
+      "fibre": 12.4,
+      "sugars": 3.7,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "koro-konjac-noodles-prepared-2026-10-24",
+    "name": "KoRo prepared konjac noodles",
+    "sourceUrl": "https://www.koro.com/fi/detail/3b5494aabff551ca99b988b15da2b5ab",
+    "retrievedAt": "2026-10-24",
+    "licence": "KoRo product-label factual nutrient declaration; product reference only, not an open-database licence",
+    "state": "prepared product; label nutrient values per 100 g prepared noodles",
+    "basis": "per100g-prepared",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Published ingredient declaration lists water, konjac flour and citric acid; no polyol ingredient.",
+    "per100g": {
+      "kcal": 5,
+      "protein": 0,
+      "fat": 0,
+      "carbohydrate": 0,
+      "fibre": 2.7,
+      "sugars": 0,
+      "polyols": 0
+    }
+  },
+  {
+    "id": "healthy-boy-soybean-paste-2026-10-24",
+    "name": "Healthy Boy Soy Bean Paste",
+    "sourceUrl": "https://world.openfoodfacts.org/product/8850206160112/soybean-paste-healthy-boy",
+    "retrievedAt": "2026-10-24",
+    "licence": "Open Food Facts product record and label facts, ODbL 1.0; attribute contributors and retain share-alike for derived database data",
+    "state": "as sold; soybeans, wheat flour, sugar, salt water and flavour enhancers",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Published ingredient declaration contains no polyol ingredient.",
+    "per100g": {
+      "kcal": 138,
+      "protein": 10,
+      "fat": 3.1,
+      "carbohydrate": 17,
+      "fibre": 0,
+      "sugars": 9.5,
+      "polyols": 0
+    }
+  },
+  {
     "id": "fineli-398-2026-10-24",
     "name": "TOMAATTIMURSKA",
     "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
@@ -2238,7 +2385,7 @@
   },
   {
     "id": "fineli-11557-2026-10-24",
-    "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+    "name": "TÃ„YSMEHU, SITRUUNATÃ„YSMEHU, LAIMENTAMATON",
     "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11557",
     "retrievedAt": "2026-10-24",
     "licence": "THL Fineli Food Composition Database Release 20, CC BY 4.0; available carbohydrate CHOAVL, fibre FIBT, sugar alcohols SUGOH",

@@ -17,21 +17,21 @@ image:
   alt: Massaman-kanacurry kookoskastikkeessa, maapähkinöitä ja kukkakaaliriisiä
   width: 1280
   height: 853
-carbs_net_per_serving_g: 12
-carbs_total_per_serving_g: 16
-protein_per_serving_g: 32
-fat_per_serving_g: 39
+carbs_net_per_serving_g: 12.8
+carbs_total_per_serving_g: 20.38
+protein_per_serving_g: 37.66
+fat_per_serving_g: 24.85
 ingredients:
   - {amount: 600, unit: g, item: luutonta broilerin reisilihaa}
-  - {amount: 400, unit: ml, item: täysrasvaista kookosmaitoa}
-  - {amount: 3, unit: rkl, item: massaman-currytahnaa}
+  - {amount: 400, unit: g, item: täysrasvaista kookosmaitoa}
+  - {amount: 45, unit: g, item: "Mae Ploy -massaman-currytahnaa"}
   - {amount: 250, unit: g, item: naurista, note: kuutioituna perunan sijaan}
   - {amount: 200, unit: g, item: kukkakaalia, note: pieninä kukintoina}
   - {amount: 40, unit: g, item: suolattomia maapähkinöitä}
-  - {amount: 1, unit: kpl, item: sipuli, note: lohkottuna}
-  - {amount: 1, unit: rkl, item: kalakastiketta}
-  - {amount: 1, unit: rkl, item: limettimehua}
-  - {amount: 1, unit: tl, item: erytritolia}
+  - {amount: 70, unit: g, item: sipuli, note: lohkottuna}
+  - {amount: 15, unit: g, item: "Squid Brand -kalakastiketta"}
+  - {amount: 15, unit: g, item: limettimehua}
+  - {amount: 4, unit: g, item: "Foodin-erytritolia"}
   - {amount: 400, unit: g, item: kukkakaaliriisiä, note: lisukkeeksi}
 translation_languages:
   - en

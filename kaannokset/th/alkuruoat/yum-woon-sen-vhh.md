@@ -24,50 +24,50 @@ image:
   alt: ยำวุ้นเส้นกับเส้นบุก กุ้ง หมูสับ และมะนาว
   width: 1280
   height: 853
-carbs_net_per_serving_g: 8
-carbs_total_per_serving_g: 11
-protein_per_serving_g: 27
-fat_per_serving_g: 20
+carbs_net_per_serving_g: 3.15
+carbs_total_per_serving_g: 7.88
+protein_per_serving_g: 18.98
+fat_per_serving_g: 9.23
 ingredients:
   - amount: 400
     unit: g
-    item: เส้นบุกสะเด็ดน้ำ
+    item: "เส้นบุก KoRo แบบพร้อมรับประทาน"
   - amount: 200
     unit: g
     item: หมูบด
   - amount: 200
     unit: g
     item: กุ้งปอกเปลือก
-  - amount: 1
-    unit: ชิ้น
+  - amount: 125
+    unit: g
     item: มะเขือเทศ
     note: "หั่นเป็นเสี้ยว"
-  - amount: 0.5
-    unit: ชิ้น
+  - amount: 40
+    unit: g
     item: หอมแดง
     note: เป็นชิ้นบาง ๆ
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 3
-    unit: ช้อนโต๊ะ
+  - amount: 30
+    unit: g
+    item: "น้ำปลา Squid Brand"
+  - amount: 45
+    unit: g
     item: น้ำมะนาว
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
-  - amount: 1
-    unit: ชิ้น
+  - amount: 4
+    unit: g
+    item: "อิริทริทอล Foodin"
+  - amount: 5
+    unit: g
     item: พริกแดง
     note: "สับละเอียด"
-  - amount: 2
-    unit: ช้อนโต๊ะ
+  - amount: 6
+    unit: g
     item: ผักชีสด
     note: "สับละเอียด"
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 13.5
+    unit: g
     item: น้ำมันที่เป็นกลาง
-  - amount: null
-    unit: ""
+  - amount: 40
+    unit: g
     item: คื่นฉ่ายสดหรือขึ้นฉ่ายจีน
     note: "สับละเอียด"
 translation_languages: []

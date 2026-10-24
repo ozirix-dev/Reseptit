@@ -17,22 +17,22 @@ image:
   alt: Khao man gai -annos keitetyllä broilerilla, kukkakaaliriisillä, kurkulla ja inkiväärikastikkeella
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 35
-fat_per_serving_g: 24
+carbs_net_per_serving_g: 6.75
+carbs_total_per_serving_g: 11.16
+protein_per_serving_g: 38.57
+fat_per_serving_g: 6.0
 ingredients:
   - {amount: 700, unit: g, item: broilerin reisilihaa, note: luuttomana ja nahattomana}
   - {amount: 700, unit: g, item: kukkakaaliriisiä}
-  - {amount: 1, unit: l, item: vettä}
-  - {amount: 1, unit: rkl, item: suolatonta kanalientä tai fondia}
-  - {amount: 1, unit: kpl, item: kurkkua, note: viipaloituna}
+  - {amount: 1000, unit: g, item: vettä}
+  - {amount: 15, unit: g, item: suolatonta kanalientä tai fondia}
+  - {amount: 200, unit: g, item: kurkkua, note: viipaloituna}
   - {amount: 30, unit: g, item: tuoretta inkivääriä, note: raastettuna}
-  - {amount: 2, unit: rkl, item: suolatonta soijapaputahnaa}
-  - {amount: 1, unit: rkl, item: kalakastiketta}
-  - {amount: 1, unit: rkl, item: limettimehua}
-  - {amount: 1, unit: kpl, item: valkosipulinkynsi, note: hienonnettuna}
-  - {amount: null, unit: "", item: tuoretta korianteria, note: tarjoiluun}
+  - {amount: 30, unit: g, item: Healthy Boy -soijapaputahnaa}
+  - {amount: 15, unit: g, item: "Squid Brand -kalakastiketta"}
+  - {amount: 15, unit: g, item: limettimehua}
+  - {amount: 3.5, unit: g, item: valkosipulinkynsi, note: hienonnettuna}
+  - {amount: 5, unit: g, item: tuoretta korianteria, note: tarjoiluun}
 translation_languages:
   - en
   - sv

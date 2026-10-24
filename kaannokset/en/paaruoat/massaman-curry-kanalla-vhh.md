@@ -23,20 +23,20 @@ image:
   alt: Massaman chicken curry in coconut sauce, peanuts and cauliflower rice
   width: 1280
   height: 853
-carbs_net_per_serving_g: 12
-carbs_total_per_serving_g: 16
-protein_per_serving_g: 32
-fat_per_serving_g: 39
+carbs_net_per_serving_g: 12.8
+carbs_total_per_serving_g: 20.38
+protein_per_serving_g: 37.66
+fat_per_serving_g: 24.85
 ingredients:
   - amount: 600
     unit: g
     item: boneless chicken thigh meat
   - amount: 400
-    unit: ml
+    unit: g
     item: full fat coconut milk
-  - amount: 3
-    unit: tbsp
-    item: massaman curry paste
+  - amount: 45
+    unit: g
+    item: "Mae Ploy massaman curry paste"
   - amount: 250
     unit: g
     item: turnip
@@ -48,19 +48,19 @@ ingredients:
   - amount: 40
     unit: g
     item: unsalted peanuts
-  - amount: 1
-    unit: piece
+  - amount: 70
+    unit: g
     item: onion
     note: "cut into wedges"
-  - amount: 1
-    unit: tbsp
-    item: fish sauce
-  - amount: 1
-    unit: tbsp
+  - amount: 15
+    unit: g
+    item: "Squid Brand fish sauce"
+  - amount: 15
+    unit: g
     item: lime juice
-  - amount: 1
-    unit: tsp
-    item: erythritol
+  - amount: 4
+    unit: g
+    item: "Foodin erythritol"
   - amount: 400
     unit: g
     item: cauliflower rice

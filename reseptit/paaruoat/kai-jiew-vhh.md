@@ -17,17 +17,35 @@ image:
   alt: Korkea rapeareunainen kai jiew -munakas kurkkuviipaleiden ja yrttien kanssa
   width: 1280
   height: 853
-carbs_net_per_serving_g: 2
-carbs_total_per_serving_g: 2
-protein_per_serving_g: 18
-fat_per_serving_g: 23
+carbs_net_per_serving_g: 1.14
+carbs_total_per_serving_g: 1.66
+protein_per_serving_g: 14.47
+fat_per_serving_g: 16.97
 ingredients:
-  - {amount: 8, unit: kpl, item: kananmunaa}
-  - {amount: 2, unit: tl, item: kalakastiketta}
-  - {amount: 2, unit: rkl, item: neutraalia öljyä, note: paistamiseen}
-  - {amount: 1, unit: rkl, item: vettä}
-  - {amount: 1, unit: kpl, item: kevätsipulia, note: "hienonnettuna, valinnainen"}
-  - {amount: null, unit: "", item: kurkkua ja korianteria, note: tarjoiluun}
+  - amount: 440
+    unit: g
+    item: kananmunaa
+  - amount: 10
+    unit: g
+    item: Squid Brand -kalakastiketta
+  - amount: 27
+    unit: g
+    item: neutraalia öljyä
+  - amount: 15
+    unit: g
+    item: vettä
+  - amount: 15
+    unit: g
+    item: kevätsipulia
+    note: hienonnettuna, valinnainen
+  - amount: 150
+    unit: g
+    item: kurkkua
+    note: tarjoiluun
+  - amount: 5
+    unit: g
+    item: korianteria
+    note: tarjoiluun
 translation_languages:
   - en
   - sv

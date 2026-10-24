@@ -23,32 +23,35 @@ image:
   alt: ไข่เจียวฟูขอบกรอบ เสิร์ฟกับแตงกวาหั่นแว่นและสมุนไพร
   width: 1280
   height: 853
-carbs_net_per_serving_g: 2
-carbs_total_per_serving_g: 2
-protein_per_serving_g: 18
-fat_per_serving_g: 23
+carbs_net_per_serving_g: 1.14
+carbs_total_per_serving_g: 1.66
+protein_per_serving_g: 14.47
+fat_per_serving_g: 16.97
 ingredients:
-  - amount: 8
-    unit: ชิ้น
-    item: ไข่
-  - amount: 2
-    unit: ช้อนชา
-    item: น้ำปลา
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: น้ำมันที่เป็นกลาง
-    note: สำหรับการทอด
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 440
+    unit: g
+    item: ไข่ไก่
+  - amount: 10
+    unit: g
+    item: น้ำปลา Squid Brand
+  - amount: 27
+    unit: g
+    item: น้ำมันรสกลาง
+  - amount: 15
+    unit: g
     item: น้ำ
-  - amount: 1
-    unit: ชิ้น
+  - amount: 15
+    unit: g
     item: ต้นหอม
-    note: สับไม่จำเป็น
-  - amount: null
-    unit: ""
-    item: แตงกวาและผักชี
-    note: สำหรับการเสิร์ฟ
+    note: สับ ไม่จำเป็น
+  - amount: 150
+    unit: g
+    item: แตงกวา
+    note: สำหรับเสิร์ฟ
+  - amount: 5
+    unit: g
+    item: ผักชี
+    note: สำหรับเสิร์ฟ
 translation_languages: []
 translation_status: {}
 source_language: fi

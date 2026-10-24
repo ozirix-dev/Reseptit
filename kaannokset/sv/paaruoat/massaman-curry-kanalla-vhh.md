@@ -23,20 +23,20 @@ image:
   alt: Massaman kycklingcurry i kokossås, jordnötter och blomkålsris
   width: 1280
   height: 853
-carbs_net_per_serving_g: 12
-carbs_total_per_serving_g: 16
-protein_per_serving_g: 32
-fat_per_serving_g: 39
+carbs_net_per_serving_g: 12.8
+carbs_total_per_serving_g: 20.38
+protein_per_serving_g: 37.66
+fat_per_serving_g: 24.85
 ingredients:
   - amount: 600
     unit: g
     item: benfritt kycklinglårkött
   - amount: 400
-    unit: ml
+    unit: g
     item: fullfet kokosmjölk
-  - amount: 3
-    unit: msk
-    item: massaman currypasta
+  - amount: 45
+    unit: g
+    item: "Mae Ploy massaman currypasta"
   - amount: 250
     unit: g
     item: majrova
@@ -48,19 +48,19 @@ ingredients:
   - amount: 40
     unit: g
     item: osaltade jordnötter
-  - amount: 1
-    unit: st
+  - amount: 70
+    unit: g
     item: lök
     note: "skuren i klyftor"
-  - amount: 1
-    unit: msk
-    item: fisksås
-  - amount: 1
-    unit: msk
+  - amount: 15
+    unit: g
+    item: "Squid Brand fisksås"
+  - amount: 15
+    unit: g
     item: limejuice
-  - amount: 1
-    unit: tsk
-    item: erytritol
+  - amount: 4
+    unit: g
+    item: "Foodin erytritol"
   - amount: 400
     unit: g
     item: blomkålsris

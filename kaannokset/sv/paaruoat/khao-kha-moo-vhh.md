@@ -24,45 +24,45 @@ image:
   alt: Bräserat fläsk i Khao kha moo-stil, ägg, gröna grönsaker och blomkålsris
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 40
-fat_per_serving_g: 43
+carbs_net_per_serving_g: 9.93
+carbs_total_per_serving_g: 16.87
+protein_per_serving_g: 49.8
+fat_per_serving_g: 38.91
 ingredients:
   - amount: 800
     unit: g
     item: "fläskbog"
     note: i stora bitar
-  - amount: 1
-    unit: l
+  - amount: 1000
+    unit: g
     item: kycklingbuljong
-  - amount: 2
-    unit: msk
+  - amount: 30
+    unit: g
     item: lätt sojasås
-  - amount: 1
-    unit: msk
-    item: mörk sojasås
-  - amount: 1
-    unit: msk
+  - amount: 15
+    unit: g
+    item: "Squid Brand fisksås"
+  - amount: 15
+    unit: g
     item: fisksås
-  - amount: 1
-    unit: msk
-    item: erytritol
-  - amount: 1
-    unit: tsk
-    item: kinesisk femkrydda
-  - amount: 1
-    unit: st
-    item: kanelstång
+  - amount: 12
+    unit: g
+    item: "Foodin erytritol"
   - amount: 2
-    unit: st
+    unit: g
+    item: kinesisk femkrydda
+  - amount: 3
+    unit: g
+    item: kanelstång
+  - amount: 1
+    unit: g
     item: stjärnanis
-  - amount: 4
-    unit: st
+  - amount: 14
+    unit: g
     item: en vitlöksklyfta
     note: krossad
-  - amount: 4
-    unit: st
+  - amount: 220
+    unit: g
     item: ägg
     note: hårdkokt
   - amount: 300

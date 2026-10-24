@@ -11,6 +11,8 @@ const fineliCarbohydrateEvidence = new Set(["munakokkeli", "munakasmuffinit", "m
 const batch3Evidence = new Set(["parsakaali-sinihomejuustofrittata", "paistettu-maksa-pekonilla", "jauhelihapihvit-vhh-kermakastikkeella", "jauheliha-kaalikeitto-vhh", "kanakorma-kukkakaaliriisilla", "raejuusto-uunimunakas", "vhh-mustikkapiirakka", "maksalaatikko-kukkakaalilla", "broileri-kukkakaaligratiini", "uuniporsas-kermakastikkeessa-vhh"]);
 const batch4Evidence = new Set(["keto-pinaattiletut", "keto-pannukakku", "vhh-kaalilaatikko", "lihapullat-kermakastikkeessa-vhh", "lahi-ita-kikherne-shakshuka", "pohjoisafrikkalainen-maakouda", "valimerellinen-menemen-fetalla", "valimerellinen-tortilla-espanola-aamupalaksi", "kanakeitto-pinaatti-sitruuna", "valimerellinen-kikherne-yrttiaamiainen"]);
 const batch5Evidence = new Set(["medu-vada", "pani-puri", "samosa", "vada-pav", "aloo-paratha", "butter-chicken", "chole-bhature", "ketopizza-pofiber-pohjalla", "lohikeitto-kuohukermalla", "uunilohi-smetanakuorrutteella", "vhh-lohikeitto-kukkakaalilla", "gulab-jamun"]);
+const batch6Evidence = new Set(["kai-jiew-vhh", "som-tam-vhh-kurkkuna"]);
+const batch7Evidence = new Set(["yum-woon-sen-vhh", "gai-yang-vhh", "keltainen-kanacurry-vhh", "khao-kha-moo-vhh", "khao-man-gai-vhh", "khao-soi-vhh-konjac", "larb-moo-vhh", "massaman-curry-kanalla-vhh"]);
 const audit = await auditTranslations();
 const calculatedAt = new Date().toISOString().slice(0, 10);
 const provenance = await nutritionProvenance(root);
@@ -18,9 +20,13 @@ const sourceHashes: Record<string, string> = Object.fromEntries(await Promise.al
 const inventory = audit.publishedSources.map((recipe) => {
   const values = Object.fromEntries(keys.map((key) => [key, recipe.data[key] ?? null]));
   const hasValues = Object.values(values).some((n) => n !== null);
-  const hasFineliCarbohydrateEvidence = fineliCarbohydrateEvidence.has(recipe.data.recipe_id) && recipe.data.carbs_total_per_serving_g != null;
+  const hasCalculationEvidence = (fineliCarbohydrateEvidence.has(recipe.data.recipe_id) || batch3Evidence.has(recipe.data.recipe_id) || batch4Evidence.has(recipe.data.recipe_id) || batch5Evidence.has(recipe.data.recipe_id) || batch6Evidence.has(recipe.data.recipe_id) || batch7Evidence.has(recipe.data.recipe_id)) && recipe.data.carbs_total_per_serving_g != null;
   const allValuesPresent = Object.values(values).every((n) => n !== null);
-  const evidencePath = batch5Evidence.has(recipe.data.recipe_id)
+  const evidencePath = batch7Evidence.has(recipe.data.recipe_id)
+    ? "docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json"
+    : batch6Evidence.has(recipe.data.recipe_id)
+    ? "docs/nutrition/estimates-2026-10-24-batch-6.md; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json"
+    : batch5Evidence.has(recipe.data.recipe_id)
     ? "docs/nutrition/estimates-2026-10-24-batch-5.md; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json"
     : batch4Evidence.has(recipe.data.recipe_id)
     ? "docs/nutrition/estimates-2026-10-24-batch-4.md; docs/nutrition/food-records.json"
@@ -29,15 +35,15 @@ const inventory = audit.publishedSources.map((recipe) => {
     : "docs/nutrition/estimates-2026-10-24.md; docs/nutrition/estimates-2026-10-24-batch-2.md; docs/nutrition/food-records.json";
   const conflicts = recipe.data.carbs_net_per_serving_g != null && recipe.data.carbs_total_per_serving_g != null && recipe.data.carbs_net_per_serving_g > recipe.data.carbs_total_per_serving_g;
   return { recipe_id: recipe.data.recipe_id, source_path: recipe.path, source_content_hash: sourceHashes[recipe.path], values, servings: recipe.data.servings,
-    status: conflicts ? "CONFLICT REQUIRES REVIEW" : hasFineliCarbohydrateEvidence && allValuesPresent ? "ESTIMATE WITH EVIDENCE" : hasValues ? "INSUFFICIENT SOURCE DATA" : "MISSING",
-    calculationEvidence: hasFineliCarbohydrateEvidence ? evidencePath : null,
+    status: conflicts ? "CONFLICT REQUIRES REVIEW" : hasCalculationEvidence && allValuesPresent ? "ESTIMATE WITH EVIDENCE" : hasValues ? "INSUFFICIENT SOURCE DATA" : "MISSING",
+    calculationEvidence: hasCalculationEvidence ? evidencePath : null,
     carbohydrateDefinition: recipe.data.carbs_net_per_serving_g == null ? "NOT DOCUMENTED" : "AVAILABLE_EXCLUDING_FIBRE",
-    totalCarbohydrateDefinition: hasFineliCarbohydrateEvidence ? "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS" : "NOT DOCUMENTED",
-    portionBasis: "metadata fields per serving", brandAndRawWeightEvidence: hasFineliCarbohydrateEvidence ? `Fineli record IDs and mass assumptions in ${evidencePath}` : "NOT VERIFIED",
+    totalCarbohydrateDefinition: hasCalculationEvidence ? "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS" : "NOT DOCUMENTED",
+    portionBasis: "metadata fields per serving", brandAndRawWeightEvidence: hasCalculationEvidence ? `Nutrition record IDs and mass assumptions in ${evidencePath}` : "NOT VERIFIED",
     missingFields: keys.filter((key) => recipe.data[key] == null),
     ingredients: recipe.data.ingredients,
     notes: recipe.content.split("## Muistiinpanot")[1]?.trim() ?? "",
-    uncertainties: hasFineliCarbohydrateEvidence ? [] : ["No reproducible ingredient-to-record calculation found in repository", "Product, edible weight and preparation yield require evidence", ...(recipe.data.ingredients.some((i) => i.amount === null) ? ["Unmeasured ingredients present"] : []), ...(recipe.data.ingredients.some((i) => !["g", "kg"].includes(i.unit)) ? ["Ingredient-specific volume/piece weights required"] : [])],
+    uncertainties: hasCalculationEvidence ? [] : ["No reproducible ingredient-to-record calculation found in repository", "Product, edible weight and preparation yield require evidence", ...(recipe.data.ingredients.some((i) => i.amount === null) ? ["Unmeasured ingredients present"] : []), ...(recipe.data.ingredients.some((i) => !["g", "kg"].includes(i.unit)) ? ["Ingredient-specific volume/piece weights required"] : [])],
   };
 });
 const records: FoodRecord[] = JSON.parse(await readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8"));

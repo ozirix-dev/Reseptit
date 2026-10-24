@@ -17,23 +17,23 @@ image:
   alt: Yum woon sen -salaatti konjaknuudeleilla, katkaravuilla, porsaan jauhelihalla ja limetillä
   width: 1280
   height: 853
-carbs_net_per_serving_g: 8
-carbs_total_per_serving_g: 11
-protein_per_serving_g: 27
-fat_per_serving_g: 20
+carbs_net_per_serving_g: 3.15
+carbs_total_per_serving_g: 7.88
+protein_per_serving_g: 18.98
+fat_per_serving_g: 9.23
 ingredients:
-  - { amount: 400, unit: g, item: valutettuja konjaknuudeleita }
+  - { amount: 400, unit: g, item: "KoRo-kypsiä konjacnuudeleita"}
   - { amount: 200, unit: g, item: porsaan jauhelihaa }
   - { amount: 200, unit: g, item: kuorittuja katkarapuja }
-  - { amount: 1, unit: kpl, item: tomaattia, note: lohkoina }
-  - { amount: 0.5, unit: kpl, item: punasipulia, note: ohuina viipaleina }
-  - { amount: 2, unit: rkl, item: kalakastiketta }
-  - { amount: 3, unit: rkl, item: limettimehua }
-  - { amount: 1, unit: tl, item: erytritolia }
-  - { amount: 1, unit: kpl, item: punaista chiliä, note: hienonnettuna }
-  - { amount: 2, unit: rkl, item: tuoretta korianteria, note: hienonnettuna }
-  - { amount: 1, unit: rkl, item: neutraalia öljyä }
-  - { amount: null, unit: "", item: tuoretta selleriä tai kiinanselleriä, note: hienonnettuna }
+  - { amount: 125, unit: g, item: tomaattia, note: lohkoina }
+  - { amount: 40, unit: g, item: punasipulia, note: ohuina viipaleina }
+  - { amount: 30, unit: g, item: "Squid Brand -kalakastiketta"}
+  - { amount: 45, unit: g, item: limettimehua }
+  - { amount: 4, unit: g, item: "Foodin-erytritolia"}
+  - { amount: 5, unit: g, item: punaista chiliä, note: hienonnettuna }
+  - { amount: 6, unit: g, item: tuoretta korianteria, note: hienonnettuna }
+  - { amount: 13.5, unit: g, item: neutraalia öljyä }
+  - { amount: 40, unit: g, item: tuoretta selleriä tai kiinanselleriä, note: hienonnettuna }
 translation_languages:
   - en
   - sv

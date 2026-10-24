@@ -24,45 +24,45 @@ image:
   alt: Khao kha moo-style braised pork, egg, green vegetables and cauliflower rice
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 40
-fat_per_serving_g: 43
+carbs_net_per_serving_g: 9.93
+carbs_total_per_serving_g: 16.87
+protein_per_serving_g: 49.8
+fat_per_serving_g: 38.91
 ingredients:
   - amount: 800
     unit: g
     item: pork shoulder
     note: in large pieces
-  - amount: 1
-    unit: l
+  - amount: 1000
+    unit: g
     item: chicken broth
-  - amount: 2
-    unit: tbsp
+  - amount: 30
+    unit: g
     item: light soy sauce
-  - amount: 1
-    unit: tbsp
-    item: dark soy sauce
-  - amount: 1
-    unit: tbsp
+  - amount: 15
+    unit: g
+    item: "Squid Brand fish sauce"
+  - amount: 15
+    unit: g
     item: fish sauce
-  - amount: 1
-    unit: tbsp
-    item: erythritol
-  - amount: 1
-    unit: tsp
-    item: Chinese five-spice powder
-  - amount: 1
-    unit: piece
-    item: cinnamon stick
+  - amount: 12
+    unit: g
+    item: "Foodin erythritol"
   - amount: 2
-    unit: piece
+    unit: g
+    item: Chinese five-spice powder
+  - amount: 3
+    unit: g
+    item: cinnamon stick
+  - amount: 1
+    unit: g
     item: star anise
-  - amount: 4
-    unit: piece
+  - amount: 14
+    unit: g
     item: a clove of garlic
     note: crushed
-  - amount: 4
-    unit: piece
+  - amount: 220
+    unit: g
     item: egg
     note: hard boiled
   - amount: 300
