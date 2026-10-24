@@ -100,7 +100,8 @@ test("only complete GK results appear on every published translation of a pilot 
         assert.ok(html.includes(new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumFractionDigits: 2 }).format(result.glycemicLoadPerServing)));
         assert.ok(result.sourceReferences.length > 0, `${result.recipeId}: calculated result has source references`);
         for (const source of result.sourceReferences) {
-          assert.ok(html.includes(source.url), `${result.recipeId}: source citation is visible`);
+          const expectedSourceUrl = source.matchKind === "CALCULATION_POLICY" ? "/Reseptit/glykeeminen-kuorma/" : source.url;
+          assert.ok(html.includes(expectedSourceUrl), `${result.recipeId}: source citation is visible`);
           assert.ok(html.includes(source.note.replaceAll("'", "&#x27;")), `${result.recipeId}: source limitations are visible`);
         }
       } else {
