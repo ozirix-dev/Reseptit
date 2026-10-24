@@ -271,6 +271,119 @@
         "qualityEvidence": "The compendium lists GI 54 with SD 17, n=12, 50 g available carbohydrate and glucose/2 h. The food is steamed potato cultivar Dejima, not oil-cooked tortilla potato; full ISO protocol was not confirmed here."
       },
       "note": "Candidate only. A steamed cultivar-specific potato is not preparation-matched to tortilla."
+    },
+    {
+      "id": "potato-boiled-tortilla-analogue-gi-66",
+      "gi": 66,
+      "foodKey": "potato",
+      "preparationKey": "boiled-unspecified",
+      "food": "Unspecified potato, boiled",
+      "preparation": "Boiled potato used as a broad preparation analogue for slow oil-cooked tortilla potato",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Supplemental Table 1, entry 1842",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "participants": 10,
+        "referenceFood": "Glucose",
+        "testDurationHours": 2,
+        "qualityEvidence": "Published glucose-scale boiled-potato measurement from the ISO-screened table. The recipe preparation differs substantially (covered oil-cooking followed by setting with egg), so the reported value is used only as an explicitly low-confidence ingredient proxy, not as a measured tortilla GI."
+      },
+      "note": "Preparation mismatch is disclosed; actual potato GI varies by variety and cooking method."
+    },
+    {
+      "id": "tomato-raw-cooked-sauce-analogue-gi-22",
+      "gi": 22,
+      "foodKey": "tomato",
+      "preparationKey": "whole-raw",
+      "food": "Whole raw tomato",
+      "preparation": "Raw tomato value used as a proxy for crushed tomato cooked in sauce",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "MEDIUM",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Supplemental Table 1; whole tomato, raw",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "qualityEvidence": "Published glucose-scale value from the ISO-screened table. The raw whole-tomato product is not the recipe's crushed cooked tomato; it is disclosed as the nearest directly documented tomato analogue."
+      },
+      "note": "GI 22 was measured for whole raw tomato, not cooked tomato sauce."
+    },
+    {
+      "id": "red-pepper-literature-analogue-gi-40",
+      "gi": 40,
+      "foodKey": "red-pepper",
+      "preparationKey": "cooked-in-recipe",
+      "food": "Pepper, generic vegetable table entry",
+      "preparation": "Cooking in recipe; broad literature proxy",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "source": {
+        "title": "Mens sana in corpore sano: Does the Glycemic Index Have a Role to Play?",
+        "url": "https://doi.org/10.3390/nu12103041",
+        "table": "Table 2, pepper entry (GI 40; secondary compilation)",
+        "year": 2020,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Peer-reviewed narrative review reproduces a generic pepper GI value but does not provide a primary study or preparation protocol for this entry. Used as a low-confidence proxy for cooked red bell pepper and clearly marked as such."
+      },
+      "note": "Generic pepper entry; species, preparation, and primary measurement details are not established."
+    },
+    {
+      "id": "onion-literature-analogue-gi-15",
+      "gi": 15,
+      "foodKey": "onion",
+      "preparationKey": "cooked-in-recipe",
+      "food": "Onion, generic vegetable table entry",
+      "preparation": "Cooking in recipe; broad literature proxy",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "source": {
+        "title": "Mens sana in corpore sano: Does the Glycemic Index Have a Role to Play?",
+        "url": "https://doi.org/10.3390/nu12103041",
+        "table": "Table 2, onion entry (GI 15; secondary compilation)",
+        "year": 2020,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Peer-reviewed narrative review reproduces a generic onion GI value but says the value was obtained from online sources; no primary protocol or preparation details are supplied. Used only as a low-confidence proxy for cooked onion."
+      },
+      "note": "Secondary-table value with limited traceability; confidence low."
+    },
+    {
+      "id": "dairy-category-mean-gi-35",
+      "gi": 35,
+      "foodKey": "dairy",
+      "preparationKey": "unflavoured-dairy",
+      "food": "Dairy products, category mean",
+      "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1 summary: dairy products mean GI 35 ± 11 (n=186)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "qualityEvidence": "Published category mean from ISO-screened individual food measurements. This is not a cream-cheese-specific value and is used only as a clearly labelled category-level proxy."
+      },
+      "note": "Category mean, not a measured GI for the recipe's cream cheese."
     }
   ]
 }
