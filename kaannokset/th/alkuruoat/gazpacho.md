@@ -59,6 +59,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/alkuruoat/gazpacho.md
 translation_of: gazpacho
+carbs_net_per_serving_g: 18.61
+carbs_total_per_serving_g: 21.91
+protein_per_serving_g: 3.6
+fat_per_serving_g: 14.69
+
 ---
 
 # คาสปาโช่อันดาลูเซีย

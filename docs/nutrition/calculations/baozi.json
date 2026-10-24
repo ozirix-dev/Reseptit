@@ -1,0 +1,394 @@
+{
+  "recipeId": "baozi",
+  "sourceHash": "1c642b82e50b7e83c9575eafb069cb0a5d9bb5c84b52fcaf89d795cb1594b4a2",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-11",
+  "servings": 4,
+  "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "vehnäjauhoja",
+      "amount": 400,
+      "unit": "g",
+      "state": "semi-coarse wheat flour",
+      "matchEvidence": "vehnäjauhoja maps to fineli-release-20 record 110; state: semi-coarse wheat flour.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "semi-coarse wheat flour",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "item": "lämmintä vettä",
+      "amount": 2.5,
+      "unit": "dl",
+      "state": "documented low-impact seasoning or nutrient-free item",
+      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Water and salt have no material macro contribution.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Water and salt have no material macro contribution."
+    },
+    {
+      "item": "kuivahiivaa",
+      "amount": 7,
+      "unit": "g",
+      "state": "documented low-impact seasoning or nutrient-free item",
+      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Excluded minor dry yeast seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 8,
+        "netCarbohydrate": 0.4,
+        "totalCarbohydrate": 0.5,
+        "protein": 0.9,
+        "fat": 0.1
+      },
+      "omissionImpactEvidence": "Excluded minor dry yeast seasoning; conservative per-serving upper bound is recorded and summed against project limits."
+    },
+    {
+      "item": "sokeria",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "white sugar",
+      "matchEvidence": "sokeria maps to fineli-release-20 record 1; state: white sugar.",
+      "gramsPerUnit": 12,
+      "conversionEvidence": "Ingredient-specific tablespoon mass: 12 g/rkl for sokeria.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "white sugar",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 99.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "sian jauhelihaa",
+      "amount": 300,
+      "unit": "g",
+      "state": "raw pork mince, 16% fat",
+      "matchEvidence": "sian jauhelihaa maps to fineli-release-20 record 28946; state: raw pork mince, 16% fat.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-28946-release-20",
+        "name": "JAUHELIHA, SIAN, RASVAA 16 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/28946",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw pork mince, 16% fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 18.81,
+          "fat": 15.7
+        }
+      }
+    },
+    {
+      "item": "kiinankaalia",
+      "amount": 150,
+      "unit": "g",
+      "state": "raw Chinese cabbage",
+      "matchEvidence": "kiinankaalia maps to fineli-release-20 record 359; state: raw Chinese cabbage.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-359-release-20",
+        "name": "KIINANKAALI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/359",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw Chinese cabbage",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.61,
+          "FIBT": 1.2,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.61,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 1.2,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "kevätsipulia",
+      "amount": 2,
+      "unit": "kpl",
+      "state": "fresh spring onion",
+      "matchEvidence": "kevätsipulia maps to afcd-release-3 record F006250; state: fresh spring onion.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006250-release-3",
+        "name": "Onion, spring, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh spring onion",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.6,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 1.7,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "soijakastiketta",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "soy sauce",
+      "matchEvidence": "soijakastiketta maps to fineli-release-20 record 31; state: soy sauce.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for soijakastiketta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-31-release-20",
+        "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/31",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "soy sauce",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 9.5,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 9.5,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 5.17,
+          "fat": 0.08
+        }
+      }
+    },
+    {
+      "item": "seesamiöljyä",
+      "amount": 1,
+      "unit": "tl",
+      "state": "sesame oil",
+      "matchEvidence": "seesamiöljyä maps to afcd-release-3 record F006187; state: sesame oil.",
+      "gramsPerUnit": 4.5,
+      "conversionEvidence": "Ingredient-specific teaspoon mass: 4.5 g/tl for seesamiöljyä.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006187-release-3",
+        "name": "Oil, sesame",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "sesame oil",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    },
+    {
+      "item": "raastettua inkivääriä",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "fresh ginger",
+      "matchEvidence": "raastettua inkivääriä maps to afcd-release-3 record F004213; state: fresh ginger.",
+      "gramsPerUnit": 6,
+      "conversionEvidence": "Ingredient-specific tablespoon mass: 6 g/rkl for raastettua inkivääriä.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F004213-release-3",
+        "name": "Ginger, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh ginger",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 2.8,
+          "polyols": 0,
+          "protein": 0.8,
+          "fat": 0.4
+        }
+      }
+    },
+    {
+      "item": "maissitärkkelystä",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "pure starch proxy",
+      "matchEvidence": "maissitärkkelystä maps to fineli-release-20 record 162; state: pure starch proxy.",
+      "gramsPerUnit": 8,
+      "conversionEvidence": "Ingredient-specific tablespoon mass: 8 g/rkl for maissitärkkelystä.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-162-release-20",
+        "name": "JAUHO, PERUNAJAUHO TAI -SUURIMO, PERUNATÄRKKELYS",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/162",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "pure starch proxy",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 81.6,
+          "FIBT": 1.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 81.6,
+          "fibre": 1.4,
+          "polyols": 0,
+          "protein": 0.06,
+          "fat": 0.05
+        }
+      }
+    }
+  ]
+}

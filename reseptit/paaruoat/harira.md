@@ -26,6 +26,11 @@ ingredients:
   - {amount: 60, unit: g, item: ohuita vermisellinuudeleita}
   - {amount: 20, unit: g, item: tuoretta korianteria, note: hienonnettuna}
   - {amount: 2, unit: rkl, item: sitruunamehua}
+carbs_net_per_serving_g: 33.89
+carbs_total_per_serving_g: 40.88
+protein_per_serving_g: 20.54
+fat_per_serving_g: 8.26
+
 ---
 
 # Marokkolainen harira-linssi-kikhernekeitto

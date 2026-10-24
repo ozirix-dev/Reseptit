@@ -65,6 +65,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/doner-kebab.md
 translation_of: doner-kebab
+carbs_net_per_serving_g: 30.89
+carbs_total_per_serving_g: 33.73
+protein_per_serving_g: 35.77
+fat_per_serving_g: 34.6
+
 ---
 
 # ดอนเนอร์เคบับเนื้อโฮมเมด

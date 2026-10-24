@@ -46,13 +46,18 @@ ingredients:
     unit: st
     item: vårlök
     note: i skivor
-  - amount: 3
-    unit: portioner
+  - amount: 450
+    unit: g
     item: kokt ris
     note: för servering
 source_language: fi
 source_recipe: reseptit/paaruoat/tomaatti-kananmuna-wokki.md
 translation_of: tomaatti-kananmuna-wokki
+carbs_net_per_serving_g: 38.93
+carbs_total_per_serving_g: 40.64
+protein_per_serving_g: 12.98
+fat_per_serving_g: 16.58
+
 ---
 
 # Kinesisk tomat-ägg wok

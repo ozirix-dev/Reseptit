@@ -23,10 +23,10 @@ image:
 ingredients:
   - amount: 200
     unit: g
-    item: jasmin eller grötris
+    item: jasminris
   - amount: 2
     unit: l
-    item: "vatten eller kycklingbuljong"
+    item: kycklingbuljong
   - amount: 1
     unit: tsk
     item: salt
@@ -53,6 +53,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/congee-riisipuuro.md
 translation_of: congee-riisipuuro
+carbs_net_per_serving_g: 40.21
+carbs_total_per_serving_g: 40.8
+protein_per_serving_g: 8.5
+fat_per_serving_g: 5.14
+
 ---
 
 # Kinesisk congee risgröt

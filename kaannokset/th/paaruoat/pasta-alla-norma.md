@@ -57,6 +57,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/pasta-alla-norma.md
 translation_of: pasta-alla-norma
+carbs_net_per_serving_g: 64.86
+carbs_total_per_serving_g: 70.84
+protein_per_serving_g: 12.66
+fat_per_serving_g: 11.56
+
 ---
 
 # พาสต้าอัลลาโนร์มากับมะเขือม่วง

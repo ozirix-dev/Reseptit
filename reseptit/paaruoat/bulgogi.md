@@ -24,6 +24,11 @@ ingredients:
   - {amount: 2, unit: kpl, item: kevätsipulia, note: viipaloituna}
   - {amount: 1, unit: rkl, item: seesaminsiemeniä}
   - {amount: 0.25, unit: tl, item: mustapippuria}
+carbs_net_per_serving_g: 62.81
+carbs_total_per_serving_g: 64.98
+protein_per_serving_g: 43.15
+fat_per_serving_g: 8.29
+
 ---
 
 # Korealainen bulgogi

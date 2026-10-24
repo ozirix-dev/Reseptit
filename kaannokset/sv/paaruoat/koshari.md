@@ -67,6 +67,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/koshari.md
 translation_of: koshari
+carbs_net_per_serving_g: 95.71
+carbs_total_per_serving_g: 102.95
+protein_per_serving_g: 22.23
+fat_per_serving_g: 12
+
 ---
 
 # Egyptisk koshari med ris, linser och pasta

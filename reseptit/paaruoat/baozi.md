@@ -63,6 +63,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 80.36
+carbs_total_per_serving_g: 84.52
+protein_per_serving_g: 26.69
+fat_per_serving_g: 14.53
+
 ---
 
 # Baozi-höyrysämpylät porsastäytteellä

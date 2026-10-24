@@ -47,6 +47,11 @@ image:
   alt: Parmesaaninen kanapannu parsakaalilla tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 2.91
+carbs_total_per_serving_g: 4.87
+protein_per_serving_g: 36.94
+fat_per_serving_g: 27.38
+
 ---
 # Parmesaaninen kanapannu parsakaalilla
 

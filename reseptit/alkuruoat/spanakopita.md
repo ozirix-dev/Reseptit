@@ -44,8 +44,8 @@ ingredients:
     unit: g
     item: tuoretta tilliä
     note: silputtuna
-  - amount: 8
-    unit: arkkia
+  - amount: 160
+    unit: g
     item: filotaikinaa
   - amount: 100
     unit: ml
@@ -59,6 +59,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 16.15
+carbs_total_per_serving_g: 19.2
+protein_per_serving_g: 14.23
+fat_per_serving_g: 26.75
+
 ---
 
 # Spanakopita – kreikkalainen pinaatti-fetapiirakka

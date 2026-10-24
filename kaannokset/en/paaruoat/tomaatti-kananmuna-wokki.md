@@ -46,13 +46,18 @@ ingredients:
     unit: piece
     item: spring onions
     note: in slices
-  - amount: 3
-    unit: servings
+  - amount: 450
+    unit: g
     item: cooked rice
     note: for serving
 source_language: fi
 source_recipe: reseptit/paaruoat/tomaatti-kananmuna-wokki.md
 translation_of: tomaatti-kananmuna-wokki
+carbs_net_per_serving_g: 38.93
+carbs_total_per_serving_g: 40.64
+protein_per_serving_g: 12.98
+fat_per_serving_g: 16.58
+
 ---
 
 # Chinese tomato-egg wok

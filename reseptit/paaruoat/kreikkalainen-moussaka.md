@@ -76,6 +76,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 32.22
+carbs_total_per_serving_g: 37.65
+protein_per_serving_g: 27.59
+fat_per_serving_g: 35.19
+
 ---
 
 # Kreikkalainen moussaka

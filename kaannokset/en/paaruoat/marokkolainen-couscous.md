@@ -67,6 +67,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/marokkolainen-couscous.md
 translation_of: marokkolainen-couscous
+carbs_net_per_serving_g: 67.45
+carbs_total_per_serving_g: 76.5
+protein_per_serving_g: 46.82
+fat_per_serving_g: 14.71
+
 ---
 
 # Moroccan couscous with chicken and vegetables

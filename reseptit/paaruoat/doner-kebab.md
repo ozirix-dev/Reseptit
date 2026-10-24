@@ -68,6 +68,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 30.89
+carbs_total_per_serving_g: 33.73
+protein_per_serving_g: 35.77
+fat_per_serving_g: 34.6
+
 ---
 
 # Kotitekoinen döner kebab naudanlihasta

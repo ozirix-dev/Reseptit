@@ -51,6 +51,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/poronkaristys-kukkakaalimuusilla.md
 translation_of: poronkaristys-kukkakaalimuusilla
+carbs_net_per_serving_g: 5.65
+carbs_total_per_serving_g: 9.2
+protein_per_serving_g: 31.2
+fat_per_serving_g: 21.21
+
 ---
 
 # Renskav med blomkålsmos

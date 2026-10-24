@@ -68,6 +68,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/souvlaki.md
 translation_of: souvlaki
+carbs_net_per_serving_g: 30.85
+carbs_total_per_serving_g: 34.17
+protein_per_serving_g: 43.6
+fat_per_serving_g: 20.67
+
 ---
 
 # Grekisk kycklingsouvlaki med tzatziki

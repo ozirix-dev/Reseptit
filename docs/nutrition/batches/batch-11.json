@@ -1,0 +1,1752 @@
+{
+  "batchId": "batch-11",
+  "recipes": [
+    {
+      "recipeId": "gazpacho",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "352",
+          "state": "raw tomato",
+          "matchEvidence": "kypsiä tomaatteja maps to fineli-release-20 record 352; state: raw tomato."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "346",
+          "state": "raw cucumber",
+          "matchEvidence": "kurkkua maps to fineli-release-20 record 346; state: raw cucumber.",
+          "gramsPerUnit": 400,
+          "conversionEvidence": "Edible piece mass for kurkkua: 400 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "386",
+          "state": "raw red pepper",
+          "matchEvidence": "punaista paprikaa maps to fineli-release-20 record 386; state: raw red pepper.",
+          "gramsPerUnit": 160,
+          "conversionEvidence": "Edible piece mass for punaista paprikaa: 160 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004193",
+          "state": "raw garlic",
+          "matchEvidence": "valkosipulinkynttä maps to afcd-release-3 record F004193; state: raw garlic.",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "929",
+          "state": "wine vinegar",
+          "matchEvidence": "sherryviinietikkaa tai punaviinietikkaa maps to fineli-release-20 record 929; state: wine vinegar.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for sherryviinietikkaa tai punaviinietikkaa."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "olive oil",
+          "matchEvidence": "oliiviöljyä maps to fineli-release-20 record 536; state: olive oil.",
+          "gramsPerUnit": 13.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1107",
+          "state": "light wheat bread",
+          "matchEvidence": "vaaleaa leipää maps to fineli-release-20 record 1107; state: light wheat bread.",
+          "gramsPerUnit": 25,
+          "conversionEvidence": "Fineli #1107 medium slice: 25 g/slice."
+        }
+      ]
+    },
+    {
+      "recipeId": "spanakopita",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F008761",
+          "state": "mature fresh spinach",
+          "matchEvidence": "tuoretta pinaattia maps to afcd-release-3 record F008761; state: mature fresh spinach."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006250",
+          "state": "fresh spring onion",
+          "matchEvidence": "kevätsipulia maps to afcd-release-3 record F006250; state: fresh spring onion.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002452",
+          "state": "feta cheese",
+          "matchEvidence": "fetajuustoa maps to afcd-release-3 record F002452; state: feta cheese."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw edible egg",
+          "matchEvidence": "kananmunaa maps to fineli-release-20 record 858; state: raw edible egg.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for kananmunaa: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "369",
+          "state": "fresh dill",
+          "matchEvidence": "tuoretta tilliä maps to fineli-release-20 record 369; state: fresh dill."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006497",
+          "state": "raw filo pastry",
+          "matchEvidence": "filotaikinaa maps to afcd-release-3 record F006497; state: raw filo pastry."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "olive oil",
+          "matchEvidence": "oliiviöljyä maps to fineli-release-20 record 536; state: olive oil.",
+          "gramsPerUnit": 0.91,
+          "conversionEvidence": "Ingredient-specific volume mass: 0.91 g/ml for oliiviöljyä."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006618",
+          "state": "ground black pepper",
+          "matchEvidence": "mustapippuria maps to afcd-release-3 record F006618; state: ground black pepper.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria."
+        }
+      ]
+    },
+    {
+      "recipeId": "tabbouleh",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F001929",
+          "state": "uncooked bulgur",
+          "matchEvidence": "hienoa bulguria maps to afcd-release-3 record F001929; state: uncooked bulgur."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006321",
+          "state": "fresh parsley",
+          "matchEvidence": "lehtipersiljaa maps to afcd-release-3 record F006321; state: fresh parsley."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "352",
+          "state": "raw tomato",
+          "matchEvidence": "tomaattia maps to fineli-release-20 record 352; state: raw tomato.",
+          "gramsPerUnit": 125,
+          "conversionEvidence": "Edible piece mass for tomaattia: 125 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006250",
+          "state": "fresh spring onion",
+          "matchEvidence": "kevätsipulia maps to afcd-release-3 record F006250; state: fresh spring onion.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F005700",
+          "state": "fresh mint",
+          "matchEvidence": "tuoretta minttua maps to afcd-release-3 record F005700; state: fresh mint."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004726",
+          "state": "lemon juice",
+          "matchEvidence": "sitruunamehua maps to afcd-release-3 record F004726; state: lemon juice.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for sitruunamehua."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "olive oil",
+          "matchEvidence": "oliiviöljyä maps to fineli-release-20 record 536; state: olive oil.",
+          "gramsPerUnit": 13.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006618",
+          "state": "ground black pepper",
+          "matchEvidence": "mustapippuria maps to afcd-release-3 record F006618; state: ground black pepper.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria."
+        }
+      ]
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "117",
+          "state": "dry wheat pasta",
+          "matchEvidence": "rigatoni- tai pennepastaa maps to fineli-release-20 record 117; state: dry wheat pasta."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "362",
+          "state": "raw eggplant",
+          "matchEvidence": "munakoisoa maps to fineli-release-20 record 362; state: raw eggplant.",
+          "gramsPerUnit": 400,
+          "conversionEvidence": "Edible piece mass for munakoisoa: 400 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "398",
+          "state": "canned crushed tomato",
+          "matchEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004193",
+          "state": "raw garlic",
+          "matchEvidence": "valkosipulinkynttä maps to afcd-release-3 record F004193; state: raw garlic.",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "olive oil",
+          "matchEvidence": "oliiviöljyä maps to fineli-release-20 record 536; state: olive oil.",
+          "gramsPerUnit": 13.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F000396",
+          "state": "fresh basil",
+          "matchEvidence": "tuoretta basilikaa maps to afcd-release-3 record F000396; state: fresh basil."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006618",
+          "state": "ground black pepper",
+          "matchEvidence": "mustapippuria maps to afcd-release-3 record F006618; state: ground black pepper.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria."
+        }
+      ]
+    },
+    {
+      "recipeId": "poronkaristys-kukkakaalimuusilla",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "734",
+          "state": "raw reindeer",
+          "matchEvidence": "poronkäristyslihaa maps to fineli-release-20 record 734; state: raw reindeer."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "yellow onion",
+          "matchEvidence": "sipuli maps to fineli-release-20 record 335; state: yellow onion.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "576",
+          "state": "unsalted butter",
+          "matchEvidence": "voita maps to fineli-release-20 record 576; state: unsalted butter.",
+          "gramsPerUnit": 14,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 14 g/rkl for voita."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006618",
+          "state": "ground black pepper",
+          "matchEvidence": "mustapippuria maps to afcd-release-3 record F006618; state: ground black pepper.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "322",
+          "state": "raw cauliflower",
+          "matchEvidence": "kukkakaalia maps to fineli-release-20 record 322; state: raw cauliflower."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "38% cream",
+          "matchEvidence": "kuohukermaa maps to fineli-release-20 record 631; state: 38% cream.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific volume mass: 100 g/dl for kuohukermaa."
+        }
+      ]
+    },
+    {
+      "recipeId": "souvlaki",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002806",
+          "state": "raw lean chicken thigh flesh",
+          "matchEvidence": "broilerin paistileikettä maps to afcd-release-3 record F002806; state: raw lean chicken thigh flesh."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "olive oil",
+          "matchEvidence": "oliiviöljyä maps to fineli-release-20 record 536; state: olive oil.",
+          "gramsPerUnit": 13.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004726",
+          "state": "lemon juice",
+          "matchEvidence": "sitruunan mehu maps to afcd-release-3 record F004726; state: lemon juice.",
+          "gramsPerUnit": 45,
+          "conversionEvidence": "Edible piece mass for sitruunan mehu: 45 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004193",
+          "state": "raw garlic",
+          "matchEvidence": "valkosipulinkynttä maps to afcd-release-3 record F004193; state: raw garlic.",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006281",
+          "state": "dried oregano",
+          "matchEvidence": "kuivattua oreganoa maps to afcd-release-3 record F006281; state: dried oregano.",
+          "gramsPerUnit": 6,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 6 g/rkl for kuivattua oreganoa."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "34611",
+          "state": "Greek yoghurt 7% fat",
+          "matchEvidence": "kreikkalaista jogurttia maps to fineli-release-20 record 34611; state: Greek yoghurt 7% fat."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "346",
+          "state": "raw cucumber",
+          "matchEvidence": "kurkkua maps to fineli-release-20 record 346; state: raw cucumber.",
+          "gramsPerUnit": 400,
+          "conversionEvidence": "Edible piece mass for kurkkua: 400 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004193",
+          "state": "raw garlic",
+          "matchEvidence": "valkosipulinkynttä maps to afcd-release-3 record F004193; state: raw garlic.",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1056",
+          "state": "pita bread",
+          "matchEvidence": "pitaleipää maps to fineli-release-20 record 1056; state: pita bread.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for pitaleipää: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "352",
+          "state": "raw tomato",
+          "matchEvidence": "tomaattia maps to fineli-release-20 record 352; state: raw tomato.",
+          "gramsPerUnit": 125,
+          "conversionEvidence": "Edible piece mass for tomaattia: 125 g/unit, Fineli portion where available or standard piece."
+        }
+      ]
+    },
+    {
+      "recipeId": "koshari",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "399",
+          "state": "dry green/brown lentils",
+          "matchEvidence": "ruskeita linssejä maps to fineli-release-20 record 399; state: dry green/brown lentils."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11521",
+          "state": "uncooked long-grain rice",
+          "matchEvidence": "riisiä maps to fineli-release-20 record 11521; state: uncooked long-grain rice."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "117",
+          "state": "dry wheat macaroni",
+          "matchEvidence": "pientä makaronia maps to fineli-release-20 record 117; state: dry wheat macaroni."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "yellow onion",
+          "matchEvidence": "sipulia maps to fineli-release-20 record 335; state: yellow onion.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for sipulia: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "162",
+          "state": "pure starch proxy",
+          "matchEvidence": "maissitärkkelystä maps to fineli-release-20 record 162; state: pure starch proxy.",
+          "gramsPerUnit": 8,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 8 g/rkl for maissitärkkelystä."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "olive oil",
+          "matchEvidence": "oliiviöljyä maps to fineli-release-20 record 536; state: olive oil.",
+          "gramsPerUnit": 13.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "398",
+          "state": "canned crushed tomato",
+          "matchEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004193",
+          "state": "raw garlic",
+          "matchEvidence": "valkosipulinkynttä maps to afcd-release-3 record F004193; state: raw garlic.",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "929",
+          "state": "wine vinegar",
+          "matchEvidence": "punaviinietikkaa maps to fineli-release-20 record 929; state: wine vinegar.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for punaviinietikkaa."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003327",
+          "state": "ground cumin",
+          "matchEvidence": "juustokuminaa maps to afcd-release-3 record F003327; state: ground cumin.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for juustokuminaa."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004726",
+          "state": "lemon juice",
+          "matchEvidence": "sitruunamehua maps to afcd-release-3 record F004726; state: lemon juice.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for sitruunamehua."
+        }
+      ]
+    },
+    {
+      "recipeId": "harira",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11562",
+          "state": "raw beef mince, 17% fat",
+          "matchEvidence": "naudan jauhelihaa maps to fineli-release-20 record 11562; state: raw beef mince, 17% fat."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "yellow onion",
+          "matchEvidence": "keltasipulia maps to fineli-release-20 record 335; state: yellow onion.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for keltasipulia: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "339",
+          "state": "raw celery stalk",
+          "matchEvidence": "sellerinvartta maps to fineli-release-20 record 339; state: raw celery stalk.",
+          "gramsPerUnit": 40,
+          "conversionEvidence": "Edible piece mass for sellerinvartta: 40 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "398",
+          "state": "canned crushed tomato",
+          "matchEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "399",
+          "state": "dry green/brown lentils",
+          "matchEvidence": "kuivattuja vihreitä linssejä maps to fineli-release-20 record 399; state: dry green/brown lentils."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11089",
+          "state": "cooked drained chickpeas",
+          "matchEvidence": "kikherneitä maps to fineli-release-20 record 11089; state: cooked drained chickpeas."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F008936",
+          "state": "prepared liquid stock",
+          "matchEvidence": "lihalientä maps to afcd-release-3 record F008936; state: prepared liquid stock.",
+          "gramsPerUnit": 1000,
+          "conversionEvidence": "Ingredient-specific volume mass: 1000 g/l for lihalientä."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004210",
+          "state": "ground ginger",
+          "matchEvidence": "jauhettua inkivääriä maps to afcd-release-3 record F004210; state: ground ginger.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for jauhettua inkivääriä."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009335",
+          "state": "ground turmeric",
+          "matchEvidence": "kurkumaa maps to afcd-release-3 record F009335; state: ground turmeric.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kurkumaa."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002963",
+          "state": "ground cinnamon",
+          "matchEvidence": "kanelia maps to afcd-release-3 record F002963; state: ground cinnamon.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kanelia."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "117",
+          "state": "dry wheat pasta as vermicelli proxy",
+          "matchEvidence": "ohuita vermisellinuudeleita maps to fineli-release-20 record 117; state: dry wheat pasta as vermicelli proxy."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003192",
+          "state": "fresh raw coriander leaf",
+          "matchEvidence": "Fresh coriander leaf mapped to AFCD Release 3 record F003192; selected state: fresh raw leaf."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004726",
+          "state": "lemon juice",
+          "matchEvidence": "sitruunamehua maps to afcd-release-3 record F004726; state: lemon juice.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for sitruunamehua."
+        }
+      ]
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "362",
+          "state": "raw eggplant",
+          "matchEvidence": "munakoisoa maps to fineli-release-20 record 362; state: raw eggplant.",
+          "gramsPerUnit": 400,
+          "conversionEvidence": "Edible piece mass for munakoisoa: 400 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "205",
+          "state": "peeled raw potato",
+          "matchEvidence": "perunoita maps to fineli-release-20 record 205; state: peeled raw potato."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11562",
+          "state": "raw beef mince, 17% fat",
+          "matchEvidence": "naudan jauhelihaa maps to fineli-release-20 record 11562; state: raw beef mince, 17% fat."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "yellow onion",
+          "matchEvidence": "sipuli maps to fineli-release-20 record 335; state: yellow onion.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "398",
+          "state": "canned crushed tomato",
+          "matchEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002963",
+          "state": "ground cinnamon",
+          "matchEvidence": "kanelia maps to afcd-release-3 record F002963; state: ground cinnamon.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kanelia."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "olive oil",
+          "matchEvidence": "oliiviöljyä maps to fineli-release-20 record 536; state: olive oil.",
+          "gramsPerUnit": 13.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "576",
+          "state": "unsalted butter",
+          "matchEvidence": "voita maps to fineli-release-20 record 576; state: unsalted butter."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "110",
+          "state": "semi-coarse wheat flour",
+          "matchEvidence": "vehnäjauhoja maps to fineli-release-20 record 110; state: semi-coarse wheat flour."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "689",
+          "state": "whole milk",
+          "matchEvidence": "maitoa maps to fineli-release-20 record 689; state: whole milk.",
+          "gramsPerUnit": 100,
+          "conversionEvidence": "Ingredient-specific volume mass: 100 g/dl for maitoa."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw edible egg",
+          "matchEvidence": "kananmuna maps to fineli-release-20 record 858; state: raw edible egg.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for kananmuna: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "643",
+          "state": "semi-hard Edam cheese proxy",
+          "matchEvidence": "raastettua kovaa juustoa maps to fineli-release-20 record 643; state: semi-hard Edam cheese proxy."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006618",
+          "state": "ground black pepper",
+          "matchEvidence": "mustapippuria maps to afcd-release-3 record F006618; state: ground black pepper.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria."
+        }
+      ]
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002806",
+          "state": "raw lean chicken thigh flesh",
+          "matchEvidence": "broilerin koipia tai paistileikettä maps to afcd-release-3 record F002806; state: raw lean chicken thigh flesh."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003239",
+          "state": "uncooked couscous",
+          "matchEvidence": "couscousia maps to afcd-release-3 record F003239; state: uncooked couscous."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "yellow onion",
+          "matchEvidence": "sipuli maps to fineli-release-20 record 335; state: yellow onion.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "300",
+          "state": "raw carrot",
+          "matchEvidence": "porkkanaa maps to fineli-release-20 record 300; state: raw carrot.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for porkkanaa: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "389",
+          "state": "raw zucchini",
+          "matchEvidence": "kesäkurpitsaa maps to fineli-release-20 record 389; state: raw zucchini.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for kesäkurpitsaa: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11089",
+          "state": "cooked drained chickpeas",
+          "matchEvidence": "kikherneitä maps to fineli-release-20 record 11089; state: cooked drained chickpeas."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F008936",
+          "state": "prepared liquid stock",
+          "matchEvidence": "kanalientä maps to afcd-release-3 record F008936; state: prepared liquid stock.",
+          "gramsPerUnit": 1000,
+          "conversionEvidence": "Ingredient-specific volume mass: 1000 g/l for kanalientä."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003327",
+          "state": "ground cumin",
+          "matchEvidence": "juustokuminaa maps to afcd-release-3 record F003327; state: ground cumin.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for juustokuminaa."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003190",
+          "state": "ground coriander seed",
+          "matchEvidence": "jauhettua korianteria maps to afcd-release-3 record F003190; state: ground coriander seed.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for jauhettua korianteria."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009335",
+          "state": "ground turmeric",
+          "matchEvidence": "kurkumaa maps to afcd-release-3 record F009335; state: ground turmeric.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kurkumaa."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "olive oil",
+          "matchEvidence": "oliiviöljyä maps to fineli-release-20 record 536; state: olive oil.",
+          "gramsPerUnit": 13.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        }
+      ]
+    },
+    {
+      "recipeId": "doner-kebab",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11562",
+          "state": "raw beef mince, 17% fat",
+          "matchEvidence": "naudan jauhelihaa maps to fineli-release-20 record 11562; state: raw beef mince, 17% fat."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "34611",
+          "state": "Greek yoghurt 7% fat",
+          "matchEvidence": "kreikkalaista jogurttia maps to fineli-release-20 record 34611; state: Greek yoghurt 7% fat."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "yellow onion",
+          "matchEvidence": "sipuli maps to fineli-release-20 record 335; state: yellow onion.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004193",
+          "state": "raw garlic",
+          "matchEvidence": "valkosipulinkynttä maps to afcd-release-3 record F004193; state: raw garlic.",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003327",
+          "state": "ground cumin",
+          "matchEvidence": "juustokuminaa maps to afcd-release-3 record F003327; state: ground cumin.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for juustokuminaa."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006316",
+          "state": "ground paprika",
+          "matchEvidence": "paprikajauhetta maps to afcd-release-3 record F006316; state: ground paprika.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for paprikajauhetta."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006281",
+          "state": "dried oregano",
+          "matchEvidence": "oreganoa maps to afcd-release-3 record F006281; state: dried oregano.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for oreganoa."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006618",
+          "state": "ground black pepper",
+          "matchEvidence": "mustapippuria maps to afcd-release-3 record F006618; state: ground black pepper.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1056",
+          "state": "pita bread",
+          "matchEvidence": "pitaleipää maps to fineli-release-20 record 1056; state: pita bread.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for pitaleipää: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "33862",
+          "state": "industrial coleslaw",
+          "matchEvidence": "kaalisalaattia maps to fineli-release-20 record 33862; state: industrial coleslaw."
+        }
+      ]
+    },
+    {
+      "recipeId": "chettinad-kana",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002806",
+          "state": "raw lean chicken thigh flesh",
+          "matchEvidence": "broilerin reisilihaa maps to afcd-release-3 record F002806; state: raw lean chicken thigh flesh."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "yellow onion",
+          "matchEvidence": "sipuli maps to fineli-release-20 record 335; state: yellow onion.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "352",
+          "state": "raw tomato",
+          "matchEvidence": "tomaattia maps to fineli-release-20 record 352; state: raw tomato.",
+          "gramsPerUnit": 125,
+          "conversionEvidence": "Edible piece mass for tomaattia: 125 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004193",
+          "state": "raw garlic",
+          "matchEvidence": "valkosipulinkynttä maps to afcd-release-3 record F004193; state: raw garlic.",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004213",
+          "state": "fresh ginger",
+          "matchEvidence": "tuoretta inkivääriä maps to afcd-release-3 record F004213; state: fresh ginger."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006618",
+          "state": "ground black pepper",
+          "matchEvidence": "mustapippureita maps to afcd-release-3 record F006618; state: ground black pepper.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippureita."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F003190",
+          "state": "ground coriander seed",
+          "matchEvidence": "korianterinsiemeniä maps to afcd-release-3 record F003190; state: ground coriander seed.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for korianterinsiemeniä."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded minor fenkolinsiemen seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.2,
+            "totalCarbohydrate": 0.25,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Excluded minor fenkolinsiemen seasoning; conservative per-serving upper bound is recorded and summed against project limits."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002963",
+          "state": "ground cinnamon",
+          "matchEvidence": "kanelitanko maps to afcd-release-3 record F002963; state: ground cinnamon.",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Edible piece mass for kanelitanko: 3 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006159",
+          "state": "canola oil proxy",
+          "matchEvidence": "öljyä maps to afcd-release-3 record F006159; state: canola oil proxy.",
+          "gramsPerUnit": 13.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for öljyä."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded minor curryleht seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 2.5,
+            "netCarbohydrate": 0.35,
+            "totalCarbohydrate": 0.5,
+            "protein": 0.2,
+            "fat": 0.15
+          },
+          "omissionImpactEvidence": "Excluded minor curryleht seasoning; conservative per-serving upper bound is recorded and summed against project limits."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        }
+      ]
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "858",
+          "state": "raw edible egg",
+          "matchEvidence": "kananmunaa maps to fineli-release-20 record 858; state: raw edible egg.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for kananmunaa: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "352",
+          "state": "raw tomato",
+          "matchEvidence": "kypsää tomaattia maps to fineli-release-20 record 352; state: raw tomato.",
+          "gramsPerUnit": 125,
+          "conversionEvidence": "Edible piece mass for kypsää tomaattia: 125 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006159",
+          "state": "canola oil proxy",
+          "matchEvidence": "neutraalia öljyä maps to afcd-release-3 record F006159; state: canola oil proxy.",
+          "gramsPerUnit": 13.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for neutraalia öljyä."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1",
+          "state": "white sugar",
+          "matchEvidence": "sokeria maps to fineli-release-20 record 1; state: white sugar.",
+          "gramsPerUnit": 4,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 4 g/tl for sokeria."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "31",
+          "state": "soy sauce",
+          "matchEvidence": "soijakastiketta maps to fineli-release-20 record 31; state: soy sauce.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for soijakastiketta."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006250",
+          "state": "fresh spring onion",
+          "matchEvidence": "kevätsipulia maps to afcd-release-3 record F006250; state: fresh spring onion.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1370",
+          "state": "cooked plain rice",
+          "matchEvidence": "keitettyä riisiä maps to fineli-release-20 record 1370; state: cooked plain rice."
+        }
+      ]
+    },
+    {
+      "recipeId": "baozi",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "110",
+          "state": "semi-coarse wheat flour",
+          "matchEvidence": "vehnäjauhoja maps to fineli-release-20 record 110; state: semi-coarse wheat flour."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded minor dry yeast seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 8,
+            "netCarbohydrate": 0.4,
+            "totalCarbohydrate": 0.5,
+            "protein": 0.9,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Excluded minor dry yeast seasoning; conservative per-serving upper bound is recorded and summed against project limits."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "1",
+          "state": "white sugar",
+          "matchEvidence": "sokeria maps to fineli-release-20 record 1; state: white sugar.",
+          "gramsPerUnit": 12,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 12 g/rkl for sokeria."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "28946",
+          "state": "raw pork mince, 16% fat",
+          "matchEvidence": "sian jauhelihaa maps to fineli-release-20 record 28946; state: raw pork mince, 16% fat."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "359",
+          "state": "raw Chinese cabbage",
+          "matchEvidence": "kiinankaalia maps to fineli-release-20 record 359; state: raw Chinese cabbage."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006250",
+          "state": "fresh spring onion",
+          "matchEvidence": "kevätsipulia maps to afcd-release-3 record F006250; state: fresh spring onion.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "31",
+          "state": "soy sauce",
+          "matchEvidence": "soijakastiketta maps to fineli-release-20 record 31; state: soy sauce.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for soijakastiketta."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006187",
+          "state": "sesame oil",
+          "matchEvidence": "seesamiöljyä maps to afcd-release-3 record F006187; state: sesame oil.",
+          "gramsPerUnit": 4.5,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 4.5 g/tl for seesamiöljyä."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004213",
+          "state": "fresh ginger",
+          "matchEvidence": "raastettua inkivääriä maps to afcd-release-3 record F004213; state: fresh ginger.",
+          "gramsPerUnit": 6,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 6 g/rkl for raastettua inkivääriä."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "162",
+          "state": "pure starch proxy",
+          "matchEvidence": "maissitärkkelystä maps to fineli-release-20 record 162; state: pure starch proxy.",
+          "gramsPerUnit": 8,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 8 g/rkl for maissitärkkelystä."
+        }
+      ]
+    },
+    {
+      "recipeId": "bulgogi",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F000810",
+          "state": "raw lean beef sirloin",
+          "matchEvidence": "naudan ulkofileetä maps to afcd-release-3 record F000810; state: raw lean beef sirloin."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F007682",
+          "state": "uncooked white rice",
+          "matchEvidence": "jasmiiniriisiä maps to afcd-release-3 record F007682; state: uncooked white rice."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "31",
+          "state": "soy sauce",
+          "matchEvidence": "soijakastiketta maps to fineli-release-20 record 31; state: soy sauce.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Ingredient-specific volume mass: 1 g/ml for soijakastiketta."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F008969",
+          "state": "brown sugar",
+          "matchEvidence": "fariinisokeria maps to afcd-release-3 record F008969; state: brown sugar.",
+          "gramsPerUnit": 12,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 12 g/rkl for fariinisokeria."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006187",
+          "state": "sesame oil",
+          "matchEvidence": "seesamiöljyä maps to afcd-release-3 record F006187; state: sesame oil.",
+          "gramsPerUnit": 13.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for seesamiöljyä."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004193",
+          "state": "raw garlic",
+          "matchEvidence": "valkosipulinkynttä maps to afcd-release-3 record F004193; state: raw garlic.",
+          "gramsPerUnit": 3,
+          "conversionEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "11062",
+          "state": "peeled pear",
+          "matchEvidence": "päärynää maps to fineli-release-20 record 11062; state: peeled pear."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "yellow onion",
+          "matchEvidence": "keltasipulia maps to fineli-release-20 record 335; state: yellow onion.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for keltasipulia: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006250",
+          "state": "fresh spring onion",
+          "matchEvidence": "kevätsipulia maps to afcd-release-3 record F006250; state: fresh spring onion.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "34245",
+          "state": "hulled sesame seeds",
+          "matchEvidence": "seesaminsiemeniä maps to fineli-release-20 record 34245; state: hulled sesame seeds.",
+          "gramsPerUnit": 8.5,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 8.5 g/rkl for seesaminsiemeniä."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006618",
+          "state": "ground black pepper",
+          "matchEvidence": "mustapippuria maps to afcd-release-3 record F006618; state: ground black pepper.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria."
+        }
+      ]
+    },
+    {
+      "recipeId": "congee-riisipuuro",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F007682",
+          "state": "uncooked white rice",
+          "matchEvidence": "jasmiiniriisiä maps to afcd-release-3 record F007682; state: uncooked white rice."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F008936",
+          "state": "prepared liquid stock",
+          "matchEvidence": "kanalientä maps to afcd-release-3 record F008936; state: prepared liquid stock.",
+          "gramsPerUnit": 1000,
+          "conversionEvidence": "Ingredient-specific volume mass: 1000 g/l for kanalientä."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004213",
+          "state": "fresh ginger",
+          "matchEvidence": "tuoretta inkivääriä maps to afcd-release-3 record F004213; state: fresh ginger.",
+          "gramsPerUnit": 6,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 6 g/rkl for tuoretta inkivääriä."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006250",
+          "state": "fresh spring onion",
+          "matchEvidence": "kevätsipulia maps to afcd-release-3 record F006250; state: fresh spring onion.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "31",
+          "state": "soy sauce",
+          "matchEvidence": "soijakastiketta maps to fineli-release-20 record 31; state: soy sauce.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for soijakastiketta."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006187",
+          "state": "sesame oil",
+          "matchEvidence": "seesamiöljyä maps to afcd-release-3 record F006187; state: sesame oil.",
+          "gramsPerUnit": 4.5,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 4.5 g/tl for seesamiöljyä."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "8513",
+          "state": "boiled egg",
+          "matchEvidence": "keitettyä kananmunaa maps to fineli-release-20 record 8513; state: boiled egg.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for keitettyä kananmunaa: 55 g/unit, Fineli portion where available or standard piece."
+        }
+      ]
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002594",
+          "state": "raw lean chicken breast",
+          "matchEvidence": "broilerin rintafileetä maps to afcd-release-3 record F002594; state: raw lean chicken breast."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "324",
+          "state": "raw broccoli",
+          "matchEvidence": "parsakaalia maps to fineli-release-20 record 324; state: raw broccoli."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "38% cream",
+          "matchEvidence": "kuohukermaa maps to fineli-release-20 record 631; state: 38% cream.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Ingredient-specific volume mass: 1 g/ml for kuohukermaa."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002479",
+          "state": "fresh parmesan",
+          "matchEvidence": "raastettua parmesaania maps to afcd-release-3 record F002479; state: fresh parmesan."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F008936",
+          "state": "prepared liquid stock",
+          "matchEvidence": "kanalientä maps to afcd-release-3 record F008936; state: prepared liquid stock.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Ingredient-specific volume mass: 1 g/ml for kanalientä."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "576",
+          "state": "unsalted butter",
+          "matchEvidence": "voita maps to fineli-release-20 record 576; state: unsalted butter.",
+          "gramsPerUnit": 14,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 14 g/rkl for voita."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F004193",
+          "state": "raw garlic",
+          "matchEvidence": "valkosipulimurskaa maps to afcd-release-3 record F004193; state: raw garlic.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for valkosipulimurskaa."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded minor salt and pepper seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.1,
+            "totalCarbohydrate": 0.1,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Excluded minor salt and pepper seasoning; conservative per-serving upper bound is recorded and summed against project limits."
+        }
+      ]
+    },
+    {
+      "recipeId": "liha-juureskeitto-perunaton",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F000514",
+          "state": "raw lean beef shin",
+          "matchEvidence": "naudan keittolihaa maps to afcd-release-3 record F000514; state: raw lean beef shin."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F009021",
+          "state": "raw peeled swede",
+          "matchEvidence": "lanttua maps to afcd-release-3 record F009021; state: raw peeled swede."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "300",
+          "state": "raw carrot",
+          "matchEvidence": "porkkanaa maps to fineli-release-20 record 300; state: raw carrot."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "311",
+          "state": "raw celeriac",
+          "matchEvidence": "juuriselleriä maps to fineli-release-20 record 311; state: raw celeriac."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "yellow onion",
+          "matchEvidence": "sipuli maps to fineli-release-20 record 335; state: yellow onion.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded minor laakerinleht seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0.5,
+            "netCarbohydrate": 0.1,
+            "totalCarbohydrate": 0.2,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Excluded minor laakerinleht seasoning; conservative per-serving upper bound is recorded and summed against project limits."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded minor kokonaista mustapippuria seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.1,
+            "totalCarbohydrate": 0.2,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Excluded minor kokonaista mustapippuria seasoning; conservative per-serving upper bound is recorded and summed against project limits."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F006321",
+          "state": "fresh parsley",
+          "matchEvidence": "silputtua persiljaa maps to afcd-release-3 record F006321; state: fresh parsley.",
+          "gramsPerUnit": 4,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 4 g/rkl for silputtua persiljaa."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 0,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "omissionImpactEvidence": "Water and salt have no material macro contribution."
+        }
+      ]
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F002806",
+          "state": "raw lean chicken thigh flesh",
+          "matchEvidence": "broilerin paistileikettä maps to afcd-release-3 record F002806; state: raw lean chicken thigh flesh."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F005946",
+          "state": "fresh common raw mushroom",
+          "matchEvidence": "Fresh button mushroom mapped to AFCD Release 3 record F005946; raw common mushroom, raw state."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "335",
+          "state": "yellow onion",
+          "matchEvidence": "salottisipuli maps to fineli-release-20 record 335; state: yellow onion.",
+          "gramsPerUnit": 55,
+          "conversionEvidence": "Edible piece mass for salottisipuli: 55 g/unit, Fineli portion where available or standard piece."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "631",
+          "state": "38% cream",
+          "matchEvidence": "kuohukermaa maps to fineli-release-20 record 631; state: 38% cream.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Ingredient-specific volume mass: 1 g/ml for kuohukermaa."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F008936",
+          "state": "prepared liquid stock",
+          "matchEvidence": "kanalientä maps to afcd-release-3 record F008936; state: prepared liquid stock.",
+          "gramsPerUnit": 1,
+          "conversionEvidence": "Ingredient-specific volume mass: 1 g/ml for kanalientä."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F005973",
+          "state": "cream-style mustard proxy",
+          "matchEvidence": "Dijon-sinappia maps to afcd-release-3 record F005973; state: cream-style mustard proxy.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for Dijon-sinappia."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "576",
+          "state": "unsalted butter",
+          "matchEvidence": "voita maps to fineli-release-20 record 576; state: unsalted butter.",
+          "gramsPerUnit": 14,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 14 g/rkl for voita."
+        },
+        {
+          "dataset": "afcd-release-3",
+          "sourceId": "F010466",
+          "state": "fresh thyme",
+          "matchEvidence": "silputtua timjamia maps to afcd-release-3 record F010466; state: fresh thyme.",
+          "gramsPerUnit": 15,
+          "conversionEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for silputtua timjamia."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded minor salt and pepper seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.1,
+            "totalCarbohydrate": 0.1,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Excluded minor salt and pepper seasoning; conservative per-serving upper bound is recorded and summed against project limits."
+        }
+      ]
+    },
+    {
+      "recipeId": "raejuusto-pesto-kasviskulho",
+      "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+      "ingredients": [
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "649",
+          "state": "cottage cheese 2–5%",
+          "matchEvidence": "raejuustoa maps to fineli-release-20 record 649; state: cottage cheese 2–5%."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "352",
+          "state": "raw tomato",
+          "matchEvidence": "kirsikkatomaatteja maps to fineli-release-20 record 352; state: raw tomato."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "346",
+          "state": "raw cucumber",
+          "matchEvidence": "kurkkua maps to fineli-release-20 record 346; state: raw cucumber."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "3323",
+          "state": "generic pesto sauce",
+          "matchEvidence": "vihreää pestoa maps to fineli-release-20 record 3323; state: generic pesto sauce."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "30968",
+          "state": "pine nuts",
+          "matchEvidence": "paahdettuja pinjansiemeniä maps to fineli-release-20 record 30968; state: pine nuts."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "34159",
+          "state": "raw arugula",
+          "matchEvidence": "rucolaa maps to fineli-release-20 record 34159; state: raw arugula."
+        },
+        {
+          "dataset": "fineli-release-20",
+          "sourceId": "536",
+          "state": "olive oil",
+          "matchEvidence": "oliiviöljyä maps to fineli-release-20 record 536; state: olive oil.",
+          "gramsPerUnit": 4.5,
+          "conversionEvidence": "Ingredient-specific teaspoon mass: 4.5 g/tl for oliiviöljyä."
+        },
+        {
+          "state": "documented low-impact seasoning or nutrient-free item",
+          "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Excluded minor unmeasured pepper seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 1,
+            "netCarbohydrate": 0.1,
+            "totalCarbohydrate": 0.1,
+            "protein": 0.1,
+            "fat": 0.1
+          },
+          "omissionImpactEvidence": "Excluded minor unmeasured pepper seasoning; conservative per-serving upper bound is recorded and summed against project limits."
+        }
+      ]
+    }
+  ]
+}
