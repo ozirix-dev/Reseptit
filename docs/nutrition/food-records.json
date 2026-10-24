@@ -517,9 +517,9 @@
     "carbohydrateDefinition": "EU_AVAILABLE",
     "componentValues": {
       "CHO": 2.5,
-    "FIBT": 2.0,
+      "FIBT": 2,
       "POLYL": 0,
-    "PROT": 0.65,
+      "PROT": 0.65,
       "FAT": 0.4
     },
     "componentIds": {
@@ -531,9 +531,9 @@
     },
     "per100g": {
       "carbohydrate": 2.5,
-    "fibre": 2.0,
+      "fibre": 2,
       "polyols": 0,
-    "protein": 0.65,
+      "protein": 0.65,
       "fat": 0.4
     },
     "portionMasses_g": {
@@ -2571,8 +2571,143 @@
       "fat": 1.1,
       "carbohydrate": 17.3,
       "fibre": 10.9,
-      "sugars": 3.0,
+      "sugars": 3,
       "polyols": 0
+    }
+  },
+  {
+    "id": "fineli-29014-2026-10-24",
+    "name": "KOOKOSMAITO, KOOKOSJUOMA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29014?c=2034&c2=2168",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL Fineli Food Composition Database Release 20, CC BY 4.0",
+    "state": "as-listed-edible-food",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 2.81,
+      "FIBT": 5.145,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 2.81,
+      "fibre": 5.145,
+      "polyols": 0,
+      "protein": 2.02,
+      "fat": 21.33
+    }
+  },
+  {
+    "id": "fineli-33021-2026-10-24",
+    "name": "MAUSTETAHNA, CURRYTAHNA, MIETO, TIKKA MASALA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/33021?c=2034&c2=2168",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL Fineli Food Composition Database Release 20, CC BY 4.0",
+    "state": "as-listed-edible-food",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 9.797,
+      "FIBT": 0.525,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 9.797,
+      "fibre": 0.525,
+      "polyols": 0,
+      "protein": 3.6,
+      "fat": 15.115
+    }
+  },
+  {
+    "id": "fineli-304-reference-2026-10-24",
+    "name": "NAURIS",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/304?c=2034&c2=2168",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL Fineli Food Composition Database Release 20, CC BY 4.0",
+    "state": "as-listed-edible-food",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 2.52,
+      "FIBT": 1.9,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 2.52,
+      "fibre": 1.9,
+      "polyols": 0,
+      "protein": 1.2,
+      "fat": 0.1
+    }
+  },
+  {
+    "id": "fineli-322-reference-2026-10-24",
+    "name": "KUKKAKAALI",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/322?c=2034&c2=2168",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL Fineli Food Composition Database Release 20, CC BY 4.0",
+    "state": "as-listed-edible-food",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 2.35,
+      "FIBT": 1.9,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 2.35,
+      "fibre": 1.9,
+      "polyols": 0,
+      "protein": 2,
+      "fat": 0.21
+    }
+  },
+  {
+    "id": "fineli-378-reference-2026-10-24",
+    "name": "PÄHKINÄ, MAAPÄHKINÄ",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/378?c=2034&c2=2168",
+    "retrievedAt": "2026-10-24",
+    "licence": "THL Fineli Food Composition Database Release 20, CC BY 4.0",
+    "state": "as-listed-edible-food",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 12.5,
+      "FIBT": 8.1,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "per100g": {
+      "carbohydrate": 12.5,
+      "fibre": 8.1,
+      "polyols": 0,
+      "protein": 25.6,
+      "fat": 43
     }
   }
 ]

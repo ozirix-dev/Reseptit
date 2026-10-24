@@ -1,50 +1,71 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { glycemicLoadPilotResults } from "@/generated/glycemic-load-pilot.generated";
+import { recipeLocaleFromPath } from "@/features/recipes/recipe-i18n";
+import type { RecipeLocale } from "@/types/content";
 
-const calculated = glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED");
-const awaitingSources = glycemicLoadPilotResults.length - calculated.length;
+const copy = {
+  fi: {
+    eyebrow: "Laskennallinen arvio", title: "Glykeeminen kuorma: lähteet ja laskenta", intro: "Tällä sivulla kuvataan reseptien GK-arvioiden laskentatapa, tietolähteet ja reseptikohtaiset oletukset. Arviot perustuvat ainesosiin; ne eivät mittaa valmiin ruoan tai yksittäisen ihmisen verensokerivastetta.",
+    about: "noin", perServing: "/ annos", summary: "Pilotin tilanne", total: "reseptiä tarkasteltu", done: "laskennallista arviota", pending: "ilman kokonaisarviota", method: "Miten GK lasketaan?", formula: "GK = Σ (ainesosan GI × imeytyvät hiilihydraatit annosta kohti) / 100.",
+    fineli: "Fineli Rel20 antaa ainesosien imeytyvien hiilihydraattien määrät. Reseptien annokset ja ruoka-ainekohtaiset annosmitat muunnetaan grammoiksi, kun Finelistä löytyy sopiva mitta.", gi: "GI-arvot tulevat julkaistuista kansainvälisistä taulukoista ja tutkimuksista. Jos suoraa osumaa ei ole, laskennassa voidaan käyttää lähintä perusteltua ruoka- tai valmistustapavastinetta tai laajaa elintarvikeryhmän keskiarvoa. Tällaiset vastineet merkitään matalalla luottamuksella.",
+    interpretation: "Alle 1 g imeytyvää hiilihydraattia annosta kohti sisältävät ainesosat jätetään summasta pois. Todellinen vaste vaihtelee raaka-aineiden, valmistuksen, annoksen ja ihmisen mukaan. GK on ohjeellinen ainesosista laskettu arvio, ei valmiin sekalaisen aterian mittaus.", sources: "Yleiset lähteet", recipeDetails: "Reseptikohtaiset tulokset ja oletukset", value: "GK-arvio", confidence: "Luottamustaso", source: "Käytetyt lähteet ja oletukset", high: "korkea", medium: "keskitasoinen", low: "matala", incomplete: "Kokonaisarviota ei julkaista, koska olennaista ainesosatietoa tai GI-vastinetta puuttuu.",
+    liverTitle: "Maksalaatikko kukkakaalilla", liver: "Reseptille ei näytetä kokonais-GK-lukua. Aiempi 3,45-arvio käsitteli naudanmaksan imeytyvät hiilihydraatit nolla-GI-oletuksella, jota ei ole mitattu eikä perusteltu maksan GI-arvona.", massaman: "Massamanin noin 5–6 vaihteluväli syntyy currytahnan hiilihydraattimäärän kahdesta lähteistetystä skenaariosta: Finelin Tikka-tahnan vastineesta ja yhden tuotemerkin tuotetiedoista. Se kuvaa vain tätä ainesosatiedon vaihtelua, ei koko laskelman virhemarginaalia.",
+  },
+  en: {
+    about: "about", perServing: "/ serving", eyebrow: "Calculated estimate", title: "Glycemic load: sources and method", intro: "This page explains how recipe GL estimates are calculated, which sources are used and what assumptions apply to each recipe. Estimates are ingredient-based; they do not measure the glucose response to a prepared meal or an individual.", summary: "Pilot status", total: "recipes reviewed", done: "calculated estimates", pending: "without a total estimate", method: "How is GL calculated?", formula: "GL = Σ (ingredient GI × available carbohydrate per serving) / 100.", fineli: "Fineli Release 20 supplies available-carbohydrate values. Recipe amounts are converted to grams using food-specific serving measures when a suitable Fineli measure is available.", gi: "GI values come from published international tables and studies. Where there is no direct match, the calculation may use the closest justified food or preparation analogue, or a broad food-category mean. These proxies are marked low confidence.", interpretation: "Ingredients contributing under 1 g available carbohydrate per serving are omitted. Actual response varies with ingredients, preparation, serving size and person. GL is an indicative ingredient-based estimate, not a measurement of a prepared mixed meal.", sources: "General sources", recipeDetails: "Recipe results and assumptions", value: "GL estimate", confidence: "Confidence", source: "Sources and assumptions used", high: "high", medium: "moderate", low: "low", incomplete: "No total estimate is published because material ingredient data or a GI analogue is missing.", liverTitle: "Beef liver casserole with cauliflower", liver: "No total GL is shown for this recipe. The earlier 3.45 estimate assigned an unmeasured zero-GI assumption to the available carbohydrate in beef liver; that is not a measured or justified liver GI value.", massaman: "The Massaman range of about 5–6 comes from two sourced scenarios for curry-paste carbohydrate: a Fineli Tikka-paste analogue and one branded product label. It describes variation in this ingredient data only, not an uncertainty interval for the entire calculation.",
+  },
+  sv: {
+    about: "cirka", perServing: "/ portion", eyebrow: "Beräknad uppskattning", title: "Glykemisk belastning: källor och metod", intro: "Här beskrivs hur receptens GL uppskattas, vilka källor som används och vilka antaganden som gäller för varje recept. Uppskattningarna bygger på ingredienser och mäter inte blodsockersvaret från en färdig måltid eller en person.", summary: "Pilotstatus", total: "granskade recept", done: "beräknade uppskattningar", pending: "utan total uppskattning", method: "Hur beräknas GL?", formula: "GL = Σ (ingrediensens GI × tillgängliga kolhydrater per portion) / 100.", fineli: "Fineli Rel20 ger mängden tillgängliga kolhydrater i ingredienserna. Receptmängder omvandlas till gram med livsmedelsspecifika portionsmått när ett lämpligt Fineli-mått finns.", gi: "GI-värden hämtas från publicerade internationella tabeller och studier. Om en direkt träff saknas kan den närmaste motiverade livsmedels- eller tillagningsanalogen eller ett brett kategorimedelvärde användas. Sådana värden markeras med låg säkerhet.", interpretation: "Ingredienser med under 1 g tillgängliga kolhydrater per portion utelämnas. Det verkliga svaret varierar med råvaror, tillagning, portionsstorlek och person. GL är en vägledande ingrediensbaserad uppskattning, inte en mätning av en färdig blandad måltid.", sources: "Allmänna källor", recipeDetails: "Receptresultat och antaganden", value: "GL-uppskattning", confidence: "Säkerhet", source: "Källor och antaganden", high: "hög", medium: "medelhög", low: "låg", incomplete: "Ingen total uppskattning publiceras eftersom viktig ingrediensinformation eller GI-analogi saknas.", liverTitle: "Levergryta med blomkål", liver: "Inget totalt GL-värde visas för receptet. Den tidigare uppskattningen 3,45 använde ett omätt antagande om GI noll för leverns tillgängliga kolhydrater; det är inget uppmätt eller välgrundat GI-värde för lever.", massaman: "Massamans intervall omkring 5–6 kommer från två källbelagda scenarier för currypastans kolhydrater: en Fineli-analogi för Tikka-pasta och en produktetikett. Intervallet beskriver bara variationen i denna ingrediensdata, inte osäkerheten i hela beräkningen.",
+  },
+  th: {
+    about: "ประมาณ", perServing: "/ หนึ่งที่", eyebrow: "ค่าประมาณจากการคำนวณ", title: "ภาระน้ำตาลในเลือด: แหล่งข้อมูลและวิธีคำนวณ", intro: "หน้านี้อธิบายวิธีคำนวณค่า GL ของสูตรอาหาร แหล่งข้อมูล และสมมติฐานของแต่ละสูตร ค่าประมาณคำนวณจากวัตถุดิบ ไม่ใช่การวัดการตอบสนองของน้ำตาลจากอาหารที่ปรุงเสร็จหรือบุคคลใดบุคคลหนึ่ง", summary: "สถานะการทดลอง", total: "สูตรที่ตรวจสอบ", done: "ค่าประมาณที่คำนวณแล้ว", pending: "ไม่มีค่ารวม", method: "คำนวณค่า GL อย่างไร", formula: "GL = Σ (ค่า GI ของวัตถุดิบ × คาร์โบไฮเดรตที่ร่างกายใช้ได้ต่อหนึ่งที่) / 100.", fineli: "Fineli Release 20 ให้ข้อมูลปริมาณคาร์โบไฮเดรตที่ร่างกายใช้ได้ในวัตถุดิบ ระบบแปลงปริมาณตามสูตรเป็นกรัมโดยใช้หน่วยบริโภคเฉพาะของอาหารเมื่อมีข้อมูลที่เหมาะสมใน Fineli.", gi: "ค่า GI มาจากตารางและงานวิจัยนานาชาติที่เผยแพร่แล้ว หากไม่มีข้อมูลตรง อาจใช้วัตถุดิบหรือวิธีปรุงที่ใกล้เคียงอย่างมีเหตุผล หรือค่าเฉลี่ยของหมวดอาหารแบบกว้าง โดยระบุระดับความเชื่อมั่นต่ำสำหรับค่าที่ใช้เทียบเหล่านี้", interpretation: "วัตถุดิบที่มีคาร์โบไฮเดรตใช้ได้ต่ำกว่า 1 กรัมต่อหนึ่งที่ไม่นำมารวม การตอบสนองจริงอาจแตกต่างตามวัตถุดิบ วิธีปรุง ปริมาณอาหาร และแต่ละบุคคล ค่า GL เป็นค่าประมาณจากวัตถุดิบ ไม่ใช่ผลวัดของอาหารหลายชนิดที่ปรุงเสร็จแล้ว", sources: "แหล่งข้อมูลทั่วไป", recipeDetails: "ผลลัพธ์และสมมติฐานของแต่ละสูตร", value: "ค่าประมาณ GL", confidence: "ระดับความเชื่อมั่น", source: "แหล่งข้อมูลและสมมติฐาน", high: "สูง", medium: "ปานกลาง", low: "ต่ำ", incomplete: "ไม่เผยแพร่ค่ารวมเนื่องจากข้อมูลวัตถุดิบสำคัญหรือค่า GI เทียบเคียงยังขาดหาย", liverTitle: "หม้อตับเนื้อกับกะหล่ำดอก", liver: "สูตรนี้ไม่แสดงค่า GL รวม ค่า 3.45 ก่อนหน้านี้ใช้สมมติฐาน GI เท่ากับศูนย์ที่ไม่ได้วัดสำหรับคาร์โบไฮเดรตในตับเนื้อ จึงไม่ใช่ค่า GI ของตับที่วัดหรือมีหลักฐานรองรับ", massaman: "ช่วงประมาณ 5–6 ของแกงมัสมั่นมาจากสองสถานการณ์ที่มีแหล่งอ้างอิงสำหรับคาร์โบไฮเดรตในพริกแกง ได้แก่ ค่าของพริกแกง Tikka ใน Fineli และฉลากผลิตภัณฑ์หนึ่งยี่ห้อ ช่วงนี้แสดงเฉพาะความแตกต่างของข้อมูลวัตถุดิบนี้ ไม่ใช่ช่วงความคลาดเคลื่อนของการคำนวณทั้งหมด",
+  },
+} satisfies Record<RecipeLocale, Record<string, string>>;
+
+const sources = [
+  ["International Tables 2021", "https://doi.org/10.1093/ajcn/nqab233"],
+  ["THL / Fineli Rel20 open data (CC BY 4.0)", "https://fineli.fi/fineli/fi/avoin-data"],
+  ["University of Sydney GI database", "https://glycemicindex.com/gi-search/"],
+  ["Non-western foods compendium 2021", "https://doi.org/10.1038/s41387-020-00145-w"],
+  ["ISO 26642:2010", "https://committee.iso.org/standard/43633.html"],
+  ["Nutrients 2020 vegetable GI review", "https://doi.org/10.3390/nu12103041"],
+];
 
 export function GlycemicLoadPilotPage() {
-  return <section className="page-section glycemic-pilot">
+  const locale = recipeLocaleFromPath(useLocation().pathname);
+  const text = copy[locale];
+  const calculated = glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED");
+  const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[locale];
+  const number = new Intl.NumberFormat(numberLocale, { maximumFractionDigits: 2 });
+  const formatValue = (result: typeof glycemicLoadPilotResults[number]) => result.glycemicLoadRangePerServing
+    ? `${text.about} ${number.format(result.glycemicLoadRangePerServing.min)}–${number.format(result.glycemicLoadRangePerServing.max)} ${text.perServing}`
+    : `${number.format(result.glycemicLoadPerServing ?? 0)} ${text.perServing}`;
+  return <section className="page-section glycemic-pilot" lang={locale}>
     <div className="container container--narrow">
-      <header className="page-intro glycemic-pilot__intro">
-        <p className="eyebrow">Laskennallinen arvio</p>
-        <h1>Glykeemisen kuorman pilotti</h1>
-        <p className="page-intro__description">Nämä 20 reseptikohtaista arviota lasketaan ainesosien imeytyvistä hiilihydraateista ja julkaistuista GI-arvoista. Ne eivät ole valmiin ruoan tai yksittäisen ihmisen verensokerin mittaustuloksia.</p>
-      </header>
-
-      <div className="glycemic-pilot__summary" aria-label="Pilotin tilanne">
-        <article><strong>{glycemicLoadPilotResults.length}</strong><span>reseptiä pilotissa</span></article>
-        <article><strong>{calculated.length}</strong><span>arviota julkaistu</span></article>
-        <article><strong>{awaitingSources}</strong><span>odottaa olennaista lähdetietoa</span></article>
+      <header className="page-intro glycemic-pilot__intro"><p className="eyebrow">{text.eyebrow}</p><h1>{text.title}</h1><p className="page-intro__description">{text.intro}</p></header>
+      <div className="glycemic-pilot__summary" aria-label={text.summary}>
+        <article><strong>{glycemicLoadPilotResults.length}</strong><span>{text.total}</span></article>
+        <article><strong>{calculated.length}</strong><span>{text.done}</span></article>
+        <article><strong>{glycemicLoadPilotResults.length - calculated.length}</strong><span>{text.pending}</span></article>
       </div>
-
       <section className="glycemic-pilot__method" aria-labelledby="glycemic-pilot-method">
-        <h2 id="glycemic-pilot-method">Miten arvio lasketaan?</h2>
-        <p>GK = Σ (ainesosan GI × sen imeytyvät hiilihydraatit annosta kohti) / 100. Hiilihydraatit perustuvat Finelin tietoihin ja reseptin määriin. Alle 1 g imeytyvää hiilihydraattia annosta kohti sisältävät ainesosat ohitetaan summassa.</p>
-        <p>GI-arvoa käytetään ensisijaisesti vastaavasta ruoasta. Jos täsmäarvo puuttuu, lähin julkaistu ruoka- tai valmistustapavastine voidaan käyttää arviona. Vastineen tai luokkakeskiarvon käyttö, tietolähde ja luottamustaso kerrotaan reseptikohtaisesti. Maustemäärien vakiot ovat oletuksia, eivät punnittuja määriä.</p>
-        <p>Valmiin ruoan todellinen vaste vaihtelee muun muassa raaka-aineen, valmistuksen, annoksen ja ihmisen mukaan. Ainesosien GI-arvojen summa on siksi ohjeellinen arvio; se ei mittaa sekalaisen aterian vastetta. Kun olennaiselle ainesosalle ei löydy julkaistua ja perusteltua arvoa tai määrää, resepti jää ilman kokonaislukua.</p>
-        <ul className="glycemic-pilot__sources" aria-label="Käytetyt GI-lähteet">
-          <li><a href="https://doi.org/10.1093/ajcn/nqab233">International Tables 2021</a> — ruoka- ja valmistustapakohtaisia mittauksia sekä elintarvikeryhmien keskiarvoja. Arvot on luokiteltu menetelmän laadun perusteella.</li>
-          <li><a href="https://fineli.fi/fineli/fi/avoin-data">THL / Fineli Rel20</a> — ainesosien imeytyvät hiilihydraatit ja ruoka-ainekohtaiset annosmitat. Fineli-tiedot on merkitty lähteiksi; sivusto ei ole THL:n hyväksymä palvelu.</li>
-          <li><a href="https://glycemicindex.com/gi-search/">Sydneyn yliopiston GI-tietokanta</a> — kansainvälisten GI-tietueiden haku ja lähdetarkistus; julkaisemattomat merkinnät eivät yksin riitä lähteeksi.</li>
-          <li><a href="https://doi.org/10.1038/s41387-020-00145-w">Non-western foods -koonti 2021</a> — julkaistujen alueellisten ruoka-arvojen täydentävä koonti.</li>
-          <li><a href="https://committee.iso.org/standard/43633.html">ISO 26642:2010</a> — GI-mittausten menetelmä. Se auttaa tulkitsemaan aineiston laatua; tämän sivun arvot eivät ole aterioiden ISO-mittauksia.</li>
-          <li><a href="https://doi.org/10.3390/nu12103041">Nutrients 2020, vihannesten GI-katsaus</a> — sisältää sekundaarisia paprika- ja sipuliarvoja, joiden alkuperäinen mittausmenetelmä ei ole tässä varmennettavissa; siksi luottamustaso on matala.</li>
-        </ul>
-        <p className="glycemic-pilot__source">Esimerkki vastineesta: tomaattimurskan arviota varten käytetään vuoden 2021 taulukon kokonaisen raa’an tomaatin GI-arvoa 22. Valmistustapa poikkeaa, joten lähde näkyy vastineena eikä suorana osumana. Tortillan perunalle käytetään keitetyn perunan arvoa 66 matalalla luottamustasolla, sillä öljyssä kypsennys ja kananmunaan yhdistäminen muuttavat ruoan rakennetta.</p>
+        <h2 id="glycemic-pilot-method">{text.method}</h2><p><strong>{text.formula}</strong></p><p>{text.fineli}</p><p>{text.gi}</p><p>{text.interpretation}</p>
+        <h3>{text.sources}</h3><ul className="glycemic-pilot__sources">{sources.map(([title, url]) => <li key={url}><a href={url} rel="noopener noreferrer">{title}</a></li>)}</ul>
       </section>
-
       <section className="glycemic-pilot__recipes" aria-labelledby="glycemic-pilot-recipes">
-        <h2 id="glycemic-pilot-recipes">Pilotin reseptit</h2>
-        <ol>
-          {glycemicLoadPilotResults.map((result) => <li key={result.recipeId}>
-            <Link to={result.routePath}>{result.title}</Link>
-            {result.status === "CALCULATED" && result.glycemicLoadPerServing !== null
-              ? <span className="glycemic-pilot__status">GK-arvio: {result.glycemicLoadPerServing} / annos — luottamus: {{ HIGH: "korkea", MEDIUM: "keskitasoinen", LOW: "matala" }[result.confidence ?? "LOW"]}</span>
-              : <span className="glycemic-pilot__status">Kokonaisarvio odottaa luotettavaa, valmistustapaan sopivaa lähdetietoa.</span>}
-          </li>)}
-        </ol>
+        <h2 id="glycemic-pilot-recipes">{text.recipeDetails}</h2>
+        <ol>{glycemicLoadPilotResults.map((result) => {
+          const localized = result.localeRoutes[locale] ?? result.localeRoutes.fi;
+          const confidence = result.confidence === "HIGH" ? text.high : result.confidence === "MEDIUM" ? text.medium : text.low;
+          return <li key={result.recipeId} id={result.recipeId} className="glycemic-pilot__recipe">
+            <h3><Link to={localized?.routePath ?? result.routePath}>{localized?.title ?? result.title}</Link></h3>
+            {result.status === "CALCULATED" ? <><p><strong>{text.value}: {result.recipeId === "massaman-curry-kanalla-vhh" ? `${text.about} 5–6 ${text.perServing}` : formatValue(result)}</strong> · {text.confidence}: {confidence}</p>
+              {result.recipeId === "massaman-curry-kanalla-vhh" ? <p>{text.massaman}</p> : null}
+              <details><summary>{text.source}</summary><ul>{result.sourceReferences.map((source) => <li key={`${source.url}-${source.title}`}><a href={source.url} rel="noopener noreferrer">{source.title}</a> — {source.note} ({source.confidence === "LOW" ? text.low : source.confidence === "MEDIUM" ? text.medium : text.high})</li>)}</ul></details>
+            </> : <p>{text.incomplete}</p>}
+          </li>;
+        })}</ol>
+        <aside id="maksalaatikko-kukkakaalilla" className="glycemic-pilot__exclusion"><h3>{text.liverTitle}</h3><p>{text.liver}</p></aside>
       </section>
     </div>
   </section>;

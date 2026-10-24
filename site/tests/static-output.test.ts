@@ -85,8 +85,8 @@ test("recipe index is prerendered and links only published languages", async () 
   assert.match(preloads[1][0], /media="\(min-width: 1100px\)"/);
 });
 
-test("only complete GK results appear on every published translation of a pilot recipe", async () => {
-  assert.equal(glycemicLoadPilotResults.length, 20);
+test("GK values link to centralized recipe details on every published translation", async () => {
+  assert.equal(glycemicLoadPilotResults.length, 21);
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
     assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);
@@ -94,20 +94,35 @@ test("only complete GK results appear on every published translation of a pilot 
       const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
       if (result.status === "CALCULATED" && result.glycemicLoadPerServing !== null) {
         assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoad));
-        assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoadNote));
-        assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoadConfidence(result.confidence ?? "LOW")));
         assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoadMethod));
-        assert.ok(html.includes(new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumFractionDigits: 2 }).format(result.glycemicLoadPerServing)));
+        assert.ok(html.includes(`${recipe.locale === "fi" ? "/Reseptit" : "/Reseptit"}${recipe.locale === "fi" ? "/glykeeminen-kuorma/" : recipe.locale === "en" ? "/en/glycemic-load/" : recipe.locale === "sv" ? "/sv/glykemisk-belastning/" : "/th/glycemic-load/"}#${result.recipeId}`));
+        assert.doesNotMatch(html, /recipe-glycemic-load__sources|Estimate confidence:|Arvion luottamustaso:/);
+        const displayed = result.glycemicLoadRangePerServing
+          ? `${new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumFractionDigits: 0 }).format(result.glycemicLoadRangePerServing.min)}–${new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumFractionDigits: 0 }).format(result.glycemicLoadRangePerServing.max)}`
+          : new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumFractionDigits: 2 }).format(result.glycemicLoadPerServing);
+        assert.ok(html.includes(displayed), `${result.recipeId}/${recipe.locale}: displayed GL value`);
         assert.ok(result.sourceReferences.length > 0, `${result.recipeId}: calculated result has source references`);
-        for (const source of result.sourceReferences) {
-          const expectedSourceUrl = source.matchKind === "CALCULATION_POLICY" ? "/Reseptit/glykeeminen-kuorma/" : source.url;
-          assert.ok(html.includes(expectedSourceUrl), `${result.recipeId}: source citation is visible`);
-          assert.ok(html.includes(source.note.replaceAll("'", "&#x27;")), `${result.recipeId}: source limitations are visible`);
-        }
       } else {
         assert.ok(!html.includes(recipeUi[recipe.locale].glycemicLoad), `${result.recipeId}/${recipe.locale}: incomplete GK stays hidden`);
       }
     }
+  }
+  const massaman = glycemicLoadPilotResults.find((result) => result.recipeId === "massaman-curry-kanalla-vhh");
+  assert.deepEqual(massaman?.glycemicLoadRangePerServing, { min: 5.17, max: 6.06 });
+  assert.equal(glycemicLoadPilotResults.some((result) => result.recipeId === "maksalaatikko-kukkakaalilla"), false);
+});
+
+test("localized central GL pages render with their canonical and hreflang links", async () => {
+  for (const route of ["glykeeminen-kuorma", "en/glycemic-load", "sv/glykemisk-belastning", "th/glycemic-load"]) {
+    const html = await readFile(path.join(dist, route, "index.html"), "utf8");
+    assert.match(html, /<h1/);
+    assert.match(html, /hreflang="fi"/);
+    assert.match(html, /hreflang="en"/);
+    assert.match(html, /hreflang="sv"/);
+    assert.match(html, /hreflang="th"/);
+    assert.match(html, /hreflang="x-default"/);
+    assert.match(html, /id="maksalaatikko-kukkakaalilla"/);
+    assert.doesNotMatch(html, /GK-arvio: 3\.45|3,45 \/ annos/);
   }
 });
 

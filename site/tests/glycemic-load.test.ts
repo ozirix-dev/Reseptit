@@ -55,6 +55,17 @@ test("single-ingredient GL uses available carbohydrate per serving and rounds on
   assert.equal(result.glycemicLoadPerServing, 6.25);
 });
 
+test("carbohydrate-source scenarios produce a range without presenting it as a confidence interval", () => {
+  const result = calculateGlycemicLoad({
+    recipeId: "range",
+    servings: 2,
+    ingredients: [{ name: "food", grams: 100, fineliRecordId: "food", giRecordId: gi.id, foodKey: "tested-food", preparationKey: "raw", giMatchEvidence: "GI source matched; carbohydrate range is documented.", availableCarbohydratePer100gRange: { min: 10, max: 20, evidence: "Two named source scenarios." } }],
+  }, [food("food", 10)], [gi]);
+  assert.equal(result.glycemicLoadPerServing, 5);
+  assert.deepEqual(result.glycemicLoadRangePerServing, { min: 2.5, max: 5 });
+  assert.deepEqual(result.ingredients[0].giContributionRange, { min: 2.5, max: 5 });
+});
+
 test("mixed-meal GL adds independently weighted ingredient contributions", () => {
   const secondGi = { ...gi, id: "second", foodKey: "second-food", preparationKey: "cooked", gi: 25 };
   const result = calculateGlycemicLoad({

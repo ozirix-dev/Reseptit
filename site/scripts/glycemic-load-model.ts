@@ -37,6 +37,7 @@ export interface GlycemicLoadIngredientInput {
   giMatchEvidence?: string;
   excludedReason?: string;
   estimatedAvailableCarbohydratePerServingG?: number;
+  availableCarbohydratePer100gRange?: { min: number; max: number; evidence: string };
   negligibleAssumption?: string;
 }
 
@@ -51,6 +52,7 @@ export interface GlycemicLoadResult {
   servings: number;
   status: "CALCULATED" | "INSUFFICIENT SOURCE DATA";
   glycemicLoadPerServing: number | null;
+  glycemicLoadRangePerServing: { min: number; max: number } | null;
   confidence: "HIGH" | "MEDIUM" | "LOW" | null;
   interpretation: string;
   ingredients: Array<{
@@ -59,12 +61,14 @@ export interface GlycemicLoadResult {
     fineliRecordId: string | null;
     availableCarbohydratePer100g: number | null;
     availableCarbohydratePerServingG: number | null;
+    availableCarbohydratePerServingRangeG: { min: number; max: number } | null;
     gi: number | null;
     giRecordId: string | null;
     qualityTier: GlycemicIndexRecord["qualityTier"] | null;
     matchKind: GlycemicIndexRecord["matchKind"] | null;
     confidence: GlycemicIndexRecord["confidence"] | null;
     giContribution: number | null;
+    giContributionRange: { min: number; max: number } | null;
     giCandidates: Array<{
       id: string;
       gi: number;
@@ -99,6 +103,9 @@ export function calculateGlycemicLoad(
   const giById = new Map(giRecords.map((record) => [record.id, record]));
   const blockers: string[] = [];
   let totalLoad = 0;
+  let totalLoadMin = 0;
+  let totalLoadMax = 0;
+  let hasRange = false;
   let confidence: "HIGH" | "MEDIUM" | "LOW" = "HIGH";
 
   const ingredients = input.ingredients.map((ingredient) => {
@@ -128,12 +135,14 @@ export function calculateGlycemicLoad(
         fineliRecordId: ingredient.fineliRecordId,
         availableCarbohydratePer100g: null,
         availableCarbohydratePerServingG: negligible ? estimatedCarbs ?? null : null,
+        availableCarbohydratePerServingRangeG: null,
         gi: null,
         giRecordId: ingredient.giRecordId,
         qualityTier: null,
         matchKind: null,
         confidence: negligible ? "LOW" as const : null,
         giContribution: null,
+        giContributionRange: null,
         giCandidates,
         excludedReason: ingredient.excludedReason,
         issues: negligible ? [issue] : issues,
@@ -155,14 +164,27 @@ export function calculateGlycemicLoad(
       }
     }
 
+    const carbohydrateRange = ingredient.availableCarbohydratePer100gRange;
+    if (carbohydrateRange) {
+      hasRange = true;
+      if (!valid(carbohydrateRange.min) || !valid(carbohydrateRange.max) || carbohydrateRange.max < carbohydrateRange.min || !carbohydrateRange.evidence) {
+        issues.push("Available-carbohydrate range is invalid or lacks evidence.");
+      }
+    }
+
     let availablePerServing: number | null = null;
     if (valid(ingredient.grams) && valid(availablePer100g)) {
       availablePerServing = availablePer100g * ingredient.grams / 100 / input.servings;
     }
+    const availablePerServingRange = valid(ingredient.grams) && carbohydrateRange
+      ? { min: carbohydrateRange.min * ingredient.grams / 100 / input.servings, max: carbohydrateRange.max * ingredient.grams / 100 / input.servings }
+      : null;
+    if (availablePerServingRange) availablePerServing = availablePerServingRange.max;
 
     let gi: number | null = null;
     let qualityTier: GlycemicIndexRecord["qualityTier"] | null = null;
     let giContribution: number | null = null;
+    let giContributionRange: { min: number; max: number } | null = null;
     let matchKind: GlycemicIndexRecord["matchKind"] | null = null;
     let ingredientConfidence: GlycemicIndexRecord["confidence"] | null = null;
     if (availablePerServing !== null && availablePerServing > 0) {
@@ -181,7 +203,14 @@ export function calculateGlycemicLoad(
         matchKind = matchedGi.matchKind ?? "EXACT";
         ingredientConfidence = matchedGi.confidence ?? (matchedGi.qualityTier === "STRONG" ? "HIGH" : "LOW");
         giContribution = availablePerServing * gi / 100;
+        const minCarbs = availablePerServingRange?.min ?? availablePerServing;
+        giContributionRange = {
+          min: (minCarbs < 1 ? 0 : minCarbs) * gi / 100,
+          max: availablePerServing * gi / 100,
+        };
         totalLoad += giContribution;
+        totalLoadMin += giContributionRange.min;
+        totalLoadMax += giContributionRange.max;
         if (ingredientConfidence === "LOW" || matchKind === "CATEGORY_MEAN") confidence = "LOW";
         else if (ingredientConfidence === "MEDIUM" && confidence === "HIGH") confidence = "MEDIUM";
       }
@@ -194,12 +223,14 @@ export function calculateGlycemicLoad(
       fineliRecordId: ingredient.fineliRecordId,
       availableCarbohydratePer100g: availablePer100g,
       availableCarbohydratePerServingG: availablePerServing,
+      availableCarbohydratePerServingRangeG: availablePerServingRange,
       gi,
       giRecordId: ingredient.giRecordId,
       qualityTier,
       matchKind,
       confidence: ingredientConfidence,
       giContribution,
+      giContributionRange,
       giCandidates,
       issues,
     };
@@ -211,6 +242,10 @@ export function calculateGlycemicLoad(
     servings: input.servings,
     status: complete ? "CALCULATED" : "INSUFFICIENT SOURCE DATA",
     glycemicLoadPerServing: complete ? Math.round((totalLoad + Number.EPSILON) * 100) / 100 : null,
+    glycemicLoadRangePerServing: complete && hasRange ? {
+      min: Math.round((totalLoadMin + Number.EPSILON) * 100) / 100,
+      max: Math.round((totalLoadMax + Number.EPSILON) * 100) / 100,
+    } : null,
     confidence: complete ? confidence : null,
     interpretation: "Ingredient-based estimate only; actual prepared-meal response varies. Ingredient portions below 1 g available carbohydrate per serving are excluded.",
     ingredients,

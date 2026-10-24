@@ -54,6 +54,17 @@ button { font: inherit; }
 .glycemic-pilot__recipes li > a { display: block; color: var(--accent); font-weight: 700; }
 .glycemic-pilot__recipes li > a:focus-visible, .glycemic-pilot__source a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 .glycemic-pilot__status { display: block; }
+.glycemic-pilot__recipe { scroll-margin-top: 1rem; padding: .85rem .2rem; border-bottom: 1px solid var(--line); }
+.glycemic-pilot__recipe h3 { font-size: 1.05rem; }
+.glycemic-pilot__recipe a { color: var(--accent); }
+.glycemic-pilot__recipe a:focus-visible, .glycemic-pilot__recipe summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: .2rem; }
+.glycemic-pilot__recipe details { margin-top: .5rem; }
+.glycemic-pilot__recipe summary { width: fit-content; cursor: pointer; font-weight: 700; }
+.glycemic-pilot__recipe details ul { display: grid; gap: .5rem; margin-top: .55rem; padding-left: 1.25rem; }
+.glycemic-pilot__exclusion { margin-top: 1rem; padding: 1rem; border-left: 4px solid var(--accent); background: var(--page); }
+.recipe-glycemic-load__caption { margin: .25rem 0 0; font-size: .9rem; }
+.recipe-glycemic-load__caption a { display: inline-flex; align-items: center; justify-content: center; min-width: 2rem; min-height: 2rem; margin-inline-start: .2rem; border-radius: .35rem; font-weight: 700; }
+.recipe-glycemic-load__caption a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .page-section { padding: 2.5rem 0 3.5rem; }
 .recipe-index .page-intro { gap: .55rem; margin-bottom: 1.1rem; }
 .recipe-index__container { width: min(1160px, calc(100% - 2rem)); }
@@ -161,7 +172,7 @@ button { font: inherit; }
 #recipe-instructions { scroll-margin-top: 1rem; }
 @media (min-width: 700px) { .recipe-more-filters > div { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-@media (max-width: 520px) { .glycemic-pilot__summary { grid-template-columns: 1fr; gap: .55rem; } .glycemic-pilot__summary article { grid-template-columns: auto 1fr; align-items: baseline; gap: .65rem; } .glycemic-pilot__summary strong { font-size: 1.45rem; } .glycemic-pilot__method, .glycemic-pilot__recipes { padding: .9rem; } }
+@media (max-width: 520px) { .glycemic-pilot__summary { grid-template-columns: 1fr; gap: .55rem; } .glycemic-pilot__summary article { grid-template-columns: auto 1fr; align-items: baseline; gap: .65rem; } .glycemic-pilot__summary strong { font-size: 1.45rem; } .glycemic-pilot__method, .glycemic-pilot__recipes { padding: .9rem; } .glycemic-pilot__recipe { overflow-wrap: anywhere; } }
 @media print {
   .recipe-actions, .recipe-image, .step-controls, .recipe-step-toggle { display: none !important; }
   .print-servings { display: block; font-weight: 700; }

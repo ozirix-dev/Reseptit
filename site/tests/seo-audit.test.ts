@@ -28,7 +28,7 @@ test("all generated routes, images, sitemap and metadata match published source"
 });
 test("inventory is dynamic and duplicate URLs are rejected", async () => {
   const recipe = siteContent.recipes[0];
-  assert.equal(expectedPages([recipe]).length, 3);
+  assert.equal(expectedPages([recipe]).length, 6);
   const report = await auditSeo(dist, [...siteContent.recipes, recipe], Object.keys(contentManifest));
   assert.ok(report.findings.some((f) => f.code === "DUPLICATE_ROUTE"));
 });

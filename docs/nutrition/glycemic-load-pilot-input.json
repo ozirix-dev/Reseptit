@@ -1358,13 +1358,86 @@
           "massEvidence": "No exact Fineli Rel20 unit mass; trace estimate only."
         }
       ]
+    },
+    {
+      "recipeId": "massaman-curry-kanalla-vhh",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kookosmaito",
+          "grams": 400,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "giRecordId": "coconut-milk-porridge-gi-31",
+          "foodKey": "coconut-milk",
+          "preparationKey": "rice-porridge-with-coconut-milk",
+          "massEvidence": "400 ml recipe amount converted using Fineli id 29014, 100 g/dl.",
+          "giMatchEvidence": "Published GI 31 for coconut-milk rice porridge; used as a low-confidence analogue, not plain coconut milk."
+        },
+        {
+          "name": "massaman-currytahna",
+          "grams": 45,
+          "fineliRecordId": "fineli-33021-2026-10-24",
+          "giRecordId": "asian-regional-category-mean-gi-60",
+          "foodKey": "curry-paste",
+          "preparationKey": "asian-regional-food-category",
+          "massEvidence": "3 tbsp converted using Fineli Tikka paste amount 15 g/tbsp; mass is an explicit proxy.",
+          "availableCarbohydratePer100gRange": {
+            "min": 9.797,
+            "max": 22.9,
+            "evidence": "Low scenario uses Fineli Tikka masala paste id 33021; high scenario uses Spice Up! Massaman product label. Recipe does not specify brand."
+          },
+          "giMatchEvidence": "Asian foods regional category mean GI 60, used as a low-confidence broad proxy; no direct curry-paste value."
+        },
+        {
+          "name": "nauris",
+          "grams": 250,
+          "fineliRecordId": "fineli-304-reference-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "massEvidence": "Recipe weight in grams.",
+          "giMatchEvidence": "2021 International Tables vegetable category mean; broad low-confidence proxy."
+        },
+        {
+          "name": "kukkakaali yhteensä",
+          "grams": 600,
+          "fineliRecordId": "fineli-322-reference-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "massEvidence": "200 g curry + 400 g cauliflower rice from recipe.",
+          "giMatchEvidence": "2021 International Tables vegetable category mean; broad low-confidence proxy."
+        },
+        {
+          "name": "maapähkinät",
+          "grams": 40,
+          "fineliRecordId": "fineli-378-reference-2026-10-24",
+          "giRecordId": "nuts-category-mean-gi-22",
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean",
+          "massEvidence": "Recipe weight in grams.",
+          "giMatchEvidence": "2021 International Tables nut category mean (n=3); not peanut-specific."
+        },
+        {
+          "name": "sipuli, kalakastike, limettimehu ja mausteet",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Conservative recipe-specific omission assumption; estimated contribution remains below 1 g available carbohydrate per serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.95,
+          "negligibleAssumption": "Combined estimated available carbohydrate is under 1 g per serving; quantities are not fully weighed and the ingredient-specific contribution is omitted.",
+          "massEvidence": "Recipe quantity estimates; no unified measured mass."
+        }
+      ]
     }
   ],
   "selectionNotes": {
     "selectionBasis": "New recipes were selected from the highest current recipe-level available-carbohydrate estimates outside the first cohort; every selected recipe is recalculated from its ingredient-level Fineli amounts.",
     "replacements": [
-      "Massaman chicken curry was replaced with eggplant and minced-beef casserole because Fineli Rel20 had no matching Massaman curry-paste record and the unbranded paste has material carbohydrate.",
-      "Beef liver casserole was replaced with VHH cabbage casserole because no preparation-relevant published GI value for liver was found for a carbohydrate contribution above the omission threshold."
-    ]
+      "Massaman curry is included as the 21st calculated estimate with a documented curry-paste carbohydrate scenario range; eggplant and minced-beef casserole remains in the cohort.",
+      "Beef liver casserole remains without a published GL total because the earlier 3.45 estimate used an unmeasured zero-GI assumption for liver carbohydrates."
+    ],
+    "massamanAdded": "Massaman chicken curry was added as the 21st calculated estimate. The curry-paste carbohydrate range uses Fineli Tikka paste and the named manufacturer product label as scenarios; it is not an overall confidence interval.",
+    "excludedPublication": "Beef liver casserole remains without a published total: the prior 3.45 estimate assigned an unmeasured GI of zero to liver carbohydrates."
   }
 }
