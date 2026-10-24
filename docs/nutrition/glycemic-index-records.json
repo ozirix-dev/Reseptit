@@ -49,6 +49,13 @@
       "url": "https://finefoods.fi/en/product/spice-up-for-professionals/spice-up-massaman-curry-paste-1000g/",
       "year": 2026,
       "use": "Product-label carbohydrate value used only as the high scenario for an unbranded recipe ingredient."
+    },
+    {
+      "id": "mexican-foods-noriega-2000",
+      "title": "Glycaemic and insulinaemic indices of Mexican foods high in complex carbohydrates",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10824718/",
+      "year": 2000,
+      "use": "Published human study of corn and wheat tortillas and tortilla meals; small study (8 healthy participants) used bread as reference. GI values converted to the glucose scale by the 0.71 bread-to-glucose conversion described in International Tables 2021; treated as supplementary evidence."
     }
   ],
   "records": [
@@ -780,6 +787,31 @@
       "note": "Mean of four ISO-tested dark chocolate products (GI 23, 44, 18, 29); not a brand-specific value.",
       "matchKind": "CATEGORY_MEAN",
       "confidence": "LOW"
+    },
+    {
+      "id": "corn-tortilla-noriega-2000-glucose-estimate",
+      "gi": 52.4,
+      "foodKey": "corn-tortilla",
+      "preparationKey": "commercial-corn-tortilla",
+      "food": "Corn tortilla",
+      "preparation": "Commercial corn tortilla; studied value converted from bread-reference scale to glucose scale",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "EXACT",
+      "confidence": "LOW",
+      "source": {
+        "title": "Glycaemic and insulinaemic indices of Mexican foods high in complex carbohydrates",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/10824718/",
+        "table": "Abstract; corn tortilla GI 73.8 ± 6.5 with bread=100 reference; converted ×0.71 as described by International Tables 2021",
+        "year": 2000,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 8,
+        "referenceFood": "Bread",
+        "testDurationHours": 3,
+        "qualityEvidence": "Published human food test, but only eight healthy subjects and a bread reference were used; glucose-scale conversion is an estimate, not an ISO-confirmed row."
+      },
+      "note": "Single published regional study; conversion to glucose scale uses the 0.71 factor described in International Tables 2021. Low confidence."
     }
   ]
 }
