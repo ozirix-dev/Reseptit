@@ -79,7 +79,57 @@ polyolikoostumus on epäselvä, nettoarvo jää puuttumaan.
   rakennettu ravintotietokantaa. Pyydä tarvittaessa käyttölupa tai käytä
   dokumentoitua pakkausmerkintää ja tarkista sen käyttöoikeus.
 
-Ei kokonaisia tietokantoja, tuotetekstejä tai kuvia kopioitu.
+### Muut avoimet tietokannat, tarkistettu 24.10.2026
+
+- USDA FoodData Centralin [API-ohje](https://fdc.nal.usda.gov/api-guide/)
+  kertoo aineiston olevan CC0 1.0 -lisenssillä ja suosittelee lähdemainintaa.
+  [Foundation Foods -lataus](https://fdc.nal.usda.gov/download-datasets/)
+  tarkistettiin huhtikuun 2026 CSV-pakettina. Sen `food_nutrient.csv` sisältää
+  hiilihydraatti (1005), ravintokuitu (1079), proteiini (1003) ja rasva (1004)
+  -arvoja, mutta latauksessa ei ollut yhtään `Total sugar alcohols` (1086)
+  -arvoriviä. USDA määrittelee hiilihydraatin by difference -arvon kuitua
+  sisältäväksi [Foundation Foods -dokumentaatiossa](https://fdc.nal.usda.gov/Foundation_Foods_Documentation/).
+  Siksi tätä poimintaa ei voi muuntaa tämän projektin kokonaishiilihydraatiksi
+  ilman polyolien erillistä lähdearvoa. Pakettia ei lisätty laskennan
+  ruokatietueisiin; CC0 sallii käytön, mutta puuttuva ravintotekijä ei muutu
+  luvaksi olettaa nollaa.
+- Open Food Facts ilmoittaa tietokannan ODbL-lisenssistä,
+  nimeämisvelvollisuudesta ja share-alike-ehdosta
+  ([lisenssiohje](https://github.com/openfoodfacts/openfoodfacts-server/blob/main/docs/api/tutorials/license-be-on-the-legal-side.md)).
+  Tuotekohtaiset pakkaustiedot eivät myöskään vastaa yleisnimisiä reseptiaineksia
+  ilman tuotemerkkiä ja tuotteen valintaa. Sitä ei yhdistetty Fineli-poimintaan.
+- Health Canadan [Canadian Nutrient File 2026](https://open.canada.ca/data/en/dataset/1b6139bd-ed7e-4043-bc28-ff00e10f3109)
+  on julkaistu Open Government Licence – Canada -lisenssillä. Lisenssi sallii
+  kopioinnin, muokkauksen ja jakelun lähdemaininnalla ilman Health Canadan
+  hyväksynnän vaikutelmaa
+  ([lisenssiehdot](https://open.canada.ca/en/open-government-licence-canada)).
+  Health Canadan [CNF 2026 -käyttöopas](https://open.canada.ca/data/dataset/1b6139bd-ed7e-4043-bc28-ff00e10f3109/resource/86483321-6c76-4a5f-9061-04b9a0a48a8d/download/canadian-nutrient-file_users-guide_2026.pdf)
+  pyytää huolellisuutta eikä salli ravintoarvon muuttamista; siksi tämän
+  viiteaineiston lähdearvot on säilytetty täsmälleen alkuperäisinä.
+  Paikalliseen raakaviitekantaan tuotiin 1 449/5 993 tietuetta, joilta löytyvät
+  eksplisiittiset lähderivit proteiinille (203), rasvalle (204), kokonaishiilihydraatille
+  by difference (205), kuidulle (291), mannitolille (260) ja sorbitolille (261).
+  Nutrient-arvot on säilytetty lähteen merkkijonoina ilman numeerista muunnosta;
+  jokaisessa tietueessa säilyvät myös ravintoaineen lähdekoodi ja päivityspäivä.
+  4 544 ruokaa jätettiin tästä osajoukosta pois puuttuvien komponenttirivien
+  vuoksi, eikä puuttuvaa arvoa täytetty nollalla. Koko CNF:ssä ei ole
+  duplikaattitunnisteita; yksi normalisoitu englanninkielinen nimi toistuu
+  tunnisteilla 6239 ja 6433. Molemmat pidetään erillään. Tuoduissa 1 449
+  tietueessa ei ole duplikaattinimiä, negatiivisia valittuja arvoja tai
+  yli 100 g/100 g makroarvoja.
+  Aineiston kokonaishiilihydraatti sisältää kuidun, ja polyolikentät kattavat
+  vain mannitolin ja sorbitolin. Siksi tietueet ovat paikallinen lähdehaku,
+  eivät vielä laskentamalliin kytkettyjä Fineli-komponentteja. Raakapoiminta
+  on `cnf-2026-reference.json`; sen voi tuottaa uudelleen komennolla
+  `python tools/import-cnf-reference.py <cnf-2026.zip> docs/nutrition/cnf-2026-reference.json`.
+- Paikallisessa Fineli-poiminnassa on 69 tietuetta, joilla on 69 uniikkia
+  lähdetunnistetta ja 69 uniikkia täsmälleen normalisoitua nimeä. Koko ladatussa
+  Fineli-paketissa on 4 238 tietuetta ja samoin uniikit lähdetunnisteet sekä
+  nimet. Täsmänimien duplikaatteja ei löytynyt; samankaltaisia versioita ei
+  yhdistetä automaattisesti, koska niiden ravintoarvot voivat erota.
+
+Ei kokonaisia tietokantoja, tuotetekstejä tai kuvia kopioitu. CNF:stä on mukana
+vain yllä rajattu, lähderivien perusteella täydellinen osajoukko.
 Seuraava kierros tarvitsee nimetyt tuotteet, syötävät punnitut määrät,
 ainekohtaiset muunnokset, valmistussaannon ja tarkistetut tietueet.
 
