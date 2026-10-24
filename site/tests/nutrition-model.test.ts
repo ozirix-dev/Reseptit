@@ -6,7 +6,7 @@ import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
 import { nutritionProvenance, inputPaths, inputHash } from "../scripts/nutrition-provenance";
 import { salmonScenario, salmonComparison } from "../scripts/nutrition-pilot";
-import { calculate, normalizeCarbohydrate, round, type Calculation, type FoodRecord } from "../scripts/nutrition-model";
+import { allowedOmissionErrorPerServing, calculate, normalizeCarbohydrate, round, type Calculation, type FoodRecord } from "../scripts/nutrition-model";
 const food: FoodRecord = { id: "test-fixture-not-real-food", name: "Synthetic exact test fixture", sourceUrl: "https://example.org/fixture", retrievedAt: "2026-10-22", licence: "test", state: "raw", basis: "per100g-edible", carbohydrateDefinition: "EU_AVAILABLE", per100g: { kcal: 100, protein: 10, fat: 5, carbohydrate: 20, fibre: 4, sugars: 2, polyols: 0 } };
 test("provenance covers food records, calculator and loader inputs including dirty files", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
@@ -79,6 +79,25 @@ test("volume requires ingredient evidence, kg conversion and explicit exclusions
   assert.equal(calculate(input).total.kcal, 250);
   input.ingredients.push({ item: "optional garnish", amount: null, unit: "", state: "raw", matchEvidence: "", excludedReason: "explicit test scenario omits garnish" });
   assert.equal(calculate(input).total.kcal, 250);
+});
+test("bounded minor omissions are allowed only within the summed per-serving error budget", () => {
+  const input = fixture();
+  input.ingredients.push({ item: "small herb garnish", amount: null, unit: "", state: "raw", matchEvidence: "", excludedReason: "Unmeasured garnish; bounded conservative estimate", omissionImpactEvidence: "Fineli herb composition × documented 2 g maximum for this recipe", omissionImpactUpperBoundPerServing: { kcal: 5, netCarbohydrate: 0.3, totalCarbohydrate: 0.5, protein: 0.1, fat: 0.2 } });
+  const result = calculate(input);
+  assert.equal(result.omissionWithinTolerance, true);
+  assert.equal(result.status, "ESTIMATE WITH EVIDENCE");
+  assert.deepEqual(result.omissionImpactUpperBoundPerServing, { kcal: 5, netCarbohydrate: 0.3, totalCarbohydrate: 0.5, protein: 0.1, fat: 0.2 });
+  input.ingredients.push({ item: "second seasoning", amount: null, unit: "", state: "raw", matchEvidence: "", excludedReason: "Unmeasured amount", omissionImpactEvidence: "Conservative source-based upper bound", omissionImpactUpperBoundPerServing: { kcal: 6, netCarbohydrate: 0.2, totalCarbohydrate: 0.6, protein: 0.1, fat: 0.1 } });
+  assert.equal(calculate(input).omissionWithinTolerance, false);
+  assert.equal(calculate(input).status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(allowedOmissionErrorPerServing.totalCarbohydrate, 1);
+});
+test("an omitted ingredient with no bounded impact cannot qualify as a complete estimate", () => {
+  const input = fixture();
+  input.ingredients.push({ item: "unknown amount", amount: null, unit: "", state: "raw", matchEvidence: "", excludedReason: "Not quantified" });
+  const result = calculate(input);
+  assert.equal(result.omissionWithinTolerance, false);
+  assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
 });
 test("documented salmon input contribution is reproducible without inventing dish totals", async () => {
   const records: FoodRecord[] = JSON.parse(await readFile(new URL("../../docs/nutrition/food-records.json", import.meta.url), "utf8"));
