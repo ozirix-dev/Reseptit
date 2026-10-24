@@ -122,6 +122,16 @@ tuotteen tai tietokannan nimenomaisen koostumustiedon perusteella.
   mutta suora sivulataus palautti aikakatkaisun/403:n. Sen nykyhetken
   muuttumattomuutta ei vahvistettu. Kauraleseen tietue 170 tunnistettiin
   virallisen reseptin linkistä, mutta arvoja ei saatu luotettavasti luettua.
+- [Foodin, Erytritoli Luomu 200 g](https://foodin.fi/tuote/erytritoli-luomu-200g-2/):
+  tuotteen ainesosaluettelo nimeää erytritolin ainoaksi ainesosaksi ja
+  tuotetietotaulukko ilmoittaa 100 g hiilihydraattia, josta 100 g
+  sokerialkoholeja, sekä 0 g rasvaa ja proteiinia. Tuotesivun nollaenergiaa
+  ei käytetä makrolaskennassa. Tallennettu yksittäiseksi tuoteviitteeksi;
+  lähteellä ei ole avoimen tietokannan lisenssiä. Tuotetiedon
+  hiilihydraattimääritelmä sisältää polyolin, joten normalisointi tuottaa
+  0 g imeytyvää hiilihydraattia ja 100 g kokonaisuutta. Finelin tietue 35481
+  antaa tästä tuotteesta poikkeavasti nollan polyoliarvolle, joten sitä ei
+  käytetä erytritolin lähteenä.
 - [USDA FDC API Guide](https://fdc.nal.usda.gov/api-guide/): tiedot ovat
   public domain, lähdemaininta suositeltu; API käyttää avainta. Tässä ei
   kopioitu tietokantaa eikä hankittu tai tallennettu avaimia.

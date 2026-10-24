@@ -6,7 +6,7 @@ import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
 import { nutritionProvenance, inputPaths, inputHash } from "../scripts/nutrition-provenance";
 import { salmonScenario, salmonComparison } from "../scripts/nutrition-pilot";
-import { allowedOmissionErrorPerServing, calculate, normalizeCarbohydrate, round, type Calculation, type FoodRecord } from "../scripts/nutrition-model";
+import { allowedOmissionErrorPerServing, calculate, normalizeCarbohydrate, round, totalCarbohydrate, type Calculation, type FoodRecord } from "../scripts/nutrition-model";
 const food: FoodRecord = { id: "test-fixture-not-real-food", name: "Synthetic exact test fixture", sourceUrl: "https://example.org/fixture", retrievedAt: "2026-10-22", licence: "test", state: "raw", basis: "per100g-edible", carbohydrateDefinition: "EU_AVAILABLE", polyolsSourceVerified: true, per100g: { kcal: 100, protein: 10, fat: 5, carbohydrate: 20, fibre: 4, sugars: 2, polyols: 0 } };
 test("provenance covers food records, calculator and loader inputs including dirty files", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
@@ -73,6 +73,19 @@ test("EU fibre is never subtracted again; US needs fibre; only sourced polyols a
   assert.equal(normalizeCarbohydrate({ ...food, per100g: { carbohydrate: 2, polyols: 3 } }).net, null);
   assert.equal(normalizeCarbohydrate({ ...food, per100g: { carbohydrate: 20, polyols: null } }).net, null);
   assert.equal(normalizeCarbohydrate({ ...food, carbohydrateDefinition: "UNKNOWN" }).available, null);
+});
+test("Foodin erythritol label reports the polyol mass and contributes zero net carbs", async () => {
+  const records: FoodRecord[] = JSON.parse(await readFile(new URL("../../docs/nutrition/food-records.json", import.meta.url), "utf8"));
+  const erythritol = records.find((record) => record.id === "foodin-erythritol-200g-label-2026-10-24");
+  assert.ok(erythritol);
+  assert.equal(erythritol.per100g.polyols, 100);
+  assert.deepEqual(normalizeCarbohydrate(erythritol), { available: 0, net: 0 });
+  assert.equal(totalCarbohydrate(0, 0, erythritol.per100g.polyols!), 100);
+  const input = fixture(); input.ingredients[0].record = erythritol; input.ingredients[0].amount = 4; input.ingredients[0].state = erythritol.state;
+  const result = calculate(input);
+  assert.equal(result.total.netCarbohydrate, 0); assert.equal(result.totalCarbohydrateGrams, 4);
+  const missingPolyolEvidence = { ...erythritol, polyolsSourceVerified: false };
+  assert.equal(normalizeCarbohydrate(missingPolyolEvidence).net, null);
 });
 test("volume requires ingredient evidence, kg conversion and explicit exclusions", () => {
   const input = fixture(); input.ingredients[0].unit = "dl"; input.ingredients[0].amount = 1;

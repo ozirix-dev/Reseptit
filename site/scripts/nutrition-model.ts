@@ -2,10 +2,10 @@
 export const nutrients = ["kcal", "protein", "fat", "carbohydrate", "fibre", "sugars", "polyols", "netCarbohydrate"] as const;
 export type Nutrient = typeof nutrients[number];
 export type Values = Record<Nutrient, number | null>;
-export type CarbDefinition = "EU_AVAILABLE" | "US_TOTAL_INCLUDING_FIBRE" | "UNKNOWN";
+export type CarbDefinition = "EU_AVAILABLE" | "EU_TOTAL_INCLUDING_POLYOLS" | "US_TOTAL_INCLUDING_FIBRE" | "UNKNOWN";
 export interface FoodRecord {
   id: string; name: string; sourceUrl: string; retrievedAt: string; licence: string;
-  state: string; basis: "per100g-edible"; carbohydrateDefinition: CarbDefinition;
+  state: string; basis: "per100g-edible" | "per100g-as-sold"; carbohydrateDefinition: CarbDefinition;
   componentValues?: Partial<Record<"CHO" | "FIBT" | "POLYL", number | null>>;
   componentIds?: Partial<Record<"CHO" | "FIBT" | "POLYL", number>>;
   /** True only when the polyol value is explicitly reported by this source. */
@@ -78,6 +78,10 @@ export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record
   const polyols = nutrientValue(record, "polyols");
   let available: number | null = null;
   if (record.carbohydrateDefinition === "EU_AVAILABLE" && valid(carbohydrate)) available = carbohydrate;
+  if (record.carbohydrateDefinition === "EU_TOTAL_INCLUDING_POLYOLS" && valid(carbohydrate) && valid(polyols)) {
+    if (polyols > carbohydrate) throw Error("Conflicting carbohydrate definition: polyols exceed total");
+    available = carbohydrate - polyols;
+  }
   if (record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE" && subtractFibre && valid(carbohydrate) && valid(fibre)) {
     if (fibre > carbohydrate) throw Error("Conflicting carbohydrate definition: fibre exceeds total");
     available = carbohydrate - fibre;
@@ -88,6 +92,7 @@ export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record
     return { available, net: null };
   }
   if (!valid(polyols)) return { available, net: null };
+  if (record.carbohydrateDefinition === "EU_TOTAL_INCLUDING_POLYOLS") return { available, net: available };
   if (available !== null && polyols > available) return { available, net: null };
   return { available, net: available === null ? null : round(available - polyols, 6) };
 }
@@ -123,7 +128,7 @@ export function calculate(input: Calculation) {
     if (!valid(ingredient.amount)) fail("Missing/invalid amount");
     const record = ingredient.record;
     if (!record?.id || !/^https:\/\//.test(record.sourceUrl) || !record.retrievedAt || !record.licence) fail("Missing source reference");
-    if (!ingredient.matchEvidence || !record || record.state !== ingredient.state || record.basis !== "per100g-edible") fail("Unresolved food/state/edible basis match");
+    if (!ingredient.matchEvidence || !record || record.state !== ingredient.state || !["per100g-edible", "per100g-as-sold"].includes(record.basis)) fail("Unresolved food/state/edible basis match");
     const factor = ingredient.unit === "g" ? 1 : ingredient.unit === "kg" ? 1000 : ingredient.gramsPerUnit;
     if (!valid(factor) || factor === 0 || (!["g", "kg"].includes(ingredient.unit) && !ingredient.conversionEvidence)) fail("Missing ingredient-specific unit conversion");
     if (!valid(ingredient.edibleFraction) || ingredient.edibleFraction > 1 || !ingredient.edibleEvidence) fail("Unknown edible fraction");
@@ -149,8 +154,7 @@ export function calculate(input: Calculation) {
       }
       try {
         const carb = normalizeCarbohydrate(record);
-        let available = carb.available === null ? null : decimal(nutrientValue(record, "carbohydrate")!);
-        if (available && record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE") { const fibre = decimal(nutrientValue(record, "fibre")!); available = add(available, { n: -fibre.n, d: fibre.d }); }
+        const available = carb.available === null ? null : decimal(carb.available);
         exact.carbohydrate = available ? multiply(available, weight) : null;
         exact.netCarbohydrate = carb.net === null ? null : multiply(decimal(carb.net), weight);
       } catch (error) { exact.carbohydrate = null; fail(String(error)); }
