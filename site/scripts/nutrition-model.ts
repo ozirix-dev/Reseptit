@@ -8,6 +8,8 @@ export interface FoodRecord {
   state: string; basis: "per100g-edible"; carbohydrateDefinition: CarbDefinition;
   componentValues?: Partial<Record<"CHO" | "FIBT" | "POLYL", number | null>>;
   componentIds?: Partial<Record<"CHO" | "FIBT" | "POLYL", number>>;
+  /** True only when the polyol value is explicitly reported by this source. */
+  polyolsSourceVerified?: boolean;
   per100g: Partial<Omit<Values, "netCarbohydrate">>;
 }
 export interface IngredientInput {
@@ -80,8 +82,14 @@ export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record
     if (fibre > carbohydrate) throw Error("Conflicting carbohydrate definition: fibre exceeds total");
     available = carbohydrate - fibre;
   }
-  // No blanket polyol subtraction, including erythritol. A future policy needs evidence.
-  return { available, net: polyols === 0 ? available : null };
+  // Subtract only a measured, source-backed polyol value. Unknown values are not zero.
+  const polyolsVerified = record.polyolsSourceVerified === true || Boolean(record.componentValues && record.componentIds?.POLYL === 2260 && Object.hasOwn(record.componentValues, "POLYL"));
+  if (!polyolsVerified) {
+    return { available, net: null };
+  }
+  if (!valid(polyols)) return { available, net: null };
+  if (available !== null && polyols > available) return { available, net: null };
+  return { available, net: available === null ? null : round(available - polyols, 6) };
 }
 /**
  * Total carbohydrate for this site's display means available carbohydrate +
@@ -144,7 +152,7 @@ export function calculate(input: Calculation) {
         let available = carb.available === null ? null : decimal(nutrientValue(record, "carbohydrate")!);
         if (available && record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE") { const fibre = decimal(nutrientValue(record, "fibre")!); available = add(available, { n: -fibre.n, d: fibre.d }); }
         exact.carbohydrate = available ? multiply(available, weight) : null;
-        exact.netCarbohydrate = carb.net === null ? null : exact.carbohydrate;
+        exact.netCarbohydrate = carb.net === null ? null : multiply(decimal(carb.net), weight);
       } catch (error) { exact.carbohydrate = null; fail(String(error)); }
       for (const key of nutrients) values[key] = exact[key] ? numeric(exact[key]!) : null;
       for (const key of nutrients) if (values[key] === null) fail(`Unknown nutrient ${key}`);

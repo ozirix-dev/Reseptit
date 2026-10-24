@@ -107,10 +107,12 @@ yhdistetään vain komponenttimetadatan tunnisteilla. Hakuvasteen yleistä
 nollia. Polyolit säilytetään omana komponenttinaan ja lasketaan mukaan
 kokonaishiilihydraattiin, kun niiden määrä tunnetaan.
 
-Sokerit, kuitu ja polyolit ovat erillisiä kenttiä. NetCarbohydrate syntyy
-tässä varovaisessa pilotissa vain, jos polyolit ovat todistetusti nolla.
-Erytritolia tai muita polyoleja ei vähennetä automaattisesti. Jos tuotteen
-polyolikoostumus on epäselvä, nettoarvo jää puuttumaan.
+Sokerit, kuitu ja polyolit ovat erillisiä kenttiä. Nettohiilihydraatti
+lasketaan vähentämällä imeytyvästä hiilihydraatista vain lähteessä ilmoitettu,
+määrältään tunnettu polyoli. Tuntematon polyoliarvo ei ole nolla eikä sitä
+vähennetä. Jos polyolien määrä ylittää imeytyvän hiilihydraatin, tietue
+vaatii tarkistuksen. Tämä koskee myös erytritolia: vähennys tehdään vain
+tuotteen tai tietokannan nimenomaisen koostumustiedon perusteella.
 
 ## Lähteet ja käyttöehdot, tarkistettu 22.10.2026
 
