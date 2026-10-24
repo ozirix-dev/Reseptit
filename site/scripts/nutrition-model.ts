@@ -17,6 +17,10 @@ export interface IngredientInput {
   edibleFraction?: number; edibleEvidence?: string;
   retainedFraction?: number; retentionEvidence?: string;
   excludedReason?: string;
+  omissionImpactUpperBoundPerServing?: {
+    kcal: number; netCarbohydrate: number; totalCarbohydrate: number; protein: number; fat: number;
+  };
+  omissionImpactEvidence?: string;
 }
 export interface Calculation {
   recipeId: string; sourceHash: string; calculatedAt: string; servings: number;
@@ -25,6 +29,9 @@ export interface Calculation {
   carbohydrateOutput: "AVAILABLE_EXCLUDING_FIBRE";
 }
 export const emptyValues = (): Values => Object.fromEntries(nutrients.map((n) => [n, null])) as Values;
+export const allowedOmissionErrorPerServing = {
+  kcal: 10, netCarbohydrate: 1, totalCarbohydrate: 1, protein: 1, fat: 1,
+} as const;
 const valid = (n: unknown): n is number => typeof n === "number" && Number.isFinite(n) && n >= 0;
 type Fraction = { n: bigint; d: bigint };
 const fraction = (n: bigint, d: bigint): Fraction => {
@@ -91,10 +98,18 @@ export function calculate(input: Calculation) {
   if (!input.recipeId || !/^[a-f0-9]{64}$/.test(input.sourceHash) || !/^\d{4}-\d{2}-\d{2}$/.test(input.calculatedAt) || !input.scope || input.reviewerStatus !== "AUTOMATED ONLY" || input.carbohydrateOutput !== "AVAILABLE_EXCLUDING_FIBRE" || !input.ingredients.length) throw Error("Incomplete calculation provenance");
   const exactRows: Record<Nutrient, Fraction | null>[] = [];
   const exactMasses: (Fraction | null)[] = [];
+  const omissionImpactUpperBoundPerServing = { kcal: 0, netCarbohydrate: 0, totalCarbohydrate: 0, protein: 0, fat: 0 };
+  let omissionImpactUnbounded = false;
   const rows = input.ingredients.map((ingredient) => {
     const issues: string[] = [];
     const fail = (message: string) => issues.push(message);
-    if (ingredient.excludedReason) return { item: ingredient.item, excluded: ingredient.excludedReason, grams: null, values: emptyValues(), issues };
+    if (ingredient.excludedReason) {
+      const impact = ingredient.omissionImpactUpperBoundPerServing;
+      const fields = Object.keys(allowedOmissionErrorPerServing) as (keyof typeof allowedOmissionErrorPerServing)[];
+      if (!ingredient.omissionImpactEvidence || !impact || fields.some((key) => !valid(impact[key]))) omissionImpactUnbounded = true;
+      else for (const key of fields) omissionImpactUpperBoundPerServing[key] += impact[key];
+      return { item: ingredient.item, excluded: ingredient.excludedReason, grams: null, values: emptyValues(), issues };
+    }
     const exact = Object.fromEntries(nutrients.map((n) => [n, null])) as Record<Nutrient, Fraction | null>;
     exactRows.push(exact);
     if (!valid(ingredient.amount)) fail("Missing/invalid amount");
@@ -150,7 +165,10 @@ export function calculate(input: Calculation) {
   const totalCarbohydratePerServingG = exactTotalCarbohydrate === null
     ? null
     : roundFraction({ n: exactTotalCarbohydrate.n, d: exactTotalCarbohydrate.d * BigInt(input.servings) });
+  const omissionWithinTolerance = !omissionImpactUnbounded &&
+    Object.entries(allowedOmissionErrorPerServing).every(([key, allowed]) => omissionImpactUpperBoundPerServing[key as keyof typeof omissionImpactUpperBoundPerServing] <= allowed);
   return { ...input, rows, total, perServing, totalCarbohydrateGrams, totalCarbohydratePerServingG,
     edibleInputGrams: exactMasses.length && exactMasses.every((m) => m !== null) ? roundFraction((exactMasses as Fraction[]).reduce(add)) : null,
-    status: nutrients.every((n) => total[n] !== null) ? "ESTIMATE WITH EVIDENCE" : "INSUFFICIENT SOURCE DATA" };
+    omissionImpactUpperBoundPerServing, omissionWithinTolerance,
+    status: nutrients.every((n) => total[n] !== null) && omissionWithinTolerance ? "ESTIMATE WITH EVIDENCE" : "INSUFFICIENT SOURCE DATA" };
 }

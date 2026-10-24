@@ -31,6 +31,39 @@ rajauksen ja tarkistajan tilan. Osatulokset eivät muutu koko reseptin arvoksi.
 - Valinnainen aines voidaan jättää pois vain kirjatussa skenaariossa.
   Lisäkkeitä ei päätellä kuvasta eikä määrittelemätöntä öljyä keksitä.
 
+## Pienten puuttuvien määrien pysyvä käytäntö
+
+Ravintoarvot ovat suuntaa-antavia reseptiarvioita. Pieniä puuttuvia määriä ei
+tarvitse käyttää syynä koko reseptin hylkäämiseen, kun niiden suurin uskottava
+vaikutus annosta kohti voidaan rajata ja dokumentoida. Laskentamalli sallii
+julkaisun vain, jos kaikkien pois rajattujen ainesten ylärajat yhteensä ovat
+enintään:
+
+| Ravintoarvo | Sallittu puuttuvan määrän epävarmuus / annos |
+| --- | ---: |
+| Energia | 10 kcal |
+| Nettohiilihydraatti | 1 g |
+| Kokonaishiilihydraatti | 1 g |
+| Proteiini | 1 g |
+| Rasva | 1 g |
+
+Raja koskee vain reseptistä puuttuvia pieniä määriä, ei lähdetietueiden,
+tuotemerkkien tai valmistuksen yleistä vaihtelua. Ylärajat lasketaan yhteen;
+useita pieniä mausteita ei käsitellä erikseen sallittuina täysinä poikkeamina.
+Poissuljetun aineksen yhteydessä kirjataan syy, yläraja ja sen lähde tai
+perustelu. Vesi ja suola voidaan rajata pois, kun niiden makroravinnevaikutus
+on lähteen mukaan nolla. Kuivat mausteet, valkosipuli ja yrtit arvioidaan
+reseptin ilmoittaman yksikön tai dokumentoidun tavanomaisen enimmäismäärän
+mukaan.
+
+Öljyä, voita, sokeria, hunajaa, makeutusainetta, kastiketta, pähkinöitä,
+juustoa, lihaa, kalaa tai muuta energia- tai hiilihydraattipitoista pääainesta
+ei saa kuitata pieneksi tai nollaksi. Jos sen määrä tai tuote on epäselvä,
+resepti tarkennetaan tai arvo jätetään julkaisematta. Samoin toimitaan, jos
+hiilihydraattien yläraja ylittää annoskohtaisen gramman rajan. Näin yksittäiset
+mausteet eivät pysäytä arviota, mutta olennaiset ainesosat eivät katoa
+laskennasta.
+
 ## Hiilihydraatit
 
 Laskennan `carbohydrate` tarkoittaa aina imeytyvää, kuidun poissulkevaa
