@@ -10,7 +10,7 @@ export function GlycemicLoadPilotPage() {
       <header className="page-intro glycemic-pilot__intro">
         <p className="eyebrow">Laskennallinen arvio</p>
         <h1>Glykeemisen kuorman pilotti</h1>
-        <p className="page-intro__description">Nämä kymmenen reseptikohtaista arviota lasketaan ainesosien imeytyvistä hiilihydraateista ja julkaistuista GI-arvoista. Ne eivät ole valmiin ruoan tai yksittäisen ihmisen verensokerin mittaustuloksia.</p>
+        <p className="page-intro__description">Nämä 20 reseptikohtaista arviota lasketaan ainesosien imeytyvistä hiilihydraateista ja julkaistuista GI-arvoista. Ne eivät ole valmiin ruoan tai yksittäisen ihmisen verensokerin mittaustuloksia.</p>
       </header>
 
       <div className="glycemic-pilot__summary" aria-label="Pilotin tilanne">
@@ -26,6 +26,7 @@ export function GlycemicLoadPilotPage() {
         <p>Valmiin ruoan todellinen vaste vaihtelee muun muassa raaka-aineen, valmistuksen, annoksen ja ihmisen mukaan. Ainesosien GI-arvojen summa on siksi ohjeellinen arvio; se ei mittaa sekalaisen aterian vastetta. Kun olennaiselle ainesosalle ei löydy julkaistua ja perusteltua arvoa tai määrää, resepti jää ilman kokonaislukua.</p>
         <ul className="glycemic-pilot__sources" aria-label="Käytetyt GI-lähteet">
           <li><a href="https://doi.org/10.1093/ajcn/nqab233">International Tables 2021</a> — ruoka- ja valmistustapakohtaisia mittauksia sekä elintarvikeryhmien keskiarvoja. Arvot on luokiteltu menetelmän laadun perusteella.</li>
+          <li><a href="https://fineli.fi/fineli/fi/avoin-data">THL / Fineli Rel20</a> — ainesosien imeytyvät hiilihydraatit ja ruoka-ainekohtaiset annosmitat. Fineli-tiedot on merkitty lähteiksi; sivusto ei ole THL:n hyväksymä palvelu.</li>
           <li><a href="https://glycemicindex.com/gi-search/">Sydneyn yliopiston GI-tietokanta</a> — kansainvälisten GI-tietueiden haku ja lähdetarkistus; julkaisemattomat merkinnät eivät yksin riitä lähteeksi.</li>
           <li><a href="https://doi.org/10.1038/s41387-020-00145-w">Non-western foods -koonti 2021</a> — julkaistujen alueellisten ruoka-arvojen täydentävä koonti.</li>
           <li><a href="https://committee.iso.org/standard/43633.html">ISO 26642:2010</a> — GI-mittausten menetelmä. Se auttaa tulkitsemaan aineiston laatua; tämän sivun arvot eivät ole aterioiden ISO-mittauksia.</li>

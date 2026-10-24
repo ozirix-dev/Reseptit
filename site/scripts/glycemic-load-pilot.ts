@@ -11,7 +11,17 @@ const root = path.resolve(siteDir, "..");
 const expectedRecipeIds = [
   "munakokkeli", "munakasmuffinit", "munakasrulla-pinaatti-tuorejuustolla", "munatacot-huevos-rancheros",
   "paprikauunimunakkaat", "shakshuka", "uunimuna-avokadot", "uunimunat-pinaatilla", "tortilla-de-patatas", "vhh-lihamureke",
+  "hummus", "chili-con-carne-kukkakaaliriisi", "ratatouille", "vhh-kaalikaarryleet", "jauheliha-kaalikeitto-vhh",
+  "taytetyt-paprikat-vhh", "vhh-kaalilaatikko", "munakoiso-jauhelihavuoka-vhh", "valimerellinen-kikherne-yrttiaamiainen", "lahi-ita-kikherne-shakshuka",
 ];
+const recipeCategories: Record<string, string> = {
+  "tortilla-de-patatas": "paaruoat", "vhh-lihamureke": "paaruoat", hummus: "alkuruoat",
+  "chili-con-carne-kukkakaaliriisi": "paaruoat", ratatouille: "paaruoat", "vhh-kaalikaarryleet": "paaruoat",
+  "jauheliha-kaalikeitto-vhh": "paaruoat", "taytetyt-paprikat-vhh": "paaruoat", "vhh-kaalilaatikko": "paaruoat",
+  "munakoiso-jauhelihavuoka-vhh": "paaruoat", "valimerellinen-kikherne-yrttiaamiainen": "aamupalat",
+  "lahi-ita-kikherne-shakshuka": "aamupalat",
+};
+const recipeFileNames: Record<string, string> = { "vhh-kaalilaatikko": "kaalilaatikko" };
 
 const [input, foodRecords, giSource] = await Promise.all([
   readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8").then((text) => JSON.parse(text)),
@@ -23,7 +33,7 @@ const inputs = input.recipes as GlycemicLoadRecipeInput[];
 const actualIds = inputs.map((recipe) => recipe.recipeId);
 if (actualIds.length !== expectedRecipeIds.length || new Set(actualIds).size !== actualIds.length
     || expectedRecipeIds.some((id) => !actualIds.includes(id))) {
-  throw new Error("Glycemic-load pilot input must contain exactly the ten selected Fineli recipes.");
+  throw new Error(`Glycemic-load pilot input must contain exactly the ${expectedRecipeIds.length} selected recipes.`);
 }
 
 const giRecords = giSource.records as GlycemicIndexRecord[];
@@ -40,8 +50,8 @@ for (const record of giRecords) {
   }
 }
 const sourceHashes = Object.fromEntries(await Promise.all(expectedRecipeIds.map(async (recipeId) => {
-  const category = ["tortilla-de-patatas", "vhh-lihamureke"].includes(recipeId) ? "paaruoat" : "aamupalat";
-  const recipePath = path.join(root, "reseptit", category, `${recipeId}.md`);
+  const category = recipeCategories[recipeId] ?? "aamupalat";
+  const recipePath = path.join(root, "reseptit", category, `${recipeFileNames[recipeId] ?? recipeId}.md`);
   const contents = (await readFile(recipePath, "utf8")).replaceAll("\r\n", "\n");
   return [recipeId, createHash("sha256").update(contents).digest("hex")];
 })));
@@ -53,6 +63,7 @@ const report = {
   formula: "sum(GI_i × available carbohydrate_i per serving) / 100",
   fineliEvidence: input.fineliEvidence,
   massEvidence: input.massEvidence,
+  selectionNotes: input.selectionNotes ?? {},
   giSourcePolicy: "Published, traceable glucose-scale GI values are preferred. Explicit analogs and category means are accepted with match type, confidence, source and limitation recorded. Ingredient portions below 1 g available carbohydrate per serving are omitted. This is an estimate, not a measurement of a mixed meal.",
   giSourceCatalog: giSource.sources,
   sourceHashes,

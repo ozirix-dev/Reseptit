@@ -1,8 +1,8 @@
 {
-  "calculationBasis": "Per-serving ingredient-sum estimate: sum(GI × Fineli available carbohydrate per serving)/100. A published GI analogue or category mean may be used with explicit source, match kind and confidence. Ingredients contributing below 1 g available carbohydrate per serving are omitted. This is not a measured mixed-meal response.",
-  "fineliEvidence": "docs/nutrition/food-records.json; THL Fineli, CC BY 4.0",
-  "massEvidence": "docs/nutrition/estimates-2026-10-24.md, Fineli source records and mass assumptions section",
-  "excludedIngredientPolicy": "To-taste seasoning and lemon amounts use documented standard pilot assumptions and are explicitly marked as estimates. They are omitted only where the estimated available carbohydrate is below 1 g per serving. Unresolved significant ingredients block a recipe total.",
+  "calculationBasis": "Per-serving ingredient-sum estimate: sum(GI × Fineli Rel20 available carbohydrate per serving)/100. Published exact values, explicit analogues, and category means may be used with source, match kind, and confidence disclosed. Ingredients below 1 g available carbohydrate per serving are omitted. Not a measured mixed-meal response.",
+  "fineliEvidence": "docs/nutrition/fineli-release-20-reference.json; only required records are copied into docs/nutrition/food-records.json. Finnish Institute for Health and Welfare (THL), Fineli Rel20, CC BY 4.0.",
+  "massEvidence": "Amounts are from structured Finnish recipe frontmatter. Grams use listed weights; other units use food-specific Fineli Rel20 MASS values. If only dl mass exists, rkl/tl are converted from food-specific density using 15/5 ml spoon volume and documented per ingredient.",
+  "excludedIngredientPolicy": "Trace seasonings and unspecified salt are conservative documented assumptions, omitted only below 1 g available carbohydrate per serving. Unresolved substantial ingredients block totals.",
   "recipes": [
     {
       "recipeId": "munakokkeli",
@@ -552,6 +552,819 @@
           "negligibleAssumption": "standard assumed 1.5 g batch amount; estimated available carbohydrate 0.6 g for the whole batch (0.100 g/serving), below the 1 g cutoff"
         }
       ]
+    },
+    {
+      "recipeId": "hummus",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kypsiä kikherneitä",
+          "grams": 400,
+          "fineliRecordId": "fineli-11089-2026-10-24",
+          "giRecordId": "chickpea-canned-gi-35",
+          "foodKey": "chickpea",
+          "preparationKey": "canned-drained",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Reseptin punnittu 400 g."
+        },
+        {
+          "name": "tahinia",
+          "grams": 45,
+          "fineliRecordId": "fineli-11087-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 RKL 15 g, reseptissä 3 rkl."
+        },
+        {
+          "name": "sitruunamehua",
+          "grams": 45,
+          "fineliRecordId": "fineli-11557-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 RKL 15 g, reseptissä 3 rkl."
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 3.5,
+          "fineliRecordId": "fineli-393-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 KPL_M 3.5 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "kylmää vettä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Trace seasoning or unspecified salt has no matching Fineli measure; conservative standard assumption is used only below 1 g available carbohydrate per serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.1,
+          "negligibleAssumption": "Conservative estimate 0.1 g available carbohydrate per serving; omitted below 1 g.",
+          "massEvidence": "No exact Fineli Rel20 unit mass; trace estimate only."
+        },
+        {
+          "name": "suolaa",
+          "grams": 3.25,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 6.5 g, reseptissä 0.5 tl."
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 27,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 RKL 13.5 g, reseptissä 2 rkl."
+        },
+        {
+          "name": "paprikajauhetta",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Trace seasoning or unspecified salt has no matching Fineli measure; conservative standard assumption is used only below 1 g available carbohydrate per serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.05,
+          "negligibleAssumption": "Conservative estimate 0.05 g available carbohydrate per serving; omitted below 1 g.",
+          "massEvidence": "No exact Fineli Rel20 unit mass; trace estimate only."
+        }
+      ]
+    },
+    {
+      "recipeId": "chili-con-carne-kukkakaaliriisi",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "naudan jauhelihaa",
+          "grams": 500,
+          "fineliRecordId": "fineli-11562-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Reseptin punnittu 500 g."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 KPL_M 55 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "punainen paprika",
+          "grams": 170,
+          "fineliRecordId": "fineli-386-2026-10-24",
+          "giRecordId": "red-pepper-literature-analogue-gi-40",
+          "foodKey": "red-pepper",
+          "preparationKey": "cooked-in-recipe",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Fineli Rel20 KPL_M 170 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "foodKey": "tomato",
+          "preparationKey": "cooked-in-sauce",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Reseptin punnittu 400 g."
+        },
+        {
+          "name": "kidneypapuja",
+          "grams": 200,
+          "fineliRecordId": "fineli-31214-2026-10-24",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "foodKey": "legume",
+          "preparationKey": "legume-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Reseptin punnittu 200 g."
+        },
+        {
+          "name": "juustokuminaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Trace seasoning or unspecified salt has no matching Fineli measure; conservative standard assumption is used only below 1 g available carbohydrate per serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.2,
+          "negligibleAssumption": "Conservative estimate 0.2 g available carbohydrate per serving; omitted below 1 g.",
+          "massEvidence": "No exact Fineli Rel20 unit mass; trace estimate only."
+        },
+        {
+          "name": "savupaprikaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Trace seasoning or unspecified salt has no matching Fineli measure; conservative standard assumption is used only below 1 g available carbohydrate per serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.3,
+          "negligibleAssumption": "Conservative estimate 0.3 g available carbohydrate per serving; omitted below 1 g.",
+          "massEvidence": "No exact Fineli Rel20 unit mass; trace estimate only."
+        },
+        {
+          "name": "chilijauhetta",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Trace seasoning or unspecified salt has no matching Fineli measure; conservative standard assumption is used only below 1 g available carbohydrate per serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.1,
+          "negligibleAssumption": "Conservative estimate 0.1 g available carbohydrate per serving; omitted below 1 g.",
+          "massEvidence": "No exact Fineli Rel20 unit mass; trace estimate only."
+        },
+        {
+          "name": "kukkakaali",
+          "grams": 600,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Fineli Rel20 KPL_M 600 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 27,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 RKL 13.5 g, reseptissä 2 rkl."
+        }
+      ]
+    },
+    {
+      "recipeId": "ratatouille",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "munakoisoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-362-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Fineli Rel20 KPL_M 400 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "kesäkurpitsaa",
+          "grams": 700,
+          "fineliRecordId": "fineli-389-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Fineli Rel20 KPL_M 350 g, reseptissä 2 kpl."
+        },
+        {
+          "name": "punaista paprikaa",
+          "grams": 170,
+          "fineliRecordId": "fineli-386-2026-10-24",
+          "giRecordId": "red-pepper-literature-analogue-gi-40",
+          "foodKey": "red-pepper",
+          "preparationKey": "cooked-in-recipe",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Fineli Rel20 KPL_M 170 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 KPL_M 55 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 10.5,
+          "fineliRecordId": "fineli-393-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 KPL_M 3.5 g, reseptissä 3 kpl."
+        },
+        {
+          "name": "kypsiä tomaatteja",
+          "grams": 500,
+          "fineliRecordId": "fineli-352-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "foodKey": "tomato",
+          "preparationKey": "cooked-in-sauce",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Reseptin punnittu 500 g."
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 54,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 RKL 13.5 g, reseptissä 4 rkl."
+        },
+        {
+          "name": "kuivattua timjamia",
+          "grams": 0.5,
+          "fineliRecordId": "fineli-11194-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 0.5 g, reseptissä 1 tl."
+        },
+        {
+          "name": "suolaa",
+          "grams": 6.5,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 6.5 g, reseptissä 1 tl."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "fineli-11177-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 2 g, reseptissä 0.25 tl."
+        },
+        {
+          "name": "tuoretta basilikaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Trace seasoning or unspecified salt has no matching Fineli measure; conservative standard assumption is used only below 1 g available carbohydrate per serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.2,
+          "negligibleAssumption": "Conservative estimate 0.2 g available carbohydrate per serving; omitted below 1 g.",
+          "massEvidence": "No exact Fineli Rel20 unit mass; trace estimate only."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-kaalikaarryleet",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "valkokaalia",
+          "grams": 1000,
+          "fineliRecordId": "fineli-320-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Reseptin 1 kg muunnettu grammoiksi."
+        },
+        {
+          "name": "naudan jauhelihaa",
+          "grams": 600,
+          "fineliRecordId": "fineli-11562-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Reseptin punnittu 600 g."
+        },
+        {
+          "name": "kukkakaalirouhetta",
+          "grams": 250,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Reseptin punnittu 250 g."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 KPL_M 55 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "kananmuna",
+          "grams": 55,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 KPL_M 55 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 100,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "preparationKey": "dairy-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Fineli Rel20 ruoka-ainekohtainen dl-massa 100 g, reseptissä 1 dl."
+        },
+        {
+          "name": "suolaa",
+          "grams": 6.5,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 6.5 g, reseptissä 1 tl."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 1,
+          "fineliRecordId": "fineli-11177-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 2 g, reseptissä 0.5 tl."
+        },
+        {
+          "name": "voita",
+          "grams": 28,
+          "fineliRecordId": "fineli-500-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 RKL 14 g, reseptissä 2 rkl."
+        }
+      ]
+    },
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "servings": 6,
+      "ingredients": [
+        {
+          "name": "naudan jauhelihaa",
+          "grams": 500,
+          "fineliRecordId": "fineli-11562-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Reseptin punnittu 500 g."
+        },
+        {
+          "name": "valkokaalia",
+          "grams": 700,
+          "fineliRecordId": "fineli-320-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Reseptin punnittu 700 g."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 KPL_M 55 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "lihalientä",
+          "grams": 1000,
+          "fineliRecordId": "fineli-29-2026-10-24",
+          "giRecordId": "soups-category-mean-gi-49",
+          "foodKey": "soup",
+          "preparationKey": "soup-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Fineli Rel20 ruoka-ainekohtainen dl-massa 100 g, reseptissä 1.2 l."
+        },
+        {
+          "name": "tomaattipyreetä",
+          "grams": 27,
+          "fineliRecordId": "fineli-354-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 dl-massa 90 g/dl suhteutettu 15 ml mittaan 13.5 g, reseptissä 2 rkl."
+        },
+        {
+          "name": "suolaa",
+          "grams": 6.5,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 6.5 g, reseptissä 1 tl."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 1,
+          "fineliRecordId": "fineli-11177-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 2 g, reseptissä 0.5 tl."
+        },
+        {
+          "name": "meiramia",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Trace seasoning or unspecified salt has no matching Fineli measure; conservative standard assumption is used only below 1 g available carbohydrate per serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.1,
+          "negligibleAssumption": "Conservative estimate 0.1 g available carbohydrate per serving; omitted below 1 g.",
+          "massEvidence": "No exact Fineli Rel20 unit mass; trace estimate only."
+        }
+      ]
+    },
+    {
+      "recipeId": "taytetyt-paprikat-vhh",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "isoa paprikaa",
+          "grams": 920,
+          "fineliRecordId": "fineli-386-2026-10-24",
+          "giRecordId": "red-pepper-literature-analogue-gi-40",
+          "foodKey": "red-pepper",
+          "preparationKey": "cooked-in-recipe",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Fineli Rel20 KPL_L 230 g, reseptissä 4 kpl."
+        },
+        {
+          "name": "naudan jauhelihaa",
+          "grams": 500,
+          "fineliRecordId": "fineli-11562-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Reseptin punnittu 500 g."
+        },
+        {
+          "name": "pieni sipuli",
+          "grams": 30,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 KPL_S 30 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 150,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "foodKey": "tomato",
+          "preparationKey": "cooked-in-sauce",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Reseptin punnittu 150 g."
+        },
+        {
+          "name": "tomaattipyreetä",
+          "grams": 13.5,
+          "fineliRecordId": "fineli-354-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 dl-massa 90 g/dl suhteutettu 15 ml mittaan 13.5 g, reseptissä 1 rkl."
+        },
+        {
+          "name": "kuivattua oreganoa",
+          "grams": 0.5,
+          "fineliRecordId": "fineli-11191-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 0.5 g, reseptissä 1 tl."
+        },
+        {
+          "name": "suolaa",
+          "grams": 3.25,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 6.5 g, reseptissä 0.5 tl."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 1,
+          "fineliRecordId": "fineli-11177-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 2 g, reseptissä 0.5 tl."
+        },
+        {
+          "name": "juustoraastetta",
+          "grams": 150,
+          "fineliRecordId": "fineli-642-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Reseptin punnittu 150 g."
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 13.5,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 RKL 13.5 g, reseptissä 1 rkl."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "servings": 6,
+      "ingredients": [
+        {
+          "name": "valkokaalia",
+          "grams": 900,
+          "fineliRecordId": "fineli-320-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Reseptin punnittu 900 g."
+        },
+        {
+          "name": "naudan jauhelihaa",
+          "grams": 500,
+          "fineliRecordId": "fineli-11562-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Reseptin punnittu 500 g."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 KPL_M 55 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "preparationKey": "dairy-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Fineli Rel20 ruoka-ainekohtainen dl-massa 100 g, reseptissä 2 dl."
+        },
+        {
+          "name": "kananmunaa",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 KPL_M 55 g, reseptissä 2 kpl."
+        },
+        {
+          "name": "lihalientä",
+          "grams": 100,
+          "fineliRecordId": "fineli-29-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 ruoka-ainekohtainen dl-massa 100 g, reseptissä 1 dl."
+        },
+        {
+          "name": "voita",
+          "grams": 14,
+          "fineliRecordId": "fineli-500-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 RKL 14 g, reseptissä 1 rkl."
+        },
+        {
+          "name": "suolaa",
+          "grams": 6.5,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 6.5 g, reseptissä 1 tl."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 1,
+          "fineliRecordId": "fineli-11177-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 2 g, reseptissä 0.5 tl."
+        },
+        {
+          "name": "kuivattua meiramia",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Trace seasoning or unspecified salt has no matching Fineli measure; conservative standard assumption is used only below 1 g available carbohydrate per serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.1,
+          "negligibleAssumption": "Conservative estimate 0.1 g available carbohydrate per serving; omitted below 1 g.",
+          "massEvidence": "No exact Fineli Rel20 unit mass; trace estimate only."
+        }
+      ]
+    },
+    {
+      "recipeId": "munakoiso-jauhelihavuoka-vhh",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "munakoisoa",
+          "grams": 800,
+          "fineliRecordId": "fineli-362-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Fineli Rel20 KPL_M 400 g, reseptissä 2 kpl."
+        },
+        {
+          "name": "naudan jauhelihaa",
+          "grams": 500,
+          "fineliRecordId": "fineli-11562-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Reseptin punnittu 500 g."
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "foodKey": "tomato",
+          "preparationKey": "cooked-in-sauce",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Reseptin punnittu 400 g."
+        },
+        {
+          "name": "juustoraastetta",
+          "grams": 150,
+          "fineliRecordId": "fineli-642-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Reseptin punnittu 150 g."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 KPL_M 55 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "suolaa",
+          "grams": 6.5,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 6.5 g, reseptissä 1 tl."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 1,
+          "fineliRecordId": "fineli-11177-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 2 g, reseptissä 0.5 tl."
+        },
+        {
+          "name": "oreganoa",
+          "grams": 0.5,
+          "fineliRecordId": "fineli-11191-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 TL 0.5 g, reseptissä 1 tl."
+        }
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-kikherne-yrttiaamiainen",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "kikherne",
+          "grams": 100,
+          "fineliRecordId": "fineli-11089-2026-10-24",
+          "giRecordId": "chickpea-canned-gi-35",
+          "foodKey": "chickpea",
+          "preparationKey": "canned-drained",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Reseptin punnittu 100 g."
+        },
+        {
+          "name": "kurkku",
+          "grams": 400,
+          "fineliRecordId": "fineli-346-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Fineli Rel20 KPL_M 400 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "persilja",
+          "grams": 4,
+          "fineliRecordId": "fineli-333-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 RKL 2 g, reseptissä 2 rkl."
+        },
+        {
+          "name": "sitruuna",
+          "grams": 80,
+          "fineliRecordId": "fineli-11048-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 KPL_M 80 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Trace seasoning or unspecified salt has no matching Fineli measure; conservative standard assumption is used only below 1 g available carbohydrate per serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.05,
+          "negligibleAssumption": "Conservative estimate 0.05 g available carbohydrate per serving; omitted below 1 g.",
+          "massEvidence": "No exact Fineli Rel20 unit mass; trace estimate only."
+        }
+      ]
+    },
+    {
+      "recipeId": "lahi-ita-kikherne-shakshuka",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "kananmuna",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 KPL_M 55 g, reseptissä 2 kpl."
+        },
+        {
+          "name": "tomaatti",
+          "grams": 125,
+          "fineliRecordId": "fineli-352-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "foodKey": "tomato",
+          "preparationKey": "cooked-in-sauce",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Fineli Rel20 KPL_M 125 g, reseptissä 1 kpl."
+        },
+        {
+          "name": "kikherne",
+          "grams": 100,
+          "fineliRecordId": "fineli-11089-2026-10-24",
+          "giRecordId": "chickpea-canned-gi-35",
+          "foodKey": "chickpea",
+          "preparationKey": "canned-drained",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "massEvidence": "Reseptin punnittu 100 g."
+        },
+        {
+          "name": "persilja",
+          "grams": 4,
+          "fineliRecordId": "fineli-333-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 RKL 2 g, reseptissä 2 rkl."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": 13.5,
+          "fineliRecordId": "fineli-541-2026-10-24",
+          "giRecordId": null,
+          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+          "massEvidence": "Fineli Rel20 RKL 13.5 g, reseptissä 1 rkl."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Trace seasoning or unspecified salt has no matching Fineli measure; conservative standard assumption is used only below 1 g available carbohydrate per serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.05,
+          "negligibleAssumption": "Conservative estimate 0.05 g available carbohydrate per serving; omitted below 1 g.",
+          "massEvidence": "No exact Fineli Rel20 unit mass; trace estimate only."
+        }
+      ]
     }
-  ]
+  ],
+  "selectionNotes": {
+    "selectionBasis": "New recipes were selected from the highest current recipe-level available-carbohydrate estimates outside the first cohort; every selected recipe is recalculated from its ingredient-level Fineli amounts.",
+    "replacements": [
+      "Massaman chicken curry was replaced with eggplant and minced-beef casserole because Fineli Rel20 had no matching Massaman curry-paste record and the unbranded paste has material carbohydrate.",
+      "Beef liver casserole was replaced with VHH cabbage casserole because no preparation-relevant published GI value for liver was found for a carbohydrate contribution above the omission threshold."
+    ]
+  }
 }
