@@ -86,7 +86,7 @@ test("recipe index is prerendered and links only published languages", async () 
 });
 
 test("GK values link to centralized recipe details on every published translation", async () => {
-  assert.equal(glycemicLoadPilotResults.length, 200);
+  assert.equal(glycemicLoadPilotResults.length, 220);
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
     assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);
@@ -110,6 +110,35 @@ test("GK values link to centralized recipe details on every published translatio
   const massaman = glycemicLoadPilotResults.find((result) => result.recipeId === "massaman-curry-kanalla-vhh");
   assert.deepEqual(massaman?.glycemicLoadRangePerServing, { min: 5.17, max: 6.06 });
   assert.equal(glycemicLoadPilotResults.some((result) => result.recipeId === "maksalaatikko-kukkakaalilla"), false);
+});
+
+test("batch ten publishes only its seven complete low-confidence estimates", () => {
+  const expected = new Map([
+    ["meksikolainen-molletes-pico-de-gallolla", 20.01],
+    ["vietnamilainen-banh-cuon-sienilla", 23],
+    ["intialainen-besan-chilla", 7.22],
+    ["korealainen-gyeranbap-riisikulho", 26.47],
+    ["pohjoisafrikkalainen-harcha-juustolla", 20.88],
+    ["kiinalainen-jianbing-munaletty", 21.46],
+    ["indonesialainen-ketoprak-aamiaiskulho", 23.89],
+  ]);
+  for (const [recipeId, value] of expected) {
+    const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);
+    assert.equal(result?.status, "CALCULATED", `${recipeId}: complete result`);
+    assert.equal(result?.glycemicLoadPerServing, value, `${recipeId}: expected GL`);
+    assert.equal(result?.confidence, "LOW", `${recipeId}: category GI estimates are labeled low confidence`);
+  }
+  const incomplete = [
+    "meksikolainen-chilaquiles-verdes", "meksikolainen-huevos-divorciados", "korealainen-bindaetteok-aamiaiseksi",
+    "vietnamilainen-banh-xeo-aamiaisletut", "vietnamilainen-chao-ga-kanapuuro", "vietnamilainen-hu-tieu-aamiaiskeitto",
+    "kiinalainen-bao-munalla", "karibia-maissipuuro-kookoksella", "japanilainen-soba-aamiaiskeitto",
+    "karibia-johnny-cake", "lahi-ita-taatelipuuro-tahinilla", "thai-kookosriisi-mangolla", "korealainen-bataatti-riisikulho",
+  ];
+  for (const recipeId of incomplete) {
+    const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);
+    assert.equal(result?.status, "INSUFFICIENT SOURCE DATA", `${recipeId}: incomplete`);
+    assert.equal(result?.glycemicLoadPerServing, null, `${recipeId}: no partial total`);
+  }
 });
 
 test("localized central GL pages render with their canonical and hreflang links", async () => {
