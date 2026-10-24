@@ -51,7 +51,7 @@ export function round(value: number, decimals = 2): number {
   return roundFraction(decimal(value), decimals);
 }
 function nutrientValue(record: FoodRecord, nutrient: "carbohydrate" | "fibre" | "polyols"): number | null | undefined {
-  const component = { carbohydrate: "CHO", fibre: "FIBT", polyols: "POLYL" }[nutrient];
+  const component = ({ carbohydrate: "CHO", fibre: "FIBT", polyols: "POLYL" } as const)[nutrient];
   if (!record.componentValues) return record.per100g[nutrient];
   const expectedId = { CHO: 2034, FIBT: 2168, POLYL: 2260 }[component];
   if (record.componentIds?.[component] !== expectedId || !Object.hasOwn(record.componentValues, component)) {
