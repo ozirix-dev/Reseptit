@@ -23,19 +23,19 @@ image:
   alt: ผัดหมี่บุกสไตล์ไทยใส่กุ้ง ไข่ เต้าหู้ และถั่วลิสง
   width: 1280
   height: 853
-carbs_net_per_serving_g: 10
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 30
-fat_per_serving_g: 23
+carbs_net_per_serving_g: 6.38
+carbs_total_per_serving_g: 12.71
+protein_per_serving_g: 34.88
+fat_per_serving_g: 18.21
 ingredients:
   - amount: 400
     unit: g
-    item: เส้นบุกสะเด็ดน้ำ
+    item: เส้นบุกพร้อมปรุง KoRo
   - amount: 400
     unit: g
     item: กุ้งปอกเปลือก
-  - amount: 3
-    unit: ชิ้น
+  - amount: 165
+    unit: g
     item: ไข่
   - amount: 150
     unit: g
@@ -44,33 +44,31 @@ ingredients:
   - amount: 150
     unit: g
     item: ถั่วเขียวงอก
-  - amount: 2
-    unit: ช้อนโต๊ะ
+  - amount: 30
+    unit: g
     item: มะขามเปียก
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 30
+    unit: g
+    item: น้ำปลา Squid Brand
+  - amount: 15
+    unit: g
     item: น้ำมะนาว
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
+  - amount: 4
+    unit: g
+    item: อิริทริทอล Foodin
   - amount: 30
     unit: g
     item: ถั่วลิสงไม่ใส่เกลือ
     note: บดขยี้
-  - amount: 2
-    unit: ช้อนโต๊ะ
+  - amount: 27
+    unit: g
     item: น้ำมันที่เป็นกลาง
-  - amount: null
-    unit: ""
-    item: ต้นหอมและผักชี
-    note: สำหรับการเสิร์ฟ
-  - amount: null
-    unit: ""
+  - amount: 12
+    unit: "g"
+    item: ผักชีสด
+  - amount: 60
+    unit: "g"
     item: มะนาวหั่นเสี้ยว
-    note: สำหรับเสิร์ฟ
 translation_languages: []
 translation_status: {}
 source_language: fi

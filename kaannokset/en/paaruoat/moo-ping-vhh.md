@@ -25,45 +25,47 @@ image:
   alt: Grilled moo ping pork skewers, cucumber and hot dipping sauce
   width: 1280
   height: 853
-carbs_net_per_serving_g: 5
-carbs_total_per_serving_g: 7
-protein_per_serving_g: 32
-fat_per_serving_g: 35
+carbs_net_per_serving_g: 2
+carbs_total_per_serving_g: 4.44
+protein_per_serving_g: 34.86
+fat_per_serving_g: 34.69
 ingredients:
   - amount: 700
     unit: g
     item: pork neck
     note: in thin slices
   - amount: 100
-    unit: ml
+    unit: g
     item: coconut milk
-  - amount: 2
-    unit: tbsp
-    item: fish sauce
-  - amount: 1
-    unit: tbsp
+  - amount: 30
+    unit: g
+    item: Squid Brand fish sauce
+  - amount: 15
+    unit: g
     item: soy sauce
-  - amount: 2
-    unit: piece
+  - amount: 7
+    unit: g
     item: a clove of garlic
     note: crushed
-  - amount: 2
-    unit: tbsp
+  - amount: 6
+    unit: g
     item: cilantro stalks
     note: "finely chopped"
-  - amount: 0.5
-    unit: tsp
+  - amount: 2
+    unit: g
     item: ground white pepper
-  - amount: 1
-    unit: tsp
-    item: erythritol
-  - amount: 1
-    unit: tbsp
+  - amount: 4
+    unit: g
+    item: Foodin erythritol
+  - amount: 13.5
+    unit: g
     item: neutral oil
-  - amount: null
-    unit: ""
-    item: cucumber and lime wedges
-    note: for serving
+  - amount: 200
+    unit: "g"
+    item: cucumber
+  - amount: 60
+    unit: g
+    item: lime wedges
 translation_languages: []
 translation_status: {}
 source_language: fi

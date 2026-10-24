@@ -23,20 +23,20 @@ image:
   alt: แกงพะแนงไก่รสเข้มข้น ใส่กะทิ ใบมะกรูด และข้าวดอกกะหล่ำ
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 33
-fat_per_serving_g: 37
+carbs_net_per_serving_g: 8.79
+carbs_total_per_serving_g: 14.91
+protein_per_serving_g: 36.09
+fat_per_serving_g: 23.57
 ingredients:
   - amount: 600
     unit: g
-    item: เนื้อสะโพกไก่ไม่มีกระดูก
+    item: เนื้อสะโพกไก่เลาะหนัง
   - amount: 400
-    unit: ml
+    unit: g
     item: กะทิไขมันเต็ม
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: น้ำพริกแกงพะแนง
+  - amount: 30
+    unit: g
+    item: พริกแกงพะแนง Mae Ploy
   - amount: 150
     unit: g
     item: ถั่วแขก
@@ -45,16 +45,15 @@ ingredients:
     unit: g
     item: ถั่วลิสงไม่ใส่เกลือ
     note: บดขยี้
+  - amount: 2
+    unit: g
+    item: ใบมะกรูดซอย
+  - amount: 15
+    unit: g
+    item: น้ำปลา Squid Brand
   - amount: 4
-    unit: ชิ้น
-    item: ใบมะกรูด
-    note: ตัดเป็นเส้นบาง ๆ
-  - amount: 1
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
+    unit: g
+    item: อิริทริทอล Foodin
   - amount: 20
     unit: g
     item: โหระพาไทย

@@ -24,10 +24,10 @@ image:
     cauliflower rice
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 34
-fat_per_serving_g: 36
+carbs_net_per_serving_g: 4.87
+carbs_total_per_serving_g: 9.85
+protein_per_serving_g: 42.67
+fat_per_serving_g: 28.2
 ingredients:
   - amount: 600
     unit: g
@@ -36,30 +36,30 @@ ingredients:
     unit: g
     item: cauliflower rice
     note: as a side dish
-  - amount: 4
-    unit: piece
+  - amount: 220
+    unit: g
     item: egg
   - amount: 30
     unit: g
     item: Thai basil leaves
-  - amount: 3
-    unit: piece
+  - amount: 10.5
+    unit: g
     item: a clove of garlic
-  - amount: 2
-    unit: piece
+  - amount: 24
+    unit: g
     item: red chili
     note: hotness according to your taste
-  - amount: 2
-    unit: tbsp
-    item: fish sauce
-  - amount: 1
-    unit: tbsp
+  - amount: 30
+    unit: g
+    item: Squid Brand fish sauce
+  - amount: 15
+    unit: g
     item: unsalted soy sauce
-  - amount: 1
-    unit: tsp
-    item: erythritol
-  - amount: 2
-    unit: tbsp
+  - amount: 4
+    unit: g
+    item: Foodin erythritol
+  - amount: 27
+    unit: g
     item: neutral oil
 translation_languages: []
 translation_status: {}

@@ -1,6 +1,6 @@
 {
-  "sourceRevision": "e1b89062e0620d1345385adf713479d78b31ac43",
-  "sourceWorkingTreeChanges": "M docs/nutrition/food-records.json\n M reseptit/alkuruoat/yum-woon-sen-vhh.md\n M reseptit/paaruoat/gai-yang-vhh.md\n M reseptit/paaruoat/keltainen-kanacurry-vhh.md\n M reseptit/paaruoat/khao-kha-moo-vhh.md\n M reseptit/paaruoat/khao-man-gai-vhh.md\n M reseptit/paaruoat/khao-soi-vhh-konjac.md\n M reseptit/paaruoat/larb-moo-vhh.md\n M reseptit/paaruoat/massaman-curry-kanalla-vhh.md\n M site/scripts/nutrition-audit.ts",
+  "sourceRevision": "850b3e35f5195a72ec239102c63398d6e56a687d",
+  "sourceWorkingTreeChanges": "M docs/nutrition/food-records.json\n M reseptit/alkuruoat/yum-woon-sen-vhh.md\n M reseptit/paaruoat/gai-yang-vhh.md\n M reseptit/paaruoat/keltainen-kanacurry-vhh.md\n M reseptit/paaruoat/khao-kha-moo-vhh.md\n M reseptit/paaruoat/khao-man-gai-vhh.md\n M reseptit/paaruoat/khao-soi-vhh-konjac.md\n M reseptit/paaruoat/larb-moo-vhh.md\n M reseptit/paaruoat/massaman-curry-kanalla-vhh.md\n M reseptit/paaruoat/moo-ping-vhh.md\n M reseptit/paaruoat/pad-kee-mao-vhh-konjac.md\n M reseptit/paaruoat/pad-kra-pao-vhh.md\n M reseptit/paaruoat/pad-see-ew-vhh-konjac.md\n M reseptit/paaruoat/pad-thai-vhh-konjac.md\n M reseptit/paaruoat/panang-curry-kanalla-vhh.md\n M reseptit/paaruoat/punainen-kanacurry-vhh.md\n M reseptit/paaruoat/thai-vihrea-curry-kanalla-vhh.md\n M reseptit/paaruoat/tom-kha-gai-vhh.md\n M reseptit/paaruoat/tom-yum-goong-vhh.md\n M site/scripts/nutrition-audit.ts",
   "sourceInputHashes": {
     "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
     "docs/nutrition/estimates-2026-10-24-batch-2.md": "423355906d1cc88e800f647c02f313ec7eaae8bd0d543b7515336f5505e806fa",
@@ -10,7 +10,7 @@
     "docs/nutrition/estimates-2026-10-24-batch-6.md": "f61c27e40f3d2a107f2662c3f0b5676bdaf94d923d18c2b4c722ef593b56b2cf",
     "docs/nutrition/estimates-2026-10-24.md": "2d2458d8a65902f6e6b45a010e40202aea7e892d8bc5e2fc11876f88af2bd2f6",
     "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
-    "docs/nutrition/food-records.json": "696af056241c211a0c5913e9db400f36f6f3dd8124644ea52ee4f9bc1e42fde4",
+    "docs/nutrition/food-records.json": "93495758a748267f559ba0a2f1d81782a0cbbc7a7b07b8b2b8d5946b649fd3ac",
     "reseptit/_mallipohjat/ateriakokonaisuus/ateriakokonaisuus_pohja.md": "1ea1e6ec5e4f9598909099c3f083179b09bedd9926a9ddc23536b2181a4e3a85",
     "reseptit/_mallipohjat/resepti/resepti_pohja.md": "8872ff8c2886ac87e550065071050b123f9e39d762a6da92b0c5165749ce4a2c",
     "reseptit/aamupalat/halloumimunakas.md": "f153038febb225c850e987258e3ab1d9e4386610b3a8091d102e1e34339668d3",
@@ -187,7 +187,7 @@
     "reseptit/alkuruoat/uunifeta-oliivit-alkupala.md": "12e60b5dde9a367ba95fe6eb0b7496ee1b24d907593d519a35fd3a16683076b5",
     "reseptit/alkuruoat/vada-pav.md": "c9c0fa28820ada9ec13566a81e281a81d785c5632b3de6741b2823720021dd77",
     "reseptit/alkuruoat/xiaolongbao.md": "29680988226e6dd8d16ebeaa07bee5519f406c253c958ca1da91390073b081fa",
-    "reseptit/alkuruoat/yum-woon-sen-vhh.md": "1e4cd85a75736b06072109c88b2497a69e34c06bfa187033fdfaf741294fa3e8",
+    "reseptit/alkuruoat/yum-woon-sen-vhh.md": "0f9cceee1981e7d8f0c0f68ca54591eb48c4a6ef9a78c99a5b3b35d17e7ef331",
     "reseptit/arkisto/README.md": "b15d68a1747ba2e3e66ac4803c29154d3ecdbea185e03f5d72eafdce196e985b",
     "reseptit/jalkiruoat/belgialainen-proteiini-vohveli.md": "df9e535dce8777714e3f9684f7284386fb26d957a9ef2a24e0d6f9bdf9c95477",
     "reseptit/jalkiruoat/gulab-jamun.md": "963d9b79f962b790d752de2c6708c2564c67c1765a587580734c99d93ed08b11",
@@ -243,7 +243,7 @@
     "reseptit/paaruoat/dan-dan-nuudelit.md": "bbfa85709de64382f776a2471a548ba82f275afcc46fd49cee7042086277b3b6",
     "reseptit/paaruoat/doner-kebab.md": "6ee9bece43ed90260e2a252bef32eb125389c0ef3a64cc33ba22c4734145ef49",
     "reseptit/paaruoat/falafel.md": "3cebb872f8d56cce27ec0d9f88b59a80079a19e8e95b6d9d3919924455e4c57e",
-    "reseptit/paaruoat/gai-yang-vhh.md": "81edf96531e2c8263664efc3003bf88c8951c16a946926b394253565269650fc",
+    "reseptit/paaruoat/gai-yang-vhh.md": "ba59fdae92c7ba09eb7c9505d7d114ac6563105c82ee7e5f2bf0e5c8d9fc74a9",
     "reseptit/paaruoat/hapanimela-porsas.md": "f7c2ee59306b6ef43ccdd1b6c5a4427196384f1f65630e94dc57f01ca5aae7b4",
     "reseptit/paaruoat/harira.md": "034ee2c89c15f9e7bd4db3f32f1b13d8f83d49a7d347ed58f53d819ee8978a5c",
     "reseptit/paaruoat/hernekeitto-savupotkalla.md": "5ecde580ab6f4707451004339aecf82bb956d9a32bfed7851e6fd9c862d2bd6d",
@@ -276,16 +276,16 @@
     "reseptit/paaruoat/kanaviillokki-kukkakaalilla.md": "aa88e585b86afd036860eaf0c7a418d47354e8e4e29650cc89f467351889114a",
     "reseptit/paaruoat/kantonilainen-hoyrytetty-kala.md": "55f9e6fb113bab22c857e02f1d2f331ab0fbc404ef2812885cca11e399c243b4",
     "reseptit/paaruoat/karjalanpaisti-vhh.md": "5ef9936853845a3b3a1fee0c412c3a8c4a47a42e3af7ccc6de3d39c8c57771e7",
-    "reseptit/paaruoat/keltainen-kanacurry-vhh.md": "4621846a905039b33d4c58c402299e5f8b870a9f7a413d13a884813fa3478010",
+    "reseptit/paaruoat/keltainen-kanacurry-vhh.md": "8b13271f5d045eceab072e1bd10020805a1edfb3fe00f5ee79ae3736c49ef668",
     "reseptit/paaruoat/kerala-kalacurry.md": "728e94afacbbed7c437bc7e0306e5b7ba6b26addf6b54e95aaade4b8bcc30481",
     "reseptit/paaruoat/kermainen-kanasienipannu.md": "3815b871d0c75aee29cc0c4ac169cb6ae97ca41a3c7a6c9b5926268844ee470e",
     "reseptit/paaruoat/kermainen-lohipata.md": "a1b08248995e6e82ce770cb3974ad596e7a2846f8a48db50d287c71e5a4c7f07",
     "reseptit/paaruoat/kesakurpitsalasagne-vhh.md": "40da2e10ce13146a3fef732bf1b8829bc650c756e38908f5487bd2346dea680b",
     "reseptit/paaruoat/keto-pinaattiletut.md": "487c846353dc5847f97b032b3c8ee55ad72cae74acaabc411ad6d6bac036114e",
     "reseptit/paaruoat/ketopizza-pofiber-pohjalla.md": "c6b50996b2e5da2969621b430aca57472a41df7f420ba2f66457366e486fc56f",
-    "reseptit/paaruoat/khao-kha-moo-vhh.md": "e91d83b50dd8ba3a48c92a6c5e019965c2158251c656541fff69e66a9f2f6045",
-    "reseptit/paaruoat/khao-man-gai-vhh.md": "0406d5d56f6aeeadc74dfb209162ba9fc2a017142bdac8c74af74968fc8f4707",
-    "reseptit/paaruoat/khao-soi-vhh-konjac.md": "d5bf800f396991652b535475c232ef8ad77ae9ad1a4989df5ed0644b506a80b0",
+    "reseptit/paaruoat/khao-kha-moo-vhh.md": "13f3bed310f96cbcac9c35cd69d83bce8038fb8873c3878df0850d81e56b04cd",
+    "reseptit/paaruoat/khao-man-gai-vhh.md": "1b5a9239b0b84cffb9af3a7e4ea38a13b12b041c87117de69928d98b55c2dbcc",
+    "reseptit/paaruoat/khao-soi-vhh-konjac.md": "c6eeb19825cc92cc820255d39f61e2448a0db8f86c5221db96187dfc982a6d3c",
     "reseptit/paaruoat/kimchi-jjigae.md": "ddf90c6176447617f9e997b58c8587fb5a3979aa40656aec152cab4407afb561",
     "reseptit/paaruoat/kookos-kanakeitto.md": "8cf8fbbb4f799f7cc370acd1f30b5ce1ffa7b47dde4a214a15090e99cdc0e540",
     "reseptit/paaruoat/kookos-lime-kanacurry.md": "f8e80bc3bd1ef905b966874f8b1729abe62e4f65a7e56355c6d649c7faad0523",
@@ -296,7 +296,7 @@
     "reseptit/paaruoat/kung-pao-kana.md": "8ce8b2fdb6a9e9395bc8d7f36a325acf0d9fd31d4cf1098827b23de03f2b2561",
     "reseptit/paaruoat/lanttulaatikko-kermainen.md": "f9081f7610dbdfc54b836183b1eda85b45b3874505f31cbf4cea91b4bba80eba",
     "reseptit/paaruoat/lanzhou-naudanliha-nuudelikeitto.md": "07af0893f30f17b1316f5336826c6f5ade56c6d086a9a19612727a33d3ee71ea",
-    "reseptit/paaruoat/larb-moo-vhh.md": "ea95cb233ffeca01d3ea7cada197edcad57e96a5ad7d7e6472cabe8ab58ba9aa",
+    "reseptit/paaruoat/larb-moo-vhh.md": "76e67e240a6f1d6044b96bef1cc7a6dabb08a656737f96aae0bfe3fdba91088b",
     "reseptit/paaruoat/liha-juureskeitto-perunaton.md": "6085decb192192124301b8e1f54953ee28267f8205948f4b60afd52d1497e442",
     "reseptit/paaruoat/lihapullat-kermakastikkeessa-vhh.md": "75d564728182d7f7828dc2cce8007f6601c1bfdbb42efd4815857592ffad533c",
     "reseptit/paaruoat/lindstrominpihvit-kaalilla.md": "33a8de0ec4fff21794e7461de1d717a777bae7b7b065dbe57e45aadeab647592",
@@ -307,24 +307,24 @@
     "reseptit/paaruoat/mapo-tofu.md": "13ee33643135ded5d919c1263d5d4a5017a13b55024d2d2fa109d76709591895",
     "reseptit/paaruoat/marokkolainen-couscous.md": "019bb3ada3171590e436ddcf300fd2005fbdf9186e98cd0c31c5cb3e4aa5b97e",
     "reseptit/paaruoat/masala-dosa.md": "994a62ee4c1072ec20c689ef5955992b706580f75268331bad8617822bf36ab3",
-    "reseptit/paaruoat/massaman-curry-kanalla-vhh.md": "7edb459868c83b942ddda10e9f49ec6f11c700326a70478d5bd1bce40604baf1",
+    "reseptit/paaruoat/massaman-curry-kanalla-vhh.md": "43f7ce521d58bba342757e830dbfa2c05e0e156b3031c843e7a0608d6a672734",
     "reseptit/paaruoat/menemen.md": "c3b72091f9b41c99cf63c2a396267e2cba82a7b8c569e6136ab8be11ac5623b9",
     "reseptit/paaruoat/miso-lohi-paksoi.md": "2400ae301f16815cb30554b2bcd9f68ef7397735ed84bc801233a5a4921adfdf",
-    "reseptit/paaruoat/moo-ping-vhh.md": "017388703bb7b3b257aedd0599b6cdca21f7cc62743e3634bf19dba62f322a7a",
+    "reseptit/paaruoat/moo-ping-vhh.md": "23ff641654f7b9d76b88d776c6f204090265fcc3a0750b348f26fb85728c0338",
     "reseptit/paaruoat/munakas-rucola-juusto.md": "97026b8ae2a8694f26107a821aaf9b1a5be2c578977225cac4c9f5c15b122d4c",
     "reseptit/paaruoat/munakoiso-jauhelihavuoka-vhh.md": "4c065ad29e23c0650a6f1899cf6b4cb75681bc7d1de45f527249121d6be30612",
     "reseptit/paaruoat/nakkikastike-kukkakaalimuusi.md": "99f8d51d273bb1b05e4ac7261e39e35492954322fa2cc79143438dc0ef740d0c",
     "reseptit/paaruoat/nakkikeitto-kukkakaalilla.md": "a8203c489b8a482ebb307381a82223afaeb0bf27466be387fdd690183b5cdb0b",
     "reseptit/paaruoat/nasi-lemak.md": "cf5979cb92a42aecfe907644fd7b674d101f6988750859d12bc83ee3f7a5d292",
     "reseptit/paaruoat/okonomiyaki-kaaliletut.md": "fe12df65aeddbc577119add3c85f44f5821139fa27909994b2dfd9e01e1b3f38",
-    "reseptit/paaruoat/pad-kee-mao-vhh-konjac.md": "2e05a174311ac7d22044375d67e0e93f3d1133fb5941e6f91dd086dbf8abbdc6",
-    "reseptit/paaruoat/pad-kra-pao-vhh.md": "6e51607b1aaaac2af98e01376b000914fbcb465f4d49971c70326e016659a939",
-    "reseptit/paaruoat/pad-see-ew-vhh-konjac.md": "3f68da131bc0e87b41fd322fb93168ab2d3953b2b330f0cf27a977e0a62af540",
-    "reseptit/paaruoat/pad-thai-vhh-konjac.md": "f77c8e24c04809a8b81c1ce910d1257454d63cdbda15e83cc63187b25c4f0795",
+    "reseptit/paaruoat/pad-kee-mao-vhh-konjac.md": "85931d9ea0a5d4d8910ce51bed38af5ac52b8803414114118fde62de007827be",
+    "reseptit/paaruoat/pad-kra-pao-vhh.md": "24fbf091657c24c9f285a5fdc5b33931d2606425a95623921a5f6854ded695ce",
+    "reseptit/paaruoat/pad-see-ew-vhh-konjac.md": "f140811f1f8f5b24496579adb69df8a57e655ff1af2cb450d26257b458ec4309",
+    "reseptit/paaruoat/pad-thai-vhh-konjac.md": "c2e8418eddf16e77857f1525510d8506ec58d0462e5d3112f542343c6f1a1a39",
     "reseptit/paaruoat/paella-valenciana.md": "d240d6f196582502c901074af048d560dbe27cc65b870adba55729012f7e3056",
     "reseptit/paaruoat/paistettu-maksa-pekonilla.md": "32114e6da3c578b2a968f55cbf659604d2b0f3970696e4ae995c059702f8aed9",
     "reseptit/paaruoat/palak-paneer.md": "a87a53457ea3df1d51b2d0ed933e997ad873fecee7ecd4331d82621eee71dfd9",
-    "reseptit/paaruoat/panang-curry-kanalla-vhh.md": "77d981d9dafd086d395461543c311259cbab3ce86e2c87ffb33868f87b35548f",
+    "reseptit/paaruoat/panang-curry-kanalla-vhh.md": "acb33f7020a710d3eac23067365abf80c449599c4714f2b06f570b2266c3eefe",
     "reseptit/paaruoat/paprikainen-vhh-gulassi.md": "774bb7c59e6a9dc57af1f2f8865e9330a1a3b0186b5b0eaaf513246eecd82040",
     "reseptit/paaruoat/parsakaali-sinihomejuustofrittata.md": "2be279ace4500df9b18aaf694e3a7fcb102d7ad9bb9358dd647d8c1c9e1c18fa",
     "reseptit/paaruoat/pasta-alla-norma.md": "281c60a2a2a0f9b92ea54066bb8bcee6965bca2ba94452bde3b1e7927647f5b2",
@@ -335,7 +335,7 @@
     "reseptit/paaruoat/poronkaristys-kukkakaalimuusilla.md": "9cb3cd3744c290bcd8f6bdce1383a1f90b418f2d6b14230640e551cbd1d8d487",
     "reseptit/paaruoat/porsaanfilee-sienikastike.md": "5fffbfe5dce7ce389de6101ec8f3ab88998e416763453602c2d454532d2292bf",
     "reseptit/paaruoat/proteiinivihannes-sose.md": "e57fea6a29838350bd0f9949cd14eafc98148dda010f3c1bb42e319b650ec257",
-    "reseptit/paaruoat/punainen-kanacurry-vhh.md": "5e6eadc09acb67a97fc32bae1191efed0d3def57e77d9408243beda4eb7cb8c7",
+    "reseptit/paaruoat/punainen-kanacurry-vhh.md": "c332eb5b3779330a6e6c82a5172b8f7107ece977be6b72249f48ab2c950a4094",
     "reseptit/paaruoat/pyttipannu-vhh.md": "26af9ddeded6d62ac3822aefece70d29d5e4df0e8d33468966a9e1bc16b34df5",
     "reseptit/paaruoat/raejuusto-uunimunakas.md": "0284d94deed8e0c510b11b5b74f86bec6c35726e07ae3e360edeb5d22e813375",
     "reseptit/paaruoat/ratatouille.md": "d6eb5c2961ed0bb97327be45a337074ae5479c9f8b39491e5c87380f0313c637",
@@ -354,9 +354,9 @@
     "reseptit/paaruoat/tandoorikana.md": "b5597a13af675501de526097f8b52ef6433bf740ce1c1155ce653b80464e2f8c",
     "reseptit/paaruoat/taytetyt-kesakurpitsat.md": "925b0edde36fb78959899bd2c347fc88671752796e331ca40a106415aaac4c82",
     "reseptit/paaruoat/taytetyt-paprikat-vhh.md": "1135c86674c6b7faf8ef4d936c19fff9a729a588fc842270ac3a31e25d411eb5",
-    "reseptit/paaruoat/thai-vihrea-curry-kanalla-vhh.md": "3b8542cd93725f87e298a83d82d817762fa8fc08e631dee86a5d2abe5d03c9b3",
-    "reseptit/paaruoat/tom-kha-gai-vhh.md": "e87637c192878f502c73e5e67f0d22de708867d05884c39dd7c3a03c1ef04d0e",
-    "reseptit/paaruoat/tom-yum-goong-vhh.md": "d842cbe73c85dac4e98564a6d0c4726af0bfafe798c25f8b7bd020f180bf35b2",
+    "reseptit/paaruoat/thai-vihrea-curry-kanalla-vhh.md": "a4d7a2d111907b2ef34721eeb81bfd32999e112d894a3c39dcfd6b8230899173",
+    "reseptit/paaruoat/tom-kha-gai-vhh.md": "dd8b9c75be69130d255850296fbb22c4654c3364487cdd7a872a7099632950f1",
+    "reseptit/paaruoat/tom-yum-goong-vhh.md": "e2ac45c320ad6ecdcde131dcb8cea63c572b5ed14c50001822741232884db308",
     "reseptit/paaruoat/tomaatti-kananmuna-wokki.md": "4e9675f96953eca4a42e680e38de21bba271b9db44753ef11000e0beebc1cac9",
     "reseptit/paaruoat/tortilla-de-patatas.md": "6ae42a33e3b14186b13d5e67b82a413da8830f157611357af082f05ea564b03f",
     "reseptit/paaruoat/tunisialainen-ojja.md": "24ae21b0f87f49b11e226ca401380750890e3fc10ddbcd608d2bb1392ba93c7c",
@@ -383,10 +383,10 @@
     "site/package.json": "27cf187ffef79e409c411eec21a44899105ddedb088ce19a993eb1131f79e85e",
     "site/scripts/build-content.ts": "b2bcf3c32ec5d5bee7f1fc522b885ee9361fa78c24e7174ca4bd1afb3f7564ea",
     "site/scripts/glycemic-load-model.ts": "c145f75bb9c7ead0440fbcf5b372b4ec9c3d212c86d54344b1f89092ea9598e8",
-    "site/scripts/glycemic-load-pilot.ts": "2d6753c193c08f3399da48aef59918f6d54885a6d7fbf10472dbbbc2fa3628a5",
+    "site/scripts/glycemic-load-pilot.ts": "aa8faf64f527ca808ab56305359e171d7c6dd19d1dad73d58f195b332c90bccc",
     "site/scripts/inventory.ts": "f10fef13e40a2bc6b63099f9708c3272b56f02e380bf6d45671aad6a59932229",
     "site/scripts/measure-images.mjs": "d41d5eeb11c31bc5e099d127d56892fe9226ff2142d90b2d52a8ef9fb604fd98",
-    "site/scripts/nutrition-audit.ts": "677552b3ed40b34988dc18341bfec201c0149b2e9ee47cb88521e6b5312ea3e4",
+    "site/scripts/nutrition-audit.ts": "b8a397346ca18b3bd9cbcbd5852e914260370ed01cce042663a417ce78e02881",
     "site/scripts/nutrition-model.ts": "534b91e093e46c3a31b8aa5f906541ad932448af5b1806f3248375d2b8e8d105",
     "site/scripts/nutrition-pilot.ts": "89457cecaf3bec23c28e0d846c2e0a7c47a33d2c4681d1e6d5e1e6a60f9b8cb3",
     "site/scripts/nutrition-provenance.ts": "3af34b2379e4198a124209be98ab2a3b39f055bcf8cd8d4dbdadb00d07bd7065",
@@ -405,7 +405,7 @@
     "site/src/content/route-data.ts": "c1cf9fd2babf2b931351f7608753e4c539fb15cbaa9ebf3937a8e7a67e482dbb",
     "site/src/content/schema.ts": "cbecb3d07fd1d7c3d827bfc26083ab69caea6a5b4fc2c80aa7d0d9758084d27d",
     "site/src/env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
-    "site/src/features/glycemic-load/GlycemicLoadPilotPage.tsx": "17e0fb9c0b396c1594eed192f9e01e5281b3f43953ff75dd028a3e7a9693303e",
+    "site/src/features/glycemic-load/GlycemicLoadPilotPage.tsx": "156e71e4461fa0e3ea16fc856cb1306488aad13158457f118a3a89082f3e06e0",
     "site/src/features/recipes/RecipePage.tsx": "f96afb6cbe1e8000614016a8033a7a872af7445e89e08a3cb6efbcd6ff650a8f",
     "site/src/features/recipes/RecipesPage.tsx": "70270e41b5b041130cd888a8a157010b028f4b2ac1c9ebf1befde8b461db4460",
     "site/src/features/recipes/glycemic-load-display.ts": "bf2a63538f0da139612464797cb5a712cf9f3c845ad4b91661ce9555e6b97c43",
@@ -429,8 +429,8 @@
   "sources": 325,
   "counts": {
     "VERIFIED": 0,
-    "ESTIMATE WITH EVIDENCE": 72,
-    "INSUFFICIENT SOURCE DATA": 14,
+    "ESTIMATE WITH EVIDENCE": 82,
+    "INSUFFICIENT SOURCE DATA": 4,
     "CONFLICT REQUIRES REVIEW": 0,
     "MISSING": 239
   },
@@ -1772,10 +1772,10 @@
     {
       "recipe_id": "yum-woon-sen-vhh",
       "source_path": "reseptit/alkuruoat/yum-woon-sen-vhh.md",
-      "source_content_hash": "1e4cd85a75736b06072109c88b2497a69e34c06bfa187033fdfaf741294fa3e8",
+      "source_content_hash": "0f9cceee1981e7d8f0c0f68ca54591eb48c4a6ef9a78c99a5b3b35d17e7ef331",
       "values": {
-        "carbs_net_per_serving_g": 3.15,
-        "carbs_total_per_serving_g": 7.88,
+        "carbs_net_per_serving_g": 2.15,
+        "carbs_total_per_serving_g": 6.88,
         "protein_per_serving_g": 18.98,
         "fat_per_serving_g": 9.23
       },
@@ -3692,10 +3692,10 @@
     {
       "recipe_id": "gai-yang-vhh",
       "source_path": "reseptit/paaruoat/gai-yang-vhh.md",
-      "source_content_hash": "81edf96531e2c8263664efc3003bf88c8951c16a946926b394253565269650fc",
+      "source_content_hash": "ba59fdae92c7ba09eb7c9505d7d114ac6563105c82ee7e5f2bf0e5c8d9fc74a9",
       "values": {
-        "carbs_net_per_serving_g": 5.78,
-        "carbs_total_per_serving_g": 10.45,
+        "carbs_net_per_serving_g": 4.78,
+        "carbs_total_per_serving_g": 9.45,
         "protein_per_serving_g": 45.17,
         "fat_per_serving_g": 35.05
       },
@@ -6062,10 +6062,10 @@
     {
       "recipe_id": "keltainen-kanacurry-vhh",
       "source_path": "reseptit/paaruoat/keltainen-kanacurry-vhh.md",
-      "source_content_hash": "4621846a905039b33d4c58c402299e5f8b870a9f7a413d13a884813fa3478010",
+      "source_content_hash": "8b13271f5d045eceab072e1bd10020805a1edfb3fe00f5ee79ae3736c49ef668",
       "values": {
-        "carbs_net_per_serving_g": 7.74,
-        "carbs_total_per_serving_g": 11.79,
+        "carbs_net_per_serving_g": 6.74,
+        "carbs_total_per_serving_g": 10.79,
         "protein_per_serving_g": 33.08,
         "fat_per_serving_g": 22.78
       },
@@ -6588,10 +6588,10 @@
     {
       "recipe_id": "khao-kha-moo-vhh",
       "source_path": "reseptit/paaruoat/khao-kha-moo-vhh.md",
-      "source_content_hash": "e91d83b50dd8ba3a48c92a6c5e019965c2158251c656541fff69e66a9f2f6045",
+      "source_content_hash": "13f3bed310f96cbcac9c35cd69d83bce8038fb8873c3878df0850d81e56b04cd",
       "values": {
-        "carbs_net_per_serving_g": 9.93,
-        "carbs_total_per_serving_g": 16.87,
+        "carbs_net_per_serving_g": 6.93,
+        "carbs_total_per_serving_g": 13.87,
         "protein_per_serving_g": 49.8,
         "fat_per_serving_g": 38.91
       },
@@ -6680,7 +6680,7 @@
     {
       "recipe_id": "khao-man-gai-vhh",
       "source_path": "reseptit/paaruoat/khao-man-gai-vhh.md",
-      "source_content_hash": "0406d5d56f6aeeadc74dfb209162ba9fc2a017142bdac8c74af74968fc8f4707",
+      "source_content_hash": "1b5a9239b0b84cffb9af3a7e4ea38a13b12b041c87117de69928d98b55c2dbcc",
       "values": {
         "carbs_net_per_serving_g": 6.75,
         "carbs_total_per_serving_g": 11.16,
@@ -6763,10 +6763,10 @@
     {
       "recipe_id": "khao-soi-vhh-konjac",
       "source_path": "reseptit/paaruoat/khao-soi-vhh-konjac.md",
-      "source_content_hash": "d5bf800f396991652b535475c232ef8ad77ae9ad1a4989df5ed0644b506a80b0",
+      "source_content_hash": "c6eeb19825cc92cc820255d39f61e2448a0db8f86c5221db96187dfc982a6d3c",
       "values": {
-        "carbs_net_per_serving_g": 6.35,
-        "carbs_total_per_serving_g": 11.69,
+        "carbs_net_per_serving_g": 5.35,
+        "carbs_total_per_serving_g": 10.69,
         "protein_per_serving_g": 32.08,
         "fat_per_serving_g": 21.05
       },
@@ -7625,7 +7625,7 @@
     {
       "recipe_id": "larb-moo-vhh",
       "source_path": "reseptit/paaruoat/larb-moo-vhh.md",
-      "source_content_hash": "ea95cb233ffeca01d3ea7cada197edcad57e96a5ad7d7e6472cabe8ab58ba9aa",
+      "source_content_hash": "76e67e240a6f1d6044b96bef1cc7a6dabb08a656737f96aae0bfe3fdba91088b",
       "values": {
         "carbs_net_per_serving_g": 6.82,
         "carbs_total_per_serving_g": 9.61,
@@ -8525,10 +8525,10 @@
     {
       "recipe_id": "massaman-curry-kanalla-vhh",
       "source_path": "reseptit/paaruoat/massaman-curry-kanalla-vhh.md",
-      "source_content_hash": "7edb459868c83b942ddda10e9f49ec6f11c700326a70478d5bd1bce40604baf1",
+      "source_content_hash": "43f7ce521d58bba342757e830dbfa2c05e0e156b3031c843e7a0608d6a672734",
       "values": {
-        "carbs_net_per_serving_g": 12.8,
-        "carbs_total_per_serving_g": 20.38,
+        "carbs_net_per_serving_g": 11.8,
+        "carbs_total_per_serving_g": 19.38,
         "protein_per_serving_g": 37.66,
         "fat_per_serving_g": 24.85
       },
@@ -8751,20 +8751,20 @@
     {
       "recipe_id": "moo-ping-vhh",
       "source_path": "reseptit/paaruoat/moo-ping-vhh.md",
-      "source_content_hash": "017388703bb7b3b257aedd0599b6cdca21f7cc62743e3634bf19dba62f322a7a",
+      "source_content_hash": "23ff641654f7b9d76b88d776c6f204090265fcc3a0750b348f26fb85728c0338",
       "values": {
-        "carbs_net_per_serving_g": 5,
-        "carbs_total_per_serving_g": 7,
-        "protein_per_serving_g": 32,
-        "fat_per_serving_g": 35
+        "carbs_net_per_serving_g": 2,
+        "carbs_total_per_serving_g": 4.44,
+        "protein_per_serving_g": 34.86,
+        "fat_per_serving_g": 34.69
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -8775,60 +8775,59 @@
         },
         {
           "amount": 100,
-          "unit": "ml",
+          "unit": "g",
           "item": "kookosmaitoa"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "soijakastiketta"
         },
         {
-          "amount": 2,
-          "unit": "kpl",
+          "amount": 7,
+          "unit": "g",
           "item": "valkosipulinkynttä",
           "note": "murskattuna"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
+          "amount": 6,
+          "unit": "g",
           "item": "korianterinvarsia",
           "note": "hienonnettuna"
         },
         {
-          "amount": 0.5,
-          "unit": "tl",
+          "amount": 2,
+          "unit": "g",
           "item": "jauhettua valkopippuria"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia"
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 13.5,
+          "unit": "g",
           "item": "neutraalia öljyä"
         },
         {
-          "amount": null,
-          "unit": "",
-          "item": "kurkkua ja limelohkoja",
-          "note": "tarjoiluun"
+          "amount": 200,
+          "unit": "g",
+          "item": "kurkkua"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "item": "lime wedges"
         }
       ],
       "notes": "- Perinteisen palmusokerin korvaaminen erytritolilla tekee tästä VHH-muunnelman ja vaikuttaa karamellisoitumiseen.\r\n- Tarkista kastikkeiden pakkausmerkinnät. Ravintoarvot ovat suuntaa-antavia.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "munakoiso-jauhelihavuoka-vhh",
@@ -9232,31 +9231,31 @@
     {
       "recipe_id": "pad-kee-mao-vhh-konjac",
       "source_path": "reseptit/paaruoat/pad-kee-mao-vhh-konjac.md",
-      "source_content_hash": "2e05a174311ac7d22044375d67e0e93f3d1133fb5941e6f91dd086dbf8abbdc6",
+      "source_content_hash": "85931d9ea0a5d4d8910ce51bed38af5ac52b8803414114118fde62de007827be",
       "values": {
-        "carbs_net_per_serving_g": 9,
-        "carbs_total_per_serving_g": 13,
-        "protein_per_serving_g": 32,
-        "fat_per_serving_g": 21
+        "carbs_net_per_serving_g": 4.53,
+        "carbs_total_per_serving_g": 12.09,
+        "protein_per_serving_g": 26.37,
+        "fat_per_serving_g": 10.81
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
           "amount": 600,
           "unit": "g",
-          "item": "valutettuja konjaknuudeleita"
+          "item": "KoRo-valmis konjaknuudeleita"
         },
         {
           "amount": 500,
           "unit": "g",
-          "item": "broilerin reisilihaa",
+          "item": "nahatonta broilerin reisilihaa",
           "note": "suikaleina"
         },
         {
@@ -9266,8 +9265,8 @@
           "note": "puolitettuna"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
+          "amount": 120,
+          "unit": "g",
           "item": "punaista paprikaa",
           "note": "suikaleina"
         },
@@ -9277,68 +9276,63 @@
           "item": "thaibasilikan lehtiä"
         },
         {
-          "amount": 3,
-          "unit": "kpl",
+          "amount": 10.5,
+          "unit": "g",
           "item": "valkosipulinkynttä",
           "note": "murskattuna"
         },
         {
-          "amount": 2,
-          "unit": "kpl",
+          "amount": 24,
+          "unit": "g",
           "item": "punaista chiliä",
           "note": "viipaloituna, tulisuus oman maun mukaan"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "soijakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
-          "item": "osterikastiketta",
-          "note": "vähäsokerista"
+          "amount": 15,
+          "unit": "g",
+          "item": "kaupallista osterikastiketta"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia"
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
+          "amount": 27,
+          "unit": "g",
           "item": "neutraalia öljyä"
         }
       ],
       "notes": "- Konjaknuudelit korvaavat riisinuudelit. Kastikkeiden hiilihydraattimäärät vaihtelevat tuotemerkeittäin.\r\n- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "pad-kra-pao-vhh",
       "source_path": "reseptit/paaruoat/pad-kra-pao-vhh.md",
-      "source_content_hash": "6e51607b1aaaac2af98e01376b000914fbcb465f4d49971c70326e016659a939",
+      "source_content_hash": "24fbf091657c24c9f285a5fdc5b33931d2606425a95623921a5f6854ded695ce",
       "values": {
-        "carbs_net_per_serving_g": 7,
-        "carbs_total_per_serving_g": 10,
-        "protein_per_serving_g": 34,
-        "fat_per_serving_g": 36
+        "carbs_net_per_serving_g": 4.87,
+        "carbs_total_per_serving_g": 9.85,
+        "protein_per_serving_g": 42.67,
+        "fat_per_serving_g": 28.2
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
@@ -9353,8 +9347,8 @@
           "note": "lisukkeeksi"
         },
         {
-          "amount": 4,
-          "unit": "kpl",
+          "amount": 220,
+          "unit": "g",
           "item": "kananmunaa"
         },
         {
@@ -9363,67 +9357,63 @@
           "item": "thaibasilikan lehtiä"
         },
         {
-          "amount": 3,
-          "unit": "kpl",
+          "amount": 10.5,
+          "unit": "g",
           "item": "valkosipulinkynttä"
         },
         {
-          "amount": 2,
-          "unit": "kpl",
+          "amount": 24,
+          "unit": "g",
           "item": "punaista chiliä",
           "note": "tulisuus oman maun mukaan"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "suolatonta soijakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia"
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
+          "amount": 27,
+          "unit": "g",
           "item": "neutraalia öljyä"
         }
       ],
       "notes": "- VHH-muunnelmassa riisi vaihtuu kukkakaaliriisiin. Tarkista kastikkeiden tuoteselosteet.\r\n- Ravintoarvot ovat suuntaa-antavia ja riippuvat jauhelihan rasvapitoisuudesta sekä kastikkeista.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "pad-see-ew-vhh-konjac",
       "source_path": "reseptit/paaruoat/pad-see-ew-vhh-konjac.md",
-      "source_content_hash": "3f68da131bc0e87b41fd322fb93168ab2d3953b2b330f0cf27a977e0a62af540",
+      "source_content_hash": "f140811f1f8f5b24496579adb69df8a57e655ff1af2cb450d26257b458ec4309",
       "values": {
-        "carbs_net_per_serving_g": 9,
-        "carbs_total_per_serving_g": 13,
-        "protein_per_serving_g": 32,
-        "fat_per_serving_g": 22
+        "carbs_net_per_serving_g": 3.39,
+        "carbs_total_per_serving_g": 10.62,
+        "protein_per_serving_g": 37.05,
+        "fat_per_serving_g": 12.05
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
           "amount": 600,
           "unit": "g",
-          "item": "valutettuja konjaknuudeleita"
+          "item": "KoRo-valmis konjaknuudeleita"
         },
         {
           "amount": 500,
@@ -9434,84 +9424,77 @@
         {
           "amount": 300,
           "unit": "g",
-          "item": "kiinankaalia tai parsakaalia",
-          "note": "ohuina suikaleina"
+          "item": "parsakaalia, ohuina suikaleina"
         },
         {
-          "amount": 3,
-          "unit": "kpl",
+          "amount": 165,
+          "unit": "g",
           "item": "kananmunaa"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
+          "amount": 27,
+          "unit": "g",
           "item": "neutraalia öljyä"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
+          "amount": 30,
+          "unit": "g",
           "item": "soijakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "tummaa soijakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
-          "item": "osterikastiketta",
-          "note": "vähäsokerista"
+          "amount": 15,
+          "unit": "g",
+          "item": "kaupallista osterikastiketta"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia"
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         },
         {
-          "amount": 2,
-          "unit": "kpl",
+          "amount": 7,
+          "unit": "g",
           "item": "valkosipulinkynttä",
           "note": "hienonnettuna"
         },
         {
-          "amount": null,
-          "unit": "",
+          "amount": 2,
+          "unit": "g",
           "item": "valkopippuria",
           "note": "maun mukaan"
         }
       ],
       "notes": "- Tämä on pad see ew -ruokalajin VHH-muunnelma; konjaknuudelit eivät vastaa riisinuudelien rakennetta.\r\n- Tarkista osteri- ja soijakastikkeiden hiilihydraatit pakkauksesta.\r\n- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "pad-thai-vhh-konjac",
       "source_path": "reseptit/paaruoat/pad-thai-vhh-konjac.md",
-      "source_content_hash": "f77c8e24c04809a8b81c1ce910d1257454d63cdbda15e83cc63187b25c4f0795",
+      "source_content_hash": "c2e8418eddf16e77857f1525510d8506ec58d0462e5d3112f542343c6f1a1a39",
       "values": {
-        "carbs_net_per_serving_g": 10,
-        "carbs_total_per_serving_g": 13,
-        "protein_per_serving_g": 30,
-        "fat_per_serving_g": 23
+        "carbs_net_per_serving_g": 6.38,
+        "carbs_total_per_serving_g": 12.71,
+        "protein_per_serving_g": 34.88,
+        "fat_per_serving_g": 18.21
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
           "amount": 400,
           "unit": "g",
-          "item": "valutettuja konjaknuudeleita"
+          "item": "KoRo-valmis konjaknuudeleita"
         },
         {
           "amount": 400,
@@ -9519,8 +9502,8 @@
           "item": "kuorittuja katkarapuja"
         },
         {
-          "amount": 3,
-          "unit": "kpl",
+          "amount": 165,
+          "unit": "g",
           "item": "kananmunaa"
         },
         {
@@ -9535,24 +9518,24 @@
           "item": "mungpavun ituja"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
+          "amount": 30,
+          "unit": "g",
           "item": "tamarinditahnaa"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "limettimehua"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia"
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         },
         {
           "amount": 30,
@@ -9561,30 +9544,23 @@
           "note": "rouhittuna"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
+          "amount": 27,
+          "unit": "g",
           "item": "neutraalia öljyä"
         },
         {
-          "amount": null,
-          "unit": "",
-          "item": "kevätsipulia ja korianteria",
-          "note": "tarjoiluun"
+          "amount": 12,
+          "unit": "g",
+          "item": "tuoretta korianteria"
         },
         {
-          "amount": null,
-          "unit": "",
-          "item": "limelohkoja",
-          "note": "tarjoiluun"
+          "amount": 60,
+          "unit": "g",
+          "item": "limelohkoja"
         }
       ],
       "notes": "- Konjaknuudelit korvaavat riisinuudelit. Tamarinditahnan hiilihydraatit vaihtelevat; tarkista pakkausmerkintä.\r\n- Ravintoarvot ovat suuntaa-antavia.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "paella-valenciana",
@@ -9838,36 +9814,36 @@
     {
       "recipe_id": "panang-curry-kanalla-vhh",
       "source_path": "reseptit/paaruoat/panang-curry-kanalla-vhh.md",
-      "source_content_hash": "77d981d9dafd086d395461543c311259cbab3ce86e2c87ffb33868f87b35548f",
+      "source_content_hash": "acb33f7020a710d3eac23067365abf80c449599c4714f2b06f570b2266c3eefe",
       "values": {
-        "carbs_net_per_serving_g": 9,
-        "carbs_total_per_serving_g": 13,
-        "protein_per_serving_g": 33,
-        "fat_per_serving_g": 37
+        "carbs_net_per_serving_g": 8.79,
+        "carbs_total_per_serving_g": 14.91,
+        "protein_per_serving_g": 36.09,
+        "fat_per_serving_g": 23.57
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
           "amount": 600,
           "unit": "g",
-          "item": "luutonta broilerin reisilihaa"
+          "item": "nahatonta broilerin reisilihaa"
         },
         {
           "amount": 400,
-          "unit": "ml",
+          "unit": "g",
           "item": "täysrasvaista kookosmaitoa"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "Panang-currytahnaa"
+          "amount": 30,
+          "unit": "g",
+          "item": "Mae Ploy Panang -currytahnaa"
         },
         {
           "amount": 150,
@@ -9882,20 +9858,19 @@
           "note": "rouhittuna"
         },
         {
+          "amount": 2,
+          "unit": "g",
+          "item": "kaffirlimetinlehtiä, suikaleina"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
+        },
+        {
           "amount": 4,
-          "unit": "kpl",
-          "item": "kaffirlimetinlehteä",
-          "note": "ohuiksi suikaleiksi leikattuna"
-        },
-        {
-          "amount": 1,
-          "unit": "rkl",
-          "item": "kalakastiketta"
-        },
-        {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia"
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         },
         {
           "amount": 20,
@@ -9910,11 +9885,7 @@
         }
       ],
       "notes": "- VHH-versiossa riisi vaihtuu kukkakaaliriisiin. Ravintoarvot ovat suuntaa-antavia ja riippuvat currytahnasta.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "paprikainen-vhh-gulassi",
@@ -10622,38 +10593,37 @@
     {
       "recipe_id": "punainen-kanacurry-vhh",
       "source_path": "reseptit/paaruoat/punainen-kanacurry-vhh.md",
-      "source_content_hash": "5e6eadc09acb67a97fc32bae1191efed0d3def57e77d9408243beda4eb7cb8c7",
+      "source_content_hash": "c332eb5b3779330a6e6c82a5172b8f7107ece977be6b72249f48ab2c950a4094",
       "values": {
-        "carbs_net_per_serving_g": 10,
-        "carbs_total_per_serving_g": 13,
-        "protein_per_serving_g": 32,
-        "fat_per_serving_g": 34
+        "carbs_net_per_serving_g": 9.15,
+        "carbs_total_per_serving_g": 15.9,
+        "protein_per_serving_g": 34.74,
+        "fat_per_serving_g": 22.98
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
           "amount": 600,
           "unit": "g",
-          "item": "broilerin reisilihaa",
+          "item": "nahatonta broilerin reisilihaa",
           "note": "suupaloiksi leikattuna"
         },
         {
           "amount": 400,
-          "unit": "ml",
+          "unit": "g",
           "item": "täysrasvaista kookosmaitoa"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "punaista currytahnaa",
-          "note": "tarkista hiilihydraatit"
+          "amount": 30,
+          "unit": "g",
+          "item": "Mae Ploy punaista currytahnaa"
         },
         {
           "amount": 200,
@@ -10662,21 +10632,20 @@
           "note": "valutettuna"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
+          "amount": 120,
+          "unit": "g",
           "item": "punaista paprikaa",
           "note": "suikaleina"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 15,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia",
-          "note": "valinnainen"
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         },
         {
           "amount": 10,
@@ -10694,19 +10663,13 @@
           "item": "kukkakaaliriisiä"
         },
         {
-          "amount": null,
-          "unit": "",
-          "item": "limelohkoja",
-          "note": "tarjoiluun"
+          "amount": 60,
+          "unit": "g",
+          "item": "limelohkoja"
         }
       ],
       "notes": "- Kukkakaaliriisi korvaa tavallisen riisin. Tarkista currytahnan ja kookosmaidon pakkausmerkinnät.\r\n- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "vhh-pyttipannu",
@@ -12178,36 +12141,36 @@
     {
       "recipe_id": "thai-vihrea-curry-kanalla-vhh",
       "source_path": "reseptit/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
-      "source_content_hash": "3b8542cd93725f87e298a83d82d817762fa8fc08e631dee86a5d2abe5d03c9b3",
+      "source_content_hash": "a4d7a2d111907b2ef34721eeb81bfd32999e112d894a3c39dcfd6b8230899173",
       "values": {
-        "carbs_net_per_serving_g": 9,
-        "carbs_total_per_serving_g": 13,
-        "protein_per_serving_g": 32,
-        "fat_per_serving_g": 35
+        "carbs_net_per_serving_g": 9.01,
+        "carbs_total_per_serving_g": 15.82,
+        "protein_per_serving_g": 34.97,
+        "fat_per_serving_g": 23.97
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
           "amount": 600,
           "unit": "g",
-          "item": "luutonta broilerin reisilihaa"
+          "item": "nahatonta broilerin reisilihaa"
         },
         {
           "amount": 400,
-          "unit": "ml",
+          "unit": "g",
           "item": "täysrasvaista kookosmaitoa"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "vihreää currytahnaa"
+          "amount": 30,
+          "unit": "g",
+          "item": "Mae Ploy vihreää currytahnaa"
         },
         {
           "amount": 200,
@@ -12228,18 +12191,18 @@
           "note": "lisukkeeksi"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "kalakastiketta"
-        },
-        {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia"
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
           "amount": 4,
-          "unit": "kpl",
+          "unit": "g",
+          "item": "Foodin-erytritolia"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
           "item": "kaffirlimetinlehteä"
         },
         {
@@ -12248,52 +12211,48 @@
           "item": "thaibasilikaa"
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 13.5,
+          "unit": "g",
           "item": "neutraalia öljyä"
         }
       ],
       "notes": "- Ravintoarvot ovat suuntaa-antavia ja riippuvat currytahnan sekä kookosmaidon merkistä.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "tom-kha-gai-vhh",
       "source_path": "reseptit/paaruoat/tom-kha-gai-vhh.md",
-      "source_content_hash": "e87637c192878f502c73e5e67f0d22de708867d05884c39dd7c3a03c1ef04d0e",
+      "source_content_hash": "dd8b9c75be69130d255850296fbb22c4654c3364487cdd7a872a7099632950f1",
       "values": {
-        "carbs_net_per_serving_g": 7,
-        "carbs_total_per_serving_g": 10,
-        "protein_per_serving_g": 31,
-        "fat_per_serving_g": 29
+        "carbs_net_per_serving_g": 3.58,
+        "carbs_total_per_serving_g": 6.85,
+        "protein_per_serving_g": 32.52,
+        "fat_per_serving_g": 21.37
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "missingFields": [],
       "ingredients": [
         {
           "amount": 600,
           "unit": "g",
-          "item": "broilerin reisilihaa",
+          "item": "nahatonta broilerin reisilihaa",
           "note": "suupaloiksi leikattuna"
         },
         {
           "amount": 400,
-          "unit": "ml",
+          "unit": "g",
           "item": "täysrasvaista kookosmaitoa"
         },
         {
           "amount": 500,
-          "unit": "ml",
-          "item": "kanalientä"
+          "unit": "g",
+          "item": "laimennettua kanalientä"
         },
         {
           "amount": 200,
@@ -12302,80 +12261,68 @@
           "note": "viipaloituna"
         },
         {
-          "amount": 2,
-          "unit": "kpl",
-          "item": "sitruunaruohon vartta",
-          "note": "murskattuna ja paloiksi leikattuna"
+          "amount": 40,
+          "unit": "g",
+          "item": "sitruunaruohoa, murskattuna; poista ennen tarjoilua"
         },
         {
           "amount": 30,
           "unit": "g",
-          "item": "galangalia",
-          "note": "ohuina viipaleina; tarvittaessa inkivääriä"
-        },
-        {
-          "amount": 5,
-          "unit": "kpl",
-          "item": "kaffirlimetinlehteä",
-          "note": "revittynä"
+          "item": "tuoretta inkivääriä, ohuina viipaleina"
         },
         {
           "amount": 2,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "unit": "g",
+          "item": "kaffirlimetinlehtiä; poista ennen tarjoilua"
         },
         {
-          "amount": 3,
-          "unit": "rkl",
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
+        },
+        {
+          "amount": 45,
+          "unit": "g",
           "item": "limettimehua"
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia",
-          "note": "valinnainen"
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
         },
         {
-          "amount": 1,
-          "unit": "kpl",
+          "amount": 12,
+          "unit": "g",
           "item": "punaista chiliä",
           "note": "viipaloituna"
         },
         {
-          "amount": null,
-          "unit": "",
-          "item": "tuoretta korianteria",
-          "note": "tarjoiluun"
+          "amount": 12,
+          "unit": "g",
+          "item": "tuoretta korianteria"
         }
       ],
       "notes": "- Tarkista liemen ja kalakastikkeen pakkausmerkinnät. Hiilihydraattiarvot ovat suuntaa-antavia.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "uncertainties": []
     },
     {
       "recipe_id": "tom-yum-goong-vhh",
       "source_path": "reseptit/paaruoat/tom-yum-goong-vhh.md",
-      "source_content_hash": "d842cbe73c85dac4e98564a6d0c4726af0bfafe798c25f8b7bd020f180bf35b2",
+      "source_content_hash": "e2ac45c320ad6ecdcde131dcb8cea63c572b5ed14c50001822741232884db308",
       "values": {
-        "carbs_net_per_serving_g": 6,
-        "carbs_total_per_serving_g": 8,
-        "protein_per_serving_g": 28,
-        "fat_per_serving_g": null
+        "carbs_net_per_serving_g": 4.66,
+        "carbs_total_per_serving_g": 7.25,
+        "protein_per_serving_g": 28.8,
+        "fat_per_serving_g": 2.38
       },
       "servings": 4,
-      "status": "INSUFFICIENT SOURCE DATA",
-      "calculationEvidence": null,
+      "status": "ESTIMATE WITH EVIDENCE",
+      "calculationEvidence": "docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
       "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
-      "totalCarbohydrateDefinition": "NOT DOCUMENTED",
+      "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
       "portionBasis": "metadata fields per serving",
-      "brandAndRawWeightEvidence": "NOT VERIFIED",
-      "missingFields": [
-        "fat_per_serving_g"
-      ],
+      "brandAndRawWeightEvidence": "Nutrition record IDs and mass assumptions in docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json",
+      "missingFields": [],
       "ingredients": [
         {
           "amount": 500,
@@ -12388,46 +12335,44 @@
           "item": "osterivinokkaita tai herkkusieniä"
         },
         {
-          "amount": 1,
-          "unit": "l",
+          "amount": 1000,
+          "unit": "g",
           "item": "vettä"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "kalafondia"
+          "amount": 22,
+          "unit": "g",
+          "item": "kalaliemikuutiota, murskattuna"
+        },
+        {
+          "amount": 40,
+          "unit": "g",
+          "item": "sitruunaruohoa, murskattuna; poista ennen tarjoilua"
+        },
+        {
+          "amount": 25,
+          "unit": "g",
+          "item": "tuoretta inkivääriä, viipaleina"
         },
         {
           "amount": 2,
-          "unit": "kpl",
-          "item": "sitruunaruohon vartta",
-          "note": "kevyesti murskattuina"
+          "unit": "g",
+          "item": "kaffirlimetinlehtiä; poista ennen tarjoilua"
         },
         {
-          "amount": 5,
-          "unit": "siivua",
-          "item": "galangalia",
-          "note": "tai tuoretta inkivääriä"
-        },
-        {
-          "amount": 5,
-          "unit": "kpl",
-          "item": "kaffirlimetinlehteä"
-        },
-        {
-          "amount": 2,
-          "unit": "kpl",
+          "amount": 24,
+          "unit": "g",
           "item": "punaista chiliä",
           "note": "tulisuus oman maun mukaan"
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "kalakastiketta"
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
         },
         {
-          "amount": 3,
-          "unit": "rkl",
+          "amount": 45,
+          "unit": "g",
           "item": "limettimehua"
         },
         {
@@ -12436,19 +12381,13 @@
           "item": "kirsikkatomaatteja"
         },
         {
-          "amount": null,
-          "unit": "",
-          "item": "tuoretta korianteria",
-          "note": "pinnalle"
+          "amount": 12,
+          "unit": "g",
+          "item": "tuoretta korianteria"
         }
       ],
-      "notes": "- Annostele kalafondi pakkauksen ohjeen mukaan; fondien suolaisuus vaihtelee.\r\n- Ravintoarvot eivät sisällä riisiä tai kookosmaitoa ja ovat suuntaa-antavia.",
-      "uncertainties": [
-        "No reproducible ingredient-to-record calculation found in repository",
-        "Product, edible weight and preparation yield require evidence",
-        "Unmeasured ingredients present",
-        "Ingredient-specific volume/piece weights required"
-      ]
+      "notes": "- Liemikuution laskenta perustuu Finelin yleiseen kalaliemikuutiotietueeseen; tuotemerkkien koostumus vaihtelee.\n- Ravintoarvot eivät sisällä riisiä tai kookosmaitoa ja ovat suuntaa-antavia.",
+      "uncertainties": []
     },
     {
       "recipe_id": "tomaatti-kananmuna-wokki",
@@ -25439,7 +25378,7 @@
     },
     {
       "recipeId": "pad-thai-vhh-konjac",
-      "sourceHash": "f77c8e24c04809a8b81c1ce910d1257454d63cdbda15e83cc63187b25c4f0795",
+      "sourceHash": "c2e8418eddf16e77857f1525510d8506ec58d0462e5d3112f542343c6f1a1a39",
       "calculatedAt": "2026-10-24",
       "servings": 4,
       "scope": "Unfinished ingredient-input evidence pilot; not cooked meal nutrition; no sides unless explicitly quantified",
@@ -25449,7 +25388,7 @@
         {
           "amount": 400,
           "unit": "g",
-          "item": "valutettuja konjaknuudeleita",
+          "item": "KoRo-valmis konjaknuudeleita",
           "state": "UNRESOLVED",
           "matchEvidence": ""
         },
@@ -25461,8 +25400,8 @@
           "matchEvidence": ""
         },
         {
-          "amount": 3,
-          "unit": "kpl",
+          "amount": 165,
+          "unit": "g",
           "item": "kananmunaa",
           "state": "UNRESOLVED",
           "matchEvidence": ""
@@ -25483,30 +25422,30 @@
           "matchEvidence": ""
         },
         {
-          "amount": 2,
-          "unit": "rkl",
+          "amount": 30,
+          "unit": "g",
           "item": "tamarinditahnaa",
           "state": "UNRESOLVED",
           "matchEvidence": ""
         },
         {
-          "amount": 2,
-          "unit": "rkl",
-          "item": "kalakastiketta",
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta",
           "state": "UNRESOLVED",
           "matchEvidence": ""
         },
         {
-          "amount": 1,
-          "unit": "rkl",
+          "amount": 15,
+          "unit": "g",
           "item": "limettimehua",
           "state": "UNRESOLVED",
           "matchEvidence": ""
         },
         {
-          "amount": 1,
-          "unit": "tl",
-          "item": "erytritolia",
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia",
           "state": "UNRESOLVED",
           "matchEvidence": ""
         },
@@ -25519,32 +25458,30 @@
           "matchEvidence": ""
         },
         {
-          "amount": 2,
-          "unit": "rkl",
+          "amount": 27,
+          "unit": "g",
           "item": "neutraalia öljyä",
           "state": "UNRESOLVED",
           "matchEvidence": ""
         },
         {
-          "amount": null,
-          "unit": "",
-          "item": "kevätsipulia ja korianteria",
-          "note": "tarjoiluun",
+          "amount": 12,
+          "unit": "g",
+          "item": "tuoretta korianteria",
           "state": "UNRESOLVED",
           "matchEvidence": ""
         },
         {
-          "amount": null,
-          "unit": "",
+          "amount": 60,
+          "unit": "g",
           "item": "limelohkoja",
-          "note": "tarjoiluun",
           "state": "UNRESOLVED",
           "matchEvidence": ""
         }
       ],
       "rows": [
         {
-          "item": "valutettuja konjaknuudeleita",
+          "item": "KoRo-valmis konjaknuudeleita",
           "recordId": null,
           "grams": null,
           "values": {
@@ -25602,7 +25539,6 @@
           "issues": [
             "Missing source reference",
             "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
             "Unknown edible fraction",
             "Unknown preparation retention/loss"
           ]
@@ -25666,13 +25602,12 @@
           "issues": [
             "Missing source reference",
             "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
             "Unknown edible fraction",
             "Unknown preparation retention/loss"
           ]
         },
         {
-          "item": "kalakastiketta",
+          "item": "Squid Brand -kalakastiketta",
           "recordId": null,
           "grams": null,
           "values": {
@@ -25688,7 +25623,6 @@
           "issues": [
             "Missing source reference",
             "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
             "Unknown edible fraction",
             "Unknown preparation retention/loss"
           ]
@@ -25710,13 +25644,12 @@
           "issues": [
             "Missing source reference",
             "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
             "Unknown edible fraction",
             "Unknown preparation retention/loss"
           ]
         },
         {
-          "item": "erytritolia",
+          "item": "Foodin-erytritolia",
           "recordId": null,
           "grams": null,
           "values": {
@@ -25732,7 +25665,6 @@
           "issues": [
             "Missing source reference",
             "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
             "Unknown edible fraction",
             "Unknown preparation retention/loss"
           ]
@@ -25775,13 +25707,12 @@
           "issues": [
             "Missing source reference",
             "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
             "Unknown edible fraction",
             "Unknown preparation retention/loss"
           ]
         },
         {
-          "item": "kevätsipulia ja korianteria",
+          "item": "tuoretta korianteria",
           "recordId": null,
           "grams": null,
           "values": {
@@ -25795,10 +25726,8 @@
             "netCarbohydrate": null
           },
           "issues": [
-            "Missing/invalid amount",
             "Missing source reference",
             "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
             "Unknown edible fraction",
             "Unknown preparation retention/loss"
           ]
@@ -25818,10 +25747,8 @@
             "netCarbohydrate": null
           },
           "issues": [
-            "Missing/invalid amount",
             "Missing source reference",
             "Unresolved food/state/edible basis match",
-            "Missing ingredient-specific unit conversion",
             "Unknown edible fraction",
             "Unknown preparation retention/loss"
           ]
@@ -25869,10 +25796,10 @@
         "Spring onion/coriander unmeasured; serving lime wedges unquantified"
       ],
       "existingPerServing": {
-        "carbs_net_per_serving_g": 10,
-        "carbs_total_per_serving_g": 13,
-        "protein_per_serving_g": 30,
-        "fat_per_serving_g": 23
+        "carbs_net_per_serving_g": 6.38,
+        "carbs_total_per_serving_g": 12.71,
+        "protein_per_serving_g": 34.88,
+        "fat_per_serving_g": 18.21
       },
       "comparison": "Full comparison blocked; no inferred totals",
       "comparisonStatus": "INSUFFICIENT SOURCE DATA"

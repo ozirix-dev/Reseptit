@@ -23,20 +23,20 @@ image:
   alt: Green Thai chicken curry in coconut milk, Thai basil and cauliflower rice
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 35
+carbs_net_per_serving_g: 9.01
+carbs_total_per_serving_g: 15.82
+protein_per_serving_g: 34.97
+fat_per_serving_g: 23.97
 ingredients:
   - amount: 600
     unit: g
-    item: boneless chicken thigh meat
+    item: skinless chicken thigh meat
   - amount: 400
-    unit: ml
+    unit: g
     item: full fat coconut milk
-  - amount: 2
-    unit: tbsp
-    item: green curry paste
+  - amount: 30
+    unit: g
+    item: Mae Ploy green curry paste
   - amount: 200
     unit: g
     item: zucchini
@@ -49,20 +49,20 @@ ingredients:
     unit: g
     item: cauliflower rice
     note: as a side dish
-  - amount: 2
-    unit: tbsp
-    item: fish sauce
-  - amount: 1
-    unit: tsp
-    item: erythritol
+  - amount: 30
+    unit: g
+    item: Squid Brand fish sauce
   - amount: 4
-    unit: piece
+    unit: g
+    item: Foodin erythritol
+  - amount: 2
+    unit: g
     item: kaffir lime leaf
   - amount: 20
     unit: g
     item: Thai basil
-  - amount: 1
-    unit: tbsp
+  - amount: 13.5
+    unit: g
     item: neutral oil
 translation_languages: []
 translation_status: {}

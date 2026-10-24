@@ -23,37 +23,35 @@ image:
   alt: Röd thailändsk kycklingcurry med kokosmjölk, bambuskott och blomkålsris
   width: 1280
   height: 853
-carbs_net_per_serving_g: 10
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 34
+carbs_net_per_serving_g: 9.15
+carbs_total_per_serving_g: 15.9
+protein_per_serving_g: 34.74
+fat_per_serving_g: 22.98
 ingredients:
   - amount: 600
     unit: g
-    item: kycklinglårkött
+    item: skinnfritt kycklinglårkött
     note: skär i lagom stora bitar
   - amount: 400
-    unit: ml
+    unit: g
     item: fullfet kokosmjölk
-  - amount: 2
-    unit: msk
-    item: röd currypasta
-    note: kolla kolhydraterna
+  - amount: 30
+    unit: g
+    item: Mae Ploy röd currypasta
   - amount: 200
     unit: g
     item: bambuskott
     note: "avrunnen"
-  - amount: 1
-    unit: st
+  - amount: 120
+    unit: g
     item: röd paprika
     note: i remsor
-  - amount: 1
-    unit: msk
-    item: fisksås
-  - amount: 1
-    unit: tsk
-    item: erytritol
-    note: valfritt
+  - amount: 15
+    unit: g
+    item: Squid Brand-fisksås
+  - amount: 4
+    unit: g
+    item: erytritol från Foodin
   - amount: 10
     unit: g
     item: kokosolja
@@ -63,10 +61,9 @@ ingredients:
   - amount: 600
     unit: g
     item: blomkålsris
-  - amount: null
-    unit: ""
+  - amount: 60
+    unit: "g"
     item: limeklyftor
-    note: för servering
 translation_languages: []
 translation_status: {}
 source_language: fi

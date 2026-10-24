@@ -23,8 +23,8 @@ image:
   alt: Massaman kycklingcurry i kokossås, jordnötter och blomkålsris
   width: 1280
   height: 853
-carbs_net_per_serving_g: 12.8
-carbs_total_per_serving_g: 20.38
+carbs_net_per_serving_g: 11.8
+carbs_total_per_serving_g: 19.38
 protein_per_serving_g: 37.66
 fat_per_serving_g: 24.85
 ingredients:

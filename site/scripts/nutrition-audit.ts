@@ -13,6 +13,7 @@ const batch4Evidence = new Set(["keto-pinaattiletut", "keto-pannukakku", "vhh-ka
 const batch5Evidence = new Set(["medu-vada", "pani-puri", "samosa", "vada-pav", "aloo-paratha", "butter-chicken", "chole-bhature", "ketopizza-pofiber-pohjalla", "lohikeitto-kuohukermalla", "uunilohi-smetanakuorrutteella", "vhh-lohikeitto-kukkakaalilla", "gulab-jamun"]);
 const batch6Evidence = new Set(["kai-jiew-vhh", "som-tam-vhh-kurkkuna"]);
 const batch7Evidence = new Set(["yum-woon-sen-vhh", "gai-yang-vhh", "keltainen-kanacurry-vhh", "khao-kha-moo-vhh", "khao-man-gai-vhh", "khao-soi-vhh-konjac", "larb-moo-vhh", "massaman-curry-kanalla-vhh"]);
+const batch8Evidence = new Set(["moo-ping-vhh", "pad-kee-mao-vhh-konjac", "pad-kra-pao-vhh", "pad-see-ew-vhh-konjac", "pad-thai-vhh-konjac", "panang-curry-kanalla-vhh", "punainen-kanacurry-vhh", "thai-vihrea-curry-kanalla-vhh", "tom-kha-gai-vhh", "tom-yum-goong-vhh"]);
 const audit = await auditTranslations();
 const calculatedAt = new Date().toISOString().slice(0, 10);
 const provenance = await nutritionProvenance(root);
@@ -20,9 +21,11 @@ const sourceHashes: Record<string, string> = Object.fromEntries(await Promise.al
 const inventory = audit.publishedSources.map((recipe) => {
   const values = Object.fromEntries(keys.map((key) => [key, recipe.data[key] ?? null]));
   const hasValues = Object.values(values).some((n) => n !== null);
-  const hasCalculationEvidence = (fineliCarbohydrateEvidence.has(recipe.data.recipe_id) || batch3Evidence.has(recipe.data.recipe_id) || batch4Evidence.has(recipe.data.recipe_id) || batch5Evidence.has(recipe.data.recipe_id) || batch6Evidence.has(recipe.data.recipe_id) || batch7Evidence.has(recipe.data.recipe_id)) && recipe.data.carbs_total_per_serving_g != null;
+  const hasCalculationEvidence = (fineliCarbohydrateEvidence.has(recipe.data.recipe_id) || batch3Evidence.has(recipe.data.recipe_id) || batch4Evidence.has(recipe.data.recipe_id) || batch5Evidence.has(recipe.data.recipe_id) || batch6Evidence.has(recipe.data.recipe_id) || batch7Evidence.has(recipe.data.recipe_id) || batch8Evidence.has(recipe.data.recipe_id)) && recipe.data.carbs_total_per_serving_g != null;
   const allValuesPresent = Object.values(values).every((n) => n !== null);
-  const evidencePath = batch7Evidence.has(recipe.data.recipe_id)
+  const evidencePath = batch8Evidence.has(recipe.data.recipe_id)
+    ? "docs/nutrition/estimates-2026-10-24-batch-8.md; tools/calculate-nutrition-batch8.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json"
+    : batch7Evidence.has(recipe.data.recipe_id)
     ? "docs/nutrition/estimates-2026-10-24-batch-7.md; tools/calculate-nutrition-batch7.py; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json"
     : batch6Evidence.has(recipe.data.recipe_id)
     ? "docs/nutrition/estimates-2026-10-24-batch-6.md; docs/nutrition/food-records.json; docs/nutrition/fineli-release-20-reference.json; docs/nutrition/afcd-release-3-reference.json"

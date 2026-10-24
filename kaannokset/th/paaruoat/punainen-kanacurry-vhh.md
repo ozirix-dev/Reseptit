@@ -23,37 +23,35 @@ image:
   alt: แกงไก่แดงใส่กะทิ หน่อไม้ และข้าวดอกกะหล่ำ
   width: 1280
   height: 853
-carbs_net_per_serving_g: 10
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 34
+carbs_net_per_serving_g: 9.15
+carbs_total_per_serving_g: 15.9
+protein_per_serving_g: 34.74
+fat_per_serving_g: 22.98
 ingredients:
   - amount: 600
     unit: g
-    item: "เนื้อสะโพกไก่"
+    item: "เนื้อสะโพกไก่เลาะหนัง"
     note: หั่นเป็นชิ้นขนาดพอดีคำ
   - amount: 400
-    unit: ml
+    unit: g
     item: กะทิไขมันเต็ม
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: น้ำพริกแกงแดง
-    note: ตรวจสอบคาร์โบไฮเดรต
+  - amount: 30
+    unit: g
+    item: พริกแกงเผ็ด Mae Ploy
   - amount: 200
     unit: g
     item: หน่อไม้
     note: "สะเด็ดน้ำ"
-  - amount: 1
-    unit: ชิ้น
+  - amount: 120
+    unit: g
     item: พริกหวานแดง
     note: เป็นแถบ
-  - amount: 1
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
-    note: ไม่จำเป็น
+  - amount: 15
+    unit: g
+    item: น้ำปลา Squid Brand
+  - amount: 4
+    unit: g
+    item: อิริทริทอล Foodin
   - amount: 10
     unit: g
     item: น้ำมันมะพร้าว
@@ -63,10 +61,9 @@ ingredients:
   - amount: 600
     unit: g
     item: ข้าวกะหล่ำดอก
-  - amount: null
-    unit: ""
+  - amount: 60
+    unit: "g"
     item: มะนาวหั่นเสี้ยว
-    note: สำหรับการเสิร์ฟ
 translation_languages: []
 translation_status: {}
 source_language: fi

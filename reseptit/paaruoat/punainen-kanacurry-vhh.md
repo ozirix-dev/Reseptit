@@ -6,38 +6,44 @@ category: paaruoka
 language: fi
 status: published
 diet_class: vhh_valjempi
-main_ingredient: [broileri, kookosmaito]
-cooking_method: [liesi]
+main_ingredient: [ broileri, kookosmaito ]
+cooking_method: [ liesi ]
 servings: 4
 time_total_min: 35
 difficulty: helppo
-tags: [thaimaalainen, curry, VHH]
+tags: [ thaimaalainen, curry, VHH ]
 image:
   src: paaruoat/punainen-kanacurry-vhh.webp
-  alt: Punainen thaimaalainen kanacurry kookosmaidolla, bambunversoilla ja kukkakaaliriisillä
+  alt: Punainen thaimaalainen kanacurry kookosmaidolla, bambunversoilla ja
+    kukkakaaliriisillä
   width: 1280
   height: 853
-carbs_net_per_serving_g: 10
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 34
+carbs_net_per_serving_g: 9.15
+carbs_total_per_serving_g: 15.9
+protein_per_serving_g: 34.74
+fat_per_serving_g: 22.98
 ingredients:
-  - {amount: 600, unit: g, item: broilerin reisilihaa, note: suupaloiksi leikattuna}
-  - {amount: 400, unit: ml, item: täysrasvaista kookosmaitoa}
-  - {amount: 2, unit: rkl, item: punaista currytahnaa, note: tarkista hiilihydraatit}
-  - {amount: 200, unit: g, item: bambunversoja, note: valutettuna}
-  - {amount: 1, unit: kpl, item: punaista paprikaa, note: suikaleina}
-  - {amount: 1, unit: rkl, item: kalakastiketta}
-  - {amount: 1, unit: tl, item: erytritolia, note: valinnainen}
-  - {amount: 10, unit: g, item: kookosöljyä}
-  - {amount: 20, unit: g, item: thaibasilikan lehtiä}
-  - {amount: 600, unit: g, item: kukkakaaliriisiä}
-  - {amount: null, unit: "", item: limelohkoja, note: tarjoiluun}
+  - {
+      amount: 600,
+      unit: g,
+      item: nahatonta broilerin reisilihaa,
+      note: suupaloiksi leikattuna
+    }
+  - { amount: 400, unit: g, item: täysrasvaista kookosmaitoa }
+  - { amount: 30, unit: g, item: Mae Ploy punaista currytahnaa }
+  - { amount: 200, unit: g, item: bambunversoja, note: valutettuna }
+  - { amount: 120, unit: g, item: punaista paprikaa, note: suikaleina }
+  - { amount: 15, unit: g, item: Squid Brand -kalakastiketta }
+  - { amount: 4, unit: g, item: Foodin-erytritolia }
+  - { amount: 10, unit: g, item: kookosöljyä }
+  - { amount: 20, unit: g, item: thaibasilikan lehtiä }
+  - { amount: 600, unit: g, item: kukkakaaliriisiä }
+  - { amount: 60, unit: "g", item: limelohkoja }
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
 ---
 
 # VHH-punainen kanacurry kukkakaaliriisillä

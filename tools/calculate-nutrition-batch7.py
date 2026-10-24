@@ -29,8 +29,14 @@ def a(food_id, grams):
     return (f"AFCD {food_id} {x['name']}", grams, *vals)
 
 def product(record_id, grams):
-    x = OFF[record_id]["per100g"]
-    vals = [x[k] for k in ("carbohydrate", "fibre", "polyols", "protein", "fat")]
+    record = OFF[record_id]
+    x = record["per100g"]
+    carbohydrate = x["carbohydrate"]
+    if record["carbohydrateDefinition"] == "EU_TOTAL_INCLUDING_POLYOLS":
+        if carbohydrate is None or x["polyols"] is None or x["polyols"] > carbohydrate:
+            raise ValueError(f"Product record {record_id} has invalid carbohydrate/polyol data")
+        carbohydrate -= x["polyols"]
+    vals = [carbohydrate, x["fibre"], x["polyols"], x["protein"], x["fat"]]
     if any(v is None for v in vals):
         raise ValueError(f"Product record {record_id} contains an unreported nutrient")
     return (f"{OFF[record_id]['name']} ({OFF[record_id]['id']})", grams, *vals)

@@ -23,55 +23,50 @@ image:
   alt: Tom kha gai chicken soup with coconut milk, mushrooms, chili and lime leaves
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 31
-fat_per_serving_g: 29
+carbs_net_per_serving_g: 3.58
+carbs_total_per_serving_g: 6.85
+protein_per_serving_g: 32.52
+fat_per_serving_g: 21.37
 ingredients:
   - amount: 600
     unit: g
-    item: chicken thigh meat
+    item: skinless chicken thigh meat
     note: cut into bite-sized pieces
   - amount: 400
-    unit: ml
+    unit: g
     item: full fat coconut milk
   - amount: 500
-    unit: ml
-    item: chicken broth
+    unit: g
+    item: diluted chicken stock
   - amount: 200
     unit: g
     item: button mushrooms
     note: sliced
-  - amount: 2
-    unit: piece
-    item: stalk of lemongrass
-    note: crushed and cut into pieces
+  - amount: 40
+    unit: g
+    item: lemongrass, bruised; remove before serving
   - amount: 30
     unit: g
-    item: galangal
-    note: thinly sliced; ginger if needed
-  - amount: 5
-    unit: piece
-    item: kaffir lime leaf
-    note: torn up
+    item: fresh ginger, thinly sliced
   - amount: 2
-    unit: tbsp
-    item: fish sauce
-  - amount: 3
-    unit: tbsp
+    unit: g
+    item: makrut lime leaves; remove before serving
+  - amount: 30
+    unit: g
+    item: Squid Brand fish sauce
+  - amount: 45
+    unit: g
     item: lime juice
-  - amount: 1
-    unit: tsp
-    item: erythritol
-    note: optional
-  - amount: 1
-    unit: piece
+  - amount: 4
+    unit: g
+    item: Foodin erythritol
+  - amount: 12
+    unit: g
     item: red chili
     note: sliced
-  - amount: null
-    unit: ""
+  - amount: 12
+    unit: "g"
     item: fresh coriander
-    note: for serving
 translation_languages: []
 translation_status: {}
 source_language: fi
@@ -81,7 +76,7 @@ translation_of: tom-kha-gai-vhh
 
 # low-carb tom kha gai – coconut chicken soup
 
-Tom kha gai is an aromatic Thai chicken soup where coconut milk softens the flavors of lime, galangal and lemongrass. This low-carb version is served without rice.
+Tom kha gai is an aromatic Thai chicken soup where coconut milk softens the flavors of lime, fresh ginger and lemongrass. This low-carb version is served without rice.
 
 ## Description
 
@@ -89,7 +84,7 @@ The soup's lemongrass and lime leaves give the broth its fragrance; you can leav
 
 ## Preparation
 
-1. Heat the chicken broth in a pot. Add lemongrass, galangal and lime leaves. Simmer on low heat for 10 minutes.
+1. Heat the chicken broth in a pot. Add lemongrass, fresh ginger and lime leaves. Simmer on low heat for 10 minutes.
 2. Add chicken and mushrooms. Cook slowly until the chicken is cooked all over.
 3. Pour in the coconut milk and heat gently, do not let it boil strongly.
 4. Season with fish sauce and, if desired, erythritol. Remove the pot from the stove and add the lime juice.

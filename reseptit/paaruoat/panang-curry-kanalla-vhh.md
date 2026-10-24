@@ -6,37 +6,38 @@ category: paaruoka
 language: fi
 status: published
 diet_class: vhh_tiukka
-main_ingredient: [broileri, kookosmaito]
-cooking_method: [liesi]
+main_ingredient: [ broileri, kookosmaito ]
+cooking_method: [ liesi ]
 servings: 4
 time_total_min: 35
 difficulty: helppo
-tags: [thaimaalainen, curry, VHH]
+tags: [ thaimaalainen, curry, VHH ]
 image:
   src: paaruoat/panang-curry-kanalla-vhh.webp
-  alt: Täyteläinen Panang-kanacurry kookosmaidossa, kaffirlimetinlehteä ja kukkakaaliriisiä
+  alt: Täyteläinen Panang-kanacurry kookosmaidossa, kaffirlimetinlehteä ja
+    kukkakaaliriisiä
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 33
-fat_per_serving_g: 37
+carbs_net_per_serving_g: 8.79
+carbs_total_per_serving_g: 14.91
+protein_per_serving_g: 36.09
+fat_per_serving_g: 23.57
 ingredients:
-  - {amount: 600, unit: g, item: luutonta broilerin reisilihaa}
-  - {amount: 400, unit: ml, item: täysrasvaista kookosmaitoa}
-  - {amount: 2, unit: rkl, item: Panang-currytahnaa}
-  - {amount: 150, unit: g, item: vihreitä papuja, note: puolitettuina}
-  - {amount: 30, unit: g, item: suolattomia maapähkinöitä, note: rouhittuna}
-  - {amount: 4, unit: kpl, item: kaffirlimetinlehteä, note: ohuiksi suikaleiksi leikattuna}
-  - {amount: 1, unit: rkl, item: kalakastiketta}
-  - {amount: 1, unit: tl, item: erytritolia}
-  - {amount: 20, unit: g, item: thaibasilikaa}
-  - {amount: 500, unit: g, item: kukkakaaliriisiä, note: lisukkeeksi}
+  - { amount: 600, unit: g, item: nahatonta broilerin reisilihaa }
+  - { amount: 400, unit: g, item: täysrasvaista kookosmaitoa }
+  - { amount: 30, unit: g, item: Mae Ploy Panang -currytahnaa }
+  - { amount: 150, unit: g, item: vihreitä papuja, note: puolitettuina }
+  - { amount: 30, unit: g, item: suolattomia maapähkinöitä, note: rouhittuna }
+  - { amount: 2, unit: g, item: "kaffirlimetinlehtiä, suikaleina" }
+  - { amount: 15, unit: g, item: Squid Brand -kalakastiketta }
+  - { amount: 4, unit: g, item: Foodin-erytritolia }
+  - { amount: 20, unit: g, item: thaibasilikaa }
+  - { amount: 500, unit: g, item: kukkakaaliriisiä, note: lisukkeeksi }
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
 ---
 
 # Panang-kanacurry kukkakaaliriisillä

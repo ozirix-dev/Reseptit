@@ -21,11 +21,12 @@ tags:
   - VHH
 image:
   src: paaruoat/khao-soi-vhh-konjac-v2.webp
-  alt: Khao soi-currysoppa med konjaknudlar, benfria kycklingbitar, rå schalottenlök och inlagd senapskål
+  alt: Khao soi-currysoppa med konjaknudlar, benfria kycklingbitar, rå
+    schalottenlök och inlagd senapskål
   width: 1280
   height: 853
-carbs_net_per_serving_g: 6.35
-carbs_total_per_serving_g: 11.69
+carbs_net_per_serving_g: 5.35
+carbs_total_per_serving_g: 10.69
 protein_per_serving_g: 32.08
 fat_per_serving_g: 21.05
 ingredients:

@@ -23,37 +23,35 @@ image:
   alt: Red Thai chicken curry with coconut milk, bamboo shoots and cauliflower rice
   width: 1280
   height: 853
-carbs_net_per_serving_g: 10
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 34
+carbs_net_per_serving_g: 9.15
+carbs_total_per_serving_g: 15.9
+protein_per_serving_g: 34.74
+fat_per_serving_g: 22.98
 ingredients:
   - amount: 600
     unit: g
-    item: chicken thigh meat
+    item: skinless chicken thigh meat
     note: cut into bite-sized pieces
   - amount: 400
-    unit: ml
+    unit: g
     item: full fat coconut milk
-  - amount: 2
-    unit: tbsp
-    item: red curry paste
-    note: check the carbs
+  - amount: 30
+    unit: g
+    item: Mae Ploy red curry paste
   - amount: 200
     unit: g
     item: bamboo shoots
     note: drained
-  - amount: 1
-    unit: piece
+  - amount: 120
+    unit: g
     item: red pepper
     note: in strips
-  - amount: 1
-    unit: tbsp
-    item: fish sauce
-  - amount: 1
-    unit: tsp
-    item: erythritol
-    note: optional
+  - amount: 15
+    unit: g
+    item: Squid Brand fish sauce
+  - amount: 4
+    unit: g
+    item: Foodin erythritol
   - amount: 10
     unit: g
     item: coconut oil
@@ -63,10 +61,9 @@ ingredients:
   - amount: 600
     unit: g
     item: cauliflower rice
-  - amount: null
-    unit: ""
+  - amount: 60
+    unit: "g"
     item: lime wedges
-    note: for serving
 translation_languages: []
 translation_status: {}
 source_language: fi

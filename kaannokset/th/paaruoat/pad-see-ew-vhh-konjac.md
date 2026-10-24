@@ -24,47 +24,45 @@ image:
   alt: ผัดซีอิ๊ววอกกับบุก ไข่ ไก่ และบรอกโคลี
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 22
+carbs_net_per_serving_g: 3.39
+carbs_total_per_serving_g: 10.62
+protein_per_serving_g: 37.05
+fat_per_serving_g: 12.05
 ingredients:
   - amount: 600
     unit: g
-    item: เส้นบุกสะเด็ดน้ำ
+    item: เส้นบุกพร้อมปรุง KoRo
   - amount: 500
     unit: g
     item: เนื้อไก่
     note: เป็นเส้นบางๆ
   - amount: 300
     unit: g
-    item: ผักกาดขาวหรือบรอกโคลี
-    note: เป็นเส้นบางๆ
-  - amount: 3
-    unit: ชิ้น
+    item: บรอกโคลี หั่นบาง
+  - amount: 165
+    unit: g
     item: ไข่
-  - amount: 2
-    unit: ช้อนโต๊ะ
+  - amount: 27
+    unit: g
     item: น้ำมันที่เป็นกลาง
-  - amount: 2
-    unit: ช้อนโต๊ะ
+  - amount: 30
+    unit: g
     item: ซอสถั่วเหลือง
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 15
+    unit: g
     item: ซีอิ๊วดำ
-  - amount: 1
-    unit: ช้อนโต๊ะ
-    item: ซอสหอยนางรม
-    note: น้ำตาลต่ำ
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
-  - amount: 2
-    unit: ชิ้น
+  - amount: 15
+    unit: g
+    item: ซอสหอยนางรมทั่วไป
+  - amount: 4
+    unit: g
+    item: อิริทริทอล Foodin
+  - amount: 7
+    unit: g
     item: กระเทียม
     note: "สับละเอียด"
-  - amount: null
-    unit: ""
+  - amount: 2
+    unit: "g"
     item: พริกไทยขาว
     note: "ปรุงตามชอบ"
 translation_languages: []

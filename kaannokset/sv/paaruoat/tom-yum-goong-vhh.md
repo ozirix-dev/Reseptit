@@ -23,9 +23,9 @@ image:
   alt: Tom yum goong soppa med räkor, champinjoner, chili och färska örter
   width: 1280
   height: 853
-carbs_net_per_serving_g: 6
-carbs_total_per_serving_g: 8
-protein_per_serving_g: 28
+carbs_net_per_serving_g: 4.66
+carbs_total_per_serving_g: 7.25
+protein_per_serving_g: 28.8
 ingredients:
   - amount: 500
     unit: g
@@ -33,50 +33,48 @@ ingredients:
   - amount: 200
     unit: g
     item: ostronskivling eller champinjoner
-  - amount: 1
-    unit: l
+  - amount: 1000
+    unit: g
     item: vatten
+  - amount: 22
+    unit: g
+    item: fiskbuljongtärning, smulad
+  - amount: 40
+    unit: g
+    item: citrongräs, krossat; ta bort före servering
+  - amount: 25
+    unit: g
+    item: färsk ingefära, skivad
   - amount: 2
-    unit: msk
-    item: fiskfond
-  - amount: 2
-    unit: st
-    item: stjälk av citrongräs
-    note: lätt krossad
-  - amount: 5
-    unit: skivor
-    item: galangal
-    note: eller färsk ingefära
-  - amount: 5
-    unit: st
-    item: kaffir limeblad
-  - amount: 2
-    unit: st
+    unit: g
+    item: makrutlimeblad; ta bort före servering
+  - amount: 24
+    unit: g
     item: röd chili
     note: varmhet efter din smak
-  - amount: 2
-    unit: msk
-    item: fisksås
-  - amount: 3
-    unit: msk
+  - amount: 30
+    unit: g
+    item: Squid Brand-fisksås
+  - amount: 45
+    unit: g
     item: limejuice
   - amount: 150
     unit: g
     item: körsbärstomater
-  - amount: null
-    unit: ""
+  - amount: 12
+    unit: "g"
     item: färsk koriander
-    note: "att strö över"
 translation_languages: []
 translation_status: {}
 source_language: fi
 source_recipe: reseptit/paaruoat/tom-yum-goong-vhh.md
 translation_of: tom-yum-goong-vhh
+fat_per_serving_g: 2.38
 ---
 
 # Tom yum goong – thailändsk räksoppa
 
-Syrlig, varm och örtig räksoppa är smaksatt med citrongräs, galangal och kaffirlimeblad. Den passar som lågkolhydratmåltid.
+Syrlig, varm och örtig räksoppa är smaksatt med citrongräs, färsk ingefära och kaffirlimeblad. Den passar som lågkolhydratmåltid.
 
 ## Beskrivning
 
@@ -84,7 +82,7 @@ Limejuice tillsätts i slutet för att bevara dess fräscha smak. Du kan uteläm
 
 ## Tillagning
 
-1. Hetta upp vattnet och fiskfonden. Tillsätt krossat citrongräs, galangal, kaffirlimeblad och chili. Koka långsamt i 8 minuter.
+1. Hetta upp vattnet och lös upp den smulade fiskbuljongtärningen i det. Tillsätt citrongräs, färsk ingefära, kaffirlimeblad och chili. Sjud i 8 minuter.
 2. Tillsätt svamp och tomater. Koka i 3 minuter.
 3. Lägg i räkorna och koka i 2-3 minuter tills de blir rosa.
 4. Ta bort grytan från spisen. Smaka av med fisksås och limejuice.
@@ -92,5 +90,5 @@ Limejuice tillsätts i slutet för att bevara dess fräscha smak. Du kan uteläm
 
 ## Anteckningar
 
-- Dispensera fiskfonden enligt anvisningarna på förpackningen; fondernas salthalt varierar.
+- Beräkningen använder Finelis generiska fiskbuljongtärningspost; produkter kan skilja sig åt.
 - Näringsvärdena innehåller inte ris eller kokosmjölk och är vägledande.

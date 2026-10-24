@@ -23,20 +23,20 @@ image:
   alt: Rik Panang-kycklingcurry i kokosmjölk, kaffirlimeblad och blomkålsris
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 33
-fat_per_serving_g: 37
+carbs_net_per_serving_g: 8.79
+carbs_total_per_serving_g: 14.91
+protein_per_serving_g: 36.09
+fat_per_serving_g: 23.57
 ingredients:
   - amount: 600
     unit: g
-    item: benfritt kycklinglårkött
+    item: skinnfritt kycklinglårkött
   - amount: 400
-    unit: ml
+    unit: g
     item: fullfet kokosmjölk
-  - amount: 2
-    unit: msk
-    item: Panang currypasta
+  - amount: 30
+    unit: g
+    item: Mae Ploy Panang-currypasta
   - amount: 150
     unit: g
     item: gröna bönor
@@ -45,16 +45,15 @@ ingredients:
     unit: g
     item: osaltade jordnötter
     note: krossad
+  - amount: 2
+    unit: g
+    item: makrutlimeblad, tunt skivade
+  - amount: 15
+    unit: g
+    item: Squid Brand-fisksås
   - amount: 4
-    unit: st
-    item: kaffir limeblad
-    note: skär i tunna remsor
-  - amount: 1
-    unit: msk
-    item: fisksås
-  - amount: 1
-    unit: tsk
-    item: erytritol
+    unit: g
+    item: erytritol från Foodin
   - amount: 20
     unit: g
     item: Thai basilika

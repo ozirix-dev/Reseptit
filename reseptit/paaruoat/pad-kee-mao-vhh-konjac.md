@@ -6,39 +6,50 @@ category: paaruoka
 language: fi
 status: published
 diet_class: vhh_valjempi
-main_ingredient: [broileri, thaibasilika]
-cooking_method: [paistinpannu]
+main_ingredient: [ broileri, thaibasilika ]
+cooking_method: [ paistinpannu ]
 servings: 4
 time_total_min: 30
 difficulty: helppo
-tags: [thaimaalainen, wokki, nuudelit, tulinen, VHH]
+tags: [ thaimaalainen, wokki, nuudelit, tulinen, VHH ]
 image:
   src: paaruoat/pad-kee-mao-vhh-konjac.webp
-  alt: Tulinen pad kee mao -wokki konjaknuudeleilla, kanalla, chilillä ja thaibasilikalla
+  alt: Tulinen pad kee mao -wokki konjaknuudeleilla, kanalla, chilillä ja
+    thaibasilikalla
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 21
+carbs_net_per_serving_g: 4.53
+carbs_total_per_serving_g: 12.09
+protein_per_serving_g: 26.37
+fat_per_serving_g: 10.81
 ingredients:
-  - {amount: 600, unit: g, item: valutettuja konjaknuudeleita}
-  - {amount: 500, unit: g, item: broilerin reisilihaa, note: suikaleina}
-  - {amount: 150, unit: g, item: vihreitä papuja, note: puolitettuna}
-  - {amount: 1, unit: kpl, item: punaista paprikaa, note: suikaleina}
-  - {amount: 30, unit: g, item: thaibasilikan lehtiä}
-  - {amount: 3, unit: kpl, item: valkosipulinkynttä, note: murskattuna}
-  - {amount: 2, unit: kpl, item: punaista chiliä, note: "viipaloituna, tulisuus oman maun mukaan"}
-  - {amount: 2, unit: rkl, item: kalakastiketta}
-  - {amount: 1, unit: rkl, item: soijakastiketta}
-  - {amount: 1, unit: rkl, item: osterikastiketta, note: vähäsokerista}
-  - {amount: 1, unit: tl, item: erytritolia}
-  - {amount: 2, unit: rkl, item: neutraalia öljyä}
+  - { amount: 600, unit: g, item: KoRo-valmis konjaknuudeleita }
+  - {
+      amount: 500,
+      unit: g,
+      item: nahatonta broilerin reisilihaa,
+      note: suikaleina
+    }
+  - { amount: 150, unit: g, item: vihreitä papuja, note: puolitettuna }
+  - { amount: 120, unit: g, item: punaista paprikaa, note: suikaleina }
+  - { amount: 30, unit: g, item: thaibasilikan lehtiä }
+  - { amount: 10.5, unit: g, item: valkosipulinkynttä, note: murskattuna }
+  - {
+      amount: 24,
+      unit: g,
+      item: punaista chiliä,
+      note: "viipaloituna, tulisuus oman maun mukaan"
+    }
+  - { amount: 30, unit: g, item: Squid Brand -kalakastiketta }
+  - { amount: 15, unit: g, item: soijakastiketta }
+  - { amount: 15, unit: g, item: kaupallista osterikastiketta }
+  - { amount: 4, unit: g, item: Foodin-erytritolia }
+  - { amount: 27, unit: g, item: neutraalia öljyä }
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
 ---
 
 # VHH-pad kee mao – tuliset kananuudelit

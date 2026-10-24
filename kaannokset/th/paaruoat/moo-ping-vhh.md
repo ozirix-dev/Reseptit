@@ -25,45 +25,47 @@ image:
   alt: หมูปิ้งหมูย่าง แตงกวา และน้ำจิ้มรสเด็ด
   width: 1280
   height: 853
-carbs_net_per_serving_g: 5
-carbs_total_per_serving_g: 7
-protein_per_serving_g: 32
-fat_per_serving_g: 35
+carbs_net_per_serving_g: 2
+carbs_total_per_serving_g: 4.44
+protein_per_serving_g: 34.86
+fat_per_serving_g: 34.69
 ingredients:
   - amount: 700
     unit: g
     item: คอหมู
     note: เป็นชิ้นบาง ๆ
   - amount: 100
-    unit: ml
+    unit: g
     item: กะทิ
-  - amount: 2
-    unit: ช้อนโต๊ะ
-    item: น้ำปลา
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 30
+    unit: g
+    item: น้ำปลา Squid Brand
+  - amount: 15
+    unit: g
     item: ซอสถั่วเหลือง
-  - amount: 2
-    unit: ชิ้น
+  - amount: 7
+    unit: g
     item: กระเทียม
     note: บดขยี้
-  - amount: 2
-    unit: ช้อนโต๊ะ
+  - amount: 6
+    unit: g
     item: ก้านผักชี
     note: "สับละเอียด"
-  - amount: 0.5
-    unit: ช้อนชา
+  - amount: 2
+    unit: g
     item: พริกไทยขาวป่น
-  - amount: 1
-    unit: ช้อนชา
-    item: อิริทริทอล
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 4
+    unit: g
+    item: อิริทริทอล Foodin
+  - amount: 13.5
+    unit: g
     item: น้ำมันที่เป็นกลาง
-  - amount: null
-    unit: ""
-    item: แตงกวาและมะนาว
-    note: สำหรับการเสิร์ฟ
+  - amount: 200
+    unit: "g"
+    item: แตงกวา
+  - amount: 60
+    unit: g
+    item: มะนาวหั่นเสี้ยว
 translation_languages: []
 translation_status: {}
 source_language: fi

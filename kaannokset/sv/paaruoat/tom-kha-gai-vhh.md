@@ -23,55 +23,50 @@ image:
   alt: Tom kha gai kycklingsoppa med kokosmjölk, champinjoner, chili och limeblad
   width: 1280
   height: 853
-carbs_net_per_serving_g: 7
-carbs_total_per_serving_g: 10
-protein_per_serving_g: 31
-fat_per_serving_g: 29
+carbs_net_per_serving_g: 3.58
+carbs_total_per_serving_g: 6.85
+protein_per_serving_g: 32.52
+fat_per_serving_g: 21.37
 ingredients:
   - amount: 600
     unit: g
-    item: kycklinglårkött
+    item: skinnfritt kycklinglårkött
     note: skär i lagom stora bitar
   - amount: 400
-    unit: ml
+    unit: g
     item: fullfet kokosmjölk
   - amount: 500
-    unit: ml
-    item: kycklingbuljong
+    unit: g
+    item: utspädd kycklingbuljong
   - amount: 200
     unit: g
     item: champinjoner
     note: skivad
-  - amount: 2
-    unit: st
-    item: stjälk av citrongräs
-    note: krossas och skärs i bitar
+  - amount: 40
+    unit: g
+    item: citrongräs, krossat; ta bort före servering
   - amount: 30
     unit: g
-    item: galangal
-    note: tunt skivad; ingefära om det behövs
-  - amount: 5
-    unit: st
-    item: kaffir limeblad
-    note: rivs upp
+    item: färsk ingefära, tunt skivad
   - amount: 2
-    unit: msk
-    item: fisksås
-  - amount: 3
-    unit: msk
+    unit: g
+    item: makrutlimeblad; ta bort före servering
+  - amount: 30
+    unit: g
+    item: Squid Brand-fisksås
+  - amount: 45
+    unit: g
     item: limejuice
-  - amount: 1
-    unit: tsk
-    item: erytritol
-    note: valfritt
-  - amount: 1
-    unit: st
+  - amount: 4
+    unit: g
+    item: erytritol från Foodin
+  - amount: 12
+    unit: g
     item: röd chili
     note: skivad
-  - amount: null
-    unit: ""
+  - amount: 12
+    unit: "g"
     item: färsk koriander
-    note: för servering
 translation_languages: []
 translation_status: {}
 source_language: fi
@@ -81,7 +76,7 @@ translation_of: tom-kha-gai-vhh
 
 # lågkolhydrat tom kha gai – kokosnötskycklingsoppa
 
-Tom kha gai är en aromatisk thailändsk kycklingsoppa där kokosmjölk mjukar upp smakerna av lime, galangal och citrongräs. Denna lågkolhydrat-version serveras utan ris.
+Tom kha gai är en aromatisk thailändsk kycklingsoppa där kokosmjölk mjukar upp smakerna av lime, färsk ingefära och citrongräs. Denna lågkolhydrat-version serveras utan ris.
 
 ## Beskrivning
 
@@ -89,7 +84,7 @@ Soppans citrongräs och limeblad ger buljongen dess doft; du kan lämna dem oät
 
 ## Tillagning
 
-1. Hetta upp kycklingbuljongen i en gryta. Tillsätt citrongräs, galangal och limeblad. Sjud på låg värme i 10 minuter.
+1. Hetta upp kycklingbuljongen i en gryta. Tillsätt citrongräs, färsk ingefära och limeblad. Sjud på låg värme i 10 minuter.
 2. Tillsätt kyckling och svamp. Koka långsamt tills kycklingen är genomstekt.
 3. Häll i kokosmjölken och värm försiktigt, låt det inte koka kraftigt.
 4. Smaksätt med fisksås och, om så önskas, erytritol. Ta av grytan från spisen och tillsätt limesaften.

@@ -6,38 +6,38 @@ category: paaruoka
 language: fi
 status: published
 diet_class: vhh_valjempi
-main_ingredient: [broileri, konjaknuudelit]
-cooking_method: [paistinpannu]
+main_ingredient: [ broileri, konjaknuudelit ]
+cooking_method: [ paistinpannu ]
 servings: 4
 time_total_min: 30
 difficulty: helppo
-tags: [thaimaalainen, wokki, nuudelit, VHH]
+tags: [ thaimaalainen, wokki, nuudelit, VHH ]
 image:
   src: paaruoat/pad-see-ew-vhh-konjac.webp
   alt: Pad see ew -wokki konjaknuudeleilla, kananmunalla, kanalla ja parsakaalilla
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 22
+carbs_net_per_serving_g: 3.39
+carbs_total_per_serving_g: 10.62
+protein_per_serving_g: 37.05
+fat_per_serving_g: 12.05
 ingredients:
-  - {amount: 600, unit: g, item: valutettuja konjaknuudeleita}
-  - {amount: 500, unit: g, item: broilerin fileetä, note: ohuina suikaleina}
-  - {amount: 300, unit: g, item: kiinankaalia tai parsakaalia, note: ohuina suikaleina}
-  - {amount: 3, unit: kpl, item: kananmunaa}
-  - {amount: 2, unit: rkl, item: neutraalia öljyä}
-  - {amount: 2, unit: rkl, item: soijakastiketta}
-  - {amount: 1, unit: rkl, item: tummaa soijakastiketta}
-  - {amount: 1, unit: rkl, item: osterikastiketta, note: vähäsokerista}
-  - {amount: 1, unit: tl, item: erytritolia}
-  - {amount: 2, unit: kpl, item: valkosipulinkynttä, note: hienonnettuna}
-  - {amount: null, unit: "", item: valkopippuria, note: maun mukaan}
+  - { amount: 600, unit: g, item: KoRo-valmis konjaknuudeleita }
+  - { amount: 500, unit: g, item: broilerin fileetä, note: ohuina suikaleina }
+  - { amount: 300, unit: g, item: "parsakaalia, ohuina suikaleina" }
+  - { amount: 165, unit: g, item: kananmunaa }
+  - { amount: 27, unit: g, item: neutraalia öljyä }
+  - { amount: 30, unit: g, item: soijakastiketta }
+  - { amount: 15, unit: g, item: tummaa soijakastiketta }
+  - { amount: 15, unit: g, item: kaupallista osterikastiketta }
+  - { amount: 4, unit: g, item: Foodin-erytritolia }
+  - { amount: 7, unit: g, item: valkosipulinkynttä, note: hienonnettuna }
+  - { amount: 2, unit: "g", item: valkopippuria, note: maun mukaan }
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
 ---
 
 # VHH-pad see ew kanalla ja konjaknuudeleilla

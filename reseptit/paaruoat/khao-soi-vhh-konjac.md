@@ -14,24 +14,25 @@ difficulty: keskitaso
 tags: [ thaimaalainen, pohjois-thai, curry, VHH ]
 image:
   src: paaruoat/khao-soi-vhh-konjac-v2.webp
-  alt: Khao soi -currykeitto konjaknuudeleilla, luuttomilla broilerinpaloilla, tuoreella salottisipulilla ja pikkelöidyllä sinappikaalilla
+  alt: Khao soi -currykeitto konjaknuudeleilla, luuttomilla broilerinpaloilla,
+    tuoreella salottisipulilla ja pikkelöidyllä sinappikaalilla
   width: 1280
   height: 853
-carbs_net_per_serving_g: 6.35
-carbs_total_per_serving_g: 11.69
+carbs_net_per_serving_g: 5.35
+carbs_total_per_serving_g: 10.69
 protein_per_serving_g: 32.08
 fat_per_serving_g: 21.05
 ingredients:
   - { amount: 600, unit: g, item: broilerin reisipaloja, note: luuttomina }
   - { amount: 400, unit: g, item: täysrasvaista kookosmaitoa }
-  - { amount: 30, unit: g, item: "Mae Ploy -punaista currytahnaa"}
+  - { amount: 30, unit: g, item: "Mae Ploy -punaista currytahnaa" }
   - { amount: 2, unit: g, item: curryjauhetta }
   - { amount: 1.5, unit: g, item: kurkumaa }
   - { amount: 500, unit: g, item: kanalientä }
-  - { amount: 400, unit: g, item: "KoRo-kypsiä konjacnuudeleita"}
-  - { amount: 30, unit: g, item: "Squid Brand -kalakastiketta"}
+  - { amount: 400, unit: g, item: "KoRo-kypsiä konjacnuudeleita" }
+  - { amount: 30, unit: g, item: "Squid Brand -kalakastiketta" }
   - { amount: 15, unit: g, item: limettimehua }
-  - { amount: 4, unit: g, item: "Foodin-erytritolia"}
+  - { amount: 4, unit: g, item: "Foodin-erytritolia" }
   - { amount: 100, unit: g, item: pikkelöityä sinappikaalia, note: huuhdeltuna }
   - { amount: 50, unit: g, item: salottisipulia, note: viipaloituna }
 translation_languages:

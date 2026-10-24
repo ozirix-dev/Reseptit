@@ -6,38 +6,39 @@ category: paaruoka
 language: fi
 status: published
 diet_class: vhh_tiukka
-main_ingredient: [broileri, kookosmaito]
-cooking_method: [liesi]
+main_ingredient: [ broileri, kookosmaito ]
+cooking_method: [ liesi ]
 servings: 4
 time_total_min: 35
 difficulty: helppo
-tags: [thaimaalainen, curry, VHH]
+tags: [ thaimaalainen, curry, VHH ]
 image:
   src: paaruoat/thai-vihrea-curry-kanalla-vhh.webp
-  alt: Vihreä thaimaalainen kanacurry kookosmaidossa, thaibasilikalla ja kukkakaaliriisillä
+  alt: Vihreä thaimaalainen kanacurry kookosmaidossa, thaibasilikalla ja
+    kukkakaaliriisillä
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9
-carbs_total_per_serving_g: 13
-protein_per_serving_g: 32
-fat_per_serving_g: 35
+carbs_net_per_serving_g: 9.01
+carbs_total_per_serving_g: 15.82
+protein_per_serving_g: 34.97
+fat_per_serving_g: 23.97
 ingredients:
-  - {amount: 600, unit: g, item: luutonta broilerin reisilihaa}
-  - {amount: 400, unit: ml, item: täysrasvaista kookosmaitoa}
-  - {amount: 2, unit: rkl, item: vihreää currytahnaa}
-  - {amount: 200, unit: g, item: kesäkurpitsaa, note: lohkottuna}
-  - {amount: 150, unit: g, item: munakoisoa, note: lohkottuna}
-  - {amount: 600, unit: g, item: kukkakaaliriisiä, note: lisukkeeksi}
-  - {amount: 2, unit: rkl, item: kalakastiketta}
-  - {amount: 1, unit: tl, item: erytritolia}
-  - {amount: 4, unit: kpl, item: kaffirlimetinlehteä}
-  - {amount: 20, unit: g, item: thaibasilikaa}
-  - {amount: 1, unit: rkl, item: neutraalia öljyä}
+  - { amount: 600, unit: g, item: nahatonta broilerin reisilihaa }
+  - { amount: 400, unit: g, item: täysrasvaista kookosmaitoa }
+  - { amount: 30, unit: g, item: Mae Ploy vihreää currytahnaa }
+  - { amount: 200, unit: g, item: kesäkurpitsaa, note: lohkottuna }
+  - { amount: 150, unit: g, item: munakoisoa, note: lohkottuna }
+  - { amount: 600, unit: g, item: kukkakaaliriisiä, note: lisukkeeksi }
+  - { amount: 30, unit: g, item: Squid Brand -kalakastiketta }
+  - { amount: 4, unit: g, item: Foodin-erytritolia }
+  - { amount: 2, unit: g, item: kaffirlimetinlehteä }
+  - { amount: 20, unit: g, item: thaibasilikaa }
+  - { amount: 13.5, unit: g, item: neutraalia öljyä }
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
 ---
 
 # Thaimaalainen vihreä kanacurry kukkakaaliriisillä

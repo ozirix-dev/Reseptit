@@ -24,8 +24,8 @@ image:
   alt: Bräserat fläsk i Khao kha moo-stil, ägg, gröna grönsaker och blomkålsris
   width: 1280
   height: 853
-carbs_net_per_serving_g: 9.93
-carbs_total_per_serving_g: 16.87
+carbs_net_per_serving_g: 6.93
+carbs_total_per_serving_g: 13.87
 protein_per_serving_g: 49.8
 fat_per_serving_g: 38.91
 ingredients:
