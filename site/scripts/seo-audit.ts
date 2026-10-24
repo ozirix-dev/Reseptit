@@ -3,13 +3,13 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { isDeepStrictEqual } from "node:util";
 import { localeIndexes } from "../src/content/route-data";
+import { recipeUi } from "../src/features/recipes/recipe-i18n";
 import type { RecipeEntry, RecipeLocale } from "../src/types/content";
 
 export const siteBase = "https://ozirix-dev.github.io/Reseptit";
 export interface SeoFinding { route: string; code: string; detail: string }
 export interface ExpectedPage { route: string; locale: RecipeLocale; title: string; description: string; h1: string; alternates: Record<string, string>; recipe?: RecipeEntry }
 const names = { fi: "Reseptit", en: "Recipes", sv: "Recept", th: "สูตรอาหาร" };
-const descriptions = { fi: "Selkeitä reseptejä arkeen.", en: "Straightforward recipes for everyday cooking.", sv: "Enkla recept för vardagen.", th: "สูตรอาหารเรียบง่ายสำหรับทุกวัน" };
 export const decodeHtml = (value: string) => value.replace(/&(?:amp|quot|apos|lt|gt|#\d+|#x[0-9a-f]+);/gi, (entity) => {
   const named: Record<string, string> = { "&amp;": "&", "&quot;": '"', "&apos;": "'", "&lt;": "<", "&gt;": ">" };
   return named[entity] ?? String.fromCodePoint(parseInt(entity.slice(entity[2] === "x" ? 3 : 2, -1), entity[2] === "x" ? 16 : 10));
@@ -34,8 +34,8 @@ export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {
   };
   const indexes = locales.map((locale) => ({ locale, routePath: localeIndexes[locale] }));
   return [
-    ...locales.map((locale) => ({ route: localeIndexes[locale], locale, h1: names[locale], title: `${names[locale]} | Ozirix`, description: descriptions[locale], alternates: alternateMap(indexes) })),
-    ...recipes.map((recipe) => ({ route: recipe.routePath, locale: recipe.locale, h1: recipe.title, title: `${recipe.title} | ${names[recipe.locale]}`, description: recipe.description || descriptions[recipe.locale], alternates: alternateMap(recipes.filter((r) => r.recipeId === recipe.recipeId)), recipe })),
+    ...locales.map((locale) => ({ route: localeIndexes[locale], locale, h1: names[locale], title: `${names[locale]} | Ozirix`, description: recipeUi[locale].intro, alternates: alternateMap(indexes) })),
+    ...recipes.map((recipe) => ({ route: recipe.routePath, locale: recipe.locale, h1: recipe.title, title: `${recipe.title} | ${names[recipe.locale]}`, description: recipe.description || recipeUi[recipe.locale].intro, alternates: alternateMap(recipes.filter((r) => r.recipeId === recipe.recipeId)), recipe })),
   ];
 }
 

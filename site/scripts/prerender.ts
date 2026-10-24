@@ -7,6 +7,7 @@ import { renderToString } from "react-dom/server";
 import { RouterProvider } from "react-router-dom";
 import { createServer } from "vite";
 import { siteContent } from "../src/generated/content.generated";
+import { recipeUi } from "../src/features/recipes/recipe-i18n";
 import { recipeJsonLd } from "../src/features/recipes/schema";
 import type { RecipeLocale } from "../src/types/content";
 
@@ -16,11 +17,6 @@ const baseUrl = "https://ozirix-dev.github.io/Reseptit";
 const localeBase: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" };
 const indexNames: Record<RecipeLocale, string> = { fi: "Reseptit", en: "Recipes", sv: "Recept", th: "สูตรอาหาร" };
 const openGraphLocale: Record<RecipeLocale, string> = { fi: "fi_FI", en: "en_GB", sv: "sv_SE", th: "th_TH" };
-const indexDescriptions: Record<RecipeLocale, string> = {
-  fi: "Selkeitä reseptejä arkeen.", en: "Straightforward recipes for everyday cooking.",
-  sv: "Enkla recept för vardagen.", th: "สูตรอาหารเรียบง่ายสำหรับทุกวัน",
-};
-
 function escapeHtml(value: string): string {
   return value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 }
@@ -37,7 +33,7 @@ function routeMetadata(route: string) {
   if (!recipe && indexLocale !== "fi" && (!indexLocale || !siteContent.recipes.some((item) => item.locale === indexLocale))) return null;
   const locale = recipe?.locale ?? indexLocale ?? "fi";
   const title = recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
-  const description = recipe?.description || indexDescriptions[locale];
+  const description = recipe?.description || recipeUi[locale].intro;
   const url = `${baseUrl}${route}`;
   const translations = recipe ? siteContent.recipes.filter((item) => item.recipeId === recipe.recipeId) : [];
   const publishedLocales = recipe

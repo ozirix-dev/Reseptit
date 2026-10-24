@@ -48,6 +48,17 @@ test("all static index descriptions use their locale text before JavaScript", as
   }
 });
 
+test("localized hero copy is prerendered above the recipe filters", async () => {
+  for (const [locale, route] of [["fi", ""], ["en", "en/recipes"], ["sv", "sv/recept"], ["th", "th/recipes"]] as const) {
+    const html = await readFile(path.join(dist, route, "index.html"), "utf8");
+    const root = html.slice(html.indexOf('<div id="root">'));
+    const descriptionIndex = root.indexOf(`<p class="page-intro__description">${recipeUi[locale].intro}</p>`);
+    const filtersIndex = root.indexOf('class="recipe-filters recipe-filters--placeholder"');
+    assert.ok(descriptionIndex >= 0, `${locale}: localized hero description is visible before JavaScript`);
+    assert.ok(filtersIndex > descriptionIndex, `${locale}: recipe filters follow the hero description`);
+  }
+});
+
 test("recipe index is prerendered and links only published languages", async () => {
   const html = await readFile(path.join(dist, "index.html"), "utf8");
   assert.match(html, /<h1>Reseptit<\/h1>/);
