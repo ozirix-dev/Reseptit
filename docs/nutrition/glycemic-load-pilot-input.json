@@ -5557,6 +5557,1555 @@
           "preparationKey": "category-mean"
         }
       ]
+    },
+    {
+      "recipeId": "maksalaatikko-kukkakaalilla",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "naudan maksaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-786-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kukkakaalia",
+          "grams": 500,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "1 keskikokoinen sipuli × Fineli #335 medium 55 g"
+        },
+        {
+          "name": "voita",
+          "grams": 28,
+          "fineliRecordId": "fineli-500-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "2 rkl × Fineli measure 14 g/rkl"
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 150,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "150 ml × Fineli #631 100 g/dl",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "kananmuna",
+          "grams": 55,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "meiramia 1 tl",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Fineli dried marjoram teaspoon quantity conservatively bounded; estimated available carbohydrate <1 g/serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.15,
+          "negligibleAssumption": "Fineli dried marjoram teaspoon quantity conservatively bounded; estimated available carbohydrate <1 g/serving."
+        },
+        {
+          "name": "suolaa ja maustepippuria maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Standard seasoning assumption; conservatively below 1 g available carbohydrate/serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.2,
+          "negligibleAssumption": "Standard seasoning assumption; conservatively below 1 g available carbohydrate/serving."
+        },
+        {
+          "name": "puolukoita",
+          "grams": 100,
+          "fineliRecordId": "fineli-440-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "100 g recipe-listed for serving",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Published Fruits and fruit products category mean category/analogue; match limitations disclosed centrally."
+        }
+      ]
+    },
+    {
+      "recipeId": "paistettu-maksa-pekonilla",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "naudan maksaa",
+          "grams": 500,
+          "fineliRecordId": "fineli-786-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "pekonia",
+          "grams": 150,
+          "fineliRecordId": "fineli-707-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "1 medium onion × Fineli #335 55 g"
+        },
+        {
+          "name": "voita",
+          "grams": 28,
+          "fineliRecordId": "fineli-500-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "2 rkl × 14 g/rkl"
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 100,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "1 dl × Fineli #631 100 g/dl",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "suolaa ja mustapippuria",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Combined salt and pepper assumed culinary trace; estimated available carbohydrate <1 g/serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.2,
+          "negligibleAssumption": "Combined salt and pepper assumed culinary trace; estimated available carbohydrate <1 g/serving."
+        }
+      ]
+    },
+    {
+      "recipeId": "khao-man-gai-vhh",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "broilerin reisilihaa",
+          "grams": 700,
+          "fineliRecordId": "afcd-F002806-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kukkakaaliriisiä",
+          "grams": 700,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "vettä",
+          "grams": 1000,
+          "fineliRecordId": "fineli-922-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kanalientä tai fondia",
+          "grams": 15,
+          "fineliRecordId": "fineli-30315-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "15 g recipe-listed; stock used as prepared Fineli chicken broth"
+        },
+        {
+          "name": "kurkkua",
+          "grams": 200,
+          "fineliRecordId": "fineli-346-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "tuoretta inkivääriä",
+          "grams": 30,
+          "fineliRecordId": "afcd-F004213-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "Healthy Boy -soijapaputahnaa",
+          "grams": 30,
+          "fineliRecordId": "healthy-boy-soybean-paste-2026-10-24",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "massEvidence": "30 g branded paste per recipe; broad legume GI proxy",
+          "foodKey": "legume",
+          "preparationKey": "legume-category",
+          "giMatchEvidence": "Published Legumes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "Squid Brand -kalakastiketta",
+          "grams": 15,
+          "fineliRecordId": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "limettimehua",
+          "grams": 15,
+          "fineliRecordId": "afcd-F004729-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "valkosipulia",
+          "grams": 3.5,
+          "fineliRecordId": "afcd-F004193-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "tuoretta korianteria",
+          "grams": 5,
+          "fineliRecordId": "afcd-F003192-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        }
+      ]
+    },
+    {
+      "recipeId": "keltainen-kanacurry-vhh",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "broilerin reisilihaa",
+          "grams": 600,
+          "fineliRecordId": "afcd-F002806-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "giRecordId": "coconut-milk-porridge-gi-31",
+          "massEvidence": "400 ml at documented Fineli #29014 100 g/dl",
+          "foodKey": "coconut-milk",
+          "preparationKey": "rice-porridge-with-coconut-milk",
+          "giMatchEvidence": "Published Coconut-milk porridge category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "Mae Ploy -keltaista currytahnaa",
+          "grams": 30,
+          "fineliRecordId": "mae-ploy-yellow-curry-paste-2026-10-24",
+          "giRecordId": "asian-regional-category-mean-gi-60",
+          "massEvidence": "30 g branded curry paste; broad Asian-food category proxy, low confidence",
+          "foodKey": "curry-paste",
+          "preparationKey": "asian-regional-food-category",
+          "giMatchEvidence": "Published Asian regional foods, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "kukkakaalia",
+          "grams": 400,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "sipulia",
+          "grams": 70,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 70 g"
+        },
+        {
+          "name": "Squid Brand -kalakastiketta",
+          "grams": 15,
+          "fineliRecordId": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kurkumaa",
+          "grams": 1.5,
+          "fineliRecordId": "afcd-F009335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "Foodin-erytritolia",
+          "grams": 4,
+          "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kookosöljyä",
+          "grams": 10,
+          "fineliRecordId": "fineli-541-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "tuoretta korianteria",
+          "grams": 5,
+          "fineliRecordId": "afcd-F003192-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        }
+      ]
+    },
+    {
+      "recipeId": "kesakurpitsalasagne-vhh",
+      "servings": 6,
+      "ingredients": [
+        {
+          "name": "kesäkurpitsaa",
+          "grams": 700,
+          "fineliRecordId": "fineli-389-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "naudan jauhelihaa",
+          "grams": 500,
+          "fineliRecordId": "fineli-11562-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw",
+          "giMatchEvidence": "Published Whole raw tomato category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "2 dl × Fineli #631 100 g/dl",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "juustoraastetta",
+          "grams": 150,
+          "fineliRecordId": "fineli-642-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "sipulia",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "1 keskikokoinen sipuli × Fineli #335 55 g"
+        },
+        {
+          "name": "suolaa",
+          "grams": 6.5,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "fineli-11177-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "oreganoa",
+          "grams": 1,
+          "fineliRecordId": "fineli-11191-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        }
+      ]
+    },
+    {
+      "recipeId": "pad-thai-vhh-konjac",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "KoRo-valmis konjaknuudeleita",
+          "grams": 400,
+          "fineliRecordId": "koro-konjac-noodles-prepared-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kuorittuja katkarapuja",
+          "grams": 400,
+          "fineliRecordId": "afcd-F007422-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kananmunaa",
+          "grams": 165,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kiinteää tofua",
+          "grams": 150,
+          "fineliRecordId": "afcd-F009176-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "mungpavun ituja",
+          "grams": 150,
+          "fineliRecordId": "fineli-384-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "tamarinditahnaa",
+          "grams": 30,
+          "fineliRecordId": "afcd-F009081-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "AFCD pure tamarind paste; broad fruit-product proxy, low confidence",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Published Fruits and fruit products category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "Squid Brand -kalakastiketta",
+          "grams": 30,
+          "fineliRecordId": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "limettimehua",
+          "grams": 15,
+          "fineliRecordId": "afcd-F004729-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "Foodin-erytritolia",
+          "grams": 4,
+          "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "maapähkinöitä",
+          "grams": 30,
+          "fineliRecordId": "fineli-378-2026-10-24",
+          "giRecordId": "nuts-category-mean-gi-22",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean",
+          "giMatchEvidence": "Published Nuts, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "neutraalia öljyä",
+          "grams": 27,
+          "fineliRecordId": "fineli-541-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "tuoretta korianteria",
+          "grams": 12,
+          "fineliRecordId": "afcd-F003192-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "limelohkoja",
+          "grams": 60,
+          "fineliRecordId": "afcd-F005199-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        }
+      ]
+    },
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "maitorahkaa",
+          "grams": 250,
+          "fineliRecordId": "fineli-622-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "turkkilaista jogurttia",
+          "grams": 100,
+          "fineliRecordId": "fineli-32201-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "mansikoita",
+          "grams": 100,
+          "fineliRecordId": "fineli-447-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Published Fruits and fruit products category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "mustikoita",
+          "grams": 50,
+          "fineliRecordId": "fineli-442-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Published Fruits and fruit products category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "hasselpähkinöitä",
+          "grams": 20,
+          "fineliRecordId": "fineli-375-2026-10-24",
+          "giRecordId": "nuts-category-mean-gi-22",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean",
+          "giMatchEvidence": "Published Nuts, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "sitruunankuorta 1 tl",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Fineli lemon carbohydrate at a conservative 5 g zest upper bound is under 1 g per serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.03,
+          "negligibleAssumption": "Fineli lemon carbohydrate at a conservative 5 g zest upper bound is under 1 g per serving."
+        },
+        {
+          "name": "makeutusainetta maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Sweetener type and amount are unspecified; carbohydrate content cannot be determined."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-lohikeitto-kukkakaalilla",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "lohifileetä",
+          "grams": 500,
+          "fineliRecordId": "fineli-34255-search-snapshot-2026-10-22",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kukkakaalia",
+          "grams": 600,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "purjoa",
+          "grams": 80,
+          "fineliRecordId": "fineli-337-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "sipulia",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "1 medium onion × Fineli #335 55 g"
+        },
+        {
+          "name": "vettä",
+          "grams": 800,
+          "fineliRecordId": "fineli-922-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kalafondia",
+          "grams": 15,
+          "fineliRecordId": "fineli-75-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "2 dl × Fineli #631 100 g/dl",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "voita",
+          "grams": 10,
+          "fineliRecordId": "fineli-500-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "mustapippuria",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Eight whole peppercorns assumed trace; available carbohydrate <1 g/serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.05,
+          "negligibleAssumption": "Eight whole peppercorns assumed trace; available carbohydrate <1 g/serving."
+        },
+        {
+          "name": "tilliä",
+          "grams": 10,
+          "fineliRecordId": "fineli-369-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "suolaa",
+          "grams": 3,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        }
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-tortilla-espanola-aamupalaksi",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "kananmunaa",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "perunaa",
+          "grams": 60,
+          "fineliRecordId": "fineli-205-2026-10-24",
+          "giRecordId": "potato-boiled-tortilla-analogue-gi-66",
+          "massEvidence": "1 medium potato × Fineli #205 60 g",
+          "foodKey": "potato",
+          "preparationKey": "boiled-unspecified",
+          "giMatchEvidence": "Published Unspecified potato, boiled category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "sipulia",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": "onion-literature-analogue-gi-15",
+          "massEvidence": "1 medium onion × Fineli #335 55 g",
+          "foodKey": "onion",
+          "preparationKey": "cooked",
+          "giMatchEvidence": "Published onion analogue; cooked ingredient match is approximate and disclosed centrally."
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 13.5,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": 13.5,
+          "fineliRecordId": "fineli-541-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Standard salt seasoning assumption; carbohydrate below 1 g/serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.2,
+          "negligibleAssumption": "Standard salt seasoning assumption; carbohydrate below 1 g/serving."
+        }
+      ]
+    },
+    {
+      "recipeId": "kana-fajita-pelti",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "broilerin rintafileetä",
+          "grams": 500,
+          "fineliRecordId": "fineli-11565-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "punaista paprikaa",
+          "grams": 340,
+          "fineliRecordId": "fineli-386-2026-10-24",
+          "giRecordId": "red-pepper-literature-analogue-gi-40",
+          "massEvidence": "2 medium peppers × Fineli #386 170 g each",
+          "foodKey": "red-pepper",
+          "preparationKey": "cooked-in-recipe",
+          "giMatchEvidence": "Published Pepper, generic vegetable table entry category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "punasipulia",
+          "grams": 55,
+          "fineliRecordId": "fineli-34234-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "1 medium onion × Fineli #34234 55 g"
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 27,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "juustokuminaa ja savupaprikaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "One teaspoon each; spice carbohydrate conservatively below 1 g/serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.2,
+          "negligibleAssumption": "One teaspoon each; spice carbohydrate conservatively below 1 g/serving."
+        },
+        {
+          "name": "avokadoa",
+          "grams": 120,
+          "fineliRecordId": "fineli-11057-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "1 medium avocado × Fineli edible mass 120 g"
+        },
+        {
+          "name": "kreikkalaista jogurttia",
+          "grams": 100,
+          "fineliRecordId": "fineli-34611-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "limetin mehua",
+          "grams": 15,
+          "fineliRecordId": "afcd-F004729-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "suolaa ja chilihiutaleita maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Trace seasoning standard assumption; available carbohydrate below 1 g/serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.3,
+          "negligibleAssumption": "Trace seasoning standard assumption; available carbohydrate below 1 g/serving."
+        }
+      ]
+    },
+    {
+      "recipeId": "italian-pata",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "naudan jauhelihaa 17 %",
+          "grams": 500,
+          "fineliRecordId": "fineli-11562-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw",
+          "giMatchEvidence": "Published Whole raw tomato category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "kuivattua oreganoa",
+          "grams": 2,
+          "fineliRecordId": "fineli-11191-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "suolaa",
+          "grams": 5,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 1,
+          "fineliRecordId": "fineli-11177-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "valkosipulia",
+          "grams": 3.5,
+          "fineliRecordId": "fineli-393-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kesäkurpitsaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-389-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "punaista paprikaa",
+          "grams": 120,
+          "fineliRecordId": "fineli-386-2026-10-24",
+          "giRecordId": "red-pepper-literature-analogue-gi-40",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "red-pepper",
+          "preparationKey": "cooked-in-recipe",
+          "giMatchEvidence": "Published Pepper, generic vegetable table entry category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "mozzarellaraastetta",
+          "grams": 150,
+          "fineliRecordId": "fineli-29239-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 12,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        }
+      ]
+    },
+    {
+      "recipeId": "kukkakaaligratiini-pekonilla",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kukkakaalia",
+          "grams": 700,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "pekonia",
+          "grams": 150,
+          "fineliRecordId": "fineli-707-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "2 dl × Fineli #631 100 g/dl",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "juustoraastetta",
+          "grams": 100,
+          "fineliRecordId": "fineli-642-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "mustapippuria ja suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Half teaspoon each; conservative available carbohydrate <1 g/serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.2,
+          "negligibleAssumption": "Half teaspoon each; conservative available carbohydrate <1 g/serving."
+        }
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-menemen-fetalla",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "kananmunaa",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "tomaattia",
+          "grams": 125,
+          "fineliRecordId": "fineli-352-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "1 medium tomato × Fineli #352 125 g",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw",
+          "giMatchEvidence": "Published Whole raw tomato category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "vihreää paprikaa",
+          "grams": 170,
+          "fineliRecordId": "fineli-387-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "1 medium green pepper × Fineli #387 170 g",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "fetajuustoa",
+          "grams": 150,
+          "fineliRecordId": "fineli-11211-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": 13.5,
+          "fineliRecordId": "fineli-541-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Standard salt seasoning assumption; available carbohydrate below 1 g/serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.2,
+          "negligibleAssumption": "Standard salt seasoning assumption; available carbohydrate below 1 g/serving."
+        }
+      ]
+    },
+    {
+      "recipeId": "khao-soi-vhh-konjac",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "broilerin reisipaloja",
+          "grams": 600,
+          "fineliRecordId": "afcd-F002806-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "giRecordId": "coconut-milk-porridge-gi-31",
+          "massEvidence": "400 ml at Fineli #29014 100 g/dl",
+          "foodKey": "coconut-milk",
+          "preparationKey": "rice-porridge-with-coconut-milk",
+          "giMatchEvidence": "Published Coconut-milk porridge category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "Mae Ploy -punaista currytahnaa",
+          "grams": 30,
+          "fineliRecordId": "mae-ploy-red-curry-paste-2026-10-24",
+          "giRecordId": "asian-regional-category-mean-gi-60",
+          "massEvidence": "30 g branded paste; broad Asian-food category proxy, low confidence",
+          "foodKey": "curry-paste",
+          "preparationKey": "asian-regional-food-category",
+          "giMatchEvidence": "Published Asian regional foods, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "curryjauhetta",
+          "grams": 2,
+          "fineliRecordId": "afcd-F003337-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kurkumaa",
+          "grams": 1.5,
+          "fineliRecordId": "afcd-F009335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kanalientä",
+          "grams": 500,
+          "fineliRecordId": "fineli-30315-2026-10-24",
+          "giRecordId": "soups-category-mean-gi-49",
+          "massEvidence": "500 ml at Fineli #30315 broth; soup category proxy",
+          "foodKey": "soup",
+          "preparationKey": "soup-category",
+          "giMatchEvidence": "Published Soups, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "KoRo-konjacnuudeleita",
+          "grams": 400,
+          "fineliRecordId": "koro-konjac-noodles-prepared-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "Squid Brand -kalakastiketta",
+          "grams": 30,
+          "fineliRecordId": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "limettimehua",
+          "grams": 15,
+          "fineliRecordId": "afcd-F004729-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "Foodin-erytritolia",
+          "grams": 4,
+          "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "pikkelöityä sinappikaalia",
+          "grams": 100,
+          "fineliRecordId": "fineli-359-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Chinese cabbage is a low-carb composition proxy for unbranded pickled mustard greens; 100 g total"
+        },
+        {
+          "name": "salottisipulia",
+          "grams": 50,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Fineli onion proxy; recipe-listed 50 g"
+        }
+      ]
+    },
+    {
+      "recipeId": "broileri-kukkakaaligratiini",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "broilerin paistileikettä",
+          "grams": 500,
+          "fineliRecordId": "afcd-F002806-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kukkakaalia",
+          "grams": 600,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "2 dl × Fineli #631 100 g/dl",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "juustoraastetta",
+          "grams": 150,
+          "fineliRecordId": "fineli-642-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "suolaa",
+          "grams": 6.5,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "fineli-11177-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "valkosipulijauhetta 1 tl",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "One teaspoon garlic powder assumed trace; conservative available carbohydrate <1 g/serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.1,
+          "negligibleAssumption": "One teaspoon garlic powder assumed trace; conservative available carbohydrate <1 g/serving."
+        }
+      ]
+    },
+    {
+      "recipeId": "som-tam-vhh-kurkkuna",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kurkkua",
+          "grams": 500,
+          "fineliRecordId": "fineli-346-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "kirsikkatomaatteja",
+          "grams": 150,
+          "fineliRecordId": "fineli-352-2026-10-24",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Recipe-listed 150 g; tomato composition proxy",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw",
+          "giMatchEvidence": "Published Whole raw tomato category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "vihreitä papuja",
+          "grams": 100,
+          "fineliRecordId": "fineli-29022-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetables",
+          "preparationKey": "cooked",
+          "giMatchEvidence": "Broad vegetable category mean; individual green bean value and preparation not measured."
+        },
+        {
+          "name": "maapähkinöitä",
+          "grams": 30,
+          "fineliRecordId": "fineli-378-2026-10-24",
+          "giRecordId": "nuts-category-mean-gi-22",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean",
+          "giMatchEvidence": "Published Nuts, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "valkosipulia",
+          "grams": 3.5,
+          "fineliRecordId": "afcd-F004193-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "punaista chiliä",
+          "grams": 5,
+          "fineliRecordId": "afcd-F002901-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "limettimehua",
+          "grams": 30,
+          "fineliRecordId": "afcd-F004729-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "Squid Brand -kalakastiketta",
+          "grams": 15,
+          "fineliRecordId": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "Foodin-erytritolia",
+          "grams": 4,
+          "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        }
+      ]
+    },
+    {
+      "recipeId": "kanakeitto-pinaatti-sitruuna",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "broilerin rintafileetä",
+          "grams": 400,
+          "fineliRecordId": "fineli-11565-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kanalientä",
+          "grams": 1000,
+          "fineliRecordId": "fineli-30315-2026-10-24",
+          "giRecordId": "soups-category-mean-gi-49",
+          "massEvidence": "1 l × Fineli #30315 broth; soup-category proxy",
+          "foodKey": "soup",
+          "preparationKey": "soup-category",
+          "giMatchEvidence": "Published Soups, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "200 ml at Fineli 100 g/dl",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "tuoretta pinaattia",
+          "grams": 150,
+          "fineliRecordId": "afcd-F008761-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kesäkurpitsaa",
+          "grams": 150,
+          "fineliRecordId": "fineli-389-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "purjoa",
+          "grams": 120,
+          "fineliRecordId": "fineli-337-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "1 small leek × Fineli #337 120 g",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "voita",
+          "grams": 14,
+          "fineliRecordId": "fineli-500-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "sitruunaa",
+          "grams": 120,
+          "fineliRecordId": "fineli-28925-2026-10-24",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "1 medium lemon × Fineli #28925 120 g with peel",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Published Fruits and fruit products category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "suolaa ja mustapippuria",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Standard trace seasoning assumption; available carbohydrate <1 g/serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.2,
+          "negligibleAssumption": "Standard trace seasoning assumption; available carbohydrate <1 g/serving."
+        }
+      ]
+    },
+    {
+      "recipeId": "pad-kra-pao-vhh",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "porsaan jauhelihaa",
+          "grams": 600,
+          "fineliRecordId": "fineli-28946-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kukkakaaliriisiä",
+          "grams": 600,
+          "fineliRecordId": "fineli-322-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "kananmunaa",
+          "grams": 220,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "thaibasilikan lehtiä",
+          "grams": 30,
+          "fineliRecordId": "afcd-F000396-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "valkosipulia",
+          "grams": 10.5,
+          "fineliRecordId": "afcd-F004193-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "punaista chiliä",
+          "grams": 24,
+          "fineliRecordId": "afcd-F002901-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "Squid Brand -kalakastiketta",
+          "grams": 30,
+          "fineliRecordId": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "suolatonta soijakastiketta",
+          "grams": 15,
+          "fineliRecordId": "fineli-31-2026-10-24",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "massEvidence": "Soy-sauce carbohydrate mapped to broad legume-category proxy, low confidence",
+          "foodKey": "legume",
+          "preparationKey": "legume-category",
+          "giMatchEvidence": "Published Legumes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "Foodin-erytritolia",
+          "grams": 4,
+          "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "neutraalia öljyä",
+          "grams": 27,
+          "fineliRecordId": "fineli-541-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        }
+      ]
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-maakouda",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "perunaa",
+          "grams": 60,
+          "fineliRecordId": "fineli-205-2026-10-24",
+          "giRecordId": "potatoes-category-mean-gi-71",
+          "massEvidence": "1 medium potato × Fineli #205 60 g",
+          "foodKey": "potatoes-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Published Potatoes and potato products category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "kananmunaa",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "persiljaa",
+          "grams": 7,
+          "fineliRecordId": "fineli-333-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "juustokuminaa 1 tl",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "One teaspoon ground cumin; conservative available carbohydrate <1 g/serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.1,
+          "negligibleAssumption": "One teaspoon ground cumin; conservative available carbohydrate <1 g/serving."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": 13.5,
+          "fineliRecordId": "fineli-541-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Standard salt seasoning assumption; available carbohydrate below 1 g/serving.",
+          "estimatedAvailableCarbohydratePerServingG": 0.2,
+          "negligibleAssumption": "Standard salt seasoning assumption; available carbohydrate below 1 g/serving."
+        }
+      ]
+    },
+    {
+      "recipeId": "kermainen-lohipata",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "lohifileetä",
+          "grams": 600,
+          "fineliRecordId": "fineli-34255-search-snapshot-2026-10-22",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "keltasipulia",
+          "grams": 70,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "valkosipulia",
+          "grams": 7,
+          "fineliRecordId": "fineli-393-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "maustamatonta tuorejuustoa",
+          "grams": 200,
+          "fineliRecordId": "fineli-11571-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "name": "voita",
+          "grams": 14,
+          "fineliRecordId": "fineli-500-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "sitruunamehua",
+          "grams": 5,
+          "fineliRecordId": "fineli-437-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "sinappia",
+          "grams": 5,
+          "fineliRecordId": "fineli-28-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "suolaa",
+          "grams": 5,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 1,
+          "fineliRecordId": "fineli-11177-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "kuivattua tilliä",
+          "grams": 1,
+          "fineliRecordId": "fineli-11191-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+        },
+        {
+          "name": "pinaattia",
+          "grams": 150,
+          "fineliRecordId": "fineli-33456-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        }
+      ]
     }
   ],
   "selectionNotes": {
@@ -5617,6 +7166,29 @@
       "keto-mutakakku",
       "keto-suklaakeksit",
       "vhh-mokkapalat"
+    ],
+    "fourthBatch": "Twenty highest remaining recipe-level carbohydrate estimates without a completed ingredient calculation file are reviewed in this batch. Selection values are ranking evidence only. Two liver recipes remain without total GL because a justified GI value for liver is not available; the sweetened quark bowl remains incomplete because sweetener type and amount are unspecified. Other totals use ingredient-level Fineli/AFCD data and disclosed category proxies.",
+    "fourthBatchRecipeIds": [
+      "maksalaatikko-kukkakaalilla",
+      "paistettu-maksa-pekonilla",
+      "khao-man-gai-vhh",
+      "keltainen-kanacurry-vhh",
+      "kesakurpitsalasagne-vhh",
+      "pad-thai-vhh-konjac",
+      "rahka-marjakerroskulho",
+      "vhh-lohikeitto-kukkakaalilla",
+      "valimerellinen-tortilla-espanola-aamupalaksi",
+      "kana-fajita-pelti",
+      "italian-pata",
+      "kukkakaaligratiini-pekonilla",
+      "valimerellinen-menemen-fetalla",
+      "khao-soi-vhh-konjac",
+      "broileri-kukkakaaligratiini",
+      "som-tam-vhh-kurkkuna",
+      "kanakeitto-pinaatti-sitruuna",
+      "pad-kra-pao-vhh",
+      "pohjoisafrikkalainen-maakouda",
+      "kermainen-lohipata"
     ]
   },
   "additionalCarbohydrateEvidence": "AFCD Release 3 was used only for chickpea flour in vada pav and pure tamarind paste in pani puri because no matching Fineli foods were found. Source: Food Standards Australia New Zealand, Australian Food Composition Database Release 3, CC BY-SA 3.0 Australia. Values with and without sugar alcohols were equal for both items. This batch also uses AFCD Release 3 items identified by source IDs in the input records where matching Fineli foods were unavailable. AFCD Release 3 Cheese, ricotta (F002488) is used for pasta alla Norma because no matching Fineli record exists."
