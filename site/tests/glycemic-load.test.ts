@@ -3,13 +3,13 @@ import test from "node:test";
 
 import type { FoodRecord } from "../scripts/nutrition-model";
 import { calculateGlycemicLoad, type GlycemicIndexRecord } from "../scripts/glycemic-load-model";
-import { glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches } from "../scripts/glycemic-load-recipe-binding";
+import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches } from "../scripts/glycemic-load-recipe-binding";
 import { publishedGlycemicLoadForRecipe } from "../src/features/recipes/glycemic-load-display";
 
-function food(id: string, availableCarbohydrate: number): FoodRecord {
+function food(id: string, availableCarbohydrate: number, name = id): FoodRecord {
   return {
     id,
-    name: id,
+    name,
     sourceUrl: `https://example.test/${id}`,
     retrievedAt: "2026-10-24",
     licence: "test fixture",
@@ -45,7 +45,7 @@ const gi: GlycemicIndexRecord = {
   },
 };
 
-test("recipe binding detects changes in servings, amount, unit and food state, and is deterministic", () => {
+test("recipe binding detects calculation-relevant changes and ignores instruction copy edits", () => {
   const reviewed = `---
 recipe_id: sample
 servings: 2
@@ -65,14 +65,18 @@ Boil until cooked.
     reviewed.replace("amount: 100", "amount: 150"),
     reviewed.replace("unit: g", "unit: ml"),
     reviewed.replace("dry rice", "cooked rice"),
-    reviewed.replace("Boil until cooked.", "Bake until cooked."),
+    reviewed.replace("cooking_method: [boiling]", "cooking_method: [frying]"),
+    reviewed.replace("item: dry rice", "item: cooked rice"),
+    reviewed.replace("item: dry rice", "item: kypsää rice"),
   ]) assert.equal(recipeBindingMatches(fingerprint, recipeBindingHash(changed)), false);
+  assert.equal(recipeBindingMatches(fingerprint, recipeBindingHash(reviewed.replace("Boil until cooked.", "Boil it until cooked!"))), true);
+  assert.equal(recipeBindingMatches(fingerprint, recipeBindingHash(reviewed.replace("item: dry rice", "item: dry, rice"))), true);
   const documentedAlias = reviewed.replace("dry rice", "rice");
   assert.equal(recipeBindingMatches(fingerprint, recipeBindingHash(documentedAlias, { rice: { canonical: "dry rice", evidence: "Same source food identity; preparation and mass basis reviewed." } })), true);
   assert.equal(recipeBindingMatches(null, fingerprint), false);
 });
 
-test("calculation input binding covers food/GI mapping, portions, conversions and evidence", () => {
+test("calculation input binding covers numeric and mapping inputs but ignores evidence prose edits", () => {
   const reviewed = { recipeId: "sample", servings: 2, ingredients: [{ name: "rice", grams: 100, fineliRecordId: "food-a", giRecordId: "gi-a", massEvidence: "100 g listed", giMatchEvidence: "Exact cooked rice match." }] };
   const fingerprint = glycemicLoadInputHash(reviewed);
   assert.equal(recipeBindingMatches(fingerprint, glycemicLoadInputHash({ ingredients: reviewed.ingredients, servings: 2, recipeId: "sample" })), true);
@@ -81,8 +85,18 @@ test("calculation input binding covers food/GI mapping, portions, conversions an
     { ...reviewed, ingredients: [{ ...reviewed.ingredients[0], grams: 150 }] },
     { ...reviewed, ingredients: [{ ...reviewed.ingredients[0], fineliRecordId: "food-b" }] },
     { ...reviewed, ingredients: [{ ...reviewed.ingredients[0], giRecordId: "gi-b" }] },
-    { ...reviewed, ingredients: [{ ...reviewed.ingredients[0], massEvidence: "estimated volume conversion" }] },
   ]) assert.equal(recipeBindingMatches(fingerprint, glycemicLoadInputHash(changed)), false);
+  assert.equal(recipeBindingMatches(fingerprint, glycemicLoadInputHash({ ...reviewed, ingredients: [{ ...reviewed.ingredients[0], massEvidence: "100g listed, corrected punctuation." }] })), true);
+});
+
+test("GI and food source value, state, and composition edits invalidate only calculation-relevant evidence", () => {
+  const input = { recipeId: "sample", servings: 2, ingredients: [{ name: "rice", grams: 100, fineliRecordId: "food", giRecordId: gi.id }] };
+  const original = glycemicLoadEvidenceHash(input, [food("food", 12.5)], [gi]);
+  assert.equal(recipeBindingMatches(original, glycemicLoadEvidenceHash(input, [food("food", 12.5)], [{ ...gi, source: { ...gi.source, title: "Retitled source" } }])), true);
+  assert.equal(recipeBindingMatches(original, glycemicLoadEvidenceHash(input, [food("food", 15)], [gi])), false);
+  assert.equal(recipeBindingMatches(original, glycemicLoadEvidenceHash(input, [{ ...food("food", 12.5), state: "cooked rice" }], [gi])), false);
+  assert.equal(recipeBindingMatches(original, glycemicLoadEvidenceHash(input, [food("food", 12.5)], [{ ...gi, gi: 60 }])), false);
+  assert.equal(recipeBindingMatches(original, glycemicLoadEvidenceHash(input, [food("food", 12.5)], [{ ...gi, preparationKey: "cooked" }])), false);
 });
 
 test("single-ingredient GL uses available carbohydrate per serving and rounds only the total", () => {
@@ -152,6 +166,38 @@ test("a sourced analogue supports a total only with low confidence", () => {
   assert.equal(result.ingredients[0].matchKind, "ANALOG");
   assert.equal(result.confidence, "LOW");
   assert.equal(result.ingredients[0].confidence, "LOW");
+});
+
+test("GI matches require both reviewed food and preparation keys; category means stay in their group", () => {
+  const categoryMean: GlycemicIndexRecord = {
+    ...gi,
+    id: "legume-mean",
+    foodKey: "legume",
+    preparationKey: "legume-category",
+    matchKind: "CATEGORY_MEAN",
+    qualityTier: "SUPPLEMENTARY",
+    confidence: "LOW",
+  };
+  const input = (foodKey: string, preparationKey: string) => ({
+    recipeId: "category-check",
+    servings: 1,
+    ingredients: [{ name: "cooked broad beans", grams: 100, fineliRecordId: "beans", giRecordId: categoryMean.id, foodKey, preparationKey, giMatchEvidence: "Published legume group mean; broad beans are legumes." }],
+  });
+  const accepted = calculateGlycemicLoad(input("legume", "legume-category"), [food("beans", 20)], [categoryMean]);
+  assert.equal(accepted.status, "CALCULATED");
+  assert.equal(accepted.confidence, "LOW");
+  for (const mismatched of [input("nuts", "legume-category"), input("legume", "canned-drained")]) {
+    const rejected = calculateGlycemicLoad(mismatched, [food("beans", 20)], [categoryMean]);
+    assert.equal(rejected.status, "INSUFFICIENT SOURCE DATA");
+    assert.equal(rejected.glycemicLoadPerServing, null);
+  }
+  const curryPasteMean = { ...categoryMean, id: "curry-category", foodKey: "curry-paste", preparationKey: "asian-regional-food-category" };
+  const coconutMilk = calculateGlycemicLoad({
+    recipeId: "wrong-category",
+    servings: 1,
+    ingredients: [{ name: "coconut milk", grams: 100, fineliRecordId: "coconut", giRecordId: curryPasteMean.id, foodKey: "curry-paste", preparationKey: "asian-regional-food-category", giMatchEvidence: "Incorrect curry-paste mapping." }],
+  }, [food("coconut", 3, "Coconut milk")], [curryPasteMean]);
+  assert.equal(coconutMilk.status, "INSUFFICIENT SOURCE DATA");
 });
 
 test("assumed small seasoning amounts are visible and count toward the cumulative tolerance", () => {

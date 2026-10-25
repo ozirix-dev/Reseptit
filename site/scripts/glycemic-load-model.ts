@@ -86,6 +86,27 @@ export interface GlycemicLoadResult {
 
 const valid = (value: unknown): value is number => typeof value === "number" && Number.isFinite(value) && value >= 0;
 
+function categoryMeanMatchesFood(foodKey: string, foodName: string, ingredientName: string): boolean {
+  const text = `${foodName} ${ingredientName}`.normalize("NFC").toLocaleLowerCase("fi-FI");
+  const patterns: Record<string, RegExp> = {
+    dairy: /maito|milk|cream|kerma|jogurtti|yogurt|juusto|cheese|rahka|quark|paneer|feta|ricotta|voi|butter|dairy/,
+    "bakery-products-category-mean": /jauho|flour|mannasuurimo|semolina|leipä|bread|kaura|oat|vehnä|wheat|ruis|rye/,
+    "bread-category-mean": /leipä|bread|sämpylä|bun|pita|flatbread|toast/,
+    "sugar-syrups-category-mean": /soker|sugar|siirappi|syrup|hunaja|honey|hillo|jam|molasses/,
+    "honey-category-mean": /hunaja|honey/,
+    "peanut": /pähkinä|nut|maapähkinä|peanut|mantel|almond|pistaasi|pistachio|cashew|saksanpähkinä|walnut/,
+    vegetable: /vihannes|vegetable|porkkana|carrot|kaali|cabbage|kukkakaali|cauliflower|pinaatti|spinach|paprika|pepper|tomaatti|tomato|kurkku|cucumber|munakoiso|eggplant|kesäkurpitsa|zucchini|selleri|celery|sieni|mushroom|papu|bean|herne|pea|paksoi|bok choy|sipuli|onion|okra|parsakaali|broccoli/,
+    "fruit-category-mean": /hedelmä|fruit|appelsiini|orange|sitruuna|lemon|lime|limetti|taateli|date|banaani|banana|omena|apple|viikuna|fig|persikka|peach|rypäle|grape|marja|berry/,
+    legume: /papu|bean|kikherne|chickpea|linssi|lentil|soija|soy|tofu|mung|herne|pea/,
+    soup: /keitto|soup|broth/,
+    "potatoes-category-mean": /peruna|potato/,
+    "rice-category-mean": /riisi|rice/,
+    "pasta-category-mean": /pasta|makaroni|noodle|nuudeli/,
+    "curry-paste": /currytahna|curry paste/,
+  };
+  return patterns[foodKey]?.test(text) ?? false;
+}
+
 /**
  * Calculate an ingredient-based GL estimate. Every positive carbohydrate
  * contribution is included or counted toward the cumulative editorial tolerance.
@@ -204,10 +225,15 @@ export function calculateGlycemicLoad(
       const match = matchedGi?.matchKind ?? "EXACT";
       const sourceValid = Boolean(matchedGi && valid(matchedGi.gi) && ingredient.giMatchEvidence
         && matchedGi.source.url && matchedGi.source.published && matchedGi.referenceScale === "GLUCOSE_100");
-      const matchValid = Boolean(matchedGi && (match === "EXACT"
-        ? matchedGi.qualityTier === "STRONG" && matchedGi.foodKey === ingredient.foodKey && matchedGi.preparationKey === ingredient.preparationKey
-        : match === "ANALOG" ? matchedGi.preparationKey === ingredient.preparationKey
-          : match === "CATEGORY_MEAN"));
+      const keysMatch = Boolean(matchedGi && ingredient.foodKey && ingredient.preparationKey
+        && matchedGi.foodKey === ingredient.foodKey
+        && matchedGi.preparationKey === ingredient.preparationKey);
+      const categoryMeanMatch = Boolean(matchedGi && match === "CATEGORY_MEAN"
+        && (!ingredient.foodKey || ingredient.foodKey === matchedGi.foodKey)
+        && (!ingredient.preparationKey || ingredient.preparationKey === matchedGi.preparationKey)
+        && categoryMeanMatchesFood(matchedGi.foodKey, food?.name ?? "", ingredient.name));
+      const matchValid = Boolean(matchedGi && (match === "CATEGORY_MEAN" ? categoryMeanMatch : keysMatch)
+        && ["EXACT", "ANALOG", "CATEGORY_MEAN"].includes(match));
       if (!sourceValid || !matchValid) {
         const reason = !matchedGi ? ingredient.giMatchEvidence || "GI evidence is missing."
           : "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.";

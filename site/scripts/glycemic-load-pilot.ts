@@ -3,7 +3,7 @@ import path from "node:path";
 
 import type { FoodRecord } from "./nutrition-model";
 import { calculateGlycemicLoad, type GlycemicIndexRecord, type GlycemicLoadRecipeInput } from "./glycemic-load-model";
-import { glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches } from "./glycemic-load-recipe-binding";
+import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches } from "./glycemic-load-recipe-binding";
 import { siteContent } from "../src/generated/content.generated";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
@@ -242,6 +242,7 @@ const recipeBindings = JSON.parse(await readFile(path.join(root, "docs/nutrition
   baselineCommit: string;
   recipes: Record<string, string | null>;
   calculationInputs: Record<string, string | null>;
+  calculationEvidence?: Record<string, string | null>;
 };
 const recipeAliases = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-aliases.json"), "utf8")) as {
   aliases: Record<string, { canonical: string; evidence: string }>;
@@ -279,11 +280,13 @@ const sourceHashes = Object.fromEntries(await Promise.all(expectedRecipeIds.map(
 
 const rawResults = inputs.map((recipe) => calculateGlycemicLoad(recipe, foodRecords, giRecords));
 const calculationInputHashes = Object.fromEntries(inputs.map((recipe) => [recipe.recipeId, glycemicLoadInputHash(recipe)]));
+const calculationEvidenceHashes = Object.fromEntries(inputs.map((recipe) => [recipe.recipeId, glycemicLoadEvidenceHash(recipe, foodRecords, giRecords)]));
 const results = rawResults.map((result) => {
   const boundHash = recipeBindings.recipes[result.recipeId];
   const recipeChanged = !recipeBindingMatches(boundHash, sourceHashes[result.recipeId]);
   const inputChanged = !recipeBindingMatches(recipeBindings.calculationInputs[result.recipeId], calculationInputHashes[result.recipeId]);
-  if (recipeChanged || inputChanged) {
+  const evidenceChanged = !recipeBindingMatches(recipeBindings.calculationEvidence?.[result.recipeId], calculationEvidenceHashes[result.recipeId]);
+  if (recipeChanged || inputChanged || evidenceChanged) {
     return {
       ...result,
       status: "INSUFFICIENT SOURCE DATA" as const,
@@ -294,6 +297,7 @@ const results = rawResults.map((result) => {
         ...result.blockers,
         ...(recipeChanged ? [`${result.recipeId}: recipe structure differs from the last GL review (${recipeBindings.baselineCommit}); ingredient mapping and calculation must be reviewed again.`] : []),
         ...(inputChanged ? [`${result.recipeId}: GI/food mapping, portion, conversion, source evidence or calculation assumptions differ from the last GL review; the input must be reviewed again.`] : []),
+        ...(evidenceChanged ? [`${result.recipeId}: a calculation-relevant food or GI source value/state differs from the last GL review; source mapping and calculation must be reviewed again.`] : []),
       ],
     };
   }
@@ -311,9 +315,11 @@ const report = {
   recipeBindingBaseline: recipeBindings.baselineCommit,
   recipeBindingMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.recipes[recipeId], sourceHashes[recipeId])),
   calculationInputMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.calculationInputs[recipeId], calculationInputHashes[recipeId])),
+  calculationEvidenceMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.calculationEvidence?.[recipeId], calculationEvidenceHashes[recipeId])),
   previousPublicBaseline: { sourceCommit: "b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5", calculated: 190, insufficientSourceData: 135, zeroTotals: 21, changedRecipeInputsAmongCalculated: 21 },
   giSourceCatalog: giSource.sources,
   sourceHashes,
+  calculationEvidenceHashes,
   results,
   summary: {
     recipes: results.length,

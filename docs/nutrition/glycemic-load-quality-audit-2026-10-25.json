@@ -7,423 +7,48 @@
     "total": 325,
     "previousCalculated": 190,
     "previousIncomplete": 135,
-    "currentCalculated": 112,
-    "currentIncomplete": 213,
+    "currentCalculated": 99,
+    "currentIncomplete": 226,
     "changedStructuresSinceReview": 72,
-    "previousCalculatedNowBlocked": 78,
+    "previousCalculatedNowBlocked": 91,
     "allRecipeBeforeAfterRows": 325,
-    "currentCalculatedWithEligibleInputs": 112
+    "currentCalculatedWithEligibleInputs": 99,
+    "reviewedPreviouslyCalculatedStructureChanges": 21,
+    "previouslyIncompleteStructureChangesLeftUnreviewed": 51,
+    "recoveredFromPreviousIncomplete": 0
   },
   "numericComparison": {
-    "commonPublished": 112,
-    "numericChanged": 65,
-    "zeroToPositive": 8,
-    "absoluteChangeAtLeast1": 1,
-    "materialByEditorialDefinition": 9,
-    "editorialDefinition": "A value moves from zero to positive, or changes by at least 1.0 GL point per serving. This is a review aid, not a clinical cutoff.",
+    "commonPublished": 99,
+    "numericChanged": 52,
+    "zeroToPositive": 7,
+    "absoluteChangeAtLeast1": 4,
+    "materialByEditorialDefinition": 11,
+    "editorialDefinition": "A current value moves from zero to positive, or changes by at least 1.0 GL point per serving. This is a review flag, not a clinical cutoff or proof that food choice changes.",
     "materialRecipeIds": [
       "vhh-korvapuustit",
-      "keto-mutakakku",
       "keto-suklaakeksit",
       "vhh-mokkapalat",
-      "kanakeitto-pinaatti-sitruuna",
       "kai-jiew-vhh",
       "savulohi-avokadokulho",
       "kantonilainen-hoyrytetty-kala",
+      "pohjoisafrikkalainen-harcha-juustolla",
+      "indonesialainen-ketoprak-aamiaiskulho",
+      "valimerellinen-appelsiini-aamiaiskakku",
+      "lahi-ita-manakish-zaatarilla",
       "yrttituorejuusto-kinkkurullat"
     ],
-    "numericChanges": [
-      {
-        "recipeId": "vhh-kaalikaarryleet",
-        "before": 9.24,
-        "after": 9.49,
-        "absoluteDelta": 0.25
-      },
-      {
-        "recipeId": "gulab-jamun",
-        "before": 48.95,
-        "after": 49.05,
-        "absoluteDelta": 0.1
-      },
-      {
-        "recipeId": "meheva-suklaakakku",
-        "before": 20.21,
-        "after": 20.51,
-        "absoluteDelta": 0.3
-      },
-      {
-        "recipeId": "marjakiisseli-vaniljakastikkeella",
-        "before": 19.54,
-        "after": 19.93,
-        "absoluteDelta": 0.39
-      },
-      {
-        "recipeId": "pannacotta-marjakastikkeella",
-        "before": 11.89,
-        "after": 12.56,
-        "absoluteDelta": 0.67
-      },
-      {
-        "recipeId": "caponata",
-        "before": 6.66,
-        "after": 7.02,
-        "absoluteDelta": 0.36
-      },
-      {
-        "recipeId": "koshari",
-        "before": 50.46,
-        "after": 50.57,
-        "absoluteDelta": 0.11
-      },
-      {
-        "recipeId": "marokkolainen-couscous",
-        "before": 34.17,
-        "after": 34.56,
-        "absoluteDelta": 0.39
-      },
-      {
-        "recipeId": "pasta-alla-norma",
-        "before": 33.02,
-        "after": 33.08,
-        "absoluteDelta": 0.06
-      },
-      {
-        "recipeId": "bulgogi",
-        "before": 40.37,
-        "after": 40.55,
-        "absoluteDelta": 0.18
-      },
-      {
-        "recipeId": "congee-riisipuuro",
-        "before": 25.77,
-        "after": 25.87,
-        "absoluteDelta": 0.1
-      },
-      {
-        "recipeId": "tomaatti-kananmuna-wokki",
-        "before": 22.78,
-        "after": 22.81,
-        "absoluteDelta": 0.03
-      },
-      {
-        "recipeId": "harira",
-        "before": 11.83,
-        "after": 12.17,
-        "absoluteDelta": 0.34
-      },
-      {
-        "recipeId": "kreikkalainen-moussaka",
-        "before": 18.38,
-        "after": 18.46,
-        "absoluteDelta": 0.08
-      },
-      {
-        "recipeId": "doner-kebab",
-        "before": 18.61,
-        "after": 19.14,
-        "absoluteDelta": 0.53
-      },
-      {
-        "recipeId": "souvlaki",
-        "before": 17.34,
-        "after": 17.94,
-        "absoluteDelta": 0.6
-      },
-      {
-        "recipeId": "gazpacho",
-        "before": 8.3,
-        "after": 8.32,
-        "absoluteDelta": 0.02
-      },
-      {
-        "recipeId": "spanakopita",
-        "before": 8.63,
-        "after": 9.13,
-        "absoluteDelta": 0.5
-      },
-      {
-        "recipeId": "tabbouleh",
-        "before": 5.27,
-        "after": 5.68,
-        "absoluteDelta": 0.41
-      },
-      {
-        "recipeId": "poronkaristys-kukkakaalimuusilla",
-        "before": 2.77,
-        "after": 3.19,
-        "absoluteDelta": 0.42
-      },
-      {
-        "recipeId": "liha-juureskeitto-perunaton",
-        "before": 2.61,
-        "after": 3.38,
-        "absoluteDelta": 0.77
-      },
-      {
-        "recipeId": "vhh-omenapiirakka",
-        "before": 1.95,
-        "after": 2.08,
-        "absoluteDelta": 0.13
-      },
-      {
-        "recipeId": "chettinad-kana",
-        "before": 0.48,
-        "after": 0.86,
-        "absoluteDelta": 0.38
-      },
-      {
-        "recipeId": "vhh-raparperipiirakka",
-        "before": 1.46,
-        "after": 1.66,
-        "absoluteDelta": 0.2
-      },
-      {
-        "recipeId": "vhh-mansikkakakku",
-        "before": 0.71,
-        "after": 1.45,
-        "absoluteDelta": 0.74
-      },
-      {
-        "recipeId": "kermainen-kanasienipannu",
-        "before": 0.51,
-        "after": 1.02,
-        "absoluteDelta": 0.51
-      },
-      {
-        "recipeId": "raejuusto-pesto-kasviskulho",
-        "before": 0.44,
-        "after": 0.98,
-        "absoluteDelta": 0.54
-      },
-      {
-        "recipeId": "kana-parmesaanipannu-parsakaali",
-        "before": 1.3,
-        "after": 1.31,
-        "absoluteDelta": 0.01
-      },
-      {
-        "recipeId": "vhh-juustokakku",
-        "before": 0.56,
-        "after": 1.09,
-        "absoluteDelta": 0.53
-      },
-      {
-        "recipeId": "vhh-brita-kakku",
-        "before": 0.54,
-        "after": 1.18,
-        "absoluteDelta": 0.64
-      },
-      {
-        "recipeId": "rahkapiirakka-vhh",
-        "before": 0.98,
-        "after": 1.11,
-        "absoluteDelta": 0.13
-      },
-      {
-        "recipeId": "vhh-letut",
-        "before": 0.35,
-        "after": 1,
-        "absoluteDelta": 0.65
-      },
-      {
-        "recipeId": "vhh-lihapiirakka",
-        "before": 0.78,
-        "after": 1.04,
-        "absoluteDelta": 0.26
-      },
-      {
-        "recipeId": "vhh-runebergintortut",
-        "before": 0.63,
-        "after": 0.93,
-        "absoluteDelta": 0.3
-      },
-      {
-        "recipeId": "keto-korvapuustit",
-        "before": 0.78,
-        "after": 0.96,
-        "absoluteDelta": 0.18
-      },
-      {
-        "recipeId": "vhh-korvapuustit",
-        "before": 0,
-        "after": 0.56,
-        "absoluteDelta": 0.56
-      },
-      {
-        "recipeId": "keto-mutakakku",
-        "before": 0,
-        "after": 0.54,
-        "absoluteDelta": 0.54
-      },
-      {
-        "recipeId": "keto-suklaakeksit",
-        "before": 0,
-        "after": 0.64,
-        "absoluteDelta": 0.64
-      },
-      {
-        "recipeId": "vhh-mokkapalat",
-        "before": 0,
-        "after": 0.48,
-        "absoluteDelta": 0.48
-      },
-      {
-        "recipeId": "khao-man-gai-vhh",
-        "before": 3.21,
-        "after": 3.67,
-        "absoluteDelta": 0.46
-      },
-      {
-        "recipeId": "kesakurpitsalasagne-vhh",
-        "before": 2.43,
-        "after": 2.77,
-        "absoluteDelta": 0.34
-      },
-      {
-        "recipeId": "valimerellinen-menemen-fetalla",
-        "before": 1.88,
-        "after": 2.2,
-        "absoluteDelta": 0.32
-      },
-      {
-        "recipeId": "som-tam-vhh-kurkkuna",
-        "before": 2.28,
-        "after": 2.48,
-        "absoluteDelta": 0.2
-      },
-      {
-        "recipeId": "kanakeitto-pinaatti-sitruuna",
-        "before": 1,
-        "after": 2.31,
-        "absoluteDelta": 1.31
-      },
-      {
-        "recipeId": "pad-kra-pao-vhh",
-        "before": 2.38,
-        "after": 2.5,
-        "absoluteDelta": 0.12
-      },
-      {
-        "recipeId": "keto-kauralesesampylat",
-        "before": 0.95,
-        "after": 1.34,
-        "absoluteDelta": 0.39
-      },
-      {
-        "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
-        "before": 0.51,
-        "after": 1.06,
-        "absoluteDelta": 0.55
-      },
-      {
-        "recipeId": "parsakaali-sinihomejuustofrittata",
-        "before": 0.38,
-        "after": 0.97,
-        "absoluteDelta": 0.59
-      },
-      {
-        "recipeId": "uunilohi-smetanakuorrutteella",
-        "before": 0.39,
-        "after": 0.61,
-        "absoluteDelta": 0.22
-      },
-      {
-        "recipeId": "kai-jiew-vhh",
-        "before": 0,
-        "after": 0.46,
-        "absoluteDelta": 0.46
-      },
-      {
-        "recipeId": "savulohi-avokadokulho",
-        "before": 0,
-        "after": 0.4,
-        "absoluteDelta": 0.4
-      },
-      {
-        "recipeId": "intialainen-aloo-paratha",
-        "before": 26.75,
-        "after": 26.76,
-        "absoluteDelta": 0.01
-      },
-      {
-        "recipeId": "kantonilainen-hoyrytetty-kala",
-        "before": 0,
-        "after": 0.23,
-        "absoluteDelta": 0.23
-      },
-      {
-        "recipeId": "thai-khao-tom-katkaravuilla",
-        "before": 27.2,
-        "after": 27.33,
-        "absoluteDelta": 0.13
-      },
-      {
-        "recipeId": "lahi-ita-kikhernejauho-yrttilettu",
-        "before": 7.42,
-        "after": 7.44,
-        "absoluteDelta": 0.02
-      },
-      {
-        "recipeId": "malesialainen-congee-inkivaarilla",
-        "before": 26.47,
-        "after": 26.68,
-        "absoluteDelta": 0.21
-      },
-      {
-        "recipeId": "kiinalainen-tomaattimunakas-riisilla",
-        "before": 27.89,
-        "after": 28.07,
-        "absoluteDelta": 0.18
-      },
-      {
-        "recipeId": "kiinalainen-riisipuuro-kananmunalla",
-        "before": 26.47,
-        "after": 26.68,
-        "absoluteDelta": 0.21
-      },
-      {
-        "recipeId": "thai-jok-kanalla",
-        "before": 26.47,
-        "after": 26.5,
-        "absoluteDelta": 0.03
-      },
-      {
-        "recipeId": "thai-porsasjok",
-        "before": 26.47,
-        "after": 26.5,
-        "absoluteDelta": 0.03
-      },
-      {
-        "recipeId": "vietnamilainen-banh-cuon-sienilla",
-        "before": 23,
-        "after": 23.01,
-        "absoluteDelta": 0.01
-      },
-      {
-        "recipeId": "vietnamilainen-banh-mi-munalla",
-        "before": 19.03,
-        "after": 19.49,
-        "absoluteDelta": 0.46
-      },
-      {
-        "recipeId": "valimerellinen-jogurttikulho-hunajalla",
-        "before": 5.99,
-        "after": 6.09,
-        "absoluteDelta": 0.1
-      },
-      {
-        "recipeId": "valimerellinen-pinaatti-fetashakshuka",
-        "before": 0.47,
-        "after": 0.79,
-        "absoluteDelta": 0.32
-      },
-      {
-        "recipeId": "yrttituorejuusto-kinkkurullat",
-        "before": 0,
-        "after": 0.87,
-        "absoluteDelta": 0.87
-      }
-    ]
+    "classChangesAmongDefinedClasses": 0,
+    "nearBoundaryWithinOneGLPoint": 11,
+    "unclassifiedGap10to11": 1,
+    "previous112Stage": {
+      "commonPublished": 112,
+      "numericChanged": 65,
+      "zeroToPositive": 8,
+      "absoluteChangeAtLeast1": 1,
+      "definedClassChanges": 0,
+      "nearBoundaryWithinOneGLPoint": 14,
+      "unclassifiedGap10to11": 2
+    }
   },
   "carbohydrateAudit": {
     "previousDisplayedZeroTotals": 21,
@@ -431,16 +56,18 @@
     "recipesWithOmittedCarbohydrateAtLeast1g": 87,
     "atLeast2g": 17,
     "maxPreviouslyOmittedGPerServing": 3.5968,
-    "currentCalculatedWithSmallOmission": 93,
+    "currentCalculatedWithSmallOmission": 84,
     "maxCurrentOmittedGPerServing": 0.9907499999999999,
     "zeroTotalsWithSmallOmission": 3,
     "smallOmissionBudgetGPerServing": 1,
     "editorialNotClinical": true,
     "roundedInternalZeroTotals": 3,
     "roundedInternalZeroTotalsShownAsExactZero": false,
-    "currentRecipesOverCumulativeOmissionBudget": 74,
+    "currentRecipesOverCumulativeOmissionBudget": 79,
     "currentCalculatedZeroTotalsWithOmission": 3,
-    "currentCalculatedExactZeroTotalsWithoutOmission": 0
+    "currentCalculatedExactZeroTotalsWithoutOmission": 0,
+    "maxCurrentOmittedGPerServingCalculated": 0.9907499999999999,
+    "maxCurrentOmittedGPerServingAllRecipes": 2.95775
   },
   "giMappings": {
     "inputIngredientMappings": {
@@ -458,14 +85,12 @@
     "analoguesAndCategoryMeansForceLowConfidence": true
   },
   "sourceAndInputBlocks": {
-    "recipesWithIncompleteStatus": 213,
-    "totalBlockers": 389,
+    "recipesWithIncompleteStatus": 226,
+    "totalBlockers": 427,
     "staleRecipeIds": [
-      "bun-cha-hanoi",
       "chow-mein",
       "indonesialainen-serabi-kookospannukakku",
       "jerk-kana",
-      "paella-valenciana",
       "rendang-padang",
       "malesialainen-apam-balik",
       "meksikolainen-kurpitsapuuro-piloncillolla",
@@ -475,41 +100,27 @@
       "indialainen-poha-maapahkinoilla",
       "intialainen-mannasuurimoupma",
       "falafel",
-      "pohjoisafrikkalainen-baghrir",
       "pohjoisafrikkalainen-msemen-hunajalla",
       "malesialainen-roti-canai-dhalilla",
-      "lahi-ita-ful-medames",
       "vietnamilainen-chao-ga-kanapuuro",
-      "korealainen-gyeranbap-riisikulho",
-      "pohjoisafrikkalainen-harcha-juustolla",
       "vietnamilainen-hu-tieu-aamiaiskeitto",
       "karibia-maissipuuro-kookoksella",
-      "kiinalainen-jianbing-munaletty",
       "karibia-johnny-cake",
       "lahi-ita-taatelipuuro-tahinilla",
-      "indonesialainen-ketoprak-aamiaiskulho",
       "thai-kookosriisi-mangolla",
       "vietnamilainen-papaija-kookospuuro",
       "japanilainen-tamago-kake-gohan",
-      "keto-joulutortut",
-      "kiinalainen-soijamaito-aamiaisella",
       "thai-kananmunat-kookoscurryssa",
       "sate-ayam",
       "janssoninkiusaus-juuriselleri",
       "meksikolainen-quesadilla-sienilla",
-      "valimerellinen-appelsiini-aamiaiskakku",
       "valimerellinen-halloumi-tomaattileipa",
       "indonesialainen-bakwan-maissifritter",
       "japanilainen-kabocha-puuro",
       "malesialainen-kaya-paahtoleipa",
       "valimerellinen-farinata-aamupalaksi",
-      "korealainen-jumeokbap-merilevalla",
-      "lahi-ita-manakish-zaatarilla",
       "pohjoisafrikkalainen-minttutee-kaurapuuro",
-      "malesialainen-mee-goreng-aamunuudeleilla",
-      "pohjoisafrikkalainen-kuskus-aamiaiskulho",
       "malesialainen-nasi-lemak-aamiaisella",
-      "japanilainen-onigiri-lohella",
       "kiinalainen-hirssipuuro-taateleilla",
       "vietnamilainen-pho-ga-aamuksi",
       "malesialainen-roti-jala-currykanalla",
@@ -517,7 +128,6 @@
       "xiaolongbao",
       "karibia-bammy-kassavaleipa",
       "kiinalainen-musta-seesamipuuro",
-      "meksikolainen-munakokkeli-pico-de-gallolla",
       "thai-papaijajogurtti",
       "lahi-ita-pistaasijogurtti",
       "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
@@ -526,17 +136,321 @@
       "tunisialainen-ojja",
       "japanilainen-hojicha-jogurtti-persimonilla",
       "pohjoisafrikkalainen-harissa-shakshuka",
-      "kiinalainen-teehaudutetut-munat",
       "carnitas-salaattitacot",
+      "shoyu-kanakeitto-konjac",
+      "hunaja-sinappikana-kaalilla"
+    ],
+    "currentCumulativeOmissionBudgetExceeded": 79,
+    "recipeStructureMismatches": 51,
+    "calculationInputMismatches": 0,
+    "calculationEvidenceMismatches": 0,
+    "reviewedPreviouslyCalculatedStructuralIds": [
+      "bun-cha-hanoi",
+      "paella-valenciana",
+      "pohjoisafrikkalainen-baghrir",
+      "lahi-ita-ful-medames",
+      "korealainen-gyeranbap-riisikulho",
+      "pohjoisafrikkalainen-harcha-juustolla",
+      "kiinalainen-jianbing-munaletty",
+      "indonesialainen-ketoprak-aamiaiskulho",
+      "keto-joulutortut",
+      "kiinalainen-soijamaito-aamiaisella",
+      "valimerellinen-appelsiini-aamiaiskakku",
+      "korealainen-jumeokbap-merilevalla",
+      "lahi-ita-manakish-zaatarilla",
+      "malesialainen-mee-goreng-aamunuudeleilla",
+      "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+      "japanilainen-onigiri-lohella",
+      "meksikolainen-munakokkeli-pico-de-gallolla",
+      "kiinalainen-teehaudutetut-munat",
       "rogan-josh",
       "kreikkalainen-kanavuoka-oliiveilla",
-      "shoyu-kanakeitto-konjac",
-      "hunaja-sinappikana-kaalilla",
       "tandoorikana"
     ],
-    "currentCumulativeOmissionBudgetExceeded": 74,
-    "recipeStructureMismatches": 72,
-    "calculationInputMismatches": 0
+    "currentPriorCalculatedToleranceOnly": 38,
+    "priorCalculatedNowBlockedWithGIIssues": 84,
+    "priorCalculatedMaterialMissingGIIngredientRowsAtLeast1g": [
+      {
+        "recipeId": "munatacot-huevos-rancheros",
+        "name": "tomaattimurska",
+        "gramsPerServing": 2.625
+      },
+      {
+        "recipeId": "shakshuka",
+        "name": "tomaattimurska",
+        "gramsPerServing": 3.5
+      },
+      {
+        "recipeId": "tortilla-de-patatas",
+        "name": "peruna",
+        "gramsPerServing": 23.25
+      },
+      {
+        "recipeId": "chili-con-carne-kukkakaaliriisi",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 3.45
+      },
+      {
+        "recipeId": "ratatouille",
+        "name": "kypsiä tomaatteja",
+        "gramsPerServing": 4.375
+      },
+      {
+        "recipeId": "jauheliha-kaalikeitto-vhh",
+        "name": "lihalientä",
+        "gramsPerServing": 5
+      },
+      {
+        "recipeId": "taytetyt-paprikat-vhh",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 1.29375
+      },
+      {
+        "recipeId": "munakoiso-jauhelihavuoka-vhh",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 3.45
+      },
+      {
+        "recipeId": "lahi-ita-kikherne-shakshuka",
+        "name": "tomaatti",
+        "gramsPerServing": 2.1875
+      },
+      {
+        "recipeId": "massaman-curry-kanalla-vhh",
+        "name": "nauris",
+        "gramsPerServing": 1.575
+      },
+      {
+        "recipeId": "chole-bhature",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 3.45
+      },
+      {
+        "recipeId": "samosa",
+        "name": "perunoita",
+        "gramsPerServing": 15.5
+      },
+      {
+        "recipeId": "aloo-paratha",
+        "name": "perunoita",
+        "gramsPerServing": 15.5
+      },
+      {
+        "recipeId": "vada-pav",
+        "name": "kikhernejauhoja",
+        "gramsPerServing": 9.625
+      },
+      {
+        "recipeId": "pani-puri",
+        "name": "perunoita",
+        "gramsPerServing": 11.625
+      },
+      {
+        "recipeId": "pani-puri",
+        "name": "tamarinditahnaa",
+        "gramsPerServing": 4.305
+      },
+      {
+        "recipeId": "lohikeitto-kuohukermalla",
+        "name": "perunaa",
+        "gramsPerServing": 13.95
+      },
+      {
+        "recipeId": "butter-chicken",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 3.45
+      },
+      {
+        "recipeId": "punainen-kanacurry-vhh",
+        "name": "täysrasvaista kookosmaitoa",
+        "gramsPerServing": 2.81
+      },
+      {
+        "recipeId": "thai-vihrea-curry-kanalla-vhh",
+        "name": "täysrasvaista kookosmaitoa",
+        "gramsPerServing": 2.81
+      },
+      {
+        "recipeId": "panang-curry-kanalla-vhh",
+        "name": "täysrasvaista kookosmaitoa",
+        "gramsPerServing": 2.81
+      },
+      {
+        "recipeId": "menemen",
+        "name": "kypsää tomaattia",
+        "gramsPerServing": 4.375
+      },
+      {
+        "recipeId": "uunikanapasta-kesakurpitsa",
+        "name": "kirsikkatomaatteja",
+        "gramsPerServing": 1.75
+      },
+      {
+        "recipeId": "meheva-suklaakakku",
+        "name": "tummaa suklaata",
+        "gramsPerServing": 10.652
+      },
+      {
+        "recipeId": "meheva-suklaakakku",
+        "name": "tummaa suklaata",
+        "gramsPerServing": 5.326
+      },
+      {
+        "recipeId": "marokkolainen-couscous",
+        "name": "couscousia",
+        "gramsPerServing": 46
+      },
+      {
+        "recipeId": "marokkolainen-couscous",
+        "name": "kanalientä",
+        "gramsPerServing": 1
+      },
+      {
+        "recipeId": "bulgogi",
+        "name": "päärynää",
+        "gramsPerServing": 2
+      },
+      {
+        "recipeId": "congee-riisipuuro",
+        "name": "kanalientä",
+        "gramsPerServing": 2
+      },
+      {
+        "recipeId": "spanakopita",
+        "name": "filotaikinaa",
+        "gramsPerServing": 14.88
+      },
+      {
+        "recipeId": "tabbouleh",
+        "name": "hienoa bulguria",
+        "gramsPerServing": 8.2625
+      },
+      {
+        "recipeId": "liha-juureskeitto-perunaton",
+        "name": "lanttua",
+        "gramsPerServing": 1.85
+      },
+      {
+        "recipeId": "vhh-raparperipiirakka",
+        "name": "raparperia",
+        "gramsPerServing": 1.71875
+      },
+      {
+        "recipeId": "pad-thai-vhh-konjac",
+        "name": "tamarinditahnaa",
+        "gramsPerServing": 4.305
+      },
+      {
+        "recipeId": "valimerellinen-tortilla-espanola-aamupalaksi",
+        "name": "sipulia",
+        "gramsPerServing": 1.32
+      },
+      {
+        "recipeId": "som-tam-vhh-kurkkuna",
+        "name": "vihreitä papuja",
+        "gramsPerServing": 1.2645
+      },
+      {
+        "recipeId": "kanakeitto-pinaatti-sitruuna",
+        "name": "kanalientä",
+        "gramsPerServing": 1
+      },
+      {
+        "recipeId": "vhh-mustikkapiirakka",
+        "name": "mustikoita",
+        "gramsPerServing": 1.909125
+      },
+      {
+        "recipeId": "uunilohi-smetanakuorrutteella",
+        "name": "smetanaa",
+        "gramsPerServing": 1.1
+      },
+      {
+        "recipeId": "intialainen-aloo-paratha",
+        "name": "vehnäjauho",
+        "gramsPerServing": 36.999
+      },
+      {
+        "recipeId": "lanttulaatikko-kermainen",
+        "name": "lanttua",
+        "gramsPerServing": 11.76
+      },
+      {
+        "recipeId": "paprikainen-vhh-gulassi",
+        "name": "tomaatti",
+        "gramsPerServing": 1.035
+      },
+      {
+        "recipeId": "paprikainen-vhh-gulassi",
+        "name": "lihalientä",
+        "gramsPerServing": 2.25
+      },
+      {
+        "recipeId": "kana-enchilada-kukkakaalivuoka",
+        "name": "tomaattisalsaa",
+        "gramsPerServing": 4.05125
+      },
+      {
+        "recipeId": "ropa-vieja",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 2.3000000000000003
+      },
+      {
+        "recipeId": "ropa-vieja",
+        "name": "lihalientä",
+        "gramsPerServing": 2.5
+      },
+      {
+        "recipeId": "kanapyorykat-tomaattikastike",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 3.45
+      },
+      {
+        "recipeId": "kanasalaatti-pesto-mozzarella",
+        "name": "kirsikkatomaatteja",
+        "gramsPerServing": 1.3125
+      },
+      {
+        "recipeId": "sitruuna-yrttikana-parsa",
+        "name": "vihreää parsaa",
+        "gramsPerServing": 1.4
+      },
+      {
+        "recipeId": "thai-khao-tom-katkaravuilla",
+        "name": "laimennettua kanalientä",
+        "gramsPerServing": 1.4945
+      },
+      {
+        "recipeId": "pohjoisafrikkalainen-lablabi",
+        "name": "laimennettua kanalientä",
+        "gramsPerServing": 1.4945
+      },
+      {
+        "recipeId": "meksikolainen-aamiais-tacot-mustapavuilla",
+        "name": "maissitortilla",
+        "gramsPerServing": 25.9225
+      },
+      {
+        "recipeId": "meksikolainen-paputostada-aamupalaksi",
+        "name": "maissitortilla",
+        "gramsPerServing": 25.9225
+      },
+      {
+        "recipeId": "karibia-mango-limejogurtti",
+        "name": "kuorittua mangoa",
+        "gramsPerServing": 12.6
+      }
+    ],
+    "priorCalculatedMaterialMissingGIIngredientRecipeCountAtLeast1g": 49,
+    "priorCalculatedMaterialMissingGIIngredientRowCountAtLeast1g": 54,
+    "materialMissingGIThresholdGPerServing": 1,
+    "currentPriorCalculatedBlockReasons": {
+      "toleranceOnly": 38,
+      "giOnly": 40,
+      "toleranceAndGi": 12,
+      "otherUnresolvedInput": 1,
+      "totalPriorCalculatedNowBlocked": 91
+    }
   },
   "policy": {
     "formula": "sum(GI_i * available carbohydrate per serving_i) / 100",
@@ -546,12 +460,126 @@
     "unknownAmountOrMaterialMissingGiBlocks": true,
     "analoguesAndCategoryMeansAreLowConfidence": true,
     "documentedIngredientAliasesAllowed": true,
-    "recipeStructureAndCalculationInputAreIndependentlyBound": true
+    "recipeStructureAndCalculationInputAreIndependentlyBound": true,
+    "smallOmissionThresholdIsEditorialNotClinical": true
   },
   "beforeAfterFile": "glycemic-load-before-after-2026-10-25.json",
   "limitations": [
-    "The 72 structure-changed recipes remain blocked until each ingredient mapping and calculation source is reviewed; 21 had a previously calculated total.",
-    "The 9 material changes use the documented editorial comparison rule (zero-to-positive or at least 1.0 point); no clinical interpretation threshold is implied.",
-    "No recipe source text, ordinary nutrition calculation, Nutritics PR #100, deployment or production configuration was changed."
-  ]
+    "The audit covers 325 published Finnish recipes. It is a calculation and provenance audit, not a clinical validation or measured meal response.",
+    "Of 72 changed recipe structures, 21 had prior calculated values and were individually reviewed; 51 other changed recipes remain bound to the earlier source and stay uncalculated. Among the reviewed 21, some remain blocked for source or cumulative-omission reasons.",
+    "The previous 78-block split (21 structural, 33 tolerance-only, 16 GI-only, 8 both) describes the PR #104 pre-continuation snapshot. The current post-review snapshot has 99 calculated, 226 incomplete, and 91 of 190 previously calculated values blocked.",
+    "The 1 g/serving tolerance is an editorial policy currently retained. Two- and three-gram results are sensitivity scenarios only and require owner approval before any policy change.",
+    "GI scenario inputs are assumptions for sensitivity analysis, not evidence of ingredient GI. Low portions may be omitted within the current tolerance; significant missing GI sources and mismatched categories stay blocked.",
+    "Production changes have not been merged or deployed."
+  ],
+  "toleranceSensitivity": {
+    "retainedToleranceGPerServing": 1,
+    "changeApplied": false,
+    "ownerApprovalRequiredForAnyPolicyChange": true,
+    "historicalPR104ToleranceOnlyGroup": {
+      "previouslyCalculatedRecipes": 33,
+      "restoreAt1g": 0,
+      "restoreAt2g": 29,
+      "restoreAt3g": 33
+    },
+    "currentPostReviewThresholdScenarios": [
+      {
+        "toleranceG": 1,
+        "additionalPreviousCalculationsRestored": 0,
+        "eligibleTotal": 0,
+        "examplesAreScenariosNotGIEvidence": true,
+        "giScenarios": [
+          {
+            "assumedGI": 20,
+            "maxPerRecipeGLDelta": 0,
+            "maxOmittedCarbohydrateGPerServing": 0,
+            "definedLowMediumHighClassChanges": 0
+          },
+          {
+            "assumedGI": 50,
+            "maxPerRecipeGLDelta": 0,
+            "maxOmittedCarbohydrateGPerServing": 0,
+            "definedLowMediumHighClassChanges": 0
+          },
+          {
+            "assumedGI": 80,
+            "maxPerRecipeGLDelta": 0,
+            "maxOmittedCarbohydrateGPerServing": 0,
+            "definedLowMediumHighClassChanges": 0
+          },
+          {
+            "assumedGI": 120,
+            "maxPerRecipeGLDelta": 0,
+            "maxOmittedCarbohydrateGPerServing": 0,
+            "definedLowMediumHighClassChanges": 0
+          }
+        ]
+      },
+      {
+        "toleranceG": 2,
+        "additionalPreviousCalculationsRestored": 34,
+        "eligibleTotal": 34,
+        "examplesAreScenariosNotGIEvidence": true,
+        "giScenarios": [
+          {
+            "assumedGI": 20,
+            "maxPerRecipeGLDelta": 0.39660000000000006,
+            "maxOmittedCarbohydrateGPerServing": 1.983,
+            "definedLowMediumHighClassChanges": 0
+          },
+          {
+            "assumedGI": 50,
+            "maxPerRecipeGLDelta": 0.9915,
+            "maxOmittedCarbohydrateGPerServing": 1.983,
+            "definedLowMediumHighClassChanges": 0
+          },
+          {
+            "assumedGI": 80,
+            "maxPerRecipeGLDelta": 1.5864000000000003,
+            "maxOmittedCarbohydrateGPerServing": 1.983,
+            "definedLowMediumHighClassChanges": 0
+          },
+          {
+            "assumedGI": 120,
+            "maxPerRecipeGLDelta": 2.3796,
+            "maxOmittedCarbohydrateGPerServing": 1.983,
+            "definedLowMediumHighClassChanges": 1
+          }
+        ]
+      },
+      {
+        "toleranceG": 3,
+        "additionalPreviousCalculationsRestored": 39,
+        "eligibleTotal": 39,
+        "examplesAreScenariosNotGIEvidence": true,
+        "giScenarios": [
+          {
+            "assumedGI": 20,
+            "maxPerRecipeGLDelta": 0.59155,
+            "maxOmittedCarbohydrateGPerServing": 2.95775,
+            "definedLowMediumHighClassChanges": 0
+          },
+          {
+            "assumedGI": 50,
+            "maxPerRecipeGLDelta": 1.478875,
+            "maxOmittedCarbohydrateGPerServing": 2.95775,
+            "definedLowMediumHighClassChanges": 0
+          },
+          {
+            "assumedGI": 80,
+            "maxPerRecipeGLDelta": 2.3662,
+            "maxOmittedCarbohydrateGPerServing": 2.95775,
+            "definedLowMediumHighClassChanges": 0
+          },
+          {
+            "assumedGI": 120,
+            "maxPerRecipeGLDelta": 3.5493,
+            "maxOmittedCarbohydrateGPerServing": 2.95775,
+            "definedLowMediumHighClassChanges": 1
+          }
+        ]
+      }
+    ],
+    "interpretation": "Scenario GI 20/50/80/120 values only estimate sensitivity; they are not measured values, bounds, or substitutes for missing GI. Alternatives remain unapplied."
+  }
 }

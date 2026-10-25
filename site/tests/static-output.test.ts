@@ -88,12 +88,21 @@ test("recipe index is prerendered and links only published languages", async () 
 test("GK values link to centralized recipe details on every published translation", async () => {
   assert.equal(glycemicLoadPilotReviewedRecipeCount, 325);
   assert.equal(glycemicLoadPilotResults.length, 324);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, 112);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 212);
-  for (const id of ["indonesialainen-ketoprak-aamiaiskulho", "lahi-ita-manakish-zaatarilla", "japanilainen-onigiri-lohella", "kiinalainen-soijamaito-aamiaisella", "paella-valenciana"]) {
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, 99);
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 225);
+  for (const [id, expected] of [
+    ["indonesialainen-ketoprak-aamiaiskulho", 26.67],
+    ["lahi-ita-manakish-zaatarilla", 33.06],
+    ["japanilainen-onigiri-lohella", 26.47],
+    ["kiinalainen-soijamaito-aamiaisella", 0.67],
+  ] as const) {
     const result = glycemicLoadPilotResults.find((entry) => entry.recipeId === id);
-    assert.equal(result?.status, "INSUFFICIENT SOURCE DATA", `${id}: changed input cannot reuse its previous GL`);
+    assert.equal(result?.status, "CALCULATED", `${id}: reviewed current inputs have a complete result`);
+    assert.equal(result?.glycemicLoadPerServing, expected, `${id}: current calculation is exposed`);
   }
+  const paella = glycemicLoadPilotResults.find((entry) => entry.recipeId === "paella-valenciana");
+  assert.equal(paella?.status, "INSUFFICIENT SOURCE DATA", "Paella remains blocked without a suitable chicken-stock GI source");
+  assert.equal(paella?.glycemicLoadPerServing, null);
   assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED" && result.glycemicLoadPerServing === 0 && result.omittedAvailableCarbohydratePerServingG > 0).length, 3);
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);

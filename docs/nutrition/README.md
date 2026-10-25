@@ -327,58 +327,71 @@ GK-laskennan koko Fineli Rel20 -viiteaineisto on `fineli-release-20-reference.js
 
 ### GK-laadunvarmistuksen tila 25.10.2026
 
-Yllä oleva erätilanne on historiallinen. Auditointi tehtiin lähde-SHA:sta
-`3e410436a82df391075f7a762c23f011624a8ca6`; vertailukohta on viimeisin
-GK-katselmus `b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5`. Kaikki 325 reseptiä
-tarkistettiin. Uudessa auditissa 112 GK-kokonaisarviota on laskettu ja 213
-keskeneräisiä. Aiemmista 190 arviosta 78 estyy edelleen: 72 reseptin sidottu
-ainesosa- tai valmistusrakenne on muuttunut, ja muilla estävä lähde tai määrä
-puuttuu. Katso ennen/jälkeen luvut tiedostoista
-`glycemic-load-quality-audit-2026-10-25.json` ja
+Tämä tilannekuva perustuu Reseptit-lähdesisältöön
+`3e410436a82df391075f7a762c23f011624a8ca6`; vertailukohta on GK-katselmus
+`b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5`. Auditointi kattaa kaikki 325
+julkaistua suomenkielistä reseptiä. Alun perin laskettuja arvioita oli 190 ja
+keskeneräisiä 135. PR #104:n ennen jatkokorjauksia tekemässä tilannekuvassa
+laskettuja oli 112, keskeneräisiä 213 ja aiemmin lasketuista 78 estyi
+(21 rakenne-, 33 toleranssi-, 16 GI-lähde- sekä 8 yhdistetyn syyn tapausta).
+Jatkokorjausten jälkeen laskettuja on 99 ja keskeneräisiä 226; 91 aiemmin
+lasketuista ei ole tällä hetkellä laskettu. Luvut eivät ole ristiriidassa:
+jatkokorjaus tiukensi tuoteryhmävastaavuuden tarkistusta, mikä paljasti uusia
+GI-estotapauksia. 72 rakennemuutoksesta 21 aiemmin laskettua reseptiä käytiin
+yksitellen läpi; 51 muuta muuttunutta rakennetta oli jo ennestään keskeneräisiä
+ja pysyy julkaisemattomana. Koneellinen auditointi ja ennen/jälkeen-rivit ovat
+tiedostoissa `glycemic-load-quality-audit-2026-10-25.json` ja
 `glycemic-load-before-after-2026-10-25.json`.
 
-Laskennan kaava on `sum(GI_i × imeytyvä hiilihydraatti_i annosta kohti) / 100`.
-Reseptin sidonta kattaa tunnisteen, annosmäärän, järjestetyt ainesosanimet,
-määrät, yksiköt ja huomiot, valmistustavan, valmistusohjeen sekä muistiinpanot.
-Toinen fingerprint sitoo laskentasyötteen: Fineli- ja GI-tunnisteet, määrät,
-annosmuunnokset, lähdeperustelut ja oletukset. Molemmat tarkistetaan joka
-auditissa ja buildissa. Jos sidottu ainesosa, määrä, annos, valmistus tai
-laskentasyöte muuttuu, vanha kokonaisarvio estyy. Sidoksen päivittäminen
-edellyttää ainesosamäppäyksen ja lähteiden uudelleenarviointia. Nimenmuutoksen
-voi hyväksyä vain lähteistettynä alias-vastaavuutena tiedostossa
-`glycemic-load-recipe-aliases.json`.
+GK lasketaan kaavalla `sum(GI_i × imeytyvä hiilihydraatti_i annosta kohti) / 100`.
+Version 2 reseptisidonta kattaa reseptitunnisteen, annosmäärän, järjestetyt
+ainesosat, määrät, yksiköt, laskentaan vaikuttavat ainesosatilat ja
+valmistustavan. Vapaamuotoiset ohjeet, huomiot, välimerkit ja muotoilu eivät
+mitätöi arviota. Eri sidonta seuraa laskentasyötteen määrityksiä ja olennaisten
+Fineli/GI-lähdetietueiden hiilihydraatti-, tila-, GI- ja vastaavuusarvoja.
+Laskentaan vaikuttavan muutoksen havaitseminen estää vanhan tuloksen käytön,
+kunnes muutos on tarkistettu.
 
-Alle 1 g/annos ainesosakohtaisia osuuksia ei poisteta yksittäin. Lähteistetty
-hiilihydraatti lasketaan aina, jos valittuun GI-tietueeseen on hyväksyttävä
-osuma. Jos GI-osuma puuttuu, tällainen pienosuus voidaan jättää toimituksellisella
-toleranssilla pois vain, kun kaikkien pois jätettävien osuuksien yhteismäärä jää
-alle 1 g/annos. Toleranssi on käyttäjän ymmärrettävyyteen tarkoitettu toimituksellinen
-raja, ei kliininen virhemarginaali. Pois jätetty hiilihydraattimäärä näytetään
-käyttäjälle ja tulos merkitään matalan luottamuksen arvioksi. Kun yhteissumma on
-vähintään 1 g/annos, resepti tarvitsee GI-lähteen tai kokonaisarvio estetään.
-Tuntematon määrä ei kuulu toleranssiin eikä muutu nollaksi.
+GI-osuman on vastattava ruoka- ja valmistusavaimia. Julkaistu, jäljitettävä
+analogia tai elintarvikeryhmän keskiarvo sallitaan matalan luottamuksen arviona
+vain, kun tuoteryhmä tarkistuu; eri ryhmän osuma (esimerkiksi kookosmaito
+currymaustetahnan GI-ryhmään) estetään. Julkaisematon, eri asteikon tai
+perusteeton arvo ei kelpaa. GK-arvio on suuntaa-antava ainesosalaskelma, ei
+valmiin aterian mittaus tai henkilökohtainen verensokerivaste.
 
-GI-lähdepolitiikka erottaa tutkimuksen menetelmällisen laadun ruoka- ja
-valmistustapavastaavuudesta. Julkaistua `STRONG`-arvoa käytetään suoraan vain,
-kun ruoka-aineen ja valmistuksen avaimet täsmäävät. Julkaistua ja jäljitettävää
-analogiaa voidaan käyttää, jos valmistustapa täsmää ja ruoka-ainetta koskeva
-perustelu on dokumentoitu; se alentaa luottamuksen matalaksi. Elintarvikeryhmän
-keskiarvo voidaan näyttää vain selvästi yleisenä matalan luottamuksen
-arviona, ei yksittäisen ruoan mitattuna GI-arvona. Julkaisematon, eri asteikon
-tai perustelematon GI-tieto estää olennaisen osuuden laskennan.
+Lähteistetyt positiiviset hiilihydraattiosuudet lasketaan, kun GI-vastaavuus
+on kelvollinen. Puuttuvan GI:n pienet osuudet voidaan jättää pois vain, jos
+niiden yhteissumma jää alle 1 g/annos; pois jäävä määrä näkyy ja luottamus on
+matala. Raja on toimituksellinen toleranssi, ei kliininen tarkkuusraja.
+Tuntematon määrä ja merkittävä puuttuva GI-lähde estävät GK:n. Toleranssi
+pidettiin 1 grammassa. Kahden gramman skenaario palauttaisi 34 ja kolmen gramman
+skenaario 39 nykyisin estettyä aiemmin laskettua arviota; nämä ovat
+herkkyyslaskelmia, eivät puuttuvien GI-arvojen näyttöä. GI-oletuksilla 20, 50
+ja 80 määritelty GK-luokka ei vaihtuisi, kun taas GI 120 -skenaariossa yksi
+resepti vaihtaisi luokkaa 2 g:n ja 3 g:n vaihtoehdoissa. Politiikkaa ei muutettu.
 
-Vertailussa 112 reseptin GK-numero muuttui aiempaan laskettuun arvoon nähden;
-65 muutosta oli numeerisia. Kahdeksan aiempaa nollaa muuttui positiiviseksi.
-Yksi muutos oli vähintään 1 GK-yksikkö annosta kohti (`kanakeitto-pinaatti-sitruuna`:
-1,00 → 2,31). Tässä toimituksellisessa vertailussa selvästi tulkintaan vaikuttavia
-muutoksia oli 9: kahdeksan nollasta positiiviseksi sekä yksi vähintään 1 yksikön
-muutos. Yhden yksikön vertailuraja on auditointia varten, ei kliininen raja.
-74 reseptissä pois jätettävien pienten osuuksien yhteissumma ylittää toleranssin ja GK-estää arvion. Kolme laskettua nollatulosta sisältää alle 1 g/annos pois jätetyn osuuden; ilman poisjättöjä vahvistettuja GK-nollia ei ole. Kolme epävarmaa nollaa esitetään noin-arviona pois jätetty hiilihydraattimäärä ilmoittaen.
-Maksalaatikon aiempi 3,45-arvio pysyy estettynä, koska maksan GI-arvoa ei ole
-osoitettu.
+Nykyisten 99 vertailukelpoisen GK-arvion joukossa 52 muuttui numeerisesti,
+7 aiempaa nollaa muuttui positiiviseksi, ja 4 arvoa muuttui vähintään yhden
+GK-yksikön. Nämä 11 tapausta ovat toimituksellisia tarkistuslippuja; yksikään
+ei vaihtanut määriteltyä matalaa (≤10), keskitasoista (11–19) tai korkeaa (≥20)
+luokkaa. Näin ollen luokitukseen perustuvia ruoanvalintavertailuja muuttavia
+tapauksia on 0. Ennen jatkokorjausta vertailukelpoisia 112 arviota: 65
+numeerista muutosta, 8 nollasta positiiviseksi, 1 vähintään yhden yksikön
+muutos ja 0 määritellyn luokan muutosta. 14 aiempaa ja 11 nykyistä tulosta
+ovat yhden GK-yksikön päässä luokkarajasta; rajaläheisyys ei itsessään osoita
+ruokavalinnan muuttumista.
 
-GK on ainesosakohtaisista GI- ja hiilihydraattiarvoista laskettu arvio, ei
-valmiista ateriasta mitattu GI eikä yksilöllinen verensokerivaste. Julkisella
-reseptisivulla arvo esitetään noin-arviona enintään yhden merkitsevän numeron
-tarkkuudella. Luottamustaso, pois jätetty pieni hiilihydraattimäärä ja
-menetelmälinkki näkyvät reseptisivulla.
+Aiemmin lasketuista estetyistä resepteistä 54 ainesosarivillä 49 reseptissä on
+vähintään 1 g/annos hiilihydraattia ilman kelvollista GI-vastaavuutta. Tämä on
+lähdekorjauksen työjono, ei oletus kyseisten ainesosien todellisesta GI:stä.
+Koko nykyisessä joukossa 79 reseptiä ylittää pienosuuksien 1 g:n yhteisrajan.
+84 aiemmin lasketun estetyn reseptin ongelmalistassa on GI-maininta, mukaan
+lukien myös alle 1 g:n osuudet; luku ei tarkoita, että jokainen olisi suuri
+hiilihydraattilähde. Kolme laskettua nollatulosta sisältää pienen poisjätön;
+täysin vahvistettuja nollatuloksia ei ole.
+
+Molemmat PR:t ovat Draft-tilassa. Muutoksia ei ole yhdistetty eikä julkaistu
+tuotantoon. Ennen mahdollista yhdistämistä tarvitaan GK-lähde- ja
+tuoteryhmävastaavuuksien katselmointi sekä päätös siitä, pidetäänkö 1 g:n
+toimituksellinen toleranssi voimassa. GK-tulos esitetään noin-arviona; se ei ole
+kliininen mittaustulos.
