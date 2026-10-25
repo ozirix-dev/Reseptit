@@ -15,7 +15,19 @@
     "currentCalculatedWithEligibleInputs": 99,
     "reviewedPreviouslyCalculatedStructureChanges": 21,
     "previouslyIncompleteStructureChangesLeftUnreviewed": 51,
-    "recoveredFromPreviousIncomplete": 0
+    "recoveredFromPreviousIncomplete": 0,
+    "pr104StageTransition": {
+      "pr104CalculatedBeforeContinuation": 112,
+      "pr104AcceptedStillCalculated": 86,
+      "newlyBlockedFromPr104": 26,
+      "newlyBlockedReasons": {
+        "toleranceOnly": 4,
+        "giOnly": 22
+      },
+      "restoredFromPr104BlockedStructuralReviews": 13,
+      "currentCalculated": 99,
+      "reconciliation": "112 - 26 + 13 = 99"
+    }
   },
   "numericComparison": {
     "commonPublished": 99,

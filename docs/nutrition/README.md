@@ -335,11 +335,13 @@ keskeneräisiä 135. PR #104:n ennen jatkokorjauksia tekemässä tilannekuvassa
 laskettuja oli 112, keskeneräisiä 213 ja aiemmin lasketuista 78 estyi
 (21 rakenne-, 33 toleranssi-, 16 GI-lähde- sekä 8 yhdistetyn syyn tapausta).
 Jatkokorjausten jälkeen laskettuja on 99 ja keskeneräisiä 226; 91 aiemmin
-lasketuista ei ole tällä hetkellä laskettu. Luvut eivät ole ristiriidassa:
-jatkokorjaus tiukensi tuoteryhmävastaavuuden tarkistusta, mikä paljasti uusia
-GI-estotapauksia. 72 rakennemuutoksesta 21 aiemmin laskettua reseptiä käytiin
-yksitellen läpi; 51 muuta muuttunutta rakennetta oli jo ennestään keskeneräisiä
-ja pysyy julkaisemattomana. Koneellinen auditointi ja ennen/jälkeen-rivit ovat
+lasketuista ei ole tällä hetkellä laskettu. PR #104:n 112 lasketusta 86 pysyi
+laskettuna; 26 estyi tarkemman tarkistuksen myötä (4 vain toleranssin ja 22
+GI-vastaavuuden vuoksi). Aiemmin rakenteen vuoksi estetyistä 13 saatiin
+laskettua yksilöllisen tarkistuksen jälkeen: `112 - 26 + 13 = 99`. 72
+rakennemuutoksesta 21 aiemmin laskettua reseptiä käytiin yksitellen läpi; 51
+muuta muuttunutta rakennetta oli jo ennestään keskeneräisiä ja pysyy
+julkaisemattomana. Koneellinen auditointi ja ennen/jälkeen-rivit ovat
 tiedostoissa `glycemic-load-quality-audit-2026-10-25.json` ja
 `glycemic-load-before-after-2026-10-25.json`.
 
