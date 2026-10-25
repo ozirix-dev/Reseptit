@@ -21,6 +21,21 @@ type RecipeResult = JsonRecord & {
 const siteDir = path.resolve(import.meta.dirname, "..");
 const root = path.resolve(siteDir, "..");
 const date = "2026-10-25";
+const historicalBaseline = {
+  recipeCount: 325,
+  calculated: 112,
+  incomplete: 213,
+  giRecordCount: 37,
+  strongGICount: 4,
+  supplementaryGICount: 33,
+  nutritionAuditCounts: {
+    VERIFIED: 0,
+    "ESTIMATE WITH EVIDENCE": 180,
+    "INSUFFICIENT SOURCE DATA": 86,
+    "CONFLICT REQUIRES REVIEW": 0,
+    MISSING: 59,
+  },
+};
 const readJson = async <T>(relativePath: string): Promise<T> =>
   JSON.parse(await readFile(path.join(root, relativePath), "utf8")) as T;
 
@@ -93,6 +108,9 @@ if (glAudit.results.length !== 325 || incomplete.length !== 213) {
   throw new Error(`Expected 325 current results and 213 baseline-incomplete recipes from the committed before/after audit; got ${glAudit.results.length}/${incomplete.length}`);
 }
 if (beforeAfter.length !== 325 || input.recipes.length !== 325) throw new Error("Expected 325 rows in all three source inventories.");
+if (JSON.stringify(nutritionAudit.counts) !== JSON.stringify(historicalBaseline.nutritionAuditCounts)) {
+  throw new Error("The historical 2026-10-25 nutrition audit counts changed; refresh the baseline evidence explicitly before regenerating this inventory.");
+}
 
 const rows = incomplete.map((recipe) => {
   const previous = priorByRecipe.get(recipe.recipeId);
@@ -214,7 +232,7 @@ const sourceCommit = "b51c769731ba40f9ab0b085e5b1b47f979651d9f";
 const inventory = {
   generatedAt: new Date().toISOString(),
   sourceCommit,
-  baseline: { recipeCount: glAudit.results.length, calculated: glAudit.results.length - incomplete.length, incomplete: incomplete.length, giRecordCount: giCatalog.records.length, strongGICount: giCatalog.records.filter((record) => record.qualityTier === "STRONG").length, supplementaryGICount: giCatalog.records.filter((record) => record.qualityTier === "SUPPLEMENTARY").length, nutritionAuditCounts: nutritionAudit.counts },
+  baseline: historicalBaseline,
   classificationPolicy: labels,
   overlapCountsByCategory: blockerTotals,
   nutritionGroups,

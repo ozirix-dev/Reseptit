@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T12:39:00.122Z",
+  "generatedAt": "2026-10-25T14:11:45.644Z",
   "sourceCommit": "b51c769731ba40f9ab0b085e5b1b47f979651d9f",
   "baseline": {
     "recipeCount": 325,
@@ -325,11 +325,11 @@
             "basis": "per100g-edible"
           },
           "assignedGIRecord": {
-            "id": "potato-boiled-preparation-analogue-gi-66",
-            "gi": 66,
+            "id": "potato-mashed-preparation-analogue-gi-73",
+            "gi": 73,
             "qualityTier": "STRONG",
             "foodKey": "potato",
-            "preparationKey": "boiled-unspecified"
+            "preparationKey": "mashed-unspecified"
           },
           "ingredientFoodKey": null,
           "ingredientPreparationKey": null,
@@ -338,7 +338,7 @@
               "id": "potato-boiled-china-gi-66",
               "gi": 66,
               "qualityTier": "STRONG",
-              "preparationMatches": true,
+              "preparationMatches": false,
               "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
             },
             {
@@ -394,12 +394,19 @@
               "id": "potato-boiled-tortilla-analogue-gi-66",
               "gi": 66,
               "qualityTier": "SUPPLEMENTARY",
-              "preparationMatches": true,
+              "preparationMatches": false,
               "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
             },
             {
               "id": "potato-boiled-preparation-analogue-gi-66",
               "gi": 66,
+              "qualityTier": "STRONG",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+            },
+            {
+              "id": "potato-mashed-preparation-analogue-gi-73",
+              "gi": 73,
               "qualityTier": "STRONG",
               "preparationMatches": true,
               "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
@@ -417,8 +424,8 @@
       ],
       "recipeServings": 4,
       "recipeBindingHash": "1437eac0e200de7504d0f17d8567013dccb20e735cf131b35bee3028c3add34b",
-      "calculationInputHash": "78867042a558109d343440d0d7409e66fc625f494db5a0aaf8602894837821ca",
-      "calculationEvidenceHash": "04056394a94cf071a6b97b647ffcefaf9e7818c79d3936714d3a69b8ca665dff",
+      "calculationInputHash": "b70375dc32fcd051fc602c3fd412692117567074756aa678383103def1dc5a83",
+      "calculationEvidenceHash": "f274e61ec2a64d7227fa0fcc728af1a5348a49eb08bf66f088354b33b21c903d",
       "structureStale": false
     },
     {
@@ -10330,6 +10337,13 @@
               "qualityTier": "STRONG",
               "preparationMatches": true,
               "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+            },
+            {
+              "id": "potato-mashed-preparation-analogue-gi-73",
+              "gi": 73,
+              "qualityTier": "STRONG",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
             }
           ],
           "message": "samosa: perunoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
@@ -12030,6 +12044,13 @@
               "qualityTier": "STRONG",
               "preparationMatches": false,
               "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+            },
+            {
+              "id": "potato-mashed-preparation-analogue-gi-73",
+              "gi": 73,
+              "qualityTier": "STRONG",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
             }
           ],
           "message": "tortilla-de-patatas: peruna: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
@@ -13678,122 +13699,6 @@
   ],
   "sourcePriorities": [
     {
-      "sourceGapId": "B|potato|boiled-unspecified|fineli-205-2026-10-24",
-      "ingredient": "perunoita",
-      "foodKey": "potato",
-      "preparationKey": "boiled-unspecified",
-      "fineliRecordId": "fineli-205-2026-10-24",
-      "affectedRecipeCount": 4,
-      "blockedRecipeIds": [
-        "aloo-paratha",
-        "lohikeitto-kuohukermalla",
-        "pani-puri",
-        "samosa"
-      ],
-      "currentlyCalculatedRecipeIds": [
-        "aloo-paratha",
-        "samosa"
-      ],
-      "currentlyIncompleteRecipeIds": [
-        "lohikeitto-kuohukermalla",
-        "pani-puri"
-      ],
-      "currentlyCalculatedRecipeCount": 2,
-      "currentlyIncompleteRecipeCount": 2,
-      "possibleSoleBlockerRecipeCount": 3,
-      "possibleSoleBlockerRecipeIds": [
-        "aloo-paratha",
-        "lohikeitto-kuohukermalla",
-        "samosa"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 56.575,
-      "priorityScore": 79.548,
-      "currentCandidates": [
-        {
-          "id": "potato-boiled-china-gi-66",
-          "gi": 66,
-          "preparation": "Boiled; China; test year 2005",
-          "qualityTier": "STRONG",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        },
-        {
-          "id": "potato-cooked-china-nonwestern-gi-66-4",
-          "gi": 66.4,
-          "preparation": "China; preparation not further specified in the compendium table",
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": false,
-          "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430"
-        },
-        {
-          "id": "potato-fried-evoo-lady-rosetta-gi-114",
-          "gi": 114,
-          "preparation": "Slices fried in extra-virgin olive oil",
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": false,
-          "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02"
-        },
-        {
-          "id": "potato-fried-evoo-spunta-gi-83",
-          "gi": 83,
-          "preparation": "Slices fried in extra-virgin olive oil",
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": false,
-          "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02"
-        },
-        {
-          "id": "potato-crisp-fried-china-nonwestern-gi-60-3",
-          "gi": 60.3,
-          "preparation": "Potato crisps, oil fried; China",
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": false,
-          "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430"
-        },
-        {
-          "id": "potato-steamed-nishiyutaka-nonwestern-gi-64",
-          "gi": 64,
-          "preparation": "Steamed; Japan",
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": false,
-          "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
-        },
-        {
-          "id": "potato-steamed-ainoaka-nonwestern-gi-63",
-          "gi": 63,
-          "preparation": "Steamed; Japan",
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": false,
-          "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
-        },
-        {
-          "id": "potato-steamed-dejima-nonwestern-gi-54",
-          "gi": 54,
-          "preparation": "Steamed; Japan",
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": false,
-          "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
-        },
-        {
-          "id": "potato-boiled-tortilla-analogue-gi-66",
-          "gi": 66,
-          "preparation": "Boiled potato used as a broad preparation analogue for slow oil-cooked tortilla potato",
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        },
-        {
-          "id": "potato-boiled-preparation-analogue-gi-66",
-          "gi": 66,
-          "qualityTier": "STRONG",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "A record exists but the current food/preparation/source mapping is rejected."
-      ]
-    },
-    {
       "sourceGapId": "A|?|?|afcd-F002991-release-3",
       "ingredient": "kookosmaitoa",
       "foodKey": null,
@@ -13884,6 +13789,127 @@
           "qualityTier": "SUPPLEMENTARY",
           "preparationMatches": true,
           "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/10824718/"
+        }
+      ],
+      "currentQualityNotes": [
+        "A record exists but the current food/preparation/source mapping is rejected."
+      ]
+    },
+    {
+      "sourceGapId": "B|potato|boiled-unspecified|fineli-205-2026-10-24",
+      "ingredient": "perunoita",
+      "foodKey": "potato",
+      "preparationKey": "boiled-unspecified",
+      "fineliRecordId": "fineli-205-2026-10-24",
+      "affectedRecipeCount": 3,
+      "blockedRecipeIds": [
+        "lohikeitto-kuohukermalla",
+        "pani-puri",
+        "samosa"
+      ],
+      "currentlyCalculatedRecipeIds": [
+        "samosa"
+      ],
+      "currentlyIncompleteRecipeIds": [
+        "lohikeitto-kuohukermalla",
+        "pani-puri"
+      ],
+      "currentlyCalculatedRecipeCount": 1,
+      "currentlyIncompleteRecipeCount": 2,
+      "possibleSoleBlockerRecipeCount": 2,
+      "possibleSoleBlockerRecipeIds": [
+        "lohikeitto-kuohukermalla",
+        "samosa"
+      ],
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 41.075,
+      "priorityScore": 53.29,
+      "currentCandidates": [
+        {
+          "id": "potato-boiled-china-gi-66",
+          "gi": 66,
+          "preparation": "Boiled; China; test year 2005",
+          "qualityTier": "STRONG",
+          "preparationMatches": true,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        },
+        {
+          "id": "potato-cooked-china-nonwestern-gi-66-4",
+          "gi": 66.4,
+          "preparation": "China; preparation not further specified in the compendium table",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430"
+        },
+        {
+          "id": "potato-fried-evoo-lady-rosetta-gi-114",
+          "gi": 114,
+          "preparation": "Slices fried in extra-virgin olive oil",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02"
+        },
+        {
+          "id": "potato-fried-evoo-spunta-gi-83",
+          "gi": 83,
+          "preparation": "Slices fried in extra-virgin olive oil",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02"
+        },
+        {
+          "id": "potato-crisp-fried-china-nonwestern-gi-60-3",
+          "gi": 60.3,
+          "preparation": "Potato crisps, oil fried; China",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430"
+        },
+        {
+          "id": "potato-steamed-nishiyutaka-nonwestern-gi-64",
+          "gi": 64,
+          "preparation": "Steamed; Japan",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+        },
+        {
+          "id": "potato-steamed-ainoaka-nonwestern-gi-63",
+          "gi": 63,
+          "preparation": "Steamed; Japan",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+        },
+        {
+          "id": "potato-steamed-dejima-nonwestern-gi-54",
+          "gi": 54,
+          "preparation": "Steamed; Japan",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+        },
+        {
+          "id": "potato-boiled-tortilla-analogue-gi-66",
+          "gi": 66,
+          "preparation": "Boiled potato used as a broad preparation analogue for slow oil-cooked tortilla potato",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": true,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        },
+        {
+          "id": "potato-boiled-preparation-analogue-gi-66",
+          "gi": 66,
+          "qualityTier": "STRONG",
+          "preparationMatches": true,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        },
+        {
+          "id": "potato-mashed-preparation-analogue-gi-73",
+          "gi": 73,
+          "preparation": "Mashed; China; test year 2005",
+          "qualityTier": "STRONG",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
         }
       ],
       "currentQualityNotes": [
@@ -14150,6 +14176,14 @@
           "qualityTier": "STRONG",
           "preparationMatches": false,
           "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        },
+        {
+          "id": "potato-mashed-preparation-analogue-gi-73",
+          "gi": 73,
+          "preparation": "Mashed; China; test year 2005",
+          "qualityTier": "STRONG",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
         }
       ],
       "currentQualityNotes": [
@@ -14214,6 +14248,121 @@
       "currentCandidates": [],
       "currentQualityNotes": [
         "No accepted GI match is currently assigned."
+      ]
+    },
+    {
+      "sourceGapId": "B|potato|mashed-unspecified|fineli-205-2026-10-24",
+      "ingredient": "perunoita",
+      "foodKey": "potato",
+      "preparationKey": "mashed-unspecified",
+      "fineliRecordId": "fineli-205-2026-10-24",
+      "affectedRecipeCount": 1,
+      "blockedRecipeIds": [
+        "aloo-paratha"
+      ],
+      "currentlyCalculatedRecipeIds": [
+        "aloo-paratha"
+      ],
+      "currentlyIncompleteRecipeIds": [],
+      "currentlyCalculatedRecipeCount": 1,
+      "currentlyIncompleteRecipeCount": 0,
+      "possibleSoleBlockerRecipeCount": 1,
+      "possibleSoleBlockerRecipeIds": [
+        "aloo-paratha"
+      ],
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 15.5,
+      "priorityScore": 17.5,
+      "currentCandidates": [
+        {
+          "id": "potato-boiled-china-gi-66",
+          "gi": 66,
+          "preparation": "Boiled; China; test year 2005",
+          "qualityTier": "STRONG",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        },
+        {
+          "id": "potato-cooked-china-nonwestern-gi-66-4",
+          "gi": 66.4,
+          "preparation": "China; preparation not further specified in the compendium table",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430"
+        },
+        {
+          "id": "potato-fried-evoo-lady-rosetta-gi-114",
+          "gi": 114,
+          "preparation": "Slices fried in extra-virgin olive oil",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02"
+        },
+        {
+          "id": "potato-fried-evoo-spunta-gi-83",
+          "gi": 83,
+          "preparation": "Slices fried in extra-virgin olive oil",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02"
+        },
+        {
+          "id": "potato-crisp-fried-china-nonwestern-gi-60-3",
+          "gi": 60.3,
+          "preparation": "Potato crisps, oil fried; China",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430"
+        },
+        {
+          "id": "potato-steamed-nishiyutaka-nonwestern-gi-64",
+          "gi": 64,
+          "preparation": "Steamed; Japan",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+        },
+        {
+          "id": "potato-steamed-ainoaka-nonwestern-gi-63",
+          "gi": 63,
+          "preparation": "Steamed; Japan",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+        },
+        {
+          "id": "potato-steamed-dejima-nonwestern-gi-54",
+          "gi": 54,
+          "preparation": "Steamed; Japan",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+        },
+        {
+          "id": "potato-boiled-tortilla-analogue-gi-66",
+          "gi": 66,
+          "preparation": "Boiled potato used as a broad preparation analogue for slow oil-cooked tortilla potato",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        },
+        {
+          "id": "potato-boiled-preparation-analogue-gi-66",
+          "gi": 66,
+          "preparation": "Boiled; China; test year 2005",
+          "qualityTier": "STRONG",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        },
+        {
+          "id": "potato-mashed-preparation-analogue-gi-73",
+          "gi": 73,
+          "qualityTier": "STRONG",
+          "preparationMatches": true,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        }
+      ],
+      "currentQualityNotes": [
+        "A record exists but the current food/preparation/source mapping is rejected."
       ]
     },
     {
