@@ -89,6 +89,13 @@ const expectedRecipeIds = [
   "lahi-ita-pistaasijogurtti", "karibia-plantain-aamiaislautanen", "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
   "korealainen-mandu-keitto-aamiaiseksi", "tunisialainen-brik", "dal-makhani", "kung-pao-kana", "mala-xiang-guo",
   "mapo-tofu", "bouillabaisse", "pav-bhaji", "pekingin-ankka", "sichuan-hot-pot", "tunisialainen-ojja",
+  "karibia-ackee-ja-suolakala", "karibia-callaloo-munakas", "korealainen-gyeran-mari-kasviksilla",
+  "japanilainen-hojicha-jogurtti-persimonilla", "karibia-jamaikalainen-munakokkeli", "lahi-ita-labneh-kulho-zaatarilla",
+  "pellava-puuro-pahkinoilla", "lahi-ita-menemen-sumakilla", "pohjoisafrikkalainen-harissa-shakshuka",
+  "valimerellinen-pinaatti-fetashakshuka", "kiinalainen-teehaudutetut-munat", "thai-kai-jiao-yrteilla",
+  "yrttituorejuusto-kinkkurullat", "carnitas-salaattitacot", "rogan-josh", "kreikkalainen-kanavuoka-oliiveilla",
+  "kana-tagine-sitruunalla", "miso-lohi-paksoi", "palak-paneer", "shoyu-kanakeitto-konjac",
+  "hunaja-sinappikana-kaalilla", "siskonmakkarakeitto-juurekset", "tandoorikana", "vhh-pyttipannu",
 ];
 const recipeCategories: Record<string, string> = {
   "tortilla-de-patatas": "paaruoat", "vhh-lihamureke": "paaruoat", hummus: "alkuruoat",
@@ -213,8 +220,18 @@ const recipeCategories: Record<string, string> = {
   "tunisialainen-brik": "alkuruoat", "dal-makhani": "paaruoat", "kung-pao-kana": "paaruoat",
   "mala-xiang-guo": "paaruoat", "mapo-tofu": "paaruoat", bouillabaisse: "paaruoat",
   "pav-bhaji": "paaruoat", "pekingin-ankka": "paaruoat", "sichuan-hot-pot": "paaruoat", "tunisialainen-ojja": "paaruoat",
+  "karibia-ackee-ja-suolakala": "aamupalat", "karibia-callaloo-munakas": "aamupalat",
+  "korealainen-gyeran-mari-kasviksilla": "aamupalat", "japanilainen-hojicha-jogurtti-persimonilla": "aamupalat",
+  "karibia-jamaikalainen-munakokkeli": "aamupalat", "lahi-ita-labneh-kulho-zaatarilla": "aamupalat",
+  "pellava-puuro-pahkinoilla": "aamupalat", "lahi-ita-menemen-sumakilla": "aamupalat",
+  "pohjoisafrikkalainen-harissa-shakshuka": "aamupalat", "valimerellinen-pinaatti-fetashakshuka": "aamupalat",
+  "kiinalainen-teehaudutetut-munat": "aamupalat", "thai-kai-jiao-yrteilla": "aamupalat",
+  "yrttituorejuusto-kinkkurullat": "aamupalat", "carnitas-salaattitacot": "paaruoat", "rogan-josh": "paaruoat",
+  "kreikkalainen-kanavuoka-oliiveilla": "paaruoat", "kana-tagine-sitruunalla": "paaruoat", "miso-lohi-paksoi": "paaruoat",
+  "palak-paneer": "paaruoat", "shoyu-kanakeitto-konjac": "paaruoat", "hunaja-sinappikana-kaalilla": "paaruoat",
+  "siskonmakkarakeitto-juurekset": "paaruoat", "tandoorikana": "paaruoat", "vhh-pyttipannu": "paaruoat",
 };
-const recipeFileNames: Record<string, string> = { "vhh-kaalilaatikko": "kaalilaatikko" };
+const recipeFileNames: Record<string, string> = { "vhh-kaalilaatikko": "kaalilaatikko", "vhh-pyttipannu": "pyttipannu-vhh" };
 
 const [input, foodRecords, giSource] = await Promise.all([
   readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8").then((text) => JSON.parse(text)),
