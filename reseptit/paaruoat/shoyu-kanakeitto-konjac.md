@@ -60,7 +60,7 @@ fat_per_serving_g: 7.7
 
 ## Kuvaus
 
-Tamari-liemessä kypsyvä broileri, inkivääri ja shiitake muodostavat konjac-nuudeleilla täydennetyn japanilaistyylisen keiton.
+Tamari-liemessä kypsyvä broileri, inkivääri ja herkkusienet muodostavat konjac-nuudeleilla täydennetyn japanilaistyylisen keiton.
 
 ## Ainekset
 
