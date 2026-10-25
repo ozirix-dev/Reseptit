@@ -106,9 +106,6 @@ export function classifyGlycemicLoad(value: number): GlycemicLoadClass {
 
 function categoryMeanMatchesFood(foodKey: string, foodName: string, ingredientName: string): boolean {
   const text = `${foodName} ${ingredientName}`.normalize("NFC").toLocaleLowerCase("fi-FI");
-  const ingredient = ingredientName.normalize("NFC").toLocaleLowerCase("fi-FI");
-  if (foodKey === "rice-category-mean" && /riisiviinietik|rice\s+(?:wine\s+)?vinegar/.test(ingredient)) return false;
-  if (foodKey === "dairy" && /maitosukla|milk\s+chocolate|suklaa|chocolate/.test(ingredient)) return false;
   const patterns: Record<string, RegExp> = {
     dairy: /maito|milk|cream|kerma|jogurtti|yogurt|juusto|cheese|rahka|quark|paneer|feta|ricotta|voi|butter|dairy/,
     "bakery-products-category-mean": /jauho|flour|mannasuurimo|semolina|leipä|bread|kaura|oat|vehnä|wheat|ruis|rye/,
@@ -126,6 +123,18 @@ function categoryMeanMatchesFood(foodKey: string, foodName: string, ingredientNa
     "curry-paste": /currytahna|curry paste/,
   };
   return patterns[foodKey]?.test(text) ?? false;
+}
+
+function hasClearFoodFamilyMismatch(foodKey: string, foodName: string, ingredientName: string): boolean {
+  const source = `${foodKey} ${foodName}`.normalize("NFC").toLocaleLowerCase("fi-FI");
+  const ingredient = ingredientName.normalize("NFC").toLocaleLowerCase("fi-FI");
+  const riceVinegar = /riisiviinietik|rice\s+(?:wine\s+)?vinegar/.test(ingredient);
+  const sourceIsRice = /riisi|rice/.test(source) && !/etikka|vinegar/.test(source);
+  if (riceVinegar && sourceIsRice) return true;
+
+  const milkChocolate = /maitosukla|milk\s+chocolate|suklaa|chocolate/.test(ingredient);
+  const sourceIsDairy = foodKey === "dairy" || /maito|milk|dairy|cream|kerma|yogurt|jogurtti/.test(source);
+  return milkChocolate && sourceIsDairy;
 }
 
 /**
@@ -253,10 +262,12 @@ export function calculateGlycemicLoad(
         && (!ingredient.foodKey || ingredient.foodKey === matchedGi.foodKey)
         && (!ingredient.preparationKey || ingredient.preparationKey === matchedGi.preparationKey)
         && categoryMeanMatchesFood(matchedGi.foodKey, food?.name ?? "", ingredient.name));
-      const matchValid = Boolean(matchedGi && (match === "CATEGORY_MEAN" ? categoryMeanMatch : keysMatch)
+      const foodFamilyMismatch = Boolean(matchedGi && food && hasClearFoodFamilyMismatch(matchedGi.foodKey, food.name, ingredient.name));
+      const matchValid = Boolean(matchedGi && !foodFamilyMismatch && (match === "CATEGORY_MEAN" ? categoryMeanMatch : keysMatch)
         && ["EXACT", "ANALOG", "CATEGORY_MEAN"].includes(match));
       if (!sourceValid || !matchValid) {
         const reason = !matchedGi ? ingredient.giMatchEvidence || "GI evidence is missing."
+          : foodFamilyMismatch ? "GI food family does not match the ingredient (for example, rice is not rice vinegar or dairy is not milk chocolate)."
           : "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.";
         if (availablePerServing < 1) {
           omittedAvailableCarbohydratePerServingG += availablePerServing;

@@ -137,11 +137,15 @@ test("whole-number GL classes and one-significant-digit display use separate rou
   }
 });
 
-test("category means reject clear rice-vinegar/rice and milk-chocolate/dairy mismatches", () => {
+test("GI mappings reject clear rice-vinegar/rice and milk-chocolate/dairy mismatches", () => {
   const riceGi = { ...gi, id: "rice-mean", foodKey: "rice-category-mean", preparationKey: "category-mean", matchKind: "CATEGORY_MEAN" as const, qualityTier: "SUPPLEMENTARY" as const, confidence: "LOW" as const };
+  const directRiceGi = { ...gi, id: "direct-rice", foodKey: "rice-category-mean", preparationKey: "category-mean", matchKind: "EXACT" as const };
+  const analogueRiceGi = { ...gi, id: "analogue-rice", foodKey: "rice-category-mean", preparationKey: "category-mean", matchKind: "ANALOG" as const, qualityTier: "SUPPLEMENTARY" as const, confidence: "LOW" as const };
   const dairyGi = { ...gi, id: "dairy-mean", foodKey: "dairy", preparationKey: "category-mean", matchKind: "CATEGORY_MEAN" as const, qualityTier: "SUPPLEMENTARY" as const, confidence: "LOW" as const };
   for (const scenario of [
     { name: "riisiviinietikkaa", food: food("rice", 79, "Dry uncooked long-grain rice"), giRecord: riceGi, foodKey: "rice-category-mean" },
+    { name: "rice wine vinegar", food: food("rice", 79, "Dry uncooked long-grain rice"), giRecord: directRiceGi, foodKey: "rice-category-mean" },
+    { name: "rice vinegar", food: food("rice", 79, "Dry uncooked long-grain rice"), giRecord: analogueRiceGi, foodKey: "rice-category-mean" },
     { name: "maitosuklaata", food: food("milk", 5, "Whole milk"), giRecord: dairyGi, foodKey: "dairy" },
   ]) {
     const result = calculateGlycemicLoad({
@@ -151,6 +155,17 @@ test("category means reject clear rice-vinegar/rice and milk-chocolate/dairy mis
     assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
     assert.equal(result.glycemicLoadPerServing, null);
   }
+});
+
+test("Jiaozi rice wine vinegar has no dry-rice or rice-GI source mapping", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const pilot = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"));
+  const vinegar = pilot.recipes.find((recipe: { recipeId: string }) => recipe.recipeId === "jiaozi")?.ingredients
+    .find((ingredient: { name: string }) => ingredient.name === "riisiviinietikkaa");
+  assert.equal(vinegar?.grams, 12);
+  assert.equal(vinegar?.fineliRecordId, null);
+  assert.equal(vinegar?.giRecordId, null);
+  assert.match(vinegar?.excludedReason ?? "", /not treated as zero/);
 });
 
 test("the GL Markdown summary stays aligned with the machine-readable audit", async () => {

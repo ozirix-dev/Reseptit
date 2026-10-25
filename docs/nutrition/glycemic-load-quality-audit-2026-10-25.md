@@ -76,9 +76,10 @@ viitteen URL-muotoilu ei muuta laskentaa. Fingerprint käyttää nykyistä
 Jiaozin 12 g riisiviinietikkaa ei enää ole mäpätty Finelin kuivaan riisiin tai
 riisin GI-keskiarvoon. Etikan hiilihydraattikoostumusta ei ole lähteistetty,
 joten se merkitään tuntemattomaksi eikä nollaksi. Jiaozi pysyy keskeneräisenä;
-myös taikinalevyjen lähdekoostumus puuttuu. GI-kategoriatesti estää vastaavasti
-riisiviinietikan/riisin ja maitosuklaan/maidon selkeät tuoteryhmäristiriidat.
-Muita reseptejä ei käyty uudelleen läpi manuaalisesti.
+myös taikinalevyjen lähdekoostumus puuttuu. GI-mäppäyksen selvä
+tuoteryhmäsuoja estää riisiviinietikan/riisin ja maitosuklaan/maidon
+ristiriidat suorissa, analogisissa ja ryhmäkeskiarvo-osumissa. Muita reseptejä
+ei käyty uudelleen läpi manuaalisesti.
 
 ## Pienosuudet ja avoimet lähteet
 
@@ -98,7 +99,8 @@ tarkistusta. Nämä eivät muuta nykyistä yhden gramman politiikkaa.
 
 Regressiotestit kattavat polyolien ja kuidun lähdetiivisteet, metatietojen
 muutosten ohittamisen, ruoan tilan muutoksen, 11 luokitus-/pyöristysraja-arvoa,
-virheelliset tuoteryhmävastaavuudet ja tämän Markdown-yhteenvedon yhdenmukaisuuden
+suorat, analogiset ja ryhmäkeskiarvomäppäykset selviin tuoteryhmäristiriitoihin
+sekä Jiaozi-syötteen ja tämän Markdown-yhteenvedon yhdenmukaisuuden
 JSON-auditoinnin kanssa. Neljän kieliversion GK-sivun ja julkaisuesteiden
 toimivuus varmennetaan projektin normaaleilla testeillä ja buildilla.
 
