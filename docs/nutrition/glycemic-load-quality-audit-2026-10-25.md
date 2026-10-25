@@ -56,9 +56,7 @@ tällaisten pois jätettävien osuuksien summa jää alle 1 g/annos. Raja on
 toimituksellinen toleranssi ymmärrettävien arvioiden säilyttämiseksi, ei kliininen
 virheraja. Tuntematon määrä estää laskennan eikä kuulu toleranssiin. Nykyisistä
 112 arviosta 93 sisältää dokumentoidun pienosuuksien poissulun; suurin on
-0,99075 g/annos. Kolmen tällaisen laskelman sisäinen summa pyöristyy nollaan.
-Niitä ei esitetä tarkkana nollana: käyttöliittymä näyttää noin-arvion ja kertoo
-pois jätetyn hiilihydraattimäärän.
+0,99075 g/annos. 74 reseptissä pienten poisjättöjen yhteismäärä ylittää toleranssin ja GK estyy. Kolme laskettua nollatulosta sisältää alle 1 g/annos pois jätettyä hiilihydraattia; yhtään ilman poisjättöjä vahvistettua GK-kokonaisnollaa ei jäänyt. Nämä epävarmat nollat näytetään noin-arvioina pois jätetty määrä ilmoittaen.
 
 ## Lähteiden laatu ja vastaavuudet
 

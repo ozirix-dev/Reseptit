@@ -437,7 +437,10 @@
     "smallOmissionBudgetGPerServing": 1,
     "editorialNotClinical": true,
     "roundedInternalZeroTotals": 3,
-    "roundedInternalZeroTotalsShownAsExactZero": false
+    "roundedInternalZeroTotalsShownAsExactZero": false,
+    "currentRecipesOverCumulativeOmissionBudget": 74,
+    "currentCalculatedZeroTotalsWithOmission": 3,
+    "currentCalculatedExactZeroTotalsWithoutOmission": 0
   },
   "giMappings": {
     "inputIngredientMappings": {
@@ -531,7 +534,9 @@
       "hunaja-sinappikana-kaalilla",
       "tandoorikana"
     ],
-    "calculationInputMismatches": []
+    "currentCumulativeOmissionBudgetExceeded": 74,
+    "recipeStructureMismatches": 72,
+    "calculationInputMismatches": 0
   },
   "policy": {
     "formula": "sum(GI_i * available carbohydrate per serving_i) / 100",
