@@ -50,6 +50,11 @@ image:
   alt: Kookos-lime-kanacurry tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 5.66
+carbs_total_per_serving_g: 8.63
+protein_per_serving_g: 26.99
+fat_per_serving_g: 21.82
+
 ---
 # Kookos-lime-kanacurry
 

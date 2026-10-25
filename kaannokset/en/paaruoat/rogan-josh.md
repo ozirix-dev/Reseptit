@@ -73,6 +73,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/rogan-josh.md
 translation_of: rogan-josh
+carbs_net_per_serving_g: 4.39
+carbs_total_per_serving_g: 6.05
+protein_per_serving_g: 35.37
+fat_per_serving_g: 41.78
+
 ---
 
 # Kashmiri Rogan Josh

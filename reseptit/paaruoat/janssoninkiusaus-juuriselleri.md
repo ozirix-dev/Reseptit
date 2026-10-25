@@ -20,7 +20,7 @@ ingredients:
     item: juuriselleriä
   - amount: 125
     unit: g
-    item: anjovisfileitä mausteliemessä
+    item: öljyyn säilöttyjä anjovisfileitä, valutettuna
   - amount: 1
     unit: kpl
     item: sipuli
@@ -47,6 +47,11 @@ image:
   alt: Janssoninkiusaus juuriselleristä tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 8.38
+carbs_total_per_serving_g: 14.03
+protein_per_serving_g: 12.47
+fat_per_serving_g: 33.3
+
 ---
 # Janssoninkiusaus juuriselleristä
 
@@ -62,10 +67,10 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 1. Kuumenna uuni 200 asteeseen. Kuori juuriselleri ja leikkaa ohuiksi suikaleiksi. Hienonna sipuli.
 2. Voitele uunivuoka. Lado siihen juuriselleri, sipuli ja paloitellut anjovikset kerroksittain.
-3. Sekoita kerma ja maito. Kaada vuokaan ja lisää pari ruokalusikallista anjovisten maustelientä. Mausta kevyesti pippurilla.
+3. Sekoita kerma ja maito. Kaada vuokaan. Mausta kevyesti pippurilla; valutetuista anjoviksista tulee riittävästi suolaisuutta.
 4. Paista 50–60 minuuttia, kunnes selleri on pehmeää ja pinta kullanruskea. Peitä foliolla, jos pinta tummuu liikaa.
 5. Anna vetäytyä 10 minuuttia ja ripottele pinnalle tilli.
 
 ## Muistiinpanot
 
-Valitse mausteliemeen säilöttyjä anjovisfileitä, ei öljyyn säilöttyjä sardellifileitä. Anjovis on suolaista, joten lisäsuolaa ei yleensä tarvita.
+Valitse valutettuja öljyyn säilöttyjä anjovisfileitä. Anjovis on suolaista, joten lisäsuolaa ei yleensä tarvita.

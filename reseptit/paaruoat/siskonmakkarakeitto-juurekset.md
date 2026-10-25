@@ -50,6 +50,11 @@ image:
   alt: Siskonmakkarakeitto juureksilla tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 9.01
+carbs_total_per_serving_g: 12.11
+protein_per_serving_g: 12.01
+fat_per_serving_g: 17.42
+
 ---
 # Siskonmakkarakeitto juureksilla
 

@@ -1,0 +1,424 @@
+{
+  "recipeId": "sate-ayam",
+  "sourceHash": "dcab54e07f0d4689ffb36acb319e5bbaa5385908e1bd2b19ef0a86629f281661",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-18",
+  "servings": 4,
+  "scope": "4 servings; kecap manis is decomposed into measured soy sauce and brown sugar amounts for marinade and sauce; chicken thigh is raw boneless edible meat.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "broilerin reisilihaa",
+      "amount": 700,
+      "unit": "g",
+      "state": "raw skinless chicken thigh meat",
+      "matchEvidence": "Raw skinless chicken thigh meat; Fineli Release 20 record 30792.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-30792-release-20",
+        "name": "BROILERI, KOIPI-REISI, NAHATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30792",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw skinless chicken thigh meat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 19.65,
+          "fat": 3.42
+        }
+      }
+    },
+    {
+      "item": "soijakastiketta",
+      "amount": 32,
+      "unit": "g",
+      "state": "soy sauce as sold",
+      "matchEvidence": "Fineli 31 is soy sauce.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-31-release-20",
+        "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/31",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "soy sauce as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 9.5,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 9.5,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 5.17,
+          "fat": 0.08
+        }
+      }
+    },
+    {
+      "item": "fariinisokeria",
+      "amount": 18,
+      "unit": "g",
+      "state": "brown sugar as sold",
+      "matchEvidence": "AFCD F008969 is brown sugar.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F008969-release-3",
+        "name": "Sugar, brown",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "brown sugar as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 96.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.2,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "limettimehua",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "lime juice",
+      "matchEvidence": "AFCD F004729 is lime juice.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "1 tbsp lime juice = 15 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F004729-release-3",
+        "name": "Juice, lime",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "lime juice",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.2,
+          "fibre": 3.6,
+          "polyols": 0,
+          "protein": 0.8,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "valkosipulinkynttä",
+      "amount": 2,
+      "unit": "kpl",
+      "state": "raw peeled garlic",
+      "matchEvidence": "Raw peeled garlic; AFCD record F004193 has paired available-carbohydrate values confirming zero sugar alcohols.",
+      "gramsPerUnit": 3,
+      "conversionEvidence": "One medium garlic clove is represented by 3 g peeled edible garlic.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F004193-release-3",
+        "name": "Garlic, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw peeled garlic",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 10.2,
+          "fibre": 16.9,
+          "polyols": 0,
+          "protein": 6.1,
+          "fat": 2.8
+        }
+      }
+    },
+    {
+      "item": "jauhettua korianteria",
+      "amount": 1,
+      "unit": "tl",
+      "state": "ground coriander seed",
+      "matchEvidence": "AFCD Release 3 F003190 is coriander seed, dried, ground.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "One teaspoon ground coriander is represented as 2 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F003190-release-3",
+        "name": "Coriander seed, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground coriander seed",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 8.4,
+          "fibre": 41.9,
+          "polyols": 0,
+          "protein": 12.4,
+          "fat": 17.8
+        }
+      }
+    },
+    {
+      "item": "kurkumaa",
+      "amount": 0.5,
+      "unit": "tl",
+      "state": "ground turmeric",
+      "matchEvidence": "Ground turmeric; AFCD record F009335.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F009335-release-3",
+        "name": "Turmeric, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground turmeric",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 44.4,
+          "fibre": 22.7,
+          "polyols": 0,
+          "protein": 9.7,
+          "fat": 3.2
+        }
+      }
+    },
+    {
+      "item": "maapähkinävoita",
+      "amount": 150,
+      "unit": "g",
+      "state": "peanut butter, no added salt",
+      "matchEvidence": "Fineli 34667 is unsalted peanut butter.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-34667-release-20",
+        "name": "MAAPÄHKINÄLEVITE, EI LISÄTTYÄ SUOLAA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34667",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "peanut butter, no added salt",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 12.5,
+          "FIBT": 8.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 12.5,
+          "fibre": 8.1,
+          "polyols": 0,
+          "protein": 25.6,
+          "fat": 43
+        }
+      }
+    },
+    {
+      "item": "kookosmaitoa",
+      "amount": 200,
+      "unit": "ml",
+      "state": "canned coconut milk, regular fat",
+      "matchEvidence": "AFCD F002991 is canned regular-fat coconut milk.",
+      "gramsPerUnit": 0.92,
+      "conversionEvidence": "Coconut milk density = 0.92 g/ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F002991-release-3",
+        "name": "Coconut, milk, canned, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "canned coconut milk, regular fat",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.7,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.4,
+          "fat": 15.4
+        }
+      }
+    },
+    {
+      "item": "soijakastiketta",
+      "amount": 16,
+      "unit": "g",
+      "state": "soy sauce as sold",
+      "matchEvidence": "Fineli 31 is soy sauce.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-31-release-20",
+        "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/31",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "soy sauce as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 9.5,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 9.5,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 5.17,
+          "fat": 0.08
+        }
+      }
+    },
+    {
+      "item": "fariinisokeria",
+      "amount": 9,
+      "unit": "g",
+      "state": "brown sugar as sold",
+      "matchEvidence": "AFCD F008969 is brown sugar.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F008969-release-3",
+        "name": "Sugar, brown",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "brown sugar as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 96.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.2,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "limetti",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "raw lime",
+      "matchEvidence": "Raw lime, peeled; AFCD record F005198.",
+      "gramsPerUnit": 50,
+      "conversionEvidence": "Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F005198-release-3",
+        "name": "Lime, native, fruit",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw lime",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0.4,
+          "fibre": 3.6,
+          "polyols": 0,
+          "protein": 0.1,
+          "fat": 2.7
+        }
+      }
+    }
+  ]
+}

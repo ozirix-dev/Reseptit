@@ -1,5 +1,5 @@
 ---
-title: Valencian paella with chicken and hare
+title: Valencian chicken paella
 recipe_id: paella-valenciana
 url_slug: paella-valenciana
 category: paaruoka
@@ -14,31 +14,25 @@ cooking_method:
   - liesi
 difficulty: medium
 tags:
-  - "Mediterranean"
-  - "spanish"
-  - "chicken"
-  - "rice"
+  - Mediterranean
+  - spanish
+  - chicken
+  - rice
 image:
   src: paaruoat/paella-valenciana.webp
   alt: Paella with saffron rice, chicken and green beans
   width: 1279
   height: 853
 ingredients:
-  - amount: 400
+  - amount: 700
     unit: g
-    item: chicken thigh meat
-    note: in pieces
+    item: boneless skinless chicken thigh meat
   - amount: 300
     unit: g
-    item: hare or rabbit meat
-    note: in pieces; can be replaced with chicken
-  - amount: 300
-    unit: g
-    item: paella rice or porridge rice
+    item: short-grain white rice, dry
   - amount: 150
     unit: g
     item: green beans
-    note: chopped up
   - amount: 150
     unit: g
     item: crushed tomatoes
@@ -47,7 +41,7 @@ ingredients:
     item: chicken broth
   - amount: 1
     unit: tsp
-    item: smoked paprika powder
+    item: smoked paprika
   - amount: 0.25
     unit: tsp
     item: saffron
@@ -59,29 +53,36 @@ ingredients:
     item: salt
   - amount: 1
     unit: piece
-    item: sprig of rosemary
-    note: optional
+    item: rosemary sprig
 source_language: fi
 source_recipe: reseptit/paaruoat/paella-valenciana.md
 translation_of: paella-valenciana
+carbs_net_per_serving_g: 59.13
+carbs_total_per_serving_g: 61.1
+protein_per_serving_g: 40.13
+fat_per_serving_g: 16.69
 ---
 
-# Valencian paella with chicken and hare
+# Valencian chicken paella
 
-In the Valencian-style paella, short-grain rice is cooked in a pan in a saffron broth with chicken, rabbit and green beans.
+Chicken and short-grain rice cook together with green beans in a saffron broth.
 
 ## Description
 
-In the Valencian-style paella, short-grain rice is cooked in a pan in a saffron broth with chicken, rabbit and green beans.
+Chicken and short-grain rice cook together with green beans in a saffron broth.
 
 ## Preparation
 
-1. Heat the oil in a wide pan. Brown the chicken and rabbit pieces all over.
-2. Add the beans and fry for a few minutes. Mix in the tomato and smoked paprika.
-3. Add the rice and stir to coat the grains in the oil. Pour the hot broth in which the saffron has been soaked into the pan. Season with salt. Add the rosemary sprig to the stock if using; remove it before serving.
-4. Spread the ingredients evenly on the pan. Cook on medium heat for about 8 minutes and continue on lower heat for 12-15 minutes. Do not stir the rice again after adding the broth.
-5. When the rice is cooked and the liquid has been absorbed, remove the pan from the stove. Cover lightly and let rest for 5 minutes.
+1. Heat oil in a wide pan and brown the chicken all over.
+
+2. Add green beans and fry briefly. Stir in tomatoes and smoked paprika.
+
+3. Add dry rice and hot broth with saffron. Season with salt and add the rosemary sprig.
+
+4. Cook over medium heat for 8 minutes, then low heat for 12–15 minutes. Do not stir after adding broth.
+
+5. Remove from heat when rice is tender and liquid is absorbed. Cover and rest for 5 minutes; remove rosemary before serving.
 
 ## Notes
 
-- If you only use chicken, choose thigh meat, which remains juicy during long cooking.
+- This chicken-only version uses boneless thigh meat.

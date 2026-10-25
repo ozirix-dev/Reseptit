@@ -74,6 +74,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/bouillabaisse.md
 translation_of: bouillabaisse
+carbs_net_per_serving_g: 37.69
+carbs_total_per_serving_g: 41.44
+protein_per_serving_g: 56.75
+fat_per_serving_g: 11.4
+
 ---
 
 # Marseille bouillabaisse fisksoppa

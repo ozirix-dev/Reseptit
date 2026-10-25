@@ -47,6 +47,11 @@ image:
   alt: Miso-lohi paistetuilla paksoilla tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 2.91
+carbs_total_per_serving_g: 5.93
+protein_per_serving_g: 32.4
+fat_per_serving_g: 26.66
+
 ---
 # Miso-lohi paistetuilla paksoilla
 

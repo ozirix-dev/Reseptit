@@ -1,5 +1,5 @@
 ---
-title: Valenciansk paella med kyckling och kanin
+title: Valenciansk paella med kyckling
 recipe_id: paella-valenciana
 url_slug: paella-valenciana
 category: paaruoka
@@ -14,31 +14,25 @@ cooking_method:
   - liesi
 difficulty: mellannivå
 tags:
-  - "medelhavsmat"
-  - "spanska"
-  - "kyckling"
-  - "ris"
+  - medelhavsmat
+  - spanska
+  - kyckling
+  - ris
 image:
   src: paaruoat/paella-valenciana.webp
   alt: Paella med saffransris, kyckling och gröna bönor
   width: 1279
   height: 853
 ingredients:
-  - amount: 400
+  - amount: 700
     unit: g
-    item: kycklinglårkött
-    note: i bitar
+    item: benfritt kycklinglårkött utan skinn
   - amount: 300
     unit: g
-    item: hare eller kaninkött
-    note: i bitar; kan ersättas med kyckling
-  - amount: 300
-    unit: g
-    item: paellaris eller grötris
+    item: kortkornigt vitt ris, torrvikt
   - amount: 150
     unit: g
     item: gröna bönor
-    note: hackad
   - amount: 150
     unit: g
     item: krossade tomater
@@ -59,29 +53,36 @@ ingredients:
     item: salt
   - amount: 1
     unit: st
-    item: kvist rosmarin
-    note: valfritt
+    item: rosmarinkvist
 source_language: fi
 source_recipe: reseptit/paaruoat/paella-valenciana.md
 translation_of: paella-valenciana
+carbs_net_per_serving_g: 59.13
+carbs_total_per_serving_g: 61.1
+protein_per_serving_g: 40.13
+fat_per_serving_g: 16.69
 ---
 
-# Valenciansk paella med kyckling och kanin
+# Valenciansk paella med kyckling
 
-I paellan i valenciansk stil tillagas kortkornigt ris i en panna i en saffransbuljong med kyckling, kanin och haricots verts.
+Kyckling och kortkornigt ris tillagas med gröna bönor i saffransbuljong.
 
-## Beskrivning
+## Description
 
-I paellan i valenciansk stil tillagas kortkornigt ris i en panna i en saffransbuljong med kyckling, kanin och haricots verts.
+Kyckling och kortkornigt ris tillagas med gröna bönor i saffransbuljong.
 
-## Tillagning
+## Preparation
 
-1. Hetta upp oljan i en vid panna. Bryn kyckling- och kaninbitarna överallt.
-2. Tillsätt bönorna och fräs i några minuter. Blanda i tomat och rökt paprika.
-3. Tillsätt riset och rör om för att belägga kornen i oljan. Häll den varma buljongen som saffran har blötts i i pannan. Krydda med salt. Lägg rosmarinkvisten i buljongen om du använder den; ta bort kvisten före servering.
-4. Fördela ingredienserna jämnt på pannan. Koka på medelvärme i ca 8 minuter och fortsätt på lägre värme i 12-15 minuter. Rör inte om riset igen efter att ha tillsatt buljongen.
-5. När riset är kokt och vätskan har absorberats, ta bort kastrullen från spisen. Täck lätt och låt vila i 5 minuter.
+1. Hetta upp oljan i en vid panna och bryn kycklingen runtom.
 
-## Anteckningar
+2. Tillsätt gröna bönor och fräs kort. Rör ner tomater och rökt paprika.
 
-– Om du bara använder kyckling, välj lårkött som förblir saftigt under långkok.
+3. Tillsätt torrt ris och varm buljong med saffran. Salta och lägg i rosmarinkvisten.
+
+4. Koka på medelvärme i 8 minuter och därefter på låg värme i 12–15 minuter. Rör inte efter att buljongen tillsatts.
+
+5. Ta av från värmen när riset är mjukt och vätskan absorberad. Täck och vila i 5 minuter; ta bort rosmarinen före servering.
+
+## Notes
+
+- Den här versionen görs endast med benfritt kycklinglår.

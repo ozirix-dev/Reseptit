@@ -13,7 +13,7 @@ cooking_method: [uunissa paistaminen, grillaaminen]
 tags: [jamaikalainen, karibia, jerk, broileri]
 image: {src: paaruoat/jerk-kana.webp, alt: "Jamaikalainen jerk-kana riisin ja papujen kanssa, pinnassa tumma maustekuori", width: 1280, height: 853}
 ingredients:
-  - {amount: 1000, unit: g, item: broilerin koipireisiä tai koipia}
+  - {amount: 1000, unit: g, item: nahatonta ja luutonta broilerin reisilihaa}
   - {amount: 4, unit: kpl, item: kevätsipulia, note: hienonnettuna}
   - {amount: 3, unit: kpl, item: valkosipulinkynttä}
   - {amount: 1, unit: kpl, item: habanero-chiliä, note: siemenet poistettuna miedompaan versioon}
@@ -28,6 +28,11 @@ ingredients:
   - {amount: 240, unit: g, item: valutettuja punaisia kidneypapuja, note: lisäkkeeksi}
   - {amount: 150, unit: ml, item: kookosmaitoa, note: riisiä ja papuja varten}
   - {amount: 300, unit: ml, item: vettä, note: riisiä ja papuja varten}
+carbs_net_per_serving_g: 77.22
+carbs_total_per_serving_g: 84.75
+protein_per_serving_g: 60.76
+fat_per_serving_g: 20.99
+
 ---
 
 # Jamaikalainen jerk-kana
@@ -37,7 +42,7 @@ Jerk-kanassa maustepippuri, timjami, chili, kevätsipuli ja lime muodostavat aro
 ## Valmistus
 
 1. Soseuta kevätsipuli, valkosipuli, chili, limettimehu, soijakastike, maustepippuri, timjami, inkivääri, fariinisokeri ja öljy marinadiksi.
-2. Tee broilerin nahkaan muutama viilto. Hiero marinadi kanaan ja anna maustua jääkaapissa vähintään 1 tunti.
+2. Hiero marinadi broilerin reisilihaan ja anna maustua jääkaapissa vähintään 1 tunti.
 3. Kuumenna uuni 200 asteeseen. Nosta kana vuokaan ja paista 45–55 minuuttia, kunnes liha on täysin kypsää ja pinta saanut väriä. Voit viimeistellä pinnan grillivastuksen alla.
 4. Huuhtele riisi. Laita kattilaan riisi, valutetut pavut, kookosmaito ja vesi. Kiehauta, peitä kannella ja hauduta miedolla lämmöllä pakkauksen ohjeen mukaan, kunnes riisi on kypsää ja neste imeytynyt.
 5. Tarjoa riisi ja pavut jerk-kanan kanssa.

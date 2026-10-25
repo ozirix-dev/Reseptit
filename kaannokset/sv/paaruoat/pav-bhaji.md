@@ -15,10 +15,10 @@ cooking_method:
   - paistinpannu
 difficulty: mellannivå
 tags:
-  - "indiska"
-  - "Mumbai"
-  - "vegetariskt"
-  - "gatumat"
+  - indiska
+  - Mumbai
+  - vegetariskt
+  - gatumat
 image:
   src: paaruoat/pav-bhaji.webp
   alt: Pav bhaji grönsakspuré med smörrostade rullar, lök och lime
@@ -28,18 +28,15 @@ ingredients:
   - amount: 400
     unit: g
     item: potatis
-    note: skalad och tärnad
   - amount: 200
     unit: g
     item: blomkål
-    note: i bitar
   - amount: 150
     unit: g
     item: ärtor
   - amount: 1
     unit: st
     item: morot
-    note: "tärnad"
   - amount: 2
     unit: msk
     item: olja
@@ -49,50 +46,69 @@ ingredients:
   - amount: 1
     unit: st
     item: lök
-    note: "finhackad"
   - amount: 2
     unit: st
-    item: en vitlöksklyfta
-    note: krossad
+    item: vitlöksklyftor
   - amount: 400
     unit: g
     item: krossade tomater
+  - amount: 5
+    unit: g
+    item: mald spiskummin
+  - amount: 4
+    unit: g
+    item: mald koriander
   - amount: 2
-    unit: msk
-    item: pav bhaji masala kryddblandning
+    unit: g
+    item: paprikapulver
+  - amount: 2
+    unit: g
+    item: gurkmeja
+  - amount: 1
+    unit: g
+    item: chiliflakes
   - amount: 1
     unit: tsk
     item: salt
-  - amount: 6
-    unit: st
-    item: mjuka småfrallor
+  - amount: 300
+    unit: g
+    item: mjuka vetefrallor
     note: för servering
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: färsk koriander
     note: för servering
 source_language: fi
 source_recipe: reseptit/paaruoat/pav-bhaji.md
 translation_of: pav-bhaji
+carbs_net_per_serving_g: 65.29
+carbs_total_per_serving_g: 72.87
+protein_per_serving_g: 13.11
+fat_per_serving_g: 19.24
 ---
 
-# Pav bhaji – Mumbais kryddiga grönsakspuré
+# Pav bhaji – kryddig grönsaksmos från Mumbai
 
-Mumbais klassiska gatukök: kryddig, mjuk mosad grönsakscurry och smörrostade rullar.
+Kryddigt mos av potatis, blomkål och ärtor serveras med mjuka vetefrallor.
 
-## Beskrivning
+## Description
 
-Mumbais klassiska gatukök: kryddig, mjuk mosad grönsakscurry och smörrostade rullar.
+Kryddigt mos av potatis, blomkål och ärtor serveras med mjuka vetefrallor.
 
-## Tillagning
+## Preparation
 
-1. Koka potatisen, blomkålen, ärterna och moroten tills de är mjuka. Häll av och spara kokvattnet.
-2. Fräs löken i olja. Tillsätt vitlök och pav bhaji masala. Stek i en minut.
-3. Tillsätt tomaterna och salt. Sjud i 10 minuter.
-4. Tillsätt de kokta grönsakerna och mosa i pannan till en grov puré. Späd med kokande vatten för att passa.
-5. Sjud blandningen i 10–15 minuter, rör om då och då. Rör ner hälften av smöret och koriandern.
-6. Dela rullarna och rosta i en stekpanna i smör på slutet. Servera med bhaji.
+1. Koka potatis, blomkål, ärtor och morot mjuka. Häll av och spara kokvattnet.
 
-## Anteckningar
+2. Fräs lök i olja. Tillsätt vitlök och de uppmätta kryddorna; fräs kort.
 
-- Pav bhaji masala mix kan hittas i indiska livsmedelsbutiker; den kan bytas ut mot garam masala och en touch av chili.
+3. Tillsätt tomater och salt. Sjud i 10 minuter.
+
+4. Lägg i grönsakerna och mosa grovt i pannan. Späd med lite kokvatten vid behov.
+
+5. Sjud i 10–15 minuter och rör ibland. Blanda ner hälften av smöret och koriandern.
+
+6. Rosta frallorna med resten av smöret och servera till grönsaksmoset.
+
+## Notes
+
+- Kryddorna och mängderna anges var för sig ovan.

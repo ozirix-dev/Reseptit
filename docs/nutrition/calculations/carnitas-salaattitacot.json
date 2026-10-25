@@ -1,0 +1,426 @@
+{
+  "recipeId": "carnitas-salaattitacot",
+  "sourceHash": "e5053823bbe1a235c09354b3ff1df57d62b2779b3ef446411c42c5a344b5f20e",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-18",
+  "servings": 4,
+  "scope": "4 servings; cooked pork shoulder is represented by raw pork shoulder input; pico de gallo is split into 70 g tomato, 20 g red onion and 10 g coriander; salt and pepper are omitted as negligible.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "porsaan niskaa",
+      "amount": 800,
+      "unit": "g",
+      "state": "raw pork collar/kassler",
+      "matchEvidence": "Fineli 34190 is raw pork collar, matching pork neck.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-34190-release-20",
+        "name": "KASSLERPIHVI/-PAISTI, RAAKA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34190",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw pork collar/kassler",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 17.931,
+          "fat": 14.955
+        }
+      }
+    },
+    {
+      "item": "appelsiini",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "raw peeled orange flesh",
+      "matchEvidence": "Fineli 11045 is peeled orange.",
+      "gramsPerUnit": 130,
+      "conversionEvidence": "One medium orange = 130 g edible flesh.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Peeled flesh only.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11045-release-20",
+        "name": "APPELSIINI, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11045",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw peeled orange flesh",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 8.9,
+          "FIBT": 2.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 8.9,
+          "fibre": 2.4,
+          "polyols": 0,
+          "protein": 0.56,
+          "fat": 0.14
+        }
+      }
+    },
+    {
+      "item": "limetti",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "raw lime",
+      "matchEvidence": "Raw lime, peeled; AFCD record F005198.",
+      "gramsPerUnit": 50,
+      "conversionEvidence": "Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F005198-release-3",
+        "name": "Lime, native, fruit",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw lime",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0.4,
+          "fibre": 3.6,
+          "polyols": 0,
+          "protein": 0.1,
+          "fat": 2.7
+        }
+      }
+    },
+    {
+      "item": "juustokuminaa",
+      "amount": 1,
+      "unit": "tl",
+      "state": "ground cumin seed",
+      "matchEvidence": "AFCD Release 3 F003327 is cumin seed, dried, ground.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "One teaspoon ground cumin is represented as 2 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F003327-release-3",
+        "name": "Cumin (cummin) seed, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground cumin seed",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 33.7,
+          "fibre": 10.5,
+          "polyols": 0,
+          "protein": 17.8,
+          "fat": 22.3
+        }
+      }
+    },
+    {
+      "item": "oreganoa",
+      "amount": 1,
+      "unit": "tl",
+      "state": "dried oregano",
+      "matchEvidence": "Dried oregano; AFCD record F006281 has paired carbohydrate values confirming zero sugar alcohols.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "One level teaspoon of dried oregano represented as 1 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006281-release-3",
+        "name": "Oregano, dried",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dried oregano",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 26.4,
+          "fibre": 42.5,
+          "polyols": 0,
+          "protein": 9,
+          "fat": 4.3
+        }
+      }
+    },
+    {
+      "item": "valkosipulinkynttä",
+      "amount": 2,
+      "unit": "kpl",
+      "state": "raw peeled garlic",
+      "matchEvidence": "Raw peeled garlic; AFCD record F004193 has paired available-carbohydrate values confirming zero sugar alcohols.",
+      "gramsPerUnit": 3,
+      "conversionEvidence": "One medium garlic clove is represented by 3 g peeled edible garlic.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F004193-release-3",
+        "name": "Garlic, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw peeled garlic",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 10.2,
+          "fibre": 16.9,
+          "polyols": 0,
+          "protein": 6.1,
+          "fat": 2.8
+        }
+      }
+    },
+    {
+      "item": "vettä",
+      "amount": 150,
+      "unit": "ml",
+      "state": "plain tap water",
+      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Water is represented at 1 g/ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "roomansalaatinlehtiä",
+      "amount": 12,
+      "unit": "kpl",
+      "state": "raw cos/romaine lettuce leaves",
+      "matchEvidence": "AFCD F005191 is raw romaine lettuce.",
+      "gramsPerUnit": 12,
+      "conversionEvidence": "One romaine leaf = 12 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F005191-release-3",
+        "name": "Lettuce, cos, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw cos/romaine lettuce leaves",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.8,
+          "fibre": 1.8,
+          "polyols": 0,
+          "protein": 1.2,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "tomaattia pico de galloon",
+      "amount": 70,
+      "unit": "g",
+      "state": "raw tomato edible portion",
+      "matchEvidence": "Fineli 352 is raw tomato.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-352-release-20",
+        "name": "TOMAATTI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/352",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw tomato edible portion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.45,
+          "FIBT": 0.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3.45,
+          "fibre": 0.4,
+          "polyols": 0,
+          "protein": 0.55,
+          "fat": 0.3
+        }
+      }
+    },
+    {
+      "item": "punasipulia pico de galloon",
+      "amount": 20,
+      "unit": "g",
+      "state": "raw red onion",
+      "matchEvidence": "Fineli 34234 is red onion.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-34234-release-20",
+        "name": "SIPULI, PUNASIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34234",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw red onion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 5.447,
+          "FIBT": 1.2,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 5.447,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 1.506,
+          "fat": 0.114
+        }
+      }
+    },
+    {
+      "item": "tuoretta korianteria pico de galloon",
+      "amount": 10,
+      "unit": "g",
+      "state": "fresh coriander leaves",
+      "matchEvidence": "AFCD F003192 is fresh raw coriander.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F003192-release-3",
+        "name": "Coriander, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh coriander leaves",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.9,
+          "fibre": 3.2,
+          "polyols": 0,
+          "protein": 3.1,
+          "fat": 0.6
+        }
+      }
+    },
+    {
+      "item": "suolaa ja pippuria",
+      "amount": null,
+      "unit": "",
+      "state": "salt and small pepper seasoning omitted",
+      "matchEvidence": "Salt is non-caloric; a small pepper dose is conservatively bounded below 0.1 g carbohydrate per serving.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt has no macros and a small pepper quantity is below tolerance.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0.5,
+        "netCarbohydrate": 0.05,
+        "totalCarbohydrate": 0.1,
+        "protein": 0.05,
+        "fat": 0.05
+      },
+      "omissionImpactEvidence": "Salt is non-caloric; a small pepper dose is conservatively bounded below 0.1 g carbohydrate per serving."
+    }
+  ]
+}

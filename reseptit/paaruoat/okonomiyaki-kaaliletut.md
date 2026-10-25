@@ -50,6 +50,11 @@ image:
   alt: Okonomiyaki-tyyliset kaaliletut tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 11.28
+carbs_total_per_serving_g: 16.23
+protein_per_serving_g: 11.32
+fat_per_serving_g: 36.39
+
 ---
 # Okonomiyaki-tyyliset kaaliletut
 

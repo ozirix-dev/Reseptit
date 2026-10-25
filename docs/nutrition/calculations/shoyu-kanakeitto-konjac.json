@@ -1,0 +1,326 @@
+{
+  "recipeId": "shoyu-kanakeitto-konjac",
+  "sourceHash": "e771d9f9b8f5e7f494545835f0007e79d4560e74524bd4451acaa956350185d6",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-18",
+  "servings": 4,
+  "scope": "4 servings; prepared KoRo konjac noodles use the product label per 100 g prepared; fresh common mushrooms replace shiitake; chicken is raw boneless thigh.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "broilerin reisilihaa",
+      "amount": 400,
+      "unit": "g",
+      "state": "raw skinless chicken thigh meat",
+      "matchEvidence": "Raw skinless chicken thigh meat; Fineli Release 20 record 30792.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-30792-release-20",
+        "name": "BROILERI, KOIPI-REISI, NAHATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30792",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw skinless chicken thigh meat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 19.65,
+          "fat": 3.42
+        }
+      }
+    },
+    {
+      "item": "kanalientä",
+      "amount": 1.2,
+      "unit": "l",
+      "state": "prepared liquid stock",
+      "matchEvidence": "kanalientä maps to afcd-release-3 record F008936; state: prepared liquid stock.",
+      "gramsPerUnit": 1000,
+      "conversionEvidence": "Ingredient-specific volume mass: 1000 g/l for kanalientä.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F008936-release-3",
+        "name": "Stock, liquid, all flavours (except fish), prepared from commercial powder or cube",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "prepared liquid stock",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0.4,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.2,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "tamaria",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "tamari represented by generic soy sauce",
+      "matchEvidence": "Fineli 31 is soy sauce, closest measured fermented soy-sauce equivalent.",
+      "gramsPerUnit": 16,
+      "conversionEvidence": "1 tbsp soy sauce = 16 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-31-release-20",
+        "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/31",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tamari represented by generic soy sauce",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 9.5,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 9.5,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 5.17,
+          "fat": 0.08
+        }
+      }
+    },
+    {
+      "item": "riisiviinietikkaa",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "rice vinegar represented by generic wine vinegar",
+      "matchEvidence": "The recipe does not name a vinegar brand; Fineli generic wine vinegar is used as a low-dose vinegar proxy, with the style difference documented.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "Fineli record 929 lists 15 g per tablespoon (RKL).",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-929-release-20",
+        "name": "VIINIETIKKA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/929",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "rice vinegar represented by generic wine vinegar",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.5,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.5,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "konjac-nuudeleita",
+      "amount": 200,
+      "unit": "g",
+      "state": "prepared product; label nutrient values per 100 g prepared noodles",
+      "matchEvidence": "Local KoRo record is the exact prepared product and basis.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "koro-konjac-noodles-prepared-2026-10-24",
+        "name": "KoRo prepared konjac noodles",
+        "sourceUrl": "https://www.koro.com/fi/detail/3b5494aabff551ca99b988b15da2b5ab",
+        "retrievedAt": "2026-10-24",
+        "licence": "KoRo product-label factual nutrient declaration; product reference only, not an open-database licence",
+        "state": "prepared product; label nutrient values per 100 g prepared noodles",
+        "basis": "per100g-prepared",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Published ingredient declaration lists water, konjac flour and citric acid; no polyol ingredient.",
+        "per100g": {
+          "kcal": 5,
+          "protein": 0,
+          "fat": 0,
+          "carbohydrate": 0,
+          "fibre": 2.7,
+          "sugars": 0,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "herkkusieniä",
+      "amount": 100,
+      "unit": "g",
+      "state": "raw common mushroom",
+      "matchEvidence": "AFCD F005946 is fresh raw common mushroom.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F005946-release-3",
+        "name": "Mushroom, common, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw common mushroom",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 1.4,
+          "polyols": 1.2,
+          "protein": 2.2,
+          "fat": 0.8
+        }
+      }
+    },
+    {
+      "item": "kevätsipulia",
+      "amount": 2,
+      "unit": "kpl",
+      "state": "raw spring onion",
+      "matchEvidence": "Raw spring onion; AFCD record F006250.",
+      "gramsPerUnit": 100,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per kpl; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006250-release-3",
+        "name": "Onion, spring, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw spring onion",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.6,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 1.7,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "raastettua inkivääriä",
+      "amount": 1,
+      "unit": "tl",
+      "state": "raw peeled ginger root",
+      "matchEvidence": "Raw peeled ginger; AFCD record F004213 has paired carbohydrate values confirming zero sugar alcohols.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F004213-release-3",
+        "name": "Ginger, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw peeled ginger root",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 2.8,
+          "polyols": 0,
+          "protein": 0.8,
+          "fat": 0.4
+        }
+      }
+    },
+    {
+      "item": "seesamiöljyä",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "sesame oil",
+      "matchEvidence": "seesamiöljyä maps to afcd-release-3 record F006187; state: sesame oil.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for seesamiöljyä.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006187-release-3",
+        "name": "Oil, sesame",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "sesame oil",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    }
+  ]
+}

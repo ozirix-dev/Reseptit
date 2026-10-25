@@ -17,8 +17,7 @@ ingredients:
   - {amount: 800, unit: ml, item: täysrasvaista kookosmaitoa}
   - {amount: 150, unit: g, item: salottisipulia}
   - {amount: 5, unit: kpl, item: valkosipulinkynttä}
-  - {amount: 30, unit: g, item: tuoretta inkivääriä}
-  - {amount: 25, unit: g, item: galangalia, note: kuorittuna}
+  - {amount: 55, unit: g, item: tuoretta inkivääriä, note: kuorittuna ja raastettuna}
   - {amount: 2, unit: kpl, item: punaista chiliä, note: siemenet poistettu halutessa}
   - {amount: 2, unit: kpl, item: sitruunaruohoa, note: murskattuna}
   - {amount: 4, unit: kpl, item: kaffirlimetinlehteä}
@@ -26,6 +25,11 @@ ingredients:
   - {amount: 1, unit: tl, item: suolaa}
   - {amount: 50, unit: g, item: paahdettua kookoshiutaletta}
   - {amount: 300, unit: g, item: jasmiiniriisiä, note: kuivapaino}
+carbs_net_per_serving_g: 41.86
+carbs_total_per_serving_g: 44.79
+protein_per_serving_g: 38.16
+fat_per_serving_g: 30.14
+
 ---
 
 # Padangin naudanliharendang
@@ -34,7 +38,7 @@ Minangkabaulainen rendang kypsyy pitkään kookosmaidossa ja maustetahnassa. Nes
 
 ## Valmistus
 
-1. Hienonna salottisipuli, valkosipuli, inkivääri, galangal ja chili tasaiseksi tahnaksi.
+1. Hienonna salottisipuli, valkosipuli, inkivääri ja chili tasaiseksi tahnaksi.
 2. Laita maustetahna, kookosmaito, sitruunaruoho ja kaffirlimetinlehdet paksupohjaiseen kattilaan. Kuumenna sekoittaen lähes kiehuvaksi.
 3. Lisää naudanliha ja suola. Hauduta ilman kantta hyvin miedolla lämmöllä 3–4 tuntia. Sekoita aluksi säännöllisesti ja sitä useammin, kun neste alkaa vähentyä.
 4. Jatka kypsennystä, kunnes kookosmaito on haihtunut lähes kokonaan, öljy alkaa erottua ja liha on tummaa ja mureaa. Varo polttamasta pohjaa.

@@ -66,6 +66,17 @@ test("missing optional energy or sugar source fields do not block the four suppo
   assert.equal(calculate(input).perServing.kcal, null);
   assert.equal(calculate(input).perServing.sugars, null);
 });
+test("prepared-product nutrient basis is accepted only with a matching prepared state", async () => {
+  const records: FoodRecord[] = JSON.parse(await readFile(new URL("../../docs/nutrition/food-records.json", import.meta.url), "utf8"));
+  const noodles = records.find((record) => record.id === "koro-konjac-noodles-prepared-2026-10-24");
+  assert.ok(noodles);
+  const input = fixture();
+  input.ingredients[0] = { item: "prepared konjac noodles", amount: 200, unit: "g", record: noodles, state: noodles.state, matchEvidence: "Exact prepared product label; values per 100 g prepared.", edibleFraction: 1, edibleEvidence: "Prepared and ready to eat as sold.", retainedFraction: 1, retentionEvidence: "Entire prepared package portion counted." };
+  assert.equal(calculate(input).status, "ESTIMATE WITH EVIDENCE");
+  assert.equal(calculate(input).totalCarbohydratePerServingG, 1.35);
+  input.ingredients[0].state = "dry konjac noodles";
+  assert.equal(calculate(input).status, "INSUFFICIENT SOURCE DATA");
+});
 test("servings and provenance must be valid", () => {
   for (const servings of [0, -1, 1.5, NaN, Infinity]) assert.throws(() => calculate({ ...fixture(), servings }));
   assert.throws(() => calculate({ ...fixture(), sourceHash: "" }));

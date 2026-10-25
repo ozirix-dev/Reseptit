@@ -66,6 +66,11 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/dan-dan-nuudelit.md
 translation_of: dan-dan-nuudelit
+carbs_net_per_serving_g: 53.48
+carbs_total_per_serving_g: 58.29
+protein_per_serving_g: 26.92
+fat_per_serving_g: 31.03
+
 ---
 
 # Dan dan noodles with pork sauce

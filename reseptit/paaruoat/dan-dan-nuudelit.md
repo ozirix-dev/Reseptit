@@ -69,6 +69,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 53.48
+carbs_total_per_serving_g: 58.29
+protein_per_serving_g: 26.92
+fat_per_serving_g: 31.03
+
 ---
 
 # Dan dan -nuudelit porsaskastikkeella

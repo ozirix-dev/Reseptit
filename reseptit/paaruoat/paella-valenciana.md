@@ -1,5 +1,5 @@
 ---
-title: Valencialainen paella kanalla ja jäniksellä
+title: Valencialainen paella kanalla
 recipe_id: paella-valenciana
 url_slug: paella-valenciana
 category: paaruoka
@@ -24,20 +24,15 @@ image:
   width: 1279
   height: 853
 ingredients:
-  - amount: 400
+  - amount: 700
     unit: g
-    item: broilerin koipilihaa
-    note: paloina
+    item: nahatonta ja luutonta broilerin reisilihaa
   - amount: 300
     unit: g
-    item: jäniksen tai kanin lihaa
-    note: paloina; voi korvata broilerilla
-  - amount: 300
-    unit: g
-    item: paellariisiä tai puuroriisiä
+    item: puuroriisiä, kuivapaino
   - amount: 150
     unit: g
-    item: vihreitä papuja
+    item: tuoreita vihreitä papuja
     note: paloiteltuna
   - amount: 150
     unit: g
@@ -66,6 +61,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 59.13
+carbs_total_per_serving_g: 61.1
+protein_per_serving_g: 40.13
+fat_per_serving_g: 16.69
+
 ---
 
 # Valencialainen paella kanalla ja jäniksellä

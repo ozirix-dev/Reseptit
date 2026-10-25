@@ -9,7 +9,7 @@ servings: 4
 time_total_min: 780
 difficulty: keskitaso
 main_ingredient: [kikherne, yrtit]
-cooking_method: [uppopaistaminen]
+cooking_method: [paistaminen]
 tags: [lähi-itä, falafel, kasvisruoka, kikherne]
 image: {src: paaruoat/falafel.webp, alt: "Yrtintuoksuisia falafeleja, tahinikastiketta, kasviksia ja pitaleipää", width: 1280, height: 853}
 ingredients:
@@ -23,10 +23,15 @@ ingredients:
   - {amount: 0.5, unit: tl, item: leivinjauhetta}
   - {amount: 1, unit: tl, item: suolaa}
   - {amount: 1, unit: rkl, item: sitruunamehua}
-  - {amount: 500, unit: ml, item: kasviöljyä, note: uppopaistamiseen}
+  - {amount: 20, unit: g, item: oliiviöljyä, note: falafelien voiteluun}
   - {amount: 120, unit: g, item: tahinia, note: kastikkeeseen}
   - {amount: 100, unit: ml, item: kylmää vettä, note: kastikkeeseen}
   - {amount: 1, unit: rkl, item: sitruunamehua, note: kastikkeeseen}
+carbs_net_per_serving_g: 26.33
+carbs_total_per_serving_g: 42.76
+protein_per_serving_g: 19.84
+fat_per_serving_g: 26.19
+
 ---
 
 # Lähi-idän falafelit ja tahinikastike
@@ -39,7 +44,7 @@ Falafelit tehdään yön yli liotetuista kuivatuista kikherneistä, yrteistä ja
 2. Hienonna kikherneet monitoimikoneessa sipulin, valkosipulin, persiljan, korianterin, juustokuminan, jauhetun korianterin, leivinjauheen, suolan ja sitruunamehun kanssa karkeaksi, muotoiltavaksi massaksi.
 3. Peitä massa ja anna vetäytyä jääkaapissa 30 minuuttia. Muotoile noin 20 pientä palloa.
 4. Sekoita tahini ja sitruunamehu. Lisää kylmä vesi vähitellen, kunnes kastike on juoksevaa ja tasaista.
-5. Kuumenna öljy kattilassa noin 170 asteeseen. Paista falafeleja erissä 3–4 minuuttia, kunnes ne ovat kullanruskeita ja kypsiä. Valuta talouspaperilla.
+5. Kuumenna uuni 220 asteeseen. Sivele falafelit kauttaaltaan mitatulla öljyllä ja paista leivinpaperilla 20–25 minuuttia, kunnes ne ovat kypsiä ja ruskistuneet. Käännä kerran paiston aikana.
 6. Tarjoa tahinikastikkeen, salaatin ja pitaleivän kanssa.
 
 ## Muistiinpanot

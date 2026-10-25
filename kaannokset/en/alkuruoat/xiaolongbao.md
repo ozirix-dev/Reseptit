@@ -21,21 +21,24 @@ image:
   width: 1279
   height: 853
 ingredients:
-  - amount: 24
-    unit: piece
-    item: round dumpling dough sheets
-    note: about 9 cm
+  - amount: 300
+    unit: g
+    item: wheat flour
+  - amount: 170
+    unit: ml
+    item: water
   - amount: 300
     unit: g
     item: ground pork
-  - amount: 150
+  - amount: 145
     unit: g
-    item: jellied meat broth
-    note: in small cubes
+    item: stock
+  - amount: 5
+    unit: g
+    item: gelatin
   - amount: 2
     unit: piece
     item: spring onions
-    note: shredded
   - amount: 1
     unit: tbsp
     item: soy sauce
@@ -55,28 +58,37 @@ ingredients:
   - amount: 1
     unit: tbsp
     item: ginger
-    note: thinly sliced for serving
 source_language: fi
 source_recipe: reseptit/alkuruoat/xiaolongbao.md
 translation_of: xiaolongbao
+carbs_net_per_serving_g: 59.5
+carbs_total_per_serving_g: 63.16
+protein_per_serving_g: 25.09
+fat_per_serving_g: 14.41
 ---
 
 # Xiaolongbao soup dumplings
 
-Shanghainese soup dumplings contain spicy pork filling and meat jelly, which melts into broth during steaming.
+Homemade soup dumplings have a pork filling with chilled stock jelly that melts into broth as they steam.
 
 ## Description
 
-Shanghainese soup dumplings contain spicy pork filling and meat jelly, which melts into broth during steaming.
+Homemade soup dumplings have a pork filling with chilled stock jelly that melts into broth as they steam.
 
 ## Preparation
 
-1. Mix the minced pork, spring onion, soy sauce, sesame oil, ginger and salt. Gently fold the cubes of jellied stock into the filling.
-2. Put a small spoonful of filling in the middle of the dough sheet. Fold the edges around and pinch in the middle.
-3. Place the dumplings on baking paper or cabbage leaves in the steaming basket so that they do not touch each other.
-4. Steam over boiling water for 8–10 minutes until the filling is cooked.
-5. Serve immediately with black rice vinegar and ginger strips. Be careful of the hot broth inside the dumpling.
+1. Dissolve the gelatin in the stock and chill for at least 30 minutes until set, then cut into small cubes.
+
+2. Mix pork, spring onion, soy sauce, sesame oil, ginger and salt. Gently fold in the stock jelly.
+
+3. Divide the dough into 24 pieces, roll thin and place a small spoonful of filling in each. Pleat and pinch closed.
+
+4. Set dumplings on baking paper or cabbage leaves in the steamer, without touching.
+
+5. Steam over boiling water for 8–10 minutes until the filling is cooked.
+
+6. Serve immediately with black rice vinegar and ginger. Take care with the hot broth inside.
 
 ## Notes
 
-- Meat jelly is made by cooling seasoned meat or chicken stock with gelatin. Allow the filling to remain cold throughout assembly.
+- Keep the filling cold while assembling the dumplings.
