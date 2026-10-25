@@ -21,6 +21,29 @@ test("live mode is opt-in and requires confirmed auth plus an explicit endpoint 
   assert.equal(calls, 0);
 });
 
+test("allowlist keeps documented dynamic food search while rejecting route continuations and encoded separators", async () => {
+  const requested: string[] = [];
+  const client = liveClient(async (input) => {
+    requested.push(String(input));
+    return Response.json(syntheticFoodSearch);
+  });
+  await client.request({ path: "/api/v1.2/LIST/food=cat:Sauces%20%26%20Condiments&limit=0,3" });
+  assert.equal(requested.length, 1);
+
+  for (const path of [
+    "/api/v1.2/LIST/food=rice/recipe=123",
+    "/api/v1.2/LIST/food=rice%2frecipe=123",
+    "/api/v1.2/LIST/food=rice%252frecipe=123",
+    "/api/v1.2/LIST/food=rice&apiKey=secret",
+    "/api/v1.2/LIST/food=rice&auth=secret",
+    "/api/v1.2/LIST/food=rice?token=secret",
+    "/api/v1.2/LIST/food=rice/../recipe=123",
+  ]) {
+    await assert.rejects(client.request({ path }), (error: unknown) => error instanceof EvaluationClientError && error.kind === "configuration", path);
+  }
+  assert.equal(requested.length, 1, "rejected paths must not reach the transport");
+});
+
 test("sends a synthetic API key only in the configured header and reports call metrics", async () => {
   const secret = "synthetic-test-key";
   const metrics: Array<{ outcome: string; estimatedCost: number | "UNKNOWN" }> = [];

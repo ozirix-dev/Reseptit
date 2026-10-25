@@ -6,7 +6,7 @@ Tämä protokolla ei aktivoi tiliä, ohjelmistokokeilua tai API-kokeilua. Nutrit
 
 1. Lähetä alla oleva viestiluonnos Nutriticsille ja pyydä kirjallinen vastaus API:n, tietojen käytön, hinnan ja lisenssien kysymyksiin.
 2. Älä pyydä tai säilytä oikeita API-vastauksia tässä julkisessa repossa. Käytä paikallista, Gitin ulkopuolista muistiota; älä tallenna siihen tunnuksia tai API-avaimia.
-3. Käytä vertailussa samaa 18 reseptin joukkoa, samaa ainesosalistaa, määriä ja annoskokoa kuin projektin lähtötiedoissa. `comparison-template.csv` sisältää reseptien lähdehashit ja annosmäärät; lisää yksi rivi kutakin ainesosaa kohti ja jätä lähdetietueen tulokset tyhjiksi, kunnes ne on havaittu.
+3. Käytä vertailussa samaa 18 reseptin joukkoa, samaa ainesosalistaa, määriä ja annoskokoa kuin projektin lähtötiedoissa. `comparison-template.csv` sisältää erilliset `recipe`-rivit reseptitason vertailulle. Kopioi reseptirivi jokaiselle ainesosalle, muuta `record_type` arvoksi `ingredient`, tyhjennä reseptitulossarakkeet ja täytä ainesosakentät. Ainesosarivin ravintoarvot ovat aina per 100 g, reseptirivin arvot per annos. Älä vertaa näitä keskenään. Jätä Nutritics-tulokset tyhjiksi, kunnes ne on oikeasti havaittu.
 4. Kirjaa joka havainnosta päivän numero, päivämäärä, testattu ominaisuus, resepti/hakutermi, tuloksen tila, aineistolähteen nimi/versio, erot, epävarmuus, lisenssikysymys ja käytetty aika.
 
 ## Polku A — Nutritics myöntää rajatun API-evaluoinnin
@@ -39,7 +39,7 @@ Ohjelmiston UI-kokeilu voidaan silti tehdä, jos se tarjotaan käyttäjälle ilm
 
 ## Kummankin polun vertailusäännöt
 
-- Käytä reseptien repo-lähdehashia sekä Fineli-tietueen tunnistetta, kun ne ovat tiedossa. Nutriticsin tunnisteet ja vastaukset jäävät paikalliseen lisenssin sallimaan aineistoon.
+- Käytä reseptien repo-lähdehashia sekä Fineli-tietueen tunnistetta, kun ne ovat tiedossa. Säilytä baseline-Git-revisio ja Fineli/Nutritics-lähteen versio omissa sarakkeissaan; päivitä ne uutena lähdeversiorivinä tai uutena snapshotina äläkä ylikirjoita baselinea. Nutriticsin tunnisteet ja vastaukset jäävät paikalliseen lisenssin sallimaan aineistoon.
 - Älä muuta reseptejä, niiden ravintoarvoja, Fineli-syötteitä tai GI/GK-laskentaa kokeilun aikana.
 - Vertaa samoja yksiköitä ja annoskokoja. Merkitse aineistojen erilaiset hiilihydraatti- ja kuitumääritelmät ennen numerovertailua.
 - Kustannus on `UNKNOWN`, ellei yksikköhintaa, valuuttaa ja laskutustapaa ole kirjallisesti vahvistettu.

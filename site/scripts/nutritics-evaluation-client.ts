@@ -150,7 +150,7 @@ export class NutriticsEvaluationClient {
       if (!apiKey || !apiKeyHeader || this.options.apiKeyHeaderVerified !== true) {
         throw new EvaluationClientError("Live mode requires a key and vendor-confirmed header configuration", "configuration");
       }
-      const allowed = this.options.approvedEndpoints!.some((endpoint) => endpoint.method === method && request.path.startsWith(endpoint.pathPrefix));
+      const allowed = this.options.approvedEndpoints!.some((endpoint) => endpoint.method === method && matchesApprovedEndpoint(request.path, endpoint));
       if (!allowed) throw new EvaluationClientError("Live request path is not in the approved endpoint allowlist", "configuration");
     }
 
@@ -163,11 +163,6 @@ export class NutriticsEvaluationClient {
     const url = new URL(request.path, this.baseUrl);
     if (url.origin !== this.baseUrl.origin || url.username || url.password) {
       throw new EvaluationClientError("Request path must stay on the configured HTTPS origin", "configuration");
-    }
-    for (const key of url.searchParams.keys()) {
-      if (/(api.?key|key|token|auth|username|password|secret|credential)/i.test(key)) {
-        throw new EvaluationClientError("Credentials must not be placed in the request URL", "configuration");
-      }
     }
     if (this.mode === "live" && !url.pathname.startsWith("/api/v1.2/")) {
       throw new EvaluationClientError("Live requests must use the confirmed Nutritics v1.2 API path", "configuration");
@@ -263,13 +258,61 @@ export class NutriticsEvaluationClient {
 }
 
 function isSafeApiPath(path: string): boolean {
-  if (!path.startsWith("/api/v1.2/") || path.startsWith("//") || path.includes("\\") || path.includes("#")) return false;
-  // Reject traversal before URL normalization (including percent-encoded dots).
-  const decoded = (() => {
-    try { return decodeURIComponent(path); } catch { return ""; }
-  })();
-  if (!decoded || decoded.includes("\\") || decoded.split(/[/?]/).some((part) => part === "." || part === "..")) return false;
+  if (!path.startsWith("/api/v1.2/") || path.startsWith("//") || /[\\?#]/.test(path)) return false;
+  // Reject traversal and encoded separators before URL normalization. Repeat
+  // decoding to catch double-encoded separators without changing the request.
+  let decoded = path;
+  for (let depth = 0; depth < 4; depth += 1) {
+    if (/%(?:25)*(?:2f|5c|3f|23)/i.test(decoded)) return false;
+    try {
+      const next = decodeURIComponent(decoded);
+      if (next.includes("\\") || next.includes("?") || next.includes("#") || next.split("/").some((part) => part === "." || part === "..")) return false;
+      if (next === decoded) return true;
+      decoded = next;
+    } catch {
+      return false;
+    }
+  }
+  // Excessively encoded paths are ambiguous across proxies and servers.
+  if (decoded.includes("%")) return false;
   return true;
+}
+
+function matchesApprovedEndpoint(path: string, endpoint: ApprovedEndpoint): boolean {
+  if (!path.startsWith(endpoint.pathPrefix)) return false;
+  const tail = path.slice(endpoint.pathPrefix.length);
+
+  // A trailing '=' declares a dynamic LIST object filter (e.g. food=banana).
+  // Keep the filter within that one path segment; raw '&' remains available
+  // for documented LIST parameters such as &limit=0,3.
+  if (endpoint.pathPrefix.endsWith("=")) {
+    if (!tail || /[\\/?#]/.test(tail) || /%(?:25)*(?:2f|5c|3f|23)/i.test(tail)) return false;
+    if (hasCredentialParameter(tail)) return false;
+    return true;
+  }
+
+  // Other allowlist entries are exact routes unless a later review adds an
+  // explicit, narrowly scoped dynamic route form.
+  return path === endpoint.pathPrefix;
+}
+
+function hasCredentialParameter(dynamicFilter: string): boolean {
+  let candidate = dynamicFilter;
+  for (let depth = 0; depth < 4; depth += 1) {
+    const hasCredential = candidate.split("&").slice(1).some((parameter) => {
+      const name = parameter.split(/[=:]/, 1)[0]?.trim() ?? "";
+      return /(api.?key|key|token|auth|username|password|secret|credential)/i.test(name);
+    });
+    if (hasCredential) return true;
+    try {
+      const decoded = decodeURIComponent(candidate);
+      if (decoded === candidate) return false;
+      candidate = decoded;
+    } catch {
+      return true;
+    }
+  }
+  return candidate.includes("%");
 }
 
 function isSafeCredentialHeader(name: string): boolean {
