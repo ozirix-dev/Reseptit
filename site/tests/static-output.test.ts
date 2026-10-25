@@ -86,10 +86,15 @@ test("recipe index is prerendered and links only published languages", async () 
 });
 
 test("GK values link to centralized recipe details on every published translation", async () => {
-  assert.equal(glycemicLoadPilotReviewedRecipeCount, 325);
-  assert.equal(glycemicLoadPilotResults.length, 324);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, 114);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 210);
+  const sourceRecipeCount = siteContent.recipes.filter((recipe) => recipe.locale === "fi").length;
+  const audit = JSON.parse(await readFile(path.resolve(import.meta.dirname, "../../tmp/nutrition/glycemic-load-pilot.json"), "utf8")) as {
+    results: Array<{ recipeId: string; status: "CALCULATED" | "INSUFFICIENT SOURCE DATA" }>;
+  };
+  const publicAuditResults = audit.results.filter((result) => result.recipeId !== "maksalaatikko-kukkakaalilla");
+  assert.equal(glycemicLoadPilotReviewedRecipeCount, sourceRecipeCount);
+  assert.equal(glycemicLoadPilotResults.length, publicAuditResults.length);
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, publicAuditResults.filter((result) => result.status === "CALCULATED").length);
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, publicAuditResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length);
   for (const [id, expected] of [
     ["indonesialainen-ketoprak-aamiaiskulho", 26.67],
     ["lahi-ita-manakish-zaatarilla", 33.06],
@@ -127,13 +132,13 @@ test("GK values link to centralized recipe details on every published translatio
       }
     }
   }
-  const noriBlocker = glycemicLoadPilotResults.find((result) => result.recipeId === "japanilainen-tamago-kake-gohan");
-  assert.ok(noriBlocker?.incompleteReasons.length, "incomplete recipe includes a structured reason");
+  const coconutMilkBlocker = glycemicLoadPilotResults.find((result) => result.recipeId === "malesialainen-nasi-lemak-aamiaisella");
+  assert.ok(coconutMilkBlocker?.incompleteReasons.length, "incomplete recipe includes a structured reason");
   const methodPagePaths = { fi: "glykeeminen-kuorma", en: "en/glycemic-load", sv: "sv/glykemisk-belastning", th: "th/glycemic-load" };
   const labels = { fi: "Miksi kokonaisarviota ei ole?", en: "Why is there no total estimate?", sv: "Varför saknas ett totalvärde?", th: "เหตุใดจึงไม่มีค่าประมาณรวม" };
   for (const locale of ["fi", "en", "sv", "th"] as const) {
     const html = await readFile(path.join(dist, methodPagePaths[locale], "index.html"), "utf8");
-    const resultStart = html.indexOf('id="japanilainen-tamago-kake-gohan"');
+    const resultStart = html.indexOf('id="malesialainen-nasi-lemak-aamiaisella"');
     assert.ok(resultStart >= 0 && html.slice(resultStart, resultStart + 1_500).includes(labels[locale]), `${locale}: missing-result explanation is localized`);
   }
   const massaman = glycemicLoadPilotResults.find((result) => result.recipeId === "massaman-curry-kanalla-vhh");

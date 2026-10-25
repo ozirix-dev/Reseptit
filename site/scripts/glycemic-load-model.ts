@@ -29,6 +29,8 @@ export interface GlycemicIndexRecord {
 export interface GlycemicLoadIngredientInput {
   name: string;
   grams: number | null;
+  /** Original recipe quantity, separate from the composition-backed calculation mass. */
+  recipeQuantity?: { amount: number | null; unit: string | null; massGrams: number | null };
   fineliRecordId: string | null;
   giRecordId: string | null;
   foodKey?: string;
@@ -38,6 +40,9 @@ export interface GlycemicLoadIngredientInput {
   excludedReason?: string;
   estimatedAvailableCarbohydratePerServingG?: number;
   availableCarbohydratePer100gRange?: { min: number; max: number; evidence: string };
+  /** A source-backed conservative ceiling, not an estimate of actual available carbohydrate. */
+  availableCarbohydrateUpperBoundPerServingG?: number;
+  upperBoundEvidence?: string;
   negligibleAssumption?: string;
 }
 
@@ -60,14 +65,17 @@ export interface GlycemicLoadResult {
   glycemicLoadPerServing: number | null;
   glycemicLoadRangePerServing: { min: number; max: number } | null;
   omittedAvailableCarbohydratePerServingG: number;
+  omittedAvailableCarbohydrateUpperBoundPerServingG: number;
   confidence: "HIGH" | "MEDIUM" | "LOW" | null;
   interpretation: string;
   ingredients: Array<{
     name: string;
     grams: number | null;
+    recipeQuantity?: { amount: number | null; unit: string | null; massGrams: number | null };
     fineliRecordId: string | null;
     availableCarbohydratePer100g: number | null;
     availableCarbohydratePerServingG: number | null;
+    availableCarbohydrateUpperBoundPerServingG?: number | null;
     availableCarbohydratePerServingRangeG: { min: number; max: number } | null;
     gi: number | null;
     giRecordId: string | null;
@@ -164,6 +172,7 @@ export function calculateGlycemicLoad(
   let hasRange = false;
   let confidence: "HIGH" | "MEDIUM" | "LOW" = "HIGH";
   let omittedAvailableCarbohydratePerServingG = 0;
+  let omittedAvailableCarbohydrateUpperBoundPerServingG = 0;
 
   const ingredients = input.ingredients.map((ingredient) => {
     const issues: string[] = [];
@@ -180,23 +189,33 @@ export function calculateGlycemicLoad(
 
     if (ingredient.excludedReason) {
       const estimatedCarbs = ingredient.estimatedAvailableCarbohydratePerServingG;
+      const upperBound = ingredient.availableCarbohydrateUpperBoundPerServingG;
+      const validUpperBound = upperBound === undefined || (valid(upperBound) && Boolean(ingredient.upperBoundEvidence));
       const documentedZero = valid(estimatedCarbs) && estimatedCarbs === 0 && Boolean(ingredient.negligibleAssumption);
-      const smallOmission = valid(estimatedCarbs) && estimatedCarbs > 0 && estimatedCarbs < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G && Boolean(ingredient.negligibleAssumption);
+      const smallEstimate = valid(estimatedCarbs) && estimatedCarbs > 0 && estimatedCarbs < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G && Boolean(ingredient.negligibleAssumption);
+      const smallUpperBound = upperBound !== undefined && validUpperBound && upperBound > 0 && upperBound < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G;
+      const smallOmission = smallEstimate || smallUpperBound;
       if (smallOmission) {
-        omittedAvailableCarbohydratePerServingG += estimatedCarbs;
+        const omittedAmount = smallUpperBound ? upperBound! : estimatedCarbs!;
+        omittedAvailableCarbohydratePerServingG += omittedAmount;
+        if (smallUpperBound) omittedAvailableCarbohydrateUpperBoundPerServingG += upperBound!;
         confidence = "LOW";
       }
       const issue = documentedZero
         ? `Source-documented zero available carbohydrate: ${ingredient.negligibleAssumption}`
-        : smallOmission ? `Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: ${ingredient.negligibleAssumption}`
-        : ingredient.excludedReason || "Ingredient amount or Fineli mapping is missing; it is not treated as zero.";
+        : smallUpperBound ? `Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: ${ingredient.upperBoundEvidence}`
+          : smallEstimate ? `Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: ${ingredient.negligibleAssumption}`
+            : !validUpperBound ? "Available-carbohydrate upper bound is invalid or lacks source evidence."
+              : ingredient.excludedReason || "Ingredient amount or Fineli mapping is missing; it is not treated as zero.";
       if (!documentedZero && !smallOmission) blockers.push(`${input.recipeId}: ${ingredient.name}: ${issue}`);
       return {
         name: ingredient.name,
         grams: ingredient.grams,
+        ...(ingredient.recipeQuantity ? { recipeQuantity: ingredient.recipeQuantity } : {}),
         fineliRecordId: ingredient.fineliRecordId,
         availableCarbohydratePer100g: null,
-        availableCarbohydratePerServingG: documentedZero || smallOmission ? estimatedCarbs ?? null : null,
+        availableCarbohydratePerServingG: documentedZero || smallEstimate ? estimatedCarbs ?? null : null,
+        availableCarbohydrateUpperBoundPerServingG: smallUpperBound ? upperBound! : null,
         availableCarbohydratePerServingRangeG: null,
         gi: null,
         giRecordId: ingredient.giRecordId,
@@ -303,9 +322,11 @@ export function calculateGlycemicLoad(
     return {
       name: ingredient.name,
       grams: ingredient.grams,
+      ...(ingredient.recipeQuantity ? { recipeQuantity: ingredient.recipeQuantity } : {}),
       fineliRecordId: ingredient.fineliRecordId,
       availableCarbohydratePer100g: availablePer100g,
       availableCarbohydratePerServingG: availablePerServing,
+      availableCarbohydrateUpperBoundPerServingG: null,
       availableCarbohydratePerServingRangeG: availablePerServingRange,
       gi,
       giRecordId: ingredient.giRecordId,
@@ -332,6 +353,7 @@ export function calculateGlycemicLoad(
       max: Math.round((totalLoadMax + Number.EPSILON) * 100) / 100,
     } : null,
     omittedAvailableCarbohydratePerServingG,
+    omittedAvailableCarbohydrateUpperBoundPerServingG,
     confidence: complete ? confidence : null,
     interpretation: "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
     ingredients,

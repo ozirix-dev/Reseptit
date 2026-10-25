@@ -14232,11 +14232,10 @@
         },
         {
           "name": "voi",
-          "grams": 150,
-          "fineliRecordId": null,
+          "grams": 50,
+          "fineliRecordId": "fineli-576-release-20",
           "giRecordId": null,
-          "excludedReason": "No specific Fineli/AFCD food record and preparation match was resolved for “voi”; it is not treated as zero.",
-          "massEvidence": "Recipe-listed 150 g voi."
+          "massEvidence": "Current recipe lists 50 g butter; Fineli Release 20 butter composition."
         },
         {
           "name": "hunaja",
@@ -15349,28 +15348,27 @@
         },
         {
           "name": "maito",
-          "grams": 200,
+          "grams": 60,
           "fineliRecordId": "fineli-684-release-20",
           "giRecordId": "dairy-category-mean-gi-35",
-          "massEvidence": "Recipe-listed 200 g, mapped to MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG (plain milk).",
+          "massEvidence": "Recipe-listed 60 ml; Fineli milk mass conversion 1 ml = 1 g used for this liquid.",
           "foodKey": "dairy",
           "preparationKey": "unflavoured-dairy",
           "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
         },
         {
           "name": "voi",
-          "grams": 150,
+          "grams": 15,
           "fineliRecordId": "fineli-576-release-20",
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 150 g, mapped to VOI, SUOLATON (unsalted butter)."
+          "massEvidence": "Current recipe lists 15 g butter; Fineli Release 20 butter composition."
         },
         {
           "name": "leivinjauhe",
-          "grams": 150,
-          "fineliRecordId": null,
+          "grams": 5,
+          "fineliRecordId": "fineli-74-2026-10-25",
           "giRecordId": null,
-          "excludedReason": "The recipe lists 150 g baking powder for two servings, which appears to be a quantity error. Confirm the recipe amount and source composition before calculating a total GK.",
-          "massEvidence": "Recipe-listed 150 g leivinjauhe."
+          "massEvidence": "Current recipe lists 5 g baking powder; Fineli Release 20 portion mass and composition."
         },
         {
           "name": "neutraalia paistoöljyä",
@@ -15537,30 +15535,27 @@
         },
         {
           "name": "kookosmaito",
-          "grams": 184,
+          "grams": null,
           "fineliRecordId": "afcd-F002991-release-3",
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 184 g, mapped to Coconut, milk, canned, regular fat (canned regular-fat coconut milk)."
+          "massEvidence": "Recipe-listed 200 ml canned coconut milk; mass conversion unresolved.",
+          "excludedReason": "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g."
         },
         {
           "name": "mango",
-          "grams": 240,
+          "grams": 150,
           "fineliRecordId": "fineli-11071-release-20",
           "giRecordId": "fruit-category-mean-gi-51",
-          "massEvidence": "Recipe-listed 240 g, mapped to EKSOOTTINEN HEDELMÄ, KESKIARVO, MANGO/PAPAIJA, KUORITTU (peeled raw mango).",
+          "massEvidence": "Current recipe lists 150 g mango; Fineli peeled mango record.",
           "foodKey": "fruit-category-mean",
           "preparationKey": "category-mean",
           "giMatchEvidence": "Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence."
         },
         {
           "name": "seesaminsiemen",
-          "grams": 100,
+          "grams": 6,
           "fineliRecordId": "fineli-385-release-20",
-          "giRecordId": "nuts-category-mean-gi-22",
-          "massEvidence": "Recipe-listed 100 g, mapped to SEESAMINSIEMEN, KUORINEEN (whole unhulled sesame seeds).",
-          "foodKey": "peanut",
-          "preparationKey": "nuts-category-mean",
-          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+          "massEvidence": "Current recipe lists 6 g sesame seeds; Fineli sesame record."
         },
         {
           "name": "suolaa maun mukaan",
@@ -15641,27 +15636,29 @@
         },
         {
           "name": "juusto",
-          "grams": 100,
-          "fineliRecordId": "fineli-643-release-20",
+          "grams": 80,
+          "fineliRecordId": "fineli-29239-release-20",
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 100 g, mapped to JUUSTO, KOVA PIENIKOLOINEN JUUSTO, RASVAA 24-27 %, EDAM (plain Edam cheese, generic hard-cheese match)."
+          "massEvidence": "Current recipe lists 80 g shredded mozzarella; Fineli fresh mozzarella record."
         },
         {
           "name": "sieni",
-          "grams": 15,
-          "fineliRecordId": "fineli-345-release-20",
+          "grams": 75,
+          "fineliRecordId": "afcd-F005946-2026-10-24",
           "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Recipe-listed 15 g, mapped to HERKKUSIENI (raw button mushroom).",
+          "massEvidence": "Current recipe lists 75 g common mushrooms; AFCD fresh raw common mushroom record.",
           "foodKey": "vegetable",
           "preparationKey": "vegetable-category",
           "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
         },
         {
           "name": "maissi",
-          "grams": 240,
-          "fineliRecordId": "fineli-28958-release-20",
+          "grams": null,
+          "recipeQuantity": { "amount": 80, "unit": "g", "massGrams": 80 },
+          "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 240 g, mapped to MAISSI, MAISSINTÄHKÄ, GRILLATTU (grilled corn cob)."
+          "massEvidence": "Recipe-listed amount and mass are known: 80 g corn kernels. The matching food composition and preservation/cooking state are unresolved; this is not a missing-mass estimate.",
+          "excludedReason": "Calculation remains blocked because no source-matched composition record has been approved for the recipe's corn-kernel preparation state. The prior 240 g grilled-cob mapping is incorrect; no substitute state is assumed."
         },
         {
           "name": "neutraalia paistoöljyä",
@@ -15885,10 +15882,10 @@
         },
         {
           "name": "oliivi",
-          "grams": 150,
+          "grams": 25,
           "fineliRecordId": "fineli-34972-release-20",
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 150 g, mapped to OLIIVI, KESKIARVO, KIVETÖN, SUOLALIEMESSÄ, VIHREÄ (green olives in brine, pitted)."
+          "massEvidence": "Current recipe lists 25 g green olives; Fineli pitted green olive record."
         },
         {
           "name": "hapanjuurileipä",
@@ -15926,10 +15923,12 @@
       "ingredients": [
         {
           "name": "maissi",
-          "grams": 240,
-          "fineliRecordId": "fineli-28958-release-20",
+          "grams": null,
+          "recipeQuantity": { "amount": 100, "unit": "g", "massGrams": 100 },
+          "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 240 g, mapped to MAISSI, MAISSINTÄHKÄ, GRILLATTU (grilled corn cob)."
+          "massEvidence": "Recipe-listed amount and mass are known: 100 g fresh corn kernels. The matching food composition record for this preparation is unresolved; this is not a missing-mass estimate.",
+          "excludedReason": "Calculation remains blocked because no source-matched fresh-kernel composition and suitable GI record has been approved. The prior 240 g grilled-cob mapping is incorrect; no substitute state is assumed."
         },
         {
           "name": "porkkana",
@@ -16113,28 +16112,26 @@
         },
         {
           "name": "oliivi",
-          "grams": 150,
+          "grams": 25,
           "fineliRecordId": "fineli-34972-release-20",
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 150 g, mapped to OLIIVI, KESKIARVO, KIVETÖN, SUOLALIEMESSÄ, VIHREÄ (green olives in brine, pitted)."
+          "massEvidence": "Current recipe lists 25 g green olives; Fineli pitted green olive record."
         },
         {
           "name": "tomaatti",
-          "grams": 125,
+          "grams": 100,
           "fineliRecordId": "fineli-352-release-20",
-          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
-          "massEvidence": "Recipe-listed 125 g, mapped to TOMAATTI (raw tomato).",
-          "foodKey": "tomato",
-          "preparationKey": "whole-raw",
-          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+          "massEvidence": "Current recipe lists 100 g tomato; Fineli raw tomato composition."
         },
         {
           "name": "rosmariini",
-          "grams": 150,
+          "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "No source-matched composition and preparation was resolved for “rosmariini”; it is not treated as zero.",
-          "massEvidence": "Recipe-listed 150 g rosmariini."
+          "excludedReason": "Fresh rosemary is omitted under the existing small-contribution tolerance using a source-backed total-carbohydrate ceiling, not an estimate of its actual available carbohydrate.",
+          "massEvidence": "Current recipe lists 1 g fresh rosemary.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.1035,
+          "upperBoundEvidence": "USDA FoodData Central SR Legacy FDC 173473, Rosemary, fresh, reports 20.7 g total carbohydrate/100 g, including 14.1 g fibre. At the recipe's 1 g across 2 servings this is at most 0.1035 g total carbohydrate per serving (20.7 × 1/100/2). Total carbohydrate including fibre is used only as a conservative ceiling; it is not an available-carbohydrate estimate. https://fdc.nal.usda.gov/food-details/173473/nutrients"
         },
         {
           "name": "neutraalia paistoöljyä",
@@ -16155,6 +16152,16 @@
           "estimatedAvailableCarbohydratePerServingG": 0,
           "negligibleAssumption": "Plain salt has zero available carbohydrate.",
           "massEvidence": "Recipe-listed salt; not weighed."
+        },
+        {
+          "name": "vettä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain water contributes zero available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain water contributes zero available carbohydrate regardless of volume.",
+          "massEvidence": "Current recipe lists 150 ml plain water."
         }
       ]
     },
@@ -16950,10 +16957,11 @@
         },
         {
           "name": "kookosmaito",
-          "grams": 184,
+          "grams": null,
           "fineliRecordId": "afcd-F002991-release-3",
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 184 g, mapped to Coconut, milk, canned, regular fat (canned regular-fat coconut milk)."
+          "massEvidence": "Recipe-listed 200 ml canned coconut milk; mass conversion unresolved.",
+          "excludedReason": "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g."
         },
         {
           "name": "kananmuna",
@@ -16964,10 +16972,10 @@
         },
         {
           "name": "kurkku",
-          "grams": 400,
+          "grams": 100,
           "fineliRecordId": "fineli-346-release-20",
           "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Recipe-listed 400 g, mapped to KURKKU (raw cucumber).",
+          "massEvidence": "Current recipe lists 100 g cucumber; Fineli raw cucumber record.",
           "foodKey": "vegetable",
           "preparationKey": "vegetable-category",
           "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
@@ -19844,11 +19852,10 @@
         },
         {
           "name": "nori",
-          "grams": 150,
-          "fineliRecordId": null,
+          "grams": 2,
+          "fineliRecordId": "fineli-34136-release-20",
           "giRecordId": null,
-          "excludedReason": "The structured recipe lists 150 g dried nori for two servings, an implausible amount that may be a unit or decimal error. The quantity must be corrected before calculating a complete serving estimate.",
-          "massEvidence": "Recipe-listed 150 g dried nori; amount flagged as an outlier and not silently changed."
+          "massEvidence": "Current recipe lists 2 g dried nori; mapped to Fineli dried nori."
         },
         {
           "name": "suolaa maun mukaan",
@@ -21630,21 +21637,13 @@
           "name": "tomaatti",
           "grams": 125,
           "fineliRecordId": "fineli-352-release-20",
-          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
-          "massEvidence": "Recipe-listed 125 g, mapped to TOMAATTI (raw tomato).",
-          "foodKey": "tomato",
-          "preparationKey": "whole-raw",
-          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+          "massEvidence": "Recipe-listed 125 g, mapped to TOMAATTI (raw tomato)."
         },
         {
           "name": "paprika",
-          "grams": 170,
-          "fineliRecordId": "fineli-387-release-20",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
-          "massEvidence": "Recipe-listed 170 g, mapped to PAPRIKA, VIHREÄ (raw green bell pepper).",
-          "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Pepper, generic vegetable table entry: Generic pepper entry; species, preparation, and primary measurement details are not established.; category/analogue estimate, low confidence."
+          "grams": 150,
+          "fineliRecordId": "fineli-386-release-20",
+          "massEvidence": "Current recipe lists 150 g red bell pepper; Fineli Release 20 red paprika record."
         },
         {
           "name": "harissa",

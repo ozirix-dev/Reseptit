@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "content:sync": "tsx scripts/build-content.ts",
-    "test": "npm run content:sync && npm run audit:nutrition -- --strict && tsx --test tests/servings.test.ts tests/published-content.test.ts tests/markdown-safety.test.ts tests/recipe-schema.test.ts tests/recipe-search.test.ts tests/route-content.test.ts tests/nutrition-model.test.ts tests/nutrition-evidence.test.ts tests/glycemic-load.test.ts",
+    "test": "npm run content:sync && npm run audit:nutrition -- --strict && tsx --test tests/servings.test.ts tests/published-content.test.ts tests/markdown-safety.test.ts tests/recipe-schema.test.ts tests/recipe-search.test.ts tests/route-content.test.ts tests/nutrition-model.test.ts tests/nutrition-evidence.test.ts tests/glycemic-load.test.ts tests/glycemic-coverage-inventory.test.ts",
     "test:translations": "tsx --test tests/translations.test.ts tests/translation-review.test.ts",
     "test:image": "tsx --test --test-concurrency=1 tests/image-pipeline.test.ts",
     "test:browser": "tsx --test --test-concurrency=1 tests/browser-smoke.test.ts tests/route-loading.browser.test.ts tests/responsive-images.browser.test.ts",
