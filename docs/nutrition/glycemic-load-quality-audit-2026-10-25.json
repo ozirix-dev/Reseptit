@@ -51,7 +51,7 @@
     ],
     "classChangesAmongDefinedClasses": 0,
     "nearBoundaryWithinOneGLPoint": 11,
-    "unclassifiedGap10to11": 1,
+    "unclassifiedGap10to11": 0,
     "previous112Stage": {
       "commonPublished": 112,
       "numericChanged": 65,
@@ -59,8 +59,60 @@
       "absoluteChangeAtLeast1": 1,
       "definedClassChanges": 0,
       "nearBoundaryWithinOneGLPoint": 14,
-      "unclassifiedGap10to11": 2
-    }
+      "unclassifiedGap10to11": 0,
+      "classMethod": "Round to nearest integer first; 0–10 low, 11–19 medium, 20+ high.",
+      "rawValuesInFormer10to11Gap": 2
+    },
+    "rawThresholdCrossings": {
+      "threshold10": {
+        "count": 0,
+        "examples": []
+      },
+      "threshold20": {
+        "count": 1,
+        "examples": [
+          {
+            "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+            "before": 20.88,
+            "afterUnrounded": 19.826500000000003,
+            "afterTwoDecimals": 19.83
+          }
+        ]
+      }
+    },
+    "classMethod": "Round unrounded per-serving GL to nearest integer first; integer 0–10 low, 11–19 medium, 20+ high.",
+    "userVisibleRounding": "One significant digit (matching the recipe-card formatter).",
+    "userVisibleOneSignificantDigitChanges": 26,
+    "userVisibleChangedRecipeIds": [
+      "chettinad-kana",
+      "vhh-mansikkakakku",
+      "kermainen-kanasienipannu",
+      "raejuusto-pesto-kasviskulho",
+      "vhh-juustokakku",
+      "vhh-brita-kakku",
+      "vhh-letut",
+      "vhh-lihapiirakka",
+      "vhh-runebergintortut",
+      "keto-korvapuustit",
+      "vhh-korvapuustit",
+      "keto-suklaakeksit",
+      "vhh-mokkapalat",
+      "khao-man-gai-vhh",
+      "kesakurpitsalasagne-vhh",
+      "pad-kra-pao-vhh",
+      "keto-kauralesesampylat",
+      "parsakaali-sinihomejuustofrittata",
+      "kai-jiew-vhh",
+      "savulohi-avokadokulho",
+      "kantonilainen-hoyrytetty-kala",
+      "indonesialainen-ketoprak-aamiaiskulho",
+      "lahi-ita-manakish-zaatarilla",
+      "valimerellinen-pinaatti-fetashakshuka",
+      "yrttituorejuusto-kinkkurullat",
+      "kreikkalainen-kanavuoka-oliiveilla"
+    ],
+    "rawValuesInFormer10to11Gap": 1,
+    "comparisonPrecision": "Numeric change counts compare two-decimal internal estimates; class and raw-threshold checks use unroundedGlycemicLoadPerServing; recipe cards show one significant digit from the two-decimal estimate."
   },
   "carbohydrateAudit": {
     "previousDisplayedZeroTotals": 21,
@@ -593,5 +645,7 @@
       }
     ],
     "interpretation": "Scenario GI 20/50/80/120 values only estimate sensitivity; they are not measured values, bounds, or substitutes for missing GI. Alternatives remain unapplied."
-  }
+  },
+  "fingerprintVersion": 3,
+  "foodEvidenceFingerprintDescription": "Version 3 includes source identity, food state and basis, normalized available carbohydrate, CHO plus polyols for EU totals including polyols, CHO plus fibre for US totals including fibre, GI value and match-quality evidence. Irrelevant source metadata and prose are excluded."
 }

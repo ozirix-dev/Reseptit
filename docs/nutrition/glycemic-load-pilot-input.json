@@ -17961,12 +17961,10 @@
         {
           "name": "riisiviinietikkaa",
           "grams": 12,
-          "fineliRecordId": "fineli-11521-release-20",
-          "giRecordId": "rice-category-mean-gi-67",
-          "massEvidence": "Recipe-listed 12 g, mapped to RIISI PITKÄJYVÄINEN, PUUROUTUMATON (dry uncooked long-grain white rice).",
-          "foodKey": "rice-category-mean",
-          "preparationKey": "category-mean",
-          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "No source-matched available-carbohydrate composition is resolved for rice wine vinegar; the measured amount is not treated as zero.",
+          "massEvidence": "Recipe-listed 12 g rice wine vinegar; source composition remains unresolved."
         }
       ]
     },

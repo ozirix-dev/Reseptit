@@ -51,6 +51,7 @@ export interface GlycemicLoadResult {
   recipeId: string;
   servings: number;
   status: "CALCULATED" | "INSUFFICIENT SOURCE DATA";
+  unroundedGlycemicLoadPerServing: number | null;
   glycemicLoadPerServing: number | null;
   glycemicLoadRangePerServing: { min: number; max: number } | null;
   omittedAvailableCarbohydratePerServingG: number;
@@ -86,8 +87,28 @@ export interface GlycemicLoadResult {
 
 const valid = (value: unknown): value is number => typeof value === "number" && Number.isFinite(value) && value >= 0;
 
+export type GlycemicLoadClass = "LOW" | "MEDIUM" | "HIGH";
+
+/** Public recipe cards display one significant digit; retain the exact estimate internally. */
+export function roundGlycemicLoadForDisplay(value: number): number {
+  if (!valid(value)) throw new Error("Glycemic load must be a finite non-negative number.");
+  return Number(value.toPrecision(1));
+}
+
+/** Standard GL bands apply to the nearest whole-number estimate, avoiding decimal gaps. */
+export function classifyGlycemicLoad(value: number): GlycemicLoadClass {
+  if (!valid(value)) throw new Error("Glycemic load must be a finite non-negative number.");
+  const wholeNumber = Math.round(value);
+  if (wholeNumber <= 10) return "LOW";
+  if (wholeNumber <= 19) return "MEDIUM";
+  return "HIGH";
+}
+
 function categoryMeanMatchesFood(foodKey: string, foodName: string, ingredientName: string): boolean {
   const text = `${foodName} ${ingredientName}`.normalize("NFC").toLocaleLowerCase("fi-FI");
+  const ingredient = ingredientName.normalize("NFC").toLocaleLowerCase("fi-FI");
+  if (foodKey === "rice-category-mean" && /riisiviinietik|rice\s+(?:wine\s+)?vinegar/.test(ingredient)) return false;
+  if (foodKey === "dairy" && /maitosukla|milk\s+chocolate|suklaa|chocolate/.test(ingredient)) return false;
   const patterns: Record<string, RegExp> = {
     dairy: /maito|milk|cream|kerma|jogurtti|yogurt|juusto|cheese|rahka|quark|paneer|feta|ricotta|voi|butter|dairy/,
     "bakery-products-category-mean": /jauho|flour|mannasuurimo|semolina|leipä|bread|kaura|oat|vehnä|wheat|ruis|rye/,
@@ -288,6 +309,7 @@ export function calculateGlycemicLoad(
     recipeId: input.recipeId,
     servings: input.servings,
     status: complete ? "CALCULATED" : "INSUFFICIENT SOURCE DATA",
+    unroundedGlycemicLoadPerServing: complete ? totalLoad : null,
     glycemicLoadPerServing: complete ? Math.round((totalLoad + Number.EPSILON) * 100) / 100 : null,
     glycemicLoadRangePerServing: complete && hasRange ? {
       min: Math.round((totalLoadMin + Number.EPSILON) * 100) / 100,

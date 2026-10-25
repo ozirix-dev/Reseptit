@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { parseMarkdown } from "../src/content/markdown";
-import type { FoodRecord } from "./nutrition-model";
+import { normalizeCarbohydrate, type FoodRecord } from "./nutrition-model";
 import type { GlycemicIndexRecord, GlycemicLoadRecipeInput } from "./glycemic-load-model";
 
 export type RecipeIngredientAlias = { canonical: string; evidence: string };
@@ -121,16 +121,34 @@ export function glycemicLoadEvidenceHash(
   return createHash("sha256").update(stableStringify({
     foods: foodIds.map((id) => {
       const record = foodById.get(id);
-      return record ? {
+      if (!record) return { id, missing: true };
+      const componentValue = (component: "CHO" | "FIBT" | "POLYL", fallback: number | null | undefined) =>
+        record.componentValues && Object.hasOwn(record.componentValues, component)
+          ? record.componentValues[component] : fallback;
+      const carbohydrate = componentValue("CHO", record.per100g.carbohydrate);
+      const fibre = record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE"
+        ? componentValue("FIBT", record.per100g.fibre) : null;
+      const polyols = record.carbohydrateDefinition === "EU_TOTAL_INCLUDING_POLYOLS"
+        ? componentValue("POLYL", record.per100g.polyols) : null;
+      let normalizedAvailable: number | null = null;
+      let normalizationError: string | null = null;
+      try {
+        normalizedAvailable = normalizeCarbohydrate(record).available;
+      } catch (error) {
+        normalizationError = String(error);
+      }
+      return {
         id: record.id,
         name: normalizeText(record.name),
-        sourceUrl: record.sourceUrl,
         state: normalizeText(record.state),
         basis: record.basis,
         carbohydrateDefinition: record.carbohydrateDefinition,
-        carbohydratePer100g: record.componentValues && Object.hasOwn(record.componentValues, "CHO")
-          ? record.componentValues.CHO : record.per100g.carbohydrate,
-      } : { id, missing: true };
+        carbohydrate,
+        fibre,
+        polyols,
+        normalizedAvailable,
+        normalizationError,
+      };
     }),
     gi: giIds.map((id) => {
       const record = giById.get(id);

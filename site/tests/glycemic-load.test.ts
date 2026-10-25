@@ -1,8 +1,10 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import test from "node:test";
 
 import type { FoodRecord } from "../scripts/nutrition-model";
-import { calculateGlycemicLoad, type GlycemicIndexRecord } from "../scripts/glycemic-load-model";
+import { calculateGlycemicLoad, classifyGlycemicLoad, roundGlycemicLoadForDisplay, type GlycemicIndexRecord } from "../scripts/glycemic-load-model";
 import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches } from "../scripts/glycemic-load-recipe-binding";
 import { publishedGlycemicLoadForRecipe } from "../src/features/recipes/glycemic-load-display";
 
@@ -99,6 +101,69 @@ test("GI and food source value, state, and composition edits invalidate only cal
   assert.equal(recipeBindingMatches(original, glycemicLoadEvidenceHash(input, [food("food", 12.5)], [{ ...gi, preparationKey: "cooked" }])), false);
 });
 
+test("food evidence fingerprints include definition-specific carbohydrate components and meaningful state", () => {
+  const input = { recipeId: "source", servings: 1, ingredients: [{ name: "erythritol", grams: 10, fineliRecordId: "erythritol", giRecordId: null }] };
+  const erythritol: FoodRecord = {
+    ...food("erythritol", 100, "Foodin erythritol"),
+    carbohydrateDefinition: "EU_TOTAL_INCLUDING_POLYOLS",
+    componentValues: { CHO: 100, FIBT: 0, POLYL: 100 },
+    per100g: { carbohydrate: 100, fibre: 0, polyols: 100 },
+  };
+  const original = glycemicLoadEvidenceHash(input, [erythritol], []);
+  assert.notEqual(glycemicLoadEvidenceHash(input, [{ ...erythritol, componentValues: { ...erythritol.componentValues, POLYL: 99 }, per100g: { ...erythritol.per100g, polyols: 99 } }], []), original);
+  assert.equal(glycemicLoadEvidenceHash(input, [{ ...erythritol, name: "Foodin, erythritol!", sourceUrl: "https://example.test/renamed", retrievedAt: "2026-10-25" }], []), original);
+  assert.notEqual(glycemicLoadEvidenceHash(input, [{ ...erythritol, state: "diluted erythritol drink" }], []), original);
+
+  const usInput = { ...input, ingredients: [{ ...input.ingredients[0], fineliRecordId: "us-food" }] };
+  const usFood: FoodRecord = {
+    ...food("us-food", 52, "US-labelled food"),
+    carbohydrateDefinition: "US_TOTAL_INCLUDING_FIBRE",
+    componentValues: { CHO: 52, FIBT: 10, POLYL: 2 },
+    per100g: { carbohydrate: 52, fibre: 10, polyols: 2 },
+  };
+  const usOriginal = glycemicLoadEvidenceHash(usInput, [usFood], []);
+  assert.notEqual(glycemicLoadEvidenceHash(usInput, [{ ...usFood, componentValues: { ...usFood.componentValues, FIBT: 11 }, per100g: { ...usFood.per100g, fibre: 11 } }], []), usOriginal);
+});
+
+test("whole-number GL classes and one-significant-digit display use separate rounding rules", () => {
+  const expected: Array<[number, number, string]> = [
+    [9.99, 10, "LOW"], [10, 10, "LOW"], [10.5, 10, "MEDIUM"], [10.99, 10, "MEDIUM"], [11, 10, "MEDIUM"],
+    [19, 20, "MEDIUM"], [19.49, 20, "MEDIUM"], [19.5, 20, "HIGH"], [19.83, 20, "HIGH"], [20, 20, "HIGH"], [20.88, 20, "HIGH"],
+  ];
+  for (const [value, shown, classification] of expected) {
+    assert.equal(roundGlycemicLoadForDisplay(value), shown, `display rounding for ${value}`);
+    assert.equal(classifyGlycemicLoad(value), classification, `whole-number class for ${value}`);
+    assert.equal(new Intl.NumberFormat("en", { maximumSignificantDigits: 1, minimumSignificantDigits: 1 }).format(value), String(shown));
+  }
+});
+
+test("category means reject clear rice-vinegar/rice and milk-chocolate/dairy mismatches", () => {
+  const riceGi = { ...gi, id: "rice-mean", foodKey: "rice-category-mean", preparationKey: "category-mean", matchKind: "CATEGORY_MEAN" as const, qualityTier: "SUPPLEMENTARY" as const, confidence: "LOW" as const };
+  const dairyGi = { ...gi, id: "dairy-mean", foodKey: "dairy", preparationKey: "category-mean", matchKind: "CATEGORY_MEAN" as const, qualityTier: "SUPPLEMENTARY" as const, confidence: "LOW" as const };
+  for (const scenario of [
+    { name: "riisiviinietikkaa", food: food("rice", 79, "Dry uncooked long-grain rice"), giRecord: riceGi, foodKey: "rice-category-mean" },
+    { name: "maitosuklaata", food: food("milk", 5, "Whole milk"), giRecord: dairyGi, foodKey: "dairy" },
+  ]) {
+    const result = calculateGlycemicLoad({
+      recipeId: "mismatch", servings: 1,
+      ingredients: [{ name: scenario.name, grams: 100, fineliRecordId: scenario.food.id, giRecordId: scenario.giRecord.id, foodKey: scenario.foodKey, preparationKey: "category-mean", giMatchEvidence: "Broad category mean; mismatch guard regression fixture." }],
+    }, [scenario.food], [scenario.giRecord]);
+    assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+    assert.equal(result.glycemicLoadPerServing, null);
+  }
+});
+
+test("the GL Markdown summary stays aligned with the machine-readable audit", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [markdown, json] = await Promise.all([
+    readFile(path.join(root, "docs/nutrition/glycemic-load-quality-audit-2026-10-25.md"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-load-quality-audit-2026-10-25.json"), "utf8").then((value) => JSON.parse(value)),
+  ]);
+  const { total, previousCalculated, previousIncomplete, currentCalculated, currentIncomplete, changedStructuresSinceReview, previousCalculatedNowBlocked } = json.recipes;
+  assert.ok(markdown.includes(`| ${total} | ${previousCalculated} | ${currentCalculated} | ${previousIncomplete} | ${currentIncomplete} | ${changedStructuresSinceReview} | ${previousCalculatedNowBlocked} |`));
+  assert.ok(markdown.includes(`${currentCalculated} yhteisen lasketun arvon vertailussa`));
+});
+
 test("single-ingredient GL uses available carbohydrate per serving and rounds only the total", () => {
   const result = calculateGlycemicLoad({
     recipeId: "one",
@@ -106,6 +171,7 @@ test("single-ingredient GL uses available carbohydrate per serving and rounds on
     ingredients: [{ name: "food", grams: 100, fineliRecordId: "food", giRecordId: gi.id, foodKey: "tested-food", preparationKey: "raw", giMatchEvidence: "Exact raw-food match." }],
   }, [food("food", 25)], [gi]);
   assert.equal(result.status, "CALCULATED");
+  assert.equal(result.unroundedGlycemicLoadPerServing, 6.25);
   assert.equal(result.ingredients[0].availableCarbohydratePerServingG, 12.5);
   assert.equal(result.glycemicLoadPerServing, 6.25);
 });
@@ -236,6 +302,7 @@ test("an unpublished GI record still blocks an important ingredient", () => {
   }, [food("food", 10)], [{ ...gi, id: "unpublished", source: { ...gi.source, published: false } }]);
   assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
   assert.equal(result.glycemicLoadPerServing, null);
+  assert.equal(result.unroundedGlycemicLoadPerServing, null);
   assert.match(result.blockers[0], /unpublished/);
 });
 

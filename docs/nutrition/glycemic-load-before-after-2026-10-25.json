@@ -1925,9 +1925,9 @@
     "after": null,
     "blockers": [
       "char-siu: hoisinkastiketta: undefined category mean/analogue, low confidence; not a measured ingredient-specific value.",
-      "char-siu: cumulative omitted available carbohydrate is 1.131 g/serving, above the 1 g editorial tolerance."
+      "char-siu: cumulative omitted available carbohydrate is 1.150 g/serving, above the 1 g editorial tolerance."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.1315
+    "omittedAvailableCarbohydratePerServingG": 1.15025
   },
   {
     "recipeId": "hernekeitto-savupotkalla",
@@ -2822,6 +2822,7 @@
     "blockers": [
       "jiaozi: dumpling-taikinalevyjä: No source-matched composition and preparation was resolved for “dumpling-taikinalevyjä”; it is not treated as zero.",
       "jiaozi: soijakastiketta: GI evidence is missing.",
+      "jiaozi: riisiviinietikkaa: No source-matched available-carbohydrate composition is resolved for rice wine vinegar; the measured amount is not treated as zero.",
       "jiaozi: cumulative omitted available carbohydrate is 1.482 g/serving, above the 1 g editorial tolerance.",
       "jiaozi: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
@@ -2836,6 +2837,7 @@
     "blockers": [
       "xiaolongbao: pyöreitä dumpling-taikinalevyjä: No source-matched composition and preparation was resolved for “pyöreitä dumpling-taikinalevyjä”; it is not treated as zero.",
       "xiaolongbao: hyytelöitynyttä lihalientä: No source-matched composition and preparation was resolved for “hyytelöitynyttä lihalientä”; it is not treated as zero.",
+      "xiaolongbao: mustariisiviinietikkaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "xiaolongbao: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
     "omittedAvailableCarbohydratePerServingG": 0.8025

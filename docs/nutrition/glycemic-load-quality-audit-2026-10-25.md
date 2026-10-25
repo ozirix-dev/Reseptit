@@ -1,95 +1,107 @@
 # Glykeemisen kuorman laadunvarmistus, 25.10.2026
 
-## Rajaus ja yhteenveto
+## Rajaus ja nykytila
 
-Tarkistus kattaa kaikki 325 julkaistua reseptiä lähde-SHA:ssa
-`3e410436a82df391075f7a762c23f011624a8ca6`. GK-syötteet ja reseptiversiot
-sidotaan edellisen GL-katselmuksen commitin `b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5`
-mukaan. Ainesosa- tai valmistusrakenne oli muuttunut 72 reseptissä; yksikään
-GK-laskentasyöte ei ollut muuttunut katselmuksen jälkeen.
+Auditointi kattaa 325 reseptiä lähdesisällön SHA:ssa
+`3e410436a82df391075f7a762c23f011624a8ca6`. Viimeisin rakenteiden tarkistuksen
+lähtöversio on `b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5`; resepti- ja
+laskentasyötteiden fingerprintien määritelmä on versio 3.
 
-| Mittari | Ennen | Nyt |
-| --- | ---: | ---: |
-| Tarkistetut reseptit | 325 | 325 |
-| Lasketut kokonaisarviot | 190 | 112 |
-| Keskeneräiset tai julkaisusta estetyt | 135 | 213 |
-| Reseptirakenne muuttunut viime katselmuksen jälkeen | ei sidosta | 72 |
-| Aiemmin lasketut, nyt estetty | — | 78 |
-| Reseptin rakenne- tai GK-syötemismatchit | ei sidontaa | 72 / 0 |
+| Reseptit | Aiemmin laskettu | Nyt laskettu | Aiemmin keskeneräinen | Nyt keskeneräinen | Muuttunut rakenne | Aiempia laskettuja estetty |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 325 | 190 | 99 | 135 | 226 | 72 | 91 |
 
-Koneellisesti luettava 325-rivinen ennen/jälkeen-vertailu on tiedostossa
-[`glycemic-load-before-after-2026-10-25.json`](glycemic-load-before-after-2026-10-25.json),
-ja yhteenvetoraportti on tiedostossa
+Nykyisten 91 eston jakauma on 38 vain kumulatiivisen pienosuusrajan vuoksi,
+40 vain GI-lähteen tai vastaavuuden vuoksi, 12 molemmista syistä ja yksi muun
+ratkaisemattoman laskentasyötteen vuoksi. Tämä jakauma kuvaa nykyistä tilaa,
+ei aiempaa 78 eston vaihetta.
+
+Rakenteeltaan muuttuneista 72 reseptistä 21:llä oli aiempi laskettu GK. Kaikki
+21 tarkistettiin: 13 palautettiin laskentaan ja kahdeksan jäi asianmukaisesti
+estetyksi. Muut 51 olivat jo aiemmin keskeneräisiä ja odottavat edelleen
+tarkistusta. PR #104:n 112 lasketun arvon vaiheesta 86 säilyi, 26 estyi
+(4 vain toleranssin ja 22 GI-syötteen vuoksi) ja 13 rakenteen tarkistuksen
+jälkeen palautui: `112 - 26 + 13 = 99`.
+
+Koneellinen 325 reseptin ennen/jälkeen-vertailu on tiedostossa
+[`glycemic-load-before-after-2026-10-25.json`](glycemic-load-before-after-2026-10-25.json).
+Koneellinen lähde- ja estoraportti on tiedostossa
 [`glycemic-load-quality-audit-2026-10-25.json`](glycemic-load-quality-audit-2026-10-25.json).
 
-## Merkitykselliset muutokset
+## Laskenta, luokitus ja käyttäjälle näkyvä pyöristys
 
-112 reseptin uusi laskettu luku voidaan näyttää nykyisillä syötteillä ja
-lähdepolitiikalla. Näistä 65 arvoa poikkeaa edellisestä tuloksesta; 47 säilyi
-samoina. Kahdeksan aiempaa nollaa muuttui positiiviseksi, kun pienet
-hiilihydraattiosuudet huomioidaan kumulatiivisesti. Yksi muutos oli vähintään
-1 GK-yksikkö annosta kohti: kanakeitto pinaatilla ja sitruunalla muuttui arvosta
-1,00 arvoon 2,31. Toimituksellisella tarkistusrajalla selvästi tulkintaan
-vaikuttavia muutoksia oli 9: nollasta positiiviseksi muuttuneet kahdeksan sekä
-yksi vähintään yhden yksikön muutos. Yhden yksikön raja on vain auditoinnin
-vertailusääntö, ei kliininen kynnys.
+GK lasketaan ainesosien lähteistetyistä osuuksista ja summataan ennen tuloksen
+kahden desimaalin tallennuspyöristystä. Reseptisivulla arvo esitetään yhden
+merkitsevän numeron tarkkuudella. Luokitus käyttää lähimpään kokonaislukuun
+pyöristettyä GK:ta: kokonaisluku 0–10 on matala, 11–19 keskitasoinen ja 20 tai
+suurempi korkea. Näin desimaalien väliin ei jää luokittelematonta aluetta.
+Luokitus on auditoinnin kuvaustapa, ei kliininen raja.
 
-78 aiempaa kokonaisarviota estetään. Niistä 21 kuuluu niihin resepteihin, joiden
-rakenne on muuttunut edellisen GL-katselmuksen jälkeen. Keskeiset esimerkit ovat
-Ketoprak, manakish, lohi-onigiri, soijamaito-aamiainen ja paella valenciana.
-Vanha GK-syöte ei voi jäädä julkaistuksi, vaikka se laskettaisiin uudelleen
-nykyisestä reseptistä: laskentasyöte ja kaikki vastaavuudet pitää tarkistaa.
-Muut kuusi aiempaa arviota estyvät uuden kumulatiivisen rajan tai olennaisen
-lähde-/määräpuutteen takia.
+99 yhteisen lasketun arvon vertailussa numeerisesti muuttui 52, seitsemän
+siirtyi nollasta positiiviseksi ja neljä muuttui vähintään yhden GK-yksikön.
+Yhden merkitsevän numeron käyttäjänäkymässä 26 arvoa muuttui. Pyöristämättömän
+20-rajan ylitti yksi arvo: harcha juustolla `20,88 → 19,83`; 10-rajan ylityksiä
+oli nolla. Sovitulla kokonaislukuluokituksella luokkamuutoksia oli nolla:
+harchan molemmat arvot pyöristyvät luokittelussa kokonaislukuun 20 ja ovat
+korkeita. Käyttäjän yhden merkitsevän numeron näkymässä molemmat näkyvät noin
+20:nä.
 
-## Pienet hiilihydraattiosuudet ja nollat
+Manakish muuttui `22,33 → 33,06` ja Ketoprak `23,89 → 26,67`; kummankin
+käyttäjälle näkyvä yhden merkitsevän numeron arvo muuttuu noin 20:stä noin
+30:een. Nämä ovat reseptien vertailua helpottavia muutoksia, eivät väitteitä
+kliinisestä vaikutuksesta. Auditoinnin 11 toimituksellista tarkistuslippua
+(seitsemän nollasta positiiviseen ja neljä vähintään yhden yksikön muutosta)
+eivät ole kliininen kynnys.
 
-Edellisessä mallissa 87 reseptin pois jätetty hiilihydraattimäärä oli vähintään
-1 g/annos, 17 reseptissä vähintään 2 g/annos ja suurin määrä oli 3,5968 g/annos.
-21 aiemmasta nollatuloksesta 18:ssa pois jätetty summa oli vähintään 1 g/annos.
-Tacokulho naudalla ja avokadolla oli aiemmin 0,00, vaikka pois jätetty osuus oli
-2,95775 g/annos.
+## Rakenne- ja lähdefingerprintit
 
-Alle 1 g:n osuudet summataan nyt reseptikohtaisesti. Jos yksittäiseltä
-alle 1 g/annos osuudelta puuttuu GI-osuma, sen voi jättää pois vain, kun kaikkien
-tällaisten pois jätettävien osuuksien summa jää alle 1 g/annos. Raja on
-toimituksellinen toleranssi ymmärrettävien arvioiden säilyttämiseksi, ei kliininen
-virheraja. Tuntematon määrä estää laskennan eikä kuulu toleranssiin. Nykyisistä
-112 arviosta 93 sisältää dokumentoidun pienosuuksien poissulun; suurin on
-0,99075 g/annos. 74 reseptissä pienten poisjättöjen yhteismäärä ylittää toleranssin ja GK estyy. Kolme laskettua nollatulosta sisältää alle 1 g/annos pois jätettyä hiilihydraattia; yhtään ilman poisjättöjä vahvistettua GK-kokonaisnollaa ei jäänyt. Nämä epävarmat nollat näytetään noin-arvioina pois jätetty määrä ilmoittaen.
+Reseptifingerprint sitoo reseptitunnisteen, annosmäärän, järjestetyt
+ainesosatunnisteet, määrät ja yksiköt, laskentaan vaikuttavat ainesosatilat
+sekä järjestetyn `cooking_method`-kentän. Vapaamuotoinen valmistusohje,
+toimitukselliset huomiot ja välimerkit eivät itsessään muuta sidosta.
+Laskentasyötteen fingerprint sitoo ruoka- ja GI-tunnisteet, määrät, avaimet,
+numeraaliset oletukset sekä lähdenäytön olemassaolon.
 
-## Lähteiden laatu ja vastaavuudet
+Lähdefingerprint huomioi ruokatietueen tunnisteen, tilan, painoperustan,
+hiilihydraattimääritelmän, normalisoidun käytettävissä olevan hiilihydraatin
+ja määritelmän laskennassa käyttämät komponentit. Mukaan tulee esimerkiksi
+polyolimäärä `EU_TOTAL_INCLUDING_POLYOLS`-lähteessä ja kuitu
+`US_TOTAL_INCLUDING_FIBRE`-lähteessä. GI-arvo, ruoka-/valmistusavaimet ja
+lähteen laatutiedot säilyvät sidonnassa. Otsikko, noutoaika, seliteteksti tai
+viitteen URL-muotoilu ei muuta laskentaa. Fingerprint käyttää nykyistä
+`normalizeCarbohydrate()`-toteutusta eikä muuta ravintoarvolaskentaa.
 
-Julkisen arvion lähdepolitiikka erottaa tutkimuksen laadun ja ruoka-aineen
-vastaavuuden. Suora julkaistu `STRONG`-osuma vaatii ruoka- ja valmistustavan
-avainten täsmäämisen. Julkaistua analogiaa voidaan käyttää, kun vastaavuuden
-peruste ja valmistustapa on dokumentoitu; se pakottaa luottamustason matalaksi.
-Elintarvikeryhmän keskiarvo säilyy yleisenä matalan luottamuksen arviona, eikä sitä
-nimitetä yksittäisen ruoan mitatuksi GI-arvoksi. Puuttuva lähde tai merkittävä
-ruoka-/valmistustaparistiriita estää kokonaisarvion.
+## Jiaozi ja tuoteryhmien vastaavuudet
 
-GK-inputissa olevien ainesosarivien GI-mäppäykset: 10 suoraa, 139 analogiaa,
-687 ryhmäkeskiarvoa ja 1 570 ilman GI-tietuetta. Vähintään yksi analogia esiintyy
-104 reseptissä ja ryhmäkeskiarvo 283 reseptissä. Nämä ovat syötteiden
-mäppäysmääriä, eivät tutkimusten tai reseptien hyväksyntämääriä.
+Jiaozin 12 g riisiviinietikkaa ei enää ole mäpätty Finelin kuivaan riisiin tai
+riisin GI-keskiarvoon. Etikan hiilihydraattikoostumusta ei ole lähteistetty,
+joten se merkitään tuntemattomaksi eikä nollaksi. Jiaozi pysyy keskeneräisenä;
+myös taikinalevyjen lähdekoostumus puuttuu. GI-kategoriatesti estää vastaavasti
+riisiviinietikan/riisin ja maitosuklaan/maidon selkeät tuoteryhmäristiriidat.
+Muita reseptejä ei käyty uudelleen läpi manuaalisesti.
 
-## Versionvarmistus, testit ja tila
+## Pienosuudet ja avoimet lähteet
 
-GK-tulos sidotaan reseptitunnisteeseen, annosmäärään, järjestettyyn
-ainesosaluetteloon nimi-/määrä-/yksikkö-/huomiotietoineen, valmistustapaan,
-valmistusohjeeseen sekä muistiinpanoihin. Toinen fingerprint sitoo Fineli- ja
-GI-tunnisteet, annosmuunnokset, lähdeperustelut ja oletukset. Jokainen audit ja
-build vertaa molempia sidoksia. Lähdenäytöllä dokumentoitu nimialias on sallittu
-[`glycemic-load-recipe-aliases.json`](glycemic-load-recipe-aliases.json)-tiedoston
-kautta; ilman näyttöä tehty muutos estää tuloksen.
+Nykyinen 1 g/annos kumulatiivinen toimituksellinen toleranssi säilyy.
+Pienosuuksien yhteismäärä näytetään eikä laskentaan lisätty uutta
+poikkeamajärjestelmää. Aiemmin dokumentoidut 2 g ja 3 g herkkyysskenaariot
+(133 ja 138 laskettavaa aiemman herkän lähdeoletuksen pohjalta) ovat
+jatkopäätöksen vaihtoehtoja, eivät tämän PR:n julkaistuja laskelmia tai
+hyväksyttyjä rajoja.
 
-Automaattiset testit osoittavat annos-, määrä-, yksikkö-, kuiva/kypsä-, GI-
-ja ruokatietuemuutosten eston, toistetun pienten hiilihydraattiosuuksien summan,
-aliasin dokumentoidulla näytöllä, matalan luottamuksen analogiat sekä nollan ja
-puuttuvan tiedon eron. Neljän kieliversion reseptisivu näyttää GK:n noin-arviona,
-luottamustason, pienosuuksien poissulun ja menetelmälinkin.
+Varsinaiset myöhemmät lähdetyöt ovat puuttuvien GI-arvojen ja vastaavuuksien
+tarkistus, mukaan lukien paellan sopiva liemilähde sekä jianbingin soijatahnan
+koostumus. Lisäksi 51 aiemmin keskeneräistä muuttunutta rakennetta odottaa
+tarkistusta. Nämä eivät muuta nykyistä yhden gramman politiikkaa.
 
-Tarkistus ei muuttanut reseptitekstejä, tavallisen ravintoarvolaskennan
-toteutusta tai Nutritics PR #100:aa. Testit/buildi ajetaan tämän haaran
-CI:ssä; tämä raportti kuvaa katselmointiin avattavaa Draft PR:ää eikä
-tuotantojulkaisua.
+## Testit ja tila
+
+Regressiotestit kattavat polyolien ja kuidun lähdetiivisteet, metatietojen
+muutosten ohittamisen, ruoan tilan muutoksen, 11 luokitus-/pyöristysraja-arvoa,
+virheelliset tuoteryhmävastaavuudet ja tämän Markdown-yhteenvedon yhdenmukaisuuden
+JSON-auditoinnin kanssa. Neljän kieliversion GK-sivun ja julkaisuesteiden
+toimivuus varmennetaan projektin normaaleilla testeillä ja buildilla.
+
+Reseptitekstejä, tavallisen ravintoarvolaskennan toteutusta tai Nutritics PR
+#100:aa ei muutettu. Muutokset ovat katselmointiin avatuissa Draft PR:issä;
+niitä ei ole yhdistetty eikä julkaistu tuotantoon.
