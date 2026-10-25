@@ -36,6 +36,9 @@ test("allowlist keeps documented dynamic food search while rejecting route conti
     "/api/v1.2/LIST/food=rice%252frecipe=123",
     "/api/v1.2/LIST/food=rice&apiKey=secret",
     "/api/v1.2/LIST/food=rice&auth=secret",
+    "/api/v1.2/LIST/food=rice&recipe=123",
+    "/api/v1.2/LIST/food=rice&limit=0,3&recipe=123",
+    "/api/v1.2/LIST/food=rice&limit=0,3&limit=3,3",
     "/api/v1.2/LIST/food=rice?token=secret",
     "/api/v1.2/LIST/food=rice/../recipe=123",
   ]) {

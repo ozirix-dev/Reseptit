@@ -283,12 +283,12 @@ function matchesApprovedEndpoint(path: string, endpoint: ApprovedEndpoint): bool
   const tail = path.slice(endpoint.pathPrefix.length);
 
   // A trailing '=' declares a dynamic LIST object filter (e.g. food=banana).
-  // Keep the filter within that one path segment; raw '&' remains available
-  // for documented LIST parameters such as &limit=0,3.
+  // Keep the filter within that one path segment. The Explorer documents one
+  // optional LIST limit parameter; arbitrary route/query continuations are
+  // deliberately not accepted.
   if (endpoint.pathPrefix.endsWith("=")) {
     if (!tail || /[\\/?#]/.test(tail) || /%(?:25)*(?:2f|5c|3f|23)/i.test(tail)) return false;
-    if (hasCredentialParameter(tail)) return false;
-    return true;
+    return hasOnlyApprovedListParameters(tail);
   }
 
   // Other allowlist entries are exact routes unless a later review adds an
@@ -296,23 +296,15 @@ function matchesApprovedEndpoint(path: string, endpoint: ApprovedEndpoint): bool
   return path === endpoint.pathPrefix;
 }
 
-function hasCredentialParameter(dynamicFilter: string): boolean {
-  let candidate = dynamicFilter;
-  for (let depth = 0; depth < 4; depth += 1) {
-    const hasCredential = candidate.split("&").slice(1).some((parameter) => {
-      const name = parameter.split(/[=:]/, 1)[0]?.trim() ?? "";
-      return /(api.?key|key|token|auth|username|password|secret|credential)/i.test(name);
-    });
-    if (hasCredential) return true;
-    try {
-      const decoded = decodeURIComponent(candidate);
-      if (decoded === candidate) return false;
-      candidate = decoded;
-    } catch {
-      return true;
-    }
+function hasOnlyApprovedListParameters(dynamicFilter: string): boolean {
+  const [filter, ...parameters] = dynamicFilter.split("&");
+  if (!filter || parameters.length > 1 || parameters.some((parameter) => !/^limit=\d+,\d+$/i.test(parameter))) return false;
+  try {
+    decodeURIComponent(filter);
+    return true;
+  } catch {
+    return false;
   }
-  return candidate.includes("%");
 }
 
 function isSafeCredentialHeader(name: string): boolean {
