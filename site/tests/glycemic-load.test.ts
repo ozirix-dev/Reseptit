@@ -478,6 +478,74 @@ test("source-backed small upper bounds stay distinct from estimated available ca
   assert.match(result.ingredients[0].issues[0] ?? "", /not an actual nutrient estimate/);
 });
 
+test("batch 2B2 GI omissions use source-backed per-item bounds and stay under both editorial limits", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [inputText, foodText, giText] = await Promise.all([
+    readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8"),
+  ]);
+  const recipes = JSON.parse(inputText) as { recipes: Array<{ recipeId: string; servings: number; ingredients: Array<{ name: string; grams: number | null; fineliRecordId: string | null; giRecordId: string | null; excludedReason?: string; availableCarbohydrateUpperBoundPerServingG?: number; upperBoundEvidence?: string }> }> };
+  const foodRecords = JSON.parse(foodText) as FoodRecord[];
+  const giRecords = (JSON.parse(giText) as { records: GlycemicIndexRecord[] }).records;
+  const reviewed = [
+    ["caponata", "kapriksia", 0.10535],
+    ["pasta-alla-norma", "tuoretta basilikaa", 0.175],
+    ["baozi", "kuivahiivaa", 0.72135],
+    ["baozi", "raastettua inkivääriä", 0.114],
+    ["harira", "jauhettua inkivääriä", 0.2148],
+    ["vhh-runebergintortut", "kardemummaa", 0.208],
+    ["thai-jok-kanalla", "inkivääri", 0.076],
+  ] as const;
+
+  for (const [recipeId, ingredientName, expectedBound] of reviewed) {
+    const recipe = recipes.recipes.find((row) => row.recipeId === recipeId);
+    assert.ok(recipe, `2B2 input includes ${recipeId}`);
+    const ingredient = recipe.ingredients.find((row) => row.name === ingredientName);
+    assert.ok(ingredient, `${recipeId} includes ${ingredientName}`);
+    assert.equal(ingredient.giRecordId, null, `${ingredientName} has no unrelated GI proxy`);
+    assert.equal(ingredient.availableCarbohydrateUpperBoundPerServingG, expectedBound);
+    assert.ok(ingredient.upperBoundEvidence?.length, `${ingredientName} has bound evidence`);
+    assert.ok(ingredient.excludedReason?.length, `${ingredientName} omission is disclosed`);
+    assert.ok(expectedBound < 1, `${ingredientName} is under the individual cutoff`);
+
+    if (ingredient.fineliRecordId && ingredient.grams !== null) {
+      const foodRecord = foodRecords.find((row) => row.id === ingredient.fineliRecordId);
+      assert.ok(foodRecord, `source record exists for ${ingredientName}`);
+      assert.equal(foodRecord.carbohydrateDefinition, "EU_AVAILABLE");
+      const sourceBound = ((foodRecord.per100g.carbohydrate ?? 0) + (foodRecord.per100g.fibre ?? 0)) * ingredient.grams / 100 / recipe.servings;
+      assert.ok(Math.abs(expectedBound - sourceBound) < 1e-12, `${ingredientName} bound follows its source composition and recipe portion`);
+    } else {
+      assert.match(ingredient.upperBoundEvidence, /USDA FoodData Central SR Legacy FDC 175043/);
+    }
+
+    const result = calculateGlycemicLoad(recipe, foodRecords, giRecords);
+    assert.ok(result.omittedAvailableCarbohydratePerServingG < 2, `${recipeId} stays below the cumulative cap`);
+  }
+
+  for (const [recipeId, ingredientName, wrongGiId] of [
+    ["caponata", "tomaattimurskaa", "tomato-raw-cooked-sauce-analogue-gi-22"],
+    ["pasta-alla-norma", "tomaattimurskaa", "tomato-raw-cooked-sauce-analogue-gi-22"],
+    ["harira", "tomaattimurskaa", "tomato-raw-cooked-sauce-analogue-gi-22"],
+    ["baozi", "maissitärkkelystä", "potatoes-category-mean-gi-71"],
+    ["vhh-runebergintortut", "mantelijauhoa", "bakery-products-category-mean-gi-58"],
+  ] as const) {
+    const recipe = recipes.recipes.find((row) => row.recipeId === recipeId)!;
+    const ingredient = recipe.ingredients.find((row) => row.name === ingredientName)!;
+    assert.equal(ingredient.giRecordId, null, `${recipeId}/${ingredientName} has no mismatched GI mapping`);
+    assert.ok(calculateGlycemicLoad(recipe, foodRecords, giRecords).status === "INSUFFICIENT SOURCE DATA");
+    assert.ok(giRecords.some((record) => record.id === wrongGiId), `${wrongGiId} remains documented as a source, not assigned to this ingredient`);
+  }
+
+  const correctedSmallSeasoningRecipes = ["thai-jok-kanalla", "thai-porsasjok"];
+  for (const recipeId of correctedSmallSeasoningRecipes) {
+    const recipe = recipes.recipes.find((row) => row.recipeId === recipeId)!;
+    const result = calculateGlycemicLoad(recipe, foodRecords, giRecords);
+    assert.equal(result.status, "CALCULATED");
+    assert.equal(result.confidence, "LOW");
+  }
+});
+
 test("three 0.7 g unmatched portions exceed the 2 g cumulative tolerance", () => {
   const ingredients = ["a", "b", "c"].map((id) => ({ name: id, grams: 100, fineliRecordId: id, giRecordId: null }));
   const result = calculateGlycemicLoad({ recipeId: "three-small", servings: 1, ingredients }, ingredients.map((item) => food(item.fineliRecordId, 0.7)), []);
