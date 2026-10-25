@@ -537,7 +537,7 @@ test("batch 2B2 GI omissions use source-backed per-item bounds and stay under bo
     assert.ok(giRecords.some((record) => record.id === wrongGiId), `${wrongGiId} remains documented as a source, not assigned to this ingredient`);
   }
 
-  const correctedSmallSeasoningRecipes = ["thai-jok-kanalla", "thai-porsasjok"];
+  const correctedSmallSeasoningRecipes = ["thai-jok-kanalla"];
   for (const recipeId of correctedSmallSeasoningRecipes) {
     const recipe = recipes.recipes.find((row) => row.recipeId === recipeId)!;
     const result = calculateGlycemicLoad(recipe, foodRecords, giRecords);

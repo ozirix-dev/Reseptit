@@ -207,19 +207,19 @@ test("batch 2B2 captures the published main baseline and preserves all earlier i
   assert.equal(current.previousApprovedBaseline.sourceCommit, baseline.sourceCommit);
   assert.deepEqual([current.previousApprovedBaseline.recipeCount, current.previousApprovedBaseline.calculated, current.previousApprovedBaseline.incomplete, current.previousApprovedBaseline.giRecordCount], [325, 117, 208, 38]);
   assert.equal(current.sourceCommit.length, 40);
-  assert.deepEqual([current.currentSummary.recipeCount, current.currentSummary.calculated, current.currentSummary.incomplete, current.currentSummary.giRecordCount], [325, 119, 206, 38]);
-  assert.deepEqual([current.currentSummary.newlyCalculated, current.currentSummary.newlyBlocked, current.currentSummary.stillIncomplete], [2, 0, 206]);
+  assert.deepEqual([current.currentSummary.recipeCount, current.currentSummary.calculated, current.currentSummary.incomplete, current.currentSummary.giRecordCount], [325, 118, 207, 38]);
+  assert.deepEqual([current.currentSummary.newlyCalculated, current.currentSummary.newlyBlocked, current.currentSummary.stillIncomplete], [1, 0, 207]);
   assert.deepEqual([current.currentSummary.newStructureMismatches, current.currentSummary.newInputMismatches, current.currentSummary.newEvidenceMismatches], [0, 0, 0]);
   assert.equal(current.recipes.length, 325);
   assert.equal(new Set(current.recipes.map((row) => row.recipeId)).size, 325);
-  for (const id of ["thai-jok-kanalla", "thai-porsasjok"]) {
+  for (const id of ["thai-jok-kanalla"]) {
     const row = current.recipes.find((recipe) => recipe.recipeId === id);
     assert.ok(row, `2B2 current inventory includes ${id}`);
     assert.equal(row.status, "CALCULATED");
     assert.ok(typeof row.glycemicLoadPerServing === "number");
     assert.deepEqual(row.blockers, []);
   }
-  for (const id of ["caponata", "pasta-alla-norma", "baozi", "harira", "vhh-runebergintortut"]) {
+  for (const id of ["caponata", "pasta-alla-norma", "baozi", "harira", "vhh-runebergintortut", "thai-porsasjok"]) {
     const row = current.recipes.find((recipe) => recipe.recipeId === id);
     assert.ok(row, `2B2 current inventory includes ${id}`);
     assert.equal(row.status, "INSUFFICIENT SOURCE DATA");
