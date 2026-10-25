@@ -8,20 +8,24 @@ import { launchBrowser } from "./launch-browser";
 import { recipeUi } from "../src/features/recipes/recipe-i18n";
 import { toolUi } from "../src/features/recipes/recipe-tools";
 
-const base = "http://127.0.0.1:4173/Reseptit";
+const base = "http://127.0.0.1:4176/Reseptit";
 let server: ChildProcess;
 let browser: Browser;
+let serverOutput = "";
 
 async function waitForServer() {
   for (let attempt = 0; attempt < 60; attempt++) {
+    if (server.exitCode !== null) throw new Error(`Vite preview exited before becoming ready: ${serverOutput}`);
     try { if ((await fetch(`${base}/kermainen-lohipata/`)).ok) return; } catch { /* server is starting */ }
     await new Promise((resolve) => setTimeout(resolve, 500));
   }
-  throw new Error("Vite preview did not become ready.");
+  throw new Error(`Vite preview did not become ready: ${serverOutput}`);
 }
 
 test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use and responsive layouts", async (t) => {
-  server = spawn(process.execPath, [path.join(import.meta.dirname, "..", "node_modules", "vite", "bin", "vite.js"), "preview", "--host", "127.0.0.1", "--port", "4173", "--strictPort"], { stdio: "ignore" });
+  server = spawn(process.execPath, [path.join(import.meta.dirname, "..", "node_modules", "vite", "bin", "vite.js"), "preview", "--host", "127.0.0.1", "--port", "4176", "--strictPort"], { stdio: "pipe" });
+  server.stdout?.on("data", (data) => { serverOutput += data; });
+  server.stderr?.on("data", (data) => { serverOutput += data; });
   try {
     await waitForServer();
     browser = await launchBrowser();
@@ -150,19 +154,19 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       }
     }
     await page.setViewportSize({ width: 320, height: 800 });
-    await page.goto(`${base}/massaman-curry-kanalla-vhh/`);
-    assert.match(await page.locator(".recipe-glycemic-load").innerText(), /GK-arvio[\s\S]*noin 5–6 \/ annos/);
+    await page.goto(`${base}/hummus/`);
+    assert.match(await page.locator(".recipe-glycemic-load").innerText(), /GK-arvio[\s\S]*noin 6 \/ annos/);
     const methodLink = page.locator(".recipe-glycemic-load__caption a");
     await methodLink.focus();
     assert.equal(await methodLink.evaluate((element) => element.matches(":focus-visible")), true);
     await page.keyboard.press("Enter");
     await page.getByRole("heading", { name: "Glykeeminen kuorma: lähteet ja laskenta" }).waitFor();
-    assert.ok(page.url().includes("#massaman-curry-kanalla-vhh"));
+    assert.ok(page.url().includes("#hummus"));
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, "central GK details fit 320px");
-    const sourceSummary = page.locator("#massaman-curry-kanalla-vhh summary");
+    const sourceSummary = page.locator("#hummus summary");
     await sourceSummary.focus();
     await page.keyboard.press("Enter");
-    assert.equal(await page.locator("#massaman-curry-kanalla-vhh details").evaluate((element) => (element as HTMLDetailsElement).open), true);
+    assert.equal(await page.locator("#hummus details").evaluate((element) => (element as HTMLDetailsElement).open), true);
     await page.getByRole("link", { name: "English", exact: true }).click();
     await page.getByRole("heading", { name: "Glycemic load: sources and method" }).waitFor();
     assert.ok(page.url().includes("/en/glycemic-load/"));
