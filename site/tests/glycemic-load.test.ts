@@ -85,10 +85,13 @@ test("calculation input binding covers numeric and mapping inputs but ignores ev
   for (const changed of [
     { ...reviewed, servings: 3 },
     { ...reviewed, ingredients: [{ ...reviewed.ingredients[0], grams: 150 }] },
+    { ...reviewed, ingredients: [{ ...reviewed.ingredients[0], recipeQuantity: { amount: 100, unit: "g", massGrams: 100 } }] },
+    { ...reviewed, ingredients: [{ ...reviewed.ingredients[0], availableCarbohydrateUpperBoundPerServingG: 0.1 }] },
     { ...reviewed, ingredients: [{ ...reviewed.ingredients[0], fineliRecordId: "food-b" }] },
     { ...reviewed, ingredients: [{ ...reviewed.ingredients[0], giRecordId: "gi-b" }] },
   ]) assert.equal(recipeBindingMatches(fingerprint, glycemicLoadInputHash(changed)), false);
   assert.equal(recipeBindingMatches(fingerprint, glycemicLoadInputHash({ ...reviewed, ingredients: [{ ...reviewed.ingredients[0], massEvidence: "100g listed, corrected punctuation." }] })), true);
+  assert.equal(recipeBindingMatches(fingerprint, glycemicLoadInputHash({ ...reviewed, ingredients: [{ ...reviewed.ingredients[0], upperBoundEvidence: "Reworded source note." }] })), true);
 });
 
 test("GI and food source value, state, and composition edits invalidate only calculation-relevant evidence", () => {
@@ -438,6 +441,28 @@ test("one 0.99 g unmatched portion is accepted without rounding the carbohydrate
   assert.equal(result.status, "CALCULATED");
   assert.equal(result.omittedAvailableCarbohydratePerServingG, 0.99);
   assert.equal(result.confidence, "LOW");
+});
+
+test("source-backed small upper bounds stay distinct from estimated available carbohydrate", () => {
+  const result = calculateGlycemicLoad({
+    recipeId: "rosemary-upper-bound",
+    servings: 2,
+    ingredients: [{
+      name: "fresh rosemary",
+      grams: null,
+      fineliRecordId: null,
+      giRecordId: null,
+      excludedReason: "Fresh rosemary is omitted under the existing small-contribution tolerance.",
+      availableCarbohydrateUpperBoundPerServingG: 0.1035,
+      upperBoundEvidence: "USDA FDC 173473 total carbohydrate ceiling for 1 g across two servings.",
+    }],
+  }, [], []);
+  assert.equal(result.status, "CALCULATED");
+  assert.equal(result.omittedAvailableCarbohydratePerServingG, 0.1035);
+  assert.equal(result.omittedAvailableCarbohydrateUpperBoundPerServingG, 0.1035);
+  assert.equal(result.ingredients[0].availableCarbohydratePerServingG, null);
+  assert.equal(result.ingredients[0].availableCarbohydrateUpperBoundPerServingG, 0.1035);
+  assert.match(result.ingredients[0].issues[0] ?? "", /not an actual nutrient estimate/);
 });
 
 test("three 0.7 g unmatched portions exceed the 2 g cumulative tolerance", () => {

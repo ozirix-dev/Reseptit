@@ -26,15 +26,26 @@ export interface CoverageResult {
   status: CoverageStatus;
   glycemicLoadPerServing: number | null;
   omittedAvailableCarbohydratePerServingG: number;
+  omittedAvailableCarbohydrateUpperBoundPerServingG?: number;
   blockers: string[];
   ingredients: Array<{
     name: string;
     grams: number | null;
+    recipeQuantity?: { amount: number | null; unit: string | null; massGrams: number | null };
     fineliRecordId: string | null;
     giRecordId: string | null;
     availableCarbohydratePerServingG: number | null;
+    availableCarbohydrateUpperBoundPerServingG?: number | null;
+    excludedReason?: string;
     issues: string[];
   }>;
+}
+
+export interface StructuralReviewStartRow {
+  recipeId: string;
+  currentStatus: CoverageStatus;
+  otherBlockingCategories: string[];
+  otherBlockers: string[];
 }
 
 export interface CurrentCoverageInput {
@@ -50,6 +61,9 @@ export interface CurrentCoverageInput {
   currentRecipeStructures: Record<string, { sourcePath: string; servings: number; ingredients: Array<Record<string, unknown>>; cookingMethod: unknown }>;
   currentCalculationInputs: Record<string, { servings: number; ingredients: Array<Record<string, unknown>> }>;
   historicalStaleRecipeIds: string[];
+  structuralReviewStartSourceCommit: string;
+  structuralReviewStartRows: StructuralReviewStartRow[];
+  reviewedStructuralRecipeIds: string[];
 }
 
 const blockerRules: Array<{ category: string; label: string; pattern: RegExp; action: string }> = [
@@ -81,7 +95,7 @@ export function assertCoverageConsistency(results: CoverageResult[], expectedRec
   if (unexpected.length || missing.length) throw new Error(`Current GK recipe set differs from the source corpus. Missing: ${missing.join(", ")}; unexpected: ${unexpected.join(", ")}.`);
 }
 
-export function buildBaselineSnapshot(input: Omit<CurrentCoverageInput, "baseline" | "historicalStaleRecipeIds" | "currentRecipeStructures" | "currentCalculationInputs"> & {
+export function buildBaselineSnapshot(input: Omit<CurrentCoverageInput, "baseline" | "historicalStaleRecipeIds" | "structuralReviewStartSourceCommit" | "structuralReviewStartRows" | "reviewedStructuralRecipeIds" | "currentRecipeStructures" | "currentCalculationInputs"> & {
   giRecordCount: number;
   giTierCounts: Record<string, number>;
   nutritionAuditCounts: Record<string, number>;
@@ -111,6 +125,15 @@ export function buildBaselineSnapshot(input: Omit<CurrentCoverageInput, "baselin
 
 export function buildCurrentCoverageInventory(input: CurrentCoverageInput) {
   assertCoverageConsistency(input.results, input.baseline.recipes.map((row) => row.recipeId));
+  const reviewStartIds = input.structuralReviewStartRows.map((row) => row.recipeId);
+  if (new Set(reviewStartIds).size !== reviewStartIds.length) throw new Error("Pre-correction structural review snapshot contains duplicate recipe IDs.");
+  const missingReviewRows = input.historicalStaleRecipeIds.filter((recipeId) => !reviewStartIds.includes(recipeId));
+  const unexpectedReviewRows = reviewStartIds.filter((recipeId) => !input.historicalStaleRecipeIds.includes(recipeId));
+  if (missingReviewRows.length || unexpectedReviewRows.length) {
+    throw new Error(`Pre-correction review snapshot differs from the historical stale-binding set. Missing: ${missingReviewRows.join(", ")}; unexpected: ${unexpectedReviewRows.join(", ")}.`);
+  }
+  const unreviewedSelection = input.reviewedStructuralRecipeIds.filter((recipeId) => !input.historicalStaleRecipeIds.includes(recipeId));
+  if (unreviewedSelection.length) throw new Error(`Batch 2A review selection is outside the historical stale-binding set: ${unreviewedSelection.join(", ")}.`);
   const previousById = new Map(input.baseline.recipes.map((row) => [row.recipeId, row]));
   const rows = input.results.map((result) => {
     const previous = previousById.get(result.recipeId);
@@ -134,6 +157,7 @@ export function buildCurrentCoverageInventory(input: CurrentCoverageInput) {
       currentCalculationInput: input.currentCalculationInputs[result.recipeId] ?? null,
       glycemicLoadPerServing: result.glycemicLoadPerServing,
       omittedAvailableCarbohydratePerServingG: result.omittedAvailableCarbohydratePerServingG,
+      omittedAvailableCarbohydrateUpperBoundPerServingG: result.omittedAvailableCarbohydrateUpperBoundPerServingG ?? 0,
       previousApprovedStatus: previous.status,
       previousApprovedGlycemicLoadPerServing: previous.glycemicLoadPerServing,
       recipeVersionChanged: structureVersion !== previous.recipeVersion,
@@ -143,7 +167,17 @@ export function buildCurrentCoverageInventory(input: CurrentCoverageInput) {
       blockingCategories: categorySet,
       primaryBlockingCategory: categorySet[0] ?? null,
       primaryBlockingReason: blockers[0]?.message ?? null,
-      missingFoodAndGIRecords: incompleteIngredients.map((ingredient) => ({ name: ingredient.name, fineliRecordId: ingredient.fineliRecordId, giRecordId: ingredient.giRecordId, availableCarbohydratePerServingG: ingredient.availableCarbohydratePerServingG, issues: ingredient.issues })),
+      missingFoodAndGIRecords: incompleteIngredients.map((ingredient) => ({
+        name: ingredient.name,
+        grams: ingredient.grams,
+        recipeQuantity: ingredient.recipeQuantity ?? null,
+        fineliRecordId: ingredient.fineliRecordId,
+        giRecordId: ingredient.giRecordId,
+        availableCarbohydratePerServingG: ingredient.availableCarbohydratePerServingG,
+        availableCarbohydrateUpperBoundPerServingG: ingredient.availableCarbohydrateUpperBoundPerServingG ?? null,
+        excludedReason: ingredient.excludedReason ?? null,
+        issues: ingredient.issues,
+      })),
       nextActions: [...new Set(blockers.map((blocker) => blocker.nextAction))],
       suggestedNextWorkstream: categorySet.includes("STRUCTURE") || categorySet.includes("INPUT")
         ? "STRUCTURE_BINDING_REVIEW"
@@ -164,23 +198,30 @@ export function buildCurrentCoverageInventory(input: CurrentCoverageInput) {
   const structuralRows = input.historicalStaleRecipeIds.map((recipeId) => {
     const row = rows.find((candidate) => candidate.recipeId === recipeId);
     if (!row) throw new Error(`Historical stale-binding recipe is missing from current corpus: ${recipeId}`);
-    const currentResult = input.results.find((result) => result.recipeId === recipeId)!;
-    const otherBlockers = row.blockers.filter((blocker) => !["STRUCTURE", "INPUT", "EVIDENCE"].includes(blocker.category));
+    const start = input.structuralReviewStartRows.find((candidate) => candidate.recipeId === recipeId);
+    if (!start) throw new Error(`Pre-correction review snapshot is missing historical binding recipe: ${recipeId}`);
+    const reviewedInBatch = input.reviewedStructuralRecipeIds.includes(recipeId);
+    const bindingOnlyWouldResolveAtStart = start.currentStatus !== "CALCULATED" && start.otherBlockers.length === 0;
     return {
       recipeId,
+      reviewStartStatus: start.currentStatus,
+      otherBlockingCategoriesAtReviewStart: start.otherBlockingCategories,
+      otherBlockersAtReviewStart: start.otherBlockers,
+      bindingOnlyWouldResolveAtStart,
+      reviewedInBatch2A: reviewedInBatch,
+      batch2AOutcome: !reviewedInBatch ? "OUT_OF_SCOPE" as const
+        : row.status === "CALCULATED" ? "CALCULATED_AFTER_CONTENT_REVIEW" as const
+          : "REVIEWED_REMAINS_INCOMPLETE" as const,
       currentStatus: row.status,
       nutritionStatus: row.nutritionStatus,
       recipeVersion: row.recipeVersion,
       calculationInputVersion: row.calculationInputVersion,
-      inputIngredientCount: currentResult.ingredients.length,
+      inputIngredientCount: row.currentCalculationInput?.ingredients.length ?? 0,
       currentRecipeStructure: row.currentRecipeStructure,
       currentCalculationInput: row.currentCalculationInput,
-      otherBlockingCategories: [...new Set(otherBlockers.map((blocker) => blocker.category))],
-      otherBlockers: otherBlockers.map((blocker) => blocker.message),
-      hasNonStructuralBlockers: otherBlockers.length > 0,
-      currentlyPublishableAfterBindingOnly: otherBlockers.length === 0,
     };
   });
+  const reviewedStructuralRows = structuralRows.filter((row) => row.reviewedInBatch2A);
   const counted = (predicate: (row: typeof rows[number]) => boolean) => rows.filter(predicate).length;
   const categories = Object.fromEntries(blockerRules.map((rule) => [rule.category, {
     recipes: rows.filter((row) => row.blockingCategories.includes(rule.category)).length,
@@ -219,8 +260,13 @@ export function buildCurrentCoverageInventory(input: CurrentCoverageInput) {
     historicalStructuralBindingCount: input.historicalStaleRecipeIds.length,
     structuralBindingAnalysis: {
       rows: structuralRows,
-      withOtherBlockers: structuralRows.filter((row) => row.hasNonStructuralBlockers).length,
-      potentiallyPublishableAfterBindingOnly: structuralRows.filter((row) => row.currentlyPublishableAfterBindingOnly).length,
+      reviewStartSourceCommit: input.structuralReviewStartSourceCommit,
+      withOtherBlockersAtReviewStart: structuralRows.filter((row) => row.otherBlockersAtReviewStart.length > 0).length,
+      potentiallyResolvableByBindingOnlyAtReviewStart: structuralRows.filter((row) => row.bindingOnlyWouldResolveAtStart).length,
+      reviewedInBatch2A: reviewedStructuralRows.length,
+      calculatedAfterContentReview: reviewedStructuralRows.filter((row) => row.batch2AOutcome === "CALCULATED_AFTER_CONTENT_REVIEW").length,
+      reviewedStillIncomplete: reviewedStructuralRows.filter((row) => row.batch2AOutcome === "REVIEWED_REMAINS_INCOMPLETE").length,
+      outOfScope: structuralRows.filter((row) => !row.reviewedInBatch2A).length,
     },
     recipes: rows,
   };

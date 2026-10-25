@@ -21,6 +21,12 @@ type NutritionReport = JsonRecord & {
 type InputReport = { recipes: GlycemicLoadRecipeInput[] };
 type GICatalog = { records: Array<{ qualityTier: string }> };
 type HistoricalInventory = { recipes: Array<{ recipeId: string; structureStale?: boolean }> };
+type ReviewStartSnapshot = {
+  sourceCommit: string;
+  structuralBindingAnalysis: {
+    rows: Array<{ recipeId: string; currentStatus: CoverageBaseline["recipes"][number]["status"]; otherBlockingCategories: string[]; otherBlockers: string[] }>;
+  };
+};
 
 const siteDir = path.resolve(import.meta.dirname, "..");
 const root = path.resolve(siteDir, "..");
@@ -29,12 +35,13 @@ const currentPath = path.join(root, "docs/nutrition/glycemic-coverage-current-20
 const markdownPath = path.join(root, "docs/nutrition/glycemic-coverage-current-2026-10-25.md");
 const readJson = async <T>(relativePath: string): Promise<T> => JSON.parse(await readFile(path.join(root, relativePath), "utf8")) as T;
 
-const [pilot, nutrition, inputs, giCatalog, historical] = await Promise.all([
+const [pilot, nutrition, inputs, giCatalog, historical, reviewStart] = await Promise.all([
   readJson<PilotReport>("tmp/nutrition/glycemic-load-pilot.json"),
   readJson<NutritionReport>("tmp/nutrition/audit.json"),
   readJson<InputReport>("docs/nutrition/glycemic-load-pilot-input.json"),
   readJson<GICatalog>("docs/nutrition/glycemic-index-records.json"),
   readJson<HistoricalInventory>("docs/nutrition/glycemic-coverage-inventory-2026-10-25.json"),
+  readJson<ReviewStartSnapshot>("docs/nutrition/glycemic-coverage-batch-2a-review-start.json"),
 ]);
 const sourceCommit = execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim();
 const calculationInputHashes = Object.fromEntries(inputs.recipes.map((recipe) => [recipe.recipeId, glycemicLoadInputHash(recipe)]));
@@ -50,7 +57,30 @@ const currentRecipeStructures = Object.fromEntries(await Promise.all(nutrition.i
     cookingMethod: parsed.data.cooking_method ?? [],
   }] as const;
 }))) as CurrentCoverageInput["currentRecipeStructures"];
-const currentCalculationInputs = Object.fromEntries(inputs.recipes.map((recipe) => [recipe.recipeId, { servings: recipe.servings, ingredients: recipe.ingredients as unknown as Array<Record<string, unknown>> }]));
+const currentCalculationInputs = Object.fromEntries(inputs.recipes.map((recipe) => {
+  const sourceMaizeRecipe = new Set(["meksikolainen-quesadilla-sienilla", "indonesialainen-bakwan-maissifritter"]).has(recipe.recipeId)
+    ? currentRecipeStructures[recipe.recipeId]?.ingredients.filter((ingredient) => /maissinjyv/i.test(String(ingredient.item ?? ""))) ?? []
+    : [];
+  if (sourceMaizeRecipe.length > 1) throw new Error(`Expected at most one source maize ingredient for ${recipe.recipeId}.`);
+  const sourceQuantity = sourceMaizeRecipe[0];
+  const maizeInput = recipe.ingredients.find((ingredient) => ingredient.name === "maissi");
+  if (sourceQuantity && maizeInput) {
+    const sourceAmount = typeof sourceQuantity.amount === "number" ? sourceQuantity.amount : null;
+    const sourceUnit = typeof sourceQuantity.unit === "string" ? sourceQuantity.unit : null;
+    const sourceMass = sourceAmount !== null && ["g", "gram", "grams"].includes(String(sourceUnit ?? "").toLocaleLowerCase("en-US")) ? sourceAmount : null;
+    const inputQuantity = maizeInput.recipeQuantity;
+    if (!inputQuantity || inputQuantity.amount !== sourceAmount || inputQuantity.unit !== sourceUnit || inputQuantity.massGrams !== sourceMass) {
+      throw new Error(`Known maize recipe quantity for ${recipe.recipeId} must match the source recipe; keep accepted calculation grams separate.`);
+    }
+    if (maizeInput.grams !== null || maizeInput.fineliRecordId || maizeInput.giRecordId) {
+      throw new Error(`Unresolved maize composition/GI for ${recipe.recipeId} must not be promoted into an accepted calculation input.`);
+    }
+  }
+  const ingredients = recipe.ingredients.map((ingredient) => ingredient.name === "maissi" && sourceQuantity
+    ? ingredient
+    : ingredient as unknown as Record<string, unknown>);
+  return [recipe.recipeId, { servings: recipe.servings, ingredients: ingredients as unknown as Array<Record<string, unknown>> }];
+}));
 const historicalStaleRecipeIds = historical.recipes.filter((row) => row.structureStale).map((row) => row.recipeId);
 const giTierCounts = Object.fromEntries([...new Set(giCatalog.records.map((record) => record.qualityTier))].map((tier) => [tier, giCatalog.records.filter((record) => record.qualityTier === tier).length]));
 
@@ -94,6 +124,14 @@ const inventory = buildCurrentCoverageInventory({
   currentRecipeStructures,
   currentCalculationInputs,
   historicalStaleRecipeIds,
+  structuralReviewStartSourceCommit: reviewStart.sourceCommit,
+  structuralReviewStartRows: reviewStart.structuralBindingAnalysis.rows,
+  reviewedStructuralRecipeIds: [
+    "karibia-johnny-cake", "pohjoisafrikkalainen-msemen-hunajalla", "japanilainen-tamago-kake-gohan",
+    "malesialainen-nasi-lemak-aamiaisella", "thai-kookosriisi-mangolla", "pohjoisafrikkalainen-harissa-shakshuka",
+    "meksikolainen-quesadilla-sienilla", "indonesialainen-bakwan-maissifritter", "valimerellinen-farinata-aamupalaksi",
+    "valimerellinen-halloumi-tomaattileipa",
+  ],
 });
 
 const summary = inventory.currentSummary;
@@ -119,16 +157,19 @@ const reportLines = [
   "| --- | ---: | ---: |",
   ...Object.entries(inventory.blockerOverlapCounts).map(([category, value]) => `| ${category} | ${value.recipes} | ${value.blockerMessages} |`),
   "",
-  "## Historiallisen inventaarion 51 rakennesidontaa nykytilassa",
+  "## Erän 2A rakennesidontojen lähtötilanne ja lopputulos",
   "",
-  `Tarkastetaan kaikki ${structural.rows.length} historiallista sidontaa nykyistä reseptirakennetta, GK-syötettä ja päällekkäisiä estoviestejä vasten. ${structural.withOtherBlockers} reseptillä on muita kuin rakenne-/syötesidonnan estoja; pelkkä fingerprintin uusiminen avaisi ${structural.potentiallyPublishableAfterBindingOnly} arviota.`,
+  `Korjausta edeltävä snapshot (lähdecommit \`${structural.reviewStartSourceCommit}\`) osoittaa, että ${structural.withOtherBlockersAtReviewStart}/${structural.rows.length} reseptillä oli rakennesidonnan lisäksi muita esteitä. Pelkkä fingerprintin uusiminen olisi voinut ratkaista ${structural.potentiallyResolvableByBindingOnlyAtReviewStart} arviota. Erässä tarkistettiin sisällöllisesti ${structural.reviewedInBatch2A}; niistä ${structural.calculatedAfterContentReview} palautui laskettavaksi ja ${structural.reviewedStillIncomplete} jäi keskeneräiseksi. ${structural.outOfScope} rakennesidontaa jäi erän 2A varsinaisen tarkistuksen ulkopuolelle. Nykytilan estolistaa ei käytetä alkuperäisen esteen päätteleimiseen.`,
   "",
-  "| Resepti | Nykyiset reseptimäärät | GK-syötteen määrät / lähteet | Muut esteet | Nutrition | GK | Sidonta yksin avaisi arvion |",
-  "| --- | --- | --- | --- | --- | --- | --- |",
+  "| Resepti | Lähtötilanteen muut esteet | Erä 2A | Nykyinen GK | Laskentasyöte / lähteet |",
+  "| --- | --- | --- | --- | --- |",
   ...structural.rows.map((row) => {
-    const recipeIngredients = row.currentRecipeStructure?.ingredients.map((ingredient) => `${ingredient.amount ?? "?"} ${ingredient.unit ?? ""} ${ingredient.item ?? ""}`.trim()).join("; ") ?? "—";
-    const inputIngredients = row.currentCalculationInput?.ingredients.map((ingredient) => `${ingredient.grams ?? "?"} g ${ingredient.name ?? ""} (${ingredient.fineliRecordId ?? "ei ravintoarvolähdettä"}; GI ${ingredient.giRecordId ?? "puuttuu"})`).join("; ") ?? "—";
-    return `| ${row.recipeId} | ${recipeIngredients.replaceAll("|", "\\|")} | ${inputIngredients.replaceAll("|", "\\|")} | ${row.otherBlockingCategories.join(", ") || "—"} | ${row.nutritionStatus} | ${row.currentStatus} | ${row.currentlyPublishableAfterBindingOnly ? "kyllä" : "ei"} |`;
+    const inputIngredients = row.currentCalculationInput?.ingredients.map((ingredient) => {
+      const quantity = ingredient.recipeQuantity as { amount?: number | null; unit?: string | null; massGrams?: number | null } | undefined;
+      const recipeQuantity = quantity ? `recipe ${quantity.amount ?? "?"} ${quantity.unit ?? "?"} (mass ${quantity.massGrams ?? "unresolved"} g)` : "recipe quantity not captured";
+      return `${recipeQuantity}; calculation mass ${ingredient.grams ?? "unresolved"} g; ${ingredient.name ?? ""} (${ingredient.fineliRecordId ?? "composition unresolved"}; GI ${ingredient.giRecordId ?? "missing"})`;
+    }).join("; ") ?? "—";
+    return `| ${row.recipeId} | ${row.otherBlockingCategoriesAtReviewStart.join(", ") || "none"} | ${row.batch2AOutcome} | ${row.currentStatus} | ${inputIngredients.replaceAll("|", "\\|")} |`;
   }),
   "",
   "## Nykyiset keskeneräiset reseptit",
@@ -148,4 +189,4 @@ const reportLines = [
 ];
 await writeFile(currentPath, `${JSON.stringify(inventory, null, 2)}\n`, "utf8");
 await writeFile(markdownPath, `${reportLines.join("\n").trimEnd()}\n`, "utf8");
-console.log(JSON.stringify({ sourceCommit, ...summary, historicalStructuralBindingCount: structural.rows.length, withOtherBlockers: structural.withOtherBlockers, output: currentPath, markdown: markdownPath }, null, 2));
+console.log(JSON.stringify({ sourceCommit, ...summary, historicalStructuralBindingCount: structural.rows.length, withOtherBlockersAtReviewStart: structural.withOtherBlockersAtReviewStart, potentiallyResolvableByBindingOnlyAtReviewStart: structural.potentiallyResolvableByBindingOnlyAtReviewStart, output: currentPath, markdown: markdownPath }, null, 2));

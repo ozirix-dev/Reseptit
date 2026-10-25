@@ -43,7 +43,7 @@ test("baseline snapshots capture the approved source revision and all recipe sta
   assert.equal(baseline.recipes[0]?.calculationInputVersion, "i1");
 });
 
-test("stale structure cannot be cleared by refreshing a fingerprint while other blockers remain", () => {
+test("a resolved current row cannot erase its pre-correction content blockers", () => {
   const baseline = buildBaselineSnapshot({
     sourceCommit: "approved",
     results: [sampleResult("corn-recipe", ["corn-recipe: recipe structure differs from last review."])],
@@ -60,7 +60,7 @@ test("stale structure cannot be cleared by refreshing a fingerprint while other 
     baseline,
     giRecordCount: 1,
     giTierCounts: { STRONG: 1 },
-    results: [sampleResult("corn-recipe", ["corn-recipe: recipe structure differs from last review.", "corn-recipe: maize: GI evidence is missing."])],
+    results: [sampleResult("corn-recipe", [], "CALCULATED")],
     sourceHashes: { "corn-recipe": "new-recipe" },
     calculationInputHashes: { "corn-recipe": "input" },
     calculationEvidenceHashes: { "corn-recipe": "evidence" },
@@ -68,12 +68,18 @@ test("stale structure cannot be cleared by refreshing a fingerprint while other 
     currentRecipeStructures: {},
     currentCalculationInputs: {},
     historicalStaleRecipeIds: ["corn-recipe"],
+    structuralReviewStartSourceCommit: "pre-correction",
+    structuralReviewStartRows: [{ recipeId: "corn-recipe", currentStatus: "INSUFFICIENT SOURCE DATA", otherBlockingCategories: ["MASS_PREPARATION"], otherBlockers: ["Recipe quantity and source composition required correction before calculation."] }],
+    reviewedStructuralRecipeIds: ["corn-recipe"],
   });
   assert.equal(inventory.currentSummary.recipeCount, 1);
-  assert.equal(inventory.currentSummary.calculated, 0);
-  assert.equal(inventory.currentSummary.newStructureMismatches, 1);
-  assert.equal(inventory.structuralBindingAnalysis.potentiallyPublishableAfterBindingOnly, 0);
-  assert.equal(inventory.recipes[0]?.blockingCategories.includes("GI_MISSING"), true);
+  assert.equal(inventory.currentSummary.calculated, 1);
+  const structuralRow = inventory.structuralBindingAnalysis.rows[0];
+  assert.equal(structuralRow?.bindingOnlyWouldResolveAtStart, false);
+  assert.equal(structuralRow?.reviewStartStatus, "INSUFFICIENT SOURCE DATA");
+  assert.equal(structuralRow?.currentStatus, "CALCULATED");
+  assert.equal(structuralRow?.batch2AOutcome, "CALCULATED_AFTER_CONTENT_REVIEW");
+  assert.equal(inventory.structuralBindingAnalysis.potentiallyResolvableByBindingOnlyAtReviewStart, 0);
 });
 
 test("historical 213-recipe inventory remains a separate batch-one baseline", async () => {
@@ -92,19 +98,34 @@ test("batch 2A preserves its starting overlap audit and only accepts reviewed cu
   const current = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-current-2026-10-25.json"), "utf8")) as {
     sourceCommit: string;
     currentSummary: { recipeCount: number };
-    recipes: Array<{ recipeId: string; recipeVersionChanged: boolean; calculationInputVersionChanged: boolean; calculationEvidenceVersionChanged: boolean; blockingCategories: string[] }>;
-    structuralBindingAnalysis: { rows: Array<{ recipeId: string }>; withOtherBlockers: number; potentiallyPublishableAfterBindingOnly: number };
+    recipes: Array<{ recipeId: string; status: string; recipeVersionChanged: boolean; calculationInputVersionChanged: boolean; calculationEvidenceVersionChanged: boolean; blockingCategories: string[] }>;
+    structuralBindingAnalysis: {
+      rows: Array<{ recipeId: string; bindingOnlyWouldResolveAtStart: boolean }>;
+      withOtherBlockersAtReviewStart: number;
+      potentiallyResolvableByBindingOnlyAtReviewStart: number;
+      reviewedInBatch2A: number;
+      calculatedAfterContentReview: number;
+      reviewedStillIncomplete: number;
+      outOfScope: number;
+    };
   };
   const reviewStart = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2a-review-start.json"), "utf8")) as {
     structuralBindingAnalysis: { rows: Array<{ recipeId: string }>; withOtherBlockers: number; potentiallyPublishableAfterBindingOnly: number };
   };
   const input = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8")) as {
-    recipes: Array<{ recipeId: string; ingredients: Array<{ name: string; grams: number | null; fineliRecordId?: string | null; giRecordId?: string | null }> }>;
+    recipes: Array<{ recipeId: string; ingredients: Array<{ name: string; grams: number | null; recipeQuantity?: { amount: number | null; unit: string | null; massGrams: number | null }; fineliRecordId?: string | null; giRecordId?: string | null; availableCarbohydrateUpperBoundPerServingG?: number; estimatedAvailableCarbohydratePerServingG?: number }> }>;
   };
   assert.equal(reviewStart.structuralBindingAnalysis.rows.length, 51);
   assert.equal(reviewStart.structuralBindingAnalysis.withOtherBlockers, 51);
   assert.equal(reviewStart.structuralBindingAnalysis.potentiallyPublishableAfterBindingOnly, 0);
   assert.equal(current.currentSummary.recipeCount, 325);
+  assert.equal(current.structuralBindingAnalysis.withOtherBlockersAtReviewStart, 51);
+  assert.equal(current.structuralBindingAnalysis.potentiallyResolvableByBindingOnlyAtReviewStart, 0);
+  assert.equal(current.structuralBindingAnalysis.reviewedInBatch2A, 10);
+  assert.equal(current.structuralBindingAnalysis.calculatedAfterContentReview, 3);
+  assert.equal(current.structuralBindingAnalysis.reviewedStillIncomplete, 7);
+  assert.equal(current.structuralBindingAnalysis.outOfScope, 41);
+  assert.equal(current.structuralBindingAnalysis.rows.filter((row) => row.bindingOnlyWouldResolveAtStart).length, 0);
   const reviewedIds = [
     "karibia-johnny-cake", "pohjoisafrikkalainen-msemen-hunajalla", "japanilainen-tamago-kake-gohan",
     "malesialainen-nasi-lemak-aamiaisella", "thai-kookosriisi-mangolla", "pohjoisafrikkalainen-harissa-shakshuka",
@@ -126,5 +147,11 @@ test("batch 2A preserves its starting overlap audit and only accepts reviewed cu
   assert.equal(inputById.get("thai-kookosriisi-mangolla")?.get("seesaminsiemen")?.grams, 6);
   assert.equal(inputById.get("meksikolainen-quesadilla-sienilla")?.get("maissi")?.grams, null);
   assert.equal(inputById.get("indonesialainen-bakwan-maissifritter")?.get("maissi")?.grams, null);
+  assert.deepEqual(inputById.get("meksikolainen-quesadilla-sienilla")?.get("maissi")?.recipeQuantity, { amount: 80, unit: "g", massGrams: 80 });
+  assert.deepEqual(inputById.get("indonesialainen-bakwan-maissifritter")?.get("maissi")?.recipeQuantity, { amount: 100, unit: "g", massGrams: 100 });
   assert.equal(inputById.get("malesialainen-nasi-lemak-aamiaisella")?.get("kookosmaito")?.grams, null);
+  assert.equal(inputById.get("valimerellinen-farinata-aamupalaksi")?.get("rosmariini")?.estimatedAvailableCarbohydratePerServingG, undefined);
+  assert.equal(inputById.get("valimerellinen-farinata-aamupalaksi")?.get("rosmariini")?.availableCarbohydrateUpperBoundPerServingG, 0.1035);
+  assert.equal(current.recipes.find((row) => row.recipeId === "meksikolainen-quesadilla-sienilla")?.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(current.recipes.find((row) => row.recipeId === "indonesialainen-bakwan-maissifritter")?.status, "INSUFFICIENT SOURCE DATA");
 });

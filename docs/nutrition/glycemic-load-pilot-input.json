@@ -15654,10 +15654,11 @@
         {
           "name": "maissi",
           "grams": null,
+          "recipeQuantity": { "amount": 80, "unit": "g", "massGrams": 80 },
           "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Current recipe lists 80 g corn kernels; food state unresolved.",
-          "excludedReason": "The current recipe lists 80 g corn kernels but does not specify fresh, frozen, canned, or cooked state. The prior 240 g grilled-cob mapping is incorrect; no substitute state is assumed."
+          "massEvidence": "Recipe-listed amount and mass are known: 80 g corn kernels. The matching food composition and preservation/cooking state are unresolved; this is not a missing-mass estimate.",
+          "excludedReason": "Calculation remains blocked because no source-matched composition record has been approved for the recipe's corn-kernel preparation state. The prior 240 g grilled-cob mapping is incorrect; no substitute state is assumed."
         },
         {
           "name": "neutraalia paistoöljyä",
@@ -15923,10 +15924,11 @@
         {
           "name": "maissi",
           "grams": null,
+          "recipeQuantity": { "amount": 100, "unit": "g", "massGrams": 100 },
           "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Current recipe lists 100 g fresh corn kernels; food source unresolved.",
-          "excludedReason": "The current recipe lists 100 g fresh corn kernels. The prior 240 g grilled-cob mapping is incorrect; no source-matched fresh-kernel composition/GI record is available."
+          "massEvidence": "Recipe-listed amount and mass are known: 100 g fresh corn kernels. The matching food composition record for this preparation is unresolved; this is not a missing-mass estimate.",
+          "excludedReason": "Calculation remains blocked because no source-matched fresh-kernel composition and suitable GI record has been approved. The prior 240 g grilled-cob mapping is incorrect; no substitute state is assumed."
         },
         {
           "name": "porkkana",
@@ -16126,10 +16128,10 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Fresh rosemary is a small seasoning amount; conservatively bounded below 1 g available carbohydrate per serving under the existing editorial tolerance.",
+          "excludedReason": "Fresh rosemary is omitted under the existing small-contribution tolerance using a source-backed total-carbohydrate ceiling, not an estimate of its actual available carbohydrate.",
           "massEvidence": "Current recipe lists 1 g fresh rosemary.",
-          "estimatedAvailableCarbohydratePerServingG": 0.2,
-          "negligibleAssumption": "Current recipe lists 1 g fresh rosemary; conservative bound 0.4 g available carbohydrate per recipe, below 1 g per serving."
+          "availableCarbohydrateUpperBoundPerServingG": 0.1035,
+          "upperBoundEvidence": "USDA FoodData Central SR Legacy FDC 173473, Rosemary, fresh, reports 20.7 g total carbohydrate/100 g, including 14.1 g fibre. At the recipe's 1 g across 2 servings this is at most 0.1035 g total carbohydrate per serving (20.7 × 1/100/2). Total carbohydrate including fibre is used only as a conservative ceiling; it is not an available-carbohydrate estimate. https://fdc.nal.usda.gov/food-details/173473/nutrients"
         },
         {
           "name": "neutraalia paistoöljyä",
