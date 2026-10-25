@@ -32,6 +32,10 @@ function indexPath(locale: RecipeLocale): string {
   return locale === "fi" ? "/" : `${baseByLocale[locale]}/`;
 }
 
+function normalizeRoutePath(path: string): string {
+  return path.length > 1 ? path.replace(/\/$/, "") : path;
+}
+
 export function SeoMeta() {
   const { pathname } = useLocation();
 
@@ -39,10 +43,11 @@ export function SeoMeta() {
 
   useEffect(() => {
     const strippedPath = pathname.replace(new RegExp(`^${sitePath}(?=/|$)`), "") || "/";
+    const normalizedPath = normalizeRoutePath(strippedPath);
     const routeLocale = (Object.keys(baseByLocale) as RecipeLocale[]).find((locale) =>
       locale === "fi" ? strippedPath === "/" : strippedPath === `${baseByLocale[locale]}/` || strippedPath === baseByLocale[locale]);
     const indexExists = routeLocale === "fi" || (routeLocale !== undefined && locales.includes(routeLocale));
-    const methodLocale = (Object.keys(methodPaths) as RecipeLocale[]).find((item) => strippedPath === methodPaths[item].replace(/\/$/, ""));
+    const methodLocale = (Object.keys(methodPaths) as RecipeLocale[]).find((item) => normalizedPath === normalizeRoutePath(methodPaths[item]));
     const isPilotPage = methodLocale !== undefined;
     const known = recipe !== null || indexExists || isPilotPage;
     // Keep unknown deep links' metadata in the same locale as the visible not-found page.
