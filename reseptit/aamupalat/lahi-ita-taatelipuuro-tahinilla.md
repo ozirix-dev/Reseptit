@@ -15,18 +15,18 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "kaurahiutale"
-  - amount: 1
-    unit: "kpl"
-    item: "taateli"
+  - amount: 10
+    unit: "g"
+    item: "kuivattua taatelia"
   - amount: 1
     unit: "tl"
     item: "kardemumma"
   - amount: 1
     unit: "rkl"
     item: "tahini"
-  - amount: 700
+  - amount: 300
     unit: "ml"
-    item: "maitoa tai vettä"
+    item: "täysmaitoa"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -42,6 +42,11 @@ image:
   alt: "Kardemumma-taatelipuuro tahinilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 38.24
+carbs_total_per_serving_g: 44.28
+protein_per_serving_g: 12.45
+fat_per_serving_g: 14.43
+
 ---
 
 # Kardemumma-taatelipuuro tahinilla

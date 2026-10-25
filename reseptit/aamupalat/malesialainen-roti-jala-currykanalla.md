@@ -17,10 +17,10 @@ ingredients:
     item: "vehnäjauho"
   - amount: 2
     unit: "kpl"
-    item: "kananmuna"
+    item: "kananmunaa"
   - amount: 150
     unit: "g"
-    item: "kana"
+    item: "nahatonta broilerin reisilihaa"
   - amount: 200
     unit: "ml"
     item: "kookosmaito"
@@ -42,6 +42,11 @@ image:
   alt: "Roti jala currykanalla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 38.73
+carbs_total_per_serving_g: 40.48
+protein_per_serving_g: 28.35
+fat_per_serving_g: 29.02
+
 ---
 
 # Roti jala currykanalla

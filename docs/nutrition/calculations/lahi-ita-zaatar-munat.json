@@ -1,0 +1,216 @@
+{
+  "recipeId": "lahi-ita-zaatar-munat",
+  "sourceHash": "6f8ccf4a611678d88f9b7e60454e399c72d33f1230ff995d51a01565f0cf739b",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-15",
+  "servings": 2,
+  "scope": "Two servings; two medium eggs, 100 g pita bread, 100 g plain 3.9% yogurt, all listed oil retained; one teaspoon za’atar omitted under the conservative per-serving bound; salt omitted.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kananmuna",
+      "amount": 2,
+      "unit": "kpl",
+      "state": "raw edible egg, shell removed",
+      "matchEvidence": "Raw edible egg; Fineli Release 20 record 858.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli record 858 medium egg portion KPL_M = 55 g edible egg without shell.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible egg, shell removed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    },
+    {
+      "item": "pita",
+      "amount": 100,
+      "unit": "g",
+      "state": "plain wheat pita bread",
+      "matchEvidence": "Plain pita bread; Fineli Release 20 record 1056.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-1056-release-20",
+        "name": "VAALEA LEIPÄ, PITALEIPÄ",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1056",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain wheat pita bread",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 46.08,
+          "FIBT": 2.322,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 46.08,
+          "fibre": 2.322,
+          "polyols": 0,
+          "protein": 7.49,
+          "fat": 0.979
+        }
+      }
+    },
+    {
+      "item": "zaatar",
+      "amount": 1,
+      "unit": "tl",
+      "state": "documented bounded omission",
+      "matchEvidence": "A teaspoon is conservatively bounded as 2.5 g total blend over two servings. Energy and fat use the upper bound of pure sesame from Fineli record 385; carbohydrate, fibre, protein and fat bounds are rounded upward using the components of a dry herb-sesame mix.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "One teaspoon of unspecified za’atar is a small spice blend and can be excluded within the recipe’s per-serving uncertainty limits.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 8,
+        "netCarbohydrate": 0.1,
+        "totalCarbohydrate": 0.2,
+        "protein": 0.4,
+        "fat": 0.7
+      },
+      "omissionImpactEvidence": "A teaspoon is conservatively bounded as 2.5 g total blend over two servings. Energy and fat use the upper bound of pure sesame from Fineli record 385; carbohydrate, fibre, protein and fat bounds are rounded upward using the components of a dry herb-sesame mix."
+    },
+    {
+      "item": "jogurtti",
+      "amount": 100,
+      "unit": "g",
+      "state": "plain unsweetened yogurt, 3.9% fat",
+      "matchEvidence": "Plain unsweetened yogurt represented by Fineli Bulgarian-style 3.9% yogurt record 620.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-620-release-20",
+        "name": "JOGURTTI, MAUSTAMATON, BULGARIAN, RASVAA 3,9%",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/620",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain unsweetened yogurt, 3.9% fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.4,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3.4,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.9
+        }
+      }
+    },
+    {
+      "item": "neutraalia paistoöljyä",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "neutral vegetable cooking oil",
+      "matchEvidence": "Average neutral cooking oil; Fineli Release 20 record 541.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Fineli record 541 lists 13.5 g per tablespoon (RKL). All listed pan oil is counted as retained.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-541-release-20",
+        "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "neutral vegetable cooking oil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 99.9
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "documented bounded omission",
+      "matchEvidence": "Salt (sodium chloride) contains no carbohydrate, fibre, protein or fat; its omission has zero impact on displayed macros.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt is sodium chloride and contributes none of the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Salt (sodium chloride) contains no carbohydrate, fibre, protein or fat; its omission has zero impact on displayed macros."
+    }
+  ]
+}

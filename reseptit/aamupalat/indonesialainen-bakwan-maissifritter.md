@@ -12,9 +12,9 @@ main_ingredient:
 cooking_method:
   - "paistaminen"
 ingredients:
-  - amount: 1
-    unit: "kpl"
-    item: "maissi"
+  - amount: 100
+    unit: "g"
+    item: "tuoreita maissinjyviä"
   - amount: 1
     unit: "kpl"
     item: "porkkana"
@@ -42,6 +42,11 @@ image:
   alt: "Indonesialainen maissifritter bakwan tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 45.19
+carbs_total_per_serving_g: 49.88
+protein_per_serving_g: 7.89
+fat_per_serving_g: 8.5
+
 ---
 
 # Indonesialainen maissifritter bakwan

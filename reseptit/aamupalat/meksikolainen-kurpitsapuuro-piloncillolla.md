@@ -1,5 +1,5 @@
 ---
-title: "Makea kurpitsa-kaurapuuro piloncillolla"
+title: "Makea kurpitsa-kaurapuuro fariinisokerilla"
 recipe_id: meksikolainen-kurpitsapuuro-piloncillolla
 url_slug: meksikolainen-kurpitsapuuro-piloncillolla
 category: aamupala
@@ -15,18 +15,18 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "kaurahiutale"
-  - amount: 1
-    unit: "kpl"
-    item: "kurpitsa"
+  - amount: 250
+    unit: "g"
+    item: "kuorittua kurpitsaa"
   - amount: 1
     unit: "tl"
     item: "kaneli"
-  - amount: 150
+  - amount: 30
     unit: "g"
     item: "fariinisokeri"
-  - amount: 700
+  - amount: 500
     unit: "ml"
-    item: "maitoa tai vettä"
+    item: "vettä"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -42,9 +42,14 @@ image:
   alt: "Makea kurpitsa-kaurapuuro piloncillolla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 44.63
+carbs_total_per_serving_g: 52.57
+protein_per_serving_g: 7.12
+fat_per_serving_g: 4.89
+
 ---
 
-# Makea kurpitsa-kaurapuuro piloncillolla
+# Makea kurpitsa-kaurapuuro fariinisokerilla
 
 ## Kuvaus
 

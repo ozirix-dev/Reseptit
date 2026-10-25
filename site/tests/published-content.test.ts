@@ -143,6 +143,25 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     ["thai-maissifritterit", 55.41],
     ["karibia-mango-limejogurtti", 15.12],
     ["vietnamilainen-banh-cuon-sienilla", 40.31],
+    ["indonesialainen-bakwan-maissifritter", 45.19],
+    ["meksikolainen-munakokkeli-pico-de-gallolla", 28.3],
+    ["thai-roti-munalla-banaanilla", 50.17],
+    ["valimerellinen-appelsiini-aamiaiskakku", 44.48],
+    ["pohjoisafrikkalainen-msemen-hunajalla", 76.23],
+    ["lahi-ita-taatelipuuro-tahinilla", 38.24],
+    ["intialainen-mannasuurimoupma", 40.59],
+    ["malesialainen-roti-jala-currykanalla", 38.73],
+    ["pohjoisafrikkalainen-taatelipuuro-appelsiinilla", 41.3],
+    ["pohjoisafrikkalainen-minttutee-kaurapuuro", 39.41],
+    ["lahi-ita-ful-medames", 2.41],
+    ["malesialainen-roti-canai-dhalilla", 61.41],
+    ["korealainen-gyeranbap-riisikulho", 38.08],
+    ["pohjoisafrikkalainen-baghrir", 76.19],
+    ["karibia-johnny-cake", 38.99],
+    ["kiinalainen-teehaudutetut-munat", 1.02],
+    ["pohjoisafrikkalainen-harcha-juustolla", 35.66],
+    ["meksikolainen-kurpitsapuuro-piloncillolla", 44.63],
+    ["lahi-ita-zaatar-munat", 24.91],
   ]);
   for (const recipe of [...breakfast, ...desserts]) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
@@ -444,6 +463,41 @@ test("batch fourteen publishes recalculated macronutrients for every recipe and 
     ["thai-maissifritterit", [55.41, 59.9, 14.82, 13.59]],
     ["karibia-mango-limejogurtti", [15.12, 18.23, 2.65, 8.5]],
     ["vietnamilainen-banh-cuon-sienilla", [40.31, 42.76, 21.37, 9.05]],
+  ]);
+  const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
+  assert.ok(recipes.length >= expected.size, "all batch recipes have published Finnish pages");
+  assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(expected.keys()));
+  for (const recipe of recipes) {
+    assert.deepEqual(
+      [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],
+      expected.get(recipe.recipeId),
+      `${recipe.recipeId}/${recipe.locale}`,
+    );
+  }
+});
+
+test("batch fifteen publishes recalculated macronutrients for every recipe and available translation", () => {
+  const expected = new Map([
+    ["indonesialainen-bakwan-maissifritter", [45.19, 49.88, 7.89, 8.5]],
+    ["meksikolainen-munakokkeli-pico-de-gallolla", [28.3, 29.23, 9.12, 16.67]],
+    ["thai-roti-munalla-banaanilla", [50.17, 52.98, 14.77, 27.02]],
+    ["valimerellinen-appelsiini-aamiaiskakku", [44.48, 47.79, 7.66, 16.31]],
+    ["pohjoisafrikkalainen-msemen-hunajalla", [76.23, 79.73, 11.88, 28.4]],
+    ["lahi-ita-taatelipuuro-tahinilla", [38.24, 44.28, 12.45, 14.43]],
+    ["intialainen-mannasuurimoupma", [40.59, 45.38, 10.16, 1.2]],
+    ["malesialainen-roti-jala-currykanalla", [38.73, 40.48, 28.35, 29.02]],
+    ["pohjoisafrikkalainen-taatelipuuro-appelsiinilla", [41.3, 45.79, 6.27, 0.67]],
+    ["pohjoisafrikkalainen-minttutee-kaurapuuro", [39.41, 44.38, 9.22, 8.28]],
+    ["lahi-ita-ful-medames", [2.41, 8.38, 5.89, 7.36]],
+    ["chow-mein", [27.51, 31.14, 26.36, 12.09]],
+    ["malesialainen-roti-canai-dhalilla", [61.41, 70.01, 18.59, 22.64]],
+    ["korealainen-gyeranbap-riisikulho", [38.08, 39.34, 12.07, 5.65]],
+    ["pohjoisafrikkalainen-baghrir", [76.19, 80.36, 12.49, 8.2]],
+    ["karibia-johnny-cake", [38.99, 40.75, 6.81, 14.68]],
+    ["kiinalainen-teehaudutetut-munat", [1.02, 1.02, 7.48, 5.09]],
+    ["pohjoisafrikkalainen-harcha-juustolla", [35.66, 37.69, 10.66, 20.2]],
+    ["meksikolainen-kurpitsapuuro-piloncillolla", [44.63, 52.57, 7.12, 4.89]],
+    ["lahi-ita-zaatar-munat", [24.91, 26.07, 12.18, 14.26]],
   ]);
   const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
   assert.ok(recipes.length >= expected.size, "all batch recipes have published Finnish pages");

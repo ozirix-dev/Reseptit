@@ -25,10 +25,10 @@ image:
 ingredients:
   - amount: 300
     unit: g
-    item: บะหมี่ไข่
+    item: บะหมี่ไข่สาลีที่ต้มสุกและสะเด็ดน้ำแล้ว
   - amount: 400
     unit: g
-    item: เนื้อสะโพกไก่เลาะกระดูก
+    item: เนื้อสะโพกไก่เลาะกระดูกและลอกหนัง
     note: เป็นเส้นบางๆ
   - amount: 2
     unit: ช้อนโต๊ะ
@@ -54,13 +54,18 @@ ingredients:
   - amount: 1
     unit: ช้อนชา
     item: น้ำมันงา
-  - amount: 2
-    unit: ชิ้น
+  - amount: 12
+    unit: g
     item: ต้นหอม
-    note: เป็นชิ้น
+    note: หั่นเป็นแว่น
 source_language: fi
 source_recipe: reseptit/paaruoat/chow-mein.md
 translation_of: chow-mein
+carbs_net_per_serving_g: 27.51
+carbs_total_per_serving_g: 31.14
+protein_per_serving_g: 26.36
+fat_per_serving_g: 12.09
+
 ---
 
 # Chow mein – ผัดหมี่ไก่

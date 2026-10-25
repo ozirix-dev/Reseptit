@@ -1,0 +1,168 @@
+{
+  "recipeId": "kiinalainen-teehaudutetut-munat",
+  "sourceHash": "c5e2fc68fc743a50d5de67884c3e9ae592b7588363179ec8ba1fcb5b4a67d473",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-15",
+  "servings": 2,
+  "scope": "Two servings; two medium eggs, 150 ml brewed black tea, one tablespoon soy sauce; star anise is bounded and omitted as a small dry spice; salt omitted.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kananmuna",
+      "amount": 2,
+      "unit": "kpl",
+      "state": "raw edible egg, shell removed",
+      "matchEvidence": "Raw edible egg; Fineli Release 20 record 858.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli record 858 medium egg portion KPL_M = 55 g edible egg without shell.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible egg, shell removed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    },
+    {
+      "item": "haudutettua mustaa teetä",
+      "amount": 150,
+      "unit": "ml",
+      "state": "brewed black tea, no milk",
+      "matchEvidence": "AFCD Release 3 record F009125 is brewed plain black tea.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Brewed tea is converted at 1 g/ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F009125-release-3",
+        "name": "Tea, regular, black, brewed from leaf or teabags, without milk",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "brewed black tea, no milk",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.1,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "soijakastike",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "soy sauce",
+      "matchEvidence": "Soy sauce; Fineli Release 20 record 31.",
+      "gramsPerUnit": 18,
+      "conversionEvidence": "Fineli record 31 lists 18 g per tablespoon (RKL).",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-31-release-20",
+        "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/31",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "soy sauce",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 9.5,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 9.5,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 5.17,
+          "fat": 0.08
+        }
+      }
+    },
+    {
+      "item": "tähtianis",
+      "amount": 1,
+      "unit": "tl",
+      "state": "documented bounded omission",
+      "matchEvidence": "One teaspoon whole star anise is bounded at 2.6 g total recipe mass. Per-serving nutrient upper bounds use a conservative dry-spice ceiling of 400 kcal, 60 g available carbohydrate, 25 g fibre, 15 g protein and 15 g fat per 100 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "A single teaspoon of star anise is a small dry spice; its upper-bound contribution stays within the agreed per-serving omission tolerance.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 6,
+        "netCarbohydrate": 0.8,
+        "totalCarbohydrate": 1,
+        "protein": 0.3,
+        "fat": 0.3
+      },
+      "omissionImpactEvidence": "One teaspoon whole star anise is bounded at 2.6 g total recipe mass. Per-serving nutrient upper bounds use a conservative dry-spice ceiling of 400 kcal, 60 g available carbohydrate, 25 g fibre, 15 g protein and 15 g fat per 100 g."
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "documented bounded omission",
+      "matchEvidence": "Salt (sodium chloride) contains no carbohydrate, fibre, protein or fat; its omission has zero impact on displayed macros.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt is sodium chloride and contributes none of the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Salt (sodium chloride) contains no carbohydrate, fibre, protein or fat; its omission has zero impact on displayed macros."
+    }
+  ]
+}

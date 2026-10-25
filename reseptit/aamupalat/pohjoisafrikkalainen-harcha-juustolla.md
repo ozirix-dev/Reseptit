@@ -15,15 +15,15 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "mannasuurimo"
-  - amount: 150
+  - amount: 15
     unit: "g"
     item: "voi"
-  - amount: 200
+  - amount: 75
     unit: "ml"
     item: "maito"
   - amount: 100
     unit: "g"
-    item: "tuorejuusto"
+    item: "maustamatonta tuorejuustoa, 11 % rasvaa"
   - amount: 1
     unit: "rkl"
     item: "neutraalia paistoöljyä"
@@ -42,6 +42,11 @@ image:
   alt: "Harcha-mannasuurimoleipä juustolla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 35.66
+carbs_total_per_serving_g: 37.69
+protein_per_serving_g: 10.66
+fat_per_serving_g: 20.2
+
 ---
 
 # Harcha-mannasuurimoleipä juustolla

@@ -17,16 +17,16 @@ ingredients:
     item: "kaurahiutale"
   - amount: 2
     unit: "rkl"
-    item: "minttu"
+    item: "tuoretta minttua"
   - amount: 200
     unit: "ml"
     item: "maito"
   - amount: 1
     unit: "rkl"
     item: "hunaja"
-  - amount: 700
+  - amount: 500
     unit: "ml"
-    item: "maitoa tai vettä"
+    item: "vettä"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -42,6 +42,11 @@ image:
   alt: "Marokkolainen minttutee-kaurapuuro tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 39.41
+carbs_total_per_serving_g: 44.38
+protein_per_serving_g: 9.22
+fat_per_serving_g: 8.28
+
 ---
 
 # Marokkolainen minttutee-kaurapuuro

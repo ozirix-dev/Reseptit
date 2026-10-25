@@ -17,13 +17,13 @@ ingredients:
     item: "vehnäjauho"
   - amount: 100
     unit: "g"
-    item: "linssi"
+    item: "kuivia punaisia linssejä"
   - amount: 200
     unit: "ml"
     item: "kookosmaito"
-  - amount: 150
+  - amount: 5
     unit: "g"
-    item: "curry-lehti"
+    item: "tuoreita curry-lehtiä"
   - amount: 1
     unit: "rkl"
     item: "neutraalia paistoöljyä"
@@ -42,6 +42,11 @@ image:
   alt: "Roti canai dhalilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 61.41
+carbs_total_per_serving_g: 70.01
+protein_per_serving_g: 18.59
+fat_per_serving_g: 22.64
+
 ---
 
 # Roti canai dhalilla

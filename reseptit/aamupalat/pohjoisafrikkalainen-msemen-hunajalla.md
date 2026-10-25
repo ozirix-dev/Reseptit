@@ -18,7 +18,7 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "vehnäjauho"
-  - amount: 150
+  - amount: 50
     unit: "g"
     item: "voi"
   - amount: 1
@@ -42,6 +42,11 @@ image:
   alt: "Msemen-kerrosleipä hunajalla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 76.23
+carbs_total_per_serving_g: 79.73
+protein_per_serving_g: 11.88
+fat_per_serving_g: 28.4
+
 ---
 
 # Msemen-kerrosleipä hunajalla

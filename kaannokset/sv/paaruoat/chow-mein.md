@@ -25,10 +25,10 @@ image:
 ingredients:
   - amount: 300
     unit: g
-    item: äggnudlar
+    item: kokta och avrunna veteäggnudlar
   - amount: 400
     unit: g
-    item: kycklinglårfilé
+    item: benfritt, skinnfritt kycklinglårkött
     note: i tunna remsor
   - amount: 2
     unit: msk
@@ -54,13 +54,18 @@ ingredients:
   - amount: 1
     unit: tsk
     item: sesamolja
-  - amount: 2
-    unit: st
+  - amount: 12
+    unit: g
     item: vårlök
     note: i skivor
 source_language: fi
 source_recipe: reseptit/paaruoat/chow-mein.md
 translation_of: chow-mein
+carbs_net_per_serving_g: 27.51
+carbs_total_per_serving_g: 31.14
+protein_per_serving_g: 26.36
+fat_per_serving_g: 12.09
+
 ---
 
 # Chow mein med kyckling

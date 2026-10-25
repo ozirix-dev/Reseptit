@@ -15,18 +15,18 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "mannasuurimo"
-  - amount: 1
-    unit: "kpl"
-    item: "taateli"
-  - amount: 1
-    unit: "kpl"
-    item: "appelsiini"
+  - amount: 10
+    unit: "g"
+    item: "kuivattua taatelia"
+  - amount: 130
+    unit: "g"
+    item: "kuorittua appelsiinia"
   - amount: 1
     unit: "tl"
     item: "kaneli"
-  - amount: 700
+  - amount: 300
     unit: "ml"
-    item: "maitoa tai vettä"
+    item: "vettä"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -42,6 +42,11 @@ image:
   alt: "Pohjoisafrikkalainen taatelipuuro appelsiinilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 41.3
+carbs_total_per_serving_g: 45.79
+protein_per_serving_g: 6.27
+fat_per_serving_g: 0.67
+
 ---
 
 # Pohjoisafrikkalainen taatelipuuro appelsiinilla

@@ -25,10 +25,10 @@ image:
 ingredients:
   - amount: 300
     unit: g
-    item: munanuudeleita
+    item: keitettyjä ja valutettuja vehnämunanuudeleita
   - amount: 400
     unit: g
-    item: broilerin paistileikettä
+    item: nahatonta broilerin reisilihaa
     note: ohuina suikaleina
   - amount: 2
     unit: rkl
@@ -54,15 +54,20 @@ ingredients:
   - amount: 1
     unit: tl
     item: seesamiöljyä
-  - amount: 2
-    unit: kpl
+  - amount: 12
+    unit: g
     item: kevätsipulia
     note: viipaleina
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
+carbs_net_per_serving_g: 27.51
+carbs_total_per_serving_g: 31.14
+protein_per_serving_g: 26.36
+fat_per_serving_g: 12.09
+
 ---
 
 # Chow mein -paistetut nuudelit kanalla

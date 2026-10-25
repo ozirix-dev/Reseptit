@@ -21,12 +21,12 @@ ingredients:
   - amount: 1
     unit: "kpl"
     item: "porkkana"
-  - amount: 150
+  - amount: 5
     unit: "g"
-    item: "curry-lehti"
-  - amount: 700
+    item: "tuoreita curry-lehtiä"
+  - amount: 300
     unit: "ml"
-    item: "maitoa tai vettä"
+    item: "vettä"
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
@@ -42,6 +42,11 @@ image:
   alt: "Pehmeä mannasuurimoupma tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 40.59
+carbs_total_per_serving_g: 45.38
+protein_per_serving_g: 10.16
+fat_per_serving_g: 1.2
+
 ---
 
 # Pehmeä mannasuurimoupma

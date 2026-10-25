@@ -18,9 +18,9 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "vehnäjauho"
-  - amount: 150
+  - amount: 5
     unit: "g"
-    item: "hiiva"
+    item: "kuivahiivaa"
   - amount: 1
     unit: "rkl"
     item: "hunaja"
@@ -30,6 +30,9 @@ ingredients:
   - amount: null
     unit: ""
     item: "suolaa maun mukaan"
+  - amount: 150
+    unit: ml
+    item: lämmintä vettä
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -42,6 +45,11 @@ image:
   alt: "Marokkolainen baghrir hunajavoilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 76.19
+carbs_total_per_serving_g: 80.36
+protein_per_serving_g: 12.49
+fat_per_serving_g: 8.2
+
 ---
 
 # Marokkolainen baghrir hunajavoilla

@@ -20,7 +20,7 @@ ingredients:
     item: "tomaatti"
   - amount: 2
     unit: "rkl"
-    item: "korianteri"
+    item: "tuoretta korianteria"
   - amount: 100
     unit: "g"
     item: "maissitortilla"
@@ -42,6 +42,11 @@ image:
   alt: "Pico de gallo ja munakokkeli tortillalla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 28.3
+carbs_total_per_serving_g: 29.23
+protein_per_serving_g: 9.12
+fat_per_serving_g: 16.67
+
 ---
 
 # Pico de gallo ja munakokkeli tortillalla

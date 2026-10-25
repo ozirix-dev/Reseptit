@@ -1,0 +1,216 @@
+{
+  "recipeId": "intialainen-mannasuurimoupma",
+  "sourceHash": "1a8b5eb3de88fe3c965c5672ca0bb29520400b440002828d82ea646623533c7b",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-15",
+  "servings": 2,
+  "scope": "Two servings; 100 g dry semolina, 150 g fresh green peas, one medium carrot, 300 ml water; curry leaves standardized to 5 g and omitted under the documented small-herb bound; salt omitted.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "mannasuurimo",
+      "amount": 100,
+      "unit": "g",
+      "state": "dry semolina as sold",
+      "matchEvidence": "Fineli Release 20 record 112 is semolina; the recipe amount is the dry ingredient mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-112-release-20",
+        "name": "MANNASUURIMO",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/112",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "dry semolina as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 63.6,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 63.6,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.5,
+          "fat": 1.1
+        }
+      }
+    },
+    {
+      "item": "herne",
+      "amount": 150,
+      "unit": "g",
+      "state": "fresh green peas, raw edible portion",
+      "matchEvidence": "Fineli Release 20 record 370 is fresh green peas; the recipe states fresh peas.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-370-release-20",
+        "name": "HERNE, VIHREÄ, TUORE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/370",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh green peas, raw edible portion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 9.495,
+          "FIBT": 3.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 9.495,
+          "fibre": 3.1,
+          "polyols": 0,
+          "protein": 5.623,
+          "fat": 0.787
+        }
+      }
+    },
+    {
+      "item": "porkkana",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "raw medium carrot, edible portion",
+      "matchEvidence": "Raw carrot; Fineli Release 20 record 300.",
+      "gramsPerUnit": 60,
+      "conversionEvidence": "Fineli record 300 medium carrot portion KPL_M = 60 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-300-release-20",
+        "name": "PORKKANA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/300",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw medium carrot, edible portion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 5.56,
+          "FIBT": 2.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 5.56,
+          "fibre": 2.4,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "tuoreita curry-lehtiä",
+      "amount": 5,
+      "unit": "g",
+      "state": "documented bounded omission",
+      "matchEvidence": "Recipe quantity corrected to 5 g fresh leaves. Conservative omission bound uses the per-100 g macro profile of AFCD fresh mint F005700 for a 5 g total-recipe herb amount divided over two servings; each bound is rounded upward.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Five grams of fresh curry leaves is below the documented per-serving macro omission limits; no exact licensed source record is in the local Fineli/AFCD subset.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 1.2,
+        "netCarbohydrate": 0.12,
+        "totalCarbohydrate": 0.3,
+        "protein": 0.08,
+        "fat": 0.03
+      },
+      "omissionImpactEvidence": "Recipe quantity corrected to 5 g fresh leaves. Conservative omission bound uses the per-100 g macro profile of AFCD fresh mint F005700 for a 5 g total-recipe herb amount divided over two servings; each bound is rounded upward."
+    },
+    {
+      "item": "vettä",
+      "amount": 300,
+      "unit": "ml",
+      "state": "tap water",
+      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Tap water density represented as 1 g/ml; Fineli record 922 confirms zero energy and macronutrients.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "documented bounded omission",
+      "matchEvidence": "Salt (sodium chloride) contains no carbohydrate, fibre, protein or fat; its omission has zero impact on displayed macros.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt is sodium chloride and contributes none of the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Salt (sodium chloride) contains no carbohydrate, fibre, protein or fat; its omission has zero impact on displayed macros."
+    }
+  ]
+}
