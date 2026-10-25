@@ -1,290 +1,151 @@
+import { execFileSync } from "node:child_process";
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import type { GlycemicLoadRecipeInput } from "./glycemic-load-model";
+import { glycemicLoadInputHash } from "./glycemic-load-recipe-binding";
+import { parseMarkdown } from "../src/content/markdown";
+import { buildBaselineSnapshot, buildCurrentCoverageInventory, type CoverageBaseline, type CoverageResult, type CurrentCoverageInput } from "./glycemic-coverage-inventory-model";
 
 type JsonRecord = Record<string, unknown>;
-type ResultIngredient = JsonRecord & {
-  name: string;
-  availableCarbohydratePerServingG: number | null;
-  fineliRecordId: string | null;
-  giRecordId: string | null;
-  issues: string[];
-  giCandidates?: JsonRecord[];
+type PilotReport = JsonRecord & {
+  results: CoverageResult[];
+  summary: { recipes: number; calculated: number; insufficientSourceData: number };
+  sourceHashes: Record<string, string>;
+  calculationInputHashes: Record<string, string>;
+  calculationEvidenceHashes: Record<string, string>;
 };
-type RecipeResult = JsonRecord & {
-  recipeId: string;
-  status: string;
-  blockers: string[];
-  ingredients: ResultIngredient[];
-  omittedAvailableCarbohydratePerServingG: number;
+type NutritionReport = JsonRecord & {
+  counts: Record<string, number>;
+  inventory: Array<{ recipe_id: string; status: string; source_path: string; servings: number; ingredients: Array<Record<string, unknown>> }>;
 };
+type InputReport = { recipes: GlycemicLoadRecipeInput[] };
+type GICatalog = { records: Array<{ qualityTier: string }> };
+type HistoricalInventory = { recipes: Array<{ recipeId: string; structureStale?: boolean }> };
 
 const siteDir = path.resolve(import.meta.dirname, "..");
 const root = path.resolve(siteDir, "..");
-const date = "2026-10-25";
-const historicalBaseline = {
-  recipeCount: 325,
-  calculated: 112,
-  incomplete: 213,
-  giRecordCount: 37,
-  strongGICount: 4,
-  supplementaryGICount: 33,
-  nutritionAuditCounts: {
-    VERIFIED: 0,
-    "ESTIMATE WITH EVIDENCE": 180,
-    "INSUFFICIENT SOURCE DATA": 86,
-    "CONFLICT REQUIRES REVIEW": 0,
-    MISSING: 59,
-  },
-};
-const readJson = async <T>(relativePath: string): Promise<T> =>
-  JSON.parse(await readFile(path.join(root, relativePath), "utf8")) as T;
+const baselinePath = path.join(root, "docs/nutrition/glycemic-coverage-batch-2a-baseline.json");
+const currentPath = path.join(root, "docs/nutrition/glycemic-coverage-current-2026-10-25.json");
+const markdownPath = path.join(root, "docs/nutrition/glycemic-coverage-current-2026-10-25.md");
+const readJson = async <T>(relativePath: string): Promise<T> => JSON.parse(await readFile(path.join(root, relativePath), "utf8")) as T;
 
-const [glAudit, beforeAfter, input, bindings, foods, giCatalog, nutritionAudit] = await Promise.all([
-  readJson<JsonRecord & { results: RecipeResult[]; summary: JsonRecord }>("tmp/nutrition/glycemic-load-pilot.json"),
-  readJson<Array<JsonRecord & { recipeId: string; beforeStatus: string; afterStatus: string; blockers: string[] }>>("docs/nutrition/glycemic-load-before-after-2026-10-25.json"),
-  readJson<JsonRecord & { recipes: Array<JsonRecord & { recipeId: string; servings: number; ingredients: JsonRecord[] }> }>("docs/nutrition/glycemic-load-pilot-input.json"),
-  readJson<JsonRecord & { recipes: Record<string, string>; calculationInputs: Record<string, string>; calculationEvidence: Record<string, string> }>("docs/nutrition/glycemic-load-recipe-bindings.json"),
-  readJson<Array<JsonRecord & { id: string; name: string; state: string; basis: string; per100g: JsonRecord }>>("docs/nutrition/food-records.json"),
-  readJson<JsonRecord & { sourcePolicy: string; records: Array<JsonRecord & { id: string; gi: number; foodKey: string; preparationKey: string; qualityTier: string; source: JsonRecord }> }>("docs/nutrition/glycemic-index-records.json"),
-  readJson<JsonRecord & { counts: Record<string, number>; inventory: Array<JsonRecord & { recipe_id: string; status: string; evidenceErrors: string[] }> }>("tmp/nutrition/audit.json"),
+const [pilot, nutrition, inputs, giCatalog, historical] = await Promise.all([
+  readJson<PilotReport>("tmp/nutrition/glycemic-load-pilot.json"),
+  readJson<NutritionReport>("tmp/nutrition/audit.json"),
+  readJson<InputReport>("docs/nutrition/glycemic-load-pilot-input.json"),
+  readJson<GICatalog>("docs/nutrition/glycemic-index-records.json"),
+  readJson<HistoricalInventory>("docs/nutrition/glycemic-coverage-inventory-2026-10-25.json"),
 ]);
+const sourceCommit = execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim();
+const calculationInputHashes = Object.fromEntries(inputs.recipes.map((recipe) => [recipe.recipeId, glycemicLoadInputHash(recipe)]));
+const nutritionStatuses = Object.fromEntries(nutrition.inventory.map((row) => [row.recipe_id, row.status]));
+const currentRecipeStructures = Object.fromEntries(await Promise.all(nutrition.inventory.map(async (row) => {
+  const source = await readFile(path.join(root, row.source_path), "utf8");
+  const parsed = parseMarkdown(source);
+  if (!parsed) throw new Error(`Recipe has no frontmatter: ${row.recipe_id}`);
+  return [row.recipe_id, {
+    sourcePath: row.source_path,
+    servings: Number(parsed.data.servings),
+    ingredients: parsed.data.ingredients as Array<Record<string, unknown>>,
+    cookingMethod: parsed.data.cooking_method ?? [],
+  }] as const;
+}))) as CurrentCoverageInput["currentRecipeStructures"];
+const currentCalculationInputs = Object.fromEntries(inputs.recipes.map((recipe) => [recipe.recipeId, { servings: recipe.servings, ingredients: recipe.ingredients as unknown as Array<Record<string, unknown>> }]));
+const historicalStaleRecipeIds = historical.recipes.filter((row) => row.structureStale).map((row) => row.recipeId);
+const giTierCounts = Object.fromEntries([...new Set(giCatalog.records.map((record) => record.qualityTier))].map((tier) => [tier, giCatalog.records.filter((record) => record.qualityTier === tier).length]));
 
-const inputByRecipe = new Map(input.recipes.map((recipe) => [recipe.recipeId, recipe]));
-const priorByRecipe = new Map(beforeAfter.map((recipe) => [recipe.recipeId, recipe]));
-const nutritionByRecipe = new Map(nutritionAudit.inventory.map((recipe) => [recipe.recipe_id, recipe]));
-const currentResultByRecipe = new Map(glAudit.results.map((recipe) => [recipe.recipeId, recipe]));
-const giById = new Map(giCatalog.records.map((record) => [record.id, record]));
-const foodById = new Map(foods.map((food) => [food.id, food]));
-const sourcePriority: Record<string, number> = { F: 0, D: 1, E: 2, B: 3, C: 4, A: 5, G: 6, H: 7 };
-const labels: Record<string, string> = {
-  A: "GI-arvo puuttuu",
-  B: "GI-lähde tai ruoka-/valmistusvastaavuus ei täsmää",
-  C: "Vain täydentävä tai julkaisutasoltaan riittämätön GI-lähde",
-  D: "Hiilihydraatti- tai koostumustieto puuttuu",
-  E: "Määrä-, massa- tai valmistusmuunnos ratkaisematta",
-  F: "Reseptin tai laskentasyötteen rakennesidonta vanhentunut",
-  G: "Alle 2 g:n kumulatiivinen toleranssi ylittyy",
-  H: "Muu yksilöity ongelma",
-};
-
-function mappedIngredient(recipeId: string, blocker: string, ingredients: ResultIngredient[]) {
-  return ingredients.find((row) => blocker.startsWith(`${recipeId}: ${row.name}:`));
+if (pilot.summary.recipes !== inputs.recipes.length || nutrition.inventory.length !== inputs.recipes.length) {
+  throw new Error(`Coverage inputs disagree: GL=${pilot.summary.recipes}, nutrition=${nutrition.inventory.length}, source recipes=${inputs.recipes.length}.`);
 }
+if (new Set(inputs.recipes.map((recipe) => recipe.recipeId)).size !== inputs.recipes.length) throw new Error("Source input contains duplicate recipe IDs.");
 
-function classify(blocker: string, ingredient: ResultIngredient | undefined): string {
-  if (/recipe structure differs|calculation input (?:differs|mismatch)|fingerprint|binding mismatch/i.test(blocker)) return "F";
-  if (/cumulative omitted available carbohydrate|at or above the 2 g editorial tolerance/i.test(blocker)) return "G";
-  if (/source-matched composition|available carbohydrate is missing|unknown carbohydrate|composition.*(?:missing|unresolved)|not treated as zero|validated (?:mass|composition) is missing/i.test(blocker)) return "D";
-  if (/food-specific mass conversion|portion mass|gram conversion|unit conversion|density|edible (?:fraction|weight|basis)|raw\/cooked|cooked\/raw|preparation retention|retention\/loss|amount (?:is|remains) unknown|weight is unclear/i.test(blocker)) return "E";
-  if (/GI food family does not match|food\/preparation match lacks a rationale|food family|does not match the ingredient/i.test(blocker)) {
-    const assigned = ingredient?.giRecordId ? giById.get(ingredient.giRecordId) : undefined;
-    if (assigned && assigned.qualityTier === "SUPPLEMENTARY" && assigned.foodKey === ingredient?.foodKey && assigned.preparationKey === ingredient?.preparationKey) return "C";
-    const candidates = ingredient?.giCandidates ?? [];
-    if (candidates.length && candidates.every((candidate) => candidate.qualityTier === "SUPPLEMENTARY" && candidate.preparationMatches === true)) return "C";
-    return "B";
-  }
-  if (/GI evidence is missing|no (?:suitable|exact published) GI (?:source|value)|no GI value|GI source.*(?:missing|not found)/i.test(blocker)) return "A";
-  return "H";
-}
-
-function actionFor(category: string): string {
-  return {
-    A: "Etsi julkaistu ruoka- ja valmistustapakohtainen GI-lähde; tuntematonta arvoa ei nollata.",
-    B: "Tarkista elintarvikeperhe, ruoan tila ja valmistus; korjaa vastaavuus tai pidä esto.",
-    C: "Hae ensisijainen/ISO-kelpoinen näyttö tai säilytä lähde vain täydentävänä; älä nosta laatuluokkaa oletuksella.",
-    D: "Ratkaise koostumus ja imeytyvä hiilihydraatti lähteestä ennen GI-täsmäystä.",
-    E: "Ratkaise reseptimäärä, syötävä paino, yksikkömuunnos tai raaka-/kypsäpaino.",
-    F: "Tarkista reseptiversio, ainesosarakenne ja laskentasyöte ennen lähdearvion avaamista.",
-    G: "Tarkista alle 1 g:n ainesosat erikseen ja yhteisraja; älä muuta 2 g:n sääntöä.",
-    H: "Selvitä yksilöity virhe ja lisää tarvittava lähde tai rakenteellinen korjaus.",
-  }[category] ?? "Tarkista esto.";
-}
-
-const incomplete = beforeAfter
-  .filter((recipe) => recipe.afterStatus !== "CALCULATED")
-  .map((recipe) => currentResultByRecipe.get(recipe.recipeId))
-  .filter((recipe): recipe is RecipeResult => Boolean(recipe));
-if (glAudit.results.length !== 325 || incomplete.length !== 213) {
-  throw new Error(`Expected 325 current results and 213 baseline-incomplete recipes from the committed before/after audit; got ${glAudit.results.length}/${incomplete.length}`);
-}
-if (beforeAfter.length !== 325 || input.recipes.length !== 325) throw new Error("Expected 325 rows in all three source inventories.");
-if (JSON.stringify(nutritionAudit.counts) !== JSON.stringify(historicalBaseline.nutritionAuditCounts)) {
-  throw new Error("The historical 2026-10-25 nutrition audit counts changed; refresh the baseline evidence explicitly before regenerating this inventory.");
-}
-
-const rows = incomplete.map((recipe) => {
-  const previous = priorByRecipe.get(recipe.recipeId);
-  const nutrition = nutritionByRecipe.get(recipe.recipeId);
-  const recipeInput = inputByRecipe.get(recipe.recipeId);
-  if (!previous || !nutrition || !recipeInput) throw new Error(`Missing cross-source row for ${recipe.recipeId}`);
-  const baselineMessages = previous.afterStatus === "CALCULATED" ? recipe.blockers : previous.blockers;
-  const blockers = baselineMessages.map((message) => {
-    const ingredient = mappedIngredient(recipe.recipeId, message, recipe.ingredients);
-    const category = classify(message, ingredient);
-    const inputIngredient = ingredient ? recipeInput.ingredients.find((row) => row.name === ingredient.name) : undefined;
-    const giRecord = ingredient?.giRecordId ? giById.get(ingredient.giRecordId) : undefined;
-    const foodRecord = ingredient?.fineliRecordId ? foodById.get(ingredient.fineliRecordId) : undefined;
-    const candidates = ingredient?.giCandidates ?? [];
-    return {
-      category,
-      categoryLabel: labels[category],
-      ingredient: ingredient?.name ?? null,
-      availableCarbohydratePerServingG: ingredient?.availableCarbohydratePerServingG ?? null,
-      fineliRecordId: ingredient?.fineliRecordId ?? null,
-      foodRecord: foodRecord ? { name: foodRecord.name, state: foodRecord.state, basis: foodRecord.basis } : null,
-      assignedGIRecord: giRecord ? { id: giRecord.id, gi: giRecord.gi, qualityTier: giRecord.qualityTier, foodKey: giRecord.foodKey, preparationKey: giRecord.preparationKey } : null,
-      ingredientFoodKey: recipe.status === "CALCULATED" && previous.afterStatus !== "CALCULATED" ? null : inputIngredient?.foodKey ?? null,
-      ingredientPreparationKey: recipe.status === "CALCULATED" && previous.afterStatus !== "CALCULATED" ? null : inputIngredient?.preparationKey ?? null,
-      candidateGIRecords: candidates.map((candidate) => ({ id: candidate.id, gi: candidate.gi, qualityTier: candidate.qualityTier, preparationMatches: candidate.preparationMatches, sourceUrl: candidate.sourceUrl })),
-      message,
-      nextAction: actionFor(category),
-    };
+if (process.argv.includes("--capture-approved-baseline")) {
+  const expectedSourceCommit = "5e9cdeb830f468ecf099e9c286f9344afe3b6b71";
+  if (sourceCommit !== expectedSourceCommit) throw new Error(`Approved baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
+  const baseline = buildBaselineSnapshot({
+    sourceCommit,
+    results: pilot.results,
+    sourceHashes: pilot.sourceHashes,
+    calculationInputHashes,
+    calculationEvidenceHashes: pilot.calculationEvidenceHashes,
+    giRecordCount: giCatalog.records.length,
+    giTierCounts,
+    nutritionAuditCounts: nutrition.counts,
+    nutritionStatuses,
   });
-  const categories = [...new Set(blockers.map((blocker) => blocker.category))].sort((a, b) => sourcePriority[a]! - sourcePriority[b]!);
-  return {
-    recipeId: recipe.recipeId,
-    priorGroup: previous.beforeStatus === "CALCULATED" ? "PREVIOUSLY_CALCULATED_NOW_BLOCKED" : "ALREADY_INCOMPLETE_AT_BASELINE",
-    primaryBlockingCategory: categories[0] ?? "H",
-    primaryBlockingReason: blockers.find((blocker) => blocker.category === categories[0])?.message ?? "No structured blocker string; manual inspection required.",
-    overlappingCategories: categories,
-    blockerCount: blockers.length,
-    blockers,
-    priorGlycemicLoad: previous.before,
-    omittedAvailableCarbohydratePerServingG: recipe.omittedAvailableCarbohydratePerServingG,
-    nutritionStatus: nutrition.status,
-    nutritionEvidenceErrors: nutrition.evidenceErrors,
-    recipeServings: recipeInput.servings,
-    recipeBindingHash: bindings.recipes[recipe.recipeId] ?? null,
-    calculationInputHash: bindings.calculationInputs[recipe.recipeId] ?? null,
-    calculationEvidenceHash: bindings.calculationEvidence[recipe.recipeId] ?? null,
-    structureStale: baselineMessages.some((blocker) => classify(blocker, mappedIngredient(recipe.recipeId, blocker, recipe.ingredients)) === "F"),
-  };
+  if (baseline.recipeCount !== inputs.recipes.length) throw new Error("Baseline capture omitted one or more source recipes.");
+  await writeFile(baselinePath, `${JSON.stringify(baseline, null, 2)}\n`, "utf8");
+  console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, output: baselinePath }, null, 2));
+  process.exit(0);
+}
+
+const baseline = await readJson<CoverageBaseline>("docs/nutrition/glycemic-coverage-batch-2a-baseline.json");
+if (baseline.sourceCommit !== "5e9cdeb830f468ecf099e9c286f9344afe3b6b71") throw new Error(`Approved baseline source is unexpected: ${baseline.sourceCommit}`);
+const inventory = buildCurrentCoverageInventory({
+  sourceCommit,
+  baseline,
+  giRecordCount: giCatalog.records.length,
+  giTierCounts,
+  results: pilot.results,
+  sourceHashes: pilot.sourceHashes,
+  calculationInputHashes,
+  calculationEvidenceHashes: pilot.calculationEvidenceHashes,
+  nutritionStatuses,
+  currentRecipeStructures,
+  currentCalculationInputs,
+  historicalStaleRecipeIds,
 });
 
-const blockerRecipes = Object.fromEntries(Object.keys(labels).map((category) => [category, rows.filter((row) => row.overlappingCategories.includes(category)).map((row) => row.recipeId)]));
-const blockerTotals = Object.fromEntries(Object.keys(labels).map((category) => [category, {
-  recipes: blockerRecipes[category]!.length,
-  blockers: rows.reduce((sum, row) => sum + row.blockers.filter((blocker) => blocker.category === category).length, 0),
-  priorCalculated: rows.filter((row) => row.priorGroup === "PREVIOUSLY_CALCULATED_NOW_BLOCKED" && row.overlappingCategories.includes(category)).length,
-  baselineIncomplete: rows.filter((row) => row.priorGroup === "ALREADY_INCOMPLETE_AT_BASELINE" && row.overlappingCategories.includes(category)).length,
-}]));
-
-const sourceGroups = new Map<string, { label: string; foodKey: string | null; preparationKey: string | null; fineliRecordId: string | null; recipeIds: Set<string>; currentlyCalculatedRecipeIds: Set<string>; currentlyIncompleteRecipeIds: Set<string>; occurrenceCarbohydrate: number; soleBlockerRecipeIds: Set<string>; candidateRecords: Map<string, JsonRecord>; qualityNotes: Set<string> }>();
-for (const row of rows) {
-  const recipe = currentResultByRecipe.get(row.recipeId)!;
-  for (const blockerRow of row.blockers) {
-    const blocker = blockerRow.message;
-    const ingredient = mappedIngredient(recipe.recipeId, blocker, recipe.ingredients);
-    const category = classify(blocker, ingredient);
-    if (!ingredient || !["A", "B", "C"].includes(category)) continue;
-    const inputIngredient = inputByRecipe.get(recipe.recipeId)?.ingredients.find((row) => row.name === ingredient.name);
-    const giRecord = ingredient.giRecordId ? giById.get(ingredient.giRecordId) : undefined;
-    const foodKey = String(inputIngredient?.foodKey ?? giRecord?.foodKey ?? "").trim() || null;
-    const preparationKey = String(inputIngredient?.preparationKey ?? giRecord?.preparationKey ?? "").trim() || null;
-    const fineliRecordId = ingredient.fineliRecordId;
-    const normalizedName = ingredient.name.toLocaleLowerCase("fi-FI").replace(/\s+/g, " ").trim();
-    const key = [category, foodKey ?? "?", preparationKey ?? "?", fineliRecordId ?? normalizedName].join("|");
-    const group = sourceGroups.get(key) ?? { label: ingredient.name, foodKey, preparationKey, fineliRecordId, recipeIds: new Set<string>(), currentlyCalculatedRecipeIds: new Set<string>(), currentlyIncompleteRecipeIds: new Set<string>(), occurrenceCarbohydrate: 0, soleBlockerRecipeIds: new Set<string>(), candidateRecords: new Map<string, JsonRecord>(), qualityNotes: new Set<string>() };
-    group.recipeIds.add(recipe.recipeId);
-    if (recipe.status === "CALCULATED") group.currentlyCalculatedRecipeIds.add(recipe.recipeId);
-    else group.currentlyIncompleteRecipeIds.add(recipe.recipeId);
-    group.occurrenceCarbohydrate += ingredient.availableCarbohydratePerServingG ?? 0;
-    if (row.blockerCount === 1) group.soleBlockerRecipeIds.add(recipe.recipeId);
-    for (const candidate of ingredient.giCandidates ?? []) group.candidateRecords.set(String(candidate.id), candidate);
-    if (giRecord) group.candidateRecords.set(giRecord.id, { id: giRecord.id, gi: giRecord.gi, qualityTier: giRecord.qualityTier, preparationMatches: giRecord.preparationKey === preparationKey, sourceUrl: (giRecord.source as JsonRecord | undefined)?.url ?? null });
-    group.qualityNotes.add(category === "C" ? "Only supplementary / insufficiently documented candidates currently fit." : category === "B" ? "A record exists but the current food/preparation/source mapping is rejected." : "No accepted GI match is currently assigned.");
-    sourceGroups.set(key, group);
-  }
-}
-
-const priorityList = [...sourceGroups.entries()].map(([key, group]) => {
-  const recipeIds = [...group.recipeIds].sort();
-  const soleBlockerRecipeIds = [...group.soleBlockerRecipeIds].sort();
-  const impactScore = group.occurrenceCarbohydrate * (1 + Math.max(0, recipeIds.length - 1) / 10) + soleBlockerRecipeIds.length * 2;
-  return {
-    sourceGapId: key,
-    ingredient: group.label,
-    foodKey: group.foodKey,
-    preparationKey: group.preparationKey,
-    fineliRecordId: group.fineliRecordId,
-    affectedRecipeCount: recipeIds.length,
-    blockedRecipeIds: recipeIds,
-    currentlyCalculatedRecipeIds: [...group.currentlyCalculatedRecipeIds].sort(),
-    currentlyIncompleteRecipeIds: [...group.currentlyIncompleteRecipeIds].sort(),
-    currentlyCalculatedRecipeCount: group.currentlyCalculatedRecipeIds.size,
-    currentlyIncompleteRecipeCount: group.currentlyIncompleteRecipeIds.size,
-    possibleSoleBlockerRecipeCount: soleBlockerRecipeIds.length,
-    possibleSoleBlockerRecipeIds: soleBlockerRecipeIds,
-    summedAvailableCarbohydrateAcrossRecipeServingsG: Math.round(group.occurrenceCarbohydrate * 1000) / 1000,
-    priorityScore: Math.round(impactScore * 1000) / 1000,
-    currentCandidates: [...group.candidateRecords.values()],
-    currentQualityNotes: [...group.qualityNotes],
-  };
-}).sort((a, b) => b.priorityScore - a.priorityScore || b.affectedRecipeCount - a.affectedRecipeCount || a.ingredient.localeCompare(b.ingredient, "fi"));
-
-const nutritionGroups = {
-  supportedButGLMissing: rows.filter((row) => row.nutritionStatus === "ESTIMATE WITH EVIDENCE").map((row) => row.recipeId),
-  nutritionRequiresReviewAndGLMissing: rows.filter((row) => row.nutritionStatus === "INSUFFICIENT SOURCE DATA").map((row) => row.recipeId),
-  nutritionMissingAndGLMissing: rows.filter((row) => row.nutritionStatus === "MISSING").map((row) => row.recipeId),
-  nutritionConflictRequiresReview: rows.filter((row) => row.nutritionStatus === "CONFLICT REQUIRES REVIEW").map((row) => row.recipeId),
-};
-const sourceCommit = "b51c769731ba40f9ab0b085e5b1b47f979651d9f";
-const inventory = {
-  generatedAt: new Date().toISOString(),
-  sourceCommit,
-  baseline: historicalBaseline,
-  classificationPolicy: labels,
-  overlapCountsByCategory: blockerTotals,
-  nutritionGroups,
-  recipeCountByOriginalState: {
-    previouslyCalculatedNowBlocked: rows.filter((row) => row.priorGroup === "PREVIOUSLY_CALCULATED_NOW_BLOCKED").length,
-    alreadyIncompleteAtBaseline: rows.filter((row) => row.priorGroup === "ALREADY_INCOMPLETE_AT_BASELINE").length,
-  },
-  recipes: rows.sort((a, b) => a.recipeId.localeCompare(b.recipeId)),
-  sourcePriorities: priorityList,
-  limitations: [
-    "The inventory classifies current deterministic blocker messages; it does not validate new GI evidence.",
-    "A sole current blocker count is a candidate for source work, not a promise that the recipe will publish after one source change; other recipe/input validation may still apply.",
-    "Source priority score is a reproducible editorial ranking: summed supported available carbohydrate across blocked recipe servings, adjusted for reuse and sole-blocker opportunities. It is not a clinical impact score.",
-  ],
-};
-
-const markdown = [
-  `# GI-kattavuuden esto- ja lähdeinventaario (${date})`,
+const summary = inventory.currentSummary;
+const structural = inventory.structuralBindingAnalysis;
+const reportLines = [
+  "# Nykyinen GK-esteinventaario (2026-10-25)",
   "",
-  `Lähtöcommit: \`${sourceCommit}\`. Tämä tiedosto luokittelee uudelleen kaikki 213 keskeneräistä GK-arviota nykyisen toistettavan GK-ajon ja strict nutrition auditin perusteella. Luokkamäärät ovat päällekkäisiä reseptien välillä.`,
+  `Lähdecommit: \`${sourceCommit}\`. Hyväksytty vertailu: \`${baseline.sourceCommit}\` (${baseline.calculated} laskettua / ${baseline.incomplete} keskeneräistä; ${baseline.giRecordCount} GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.`,
   "",
-  `Aineistossa on ${inventory.baseline.recipeCount} reseptiä, ${inventory.baseline.calculated} laskettua ja ${inventory.baseline.incomplete} keskeneräistä GK-arviota. GI-katalogissa on ${inventory.baseline.giRecordCount} tietuetta (${inventory.baseline.strongGICount} STRONG, ${inventory.baseline.supplementaryGICount} SUPPLEMENTARY). Ravintoarvoauditointi: ${nutritionAudit.counts["ESTIMATE WITH EVIDENCE"]} tuettua, ${nutritionAudit.counts["INSUFFICIENT SOURCE DATA"]} tarkistettavaa, ${nutritionAudit.counts.MISSING} puuttuvaa ja ${nutritionAudit.counts["CONFLICT REQUIRES REVIEW"]} ristiriitaista.`,
+  `Nykyinen ajo kattaa ${summary.recipeCount} reseptiä: ${summary.calculated} laskettua, ${summary.incomplete} keskeneräistä. GI-katalogissa on ${summary.giRecordCount} tietuetta (${Object.entries(summary.giTierCounts).map(([tier, count]) => `${count} ${tier}`).join(", ")}).`,
   "",
-  "## Esteiden päällekkäisyys",
+  "## Muutos hyväksytystä vertailusta",
   "",
-  "| Luokka | Reseptit | Estoviestit | Aiemmin laskettu, nyt estetty | Jo lähtötilanteessa keskeneräinen |",
-  "| --- | ---: | ---: | ---: | ---: |",
-  ...Object.entries(blockerTotals).map(([category, count]) => `| ${category}: ${labels[category]} | ${count.recipes} | ${count.blockers} | ${count.priorCalculated} | ${count.baselineIncomplete} |`),
+  `- Aiemmin keskeneräisiä, nyt laskettavia: ${summary.newlyCalculated}. Aiemmin laskettuja, nyt estettyjä: ${summary.newlyBlocked}. Edelleen keskeneräisiä: ${summary.stillIncomplete}.`,
+  `- Estoperuste muuttui ${summary.changedBlockerRecipes} reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: ${summary.newStructureMismatches}/${summary.newInputMismatches}/${summary.newEvidenceMismatches}.`,
+  `- Keskeneräisiä, joiden ravintoarvotila on tuettu: ${summary.incompleteWithSupportedNutrition}; tarkistettava: ${summary.incompleteNutritionNeedsReview}; puuttuva: ${summary.incompleteNutritionMissing}.`,
   "",
-  `Ravintoarvoryhmät (erilliset, eivät summaa GK-luokkia): lähteillä tuettu ${nutritionGroups.supportedButGLMissing.length}, ravintoarvo tarkistettava ${nutritionGroups.nutritionRequiresReviewAndGLMissing.length}, ravintoarvo puuttuu ${nutritionGroups.nutritionMissingAndGLMissing.length}, ristiriita ${nutritionGroups.nutritionConflictRequiresReview.length}.`,
+  "## Päällekkäiset esteet",
   "",
-  "## Lähdeaukkojen prioriteetti",
+  "Luokat menevät päällekkäin; sama resepti voi esiintyä useassa rivissä.",
   "",
-  "Prioriteetti yhdistää tuetun imeytyvän hiilihydraatin summan, lähteen uudelleenkäytön ja niiden reseptien määrän, joissa kyseinen este on ainoa nykyinen GK-estoviesti. Piste ei ole kliininen vaikutusarvio.",
+  "| Luokka | Reseptit | Estoviestit |",
+  "| --- | ---: | ---: |",
+  ...Object.entries(inventory.blockerOverlapCounts).map(([category, value]) => `| ${category} | ${value.recipes} | ${value.blockerMessages} |`),
   "",
-  "| # | Ainesosa / vastaavuus | GI / valmistus | Lähtötilan reseptit | Nyt laskettu / edelleen estynyt | Lähtötilassa ainoa este | Yhteinen imeytyvä HH g/annos (summi reseptien yli) | Nykyiset ehdokkaat | Vaikeus |",
-  "| ---: | --- | --- | ---: | ---: | ---: | ---: | ---: | --- |",
-  ...priorityList.slice(0, 15).map((item, index) => {
-    const candidateText = item.currentCandidates.length ? item.currentCandidates.map((candidate) => `${candidate.id} (${candidate.qualityTier ?? "?"})`).join(", ") : "ei hyväksyttyä ehdokasta";
-    const difficulty = item.currentCandidates.length ? "Keskitaso / korkea: tarkista vastaavuus ja laatu" : "Korkea: lähdehaku ja mahdollinen tuotemäärittely";
-    return `| ${index + 1} | ${item.ingredient} (${item.fineliRecordId ?? "ei Fineli-ID:tä"}) | ${item.foodKey ?? "ruoka ratkaisematta"} / ${item.preparationKey ?? "valmistus ratkaisematta"} | ${item.affectedRecipeCount} | ${item.currentlyCalculatedRecipeCount} / ${item.currentlyIncompleteRecipeCount} | ${item.possibleSoleBlockerRecipeCount} | ${item.summedAvailableCarbohydrateAcrossRecipeServingsG} | ${candidateText} | ${difficulty} |`;
+  "## Historiallisen inventaarion 51 rakennesidontaa nykytilassa",
+  "",
+  `Tarkastetaan kaikki ${structural.rows.length} historiallista sidontaa nykyistä reseptirakennetta, GK-syötettä ja päällekkäisiä estoviestejä vasten. ${structural.withOtherBlockers} reseptillä on muita kuin rakenne-/syötesidonnan estoja; pelkkä fingerprintin uusiminen avaisi ${structural.potentiallyPublishableAfterBindingOnly} arviota.`,
+  "",
+  "| Resepti | Nykyiset reseptimäärät | GK-syötteen määrät / lähteet | Muut esteet | Nutrition | GK | Sidonta yksin avaisi arvion |",
+  "| --- | --- | --- | --- | --- | --- | --- |",
+  ...structural.rows.map((row) => {
+    const recipeIngredients = row.currentRecipeStructure?.ingredients.map((ingredient) => `${ingredient.amount ?? "?"} ${ingredient.unit ?? ""} ${ingredient.item ?? ""}`.trim()).join("; ") ?? "—";
+    const inputIngredients = row.currentCalculationInput?.ingredients.map((ingredient) => `${ingredient.grams ?? "?"} g ${ingredient.name ?? ""} (${ingredient.fineliRecordId ?? "ei ravintoarvolähdettä"}; GI ${ingredient.giRecordId ?? "puuttuu"})`).join("; ") ?? "—";
+    return `| ${row.recipeId} | ${recipeIngredients.replaceAll("|", "\\|")} | ${inputIngredients.replaceAll("|", "\\|")} | ${row.otherBlockingCategories.join(", ") || "—"} | ${row.nutritionStatus} | ${row.currentStatus} | ${row.currentlyPublishableAfterBindingOnly ? "kyllä" : "ei"} |`;
   }),
+  "",
+  "## Nykyiset keskeneräiset reseptit",
+  "",
+  "JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syötteen ja lähdetietueiden fingerprintit, ravintoarvotilan, kaikki estot, puuttuvat ruoka-/GI-tietueet, massa-/valmistustilaongelmat sekä seuraavan työvaiheen. Tämä taulukko listaa keskeneräiset ensisijaisen esteen mukaan.",
+  "",
+  "| Resepti | Ensisijainen luokka | GK-tila | Ravintoarvotila | Työvaihe |",
+  "| --- | --- | --- | --- | --- |",
+  ...inventory.recipes.filter((row) => row.status !== "CALCULATED").map((row) => `| ${row.recipeId} | ${row.primaryBlockingCategory ?? "—"} | ${row.status} | ${row.nutritionStatus} | ${row.suggestedNextWorkstream} |`),
   "",
   "## Rajaukset",
   "",
-  "- Koneellinen luokka kuvaa nykyistä estoviestiä; se ei hyväksy uutta GI-lähdettä eikä takaa GK-arvion avautumista.",
-  "- Rakennesidonnan muutokset käsitellään ensin, koska ne mitätöivät aiemman reseptikohtaisen ainesosatarkastelun.",
-  "- Yksittäinen GI:tön annososuus pysyy alle 1 g:ssa ja kaikkien pienosuuksien yhteissumma alle 2 g:ssa. Tuntemattomia määriä ei nollata.",
-  "- Tiedoston täydellinen 213 reseptin estekohtainen luettelo ja lähde-evidenssikandidaatit ovat JSON-inventaariossa.",
+  "- Tämä inventaario kuvaa laskenta-ajon esteitä; se ei itsessään vahvista lähdettä tai korjaa reseptisyötettä.",
+  "- GI-arvoja, GK-kaavaa, alle 1 g:n ainesosarajaa tai alle 2 g:n kumulatiivista toleranssia ei muuteta.",
+  "- Uusi vertailusnapshot käyttää hyväksytyn 5e9cdeb-julkaisun koko 325 reseptin tilaa; historiallista 213 reseptin lähtötiedostoa ei korvata.",
   "",
-].join("\n");
-
-await writeFile(path.join(root, `docs/nutrition/glycemic-coverage-inventory-${date}.json`), JSON.stringify(inventory, null, 2) + "\n");
-await writeFile(path.join(root, `docs/nutrition/glycemic-coverage-priorities-${date}.md`), markdown);
-console.log(JSON.stringify({ recipes: rows.length, blockerTotals, nutritionGroups: Object.fromEntries(Object.entries(nutritionGroups).map(([key, ids]) => [key, ids.length])), topPriorities: priorityList.slice(0, 15).map((item) => ({ ingredient: item.ingredient, foodKey: item.foodKey, preparationKey: item.preparationKey, affectedRecipeCount: item.affectedRecipeCount, soleBlockerCount: item.possibleSoleBlockerRecipeCount, carbohydrateG: item.summedAvailableCarbohydrateAcrossRecipeServingsG })), output: [`docs/nutrition/glycemic-coverage-inventory-${date}.json`, `docs/nutrition/glycemic-coverage-priorities-${date}.md`] }, null, 2));
+];
+await writeFile(currentPath, `${JSON.stringify(inventory, null, 2)}\n`, "utf8");
+await writeFile(markdownPath, `${reportLines.join("\n")}\n`, "utf8");
+console.log(JSON.stringify({ sourceCommit, ...summary, historicalStructuralBindingCount: structural.rows.length, withOtherBlockers: structural.withOtherBlockers, output: currentPath, markdown: markdownPath }, null, 2));
