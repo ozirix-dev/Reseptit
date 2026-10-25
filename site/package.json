@@ -18,6 +18,7 @@
     "nutrition:batch": "tsx scripts/nutrition-batch-builder.ts",
     "audit:nutrition": "tsx scripts/nutrition-audit.ts",
     "audit:glycemic-load": "tsx scripts/glycemic-load-pilot.ts",
+    "audit:glycemic-coverage": "tsx scripts/glycemic-coverage-inventory.ts",
     "review:translations": "tsx scripts/translation-review.ts"
   },
   "dependencies": {

@@ -8,7 +8,7 @@ Uudelleen ajettu strict-ravintoarvoauditointi tuotti 325 lähderiviä: 180 `ESTI
 
 ## Kaikkien estojen inventaario
 
-Kaikkien 213 reseptin jokainen estoviesti, ensisijainen syy, päällekkäiset kategoriat, ravintoarvotila, reseptin lähdesidonnat ja toimenpide-ehdotus ovat [koneellisessa inventaariossa](glycemic-coverage-inventory-2026-10-25.json). Luokat ovat päällekkäisiä, eivätkä prosentit summaudu.
+Kaikkien 213 reseptin jokainen estoviesti, ensisijainen syy, päällekkäiset kategoriat, ravintoarvotila, reseptin lähdesidonnat ja toimenpide-ehdotus ovat [koneellisessa inventaariossa](glycemic-coverage-inventory-2026-10-25.json). Luokat ovat päällekkäisiä, eivätkä prosentit summaudu. Inventaarion voi rakentaa uudelleen `site`-kansiosta komennoilla `npm run audit:nutrition -- --strict`, `npm run audit:glycemic-load` ja `npm run audit:glycemic-coverage`; jälkimmäinen käyttää versionoitua ennen/jälkeen-auditointia säilyttääkseen 213 reseptin julkaistun lähtöjoukon, vaikka erä 1 jo avaa kaksi niistä.
 
 | Luokka | Reseptit | Estoviestit | Aiemmin laskettu, nyt estetty | Jo lähtötilanteessa keskeneräinen |
 | --- | ---: | ---: | ---: | ---: |

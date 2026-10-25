@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T12:15:48.806Z",
+  "generatedAt": "2026-10-25T12:39:00.122Z",
   "sourceCommit": "b51c769731ba40f9ab0b085e5b1b47f979651d9f",
   "baseline": {
     "recipeCount": 325,
@@ -333,7 +333,78 @@
           },
           "ingredientFoodKey": null,
           "ingredientPreparationKey": null,
-          "candidateGIRecords": [],
+          "candidateGIRecords": [
+            {
+              "id": "potato-boiled-china-gi-66",
+              "gi": 66,
+              "qualityTier": "STRONG",
+              "preparationMatches": true,
+              "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+            },
+            {
+              "id": "potato-cooked-china-nonwestern-gi-66-4",
+              "gi": 66.4,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430"
+            },
+            {
+              "id": "potato-fried-evoo-lady-rosetta-gi-114",
+              "gi": 114,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02"
+            },
+            {
+              "id": "potato-fried-evoo-spunta-gi-83",
+              "gi": 83,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02"
+            },
+            {
+              "id": "potato-crisp-fried-china-nonwestern-gi-60-3",
+              "gi": 60.3,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430"
+            },
+            {
+              "id": "potato-steamed-nishiyutaka-nonwestern-gi-64",
+              "gi": 64,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+            },
+            {
+              "id": "potato-steamed-ainoaka-nonwestern-gi-63",
+              "gi": 63,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+            },
+            {
+              "id": "potato-steamed-dejima-nonwestern-gi-54",
+              "gi": 54,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+            },
+            {
+              "id": "potato-boiled-tortilla-analogue-gi-66",
+              "gi": 66,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": true,
+              "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+            },
+            {
+              "id": "potato-boiled-preparation-analogue-gi-66",
+              "gi": 66,
+              "qualityTier": "STRONG",
+              "preparationMatches": true,
+              "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+            }
+          ],
           "message": "aloo-paratha: perunoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
           "nextAction": "Tarkista elintarvikeperhe, ruoan tila ja valmistus; korjaa vastaavuus tai pidä esto."
         }
@@ -346,7 +417,7 @@
       ],
       "recipeServings": 4,
       "recipeBindingHash": "1437eac0e200de7504d0f17d8567013dccb20e735cf131b35bee3028c3add34b",
-      "calculationInputHash": "9e2f5462dfd10a44092c98205d7929523dae8370443d43195b14a87257f4db0a",
+      "calculationInputHash": "78867042a558109d343440d0d7409e66fc625f494db5a0aaf8602894837821ca",
       "calculationEvidenceHash": "04056394a94cf071a6b97b647ffcefaf9e7818c79d3936714d3a69b8ca665dff",
       "structureStale": false
     },
@@ -10189,7 +10260,78 @@
           },
           "ingredientFoodKey": null,
           "ingredientPreparationKey": null,
-          "candidateGIRecords": [],
+          "candidateGIRecords": [
+            {
+              "id": "potato-boiled-china-gi-66",
+              "gi": 66,
+              "qualityTier": "STRONG",
+              "preparationMatches": true,
+              "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+            },
+            {
+              "id": "potato-cooked-china-nonwestern-gi-66-4",
+              "gi": 66.4,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430"
+            },
+            {
+              "id": "potato-fried-evoo-lady-rosetta-gi-114",
+              "gi": 114,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02"
+            },
+            {
+              "id": "potato-fried-evoo-spunta-gi-83",
+              "gi": 83,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02"
+            },
+            {
+              "id": "potato-crisp-fried-china-nonwestern-gi-60-3",
+              "gi": 60.3,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430"
+            },
+            {
+              "id": "potato-steamed-nishiyutaka-nonwestern-gi-64",
+              "gi": 64,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+            },
+            {
+              "id": "potato-steamed-ainoaka-nonwestern-gi-63",
+              "gi": 63,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+            },
+            {
+              "id": "potato-steamed-dejima-nonwestern-gi-54",
+              "gi": 54,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": false,
+              "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+            },
+            {
+              "id": "potato-boiled-tortilla-analogue-gi-66",
+              "gi": 66,
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": true,
+              "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+            },
+            {
+              "id": "potato-boiled-preparation-analogue-gi-66",
+              "gi": 66,
+              "qualityTier": "STRONG",
+              "preparationMatches": true,
+              "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+            }
+          ],
           "message": "samosa: perunoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
           "nextAction": "Tarkista elintarvikeperhe, ruoan tila ja valmistus; korjaa vastaavuus tai pidä esto."
         }
@@ -10202,7 +10344,7 @@
       ],
       "recipeServings": 4,
       "recipeBindingHash": "4859e7a4b1facca470359ee41c663e2abc23a0d00d88983a231b19b74090b075",
-      "calculationInputHash": "3130b21c2467d9093bd213dfa9e3735a3ce0a845a1eeb226ae0a1d2252c01206",
+      "calculationInputHash": "90b3947dd9a54aa6f8b762318676a75107547448bfe20e474181e9bd38b3f3fb",
       "calculationEvidenceHash": "b9a5b61a3a60d74d026544648546180d817465990a26174d936c7583c348055a",
       "structureStale": false
     },
@@ -13536,7 +13678,185 @@
   ],
   "sourcePriorities": [
     {
-      "sourceGapId": "B|corn-tortilla|commercial-corn-tortilla|fineli-35554-release-20|maissitortilla",
+      "sourceGapId": "B|potato|boiled-unspecified|fineli-205-2026-10-24",
+      "ingredient": "perunoita",
+      "foodKey": "potato",
+      "preparationKey": "boiled-unspecified",
+      "fineliRecordId": "fineli-205-2026-10-24",
+      "affectedRecipeCount": 4,
+      "blockedRecipeIds": [
+        "aloo-paratha",
+        "lohikeitto-kuohukermalla",
+        "pani-puri",
+        "samosa"
+      ],
+      "currentlyCalculatedRecipeIds": [
+        "aloo-paratha",
+        "samosa"
+      ],
+      "currentlyIncompleteRecipeIds": [
+        "lohikeitto-kuohukermalla",
+        "pani-puri"
+      ],
+      "currentlyCalculatedRecipeCount": 2,
+      "currentlyIncompleteRecipeCount": 2,
+      "possibleSoleBlockerRecipeCount": 3,
+      "possibleSoleBlockerRecipeIds": [
+        "aloo-paratha",
+        "lohikeitto-kuohukermalla",
+        "samosa"
+      ],
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 56.575,
+      "priorityScore": 79.548,
+      "currentCandidates": [
+        {
+          "id": "potato-boiled-china-gi-66",
+          "gi": 66,
+          "preparation": "Boiled; China; test year 2005",
+          "qualityTier": "STRONG",
+          "preparationMatches": true,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        },
+        {
+          "id": "potato-cooked-china-nonwestern-gi-66-4",
+          "gi": 66.4,
+          "preparation": "China; preparation not further specified in the compendium table",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430"
+        },
+        {
+          "id": "potato-fried-evoo-lady-rosetta-gi-114",
+          "gi": 114,
+          "preparation": "Slices fried in extra-virgin olive oil",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02"
+        },
+        {
+          "id": "potato-fried-evoo-spunta-gi-83",
+          "gi": 83,
+          "preparation": "Slices fried in extra-virgin olive oil",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02"
+        },
+        {
+          "id": "potato-crisp-fried-china-nonwestern-gi-60-3",
+          "gi": 60.3,
+          "preparation": "Potato crisps, oil fried; China",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430"
+        },
+        {
+          "id": "potato-steamed-nishiyutaka-nonwestern-gi-64",
+          "gi": 64,
+          "preparation": "Steamed; Japan",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+        },
+        {
+          "id": "potato-steamed-ainoaka-nonwestern-gi-63",
+          "gi": 63,
+          "preparation": "Steamed; Japan",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+        },
+        {
+          "id": "potato-steamed-dejima-nonwestern-gi-54",
+          "gi": 54,
+          "preparation": "Steamed; Japan",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004"
+        },
+        {
+          "id": "potato-boiled-tortilla-analogue-gi-66",
+          "gi": 66,
+          "preparation": "Boiled potato used as a broad preparation analogue for slow oil-cooked tortilla potato",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": true,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        },
+        {
+          "id": "potato-boiled-preparation-analogue-gi-66",
+          "gi": 66,
+          "qualityTier": "STRONG",
+          "preparationMatches": true,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        }
+      ],
+      "currentQualityNotes": [
+        "A record exists but the current food/preparation/source mapping is rejected."
+      ]
+    },
+    {
+      "sourceGapId": "A|?|?|afcd-F002991-release-3",
+      "ingredient": "kookosmaitoa",
+      "foodKey": null,
+      "preparationKey": null,
+      "fineliRecordId": "afcd-F002991-release-3",
+      "affectedRecipeCount": 17,
+      "blockedRecipeIds": [
+        "indonesialainen-lontong-sayur-aamiaiseksi",
+        "indonesialainen-nasi-uduk-aamiaisella",
+        "japanilainen-kabocha-puuro",
+        "karibia-bammy-kassavaleipa",
+        "karibia-kookosriisi-pavuilla",
+        "karibia-maissipuuro-kookoksella",
+        "kerala-kalacurry",
+        "malesialainen-kuih-seri-muka",
+        "malesialainen-laksa-lemak-aamiaiseksi",
+        "malesialainen-nasi-lemak-aamiaisella",
+        "malesialainen-roti-canai-dhalilla",
+        "malesialainen-roti-jala-currykanalla",
+        "thai-kananmunat-kookoscurryssa",
+        "thai-kookosriisi-mangolla",
+        "thai-roti-munalla-banaanilla",
+        "vietnamilainen-banh-xeo-aamiaisletut",
+        "vietnamilainen-papaija-kookospuuro"
+      ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "indonesialainen-lontong-sayur-aamiaiseksi",
+        "indonesialainen-nasi-uduk-aamiaisella",
+        "japanilainen-kabocha-puuro",
+        "karibia-bammy-kassavaleipa",
+        "karibia-kookosriisi-pavuilla",
+        "karibia-maissipuuro-kookoksella",
+        "kerala-kalacurry",
+        "malesialainen-kuih-seri-muka",
+        "malesialainen-laksa-lemak-aamiaiseksi",
+        "malesialainen-nasi-lemak-aamiaisella",
+        "malesialainen-roti-canai-dhalilla",
+        "malesialainen-roti-jala-currykanalla",
+        "thai-kananmunat-kookoscurryssa",
+        "thai-kookosriisi-mangolla",
+        "thai-roti-munalla-banaanilla",
+        "vietnamilainen-banh-xeo-aamiaisletut",
+        "vietnamilainen-papaija-kookospuuro"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 17,
+      "possibleSoleBlockerRecipeCount": 4,
+      "possibleSoleBlockerRecipeIds": [
+        "indonesialainen-nasi-uduk-aamiaisella",
+        "karibia-kookosriisi-pavuilla",
+        "thai-roti-munalla-banaanilla",
+        "vietnamilainen-banh-xeo-aamiaisletut"
+      ],
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 26.588,
+      "priorityScore": 77.129,
+      "currentCandidates": [],
+      "currentQualityNotes": [
+        "No accepted GI match is currently assigned."
+      ]
+    },
+    {
+      "sourceGapId": "B|corn-tortilla|commercial-corn-tortilla|fineli-35554-release-20",
       "ingredient": "maissitortilla",
       "foodKey": "corn-tortilla",
       "preparationKey": "commercial-corn-tortilla",
@@ -13546,6 +13866,13 @@
         "meksikolainen-aamiais-tacot-mustapavuilla",
         "meksikolainen-paputostada-aamupalaksi"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "meksikolainen-aamiais-tacot-mustapavuilla",
+        "meksikolainen-paputostada-aamupalaksi"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 51.845,
@@ -13564,74 +13891,7 @@
       ]
     },
     {
-      "sourceGapId": "B|potato|boiled-unspecified|fineli-205-2026-10-24|perunoita",
-      "ingredient": "perunoita",
-      "foodKey": "potato",
-      "preparationKey": "boiled-unspecified",
-      "fineliRecordId": "fineli-205-2026-10-24",
-      "affectedRecipeCount": 3,
-      "blockedRecipeIds": [
-        "aloo-paratha",
-        "pani-puri",
-        "samosa"
-      ],
-      "possibleSoleBlockerRecipeCount": 2,
-      "possibleSoleBlockerRecipeIds": [
-        "aloo-paratha",
-        "samosa"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 42.625,
-      "priorityScore": 55.15,
-      "currentCandidates": [
-        {
-          "id": "potato-boiled-preparation-analogue-gi-66",
-          "gi": 66,
-          "qualityTier": "STRONG",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "A record exists but the current food/preparation/source mapping is rejected."
-      ]
-    },
-    {
-      "sourceGapId": "A|?|?|afcd-F002991-release-3|kookosmaito",
-      "ingredient": "kookosmaito",
-      "foodKey": null,
-      "preparationKey": null,
-      "fineliRecordId": "afcd-F002991-release-3",
-      "affectedRecipeCount": 14,
-      "blockedRecipeIds": [
-        "indonesialainen-lontong-sayur-aamiaiseksi",
-        "japanilainen-kabocha-puuro",
-        "karibia-bammy-kassavaleipa",
-        "karibia-maissipuuro-kookoksella",
-        "malesialainen-kuih-seri-muka",
-        "malesialainen-laksa-lemak-aamiaiseksi",
-        "malesialainen-nasi-lemak-aamiaisella",
-        "malesialainen-roti-canai-dhalilla",
-        "malesialainen-roti-jala-currykanalla",
-        "thai-kananmunat-kookoscurryssa",
-        "thai-kookosriisi-mangolla",
-        "thai-roti-munalla-banaanilla",
-        "vietnamilainen-banh-xeo-aamiaisletut",
-        "vietnamilainen-papaija-kookospuuro"
-      ],
-      "possibleSoleBlockerRecipeCount": 2,
-      "possibleSoleBlockerRecipeIds": [
-        "thai-roti-munalla-banaanilla",
-        "vietnamilainen-banh-xeo-aamiaisletut"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 21.896,
-      "priorityScore": 54.361,
-      "currentCandidates": [],
-      "currentQualityNotes": [
-        "No accepted GI match is currently assigned."
-      ]
-    },
-    {
-      "sourceGapId": "C|bakery-products-category-mean|category-mean|afcd-F003239-2026-10-24|couscousia",
+      "sourceGapId": "C|bakery-products-category-mean|category-mean|afcd-F003239-2026-10-24",
       "ingredient": "couscousia",
       "foodKey": "bakery-products-category-mean",
       "preparationKey": "category-mean",
@@ -13640,6 +13900,12 @@
       "blockedRecipeIds": [
         "marokkolainen-couscous"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "marokkolainen-couscous"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 46,
@@ -13658,7 +13924,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|fineli-28958-release-20|maissi",
+      "sourceGapId": "A|?|?|fineli-28958-release-20",
       "ingredient": "maissi",
       "foodKey": null,
       "preparationKey": null,
@@ -13668,6 +13934,13 @@
         "indonesialainen-bakwan-maissifritter",
         "meksikolainen-quesadilla-sienilla"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "indonesialainen-bakwan-maissifritter",
+        "meksikolainen-quesadilla-sienilla"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 39.852,
@@ -13678,7 +13951,38 @@
       ]
     },
     {
-      "sourceGapId": "C|bread-category-mean|category-mean|fineli-110-2026-10-25|vehnäjauho",
+      "sourceGapId": "A|?|?|fineli-4-release-20",
+      "ingredient": "hunaja",
+      "foodKey": null,
+      "preparationKey": null,
+      "fineliRecordId": "fineli-4-release-20",
+      "affectedRecipeCount": 4,
+      "blockedRecipeIds": [
+        "kiinalainen-musta-seesamipuuro",
+        "pekingin-ankka",
+        "pohjoisafrikkalainen-minttutee-kaurapuuro",
+        "valimerellinen-tahinipuuro"
+      ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "kiinalainen-musta-seesamipuuro",
+        "pekingin-ankka",
+        "pohjoisafrikkalainen-minttutee-kaurapuuro",
+        "valimerellinen-tahinipuuro"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 4,
+      "possibleSoleBlockerRecipeCount": 0,
+      "possibleSoleBlockerRecipeIds": [],
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 32.32,
+      "priorityScore": 42.016,
+      "currentCandidates": [],
+      "currentQualityNotes": [
+        "No accepted GI match is currently assigned."
+      ]
+    },
+    {
+      "sourceGapId": "C|bread-category-mean|category-mean|fineli-110-2026-10-25",
       "ingredient": "vehnäjauho",
       "foodKey": "bread-category-mean",
       "preparationKey": "category-mean",
@@ -13687,6 +13991,12 @@
       "blockedRecipeIds": [
         "intialainen-aloo-paratha"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "intialainen-aloo-paratha"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 36.999,
@@ -13705,28 +14015,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|fineli-4-release-20|hunaja",
-      "ingredient": "hunaja",
-      "foodKey": null,
-      "preparationKey": null,
-      "fineliRecordId": "fineli-4-release-20",
-      "affectedRecipeCount": 3,
-      "blockedRecipeIds": [
-        "kiinalainen-musta-seesamipuuro",
-        "pohjoisafrikkalainen-minttutee-kaurapuuro",
-        "valimerellinen-tahinipuuro"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 24.24,
-      "priorityScore": 29.088,
-      "currentCandidates": [],
-      "currentQualityNotes": [
-        "No accepted GI match is currently assigned."
-      ]
-    },
-    {
-      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-34694-release-20|papaija",
+      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-34694-release-20",
       "ingredient": "papaija",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -13736,6 +14025,13 @@
         "thai-papaijajogurtti",
         "vietnamilainen-papaija-kookospuuro"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "thai-papaijajogurtti",
+        "vietnamilainen-papaija-kookospuuro"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 23.46,
@@ -13754,7 +14050,7 @@
       ]
     },
     {
-      "sourceGapId": "B|potato|tortilla-slow-cooked-in-oil-and-pan-set-with-egg|fineli-205-2026-10-24|peruna",
+      "sourceGapId": "B|potato|tortilla-slow-cooked-in-oil-and-pan-set-with-egg|fineli-205-2026-10-24",
       "ingredient": "peruna",
       "foodKey": "potato",
       "preparationKey": "tortilla-slow-cooked-in-oil-and-pan-set-with-egg",
@@ -13763,6 +14059,12 @@
       "blockedRecipeIds": [
         "tortilla-de-patatas"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "tortilla-de-patatas"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "tortilla-de-patatas"
@@ -13855,7 +14157,7 @@
       ]
     },
     {
-      "sourceGapId": "B|chocolate|dark-chocolate-as-sold|fineli-32-2026-10-24|tummaa suklaata",
+      "sourceGapId": "B|chocolate|dark-chocolate-as-sold|fineli-32-2026-10-24",
       "ingredient": "tummaa suklaata",
       "foodKey": "chocolate",
       "preparationKey": "dark-chocolate-as-sold",
@@ -13864,6 +14166,12 @@
       "blockedRecipeIds": [
         "meheva-suklaakakku"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "meheva-suklaakakku"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 21.304,
@@ -13882,7 +14190,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|fineli-3040-release-20|kypsennettyjä, valutettuja maissinjyviä",
+      "sourceGapId": "A|?|?|fineli-3040-release-20",
       "ingredient": "kypsennettyjä, valutettuja maissinjyviä",
       "foodKey": null,
       "preparationKey": null,
@@ -13891,6 +14199,12 @@
       "blockedRecipeIds": [
         "thai-maissifritterit"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "thai-maissifritterit"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "thai-maissifritterit"
@@ -13903,7 +14217,7 @@
       ]
     },
     {
-      "sourceGapId": "C|bakery-products-category-mean|category-mean|afcd-F006497-2026-10-24|filotaikinaa",
+      "sourceGapId": "C|bakery-products-category-mean|category-mean|afcd-F006497-2026-10-24",
       "ingredient": "filotaikinaa",
       "foodKey": "bakery-products-category-mean",
       "preparationKey": "category-mean",
@@ -13912,6 +14226,12 @@
       "blockedRecipeIds": [
         "spanakopita"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "spanakopita"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "spanakopita"
@@ -13932,7 +14252,7 @@
       ]
     },
     {
-      "sourceGapId": "B|curry-paste|asian-regional-food-category|fineli-29014-2026-10-24|täysrasvaista kookosmaitoa",
+      "sourceGapId": "B|curry-paste|asian-regional-food-category|fineli-29014-2026-10-24",
       "ingredient": "täysrasvaista kookosmaitoa",
       "foodKey": "curry-paste",
       "preparationKey": "asian-regional-food-category",
@@ -13943,6 +14263,14 @@
         "punainen-kanacurry-vhh",
         "thai-vihrea-curry-kanalla-vhh"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "panang-curry-kanalla-vhh",
+        "punainen-kanacurry-vhh",
+        "thai-vihrea-curry-kanalla-vhh"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 3,
       "possibleSoleBlockerRecipeCount": 3,
       "possibleSoleBlockerRecipeIds": [
         "panang-curry-kanalla-vhh",
@@ -13965,36 +14293,7 @@
       ]
     },
     {
-      "sourceGapId": "B|potato|boiled-unspecified|fineli-205-2026-10-24|perunaa",
-      "ingredient": "perunaa",
-      "foodKey": "potato",
-      "preparationKey": "boiled-unspecified",
-      "fineliRecordId": "fineli-205-2026-10-24",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "lohikeitto-kuohukermalla"
-      ],
-      "possibleSoleBlockerRecipeCount": 1,
-      "possibleSoleBlockerRecipeIds": [
-        "lohikeitto-kuohukermalla"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 13.95,
-      "priorityScore": 15.95,
-      "currentCandidates": [
-        {
-          "id": "potato-boiled-preparation-analogue-gi-66",
-          "gi": 66,
-          "qualityTier": "STRONG",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "A record exists but the current food/preparation/source mapping is rejected."
-      ]
-    },
-    {
-      "sourceGapId": "B|tomato|cooked-in-sauce|fineli-398-2026-10-24|tomaattimurskaa",
+      "sourceGapId": "B|tomato|cooked-in-sauce|fineli-398-2026-10-24",
       "ingredient": "tomaattimurskaa",
       "foodKey": "tomato",
       "preparationKey": "cooked-in-sauce",
@@ -14005,6 +14304,14 @@
         "munakoiso-jauhelihavuoka-vhh",
         "taytetyt-paprikat-vhh"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "chili-con-carne-kukkakaaliriisi",
+        "munakoiso-jauhelihavuoka-vhh",
+        "taytetyt-paprikat-vhh"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 3,
       "possibleSoleBlockerRecipeCount": 3,
       "possibleSoleBlockerRecipeIds": [
         "chili-con-carne-kukkakaaliriisi",
@@ -14043,7 +14350,7 @@
       ]
     },
     {
-      "sourceGapId": "C|fruit-category-mean|category-mean|afcd-F005299-release-3|kuorittua mangoa",
+      "sourceGapId": "C|fruit-category-mean|category-mean|afcd-F005299-release-3",
       "ingredient": "kuorittua mangoa",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -14052,6 +14359,12 @@
       "blockedRecipeIds": [
         "karibia-mango-limejogurtti"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "karibia-mango-limejogurtti"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "karibia-mango-limejogurtti"
@@ -14072,7 +14385,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|fineli-786-2026-10-24|naudan maksaa",
+      "sourceGapId": "A|?|?|fineli-786-2026-10-24",
       "ingredient": "naudan maksaa",
       "foodKey": null,
       "preparationKey": null,
@@ -14082,6 +14395,13 @@
         "maksalaatikko-kukkakaalilla",
         "paistettu-maksa-pekonilla"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "maksalaatikko-kukkakaalilla",
+        "paistettu-maksa-pekonilla"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "paistettu-maksa-pekonilla"
@@ -14094,7 +14414,7 @@
       ]
     },
     {
-      "sourceGapId": "B|vegetable|vegetable-category|fineli-303-release-20|lanttua",
+      "sourceGapId": "B|vegetable|vegetable-category|fineli-303-release-20",
       "ingredient": "lanttua",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -14103,6 +14423,12 @@
       "blockedRecipeIds": [
         "lanttulaatikko-kermainen"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "lanttulaatikko-kermainen"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "lanttulaatikko-kermainen"
@@ -14123,7 +14449,7 @@
       ]
     },
     {
-      "sourceGapId": "B|soup|soup-category|fineli-29-release-20|lihalientä",
+      "sourceGapId": "B|soup|soup-category|fineli-29-release-20",
       "ingredient": "lihalientä",
       "foodKey": "soup",
       "preparationKey": "soup-category",
@@ -14134,6 +14460,14 @@
         "paprikainen-vhh-gulassi",
         "ropa-vieja"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "nakkikeitto-kukkakaalilla",
+        "paprikainen-vhh-gulassi",
+        "ropa-vieja"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 3,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 10.75,
@@ -14152,7 +14486,7 @@
       ]
     },
     {
-      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-33038-release-20|persimon",
+      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-33038-release-20",
       "ingredient": "persimon",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -14161,6 +14495,12 @@
       "blockedRecipeIds": [
         "japanilainen-hojicha-jogurtti-persimonilla"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "japanilainen-hojicha-jogurtti-persimonilla"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 12,
@@ -14179,7 +14519,7 @@
       ]
     },
     {
-      "sourceGapId": "B|asian-indian-category-mean|category-mean|afcd-f003986-2026-10-24|kikhernejauhoja",
+      "sourceGapId": "B|asian-indian-category-mean|category-mean|afcd-f003986-2026-10-24",
       "ingredient": "kikhernejauhoja",
       "foodKey": "asian-indian-category-mean",
       "preparationKey": "category-mean",
@@ -14188,6 +14528,12 @@
       "blockedRecipeIds": [
         "vada-pav"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "vada-pav"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "vada-pav"
@@ -14208,7 +14554,7 @@
       ]
     },
     {
-      "sourceGapId": "B|tomato|whole-raw|fineli-398-2026-10-24|tomaattimurskaa",
+      "sourceGapId": "B|tomato|whole-raw|fineli-398-2026-10-24",
       "ingredient": "tomaattimurskaa",
       "foodKey": "tomato",
       "preparationKey": "whole-raw",
@@ -14218,6 +14564,13 @@
         "butter-chicken",
         "chole-bhature"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "butter-chicken",
+        "chole-bhature"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 2,
       "possibleSoleBlockerRecipeIds": [
         "butter-chicken",
@@ -14239,7 +14592,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|fineli-7607-release-20|lenkkimakkaraa",
+      "sourceGapId": "A|?|?|fineli-7607-release-20",
       "ingredient": "lenkkimakkaraa",
       "foodKey": null,
       "preparationKey": null,
@@ -14248,6 +14601,12 @@
       "blockedRecipeIds": [
         "uunimakkara-sipulipedilla"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "uunimakkara-sipulipedilla"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "uunimakkara-sipulipedilla"
@@ -14260,7 +14619,61 @@
       ]
     },
     {
-      "sourceGapId": "C|potatoes-category-mean|category-mean|fineli-30223-release-20|bataatti",
+      "sourceGapId": "B|tomato|cooked-in-sauce|fineli-352-2026-10-24",
+      "ingredient": "kypsiä tomaatteja",
+      "foodKey": "tomato",
+      "preparationKey": "cooked-in-sauce",
+      "fineliRecordId": "fineli-352-2026-10-24",
+      "affectedRecipeCount": 2,
+      "blockedRecipeIds": [
+        "lahi-ita-kikherne-shakshuka",
+        "ratatouille"
+      ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "lahi-ita-kikherne-shakshuka",
+        "ratatouille"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
+      "possibleSoleBlockerRecipeCount": 2,
+      "possibleSoleBlockerRecipeIds": [
+        "lahi-ita-kikherne-shakshuka",
+        "ratatouille"
+      ],
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 6.563,
+      "priorityScore": 11.219,
+      "currentCandidates": [
+        {
+          "id": "whole-tomato-raw-gi-22",
+          "gi": 22,
+          "preparation": "Whole, raw tomato",
+          "qualityTier": "STRONG",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        },
+        {
+          "id": "tomato-juice-canned-gi-38",
+          "gi": 38,
+          "preparation": "Canned juice; Berri product, Australia",
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://glycemicindex.com/gi-search/"
+        },
+        {
+          "id": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "gi": 22,
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": false,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        }
+      ],
+      "currentQualityNotes": [
+        "A record exists but the current food/preparation/source mapping is rejected."
+      ]
+    },
+    {
+      "sourceGapId": "C|potatoes-category-mean|category-mean|fineli-30223-release-20",
       "ingredient": "bataatti",
       "foodKey": "potatoes-category-mean",
       "preparationKey": "category-mean",
@@ -14269,6 +14682,12 @@
       "blockedRecipeIds": [
         "korealainen-bataatti-riisikulho"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "korealainen-bataatti-riisikulho"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 10.939,
@@ -14287,7 +14706,45 @@
       ]
     },
     {
-      "sourceGapId": "B|tomato|crushed-cooked-in-sauce|fineli-352-2026-10-24|tomaattimurska",
+      "sourceGapId": "B|tomato|whole-raw|fineli-352-2026-10-24",
+      "ingredient": "kypsää tomaattia",
+      "foodKey": "tomato",
+      "preparationKey": "whole-raw",
+      "fineliRecordId": "fineli-352-2026-10-24",
+      "affectedRecipeCount": 2,
+      "blockedRecipeIds": [
+        "menemen",
+        "uunikanapasta-kesakurpitsa"
+      ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "menemen",
+        "uunikanapasta-kesakurpitsa"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
+      "possibleSoleBlockerRecipeCount": 2,
+      "possibleSoleBlockerRecipeIds": [
+        "menemen",
+        "uunikanapasta-kesakurpitsa"
+      ],
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 6.125,
+      "priorityScore": 10.738,
+      "currentCandidates": [
+        {
+          "id": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "gi": 22,
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": true,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        }
+      ],
+      "currentQualityNotes": [
+        "A record exists but the current food/preparation/source mapping is rejected."
+      ]
+    },
+    {
+      "sourceGapId": "B|tomato|crushed-cooked-in-sauce|fineli-352-2026-10-24",
       "ingredient": "tomaattimurska",
       "foodKey": "tomato",
       "preparationKey": "crushed-cooked-in-sauce",
@@ -14297,6 +14754,13 @@
         "munatacot-huevos-rancheros",
         "shakshuka"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "munatacot-huevos-rancheros",
+        "shakshuka"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 2,
       "possibleSoleBlockerRecipeIds": [
         "munatacot-huevos-rancheros",
@@ -14334,7 +14798,7 @@
       ]
     },
     {
-      "sourceGapId": "B|vegetable|vegetable-category|afcd-F004213-release-3|inkivääri",
+      "sourceGapId": "B|vegetable|vegetable-category|afcd-F004213-release-3",
       "ingredient": "inkivääri",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -14347,6 +14811,16 @@
         "thai-khao-tom-katkaravuilla",
         "thai-porsasjok"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "kiinalainen-riisipuuro-kananmunalla",
+        "malesialainen-congee-inkivaarilla",
+        "thai-jok-kanalla",
+        "thai-khao-tom-katkaravuilla",
+        "thai-porsasjok"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 5,
       "possibleSoleBlockerRecipeCount": 4,
       "possibleSoleBlockerRecipeIds": [
         "kiinalainen-riisipuuro-kananmunalla",
@@ -14370,7 +14844,7 @@
       ]
     },
     {
-      "sourceGapId": "B|tomato|whole-raw|fineli-398-release-20|tomaattimurskaa",
+      "sourceGapId": "B|tomato|whole-raw|fineli-398-release-20",
       "ingredient": "tomaattimurskaa",
       "foodKey": "tomato",
       "preparationKey": "whole-raw",
@@ -14380,6 +14854,13 @@
         "kanapyorykat-tomaattikastike",
         "ropa-vieja"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "kanapyorykat-tomaattikastike",
+        "ropa-vieja"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "kanapyorykat-tomaattikastike"
@@ -14400,7 +14881,7 @@
       ]
     },
     {
-      "sourceGapId": "C|bakery-products-category-mean|category-mean|afcd-F001929-2026-10-24|hienoa bulguria",
+      "sourceGapId": "C|bakery-products-category-mean|category-mean|afcd-F001929-2026-10-24",
       "ingredient": "hienoa bulguria",
       "foodKey": "bakery-products-category-mean",
       "preparationKey": "category-mean",
@@ -14409,6 +14890,12 @@
       "blockedRecipeIds": [
         "tabbouleh"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "tabbouleh"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 8.263,
@@ -14427,26 +14914,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|fineli-4-release-20|hunajaa",
-      "ingredient": "hunajaa",
-      "foodKey": null,
-      "preparationKey": null,
-      "fineliRecordId": "fineli-4-release-20",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "pekingin-ankka"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 8.08,
-      "priorityScore": 8.08,
-      "currentCandidates": [],
-      "currentQualityNotes": [
-        "No accepted GI match is currently assigned."
-      ]
-    },
-    {
-      "sourceGapId": "A|?|?|fineli-29-release-20|lihalientä",
+      "sourceGapId": "A|?|?|fineli-29-release-20",
       "ingredient": "lihalientä",
       "foodKey": null,
       "preparationKey": null,
@@ -14455,6 +14923,12 @@
       "blockedRecipeIds": [
         "siskonmakkarakeitto-juurekset"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "siskonmakkarakeitto-juurekset"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 7.5,
@@ -14465,7 +14939,46 @@
       ]
     },
     {
-      "sourceGapId": "C|vegetable|vegetable-category|fineli-303-release-20|lanttua",
+      "sourceGapId": "B|soup|soup-category|fineli-30315-release-20",
+      "ingredient": "laimennettua kanalientä",
+      "foodKey": "soup",
+      "preparationKey": "soup-category",
+      "fineliRecordId": "fineli-30315-release-20",
+      "affectedRecipeCount": 3,
+      "blockedRecipeIds": [
+        "pohjoisafrikkalainen-bissara",
+        "pohjoisafrikkalainen-lablabi",
+        "thai-khao-tom-katkaravuilla"
+      ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "pohjoisafrikkalainen-bissara",
+        "pohjoisafrikkalainen-lablabi",
+        "thai-khao-tom-katkaravuilla"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 3,
+      "possibleSoleBlockerRecipeCount": 1,
+      "possibleSoleBlockerRecipeIds": [
+        "pohjoisafrikkalainen-lablabi"
+      ],
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 4.483,
+      "priorityScore": 7.38,
+      "currentCandidates": [
+        {
+          "id": "soups-category-mean-gi-49",
+          "gi": 49,
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": true,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        }
+      ],
+      "currentQualityNotes": [
+        "A record exists but the current food/preparation/source mapping is rejected."
+      ]
+    },
+    {
+      "sourceGapId": "C|vegetable|vegetable-category|fineli-303-release-20",
       "ingredient": "lanttua",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -14475,6 +14988,13 @@
         "siskonmakkarakeitto-juurekset",
         "vhh-pyttipannu"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "siskonmakkarakeitto-juurekset",
+        "vhh-pyttipannu"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 6.615,
@@ -14493,7 +15013,7 @@
       ]
     },
     {
-      "sourceGapId": "C|soup|soup-category|fineli-29-2026-10-24|lihalientä",
+      "sourceGapId": "C|soup|soup-category|fineli-29-2026-10-24",
       "ingredient": "lihalientä",
       "foodKey": "soup",
       "preparationKey": "soup-category",
@@ -14502,6 +15022,12 @@
       "blockedRecipeIds": [
         "jauheliha-kaalikeitto-vhh"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "jauheliha-kaalikeitto-vhh"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "jauheliha-kaalikeitto-vhh"
@@ -14522,7 +15048,58 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|fineli-359-release-20|paksoi",
+      "sourceGapId": "C|peanut|nuts-category-mean|fineli-385-release-20",
+      "ingredient": "seesaminsiemen",
+      "foodKey": "peanut",
+      "preparationKey": "nuts-category-mean",
+      "fineliRecordId": "fineli-385-release-20",
+      "affectedRecipeCount": 10,
+      "blockedRecipeIds": [
+        "japanilainen-hojicha-jogurtti-persimonilla",
+        "japanilainen-kabocha-puuro",
+        "japanilainen-okayu-umeboshipluumulla",
+        "kiinalainen-hirssipuuro-taateleilla",
+        "kiinalainen-musta-seesamipuuro",
+        "korealainen-tofu-kimchi-aamiaiskulho",
+        "miso-lohi-paksoi",
+        "okonomiyaki-kaaliletut",
+        "thai-kookosriisi-mangolla",
+        "vietnamilainen-xoi-maapahkinalla"
+      ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "japanilainen-hojicha-jogurtti-persimonilla",
+        "japanilainen-kabocha-puuro",
+        "japanilainen-okayu-umeboshipluumulla",
+        "kiinalainen-hirssipuuro-taateleilla",
+        "kiinalainen-musta-seesamipuuro",
+        "korealainen-tofu-kimchi-aamiaiskulho",
+        "miso-lohi-paksoi",
+        "okonomiyaki-kaaliletut",
+        "thai-kookosriisi-mangolla",
+        "vietnamilainen-xoi-maapahkinalla"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 10,
+      "possibleSoleBlockerRecipeCount": 0,
+      "possibleSoleBlockerRecipeIds": [],
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 3.638,
+      "priorityScore": 6.913,
+      "currentCandidates": [
+        {
+          "id": "nuts-category-mean-gi-22",
+          "gi": 22,
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": true,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        }
+      ],
+      "currentQualityNotes": [
+        "Only supplementary / insufficiently documented candidates currently fit."
+      ]
+    },
+    {
+      "sourceGapId": "A|?|?|fineli-359-release-20",
       "ingredient": "paksoi",
       "foodKey": null,
       "preparationKey": null,
@@ -14531,6 +15108,12 @@
       "blockedRecipeIds": [
         "kiinalainen-katkarapu-wontonkeitto"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "kiinalainen-katkarapu-wontonkeitto"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 6.843,
@@ -14541,81 +15124,7 @@
       ]
     },
     {
-      "sourceGapId": "B|tomato|cooked-in-sauce|fineli-352-2026-10-24|kypsiä tomaatteja",
-      "ingredient": "kypsiä tomaatteja",
-      "foodKey": "tomato",
-      "preparationKey": "cooked-in-sauce",
-      "fineliRecordId": "fineli-352-2026-10-24",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "ratatouille"
-      ],
-      "possibleSoleBlockerRecipeCount": 1,
-      "possibleSoleBlockerRecipeIds": [
-        "ratatouille"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 4.375,
-      "priorityScore": 6.375,
-      "currentCandidates": [
-        {
-          "id": "whole-tomato-raw-gi-22",
-          "gi": 22,
-          "preparation": "Whole, raw tomato",
-          "qualityTier": "STRONG",
-          "preparationMatches": false,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        },
-        {
-          "id": "tomato-juice-canned-gi-38",
-          "gi": 38,
-          "preparation": "Canned juice; Berri product, Australia",
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": false,
-          "sourceUrl": "https://glycemicindex.com/gi-search/"
-        },
-        {
-          "id": "tomato-raw-cooked-sauce-analogue-gi-22",
-          "gi": 22,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": false,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "A record exists but the current food/preparation/source mapping is rejected."
-      ]
-    },
-    {
-      "sourceGapId": "B|tomato|whole-raw|fineli-352-2026-10-24|kypsää tomaattia",
-      "ingredient": "kypsää tomaattia",
-      "foodKey": "tomato",
-      "preparationKey": "whole-raw",
-      "fineliRecordId": "fineli-352-2026-10-24",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "menemen"
-      ],
-      "possibleSoleBlockerRecipeCount": 1,
-      "possibleSoleBlockerRecipeIds": [
-        "menemen"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 4.375,
-      "priorityScore": 6.375,
-      "currentCandidates": [
-        {
-          "id": "tomato-raw-cooked-sauce-analogue-gi-22",
-          "gi": 22,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "A record exists but the current food/preparation/source mapping is rejected."
-      ]
-    },
-    {
-      "sourceGapId": "C|fruit-category-mean|category-mean|afcd-F009081-2026-10-24|tamarinditahnaa",
+      "sourceGapId": "C|fruit-category-mean|category-mean|afcd-F009081-2026-10-24",
       "ingredient": "tamarinditahnaa",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -14624,6 +15133,12 @@
       "blockedRecipeIds": [
         "pad-thai-vhh-konjac"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "pad-thai-vhh-konjac"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "pad-thai-vhh-konjac"
@@ -14644,7 +15159,7 @@
       ]
     },
     {
-      "sourceGapId": "B|tomato|whole-raw|fineli-33207-release-20|tomaattisalsaa",
+      "sourceGapId": "B|tomato|whole-raw|fineli-33207-release-20",
       "ingredient": "tomaattisalsaa",
       "foodKey": "tomato",
       "preparationKey": "whole-raw",
@@ -14653,6 +15168,12 @@
       "blockedRecipeIds": [
         "kana-enchilada-kukkakaalivuoka"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "kana-enchilada-kukkakaalivuoka"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "kana-enchilada-kukkakaalivuoka"
@@ -14673,7 +15194,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|fineli-350-release-20|kurpitsa",
+      "sourceGapId": "A|?|?|fineli-350-release-20",
       "ingredient": "kurpitsa",
       "foodKey": null,
       "preparationKey": null,
@@ -14682,6 +15203,12 @@
       "blockedRecipeIds": [
         "japanilainen-kabocha-puuro"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "japanilainen-kabocha-puuro"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 6,
@@ -14692,7 +15219,7 @@
       ]
     },
     {
-      "sourceGapId": "B|dairy|dairy-category|fineli-631-2026-10-24|kuohukermaa",
+      "sourceGapId": "B|dairy|dairy-category|fineli-631-2026-10-24",
       "ingredient": "kuohukermaa",
       "foodKey": "dairy",
       "preparationKey": "dairy-category",
@@ -14702,6 +15229,13 @@
         "vhh-kaalikaarryleet",
         "vhh-kaalilaatikko"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "vhh-kaalikaarryleet",
+        "vhh-kaalilaatikko"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 2,
       "possibleSoleBlockerRecipeIds": [
         "vhh-kaalikaarryleet",
@@ -14723,7 +15257,7 @@
       ]
     },
     {
-      "sourceGapId": "C|soup|soup-category|fineli-30315-2026-10-24|kanalientä",
+      "sourceGapId": "C|soup|soup-category|fineli-30315-2026-10-24",
       "ingredient": "kanalientä",
       "foodKey": "soup",
       "preparationKey": "soup-category",
@@ -14733,6 +15267,13 @@
         "kanakeitto-pinaatti-sitruuna",
         "khao-soi-vhh-konjac"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "kanakeitto-pinaatti-sitruuna",
+        "khao-soi-vhh-konjac"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 2,
       "possibleSoleBlockerRecipeIds": [
         "kanakeitto-pinaatti-sitruuna",
@@ -14754,7 +15295,7 @@
       ]
     },
     {
-      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-442-2026-10-25|mustikoita",
+      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-442-2026-10-25",
       "ingredient": "mustikoita",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -14764,6 +15305,13 @@
         "marjainen-chiavanukas",
         "vhh-mustikkapiirakka"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "marjainen-chiavanukas",
+        "vhh-mustikkapiirakka"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "vhh-mustikkapiirakka"
@@ -14784,7 +15332,7 @@
       ]
     },
     {
-      "sourceGapId": "C|sugar-syrups-category-mean|category-mean|fineli-28937-release-20|taateli",
+      "sourceGapId": "C|sugar-syrups-category-mean|category-mean|fineli-28937-release-20",
       "ingredient": "taateli",
       "foodKey": "sugar-syrups-category-mean",
       "preparationKey": "category-mean",
@@ -14795,6 +15343,14 @@
         "lahi-ita-taatelipuuro-tahinilla",
         "pohjoisafrikkalainen-taatelipuuro-appelsiinilla"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "kiinalainen-hirssipuuro-taateleilla",
+        "lahi-ita-taatelipuuro-tahinilla",
+        "pohjoisafrikkalainen-taatelipuuro-appelsiinilla"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 3,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 4.579,
@@ -14813,37 +15369,7 @@
       ]
     },
     {
-      "sourceGapId": "B|soup|soup-category|fineli-30315-release-20|laimennettua kanalientä",
-      "ingredient": "laimennettua kanalientä",
-      "foodKey": "soup",
-      "preparationKey": "soup-category",
-      "fineliRecordId": "fineli-30315-release-20",
-      "affectedRecipeCount": 2,
-      "blockedRecipeIds": [
-        "pohjoisafrikkalainen-lablabi",
-        "thai-khao-tom-katkaravuilla"
-      ],
-      "possibleSoleBlockerRecipeCount": 1,
-      "possibleSoleBlockerRecipeIds": [
-        "pohjoisafrikkalainen-lablabi"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 2.989,
-      "priorityScore": 5.288,
-      "currentCandidates": [
-        {
-          "id": "soups-category-mean-gi-49",
-          "gi": 49,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "A record exists but the current food/preparation/source mapping is rejected."
-      ]
-    },
-    {
-      "sourceGapId": "A|?|?|fineli-382-release-20|kookoshiutale",
+      "sourceGapId": "A|?|?|fineli-382-release-20",
       "ingredient": "kookoshiutale",
       "foodKey": null,
       "preparationKey": null,
@@ -14852,6 +15378,12 @@
       "blockedRecipeIds": [
         "thai-papaijajogurtti"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "thai-papaijajogurtti"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 4.8,
@@ -14862,7 +15394,7 @@
       ]
     },
     {
-      "sourceGapId": "C|rice-category-mean|category-mean|fineli-11521-release-20|mustariisiviinietikkaa",
+      "sourceGapId": "C|rice-category-mean|category-mean|fineli-11521-release-20",
       "ingredient": "mustariisiviinietikkaa",
       "foodKey": "rice-category-mean",
       "preparationKey": "category-mean",
@@ -14871,6 +15403,12 @@
       "blockedRecipeIds": [
         "xiaolongbao"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "xiaolongbao"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 4.74,
@@ -14889,7 +15427,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|fineli-30315-release-20|kanalientä",
+      "sourceGapId": "A|?|?|fineli-30315-release-20",
       "ingredient": "kanalientä",
       "foodKey": null,
       "preparationKey": null,
@@ -14899,6 +15437,13 @@
         "paella-valenciana",
         "shoyu-kanakeitto-konjac"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "paella-valenciana",
+        "shoyu-kanakeitto-konjac"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "paella-valenciana"
@@ -14911,7 +15456,7 @@
       ]
     },
     {
-      "sourceGapId": "B|fruit-category-mean|category-mean|afcd-f009081-2026-10-24|tamarinditahnaa",
+      "sourceGapId": "B|fruit-category-mean|category-mean|afcd-f009081-2026-10-24",
       "ingredient": "tamarinditahnaa",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -14920,6 +15465,12 @@
       "blockedRecipeIds": [
         "pani-puri"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "pani-puri"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 4.305,
@@ -14938,7 +15489,7 @@
       ]
     },
     {
-      "sourceGapId": "C|sugar-syrups-category-mean|category-mean|fineli-31-2026-10-25|soijakastiketta",
+      "sourceGapId": "C|sugar-syrups-category-mean|category-mean|fineli-31-2026-10-25",
       "ingredient": "soijakastiketta",
       "foodKey": "sugar-syrups-category-mean",
       "preparationKey": "category-mean",
@@ -14948,6 +15499,13 @@
         "chow-mein",
         "dim-sum"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "chow-mein",
+        "dim-sum"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 3.848,
@@ -14966,7 +15524,7 @@
       ]
     },
     {
-      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-11056-2026-10-25|ananasta",
+      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-11056-2026-10-25",
       "ingredient": "ananasta",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -14975,6 +15533,12 @@
       "blockedRecipeIds": [
         "hapanimela-porsas"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "hapanimela-porsas"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 4.2,
@@ -14993,81 +15557,47 @@
       ]
     },
     {
-      "sourceGapId": "B|tomato|cooked-in-sauce|fineli-352-2026-10-24|tomaatti",
-      "ingredient": "tomaatti",
-      "foodKey": "tomato",
-      "preparationKey": "cooked-in-sauce",
-      "fineliRecordId": "fineli-352-2026-10-24",
-      "affectedRecipeCount": 1,
+      "sourceGapId": "C|vegetable|vegetable-category|fineli-34238-2026-10-25",
+      "ingredient": "korianteria",
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "fineliRecordId": "fineli-34238-2026-10-25",
+      "affectedRecipeCount": 3,
       "blockedRecipeIds": [
-        "lahi-ita-kikherne-shakshuka"
+        "hyderabadi-kanabiryani",
+        "intialainen-aloo-paratha",
+        "kai-jiew-vhh"
       ],
-      "possibleSoleBlockerRecipeCount": 1,
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "hyderabadi-kanabiryani",
+        "intialainen-aloo-paratha",
+        "kai-jiew-vhh"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 3,
+      "possibleSoleBlockerRecipeCount": 2,
       "possibleSoleBlockerRecipeIds": [
-        "lahi-ita-kikherne-shakshuka"
+        "hyderabadi-kanabiryani",
+        "kai-jiew-vhh"
       ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 2.188,
-      "priorityScore": 4.188,
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.042,
+      "priorityScore": 4.05,
       "currentCandidates": [
         {
-          "id": "whole-tomato-raw-gi-22",
-          "gi": 22,
-          "preparation": "Whole, raw tomato",
-          "qualityTier": "STRONG",
-          "preparationMatches": false,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        },
-        {
-          "id": "tomato-juice-canned-gi-38",
-          "gi": 38,
-          "preparation": "Canned juice; Berri product, Australia",
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": false,
-          "sourceUrl": "https://glycemicindex.com/gi-search/"
-        },
-        {
-          "id": "tomato-raw-cooked-sauce-analogue-gi-22",
-          "gi": 22,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": false,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "A record exists but the current food/preparation/source mapping is rejected."
-      ]
-    },
-    {
-      "sourceGapId": "B|tomato|whole-raw|fineli-352-2026-10-24|kirsikkatomaatteja",
-      "ingredient": "kirsikkatomaatteja",
-      "foodKey": "tomato",
-      "preparationKey": "whole-raw",
-      "fineliRecordId": "fineli-352-2026-10-24",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "uunikanapasta-kesakurpitsa"
-      ],
-      "possibleSoleBlockerRecipeCount": 1,
-      "possibleSoleBlockerRecipeIds": [
-        "uunikanapasta-kesakurpitsa"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.75,
-      "priorityScore": 3.75,
-      "currentCandidates": [
-        {
-          "id": "tomato-raw-cooked-sauce-analogue-gi-22",
-          "gi": 22,
+          "id": "vegetables-category-mean-gi-66",
+          "gi": 66,
           "qualityTier": "SUPPLEMENTARY",
           "preparationMatches": true,
           "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
         }
       ],
       "currentQualityNotes": [
-        "A record exists but the current food/preparation/source mapping is rejected."
+        "Only supplementary / insufficiently documented candidates currently fit."
       ]
     },
     {
-      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-338-2026-10-24|raparperia",
+      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-338-2026-10-24",
       "ingredient": "raparperia",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -15076,6 +15606,12 @@
       "blockedRecipeIds": [
         "vhh-raparperipiirakka"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "vhh-raparperipiirakka"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "vhh-raparperipiirakka"
@@ -15096,7 +15632,34 @@
       ]
     },
     {
-      "sourceGapId": "C|vegetable|vegetable-category|fineli-304-reference-2026-10-24|nauris",
+      "sourceGapId": "A|?|?|fineli-335-release-20",
+      "ingredient": "kevätsipulia",
+      "foodKey": null,
+      "preparationKey": null,
+      "fineliRecordId": "fineli-335-release-20",
+      "affectedRecipeCount": 2,
+      "blockedRecipeIds": [
+        "falafel",
+        "lanzhou-naudanliha-nuudelikeitto"
+      ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "falafel",
+        "lanzhou-naudanliha-nuudelikeitto"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
+      "possibleSoleBlockerRecipeCount": 0,
+      "possibleSoleBlockerRecipeIds": [],
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 3.3,
+      "priorityScore": 3.63,
+      "currentCandidates": [],
+      "currentQualityNotes": [
+        "No accepted GI match is currently assigned."
+      ]
+    },
+    {
+      "sourceGapId": "C|vegetable|vegetable-category|fineli-304-reference-2026-10-24",
       "ingredient": "nauris",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -15105,6 +15668,12 @@
       "blockedRecipeIds": [
         "massaman-curry-kanalla-vhh"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "massaman-curry-kanalla-vhh"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "massaman-curry-kanalla-vhh"
@@ -15125,49 +15694,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|afcd-F002991-release-3|täysrasvainen tölkkikookosmaito",
-      "ingredient": "täysrasvainen tölkkikookosmaito",
-      "foodKey": null,
-      "preparationKey": null,
-      "fineliRecordId": "afcd-F002991-release-3",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "karibia-kookosriisi-pavuilla"
-      ],
-      "possibleSoleBlockerRecipeCount": 1,
-      "possibleSoleBlockerRecipeIds": [
-        "karibia-kookosriisi-pavuilla"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.564,
-      "priorityScore": 3.564,
-      "currentCandidates": [],
-      "currentQualityNotes": [
-        "No accepted GI match is currently assigned."
-      ]
-    },
-    {
-      "sourceGapId": "A|?|?|afcd-F002991-release-3|täysrasvaista kookosmaitoa",
-      "ingredient": "täysrasvaista kookosmaitoa",
-      "foodKey": null,
-      "preparationKey": null,
-      "fineliRecordId": "afcd-F002991-release-3",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "indonesialainen-nasi-uduk-aamiaisella"
-      ],
-      "possibleSoleBlockerRecipeCount": 1,
-      "possibleSoleBlockerRecipeIds": [
-        "indonesialainen-nasi-uduk-aamiaisella"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.564,
-      "priorityScore": 3.564,
-      "currentCandidates": [],
-      "currentQualityNotes": [
-        "No accepted GI match is currently assigned."
-      ]
-    },
-    {
-      "sourceGapId": "B|vegetable|vegetable-category|afcd-F000155-release-3|vihreää parsaa",
+      "sourceGapId": "B|vegetable|vegetable-category|afcd-F000155-release-3",
       "ingredient": "vihreää parsaa",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -15176,6 +15703,12 @@
       "blockedRecipeIds": [
         "sitruuna-yrttikana-parsa"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "sitruuna-yrttikana-parsa"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "sitruuna-yrttikana-parsa"
@@ -15196,7 +15729,7 @@
       ]
     },
     {
-      "sourceGapId": "B|onion|cooked|fineli-335-2026-10-24|sipulia",
+      "sourceGapId": "B|onion|cooked|fineli-335-2026-10-24",
       "ingredient": "sipulia",
       "foodKey": "onion",
       "preparationKey": "cooked",
@@ -15205,6 +15738,12 @@
       "blockedRecipeIds": [
         "valimerellinen-tortilla-espanola-aamupalaksi"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "valimerellinen-tortilla-espanola-aamupalaksi"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "valimerellinen-tortilla-espanola-aamupalaksi"
@@ -15225,7 +15764,7 @@
       ]
     },
     {
-      "sourceGapId": "B|tomato|whole-raw|afcd-F009190-release-3|kirsikkatomaatteja",
+      "sourceGapId": "B|tomato|whole-raw|afcd-F009190-release-3",
       "ingredient": "kirsikkatomaatteja",
       "foodKey": "tomato",
       "preparationKey": "whole-raw",
@@ -15234,6 +15773,12 @@
       "blockedRecipeIds": [
         "kanasalaatti-pesto-mozzarella"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "kanasalaatti-pesto-mozzarella"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "kanasalaatti-pesto-mozzarella"
@@ -15254,7 +15799,7 @@
       ]
     },
     {
-      "sourceGapId": "C|soup|soup-category|afcd-F008936-2026-10-24|kanalientä",
+      "sourceGapId": "C|soup|soup-category|afcd-F008936-2026-10-24",
       "ingredient": "kanalientä",
       "foodKey": "soup",
       "preparationKey": "soup-category",
@@ -15264,6 +15809,13 @@
         "congee-riisipuuro",
         "marokkolainen-couscous"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "congee-riisipuuro",
+        "marokkolainen-couscous"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 3,
@@ -15282,7 +15834,7 @@
       ]
     },
     {
-      "sourceGapId": "B|vegetables|cooked|fineli-29022-2026-10-24|vihreitä papuja",
+      "sourceGapId": "B|vegetables|cooked|fineli-29022-2026-10-24",
       "ingredient": "vihreitä papuja",
       "foodKey": "vegetables",
       "preparationKey": "cooked",
@@ -15291,6 +15843,12 @@
       "blockedRecipeIds": [
         "som-tam-vhh-kurkkuna"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "som-tam-vhh-kurkkuna"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "som-tam-vhh-kurkkuna"
@@ -15311,7 +15869,44 @@
       ]
     },
     {
-      "sourceGapId": "C|dairy|unflavoured-dairy|fineli-630-2026-10-25|smetanaa",
+      "sourceGapId": "B|chocolate|dark-chocolate-as-sold|afcd-F009837-2026-10-24",
+      "ingredient": "sokeritonta tummaa suklaata",
+      "foodKey": "chocolate",
+      "preparationKey": "dark-chocolate-as-sold",
+      "fineliRecordId": "afcd-F009837-2026-10-24",
+      "affectedRecipeCount": 2,
+      "blockedRecipeIds": [
+        "keto-mutakakku",
+        "keto-suklaakeksit"
+      ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "keto-mutakakku",
+        "keto-suklaakeksit"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
+      "possibleSoleBlockerRecipeCount": 1,
+      "possibleSoleBlockerRecipeIds": [
+        "keto-suklaakeksit"
+      ],
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.015,
+      "priorityScore": 3.116,
+      "currentCandidates": [
+        {
+          "id": "dark-chocolate-international-tables-mean-gi-29",
+          "gi": 29,
+          "qualityTier": "STRONG",
+          "preparationMatches": true,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        }
+      ],
+      "currentQualityNotes": [
+        "A record exists but the current food/preparation/source mapping is rejected."
+      ]
+    },
+    {
+      "sourceGapId": "C|dairy|unflavoured-dairy|fineli-630-2026-10-25",
       "ingredient": "smetanaa",
       "foodKey": "dairy",
       "preparationKey": "unflavoured-dairy",
@@ -15320,6 +15915,12 @@
       "blockedRecipeIds": [
         "uunilohi-smetanakuorrutteella"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "uunilohi-smetanakuorrutteella"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "uunilohi-smetanakuorrutteella"
@@ -15340,7 +15941,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|afcd-F005968-release-3|sinisimpukoita",
+      "sourceGapId": "A|?|?|afcd-F005968-release-3",
       "ingredient": "sinisimpukoita",
       "foodKey": null,
       "preparationKey": null,
@@ -15349,6 +15950,12 @@
       "blockedRecipeIds": [
         "bouillabaisse"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "bouillabaisse"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 2.938,
@@ -15359,7 +15966,7 @@
       ]
     },
     {
-      "sourceGapId": "C|sugar-syrups-category-mean|category-mean|afcd-F008008-2026-10-25|hoisinkastiketta",
+      "sourceGapId": "C|sugar-syrups-category-mean|category-mean|afcd-F008008-2026-10-25",
       "ingredient": "hoisinkastiketta",
       "foodKey": "sugar-syrups-category-mean",
       "preparationKey": "category-mean",
@@ -15368,6 +15975,12 @@
       "blockedRecipeIds": [
         "goi-cuon"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "goi-cuon"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 2.79,
@@ -15386,7 +15999,7 @@
       ]
     },
     {
-      "sourceGapId": "C|soup|soup-category|fineli-29-2026-10-25|lihalientä",
+      "sourceGapId": "C|soup|soup-category|fineli-29-2026-10-25",
       "ingredient": "lihalientä",
       "foodKey": "soup",
       "preparationKey": "soup-category",
@@ -15395,6 +16008,12 @@
       "blockedRecipeIds": [
         "jauhelihapihvit-vhh-kermakastikkeella"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "jauhelihapihvit-vhh-kermakastikkeella"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "jauhelihapihvit-vhh-kermakastikkeella"
@@ -15415,7 +16034,7 @@
       ]
     },
     {
-      "sourceGapId": "C|legume|legume-category|fineli-31249-release-20|tempeh",
+      "sourceGapId": "C|legume|legume-category|fineli-31249-release-20",
       "ingredient": "tempeh",
       "foodKey": "legume",
       "preparationKey": "legume-category",
@@ -15424,6 +16043,12 @@
       "blockedRecipeIds": [
         "indonesialainen-tempeh-munakulho"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "indonesialainen-tempeh-munakulho"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 2.75,
@@ -15442,7 +16067,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|fineli-7600-release-20|nakkeja",
+      "sourceGapId": "A|?|?|fineli-7600-release-20",
       "ingredient": "nakkeja",
       "foodKey": null,
       "preparationKey": null,
@@ -15452,6 +16077,13 @@
         "nakkikastike-kukkakaalimuusi",
         "nakkikeitto-kukkakaalilla"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "nakkikastike-kukkakaalimuusi",
+        "nakkikeitto-kukkakaalilla"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 2.179,
@@ -15462,26 +16094,35 @@
       ]
     },
     {
-      "sourceGapId": "C|peanut|nuts-category-mean|fineli-385-release-20|seesaminsiemen",
-      "ingredient": "seesaminsiemen",
-      "foodKey": "peanut",
-      "preparationKey": "nuts-category-mean",
-      "fineliRecordId": "fineli-385-release-20",
-      "affectedRecipeCount": 4,
+      "sourceGapId": "C|vegetable|vegetable-category|afcd-F004213-2026-10-24",
+      "ingredient": "raastettua inkivääriä",
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "fineliRecordId": "afcd-F004213-2026-10-24",
+      "affectedRecipeCount": 3,
       "blockedRecipeIds": [
-        "japanilainen-hojicha-jogurtti-persimonilla",
-        "japanilainen-okayu-umeboshipluumulla",
-        "kiinalainen-hirssipuuro-taateleilla",
-        "thai-kookosriisi-mangolla"
+        "baozi",
+        "chettinad-kana",
+        "congee-riisipuuro"
       ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.8,
-      "priorityScore": 2.34,
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "baozi",
+        "chettinad-kana",
+        "congee-riisipuuro"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 3,
+      "possibleSoleBlockerRecipeCount": 1,
+      "possibleSoleBlockerRecipeIds": [
+        "baozi"
+      ],
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.324,
+      "priorityScore": 2.389,
       "currentCandidates": [
         {
-          "id": "nuts-category-mean-gi-22",
-          "gi": 22,
+          "id": "vegetables-category-mean-gi-66",
+          "gi": 66,
           "qualityTier": "SUPPLEMENTARY",
           "preparationMatches": true,
           "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
@@ -15492,36 +16133,7 @@
       ]
     },
     {
-      "sourceGapId": "B|chocolate|dark-chocolate-as-sold|afcd-F009837-2026-10-24|sokeritonta tummaa suklaata paloina",
-      "ingredient": "sokeritonta tummaa suklaata paloina",
-      "foodKey": "chocolate",
-      "preparationKey": "dark-chocolate-as-sold",
-      "fineliRecordId": "afcd-F009837-2026-10-24",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "keto-suklaakeksit"
-      ],
-      "possibleSoleBlockerRecipeCount": 1,
-      "possibleSoleBlockerRecipeIds": [
-        "keto-suklaakeksit"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.246,
-      "priorityScore": 2.246,
-      "currentCandidates": [
-        {
-          "id": "dark-chocolate-international-tables-mean-gi-29",
-          "gi": 29,
-          "qualityTier": "STRONG",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "A record exists but the current food/preparation/source mapping is rejected."
-      ]
-    },
-    {
-      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-440-2026-10-24|puolukoita",
+      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-440-2026-10-24",
       "ingredient": "puolukoita",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -15530,6 +16142,12 @@
       "blockedRecipeIds": [
         "maksalaatikko-kukkakaalilla"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "maksalaatikko-kukkakaalilla"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 2.225,
@@ -15548,7 +16166,7 @@
       ]
     },
     {
-      "sourceGapId": "C|vegetable|vegetable-category|afcd-F004210-2026-10-24|jauhettua inkivääriä",
+      "sourceGapId": "C|vegetable|vegetable-category|afcd-F004210-2026-10-24",
       "ingredient": "jauhettua inkivääriä",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -15557,6 +16175,12 @@
       "blockedRecipeIds": [
         "harira"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "harira"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "harira"
@@ -15577,7 +16201,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|afcd-F005441-release-3|majoneesia",
+      "sourceGapId": "A|?|?|afcd-F005441-release-3",
       "ingredient": "majoneesia",
       "foodKey": null,
       "preparationKey": null,
@@ -15586,6 +16210,12 @@
       "blockedRecipeIds": [
         "okonomiyaki-kaaliletut"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "okonomiyaki-kaaliletut"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 2.175,
@@ -15596,7 +16226,7 @@
       ]
     },
     {
-      "sourceGapId": "B|vegetable|vegetable-category|afcd-F001010-release-3|säilykepunajuurta",
+      "sourceGapId": "B|vegetable|vegetable-category|afcd-F001010-release-3",
       "ingredient": "säilykepunajuurta",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -15605,6 +16235,12 @@
       "blockedRecipeIds": [
         "lindstrominpihvit-kaalilla"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "lindstrominpihvit-kaalilla"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 2.175,
@@ -15623,7 +16259,7 @@
       ]
     },
     {
-      "sourceGapId": "C|fruit-category-mean|category-mean|afcd-F009081-2026-10-25|tamarinditahnaa",
+      "sourceGapId": "C|fruit-category-mean|category-mean|afcd-F009081-2026-10-25",
       "ingredient": "tamarinditahnaa",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -15632,6 +16268,12 @@
       "blockedRecipeIds": [
         "idli-sambar"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "idli-sambar"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 2.153,
@@ -15650,7 +16292,7 @@
       ]
     },
     {
-      "sourceGapId": "B|fruit-category-mean|category-mean|afcd-F009081-release-3|tamarinditahnaa",
+      "sourceGapId": "B|fruit-category-mean|category-mean|afcd-F009081-release-3",
       "ingredient": "tamarinditahnaa",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -15659,6 +16301,12 @@
       "blockedRecipeIds": [
         "kerala-kalacurry"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "kerala-kalacurry"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 2.153,
@@ -15677,7 +16325,7 @@
       ]
     },
     {
-      "sourceGapId": "C|peanut|nuts-category-mean|afcd-F002258-2026-10-24|kardemummaa",
+      "sourceGapId": "C|peanut|nuts-category-mean|afcd-F002258-2026-10-24",
       "ingredient": "kardemummaa",
       "foodKey": "peanut",
       "preparationKey": "nuts-category-mean",
@@ -15686,6 +16334,12 @@
       "blockedRecipeIds": [
         "vhh-runebergintortut"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "vhh-runebergintortut"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "vhh-runebergintortut"
@@ -15706,7 +16360,7 @@
       ]
     },
     {
-      "sourceGapId": "C|vegetable|vegetable-category|fineli-330-release-20|salaatinlehtiä",
+      "sourceGapId": "C|vegetable|vegetable-category|fineli-330-release-20",
       "ingredient": "salaatinlehtiä",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -15715,6 +16369,12 @@
       "blockedRecipeIds": [
         "yrttituorejuusto-kinkkurullat"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "yrttituorejuusto-kinkkurullat"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "yrttituorejuusto-kinkkurullat"
@@ -15735,36 +16395,7 @@
       ]
     },
     {
-      "sourceGapId": "C|vegetable|vegetable-category|afcd-F004213-2026-10-24|raastettua inkivääriä",
-      "ingredient": "raastettua inkivääriä",
-      "foodKey": "vegetable",
-      "preparationKey": "vegetable-category",
-      "fineliRecordId": "afcd-F004213-2026-10-24",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "baozi"
-      ],
-      "possibleSoleBlockerRecipeCount": 1,
-      "possibleSoleBlockerRecipeIds": [
-        "baozi"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.072,
-      "priorityScore": 2.072,
-      "currentCandidates": [
-        {
-          "id": "vegetables-category-mean-gi-66",
-          "gi": 66,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "C|vegetable|vegetable-category|afcd-F002220-2026-10-24|kapriksia",
+      "sourceGapId": "C|vegetable|vegetable-category|afcd-F002220-2026-10-24",
       "ingredient": "kapriksia",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -15773,6 +16404,12 @@
       "blockedRecipeIds": [
         "caponata"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "caponata"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "caponata"
@@ -15793,7 +16430,7 @@
       ]
     },
     {
-      "sourceGapId": "B|vegetable|vegetable-category|afcd-F006321-release-3|persilja",
+      "sourceGapId": "B|vegetable|vegetable-category|afcd-F006321-release-3",
       "ingredient": "persilja",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -15802,6 +16439,12 @@
       "blockedRecipeIds": [
         "lahi-ita-kikhernejauho-yrttilettu"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "lahi-ita-kikhernejauho-yrttilettu"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "lahi-ita-kikhernejauho-yrttilettu"
@@ -15822,36 +16465,7 @@
       ]
     },
     {
-      "sourceGapId": "C|vegetable|vegetable-category|fineli-34238-2026-10-25|tuoretta korianteria",
-      "ingredient": "tuoretta korianteria",
-      "foodKey": "vegetable",
-      "preparationKey": "vegetable-category",
-      "fineliRecordId": "fineli-34238-2026-10-25",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "hyderabadi-kanabiryani"
-      ],
-      "possibleSoleBlockerRecipeCount": 1,
-      "possibleSoleBlockerRecipeIds": [
-        "hyderabadi-kanabiryani"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.025,
-      "priorityScore": 2.025,
-      "currentCandidates": [
-        {
-          "id": "vegetables-category-mean-gi-66",
-          "gi": 66,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "C|vegetable|vegetable-category|afcd-F000396-2026-10-24|tuoretta basilikaa",
+      "sourceGapId": "C|vegetable|vegetable-category|afcd-F000396-2026-10-24",
       "ingredient": "tuoretta basilikaa",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -15860,6 +16474,12 @@
       "blockedRecipeIds": [
         "pasta-alla-norma"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "pasta-alla-norma"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 1,
       "possibleSoleBlockerRecipeIds": [
         "pasta-alla-norma"
@@ -15880,36 +16500,7 @@
       ]
     },
     {
-      "sourceGapId": "C|vegetable|vegetable-category|fineli-34238-2026-10-25|korianteria",
-      "ingredient": "korianteria",
-      "foodKey": "vegetable",
-      "preparationKey": "vegetable-category",
-      "fineliRecordId": "fineli-34238-2026-10-25",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "kai-jiew-vhh"
-      ],
-      "possibleSoleBlockerRecipeCount": 1,
-      "possibleSoleBlockerRecipeIds": [
-        "kai-jiew-vhh"
-      ],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.006,
-      "priorityScore": 2.006,
-      "currentCandidates": [
-        {
-          "id": "vegetables-category-mean-gi-66",
-          "gi": 66,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-11062-2026-10-24|päärynää",
+      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-11062-2026-10-24",
       "ingredient": "päärynää",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -15918,6 +16509,12 @@
       "blockedRecipeIds": [
         "bulgogi"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "bulgogi"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 2,
@@ -15936,26 +16533,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|fineli-335-release-20|valkosipulinkynttä",
-      "ingredient": "valkosipulinkynttä",
-      "foodKey": null,
-      "preparationKey": null,
-      "fineliRecordId": "fineli-335-release-20",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "falafel"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.98,
-      "priorityScore": 1.98,
-      "currentCandidates": [],
-      "currentQualityNotes": [
-        "No accepted GI match is currently assigned."
-      ]
-    },
-    {
-      "sourceGapId": "A|?|?|fineli-30207-release-20|soijamaito",
+      "sourceGapId": "A|?|?|fineli-30207-release-20",
       "ingredient": "soijamaito",
       "foodKey": null,
       "preparationKey": null,
@@ -15964,6 +16542,12 @@
       "blockedRecipeIds": [
         "kiinalainen-musta-seesamipuuro"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "kiinalainen-musta-seesamipuuro"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.96,
@@ -15974,7 +16558,7 @@
       ]
     },
     {
-      "sourceGapId": "C|soup|soup-category|fineli-29010-2026-10-25|kalaliemikuutiota",
+      "sourceGapId": "C|soup|soup-category|fineli-29010-2026-10-25",
       "ingredient": "kalaliemikuutiota",
       "foodKey": "soup",
       "preparationKey": "soup-category",
@@ -15983,6 +16567,12 @@
       "blockedRecipeIds": [
         "tom-yum-goong-vhh"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "tom-yum-goong-vhh"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.927,
@@ -16001,7 +16591,7 @@
       ]
     },
     {
-      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-447-2026-10-24|mansikoita",
+      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-447-2026-10-24",
       "ingredient": "mansikoita",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -16010,6 +16600,12 @@
       "blockedRecipeIds": [
         "rahka-marjakerroskulho"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "rahka-marjakerroskulho"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.925,
@@ -16028,7 +16624,7 @@
       ]
     },
     {
-      "sourceGapId": "B|vegetables|category-mean|afcd-F009021-2026-10-24|lanttua",
+      "sourceGapId": "B|vegetables|category-mean|afcd-F009021-2026-10-24",
       "ingredient": "lanttua",
       "foodKey": "vegetables",
       "preparationKey": "category-mean",
@@ -16037,6 +16633,12 @@
       "blockedRecipeIds": [
         "liha-juureskeitto-perunaton"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "liha-juureskeitto-perunaton"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.85,
@@ -16055,7 +16657,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|fineli-300-release-20|porkkana",
+      "sourceGapId": "A|?|?|fineli-300-release-20",
       "ingredient": "porkkana",
       "foodKey": null,
       "preparationKey": null,
@@ -16064,6 +16666,12 @@
       "blockedRecipeIds": [
         "intialainen-mannasuurimoupma"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "intialainen-mannasuurimoupma"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.807,
@@ -16074,26 +16682,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|afcd-F002991-release-3|kookosmaitoa",
-      "ingredient": "kookosmaitoa",
-      "foodKey": null,
-      "preparationKey": null,
-      "fineliRecordId": "afcd-F002991-release-3",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "kerala-kalacurry"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.564,
-      "priorityScore": 1.564,
-      "currentCandidates": [],
-      "currentQualityNotes": [
-        "No accepted GI match is currently assigned."
-      ]
-    },
-    {
-      "sourceGapId": "A|?|?|fineli-27-release-20|maissitärkkelystä",
+      "sourceGapId": "A|?|?|fineli-27-release-20",
       "ingredient": "maissitärkkelystä",
       "foodKey": null,
       "preparationKey": null,
@@ -16102,6 +16691,12 @@
       "blockedRecipeIds": [
         "kung-pao-kana"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "kung-pao-kana"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.505,
@@ -16112,34 +16707,7 @@
       ]
     },
     {
-      "sourceGapId": "B|soup|soup-category|fineli-30315-release-20|kasvis- tai kanalientä",
-      "ingredient": "kasvis- tai kanalientä",
-      "foodKey": "soup",
-      "preparationKey": "soup-category",
-      "fineliRecordId": "fineli-30315-release-20",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "pohjoisafrikkalainen-bissara"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.495,
-      "priorityScore": 1.495,
-      "currentCandidates": [
-        {
-          "id": "soups-category-mean-gi-49",
-          "gi": 49,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "A record exists but the current food/preparation/source mapping is rejected."
-      ]
-    },
-    {
-      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-448-2026-10-25|vadelmia",
+      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-448-2026-10-25",
       "ingredient": "vadelmia",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -16148,6 +16716,12 @@
       "blockedRecipeIds": [
         "marjainen-chiavanukas"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "marjainen-chiavanukas"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.429,
@@ -16166,26 +16740,7 @@
       ]
     },
     {
-      "sourceGapId": "A|?|?|fineli-335-release-20|kevätsipulia",
-      "ingredient": "kevätsipulia",
-      "foodKey": null,
-      "preparationKey": null,
-      "fineliRecordId": "fineli-335-release-20",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "lanzhou-naudanliha-nuudelikeitto"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.32,
-      "priorityScore": 1.32,
-      "currentCandidates": [],
-      "currentQualityNotes": [
-        "No accepted GI match is currently assigned."
-      ]
-    },
-    {
-      "sourceGapId": "A|?|?|fineli-34845-2026-10-25|kookosjuomaa",
+      "sourceGapId": "A|?|?|fineli-34845-2026-10-25",
       "ingredient": "kookosjuomaa",
       "foodKey": null,
       "preparationKey": null,
@@ -16194,6 +16749,12 @@
       "blockedRecipeIds": [
         "kaakao-kookos-chia"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "kaakao-kookos-chia"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.318,
@@ -16204,7 +16765,7 @@
       ]
     },
     {
-      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-442-2026-10-24|mustikoita",
+      "sourceGapId": "C|fruit-category-mean|category-mean|fineli-442-2026-10-24",
       "ingredient": "mustikoita",
       "foodKey": "fruit-category-mean",
       "preparationKey": "category-mean",
@@ -16213,6 +16774,12 @@
       "blockedRecipeIds": [
         "rahka-marjakerroskulho"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "rahka-marjakerroskulho"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.275,
@@ -16231,7 +16798,7 @@
       ]
     },
     {
-      "sourceGapId": "B|tomato|whole-raw|fineli-352-release-20|tomaatti",
+      "sourceGapId": "B|tomato|whole-raw|fineli-352-release-20",
       "ingredient": "tomaatti",
       "foodKey": "tomato",
       "preparationKey": "whole-raw",
@@ -16240,6 +16807,12 @@
       "blockedRecipeIds": [
         "paprikainen-vhh-gulassi"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "paprikainen-vhh-gulassi"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 1.035,
@@ -16258,7 +16831,7 @@
       ]
     },
     {
-      "sourceGapId": "B|vegetable|vegetable-category|fineli-11057-release-20|avokado",
+      "sourceGapId": "B|vegetable|vegetable-category|fineli-11057-release-20",
       "ingredient": "avokado",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -16268,6 +16841,13 @@
         "meksikolainen-aamiais-tacot-mustapavuilla",
         "meksikolainen-paputostada-aamupalaksi"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "meksikolainen-aamiais-tacot-mustapavuilla",
+        "meksikolainen-paputostada-aamupalaksi"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.924,
@@ -16286,35 +16866,7 @@
       ]
     },
     {
-      "sourceGapId": "C|peanut|nuts-category-mean|fineli-385-release-20|seesami",
-      "ingredient": "seesami",
-      "foodKey": "peanut",
-      "preparationKey": "nuts-category-mean",
-      "fineliRecordId": "fineli-385-release-20",
-      "affectedRecipeCount": 2,
-      "blockedRecipeIds": [
-        "korealainen-tofu-kimchi-aamiaiskulho",
-        "vietnamilainen-xoi-maapahkinalla"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.9,
-      "priorityScore": 0.99,
-      "currentCandidates": [
-        {
-          "id": "nuts-category-mean-gi-22",
-          "gi": 22,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "C|vegetable|vegetable-category|fineli-30914-release-20|fenkolia",
+      "sourceGapId": "C|vegetable|vegetable-category|fineli-30914-release-20",
       "ingredient": "fenkolia",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -16323,6 +16875,12 @@
       "blockedRecipeIds": [
         "bouillabaisse"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "bouillabaisse"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.9,
@@ -16341,34 +16899,7 @@
       ]
     },
     {
-      "sourceGapId": "B|chocolate|dark-chocolate-as-sold|afcd-F009837-2026-10-24|sokeritonta tummaa suklaata",
-      "ingredient": "sokeritonta tummaa suklaata",
-      "foodKey": "chocolate",
-      "preparationKey": "dark-chocolate-as-sold",
-      "fineliRecordId": "afcd-F009837-2026-10-24",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "keto-mutakakku"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.769,
-      "priorityScore": 0.769,
-      "currentCandidates": [
-        {
-          "id": "dark-chocolate-international-tables-mean-gi-29",
-          "gi": 29,
-          "qualityTier": "STRONG",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "A record exists but the current food/preparation/source mapping is rejected."
-      ]
-    },
-    {
-      "sourceGapId": "C|bakery-products-category-mean|category-mean|fineli-20-2026-10-24|kaakaojauhetta",
+      "sourceGapId": "C|bakery-products-category-mean|category-mean|fineli-20-2026-10-24",
       "ingredient": "kaakaojauhetta",
       "foodKey": "bakery-products-category-mean",
       "preparationKey": "category-mean",
@@ -16379,10 +16910,18 @@
         "meheva-suklaakakku",
         "vhh-mokkapalat"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "keto-mutakakku",
+        "meheva-suklaakakku",
+        "vhh-mokkapalat"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 3,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.559,
-      "priorityScore": 0.671,
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.605,
+      "priorityScore": 0.726,
       "currentCandidates": [
         {
           "id": "bakery-products-category-mean-gi-58",
@@ -16397,7 +16936,7 @@
       ]
     },
     {
-      "sourceGapId": "B|sugar-syrups-category-mean|category-mean|fineli-28-release-20|sinappia tarjoiluun",
+      "sourceGapId": "B|sugar-syrups-category-mean|category-mean|fineli-28-release-20",
       "ingredient": "sinappia tarjoiluun",
       "foodKey": "sugar-syrups-category-mean",
       "preparationKey": "category-mean",
@@ -16406,6 +16945,12 @@
       "blockedRecipeIds": [
         "hernekeitto-savupotkalla"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "hernekeitto-savupotkalla"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.564,
@@ -16424,7 +16969,7 @@
       ]
     },
     {
-      "sourceGapId": "C|soup|soup-category|fineli-30315-2026-10-25|kanalientä",
+      "sourceGapId": "C|soup|soup-category|fineli-30315-2026-10-25",
       "ingredient": "kanalientä",
       "foodKey": "soup",
       "preparationKey": "soup-category",
@@ -16433,6 +16978,12 @@
       "blockedRecipeIds": [
         "tom-kha-gai-vhh"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "tom-kha-gai-vhh"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.534,
@@ -16451,61 +17002,7 @@
       ]
     },
     {
-      "sourceGapId": "C|peanut|nuts-category-mean|fineli-385-release-20|musta seesami",
-      "ingredient": "musta seesami",
-      "foodKey": "peanut",
-      "preparationKey": "nuts-category-mean",
-      "fineliRecordId": "fineli-385-release-20",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "japanilainen-kabocha-puuro"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.45,
-      "priorityScore": 0.45,
-      "currentCandidates": [
-        {
-          "id": "nuts-category-mean-gi-22",
-          "gi": 22,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "C|peanut|nuts-category-mean|fineli-385-release-20|mustat seesaminsiemenet",
-      "ingredient": "mustat seesaminsiemenet",
-      "foodKey": "peanut",
-      "preparationKey": "nuts-category-mean",
-      "fineliRecordId": "fineli-385-release-20",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "kiinalainen-musta-seesamipuuro"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.45,
-      "priorityScore": 0.45,
-      "currentCandidates": [
-        {
-          "id": "nuts-category-mean-gi-22",
-          "gi": 22,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "A|?|?|fineli-31-release-20|soijakastiketta",
+      "sourceGapId": "A|?|?|fineli-31-release-20",
       "ingredient": "soijakastiketta",
       "foodKey": null,
       "preparationKey": null,
@@ -16514,6 +17011,12 @@
       "blockedRecipeIds": [
         "jiaozi"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "jiaozi"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.428,
@@ -16524,7 +17027,7 @@
       ]
     },
     {
-      "sourceGapId": "C|peanut|nuts-category-mean|fineli-30968-2026-10-24|paahdettuja pinjansiemeniä",
+      "sourceGapId": "C|peanut|nuts-category-mean|fineli-30968-2026-10-24",
       "ingredient": "paahdettuja pinjansiemeniä",
       "foodKey": "peanut",
       "preparationKey": "nuts-category-mean",
@@ -16533,6 +17036,12 @@
       "blockedRecipeIds": [
         "raejuusto-pesto-kasviskulho"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "raejuusto-pesto-kasviskulho"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.377,
@@ -16551,20 +17060,27 @@
       ]
     },
     {
-      "sourceGapId": "C|vegetable|vegetable-category|afcd-F004213-2026-10-24|tuoretta inkivääriä",
-      "ingredient": "tuoretta inkivääriä",
+      "sourceGapId": "C|vegetable|vegetable-category|afcd-F006321-2026-10-24",
+      "ingredient": "lehtipersiljaa",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
-      "fineliRecordId": "afcd-F004213-2026-10-24",
+      "fineliRecordId": "afcd-F006321-2026-10-24",
       "affectedRecipeCount": 2,
       "blockedRecipeIds": [
-        "chettinad-kana",
-        "congee-riisipuuro"
+        "liha-juureskeitto-perunaton",
+        "tabbouleh"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "liha-juureskeitto-perunaton",
+        "tabbouleh"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.252,
-      "priorityScore": 0.277,
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.187,
+      "priorityScore": 0.206,
       "currentCandidates": [
         {
           "id": "vegetables-category-mean-gi-66",
@@ -16579,7 +17095,7 @@
       ]
     },
     {
-      "sourceGapId": "C|peanut|nuts-category-mean|fineli-375-2026-10-24|hasselpähkinöitä",
+      "sourceGapId": "C|peanut|nuts-category-mean|fineli-375-2026-10-24",
       "ingredient": "hasselpähkinöitä",
       "foodKey": "peanut",
       "preparationKey": "nuts-category-mean",
@@ -16588,6 +17104,12 @@
       "blockedRecipeIds": [
         "rahka-marjakerroskulho"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "rahka-marjakerroskulho"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.17,
@@ -16606,34 +17128,7 @@
       ]
     },
     {
-      "sourceGapId": "C|vegetable|vegetable-category|afcd-F006321-2026-10-24|lehtipersiljaa",
-      "ingredient": "lehtipersiljaa",
-      "foodKey": "vegetable",
-      "preparationKey": "vegetable-category",
-      "fineliRecordId": "afcd-F006321-2026-10-24",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "tabbouleh"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.165,
-      "priorityScore": 0.165,
-      "currentCandidates": [
-        {
-          "id": "vegetables-category-mean-gi-66",
-          "gi": 66,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "C|vegetable|vegetable-category|afcd-F005700-2026-10-24|tuoretta minttua",
+      "sourceGapId": "C|vegetable|vegetable-category|afcd-F005700-2026-10-24",
       "ingredient": "tuoretta minttua",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -16642,6 +17137,12 @@
       "blockedRecipeIds": [
         "tabbouleh"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "tabbouleh"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.165,
@@ -16660,7 +17161,7 @@
       ]
     },
     {
-      "sourceGapId": "C|peanut|nuts-category-mean|fineli-11087-release-20|tahini",
+      "sourceGapId": "C|peanut|nuts-category-mean|fineli-11087-release-20",
       "ingredient": "tahini",
       "foodKey": "peanut",
       "preparationKey": "nuts-category-mean",
@@ -16670,6 +17171,13 @@
         "lahi-ita-taatelipuuro-tahinilla",
         "valimerellinen-tahinipuuro"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "lahi-ita-taatelipuuro-tahinilla",
+        "valimerellinen-tahinipuuro"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.135,
@@ -16688,20 +17196,29 @@
       ]
     },
     {
-      "sourceGapId": "C|vegetable|vegetable-category|fineli-333-release-20|tuoretta persiljaa",
+      "sourceGapId": "C|vegetable|vegetable-category|fineli-333-release-20",
       "ingredient": "tuoretta persiljaa",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
       "fineliRecordId": "fineli-333-release-20",
-      "affectedRecipeCount": 2,
+      "affectedRecipeCount": 3,
       "blockedRecipeIds": [
+        "siskonmakkarakeitto-juurekset",
         "tunisialainen-brik",
         "tunisialainen-ojja"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "siskonmakkarakeitto-juurekset",
+        "tunisialainen-brik",
+        "tunisialainen-ojja"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 3,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.083,
-      "priorityScore": 0.091,
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.094,
+      "priorityScore": 0.112,
       "currentCandidates": [
         {
           "id": "vegetables-category-mean-gi-66",
@@ -16716,7 +17233,42 @@
       ]
     },
     {
-      "sourceGapId": "B|vegetable|vegetable-category|fineli-308-release-20|retikkaa",
+      "sourceGapId": "C|peanut|nuts-category-mean|afcd-F003190-2026-10-24",
+      "ingredient": "jauhettua korianteria",
+      "foodKey": "peanut",
+      "preparationKey": "nuts-category-mean",
+      "fineliRecordId": "afcd-F003190-2026-10-24",
+      "affectedRecipeCount": 2,
+      "blockedRecipeIds": [
+        "chettinad-kana",
+        "marokkolainen-couscous"
+      ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "chettinad-kana",
+        "marokkolainen-couscous"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 2,
+      "possibleSoleBlockerRecipeCount": 0,
+      "possibleSoleBlockerRecipeIds": [],
+      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.084,
+      "priorityScore": 0.092,
+      "currentCandidates": [
+        {
+          "id": "nuts-category-mean-gi-22",
+          "gi": 22,
+          "qualityTier": "SUPPLEMENTARY",
+          "preparationMatches": true,
+          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+        }
+      ],
+      "currentQualityNotes": [
+        "Only supplementary / insufficiently documented candidates currently fit."
+      ]
+    },
+    {
+      "sourceGapId": "B|vegetable|vegetable-category|fineli-308-release-20",
       "ingredient": "retikkaa",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -16725,6 +17277,12 @@
       "blockedRecipeIds": [
         "lanzhou-naudanliha-nuudelikeitto"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "lanzhou-naudanliha-nuudelikeitto"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.077,
@@ -16743,7 +17301,7 @@
       ]
     },
     {
-      "sourceGapId": "C|vegetable|vegetable-category|fineli-34159-2026-10-24|rucolaa",
+      "sourceGapId": "C|vegetable|vegetable-category|fineli-34159-2026-10-24",
       "ingredient": "rucolaa",
       "foodKey": "vegetable",
       "preparationKey": "vegetable-category",
@@ -16752,6 +17310,12 @@
       "blockedRecipeIds": [
         "raejuusto-pesto-kasviskulho"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "raejuusto-pesto-kasviskulho"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.05,
@@ -16770,116 +17334,7 @@
       ]
     },
     {
-      "sourceGapId": "C|bakery-products-category-mean|category-mean|fineli-20-2026-10-24|kaakaojauhetta kuorrutteeseen",
-      "ingredient": "kaakaojauhetta kuorrutteeseen",
-      "foodKey": "bakery-products-category-mean",
-      "preparationKey": "category-mean",
-      "fineliRecordId": "fineli-20-2026-10-24",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "vhh-mokkapalat"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.046,
-      "priorityScore": 0.046,
-      "currentCandidates": [
-        {
-          "id": "bakery-products-category-mean-gi-58",
-          "gi": 58,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "C|peanut|nuts-category-mean|fineli-385-release-20|seesaminsiemeniä",
-      "ingredient": "seesaminsiemeniä",
-      "foodKey": "peanut",
-      "preparationKey": "nuts-category-mean",
-      "fineliRecordId": "fineli-385-release-20",
-      "affectedRecipeCount": 2,
-      "blockedRecipeIds": [
-        "miso-lohi-paksoi",
-        "okonomiyaki-kaaliletut"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.038,
-      "priorityScore": 0.042,
-      "currentCandidates": [
-        {
-          "id": "nuts-category-mean-gi-22",
-          "gi": 22,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "C|peanut|nuts-category-mean|afcd-F003190-2026-10-24|jauhettua korianteria",
-      "ingredient": "jauhettua korianteria",
-      "foodKey": "peanut",
-      "preparationKey": "nuts-category-mean",
-      "fineliRecordId": "afcd-F003190-2026-10-24",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "marokkolainen-couscous"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.042,
-      "priorityScore": 0.042,
-      "currentCandidates": [
-        {
-          "id": "nuts-category-mean-gi-22",
-          "gi": 22,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "C|peanut|nuts-category-mean|afcd-F003190-2026-10-24|korianterinsiemeniä",
-      "ingredient": "korianterinsiemeniä",
-      "foodKey": "peanut",
-      "preparationKey": "nuts-category-mean",
-      "fineliRecordId": "afcd-F003190-2026-10-24",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "chettinad-kana"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.042,
-      "priorityScore": 0.042,
-      "currentCandidates": [
-        {
-          "id": "nuts-category-mean-gi-22",
-          "gi": 22,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "C|peanut|nuts-category-mean|fineli-34245-2026-10-24|seesaminsiemeniä",
+      "sourceGapId": "C|peanut|nuts-category-mean|fineli-34245-2026-10-24",
       "ingredient": "seesaminsiemeniä",
       "foodKey": "peanut",
       "preparationKey": "nuts-category-mean",
@@ -16888,6 +17343,12 @@
       "blockedRecipeIds": [
         "bulgogi"
       ],
+      "currentlyCalculatedRecipeIds": [],
+      "currentlyIncompleteRecipeIds": [
+        "bulgogi"
+      ],
+      "currentlyCalculatedRecipeCount": 0,
+      "currentlyIncompleteRecipeCount": 1,
       "possibleSoleBlockerRecipeCount": 0,
       "possibleSoleBlockerRecipeIds": [],
       "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.025,
@@ -16896,87 +17357,6 @@
         {
           "id": "nuts-category-mean-gi-22",
           "gi": 22,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "C|vegetable|vegetable-category|afcd-F006321-2026-10-24|silputtua persiljaa",
-      "ingredient": "silputtua persiljaa",
-      "foodKey": "vegetable",
-      "preparationKey": "vegetable-category",
-      "fineliRecordId": "afcd-F006321-2026-10-24",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "liha-juureskeitto-perunaton"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.022,
-      "priorityScore": 0.022,
-      "currentCandidates": [
-        {
-          "id": "vegetables-category-mean-gi-66",
-          "gi": 66,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "C|vegetable|vegetable-category|fineli-333-release-20|silputtua persiljaa",
-      "ingredient": "silputtua persiljaa",
-      "foodKey": "vegetable",
-      "preparationKey": "vegetable-category",
-      "fineliRecordId": "fineli-333-release-20",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "siskonmakkarakeitto-juurekset"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.011,
-      "priorityScore": 0.011,
-      "currentCandidates": [
-        {
-          "id": "vegetables-category-mean-gi-66",
-          "gi": 66,
-          "qualityTier": "SUPPLEMENTARY",
-          "preparationMatches": true,
-          "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
-        }
-      ],
-      "currentQualityNotes": [
-        "Only supplementary / insufficiently documented candidates currently fit."
-      ]
-    },
-    {
-      "sourceGapId": "C|vegetable|vegetable-category|fineli-34238-2026-10-25|korianteri",
-      "ingredient": "korianteri",
-      "foodKey": "vegetable",
-      "preparationKey": "vegetable-category",
-      "fineliRecordId": "fineli-34238-2026-10-25",
-      "affectedRecipeCount": 1,
-      "blockedRecipeIds": [
-        "intialainen-aloo-paratha"
-      ],
-      "possibleSoleBlockerRecipeCount": 0,
-      "possibleSoleBlockerRecipeIds": [],
-      "summedAvailableCarbohydrateAcrossRecipeServingsG": 0.01,
-      "priorityScore": 0.01,
-      "currentCandidates": [
-        {
-          "id": "vegetables-category-mean-gi-66",
-          "gi": 66,
           "qualityTier": "SUPPLEMENTARY",
           "preparationMatches": true,
           "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
