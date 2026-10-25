@@ -373,8 +373,7 @@ Yksi muutos oli vähintään 1 GK-yksikkö annosta kohti (`kanakeitto-pinaatti-s
 1,00 → 2,31). Tässä toimituksellisessa vertailussa selvästi tulkintaan vaikuttavia
 muutoksia oli 9: kahdeksan nollasta positiiviseksi sekä yksi vähintään 1 yksikön
 muutos. Yhden yksikön vertailuraja on auditointia varten, ei kliininen raja.
-Kolmen nykyisen alle-toleranssin tuloksen sisäinen summa on pyöristetty nollaan;
-ne esitetään vain noin-arvioina ja niiden pois jätetty hiilihydraatti ilmoitetaan.
+74 reseptissä pois jätettävien pienten osuuksien yhteissumma ylittää toleranssin ja GK-estää arvion. Kolme laskettua nollatulosta sisältää alle 1 g/annos pois jätetyn osuuden; ilman poisjättöjä vahvistettuja GK-nollia ei ole. Kolme epävarmaa nollaa esitetään noin-arviona pois jätetty hiilihydraattimäärä ilmoittaen.
 Maksalaatikon aiempi 3,45-arvio pysyy estettynä, koska maksan GI-arvoa ei ole
 osoitettu.
 
