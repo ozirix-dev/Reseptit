@@ -8,67 +8,170 @@ on:
       - "kaannokset/**"
       - "kuvat/**"
       - "site/**"
-      - "docs/nutrition/food-records.json"
+      - "docs/nutrition/**"
       - "meta/kaannokset/human-review-evidence.json"
       - ".github/dependabot.yml"
       - ".github/workflows/pages.yml"
   pull_request:
-    paths:
-      - "reseptit/**"
-      - "kaannokset/**"
-      - "kuvat/**"
-      - "site/**"
-      - "docs/nutrition/food-records.json"
-      - "meta/kaannokset/human-review-evidence.json"
-      - ".github/dependabot.yml"
-      - ".github/workflows/pages.yml"
   workflow_dispatch:
+    inputs:
+      full_suite:
+        description: Run all unit, translation, image, static, and browser checks
+        type: boolean
+        required: false
+        default: true
+      deploy:
+        description: Publish the built Pages artifact
+        type: boolean
+        required: false
+        default: true
 
 permissions:
   contents: read
 
 concurrency:
-  group: pages-${{ github.ref }}
-  cancel-in-progress: true
+  group: recipe-site-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
+    outputs:
+      publish: ${{ steps.select.outputs.publish }}
     runs-on: ubuntu-24.04
     permissions:
       contents: read
       pages: write
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
           cache-dependency-path: site/package-lock.json
-      - run: npm ci
+
+      - name: Verify changed-path selector
+        run: node site/scripts/select-ci-checks.test.mjs
+
+      - name: Select risk-based checks
+        id: select
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          EVENT_NAME: ${{ github.event_name }}
+          FORCE_FULL: ${{ inputs.full_suite || false }}
+          DEPLOY: ${{ inputs.deploy || false }}
+        run: node site/scripts/select-ci-checks.mjs
+
+      - name: Check Git whitespace
+        shell: pwsh
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          $head = $env:HEAD_SHA
+          if ($env:EVENT_NAME -eq 'workflow_dispatch') {
+            git show --check --format=oneline $head
+          }
+          elseif ([string]::IsNullOrWhiteSpace($env:BASE_SHA) -or $env:BASE_SHA -match '^0+$') {
+            git show --check --format=oneline $head
+          }
+          else {
+            git diff --check $env:BASE_SHA $head
+          }
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Install site dependencies
+        if: steps.select.outputs.needs_node == 'true'
+        run: npm ci
         working-directory: site
-      - run: npm test
+
+      - name: Validate changed recipe, translation, and evidence records
+        if: steps.select.outputs.run_content == 'true'
+        shell: pwsh
+        env:
+          CHANGED_PATHS: ${{ steps.select.outputs.changed_paths }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          $paths = @($env:CHANGED_PATHS -split "`n" | Where-Object { $_ })
+          $npmArguments = @('run', 'validate:changed-content', '--') + $paths
+          & npm @npmArguments
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
         working-directory: site
-      - run: npm run test:translations
+
+      - name: Build the publishable site
+        if: steps.select.outputs.run_build == 'true'
+        run: npm run build
         working-directory: site
-      - run: npm run test:image
+
+      - name: Run selected unit tests
+        if: steps.select.outputs.needs_node == 'true'
+        shell: pwsh
+        env:
+          UNIT_TESTS: ${{ steps.select.outputs.unit_tests }}
+        run: |
+          if ($env:UNIT_TESTS -eq '*') {
+            & npm test
+          }
+          else {
+            $tests = @($env:UNIT_TESTS -split '\s+' | Where-Object { $_ })
+            if ($tests.Count -gt 0) {
+              $npmArguments = @('exec', '--', 'tsx', '--test') + $tests
+              & npm @npmArguments
+            }
+          }
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
         working-directory: site
-      - run: npm run build
+
+      - name: Run nutrition model checks
+        if: steps.select.outputs.run_nutrition == 'true'
+        run: npm run test:nutrition
         working-directory: site
-      - run: npm run test:static
+
+      - name: Run GI/GK calculation regressions
+        if: steps.select.outputs.run_glycemic == 'true'
+        run: npm run test:glycemic
         working-directory: site
-      - run: npm run test:browser
+
+      - name: Run translation review checks
+        if: steps.select.outputs.run_translation_review == 'true'
+        run: npm run test:translations
+        working-directory: site
+
+      - name: Run image pipeline checks
+        if: steps.select.outputs.run_images == 'true'
+        run: npm run test:image
+        working-directory: site
+
+      - name: Run GI/GK coverage audit
+        if: steps.select.outputs.run_glycemic == 'true' || steps.select.outputs.full == 'true'
+        run: npm run audit:glycemic-coverage
+        working-directory: site
+
+      - name: Check generated static output
+        if: steps.select.outputs.run_static == 'true'
+        run: npm run test:static
+        working-directory: site
+
+      - name: Run browser checks for UI changes
+        if: steps.select.outputs.run_browser == 'true'
+        run: npm run test:browser
         working-directory: site
         env:
           PLAYWRIGHT_BROWSER_CHANNEL: chrome
+
       - uses: actions/configure-pages@v6
-        if: github.event_name != 'pull_request'
+        if: steps.select.outputs.publish == 'true'
       - uses: actions/upload-pages-artifact@v5
-        if: github.event_name != 'pull_request'
+        if: steps.select.outputs.publish == 'true'
         with:
           path: site/dist
 
   deploy:
-    if: github.event_name != 'pull_request'
+    if: needs.build.outputs.publish == 'true'
     needs: build
     runs-on: ubuntu-latest
     permissions:

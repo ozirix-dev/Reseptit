@@ -47,11 +47,12 @@ async function markdownFiles(directory: string): Promise<string[]> {
   return nested.flat().sort();
 }
 
-async function readRecipes(paths: string[]): Promise<{ path: string; data: Frontmatter; content: string }[]> {
+async function readRecipes(paths: string[], recipeIds?: Set<string>): Promise<{ path: string; data: Frontmatter; content: string }[]> {
   const result: { path: string; data: Frontmatter; content: string }[] = [];
   for (const filePath of paths) {
     const parsed = parseMarkdown(await readFile(filePath, "utf8"));
     if (!parsed) continue; // Empty legacy placeholders are not published recipe versions.
+    if (recipeIds && (typeof parsed.data.recipe_id !== "string" || !recipeIds.has(parsed.data.recipe_id))) continue;
     if (parsed.data.status === "draft") continue;
     const checked = recipeFrontmatterSchema.safeParse(parsed.data);
     if (!checked.success) throw new Error(`Invalid recipe metadata in ${filePath}: ${checked.error.message}`);
@@ -145,11 +146,12 @@ export function knownTermErrors(source: Frontmatter, target: Frontmatter, locale
   return [...new Set(issues)];
 }
 
-export async function auditTranslations(): Promise<TranslationAuditResult> {
+export async function auditTranslations(recipeIds?: string[]): Promise<TranslationAuditResult> {
+  const filter = recipeIds ? new Set(recipeIds) : undefined;
   const sourcePaths = (await Promise.all(sourceCategories.map((category) => markdownFiles(path.join(repoRoot, "reseptit", category))))).flat();
-  const sources = await readRecipes(sourcePaths);
+  const sources = await readRecipes(sourcePaths, filter);
   const translations = (await Promise.all(locales.map((locale) => markdownFiles(path.join(repoRoot, "kaannokset", locale))))).flat();
-  const publishedTranslations = await readRecipes(translations);
+  const publishedTranslations = await readRecipes(translations, filter);
   return auditRecipePairs(sources, publishedTranslations);
 }
 
