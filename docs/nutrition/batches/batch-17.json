@@ -1,0 +1,701 @@
+{
+  "batchId": "batch-17",
+  "ingredientMappings": {
+    "g|nahatonta broilerin reisilihaa": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F002806",
+      "state": "raw lean skinless chicken thigh flesh, boneless edible meat",
+      "matchEvidence": "AFCD Release 3 record F002806 is raw lean chicken thigh flesh; recipe specifies boneless skinless thigh meat."
+    },
+    "g|valkokaalia": {
+      "dataset": "fineli-release-20",
+      "sourceId": "320",
+      "state": "raw white cabbage, edible portion",
+      "matchEvidence": "Fineli Release 20 record 320 is raw white cabbage; recipe amount is weighed raw."
+    },
+    "rkl|dijon-sinappia": {
+      "dataset": "fineli-release-20",
+      "sourceId": "28",
+      "state": "prepared mustard, generic Finnish mustard as listed",
+      "matchEvidence": "Fineli Release 20 record 28 is prepared mustard; it is the closest local record to Dijon mustard.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "One tablespoon of prepared mustard is represented as 15 g."
+    },
+    "rkl|hunajaa": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F004380",
+      "state": "honey as sold",
+      "gramsPerUnit": 20,
+      "conversionEvidence": "Fineli honey record 4 lists 20 g per tablespoon; used only for the household-mass conversion.",
+      "matchEvidence": "Honey; AFCD record F004380 supplies all required nutrients including paired carbohydrate values."
+    },
+    "rkl|oliiviöljyä": {
+      "dataset": "fineli-release-20",
+      "sourceId": "536",
+      "state": "olive oil as sold",
+      "matchEvidence": "Fineli Release 20 record 536 is olive oil.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "One level tablespoon oil is standardized to 13.5 g."
+    },
+    "tl|valkosipulijauhetta": {
+      "state": "small garlic powder seasoning omitted",
+      "matchEvidence": "Two grams across four servings; conservative contribution remains below one gram per serving.",
+      "excludedReason": "One teaspoon of garlic powder is a small seasoning dose.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 1,
+        "netCarbohydrate": 0.2,
+        "totalCarbohydrate": 0.25,
+        "protein": 0.05,
+        "fat": 0.05
+      },
+      "omissionImpactEvidence": "Two grams across four servings; conservative contribution remains below one gram per serving."
+    },
+    "tl|paprikajauhetta": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F006316",
+      "state": "dried ground paprika",
+      "matchEvidence": "AFCD Release 3 F006316 is paprika, dry powder.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "One teaspoon ground paprika is represented as 2 g."
+    },
+    "|suolaa ja mustapippuria": {
+      "state": "salt and a small amount of black pepper omitted",
+      "matchEvidence": "Pepper is a small seasoning; conservative per-serving upper bound remains below the agreed tolerance.",
+      "excludedReason": "Salt has no displayed macros; one small seasoning portion of black pepper is omitted.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0.5,
+        "netCarbohydrate": 0.05,
+        "totalCarbohydrate": 0.1,
+        "protein": 0.05,
+        "fat": 0.05
+      },
+      "omissionImpactEvidence": "Pepper is a small seasoning; conservative per-serving upper bound remains below the agreed tolerance."
+    },
+    "g|kirsikkatomaatteja": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F009190",
+      "state": "raw cherry tomatoes",
+      "matchEvidence": "AFCD Release 3 F009190 is raw cherry tomato, matching the listed cherry tomato."
+    },
+    "g|punasipulia": {
+      "dataset": "fineli-release-20",
+      "sourceId": "34234",
+      "state": "raw red onion, edible portion",
+      "matchEvidence": "Fineli Release 20 record 34234 is red onion."
+    },
+    "g|fetajuustoa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "11211",
+      "state": "feta cheese, 25% fat",
+      "matchEvidence": "Fineli Release 20 record 11211 is feta cheese in brine."
+    },
+    "g|kalamataoliiveja": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F006198",
+      "state": "drained olives, green or black",
+      "matchEvidence": "AFCD Release 3 F006198 is drained olives; the source does not separate Kalamata cultivar."
+    },
+    "tl|kuivattua oreganoa": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F006281",
+      "state": "dried oregano",
+      "matchEvidence": "AFCD Release 3 F006281 is dried oregano.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "One teaspoon dried oregano is represented as 2 g."
+    },
+    "g|sitruunamehua": {
+      "dataset": "fineli-release-20",
+      "sourceId": "11557",
+      "state": "undiluted lemon juice",
+      "matchEvidence": "Fineli Release 20 record 11557 is undiluted lemon juice; recipe amount is measured juice."
+    },
+    "g|maustamatonta jogurttia": {
+      "dataset": "fineli-release-20",
+      "sourceId": "619",
+      "state": "plain unsweetened yogurt, 2.5% fat",
+      "matchEvidence": "Fineli Release 20 record 619 is plain unsweetened yogurt."
+    },
+    "rkl|sitruunamehua": {
+      "dataset": "fineli-release-20",
+      "sourceId": "11557",
+      "state": "lemon juice",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "Fineli household portion is 15 g per tablespoon.",
+      "matchEvidence": "Fineli Release 20 record 11557 is lemon juice."
+    },
+    "tl|garam masalaa": {
+      "state": "small dried spice blend omitted under a conservative bound",
+      "matchEvidence": "Four grams total across four servings; conservative upper bound under 1 g carbohydrate per serving.",
+      "excludedReason": "Two teaspoons of garam masala are treated as a small seasoning omission.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 4,
+        "netCarbohydrate": 0.7,
+        "totalCarbohydrate": 0.8,
+        "protein": 0.2,
+        "fat": 0.2
+      },
+      "omissionImpactEvidence": "Four grams total across four servings; conservative upper bound under 1 g carbohydrate per serving."
+    },
+    "tl|jauhettua juustokuminaa": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F003327",
+      "state": "ground cumin seed",
+      "matchEvidence": "AFCD Release 3 F003327 is cumin seed, dried, ground.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "One teaspoon ground cumin is represented as 2 g."
+    },
+    "tl|jauhettua korianteria": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F003190",
+      "state": "ground coriander seed",
+      "matchEvidence": "AFCD Release 3 F003190 is coriander seed, dried, ground.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "One teaspoon ground coriander is represented as 2 g."
+    },
+    "kpl|valkosipulinkynttä": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F004193",
+      "state": "raw peeled garlic",
+      "gramsPerUnit": 3,
+      "conversionEvidence": "One medium garlic clove is represented by 3 g peeled edible garlic.",
+      "matchEvidence": "Raw peeled garlic; AFCD record F004193 has paired available-carbohydrate values confirming zero sugar alcohols."
+    },
+    "g|tuoretta inkivääriä": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F004213",
+      "state": "peeled fresh raw ginger",
+      "matchEvidence": "AFCD Release 3 record F004213 is fresh peeled ginger."
+    },
+    "tl|suolaa": {
+      "state": "salt omitted; no meaningful contribution to the four displayed macronutrients",
+      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
+      "excludedReason": "Omitted salt; sodium is not one of the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+    },
+    "rkl|öljyä": {
+      "dataset": "fineli-release-20",
+      "sourceId": "541",
+      "state": "neutral cooking oil, average vegetable oil",
+      "matchEvidence": "Fineli Release 20 record 541 is an average cooking oil; the recipe does not specify a specialty oil.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "One tablespoon oil is represented as 13.5 g."
+    },
+    "kpl|sipuli": {
+      "dataset": "fineli-release-20",
+      "sourceId": "335",
+      "state": "raw yellow onion, medium edible portion",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli record 335 medium yellow onion portion KPL_M = 55 g.",
+      "matchEvidence": "Raw yellow onion; Fineli Release 20 record 335."
+    },
+    "g|punaista paprikaa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "386",
+      "state": "raw red bell pepper edible portion",
+      "matchEvidence": "Fineli Release 20 record 386 is raw red paprika."
+    },
+    "g|tomaattimurskaa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "398",
+      "state": "canned crushed tomatoes",
+      "matchEvidence": "Fineli Release 20 record 398 is crushed tomato."
+    },
+    "tl|harissaa": {
+      "state": "small harissa seasoning omitted under conservative bound",
+      "matchEvidence": "The one-teaspoon harissa amount is treated as a seasoning omission because no matching local food-composition record was available.",
+      "excludedReason": "Small seasoning omission; recipe retains the measured harissa amount.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 3,
+        "netCarbohydrate": 0.4,
+        "totalCarbohydrate": 0.5,
+        "protein": 0.1,
+        "fat": 0.1
+      },
+      "omissionImpactEvidence": "Approximately 2.5 g per serving; conservative bound is within the agreed small-ingredient tolerance."
+    },
+    "tl|juustokuminaa": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F003327",
+      "state": "ground cumin seed",
+      "matchEvidence": "AFCD Release 3 F003327 is cumin seed, dried, ground.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "One teaspoon ground cumin is represented as 2 g."
+    },
+    "kpl|kananmunaa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "858",
+      "state": "raw edible egg, shell removed",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli record 858 medium egg portion KPL_M = 55 g edible egg without shell.",
+      "matchEvidence": "Raw edible egg; Fineli Release 20 record 858."
+    },
+    "g|tuoretta persiljaa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "333",
+      "state": "fresh parsley",
+      "matchEvidence": "Fineli Release 20 record 333 is parsley."
+    },
+    "g|maalaisleipää": {
+      "dataset": "fineli-release-20",
+      "sourceId": "31842",
+      "state": "white country wheat bread",
+      "matchEvidence": "Fineli Release 20 record 31842 is white country bread."
+    },
+    "g|mantelijauhoa": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F006077",
+      "state": "almond meal, ground almonds",
+      "matchEvidence": "AFCD Release 3 F006077 is almond meal; used for the recipe-listed almond flour."
+    },
+    "g|voita": {
+      "dataset": "fineli-release-20",
+      "sourceId": "500",
+      "state": "salted butter",
+      "matchEvidence": "Fineli Release 20 record 500 is butter."
+    },
+    "g|tuorejuustoa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "641",
+      "state": "cream cheese, 30% fat",
+      "matchEvidence": "Fineli Release 20 record 641 is cream cheese, closest generic match to plain cream cheese."
+    },
+    "kpl|kananmuna": {
+      "dataset": "fineli-release-20",
+      "sourceId": "858",
+      "state": "raw edible egg, shell removed",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli record 858 lists a medium egg portion (KPL_M) as 55 g edible egg without shell.",
+      "matchEvidence": "Fineli Release 20 record 858 is raw edible egg, shell removed."
+    },
+    "g|luumuhilloa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "32744",
+      "state": "plum jam",
+      "matchEvidence": "Fineli Release 20 record 32744 is plum jam."
+    },
+    "g|tofu": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F009176",
+      "state": "firm tofu as purchased",
+      "matchEvidence": "AFCD Release 3 record F009176 is firm tofu as purchased."
+    },
+    "g|kuivia riisinuudeleita": {
+      "dataset": "fineli-release-20",
+      "sourceId": "29055",
+      "state": "dry rice noodles",
+      "matchEvidence": "Fineli Release 20 record 29055 is rice noodles; the listed amount is dry weight."
+    },
+    "g|pavunitu": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F008806",
+      "state": "fresh raw bean sprouts",
+      "matchEvidence": "AFCD Release 3 record F008806 is fresh raw bean sprout."
+    },
+    "g|maapähkinöitä": {
+      "dataset": "fineli-release-20",
+      "sourceId": "378",
+      "state": "raw peanuts",
+      "matchEvidence": "Fineli Release 20 record 378 is peanuts; roasting without added oil does not materially change the macronutrient basis."
+    },
+    "ml|vettä": {
+      "dataset": "fineli-release-20",
+      "sourceId": "922",
+      "state": "plain tap water",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Water is represented at 1 g/ml.",
+      "matchEvidence": "Plain tap water; Fineli Release 20 record 922."
+    },
+    "|suolaa maun mukaan": {
+      "state": "salt omitted; no contribution to displayed macronutrients",
+      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
+      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+    },
+    "g|kuorittua banaania": {
+      "dataset": "fineli-release-20",
+      "sourceId": "11049",
+      "state": "peeled banana",
+      "matchEvidence": "Fineli Release 20 record 11049 is peeled banana."
+    },
+    "g|riisijauho": {
+      "dataset": "fineli-release-20",
+      "sourceId": "182",
+      "state": "white rice flour as sold",
+      "matchEvidence": "Fineli Release 20 record 182 groups rice flour and rice flakes; used as the closest local generic white rice-flour entry. The source category combines the two forms, so this is a small product-level proxy."
+    },
+    "g|kuivattua kookoshiutaletta": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F002987",
+      "state": "grated desiccated coconut",
+      "matchEvidence": "AFCD Release 3 F002987 is grated and desiccated coconut, matching the recipe ingredient."
+    },
+    "g|fariinisokeria": {
+      "dataset": "fineli-release-20",
+      "sourceId": "1",
+      "state": "sugar; generic sucrose proxy for brown sugar",
+      "matchEvidence": "Fineli Release 20 record 1 is sucrose; used as a macro-equivalent estimate for the recipe-listed brown sugar."
+    },
+    "rkl|neutraalia paistoöljyä": {
+      "dataset": "fineli-release-20",
+      "sourceId": "541",
+      "state": "neutral vegetable cooking oil",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Fineli record 541 lists 13.5 g per tablespoon; all listed pan oil is counted as retained.",
+      "matchEvidence": "Fineli Release 20 record 541 is average neutral cooking oil."
+    },
+    "ml|täysrasvaista kookosmaitoa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "29014",
+      "state": "full-fat coconut milk",
+      "matchEvidence": "Fineli Release 20 record 29014 is coconut milk / drink, generic full-fat match.",
+      "gramsPerUnit": 0.92,
+      "conversionEvidence": "Coconut milk is represented as 0.92 g/ml."
+    },
+    "g|riisi": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F007682",
+      "state": "dry uncooked white long-grain rice",
+      "matchEvidence": "AFCD Release 3 record F007682 is uncooked white long-grain rice; these porridge and bowl recipes measure rice dry."
+    },
+    "g|lohi": {
+      "dataset": "fineli-release-20",
+      "sourceId": "817",
+      "state": "raw salmon, edible flesh",
+      "matchEvidence": "Fineli Release 20 record 817 is salmon; calculation uses listed edible raw weight before cooking."
+    },
+    "g|kuivattua norilevää": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F008204",
+      "state": "dried nori seaweed",
+      "matchEvidence": "AFCD Release 3 F008204 is dried nori seaweed, matching the listed ingredient."
+    },
+    "g|seesaminsiemeniä": {
+      "dataset": "fineli-release-20",
+      "sourceId": "34245",
+      "state": "hulled white sesame seeds",
+      "matchEvidence": "Fineli Release 20 record 34245 is whole hulled white sesame seeds; black variety is not separated in the reference."
+    },
+    "rkl|soijakastike": {
+      "dataset": "fineli-release-20",
+      "sourceId": "31",
+      "state": "soy sauce",
+      "gramsPerUnit": 18,
+      "conversionEvidence": "Fineli record 31 lists 18 g per tablespoon (RKL).",
+      "matchEvidence": "Soy sauce; Fineli Release 20 record 31."
+    },
+    "g|kuorittua myskikurpitsaa": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F007535",
+      "state": "raw butternut pumpkin, peeled edible portion",
+      "matchEvidence": "AFCD Release 3 F007535 is raw butternut pumpkin, used as a local data match for peeled winter squash."
+    },
+    "ml|kookosmaito": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F002991",
+      "state": "regular-fat canned coconut milk as sold",
+      "gramsPerUnit": 0.92,
+      "conversionEvidence": "Canned regular-fat coconut milk represented at 0.92 g/ml, consistent with prior ingredient-specific batch conversions.",
+      "matchEvidence": "The recipe specifies coconut milk without a reduced-fat variant; AFCD record F002991 is canned regular-fat coconut milk."
+    },
+    "g|mustia seesaminsiemeniä": {
+      "dataset": "fineli-release-20",
+      "sourceId": "34245",
+      "state": "hulled sesame seeds, black variety not separately available",
+      "matchEvidence": "Fineli Release 20 record 34245 is generic hulled sesame; the source does not separate black sesame."
+    },
+    "g|kuorittua tuoretta kassavaa": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F002286",
+      "state": "peeled fresh raw cassava",
+      "matchEvidence": "AFCD Release 3 F002286 is peeled fresh raw cassava."
+    },
+    "g|kuorittua avokadoa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "11057",
+      "state": "peeled pitted avocado",
+      "matchEvidence": "Fineli Release 20 record 11057 is peeled and pitted avocado."
+    },
+    "g|limettimehua": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F004729",
+      "state": "undiluted lime juice",
+      "matchEvidence": "AFCD Release 3 record F004729 is lime juice."
+    },
+    "ml|makeuttamatonta soijajuomaa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "31247",
+      "state": "unsweetened soy drink",
+      "matchEvidence": "Fineli Release 20 record 31247 is unsweetened soy drink.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Soy drink is represented at 1 g/ml."
+    },
+    "ml|riisiviinietikkaa": {
+      "state": "rice vinegar omitted as a small seasoning acid",
+      "matchEvidence": "About 7.5 ml per serving; conservative upper bound is below the small-omission tolerance.",
+      "excludedReason": "Fifteen millilitres of rice vinegar are omitted; its per-serving macro contribution is conservatively bounded.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 3,
+        "netCarbohydrate": 0.5,
+        "totalCarbohydrate": 0.5,
+        "protein": 0.1,
+        "fat": 0.1
+      },
+      "omissionImpactEvidence": "About 7.5 ml per serving; conservative upper bound is below the small-omission tolerance."
+    },
+    "g|seesamiöljyä": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F006187",
+      "state": "sesame oil",
+      "matchEvidence": "AFCD Release 3 F006187 is sesame oil."
+    },
+    "rkl|kevätsipuli": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F006250",
+      "state": "fresh raw spring onion, chopped",
+      "gramsPerUnit": 6,
+      "conversionEvidence": "One tablespoon chopped spring onion is represented as 6 g.",
+      "matchEvidence": "AFCD Release 3 record F006250 is fresh raw spring onion."
+    },
+    "g|vehnäjauhoja": {
+      "dataset": "fineli-release-20",
+      "sourceId": "110",
+      "state": "medium wheat flour",
+      "matchEvidence": "Fineli Release 20 record 110 is medium wheat flour."
+    },
+    "g|kuivattua timjamia": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F009160",
+      "state": "dried ground thyme",
+      "matchEvidence": "AFCD Release 3 F009160 is dried ground thyme, matching the recipe seasoning."
+    },
+    "rkl|oliiviöljy": {
+      "dataset": "fineli-release-20",
+      "sourceId": "536",
+      "state": "olive oil as sold",
+      "matchEvidence": "Fineli Release 20 record 536 is olive oil.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Fineli record 536 lists 13.5 g per tablespoon (RKL)."
+    },
+    "g|jogurtti": {
+      "dataset": "fineli-release-20",
+      "sourceId": "620",
+      "state": "plain unsweetened Bulgarian-style yogurt, 3.9% fat",
+      "matchEvidence": "Fineli Release 20 record 620 is plain unsweetened Bulgarian-style yogurt with 3.9% fat."
+    },
+    "g|hapanjuurileipä": {
+      "dataset": "fineli-release-20",
+      "sourceId": "31842",
+      "state": "white country bread used as sourdough-style bread proxy",
+      "matchEvidence": "Fineli Release 20 record 31842 is white country bread; exact sourdough recipe is not specified."
+    },
+    "ml|kookosmaitoa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "29014",
+      "state": "full-fat coconut milk",
+      "matchEvidence": "Fineli Release 20 record 29014 is coconut milk.",
+      "gramsPerUnit": 0.92,
+      "conversionEvidence": "Coconut milk is represented as 0.92 g/ml."
+    },
+    "g|sokeria": {
+      "dataset": "fineli-release-20",
+      "sourceId": "1",
+      "state": "granulated sugar",
+      "matchEvidence": "Fineli Release 20 record 1 is granulated sucrose."
+    },
+    "g|jogurttia": {
+      "dataset": "fineli-release-20",
+      "sourceId": "619",
+      "state": "plain unsweetened yogurt, 2.5% fat",
+      "matchEvidence": "Fineli Release 20 record 619 is plain unsweetened yogurt."
+    },
+    "g|persimon": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F006628",
+      "state": "raw persimmon fruit",
+      "matchEvidence": "AFCD Release 3 F006628 is persimmon, matching the fresh fruit in the recipe."
+    },
+    "g|hojicha-teetä": {
+      "state": "small hojicha tea seasoning omitted under conservative bound",
+      "matchEvidence": "Two grams of hojicha are used as a tea seasoning; no matching local food-composition record is available.",
+      "excludedReason": "Small tea seasoning omission.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 2,
+        "netCarbohydrate": 0.4,
+        "totalCarbohydrate": 0.5,
+        "protein": 0.1,
+        "fat": 0.1
+      },
+      "omissionImpactEvidence": "One gram per serving; conservative bound under agreed small-ingredient tolerance."
+    },
+    "g|maissitortilla": {
+      "dataset": "fineli-release-20",
+      "sourceId": "35554",
+      "state": "commercial gluten-free corn tortilla as sold",
+      "matchEvidence": "Fineli Release 20 record 35554 is a commercial gluten-free corn tortilla, matching the listed tortilla."
+    },
+    "g|raastettua mozzarellajuustoa": {
+      "dataset": "fineli-release-20",
+      "sourceId": "29239",
+      "state": "fresh mozzarella cheese",
+      "matchEvidence": "Fineli Release 20 record 29239 is mozzarella cheese."
+    },
+    "g|herkkusieniä": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F005946",
+      "state": "fresh raw common mushrooms",
+      "matchEvidence": "AFCD Release 3 F005946 is common mushroom, fresh and raw."
+    },
+    "g|maissinjyviä": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F003202",
+      "state": "frozen sweetcorn kernels, uncooked",
+      "matchEvidence": "AFCD Release 3 record F003202 is frozen corn kernels; the recipe now lists the edible kernels by weight."
+    },
+    "g|tomaattia": {
+      "dataset": "fineli-release-20",
+      "sourceId": "352",
+      "state": "raw tomato",
+      "matchEvidence": "Fineli Release 20 record 352 is raw tomato."
+    },
+    "tl|harissa": {
+      "state": "small harissa seasoning omitted under conservative bound",
+      "matchEvidence": "The one-teaspoon harissa amount is treated as a seasoning omission because no matching local food-composition record was available.",
+      "excludedReason": "Small seasoning omission; recipe retains the measured harissa amount.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 3,
+        "netCarbohydrate": 0.4,
+        "totalCarbohydrate": 0.5,
+        "protein": 0.1,
+        "fat": 0.1
+      },
+      "omissionImpactEvidence": "Approximately 2.5 g per serving; conservative bound is within the agreed small-ingredient tolerance."
+    },
+    "g|kikhernejauho": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F003986",
+      "state": "dry chickpea flour (besan)",
+      "matchEvidence": "Chickpea flour/besan; AFCD record F003986."
+    },
+    "g|vihreitä oliiveja": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F006198",
+      "state": "drained green or black olives",
+      "matchEvidence": "AFCD Release 3 F006198 is drained olives; source does not distinguish cultivar."
+    },
+    "g|tuoretta rosmariinia": {
+      "state": "small fresh rosemary seasoning omitted under a conservative bound",
+      "matchEvidence": "One gram total across two servings; contribution is below 1 g per serving for all displayed macros.",
+      "excludedReason": "One gram of rosemary is a small seasoning omission.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 1,
+        "netCarbohydrate": 0.1,
+        "totalCarbohydrate": 0.2,
+        "protein": 0.1,
+        "fat": 0.1
+      },
+      "omissionImpactEvidence": "One gram total across two servings; contribution is below 1 g per serving for all displayed macros."
+    },
+    "g|halloumi": {
+      "dataset": "afcd-release-3",
+      "sourceId": "F002466",
+      "state": "halloumi cheese",
+      "matchEvidence": "AFCD Release 3 F002466 is halloumi cheese; the record reports fibre and paired available carbohydrate values."
+    }
+  },
+  "recipes": [
+    {
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "scope": "4 servings; measured ingredient quantities as listed: 600 g nahatonta broilerin reisilihaa; 600 g valkokaalia; 2 rkl Dijon-sinappia; 1 rkl hunajaa; 2 rkl oliiviöljyä; 1 tl valkosipulijauhetta; 1 tl paprikajauhetta; unquantified  suolaa ja mustapippuria. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+      "scope": "4 servings; measured ingredient quantities as listed: 600 g nahatonta broilerin reisilihaa; 250 g kirsikkatomaatteja; 100 g punasipulia; 100 g fetajuustoa; 60 g kalamataoliiveja; 2 rkl oliiviöljyä; 1 tl kuivattua oreganoa; 30 g sitruunamehua; unquantified  suolaa ja mustapippuria. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "tandoorikana",
+      "scope": "4 servings; measured ingredient quantities as listed: 800 g nahatonta broilerin reisilihaa; 200 g maustamatonta jogurttia; 1 rkl sitruunamehua; 2 tl garam masalaa; 2 tl paprikajauhetta; 1 tl jauhettua juustokuminaa; 1 tl jauhettua korianteria; 2 kpl valkosipulinkynttä; 15 g tuoretta inkivääriä; 1 tl suolaa; 1 rkl öljyä. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "tunisialainen-ojja",
+      "scope": "4 servings; measured ingredient quantities as listed: 1 kpl sipuli; 150 g punaista paprikaa; 2 kpl valkosipulinkynttä; 400 g tomaattimurskaa; 1 tl harissaa; 1 tl juustokuminaa; 1 rkl oliiviöljyä; 4 kpl kananmunaa; 0.5 tl suolaa; 15 g tuoretta persiljaa; 160 g maalaisleipää. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "keto-joulutortut",
+      "scope": "8 servings; measured ingredient quantities as listed: 150 g mantelijauhoa; 100 g voita; 100 g tuorejuustoa; 1 kpl kananmuna; 40 g luumuhilloa. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "indonesialainen-ketoprak-aamiaiskulho",
+      "scope": "2 servings; measured ingredient quantities as listed: 100 g tofu; 100 g kuivia riisinuudeleita; 150 g pavunitu; 35 g maapähkinöitä; 30 ml vettä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "indonesialainen-pisang-goreng-aamiaiseksi",
+      "scope": "2 servings; measured ingredient quantities as listed: 120 g kuorittua banaania; 100 g riisijauho; 20 g kuivattua kookoshiutaletta; 25 g fariinisokeria; 1 rkl neutraalia paistoöljyä; 75 ml vettä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "indonesialainen-serabi-kookospannukakku",
+      "scope": "2 servings; measured ingredient quantities as listed: 100 g riisijauho; 20 g kuivattua kookoshiutaletta; 150 ml täysrasvaista kookosmaitoa; 30 g fariinisokeria; 1 rkl neutraalia paistoöljyä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "japanilainen-onigiri-lohella",
+      "scope": "2 servings; measured ingredient quantities as listed: 100 g riisi; 150 g lohi; 3 g kuivattua norilevää; 5 g seesaminsiemeniä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "japanilainen-tamago-kake-gohan",
+      "scope": "2 servings; measured ingredient quantities as listed: 100 g riisi; 2 kpl kananmuna; 1 rkl soijakastike; 2 g kuivattua norilevää; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "scope": "2 servings; measured ingredient quantities as listed: 250 g kuorittua myskikurpitsaa; 100 g riisi; 200 ml kookosmaito; 5 g mustia seesaminsiemeniä; 700 ml vettä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "karibia-bammy-kassavaleipa",
+      "scope": "2 servings; measured ingredient quantities as listed: 250 g kuorittua tuoretta kassavaa; 200 ml kookosmaito; 100 g kuorittua avokadoa; 15 g limettimehua; 1 rkl neutraalia paistoöljyä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "kiinalainen-soijamaito-aamiaisella",
+      "scope": "2 servings; measured ingredient quantities as listed: 200 ml makeuttamatonta soijajuomaa; 15 ml riisiviinietikkaa; 5 g seesamiöljyä; 2 rkl kevätsipuli; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "lahi-ita-manakish-zaatarilla",
+      "scope": "2 servings; measured ingredient quantities as listed: 150 g vehnäjauhoja; 2 g kuivattua timjamia; 1 rkl oliiviöljy; 100 g jogurtti; 1 rkl neutraalia paistoöljyä; 3 g seesaminsiemeniä; 40 ml vettä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "malesialainen-kaya-paahtoleipa",
+      "scope": "2 servings; measured ingredient quantities as listed: 100 g hapanjuurileipä; 1 kpl kananmuna; 10 g voita; 1 rkl neutraalia paistoöljyä; 100 ml kookosmaitoa; 1 kpl kananmuna; 20 g sokeria; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+      "scope": "2 servings; measured ingredient quantities as listed: 200 g jogurttia; 150 g persimon; 2 g hojicha-teetä; 5 g seesaminsiemeniä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "meksikolainen-quesadilla-sienilla",
+      "scope": "2 servings; measured ingredient quantities as listed: 100 g maissitortilla; 80 g raastettua mozzarellajuustoa; 75 g herkkusieniä; 80 g maissinjyviä; 1 rkl neutraalia paistoöljyä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-harissa-shakshuka",
+      "scope": "2 servings; measured ingredient quantities as listed: 2 kpl kananmuna; 125 g tomaattia; 150 g punaista paprikaa; 1 tl harissa; 1 rkl neutraalia paistoöljyä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "valimerellinen-farinata-aamupalaksi",
+      "scope": "2 servings; measured ingredient quantities as listed: 100 g kikhernejauho; 25 g vihreitä oliiveja; 100 g tomaattia; 1 g tuoretta rosmariinia; 1 rkl neutraalia paistoöljyä; 150 ml vettä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "scope": "2 servings; measured ingredient quantities as listed: 150 g halloumi; 100 g tomaattia; 25 g vihreitä oliiveja; 100 g hapanjuurileipä; 1 rkl neutraalia paistoöljyä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded."
+    }
+  ]
+}

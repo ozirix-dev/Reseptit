@@ -24,10 +24,10 @@ image:
   width: 1280
   height: 853
 ingredients:
-  - amount: 1
-    unit: kg
+  - amount: 800
+    unit: g
     item: whole chicken legs (thigh and drumstick)
-    note: "skin removed, with slits cut into the meat"
+    note: skin removed, with slits cut into the meat
   - amount: 200
     unit: g
     item: plain yogurt
@@ -47,7 +47,7 @@ ingredients:
     unit: tsp
     item: ground coriander
   - amount: 2
-    unit: piece
+    unit: kpl
     item: a clove of garlic
     note: crushed
   - amount: 15
@@ -63,6 +63,10 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/tandoorikana.md
 translation_of: tandoorikana
+carbs_net_per_serving_g: 3.29
+carbs_total_per_serving_g: 4.27
+protein_per_serving_g: 40.22
+fat_per_serving_g: 11.01
 ---
 
 # Tandoori chicken in the oven

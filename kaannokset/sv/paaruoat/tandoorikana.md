@@ -24,10 +24,10 @@ image:
   width: 1280
   height: 853
 ingredients:
-  - amount: 1
-    unit: kg
+  - amount: 800
+    unit: g
     item: hela kycklingklubbor med lår
-    note: "utan skinn, med snitt i köttet"
+    note: utan skinn, med snitt i köttet
   - amount: 200
     unit: g
     item: naturell yoghurt
@@ -47,7 +47,7 @@ ingredients:
     unit: tsk
     item: mald koriander
   - amount: 2
-    unit: st
+    unit: kpl
     item: en vitlöksklyfta
     note: krossad
   - amount: 15
@@ -63,6 +63,10 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/tandoorikana.md
 translation_of: tandoorikana
+carbs_net_per_serving_g: 3.29
+carbs_total_per_serving_g: 4.27
+protein_per_serving_g: 40.22
+fat_per_serving_g: 11.01
 ---
 
 # Tandoorikyckling i ugnen

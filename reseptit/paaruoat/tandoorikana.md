@@ -24,9 +24,9 @@ image:
   width: 1280
   height: 853
 ingredients:
-  - amount: 1
-    unit: kg
-    item: broilerin koipireisiä
+  - amount: 800
+    unit: g
+    item: nahatonta broilerin reisilihaa
     note: nahattomina, viillotettuina
   - amount: 200
     unit: g
@@ -64,7 +64,12 @@ translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status: { en: published, sv: published, th: published }
+carbs_net_per_serving_g: 3.29
+carbs_total_per_serving_g: 4.27
+protein_per_serving_g: 40.22
+fat_per_serving_g: 11.01
+
 ---
 
 # Tandoorikana uunissa
@@ -80,7 +85,7 @@ Jogurtissa ja mausteissa marinoitu kana paistuu kuumassa uunissa tai grillissä 
 1. Sekoita jogurtti, sitruunamehu, mausteet, valkosipuli, inkivääri, suola ja öljy.
 2. Pyörittele broileri marinadissa ja anna maustua jääkaapissa vähintään tunnin, mielellään yön yli.
 3. Kuumenna uuni 230 asteeseen. Nosta kana ritilälle uunipellin päälle.
-4. Paista 35–45 minuuttia, käännä kerran. Kypsennä lopuksi grillivastuksella, kunnes pinta paahtuu.
+4. Sekoita jogurtti, sitruunamehu, garam masala, paprikajauhe, juustokumina, korianteri, murskattu valkosipuli, inkivääri, suola ja öljy. Kääntele broileri marinadissa ja anna maustua jääkaapissa vähintään tunnin. Paahda uunissa tai grillissä, kunnes liha on täysin kypsää.
 5. Tarkista, että broilerin sisälämpötila on vähintään 75 °C. Anna levätä 5 minuuttia ennen tarjoamista.
 
 ## Muistiinpanot

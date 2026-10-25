@@ -31,14 +31,18 @@ ingredients:
     unit: g
     item: ครีมชีส
   - amount: 1
-    unit: ชิ้น
+    unit: kpl
     item: ไข่
-  - amount: 8
-    unit: ช้อนชา
+  - amount: 40
+    unit: g
     item: แยมบ๊วย
 source_language: fi
 source_recipe: reseptit/leivonnaiset/keto-joulutortut.md
 translation_of: keto-joulutortut
+carbs_net_per_serving_g: 3.44
+carbs_total_per_serving_g: 5.57
+protein_per_serving_g: 7.53
+fat_per_serving_g: 24.28
 ---
 
 # ขนมพายดาวคริสต์มาสแป้งอัลมอนด์

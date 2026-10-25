@@ -17,7 +17,7 @@ tags:
 ingredients:
   - amount: 600
     unit: g
-    item: broilerin koipireisiä
+    item: nahatonta broilerin reisilihaa
   - amount: 600
     unit: g
     item: valkokaalia
@@ -47,6 +47,11 @@ image:
   alt: Sinappinen kanapelti paahdetulla kaalilla tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 12.22
+carbs_total_per_serving_g: 15.53
+protein_per_serving_g: 30.86
+fat_per_serving_g: 11.91
+
 ---
 # Sinappinen kanapelti paahdetulla kaalilla
 
@@ -63,7 +68,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Kuumenna uuni 210 asteeseen. Leikkaa kaali lohkoiksi ja aseta pellille broilerin kanssa.
 2. Sekoita sinappi, hunaja, öljy, valkosipulijauhe ja paprika. Valele broileri ja kaali.
 3. Mausta suolalla ja pippurilla. Paahda 35–40 minuuttia ja käännä kaali kerran.
-4. Tarkista broilerin kypsyys; jatka paistamista tarvittaessa.
+4. Sekoita dijonsinappi, hunaja, oliiviöljy, valkosipulijauhe ja paprikajauhe. Leikkaa broileri suupaloiksi ja kaali lohkoiksi, kääntele mausteseoksessa ja paahda uunissa, kunnes broileri on läpikypsää ja kaali pehmeää.
 
 ## Muistiinpanot
 

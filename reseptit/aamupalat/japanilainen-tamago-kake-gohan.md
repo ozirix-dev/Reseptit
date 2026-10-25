@@ -13,20 +13,20 @@ cooking_method:
   - "paistaminen"
 ingredients:
   - amount: 100
-    unit: "g"
-    item: "riisi"
+    unit: g
+    item: riisi
   - amount: 2
-    unit: "kpl"
-    item: "kananmuna"
+    unit: kpl
+    item: kananmuna
   - amount: 1
-    unit: "rkl"
-    item: "soijakastike"
-  - amount: 150
-    unit: "g"
-    item: "nori"
+    unit: rkl
+    item: soijakastike
+  - amount: 2
+    unit: g
+    item: kuivattua norilevää
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -39,6 +39,11 @@ image:
   alt: "Tamago kake gohan seesamilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 38.04
+carbs_total_per_serving_g: 38.79
+protein_per_serving_g: 11.37
+fat_per_serving_g: 5.58
+
 ---
 
 # Tamago kake gohan seesamilla
@@ -56,4 +61,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
 2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
 3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Riko tuore muna kuuman riisin päälle ja sekoita heti tasaiseksi.
+4. Huuhtele riisi ja kypsennä se. Annostele höyryävän kuuma riisi kulhoihin. Riko kummankin kulhon päälle kananmuna ja sekoita nopeasti kuumaan riisiin. Mausta soijakastikkeella ja viimeistele murennetulla norilevällä.

@@ -24,10 +24,10 @@ image:
   width: 1280
   height: 853
 ingredients:
-  - amount: 1
-    unit: kg
+  - amount: 800
+    unit: g
     item: น่องไก่ติดสะโพก
-    note: "ลอกหนังออกและบั้งเนื้อ"
+    note: ลอกหนังออกและบั้งเนื้อ
   - amount: 200
     unit: g
     item: โยเกิร์ตไม่ปรุงแต่ง
@@ -45,9 +45,9 @@ ingredients:
     item: ยี่หร่าบด
   - amount: 1
     unit: ช้อนชา
-    item: "เมล็ดผักชีป่น"
+    item: เมล็ดผักชีป่น
   - amount: 2
-    unit: ชิ้น
+    unit: kpl
     item: กระเทียม
     note: บดขยี้
   - amount: 15
@@ -63,6 +63,10 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/tandoorikana.md
 translation_of: tandoorikana
+carbs_net_per_serving_g: 3.29
+carbs_total_per_serving_g: 4.27
+protein_per_serving_g: 40.22
+fat_per_serving_g: 11.01
 ---
 
 # ไก่ทันดูริในเตาอบ

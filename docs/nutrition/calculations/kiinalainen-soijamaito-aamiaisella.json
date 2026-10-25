@@ -1,0 +1,156 @@
+{
+  "recipeId": "kiinalainen-soijamaito-aamiaisella",
+  "sourceHash": "6721b6d04725dc1d022ac0ffd692655662dcfd2c3569790ac4ebafba12989d12",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-17",
+  "servings": 2,
+  "scope": "2 servings; measured ingredient quantities as listed: 200 ml makeuttamatonta soijajuomaa; 15 ml riisiviinietikkaa; 5 g seesamiöljyä; 2 rkl kevätsipuli; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "makeuttamatonta soijajuomaa",
+      "amount": 200,
+      "unit": "ml",
+      "state": "unsweetened soy drink",
+      "matchEvidence": "Fineli Release 20 record 31247 is unsweetened soy drink.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Soy drink is represented at 1 g/ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-31247-release-20",
+        "name": "SOIJAJUOMA, EI LISÄTTYÄ SOKERIA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/31247",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "unsweetened soy drink",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.03,
+          "FIBT": 1.61,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.03,
+          "fibre": 1.61,
+          "polyols": 0,
+          "protein": 3.59,
+          "fat": 1.77
+        }
+      }
+    },
+    {
+      "item": "riisiviinietikkaa",
+      "amount": 15,
+      "unit": "ml",
+      "state": "rice vinegar omitted as a small seasoning acid",
+      "matchEvidence": "About 7.5 ml per serving; conservative upper bound is below the small-omission tolerance.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Fifteen millilitres of rice vinegar are omitted; its per-serving macro contribution is conservatively bounded.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 3,
+        "netCarbohydrate": 0.5,
+        "totalCarbohydrate": 0.5,
+        "protein": 0.1,
+        "fat": 0.1
+      },
+      "omissionImpactEvidence": "About 7.5 ml per serving; conservative upper bound is below the small-omission tolerance."
+    },
+    {
+      "item": "seesamiöljyä",
+      "amount": 5,
+      "unit": "g",
+      "state": "sesame oil",
+      "matchEvidence": "AFCD Release 3 F006187 is sesame oil.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006187-release-3",
+        "name": "Oil, sesame",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "sesame oil",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    },
+    {
+      "item": "kevätsipuli",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "fresh raw spring onion, chopped",
+      "matchEvidence": "AFCD Release 3 record F006250 is fresh raw spring onion.",
+      "gramsPerUnit": 6,
+      "conversionEvidence": "One tablespoon chopped spring onion is represented as 6 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006250-release-3",
+        "name": "Onion, spring, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh raw spring onion, chopped",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.6,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 1.7,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "salt omitted; no contribution to displayed macronutrients",
+      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+    }
+  ]
+}

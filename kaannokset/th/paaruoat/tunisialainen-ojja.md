@@ -25,22 +25,22 @@ image:
   height: 853
 ingredients:
   - amount: 1
-    unit: ชิ้น
+    unit: kpl
     item: หัวหอม
-    note: "สับละเอียด"
-  - amount: 1
-    unit: ชิ้น
+    note: สับละเอียด
+  - amount: 150
+    unit: g
     item: พริกหยวกแดง
-    note: "หั่นเต๋า"
+    note: หั่นเต๋า
   - amount: 2
-    unit: ชิ้น
+    unit: kpl
     item: กระเทียม
     note: หั่นฝอย
   - amount: 400
     unit: g
     item: มะเขือเทศบด
   - amount: 1
-    unit: ช้อนโต๊ะ
+    unit: ช้อนชา
     item: หริสสา
   - amount: 1
     unit: ช้อนชา
@@ -49,7 +49,7 @@ ingredients:
     unit: ช้อนโต๊ะ
     item: น้ำมันมะกอก
   - amount: 4
-    unit: ชิ้น
+    unit: kpl
     item: ไข่
   - amount: 0.5
     unit: ช้อนชา
@@ -58,13 +58,17 @@ ingredients:
     unit: g
     item: พาร์สลีย์สด
     note: หั่นฝอย
-  - amount: 4
-    unit: แผ่น
-    item: "ขนมปังแบบชนบท"
+  - amount: 160
+    unit: g
+    item: ขนมปังแบบชนบท
     note: สำหรับการเสิร์ฟ
 source_language: fi
 source_recipe: reseptit/paaruoat/tunisialainen-ojja.md
 translation_of: tunisialainen-ojja
+carbs_net_per_serving_g: 26.41
+carbs_total_per_serving_g: 29.16
+protein_per_serving_g: 11.65
+fat_per_serving_g: 9.35
 ---
 
 # Ojja ตูนิเซียกับฮาริสซาและไข่
