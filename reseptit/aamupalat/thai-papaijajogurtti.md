@@ -12,21 +12,21 @@ main_ingredient:
 cooking_method:
   - "paistaminen"
 ingredients:
-  - amount: 1
-    unit: "kpl"
-    item: "papaija"
-  - amount: 100
-    unit: "g"
-    item: "jogurtti"
-  - amount: 150
-    unit: "g"
-    item: "kookoshiutale"
-  - amount: 1
-    unit: "kpl"
-    item: "lime"
+  - amount: 200
+    unit: g
+    item: papaija
+  - amount: 200
+    unit: g
+    item: jogurtti
+  - amount: 15
+    unit: g
+    item: kookoshiutale
+  - amount: 15
+    unit: g
+    item: limettimehua
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -39,6 +39,11 @@ image:
   alt: "Papaija-limejogurtti paahdetulla kookoksella tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 12.44
+carbs_total_per_serving_g: 15.96
+protein_per_serving_g: 3.98
+fat_per_serving_g: 8.81
+
 ---
 
 # Papaija-limejogurtti paahdetulla kookoksella

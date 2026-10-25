@@ -12,24 +12,24 @@ main_ingredient:
 cooking_method:
   - "keittäminen"
 ingredients:
+  - amount: 10
+    unit: g
+    item: mustat seesaminsiemenet
   - amount: 100
-    unit: "g"
-    item: "mustat seesaminsiemenet"
-  - amount: 100
-    unit: "g"
-    item: "riisi"
+    unit: g
+    item: riisi
   - amount: 200
-    unit: "ml"
-    item: "soijamaito"
+    unit: ml
+    item: soijamaito
   - amount: 1
-    unit: "rkl"
-    item: "hunaja"
+    unit: rkl
+    item: hunaja
   - amount: 700
-    unit: "ml"
-    item: "vettä tai mietoa lientä"
+    unit: ml
+    item: vettä
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -42,6 +42,11 @@ image:
   alt: "Musta seesamipuuro tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 46.5
+carbs_total_per_serving_g: 49.02
+protein_per_serving_g: 7.64
+fat_per_serving_g: 5.23
+
 ---
 
 # Musta seesamipuuro

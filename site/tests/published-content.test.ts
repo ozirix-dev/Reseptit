@@ -162,6 +162,26 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     ["pohjoisafrikkalainen-harcha-juustolla", 35.66],
     ["meksikolainen-kurpitsapuuro-piloncillolla", 44.63],
     ["lahi-ita-zaatar-munat", 24.91],
+    ["karibia-maissipuuro-kookoksella", 43.8],
+    ["kiinalainen-hirssipuuro-taateleilla", 37.85],
+    ["kiinalainen-musta-seesamipuuro", 46.5],
+    ["thai-papaijajogurtti", 12.44],
+    ["lahi-ita-pistaasijogurtti", 8.23],
+    ["pohjoisafrikkalainen-kuskus-aamiaiskulho", 42.52],
+    ["vietnamilainen-chao-ga-kanapuuro", 37.32],
+    ["vietnamilainen-pho-ga-aamuksi", 40.87],
+    ["vietnamilainen-papaija-kookospuuro", 49.7],
+    ["vietnamilainen-hu-tieu-aamiaiskeitto", 42.08],
+    ["korealainen-kongjuk-soijapapu-riisipuuro", 46.43],
+    ["korealainen-jumeokbap-merilevalla", 38.73],
+    ["thai-kookosriisi-mangolla", 48.05],
+    ["malesialainen-nasi-lemak-aamiaisella", 39.78],
+    ["malesialainen-mee-goreng-aamunuudeleilla", 35.42],
+    ["indialainen-poha-maapahkinoilla", 43.06],
+    ["intialainen-ven-pongal", 71.1],
+    ["kiinalainen-jianbing-munaletty", 38.96],
+    ["thai-kananmunat-kookoscurryssa", 43.31],
+    ["malesialainen-apam-balik", 57.18],
   ]);
   for (const recipe of [...breakfast, ...desserts]) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
@@ -501,6 +521,41 @@ test("batch fifteen publishes recalculated macronutrients for every recipe and a
   ]);
   const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
   assert.ok(recipes.length >= expected.size, "all batch recipes have published Finnish pages");
+  assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(expected.keys()));
+  for (const recipe of recipes) {
+    assert.deepEqual(
+      [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],
+      expected.get(recipe.recipeId),
+      `${recipe.recipeId}/${recipe.locale}`,
+    );
+  }
+});
+
+test("batch sixteen publishes recalculated macronutrients for every recipe and available translation", () => {
+  const expected = new Map([
+    ["karibia-maissipuuro-kookoksella", [43.8, 44.75, 4.09, 14.87]],
+    ["kiinalainen-hirssipuuro-taateleilla", [37.85, 40.42, 6.72, 3.85]],
+    ["kiinalainen-musta-seesamipuuro", [46.5, 49.02, 7.64, 5.23]],
+    ["thai-papaijajogurtti", [12.44, 15.96, 3.98, 8.81]],
+    ["lahi-ita-pistaasijogurtti", [8.23, 10.92, 5.27, 8.82]],
+    ["pohjoisafrikkalainen-kuskus-aamiaiskulho", [42.52, 45.83, 10.91, 7.18]],
+    ["vietnamilainen-chao-ga-kanapuuro", [37.32, 37.87, 20.49, 1.07]],
+    ["vietnamilainen-pho-ga-aamuksi", [40.87, 41.93, 18.6, 0.88]],
+    ["vietnamilainen-papaija-kookospuuro", [49.7, 52.07, 1.85, 14.28]],
+    ["vietnamilainen-hu-tieu-aamiaiskeitto", [42.08, 44.18, 21.61, 2.02]],
+    ["korealainen-kongjuk-soijapapu-riisipuuro", [46.43, 62.47, 28.21, 18.59]],
+    ["korealainen-jumeokbap-merilevalla", [38.73, 40.7, 4.86, 7.37]],
+    ["thai-kookosriisi-mangolla", [48.05, 49.76, 5.83, 16.41]],
+    ["malesialainen-nasi-lemak-aamiaisella", [39.78, 40.48, 11.92, 19.75]],
+    ["malesialainen-mee-goreng-aamunuudeleilla", [35.42, 38.4, 21.71, 17.71]],
+    ["indialainen-poha-maapahkinoilla", [43.06, 45.86, 7.79, 12.36]],
+    ["intialainen-ven-pongal", [71.1, 82.62, 23.7, 13.9]],
+    ["kiinalainen-jianbing-munaletty", [38.96, 41.6, 14.79, 15.39]],
+    ["thai-kananmunat-kookoscurryssa", [43.31, 45.31, 12.68, 26.79]],
+    ["malesialainen-apam-balik", [57.18, 60.75, 12.94, 15.13]],
+  ]);
+  const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
+  assert.ok(recipes.length >= expected.size, "all batch recipes have published pages");
   assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(expected.keys()));
   for (const recipe of recipes) {
     assert.deepEqual(
