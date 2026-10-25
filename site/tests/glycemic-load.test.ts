@@ -350,13 +350,62 @@ test("two 0.99 g contributions are both included", () => {
   assert.equal(result.glycemicLoadPerServing, 0.99);
 });
 
-test("unmatched small portions are summed and block totals above the editorial tolerance", () => {
+test("two 0.99 g unmatched portions are omitted within the new 2 g cumulative tolerance", () => {
   const ingredients = ["a", "b"].map((id) => ({ name: id, grams: 100, fineliRecordId: id, giRecordId: null }));
   const result = calculateGlycemicLoad({ recipeId: "two-unmatched-small", servings: 1, ingredients }, ingredients.map((item) => food(item.fineliRecordId, 0.99)), []);
   assert.equal(result.omittedAvailableCarbohydratePerServingG, 1.98);
+  assert.equal(result.status, "CALCULATED");
+  assert.equal(result.glycemicLoadPerServing, 0);
+  assert.equal(result.confidence, "LOW");
+  assert.equal(result.blockers.length, 0);
+});
+
+test("one 0.99 g unmatched portion is accepted without rounding the carbohydrate amount", () => {
+  const result = calculateGlycemicLoad({ recipeId: "one-unmatched-small", servings: 1, ingredients: [{ name: "food", grams: 100, fineliRecordId: "food", giRecordId: null }] }, [food("food", 0.99)], []);
+  assert.equal(result.status, "CALCULATED");
+  assert.equal(result.omittedAvailableCarbohydratePerServingG, 0.99);
+  assert.equal(result.confidence, "LOW");
+});
+
+test("three 0.7 g unmatched portions exceed the 2 g cumulative tolerance", () => {
+  const ingredients = ["a", "b", "c"].map((id) => ({ name: id, grams: 100, fineliRecordId: id, giRecordId: null }));
+  const result = calculateGlycemicLoad({ recipeId: "three-small", servings: 1, ingredients }, ingredients.map((item) => food(item.fineliRecordId, 0.7)), []);
+  assert.ok(Math.abs(result.omittedAvailableCarbohydratePerServingG - 2.1) < 1e-9);
   assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
   assert.equal(result.glycemicLoadPerServing, null);
-  assert.ok(result.blockers.some((blocker) => /cumulative omitted available carbohydrate/.test(blocker)));
+  assert.ok(result.blockers.some((blocker) => /at or above the 2 g editorial tolerance/.test(blocker)));
+});
+
+test("two 0.5 g unmatched portions remain below the 2 g cumulative tolerance", () => {
+  const ingredients = ["a", "b"].map((id) => ({ name: id, grams: 100, fineliRecordId: id, giRecordId: null }));
+  const result = calculateGlycemicLoad({ recipeId: "two-half", servings: 1, ingredients }, ingredients.map((item) => food(item.fineliRecordId, 0.5)), []);
+  assert.equal(result.omittedAvailableCarbohydratePerServingG, 1);
+  assert.equal(result.status, "CALCULATED");
+  assert.equal(result.confidence, "LOW");
+});
+
+test("exactly 2 g of unmatched carbohydrate blocks the recipe", () => {
+  const result = calculateGlycemicLoad({ recipeId: "exactly-two", servings: 1, ingredients: [{ name: "food", grams: 100, fineliRecordId: "food", giRecordId: null }] }, [food("food", 2)], []);
+  assert.equal(result.omittedAvailableCarbohydratePerServingG, 0);
+  assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(result.glycemicLoadPerServing, null);
+});
+
+test("a single 1 g or larger unmatched portion still blocks", () => {
+  for (const carbs of [1, 1.5]) {
+    const result = calculateGlycemicLoad({ recipeId: `individual-${carbs}`, servings: 1, ingredients: [{ name: "food", grams: 100, fineliRecordId: "food", giRecordId: null }] }, [food("food", carbs)], []);
+    assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+    assert.equal(result.omittedAvailableCarbohydratePerServingG, 0);
+    assert.equal(result.glycemicLoadPerServing, null);
+  }
+});
+
+test("a wrong assigned GI match remains blocking even for a sub-1 g portion", () => {
+  const wrong = { ...gi, foodKey: "different-food" };
+  const result = calculateGlycemicLoad({ recipeId: "small-wrong-match", servings: 1, ingredients: [{ name: "food", grams: 100, fineliRecordId: "food", giRecordId: wrong.id, foodKey: "tested-food", preparationKey: "raw", giMatchEvidence: "Incorrectly assigned GI match." }] }, [food("food", 0.5)], [wrong]);
+  assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(result.omittedAvailableCarbohydratePerServingG, 0);
+  assert.equal(result.glycemicLoadPerServing, null);
 });
 
 test("a single 0.99 g contribution is not rounded away", () => {

@@ -1,6 +1,6 @@
 # Glykeemisen kuorman laadunvarmistus, 25.10.2026
 
-## Rajaus ja nykytila
+## Rajaus ja aiempi 1 g lähtötilanne (historiallinen)
 
 Auditointi kattaa 325 reseptiä lähdesisällön SHA:ssa
 `3e410436a82df391075f7a762c23f011624a8ca6`. Viimeisin rakenteiden tarkistuksen
@@ -107,3 +107,71 @@ toimivuus varmennetaan projektin normaaleilla testeillä ja buildilla.
 Reseptitekstejä, tavallisen ravintoarvolaskennan toteutusta tai Nutritics PR
 #100:aa ei muutettu. Muutokset ovat katselmointiin avatuissa Draft PR:issä;
 niitä ei ole yhdistetty eikä julkaistu tuotantoon.
+### GK-toleranssin lopullinen päätös 25.10.2026
+
+Alla oleva aiempi 1 g:n tilannekuva säilytetään historiallisena vertailuna. Uusi
+hyväksytty toimituksellinen politiikka on nyt yksittäiselle GI-osumattomalle
+ainesosalle alle 1 g imeytyvää hiilihydraattia annosta kohti ja kaikkien tällaisten
+osuuksien summalle alle 2 g annosta kohti. Tasan 2 g estää arvion. Yksittäisraja,
+tuntemattoman määrän esto, lähteistetyn GI:n vaatimus ja väärän GI-vastaavuuden esto
+säilyvät. Tämä on käyttäjälähtöinen toimituksellinen toleranssi, ei mitattu kliininen
+tarkkuusraja.
+
+Uusi koko 325 reseptin laskenta tuotti 112 GK-arviota ja 213 keskeneräistä tulosta;
+aiemman 1 g:n tilannekuvan 99 lasketusta 27 palautui. Samalla 14 aiemmin laskettua
+arviota jäi estetyksi tai estettiin uudelleen, koska niissä oli kelpaamaton,
+perusteeton GI-osuma. Nettomuutos aiempaan tilanteeseen on +13. 135 jo aiemmin
+keskeneräistä reseptiä eivät palautuneet.
+
+| Reseptit yhteensä | Aiemmin laskettu | Nyt laskettu | Aiemmin keskeneräinen | Nyt keskeneräinen | Muuttunut rakenne | Aiempia laskettuja estetty |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 325 | 190 | 112 | 135 | 213 | 72 | 78 |
+
+Aiemmin laskettujen estojen nykyjakauma on
+4 vain kumulatiivisen 2 g rajan vuoksi, 72 GI-lähteen tai vastaavuuden vuoksi,
+1 molemmista syistä ja 1 muun ratkaisemattoman syötteen vuoksi.
+
+Palautuneet reseptit (kaikki matala luottamus; pois jätetty määrä näytetään):
+Munakokkeli, Munakasrulla pinaatti-tuorejuustotäytteellä, Uunimuna-avokadot,
+Uunimunat pinaatilla, Mehevä VHH-lihamureke, VHH-keltainen kanacurry kukkakaalilla,
+Kermainen VHH-lohikeitto kukkakaalilla, Kana-fajitapelti avokadokastikkeella,
+Kermainen lohipata, Gai yang – thaimaalainen grillikana VHH-lisukkeilla,
+VHH-pad kee mao – tuliset kananuudelit, VHH-yum woon sen katkaravuilla ja
+konjacnuudeleilla, Kreikkalaistyylinen kurkku-oliiviaamiainen, Uuniporsas
+kermaisella pannukastikkeella, Hanoilainen bún chả, Yangzhoun paistettu riisi,
+Amritsari-kala maustetussa kikhernejauhokuoressa, Kana-yakitori ja seesamikaali,
+Karjalanpaisti ja paahdettu kaali, Gyeranbap kananmuna-riisikulho, Banh bao
+kananmunalla, Scallion-pannukakut kevätsipulilla, Teehaudutetut kananmunat,
+Kashmirilainen rogan josh, Marokkolainen kana-tagine sitruunalla ja oliiveilla,
+Palak paneer – pinaattia ja intialaista tuorejuustoa sekä Tandoorikana uunissa.
+
+14 aiemmin laskettua tulosta, jotka pysyvät nyt estettyinä kelpaamattoman GI-osuman
+vuoksi: Caponata, Pasta alla Norma, Chettinad-kana, Raejuusto-pesto-kasviskulho,
+VHH-Runebergintortut, Keto-suklaakeksit, VHH-mokkapalat, Kai jiew VHH,
+Lähi-idän kikhernejauho-yrttilettu, Malesialainen congee inkiväärillä, Kiinalainen
+riisipuuro kananmunalla, Thai jok kanalla, Thai porsasjok ja Yrttituorejuusto-
+kinkkurullat. Alle 1 g:n hiilihydraattimäärä ei tee väärästä GI-vastaavuudesta
+kelpaavaa.
+
+27 palautuneesta 5 arvioi GK:ksi 0, koska niiden kaikille pienille positiivisille
+hiilihydraattiosuuksille ei löytynyt kelpaavaa GI:tä. Kaikki viisi ovat merkitty
+matalan luottamuksen noin-arvioiksi, ja pois jätetty 1,147–1,912 g/annos näytetään.
+Täysin lähteistetyistä hiilihydraattimääristä ei syntynyt nollaa: nykyisistä
+lasketuista nollatuloksista kaikki 8 sisältävät näkyvän poisjätön. GI 20/50/80/120
+havainnollistavissa skenaarioissa palautuneiden suurin GK-lisä olisi vastaavasti
+0,394 / 0,985 / 1,576 / 2,363. Määritelty GK-luokka ei muutu missään skenaariossa;
+yhden merkitsevän numeron näyttö muuttuisi 16 / 22 / 23 / 23 palautuneessa
+reseptissä. Skenaariot eivät ole mitattuja GI-arvoja tai epävarmuusvälejä.
+
+112 yhteisen lasketun arvon vertailussa 52 kahden desimaalin GK-arvoa muuttui; 6 siirtyi
+nollasta positiiviseksi, 5 muuttui vähintään yhdellä GK-yksiköllä ja toimituksellisen
+tarkistuslipun sai 11. Luokitusmuutoksia oli 0 ja yhden merkitsevän numeron
+näyttömuutoksia 24. Suurimmat edelleen estävät lähdepuutteet ovat väärät tai
+perusteettomat GI-osumat ja puuttuvat GI-lähteet. Jiaozi, Paella, Jianbing ja 51 jo
+aiemmin keskeneräistä rakennepoikkeamaa pysyvät estettyinä nykyisten lähdeperusteiden
+mukaisesti.
+
+Koneellinen, 325 rivin ennen/jälkeen-auditointi on
+`glycemic-load-before-after-2026-10-25.json`; numeerinen yhteenveto on
+`glycemic-load-quality-audit-2026-10-25.json` ja yksityiskohtainen katselmus on
+`glycemic-load-quality-audit-2026-10-25.md`.

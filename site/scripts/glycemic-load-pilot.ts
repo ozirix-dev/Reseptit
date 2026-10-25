@@ -2,7 +2,13 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import type { FoodRecord } from "./nutrition-model";
-import { calculateGlycemicLoad, type GlycemicIndexRecord, type GlycemicLoadRecipeInput } from "./glycemic-load-model";
+import {
+  calculateGlycemicLoad,
+  CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G,
+  MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G,
+  type GlycemicIndexRecord,
+  type GlycemicLoadRecipeInput,
+} from "./glycemic-load-model";
 import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches } from "./glycemic-load-recipe-binding";
 import { siteContent } from "../src/generated/content.generated";
 
@@ -311,7 +317,7 @@ const report = {
   additionalCarbohydrateEvidence: input.additionalCarbohydrateEvidence ?? null,
   massEvidence: input.massEvidence,
   selectionNotes: input.selectionNotes ?? {},
-  giSourcePolicy: "Published, traceable glucose-scale GI values may support a public ingredient estimate as a direct match, justified analogue, or category mean. Match quality is separate from study quality: analogues and category means force LOW confidence. A missing GI match for an individual contribution below 1 g available carbohydrate per serving may be omitted only while all such recipe contributions sum to less than 1 g per serving; larger known carbohydrate contributions require GI evidence.",
+  giSourcePolicy: `Published, traceable glucose-scale GI values may support a public ingredient estimate as a direct match, justified analogue, or category mean. Match quality is separate from study quality: analogues and category means force LOW confidence. A missing GI match for an individual contribution below ${MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G} g available carbohydrate per serving may be omitted only while all such recipe contributions sum to less than ${CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G} g per serving; larger known carbohydrate contributions require GI evidence. An assigned but invalid or mismatched GI record remains blocking regardless of contribution size, and unknown carbohydrate remains blocking. The cumulative value is a user-centered editorial tolerance, not a clinical precision threshold.`,
   recipeBindingBaseline: recipeBindings.baselineCommit,
   recipeBindingMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.recipes[recipeId], sourceHashes[recipeId])),
   calculationInputMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.calculationInputs[recipeId], calculationInputHashes[recipeId])),
@@ -363,7 +369,7 @@ const publicResults = results.flatMap((result) => {
       url: "/glykeeminen-kuorma/",
       matchKind: "CALCULATION_POLICY",
       confidence: "LOW",
-      note: `Unmatched portions totalling ${result.omittedAvailableCarbohydratePerServingG.toFixed(3)} g available carbohydrate per serving were omitted within the cumulative 1 g editorial tolerance.`,
+      note: `Unmatched portions totalling ${result.omittedAvailableCarbohydratePerServingG.toFixed(3)} g available carbohydrate per serving were omitted within the cumulative ${CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G} g editorial tolerance.`,
     });
   }
   const incompleteReasons = result.blockers.map((blocker) => {

@@ -47,6 +47,11 @@ export interface GlycemicLoadRecipeInput {
   ingredients: GlycemicLoadIngredientInput[];
 }
 
+/** Per-ingredient ceiling for omitting a positive, unmatched GI contribution. */
+export const MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G = 1;
+/** Editorial cap for all such omitted portions combined per serving; equality blocks. */
+export const CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G = 2;
+
 export interface GlycemicLoadResult {
   recipeId: string;
   servings: number;
@@ -176,14 +181,14 @@ export function calculateGlycemicLoad(
     if (ingredient.excludedReason) {
       const estimatedCarbs = ingredient.estimatedAvailableCarbohydratePerServingG;
       const documentedZero = valid(estimatedCarbs) && estimatedCarbs === 0 && Boolean(ingredient.negligibleAssumption);
-      const smallOmission = valid(estimatedCarbs) && estimatedCarbs > 0 && estimatedCarbs < 1 && Boolean(ingredient.negligibleAssumption);
+      const smallOmission = valid(estimatedCarbs) && estimatedCarbs > 0 && estimatedCarbs < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G && Boolean(ingredient.negligibleAssumption);
       if (smallOmission) {
         omittedAvailableCarbohydratePerServingG += estimatedCarbs;
         confidence = "LOW";
       }
       const issue = documentedZero
         ? `Source-documented zero available carbohydrate: ${ingredient.negligibleAssumption}`
-        : smallOmission ? `Small contribution counted toward cumulative 1 g/serving editorial tolerance: ${ingredient.negligibleAssumption}`
+        : smallOmission ? `Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: ${ingredient.negligibleAssumption}`
         : ingredient.excludedReason || "Ingredient amount or Fineli mapping is missing; it is not treated as zero.";
       if (!documentedZero && !smallOmission) blockers.push(`${input.recipeId}: ${ingredient.name}: ${issue}`);
       return {
@@ -269,10 +274,10 @@ export function calculateGlycemicLoad(
         const reason = !matchedGi ? ingredient.giMatchEvidence || "GI evidence is missing."
           : foodFamilyMismatch ? "GI food family does not match the ingredient (for example, rice is not rice vinegar or dairy is not milk chocolate)."
           : "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.";
-        if (availablePerServing < 1) {
+        if (availablePerServing < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G && ingredient.giRecordId === null) {
           omittedAvailableCarbohydratePerServingG += availablePerServing;
           confidence = "LOW";
-          issues.push(`Small contribution omitted under cumulative 1 g/serving editorial tolerance (${availablePerServing.toFixed(3)} g available carbohydrate): ${reason}`);
+          issues.push(`Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (${availablePerServing.toFixed(3)} g available carbohydrate): ${reason}`);
         } else issues.push(reason);
       } else {
         if (match !== "EXACT" || matchedGi!.qualityTier !== "STRONG") ingredientConfidence = "LOW";
@@ -293,7 +298,7 @@ export function calculateGlycemicLoad(
     }
 
     for (const issue of issues) {
-      if (!issue.startsWith("Small contribution omitted under cumulative 1 g/serving editorial tolerance")) blockers.push(`${input.recipeId}: ${ingredient.name}: ${issue}`);
+      if (!issue.startsWith("Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance")) blockers.push(`${input.recipeId}: ${ingredient.name}: ${issue}`);
     }
     return {
       name: ingredient.name,
@@ -314,7 +319,7 @@ export function calculateGlycemicLoad(
     };
   });
 
-  if (omittedAvailableCarbohydratePerServingG >= 1) blockers.push(`${input.recipeId}: cumulative omitted available carbohydrate is ${omittedAvailableCarbohydratePerServingG.toFixed(3)} g/serving, above the 1 g editorial tolerance.`);
+  if (omittedAvailableCarbohydratePerServingG >= CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G) blockers.push(`${input.recipeId}: cumulative omitted available carbohydrate is ${omittedAvailableCarbohydratePerServingG.toFixed(3)} g/serving, at or above the 2 g editorial tolerance.`);
   const complete = blockers.length === 0;
   return {
     recipeId: input.recipeId,
@@ -328,7 +333,7 @@ export function calculateGlycemicLoad(
     } : null,
     omittedAvailableCarbohydratePerServingG,
     confidence: complete ? confidence : null,
-    interpretation: "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. Unmatched sub-1 g ingredient portions may be omitted only while their cumulative amount stays below the documented 1 g/serving editorial tolerance.",
+    interpretation: "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
     ingredients,
     blockers,
   };

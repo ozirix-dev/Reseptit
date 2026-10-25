@@ -88,8 +88,8 @@ test("recipe index is prerendered and links only published languages", async () 
 test("GK values link to centralized recipe details on every published translation", async () => {
   assert.equal(glycemicLoadPilotReviewedRecipeCount, 325);
   assert.equal(glycemicLoadPilotResults.length, 324);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, 99);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 225);
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, 112);
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 212);
   for (const [id, expected] of [
     ["indonesialainen-ketoprak-aamiaiskulho", 26.67],
     ["lahi-ita-manakish-zaatarilla", 33.06],
@@ -103,7 +103,9 @@ test("GK values link to centralized recipe details on every published translatio
   const paella = glycemicLoadPilotResults.find((entry) => entry.recipeId === "paella-valenciana");
   assert.equal(paella?.status, "INSUFFICIENT SOURCE DATA", "Paella remains blocked without a suitable chicken-stock GI source");
   assert.equal(paella?.glycemicLoadPerServing, null);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED" && result.glycemicLoadPerServing === 0 && result.omittedAvailableCarbohydratePerServingG > 0).length, 3);
+  const calculatedWithOmissions = glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED" && result.omittedAvailableCarbohydratePerServingG > 0);
+  assert.ok(calculatedWithOmissions.every((result) => result.confidence === "LOW"), "omitted carbohydrate always lowers estimate confidence");
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED" && result.glycemicLoadPerServing === 0 && result.omittedAvailableCarbohydratePerServingG > 0).length, 8);
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
     assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);

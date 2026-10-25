@@ -3,12 +3,12 @@
     "recipeId": "munakokkeli",
     "beforeStatus": "CALCULATED",
     "before": 0,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "munakokkeli: cumulative omitted available carbohydrate is 1.147 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.146550000667572
+    "afterStatus": "CALCULATED",
+    "after": 0,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.146550000667572,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "munakasmuffinit",
@@ -17,18 +17,20 @@
     "afterStatus": "CALCULATED",
     "after": 0,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.8083333335816859
+    "omittedAvailableCarbohydratePerServingG": 0.8083333335816859,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "munakasrulla-pinaatti-tuorejuustolla",
     "beforeStatus": "CALCULATED",
     "before": 0.35,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "munakasrulla-pinaatti-tuorejuustolla: cumulative omitted available carbohydrate is 1.200 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.2005
+    "afterStatus": "CALCULATED",
+    "after": 0.35,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.2005,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "munatacot-huevos-rancheros",
@@ -37,10 +39,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "munatacot-huevos-rancheros: tomaattimurska: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "munatacot-huevos-rancheros: cumulative omitted available carbohydrate is 1.917 g/serving, above the 1 g editorial tolerance."
+      "munatacot-huevos-rancheros: tomaattimurska: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.9170178294777864
+    "omittedAvailableCarbohydratePerServingG": 1.9170178294777864,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "paprikauunimunakkaat",
@@ -49,7 +52,9 @@
     "afterStatus": "CALCULATED",
     "after": 3.06,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.6555500006675721
+    "omittedAvailableCarbohydratePerServingG": 0.6555500006675721,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "shakshuka",
@@ -60,29 +65,31 @@
     "blockers": [
       "shakshuka: tomaattimurska: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.63
+    "omittedAvailableCarbohydratePerServingG": 0.63,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "uunimuna-avokadot",
     "beforeStatus": "CALCULATED",
     "before": 0,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "uunimuna-avokadot: cumulative omitted available carbohydrate is 1.456 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.455549981594086
+    "afterStatus": "CALCULATED",
+    "after": 0,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.455549981594086,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "uunimunat-pinaatilla",
     "beforeStatus": "CALCULATED",
     "before": 0,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "uunimunat-pinaatilla: cumulative omitted available carbohydrate is 1.578 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.578
+    "afterStatus": "CALCULATED",
+    "after": 0,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.578,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "tortilla-de-patatas",
@@ -91,21 +98,22 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "tortilla-de-patatas: peruna: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "tortilla-de-patatas: cumulative omitted available carbohydrate is 1.057 g/serving, above the 1 g editorial tolerance."
+      "tortilla-de-patatas: peruna: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.0574999999999999
+    "omittedAvailableCarbohydratePerServingG": 1.0574999999999999,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-lihamureke",
     "beforeStatus": "CALCULATED",
     "before": 0,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "vhh-lihamureke: cumulative omitted available carbohydrate is 1.912 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.9116666666666668
+    "afterStatus": "CALCULATED",
+    "after": 0,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.9116666666666668,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "hummus",
@@ -114,7 +122,9 @@
     "afterStatus": "CALCULATED",
     "after": 6.16,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.573875
+    "omittedAvailableCarbohydratePerServingG": 0.573875,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "chili-con-carne-kukkakaaliriisi",
@@ -123,10 +133,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "chili-con-carne-kukkakaaliriisi: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "chili-con-carne-kukkakaaliriisi: cumulative omitted available carbohydrate is 1.260 g/serving, above the 1 g editorial tolerance."
+      "chili-con-carne-kukkakaaliriisi: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.2600000000000002
+    "omittedAvailableCarbohydratePerServingG": 1.2600000000000002,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "ratatouille",
@@ -135,10 +146,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "ratatouille: kypsiä tomaatteja: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "ratatouille: cumulative omitted available carbohydrate is 1.369 g/serving, above the 1 g editorial tolerance."
+      "ratatouille: kypsiä tomaatteja: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.3694374999999999
+    "omittedAvailableCarbohydratePerServingG": 1.3694374999999999,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-kaalikaarryleet",
@@ -147,9 +159,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "vhh-kaalikaarryleet: cumulative omitted available carbohydrate is 1.578 g/serving, above the 1 g editorial tolerance."
+      "vhh-kaalikaarryleet: kuohukermaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.578025
+    "omittedAvailableCarbohydratePerServingG": 0.8530250000000001,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "jauheliha-kaalikeitto-vhh",
@@ -160,7 +174,9 @@
     "blockers": [
       "jauheliha-kaalikeitto-vhh: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.96385
+    "omittedAvailableCarbohydratePerServingG": 0.96385,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "taytetyt-paprikat-vhh",
@@ -171,7 +187,9 @@
     "blockers": [
       "taytetyt-paprikat-vhh: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.7528125000000001
+    "omittedAvailableCarbohydratePerServingG": 0.7528125000000001,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-kaalilaatikko",
@@ -180,9 +198,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "vhh-kaalilaatikko: cumulative omitted available carbohydrate is 2.144 g/serving, above the 1 g editorial tolerance."
+      "vhh-kaalilaatikko: kuohukermaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 2.1441833333333333
+    "omittedAvailableCarbohydratePerServingG": 1.1775166666666668,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "munakoiso-jauhelihavuoka-vhh",
@@ -193,7 +213,9 @@
     "blockers": [
       "munakoiso-jauhelihavuoka-vhh: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.7828125000000001
+    "omittedAvailableCarbohydratePerServingG": 0.7828125000000001,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "valimerellinen-kikherne-yrttiaamiainen",
@@ -202,7 +224,9 @@
     "afterStatus": "CALCULATED",
     "after": 4.93,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.9520000000000001
+    "omittedAvailableCarbohydratePerServingG": 0.9520000000000001,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lahi-ita-kikherne-shakshuka",
@@ -213,7 +237,9 @@
     "blockers": [
       "lahi-ita-kikherne-shakshuka: tomaatti: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.237
+    "omittedAvailableCarbohydratePerServingG": 0.237,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "massaman-curry-kanalla-vhh",
@@ -224,7 +250,9 @@
     "blockers": [
       "massaman-curry-kanalla-vhh: nauris: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.95
+    "omittedAvailableCarbohydratePerServingG": 0.95,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "chole-bhature",
@@ -235,7 +263,9 @@
     "blockers": [
       "chole-bhature: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "gulab-jamun",
@@ -244,7 +274,9 @@
     "afterStatus": "CALCULATED",
     "after": 49.05,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "samosa",
@@ -255,7 +287,9 @@
     "blockers": [
       "samosa: perunoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "aloo-paratha",
@@ -266,7 +300,9 @@
     "blockers": [
       "aloo-paratha: perunoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vada-pav",
@@ -277,7 +313,9 @@
     "blockers": [
       "vada-pav: kikhernejauhoja: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pani-puri",
@@ -289,7 +327,9 @@
       "pani-puri: perunoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "pani-puri: tamarinditahnaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "medu-vada",
@@ -298,7 +338,9 @@
     "afterStatus": "CALCULATED",
     "after": 10.77,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "jauheliha-makaronilaatikko",
@@ -307,7 +349,9 @@
     "afterStatus": "CALCULATED",
     "after": 18.23,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lohikeitto-kuohukermalla",
@@ -318,7 +362,9 @@
     "blockers": [
       "lohikeitto-kuohukermalla: perunaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "butter-chicken",
@@ -329,7 +375,9 @@
     "blockers": [
       "butter-chicken: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "punainen-kanacurry-vhh",
@@ -340,7 +388,9 @@
     "blockers": [
       "punainen-kanacurry-vhh: täysrasvaista kookosmaitoa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "thai-vihrea-curry-kanalla-vhh",
@@ -351,7 +401,9 @@
     "blockers": [
       "thai-vihrea-curry-kanalla-vhh: täysrasvaista kookosmaitoa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "panang-curry-kanalla-vhh",
@@ -362,7 +414,9 @@
     "blockers": [
       "panang-curry-kanalla-vhh: täysrasvaista kookosmaitoa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "menemen",
@@ -373,7 +427,9 @@
     "blockers": [
       "menemen: kypsää tomaattia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lihapullat-kermakastikkeessa-vhh",
@@ -382,7 +438,9 @@
     "afterStatus": "CALCULATED",
     "after": 3.53,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kanakorma-kukkakaaliriisilla",
@@ -391,7 +449,9 @@
     "afterStatus": "CALCULATED",
     "after": 3.45,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "uunikanapasta-kesakurpitsa",
@@ -402,7 +462,9 @@
     "blockers": [
       "uunikanapasta-kesakurpitsa: kirsikkatomaatteja: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "khao-kha-moo-vhh",
@@ -411,7 +473,9 @@
     "afterStatus": "CALCULATED",
     "after": 2.78,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "larb-moo-vhh",
@@ -420,7 +484,9 @@
     "afterStatus": "CALCULATED",
     "after": 3.13,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "jauhelihakastike-kesakurpitsanuudeleilla",
@@ -429,7 +495,9 @@
     "afterStatus": "CALCULATED",
     "after": 3.4,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pizza-margherita",
@@ -438,7 +506,9 @@
     "afterStatus": "CALCULATED",
     "after": 65.14,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.1369
+    "omittedAvailableCarbohydratePerServingG": 0.1369,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "meheva-suklaakakku",
@@ -448,9 +518,12 @@
     "after": null,
     "blockers": [
       "meheva-suklaakakku: tummaa suklaata: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "meheva-suklaakakku: kaakaojauhetta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "meheva-suklaakakku: tummaa suklaata: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.6352
+    "omittedAvailableCarbohydratePerServingG": 0.3052,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "marjakiisseli-vaniljakastikkeella",
@@ -459,7 +532,9 @@
     "afterStatus": "CALCULATED",
     "after": 19.93,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.013333333333333334
+    "omittedAvailableCarbohydratePerServingG": 0.013333333333333334,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pannacotta-marjakastikkeella",
@@ -468,16 +543,22 @@
     "afterStatus": "CALCULATED",
     "after": 12.56,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.04
+    "omittedAvailableCarbohydratePerServingG": 0.04,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "caponata",
     "beforeStatus": "CALCULATED",
     "before": 6.66,
-    "afterStatus": "CALCULATED",
-    "after": 7,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.11549999999999999
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "caponata: kapriksia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.07725,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "siemengranola-jogurtilla",
@@ -486,9 +567,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "siemengranola-jogurtilla: cumulative omitted available carbohydrate is 2.064 g/serving, above the 1 g editorial tolerance."
+      "siemengranola-jogurtilla: cumulative omitted available carbohydrate is 2.064 g/serving, at or above the 2 g editorial tolerance."
     ],
-    "omittedAvailableCarbohydratePerServingG": 2.06375
+    "omittedAvailableCarbohydratePerServingG": 2.06375,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "koshari",
@@ -497,7 +580,9 @@
     "afterStatus": "CALCULATED",
     "after": 50.57,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.0375
+    "omittedAvailableCarbohydratePerServingG": 0.0375,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "baozi",
@@ -506,9 +591,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "baozi: cumulative omitted available carbohydrate is 1.185 g/serving, above the 1 g editorial tolerance."
+      "baozi: raastettua inkivääriä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.1845
+    "omittedAvailableCarbohydratePerServingG": 1.1125,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "marokkolainen-couscous",
@@ -518,18 +605,25 @@
     "after": null,
     "blockers": [
       "marokkolainen-couscous: couscousia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "marokkolainen-couscous: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      "marokkolainen-couscous: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "marokkolainen-couscous: jauhettua korianteria: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.153
+    "omittedAvailableCarbohydratePerServingG": 0.111,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pasta-alla-norma",
     "beforeStatus": "CALCULATED",
     "before": 33.02,
-    "afterStatus": "CALCULATED",
-    "after": 33.07,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.34750000000000003
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "pasta-alla-norma: tuoretta basilikaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.3375,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "bulgogi",
@@ -538,9 +632,12 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "bulgogi: päärynää: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      "bulgogi: päärynää: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "bulgogi: seesaminsiemeniä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.02488375
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "congee-riisipuuro",
@@ -549,9 +646,12 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "congee-riisipuuro: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      "congee-riisipuuro: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "congee-riisipuuro: tuoretta inkivääriä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.867
+    "omittedAvailableCarbohydratePerServingG": 0.795,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "tomaatti-kananmuna-wokki",
@@ -560,7 +660,9 @@
     "afterStatus": "CALCULATED",
     "after": 22.81,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.6950000000000001
+    "omittedAvailableCarbohydratePerServingG": 0.6950000000000001,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "harira",
@@ -569,9 +671,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "harira: cumulative omitted available carbohydrate is 1.115 g/serving, above the 1 g editorial tolerance."
+      "harira: jauhettua inkivääriä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.1155
+    "omittedAvailableCarbohydratePerServingG": 0.9238333333333334,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kreikkalainen-moussaka",
@@ -580,7 +684,9 @@
     "afterStatus": "CALCULATED",
     "after": 18.46,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.1991666666666667
+    "omittedAvailableCarbohydratePerServingG": 0.1991666666666667,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "doner-kebab",
@@ -589,7 +695,9 @@
     "afterStatus": "CALCULATED",
     "after": 19.14,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.066
+    "omittedAvailableCarbohydratePerServingG": 0.066,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "souvlaki",
@@ -598,7 +706,9 @@
     "afterStatus": "CALCULATED",
     "after": 17.94,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.39599999999999996
+    "omittedAvailableCarbohydratePerServingG": 0.39599999999999996,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "gazpacho",
@@ -607,7 +717,9 @@
     "afterStatus": "CALCULATED",
     "after": 8.32,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.0375
+    "omittedAvailableCarbohydratePerServingG": 0.0375,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "spanakopita",
@@ -618,7 +730,9 @@
     "blockers": [
       "spanakopita: filotaikinaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.0775
+    "omittedAvailableCarbohydratePerServingG": 0.0775,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "tabbouleh",
@@ -627,9 +741,13 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "tabbouleh: hienoa bulguria: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      "tabbouleh: hienoa bulguria: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "tabbouleh: lehtipersiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "tabbouleh: tuoretta minttua: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.33
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "poronkaristys-kukkakaalimuusilla",
@@ -638,7 +756,9 @@
     "afterStatus": "CALCULATED",
     "after": 3.19,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.05600000000000001
+    "omittedAvailableCarbohydratePerServingG": 0.05600000000000001,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "liha-juureskeitto-perunaton",
@@ -647,9 +767,12 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "liha-juureskeitto-perunaton: lanttua: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      "liha-juureskeitto-perunaton: lanttua: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "liha-juureskeitto-perunaton: silputtua persiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.222
+    "omittedAvailableCarbohydratePerServingG": 0.2,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-omenapiirakka",
@@ -658,16 +781,23 @@
     "afterStatus": "CALCULATED",
     "after": 2.08,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.48062499999999997
+    "omittedAvailableCarbohydratePerServingG": 0.48062499999999997,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "chettinad-kana",
     "beforeStatus": "CALCULATED",
     "before": 0.48,
-    "afterStatus": "CALCULATED",
-    "after": 0.73,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.97825
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "chettinad-kana: tuoretta inkivääriä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "chettinad-kana: korianterinsiemeniä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.75625,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-raparperipiirakka",
@@ -678,7 +808,9 @@
     "blockers": [
       "vhh-raparperipiirakka: raparperia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.16337500000000002
+    "omittedAvailableCarbohydratePerServingG": 0.16337500000000002,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-mansikkakakku",
@@ -687,7 +819,9 @@
     "afterStatus": "CALCULATED",
     "after": 1.45,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.1704
+    "omittedAvailableCarbohydratePerServingG": 0.1704,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kermainen-kanasienipannu",
@@ -696,16 +830,23 @@
     "afterStatus": "CALCULATED",
     "after": 1.02,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.31925000000000003
+    "omittedAvailableCarbohydratePerServingG": 0.31925000000000003,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "raejuusto-pesto-kasviskulho",
     "beforeStatus": "CALCULATED",
     "before": 0.44,
-    "afterStatus": "CALCULATED",
-    "after": 0.86,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.630975
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "raejuusto-pesto-kasviskulho: paahdettuja pinjansiemeniä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "raejuusto-pesto-kasviskulho: rucolaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.20447500000000002,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kana-parmesaanipannu-parsakaali",
@@ -714,7 +855,9 @@
     "afterStatus": "CALCULATED",
     "after": 1.31,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.278
+    "omittedAvailableCarbohydratePerServingG": 0.278,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-juustokakku",
@@ -723,7 +866,9 @@
     "afterStatus": "CALCULATED",
     "after": 1.09,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.41469999999999996
+    "omittedAvailableCarbohydratePerServingG": 0.41469999999999996,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-brita-kakku",
@@ -732,7 +877,9 @@
     "afterStatus": "CALCULATED",
     "after": 1.18,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.2665
+    "omittedAvailableCarbohydratePerServingG": 0.2665,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "rahkapiirakka-vhh",
@@ -741,7 +888,9 @@
     "afterStatus": "CALCULATED",
     "after": 1.11,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.168375
+    "omittedAvailableCarbohydratePerServingG": 0.168375,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-letut",
@@ -750,7 +899,9 @@
     "afterStatus": "CALCULATED",
     "after": 1,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.274
+    "omittedAvailableCarbohydratePerServingG": 0.274,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-lihapiirakka",
@@ -759,16 +910,22 @@
     "afterStatus": "CALCULATED",
     "after": 1.04,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.04125
+    "omittedAvailableCarbohydratePerServingG": 0.04125,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-runebergintortut",
     "beforeStatus": "CALCULATED",
     "before": 0.63,
-    "afterStatus": "CALCULATED",
-    "after": 0.91,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.36833333333333335
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "vhh-runebergintortut: kardemummaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.2536666666666667,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "keto-korvapuustit",
@@ -777,7 +934,9 @@
     "afterStatus": "CALCULATED",
     "after": 0.96,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.14
+    "omittedAvailableCarbohydratePerServingG": 0.14,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-korvapuustit",
@@ -786,7 +945,9 @@
     "afterStatus": "CALCULATED",
     "after": 0.56,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.596875
+    "omittedAvailableCarbohydratePerServingG": 0.596875,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "keto-mutakakku",
@@ -795,27 +956,39 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "keto-mutakakku: cumulative omitted available carbohydrate is 1.220 g/serving, above the 1 g editorial tolerance."
+      "keto-mutakakku: sokeritonta tummaa suklaata: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "keto-mutakakku: kaakaojauhetta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.2196250000000002
+    "omittedAvailableCarbohydratePerServingG": 0.313375,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "keto-suklaakeksit",
     "beforeStatus": "CALCULATED",
     "before": 0,
-    "afterStatus": "CALCULATED",
-    "after": 0.56,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.5073
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "keto-suklaakeksit: sokeritonta tummaa suklaata paloina: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.2613,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-mokkapalat",
     "beforeStatus": "CALCULATED",
     "before": 0,
-    "afterStatus": "CALCULATED",
-    "after": 0.4,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.36475
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "vhh-mokkapalat: kaakaojauhetta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "vhh-mokkapalat: kaakaojauhetta kuorrutteeseen: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.22725,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "maksalaatikko-kukkakaalilla",
@@ -825,10 +998,11 @@
     "after": null,
     "blockers": [
       "maksalaatikko-kukkakaalilla: naudan maksaa: GI evidence is missing.",
-      "maksalaatikko-kukkakaalilla: puolukoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "maksalaatikko-kukkakaalilla: cumulative omitted available carbohydrate is 1.107 g/serving, above the 1 g editorial tolerance."
+      "maksalaatikko-kukkakaalilla: puolukoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.10725
+    "omittedAvailableCarbohydratePerServingG": 1.10725,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "paistettu-maksa-pekonilla",
@@ -839,7 +1013,9 @@
     "blockers": [
       "paistettu-maksa-pekonilla: naudan maksaa: GI evidence is missing."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.9160000000000001
+    "omittedAvailableCarbohydratePerServingG": 0.9160000000000001,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "khao-man-gai-vhh",
@@ -848,18 +1024,20 @@
     "afterStatus": "CALCULATED",
     "after": 3.67,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.6605
+    "omittedAvailableCarbohydratePerServingG": 0.6605,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "keltainen-kanacurry-vhh",
     "beforeStatus": "CALCULATED",
     "before": 3.48,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "keltainen-kanacurry-vhh: cumulative omitted available carbohydrate is 1.158 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.1577499999999998
+    "afterStatus": "CALCULATED",
+    "after": 3.48,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.1577499999999998,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kesakurpitsalasagne-vhh",
@@ -868,7 +1046,9 @@
     "afterStatus": "CALCULATED",
     "after": 2.77,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.507975
+    "omittedAvailableCarbohydratePerServingG": 0.507975,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pad-thai-vhh-konjac",
@@ -877,10 +1057,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "pad-thai-vhh-konjac: tamarinditahnaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "pad-thai-vhh-konjac: cumulative omitted available carbohydrate is 1.636 g/serving, above the 1 g editorial tolerance."
+      "pad-thai-vhh-konjac: tamarinditahnaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.6357499999999996
+    "omittedAvailableCarbohydratePerServingG": 1.6357499999999996,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "rahka-marjakerroskulho",
@@ -891,20 +1072,23 @@
     "blockers": [
       "rahka-marjakerroskulho: mansikoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "rahka-marjakerroskulho: mustikoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "rahka-marjakerroskulho: hasselpähkinöitä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "rahka-marjakerroskulho: makeutusainetta maun mukaan: Sweetener type and amount are unspecified; carbohydrate content cannot be determined."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.2
+    "omittedAvailableCarbohydratePerServingG": 0.03,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-lohikeitto-kukkakaalilla",
     "beforeStatus": "CALCULATED",
     "before": 2.88,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "vhh-lohikeitto-kukkakaalilla: cumulative omitted available carbohydrate is 1.233 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.2325000000000002
+    "afterStatus": "CALCULATED",
+    "after": 2.88,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.2325000000000002,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "valimerellinen-tortilla-espanola-aamupalaksi",
@@ -915,18 +1099,20 @@
     "blockers": [
       "valimerellinen-tortilla-espanola-aamupalaksi: sipulia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.365
+    "omittedAvailableCarbohydratePerServingG": 0.365,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kana-fajita-pelti",
     "beforeStatus": "CALCULATED",
     "before": 1.53,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "kana-fajita-pelti: cumulative omitted available carbohydrate is 1.525 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.525017834901809
+    "afterStatus": "CALCULATED",
+    "after": 1.78,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.525017834901809,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "italian-pata",
@@ -935,7 +1121,9 @@
     "afterStatus": "CALCULATED",
     "after": 2.57,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.34655
+    "omittedAvailableCarbohydratePerServingG": 0.34655,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kukkakaaligratiini-pekonilla",
@@ -944,7 +1132,9 @@
     "afterStatus": "CALCULATED",
     "after": 3.28,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.2
+    "omittedAvailableCarbohydratePerServingG": 0.2,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "valimerellinen-menemen-fetalla",
@@ -953,7 +1143,9 @@
     "afterStatus": "CALCULATED",
     "after": 2.2,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.365
+    "omittedAvailableCarbohydratePerServingG": 0.365,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "khao-soi-vhh-konjac",
@@ -962,9 +1154,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "khao-soi-vhh-konjac: cumulative omitted available carbohydrate is 1.983 g/serving, above the 1 g editorial tolerance."
+      "khao-soi-vhh-konjac: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.983
+    "omittedAvailableCarbohydratePerServingG": 1.483,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "broileri-kukkakaaligratiini",
@@ -973,7 +1167,9 @@
     "afterStatus": "CALCULATED",
     "after": 2.88,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.1478875
+    "omittedAvailableCarbohydratePerServingG": 0.1478875,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "som-tam-vhh-kurkkuna",
@@ -984,7 +1180,9 @@
     "blockers": [
       "som-tam-vhh-kurkkuna: vihreitä papuja: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.36675
+    "omittedAvailableCarbohydratePerServingG": 0.36675,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kanakeitto-pinaatti-sitruuna",
@@ -995,7 +1193,9 @@
     "blockers": [
       "kanakeitto-pinaatti-sitruuna: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.453
+    "omittedAvailableCarbohydratePerServingG": 0.453,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pad-kra-pao-vhh",
@@ -1004,7 +1204,9 @@
     "afterStatus": "CALCULATED",
     "after": 2.5,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.9907499999999999
+    "omittedAvailableCarbohydratePerServingG": 0.9907499999999999,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pohjoisafrikkalainen-maakouda",
@@ -1013,29 +1215,31 @@
     "afterStatus": "CALCULATED",
     "after": 3.3,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.5035000000000001
+    "omittedAvailableCarbohydratePerServingG": 0.5035000000000001,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kermainen-lohipata",
     "beforeStatus": "CALCULATED",
     "before": 1.21,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "kermainen-lohipata: cumulative omitted available carbohydrate is 1.499 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.49935
+    "afterStatus": "CALCULATED",
+    "after": 1.26,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.49935,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "gai-yang-vhh",
     "beforeStatus": "CALCULATED",
     "before": 1.94,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "gai-yang-vhh: cumulative omitted available carbohydrate is 1.346 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.3464999999999998
+    "afterStatus": "CALCULATED",
+    "after": 2.4,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.3464999999999998,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "tom-yum-goong-vhh",
@@ -1045,21 +1249,22 @@
     "after": null,
     "blockers": [
       "tom-yum-goong-vhh: kalaliemikuutiota: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "tom-yum-goong-vhh: sitruunaruohoa: Fresh lemongrass is removed after simmering, but no matching Fineli/AFCD food mapping or retained-solids carbohydrate estimate is available.",
-      "tom-yum-goong-vhh: cumulative omitted available carbohydrate is 1.535 g/serving, above the 1 g editorial tolerance."
+      "tom-yum-goong-vhh: sitruunaruohoa: Fresh lemongrass is removed after simmering, but no matching Fineli/AFCD food mapping or retained-solids carbohydrate estimate is available."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.535
+    "omittedAvailableCarbohydratePerServingG": 1.535,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pad-kee-mao-vhh-konjac",
     "beforeStatus": "CALCULATED",
     "before": 1.79,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "pad-kee-mao-vhh-konjac: cumulative omitted available carbohydrate is 1.970 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.9695
+    "afterStatus": "CALCULATED",
+    "after": 1.79,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.9695,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "paahdettu-aamiaismunakoiso",
@@ -1068,7 +1273,9 @@
     "afterStatus": "CALCULATED",
     "after": 2.43,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.358
+    "omittedAvailableCarbohydratePerServingG": 0.358,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-mustikkapiirakka",
@@ -1077,10 +1284,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "vhh-mustikkapiirakka: mustikoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "vhh-mustikkapiirakka: cumulative omitted available carbohydrate is 1.194 g/serving, above the 1 g editorial tolerance."
+      "vhh-mustikkapiirakka: mustikoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.1943750000000002
+    "omittedAvailableCarbohydratePerServingG": 1.1943750000000002,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "ketopizza-pofiber-pohjalla",
@@ -1091,7 +1299,9 @@
     "blockers": [
       "ketopizza-pofiber-pohjalla: pizzatäytteitä: The recipe leaves 150 g of pizza toppings to the cook; ingredient identities and available carbohydrate cannot be established."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.975
+    "omittedAvailableCarbohydratePerServingG": 0.975,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "tom-kha-gai-vhh",
@@ -1100,10 +1310,12 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "tom-kha-gai-vhh: sitruunaruohoa: Fresh lemongrass is removed after simmering; no matching Fineli/AFCD mapping or retained-solids carbohydrate estimate is available.",
-      "tom-kha-gai-vhh: cumulative omitted available carbohydrate is 1.985 g/serving, above the 1 g editorial tolerance."
+      "tom-kha-gai-vhh: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "tom-kha-gai-vhh: sitruunaruohoa: Fresh lemongrass is removed after simmering; no matching Fineli/AFCD mapping or retained-solids carbohydrate estimate is available."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.9847499999999996
+    "omittedAvailableCarbohydratePerServingG": 1.4509999999999998,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "marjainen-chiavanukas",
@@ -1116,7 +1328,9 @@
       "marjainen-chiavanukas: mustikoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "marjainen-chiavanukas: makeutusainetta maun mukaan: Sweetener type and quantity are unspecified; its available carbohydrate cannot be determined."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.2625
+    "omittedAvailableCarbohydratePerServingG": 0.2625,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "halloumimunakas",
@@ -1125,7 +1339,9 @@
     "afterStatus": "CALCULATED",
     "after": 0.82,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.5245
+    "omittedAvailableCarbohydratePerServingG": 0.5245,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pad-see-ew-vhh-konjac",
@@ -1134,9 +1350,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "pad-see-ew-vhh-konjac: cumulative omitted available carbohydrate is 2.659 g/serving, above the 1 g editorial tolerance."
+      "pad-see-ew-vhh-konjac: cumulative omitted available carbohydrate is 2.659 g/serving, at or above the 2 g editorial tolerance."
     ],
-    "omittedAvailableCarbohydratePerServingG": 2.6585
+    "omittedAvailableCarbohydratePerServingG": 2.6585,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "raejuusto-uunimunakas",
@@ -1148,7 +1366,9 @@
       "raejuusto-uunimunakas: voita: Butter is listed without an amount; no bounded serving quantity is provided.",
       "raejuusto-uunimunakas: ruohosipulia: Chives are listed without an amount; no bounded serving quantity is provided."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.6124999999999999
+    "omittedAvailableCarbohydratePerServingG": 0.6124999999999999,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "keto-kauralesesampylat",
@@ -1157,7 +1377,9 @@
     "afterStatus": "CALCULATED",
     "after": 1.34,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.573375
+    "omittedAvailableCarbohydratePerServingG": 0.573375,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
@@ -1166,9 +1388,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "jauhelihapihvit-vhh-kermakastikkeella: cumulative omitted available carbohydrate is 1.187 g/serving, above the 1 g editorial tolerance."
+      "jauhelihapihvit-vhh-kermakastikkeella: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.18705
+    "omittedAvailableCarbohydratePerServingG": 0.43705,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "keto-pannukakku",
@@ -1177,7 +1401,9 @@
     "afterStatus": "CALCULATED",
     "after": 0.86,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.5549999999999999
+    "omittedAvailableCarbohydratePerServingG": 0.5549999999999999,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kaakao-kookos-chia",
@@ -1189,7 +1415,9 @@
       "kaakao-kookos-chia: kookosjuomaa: GI evidence is missing.",
       "kaakao-kookos-chia: makeutusainetta maun mukaan: Sweetener type and quantity are unspecified; its available carbohydrate cannot be determined."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.6625000000000001
+    "omittedAvailableCarbohydratePerServingG": 0.6625000000000001,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "parsakaali-sinihomejuustofrittata",
@@ -1198,18 +1426,20 @@
     "afterStatus": "CALCULATED",
     "after": 0.97,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.37450000000000006
+    "omittedAvailableCarbohydratePerServingG": 0.37450000000000006,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "yum-woon-sen-vhh",
     "beforeStatus": "CALCULATED",
     "before": 0.24,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "yum-woon-sen-vhh: cumulative omitted available carbohydrate is 1.133 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.1332
+    "afterStatus": "CALCULATED",
+    "after": 0.24,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.1332,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "keto-pinaattiletut",
@@ -1218,18 +1448,20 @@
     "afterStatus": "CALCULATED",
     "after": 0.47,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.877
+    "omittedAvailableCarbohydratePerServingG": 0.877,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kurkku-oliivi-aamiaiskulho",
     "beforeStatus": "CALCULATED",
     "before": 0,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "kurkku-oliivi-aamiaiskulho: cumulative omitted available carbohydrate is 1.046 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.0458125
+    "afterStatus": "CALCULATED",
+    "after": 0.31,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.0458125,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "uunilohi-smetanakuorrutteella",
@@ -1240,7 +1472,9 @@
     "blockers": [
       "uunilohi-smetanakuorrutteella: smetanaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.6954625
+    "omittedAvailableCarbohydratePerServingG": 0.6954625,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "moo-ping-vhh",
@@ -1249,29 +1483,35 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "moo-ping-vhh: cumulative omitted available carbohydrate is 2.219 g/serving, above the 1 g editorial tolerance."
+      "moo-ping-vhh: cumulative omitted available carbohydrate is 2.219 g/serving, at or above the 2 g editorial tolerance."
     ],
-    "omittedAvailableCarbohydratePerServingG": 2.2186250000000003
+    "omittedAvailableCarbohydratePerServingG": 2.2186250000000003,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "uuniporsas-kermakastikkeessa-vhh",
     "beforeStatus": "CALCULATED",
     "before": 0,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "uuniporsas-kermakastikkeessa-vhh: cumulative omitted available carbohydrate is 1.185 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.1846666666666668
+    "afterStatus": "CALCULATED",
+    "after": 0.07,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.1846666666666668,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kai-jiew-vhh",
     "beforeStatus": "CALCULATED",
     "before": 0,
-    "afterStatus": "CALCULATED",
-    "after": 0.46,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.42131250000000003
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "kai-jiew-vhh: korianteria: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "savulohi-avokadokulho",
@@ -1280,7 +1520,9 @@
     "afterStatus": "CALCULATED",
     "after": 0.4,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.286625
+    "omittedAvailableCarbohydratePerServingG": 0.286625,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "tonnikalamunakkaat-uunissa",
@@ -1289,7 +1531,9 @@
     "afterStatus": "CALCULATED",
     "after": 0,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.6174999999999999
+    "omittedAvailableCarbohydratePerServingG": 0.6174999999999999,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "hyderabadi-kanabiryani",
@@ -1298,20 +1542,25 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "hyderabadi-kanabiryani: cumulative omitted available carbohydrate is 1.079 g/serving, above the 1 g editorial tolerance."
+      "hyderabadi-kanabiryani: tuoretta korianteria: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.0792499999999998
+    "omittedAvailableCarbohydratePerServingG": 1.0539999999999998,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "bun-cha-hanoi",
     "beforeStatus": "CALCULATED",
     "before": 50.11,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "bun-cha-hanoi: cumulative omitted available carbohydrate is 1.572 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.5717999999999999
+    "afterStatus": "CALCULATED",
+    "after": 46.54,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.5717999999999999,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": {
+      "min": 46.07,
+      "max": 46.54
+    }
   },
   {
     "recipeId": "bibimbap",
@@ -1320,10 +1569,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "bibimbap: gochujang-tahnaa: 2 tbsp unbranded gochujang has no product composition; available carbohydrate and sugar/rice content are material.",
-      "bibimbap: cumulative omitted available carbohydrate is 1.324 g/serving, above the 1 g editorial tolerance."
+      "bibimbap: gochujang-tahnaa: 2 tbsp unbranded gochujang has no product composition; available carbohydrate and sugar/rice content are material."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.324375
+    "omittedAvailableCarbohydratePerServingG": 1.324375,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "chow-mein",
@@ -1336,7 +1586,9 @@
       "chow-mein: osterikastiketta: 1 tbsp oyster sauce has no specified brand/product data; sugar may materially affect the total.",
       "chow-mein: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.78525
+    "omittedAvailableCarbohydratePerServingG": 0.78525,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "dan-dan-nuudelit",
@@ -1347,10 +1599,11 @@
     "blockers": [
       "dan-dan-nuudelit: seesamitahnaa: 2 tbsp tahini lacks a matched product composition record; whole sesame seeds are not a reliable substitute.",
       "dan-dan-nuudelit: mustariisiviinietikkaa: No brand or label for black rice vinegar; added sugar status is unknown.",
-      "dan-dan-nuudelit: nuudeleiden keitinvettä: 100 ml starchy cooking water retained in sauce has unmeasured carbohydrate concentration.",
-      "dan-dan-nuudelit: cumulative omitted available carbohydrate is 1.213 g/serving, above the 1 g editorial tolerance."
+      "dan-dan-nuudelit: nuudeleiden keitinvettä: 100 ml starchy cooking water retained in sauce has unmeasured carbohydrate concentration."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.21275
+    "omittedAvailableCarbohydratePerServingG": 1.21275,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "goi-cuon",
@@ -1363,7 +1616,9 @@
       "goi-cuon: sileää maapähkinävoita: 120 g peanut butter has no matching product record; whole peanuts are not substituted because processing/additives differ.",
       "goi-cuon: hoisinkastiketta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.6000000000000001
+    "omittedAvailableCarbohydratePerServingG": 0.6000000000000001,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "hapanimela-porsas",
@@ -1376,7 +1631,9 @@
       "hapanimela-porsas: ketsuppia: 2 tbsp ketchup lacks specified brand/label; added sugars are material.",
       "hapanimela-porsas: keitettyä riisiä: Four cooked-rice portions have no gram weight or defined serving mass; this major carbohydrate side cannot be totaled."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.56875
+    "omittedAvailableCarbohydratePerServingG": 0.56875,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "idli-sambar",
@@ -1390,7 +1647,9 @@
       "idli-sambar: sambar-mausteseosta: 1 tbsp commercial spice blend has no brand/ingredient list; flour/lentil/sugar fillers are unquantified.",
       "idli-sambar: vettä: Unquantified water is carbohydrate-free, but dry/wet ingredient process state for the batter needs review; no mass entered."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.4
+    "omittedAvailableCarbohydratePerServingG": 0.4,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "indonesialainen-bubur-sumsum",
@@ -1402,7 +1661,9 @@
       "indonesialainen-bubur-sumsum: kookosmaito: 200 ml canned coconut milk lacks food-specific Fineli mass per ml; no generic density conversion used.",
       "indonesialainen-bubur-sumsum: pandan: 150 g pandan is unusually large and lacks matching edible food record; source quantity and food mapping need confirmation."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "intialainen-rava-uttapam",
@@ -1411,7 +1672,9 @@
     "afterStatus": "CALCULATED",
     "after": 19.99,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "intialainen-aloo-paratha",
@@ -1420,9 +1683,12 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "intialainen-aloo-paratha: vehnäjauho: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      "intialainen-aloo-paratha: vehnäjauho: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "intialainen-aloo-paratha: korianteri: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.1101
+    "omittedAvailableCarbohydratePerServingG": 0.1,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "indonesialainen-bubur-ayam-kanariisipuuro",
@@ -1433,7 +1699,9 @@
     "blockers": [
       "indonesialainen-bubur-ayam-kanariisipuuro: vettä tai mietoa lientä: Recipe allows water or unspecified stock; stock type and carbohydrate concentration are not provided."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.8999999999999999
+    "omittedAvailableCarbohydratePerServingG": 0.8999999999999999,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
@@ -1444,7 +1712,9 @@
     "blockers": [
       "indonesialainen-nasi-goreng-aamiaisriisi: kecap manis: 150 g sweet soy sauce is a major carbohydrate source, but the product has no brand, label or matching composition record."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "indonesialainen-serabi-kookospannukakku",
@@ -1457,7 +1727,9 @@
       "indonesialainen-serabi-kookospannukakku: kookos: 150 g coconut state (fresh vs dried/desiccated) unspecified; composition differs materially.",
       "indonesialainen-serabi-kookospannukakku: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "dim-sum",
@@ -1471,18 +1743,20 @@
       "dim-sum: valmiita bao-sämpylöitä: 8 buns have no product/size/weight; refined-grain carbohydrate is unquantified.",
       "dim-sum: soijakastiketta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.5
+    "omittedAvailableCarbohydratePerServingG": 0.5,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "yangzhou-paistettu-riisi",
     "beforeStatus": "CALCULATED",
     "before": 24.49,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "yangzhou-paistettu-riisi: cumulative omitted available carbohydrate is 1.202 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.20225
+    "afterStatus": "CALCULATED",
+    "after": 24.71,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.20225,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lanttulaatikko-kermainen",
@@ -1493,7 +1767,9 @@
     "blockers": [
       "lanttulaatikko-kermainen: lanttua: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.7124999999999999
+    "omittedAvailableCarbohydratePerServingG": 0.7124999999999999,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "uunimakkara-sipulipedilla",
@@ -1502,10 +1778,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "uunimakkara-sipulipedilla: lenkkimakkaraa: GI evidence is missing.",
-      "uunimakkara-sipulipedilla: cumulative omitted available carbohydrate is 1.571 g/serving, above the 1 g editorial tolerance."
+      "uunimakkara-sipulipedilla: lenkkimakkaraa: GI evidence is missing."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.5715
+    "omittedAvailableCarbohydratePerServingG": 1.5715,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "nakkikeitto-kukkakaalilla",
@@ -1516,20 +1793,22 @@
     "blockers": [
       "nakkikeitto-kukkakaalilla: nakkeja: GI evidence is missing.",
       "nakkikeitto-kukkakaalilla: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "nakkikeitto-kukkakaalilla: cumulative omitted available carbohydrate is 2.345 g/serving, above the 1 g editorial tolerance."
+      "nakkikeitto-kukkakaalilla: cumulative omitted available carbohydrate is 2.345 g/serving, at or above the 2 g editorial tolerance."
     ],
-    "omittedAvailableCarbohydratePerServingG": 2.3449999999999998
+    "omittedAvailableCarbohydratePerServingG": 2.3449999999999998,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "amritsari-kala",
     "beforeStatus": "CALCULATED",
     "before": 3.27,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "amritsari-kala: cumulative omitted available carbohydrate is 1.614 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.61425
+    "afterStatus": "CALCULATED",
+    "after": 3.27,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.61425,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lindstrominpihvit-kaalilla",
@@ -1540,21 +1819,22 @@
     "blockers": [
       "lindstrominpihvit-kaalilla: säilykepunajuurta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "lindstrominpihvit-kaalilla: punajuurilientä: Ingredient mass is missing or invalid.",
-      "lindstrominpihvit-kaalilla: punajuurilientä: Fineli food record is missing.",
-      "lindstrominpihvit-kaalilla: cumulative omitted available carbohydrate is 1.399 g/serving, above the 1 g editorial tolerance."
+      "lindstrominpihvit-kaalilla: punajuurilientä: Fineli food record is missing."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.39875
+    "omittedAvailableCarbohydratePerServingG": 1.39875,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kana-yakitori-kaalilla",
     "beforeStatus": "CALCULATED",
     "before": 4.8,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "kana-yakitori-kaalilla: cumulative omitted available carbohydrate is 1.892 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.89225
+    "afterStatus": "CALCULATED",
+    "after": 4.8,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.89225,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "paprikainen-vhh-gulassi",
@@ -1565,9 +1845,11 @@
     "blockers": [
       "paprikainen-vhh-gulassi: tomaatti: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "paprikainen-vhh-gulassi: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "paprikainen-vhh-gulassi: cumulative omitted available carbohydrate is 2.584 g/serving, above the 1 g editorial tolerance."
+      "paprikainen-vhh-gulassi: cumulative omitted available carbohydrate is 2.584 g/serving, at or above the 2 g editorial tolerance."
     ],
-    "omittedAvailableCarbohydratePerServingG": 2.583625
+    "omittedAvailableCarbohydratePerServingG": 2.583625,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kana-enchilada-kukkakaalivuoka",
@@ -1576,10 +1858,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "kana-enchilada-kukkakaalivuoka: tomaattisalsaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "kana-enchilada-kukkakaalivuoka: cumulative omitted available carbohydrate is 1.144 g/serving, above the 1 g editorial tolerance."
+      "kana-enchilada-kukkakaalivuoka: tomaattisalsaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.14375
+    "omittedAvailableCarbohydratePerServingG": 1.14375,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "nakkikastike-kukkakaalimuusi",
@@ -1589,9 +1872,11 @@
     "after": null,
     "blockers": [
       "nakkikastike-kukkakaalimuusi: nakkeja: GI evidence is missing.",
-      "nakkikastike-kukkakaalimuusi: cumulative omitted available carbohydrate is 2.240 g/serving, above the 1 g editorial tolerance."
+      "nakkikastike-kukkakaalimuusi: cumulative omitted available carbohydrate is 2.240 g/serving, at or above the 2 g editorial tolerance."
     ],
-    "omittedAvailableCarbohydratePerServingG": 2.2405
+    "omittedAvailableCarbohydratePerServingG": 2.2405,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "ropa-vieja",
@@ -1601,21 +1886,22 @@
     "after": null,
     "blockers": [
       "ropa-vieja: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "ropa-vieja: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "ropa-vieja: cumulative omitted available carbohydrate is 1.716 g/serving, above the 1 g editorial tolerance."
+      "ropa-vieja: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.7158333333333333
+    "omittedAvailableCarbohydratePerServingG": 1.7158333333333333,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "karjalanpaisti-vhh",
     "beforeStatus": "CALCULATED",
     "before": 3.83,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "karjalanpaisti-vhh: cumulative omitted available carbohydrate is 1.600 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.5999999999999999
+    "afterStatus": "CALCULATED",
+    "after": 3.83,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.5999999999999999,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kerala-kalacurry",
@@ -1625,10 +1911,11 @@
     "after": null,
     "blockers": [
       "kerala-kalacurry: kookosmaitoa: GI evidence is missing.",
-      "kerala-kalacurry: tamarinditahnaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "kerala-kalacurry: cumulative omitted available carbohydrate is 1.369 g/serving, above the 1 g editorial tolerance."
+      "kerala-kalacurry: tamarinditahnaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.3695
+    "omittedAvailableCarbohydratePerServingG": 1.3695,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kanapyorykat-tomaattikastike",
@@ -1637,10 +1924,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "kanapyorykat-tomaattikastike: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "kanapyorykat-tomaattikastike: cumulative omitted available carbohydrate is 1.742 g/serving, above the 1 g editorial tolerance."
+      "kanapyorykat-tomaattikastike: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.7422499999999999
+    "omittedAvailableCarbohydratePerServingG": 1.7422499999999999,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "silakkapihvit-tilli-kermakastike",
@@ -1649,7 +1937,9 @@
     "afterStatus": "CALCULATED",
     "after": 1.73,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.6985
+    "omittedAvailableCarbohydratePerServingG": 0.6985,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kantonilainen-hoyrytetty-kala",
@@ -1658,7 +1948,9 @@
     "afterStatus": "CALCULATED",
     "after": 0.23,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.8345
+    "omittedAvailableCarbohydratePerServingG": 0.8345,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "tacokulho-nauta-avokado",
@@ -1667,9 +1959,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "tacokulho-nauta-avokado: cumulative omitted available carbohydrate is 2.958 g/serving, above the 1 g editorial tolerance."
+      "tacokulho-nauta-avokado: cumulative omitted available carbohydrate is 2.958 g/serving, at or above the 2 g editorial tolerance."
     ],
-    "omittedAvailableCarbohydratePerServingG": 2.95775
+    "omittedAvailableCarbohydratePerServingG": 2.95775,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kanasalaatti-pesto-mozzarella",
@@ -1680,7 +1974,9 @@
     "blockers": [
       "kanasalaatti-pesto-mozzarella: kirsikkatomaatteja: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.816225
+    "omittedAvailableCarbohydratePerServingG": 0.816225,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "sitruuna-yrttikana-parsa",
@@ -1689,10 +1985,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "sitruuna-yrttikana-parsa: vihreää parsaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "sitruuna-yrttikana-parsa: cumulative omitted available carbohydrate is 1.129 g/serving, above the 1 g editorial tolerance."
+      "sitruuna-yrttikana-parsa: vihreää parsaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.129
+    "omittedAvailableCarbohydratePerServingG": 1.129,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pho-bo",
@@ -1703,10 +2000,11 @@
     "blockers": [
       "pho-bo: naudallisia keittoluita: No matching raw bone-in beef food record was found in Fineli Rel20; the stock base cannot be assigned zero carbohydrate from a substitute meat cut.",
       "pho-bo: keltasipuli: Aromatic is roasted, simmered in the stock, then strained; the amount of available carbohydrate retained in the consumed broth is not measured.",
-      "pho-bo: tuore inkivääri: Aromatic is roasted, simmered in the stock, then strained; the amount of available carbohydrate retained in the consumed broth is not measured.",
-      "pho-bo: cumulative omitted available carbohydrate is 1.550 g/serving, above the 1 g editorial tolerance."
+      "pho-bo: tuore inkivääri: Aromatic is roasted, simmered in the stock, then strained; the amount of available carbohydrate retained in the consumed broth is not measured."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.5501666666666667
+    "omittedAvailableCarbohydratePerServingG": 1.5501666666666667,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "karibia-kookosriisi-pavuilla",
@@ -1717,7 +2015,9 @@
     "blockers": [
       "karibia-kookosriisi-pavuilla: täysrasvainen tölkkikookosmaito: GI evidence is missing."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.033
+    "omittedAvailableCarbohydratePerServingG": 0.033,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "thai-khao-tom-katkaravuilla",
@@ -1726,18 +2026,25 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
+      "thai-khao-tom-katkaravuilla: inkivääri: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "thai-khao-tom-katkaravuilla: laimennettua kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.048
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lahi-ita-kikhernejauho-yrttilettu",
     "beforeStatus": "CALCULATED",
     "before": 7.42,
-    "afterStatus": "CALCULATED",
-    "after": 7.42,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.37
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "lahi-ita-kikhernejauho-yrttilettu: persilja: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.337,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "korealainen-yachaejuk-kasvisjuk",
@@ -1746,16 +2053,22 @@
     "afterStatus": "CALCULATED",
     "after": 30.45,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "malesialainen-congee-inkivaarilla",
     "beforeStatus": "CALCULATED",
     "before": 26.47,
-    "afterStatus": "CALCULATED",
-    "after": 26.65,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.903
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "malesialainen-congee-inkivaarilla: inkivääri: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.855,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kiinalainen-tomaattimunakas-riisilla",
@@ -1764,34 +2077,48 @@
     "afterStatus": "CALCULATED",
     "after": 28.07,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kiinalainen-riisipuuro-kananmunalla",
     "beforeStatus": "CALCULATED",
     "before": 26.47,
-    "afterStatus": "CALCULATED",
-    "after": 26.65,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.21300000000000002
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "kiinalainen-riisipuuro-kananmunalla: inkivääri: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "thai-jok-kanalla",
     "beforeStatus": "CALCULATED",
     "before": 26.47,
-    "afterStatus": "CALCULATED",
-    "after": 26.47,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.21300000000000002
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "thai-jok-kanalla: inkivääri: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "thai-porsasjok",
     "beforeStatus": "CALCULATED",
     "before": 26.47,
-    "afterStatus": "CALCULATED",
-    "after": 26.47,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.21300000000000002
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "thai-porsasjok: inkivääri: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lahi-ita-fattet-hummus",
@@ -1800,7 +2127,9 @@
     "afterStatus": "CALCULATED",
     "after": 18.33,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.0675
+    "omittedAvailableCarbohydratePerServingG": 0.0675,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pohjoisafrikkalainen-lablabi",
@@ -1811,7 +2140,9 @@
     "blockers": [
       "pohjoisafrikkalainen-lablabi: laimennettua kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.502
+    "omittedAvailableCarbohydratePerServingG": 0.502,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "jerk-kana",
@@ -1823,7 +2154,9 @@
       "jerk-kana: kevätsipuli: 4 spring onions have no recipe-specific Fineli mass; the estimate cannot establish their available carbohydrate per serving.",
       "jerk-kana: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "tangyuan",
@@ -1834,7 +2167,9 @@
     "blockers": [
       "tangyuan: musta seesami: The recipe lists 100 g black sesame without a matching Fineli record; the carbohydrate contribution and GI cannot be sourced."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "paella-valenciana",
@@ -1845,7 +2180,9 @@
     "blockers": [
       "paella-valenciana: kanalientä: No suitable GI source was found for prepared chicken stock; its known carbohydrate exceeds the current per-serving omission tolerance."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.3
+    "omittedAvailableCarbohydratePerServingG": 0.3,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "rendang-padang",
@@ -1857,7 +2194,9 @@
       "rendang-padang: kookosmaito: Coconut milk contributes >1 g available carbohydrate per serving and no valid GI record matches canned coconut milk; the available coconut-milk porridge value is not transferable.",
       "rendang-padang: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "malesialainen-apam-balik",
@@ -1869,7 +2208,9 @@
       "malesialainen-apam-balik: maissi: The recipe says one corn without specifying fresh, cooked, or grilled state; Fineli cob mass can be looked up, but preparation and GI cannot be matched unambiguously.",
       "malesialainen-apam-balik: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "malesialainen-kookos-banaanikulho",
@@ -1880,7 +2221,9 @@
     "blockers": [
       "malesialainen-kookos-banaanikulho: palmusokeri ja tapioka: Palm sugar lacks a matching Fineli food record; tapioca flour has a carbohydrate record but no published GI matched to the recipe preparation."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "meksikolainen-kurpitsapuuro-piloncillolla",
@@ -1892,7 +2235,9 @@
       "meksikolainen-kurpitsapuuro-piloncillolla: kurpitsa ja nestevaihtoehto: Pumpkin is unweighed (Fineli medium whole pumpkin is only a possible scenario) and the recipe offers milk or water, changing carbohydrate totals.",
       "meksikolainen-kurpitsapuuro-piloncillolla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "indonesialainen-pisang-goreng-aamiaiseksi",
@@ -1904,7 +2249,9 @@
       "indonesialainen-pisang-goreng-aamiaiseksi: kookos, palmusokeri ja banaani: Coconut is listed without fresh/dried state, palm sugar lacks a matching Fineli record, and banana mass is unspecified.",
       "indonesialainen-pisang-goreng-aamiaiseksi: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "nasi-lemak",
@@ -1915,7 +2262,9 @@
     "blockers": [
       "nasi-lemak: sambal ja kookosmaito: The sambal is an unbranded prepared sauce with no ingredient composition or matching GI; coconut milk preparation also lacks a defensible GI match if its measured carbohydrate exceeds the per-serving cutoff."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "char-siu",
@@ -1924,10 +2273,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "char-siu: hoisinkastiketta: undefined category mean/analogue, low confidence; not a measured ingredient-specific value.",
-      "char-siu: cumulative omitted available carbohydrate is 1.150 g/serving, above the 1 g editorial tolerance."
+      "char-siu: hoisinkastiketta: undefined category mean/analogue, low confidence; not a measured ingredient-specific value."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.15025
+    "omittedAvailableCarbohydratePerServingG": 1.1315,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "hernekeitto-savupotkalla",
@@ -1937,9 +2287,11 @@
     "after": null,
     "blockers": [
       "hernekeitto-savupotkalla: laakerinlehteä: No specific Fineli/AFCD food record and preparation match was resolved for “laakerinlehteä”; it is not treated as zero.",
-      "hernekeitto-savupotkalla: cumulative omitted available carbohydrate is 1.574 g/serving, above the 1 g editorial tolerance."
+      "hernekeitto-savupotkalla: sinappia tarjoiluun: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.5739999999999998
+    "omittedAvailableCarbohydratePerServingG": 1.01,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lanzhou-naudanliha-nuudelikeitto",
@@ -1949,10 +2301,12 @@
     "after": null,
     "blockers": [
       "lanzhou-naudanliha-nuudelikeitto: naudan etuselkää: Exact meat cut is not mapped to a Fineli/AFCD food record in this batch; carbohydrate is not assumed to be zero.",
-      "lanzhou-naudanliha-nuudelikeitto: kevätsipulia: GI evidence is missing.",
-      "lanzhou-naudanliha-nuudelikeitto: cumulative omitted available carbohydrate is 1.487 g/serving, above the 1 g editorial tolerance."
+      "lanzhou-naudanliha-nuudelikeitto: retikkaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "lanzhou-naudanliha-nuudelikeitto: kevätsipulia: GI evidence is missing."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.4865000000000002
+    "omittedAvailableCarbohydratePerServingG": 1.4100000000000001,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "roujiamo",
@@ -1963,10 +2317,11 @@
     "blockers": [
       "roujiamo: porsaan kassleria: No specific Fineli/AFCD food record and preparation match was resolved for “porsaan kassleria”; it is not treated as zero.",
       "roujiamo: soijakastiketta: No specific Fineli/AFCD food record and preparation match was resolved for “soijakastiketta”; it is not treated as zero.",
-      "roujiamo: tummaa soijakastiketta: No specific Fineli/AFCD food record and preparation match was resolved for “tummaa soijakastiketta”; it is not treated as zero.",
-      "roujiamo: cumulative omitted available carbohydrate is 1.610 g/serving, above the 1 g editorial tolerance."
+      "roujiamo: tummaa soijakastiketta: No specific Fineli/AFCD food record and preparation match was resolved for “tummaa soijakastiketta”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.6099999999999999
+    "omittedAvailableCarbohydratePerServingG": 1.6099999999999999,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "intialainen-ven-pongal",
@@ -1978,7 +2333,9 @@
       "intialainen-ven-pongal: vettä tai mietoa lientä: No specific Fineli/AFCD food record and preparation match was resolved for “vettä tai mietoa lientä”; it is not treated as zero.",
       "intialainen-ven-pongal: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.35
+    "omittedAvailableCarbohydratePerServingG": 0.35,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
@@ -1990,7 +2347,9 @@
       "korealainen-kongjuk-soijapapu-riisipuuro: vettä tai mietoa lientä: No specific Fineli/AFCD food record and preparation match was resolved for “vettä tai mietoa lientä”; it is not treated as zero.",
       "korealainen-kongjuk-soijapapu-riisipuuro: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.7999999999999999
+    "omittedAvailableCarbohydratePerServingG": 0.7999999999999999,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "indialainen-poha-maapahkinoilla",
@@ -2003,7 +2362,9 @@
       "indialainen-poha-maapahkinoilla: curry-lehti: No specific Fineli/AFCD food record and preparation match was resolved for “curry-lehti”; it is not treated as zero.",
       "indialainen-poha-maapahkinoilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.1
+    "omittedAvailableCarbohydratePerServingG": 0.1,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "meksikolainen-aamiais-tacot-mustapavuilla",
@@ -2012,9 +2373,12 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
+      "meksikolainen-aamiais-tacot-mustapavuilla: avokado: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "meksikolainen-aamiais-tacot-mustapavuilla: maissitortilla: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.727
+    "omittedAvailableCarbohydratePerServingG": 0.265,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "meksikolainen-paputostada-aamupalaksi",
@@ -2023,9 +2387,12 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "meksikolainen-paputostada-aamupalaksi: maissitortilla: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      "meksikolainen-paputostada-aamupalaksi: maissitortilla: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "meksikolainen-paputostada-aamupalaksi: avokado: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.727
+    "omittedAvailableCarbohydratePerServingG": 0.265,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "intialainen-mannasuurimoupma",
@@ -2039,7 +2406,9 @@
       "intialainen-mannasuurimoupma: maitoa tai vettä: No specific Fineli/AFCD food record and preparation match was resolved for “maitoa tai vettä”; it is not treated as zero.",
       "intialainen-mannasuurimoupma: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.1
+    "omittedAvailableCarbohydratePerServingG": 0.1,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "intialainen-pesarattu-mungpavuista",
@@ -2048,7 +2417,9 @@
     "afterStatus": "CALCULATED",
     "after": 37.15,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.6
+    "omittedAvailableCarbohydratePerServingG": 0.6,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "falafel",
@@ -2059,10 +2430,11 @@
     "blockers": [
       "falafel: valkosipulinkynttä: GI evidence is missing.",
       "falafel: leivinjauhetta: No specific Fineli/AFCD food record and preparation match was resolved for “leivinjauhetta”; it is not treated as zero.",
-      "falafel: cumulative omitted available carbohydrate is 1.880 g/serving, above the 1 g editorial tolerance.",
       "falafel: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.88
+    "omittedAvailableCarbohydratePerServingG": 1.88,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "masala-dosa",
@@ -2073,10 +2445,11 @@
     "blockers": [
       "masala-dosa: perunoita: No specific Fineli/AFCD food record and preparation match was resolved for “perunoita”; it is not treated as zero.",
       "masala-dosa: sinapinsiemeniä: No specific Fineli/AFCD food record and preparation match was resolved for “sinapinsiemeniä”; it is not treated as zero.",
-      "masala-dosa: tuoreita currylehtiä: No specific Fineli/AFCD food record and preparation match was resolved for “tuoreita currylehtiä”; it is not treated as zero.",
-      "masala-dosa: cumulative omitted available carbohydrate is 1.360 g/serving, above the 1 g editorial tolerance."
+      "masala-dosa: tuoreita currylehtiä: No specific Fineli/AFCD food record and preparation match was resolved for “tuoreita currylehtiä”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.3600000000000003
+    "omittedAvailableCarbohydratePerServingG": 1.3600000000000003,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "intialainen-idli-kookoschutneylla",
@@ -2088,7 +2461,9 @@
       "intialainen-idli-kookoschutneylla: kookos: No specific Fineli/AFCD food record and preparation match was resolved for “kookos”; it is not treated as zero.",
       "intialainen-idli-kookoschutneylla: sinapinsiemen: No specific Fineli/AFCD food record and preparation match was resolved for “sinapinsiemen”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.1
+    "omittedAvailableCarbohydratePerServingG": 0.1,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pohjoisafrikkalainen-baghrir",
@@ -2097,7 +2472,9 @@
     "afterStatus": "CALCULATED",
     "after": 44.59,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.2
+    "omittedAvailableCarbohydratePerServingG": 0.2,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "intialainen-masala-dosa",
@@ -2108,7 +2485,9 @@
     "blockers": [
       "intialainen-masala-dosa: sinapinsiemen: No specific Fineli/AFCD food record and preparation match was resolved for “sinapinsiemen”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.1
+    "omittedAvailableCarbohydratePerServingG": 0.1,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
@@ -2120,7 +2499,9 @@
       "pohjoisafrikkalainen-msemen-hunajalla: voi: No specific Fineli/AFCD food record and preparation match was resolved for “voi”; it is not treated as zero.",
       "pohjoisafrikkalainen-msemen-hunajalla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.1
+    "omittedAvailableCarbohydratePerServingG": 0.1,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "malesialainen-roti-canai-dhalilla",
@@ -2133,7 +2514,9 @@
       "malesialainen-roti-canai-dhalilla: curry-lehti: No specific Fineli/AFCD food record and preparation match was resolved for “curry-lehti”; it is not treated as zero.",
       "malesialainen-roti-canai-dhalilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.1
+    "omittedAvailableCarbohydratePerServingG": 0.1,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pohjoisafrikkalainen-bissara",
@@ -2146,7 +2529,9 @@
       "pohjoisafrikkalainen-bissara: valkosipuli: The recipe gives 1 tl but SIPULI, KELTASIPULI has no matching Fineli food-specific unit mass; no general piece/spoon conversion is applied.",
       "pohjoisafrikkalainen-bissara: kasvis- tai kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.35
+    "omittedAvailableCarbohydratePerServingG": 0.35,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lahi-ita-ful-medames",
@@ -2155,7 +2540,9 @@
     "afterStatus": "CALCULATED",
     "after": 3.6,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.69
+    "omittedAvailableCarbohydratePerServingG": 0.69,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "meksikolainen-chilaquiles-verdes",
@@ -2166,7 +2553,9 @@
     "blockers": [
       "meksikolainen-chilaquiles-verdes: salsa verde: No source-matched composition and preparation was resolved for “salsa verde”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "meksikolainen-huevos-divorciados",
@@ -2177,7 +2566,9 @@
     "blockers": [
       "meksikolainen-huevos-divorciados: vihreä salsa: No source-matched composition and preparation was resolved for “vihreä salsa”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "meksikolainen-molletes-pico-de-gallolla",
@@ -2186,7 +2577,9 @@
     "afterStatus": "CALCULATED",
     "after": 20.01,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "korealainen-bindaetteok-aamiaiseksi",
@@ -2197,7 +2590,9 @@
     "blockers": [
       "korealainen-bindaetteok-aamiaiseksi: kimchi: No source-matched composition and preparation was resolved for “kimchi”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.25
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vietnamilainen-banh-cuon-sienilla",
@@ -2206,7 +2601,9 @@
     "afterStatus": "CALCULATED",
     "after": 23.01,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.1263
+    "omittedAvailableCarbohydratePerServingG": 0.1263,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
@@ -2217,7 +2614,9 @@
     "blockers": [
       "vietnamilainen-banh-xeo-aamiaisletut: kookosmaito: GI evidence is missing."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "intialainen-besan-chilla",
@@ -2226,7 +2625,9 @@
     "afterStatus": "CALCULATED",
     "after": 7.22,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.25
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vietnamilainen-chao-ga-kanapuuro",
@@ -2238,18 +2639,20 @@
       "vietnamilainen-chao-ga-kanapuuro: vettä tai mietoa lientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
       "vietnamilainen-chao-ga-kanapuuro: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.5
+    "omittedAvailableCarbohydratePerServingG": 0.5,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "korealainen-gyeranbap-riisikulho",
     "beforeStatus": "CALCULATED",
     "before": 26.47,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "korealainen-gyeranbap-riisikulho: cumulative omitted available carbohydrate is 1.020 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.02
+    "afterStatus": "CALCULATED",
+    "after": 26.47,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.02,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
@@ -2258,7 +2661,9 @@
     "afterStatus": "CALCULATED",
     "after": 19.83,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.06
+    "omittedAvailableCarbohydratePerServingG": 0.06,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vietnamilainen-hu-tieu-aamiaiskeitto",
@@ -2270,7 +2675,9 @@
       "vietnamilainen-hu-tieu-aamiaiskeitto: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
       "vietnamilainen-hu-tieu-aamiaiskeitto: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.25
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kiinalainen-bao-munalla",
@@ -2281,7 +2688,9 @@
     "blockers": [
       "kiinalainen-bao-munalla: hoisin-kastike: The recipe amount 1 rkl has no food-specific mass conversion for Sauce, hoi sin (hoisin), commercial."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "karibia-maissipuuro-kookoksella",
@@ -2294,7 +2703,9 @@
       "karibia-maissipuuro-kookoksella: maitoa tai vettä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
       "karibia-maissipuuro-kookoksella: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.5
+    "omittedAvailableCarbohydratePerServingG": 0.5,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "japanilainen-soba-aamiaiskeitto",
@@ -2307,7 +2718,9 @@
       "japanilainen-soba-aamiaiskeitto: pinaatti: The recipe amount 1 kpl has no food-specific mass conversion for Spinach, baby, fresh, raw.",
       "japanilainen-soba-aamiaiskeitto: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kiinalainen-jianbing-munaletty",
@@ -2318,7 +2731,9 @@
     "blockers": [
       "kiinalainen-jianbing-munaletty: soijapaputahnaa: The recipe lists one tablespoon soybean paste, but the product type, gram conversion and composition are not resolved; no miso or soy-sauce substitute is assumed."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.45100000000000007
+    "omittedAvailableCarbohydratePerServingG": 0.45100000000000007,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "karibia-johnny-cake",
@@ -2330,7 +2745,9 @@
       "karibia-johnny-cake: leivinjauhe: The recipe lists 150 g baking powder for two servings, which appears to be a quantity error. Confirm the recipe amount and source composition before calculating a total GK.",
       "karibia-johnny-cake: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.6
+    "omittedAvailableCarbohydratePerServingG": 0.6,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lahi-ita-taatelipuuro-tahinilla",
@@ -2340,10 +2757,13 @@
     "after": null,
     "blockers": [
       "lahi-ita-taatelipuuro-tahinilla: taateli: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "lahi-ita-taatelipuuro-tahinilla: tahini: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "lahi-ita-taatelipuuro-tahinilla: maitoa tai vettä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
       "lahi-ita-taatelipuuro-tahinilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.3175
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "indonesialainen-ketoprak-aamiaiskulho",
@@ -2352,7 +2772,9 @@
     "afterStatus": "CALCULATED",
     "after": 26.67,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "thai-kookosriisi-mangolla",
@@ -2362,9 +2784,12 @@
     "after": null,
     "blockers": [
       "thai-kookosriisi-mangolla: kookosmaito: GI evidence is missing.",
+      "thai-kookosriisi-mangolla: seesaminsiemen: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "thai-kookosriisi-mangolla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.45
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "korealainen-bataatti-riisikulho",
@@ -2376,7 +2801,9 @@
       "korealainen-bataatti-riisikulho: bataatti: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "korealainen-bataatti-riisikulho: gochujang: No source-matched composition and preparation was resolved for “gochujang”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "meksikolainen-quesadilla-sienilla",
@@ -2388,7 +2815,9 @@
       "meksikolainen-quesadilla-sienilla: maissi: GI evidence is missing.",
       "meksikolainen-quesadilla-sienilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
@@ -2397,18 +2826,20 @@
     "afterStatus": "CALCULATED",
     "after": 25.28,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vietnamilainen-banh-bao-kananmunalla",
     "beforeStatus": "CALCULATED",
     "before": 21.46,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "vietnamilainen-banh-bao-kananmunalla: cumulative omitted available carbohydrate is 1.020 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.02
+    "afterStatus": "CALCULATED",
+    "after": 21.47,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.02,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "japanilainen-dashimaki-tamago-aamiaislautasella",
@@ -2417,10 +2848,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "japanilainen-dashimaki-tamago-aamiaislautasella: dashi: No source-matched composition and preparation was resolved for “dashi”; it is not treated as zero.",
-      "japanilainen-dashimaki-tamago-aamiaislautasella: cumulative omitted available carbohydrate is 1.020 g/serving, above the 1 g editorial tolerance."
+      "japanilainen-dashimaki-tamago-aamiaislautasella: dashi: No source-matched composition and preparation was resolved for “dashi”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.02
+    "omittedAvailableCarbohydratePerServingG": 1.02,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "valimerellinen-halloumi-tomaattileipa",
@@ -2432,7 +2864,9 @@
       "valimerellinen-halloumi-tomaattileipa: hapanjuurileipä: No source-matched composition and preparation was resolved for “hapanjuurileipä”; it is not treated as zero.",
       "valimerellinen-halloumi-tomaattileipa: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "indonesialainen-bakwan-maissifritter",
@@ -2444,7 +2878,9 @@
       "indonesialainen-bakwan-maissifritter: maissi: GI evidence is missing.",
       "indonesialainen-bakwan-maissifritter: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.25
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "japanilainen-kabocha-puuro",
@@ -2455,10 +2891,13 @@
     "blockers": [
       "japanilainen-kabocha-puuro: kurpitsa: GI evidence is missing.",
       "japanilainen-kabocha-puuro: kookosmaito: GI evidence is missing.",
+      "japanilainen-kabocha-puuro: musta seesami: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "japanilainen-kabocha-puuro: vettä tai mietoa lientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
       "japanilainen-kabocha-puuro: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.45
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "malesialainen-kaya-paahtoleipa",
@@ -2471,7 +2910,9 @@
       "malesialainen-kaya-paahtoleipa: kookoshillo: No source-matched composition and preparation was resolved for “kookoshillo”; it is not treated as zero.",
       "malesialainen-kaya-paahtoleipa: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.765
+    "omittedAvailableCarbohydratePerServingG": 0.765,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "valimerellinen-farinata-aamupalaksi",
@@ -2483,7 +2924,9 @@
       "valimerellinen-farinata-aamupalaksi: rosmariini: No source-matched composition and preparation was resolved for “rosmariini”; it is not treated as zero.",
       "valimerellinen-farinata-aamupalaksi: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "korealainen-kimchi-jeon-aamiaiseksi",
@@ -2494,7 +2937,9 @@
     "blockers": [
       "korealainen-kimchi-jeon-aamiaiseksi: kimchi: No source-matched composition and preparation was resolved for “kimchi”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004
+    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
@@ -2503,9 +2948,12 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "korealainen-tofu-kimchi-aamiaiskulho: kimchi: No source-matched composition and preparation was resolved for “kimchi”; it is not treated as zero."
+      "korealainen-tofu-kimchi-aamiaiskulho: kimchi: No source-matched composition and preparation was resolved for “kimchi”; it is not treated as zero.",
+      "korealainen-tofu-kimchi-aamiaiskulho: seesami: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.45
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "korealainen-jumeokbap-merilevalla",
@@ -2514,7 +2962,9 @@
     "afterStatus": "CALCULATED",
     "after": 27.57,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "valimerellinen-tahinipuuro",
@@ -2523,10 +2973,13 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
+      "valimerellinen-tahinipuuro: tahini: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "valimerellinen-tahinipuuro: hunaja: GI evidence is missing.",
       "valimerellinen-tahinipuuro: maitoa tai vettä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.0675
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "malesialainen-kuih-seri-muka",
@@ -2538,7 +2991,9 @@
       "malesialainen-kuih-seri-muka: kookosmaito: GI evidence is missing.",
       "malesialainen-kuih-seri-muka: pandan: No source-matched composition and preparation was resolved for “pandan”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
@@ -2550,7 +3005,9 @@
       "malesialainen-laksa-lemak-aamiaiseksi: kookosmaito: GI evidence is missing.",
       "malesialainen-laksa-lemak-aamiaiseksi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
@@ -2564,7 +3021,9 @@
       "indonesialainen-lontong-sayur-aamiaiseksi: kaali: The recipe amount 1 kpl has no food-specific mass conversion for KAALI, VALKOKAALI, KEITETTY, SUOLATON.",
       "indonesialainen-lontong-sayur-aamiaiseksi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lahi-ita-manakish-zaatarilla",
@@ -2573,7 +3032,9 @@
     "afterStatus": "CALCULATED",
     "after": 33.06,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.2635
+    "omittedAvailableCarbohydratePerServingG": 0.2635,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pohjoisafrikkalainen-minttutee-kaurapuuro",
@@ -2586,7 +3047,9 @@
       "pohjoisafrikkalainen-minttutee-kaurapuuro: maitoa tai vettä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
       "pohjoisafrikkalainen-minttutee-kaurapuuro: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.25
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "malesialainen-mee-goreng-aamunuudeleilla",
@@ -2595,7 +3058,9 @@
     "afterStatus": "CALCULATED",
     "after": 18.55,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "meksikolainen-atole-maissipuuro",
@@ -2606,7 +3071,9 @@
     "blockers": [
       "meksikolainen-atole-maissipuuro: maitoa tai vettä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.5
+    "omittedAvailableCarbohydratePerServingG": 0.5,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vietnamilainen-banh-mi-munalla",
@@ -2615,7 +3082,9 @@
     "afterStatus": "CALCULATED",
     "after": 19.49,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
@@ -2626,7 +3095,9 @@
     "blockers": [
       "pohjoisafrikkalainen-kuskus-aamiaiskulho: kuivattua taatelia: No suitable date-specific GI record; the source-backed carbohydrate exceeds 1 g/serving, so the recipe total remains blocked."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "malesialainen-nasi-lemak-aamiaisella",
@@ -2638,7 +3109,9 @@
       "malesialainen-nasi-lemak-aamiaisella: kookosmaito: GI evidence is missing.",
       "malesialainen-nasi-lemak-aamiaisella: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
@@ -2649,7 +3122,9 @@
     "blockers": [
       "indonesialainen-nasi-uduk-aamiaisella: täysrasvaista kookosmaitoa: GI evidence is missing."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "japanilainen-natto-riisikulho",
@@ -2660,7 +3135,9 @@
     "blockers": [
       "japanilainen-natto-riisikulho: natto: No source-matched composition and preparation was resolved for “natto”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004
+    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "japanilainen-okayu-umeboshipluumulla",
@@ -2670,9 +3147,12 @@
     "after": null,
     "blockers": [
       "japanilainen-okayu-umeboshipluumulla: umeboshi: No source-matched composition and preparation was resolved for “umeboshi”; it is not treated as zero.",
+      "japanilainen-okayu-umeboshipluumulla: seesaminsiemen: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "japanilainen-okayu-umeboshipluumulla: vettä tai mietoa lientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.7
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "japanilainen-onigiri-lohella",
@@ -2681,7 +3161,9 @@
     "afterStatus": "CALCULATED",
     "after": 26.47,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.0225
+    "omittedAvailableCarbohydratePerServingG": 0.0225,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "japanilainen-yaki-onigiri-misolla",
@@ -2692,7 +3174,9 @@
     "blockers": [
       "japanilainen-yaki-onigiri-misolla: miso: No source-matched composition and preparation was resolved for “miso”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kiinalainen-hirssipuuro-taateleilla",
@@ -2702,10 +3186,13 @@
     "after": null,
     "blockers": [
       "kiinalainen-hirssipuuro-taateleilla: taateli: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "kiinalainen-hirssipuuro-taateleilla: seesaminsiemen: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "kiinalainen-hirssipuuro-taateleilla: maitoa tai vettä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
       "kiinalainen-hirssipuuro-taateleilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.7
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vietnamilainen-pho-ga-aamuksi",
@@ -2718,7 +3205,9 @@
       "vietnamilainen-pho-ga-aamuksi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
       "vietnamilainen-pho-ga-aamuksi: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.25
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "thai-riisinuudelikeitto-aamuksi",
@@ -2730,7 +3219,9 @@
       "thai-riisinuudelikeitto-aamuksi: limetti: No source-matched composition and preparation was resolved for “limetti”; it is not treated as zero.",
       "thai-riisinuudelikeitto-aamuksi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.25
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vietnamilainen-xoi-maapahkinalla",
@@ -2740,9 +3231,12 @@
     "after": null,
     "blockers": [
       "vietnamilainen-xoi-maapahkinalla: tahmariisi: No source-matched composition and preparation was resolved for “tahmariisi”; it is not treated as zero.",
+      "vietnamilainen-xoi-maapahkinalla: seesami: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "vietnamilainen-xoi-maapahkinalla: kookos: No source-matched composition and preparation was resolved for “kookos”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.45
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "malesialainen-roti-jala-currykanalla",
@@ -2754,7 +3248,9 @@
       "malesialainen-roti-jala-currykanalla: kookosmaito: GI evidence is missing.",
       "malesialainen-roti-jala-currykanalla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "thai-roti-munalla-banaanilla",
@@ -2765,7 +3261,9 @@
     "blockers": [
       "thai-roti-munalla-banaanilla: kookosmaito: GI evidence is missing."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "karibia-saltfish-fritterit",
@@ -2776,18 +3274,20 @@
     "blockers": [
       "karibia-saltfish-fritterit: suolakala: No source-matched composition and preparation was resolved for “suolakala”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.5
+    "omittedAvailableCarbohydratePerServingG": 0.5,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kiinalainen-kevatsipulipannukakku",
     "beforeStatus": "CALCULATED",
     "before": 21.46,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "kiinalainen-kevatsipulipannukakku: cumulative omitted available carbohydrate is 1.105 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.105
+    "afterStatus": "CALCULATED",
+    "after": 21.46,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.105,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "thai-maissifritterit",
@@ -2798,7 +3298,9 @@
     "blockers": [
       "thai-maissifritterit: kypsennettyjä, valutettuja maissinjyviä: GI evidence is missing."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004
+    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kiinalainen-katkarapu-wontonkeitto",
@@ -2811,7 +3313,9 @@
       "kiinalainen-katkarapu-wontonkeitto: paksoi: GI evidence is missing.",
       "kiinalainen-katkarapu-wontonkeitto: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.25
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "jiaozi",
@@ -2823,10 +3327,11 @@
       "jiaozi: dumpling-taikinalevyjä: No source-matched composition and preparation was resolved for “dumpling-taikinalevyjä”; it is not treated as zero.",
       "jiaozi: soijakastiketta: GI evidence is missing.",
       "jiaozi: riisiviinietikkaa: No source-matched available-carbohydrate composition is resolved for rice wine vinegar; the measured amount is not treated as zero.",
-      "jiaozi: cumulative omitted available carbohydrate is 1.482 g/serving, above the 1 g editorial tolerance.",
       "jiaozi: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.4825
+    "omittedAvailableCarbohydratePerServingG": 1.4825,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "xiaolongbao",
@@ -2837,10 +3342,12 @@
     "blockers": [
       "xiaolongbao: pyöreitä dumpling-taikinalevyjä: No source-matched composition and preparation was resolved for “pyöreitä dumpling-taikinalevyjä”; it is not treated as zero.",
       "xiaolongbao: hyytelöitynyttä lihalientä: No source-matched composition and preparation was resolved for “hyytelöitynyttä lihalientä”; it is not treated as zero.",
-      "xiaolongbao: mustariisiviinietikkaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "xiaolongbao: mustariisiviinietikkaa: GI food family does not match the ingredient (for example, rice is not rice vinegar or dairy is not milk chocolate).",
       "xiaolongbao: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.8025
+    "omittedAvailableCarbohydratePerServingG": 0.8025,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "karibia-bammy-kassavaleipa",
@@ -2854,7 +3361,9 @@
       "karibia-bammy-kassavaleipa: lime: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
       "karibia-bammy-kassavaleipa: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.462
+    "omittedAvailableCarbohydratePerServingG": 0.462,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kiinalainen-musta-seesamipuuro",
@@ -2863,12 +3372,15 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
+      "kiinalainen-musta-seesamipuuro: mustat seesaminsiemenet: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "kiinalainen-musta-seesamipuuro: soijamaito: GI evidence is missing.",
       "kiinalainen-musta-seesamipuuro: hunaja: GI evidence is missing.",
       "kiinalainen-musta-seesamipuuro: vettä tai mietoa lientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
       "kiinalainen-musta-seesamipuuro: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.45
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "meksikolainen-munakokkeli-pico-de-gallolla",
@@ -2877,7 +3389,9 @@
     "afterStatus": "CALCULATED",
     "after": 14.06,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004
+    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "karibia-mango-limejogurtti",
@@ -2888,7 +3402,9 @@
     "blockers": [
       "karibia-mango-limejogurtti: kuorittua mangoa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.73
+    "omittedAvailableCarbohydratePerServingG": 0.73,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "thai-papaijajogurtti",
@@ -2902,7 +3418,9 @@
       "thai-papaijajogurtti: lime: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
       "thai-papaijajogurtti: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "intialainen-pinaatti-paneer-chilla",
@@ -2913,7 +3431,9 @@
     "blockers": [
       "intialainen-pinaatti-paneer-chilla: pinaatti: The recipe amount 1 kpl has no food-specific mass conversion for Spinach, baby, fresh, raw."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.25
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lahi-ita-pistaasijogurtti",
@@ -2925,7 +3445,9 @@
       "lahi-ita-pistaasijogurtti: ruusuvesi: No source-matched composition and preparation was resolved for “ruusuvesi”; it is not treated as zero.",
       "lahi-ita-pistaasijogurtti: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "karibia-plantain-aamiaislautanen",
@@ -2937,7 +3459,9 @@
       "karibia-plantain-aamiaislautanen: ruokabanaani: No source-matched composition and preparation was resolved for “ruokabanaani”; it is not treated as zero.",
       "karibia-plantain-aamiaislautanen: lime: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.627
+    "omittedAvailableCarbohydratePerServingG": 0.627,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
@@ -2950,7 +3474,9 @@
       "pohjoisafrikkalainen-taatelipuuro-appelsiinilla: maitoa tai vettä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
       "pohjoisafrikkalainen-taatelipuuro-appelsiinilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.25
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "korealainen-mandu-keitto-aamiaiseksi",
@@ -2963,7 +3489,9 @@
       "korealainen-mandu-keitto-aamiaiseksi: merilevä: No source-matched composition and preparation was resolved for “merilevä”; it is not treated as zero.",
       "korealainen-mandu-keitto-aamiaiseksi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004
+    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "tunisialainen-brik",
@@ -2973,9 +3501,12 @@
     "after": null,
     "blockers": [
       "tunisialainen-brik: filo- tai malsouka-taikinaa: No source-matched composition and preparation was resolved for “filo- tai malsouka-taikinaa”; it is not treated as zero.",
-      "tunisialainen-brik: kapriksia: The recipe amount 2 rkl has no food-specific mass conversion for Capers, pickled, canned, drained."
+      "tunisialainen-brik: kapriksia: The recipe amount 2 rkl has no food-specific mass conversion for Capers, pickled, canned, drained.",
+      "tunisialainen-brik: tuoretta persiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.26625
+    "omittedAvailableCarbohydratePerServingG": 0.225,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "dal-makhani",
@@ -2984,10 +3515,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "dal-makhani: mustia urad-dal-linssejä: No source-matched composition and preparation was resolved for “mustia urad-dal-linssejä”; it is not treated as zero.",
-      "dal-makhani: cumulative omitted available carbohydrate is 1.570 g/serving, above the 1 g editorial tolerance."
+      "dal-makhani: mustia urad-dal-linssejä: No source-matched composition and preparation was resolved for “mustia urad-dal-linssejä”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.5702500000000001
+    "omittedAvailableCarbohydratePerServingG": 1.5702500000000001,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kung-pao-kana",
@@ -2998,10 +3530,11 @@
     "blockers": [
       "kung-pao-kana: maissitärkkelystä: GI evidence is missing.",
       "kung-pao-kana: keitettyä riisiä: The recipe amount 4 annosta has no food-specific mass conversion for RIISI PITKÄJYVÄINEN, PUUROUTUMATON.",
-      "kung-pao-kana: cumulative omitted available carbohydrate is 1.962 g/serving, above the 1 g editorial tolerance.",
       "kung-pao-kana: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.9615
+    "omittedAvailableCarbohydratePerServingG": 1.9615,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "mala-xiang-guo",
@@ -3010,10 +3543,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "mala-xiang-guo: lootusjuurta: No source-matched composition and preparation was resolved for “lootusjuurta”; it is not treated as zero.",
-      "mala-xiang-guo: cumulative omitted available carbohydrate is 1.088 g/serving, above the 1 g editorial tolerance."
+      "mala-xiang-guo: lootusjuurta: No source-matched composition and preparation was resolved for “lootusjuurta”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.08775
+    "omittedAvailableCarbohydratePerServingG": 1.08775,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "mapo-tofu",
@@ -3022,10 +3556,11 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "mapo-tofu: keitettyä riisiä: The recipe amount 4 annosta has no food-specific mass conversion for RIISI PITKÄJYVÄINEN, PUUROUTUMATON.",
-      "mapo-tofu: cumulative omitted available carbohydrate is 1.714 g/serving, above the 1 g editorial tolerance."
+      "mapo-tofu: keitettyä riisiä: The recipe amount 4 annosta has no food-specific mass conversion for RIISI PITKÄJYVÄINEN, PUUROUTUMATON."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.7144166666666667
+    "omittedAvailableCarbohydratePerServingG": 1.7144166666666667,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "bouillabaisse",
@@ -3035,9 +3570,11 @@
     "after": null,
     "blockers": [
       "bouillabaisse: sinisimpukoita: GI evidence is missing.",
-      "bouillabaisse: cumulative omitted available carbohydrate is 1.435 g/serving, above the 1 g editorial tolerance."
+      "bouillabaisse: fenkolia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.43525
+    "omittedAvailableCarbohydratePerServingG": 0.53525,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pav-bhaji",
@@ -3049,7 +3586,9 @@
       "pav-bhaji: pav bhaji masala -mausteseosta: No source-matched composition and preparation was resolved for “pav bhaji masala -mausteseosta”; it is not treated as zero.",
       "pav-bhaji: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.47025
+    "omittedAvailableCarbohydratePerServingG": 0.47025,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pekingin-ankka",
@@ -3063,7 +3602,9 @@
       "pekingin-ankka: kiinalaisia vehnälettuja: No source-matched composition and preparation was resolved for “kiinalaisia vehnälettuja”; it is not treated as zero.",
       "pekingin-ankka: hoisinkastiketta: The recipe amount 4 rkl has no food-specific mass conversion for Sauce, hoi sin (hoisin), commercial."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.1625
+    "omittedAvailableCarbohydratePerServingG": 0.1625,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "sichuan-hot-pot",
@@ -3073,10 +3614,11 @@
     "after": null,
     "blockers": [
       "sichuan-hot-pot: naudan- tai kanalientä: No source-matched composition and preparation was resolved for “naudan- tai kanalientä”; it is not treated as zero.",
-      "sichuan-hot-pot: nuudeleita: No source-matched composition and preparation was resolved for “nuudeleita”; it is not treated as zero.",
-      "sichuan-hot-pot: cumulative omitted available carbohydrate is 1.840 g/serving, above the 1 g editorial tolerance."
+      "sichuan-hot-pot: nuudeleita: No source-matched composition and preparation was resolved for “nuudeleita”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.8402500000000002
+    "omittedAvailableCarbohydratePerServingG": 1.8402500000000002,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "tunisialainen-ojja",
@@ -3086,9 +3628,12 @@
     "after": null,
     "blockers": [
       "tunisialainen-ojja: harissaa: No source-matched composition and preparation was resolved for “harissaa”; it is not treated as zero.",
+      "tunisialainen-ojja: tuoretta persiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "tunisialainen-ojja: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.6165
+    "omittedAvailableCarbohydratePerServingG": 0.57525,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vietnamilainen-papaija-kookospuuro",
@@ -3104,7 +3649,9 @@
       "vietnamilainen-papaija-kookospuuro: vettä tai mietoa lientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
       "vietnamilainen-papaija-kookospuuro: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "japanilainen-tamago-kake-gohan",
@@ -3114,10 +3661,11 @@
     "after": null,
     "blockers": [
       "japanilainen-tamago-kake-gohan: nori: The structured recipe lists 150 g dried nori for two servings, an implausible amount that may be a unit or decimal error. The quantity must be corrected before calculating a complete serving estimate.",
-      "japanilainen-tamago-kake-gohan: cumulative omitted available carbohydrate is 1.020 g/serving, above the 1 g editorial tolerance.",
       "japanilainen-tamago-kake-gohan: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.02
+    "omittedAvailableCarbohydratePerServingG": 1.02,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "indonesialainen-tempeh-munakulho",
@@ -3129,7 +3677,9 @@
       "indonesialainen-tempeh-munakulho: tempeh: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "indonesialainen-tempeh-munakulho: sambal: No source-matched composition and preparation was resolved for “sambal”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lahi-ita-zaatar-munat",
@@ -3138,7 +3688,9 @@
     "afterStatus": "CALCULATED",
     "after": 15.62,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004
+    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "keto-joulutortut",
@@ -3147,7 +3699,9 @@
     "afterStatus": "CALCULATED",
     "after": 1.8,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.12062500000000001
+    "omittedAvailableCarbohydratePerServingG": 0.12062500000000001,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
@@ -3158,7 +3712,9 @@
     "blockers": [
       "vietnamilainen-kahvijogurtti-banaanilla: kondensoitu maito: No source-matched composition and preparation was resolved for “kondensoitu maito”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.3
+    "omittedAvailableCarbohydratePerServingG": 0.3,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "valimerellinen-jogurttikulho-hunajalla",
@@ -3167,7 +3723,9 @@
     "afterStatus": "CALCULATED",
     "after": 6.09,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kiinalainen-soijamaito-aamiaisella",
@@ -3176,7 +3734,9 @@
     "afterStatus": "CALCULATED",
     "after": 0.67,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.35
+    "omittedAvailableCarbohydratePerServingG": 0.35,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "thai-kananmunat-kookoscurryssa",
@@ -3189,7 +3749,9 @@
       "thai-kananmunat-kookoscurryssa: punainen currytahna: No source-matched composition and preparation was resolved for “punainen currytahna”; it is not treated as zero.",
       "thai-kananmunat-kookoscurryssa: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "japanilainen-miso-tofu-paksoi",
@@ -3202,7 +3764,9 @@
       "japanilainen-miso-tofu-paksoi: wakame: No source-matched composition and preparation was resolved for “wakame”; it is not treated as zero.",
       "japanilainen-miso-tofu-paksoi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "japanilainen-curry-tofulla",
@@ -3214,7 +3778,9 @@
       "japanilainen-curry-tofulla: kasvislientä: No source-matched composition and preparation was resolved for “kasvislientä”; it is not treated as zero.",
       "japanilainen-curry-tofulla: japanilaista curryroux-tahnaa: No source-matched composition and preparation was resolved for “japanilaista curryroux-tahnaa”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kanaviillokki-kukkakaalilla",
@@ -3223,7 +3789,9 @@
     "afterStatus": "CALCULATED",
     "after": 7.57,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.7929999999999999
+    "omittedAvailableCarbohydratePerServingG": 0.7929999999999999,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kookos-lime-kanacurry",
@@ -3235,7 +3803,9 @@
       "kookos-lime-kanacurry: thaimaalaista currytahnaa: No source-matched composition and preparation was resolved for “thaimaalaista currytahnaa”; it is not treated as zero.",
       "kookos-lime-kanacurry: limetti: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.18814999999999998
+    "omittedAvailableCarbohydratePerServingG": 0.18814999999999998,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kimchi-jjigae",
@@ -3248,7 +3818,9 @@
       "kimchi-jjigae: kanalientä tai vettä: No source-matched composition and preparation was resolved for “kanalientä tai vettä”; it is not treated as zero.",
       "kimchi-jjigae: gochujang-tahnaa: No source-matched composition and preparation was resolved for “gochujang-tahnaa”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.6775
+    "omittedAvailableCarbohydratePerServingG": 0.6775,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "sate-ayam",
@@ -3263,7 +3835,9 @@
       "sate-ayam: limetti: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
       "sate-ayam: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.83525
+    "omittedAvailableCarbohydratePerServingG": 0.83525,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "janssoninkiusaus-juuriselleri",
@@ -3275,7 +3849,9 @@
       "janssoninkiusaus-juuriselleri: anjovisfileitä mausteliemessä: No source-matched composition and preparation was resolved for “anjovisfileitä mausteliemessä”; it is not treated as zero.",
       "janssoninkiusaus-juuriselleri: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.306
+    "omittedAvailableCarbohydratePerServingG": 0.306,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "okonomiyaki-kaaliletut",
@@ -3286,9 +3862,11 @@
     "blockers": [
       "okonomiyaki-kaaliletut: majoneesia: GI evidence is missing.",
       "okonomiyaki-kaaliletut: srirachaa: No source-matched composition and preparation was resolved for “srirachaa”; it is not treated as zero.",
-      "okonomiyaki-kaaliletut: cumulative omitted available carbohydrate is 1.123 g/serving, above the 1 g editorial tolerance."
+      "okonomiyaki-kaaliletut: seesaminsiemeniä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.122875
+    "omittedAvailableCarbohydratePerServingG": 1.10375,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "valimerellinen-ricotta-persikkakulho",
@@ -3297,7 +3875,9 @@
     "afterStatus": "CALCULATED",
     "after": 4.08,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.12
+    "omittedAvailableCarbohydratePerServingG": 0.12,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "paneer-tikka",
@@ -3306,7 +3886,9 @@
     "afterStatus": "CALCULATED",
     "after": 3.01,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.435
+    "omittedAvailableCarbohydratePerServingG": 0.435,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "meksikolainen-huevos-a-la-mexicana",
@@ -3315,7 +3897,9 @@
     "afterStatus": "CALCULATED",
     "after": 0.67,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.35250000000000004
+    "omittedAvailableCarbohydratePerServingG": 0.35250000000000004,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "karibia-ackee-ja-suolakala",
@@ -3327,7 +3911,9 @@
       "karibia-ackee-ja-suolakala: suolakala: No source-matched composition and preparation was resolved for “suolakala”; it is not treated as zero.",
       "karibia-ackee-ja-suolakala: ackee: No source-matched composition and preparation was resolved for “ackee”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.25
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "karibia-callaloo-munakas",
@@ -3336,7 +3922,9 @@
     "afterStatus": "CALCULATED",
     "after": 0.18,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.665
+    "omittedAvailableCarbohydratePerServingG": 0.665,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "korealainen-gyeran-mari-kasviksilla",
@@ -3345,7 +3933,9 @@
     "afterStatus": "CALCULATED",
     "after": 1.19,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004
+    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
@@ -3356,9 +3946,12 @@
     "blockers": [
       "japanilainen-hojicha-jogurtti-persimonilla: persimon: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "japanilainen-hojicha-jogurtti-persimonilla: hojicha: No source-matched composition and preparation was resolved for “hojicha”; it is not treated as zero.",
+      "japanilainen-hojicha-jogurtti-persimonilla: seesaminsiemen: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "japanilainen-hojicha-jogurtti-persimonilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.45
+    "omittedAvailableCarbohydratePerServingG": 0,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "karibia-jamaikalainen-munakokkeli",
@@ -3367,7 +3960,9 @@
     "afterStatus": "CALCULATED",
     "after": 0.47,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.665
+    "omittedAvailableCarbohydratePerServingG": 0.665,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lahi-ita-labneh-kulho-zaatarilla",
@@ -3378,7 +3973,9 @@
     "blockers": [
       "lahi-ita-labneh-kulho-zaatarilla: labneh: No source-matched composition and preparation was resolved for “labneh”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.25
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pellava-puuro-pahkinoilla",
@@ -3389,7 +3986,9 @@
     "blockers": [
       "pellava-puuro-pahkinoilla: kookosjauhoa: No source-matched composition and preparation was resolved for “kookosjauhoa”; it is not treated as zero."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.37
+    "omittedAvailableCarbohydratePerServingG": 0.37,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "lahi-ita-menemen-sumakilla",
@@ -3398,7 +3997,9 @@
     "afterStatus": "CALCULATED",
     "after": 1.32,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004
+    "omittedAvailableCarbohydratePerServingG": 0.41500000000000004,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "pohjoisafrikkalainen-harissa-shakshuka",
@@ -3410,7 +4011,9 @@
       "pohjoisafrikkalainen-harissa-shakshuka: harissa: No source-matched composition and preparation was resolved for “harissa”; it is not treated as zero.",
       "pohjoisafrikkalainen-harissa-shakshuka: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "valimerellinen-pinaatti-fetashakshuka",
@@ -3419,18 +4022,20 @@
     "afterStatus": "CALCULATED",
     "after": 0.79,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.165
+    "omittedAvailableCarbohydratePerServingG": 0.165,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kiinalainen-teehaudutetut-munat",
     "beforeStatus": "CALCULATED",
     "before": 0,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "kiinalainen-teehaudutetut-munat: cumulative omitted available carbohydrate is 1.270 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.27
+    "afterStatus": "CALCULATED",
+    "after": 0,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.27,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "thai-kai-jiao-yrteilla",
@@ -3439,16 +4044,22 @@
     "afterStatus": "CALCULATED",
     "after": 0,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.7913
+    "omittedAvailableCarbohydratePerServingG": 0.7913,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "yrttituorejuusto-kinkkurullat",
     "beforeStatus": "CALCULATED",
     "before": 0,
-    "afterStatus": "CALCULATED",
-    "after": 0.81,
-    "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.5838749999999999
+    "afterStatus": "INSUFFICIENT SOURCE DATA",
+    "after": null,
+    "blockers": [
+      "yrttituorejuusto-kinkkurullat: salaatinlehtiä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+    ],
+    "omittedAvailableCarbohydratePerServingG": 0.48587499999999995,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "carnitas-salaattitacot",
@@ -3462,18 +4073,20 @@
       "carnitas-salaattitacot: pico de galloa: No source-matched composition and preparation was resolved for “pico de galloa”; it is not treated as zero.",
       "carnitas-salaattitacot: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.53525
+    "omittedAvailableCarbohydratePerServingG": 0.53525,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "rogan-josh",
     "beforeStatus": "CALCULATED",
     "before": 0.88,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "rogan-josh: cumulative omitted available carbohydrate is 1.627 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.626625
+    "afterStatus": "CALCULATED",
+    "after": 0.97,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.626625,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
@@ -3482,18 +4095,20 @@
     "afterStatus": "CALCULATED",
     "after": 0.82,
     "blockers": [],
-    "omittedAvailableCarbohydratePerServingG": 0.25
+    "omittedAvailableCarbohydratePerServingG": 0.25,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "kana-tagine-sitruunalla",
     "beforeStatus": "CALCULATED",
     "before": 0,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "kana-tagine-sitruunalla: cumulative omitted available carbohydrate is 1.280 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.2805
+    "afterStatus": "CALCULATED",
+    "after": 0.32,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.2805,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "miso-lohi-paksoi",
@@ -3502,20 +4117,23 @@
     "afterStatus": "INSUFFICIENT SOURCE DATA",
     "after": null,
     "blockers": [
-      "miso-lohi-paksoi: vaaleaa misotahnaa: No source-matched composition and preparation was resolved for “vaaleaa misotahnaa”; it is not treated as zero."
+      "miso-lohi-paksoi: vaaleaa misotahnaa: No source-matched composition and preparation was resolved for “vaaleaa misotahnaa”; it is not treated as zero.",
+      "miso-lohi-paksoi: seesaminsiemeniä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.465375
+    "omittedAvailableCarbohydratePerServingG": 0.44625,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "palak-paneer",
     "beforeStatus": "CALCULATED",
     "before": 0.94,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "palak-paneer: cumulative omitted available carbohydrate is 1.312 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.311625
+    "afterStatus": "CALCULATED",
+    "after": 1.29,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.311625,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "shoyu-kanakeitto-konjac",
@@ -3526,10 +4144,11 @@
     "blockers": [
       "shoyu-kanakeitto-konjac: kanalientä: GI evidence is missing.",
       "shoyu-kanakeitto-konjac: konjac-nuudeleita: No source-matched composition and preparation was resolved for “konjac-nuudeleita”; it is not treated as zero.",
-      "shoyu-kanakeitto-konjac: cumulative omitted available carbohydrate is 1.196 g/serving, above the 1 g editorial tolerance.",
       "shoyu-kanakeitto-konjac: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.195875
+    "omittedAvailableCarbohydratePerServingG": 1.195875,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "hunaja-sinappikana-kaalilla",
@@ -3541,7 +4160,9 @@
       "hunaja-sinappikana-kaalilla: valkosipulijauhetta: The recipe amount 1 tl has no food-specific mass conversion for VALKOSIPULI.",
       "hunaja-sinappikana-kaalilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.746
+    "omittedAvailableCarbohydratePerServingG": 0.746,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "siskonmakkarakeitto-juurekset",
@@ -3552,20 +4173,22 @@
     "blockers": [
       "siskonmakkarakeitto-juurekset: lihalientä: GI evidence is missing.",
       "siskonmakkarakeitto-juurekset: lanttua: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-      "siskonmakkarakeitto-juurekset: cumulative omitted available carbohydrate is 1.169 g/serving, above the 1 g editorial tolerance."
+      "siskonmakkarakeitto-juurekset: silputtua persiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 1.1689999999999998
+    "omittedAvailableCarbohydratePerServingG": 1.158,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "tandoorikana",
     "beforeStatus": "CALCULATED",
     "before": 0.88,
-    "afterStatus": "INSUFFICIENT SOURCE DATA",
-    "after": null,
-    "blockers": [
-      "tandoorikana: cumulative omitted available carbohydrate is 1.437 g/serving, above the 1 g editorial tolerance."
-    ],
-    "omittedAvailableCarbohydratePerServingG": 1.436625
+    "afterStatus": "CALCULATED",
+    "after": 0.88,
+    "blockers": [],
+    "omittedAvailableCarbohydratePerServingG": 1.436625,
+    "confidence": "LOW",
+    "glycemicLoadRangePerServing": null
   },
   {
     "recipeId": "vhh-pyttipannu",
@@ -3577,6 +4200,8 @@
       "vhh-pyttipannu: vähähiilihydraattista makkaraa: No source-matched composition and preparation was resolved for “vähähiilihydraattista makkaraa”; it is not treated as zero.",
       "vhh-pyttipannu: lanttua: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
     ],
-    "omittedAvailableCarbohydratePerServingG": 0.47100000000000003
+    "omittedAvailableCarbohydratePerServingG": 0.47100000000000003,
+    "confidence": null,
+    "glycemicLoadRangePerServing": null
   }
 ]
