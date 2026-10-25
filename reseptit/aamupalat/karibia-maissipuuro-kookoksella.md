@@ -13,23 +13,23 @@ cooking_method:
   - "keittäminen"
 ingredients:
   - amount: 100
-    unit: "g"
-    item: "maissijauho"
+    unit: g
+    item: maissijauho
   - amount: 200
-    unit: "ml"
-    item: "kookosmaito"
+    unit: ml
+    item: kookosmaito
   - amount: 1
-    unit: "tl"
-    item: "kaneli"
+    unit: tl
+    item: kaneli
   - amount: 1
-    unit: "tl"
-    item: "vanilja"
+    unit: tl
+    item: vanilja
   - amount: 700
-    unit: "ml"
-    item: "maitoa tai vettä"
+    unit: ml
+    item: vettä
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -42,6 +42,11 @@ image:
   alt: "Jamaikalainen maissipuuro kookoksella tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 43.8
+carbs_total_per_serving_g: 44.75
+protein_per_serving_g: 4.09
+fat_per_serving_g: 14.87
+
 ---
 
 # Jamaikalainen maissipuuro kookoksella

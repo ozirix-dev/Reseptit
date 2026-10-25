@@ -13,23 +13,23 @@ cooking_method:
   - "keittäminen"
 ingredients:
   - amount: 100
-    unit: "g"
-    item: "riisinuudeli"
+    unit: g
+    item: riisinuudeli
   - amount: 150
-    unit: "g"
-    item: "porsaanliha"
+    unit: g
+    item: porsaan ulkofileetä
   - amount: 150
-    unit: "g"
-    item: "pavunitu"
+    unit: g
+    item: pavunitu
   - amount: 2
-    unit: "rkl"
-    item: "korianteri"
+    unit: rkl
+    item: korianteri
   - amount: 700
-    unit: "ml"
-    item: "kasvis- tai kanalientä"
+    unit: ml
+    item: vettä
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -42,6 +42,10 @@ image:
   alt: "Hu tieu -nuudelikeitto kasviksilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 42.08
+carbs_total_per_serving_g: 44.18
+protein_per_serving_g: 21.61
+fat_per_serving_g: 2.02
 ---
 
 # Hu tieu -nuudelikeitto kasviksilla
@@ -59,4 +63,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Kuumenna kattilassa öljy tai liemi. Lisää aromit ja hitaammin kypsyvät ainekset; paista tai hauduta muutama minuutti.
 2. Kaada kattilaan liemi ja keitä miedosti, kunnes pääraaka-aineet ovat kypsiä.
 3. Lisää nuudelit, lehtivihannekset tai muut nopeasti kypsyvät ainekset niiden kypsymisajan mukaan.
-4. Kypsennä nuudelit liemessä ja tarjoa lihan, itujen ja tuoreiden yrttien kanssa.
+4. Kypsennä porsaan ulkofileetä vedessä hiljalleen. Lisää riisinuudelit niiden pakkauksen kypsennysajan mukaan. Tarjoa pavunitujen ja hienonnetun tuoreen korianterin kanssa.

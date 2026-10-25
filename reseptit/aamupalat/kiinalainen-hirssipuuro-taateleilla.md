@@ -13,23 +13,23 @@ cooking_method:
   - "keittäminen"
 ingredients:
   - amount: 100
-    unit: "g"
-    item: "hirssi"
-  - amount: 1
-    unit: "kpl"
-    item: "taateli"
-  - amount: 1
-    unit: "tl"
-    item: "inkivääri"
-  - amount: 100
-    unit: "g"
-    item: "seesaminsiemen"
+    unit: g
+    item: hirssi
+  - amount: 10
+    unit: g
+    item: kuivattua taatelia
+  - amount: 2
+    unit: g
+    item: tuoretta inkivääriä
+  - amount: 8
+    unit: g
+    item: seesaminsiemen
   - amount: 700
-    unit: "ml"
-    item: "maitoa tai vettä"
+    unit: ml
+    item: vettä
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -42,6 +42,11 @@ image:
   alt: "Pehmeä hirssipuuro taateleilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 37.85
+carbs_total_per_serving_g: 40.42
+protein_per_serving_g: 6.72
+fat_per_serving_g: 3.85
+
 ---
 
 # Pehmeä hirssipuuro taateleilla

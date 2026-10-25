@@ -1,0 +1,196 @@
+{
+  "recipeId": "vietnamilainen-papaija-kookospuuro",
+  "sourceHash": "d6aff10dfa2f840dddb2062e337221fa49776f6ac18ac92ec696e44c91fd784a",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-16",
+  "servings": 2,
+  "scope": "Two servings; 100 g dry tapioca pearls, 200 ml canned regular-fat coconut milk, 200 g peeled raw papaya, 15 g lime juice, 700 ml water; salt omitted.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "tapiokahelmiä",
+      "amount": 100,
+      "unit": "g",
+      "state": "uncooked dry tapioca pearls",
+      "matchEvidence": "AFCD Release 3 record F009090 is uncooked tapioca pearls, matching the clarified porridge ingredient.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F009090-release-3",
+        "name": "Tapioca, pearl or seed style, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "uncooked dry tapioca pearls",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 79.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.2,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "kookosmaito",
+      "amount": 200,
+      "unit": "ml",
+      "state": "regular-fat canned coconut milk as sold",
+      "matchEvidence": "The recipe specifies coconut milk without a reduced-fat variant; AFCD record F002991 is canned regular-fat coconut milk.",
+      "gramsPerUnit": 0.92,
+      "conversionEvidence": "Canned regular-fat coconut milk represented at 0.92 g/ml, consistent with prior ingredient-specific batch conversions.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F002991-release-3",
+        "name": "Coconut, milk, canned, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "regular-fat canned coconut milk as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.7,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.4,
+          "fat": 15.4
+        }
+      }
+    },
+    {
+      "item": "papaija",
+      "amount": 200,
+      "unit": "g",
+      "state": "peeled raw papaya",
+      "matchEvidence": "AFCD Release 3 record F006528 is peeled raw papaya and supplies all required macro fields.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006528-release-3",
+        "name": "Pawpaw (papaya), peeled, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "peeled raw papaya",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 8.4,
+          "fibre": 2.1,
+          "polyols": 0,
+          "protein": 0.4,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "limettimehua",
+      "amount": 15,
+      "unit": "g",
+      "state": "undiluted lime juice",
+      "matchEvidence": "AFCD Release 3 record F004729 is lime juice.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F004729-release-3",
+        "name": "Juice, lime",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "undiluted lime juice",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.2,
+          "fibre": 3.6,
+          "polyols": 0,
+          "protein": 0.8,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "vettä",
+      "amount": 700,
+      "unit": "ml",
+      "state": "plain tap water",
+      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Water is represented at 1 g/ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "salt omitted; no contribution to displayed macronutrients",
+      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+    }
+  ]
+}

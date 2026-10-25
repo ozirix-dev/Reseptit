@@ -13,20 +13,20 @@ cooking_method:
   - "paistaminen"
 ingredients:
   - amount: 100
-    unit: "g"
-    item: "riisi"
+    unit: g
+    item: riisi
   - amount: 200
-    unit: "ml"
-    item: "kookosmaito"
+    unit: ml
+    item: kookosmaito
   - amount: 2
-    unit: "kpl"
-    item: "kananmuna"
-  - amount: 1
-    unit: "kpl"
-    item: "kurkku"
+    unit: kpl
+    item: kananmuna
+  - amount: 100
+    unit: g
+    item: kurkku
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -39,6 +39,10 @@ image:
   alt: "Nasi lemak -kookosriisi ja kananmuna tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 39.78
+carbs_total_per_serving_g: 40.48
+protein_per_serving_g: 11.92
+fat_per_serving_g: 19.75
 ---
 
 # Nasi lemak -kookosriisi ja kananmuna
@@ -56,4 +60,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
 2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
 3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Tarjoa kookosriisi kananmunan, kurkun, paahdettujen maapähkinöiden ja sambalin kanssa.
+4. Huuhtele riisi ja kypsennä se kookosmaidossa miedolla lämmöllä, kunnes neste on imeytynyt. Keitä kananmunat, viipaloi kurkku ja tarjoa kookosriisin kanssa.

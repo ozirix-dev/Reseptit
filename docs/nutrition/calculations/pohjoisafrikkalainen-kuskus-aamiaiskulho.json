@@ -1,0 +1,214 @@
+{
+  "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+  "sourceHash": "cb5df0bdbd429bdb811536088f61e881978a41feba1e5c99af26545af4837032",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-16",
+  "servings": 2,
+  "scope": "Two servings; 100 g dry couscous, 10 g dried date, 20 g raw almond, 100 g plain 3.9% yogurt, 100 ml water; salt omitted.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kuskus",
+      "amount": 100,
+      "unit": "g",
+      "state": "uncooked couscous as sold",
+      "matchEvidence": "AFCD Release 3 record F003239 is uncooked couscous, matching the dry listed weight.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F003239-release-3",
+        "name": "Couscous, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "uncooked couscous as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 73.6,
+          "fibre": 4.2,
+          "polyols": 0,
+          "protein": 13.8,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "kuivattua taatelia",
+      "amount": 10,
+      "unit": "g",
+      "state": "dried date as sold",
+      "matchEvidence": "AFCD Release 3 record F003496 is dried date.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F003496-release-3",
+        "name": "Date, dried",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dried date as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 67.2,
+          "fibre": 9.7,
+          "polyols": 0,
+          "protein": 2,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "manteli",
+      "amount": 20,
+      "unit": "g",
+      "state": "raw almond kernels",
+      "matchEvidence": "Fineli Release 20 record 379 is raw almond.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-379-release-20",
+        "name": "MANTELI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/379",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw almond kernels",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 6.6,
+          "FIBT": 7.2,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 6.6,
+          "fibre": 7.2,
+          "polyols": 0,
+          "protein": 24.06,
+          "fat": 51.24
+        }
+      }
+    },
+    {
+      "item": "jogurtti",
+      "amount": 100,
+      "unit": "g",
+      "state": "plain unsweetened Bulgarian-style yogurt, 3.9% fat",
+      "matchEvidence": "Fineli Release 20 record 620 is plain unsweetened Bulgarian-style yogurt with 3.9% fat.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-620-release-20",
+        "name": "JOGURTTI, MAUSTAMATON, BULGARIAN, RASVAA 3,9%",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/620",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain unsweetened Bulgarian-style yogurt, 3.9% fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.4,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3.4,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.9
+        }
+      }
+    },
+    {
+      "item": "vettä",
+      "amount": 100,
+      "unit": "ml",
+      "state": "plain tap water",
+      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Water is represented at 1 g/ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "salt omitted; no contribution to displayed macronutrients",
+      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+    }
+  ]
+}
