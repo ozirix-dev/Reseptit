@@ -31,8 +31,20 @@ type ReviewStartSnapshot = {
 const siteDir = path.resolve(import.meta.dirname, "..");
 const root = path.resolve(siteDir, "..");
 const baselinePath = path.join(root, "docs/nutrition/glycemic-coverage-batch-2a-baseline.json");
-const currentPath = path.join(root, "docs/nutrition/glycemic-coverage-current-2026-10-25.json");
-const markdownPath = path.join(root, "docs/nutrition/glycemic-coverage-current-2026-10-25.md");
+const args = process.argv.slice(2);
+const option = (name: string, fallback: string) => {
+  const index = args.indexOf(name);
+  if (index < 0) return fallback ? path.resolve(root, fallback) : null;
+  const value = args[index + 1];
+  if (!value || value.startsWith("--")) throw new Error(`${name} requires a path under docs/nutrition.`);
+  const resolved = path.resolve(root, value);
+  if (!resolved.startsWith(`${path.resolve(root, "docs/nutrition")}${path.sep}`)) throw new Error(`${name} must stay under docs/nutrition.`);
+  return resolved;
+};
+const baselineInputPath = option("--baseline", "docs/nutrition/glycemic-coverage-batch-2a-baseline.json")!;
+const currentOutputPath = option("--output-json", "docs/nutrition/glycemic-coverage-current-2026-10-25.json")!;
+const markdownOutputPath = option("--output-markdown", "docs/nutrition/glycemic-coverage-current-2026-10-25.md")!;
+const batchBaselinePath = option("--capture-batch-baseline", "");
 const readJson = async <T>(relativePath: string): Promise<T> => JSON.parse(await readFile(path.join(root, relativePath), "utf8")) as T;
 
 const [pilot, nutrition, inputs, giCatalog, historical, reviewStart] = await Promise.all([
@@ -72,8 +84,14 @@ const currentCalculationInputs = Object.fromEntries(inputs.recipes.map((recipe) 
     if (!inputQuantity || inputQuantity.amount !== sourceAmount || inputQuantity.unit !== sourceUnit || inputQuantity.massGrams !== sourceMass) {
       throw new Error(`Known maize recipe quantity for ${recipe.recipeId} must match the source recipe; keep accepted calculation grams separate.`);
     }
-    if (maizeInput.grams !== null || maizeInput.fineliRecordId || maizeInput.giRecordId) {
-      throw new Error(`Unresolved maize composition/GI for ${recipe.recipeId} must not be promoted into an accepted calculation input.`);
+    if (recipe.recipeId === "meksikolainen-quesadilla-sienilla") {
+      if (maizeInput.grams !== null || maizeInput.fineliRecordId || maizeInput.giRecordId) {
+        throw new Error(`Unresolved maize composition/GI for ${recipe.recipeId} must not be promoted into an accepted calculation input.`);
+      }
+    } else if (recipe.recipeId === "indonesialainen-bakwan-maissifritter") {
+      if (maizeInput.grams !== sourceMass || maizeInput.fineliRecordId !== "afcd-F003209-release-3" || maizeInput.giRecordId !== null) {
+        throw new Error("Bakwan may use the source-backed raw fresh-corn composition, but its missing GI must remain blocking.");
+      }
     }
   }
   const ingredients = recipe.ingredients.map((ingredient) => ingredient.name === "maissi" && sourceQuantity
@@ -89,7 +107,7 @@ if (pilot.summary.recipes !== inputs.recipes.length || nutrition.inventory.lengt
 }
 if (new Set(inputs.recipes.map((recipe) => recipe.recipeId)).size !== inputs.recipes.length) throw new Error("Source input contains duplicate recipe IDs.");
 
-if (process.argv.includes("--capture-approved-baseline")) {
+if (args.includes("--capture-approved-baseline")) {
   const expectedSourceCommit = "5e9cdeb830f468ecf099e9c286f9344afe3b6b71";
   if (sourceCommit !== expectedSourceCommit) throw new Error(`Approved baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
   const baseline = buildBaselineSnapshot({
@@ -109,8 +127,34 @@ if (process.argv.includes("--capture-approved-baseline")) {
   process.exit(0);
 }
 
-const baseline = await readJson<CoverageBaseline>("docs/nutrition/glycemic-coverage-batch-2a-baseline.json");
-if (baseline.sourceCommit !== "5e9cdeb830f468ecf099e9c286f9344afe3b6b71") throw new Error(`Approved baseline source is unexpected: ${baseline.sourceCommit}`);
+if (batchBaselinePath) {
+  const expectedSourceCommit = "25902326b9fd89a30d8bfe48f2d1cd02879bd9df";
+  if (sourceCommit !== expectedSourceCommit) throw new Error(`Batch 2B1 baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
+  try {
+    await readFile(batchBaselinePath, "utf8");
+    throw new Error(`Refusing to overwrite existing batch baseline: ${batchBaselinePath}`);
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+  }
+  const baseline = buildBaselineSnapshot({
+    sourceCommit,
+    results: pilot.results,
+    sourceHashes: pilot.sourceHashes,
+    calculationInputHashes,
+    calculationEvidenceHashes: pilot.calculationEvidenceHashes,
+    giRecordCount: giCatalog.records.length,
+    giTierCounts,
+    nutritionAuditCounts: nutrition.counts,
+    nutritionStatuses,
+  });
+  if (baseline.recipeCount !== 325 || baseline.calculated !== 117 || baseline.incomplete !== 208) throw new Error("Batch 2B1 baseline does not match the approved 325 / 117 / 208 starting point.");
+  await writeFile(batchBaselinePath, `${JSON.stringify(baseline, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
+  console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, output: batchBaselinePath }, null, 2));
+  process.exit(0);
+}
+
+const baseline = JSON.parse(await readFile(baselineInputPath, "utf8")) as CoverageBaseline;
+if (baselineInputPath === baselinePath && baseline.sourceCommit !== "5e9cdeb830f468ecf099e9c286f9344afe3b6b71") throw new Error(`Approved baseline source is unexpected: ${baseline.sourceCommit}`);
 const inventory = buildCurrentCoverageInventory({
   sourceCommit,
   baseline,
@@ -139,7 +183,7 @@ const structural = inventory.structuralBindingAnalysis;
 const reportLines = [
   "# Nykyinen GK-esteinventaario (2026-10-25)",
   "",
-  `Lähdecommit: \`${sourceCommit}\`. Hyväksytty vertailu: \`${baseline.sourceCommit}\` (${baseline.calculated} laskettua / ${baseline.incomplete} keskeneräistä; ${baseline.giRecordCount} GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.`,
+  `Lähdecommit: \`${sourceCommit}\`. Vertailun lähtösnapshot: \`${baseline.sourceCommit}\` (${baseline.calculated} laskettua / ${baseline.incomplete} keskeneräistä; ${baseline.giRecordCount} GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.`,
   "",
   `Nykyinen ajo kattaa ${summary.recipeCount} reseptiä: ${summary.calculated} laskettua, ${summary.incomplete} keskeneräistä. GI-katalogissa on ${summary.giRecordCount} tietuetta (${Object.entries(summary.giTierCounts).map(([tier, count]) => `${count} ${tier}`).join(", ")}).`,
   "",
@@ -184,9 +228,9 @@ const reportLines = [
   "",
   "- Tämä inventaario kuvaa laskenta-ajon esteitä; se ei itsessään vahvista lähdettä tai korjaa reseptisyötettä.",
   "- GI-arvoja, GK-kaavaa, alle 1 g:n ainesosarajaa tai alle 2 g:n kumulatiivista toleranssia ei muuteta.",
-  "- Uusi vertailusnapshot käyttää hyväksytyn 5e9cdeb-julkaisun koko 325 reseptin tilaa; historiallista 213 reseptin lähtötiedostoa ei korvata.",
+  "- Eräkohtainen vertailusnapshot käyttää sille nimettyä 325 reseptin lähtötilaa; historiallisia erä 1:n ja erän 2A tiedostoja ei korvata.",
   "",
 ];
-await writeFile(currentPath, `${JSON.stringify(inventory, null, 2)}\n`, "utf8");
-await writeFile(markdownPath, `${reportLines.join("\n").trimEnd()}\n`, "utf8");
-console.log(JSON.stringify({ sourceCommit, ...summary, historicalStructuralBindingCount: structural.rows.length, withOtherBlockersAtReviewStart: structural.withOtherBlockersAtReviewStart, potentiallyResolvableByBindingOnlyAtReviewStart: structural.potentiallyResolvableByBindingOnlyAtReviewStart, output: currentPath, markdown: markdownPath }, null, 2));
+await writeFile(currentOutputPath, `${JSON.stringify(inventory, null, 2)}\n`, "utf8");
+await writeFile(markdownOutputPath, `${reportLines.join("\n").trimEnd()}\n`, "utf8");
+console.log(JSON.stringify({ sourceCommit, ...summary, historicalStructuralBindingCount: structural.rows.length, withOtherBlockersAtReviewStart: structural.withOtherBlockersAtReviewStart, potentiallyResolvableByBindingOnlyAtReviewStart: structural.potentiallyResolvableByBindingOnlyAtReviewStart, output: currentOutputPath, markdown: markdownOutputPath }, null, 2));
