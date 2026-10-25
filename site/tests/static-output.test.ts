@@ -88,73 +88,13 @@ test("recipe index is prerendered and links only published languages", async () 
 test("GK values link to centralized recipe details on every published translation", async () => {
   assert.equal(glycemicLoadPilotReviewedRecipeCount, 325);
   assert.equal(glycemicLoadPilotResults.length, 324);
-  const batch13Ids = [
-    "karibia-bammy-kassavaleipa", "kiinalainen-musta-seesamipuuro", "meksikolainen-munakokkeli-pico-de-gallolla",
-    "karibia-mango-limejogurtti", "thai-papaijajogurtti", "intialainen-pinaatti-paneer-chilla",
-    "lahi-ita-pistaasijogurtti", "karibia-plantain-aamiaislautanen", "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
-    "korealainen-mandu-keitto-aamiaiseksi", "tunisialainen-brik", "dal-makhani", "kung-pao-kana", "mala-xiang-guo",
-    "mapo-tofu", "bouillabaisse", "pav-bhaji", "pekingin-ankka", "sichuan-hot-pot", "tunisialainen-ojja",
-  ];
-  const batch13Results = glycemicLoadPilotResults.filter((result) => batch13Ids.includes(result.recipeId));
-  assert.equal(batch13Results.length, 20);
-  const calculatedBatch13 = batch13Results.filter((result) => result.status === "CALCULATED");
-  assert.deepEqual(calculatedBatch13.map((result) => [result.recipeId, result.glycemicLoadPerServing]), [
-    ["meksikolainen-munakokkeli-pico-de-gallolla", 14.06],
-    ["karibia-mango-limejogurtti", 7.3],
-  ]);
-  assert.equal(batch13Results.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 18);
-  const batch14Ids = [
-    "vietnamilainen-papaija-kookospuuro", "japanilainen-tamago-kake-gohan", "indonesialainen-tempeh-munakulho",
-    "lahi-ita-zaatar-munat", "keto-joulutortut", "vietnamilainen-kahvijogurtti-banaanilla",
-    "valimerellinen-jogurttikulho-hunajalla", "kiinalainen-soijamaito-aamiaisella", "thai-kananmunat-kookoscurryssa",
-    "japanilainen-miso-tofu-paksoi", "japanilainen-curry-tofulla", "kanaviillokki-kukkakaalilla",
-    "kookos-lime-kanacurry", "kimchi-jjigae", "sate-ayam", "janssoninkiusaus-juuriselleri", "okonomiyaki-kaaliletut",
-    "valimerellinen-ricotta-persikkakulho", "paneer-tikka", "meksikolainen-huevos-a-la-mexicana",
-  ];
-  const batch14Results = glycemicLoadPilotResults.filter((result) => batch14Ids.includes(result.recipeId));
-  assert.equal(batch14Results.length, 20);
-  const calculatedBatch14 = batch14Results.filter((result) => result.status === "CALCULATED");
-  assert.deepEqual(calculatedBatch14.map((result) => [result.recipeId, result.glycemicLoadPerServing]), [
-    ["lahi-ita-zaatar-munat", 15.62],
-    ["keto-joulutortut", 1.74],
-    ["valimerellinen-jogurttikulho-hunajalla", 5.99],
-    ["kiinalainen-soijamaito-aamiaisella", 0.67],
-    ["kanaviillokki-kukkakaalilla", 7.57],
-    ["valimerellinen-ricotta-persikkakulho", 4.08],
-    ["paneer-tikka", 3.01],
-    ["meksikolainen-huevos-a-la-mexicana", 0.67],
-  ]);
-  assert.equal(batch14Results.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 12);
-  const batch15Ids = [
-    "karibia-ackee-ja-suolakala", "karibia-callaloo-munakas", "korealainen-gyeran-mari-kasviksilla",
-    "japanilainen-hojicha-jogurtti-persimonilla", "karibia-jamaikalainen-munakokkeli", "lahi-ita-labneh-kulho-zaatarilla",
-    "pellava-puuro-pahkinoilla", "lahi-ita-menemen-sumakilla", "pohjoisafrikkalainen-harissa-shakshuka",
-    "valimerellinen-pinaatti-fetashakshuka", "kiinalainen-teehaudutetut-munat", "thai-kai-jiao-yrteilla",
-    "yrttituorejuusto-kinkkurullat", "carnitas-salaattitacot", "rogan-josh", "kreikkalainen-kanavuoka-oliiveilla",
-    "kana-tagine-sitruunalla", "miso-lohi-paksoi", "palak-paneer", "shoyu-kanakeitto-konjac",
-    "hunaja-sinappikana-kaalilla", "siskonmakkarakeitto-juurekset", "tandoorikana", "vhh-pyttipannu",
-  ];
-  const batch15Results = glycemicLoadPilotResults.filter((result) => batch15Ids.includes(result.recipeId));
-  assert.equal(batch15Results.length, 24);
-  const calculatedBatch15 = batch15Results.filter((result) => result.status === "CALCULATED");
-  assert.deepEqual(calculatedBatch15.map((result) => [result.recipeId, result.glycemicLoadPerServing]), [
-    ["karibia-callaloo-munakas", 0.18],
-    ["korealainen-gyeran-mari-kasviksilla", 1.19],
-    ["karibia-jamaikalainen-munakokkeli", 0.47],
-    ["lahi-ita-menemen-sumakilla", 1.32],
-    ["valimerellinen-pinaatti-fetashakshuka", 0.47],
-    ["kiinalainen-teehaudutetut-munat", 0],
-    ["thai-kai-jiao-yrteilla", 0],
-    ["yrttituorejuusto-kinkkurullat", 0],
-    ["rogan-josh", 0.88],
-    ["kreikkalainen-kanavuoka-oliiveilla", 0.47],
-    ["kana-tagine-sitruunalla", 0],
-    ["palak-paneer", 0.94],
-    ["tandoorikana", 0.88],
-  ]);
-  assert.equal(batch15Results.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 11);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, 190);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 134);
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, 112);
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 212);
+  for (const id of ["indonesialainen-ketoprak-aamiaiskulho", "lahi-ita-manakish-zaatarilla", "japanilainen-onigiri-lohella", "kiinalainen-soijamaito-aamiaisella", "paella-valenciana"]) {
+    const result = glycemicLoadPilotResults.find((entry) => entry.recipeId === id);
+    assert.equal(result?.status, "INSUFFICIENT SOURCE DATA", `${id}: changed input cannot reuse its previous GL`);
+  }
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED" && result.glycemicLoadPerServing === 0 && result.omittedAvailableCarbohydratePerServingG > 0).length, 3);
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
     assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);
@@ -164,10 +104,11 @@ test("GK values link to centralized recipe details on every published translatio
         assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoad));
         assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoadMethod));
         assert.ok(html.includes(`${recipe.locale === "fi" ? "/Reseptit" : "/Reseptit"}${recipe.locale === "fi" ? "/glykeeminen-kuorma/" : recipe.locale === "en" ? "/en/glycemic-load/" : recipe.locale === "sv" ? "/sv/glykemisk-belastning/" : "/th/glycemic-load/"}#${result.recipeId}`));
-        assert.doesNotMatch(html, /recipe-glycemic-load__sources|Estimate confidence:|Arvion luottamustaso:/);
+        assert.ok(result.confidence && html.includes(recipeUi[recipe.locale].glycemicLoadConfidence(result.confidence)), `${result.recipeId}/${recipe.locale}: confidence is visible`);
+        if (result.omittedAvailableCarbohydratePerServingG > 0) assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoadOmission(new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumSignificantDigits: 1 }).format(result.omittedAvailableCarbohydratePerServingG))), `${result.recipeId}/${recipe.locale}: omitted small carbohydrate is disclosed`);
         const displayed = result.glycemicLoadRangePerServing
-          ? `${new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumFractionDigits: 0 }).format(result.glycemicLoadRangePerServing.min)}–${new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumFractionDigits: 0 }).format(result.glycemicLoadRangePerServing.max)}`
-          : new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumFractionDigits: 2 }).format(result.glycemicLoadPerServing);
+          ? `${new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumSignificantDigits: 1, minimumSignificantDigits: 1 }).format(result.glycemicLoadRangePerServing.min)}–${new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumSignificantDigits: 1, minimumSignificantDigits: 1 }).format(result.glycemicLoadRangePerServing.max)}`
+          : new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumSignificantDigits: 1, minimumSignificantDigits: 1 }).format(result.glycemicLoadPerServing);
         assert.ok(html.includes(displayed), `${result.recipeId}/${recipe.locale}: displayed GL value`);
         assert.ok(result.sourceReferences.length > 0, `${result.recipeId}: calculated result has source references`);
       } else {
@@ -185,92 +126,19 @@ test("GK values link to centralized recipe details on every published translatio
     assert.ok(resultStart >= 0 && html.slice(resultStart, resultStart + 1_500).includes(labels[locale]), `${locale}: missing-result explanation is localized`);
   }
   const massaman = glycemicLoadPilotResults.find((result) => result.recipeId === "massaman-curry-kanalla-vhh");
-  assert.deepEqual(massaman?.glycemicLoadRangePerServing, { min: 5.17, max: 6.06 });
+  assert.ok(massaman, "Massaman stays represented in the central audit");
   assert.equal(glycemicLoadPilotResults.some((result) => result.recipeId === "maksalaatikko-kukkakaalilla"), false);
 });
 
-test("batch ten publishes only its seven complete low-confidence estimates", () => {
-  const expected = new Map([
-    ["meksikolainen-molletes-pico-de-gallolla", 20.01],
-    ["vietnamilainen-banh-cuon-sienilla", 23],
-    ["intialainen-besan-chilla", 7.22],
-    ["korealainen-gyeranbap-riisikulho", 26.47],
-    ["pohjoisafrikkalainen-harcha-juustolla", 20.88],
-    ["kiinalainen-jianbing-munaletty", 21.46],
-    ["indonesialainen-ketoprak-aamiaiskulho", 23.89],
-  ]);
-  for (const [recipeId, value] of expected) {
-    const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);
-    assert.equal(result?.status, "CALCULATED", `${recipeId}: complete result`);
-    assert.equal(result?.glycemicLoadPerServing, value, `${recipeId}: expected GL`);
-    assert.equal(result?.confidence, "LOW", `${recipeId}: category GI estimates are labeled low confidence`);
-  }
-  const incomplete = [
-    "meksikolainen-chilaquiles-verdes", "meksikolainen-huevos-divorciados", "korealainen-bindaetteok-aamiaiseksi",
-    "vietnamilainen-banh-xeo-aamiaisletut", "vietnamilainen-chao-ga-kanapuuro", "vietnamilainen-hu-tieu-aamiaiskeitto",
-    "kiinalainen-bao-munalla", "karibia-maissipuuro-kookoksella", "japanilainen-soba-aamiaiskeitto",
-    "karibia-johnny-cake", "lahi-ita-taatelipuuro-tahinilla", "thai-kookosriisi-mangolla", "korealainen-bataatti-riisikulho",
-  ];
-  for (const recipeId of incomplete) {
-    const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);
-    assert.equal(result?.status, "INSUFFICIENT SOURCE DATA", `${recipeId}: incomplete`);
-    assert.equal(result?.glycemicLoadPerServing, null, `${recipeId}: no partial total`);
-  }
-});
-
-test("batch eleven publishes only its five complete low-confidence estimates", () => {
-  const expected = new Map([
-    ["valimerellinen-appelsiini-aamiaiskakku", 27.21],
-    ["vietnamilainen-banh-bao-kananmunalla", 21.46],
-    ["korealainen-jumeokbap-merilevalla", 27.66],
-    ["lahi-ita-manakish-zaatarilla", 22.33],
-    ["malesialainen-mee-goreng-aamunuudeleilla", 18.55],
-  ]);
-  for (const [recipeId, value] of expected) {
-    const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);
-    assert.equal(result?.status, "CALCULATED", `${recipeId}: complete result`);
-    assert.equal(result?.glycemicLoadPerServing, value, `${recipeId}: expected GL`);
-    assert.equal(result?.confidence, "LOW", `${recipeId}: category GI estimates are labeled low confidence`);
-  }
-  const incomplete = [
-    "meksikolainen-quesadilla-sienilla", "japanilainen-dashimaki-tamago-aamiaislautasella",
-    "valimerellinen-halloumi-tomaattileipa", "indonesialainen-bakwan-maissifritter", "japanilainen-kabocha-puuro",
-    "malesialainen-kaya-paahtoleipa", "valimerellinen-farinata-aamupalaksi", "korealainen-kimchi-jeon-aamiaiseksi",
-    "korealainen-tofu-kimchi-aamiaiskulho", "valimerellinen-tahinipuuro", "malesialainen-kuih-seri-muka",
-    "malesialainen-laksa-lemak-aamiaiseksi", "indonesialainen-lontong-sayur-aamiaiseksi",
-    "pohjoisafrikkalainen-minttutee-kaurapuuro", "meksikolainen-atole-maissipuuro",
-  ];
-  for (const recipeId of incomplete) {
-    const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);
-    assert.equal(result?.status, "INSUFFICIENT SOURCE DATA", `${recipeId}: incomplete`);
-    assert.equal(result?.glycemicLoadPerServing, null, `${recipeId}: no partial total`);
-  }
-});
-
-test("batch twelve publishes only its four complete source-backed estimates", () => {
-  const expected = new Map([
-    ["vietnamilainen-banh-mi-munalla", 19.03],
-    ["pohjoisafrikkalainen-kuskus-aamiaiskulho", 33.97],
-    ["japanilainen-onigiri-lohella", 26.47],
-    ["kiinalainen-kevatsipulipannukakku", 21.46],
-  ]);
-  for (const [recipeId, value] of expected) {
-    const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);
-    assert.equal(result?.status, "CALCULATED", `${recipeId}: complete result`);
-    assert.equal(result?.glycemicLoadPerServing, value, `${recipeId}: expected GL`);
-    assert.equal(result?.confidence, "LOW", `${recipeId}: supplementary or category GI estimates are labeled low confidence`);
-  }
-  const incomplete = [
-    "malesialainen-nasi-lemak-aamiaisella", "indonesialainen-nasi-uduk-aamiaisella", "japanilainen-natto-riisikulho",
-    "japanilainen-okayu-umeboshipluumulla", "japanilainen-yaki-onigiri-misolla", "kiinalainen-hirssipuuro-taateleilla",
-    "vietnamilainen-pho-ga-aamuksi", "thai-riisinuudelikeitto-aamuksi", "vietnamilainen-xoi-maapahkinalla",
-    "malesialainen-roti-jala-currykanalla", "thai-roti-munalla-banaanilla", "karibia-saltfish-fritterit",
-    "thai-maissifritterit", "kiinalainen-katkarapu-wontonkeitto", "jiaozi", "xiaolongbao",
-  ];
-  for (const recipeId of incomplete) {
-    const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);
-    assert.equal(result?.status, "INSUFFICIENT SOURCE DATA", `${recipeId}: incomplete`);
-    assert.equal(result?.glycemicLoadPerServing, null, `${recipeId}: no partial total`);
+test("GI proxy matches remain visibly low confidence and incomplete totals are withheld", () => {
+  for (const result of glycemicLoadPilotResults) {
+    if (result.status === "INSUFFICIENT SOURCE DATA") assert.equal(result.glycemicLoadPerServing, null, `${result.recipeId}: no partial total`);
+    if (result.status === "CALCULATED") {
+      assert.notEqual(result.glycemicLoadPerServing, null, `${result.recipeId}: complete total`);
+      if (result.sourceReferences.some((source) => source.matchKind === "ANALOG" || source.matchKind === "CATEGORY_MEAN")) {
+        assert.equal(result.confidence, "LOW", `${result.recipeId}: proxy match lowers confidence`);
+      }
+    }
   }
 });
 

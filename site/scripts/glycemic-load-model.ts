@@ -53,6 +53,7 @@ export interface GlycemicLoadResult {
   status: "CALCULATED" | "INSUFFICIENT SOURCE DATA";
   glycemicLoadPerServing: number | null;
   glycemicLoadRangePerServing: { min: number; max: number } | null;
+  omittedAvailableCarbohydratePerServingG: number;
   confidence: "HIGH" | "MEDIUM" | "LOW" | null;
   interpretation: string;
   ingredients: Array<{
@@ -86,9 +87,8 @@ export interface GlycemicLoadResult {
 const valid = (value: unknown): value is number => typeof value === "number" && Number.isFinite(value) && value >= 0;
 
 /**
- * Calculate an ingredient-based GL estimate. Ingredient portions with <1 g
- * available carbohydrate per serving are documented and excluded. All other
- * portions require traceable GI evidence, including explicitly labelled analogs.
+ * Calculate an ingredient-based GL estimate. Every positive carbohydrate
+ * contribution is included or counted toward the cumulative editorial tolerance.
  */
 export function calculateGlycemicLoad(
   input: GlycemicLoadRecipeInput,
@@ -107,6 +107,7 @@ export function calculateGlycemicLoad(
   let totalLoadMax = 0;
   let hasRange = false;
   let confidence: "HIGH" | "MEDIUM" | "LOW" = "HIGH";
+  let omittedAvailableCarbohydratePerServingG = 0;
 
   const ingredients = input.ingredients.map((ingredient) => {
     const issues: string[] = [];
@@ -123,29 +124,34 @@ export function calculateGlycemicLoad(
 
     if (ingredient.excludedReason) {
       const estimatedCarbs = ingredient.estimatedAvailableCarbohydratePerServingG;
-      const negligible = valid(estimatedCarbs) && estimatedCarbs < 1 && Boolean(ingredient.negligibleAssumption);
-      const issue = negligible
-        ? `Omitted using stated <1 g/serving estimate: ${ingredient.negligibleAssumption}`
+      const documentedZero = valid(estimatedCarbs) && estimatedCarbs === 0 && Boolean(ingredient.negligibleAssumption);
+      const smallOmission = valid(estimatedCarbs) && estimatedCarbs > 0 && estimatedCarbs < 1 && Boolean(ingredient.negligibleAssumption);
+      if (smallOmission) {
+        omittedAvailableCarbohydratePerServingG += estimatedCarbs;
+        confidence = "LOW";
+      }
+      const issue = documentedZero
+        ? `Source-documented zero available carbohydrate: ${ingredient.negligibleAssumption}`
+        : smallOmission ? `Small contribution counted toward cumulative 1 g/serving editorial tolerance: ${ingredient.negligibleAssumption}`
         : ingredient.excludedReason || "Ingredient amount or Fineli mapping is missing; it is not treated as zero.";
-      if (!negligible) blockers.push(`${input.recipeId}: ${ingredient.name}: ${issue}`);
-      if (negligible) confidence = "LOW";
+      if (!documentedZero && !smallOmission) blockers.push(`${input.recipeId}: ${ingredient.name}: ${issue}`);
       return {
         name: ingredient.name,
         grams: ingredient.grams,
         fineliRecordId: ingredient.fineliRecordId,
         availableCarbohydratePer100g: null,
-        availableCarbohydratePerServingG: negligible ? estimatedCarbs ?? null : null,
+        availableCarbohydratePerServingG: documentedZero || smallOmission ? estimatedCarbs ?? null : null,
         availableCarbohydratePerServingRangeG: null,
         gi: null,
         giRecordId: ingredient.giRecordId,
         qualityTier: null,
         matchKind: null,
-        confidence: negligible ? "LOW" as const : null,
+        confidence: documentedZero || smallOmission ? "LOW" as const : null,
         giContribution: null,
         giContributionRange: null,
         giCandidates,
         excludedReason: ingredient.excludedReason,
-        issues: negligible ? [issue] : issues,
+        issues: [issue],
       };
     }
 
@@ -188,35 +194,49 @@ export function calculateGlycemicLoad(
     let matchKind: GlycemicIndexRecord["matchKind"] | null = null;
     let ingredientConfidence: GlycemicIndexRecord["confidence"] | null = null;
     if (availablePerServing !== null && availablePerServing > 0) {
-      if (availablePerServing < 1) confidence = "LOW";
       const matchedGi = ingredient.giRecordId ? giById.get(ingredient.giRecordId) : undefined;
-      if (availablePerServing < 1) {
-        gi = null;
-      } else if (!matchedGi) {
-        issues.push(ingredient.giMatchEvidence || "No exact, preparation-matched published GI value is recorded.");
-      } else if (!valid(matchedGi.gi) || !ingredient.giMatchEvidence || !matchedGi.source.url
-        || !matchedGi.source.published || matchedGi.referenceScale !== "GLUCOSE_100") {
-        issues.push("GI value is missing, unpublished, off-scale, or lacks source and matching rationale.");
-      } else {
+      if (matchedGi) {
         gi = matchedGi.gi;
         qualityTier = matchedGi.qualityTier;
         matchKind = matchedGi.matchKind ?? "EXACT";
         ingredientConfidence = matchedGi.confidence ?? (matchedGi.qualityTier === "STRONG" ? "HIGH" : "LOW");
-        giContribution = availablePerServing * gi / 100;
+      }
+      const match = matchedGi?.matchKind ?? "EXACT";
+      const sourceValid = Boolean(matchedGi && valid(matchedGi.gi) && ingredient.giMatchEvidence
+        && matchedGi.source.url && matchedGi.source.published && matchedGi.referenceScale === "GLUCOSE_100");
+      const matchValid = Boolean(matchedGi && (match === "EXACT"
+        ? matchedGi.qualityTier === "STRONG" && matchedGi.foodKey === ingredient.foodKey && matchedGi.preparationKey === ingredient.preparationKey
+        : match === "ANALOG" ? matchedGi.preparationKey === ingredient.preparationKey
+          : match === "CATEGORY_MEAN"));
+      if (!sourceValid || !matchValid) {
+        const reason = !matchedGi ? ingredient.giMatchEvidence || "GI evidence is missing."
+          : "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.";
+        if (availablePerServing < 1) {
+          omittedAvailableCarbohydratePerServingG += availablePerServing;
+          confidence = "LOW";
+          issues.push(`Small contribution omitted under cumulative 1 g/serving editorial tolerance (${availablePerServing.toFixed(3)} g available carbohydrate): ${reason}`);
+        } else issues.push(reason);
+      } else {
+        if (match !== "EXACT" || matchedGi!.qualityTier !== "STRONG") ingredientConfidence = "LOW";
+        else ingredientConfidence = matchedGi!.confidence ?? "HIGH";
+        if (ingredientConfidence === "LOW" || match === "ANALOG" || match === "CATEGORY_MEAN") confidence = "LOW";
+        else if (ingredientConfidence === "MEDIUM" && confidence === "HIGH") confidence = "MEDIUM";
+        const giValue = matchedGi!.gi;
+        giContribution = availablePerServing * giValue / 100;
         const minCarbs = availablePerServingRange?.min ?? availablePerServing;
         giContributionRange = {
-          min: (minCarbs < 1 ? 0 : minCarbs) * gi / 100,
-          max: availablePerServing * gi / 100,
+          min: minCarbs * giValue / 100,
+          max: availablePerServing * giValue / 100,
         };
         totalLoad += giContribution;
         totalLoadMin += giContributionRange.min;
         totalLoadMax += giContributionRange.max;
-        if (ingredientConfidence === "LOW" || matchKind === "CATEGORY_MEAN") confidence = "LOW";
-        else if (ingredientConfidence === "MEDIUM" && confidence === "HIGH") confidence = "MEDIUM";
       }
     }
 
-    for (const issue of issues) blockers.push(`${input.recipeId}: ${ingredient.name}: ${issue}`);
+    for (const issue of issues) {
+      if (!issue.startsWith("Small contribution omitted under cumulative 1 g/serving editorial tolerance")) blockers.push(`${input.recipeId}: ${ingredient.name}: ${issue}`);
+    }
     return {
       name: ingredient.name,
       grams: ingredient.grams,
@@ -236,6 +256,7 @@ export function calculateGlycemicLoad(
     };
   });
 
+  if (omittedAvailableCarbohydratePerServingG >= 1) blockers.push(`${input.recipeId}: cumulative omitted available carbohydrate is ${omittedAvailableCarbohydratePerServingG.toFixed(3)} g/serving, above the 1 g editorial tolerance.`);
   const complete = blockers.length === 0;
   return {
     recipeId: input.recipeId,
@@ -246,8 +267,9 @@ export function calculateGlycemicLoad(
       min: Math.round((totalLoadMin + Number.EPSILON) * 100) / 100,
       max: Math.round((totalLoadMax + Number.EPSILON) * 100) / 100,
     } : null,
+    omittedAvailableCarbohydratePerServingG,
     confidence: complete ? confidence : null,
-    interpretation: "Ingredient-based estimate only; actual prepared-meal response varies. Ingredient portions below 1 g available carbohydrate per serving are excluded.",
+    interpretation: "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. Unmatched sub-1 g ingredient portions may be omitted only while their cumulative amount stays below the documented 1 g/serving editorial tolerance.",
     ingredients,
     blockers,
   };

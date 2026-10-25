@@ -3,6 +3,7 @@ import test from "node:test";
 
 import type { FoodRecord } from "../scripts/nutrition-model";
 import { calculateGlycemicLoad, type GlycemicIndexRecord } from "../scripts/glycemic-load-model";
+import { glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches } from "../scripts/glycemic-load-recipe-binding";
 import { publishedGlycemicLoadForRecipe } from "../src/features/recipes/glycemic-load-display";
 
 function food(id: string, availableCarbohydrate: number): FoodRecord {
@@ -43,6 +44,46 @@ const gi: GlycemicIndexRecord = {
     qualityEvidence: "Table 1 ISO-standard inclusion criteria.",
   },
 };
+
+test("recipe binding detects changes in servings, amount, unit and food state, and is deterministic", () => {
+  const reviewed = `---
+recipe_id: sample
+servings: 2
+cooking_method: [boiling]
+ingredients:
+  - amount: 100
+    unit: g
+    item: dry rice
+---
+## Valmistus
+Boil until cooked.
+`;
+  const fingerprint = recipeBindingHash(reviewed);
+  assert.equal(recipeBindingMatches(fingerprint, recipeBindingHash(reviewed.replaceAll("\n", "\r\n"))), true);
+  for (const changed of [
+    reviewed.replace("servings: 2", "servings: 3"),
+    reviewed.replace("amount: 100", "amount: 150"),
+    reviewed.replace("unit: g", "unit: ml"),
+    reviewed.replace("dry rice", "cooked rice"),
+    reviewed.replace("Boil until cooked.", "Bake until cooked."),
+  ]) assert.equal(recipeBindingMatches(fingerprint, recipeBindingHash(changed)), false);
+  const documentedAlias = reviewed.replace("dry rice", "rice");
+  assert.equal(recipeBindingMatches(fingerprint, recipeBindingHash(documentedAlias, { rice: { canonical: "dry rice", evidence: "Same source food identity; preparation and mass basis reviewed." } })), true);
+  assert.equal(recipeBindingMatches(null, fingerprint), false);
+});
+
+test("calculation input binding covers food/GI mapping, portions, conversions and evidence", () => {
+  const reviewed = { recipeId: "sample", servings: 2, ingredients: [{ name: "rice", grams: 100, fineliRecordId: "food-a", giRecordId: "gi-a", massEvidence: "100 g listed", giMatchEvidence: "Exact cooked rice match." }] };
+  const fingerprint = glycemicLoadInputHash(reviewed);
+  assert.equal(recipeBindingMatches(fingerprint, glycemicLoadInputHash({ ingredients: reviewed.ingredients, servings: 2, recipeId: "sample" })), true);
+  for (const changed of [
+    { ...reviewed, servings: 3 },
+    { ...reviewed, ingredients: [{ ...reviewed.ingredients[0], grams: 150 }] },
+    { ...reviewed, ingredients: [{ ...reviewed.ingredients[0], fineliRecordId: "food-b" }] },
+    { ...reviewed, ingredients: [{ ...reviewed.ingredients[0], giRecordId: "gi-b" }] },
+    { ...reviewed, ingredients: [{ ...reviewed.ingredients[0], massEvidence: "estimated volume conversion" }] },
+  ]) assert.equal(recipeBindingMatches(fingerprint, glycemicLoadInputHash(changed)), false);
+});
 
 test("single-ingredient GL uses available carbohydrate per serving and rounds only the total", () => {
   const result = calculateGlycemicLoad({
@@ -93,7 +134,7 @@ test("zero-carbohydrate ingredients need no GI value and contribute zero", () =>
   assert.equal(result.ingredients[0].giContribution, null);
 });
 
-test("published, explicitly labelled supplementary proxy values are accepted with lower confidence", () => {
+test("a sourced analogue supports a total only with low confidence", () => {
   const supplementary = {
     ...gi,
     qualityTier: "SUPPLEMENTARY" as const,
@@ -110,9 +151,10 @@ test("published, explicitly labelled supplementary proxy values are accepted wit
   assert.equal(result.glycemicLoadPerServing, 5);
   assert.equal(result.ingredients[0].matchKind, "ANALOG");
   assert.equal(result.confidence, "LOW");
+  assert.equal(result.ingredients[0].confidence, "LOW");
 });
 
-test("standardized seasoning assumptions are visible and can be omitted below 1 g per serving", () => {
+test("assumed small seasoning amounts are visible and count toward the cumulative tolerance", () => {
   const result = calculateGlycemicLoad({
     recipeId: "unweighed",
     servings: 1,
@@ -120,10 +162,11 @@ test("standardized seasoning assumptions are visible and can be omitted below 1 
   }, [], []);
   assert.equal(result.status, "CALCULATED");
   assert.equal(result.glycemicLoadPerServing, 0);
+  assert.equal(result.omittedAvailableCarbohydratePerServingG, 0.3);
   assert.equal(result.blockers.length, 0);
   assert.equal(result.ingredients[0].grams, 1.5);
   assert.equal(result.ingredients[0].availableCarbohydratePerServingG, 0.3);
-  assert.match(result.ingredients[0].issues[0], /<1 g\/serving/);
+  assert.match(result.ingredients[0].issues[0], /editorial tolerance/);
   assert.equal(result.confidence, "LOW");
 });
 
@@ -150,7 +193,7 @@ test("an unpublished GI record still blocks an important ingredient", () => {
   assert.match(result.blockers[0], /unpublished/);
 });
 
-test("a sub-1 g ingredient needs no GI record and is excluded from the sum", () => {
+test("positive sub-1 g carbohydrate without GI evidence is included in the disclosed tolerance", () => {
   const result = calculateGlycemicLoad({
     recipeId: "small-contribution",
     servings: 1,
@@ -158,8 +201,49 @@ test("a sub-1 g ingredient needs no GI record and is excluded from the sum", () 
   }, [food("spinach", 0.2)], []);
   assert.equal(result.status, "CALCULATED");
   assert.equal(result.glycemicLoadPerServing, 0);
+  assert.equal(result.omittedAvailableCarbohydratePerServingG, 0.2);
   assert.equal(result.ingredients[0].availableCarbohydratePerServingG, 0.2);
   assert.equal(result.ingredients[0].giContribution, null);
+  assert.equal(result.blockers.length, 0);
+});
+
+test("small contributions accumulate rather than disappearing ingredient by ingredient", () => {
+  const ingredients = Array.from({ length: 10 }, (_, i) => ({ name: `food-${i}`, grams: 100, fineliRecordId: `food-${i}`, giRecordId: gi.id, foodKey: "tested-food", preparationKey: "raw", giMatchEvidence: "Exact raw-food match." }));
+  const result = calculateGlycemicLoad({ recipeId: "ten-small", servings: 1, ingredients }, ingredients.map((ingredient) => food(ingredient.fineliRecordId, 0.9)), [gi]);
+  assert.equal(result.status, "CALCULATED");
+  assert.ok(Math.abs(result.ingredients.reduce((sum, ingredient) => sum + (ingredient.availableCarbohydratePerServingG ?? 0), 0) - 9) < 1e-9);
+  assert.equal(result.glycemicLoadPerServing, 4.5);
+});
+
+test("two 0.99 g contributions are both included", () => {
+  const ingredients = ["a", "b"].map((id) => ({ name: id, grams: 100, fineliRecordId: id, giRecordId: gi.id, foodKey: "tested-food", preparationKey: "raw", giMatchEvidence: "Exact raw-food match." }));
+  const result = calculateGlycemicLoad({ recipeId: "two-small", servings: 1, ingredients }, ingredients.map((item) => food(item.fineliRecordId, 0.99)), [gi]);
+  assert.equal(result.status, "CALCULATED");
+  assert.equal(result.glycemicLoadPerServing, 0.99);
+});
+
+test("unmatched small portions are summed and block totals above the editorial tolerance", () => {
+  const ingredients = ["a", "b"].map((id) => ({ name: id, grams: 100, fineliRecordId: id, giRecordId: null }));
+  const result = calculateGlycemicLoad({ recipeId: "two-unmatched-small", servings: 1, ingredients }, ingredients.map((item) => food(item.fineliRecordId, 0.99)), []);
+  assert.equal(result.omittedAvailableCarbohydratePerServingG, 1.98);
+  assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(result.glycemicLoadPerServing, null);
+  assert.ok(result.blockers.some((blocker) => /cumulative omitted available carbohydrate/.test(blocker)));
+});
+
+test("a single 0.99 g contribution is not rounded away", () => {
+  const result = calculateGlycemicLoad({ recipeId: "one-small", servings: 1, ingredients: [{ name: "food", grams: 100, fineliRecordId: "food", giRecordId: gi.id, foodKey: "tested-food", preparationKey: "raw", giMatchEvidence: "Exact raw-food match." }] }, [food("food", 0.99)], [gi]);
+  assert.equal(result.status, "CALCULATED");
+  assert.equal(result.glycemicLoadPerServing, 0.5);
+});
+
+test("a measured zero is distinct from an unknown amount", () => {
+  const zero = calculateGlycemicLoad({ recipeId: "zero-source", servings: 1, ingredients: [{ name: "oil", grams: 20, fineliRecordId: "oil", giRecordId: null }] }, [food("oil", 0)], []);
+  const unknown = calculateGlycemicLoad({ recipeId: "unknown", servings: 1, ingredients: [{ name: "unknown", grams: null, fineliRecordId: null, giRecordId: null, excludedReason: "Amount and mapping unknown." }] }, [], []);
+  assert.equal(zero.status, "CALCULATED");
+  assert.equal(zero.glycemicLoadPerServing, 0);
+  assert.equal(unknown.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(unknown.glycemicLoadPerServing, null);
 });
 
 test("missing ingredient mass or GI evidence never returns a partial recipe GL", () => {

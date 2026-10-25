@@ -324,3 +324,62 @@ toistettavaa laskentasyötettä ne luokitellaan riittämättömäksi lähdenäyt
 GK-laskennan koko Fineli Rel20 -viiteaineisto on `fineli-release-20-reference.json`. Se sisältää 4 238 Fineli-tietuetta sekä ruoka-ainekohtaisia annosmittoja; sen lähde-ID:t, imeytyvän hiilihydraatin CHOAVL, kuidun FIBT ja polyolit SUGOH säilytetään. Pilotin `food-records.json` sisältää vain laskennassa tarvittavan pienen tietuejoukon. Reseptimäärät otetaan reseptien rakenteisista aineksista, ja muu kuin grammamäärä muunnetaan vain Fineli-tietueen omalla massalla.
 
 `glycemic-load-pilot-input.json` ja `glycemic-index-records.json` sisältävät ainesosakohtaiset vastaavuudet, GI-lähteet ja epävarmuudet. GK-sivulla on nyt 260 reseptin tulosriviä, joista 167 sisältää lasketun arvion ja 93 on keskeneräisiä. Yhteensä 261 reseptiä 325:stä on tarkistettu; 64 odottaa käsittelyä. Massaman-curryn GK on vaihteluväli noin 5–6 annosta kohti; vaihtelu kuvaa currytahnan lähde-eroa, ei koko laskelman virhemarginaalia. Erä 12 lisää matalan luottamuksen lähdetietueet kuskusille ja hirssille (puolalainen ihmistutkimus, n=8 kullekin) sekä keitetyille kuiville riisinuudeleille (vietnamilaisia ruokia vertaileva ihmistutkimus, n=12). Näiden lähteiden valmistustapa- ja tuotevastaavuusrajat on kirjattu yksittäisiin GI-tietueisiin. Maksalaatikolle ei julkaista GK-kokonaislukua, koska aiempi 3,45-arvio käytti maksalle mittaamatonta nolla-GI-oletusta. Laajat ruoka-aineryhmien keskiarvot ja epäsuorat lähdeosumat ovat matalan luottamuksen arvioita, eivät ruokalajikohtaisia mittauksia. Laskelma on ainesosista tehty arvio, ei valmiin aterian mittaus.
+
+### GK-laadunvarmistuksen tila 25.10.2026
+
+Yllä oleva erätilanne on historiallinen. Auditointi tehtiin lähde-SHA:sta
+`3e410436a82df391075f7a762c23f011624a8ca6`; vertailukohta on viimeisin
+GK-katselmus `b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5`. Kaikki 325 reseptiä
+tarkistettiin. Uudessa auditissa 112 GK-kokonaisarviota on laskettu ja 213
+keskeneräisiä. Aiemmista 190 arviosta 78 estyy edelleen: 72 reseptin sidottu
+ainesosa- tai valmistusrakenne on muuttunut, ja muilla estävä lähde tai määrä
+puuttuu. Katso ennen/jälkeen luvut tiedostoista
+`glycemic-load-quality-audit-2026-10-25.json` ja
+`glycemic-load-before-after-2026-10-25.json`.
+
+Laskennan kaava on `sum(GI_i × imeytyvä hiilihydraatti_i annosta kohti) / 100`.
+Reseptin sidonta kattaa tunnisteen, annosmäärän, järjestetyt ainesosanimet,
+määrät, yksiköt ja huomiot, valmistustavan, valmistusohjeen sekä muistiinpanot.
+Toinen fingerprint sitoo laskentasyötteen: Fineli- ja GI-tunnisteet, määrät,
+annosmuunnokset, lähdeperustelut ja oletukset. Molemmat tarkistetaan joka
+auditissa ja buildissa. Jos sidottu ainesosa, määrä, annos, valmistus tai
+laskentasyöte muuttuu, vanha kokonaisarvio estyy. Sidoksen päivittäminen
+edellyttää ainesosamäppäyksen ja lähteiden uudelleenarviointia. Nimenmuutoksen
+voi hyväksyä vain lähteistettynä alias-vastaavuutena tiedostossa
+`glycemic-load-recipe-aliases.json`.
+
+Alle 1 g/annos ainesosakohtaisia osuuksia ei poisteta yksittäin. Lähteistetty
+hiilihydraatti lasketaan aina, jos valittuun GI-tietueeseen on hyväksyttävä
+osuma. Jos GI-osuma puuttuu, tällainen pienosuus voidaan jättää toimituksellisella
+toleranssilla pois vain, kun kaikkien pois jätettävien osuuksien yhteismäärä jää
+alle 1 g/annos. Toleranssi on käyttäjän ymmärrettävyyteen tarkoitettu toimituksellinen
+raja, ei kliininen virhemarginaali. Pois jätetty hiilihydraattimäärä näytetään
+käyttäjälle ja tulos merkitään matalan luottamuksen arvioksi. Kun yhteissumma on
+vähintään 1 g/annos, resepti tarvitsee GI-lähteen tai kokonaisarvio estetään.
+Tuntematon määrä ei kuulu toleranssiin eikä muutu nollaksi.
+
+GI-lähdepolitiikka erottaa tutkimuksen menetelmällisen laadun ruoka- ja
+valmistustapavastaavuudesta. Julkaistua `STRONG`-arvoa käytetään suoraan vain,
+kun ruoka-aineen ja valmistuksen avaimet täsmäävät. Julkaistua ja jäljitettävää
+analogiaa voidaan käyttää, jos valmistustapa täsmää ja ruoka-ainetta koskeva
+perustelu on dokumentoitu; se alentaa luottamuksen matalaksi. Elintarvikeryhmän
+keskiarvo voidaan näyttää vain selvästi yleisenä matalan luottamuksen
+arviona, ei yksittäisen ruoan mitattuna GI-arvona. Julkaisematon, eri asteikon
+tai perustelematon GI-tieto estää olennaisen osuuden laskennan.
+
+Vertailussa 112 reseptin GK-numero muuttui aiempaan laskettuun arvoon nähden;
+65 muutosta oli numeerisia. Kahdeksan aiempaa nollaa muuttui positiiviseksi.
+Yksi muutos oli vähintään 1 GK-yksikkö annosta kohti (`kanakeitto-pinaatti-sitruuna`:
+1,00 → 2,31). Tässä toimituksellisessa vertailussa selvästi tulkintaan vaikuttavia
+muutoksia oli 9: kahdeksan nollasta positiiviseksi sekä yksi vähintään 1 yksikön
+muutos. Yhden yksikön vertailuraja on auditointia varten, ei kliininen raja.
+Kolmen nykyisen alle-toleranssin tuloksen sisäinen summa on pyöristetty nollaan;
+ne esitetään vain noin-arvioina ja niiden pois jätetty hiilihydraatti ilmoitetaan.
+Maksalaatikon aiempi 3,45-arvio pysyy estettynä, koska maksan GI-arvoa ei ole
+osoitettu.
+
+GK on ainesosakohtaisista GI- ja hiilihydraattiarvoista laskettu arvio, ei
+valmiista ateriasta mitattu GI eikä yksilöllinen verensokerivaste. Julkisella
+reseptisivulla arvo esitetään noin-arviona enintään yhden merkitsevän numeron
+tarkkuudella. Luottamustaso, pois jätetty pieni hiilihydraattimäärä ja
+menetelmälinkki näkyvät reseptisivulla.
