@@ -1,24 +1,60 @@
+export type EvaluationMode = "synthetic" | "live";
+export type HttpMethod = "GET" | "POST";
+
 export type EvaluationRequest = {
   path: string;
-  method?: "GET" | "POST";
+  method?: HttpMethod;
   body?: string;
 };
+
+export type ApprovedEndpoint = {
+  method: HttpMethod;
+  /** Exact API path prefix, including `/api/v1.2/`, confirmed for this evaluation. */
+  pathPrefix: string;
+};
+
+export type EvaluationOutcome = "success" | "http-error" | "redirect" | "timeout" | "network-error";
 
 export type EvaluationMetric = {
   durationMs: number;
   status: number | null;
-  outcome: "success" | "http-error" | "timeout" | "network-error";
-  estimatedCost: number | null;
+  outcome: EvaluationOutcome;
+  quotaLimit: number | null;
+  quotaRemaining: number | null;
+  estimatedCost: number | "UNKNOWN";
+  currency: string | null;
+};
+
+export type EvaluationUsage = {
+  calls: number;
+  successfulCalls: number;
+  failedCalls: number;
+  httpErrors: number;
+  redirects: number;
+  timeouts: number;
+  networkErrors: number;
+  totalDurationMs: number;
+  quotaLimit: number | null;
+  quotaRemaining: number | null;
+  quotaUsed: number | null;
+  estimatedCost: { status: "KNOWN"; amount: number; currency: string } | { status: "UNKNOWN" };
 };
 
 export type EvaluationClientOptions = {
+  /** Defaults to `synthetic`; live mode must be explicitly selected. */
+  mode?: EvaluationMode;
+  /** Only used in synthetic mode. Live mode pins the official Nutritics origin. */
   baseUrl?: string;
   apiKey?: string;
-  /** Confirm this header name with Nutritics before making a live request. */
   apiKeyHeader?: string;
+  /** Set only after Nutritics confirms the current API-key header format. */
+  apiKeyHeaderVerified?: boolean;
+  /** Required in live mode; each path prefix must be explicitly approved. */
+  approvedEndpoints?: ApprovedEndpoint[];
   timeoutMs?: number;
-  /** Leave null until a written API price is available. */
-  costPerRequest?: number | null;
+  /** Leave absent until a written per-call price and currency are known. */
+  pricePerRequest?: { amount: number; currency: string };
+  /** Synthetic mode requires an injected fake transport. Live mode defaults to fetch. */
   fetcher?: typeof fetch;
   onMetric?: (metric: EvaluationMetric) => void;
 };
@@ -26,7 +62,7 @@ export type EvaluationClientOptions = {
 export class EvaluationClientError extends Error {
   constructor(
     message: string,
-    readonly kind: "configuration" | "timeout" | "network" | "http",
+    readonly kind: "configuration" | "timeout" | "network" | "http" | "redirect",
     readonly status?: number,
   ) {
     super(message);
@@ -34,48 +70,107 @@ export class EvaluationClientError extends Error {
   }
 }
 
+const OFFICIAL_API_BASE_URL = "https://www.nutritics.com/";
+const SYNTHETIC_BASE_URL = "https://synthetic.invalid/";
+
 /**
- * Explicitly invoked evaluation-only API client. It is not imported by the
- * production application and never sends a request unless request() is called.
- * A caller must inject the current API key and its confirmed header name.
+ * Evaluation-only client. Synthetic mode cannot use the network because it
+ * requires an injected fake transport. Live mode is opt-in, pinned to the
+ * official host and gated by a verified key header plus endpoint allowlist.
  */
 export class NutriticsEvaluationClient {
+  private readonly mode: EvaluationMode;
   private readonly baseUrl: URL;
-  private readonly fetcher: typeof fetch;
+  private readonly fetcher: typeof fetch | undefined;
   private readonly timeoutMs: number;
-  private readonly costPerRequest: number | null;
+  private readonly pricePerRequest: { amount: number; currency: string } | null;
+  private readonly usage: Omit<EvaluationUsage, "estimatedCost"> = {
+    calls: 0,
+    successfulCalls: 0,
+    failedCalls: 0,
+    httpErrors: 0,
+    redirects: 0,
+    timeouts: 0,
+    networkErrors: 0,
+    totalDurationMs: 0,
+    quotaLimit: null,
+    quotaRemaining: null,
+    quotaUsed: null,
+  };
 
-  constructor(private readonly options: EvaluationClientOptions) {
-    this.baseUrl = new URL(options.baseUrl ?? "https://www.nutritics.com/");
-    this.fetcher = options.fetcher ?? fetch;
+  constructor(private readonly options: EvaluationClientOptions = {}) {
+    this.mode = options.mode ?? "synthetic";
+    this.baseUrl = new URL(this.mode === "live" ? OFFICIAL_API_BASE_URL : options.baseUrl ?? SYNTHETIC_BASE_URL);
+    this.fetcher = options.fetcher ?? (this.mode === "live" ? fetch : undefined);
     this.timeoutMs = options.timeoutMs ?? 10_000;
-    this.costPerRequest = options.costPerRequest ?? null;
-    if (this.baseUrl.protocol !== "https:") throw new EvaluationClientError("Nutritics base URL must use HTTPS", "configuration");
-    if (this.baseUrl.username || this.baseUrl.password) throw new EvaluationClientError("Credentials must not be embedded in the base URL", "configuration");
+    this.pricePerRequest = options.pricePerRequest ?? null;
+
+    if (this.baseUrl.protocol !== "https:") throw new EvaluationClientError("Nutritics request URLs must use HTTPS", "configuration");
+    if (this.baseUrl.username || this.baseUrl.password) throw new EvaluationClientError("Credentials must not be embedded in request URLs", "configuration");
+    if (this.mode === "live" && this.baseUrl.origin !== "https://www.nutritics.com") {
+      throw new EvaluationClientError("Live requests are pinned to the official Nutritics API origin", "configuration");
+    }
+    // No global fetch fallback in synthetic mode: tests must inject their own
+    // fake transport, otherwise there is no possible network path.
     if (!Number.isFinite(this.timeoutMs) || this.timeoutMs <= 0) throw new EvaluationClientError("timeoutMs must be a positive number", "configuration");
-    if (this.costPerRequest !== null && (!Number.isFinite(this.costPerRequest) || this.costPerRequest < 0)) {
-      throw new EvaluationClientError("costPerRequest must be a non-negative number or null", "configuration");
+    if (this.pricePerRequest && (!Number.isFinite(this.pricePerRequest.amount) || this.pricePerRequest.amount < 0 || !this.pricePerRequest.currency.trim())) {
+      throw new EvaluationClientError("A known per-request price requires a non-negative amount and currency", "configuration");
+    }
+
+    if (this.mode === "live") {
+      if (options.apiKeyHeaderVerified !== true || !options.apiKeyHeader?.trim()) {
+        throw new EvaluationClientError("Live mode requires Nutritics-confirmed API-key header configuration", "configuration");
+      }
+      if (!isSafeCredentialHeader(options.apiKeyHeader)) {
+        throw new EvaluationClientError("The confirmed API-key header name is invalid or reserved", "configuration");
+      }
+      if (!options.approvedEndpoints?.length || options.approvedEndpoints.some((endpoint) =>
+        !["GET", "POST"].includes(endpoint.method) ||
+        !isSafeApiPath(endpoint.pathPrefix) ||
+        endpoint.pathPrefix.includes("?"))) {
+        throw new EvaluationClientError("Live mode requires explicit, valid API endpoint allowlisting", "configuration");
+      }
     }
   }
 
+  getUsage(): EvaluationUsage {
+    const estimatedCost = this.pricePerRequest
+      ? { status: "KNOWN" as const, amount: this.usage.calls * this.pricePerRequest.amount, currency: this.pricePerRequest.currency }
+      : { status: "UNKNOWN" as const };
+    return { ...this.usage, estimatedCost };
+  }
+
   async request<T>(request: EvaluationRequest): Promise<T> {
+    const method = request.method ?? "GET";
     const apiKey = this.options.apiKey?.trim();
     const apiKeyHeader = this.options.apiKeyHeader?.trim();
-    if (!apiKey || !apiKeyHeader) {
-      throw new EvaluationClientError("API key and vendor-confirmed header name are required", "configuration");
-    }
-    if (!/^[!#$%&'*+.^_`|~0-9A-Za-z-]+$/.test(apiKeyHeader)) {
-      throw new EvaluationClientError("Invalid API key header name", "configuration");
+
+    if (!this.fetcher) throw new EvaluationClientError("Synthetic mode needs an injected fake transport", "configuration");
+    if (this.mode === "live") {
+      if (!apiKey || !apiKeyHeader || this.options.apiKeyHeaderVerified !== true) {
+        throw new EvaluationClientError("Live mode requires a key and vendor-confirmed header configuration", "configuration");
+      }
+      const allowed = this.options.approvedEndpoints!.some((endpoint) => endpoint.method === method && request.path.startsWith(endpoint.pathPrefix));
+      if (!allowed) throw new EvaluationClientError("Live request path is not in the approved endpoint allowlist", "configuration");
     }
 
+    if (this.mode === "synthetic" && (apiKey || apiKeyHeader)) {
+      throw new EvaluationClientError("Synthetic mode must not be configured with credentials", "configuration");
+    }
+    if (!isSafeApiPath(request.path)) {
+      throw new EvaluationClientError("Request path must be a safe Nutritics API v1.2 path", "configuration");
+    }
     const url = new URL(request.path, this.baseUrl);
     if (url.origin !== this.baseUrl.origin || url.username || url.password) {
       throw new EvaluationClientError("Request path must stay on the configured HTTPS origin", "configuration");
     }
     for (const key of url.searchParams.keys()) {
-      if (/^(api.?key|key|token|username|password)$/i.test(key)) {
+      if (/(api.?key|key|token|auth|username|password|secret|credential)/i.test(key)) {
         throw new EvaluationClientError("Credentials must not be placed in the request URL", "configuration");
       }
+    }
+    if (this.mode === "live" && !url.pathname.startsWith("/api/v1.2/")) {
+      throw new EvaluationClientError("Live requests must use the confirmed Nutritics v1.2 API path", "configuration");
     }
 
     const started = Date.now();
@@ -88,26 +183,34 @@ export class NutriticsEvaluationClient {
       }, this.timeoutMs);
     });
     let status: number | null = null;
-    let outcome: EvaluationMetric["outcome"] = "network-error";
+    let quotaLimit: number | null = null;
+    let quotaRemaining: number | null = null;
+    let outcome: EvaluationOutcome = "network-error";
+    let counted = false;
     try {
       const responseAndBody = await Promise.race([
         this.fetcher(url, {
-          method: request.method ?? "GET",
+          method,
           headers: {
-            [apiKeyHeader]: apiKey,
+            ...(this.mode === "live" ? { [apiKeyHeader!]: apiKey! } : {}),
             accept: "application/json",
             ...(request.body === undefined ? {} : { "content-type": "application/json" }),
           },
           ...(request.body === undefined ? {} : { body: request.body }),
+          redirect: "manual",
           signal: controller.signal,
-        }).then(async (response) => ({
-          response,
-          body: response.ok ? await response.json() as T : null,
-        })),
+        }).then(async (response) => ({ response, body: response.ok ? await response.json() as T : null })),
         timeoutPromise,
       ]);
       const { response, body } = responseAndBody;
       status = response.status;
+      quotaLimit = readLimit(response.headers);
+      quotaRemaining = readRemaining(response.headers);
+      counted = true;
+      if (response.status >= 300 && response.status < 400) {
+        outcome = "redirect";
+        throw new EvaluationClientError("Nutritics redirect refused; credentials were not forwarded", "redirect", response.status);
+      }
       if (!response.ok) {
         outcome = "http-error";
         throw new EvaluationClientError(`Nutritics request failed with HTTP ${response.status}`, "http", response.status);
@@ -116,18 +219,76 @@ export class NutriticsEvaluationClient {
       return body as T;
     } catch (error) {
       if (error instanceof EvaluationClientError) {
-        if (error.kind === "timeout") outcome = "timeout";
+        outcome = error.kind === "timeout" ? "timeout" : error.kind === "redirect" ? "redirect" : error.kind === "http" ? "http-error" : outcome;
         throw error;
       }
       throw new EvaluationClientError("Nutritics request failed; response details were not logged", "network");
     } finally {
       if (timeout !== undefined) clearTimeout(timeout);
-      this.options.onMetric?.({
-        durationMs: Date.now() - started,
-        status,
-        outcome,
-        estimatedCost: this.costPerRequest,
-      });
+      // Count only requests that reached the injected/real transport.
+      if (counted || outcome === "timeout" || outcome === "network-error") {
+        this.record({
+          durationMs: Date.now() - started,
+          status,
+          outcome,
+          quotaLimit,
+          quotaRemaining,
+          estimatedCost: this.pricePerRequest?.amount ?? "UNKNOWN",
+          currency: this.pricePerRequest?.currency ?? null,
+        });
+      }
     }
   }
+
+  private record(metric: EvaluationMetric): void {
+    this.usage.calls += 1;
+    this.usage.successfulCalls += metric.outcome === "success" ? 1 : 0;
+    this.usage.failedCalls += metric.outcome === "success" ? 0 : 1;
+    this.usage.httpErrors += metric.outcome === "http-error" ? 1 : 0;
+    this.usage.redirects += metric.outcome === "redirect" ? 1 : 0;
+    this.usage.timeouts += metric.outcome === "timeout" ? 1 : 0;
+    this.usage.networkErrors += metric.outcome === "network-error" ? 1 : 0;
+    this.usage.totalDurationMs += metric.durationMs;
+    this.usage.quotaLimit = metric.quotaLimit ?? this.usage.quotaLimit;
+    this.usage.quotaRemaining = metric.quotaRemaining ?? this.usage.quotaRemaining;
+    this.usage.quotaUsed = this.usage.quotaLimit !== null && this.usage.quotaRemaining !== null
+      ? Math.max(0, this.usage.quotaLimit - this.usage.quotaRemaining)
+      : this.usage.quotaUsed;
+    try {
+      this.options.onMetric?.(metric);
+    } catch {
+      // Observability callbacks must not leak request data or change API results.
+    }
+  }
+}
+
+function isSafeApiPath(path: string): boolean {
+  if (!path.startsWith("/api/v1.2/") || path.startsWith("//") || path.includes("\\") || path.includes("#")) return false;
+  // Reject traversal before URL normalization (including percent-encoded dots).
+  const decoded = (() => {
+    try { return decodeURIComponent(path); } catch { return ""; }
+  })();
+  if (!decoded || decoded.includes("\\") || decoded.split(/[/?]/).some((part) => part === "." || part === "..")) return false;
+  return true;
+}
+
+function isSafeCredentialHeader(name: string): boolean {
+  if (!/^[!#$%&'*+.^_`|~0-9A-Za-z-]+$/.test(name)) return false;
+  return !["accept", "content-type", "cookie", "host", "origin", "referer", "user-agent"].includes(name.toLowerCase());
+}
+
+function readLimit(headers: Headers): number | null {
+  return readNumberHeader(headers, ["ratelimit-limit", "x-ratelimit-limit"]);
+}
+
+function readRemaining(headers: Headers): number | null {
+  return readNumberHeader(headers, ["ratelimit-remaining", "x-ratelimit-remaining"]);
+}
+
+function readNumberHeader(headers: Headers, names: string[]): number | null {
+  for (const name of names) {
+    const value = headers.get(name);
+    if (value !== null && /^\d+$/.test(value)) return Number(value);
+  }
+  return null;
 }

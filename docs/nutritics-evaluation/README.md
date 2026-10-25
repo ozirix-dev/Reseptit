@@ -7,7 +7,7 @@ Tämä kansio valmistelee käyttäjän itse aktivoimaa seitsemän päivän Nutri
 - Työhaara: `codex/nutritics-evaluation`, luotu `origin/main`-haarasta.
 - Vertailun lähtö-SHA: `ce5b2ef4ddae0507a3dae6fc5de5d88fb0693868`.
 - Käynnissä oleva GI/GK-laskentatyö on erillinen. Sen työpuita tai muutoksia ei sisällytetä. Tässä työssä Nutriticsin GI/GK-ominaisuutta vain tarkastellaan; kokeilutuloksia ei kopioida GI/GK-laskentaan.
-- Haaran valmisteluvaiheessa (25.10.2026 ajettu tiukka audit) ravintoarvoauditin jakauma on 120 `ESTIMATE WITH EVIDENCE`, 86 `INSUFFICIENT SOURCE DATA` ja 119 `MISSING` (325 reseptiä). Repon aiempi tallennettu audit-tilannekuva oli vanhentunut; tämän haaran ajettu tulos on vertailun lähtötila. Nämä ovat auditin luokkia, eivät väitteitä Nutriticsin tarkkuudesta.
+- `origin/main`-pohjassa ajettu tiukka audit (25.10.2026) käsitteli 325 reseptiä: 140 `ESTIMATE WITH EVIDENCE`, 86 `INSUFFICIENT SOURCE DATA` ja 99 `MISSING`. Nämä ovat lähtötilan luokkia, eivät väitteitä Nutriticsin tarkkuudesta. Vertailureseptien lähdehashit ja annosmäärät on tallennettu tyhjään vertailupohjaan; vertailuarvot lasketaan uudelleen ennen kokeilua.
 - Fineli Rel20 -aineisto, reseptikohtaiset laskentasyötteet ja ravintoarvoraportit ovat jo repossa. Fineliä ei ladata uudelleen eikä reseptien nykyisiä arvoja muuteta.
 
 ## Vertailureseptit
@@ -39,12 +39,12 @@ Lähtötilaa ei käytetä Nutriticsin tuloksen hyväksymiseen. Päivän 3 vertai
 
 ## Tietoturva ja API-sovitin
 
-`site/scripts/nutritics-evaluation-client.ts` on erillinen kokeilusovitin. Se tekee verkkopyynnön vain, kun kutsuja antaa sen suoraan ajossa ja injektoi kuljetusfunktion. Sovitin ei ole tuotantosivun riippuvuus, sitä ei kutsuta buildissa, eikä mukana ole oletusarvoista Nutritics-pyynnön ajastusta.
+`site/scripts/nutritics-evaluation-client.ts` on erillinen kokeilusovitin. Synteettinen tila toimii vain injektoidulla feikkikuljetuksella; ilman sitä se ei voi tehdä verkkopyyntöä. Live-tila vaatii eksplisiittisen `mode: "live"`-valinnan, Nutriticsilta vahvistetun avainotsakkeen, hyväksyttyjen v1.2-päätepisteiden listan ja avaimen. Sovitin ei ole tuotantosivun riippuvuus, sitä ei kutsuta buildissa tai normaalissa CI:ssä oikean verkkokuljetuksen kanssa, eikä mukana ole ajastusta.
 
-API-avain siirretään otsakkeessa, ei URL:ssa. Otsakkeen nimi jätetään asetettavaksi, koska julkinen nykyinen dokumentaatio ei vahvista uuden API-avaimen täsmällistä otsakeskeemaa. Oikea nimi ja API-kokeilun kutsuoikeudet on vahvistettava Nutriticsilta ennen live-pyyntöä. Avainta ei kirjata lokiin tai testitulokseen. Kustannusmittari laskee kutsut ja keston; rahakustannus näytetään vain, jos kokeilun kirjallinen yksikköhinta on tiedossa.
+API-avain siirretään vain otsakkeessa, ei URL:ssa. API-tuotesivun yleinen autentikointiteksti ja Explorerin API Key -valitsin eivät yksilöi nykyisen avainotsakkeen nimeä/arvoa, joten live-tila edellyttää Nutriticsin kirjallista vahvistusta. Se on kovakoodattu viralliseen `https://www.nutritics.com`-alkuperään. Uudelleenohjauksia ei seurata; URL-tunnukset, traversal-polut, ulkoiset alkuperät ja allowlistin ulkopuoliset päätepisteet torjutaan. Avainta tai vastausrunkoa ei kirjata lokiin/virheviestiin. Kustannusmittari laskee kutsut, virheet, keston ja quota-otsakkeet; rahakustannus on `UNKNOWN`, ellei kirjallinen yksikköhinta ja valuutta ole tiedossa.
 
 Kokeilun päätyttyä lisättävät vastaukset, muistiinpanot ja raportit käyvät läpi lisenssi- ja salaisuusarvion. Todellisia Nutritics-vastauksia ei commitoida.
 
 ## Käyttöehdot ja ulkoiset kysymykset
 
-Nutriticsin sivusto tarjoaa Food Data API:lle ilmaisen tarjouksen pyytämisen, ei julkaistua ilmaista API-hintaa. Tarjous ja käyttöehdot pyydetään ennen sitoutumista. Julkisista lähteistä ei ole vahvistettu, että Fineli olisi käytettävissä Nutriticsin Suomen lähteenä. Katso [ominaisuusmatriisi](feature-matrix.md), [7 päivän protokolla](seven-day-protocol.md) ja Nutriticsin [API-sivu](https://www.nutritics.com/en/product/food-data-api/), [API Explorer](https://www.nutritics.com/api/v1.2/explorer/) sekä [hinnoittelu](https://www.nutritics.com/en/pricing/).
+Nutriticsin sivusto tarjoaa maksuttoman tarjouspyynnön, ei julkaistua ilmaista API-kiintiötä. Tarjous ja käyttöehdot pyydetään ennen sitoutumista. Julkisista lähteistä ei ole vahvistettu Finelin saatavuutta Nutriticsin Suomen lähteenä, kokeilutilin API-oikeuksia tai mahdollisuutta julkaista tuloksia. Katso [ominaisuusmatriisi](feature-matrix.md), [7 päivän protokolla](seven-day-protocol.md), [vertailupohja](comparison-template.csv) ja Nutriticsin [API-sivu](https://www.nutritics.com/en/product/food-data-api/), [API Explorer](https://www.nutritics.com/api/v1.2/explorer/) sekä [hinnoittelu](https://www.nutritics.com/en/pricing/).
