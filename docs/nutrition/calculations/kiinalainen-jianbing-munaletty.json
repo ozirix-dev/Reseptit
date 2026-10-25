@@ -1,0 +1,260 @@
+{
+  "recipeId": "kiinalainen-jianbing-munaletty",
+  "sourceHash": "1b75e3c8d282d331403006525a118d007d9d705afc9fca76d4457d94d752861a",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-16",
+  "servings": 2,
+  "scope": "Two servings; two medium eggs (110 g edible), 100 g medium wheat flour, two tablespoons chopped spring onion (12 g), 8 g hulled sesame, one tablespoon neutral cooking oil (13.5 g) fully retained, one tablespoon soybean paste (15 g); salt omitted.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kananmuna",
+      "amount": 2,
+      "unit": "kpl",
+      "state": "raw edible egg, shell removed",
+      "matchEvidence": "Fineli Release 20 record 858 is raw edible egg, shell removed.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli record 858 lists a medium egg portion (KPL_M) as 55 g edible egg without shell.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible egg, shell removed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    },
+    {
+      "item": "vehnäjauho",
+      "amount": 100,
+      "unit": "g",
+      "state": "medium wheat flour as sold",
+      "matchEvidence": "Fineli Release 20 record 110 is medium wheat flour.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "medium wheat flour as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "item": "kevätsipuli",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "fresh raw spring onion, chopped",
+      "matchEvidence": "AFCD Release 3 record F006250 is fresh raw spring onion.",
+      "gramsPerUnit": 6,
+      "conversionEvidence": "One tablespoon chopped spring onion is represented as 6 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006250-release-3",
+        "name": "Onion, spring, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh raw spring onion, chopped",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.6,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 1.7,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "seesami",
+      "amount": 8,
+      "unit": "g",
+      "state": "white whole hulled sesame seed",
+      "matchEvidence": "Fineli Release 20 record 34245 is whole hulled white sesame seed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-34245-release-20",
+        "name": "SEESAMINSIEMEN, VALKOINEN, KOKONAINEN, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34245",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "white whole hulled sesame seed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.171,
+          "FIBT": 11.3,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.171,
+          "fibre": 11.3,
+          "polyols": 0,
+          "protein": 24.6,
+          "fat": 59.7
+        }
+      }
+    },
+    {
+      "item": "neutraalia paistoöljyä",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "neutral vegetable cooking oil",
+      "matchEvidence": "Fineli Release 20 record 541 is average neutral cooking oil.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Fineli record 541 lists 13.5 g per tablespoon; all listed pan oil is counted as retained.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-541-release-20",
+        "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "neutral vegetable cooking oil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 99.9
+        }
+      }
+    },
+    {
+      "item": "soijapaputahnaa",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "fermented soybean paste as sold",
+      "matchEvidence": "AFCD Release 3 record F005702 is soybean paste.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "One tablespoon soybean paste is represented as 15 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F005702-release-3",
+        "name": "Paste, soybean",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fermented soybean paste as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 19.7,
+          "fibre": 4.3,
+          "polyols": 0,
+          "protein": 12.9,
+          "fat": 5.1
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "salt omitted; no contribution to displayed macronutrients",
+      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+    }
+  ]
+}

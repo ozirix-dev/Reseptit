@@ -13,23 +13,26 @@ cooking_method:
   - "paistaminen"
 ingredients:
   - amount: 100
-    unit: "g"
-    item: "munanuudeli"
+    unit: g
+    item: vehnänuudeli
   - amount: 100
-    unit: "g"
-    item: "tofu"
+    unit: g
+    item: tofu
   - amount: 2
-    unit: "kpl"
-    item: "kananmuna"
+    unit: kpl
+    item: kananmuna
   - amount: 150
-    unit: "g"
-    item: "pavunitu"
+    unit: g
+    item: pavunitu
   - amount: 1
-    unit: "rkl"
-    item: "neutraalia paistoöljyä"
+    unit: rkl
+    item: neutraalia paistoöljyä
+  - amount: 1
+    unit: rkl
+    item: soijakastiketta
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -42,6 +45,10 @@ image:
   alt: "Mee goreng aamunuudeleilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 35.42
+carbs_total_per_serving_g: 38.4
+protein_per_serving_g: 21.71
+fat_per_serving_g: 17.71
 ---
 
 # Mee goreng aamunuudeleilla
@@ -59,4 +66,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Raasta, muussaa tai hienonna pääraaka-aine. Sekoita joukkoon taikinan ainekset ja lisää vettä vain sen verran, että seos pysyy koossa.
 2. Kuumenna pannulla ohut kerros öljyä. Muotoile pieniksi pihveiksi tai lusikoi taikina pannulle.
 3. Paista keskilämmöllä molemmin puolin kypsäksi ja rapeapintaiseksi. Paista erissä, jotta pannu ei jäähdy.
-4. Paista nuudelit tofun ja itujen kanssa, kääntele joukkoon kananmuna ja soijakastike.
+4. Kypsennä vehnänuudelit pakkauksen ohjeen mukaan ja valuta. Paista tofu ja pavunidut öljyssä. Lisää nuudelit, kananmuna ja soijakastike; kääntele pannulla, kunnes muna on kypsää.

@@ -1,0 +1,278 @@
+{
+  "recipeId": "indialainen-poha-maapahkinoilla",
+  "sourceHash": "6f9628d288cf07ddc3b2737ba224fcde4db428470c6412c6c186e85a8478c1a0",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-16",
+  "servings": 2,
+  "scope": "Two servings; 100 g uncooked rice flakes, 20 g raw unsalted peanuts, 50 g fresh raw green peas, one tablespoon neutral cooking oil (13.5 g) fully retained, one tablespoon coriander (3 g), one tablespoon lemon juice (15 g); 3 g curry leaves omitted under a conservative herb bound and salt omitted.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "riisihiutale",
+      "amount": 100,
+      "unit": "g",
+      "state": "uncooked flattened rice flakes",
+      "matchEvidence": "Fineli Release 20 record 182 is rice flour/rice flakes; the recipe uses the uncooked flake form.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-182-release-20",
+        "name": "JAUHO, RIISIJAUHO, RIISIHIUTALE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/182",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "uncooked flattened rice flakes",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 79.3,
+          "FIBT": 2.3,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 79.3,
+          "fibre": 2.3,
+          "polyols": 0,
+          "protein": 7.69,
+          "fat": 1.4
+        }
+      }
+    },
+    {
+      "item": "maapähkinä",
+      "amount": 20,
+      "unit": "g",
+      "state": "raw unsalted peanut kernels",
+      "matchEvidence": "AFCD Release 3 record F006107 is raw unsalted peanut.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006107-release-3",
+        "name": "Nut, peanut, with skin, raw, unsalted",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw unsalted peanut kernels",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 8.9,
+          "fibre": 8.2,
+          "polyols": 0,
+          "protein": 24.7,
+          "fat": 47.1
+        }
+      }
+    },
+    {
+      "item": "curry-lehti",
+      "amount": 3,
+      "unit": "g",
+      "state": "three grams of fresh curry leaves omitted under a conservative herb bound",
+      "matchEvidence": "Three grams across the recipe is a small aromatic herb amount.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Small curry-leaf contribution omitted; the source dataset lacks an exact complete fresh-curry-leaf record.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 1,
+        "netCarbohydrate": 0.2,
+        "totalCarbohydrate": 0.3,
+        "protein": 0.1,
+        "fat": 0.1
+      },
+      "omissionImpactEvidence": "Three grams across two servings is conservatively bounded below 1 kcal and 1 g of each macro per serving."
+    },
+    {
+      "item": "herne",
+      "amount": 50,
+      "unit": "g",
+      "state": "fresh green peas, raw",
+      "matchEvidence": "Fineli Release 20 record 370 is fresh green pea.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-370-release-20",
+        "name": "HERNE, VIHREÄ, TUORE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/370",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh green peas, raw",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 9.495,
+          "FIBT": 3.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 9.495,
+          "fibre": 3.1,
+          "polyols": 0,
+          "protein": 5.623,
+          "fat": 0.787
+        }
+      }
+    },
+    {
+      "item": "neutraalia paistoöljyä",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "neutral vegetable cooking oil",
+      "matchEvidence": "Fineli Release 20 record 541 is average neutral cooking oil.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Fineli record 541 lists 13.5 g per tablespoon; all listed pan oil is counted as retained.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-541-release-20",
+        "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "neutral vegetable cooking oil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 99.9
+        }
+      }
+    },
+    {
+      "item": "tuoretta korianteria",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "fresh raw coriander leaves, chopped",
+      "matchEvidence": "AFCD Release 3 record F003192 is fresh raw coriander leaves.",
+      "gramsPerUnit": 3,
+      "conversionEvidence": "One tablespoon chopped coriander leaves is represented as 3 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F003192-release-3",
+        "name": "Coriander, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh raw coriander leaves, chopped",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.9,
+          "fibre": 3.2,
+          "polyols": 0,
+          "protein": 3.1,
+          "fat": 0.6
+        }
+      }
+    },
+    {
+      "item": "sitruunamehua",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "lemon juice",
+      "matchEvidence": "Fineli Release 20 record 11557 is lemon juice.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "Fineli household portion is 15 g per tablespoon.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11557-release-20",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11557",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "lemon juice",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.6,
+          "FIBT": 0.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "fibre": 0.1,
+          "polyols": 0,
+          "protein": 0.31,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "salt omitted; no contribution to displayed macronutrients",
+      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+    }
+  ]
+}

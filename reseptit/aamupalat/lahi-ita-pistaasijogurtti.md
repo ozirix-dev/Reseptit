@@ -12,21 +12,21 @@ main_ingredient:
 cooking_method:
   - "paistaminen"
 ingredients:
-  - amount: 100
-    unit: "g"
-    item: "jogurtti"
-  - amount: 100
-    unit: "g"
-    item: "pistaasi"
   - amount: 200
-    unit: "ml"
-    item: "ruusuvesi"
-  - amount: 1
-    unit: "kpl"
-    item: "granaattiomena"
+    unit: g
+    item: jogurtti
+  - amount: 20
+    unit: g
+    item: pistaasi
+  - amount: 5
+    unit: ml
+    item: ruusuvesi
+  - amount: 60
+    unit: g
+    item: granaattiomenan siemeniä
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -39,6 +39,11 @@ image:
   alt: "Pistaasi-ruusuvesijogurtti tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 8.23
+carbs_total_per_serving_g: 10.92
+protein_per_serving_g: 5.27
+fat_per_serving_g: 8.82
+
 ---
 
 # Pistaasi-ruusuvesijogurtti

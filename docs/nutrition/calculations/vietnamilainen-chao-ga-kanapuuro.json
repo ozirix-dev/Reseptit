@@ -1,0 +1,196 @@
+{
+  "recipeId": "vietnamilainen-chao-ga-kanapuuro",
+  "sourceHash": "61e6d374dfde3284a21009f302a89251d1ff09e2e14f7b30f597c8b36c1eed07",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-16",
+  "servings": 2,
+  "scope": "Two servings; 100 g dry white long-grain rice, 150 g raw skinless chicken breast, 2 g fresh ginger, two tablespoons chopped spring onion (12 g), 700 ml water; salt omitted.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "riisi",
+      "amount": 100,
+      "unit": "g",
+      "state": "dry uncooked white long-grain rice",
+      "matchEvidence": "AFCD Release 3 record F007682 is uncooked white long-grain rice; these porridge and bowl recipes measure rice dry.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F007682-release-3",
+        "name": "Rice, white, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dry uncooked white long-grain rice",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 74,
+          "fibre": 0.8,
+          "polyols": 0,
+          "protein": 7,
+          "fat": 0.9
+        }
+      }
+    },
+    {
+      "item": "nahatonta broilerin rintafileetä",
+      "amount": 150,
+      "unit": "g",
+      "state": "raw lean skinless chicken breast flesh",
+      "matchEvidence": "AFCD Release 3 record F002594 is raw lean chicken breast flesh, matching the clarified skinless breast ingredient.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F002594-release-3",
+        "name": "Chicken, breast, lean flesh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw lean skinless chicken breast flesh",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 22.5,
+          "fat": 0.8
+        }
+      }
+    },
+    {
+      "item": "tuoretta inkivääriä",
+      "amount": 2,
+      "unit": "g",
+      "state": "peeled fresh raw ginger",
+      "matchEvidence": "AFCD Release 3 record F004213 is fresh peeled ginger.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F004213-release-3",
+        "name": "Ginger, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "peeled fresh raw ginger",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 2.8,
+          "polyols": 0,
+          "protein": 0.8,
+          "fat": 0.4
+        }
+      }
+    },
+    {
+      "item": "kevätsipuli",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "fresh raw spring onion, chopped",
+      "matchEvidence": "AFCD Release 3 record F006250 is fresh raw spring onion.",
+      "gramsPerUnit": 6,
+      "conversionEvidence": "One tablespoon chopped spring onion is represented as 6 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006250-release-3",
+        "name": "Onion, spring, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh raw spring onion, chopped",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.6,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 1.7,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "vettä",
+      "amount": 700,
+      "unit": "ml",
+      "state": "plain tap water",
+      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Water is represented at 1 g/ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "salt omitted; no contribution to displayed macronutrients",
+      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "recipeId": "thai-kananmunat-kookoscurryssa",
+  "sourceHash": "9dcbc41339354d24338fd9a207a2e2a6c0c88dd109b631df7da9081160a6f2e1",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-16",
+  "servings": 2,
+  "scope": "Two servings; two medium eggs (110 g edible), 200 ml canned regular-fat coconut milk, 20 g Mae Ploy red curry paste, one medium raw tomato (125 g edible), one tablespoon neutral cooking oil (13.5 g) fully retained, 100 g dry white long-grain rice; salt omitted.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kananmuna",
+      "amount": 2,
+      "unit": "kpl",
+      "state": "raw edible egg, shell removed",
+      "matchEvidence": "Fineli Release 20 record 858 is raw edible egg, shell removed.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli record 858 lists a medium egg portion (KPL_M) as 55 g edible egg without shell.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible egg, shell removed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    },
+    {
+      "item": "kookosmaito",
+      "amount": 200,
+      "unit": "ml",
+      "state": "regular-fat canned coconut milk as sold",
+      "matchEvidence": "The recipe specifies coconut milk without a reduced-fat variant; AFCD record F002991 is canned regular-fat coconut milk.",
+      "gramsPerUnit": 0.92,
+      "conversionEvidence": "Canned regular-fat coconut milk represented at 0.92 g/ml, consistent with prior ingredient-specific batch conversions.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F002991-release-3",
+        "name": "Coconut, milk, canned, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "regular-fat canned coconut milk as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.7,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.4,
+          "fat": 15.4
+        }
+      }
+    },
+    {
+      "item": "Mae Ploy punaista currytahnaa",
+      "amount": 20,
+      "unit": "g",
+      "state": "as sold; label values per 100 g",
+      "matchEvidence": "The recipe now specifies the locally documented Mae Ploy red curry paste; label values are stored in the local food-records database.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "mae-ploy-red-curry-paste-2026-10-24",
+        "name": "Mae Ploy Red Curry Paste, 400 g",
+        "sourceUrl": "https://sainsburys.co.uk/groceries/product/mae-ploy-red-curry-paste-400g",
+        "retrievedAt": "2026-10-24",
+        "licence": "Retailer-published product label facts; product reference only, not an open-database licence",
+        "state": "as sold; label values per 100 g",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Published ingredient declaration contains no polyol ingredient.",
+        "per100g": {
+          "kcal": 163,
+          "protein": 6.1,
+          "fat": 1.6,
+          "carbohydrate": 24.2,
+          "fibre": 13.5,
+          "sugars": 7.3,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "tomaatti",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "raw medium tomato, edible portion",
+      "matchEvidence": "Fineli Release 20 record 352 is raw tomato.",
+      "gramsPerUnit": 125,
+      "conversionEvidence": "Fineli record 352 medium tomato portion (KPL_M) is 125 g edible tomato.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-352-release-20",
+        "name": "TOMAATTI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/352",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw medium tomato, edible portion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.45,
+          "FIBT": 0.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3.45,
+          "fibre": 0.4,
+          "polyols": 0,
+          "protein": 0.55,
+          "fat": 0.3
+        }
+      }
+    },
+    {
+      "item": "neutraalia paistoöljyä",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "neutral vegetable cooking oil",
+      "matchEvidence": "Fineli Release 20 record 541 is average neutral cooking oil.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Fineli record 541 lists 13.5 g per tablespoon; all listed pan oil is counted as retained.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-541-release-20",
+        "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "neutral vegetable cooking oil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 99.9
+        }
+      }
+    },
+    {
+      "item": "kuivaa pitkäjyväistä valkoista riisiä",
+      "amount": 100,
+      "unit": "g",
+      "state": "dry uncooked white long-grain rice",
+      "matchEvidence": "AFCD Release 3 record F007682 is uncooked white long-grain rice.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F007682-release-3",
+        "name": "Rice, white, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dry uncooked white long-grain rice",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 74,
+          "fibre": 0.8,
+          "polyols": 0,
+          "protein": 7,
+          "fat": 0.9
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "salt omitted; no contribution to displayed macronutrients",
+      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+    }
+  ]
+}

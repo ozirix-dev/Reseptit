@@ -13,20 +13,23 @@ cooking_method:
   - "paistaminen"
 ingredients:
   - amount: 100
-    unit: "g"
-    item: "kuskus"
-  - amount: 1
-    unit: "kpl"
-    item: "taateli"
+    unit: g
+    item: kuskus
+  - amount: 10
+    unit: g
+    item: kuivattua taatelia
+  - amount: 20
+    unit: g
+    item: manteli
   - amount: 100
-    unit: "g"
-    item: "manteli"
+    unit: g
+    item: jogurtti
   - amount: 100
-    unit: "g"
-    item: "jogurtti"
+    unit: ml
+    item: vettä
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -39,6 +42,10 @@ image:
   alt: "Kuskus-aamiaiskulho taateleilla ja pähkinöillä tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 42.52
+carbs_total_per_serving_g: 45.83
+protein_per_serving_g: 10.91
+fat_per_serving_g: 7.18
 ---
 
 # Kuskus-aamiaiskulho taateleilla ja pähkinöillä
@@ -56,4 +63,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Kypsennä kuskus pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
 2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
 3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Turvota kuskus kuumassa maidossa ja tarjoa jogurtin, taatelien ja manteleiden kanssa.
+4. Mittaa kuskus kulhoon, kaada päälle 100 ml kiehuvaa vettä ja peitä viideksi minuutiksi. Hienonna taateli, rouhi manteli ja tarjoa jogurtin kanssa.
