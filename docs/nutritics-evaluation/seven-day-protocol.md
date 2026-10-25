@@ -4,7 +4,7 @@ Tämä protokolla ei aktivoi tiliä, ohjelmistokokeilua tai API-kokeilua. Nutrit
 
 ## Ennen aloitusta
 
-1. Lähetä alla oleva viestiluonnos Nutriticsille ja pyydä kirjallinen vastaus API:n, tietojen käytön, hinnan ja lisenssien kysymyksiin.
+1. Käyttäjä vahvisti 25.10.2026 lähettäneensä Nutriticsille alla olevia aiheita käsittelevän yhteydenoton. Älä lähetä samaa viestiä uudelleen. Odota kirjallista vastausta API:n, tietojen käytön, hinnan ja lisenssien kysymyksiin.
 2. Älä pyydä tai säilytä oikeita API-vastauksia tässä julkisessa repossa. Käytä paikallista, Gitin ulkopuolista muistiota; älä tallenna siihen tunnuksia tai API-avaimia.
 3. Käytä vertailussa samaa 18 reseptin joukkoa, samaa ainesosalistaa, määriä ja annoskokoa kuin projektin lähtötiedoissa. `comparison-template.csv` sisältää erilliset `recipe`-rivit reseptitason vertailulle. Kopioi reseptirivi jokaiselle ainesosalle, muuta `record_type` arvoksi `ingredient`, tyhjennä reseptitulossarakkeet ja täytä ainesosakentät. Ainesosarivin ravintoarvot ovat aina per 100 g, reseptirivin arvot per annos. Älä vertaa näitä keskenään. Jätä Nutritics-tulokset tyhjiksi, kunnes ne on oikeasti havaittu.
 4. Kirjaa joka havainnosta päivän numero, päivämäärä, testattu ominaisuus, resepti/hakutermi, tuloksen tila, aineistolähteen nimi/versio, erot, epävarmuus, lisenssikysymys ja käytetty aika.
@@ -49,9 +49,11 @@ Ohjelmiston UI-kokeilu voidaan silti tehdä, jos se tarjotaan käyttäjälle ilm
 
 `date, path(A/B), feature, recipe_id/query, source/version, result_state, duration, quota_before_after, cost_status, comparison_note, confidence, rights_status, follow_up`
 
-## Nutriticsille lähetettävä viesti
+## Yhteydenoton tila ja valmisteltu viestiluonnos
 
-Älä lähetä automaattisesti. Lähetä [Nutriticsin virallisen yhteydenottolomakkeen](https://www.nutritics.com/en/pricing/) tai [API-sivun maksuttoman tarjouspyynnön](https://www.nutritics.com/en/product/food-data-api/) kautta. “Request free quote” kertoo tarjouspyynnön olevan maksuton; se ei osoita API:n olevan ilmainen.
+Käyttäjä ilmoitti 25.10.2026 lähettäneensä yhteydenoton. Alla oleva aiemmin valmisteltu teksti on seuranta- ja viitemateriaalia; sitä ei ole lähetetty tämän protokollan kautta eikä sitä pidä lähettää uudelleen ilman uutta tarvetta. Kun vastaus saapuu, kirjaa vastaanottopäivä, käyttöoikeudet, hinnat ja avoimet kysymykset havaintopäiväkirjaan. Älä aktivoi kokeilua tai tee live-pyyntöjä ennen kirjallista vahvistusta.
+
+Yhteydenottokanavat: [Nutriticsin virallinen yhteydenottolomake](https://www.nutritics.com/en/pricing/) ja [API-sivun tarjouspyyntö](https://www.nutritics.com/en/product/food-data-api/). “Request free quote” tarkoittaa maksutonta tarjouspyyntöä, ei ilmaista API:a.
 
 **Subject: Seven-day software trial and API evaluation for a Finnish recipe project**
 
