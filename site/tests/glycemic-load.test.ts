@@ -168,6 +168,30 @@ test("Jiaozi rice wine vinegar has no dry-rice or rice-GI source mapping", async
   assert.match(vinegar?.excludedReason ?? "", /not treated as zero/);
 });
 
+test("boiled-potato source analogue is explicitly mapped for aloo paratha and samosa", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [pilot, foods, catalog] = await Promise.all([
+    readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8").then((value) => JSON.parse(value)),
+    readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8").then((value) => JSON.parse(value)),
+    readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8").then((value) => JSON.parse(value)),
+  ]);
+  for (const recipeId of ["aloo-paratha", "samosa"]) {
+    const recipe = pilot.recipes.find((row: { recipeId: string }) => row.recipeId === recipeId);
+    const potato = recipe?.ingredients.find((row: { name: string }) => row.name === "perunoita");
+    assert.equal(potato?.fineliRecordId, "fineli-205-2026-10-24");
+    assert.equal(potato?.giRecordId, "potato-boiled-preparation-analogue-gi-66");
+    assert.equal(potato?.foodKey, "potato");
+    assert.equal(potato?.preparationKey, "boiled-unspecified");
+    assert.match(potato?.giMatchEvidence ?? "", /Supplemental Table 1, entry 1842/);
+    assert.match(potato?.giMatchEvidence ?? "", /not as (?:samosa|paratha) GI/);
+    const result = calculateGlycemicLoad(recipe, foods, catalog.records);
+    assert.equal(result.status, "CALCULATED", recipeId);
+    const resultPotato = result.ingredients.find((row) => row.name === "perunoita");
+    assert.equal(resultPotato?.matchKind, "ANALOG");
+    assert.equal(resultPotato?.confidence, "LOW");
+  }
+});
+
 test("the GL Markdown summary stays aligned with the machine-readable audit", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const [markdown, json] = await Promise.all([
