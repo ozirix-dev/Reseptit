@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-25T18:53:25.220Z",
-  "sourceCommit": "b7455c40f28bf55c8c20ab6088289a684b2b8bc0",
+  "generatedAt": "2026-10-25T18:59:00.229Z",
+  "sourceCommit": "3ade46631b3e16cfcb3365526d3839af61bdf4a3",
   "previousApprovedBaseline": {
     "sourceCommit": "25902326b9fd89a30d8bfe48f2d1cd02879bd9df",
     "recipeCount": 325,
@@ -34,7 +34,7 @@
     "newlyCalculated": 0,
     "newlyBlocked": 0,
     "stillIncomplete": 208,
-    "changedBlockerRecipes": 2,
+    "changedBlockerRecipes": 3,
     "newStructureMismatches": 0,
     "newInputMismatches": 0,
     "newEvidenceMismatches": 0
@@ -57,8 +57,8 @@
       "blockerMessages": 84
     },
     "MASS_PREPARATION": {
-      "recipes": 18,
-      "blockerMessages": 21
+      "recipes": 20,
+      "blockerMessages": 23
     },
     "GI_MATCH": {
       "recipes": 107,
@@ -3651,7 +3651,7 @@
         "currentStatus": "INSUFFICIENT SOURCE DATA",
         "nutritionStatus": "ESTIMATE WITH EVIDENCE",
         "recipeVersion": "70564e810a9ab2cd2c85933bcc9db961a4c7522996328cfb754fdf1e82cde8b2",
-        "calculationInputVersion": "cd0281b1d7cf4907d411c969f0ab8abe8eb1bae9af0684943f068954c36897be",
+        "calculationInputVersion": "80c7a770fe76aa1b5bd39dce6ce27e01fc40c4ea151cdef7e74dc2622da6161d",
         "inputIngredientCount": 5,
         "currentRecipeStructure": {
           "sourcePath": "reseptit/aamupalat/malesialainen-nasi-lemak-aamiaisella.md",
@@ -3703,10 +3703,15 @@
             {
               "name": "kookosmaito",
               "grams": null,
-              "fineliRecordId": "afcd-F002991-release-3",
+              "recipeQuantity": {
+                "amount": 200,
+                "unit": "ml",
+                "massGrams": null
+              },
+              "fineliRecordId": null,
               "giRecordId": null,
-              "massEvidence": "Recipe-listed 200 ml canned coconut milk; mass conversion unresolved.",
-              "excludedReason": "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g."
+              "massEvidence": "Recipe-listed 200 ml coconut milk. The recipe does not specify canned coconut milk versus a coconut drink or full-fat versus reduced-fat product; ingredient identity and mass conversion remain unresolved.",
+              "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
             },
             {
               "name": "kananmuna",
@@ -5450,7 +5455,7 @@
         "currentStatus": "INSUFFICIENT SOURCE DATA",
         "nutritionStatus": "ESTIMATE WITH EVIDENCE",
         "recipeVersion": "198733181187c2aaa6bd7519cdf12cf52ba480d9fc6616695f7243e718413a04",
-        "calculationInputVersion": "66d0d7f72558e02df4d20a8039ac36b48e5365bc033acaa18ddd25cf5287750c",
+        "calculationInputVersion": "5893ce1561764df7188b815406dd5738452de8085446f95f72faf2820308d5df",
         "inputIngredientCount": 5,
         "currentRecipeStructure": {
           "sourcePath": "reseptit/aamupalat/thai-kookosriisi-mangolla.md",
@@ -5502,10 +5507,15 @@
             {
               "name": "kookosmaito",
               "grams": null,
-              "fineliRecordId": "afcd-F002991-release-3",
+              "recipeQuantity": {
+                "amount": 200,
+                "unit": "ml",
+                "massGrams": null
+              },
+              "fineliRecordId": null,
               "giRecordId": null,
-              "massEvidence": "Recipe-listed 200 ml canned coconut milk; mass conversion unresolved.",
-              "excludedReason": "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g."
+              "massEvidence": "Recipe-listed 200 ml coconut milk. The recipe does not specify canned coconut milk versus a coconut drink or full-fat versus reduced-fat product; ingredient identity and mass conversion remain unresolved.",
+              "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
             },
             {
               "name": "mango",
@@ -54472,8 +54482,8 @@
     {
       "recipeId": "thai-kookosriisi-mangolla",
       "recipeVersion": "198733181187c2aaa6bd7519cdf12cf52ba480d9fc6616695f7243e718413a04",
-      "calculationInputVersion": "66d0d7f72558e02df4d20a8039ac36b48e5365bc033acaa18ddd25cf5287750c",
-      "calculationEvidenceVersion": "b488b9e64e5467fd857ea36dd6560df98894aeae5d2480d85e82dc3813b49af8",
+      "calculationInputVersion": "5893ce1561764df7188b815406dd5738452de8085446f95f72faf2820308d5df",
+      "calculationEvidenceVersion": "fb3f1fe4fd24533f031689aac48fea163d405193d3152e373f48ae6a655ecce1",
       "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
@@ -54526,10 +54536,15 @@
           {
             "name": "kookosmaito",
             "grams": null,
-            "fineliRecordId": "afcd-F002991-release-3",
+            "recipeQuantity": {
+              "amount": 200,
+              "unit": "ml",
+              "massGrams": null
+            },
+            "fineliRecordId": null,
             "giRecordId": null,
-            "massEvidence": "Recipe-listed 200 ml canned coconut milk; mass conversion unresolved.",
-            "excludedReason": "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g."
+            "massEvidence": "Recipe-listed 200 ml coconut milk. The recipe does not specify canned coconut milk versus a coconut drink or full-fat versus reduced-fat product; ingredient identity and mass conversion remain unresolved.",
+            "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
           },
           {
             "name": "mango",
@@ -54567,31 +54582,35 @@
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
       "calculationInputVersionChanged": true,
-      "calculationEvidenceVersionChanged": false,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
-          "category": "OTHER",
-          "message": "thai-kookosriisi-mangolla: kookosmaito: The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g.",
-          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+          "category": "MASS_PREPARATION",
+          "message": "thai-kookosriisi-mangolla: kookosmaito: The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g.",
+          "nextAction": "Varmenna reseptimäärä, syötävä massa, tilavuuspaino ja raaka/kypsä-perusta."
         }
       ],
       "blockingCategories": [
-        "OTHER"
+        "MASS_PREPARATION"
       ],
-      "primaryBlockingCategory": "OTHER",
-      "primaryBlockingReason": "thai-kookosriisi-mangolla: kookosmaito: The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g.",
+      "primaryBlockingCategory": "MASS_PREPARATION",
+      "primaryBlockingReason": "thai-kookosriisi-mangolla: kookosmaito: The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g.",
       "missingFoodAndGIRecords": [
         {
           "name": "kookosmaito",
           "grams": null,
-          "recipeQuantity": null,
-          "fineliRecordId": "afcd-F002991-release-3",
+          "recipeQuantity": {
+            "amount": 200,
+            "unit": "ml",
+            "massGrams": null
+          },
+          "fineliRecordId": null,
           "giRecordId": null,
           "availableCarbohydratePerServingG": null,
           "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g.",
+          "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g.",
           "issues": [
-            "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g."
+            "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
           ]
         },
         {
@@ -54622,15 +54641,18 @@
         }
       ],
       "nextActions": [
-        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        "Varmenna reseptimäärä, syötävä massa, tilavuuspaino ja raaka/kypsä-perusta."
       ],
-      "suggestedNextWorkstream": "MANUAL_TRIAGE",
+      "suggestedNextWorkstream": "COMPOSITION_OR_CONVERSION",
       "statusChanged": false,
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "thai-kookosriisi-mangolla: kookosmaito: The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
+      ],
       "removedBlockers": [
+        "thai-kookosriisi-mangolla: kookosmaito: The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g.",
         "thai-kookosriisi-mangolla: seesaminsiemen: GI evidence is missing."
       ]
     },
@@ -59041,8 +59063,8 @@
     {
       "recipeId": "malesialainen-nasi-lemak-aamiaisella",
       "recipeVersion": "70564e810a9ab2cd2c85933bcc9db961a4c7522996328cfb754fdf1e82cde8b2",
-      "calculationInputVersion": "cd0281b1d7cf4907d411c969f0ab8abe8eb1bae9af0684943f068954c36897be",
-      "calculationEvidenceVersion": "338f8a877d192759517d7dab8eb316c0bdd9c52926b531553afe556d571256e7",
+      "calculationInputVersion": "80c7a770fe76aa1b5bd39dce6ce27e01fc40c4ea151cdef7e74dc2622da6161d",
+      "calculationEvidenceVersion": "f6d5a6ef88c51b7b6a8062b0293b6418aaf0fce4caf723884f26de58e4795d05",
       "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
@@ -59095,10 +59117,15 @@
           {
             "name": "kookosmaito",
             "grams": null,
-            "fineliRecordId": "afcd-F002991-release-3",
+            "recipeQuantity": {
+              "amount": 200,
+              "unit": "ml",
+              "massGrams": null
+            },
+            "fineliRecordId": null,
             "giRecordId": null,
-            "massEvidence": "Recipe-listed 200 ml canned coconut milk; mass conversion unresolved.",
-            "excludedReason": "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g."
+            "massEvidence": "Recipe-listed 200 ml coconut milk. The recipe does not specify canned coconut milk versus a coconut drink or full-fat versus reduced-fat product; ingredient identity and mass conversion remain unresolved.",
+            "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
           },
           {
             "name": "kananmuna",
@@ -59135,32 +59162,36 @@
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
-          "category": "OTHER",
-          "message": "malesialainen-nasi-lemak-aamiaisella: kookosmaito: The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g.",
-          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+          "category": "MASS_PREPARATION",
+          "message": "malesialainen-nasi-lemak-aamiaisella: kookosmaito: The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g.",
+          "nextAction": "Varmenna reseptimäärä, syötävä massa, tilavuuspaino ja raaka/kypsä-perusta."
         }
       ],
       "blockingCategories": [
-        "OTHER"
+        "MASS_PREPARATION"
       ],
-      "primaryBlockingCategory": "OTHER",
-      "primaryBlockingReason": "malesialainen-nasi-lemak-aamiaisella: kookosmaito: The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g.",
+      "primaryBlockingCategory": "MASS_PREPARATION",
+      "primaryBlockingReason": "malesialainen-nasi-lemak-aamiaisella: kookosmaito: The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g.",
       "missingFoodAndGIRecords": [
         {
           "name": "kookosmaito",
           "grams": null,
-          "recipeQuantity": null,
-          "fineliRecordId": "afcd-F002991-release-3",
+          "recipeQuantity": {
+            "amount": 200,
+            "unit": "ml",
+            "massGrams": null
+          },
+          "fineliRecordId": null,
           "giRecordId": null,
           "availableCarbohydratePerServingG": null,
           "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g.",
+          "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g.",
           "issues": [
-            "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g."
+            "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
           ]
         },
         {
@@ -59191,15 +59222,19 @@
         }
       ],
       "nextActions": [
-        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        "Varmenna reseptimäärä, syötävä massa, tilavuuspaino ja raaka/kypsä-perusta."
       ],
-      "suggestedNextWorkstream": "MANUAL_TRIAGE",
+      "suggestedNextWorkstream": "COMPOSITION_OR_CONVERSION",
       "statusChanged": false,
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
-      "removedBlockers": []
+      "changedBlockers": [
+        "malesialainen-nasi-lemak-aamiaisella: kookosmaito: The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
+      ],
+      "removedBlockers": [
+        "malesialainen-nasi-lemak-aamiaisella: kookosmaito: The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g."
+      ]
     },
     {
       "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
