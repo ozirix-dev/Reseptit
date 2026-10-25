@@ -86,7 +86,7 @@ test("recipe index is prerendered and links only published languages", async () 
 });
 
 test("GK values link to centralized recipe details on every published translation", async () => {
-  assert.equal(glycemicLoadPilotResults.length, 240);
+  assert.equal(glycemicLoadPilotResults.length, 260);
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
     assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);
@@ -162,6 +162,33 @@ test("batch eleven publishes only its five complete low-confidence estimates", (
     "korealainen-tofu-kimchi-aamiaiskulho", "valimerellinen-tahinipuuro", "malesialainen-kuih-seri-muka",
     "malesialainen-laksa-lemak-aamiaiseksi", "indonesialainen-lontong-sayur-aamiaiseksi",
     "pohjoisafrikkalainen-minttutee-kaurapuuro", "meksikolainen-atole-maissipuuro",
+  ];
+  for (const recipeId of incomplete) {
+    const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);
+    assert.equal(result?.status, "INSUFFICIENT SOURCE DATA", `${recipeId}: incomplete`);
+    assert.equal(result?.glycemicLoadPerServing, null, `${recipeId}: no partial total`);
+  }
+});
+
+test("batch twelve publishes only its four complete source-backed estimates", () => {
+  const expected = new Map([
+    ["vietnamilainen-banh-mi-munalla", 19.03],
+    ["pohjoisafrikkalainen-kuskus-aamiaiskulho", 33.97],
+    ["japanilainen-onigiri-lohella", 26.47],
+    ["kiinalainen-kevatsipulipannukakku", 21.46],
+  ]);
+  for (const [recipeId, value] of expected) {
+    const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);
+    assert.equal(result?.status, "CALCULATED", `${recipeId}: complete result`);
+    assert.equal(result?.glycemicLoadPerServing, value, `${recipeId}: expected GL`);
+    assert.equal(result?.confidence, "LOW", `${recipeId}: supplementary or category GI estimates are labeled low confidence`);
+  }
+  const incomplete = [
+    "malesialainen-nasi-lemak-aamiaisella", "indonesialainen-nasi-uduk-aamiaisella", "japanilainen-natto-riisikulho",
+    "japanilainen-okayu-umeboshipluumulla", "japanilainen-yaki-onigiri-misolla", "kiinalainen-hirssipuuro-taateleilla",
+    "vietnamilainen-pho-ga-aamuksi", "thai-riisinuudelikeitto-aamuksi", "vietnamilainen-xoi-maapahkinalla",
+    "malesialainen-roti-jala-currykanalla", "thai-roti-munalla-banaanilla", "karibia-saltfish-fritterit",
+    "thai-maissifritterit", "kiinalainen-katkarapu-wontonkeitto", "jiaozi", "xiaolongbao",
   ];
   for (const recipeId of incomplete) {
     const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);
