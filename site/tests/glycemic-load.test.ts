@@ -168,6 +168,79 @@ test("Jiaozi rice wine vinegar has no dry-rice or rice-GI source mapping", async
   assert.match(vinegar?.excludedReason ?? "", /not treated as zero/);
 });
 
+test("mashed and boiled potato source analogues are mapped separately for aloo paratha and samosa", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [pilot, foods, catalog] = await Promise.all([
+    readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8").then((value) => JSON.parse(value)),
+    readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8").then((value) => JSON.parse(value)),
+    readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8").then((value) => JSON.parse(value)),
+  ]);
+  const mashed = catalog.records.find((record: { id: string }) => record.id === "potato-mashed-preparation-analogue-gi-73");
+  const boiled = catalog.records.find((record: { id: string }) => record.id === "potato-boiled-preparation-analogue-gi-66");
+  assert.equal(mashed?.gi, 73);
+  assert.equal(mashed?.preparationKey, "mashed-unspecified");
+  assert.equal(mashed?.source?.table, "Supplemental Table 1, entry 1861");
+  assert.match(mashed?.source?.qualityEvidence ?? "", /Yang et al\. \(2006; https:\/\/doi\.org\/10\.3748\/wjg\.v12\.i21\.3430\)/);
+  assert.equal(boiled?.gi, 66);
+  assert.equal(boiled?.preparationKey, "boiled-unspecified");
+  assert.equal(boiled?.source?.table, "Supplemental Table 1, entry 1842");
+  const expectations = {
+    "aloo-paratha": {
+      giRecordId: "potato-mashed-preparation-analogue-gi-73",
+      preparationKey: "mashed-unspecified",
+      evidence: /entry 1861[\s\S]*not a measurement of aloo paratha GI/,
+    },
+    samosa: {
+      giRecordId: "potato-boiled-preparation-analogue-gi-66",
+      preparationKey: "boiled-unspecified",
+      evidence: /entry 1842[\s\S]*not as a measurement of samosa GI/,
+    },
+  } as const;
+  for (const [recipeId, expected] of Object.entries(expectations)) {
+    const recipe = pilot.recipes.find((row: { recipeId: string }) => row.recipeId === recipeId);
+    const potato = recipe?.ingredients.find((row: { name: string }) => row.name === "perunoita");
+    assert.equal(potato?.fineliRecordId, "fineli-205-2026-10-24");
+    assert.equal(potato?.giRecordId, expected.giRecordId);
+    assert.equal(potato?.foodKey, "potato");
+    assert.equal(potato?.preparationKey, expected.preparationKey);
+    assert.match(potato?.giMatchEvidence ?? "", expected.evidence);
+    assert.match(potato?.giMatchEvidence ?? "", /Low-confidence/);
+    const result = calculateGlycemicLoad(recipe, foods, catalog.records);
+    assert.equal(result.status, "CALCULATED", recipeId);
+    assert.equal(result.confidence, "LOW", recipeId);
+    const resultPotato = result.ingredients.find((row) => row.name === "perunoita");
+    assert.equal(resultPotato?.matchKind, "ANALOG");
+    assert.equal(resultPotato?.confidence, "LOW");
+  }
+});
+
+test("GI coverage inventory keeps its original 2026-10-25 baseline when current inputs change", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const inventory = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-inventory-2026-10-25.json"), "utf8"));
+  assert.equal(inventory.sourceCommit, "b51c769731ba40f9ab0b085e5b1b47f979651d9f");
+  assert.deepEqual(inventory.baseline, {
+    recipeCount: 325,
+    calculated: 112,
+    incomplete: 213,
+    giRecordCount: 37,
+    strongGICount: 4,
+    supplementaryGICount: 33,
+    nutritionAuditCounts: {
+      VERIFIED: 0,
+      "ESTIMATE WITH EVIDENCE": 180,
+      "INSUFFICIENT SOURCE DATA": 86,
+      "CONFLICT REQUIRES REVIEW": 0,
+      MISSING: 59,
+    },
+  });
+  assert.equal(inventory.recipes.length, 213);
+  assert.equal(new Set(inventory.recipes.map((recipe: { recipeId: string }) => recipe.recipeId)).size, 213);
+  assert.deepEqual(inventory.recipeCountByOriginalState, {
+    previouslyCalculatedNowBlocked: 78,
+    alreadyIncompleteAtBaseline: 135,
+  });
+});
+
 test("the GL Markdown summary stays aligned with the machine-readable audit", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const [markdown, json] = await Promise.all([

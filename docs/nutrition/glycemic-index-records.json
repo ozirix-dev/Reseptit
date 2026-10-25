@@ -1,5 +1,5 @@
 {
-  "sourcePolicy": "Fineli supplies available-carbohydrate quantities only. GI evidence is stored as individual, traceable records on the glucose scale. STRONG values must be published and ISO 26642-confirmed; they support direct food and preparation matches only. Published SUPPLEMENTARY values and explicitly sourced analogues may support a low-confidence ingredient estimate when food and preparation relevance are documented. CATEGORY_MEAN values are broad proxies, never described as measurements of the named food, and force LOW confidence. Study quality and food/preparation match quality remain separate. For a missing GI match on a positive portion below 1 g available carbohydrate per serving, omission is an editorial tolerance only when all such recipe portions sum to less than 1 g per serving; the omitted carbohydrate amount is disclosed. This is not a clinical error bound. Larger known carbohydrate portions require GI evidence. The formula is an ingredient-sum estimate, not a measurement of a prepared meal. Do not copy complete source tables or substitute unsupported foods/preparations.",
+  "sourcePolicy": "Fineli supplies available-carbohydrate quantities only. GI evidence is stored as individual, traceable records on the glucose scale. STRONG values must be published and ISO 26642-confirmed; they support direct food and preparation matches only. Published SUPPLEMENTARY values and explicitly sourced analogues may support a low-confidence ingredient estimate when food and preparation relevance are documented. CATEGORY_MEAN values are broad proxies, never described as measurements of the named food, and force LOW confidence. Study quality and food/preparation match quality remain separate. For a missing GI match on a positive portion below 1 g available carbohydrate per serving, omission is an editorial tolerance only when all such recipe portions sum to less than 2 g per serving; the omitted carbohydrate amount is disclosed. This is not a clinical error bound. Larger known carbohydrate portions require GI evidence. The formula is an ingredient-sum estimate, not a measurement of a prepared meal. Do not copy complete source tables or substitute unsupported foods/preparations.",
   "sources": [
     {
       "id": "international-tables-2021",
@@ -779,6 +779,31 @@
       "note": "Measured boiled-potato value used as a preparation analogue for boiled potato pieces in these recipes; variety, region, cooling and recipe context differ.",
       "matchKind": "ANALOG",
       "confidence": "MEDIUM"
+    },
+    {
+      "id": "potato-mashed-preparation-analogue-gi-73",
+      "gi": 73,
+      "foodKey": "potato",
+      "preparationKey": "mashed-unspecified",
+      "food": "Mashed potato, unspecified product",
+      "preparation": "Mashed; China; test year 2005",
+      "qualityTier": "STRONG",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Supplemental Table 1, entry 1861",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "participants": 10,
+        "referenceFood": "Glucose",
+        "testDurationHours": 2,
+        "qualityEvidence": "Supplemental Table 1 entry 1861 identifies mashed potato, NS (China, test year 2005), GI 73 ± 3, n=10, a 50 g available-carbohydrate portion, glucose/2 h and standard timepoints. It lists venous samples but the assay method as NS. Yang et al. (2006; https://doi.org/10.3748/wjg.v12.i21.3430), the underlying primary study cited in the 2021 non-western compendium, independently reports a distinct mashed-potato row at 73.0 ± 9.2 (n=10) and a cooked-potato row at 66.4 ± 3.8. This confirms the products and values are distinct; Yang does not specify the cooking method for the cooked-potato row. Table membership supports the review's ISO-methodology classification, but the original assay details cannot be independently verified."
+      },
+      "note": "Closer preparation analogue for aloo-paratha's boiled-and-mashed potato filling than boiled-potato GI 66; the recipe's variety, cooling, pan-cooked dough enclosure and whole meal remain untested. This is not the GI of aloo paratha.",
+      "matchKind": "ANALOG",
+      "confidence": "LOW"
     },
     {
       "id": "dark-chocolate-international-tables-mean-gi-29",

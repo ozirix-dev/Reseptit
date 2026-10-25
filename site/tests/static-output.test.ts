@@ -88,8 +88,8 @@ test("recipe index is prerendered and links only published languages", async () 
 test("GK values link to centralized recipe details on every published translation", async () => {
   assert.equal(glycemicLoadPilotReviewedRecipeCount, 325);
   assert.equal(glycemicLoadPilotResults.length, 324);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, 112);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 212);
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, 114);
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 210);
   for (const [id, expected] of [
     ["indonesialainen-ketoprak-aamiaiskulho", 26.67],
     ["lahi-ita-manakish-zaatarilla", 33.06],

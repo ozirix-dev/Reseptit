@@ -1523,8 +1523,10 @@
           "grams": 400,
           "fineliRecordId": "fineli-205-2026-10-24",
           "giRecordId": "potato-boiled-preparation-analogue-gi-66",
+          "foodKey": "potato",
+          "preparationKey": "boiled-unspecified",
           "massEvidence": "Fineli #205 peeled potato; 400 g. GI is a boiled-potato preparation analogue.",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: potato-boiled-preparation-analogue-gi-66. Fineli #205 peeled potato; 400 g. GI is a boiled-potato preparation analogue."
+          "giMatchEvidence": "Low-confidence boiled-potato component analogue: International Tables 2021 Supplemental Table 1, entry 1842 (https://doi.org/10.1093/ajcn/nqab233), labels unspecified Chinese potato as boiled and reports GI 66 ± 1 (test year 2005; n=10; glucose/2 h). Yang et al. (2006; https://doi.org/10.3748/wjg.v12.i21.3430), Table 3, reports a separate cooked-potato result of 66.4 ± 3.8, but does not specify that product's cooking method; it also reports mashed potato separately at 73.0 ± 9.2. This recipe boils and cubes peeled potato, briefly sautés it with peas, then encloses the filling in pastry and deep-fries it. Reheating, oil, pastry, variety and any cooling differ from the tested product. Use only as a low-confidence ingredient analogue, not as a measurement of samosa GI; the whole GL estimate remains LOW confidence."
         },
         {
           "name": "pakasteherneitä",
@@ -1552,9 +1554,11 @@
           "name": "perunoita",
           "grams": 400,
           "fineliRecordId": "fineli-205-2026-10-24",
-          "giRecordId": "potato-boiled-preparation-analogue-gi-66",
+          "giRecordId": "potato-mashed-preparation-analogue-gi-73",
+          "foodKey": "potato",
+          "preparationKey": "mashed-unspecified",
           "massEvidence": "Fineli #205 peeled potato; filling is boiled and mashed, 400 g.",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: potato-boiled-preparation-analogue-gi-66. Fineli #205 peeled potato; filling is boiled and mashed, 400 g."
+          "giMatchEvidence": "Low-confidence mashed-potato component analogue: International Tables 2021 Supplemental Table 1, entry 1861 (https://doi.org/10.1093/ajcn/nqab233), reports GI 73 ± 3 for unspecified mashed potato (China, test year 2005; n=10; glucose/2 h). Yang et al. (2006; https://doi.org/10.3748/wjg.v12.i21.3430), Table 3, separately reports mashed potato GI 73.0 ± 9.2 and cooked potato GI 66.4 ± 3.8 (n=10 each); it does not specify the cooked product's method. This recipe boils then mashes peeled potato and cooks it enclosed in pan-fried dough; potato variety, any cooling, added dough/fat and the finished meal differ from the tested product. This is an ingredient analogue, not a measurement of aloo paratha GI; the whole GL estimate remains LOW confidence."
         }
       ]
     },
