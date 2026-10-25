@@ -1,0 +1,800 @@
+{
+  "auditDate": "2026-10-25",
+  "currentSourceCommit": "3e410436a82df391075f7a762c23f011624a8ca6",
+  "branch": "codex/glycemic-load-quality-hardening",
+  "lastGlycemicLoadReviewCommit": "b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5",
+  "recipes": {
+    "total": 325,
+    "previousCalculated": 190,
+    "previousIncomplete": 135,
+    "currentCalculated": 112,
+    "currentIncomplete": 213,
+    "changedStructuresSinceReview": 72,
+    "previousCalculatedNowBlocked": 78,
+    "allRecipeBeforeAfterRows": 325,
+    "currentCalculatedWithEligibleInputs": 112,
+    "reviewedPreviouslyCalculatedStructureChanges": 21,
+    "previouslyIncompleteStructureChangesLeftUnreviewed": 51,
+    "recoveredFromPreviousIncomplete": 0,
+    "pr104StageTransition": {
+      "pr104CalculatedBeforeContinuation": 112,
+      "pr104AcceptedStillCalculated": 86,
+      "newlyBlockedFromPr104": 26,
+      "newlyBlockedReasons": {
+        "toleranceOnly": 4,
+        "giOnly": 22
+      },
+      "restoredFromPr104BlockedStructuralReviews": 13,
+      "currentCalculated": 99,
+      "reconciliation": "112 - 26 + 13 = 99"
+    }
+  },
+  "numericComparison": {
+    "commonPublished": 112,
+    "numericChanged": 52,
+    "zeroToPositive": 6,
+    "absoluteChangeAtLeast1": 5,
+    "materialByEditorialDefinition": 11,
+    "editorialDefinition": "A current value moves from zero to positive, or changes by at least 1.0 GL point per serving. This is a review flag, not a clinical cutoff or proof that food choice changes.",
+    "materialRecipeIds": [
+      "vhh-korvapuustit",
+      "kurkku-oliivi-aamiaiskulho",
+      "uuniporsas-kermakastikkeessa-vhh",
+      "savulohi-avokadokulho",
+      "bun-cha-hanoi",
+      "kantonilainen-hoyrytetty-kala",
+      "pohjoisafrikkalainen-harcha-juustolla",
+      "indonesialainen-ketoprak-aamiaiskulho",
+      "valimerellinen-appelsiini-aamiaiskakku",
+      "lahi-ita-manakish-zaatarilla",
+      "kana-tagine-sitruunalla"
+    ],
+    "classChangesAmongDefinedClasses": 0,
+    "nearBoundaryWithinOneGLPoint": 12,
+    "unclassifiedGap10to11": 0,
+    "previous112Stage": {
+      "commonPublished": 112,
+      "numericChanged": 65,
+      "zeroToPositive": 8,
+      "absoluteChangeAtLeast1": 1,
+      "definedClassChanges": 0,
+      "nearBoundaryWithinOneGLPoint": 14,
+      "unclassifiedGap10to11": 0,
+      "classMethod": "Round to nearest integer first; 0–10 low, 11–19 medium, 20+ high.",
+      "rawValuesInFormer10to11Gap": 2
+    },
+    "rawThresholdCrossings": {
+      "threshold10": {
+        "count": 0,
+        "examples": []
+      },
+      "threshold20": {
+        "count": 1,
+        "examples": [
+          {
+            "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+            "before": 20.88,
+            "afterUnrounded": 19.826500000000003,
+            "afterTwoDecimals": 19.83
+          }
+        ]
+      }
+    },
+    "classMethod": "Round unrounded per-serving GL to nearest integer first; integer 0–10 low, 11–19 medium, 20+ high.",
+    "userVisibleRounding": "One significant digit (matching the recipe-card formatter).",
+    "userVisibleOneSignificantDigitChanges": 24,
+    "userVisibleChangedRecipeIds": [
+      "vhh-mansikkakakku",
+      "kermainen-kanasienipannu",
+      "vhh-juustokakku",
+      "vhh-brita-kakku",
+      "vhh-letut",
+      "vhh-lihapiirakka",
+      "keto-korvapuustit",
+      "vhh-korvapuustit",
+      "khao-man-gai-vhh",
+      "kesakurpitsalasagne-vhh",
+      "pad-kra-pao-vhh",
+      "keto-kauralesesampylat",
+      "parsakaali-sinihomejuustofrittata",
+      "kurkku-oliivi-aamiaiskulho",
+      "uuniporsas-kermakastikkeessa-vhh",
+      "savulohi-avokadokulho",
+      "kantonilainen-hoyrytetty-kala",
+      "indonesialainen-ketoprak-aamiaiskulho",
+      "lahi-ita-manakish-zaatarilla",
+      "valimerellinen-pinaatti-fetashakshuka",
+      "rogan-josh",
+      "kreikkalainen-kanavuoka-oliiveilla",
+      "kana-tagine-sitruunalla",
+      "palak-paneer"
+    ],
+    "rawValuesInFormer10to11Gap": 1,
+    "comparisonPrecision": "Numeric change counts compare two-decimal internal estimates; class and raw-threshold checks use unroundedGlycemicLoadPerServing; recipe cards show one significant digit from the two-decimal estimate."
+  },
+  "carbohydrateAudit": {
+    "previousDisplayedZeroTotals": 21,
+    "previousZerosWithAtLeast1gOmitted": 18,
+    "recipesWithOmittedCarbohydrateAtLeast1g": 74,
+    "atLeast2g": 7,
+    "maxPreviouslyOmittedGPerServing": 3.5968,
+    "currentCalculatedWithSmallOmission": 97,
+    "maxCurrentOmittedGPerServing": 1.9695,
+    "zeroTotalsWithSmallOmission": 8,
+    "smallOmissionBudgetGPerServing": 2,
+    "editorialNotClinical": true,
+    "roundedInternalZeroTotals": 3,
+    "roundedInternalZeroTotalsShownAsExactZero": false,
+    "currentRecipesOverCumulativeOmissionBudget": 7,
+    "currentCalculatedZeroTotalsWithOmission": 8,
+    "currentCalculatedExactZeroTotalsWithoutOmission": 0,
+    "maxCurrentOmittedGPerServingCalculated": 1.9695,
+    "maxCurrentOmittedGPerServingAllRecipes": 2.95775
+  },
+  "giMappings": {
+    "inputIngredientMappings": {
+      "EXACT": 10,
+      "ANALOG": 139,
+      "CATEGORY_MEAN": 687,
+      "MISSING": 1570
+    },
+    "recipesContainingMatchKind": {
+      "EXACT": 10,
+      "ANALOG": 104,
+      "CATEGORY_MEAN": 283,
+      "MISSING": 304
+    },
+    "analoguesAndCategoryMeansForceLowConfidence": true
+  },
+  "sourceAndInputBlocks": {
+    "recipesWithIncompleteStatus": 213,
+    "totalBlockers": 414,
+    "staleRecipeIds": [
+      "chow-mein",
+      "indonesialainen-serabi-kookospannukakku",
+      "jerk-kana",
+      "rendang-padang",
+      "malesialainen-apam-balik",
+      "meksikolainen-kurpitsapuuro-piloncillolla",
+      "indonesialainen-pisang-goreng-aamiaiseksi",
+      "intialainen-ven-pongal",
+      "korealainen-kongjuk-soijapapu-riisipuuro",
+      "indialainen-poha-maapahkinoilla",
+      "intialainen-mannasuurimoupma",
+      "falafel",
+      "pohjoisafrikkalainen-msemen-hunajalla",
+      "malesialainen-roti-canai-dhalilla",
+      "vietnamilainen-chao-ga-kanapuuro",
+      "vietnamilainen-hu-tieu-aamiaiskeitto",
+      "karibia-maissipuuro-kookoksella",
+      "karibia-johnny-cake",
+      "lahi-ita-taatelipuuro-tahinilla",
+      "thai-kookosriisi-mangolla",
+      "vietnamilainen-papaija-kookospuuro",
+      "japanilainen-tamago-kake-gohan",
+      "thai-kananmunat-kookoscurryssa",
+      "sate-ayam",
+      "janssoninkiusaus-juuriselleri",
+      "meksikolainen-quesadilla-sienilla",
+      "valimerellinen-halloumi-tomaattileipa",
+      "indonesialainen-bakwan-maissifritter",
+      "japanilainen-kabocha-puuro",
+      "malesialainen-kaya-paahtoleipa",
+      "valimerellinen-farinata-aamupalaksi",
+      "pohjoisafrikkalainen-minttutee-kaurapuuro",
+      "malesialainen-nasi-lemak-aamiaisella",
+      "kiinalainen-hirssipuuro-taateleilla",
+      "vietnamilainen-pho-ga-aamuksi",
+      "malesialainen-roti-jala-currykanalla",
+      "jiaozi",
+      "xiaolongbao",
+      "karibia-bammy-kassavaleipa",
+      "kiinalainen-musta-seesamipuuro",
+      "thai-papaijajogurtti",
+      "lahi-ita-pistaasijogurtti",
+      "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+      "kung-pao-kana",
+      "pav-bhaji",
+      "tunisialainen-ojja",
+      "japanilainen-hojicha-jogurtti-persimonilla",
+      "pohjoisafrikkalainen-harissa-shakshuka",
+      "carnitas-salaattitacot",
+      "shoyu-kanakeitto-konjac",
+      "hunaja-sinappikana-kaalilla"
+    ],
+    "currentCumulativeOmissionBudgetExceeded": 7,
+    "recipeStructureMismatches": 51,
+    "calculationInputMismatches": 0,
+    "calculationEvidenceMismatches": 0,
+    "reviewedPreviouslyCalculatedStructuralIds": [
+      "bun-cha-hanoi",
+      "paella-valenciana",
+      "pohjoisafrikkalainen-baghrir",
+      "lahi-ita-ful-medames",
+      "korealainen-gyeranbap-riisikulho",
+      "pohjoisafrikkalainen-harcha-juustolla",
+      "kiinalainen-jianbing-munaletty",
+      "indonesialainen-ketoprak-aamiaiskulho",
+      "keto-joulutortut",
+      "kiinalainen-soijamaito-aamiaisella",
+      "valimerellinen-appelsiini-aamiaiskakku",
+      "korealainen-jumeokbap-merilevalla",
+      "lahi-ita-manakish-zaatarilla",
+      "malesialainen-mee-goreng-aamunuudeleilla",
+      "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+      "japanilainen-onigiri-lohella",
+      "meksikolainen-munakokkeli-pico-de-gallolla",
+      "kiinalainen-teehaudutetut-munat",
+      "rogan-josh",
+      "kreikkalainen-kanavuoka-oliiveilla",
+      "tandoorikana"
+    ],
+    "currentPriorCalculatedToleranceOnly": 4,
+    "priorCalculatedNowBlockedWithGIIssues": 73,
+    "priorCalculatedMaterialMissingGIIngredientRowsAtLeast1g": [
+      {
+        "recipeId": "munatacot-huevos-rancheros",
+        "name": "tomaattimurska",
+        "gramsPerServing": 2.625
+      },
+      {
+        "recipeId": "shakshuka",
+        "name": "tomaattimurska",
+        "gramsPerServing": 3.5
+      },
+      {
+        "recipeId": "tortilla-de-patatas",
+        "name": "peruna",
+        "gramsPerServing": 23.25
+      },
+      {
+        "recipeId": "chili-con-carne-kukkakaaliriisi",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 3.45
+      },
+      {
+        "recipeId": "ratatouille",
+        "name": "kypsiä tomaatteja",
+        "gramsPerServing": 4.375
+      },
+      {
+        "recipeId": "jauheliha-kaalikeitto-vhh",
+        "name": "lihalientä",
+        "gramsPerServing": 5
+      },
+      {
+        "recipeId": "taytetyt-paprikat-vhh",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 1.29375
+      },
+      {
+        "recipeId": "munakoiso-jauhelihavuoka-vhh",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 3.45
+      },
+      {
+        "recipeId": "lahi-ita-kikherne-shakshuka",
+        "name": "tomaatti",
+        "gramsPerServing": 2.1875
+      },
+      {
+        "recipeId": "massaman-curry-kanalla-vhh",
+        "name": "nauris",
+        "gramsPerServing": 1.575
+      },
+      {
+        "recipeId": "chole-bhature",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 3.45
+      },
+      {
+        "recipeId": "samosa",
+        "name": "perunoita",
+        "gramsPerServing": 15.5
+      },
+      {
+        "recipeId": "aloo-paratha",
+        "name": "perunoita",
+        "gramsPerServing": 15.5
+      },
+      {
+        "recipeId": "vada-pav",
+        "name": "kikhernejauhoja",
+        "gramsPerServing": 9.625
+      },
+      {
+        "recipeId": "pani-puri",
+        "name": "perunoita",
+        "gramsPerServing": 11.625
+      },
+      {
+        "recipeId": "pani-puri",
+        "name": "tamarinditahnaa",
+        "gramsPerServing": 4.305
+      },
+      {
+        "recipeId": "lohikeitto-kuohukermalla",
+        "name": "perunaa",
+        "gramsPerServing": 13.95
+      },
+      {
+        "recipeId": "butter-chicken",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 3.45
+      },
+      {
+        "recipeId": "punainen-kanacurry-vhh",
+        "name": "täysrasvaista kookosmaitoa",
+        "gramsPerServing": 2.81
+      },
+      {
+        "recipeId": "thai-vihrea-curry-kanalla-vhh",
+        "name": "täysrasvaista kookosmaitoa",
+        "gramsPerServing": 2.81
+      },
+      {
+        "recipeId": "panang-curry-kanalla-vhh",
+        "name": "täysrasvaista kookosmaitoa",
+        "gramsPerServing": 2.81
+      },
+      {
+        "recipeId": "menemen",
+        "name": "kypsää tomaattia",
+        "gramsPerServing": 4.375
+      },
+      {
+        "recipeId": "uunikanapasta-kesakurpitsa",
+        "name": "kirsikkatomaatteja",
+        "gramsPerServing": 1.75
+      },
+      {
+        "recipeId": "meheva-suklaakakku",
+        "name": "tummaa suklaata",
+        "gramsPerServing": 10.652
+      },
+      {
+        "recipeId": "meheva-suklaakakku",
+        "name": "tummaa suklaata",
+        "gramsPerServing": 5.326
+      },
+      {
+        "recipeId": "marokkolainen-couscous",
+        "name": "couscousia",
+        "gramsPerServing": 46
+      },
+      {
+        "recipeId": "marokkolainen-couscous",
+        "name": "kanalientä",
+        "gramsPerServing": 1
+      },
+      {
+        "recipeId": "bulgogi",
+        "name": "päärynää",
+        "gramsPerServing": 2
+      },
+      {
+        "recipeId": "congee-riisipuuro",
+        "name": "kanalientä",
+        "gramsPerServing": 2
+      },
+      {
+        "recipeId": "spanakopita",
+        "name": "filotaikinaa",
+        "gramsPerServing": 14.88
+      },
+      {
+        "recipeId": "tabbouleh",
+        "name": "hienoa bulguria",
+        "gramsPerServing": 8.2625
+      },
+      {
+        "recipeId": "liha-juureskeitto-perunaton",
+        "name": "lanttua",
+        "gramsPerServing": 1.85
+      },
+      {
+        "recipeId": "vhh-raparperipiirakka",
+        "name": "raparperia",
+        "gramsPerServing": 1.71875
+      },
+      {
+        "recipeId": "pad-thai-vhh-konjac",
+        "name": "tamarinditahnaa",
+        "gramsPerServing": 4.305
+      },
+      {
+        "recipeId": "valimerellinen-tortilla-espanola-aamupalaksi",
+        "name": "sipulia",
+        "gramsPerServing": 1.32
+      },
+      {
+        "recipeId": "som-tam-vhh-kurkkuna",
+        "name": "vihreitä papuja",
+        "gramsPerServing": 1.2645
+      },
+      {
+        "recipeId": "kanakeitto-pinaatti-sitruuna",
+        "name": "kanalientä",
+        "gramsPerServing": 1
+      },
+      {
+        "recipeId": "vhh-mustikkapiirakka",
+        "name": "mustikoita",
+        "gramsPerServing": 1.909125
+      },
+      {
+        "recipeId": "uunilohi-smetanakuorrutteella",
+        "name": "smetanaa",
+        "gramsPerServing": 1.1
+      },
+      {
+        "recipeId": "intialainen-aloo-paratha",
+        "name": "vehnäjauho",
+        "gramsPerServing": 36.999
+      },
+      {
+        "recipeId": "lanttulaatikko-kermainen",
+        "name": "lanttua",
+        "gramsPerServing": 11.76
+      },
+      {
+        "recipeId": "paprikainen-vhh-gulassi",
+        "name": "tomaatti",
+        "gramsPerServing": 1.035
+      },
+      {
+        "recipeId": "paprikainen-vhh-gulassi",
+        "name": "lihalientä",
+        "gramsPerServing": 2.25
+      },
+      {
+        "recipeId": "kana-enchilada-kukkakaalivuoka",
+        "name": "tomaattisalsaa",
+        "gramsPerServing": 4.05125
+      },
+      {
+        "recipeId": "ropa-vieja",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 2.3000000000000003
+      },
+      {
+        "recipeId": "ropa-vieja",
+        "name": "lihalientä",
+        "gramsPerServing": 2.5
+      },
+      {
+        "recipeId": "kanapyorykat-tomaattikastike",
+        "name": "tomaattimurskaa",
+        "gramsPerServing": 3.45
+      },
+      {
+        "recipeId": "kanasalaatti-pesto-mozzarella",
+        "name": "kirsikkatomaatteja",
+        "gramsPerServing": 1.3125
+      },
+      {
+        "recipeId": "sitruuna-yrttikana-parsa",
+        "name": "vihreää parsaa",
+        "gramsPerServing": 1.4
+      },
+      {
+        "recipeId": "thai-khao-tom-katkaravuilla",
+        "name": "laimennettua kanalientä",
+        "gramsPerServing": 1.4945
+      },
+      {
+        "recipeId": "pohjoisafrikkalainen-lablabi",
+        "name": "laimennettua kanalientä",
+        "gramsPerServing": 1.4945
+      },
+      {
+        "recipeId": "meksikolainen-aamiais-tacot-mustapavuilla",
+        "name": "maissitortilla",
+        "gramsPerServing": 25.9225
+      },
+      {
+        "recipeId": "meksikolainen-paputostada-aamupalaksi",
+        "name": "maissitortilla",
+        "gramsPerServing": 25.9225
+      },
+      {
+        "recipeId": "karibia-mango-limejogurtti",
+        "name": "kuorittua mangoa",
+        "gramsPerServing": 12.6
+      }
+    ],
+    "priorCalculatedMaterialMissingGIIngredientRecipeCountAtLeast1g": 49,
+    "priorCalculatedMaterialMissingGIIngredientRowCountAtLeast1g": 54,
+    "materialMissingGIThresholdGPerServing": 1,
+    "currentPriorCalculatedBlockReasons": {
+      "toleranceOnly": 4,
+      "giOnly": 72,
+      "toleranceAndGi": 1,
+      "otherUnresolvedInput": 1,
+      "totalPriorCalculatedNowBlocked": 78
+    }
+  },
+  "policy": {
+    "formula": "sum(GI_i * available carbohydrate per serving_i) / 100",
+    "allPositiveSupportedContributionsIncluded": true,
+    "smallUnmatchedContributionsMayBeOmittedIfCumulativeLessThan1g": false,
+    "sourceProvenZeroMayContributeZero": true,
+    "unknownAmountOrMaterialMissingGiBlocks": true,
+    "analoguesAndCategoryMeansAreLowConfidence": true,
+    "documentedIngredientAliasesAllowed": true,
+    "recipeStructureAndCalculationInputAreIndependentlyBound": true,
+    "smallOmissionThresholdIsEditorialNotClinical": true,
+    "smallUnmatchedContributionsMayBeOmittedIfCumulativeLessThan2g": true,
+    "individualUnmatchedContributionMustBeLessThan1g": true,
+    "wrongOrInvalidGIRecordRemainsBlocking": true
+  },
+  "beforeAfterFile": "glycemic-load-before-after-2026-10-25.json",
+  "limitations": [
+    "The audit covers 325 published Finnish recipes. It is a calculation and provenance audit, not a clinical validation or measured meal response.",
+    "Of 72 changed recipe structures, 21 had prior calculated values and were individually reviewed; 51 other changed recipes remain bound to the earlier source and stay uncalculated. Among the reviewed 21, some remain blocked for source or cumulative-omission reasons.",
+    "The previous 78-block split (21 structural, 33 tolerance-only, 16 GI-only, 8 both) describes the PR #104 pre-continuation snapshot. The current post-review snapshot has 99 calculated, 226 incomplete, and 91 of 190 previously calculated values blocked.",
+    "The 1 g/serving tolerance is an editorial policy currently retained. Two- and three-gram results are sensitivity scenarios only and require owner approval before any policy change.",
+    "GI scenario inputs are assumptions for sensitivity analysis, not evidence of ingredient GI. Low portions may be omitted within the current tolerance; significant missing GI sources and mismatched categories stay blocked.",
+    "Production changes have not been merged or deployed.",
+    "Final 2 g editorial policy is applied in the follow-up update below; the preceding 1 g counts and scenarios remain a historical snapshot.",
+    "Final 2 g editorial policy is applied in finalPolicyUpdate; previous 1 g counts are retained as the historical comparison."
+  ],
+  "toleranceSensitivity": {
+    "priorPolicyGPerServing": 1,
+    "priorCalculated": 99,
+    "appliedToleranceGPerServing": 2,
+    "changeApplied": true,
+    "individualUnmatchedContributionLimitGPerServing": 1,
+    "strictInequality": true,
+    "restoredAt2g": 27,
+    "previouslyPublishedNowBlockedForInvalidGI": 14,
+    "netCalculatedChange": 13,
+    "allRestoredAreLowConfidence": true,
+    "restoredRecipeIds": [
+      "munakokkeli",
+      "munakasrulla-pinaatti-tuorejuustolla",
+      "uunimuna-avokadot",
+      "uunimunat-pinaatilla",
+      "vhh-lihamureke",
+      "keltainen-kanacurry-vhh",
+      "vhh-lohikeitto-kukkakaalilla",
+      "kana-fajita-pelti",
+      "kermainen-lohipata",
+      "gai-yang-vhh",
+      "pad-kee-mao-vhh-konjac",
+      "yum-woon-sen-vhh",
+      "kurkku-oliivi-aamiaiskulho",
+      "uuniporsas-kermakastikkeessa-vhh",
+      "bun-cha-hanoi",
+      "yangzhou-paistettu-riisi",
+      "amritsari-kala",
+      "kana-yakitori-kaalilla",
+      "karjalanpaisti-vhh",
+      "korealainen-gyeranbap-riisikulho",
+      "vietnamilainen-banh-bao-kananmunalla",
+      "kiinalainen-kevatsipulipannukakku",
+      "kiinalainen-teehaudutetut-munat",
+      "rogan-josh",
+      "kana-tagine-sitruunalla",
+      "palak-paneer",
+      "tandoorikana"
+    ],
+    "invalidGIMappingRecipeIds": [
+      "caponata",
+      "pasta-alla-norma",
+      "chettinad-kana",
+      "raejuusto-pesto-kasviskulho",
+      "vhh-runebergintortut",
+      "keto-suklaakeksit",
+      "vhh-mokkapalat",
+      "kai-jiew-vhh",
+      "lahi-ita-kikhernejauho-yrttilettu",
+      "malesialainen-congee-inkivaarilla",
+      "kiinalainen-riisipuuro-kananmunalla",
+      "thai-jok-kanalla",
+      "thai-porsasjok",
+      "yrttituorejuusto-kinkkurullat"
+    ],
+    "remainingFormerCalculatedBlockReasons": {
+      "toleranceOnly": 4,
+      "giOnly": 72,
+      "toleranceAndGi": 1,
+      "otherUnresolvedInput": 1
+    },
+    "restoredZeroGLWithDisclosedOmission": [
+      {
+        "recipeId": "munakokkeli",
+        "omittedGPerServing": 1.146550000667572
+      },
+      {
+        "recipeId": "uunimuna-avokadot",
+        "omittedGPerServing": 1.455549981594086
+      },
+      {
+        "recipeId": "uunimunat-pinaatilla",
+        "omittedGPerServing": 1.578
+      },
+      {
+        "recipeId": "vhh-lihamureke",
+        "omittedGPerServing": 1.9116666666666668
+      },
+      {
+        "recipeId": "kiinalainen-teehaudutetut-munat",
+        "omittedGPerServing": 1.27
+      }
+    ],
+    "currentCalculatedZeroTotalsWithDisclosedOmission": 8,
+    "currentCalculatedZeroTotalsWithoutOmission": 0,
+    "maxOmittedGPerServingAmongRestored": 1.9695,
+    "giScenarios": [
+      {
+        "assumedGI": 20,
+        "maxPerRecipeGLDelta": 0.39390000000000003,
+        "maxOmittedCarbohydrateGPerServing": 1.9695,
+        "definedLowMediumHighClassChanges": 0,
+        "oneSignificantDigitDisplayChanges": 16
+      },
+      {
+        "assumedGI": 50,
+        "maxPerRecipeGLDelta": 0.9847499999999999,
+        "maxOmittedCarbohydrateGPerServing": 1.9695,
+        "definedLowMediumHighClassChanges": 0,
+        "oneSignificantDigitDisplayChanges": 22
+      },
+      {
+        "assumedGI": 80,
+        "maxPerRecipeGLDelta": 1.5756000000000001,
+        "maxOmittedCarbohydrateGPerServing": 1.9695,
+        "definedLowMediumHighClassChanges": 0,
+        "oneSignificantDigitDisplayChanges": 23
+      },
+      {
+        "assumedGI": 120,
+        "maxPerRecipeGLDelta": 2.3634,
+        "maxOmittedCarbohydrateGPerServing": 1.9695,
+        "definedLowMediumHighClassChanges": 0,
+        "oneSignificantDigitDisplayChanges": 23
+      }
+    ],
+    "interpretation": "GI 20/50/80/120 are illustrative assumptions, not measured GI values, bounds, or substitutes for missing evidence. Zero estimates with disclosed omitted carbohydrate are approximate low-confidence estimates, not proof of a true zero response."
+  },
+  "fingerprintVersion": 3,
+  "foodEvidenceFingerprintDescription": "Version 3 includes source identity, food state and basis, normalized available carbohydrate, CHO plus polyols for EU totals including polyols, CHO plus fibre for US totals including fibre, GI value and match-quality evidence. Irrelevant source metadata and prose are excluded.",
+  "finalPolicyUpdate": {
+    "date": "2026-10-25",
+    "policy": "User-centered editorial tolerance; not a clinical precision threshold.",
+    "previousSnapshot": {
+      "toleranceGPerServing": 1,
+      "calculated": 99,
+      "incomplete": 226,
+      "previouslyCalculatedNowBlocked": 91
+    },
+    "current": {
+      "toleranceGPerServing": 2,
+      "individualUnmatchedContributionMustBeLessThanG": 1,
+      "calculated": 112,
+      "incomplete": 213,
+      "previouslyCalculatedStillCalculated": 85,
+      "newlyCalculatedUnder2g": 27,
+      "previouslyPublishedNowBlockedForInvalidGI": 14,
+      "previouslyCalculatedNowBlocked": 78,
+      "netCalculatedChange": 13,
+      "previouslyIncompleteRecovered": 0,
+      "priorCalculatedBlockReasons": {
+        "toleranceOnly": 4,
+        "giOnly": 72,
+        "toleranceAndGi": 1,
+        "otherUnresolvedInput": 1
+      },
+      "totalBlockers": 414,
+      "calculatedWithOmittedCarbohydrate": 97,
+      "maxCalculatedOmittedGPerServing": 1.9695,
+      "allRestoredHaveLowConfidence": true,
+      "restoredRecipeIds": [
+        "munakokkeli",
+        "munakasrulla-pinaatti-tuorejuustolla",
+        "uunimuna-avokadot",
+        "uunimunat-pinaatilla",
+        "vhh-lihamureke",
+        "keltainen-kanacurry-vhh",
+        "vhh-lohikeitto-kukkakaalilla",
+        "kana-fajita-pelti",
+        "kermainen-lohipata",
+        "gai-yang-vhh",
+        "pad-kee-mao-vhh-konjac",
+        "yum-woon-sen-vhh",
+        "kurkku-oliivi-aamiaiskulho",
+        "uuniporsas-kermakastikkeessa-vhh",
+        "bun-cha-hanoi",
+        "yangzhou-paistettu-riisi",
+        "amritsari-kala",
+        "kana-yakitori-kaalilla",
+        "karjalanpaisti-vhh",
+        "korealainen-gyeranbap-riisikulho",
+        "vietnamilainen-banh-bao-kananmunalla",
+        "kiinalainen-kevatsipulipannukakku",
+        "kiinalainen-teehaudutetut-munat",
+        "rogan-josh",
+        "kana-tagine-sitruunalla",
+        "palak-paneer",
+        "tandoorikana"
+      ],
+      "wrongOrInvalidGIBlocksRecipeIds": [
+        "caponata",
+        "pasta-alla-norma",
+        "chettinad-kana",
+        "raejuusto-pesto-kasviskulho",
+        "vhh-runebergintortut",
+        "keto-suklaakeksit",
+        "vhh-mokkapalat",
+        "kai-jiew-vhh",
+        "lahi-ita-kikhernejauho-yrttilettu",
+        "malesialainen-congee-inkivaarilla",
+        "kiinalainen-riisipuuro-kananmunalla",
+        "thai-jok-kanalla",
+        "thai-porsasjok",
+        "yrttituorejuusto-kinkkurullat"
+      ],
+      "newlyRestoredZeroEstimatesWithOmissions": [
+        {
+          "recipeId": "munakokkeli",
+          "omittedGPerServing": 1.146550000667572
+        },
+        {
+          "recipeId": "uunimuna-avokadot",
+          "omittedGPerServing": 1.455549981594086
+        },
+        {
+          "recipeId": "uunimunat-pinaatilla",
+          "omittedGPerServing": 1.578
+        },
+        {
+          "recipeId": "vhh-lihamureke",
+          "omittedGPerServing": 1.9116666666666668
+        },
+        {
+          "recipeId": "kiinalainen-teehaudutetut-munat",
+          "omittedGPerServing": 1.27
+        }
+      ],
+      "calculatedZeroWithoutOmission": 0,
+      "giScenarios": [
+        {
+          "assumedGI": 20,
+          "maxPerRecipeGLDelta": 0.39390000000000003,
+          "maxOmittedCarbohydrateGPerServing": 1.9695,
+          "definedLowMediumHighClassChanges": 0,
+          "oneSignificantDigitDisplayChanges": 16
+        },
+        {
+          "assumedGI": 50,
+          "maxPerRecipeGLDelta": 0.9847499999999999,
+          "maxOmittedCarbohydrateGPerServing": 1.9695,
+          "definedLowMediumHighClassChanges": 0,
+          "oneSignificantDigitDisplayChanges": 22
+        },
+        {
+          "assumedGI": 80,
+          "maxPerRecipeGLDelta": 1.5756000000000001,
+          "maxOmittedCarbohydrateGPerServing": 1.9695,
+          "definedLowMediumHighClassChanges": 0,
+          "oneSignificantDigitDisplayChanges": 23
+        },
+        {
+          "assumedGI": 120,
+          "maxPerRecipeGLDelta": 2.3634,
+          "maxOmittedCarbohydrateGPerServing": 1.9695,
+          "definedLowMediumHighClassChanges": 0,
+          "oneSignificantDigitDisplayChanges": 23
+        }
+      ]
+    },
+    "integrity": {
+      "formulaUnchanged": true,
+      "nutritionNormalizationUnchanged": true,
+      "sourceFingerprintsUnchanged": true,
+      "recipeBindingUnchanged": true,
+      "GIfoodFamilyAndPreparationMatchingUnchanged": true
+    }
+  }
+}

@@ -1,9 +1,15 @@
-import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import type { FoodRecord } from "./nutrition-model";
-import { calculateGlycemicLoad, type GlycemicIndexRecord, type GlycemicLoadRecipeInput } from "./glycemic-load-model";
+import {
+  calculateGlycemicLoad,
+  CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G,
+  MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G,
+  type GlycemicIndexRecord,
+  type GlycemicLoadRecipeInput,
+} from "./glycemic-load-model";
+import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches } from "./glycemic-load-recipe-binding";
 import { siteContent } from "../src/generated/content.generated";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
@@ -238,6 +244,18 @@ const [input, foodRecords, giSource] = await Promise.all([
   readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8").then((text) => JSON.parse(text) as FoodRecord[]),
   readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8").then((text) => JSON.parse(text)),
 ]);
+const recipeBindings = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-bindings.json"), "utf8")) as {
+  baselineCommit: string;
+  recipes: Record<string, string | null>;
+  calculationInputs: Record<string, string | null>;
+  calculationEvidence?: Record<string, string | null>;
+};
+const recipeAliases = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-aliases.json"), "utf8")) as {
+  aliases: Record<string, { canonical: string; evidence: string }>;
+};
+for (const [alias, value] of Object.entries(recipeAliases.aliases)) {
+  if (!alias.trim() || !value.canonical.trim() || !value.evidence.trim()) throw new Error(`Recipe ingredient alias requires canonical identity and evidence: ${alias}`);
+}
 
 const inputs = input.recipes as GlycemicLoadRecipeInput[];
 const actualIds = inputs.map((recipe) => recipe.recipeId);
@@ -263,10 +281,34 @@ const sourceHashes = Object.fromEntries(await Promise.all(expectedRecipeIds.map(
   const category = recipeCategories[recipeId] ?? "aamupalat";
   const recipePath = path.join(root, "reseptit", category, `${recipeFileNames[recipeId] ?? recipeId}.md`);
   const contents = (await readFile(recipePath, "utf8")).replaceAll("\r\n", "\n");
-  return [recipeId, createHash("sha256").update(contents).digest("hex")];
+  return [recipeId, recipeBindingHash(contents, recipeAliases.aliases)];
 })));
 
-const results = inputs.map((recipe) => calculateGlycemicLoad(recipe, foodRecords, giRecords));
+const rawResults = inputs.map((recipe) => calculateGlycemicLoad(recipe, foodRecords, giRecords));
+const calculationInputHashes = Object.fromEntries(inputs.map((recipe) => [recipe.recipeId, glycemicLoadInputHash(recipe)]));
+const calculationEvidenceHashes = Object.fromEntries(inputs.map((recipe) => [recipe.recipeId, glycemicLoadEvidenceHash(recipe, foodRecords, giRecords)]));
+const results = rawResults.map((result) => {
+  const boundHash = recipeBindings.recipes[result.recipeId];
+  const recipeChanged = !recipeBindingMatches(boundHash, sourceHashes[result.recipeId]);
+  const inputChanged = !recipeBindingMatches(recipeBindings.calculationInputs[result.recipeId], calculationInputHashes[result.recipeId]);
+  const evidenceChanged = !recipeBindingMatches(recipeBindings.calculationEvidence?.[result.recipeId], calculationEvidenceHashes[result.recipeId]);
+  if (recipeChanged || inputChanged || evidenceChanged) {
+    return {
+      ...result,
+      status: "INSUFFICIENT SOURCE DATA" as const,
+      glycemicLoadPerServing: null,
+      glycemicLoadRangePerServing: null,
+      confidence: null,
+      blockers: [
+        ...result.blockers,
+        ...(recipeChanged ? [`${result.recipeId}: recipe structure differs from the last GL review (${recipeBindings.baselineCommit}); ingredient mapping and calculation must be reviewed again.`] : []),
+        ...(inputChanged ? [`${result.recipeId}: GI/food mapping, portion, conversion, source evidence or calculation assumptions differ from the last GL review; the input must be reviewed again.`] : []),
+        ...(evidenceChanged ? [`${result.recipeId}: a calculation-relevant food or GI source value/state differs from the last GL review; source mapping and calculation must be reviewed again.`] : []),
+      ],
+    };
+  }
+  return result;
+});
 const report = {
   generatedAt: new Date().toISOString(),
   scope: "Internal provenance report for ingredient-based per-serving estimates. These are not measurements of prepared meals or individual glucose responses.",
@@ -275,9 +317,15 @@ const report = {
   additionalCarbohydrateEvidence: input.additionalCarbohydrateEvidence ?? null,
   massEvidence: input.massEvidence,
   selectionNotes: input.selectionNotes ?? {},
-  giSourcePolicy: "Published, traceable glucose-scale GI values are preferred. Explicit analogs and category means are accepted with match type, confidence, source and limitation recorded. Ingredient portions below 1 g available carbohydrate per serving are omitted. This is an estimate, not a measurement of a mixed meal.",
+  giSourcePolicy: `Published, traceable glucose-scale GI values may support a public ingredient estimate as a direct match, justified analogue, or category mean. Match quality is separate from study quality: analogues and category means force LOW confidence. A missing GI match for an individual contribution below ${MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G} g available carbohydrate per serving may be omitted only while all such recipe contributions sum to less than ${CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G} g per serving; larger known carbohydrate contributions require GI evidence. An assigned but invalid or mismatched GI record remains blocking regardless of contribution size, and unknown carbohydrate remains blocking. The cumulative value is a user-centered editorial tolerance, not a clinical precision threshold.`,
+  recipeBindingBaseline: recipeBindings.baselineCommit,
+  recipeBindingMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.recipes[recipeId], sourceHashes[recipeId])),
+  calculationInputMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.calculationInputs[recipeId], calculationInputHashes[recipeId])),
+  calculationEvidenceMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.calculationEvidence?.[recipeId], calculationEvidenceHashes[recipeId])),
+  previousPublicBaseline: { sourceCommit: "b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5", calculated: 190, insufficientSourceData: 135, zeroTotals: 21, changedRecipeInputsAmongCalculated: 21 },
   giSourceCatalog: giSource.sources,
   sourceHashes,
+  calculationEvidenceHashes,
   results,
   summary: {
     recipes: results.length,
@@ -315,13 +363,13 @@ const publicResults = results.flatMap((result) => {
         note: record.note ?? record.source.qualityEvidence,
       }))
     : [];
-  if (result.status === "CALCULATED" && sourceReferences.length === 0) {
+  if (result.status === "CALCULATED" && result.omittedAvailableCarbohydratePerServingG > 0 && sourceReferences.length === 0) {
     sourceReferences.push({
-      title: "Pilot calculation policy: omit contributions below 1 g per serving",
+      title: "Documented small-contribution editorial tolerance",
       url: "/glykeeminen-kuorma/",
       matchKind: "CALCULATION_POLICY",
       confidence: "LOW",
-      note: "This is a site-specific calculation convention, not a measured GI value. No ingredient reaches the 1 g available-carbohydrate threshold in this recipe.",
+      note: `Unmatched portions totalling ${result.omittedAvailableCarbohydratePerServingG.toFixed(3)} g available carbohydrate per serving were omitted within the cumulative ${CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G} g editorial tolerance.`,
     });
   }
   const incompleteReasons = result.blockers.map((blocker) => {
@@ -348,6 +396,7 @@ const publicResults = results.flatMap((result) => {
     incompleteReasons,
     glycemicLoadPerServing: result.glycemicLoadPerServing,
     glycemicLoadRangePerServing: result.glycemicLoadRangePerServing,
+    omittedAvailableCarbohydratePerServingG: result.omittedAvailableCarbohydratePerServingG,
     confidence: result.confidence,
     carbohydrateSources: [...new Set(result.ingredients.flatMap((ingredient) => ingredient.fineliRecordId ? [ingredient.fineliRecordId] : []))]
       .map((recordId) => foodRecords.find((record) => record.id === recordId))
@@ -366,6 +415,6 @@ const expectedPublicResultCount = expectedRecipeIds.length - 1;
 if (!isFixtureBuild && publicResults.length !== expectedPublicResultCount) {
   throw new Error(`Production GL pilot page must include all ${expectedPublicResultCount} publishable entries.`);
 }
-const publicModule = `/* Generated by scripts/glycemic-load-pilot.ts. Public-safe summary only. */\nexport interface GlycemicLoadPilotPublicResult { recipeId: string; title: string; routePath: string; localeRoutes: Partial<Record<"fi" | "en" | "sv" | "th", { title: string; routePath: string }>>; status: "CALCULATED" | "INSUFFICIENT SOURCE DATA"; incompleteReasons: Array<{ ingredientIndex: number; ingredientNames: Partial<Record<"fi" | "en" | "sv" | "th", string>>; category: "GI" | "SOURCE" | "PORTION" | "VARIANT" | "AMOUNT" }>; glycemicLoadPerServing: number | null; glycemicLoadRangePerServing: { min: number; max: number } | null; confidence: "HIGH" | "MEDIUM" | "LOW" | null; carbohydrateSources: Array<{ title: string; url: string; note: string }>; sourceReferences: Array<{ title: string; url: string; matchKind: "EXACT" | "ANALOG" | "CATEGORY_MEAN" | "CALCULATION_POLICY"; confidence: "HIGH" | "MEDIUM" | "LOW"; note: string }>; }\nexport const glycemicLoadPilotReviewedRecipeCount = ${expectedRecipeIds.length};\nexport const glycemicLoadPilotResults: GlycemicLoadPilotPublicResult[] = ${JSON.stringify(publicResults, null, 2)};\n`;
+const publicModule = `/* Generated by scripts/glycemic-load-pilot.ts. Public-safe summary only. */\nexport interface GlycemicLoadPilotPublicResult { recipeId: string; title: string; routePath: string; localeRoutes: Partial<Record<"fi" | "en" | "sv" | "th", { title: string; routePath: string }>>; status: "CALCULATED" | "INSUFFICIENT SOURCE DATA"; incompleteReasons: Array<{ ingredientIndex: number; ingredientNames: Partial<Record<"fi" | "en" | "sv" | "th", string>>; category: "GI" | "SOURCE" | "PORTION" | "VARIANT" | "AMOUNT" }>; glycemicLoadPerServing: number | null; glycemicLoadRangePerServing: { min: number; max: number } | null; omittedAvailableCarbohydratePerServingG: number; confidence: "HIGH" | "MEDIUM" | "LOW" | null; carbohydrateSources: Array<{ title: string; url: string; note: string }>; sourceReferences: Array<{ title: string; url: string; matchKind: "EXACT" | "ANALOG" | "CATEGORY_MEAN" | "CALCULATION_POLICY"; confidence: "HIGH" | "MEDIUM" | "LOW"; note: string }>; }\nexport const glycemicLoadPilotReviewedRecipeCount = ${expectedRecipeIds.length};\nexport const glycemicLoadPilotResults: GlycemicLoadPilotPublicResult[] = ${JSON.stringify(publicResults, null, 2)};\n`;
 await writeFile(path.join(siteDir, "src/generated/glycemic-load-pilot.generated.ts"), publicModule, "utf8");
 console.log(JSON.stringify({ ...report.summary, output: path.relative(root, outputPath), blockers: results.map((result) => ({ recipeId: result.recipeId, count: result.blockers.length })) }, null, 2));
