@@ -86,7 +86,22 @@ test("recipe index is prerendered and links only published languages", async () 
 });
 
 test("GK values link to centralized recipe details on every published translation", async () => {
-  assert.equal(glycemicLoadPilotResults.length, 260);
+  assert.equal(glycemicLoadPilotResults.length, 280);
+  const batch13Ids = [
+    "karibia-bammy-kassavaleipa", "kiinalainen-musta-seesamipuuro", "meksikolainen-munakokkeli-pico-de-gallolla",
+    "karibia-mango-limejogurtti", "thai-papaijajogurtti", "intialainen-pinaatti-paneer-chilla",
+    "lahi-ita-pistaasijogurtti", "karibia-plantain-aamiaislautanen", "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+    "korealainen-mandu-keitto-aamiaiseksi", "tunisialainen-brik", "dal-makhani", "kung-pao-kana", "mala-xiang-guo",
+    "mapo-tofu", "bouillabaisse", "pav-bhaji", "pekingin-ankka", "sichuan-hot-pot", "tunisialainen-ojja",
+  ];
+  const batch13Results = glycemicLoadPilotResults.filter((result) => batch13Ids.includes(result.recipeId));
+  assert.equal(batch13Results.length, 20);
+  const calculatedBatch13 = batch13Results.filter((result) => result.status === "CALCULATED");
+  assert.deepEqual(calculatedBatch13.map((result) => [result.recipeId, result.glycemicLoadPerServing]), [
+    ["meksikolainen-munakokkeli-pico-de-gallolla", 14.06],
+    ["karibia-mango-limejogurtti", 7.3],
+  ]);
+  assert.equal(batch13Results.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 18);
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
     assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);
