@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { glycemicLoadPilotResults } from "@/generated/glycemic-load-pilot.generated";
+import { glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "@/generated/glycemic-load-pilot.generated";
 import { recipeLocaleFromPath } from "@/features/recipes/recipe-i18n";
 import type { RecipeLocale } from "@/types/content";
 
@@ -21,6 +21,13 @@ const copy = {
     about: "ประมาณ", perServing: "/ หนึ่งที่", eyebrow: "ค่าประมาณจากการคำนวณ", title: "ภาระน้ำตาลในเลือด: แหล่งข้อมูลและวิธีคำนวณ", intro: "หน้านี้อธิบายวิธีคำนวณค่า GL ของสูตรอาหาร แหล่งข้อมูล และสมมติฐานของแต่ละสูตร ค่าประมาณคำนวณจากวัตถุดิบ ไม่ใช่การวัดการตอบสนองของน้ำตาลจากอาหารที่ปรุงเสร็จหรือบุคคลใดบุคคลหนึ่ง", summary: "สถานะการทดลอง", total: "สูตรที่ตรวจสอบ", done: "ค่าประมาณที่คำนวณแล้ว", pending: "ไม่มีค่ารวม", method: "คำนวณค่า GL อย่างไร", formula: "GL = Σ (ค่า GI ของวัตถุดิบ × คาร์โบไฮเดรตที่ร่างกายใช้ได้ต่อหนึ่งที่) / 100.", fineli: "Fineli Release 20 เป็นแหล่งข้อมูลหลักของคาร์โบไฮเดรตที่ร่างกายใช้ได้ AFCD Release 3 ใช้เสริมข้อมูล Fineli สำหรับวัตถุดิบบางรายการที่ไม่พบข้อมูล Fineli ที่เหมาะสม โดยระบุแหล่งข้อมูลและข้อยกเว้นไว้ในรายละเอียดของแต่ละสูตร ระบบแปลงปริมาณด้วยหน่วยเฉพาะของอาหารเมื่อมีข้อมูล", gi: "ค่า GI มาจากตารางและงานวิจัยนานาชาติที่เผยแพร่แล้ว หากไม่มีข้อมูลตรง อาจใช้วัตถุดิบหรือวิธีปรุงที่ใกล้เคียงอย่างมีเหตุผล หรือค่าเฉลี่ยของหมวดอาหารแบบกว้าง โดยระบุระดับความเชื่อมั่นต่ำสำหรับค่าที่ใช้เทียบเหล่านี้", interpretation: "วัตถุดิบที่มีคาร์โบไฮเดรตใช้ได้ต่ำกว่า 1 กรัมต่อหนึ่งที่ไม่นำมารวม การตอบสนองจริงอาจแตกต่างตามวัตถุดิบ วิธีปรุง ปริมาณอาหาร และแต่ละบุคคล ค่า GL เป็นค่าประมาณจากวัตถุดิบ ไม่ใช่ผลวัดของอาหารหลายชนิดที่ปรุงเสร็จแล้ว", sources: "แหล่งข้อมูลทั่วไป", recipeDetails: "ผลลัพธ์และสมมติฐานของแต่ละสูตร", value: "ค่าประมาณ GL", confidence: "ระดับความเชื่อมั่น", source: "แหล่งข้อมูลและสมมติฐาน", carbohydrateData: "ข้อมูลคาร์โบไฮเดรตที่ร่างกายใช้ได้", high: "สูง", medium: "ปานกลาง", low: "ต่ำ", incomplete: "ไม่เผยแพร่ค่ารวมเนื่องจากข้อมูลวัตถุดิบสำคัญหรือค่า GI เทียบเคียงยังขาดหาย", liverTitle: "หม้อตับเนื้อกับกะหล่ำดอก", liver: "สูตรนี้ไม่แสดงค่า GL รวม ค่า 3.45 ก่อนหน้านี้ใช้สมมติฐาน GI เท่ากับศูนย์ที่ไม่ได้วัดสำหรับคาร์โบไฮเดรตในตับเนื้อ จึงไม่ใช่ค่า GI ของตับที่วัดหรือมีหลักฐานรองรับ", massaman: "ช่วงประมาณ 5–6 ของแกงมัสมั่นมาจากสองสถานการณ์ที่มีแหล่งอ้างอิงสำหรับคาร์โบไฮเดรตในพริกแกง ได้แก่ ค่าของพริกแกง Tikka ใน Fineli และฉลากผลิตภัณฑ์หนึ่งยี่ห้อ ช่วงนี้แสดงเฉพาะความแตกต่างของข้อมูลวัตถุดิบนี้ ไม่ใช่ช่วงความคลาดเคลื่อนของการคำนวณทั้งหมด",
   },
 } satisfies Record<RecipeLocale, Record<string, string>>;
+
+const incompleteCopy: Record<RecipeLocale, { title: string; gi: string; source: string; portion: string; variant: string; amount: string }> = {
+  fi: { title: "Miksi kokonaisarviota ei ole?", gi: "Sopivaa julkaistua GI-arvoa ei löytynyt.", source: "Ainesosan koostumus- tai tuotetietoa ei voitu täsmätä.", portion: "Määrää ei voitu muuntaa ruoka-ainekohtaisella massatiedolla.", variant: "Reseptissä on hiilihydraattimäärään vaikuttava avoin ainesosavaihtoehto.", amount: "Ainesosamäärä puuttuu tai vaikuttaa virheelliseltä; sitä ei korjattu arvaamalla." },
+  en: { title: "Why is there no total estimate?", gi: "No suitable published GI value was found.", source: "The ingredient composition or product information could not be matched.", portion: "The amount could not be converted using food-specific mass data.", variant: "The recipe leaves an ingredient choice open that affects available carbohydrate.", amount: "The amount is missing or appears erroneous; it was not corrected by guessing." },
+  sv: { title: "Varför saknas ett totalvärde?", gi: "Ett lämpligt publicerat GI-värde saknas.", source: "Ingrediensens sammansättning eller produktinformation kunde inte matchas.", portion: "Mängden kunde inte omvandlas med livsmedelsspecifika massdata.", variant: "Receptet lämnar ett ingrediensval öppet som påverkar tillgängliga kolhydrater.", amount: "Mängden saknas eller verkar felaktig; den har inte korrigerats genom gissning." },
+  th: { title: "เหตุใดจึงไม่มีค่าประมาณรวม", gi: "ไม่พบค่า GI ที่เผยแพร่และเหมาะสม", source: "ไม่สามารถจับคู่ข้อมูลส่วนประกอบหรือผลิตภัณฑ์ของวัตถุดิบได้", portion: "ไม่สามารถแปลงปริมาณด้วยข้อมูลน้ำหนักเฉพาะอาหารได้", variant: "สูตรยังเปิดให้เลือกวัตถุดิบที่มีผลต่อปริมาณคาร์โบไฮเดรตที่ใช้ได้", amount: "ปริมาณขาดหายหรือดูผิดพลาด และไม่ได้แก้ไขด้วยการคาดเดา" },
+};
 
 const sources = [
   ["International Tables 2021", "https://doi.org/10.1093/ajcn/nqab233"],
@@ -45,9 +52,9 @@ export function GlycemicLoadPilotPage() {
     <div className="container container--narrow">
       <header className="page-intro glycemic-pilot__intro"><p className="eyebrow">{text.eyebrow}</p><h1>{text.title}</h1><p className="page-intro__description">{text.intro}</p></header>
       <div className="glycemic-pilot__summary" aria-label={text.summary}>
-        <article><strong>{glycemicLoadPilotResults.length}</strong><span>{text.total}</span></article>
+        <article><strong>{glycemicLoadPilotReviewedRecipeCount}</strong><span>{text.total}</span></article>
         <article><strong>{calculated.length}</strong><span>{text.done}</span></article>
-        <article><strong>{glycemicLoadPilotResults.length - calculated.length}</strong><span>{text.pending}</span></article>
+        <article><strong>{glycemicLoadPilotReviewedRecipeCount - calculated.length}</strong><span>{text.pending}</span></article>
       </div>
       <section className="glycemic-pilot__method" aria-labelledby="glycemic-pilot-method">
         <h2 id="glycemic-pilot-method">{text.method}</h2><p><strong>{text.formula}</strong></p><p>{text.fineli}</p><p>{text.gi}</p><p>{text.interpretation}</p>
@@ -63,7 +70,11 @@ export function GlycemicLoadPilotPage() {
             {result.status === "CALCULATED" ? <><p><strong>{text.value}: {result.recipeId === "massaman-curry-kanalla-vhh" ? `${text.about} 5–6 ${text.perServing}` : formatValue(result)}</strong> · {text.confidence}: {confidence}</p>
               {result.recipeId === "massaman-curry-kanalla-vhh" ? <p>{text.massaman}</p> : null}
               <details><summary>{text.source}</summary>{result.carbohydrateSources.length ? <><p>{text.carbohydrateData}</p><ul>{result.carbohydrateSources.map((source) => <li key={`${source.url}-${source.title}`}><a href={source.url} rel="noopener noreferrer">{source.title}</a> — {source.note}</li>)}</ul></> : null}<ul>{result.sourceReferences.map((source) => <li key={`${source.url}-${source.title}`}><a href={source.url} rel="noopener noreferrer">{source.title}</a> — {source.note} ({source.confidence === "LOW" ? text.low : source.confidence === "MEDIUM" ? text.medium : text.high})</li>)}</ul></details>
-            </> : <p>{text.incomplete}</p>}
+            </> : <><p>{text.incomplete}</p>{result.incompleteReasons.length ? <details><summary>{incompleteCopy[locale].title}</summary><ul>{result.incompleteReasons.map((reason, index) => {
+              const ingredient = reason.ingredientNames[locale] ?? reason.ingredientNames.fi;
+              const explanation = reason.category === "GI" ? incompleteCopy[locale].gi : reason.category === "PORTION" ? incompleteCopy[locale].portion : reason.category === "VARIANT" ? incompleteCopy[locale].variant : reason.category === "AMOUNT" ? incompleteCopy[locale].amount : incompleteCopy[locale].source;
+              return <li key={`${reason.ingredientIndex}-${reason.category}-${index}`}>{ingredient ? <><strong>{ingredient}: </strong>{explanation}</> : explanation}</li>;
+            })}</ul></details> : null}</>}
           </li>;
         })}</ol>
         <aside id="maksalaatikko-kukkakaalilla" className="glycemic-pilot__exclusion"><h3>{text.liverTitle}</h3><p>{text.liver}</p></aside>

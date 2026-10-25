@@ -34,7 +34,7 @@
       "title": "International table of glycemic index and glycemic load values: 2002",
       "url": "https://doi.org/10.1093/ajcn/76.1.5",
       "year": 2002,
-      "use": "Context for why the tables omit GI values for eggs, cheese, avocado and salad vegetables: these foods contain little or no carbohydrate and do not provide practical 25- or 50-g test portions."
+      "use": "Supplementary source for older, product-variable GI observations including the mean of 11 honey types; not a preferred source for current exact matches. Also provides context for why eggs, cheese, avocado and salad vegetables do not provide practical 25- or 50-g test portions."
     },
     {
       "id": "fried-potato-evoo-2016",
@@ -899,6 +899,30 @@
         "qualityEvidence": "Published human test in 12 healthy adults using a glucose reference and specified capillary time points; each food was tested once and not ISO 26642-confirmed."
       },
       "note": "Brand and noodle match is close; actual recipe broth/cooking can alter the response. Low confidence."
+    },
+    {
+      "id": "honey-category-mean-gi-55-2002",
+      "gi": 55,
+      "foodKey": "honey-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Honey, mean of 11 types",
+      "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International table of glycemic index and glycemic load values: 2002",
+        "url": "https://doi.org/10.1093/ajcn/76.1.5",
+        "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+        "year": 2002,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": null,
+        "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+        "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+      },
+      "note": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey."
     }
   ]
 }

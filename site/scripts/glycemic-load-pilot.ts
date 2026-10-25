@@ -65,6 +65,12 @@ const expectedRecipeIds = [
   "karibia-maissipuuro-kookoksella", "japanilainen-soba-aamiaiskeitto", "kiinalainen-jianbing-munaletty",
   "karibia-johnny-cake", "lahi-ita-taatelipuuro-tahinilla", "indonesialainen-ketoprak-aamiaiskulho",
   "thai-kookosriisi-mangolla", "korealainen-bataatti-riisikulho",
+  "vietnamilainen-papaija-kookospuuro", "japanilainen-tamago-kake-gohan", "indonesialainen-tempeh-munakulho",
+  "lahi-ita-zaatar-munat", "keto-joulutortut", "vietnamilainen-kahvijogurtti-banaanilla",
+  "valimerellinen-jogurttikulho-hunajalla", "kiinalainen-soijamaito-aamiaisella", "thai-kananmunat-kookoscurryssa",
+  "japanilainen-miso-tofu-paksoi", "japanilainen-curry-tofulla", "kanaviillokki-kukkakaalilla",
+  "kookos-lime-kanacurry", "kimchi-jjigae", "sate-ayam", "janssoninkiusaus-juuriselleri", "okonomiyaki-kaaliletut",
+  "valimerellinen-ricotta-persikkakulho", "paneer-tikka", "meksikolainen-huevos-a-la-mexicana",
   "meksikolainen-quesadilla-sienilla", "valimerellinen-appelsiini-aamiaiskakku", "vietnamilainen-banh-bao-kananmunalla",
   "japanilainen-dashimaki-tamago-aamiaislautasella", "valimerellinen-halloumi-tomaattileipa", "indonesialainen-bakwan-maissifritter",
   "japanilainen-kabocha-puuro", "malesialainen-kaya-paahtoleipa", "valimerellinen-farinata-aamupalaksi",
@@ -169,6 +175,16 @@ const recipeCategories: Record<string, string> = {
   "karibia-maissipuuro-kookoksella": "aamupalat", "japanilainen-soba-aamiaiskeitto": "aamupalat",
   "kiinalainen-jianbing-munaletty": "aamupalat", "karibia-johnny-cake": "aamupalat",
   "lahi-ita-taatelipuuro-tahinilla": "aamupalat", "indonesialainen-ketoprak-aamiaiskulho": "aamupalat",
+  "vietnamilainen-papaija-kookospuuro": "aamupalat", "japanilainen-tamago-kake-gohan": "aamupalat",
+  "indonesialainen-tempeh-munakulho": "aamupalat", "lahi-ita-zaatar-munat": "aamupalat",
+  "keto-joulutortut": "leivonnaiset", "vietnamilainen-kahvijogurtti-banaanilla": "aamupalat",
+  "valimerellinen-jogurttikulho-hunajalla": "aamupalat", "kiinalainen-soijamaito-aamiaisella": "aamupalat",
+  "thai-kananmunat-kookoscurryssa": "aamupalat", "japanilainen-miso-tofu-paksoi": "aamupalat",
+  "japanilainen-curry-tofulla": "paaruoat", "kanaviillokki-kukkakaalilla": "paaruoat",
+  "kookos-lime-kanacurry": "paaruoat", "kimchi-jjigae": "paaruoat", "sate-ayam": "paaruoat",
+  "janssoninkiusaus-juuriselleri": "paaruoat", "okonomiyaki-kaaliletut": "paaruoat",
+  "valimerellinen-ricotta-persikkakulho": "aamupalat", "paneer-tikka": "alkuruoat",
+  "meksikolainen-huevos-a-la-mexicana": "aamupalat",
   "thai-kookosriisi-mangolla": "aamupalat", "korealainen-bataatti-riisikulho": "aamupalat",
   "meksikolainen-quesadilla-sienilla": "aamupalat", "valimerellinen-appelsiini-aamiaiskakku": "aamupalat",
   "vietnamilainen-banh-bao-kananmunalla": "aamupalat", "japanilainen-dashimaki-tamago-aamiaislautasella": "aamupalat",
@@ -291,12 +307,28 @@ const publicResults = results.flatMap((result) => {
       note: "This is a site-specific calculation convention, not a measured GI value. No ingredient reaches the 1 g available-carbohydrate threshold in this recipe.",
     });
   }
+  const incompleteReasons = result.blockers.map((blocker) => {
+    const detail = blocker.startsWith(`${result.recipeId}: `) ? blocker.slice(result.recipeId.length + 2) : blocker;
+    const separator = detail.indexOf(": ");
+    const ingredient = separator >= 0 ? detail.slice(0, separator) : "";
+    const reason = separator >= 0 ? detail.slice(separator + 2) : detail;
+    const category = /GI/i.test(reason) ? "GI"
+      : /food-specific mass conversion|food-specific.*mass|portion mass|gram conversion/i.test(reason) ? "PORTION"
+      : /allows materially different|alternative|selected liquid|variant/i.test(reason) ? "VARIANT"
+      : /amount|quantity|mass is missing|unweighed|implausible|unit or decimal/i.test(reason) ? "AMOUNT"
+      : "SOURCE";
+    const ingredientIndex = recipe.ingredients.findIndex((entry) => entry.item === ingredient);
+    const translations = siteContent.recipes.filter((entry) => entry.recipeId === result.recipeId);
+    const ingredientNames = Object.fromEntries(translations.map((entry) => [entry.locale, ingredientIndex >= 0 ? entry.ingredients[ingredientIndex]?.item : undefined]));
+    return { ingredientIndex, ingredientNames, category };
+  });
   return {
     recipeId: result.recipeId,
     title: recipe.title,
     routePath: recipe.routePath,
     localeRoutes: Object.fromEntries(siteContent.recipes.filter((entry) => entry.recipeId === result.recipeId).map((entry) => [entry.locale, { title: entry.title, routePath: entry.routePath }])),
     status: result.status,
+    incompleteReasons,
     glycemicLoadPerServing: result.glycemicLoadPerServing,
     glycemicLoadRangePerServing: result.glycemicLoadRangePerServing,
     confidence: result.confidence,
@@ -317,6 +349,6 @@ const expectedPublicResultCount = expectedRecipeIds.length - 1;
 if (!isFixtureBuild && publicResults.length !== expectedPublicResultCount) {
   throw new Error(`Production GL pilot page must include all ${expectedPublicResultCount} publishable entries.`);
 }
-const publicModule = `/* Generated by scripts/glycemic-load-pilot.ts. Public-safe summary only. */\nexport interface GlycemicLoadPilotPublicResult { recipeId: string; title: string; routePath: string; localeRoutes: Partial<Record<"fi" | "en" | "sv" | "th", { title: string; routePath: string }>>; status: "CALCULATED" | "INSUFFICIENT SOURCE DATA"; glycemicLoadPerServing: number | null; glycemicLoadRangePerServing: { min: number; max: number } | null; confidence: "HIGH" | "MEDIUM" | "LOW" | null; carbohydrateSources: Array<{ title: string; url: string; note: string }>; sourceReferences: Array<{ title: string; url: string; matchKind: "EXACT" | "ANALOG" | "CATEGORY_MEAN" | "CALCULATION_POLICY"; confidence: "HIGH" | "MEDIUM" | "LOW"; note: string }>; }\nexport const glycemicLoadPilotResults: GlycemicLoadPilotPublicResult[] = ${JSON.stringify(publicResults, null, 2)};\n`;
+const publicModule = `/* Generated by scripts/glycemic-load-pilot.ts. Public-safe summary only. */\nexport interface GlycemicLoadPilotPublicResult { recipeId: string; title: string; routePath: string; localeRoutes: Partial<Record<"fi" | "en" | "sv" | "th", { title: string; routePath: string }>>; status: "CALCULATED" | "INSUFFICIENT SOURCE DATA"; incompleteReasons: Array<{ ingredientIndex: number; ingredientNames: Partial<Record<"fi" | "en" | "sv" | "th", string>>; category: "GI" | "SOURCE" | "PORTION" | "VARIANT" | "AMOUNT" }>; glycemicLoadPerServing: number | null; glycemicLoadRangePerServing: { min: number; max: number } | null; confidence: "HIGH" | "MEDIUM" | "LOW" | null; carbohydrateSources: Array<{ title: string; url: string; note: string }>; sourceReferences: Array<{ title: string; url: string; matchKind: "EXACT" | "ANALOG" | "CATEGORY_MEAN" | "CALCULATION_POLICY"; confidence: "HIGH" | "MEDIUM" | "LOW"; note: string }>; }\nexport const glycemicLoadPilotReviewedRecipeCount = ${expectedRecipeIds.length};\nexport const glycemicLoadPilotResults: GlycemicLoadPilotPublicResult[] = ${JSON.stringify(publicResults, null, 2)};\n`;
 await writeFile(path.join(siteDir, "src/generated/glycemic-load-pilot.generated.ts"), publicModule, "utf8");
 console.log(JSON.stringify({ ...report.summary, output: path.relative(root, outputPath), blockers: results.map((result) => ({ recipeId: result.recipeId, count: result.blockers.length })) }, null, 2));

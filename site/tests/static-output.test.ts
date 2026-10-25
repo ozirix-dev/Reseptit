@@ -86,7 +86,7 @@ test("recipe index is prerendered and links only published languages", async () 
 });
 
 test("GK values link to centralized recipe details on every published translation", async () => {
-  assert.equal(glycemicLoadPilotResults.length, 280);
+  assert.equal(glycemicLoadPilotResults.length, 300);
   const batch13Ids = [
     "karibia-bammy-kassavaleipa", "kiinalainen-musta-seesamipuuro", "meksikolainen-munakokkeli-pico-de-gallolla",
     "karibia-mango-limejogurtti", "thai-papaijajogurtti", "intialainen-pinaatti-paneer-chilla",
@@ -102,6 +102,28 @@ test("GK values link to centralized recipe details on every published translatio
     ["karibia-mango-limejogurtti", 7.3],
   ]);
   assert.equal(batch13Results.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 18);
+  const batch14Ids = [
+    "vietnamilainen-papaija-kookospuuro", "japanilainen-tamago-kake-gohan", "indonesialainen-tempeh-munakulho",
+    "lahi-ita-zaatar-munat", "keto-joulutortut", "vietnamilainen-kahvijogurtti-banaanilla",
+    "valimerellinen-jogurttikulho-hunajalla", "kiinalainen-soijamaito-aamiaisella", "thai-kananmunat-kookoscurryssa",
+    "japanilainen-miso-tofu-paksoi", "japanilainen-curry-tofulla", "kanaviillokki-kukkakaalilla",
+    "kookos-lime-kanacurry", "kimchi-jjigae", "sate-ayam", "janssoninkiusaus-juuriselleri", "okonomiyaki-kaaliletut",
+    "valimerellinen-ricotta-persikkakulho", "paneer-tikka", "meksikolainen-huevos-a-la-mexicana",
+  ];
+  const batch14Results = glycemicLoadPilotResults.filter((result) => batch14Ids.includes(result.recipeId));
+  assert.equal(batch14Results.length, 20);
+  const calculatedBatch14 = batch14Results.filter((result) => result.status === "CALCULATED");
+  assert.deepEqual(calculatedBatch14.map((result) => [result.recipeId, result.glycemicLoadPerServing]), [
+    ["lahi-ita-zaatar-munat", 15.62],
+    ["keto-joulutortut", 1.74],
+    ["valimerellinen-jogurttikulho-hunajalla", 5.99],
+    ["kiinalainen-soijamaito-aamiaisella", 0.67],
+    ["kanaviillokki-kukkakaalilla", 7.57],
+    ["valimerellinen-ricotta-persikkakulho", 4.08],
+    ["paneer-tikka", 3.01],
+    ["meksikolainen-huevos-a-la-mexicana", 0.67],
+  ]);
+  assert.equal(batch14Results.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 12);
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
     assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);
@@ -121,6 +143,15 @@ test("GK values link to centralized recipe details on every published translatio
         assert.ok(!html.includes(recipeUi[recipe.locale].glycemicLoad), `${result.recipeId}/${recipe.locale}: incomplete GK stays hidden`);
       }
     }
+  }
+  const noriBlocker = glycemicLoadPilotResults.find((result) => result.recipeId === "japanilainen-tamago-kake-gohan");
+  assert.ok(noriBlocker?.incompleteReasons.length, "incomplete recipe includes a structured reason");
+  const methodPagePaths = { fi: "glykeeminen-kuorma", en: "en/glycemic-load", sv: "sv/glykemisk-belastning", th: "th/glycemic-load" };
+  const labels = { fi: "Miksi kokonaisarviota ei ole?", en: "Why is there no total estimate?", sv: "Varför saknas ett totalvärde?", th: "เหตุใดจึงไม่มีค่าประมาณรวม" };
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const html = await readFile(path.join(dist, methodPagePaths[locale], "index.html"), "utf8");
+    const resultStart = html.indexOf('id="japanilainen-tamago-kake-gohan"');
+    assert.ok(resultStart >= 0 && html.slice(resultStart, resultStart + 1_500).includes(labels[locale]), `${locale}: missing-result explanation is localized`);
   }
   const massaman = glycemicLoadPilotResults.find((result) => result.recipeId === "massaman-curry-kanalla-vhh");
   assert.deepEqual(massaman?.glycemicLoadRangePerServing, { min: 5.17, max: 6.06 });
