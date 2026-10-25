@@ -153,6 +153,10 @@ test("batch 2A preserves its starting overlap audit and only accepts reviewed cu
   assert.deepEqual(inputById.get("meksikolainen-quesadilla-sienilla")?.get("maissi")?.recipeQuantity, { amount: 80, unit: "g", massGrams: 80 });
   assert.deepEqual(inputById.get("indonesialainen-bakwan-maissifritter")?.get("maissi")?.recipeQuantity, { amount: 100, unit: "g", massGrams: 100 });
   assert.equal(inputById.get("malesialainen-nasi-lemak-aamiaisella")?.get("kookosmaito")?.grams, null);
+  assert.equal(inputById.get("malesialainen-nasi-lemak-aamiaisella")?.get("kookosmaito")?.fineliRecordId, null);
+  assert.deepEqual(inputById.get("malesialainen-nasi-lemak-aamiaisella")?.get("kookosmaito")?.recipeQuantity, { amount: 200, unit: "ml", massGrams: null });
+  assert.equal(inputById.get("thai-kookosriisi-mangolla")?.get("kookosmaito")?.fineliRecordId, null);
+  assert.deepEqual(inputById.get("thai-kookosriisi-mangolla")?.get("kookosmaito")?.recipeQuantity, { amount: 200, unit: "ml", massGrams: null });
   assert.equal(inputById.get("valimerellinen-farinata-aamupalaksi")?.get("rosmariini")?.estimatedAvailableCarbohydratePerServingG, undefined);
   assert.equal(inputById.get("valimerellinen-farinata-aamupalaksi")?.get("rosmariini")?.availableCarbohydrateUpperBoundPerServingG, 0.1035);
   assert.equal(current.recipes.find((row) => row.recipeId === "meksikolainen-quesadilla-sienilla")?.status, "INSUFFICIENT SOURCE DATA");
@@ -173,7 +177,7 @@ test("batch 2B1 baseline and current inventory are separate complete 325-recipe 
   assert.deepEqual([baseline.recipeCount, baseline.calculated, baseline.incomplete, baseline.giRecordCount], [325, 117, 208, 38]);
   assert.equal(current.previousApprovedBaseline.sourceCommit, baseline.sourceCommit);
   assert.deepEqual([current.currentSummary.recipeCount, current.currentSummary.calculated, current.currentSummary.incomplete, current.currentSummary.giRecordCount], [325, 117, 208, 38]);
-  assert.deepEqual([current.currentSummary.newlyCalculated, current.currentSummary.newlyBlocked, current.currentSummary.changedBlockerRecipes], [0, 0, 2]);
+  assert.deepEqual([current.currentSummary.newlyCalculated, current.currentSummary.newlyBlocked, current.currentSummary.changedBlockerRecipes], [0, 0, 3]);
   assert.equal(current.currentSummary.newInputMismatches, 0);
   assert.equal(current.currentSummary.newEvidenceMismatches, 0);
   for (const id of ["meksikolainen-quesadilla-sienilla", "indonesialainen-bakwan-maissifritter", "malesialainen-nasi-lemak-aamiaisella", "thai-kookosriisi-mangolla", "pohjoisafrikkalainen-harissa-shakshuka", "valimerellinen-farinata-aamupalaksi"]) {

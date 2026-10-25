@@ -15536,10 +15536,11 @@
         {
           "name": "kookosmaito",
           "grams": null,
-          "fineliRecordId": "afcd-F002991-release-3",
+        "recipeQuantity": { "amount": 200, "unit": "ml", "massGrams": null },
+        "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 200 ml canned coconut milk; mass conversion unresolved.",
-          "excludedReason": "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g."
+        "massEvidence": "Recipe-listed 200 ml coconut milk. The recipe does not specify canned coconut milk versus a coconut drink or full-fat versus reduced-fat product; ingredient identity and mass conversion remain unresolved.",
+        "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
         },
         {
           "name": "mango",
@@ -16961,10 +16962,11 @@
         {
           "name": "kookosmaito",
           "grams": null,
-          "fineliRecordId": "afcd-F002991-release-3",
+        "recipeQuantity": { "amount": 200, "unit": "ml", "massGrams": null },
+        "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 200 ml canned coconut milk; mass conversion unresolved.",
-          "excludedReason": "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g."
+        "massEvidence": "Recipe-listed 200 ml coconut milk. The recipe does not specify canned coconut milk versus a coconut drink or full-fat versus reduced-fat product; ingredient identity and mass conversion remain unresolved.",
+        "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
         },
         {
           "name": "kananmuna",
