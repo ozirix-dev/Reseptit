@@ -12,24 +12,24 @@ main_ingredient:
 cooking_method:
   - "paistaminen"
 ingredients:
-  - amount: 1
-    unit: "kpl"
-    item: "kassava"
+  - amount: 250
+    unit: g
+    item: kuorittua tuoretta kassavaa
   - amount: 200
-    unit: "ml"
-    item: "kookosmaito"
+    unit: ml
+    item: kookosmaito
+  - amount: 100
+    unit: g
+    item: kuorittua avokadoa
+  - amount: 15
+    unit: g
+    item: limettimehua
   - amount: 1
-    unit: "kpl"
-    item: "avokado"
-  - amount: 1
-    unit: "kpl"
-    item: "lime"
-  - amount: 1
-    unit: "rkl"
-    item: "neutraalia paistoöljyä"
+    unit: rkl
+    item: neutraalia paistoöljyä
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -42,6 +42,11 @@ image:
   alt: "Bammy-kassavaleipä avokadolla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 40.04
+carbs_total_per_serving_g: 47.86
+protein_per_serving_g: 4.04
+fat_per_serving_g: 30.87
+
 ---
 
 # Bammy-kassavaleipä avokadolla
@@ -59,4 +64,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.
 2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.
 3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.
-4. Paista kassavaleipä pannulla pehmeäksi ja tarjoa avokadon sekä limetin kanssa.
+4. Raasta kuorittu kassava hienoksi, purista siitä ylimääräinen neste ja sekoita kookosmaitoon. Muotoile kahdeksi litteäksi leiväksi ja paista öljytyllä pannulla molemmin puolin kypsäksi. Tarjoa avokadon ja limettimehun kanssa.

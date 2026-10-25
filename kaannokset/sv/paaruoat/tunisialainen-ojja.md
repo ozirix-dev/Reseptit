@@ -25,22 +25,22 @@ image:
   height: 853
 ingredients:
   - amount: 1
-    unit: st
+    unit: kpl
     item: lök
-    note: "finhackad"
-  - amount: 1
-    unit: st
+    note: finhackad
+  - amount: 150
+    unit: g
     item: röd paprika
-    note: "tärnad"
+    note: tärnad
   - amount: 2
-    unit: st
+    unit: kpl
     item: en vitlöksklyfta
     note: strimlad
   - amount: 400
     unit: g
     item: krossade tomater
   - amount: 1
-    unit: msk
+    unit: tsk
     item: harissa
   - amount: 1
     unit: tsk
@@ -49,7 +49,7 @@ ingredients:
     unit: msk
     item: olivolja
   - amount: 4
-    unit: st
+    unit: kpl
     item: ägg
   - amount: 0.5
     unit: tsk
@@ -58,13 +58,17 @@ ingredients:
     unit: g
     item: färsk persilja
     note: strimlad
-  - amount: 4
-    unit: skivor
+  - amount: 160
+    unit: g
     item: lantbröd
     note: för servering
 source_language: fi
 source_recipe: reseptit/paaruoat/tunisialainen-ojja.md
 translation_of: tunisialainen-ojja
+carbs_net_per_serving_g: 26.41
+carbs_total_per_serving_g: 29.16
+protein_per_serving_g: 11.65
+fat_per_serving_g: 9.35
 ---
 
 # Tunisisk ojja med harissa och ägg

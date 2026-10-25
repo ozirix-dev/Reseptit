@@ -12,21 +12,21 @@ main_ingredient:
 cooking_method:
   - "paistaminen"
 ingredients:
-  - amount: 100
-    unit: "g"
-    item: "jogurtti"
+  - amount: 200
+    unit: g
+    item: jogurttia
   - amount: 150
-    unit: "g"
-    item: "persimon"
-  - amount: 150
-    unit: "g"
-    item: "hojicha"
-  - amount: 100
-    unit: "g"
-    item: "seesaminsiemen"
+    unit: g
+    item: persimon
+  - amount: 2
+    unit: g
+    item: hojicha-teetä
+  - amount: 5
+    unit: g
+    item: seesaminsiemeniä
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -39,6 +39,11 @@ image:
   alt: "Hojicha-jogurtti persimonilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 17.03
+carbs_total_per_serving_g: 19.34
+protein_per_serving_g: 4.26
+fat_per_serving_g: 4.07
+
 ---
 
 # Hojicha-jogurtti persimonilla
@@ -56,4 +61,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Valmistele kulhon ainekset; kypsennä pavut tai proteiini, jos käytät niitä kuivina tai raakana. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
 2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
 3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Sekoita hienoksi jauhettua hojichaa jogurttiin ja lisää persimonviipaleet.
+4. Jauha hojicha hienoksi tai hauduta siitä vahva tee ja jäähdytä. Annostele jogurtti kulhoihin, lisää viipaloitu persimon, hojicha ja seesaminsiemenet. Tarjoa heti.

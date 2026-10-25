@@ -13,23 +13,26 @@ cooking_method:
   - "paistaminen"
 ingredients:
   - amount: 100
-    unit: "g"
-    item: "kikhernejauho"
-  - amount: 150
-    unit: "g"
-    item: "oliivi"
+    unit: g
+    item: kikhernejauho
+  - amount: 25
+    unit: g
+    item: vihreitä oliiveja
+  - amount: 100
+    unit: g
+    item: tomaattia
   - amount: 1
-    unit: "kpl"
-    item: "tomaatti"
-  - amount: 150
-    unit: "g"
-    item: "rosmariini"
+    unit: g
+    item: tuoretta rosmariinia
   - amount: 1
-    unit: "rkl"
-    item: "neutraalia paistoöljyä"
+    unit: rkl
+    item: neutraalia paistoöljyä
+  - amount: 150
+    unit: ml
+    item: vettä
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -42,6 +45,11 @@ image:
   alt: "Kikhernepannukakku tomaattioliiveilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 20.98
+carbs_total_per_serving_g: 31.98
+protein_per_serving_g: 10.4
+fat_per_serving_g: 12.36
+
 ---
 
 # Kikhernepannukakku tomaattioliiveilla
@@ -59,4 +67,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.
 2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.
 3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.
-4. Paista ohueksi pannukakuksi ja tarjoa tomaattien sekä oliivien kanssa.
+4. Vatkaa kikhernejauho ja vesi tasaiseksi taikinaksi ja anna levätä 20 minuuttia. Lisää hienonnettu rosmariini ja kaada öljyttyyn vuokaan. Lisää viipaloidut oliivit ja tomaatti. Paista 220-asteisessa uunissa, kunnes pinta on kullanruskea ja keskusta hyytynyt.

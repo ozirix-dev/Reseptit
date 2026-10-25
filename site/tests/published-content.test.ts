@@ -75,6 +75,14 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
   assert.equal(breakfast.length, 150);
   assert.equal(desserts.length, 10);
   const documentedBreakfastNetCarbs = new Map([
+    ["indonesialainen-ketoprak-aamiaiskulho", 44.21], ["indonesialainen-pisang-goreng-aamiaiseksi", 63.85],
+    ["indonesialainen-serabi-kookospannukakku", 57.3], ["japanilainen-onigiri-lohella", 37.06],
+    ["japanilainen-tamago-kake-gohan", 38.04], ["japanilainen-kabocha-puuro", 47.22],
+    ["karibia-bammy-kassavaleipa", 40.04], ["kiinalainen-soijamaito-aamiaisella", 1.31],
+    ["lahi-ita-manakish-zaatarilla", 57.49], ["malesialainen-kaya-paahtoleipa", 36.59],
+    ["japanilainen-hojicha-jogurtti-persimonilla", 17.03], ["meksikolainen-quesadilla-sienilla", 32.94],
+    ["pohjoisafrikkalainen-harissa-shakshuka", 5.7], ["valimerellinen-farinata-aamupalaksi", 20.98],
+    ["valimerellinen-halloumi-tomaattileipa", 27.58], ["keto-joulutortut", 3.44],
     ["munakokkeli", 0.8],
     ["munakasmuffinit", 0.6],
     ["munakasrulla-pinaatti-tuorejuustolla", 2.1],
@@ -218,6 +226,7 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
     assert.ok(recipe.ingredients.every(ingredient => !/kananmuna/i.test(ingredient.item)), "breakfast recipes are egg-free");
   }
   const documentedNetCarbs = new Map([
+    ["kreikkalainen-kanavuoka-oliiveilla", 4.1], ["hunaja-sinappikana-kaalilla", 12.22],
     ["marjainen-chiavanukas", 3.51], ["kaakao-kookos-chia", 2.53],
     ["rahka-marjakerroskulho", 6.32], ["savulohi-avokadokulho", 0.89],
     ["kurkku-oliivi-aamiaiskulho", 2.07], ["paahdettu-aamiaismunakoiso", 4.35],

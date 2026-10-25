@@ -1,0 +1,214 @@
+{
+  "recipeId": "indonesialainen-ketoprak-aamiaiskulho",
+  "sourceHash": "c1d647581a6200e6d6df55665eebce6775647a8326352e118b2b0d656028adc2",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-17",
+  "servings": 2,
+  "scope": "2 servings; measured ingredient quantities as listed: 100 g tofu; 100 g kuivia riisinuudeleita; 150 g pavunitu; 35 g maapähkinöitä; 30 ml vettä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "tofu",
+      "amount": 100,
+      "unit": "g",
+      "state": "firm tofu as purchased",
+      "matchEvidence": "AFCD Release 3 record F009176 is firm tofu as purchased.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F009176-release-3",
+        "name": "Tofu (soy bean curd), firm, as purchased",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "firm tofu as purchased",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 1,
+          "polyols": 0,
+          "protein": 12.8,
+          "fat": 8.3
+        }
+      }
+    },
+    {
+      "item": "kuivia riisinuudeleita",
+      "amount": 100,
+      "unit": "g",
+      "state": "dry rice noodles",
+      "matchEvidence": "Fineli Release 20 record 29055 is rice noodles; the listed amount is dry weight.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-29055-release-20",
+        "name": "NUUDELI, RIISINUUDELI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29055",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "dry rice noodles",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 81.64,
+          "FIBT": 2.07,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 81.64,
+          "fibre": 2.07,
+          "polyols": 0,
+          "protein": 3.44,
+          "fat": 0.56
+        }
+      }
+    },
+    {
+      "item": "pavunitu",
+      "amount": 150,
+      "unit": "g",
+      "state": "fresh raw bean sprouts",
+      "matchEvidence": "AFCD Release 3 record F008806 is fresh raw bean sprout.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F008806-release-3",
+        "name": "Sprout, bean, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh raw bean sprouts",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "fibre": 1.3,
+          "polyols": 0,
+          "protein": 3.1,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "maapähkinöitä",
+      "amount": 35,
+      "unit": "g",
+      "state": "raw peanuts",
+      "matchEvidence": "Fineli Release 20 record 378 is peanuts; roasting without added oil does not materially change the macronutrient basis.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-378-release-20",
+        "name": "PÄHKINÄ, MAAPÄHKINÄ",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/378",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw peanuts",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 12.5,
+          "FIBT": 8.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 12.5,
+          "fibre": 8.1,
+          "polyols": 0,
+          "protein": 25.6,
+          "fat": 43
+        }
+      }
+    },
+    {
+      "item": "vettä",
+      "amount": 30,
+      "unit": "ml",
+      "state": "plain tap water",
+      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Water is represented at 1 g/ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "salt omitted; no contribution to displayed macronutrients",
+      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+    }
+  ]
+}

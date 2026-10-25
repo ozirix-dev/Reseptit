@@ -18,6 +18,7 @@ type BatchPlan = {
   recipes: { recipeId: string; scope: string; ingredients?: IngredientPlan[] }[];
 };
 const root = path.resolve(import.meta.dirname, "../..");
+const MAX_RECIPES_PER_BATCH = 40;
 
 async function json<T>(relative: string): Promise<T> {
   return JSON.parse(await readFile(path.join(root, relative), "utf8")) as T;
@@ -62,7 +63,7 @@ const inputPath = process.argv[2];
 if (!inputPath) throw new Error("Usage: tsx scripts/nutrition-batch-builder.ts <batch-plan.json>");
 const plan = JSON.parse(await readFile(path.resolve(root, inputPath), "utf8")) as BatchPlan;
 const refreshBatch = process.argv.includes("--refresh-batch");
-if (!/^batch-\d+$/.test(plan.batchId) || plan.recipes.length < 1 || plan.recipes.length > 20) throw new Error("A nutrition batch must contain 1–20 recipes and a batch-N id");
+if (!/^batch-\d+$/.test(plan.batchId) || plan.recipes.length < 1 || plan.recipes.length > MAX_RECIPES_PER_BATCH) throw new Error(`A nutrition batch must contain 1–${MAX_RECIPES_PER_BATCH} recipes and a batch-N id`);
 if (path.resolve(root, inputPath) !== path.join(root, "docs/nutrition/batches", `${plan.batchId}.json`)) throw new Error(`Batch plan must be stored at docs/nutrition/batches/${plan.batchId}.json so the audit can verify batch membership`);
 if (new Set(plan.recipes.map((recipe) => recipe.recipeId)).size !== plan.recipes.length) throw new Error("Duplicate recipe IDs in batch plan");
 const [audit, fineliData, afcdData, productRecords] = await Promise.all([

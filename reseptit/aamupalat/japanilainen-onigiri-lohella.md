@@ -13,20 +13,20 @@ cooking_method:
   - "paistaminen"
 ingredients:
   - amount: 100
-    unit: "g"
-    item: "riisi"
+    unit: g
+    item: riisi
   - amount: 150
-    unit: "g"
-    item: "lohi"
-  - amount: 150
-    unit: "g"
-    item: "nori"
-  - amount: 100
-    unit: "g"
-    item: "seesaminsiemen"
+    unit: g
+    item: lohi
+  - amount: 3
+    unit: g
+    item: kuivattua norilevää
+  - amount: 5
+    unit: g
+    item: seesaminsiemeniä
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -39,6 +39,11 @@ image:
   alt: "Onigiri lohella ja seesamilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 37.06
+carbs_total_per_serving_g: 38.26
+protein_per_serving_g: 13.93
+fat_per_serving_g: 8.59
+
 ---
 
 # Onigiri lohella ja seesamilla
@@ -56,4 +61,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
 2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
 3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Muotoile maustetusta riisistä kolmioita lohitäytteellä ja kääri nori ympärille.
+4. Huuhtele riisi ja kypsennä se. Kypsennä lohi pannulla ja hiutaloi. Jaa lämmin riisi kahteen osaan, täytä lohella ja muotoile tiiviiksi kolmionmuotoisiksi riisipalloiksi. Kääri pienet norileväsuikaleet ympärille ja viimeistele seesaminsiemenillä.

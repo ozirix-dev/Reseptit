@@ -12,24 +12,30 @@ main_ingredient:
 cooking_method:
   - "paistaminen"
 ingredients:
+  - amount: 150
+    unit: g
+    item: vehnäjauhoja
+  - amount: 2
+    unit: g
+    item: kuivattua timjamia
+  - amount: 1
+    unit: rkl
+    item: oliiviöljy
   - amount: 100
-    unit: "g"
-    item: "vehnäjauho"
+    unit: g
+    item: jogurtti
   - amount: 1
-    unit: "tl"
-    item: "zaatar"
-  - amount: 1
-    unit: "rkl"
-    item: "oliiviöljy"
-  - amount: 100
-    unit: "g"
-    item: "jogurtti"
-  - amount: 1
-    unit: "rkl"
-    item: "neutraalia paistoöljyä"
+    unit: rkl
+    item: neutraalia paistoöljyä
+  - amount: 3
+    unit: g
+    item: seesaminsiemeniä
+  - amount: 40
+    unit: ml
+    item: vettä
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -42,6 +48,11 @@ image:
   alt: "Manakish za’atarilla aamiaiseksi tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 57.49
+carbs_total_per_serving_g: 60.65
+protein_per_serving_g: 10.66
+fat_per_serving_g: 17.58
+
 ---
 
 # Manakish za’atarilla aamiaiseksi
@@ -59,4 +70,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.
 2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.
 3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.
-4. Levitä za’atar-öljy taikinapohjalle ja paista kuumassa uunissa kypsäksi.
+4. Sekoita vehnäjauho, jogurtti ja vesi pehmeäksi taikinaksi. Jaa kahdeksi litteäksi leiväksi. Sekoita oliiviöljy, kuivattu timjami ja seesaminsiemenet ja levitä leipien päälle. Paista kuumalla pannulla tai uunissa, kunnes reunat ovat kypsiä.

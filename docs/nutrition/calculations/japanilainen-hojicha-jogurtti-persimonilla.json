@@ -1,0 +1,162 @@
+{
+  "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+  "sourceHash": "54050eeb7635e42607dce5bbbccd42016606f17322eb22efde9ee36db04114db",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-17",
+  "servings": 2,
+  "scope": "2 servings; measured ingredient quantities as listed: 200 g jogurttia; 150 g persimon; 2 g hojicha-teetä; 5 g seesaminsiemeniä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "jogurttia",
+      "amount": 200,
+      "unit": "g",
+      "state": "plain unsweetened yogurt, 2.5% fat",
+      "matchEvidence": "Fineli Release 20 record 619 is plain unsweetened yogurt.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-619-release-20",
+        "name": "JOGURTTI, MAUSTAMATON, RASVAA 2,5 %, VL",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/619",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain unsweetened yogurt, 2.5% fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 5,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 5,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3.19,
+          "fat": 2.5
+        }
+      }
+    },
+    {
+      "item": "persimon",
+      "amount": 150,
+      "unit": "g",
+      "state": "raw persimmon fruit",
+      "matchEvidence": "AFCD Release 3 F006628 is persimmon, matching the fresh fruit in the recipe.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006628-release-3",
+        "name": "Persimmon, peeled, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw persimmon fruit",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 16,
+          "fibre": 2.7,
+          "polyols": 0,
+          "protein": 0.6,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "hojicha-teetä",
+      "amount": 2,
+      "unit": "g",
+      "state": "small hojicha tea seasoning omitted under conservative bound",
+      "matchEvidence": "Two grams of hojicha are used as a tea seasoning; no matching local food-composition record is available.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Small tea seasoning omission.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 2,
+        "netCarbohydrate": 0.4,
+        "totalCarbohydrate": 0.5,
+        "protein": 0.1,
+        "fat": 0.1
+      },
+      "omissionImpactEvidence": "One gram per serving; conservative bound under agreed small-ingredient tolerance."
+    },
+    {
+      "item": "seesaminsiemeniä",
+      "amount": 5,
+      "unit": "g",
+      "state": "hulled white sesame seeds",
+      "matchEvidence": "Fineli Release 20 record 34245 is whole hulled white sesame seeds; black variety is not separated in the reference.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-34245-release-20",
+        "name": "SEESAMINSIEMEN, VALKOINEN, KOKONAINEN, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34245",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "hulled white sesame seeds",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.171,
+          "FIBT": 11.3,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.171,
+          "fibre": 11.3,
+          "polyols": 0,
+          "protein": 24.6,
+          "fat": 59.7
+        }
+      }
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "salt omitted; no contribution to displayed macronutrients",
+      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+    }
+  ]
+}

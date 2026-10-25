@@ -25,22 +25,22 @@ image:
   height: 853
 ingredients:
   - amount: 1
-    unit: piece
+    unit: kpl
     item: onion
-    note: "finely chopped"
-  - amount: 1
-    unit: piece
+    note: finely chopped
+  - amount: 150
+    unit: g
     item: red bell pepper
-    note: "diced"
+    note: diced
   - amount: 2
-    unit: piece
+    unit: kpl
     item: a clove of garlic
     note: shredded
   - amount: 400
     unit: g
     item: crushed tomatoes
   - amount: 1
-    unit: tbsp
+    unit: tsp
     item: harissa
   - amount: 1
     unit: tsp
@@ -49,7 +49,7 @@ ingredients:
     unit: tbsp
     item: olive oil
   - amount: 4
-    unit: piece
+    unit: kpl
     item: egg
   - amount: 0.5
     unit: tsp
@@ -58,13 +58,17 @@ ingredients:
     unit: g
     item: fresh parsley
     note: shredded
-  - amount: 4
-    unit: slices
+  - amount: 160
+    unit: g
     item: country bread
     note: for serving
 source_language: fi
 source_recipe: reseptit/paaruoat/tunisialainen-ojja.md
 translation_of: tunisialainen-ojja
+carbs_net_per_serving_g: 26.41
+carbs_total_per_serving_g: 29.16
+protein_per_serving_g: 11.65
+fat_per_serving_g: 9.35
 ---
 
 # Tunisian ojja with harissa and eggs

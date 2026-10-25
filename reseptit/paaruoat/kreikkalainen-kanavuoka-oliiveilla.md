@@ -17,13 +17,13 @@ tags:
 ingredients:
   - amount: 600
     unit: g
-    item: broilerin reisipaloja
+    item: nahatonta broilerin reisilihaa
   - amount: 250
     unit: g
     item: kirsikkatomaatteja
-  - amount: 1
-    unit: kpl
-    item: punasipuli
+  - amount: 100
+    unit: g
+    item: punasipulia
   - amount: 100
     unit: g
     item: fetajuustoa
@@ -36,9 +36,9 @@ ingredients:
   - amount: 1
     unit: tl
     item: kuivattua oreganoa
-  - amount: 1
-    unit: kpl
-    item: sitruuna
+  - amount: 30
+    unit: g
+    item: sitruunamehua
   - amount: null
     unit: ""
     item: suolaa ja mustapippuria
@@ -50,6 +50,11 @@ image:
   alt: Kreikkalainen kanavuoka oliiveilla tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 4.1
+carbs_total_per_serving_g: 6.16
+protein_per_serving_g: 34.49
+fat_per_serving_g: 20.81
+
 ---
 # Kreikkalainen kanavuoka oliiveilla
 
@@ -66,7 +71,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Kuumenna uuni 200 asteeseen. Laita broileri uunivuokaan ja mausta suolalla, pippurilla ja oreganolla.
 2. Lisää puolitetut tomaatit, lohkottu punasipuli ja oliivit. Valuta päälle oliiviöljy ja sitruunamehu.
 3. Paista 30–35 minuuttia, kunnes broileri on kypsää. Murustele feta pinnalle viimeiseksi 10 minuutiksi.
-4. Tarkista broilerin kypsyys paksuimmasta kohdasta. Anna vetäytyä 5 minuuttia.
+4. Leikkaa broileri ja punasipuli paloiksi. Yhdistä uunivuokaan broilerin, tomaattien, oliivien, oliiviöljyn, oreganon ja sitruunamehun kanssa. Paista, kunnes broileri on kypsää. Murenna feta päälle vasta kypsennyksen lopussa.
 
 ## Muistiinpanot
 

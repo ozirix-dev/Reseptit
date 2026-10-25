@@ -31,14 +31,18 @@ ingredients:
     unit: g
     item: cream cheese
   - amount: 1
-    unit: ""
+    unit: kpl
     item: egg
-  - amount: 8
-    unit: tsp
+  - amount: 40
+    unit: g
     item: plum jam
 source_language: fi
 source_recipe: reseptit/leivonnaiset/keto-joulutortut.md
 translation_of: keto-joulutortut
+carbs_net_per_serving_g: 3.44
+carbs_total_per_serving_g: 5.57
+protein_per_serving_g: 7.53
+fat_per_serving_g: 24.28
 ---
 
 # Almond flour Christmas star pastries

@@ -1,0 +1,270 @@
+{
+  "recipeId": "hunaja-sinappikana-kaalilla",
+  "sourceHash": "97a58846bfd2ca57020650353dc1b9fd50ec5f23022778ca8a78a6a7ddbe58c0",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-17",
+  "servings": 4,
+  "scope": "4 servings; measured ingredient quantities as listed: 600 g nahatonta broilerin reisilihaa; 600 g valkokaalia; 2 rkl Dijon-sinappia; 1 rkl hunajaa; 2 rkl oliiviöljyä; 1 tl valkosipulijauhetta; 1 tl paprikajauhetta; unquantified  suolaa ja mustapippuria. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "nahatonta broilerin reisilihaa",
+      "amount": 600,
+      "unit": "g",
+      "state": "raw lean skinless chicken thigh flesh, boneless edible meat",
+      "matchEvidence": "AFCD Release 3 record F002806 is raw lean chicken thigh flesh; recipe specifies boneless skinless thigh meat.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F002806-release-3",
+        "name": "Chicken, thigh, lean flesh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw lean skinless chicken thigh flesh, boneless edible meat",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 19.1,
+          "fat": 3
+        }
+      }
+    },
+    {
+      "item": "valkokaalia",
+      "amount": 600,
+      "unit": "g",
+      "state": "raw white cabbage, edible portion",
+      "matchEvidence": "Fineli Release 20 record 320 is raw white cabbage; recipe amount is weighed raw.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-320-release-20",
+        "name": "VALKOKAALI, KERÄKAALI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/320",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw white cabbage, edible portion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.97,
+          "FIBT": 2,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.97,
+          "fibre": 2,
+          "polyols": 0,
+          "protein": 1.2,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "Dijon-sinappia",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "prepared mustard, generic Finnish mustard as listed",
+      "matchEvidence": "Fineli Release 20 record 28 is prepared mustard; it is the closest local record to Dijon mustard.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "One tablespoon of prepared mustard is represented as 15 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-28-release-20",
+        "name": "SINAPPI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/28",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "prepared mustard, generic Finnish mustard as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 14.1,
+          "FIBT": 1.7,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 14.1,
+          "fibre": 1.7,
+          "polyols": 0,
+          "protein": 4.38,
+          "fat": 6
+        }
+      }
+    },
+    {
+      "item": "hunajaa",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "honey as sold",
+      "matchEvidence": "Honey; AFCD record F004380 supplies all required nutrients including paired carbohydrate values.",
+      "gramsPerUnit": 20,
+      "conversionEvidence": "Fineli honey record 4 lists 20 g per tablespoon; used only for the household-mass conversion.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F004380-release-3",
+        "name": "Honey",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "honey as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 72.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.3,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "oliiviöljyä",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "olive oil as sold",
+      "matchEvidence": "Fineli Release 20 record 536 is olive oil.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "One level tablespoon oil is standardized to 13.5 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "olive oil as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    },
+    {
+      "item": "valkosipulijauhetta",
+      "amount": 1,
+      "unit": "tl",
+      "state": "small garlic powder seasoning omitted",
+      "matchEvidence": "Two grams across four servings; conservative contribution remains below one gram per serving.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "One teaspoon of garlic powder is a small seasoning dose.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 1,
+        "netCarbohydrate": 0.2,
+        "totalCarbohydrate": 0.25,
+        "protein": 0.05,
+        "fat": 0.05
+      },
+      "omissionImpactEvidence": "Two grams across four servings; conservative contribution remains below one gram per serving."
+    },
+    {
+      "item": "paprikajauhetta",
+      "amount": 1,
+      "unit": "tl",
+      "state": "dried ground paprika",
+      "matchEvidence": "AFCD Release 3 F006316 is paprika, dry powder.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "One teaspoon ground paprika is represented as 2 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F006316-release-3",
+        "name": "Paprika, dry powder",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dried ground paprika",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 19.1,
+          "fibre": 34.9,
+          "polyols": 0,
+          "protein": 14.1,
+          "fat": 12.9
+        }
+      }
+    },
+    {
+      "item": "suolaa ja mustapippuria",
+      "amount": null,
+      "unit": "",
+      "state": "salt and a small amount of black pepper omitted",
+      "matchEvidence": "Pepper is a small seasoning; conservative per-serving upper bound remains below the agreed tolerance.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Salt has no displayed macros; one small seasoning portion of black pepper is omitted.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0.5,
+        "netCarbohydrate": 0.05,
+        "totalCarbohydrate": 0.1,
+        "protein": 0.05,
+        "fat": 0.05
+      },
+      "omissionImpactEvidence": "Pepper is a small seasoning; conservative per-serving upper bound remains below the agreed tolerance."
+    }
+  ]
+}

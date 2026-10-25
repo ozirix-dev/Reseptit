@@ -12,24 +12,27 @@ main_ingredient:
 cooking_method:
   - "paistaminen"
 ingredients:
-  - amount: 1
-    unit: "kpl"
-    item: "banaani"
+  - amount: 120
+    unit: g
+    item: kuorittua banaania
   - amount: 100
-    unit: "g"
-    item: "riisijauho"
-  - amount: 150
-    unit: "g"
-    item: "kookos"
-  - amount: 150
-    unit: "g"
-    item: "palmusokeri"
+    unit: g
+    item: riisijauho
+  - amount: 20
+    unit: g
+    item: kuivattua kookoshiutaletta
+  - amount: 25
+    unit: g
+    item: fariinisokeria
   - amount: 1
-    unit: "rkl"
-    item: "neutraalia paistoöljyä"
+    unit: rkl
+    item: neutraalia paistoöljyä
+  - amount: 75
+    unit: ml
+    item: vettä
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -42,6 +45,11 @@ image:
   alt: "Pisang goreng banaanifritterit tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 63.85
+carbs_total_per_serving_g: 67.56
+protein_per_serving_g: 5.26
+fat_per_serving_g: 14.22
+
 ---
 
 # Pisang goreng banaanifritterit
@@ -59,4 +67,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Raasta, muussaa tai hienonna pääraaka-aine. Sekoita joukkoon taikinan ainekset ja lisää vettä vain sen verran, että seos pysyy koossa.
 2. Kuumenna pannulla ohut kerros öljyä. Muotoile pieniksi pihveiksi tai lusikoi taikina pannulle.
 3. Paista keskilämmöllä molemmin puolin kypsäksi ja rapeapintaiseksi. Paista erissä, jotta pannu ei jäähdy.
-4. Kasta banaaniviipaleet kevyesti maustettuun taikinaan ja paista pinnalta kullanruskeiksi.
+4. Sekoita riisijauho, kookoshiutaleet, fariinisokeri ja vesi paksuksi taikinaksi. Viipaloi banaani, kääntele palat taikinassa ja paista öljytyssä pannussa kullanruskeiksi. Valuta talouspaperilla ja tarjoa lämpimänä.
