@@ -12088,5 +12088,319 @@
       "protein": 13,
       "fat": 36.9
     }
+  },
+  {
+    "id": "fineli-31249-release-20",
+    "name": "TEMPEH",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/31249",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "fermented soybean tempeh, as sold",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 5.5,
+      "FIBT": 4.3,
+      "POLYL": null
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "Fineli Rel20 does not report a polyol value for this food.",
+    "per100g": {
+      "carbohydrate": 5.5,
+      "fibre": 4.3,
+      "polyols": null,
+      "protein": 18.54,
+      "fat": 10.8
+    },
+    "portionMassG": {}
+  },
+  {
+    "id": "fineli-32744-release-20",
+    "name": "LUUMUMARMELADI, LUUMUHILLO",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/32744",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "plum marmalade/jam as sold",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 46.066,
+      "FIBT": 1.342,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 46.066,
+      "fibre": 1.342,
+      "polyols": 0,
+      "protein": 0.59,
+      "fat": 0.237
+    },
+    "portionMassG": {
+      "DL": 115,
+      "RKL": 17,
+      "TL": 5.5
+    }
+  },
+  {
+    "id": "fineli-930-release-20",
+    "name": "KAHVI, SUODATINKAHVIJUOMA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/930",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "brewed filter coffee",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0.3,
+      "FIBT": 0,
+      "POLYL": null
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "Fineli Rel20 does not report a polyol value for this food.",
+    "per100g": {
+      "carbohydrate": 0.3,
+      "fibre": 0,
+      "polyols": null,
+      "protein": 0.31,
+      "fat": 0.01
+    },
+    "portionMassG": {
+      "KPL_S": 70,
+      "KPL_M": 170,
+      "KPL_L": 270,
+      "DL": 100,
+      "RKL": 15,
+      "TL": 5
+    }
+  },
+  {
+    "id": "fineli-34611-release-20",
+    "name": "JOGURTTI, MAUSTAMATON, KREIKKALAINEN, RASVAA 7 %, LAKTOOSITON",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34611",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "plain Greek-style yogurt, 7% fat, lactose-free",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 2.917,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 2.917,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 8.07,
+      "fat": 7.003
+    },
+    "portionMassG": {
+      "DL": 100,
+      "RKL": 15,
+      "TL": 5
+    }
+  },
+  {
+    "id": "fineli-376-release-20",
+    "name": "PÄHKINÄ, SAKSANPÄHKINÄ",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/376",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "walnuts as sold",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 3.2,
+      "FIBT": 5.2,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 3.2,
+      "fibre": 5.2,
+      "polyols": 0,
+      "protein": 15.23,
+      "fat": 65.21
+    },
+    "portionMassG": {
+      "DL": 60,
+      "RKL": 6
+    }
+  },
+  {
+    "id": "afcd-F003834-release-3",
+    "name": "Fig, fresh, unpeeled, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "fresh raw unpeeled fig",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Available carbohydrate values with and without sugar alcohols are paired in AFCD Release 3.",
+    "per100g": {
+      "carbohydrate": 8.1,
+      "fibre": 3.3,
+      "polyols": 0,
+      "protein": 1.4,
+      "fat": 0.3
+    }
+  },
+  {
+    "id": "afcd-F009498-release-3",
+    "name": "Vinegar (except balsamic vinegar)",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "plain vinegar, excluding balsamic, as sold",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Available carbohydrate values with and without sugar alcohols are paired in AFCD Release 3.",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "fineli-29022-release-20",
+    "name": "PAPU, VIHREÄ PAPU, KEITETTY",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29022",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "boiled green beans",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 5.058,
+      "FIBT": 2.553,
+      "POLYL": null
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "Fineli Rel20 does not report a polyol value for this food.",
+    "per100g": {
+      "carbohydrate": 5.058,
+      "fibre": 2.553,
+      "polyols": null,
+      "protein": 2.18,
+      "fat": 0.278
+    },
+    "portionMassG": {
+      "DL": 55
+    }
+  },
+  {
+    "id": "afcd-F002384-release-3",
+    "name": "Celeriac, peeled, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "raw peeled celeriac",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Available carbohydrate values with and without sugar alcohols are paired in AFCD Release 3.",
+    "per100g": {
+      "carbohydrate": 5,
+      "fibre": 5.1,
+      "polyols": 2.2,
+      "protein": 1.6,
+      "fat": 0.2
+    }
+  },
+  {
+    "id": "afcd-F005441-release-3",
+    "name": "Mayonnaise, traditional (>65% fat), commercial",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "commercial traditional mayonnaise (>65% fat)",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Available carbohydrate values with and without sugar alcohols are paired in AFCD Release 3.",
+    "per100g": {
+      "carbohydrate": 8.7,
+      "fibre": 0.5,
+      "polyols": 0,
+      "protein": 0.8,
+      "fat": 67.2
+    }
+  },
+  {
+    "id": "afcd-F002488-release-3",
+    "name": "Cheese, ricotta",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "ricotta cheese as sold",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Available carbohydrate values with and without sugar alcohols are paired in AFCD Release 3.",
+    "per100g": {
+      "carbohydrate": 2.7,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 10.4,
+      "fat": 11
+    }
+  },
+  {
+    "id": "afcd-F006573-release-3",
+    "name": "Peach, yellow, unpeeled, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "fresh raw yellow peach, unpeeled",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Available carbohydrate values with and without sugar alcohols are paired in AFCD Release 3.",
+    "per100g": {
+      "carbohydrate": 8,
+      "fibre": 1.6,
+      "polyols": 0.2999999999999998,
+      "protein": 0.7,
+      "fat": 0
+    }
   }
 ]
