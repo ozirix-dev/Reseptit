@@ -14,10 +14,10 @@ cooking_method:
 ingredients:
   - amount: 150
     unit: "g"
-    item: "härkäpapu"
-  - amount: 1
-    unit: "kpl"
-    item: "sitruuna"
+    item: "kypsiä, valutettuja härkäpapuja"
+  - amount: 30
+    unit: "g"
+    item: "sitruunamehua"
   - amount: 1
     unit: "tl"
     item: "juustokumina"
@@ -42,6 +42,11 @@ image:
   alt: "Ful medames härkäpavuista tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 2.41
+carbs_total_per_serving_g: 8.38
+protein_per_serving_g: 5.89
+fat_per_serving_g: 7.36
+
 ---
 
 # Ful medames härkäpavuista

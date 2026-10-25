@@ -42,6 +42,11 @@ image:
   alt: "Za’atar-munat ja paahdettu pita tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 24.91
+carbs_total_per_serving_g: 26.07
+protein_per_serving_g: 12.18
+fat_per_serving_g: 14.26
+
 ---
 
 # Za’atar-munat ja paahdettu pita

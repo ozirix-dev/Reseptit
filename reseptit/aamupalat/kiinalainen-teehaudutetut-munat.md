@@ -16,8 +16,8 @@ ingredients:
     unit: "kpl"
     item: "kananmuna"
   - amount: 150
-    unit: "g"
-    item: "musta tee"
+    unit: "ml"
+    item: "haudutettua mustaa teetä"
   - amount: 1
     unit: "rkl"
     item: "soijakastike"
@@ -39,6 +39,11 @@ image:
   alt: "Teehaudutetut kananmunat tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 1.02
+carbs_total_per_serving_g: 1.02
+protein_per_serving_g: 7.48
+fat_per_serving_g: 5.09
+
 ---
 
 # Teehaudutetut kananmunat

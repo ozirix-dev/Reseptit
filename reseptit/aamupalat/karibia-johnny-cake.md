@@ -15,13 +15,13 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "vehnäjauho"
-  - amount: 200
+  - amount: 60
     unit: "ml"
     item: "maito"
-  - amount: 150
+  - amount: 15
     unit: "g"
     item: "voi"
-  - amount: 150
+  - amount: 5
     unit: "g"
     item: "leivinjauhe"
   - amount: 1
@@ -42,6 +42,11 @@ image:
   alt: "Johnny cake -aamiaissämpylät tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 38.99
+carbs_total_per_serving_g: 40.75
+protein_per_serving_g: 6.81
+fat_per_serving_g: 14.68
+
 ---
 
 # Johnny cake -aamiaissämpylät

@@ -42,6 +42,11 @@ image:
   alt: "Roti munalla ja banaanilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 50.17
+carbs_total_per_serving_g: 52.98
+protein_per_serving_g: 14.77
+fat_per_serving_g: 27.02
+
 ---
 
 # Roti munalla ja banaanilla

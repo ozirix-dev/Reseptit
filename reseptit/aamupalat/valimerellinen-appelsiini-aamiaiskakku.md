@@ -15,9 +15,9 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "vehnäjauho"
-  - amount: 1
-    unit: "kpl"
-    item: "appelsiini"
+  - amount: 130
+    unit: "g"
+    item: "kuorittua appelsiinia"
   - amount: 1
     unit: "rkl"
     item: "oliiviöljy"
@@ -42,6 +42,11 @@ image:
   alt: "Appelsiini-oliiviöljykakku jogurtilla tarjoiltuna aamiaisella"
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 44.48
+carbs_total_per_serving_g: 47.79
+protein_per_serving_g: 7.66
+fat_per_serving_g: 16.31
+
 ---
 
 # Appelsiini-oliiviöljykakku jogurtilla

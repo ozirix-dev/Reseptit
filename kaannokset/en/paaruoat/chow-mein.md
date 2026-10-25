@@ -25,10 +25,10 @@ image:
 ingredients:
   - amount: 300
     unit: g
-    item: egg noodles
+    item: cooked and drained egg wheat noodles
   - amount: 400
     unit: g
-    item: boneless chicken thigh fillets
+    item: boneless, skinless chicken thigh meat
     note: in thin strips
   - amount: 2
     unit: tbsp
@@ -54,13 +54,18 @@ ingredients:
   - amount: 1
     unit: tsp
     item: sesame oil
-  - amount: 2
-    unit: piece
-    item: spring onions
+  - amount: 12
+    unit: g
+    item: spring onion
     note: in slices
 source_language: fi
 source_recipe: reseptit/paaruoat/chow-mein.md
 translation_of: chow-mein
+carbs_net_per_serving_g: 27.51
+carbs_total_per_serving_g: 31.14
+protein_per_serving_g: 26.36
+fat_per_serving_g: 12.09
+
 ---
 
 # Chicken chow mein
