@@ -57,10 +57,10 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     page.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
 
     const methodPages = [
-      { path: "/glykeeminen-kuorma/", locale: "fi", title: "Glykeeminen kuorma: lähteet ja laskenta | Reseptit", description: "Reseptien glykeemisen kuorman laskentatapa, lähteet ja reseptikohtaiset oletukset." },
-      { path: "/en/glycemic-load/", locale: "en", title: "Glycemic load: sources and method | Recipes", description: "Calculation method, sources and recipe-specific assumptions for glycemic-load estimates." },
-      { path: "/sv/glykemisk-belastning/", locale: "sv", title: "Glykemisk belastning: källor och metod | Recept", description: "Beräkningsmetod, källor och receptspecifika antaganden för uppskattningar av glykemisk belastning." },
-      { path: "/th/glycemic-load/", locale: "th", title: "ภาระน้ำตาลในเลือด: แหล่งข้อมูลและวิธีคำนวณ | สูตรอาหาร", description: "วิธีคำนวณ แหล่งข้อมูล และสมมติฐานเฉพาะสูตรสำหรับค่าประมาณภาระน้ำตาลในเลือด" },
+      { path: "/glykeeminen-kuorma/", locale: "fi", ogLocale: "fi_FI", title: "Glykeeminen kuorma: lähteet ja laskenta | Reseptit", description: "Reseptien glykeemisen kuorman laskentatapa, lähteet ja reseptikohtaiset oletukset." },
+      { path: "/en/glycemic-load/", locale: "en", ogLocale: "en_GB", title: "Glycemic load: sources and method | Recipes", description: "Calculation method, sources and recipe-specific assumptions for glycemic-load estimates." },
+      { path: "/sv/glykemisk-belastning/", locale: "sv", ogLocale: "sv_SE", title: "Glykemisk belastning: källor och metod | Recept", description: "Beräkningsmetod, källor och receptspecifika antaganden för uppskattningar av glykemisk belastning." },
+      { path: "/th/glycemic-load/", locale: "th", ogLocale: "th_TH", title: "ภาระน้ำตาลในเลือด: แหล่งข้อมูลและวิธีคำนวณ | สูตรอาหาร", description: "วิธีคำนวณ แหล่งข้อมูล และสมมติฐานเฉพาะสูตรสำหรับค่าประมาณภาระน้ำตาลในเลือด" },
     ];
     for (const methodPage of methodPages) {
       const canonical = `https://ozirix-dev.github.io${base.replace("http://127.0.0.1:4176", "")}${methodPage.path}`;
@@ -72,6 +72,9 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.equal(await page.locator('meta[property="og:title"]').getAttribute("content"), methodPage.title);
       assert.equal(await page.locator('meta[property="og:description"]').getAttribute("content"), methodPage.description);
       assert.equal(await page.locator('meta[property="og:url"]').getAttribute("content"), canonical);
+      assert.equal(await page.locator('meta[property="og:locale"]').getAttribute("content"), methodPage.ogLocale);
+      assert.equal(await page.locator('meta[property="og:type"]').getAttribute("content"), "website");
+      assert.equal(await page.locator('meta[name="twitter:card"]').getAttribute("content"), "summary");
       assert.equal(await page.locator('meta[name="twitter:title"]').getAttribute("content"), methodPage.title);
       assert.equal(await page.locator('meta[name="twitter:description"]').getAttribute("content"), methodPage.description);
       assert.equal(await page.locator('meta[name="robots"]').count(), 0);
@@ -79,6 +82,9 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.equal(await page.locator('link[rel="alternate"][hreflang]').count(), 5);
       assert.equal(await page.locator('link[rel="alternate"][hreflang="x-default"]').count(), 1);
       assert.equal(await page.locator('link[rel="alternate"][hreflang="fi"]').getAttribute("href"), "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/");
+      for (const [locale, route] of [["en", "en/glycemic-load/"], ["sv", "sv/glykemisk-belastning/"], ["th", "th/glycemic-load/"]] as const) {
+        assert.equal(await page.locator(`link[rel="alternate"][hreflang="${locale}"]`).getAttribute("href"), `https://ozirix-dev.github.io/Reseptit/${route}`);
+      }
 
       const noSlashPath = `${base}${methodPage.path.slice(0, -1)}`;
       await page.evaluate((path) => { history.pushState(null, "", path); dispatchEvent(new PopStateEvent("popstate")); }, noSlashPath);
