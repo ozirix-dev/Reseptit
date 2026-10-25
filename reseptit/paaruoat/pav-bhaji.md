@@ -57,18 +57,30 @@ ingredients:
   - amount: 400
     unit: g
     item: tomaattimurskaa
+  - amount: 5
+    unit: g
+    item: jauhettua juustokuminaa
+  - amount: 4
+    unit: g
+    item: jauhettua korianteria
   - amount: 2
-    unit: rkl
-    item: pav bhaji masala -mausteseosta
+    unit: g
+    item: savupaprikajauhetta
+  - amount: 2
+    unit: g
+    item: kurkumajauhetta
+  - amount: 1
+    unit: g
+    item: chilijauhetta
   - amount: 1
     unit: tl
     item: suolaa
-  - amount: 6
-    unit: kpl
-    item: pehmeitä sämpylöitä
+  - amount: 300
+    unit: g
+    item: pehmeitä vehnäsämpylöitä
     note: tarjoiluun
-  - amount: null
-    unit: ""
+  - amount: 10
+    unit: g
     item: tuoretta korianteria
     note: tarjoiluun
 translation_languages:
@@ -76,6 +88,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 65.29
+carbs_total_per_serving_g: 72.87
+protein_per_serving_g: 13.11
+fat_per_serving_g: 19.24
+
 ---
 
 # Pav bhaji – Mumbain mausteinen kasvissose
@@ -89,7 +106,7 @@ Mumbain katukeittiöklassikko: mausteinen, pehmeäksi muussattu kasviscurry ja v
 ## Valmistus
 
 1. Keitä perunat, kukkakaali, herneet ja porkkana pehmeiksi. Valuta ja säästä keitinvettä.
-2. Kuullota sipuli öljyssä. Lisää valkosipuli ja pav bhaji masala. Paista minuutti.
+2. Kuullota sipuli öljyssä. Lisää valkosipuli, juustokumina, korianteri, savupaprika, kurkuma ja chili. Paista minuutti.
 3. Lisää tomaatit ja suola. Hauduta 10 minuuttia.
 4. Lisää kypsät kasvikset ja muussaa pannulla karkeaksi soseeksi. Ohenna keitinvedellä sopivaksi.
 5. Hauduta seosta 10–15 minuuttia välillä sekoittaen. Sekoita joukkoon puolet voista ja korianteri.
@@ -97,4 +114,4 @@ Mumbain katukeittiöklassikko: mausteinen, pehmeäksi muussattu kasviscurry ja v
 
 ## Muistiinpanot
 
-- Pav bhaji masala -seos löytyy intialaisista ruokakaupoista; sen voi korvata garam masalalla ja ripauksella chiliä.
+- Mausteseoksen määrät on annettu valmiiksi mitattuna, jotta maku ja ravintoarvio pysyvät toistettavina.

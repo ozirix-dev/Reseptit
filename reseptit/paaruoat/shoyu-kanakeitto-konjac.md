@@ -32,7 +32,7 @@ ingredients:
     item: konjac-nuudeleita
   - amount: 100
     unit: g
-    item: shiitakesieniä
+    item: herkkusieniä
   - amount: 2
     unit: kpl
     item: kevätsipulia
@@ -50,6 +50,11 @@ image:
   alt: Shoyu-kanakeitto konjac-nuudeleilla tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 4.5
+carbs_total_per_serving_g: 7.47
+protein_per_serving_g: 22.07
+fat_per_serving_g: 7.7
+
 ---
 # Shoyu-kanakeitto konjac-nuudeleilla
 
@@ -65,7 +70,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 1. Huuhtele ja valuta konjac-nuudelit pakkauksen ohjeen mukaan. Kuivaa ja paista kuivalla pannulla 2–3 minuuttia.
 2. Kiehauta kanaliemi, tamari, riisiviinietikka ja inkivääri kattilassa.
-3. Lisää broileri ja viipaloidut shiitakesienet. Hauduta 12–15 minuuttia, kunnes kana on kypsää.
+3. Lisää broileri ja viipaloidut herkkusienet. Hauduta 12–15 minuuttia, kunnes kana on kypsää.
 4. Lisää nuudelit ja lämmitä vielä 2 minuuttia. Mausta seesamiöljyllä.
 5. Viimeistele viipaloidulla kevätsipulilla.
 

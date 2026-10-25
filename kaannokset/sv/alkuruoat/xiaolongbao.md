@@ -21,21 +21,24 @@ image:
   width: 1279
   height: 853
 ingredients:
-  - amount: 24
-    unit: st
-    item: runda dumplingsdegsark
-    note: ca 9 cm
+  - amount: 300
+    unit: g
+    item: vetemjöl
+  - amount: 170
+    unit: ml
+    item: vatten
   - amount: 300
     unit: g
     item: malet fläsk
-  - amount: 150
+  - amount: 145
     unit: g
-    item: geléköttsbuljong
-    note: i små kuber
+    item: buljong
+  - amount: 5
+    unit: g
+    item: gelatin
   - amount: 2
     unit: st
     item: vårlök
-    note: strimlad
   - amount: 1
     unit: msk
     item: sojasås
@@ -55,29 +58,37 @@ ingredients:
   - amount: 1
     unit: msk
     item: ingefära
-    note: tunt skivad för servering
 source_language: fi
 source_recipe: reseptit/alkuruoat/xiaolongbao.md
 translation_of: xiaolongbao
+carbs_net_per_serving_g: 59.5
+carbs_total_per_serving_g: 63.16
+protein_per_serving_g: 25.09
+fat_per_serving_g: 14.41
 ---
 
 # Xiaolongbao – kinesiska soppdumplings
 
-Shanghainese soppdumplings innehåller kryddig fläskfyllning och köttgelé, som smälter till buljong under ångning.
+Hemgjorda soppdumplings har en fläskfyllning med kyld buljonggelé som smälter till buljong när de ångas.
 
-## Beskrivning
+## Description
 
-Shanghainese soppdumplings innehåller kryddig fläskfyllning och köttgelé, som smälter till buljong under ångning.
+Hemgjorda soppdumplings har en fläskfyllning med kyld buljonggelé som smälter till buljong när de ångas.
 
-## Tillagning
+## Preparation
 
-1. Blanda fläskfärs, vårlök, sojasås, sesamolja, ingefära och salt. Vänd försiktigt ner tärningarna av geléad buljong i fyllningen.
-2. Lägg en liten sked fyllning i mitten av degplåten. Vik kanterna runt och nyp på mitten.
-3. Lägg dumplingsna på bakplåtspapper eller kålblad i ångkorgen så att de inte rör vid varandra.
-4. Ånga över kokande vatten i 8–10 minuter tills fyllningen är kokt.
-5. Servera genast med svart risvinäger och ingefära strimlor. Var försiktig med den varma buljongen inuti dumplingen.
+1. Lös upp gelatinet i buljongen och kyl i minst 30 minuter tills det stelnat. Skär sedan i små tärningar.
 
-## Anteckningar
+2. Blanda fläskfärs, vårlök, soja, sesamolja, ingefära och salt. Vänd försiktigt ner buljonggelén.
 
+3. Dela degen i 24 bitar, kavla tunt och lägg lite fyllning i varje. Vik ihop kanterna och nyp till.
 
-- Buljonggelén görs genom att kyla kryddad kött- eller kycklingbuljong med gelatin. Håll fyllningen kall under hela monteringen.
+4. Lägg dumplingarna på bakplåtspapper eller kålblad i ångkorgen, utan att de rör vid varandra.
+
+5. Ånga över kokande vatten i 8–10 minuter tills fyllningen är genomkokt.
+
+6. Servera genast med svart risvinäger och ingefära. Var försiktig med den heta buljongen inuti.
+
+## Notes
+
+- Håll fyllningen kall när dumplingarna formas.

@@ -6,7 +6,7 @@ export type Values = Record<Nutrient, number | null>;
 export type CarbDefinition = "EU_AVAILABLE" | "EU_TOTAL_INCLUDING_POLYOLS" | "US_TOTAL_INCLUDING_FIBRE" | "UNKNOWN";
 export interface FoodRecord {
   id: string; name: string; sourceUrl: string; retrievedAt: string; licence: string;
-  state: string; basis: "per100g-edible" | "per100g-as-sold"; carbohydrateDefinition: CarbDefinition;
+  state: string; basis: "per100g-edible" | "per100g-as-sold" | "per100g-prepared"; carbohydrateDefinition: CarbDefinition;
   componentValues?: Partial<Record<"CHO" | "FIBT" | "POLYL", number | null>>;
   componentIds?: Partial<Record<"CHO" | "FIBT" | "POLYL", number>>;
   /** True only when the polyol value is explicitly reported by this source. */
@@ -135,7 +135,7 @@ export function calculate(input: Calculation) {
     if (!valid(ingredient.amount)) fail("Missing/invalid amount");
     const record = ingredient.record;
     if (!record?.id || !/^https:\/\//.test(record.sourceUrl) || !record.retrievedAt || !record.licence) fail("Missing source reference");
-    if (!ingredient.matchEvidence || !record || record.state !== ingredient.state || !["per100g-edible", "per100g-as-sold"].includes(record.basis)) fail("Unresolved food/state/edible basis match");
+    if (!ingredient.matchEvidence || !record || record.state !== ingredient.state || !["per100g-edible", "per100g-as-sold", "per100g-prepared"].includes(record.basis)) fail("Unresolved food/state/edible basis match");
     const factor = ingredient.unit === "g" ? 1 : ingredient.unit === "kg" ? 1000 : ingredient.gramsPerUnit;
     if (!valid(factor) || factor === 0 || (!["g", "kg"].includes(ingredient.unit) && !ingredient.conversionEvidence)) fail("Missing ingredient-specific unit conversion");
     if (!valid(ingredient.edibleFraction) || ingredient.edibleFraction > 1 || !ingredient.edibleEvidence) fail("Unknown edible fraction");

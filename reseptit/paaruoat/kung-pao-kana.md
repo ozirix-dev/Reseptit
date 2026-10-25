@@ -69,14 +69,19 @@ ingredients:
   - amount: 1
     unit: rkl
     item: vettä
-  - amount: 4
-    unit: annosta
-    item: keitettyä riisiä
+  - amount: 600
+    unit: g
+    item: keitettyä valkoista riisiä
 translation_languages:
   - en
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 45.21
+carbs_total_per_serving_g: 50.24
+protein_per_serving_g: 40.03
+fat_per_serving_g: 25.14
+
 ---
 
 # Kung pao -kana maapähkinöillä

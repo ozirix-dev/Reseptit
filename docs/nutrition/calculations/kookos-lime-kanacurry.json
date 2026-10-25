@@ -1,0 +1,318 @@
+{
+  "recipeId": "kookos-lime-kanacurry",
+  "sourceHash": "0b2bf8421bd70fd270c8d446cc45f6909d0714a4b0451a3b8eb9b37a34f27833",
+  "calculatedAt": "2026-10-25",
+  "batchId": "batch-18",
+  "servings": 4,
+  "scope": "4 servings; raw boneless chicken thigh and canned regular-fat coconut milk are used; lime flesh is 50 g each; cooking yield is not modelled.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "broilerin paistileikettä",
+      "amount": 500,
+      "unit": "g",
+      "state": "raw lean chicken thigh flesh",
+      "matchEvidence": "broilerin paistileikettä maps to afcd-release-3 record F002806; state: raw lean chicken thigh flesh.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F002806-release-3",
+        "name": "Chicken, thigh, lean flesh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw lean chicken thigh flesh",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 19.1,
+          "fat": 3
+        }
+      }
+    },
+    {
+      "item": "täysrasvaista kookosmaitoa",
+      "amount": 400,
+      "unit": "ml",
+      "state": "canned coconut milk, regular fat",
+      "matchEvidence": "AFCD F002991 is canned regular-fat coconut milk.",
+      "gramsPerUnit": 0.92,
+      "conversionEvidence": "Coconut milk density = 0.92 g/ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F002991-release-3",
+        "name": "Coconut, milk, canned, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "canned coconut milk, regular fat",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.7,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.4,
+          "fat": 15.4
+        }
+      }
+    },
+    {
+      "item": "thaimaalaista currytahnaa",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "as sold; label values per 100 g",
+      "matchEvidence": "Local product label is Mae Ploy green curry paste.",
+      "gramsPerUnit": 15,
+      "conversionEvidence": "1 tbsp paste = 15 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "mae-ploy-green-curry-paste-2026-10-24",
+        "name": "Mae Ploy Green Curry Paste, 400 g",
+        "sourceUrl": "https://sainsburys.co.uk/groceries/product/mae-ploy-green-curry-paste-400g",
+        "retrievedAt": "2026-10-24",
+        "licence": "Retailer-published product label facts; product reference only, not an open-database licence",
+        "state": "as sold; label values per 100 g",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Published ingredient declaration contains no polyol ingredient.",
+        "per100g": {
+          "kcal": 119,
+          "protein": 4.5,
+          "fat": 1.1,
+          "carbohydrate": 17.3,
+          "fibre": 10.9,
+          "sugars": 3,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "vihreitä papuja",
+      "amount": 150,
+      "unit": "g",
+      "state": "raw green bean, edible portion",
+      "matchEvidence": "AFCD F000431 is fresh raw green bean.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F000431-release-3",
+        "name": "Bean, green, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw green bean, edible portion",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 3.3,
+          "fibre": 2.8,
+          "polyols": 0,
+          "protein": 1.8,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "punainen paprika",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "raw red pepper edible portion",
+      "matchEvidence": "Fineli 386 is red bell pepper.",
+      "gramsPerUnit": 120,
+      "conversionEvidence": "One medium pepper = 120 g edible portion.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible flesh amount only.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-386-release-20",
+        "name": "PAPRIKA, PUNAINEN",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/386",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw red pepper edible portion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.5,
+          "FIBT": 1.9,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.5,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 0.94,
+          "fat": 0.3
+        }
+      }
+    },
+    {
+      "item": "kalakastiketta",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "as sold; label ingredients anchovy extract (77%), salt, sugar",
+      "matchEvidence": "Local Open Food Facts record is Squid Brand fish sauce.",
+      "gramsPerUnit": 18,
+      "conversionEvidence": "1 tbsp fish sauce = 18 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+        "name": "Squid Brand Fish Sauce, 725 ml",
+        "sourceUrl": "https://world.openfoodfacts.org/product/13692210/fish-sauce-squid-brand",
+        "retrievedAt": "2026-10-24",
+        "licence": "Open Food Facts database, ODbL 1.0; attribute Open Food Facts contributors and retain share-alike for derived database data",
+        "state": "as sold; label ingredients anchovy extract (77%), salt, sugar",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Open Food Facts product ingredient declaration lists anchovy extract (77%), salt and sugar, with no polyol ingredients; the declared available carbohydrate with and without sugar alcohols is 3.4 g/100 g.",
+        "per100g": {
+          "kcal": 54,
+          "protein": 10,
+          "fat": 0,
+          "carbohydrate": 3.4,
+          "fibre": 0,
+          "sugars": 3.4,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "limetti",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "raw lime",
+      "matchEvidence": "Raw lime, peeled; AFCD record F005198.",
+      "gramsPerUnit": 50,
+      "conversionEvidence": "Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F005198-release-3",
+        "name": "Lime, native, fruit",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw lime",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0.4,
+          "fibre": 3.6,
+          "polyols": 0,
+          "protein": 0.1,
+          "fat": 2.7
+        }
+      }
+    },
+    {
+      "item": "thaibasilikaa",
+      "amount": 10,
+      "unit": "g",
+      "state": "fresh raw basil",
+      "matchEvidence": "AFCD F000396 is fresh basil, closest local match to Thai basil.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F000396-release-3",
+        "name": "Basil, green, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh raw basil",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0.2,
+          "fibre": 3.3,
+          "polyols": 0,
+          "protein": 2.6,
+          "fat": 0.5
+        }
+      }
+    },
+    {
+      "item": "kookosöljyä",
+      "amount": 1,
+      "unit": "rkl",
+      "state": "coconut oil as sold",
+      "matchEvidence": "Fineli 34140 is coconut oil.",
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "1 tbsp oil = 13.5 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-34140-release-20",
+        "name": "KOOKOSÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34140",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "coconut oil as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    }
+  ]
+}

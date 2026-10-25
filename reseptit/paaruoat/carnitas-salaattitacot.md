@@ -39,9 +39,15 @@ ingredients:
   - amount: 12
     unit: kpl
     item: roomansalaatinlehtiä
-  - amount: 100
+  - amount: 70
     unit: g
-    item: pico de galloa
+    item: tomaattia pico de galloon
+  - amount: 20
+    unit: g
+    item: punasipulia pico de galloon
+  - amount: 10
+    unit: g
+    item: tuoretta korianteria pico de galloon
   - amount: null
     unit: ""
     item: suolaa ja pippuria
@@ -53,6 +59,11 @@ image:
   alt: Hitaasti haudutetut carnitas-salaattitacot tarjoiltuna
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 4.9
+carbs_total_per_serving_g: 7.4
+protein_per_serving_g: 36.94
+fat_per_serving_g: 30.6
+
 ---
 # Hitaasti haudutetut carnitas-salaattitacot
 
@@ -70,7 +81,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 2. Laita liha pataan valkosipulin, appelsiinin mehun ja lohkojen, limetin mehun sekä veden kanssa.
 3. Hauduta kannen alla 150-asteisessa uunissa noin 2,5 tuntia, kunnes liha hajoaa haarukalla.
 4. Revi liha ja levitä pellille. Paahda grillivastuksen alla muutama minuutti, kunnes reunat rapeutuvat.
-5. Tarjoa lämpimän lihan kanssa pestyissä salaatinlehdissä ja lisää pico de gallo.
+5. Sekoita tomaatti, punasipuli ja korianteri pico de galloksi. Tarjoa lämmin liha pestyissä salaatinlehdissä ja lisää mitattu pico de gallo.
 
 ## Muistiinpanot
 

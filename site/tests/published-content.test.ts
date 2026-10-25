@@ -226,6 +226,13 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
     assert.ok(recipe.ingredients.every(ingredient => !/kananmuna/i.test(ingredient.item)), "breakfast recipes are egg-free");
   }
   const documentedNetCarbs = new Map([
+    ["siskonmakkarakeitto-juurekset", 9.01], ["janssoninkiusaus-juuriselleri", 8.38],
+    ["kookos-lime-kanacurry", 5.66], ["okonomiyaki-kaaliletut", 11.28],
+    ["kung-pao-kana", 45.21], ["dan-dan-nuudelit", 53.48], ["carnitas-salaattitacot", 4.90],
+    ["rogan-josh", 4.39], ["rendang-padang", 41.86], ["shoyu-kanakeitto-konjac", 4.50],
+    ["falafel", 26.33], ["pav-bhaji", 65.29], ["jiaozi", 60.40], ["xiaolongbao", 59.50],
+    ["jerk-kana", 77.22], ["miso-lohi-paksoi", 2.91], ["bouillabaisse", 37.69],
+    ["paella-valenciana", 59.13], ["bun-cha-hanoi", 76.90], ["sate-ayam", 13.59],
     ["kreikkalainen-kanavuoka-oliiveilla", 4.1], ["hunaja-sinappikana-kaalilla", 12.22],
     ["marjainen-chiavanukas", 3.51], ["kaakao-kookos-chia", 2.53],
     ["rahka-marjakerroskulho", 6.32], ["savulohi-avokadokulho", 0.89],
@@ -277,8 +284,8 @@ test("new recipe totals, servings, and ingredients match the preparation steps",
   assert.match(recipes.get("savulohi-avokadokulho")?.instructionsText.join(" ") ?? "", /neljään kulhoon tai lautaselle/);
   assert.match(recipes.get("lanttulaatikko-kermainen")?.instructionsText.join(" ") ?? "", /siirappi/);
   const jansson = recipes.get("janssoninkiusaus-juuriselleri")!;
-  assert.equal(jansson.ingredients.find(ingredient => ingredient.item.includes("anjovis"))?.item, "anjovisfileitä mausteliemessä");
-  assert.match(jansson.instructionsText.join(" "), /anjovisten maustelientä/);
+  assert.equal(jansson.ingredients.find(ingredient => ingredient.item.includes("anjovis"))?.item, "öljyyn säilöttyjä anjovisfileitä, valutettuna");
+  assert.doesNotMatch(jansson.instructionsText.join(" "), /anjovisten maustelientä/);
 });
 
 test("the twenty Indian recipes are published in Finnish with their image assets", async () => {

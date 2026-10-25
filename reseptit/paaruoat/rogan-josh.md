@@ -30,7 +30,7 @@ ingredients:
     note: kuutioituna
   - amount: 2
     unit: rkl
-    item: öljyä tai gheetä
+    item: oliiviöljyä
   - amount: 1
     unit: kpl
     item: sipuli
@@ -75,6 +75,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 4.39
+carbs_total_per_serving_g: 6.05
+protein_per_serving_g: 35.37
+fat_per_serving_g: 41.78
+
 ---
 
 # Kashmirilainen rogan josh

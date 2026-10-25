@@ -24,10 +24,12 @@ image:
   width: 1279
   height: 853
 ingredients:
-  - amount: 24
-    unit: kpl
-    item: dumpling-taikinalevyjä
-    note: valmiita
+  - amount: 300
+    unit: g
+    item: vehnäjauhoja taikinaan
+  - amount: 170
+    unit: ml
+    item: vettä taikinaan
   - amount: 300
     unit: g
     item: sian jauhelihaa
@@ -51,14 +53,6 @@ ingredients:
   - amount: 0.5
     unit: tl
     item: suolaa
-  - amount: 2
-    unit: rkl
-    item: neutraalia öljyä
-    note: paistamiseen
-  - amount: 1
-    unit: dl
-    item: vettä
-    note: paistamiseen
   - amount: 3
     unit: rkl
     item: soijakastiketta
@@ -72,6 +66,11 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
+carbs_net_per_serving_g: 60.4
+carbs_total_per_serving_g: 64.62
+protein_per_serving_g: 25.2
+fat_per_serving_g: 14.24
+
 ---
 
 # Jiaozi-dumplingit porsas-kaalitäytteellä
@@ -84,10 +83,10 @@ Kotitekoiset kiinalaiset dumplingit täytetään porsaanlihalla, kaalilla ja ink
 
 ## Valmistus
 
-1. Purista hienonnetusta kaalista ylimääräinen neste. Sekoita kaali, jauheliha, kevätsipuli, soijakastike, seesamiöljy, inkivääri ja suola.
-2. Laita teelusikallinen täytettä taikinalevyn keskelle. Kostuta reuna vedellä, taita puolikuuksi ja painele sauma tiiviiksi. Tee samoin lopuille.
-3. Paista dumplingit pannulla öljyssä 2–3 minuuttia, kunnes pohjat ruskistuvat.
-4. Lisää varovasti vesi ja peitä pannu heti. Höyrytä noin 6 minuuttia, kunnes täyte on kypsä ja vesi haihtunut.
+1. Sekoita jauhoihin vesi ja vaivaa tasaiseksi taikinaksi. Peitä ja anna levätä 30 minuuttia.
+2. Purista hienonnetusta kaalista ylimääräinen neste. Sekoita kaali, jauheliha, kevätsipuli, soijakastike, seesamiöljy, inkivääri ja suola.
+3. Jaa taikina 24 osaan ja kauli ohuiksi levyiksi. Laita kunkin keskelle teelusikallinen täytettä, kostuta reuna, taita puolikuuksi ja sulje tiiviisti.
+4. Keitä nyytit erissä kiehuvassa vedessä 6–8 minuuttia, kunnes ne nousevat pintaan ja täyte on kypsä. Nosta reikäkauhalla.
 5. Sekoita dippikastikkeeksi soijakastike ja riisiviinietikka. Tarjoa dumplingien kanssa.
 
 ## Muistiinpanot

@@ -24,21 +24,21 @@ image:
   width: 1279
   height: 853
 ingredients:
-  - amount: 24
-    unit: st
-    item: dumpling deg ark
-    note: redo
+  - amount: 300
+    unit: g
+    item: vetemjöl
+  - amount: 170
+    unit: ml
+    item: vatten
   - amount: 300
     unit: g
     item: malet fläsk
   - amount: 200
     unit: g
     item: kinakål
-    note: "finhackad"
   - amount: 2
     unit: st
     item: vårlök
-    note: strimlad
   - amount: 1
     unit: msk
     item: sojasås
@@ -51,14 +51,6 @@ ingredients:
   - amount: 0.5
     unit: tsk
     item: salt
-  - amount: 2
-    unit: msk
-    item: neutral olja
-    note: för stekning
-  - amount: 1
-    unit: dl
-    item: vatten
-    note: för stekning
   - amount: 3
     unit: msk
     item: sojasås
@@ -70,24 +62,32 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/alkuruoat/jiaozi.md
 translation_of: jiaozi
+carbs_net_per_serving_g: 60.4
+carbs_total_per_serving_g: 64.62
+protein_per_serving_g: 25.2
+fat_per_serving_g: 14.24
 ---
 
-# Jiaozi dumplings med fläsk- och kålfyllning
+# Jiaozi med fläsk och kål
 
-Hemlagade kinesiska dumplings är fyllda med fläsk, kål och ingefära. De kan kokas eller stekas tills de är knapriga.
+Hemgjorda dumplings fyllda med fläsk, kål och ingefära kokas tills fyllningen är klar.
 
-## Beskrivning
+## Description
 
-Hemlagade kinesiska dumplings är fyllda med fläsk, kål och ingefära. De kan kokas eller stekas tills de är knapriga.
+Hemgjorda dumplings fyllda med fläsk, kål och ingefära kokas tills fyllningen är klar.
 
-## Tillagning
+## Preparation
 
-1. Krama ur överflödig vätska från den hackade kålen. Blanda kål, köttfärs, vårlök, soja, sesamolja, ingefära och salt.
-2. Lägg en tesked fyllning i mitten av degplåten. Fukta kanten med vatten, vik till en halvmåne och tryck ihop sömmen hårt. Gör samma sak för resten.
-3. Stek dumplingsna i en panna i olja i 2–3 minuter tills bottnarna fått färg.
-4. Tillsätt försiktigt vatten och täck genast pannan. Ånga ca 6 minuter tills fyllningen är kokt och vattnet har avdunstat.
-5. Blanda sojasås och risvinsvinäger som dippsås. Servera med dumplings.
+1. Blanda mjöl och vatten till en smidig deg. Täck och låt vila i 30 minuter.
 
-## Anteckningar
+2. Krama ur vätskan från kålen. Blanda kål, fläskfärs, vårlök, soja, sesamolja, ingefära och salt.
 
-- Förvara oanvända degark täckta så att de inte torkar ut.
+3. Dela degen i 24 bitar och kavla tunt. Lägg på fyllning, fukta kanterna, vik och förslut.
+
+4. Koka i omgångar i 6–8 minuter tills dumplingarna flyter upp och fyllningen är genomkokt. Lyft upp med hålslev.
+
+5. Blanda soja och risvinäger till dippsås. Servera med dumplingarna.
+
+## Notes
+
+- Håll oanvänd deg täckt så att den inte torkar.
