@@ -1,14 +1,14 @@
 # Nykyinen GK-esteinventaario (2026-10-25)
 
-Lähdecommit: `baa87ee8d014913a0fc4bfaf21d6e08931c3b80e`. Vertailun lähtösnapshot: `66ba0464bd0099c2318ce9b5cd1ae3ca0bd841cd` (117 laskettua / 208 keskeneräistä; 38 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
+Lähdecommit: `51210f4cf08915238327d31bdcf7ace5a5317086`. Vertailun lähtösnapshot: `66ba0464bd0099c2318ce9b5cd1ae3ca0bd841cd` (117 laskettua / 208 keskeneräistä; 38 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
 
-Nykyinen ajo kattaa 325 reseptiä: 119 laskettua, 206 keskeneräistä. GI-katalogissa on 38 tietuetta (5 STRONG, 33 SUPPLEMENTARY).
+Nykyinen ajo kattaa 325 reseptiä: 118 laskettua, 207 keskeneräistä. GI-katalogissa on 38 tietuetta (5 STRONG, 33 SUPPLEMENTARY).
 
 ## Muutos hyväksytystä vertailusta
 
-- Aiemmin keskeneräisiä, nyt laskettavia: 2. Aiemmin laskettuja, nyt estettyjä: 0. Edelleen keskeneräisiä: 206.
-- Estoperuste muuttui 7 reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: 0/0/0.
-- Keskeneräisiä, joiden ravintoarvotila on tuettu: 110; tarkistettava: 42; puuttuva: 54.
+- Aiemmin keskeneräisiä, nyt laskettavia: 1. Aiemmin laskettuja, nyt estettyjä: 0. Edelleen keskeneräisiä: 207.
+- Estoperuste muuttui 6 reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: 0/0/0.
+- Keskeneräisiä, joiden ravintoarvotila on tuettu: 111; tarkistettava: 42; puuttuva: 54.
 
 ## Päällekkäiset esteet
 
@@ -21,7 +21,7 @@ Luokat menevät päällekkäin; sama resepti voi esiintyä useassa rivissä.
 | EVIDENCE | 0 | 0 |
 | COMPOSITION | 65 | 84 |
 | MASS_PREPARATION | 20 | 23 |
-| GI_MATCH | 100 | 128 |
+| GI_MATCH | 101 | 129 |
 | GI_MISSING | 41 | 44 |
 | TOLERANCE | 7 | 7 |
 
@@ -182,6 +182,7 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | lahi-ita-kikhernejauho-yrttilettu | GI_MATCH | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
 | malesialainen-congee-inkivaarilla | GI_MATCH | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
 | kiinalainen-riisipuuro-kananmunalla | GI_MATCH | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
+| thai-porsasjok | GI_MATCH | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
 | pohjoisafrikkalainen-lablabi | GI_MATCH | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
 | jerk-kana | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | STRUCTURE_BINDING_REVIEW |
 | tangyuan | OTHER | INSUFFICIENT SOURCE DATA | MISSING | MANUAL_TRIAGE |

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-25T21:10:48.358Z",
-  "sourceCommit": "baa87ee8d014913a0fc4bfaf21d6e08931c3b80e",
+  "generatedAt": "2026-10-25T21:25:52.225Z",
+  "sourceCommit": "51210f4cf08915238327d31bdcf7ace5a5317086",
   "previousApprovedBaseline": {
     "sourceCommit": "66ba0464bd0099c2318ce9b5cd1ae3ca0bd841cd",
     "recipeCount": 325,
@@ -21,20 +21,20 @@
   },
   "currentSummary": {
     "recipeCount": 325,
-    "calculated": 119,
-    "incomplete": 206,
+    "calculated": 118,
+    "incomplete": 207,
     "giRecordCount": 38,
     "giTierCounts": {
       "STRONG": 5,
       "SUPPLEMENTARY": 33
     },
-    "incompleteWithSupportedNutrition": 110,
+    "incompleteWithSupportedNutrition": 111,
     "incompleteNutritionNeedsReview": 42,
     "incompleteNutritionMissing": 54,
-    "newlyCalculated": 2,
+    "newlyCalculated": 1,
     "newlyBlocked": 0,
-    "stillIncomplete": 206,
-    "changedBlockerRecipes": 7,
+    "stillIncomplete": 207,
+    "changedBlockerRecipes": 6,
     "newStructureMismatches": 0,
     "newInputMismatches": 0,
     "newEvidenceMismatches": 0
@@ -61,8 +61,8 @@
       "blockerMessages": 23
     },
     "GI_MATCH": {
-      "recipes": 100,
-      "blockerMessages": 128
+      "recipes": 101,
+      "blockerMessages": 129
     },
     "GI_MISSING": {
       "recipes": 41,
@@ -44985,9 +44985,9 @@
     {
       "recipeId": "thai-porsasjok",
       "recipeVersion": "e9e6100eadec3e8b857a42f756da22430080934702cfd9fd57d97a4d9d17be40",
-      "calculationInputVersion": "83e732bb3159084d323061da53a7990b6288bf30686563d44210624f4371eeff",
-      "calculationEvidenceVersion": "c405aa21435a4ded2d640c7a8d54b01160b7d8309b76e3ca3e7c928c095d713a",
-      "status": "CALCULATED",
+      "calculationInputVersion": "4877de4e24e62445b49ef8c8eb177a06f96f8f36bd8d26dcc6d71f4250a4b901",
+      "calculationEvidenceVersion": "975af5a49f40bef35cb852fc1135fb5169fcac51d20b01cc1273d8882d7b1f33",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/aamupalat/thai-porsasjok.md",
@@ -45050,9 +45050,9 @@
             "name": "inkivääri",
             "grams": 2,
             "fineliRecordId": "afcd-F004213-release-3",
-            "giRecordId": null,
+            "giRecordId": "vegetables-category-mean-gi-66",
             "massEvidence": "One teaspoon finely grated fresh ginger represented as 2 g.",
-            "giMatchEvidence": "Vegetable category mean is not ingredient-specific for fresh ginger; remove the unsupported GI proxy."
+            "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
           },
           {
             "name": "kananmuna",
@@ -45080,30 +45080,38 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 26.47,
-      "omittedAvailableCarbohydratePerServingG": 0.21300000000000002,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 0.165,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": true,
-      "calculationEvidenceVersionChanged": true,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": false,
+      "calculationEvidenceVersionChanged": false,
+      "blockers": [
+        {
+          "category": "GI_MATCH",
+          "message": "thai-porsasjok: inkivääri: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "nextAction": "Tarkista ruoka-aineen perhe, valmistus ja GI-lähde; älä käytä perusteetonta analogiaa."
+        }
+      ],
+      "blockingCategories": [
+        "GI_MATCH"
+      ],
+      "primaryBlockingCategory": "GI_MATCH",
+      "primaryBlockingReason": "thai-porsasjok: inkivääri: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "missingFoodAndGIRecords": [
         {
           "name": "inkivääri",
           "grams": 2,
           "recipeQuantity": null,
           "fineliRecordId": "afcd-F004213-release-3",
-          "giRecordId": null,
+          "giRecordId": "vegetables-category-mean-gi-66",
           "availableCarbohydratePerServingG": 0.048,
           "availableCarbohydrateUpperBoundPerServingG": null,
           "excludedReason": null,
           "issues": [
-            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.048 g available carbohydrate): Vegetable category mean is not ingredient-specific for fresh ginger; remove the unsupported GI proxy."
+            "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
           ]
         },
         {
@@ -45133,16 +45141,16 @@
           ]
         }
       ],
-      "nextActions": [],
-      "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": true,
-      "newlyCalculated": true,
+      "nextActions": [
+        "Tarkista ruoka-aineen perhe, valmistus ja GI-lähde; älä käytä perusteetonta analogiaa."
+      ],
+      "suggestedNextWorkstream": "GI_SOURCE_REVIEW",
+      "statusChanged": false,
+      "newlyCalculated": false,
       "newlyBlocked": false,
-      "stillIncomplete": false,
+      "stillIncomplete": true,
       "changedBlockers": [],
-      "removedBlockers": [
-        "thai-porsasjok: inkivääri: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
-      ]
+      "removedBlockers": []
     },
     {
       "recipeId": "lahi-ita-fattet-hummus",
