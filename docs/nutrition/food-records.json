@@ -11013,5 +11013,204 @@
       "KPL_M": 240,
       "KPL_L": 320
     }
+  },
+  {
+    "id": "fineli-28958-release-20",
+    "name": "MAISSI, MAISSINTÄHKÄ, GRILLATTU",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/28958",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "grilled corn cob",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 16.605,
+      "FIBT": 2.4,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 16.605,
+      "fibre": 2.4,
+      "polyols": 0,
+      "protein": 1.82,
+      "fat": 3.582
+    },
+    "portionMassG": {
+      "KPL_S": 200,
+      "KPL_M": 240,
+      "KPL_L": 280
+    }
+  },
+  {
+    "id": "fineli-11045-release-20",
+    "name": "APPELSIINI, KUORITTU",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11045",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "peeled raw orange",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 8.9,
+      "FIBT": 2.4,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 8.9,
+      "fibre": 2.4,
+      "polyols": 0,
+      "protein": 0.56,
+      "fat": 0.14
+    },
+    "portionMassG": {
+      "KPL_S": 155,
+      "KPL_M": 215,
+      "KPL_L": 270
+    }
+  },
+  {
+    "id": "fineli-619-release-20",
+    "name": "JOGURTTI, MAUSTAMATON, RASVAA 2,5 %, VL",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/619",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "plain yogurt",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 5,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 5,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 3.19,
+      "fat": 2.5
+    },
+    "portionMassG": {
+      "DL": 100,
+      "RKL": 15,
+      "TL": 5
+    }
+  },
+  {
+    "id": "fineli-33465-release-20",
+    "name": "JUUSTO, HALLOUMIJUUSTO, VUOHENMAITO, RASVAA 22 %",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/33465",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "halloumi cheese",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 2.5,
+      "FIBT": 0,
+      "POLYL": null
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "Fineli Rel20 does not report a polyol value for this food.",
+    "per100g": {
+      "carbohydrate": 2.5,
+      "fibre": 0,
+      "polyols": null,
+      "protein": 19.5,
+      "fat": 22.1
+    },
+    "portionMassG": {
+      "DL": 60
+    }
+  },
+  {
+    "id": "fineli-350-release-20",
+    "name": "KURPITSA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/350",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "raw pumpkin, medium whole pumpkin",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 2,
+      "FIBT": 2,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 2,
+      "fibre": 2,
+      "polyols": 0,
+      "protein": 0.75,
+      "fat": 0.1
+    },
+    "portionMassG": {
+      "KPL_M": 600
+    }
+  },
+  {
+    "id": "fineli-33204-release-20",
+    "name": "KAALI, VALKOKAALI, KEITETTY, SUOLATON",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/33204",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "cooked white cabbage",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 5.713,
+      "FIBT": 2.299,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 5.713,
+      "fibre": 2.299,
+      "polyols": 0,
+      "protein": 1.38,
+      "fat": 0.115
+    },
+    "portionMassG": {
+      "DL": 50,
+      "RKL": 10
+    }
   }
 ]

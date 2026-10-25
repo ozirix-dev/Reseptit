@@ -86,7 +86,7 @@ test("recipe index is prerendered and links only published languages", async () 
 });
 
 test("GK values link to centralized recipe details on every published translation", async () => {
-  assert.equal(glycemicLoadPilotResults.length, 220);
+  assert.equal(glycemicLoadPilotResults.length, 240);
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
     assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);
@@ -133,6 +133,35 @@ test("batch ten publishes only its seven complete low-confidence estimates", () 
     "vietnamilainen-banh-xeo-aamiaisletut", "vietnamilainen-chao-ga-kanapuuro", "vietnamilainen-hu-tieu-aamiaiskeitto",
     "kiinalainen-bao-munalla", "karibia-maissipuuro-kookoksella", "japanilainen-soba-aamiaiskeitto",
     "karibia-johnny-cake", "lahi-ita-taatelipuuro-tahinilla", "thai-kookosriisi-mangolla", "korealainen-bataatti-riisikulho",
+  ];
+  for (const recipeId of incomplete) {
+    const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);
+    assert.equal(result?.status, "INSUFFICIENT SOURCE DATA", `${recipeId}: incomplete`);
+    assert.equal(result?.glycemicLoadPerServing, null, `${recipeId}: no partial total`);
+  }
+});
+
+test("batch eleven publishes only its five complete low-confidence estimates", () => {
+  const expected = new Map([
+    ["valimerellinen-appelsiini-aamiaiskakku", 27.21],
+    ["vietnamilainen-banh-bao-kananmunalla", 21.46],
+    ["korealainen-jumeokbap-merilevalla", 27.66],
+    ["lahi-ita-manakish-zaatarilla", 22.33],
+    ["malesialainen-mee-goreng-aamunuudeleilla", 18.55],
+  ]);
+  for (const [recipeId, value] of expected) {
+    const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);
+    assert.equal(result?.status, "CALCULATED", `${recipeId}: complete result`);
+    assert.equal(result?.glycemicLoadPerServing, value, `${recipeId}: expected GL`);
+    assert.equal(result?.confidence, "LOW", `${recipeId}: category GI estimates are labeled low confidence`);
+  }
+  const incomplete = [
+    "meksikolainen-quesadilla-sienilla", "japanilainen-dashimaki-tamago-aamiaislautasella",
+    "valimerellinen-halloumi-tomaattileipa", "indonesialainen-bakwan-maissifritter", "japanilainen-kabocha-puuro",
+    "malesialainen-kaya-paahtoleipa", "valimerellinen-farinata-aamupalaksi", "korealainen-kimchi-jeon-aamiaiseksi",
+    "korealainen-tofu-kimchi-aamiaiskulho", "valimerellinen-tahinipuuro", "malesialainen-kuih-seri-muka",
+    "malesialainen-laksa-lemak-aamiaiseksi", "indonesialainen-lontong-sayur-aamiaiseksi",
+    "pohjoisafrikkalainen-minttutee-kaurapuuro", "meksikolainen-atole-maissipuuro",
   ];
   for (const recipeId of incomplete) {
     const result = glycemicLoadPilotResults.find((item) => item.recipeId === recipeId);

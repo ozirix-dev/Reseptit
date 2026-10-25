@@ -15607,6 +15607,1176 @@
           "massEvidence": "Recipe-listed salt; not weighed."
         }
       ]
+    },
+    {
+      "recipeId": "meksikolainen-quesadilla-sienilla",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "maissitortilla",
+          "grams": 100,
+          "fineliRecordId": "fineli-35554-release-20",
+          "giRecordId": "corn-tortilla-noriega-2000-glucose-estimate",
+          "massEvidence": "Recipe-listed 100 g, mapped to MAISSITORTILLA, GLUTEENITON (commercial corn tortilla).",
+          "foodKey": "corn-tortilla",
+          "preparationKey": "commercial-corn-tortilla",
+          "giMatchEvidence": "Corn tortilla: Single published regional study; conversion to glucose scale uses the 0.71 factor described in International Tables 2021. Low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "juusto",
+          "grams": 100,
+          "fineliRecordId": "fineli-643-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 100 g, mapped to JUUSTO, KOVA PIENIKOLOINEN JUUSTO, RASVAA 24-27 %, EDAM (plain Edam cheese, generic hard-cheese match)."
+        },
+        {
+          "name": "sieni",
+          "grams": 15,
+          "fineliRecordId": "fineli-345-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 15 g, mapped to HERKKUSIENI (raw button mushroom).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "maissi",
+          "grams": 240,
+          "fineliRecordId": "fineli-28958-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 240 g, mapped to MAISSI, MAISSINTÄHKÄ, GRILLATTU (grilled corn cob)."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "vehnäjauho",
+          "grams": 100,
+          "fineliRecordId": "fineli-110-release-20",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Recipe-listed 100 g, mapped to JAUHO, VEHNÄJAUHO, PUOLIKARKEA (semi-coarse wheat flour).",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "appelsiini",
+          "grams": 215,
+          "fineliRecordId": "fineli-11045-release-20",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "Recipe-listed 215 g, mapped to APPELSIINI, KUORITTU (peeled raw orange).",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "oliiviöljy",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "jogurtti",
+          "grams": 100,
+          "fineliRecordId": "fineli-619-release-20",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Recipe-listed 100 g, mapped to JOGURTTI, MAUSTAMATON, RASVAA 2,5 %, VL (plain yogurt).",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "vietnamilainen-banh-bao-kananmunalla",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "vehnäjauho",
+          "grams": 100,
+          "fineliRecordId": "fineli-110-release-20",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Recipe-listed 100 g, mapped to JAUHO, VEHNÄJAUHO, PUOLIKARKEA (semi-coarse wheat flour).",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "kananmuna",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 110 g, mapped to KANANMUNA, KUORETON (raw edible egg, shell removed)."
+        },
+        {
+          "name": "sieni",
+          "grams": 15,
+          "fineliRecordId": "fineli-345-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 15 g, mapped to HERKKUSIENI (raw button mushroom).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "soijakastike",
+          "grams": 18,
+          "fineliRecordId": "fineli-31-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 18 g, mapped to MAUSTEKASTIKE, SOIJAKASTIKE (soy sauce)."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "japanilainen-dashimaki-tamago-aamiaislautasella",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "kananmuna",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 110 g, mapped to KANANMUNA, KUORETON (raw edible egg, shell removed)."
+        },
+        {
+          "name": "dashi",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "No source-matched composition and preparation was resolved for “dashi”; it is not treated as zero.",
+          "massEvidence": "Recipe-listed 200 ml dashi."
+        },
+        {
+          "name": "soijakastike",
+          "grams": 18,
+          "fineliRecordId": "fineli-31-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 18 g, mapped to MAUSTEKASTIKE, SOIJAKASTIKE (soy sauce)."
+        },
+        {
+          "name": "riisi",
+          "grams": 100,
+          "fineliRecordId": "fineli-11521-release-20",
+          "giRecordId": "rice-category-mean-gi-67",
+          "massEvidence": "Recipe-listed 100 g, mapped to RIISI PITKÄJYVÄINEN, PUUROUTUMATON (dry uncooked long-grain white rice).",
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "halloumi",
+          "grams": 150,
+          "fineliRecordId": "fineli-33465-release-20",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Recipe-listed 150 g, mapped to JUUSTO, HALLOUMIJUUSTO, VUOHENMAITO, RASVAA 22 % (halloumi cheese).",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "tomaatti",
+          "grams": 125,
+          "fineliRecordId": "fineli-352-release-20",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Recipe-listed 125 g, mapped to TOMAATTI (raw tomato).",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw",
+          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "oliivi",
+          "grams": 150,
+          "fineliRecordId": "fineli-34972-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 150 g, mapped to OLIIVI, KESKIARVO, KIVETÖN, SUOLALIEMESSÄ, VIHREÄ (green olives in brine, pitted)."
+        },
+        {
+          "name": "hapanjuurileipä",
+          "grams": 100,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "No source-matched composition and preparation was resolved for “hapanjuurileipä”; it is not treated as zero.",
+          "massEvidence": "Recipe-listed 100 g hapanjuurileipä."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-bakwan-maissifritter",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "maissi",
+          "grams": 240,
+          "fineliRecordId": "fineli-28958-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 240 g, mapped to MAISSI, MAISSINTÄHKÄ, GRILLATTU (grilled corn cob)."
+        },
+        {
+          "name": "porkkana",
+          "grams": 65,
+          "fineliRecordId": "fineli-300-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 65 g, mapped to PORKKANA (raw medium carrot, edible portion).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "vehnäjauho",
+          "grams": 100,
+          "fineliRecordId": "fineli-110-release-20",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Recipe-listed 100 g, mapped to JAUHO, VEHNÄJAUHO, PUOLIKARKEA (semi-coarse wheat flour).",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "kevätsipuli",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "kurpitsa",
+          "grams": 600,
+          "fineliRecordId": "fineli-350-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 600 g, mapped to KURPITSA (raw pumpkin, medium whole pumpkin)."
+        },
+        {
+          "name": "riisi",
+          "grams": 100,
+          "fineliRecordId": "fineli-11521-release-20",
+          "giRecordId": "rice-category-mean-gi-67",
+          "massEvidence": "Recipe-listed 100 g, mapped to RIISI PITKÄJYVÄINEN, PUUROUTUMATON (dry uncooked long-grain white rice).",
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 184 g, mapped to Coconut, milk, canned, regular fat (canned regular-fat coconut milk)."
+        },
+        {
+          "name": "musta seesami",
+          "grams": 100,
+          "fineliRecordId": "fineli-385-release-20",
+          "giRecordId": "nuts-category-mean-gi-22",
+          "massEvidence": "Recipe-listed 100 g, mapped to SEESAMINSIEMEN, KUORINEEN (whole unhulled sesame seeds).",
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean",
+          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "vettä tai mietoa lientä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+          "massEvidence": "Recipe-listed liquid alternative."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "malesialainen-kaya-paahtoleipa",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "hapanjuurileipä",
+          "grams": 100,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "No source-matched composition and preparation was resolved for “hapanjuurileipä”; it is not treated as zero.",
+          "massEvidence": "Recipe-listed 100 g hapanjuurileipä."
+        },
+        {
+          "name": "kookoshillo",
+          "grams": 150,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "No source-matched composition and preparation was resolved for “kookoshillo”; it is not treated as zero.",
+          "massEvidence": "Recipe-listed 150 g kookoshillo."
+        },
+        {
+          "name": "kananmuna",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 110 g, mapped to KANANMUNA, KUORETON (raw edible egg, shell removed)."
+        },
+        {
+          "name": "voi",
+          "grams": 150,
+          "fineliRecordId": "fineli-576-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 150 g, mapped to VOI, SUOLATON (unsalted butter)."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-farinata-aamupalaksi",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "kikhernejauho",
+          "grams": 100,
+          "fineliRecordId": "afcd-F003986-release-3",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "massEvidence": "Recipe-listed 100 g, mapped to Flour, chickpea (besan) (raw chickpea flour (besan)).",
+          "foodKey": "legume",
+          "preparationKey": "legume-category",
+          "giMatchEvidence": "Legumes, category mean: Broad category mean; substantial uncertainty when applied to a specific cooked bean.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "oliivi",
+          "grams": 150,
+          "fineliRecordId": "fineli-34972-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 150 g, mapped to OLIIVI, KESKIARVO, KIVETÖN, SUOLALIEMESSÄ, VIHREÄ (green olives in brine, pitted)."
+        },
+        {
+          "name": "tomaatti",
+          "grams": 125,
+          "fineliRecordId": "fineli-352-release-20",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Recipe-listed 125 g, mapped to TOMAATTI (raw tomato).",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw",
+          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "rosmariini",
+          "grams": 150,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "No source-matched composition and preparation was resolved for “rosmariini”; it is not treated as zero.",
+          "massEvidence": "Recipe-listed 150 g rosmariini."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "korealainen-kimchi-jeon-aamiaiseksi",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "kimchi",
+          "grams": 150,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "No source-matched composition and preparation was resolved for “kimchi”; it is not treated as zero.",
+          "massEvidence": "Recipe-listed 150 g kimchi."
+        },
+        {
+          "name": "vehnäjauho",
+          "grams": 100,
+          "fineliRecordId": "fineli-110-release-20",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Recipe-listed 100 g, mapped to JAUHO, VEHNÄJAUHO, PUOLIKARKEA (semi-coarse wheat flour).",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "kananmuna",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 110 g, mapped to KANANMUNA, KUORETON (raw edible egg, shell removed)."
+        },
+        {
+          "name": "kevätsipuli",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "tofu",
+          "grams": 100,
+          "fineliRecordId": "afcd-F009176-release-3",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 100 g, mapped to Tofu (soy bean curd), firm, as purchased (firm soy tofu as purchased)."
+        },
+        {
+          "name": "kimchi",
+          "grams": 150,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "No source-matched composition and preparation was resolved for “kimchi”; it is not treated as zero.",
+          "massEvidence": "Recipe-listed 150 g kimchi."
+        },
+        {
+          "name": "riisi",
+          "grams": 100,
+          "fineliRecordId": "fineli-11521-release-20",
+          "giRecordId": "rice-category-mean-gi-67",
+          "massEvidence": "Recipe-listed 100 g, mapped to RIISI PITKÄJYVÄINEN, PUUROUTUMATON (dry uncooked long-grain white rice).",
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "seesami",
+          "grams": 100,
+          "fineliRecordId": "fineli-385-release-20",
+          "giRecordId": "nuts-category-mean-gi-22",
+          "massEvidence": "Recipe-listed 100 g, mapped to SEESAMINSIEMEN, KUORINEEN (whole unhulled sesame seeds).",
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean",
+          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "korealainen-jumeokbap-merilevalla",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "riisi",
+          "grams": 100,
+          "fineliRecordId": "fineli-11521-release-20",
+          "giRecordId": "rice-category-mean-gi-67",
+          "massEvidence": "Recipe-listed 100 g, mapped to RIISI PITKÄJYVÄINEN, PUUROUTUMATON (dry uncooked long-grain white rice).",
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "gim-merilevä",
+          "grams": 150,
+          "fineliRecordId": "fineli-34136-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 150 g, mapped to MERILEVÄ, NORI, KUIVATTU (dried nori seaweed)."
+        },
+        {
+          "name": "seesamiöljy",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "porkkana",
+          "grams": 65,
+          "fineliRecordId": "fineli-300-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 65 g, mapped to PORKKANA (raw medium carrot, edible portion).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-tahinipuuro",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "kaurahiutale",
+          "grams": 100,
+          "fineliRecordId": "fineli-153-release-20",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Recipe-listed 100 g, mapped to KAURAHIUTALE (dry rolled oats).",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "tahini",
+          "grams": 15,
+          "fineliRecordId": "fineli-11087-release-20",
+          "giRecordId": "nuts-category-mean-gi-22",
+          "massEvidence": "Recipe-listed 15 g, mapped to TAHINI, SEESAMTAHNA, EI LISÄTTYÄ SUOLAA (unsalted sesame tahini).",
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean",
+          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "hunaja",
+          "grams": 20,
+          "fineliRecordId": "fineli-4-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 20 g, mapped to HUNAJA (honey as sold)."
+        },
+        {
+          "name": "appelsiini",
+          "grams": 215,
+          "fineliRecordId": "fineli-11045-release-20",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "Recipe-listed 215 g, mapped to APPELSIINI, KUORITTU (peeled raw orange).",
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "maitoa tai vettä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+          "massEvidence": "Recipe-listed liquid alternative."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "malesialainen-kuih-seri-muka",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "tahmariisi",
+          "grams": 100,
+          "fineliRecordId": "fineli-11521-release-20",
+          "giRecordId": "rice-category-mean-gi-67",
+          "massEvidence": "Recipe-listed 100 g, mapped to RIISI PITKÄJYVÄINEN, PUUROUTUMATON (dry uncooked long-grain white rice).",
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 184 g, mapped to Coconut, milk, canned, regular fat (canned regular-fat coconut milk)."
+        },
+        {
+          "name": "pandan",
+          "grams": 150,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "No source-matched composition and preparation was resolved for “pandan”; it is not treated as zero.",
+          "massEvidence": "Recipe-listed 150 g pandan."
+        },
+        {
+          "name": "kananmuna",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 110 g, mapped to KANANMUNA, KUORETON (raw edible egg, shell removed)."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "riisinuudeli",
+          "grams": 100,
+          "fineliRecordId": "fineli-29055-release-20",
+          "giRecordId": "pasta-category-mean-gi-52",
+          "massEvidence": "Recipe-listed 100 g, mapped to NUUDELI, RIISINUUDELI (dry rice noodles).",
+          "foodKey": "pasta-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Pasta category mean: pasta category mean; product and cooking variation remains; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 184 g, mapped to Coconut, milk, canned, regular fat (canned regular-fat coconut milk)."
+        },
+        {
+          "name": "tofu",
+          "grams": 100,
+          "fineliRecordId": "afcd-F009176-release-3",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 100 g, mapped to Tofu (soy bean curd), firm, as purchased (firm soy tofu as purchased)."
+        },
+        {
+          "name": "pavunitu",
+          "grams": 150,
+          "fineliRecordId": "fineli-384-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 150 g, mapped to ITU, KESKIARVO, SINIMAILANEN, MUNGOPAPU (mung-bean sprouts).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "kasvis- tai kanalientä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+          "massEvidence": "Recipe-listed liquid alternative."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "riisikakku",
+          "grams": 100,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "No source-matched composition and preparation was resolved for “riisikakku”; it is not treated as zero.",
+          "massEvidence": "Recipe-listed 100 g riisikakku."
+        },
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 184 g, mapped to Coconut, milk, canned, regular fat (canned regular-fat coconut milk)."
+        },
+        {
+          "name": "kaali",
+          "grams": null,
+          "fineliRecordId": "fineli-33204-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "excludedReason": "The recipe amount 1 kpl has no food-specific mass conversion for KAALI, VALKOKAALI, KEITETTY, SUOLATON.",
+          "massEvidence": "Mapped food state: cooked white cabbage; mass conversion unavailable."
+        },
+        {
+          "name": "tofu",
+          "grams": 100,
+          "fineliRecordId": "afcd-F009176-release-3",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 100 g, mapped to Tofu (soy bean curd), firm, as purchased (firm soy tofu as purchased)."
+        },
+        {
+          "name": "kasvis- tai kanalientä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+          "massEvidence": "Recipe-listed liquid alternative."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "lahi-ita-manakish-zaatarilla",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "vehnäjauho",
+          "grams": 100,
+          "fineliRecordId": "fineli-110-release-20",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Recipe-listed 100 g, mapped to JAUHO, VEHNÄJAUHO, PUOLIKARKEA (semi-coarse wheat flour).",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "zaatar",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+        },
+        {
+          "name": "oliiviöljy",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "jogurtti",
+          "grams": 100,
+          "fineliRecordId": "fineli-619-release-20",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Recipe-listed 100 g, mapped to JOGURTTI, MAUSTAMATON, RASVAA 2,5 %, VL (plain yogurt).",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-minttutee-kaurapuuro",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "kaurahiutale",
+          "grams": 100,
+          "fineliRecordId": "fineli-153-release-20",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Recipe-listed 100 g, mapped to KAURAHIUTALE (dry rolled oats).",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "minttu",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+        },
+        {
+          "name": "maito",
+          "grams": 200,
+          "fineliRecordId": "fineli-684-release-20",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Recipe-listed 200 g, mapped to MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG (plain milk).",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "hunaja",
+          "grams": 20,
+          "fineliRecordId": "fineli-4-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 20 g, mapped to HUNAJA (honey as sold)."
+        },
+        {
+          "name": "maitoa tai vettä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+          "massEvidence": "Recipe-listed liquid alternative."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "malesialainen-mee-goreng-aamunuudeleilla",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "munanuudeli",
+          "grams": 100,
+          "fineliRecordId": "fineli-120-release-20",
+          "giRecordId": "pasta-category-mean-gi-52",
+          "massEvidence": "Recipe-listed 100 g, mapped to NUUDELI, VEHNÄNUUDELI (uncooked wheat noodles).",
+          "foodKey": "pasta-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Pasta category mean: pasta category mean; product and cooking variation remains; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "tofu",
+          "grams": 100,
+          "fineliRecordId": "afcd-F009176-release-3",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 100 g, mapped to Tofu (soy bean curd), firm, as purchased (firm soy tofu as purchased)."
+        },
+        {
+          "name": "kananmuna",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 110 g, mapped to KANANMUNA, KUORETON (raw edible egg, shell removed)."
+        },
+        {
+          "name": "pavunitu",
+          "grams": 150,
+          "fineliRecordId": "fineli-384-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 150 g, mapped to ITU, KESKIARVO, SINIMAILANEN, MUNGOPAPU (mung-bean sprouts).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "meksikolainen-atole-maissipuuro",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "maissijauho",
+          "grams": 100,
+          "fineliRecordId": "fineli-29823-release-20",
+          "giRecordId": "bakery-products-category-mean-gi-58",
+          "massEvidence": "Recipe-listed 100 g, mapped to JAUHO, MAISSIJAUHO, HIENOKSI JAUHETTU (finely ground maize flour).",
+          "foodKey": "bakery-products-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "maito",
+          "grams": 200,
+          "fineliRecordId": "fineli-684-release-20",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Recipe-listed 200 g, mapped to MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG (plain milk).",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "kaneli",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+        },
+        {
+          "name": "vanilja",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+        },
+        {
+          "name": "maitoa tai vettä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+          "massEvidence": "Recipe-listed liquid alternative."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
     }
   ],
   "selectionNotes": {
@@ -15922,7 +17092,37 @@
       "incomplete": 63,
       "notYetReviewed": 104
     },
-    "tenthBatchReview": "Twenty recipes were audited from Finnish structured recipe cards. Seven have complete ingredient totals using Fineli/AFCD available-carbohydrate evidence and published GI category means or documented analogues; these remain low-confidence estimates. Thirteen are withheld because at least one material food, preparation, unit mass, sauce or recipe choice is unresolved. No partial totals are published."
+    "tenthBatchReview": "Twenty recipes were audited from Finnish structured recipe cards. Seven have complete ingredient totals using Fineli/AFCD available-carbohydrate evidence and published GI category means or documented analogues; these remain low-confidence estimates. Thirteen are withheld because at least one material food, preparation, unit mass, sauce or recipe choice is unresolved. No partial totals are published.",
+    "eleventhBatch": "Twenty remaining recipes were selected from Finnish recipe cards for explicit starch, grain, legume and flour ingredients. Recipe quantities are used only for ingredient-level calculations. Composite sauces, liquid alternatives, unsupported ingredient states, implausible quantities and missing GI matches remain explicit blockers; no partial total is published.",
+    "eleventhBatchRecipeIds": [
+      "meksikolainen-quesadilla-sienilla",
+      "valimerellinen-appelsiini-aamiaiskakku",
+      "vietnamilainen-banh-bao-kananmunalla",
+      "japanilainen-dashimaki-tamago-aamiaislautasella",
+      "valimerellinen-halloumi-tomaattileipa",
+      "indonesialainen-bakwan-maissifritter",
+      "japanilainen-kabocha-puuro",
+      "malesialainen-kaya-paahtoleipa",
+      "valimerellinen-farinata-aamupalaksi",
+      "korealainen-kimchi-jeon-aamiaiseksi",
+      "korealainen-tofu-kimchi-aamiaiskulho",
+      "korealainen-jumeokbap-merilevalla",
+      "valimerellinen-tahinipuuro",
+      "malesialainen-kuih-seri-muka",
+      "malesialainen-laksa-lemak-aamiaiseksi",
+      "indonesialainen-lontong-sayur-aamiaiseksi",
+      "lahi-ita-manakish-zaatarilla",
+      "pohjoisafrikkalainen-minttutee-kaurapuuro",
+      "malesialainen-mee-goreng-aamunuudeleilla",
+      "meksikolainen-atole-maissipuuro"
+    ],
+    "progressThroughEleventhBatch": {
+      "totalRecipesInRepository": 325,
+      "reviewed": 241,
+      "calculated": 163,
+      "incomplete": 78,
+      "notYetReviewed": 84
+    }
   },
   "additionalCarbohydrateEvidence": "AFCD Release 3 was used only for chickpea flour in vada pav and pure tamarind paste in pani puri because no matching Fineli foods were found. Source: Food Standards Australia New Zealand, Australian Food Composition Database Release 3, CC BY-SA 3.0 Australia. Values with and without sugar alcohols were equal for both items. This batch also uses AFCD Release 3 items identified by source IDs in the input records where matching Fineli foods were unavailable. AFCD Release 3 Cheese, ricotta (F002488) is used for pasta alla Norma because no matching Fineli record exists. For Semper Pofiber (GTIN 7310100857200), the manufacturer specification reports 17 g available carbohydrate and 65 g fibre per 100 g, 3 g per tablespoon, and approximately 17 g per dl; this product-specific record is used only for the small recipe amount. AFCD Release 3 Vanilla bean extract (F009350) supplies the composition proxy for teaspoon quantities of vanilla extract. AFCD Release 3 is also used in this cohort for spring onion, commercial hoisin, lime juice and pure tamarind paste. Ingredient-level Fineli Rel20 sources are preserved by food IDs in the record table. The eighth batch reuses ingredient-level Fineli Rel20 and AFCD Release 3 records only from existing source calculation files. Unresolved recipe-card quantities and product matches are reported as blockers; no generic piece or product substitution is made. The ninth batch adds FSANZ AFCD Release 3 dried mung beans (F000446; CC BY-SA 3.0 Australia) where Fineli did not contain a matching dried mung-bean record. The corn-tortilla GI analogue is from a published Mexican human-food study (8 participants; bread reference) and is converted to the glucose scale with the 0.71 factor described by International Tables 2021; it is supplementary, low-confidence evidence. The tenth batch uses FSANZ AFCD Release 3 chickpea flour F003986 and dried mung beans F000446, with attribution and licence noted in their records."
 }

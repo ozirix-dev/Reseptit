@@ -65,6 +65,13 @@ const expectedRecipeIds = [
   "karibia-maissipuuro-kookoksella", "japanilainen-soba-aamiaiskeitto", "kiinalainen-jianbing-munaletty",
   "karibia-johnny-cake", "lahi-ita-taatelipuuro-tahinilla", "indonesialainen-ketoprak-aamiaiskulho",
   "thai-kookosriisi-mangolla", "korealainen-bataatti-riisikulho",
+  "meksikolainen-quesadilla-sienilla", "valimerellinen-appelsiini-aamiaiskakku", "vietnamilainen-banh-bao-kananmunalla",
+  "japanilainen-dashimaki-tamago-aamiaislautasella", "valimerellinen-halloumi-tomaattileipa", "indonesialainen-bakwan-maissifritter",
+  "japanilainen-kabocha-puuro", "malesialainen-kaya-paahtoleipa", "valimerellinen-farinata-aamupalaksi",
+  "korealainen-kimchi-jeon-aamiaiseksi", "korealainen-tofu-kimchi-aamiaiskulho", "korealainen-jumeokbap-merilevalla",
+  "valimerellinen-tahinipuuro", "malesialainen-kuih-seri-muka", "malesialainen-laksa-lemak-aamiaiseksi",
+  "indonesialainen-lontong-sayur-aamiaiseksi", "lahi-ita-manakish-zaatarilla", "pohjoisafrikkalainen-minttutee-kaurapuuro",
+  "malesialainen-mee-goreng-aamunuudeleilla", "meksikolainen-atole-maissipuuro",
 ];
 const recipeCategories: Record<string, string> = {
   "tortilla-de-patatas": "paaruoat", "vhh-lihamureke": "paaruoat", hummus: "alkuruoat",
@@ -152,6 +159,16 @@ const recipeCategories: Record<string, string> = {
   "kiinalainen-jianbing-munaletty": "aamupalat", "karibia-johnny-cake": "aamupalat",
   "lahi-ita-taatelipuuro-tahinilla": "aamupalat", "indonesialainen-ketoprak-aamiaiskulho": "aamupalat",
   "thai-kookosriisi-mangolla": "aamupalat", "korealainen-bataatti-riisikulho": "aamupalat",
+  "meksikolainen-quesadilla-sienilla": "aamupalat", "valimerellinen-appelsiini-aamiaiskakku": "aamupalat",
+  "vietnamilainen-banh-bao-kananmunalla": "aamupalat", "japanilainen-dashimaki-tamago-aamiaislautasella": "aamupalat",
+  "valimerellinen-halloumi-tomaattileipa": "aamupalat", "indonesialainen-bakwan-maissifritter": "aamupalat",
+  "japanilainen-kabocha-puuro": "aamupalat", "malesialainen-kaya-paahtoleipa": "aamupalat",
+  "valimerellinen-farinata-aamupalaksi": "aamupalat", "korealainen-kimchi-jeon-aamiaiseksi": "aamupalat",
+  "korealainen-tofu-kimchi-aamiaiskulho": "aamupalat", "korealainen-jumeokbap-merilevalla": "aamupalat",
+  "valimerellinen-tahinipuuro": "aamupalat", "malesialainen-kuih-seri-muka": "aamupalat",
+  "malesialainen-laksa-lemak-aamiaiseksi": "aamupalat", "indonesialainen-lontong-sayur-aamiaiseksi": "aamupalat",
+  "lahi-ita-manakish-zaatarilla": "aamupalat", "pohjoisafrikkalainen-minttutee-kaurapuuro": "aamupalat",
+  "malesialainen-mee-goreng-aamunuudeleilla": "aamupalat", "meksikolainen-atole-maissipuuro": "aamupalat",
 };
 const recipeFileNames: Record<string, string> = { "vhh-kaalilaatikko": "kaalilaatikko" };
 
