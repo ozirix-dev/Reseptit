@@ -325,6 +325,7 @@ const report = {
   previousPublicBaseline: { sourceCommit: "b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5", calculated: 190, insufficientSourceData: 135, zeroTotals: 21, changedRecipeInputsAmongCalculated: 21 },
   giSourceCatalog: giSource.sources,
   sourceHashes,
+  calculationInputHashes,
   calculationEvidenceHashes,
   results,
   summary: {

@@ -145,13 +145,44 @@ test("batch 2A preserves its starting overlap audit and only accepts reviewed cu
   assert.equal(inputById.get("japanilainen-tamago-kake-gohan")?.get("nori")?.grams, 2);
   assert.equal(inputById.get("malesialainen-nasi-lemak-aamiaisella")?.get("kurkku")?.grams, 100);
   assert.equal(inputById.get("thai-kookosriisi-mangolla")?.get("seesaminsiemen")?.grams, 6);
+  assert.equal(inputById.get("thai-kookosriisi-mangolla")?.get("seesaminsiemen")?.giRecordId, null);
   assert.equal(inputById.get("meksikolainen-quesadilla-sienilla")?.get("maissi")?.grams, null);
-  assert.equal(inputById.get("indonesialainen-bakwan-maissifritter")?.get("maissi")?.grams, null);
+  assert.equal(inputById.get("indonesialainen-bakwan-maissifritter")?.get("maissi")?.grams, 100);
+  assert.equal(inputById.get("indonesialainen-bakwan-maissifritter")?.get("maissi")?.fineliRecordId, "afcd-F003209-release-3");
+  assert.equal(inputById.get("indonesialainen-bakwan-maissifritter")?.get("maissi")?.giRecordId, null);
   assert.deepEqual(inputById.get("meksikolainen-quesadilla-sienilla")?.get("maissi")?.recipeQuantity, { amount: 80, unit: "g", massGrams: 80 });
   assert.deepEqual(inputById.get("indonesialainen-bakwan-maissifritter")?.get("maissi")?.recipeQuantity, { amount: 100, unit: "g", massGrams: 100 });
   assert.equal(inputById.get("malesialainen-nasi-lemak-aamiaisella")?.get("kookosmaito")?.grams, null);
+  assert.equal(inputById.get("malesialainen-nasi-lemak-aamiaisella")?.get("kookosmaito")?.fineliRecordId, null);
+  assert.deepEqual(inputById.get("malesialainen-nasi-lemak-aamiaisella")?.get("kookosmaito")?.recipeQuantity, { amount: 200, unit: "ml", massGrams: null });
+  assert.equal(inputById.get("thai-kookosriisi-mangolla")?.get("kookosmaito")?.fineliRecordId, null);
+  assert.deepEqual(inputById.get("thai-kookosriisi-mangolla")?.get("kookosmaito")?.recipeQuantity, { amount: 200, unit: "ml", massGrams: null });
   assert.equal(inputById.get("valimerellinen-farinata-aamupalaksi")?.get("rosmariini")?.estimatedAvailableCarbohydratePerServingG, undefined);
   assert.equal(inputById.get("valimerellinen-farinata-aamupalaksi")?.get("rosmariini")?.availableCarbohydrateUpperBoundPerServingG, 0.1035);
   assert.equal(current.recipes.find((row) => row.recipeId === "meksikolainen-quesadilla-sienilla")?.status, "INSUFFICIENT SOURCE DATA");
   assert.equal(current.recipes.find((row) => row.recipeId === "indonesialainen-bakwan-maissifritter")?.status, "INSUFFICIENT SOURCE DATA");
+});
+
+test("batch 2B1 baseline and current inventory are separate complete 325-recipe snapshots", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const baseline = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b1-baseline.json"), "utf8")) as {
+    sourceCommit: string; recipeCount: number; calculated: number; incomplete: number; giRecordCount: number;
+  };
+  const current = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b1-current.json"), "utf8")) as {
+    previousApprovedBaseline: { sourceCommit: string };
+    currentSummary: { recipeCount: number; calculated: number; incomplete: number; giRecordCount: number; newlyCalculated: number; newlyBlocked: number; changedBlockerRecipes: number; newInputMismatches: number; newEvidenceMismatches: number };
+    recipes: Array<{ recipeId: string; status: string; blockingCategories: string[] }>;
+  };
+  assert.equal(baseline.sourceCommit, "25902326b9fd89a30d8bfe48f2d1cd02879bd9df");
+  assert.deepEqual([baseline.recipeCount, baseline.calculated, baseline.incomplete, baseline.giRecordCount], [325, 117, 208, 38]);
+  assert.equal(current.previousApprovedBaseline.sourceCommit, baseline.sourceCommit);
+  assert.deepEqual([current.currentSummary.recipeCount, current.currentSummary.calculated, current.currentSummary.incomplete, current.currentSummary.giRecordCount], [325, 117, 208, 38]);
+  assert.deepEqual([current.currentSummary.newlyCalculated, current.currentSummary.newlyBlocked, current.currentSummary.changedBlockerRecipes], [0, 0, 3]);
+  assert.equal(current.currentSummary.newInputMismatches, 0);
+  assert.equal(current.currentSummary.newEvidenceMismatches, 0);
+  for (const id of ["meksikolainen-quesadilla-sienilla", "indonesialainen-bakwan-maissifritter", "malesialainen-nasi-lemak-aamiaisella", "thai-kookosriisi-mangolla", "pohjoisafrikkalainen-harissa-shakshuka", "valimerellinen-farinata-aamupalaksi"]) {
+    const row = current.recipes.find((recipe) => recipe.recipeId === id);
+    assert.ok(row, `Batch 2B1 inventory includes ${id}`);
+    assert.equal(row.status, "INSUFFICIENT SOURCE DATA");
+  }
 });

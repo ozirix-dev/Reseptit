@@ -8910,6 +8910,25 @@
     }
   },
   {
+    "id": "afcd-F003209-release-3",
+    "name": "Corn, fresh on cob, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "fresh raw sweetcorn kernels, edible portion",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD Release 3 reports paired available-carbohydrate values with and without sugar alcohols; both are 12.5 g/100 g for this record.",
+    "per100g": {
+      "carbohydrate": 12.5,
+      "fibre": 4.2,
+      "polyols": 0,
+      "protein": 3.6,
+      "fat": 1.8
+    }
+  },
+  {
     "id": "afcd-F009081-release-3",
     "name": "Tamarind, paste, pure",
     "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",

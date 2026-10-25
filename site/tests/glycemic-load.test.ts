@@ -411,6 +411,19 @@ test("positive sub-1 g carbohydrate without GI evidence is included in the discl
   assert.equal(result.blockers.length, 0);
 });
 
+test("6 g sesame across two servings uses the existing sub-1 g editorial tolerance without a nut GI proxy", () => {
+  const result = calculateGlycemicLoad({
+    recipeId: "thai-kookosriisi-mangolla",
+    servings: 2,
+    ingredients: [{ name: "seesaminsiemen", grams: 6, fineliRecordId: "sesame", giRecordId: null }],
+  }, [food("sesame", 0.9)], []);
+  assert.equal(result.status, "CALCULATED");
+  assert.ok(Math.abs(result.omittedAvailableCarbohydratePerServingG - 0.027) < 1e-12);
+  assert.equal(result.ingredients[0].giRecordId, null);
+  assert.equal(result.ingredients[0].confidence, null);
+  assert.equal(result.blockers.length, 0);
+});
+
 test("small contributions accumulate rather than disappearing ingredient by ingredient", () => {
   const ingredients = Array.from({ length: 10 }, (_, i) => ({ name: `food-${i}`, grams: 100, fineliRecordId: `food-${i}`, giRecordId: gi.id, foodKey: "tested-food", preparationKey: "raw", giMatchEvidence: "Exact raw-food match." }));
   const result = calculateGlycemicLoad({ recipeId: "ten-small", servings: 1, ingredients }, ingredients.map((ingredient) => food(ingredient.fineliRecordId, 0.9)), [gi]);

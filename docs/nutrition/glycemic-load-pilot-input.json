@@ -15536,10 +15536,11 @@
         {
           "name": "kookosmaito",
           "grams": null,
-          "fineliRecordId": "afcd-F002991-release-3",
+        "recipeQuantity": { "amount": 200, "unit": "ml", "massGrams": null },
+        "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 200 ml canned coconut milk; mass conversion unresolved.",
-          "excludedReason": "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g."
+        "massEvidence": "Recipe-listed 200 ml coconut milk. The recipe does not specify canned coconut milk versus a coconut drink or full-fat versus reduced-fat product; ingredient identity and mass conversion remain unresolved.",
+        "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
         },
         {
           "name": "mango",
@@ -15555,6 +15556,7 @@
           "name": "seesaminsiemen",
           "grams": 6,
           "fineliRecordId": "fineli-385-release-20",
+          "giRecordId": null,
           "massEvidence": "Current recipe lists 6 g sesame seeds; Fineli sesame record."
         },
         {
@@ -15923,12 +15925,14 @@
       "ingredients": [
         {
           "name": "maissi",
-          "grams": null,
+          "grams": 100,
           "recipeQuantity": { "amount": 100, "unit": "g", "massGrams": 100 },
-          "fineliRecordId": null,
+          "fineliRecordId": "afcd-F003209-release-3",
           "giRecordId": null,
-          "massEvidence": "Recipe-listed amount and mass are known: 100 g fresh corn kernels. The matching food composition record for this preparation is unresolved; this is not a missing-mass estimate.",
-          "excludedReason": "Calculation remains blocked because no source-matched fresh-kernel composition and suitable GI record has been approved. The prior 240 g grilled-cob mapping is incorrect; no substitute state is assumed."
+          "massEvidence": "Recipe-listed 100 g fresh corn kernels are treated as raw edible kernels. AFCD Release 3 F003209 reports raw fresh corn on cob per 100 g edible portion; composition is a source-backed match for the recipe's explicitly fresh kernels before frying. The Australian food record is used as composition evidence only.",
+          "foodKey": "sweet-corn",
+          "preparationKey": "batter-deep-fried",
+          "giMatchEvidence": "No suitable GI source is available for sweetcorn kernels cooked in battered bakwan. Boiled sweetcorn GI measurements are not assigned to the deep-fried batter preparation."
         },
         {
           "name": "porkkana",
@@ -16958,10 +16962,11 @@
         {
           "name": "kookosmaito",
           "grams": null,
-          "fineliRecordId": "afcd-F002991-release-3",
+        "recipeQuantity": { "amount": 200, "unit": "ml", "massGrams": null },
+        "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 200 ml canned coconut milk; mass conversion unresolved.",
-          "excludedReason": "The recipe lists 200 ml canned coconut milk, but no source-backed mass-per-volume conversion is available; do not assume 184 g."
+        "massEvidence": "Recipe-listed 200 ml coconut milk. The recipe does not specify canned coconut milk versus a coconut drink or full-fat versus reduced-fat product; ingredient identity and mass conversion remain unresolved.",
+        "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
         },
         {
           "name": "kananmuna",
