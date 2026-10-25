@@ -147,5 +147,5 @@ const reportLines = [
   "",
 ];
 await writeFile(currentPath, `${JSON.stringify(inventory, null, 2)}\n`, "utf8");
-await writeFile(markdownPath, `${reportLines.join("\n")}\n`, "utf8");
+await writeFile(markdownPath, `${reportLines.join("\n").trimEnd()}\n`, "utf8");
 console.log(JSON.stringify({ sourceCommit, ...summary, historicalStructuralBindingCount: structural.rows.length, withOtherBlockers: structural.withOtherBlockers, output: currentPath, markdown: markdownPath }, null, 2));

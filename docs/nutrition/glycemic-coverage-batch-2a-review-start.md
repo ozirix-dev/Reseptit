@@ -306,4 +306,3 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 - Tämä inventaario kuvaa laskenta-ajon esteitä; se ei itsessään vahvista lähdettä tai korjaa reseptisyötettä.
 - GI-arvoja, GK-kaavaa, alle 1 g:n ainesosarajaa tai alle 2 g:n kumulatiivista toleranssia ei muuteta.
 - Uusi vertailusnapshot käyttää hyväksytyn 5e9cdeb-julkaisun koko 325 reseptin tilaa; historiallista 213 reseptin lähtötiedostoa ei korvata.
-

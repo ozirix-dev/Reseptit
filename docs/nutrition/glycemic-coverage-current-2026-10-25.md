@@ -1,6 +1,6 @@
 # Nykyinen GK-esteinventaario (2026-10-25)
 
-Lähdecommit: `5e9cdeb830f468ecf099e9c286f9344afe3b6b71`. Hyväksytty vertailu: `5e9cdeb830f468ecf099e9c286f9344afe3b6b71` (114 laskettua / 211 keskeneräistä; 38 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
+Lähdecommit: `640eb38f023169445d55d4576c37ae4097a222b2`. Hyväksytty vertailu: `5e9cdeb830f468ecf099e9c286f9344afe3b6b71` (114 laskettua / 211 keskeneräistä; 38 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
 
 Nykyinen ajo kattaa 325 reseptiä: 117 laskettua, 208 keskeneräistä. GI-katalogissa on 38 tietuetta (5 STRONG, 33 SUPPLEMENTARY).
 
@@ -303,4 +303,3 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 - Tämä inventaario kuvaa laskenta-ajon esteitä; se ei itsessään vahvista lähdettä tai korjaa reseptisyötettä.
 - GI-arvoja, GK-kaavaa, alle 1 g:n ainesosarajaa tai alle 2 g:n kumulatiivista toleranssia ei muuteta.
 - Uusi vertailusnapshot käyttää hyväksytyn 5e9cdeb-julkaisun koko 325 reseptin tilaa; historiallista 213 reseptin lähtötiedostoa ei korvata.
-

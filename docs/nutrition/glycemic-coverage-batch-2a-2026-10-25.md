@@ -4,7 +4,7 @@
 
 Tämä on rajattu katselmointi historiallisen GK-työjonon 51 vanhentuneesta reseptisidonnasta ja enintään kymmenestä valitusta korjauksesta. GI/GK-mallia, 1 g:n yksittäistä pienosuusrajaa tai 2 g:n kumulatiivista toimituksellista toleranssia ei muutettu. Kliinistä tarkkuutta ei väitetä.
 
-Työ tehtiin Reseptit-repon ajantasaisesta main-committista `5e9cdeb830f468ecf099e9c286f9344afe3b6b71`, haarassa `codex/glycemic-coverage-batch-2a` ja erillisessä työpuussa `D:\Projects\Products\Reseptit-glycemic-coverage-batch-2a`. Alkuperäinen erän 1 inventaario on säilytetty ennallaan.
+Työ tehtiin Reseptit-repon ajantasaisesta main-committista `5e9cdeb830f468ecf099e9c286f9344afe3b6b71`, haarassa `codex/glycemic-coverage-batch-2a` ja erillisessä työpuussa `D:\Projects\Products\Reseptit-glycemic-coverage-batch-2a`. Arvioitu syöte- ja työkalurevisio on `640eb38f023169445d55d4576c37ae4097a222b2`; nykyinventaarion `sourceCommit` sitoo laskennan tähän commit-tunnisteeseen. Alkuperäinen erän 1 inventaario on säilytetty ennallaan.
 
 ## Lähtötilanne ja inventaariot
 
