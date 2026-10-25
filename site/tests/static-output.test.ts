@@ -5,7 +5,7 @@ import test from "node:test";
 import { recipeUi } from "../src/features/recipes/recipe-i18n";
 import { toolUi } from "../src/features/recipes/recipe-tools";
 import { siteContent } from "../src/generated/content.generated";
-import { glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
+import { glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
 
@@ -86,7 +86,8 @@ test("recipe index is prerendered and links only published languages", async () 
 });
 
 test("GK values link to centralized recipe details on every published translation", async () => {
-  assert.equal(glycemicLoadPilotResults.length, 300);
+  assert.equal(glycemicLoadPilotReviewedRecipeCount, 325);
+  assert.equal(glycemicLoadPilotResults.length, 324);
   const batch13Ids = [
     "karibia-bammy-kassavaleipa", "kiinalainen-musta-seesamipuuro", "meksikolainen-munakokkeli-pico-de-gallolla",
     "karibia-mango-limejogurtti", "thai-papaijajogurtti", "intialainen-pinaatti-paneer-chilla",
@@ -124,6 +125,36 @@ test("GK values link to centralized recipe details on every published translatio
     ["meksikolainen-huevos-a-la-mexicana", 0.67],
   ]);
   assert.equal(batch14Results.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 12);
+  const batch15Ids = [
+    "karibia-ackee-ja-suolakala", "karibia-callaloo-munakas", "korealainen-gyeran-mari-kasviksilla",
+    "japanilainen-hojicha-jogurtti-persimonilla", "karibia-jamaikalainen-munakokkeli", "lahi-ita-labneh-kulho-zaatarilla",
+    "pellava-puuro-pahkinoilla", "lahi-ita-menemen-sumakilla", "pohjoisafrikkalainen-harissa-shakshuka",
+    "valimerellinen-pinaatti-fetashakshuka", "kiinalainen-teehaudutetut-munat", "thai-kai-jiao-yrteilla",
+    "yrttituorejuusto-kinkkurullat", "carnitas-salaattitacot", "rogan-josh", "kreikkalainen-kanavuoka-oliiveilla",
+    "kana-tagine-sitruunalla", "miso-lohi-paksoi", "palak-paneer", "shoyu-kanakeitto-konjac",
+    "hunaja-sinappikana-kaalilla", "siskonmakkarakeitto-juurekset", "tandoorikana", "vhh-pyttipannu",
+  ];
+  const batch15Results = glycemicLoadPilotResults.filter((result) => batch15Ids.includes(result.recipeId));
+  assert.equal(batch15Results.length, 24);
+  const calculatedBatch15 = batch15Results.filter((result) => result.status === "CALCULATED");
+  assert.deepEqual(calculatedBatch15.map((result) => [result.recipeId, result.glycemicLoadPerServing]), [
+    ["karibia-callaloo-munakas", 0.18],
+    ["korealainen-gyeran-mari-kasviksilla", 1.19],
+    ["karibia-jamaikalainen-munakokkeli", 0.47],
+    ["lahi-ita-menemen-sumakilla", 1.32],
+    ["valimerellinen-pinaatti-fetashakshuka", 0.47],
+    ["kiinalainen-teehaudutetut-munat", 0],
+    ["thai-kai-jiao-yrteilla", 0],
+    ["yrttituorejuusto-kinkkurullat", 0],
+    ["rogan-josh", 0.88],
+    ["kreikkalainen-kanavuoka-oliiveilla", 0.47],
+    ["kana-tagine-sitruunalla", 0],
+    ["palak-paneer", 0.94],
+    ["tandoorikana", 0.88],
+  ]);
+  assert.equal(batch15Results.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 11);
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, 190);
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, 134);
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
     assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);

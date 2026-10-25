@@ -12402,5 +12402,282 @@
       "protein": 0.7,
       "fat": 0
     }
+  },
+  {
+    "id": "afcd-F006198-release-3",
+    "name": "Olive, green or black, drained",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "black or green olives, drained; closest AFCD match",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Available carbohydrate values with and without sugar alcohols are paired in AFCD Release 3.",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 3.2,
+      "polyols": 0,
+      "protein": 2.2,
+      "fat": 21.7
+    }
+  },
+  {
+    "id": "fineli-11211-release-20",
+    "name": "JUUSTO, FETAJUUSTO, RASVAA 25 %, VUOHENMAITO, SUOLALIEMESSÄ",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11211",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "feta cheese in brine, 25% fat, goat milk",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 1.2,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 1.2,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 18,
+      "fat": 25
+    },
+    "portionMassG": {
+      "DL": 60
+    }
+  },
+  {
+    "id": "afcd-F009125-release-3",
+    "name": "Tea, regular, black, brewed from leaf or teabags, without milk",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "black tea brewed from leaf or teabag, plain; recipe context is tea marinade",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Available carbohydrate values with and without sugar alcohols are paired in AFCD Release 3.",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 0.1,
+      "fat": 0
+    }
+  },
+  {
+    "id": "afcd-F005074-release-3",
+    "name": "Lamb, roasting piece, shoulder, lean, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "raw lamb roasting-piece shoulder, lean; closest AFCD cut match, 0 g available carbohydrate",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Available carbohydrate values with and without sugar alcohols are paired in AFCD Release 3.",
+    "per100g": {
+      "carbohydrate": 0,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 18.2,
+      "fat": 4.3
+    }
+  },
+  {
+    "id": "fineli-33023-release-20",
+    "name": "INKIVÄÄRI, JUURAKKO, RAAKA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/33023",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "fresh raw ginger rhizome",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 15.77,
+      "FIBT": 2,
+      "POLYL": null
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "Fineli Rel20 does not report a polyol value for this food.",
+    "per100g": {
+      "carbohydrate": 15.77,
+      "fibre": 2,
+      "polyols": null,
+      "protein": 1.82,
+      "fat": 0.75
+    },
+    "portionMassG": {
+      "KPL_M": 180
+    }
+  },
+  {
+    "id": "afcd-F005973-release-3",
+    "name": "Mustard, cream style",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "cream-style mustard; closest sourced match for Dijon mustard",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Available carbohydrate values with and without sugar alcohols are paired in AFCD Release 3.",
+    "per100g": {
+      "carbohydrate": 6.2,
+      "fibre": 4.1,
+      "polyols": 0,
+      "protein": 5.8,
+      "fat": 3.1
+    }
+  },
+  {
+    "id": "fineli-33038-release-20",
+    "name": "SHARON, KAKI, PERSIMON",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/33038",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "raw Sharon kaki persimmon, as sold",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 16,
+      "FIBT": null,
+      "POLYL": null
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "Fineli Rel20 does not report a polyol value for this food.",
+    "per100g": {
+      "carbohydrate": 16,
+      "fibre": null,
+      "polyols": null,
+      "protein": 0.6,
+      "fat": 0.2
+    },
+    "portionMassG": {
+      "KPL_S": 200,
+      "KPL_M": 240,
+      "KPL_L": 320
+    }
+  },
+  {
+    "id": "afcd-F008210-release-3",
+    "name": "Seed, linseed or flaxseed",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "linseed/flaxseed meal; whole-seed composition proxy, available carbohydrate is below 1 g per serving",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Available carbohydrate values with and without sugar alcohols are paired in AFCD Release 3.",
+    "per100g": {
+      "carbohydrate": 2.8,
+      "fibre": 32.9,
+      "polyols": 0,
+      "protein": 21.6,
+      "fat": 32.6
+    }
+  },
+  {
+    "id": "afcd-F007619-release-3",
+    "name": "Raspberry, raw",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "retrievedAt": "2026-10-25",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "fresh raw raspberries",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Available carbohydrate values with and without sugar alcohols are paired in AFCD Release 3.",
+    "per100g": {
+      "carbohydrate": 7,
+      "fibre": 4.8,
+      "polyols": 0.09999999999999964,
+      "protein": 1.1,
+      "fat": 0.3
+    }
+  },
+  {
+    "id": "fineli-30369-release-20",
+    "name": "RAAKAMAKKARA, SISKONMAKKARA",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30369",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "raw siskonmakkara fresh sausage; Fineli available carbohydrate 0.908 g/100 g",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 0.908,
+      "FIBT": 0.028,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 0.908,
+      "fibre": 0.028,
+      "polyols": 0,
+      "protein": 10.01,
+      "fat": 16.725
+    },
+    "portionMassG": {
+      "KPL_M": 35
+    }
+  },
+  {
+    "id": "fineli-34765-release-20",
+    "name": "TUOREJUUSTO, RASVAA 20 %, MAUSTAMATON",
+    "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34765",
+    "retrievedAt": "2026-10-25",
+    "licence": "THL, Fineli Release 20, CC BY 4.0",
+    "state": "plain cream cheese, 20% fat",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "componentValues": {
+      "CHO": 3.735,
+      "FIBT": 0,
+      "POLYL": 0
+    },
+    "componentIds": {
+      "CHO": 2034,
+      "FIBT": 2168,
+      "POLYL": 2260
+    },
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+    "per100g": {
+      "carbohydrate": 3.735,
+      "fibre": 0,
+      "polyols": 0,
+      "protein": 4.09,
+      "fat": 20.032
+    },
+    "portionMassG": {
+      "DL": 100,
+      "RKL": 15
+    }
   }
 ]
