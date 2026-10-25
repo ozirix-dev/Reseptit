@@ -56,6 +56,20 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/10824718/",
       "year": 2000,
       "use": "Published human study of corn and wheat tortillas and tortilla meals; small study (8 healthy participants) used bread as reference. GI values converted to the glucose scale by the 0.71 bread-to-glucose conversion described in International Tables 2021; treated as supplementary evidence."
+    },
+    {
+      "id": "rozanska-mikos-regulska-ilow-2020-groats",
+      "title": "Assessment of the glycemic index of groats available on the Polish food market",
+      "url": "https://doi.org/10.32394/rpzh.2020.0101",
+      "year": 2020,
+      "use": "Published supplementary human GI measurements of couscous and millet groats; n=8 per food, glucose reference; not ISO 26642-confirmed."
+    },
+    {
+      "id": "chan-brand-miller-holt-2001-vietnamese-foods",
+      "title": "The glycaemic index values of Vietnamese foods",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
+      "year": 2001,
+      "use": "Published supplementary human GI values for Vietnamese foods; includes dried rice noodles boiled (GI 61), n=12, glucose reference; each food was tested once."
     }
   ],
   "records": [
@@ -812,6 +826,79 @@
         "qualityEvidence": "Published human food test, but only eight healthy subjects and a bread reference were used; glucose-scale conversion is an estimate, not an ISO-confirmed row."
       },
       "note": "Single published regional study; conversion to glucose scale uses the 0.71 factor described in International Tables 2021. Low confidence."
+    },
+    {
+      "id": "couscous-groats-rozanska-2020-gi-99",
+      "gi": 99,
+      "foodKey": "couscous-groats",
+      "preparationKey": "cooked-couscous-unspecified",
+      "food": "Couscous groats",
+      "preparation": "Cooked couscous groats; source does not identify the exact product brand or recipe preparation",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "source": {
+        "title": "Assessment of the glycemic index of groats available on the Polish food market",
+        "url": "https://doi.org/10.32394/rpzh.2020.0101",
+        "table": "Table 4; mean GI 99.0 ± 36.0; 50 g available-carbohydrate portion; glucose reference described in Polish abstract",
+        "year": 2020,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 8,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published human test of Polish-market couscous groats; n=8 and wide variation (SD 36); not ISO 26642-confirmed. Preparation and brand matching are limited."
+      },
+      "note": "Use only as a low-confidence couscous analogue; study mean has high variability and unspecified product/preparation."
+    },
+    {
+      "id": "millet-groats-rozanska-2020-gi-56-2",
+      "gi": 56.2,
+      "foodKey": "millet-groats",
+      "preparationKey": "cooked-millet-groats",
+      "food": "Millet groats",
+      "preparation": "Cooked millet groats; source product and exact cooking method not fully matched",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "source": {
+        "title": "Assessment of the glycemic index of groats available on the Polish food market",
+        "url": "https://doi.org/10.32394/rpzh.2020.0101",
+        "table": "Table 4; mean GI 56.2 ± 20.6; 50 g available-carbohydrate portion; glucose reference described in Polish abstract",
+        "year": 2020,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 8,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published human test of Polish-market millet groats; n=8 and wide variation (SD 20.6); not ISO 26642-confirmed. Exact millet cultivar and cooking details are not matched."
+      },
+      "note": "Low-confidence cooked-millet analogue; source reports a wide GI range."
+    },
+    {
+      "id": "rice-noodles-dried-boiled-chan-2001-gi-61",
+      "gi": 61,
+      "foodKey": "rice-noodles-dried",
+      "preparationKey": "dried-rice-noodles-boiled",
+      "food": "Rice noodles, dried",
+      "preparation": "Dried commercial rice noodles, boiled (Thai World brand)",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "EXACT",
+      "confidence": "LOW",
+      "source": {
+        "title": "The glycaemic index values of Vietnamese foods",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
+        "table": "Published study; rice-noodle values reported in the University of Sydney GI Search database; Thai World dried rice noodles boiled, GI 61",
+        "year": 2001,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 12,
+        "referenceFood": "Glucose",
+        "testDurationHours": 2,
+        "qualityEvidence": "Published human test in 12 healthy adults using a glucose reference and specified capillary time points; each food was tested once and not ISO 26642-confirmed."
+      },
+      "note": "Brand and noodle match is close; actual recipe broth/cooking can alter the response. Low confidence."
     }
   ]
 }
