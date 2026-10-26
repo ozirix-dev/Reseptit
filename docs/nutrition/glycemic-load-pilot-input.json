@@ -2394,11 +2394,9 @@
           "name": "tomaattimurskaa",
           "grams": 400,
           "fineliRecordId": "fineli-398-2026-10-24",
-          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "giRecordId": null,
           "massEvidence": "Ingredient mapped to fineli-release-20 record 398; source state: canned crushed tomato.",
-          "giMatchEvidence": "Published GI analogue/category record tomato-raw-cooked-sauce-analogue-gi-22; source and limitations are listed centrally.",
-          "foodKey": "tomato",
-          "preparationKey": "whole-raw"
+          "giMatchEvidence": "Canned crushed tomato has no preparation-matched GI source. The whole raw tomato GI analogue is removed; raw whole tomato is not cooked crushed tomato."
         },
         {
           "name": "vihreitä oliiveja",
@@ -2412,13 +2410,13 @@
         },
         {
           "name": "kapriksia",
-          "grams": 9,
+          "grams": 8.6,
           "fineliRecordId": "afcd-F002220-2026-10-24",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Ingredient-specific tablespoon mass estimate for kapriksia.",
-          "giMatchEvidence": "Published GI analogue/category record vegetables-category-mean-gi-66; source and limitations are listed centrally.",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category"
+          "massEvidence": "USDA FDC SR Legacy #172238, canned drained capers: 1 tbsp = 8.6 g.",
+          "excludedReason": "No matched GI source; omitted only under the existing sub-1 g ingredient and under-2 g cumulative editorial tolerance.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.10535,
+          "upperBoundEvidence": "AFCD Release 3 F002220, drained capers: 1.7 g available carbohydrate + 3.2 g fibre per 100 g. Conservative total-carbohydrate bound: 8.6 g batch × 4.9 g/100 g ÷ 4 servings = 0.10535 g/serving.",
+          "giRecordId": null
         },
         {
           "name": "punaviinietikkaa",
@@ -2669,11 +2667,11 @@
           "name": "kuivahiivaa",
           "grams": 7,
           "fineliRecordId": null,
-          "giRecordId": null,
           "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Excluded minor dry yeast seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
-          "estimatedAvailableCarbohydratePerServingG": 0.4,
-          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0.4 g per serving; kept below the pilot 1 g cutoff."
+          "excludedReason": "No suitable yeast GI source is recorded; retained as a bounded small contribution under the existing tolerance.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.72135,
+          "upperBoundEvidence": "USDA FoodData Central SR Legacy FDC 175043, active dry baker’s yeast: 41.22 g total carbohydrate/100 g (includes fibre). Conservative bound: 7 g batch × 41.22 g/100 g ÷ 4 servings = 0.72135 g/serving.",
+          "giRecordId": null
         },
         {
           "name": "sokeria",
@@ -2730,21 +2728,19 @@
           "name": "raastettua inkivääriä",
           "grams": 6,
           "fineliRecordId": "afcd-F004213-2026-10-24",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Ingredient-specific tablespoon mass: 6 g/rkl for raastettua inkivääriä.",
-          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category"
+          "massEvidence": "USDA FDC SR Legacy #169231, raw ginger root household measure: 1 tbsp grated = 6 g.",
+          "excludedReason": "The broad vegetable-category GI proxy is not ingredient-specific; omitted only under the existing small-contribution tolerance.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.114,
+          "upperBoundEvidence": "AFCD Release 3 F004213, fresh ginger: 4.8 g available carbohydrate + 2.8 g fibre per 100 g. Conservative total-carbohydrate bound: 6 g batch × 7.6 g/100 g ÷ 4 servings = 0.114 g/serving.",
+          "giRecordId": null
         },
         {
           "name": "maissitärkkelystä",
           "grams": 8,
           "fineliRecordId": "fineli-162-2026-10-24",
-          "giRecordId": "potatoes-category-mean-gi-71",
+          "giRecordId": null,
           "massEvidence": "Ingredient-specific tablespoon mass: 8 g/rkl for maissitärkkelystä.",
-          "giMatchEvidence": "Ingredient-category match: Potatoes and potato products category mean; potato category mean; this is not preparation-specific",
-          "foodKey": "potatoes-category-mean",
-          "preparationKey": "category-mean"
+          "giMatchEvidence": "Potato-products category mean is not a valid match for cornstarch; remove the unrelated GI mapping."
         }
       ]
     },
@@ -2893,11 +2889,9 @@
           "name": "tomaattimurskaa",
           "grams": 400,
           "fineliRecordId": "fineli-398-2026-10-24",
-          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "giRecordId": null,
           "massEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato.",
-          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
-          "foodKey": "tomato",
-          "preparationKey": "whole-raw"
+          "giMatchEvidence": "Canned crushed tomato has no preparation-matched GI source. The whole raw tomato GI analogue is removed; raw whole tomato is not cooked crushed tomato."
         },
         {
           "name": "valkosipulinkynttä",
@@ -2920,11 +2914,11 @@
           "name": "tuoretta basilikaa",
           "grams": 20,
           "fineliRecordId": "afcd-F000396-2026-10-24",
-          "giRecordId": "vegetables-category-mean-gi-66",
           "massEvidence": "tuoretta basilikaa maps to afcd-release-3 record F000396; state: fresh basil.",
-          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category"
+          "excludedReason": "The broad vegetable-category GI proxy is not ingredient-specific; omitted only under the existing small-contribution tolerance.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.175,
+          "upperBoundEvidence": "AFCD Release 3 F000396, fresh basil: 0.2 g available carbohydrate + 3.3 g fibre per 100 g. Conservative total-carbohydrate bound: 20 g batch × 3.5 g/100 g ÷ 4 servings = 0.175 g/serving.",
+          "giRecordId": null
         },
         {
           "name": "suolaista ricottaa",
@@ -3254,11 +3248,9 @@
           "name": "tomaattimurskaa",
           "grams": 400,
           "fineliRecordId": "fineli-398-2026-10-24",
-          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "giRecordId": null,
           "massEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato.",
-          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
-          "foodKey": "tomato",
-          "preparationKey": "whole-raw"
+          "giMatchEvidence": "Canned crushed tomato has no preparation-matched GI source. The whole raw tomato GI analogue is removed; raw whole tomato is not cooked crushed tomato."
         },
         {
           "name": "kuivattuja vihreitä linssejä",
@@ -3289,13 +3281,13 @@
         },
         {
           "name": "jauhettua inkivääriä",
-          "grams": 2,
+          "grams": 1.8,
           "fineliRecordId": "afcd-F004210-2026-10-24",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for jauhettua inkivääriä.",
-          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category"
+          "massEvidence": "USDA FDC SR Legacy #170926, ground ginger household measure: 1 tsp = 1.8 g.",
+          "excludedReason": "The broad vegetable-category GI proxy is not ingredient-specific; omitted only under the existing small-contribution tolerance.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.2148,
+          "upperBoundEvidence": "AFCD Release 3 F004210, ground dried ginger: 57.5 g available carbohydrate + 14.1 g fibre per 100 g. USDA FDC SR Legacy #170926 lists 1 tsp ground ginger as 1.8 g. Conservative total-carbohydrate bound: 1.8 g batch × 71.6 g/100 g ÷ 6 servings = 0.2148 g/serving.",
+          "giRecordId": null
         },
         {
           "name": "kurkumaa",
@@ -5114,11 +5106,9 @@
           "name": "mantelijauhoa",
           "grams": 120,
           "fineliRecordId": "afcd-F006077-2026-10-24",
-          "giRecordId": "bakery-products-category-mean-gi-58",
+          "giRecordId": null,
           "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-          "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-          "foodKey": "bakery-products-category-mean",
-          "preparationKey": "category-mean"
+          "giMatchEvidence": "Bakery-products category mean is not a demonstrated match for almond meal; remove the unsupported GI proxy."
         },
         {
           "name": "voita",
@@ -5155,11 +5145,11 @@
           "name": "kardemummaa",
           "grams": 2,
           "fineliRecordId": "afcd-F002258-2026-10-24",
-          "giRecordId": "nuts-category-mean-gi-22",
-          "massEvidence": "Ingredient-specific teaspoon mass estimate for kardemummaa.",
-          "giMatchEvidence": "Published Nuts, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-          "foodKey": "peanut",
-          "preparationKey": "nuts-category-mean"
+          "massEvidence": "USDA FDC SR Legacy #170919, ground cardamom household measure: 1 tsp = 2 g.",
+          "excludedReason": "The peanut/nut-category GI proxy is not a valid spice match; omitted only under the existing small-contribution tolerance.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.208,
+          "upperBoundEvidence": "AFCD Release 3 F002258, ground cardamom: 34.4 g available carbohydrate + 28 g fibre per 100 g. Conservative total-carbohydrate bound: 2 g batch × 62.4 g/100 g ÷ 6 servings = 0.208 g/serving.",
+          "giRecordId": null
         },
         {
           "name": "leivinjauhetta",
@@ -12676,9 +12666,11 @@
           "name": "inkivääri",
           "grams": 2,
           "fineliRecordId": "afcd-F004213-release-3",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "One teaspoon finely grated fresh ginger represented as 2 g.",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "massEvidence": "USDA FDC SR Legacy #169231, raw ginger root household measure: 1 tsp = 2 g.",
+          "excludedReason": "The broad vegetable-category GI proxy is not ingredient-specific; omitted only under the existing small-contribution tolerance.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.076,
+          "upperBoundEvidence": "AFCD Release 3 F004213, fresh ginger: 4.8 g available carbohydrate + 2.8 g fibre per 100 g. Conservative total-carbohydrate bound: 2 g batch × 7.6 g/100 g ÷ 2 servings = 0.076 g/serving.",
+          "giRecordId": null
         },
         {
           "name": "kananmuna",
@@ -15536,11 +15528,15 @@
         {
           "name": "kookosmaito",
           "grams": null,
-        "recipeQuantity": { "amount": 200, "unit": "ml", "massGrams": null },
-        "fineliRecordId": null,
+          "recipeQuantity": {
+            "amount": 200,
+            "unit": "ml",
+            "massGrams": null
+          },
+          "fineliRecordId": null,
           "giRecordId": null,
-        "massEvidence": "Recipe-listed 200 ml coconut milk. The recipe does not specify canned coconut milk versus a coconut drink or full-fat versus reduced-fat product; ingredient identity and mass conversion remain unresolved.",
-        "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
+          "massEvidence": "Recipe-listed 200 ml coconut milk. The recipe does not specify canned coconut milk versus a coconut drink or full-fat versus reduced-fat product; ingredient identity and mass conversion remain unresolved.",
+          "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
         },
         {
           "name": "mango",
@@ -15656,7 +15652,11 @@
         {
           "name": "maissi",
           "grams": null,
-          "recipeQuantity": { "amount": 80, "unit": "g", "massGrams": 80 },
+          "recipeQuantity": {
+            "amount": 80,
+            "unit": "g",
+            "massGrams": 80
+          },
           "fineliRecordId": null,
           "giRecordId": null,
           "massEvidence": "Recipe-listed amount and mass are known: 80 g corn kernels. The matching food composition and preservation/cooking state are unresolved; this is not a missing-mass estimate.",
@@ -15926,7 +15926,11 @@
         {
           "name": "maissi",
           "grams": 100,
-          "recipeQuantity": { "amount": 100, "unit": "g", "massGrams": 100 },
+          "recipeQuantity": {
+            "amount": 100,
+            "unit": "g",
+            "massGrams": 100
+          },
           "fineliRecordId": "afcd-F003209-release-3",
           "giRecordId": null,
           "massEvidence": "Recipe-listed 100 g fresh corn kernels are treated as raw edible kernels. AFCD Release 3 F003209 reports raw fresh corn on cob per 100 g edible portion; composition is a source-backed match for the recipe's explicitly fresh kernels before frying. The Australian food record is used as composition evidence only.",
@@ -16962,11 +16966,15 @@
         {
           "name": "kookosmaito",
           "grams": null,
-        "recipeQuantity": { "amount": 200, "unit": "ml", "massGrams": null },
-        "fineliRecordId": null,
+          "recipeQuantity": {
+            "amount": 200,
+            "unit": "ml",
+            "massGrams": null
+          },
+          "fineliRecordId": null,
           "giRecordId": null,
-        "massEvidence": "Recipe-listed 200 ml coconut milk. The recipe does not specify canned coconut milk versus a coconut drink or full-fat versus reduced-fat product; ingredient identity and mass conversion remain unresolved.",
-        "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
+          "massEvidence": "Recipe-listed 200 ml coconut milk. The recipe does not specify canned coconut milk versus a coconut drink or full-fat versus reduced-fat product; ingredient identity and mass conversion remain unresolved.",
+          "excludedReason": "The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
         },
         {
           "name": "kananmuna",

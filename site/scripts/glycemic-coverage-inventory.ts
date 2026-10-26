@@ -45,6 +45,7 @@ const baselineInputPath = option("--baseline", "docs/nutrition/glycemic-coverage
 const currentOutputPath = option("--output-json", "docs/nutrition/glycemic-coverage-current-2026-10-25.json")!;
 const markdownOutputPath = option("--output-markdown", "docs/nutrition/glycemic-coverage-current-2026-10-25.md")!;
 const batchBaselinePath = option("--capture-batch-baseline", "");
+const batch2B2BaselinePath = option("--capture-batch-2b2-baseline", "");
 const readJson = async <T>(relativePath: string): Promise<T> => JSON.parse(await readFile(path.join(root, relativePath), "utf8")) as T;
 
 const [pilot, nutrition, inputs, giCatalog, historical, reviewStart] = await Promise.all([
@@ -150,6 +151,34 @@ if (batchBaselinePath) {
   if (baseline.recipeCount !== 325 || baseline.calculated !== 117 || baseline.incomplete !== 208) throw new Error("Batch 2B1 baseline does not match the approved 325 / 117 / 208 starting point.");
   await writeFile(batchBaselinePath, `${JSON.stringify(baseline, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
   console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, output: batchBaselinePath }, null, 2));
+  process.exit(0);
+}
+
+if (batch2B2BaselinePath) {
+  const expectedSourceCommit = "66ba0464bd0099c2318ce9b5cd1ae3ca0bd841cd";
+  if (sourceCommit !== expectedSourceCommit) throw new Error(`Batch 2B2 baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
+  try {
+    await readFile(batch2B2BaselinePath, "utf8");
+    throw new Error(`Refusing to overwrite existing batch baseline: ${batch2B2BaselinePath}`);
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+  }
+  const baseline = buildBaselineSnapshot({
+    sourceCommit,
+    results: pilot.results,
+    sourceHashes: pilot.sourceHashes,
+    calculationInputHashes,
+    calculationEvidenceHashes: pilot.calculationEvidenceHashes,
+    giRecordCount: giCatalog.records.length,
+    giTierCounts,
+    nutritionAuditCounts: nutrition.counts,
+    nutritionStatuses,
+  });
+  if (baseline.recipeCount !== 325 || baseline.calculated !== 117 || baseline.incomplete !== 208 || baseline.giRecordCount !== 38) {
+    throw new Error("Batch 2B2 baseline does not match the approved 325 / 117 / 208 / 38 starting point.");
+  }
+  await writeFile(batch2B2BaselinePath, `${JSON.stringify(baseline, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
+  console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, giRecordCount: baseline.giRecordCount, output: batch2B2BaselinePath }, null, 2));
   process.exit(0);
 }
 
