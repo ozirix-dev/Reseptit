@@ -70,7 +70,7 @@ Kaksi reseptiä valittiin tarkempaan tarkistukseen (raja oli enintään kahdeksa
 ### karibia-mango-limejogurtti
 
 - Lähtöesto: raakamangon 12,6 g käytettävissä olevaa hiilihydraattia annosta kohti oli sidottu GI-arvoon 51, joka oli laajan 105 hedelmätuotteen kategorian keskiarvo. Sidontateksti väitti keskiarvon olevan tamarinditahnan analogia. Reseptissä on 200 g kuorittua raakaa mangoa kahdelle annokselle.
-- Lähde: Atkinson ym. kokoaa *International tables of glycemic index and glycemic load values* -taulukon 2 merkintään 412 raakaa mangoa koskevan kolmen tutkimuksen keskiarvon GI 51 ± 5 (glukoosi = 100). Merkinnän tutkimuksissa oli eri mangoja ja tutkittavia; keskiarvo ei ole tämän reseptin tai aterian mittaus. Reseptille käytetään SUPPLEMENTARY/ANALOG/LOW-luokitusta.
+- Lähde: Foster-Powell, Holt ja Brand-Miller kokoavat *International table of glycemic index and glycemic load values* -taulukon 2 merkintään 412 raakaa mangoa koskevan kolmen tutkimuksen keskiarvon GI 51 ± 5 (glukoosi = 100). Merkinnän tutkimuksissa oli eri mangoja ja tutkittavia; keskiarvo ei ole tämän reseptin tai aterian mittaus. Reseptille käytetään SUPPLEMENTARY/ANALOG/LOW-luokitusta.
 - Reseptin ainemääriä, annoskokoa ja mangoaineksen 200 g määrää ei muutettu. Koostumustietue säilyy AFCD F005299 (kuorittu raaka mango).
 - Lime ja kookoshiutale jätetään nykyisen toimituksellisen toleranssin mukaisesti pois: yhteensä 0,730 g käytettävissä olevaa hiilihydraattia/annos (0,090 g limeä ja 0,640 g kookoshiutaleita). Tämä on toimituksellinen toleranssi, ei kliininen tarkkuusraja.
 - Tulos: mallin GK-arvio 7,3/annos ja näkyvä yhden merkitsevän numeron arvo 7, LOW-luottamus. Laskentaan sisältyvien GI-osuuksien summa ennen mallin esityspyöristystä on 7,301. Pienosuuksien yhteisvaikutus on raportoitu. Aiemmin arviota ei ollut; luokittelun tulkinta muuttuu uuden arvion myötä, mutta aiempien numeeristen GK-arvojen merkityksellisesti muuttuneita tapauksia tästä reseptistä on 0.
@@ -87,7 +87,7 @@ Hyväksytty mango-osuma perustuu julkaistuun, ruoka-ainekohtaiseen keskiarvoon, 
 
 Lähdeviitteet:
 
-- Atkinson ym. 2002, *International table of glycemic index and glycemic load values*, taulukko 2, raakaa mangoa koskeva merkintä 412, keskiarvo 51 ± 5: [American Journal of Clinical Nutrition](https://doi.org/10.1093/ajcn/76.1.5).
+- Foster-Powell, Holt ja Brand-Miller 2002, *International table of glycemic index and glycemic load values*, taulukko 2, raakaa mangoa koskeva merkintä 412, keskiarvo 51 ± 5: [American Journal of Clinical Nutrition](https://doi.org/10.1093/ajcn/76.1.5).
 - Guevarra & Panlasigui 2000, kontrolloitu ihmistutkimus (n=10, tyypin 2 diabetes; mango GI 59, 25 g saatavilla olevaa hiilihydraattia): [Asia Pacific Journal of Clinical Nutrition](https://onlinelibrary.wiley.com/doi/10.1046/j.1440-6047.2000.00159.x). Yksittäistä tulosta ei käytetty mango-yleisarvona, koska reseptin lajiketta ei tunneta.
 - Atkinson ym. 2021:n supplemental-taulukossa on Chin-Hwang-mangon yksittäinen lajikemittaus GI 48 ± 0,3 (n=7), mutta reseptin lajiketta ei ole määritelty. Siksi sitä ei sidottu tähän reseptiin: [2021 supplemental table](https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf).
 
