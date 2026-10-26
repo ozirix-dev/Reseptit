@@ -4,7 +4,7 @@
 
 Erä aloitettiin Reseptit-mainista `66ba0464bd0099c2318ce9b5cd1ae3ca0bd841cd`. Lähtösnapshot on [`glycemic-coverage-batch-2b2-baseline.json`](glycemic-coverage-batch-2b2-baseline.json): 325 reseptiä, joista 117 laskettiin ja 208 jäi keskeneräiseksi; GI-lähdetietueita oli 38. Reseptimäärien sekä kaikkien estoluokkien päällekkäisyydet tarkistettiin koko keskeneräisestä 208 reseptin joukosta. Valinta painotti lähteistettyjä ravintoarvoja ja määriä, estojen kokonaismäärää sekä GI:n ruoka- ja valmistustapavastaavuutta.
 
-Yksityiskohtaiseen katselmointiin rajattiin kahdeksan reseptiä: caponata, pasta alla norma, baozi, harira, VHH-Runebergintortut, spanakopita, VHH-raparperipiirakka ja thai-porsasjok. Hyderabadi-kanabiryani hylättiin tarkemmasta työstä, koska sen koostumus- ja massatiedot sisältävät useita toisistaan riippumattomia puutteita. Seulonta ei muuta reseptien annosmääriä.
+Yksityiskohtaiseen katselmointiin rajattiin kahdeksan reseptiä: caponata, pasta alla norma, baozi, harira, VHH-Runebergintortut, spanakopita, VHH-raparperipiirakka ja thai-jok-kanalla. Hyderabadi-kanabiryani hylättiin tarkemmasta työstä, koska sen koostumus- ja massatiedot sisältävät useita toisistaan riippumattomia puutteita. Seulonta ei muuta reseptien annosmääriä.
 
 ## Lähdearviot ja ratkaisut
 
