@@ -228,3 +228,24 @@ test("batch 2B2 captures the published main baseline and preserves all earlier i
   assert.deepEqual([batch2B1Baseline.sourceCommit, batch2B1Baseline.recipeCount, batch2B1Baseline.calculated, batch2B1Baseline.incomplete, batch2B1Baseline.giRecordCount], ["25902326b9fd89a30d8bfe48f2d1cd02879bd9df", 325, 117, 208, 38]);
   assert.deepEqual([batch2B1Current.currentSummary.recipeCount, batch2B1Current.currentSummary.calculated, batch2B1Current.currentSummary.incomplete, batch2B1Current.currentSummary.giRecordCount], [325, 117, 208, 38]);
 });
+
+test("batch 2B5 baseline and current inventory preserve the published 325-recipe starting point", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const baseline = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b5-baseline.json"), "utf8")) as {
+    sourceCommit: string; recipeCount: number; calculated: number; incomplete: number; giRecordCount: number; giTierCounts: Record<string, number>; recipes: Array<{ recipeId: string }>;
+  };
+  const current = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b5-current.json"), "utf8")) as {
+    sourceCommit: string; previousApprovedBaseline: { sourceCommit: string; recipeCount: number; calculated: number; incomplete: number; giRecordCount: number };
+    currentSummary: { recipeCount: number; calculated: number; incomplete: number; giRecordCount: number; newlyCalculated: number; newlyBlocked: number };
+    recipes: Array<{ recipeId: string }>;
+  };
+  assert.equal(baseline.sourceCommit, "2f9cdd844a276cb284b02a01b0f501d3cb8540fb");
+  assert.deepEqual([baseline.recipeCount, baseline.calculated, baseline.incomplete, baseline.giRecordCount], [325, 127, 198, 39]);
+  assert.deepEqual([baseline.giTierCounts.STRONG, baseline.giTierCounts.SUPPLEMENTARY], [5, 34]);
+  assert.equal(new Set(baseline.recipes.map((row) => row.recipeId)).size, 325);
+  assert.equal(current.previousApprovedBaseline.sourceCommit, baseline.sourceCommit);
+  assert.deepEqual([current.currentSummary.recipeCount, current.currentSummary.calculated, current.currentSummary.incomplete, current.currentSummary.giRecordCount], [325, 129, 196, 39]);
+  assert.deepEqual([current.currentSummary.newlyCalculated, current.currentSummary.newlyBlocked], [2, 0]);
+  assert.equal(current.recipes.length, 325);
+  assert.equal(new Set(current.recipes.map((row) => row.recipeId)).size, 325);
+});
