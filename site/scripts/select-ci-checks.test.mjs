@@ -74,6 +74,25 @@ test("UI changes run the build and browser checks", () => {
   assert.equal(plan.full, false);
 });
 
+test("generated-content tests prepare only their generated input", () => {
+  const plan = classifyPaths(["site/tests/published-content.test.ts"]);
+  assert.equal(plan.runContentSync, true);
+  assert.equal(plan.runBuild, false);
+  assert.deepEqual(plan.unitTests, ["tests/published-content.test.ts"]);
+});
+
+test("static and browser tests build the output before their focused runners", () => {
+  const staticPlan = classifyPaths(["site/tests/static-output.test.ts"]);
+  assert.equal(staticPlan.runBuild, true);
+  assert.equal(staticPlan.runStatic, true);
+  assert.deepEqual(staticPlan.unitTests, []);
+
+  const browserPlan = classifyPaths(["site/tests/browser-smoke.test.ts"]);
+  assert.equal(browserPlan.runBuild, true);
+  assert.equal(browserPlan.runBrowser, true);
+  assert.deepEqual(browserPlan.unitTests, []);
+});
+
 test("workflow and classification failures select the full fallback", () => {
   assert.equal(classifyPaths([".github/workflows/pages.yml"]).full, true);
   assert.equal(classifyPaths([], { classificationFailed: true }).full, true);

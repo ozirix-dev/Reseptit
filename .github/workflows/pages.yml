@@ -88,6 +88,11 @@ jobs:
         run: npm ci
         working-directory: site
 
+      - name: Generate content required by selected tests
+        if: steps.select.outputs.run_content_sync == 'true' && steps.select.outputs.run_build != 'true'
+        run: npm run content:sync
+        working-directory: site
+
       - name: Validate changed recipe, translation, and evidence records
         if: steps.select.outputs.run_content == 'true'
         shell: pwsh

@@ -17,6 +17,13 @@ const allUnitTests = [
   "tests/glycemic-coverage-inventory.test.ts",
 ];
 
+const generatedContentTests = new Set([
+  "tests/published-content.test.ts",
+  "tests/route-content.test.ts",
+  "tests/recipe-schema.test.ts",
+  "tests/recipe-search.test.ts",
+]);
+
 const glycemicDataFiles = new Set([
   "docs/nutrition/glycemic-index-records.json",
   "docs/nutrition/glycemic-load-pilot-input.json",
@@ -60,6 +67,7 @@ function fullPlan() {
     runStatic: true,
     runBrowser: true,
     runBuild: true,
+    runContentSync: false,
     needsNode: true,
     unitTests: ["*"],
     publish: false,
@@ -79,6 +87,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     runStatic: false,
     runBrowser: false,
     runBuild: false,
+    runContentSync: false,
     needsNode: false,
     unitTests: new Set(),
     publish: false,
@@ -142,12 +151,16 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     }
     if (file.startsWith("site/tests/")) {
       const testPath = file.slice("site/".length);
-      if (/\.browser\.test\.ts$/.test(file)) {
+      if (/\.browser\.test\.ts$/.test(file) || testPath === "tests/browser-smoke.test.ts") {
         plan.runBrowser = true;
         plan.runBuild = true;
         plan.runStatic = true;
+      } else if (testPath === "tests/static-output.test.ts" || testPath === "tests/seo-audit.test.ts") {
+        plan.runStatic = true;
+        plan.runBuild = true;
       } else if (/\.test\.ts$/.test(file)) {
         plan.unitTests.add(testPath);
+        if (generatedContentTests.has(testPath)) plan.runContentSync = true;
       } else {
         return fullPlan();
       }
@@ -244,6 +257,7 @@ function writeGithubOutputs(plan, paths, classificationError) {
         runBrowser: "run_browser",
         runBuild: "run_build",
         needsNode: "needs_node",
+        runContentSync: "run_content_sync",
         publish: "publish",
       }[key]}=${String(value)}`),
     `unit_tests=${Array.isArray(plan.unitTests) ? plan.unitTests.join(" ") : "*"}`,

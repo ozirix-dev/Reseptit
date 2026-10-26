@@ -1,11 +1,12 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { access, readFile } from "node:fs/promises";
+import { access, readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import { auditTranslations } from "./translation-audit";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
 import type { Calculation } from "./nutrition-model";
 import { recipeBindingHash } from "./glycemic-load-recipe-binding";
+import { assertChangedRecipeAuditIsClean, duplicateRoutesForChangedRecipes, type PublishedRoute } from "./changed-content-checks";
 import { parseMarkdown, renderInstructionSteps, renderSafeMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 
@@ -14,6 +15,21 @@ const repoRoot = path.resolve(siteDir, "..");
 const suppliedPaths = process.argv.slice(2);
 const recipePaths = suppliedPaths.filter((file) => /^(?:reseptit|kaannokset)\/.+\.md$/i.test(file));
 const evidencePaths = suppliedPaths.filter((file) => /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/i.test(file));
+const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat"];
+const translationLocales = ["en", "sv", "th"];
+
+async function markdownFiles(directory: string): Promise<string[]> {
+  const entries = await readdir(directory, { withFileTypes: true }).catch((error: NodeJS.ErrnoException) => {
+    if (error.code === "ENOENT") return [];
+    throw error;
+  });
+  const nested = await Promise.all(entries.map(async (entry) => {
+    const filename = path.join(directory, entry.name);
+    if (entry.isDirectory()) return markdownFiles(filename);
+    return entry.isFile() && entry.name.endsWith(".md") ? [filename] : [];
+  }));
+  return nested.flat();
+}
 
 function resolveRepoFile(relativePath: string): string {
   const fullPath = path.resolve(repoRoot, relativePath);
@@ -108,14 +124,43 @@ const recipeAliases = JSON.parse(await readFile(resolveRepoFile("docs/nutrition/
   aliases?: Record<string, { canonical: string; evidence: string }>;
 };
 
+const changedRoutes: PublishedRoute[] = changedRecipes
+  .filter((recipe) => recipe.data.status === "published")
+  .map((recipe) => ({
+    recipe_id: recipe.data.recipe_id,
+    language: recipe.data.language,
+    url_slug: recipe.data.url_slug,
+    path: recipe.path,
+  }));
+if (changedRoutes.length > 0) {
+  const collectionDirectories = [
+    ...sourceCategories.map((category) => path.join(repoRoot, "reseptit", category)),
+    ...translationLocales.map((locale) => path.join(repoRoot, "kaannokset", locale)),
+  ];
+  const collectionFiles = (await Promise.all(collectionDirectories.map(markdownFiles))).flat();
+  const publishedRoutes: PublishedRoute[] = [];
+  for (const filename of collectionFiles) {
+    const parsed = parseMarkdown(await readFile(filename, "utf8"));
+    if (parsed?.data.status !== "published") continue;
+    const { recipe_id, language, url_slug } = parsed.data;
+    if (typeof recipe_id !== "string" || typeof language !== "string" || typeof url_slug !== "string") continue;
+    publishedRoutes.push({
+      recipe_id,
+      language,
+      url_slug,
+      path: path.relative(repoRoot, filename).replaceAll("\\", "/"),
+    });
+  }
+  const duplicateRoutes = duplicateRoutesForChangedRecipes(changedRoutes, publishedRoutes);
+  assert.deepEqual(duplicateRoutes, [], "Changed recipe URLs must remain unique across all published recipes");
+}
+
 for (const recipeId of recipeIds) {
-  const source = audit.publishedSources.find((recipe) => recipe.data.recipe_id === recipeId);
+  const source = assertChangedRecipeAuditIsClean(audit, recipeId);
   assert(source || !evidenceIds.has(recipeId), `${recipeId}: calculation evidence has no published Finnish source`);
   if (!source) continue;
 
   const translations = audit.publishedTranslations.filter((recipe) => recipe.data.recipe_id === recipeId);
-  const relevantErrors = audit.errors.filter((error) => error.startsWith(`${recipeId}:`));
-  assert.deepEqual(relevantErrors, [], `${recipeId}: related translation checks failed`);
 
   const changedSource = changedRecipes.find((recipe) => recipe.data.recipe_id === recipeId && recipe.data.language === "fi");
   const boundRecipeHash = recipeBindings.recipes?.[recipeId];
