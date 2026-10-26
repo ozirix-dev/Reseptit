@@ -57,6 +57,16 @@ test("all published translations match the source structure and known critical t
   assert.equal(somTam.data.ingredients.length, 9);
 });
 
+test("a targeted translation audit contains only the requested recipe and its pairs", async () => {
+  const full = await auditTranslations();
+  const recipeId = full.publishedSources[0]!.data.recipe_id;
+  const targeted = await auditTranslations([recipeId]);
+  assert.deepEqual(targeted.errors, []);
+  assert.ok(targeted.publishedSources.length <= 1);
+  assert.ok(targeted.publishedSources.every((recipe) => recipe.data.recipe_id === recipeId));
+  assert.ok(targeted.publishedTranslations.every((recipe) => recipe.data.recipe_id === recipeId));
+});
+
 test("metadata-driven pairs allow new sources and drafts but reject missing or duplicate published versions", async () => {
   const real = await auditTranslations();
   const source = structuredClone(real.publishedSources[0]);
