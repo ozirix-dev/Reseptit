@@ -2,9 +2,9 @@
 
 ## Tiedon asema
 
-Status: `AUDIT`  
-Context role: `audit`  
-Pointer class: `audit`  
+Status: `AUDIT`
+Context role: `audit`
+Pointer class: `audit`
 As of: 2026-10-26
 
 Tämä on Draft-muutosten auditointikonteksti, ei julkaisutieto eikä hyväksyntä yhdistämiseen. Laskentasyötteen ja sovellusmuutosten lähde on Reseptit-repo; PR- ja CI-tila ovat GitHubissa. Tuotantoa ei ole julkaistu.
@@ -18,7 +18,7 @@ Tämä on Draft-muutosten auditointikonteksti, ei julkaisutieto eikä hyväksynt
 
 Ennen sisältömuutoksia toistettu lähtötilanne: 325 reseptiä, 126 laskettua, 199 keskeneräistä, 38 GI-tietuetta (5 STRONG, 33 SUPPLEMENTARY). Strict nutrition audit oli 180 ESTIMATE WITH EVIDENCE, 86 INSUFFICIENT SOURCE DATA, 59 MISSING ja 0 CONFLICT REQUIRES REVIEW.
 
-Lähtösnapshot: [2B4 baseline JSON](glycemic-coverage-batch-2b4-baseline.json).  
+Lähtösnapshot: [2B4 baseline JSON](glycemic-coverage-batch-2b4-baseline.json).
 Laskennan jälkeinen 325 reseptin inventaario: [2B4 current JSON](glycemic-coverage-batch-2b4-current.json) ja [Markdown](glycemic-coverage-batch-2b4-current.md).
 
 ## Inventaarioanalyysi ja esteiden ryhmittely
