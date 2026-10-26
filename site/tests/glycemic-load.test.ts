@@ -160,6 +160,49 @@ test("GI mappings reject clear rice-vinegar/rice and milk-chocolate/dairy mismat
   }
 });
 
+test("plain-yogurt category mean binds only to ingredients in the yogurt family", () => {
+  const yogurtGi = {
+    ...gi,
+    id: "plain-yogurt-category-mean-test",
+    foodKey: "plain-yogurt-category-mean",
+    preparationKey: "category-mean",
+    matchKind: "CATEGORY_MEAN" as const,
+    qualityTier: "SUPPLEMENTARY" as const,
+    confidence: "LOW" as const,
+  };
+  const calculateFor = (name: string) => {
+    const sourceFood = food(`food-${name}`, 10, name);
+    return calculateGlycemicLoad({
+      recipeId: `yogurt-binding-${name}`,
+      servings: 1,
+      ingredients: [{
+        name,
+        grams: 100,
+        fineliRecordId: sourceFood.id,
+        giRecordId: yogurtGi.id,
+        preparationKey: "category-mean",
+        giMatchEvidence: "Published plain-yogurt category mean test fixture.",
+      }],
+    }, [sourceFood], [yogurtGi]);
+  };
+
+  for (const name of ["maustamatonta jogurttia 3,9 % rasvaa", "plain yogurt"]) {
+    const result = calculateFor(name);
+    assert.equal(result.status, "CALCULATED", name);
+    assert.equal(result.glycemicLoadPerServing, 5, name);
+    assert.equal(result.ingredients[0]?.matchKind, "CATEGORY_MEAN", name);
+  }
+
+  for (const name of ["plain rice", "maustamaton kerma"]) {
+    const result = calculateFor(name);
+    assert.equal(result.status, "INSUFFICIENT SOURCE DATA", name);
+    assert.equal(result.glycemicLoadPerServing, null, name);
+    assert.ok(result.blockers.length > 0, name);
+    assert.equal(result.ingredients[0]?.giContribution, null, name);
+    assert.equal(result.ingredients[0]?.availableCarbohydratePerServingG, 10, name);
+  }
+});
+
 test("Jiaozi rice wine vinegar has no dry-rice or rice-GI source mapping", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const pilot = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"));
