@@ -948,6 +948,28 @@
         "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
       },
       "note": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey."
+    },
+    {
+      "id": "mango-raw-mean-gi-51-2002",
+      "gi": 51,
+      "foodKey": "mango",
+      "preparationKey": "raw",
+      "food": "Raw mango (food-specific mean of three studies)",
+      "preparation": "Raw mango; varieties differ across included studies",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International table of glycemic index and glycemic load values: 2002",
+        "url": "https://doi.org/10.1093/ajcn/76.1.5",
+        "table": "Table 2, entry 412, raw mango: mean of three studies, GI 51 ± 5 (glucose scale); individual entries include raw mango from the Philippines, Australia, and ripe mango from India.",
+        "year": 2002,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Published food-specific mean across three human raw-mango studies; variety, ripeness and population differ, and this is not ISO-confirmed. Use as a low-confidence generic raw-mango estimate, not a measurement of a recipe or meal."
+      },
+      "note": "Food-specific mean; cultivar and ripeness vary. Low-confidence ingredient estimate.",
+      "matchKind": "ANALOG",
+      "confidence": "LOW"
     }
   ]
 }

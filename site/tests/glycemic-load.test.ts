@@ -713,3 +713,62 @@ test("batch 2B3 regressions block missing sources, changed bindings, invalid GI 
   assert.equal(calculateGlycemicLoad(unknown, foods, gis).status, "INSUFFICIENT SOURCE DATA");
   assert.equal(calculateGlycemicLoad(unknown, foods, gis).glycemicLoadPerServing, null);
 });
+
+test("batch 2B4 raw mango GI source is food-specific, conservative and reusable", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [inputText, foodText, giText, bindingText] = await Promise.all([
+    readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-bindings.json"), "utf8"),
+  ]);
+  const input = JSON.parse(inputText) as { recipes: GlycemicLoadRecipeInput[] };
+  const foods = JSON.parse(foodText) as FoodRecord[];
+  const gis = (JSON.parse(giText) as { records: GlycemicIndexRecord[] }).records;
+  const bindings = JSON.parse(bindingText) as { calculationInputs: Record<string, string>; calculationEvidence: Record<string, string> };
+  const mangoGi = gis.find((row) => row.id === "mango-raw-mean-gi-51-2002");
+  assert.ok(mangoGi);
+  assert.equal(mangoGi.gi, 51);
+  assert.equal(mangoGi.foodKey, "mango");
+  assert.equal(mangoGi.preparationKey, "raw");
+  assert.equal(mangoGi.qualityTier, "SUPPLEMENTARY");
+  assert.equal(mangoGi.matchKind, "ANALOG");
+  assert.equal(mangoGi.confidence, "LOW");
+  assert.equal(mangoGi.source.url, "https://doi.org/10.1093/ajcn/76.1.5");
+
+  const yogurt = input.recipes.find((row) => row.recipeId === "karibia-mango-limejogurtti");
+  assert.ok(yogurt);
+  const mango = yogurt.ingredients.find((row) => row.name === "kuorittua mangoa");
+  assert.ok(mango);
+  assert.equal(mango.grams, 200);
+  assert.equal(mango.giRecordId, mangoGi.id);
+  assert.equal(mango.foodKey, "mango");
+  assert.equal(mango.preparationKey, "raw");
+  const yogurtResult = calculateGlycemicLoad(yogurt, foods, gis);
+  assert.equal(yogurtResult.status, "CALCULATED");
+  assert.equal(yogurtResult.glycemicLoadPerServing, 7.3);
+  assert.equal(yogurtResult.confidence, "LOW");
+  assert.ok(Math.abs(yogurtResult.omittedAvailableCarbohydratePerServingG - 0.73) < 1e-12);
+  assert.equal(roundGlycemicLoadForDisplay(yogurtResult.glycemicLoadPerServing!), 7);
+  assert.equal(glycemicLoadInputHash(yogurt), bindings.calculationInputs[yogurt.recipeId]);
+  assert.equal(glycemicLoadEvidenceHash(yogurt, foods, gis), bindings.calculationEvidence[yogurt.recipeId]);
+  const broadFruitProxy = structuredClone(yogurt);
+  const broadMango = broadFruitProxy.ingredients.find((row) => row.name === "kuorittua mangoa")!;
+  broadMango.giRecordId = "fruit-category-mean-gi-51";
+  broadMango.foodKey = "fruit-category-mean";
+  broadMango.preparationKey = "category-mean";
+  broadMango.giMatchEvidence = "Broad fruit-category mean, not a mango-specific GI source.";
+  assert.equal(calculateGlycemicLoad(broadFruitProxy, foods, gis).status, "INSUFFICIENT SOURCE DATA", "a broad fruit proxy does not become an acceptable mango match");
+
+  const riceBowl = input.recipes.find((row) => row.recipeId === "thai-kookosriisi-mangolla");
+  assert.ok(riceBowl);
+  const riceMango = riceBowl.ingredients.find((row) => row.name === "mango");
+  assert.ok(riceMango);
+  assert.equal(riceMango.giRecordId, mangoGi.id);
+  const riceResult = calculateGlycemicLoad(riceBowl, foods, gis);
+  assert.equal(riceResult.status, "INSUFFICIENT SOURCE DATA", "unidentified coconut milk remains blocking");
+  assert.equal(riceResult.glycemicLoadPerServing, null);
+  assert.ok(riceResult.blockers.some((row) => /coconut milk/.test(row)));
+  assert.equal(glycemicLoadInputHash(riceBowl), bindings.calculationInputs[riceBowl.recipeId]);
+  assert.equal(glycemicLoadEvidenceHash(riceBowl, foods, gis), bindings.calculationEvidence[riceBowl.recipeId]);
+});

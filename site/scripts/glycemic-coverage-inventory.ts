@@ -47,6 +47,7 @@ const markdownOutputPath = option("--output-markdown", "docs/nutrition/glycemic-
 const batchBaselinePath = option("--capture-batch-baseline", "");
 const batch2B2BaselinePath = option("--capture-batch-2b2-baseline", "");
 const batch2B3BaselinePath = option("--capture-batch-2b3-baseline", "");
+const batch2B4BaselinePath = option("--capture-batch-2b4-baseline", "");
 const readJson = async <T>(relativePath: string): Promise<T> => JSON.parse(await readFile(path.join(root, relativePath), "utf8")) as T;
 
 const [pilot, nutrition, inputs, giCatalog, historical, reviewStart] = await Promise.all([
@@ -208,6 +209,34 @@ if (batch2B3BaselinePath) {
   }
   await writeFile(batch2B3BaselinePath, `${JSON.stringify(baseline, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
   console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, giRecordCount: baseline.giRecordCount, output: batch2B3BaselinePath }, null, 2));
+  process.exit(0);
+}
+
+if (batch2B4BaselinePath) {
+  const expectedSourceCommit = "3099c246d188ee0484d1cd4b36e9e14d172c3610";
+  if (sourceCommit !== expectedSourceCommit) throw new Error(`Batch 2B4 baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
+  try {
+    await readFile(batch2B4BaselinePath, "utf8");
+    throw new Error(`Refusing to overwrite existing batch baseline: ${batch2B4BaselinePath}`);
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+  }
+  const baseline = buildBaselineSnapshot({
+    sourceCommit,
+    results: pilot.results,
+    sourceHashes: pilot.sourceHashes,
+    calculationInputHashes,
+    calculationEvidenceHashes: pilot.calculationEvidenceHashes,
+    giRecordCount: giCatalog.records.length,
+    giTierCounts,
+    nutritionAuditCounts: nutrition.counts,
+    nutritionStatuses,
+  });
+  if (baseline.recipeCount !== 325 || baseline.calculated !== 126 || baseline.incomplete !== 199 || baseline.giRecordCount !== 38) {
+    throw new Error("Batch 2B4 baseline does not match the accepted 325 / 126 / 199 / 38 starting point.");
+  }
+  await writeFile(batch2B4BaselinePath, `${JSON.stringify(baseline, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
+  console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, giRecordCount: baseline.giRecordCount, output: batch2B4BaselinePath }, null, 2));
   process.exit(0);
 }
 
