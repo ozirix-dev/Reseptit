@@ -4107,9 +4107,9 @@
           "fineliRecordId": "afcd-F006321-2026-10-24",
           "giRecordId": "vegetables-category-mean-gi-66",
           "massEvidence": "Ingredient-specific tablespoon mass: 4 g/rkl for silputtua persiljaa.",
-          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
           "foodKey": "vegetable",
-          "preparationKey": "vegetable-category"
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
         },
         {
           "name": "suolaa",
@@ -5320,11 +5320,11 @@
           "name": "sokeritonta tummaa suklaata",
           "grams": 150,
           "fineliRecordId": "afcd-F009837-2026-10-24",
-          "giRecordId": "dark-chocolate-international-tables-mean-gi-29",
+          "giRecordId": null,
           "massEvidence": "Ingredient mapped to afcd-release-3 record F009837; source state: dark chocolate, no added sugar.",
-          "giMatchEvidence": "Published Dark chocolate products proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-          "foodKey": "chocolate",
-          "preparationKey": "dark-chocolate-as-sold"
+          "excludedReason": "Pieni ainesosakohtainen osuus jätetään GK-laskennasta toimituksellisen <1 g/annos -toleranssin puitteissa; reseptimäärä säilyy ennallaan.",
+          "estimatedAvailableCarbohydratePerServingG": 0.76875,
+          "negligibleAssumption": "Koostumuslähteen perusteella 0.769 g käytettävissä olevaa hiilihydraattia annosta kohti; yksittäinen osuus on alle 1 g. Tämä on toimituksellinen toleranssi, ei kliininen tarkkuusraja."
         },
         {
           "name": "voita",
@@ -5361,11 +5361,11 @@
           "name": "kaakaojauhetta",
           "grams": 10,
           "fineliRecordId": "fineli-20-2026-10-24",
-          "giRecordId": "bakery-products-category-mean-gi-58",
+          "giRecordId": null,
           "massEvidence": "Ingredient-specific tablespoon mass estimate for kaakaojauhetta.",
-          "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-          "foodKey": "bakery-products-category-mean",
-          "preparationKey": "category-mean"
+          "excludedReason": "Pieni ainesosakohtainen osuus jätetään GK-laskennasta toimituksellisen <1 g/annos -toleranssin puitteissa; reseptimäärä säilyy ennallaan.",
+          "estimatedAvailableCarbohydratePerServingG": 0.1375,
+          "negligibleAssumption": "Koostumuslähteen perusteella 0.138 g käytettävissä olevaa hiilihydraattia annosta kohti; yksittäinen osuus on alle 1 g. Tämä on toimituksellinen toleranssi, ei kliininen tarkkuusraja."
         },
         {
           "name": "vaniljauutetta",
@@ -8812,10 +8812,10 @@
           "grams": 5,
           "massEvidence": "Recipe-listed edible mass.",
           "fineliRecordId": "fineli-34238-2026-10-25",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "giRecordId": null,
+          "excludedReason": "Pieni ainesosakohtainen osuus jätetään GK-laskennasta toimituksellisen <1 g/annos -toleranssin puitteissa; reseptimäärä säilyy ennallaan.",
+          "estimatedAvailableCarbohydratePerServingG": 0.006312,
+          "negligibleAssumption": "Koostumuslähteen perusteella 0.006 g käytettävissä olevaa hiilihydraattia annosta kohti; yksittäinen osuus on alle 1 g. Tämä on toimituksellinen toleranssi, ei kliininen tarkkuusraja."
         }
       ]
     },
@@ -8953,14 +8953,14 @@
           "name": "broilerin reisilihaa",
           "grams": 600,
           "massEvidence": "Recipe-listed edible mass.",
-          "fineliRecordId": "fineli-750-2026-10-25",
+      "fineliRecordId": "fineli-30792-release-20",
           "giRecordId": null
         },
         {
           "name": "basmatiriisiä",
           "grams": 300,
-          "massEvidence": "Fineli raw long-grain rice used as a basmati composition analogue.",
-          "fineliRecordId": "fineli-11521-2026-10-25",
+      "massEvidence": "Recipe-listed 300 g dry, uncooked rice; AFCD Release 3 uncooked white rice composition (74 g available carbohydrate/100 g), also used by the recipe nutrition calculation.",
+      "fineliRecordId": "afcd-F007682-2026-10-24",
           "giRecordId": "rice-category-mean-gi-67",
           "foodKey": "rice-category-mean",
           "preparationKey": "category-mean",
@@ -8970,7 +8970,7 @@
           "name": "maustamatonta jogurttia",
           "grams": 200,
           "massEvidence": "Recipe-listed edible mass.",
-          "fineliRecordId": "fineli-619-2026-10-25",
+      "fineliRecordId": "fineli-620-release-20",
           "giRecordId": "dairy-category-mean-gi-35",
           "foodKey": "dairy",
           "preparationKey": "unflavoured-dairy",
@@ -9077,10 +9077,10 @@
           "grams": 20,
           "massEvidence": "Recipe-listed edible mass.",
           "fineliRecordId": "fineli-34238-2026-10-25",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "giRecordId": null,
+          "excludedReason": "Pieni ainesosakohtainen osuus jätetään GK-laskennasta toimituksellisen <1 g/annos -toleranssin puitteissa; reseptimäärä säilyy ennallaan.",
+          "estimatedAvailableCarbohydratePerServingG": 0.02525,
+          "negligibleAssumption": "Koostumuslähteen perusteella 0.025 g käytettävissä olevaa hiilihydraattia annosta kohti; yksittäinen osuus on alle 1 g. Tämä on toimituksellinen toleranssi, ei kliininen tarkkuusraja."
         },
         {
           "name": "tuoretta minttua",
@@ -12380,9 +12380,11 @@
           "name": "persilja",
           "grams": 6,
           "fineliRecordId": "afcd-F006321-release-3",
-          "giRecordId": "vegetables-category-mean-gi-66",
+          "giRecordId": null,
           "massEvidence": "Chopped fresh parsley represented as 3 g per tablespoon.",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "excludedReason": "Pieni ainesosakohtainen osuus jätetään GK-laskennasta toimituksellisen <1 g/annos -toleranssin puitteissa; reseptimäärä säilyy ennallaan.",
+          "estimatedAvailableCarbohydratePerServingG": 0.033,
+          "negligibleAssumption": "Koostumuslähteen perusteella 0.033 g käytettävissä olevaa hiilihydraattia annosta kohti; yksittäinen osuus on alle 1 g. Tämä on toimituksellinen toleranssi, ei kliininen tarkkuusraja."
         },
         {
           "name": "sipuli",
@@ -12496,9 +12498,11 @@
           "name": "inkivääri",
           "grams": 2,
           "fineliRecordId": "afcd-F004213-release-3",
-          "giRecordId": "vegetables-category-mean-gi-66",
+          "giRecordId": null,
           "massEvidence": "One teaspoon finely grated fresh ginger represented as 2 g.",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "excludedReason": "Pieni ainesosakohtainen osuus jätetään GK-laskennasta toimituksellisen <1 g/annos -toleranssin puitteissa; reseptimäärä säilyy ennallaan.",
+          "estimatedAvailableCarbohydratePerServingG": 0.048,
+          "negligibleAssumption": "Koostumuslähteen perusteella 0.048 g käytettävissä olevaa hiilihydraattia annosta kohti; yksittäinen osuus on alle 1 g. Tämä on toimituksellinen toleranssi, ei kliininen tarkkuusraja."
         },
         {
           "name": "soijakastike",
@@ -12612,9 +12616,11 @@
           "name": "inkivääri",
           "grams": 2,
           "fineliRecordId": "afcd-F004213-release-3",
-          "giRecordId": "vegetables-category-mean-gi-66",
+          "giRecordId": null,
           "massEvidence": "One teaspoon finely grated fresh ginger represented as 2 g.",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "excludedReason": "Pieni ainesosakohtainen osuus jätetään GK-laskennasta toimituksellisen <1 g/annos -toleranssin puitteissa; reseptimäärä säilyy ennallaan.",
+          "estimatedAvailableCarbohydratePerServingG": 0.048,
+          "negligibleAssumption": "Koostumuslähteen perusteella 0.048 g käytettävissä olevaa hiilihydraattia annosta kohti; yksittäinen osuus on alle 1 g. Tämä on toimituksellinen toleranssi, ei kliininen tarkkuusraja."
         },
         {
           "name": "kevätsipuli",
@@ -12721,9 +12727,11 @@
           "name": "inkivääri",
           "grams": 2,
           "fineliRecordId": "afcd-F004213-release-3",
-          "giRecordId": "vegetables-category-mean-gi-66",
+          "giRecordId": null,
           "massEvidence": "One teaspoon finely grated fresh ginger represented as 2 g.",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "excludedReason": "Pieni ainesosakohtainen osuus jätetään GK-laskennasta toimituksellisen <1 g/annos -toleranssin puitteissa; reseptimäärä säilyy ennallaan.",
+          "estimatedAvailableCarbohydratePerServingG": 0.048,
+          "negligibleAssumption": "Koostumuslähteen perusteella 0.048 g käytettävissä olevaa hiilihydraattia annosta kohti; yksittäinen osuus on alle 1 g. Tämä on toimituksellinen toleranssi, ei kliininen tarkkuusraja."
         },
         {
           "name": "kananmuna",
@@ -21913,11 +21921,11 @@
           "name": "salaatinlehtiä",
           "grams": 40,
           "fineliRecordId": "fineli-330-release-20",
-          "giRecordId": "vegetables-category-mean-gi-66",
+          "giRecordId": null,
           "massEvidence": "Recipe-listed 40 g, mapped to LEHTISALAATTI, RUUKKUSALAATTI, LOLLO ROSSO (raw leaf lettuce).",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category",
-          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+          "excludedReason": "Pieni ainesosakohtainen osuus jätetään GK-laskennasta toimituksellisen <1 g/annos -toleranssin puitteissa; reseptimäärä säilyy ennallaan.",
+          "estimatedAvailableCarbohydratePerServingG": 0.098,
+          "negligibleAssumption": "Koostumuslähteen perusteella 0.098 g käytettävissä olevaa hiilihydraattia annosta kohti; yksittäinen osuus on alle 1 g. Tämä on toimituksellinen toleranssi, ei kliininen tarkkuusraja."
         },
         {
           "name": "mustapippuria",

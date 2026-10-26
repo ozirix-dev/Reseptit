@@ -46,6 +46,7 @@ const currentOutputPath = option("--output-json", "docs/nutrition/glycemic-cover
 const markdownOutputPath = option("--output-markdown", "docs/nutrition/glycemic-coverage-current-2026-10-25.md")!;
 const batchBaselinePath = option("--capture-batch-baseline", "");
 const batch2B2BaselinePath = option("--capture-batch-2b2-baseline", "");
+const batch2B3BaselinePath = option("--capture-batch-2b3-baseline", "");
 const readJson = async <T>(relativePath: string): Promise<T> => JSON.parse(await readFile(path.join(root, relativePath), "utf8")) as T;
 
 const [pilot, nutrition, inputs, giCatalog, historical, reviewStart] = await Promise.all([
@@ -182,6 +183,34 @@ if (batch2B2BaselinePath) {
   process.exit(0);
 }
 
+if (batch2B3BaselinePath) {
+  const expectedSourceCommit = "95b87e3eb8b41dbef0913b8532fd8af67a5e56d6";
+  if (sourceCommit !== expectedSourceCommit) throw new Error(`Batch 2B3 baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
+  try {
+    await readFile(batch2B3BaselinePath, "utf8");
+    throw new Error(`Refusing to overwrite existing batch baseline: ${batch2B3BaselinePath}`);
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+  }
+  const baseline = buildBaselineSnapshot({
+    sourceCommit,
+    results: pilot.results,
+    sourceHashes: pilot.sourceHashes,
+    calculationInputHashes,
+    calculationEvidenceHashes: pilot.calculationEvidenceHashes,
+    giRecordCount: giCatalog.records.length,
+    giTierCounts,
+    nutritionAuditCounts: nutrition.counts,
+    nutritionStatuses,
+  });
+  if (baseline.recipeCount !== 325 || baseline.calculated !== 118 || baseline.incomplete !== 207 || baseline.giRecordCount !== 38) {
+    throw new Error("Batch 2B3 baseline does not match the accepted 325 / 118 / 207 / 38 starting point.");
+  }
+  await writeFile(batch2B3BaselinePath, `${JSON.stringify(baseline, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
+  console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, giRecordCount: baseline.giRecordCount, output: batch2B3BaselinePath }, null, 2));
+  process.exit(0);
+}
+
 const baseline = JSON.parse(await readFile(baselineInputPath, "utf8")) as CoverageBaseline;
 if (baselineInputPath === baselinePath && baseline.sourceCommit !== "5e9cdeb830f468ecf099e9c286f9344afe3b6b71") throw new Error(`Approved baseline source is unexpected: ${baseline.sourceCommit}`);
 const inventory = buildCurrentCoverageInventory({
@@ -210,7 +239,7 @@ const inventory = buildCurrentCoverageInventory({
 const summary = inventory.currentSummary;
 const structural = inventory.structuralBindingAnalysis;
 const reportLines = [
-  "# Nykyinen GK-esteinventaario (2026-10-25)",
+  "# GK-esteinventaario",
   "",
   `Lähdecommit: \`${sourceCommit}\`. Vertailun lähtösnapshot: \`${baseline.sourceCommit}\` (${baseline.calculated} laskettua / ${baseline.incomplete} keskeneräistä; ${baseline.giRecordCount} GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.`,
   "",
@@ -230,7 +259,7 @@ const reportLines = [
   "| --- | ---: | ---: |",
   ...Object.entries(inventory.blockerOverlapCounts).map(([category, value]) => `| ${category} | ${value.recipes} | ${value.blockerMessages} |`),
   "",
-  "## Erän 2A rakennesidontojen lähtötilanne ja lopputulos",
+  "## Historiallinen erä 2A: rakennesidontojen lähtötilanne ja lopputulos",
   "",
   `Korjausta edeltävä snapshot (lähdecommit \`${structural.reviewStartSourceCommit}\`) osoittaa, että ${structural.withOtherBlockersAtReviewStart}/${structural.rows.length} reseptillä oli rakennesidonnan lisäksi muita esteitä. Pelkkä fingerprintin uusiminen olisi voinut ratkaista ${structural.potentiallyResolvableByBindingOnlyAtReviewStart} arviota. Erässä tarkistettiin sisällöllisesti ${structural.reviewedInBatch2A}; niistä ${structural.calculatedAfterContentReview} palautui laskettavaksi ja ${structural.reviewedStillIncomplete} jäi keskeneräiseksi. ${structural.outOfScope} rakennesidontaa jäi erän 2A varsinaisen tarkistuksen ulkopuolelle. Nykytilan estolistaa ei käytetä alkuperäisen esteen päättelemiseen.`,
   "",
