@@ -788,7 +788,12 @@ test("batch 2B5 small-portion corrections calculate the cottage-cheese bowl and 
   const gis = (JSON.parse(giText) as { records: GlycemicIndexRecord[] }).records;
   const bindings = JSON.parse(bindingText) as { recipes: Record<string, string>; calculationInputs: Record<string, string>; calculationEvidence: Record<string, string> };
   const aliases = (JSON.parse(aliasText) as { aliases: Record<string, { canonical: string; evidence: string }> }).aliases;
-  const pilot = JSON.parse(pilotText) as { results: Array<{ recipeId: string; status: string; glycemicLoadPerServing: number | null; confidence: string | null; omittedAvailableCarbohydratePerServingG: number }> };
+  const pilot = JSON.parse(pilotText) as { results: Array<{ recipeId: string; status: string; glycemicLoadPerServing: number | null; confidence: string | null; omittedAvailableCarbohydratePerServingG: number }>; recipeBindingMismatches: string[]; calculationInputMismatches: string[]; calculationEvidenceMismatches: string[] };
+  for (const id of ["bulgogi", "keto-suklaakeksit", "vhh-mokkapalat"]) {
+    assert.equal(pilot.recipeBindingMismatches.includes(id), false, `${id} recipe structure binding matches`);
+  }
+  assert.deepEqual(pilot.calculationInputMismatches, []);
+  assert.deepEqual(pilot.calculationEvidenceMismatches, []);
   const cases = [
     { id: "raejuusto-pesto-kasviskulho", category: "aamupalat", unrounded: 0.861, stored: 0.86, shown: 0.9, omitted: 0.630975 },
     { id: "chettinad-kana", category: "paaruoat", unrounded: 0.6032, stored: 0.6, shown: 0.6, omitted: 1.17125 },

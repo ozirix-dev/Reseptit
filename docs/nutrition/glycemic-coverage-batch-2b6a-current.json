@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-26T17:42:20.154Z",
-  "sourceCommit": "14df629d2ad3a2014e020a9b624d42eab0a156d3",
+  "generatedAt": "2026-10-26T18:55:55.505Z",
+  "sourceCommit": "7a850e983737db90e29427efaf2c5279156d0513",
   "previousApprovedBaseline": {
     "sourceCommit": "21d9628db3ffc7434e4308d6ab42880d1f12bae0",
     "recipeCount": 325,
@@ -16398,8 +16398,8 @@
     {
       "recipeId": "bulgogi",
       "recipeVersion": "c03fecdf4eb07fc0e016f250e3156c7af3e75751617d1b2e52abf4285ad76028",
-      "calculationInputVersion": "4ee890e7c6f2d72a5d0282d74b761c16ed74e8088544726618da4b56c5121eaa",
-      "calculationEvidenceVersion": "1f84745328d075e2310ad4db005420a7946cfdfc9a48e288662c226bf070df0d",
+      "calculationInputVersion": "685336099cd88ada5a42a705fe44f4ccbb61d75a6f829fe920c69ac59aac53ea",
+      "calculationEvidenceVersion": "f25ef78c52d818ccd9566dcd97176e3dc5eb7b08f088058921fc644d9bbcad46",
       "status": "CALCULATED",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
@@ -16535,7 +16535,7 @@
             "fineliRecordId": "fineli-11062-2026-10-24",
             "giRecordId": "pear-raw-mean-gi-38-2002",
             "massEvidence": "päärynää maps to fineli-release-20 record 11062; state: peeled pear.",
-            "giMatchEvidence": "Published food-specific raw-pear mean (International Tables 2002, Table 2, entries 423–426); low-confidence analogue because the grated pear is heated briefly with the beef after marinating.",
+            "giMatchEvidence": "Published food-specific raw-pear mean (Foster-Powell K, Holt SHA, Brand-Miller JC, International Tables 2002, Table 1, entries 423–426); low-confidence ANALOG because the pear is grated raw for the marinade, then heated briefly with the beef. This is not an exact preparation match or a measured bulgogi GI.",
             "foodKey": "pear",
             "preparationKey": "raw"
           },
@@ -16565,8 +16565,6 @@
             "fineliRecordId": "fineli-34245-2026-10-24",
             "giRecordId": null,
             "massEvidence": "Ingredient-specific tablespoon mass: 8.5 g/rkl for seesaminsiemeniä.",
-            "estimatedAvailableCarbohydratePerServingG": 0.02488375,
-            "negligibleAssumption": "GI omitted under the documented <1 g available-carbohydrate/serving editorial tolerance; Fineli composition is retained, this is not a measured sesame-seed GI.",
             "giMatchEvidence": null,
             "foodKey": null,
             "preparationKey": null
@@ -16577,8 +16575,6 @@
             "fineliRecordId": "afcd-F006618-2026-10-24",
             "giRecordId": null,
             "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria.",
-            "estimatedAvailableCarbohydratePerServingG": 0.015625,
-            "negligibleAssumption": "GI omitted under the documented <1 g available-carbohydrate/serving editorial tolerance; AFCD composition is retained, this is not a measured pepper GI.",
             "giMatchEvidence": null,
             "foodKey": null,
             "preparationKey": null
