@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-26T07:47:27.569Z",
-  "sourceCommit": "620e767418af21f6be63faab828b0324fc4b32d4",
+  "generatedAt": "2026-10-26T08:29:22.119Z",
+  "sourceCommit": "a802bdbdcab08b279d6144dac5deb899f1d46c16",
   "previousApprovedBaseline": {
     "sourceCommit": "95b87e3eb8b41dbef0913b8532fd8af67a5e56d6",
     "recipeCount": 325,
@@ -15020,8 +15020,8 @@
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
           "category": "OTHER",
@@ -15096,8 +15096,12 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
-      "removedBlockers": []
+      "changedBlockers": [
+        "caponata: tomaattimurskaa: Canned crushed tomato has no preparation-matched GI source. The whole raw tomato GI analogue is removed; raw whole tomato is not cooked crushed tomato."
+      ],
+      "removedBlockers": [
+        "caponata: kapriksia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ]
     },
     {
       "recipeId": "siemengranola-jogurtilla",
@@ -15763,8 +15767,8 @@
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
           "category": "OTHER",
@@ -15852,8 +15856,12 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
-      "removedBlockers": []
+      "changedBlockers": [
+        "baozi: maissitärkkelystä: Potato-products category mean is not a valid match for cornstarch; remove the unrelated GI mapping."
+      ],
+      "removedBlockers": [
+        "baozi: raastettua inkivääriä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ]
     },
     {
       "recipeId": "marokkolainen-couscous",
@@ -16316,8 +16324,8 @@
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
           "category": "OTHER",
@@ -16392,8 +16400,12 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
-      "removedBlockers": []
+      "changedBlockers": [
+        "pasta-alla-norma: tomaattimurskaa: Canned crushed tomato has no preparation-matched GI source. The whole raw tomato GI analogue is removed; raw whole tomato is not cooked crushed tomato."
+      ],
+      "removedBlockers": [
+        "pasta-alla-norma: tuoretta basilikaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ]
     },
     {
       "recipeId": "bulgogi",
@@ -17291,8 +17303,8 @@
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
           "category": "OTHER",
@@ -17393,8 +17405,12 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
-      "removedBlockers": []
+      "changedBlockers": [
+        "harira: tomaattimurskaa: Canned crushed tomato has no preparation-matched GI source. The whole raw tomato GI analogue is removed; raw whole tomato is not cooked crushed tomato."
+      ],
+      "removedBlockers": [
+        "harira: jauhettua inkivääriä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ]
     },
     {
       "recipeId": "kreikkalainen-moussaka",
@@ -22080,8 +22096,8 @@
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
           "category": "OTHER",
@@ -22169,8 +22185,12 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
-      "removedBlockers": []
+      "changedBlockers": [
+        "vhh-runebergintortut: mantelijauhoa: Bakery-products category mean is not a demonstrated match for almond meal; remove the unsupported GI proxy."
+      ],
+      "removedBlockers": [
+        "vhh-runebergintortut: kardemummaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ]
     },
     {
       "recipeId": "keto-korvapuustit",
@@ -33546,8 +33566,8 @@
     {
       "recipeId": "hyderabadi-kanabiryani",
       "recipeVersion": "5d59e02e05e13090627869c44a9412064e23cde0d847e363b6a513052aaad0a0",
-      "calculationInputVersion": "f55b4216991b1851ab8ad0a3a59edd2a790233981d8c372925601c75a5ac380f",
-      "calculationEvidenceVersion": "b2f2c759fabee67f9988b4b0cbe7d1929b74da6ebd28d991fe77eef49f2fb441",
+      "calculationInputVersion": "a79f5565d23163d466fe264ebfdc3da4483977054b8c9b7f72cd38dfb4514e51",
+      "calculationEvidenceVersion": "3b347e2a325fd65b004db9f0f137ee1ac65837a70d624e5c84342c33fc579a15",
       "status": "CALCULATED",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
@@ -33651,14 +33671,14 @@
             "name": "broilerin reisilihaa",
             "grams": 600,
             "massEvidence": "Recipe-listed edible mass.",
-            "fineliRecordId": "fineli-750-2026-10-25",
+            "fineliRecordId": "fineli-30792-release-20",
             "giRecordId": null
           },
           {
             "name": "basmatiriisiä",
             "grams": 300,
-            "massEvidence": "Fineli raw long-grain rice used as a basmati composition analogue.",
-            "fineliRecordId": "fineli-11521-2026-10-25",
+            "massEvidence": "Recipe-listed 300 g dry, uncooked rice; AFCD Release 3 uncooked white rice composition (74 g available carbohydrate/100 g), also used by the recipe nutrition calculation.",
+            "fineliRecordId": "afcd-F007682-2026-10-24",
             "giRecordId": "rice-category-mean-gi-67",
             "foodKey": "rice-category-mean",
             "preparationKey": "category-mean",
@@ -33668,7 +33688,7 @@
             "name": "maustamatonta jogurttia",
             "grams": 200,
             "massEvidence": "Recipe-listed edible mass.",
-            "fineliRecordId": "fineli-619-2026-10-25",
+            "fineliRecordId": "fineli-620-release-20",
             "giRecordId": "dairy-category-mean-gi-35",
             "foodKey": "dairy",
             "preparationKey": "unflavoured-dairy",
@@ -33791,7 +33811,7 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 40.77,
+      "glycemicLoadPerServing": 37.98,
       "omittedAvailableCarbohydratePerServingG": 1.0792499999999998,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
@@ -44855,11 +44875,11 @@
       "glycemicLoadPerServing": 26.47,
       "omittedAvailableCarbohydratePerServingG": 0.241,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0.076,
-      "previousApprovedStatus": "CALCULATED",
-      "previousApprovedGlycemicLoadPerServing": 26.47,
+      "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
+      "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [],
       "blockingCategories": [],
       "primaryBlockingCategory": null,
@@ -44907,12 +44927,14 @@
       ],
       "nextActions": [],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
-      "newlyCalculated": false,
+      "statusChanged": true,
+      "newlyCalculated": true,
       "newlyBlocked": false,
       "stillIncomplete": false,
       "changedBlockers": [],
-      "removedBlockers": []
+      "removedBlockers": [
+        "thai-jok-kanalla: inkivääri: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ]
     },
     {
       "recipeId": "thai-porsasjok",
@@ -50525,11 +50547,11 @@
       "glycemicLoadPerServing": 44.59,
       "omittedAvailableCarbohydratePerServingG": 0.30000000000000004,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
-      "previousApprovedStatus": "CALCULATED",
-      "previousApprovedGlycemicLoadPerServing": 44.59,
+      "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
+      "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [],
       "blockingCategories": [],
       "primaryBlockingCategory": null,
@@ -50564,12 +50586,15 @@
       ],
       "nextActions": [],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
-      "newlyCalculated": false,
+      "statusChanged": true,
+      "newlyCalculated": true,
       "newlyBlocked": false,
       "stillIncomplete": false,
       "changedBlockers": [],
-      "removedBlockers": []
+      "removedBlockers": [
+        "pohjoisafrikkalainen-msemen-hunajalla: voi: No specific Fineli/AFCD food record and preparation match was resolved for “voi”; it is not treated as zero.",
+        "pohjoisafrikkalainen-msemen-hunajalla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
     },
     {
       "recipeId": "malesialainen-roti-canai-dhalilla",
@@ -54019,11 +54044,11 @@
       "glycemicLoadPerServing": 21.96,
       "omittedAvailableCarbohydratePerServingG": 1.005,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
-      "previousApprovedStatus": "CALCULATED",
-      "previousApprovedGlycemicLoadPerServing": 21.96,
+      "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
+      "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [],
       "blockingCategories": [],
       "primaryBlockingCategory": null,
@@ -54084,12 +54109,15 @@
       ],
       "nextActions": [],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
-      "newlyCalculated": false,
+      "statusChanged": true,
+      "newlyCalculated": true,
       "newlyBlocked": false,
       "stillIncomplete": false,
       "changedBlockers": [],
-      "removedBlockers": []
+      "removedBlockers": [
+        "karibia-johnny-cake: leivinjauhe: The recipe lists 150 g baking powder for two servings, which appears to be a quantity error. Confirm the recipe amount and source composition before calculating a total GK.",
+        "karibia-johnny-cake: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
     },
     {
       "recipeId": "lahi-ita-taatelipuuro-tahinilla",
@@ -54576,8 +54604,8 @@
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
           "category": "MASS_PREPARATION",
@@ -54643,8 +54671,14 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
-      "removedBlockers": []
+      "changedBlockers": [
+        "thai-kookosriisi-mangolla: kookosmaito: The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
+      ],
+      "removedBlockers": [
+        "thai-kookosriisi-mangolla: kookosmaito: GI evidence is missing.",
+        "thai-kookosriisi-mangolla: seesaminsiemen: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "thai-kookosriisi-mangolla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
     },
     {
       "recipeId": "korealainen-bataatti-riisikulho",
@@ -54946,8 +54980,8 @@
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
           "category": "COMPOSITION",
@@ -55013,8 +55047,13 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
-      "removedBlockers": []
+      "changedBlockers": [
+        "meksikolainen-quesadilla-sienilla: maissi: Calculation remains blocked because no source-matched composition record has been approved for the recipe's corn-kernel preparation state. The prior 240 g grilled-cob mapping is incorrect; no substitute state is assumed."
+      ],
+      "removedBlockers": [
+        "meksikolainen-quesadilla-sienilla: maissi: GI evidence is missing.",
+        "meksikolainen-quesadilla-sienilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
     },
     {
       "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
@@ -55654,7 +55693,7 @@
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
+      "calculationInputVersionChanged": true,
       "calculationEvidenceVersionChanged": false,
       "blockers": [
         {
@@ -55718,7 +55757,9 @@
       "newlyBlocked": false,
       "stillIncomplete": true,
       "changedBlockers": [],
-      "removedBlockers": []
+      "removedBlockers": [
+        "valimerellinen-halloumi-tomaattileipa: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
     },
     {
       "recipeId": "indonesialainen-bakwan-maissifritter",
@@ -55842,8 +55883,8 @@
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
           "category": "GI_MISSING",
@@ -55922,8 +55963,13 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
-      "removedBlockers": []
+      "changedBlockers": [
+        "indonesialainen-bakwan-maissifritter: maissi: No suitable GI source is available for sweetcorn kernels cooked in battered bakwan. Boiled sweetcorn GI measurements are not assigned to the deep-fried batter preparation."
+      ],
+      "removedBlockers": [
+        "indonesialainen-bakwan-maissifritter: maissi: GI evidence is missing.",
+        "indonesialainen-bakwan-maissifritter: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
     },
     {
       "recipeId": "japanilainen-kabocha-puuro",
@@ -56511,8 +56557,8 @@
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
           "category": "GI_MISSING",
@@ -56599,8 +56645,13 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
-      "removedBlockers": []
+      "changedBlockers": [
+        "valimerellinen-farinata-aamupalaksi: tomaatti: GI evidence is missing."
+      ],
+      "removedBlockers": [
+        "valimerellinen-farinata-aamupalaksi: rosmariini: No source-matched composition and preparation was resolved for “rosmariini”; it is not treated as zero.",
+        "valimerellinen-farinata-aamupalaksi: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
     },
     {
       "recipeId": "korealainen-kimchi-jeon-aamiaiseksi",
@@ -59148,8 +59199,8 @@
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
           "category": "MASS_PREPARATION",
@@ -59215,8 +59266,13 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
-      "removedBlockers": []
+      "changedBlockers": [
+        "malesialainen-nasi-lemak-aamiaisella: kookosmaito: The recipe lists 200 ml coconut milk but does not identify the product type or fat level. No composition match or source-backed mass conversion can be approved; do not assume canned regular-fat coconut milk or 184 g."
+      ],
+      "removedBlockers": [
+        "malesialainen-nasi-lemak-aamiaisella: kookosmaito: GI evidence is missing.",
+        "malesialainen-nasi-lemak-aamiaisella: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
     },
     {
       "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
@@ -68664,11 +68720,11 @@
       "glycemicLoadPerServing": 26.47,
       "omittedAvailableCarbohydratePerServingG": 1.02,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
-      "previousApprovedStatus": "CALCULATED",
-      "previousApprovedGlycemicLoadPerServing": 26.47,
+      "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
+      "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [],
       "blockingCategories": [],
       "primaryBlockingCategory": null,
@@ -68716,12 +68772,15 @@
       ],
       "nextActions": [],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
-      "newlyCalculated": false,
+      "statusChanged": true,
+      "newlyCalculated": true,
       "newlyBlocked": false,
       "stillIncomplete": false,
       "changedBlockers": [],
-      "removedBlockers": []
+      "removedBlockers": [
+        "japanilainen-tamago-kake-gohan: nori: The structured recipe lists 150 g dried nori for two servings, an implausible amount that may be a unit or decimal error. The quantity must be corrected before calculating a complete serving estimate.",
+        "japanilainen-tamago-kake-gohan: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
     },
     {
       "recipeId": "indonesialainen-tempeh-munakulho",
@@ -74198,8 +74257,8 @@
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
           "category": "GI_MISSING",
@@ -74310,8 +74369,13 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
-      "removedBlockers": []
+      "changedBlockers": [
+        "pohjoisafrikkalainen-harissa-shakshuka: tomaatti: GI evidence is missing.",
+        "pohjoisafrikkalainen-harissa-shakshuka: paprika: GI evidence is missing."
+      ],
+      "removedBlockers": [
+        "pohjoisafrikkalainen-harissa-shakshuka: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
     },
     {
       "recipeId": "valimerellinen-pinaatti-fetashakshuka",
