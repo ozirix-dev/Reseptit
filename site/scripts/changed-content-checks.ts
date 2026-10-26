@@ -1,7 +1,6 @@
 import assert from "node:assert/strict";
 
 type AuditedSource = { data: { recipe_id: string } };
-type TranslationAudit = { publishedSources: AuditedSource[]; errors: string[] };
 
 export type PublishedRoute = {
   recipe_id: string;
@@ -10,7 +9,10 @@ export type PublishedRoute = {
   path: string;
 };
 
-export function assertChangedRecipeAuditIsClean(audit: TranslationAudit, recipeId: string): AuditedSource | null {
+export function assertChangedRecipeAuditIsClean<TSource extends AuditedSource>(
+  audit: { publishedSources: TSource[]; errors: string[] },
+  recipeId: string,
+): TSource | null {
   const source = audit.publishedSources.find((recipe) => recipe.data.recipe_id === recipeId) ?? null;
   const relevantErrors = audit.errors.filter((error) => error.startsWith(`${recipeId}:`));
   assert.deepEqual(relevantErrors, [], `${recipeId}: related translation checks failed`);
