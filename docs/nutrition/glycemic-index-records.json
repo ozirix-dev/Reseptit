@@ -85,6 +85,7 @@
       "referenceScale": "GLUCOSE_100",
       "source": {
         "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "authors": "Fiona S Atkinson, Jennie C Brand-Miller, Kaye Foster-Powell, Anette E Buyken, Janina Goletzke",
         "url": "https://doi.org/10.1093/ajcn/nqab233",
         "table": "Supplemental Table 1; article Results also reports the value",
         "year": 2021,
@@ -92,7 +93,30 @@
         "iso26642Confirmed": true,
         "qualityEvidence": "The record is from Supplemental Table 1, which the review defines as the ISO-methodology set. The tables identify the food as whole/raw tomato."
       },
-      "note": "Candidate only. Not assigned to the recipes' crushed and cooked tomato."
+      "note": "Direct GI value for whole raw tomato; this does not apply to crushed or cooked tomato."
+    },
+    {
+      "id": "tomato-cherry-raw-analogue-gi-22",
+      "gi": 22,
+      "foodKey": "tomato",
+      "preparationKey": "whole-raw",
+      "food": "Whole tomatoes, raw (analogue for raw cherry tomatoes)",
+      "preparation": "Whole, raw; cherry-tomato cultivar was not specified in the tested source food",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "authors": "Fiona S Atkinson, Jennie C Brand-Miller, Kaye Foster-Powell, Anette E Buyken, Janina Goletzke",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Supplemental Table 1; whole tomatoes, raw, GI 22",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "qualityEvidence": "The review identifies Supplemental Table 1 as the ISO-methodology set. It reports raw whole tomatoes but does not identify cherry tomatoes or a cultivar. This is a disclosed tomato/cultivar analogue, not a cherry-tomato-specific measurement."
+      },
+      "note": "Low-confidence raw-tomato cultivar analogue; used only for uncooked cherry tomatoes and not for sauces or cooked tomatoes."
     },
     {
       "id": "tomato-juice-canned-gi-38",
@@ -413,6 +437,29 @@
         "qualityEvidence": "Published category mean from ISO-screened individual food measurements. This is not a cream-cheese-specific value and is used only as a clearly labelled category-level proxy."
       },
       "note": "Category mean, not a measured GI for the recipe's cream cheese."
+    },
+    {
+      "id": "plain-yogurt-category-mean-gi-27-2017",
+      "gi": 27,
+      "foodKey": "plain-yogurt-category-mean",
+      "preparationKey": "plain-unsweetened-yogurt",
+      "food": "Plain or artificially sweetened yogurt category mean",
+      "preparation": "Plain or artificially sweetened yogurt; category average, not a brand-specific test",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "Yogurt Is a Low-Glycemic Index Food",
+        "authors": "Thomas MS Wolever",
+        "url": "https://doi.org/10.3945/jn.116.240770",
+        "table": "Table 1: plain/artificially sweetened yogurt database mean 26.6 ± 10.9 (n=43), rounded to GI 27",
+        "year": 2017,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Published analysis of the University of Sydney GI database. The reported mean summarizes 43 plain or artificially sweetened yogurt entries; it is not a new standardized test of this recipe's yogurt brand or the mixed recipe."
+      },
+      "note": "Low-confidence plain-yogurt category mean; the underlying individual database entries vary and this is not a brand-specific measurement."
     },
     {
       "id": "chickpea-canned-gi-35",

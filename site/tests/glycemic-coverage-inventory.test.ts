@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { mkdtemp, readFile, rm } from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 
@@ -9,6 +10,7 @@ import {
   buildCurrentCoverageInventory,
   type CoverageResult,
 } from "../scripts/glycemic-coverage-inventory-model";
+import { writeImmutableBaselineFile } from "../scripts/glycemic-coverage-baseline-file";
 
 const sampleResult = (recipeId: string, blockers: string[] = [], status: CoverageResult["status"] = "INSUFFICIENT SOURCE DATA"): CoverageResult => ({
   recipeId,
@@ -41,6 +43,19 @@ test("baseline snapshots capture the approved source revision and all recipe sta
   assert.equal(baseline.calculated, 1);
   assert.equal(baseline.incomplete, 1);
   assert.equal(baseline.recipes[0]?.calculationInputVersion, "i1");
+});
+
+test("batch baseline capture refuses to overwrite and preserves the original snapshot", async () => {
+  const directory = await mkdtemp(path.join(os.tmpdir(), "glycemic-baseline-"));
+  const filePath = path.join(directory, "baseline.json");
+  const original = "{\"sourceCommit\":\"approved\"}\n";
+  try {
+    await writeImmutableBaselineFile(filePath, original);
+    await assert.rejects(writeImmutableBaselineFile(filePath, "{\"sourceCommit\":\"replacement\"}\n"), /Refusing to overwrite existing batch baseline/);
+    assert.equal(await readFile(filePath, "utf8"), original);
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
 });
 
 test("a resolved current row cannot erase its pre-correction content blockers", () => {

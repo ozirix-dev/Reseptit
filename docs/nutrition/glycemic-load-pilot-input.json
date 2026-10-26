@@ -11873,90 +11873,69 @@
           "grams": 400,
           "fineliRecordId": "afcd-F000678-release-3",
           "giRecordId": null,
-          "massEvidence": "Unspecified beef mince represented by AFCD regular-fat raw mince record F000678; fat-class variation is included in scope.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "massEvidence": "Unspecified beef mince represented by AFCD regular-fat raw mince record F000678; fat-class variation is included in scope."
         },
         {
           "name": "juustokuminaa",
           "grams": 2,
           "fineliRecordId": "afcd-F003327-release-3",
           "giRecordId": null,
-          "massEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1685,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "massEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
         },
         {
           "name": "savupaprikaa",
           "grams": 2,
           "fineliRecordId": "afcd-F006316-release-3",
           "giRecordId": null,
-          "massEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.0955,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "massEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass."
         },
         {
           "name": "salaattia",
           "grams": 150,
           "fineliRecordId": "fineli-330-release-20",
           "giRecordId": null,
-          "massEvidence": "Raw leaf lettuce; Fineli record 330.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.3675,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "massEvidence": "Raw leaf lettuce; Fineli record 330."
         },
         {
           "name": "tomaattia",
           "grams": 100,
           "fineliRecordId": "fineli-352-release-20",
-          "giRecordId": null,
+          "giRecordId": "whole-tomato-raw-gi-22",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw",
           "massEvidence": "Raw tomato; Fineli record 352.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.8625,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "giMatchEvidence": "Exact food/preparation match: International Tables 2021 reports GI 22 for whole raw tomatoes (Supplemental Table 1). This raw tomato is used uncooked in the recipe."
         },
         {
           "name": "avokado",
           "grams": 150,
           "fineliRecordId": "fineli-11057-release-20",
           "giRecordId": null,
-          "massEvidence": "Edible mass set to 150 g per medium avocado; Fineli peeled/pitted record 11057 provides the food state.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.28875,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "massEvidence": "Edible mass set to 150 g per medium avocado; Fineli peeled/pitted record 11057 provides the food state."
         },
         {
           "name": "cheddarjuustoa",
           "grams": 100,
           "fineliRecordId": "fineli-698-release-20",
           "giRecordId": null,
-          "massEvidence": "Cheddar chosen for this recipe; Fineli cheddar, 34% fat, record 698.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.025,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "massEvidence": "Cheddar chosen for this recipe; Fineli cheddar, 34% fat, record 698."
         },
         {
           "name": "maustamatonta jogurttia 3,9 % rasvaa",
           "grams": 100,
           "fineliRecordId": "fineli-620-release-20",
-          "giRecordId": null,
+          "giRecordId": "plain-yogurt-category-mean-gi-27-2017",
+          "foodKey": "plain-yogurt-category-mean",
+          "preparationKey": "plain-unsweetened-yogurt",
           "massEvidence": "Plain unsweetened Bulgarian-style yogurt, 3.9% fat; Fineli record 620.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.85,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "giMatchEvidence": "Low-confidence category mean for plain yogurt (GI 27 ± 11, 43 database entries); this is not a brand-specific measurement."
         },
         {
           "name": "limetti",
           "grams": 50,
           "fineliRecordId": "afcd-F005198-release-3",
           "giRecordId": null,
-          "massEvidence": "Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.05,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "massEvidence": "Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh."
         },
         {
           "name": "suolaa ja chiliä",
@@ -12008,9 +11987,11 @@
           "name": "kirsikkatomaatteja",
           "grams": 150,
           "fineliRecordId": "afcd-F009190-release-3",
-          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "giRecordId": "tomato-cherry-raw-analogue-gi-22",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw",
           "massEvidence": "Raw cherry tomatoes; AFCD record F009190.",
-          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+          "giMatchEvidence": "Low-confidence cultivar analogue: International Tables 2021 reports GI 22 for whole raw tomatoes; the tested cultivar is not identified as cherry tomato. Recipe tomatoes are served raw."
         },
         {
           "name": "avokado",

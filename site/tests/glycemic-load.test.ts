@@ -217,6 +217,63 @@ test("mashed and boiled potato source analogues are mapped separately for aloo p
   }
 });
 
+test("tacokulho-nauta-avokado regression uses exact raw tomato and a labelled plain-yogurt category mean", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [pilot, foods, catalog] = await Promise.all([
+    readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8").then((value) => JSON.parse(value)),
+    readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8").then((value) => JSON.parse(value)),
+    readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8").then((value) => JSON.parse(value)),
+  ]);
+  const recipe = pilot.recipes.find((row: { recipeId: string }) => row.recipeId === "tacokulho-nauta-avokado");
+  const tomato = recipe.ingredients.find((row: { name: string }) => row.name === "tomaattia");
+  const yogurt = recipe.ingredients.find((row: { name: string }) => row.name === "maustamatonta jogurttia 3,9 % rasvaa");
+  assert.equal(tomato?.fineliRecordId, "fineli-352-release-20");
+  assert.equal(tomato?.giRecordId, "whole-tomato-raw-gi-22");
+  assert.equal(tomato?.preparationKey, "whole-raw");
+  assert.equal(yogurt?.fineliRecordId, "fineli-620-release-20");
+  assert.equal(yogurt?.giRecordId, "plain-yogurt-category-mean-gi-27-2017");
+  assert.equal(yogurt?.excludedReason, undefined, "known composition and mass must use the normal Fineli carbohydrate calculation");
+  const result = calculateGlycemicLoad(recipe, foods, catalog.records);
+  assert.equal(result.status, "CALCULATED");
+  assert.equal(result.unroundedGlycemicLoadPerServing, 0.41925);
+  assert.equal(result.glycemicLoadPerServing, 0.42);
+  assert.equal(roundGlycemicLoadForDisplay(result.glycemicLoadPerServing), 0.4);
+  assert.equal(classifyGlycemicLoad(result.unroundedGlycemicLoadPerServing), "LOW");
+  assert.equal(result.confidence, "LOW");
+  assert.equal(result.omittedAvailableCarbohydratePerServingG, 1.24525);
+  assert.ok(result.omittedAvailableCarbohydratePerServingG < 2);
+  assert.equal(result.ingredients.find((row) => row.name === "tomaattia")?.matchKind, "EXACT");
+  assert.equal(result.ingredients.find((row) => row.name === "maustamatonta jogurttia 3,9 % rasvaa")?.matchKind, "CATEGORY_MEAN");
+});
+
+test("pesto chicken salad regression uses a low-confidence raw-cherry-tomato cultivar analogue", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [pilot, foods, catalog] = await Promise.all([
+    readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8").then((value) => JSON.parse(value)),
+    readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8").then((value) => JSON.parse(value)),
+    readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8").then((value) => JSON.parse(value)),
+  ]);
+  const recipe = pilot.recipes.find((row: { recipeId: string }) => row.recipeId === "kanasalaatti-pesto-mozzarella");
+  const tomato = recipe.ingredients.find((row: { name: string }) => row.name === "kirsikkatomaatteja");
+  const giRecord = catalog.records.find((row: { id: string }) => row.id === "tomato-cherry-raw-analogue-gi-22");
+  assert.equal(tomato?.fineliRecordId, "afcd-F009190-release-3");
+  assert.equal(tomato?.preparationKey, "whole-raw");
+  assert.equal(giRecord?.gi, 22);
+  assert.equal(giRecord?.matchKind, "ANALOG");
+  assert.equal(giRecord?.qualityTier, "SUPPLEMENTARY");
+  assert.equal(giRecord?.confidence, "LOW");
+  assert.match(giRecord?.note ?? "", /not for sauces or cooked tomatoes/);
+  const result = calculateGlycemicLoad(recipe, foods, catalog.records);
+  assert.equal(result.status, "CALCULATED");
+  assert.equal(result.unroundedGlycemicLoadPerServing, 0.28875);
+  assert.equal(result.glycemicLoadPerServing, 0.29);
+  assert.equal(roundGlycemicLoadForDisplay(result.glycemicLoadPerServing), 0.3);
+  assert.equal(classifyGlycemicLoad(result.unroundedGlycemicLoadPerServing), "LOW");
+  assert.equal(result.confidence, "LOW");
+  assert.equal(result.omittedAvailableCarbohydratePerServingG, 0.816225);
+  assert.equal(result.ingredients.find((row) => row.name === "kirsikkatomaatteja")?.matchKind, "ANALOG");
+});
+
 test("GI coverage inventory keeps its original 2026-10-25 baseline when current inputs change", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const inventory = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-inventory-2026-10-25.json"), "utf8"));

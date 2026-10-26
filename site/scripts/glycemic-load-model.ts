@@ -122,6 +122,7 @@ function categoryMeanMatchesFood(foodKey: string, foodName: string, ingredientNa
   const text = `${foodName} ${ingredientName}`.normalize("NFC").toLocaleLowerCase("fi-FI");
   const patterns: Record<string, RegExp> = {
     dairy: /maito|milk|cream|kerma|jogurtti|yogurt|juusto|cheese|rahka|quark|paneer|feta|ricotta|voi|butter|dairy/,
+    "plain-yogurt-category-mean": /maustamaton|plain|jogurtti|yogurt/,
     "bakery-products-category-mean": /jauho|flour|mannasuurimo|semolina|leipä|bread|kaura|oat|vehnä|wheat|ruis|rye/,
     "bread-category-mean": /leipä|bread|sämpylä|bun|pita|flatbread|toast/,
     "sugar-syrups-category-mean": /soker|sugar|siirappi|syrup|hunaja|honey|hillo|jam|molasses/,
