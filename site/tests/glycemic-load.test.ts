@@ -772,3 +772,78 @@ test("batch 2B4 raw mango GI source is food-specific, conservative and reusable"
   assert.equal(glycemicLoadInputHash(riceBowl), bindings.calculationInputs[riceBowl.recipeId]);
   assert.equal(glycemicLoadEvidenceHash(riceBowl, foods, gis), bindings.calculationEvidence[riceBowl.recipeId]);
 });
+
+test("batch 2B5 small-portion corrections calculate the cottage-cheese bowl and Chettinad chicken", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [inputText, foodText, giText, bindingText, aliasText, pilotText] = await Promise.all([
+    readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-bindings.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-aliases.json"), "utf8"),
+    readFile(path.join(root, "tmp/nutrition/glycemic-load-pilot.json"), "utf8"),
+  ]);
+  const inputs = JSON.parse(inputText) as { recipes: GlycemicLoadRecipeInput[] };
+  const foods = JSON.parse(foodText) as FoodRecord[];
+  const gis = (JSON.parse(giText) as { records: GlycemicIndexRecord[] }).records;
+  const bindings = JSON.parse(bindingText) as { recipes: Record<string, string>; calculationInputs: Record<string, string>; calculationEvidence: Record<string, string> };
+  const aliases = (JSON.parse(aliasText) as { aliases: Record<string, { canonical: string; evidence: string }> }).aliases;
+  const pilot = JSON.parse(pilotText) as { results: Array<{ recipeId: string; status: string; glycemicLoadPerServing: number | null; confidence: string | null; omittedAvailableCarbohydratePerServingG: number }> };
+  const cases = [
+    { id: "raejuusto-pesto-kasviskulho", category: "aamupalat", unrounded: 0.861, stored: 0.86, shown: 0.9, omitted: 0.630975 },
+    { id: "chettinad-kana", category: "paaruoat", unrounded: 0.6032, stored: 0.6, shown: 0.6, omitted: 1.17125 },
+  ];
+
+  for (const item of cases) {
+    const input = inputs.recipes.find((row) => row.recipeId === item.id)!;
+    const result = calculateGlycemicLoad(input, foods, gis);
+    assert.equal(input.servings, 4, `${item.id} servings`);
+    assert.equal(result.status, "CALCULATED", item.id);
+    assert.ok(Math.abs(result.unroundedGlycemicLoadPerServing! - item.unrounded) < 1e-12, `${item.id} unrounded GK`);
+    assert.equal(result.glycemicLoadPerServing, item.stored, `${item.id} numeric GK`);
+    assert.equal(roundGlycemicLoadForDisplay(result.glycemicLoadPerServing!), item.shown, `${item.id} displayed GK`);
+    assert.equal(classifyGlycemicLoad(result.glycemicLoadPerServing!), "LOW", `${item.id} GK class`);
+    assert.equal(result.confidence, "LOW", `${item.id} confidence remains separate from the GK class`);
+    assert.ok(Math.abs(result.omittedAvailableCarbohydratePerServingG - item.omitted) < 1e-12, `${item.id} cumulative omitted carbohydrate`);
+    assert.ok(result.omittedAvailableCarbohydratePerServingG < 2, `${item.id} cumulative omission under 2 g per serving`);
+    assert.deepEqual(result.blockers, [], `${item.id} has no remaining blockers`);
+    const markdown = await readFile(path.join(root, "reseptit", item.category, `${item.id}.md`), "utf8");
+    assert.equal(recipeBindingHash(markdown, aliases), bindings.recipes[item.id], `${item.id} recipe fingerprint`);
+    assert.equal(glycemicLoadInputHash(input), bindings.calculationInputs[item.id], `${item.id} input fingerprint`);
+    assert.equal(glycemicLoadEvidenceHash(input, foods, gis), bindings.calculationEvidence[item.id], `${item.id} evidence fingerprint`);
+    const audited = pilot.results.find((row) => row.recipeId === item.id)!;
+    assert.equal(audited.status, "CALCULATED", `${item.id} all-recipe audit status`);
+    assert.equal(audited.glycemicLoadPerServing, item.stored, `${item.id} all-recipe audit GK`);
+    assert.equal(audited.confidence, "LOW", `${item.id} all-recipe audit confidence`);
+    assert.ok(Math.abs(audited.omittedAvailableCarbohydratePerServingG - item.omitted) < 1e-12);
+  }
+
+  const bowl = inputs.recipes.find((row) => row.recipeId === "raejuusto-pesto-kasviskulho")!;
+  for (const [name, recordId, expected] of [
+    ["paahdettuja pinjansiemeniä", "fineli-30968-2026-10-24", 0.3765],
+    ["rucolaa", "fineli-34159-2026-10-24", 0.05],
+  ] as const) {
+    const item = bowl.ingredients.find((row) => row.name === name)!;
+    assert.equal(item.fineliRecordId, recordId, `${name} composition source`);
+    assert.equal(item.giRecordId, null, `${name} has no guessed GI`);
+    const result = calculateGlycemicLoad(bowl, foods, gis);
+    assert.ok(Math.abs(result.ingredients.find((row) => row.name === name)!.availableCarbohydratePerServingG! - expected) < 1e-12);
+  }
+  const chettinad = inputs.recipes.find((row) => row.recipeId === "chettinad-kana")!;
+  for (const [name, recordId] of [
+    ["tuoretta inkivääriä", "afcd-F004213-2026-10-24"],
+    ["mustapippureita", "afcd-F006618-2026-10-24"],
+    ["korianterinsiemeniä", "afcd-F003190-2026-10-24"],
+  ] as const) {
+    const item = chettinad.ingredients.find((row) => row.name === name)!;
+    assert.equal(item.fineliRecordId, recordId, `${name} composition source`);
+    assert.equal(item.giRecordId, null, `${name} has no guessed GI`);
+  }
+
+  const wrongGi = structuredClone(bowl);
+  wrongGi.ingredients.find((row) => row.name === "paahdettuja pinjansiemeniä")!.giRecordId = "vegetables-category-mean-gi-66";
+  assert.equal(calculateGlycemicLoad(wrongGi, foods, gis).status, "INSUFFICIENT SOURCE DATA", "a wrong food-family GI remains blocking");
+  const unknownComposition = structuredClone(bowl);
+  unknownComposition.ingredients.find((row) => row.name === "paahdettuja pinjansiemeniä")!.fineliRecordId = null;
+  assert.equal(calculateGlycemicLoad(unknownComposition, foods, gis).status, "INSUFFICIENT SOURCE DATA", "unknown composition remains blocking");
+});
