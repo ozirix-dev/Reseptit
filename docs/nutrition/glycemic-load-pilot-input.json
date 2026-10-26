@@ -3011,11 +3011,11 @@
           "name": "päärynää",
           "grams": 100,
           "fineliRecordId": "fineli-11062-2026-10-24",
-          "giRecordId": "fruit-category-mean-gi-51",
+          "giRecordId": "pear-raw-mean-gi-38-2002",
           "massEvidence": "päärynää maps to fineli-release-20 record 11062; state: peeled pear.",
-          "giMatchEvidence": "Ingredient-category match: Fruits and fruit products category mean; fruit category mean; used only as a broad tamarind-paste analogue",
-          "foodKey": "fruit-category-mean",
-          "preparationKey": "category-mean"
+          "giMatchEvidence": "Published food-specific raw-pear mean (Foster-Powell K, Holt SHA, Brand-Miller JC, International Tables 2002, Table 1, entries 423–426); low-confidence ANALOG because the pear is grated raw for the marinade, then heated briefly with the beef. This is not an exact preparation match or a measured bulgogi GI.",
+          "foodKey": "pear",
+          "preparationKey": "raw"
         },
         {
           "name": "keltasipulia",
@@ -3041,21 +3041,21 @@
           "name": "seesaminsiemeniä",
           "grams": 8.5,
           "fineliRecordId": "fineli-34245-2026-10-24",
-          "giRecordId": "nuts-category-mean-gi-22",
+          "giRecordId": null,
           "massEvidence": "Ingredient-specific tablespoon mass: 8.5 g/rkl for seesaminsiemeniä.",
-          "giMatchEvidence": "Ingredient-category match: Nuts, category mean; Low-confidence category mean for peanuts.",
-          "foodKey": "peanut",
-          "preparationKey": "nuts-category-mean"
+          "giMatchEvidence": null,
+          "foodKey": null,
+          "preparationKey": null
         },
         {
           "name": "mustapippuria",
           "grams": 0.5,
           "fineliRecordId": "afcd-F006618-2026-10-24",
-          "giRecordId": "vegetables-category-mean-gi-66",
+          "giRecordId": null,
           "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria.",
-          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category"
+          "giMatchEvidence": null,
+          "foodKey": null,
+          "preparationKey": null
         }
       ]
     },
@@ -5432,11 +5432,13 @@
           "name": "sokeritonta tummaa suklaata paloina",
           "grams": 60,
           "fineliRecordId": "afcd-F009837-2026-10-24",
-          "giRecordId": "dark-chocolate-international-tables-mean-gi-29",
+          "giRecordId": null,
           "massEvidence": "Ingredient mapped to afcd-release-3 record F009837; source state: dark chocolate, no added sugar.",
-          "giMatchEvidence": "Published Dark chocolate products proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-          "foodKey": "chocolate",
-          "preparationKey": "dark-chocolate-as-sold"
+          "estimatedAvailableCarbohydratePerServingG": 0.246,
+          "negligibleAssumption": "GI omitted under the documented <1 g available-carbohydrate/serving editorial tolerance; AFCD composition for the no-added-sugar product is retained, this is not a measured chocolate GI.",
+          "giMatchEvidence": null,
+          "foodKey": null,
+          "preparationKey": null
         },
         {
           "name": "vaniljauutetta",
@@ -5499,11 +5501,13 @@
           "name": "kaakaojauhetta",
           "grams": 10,
           "fineliRecordId": "fineli-20-2026-10-24",
-          "giRecordId": "bakery-products-category-mean-gi-58",
+          "giRecordId": null,
           "massEvidence": "Ingredient-specific tablespoon mass estimate for kaakaojauhetta.",
-          "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-          "foodKey": "bakery-products-category-mean",
-          "preparationKey": "category-mean"
+          "estimatedAvailableCarbohydratePerServingG": 0.09166667,
+          "negligibleAssumption": "GI omitted under the documented <1 g available-carbohydrate/serving editorial tolerance; Fineli composition is retained, this is not a measured cocoa-powder GI.",
+          "giMatchEvidence": null,
+          "foodKey": null,
+          "preparationKey": null
         },
         {
           "name": "erytritolia",
@@ -5544,11 +5548,13 @@
           "name": "kaakaojauhetta kuorrutteeseen",
           "grams": 5,
           "fineliRecordId": "fineli-20-2026-10-24",
-          "giRecordId": "bakery-products-category-mean-gi-58",
+          "giRecordId": null,
           "massEvidence": "Ingredient-specific tablespoon mass estimate for kaakaojauhetta kuorrutteeseen.",
-          "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-          "foodKey": "bakery-products-category-mean",
-          "preparationKey": "category-mean"
+          "estimatedAvailableCarbohydratePerServingG": 0.04583333,
+          "negligibleAssumption": "GI omitted under the documented <1 g available-carbohydrate/serving editorial tolerance; Fineli composition is retained, this is not a measured cocoa-powder GI.",
+          "giMatchEvidence": null,
+          "foodKey": null,
+          "preparationKey": null
         }
       ]
     },
