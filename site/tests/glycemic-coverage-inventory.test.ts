@@ -249,3 +249,29 @@ test("batch 2B5 baseline and current inventory preserve the published 325-recipe
   assert.equal(current.recipes.length, 325);
   assert.equal(new Set(current.recipes.map((row) => row.recipeId)).size, 325);
 });
+
+test("batch 2B6A preserves its immutable published baseline and records only three reviewed additions", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const baseline = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b6a-baseline.json"), "utf8")) as {
+    sourceCommit: string; recipeCount: number; calculated: number; incomplete: number; giRecordCount: number; recipes: Array<{ recipeId: string }>;
+  };
+  const current = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b6a-current.json"), "utf8")) as {
+    sourceCommit: string;
+    previousApprovedBaseline: { sourceCommit: string; recipeCount: number; calculated: number; incomplete: number; giRecordCount: number };
+    currentSummary: { recipeCount: number; calculated: number; incomplete: number; giRecordCount: number; newlyCalculated: number; newlyBlocked: number; changedBlockerRecipes: number; newStructureMismatches: number; newInputMismatches: number; newEvidenceMismatches: number };
+    recipes: Array<{ recipeId: string; status: string; glycemicLoadPerServing: number | null; newlyCalculated: boolean }>;
+  };
+  assert.deepEqual([baseline.sourceCommit, baseline.recipeCount, baseline.calculated, baseline.incomplete, baseline.giRecordCount], ["21d9628db3ffc7434e4308d6ab42880d1f12bae0", 325, 129, 196, 39]);
+  assert.equal(baseline.recipes.length, 325);
+  assert.equal(new Set(baseline.recipes.map((row) => row.recipeId)).size, 325);
+  assert.equal(current.previousApprovedBaseline.sourceCommit, baseline.sourceCommit);
+  assert.deepEqual([current.currentSummary.recipeCount, current.currentSummary.calculated, current.currentSummary.incomplete, current.currentSummary.giRecordCount], [325, 132, 193, 40]);
+  assert.deepEqual([current.currentSummary.newlyCalculated, current.currentSummary.newlyBlocked, current.currentSummary.changedBlockerRecipes], [3, 0, 3]);
+  assert.deepEqual([current.currentSummary.newStructureMismatches, current.currentSummary.newInputMismatches, current.currentSummary.newEvidenceMismatches], [0, 0, 0]);
+  for (const id of ["bulgogi", "keto-suklaakeksit", "vhh-mokkapalat"]) {
+    const row = current.recipes.find((recipe) => recipe.recipeId === id);
+    assert.ok(row, `2B6A inventory includes ${id}`);
+    assert.equal(row.status, "CALCULATED");
+    assert.equal(row.newlyCalculated, true);
+  }
+});
