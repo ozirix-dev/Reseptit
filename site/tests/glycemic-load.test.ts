@@ -860,14 +860,21 @@ test("batch 2B6A uses a food-specific pear source and only omits source-backed s
   ]);
   const inputs = JSON.parse(inputText) as { recipes: GlycemicLoadRecipeInput[] };
   const foods = JSON.parse(foodText) as FoodRecord[];
-  const gis = (JSON.parse(giText) as { records: GlycemicIndexRecord[] }).records;
+  const giCatalog = JSON.parse(giText) as { sources: Array<{ id: string; authors?: string }>; records: GlycemicIndexRecord[] };
+  const gis = giCatalog.records;
   const bindings = JSON.parse(bindingText) as { recipes: Record<string, string>; calculationInputs: Record<string, string>; calculationEvidence: Record<string, string> };
   const aliases = (JSON.parse(aliasText) as { aliases: Record<string, { canonical: string; evidence: string }> }).aliases;
   const pilot = JSON.parse(pilotText) as { results: Array<{ recipeId: string; status: string; glycemicLoadPerServing: number | null; confidence: string | null; omittedAvailableCarbohydratePerServingG: number }> };
   const pear = gis.find((record) => record.id === "pear-raw-mean-gi-38-2002");
   assert.ok(pear);
+  assert.equal(giCatalog.sources.find((source) => source.id === "international-tables-2002")?.authors, "Foster-Powell K, Holt SHA, Brand-Miller JC");
   assert.equal(pear.gi, 38);
   assert.equal(pear.qualityTier, "SUPPLEMENTARY");
+  assert.equal(pear.matchKind, "ANALOG");
+  assert.equal(pear.confidence, "LOW");
+  assert.equal(pear.referenceScale, "GLUCOSE_100");
+  assert.equal(pear.source.authors, "Foster-Powell K, Holt SHA, Brand-Miller JC");
+  assert.match(pear.source.table, /^Table 1, entries 423–426/);
   assert.equal(pear.source.published, true);
   assert.equal(pear.source.iso26642Confirmed, false);
 
@@ -901,7 +908,18 @@ test("batch 2B6A uses a food-specific pear source and only omits source-backed s
   }
 
   const bulgogi = inputs.recipes.find((row) => row.recipeId === "bulgogi")!;
-  assert.equal(bulgogi.ingredients.find((row) => row.name === "päärynää")?.giRecordId, pear.id);
+  const pearInput = bulgogi.ingredients.find((row) => row.name === "päärynää")!;
+  assert.equal(pearInput.giRecordId, pear.id);
+  assert.equal(pearInput.giMatchEvidence?.includes("not an exact preparation match"), true);
+  const sesame = bulgogi.ingredients.find((row) => row.name === "seesaminsiemeniä")!;
+  const blackPepper = bulgogi.ingredients.find((row) => row.name === "mustapippuria")!;
+  assert.equal(sesame.estimatedAvailableCarbohydratePerServingG, undefined, "known Fineli composition is calculated directly; no duplicate estimate field");
+  assert.equal(blackPepper.estimatedAvailableCarbohydratePerServingG, undefined, "known AFCD composition is calculated directly; no duplicate estimate field");
+  const bulgogiResult = calculateGlycemicLoad(bulgogi, foods, gis);
+  assert.equal(bulgogiResult.ingredients.find((row) => row.name === "seesaminsiemeniä")?.availableCarbohydratePerServingG, 0.02488375);
+  assert.equal(bulgogiResult.ingredients.find((row) => row.name === "mustapippuria")?.availableCarbohydratePer100g, 38.6);
+  assert.equal(bulgogiResult.ingredients.find((row) => row.name === "mustapippuria")?.availableCarbohydratePerServingG, 0.04825);
+  assert.equal(bulgogiResult.omittedAvailableCarbohydratePerServingG, 0.07313375);
   for (const id of ["keto-suklaakeksit", "vhh-mokkapalat"]) {
     const input = inputs.recipes.find((row) => row.recipeId === id)!;
     const cocoaOrChocolate = input.ingredients.filter((row) => /suklaata|kaakaojauhetta/i.test(row.name));

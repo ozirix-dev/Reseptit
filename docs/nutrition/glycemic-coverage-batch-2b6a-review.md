@@ -29,9 +29,9 @@ Perunaton liha-juureskeitto, bulgur/couscous, kypsä tomaatti, filotaikina, uppo
 
 ### `bulgogi` — PASS-CANDIDATE, GK avattu
 
-Reseptin 100 g hienoksi raastettua päärynää käytetään neljälle annokselle marinadissa ja kuumennetaan paistamisen yhteydessä. International Tables 2002 Table 2 raportoi neljän raa'an päärynän tutkimuksen keskiarvon GI 38 ± 2 (glukoosiasteikko). Se on ruoka-ainekohtainen mutta vanhempi, lajike- ja tutkimuskohtaisesti vaihteleva, eikä ISO 26642 -vahvistettu. Arvo on kirjattu SUPPLEMENTARY / ANALOG / LOW -tasolla; se ei ole bulgogin tai seka-aterian mitattu GI. [Atkinson ym., International Tables 2002](https://doi.org/10.1093/ajcn/76.1.5).
+Reseptin 100 g hienoksi raastettua päärynää käytetään neljälle annokselle marinadissa ja kuumennetaan paistamisen yhteydessä. Foster-Powell K, Holt SHA ja Brand-Miller JC:n International Tables 2002 -julkaisun Table 1, rivit 423–426, raportoi neljän raa'an päärynän tutkimuksen keskiarvon GI 38 ± 2 (glukoosiasteikko). Se on ruoka-ainekohtainen mutta vanhempi, lajike- ja tutkimuskohtaisesti vaihteleva, eikä ISO 26642 -vahvistettu. Nykyinen lähdepolitiikka sallii perustellun ruoka-aine-/valmistustapa-analogian vain matalalla luottamuksella: tietue pysyy SUPPLEMENTARY / ANALOG / LOW -tasolla, ja raaka, raastettu, marinadissa kuumeneva päärynä ei ole EXACT-vastaavuus eikä bulgogin tai seka-aterian mitattu GI. [Foster-Powell ym., International Tables 2002](https://doi.org/10.1093/ajcn/76.1.5).
 
-Päärynän 2,0 g/annos on lähteistetty Fineli 11062 -tietueella. Seesamin 0,02488375 g ja mustapippurin 0,04825 g jätetään pois virheellisten pähkinä- ja vihannesproxyjen sijasta. Pois jätetty määrä yhteensä 0,07313375 g/annos. Uusi laskenta: GK ennen pyöristystä 40,249495; tallennettu 40,25; näytetty yhden merkitsevän numeron tarkkuudella 40; GK-luokka HIGH; confidence LOW.
+Päärynän 2,0 g/annos on lähteistetty Fineli 11062 -tietueella. Seesamin 0,02488375 g ja mustapippurin 0,04825 g jätetään pois lähteistettyjen koostumustietojen perusteella ilman GI-proxyja. Molempien hiilihydraatti lasketaan normaalia lähdekoostumusta käyttäen: seesami 8,5 g × 1,171 g/100 g ÷ 4, mustapippuri 0,5 g × AFCD:n 38,6 g/100 g ÷ 4. Pilot-syötteen käsin arvioidut `estimatedAvailableCarbohydratePerServingG` -kentät poistettiin, sillä niitä ei käytetä lähteistetyn massan normaalissa laskentapolussa ja ne olivat redundantteja; ne muuttivat input-fingerprintiä. Pois jätetty määrä pysyy yhteensä 0,07313375 g/annos. Uusi laskenta: GK ennen pyöristystä 40,249495; tallennettu 40,25; näytetty yhden merkitsevän numeron tarkkuudella 40; GK-luokka HIGH; confidence LOW.
 
 ### `keto-suklaakeksit` — PASS-CANDIDATE, GK avattu
 
@@ -47,7 +47,7 @@ Pois jätetty määrä yhteensä 0,36475 g/annos. GK ennen pyöristystä 0,39778
 
 ### `lanttulaatikko-kermainen` — BLOCKED
 
-Reseptin 800 g lanttua keitetään 20–25 minuuttia, valutetaan, soseutetaan kermaan, voihin ja kananmunaan, minkä jälkeen seos paistetaan 175 °C:ssa noin tunnin ajan. International Tables 2002 Table 1 antaa swede/rutabaga-arvon 72 ± 8 (5 tervettä osallistujaa, glukoosivertailu, 2 h), mutta ei kuvaa kyseistä valmistusta. Lisäksi tutkimus on pieni eikä ISO 26642 -vahvistettu. [Atkinson ym., International Tables 2002](https://doi.org/10.1093/ajcn/76.1.5). Koska lantun osuus on 11,76 g/annos, sitä ei voi ohittaa toleranssilla. Ei muutosta laskentaan.
+Reseptin 800 g lanttua keitetään 20–25 minuuttia, valutetaan, soseutetaan kermaan, voihin ja kananmunaan, minkä jälkeen seos paistetaan 175 °C:ssa noin tunnin ajan. Foster-Powell ym. International Tables 2002 -julkaisun Table 1 antaa swede/rutabaga-arvon 72 ± 8 (5 tervettä osallistujaa, glukoosivertailu, 2 h), mutta ei kuvaa kyseistä valmistusta. Lisäksi tutkimus on pieni eikä ISO 26642 -vahvistettu. [Foster-Powell ym., International Tables 2002](https://doi.org/10.1093/ajcn/76.1.5). Koska lantun osuus on 11,76 g/annos, sitä ei voi ohittaa toleranssilla. Ei muutosta laskentaan.
 
 ## Kattavuus ja regressiot
 
@@ -55,7 +55,7 @@ Kaikkien 325 reseptin tulos: ennen 129 laskettua / 196 keskeneräistä ja 39 GI-
 
 Perustelluilla pienosuuksilla bulgogin näytetty GK on 40, keto-suklaakeksien 0,6 ja mokkapalojen 0,4. Luokat pysyvät herkkyystarkistuksissa samoina. Aiemmin lasketuista resepteistä tulkintaa muuttavia GK-muutoksia on 0. Uusista arvoista yksi on HIGH (bulgogi), kaksi LOW; kyseessä on kolme uutta kattavuusarviota, ei aiempien arvojen korjaus.
 
-Strict nutrition audit säilyi 180 / 86 / 59 / 0. Uusi GI-tietue: `pear-raw-mean-gi-38-2002`. Fingerprintit uusittiin vain bulgogin, keto-suklaakeksien ja mokkapalojen muuttuneille syöte- ja lähdetiedoille. Reseptitekstejä ja tavallisia ravintoarvoja ei muutettu. Nykyinen auditointi ei havainnut uusia structure/input/evidence mismatch -eroja (0/0/0). Nykyinen inventory JSON ja Markdown ovat rinnalla.
+Strict nutrition audit säilyi 180 / 86 / 59 / 0. Uusi GI-tietue: `pear-raw-mean-gi-38-2002`. Bibliografian tekijätieto ja Table 1 -viite korjattiin; GI 38 ei muuttunut. Bulgogin virheelliset ja redundantit pienhiilihydraattiarviot poistettiin seesamilta ja mustapippurilta. Lähdekoostumuksesta laskettu seesamin 0,02488375 g/annos, mustapippurin 0,04825 g/annos ja yhteissumma 0,07313375 g/annos säilyivät samoina. Päivitetään bulgogin laskentasyötteen fingerprint sen jälkeen, kun metadata poistettiin; reseptin rakennesidonta ja lähdekoostumuksen arvot eivät muutu. Reseptitekstejä ja tavallisia ravintoarvoja ei muutettu. Nykyinen auditointi ei havainnut uusia structure/input/evidence mismatch -eroja (0/0/0). Nykyinen inventory JSON ja Markdown ovat rinnalla.
 
 ## Testaus ja julkaisu
 

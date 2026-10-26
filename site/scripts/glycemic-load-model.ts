@@ -11,6 +11,7 @@ export interface GlycemicIndexRecord {
   referenceScale: "GLUCOSE_100";
   source: {
     title: string;
+    authors?: string;
     url: string;
     table: string;
     year: number;
