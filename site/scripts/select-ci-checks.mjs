@@ -17,6 +17,38 @@ const allUnitTests = [
   "tests/glycemic-coverage-inventory.test.ts",
 ];
 
+const glycemicDataFiles = new Set([
+  "docs/nutrition/glycemic-index-records.json",
+  "docs/nutrition/glycemic-load-pilot-input.json",
+  "docs/nutrition/glycemic-load-recipe-bindings.json",
+  "docs/nutrition/glycemic-load-recipe-aliases.json",
+]);
+
+const nutritionSourceFiles = new Set([
+  "docs/nutrition/food-records.json",
+  "docs/nutrition/afcd-release-3-reference.json",
+  "docs/nutrition/fineli-release-20-reference.json",
+  "docs/nutrition/cnf-2026-reference.json",
+]);
+
+function addNutritionChecks(plan) {
+  plan.runNutrition = true;
+  plan.runBuild = true;
+  plan.runStatic = true;
+  plan.needsNode = true;
+  plan.unitTests.add("tests/nutrition-model.test.ts");
+  plan.unitTests.add("tests/nutrition-evidence.test.ts");
+}
+
+function addGlycemicChecks(plan) {
+  plan.runGlycemic = true;
+  plan.runBuild = true;
+  plan.runStatic = true;
+  plan.needsNode = true;
+  plan.unitTests.add("tests/glycemic-load.test.ts");
+  plan.unitTests.add("tests/glycemic-coverage-inventory.test.ts");
+}
+
 function fullPlan() {
   return {
     full: true,
@@ -60,30 +92,33 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
       plan.needsNode = true;
       continue;
     }
-    if (file === "docs/nutrition/food-records.json" || file.startsWith("docs/nutrition/batches/")) {
-      plan.runNutrition = true;
-      plan.runBuild = true;
-      plan.runStatic = true;
-      plan.needsNode = true;
+    if (nutritionSourceFiles.has(file) || /^docs\/nutrition\/batches\/.+\.json$/i.test(file)) {
+      addNutritionChecks(plan);
+      if (file === "docs/nutrition/food-records.json") addGlycemicChecks(plan);
       continue;
     }
     if (/^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/i.test(file)) {
       plan.runContent = true;
-      plan.needsNode = true;
+      addNutritionChecks(plan);
+      addGlycemicChecks(plan);
       continue;
     }
-    if (/^docs\/nutrition\/(?:glycemic-index-records|glycemic-load-pilot-input)\.json$/i.test(file) ||
+    if (glycemicDataFiles.has(file) || /^docs\/nutrition\/glycemic-[a-z0-9-]+\.json$/i.test(file) ||
         file === "site/scripts/glycemic-load-model.ts" ||
         file === "site/scripts/glycemic-load-pilot.ts" ||
         file === "site/scripts/glycemic-coverage-inventory.ts") {
-      plan.runGlycemic = true;
-      plan.runBuild = true;
-      plan.runStatic = true;
-      plan.needsNode = true;
-      plan.unitTests.add("tests/glycemic-load.test.ts");
-      plan.unitTests.add("tests/glycemic-coverage-inventory.test.ts");
+      addGlycemicChecks(plan);
       continue;
     }
+    if (/^docs\/nutrition\/estimates-[a-z0-9-]+\.md$/i.test(file)) {
+      addNutritionChecks(plan);
+      continue;
+    }
+    if (/^docs\/nutrition\/glycemic-[a-z0-9-]+\.md$/i.test(file)) {
+      addGlycemicChecks(plan);
+      continue;
+    }
+    if (/^docs\/nutrition\/.+\.json$/i.test(file)) return fullPlan();
     if (file === "meta/kaannokset/human-review-evidence.json" ||
         file === "site/scripts/translation-review.ts" ||
         file === "site/scripts/translation-audit.ts") {

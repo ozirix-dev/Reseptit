@@ -30,6 +30,43 @@ test("GI/GK model changes retain calculation regression and build audits", () =>
   assert.equal(plan.runBrowser, false);
 });
 
+test("GI/GK recipe bindings, aliases, and calculation snapshots select GI/GK checks", () => {
+  for (const file of [
+    "docs/nutrition/glycemic-load-recipe-bindings.json",
+    "docs/nutrition/glycemic-load-recipe-aliases.json",
+    "docs/nutrition/glycemic-coverage-current-2026-10-25.json",
+  ]) {
+    const plan = classifyPaths([file]);
+    assert.equal(plan.runGlycemic, true, file);
+    assert.equal(plan.runBuild, true, file);
+    assert.deepEqual(plan.unitTests, [
+      "tests/glycemic-coverage-inventory.test.ts",
+      "tests/glycemic-load.test.ts",
+    ], file);
+  }
+});
+
+test("nutrition references and recipe calculations select audit and evidence checks", () => {
+  const reference = classifyPaths(["docs/nutrition/fineli-release-20-reference.json"]);
+  assert.equal(reference.runNutrition, true);
+  assert.equal(reference.runBuild, true);
+  assert.equal(reference.runGlycemic, false);
+
+  const calculation = classifyPaths(["docs/nutrition/calculations/example-recipe.json"]);
+  assert.equal(calculation.runContent, true);
+  assert.equal(calculation.runNutrition, true);
+  assert.equal(calculation.runGlycemic, true);
+  assert.equal(calculation.runBuild, true);
+});
+
+test("unknown nutrition JSON is fail-closed while report Markdown stays lightweight", () => {
+  assert.equal(classifyPaths(["docs/nutrition/new-calculation-source.json"]).full, true);
+  const report = classifyPaths(["docs/nutrition/fineli-integration-plan.md"]);
+  assert.equal(report.full, false);
+  assert.equal(report.needsNode, false);
+  assert.deepEqual(report.unitTests, []);
+});
+
 test("UI changes run the build and browser checks", () => {
   const plan = classifyPaths(["site/src/features/recipes/recipe-card.tsx"]);
   assert.equal(plan.runBuild, true);
