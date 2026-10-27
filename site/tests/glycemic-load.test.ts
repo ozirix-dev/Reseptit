@@ -203,7 +203,7 @@ test("plain-yogurt category mean binds only to ingredients in the yogurt family"
   }
 });
 
-test("batch 2B6C reuses reviewed corn-tortilla and dark-chocolate evidence without broad family matches", async () => {
+test("batch 2B6C retains source-supported warm tortilla and cream omissions while blocking fried tostada and baked chocolate", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const [inputText, foodText, giText, pilotText] = await Promise.all([
     readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
@@ -217,8 +217,6 @@ test("batch 2B6C reuses reviewed corn-tortilla and dark-chocolate evidence witho
   const pilot = JSON.parse(pilotText) as { results: Array<{ recipeId: string; status: string; glycemicLoadPerServing: number | null; confidence: string | null; omittedAvailableCarbohydratePerServingG: number }> };
   const expected = [
     { id: "meksikolainen-aamiais-tacot-mustapavuilla", gl: 16.04, omitted: 0.727 },
-    { id: "meksikolainen-paputostada-aamupalaksi", gl: 16.04, omitted: 0.727 },
-    { id: "meheva-suklaakakku", gl: 20.31, omitted: 0.6352 },
     { id: "vhh-kaalikaarryleet", gl: 9.24, omitted: 1.578025 },
   ];
   for (const item of expected) {
@@ -238,6 +236,23 @@ test("batch 2B6C reuses reviewed corn-tortilla and dark-chocolate evidence witho
   assert.equal(tortilla.foodKey, "corn-tortilla");
   assert.equal(tortilla.preparationKey, "commercial-corn-tortilla");
   assert.equal(tortilla.giRecordId, "corn-tortilla-noriega-2000-glucose-estimate");
+
+  for (const id of ["meheva-suklaakakku", "meksikolainen-paputostada-aamupalaksi"]) {
+    const recipe = inputs.recipes.find((row) => row.recipeId === id)!;
+    const result = calculateGlycemicLoad(recipe, foods, gis);
+    assert.equal(result.status, "INSUFFICIENT SOURCE DATA", `${id} requires GI/preparation evidence`);
+    assert.equal(result.glycemicLoadPerServing, null, `${id} must not have a published GK estimate`);
+    assert.ok(result.blockers.length > 0, `${id} must retain a genuine blocker`);
+    const audited = pilot.results.find((row) => row.recipeId === id)!;
+    assert.equal(audited.status, "INSUFFICIENT SOURCE DATA", `${id} full-inventory audit`);
+    assert.equal(audited.glycemicLoadPerServing, null, `${id} full-inventory GK`);
+  }
+  const tostada = inputs.recipes.find((row) => row.recipeId === "meksikolainen-paputostada-aamupalaksi")!;
+  assert.equal(tostada.ingredients.find((row) => row.name === "maissitortilla")?.preparationKey, undefined,
+    "commercial soft-tortilla preparation may not be assigned to a crispy tostada");
+  const cake = inputs.recipes.find((row) => row.recipeId === "meheva-suklaakakku")!;
+  assert.equal(cake.ingredients.find((row) => row.name === "tummaa suklaata")?.preparationKey, undefined,
+    "as-sold dark chocolate source is not a baked-cake preparation match");
 
   const darkChocolate = gis.find((row) => row.id === "dark-chocolate-international-tables-mean-gi-29")!;
   const milkChocolate = calculateGlycemicLoad({
