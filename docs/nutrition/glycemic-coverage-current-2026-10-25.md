@@ -1,6 +1,6 @@
 # GK-esteinventaario
 
-Lähdecommit: `d9a5c2fdebc9dd60fdbb6e24d6bc8ee56f4f2e6d`. Vertailun lähtösnapshot: `5e9cdeb830f468ecf099e9c286f9344afe3b6b71` (114 laskettua / 211 keskeneräistä; 38 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
+Lähdecommit: `822f652181bafccfd795895542b0b46c753a91ef`. Vertailun lähtösnapshot: `5e9cdeb830f468ecf099e9c286f9344afe3b6b71` (114 laskettua / 211 keskeneräistä; 38 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
 
 Erän 2A lähtösnapshot on historiallinen vertailupohja, ei tämän ajon nykytila. Ajantasainen laskentatila ja nykyiset GK-luvut esitetään alla.
 
