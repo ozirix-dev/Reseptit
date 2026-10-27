@@ -82,4 +82,4 @@ Pieneksi seuraavaksi työn kohteeksi sopii rajattu tomaatti-GI-vastaavuuden kats
 - Eräinventaario: PASS; kolme uutta arviota, 0 aiemmin lasketun arvoa muuttui, fingerprint-mismatchit 0/0/0.
 - `npm run test:translations`: PASS, 27/27. Neljän taatelireseptin julkaistuja EN/SV/TH-käännösreittejä ei ole.
 - `npm run build`: PASS; tiukka ravintoarvoauditointi, GK-auditointi, TypeScript, Vite ja 690 prerenderöityä reittiä onnistuivat. Vite ilmoitti olemassa olevasta suuresta JS-chunkista.
-- GitHub Actions: PR #120:n aiempi build PASS; korjauksen jälkeinen HEAD odottaa.
+- GitHub Actions: [run 40526175554](https://github.com/ozirix-dev/Reseptit/actions/runs/40526175554) PASS Reseptit-HEADille `b7bbb6d3a5f190e7a74d3ce1e8ba54ec03ccdd2a` (build PASS, deploy ohitettu). [PR #120:n tarkistusnäkymä](https://github.com/ozirix-dev/Reseptit/pull/120) on lähde myöhemmän dokumenttipäivityksen viimeiselle tarkistusajolle.
