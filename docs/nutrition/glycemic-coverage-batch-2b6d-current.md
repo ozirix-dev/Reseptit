@@ -1,6 +1,6 @@
 # GK-esteinventaario
 
-Lähdecommit: `f2ba9e849e677f9e223103022e309a09b9992f62`. Vertailun lähtösnapshot: `f2ba9e849e677f9e223103022e309a09b9992f62` (136 laskettua / 189 keskeneräistä; 42 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
+Lähdecommit: `9b065068ff5958c729d8e789ebab7c21a56b9f97`. Vertailun lähtösnapshot: `f2ba9e849e677f9e223103022e309a09b9992f62` (136 laskettua / 189 keskeneräistä; 42 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
 
 Nykyinen ajo kattaa 325 reseptiä: 139 laskettua, 186 keskeneräistä. GI-katalogissa on 43 tietuetta (5 STRONG, 38 SUPPLEMENTARY).
 
