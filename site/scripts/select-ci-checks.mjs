@@ -95,8 +95,14 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
   const normalized = paths.map((value) => value.replaceAll("\\", "/"));
 
   for (const file of normalized) {
-    if (/^(?:reseptit|kaannokset)\/.+\.md$/i.test(file)) {
+    if (/^reseptit\/.+\.md$/i.test(file)) {
       if (file.includes("/_mallipohjat/")) return fullPlan();
+      plan.runContent = true;
+      addNutritionChecks(plan);
+      addGlycemicChecks(plan);
+      continue;
+    }
+    if (/^kaannokset\/.+\.md$/i.test(file)) {
       plan.runContent = true;
       plan.needsNode = true;
       continue;
@@ -227,6 +233,22 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
   return plan;
 }
 
+function applyEventPolicy(plan, eventName, { deploy = false } = {}) {
+  if (eventName === "push" && plan.needsNode) {
+    plan.runBuild = true;
+    plan.runStatic = true;
+    plan.publish = true;
+  }
+  if (eventName === "workflow_dispatch" && deploy) {
+    plan.runBuild = true;
+    plan.runStatic = true;
+    plan.needsNode = true;
+    plan.publish = true;
+  }
+  if (plan.runBuild) plan.runStatic = true;
+  return plan;
+}
+
 function getChangedPaths() {
   let base = process.env.BASE_SHA;
   const head = process.env.HEAD_SHA || "HEAD";
@@ -275,25 +297,13 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   } catch (error) {
     classificationError = error instanceof Error ? error.message : String(error);
   }
-  const plan = classifyPaths(paths, {
+  const plan = applyEventPolicy(classifyPaths(paths, {
     forceFull: process.env.FORCE_FULL === "true",
     classificationFailed: Boolean(classificationError),
-  });
-  if (process.env.EVENT_NAME === "push" && plan.needsNode) {
-    plan.runBuild = true;
-    plan.runStatic = true;
-    plan.publish = true;
-  }
-  if (process.env.EVENT_NAME === "workflow_dispatch" && process.env.DEPLOY === "true") {
-    plan.runBuild = true;
-    plan.runStatic = true;
-    plan.needsNode = true;
-    plan.publish = true;
-  }
-  if (plan.runBuild) plan.runStatic = true;
+  }), process.env.EVENT_NAME, { deploy: process.env.DEPLOY === "true" });
   writeGithubOutputs(plan, paths, classificationError);
   if (classificationError) console.warn(`Path classification failed; full checks selected: ${classificationError}`);
   console.log(JSON.stringify({ ...plan, unitTests: Array.isArray(plan.unitTests) ? plan.unitTests : ["all unit tests"], changedPaths: paths.length }, null, 2));
 }
 
-export { classifyPaths, allUnitTests };
+export { applyEventPolicy, classifyPaths, allUnitTests };
