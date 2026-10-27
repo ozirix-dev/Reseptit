@@ -127,6 +127,7 @@ function categoryMeanMatchesFood(foodKey: string, foodName: string, ingredientNa
     "bread-category-mean": /leipä|bread|sämpylä|bun|pita|flatbread|toast/,
     "sugar-syrups-category-mean": /soker|sugar|siirappi|syrup|hunaja|honey|hillo|jam|molasses/,
     "honey-category-mean": /hunaja|honey/,
+    chocolate: /suklaa|chocolate/,
     "peanut": /pähkinä|nut|maapähkinä|peanut|mantel|almond|pistaasi|pistachio|cashew|saksanpähkinä|walnut/,
     vegetable: /vihannes|vegetable|porkkana|carrot|kaali|cabbage|kukkakaali|cauliflower|pinaatti|spinach|paprika|pepper|tomaatti|tomato|kurkku|cucumber|munakoiso|eggplant|kesäkurpitsa|zucchini|selleri|celery|sieni|mushroom|papu|bean|herne|pea|paksoi|bok choy|sipuli|onion|okra|parsakaali|broccoli/,
     "fruit-category-mean": /hedelmä|fruit|appelsiini|orange|sitruuna|lemon|lime|limetti|taateli|date|banaani|banana|omena|apple|viikuna|fig|persikka|peach|rypäle|grape|marja|berry/,
@@ -149,7 +150,9 @@ function hasClearFoodFamilyMismatch(foodKey: string, foodName: string, ingredien
 
   const milkChocolate = /maitosukla|milk\s+chocolate|suklaa|chocolate/.test(ingredient);
   const sourceIsDairy = foodKey === "dairy" || /maito|milk|dairy|cream|kerma|yogurt|jogurtti/.test(source);
-  return milkChocolate && sourceIsDairy;
+  if (milkChocolate && sourceIsDairy) return true;
+  const targetIsMilkChocolate = /maitosukla|milk\s+chocolate/.test(ingredient);
+  return foodKey === "chocolate" && targetIsMilkChocolate;
 }
 
 /**

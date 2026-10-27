@@ -885,9 +885,7 @@
           "name": "kuohukermaa",
           "grams": 100,
           "fineliRecordId": "fineli-631-2026-10-24",
-          "giRecordId": "dairy-category-mean-gi-35",
-          "preparationKey": "dairy-category",
-          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "giRecordId": null,
           "massEvidence": "Fineli Rel20 ruoka-ainekohtainen dl-massa 100 g, reseptissä 1 dl."
         },
         {
@@ -1117,9 +1115,9 @@
           "grams": 200,
           "fineliRecordId": "fineli-631-2026-10-24",
           "giRecordId": "dairy-category-mean-gi-35",
-          "preparationKey": "dairy-category",
+          "massEvidence": "Fineli Rel20 ruoka-ainekohtainen dl-massa 100 g, reseptissä 2 dl.",
           "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
-          "massEvidence": "Fineli Rel20 ruoka-ainekohtainen dl-massa 100 g, reseptissä 2 dl."
+          "preparationKey": "dairy-category"
         },
         {
           "name": "kananmunaa",
@@ -2099,7 +2097,9 @@
           "fineliRecordId": "fineli-32-2026-10-24",
           "giRecordId": "dark-chocolate-international-tables-mean-gi-29",
           "massEvidence": "Ingredient mapped to fineli-release-20 record 32; source state: dark chocolate as sold.",
-          "giMatchEvidence": "Published GI analogue/category record dark-chocolate-international-tables-mean-gi-29; source and limitations are listed centrally."
+          "giMatchEvidence": "International Tables 2021 category mean of four ISO-tested dark chocolate products; used as a low-confidence category mean for dark chocolate as sold, not as a measured cake GI.",
+          "foodKey": "chocolate",
+          "preparationKey": "dark-chocolate-as-sold"
         },
         {
           "name": "voita",
@@ -2139,11 +2139,8 @@
           "name": "kaakaojauhetta",
           "grams": 30,
           "fineliRecordId": "fineli-20-2026-10-24",
-          "giRecordId": "bakery-products-category-mean-gi-58",
-          "massEvidence": "Ingredient mapped to fineli-release-20 record 20; source state: raw/as listed.",
-          "giMatchEvidence": "Published GI analogue/category record bakery-products-category-mean-gi-58; source and limitations are listed centrally.",
-          "foodKey": "bakery-products-category-mean",
-          "preparationKey": "category-mean"
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 20; source state: raw/as listed."
         },
         {
           "name": "leivinjauhetta",
@@ -2158,7 +2155,9 @@
           "fineliRecordId": "fineli-32-2026-10-24",
           "giRecordId": "dark-chocolate-international-tables-mean-gi-29",
           "massEvidence": "Ingredient mapped to fineli-release-20 record 32; source state: dark chocolate as sold.",
-          "giMatchEvidence": "Published GI analogue/category record dark-chocolate-international-tables-mean-gi-29; source and limitations are listed centrally."
+          "giMatchEvidence": "International Tables 2021 category mean of four ISO-tested dark chocolate products; used as a low-confidence category mean for dark chocolate as sold, not as a measured cake GI.",
+          "foodKey": "chocolate",
+          "preparationKey": "dark-chocolate-as-sold"
         },
         {
           "name": "kuohukermaa",
@@ -13583,9 +13582,8 @@
           "name": "avokado",
           "grams": 120,
           "fineliRecordId": "fineli-11057-release-20",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "1 kpl converted using Fineli food-specific portion mass; AVOKADO, KUORITTU, KIVETÖN.",
-          "giMatchEvidence": "Low-confidence proxy: Vegetables other than potatoes, category mean; source category or closest published analogue, not a measured recipe GI."
+          "giRecordId": null,
+          "massEvidence": "1 kpl converted using Fineli food-specific portion mass; AVOKADO, KUORITTU, KIVETÖN."
         },
         {
           "name": "musta papu",
@@ -13601,7 +13599,9 @@
           "fineliRecordId": "fineli-35554-release-20",
           "giRecordId": "corn-tortilla-noriega-2000-glucose-estimate",
           "massEvidence": "Recipe-listed mass 100 g; MAISSITORTILLA, GLUTEENITON.",
-          "giMatchEvidence": "Low-confidence proxy: Corn tortilla; source category or closest published analogue, not a measured recipe GI."
+          "giMatchEvidence": "Published corn tortilla human test; the study product is a commercial corn tortilla, matched to the recipe-listed gluten-free corn tortilla with low confidence due to the single small study and bread-to-glucose scale conversion.",
+          "foodKey": "corn-tortilla",
+          "preparationKey": "commercial-corn-tortilla"
         },
         {
           "name": "neutraalia paistoöljyä",
@@ -13647,15 +13647,16 @@
           "fineliRecordId": "fineli-35554-release-20",
           "giRecordId": "corn-tortilla-noriega-2000-glucose-estimate",
           "massEvidence": "Recipe-listed mass 100 g; MAISSITORTILLA, GLUTEENITON.",
-          "giMatchEvidence": "Low-confidence proxy: Corn tortilla; source category or closest published analogue, not a measured recipe GI."
+          "giMatchEvidence": "Published corn tortilla human test; the study product is a commercial corn tortilla, matched to the recipe-listed gluten-free corn tortilla with low confidence due to the single small study and bread-to-glucose scale conversion.",
+          "foodKey": "corn-tortilla",
+          "preparationKey": "commercial-corn-tortilla"
         },
         {
           "name": "avokado",
           "grams": 120,
           "fineliRecordId": "fineli-11057-release-20",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "1 kpl converted using Fineli food-specific portion mass; AVOKADO, KUORITTU, KIVETÖN.",
-          "giMatchEvidence": "Low-confidence proxy: Vegetables other than potatoes, category mean; source category or closest published analogue, not a measured recipe GI."
+          "giRecordId": null,
+          "massEvidence": "1 kpl converted using Fineli food-specific portion mass; AVOKADO, KUORITTU, KIVETÖN."
         },
         {
           "name": "neutraalia paistoöljyä",
