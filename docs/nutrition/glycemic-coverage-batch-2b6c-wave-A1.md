@@ -1,30 +1,38 @@
-# GI/GK-erän 2B6C – aalto A1
+# GI/GK-erän 2B6C – aalto A1: riippumattoman katselmoinnin korjattu tulos
 
-## Portti ja tulos
+## Lähtötilanne ja lopputulos
 
-- Lähtö-HEAD: `b2ac53b11b45b8759d5f841ba978c966a50efe26`.
-- Aaltoon hyväksyttiin neljä laskelmaa; viides testattu kandidaattiryhmä ei saanut kerman GI-arvoa, vaan kuohukerma jätettiin pois pienosuustoleranssin mukaisesti vain reseptissä, jossa summa jäi alle 2 g/annos.
+- Lähtö-main: `b2ac53b11b45b8759d5f841ba978c966a50efe26`.
+- Alkuperäisessä A1-luonnoksessa oli neljä mahdollista GK-arviota. Riippumaton lähdekatselmointi hyväksyi niistä **kaksi** ja palautti kaksi estetyiksi.
 - Uusia GI-tietueita: 0.
-- Kaikki aiemmat 134 GK-arviota säilyivät. Uusia estymisiä tai fingerprint-eroja ei tullut.
-- Kattavuus: 325 reseptiä; 138 laskettua; 187 keskeneräistä; 42 GI-tietuetta.
+- Hyväksytyt 134 vanhaa GK-arviota ja niiden luokat pysyivät ennallaan; uusia estymisiä tai fingerprint-ristiriitoja ei tullut.
+- Lopullinen ehdotettu kattavuus: **325 reseptiä / 136 laskettua / 189 keskeneräistä / 42 GI-tietuetta**. Tuotantoon ei julkaistu.
 
-## Hyväksytyt reseptit
+## Lähteillä hyväksytyt uudet arviot
 
 | Resepti | GK/annos | Luokka | Luottamus | Päätöksen peruste |
-|---|---:|---|---|---|
-| `meksikolainen-aamiais-tacot-mustapavuilla` | 16,04 | MEDIUM | LOW | Maissitortillan julkaistu tutkimus vastaa tuoteryhmää; ruoka-/valmistusavaimet kirjattiin. Avokadon 0,462 g/annos ja aiempi 0,265 g pysyvät näkyvässä kumulatiivisessa poistossa. |
-| `meksikolainen-paputostada-aamupalaksi` | 16,04 | MEDIUM | LOW | Sama rajattu lähde ja match kuin toisessa tortillareseptissä; pienosuuksien summa 0,727 g/annos. |
-| `meheva-suklaakakku` | 20,31 | HIGH | LOW | Tumma suklaa -keskiarvo (4 ISO-testattua tuotetta, GI 29); maitosuklaa ei läpäise uutta perheguardia. Kaakaojauheen 0,330 g/annos ja aiempi 0,3052 g pysyvät poisjättöinä. |
-| `vhh-kaalikaarryleet` | 9,24 | LOW | LOW | Kuohukerman 0,725 g/annos ei saanut perusteetonta GI-arvoa. Kaikkien poisjättöjen summa 1,578025 g/annos, alle nykyisen 2 g rajan. |
+| --- | ---: | --- | --- | --- |
+| `meksikolainen-aamiais-tacot-mustapavuilla` | 16,04 | MEDIUM | LOW | Julkaistu kaupallisen maissitortillan pienen otoksen GI-tutkimus. Lämmin tortillapohja vastaa tarkasteltua ruokamuotoa riittävällä varauksella, muttei muodosta mitattua aterian GI:tä. Avokadon 0,462 g/annos sekä aiemman 0,265 g/annos pienosuudet jäävät alle toimituksellisen 1 g / 2 g -rajan. |
+| `vhh-kaalikaarryleet` | 9,24 | LOW | LOW | Kuohukermalle ei siirretty yleistä maitotuotteiden GI:tä. Kerman laskettu imeytyvä hiilihydraattiosuus 0,725 g/annos voidaan jättää pienosuutena pois; kaikkien poisjättöjen summa 1,578025 g/annos jää alle nykyisen 2 g:n rajan. |
 
-## Tiedostomuutokset
+## Hylätyt alkuperäiset A1-arviot
 
-- `site/scripts/glycemic-load-model.ts`: tumma suklaa -luokkakeskiarvon tunnistus ja erillinen maitosuklaa-guard.
-- `site/tests/glycemic-load.test.ts`: neljän reseptituloksen, pienosuuksien ja maitosuklaa-negatiivisen sidonnan regressiot.
-- `docs/nutrition/glycemic-load-pilot-input.json`: kahden maissitortillan lähdeavaimet, tumma suklaa -lähdeavaimet ja läpinäkyvät GI-poistot pienille avokado-/kaakao-/kermamäärille.
-- `docs/nutrition/glycemic-load-recipe-bindings.json`: neljän muuttuneen reseptin laskenta- ja evidenssifingerprintit.
-- Uudet 2B6C-baseline/current/review/A1-dokumentit.
+| Resepti | Alkuperäinen luonnos | Lopullinen status | Syy |
+| --- | --- | --- | --- |
+| `meheva-suklaakakku` | GK 20,31 | INSUFFICIENT SOURCE DATA | Vuoden 2021 GI 29 -keskiarvo mitattiin tummalle suklaalle sellaisenaan. Kakun suklaa sulatetaan, paistetaan taikinassa sekä sekoitetaan kuumaan kuorrutteeseen; valmistustapavastaavuutta ei ole vahvistettu. 2B6B:n BLOCKED-päätös säilyy. |
+| `meksikolainen-paputostada-aamupalaksi` | GK 16,04 | INSUFFICIENT SOURCE DATA | Reseptin pohja on rapea tostada, mutta Noriegan GI-tutkimus koskee kaupallista tavallista maissitortillaa ilman vastaavaa todistettua rapeutusta. |
 
-## Jatkoportin päätös
+Molempien numeerinen GK on `null`. Laskentasyötteet ja fingerprint-sidonnat palautettiin hyväksytyn lähtö-mainin tasolle. Mikään hylätyistä arvioista ei jää julkiseksi laskentatulokseksi tai nollaksi. GI-laskentamallin uudet suklaata koskeneet ruokaryhmäsäännöt poistettiin, koska ne olisivat sallineet huonosti vastaavan lähteen.
 
-Ei A2-aaltoa: laajoissa tomaatti-, liemi-, kookosmaito-, tamarindi- ja taateliryhmissä lähde löytyi eri ruoka-aineelle, eri valmistukselle tai muulle kuin yksittäiselle ainesosalle, tai reseptillä oli lisäksi määrittelyesteitä. Näiden käyttäminen kasvattaisi lukua ilman riittävää perustetta. Uudet arvot odottavat riippumatonta katselmointia Draft PR:ssä; yhdistämistä tai tuotantojulkaisua ei tehty.
+## Lähde- ja testausportti
+
+- Käytä vain ruoka- ja valmistustapavastaavuuden täyttäviä, lähteistettyjä GI-tietueita. Maissitortillan leipä→glukoosi-muunnos ja pieni n=8 pidetään näkyvissä LOW-luottamuksen yhteydessä.
+- Tavalliset ravintoarvot, reseptien ainesosamäärät, GK-kaava, luokat ja pienosuustoleranssit pysyvät ennallaan.
+- Uudet regressiotestit varmistavat kahden hyväksytyn tuloksen sekä kakun ja tostadan GK-eston. Koko 325 reseptin inventaario on päivitetty 136/189-tilaan.
+- Edellisen HEADin testitulokset eivät ole todistus tämän korjauscommittien CI:stä. Viimeinen HEAD ja CI pitää vahvistaa ennen PR:n hyväksymistä.
+
+## Jatkoportti
+
+A2- ja A3-aaltoja ei aloitettu: tomaattimurska, liemet, kookosmaito, tamarindi ja taatelit eivät läpäisseet nykyistä lähde- ja valmistustapapolitiikkaa. Tavoitteena on luotettava, ei keinotekoisesti kasvatettu GK-kattavuus.
+
+PR #117 ja ReportHub PR #70 pidetään Draft-tilassa riippumattoman katselmoinnin ajan. Ei yhdistämistä eikä Pages-julkaisua.
