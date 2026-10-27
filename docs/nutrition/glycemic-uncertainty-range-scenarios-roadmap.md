@@ -1,8 +1,8 @@
 # GK-vaihteluvälit, luokkavarmuus ja reseptiskenaariot – toteutussuunnitelma
 
-**Tila:** PROPOSAL / DESIGN ONLY. Ei hyväksytty laskenta- tai julkaisukäytäntö.  
-**Päiväys:** 2026-10-27 (Europe/Helsinki)  
-**Omistaja:** Reseptit / GI–GK-laskenta  
+**Tila:** PROPOSAL / DESIGN ONLY. Ei hyväksytty laskenta- tai julkaisukäytäntö.
+**Päiväys:** 2026-10-27 (Europe/Helsinki)
+**Omistaja:** Reseptit / GI–GK-laskenta
 **Tavoite:** kaikkien reseptien käyttäjälle hyödyllinen, perusteltu GK-tieto tai läpinäkyvä estoperuste – ei 325 keinotekoisesti täsmällistä GK-lukua.
 
 ## 1. Miksi tämä suunnitelma tarvitaan
