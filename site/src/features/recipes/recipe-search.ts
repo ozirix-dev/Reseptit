@@ -5,6 +5,7 @@ import type { RecipeSummary } from "@/content/route-data";
 
 export type RecipeCategory = RecipeSummary["category"] | "all";
 export type RecipeDietFilter = "all" | "keto" | "vhh";
+export type GlycemicLoadFilterCategory = "low" | "medium" | "high";
 
 export interface RecipeFilters {
   query: string;
@@ -13,6 +14,7 @@ export interface RecipeFilters {
   maxTime?: number;
   cuisine?: string;
   ingredient?: string;
+  gl?: GlycemicLoadFilterCategory;
 }
 
 export const emptyRecipeFilters: RecipeFilters = { query: "", category: "all", diet: "all" };
@@ -44,10 +46,12 @@ export function parseRecipeFilters(search: string, availableCategories: RecipeCa
   const maxTime = Number(params.get("time"));
   const cuisine = params.get("cuisine");
   const ingredient = params.get("ingredient");
+  const gl = params.get("gl");
   return { query: (params.get("q") ?? "").replace(/\s+/gu, " ").trim(), category, diet,
     ...([30, 60, 90].includes(maxTime) ? { maxTime } : {}),
     ...(cuisines.includes(cuisine as typeof cuisines[number]) ? { cuisine: cuisine! } : {}),
-    ...(ingredientGroups.includes(ingredient as typeof ingredientGroups[number]) ? { ingredient: ingredient! } : {}) };
+    ...(ingredientGroups.includes(ingredient as typeof ingredientGroups[number]) ? { ingredient: ingredient! } : {}),
+    ...(gl === "low" || gl === "medium" || gl === "high" ? { gl } : {}) };
 }
 
 export function recipeFiltersToSearch(filters: RecipeFilters): string {
@@ -59,16 +63,18 @@ export function recipeFiltersToSearch(filters: RecipeFilters): string {
   if (filters.maxTime) params.set("time", String(filters.maxTime));
   if (filters.cuisine) params.set("cuisine", filters.cuisine);
   if (filters.ingredient) params.set("ingredient", filters.ingredient);
+  if (filters.gl) params.set("gl", filters.gl);
   const search = params.toString();
   return search ? `?${search}` : "";
 }
 
-export function filterRecipes<T extends RecipeSummary>(recipes: T[], filters: RecipeFilters, locale: RecipeLocale): T[] {
+export function filterRecipes<T extends RecipeSummary>(recipes: T[], filters: RecipeFilters, locale: RecipeLocale, glCategories: Readonly<Record<string, GlycemicLoadFilterCategory>> = {}): T[] {
   const terms = normalizeSearchText(filters.query, locale).split(" ").filter(Boolean);
   return recipes.filter((recipe) => {
     if (filters.maxTime && (recipe.timeTotalMin === null || recipe.timeTotalMin > filters.maxTime)) return false;
     if (filters.cuisine && recipe.cuisine !== filters.cuisine) return false;
     if (filters.ingredient && !recipe.ingredientGroups?.includes(filters.ingredient)) return false;
+    if (filters.gl && glCategories[recipe.recipeId] !== filters.gl) return false;
     if (filters.category !== "all" && recipe.category !== filters.category) return false;
     if (filters.diet === "keto" && recipe.dietClass !== "keto") return false;
     if (filters.diet === "vhh" && !recipe.dietClass) return false;
