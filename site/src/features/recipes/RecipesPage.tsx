@@ -3,10 +3,11 @@ import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContent } from "@/lib/content";
 import type { RecipeLocale } from "@/types/content";
-import { recipeUi } from "./recipe-i18n";
+import { glycemicLoadPath, recipeUi } from "./recipe-i18n";
 import { toolUi } from "./recipe-tools";
 import { cuisines, ingredientGroups } from "@/content/recipe-facets";
-import { emptyRecipeFilters, filterRecipes, parseRecipeFilters, recipeFiltersToSearch, type RecipeCategory, type RecipeDietFilter, type RecipeFilters } from "./recipe-search";
+import { emptyRecipeFilters, filterRecipes, parseRecipeFilters, recipeFiltersToSearch, type RecipeCategory, type RecipeDietFilter, type RecipeFilters, type GlycemicLoadFilterCategory } from "./recipe-search";
+import { glycemicLoadFilterCategories } from "@/generated/glycemic-load-filters.generated";
 
 import type { RecipeSummary } from "@/content/route-data";
 
@@ -23,6 +24,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const availableCategories = categories.filter((category) => recipes.some((recipe) => recipe.category === category));
   const hasDietClasses = recipes.some((recipe) => recipe.dietClass !== null);
   const hasKetoRecipes = recipes.some((recipe) => recipe.dietClass === "keto");
+  const hasGlycemicLoad = recipes.some((recipe) => glycemicLoadFilterCategories[recipe.recipeId] !== undefined);
   const availableDiets: RecipeDietFilter[] = [
     ...(hasKetoRecipes ? ["keto" as const] : []),
     ...(hasDietClasses ? ["vhh" as const] : []),
@@ -46,8 +48,19 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
     navigate(location.pathname, { replace: true });
   }
 
-  const filteredRecipes = filterRecipes(recipes, filters, locale);
-  const hasActiveFilters = filters.query !== "" || filters.category !== "all" || filters.diet !== "all" || !!filters.maxTime || !!filters.cuisine || !!filters.ingredient;
+  const filteredRecipes = filterRecipes(recipes, filters, locale, glycemicLoadFilterCategories);
+  const activeFilters: Array<{ key: string; label: string; clear: Partial<RecipeFilters> }> = [];
+  if (filters.query) activeFilters.push({ key: "query", label: `“${filters.query}”`, clear: { query: "" } });
+  if (filters.category !== "all") activeFilters.push({ key: "category", label: labels.category[filters.category], clear: { category: "all" } });
+  if (filters.diet !== "all") activeFilters.push({ key: "diet", label: filters.diet === "keto" ? labels.keto : labels.vhh, clear: { diet: "all" } });
+  if (filters.maxTime) activeFilters.push({ key: "time", label: `${tools.time}: ${filters.maxTime} ${labels.minutes}`, clear: { maxTime: undefined } });
+  if (filters.cuisine) activeFilters.push({ key: "cuisine", label: tools.cuisines[filters.cuisine as keyof typeof tools.cuisines], clear: { cuisine: undefined } });
+  if (filters.ingredient) activeFilters.push({ key: "ingredient", label: tools.ingredients[filters.ingredient as keyof typeof tools.ingredients], clear: { ingredient: undefined } });
+  if (filters.gl) {
+    const glLabels: Record<GlycemicLoadFilterCategory, string> = { low: tools.lowGl, medium: tools.mediumGl, high: tools.highGl };
+    activeFilters.push({ key: "gl", label: glLabels[filters.gl], clear: { gl: undefined } });
+  }
+  const hasActiveFilters = activeFilters.length > 0;
 
   return <section className="page-section recipe-index"><div className="container recipe-index__container">
     <div className="page-intro"><p className="eyebrow">{labels.eyebrow}</p><h1>{labels.indexTitle}</h1><p className="page-intro__description">{labels.intro}</p></div>
@@ -78,19 +91,14 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
       <div className="recipe-filter-select"><label htmlFor="recipe-time">{tools.time}</label><select id="recipe-time" value={filters.maxTime ?? ""} onChange={(event) => updateFilters({ maxTime: Number(event.currentTarget.value) || undefined })}><option value="">{tools.anyTime}</option>{[30, 60, 90].map(time => <option key={time} value={time}>{time} {labels.minutes}</option>)}</select></div>
       <div className="recipe-filter-select"><label htmlFor="recipe-cuisine">{tools.cuisine}</label><select id="recipe-cuisine" value={filters.cuisine ?? ""} onChange={(event) => updateFilters({ cuisine: event.currentTarget.value || undefined })}><option value="">{tools.anyCuisine}</option>{cuisines.filter(cuisine => recipes.some(recipe => recipe.cuisine === cuisine)).map(cuisine => <option key={cuisine} value={cuisine}>{tools.cuisines[cuisine]}</option>)}</select></div>
       <div className="recipe-filter-select"><label htmlFor="recipe-ingredient">{tools.ingredient}</label><select id="recipe-ingredient" value={filters.ingredient ?? ""} onChange={(event) => updateFilters({ ingredient: event.currentTarget.value || undefined })}><option value="">{tools.anyIngredient}</option>{ingredientGroups.filter(group => recipes.some(recipe => recipe.ingredientGroups?.includes(group))).map(group => <option key={group} value={group}>{tools.ingredients[group]}</option>)}</select></div>
+      {hasGlycemicLoad ? <div className="recipe-filter-select"><label htmlFor="recipe-gl">{tools.gl}</label><select id="recipe-gl" value={filters.gl ?? ""} onChange={(event) => updateFilters({ gl: (event.currentTarget.value || undefined) as GlycemicLoadFilterCategory | undefined })}><option value="">{tools.anyGl}</option><option value="low">{tools.lowGl}</option><option value="medium">{tools.mediumGl}</option><option value="high">{tools.highGl}</option></select></div> : null}
       </div></details>
       {hasActiveFilters && filteredRecipes.length > 0 ? <button type="button" className="recipe-filter-reset" onClick={resetFilters}>{labels.resetFilters}</button> : null}
     </form> : <div className="recipe-filters recipe-filters--placeholder" aria-hidden="true">{[labels.search, labels.categoryFilter, ...(hasDietClasses ? [labels.dietFilter] : [])].map((label) => <div className="recipe-filter-select" key={label}><span className="placeholder-label">{label}</span><span className="placeholder-input" /></div>)}<details className="recipe-more-filters"><summary>{tools.moreFilters}</summary></details></div>}
     {hydrated && filters.diet !== "all" ? <p className="recipe-disclosure">{tools.diet}</p> : null}
+    {hydrated && filters.gl ? <p className="recipe-disclosure recipe-gl-disclosure">{tools.glNote} <Link to={glycemicLoadPath(locale)}>{labels.glycemicLoadMethod}</Link></p> : null}
     {hydrated ? <p className="recipe-result-count" role="status" aria-live="polite" aria-atomic="true">{labels.results(filteredRecipes.length)}</p> : <p className="recipe-result-count recipe-result-placeholder" aria-hidden="true">{labels.results(recipes.length)}</p>}
-    {hydrated && hasActiveFilters ? <p className="recipe-active-filters">{[
-      filters.query ? `“${filters.query}”` : null,
-      filters.category !== "all" ? labels.category[filters.category] : null,
-      filters.diet === "keto" ? labels.keto : filters.diet === "vhh" ? labels.vhh : null,
-      filters.maxTime ? `${tools.time}: ${filters.maxTime} ${labels.minutes}` : null,
-      filters.cuisine ? tools.cuisines[filters.cuisine as keyof typeof tools.cuisines] : null,
-      filters.ingredient ? tools.ingredients[filters.ingredient as keyof typeof tools.ingredients] : null,
-    ].filter(Boolean).join(" · ")}</p> : null}
+    {hydrated && hasActiveFilters ? <div className="recipe-active-filters" aria-label={tools.activeFilters}>{activeFilters.map((chip) => <button key={chip.key} type="button" className="recipe-filter-chip" aria-label={`${tools.removeFilter}: ${chip.label}`} onClick={() => updateFilters(chip.clear)}>{chip.label}<span className="recipe-filter-chip__remove" aria-hidden="true">×</span></button>)}</div> : null}
     {!hydrated || filteredRecipes.length ? <div className="recipe-card-grid">{(hydrated ? filteredRecipes : recipes).map((recipe, index) => <RecipeCard key={`${recipe.recipeId}-${recipe.locale}`} recipe={recipe} index={index} locale={locale} />)}</div>
       : <div className="recipe-empty-state"><p>{labels.noResults}</p><button type="button" className="recipe-filter-reset" onClick={resetFilters}>{labels.resetFilters}</button></div>}
   </div></section>;
