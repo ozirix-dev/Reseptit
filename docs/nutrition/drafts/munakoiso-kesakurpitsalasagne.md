@@ -32,9 +32,14 @@ Perusskenaario sisältää 200 g pastaa, vaihtoehto 180 g.
 | Suola | 3 g; makusäätö alaspäin mahdollinen |
 | Vesi | 100 ml; säätövara yhteensä 50–150 ml |
 
-Skenaario olettaa kaikki aineet syödyiksi eikä vähennä paiston, pellille
-jäävän öljyn tai mozzarellan valuttamisen mahdollisia ravinnehävikkejä.
-Tämä oletus ei ole nykyisen ravintoarvomallin hyväksytty retentiotodiste.
+Skenaario olettaa kaikki punnitut aineet syödyiksi eikä vähennä paiston
+tai pellille jäävän öljyn mahdollisia ravinnehävikkejä. Mozzarellan 250 g
+punnitaan vasta valutuksen jälkeen: säilöntälientä ei lasketa mukaan
+eikä sen poistumista vähennetä toistamiseen. Avoin kysymys on vertailutuotteen
+100 g:n ravintotietojen vastaavuus juuri valutettuun juustoon. Kun lähde
+koskee valutettua juustoa ja käytetään valutettua painoa, erillistä
+säilöntäliemen hävikkikerrointa ei tarvita. Paistoretention oletus ei
+silti ole nykyisen ravintoarvomallin hyväksytty retentiotodiste.
 Vesi ja haihtuminen muuttavat massaa ja ravintotiheyttä, eivät itsessään
 koko reseptin ravintomääriä tai neljälle jaettua laskennallista määrää.
 Ml-määrää ei muunneta hyväksyttyyn ravintolaskentaan dokumentoimattomalla
@@ -171,6 +176,13 @@ evidenssitiedostoa eikä ravintoarvometatietoja. Hyväksyntä edellyttää
 tuote-/tilavastaavuuden, retention ja rajattujen poisjättöjen dokumentointia
 nykyiseen malliin, sen jälkeen normaaleja evidenssi- ja regressiotarkistuksia.
 
+Tämä luonnosmuistio ei kuulu `nutrition-provenance.ts`-tiedoston
+`inputPaths`-inventaarioon eikä `calculations/`-evidenssiin. Sen irralliset
+skenaariotaulukot tarkistetaan erikseen; yleisen ravintoarvo- tai GK-auditoinnin
+onnistuminen ei varmista näitä lukuja eikä anna niille hyväksyntää.
+Mahdollinen myöhempi hyväksyttävä laskenta on rekisteröitävä normaalin
+evidenssikäytännön mukaisesti.
+
 ## Valmistuksen toimitukselliset ratkaisut
 
 - 15 minuutin suolaus/valutus poistettiin: ohuet viipaleet paahdetaan
@@ -191,7 +203,10 @@ nykyiseen malliin, sen jälkeen normaaleja evidenssi- ja regressiotarkistuksia.
 - Valmistajan Knorr GN -ohje on 3–5 kerrosta, noin 45 min 180 °C:ssa,
   ei välttämätöntä esikeittoa. Luonnoksen 3–4 kerrosta ja 45 min korvaavat
   videon 200 °C / 30–35 min suoran siirron. Veitsitarkistus kaikista
-  kerroksista ja oman pakkauksen ohje ratkaisevat; folion käyttö on sovellus.
+  kerroksista ja oman pakkauksen ohje ratkaisevat. Valmistaja ei erittele
+  uunitilaa; tasalämmön ja folion käyttö ovat kotikeittiösovellusta.
+  Uuni säädetään alempaan lämpöön heti paahdon jälkeen, jotta se ehtii
+  jäähtyä kokoamisen aikana; lisäodotus pidentää kokonaisaikaa.
 - Aikataulu 15 + 25 + 10 + 45 + 15 = 110 min sisältää kastikkeen ja
   juustojen valmistelun paahtamisen aikana. Aktiivinen aika noin 35–40 min,
   kokonaisaikavara noin 100–130 min. Ei koekeitetty.
@@ -199,3 +214,23 @@ nykyiseen malliin, sen jälkeen normaaleja evidenssi- ja regressiotarkistuksia.
 Ennen julkaisua tarvitaan omistajan sisältöhyväksyntä ja käytännön
 valmistuksen tarkistus. Hyväksymättömät ravintoarvot ja GK saavat edelleen
 puuttua; tämä muistio ei anna lupaa esittää niitä hyväksyttyinä.
+
+## Erillisen tarkistuskierroksen havainnot
+
+Tarkistuksen lähtöversio: `7b339c2cdc5c135b40f680b6cfe450f7ebeea72f`.
+
+- Aritmetiikka ja herkkyystaulukot tarkistettiin uudelleen ainesmääristä.
+  200 g:n ja 180 g:n pastavaihtoehtojen luvut eivät muuttuneet.
+- Reseptin ainesluettelon 180 g:n vaihtoehto tuotiin myös kokoamisohjeeseen;
+  muiden ainesten määrät pysyvät samoina.
+- Kuvaukselle ja huomioille otettiin käyttöön sivuston tunnistamat
+  `Kuvaus`- ja `Muistiinpanot`-otsikot. Allergeenit, lähde, yhteistyömaininta
+  ja laskennan rajaus säilyvät näin samassa luettavassa huomio-osassa.
+- Mozzarellan valutettu painoperusta ja auditointien soveltamisala
+  täsmennettiin. Tämä ei poista tuotetiedon tai GI:n lähdepuutteita.
+- 180 °C / 45 min tarkistettiin valmistajan sivulta. Uunitilaa ei ilmoiteta
+  lähteessä, joten tasalämpö nimettiin sovellukseksi ja lämpötilan lasku
+  siirrettiin tapahtumaan kokoamisen aikana.
+
+Resepti ja PR säilyvät luonnoksina. Tarkistus ei ole koekeittotesti
+eikä toisen henkilön hyväksyntä.

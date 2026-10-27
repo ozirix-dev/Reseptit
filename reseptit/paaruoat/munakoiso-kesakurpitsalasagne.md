@@ -34,6 +34,8 @@ ingredients:
 
 **Reseptiluonnos · 4 henkilölle · noin 1 tunti 50 minuuttia**
 
+## Kuvaus
+
 Hans Välimäen videon pohjalta tehty Codexin kotikeittiösovellus. Ainesmäärät,
 uunipaahto ja alla oleva aikataulu ovat tämän luonnoksen arvioita, eivät
 tekijän täsmällinen alkuperäisresepti. Reseptiä ei ole koekeitetty.
@@ -79,6 +81,8 @@ Tässä käytetään mozzarellaa; videolla mainitaan myös burrata.
    Tarkkaile ohuita sipulisuikaleita. Ilman kiertoilmaa käytä 225 °C:ta,
    vaihda peltien paikat ja varaudu noin 25–35 minuuttiin. Älä paahda
    valkosipulia mukana: murskaa se seuraavan vaiheen kastikkeeseen.
+   Kun nostat kasvikset pois, säädä uuni jo kokoamisen ajaksi 180 °C:seen
+   tasalämmölle. Odota ennen lasagnen paistamista, että lämpö on laskenut.
 3. **Valmistele kastike ja juustot paahtamisen aikana.** Mittaa 150 g
    tomaattikastiketta tarjoiluun ja lisää siihen 10 g viinietikkaa. Kuumenna
    loput 650 g kastiketta valkosipulin ja timjamin kanssa. Anna poreilla
@@ -89,17 +93,22 @@ Tässä käytetään mozzarellaa; videolla mainitaan myös burrata.
 4. **Kokoa lasagne.** Käytä noin 3 litran vuokaa, esimerkiksi sisämitoiltaan
    20 × 25 cm ja vähintään 6 cm syvää. Öljyä vuoka 5 g:lla öljyä. Varaa
    vuokakastikkeesta noin neljännes pinnalle ja levitä hieman pohjalle.
-   Tee 3–4 pastakerrosta käyttäen yhteensä 200 g kuivia levyjä. Katkaise
-   levyt tarvittaessa sopiviksi; vältä paksuja päällekkäisiä saumoja.
+   Punnitse valitsemasi pastamäärä ennen kokoamista: oletus on 200 g,
+   vaihtoehto 180 g. Tee siitä vuoan ja levyjen mittojen mukaan 3–4
+   pastakerrosta. Käytä koko punnittu määrä; 180 g:n vaihtoehto tarkoittaa
+   hieman vähemmän pastaa, ei ylimääräisiä levyjä saumoihin. Katkaise levyt
+   tarvittaessa sopiviksi ja vältä paksuja päällekkäisiä saumoja. Muiden
+   ainesten määrät säilyvät samoina myös 180 g:n vaihtoehdossa.
    Jaa väleihin paahdetut kasvikset, kastike, 175 g mozzarellaa, 60 g kovaa
    juustoa ja 5 g basilikaa. Jokaisen levyn molemmille puolille ja reunoille
    tulee kosteaa täytettä. Peitä viimeinen pastakerros varatulla
    vuokakastikkeella ja 75 g:lla mozzarellaa. Jätä vuoan reunaan vähintään
    1 cm kiehumisvaraa; käytä suurempaa vuokaa, jos täyte ei mahdu.
-5. **Kypsennä ja tarkista pasta.** Säädä uuni 180 °C:seen tasalämmöllä
-   ja paista keskitasolla noin 45 minuuttia. Aika ja lämpö perustuvat
+5. **Kypsennä ja tarkista pasta.** Paista 180 °C:ssa tasalämmöllä
+   keskitasolla noin 45 minuuttia. Aika ja lämpö perustuvat
    [Knorr GN -levyjen valmistajan ohjeeseen](https://www.unileverfoodsolutions.fi/tuotteet/knorr-lasagnelevyt-gn-mitoitus-5-kg-34-FI-354670.html);
-   toisen tuotteen kanssa noudata pakkauksen ohjetta, myös mahdollista
+   valmistaja ei erittele uunitilaa, joten tasalämpö on tämän luonnoksen
+   kotikeittiövalinta. Toisen tuotteen kanssa noudata pakkauksen ohjetta, myös mahdollista
    esikypsennystä. Peitä vuoka väljästi foliolla ensimmäisiksi 25–30
    minuutiksi ja poista folio loppuajaksi. Kokeile ohuella veitsellä
    keskeltä ja reunoilta kaikkien pastakerrosten läpi: kovaa vastusta
@@ -110,13 +119,17 @@ Tässä käytetään mozzarellaa; videolla mainitaan myös burrata.
    Viimeistele yhteensä 20 g:lla kovaa juustoa, 5 g:lla basilikaa,
    0,5 g:lla mustapippuria ja 5 g:lla öljyä.
 
-## Aika ja luonnoksen rajat
+## Muistiinpanot
+
+### Aika ja luonnoksen rajat
 
 Perusaikataulu on 15 min valmistelua ja uunin kuumennusta + 25 min paahtoa
 (kastike ja juustot samalla) + 10 min kokoamista + 45 min paistoa + 15 min
 vetäytymistä = **110 min**. Aktiivista työtä on arviolta 35–40 min.
 Varaa käytännössä noin 100–130 min; uuni, pastatuote ja lisäkypsennys
-voivat pidentää aikaa. Erillistä maustumisaikaa ei lasketa mukaan.
+voivat pidentää aikaa. Uunin lämpötilan laskun oletetaan tapahtuvan
+kokoamisen aikana; mahdollinen lisäodotus pidentää kokonaisaikaa.
+Erillistä maustumisaikaa ei lasketa mukaan.
 
 Videon 200 °C ja 30–35 min eivät takaa tämän kuivia levyjä käyttävän
 sovelluksen kypsyyttä. Videolla kasvikset friteerataan ja lasagne
@@ -131,7 +144,7 @@ valmistetaan [vasikanjuoksetteella](https://backend.parmigianoreggiano.com/uploa
 joten kasvisversioon valitaan vastaava sopiva kova juusto. Reseptiä ei ole
 merkitty VHH- tai keto-reseptiksi.
 
-## Lähde ja laskentatilanne
+### Lähde ja laskentatilanne
 
 [Hans Välimäki: kasvislasagne, Facebook Reel](https://www.facebook.com/reel/1137314279255893).
 Julkaisu on merkitty kaupalliseksi yhteistyöksi Unilever Food Solutionsin kanssa.
@@ -141,5 +154,5 @@ Edellä kuvatut kotikeittiöratkaisut ovat Codexin sovellusta.
 
 Reseptillä ei ole hyväksyttyä GK-arvoa eikä kattavasti todennettuja
 ravintoarvoja. Aiempi lasku ja sen puutteet on erotettu
-[luonnoksen laskentamuistioon](../../docs/nutrition/drafts/munakoiso-kesakurpitsalasagne.md).
+[luonnoksen laskentamuistioon](https://github.com/ozirix-dev/Reseptit/blob/codex/kasvislasagne-luonnos/docs/nutrition/drafts/munakoiso-kesakurpitsalasagne.md).
 Muistion havainnollistavaa skenaariota ei syötetä julkaistuun GK-järjestelmään.
