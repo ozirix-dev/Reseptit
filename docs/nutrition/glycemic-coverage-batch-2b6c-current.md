@@ -2,13 +2,13 @@
 
 Lähdecommit: `dd09419861c8c32431879c59205556c3a3ee3bff`. Vertailun lähtösnapshot: `b2ac53b11b45b8759d5f841ba978c966a50efe26` (134 laskettua / 191 keskeneräistä; 42 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
 
-Nykyinen ajo kattaa 325 reseptiä: 138 laskettua, 187 keskeneräistä. GI-katalogissa on 42 tietuetta (5 STRONG, 37 SUPPLEMENTARY).
+Nykyinen ajo kattaa 325 reseptiä: 136 laskettua, 189 keskeneräistä. GI-katalogissa on 42 tietuetta (5 STRONG, 37 SUPPLEMENTARY).
 
 ## Muutos hyväksytystä vertailusta
 
-- Aiemmin keskeneräisiä, nyt laskettavia: 4. Aiemmin laskettuja, nyt estettyjä: 0. Edelleen keskeneräisiä: 187.
-- Estoperuste muuttui 4 reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: 0/0/0.
-- Keskeneräisiä, joiden ravintoarvotila on tuettu: 95; tarkistettava: 40; puuttuva: 52.
+- Aiemmin keskeneräisiä, nyt laskettavia: 2. Aiemmin laskettuja, nyt estettyjä: 0. Edelleen keskeneräisiä: 189.
+- Estoperuste muuttui 2 reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: 0/0/0.
+- Keskeneräisiä, joiden ravintoarvotila on tuettu: 96; tarkistettava: 40; puuttuva: 53.
 
 ## Päällekkäiset esteet
 
@@ -21,7 +21,7 @@ Luokat menevät päällekkäin; sama resepti voi esiintyä useassa rivissä.
 | EVIDENCE | 0 | 0 |
 | COMPOSITION | 65 | 84 |
 | MASS_PREPARATION | 20 | 23 |
-| GI_MATCH | 82 | 101 |
+| GI_MATCH | 84 | 106 |
 | GI_MISSING | 41 | 44 |
 | TOLERANCE | 6 | 6 |
 
@@ -277,6 +277,8 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | siskonmakkarakeitto-juurekset | GI_MISSING | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
 | vhh-pyttipannu | COMPOSITION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
 
+| meheva-suklaakakku | GI_MATCH | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
+| meksikolainen-paputostada-aamupalaksi | GI_MATCH | INSUFFICIENT SOURCE DATA | MISSING | GI_SOURCE_REVIEW |
 ## Rajaukset
 
 - Tämä inventaario kuvaa laskenta-ajon esteitä; se ei itsessään vahvista lähdettä tai korjaa reseptisyötettä.
