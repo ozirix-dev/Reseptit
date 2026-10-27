@@ -166,7 +166,7 @@ test("GK index never exposes incomplete estimates or boundary-spanning ranges", 
   const calculated = finnishRecipes.find(recipe => glycemicLoadFilterCategories[recipe.recipeId]);
   assert.ok(calculated);
   for (const locale of ["fi", "en", "sv", "th"] as const) {
-    const translated = siteContent.recipes.find(recipe => recipe.recipeId === calculated.recipeId && recipe.locale === locale);
+    const translated: (typeof siteContent.recipes)[number] | undefined = siteContent.recipes.find(recipe => recipe.recipeId === calculated.recipeId && recipe.locale === locale);
     if (translated) assert.equal(filterRecipes([translated], { ...emptyRecipeFilters, gl: glycemicLoadFilterCategories[calculated.recipeId] }, locale, glycemicLoadFilterCategories).length, 1);
   }
 });
