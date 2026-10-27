@@ -4,15 +4,22 @@
 
 Erä perustuu korjattuun 2B6C-haaraan ja sen muuttumattomaan lähtösnapshotiin `f2ba9e849e677f9e223103022e309a09b9992f62`. Reseptit PR #117 ja ReportHub PR #70 olivat tarkistettaessa edelleen Draft-tilassa. Tähän erään ei tuotu käyttöliittymä-, vaihteluväli- tai Nutritics-muutoksia. Neljän taatelireseptin ainesosa- ja valmistusohjetekstiä täsmennettiin; 10 g taatelimäärä säilyi.
 
-| Mittari | Ennen 2B6D:tä | 2B6D:n jälkeen | Muutos |
+| Mittari | Historiallinen 2B6D-baseline | Alkuperäisen 2B6D-tutkimusjoukon tulos | Muutos 2B6D-erässä |
 | --- | ---: | ---: | ---: |
-| Reseptit | 325 | 325 | 0 |
+| Reseptejä | 325 | 325 | 0 |
 | GK laskettu | 136 | 138 | +2 |
 | GK keskeneräinen | 189 | 187 | −2 |
-| GI-tietueet | 42 | 45 | +3 |
+| GI-tietueita | 42 | 45 | +3 |
 | GK-kattavuus | 41,8 % | 42,5 % | +0,6 prosenttiyks. |
 
-Muuttumattoman baseline-snapshotin 136 aiemmin laskettua GK-arvoa säilyivät täsmälleen. Mannapuuron aiemmin laskettu 21,95/annos välitulos vedettiin pois, koska GI-lähteen valmistustapa ei oikeuta sidontaa. Korjattu nykyinventaario vertaa jokaisen nykyisen GK-arvon ja reseptitilan 2B6D:n lähtösnapshotiin.
+Muuttumattoman baseline-snapshotin 136 aiemmin laskettua GK-arvoa säilyivät täsmälleen. Mannapuuron aiemmin laskettu 21,95/annos välitulos vedettiin pois, koska GI-lähteen valmistustapa ei oikeuta sidontaa. Taulukko kuvaa alkuperäistä 325 reseptin 2B6D-tutkimusjoukkoa; se ei ole integroidun PR #120:n nykyinventaario.
+
+## Lähtötilanne, tutkimusjoukko ja integroitu nykytila
+
+- **A. Historiallinen 2B6D-baseline:** 325 reseptiä / 136 laskettua / 189 keskeneräistä / 42 GI-tietuetta. Muuttumattoman baseline-tiedoston lähde-SHA on `f2ba9e849e677f9e223103022e309a09b9992f62`.
+- **B. Alkuperäinen 2B6D-tutkimusjoukko:** 325 reseptiä. Erän tutkimuksessa hyväksyttiin kaksi uutta GK-arviota; muu lähdeanalyysi, estot ja priorisointimäärät jäljempänä koskevat tätä alkuperäistä joukkoa.
+- **C. Hotfix #122:n tuoma kokoelma:** hotfix yhdistettiin main-haaraan ja julkaistiin SHA:ssa `05d48630c76b06e2ac93f27468f1872f8b766021`. Se toi nykyiseen kokoelmaan reseptin `munakoiso-kesakurpitsalasagne`, jolloin kokoelma kasvoi 326 reseptiin. Lasagnen GK on `null` ja tila `INSUFFICIENT SOURCE DATA`.
+- **D. Integroitu PR #120:** nykytila on 326 reseptiä / 138 laskettua / 188 keskeneräistä / 45 GI-tietuetta; GK-kattavuus on 42,3 %. Lasagne sisältyy keskeneräisenä. Historialliset 325 reseptin baselinet ja aiemmat 136 GK-arvoa säilyivät muuttumattomina. Integraation GitHub Actions CI läpäisi HEADin `fa35f6fa80330fe8b7b23e8633f951f67ead1811` ([run 40581494809](https://github.com/ozirix-dev/Reseptit/actions/runs/40581494809)).
 
 ## Taatelin koostumuslähde, GI-lähde ja GK-laskennat
 
@@ -43,15 +50,15 @@ Reseptiteksteistä poistettiin sopimaton yleisohje lihan/täytteiden kypsennykse
 
 ## Nykyinventaarioiden yhdenmukaisuus ja baseline-roolit
 
-Nykytilaa esittävät 2A-vertailu ja 2B6D-eräinventaario käyttävät eri muuttumattomia baselineja: yleinen näkymä vertaa 2A:n lähdecommitiin `5e9cdeb830f468ecf099e9c286f9344afe3b6b71`, ja erän näkymä 2B6D:n aloituscommitiin `f2ba9e849e677f9e223103022e309a09b9992f62`. 2A-baseline on historiallinen vertailukohta, ei nykytila. Baselinejen `newlyCalculated`- ja muutosluvut voivat siksi erota, mutta nykyisten reseptirivien, GK-arvojen ja fingerprinttien pitää täsmätä.
+Yleinen nykyinventaario ja 2B6D-eräinventaario käyttävät eri muuttumattomia baselineja: yleinen näkymä vertaa 2A:n lähdecommitiin `5e9cdeb830f468ecf099e9c286f9344afe3b6b71`, ja erän näkymä 2B6D:n aloituscommitiin `f2ba9e849e677f9e223103022e309a09b9992f62`. Molempien nykyraporttien reseptijoukko on nyt 326 ja tulos 326 / 138 / 188 / 45. Baselinejen `newlyCalculated`- ja muutosluvut voivat erota, koska vertailupisteet ovat eri; nykyisten reseptirivien, GK-arvojen ja fingerprinttien pitää täsmätä.
 
-Aiempi 138/187- ja 139/186-ristiriita johtui eri ajoista jääneistä välimuistitetuista GK-ajoista: yleinen inventaario luettiin ennen kuin `tmp/nutrition/glycemic-load-pilot.json` oli päivitetty, eräinventaario sen jälkeen. Sama raportoitu lähdecommit ei sitonut yhteen pilotin ajonaikaisia välimuistitiedostoja. Korjaus tehtiin ajamalla tuore content sync, tiukka ravintoauditointi ja GK-auditointi ja generoimalla sitten molemmat nykyraportit peräkkäin samasta pilotista. Kummankin nykytila on nyt 325 / 138 / 187 / 45 ja rakenne-/syöte-/lähdefingerprint-poikkeamat ovat 0/0/0. Regressiotesti vertaa kaikki 325 nykyistä reseptitilaa, GK-arvoa ja fingerprinttiä sekä säilyttää baselinejen lähde-SHA:t muuttumattomina.
+Aiempi 138/187- ja 139/186-ristiriita koski alkuperäisen 325 reseptin joukosta tuotettuja eri ajojen inventaarioita: yleinen inventaario luettiin ennen kuin `tmp/nutrition/glycemic-load-pilot.json` oli päivitetty, eräinventaario sen jälkeen. Sama raportoitu lähdecommit ei sitonut yhteen pilotin ajonaikaisia välimuistitiedostoja. Korjaus tehtiin tuoreella content syncillä, tiukalla ravintoauditoinnilla ja GK-auditoinnilla sekä generoimalla nykyraportit peräkkäin samasta pilotista. Integroitu kattavuusauditointi ja regressiotestit vastaavat nyt 326 reseptiä, 138 laskettua ja 188 keskeneräistä; rakenne-/syöte-/lähdefingerprint-poikkeamat ovat 0/0/0. Historiallinen 325 reseptin baseline säilyy muuttumattomana.
 
 ## Kaikkien jäljellä olevien reseptien esteet
 
-Koneellinen inventaario sisältää kaikki 325 reseptiä ja jokaisen 187 keskeneräisen reseptin estoviestit, luokat, ainesosakohtaiset tietueet ja seuraavat toimet. 94 keskeneräisellä reseptillä ravintoarvotila on lähteistetty, 40 vaatii ravintoarvojen tarkistamista ja 53:lta ravintoarvotieto puuttuu.
+Seuraavat esteinventaarion ja priorisoinnin luvut kuvaavat alkuperäistä 325 reseptin 2B6D-tutkimusjoukkoa, eivät hotfix #122:n jälkeen kasvanutta 326 reseptin nykykokoelmaa. Alkuperäisen joukon 187 keskeneräisestä reseptistä 94:llä ravintoarvotila oli lähteistetty, 40 vaati ravintoarvojen tarkistamista ja 53:lta ravintoarvotieto puuttui. Uusi lasagneresepti ei kuulu näihin historiallisiin ryhmittelyihin.
 
-Estoluokat menevät päällekkäin, koska samalla reseptillä voi olla useita esteitä. Keskeneräisistä resepteistä 38 sisältää rakennesidonnan esteen, 65 koostumusesteen, 20 massa- tai valmistustapaesteen, 81 GI-vastaavuusesteen, 42 puuttuvan GI:n ja 6 toleranssivirheen. Nämä määrät eivät summaudu 187:ään. Kaikki keskeneräiset reseptit sisältävät vähintään yhden luokitellun eston.
+Estoluokat menevät päällekkäin, koska samalla reseptillä voi olla useita esteitä. Alkuperäisen joukon 187 keskeneräisestä reseptistä 38 sisälsi rakennesidonnan esteen, 65 koostumusesteen, 20 massa- tai valmistustapaesteen, 81 GI-vastaavuusesteen, 42 puuttuvan GI:n ja 6 toleranssivirheen. Nämä määrät eivät summaudu 187:ään. Kaikilla kyseisen historiallisen joukon keskeneräisillä resepteillä oli vähintään yksi luokiteltu esto.
 
 Keskeiset jäljellä olevat ongelmaryhmät priorisoituina:
 
@@ -72,7 +79,7 @@ Nämä ovat priorisointiryhmiä, eivät riippumattomia reseptimääriä. Esimerk
 
 ## Seuraavan erän disjunkti potentiaali
 
-Seuraavat ensisijaiset työlinjat jakavat kaikki 187 keskeneräistä reseptiä yhteen ryhmään kerrallaan, joten reseptejä ei lasketa kahdesti.
+Seuraavat ensisijaiset työlinjat jakavat alkuperäisen 325 reseptin tutkimusjoukon 187 keskeneräistä reseptiä yhteen ryhmään kerrallaan, joten niitä ei lasketa kahdesti. Luvut ovat historiallisen analyysin tuloksia eivätkä sisällä myöhemmin lisättyä lasagnea.
 
 | Työlinja | Reseptit | Ravintoarvot tuettu | Uudelleentarkistus | Puuttuu | Käytännön potentiaali |
 | --- | ---: | ---: | ---: | ---: | --- |
@@ -85,14 +92,14 @@ Pieneksi seuraavaksi työn kohteeksi sopii rajattu tomaatti-GI-vastaavuuden kats
 
 ## Testit ja auditointitiedostot
 
-- Taatelien lähde-/valmistustapatesti tarkistaa lähdetiedot, fingerprintit, kahden lasketun arvon, mannapuuron NO MATCH -eston yli 1 g/annos hiilihydraattiosuudella ja sen, että keitetty taateli pysyy estettynä.
-- Kattavuustesti vertaa kaikkia lähtötilanteessa laskettuja 136 GK-arvoa muuttumattomaan snapshotiin, varmistaa että kaikilla 187 keskeneräisellä reseptillä on luokiteltu este ja vertaa molempien nykyinventaarioiden reseptitiloja, GK-arvoja sekä fingerprinttejä.
-- Koneellinen, reseptikohtainen lähtö- ja nykyinventaario: [`glycemic-coverage-batch-2b6d-current.json`](glycemic-coverage-batch-2b6d-current.json) ja [`glycemic-coverage-batch-2b6d-current.md`](glycemic-coverage-batch-2b6d-current.md).
-- Muuttumaton lähtösnapshot: [`glycemic-coverage-batch-2b6d-baseline.json`](glycemic-coverage-batch-2b6d-baseline.json).
-- `npm run test:glycemic`: PASS, 61/61; `npm test`: PASS, 131/131.
-- `npm run audit:nutrition -- --strict`: PASS, 180 / 86 / 59 / 0.
-- `npm run audit:glycemic-load`: PASS, 325 reseptiä; 138 laskettua / 187 estettyä.
-- Eräinventaarioiden tuore generointi: PASS; molemmat nykytilaraportit kuvaavat samaa Reseptit-HEADia ja sisältävät 325 reseptiä, 138 laskettua / 187 keskeneräistä, GI 45 (6 STRONG / 39 SUPPLEMENTARY) sekä samat reseptikohtaiset tilat, GK-arvot ja fingerprintit. 2B6D:n muuttumattomaan baselineen verrattuna kaksi uutta arviota, 0 aiemmin lasketun arvoa muuttui, rakenne-/syöte-/lähdefingerprint-poikkeamat 0/0/0.
-- `npm run test:translations`: PASS, 27/27. Neljän taatelireseptin julkaistuja EN/SV/TH-käännösreittejä ei ole.
-- `npm run build`: PASS; tiukka ravintoarvoauditointi, GK-auditointi, TypeScript, Vite ja 690 prerenderöityä reittiä onnistuivat. Vite ilmoitti olemassa olevasta suuresta JS-chunkista.
-- GitHub Actions: tämän korjauscommitin lopullinen CI tarkistetaan pushin jälkeen; PR #120:n [Checks-näkymä](https://github.com/ozirix-dev/Reseptit/pull/120/checks) on uusimman HEADin CI-tilan auktoriteetti. Deployta ei käynnistetä.
+- Taatelien lähde-/valmistustapatesti tarkistaa lähdetiedot, fingerprintit, kaksi hyväksyttyä laskettua arvoa, mannapuuron NO MATCH -eston yli 1 g/annos hiilihydraattiosuudella ja sen, että keitetty taateli pysyy estettynä.
+- Kattavuustesti vertaa historialliset 136 baseline-GK-arvoa muuttumattomaan snapshotiin, säilyttää alkuperäisen 325 reseptin eräanalyysin ja varmistaa nykyinventaarioiden tilat, GK-arvot sekä fingerprintit kaikilla 326 reseptillä.
+- Koneellinen reseptikohtainen nykyinventaario: [glycemic-coverage-batch-2b6d-current.json](glycemic-coverage-batch-2b6d-current.json) ja [glycemic-coverage-batch-2b6d-current.md](glycemic-coverage-batch-2b6d-current.md).
+- Muuttumaton historiallinen lähtösnapshot: [glycemic-coverage-batch-2b6d-baseline.json](glycemic-coverage-batch-2b6d-baseline.json).
+- `npm run test:glycemic`: PASS, 64/64; `npm test`: PASS, 134/134.
+- `npm run test:select-ci`: PASS, 12/12; `npm run test:translations`: PASS, 27/27; `npm run test:static`: PASS, 24/24.
+- `npm run audit:nutrition -- --strict`: PASS, 326 reseptiä (180 lähteistettyä estimaattia / 86 riittämätöntä / 60 puuttuvaa / 0 ristiriitaa).
+- `npm run audit:glycemic-load`: PASS, 326 reseptiä; 138 laskettua / 188 keskeneräistä.
+- Nykyinventaarioiden generointi ja yhdenmukaisuus: PASS; molemmat sisältävät 326 reseptiä, 138 laskettua / 188 keskeneräistä, GI 45 (6 STRONG / 39 SUPPLEMENTARY), yhden uuden reseptin ja 0/0/0 fingerprint-poikkeamaa. Lasagne pysyy `null` / `INSUFFICIENT SOURCE DATA`. 2B6D-baselineen verrattuna saatiin kaksi uutta GK-arviota; aiemmat 136 arvoa eivät muuttuneet.
+- `npm run build`: PASS; tiukka ravintoarvoauditointi, GK-auditointi, TypeScript, Vite ja 691 prerenderöityä reittiä onnistuivat. Vite ilmoitti olemassa olevasta suuresta JS-chunkista.
+- Integraation GitHub Actions [run 40581494809](https://github.com/ozirix-dev/Reseptit/actions/runs/40581494809): PASS HEADissa `fa35f6fa80330fe8b7b23e8633f951f67ead1811`; tämä on integraation tarkistus ennen dokumentointipäivitystä. Dokumentointipäivityksen jälkeisen HEADin CI varmistetaan pushin jälkeen PR #120:n [Checks-näkymästä](https://github.com/ozirix-dev/Reseptit/pull/120/checks). Deployta ei käynnistetä.
