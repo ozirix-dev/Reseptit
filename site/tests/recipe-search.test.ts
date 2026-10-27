@@ -3,6 +3,8 @@ import test from "node:test";
 import { siteContent } from "../src/generated/content.generated";
 import { emptyRecipeFilters, filterRecipes, normalizeSearchText, parseRecipeFilters, recipeFiltersToSearch } from "../src/features/recipes/recipe-search";
 import { recipeFacets } from "../src/content/recipe-facets";
+import { glycemicLoadFilterCategories } from "../src/generated/glycemic-load-filters.generated";
+import { glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
 
 const finnishRecipes = siteContent.recipes.filter((recipe) => recipe.locale === "fi");
 
@@ -123,4 +125,48 @@ test("a search in a translated directory stays within that locale", () => {
   const thaiResults = filterRecipes(thai, { ...emptyRecipeFilters, query: "โปรตีนสูง" }, "th");
   assert.equal(thaiResults.length, 1);
   assert.equal(thaiResults[0].locale, "th");
+});
+
+test("GK URL parameter is strict, composable and round-trippable", () => {
+  assert.deepEqual(parseRecipeFilters("?gl=bad", ["all"]), emptyRecipeFilters);
+  assert.deepEqual(parseRecipeFilters("?gl=low&diet=vhh", ["all"]), { ...emptyRecipeFilters, diet: "vhh", gl: "low" });
+  assert.equal(recipeFiltersToSearch({ ...emptyRecipeFilters, gl: "medium", maxTime: 30 }), "?time=30&gl=medium");
+  assert.deepEqual(parseRecipeFilters("?gl=medium&time=30", ["all"]), { ...emptyRecipeFilters, maxTime: 30, gl: "medium" });
+  assert.equal(recipeFiltersToSearch({ ...emptyRecipeFilters, gl: undefined }), "");
+});
+
+test("GK filter excludes missing values and combines with category and time", () => {
+  const low = finnishRecipes.find(recipe => recipe.category === "aamupala")!;
+  const medium = finnishRecipes.find(recipe => recipe.category === "alkuruoka")!;
+  const high = finnishRecipes.find(recipe => recipe.category === "paaruoka")!;
+  const missing = finnishRecipes.find(recipe => recipe.category === "jalkiruoka")!;
+  const sample = [low, medium, high, missing];
+  const categories = { [low.recipeId]: "low", [medium.recipeId]: "medium", [high.recipeId]: "high" } as const;
+  assert.deepEqual(filterRecipes(sample, { ...emptyRecipeFilters, gl: "low" }, "fi", categories).map(recipe => recipe.recipeId), [low.recipeId]);
+  assert.deepEqual(filterRecipes(sample, { ...emptyRecipeFilters, gl: "medium" }, "fi", categories).map(recipe => recipe.recipeId), [medium.recipeId]);
+  assert.deepEqual(filterRecipes(sample, { ...emptyRecipeFilters, gl: "high" }, "fi", categories).map(recipe => recipe.recipeId), [high.recipeId]);
+  assert.deepEqual(filterRecipes(sample, { ...emptyRecipeFilters, gl: "low", category: "paaruoka" }, "fi", categories), []);
+  assert.deepEqual(filterRecipes(sample, { ...emptyRecipeFilters, gl: "low" }, "fi"), [], "missing GK is not treated as low");
+  assert.deepEqual(filterRecipes(sample, { ...emptyRecipeFilters, gl: "low", maxTime: 30 }, "fi", categories).every(recipe => recipe.timeTotalMin !== null && recipe.timeTotalMin <= 30), true);
+});
+
+test("GK index never exposes incomplete estimates or boundary-spanning ranges", () => {
+  assert.ok(Object.keys(glycemicLoadFilterCategories).length > 0);
+  for (const result of glycemicLoadPilotResults) {
+    const category = glycemicLoadFilterCategories[result.recipeId];
+    if (result.status !== "CALCULATED" || result.confidence === null || result.glycemicLoadPerServing === null) {
+      assert.equal(category, undefined, result.recipeId);
+      continue;
+    }
+    const min = result.glycemicLoadRangePerServing?.min ?? result.glycemicLoadPerServing;
+    const max = result.glycemicLoadRangePerServing?.max ?? result.glycemicLoadPerServing;
+    const expected = max <= 10 ? "low" : min > 10 && max < 20 ? "medium" : min >= 20 ? "high" : undefined;
+    assert.equal(category, expected, result.recipeId);
+  }
+  const calculated = finnishRecipes.find(recipe => glycemicLoadFilterCategories[recipe.recipeId]);
+  assert.ok(calculated);
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const translated = siteContent.recipes.find(recipe => recipe.recipeId === calculated.recipeId && recipe.locale === locale);
+    if (translated) assert.equal(filterRecipes([translated], { ...emptyRecipeFilters, gl: glycemicLoadFilterCategories[calculated.recipeId] }, locale, glycemicLoadFilterCategories).length, 1);
+  }
 });
