@@ -3,6 +3,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { GlycemicLoadRecipeInput } from "./glycemic-load-model";
 import { glycemicLoadInputHash } from "./glycemic-load-recipe-binding";
+import { writeImmutableBaselineFile } from "./glycemic-coverage-baseline-file";
 import { parseMarkdown } from "../src/content/markdown";
 import { buildBaselineSnapshot, buildCurrentCoverageInventory, type CoverageBaseline, type CoverageResult, type CurrentCoverageInput } from "./glycemic-coverage-inventory-model";
 
@@ -50,6 +51,7 @@ const batch2B3BaselinePath = option("--capture-batch-2b3-baseline", "");
 const batch2B4BaselinePath = option("--capture-batch-2b4-baseline", "");
 const batch2B5BaselinePath = option("--capture-batch-2b5-baseline", "");
 const batch2B6ABaselinePath = option("--capture-batch-2b6a-baseline", "");
+const batch2B6BBaselinePath = option("--capture-batch-2b6b-baseline", "");
 const readJson = async <T>(relativePath: string): Promise<T> => JSON.parse(await readFile(path.join(root, relativePath), "utf8")) as T;
 
 const [pilot, nutrition, inputs, giCatalog, historical, reviewStart] = await Promise.all([
@@ -304,6 +306,34 @@ if (batch2B6ABaselinePath) {
   }
   await writeFile(batch2B6ABaselinePath, `${JSON.stringify(baseline, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
   console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, giRecordCount: baseline.giRecordCount, output: batch2B6ABaselinePath }, null, 2));
+  process.exit(0);
+}
+
+if (batch2B6BBaselinePath) {
+  const expectedSourceCommit = "0d7b194228b3a520b0f14613246b4d9aa48137cc";
+  if (sourceCommit !== expectedSourceCommit) throw new Error(`Batch 2B6B baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
+  const baseline = buildBaselineSnapshot({
+    sourceCommit,
+    results: pilot.results,
+    sourceHashes: pilot.sourceHashes,
+    calculationInputHashes,
+    calculationEvidenceHashes: pilot.calculationEvidenceHashes,
+    giRecordCount: giCatalog.records.length,
+    giTierCounts,
+    nutritionAuditCounts: nutrition.counts,
+    nutritionStatuses,
+  });
+  if (baseline.recipeCount !== 325 || baseline.calculated !== 132 || baseline.incomplete !== 193 || baseline.giRecordCount !== 40) {
+    throw new Error("Batch 2B6B baseline does not match the verified 325 / 132 / 193 / 40 starting point.");
+  }
+  if (baseline.giTierCounts.STRONG !== 5 || baseline.giTierCounts.SUPPLEMENTARY !== 35) {
+    throw new Error("Batch 2B6B baseline GI quality tiers do not match the verified 5 STRONG / 35 SUPPLEMENTARY starting point.");
+  }
+  if (baseline.nutritionAuditCounts["ESTIMATE WITH EVIDENCE"] !== 180 || baseline.nutritionAuditCounts["INSUFFICIENT SOURCE DATA"] !== 86 || baseline.nutritionAuditCounts.MISSING !== 59 || baseline.nutritionAuditCounts["CONFLICT REQUIRES REVIEW"] !== 0) {
+    throw new Error("Batch 2B6B baseline strict nutrition audit does not match the verified 180 / 86 / 59 / 0 starting point.");
+  }
+  await writeImmutableBaselineFile(batch2B6BBaselinePath, `${JSON.stringify(baseline, null, 2)}\n`);
+  console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, giRecordCount: baseline.giRecordCount, output: batch2B6BBaselinePath }, null, 2));
   process.exit(0);
 }
 
