@@ -21,20 +21,20 @@
   },
   "currentSummary": {
     "recipeCount": 325,
-    "calculated": 138,
-    "incomplete": 187,
+    "calculated": 136,
+    "incomplete": 189,
     "giRecordCount": 42,
     "giTierCounts": {
       "STRONG": 5,
       "SUPPLEMENTARY": 37
     },
-    "incompleteWithSupportedNutrition": 95,
+    "incompleteWithSupportedNutrition": 96,
     "incompleteNutritionNeedsReview": 40,
-    "incompleteNutritionMissing": 52,
-    "newlyCalculated": 4,
+    "incompleteNutritionMissing": 53,
+    "newlyCalculated": 2,
     "newlyBlocked": 0,
-    "stillIncomplete": 187,
-    "changedBlockerRecipes": 4,
+    "stillIncomplete": 189,
+    "changedBlockerRecipes": 2,
     "newStructureMismatches": 0,
     "newInputMismatches": 0,
     "newEvidenceMismatches": 0
@@ -61,8 +61,8 @@
       "blockerMessages": 23
     },
     "GI_MATCH": {
-      "recipes": 82,
-      "blockerMessages": 101
+      "recipes": 84,
+      "blockerMessages": 106
     },
     "GI_MISSING": {
       "recipes": 41,
@@ -14185,9 +14185,9 @@
     {
       "recipeId": "meheva-suklaakakku",
       "recipeVersion": "24efa441ad52f096251d31af42651d3b5b4680d6149b7da9d9f3ca03fc81cf4c",
-      "calculationInputVersion": "c9b24f3d5c74af03cb1b6b920bc12a8e509e1a31a7769e4c64a6cb2ce4743392",
+      "calculationInputVersion": "5b918a495904076f6452834aa7f51b308e83655a5030363ebf98bb3cabb8c10b",
       "calculationEvidenceVersion": "0fe7d452925145188b9ac85ec0e8e7b3cc85a2ff191a2b0da3828b976dea2a4b",
-      "status": "CALCULATED",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/jalkiruoat/meheva-suklaakakku.md",
@@ -14255,9 +14255,7 @@
             "fineliRecordId": "fineli-32-2026-10-24",
             "giRecordId": "dark-chocolate-international-tables-mean-gi-29",
             "massEvidence": "Ingredient mapped to fineli-release-20 record 32; source state: dark chocolate as sold.",
-            "giMatchEvidence": "International Tables 2021 category mean of four ISO-tested dark chocolate products; used as a low-confidence category mean for dark chocolate as sold, not as a measured cake GI.",
-            "foodKey": "chocolate",
-            "preparationKey": "dark-chocolate-as-sold"
+            "giMatchEvidence": "Published GI analogue/category record dark-chocolate-international-tables-mean-gi-29; source and limitations are listed centrally."
           },
           {
             "name": "voita",
@@ -14297,8 +14295,11 @@
             "name": "kaakaojauhetta",
             "grams": 30,
             "fineliRecordId": "fineli-20-2026-10-24",
-            "giRecordId": null,
-            "massEvidence": "Ingredient mapped to fineli-release-20 record 20; source state: raw/as listed."
+            "giRecordId": "bakery-products-category-mean-gi-58",
+            "massEvidence": "Ingredient mapped to fineli-release-20 record 20; source state: raw/as listed.",
+            "giMatchEvidence": "Published GI analogue/category record bakery-products-category-mean-gi-58; source and limitations are listed centrally.",
+            "foodKey": "bakery-products-category-mean",
+            "preparationKey": "category-mean"
           },
           {
             "name": "leivinjauhetta",
@@ -14313,9 +14314,7 @@
             "fineliRecordId": "fineli-32-2026-10-24",
             "giRecordId": "dark-chocolate-international-tables-mean-gi-29",
             "massEvidence": "Ingredient mapped to fineli-release-20 record 32; source state: dark chocolate as sold.",
-            "giMatchEvidence": "International Tables 2021 category mean of four ISO-tested dark chocolate products; used as a low-confidence category mean for dark chocolate as sold, not as a measured cake GI.",
-            "foodKey": "chocolate",
-            "preparationKey": "dark-chocolate-as-sold"
+            "giMatchEvidence": "Published GI analogue/category record dark-chocolate-international-tables-mean-gi-29; source and limitations are listed centrally."
           },
           {
             "name": "kuohukermaa",
@@ -14329,19 +14328,50 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 20.31,
-      "omittedAvailableCarbohydratePerServingG": 0.6352,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 0.3052,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": true,
+      "calculationInputVersionChanged": false,
       "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "blockers": [
+        {
+          "category": "GI_MATCH",
+          "message": "meheva-suklaakakku: tummaa suklaata: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "nextAction": "Tarkista ruoka-aineen perhe, valmistus ja GI-lähde; älä käytä perusteetonta analogiaa."
+        },
+        {
+          "category": "GI_MATCH",
+          "message": "meheva-suklaakakku: kaakaojauhetta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "nextAction": "Tarkista ruoka-aineen perhe, valmistus ja GI-lähde; älä käytä perusteetonta analogiaa."
+        },
+        {
+          "category": "GI_MATCH",
+          "message": "meheva-suklaakakku: tummaa suklaata: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "nextAction": "Tarkista ruoka-aineen perhe, valmistus ja GI-lähde; älä käytä perusteetonta analogiaa."
+        }
+      ],
+      "blockingCategories": [
+        "GI_MATCH"
+      ],
+      "primaryBlockingCategory": "GI_MATCH",
+      "primaryBlockingReason": "meheva-suklaakakku: tummaa suklaata: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "tummaa suklaata",
+          "grams": 200,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-32-2026-10-24",
+          "giRecordId": "dark-chocolate-international-tables-mean-gi-29",
+          "availableCarbohydratePerServingG": 10.652,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+          ]
+        },
         {
           "name": "voita",
           "grams": 200,
@@ -14373,12 +14403,12 @@
           "grams": 30,
           "recipeQuantity": null,
           "fineliRecordId": "fineli-20-2026-10-24",
-          "giRecordId": null,
+          "giRecordId": "bakery-products-category-mean-gi-58",
           "availableCarbohydratePerServingG": 0.32999999999999996,
           "availableCarbohydrateUpperBoundPerServingG": null,
           "excludedReason": null,
           "issues": [
-            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.330 g available carbohydrate): GI evidence is missing."
+            "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
           ]
         },
         {
@@ -14393,20 +14423,31 @@
           "issues": [
             "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.079 g available carbohydrate): GI evidence is missing."
           ]
+        },
+        {
+          "name": "tummaa suklaata",
+          "grams": 100,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-32-2026-10-24",
+          "giRecordId": "dark-chocolate-international-tables-mean-gi-29",
+          "availableCarbohydratePerServingG": 5.326,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+          ]
         }
       ],
-      "nextActions": [],
-      "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": true,
-      "newlyCalculated": true,
+      "nextActions": [
+        "Tarkista ruoka-aineen perhe, valmistus ja GI-lähde; älä käytä perusteetonta analogiaa."
+      ],
+      "suggestedNextWorkstream": "GI_SOURCE_REVIEW",
+      "statusChanged": false,
+      "newlyCalculated": false,
       "newlyBlocked": false,
-      "stillIncomplete": false,
+      "stillIncomplete": true,
       "changedBlockers": [],
-      "removedBlockers": [
-        "meheva-suklaakakku: tummaa suklaata: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-        "meheva-suklaakakku: kaakaojauhetta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-        "meheva-suklaakakku: tummaa suklaata: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
-      ]
+      "removedBlockers": []
     },
     {
       "recipeId": "marjakiisseli-vaniljakastikkeella",
@@ -48381,9 +48422,9 @@
     {
       "recipeId": "meksikolainen-paputostada-aamupalaksi",
       "recipeVersion": "c2a84a3be449279f0ca55c077dbebc5436d6c714d43906a7a60457f0fdf4f38b",
-      "calculationInputVersion": "cd53c723f7a2fdce437f22a26644f709c8fc5f0e40779a281285d20c49004297",
-      "calculationEvidenceVersion": "bfef4877b68015e78df60bab6a1cc18e99df15c9a435fc5c7077db8ff566a6d0",
-      "status": "CALCULATED",
+      "calculationInputVersion": "7d4ff400c6afdf77585accb1b32ff59431f04baf9eee0408757e5b62ac8034c3",
+      "calculationEvidenceVersion": "694bf41a05920e41139d0a2b9d1c7a8a1e825e9ecbe2b4abc38dc68277fa7f13",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "MISSING",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/aamupalat/meksikolainen-paputostada-aamupalaksi.md",
@@ -48448,16 +48489,15 @@
             "fineliRecordId": "fineli-35554-release-20",
             "giRecordId": "corn-tortilla-noriega-2000-glucose-estimate",
             "massEvidence": "Recipe-listed mass 100 g; MAISSITORTILLA, GLUTEENITON.",
-            "giMatchEvidence": "Published corn tortilla human test; the study product is a commercial corn tortilla, matched to the recipe-listed gluten-free corn tortilla with low confidence due to the single small study and bread-to-glucose scale conversion.",
-            "foodKey": "corn-tortilla",
-            "preparationKey": "commercial-corn-tortilla"
+            "giMatchEvidence": "Low-confidence proxy: Corn tortilla; source category or closest published analogue, not a measured recipe GI."
           },
           {
             "name": "avokado",
             "grams": 120,
             "fineliRecordId": "fineli-11057-release-20",
-            "giRecordId": null,
-            "massEvidence": "1 kpl converted using Fineli food-specific portion mass; AVOKADO, KUORITTU, KIVETÖN."
+            "giRecordId": "vegetables-category-mean-gi-66",
+            "massEvidence": "1 kpl converted using Fineli food-specific portion mass; AVOKADO, KUORITTU, KIVETÖN.",
+            "giMatchEvidence": "Low-confidence proxy: Vegetables other than potatoes, category mean; source category or closest published analogue, not a measured recipe GI."
           },
           {
             "name": "neutraalia paistoöljyä",
@@ -48478,18 +48518,31 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 16.04,
-      "omittedAvailableCarbohydratePerServingG": 0.727,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 0.265,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": true,
-      "calculationEvidenceVersionChanged": true,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": false,
+      "calculationEvidenceVersionChanged": false,
+      "blockers": [
+        {
+          "category": "GI_MATCH",
+          "message": "meksikolainen-paputostada-aamupalaksi: maissitortilla: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "nextAction": "Tarkista ruoka-aineen perhe, valmistus ja GI-lähde; älä käytä perusteetonta analogiaa."
+        },
+        {
+          "category": "GI_MATCH",
+          "message": "meksikolainen-paputostada-aamupalaksi: avokado: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "nextAction": "Tarkista ruoka-aineen perhe, valmistus ja GI-lähde; älä käytä perusteetonta analogiaa."
+        }
+      ],
+      "blockingCategories": [
+        "GI_MATCH"
+      ],
+      "primaryBlockingCategory": "GI_MATCH",
+      "primaryBlockingReason": "meksikolainen-paputostada-aamupalaksi: maissitortilla: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
       "missingFoodAndGIRecords": [
         {
           "name": "kananmuna",
@@ -48505,16 +48558,29 @@
           ]
         },
         {
+          "name": "maissitortilla",
+          "grams": 100,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-35554-release-20",
+          "giRecordId": "corn-tortilla-noriega-2000-glucose-estimate",
+          "availableCarbohydratePerServingG": 25.9225,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+          ]
+        },
+        {
           "name": "avokado",
           "grams": 120,
           "recipeQuantity": null,
           "fineliRecordId": "fineli-11057-release-20",
-          "giRecordId": null,
+          "giRecordId": "vegetables-category-mean-gi-66",
           "availableCarbohydratePerServingG": 0.462,
           "availableCarbohydrateUpperBoundPerServingG": null,
           "excludedReason": null,
           "issues": [
-            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.462 g available carbohydrate): GI evidence is missing."
+            "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
           ]
         },
         {
@@ -48531,17 +48597,16 @@
           ]
         }
       ],
-      "nextActions": [],
-      "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": true,
-      "newlyCalculated": true,
+      "nextActions": [
+        "Tarkista ruoka-aineen perhe, valmistus ja GI-lähde; älä käytä perusteetonta analogiaa."
+      ],
+      "suggestedNextWorkstream": "GI_SOURCE_REVIEW",
+      "statusChanged": false,
+      "newlyCalculated": false,
       "newlyBlocked": false,
-      "stillIncomplete": false,
+      "stillIncomplete": true,
       "changedBlockers": [],
-      "removedBlockers": [
-        "meksikolainen-paputostada-aamupalaksi: maissitortilla: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
-        "meksikolainen-paputostada-aamupalaksi: avokado: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
-      ]
+      "removedBlockers": []
     },
     {
       "recipeId": "intialainen-mannasuurimoupma",
