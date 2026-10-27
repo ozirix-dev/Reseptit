@@ -120,6 +120,11 @@ export function classifyGlycemicLoad(value: number): GlycemicLoadClass {
 
 function categoryMeanMatchesFood(foodKey: string, foodName: string, ingredientName: string): boolean {
   const text = `${foodName} ${ingredientName}`.normalize("NFC").toLocaleLowerCase("fi-FI");
+  const ingredient = ingredientName.normalize("NFC").toLocaleLowerCase("fi-FI");
+  if (foodKey === "chocolate") {
+    return /tumma\S*\s+sukla|dark\s+chocolate/.test(ingredient)
+      && !/maitosukla|milk\s+chocolate|valkosukla|white\s+chocolate/.test(ingredient);
+  }
   const patterns: Record<string, RegExp> = {
     dairy: /maito|milk|cream|kerma|jogurtti|yogurt|juusto|cheese|rahka|quark|paneer|feta|ricotta|voi|butter|dairy/,
     "plain-yogurt-category-mean": /jogurtti|yogurt/,
@@ -127,7 +132,6 @@ function categoryMeanMatchesFood(foodKey: string, foodName: string, ingredientNa
     "bread-category-mean": /leipä|bread|sämpylä|bun|pita|flatbread|toast/,
     "sugar-syrups-category-mean": /soker|sugar|siirappi|syrup|hunaja|honey|hillo|jam|molasses/,
     "honey-category-mean": /hunaja|honey/,
-    chocolate: /suklaa|chocolate/,
     "peanut": /pähkinä|nut|maapähkinä|peanut|mantel|almond|pistaasi|pistachio|cashew|saksanpähkinä|walnut/,
     vegetable: /vihannes|vegetable|porkkana|carrot|kaali|cabbage|kukkakaali|cauliflower|pinaatti|spinach|paprika|pepper|tomaatti|tomato|kurkku|cucumber|munakoiso|eggplant|kesäkurpitsa|zucchini|selleri|celery|sieni|mushroom|papu|bean|herne|pea|paksoi|bok choy|sipuli|onion|okra|parsakaali|broccoli/,
     "fruit-category-mean": /hedelmä|fruit|appelsiini|orange|sitruuna|lemon|lime|limetti|taateli|date|banaani|banana|omena|apple|viikuna|fig|persikka|peach|rypäle|grape|marja|berry/,

@@ -247,6 +247,14 @@ test("batch 2B6C reuses reviewed corn-tortilla and dark-chocolate evidence witho
   }, [food("food", 55, "maitosuklaata")], [darkChocolate]);
   assert.equal(milkChocolate.status, "INSUFFICIENT SOURCE DATA");
   assert.equal(milkChocolate.glycemicLoadPerServing, null);
+
+  const whiteChocolate = calculateGlycemicLoad({
+    recipeId: "white-chocolate-must-not-match-dark-chocolate-mean",
+    servings: 1,
+    ingredients: [{ name: "valkosuklaata", grams: 100, fineliRecordId: "food", giRecordId: darkChocolate.id, foodKey: "chocolate", preparationKey: "dark-chocolate-as-sold", giMatchEvidence: "Dark chocolate category mean." }],
+  }, [food("food", 55, "valkosuklaata")], [darkChocolate]);
+  assert.equal(whiteChocolate.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(whiteChocolate.glycemicLoadPerServing, null);
 });
 
 test("Jiaozi rice wine vinegar has no dry-rice or rice-GI source mapping", async () => {
