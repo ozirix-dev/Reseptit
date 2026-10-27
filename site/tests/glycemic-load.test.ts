@@ -203,6 +203,75 @@ test("plain-yogurt category mean binds only to ingredients in the yogurt family"
   }
 });
 
+test("batch 2B6C retains source-supported warm tortilla and cream omissions while blocking fried tostada and baked chocolate", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [inputText, foodText, giText, pilotText] = await Promise.all([
+    readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8"),
+    readFile(path.join(root, "tmp/nutrition/glycemic-load-pilot.json"), "utf8"),
+  ]);
+  const inputs = JSON.parse(inputText) as { recipes: GlycemicLoadRecipeInput[] };
+  const foods = JSON.parse(foodText) as FoodRecord[];
+  const gis = (JSON.parse(giText) as { records: GlycemicIndexRecord[] }).records;
+  const pilot = JSON.parse(pilotText) as { results: Array<{ recipeId: string; status: string; glycemicLoadPerServing: number | null; confidence: string | null; omittedAvailableCarbohydratePerServingG: number }> };
+  const expected = [
+    { id: "meksikolainen-aamiais-tacot-mustapavuilla", gl: 16.04, omitted: 0.727 },
+    { id: "vhh-kaalikaarryleet", gl: 9.24, omitted: 1.578025 },
+  ];
+  for (const item of expected) {
+    const recipe = inputs.recipes.find((row) => row.recipeId === item.id)!;
+    const result = calculateGlycemicLoad(recipe, foods, gis);
+    assert.equal(result.status, "CALCULATED", item.id);
+    assert.equal(result.glycemicLoadPerServing, item.gl, `${item.id} GK/serving`);
+    assert.equal(result.confidence, "LOW", `${item.id} proxy or editorial omission is visible`);
+    assert.ok(Math.abs(result.omittedAvailableCarbohydratePerServingG - item.omitted) < 1e-12, `${item.id} cumulative omitted carbohydrate`);
+    assert.ok(result.omittedAvailableCarbohydratePerServingG < 2, `${item.id} existing cumulative editorial tolerance`);
+    const audit = pilot.results.find((row) => row.recipeId === item.id)!;
+    assert.equal(audit.status, "CALCULATED", `${item.id} all-325 audit`);
+    assert.equal(audit.glycemicLoadPerServing, item.gl, `${item.id} all-325 audit GK`);
+  }
+
+  const tortilla = inputs.recipes.find((row) => row.recipeId === expected[0]!.id)!.ingredients.find((row) => row.name === "maissitortilla")!;
+  assert.equal(tortilla.foodKey, "corn-tortilla");
+  assert.equal(tortilla.preparationKey, "commercial-corn-tortilla");
+  assert.equal(tortilla.giRecordId, "corn-tortilla-noriega-2000-glucose-estimate");
+
+  for (const id of ["meheva-suklaakakku", "meksikolainen-paputostada-aamupalaksi"]) {
+    const recipe = inputs.recipes.find((row) => row.recipeId === id)!;
+    const result = calculateGlycemicLoad(recipe, foods, gis);
+    assert.equal(result.status, "INSUFFICIENT SOURCE DATA", `${id} requires GI/preparation evidence`);
+    assert.equal(result.glycemicLoadPerServing, null, `${id} must not have a published GK estimate`);
+    assert.ok(result.blockers.length > 0, `${id} must retain a genuine blocker`);
+    const audited = pilot.results.find((row) => row.recipeId === id)!;
+    assert.equal(audited.status, "INSUFFICIENT SOURCE DATA", `${id} full-inventory audit`);
+    assert.equal(audited.glycemicLoadPerServing, null, `${id} full-inventory GK`);
+  }
+  const tostada = inputs.recipes.find((row) => row.recipeId === "meksikolainen-paputostada-aamupalaksi")!;
+  assert.equal(tostada.ingredients.find((row) => row.name === "maissitortilla")?.preparationKey, undefined,
+    "commercial soft-tortilla preparation may not be assigned to a crispy tostada");
+  const cake = inputs.recipes.find((row) => row.recipeId === "meheva-suklaakakku")!;
+  assert.equal(cake.ingredients.find((row) => row.name === "tummaa suklaata")?.preparationKey, undefined,
+    "as-sold dark chocolate source is not a baked-cake preparation match");
+
+  const darkChocolate = gis.find((row) => row.id === "dark-chocolate-international-tables-mean-gi-29")!;
+  const milkChocolate = calculateGlycemicLoad({
+    recipeId: "milk-chocolate-must-not-match-dark-chocolate-mean",
+    servings: 1,
+    ingredients: [{ name: "maitosuklaata", grams: 100, fineliRecordId: "food", giRecordId: darkChocolate.id, foodKey: "chocolate", preparationKey: "dark-chocolate-as-sold", giMatchEvidence: "Dark chocolate category mean." }],
+  }, [food("food", 55, "maitosuklaata")], [darkChocolate]);
+  assert.equal(milkChocolate.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(milkChocolate.glycemicLoadPerServing, null);
+
+  const whiteChocolate = calculateGlycemicLoad({
+    recipeId: "white-chocolate-must-not-match-dark-chocolate-mean",
+    servings: 1,
+    ingredients: [{ name: "valkosuklaata", grams: 100, fineliRecordId: "food", giRecordId: darkChocolate.id, foodKey: "chocolate", preparationKey: "dark-chocolate-as-sold", giMatchEvidence: "Dark chocolate category mean." }],
+  }, [food("food", 55, "valkosuklaata")], [darkChocolate]);
+  assert.equal(whiteChocolate.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(whiteChocolate.glycemicLoadPerServing, null);
+});
+
 test("Jiaozi rice wine vinegar has no dry-rice or rice-GI source mapping", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const pilot = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"));
