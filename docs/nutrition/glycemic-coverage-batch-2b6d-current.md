@@ -1,14 +1,16 @@
 # GK-esteinventaario
 
-Lähdecommit: `822f652181bafccfd795895542b0b46c753a91ef`. Vertailun lähtösnapshot: `f2ba9e849e677f9e223103022e309a09b9992f62` (136 laskettua / 189 keskeneräistä; 42 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
+Lähdecommit: `ea661fbb45f4ed07903262e06604393cb787e09b`. Vertailun lähtösnapshot: `f2ba9e849e677f9e223103022e309a09b9992f62` (136 laskettua / 189 keskeneräistä; 42 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
 
-Nykyinen ajo kattaa 325 reseptiä: 138 laskettua, 187 keskeneräistä. GI-katalogissa on 45 tietuetta (6 STRONG, 39 SUPPLEMENTARY).
+Nykyinen ajo kattaa 326 reseptiä: 138 laskettua, 188 keskeneräistä. GI-katalogissa on 45 tietuetta (6 STRONG, 39 SUPPLEMENTARY).
+
+Uusi resepti historiallisen 325 reseptin vertailusnapshotin jälkeen: munakoiso-kesakurpitsalasagne. Se kuuluu nykyinventaarioon, mutta ei historialliseen baselineen.
 
 ## Muutos hyväksytystä vertailusta
 
 - Aiemmin keskeneräisiä, nyt laskettavia: 2. Aiemmin laskettuja, nyt estettyjä: 0. Edelleen keskeneräisiä: 187.
 - Estoperuste muuttui 4 reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: 0/0/0.
-- Keskeneräisiä, joiden ravintoarvotila on tuettu: 94; tarkistettava: 40; puuttuva: 53.
+- Keskeneräisiä, joiden ravintoarvotila on tuettu: 94; tarkistettava: 40; puuttuva: 54.
 
 ## Päällekkäiset esteet
 
@@ -19,7 +21,7 @@ Luokat menevät päällekkäin; sama resepti voi esiintyä useassa rivissä.
 | STRUCTURE | 38 | 38 |
 | INPUT | 0 | 0 |
 | EVIDENCE | 0 | 0 |
-| COMPOSITION | 65 | 84 |
+| COMPOSITION | 66 | 99 |
 | MASS_PREPARATION | 20 | 23 |
 | GI_MATCH | 81 | 101 |
 | GI_MISSING | 42 | 45 |
@@ -276,6 +278,7 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | hunaja-sinappikana-kaalilla | MASS_PREPARATION | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | STRUCTURE_BINDING_REVIEW |
 | siskonmakkarakeitto-juurekset | GI_MISSING | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
 | vhh-pyttipannu | COMPOSITION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
+| munakoiso-kesakurpitsalasagne | COMPOSITION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
 
 ## Rajaukset
 

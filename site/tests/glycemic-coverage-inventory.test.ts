@@ -133,7 +133,7 @@ test("batch 2A preserves its starting overlap audit and only accepts reviewed cu
   assert.equal(reviewStart.structuralBindingAnalysis.rows.length, 51);
   assert.equal(reviewStart.structuralBindingAnalysis.withOtherBlockers, 51);
   assert.equal(reviewStart.structuralBindingAnalysis.potentiallyPublishableAfterBindingOnly, 0);
-  assert.equal(current.currentSummary.recipeCount, 325);
+  assert.equal(current.currentSummary.recipeCount, 326);
   assert.equal(current.structuralBindingAnalysis.withOtherBlockersAtReviewStart, 51);
   assert.equal(current.structuralBindingAnalysis.potentiallyResolvableByBindingOnlyAtReviewStart, 0);
   assert.equal(current.structuralBindingAnalysis.reviewedInBatch2A, 10);
@@ -225,7 +225,7 @@ test("batch 2B2 captures the published main baseline and preserves all earlier i
   assert.deepEqual([current.currentSummary.recipeCount, current.currentSummary.calculated, current.currentSummary.incomplete, current.currentSummary.giRecordCount], [325, 118, 207, 38]);
   assert.deepEqual([current.currentSummary.newlyCalculated, current.currentSummary.newlyBlocked, current.currentSummary.stillIncomplete], [1, 0, 207]);
   assert.deepEqual([current.currentSummary.newStructureMismatches, current.currentSummary.newInputMismatches, current.currentSummary.newEvidenceMismatches], [0, 0, 0]);
-  assert.equal(current.recipes.length, 326);
+  assert.equal(current.recipes.length, 325);
   assert.equal(new Set(current.recipes.map((row) => row.recipeId)).size, 325);
   for (const id of ["thai-jok-kanalla"]) {
     const row = current.recipes.find((recipe) => recipe.recipeId === id);
@@ -261,7 +261,7 @@ test("batch 2B5 baseline and current inventory preserve the published 325-recipe
   assert.equal(current.previousApprovedBaseline.sourceCommit, baseline.sourceCommit);
   assert.deepEqual([current.currentSummary.recipeCount, current.currentSummary.calculated, current.currentSummary.incomplete, current.currentSummary.giRecordCount], [325, 129, 196, 39]);
   assert.deepEqual([current.currentSummary.newlyCalculated, current.currentSummary.newlyBlocked], [2, 0]);
-  assert.equal(current.recipes.length, 326);
+  assert.equal(current.recipes.length, 325);
   assert.equal(new Set(current.recipes.map((row) => row.recipeId)).size, 325);
 });
 
@@ -427,4 +427,7 @@ test("current 326-recipe batch inventory includes the lasagne as new and incompl
   assert.equal(lasagne.previousApprovedStatus, null);
   assert.equal(lasagne.status, "INSUFFICIENT SOURCE DATA");
   assert.equal(lasagne.glycemicLoadPerServing, null);
+  const report = await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b6d-current.md"), "utf8");
+  assert.match(report, /Uusi resepti historiallisen 325 reseptin vertailusnapshotin jälkeen: munakoiso-kesakurpitsalasagne/);
+  assert.match(report, /ei historialliseen baselineen/i);
 });

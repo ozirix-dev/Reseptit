@@ -457,6 +457,7 @@ const inventory = buildCurrentCoverageInventory({
 });
 
 const summary = inventory.currentSummary;
+const newlyAddedRecipeIds = inventory.recipes.filter((row) => row.newlyAdded).map((row) => row.recipeId);
 const structural = inventory.structuralBindingAnalysis;
 const reportLines = [
   "# GK-esteinventaario",
@@ -467,6 +468,11 @@ const reportLines = [
     : []),
   "",
   `Nykyinen ajo kattaa ${summary.recipeCount} reseptiä: ${summary.calculated} laskettua, ${summary.incomplete} keskeneräistä. GI-katalogissa on ${summary.giRecordCount} tietuetta (${Object.entries(summary.giTierCounts).map(([tier, count]) => `${count} ${tier}`).join(", ")}).`,
+  ...(newlyAddedRecipeIds.length === 0
+    ? []
+    : ["", newlyAddedRecipeIds.length === 1
+      ? "Uusi resepti historiallisen " + baseline.recipeCount + " reseptin vertailusnapshotin jälkeen: " + newlyAddedRecipeIds[0] + ". Se kuuluu nykyinventaarioon, mutta ei historialliseen baselineen."
+      : "Uudet reseptit historiallisen " + baseline.recipeCount + " reseptin vertailusnapshotin jälkeen: " + newlyAddedRecipeIds.join(", ") + ". Ne kuuluvat nykyinventaarioon, mutta eivät historialliseen baselineen."]),
   "",
   "## Muutos hyväksytystä vertailusta",
   "",
