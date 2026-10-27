@@ -6,214 +6,140 @@ category: paaruoka
 language: fi
 status: draft
 servings: 4
-time_total_min: 80
+time_total_min: 110
 main_ingredient: [munakoiso, kesäkurpitsa, pasta, juusto]
 cooking_method: [uuni]
 tags: [lasagne, uuniruoka]
 translation_languages: []
 translation_status: {}
 ingredients:
-  - {amount: 400, unit: g, item: munakoiso}
-  - {amount: 400, unit: g, item: kesäkurpitsa}
-  - {amount: 100, unit: g, item: sipuli}
-  - {amount: 3, unit: kynttä, item: valkosipuli, note: "GK-laskelmassa 12 g"}
-  - {amount: 4, unit: rkl, item: oliiviöljy, note: "sekä hieman vuokaan ja viimeistelyyn"}
-  - {amount: 1, unit: rkl, item: tuore timjami, note: "tai 1 tl kuivattua"}
-  - {amount: 800, unit: g, item: valmis italialainen tomaattikastike, note: "150 g tarjoiluun"}
-  - {amount: 200, unit: g, item: lasagnelevyt, note: "180–200 g vuoan mukaan; GK-laskelmassa 200 g"}
-  - {amount: 250, unit: g, item: mozzarella, note: valutettuna}
-  - {amount: 80, unit: g, item: parmesaani tai vastaava kova juusto, note: "20 g viimeistelyyn"}
-  - {amount: 0.5, unit: ruukkua, item: tuore basilika}
-  - {amount: 2, unit: tl, item: viinietikka, note: "1–2 tl maun mukaan"}
-  - {amount: 0.5, unit: tl, item: suola, note: "kasviksille; kastikkeeseen tarvittaessa"}
-  - {amount: 0.25, unit: tl, item: mustapippuri, note: maun mukaan}
-  - {amount: null, unit: dl, item: vesi, note: "tarvittaessa 0,5–1 dl kastikkeen ohentamiseen"}
+  - {amount: 400, unit: g, item: munakoiso, note: "raaka syötävä osa"}
+  - {amount: 400, unit: g, item: kesäkurpitsa, note: "raaka syötävä osa"}
+  - {amount: 100, unit: g, item: sipuli, note: "kuorittuna"}
+  - {amount: 12, unit: g, item: valkosipuli, note: "kuorittuna; noin 3 kynttä"}
+  - {amount: 60, unit: g, item: oliiviöljy, note: "50 g paahtoon, 5 g vuokaan, 5 g viimeistelyyn"}
+  - {amount: 3, unit: g, item: tuore timjami, note: "lehdet kastikkeeseen"}
+  - {amount: 800, unit: g, item: valmis italialainen tomaattikastike, note: "650 g vuokaan, 150 g tarjoiluun"}
+  - {amount: 200, unit: g, item: lasagnelevyt, note: "kuivapaino; 180 g vaihtoehto erillisessä laskentamuistiossa"}
+  - {amount: 250, unit: g, item: mozzarella, note: "valutettuna; 175 g väliin, 75 g pinnalle"}
+  - {amount: 80, unit: g, item: parmesaani tai vastaava kova juusto, note: "60 g väliin, 20 g viimeistelyyn"}
+  - {amount: 10, unit: g, item: tuore basilika, note: "5 g väliin, 5 g viimeistelyyn"}
+  - {amount: 10, unit: g, item: viinietikka, note: "tarjoilukastikkeeseen"}
+  - {amount: 3, unit: g, item: suola, note: "kasviksille; vähennä tarvittaessa kastikkeen suolaisuuden mukaan"}
+  - {amount: 0.5, unit: g, item: mustapippuri, note: "viimeistelyyn"}
+  - {amount: 100, unit: ml, item: vesi, note: "vuokakastikkeeseen; säädä tarvittaessa 50–150 ml:aan"}
 ---
 
 # Munakoiso-kesäkurpitsalasagne
 
-**Reseptiluonnos · 4 henkilölle · noin 1 tunti 20 minuuttia**
+**Reseptiluonnos · 4 henkilölle · noin 1 tunti 50 minuuttia**
 
-Hans Välimäen videon pohjalta sovitettu kotikeittiöversio. Kaikki ainesmäärät
-ovat arvioita neljälle henkilölle, eivät videolla ilmoitettuja määriä.
-Reseptiä ei ole koekeitetty.
+Hans Välimäen videon pohjalta tehty Codexin kotikeittiösovellus. Ainesmäärät,
+uunipaahto ja alla oleva aikataulu ovat tämän luonnoksen arvioita, eivät
+tekijän täsmällinen alkuperäisresepti. Reseptiä ei ole koekeitetty.
 
 ## Ainekset
 
-| Aines | Arvioitu määrä 4 henkilölle |
+Punnitse kasvikset raakoina syötävänä osana ja juustot ilman pakkauksia tai
+säilöntälientä. Kynsien koko vaihtelee: käytä valkosipulista grammapainoa.
+
+| Aines | Määrä 4 henkilölle |
 | --- | --- |
-| Munakoiso | 1 keskikokoinen, noin 400 g |
-| Kesäkurpitsa | 1–2 kpl, yhteensä noin 400 g |
-| Sipuli | 1 pieni, noin 100 g |
-| Valkosipuli | 3 kynttä |
-| Oliiviöljy | 4 rkl sekä hieman vuokaan ja viimeistelyyn |
-| Tuore timjami | 1 rkl lehtiä tai 1 tl kuivattua |
-| Valmis italialainen tomaattikastike | 800 g, josta noin 150 g tarjoiluun |
-| Lasagnelevyt | noin 180–200 g, vuoan ja kerrosten mukaan |
-| Mozzarella | 250 g valutettuna |
-| Parmesaani tai vastaava kova juusto | 80 g, josta noin 20 g viimeistelyyn |
-| Tuore basilika | noin ½ ruukkua |
-| Viinietikka | 1–2 tl, maun mukaan |
-| Suola | noin ½ tl kasviksille; kastikkeeseen tarvittaessa |
-| Mustapippuri | noin ¼ tl tai maun mukaan |
-| Vesi | tarvittaessa noin ½–1 dl kastikkeen ohentamiseen |
+| Munakoiso | 400 g |
+| Kesäkurpitsa | 400 g |
+| Sipuli | 100 g kuorittuna |
+| Valkosipuli | 12 g kuorittuna, noin 3 kynttä |
+| Oliiviöljy | yhteensä 60 g: 50 g paahtoon, 5 g vuokaan, 5 g viimeistelyyn |
+| Tuore timjami | 3 g lehtiä kastikkeeseen |
+| Valmis italialainen tomaattikastike | 800 g: 650 g vuokaan, 150 g tarjoiluun |
+| Lasagnelevyt | 200 g kuivana; vaihtoehtoisesti 180 g, ks. laskentamuistio |
+| Mozzarella | 250 g valutettuna: 175 g väliin, 75 g pinnalle |
+| Parmesaani tai vastaava kova juusto | 80 g: 60 g väliin, 20 g viimeistelyyn |
+| Tuore basilika | 10 g: 5 g väliin, 5 g viimeistelyyn |
+| Viinietikka | 10 g tarjoilukastikkeeseen |
+| Suola | 3 g kasviksille; vähennä tarvittaessa kastikkeen suolaisuuden mukaan |
+| Mustapippuri | 0,5 g viimeistelyyn |
+| Vesi | oletus 100 ml vuokakastikkeeseen; säätövara yhteensä 50–150 ml |
 
 Videolla käytetään Knorr Professional Tomato Pronto Napoletana -kastiketta
-ja saman valmistajan lasagnelevyjä. Kotiversioon käy myös muu valmis,
-maustettu tomaattikastike. Juustoksi valitaan tässä mozzarella; videolla
-mainitaan myös burrata vaihtoehtona. Jos haluat täysin kasvisruokavalioon
-sopivan version, valitse juustot, joissa on mikrobiperäinen juoksete.
+ja Knorrin lasagnelevyjä. Kotiversioon käy muu maustettu tomaattikastike,
+mutta sen paksuus ja pastan pakkauksen kypsennysohje vaikuttavat valmistukseen.
+Tässä käytetään mozzarellaa; videolla mainitaan myös burrata.
 
 ## Valmistus
 
-1. **Valmistele kasvikset.** Leikkaa munakoiso ja kesäkurpitsa noin ½ cm:n
-   viipaleiksi. Viipaloi sipuli ja murskaa valkosipuli. Sekoita kasviksiin
-   oliiviöljy, timjami ja suola. Anna maustua noin 15 minuuttia ja valuta
-   irronnut neste pois.
-2. **Paahda kasvikset.** Levitä kasvikset väljästi leivinpaperille kahdelle
-   pellille. Paahda 225 asteessa noin 20–25 minuuttia, kunnes ne pehmenevät
-   ja saavat hieman väriä. Vaihda peltien paikkaa tarvittaessa. Videolla
-   kasvikset friteerataan; uunipaahto on tämän luonnoksen kotikeittiösovellus.
-3. **Valmistele kastike ja juustot.** Lämmitä tomaattikastike. Ota siitä
-   noin 150 g erilleen tarjoilua varten ja mausta tämä osa viinietikalla
-   ja tarvittaessa suolalla. Ohenna vuokaan tulevaa kastiketta vedellä,
-   jos se on hyvin paksua. Valuta ja revi mozzarella sekä raasta parmesaani.
-4. **Kokoa lasagne.** Öljyä noin 20 × 25 cm:n uunivuoka. Levitä pohjalle
-   hieman kastiketta. Tee noin kolme kerrosta lasagnelevyistä, kasviksista,
-   kastikkeesta, basilikasta ja juustoista. Jätä päälle kastiketta ja
-   mozzarellaa. Peitä kaikki pastalevyt kostealla täytteellä ja noudata
-   levyjen pakkauksen mahdollista esikypsennysohjetta.
-5. **Paista.** Laske uunin lämpö 200 asteeseen. Paista noin 30–35 minuuttia
-   tai kunnes lasagnelevyt ovat pehmeitä ja pinta kauniin värinen.
-   Tavalliset kuivat levyt voivat tarvita pidemmän ajan; tarkista pakkaus
-   ja kokeile kypsyyttä veitsellä. Peitä pinta tarvittaessa foliolla.
-6. **Anna vetäytyä ja tarjoile.** Anna lasagnen vetäytyä noin 10–15 minuuttia.
-   Jaa lämmitetty tarjoilukastike neljälle lautaselle ja nosta lasagnepalat
-   päälle. Viimeistele lopulla parmesaanilla, basilikalla, mustapippurilla
-   ja pienellä tilkalla oliiviöljyä.
+1. **Valmistele kasvikset ja uuni.** Kuumenna uuni 200 °C:seen kiertoilmalla.
+   Kuivaa pestyt kasvikset. Leikkaa munakoiso ja kesäkurpitsa noin ½ cm:n
+   viipaleiksi ja viipaloi sipuli. Sekoita niihin 50 g öljyä ja 3 g suolaa
+   (vähemmän, jos kastike on hyvin suolaista). Erillistä 15 minuutin
+   maustumista ja nesteen valuttamista ei tarvita tässä paahtoversiossa.
+2. **Paahda kahdella pellillä.** Levitä kasvikset yhteen väljään kerrokseen.
+   Jätä peltien väliin tilaa ilmankierrolle ja vaihda niiden paikkoja puolivälissä.
+   Paahda noin 20–25 minuuttia, kunnes viipaleet taipuvat ja saavat hieman väriä.
+   Tarkkaile ohuita sipulisuikaleita. Ilman kiertoilmaa käytä 225 °C:ta,
+   vaihda peltien paikat ja varaudu noin 25–35 minuuttiin. Älä paahda
+   valkosipulia mukana: murskaa se seuraavan vaiheen kastikkeeseen.
+3. **Valmistele kastike ja juustot paahtamisen aikana.** Mittaa 150 g
+   tomaattikastiketta tarjoiluun ja lisää siihen 10 g viinietikkaa. Kuumenna
+   loput 650 g kastiketta valkosipulin ja timjamin kanssa. Anna poreilla
+   hiljaa 5–10 minuuttia; vältä kokoon keittämistä. Lisää lähtökohtaisesti
+   100 ml vettä, jotta kastike leviää helposti levyjen ympärille. Käytä
+   yhteensä 50–150 ml kastikkeen paksuuden ja pastapakkauksen ohjeen mukaan.
+   Valuta mozzarella, punnitse siitä 250 g ja revi paloiksi. Raasta kova juusto.
+4. **Kokoa lasagne.** Käytä noin 3 litran vuokaa, esimerkiksi sisämitoiltaan
+   20 × 25 cm ja vähintään 6 cm syvää. Öljyä vuoka 5 g:lla öljyä. Varaa
+   vuokakastikkeesta noin neljännes pinnalle ja levitä hieman pohjalle.
+   Tee 3–4 pastakerrosta käyttäen yhteensä 200 g kuivia levyjä. Katkaise
+   levyt tarvittaessa sopiviksi; vältä paksuja päällekkäisiä saumoja.
+   Jaa väleihin paahdetut kasvikset, kastike, 175 g mozzarellaa, 60 g kovaa
+   juustoa ja 5 g basilikaa. Jokaisen levyn molemmille puolille ja reunoille
+   tulee kosteaa täytettä. Peitä viimeinen pastakerros varatulla
+   vuokakastikkeella ja 75 g:lla mozzarellaa. Jätä vuoan reunaan vähintään
+   1 cm kiehumisvaraa; käytä suurempaa vuokaa, jos täyte ei mahdu.
+5. **Kypsennä ja tarkista pasta.** Säädä uuni 180 °C:seen tasalämmöllä
+   ja paista keskitasolla noin 45 minuuttia. Aika ja lämpö perustuvat
+   [Knorr GN -levyjen valmistajan ohjeeseen](https://www.unileverfoodsolutions.fi/tuotteet/knorr-lasagnelevyt-gn-mitoitus-5-kg-34-FI-354670.html);
+   toisen tuotteen kanssa noudata pakkauksen ohjetta, myös mahdollista
+   esikypsennystä. Peitä vuoka väljästi foliolla ensimmäisiksi 25–30
+   minuutiksi ja poista folio loppuajaksi. Kokeile ohuella veitsellä
+   keskeltä ja reunoilta kaikkien pastakerrosten läpi: kovaa vastusta
+   ei saa tuntua. Jatka tarvittaessa 5–10 minuuttia kerrallaan ja suojaa
+   pinta, jos se tummuu liikaa. Pelkkä ruskistunut pinta ei osoita pastan kypsyyttä.
+6. **Vetäytä ja tarjoile.** Anna levätä 15 minuuttia. Lämmitä tarjoiluun
+   erotettu kastike ja jaa se tasan neljälle lautaselle lasagnen kanssa.
+   Viimeistele yhteensä 20 g:lla kovaa juustoa, 5 g:lla basilikaa,
+   0,5 g:lla mustapippuria ja 5 g:lla öljyä.
 
-## Huomiot luonnokseen
+## Aika ja luonnoksen rajat
 
-- Videon kuvateksti vahvistaa paistolämpötilaksi 200 °C ja ajaksi
-  noin 30–35 minuuttia. Kotikeittiön valmisteluajat, vuoan koko,
-  uunipaahto ja kaikki ainesmäärät ovat tämän luonnoksen arvioita.
-- Videolla lasagne jäähdytetään kevyen, tasaisen painon alla siistien
-  annospalojen saamiseksi. Tässä lämpimänä tarjoiltavassa versiossa
-  käytetään lyhyttä vetäytymistä.
-- Lasagnessa ei ole béchamelkastiketta. Kosteus tulee tomaattikastikkeesta,
-  kasviksista ja juustoista.
+Perusaikataulu on 15 min valmistelua ja uunin kuumennusta + 25 min paahtoa
+(kastike ja juustot samalla) + 10 min kokoamista + 45 min paistoa + 15 min
+vetäytymistä = **110 min**. Aktiivista työtä on arviolta 35–40 min.
+Varaa käytännössä noin 100–130 min; uuni, pastatuote ja lisäkypsennys
+voivat pidentää aikaa. Erillistä maustumisaikaa ei lasketa mukaan.
 
-## Lähde ja tarkistus
+Videon 200 °C ja 30–35 min eivät takaa tämän kuivia levyjä käyttävän
+sovelluksen kypsyyttä. Videolla kasvikset friteerataan ja lasagne
+jäähdytetään painon alla; tässä ne paahdetaan ja ruoka tarjoillaan lämpimänä.
+Béchamelkastiketta ei käytetä. Paahdon kuivattava vaikutus, kastikkeen
+vesimäärä ja vuoan riittävyys on vielä varmistettava koekeittiössä.
+
+**Allergeenit:** vehnä/gluteeni ja maito. Tarkista myös valittujen
+valmistuotteiden pakkaukset. Kasvisruokavalioon sopivuus edellyttää molempien
+juustojen olevan ilman eläinperäistä juoksetetta. Parmigiano Reggiano
+valmistetaan [vasikanjuoksetteella](https://backend.parmigianoreggiano.com/uploads/Single_document_PR_24042025_825de2b63f.pdf),
+joten kasvisversioon valitaan vastaava sopiva kova juusto. Reseptiä ei ole
+merkitty VHH- tai keto-reseptiksi.
+
+## Lähde ja laskentatilanne
 
 [Hans Välimäki: kasvislasagne, Facebook Reel](https://www.facebook.com/reel/1137314279255893).
 Julkaisu on merkitty kaupalliseksi yhteistyöksi Unilever Food Solutionsin kanssa.
+Alkuperäistä luonnosta varten aineksia ja työvaiheita tarkistettiin videokuvista,
+kuvatekstistä ja automaattisesta litteroinnista; litteroinnissa oli tunnistusvirheitä.
+Edellä kuvatut kotikeittiöratkaisut ovat Codexin sovellusta.
 
-Ääni tallennettiin ja litteroitiin paikallisesti faster-whisper base -mallilla
-(suomi, noin 2 min 51 s). Automaattisessa litteroinnissa on tunnistusvirheitä;
-aineksia ja työvaiheita tarkistettiin myös videokuvista ja julkaisun kuvatekstistä.
-Litterointi ja videotallenteet ovat paikallista työaineistoa, eivät osa tätä luonnosta.
-
-## Arvioitu glykeeminen kuorma (GK)
-
-**Noin 25 GK / annos**, kun koko resepti jaetaan neljään yhtä suureen
-annokseen ja käytetään **200 g kuivia lasagnelevyjä**. Imeytyviä
-hiilihydraatteja on laskelmassa noin **55 g / annos**.
-Tarkistus tehty 27.10.2026. Tämä on aineksista laskettu arvio, ei valmiista
-ateriasta mitattu GI tai yksilöllisen verensokerivasteen ennuste.
-
-Laskentakaava: **GK / annos = Σ(ainesosan imeytyvät hiilihydraatit grammoina
-× ainesosan GI / 100) / 4**. GI-asteikolla glukoosi = 100.
-Kuitua ei lasketa imeytyviin hiilihydraatteihin eikä vähennetä uudestaan
-Finelin imeytyvistä hiilihydraateista tai EU-pakkausten hiilihydraattiluvusta.
-
-### Määrät ja laskelma
-
-Kasvikset punnitaan raakoina syötävänä osana, pasta kuivana ja mozzarella
-valutettuna. Mukana ovat kaikki 800 g kastiketta, myös tarjoiluun varattu
-150 g, sekä kaikki juustot ja viimeistelyainekset. Valutuksen yhteydessä
-mahdollisesti poistuvia hiilihydraatteja ei vähennetä. Kypsennyksen aiheuttama
-veden haihtuminen ei muuta koko reseptin laskennallista hiilihydraattimäärää.
-
-| Aines | Määrä koko reseptissä | Imeytyvä HH g / 100 g | HH g koko reseptissä | Käytetty GI (oletus) | GK / annos |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Knorr GN -lasagnelevyt | 200 g | 72,0 | 144,0 | 55 | 19,80 |
-| Knorr Tomato Pronto Napoletana | 800 g | 5,3 | 42,4 | 23 | 2,44 |
-| Munakoiso | 400 g | 3,1 | 12,4 | 30 | 0,93 |
-| Kesäkurpitsa | 400 g | 2,5 | 10,0 | 30 | 0,75 |
-| Sipuli | 100 g | 4,8 | 4,8 | 30 | 0,36 |
-| Valkosipuli | 12 g (3 kynttä, arvio) | 16,3 | 1,956 | 50 | 0,24 |
-| Mozzarella, Galbani vertailutuotteena | 250 g | 2,0 | 5,0 | 48 | 0,60 |
-| Parmigiano Reggiano vertailujuustona | 80 g | 0 | 0 | Ei tarvita | 0 |
-| Basilika, timjami, viinietikka ja pippuri yhteensä | Katso oletus alla | Arvioitu yhteensä | 1,0 | 50 | 0,13 |
-| Oliiviöljy, suola ja lisävesi | Reseptin määrät | 0 | 0 | Ei tarvita | 0 |
-| **Yhteensä** | **4 annosta** | | **221,556** | | **25,25** |
-
-Koko reseptin laskennallinen GK on **100,99** ja annoksen **25,2475**.
-Taulukon desimaalit tekevät laskun tarkistettavaksi; käyttökelpoinen
-pyöristetty tulos on **noin 25 / annos**, ei tarkka mittaustulos.
-
-### GI-oletukset ja niiden perusteet
-
-- **Lasagnelevyt, GI 55:** Sydneyn yliopiston GI-tietokannassa on mitattu
-  arvo 55 keitetyille kuiville lasagnelevyille (Value, UK; Henry ym. 2005,
-  8 koehenkilöä). Tämä on lähin löytynyt vertailu munattomille durumvehnästä
-  tehdyille levyille. Se ei ole Knorr-tuotteen mittaus, ja uunissa kypsennys sekä
-  pastan pehmeys voivat muuttaa vastetta.
-- **Tomaattikastike, GI 23:** saman tietokannan kaupallisen tomaattia ja kasviksia
-  sisältävän pastakastikkeen arvo (Ranska, 2007; 10 koehenkilöä). Testiraportti on
-  tietokannassa merkitty julkaisemattomaksi. Knorr-kastikkeen omaa mitattua
-  GI-arvoa ei löytynyt. Koostumuseron vaikutusta tarkastellaan alla myös
-  GI-arvolla 35, joka on mitattu eri valmistajan juustoa sisältävälle
-  tomaattipastakastikkeelle (Dodd ym. 2011).
-- **Munakoiso, kesäkurpitsa ja sipuli, GI 30:** laskennallinen oletus
-  vähätärkkelyksisille kasviksille, ei näistä tuotteista löydetty mittaustulos.
-  Valinta edustaa matalaa GI:tä; täsmällistä arvoa ei voida päätellä pelkästä
-  ravintosisällöstä. Arvojen 15–40 vaikutus esitetään alla.
-- **Valkosipuli, GI 50:** oma karkea oletus tärkkelystä sisältävälle ainekselle
-  (Fineli: tärkkelystä 14,7 g / 100 g). Valkosipulin mitattua GI:tä ei löytynyt.
-  Pieni, 12 gramman määrä rajaa vaikutusta kokonaistulokseen.
-- **Mozzarella, GI 48:** GI-tietokannan puhtaan laktoosin arvoa käytetään
-  juuston vähäisten hiilihydraattien sijaisarvona. Tämä ei ole mozzarellan
-  mitattu GI, eikä kaikkien jäljellä olevien hiilihydraattien oletus laktoosiksi
-  kuvaa täydellisesti juuston koostumusta.
-- **Yrtit, viinietikka ja pippuri:** oletetaan tuoretta basilikaa 10 g,
-  tuoretta timjamia 3 g, viinietikkaa 10 g ja mustapippuria 0,5 g.
-  Niiden yhteinen imeytyvä hiilihydraattimäärä pyöristetään laskentaoletuksena
-  1 grammaan ja GI asetetaan 50:een. Molemmat ovat arvioita; osuus on noin
-  0,13 GK / annos. Kuivattua timjamia käytettäessä tämäkin osuus on arvio.
-- **Öljy, suola, vesi ja hiilihydraatiton vertailujuusto:** GK-osuus on nolla
-  hiilihydraattimäärän perusteella. Tämä ei tarkoita, että niille olisi
-  mitattu GI = 0. Toisen juuston hiilihydraatit tarkistetaan pakkauksesta.
-
-### Arvion herkkyys
-
-Jokaisella rivillä muutetaan vain ilmoitettua oletusta; muut arvot pysyvät
-peruslaskelman mukaisina. Vaihtelut eivät ole tilastollisia luottamusvälejä.
-
-| Muutos | Arvioitu GK / annos |
-| --- | ---: |
-| Peruslaskelma: pasta 200 g, pastan GI 55, kastikkeen GI 23 | 25,2 |
-| Pastaa reseptin alarajan mukaisesti 180 g | 23,3 |
-| Kastikkeen GI 35 vertailuarvon 23 sijaan | 26,5 |
-| Pastan GI 45–65 (havainnollistava oletusväli) | 21,6–28,8 |
-| Munakoison, kesäkurpitsan ja sipulin GI 15–40 | 24,2–25,9 |
-
-Suurin osa arviosta tulee pastasta. Rasvan, proteiinin, etikan tai
-jäähdytyksen mahdollista vaikutusta ei vähennetä laskelmasta, koska tälle
-reseptille ei ole mitattua korjauskerrointa. Tuotteen vaihtaminen tai
-annosten epätasainen jako muuttaa tulosta.
-
-### Ravintolaskelman lähteet
-
-Hiilihydraattimäärät perustuvat seuraaviin lähteisiin; määrät ja yllä
-eritellyt GI-sovellukset ovat tämän reseptiluonnoksen oletuksia.
-
-- [Knorr lasagnelevyt, GN-mitoitus: valmistajan tuotesivu](https://www.unileverfoodsolutions.fi/tuotteet/knorr-lasagnelevyt-gn-mitoitus-5-kg-34-FI-354670.html): 72 g hiilihydraattia / 100 g kuivaa tuotetta.
-- [Unilever Food Solutions Suomen tuoteluettelo 2023](https://www.unileverfoodsolutions.fi/dam/global-ufs/mcos/nordics/finland/pdf/UFS_Tuoteluettelo_2023_LR.pdf): Knorr Tomato Pronto Napoletana, 5,3 g / 100 g. Tarkista käytettävän pakkauksen arvo, sillä koostumus voi muuttua.
-- [Knorr Tomato Pronto 3 kg, valmistajan Sveitsin tuotesivu](https://shop.unileverfoodsolutions.ch/products/knorr-professional-tomato-pronto-tomatensauce-3-kg?variant=57489490248061): tukee 5,3 g / 100 g arvoa; eri markkinan tuotetta ei oleteta kaikilta osin samaksi.
-- Fineli, THL: [munakoiso](https://fineli.fi/fineli/fi/elintarvikkeet/362), [kesäkurpitsa](https://fineli.fi/fineli/fi/elintarvikkeet/389), [sipuli](https://fineli.fi/fineli/fi/elintarvikkeet/335) ja [valkosipuli](https://fineli.fi/fineli/fi/elintarvikkeet/393). Käytetty ravintotekijä on imeytyvä hiilihydraatti.
-- [Galbani mozzarella, Lactalis](https://www.lactalis.co.uk/dairy-goodness/galbani-mozzarella/): 2 g hiilihydraattia / 100 g.
-- [Parmigiano Reggiano: ravitsemukselliset ominaisuudet](https://www.parmigianoreggiano.com/product-guide-nutritional-characteristics): 0 g hiilihydraattia / 100 g.
-- [Sydneyn yliopiston GI-tietokanta](https://glycemicindex.com/gi-search/): hakunimet “Lasagne sheets, dry pasta”, “Tomato and vegetable pasta sauce, commercially-prepared” ja “Lactose (Lactose 101394S, BDH, Poole, UK)”; vertailuarvot 55, 23 ja 48.
-- [Henry ym. 2005: kaupallisten tuotteiden GI ja GK](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/39502DB89C8FDD82CFCEF46EFBDED5E4/S0007114505002692a.pdf/glycaemic-index-and-glycaemic-load-values-of-commercially-available-products-in-the-uk.pdf): lasagnelevyjen alkuperäistutkimus.
-- [Dodd ym. 2011](https://pubmed.ncbi.nlm.nih.gov/21831990/): vertailukastike ja laskennallisen sekä mitatun seka-aterian GI:n ero.
+Reseptillä ei ole hyväksyttyä GK-arvoa eikä kattavasti todennettuja
+ravintoarvoja. Aiempi lasku ja sen puutteet on erotettu
+[luonnoksen laskentamuistioon](../../docs/nutrition/drafts/munakoiso-kesakurpitsalasagne.md).
+Muistion havainnollistavaa skenaariota ei syötetä julkaistuun GK-järjestelmään.
