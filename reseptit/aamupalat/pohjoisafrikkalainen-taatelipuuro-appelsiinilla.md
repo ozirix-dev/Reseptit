@@ -17,7 +17,7 @@ ingredients:
     item: "mannasuurimo"
   - amount: 10
     unit: "g"
-    item: "kuivattua taatelia"
+    item: "kivettömiä kuivattuja taateleita"
   - amount: 130
     unit: "g"
     item: "kuorittua appelsiinia"
@@ -63,5 +63,5 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 1. Mittaa mannasuurimo kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
 2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
-4. Keitä mannapuuro pehmeäksi ja lisää taatelit, appelsiininkuori sekä kaneli.
+3. Hienonna taatelit ja leikkaa kuorittu appelsiini paloiksi.
+4. Sekoita taatelit, appelsiinipalat ja kaneli valmiiseen puuroon. Mausta suolalla.

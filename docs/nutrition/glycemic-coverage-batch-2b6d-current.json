@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T13:46:43.659Z",
-  "sourceCommit": "9b065068ff5958c729d8e789ebab7c21a56b9f97",
+  "generatedAt": "2026-10-27T14:53:37.968Z",
+  "sourceCommit": "d8e133b5757cd88c1f185f6995b2ad195ea8585a",
   "previousApprovedBaseline": {
     "sourceCommit": "f2ba9e849e677f9e223103022e309a09b9992f62",
     "recipeCount": 325,
@@ -2636,8 +2636,8 @@
         "batch2AOutcome": "OUT_OF_SCOPE",
         "currentStatus": "CALCULATED",
         "nutritionStatus": "ESTIMATE WITH EVIDENCE",
-        "recipeVersion": "7b8f6c7ae12fad5233ef681bdb10a1ab3e15dd6d52c11d87b57b7b8a3ac8b2d9",
-        "calculationInputVersion": "8a18b1bfb266143bc6045c0fe13bd279513edf44b04402283f342bdacbcce4d8",
+        "recipeVersion": "9177981d3f69ac131068daa7a8042258c16883599cec219d6efacf0003f57937",
+        "calculationInputVersion": "aeb77e7174945065fae8dae59ffd00f4dae5ee2bb4afa94425c37a5ac21853ac",
         "inputIngredientCount": 6,
         "currentRecipeStructure": {
           "sourcePath": "reseptit/aamupalat/kiinalainen-hirssipuuro-taateleilla.md",
@@ -2651,7 +2651,7 @@
             {
               "amount": 10,
               "unit": "g",
-              "item": "kuivattua taatelia"
+              "item": "kivettömiä kuivattuja taateleita"
             },
             {
               "amount": 2,
@@ -2692,14 +2692,14 @@
               "giMatchEvidence": "Millet groats: Low-confidence cooked-millet analogue; source reports a wide GI range.; category/analogue estimate, low confidence."
             },
             {
-              "name": "taateli",
+              "name": "kivettömiä kuivattuja taateleita",
               "grams": 10,
-              "fineliRecordId": "fineli-28937-release-20",
+              "fineliRecordId": "afcd-F003496-release-3",
               "giRecordId": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
-              "massEvidence": "Recipe-listed 10 g dried date; mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN.",
+              "massEvidence": "Recipe-listed 10 g pitted dried dates; ingredient weight is edible flesh before chopping. AFCD F003496 describes pitted dried dates with 100% analysed portion.",
               "foodKey": "dried-date-tamer",
               "preparationKey": "tamer-stage-as-sold",
-              "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving. Low-confidence ingredient estimate, not a meal measurement."
+              "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement."
             },
             {
               "name": "inkivääri",
@@ -3337,8 +3337,8 @@
         "batch2AOutcome": "OUT_OF_SCOPE",
         "currentStatus": "INSUFFICIENT SOURCE DATA",
         "nutritionStatus": "ESTIMATE WITH EVIDENCE",
-        "recipeVersion": "d347342ef0bd2ecf964ecee786f0ac1d2babfb8f6d998e00d499dd90ce1ce929",
-        "calculationInputVersion": "d3ff61d28aceee52ccebfb01ac12c2dcfc3234744b9991072db3973e085376f6",
+        "recipeVersion": "0e906de9730853273097bf682d9c51cf0f93ef6ce0f164233af922360efb3cc1",
+        "calculationInputVersion": "6ff433cb6fd664e7222e2d1a04e1a990d7de8d4e45f29def580eddfc5e2f3f80",
         "inputIngredientCount": 6,
         "currentRecipeStructure": {
           "sourcePath": "reseptit/aamupalat/lahi-ita-taatelipuuro-tahinilla.md",
@@ -3352,7 +3352,7 @@
             {
               "amount": 10,
               "unit": "g",
-              "item": "kuivattua taatelia"
+              "item": "kivettömiä kuivattuja taateleita"
             },
             {
               "amount": 1,
@@ -3393,12 +3393,12 @@
               "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
             },
             {
-              "name": "taateli",
+              "name": "kivettömiä kuivattuja taateleita",
               "grams": 10,
-              "fineliRecordId": "fineli-28937-release-20",
+              "fineliRecordId": "afcd-F003496-release-3",
               "giRecordId": null,
-              "massEvidence": "Recipe-listed 10 g dried date, mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN (dried date as sold).",
-              "giMatchEvidence": "Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. The source-backed available carbohydrate exceeds 1 g/serving, so the recipe remains blocked."
+              "massEvidence": "Recipe-listed 10 g pitted dried dates; ingredient weight is edible flesh before chopping. AFCD F003496 describes pitted dried dates with 100% analysed portion.",
+              "giMatchEvidence": "Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. AFCD-backed available carbohydrate is 3.36 g/serving, so the recipe remains blocked."
             },
             {
               "name": "kardemumma",
@@ -4774,8 +4774,8 @@
         "batch2AOutcome": "OUT_OF_SCOPE",
         "currentStatus": "CALCULATED",
         "nutritionStatus": "ESTIMATE WITH EVIDENCE",
-        "recipeVersion": "1a31a70dd584434faff5424fa2f819fc1514e1e0907eac583765a6fc1b5a4822",
-        "calculationInputVersion": "1af972f8630813c25c18e9c9b11932c8f57b452e657231ba7fdfbe66c302b55b",
+        "recipeVersion": "b5abf11d198c1ba7e632a8e234958fd1d4cf0452ce59da310353d5cdd8d223c3",
+        "calculationInputVersion": "0bce6d3954fcddc078ec5564e9d8c73f8a1e071dab3c1ecce5c14c9364a53ed3",
         "inputIngredientCount": 6,
         "currentRecipeStructure": {
           "sourcePath": "reseptit/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md",
@@ -4789,7 +4789,7 @@
             {
               "amount": 10,
               "unit": "g",
-              "item": "kuivattua taatelia"
+              "item": "kivettömiä kuivattuja taateleita"
             },
             {
               "amount": 130,
@@ -4830,14 +4830,14 @@
               "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
             },
             {
-              "name": "taateli",
+              "name": "kivettömiä kuivattuja taateleita",
               "grams": 10,
-              "fineliRecordId": "fineli-28937-release-20",
+              "fineliRecordId": "afcd-F003496-release-3",
               "giRecordId": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
-              "massEvidence": "Recipe-listed 10 g dried date; mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN.",
+              "massEvidence": "Recipe-listed 10 g pitted dried dates; ingredient weight is edible flesh before chopping. AFCD F003496 describes pitted dried dates with 100% analysed portion.",
               "foodKey": "dried-date-tamer",
               "preparationKey": "tamer-stage-as-sold",
-              "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds the chopped dried dates after the porridge is cooked. Low-confidence ingredient estimate, not a meal measurement."
+              "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement."
             },
             {
               "name": "appelsiini",
@@ -53914,9 +53914,9 @@
     },
     {
       "recipeId": "lahi-ita-taatelipuuro-tahinilla",
-      "recipeVersion": "d347342ef0bd2ecf964ecee786f0ac1d2babfb8f6d998e00d499dd90ce1ce929",
-      "calculationInputVersion": "d3ff61d28aceee52ccebfb01ac12c2dcfc3234744b9991072db3973e085376f6",
-      "calculationEvidenceVersion": "68b259d0f619ed65d9d90c115e091c1012ff6c6c287ef1a7dfbf44307507dadb",
+      "recipeVersion": "0e906de9730853273097bf682d9c51cf0f93ef6ce0f164233af922360efb3cc1",
+      "calculationInputVersion": "6ff433cb6fd664e7222e2d1a04e1a990d7de8d4e45f29def580eddfc5e2f3f80",
+      "calculationEvidenceVersion": "8a482afa7e5b9227055083ef385534ee8fe0895e20620eb650632aeb0957c12a",
       "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
@@ -53931,7 +53931,7 @@
           {
             "amount": 10,
             "unit": "g",
-            "item": "kuivattua taatelia"
+            "item": "kivettömiä kuivattuja taateleita"
           },
           {
             "amount": 1,
@@ -53972,12 +53972,12 @@
             "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
           },
           {
-            "name": "taateli",
+            "name": "kivettömiä kuivattuja taateleita",
             "grams": 10,
-            "fineliRecordId": "fineli-28937-release-20",
+            "fineliRecordId": "afcd-F003496-release-3",
             "giRecordId": null,
-            "massEvidence": "Recipe-listed 10 g dried date, mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN (dried date as sold).",
-            "giMatchEvidence": "Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. The source-backed available carbohydrate exceeds 1 g/serving, so the recipe remains blocked."
+            "massEvidence": "Recipe-listed 10 g pitted dried dates; ingredient weight is edible flesh before chopping. AFCD F003496 describes pitted dried dates with 100% analysed portion.",
+            "giMatchEvidence": "Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. AFCD-backed available carbohydrate is 3.36 g/serving, so the recipe remains blocked."
           },
           {
             "name": "kardemumma",
@@ -54029,13 +54029,13 @@
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
-      "recipeVersionChanged": false,
+      "recipeVersionChanged": true,
       "calculationInputVersionChanged": true,
       "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
           "category": "OTHER",
-          "message": "lahi-ita-taatelipuuro-tahinilla: taateli: Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. The source-backed available carbohydrate exceeds 1 g/serving, so the recipe remains blocked.",
+          "message": "lahi-ita-taatelipuuro-tahinilla: kivettömiä kuivattuja taateleita: Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. AFCD-backed available carbohydrate is 3.36 g/serving, so the recipe remains blocked.",
           "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
         }
       ],
@@ -54043,19 +54043,19 @@
         "OTHER"
       ],
       "primaryBlockingCategory": "OTHER",
-      "primaryBlockingReason": "lahi-ita-taatelipuuro-tahinilla: taateli: Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. The source-backed available carbohydrate exceeds 1 g/serving, so the recipe remains blocked.",
+      "primaryBlockingReason": "lahi-ita-taatelipuuro-tahinilla: kivettömiä kuivattuja taateleita: Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. AFCD-backed available carbohydrate is 3.36 g/serving, so the recipe remains blocked.",
       "missingFoodAndGIRecords": [
         {
-          "name": "taateli",
+          "name": "kivettömiä kuivattuja taateleita",
           "grams": 10,
           "recipeQuantity": null,
-          "fineliRecordId": "fineli-28937-release-20",
+          "fineliRecordId": "afcd-F003496-release-3",
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 1.9079000000000002,
+          "availableCarbohydratePerServingG": 3.36,
           "availableCarbohydrateUpperBoundPerServingG": null,
           "excludedReason": null,
           "issues": [
-            "Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. The source-backed available carbohydrate exceeds 1 g/serving, so the recipe remains blocked."
+            "Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. AFCD-backed available carbohydrate is 3.36 g/serving, so the recipe remains blocked."
           ]
         },
         {
@@ -54107,7 +54107,7 @@
       "newlyBlocked": false,
       "stillIncomplete": true,
       "changedBlockers": [
-        "lahi-ita-taatelipuuro-tahinilla: taateli: Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. The source-backed available carbohydrate exceeds 1 g/serving, so the recipe remains blocked."
+        "lahi-ita-taatelipuuro-tahinilla: kivettömiä kuivattuja taateleita: Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. AFCD-backed available carbohydrate is 3.36 g/serving, so the recipe remains blocked."
       ],
       "removedBlockers": [
         "lahi-ita-taatelipuuro-tahinilla: taateli: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
@@ -58687,9 +58687,9 @@
     },
     {
       "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
-      "recipeVersion": "ede140385cfd36c3876f03905dadbfa9736fbb4ce69daf6f9dab1152869938a9",
-      "calculationInputVersion": "eb58fb56191c252091ef6da39f7fbbbe0bf55fefbb4610d079cc10832b74d64a",
-      "calculationEvidenceVersion": "6fb2766b14f378e265e311f8b55757241606b1e35a594fee4862f837386c6f6b",
+      "recipeVersion": "fcf0008b590d5bacb9328337515e41572ec9b425e75595c5a3aa930f1edee4f4",
+      "calculationInputVersion": "be1806562e66365679e85d6eb840937148f088f46f70a9d01f7d340aaa6a4c60",
+      "calculationEvidenceVersion": "35acddef2c33a0b8167e426739a0aaf4306f6222bb6760dbfc338171697c8e34",
       "status": "CALCULATED",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
@@ -58704,7 +58704,7 @@
           {
             "amount": 10,
             "unit": "g",
-            "item": "kuivattua taatelia"
+            "item": "kivettömiä kuivattuja taateleita"
           },
           {
             "amount": 20,
@@ -58728,7 +58728,7 @@
           }
         ],
         "cookingMethod": [
-          "paistaminen"
+          "hauduttaminen"
         ]
       },
       "currentCalculationInput": {
@@ -58745,14 +58745,14 @@
             "giMatchEvidence": "Couscous groats: Use only as a low-confidence couscous analogue; study mean has high variability and unspecified product/preparation.; category/analogue estimate, low confidence."
           },
           {
-            "name": "kuivattua taatelia",
+            "name": "kivettömiä kuivattuja taateleita",
             "grams": 10,
-            "fineliRecordId": "fineli-28937-release-20",
+            "fineliRecordId": "afcd-F003496-release-3",
             "giRecordId": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
-            "massEvidence": "Recipe-listed 10 g dried date; mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN.",
+            "massEvidence": "Recipe-listed 10 g pitted dried dates; ingredient weight is edible flesh before chopping. AFCD F003496 describes pitted dried dates with 100% analysed portion.",
             "foodKey": "dried-date-tamer",
             "preparationKey": "tamer-stage-as-sold",
-            "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates after couscous preparation. Low-confidence ingredient estimate, not a meal measurement."
+            "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement."
           },
           {
             "name": "manteli",
@@ -58786,12 +58786,12 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 33.56,
+      "glycemicLoadPerServing": 34.36,
       "omittedAvailableCarbohydratePerServingG": 0,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
-      "recipeVersionChanged": false,
+      "recipeVersionChanged": true,
       "calculationInputVersionChanged": true,
       "calculationEvidenceVersionChanged": true,
       "blockers": [],
@@ -59885,9 +59885,9 @@
     },
     {
       "recipeId": "kiinalainen-hirssipuuro-taateleilla",
-      "recipeVersion": "7b8f6c7ae12fad5233ef681bdb10a1ab3e15dd6d52c11d87b57b7b8a3ac8b2d9",
-      "calculationInputVersion": "8a18b1bfb266143bc6045c0fe13bd279513edf44b04402283f342bdacbcce4d8",
-      "calculationEvidenceVersion": "2d2d0b2b2adc577da0eeb234ca371bb3cd93fc994ede6ffa968c7896c7ef3af2",
+      "recipeVersion": "9177981d3f69ac131068daa7a8042258c16883599cec219d6efacf0003f57937",
+      "calculationInputVersion": "aeb77e7174945065fae8dae59ffd00f4dae5ee2bb4afa94425c37a5ac21853ac",
+      "calculationEvidenceVersion": "2f3ee1798a26d2054dcee96e54fcbfaf535e88226e79cd6b77b0c531eaf0a182",
       "status": "CALCULATED",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
@@ -59902,7 +59902,7 @@
           {
             "amount": 10,
             "unit": "g",
-            "item": "kuivattua taatelia"
+            "item": "kivettömiä kuivattuja taateleita"
           },
           {
             "amount": 2,
@@ -59943,14 +59943,14 @@
             "giMatchEvidence": "Millet groats: Low-confidence cooked-millet analogue; source reports a wide GI range.; category/analogue estimate, low confidence."
           },
           {
-            "name": "taateli",
+            "name": "kivettömiä kuivattuja taateleita",
             "grams": 10,
-            "fineliRecordId": "fineli-28937-release-20",
+            "fineliRecordId": "afcd-F003496-release-3",
             "giRecordId": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
-            "massEvidence": "Recipe-listed 10 g dried date; mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN.",
+            "massEvidence": "Recipe-listed 10 g pitted dried dates; ingredient weight is edible flesh before chopping. AFCD F003496 describes pitted dried dates with 100% analysed portion.",
             "foodKey": "dried-date-tamer",
             "preparationKey": "tamer-stage-as-sold",
-            "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving. Low-confidence ingredient estimate, not a meal measurement."
+            "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement."
           },
           {
             "name": "inkivääri",
@@ -60002,12 +60002,12 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 20.39,
+      "glycemicLoadPerServing": 21.19,
       "omittedAvailableCarbohydratePerServingG": 0.084,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
-      "recipeVersionChanged": false,
+      "recipeVersionChanged": true,
       "calculationInputVersionChanged": true,
       "calculationEvidenceVersionChanged": true,
       "blockers": [],
@@ -64185,9 +64185,9 @@
     },
     {
       "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
-      "recipeVersion": "1a31a70dd584434faff5424fa2f819fc1514e1e0907eac583765a6fc1b5a4822",
-      "calculationInputVersion": "1af972f8630813c25c18e9c9b11932c8f57b452e657231ba7fdfbe66c302b55b",
-      "calculationEvidenceVersion": "8895c6be1fad3d8653b5804db75e7041b8d6a73545ca6b09d7a74f76839e992b",
+      "recipeVersion": "b5abf11d198c1ba7e632a8e234958fd1d4cf0452ce59da310353d5cdd8d223c3",
+      "calculationInputVersion": "0bce6d3954fcddc078ec5564e9d8c73f8a1e071dab3c1ecce5c14c9364a53ed3",
+      "calculationEvidenceVersion": "dbdd0c94c1dc21490d3f2c2ce977ffbbbfc36e569200af7ff8f5af73c78dbeaa",
       "status": "CALCULATED",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
@@ -64202,7 +64202,7 @@
           {
             "amount": 10,
             "unit": "g",
-            "item": "kuivattua taatelia"
+            "item": "kivettömiä kuivattuja taateleita"
           },
           {
             "amount": 130,
@@ -64243,14 +64243,14 @@
             "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
           },
           {
-            "name": "taateli",
+            "name": "kivettömiä kuivattuja taateleita",
             "grams": 10,
-            "fineliRecordId": "fineli-28937-release-20",
+            "fineliRecordId": "afcd-F003496-release-3",
             "giRecordId": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
-            "massEvidence": "Recipe-listed 10 g dried date; mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN.",
+            "massEvidence": "Recipe-listed 10 g pitted dried dates; ingredient weight is edible flesh before chopping. AFCD F003496 describes pitted dried dates with 100% analysed portion.",
             "foodKey": "dried-date-tamer",
             "preparationKey": "tamer-stage-as-sold",
-            "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds the chopped dried dates after the porridge is cooked. Low-confidence ingredient estimate, not a meal measurement."
+            "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement."
           },
           {
             "name": "appelsiini",
@@ -64296,12 +64296,12 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 22.45,
+      "glycemicLoadPerServing": 23.25,
       "omittedAvailableCarbohydratePerServingG": 0.25,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "INSUFFICIENT SOURCE DATA",
       "previousApprovedGlycemicLoadPerServing": null,
-      "recipeVersionChanged": false,
+      "recipeVersionChanged": true,
       "calculationInputVersionChanged": true,
       "calculationEvidenceVersionChanged": true,
       "blockers": [],

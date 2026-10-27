@@ -1,5 +1,5 @@
 {
-  "calculationBasis": "Per-serving ingredient-sum estimate: sum(GI × available carbohydrate per serving)/100. Fineli Rel20 is the primary available-carbohydrate source; AFCD Release 3 fills only two missing Fineli foods (chickpea flour and tamarind paste). Published exact GI values, explicit analogues, and Table 1 category means may be used with source, match type, and confidence disclosed. Ingredients below 1 g available carbohydrate per serving are omitted. Not a measured mixed-meal response.",
+  "calculationBasis": "Per-serving ingredient-sum estimate: sum(GI × available carbohydrate per serving)/100. Fineli Rel20 is the primary available-carbohydrate source; AFCD Release 3 supplies foods where its record better matches the ingredient state, including pitted dried dates. Published exact GI values, explicit analogues, and Table 1 category means may be used with source, match type, and confidence disclosed. Ingredients below 1 g available carbohydrate per serving are omitted. Not a measured mixed-meal response.",
   "fineliEvidence": "docs/nutrition/fineli-release-20-reference.json; only required records are copied into docs/nutrition/food-records.json. Finnish Institute for Health and Welfare (THL), Fineli Rel20, CC BY 4.0.",
   "massEvidence": "Amounts are from structured Finnish recipe frontmatter. Grams use listed weights; other units use food-specific Fineli Rel20 MASS values. If only dl mass exists, rkl/tl are converted from food-specific density using 15/5 ml spoon volume and documented per ingredient.",
   "excludedIngredientPolicy": "Trace seasonings and unspecified salt are conservative documented assumptions, omitted only below 1 g available carbohydrate per serving. Unresolved substantial ingredients block totals.",
@@ -15393,12 +15393,12 @@
           "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
         },
         {
-          "name": "taateli",
+          "name": "kivettömiä kuivattuja taateleita",
           "grams": 10,
-          "fineliRecordId": "fineli-28937-release-20",
+          "fineliRecordId": "afcd-F003496-release-3",
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 10 g dried date, mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN (dried date as sold).",
-          "giMatchEvidence": "Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. The source-backed available carbohydrate exceeds 1 g/serving, so the recipe remains blocked."
+          "massEvidence": "Recipe-listed 10 g pitted dried dates; ingredient weight is edible flesh before chopping. AFCD F003496 describes pitted dried dates with 100% analysed portion.",
+          "giMatchEvidence": "Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. AFCD-backed available carbohydrate is 3.36 g/serving, so the recipe remains blocked."
         },
         {
           "name": "kardemumma",
@@ -15421,7 +15421,11 @@
         {
           "name": "täysmaitoa",
           "grams": 300,
-          "recipeQuantity": { "amount": 300, "unit": "ml", "massGrams": 300 },
+          "recipeQuantity": {
+            "amount": 300,
+            "unit": "ml",
+            "massGrams": 300
+          },
           "fineliRecordId": "fineli-689-2026-10-24",
           "giRecordId": "dairy-category-mean-gi-35",
           "foodKey": "dairy",
@@ -16901,14 +16905,14 @@
           "giMatchEvidence": "Couscous groats: Use only as a low-confidence couscous analogue; study mean has high variability and unspecified product/preparation.; category/analogue estimate, low confidence."
         },
         {
-          "name": "kuivattua taatelia",
+          "name": "kivettömiä kuivattuja taateleita",
           "grams": 10,
-          "fineliRecordId": "fineli-28937-release-20",
+          "fineliRecordId": "afcd-F003496-release-3",
           "giRecordId": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
-          "massEvidence": "Recipe-listed 10 g dried date; mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN.",
+          "massEvidence": "Recipe-listed 10 g pitted dried dates; ingredient weight is edible flesh before chopping. AFCD F003496 describes pitted dried dates with 100% analysed portion.",
           "foodKey": "dried-date-tamer",
           "preparationKey": "tamer-stage-as-sold",
-          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates after couscous preparation. Low-confidence ingredient estimate, not a meal measurement."
+          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement."
         },
         {
           "name": "manteli",
@@ -17287,19 +17291,23 @@
           "giMatchEvidence": "Millet groats: Low-confidence cooked-millet analogue; source reports a wide GI range.; category/analogue estimate, low confidence."
         },
         {
-          "name": "taateli",
+          "name": "kivettömiä kuivattuja taateleita",
           "grams": 10,
-          "fineliRecordId": "fineli-28937-release-20",
+          "fineliRecordId": "afcd-F003496-release-3",
           "giRecordId": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
-          "massEvidence": "Recipe-listed 10 g dried date; mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN.",
+          "massEvidence": "Recipe-listed 10 g pitted dried dates; ingredient weight is edible flesh before chopping. AFCD F003496 describes pitted dried dates with 100% analysed portion.",
           "foodKey": "dried-date-tamer",
           "preparationKey": "tamer-stage-as-sold",
-          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving. Low-confidence ingredient estimate, not a meal measurement."
+          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement."
         },
         {
           "name": "inkivääri",
           "grams": 2,
-          "recipeQuantity": { "amount": 2, "unit": "g", "massGrams": 2 },
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "g",
+            "massGrams": 2
+          },
           "fineliRecordId": "afcd-F004213-release-3",
           "giRecordId": null,
           "massEvidence": "Recipe-listed 2 g fresh ginger, mapped to AFCD F004213 raw peeled ginger.",
@@ -17308,7 +17316,11 @@
         {
           "name": "seesaminsiemen",
           "grams": 8,
-          "recipeQuantity": { "amount": 8, "unit": "g", "massGrams": 8 },
+          "recipeQuantity": {
+            "amount": 8,
+            "unit": "g",
+            "massGrams": 8
+          },
           "fineliRecordId": "fineli-385-release-20",
           "giRecordId": null,
           "massEvidence": "Recipe-listed 8 g, mapped to SEESAMINSIEMEN, KUORINEEN (whole unhulled sesame seeds).",
@@ -17317,7 +17329,11 @@
         {
           "name": "vettä",
           "grams": 700,
-          "recipeQuantity": { "amount": 700, "unit": "ml", "massGrams": 700 },
+          "recipeQuantity": {
+            "amount": 700,
+            "unit": "ml",
+            "massGrams": 700
+          },
           "fineliRecordId": "fineli-922-release-20",
           "giRecordId": null,
           "massEvidence": "Recipe-listed 700 ml water, converted at 1 g/ml and mapped to Fineli tap water (0 g available carbohydrate)."
@@ -18547,14 +18563,14 @@
           "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
         },
         {
-          "name": "taateli",
+          "name": "kivettömiä kuivattuja taateleita",
           "grams": 10,
-          "fineliRecordId": "fineli-28937-release-20",
+          "fineliRecordId": "afcd-F003496-release-3",
           "giRecordId": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
-          "massEvidence": "Recipe-listed 10 g dried date; mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN.",
+          "massEvidence": "Recipe-listed 10 g pitted dried dates; ingredient weight is edible flesh before chopping. AFCD F003496 describes pitted dried dates with 100% analysed portion.",
           "foodKey": "dried-date-tamer",
           "preparationKey": "tamer-stage-as-sold",
-          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds the chopped dried dates after the porridge is cooked. Low-confidence ingredient estimate, not a meal measurement."
+          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement."
         },
         {
           "name": "appelsiini",
@@ -18579,7 +18595,11 @@
         {
           "name": "vettä",
           "grams": 300,
-          "recipeQuantity": { "amount": 300, "unit": "ml", "massGrams": 300 },
+          "recipeQuantity": {
+            "amount": 300,
+            "unit": "ml",
+            "massGrams": 300
+          },
           "fineliRecordId": "fineli-922-release-20",
           "giRecordId": null,
           "massEvidence": "Recipe-listed 300 ml water, converted at 1 g/ml and mapped to Fineli tap water (0 g available carbohydrate)."
@@ -23471,5 +23491,5 @@
       "notYetReviewed": 0
     }
   },
-  "additionalCarbohydrateEvidence": "AFCD Release 3 was used only for chickpea flour in vada pav and pure tamarind paste in pani puri because no matching Fineli foods were found. Source: Food Standards Australia New Zealand, Australian Food Composition Database Release 3, CC BY-SA 3.0 Australia. Values with and without sugar alcohols were equal for both items. This batch also uses AFCD Release 3 items identified by source IDs in the input records where matching Fineli foods were unavailable. AFCD Release 3 Cheese, ricotta (F002488) is used for pasta alla Norma because no matching Fineli record exists. For Semper Pofiber (GTIN 7310100857200), the manufacturer specification reports 17 g available carbohydrate and 65 g fibre per 100 g, 3 g per tablespoon, and approximately 17 g per dl; this product-specific record is used only for the small recipe amount. AFCD Release 3 Vanilla bean extract (F009350) supplies the composition proxy for teaspoon quantities of vanilla extract. AFCD Release 3 is also used in this cohort for spring onion, commercial hoisin, lime juice and pure tamarind paste. Ingredient-level Fineli Rel20 sources are preserved by food IDs in the record table. The eighth batch reuses ingredient-level Fineli Rel20 and AFCD Release 3 records only from existing source calculation files. Unresolved recipe-card quantities and product matches are reported as blockers; no generic piece or product substitution is made. The ninth batch adds FSANZ AFCD Release 3 dried mung beans (F000446; CC BY-SA 3.0 Australia) where Fineli did not contain a matching dried mung-bean record. The corn-tortilla GI analogue is from a published Mexican human-food study (8 participants; bread reference) and is converted to the glucose scale with the 0.71 factor described by International Tables 2021; it is supplementary, low-confidence evidence. The tenth batch uses FSANZ AFCD Release 3 chickpea flour F003986 and dried mung beans F000446, with attribution and licence noted in their records. The thirteenth batch also uses AFCD Release 3 records F005299 for peeled raw mango, F004729 for lime juice and F002220 for pickled capers, with source IDs, states and Australian CC BY-SA 3.0 attribution retained in food-records.json."
+  "additionalCarbohydrateEvidence": "AFCD Release 3 was used only for chickpea flour in vada pav and pure tamarind paste in pani puri because no matching Fineli foods were found. Source: Food Standards Australia New Zealand, Australian Food Composition Database Release 3, CC BY-SA 3.0 Australia. Values with and without sugar alcohols were equal for both items. This batch also uses AFCD Release 3 items identified by source IDs in the input records where matching Fineli foods were unavailable. AFCD Release 3 Cheese, ricotta (F002488) is used for pasta alla Norma because no matching Fineli record exists. For Semper Pofiber (GTIN 7310100857200), the manufacturer specification reports 17 g available carbohydrate and 65 g fibre per 100 g, 3 g per tablespoon, and approximately 17 g per dl; this product-specific record is used only for the small recipe amount. AFCD Release 3 Vanilla bean extract (F009350) supplies the composition proxy for teaspoon quantities of vanilla extract. AFCD Release 3 is also used in this cohort for spring onion, commercial hoisin, lime juice and pure tamarind paste. Ingredient-level Fineli Rel20 sources are preserved by food IDs in the record table. The eighth batch reuses ingredient-level Fineli Rel20 and AFCD Release 3 records only from existing source calculation files. Unresolved recipe-card quantities and product matches are reported as blockers; no generic piece or product substitution is made. The ninth batch adds FSANZ AFCD Release 3 dried mung beans (F000446; CC BY-SA 3.0 Australia) where Fineli did not contain a matching dried mung-bean record. The corn-tortilla GI analogue is from a published Mexican human-food study (8 participants; bread reference) and is converted to the glucose scale with the 0.71 factor described by International Tables 2021; it is supplementary, low-confidence evidence. The tenth batch uses FSANZ AFCD Release 3 chickpea flour F003986 and dried mung beans F000446, with attribution and licence noted in their records. The thirteenth batch also uses AFCD Release 3 records F005299 for peeled raw mango, F004729 for lime juice and F002220 for pickled capers, with source IDs, states and Australian CC BY-SA 3.0 attribution retained in food-records.json. This review adds AFCD F003496 for pitted dried dates (small brown dates; 100% analysed portion, 0% unanalysed; available carbohydrate 67.2 g/100 g). Its analysed composite comprised four dried-date samples purchased in Adelaide in 1990, so it is a better edible-state match than Fineli #28937 but remains subject to source-population, cultivar, and sample-age limitations."
 }

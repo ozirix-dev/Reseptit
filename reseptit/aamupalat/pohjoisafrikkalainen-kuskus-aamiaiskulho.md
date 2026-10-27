@@ -10,14 +10,14 @@ main_ingredient:
   - "taateli"
   - "manteli"
 cooking_method:
-  - "paistaminen"
+  - "hauduttaminen"
 ingredients:
   - amount: 100
     unit: g
     item: kuskus
   - amount: 10
     unit: g
-    item: kuivattua taatelia
+    item: kivettömiä kuivattuja taateleita
   - amount: 20
     unit: g
     item: manteli
@@ -60,7 +60,6 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Kypsennä kuskus pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
-2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
-3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Mittaa kuskus kulhoon, kaada päälle 100 ml kiehuvaa vettä ja peitä viideksi minuutiksi. Hienonna taateli, rouhi manteli ja tarjoa jogurtin kanssa.
+1. Mittaa kuskus kulhoon. Kiehauta 100 ml vettä, kaada se kuskusin päälle ja peitä kulho viideksi minuutiksi.
+2. Irrota kuskusjyvät haarukalla. Hienonna kivettömät taatelit ja rouhi mantelit.
+3. Jaa kuskus kahteen kulhoon. Lisää jogurtti, taatelit ja manteli ja tarjoa.
