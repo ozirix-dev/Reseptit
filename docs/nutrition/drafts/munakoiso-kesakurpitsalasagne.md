@@ -1,6 +1,6 @@
-# Munakoiso-kesäkurpitsalasagne: luonnoksen laskennan tarkistus
+# Munakoiso-kesäkurpitsalasagne: laskentaskenaarion tarkistus
 
-Tarkistettu 27.10.2026. [Reseptiluonnos](../../../reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md),
+Tarkistettu 27.10.2026. [Resepti](../../../reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md),
 neljä yhtä suurta annosta. Tämä on toimituksellinen tarkistusmuistio,
 ei `calculations/`-hakemiston evidenssitiedosto eikä uusi laskentamalli.
 
@@ -159,7 +159,7 @@ myöskään ole lähteistetty yläraja. Pastankin analogia on vielä arvioitava.
 
 ## Koko reseptin ravintoarvojen kattavuus
 
-| Ravintoarvo | Päätös tässä luonnoksessa | Puuttuva näyttö |
+| Ravintoarvo | Päätös tässä reseptissä | Puuttuva näyttö |
 | --- | --- | --- |
 | Imeytyvät hiilihydraatit | Metadata puuttuu; lähdenäyttö riittämätön | Noin 55 g/annos on vain yllä olevan skenaarion tulos. Nykyiset kastike- ja juustotuotteet, mausteet ja valmistuksen retentio eivät ole kattavasti varmennettuja. |
 | Kokonaishiilihydraatit | Metadata puuttuu | Lisäksi kaikkien ainesten kuitu- ja polyolitiedot nykyisen mallin edellyttämällä tavalla; puuttuvaa ei aseteta nollaksi. |
@@ -211,9 +211,10 @@ evidenssikäytännön mukaisesti.
   juustojen valmistelun paahtamisen aikana. Aktiivinen aika noin 35–40 min,
   kokonaisaikavara noin 100–130 min. Ei koekeitetty.
 
-Ennen julkaisua tarvitaan omistajan sisältöhyväksyntä ja käytännön
-valmistuksen tarkistus. Hyväksymättömät ravintoarvot ja GK saavat edelleen
-puuttua; tämä muistio ei anna lupaa esittää niitä hyväksyttyinä.
+Omistaja antoi 27.10.2026 julkaisuluvan ja toimitti reseptille
+havainnekuvan. Resepti julkaistaan ilman hyväksyttyjä ravintoarvoja tai GK:ta.
+Käytännön valmistus on edelleen koekeittämättä; kuva ei ole koekeittotodiste.
+Tämä muistio ei anna lupaa esittää havainnollistavia lukuja hyväksyttyinä.
 
 ## Erillisen tarkistuskierroksen havainnot
 
@@ -232,5 +233,6 @@ Tarkistuksen lähtöversio: `7b339c2cdc5c135b40f680b6cfe450f7ebeea72f`.
   lähteessä, joten tasalämpö nimettiin sovellukseksi ja lämpötilan lasku
   siirrettiin tapahtumaan kokoamisen aikana.
 
-Resepti ja PR säilyvät luonnoksina. Tarkistus ei ole koekeittotesti
-eikä toisen henkilön hyväksyntä.
+Tämän tarkistuskierroksen lopussa resepti ja PR säilyivät luonnoksina.
+Tarkistus ei ollut koekeittotesti eikä toisen henkilön hyväksyntä.
+Myöhempi omistajan julkaisupyyntö on kirjattu yllä.

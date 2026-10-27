@@ -1,10 +1,10 @@
 ---
-title: "Munakoiso-kesäkurpitsalasagne – luonnos 4 henkilölle"
+title: "Munakoiso-kesäkurpitsalasagne"
 recipe_id: munakoiso-kesakurpitsalasagne
 url_slug: munakoiso-kesakurpitsalasagne
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 110
 main_ingredient: [munakoiso, kesäkurpitsa, pasta, juusto]
@@ -12,6 +12,11 @@ cooking_method: [uuni]
 tags: [lasagne, uuniruoka]
 translation_languages: []
 translation_status: {}
+image:
+  src: munakoiso-kesakurpitsalasagne.webp
+  alt: "Munakoiso-kesäkurpitsalasagnea lautasella, pinnalla basilikaa ja raastettua juustoa."
+  width: 1448
+  height: 1086
 ingredients:
   - {amount: 400, unit: g, item: munakoiso, note: "raaka syötävä osa"}
   - {amount: 400, unit: g, item: kesäkurpitsa, note: "raaka syötävä osa"}
@@ -32,12 +37,12 @@ ingredients:
 
 # Munakoiso-kesäkurpitsalasagne
 
-**Reseptiluonnos · 4 henkilölle · noin 1 tunti 50 minuuttia**
+**4 henkilölle · noin 1 tunti 50 minuuttia**
 
 ## Kuvaus
 
 Hans Välimäen videon pohjalta tehty Codexin kotikeittiösovellus. Ainesmäärät,
-uunipaahto ja alla oleva aikataulu ovat tämän luonnoksen arvioita, eivät
+uunipaahto ja alla oleva aikataulu ovat tämän reseptin arvioita, eivät
 tekijän täsmällinen alkuperäisresepti. Reseptiä ei ole koekeitetty.
 
 ## Ainekset
@@ -107,7 +112,7 @@ Tässä käytetään mozzarellaa; videolla mainitaan myös burrata.
 5. **Kypsennä ja tarkista pasta.** Paista 180 °C:ssa tasalämmöllä
    keskitasolla noin 45 minuuttia. Aika ja lämpö perustuvat
    [Knorr GN -levyjen valmistajan ohjeeseen](https://www.unileverfoodsolutions.fi/tuotteet/knorr-lasagnelevyt-gn-mitoitus-5-kg-34-FI-354670.html);
-   valmistaja ei erittele uunitilaa, joten tasalämpö on tämän luonnoksen
+   valmistaja ei erittele uunitilaa, joten tasalämpö on tämän reseptin
    kotikeittiövalinta. Toisen tuotteen kanssa noudata pakkauksen ohjetta, myös mahdollista
    esikypsennystä. Peitä vuoka väljästi foliolla ensimmäisiksi 25–30
    minuutiksi ja poista folio loppuajaksi. Kokeile ohuella veitsellä
@@ -121,7 +126,10 @@ Tässä käytetään mozzarellaa; videolla mainitaan myös burrata.
 
 ## Muistiinpanot
 
-### Aika ja luonnoksen rajat
+Käyttäjän toimittama havainnekuva esittää ruokalajia; se ei ole tämän
+reseptin koekeittokuva.
+
+### Aika ja valmistuksen rajat
 
 Perusaikataulu on 15 min valmistelua ja uunin kuumennusta + 25 min paahtoa
 (kastike ja juustot samalla) + 10 min kokoamista + 45 min paistoa + 15 min
@@ -154,5 +162,5 @@ Edellä kuvatut kotikeittiöratkaisut ovat Codexin sovellusta.
 
 Reseptillä ei ole hyväksyttyä GK-arvoa eikä kattavasti todennettuja
 ravintoarvoja. Aiempi lasku ja sen puutteet on erotettu
-[luonnoksen laskentamuistioon](https://github.com/ozirix-dev/Reseptit/blob/codex/kasvislasagne-luonnos/docs/nutrition/drafts/munakoiso-kesakurpitsalasagne.md).
+[laskentamuistioon](https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/drafts/munakoiso-kesakurpitsalasagne.md).
 Muistion havainnollistavaa skenaariota ei syötetä julkaistuun GK-järjestelmään.
