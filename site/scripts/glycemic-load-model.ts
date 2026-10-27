@@ -120,11 +120,6 @@ export function classifyGlycemicLoad(value: number): GlycemicLoadClass {
 
 function categoryMeanMatchesFood(foodKey: string, foodName: string, ingredientName: string): boolean {
   const text = `${foodName} ${ingredientName}`.normalize("NFC").toLocaleLowerCase("fi-FI");
-  const ingredient = ingredientName.normalize("NFC").toLocaleLowerCase("fi-FI");
-  if (foodKey === "chocolate") {
-    return /tumma\S*\s+sukla|dark\s+chocolate/.test(ingredient)
-      && !/maitosukla|milk\s+chocolate|valkosukla|white\s+chocolate/.test(ingredient);
-  }
   const patterns: Record<string, RegExp> = {
     dairy: /maito|milk|cream|kerma|jogurtti|yogurt|juusto|cheese|rahka|quark|paneer|feta|ricotta|voi|butter|dairy/,
     "plain-yogurt-category-mean": /jogurtti|yogurt/,
@@ -154,9 +149,7 @@ function hasClearFoodFamilyMismatch(foodKey: string, foodName: string, ingredien
 
   const milkChocolate = /maitosukla|milk\s+chocolate|suklaa|chocolate/.test(ingredient);
   const sourceIsDairy = foodKey === "dairy" || /maito|milk|dairy|cream|kerma|yogurt|jogurtti/.test(source);
-  if (milkChocolate && sourceIsDairy) return true;
-  const targetIsMilkChocolate = /maitosukla|milk\s+chocolate/.test(ingredient);
-  return foodKey === "chocolate" && targetIsMilkChocolate;
+  return milkChocolate && sourceIsDairy;
 }
 
 /**
