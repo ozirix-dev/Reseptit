@@ -943,6 +943,223 @@ test("batch 2B4 raw mango GI source is food-specific, conservative and reusable"
   assert.equal(glycemicLoadEvidenceHash(riceBowl, foods, gis), bindings.calculationEvidence[riceBowl.recipeId]);
 });
 
+test("batch 2B6D date GI evidence is scoped and opens only source-supported recipes", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [inputText, foodText, giText, bindingText, aliasText] = await Promise.all([
+    readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-bindings.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-aliases.json"), "utf8"),
+  ]);
+  const inputs = JSON.parse(inputText) as { recipes: GlycemicLoadRecipeInput[] };
+  const foods = JSON.parse(foodText) as FoodRecord[];
+  const catalog = JSON.parse(giText) as { records: GlycemicIndexRecord[] };
+  const bindings = JSON.parse(bindingText) as { recipes: Record<string, string>; calculationInputs: Record<string, string>; calculationEvidence: Record<string, string> };
+  const aliases = (JSON.parse(aliasText) as { aliases: Record<string, { canonical: string; evidence: string }> }).aliases;
+  const dateGi = catalog.records.find((record) => record.id === "dried-date-tamer-mean-gi-55-2-algeffari-2016");
+  assert.ok(dateGi);
+  assert.equal(dateGi.gi, 55.2);
+  assert.equal(dateGi.foodKey, "dried-date-tamer");
+  assert.equal(dateGi.preparationKey, "tamer-stage-as-sold");
+  assert.equal(dateGi.qualityTier, "SUPPLEMENTARY");
+  assert.equal(dateGi.referenceScale, "GLUCOSE_100");
+  assert.equal(dateGi.matchKind, "ANALOG");
+  assert.equal(dateGi.confidence, "LOW");
+  assert.equal(dateGi.source.url, "https://doi.org/10.5144/0256-4947.2016.397");
+  assert.equal(dateGi.source.participants, 19);
+  assert.match(dateGi.source.table, /mean GI 55\.2 \(SEM 7\.7\), range 42\.8–74\.6/);
+
+  const semolinaGi = catalog.records.find((record) => record.id === "semolina-steamed-gelatinized-mani-1992-gi-55");
+  assert.ok(semolinaGi);
+  assert.equal(semolinaGi.gi, 55);
+  assert.equal(semolinaGi.foodKey, "semolina");
+  assert.equal(semolinaGi.preparationKey, "steam-gelatinized-semolina-with-groundnut-oil");
+  assert.equal(semolinaGi.qualityTier, "SUPPLEMENTARY");
+  assert.equal(semolinaGi.matchKind, "ANALOG");
+  assert.equal(semolinaGi.confidence, "LOW");
+  assert.equal(semolinaGi.source.participants, 6);
+  assert.match(semolinaGi.source.table, /steamed and gelatinized with 5 g groundnut oil/);
+  assert.match(semolinaGi.source.qualityEvidence, /does not establish equivalence with this recipe/);
+
+  const orangeGi = catalog.records.find((record) => record.id === "orange-navel-2021-gi-45");
+  assert.ok(orangeGi);
+  assert.equal(orangeGi.gi, 45);
+  assert.equal(orangeGi.foodKey, "orange");
+  assert.equal(orangeGi.preparationKey, "raw-orange");
+  assert.equal(orangeGi.qualityTier, "STRONG");
+  assert.equal(orangeGi.matchKind, "ANALOG");
+  assert.equal(orangeGi.confidence, "LOW");
+  assert.equal(orangeGi.source.participants, 10);
+  assert.match(orangeGi.source.table, /navel oranges, Australia, GI 45 ± 5/);
+
+  const cases = [
+    { id: "kiinalainen-hirssipuuro-taateleilla", expected: 21.19 },
+    { id: "pohjoisafrikkalainen-kuskus-aamiaiskulho", expected: 34.36 },
+  ];
+  for (const item of cases) {
+    const input = inputs.recipes.find((recipe) => recipe.recipeId === item.id)!;
+    const date = input.ingredients.find((ingredient) => /taatel/i.test(ingredient.name));
+    assert.ok(date, `${item.id} has a separately served dried-date ingredient`);
+    assert.equal(date.grams, 10);
+    assert.equal(date.giRecordId, dateGi.id);
+    assert.equal(date.foodKey, dateGi.foodKey);
+    assert.equal(date.preparationKey, dateGi.preparationKey);
+    const result = calculateGlycemicLoad(input, foods, catalog.records);
+    assert.equal(result.status, "CALCULATED", item.id);
+    assert.equal(result.glycemicLoadPerServing, item.expected, item.id);
+    assert.equal(result.confidence, "LOW", item.id);
+    assert.deepEqual(result.blockers, []);
+    const markdown = await readFile(path.join(root, "reseptit", "aamupalat", `${item.id}.md`), "utf8");
+    assert.equal(recipeBindingHash(markdown, aliases), bindings.recipes[item.id], `${item.id} recipe fingerprint`);
+    assert.equal(glycemicLoadInputHash(input), bindings.calculationInputs[item.id], `${item.id} input fingerprint`);
+    assert.equal(glycemicLoadEvidenceHash(input, foods, catalog.records), bindings.calculationEvidence[item.id], `${item.id} evidence fingerprint`);
+  }
+
+  const orangePorridge = inputs.recipes.find((recipe) => recipe.recipeId === "pohjoisafrikkalainen-taatelipuuro-appelsiinilla")!;
+  const semolina = orangePorridge.ingredients.find((ingredient) => ingredient.name === "mannasuurimo")!;
+  const orange = orangePorridge.ingredients.find((ingredient) => ingredient.name === "appelsiini")!;
+  assert.deepEqual([semolina.giRecordId, semolina.foodKey, semolina.preparationKey], [null, "semolina", "water-boiled-semolina-porridge"]);
+  assert.equal(semolina.giMatchEvidence?.startsWith("NO MATCH:"), true);
+  assert.deepEqual([orange.giRecordId, orange.foodKey, orange.preparationKey], [orangeGi.id, "orange", "raw-orange"]);
+  assert.notEqual(semolina.giRecordId, "bakery-products-category-mean-gi-58");
+  assert.notEqual(orange.giRecordId, "fruit-category-mean-gi-51");
+
+  const semolinaPorridgeResult = calculateGlycemicLoad(orangePorridge, foods, catalog.records);
+  assert.equal(semolinaPorridgeResult.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(semolinaPorridgeResult.glycemicLoadPerServing, null);
+  const semolinaResult = semolinaPorridgeResult.ingredients.find((ingredient) => ingredient.name === "mannasuurimo");
+  assert.ok(semolinaResult);
+  assert.equal(semolinaResult.availableCarbohydratePerServingG, 31.8, "the unmatched semolina is well above the 1 g omission limit");
+  assert.equal(semolinaResult.giRecordId, null);
+  assert.ok(semolinaResult.giCandidates.some((candidate) => candidate.id === semolinaGi.id && !candidate.preparationMatches));
+  assert.ok(semolinaPorridgeResult.blockers.some((blocker) => blocker.includes("NO MATCH: Mani et al. 1992")));
+
+  const cookedDateRecipe = inputs.recipes.find((recipe) => recipe.recipeId === "lahi-ita-taatelipuuro-tahinilla")!;
+  const cookedDate = cookedDateRecipe.ingredients.find((ingredient) => /taatel/i.test(ingredient.name))!;
+  assert.equal(cookedDate.giRecordId, null, "dates cooked into the porridge stay unmatched");
+  const cookedResult = calculateGlycemicLoad(cookedDateRecipe, foods, catalog.records);
+  assert.equal(cookedResult.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(cookedResult.glycemicLoadPerServing, null);
+  assert.ok(cookedResult.blockers.some((blocker) => blocker.includes("cooks the dried dates")));
+  const cookedDateMarkdown = await readFile(path.join(root, "reseptit", "aamupalat", "lahi-ita-taatelipuuro-tahinilla.md"), "utf8");
+  assert.match(cookedDateMarkdown, /1\. Mittaa kaurahiutale[\s\S]*?\n2\. Hauduta[\s\S]*?\n3\. Keitä puuro taatelien/);
+  assert.doesNotMatch(cookedDateMarkdown, /\n4\. Keitä puuro taatelien/);
+});
+
+test("batch 2B6D pitted-date source and new GK values pass an independent numerical check", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [inputText, foodText, giText] = await Promise.all([
+    readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8"),
+  ]);
+  const inputs = JSON.parse(inputText) as { recipes: GlycemicLoadRecipeInput[] };
+  const foods = JSON.parse(foodText) as FoodRecord[];
+  const gis = (JSON.parse(giText) as { records: GlycemicIndexRecord[] }).records;
+  const dateFood = foods.find((row) => row.id === "afcd-F003496-release-3");
+  const oldFineliDate = foods.find((row) => row.id === "fineli-28937-release-20");
+  const dateGi = gis.find((row) => row.id === "dried-date-tamer-mean-gi-55-2-algeffari-2016");
+  assert.ok(dateFood);
+  assert.ok(oldFineliDate);
+  assert.ok(dateGi);
+  assert.equal(dateFood.per100g.carbohydrate, 67.2);
+  assert.equal(dateFood.per100g.fibre, 9.7);
+  assert.equal(dateFood.basis, "per100g-as-sold");
+  assert.match(dateFood.name, /pitted/i);
+  assert.equal(oldFineliDate.per100g.carbohydrate, 38.158);
+  assert.equal(oldFineliDate.basis, "unresolved");
+  assert.match(oldFineliDate.state, /87% edible portion listed/);
+  assert.match(oldFineliDate.state, /denominator unresolved/);
+  assert.equal(inputs.recipes.some((recipe) => recipe.ingredients.some((ingredient) => ingredient.fineliRecordId === oldFineliDate.id)), false);
+  assert.equal(dateGi.gi, 55.2);
+
+  const cases = [
+    {
+      id: "kiinalainen-hirssipuuro-taateleilla",
+      expected: 21.19,
+      previous: 20.39,
+      terms: [
+        { ingredient: "hirssi", foodId: "fineli-160-release-20", carbohydratePer100g: 68.8, grams: 100, giId: "millet-groats-rozanska-2020-gi-56-2", gi: 56.2 },
+        { ingredient: "kivettömiä kuivattuja taateleita", foodId: "afcd-F003496-release-3", carbohydratePer100g: 67.2, grams: 10, giId: dateGi.id, gi: 55.2 },
+      ],
+    },
+    {
+      id: "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+      expected: 34.36,
+      previous: 33.56,
+      terms: [
+        { ingredient: "kuskus", foodId: "fineli-29208-release-20", carbohydratePer100g: 63.6, grams: 100, giId: "couscous-groats-rozanska-2020-gi-99", gi: 99 },
+        { ingredient: "kivettömiä kuivattuja taateleita", foodId: "afcd-F003496-release-3", carbohydratePer100g: 67.2, grams: 10, giId: dateGi.id, gi: 55.2 },
+        { ingredient: "manteli", foodId: "fineli-379-release-20", carbohydratePer100g: 6.6, grams: 20, giId: "nuts-category-mean-gi-22", gi: 22 },
+        { ingredient: "jogurtti", foodId: "fineli-619-release-20", carbohydratePer100g: 5, grams: 100, giId: "dairy-category-mean-gi-35", gi: 35 },
+      ],
+    },
+  ];
+  const dateCarbohydratePerServing = 67.2 * 10 / 100 / 2;
+  const newDateContribution = dateCarbohydratePerServing * 55.2 / 100;
+  assert.equal(dateCarbohydratePerServing, 3.36);
+  assert.ok(Math.abs(newDateContribution - 1.85472) < 1e-12);
+
+  for (const item of cases) {
+    const recipe = inputs.recipes.find((row) => row.recipeId === item.id);
+    assert.ok(recipe);
+    const date = recipe.ingredients.find((row) => /taatel/i.test(row.name));
+    assert.ok(date);
+    assert.equal(date.name, "kivettömiä kuivattuja taateleita");
+    assert.equal(date.grams, 10);
+    assert.equal(date.fineliRecordId, "afcd-F003496-release-3");
+    assert.match(date.massEvidence!, /10 g pitted dried dates/);
+
+    let independentSum = 0;
+    for (const term of item.terms) {
+      const ingredient: GlycemicLoadRecipeInput["ingredients"][number] | undefined = recipe.ingredients.find(
+        (row: GlycemicLoadRecipeInput["ingredients"][number]) => row.name === term.ingredient,
+      );
+      const foodSource = foods.find((row) => row.id === term.foodId);
+      const giSource = gis.find((row) => row.id === term.giId);
+      assert.ok(ingredient);
+      assert.ok(foodSource);
+      assert.ok(giSource);
+      assert.equal(ingredient.grams, term.grams);
+      assert.equal(ingredient.fineliRecordId, term.foodId);
+      assert.equal(ingredient.giRecordId, term.giId);
+      assert.equal(foodSource.per100g.carbohydrate, term.carbohydratePer100g);
+      assert.equal(giSource.gi, term.gi);
+      independentSum += (term.carbohydratePer100g * term.grams / 100 / recipe.servings) * term.gi / 100;
+    }
+    const result = calculateGlycemicLoad(recipe, foods, gis);
+    assert.equal(Math.round(independentSum * 100) / 100, item.expected);
+    assert.equal(result.unroundedGlycemicLoadPerServing, independentSum);
+    assert.equal(result.glycemicLoadPerServing, item.expected);
+    const dateResult = result.ingredients.find((row) => /taatel/i.test(row.name));
+    assert.equal(dateResult?.availableCarbohydratePerServingG, 3.36);
+    assert.ok(Math.abs((dateResult?.giContribution ?? 0) - 1.85472) < 1e-12);
+  }
+
+  const unsupportedSemolinaRecipe = inputs.recipes.find((row) => row.recipeId === "pohjoisafrikkalainen-taatelipuuro-appelsiinilla");
+  assert.ok(unsupportedSemolinaRecipe);
+  const unsupportedSemolina = unsupportedSemolinaRecipe.ingredients.find((row) => row.name === "mannasuurimo");
+  assert.ok(unsupportedSemolina);
+  assert.equal(unsupportedSemolina.giRecordId, null);
+  const unsupportedSemolinaResult = calculateGlycemicLoad(unsupportedSemolinaRecipe, foods, gis);
+  assert.equal(unsupportedSemolinaResult.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(unsupportedSemolinaResult.glycemicLoadPerServing, null);
+  assert.ok(unsupportedSemolinaResult.blockers.some((blocker) => blocker.includes("NO MATCH: Mani et al. 1992")));
+
+  const cookedDateRecipe = inputs.recipes.find((row) => row.recipeId === "lahi-ita-taatelipuuro-tahinilla");
+  assert.ok(cookedDateRecipe);
+  const cookedDate = cookedDateRecipe.ingredients.find((row) => /taatel/i.test(row.name));
+  assert.ok(cookedDate);
+  assert.equal(cookedDate.fineliRecordId, "afcd-F003496-release-3");
+  assert.equal(cookedDate.grams, 10);
+  assert.equal(cookedDate.giRecordId, null);
+  const cookedResult = calculateGlycemicLoad(cookedDateRecipe, foods, gis);
+  assert.equal(cookedResult.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(cookedResult.glycemicLoadPerServing, null);
+  assert.equal(cookedResult.ingredients.find((row) => /taatel/i.test(row.name))?.availableCarbohydratePerServingG, 3.36);
+});
+
 test("batch 2B5 small-portion corrections calculate the cottage-cheese bowl and Chettinad chicken", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const [inputText, foodText, giText, bindingText, aliasText, pilotText] = await Promise.all([

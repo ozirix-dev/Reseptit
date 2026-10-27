@@ -77,6 +77,13 @@ test("prepared-product nutrient basis is accepted only with a matching prepared 
   input.ingredients[0].state = "dry konjac noodles";
   assert.equal(calculate(input).status, "INSUFFICIENT SOURCE DATA");
 });
+test("unresolved nutrient weight basis cannot be normalized or calculated", () => {
+  const record = { ...structuredClone(food), basis: "unresolved" as const };
+  assert.throws(() => normalizeCarbohydrate(record), /weight basis is unresolved/);
+  const input = fixture(); input.ingredients[0].record = record;
+  assert.equal(calculate(input).status, "INSUFFICIENT SOURCE DATA");
+  assert.ok(calculate(input).rows[0].issues.includes("Unresolved food/state/edible basis match"));
+});
 test("servings and provenance must be valid", () => {
   for (const servings of [0, -1, 1.5, NaN, Infinity]) assert.throws(() => calculate({ ...fixture(), servings }));
   assert.throws(() => calculate({ ...fixture(), sourceHash: "" }));

@@ -10954,8 +10954,8 @@
     "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/28937",
     "retrievedAt": "2026-10-25",
     "licence": "THL, Fineli Release 20, CC BY 4.0",
-    "state": "dried date as sold",
-    "basis": "per100g-edible",
+    "state": "Dried date weighed with pit; 87% edible portion listed; nutrient denominator unresolved in published record.",
+    "basis": "unresolved",
     "carbohydrateDefinition": "EU_AVAILABLE",
     "componentValues": {
       "CHO": 38.158,
@@ -12697,6 +12697,25 @@
     "portionMassG": {
       "DL": 100,
       "RKL": 15
+    }
+  },
+  {
+    "id": "afcd-F003496-release-3",
+    "name": "Date, dried (pitted)",
+    "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F003496",
+    "retrievedAt": "2026-10-27",
+    "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+    "state": "dried pitted date as sold",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "AFCD Release 3 reports available carbohydrate with and without sugar alcohols; both are 67.2 g/100 g and sorbitol is 0 g.",
+    "per100g": {
+      "carbohydrate": 67.2,
+      "fibre": 9.7,
+      "polyols": 0,
+      "protein": 2,
+      "fat": 0.2
     }
   }
 ]

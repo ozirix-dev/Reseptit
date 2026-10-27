@@ -17,7 +17,7 @@ ingredients:
     item: "kaurahiutale"
   - amount: 10
     unit: "g"
-    item: "kuivattua taatelia"
+    item: "kivettömiä kuivattuja taateleita"
   - amount: 1
     unit: "tl"
     item: "kardemumma"
@@ -63,5 +63,4 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 1. Mittaa kaurahiutale kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
 2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
-4. Keitä puuro taatelien ja kardemumman kanssa, viimeistele lusikallisella tahinia.
+3. Keitä puuro taatelien ja kardemumman kanssa, viimeistele lusikallisella tahinia.

@@ -55,6 +55,7 @@ const batch2B5BaselinePath = option("--capture-batch-2b5-baseline", "");
 const batch2B6ABaselinePath = option("--capture-batch-2b6a-baseline", "");
 const batch2B6BBaselinePath = option("--capture-batch-2b6b-baseline", "");
 const batch2B6CBaselinePath = option("--capture-batch-2b6c-baseline", "");
+const batch2B6DBaselinePath = option("--capture-batch-2b6d-baseline", "");
 const readJson = async <T>(relativePath: string): Promise<T> => JSON.parse(await readFile(path.join(root, relativePath), "utf8")) as T;
 
 const [pilot, nutrition, inputs, giCatalog, historical, reviewStart] = await Promise.all([
@@ -398,6 +399,37 @@ if (batch2B6CBaselinePath) {
   process.exit(0);
 }
 
+if (batch2B6DBaselinePath) {
+  const expectedSourceCommit = "f2ba9e849e677f9e223103022e309a09b9992f62";
+  if (sourceCommit !== expectedSourceCommit) throw new Error(`Batch 2B6D baseline can only be captured at corrected 2B6C HEAD ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
+  const baseline = buildBaselineSnapshot({
+    sourceCommit,
+    results: pilot.results,
+    sourceHashes: pilot.sourceHashes,
+    calculationInputHashes,
+    calculationEvidenceHashes: pilot.calculationEvidenceHashes,
+    giRecordCount: giCatalog.records.length,
+    giTierCounts,
+    nutritionAuditCounts: nutrition.counts,
+    nutritionStatuses,
+  });
+  if (baseline.recipeCount !== 325 || baseline.calculated !== 136 || baseline.incomplete !== 189 || baseline.giRecordCount !== 42) {
+    throw new Error("Batch 2B6D baseline does not match the corrected 325 / 136 / 189 / 42 starting point.");
+  }
+  if (baseline.giTierCounts.STRONG !== 5 || baseline.giTierCounts.SUPPLEMENTARY !== 37) {
+    throw new Error("Batch 2B6D baseline GI quality tiers do not match the verified 5 STRONG / 37 SUPPLEMENTARY starting point.");
+  }
+  if (baseline.nutritionAuditCounts["ESTIMATE WITH EVIDENCE"] !== 180 || baseline.nutritionAuditCounts["INSUFFICIENT SOURCE DATA"] !== 86 || baseline.nutritionAuditCounts.MISSING !== 59 || baseline.nutritionAuditCounts["CONFLICT REQUIRES REVIEW"] !== 0) {
+    throw new Error("Batch 2B6D baseline strict nutrition audit does not match the verified 180 / 86 / 59 / 0 starting point.");
+  }
+  if (baseline.recipes.length !== 325 || new Set(baseline.recipes.map((recipe) => recipe.recipeId)).size !== 325) {
+    throw new Error("Batch 2B6D baseline must contain every recipe exactly once.");
+  }
+  await writeImmutableBaselineFile(batch2B6DBaselinePath, `${JSON.stringify(baseline, null, 2)}\n`);
+  console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, giRecordCount: baseline.giRecordCount, output: batch2B6DBaselinePath }, null, 2));
+  process.exit(0);
+}
+
 const baseline = JSON.parse(await readFile(baselineInputPath, "utf8")) as CoverageBaseline;
 if (baselineInputPath === baselinePath && baseline.sourceCommit !== "5e9cdeb830f468ecf099e9c286f9344afe3b6b71") throw new Error(`Approved baseline source is unexpected: ${baseline.sourceCommit}`);
 const inventory = buildCurrentCoverageInventory({
@@ -425,13 +457,22 @@ const inventory = buildCurrentCoverageInventory({
 });
 
 const summary = inventory.currentSummary;
+const newlyAddedRecipeIds = inventory.recipes.filter((row) => row.newlyAdded).map((row) => row.recipeId);
 const structural = inventory.structuralBindingAnalysis;
 const reportLines = [
   "# GK-esteinventaario",
   "",
   `Lähdecommit: \`${sourceCommit}\`. Vertailun lähtösnapshot: \`${baseline.sourceCommit}\` (${baseline.calculated} laskettua / ${baseline.incomplete} keskeneräistä; ${baseline.giRecordCount} GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.`,
+  ...(baseline.sourceCommit === "5e9cdeb830f468ecf099e9c286f9344afe3b6b71"
+    ? ["", "Erän 2A lähtösnapshot on historiallinen vertailupohja, ei tämän ajon nykytila. Ajantasainen laskentatila ja nykyiset GK-luvut esitetään alla."]
+    : []),
   "",
   `Nykyinen ajo kattaa ${summary.recipeCount} reseptiä: ${summary.calculated} laskettua, ${summary.incomplete} keskeneräistä. GI-katalogissa on ${summary.giRecordCount} tietuetta (${Object.entries(summary.giTierCounts).map(([tier, count]) => `${count} ${tier}`).join(", ")}).`,
+  ...(newlyAddedRecipeIds.length === 0
+    ? []
+    : ["", newlyAddedRecipeIds.length === 1
+      ? "Uusi resepti historiallisen " + baseline.recipeCount + " reseptin vertailusnapshotin jälkeen: " + newlyAddedRecipeIds[0] + ". Se kuuluu nykyinventaarioon, mutta ei historialliseen baselineen."
+      : "Uudet reseptit historiallisen " + baseline.recipeCount + " reseptin vertailusnapshotin jälkeen: " + newlyAddedRecipeIds.join(", ") + ". Ne kuuluvat nykyinventaarioon, mutta eivät historialliseen baselineen."]),
   "",
   "## Muutos hyväksytystä vertailusta",
   "",
