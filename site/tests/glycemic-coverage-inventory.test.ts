@@ -327,3 +327,36 @@ test("batch 2B6C current inventory publishes only two evidence-ready additions",
     assert.equal(row.glycemicLoadPerServing, null, id);
   }
 });
+
+test("batch 2B6D adds three sourced date estimates and preserves the previous 136 GK values", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const baseline = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b6d-baseline.json"), "utf8")) as {
+    sourceCommit: string; recipeCount: number; calculated: number; incomplete: number; giRecordCount: number;
+    recipes: Array<{ recipeId: string; status: string; glycemicLoadPerServing: number | null }>;
+  };
+  const current = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b6d-current.json"), "utf8")) as {
+    currentSummary: { recipeCount: number; calculated: number; incomplete: number; giRecordCount: number; newlyCalculated: number; newlyBlocked: number; newInputMismatches: number; newEvidenceMismatches: number };
+    recipes: Array<{ recipeId: string; status: string; glycemicLoadPerServing: number | null; previousApprovedGlycemicLoadPerServing: number | null; newlyCalculated: boolean; blockingCategories: string[] }>;
+  };
+  assert.deepEqual([baseline.sourceCommit, baseline.recipeCount, baseline.calculated, baseline.incomplete, baseline.giRecordCount], ["f2ba9e849e677f9e223103022e309a09b9992f62", 325, 136, 189, 42]);
+  assert.deepEqual([current.currentSummary.recipeCount, current.currentSummary.calculated, current.currentSummary.incomplete, current.currentSummary.giRecordCount, current.currentSummary.newlyCalculated, current.currentSummary.newlyBlocked], [325, 139, 186, 43, 3, 0]);
+  assert.equal(current.currentSummary.newInputMismatches, 0);
+  assert.equal(current.currentSummary.newEvidenceMismatches, 0);
+  assert.equal(current.recipes.length, 325);
+  assert.equal(current.recipes.filter((row) => row.status !== "CALCULATED" && row.blockingCategories.length === 0).length, 0, "all incomplete recipes have a classified blocker");
+  const previousResults = new Map(baseline.recipes.filter((row) => row.status === "CALCULATED").map((row) => [row.recipeId, row.glycemicLoadPerServing]));
+  assert.equal(previousResults.size, 136);
+  for (const [id, value] of previousResults) {
+    const row = current.recipes.find((item) => item.recipeId === id);
+    assert.ok(row, `${id} remains in the current inventory`);
+    assert.equal(row.status, "CALCULATED", `${id} stays calculated`);
+    assert.equal(row.glycemicLoadPerServing, value, `${id} retains the previous GK`);
+    assert.equal(row.previousApprovedGlycemicLoadPerServing, value, `${id} matches the immutable baseline`);
+  }
+  const newlyCalculated = current.recipes.filter((row) => row.newlyCalculated).sort((a, b) => a.recipeId.localeCompare(b.recipeId));
+  assert.deepEqual(newlyCalculated.map((row) => [row.recipeId, row.glycemicLoadPerServing]), [
+    ["kiinalainen-hirssipuuro-taateleilla", 20.39],
+    ["pohjoisafrikkalainen-kuskus-aamiaiskulho", 33.56],
+    ["pohjoisafrikkalainen-taatelipuuro-appelsiinilla", 22.45],
+  ]);
+});

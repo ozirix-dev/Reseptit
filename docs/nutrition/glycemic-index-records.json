@@ -71,6 +71,14 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
       "year": 2001,
       "use": "Published supplementary human GI values for Vietnamese foods; includes dried rice noodles boiled (GI 61), n=12, glucose reference; each food was tested once."
+    },
+    {
+      "id": "algeffari-2016-tamer-date-varieties",
+      "title": "Glycemic indices, glycemic load and glycemic response for seventeen varieties of dates grown in Saudi Arabia",
+      "authors": "AlGeffari MA, Almogbel ES, Alhomaidan HT, El-Mergawi R, Barrimah IA",
+      "url": "https://doi.org/10.5144/0256-4947.2016.397",
+      "year": 2016,
+      "use": "Published human GI measurements of 17 Tamer-stage date varieties with glucose reference; the reported mean is a low-confidence estimate for dried dates as sold, not for date paste, syrup, or cooked date mixtures."
     }
   ],
   "records": [
@@ -1043,6 +1051,31 @@
         "qualityEvidence": "Published pooled value across four raw-pear human GI studies. The source table reports mean 38 ± 2; varieties, participant groups and individual study methods differ, and the pooled value is not ISO 26642-confirmed."
       },
       "note": "Food-specific raw-pear mean, used as a low-confidence analogue for grated pear in bulgogi marinade. The pear is added raw, then heated briefly with the marinated beef; neither the recipe nor the mixed meal was tested."
+    },
+    {
+      "id": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
+      "gi": 55.2,
+      "foodKey": "dried-date-tamer",
+      "preparationKey": "tamer-stage-as-sold",
+      "food": "Tamer-stage dried dates, mean across 17 varieties",
+      "preparation": "Tamer-stage dates (fully ripe, firm and dried), consumed as sold with water; not a date paste, syrup, or cooked mixture",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "source": {
+        "title": "Glycemic indices, glycemic load and glycemic response for seventeen varieties of dates grown in Saudi Arabia",
+        "authors": "AlGeffari MA, Almogbel ES, Alhomaidan HT, El-Mergawi R, Barrimah IA",
+        "url": "https://doi.org/10.5144/0256-4947.2016.397",
+        "table": "Table 2; mean GI 55.2 (SEM 7.7), range 42.8–74.6 across 17 Tamer-stage varieties; glucose reference",
+        "year": 2016,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 19,
+        "referenceFood": "50 g glucose in water (GI = 100)",
+        "qualityEvidence": "Published human GI study in 19 healthy adults. Each Tamer-stage date variety was tested once in 9–10 participants using a 50 g available-carbohydrate portion and glucose reference. The reported across-variety mean was 55.2 (SEM 7.7), with a wide 42.8–74.6 range; variety differences were not statistically significant, but this is not ISO 26642-confirmed and does not establish values for other ripeness stages or cooked date mixtures."
+      },
+      "note": "Low-confidence food-family mean for unsweetened Tamer-stage dried dates as sold. Use only when the recipe names dried dates added without further cooking; do not apply to date paste, syrup, fresh/semi-ripe dates, or dates cooked into a dish. This ingredient estimate is not a measurement of the recipe or meal."
     }
   ]
 }

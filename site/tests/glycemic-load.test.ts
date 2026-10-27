@@ -942,6 +942,66 @@ test("batch 2B4 raw mango GI source is food-specific, conservative and reusable"
   assert.equal(glycemicLoadEvidenceHash(riceBowl, foods, gis), bindings.calculationEvidence[riceBowl.recipeId]);
 });
 
+test("batch 2B6D date GI evidence is scoped and opens only source-supported recipes", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [inputText, foodText, giText, bindingText, aliasText] = await Promise.all([
+    readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-bindings.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-aliases.json"), "utf8"),
+  ]);
+  const inputs = JSON.parse(inputText) as { recipes: GlycemicLoadRecipeInput[] };
+  const foods = JSON.parse(foodText) as FoodRecord[];
+  const catalog = JSON.parse(giText) as { records: GlycemicIndexRecord[] };
+  const bindings = JSON.parse(bindingText) as { recipes: Record<string, string>; calculationInputs: Record<string, string>; calculationEvidence: Record<string, string> };
+  const aliases = (JSON.parse(aliasText) as { aliases: Record<string, { canonical: string; evidence: string }> }).aliases;
+  const dateGi = catalog.records.find((record) => record.id === "dried-date-tamer-mean-gi-55-2-algeffari-2016");
+  assert.ok(dateGi);
+  assert.equal(dateGi.gi, 55.2);
+  assert.equal(dateGi.foodKey, "dried-date-tamer");
+  assert.equal(dateGi.preparationKey, "tamer-stage-as-sold");
+  assert.equal(dateGi.qualityTier, "SUPPLEMENTARY");
+  assert.equal(dateGi.referenceScale, "GLUCOSE_100");
+  assert.equal(dateGi.matchKind, "ANALOG");
+  assert.equal(dateGi.confidence, "LOW");
+  assert.equal(dateGi.source.url, "https://doi.org/10.5144/0256-4947.2016.397");
+  assert.equal(dateGi.source.participants, 19);
+  assert.match(dateGi.source.table, /mean GI 55\.2 \(SEM 7\.7\), range 42\.8–74\.6/);
+
+  const cases = [
+    { id: "kiinalainen-hirssipuuro-taateleilla", expected: 20.39 },
+    { id: "pohjoisafrikkalainen-taatelipuuro-appelsiinilla", expected: 22.45 },
+    { id: "pohjoisafrikkalainen-kuskus-aamiaiskulho", expected: 33.56 },
+  ];
+  for (const item of cases) {
+    const input = inputs.recipes.find((recipe) => recipe.recipeId === item.id)!;
+    const date = input.ingredients.find((ingredient) => /taatel/i.test(ingredient.name));
+    assert.ok(date, `${item.id} has a separately served dried-date ingredient`);
+    assert.equal(date.grams, 10);
+    assert.equal(date.giRecordId, dateGi.id);
+    assert.equal(date.foodKey, dateGi.foodKey);
+    assert.equal(date.preparationKey, dateGi.preparationKey);
+    const result = calculateGlycemicLoad(input, foods, catalog.records);
+    assert.equal(result.status, "CALCULATED", item.id);
+    assert.equal(result.glycemicLoadPerServing, item.expected, item.id);
+    assert.equal(result.confidence, "LOW", item.id);
+    assert.deepEqual(result.blockers, []);
+    const markdown = await readFile(path.join(root, "reseptit", "aamupalat", `${item.id}.md`), "utf8");
+    assert.equal(recipeBindingHash(markdown, aliases), bindings.recipes[item.id], `${item.id} recipe fingerprint`);
+    assert.equal(glycemicLoadInputHash(input), bindings.calculationInputs[item.id], `${item.id} input fingerprint`);
+    assert.equal(glycemicLoadEvidenceHash(input, foods, catalog.records), bindings.calculationEvidence[item.id], `${item.id} evidence fingerprint`);
+  }
+
+  const cookedDateRecipe = inputs.recipes.find((recipe) => recipe.recipeId === "lahi-ita-taatelipuuro-tahinilla")!;
+  const cookedDate = cookedDateRecipe.ingredients.find((ingredient) => /taateli/i.test(ingredient.name))!;
+  assert.equal(cookedDate.giRecordId, null, "dates cooked into the porridge stay unmatched");
+  const cookedResult = calculateGlycemicLoad(cookedDateRecipe, foods, catalog.records);
+  assert.equal(cookedResult.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(cookedResult.glycemicLoadPerServing, null);
+  assert.ok(cookedResult.blockers.some((blocker) => blocker.includes("cooks the dried dates")));
+});
+
 test("batch 2B5 small-portion corrections calculate the cottage-cheese bowl and Chettinad chicken", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const [inputText, foodText, giText, bindingText, aliasText, pilotText] = await Promise.all([

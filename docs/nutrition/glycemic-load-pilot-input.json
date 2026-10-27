@@ -15394,13 +15394,11 @@
         },
         {
           "name": "taateli",
-          "grams": 8,
+          "grams": 10,
           "fineliRecordId": "fineli-28937-release-20",
-          "giRecordId": "sugar-syrups-category-mean-gi-58",
-          "massEvidence": "Recipe-listed 8 g, mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN (dried date as sold).",
-          "foodKey": "sugar-syrups-category-mean",
-          "preparationKey": "category-mean",
-          "giMatchEvidence": "Sugars and syrups category mean: sugars and syrups category mean; category/analogue estimate, low confidence."
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 10 g dried date, mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN (dried date as sold).",
+          "giMatchEvidence": "Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. The source-backed available carbohydrate exceeds 1 g/serving, so the recipe remains blocked."
         },
         {
           "name": "kardemumma",
@@ -15416,19 +15414,20 @@
           "name": "tahini",
           "grams": 15,
           "fineliRecordId": "fineli-11087-release-20",
-          "giRecordId": "nuts-category-mean-gi-22",
+          "giRecordId": null,
           "massEvidence": "Recipe-listed 15 g, mapped to TAHINI, SEESAMTAHNA, EI LISÄTTYÄ SUOLAA (unsalted sesame tahini).",
-          "foodKey": "peanut",
-          "preparationKey": "nuts-category-mean",
-          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Tahini is a sesame paste, not a nut; no exact sesame-paste GI match is recorded. Its source-matched available-carbohydrate contribution is below 1 g/serving and is handled under the existing editorial tolerance."
         },
         {
-          "name": "maitoa tai vettä",
-          "grams": null,
-          "fineliRecordId": null,
-          "giRecordId": null,
-          "excludedReason": "The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
-          "massEvidence": "Recipe-listed liquid alternative."
+          "name": "täysmaitoa",
+          "grams": 300,
+          "recipeQuantity": { "amount": 300, "unit": "ml", "massGrams": 300 },
+          "fineliRecordId": "fineli-689-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "massEvidence": "Recipe-listed 300 ml full-fat milk; mapped to Fineli full-fat milk using the documented liquid density of 1 g/ml.",
+          "giMatchEvidence": "Published dairy-products category mean used as a low-confidence estimate for plain full-fat milk; not a measurement of this product or recipe."
         },
         {
           "name": "suolaa maun mukaan",
@@ -16905,11 +16904,11 @@
           "name": "kuivattua taatelia",
           "grams": 10,
           "fineliRecordId": "fineli-28937-release-20",
-          "giRecordId": null,
-          "massEvidence": "Recipe-listed 10 g dried date; prior 8 g input was stale.",
-          "foodKey": null,
-          "preparationKey": null,
-          "giMatchEvidence": "No suitable date-specific GI record; the source-backed carbohydrate exceeds 1 g/serving, so the recipe total remains blocked."
+          "giRecordId": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
+          "massEvidence": "Recipe-listed 10 g dried date; mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN.",
+          "foodKey": "dried-date-tamer",
+          "preparationKey": "tamer-stage-as-sold",
+          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates after couscous preparation. Low-confidence ingredient estimate, not a meal measurement."
         },
         {
           "name": "manteli",
@@ -16929,7 +16928,7 @@
           "massEvidence": "Recipe-listed 100 g, mapped to JOGURTTI, MAUSTAMATON, RASVAA 2,5 %, VL (plain yogurt).",
           "foodKey": "dairy",
           "preparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Dairy-products category mean used as a low-confidence estimate for plain yogurt; not a measurement of this product or recipe."
         },
         {
           "name": "suolaa maun mukaan",
@@ -17289,41 +17288,39 @@
         },
         {
           "name": "taateli",
-          "grams": 8,
+          "grams": 10,
           "fineliRecordId": "fineli-28937-release-20",
-          "giRecordId": "sugar-syrups-category-mean-gi-58",
-          "massEvidence": "Recipe-listed 8 g, mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN (dried date as sold).",
-          "foodKey": "sugar-syrups-category-mean",
-          "preparationKey": "category-mean",
-          "giMatchEvidence": "Sugars and syrups category mean: sugars and syrups category mean; category/analogue estimate, low confidence."
+          "giRecordId": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
+          "massEvidence": "Recipe-listed 10 g dried date; mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN.",
+          "foodKey": "dried-date-tamer",
+          "preparationKey": "tamer-stage-as-sold",
+          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving. Low-confidence ingredient estimate, not a meal measurement."
         },
         {
           "name": "inkivääri",
-          "grams": null,
-          "fineliRecordId": null,
+          "grams": 2,
+          "recipeQuantity": { "amount": 2, "unit": "g", "massGrams": 2 },
+          "fineliRecordId": "afcd-F004213-release-3",
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.25,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
-          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          "massEvidence": "Recipe-listed 2 g fresh ginger, mapped to AFCD F004213 raw peeled ginger.",
+          "giMatchEvidence": "No exact published GI match for fresh ginger; its source-matched available-carbohydrate contribution is below 1 g/serving and is handled under the existing editorial tolerance."
         },
         {
           "name": "seesaminsiemen",
-          "grams": 100,
+          "grams": 8,
+          "recipeQuantity": { "amount": 8, "unit": "g", "massGrams": 8 },
           "fineliRecordId": "fineli-385-release-20",
-          "giRecordId": "nuts-category-mean-gi-22",
-          "massEvidence": "Recipe-listed 100 g, mapped to SEESAMINSIEMEN, KUORINEEN (whole unhulled sesame seeds).",
-          "foodKey": "peanut",
-          "preparationKey": "nuts-category-mean",
-          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 8 g, mapped to SEESAMINSIEMEN, KUORINEEN (whole unhulled sesame seeds).",
+          "giMatchEvidence": "Sesame is a seed rather than a nut; no exact GI match is assigned. Its source-matched available carbohydrate is below 1 g/serving and is handled under the existing editorial tolerance."
         },
         {
-          "name": "maitoa tai vettä",
-          "grams": null,
-          "fineliRecordId": null,
+          "name": "vettä",
+          "grams": 700,
+          "recipeQuantity": { "amount": 700, "unit": "ml", "massGrams": 700 },
+          "fineliRecordId": "fineli-922-release-20",
           "giRecordId": null,
-          "excludedReason": "The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
-          "massEvidence": "Recipe-listed liquid alternative."
+          "massEvidence": "Recipe-listed 700 ml water, converted at 1 g/ml and mapped to Fineli tap water (0 g available carbohydrate)."
         },
         {
           "name": "suolaa maun mukaan",
@@ -18551,23 +18548,23 @@
         },
         {
           "name": "taateli",
-          "grams": 8,
+          "grams": 10,
           "fineliRecordId": "fineli-28937-release-20",
-          "giRecordId": "sugar-syrups-category-mean-gi-58",
-          "massEvidence": "Recipe-listed 8 g, mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN (dried date as sold).",
-          "foodKey": "sugar-syrups-category-mean",
-          "preparationKey": "category-mean",
-          "giMatchEvidence": "Sugars and syrups category mean: sugars and syrups category mean; category/analogue estimate, low confidence."
+          "giRecordId": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
+          "massEvidence": "Recipe-listed 10 g dried date; mapped to TAATELI, KUIVATTU, PUNNITTU KIVINEEN.",
+          "foodKey": "dried-date-tamer",
+          "preparationKey": "tamer-stage-as-sold",
+          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds the chopped dried dates after the porridge is cooked. Low-confidence ingredient estimate, not a meal measurement."
         },
         {
           "name": "appelsiini",
-          "grams": 215,
+          "grams": 130,
           "fineliRecordId": "fineli-11045-release-20",
           "giRecordId": "fruit-category-mean-gi-51",
-          "massEvidence": "Recipe-listed 215 g, mapped to APPELSIINI, KUORITTU (peeled raw orange).",
+          "massEvidence": "Recipe-listed 130 g, mapped to APPELSIINI, KUORITTU (peeled raw orange).",
           "foodKey": "fruit-category-mean",
           "preparationKey": "category-mean",
-          "giMatchEvidence": "Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence."
+          "giMatchEvidence": "2021 fruit-category mean used as a broad, low-confidence proxy for orange; it is not an orange-specific GI measurement."
         },
         {
           "name": "kaneli",
@@ -18580,12 +18577,12 @@
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
-          "name": "maitoa tai vettä",
-          "grams": null,
-          "fineliRecordId": null,
+          "name": "vettä",
+          "grams": 300,
+          "recipeQuantity": { "amount": 300, "unit": "ml", "massGrams": 300 },
+          "fineliRecordId": "fineli-922-release-20",
           "giRecordId": null,
-          "excludedReason": "The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
-          "massEvidence": "Recipe-listed liquid alternative."
+          "massEvidence": "Recipe-listed 300 ml water, converted at 1 g/ml and mapped to Fineli tap water (0 g available carbohydrate)."
         },
         {
           "name": "suolaa maun mukaan",
