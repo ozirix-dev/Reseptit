@@ -1076,6 +1076,56 @@
         "qualityEvidence": "Published human GI study in 19 healthy adults. Each Tamer-stage date variety was tested once in 9–10 participants using a 50 g available-carbohydrate portion and glucose reference. The reported across-variety mean was 55.2 (SEM 7.7), with a wide 42.8–74.6 range; variety differences were not statistically significant, but this is not ISO 26642-confirmed and does not establish values for other ripeness stages or cooked date mixtures."
       },
       "note": "Low-confidence food-family mean for unsweetened Tamer-stage dried dates as sold. Use only when the recipe names dried dates added without further cooking; do not apply to date paste, syrup, fresh/semi-ripe dates, or dates cooked into a dish. This ingredient estimate is not a measurement of the recipe or meal."
+    },
+    {
+      "id": "semolina-steamed-gelatinized-mani-1992-gi-55",
+      "gi": 55,
+      "foodKey": "semolina",
+      "preparationKey": "water-gelatinized-semolina",
+      "food": "Wheat semolina (Triticum aestivum)",
+      "preparation": "Steam-cooked and gelatinized with water and 5 g groundnut oil; India, 1991",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "source": {
+        "title": "Glycaemic index of conventional carbohydrate meals",
+        "authors": "Mani UV, Pradhan SN, Mehta NC, Thakur DM, Iyer U, Mani I",
+        "url": "https://doi.org/10.1079/BJN19920102",
+        "table": "International Tables 2021 Supplemental Table 2 item 2762 and Mani et al. 1992 Table 3 meal R1: GI 55 ± 9; semolina steamed and gelatinized with 5 g groundnut oil; type 2 diabetes, n=6; 50 g available-carbohydrate portion; glucose reference; 0/60/120 minute timepoints.",
+        "year": 1992,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 6,
+        "referenceFood": "50 g glucose (GI = 100)",
+        "qualityEvidence": "The 2021 international tables place this result in Supplemental Table 2 because of method deviations: only six participants with type 2 diabetes, no repeated reference, and 0/60/120 minute sampling. The source tests steam-cooked semolina with added groundnut oil, not this recipe. Product identity and aqueous gelatinization are relevant, but the cooking method and oil differ; use only as a low-confidence ingredient analogue."
+      },
+      "note": "Low-confidence analogue for water-boiled wheat semolina porridge. The tested food was steamed with 5 g groundnut oil. Do not present as a direct measurement of the recipe or mixed meal."
+    },
+    {
+      "id": "orange-navel-2021-gi-45",
+      "gi": 45,
+      "foodKey": "orange",
+      "preparationKey": "raw-orange",
+      "food": "Navel orange, raw",
+      "preparation": "Raw navel orange, segments; Australia, tested 2020",
+      "qualityTier": "STRONG",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "authors": "Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Supplemental Table 1 item 1150: navel oranges, Australia, GI 45 ± 5; 10 healthy adults; 50 g available carbohydrate; glucose, 2 h; ISO-consistent standard method.",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "participants": 10,
+        "referenceFood": "Glucose, 2 h (GI = 100)",
+        "qualityEvidence": "Published food-specific navel-orange measurement listed in Supplemental Table 1 as ISO 26642:2010-consistent. Source quality is strong; the recipe uses a generic raw peeled orange with unknown cultivar, so the recipe mapping remains a low-confidence analogue."
+      },
+      "note": "Direct source for raw navel orange; use for generic raw orange only as a cultivar analogue and retain LOW confidence when cultivar is unknown. Not a measurement of a recipe or meal."
     }
   ]
 }

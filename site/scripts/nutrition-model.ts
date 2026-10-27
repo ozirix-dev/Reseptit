@@ -6,7 +6,7 @@ export type Values = Record<Nutrient, number | null>;
 export type CarbDefinition = "EU_AVAILABLE" | "EU_TOTAL_INCLUDING_POLYOLS" | "US_TOTAL_INCLUDING_FIBRE" | "UNKNOWN";
 export interface FoodRecord {
   id: string; name: string; sourceUrl: string; retrievedAt: string; licence: string;
-  state: string; basis: "per100g-edible" | "per100g-as-sold" | "per100g-prepared"; carbohydrateDefinition: CarbDefinition;
+  state: string; basis: "per100g-edible" | "per100g-as-sold" | "per100g-prepared" | "unresolved"; carbohydrateDefinition: CarbDefinition;
   componentValues?: Partial<Record<"CHO" | "FIBT" | "POLYL", number | null>>;
   componentIds?: Partial<Record<"CHO" | "FIBT" | "POLYL", number>>;
   /** True only when the polyol value is explicitly reported by this source. */
@@ -75,6 +75,7 @@ function nutrientValue(record: FoodRecord, nutrient: "carbohydrate" | "fibre" | 
   return componentValue;
 }
 export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE") {
+  if (record.basis === "unresolved") throw Error("Nutrient weight basis is unresolved");
   if (subtractFibre && record.carbohydrateDefinition !== "US_TOTAL_INCLUDING_FIBRE") throw Error("Fibre would be subtracted twice or definition is unknown");
   const carbohydrate = nutrientValue(record, "carbohydrate");
   const fibre = nutrientValue(record, "fibre");
