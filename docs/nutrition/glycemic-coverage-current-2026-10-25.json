@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T15:34:12.276Z",
-  "sourceCommit": "014c61681bee2e9b7253d14ab9c9f6603f914dad",
+  "generatedAt": "2026-10-27T16:29:59.788Z",
+  "sourceCommit": "d9a5c2fdebc9dd60fdbb6e24d6bc8ee56f4f2e6d",
   "previousApprovedBaseline": {
     "sourceCommit": "5e9cdeb830f468ecf099e9c286f9344afe3b6b71",
     "recipeCount": 325,
@@ -36,8 +36,8 @@
     "stillIncomplete": 187,
     "changedBlockerRecipes": 38,
     "newStructureMismatches": 0,
-    "newInputMismatches": 1,
-    "newEvidenceMismatches": 1
+    "newInputMismatches": 0,
+    "newEvidenceMismatches": 0
   },
   "blockerOverlapCounts": {
     "STRUCTURE": {
@@ -45,12 +45,12 @@
       "blockerMessages": 38
     },
     "INPUT": {
-      "recipes": 1,
-      "blockerMessages": 1
+      "recipes": 0,
+      "blockerMessages": 0
     },
     "EVIDENCE": {
-      "recipes": 1,
-      "blockerMessages": 1
+      "recipes": 0,
+      "blockerMessages": 0
     },
     "COMPOSITION": {
       "recipes": 65,
@@ -65,8 +65,8 @@
       "blockerMessages": 101
     },
     "GI_MISSING": {
-      "recipes": 41,
-      "blockerMessages": 44
+      "recipes": 42,
+      "blockerMessages": 45
     },
     "TOLERANCE": {
       "recipes": 6,
@@ -4775,7 +4775,7 @@
         "currentStatus": "INSUFFICIENT SOURCE DATA",
         "nutritionStatus": "ESTIMATE WITH EVIDENCE",
         "recipeVersion": "b5abf11d198c1ba7e632a8e234958fd1d4cf0452ce59da310353d5cdd8d223c3",
-        "calculationInputVersion": "c44f95ccdf18806c61064d446eb9dd4e4bc7b5e4e1372c2684b35ab2272852e7",
+        "calculationInputVersion": "35ae07dd913875fed12d0eba07dc6aa300ac0b31205a10ef779d5bccb9b0b059",
         "inputIngredientCount": 6,
         "currentRecipeStructure": {
           "sourcePath": "reseptit/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md",
@@ -4823,11 +4823,11 @@
               "name": "mannasuurimo",
               "grams": 100,
               "fineliRecordId": "fineli-112-release-20",
-              "giRecordId": "semolina-steamed-gelatinized-mani-1992-gi-55",
+              "giRecordId": null,
               "massEvidence": "Recipe-listed 100 g, mapped to MANNASUURIMO (wheat semolina).",
               "foodKey": "semolina",
-              "preparationKey": "water-gelatinized-semolina",
-              "giMatchEvidence": "Mani et al. 1992, reproduced as International Tables 2021 Supplemental Table 2 item 2762: GI 55 ± 9 for wheat semolina steamed and gelatinized with water plus 5 g groundnut oil (n=6 with type 2 diabetes, 50 g available carbohydrate). This is a supplementary low-confidence analogue for the recipe's water-boiled semolina porridge; the preparation differs and neither this recipe nor its meal was tested."
+              "preparationKey": "water-boiled-semolina-porridge",
+              "giMatchEvidence": "NO MATCH: Mani et al. 1992 / International Tables 2021 Supplemental Table 2 item 2762 reports GI 55 ± 9 for semolina steamed and gelatinized with 5 g groundnut oil. It does not establish equivalence with this recipe’s water-boiled, oil-free semolina porridge or separate the oil effect. Keep the GI source record catalogued for its tested preparation; no suitable GI value is available for this ingredient and no category-mean substitute is accepted."
             },
             {
               "name": "kivettömiä kuivattuja taateleita",
@@ -64282,8 +64282,8 @@
     {
       "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
       "recipeVersion": "b5abf11d198c1ba7e632a8e234958fd1d4cf0452ce59da310353d5cdd8d223c3",
-      "calculationInputVersion": "c44f95ccdf18806c61064d446eb9dd4e4bc7b5e4e1372c2684b35ab2272852e7",
-      "calculationEvidenceVersion": "7d3ba71ea707b2185545533eb0f7dccbe56b60e8c59a18f5a33b46883511fe39",
+      "calculationInputVersion": "35ae07dd913875fed12d0eba07dc6aa300ac0b31205a10ef779d5bccb9b0b059",
+      "calculationEvidenceVersion": "3c7f34f34b376cb9e0806283a464f78a4333ee8590fcf0ca5942401f67b7f90f",
       "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
@@ -64332,11 +64332,11 @@
             "name": "mannasuurimo",
             "grams": 100,
             "fineliRecordId": "fineli-112-release-20",
-            "giRecordId": "semolina-steamed-gelatinized-mani-1992-gi-55",
+            "giRecordId": null,
             "massEvidence": "Recipe-listed 100 g, mapped to MANNASUURIMO (wheat semolina).",
             "foodKey": "semolina",
-            "preparationKey": "water-gelatinized-semolina",
-            "giMatchEvidence": "Mani et al. 1992, reproduced as International Tables 2021 Supplemental Table 2 item 2762: GI 55 ± 9 for wheat semolina steamed and gelatinized with water plus 5 g groundnut oil (n=6 with type 2 diabetes, 50 g available carbohydrate). This is a supplementary low-confidence analogue for the recipe's water-boiled semolina porridge; the preparation differs and neither this recipe nor its meal was tested."
+            "preparationKey": "water-boiled-semolina-porridge",
+            "giMatchEvidence": "NO MATCH: Mani et al. 1992 / International Tables 2021 Supplemental Table 2 item 2762 reports GI 55 ± 9 for semolina steamed and gelatinized with 5 g groundnut oil. It does not establish equivalence with this recipe’s water-boiled, oil-free semolina porridge or separate the oil effect. Keep the GI source record catalogued for its tested preparation; no suitable GI value is available for this ingredient and no category-mean substitute is accepted."
           },
           {
             "name": "kivettömiä kuivattuja taateleita",
@@ -64402,23 +64402,30 @@
       "calculationEvidenceVersionChanged": true,
       "blockers": [
         {
-          "category": "INPUT",
-          "message": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla: GI/food mapping, portion, conversion, source evidence or calculation assumptions differ from the last GL review; the input must be reviewed again.",
-          "nextAction": "Vertaa määriä, annoksia, valmistustiloja, lähde-ID:itä ja muunnoksia reseptin nykyiseen rakenteeseen."
-        },
-        {
-          "category": "EVIDENCE",
-          "message": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla: a calculation-relevant food or GI source value/state differs from the last GL review; source mapping and calculation must be reviewed again.",
-          "nextAction": "Tarkista muuttunut lähdetietue ja sen soveltuvuus ainesosaan."
+          "category": "GI_MISSING",
+          "message": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla: mannasuurimo: NO MATCH: Mani et al. 1992 / International Tables 2021 Supplemental Table 2 item 2762 reports GI 55 ± 9 for semolina steamed and gelatinized with 5 g groundnut oil. It does not establish equivalence with this recipe’s water-boiled, oil-free semolina porridge or separate the oil effect. Keep the GI source record catalogued for its tested preparation; no suitable GI value is available for this ingredient and no category-mean substitute is accepted.",
+          "nextAction": "Etsi soveltuva julkaistu GI-lähde; älä keksi arvoa."
         }
       ],
       "blockingCategories": [
-        "INPUT",
-        "EVIDENCE"
+        "GI_MISSING"
       ],
-      "primaryBlockingCategory": "INPUT",
-      "primaryBlockingReason": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla: GI/food mapping, portion, conversion, source evidence or calculation assumptions differ from the last GL review; the input must be reviewed again.",
+      "primaryBlockingCategory": "GI_MISSING",
+      "primaryBlockingReason": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla: mannasuurimo: NO MATCH: Mani et al. 1992 / International Tables 2021 Supplemental Table 2 item 2762 reports GI 55 ± 9 for semolina steamed and gelatinized with 5 g groundnut oil. It does not establish equivalence with this recipe’s water-boiled, oil-free semolina porridge or separate the oil effect. Keep the GI source record catalogued for its tested preparation; no suitable GI value is available for this ingredient and no category-mean substitute is accepted.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "mannasuurimo",
+          "grams": 100,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-112-release-20",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 31.8,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "NO MATCH: Mani et al. 1992 / International Tables 2021 Supplemental Table 2 item 2762 reports GI 55 ± 9 for semolina steamed and gelatinized with 5 g groundnut oil. It does not establish equivalence with this recipe’s water-boiled, oil-free semolina porridge or separate the oil effect. Keep the GI source record catalogued for its tested preparation; no suitable GI value is available for this ingredient and no category-mean substitute is accepted."
+          ]
+        },
         {
           "name": "kaneli",
           "grams": null,
@@ -64447,17 +64454,15 @@
         }
       ],
       "nextActions": [
-        "Vertaa määriä, annoksia, valmistustiloja, lähde-ID:itä ja muunnoksia reseptin nykyiseen rakenteeseen.",
-        "Tarkista muuttunut lähdetietue ja sen soveltuvuus ainesosaan."
+        "Etsi soveltuva julkaistu GI-lähde; älä keksi arvoa."
       ],
-      "suggestedNextWorkstream": "STRUCTURE_BINDING_REVIEW",
+      "suggestedNextWorkstream": "GI_SOURCE_REVIEW",
       "statusChanged": false,
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
       "changedBlockers": [
-        "pohjoisafrikkalainen-taatelipuuro-appelsiinilla: GI/food mapping, portion, conversion, source evidence or calculation assumptions differ from the last GL review; the input must be reviewed again.",
-        "pohjoisafrikkalainen-taatelipuuro-appelsiinilla: a calculation-relevant food or GI source value/state differs from the last GL review; source mapping and calculation must be reviewed again."
+        "pohjoisafrikkalainen-taatelipuuro-appelsiinilla: mannasuurimo: NO MATCH: Mani et al. 1992 / International Tables 2021 Supplemental Table 2 item 2762 reports GI 55 ± 9 for semolina steamed and gelatinized with 5 g groundnut oil. It does not establish equivalence with this recipe’s water-boiled, oil-free semolina porridge or separate the oil effect. Keep the GI source record catalogued for its tested preparation; no suitable GI value is available for this ingredient and no category-mean substitute is accepted."
       ],
       "removedBlockers": [
         "pohjoisafrikkalainen-taatelipuuro-appelsiinilla: taateli: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",

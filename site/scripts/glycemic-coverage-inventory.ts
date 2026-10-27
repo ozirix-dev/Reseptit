@@ -432,6 +432,9 @@ const reportLines = [
   "# GK-esteinventaario",
   "",
   `Lähdecommit: \`${sourceCommit}\`. Vertailun lähtösnapshot: \`${baseline.sourceCommit}\` (${baseline.calculated} laskettua / ${baseline.incomplete} keskeneräistä; ${baseline.giRecordCount} GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.`,
+  ...(baseline.sourceCommit === "5e9cdeb830f468ecf099e9c286f9344afe3b6b71"
+    ? ["", "Erän 2A lähtösnapshot on historiallinen vertailupohja, ei tämän ajon nykytila. Ajantasainen laskentatila ja nykyiset GK-luvut esitetään alla."]
+    : []),
   "",
   `Nykyinen ajo kattaa ${summary.recipeCount} reseptiä: ${summary.calculated} laskettua, ${summary.incomplete} keskeneräistä. GI-katalogissa on ${summary.giRecordCount} tietuetta (${Object.entries(summary.giTierCounts).map(([tier, count]) => `${count} ${tier}`).join(", ")}).`,
   "",

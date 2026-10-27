@@ -328,7 +328,40 @@ test("batch 2B6C current inventory publishes only two evidence-ready additions",
   }
 });
 
-test("batch 2B6D adds three sourced date estimates and preserves the previous 136 GK values", async () => {
+test("current 2A and 2B6D inventories share one generated state while keeping historical baselines distinct", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [generalText, batchText] = await Promise.all([
+    readFile(path.join(root, "docs/nutrition/glycemic-coverage-current-2026-10-25.json"), "utf8"),
+    readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b6d-current.json"), "utf8"),
+  ]);
+  type CurrentInventory = {
+    sourceCommit: string;
+    previousApprovedBaseline: { sourceCommit: string };
+    currentSummary: { recipeCount: number; calculated: number; incomplete: number; giRecordCount: number; giTierCounts: Record<string, number> };
+    recipes: Array<{ recipeId: string; status: string; glycemicLoadPerServing: number | null; recipeVersion: string; calculationInputVersion: string; calculationEvidenceVersion: string }>;
+  };
+  const general = JSON.parse(generalText) as CurrentInventory;
+  const batch = JSON.parse(batchText) as CurrentInventory;
+  assert.equal(general.sourceCommit, batch.sourceCommit, "both reports derive from the same audited source revision");
+  assert.deepEqual([general.currentSummary.recipeCount, general.currentSummary.calculated, general.currentSummary.incomplete, general.currentSummary.giRecordCount], [325, 138, 187, 45]);
+  assert.deepEqual([batch.currentSummary.recipeCount, batch.currentSummary.calculated, batch.currentSummary.incomplete, batch.currentSummary.giRecordCount], [325, 138, 187, 45]);
+  assert.deepEqual(general.currentSummary.giTierCounts, batch.currentSummary.giTierCounts);
+  assert.equal(general.previousApprovedBaseline.sourceCommit, "5e9cdeb830f468ecf099e9c286f9344afe3b6b71", "the general view keeps the immutable historical 2A baseline");
+  assert.equal(batch.previousApprovedBaseline.sourceCommit, "f2ba9e849e677f9e223103022e309a09b9992f62", "the batch view keeps the immutable 2B6D baseline");
+  const currentRows = (inventory: CurrentInventory) => inventory.recipes
+    .map(({ recipeId, status, glycemicLoadPerServing, recipeVersion, calculationInputVersion, calculationEvidenceVersion }) =>
+      [recipeId, status, glycemicLoadPerServing, recipeVersion, calculationInputVersion, calculationEvidenceVersion])
+    .sort((a, b) => String(a[0]).localeCompare(String(b[0])));
+  assert.deepEqual(currentRows(general), currentRows(batch), "all current statuses, GK values, and fingerprints agree");
+  const porridge = batch.recipes.find((row) => row.recipeId === "pohjoisafrikkalainen-taatelipuuro-appelsiinilla");
+  assert.ok(porridge);
+  assert.equal(porridge.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(porridge.glycemicLoadPerServing, null);
+  const report = await readFile(path.join(root, "docs/nutrition/glycemic-coverage-current-2026-10-25.md"), "utf8");
+  assert.match(report, /erän 2A lähtösnapshot on historiallinen vertailupohja/i);
+});
+
+test("batch 2B6D rejects the unsupported semolina GI and preserves the previous 136 GK values", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const baseline = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b6d-baseline.json"), "utf8")) as {
     sourceCommit: string; recipeCount: number; calculated: number; incomplete: number; giRecordCount: number;
@@ -339,7 +372,7 @@ test("batch 2B6D adds three sourced date estimates and preserves the previous 13
     recipes: Array<{ recipeId: string; status: string; glycemicLoadPerServing: number | null; previousApprovedGlycemicLoadPerServing: number | null; newlyCalculated: boolean; blockingCategories: string[] }>;
   };
   assert.deepEqual([baseline.sourceCommit, baseline.recipeCount, baseline.calculated, baseline.incomplete, baseline.giRecordCount], ["f2ba9e849e677f9e223103022e309a09b9992f62", 325, 136, 189, 42]);
-  assert.deepEqual([current.currentSummary.recipeCount, current.currentSummary.calculated, current.currentSummary.incomplete, current.currentSummary.giRecordCount, current.currentSummary.newlyCalculated, current.currentSummary.newlyBlocked], [325, 139, 186, 45, 3, 0]);
+  assert.deepEqual([current.currentSummary.recipeCount, current.currentSummary.calculated, current.currentSummary.incomplete, current.currentSummary.giRecordCount, current.currentSummary.newlyCalculated, current.currentSummary.newlyBlocked], [325, 138, 187, 45, 2, 0]);
   assert.deepEqual([current.currentSummary.giTierCounts.STRONG, current.currentSummary.giTierCounts.SUPPLEMENTARY], [6, 39]);
   assert.equal(current.currentSummary.newStructureMismatches, 0);
   assert.equal(current.currentSummary.newInputMismatches, 0);
@@ -359,6 +392,10 @@ test("batch 2B6D adds three sourced date estimates and preserves the previous 13
   assert.deepEqual(newlyCalculated.map((row) => [row.recipeId, row.glycemicLoadPerServing]), [
     ["kiinalainen-hirssipuuro-taateleilla", 21.19],
     ["pohjoisafrikkalainen-kuskus-aamiaiskulho", 34.36],
-    ["pohjoisafrikkalainen-taatelipuuro-appelsiinilla", 21.95],
   ]);
+  const porridge = current.recipes.find((row) => row.recipeId === "pohjoisafrikkalainen-taatelipuuro-appelsiinilla");
+  assert.ok(porridge);
+  assert.equal(porridge.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(porridge.glycemicLoadPerServing, null);
+  assert.ok(porridge.blockingCategories.some((category) => category.startsWith("GI")));
 });

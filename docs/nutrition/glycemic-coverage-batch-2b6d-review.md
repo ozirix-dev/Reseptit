@@ -7,12 +7,12 @@ Erä perustuu korjattuun 2B6C-haaraan ja sen muuttumattomaan lähtösnapshotiin 
 | Mittari | Ennen 2B6D:tä | 2B6D:n jälkeen | Muutos |
 | --- | ---: | ---: | ---: |
 | Reseptit | 325 | 325 | 0 |
-| GK laskettu | 136 | 139 | +3 |
-| GK keskeneräinen | 189 | 186 | −3 |
+| GK laskettu | 136 | 138 | +2 |
+| GK keskeneräinen | 189 | 187 | −2 |
 | GI-tietueet | 42 | 45 | +3 |
-| GK-kattavuus | 41,8 % | 42,8 % | +0,9 prosenttiyks. |
+| GK-kattavuus | 41,8 % | 42,5 % | +0,6 prosenttiyks. |
 
-Laskettuja GK-arvoja ei poistunut eikä aiemmin lasketun 136 reseptin GK muuttunut. Uusi current-inventaario vertaa jokaisen arvon ja reseptin statuksen lähtösnapshotiin.
+Muuttumattoman baseline-snapshotin 136 aiemmin laskettua GK-arvoa säilyivät täsmälleen. Mannapuuron aiemmin laskettu 21,95/annos välitulos vedettiin pois, koska GI-lähteen valmistustapa ei oikeuta sidontaa. Korjattu nykyinventaario vertaa jokaisen nykyisen GK-arvon ja reseptitilan 2B6D:n lähtösnapshotiin.
 
 ## Taatelin koostumuslähde, GI-lähde ja GK-laskennat
 
@@ -20,7 +20,7 @@ Fineli #28937 kuvaa kuivattua taatelia, joka on punnittu kivineen. Sivulla näky
 
 ## Mannasuurimon ja appelsiinin GI-tarkistus
 
-Keitetyn mannapuuron aiempi GI 58 oli leivonnaisten kategoriakeskiarvo eikä osoittanut vesikeitetyn puuron valmistustapaa. Se poistettiin tästä laskennasta. Riippumaton lähdetarkistus löysi suoran mannasuurimomittauksen: Mani ym. (1992) raportoivat GI 55 ± 9 vehnämannasuurimolle, joka höyrytettiin ja hyytelöitiin 5 g maapähkinäöljyn kanssa. Vuoden 2021 kansainvälisen taulukon Supplemental Table 2 -tietue 2762 vahvistaa GI 55 ± 9, kuusi tyypin 2 diabetesta sairastavaa osallistujaa, 50 g imeytyvää hiilihydraattia, glukoosiasteikon sekä vain 0/60/120 minuutin näytteenoton ilman toistettua vertailuruokaa. Taulukko luokittelee mittauksen menetelmäpoikkeamien vuoksi täydentävään taulukkoon. Lähde koskee samaa viljalajia ja veteen kypsennyksen aikana hyytelöityvää mannasuurimoa, mutta höyrytys ja öljy eroavat reseptin vesikeitosta. Sitä käytetään siksi vain matalan luottamuksen ainesosaanalogiana: `SUPPLEMENTARY / ANALOG / LOW`, GI 55. Se ei ole reseptin tai seka-aterian mittaus. [Mani ym. 1992](https://doi.org/10.1079/BJN19920102), [PubMed 1445824](https://pubmed.ncbi.nlm.nih.gov/1445824/), [International Tables 2021, Supplemental Table 2, kohta 2762](https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela2_IG.pdf).
+Mannapuuron aiempi välitulos GI 55 -sidonnalla oli GK 21,95/annos; tämä on nyt hylätty historiallinen arvio. Mani ym. (1992) sekä International Tables 2021 Supplemental Table 2, kohta 2762, raportoivat GI 55 ± 9 vehnämannasuurimolle, joka höyrytettiin ja hyytelöitiin veden kanssa sekä valmistettiin 5 g maapähkinäöljyllä. Taulukko luokittelee tuloksen täydentäväksi menetelmäpoikkeamien vuoksi: kuusi tyypin 2 diabetesta sairastavaa osallistujaa, 50 g imeytyvää hiilihydraattia, ei toistettua vertailuruokaa ja vain 0/60/120 minuutin näytteenotto. Reseptin mannapuuro keitetään vedessä ilman öljyä. Lähde ei osoita höyrytyksen ja vesikeiton vastaavuutta eikä erottele öljyn vaikutusta, joten lähde ei täytä tähän reseptiin hyväksyttävän LOW-analogian ehtoja. Lopullinen päätös on NO MATCH: reseptin GI-sidonta poistettiin, GK on `null` ja tila `INSUFFICIENT SOURCE DATA`. GI 55 -tietue säilyy katalogissa vain lähteessä mitatulle valmistukselle avaimella `steam-gelatinized-semolina-with-groundnut-oil`; muuta ruokaryhmäkeskiarvoa ei käytetty. [Mani ym. 1992](https://doi.org/10.1079/BJN19920102), [PubMed 1445824](https://pubmed.ncbi.nlm.nih.gov/1445824/), [International Tables 2021, Supplemental Table 2, kohta 2762](https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela2_IG.pdf).
 
 Appelsiinin aiempi hedelmäkategoriakeskiarvo 51 korvattiin suoraan mitatulla raaka-appelsiinilla. International Tables 2021 Supplemental Table 1, kohta 1150, raportoi navel-appelsiinille GI 45 ± 5; mittaus tehtiin standardimenetelmällä 10 terveellä aikuisella, 50 g imeytyvää hiilihydraattia ja glukoosivertailu. Reseptin appelsiinin lajiketta ei tunneta, joten lähdetietue on `STRONG` mutta reseptisidos `ANALOG / LOW`. [International Tables 2021, Supplemental Table 1, kohta 1150](https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf).
 
@@ -31,10 +31,9 @@ Resepteihin täsmennettiin kivettömät kuivatut taatelit; makroravintolaskelmis
 | Resepti | GK / annos | Taatelien GK-osuus | Muut pääosuudet | Luottamus |
 | --- | ---: | ---: | --- | --- |
 | `kiinalainen-hirssipuuro-taateleilla` | 21,19 | 1,85 | Hirssi 19,33 | LOW |
-| `pohjoisafrikkalainen-taatelipuuro-appelsiinilla` | 21,95 | 1,85 | Mannasuurimo 17,49; appelsiini 2,60 | LOW |
 | `pohjoisafrikkalainen-kuskus-aamiaiskulho` | 34,36 | 1,85 | Kuskus 31,48; jogurtti 0,88; manteli 0,15 | LOW |
 
-Taatelit ovat kaikissa kolmessa edelleen 3,36 g imeytyvää hiilihydraattia/annos ja niiden GI-osuus on 1,85472. Mannasuurimon ja appelsiinin lähteiden vaihto laski appelsiinipuuron aiempaa välitulosta yhteensä 1,30 GK-yksikköä (−0,954 mannasuurimosta ja −0,347 appelsiinista). Yksi arvo muuttui numeerisesti; resepti pysyy HIGH-luokassa ja kolmen reseptin keskinäinen järjestys säilyy. Siksi 0 GK-arvoa muuttui tulkinnan tai reseptivertailun kannalta olennaisesti. GK on ainesosien GI-painotettu arvio, ei valmisaterian mitattu GI.
+Aiempi appelsiinipuuron 21,95 on historiallinen, hylätty arvio eikä nykyinen GK-tulos. Mannasuurimoa on 31,8 g imeytyvää hiilihydraattia annoksessa; ilman hyväksyttävää GI-lähdettä koko reseptin tila on `INSUFFICIENT SOURCE DATA` ja GK `null`. Osittaisia appelsiini- tai taateliosuuksia ei julkaista reseptin GK-arvona. Kahden uuden lasketun arvon tulokset ovat 21,19 ja 34,36, molemmat LOW. Aiemmat 136 laskettua arvoa säilyivät täsmälleen, ja laskennan tilan muutos vaikuttaa merkitykselliseen reseptivertailuun yhdellä reseptillä (appelsiinipuuro muuttuu lasketusta keskeneräiseksi). GK on ainesosien GI-painotettu arvio, ei valmisaterian mitattu GI.
 
 Leivonnaisten kategoriakeskiarvoa käytetään mannasuurimoon neljässä aiemmin lasketussa reseptissä: `intialainen-rava-uttapam`, `pohjoisafrikkalainen-baghrir`, `pohjoisafrikkalainen-msemen-hunajalla` ja `pohjoisafrikkalainen-harcha-juustolla`. Niiden reseptit ovat pannulla paistettuja tai leivonnaistyyppisiä, joten ne eivät ole vesikeitetyn puuron suora analogia; tätä vaikutusaluetta ei muutettu automaattisesti tässä erässä. Neljän hyväksytyn arvon jatkokatselmointi vaatii erillisen päätöksen. Kaksi muuta löydettyä osumaa (`pani-puri`, `intialainen-mannasuurimoupma`) olivat jo keskeneräisiä eivätkä tuottaneet GK-arvoa.
 
@@ -42,11 +41,17 @@ Leivonnaisten kategoriakeskiarvoa käytetään mannasuurimoon neljässä aiemmin
 
 Reseptiteksteistä poistettiin sopimaton yleisohje lihan/täytteiden kypsennyksestä kahdesta puurosta ja kuskus-kulhosta; kuskuksen ohje kirjoitettiin sen listattujen aineiden mukaan. Appelsiiniohje muutettiin appelsiininkuoresta kuoritun appelsiinin paloiksi. Lähi-idän puurosta poistettiin yleinen liha-/täyteohje, mutta keitetyn taatelin GI-esto säilyy. Vastaavia EN/SV/TH-reseptitiedostoja tai julkaistuja reittejä ei löytynyt; käännöksiä ei luotu.
 
+## Nykyinventaarioiden yhdenmukaisuus ja baseline-roolit
+
+Nykytilaa esittävät 2A-vertailu ja 2B6D-eräinventaario käyttävät eri muuttumattomia baselineja: yleinen näkymä vertaa 2A:n lähdecommitiin `5e9cdeb830f468ecf099e9c286f9344afe3b6b71`, ja erän näkymä 2B6D:n aloituscommitiin `f2ba9e849e677f9e223103022e309a09b9992f62`. 2A-baseline on historiallinen vertailukohta, ei nykytila. Baselinejen `newlyCalculated`- ja muutosluvut voivat siksi erota, mutta nykyisten reseptirivien, GK-arvojen ja fingerprinttien pitää täsmätä.
+
+Aiempi 138/187- ja 139/186-ristiriita johtui eri ajoista jääneistä välimuistitetuista GK-ajoista: yleinen inventaario luettiin ennen kuin `tmp/nutrition/glycemic-load-pilot.json` oli päivitetty, eräinventaario sen jälkeen. Sama raportoitu lähdecommit ei sitonut yhteen pilotin ajonaikaisia välimuistitiedostoja. Korjaus tehtiin ajamalla tuore content sync, tiukka ravintoauditointi ja GK-auditointi ja generoimalla sitten molemmat nykyraportit peräkkäin samasta pilotista. Kummankin nykytila on nyt 325 / 138 / 187 / 45 ja rakenne-/syöte-/lähdefingerprint-poikkeamat ovat 0/0/0. Regressiotesti vertaa kaikki 325 nykyistä reseptitilaa, GK-arvoa ja fingerprinttiä sekä säilyttää baselinejen lähde-SHA:t muuttumattomina.
+
 ## Kaikkien jäljellä olevien reseptien esteet
 
-Koneellinen inventaario sisältää kaikki 325 reseptiä ja jokaisen 186 keskeneräisen reseptin estoviestit, luokat, ainesosakohtaiset tietueet ja seuraavat toimet. 93 keskeneräisellä reseptillä ravintoarvotila on lähteistetty, 40 vaatii ravintoarvojen tarkistamista ja 53:lta ravintoarvotieto puuttuu.
+Koneellinen inventaario sisältää kaikki 325 reseptiä ja jokaisen 187 keskeneräisen reseptin estoviestit, luokat, ainesosakohtaiset tietueet ja seuraavat toimet. 94 keskeneräisellä reseptillä ravintoarvotila on lähteistetty, 40 vaatii ravintoarvojen tarkistamista ja 53:lta ravintoarvotieto puuttuu.
 
-Estoluokat menevät päällekkäin, koska samalla reseptillä voi olla useita esteitä. Keskeneräisistä resepteistä 38 sisältää rakennesidonnan esteen, 65 koostumusesteen, 20 massa- tai valmistustapaesteen, 81 GI-vastaavuusesteen, 41 puuttuvan GI:n ja 6 toleranssivirheen. Nämä määrät eivät summaudu 186:een. Kaikki keskeneräiset reseptit sisältävät vähintään yhden luokitellun eston.
+Estoluokat menevät päällekkäin, koska samalla reseptillä voi olla useita esteitä. Keskeneräisistä resepteistä 38 sisältää rakennesidonnan esteen, 65 koostumusesteen, 20 massa- tai valmistustapaesteen, 81 GI-vastaavuusesteen, 42 puuttuvan GI:n ja 6 toleranssivirheen. Nämä määrät eivät summaudu 187:ään. Kaikki keskeneräiset reseptit sisältävät vähintään yhden luokitellun eston.
 
 Keskeiset jäljellä olevat ongelmaryhmät priorisoituina:
 
@@ -67,27 +72,27 @@ Nämä ovat priorisointiryhmiä, eivät riippumattomia reseptimääriä. Esimerk
 
 ## Seuraavan erän disjunkti potentiaali
 
-Seuraavat ensisijaiset työlinjat jakavat kaikki 186 keskeneräistä reseptiä yhteen ryhmään kerrallaan, joten reseptejä ei lasketa kahdesti. Ravintoarvotila kertoo lähteistettyjen koostumusten tämänhetkisestä valmiudesta, ei takaa GK-laskelman valmistumista.
+Seuraavat ensisijaiset työlinjat jakavat kaikki 187 keskeneräistä reseptiä yhteen ryhmään kerrallaan, joten reseptejä ei lasketa kahdesti.
 
 | Työlinja | Reseptit | Ravintoarvot tuettu | Uudelleentarkistus | Puuttuu | Käytännön potentiaali |
 | --- | ---: | ---: | ---: | ---: | --- |
-| A. GI-puutteet (`GI_SOURCE_REVIEW`) | 75 | 33 | 36 | 6 | Yhteisten puuttuvien tai väärin vastaavien GI-lähteiden auditointi; enintään 33:lla koostumus on jo tuettu. |
+| A. GI-puutteet (`GI_SOURCE_REVIEW`) | 76 | 34 | 36 | 6 | Yhteisten puuttuvien tai väärin vastaavien GI-lähteiden auditointi; enintään 34:llä koostumus on jo tuettu. |
 | B. Ravintoarvot (`COMPOSITION_OR_CONVERSION`) | 52 | 11 | 0 | 41 | Enintään 11 voi edetä ilman uutta koostumustutkimusta; määrät ja elintarvikevastaavuudet vaativat silti tarkistuksen. |
 | C. Reseptidata (`STRUCTURE_BINDING_REVIEW` + `MANUAL_TRIAGE`) | 59 | 49 | 4 | 6 | Suurin lähteistetty ryhmä, mutta rakenteen, vaihtoehtojen, määrien ja valmistustavan manuaalinen selvitys tarvitaan ennen laskentaa. |
-| **Yhteensä** | **186** | **93** | **40** | **53** | Ensisijaisen työvaiheen luokitus; luvut eivät ole luvattuja uusia GK-arvoja. |
+| **Yhteensä** | **187** | **94** | **40** | **53** | Ensisijaisen työvaiheen luokitus; luvut eivät ole luvattuja uusia GK-arvoja. |
 
 Pieneksi seuraavaksi työn kohteeksi sopii rajattu tomaatti-GI-vastaavuuden katselmointi: 23 keskeneräistä reseptiä on ensisijaisesti `GI_SOURCE_REVIEW`-ryhmässä, joista 8:lla ravintoarvot ovat jo tuettuja, 14:llä vaativat tarkistusta ja yhdeltä puuttuvat. Ehdotus on aloittaa vain kahdeksasta tuetun koostumuksen reseptistä (`tabbouleh`, `paprikainen-vhh-gulassi`, `kana-enchilada-kukkakaalivuoka`, `ropa-vieja`, `kanapyorykat-tomaattikastike`, `paella-valenciana`, `valimerellinen-farinata-aamupalaksi`, `bouillabaisse`) ja tarkistaa samalla niiden kaikki muut GI-estot. Teoreettinen enimmäishyöty on 8 uutta GK-arviota; todennäköinen toteuma on tätä pienempi, jos muita lähde- tai valmistustapaesteitä jää. Tämä on ehdotus, ei 2B6E-työn aloitus.
 
 ## Testit ja auditointitiedostot
 
-- Taatelien lähde-/valmistustapatesti tarkistaa lähteen tiedot, fingerprintit, kolmen lasketun arvon ja sen, että keitetty taateli pysyy estettynä.
-- Kattavuustesti vertaa kaikkia lähtötilanteessa laskettuja 136 GK-arvoa muuttumattomaan snapshotiin sekä varmistaa, että kaikilla 186 keskeneräisellä reseptillä on luokiteltu este.
+- Taatelien lähde-/valmistustapatesti tarkistaa lähdetiedot, fingerprintit, kahden lasketun arvon, mannapuuron NO MATCH -eston yli 1 g/annos hiilihydraattiosuudella ja sen, että keitetty taateli pysyy estettynä.
+- Kattavuustesti vertaa kaikkia lähtötilanteessa laskettuja 136 GK-arvoa muuttumattomaan snapshotiin, varmistaa että kaikilla 187 keskeneräisellä reseptillä on luokiteltu este ja vertaa molempien nykyinventaarioiden reseptitiloja, GK-arvoja sekä fingerprinttejä.
 - Koneellinen, reseptikohtainen lähtö- ja nykyinventaario: [`glycemic-coverage-batch-2b6d-current.json`](glycemic-coverage-batch-2b6d-current.json) ja [`glycemic-coverage-batch-2b6d-current.md`](glycemic-coverage-batch-2b6d-current.md).
 - Muuttumaton lähtösnapshot: [`glycemic-coverage-batch-2b6d-baseline.json`](glycemic-coverage-batch-2b6d-baseline.json).
-- `npm run test:glycemic`: PASS, 60/60; `npm test`: PASS, 130/130.
+- `npm run test:glycemic`: PASS, 61/61; `npm test`: PASS, 131/131.
 - `npm run audit:nutrition -- --strict`: PASS, 180 / 86 / 59 / 0.
-- `npm run audit:glycemic-load`: PASS, 325 reseptiä; 139 laskettua / 186 estettyä.
-- Eräinventaario: PASS; 325 reseptiä, 139 laskettua / 186 keskeneräistä, GI 45 (6 STRONG / 39 SUPPLEMENTARY), kolme uutta arviota, 0 aiemmin lasketun arvoa muuttui, fingerprint-mismatchit 0/0/0.
+- `npm run audit:glycemic-load`: PASS, 325 reseptiä; 138 laskettua / 187 estettyä.
+- Eräinventaarioiden tuore generointi: PASS; molemmat nykytilaraportit kuvaavat samaa Reseptit-HEADia ja sisältävät 325 reseptiä, 138 laskettua / 187 keskeneräistä, GI 45 (6 STRONG / 39 SUPPLEMENTARY) sekä samat reseptikohtaiset tilat, GK-arvot ja fingerprintit. 2B6D:n muuttumattomaan baselineen verrattuna kaksi uutta arviota, 0 aiemmin lasketun arvoa muuttui, rakenne-/syöte-/lähdefingerprint-poikkeamat 0/0/0.
 - `npm run test:translations`: PASS, 27/27. Neljän taatelireseptin julkaistuja EN/SV/TH-käännösreittejä ei ole.
 - `npm run build`: PASS; tiukka ravintoarvoauditointi, GK-auditointi, TypeScript, Vite ja 690 prerenderöityä reittiä onnistuivat. Vite ilmoitti olemassa olevasta suuresta JS-chunkista.
-- GitHub Actions: [run 40526175554](https://github.com/ozirix-dev/Reseptit/actions/runs/40526175554) PASS Reseptit-HEADille `b7bbb6d3a5f190e7a74d3ce1e8ba54ec03ccdd2a` (build PASS, deploy ohitettu). [PR #120:n tarkistusnäkymä](https://github.com/ozirix-dev/Reseptit/pull/120) on lähde myöhemmän dokumenttipäivityksen viimeiselle tarkistusajolle.
+- GitHub Actions: tämän korjauscommitin lopullinen CI tarkistetaan pushin jälkeen; PR #120:n [Checks-näkymä](https://github.com/ozirix-dev/Reseptit/pull/120/checks) on uusimman HEADin CI-tilan auktoriteetti. Deployta ei käynnistetä.
