@@ -5,6 +5,7 @@ import test from "node:test";
 
 import type { FoodRecord } from "../scripts/nutrition-model";
 import { calculateGlycemicLoad, classifyGlycemicLoad, roundGlycemicLoadForDisplay, type GlycemicIndexRecord, type GlycemicLoadRecipeInput } from "../scripts/glycemic-load-model";
+import { completePublishedRecipeInputs } from "../scripts/glycemic-load-pilot-input";
 import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches } from "../scripts/glycemic-load-recipe-binding";
 import { publishedGlycemicLoadForRecipe } from "../src/features/recipes/glycemic-load-display";
 
@@ -1323,4 +1324,45 @@ test("batch 2B6A uses a food-specific pear source and only omits source-backed s
   const unknownCocoa = structuredClone(inputs.recipes.find((row) => row.recipeId === "vhh-mokkapalat")!);
   unknownCocoa.ingredients.find((row) => row.name === "kaakaojauhetta")!.fineliRecordId = null;
   assert.equal(calculateGlycemicLoad(unknownCocoa, foods, gis).status, "INSUFFICIENT SOURCE DATA", "unknown composition remains blocking");
+});
+
+
+test("a newly published 327th recipe is auto-included as unresolved and cannot yield a zero GK", () => {
+  const reviewedInputs: GlycemicLoadRecipeInput[] = Array.from({ length: 326 }, (_, index) => ({
+    recipeId: "reviewed-" + (index + 1),
+    servings: 1,
+    ingredients: [],
+  }));
+  const published = reviewedInputs.map((recipe) => ({
+    recipeId: recipe.recipeId,
+    servings: recipe.servings,
+    ingredients: [{ item: "ingredient for " + recipe.recipeId, amount: 10, unit: "g" }],
+  }));
+  published.push({
+    recipeId: "synthetic-recipe-327",
+    servings: 2,
+    ingredients: [{ item: "rice", amount: 100, unit: "g" }],
+  });
+  const completed = completePublishedRecipeInputs(reviewedInputs, published);
+  assert.equal(completed.recipes.length, 327);
+  assert.deepEqual(completed.autoIncludedRecipeIds, ["synthetic-recipe-327"]);
+  const input = completed.recipes.at(-1)!;
+  assert.equal(input.ingredients[0]?.grams, null);
+  assert.equal(input.ingredients[0]?.fineliRecordId, null);
+  assert.equal(input.ingredients[0]?.giRecordId, null);
+  assert.deepEqual(input.ingredients[0]?.recipeQuantity, { amount: 100, unit: "g", massGrams: 100 });
+  assert.match(input.ingredients[0]?.excludedReason ?? "", /not treated as zero/);
+  const result = calculateGlycemicLoad(input, [], []);
+  assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(result.glycemicLoadPerServing, null);
+  assert.ok(result.blockers.length > 0);
+});
+
+test("removing a published recipe cannot leave a stale reviewed GI/GK input unnoticed", () => {
+  const reviewed: GlycemicLoadRecipeInput[] = [{
+    recipeId: "removed-recipe",
+    servings: 1,
+    ingredients: [],
+  }];
+  assert.throws(() => completePublishedRecipeInputs(reviewed, []), /unpublished recipe IDs: removed-recipe/);
 });

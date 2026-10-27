@@ -5,7 +5,7 @@ import type { GlycemicLoadRecipeInput } from "./glycemic-load-model";
 import { glycemicLoadInputHash } from "./glycemic-load-recipe-binding";
 import { writeImmutableBaselineFile } from "./glycemic-coverage-baseline-file";
 import { parseMarkdown } from "../src/content/markdown";
-import { buildBaselineSnapshot, buildCurrentCoverageInventory, type CoverageBaseline, type CoverageResult, type CurrentCoverageInput } from "./glycemic-coverage-inventory-model";
+import { assertCoverageConsistency, buildBaselineSnapshot, buildCurrentCoverageInventory, type CoverageBaseline, type CoverageResult, type CurrentCoverageInput } from "./glycemic-coverage-inventory-model";
 
 type JsonRecord = Record<string, unknown>;
 type PilotReport = JsonRecord & {
@@ -14,6 +14,8 @@ type PilotReport = JsonRecord & {
   sourceHashes: Record<string, string>;
   calculationInputHashes: Record<string, string>;
   calculationEvidenceHashes: Record<string, string>;
+  calculationInputs: GlycemicLoadRecipeInput[];
+  autoIncludedRecipeIds: string[];
 };
 type NutritionReport = JsonRecord & {
   counts: Record<string, number>;
@@ -64,8 +66,40 @@ const [pilot, nutrition, inputs, giCatalog, historical, reviewStart] = await Pro
   readJson<HistoricalInventory>("docs/nutrition/glycemic-coverage-inventory-2026-10-25.json"),
   readJson<ReviewStartSnapshot>("docs/nutrition/glycemic-coverage-batch-2a-review-start.json"),
 ]);
+const nutritionRecipeIds = nutrition.inventory.map((row) => row.recipe_id);
+const rawInputIds = inputs.recipes.map((recipe) => recipe.recipeId);
+const calculationInputs = pilot.calculationInputs;
+const calculationInputIds = calculationInputs.map((recipe) => recipe.recipeId);
+const hasDuplicates = (ids: string[]) => new Set(ids).size !== ids.length;
+if (hasDuplicates(nutritionRecipeIds)) throw new Error("Nutrition inventory contains duplicate recipe IDs.");
+if (hasDuplicates(rawInputIds)) throw new Error("GI/GK reviewed input contains duplicate recipe IDs.");
+if (hasDuplicates(calculationInputIds)) throw new Error("Effective GI/GK inputs contain duplicate recipe IDs.");
+if (hasDuplicates(pilot.autoIncludedRecipeIds)) throw new Error("Auto-included GI/GK recipe IDs contain duplicates.");
+const nutritionIds = new Set(nutritionRecipeIds);
+const rawInputSet = new Set(rawInputIds);
+const effectiveInputSet = new Set(calculationInputIds);
+const staleInputIds = rawInputIds.filter((id) => !nutritionIds.has(id));
+if (staleInputIds.length) throw new Error("GI/GK input contains recipes outside the current nutrition inventory: " + staleInputIds.join(", ") + ".");
+const expectedAutoIncluded = nutritionRecipeIds.filter((id) => !rawInputSet.has(id)).sort();
+const actualAutoIncluded = [...pilot.autoIncludedRecipeIds].sort();
+if (JSON.stringify(expectedAutoIncluded) !== JSON.stringify(actualAutoIncluded)) {
+  throw new Error("Auto-included GK rows disagree with published recipes. Missing: "
+    + expectedAutoIncluded.filter((id) => !actualAutoIncluded.includes(id)).join(", ")
+    + "; unexpected: " + actualAutoIncluded.filter((id) => !expectedAutoIncluded.includes(id)).join(", ") + ".");
+}
+const missingEffectiveInputs = nutritionRecipeIds.filter((id) => !effectiveInputSet.has(id));
+const unexpectedEffectiveInputs = calculationInputIds.filter((id) => !nutritionIds.has(id));
+if (missingEffectiveInputs.length || unexpectedEffectiveInputs.length) {
+  throw new Error("Coverage input sets disagree. Missing effective GK rows: " + missingEffectiveInputs.join(", ")
+    + "; unexpected: " + unexpectedEffectiveInputs.join(", ") + ".");
+}
+assertCoverageConsistency(pilot.results, nutritionRecipeIds);
+if (pilot.summary.recipes !== pilot.results.length
+    || pilot.summary.calculated + pilot.summary.insufficientSourceData !== pilot.summary.recipes) {
+  throw new Error("GI/GK pilot summary does not match its result rows.");
+}
 const sourceCommit = execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim();
-const calculationInputHashes = Object.fromEntries(inputs.recipes.map((recipe) => [recipe.recipeId, glycemicLoadInputHash(recipe)]));
+const calculationInputHashes = Object.fromEntries(calculationInputs.map((recipe) => [recipe.recipeId, glycemicLoadInputHash(recipe)]));
 const nutritionStatuses = Object.fromEntries(nutrition.inventory.map((row) => [row.recipe_id, row.status]));
 const currentRecipeStructures = Object.fromEntries(await Promise.all(nutrition.inventory.map(async (row) => {
   const source = await readFile(path.join(root, row.source_path), "utf8");
@@ -78,7 +112,7 @@ const currentRecipeStructures = Object.fromEntries(await Promise.all(nutrition.i
     cookingMethod: parsed.data.cooking_method ?? [],
   }] as const;
 }))) as CurrentCoverageInput["currentRecipeStructures"];
-const currentCalculationInputs = Object.fromEntries(inputs.recipes.map((recipe) => {
+const currentCalculationInputs = Object.fromEntries(calculationInputs.map((recipe) => {
   const sourceMaizeRecipe = new Set(["meksikolainen-quesadilla-sienilla", "indonesialainen-bakwan-maissifritter"]).has(recipe.recipeId)
     ? currentRecipeStructures[recipe.recipeId]?.ingredients.filter((ingredient) => /maissinjyv/i.test(String(ingredient.item ?? ""))) ?? []
     : [];
@@ -111,11 +145,6 @@ const currentCalculationInputs = Object.fromEntries(inputs.recipes.map((recipe) 
 const historicalStaleRecipeIds = historical.recipes.filter((row) => row.structureStale).map((row) => row.recipeId);
 const giTierCounts = Object.fromEntries([...new Set(giCatalog.records.map((record) => record.qualityTier))].map((tier) => [tier, giCatalog.records.filter((record) => record.qualityTier === tier).length]));
 
-if (pilot.summary.recipes !== inputs.recipes.length || nutrition.inventory.length !== inputs.recipes.length) {
-  throw new Error(`Coverage inputs disagree: GL=${pilot.summary.recipes}, nutrition=${nutrition.inventory.length}, source recipes=${inputs.recipes.length}.`);
-}
-if (new Set(inputs.recipes.map((recipe) => recipe.recipeId)).size !== inputs.recipes.length) throw new Error("Source input contains duplicate recipe IDs.");
-
 if (args.includes("--capture-approved-baseline")) {
   const expectedSourceCommit = "5e9cdeb830f468ecf099e9c286f9344afe3b6b71";
   if (sourceCommit !== expectedSourceCommit) throw new Error(`Approved baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
@@ -130,7 +159,7 @@ if (args.includes("--capture-approved-baseline")) {
     nutritionAuditCounts: nutrition.counts,
     nutritionStatuses,
   });
-  if (baseline.recipeCount !== inputs.recipes.length) throw new Error("Baseline capture omitted one or more source recipes.");
+  if (baseline.recipeCount !== pilot.results.length) throw new Error("Baseline capture omitted one or more source recipes.");
   await writeFile(baselinePath, `${JSON.stringify(baseline, null, 2)}\n`, "utf8");
   console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, output: baselinePath }, null, 2));
   process.exit(0);
@@ -418,6 +447,7 @@ const inventory = buildCurrentCoverageInventory({
   historicalStaleRecipeIds,
   structuralReviewStartSourceCommit: reviewStart.sourceCommit,
   structuralReviewStartRows: reviewStart.structuralBindingAnalysis.rows,
+  expectedCurrentRecipeIds: nutritionRecipeIds,
   reviewedStructuralRecipeIds: [
     "karibia-johnny-cake", "pohjoisafrikkalainen-msemen-hunajalla", "japanilainen-tamago-kake-gohan",
     "malesialainen-nasi-lemak-aamiaisella", "thai-kookosriisi-mangolla", "pohjoisafrikkalainen-harissa-shakshuka",

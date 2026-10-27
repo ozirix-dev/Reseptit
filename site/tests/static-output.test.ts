@@ -85,13 +85,46 @@ test("recipe index is prerendered and links only published languages", async () 
   assert.match(preloads[1][0], /media="\(min-width: 1100px\)"/);
 });
 
+test("vegetable lasagne publishes its supplied image and notes without unsupported nutrition or GK", async () => {
+  const recipe = siteContent.recipes.find((recipe) => recipe.recipeId === "munakoiso-kesakurpitsalasagne" && recipe.locale === "fi");
+  assert.ok(recipe);
+  assert.equal(recipe.title, "Munakoiso-kesäkurpitsalasagne");
+  assert.equal(recipe.timeTotalMin, 110);
+  assert.deepEqual(recipe.nutrition, { carbsNetG: null, carbsTotalG: null, proteinG: null, fatG: null });
+  const lasagneResults = glycemicLoadPilotResults.filter((result) => result.recipeId === recipe.recipeId);
+  assert.equal(lasagneResults.length, 1);
+  assert.equal(lasagneResults[0]?.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(lasagneResults[0]?.glycemicLoadPerServing, null);
+  assert.ok(recipe.image);
+  assert.equal(recipe.image.src, "https://ozirix-dev.github.io/Reseptit/kuvat/munakoiso-kesakurpitsalasagne.webp");
+  assert.equal(recipe.image.width, 1448);
+  assert.equal(recipe.image.height, 1086);
+  const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+  for (const note of ["havainnekuva", "ei ole koekeitetty", "Allergeenit", "Hans Välimäki", "kaupalliseksi yhteistyöksi", "ei ole hyväksyttyä GK-arvoa"]) {
+    assert.ok(html.includes(note), `lasagne: ${note} is visible`);
+  }
+  assert.ok(!html.includes(recipeUi.fi.glycemicLoad), "an unsupported GK result is not displayed");
+  assert.ok(!html.includes("Reseptiluonnos"));
+});
+
 test("GK values link to centralized recipe details on every published translation", async () => {
-  const sourceRecipeCount = siteContent.recipes.filter((recipe) => recipe.locale === "fi").length;
+  const sourceRecipeIds = new Set(siteContent.recipes.filter((recipe) => recipe.locale === "fi").map((recipe) => recipe.recipeId));
   const audit = JSON.parse(await readFile(path.resolve(import.meta.dirname, "../../tmp/nutrition/glycemic-load-pilot.json"), "utf8")) as {
-    results: Array<{ recipeId: string; status: "CALCULATED" | "INSUFFICIENT SOURCE DATA" }>;
+    results: Array<{ recipeId: string; status: "CALCULATED" | "INSUFFICIENT SOURCE DATA"; glycemicLoadPerServing: number | null; ingredients: Array<{ availableCarbohydratePerServingG: number | null; gi: number | null; fineliRecordId: string | null; giRecordId: string | null }> }>;
   };
   const publicAuditResults = audit.results.filter((result) => result.recipeId !== "maksalaatikko-kukkakaalilla");
-  assert.equal(glycemicLoadPilotReviewedRecipeCount, sourceRecipeCount);
+  const reviewedRecipeIds = new Set(audit.results.map((result) => result.recipeId));
+  assert.equal(reviewedRecipeIds.size, audit.results.length, "reviewed recipes stay unique");
+  assert.equal(glycemicLoadPilotReviewedRecipeCount, reviewedRecipeIds.size);
+  assert.ok([...reviewedRecipeIds].every((id) => sourceRecipeIds.has(id)), "every reviewed source is published");
+  assert.deepEqual([...sourceRecipeIds].filter((id) => !reviewedRecipeIds.has(id)), [], "every published source recipe has one GK row");
+  assert.deepEqual([...reviewedRecipeIds].filter((id) => !sourceRecipeIds.has(id)), [], "GK rows cannot outlive their published source");
+  const lasagneAuditRows = audit.results.filter((result) => result.recipeId === "munakoiso-kesakurpitsalasagne");
+  assert.equal(lasagneAuditRows.length, 1);
+  assert.equal(lasagneAuditRows[0]?.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(lasagneAuditRows[0]?.glycemicLoadPerServing, null);
+  assert.equal(lasagneAuditRows[0]?.ingredients.length, 15);
+  assert.ok(lasagneAuditRows[0]?.ingredients.every((ingredient) => ingredient.availableCarbohydratePerServingG === null && ingredient.gi === null && ingredient.fineliRecordId === null && ingredient.giRecordId === null));
   assert.equal(glycemicLoadPilotResults.length, publicAuditResults.length);
   assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, publicAuditResults.filter((result) => result.status === "CALCULATED").length);
   assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, publicAuditResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length);

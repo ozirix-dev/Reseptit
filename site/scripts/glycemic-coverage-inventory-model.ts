@@ -64,6 +64,7 @@ export interface CurrentCoverageInput {
   structuralReviewStartSourceCommit: string;
   structuralReviewStartRows: StructuralReviewStartRow[];
   reviewedStructuralRecipeIds: string[];
+  expectedCurrentRecipeIds?: string[];
 }
 
 const blockerRules: Array<{ category: string; label: string; pattern: RegExp; action: string }> = [
@@ -89,6 +90,7 @@ export function assertCoverageConsistency(results: CoverageResult[], expectedRec
   const resultIds = results.map((result) => result.recipeId);
   if (new Set(resultIds).size !== resultIds.length) throw new Error("Current GK results contain duplicate recipe IDs.");
   if (resultIds.length !== expectedRecipeIds.length) throw new Error(`Expected ${expectedRecipeIds.length} current GK results; received ${resultIds.length}.`);
+  if (new Set(expectedRecipeIds).size !== expectedRecipeIds.length) throw new Error("Expected current source recipe IDs contain duplicates.");
   const expected = new Set(expectedRecipeIds);
   const unexpected = resultIds.filter((recipeId) => !expected.has(recipeId));
   const missing = expectedRecipeIds.filter((recipeId) => !resultIds.includes(recipeId));
@@ -124,7 +126,7 @@ export function buildBaselineSnapshot(input: Omit<CurrentCoverageInput, "baselin
 }
 
 export function buildCurrentCoverageInventory(input: CurrentCoverageInput) {
-  assertCoverageConsistency(input.results, input.baseline.recipes.map((row) => row.recipeId));
+  assertCoverageConsistency(input.results, input.expectedCurrentRecipeIds ?? input.baseline.recipes.map((row) => row.recipeId));
   const reviewStartIds = input.structuralReviewStartRows.map((row) => row.recipeId);
   if (new Set(reviewStartIds).size !== reviewStartIds.length) throw new Error("Pre-correction structural review snapshot contains duplicate recipe IDs.");
   const missingReviewRows = input.historicalStaleRecipeIds.filter((recipeId) => !reviewStartIds.includes(recipeId));
@@ -135,16 +137,17 @@ export function buildCurrentCoverageInventory(input: CurrentCoverageInput) {
   const unreviewedSelection = input.reviewedStructuralRecipeIds.filter((recipeId) => !input.historicalStaleRecipeIds.includes(recipeId));
   if (unreviewedSelection.length) throw new Error(`Batch 2A review selection is outside the historical stale-binding set: ${unreviewedSelection.join(", ")}.`);
   const previousById = new Map(input.baseline.recipes.map((row) => [row.recipeId, row]));
+  const currentRecipeIdSet = new Set(input.results.map((result) => result.recipeId));
+  const removedSinceBaselineRecipeIds = input.baseline.recipes.map((row) => row.recipeId).filter((recipeId) => !currentRecipeIdSet.has(recipeId));
   const rows = input.results.map((result) => {
     const previous = previousById.get(result.recipeId);
-    if (!previous) throw new Error(`No approved baseline row exists for ${result.recipeId}.`);
     const blockers = result.blockers.map((message) => ({ category: classifyBlocker(message), message, nextAction: actionFor(message) }));
     const categorySet = [...new Set(blockers.map((blocker) => blocker.category))];
     const structureVersion = input.sourceHashes[result.recipeId] ?? "";
     const inputVersion = input.calculationInputHashes[result.recipeId] ?? "";
     const evidenceVersion = input.calculationEvidenceHashes[result.recipeId] ?? "";
-    const changedBlockers = blockers.filter((blocker) => !previous.blockers.includes(blocker.message)).map((blocker) => blocker.message);
-    const removedBlockers = previous.blockers.filter((message) => !result.blockers.includes(message));
+    const changedBlockers = previous ? blockers.filter((blocker) => !previous.blockers.includes(blocker.message)).map((blocker) => blocker.message) : [];
+    const removedBlockers = previous ? previous.blockers.filter((message) => !result.blockers.includes(message)) : [];
     const incompleteIngredients = result.ingredients.filter((ingredient) => ingredient.issues.length || !ingredient.fineliRecordId || (!ingredient.giRecordId && (ingredient.availableCarbohydratePerServingG ?? 0) >= 1));
     return {
       recipeId: result.recipeId,
@@ -158,11 +161,12 @@ export function buildCurrentCoverageInventory(input: CurrentCoverageInput) {
       glycemicLoadPerServing: result.glycemicLoadPerServing,
       omittedAvailableCarbohydratePerServingG: result.omittedAvailableCarbohydratePerServingG,
       omittedAvailableCarbohydrateUpperBoundPerServingG: result.omittedAvailableCarbohydrateUpperBoundPerServingG ?? 0,
-      previousApprovedStatus: previous.status,
-      previousApprovedGlycemicLoadPerServing: previous.glycemicLoadPerServing,
-      recipeVersionChanged: structureVersion !== previous.recipeVersion,
-      calculationInputVersionChanged: inputVersion !== previous.calculationInputVersion,
-      calculationEvidenceVersionChanged: evidenceVersion !== previous.calculationEvidenceVersion,
+      previousApprovedStatus: previous?.status ?? null,
+      previousApprovedGlycemicLoadPerServing: previous?.glycemicLoadPerServing ?? null,
+      newlyAdded: previous === undefined,
+      recipeVersionChanged: previous ? structureVersion !== previous.recipeVersion : false,
+      calculationInputVersionChanged: previous ? inputVersion !== previous.calculationInputVersion : false,
+      calculationEvidenceVersionChanged: previous ? evidenceVersion !== previous.calculationEvidenceVersion : false,
       blockers,
       blockingCategories: categorySet,
       primaryBlockingCategory: categorySet[0] ?? null,
@@ -186,10 +190,10 @@ export function buildCurrentCoverageInventory(input: CurrentCoverageInput) {
           : categorySet.includes("GI_MATCH") || categorySet.includes("GI_MISSING")
             ? "GI_SOURCE_REVIEW"
             : "MANUAL_TRIAGE",
-      statusChanged: result.status !== previous.status,
-      newlyCalculated: previous.status !== "CALCULATED" && result.status === "CALCULATED",
-      newlyBlocked: previous.status === "CALCULATED" && result.status !== "CALCULATED",
-      stillIncomplete: previous.status !== "CALCULATED" && result.status !== "CALCULATED",
+      statusChanged: previous ? result.status !== previous.status : false,
+      newlyCalculated: previous ? previous.status !== "CALCULATED" && result.status === "CALCULATED" : false,
+      newlyBlocked: previous ? previous.status === "CALCULATED" && result.status !== "CALCULATED" : false,
+      stillIncomplete: previous ? previous.status !== "CALCULATED" && result.status !== "CALCULATED" : false,
       changedBlockers,
       removedBlockers,
     };
@@ -239,8 +243,10 @@ export function buildCurrentCoverageInventory(input: CurrentCoverageInput) {
       giTierCounts: input.baseline.giTierCounts,
       nutritionAuditCounts: input.baseline.nutritionAuditCounts,
     },
+    removedSinceBaselineRecipeIds,
     currentSummary: {
       recipeCount: rows.length,
+      newlyAdded: counted((row) => row.newlyAdded),
       calculated: counted((row) => row.status === "CALCULATED"),
       incomplete: counted((row) => row.status !== "CALCULATED"),
       giRecordCount: input.giRecordCount,
