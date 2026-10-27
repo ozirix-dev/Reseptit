@@ -307,3 +307,23 @@ test("batch 2B6C baseline locks the published 325-recipe main and all regression
   assert.ok(baseline.recipes.every((row) => row.recipeVersion && row.calculationInputVersion && row.calculationEvidenceVersion));
   assert.equal(baseline.recipes.filter((row) => row.status === "CALCULATED").length, 134);
 });
+
+test("batch 2B6C current inventory publishes only two evidence-ready additions", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const inventory = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b6c-current.json"), "utf8")) as {
+    currentSummary: { recipeCount: number; calculated: number; incomplete: number; newlyCalculated: number; newlyBlocked: number; changedBlockerRecipes: number; newInputMismatches: number; newEvidenceMismatches: number };
+    recipes: Array<{ recipeId: string; status: string; newlyCalculated: boolean; glycemicLoadPerServing: number | null }>;
+  };
+  const summary = inventory.currentSummary;
+  assert.deepEqual([summary.recipeCount, summary.calculated, summary.incomplete, summary.newlyCalculated, summary.newlyBlocked, summary.changedBlockerRecipes], [325, 136, 189, 2, 0, 2]);
+  assert.equal(summary.newInputMismatches, 0);
+  assert.equal(summary.newEvidenceMismatches, 0);
+  const newlyCalculated = inventory.recipes.filter((row) => row.newlyCalculated).map((row) => row.recipeId).sort();
+  assert.deepEqual(newlyCalculated, ["meksikolainen-aamiais-tacot-mustapavuilla", "vhh-kaalikaarryleet"]);
+  for (const id of ["meheva-suklaakakku", "meksikolainen-paputostada-aamupalaksi"]) {
+    const row = inventory.recipes.find((item) => item.recipeId === id);
+    assert.ok(row, `${id} present in inventory`);
+    assert.equal(row.status, "INSUFFICIENT SOURCE DATA", id);
+    assert.equal(row.glycemicLoadPerServing, null, id);
+  }
+});
