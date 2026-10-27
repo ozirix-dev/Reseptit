@@ -49,13 +49,13 @@ Luvut 1 ja 2 erottavat esiintymät ja ainoan jäljellä olevan olennaisen esteen
 | Tamarinditahna | 4 | 1 | Ei. Hedelmien laaja keskiarvo ei ole tamarinditahnan mittaus. | Estetty. |
 | Kuivatut taatelit | 3 GI-estettä | 0 | Julkaistua taatelitutkimusta löytyy, mutta lajike, kypsyys ja reseptin lisäesteet estävät tämän aineiston yhteisen suoran sidonnan. | Ei lisätty: yksikään tässä joukossa ei avaudu pelkällä GI-korjauksella. |
 | Peruna eri valmistustavoissa | 3 | 2 | Keitetyn perunan lähde ei vastaa hitaasti öljyssä kypsennettyä tortilla-perunaa tai muita eri valmistuksia. | Estetty; ei yleistetty. |
-| Tumma suklaa | 1 GI-este (+ kakun kaakao erikseen) | 1 olennaisen GI-esteen kannalta pienosuuden käsittelyn jälkeen | Olemassa oleva vuoden 2021 taulukon neljän ISO-testatun tumman suklaan keskiarvo (GI 29), sovellettuna alhaisen luottamuksen luokkakeskiarvona. | Hyväksytty yhdelle kakulle; maitosuklaa-match rajattiin testillä. |
-| Maissitortilla | 2 | 2 olennaisen GI-esteen kannalta avokadon pienosuuskäsittelyn jälkeen | Olemassa oleva julkaistu kaupallisen maissitortillan ihmisillä mitattu lähde; pieni n ja leipäasteikon muunnos pitävät luottamuksen matalana. | Hyväksytty kahdelle reseptille; täsmällinen ruoka-/valmistusavain lisättiin. |
+| Tumma suklaa | 1 GI-este (+ kakun kaakao erikseen) | 1 olennaisen GI-esteen kannalta pienosuuden käsittelyn jälkeen | Olemassa oleva vuoden 2021 GI 29 -keskiarvo koskee suklaata sellaisenaan, ei sulatettua, taikinaan sekoitettua ja paistettua suklaata. | **BLOCKED:** 2B6B:n hylkäyssyy pysyy; kakulle ei lasketa GK:ta ilman valmistukseen sopivaa uutta lähdettä. |
+| Maissitortilla | 2 | 2 olennaisen GI-esteen kannalta avokadon pienosuuskäsittelyn jälkeen | Olemassa oleva kaupallisen maissitortillan ihmisillä mitattu lähde; pieni n ja leipäasteikon muunnos pitävät luottamuksen matalana. | **PASS** lämpimän tortillan aamiaistaco; **BLOCKED** rapea tostada, koska tutkimus ei todenna valmistusmuodon vastaavuutta. |
 | Kuohukerma | 3 GI-estoa | 1 tapauksessa pieni osuus voidaan jättää pois; muut eivät avaudu | Kermaa koskevaa tarkkaa GI-lähdettä ei käytetty. Hyväksytyn reseptin osuus on alle 1 g/annos ja kumulatiivinen poisto alle 2 g/annos. | Hyväksytty yhdelle reseptille nykyisellä toimituksellisella toleranssilla; muissa raja tai lisäeste estää. |
 
 Keskeiset lähteet:
 
-- Henry et al., *International tables of glycemic index and glycemic load values 2021*, [AJCN / DOI 10.1093/ajcn/nqab233](https://doi.org/10.1093/ajcn/nqab233). Lähde erottaa ruoka- ja valmistuskohtaiset rivit sekä luokkakeskiarvot.
+- Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE ja Goletzke J, *International tables of glycemic index and glycemic load values 2021*, [AJCN / DOI 10.1093/ajcn/nqab233](https://doi.org/10.1093/ajcn/nqab233). Lähde erottaa ruoka- ja valmistuskohtaiset rivit sekä luokkakeskiarvot.
 - Noriega et al., *Glycaemic and insulinaemic indices of Mexican foods high in complex carbohydrates*, [PubMed 10824718](https://pubmed.ncbi.nlm.nih.gov/10824718/). Tutkimus koskee kaupallista maissitortillaa, mutta osallistujia oli kahdeksan ja alkuperäinen vertailu oli leipä; tietueen Glucose 100 -muunnos ja LOW-luottamus säilyvät.
 - *Green leafy porridges: how good are they in controlling glycaemic response?*, [PubMed 22849311](https://pubmed.ncbi.nlm.nih.gov/22849311/). GI 31 koskee riisiä ja kookosmaitoa sisältävää puuroa, joten sitä ei sidottu kookosmaitoon itsenäisenä ainesosana.
 - ISO 26642:2010 GI-menetelmä, [ISO](https://www.iso.org/standard/43633.html), nykyiseksi vahvistettu 2021.
@@ -64,27 +64,37 @@ Keskeiset lähteet:
 
 Esiseulonnassa oli 12 reseptiä, jotka edustavat yhteisiä perheitä: `meksikolainen-aamiais-tacot-mustapavuilla`, `meksikolainen-paputostada-aamupalaksi`, `meheva-suklaakakku`, `vhh-kaalikaarryleet`, `shakshuka`, `congee-riisipuuro`, `ropa-vieja`, `nasi-uduk`, `pad-thai-vhh-konjac`, `kiinalainen-hirssipuuro-taateleilla`, `tortilla-de-patatas` ja `sate-ayam`. Näistä viisi käytiin syvään resepti-/lähdetarkasteluun: tortillareseptit (2), suklaakakku, kermakaalikääryleet ja kypsä tomaatti -vastaavuuden lähderajaus. Laajempaan tutkimukseen ei siirrytty, jos ruoka- tai valmistusvastaavuus jäi epäselväksi.
 
-## Aalto A1 – hyväksytyt rajatut korjaukset
+## Aalto A1 – lopullisesti hyväksyttävät rajatut korjaukset
 
-Neljä uutta arviota avautui olemassa olevien lähteiden tarkalla sidonnalla ja jo käytössä olevalla pienosuustoleranssilla:
+Riippumaton lähde- ja valmistustapakatselmointi hylkäsi kahdesta alkuperäisestä neljästä ehdokkaasta kakun ja tostadan. **Vain seuraavat kaksi GK-arviota ovat erässä 2B6C laskettavia:**
 
-| Resepti | GK / annos | Luokka | Luottamus | Uusi lähde / käsittely |
-|---|---:|---|---|---|
-| `meksikolainen-aamiais-tacot-mustapavuilla` | 16,04 | MEDIUM | LOW | kaupallinen maissitortilla; avokado 0,462 g/annos jätetään näkyvästi toleranssiin |
-| `meksikolainen-paputostada-aamupalaksi` | 16,04 | MEDIUM | LOW | sama maissitortillalähde; avokado 0,462 g/annos jätetään toleranssiin |
-| `meheva-suklaakakku` | 20,31 | HIGH | LOW | tumma suklaa -luokkakeskiarvo; kaakaojauhe 0,330 g/annos jätetään toleranssiin |
-| `vhh-kaalikaarryleet` | 9,24 | LOW | LOW | kuohukerma 0,725 g/annos jätetään toleranssiin; reseptin kokonaispoisto 1,578025 g/annos |
+| Resepti | GK / annos | Luokka | Luottamus | Lähde ja käsittely |
+| --- | ---: | --- | --- | --- |
+| `meksikolainen-aamiais-tacot-mustapavuilla` | 16,04 | MEDIUM | LOW | Kaupallisen maissitortillan julkaistu mutta pieneen otokseen perustuva lähde; reseptin lämmin tortilla ei ole rapeaksi paistettu tostada. Avokado 0,462 g/annos sekä aiempi 0,265 g/annos jäävät nykyisiin pienosuustoleransseihin. |
+| `vhh-kaalikaarryleet` | 9,24 | LOW | LOW | Kuohukerman 0,725 g/annos jää ilman GI-sidontaa mutta alle nykyisen yksittäisen 1 g:n rajan; yhteenlaskettu poisjättö 1,578025 g/annos on alle 2 g. |
 
-Tortillareseptien tulos sisältää lisäksi 0,265 g/annos aiemmin kirjattua pienosuutta. Kakkuun sisältyy 0,3052 g/annos aiempaa pienosuutta. Kaikki poistetut osuudet jäävät ennen pyöristystä alle 2 g/annos. Neljä uutta arviota käyttää LOW-luottamusta; kahdessa käytetään julkaistua GI-tietuetta, joka on lähdematchin osalta tarkka mutta tutkimusnäytön osalta heikompi (tortilla), ja yhdessä tumma suklaa -luokkakeskiarvoa. Neljässä GK-luokka on laskennallinen vertailuluokka, ei kliininen tulkinta. Pienosuuden poisjättö ei lisää GK:ta; jos sen GI olisi myöhemmin mitattu, luokan vaikutus pitäisi arvioida uudelleen.
+### Riippumattomassa katselmoinnissa hylätyt alkuperäiset A1-ehdokkaat
 
-Regressioiden jälkeen inventaario on 325 / 138 / 187 / 42. Uusia GI-tietueita: 0. Aiemmat 134 laskettua arviota eivät muuttuneet; uusia estymisiä, rakenne-/syöte-/evidenssifingerprint-eroja ei havaittu. Neljä uutta arviota nosti laskettua kattavuutta 41,2 prosentista 42,5 prosenttiin.
+- **`meheva-suklaakakku` — BLOCKED.** Vuoden 2021 GI 29 -luku on neljän sellaisenaan testatun tumman suklaatuotteen keskiarvo. Kakun 200 g tummaa suklaata sulatetaan ja paistetaan taikinassa ja 100 g sekoitetaan kuumaan kermakuorrutteeseen. Tutkimuksen ruoka- ja valmistustapavastaavuus ei näissä oloissa ole todistettu. Erän 2B6B päätöstä ei ole kumottu uudella lähteellä. Alkuperäinen ehdotus GK 20,31 on **peruttu, eikä sitä julkaista**.
+- **`meksikolainen-paputostada-aamupalaksi` — BLOCKED.** Resepti tarjoillaan rapealla tostada-pohjalla. Kaupallista tavallista maissitortillaa koskeva GI-tutkimus ei yksilöi tätä rapeutettua valmistusta. Alkuperäinen GK 16,04 -ehdotus on **peruttu**. Alkuperäinen 2B6B:n lähtötilan laskentasyöte ja fingerprintit palautettiin.
+- Näitä ei merkitä nollaksi eikä jätetä CALCULATED-tilaan. Korjattu `current`-inventaario ja testit vaativat molemmille arvon `INSUFFICIENT SOURCE DATA` ja numeeriseksi GK:ksi null.
+- Nykyisen laskennan suklaan ruokaryhmäsäännöt palautettiin ennen tätä erää hyväksyttyyn versioon, jotta suora as-sold-suklaatietue ei avaa paistettua kakkua vahingossa.
+
+### Lopullinen kattavuus ja regressiot
+
+- Baseline: 325 / 134 laskettua / 191 keskeneräistä / 42 GI-tietuetta.
+- Katselmoinnin jälkeinen 2B6C: **325 / 136 laskettua / 189 keskeneräistä / 42 GI-tietuetta**.
+- Uusia hyväksyttyjä GK-arvioita: 2. Uusia GI-tietueita: 0.
+- Aiemmista 134 lasketusta arviosta 0 muuttui ja 0 estyi. Uudet rakenne-, syöte- ja evidenssifingerprint-ristiriidat: 0/0/0.
+- Keskeneräisistä 96 on tavallisen ravintoarvoauditoinnin osalta lähteillä tuettuja, 40 uudelleentarkistettavia ja 53 puuttuvia. Erän tavallinen ravintoarvoauditointi pysyy 180 / 86 / 59 / 0.
+- Päällekkäisessä esteinventaariossa GI_MATCH: 84 reseptiä / 106 estoviestiä. Toleranssit pysyvät yksittäin alle 1 g ja yhteensä alle 2 g ennen pyöristystä.
 
 ## Rajauspäätös ja avoimet kysymykset
 
-A1 pysäytettiin neljän hyväksytyn arvion jälkeen. Yhteisistä suurista ryhmistä ei löytynyt riittävää ruoka- ja valmistustapakohtaista GI-näyttöä lisäarvioihin: raakaa tomaattia ei yleistetty kypsäksi tomaattimurskaksi; keittokeskiarvoja ei käytetty liemille; puuron GI:tä ei siirretty kookosmaitoon; eikä kuivattujen taatelien eri lähteitä sidottu lajikkeeltaan määrittelemättömiin resepteihin. A2/A3-laskenta-aaltoa ei aloitettu, koska jäljellä olevat ehdokkaat eivät läpäisseet lähde- tai reseptivalmiuden porttia. Tavoiteltu 8–15 lisäarvion määrä jäi saavuttamatta lähde- ja match-rajoitusten vuoksi.
+A1:n kaksi hyväksyttyä arviota säilytetään ja kaksi puutteellista palautetaan estetyiksi. A2/A3-laskenta-aaltoja ei avattu, koska toistuvat tomaatti-, liemi-, kookosmaito-, tamarindi- ja taatelilähteet eivät täyttäneet ruoka- ja valmistustapavastaavuuden vaatimuksia. Määrällinen tavoite 8–15 jäi saavuttamatta tutkimusnäytön puutteiden vuoksi.
 
-LOW-mallia ei muutettu. Neljä uutta arviota ovat LOW-luottamuksella; kaksi käyttää tortilla-arvoa ja yksi suklaan luokkakeskiarvoa. Pienosuuksien poisjättö koskee kolmea uutta laskentasyötettä ja yhteensä kaikkia neljää reseptiä (tortillaresepteissä pieni avokado, kakussa kaakao, kääryleissä kerma). Erillinen myöhempi katselmointi voi arvioida, kuinka usein LOW-luokan tulos muuttuisi mittausepävarmuuden vuoksi; tässä aineistossa ei ole perustaa numeeriselle herkkyysväitteelle.
+LOW confidence -mallia ei muutettu. Molemmat jäljelle jäävät uudet arviot ovat LOW-luottamuksella ja perustuvat hyväksyttyyn lähteeseen tai dokumentoituun pienosuuksien käsittelyyn. Kyseessä ovat ainesosista johdetut arviot, eivät mitattuja koko aterian GI- tai yksilön verensokerivasteita.
 
 ## Testit ja GitHub-tila
 
-Lopullisten testien, commitien, Draft PR:ien ja CI:n tila kirjataan tämän dokumentin viimeistelyssä. Reseptit PR avataan Draft-tilassa; ReportHubille luodaan eräkohtainen auditointiraportti ja Draft PR. Yhdistämistä tai tuotantojulkaisua ei tehdä.
+Reseptit Draft PR #117 ja ReportHub Draft PR #70 on avattu. Viimeisen korjaus-HEADin testit ja CI tulkitaan suoraan GitHubista; korjausten jälkeen katselmointiraportissa on 136 / 189 eikä alkuperäinen 138 / 187. Aiempi PASS alkuperäiselle PR-HEADille ei sellaisenaan todista uudistetun HEADin läpäisyä. Yhdistämistä tai tuotantojulkaisua ei tehdä tässä katselmoinnissa.
