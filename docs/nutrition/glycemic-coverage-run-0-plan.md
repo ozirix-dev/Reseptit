@@ -1,3 +1,9 @@
+# AJO 0–0.6: GI/GK-kattavuuskampanjan suunnitteluhistoria
+
+Ajantasainen suunnittelu on tämän dokumentin **AJO 0.6** -osuudessa. Alla oleva alkuperäinen AJO 0 on historiallinen: sen 326/138/188-luvut ja silloiset riskit eivät kuvaa uutta tuotantoa.
+
+## AJO 0 – alkuperäinen analyysi
+
 # GI/GK-kattavuuskampanja — AJO 0, 28.10.2026
 
 ## Päätös ja rajaus
@@ -159,3 +165,165 @@ npm run test:glycemic
 Valmiit JSON/Markdown-tulokset tuodaan repoon vain repo_guard `write` -operaatiolla ja olemassa olevan tiedoston nykyisellä SHA-256:lla. Älä aja tavallista `audit:glycemic-coverage`-komentoa suoraan suunnitteludiffiin: se kirjoittaa seurattuja nykyraportteja. Tässä ajossa sen sijasta verrattiin kaikki tuoreet tulosrivit, estot ja fingerprintit kumpaankin nykyinventaarioon muuttamatta niitä. Jos main muuttuu, analyysi ja valittu työjoukko on varmennettava uudelleen.
 
 **Pysähdy tähän. AJO 1 edellyttää seuraavaa toimeksiantoa.**
+
+## AJO 0.5 – lähdelaadun korjaus
+
+[PR #124](https://github.com/ozirix-dev/Reseptit/pull/124) yhdistettiin ja julkaistiin. Keltaisen kanacurryn aiempi GK 3,48 poistettiin, koska riisi-kookosmaitopuuron GI 31 ei tue yksittäistä kookosmaitoa. Neljä virheellistä sidontaa poistettiin; kolme muuta reseptiä olivat jo keskeneräisiä. Katalogin tutkimus säilyy REFERENCE_ONLY-viitteenä. [Tarkka lähdekorjausnäyttö](glycemic-coconut-source-review.md) ja sen koneluettava raportti ovat poikkeuksen peruste.
+
+## AJO 0.6 – ajantasaistettu suunnittelu
+
+Tuotannon lähtöcommit `f7a43503c8dde25c6c2281885807c3e7ed31f07e`. Analyysin checkout-commit `49f85d9b155ec98fcaa99fbf37e2138a6c436503` ja työkalujen/syötteiden SHA-256:t on lukittu koneelliseen inventaarioon. [Pages-CI 40640331867](https://github.com/ozirix-dev/Reseptit/actions/runs/40640331867): build ja deploy SUCCESS. [Julkinen GK-sivu](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/).
+Tuore auditointi: **326 reseptiä / 137 laskettua / 189 keskeneräistä**, kattavuus 42.0 %. GI 45: 6 STRONG / 39 SUPPLEMENTARY; yksi REFERENCE_ONLY, jota ei hyväksytä laskentalähteeksi eikä lähde-ehdokkaaksi. Julkaistujen arvojen nettomuutos tässä suunnitteluerässä **0**.
+
+### Uusi luokitus ja koko työjono
+
+Kaikki nykyiset keskeneräiset reseptit on analysoitu uudelleen tuoreista GK- ja ravintoauditeista. Tunnisteiden uniikkius, täydellinen reseptijoukko sekä molempien nykyinventaarioiden tilat, arvot, estoviestit, ravintoluokat ja kolme fingerprintiä tarkistetaan.
+
+| Luokka | Ensisijainen työlinja | Alkuperäinen AJO 0 | AJO 0.6 |
+| --- | --- | ---: | ---: |
+| A | Lähes laskentavalmis | 1 | 1 |
+| B | Olemassa olevan GI-lähteen katselmointi | 3 | 3 |
+| C | Uusi soveltuva GI-lähde | 65 | 66 |
+| D | Ravinto-/koostumustieto | 30 | 30 |
+| E | Massa, annos tai valmistus | 4 | 4 |
+| F | Rakenne tai syöteversio | 11 | 11 |
+| G | Useita riippumattomia esteitä | 38 | 38 |
+| H | Toimituksellinen päätös | 36 | 36 |
+| Yhteensä | | 188 | 189 |
+
+Päällekkäiset liput: COMPOSITION 102, EDITORIAL 36, FINGERPRINT 38, GI 125, MASS 38, PREPARATION 144, TOLERANCE 6. Liput ovat tarkistusluokkia, eivät todisteita samanmääräisistä tieteellisistä virheistä. Ensisijaiset A–H-luokat ovat erilliset; sivuestot säilyvät.
+Työjonoon lisättiin `keltainen-kanacurry-vhh`; mitään aiempaa keskeneräistä ei poistunut. Vanhojen ensisijaisten luokkien muutokset: 0. Alkuperäisen 20 listaan nähden keltainen curry tulee sijalle 12 ja baozi siirtyy listan ulkopuolelle mutta säilyy täydellisessä työjonossa. Tämä on jäljitettävän lähdetarkistuksen priorisointi, ei oletus kookosmaito-GI:n löytymisestä.
+
+### Yhteisten esteperheiden todellinen ehdollinen potentiaali
+
+Yhden perheen ratkaisu ei riitä, jos reseptillä on muita portteja. Alla ainoan perheen, muiden porttien ja paikallisen tarkistuspolun määrät ovat eri ehtoja eikä niitä summata. Myös saman perheen tuotteet ja valmistustavat vaativat eri lähteitä. **Varmennettu uusi nettotuotto on jokaisessa perheessä 0**; ehdollinen katto ei ole julkaisuennuste.
+
+| Perhe | Estää reseptejä | Ainoa estävä perhe | Muut portit valmiit / ehdollinen katto | Muilla paikallinen tarkistuspolku |
+| --- | ---: | ---: | ---: | ---: |
+| liemi | 42 | 6 | 5 | 9 |
+| kookosmaito | 30 | 9 | 9 | 12 |
+| tomaatti | 23 | 19 | 17 | 19 |
+| pähkinä/siemen | 19 | 3 | 2 | 3 |
+| yrtit | 16 | 0 | 0 | 0 |
+| sipuli | 13 | 0 | 1 | 0 |
+| soijakastike | 12 | 2 | 3 | 2 |
+| maitotuote | 11 | 3 | 2 | 3 |
+| limetti | 9 | 0 | 1 | 0 |
+| maissi/tärkkelys | 9 | 5 | 3 | 6 |
+
+Kookosmaito: esiintyy 35 keskeneräisessä (ennen 34), estää 30 (ennen 29), ehdollinen avauskatto 9 (ennen 8). Kolmen vanhan reseptin semanttinen riski on nyt todellinen puuttuvan GI:n esto; uusi curry lisää yhden reseptin. Tiheys-/tuote-/määrä-/varianttiongelmat eivät katoa GI-lähteen löytymisellä.
+
+### Päivitetty 20 reseptin prioriteettijono
+
+Pisteytyksen kaava ja A–H-luokittelun säännöt ovat alkuperäisessä menetelmäkuvauksessa. Järjestys sisältää dokumentoidun toimituksellisen valinnan. Ensimmäinen kymmenikkö säilyi, koska sen lähdepolut ja estot eivät muuttuneet ja uusilta ehdokkailta puuttuu parempi varmistettu lähdepolku.
+
+| # | Resepti | Luokka | Piste | Seuraava portti |
+| ---: | --- | --- | ---: | --- |
+| 1 | `jauhelihapihvit-vhh-kermakastikkeella` | A | 3.0 | Lihaliemi 0,750 g/annos; väärän GI-sidoksen poiston jälkeen poisjättö 1,18705 g/annos. Varmista liemen koostumus ja kaikki nykyiset määrät; ravintoauditointi ei yksin todista syötettä. |
+| 2 | `vhh-kaalilaatikko` | B | 0.5 | Kerma: dairy-category vs unflavoured-dairy; kypsennetyn kerman analogia ja koko syöte tarkistettava. |
+| 3 | `som-tam-vhh-kurkkuna` | B | 0.5 | Keitetyt pavut: vegetables/cooked vs vegetable/vegetable-category; olemassa olevan kategorian sallittu käyttö tarkistettava. |
+| 4 | `siemengranola-jogurtilla` | B | 0.5 | 40 g paahdettuja mantelilastuja: 0,660 g/annos; hyväksytty GI vähentäisi poisjätön 2,06375 -> 1,40375. Paahdon lähdevastaavuutta ei vielä hyväksytty. |
+| 5 | `valimerellinen-halloumi-tomaattileipa` | D | 0.3333 | Leivän koostumus on nykyisessä ravintolaskelmassa Fineli 31842 -maalaisleipäproxy. Tarkista hapanjuurileivän vastaavuus ja leipä-GI; älä siirrä proxya automaattisesti. |
+| 6 | `jerk-kana` | F | 0.1111 | Neljä kevätsipulia: ravintolaskelman määrä ja Fineli-mitta verrattava reseptiin; lisäksi rakennesidonnan tarkistus. |
+| 7 | `hunaja-sinappikana-kaalilla` | F | 0.1111 | Valkosipulijauheeseen on liitetty tuoreen valkosipulin tietue/mittapyyntö. Tarkista jauheen koostumus ja tl-massa sekä reseptin rakennesidonta. |
+| 8 | `caponata` | C | 0.0833 | Hanki oikeaan ruokaan ja valmistukseen soveltuva GI-lähde; säilytä null, jos näyttö puuttuu. |
+| 9 | `pasta-alla-norma` | C | 0.0833 | Hanki oikeaan ruokaan ja valmistukseen soveltuva GI-lähde; säilytä null, jos näyttö puuttuu. |
+| 10 | `harira` | C | 0.0833 | Hanki oikeaan ruokaan ja valmistukseen soveltuva GI-lähde; säilytä null, jos näyttö puuttuu. |
+| 11 | `kanapyorykat-tomaattikastike` | C | 0.0833 | Hanki oikeaan ruokaan ja valmistukseen soveltuva GI-lähde; säilytä null, jos näyttö puuttuu. |
+| 12 | `keltainen-kanacurry-vhh` | C | 0.0833 | PR #124 palautti nulliksi: 2,81 g/annos kookosmaitoa tarvitsee oman soveltuvan GI-lähteen. Ainoa mallin esto, mutta REFERENCE_ONLY-riisipuurolähde ei käy. Koko ainesketju ja valmistus tarkistettava ennen mitään palautusta. |
+| 13 | `karibia-kookosriisi-pavuilla` | C | 0.0833 | Hanki oikeaan ruokaan ja valmistukseen soveltuva GI-lähde; säilytä null, jos näyttö puuttuu. |
+| 14 | `vietnamilainen-banh-xeo-aamiaisletut` | C | 0.0833 | Hanki oikeaan ruokaan ja valmistukseen soveltuva GI-lähde; säilytä null, jos näyttö puuttuu. |
+| 15 | `indonesialainen-nasi-uduk-aamiaisella` | C | 0.0833 | Hanki oikeaan ruokaan ja valmistukseen soveltuva GI-lähde; säilytä null, jos näyttö puuttuu. |
+| 16 | `thai-roti-munalla-banaanilla` | C | 0.0833 | Hanki oikeaan ruokaan ja valmistukseen soveltuva GI-lähde; säilytä null, jos näyttö puuttuu. |
+| 17 | `paella-valenciana` | C | 0.0833 | Ainoa nykyinen GI-esto on kanaliemi 1,0675 g/annos, ei tomaatti. Raja ei salli pyöristämistä alle 1 g:n. |
+| 18 | `pohjoisafrikkalainen-lablabi` | C | 0.0833 | Hanki oikeaan ruokaan ja valmistukseen soveltuva GI-lähde; säilytä null, jos näyttö puuttuu. |
+| 19 | `kana-enchilada-kukkakaalivuoka` | C | 0.0833 | Hanki oikeaan ruokaan ja valmistukseen soveltuva GI-lähde; säilytä null, jos näyttö puuttuu. |
+| 20 | `vhh-raparperipiirakka` | C | 0.0833 | Raparperi 1,71875 g/annos tarvitsee lähteen paistettuun muotoon; hedelmäryhmä ei sellaisenaan kelpaa. |
+
+### Seuraavan 2B6E-erän ehdotettu viisikko
+
+Säilytetään alkuperäinen viisikko. Kaikkien viiden syötefingerprint ja koko estolista ovat ennallaan; jokainen tarkistettiin uuden tuotantotilan rinnalla. Keltaisen curryn oma GI puuttuu eikä se ole näitä parempi välitön toteutuskohde.
+
+**Varmistettu nettolisäys 0; jokaisessa reseptissä ehdollisesti 0–1 ja koko joukossa 0–5. Aiempi +1–3 ei ole toimituslupaus eikä tämän ajon odotusarvo.** Tulokset voivat jäädä kokonaan nollaan. Määrät ovat loogisia ylärajoja, eivät lähteiden löytämisen todennäköisyyksiä.
+
+#### 1. `jauhelihapihvit-vhh-kermakastikkeella`
+
+Nykyiset estot: jauhelihapihvit-vhh-kermakastikkeella: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.
+Jo olemassa: `fineli-11177-2026-10-25`, `fineli-11562-2026-10-25`, `fineli-28-2026-10-25`, `fineli-29-2026-10-25`, `fineli-30-2026-10-25`, `fineli-335-2026-10-25`, `fineli-500-2026-10-25`, `fineli-631-2026-10-25`, `fineli-858-2026-10-25`. Mallin nyt hyväksymät GI-tietueet: `dairy-category-mean-gi-35`, `onion-literature-analogue-gi-15`. Mallihyväksyntä ei korvaa lähdekatselmointia.
+**Tarkistettava lähde:** Fineli 29 -liemen tuote, laimennus ja 100 ml → 100 g; myös nykyiset kuumennetun kerman ja sipulin analogiat tarkistetaan koko reseptin katselmoinnissa.
+**Syöte ja annos:** 4 annosta; kaikki laskentamassat ovat olemassa. Munan 55 g, voin 14 g ja liemen tilavuusmuunnos tarvitsevat lähdevarmennuksen; tavallinen ravintoauditointi on INSUFFICIENT SOURCE DATA.
+**Pienosuudet:** Liemi 0,750 g/annos: väärän GI:n poistoehdokas nostaisi poisjätöt 0,43705 → 1,18705 g/annos. Alle 1 g / alle 2 g voi soveltua vain koostumuksen ja määrän tarkistuksen jälkeen.
+**Avaava ratkaisu:** Poista perusteeton keitto-GI vain, jos pieni liemiosuus ja koko muu ainesketju kestävät lähdetarkistuksen.
+**Erän realistisuus:** Realistinen rajattu yhden erän katselmointi; numeerista lopputulosta ei hyväksytä tässä. Ehdollinen nettolisäys 0–1.
+
+#### 2. `vhh-kaalilaatikko`
+
+Nykyiset estot: vhh-kaalilaatikko: kuohukermaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.
+Jo olemassa: `fineli-11177-2026-10-24`, `fineli-11562-2026-10-24`, `fineli-29-2026-10-24`, `fineli-30-2026-10-24`, `fineli-320-2026-10-24`, `fineli-335-2026-10-24`, `fineli-500-2026-10-24`, `fineli-631-2026-10-24`, `fineli-858-2026-10-24`. Mallin nyt hyväksymät GI-tietueet: `vegetables-category-mean-gi-66`. Mallihyväksyntä ei korvaa lähdekatselmointia.
+**Tarkistettava lähde:** dairy-category-mean-gi-35 on olemassa, mutta 175 °C:ssa 60–70 min kypsennetyn kerman analogia on perusteltava; avainten korjaus ei yksin riitä.
+**Syöte ja annos:** 6 annosta; kerma 200 g, sipuli 55 g, munat 110 g, liemi 100 g ja meiramin arvio tarkistettava reseptimittoihin. Ei puuttuvaa olennaista massaa mallissa, mutta meiramin 0,1 g HH on oletus.
+**Pienosuudet:** Kerma 0,96667 g/annos. Pelkkä GI-sidoksen poisto nostaisi yhteispoisjätön 1,17752 → 2,14418 g/annos ja estäisi edelleen. Tarvitaan kelvollinen GI-sidos tai muu erikseen lähteistetty ratkaisu.
+**Avaava ratkaisu:** Varmenna kerman hyväksyttävä ruoka-/valmistusanalogia ja koko määräpohja; muuta vain perustellut avaimet myöhemmässä erässä.
+**Erän realistisuus:** Mahdollinen yhden erän lähdekatselmointi, epävarmuus kohtalainen; ei automaattinen avainkorjaus. Ehdollinen nettolisäys 0–1.
+
+#### 3. `som-tam-vhh-kurkkuna`
+
+Nykyiset estot: som-tam-vhh-kurkkuna: vihreitä papuja: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.
+Jo olemassa: `afcd-F002901-2026-10-24`, `afcd-F004193-2026-10-24`, `afcd-F004729-2026-10-24`, `fineli-29022-2026-10-24`, `fineli-346-2026-10-24`, `fineli-352-2026-10-24`, `fineli-378-2026-10-24`, `foodin-erythritol-200g-label-2026-10-24`, `off-13692210-squid-brand-fish-sauce-2026-10-24`. Mallin nyt hyväksymät GI-tietueet: `nuts-category-mean-gi-22`, `tomato-raw-cooked-sauce-analogue-gi-22`, `vegetables-category-mean-gi-66`. Mallihyväksyntä ei korvaa lähdekatselmointia.
+**Tarkistettava lähde:** vegetables-category-mean-gi-66 on ehdokas keitetyille vihreille pavuille. Varmista myös Fineli 29022:n valmistustila, raakatomaatin nykyinen sidos ja pähkinäanalogia.
+**Syöte ja annos:** 4 annosta; papuja 100 g ja kaikki muut massat määritelty. Keitetty/valutettu massa tarkistettava lähteeseen; nykyiset fingerprintit eivät ole vanhentuneet.
+**Pienosuudet:** Papujen 1,2645 g/annos ylittää yksittäisen poisjätön rajan. Muiden poisjättö on 0,36675 g/annos; pavuille tarvitaan lähde, niitä ei saa pyöristää alle 1 g:n.
+**Avaava ratkaisu:** Hyväksytty papujen ruoka-/valmistusvastaavuus ja kaikkien syötteiden tarkistus; vasta sitten vegetables/cooked-avainten korjaus.
+**Erän realistisuus:** Mahdollinen yhden erän katselmointi, jos olemassa oleva lähde todella kattaa valmistuksen. Ehdollinen nettolisäys 0–1.
+
+#### 4. `siemengranola-jogurtilla`
+
+Nykyiset estot: siemengranola-jogurtilla: cumulative omitted available carbohydrate is 2.064 g/serving, at or above the 2 g editorial tolerance.
+Jo olemassa: `afcd-F002963-2026-10-24`, `afcd-F007619-2026-10-24`, `afcd-F008210-2026-10-24`, `afcd-F008212-2026-10-24`, `afcd-F008215-2026-10-24`, `fineli-32201-2026-10-24`, `fineli-379-2026-10-24`, `fineli-500-2026-10-24`. Mallin nyt hyväksymät GI-tietueet: `dairy-category-mean-gi-35`, `fruit-category-mean-gi-51`. Mallihyväksyntä ei korvaa lähdekatselmointia.
+**Tarkistettava lähde:** nuts-category-mean-gi-22 on manteliehdokas. Fineli 379 -mantelilastut paahdetaan 160 °C:ssa 18–22 min; lähteen on katettava tämä muoto. Myös jogurtti- ja vadelmasidokset tarkistetaan.
+**Syöte ja annos:** 4 annosta; 40 g mantelilastuja ja kaikki muut massat määritelty. Tuettu ravintolaskelma on olemassa, mutta paahto ja syötävä osuus vaativat tarkistuksen.
+**Pienosuudet:** Nykyinen poisjättö 2,06375 g/annos estää. Jos mantelien 0,660 g/annos saa hyväksyttävän GI:n, poisjättö olisi 1,40375 g/annos. GI-arvoa ei tässä kokeessa arvata.
+**Avaava ratkaisu:** Vähintään riittävän yhden poisjätetyn osuuden hyväksyttävä GI-sidos sekä koko ainesketjun katselmointi; manteli on nimetty tutkimusehdokas.
+**Erän realistisuus:** Rajattu mutta lähderiskinen yhden erän työ; paahtovastaavuuden puuttuessa jää nulliksi. Ehdollinen nettolisäys 0–1.
+
+#### 5. `valimerellinen-halloumi-tomaattileipa`
+
+Nykyiset estot: valimerellinen-halloumi-tomaattileipa: hapanjuurileipä: No source-matched composition and preparation was resolved for “hapanjuurileipä”; it is not treated as zero.
+Jo olemassa: `fineli-33465-release-20`, `fineli-34972-release-20`, `fineli-352-release-20`. Mallin nyt hyväksymät GI-tietueet: `dairy-category-mean-gi-35`, `tomato-raw-cooked-sauce-analogue-gi-22`. Mallihyväksyntä ei korvaa lähdekatselmointia.
+**Tarkistettava lähde:** Ravintolaskelman Fineli 31842 -maalaisleipäproxy ei ole hyväksytty hapanjuurileivän GK-koostumus. Leipä-GI-katalogiehdokas ja paahdon vastaavuus on tarkistettava erikseen.
+**Syöte ja annos:** 2 annosta; hapanjuurileipää 100 g. Annos- ja grammapohja on täsmällinen, mutta tuotekoostumus puuttuu GK-syötteestä. Öljyn/suolan nollahiilihydraattiperuste ja muu resepti tarkistetaan.
+**Pienosuudet:** Leivän imeytyvä hiilihydraatti on ratkaisematon eikä saa olla nolla. Pienosuustoleranssia ei voi soveltaa tuntemattomaan leipäosuuteen.
+**Avaava ratkaisu:** Lähdevastaava hapanjuurileivän koostumus sekä paahdettuun leipään sopiva GI; yksi koostumuskorjaus yksin ei riitä.
+**Erän realistisuus:** Yhden erän selvityskohde, ei varma avaus. Kahden lähdeportin vuoksi viisikon epävarmin; ei silti uutta näyttöä selvästi paremmasta korvaajasta. Ehdollinen nettolisäys 0–1.
+
+### Historiallinen regressiosuoja ja erilliset laatutyöt
+
+Historiallinen 2B6D-baseline säilyy muuttumattomana: 136 silloista laskettua arvoa. Vain `keltainen-kanacurry-vhh` saa poiketa lasketusta tilasta, ja sen koko nykyinen tulos on täsmättävä PR #124:n dokumentoituun jälkeen-tilaan. Muut historialliset arvot sekä kaikki 137 nykyistä laskettua arvoa tarkistetaan; kahden 2B6D-lisäyksen arvot säilyvät: hirssipuuro 21,19 ja kuskus-aamiaiskulho 34,36.
+REFERENCE_ONLY-lipun poistaminen, hylätyn kookosmaitosidoksen palautus, muun aiemman arvon poistuminen/muuttuminen, uusi laskettu resepti, duplikaatti-ID tai työjonon aukko keskeyttää analyysin. Julkaistua dataa tai laskentakoodia ei sallita muutetuksi suhteessa lukittuun tuotantocommittiin.
+Voimassa olevat fingerprint-poikkeamat: recipeBindingMismatches=38, calculationInputMismatches=0, calculationEvidenceMismatches=0. Uudet poikkeamat historiallisen vertailun suhteen: newStructureMismatches=0, newInputMismatches=0, newEvidenceMismatches=0. 38 rakenne-estoa ja uusien muutosten 0/0/0 kuvaavat eri asioita.
+`intialainen-aloo-paratha`: Fineli 310 / MAA-ARTISOKKA vs peruna säilyy erillisenä koostumus- ja lähdevastaavuustyönä. Tortillan keitetty peruna vs öljykypsennys säilyy erillisenä valmistusriskinä.
+Lisähavainto: koostumuskatalogissa on ennestään kaksi eri tietuetta samalla ID:llä `fineli-11557-2026-10-24`. Analyysi säilyttää laskentamallin nykyisen viimeisen tietueen valinnan; koostumuksia ei muuteta. Tämä jää erilliseksi lähdekatalogin laatutarkistukseksi.
+Neljä laskettua mannasuurimoreseptiä säilyvät erillisessä valmistusvastaavuuden katselmoinnissa: `intialainen-rava-uttapam`, `pohjoisafrikkalainen-baghrir`, `pohjoisafrikkalainen-msemen-hunajalla`, `pohjoisafrikkalainen-harcha-juustolla`. Niiden arvoja ei muutettu.
+
+### Uudelleenajo ja tarkistukset
+
+Aja oikean checkoutin `site/`-hakemistosta. Audittien tulokset menevät ohitettuun `tmp/nutrition`-hakemistoon; content/build vain tämän työpuun generoituun sivustoon. Analyysin ja probe-kokeen tuloskohteen on oltava repon ulkopuolinen scratch. Versionhallittuihin tiedostoihin siirto tehdään repo_guardilla.
+
+```powershell
+npm run content:sync
+npm run audit:nutrition -- --strict
+npm run audit:glycemic-load
+python ../docs/nutrition/tools/glycemic-coverage-run-0-analyze.py .. D:/Temp/reseptit-run06-replay
+python ../docs/nutrition/tools/test_glycemic_run0_validation.py
+node --import tsx ../docs/nutrition/tools/glycemic-coverage-run-0-probe.mts .. D:/Temp/reseptit-run06-replay/probe.json
+npm run test:glycemic
+npm test
+npm run test:select-ci
+npm run build
+npm run test:static
+```
+
+Kattavuuskomentoa ei tarvita seurattujen nykyinventaarioiden muuttamiseen: analyysi täsmää jokaisen tuoreen tulosrivin kumpaankin nykyinventaarioon. Kahden peräkkäisen analyysiajon JSON/Markdown ja probe-tulokset verrataan byte-for-byte samoilla syötteillä. Paikallinen testitulos ja viimeisen HEADin CI raportoidaan PR #123:ssa; aiemman HEADin CI ei hyväksy tätä päivitystä.
+Git-integraatiossa säilytettiin molemmat README-lisäykset. PR #124:n laskentatoteutus, historialliset baselinet ja tuotannon GK-tulokset ovat muuttumattomat. PR #123 pysyy Draftina; ei mergeä, deployta, ReportHubia eikä 2B6E-laskentaa.
+
+**Pysähdy tähän. AJO 1 / 2B6E edellyttää erillistä toimeksiantoa.**
