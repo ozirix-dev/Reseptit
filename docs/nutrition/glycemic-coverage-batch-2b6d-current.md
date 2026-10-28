@@ -1,16 +1,16 @@
 # GK-esteinventaario
 
-Lähdecommit: `953b5896e61fc2e3a10cf42e69d9bddd452a07c4`. Vertailun lähtösnapshot: `f2ba9e849e677f9e223103022e309a09b9992f62` (136 laskettua / 189 keskeneräistä; 42 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
+Lähdecommit: `fc8fa390fc43e8ad11e71d606c393a17c28006ed`. Vertailun lähtösnapshot: `f2ba9e849e677f9e223103022e309a09b9992f62` (136 laskettua / 189 keskeneräistä; 42 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
 
-Nykyinen ajo kattaa 326 reseptiä: 118 laskettua, 208 keskeneräistä. GI-katalogissa on 45 tietuetta (6 STRONG, 39 SUPPLEMENTARY).
+Nykyinen ajo kattaa 326 reseptiä: 111 laskettua, 215 keskeneräistä. GI-katalogissa on 45 tietuetta (6 STRONG, 39 SUPPLEMENTARY).
 
 Uusi resepti historiallisen 325 reseptin vertailusnapshotin jälkeen: munakoiso-kesakurpitsalasagne. Se kuuluu nykyinventaarioon, mutta ei historialliseen baselineen.
 
 ## Muutos hyväksytystä vertailusta
 
-- Aiemmin keskeneräisiä, nyt laskettavia: 2. Aiemmin laskettuja, nyt estettyjä: 20. Edelleen keskeneräisiä: 187.
-- Estoperuste muuttui 45 reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: 0/0/0.
-- Keskeneräisiä, joiden ravintoarvotila on tuettu: 110; tarkistettava: 42; puuttuva: 56.
+- Aiemmin keskeneräisiä, nyt laskettavia: 2. Aiemmin laskettuja, nyt estettyjä: 27. Edelleen keskeneräisiä: 187.
+- Estoperuste muuttui 56 reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: 0/0/0.
+- Keskeneräisiä, joiden ravintoarvotila on tuettu: 112; tarkistettava: 46; puuttuva: 57.
 
 ## Päällekkäiset esteet
 
@@ -76,7 +76,7 @@ Korjausta edeltävä snapshot (lähdecommit `5e9cdeb830f468ecf099e9c286f9344afe3
 | thai-kananmunat-kookoscurryssa | GI_MISSING, COMPOSITION | OUT_OF_SCOPE | INSUFFICIENT SOURCE DATA | recipe quantity not captured; calculation mass 110 g; kananmuna (fineli-858-release-20; GI missing); recipe quantity not captured; calculation mass 184 g; kookosmaito (afcd-F002991-release-3; GI missing); recipe quantity not captured; calculation mass 150 g; punainen currytahna (composition unresolved; GI missing); recipe quantity not captured; calculation mass 125 g; tomaatti (fineli-352-release-20; GI tomato-raw-cooked-sauce-analogue-gi-22); recipe quantity not captured; calculation mass unresolved g; neutraalia paistoöljyä (composition unresolved; GI missing); recipe quantity not captured; calculation mass unresolved g; suolaa maun mukaan (composition unresolved; GI missing) |
 | thai-kookosriisi-mangolla | GI_MISSING, GI_MATCH | REVIEWED_REMAINS_INCOMPLETE | INSUFFICIENT SOURCE DATA | recipe quantity not captured; calculation mass 100 g; riisi (fineli-11521-release-20; GI rice-category-mean-gi-67); recipe 200 ml (mass unresolved g); calculation mass unresolved g; kookosmaito (composition unresolved; GI missing); recipe quantity not captured; calculation mass 150 g; mango (fineli-11071-release-20; GI mango-raw-mean-gi-51-2002); recipe quantity not captured; calculation mass 6 g; seesaminsiemen (fineli-385-release-20; GI missing); recipe quantity not captured; calculation mass unresolved g; suolaa maun mukaan (composition unresolved; GI missing) |
 | thai-papaijajogurtti | GI_MATCH, GI_MISSING, MASS_PREPARATION | OUT_OF_SCOPE | INSUFFICIENT SOURCE DATA | recipe quantity not captured; calculation mass 300 g; papaija (fineli-34694-release-20; GI fruit-category-mean-gi-51); recipe quantity not captured; calculation mass 100 g; jogurtti (fineli-619-release-20; GI dairy-category-mean-gi-35); recipe quantity not captured; calculation mass 150 g; kookoshiutale (fineli-382-release-20; GI missing); recipe quantity not captured; calculation mass unresolved g; lime (afcd-F005199-release-3; GI fruit-category-mean-gi-51); recipe quantity not captured; calculation mass unresolved g; suolaa maun mukaan (composition unresolved; GI missing) |
-| tunisialainen-ojja | COMPOSITION, GI_MATCH | OUT_OF_SCOPE | INSUFFICIENT SOURCE DATA | recipe 1 kpl (mass unresolved g); calculation mass 55 g; sipuli (fineli-335-release-20; GI missing); recipe quantity not captured; calculation mass 170 g; punainen paprika (fineli-386-release-20; GI red-pepper-literature-analogue-gi-40); recipe quantity not captured; calculation mass 7 g; valkosipulinkynttä (fineli-393-release-20; GI missing); recipe quantity not captured; calculation mass 400 g; tomaattimurskaa (fineli-398-release-20; GI tomato-raw-cooked-sauce-analogue-gi-22); recipe quantity not captured; calculation mass unresolved g; harissaa (composition unresolved; GI missing); recipe quantity not captured; calculation mass unresolved g; juustokuminaa (composition unresolved; GI missing); recipe quantity not captured; calculation mass unresolved g; oliiviöljyä (composition unresolved; GI missing); recipe quantity not captured; calculation mass 220 g; kananmunaa (fineli-858-release-20; GI missing); recipe quantity not captured; calculation mass unresolved g; suolaa (composition unresolved; GI missing); recipe quantity not captured; calculation mass 15 g; tuoretta persiljaa (fineli-333-release-20; GI vegetables-category-mean-gi-66); recipe quantity not captured; calculation mass 120 g; maalaisleipää (fineli-31842-release-20; GI bread-category-mean-gi-64) |
+| tunisialainen-ojja | COMPOSITION, GI_MATCH | OUT_OF_SCOPE | INSUFFICIENT SOURCE DATA | recipe 1 kpl (mass unresolved g); calculation mass 55 g; sipuli (fineli-335-release-20; GI missing); recipe quantity not captured; calculation mass 150 g; punainen paprika (fineli-386-release-20; GI missing); recipe quantity not captured; calculation mass 7 g; valkosipulinkynttä (fineli-393-release-20; GI missing); recipe quantity not captured; calculation mass 400 g; tomaattimurskaa (fineli-398-release-20; GI tomato-raw-cooked-sauce-analogue-gi-22); recipe quantity not captured; calculation mass unresolved g; harissaa (composition unresolved; GI missing); recipe quantity not captured; calculation mass unresolved g; juustokuminaa (composition unresolved; GI missing); recipe quantity not captured; calculation mass unresolved g; oliiviöljyä (composition unresolved; GI missing); recipe quantity not captured; calculation mass 220 g; kananmunaa (fineli-858-release-20; GI missing); recipe quantity not captured; calculation mass unresolved g; suolaa (composition unresolved; GI missing); recipe quantity not captured; calculation mass 15 g; tuoretta persiljaa (fineli-333-release-20; GI vegetables-category-mean-gi-66); recipe quantity not captured; calculation mass 120 g; maalaisleipää (fineli-31842-release-20; GI bread-category-mean-gi-64) |
 | valimerellinen-farinata-aamupalaksi | COMPOSITION | REVIEWED_REMAINS_INCOMPLETE | INSUFFICIENT SOURCE DATA | recipe quantity not captured; calculation mass 100 g; kikhernejauho (afcd-F003986-release-3; GI legumes-category-mean-gi-34); recipe quantity not captured; calculation mass 25 g; oliivi (fineli-34972-release-20; GI missing); recipe quantity not captured; calculation mass 100 g; tomaatti (fineli-352-release-20; GI missing); recipe quantity not captured; calculation mass unresolved g; rosmariini (composition unresolved; GI missing); recipe quantity not captured; calculation mass unresolved g; neutraalia paistoöljyä (composition unresolved; GI missing); recipe quantity not captured; calculation mass unresolved g; suolaa maun mukaan (composition unresolved; GI missing); recipe quantity not captured; calculation mass unresolved g; vettä (composition unresolved; GI missing) |
 | valimerellinen-halloumi-tomaattileipa | COMPOSITION | REVIEWED_REMAINS_INCOMPLETE | INSUFFICIENT SOURCE DATA | recipe quantity not captured; calculation mass 150 g; halloumi (fineli-33465-release-20; GI dairy-category-mean-gi-35); recipe quantity not captured; calculation mass 125 g; tomaatti (fineli-352-release-20; GI tomato-raw-cooked-sauce-analogue-gi-22); recipe quantity not captured; calculation mass 25 g; oliivi (fineli-34972-release-20; GI missing); recipe quantity not captured; calculation mass 100 g; hapanjuurileipä (composition unresolved; GI missing); recipe quantity not captured; calculation mass unresolved g; neutraalia paistoöljyä (composition unresolved; GI missing); recipe quantity not captured; calculation mass unresolved g; suolaa maun mukaan (composition unresolved; GI missing) |
 | vietnamilainen-chao-ga-kanapuuro | OTHER | OUT_OF_SCOPE | INSUFFICIENT SOURCE DATA | recipe quantity not captured; calculation mass 100 g; riisi (fineli-11521-release-20; GI rice-category-mean-gi-67); recipe quantity not captured; calculation mass 150 g; kana (afcd-F002806-release-3; GI missing); recipe quantity not captured; calculation mass unresolved g; inkivääri (composition unresolved; GI missing); recipe quantity not captured; calculation mass unresolved g; kevätsipuli (composition unresolved; GI missing); recipe quantity not captured; calculation mass unresolved g; vettä tai mietoa lientä (composition unresolved; GI missing); recipe quantity not captured; calculation mass unresolved g; suolaa maun mukaan (composition unresolved; GI missing) |
@@ -92,12 +92,13 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | Resepti | Ensisijainen luokka | GK-tila | Ravintoarvotila | Työvaihe |
 | --- | --- | --- | --- | --- |
 | munatacot-huevos-rancheros | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
-| shakshuka | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
+| paprikauunimunakkaat | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | MANUAL_TRIAGE |
+| shakshuka | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | tortilla-de-patatas | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
-| chili-con-carne-kukkakaaliriisi | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
-| ratatouille | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
+| chili-con-carne-kukkakaaliriisi | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
+| ratatouille | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | jauheliha-kaalikeitto-vhh | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
-| taytetyt-paprikat-vhh | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
+| taytetyt-paprikat-vhh | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | vhh-kaalilaatikko | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | munakoiso-jauhelihavuoka-vhh | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | lahi-ita-kikherne-shakshuka | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
@@ -139,10 +140,13 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | pad-thai-vhh-konjac | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | rahka-marjakerroskulho | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | valimerellinen-tortilla-espanola-aamupalaksi | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | MANUAL_TRIAGE |
+| kana-fajita-pelti | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | MANUAL_TRIAGE |
+| italian-pata | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | MANUAL_TRIAGE |
 | khao-soi-vhh-konjac | GI_MISSING | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | som-tam-vhh-kurkkuna | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | kanakeitto-pinaatti-sitruuna | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | tom-yum-goong-vhh | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
+| pad-kee-mao-vhh-konjac | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | MANUAL_TRIAGE |
 | vhh-mustikkapiirakka | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | ketopizza-pofiber-pohjalla | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | MANUAL_TRIAGE |
 | tom-kha-gai-vhh | GI_MISSING | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
@@ -269,7 +273,7 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | pav-bhaji | COMPOSITION | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | STRUCTURE_BINDING_REVIEW |
 | pekingin-ankka | MASS_PREPARATION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
 | sichuan-hot-pot | COMPOSITION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
-| tunisialainen-ojja | COMPOSITION | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | STRUCTURE_BINDING_REVIEW |
+| tunisialainen-ojja | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | STRUCTURE_BINDING_REVIEW |
 | vietnamilainen-papaija-kookospuuro | COMPOSITION | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | STRUCTURE_BINDING_REVIEW |
 | indonesialainen-tempeh-munakulho | GI_MATCH | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
 | vietnamilainen-kahvijogurtti-banaanilla | COMPOSITION | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | COMPOSITION_OR_CONVERSION |
@@ -281,13 +285,16 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | sate-ayam | COMPOSITION | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | STRUCTURE_BINDING_REVIEW |
 | janssoninkiusaus-juuriselleri | COMPOSITION | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | STRUCTURE_BINDING_REVIEW |
 | okonomiyaki-kaaliletut | GI_MISSING | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | COMPOSITION_OR_CONVERSION |
+| paneer-tikka | OTHER | INSUFFICIENT SOURCE DATA | MISSING | MANUAL_TRIAGE |
 | meksikolainen-huevos-a-la-mexicana | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | karibia-ackee-ja-suolakala | COMPOSITION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
 | karibia-callaloo-munakas | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | japanilainen-hojicha-jogurtti-persimonilla | GI_MATCH | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | STRUCTURE_BINDING_REVIEW |
 | lahi-ita-labneh-kulho-zaatarilla | COMPOSITION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
 | pellava-puuro-pahkinoilla | COMPOSITION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
+| lahi-ita-menemen-sumakilla | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | pohjoisafrikkalainen-harissa-shakshuka | GI_MISSING | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | COMPOSITION_OR_CONVERSION |
+| yrttituorejuusto-kinkkurullat | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | carnitas-salaattitacot | MASS_PREPARATION | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | STRUCTURE_BINDING_REVIEW |
 | rogan-josh | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | kreikkalainen-kanavuoka-oliiveilla | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
