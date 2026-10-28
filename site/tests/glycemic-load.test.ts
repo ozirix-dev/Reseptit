@@ -1366,3 +1366,81 @@ test("removing a published recipe cannot leave a stale reviewed GI/GK input unno
   }];
   assert.throws(() => completePublishedRecipeInputs(reviewed, []), /unpublished recipe IDs: removed-recipe/);
 });
+
+test("coconut rice-porridge GI is reference-only even if an ingredient copies its matching keys", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const catalog = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8")) as { records: GlycemicIndexRecord[] };
+  const record = catalog.records.find((row) => row.id === "coconut-milk-porridge-gi-31")!;
+  assert.ok(record);
+  assert.equal(record.gi, 31, "retain the published mixed-meal result");
+  assert.equal(record.foodKey, "rice-porridge-with-coconut-milk");
+  assert.equal(record.calculationUse, "REFERENCE_ONLY");
+  assert.match(record.source.title, /^Green leafy porridges:/);
+  const composition = food("coconut", 2.81, "KOOKOSMAITO, KOOKOSJUOMA");
+  for (const grams of [100, 10]) {
+    for (const keys of [
+      { foodKey: "coconut-milk", preparationKey: record.preparationKey },
+      { foodKey: record.foodKey, preparationKey: record.preparationKey },
+    ]) {
+      const input = { recipeId: "coconut", servings: 1, ingredients: [{ name: "coconut milk", grams, fineliRecordId: composition.id, giRecordId: record.id, ...keys, giMatchEvidence: "Claimed analogue with matching identifiers." }] };
+      const result = calculateGlycemicLoad(input, [composition], [record]);
+      assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+      assert.equal(result.glycemicLoadPerServing, null);
+      assert.equal(result.ingredients[0].giContribution, null);
+      assert.deepEqual(result.ingredients[0].giCandidates, [], "reference-only source is not offered as a calculation candidate");
+      assert.match(result.blockers.join(" "), /reference-only/);
+      const { calculationUse: _removed, ...withoutRestriction } = record;
+      assert.notEqual(glycemicLoadEvidenceHash(input, [composition], [record]), glycemicLoadEvidenceHash(input, [composition], [withoutRestriction]), "removing source restriction requires evidence re-review");
+    }
+  }
+});
+
+test("coconut correction withdraws only its published curry and preserves all other previously calculated values", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const read = async (name: string) => JSON.parse(await readFile(path.join(root, "docs/nutrition", name), "utf8"));
+  const [inputs, foods, catalog, review, bindings, inventory] = await Promise.all([
+    read("glycemic-load-pilot-input.json"), read("food-records.json"), read("glycemic-index-records.json"),
+    read("glycemic-coconut-source-review.json"), read("glycemic-load-recipe-bindings.json"), read("glycemic-coverage-current-2026-10-25.json"),
+  ]);
+  const byId = new Map<string, GlycemicLoadRecipeInput>((inputs.recipes as GlycemicLoadRecipeInput[]).map((row) => [row.recipeId, row]));
+  const affected = review.affectedRecipeIds as string[];
+  assert.deepEqual(affected, ["keltainen-kanacurry-vhh", "khao-soi-vhh-konjac", "massaman-curry-kanalla-vhh", "tom-kha-gai-vhh"]);
+  assert.equal(inputs.recipes.some((row: GlycemicLoadRecipeInput) => row.ingredients.some((ingredient) => ingredient.giRecordId === "coconut-milk-porridge-gi-31")), false);
+  const withdrawn: string[] = [];
+  for (const prior of review.previouslyCalculated) {
+    const input = byId.get(prior.recipeId)!;
+    assert.ok(input, prior.recipeId);
+    const current = calculateGlycemicLoad(input, foods, catalog.records);
+    if (current.status !== "CALCULATED") {
+      withdrawn.push(prior.recipeId);
+      assert.equal(current.glycemicLoadPerServing, null);
+    } else {
+      assert.equal(current.glycemicLoadPerServing, prior.glycemicLoadPerServing, prior.recipeId);
+      assert.equal(current.unroundedGlycemicLoadPerServing, prior.unroundedGlycemicLoadPerServing, prior.recipeId);
+      assert.deepEqual(current.glycemicLoadRangePerServing, prior.glycemicLoadRangePerServing, prior.recipeId);
+    }
+  }
+  assert.deepEqual(withdrawn, ["keltainen-kanacurry-vhh"]);
+  for (const id of affected) {
+    const input = byId.get(id)!;
+    const current = calculateGlycemicLoad(input, foods, catalog.records);
+    const coconut = input.ingredients.find((ingredient) => ingredient.foodKey === "coconut-milk")!;
+    assert.equal(coconut.giRecordId, null);
+    assert.equal(coconut.preparationKey, "coconut-milk-cooked-in-recipe");
+    const resultIngredient = current.ingredients.find((ingredient) => ingredient.name === coconut.name)!;
+    assert.equal(resultIngredient.availableCarbohydratePerServingG, 2.81);
+    assert.equal(resultIngredient.giContribution, null);
+    assert.equal(current.status, "INSUFFICIENT SOURCE DATA");
+    assert.match(current.blockers.join(" "), /PMID 22849311/);
+    const previous = review.affectedRecipes.find((row: { recipeId: string }) => row.recipeId === id).before;
+    for (const blocker of previous.blockers) assert.ok(current.blockers.includes(blocker), "other blockers remain: " + blocker);
+    assert.equal(glycemicLoadInputHash(input), bindings.calculationInputs[id]);
+    assert.equal(glycemicLoadEvidenceHash(input, foods, catalog.records), bindings.calculationEvidence[id]);
+    const restoredInvalidInput = { ...input, ingredients: input.ingredients.map((ingredient) => ingredient === coconut ? { ...ingredient, giRecordId: review.beforeGiRecord.id, foodKey: review.beforeGiRecord.foodKey, preparationKey: review.beforeGiRecord.preparationKey } : ingredient) };
+    assert.notEqual(glycemicLoadInputHash(restoredInvalidInput), bindings.calculationInputs[id], "restoring the old binding is stale");
+    const stored = inventory.recipes.find((row: { recipeId: string }) => row.recipeId === id);
+    assert.equal(stored.status, current.status);
+    assert.equal(stored.glycemicLoadPerServing, current.glycemicLoadPerServing);
+  }
+  assert.equal(inventory.currentSummary.calculated, review.previouslyCalculated.length - withdrawn.length, "no unrelated additions or losses");
+});

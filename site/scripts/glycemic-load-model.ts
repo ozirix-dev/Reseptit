@@ -22,6 +22,8 @@ export interface GlycemicIndexRecord {
     testDurationHours?: number;
     qualityEvidence: string;
   };
+  /** Historical source retained without approval for ingredient-based calculations. */
+  calculationUse?: "REFERENCE_ONLY";
   note?: string;
   matchKind?: "EXACT" | "ANALOG" | "CATEGORY_MEAN";
   confidence?: "HIGH" | "MEDIUM" | "LOW";
@@ -179,7 +181,7 @@ export function calculateGlycemicLoad(
   const ingredients = input.ingredients.map((ingredient) => {
     const issues: string[] = [];
     const giCandidates = ingredient.foodKey
-      ? giRecords.filter((record) => record.foodKey === ingredient.foodKey).map((record) => ({
+      ? giRecords.filter((record) => record.foodKey === ingredient.foodKey && record.calculationUse !== "REFERENCE_ONLY").map((record) => ({
         id: record.id,
         gi: record.gi,
         preparation: record.preparation,
@@ -279,7 +281,7 @@ export function calculateGlycemicLoad(
         ingredientConfidence = matchedGi.confidence ?? (matchedGi.qualityTier === "STRONG" ? "HIGH" : "LOW");
       }
       const match = matchedGi?.matchKind ?? "EXACT";
-      const sourceValid = Boolean(matchedGi && valid(matchedGi.gi) && ingredient.giMatchEvidence
+      const sourceValid = Boolean(matchedGi && matchedGi.calculationUse !== "REFERENCE_ONLY" && valid(matchedGi.gi) && ingredient.giMatchEvidence
         && matchedGi.source.url && matchedGi.source.published && matchedGi.referenceScale === "GLUCOSE_100");
       const keysMatch = Boolean(matchedGi && ingredient.foodKey && ingredient.preparationKey
         && matchedGi.foodKey === ingredient.foodKey
@@ -293,6 +295,7 @@ export function calculateGlycemicLoad(
         && ["EXACT", "ANALOG", "CATEGORY_MEAN"].includes(match));
       if (!sourceValid || !matchValid) {
         const reason = !matchedGi ? ingredient.giMatchEvidence || "GI evidence is missing."
+          : matchedGi.calculationUse === "REFERENCE_ONLY" ? "GI record is reference-only; the measured mixed meal is not approved for ingredient-based calculation."
           : foodFamilyMismatch ? "GI food family does not match the ingredient (for example, rice is not rice vinegar or dairy is not milk chocolate)."
           : "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.";
         if (availablePerServing < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G && ingredient.giRecordId === null) {

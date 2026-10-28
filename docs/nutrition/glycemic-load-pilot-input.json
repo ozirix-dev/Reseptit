@@ -1365,11 +1365,11 @@
           "name": "kookosmaito",
           "grams": 400,
           "fineliRecordId": "fineli-29014-2026-10-24",
-          "giRecordId": "coconut-milk-porridge-gi-31",
+          "giRecordId": null,
           "foodKey": "coconut-milk",
-          "preparationKey": "rice-porridge-with-coconut-milk",
+          "preparationKey": "coconut-milk-cooked-in-recipe",
           "massEvidence": "400 ml recipe amount converted using Fineli id 29014, 100 g/dl.",
-          "giMatchEvidence": "Published GI 31 for coconut-milk rice porridge; used as a low-confidence analogue, not plain coconut milk."
+          "giMatchEvidence": "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
         },
         {
           "name": "massaman-currytahna",
@@ -5798,11 +5798,11 @@
           "name": "täysrasvaista kookosmaitoa",
           "grams": 400,
           "fineliRecordId": "fineli-29014-2026-10-24",
-          "giRecordId": "coconut-milk-porridge-gi-31",
+          "giRecordId": null,
           "massEvidence": "400 ml at documented Fineli #29014 100 g/dl",
           "foodKey": "coconut-milk",
-          "preparationKey": "rice-porridge-with-coconut-milk",
-          "giMatchEvidence": "Published Coconut-milk porridge category/analogue; match limitations disclosed centrally."
+          "preparationKey": "coconut-milk-cooked-in-recipe",
+          "giMatchEvidence": "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
         },
         {
           "name": "Mae Ploy -keltaista currytahnaa",
@@ -6555,11 +6555,11 @@
           "name": "täysrasvaista kookosmaitoa",
           "grams": 400,
           "fineliRecordId": "fineli-29014-2026-10-24",
-          "giRecordId": "coconut-milk-porridge-gi-31",
+          "giRecordId": null,
           "massEvidence": "400 ml at Fineli #29014 100 g/dl",
           "foodKey": "coconut-milk",
-          "preparationKey": "rice-porridge-with-coconut-milk",
-          "giMatchEvidence": "Published Coconut-milk porridge category/analogue; match limitations disclosed centrally."
+          "preparationKey": "coconut-milk-cooked-in-recipe",
+          "giMatchEvidence": "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
         },
         {
           "name": "Mae Ploy -punaista currytahnaa",
@@ -7589,10 +7589,10 @@
           "grams": 400,
           "massEvidence": "Recipe-listed edible mass.",
           "fineliRecordId": "fineli-29014-2026-10-25",
-          "giRecordId": "coconut-milk-porridge-gi-31",
+          "giRecordId": null,
           "foodKey": "coconut-milk",
-          "preparationKey": "rice-porridge-with-coconut-milk",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "preparationKey": "coconut-milk-cooked-in-recipe",
+          "giMatchEvidence": "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
         },
         {
           "name": "kanalientä",

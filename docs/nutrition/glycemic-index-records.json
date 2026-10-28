@@ -566,26 +566,28 @@
     {
       "id": "coconut-milk-porridge-gi-31",
       "gi": 31,
-      "foodKey": "coconut-milk",
+      "foodKey": "rice-porridge-with-coconut-milk",
       "preparationKey": "rice-porridge-with-coconut-milk",
-      "food": "Coconut-milk porridge",
+      "food": "Rice porridge with coconut milk (mixed meal)",
       "preparation": "Rice porridge prepared with coconut milk",
       "qualityTier": "SUPPLEMENTARY",
       "referenceScale": "GLUCOSE_100",
       "source": {
-        "title": "Glycemic index values of traditional South Indian foods",
+        "title": "Green leafy porridges: how good are they in controlling glycaemic response?",
         "url": "https://pubmed.ncbi.nlm.nih.gov/22849311/",
-        "table": "Reported coconut-milk porridge result; n=10",
-        "year": 2012,
+        "table": "Original abstract: coconut-milk porridge GI 31 +/- 5; online publication 2012-07-31, journal 64(2):169-174 (2013)",
+        "year": 2013,
         "published": true,
         "iso26642Confirmed": false,
         "participants": 10,
         "referenceFood": "Glucose",
-        "qualityEvidence": "Published GI value for a mixed rice porridge containing coconut milk; it is not a measurement of plain coconut milk and ISO compliance is not confirmed."
+        "qualityEvidence": "The original abstract identifies rice and coconut-milk porridges as controls for leafy porridges. GI 31 +/- 5 is a mixed rice-porridge result, not an isolated coconut-milk measurement. Full methods were not accessible for this review; ISO compliance is not confirmed. Retained as reference only, excluded from ingredient-based GL calculations.",
+        "authors": "S. P. A. S. Senadheera; Sagarika Ekanayake"
       },
-      "note": "Low-confidence analogue for Fineli coconut milk/drink composite.",
-      "matchKind": "ANALOG",
-      "confidence": "LOW"
+      "note": "Mixed rice-and-coconut-milk porridge, not standalone coconut milk. No supported ingredient analogue is established. Exact preparation equivalence requires full-method review before any future calculation use.",
+      "matchKind": "EXACT",
+      "confidence": "LOW",
+      "calculationUse": "REFERENCE_ONLY"
     },
     {
       "id": "asian-regional-category-mean-gi-60",

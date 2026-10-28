@@ -467,3 +467,9 @@ Ajantasainen suunnittelupohja: [AJO 0 ja seuraava erä 2B6E](glycemic-coverage-r
 [188 keskeneräisen reseptin inventaario](glycemic-coverage-run-0-inventory.json)
 säilyttävät työjonon eri istuntojen välillä. AJO 0 ei muuta julkaistuja GK-arvoja.
 Tämän ohjeen vanhat kattavuusluvut ovat historiallisia; varmista nykytilanne tuoreella auditoinnilla.
+
+## AJO 0.5: kookosmaitopuuron GI-sidonnan korjaus
+
+[Lähdetarkistus, neljä vaikutusreseptiä ja regressiot](glycemic-coconut-source-review.md).
+Kattavuus 138 → 137: puurotutkimuksen GI 31 ei tue kookosmaidon ainesosasidontaa.
+[Koneluettava ennen/jälkeen-näyttö](glycemic-coconut-source-review.json).
