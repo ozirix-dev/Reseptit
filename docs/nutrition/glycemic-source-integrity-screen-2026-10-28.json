@@ -1,0 +1,4766 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-28",
+  "baselineCommit": "c02a70cd6c54d374445941a4d4896536f55b7182",
+  "scope": "Read-only triage of all 45 records and their current bindings. PASS is not new scientific approval. Counts before refer to published baseline; after to this proposal. No other family changed.",
+  "counts": {
+    "PASS": 19,
+    "P2": 1,
+    "P1": 23,
+    "P0": 2
+  },
+  "records": [
+    {
+      "id": "whole-tomato-raw-gi-22",
+      "classification": "PASS",
+      "finding": "2021 source identity and named food/preparation are consistent at screening level; cultivar/product/analogue limits remain as catalogued. No new scientific approval.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 3,
+      "calculatedUsersBefore": [
+        "tacokulho-nauta-avokado"
+      ],
+      "activeBindingsAfter": 3,
+      "calculatedUsersAfter": [
+        "tacokulho-nauta-avokado"
+      ],
+      "bindings": [
+        {
+          "recipeId": "idli-sambar",
+          "ingredient": "tomaatti",
+          "index": 5
+        },
+        {
+          "recipeId": "intialainen-rava-uttapam",
+          "ingredient": "tomaatti",
+          "index": 2
+        },
+        {
+          "recipeId": "tacokulho-nauta-avokado",
+          "ingredient": "tomaattia",
+          "index": 4
+        }
+      ]
+    },
+    {
+      "id": "tomato-cherry-raw-analogue-gi-22",
+      "classification": "PASS",
+      "finding": "2021 source identity and named food/preparation are consistent at screening level; cultivar/product/analogue limits remain as catalogued. No new scientific approval.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 1,
+      "calculatedUsersBefore": [
+        "kanasalaatti-pesto-mozzarella"
+      ],
+      "activeBindingsAfter": 1,
+      "calculatedUsersAfter": [
+        "kanasalaatti-pesto-mozzarella"
+      ],
+      "bindings": [
+        {
+          "recipeId": "kanasalaatti-pesto-mozzarella",
+          "ingredient": "kirsikkatomaatteja",
+          "index": 3
+        }
+      ]
+    },
+    {
+      "id": "tomato-juice-canned-gi-38",
+      "classification": "P2",
+      "finding": "Source points to a dynamic search page rather than a stable entry locator; product is specified but a durable row/reference identifier would improve traceability.",
+      "sourceUrl": "https://glycemicindex.com/gi-search/",
+      "sourceTitle": "University of Sydney Glycemic Index Search database",
+      "activeBindingsBefore": 0,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 0,
+      "calculatedUsersAfter": [],
+      "bindings": []
+    },
+    {
+      "id": "potato-boiled-china-gi-66",
+      "classification": "PASS",
+      "finding": "2021 source identity and named food/preparation are consistent at screening level; cultivar/product/analogue limits remain as catalogued. No new scientific approval.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 1,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 1,
+      "calculatedUsersAfter": [],
+      "bindings": [
+        {
+          "recipeId": "intialainen-aloo-paratha",
+          "ingredient": "peruna",
+          "index": 1
+        }
+      ]
+    },
+    {
+      "id": "potato-cooked-china-nonwestern-gi-66-4",
+      "classification": "P1",
+      "finding": "DOI identifies Chinese GI paper; compendium food is traceable, but exact primary preparation/protocol is not fully rechecked in this light screen.",
+      "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430",
+      "sourceTitle": "Glycemic index of cereals and tubers produced in China",
+      "activeBindingsBefore": 0,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 0,
+      "calculatedUsersAfter": [],
+      "bindings": []
+    },
+    {
+      "id": "potato-fried-evoo-lady-rosetta-gi-114",
+      "classification": "P1",
+      "finding": "DOI/title match. Recorded n=8 is below project strong-evidence policy; candidate only, not preparation-matched to tortilla.",
+      "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02",
+      "sourceTitle": "Glycemic Index of Two Different Fried Potato Varieties Cultivated Under Organic Fertilization Conditions",
+      "activeBindingsBefore": 0,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 0,
+      "calculatedUsersAfter": [],
+      "bindings": []
+    },
+    {
+      "id": "potato-fried-evoo-spunta-gi-83",
+      "classification": "P1",
+      "finding": "DOI/title match. Recorded n=8 is below project strong-evidence policy; candidate only, not preparation-matched to tortilla.",
+      "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02",
+      "sourceTitle": "Glycemic Index of Two Different Fried Potato Varieties Cultivated Under Organic Fertilization Conditions",
+      "activeBindingsBefore": 0,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 0,
+      "calculatedUsersAfter": [],
+      "bindings": []
+    },
+    {
+      "id": "potato-crisp-fried-china-nonwestern-gi-60-3",
+      "classification": "P1",
+      "finding": "DOI identifies Chinese GI paper; compendium food is traceable, but exact primary preparation/protocol is not fully rechecked in this light screen.",
+      "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430",
+      "sourceTitle": "Glycemic index of cereals and tubers produced in China",
+      "activeBindingsBefore": 0,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 0,
+      "calculatedUsersAfter": [],
+      "bindings": []
+    },
+    {
+      "id": "potato-steamed-nishiyutaka-nonwestern-gi-64",
+      "classification": "PASS",
+      "finding": "DOI/title and cultivar-specific steamed-food description are consistent; existing candidate-only/preparation restriction remains. Full protocol not newly approved.",
+      "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004",
+      "sourceTitle": "Consideration of the validity of glycemic index using blood glucose and insulin levels and breath hydrogen excretion in healthy subjects",
+      "activeBindingsBefore": 0,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 0,
+      "calculatedUsersAfter": [],
+      "bindings": []
+    },
+    {
+      "id": "potato-steamed-ainoaka-nonwestern-gi-63",
+      "classification": "PASS",
+      "finding": "DOI/title and cultivar-specific steamed-food description are consistent; existing candidate-only/preparation restriction remains. Full protocol not newly approved.",
+      "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004",
+      "sourceTitle": "Consideration of the validity of glycemic index using blood glucose and insulin levels and breath hydrogen excretion in healthy subjects",
+      "activeBindingsBefore": 0,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 0,
+      "calculatedUsersAfter": [],
+      "bindings": []
+    },
+    {
+      "id": "potato-steamed-dejima-nonwestern-gi-54",
+      "classification": "PASS",
+      "finding": "DOI/title and cultivar-specific steamed-food description are consistent; existing candidate-only/preparation restriction remains. Full protocol not newly approved.",
+      "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004",
+      "sourceTitle": "Consideration of the validity of glycemic index using blood glucose and insulin levels and breath hydrogen excretion in healthy subjects",
+      "activeBindingsBefore": 0,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 0,
+      "calculatedUsersAfter": [],
+      "bindings": []
+    },
+    {
+      "id": "potato-boiled-tortilla-analogue-gi-66",
+      "classification": "P1",
+      "finding": "Boiled/mashed preparation is documented, but transfer to recipe preparation or cultivar requires a separate evidence review.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 2,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 2,
+      "calculatedUsersAfter": [],
+      "bindings": [
+        {
+          "recipeId": "tortilla-de-patatas",
+          "ingredient": "peruna",
+          "index": 0
+        },
+        {
+          "recipeId": "valimerellinen-tortilla-espanola-aamupalaksi",
+          "ingredient": "perunaa",
+          "index": 1
+        }
+      ]
+    },
+    {
+      "id": "tomato-raw-cooked-sauce-analogue-gi-22",
+      "classification": "P1",
+      "finding": "Raw whole-tomato value is used for cooked/crushed sauces. DOI identity is correct; preparation transfer has no demonstrated equivalence. Prioritize published crushed-tomato users.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 49,
+      "calculatedUsersBefore": [
+        "gazpacho",
+        "halloumimunakas",
+        "italian-pata",
+        "karibia-jamaikalainen-munakokkeli",
+        "kesakurpitsalasagne-vhh",
+        "kurkku-oliivi-aamiaiskulho",
+        "lahi-ita-menemen-sumakilla",
+        "meksikolainen-molletes-pico-de-gallolla",
+        "meksikolainen-munakokkeli-pico-de-gallolla",
+        "pizza-margherita",
+        "raejuusto-pesto-kasviskulho",
+        "souvlaki",
+        "valimerellinen-menemen-fetalla",
+        "valimerellinen-pinaatti-fetashakshuka",
+        "yum-woon-sen-vhh"
+      ],
+      "activeBindingsAfter": 49,
+      "calculatedUsersAfter": [
+        "gazpacho",
+        "halloumimunakas",
+        "karibia-jamaikalainen-munakokkeli",
+        "kesakurpitsalasagne-vhh",
+        "kurkku-oliivi-aamiaiskulho",
+        "meksikolainen-molletes-pico-de-gallolla",
+        "meksikolainen-munakokkeli-pico-de-gallolla",
+        "pizza-margherita",
+        "raejuusto-pesto-kasviskulho",
+        "souvlaki",
+        "valimerellinen-menemen-fetalla",
+        "valimerellinen-pinaatti-fetashakshuka",
+        "yum-woon-sen-vhh"
+      ],
+      "bindings": [
+        {
+          "recipeId": "munatacot-huevos-rancheros",
+          "ingredient": "tomaattimurska",
+          "index": 2
+        },
+        {
+          "recipeId": "shakshuka",
+          "ingredient": "tomaattimurska",
+          "index": 3
+        },
+        {
+          "recipeId": "chili-con-carne-kukkakaaliriisi",
+          "ingredient": "tomaattimurskaa",
+          "index": 3
+        },
+        {
+          "recipeId": "ratatouille",
+          "ingredient": "kypsiä tomaatteja",
+          "index": 5
+        },
+        {
+          "recipeId": "taytetyt-paprikat-vhh",
+          "ingredient": "tomaattimurskaa",
+          "index": 3
+        },
+        {
+          "recipeId": "munakoiso-jauhelihavuoka-vhh",
+          "ingredient": "tomaattimurskaa",
+          "index": 2
+        },
+        {
+          "recipeId": "lahi-ita-kikherne-shakshuka",
+          "ingredient": "tomaatti",
+          "index": 1
+        },
+        {
+          "recipeId": "chole-bhature",
+          "ingredient": "tomaattimurskaa",
+          "index": 1
+        },
+        {
+          "recipeId": "butter-chicken",
+          "ingredient": "tomaattimurskaa",
+          "index": 1
+        },
+        {
+          "recipeId": "menemen",
+          "ingredient": "kypsää tomaattia",
+          "index": 0
+        },
+        {
+          "recipeId": "uunikanapasta-kesakurpitsa",
+          "ingredient": "kirsikkatomaatteja",
+          "index": 1
+        },
+        {
+          "recipeId": "pizza-margherita",
+          "ingredient": "tomaattimurskaa",
+          "index": 4
+        },
+        {
+          "recipeId": "koshari",
+          "ingredient": "tomaattimurskaa",
+          "index": 6
+        },
+        {
+          "recipeId": "tomaatti-kananmuna-wokki",
+          "ingredient": "kypsää tomaattia",
+          "index": 1
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "ingredient": "tomaattimurskaa",
+          "index": 4
+        },
+        {
+          "recipeId": "souvlaki",
+          "ingredient": "tomaattia",
+          "index": 10
+        },
+        {
+          "recipeId": "gazpacho",
+          "ingredient": "kypsiä tomaatteja",
+          "index": 0
+        },
+        {
+          "recipeId": "tabbouleh",
+          "ingredient": "tomaattia",
+          "index": 2
+        },
+        {
+          "recipeId": "chettinad-kana",
+          "ingredient": "tomaattia",
+          "index": 2
+        },
+        {
+          "recipeId": "raejuusto-pesto-kasviskulho",
+          "ingredient": "kirsikkatomaatteja",
+          "index": 1
+        },
+        {
+          "recipeId": "kesakurpitsalasagne-vhh",
+          "ingredient": "tomaattimurskaa",
+          "index": 2
+        },
+        {
+          "recipeId": "italian-pata",
+          "ingredient": "tomaattimurskaa",
+          "index": 1
+        },
+        {
+          "recipeId": "valimerellinen-menemen-fetalla",
+          "ingredient": "tomaattia",
+          "index": 1
+        },
+        {
+          "recipeId": "som-tam-vhh-kurkkuna",
+          "ingredient": "kirsikkatomaatteja",
+          "index": 1
+        },
+        {
+          "recipeId": "tom-yum-goong-vhh",
+          "ingredient": "kirsikkatomaatteja",
+          "index": 10
+        },
+        {
+          "recipeId": "ketopizza-pofiber-pohjalla",
+          "ingredient": "tomaattikastiketta",
+          "index": 4
+        },
+        {
+          "recipeId": "halloumimunakas",
+          "ingredient": "kirsikkatomaatteja",
+          "index": 2
+        },
+        {
+          "recipeId": "yum-woon-sen-vhh",
+          "ingredient": "tomaattia",
+          "index": 3
+        },
+        {
+          "recipeId": "kurkku-oliivi-aamiaiskulho",
+          "ingredient": "kirsikkatomaatteja",
+          "index": 2
+        },
+        {
+          "recipeId": "paprikainen-vhh-gulassi",
+          "ingredient": "tomaatti",
+          "index": 4
+        },
+        {
+          "recipeId": "kana-enchilada-kukkakaalivuoka",
+          "ingredient": "tomaattisalsaa",
+          "index": 2
+        },
+        {
+          "recipeId": "ropa-vieja",
+          "ingredient": "tomaattimurskaa",
+          "index": 4
+        },
+        {
+          "recipeId": "kanapyorykat-tomaattikastike",
+          "ingredient": "tomaattimurskaa",
+          "index": 5
+        },
+        {
+          "recipeId": "meksikolainen-huevos-divorciados",
+          "ingredient": "tomaatti",
+          "index": 1
+        },
+        {
+          "recipeId": "meksikolainen-molletes-pico-de-gallolla",
+          "ingredient": "tomaatti",
+          "index": 3
+        },
+        {
+          "recipeId": "intialainen-besan-chilla",
+          "ingredient": "tomaatti",
+          "index": 1
+        },
+        {
+          "recipeId": "valimerellinen-halloumi-tomaattileipa",
+          "ingredient": "tomaatti",
+          "index": 1
+        },
+        {
+          "recipeId": "meksikolainen-munakokkeli-pico-de-gallolla",
+          "ingredient": "tomaatti",
+          "index": 1
+        },
+        {
+          "recipeId": "dal-makhani",
+          "ingredient": "tomaattimurskaa",
+          "index": 7
+        },
+        {
+          "recipeId": "bouillabaisse",
+          "ingredient": "tomaattimurskaa",
+          "index": 6
+        },
+        {
+          "recipeId": "pav-bhaji",
+          "ingredient": "tomaattimurskaa",
+          "index": 8
+        },
+        {
+          "recipeId": "tunisialainen-ojja",
+          "ingredient": "tomaattimurskaa",
+          "index": 3
+        },
+        {
+          "recipeId": "thai-kananmunat-kookoscurryssa",
+          "ingredient": "tomaatti",
+          "index": 3
+        },
+        {
+          "recipeId": "meksikolainen-huevos-a-la-mexicana",
+          "ingredient": "tomaatti",
+          "index": 1
+        },
+        {
+          "recipeId": "karibia-ackee-ja-suolakala",
+          "ingredient": "tomaatti",
+          "index": 2
+        },
+        {
+          "recipeId": "karibia-jamaikalainen-munakokkeli",
+          "ingredient": "tomaatti",
+          "index": 1
+        },
+        {
+          "recipeId": "lahi-ita-menemen-sumakilla",
+          "ingredient": "tomaatti",
+          "index": 1
+        },
+        {
+          "recipeId": "valimerellinen-pinaatti-fetashakshuka",
+          "ingredient": "tomaatti",
+          "index": 1
+        },
+        {
+          "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+          "ingredient": "kirsikkatomaatteja",
+          "index": 1
+        }
+      ]
+    },
+    {
+      "id": "red-pepper-literature-analogue-gi-40",
+      "classification": "P0",
+      "finding": "Wrong DOI and untraceable generic Pepper GI 40; species, colour, preparation and primary human protocol unverified. Corrected to REFERENCE_ONLY in this PR.",
+      "sourceUrl": "https://doi.org/10.3390/nu12103041",
+      "sourceTitle": "Mens sana in corpore sano: Does the Glycemic Index Have a Role to Play?",
+      "activeBindingsBefore": 14,
+      "calculatedUsersBefore": [
+        "italian-pata",
+        "kana-fajita-pelti",
+        "lahi-ita-menemen-sumakilla",
+        "pad-kee-mao-vhh-konjac",
+        "paneer-tikka",
+        "paprikauunimunakkaat",
+        "yrttituorejuusto-kinkkurullat"
+      ],
+      "activeBindingsAfter": 0,
+      "calculatedUsersAfter": [],
+      "bindings": [
+        {
+          "recipeId": "paprikauunimunakkaat",
+          "ingredient": "punainen paprika",
+          "index": 0
+        },
+        {
+          "recipeId": "shakshuka",
+          "ingredient": "punainen paprika",
+          "index": 1
+        },
+        {
+          "recipeId": "chili-con-carne-kukkakaaliriisi",
+          "ingredient": "punainen paprika",
+          "index": 2
+        },
+        {
+          "recipeId": "ratatouille",
+          "ingredient": "punaista paprikaa",
+          "index": 2
+        },
+        {
+          "recipeId": "taytetyt-paprikat-vhh",
+          "ingredient": "isoa paprikaa",
+          "index": 0
+        },
+        {
+          "recipeId": "kana-fajita-pelti",
+          "ingredient": "punaista paprikaa",
+          "index": 1
+        },
+        {
+          "recipeId": "italian-pata",
+          "ingredient": "punaista paprikaa",
+          "index": 7
+        },
+        {
+          "recipeId": "pad-kee-mao-vhh-konjac",
+          "ingredient": "punaista paprikaa",
+          "index": 3
+        },
+        {
+          "recipeId": "tunisialainen-ojja",
+          "ingredient": "punainen paprika",
+          "index": 1
+        },
+        {
+          "recipeId": "kookos-lime-kanacurry",
+          "ingredient": "punainen paprika",
+          "index": 4
+        },
+        {
+          "recipeId": "paneer-tikka",
+          "ingredient": "punaista paprikaa",
+          "index": 1
+        },
+        {
+          "recipeId": "paneer-tikka",
+          "ingredient": "vihreää paprikaa",
+          "index": 2
+        },
+        {
+          "recipeId": "lahi-ita-menemen-sumakilla",
+          "ingredient": "vihreä paprika",
+          "index": 2
+        },
+        {
+          "recipeId": "yrttituorejuusto-kinkkurullat",
+          "ingredient": "punaista paprikaa",
+          "index": 3
+        }
+      ]
+    },
+    {
+      "id": "onion-literature-analogue-gi-15",
+      "classification": "PASS",
+      "finding": "Protected REFERENCE_ONLY, zero active bindings. Existing restriction prevents calculation use; PASS is not scientific re-approval.",
+      "sourceUrl": "https://doi.org/10.3390/nu12102989",
+      "sourceTitle": "Mens sana in corpore sano: Does the Glycemic Index Have a Role to Play?",
+      "activeBindingsBefore": 0,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 0,
+      "calculatedUsersAfter": [],
+      "bindings": []
+    },
+    {
+      "id": "dairy-category-mean-gi-35",
+      "classification": "P1",
+      "finding": "Heterogeneous dairy mean used for cream/cheeses; ingredient-level suitability needs review. Also assigned to cumin in incomplete recipes; no new scientific approval.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 125,
+      "calculatedUsersBefore": [
+        "broileri-kukkakaaligratiini",
+        "gulab-jamun",
+        "halloumimunakas",
+        "jauheliha-makaronilaatikko",
+        "jauhelihakastike-kesakurpitsanuudeleilla",
+        "kana-fajita-pelti",
+        "kanakorma-kukkakaaliriisilla",
+        "kanaviillokki-kukkakaalilla",
+        "karibia-johnny-cake",
+        "karibia-mango-limejogurtti",
+        "kermainen-lohipata",
+        "kesakurpitsalasagne-vhh",
+        "keto-joulutortut",
+        "keto-kauralesesampylat",
+        "keto-korvapuustit",
+        "keto-pannukakku",
+        "keto-pinaattiletut",
+        "kukkakaaligratiini-pekonilla",
+        "kurkku-oliivi-aamiaiskulho",
+        "lahi-ita-fattet-hummus",
+        "lahi-ita-manakish-zaatarilla",
+        "lahi-ita-zaatar-munat",
+        "lihapullat-kermakastikkeessa-vhh",
+        "marjakiisseli-vaniljakastikkeella",
+        "munakasrulla-pinaatti-tuorejuustolla",
+        "paahdettu-aamiaismunakoiso",
+        "paneer-tikka",
+        "pannacotta-marjakastikkeella",
+        "pohjoisafrikkalainen-harcha-juustolla",
+        "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+        "poronkaristys-kukkakaalimuusilla",
+        "raejuusto-pesto-kasviskulho",
+        "rahkapiirakka-vhh",
+        "savulohi-avokadokulho",
+        "silakkapihvit-tilli-kermakastike",
+        "souvlaki",
+        "tandoorikana",
+        "valimerellinen-appelsiini-aamiaiskakku",
+        "valimerellinen-jogurttikulho-hunajalla",
+        "valimerellinen-menemen-fetalla",
+        "valimerellinen-pinaatti-fetashakshuka",
+        "valimerellinen-ricotta-persikkakulho",
+        "vhh-brita-kakku",
+        "vhh-juustokakku",
+        "vhh-korvapuustit",
+        "vhh-letut",
+        "vhh-lihapiirakka",
+        "vhh-lohikeitto-kukkakaalilla",
+        "vhh-mansikkakakku",
+        "vhh-mokkapalat",
+        "vhh-omenapiirakka",
+        "yrttituorejuusto-kinkkurullat"
+      ],
+      "activeBindingsAfter": 125,
+      "calculatedUsersAfter": [
+        "broileri-kukkakaaligratiini",
+        "gulab-jamun",
+        "halloumimunakas",
+        "jauheliha-makaronilaatikko",
+        "jauhelihakastike-kesakurpitsanuudeleilla",
+        "kanakorma-kukkakaaliriisilla",
+        "kanaviillokki-kukkakaalilla",
+        "karibia-johnny-cake",
+        "karibia-mango-limejogurtti",
+        "kermainen-lohipata",
+        "kesakurpitsalasagne-vhh",
+        "keto-joulutortut",
+        "keto-kauralesesampylat",
+        "keto-korvapuustit",
+        "keto-pannukakku",
+        "keto-pinaattiletut",
+        "kukkakaaligratiini-pekonilla",
+        "kurkku-oliivi-aamiaiskulho",
+        "lahi-ita-fattet-hummus",
+        "lahi-ita-manakish-zaatarilla",
+        "lahi-ita-zaatar-munat",
+        "lihapullat-kermakastikkeessa-vhh",
+        "marjakiisseli-vaniljakastikkeella",
+        "munakasrulla-pinaatti-tuorejuustolla",
+        "paahdettu-aamiaismunakoiso",
+        "pannacotta-marjakastikkeella",
+        "pohjoisafrikkalainen-harcha-juustolla",
+        "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+        "poronkaristys-kukkakaalimuusilla",
+        "raejuusto-pesto-kasviskulho",
+        "rahkapiirakka-vhh",
+        "savulohi-avokadokulho",
+        "silakkapihvit-tilli-kermakastike",
+        "souvlaki",
+        "tandoorikana",
+        "valimerellinen-appelsiini-aamiaiskakku",
+        "valimerellinen-jogurttikulho-hunajalla",
+        "valimerellinen-menemen-fetalla",
+        "valimerellinen-pinaatti-fetashakshuka",
+        "valimerellinen-ricotta-persikkakulho",
+        "vhh-brita-kakku",
+        "vhh-juustokakku",
+        "vhh-korvapuustit",
+        "vhh-letut",
+        "vhh-lihapiirakka",
+        "vhh-lohikeitto-kukkakaalilla",
+        "vhh-mansikkakakku",
+        "vhh-mokkapalat",
+        "vhh-omenapiirakka"
+      ],
+      "bindings": [
+        {
+          "recipeId": "munakasrulla-pinaatti-tuorejuustolla",
+          "ingredient": "tuorejuusto",
+          "index": 1
+        },
+        {
+          "recipeId": "vhh-kaalilaatikko",
+          "ingredient": "kuohukermaa",
+          "index": 3
+        },
+        {
+          "recipeId": "gulab-jamun",
+          "ingredient": "maitojauhetta",
+          "index": 0
+        },
+        {
+          "recipeId": "gulab-jamun",
+          "ingredient": "maitoa",
+          "index": 2
+        },
+        {
+          "recipeId": "jauheliha-makaronilaatikko",
+          "ingredient": "raejuustoa",
+          "index": 1
+        },
+        {
+          "recipeId": "jauheliha-makaronilaatikko",
+          "ingredient": "maitoa",
+          "index": 2
+        },
+        {
+          "recipeId": "butter-chicken",
+          "ingredient": "maustamatonta jogurttia",
+          "index": 0
+        },
+        {
+          "recipeId": "butter-chicken",
+          "ingredient": "kuohukermaa",
+          "index": 2
+        },
+        {
+          "recipeId": "lihapullat-kermakastikkeessa-vhh",
+          "ingredient": "kuohukermaa",
+          "index": 0
+        },
+        {
+          "recipeId": "kanakorma-kukkakaaliriisilla",
+          "ingredient": "kuohukermaa",
+          "index": 0
+        },
+        {
+          "recipeId": "kanakorma-kukkakaaliriisilla",
+          "ingredient": "turkkilaista jogurttia",
+          "index": 1
+        },
+        {
+          "recipeId": "uunikanapasta-kesakurpitsa",
+          "ingredient": "tuorejuustoa",
+          "index": 2
+        },
+        {
+          "recipeId": "jauhelihakastike-kesakurpitsanuudeleilla",
+          "ingredient": "kuohukermaa",
+          "index": 1
+        },
+        {
+          "recipeId": "meheva-suklaakakku",
+          "ingredient": "kuohukermaa",
+          "index": 8
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredient": "kuohukermaa",
+          "index": 5
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredient": "täysmaitoa",
+          "index": 6
+        },
+        {
+          "recipeId": "pannacotta-marjakastikkeella",
+          "ingredient": "kuohukermaa",
+          "index": 0
+        },
+        {
+          "recipeId": "pannacotta-marjakastikkeella",
+          "ingredient": "täysmaitoa",
+          "index": 1
+        },
+        {
+          "recipeId": "siemengranola-jogurtilla",
+          "ingredient": "maustamatonta kreikkalaista jogurttia",
+          "index": 6
+        },
+        {
+          "recipeId": "koshari",
+          "ingredient": "juustokuminaa",
+          "index": 9
+        },
+        {
+          "recipeId": "marokkolainen-couscous",
+          "ingredient": "juustokuminaa",
+          "index": 7
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "ingredient": "maitoa",
+          "index": 9
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "ingredient": "raastettua kovaa juustoa",
+          "index": 11
+        },
+        {
+          "recipeId": "doner-kebab",
+          "ingredient": "kreikkalaista jogurttia",
+          "index": 1
+        },
+        {
+          "recipeId": "souvlaki",
+          "ingredient": "kreikkalaista jogurttia",
+          "index": 6
+        },
+        {
+          "recipeId": "spanakopita",
+          "ingredient": "fetajuustoa",
+          "index": 2
+        },
+        {
+          "recipeId": "poronkaristys-kukkakaalimuusilla",
+          "ingredient": "kuohukermaa",
+          "index": 7
+        },
+        {
+          "recipeId": "vhh-omenapiirakka",
+          "ingredient": "maitorahkaa",
+          "index": 7
+        },
+        {
+          "recipeId": "vhh-raparperipiirakka",
+          "ingredient": "maitorahkaa",
+          "index": 4
+        },
+        {
+          "recipeId": "vhh-mansikkakakku",
+          "ingredient": "kuohukermaa",
+          "index": 4
+        },
+        {
+          "recipeId": "vhh-mansikkakakku",
+          "ingredient": "maitorahkaa",
+          "index": 5
+        },
+        {
+          "recipeId": "kermainen-kanasienipannu",
+          "ingredient": "kuohukermaa",
+          "index": 3
+        },
+        {
+          "recipeId": "kermainen-kanasienipannu",
+          "ingredient": "Dijon-sinappia",
+          "index": 5
+        },
+        {
+          "recipeId": "raejuusto-pesto-kasviskulho",
+          "ingredient": "raejuustoa",
+          "index": 0
+        },
+        {
+          "recipeId": "kana-parmesaanipannu-parsakaali",
+          "ingredient": "kuohukermaa",
+          "index": 2
+        },
+        {
+          "recipeId": "kana-parmesaanipannu-parsakaali",
+          "ingredient": "raastettua parmesaania",
+          "index": 3
+        },
+        {
+          "recipeId": "vhh-juustokakku",
+          "ingredient": "maustamatonta tuorejuustoa",
+          "index": 2
+        },
+        {
+          "recipeId": "vhh-juustokakku",
+          "ingredient": "smetanaa",
+          "index": 3
+        },
+        {
+          "recipeId": "vhh-brita-kakku",
+          "ingredient": "kuohukermaa",
+          "index": 7
+        },
+        {
+          "recipeId": "rahkapiirakka-vhh",
+          "ingredient": "maitorahkaa",
+          "index": 3
+        },
+        {
+          "recipeId": "rahkapiirakka-vhh",
+          "ingredient": "kuohukermaa",
+          "index": 5
+        },
+        {
+          "recipeId": "vhh-letut",
+          "ingredient": "maustamatonta tuorejuustoa",
+          "index": 1
+        },
+        {
+          "recipeId": "vhh-letut",
+          "ingredient": "kuohukermaa",
+          "index": 3
+        },
+        {
+          "recipeId": "vhh-lihapiirakka",
+          "ingredient": "juustoraastetta",
+          "index": 1
+        },
+        {
+          "recipeId": "vhh-lihapiirakka",
+          "ingredient": "tuorejuustoa",
+          "index": 2
+        },
+        {
+          "recipeId": "vhh-runebergintortut",
+          "ingredient": "maitorahkaa",
+          "index": 3
+        },
+        {
+          "recipeId": "keto-korvapuustit",
+          "ingredient": "mozzarellaraastetta",
+          "index": 1
+        },
+        {
+          "recipeId": "keto-korvapuustit",
+          "ingredient": "tuorejuustoa",
+          "index": 2
+        },
+        {
+          "recipeId": "vhh-korvapuustit",
+          "ingredient": "mozzarella-raastetta",
+          "index": 0
+        },
+        {
+          "recipeId": "vhh-korvapuustit",
+          "ingredient": "maustamatonta tuorejuustoa",
+          "index": 1
+        },
+        {
+          "recipeId": "vhh-mokkapalat",
+          "ingredient": "kuohukermaa",
+          "index": 2
+        },
+        {
+          "recipeId": "maksalaatikko-kukkakaalilla",
+          "ingredient": "kuohukermaa",
+          "index": 4
+        },
+        {
+          "recipeId": "paistettu-maksa-pekonilla",
+          "ingredient": "kuohukermaa",
+          "index": 4
+        },
+        {
+          "recipeId": "kesakurpitsalasagne-vhh",
+          "ingredient": "kuohukermaa",
+          "index": 3
+        },
+        {
+          "recipeId": "rahka-marjakerroskulho",
+          "ingredient": "maitorahkaa",
+          "index": 0
+        },
+        {
+          "recipeId": "rahka-marjakerroskulho",
+          "ingredient": "turkkilaista jogurttia",
+          "index": 1
+        },
+        {
+          "recipeId": "vhh-lohikeitto-kukkakaalilla",
+          "ingredient": "kuohukermaa",
+          "index": 6
+        },
+        {
+          "recipeId": "kana-fajita-pelti",
+          "ingredient": "kreikkalaista jogurttia",
+          "index": 6
+        },
+        {
+          "recipeId": "kukkakaaligratiini-pekonilla",
+          "ingredient": "kuohukermaa",
+          "index": 2
+        },
+        {
+          "recipeId": "valimerellinen-menemen-fetalla",
+          "ingredient": "fetajuustoa",
+          "index": 3
+        },
+        {
+          "recipeId": "broileri-kukkakaaligratiini",
+          "ingredient": "kuohukermaa",
+          "index": 2
+        },
+        {
+          "recipeId": "kanakeitto-pinaatti-sitruuna",
+          "ingredient": "kuohukermaa",
+          "index": 2
+        },
+        {
+          "recipeId": "kermainen-lohipata",
+          "ingredient": "maustamatonta tuorejuustoa",
+          "index": 3
+        },
+        {
+          "recipeId": "kermainen-lohipata",
+          "ingredient": "kuohukermaa",
+          "index": 4
+        },
+        {
+          "recipeId": "paahdettu-aamiaismunakoiso",
+          "ingredient": "kreikkalaista jogurttia",
+          "index": 2
+        },
+        {
+          "recipeId": "ketopizza-pofiber-pohjalla",
+          "ingredient": "tuorejuustoa",
+          "index": 1
+        },
+        {
+          "recipeId": "marjainen-chiavanukas",
+          "ingredient": "kreikkalaista jogurttia",
+          "index": 2
+        },
+        {
+          "recipeId": "halloumimunakas",
+          "ingredient": "halloumijuustoa",
+          "index": 1
+        },
+        {
+          "recipeId": "raejuusto-uunimunakas",
+          "ingredient": "ruokakermaa",
+          "index": 1
+        },
+        {
+          "recipeId": "raejuusto-uunimunakas",
+          "ingredient": "raejuustoa",
+          "index": 2
+        },
+        {
+          "recipeId": "keto-kauralesesampylat",
+          "ingredient": "raejuustoa",
+          "index": 1
+        },
+        {
+          "recipeId": "keto-kauralesesampylat",
+          "ingredient": "kuohukermaa",
+          "index": 5
+        },
+        {
+          "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+          "ingredient": "kuohukermaa",
+          "index": 2
+        },
+        {
+          "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+          "ingredient": "kuohukermaa",
+          "index": 7
+        },
+        {
+          "recipeId": "keto-pannukakku",
+          "ingredient": "kuohukermaa",
+          "index": 1
+        },
+        {
+          "recipeId": "keto-pannukakku",
+          "ingredient": "tuorejuustoa",
+          "index": 2
+        },
+        {
+          "recipeId": "kaakao-kookos-chia",
+          "ingredient": "kuohukermaa",
+          "index": 2
+        },
+        {
+          "recipeId": "parsakaali-sinihomejuustofrittata",
+          "ingredient": "kuohukermaa",
+          "index": 4
+        },
+        {
+          "recipeId": "keto-pinaattiletut",
+          "ingredient": "tuorejuustoa",
+          "index": 1
+        },
+        {
+          "recipeId": "kurkku-oliivi-aamiaiskulho",
+          "ingredient": "fetajuustoa",
+          "index": 1
+        },
+        {
+          "recipeId": "uunilohi-smetanakuorrutteella",
+          "ingredient": "smetanaa",
+          "index": 1
+        },
+        {
+          "recipeId": "savulohi-avokadokulho",
+          "ingredient": "kreikkalaista jogurttia",
+          "index": 4
+        },
+        {
+          "recipeId": "hyderabadi-kanabiryani",
+          "ingredient": "maustamatonta jogurttia",
+          "index": 2
+        },
+        {
+          "recipeId": "intialainen-rava-uttapam",
+          "ingredient": "jogurtti",
+          "index": 1
+        },
+        {
+          "recipeId": "lanttulaatikko-kermainen",
+          "ingredient": "kuohukermaa",
+          "index": 1
+        },
+        {
+          "recipeId": "nakkikastike-kukkakaalimuusi",
+          "ingredient": "kuohukermaa",
+          "index": 2
+        },
+        {
+          "recipeId": "silakkapihvit-tilli-kermakastike",
+          "ingredient": "kuohukermaa",
+          "index": 3
+        },
+        {
+          "recipeId": "lahi-ita-fattet-hummus",
+          "ingredient": "jogurtti",
+          "index": 2
+        },
+        {
+          "recipeId": "meksikolainen-chilaquiles-verdes",
+          "ingredient": "queso fresco",
+          "index": 3
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+          "ingredient": "maito",
+          "index": 2
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+          "ingredient": "tuorejuusto",
+          "index": 3
+        },
+        {
+          "recipeId": "karibia-johnny-cake",
+          "ingredient": "maito",
+          "index": 1
+        },
+        {
+          "recipeId": "lahi-ita-taatelipuuro-tahinilla",
+          "ingredient": "täysmaitoa",
+          "index": 4
+        },
+        {
+          "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+          "ingredient": "jogurtti",
+          "index": 3
+        },
+        {
+          "recipeId": "valimerellinen-halloumi-tomaattileipa",
+          "ingredient": "halloumi",
+          "index": 0
+        },
+        {
+          "recipeId": "lahi-ita-manakish-zaatarilla",
+          "ingredient": "jogurtti",
+          "index": 3
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-minttutee-kaurapuuro",
+          "ingredient": "maito",
+          "index": 2
+        },
+        {
+          "recipeId": "meksikolainen-atole-maissipuuro",
+          "ingredient": "maito",
+          "index": 1
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+          "ingredient": "jogurtti",
+          "index": 3
+        },
+        {
+          "recipeId": "karibia-mango-limejogurtti",
+          "ingredient": "jogurtti",
+          "index": 1
+        },
+        {
+          "recipeId": "thai-papaijajogurtti",
+          "ingredient": "jogurtti",
+          "index": 1
+        },
+        {
+          "recipeId": "intialainen-pinaatti-paneer-chilla",
+          "ingredient": "paneer",
+          "index": 2
+        },
+        {
+          "recipeId": "lahi-ita-pistaasijogurtti",
+          "ingredient": "jogurtti",
+          "index": 0
+        },
+        {
+          "recipeId": "lahi-ita-zaatar-munat",
+          "ingredient": "jogurtti",
+          "index": 3
+        },
+        {
+          "recipeId": "keto-joulutortut",
+          "ingredient": "tuorejuustoa",
+          "index": 2
+        },
+        {
+          "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+          "ingredient": "jogurtti",
+          "index": 0
+        },
+        {
+          "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+          "ingredient": "maustamatonta kreikkalaista jogurttia, 7 % rasvaa",
+          "index": 0
+        },
+        {
+          "recipeId": "kanaviillokki-kukkakaalilla",
+          "ingredient": "kuohukermaa",
+          "index": 2
+        },
+        {
+          "recipeId": "kookos-lime-kanacurry",
+          "ingredient": "täysrasvaista kookosmaitoa",
+          "index": 1
+        },
+        {
+          "recipeId": "sate-ayam",
+          "ingredient": "kookosmaitoa",
+          "index": 7
+        },
+        {
+          "recipeId": "janssoninkiusaus-juuriselleri",
+          "ingredient": "kuohukermaa",
+          "index": 3
+        },
+        {
+          "recipeId": "janssoninkiusaus-juuriselleri",
+          "ingredient": "täysmaitoa",
+          "index": 4
+        },
+        {
+          "recipeId": "valimerellinen-ricotta-persikkakulho",
+          "ingredient": "ricotta",
+          "index": 0
+        },
+        {
+          "recipeId": "paneer-tikka",
+          "ingredient": "paneer-juustoa",
+          "index": 0
+        },
+        {
+          "recipeId": "paneer-tikka",
+          "ingredient": "maustamatonta jogurttia",
+          "index": 3
+        },
+        {
+          "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+          "ingredient": "jogurtti",
+          "index": 0
+        },
+        {
+          "recipeId": "pellava-puuro-pahkinoilla",
+          "ingredient": "makeuttamatonta mantelimaitoa",
+          "index": 2
+        },
+        {
+          "recipeId": "pellava-puuro-pahkinoilla",
+          "ingredient": "kuohukermaa",
+          "index": 3
+        },
+        {
+          "recipeId": "valimerellinen-pinaatti-fetashakshuka",
+          "ingredient": "feta",
+          "index": 3
+        },
+        {
+          "recipeId": "yrttituorejuusto-kinkkurullat",
+          "ingredient": "maustamatonta tuorejuustoa, 20 % rasvaa",
+          "index": 1
+        },
+        {
+          "recipeId": "rogan-josh",
+          "ingredient": "maustamatonta jogurttia",
+          "index": 3
+        },
+        {
+          "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+          "ingredient": "fetajuustoa",
+          "index": 3
+        },
+        {
+          "recipeId": "palak-paneer",
+          "ingredient": "paneer-juustoa",
+          "index": 1
+        },
+        {
+          "recipeId": "palak-paneer",
+          "ingredient": "kuohukermaa",
+          "index": 9
+        },
+        {
+          "recipeId": "tandoorikana",
+          "ingredient": "maustamatonta jogurttia",
+          "index": 1
+        }
+      ]
+    },
+    {
+      "id": "plain-yogurt-category-mean-gi-27-2017",
+      "classification": "PASS",
+      "finding": "DOI identifies the yogurt review, and record labels a yogurt-only mean rather than an exact brand; no obvious metadata mismatch.",
+      "sourceUrl": "https://doi.org/10.3945/jn.116.240770",
+      "sourceTitle": "Yogurt Is a Low-Glycemic Index Food",
+      "activeBindingsBefore": 1,
+      "calculatedUsersBefore": [
+        "tacokulho-nauta-avokado"
+      ],
+      "activeBindingsAfter": 1,
+      "calculatedUsersAfter": [
+        "tacokulho-nauta-avokado"
+      ],
+      "bindings": [
+        {
+          "recipeId": "tacokulho-nauta-avokado",
+          "ingredient": "maustamatonta jogurttia 3,9 % rasvaa",
+          "index": 7
+        }
+      ]
+    },
+    {
+      "id": "chickpea-canned-gi-35",
+      "classification": "PASS",
+      "finding": "2021 source identity and named food/preparation are consistent at screening level; cultivar/product/analogue limits remain as catalogued. No new scientific approval.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 3,
+      "calculatedUsersBefore": [
+        "hummus",
+        "valimerellinen-kikherne-yrttiaamiainen"
+      ],
+      "activeBindingsAfter": 3,
+      "calculatedUsersAfter": [
+        "hummus",
+        "valimerellinen-kikherne-yrttiaamiainen"
+      ],
+      "bindings": [
+        {
+          "recipeId": "hummus",
+          "ingredient": "kypsiä kikherneitä",
+          "index": 0
+        },
+        {
+          "recipeId": "valimerellinen-kikherne-yrttiaamiainen",
+          "ingredient": "kikherne",
+          "index": 0
+        },
+        {
+          "recipeId": "lahi-ita-kikherne-shakshuka",
+          "ingredient": "kikherne",
+          "index": 2
+        }
+      ]
+    },
+    {
+      "id": "legumes-category-mean-gi-34",
+      "classification": "P1",
+      "finding": "Category mean used for processed legumes and sauces/flours; fermentation, product and preparation equivalence needs review.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 39,
+      "calculatedUsersBefore": [
+        "amritsari-kala",
+        "intialainen-pesarattu-mungpavuista",
+        "khao-man-gai-vhh",
+        "kiinalainen-soijamaito-aamiaisella",
+        "lahi-ita-fattet-hummus",
+        "lahi-ita-ful-medames",
+        "lahi-ita-kikhernejauho-yrttilettu",
+        "medu-vada",
+        "meksikolainen-aamiais-tacot-mustapavuilla",
+        "meksikolainen-molletes-pico-de-gallolla",
+        "pad-kra-pao-vhh",
+        "yangzhou-paistettu-riisi"
+      ],
+      "activeBindingsAfter": 39,
+      "calculatedUsersAfter": [
+        "amritsari-kala",
+        "intialainen-pesarattu-mungpavuista",
+        "khao-man-gai-vhh",
+        "kiinalainen-soijamaito-aamiaisella",
+        "lahi-ita-fattet-hummus",
+        "lahi-ita-ful-medames",
+        "lahi-ita-kikhernejauho-yrttilettu",
+        "medu-vada",
+        "meksikolainen-aamiais-tacot-mustapavuilla",
+        "meksikolainen-molletes-pico-de-gallolla",
+        "pad-kra-pao-vhh",
+        "yangzhou-paistettu-riisi"
+      ],
+      "bindings": [
+        {
+          "recipeId": "chili-con-carne-kukkakaaliriisi",
+          "ingredient": "kidneypapuja",
+          "index": 4
+        },
+        {
+          "recipeId": "chole-bhature",
+          "ingredient": "kuivattuja kikherneitä",
+          "index": 0
+        },
+        {
+          "recipeId": "pani-puri",
+          "ingredient": "kypsiä kikherneitä",
+          "index": 3
+        },
+        {
+          "recipeId": "medu-vada",
+          "ingredient": "urad-dal-linssejä",
+          "index": 0
+        },
+        {
+          "recipeId": "koshari",
+          "ingredient": "ruskeita linssejä",
+          "index": 0
+        },
+        {
+          "recipeId": "marokkolainen-couscous",
+          "ingredient": "kikherneitä",
+          "index": 5
+        },
+        {
+          "recipeId": "bulgogi",
+          "ingredient": "soijakastiketta",
+          "index": 2
+        },
+        {
+          "recipeId": "harira",
+          "ingredient": "kuivattuja vihreitä linssejä",
+          "index": 4
+        },
+        {
+          "recipeId": "harira",
+          "ingredient": "kikherneitä",
+          "index": 5
+        },
+        {
+          "recipeId": "khao-man-gai-vhh",
+          "ingredient": "Healthy Boy -soijapaputahnaa",
+          "index": 6
+        },
+        {
+          "recipeId": "pad-kra-pao-vhh",
+          "ingredient": "suolatonta soijakastiketta",
+          "index": 7
+        },
+        {
+          "recipeId": "idli-sambar",
+          "ingredient": "punaisia linssejä",
+          "index": 3
+        },
+        {
+          "recipeId": "yangzhou-paistettu-riisi",
+          "ingredient": "herneitä",
+          "index": 3
+        },
+        {
+          "recipeId": "amritsari-kala",
+          "ingredient": "kikhernejauhoja",
+          "index": 1
+        },
+        {
+          "recipeId": "karibia-kookosriisi-pavuilla",
+          "ingredient": "kypsiä, valutettuja kidneypapuja",
+          "index": 2
+        },
+        {
+          "recipeId": "lahi-ita-kikhernejauho-yrttilettu",
+          "ingredient": "kikhernejauho",
+          "index": 0
+        },
+        {
+          "recipeId": "lahi-ita-fattet-hummus",
+          "ingredient": "kypsiä, valutettuja kikherneitä",
+          "index": 0
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-lablabi",
+          "ingredient": "kypsiä, valutettuja kikherneitä",
+          "index": 0
+        },
+        {
+          "recipeId": "hernekeitto-savupotkalla",
+          "ingredient": "kuivattuja herneitä",
+          "index": 0
+        },
+        {
+          "recipeId": "intialainen-ven-pongal",
+          "ingredient": "mungpapu",
+          "index": 1
+        },
+        {
+          "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
+          "ingredient": "soijapapu",
+          "index": 0
+        },
+        {
+          "recipeId": "meksikolainen-aamiais-tacot-mustapavuilla",
+          "ingredient": "musta papu",
+          "index": 2
+        },
+        {
+          "recipeId": "meksikolainen-paputostada-aamupalaksi",
+          "ingredient": "musta papu",
+          "index": 0
+        },
+        {
+          "recipeId": "intialainen-pesarattu-mungpavuista",
+          "ingredient": "mungpapu",
+          "index": 0
+        },
+        {
+          "recipeId": "falafel",
+          "ingredient": "kuivattuja kikherneitä",
+          "index": 0
+        },
+        {
+          "recipeId": "masala-dosa",
+          "ingredient": "urad-dal-linssejä",
+          "index": 1
+        },
+        {
+          "recipeId": "intialainen-idli-kookoschutneylla",
+          "ingredient": "urad-linssi",
+          "index": 1
+        },
+        {
+          "recipeId": "intialainen-masala-dosa",
+          "ingredient": "urad-linssi",
+          "index": 1
+        },
+        {
+          "recipeId": "malesialainen-roti-canai-dhalilla",
+          "ingredient": "linssi",
+          "index": 1
+        },
+        {
+          "recipeId": "lahi-ita-ful-medames",
+          "ingredient": "härkäpapu",
+          "index": 0
+        },
+        {
+          "recipeId": "meksikolainen-huevos-divorciados",
+          "ingredient": "musta papu",
+          "index": 3
+        },
+        {
+          "recipeId": "meksikolainen-molletes-pico-de-gallolla",
+          "ingredient": "musta papu",
+          "index": 1
+        },
+        {
+          "recipeId": "korealainen-bindaetteok-aamiaiseksi",
+          "ingredient": "mungpapu",
+          "index": 0
+        },
+        {
+          "recipeId": "intialainen-besan-chilla",
+          "ingredient": "kikhernejauho",
+          "index": 0
+        },
+        {
+          "recipeId": "valimerellinen-farinata-aamupalaksi",
+          "ingredient": "kikhernejauho",
+          "index": 0
+        },
+        {
+          "recipeId": "intialainen-pinaatti-paneer-chilla",
+          "ingredient": "kikhernejauho",
+          "index": 0
+        },
+        {
+          "recipeId": "dal-makhani",
+          "ingredient": "kidneypapuja",
+          "index": 1
+        },
+        {
+          "recipeId": "indonesialainen-tempeh-munakulho",
+          "ingredient": "tempeh",
+          "index": 0
+        },
+        {
+          "recipeId": "kiinalainen-soijamaito-aamiaisella",
+          "ingredient": "soijamaito",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "id": "vegetables-category-mean-gi-66",
+      "classification": "P1",
+      "finding": "Heterogeneous vegetable mean used across non-starchy vegetables/roots and preparations; individual food match requires review.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 188,
+      "calculatedUsersBefore": [
+        "broileri-kukkakaaligratiini",
+        "gai-yang-vhh",
+        "gazpacho",
+        "indonesialainen-ketoprak-aamiaiskulho",
+        "italian-pata",
+        "jauhelihakastike-kesakurpitsanuudeleilla",
+        "kai-jiew-vhh",
+        "kana-yakitori-kaalilla",
+        "kanakorma-kukkakaaliriisilla",
+        "kanaviillokki-kukkakaalilla",
+        "kantonilainen-hoyrytetty-kala",
+        "karjalanpaisti-vhh",
+        "kermainen-lohipata",
+        "kesakurpitsalasagne-vhh",
+        "khao-kha-moo-vhh",
+        "khao-man-gai-vhh",
+        "kiinalainen-riisipuuro-kananmunalla",
+        "kiinalainen-tomaattimunakas-riisilla",
+        "korealainen-gyeran-mari-kasviksilla",
+        "korealainen-jumeokbap-merilevalla",
+        "korealainen-yachaejuk-kasvisjuk",
+        "kukkakaaligratiini-pekonilla",
+        "lahi-ita-kikhernejauho-yrttilettu",
+        "larb-moo-vhh",
+        "lihapullat-kermakastikkeessa-vhh",
+        "malesialainen-congee-inkivaarilla",
+        "malesialainen-mee-goreng-aamunuudeleilla",
+        "paahdettu-aamiaismunakoiso",
+        "pad-kee-mao-vhh-konjac",
+        "pad-kra-pao-vhh",
+        "poronkaristys-kukkakaalimuusilla",
+        "raejuusto-pesto-kasviskulho",
+        "samosa",
+        "savulohi-avokadokulho",
+        "souvlaki",
+        "valimerellinen-kikherne-yrttiaamiainen",
+        "valimerellinen-menemen-fetalla",
+        "valimerellinen-pinaatti-fetashakshuka",
+        "vhh-kaalikaarryleet",
+        "vhh-lihapiirakka",
+        "vhh-lohikeitto-kukkakaalilla",
+        "vietnamilainen-banh-bao-kananmunalla",
+        "vietnamilainen-banh-cuon-sienilla",
+        "vietnamilainen-banh-mi-munalla",
+        "yangzhou-paistettu-riisi",
+        "yrttituorejuusto-kinkkurullat"
+      ],
+      "activeBindingsAfter": 188,
+      "calculatedUsersAfter": [
+        "broileri-kukkakaaligratiini",
+        "gai-yang-vhh",
+        "gazpacho",
+        "indonesialainen-ketoprak-aamiaiskulho",
+        "jauhelihakastike-kesakurpitsanuudeleilla",
+        "kai-jiew-vhh",
+        "kana-yakitori-kaalilla",
+        "kanakorma-kukkakaaliriisilla",
+        "kanaviillokki-kukkakaalilla",
+        "kantonilainen-hoyrytetty-kala",
+        "karjalanpaisti-vhh",
+        "kermainen-lohipata",
+        "kesakurpitsalasagne-vhh",
+        "khao-kha-moo-vhh",
+        "khao-man-gai-vhh",
+        "kiinalainen-riisipuuro-kananmunalla",
+        "kiinalainen-tomaattimunakas-riisilla",
+        "korealainen-gyeran-mari-kasviksilla",
+        "korealainen-jumeokbap-merilevalla",
+        "korealainen-yachaejuk-kasvisjuk",
+        "kukkakaaligratiini-pekonilla",
+        "lahi-ita-kikhernejauho-yrttilettu",
+        "larb-moo-vhh",
+        "lihapullat-kermakastikkeessa-vhh",
+        "malesialainen-congee-inkivaarilla",
+        "malesialainen-mee-goreng-aamunuudeleilla",
+        "paahdettu-aamiaismunakoiso",
+        "pad-kra-pao-vhh",
+        "poronkaristys-kukkakaalimuusilla",
+        "raejuusto-pesto-kasviskulho",
+        "samosa",
+        "savulohi-avokadokulho",
+        "souvlaki",
+        "valimerellinen-kikherne-yrttiaamiainen",
+        "valimerellinen-menemen-fetalla",
+        "valimerellinen-pinaatti-fetashakshuka",
+        "vhh-kaalikaarryleet",
+        "vhh-lihapiirakka",
+        "vhh-lohikeitto-kukkakaalilla",
+        "vietnamilainen-banh-bao-kananmunalla",
+        "vietnamilainen-banh-cuon-sienilla",
+        "vietnamilainen-banh-mi-munalla",
+        "yangzhou-paistettu-riisi"
+      ],
+      "bindings": [
+        {
+          "recipeId": "chili-con-carne-kukkakaaliriisi",
+          "ingredient": "kukkakaali",
+          "index": 8
+        },
+        {
+          "recipeId": "ratatouille",
+          "ingredient": "munakoisoa",
+          "index": 0
+        },
+        {
+          "recipeId": "ratatouille",
+          "ingredient": "kesäkurpitsaa",
+          "index": 1
+        },
+        {
+          "recipeId": "vhh-kaalikaarryleet",
+          "ingredient": "valkokaalia",
+          "index": 0
+        },
+        {
+          "recipeId": "vhh-kaalikaarryleet",
+          "ingredient": "kukkakaalirouhetta",
+          "index": 2
+        },
+        {
+          "recipeId": "jauheliha-kaalikeitto-vhh",
+          "ingredient": "valkokaalia",
+          "index": 1
+        },
+        {
+          "recipeId": "vhh-kaalilaatikko",
+          "ingredient": "valkokaalia",
+          "index": 0
+        },
+        {
+          "recipeId": "munakoiso-jauhelihavuoka-vhh",
+          "ingredient": "munakoisoa",
+          "index": 0
+        },
+        {
+          "recipeId": "valimerellinen-kikherne-yrttiaamiainen",
+          "ingredient": "kurkku",
+          "index": 1
+        },
+        {
+          "recipeId": "massaman-curry-kanalla-vhh",
+          "ingredient": "nauris",
+          "index": 2
+        },
+        {
+          "recipeId": "massaman-curry-kanalla-vhh",
+          "ingredient": "kukkakaali yhteensä",
+          "index": 3
+        },
+        {
+          "recipeId": "samosa",
+          "ingredient": "pakasteherneitä",
+          "index": 2
+        },
+        {
+          "recipeId": "lohikeitto-kuohukermalla",
+          "ingredient": "porkkana",
+          "index": 1
+        },
+        {
+          "recipeId": "punainen-kanacurry-vhh",
+          "ingredient": "punaista paprikaa",
+          "index": 1
+        },
+        {
+          "recipeId": "punainen-kanacurry-vhh",
+          "ingredient": "kukkakaaliriisiä",
+          "index": 2
+        },
+        {
+          "recipeId": "thai-vihrea-curry-kanalla-vhh",
+          "ingredient": "kesäkurpitsaa",
+          "index": 1
+        },
+        {
+          "recipeId": "thai-vihrea-curry-kanalla-vhh",
+          "ingredient": "munakoisoa",
+          "index": 2
+        },
+        {
+          "recipeId": "thai-vihrea-curry-kanalla-vhh",
+          "ingredient": "kukkakaaliriisiä",
+          "index": 3
+        },
+        {
+          "recipeId": "panang-curry-kanalla-vhh",
+          "ingredient": "vihreitä papuja",
+          "index": 1
+        },
+        {
+          "recipeId": "panang-curry-kanalla-vhh",
+          "ingredient": "kukkakaaliriisiä",
+          "index": 2
+        },
+        {
+          "recipeId": "menemen",
+          "ingredient": "vihreää paprikaa",
+          "index": 1
+        },
+        {
+          "recipeId": "lihapullat-kermakastikkeessa-vhh",
+          "ingredient": "kukkakaalia",
+          "index": 1
+        },
+        {
+          "recipeId": "kanakorma-kukkakaaliriisilla",
+          "ingredient": "kukkakaalia",
+          "index": 2
+        },
+        {
+          "recipeId": "uunikanapasta-kesakurpitsa",
+          "ingredient": "kesäkurpitsaa",
+          "index": 0
+        },
+        {
+          "recipeId": "khao-kha-moo-vhh",
+          "ingredient": "kiinankaalia tai paksoita",
+          "index": 0
+        },
+        {
+          "recipeId": "khao-kha-moo-vhh",
+          "ingredient": "kukkakaaliriisiä",
+          "index": 1
+        },
+        {
+          "recipeId": "larb-moo-vhh",
+          "ingredient": "valkokaalia",
+          "index": 1
+        },
+        {
+          "recipeId": "jauhelihakastike-kesakurpitsanuudeleilla",
+          "ingredient": "kesäkurpitsaa",
+          "index": 0
+        },
+        {
+          "recipeId": "caponata",
+          "ingredient": "munakoisoa",
+          "index": 0
+        },
+        {
+          "recipeId": "caponata",
+          "ingredient": "sellerinvartta",
+          "index": 3
+        },
+        {
+          "recipeId": "caponata",
+          "ingredient": "vihreitä oliiveja",
+          "index": 5
+        },
+        {
+          "recipeId": "baozi",
+          "ingredient": "kiinankaalia",
+          "index": 5
+        },
+        {
+          "recipeId": "marokkolainen-couscous",
+          "ingredient": "porkkanaa",
+          "index": 3
+        },
+        {
+          "recipeId": "marokkolainen-couscous",
+          "ingredient": "kesäkurpitsaa",
+          "index": 4
+        },
+        {
+          "recipeId": "pasta-alla-norma",
+          "ingredient": "munakoisoa",
+          "index": 1
+        },
+        {
+          "recipeId": "pasta-alla-norma",
+          "ingredient": "mustapippuria",
+          "index": 8
+        },
+        {
+          "recipeId": "congee-riisipuuro",
+          "ingredient": "tuoretta inkivääriä",
+          "index": 3
+        },
+        {
+          "recipeId": "harira",
+          "ingredient": "sellerinvartta",
+          "index": 2
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "ingredient": "munakoisoa",
+          "index": 0
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "ingredient": "mustapippuria",
+          "index": 13
+        },
+        {
+          "recipeId": "doner-kebab",
+          "ingredient": "paprikajauhetta",
+          "index": 5
+        },
+        {
+          "recipeId": "doner-kebab",
+          "ingredient": "mustapippuria",
+          "index": 8
+        },
+        {
+          "recipeId": "doner-kebab",
+          "ingredient": "kaalisalaattia",
+          "index": 10
+        },
+        {
+          "recipeId": "souvlaki",
+          "ingredient": "kurkkua",
+          "index": 7
+        },
+        {
+          "recipeId": "gazpacho",
+          "ingredient": "kurkkua",
+          "index": 1
+        },
+        {
+          "recipeId": "gazpacho",
+          "ingredient": "punaista paprikaa",
+          "index": 2
+        },
+        {
+          "recipeId": "spanakopita",
+          "ingredient": "tuoretta pinaattia",
+          "index": 0
+        },
+        {
+          "recipeId": "spanakopita",
+          "ingredient": "mustapippuria",
+          "index": 7
+        },
+        {
+          "recipeId": "tabbouleh",
+          "ingredient": "lehtipersiljaa",
+          "index": 1
+        },
+        {
+          "recipeId": "tabbouleh",
+          "ingredient": "tuoretta minttua",
+          "index": 4
+        },
+        {
+          "recipeId": "tabbouleh",
+          "ingredient": "mustapippuria",
+          "index": 8
+        },
+        {
+          "recipeId": "poronkaristys-kukkakaalimuusilla",
+          "ingredient": "mustapippuria",
+          "index": 5
+        },
+        {
+          "recipeId": "poronkaristys-kukkakaalimuusilla",
+          "ingredient": "kukkakaalia",
+          "index": 6
+        },
+        {
+          "recipeId": "liha-juureskeitto-perunaton",
+          "ingredient": "lanttua",
+          "index": 2
+        },
+        {
+          "recipeId": "liha-juureskeitto-perunaton",
+          "ingredient": "porkkanaa",
+          "index": 3
+        },
+        {
+          "recipeId": "liha-juureskeitto-perunaton",
+          "ingredient": "juuriselleriä",
+          "index": 4
+        },
+        {
+          "recipeId": "liha-juureskeitto-perunaton",
+          "ingredient": "silputtua persiljaa",
+          "index": 8
+        },
+        {
+          "recipeId": "kermainen-kanasienipannu",
+          "ingredient": "herkkusieniä",
+          "index": 1
+        },
+        {
+          "recipeId": "raejuusto-pesto-kasviskulho",
+          "ingredient": "kurkkua",
+          "index": 2
+        },
+        {
+          "recipeId": "kana-parmesaanipannu-parsakaali",
+          "ingredient": "parsakaalia",
+          "index": 1
+        },
+        {
+          "recipeId": "vhh-lihapiirakka",
+          "ingredient": "mustapippuria",
+          "index": 7
+        },
+        {
+          "recipeId": "maksalaatikko-kukkakaalilla",
+          "ingredient": "kukkakaalia",
+          "index": 1
+        },
+        {
+          "recipeId": "khao-man-gai-vhh",
+          "ingredient": "kukkakaaliriisiä",
+          "index": 1
+        },
+        {
+          "recipeId": "khao-man-gai-vhh",
+          "ingredient": "kurkkua",
+          "index": 4
+        },
+        {
+          "recipeId": "keltainen-kanacurry-vhh",
+          "ingredient": "kukkakaalia",
+          "index": 3
+        },
+        {
+          "recipeId": "kesakurpitsalasagne-vhh",
+          "ingredient": "kesäkurpitsaa",
+          "index": 0
+        },
+        {
+          "recipeId": "vhh-lohikeitto-kukkakaalilla",
+          "ingredient": "kukkakaalia",
+          "index": 1
+        },
+        {
+          "recipeId": "italian-pata",
+          "ingredient": "kesäkurpitsaa",
+          "index": 6
+        },
+        {
+          "recipeId": "kukkakaaligratiini-pekonilla",
+          "ingredient": "kukkakaalia",
+          "index": 0
+        },
+        {
+          "recipeId": "valimerellinen-menemen-fetalla",
+          "ingredient": "vihreää paprikaa",
+          "index": 2
+        },
+        {
+          "recipeId": "broileri-kukkakaaligratiini",
+          "ingredient": "kukkakaalia",
+          "index": 1
+        },
+        {
+          "recipeId": "som-tam-vhh-kurkkuna",
+          "ingredient": "kurkkua",
+          "index": 0
+        },
+        {
+          "recipeId": "som-tam-vhh-kurkkuna",
+          "ingredient": "vihreitä papuja",
+          "index": 2
+        },
+        {
+          "recipeId": "kanakeitto-pinaatti-sitruuna",
+          "ingredient": "kesäkurpitsaa",
+          "index": 4
+        },
+        {
+          "recipeId": "kanakeitto-pinaatti-sitruuna",
+          "ingredient": "purjoa",
+          "index": 5
+        },
+        {
+          "recipeId": "pad-kra-pao-vhh",
+          "ingredient": "kukkakaaliriisiä",
+          "index": 1
+        },
+        {
+          "recipeId": "kermainen-lohipata",
+          "ingredient": "pinaattia",
+          "index": 11
+        },
+        {
+          "recipeId": "gai-yang-vhh",
+          "ingredient": "kukkakaaliriisiä",
+          "index": 8
+        },
+        {
+          "recipeId": "gai-yang-vhh",
+          "ingredient": "kurkkua",
+          "index": 9
+        },
+        {
+          "recipeId": "tom-yum-goong-vhh",
+          "ingredient": "herkkusieniä (osterivinokkaiden vaihtoehto)",
+          "index": 1
+        },
+        {
+          "recipeId": "pad-kee-mao-vhh-konjac",
+          "ingredient": "vihreitä papuja",
+          "index": 2
+        },
+        {
+          "recipeId": "paahdettu-aamiaismunakoiso",
+          "ingredient": "munakoisoa",
+          "index": 0
+        },
+        {
+          "recipeId": "tom-kha-gai-vhh",
+          "ingredient": "herkkusieniä",
+          "index": 3
+        },
+        {
+          "recipeId": "pad-see-ew-vhh-konjac",
+          "ingredient": "parsakaalia",
+          "index": 2
+        },
+        {
+          "recipeId": "parsakaali-sinihomejuustofrittata",
+          "ingredient": "parsakaalia",
+          "index": 2
+        },
+        {
+          "recipeId": "moo-ping-vhh",
+          "ingredient": "kurkkua",
+          "index": 9
+        },
+        {
+          "recipeId": "kai-jiew-vhh",
+          "ingredient": "kevätsipulia",
+          "index": 4
+        },
+        {
+          "recipeId": "kai-jiew-vhh",
+          "ingredient": "kurkkua",
+          "index": 5
+        },
+        {
+          "recipeId": "savulohi-avokadokulho",
+          "ingredient": "kurkkua",
+          "index": 2
+        },
+        {
+          "recipeId": "savulohi-avokadokulho",
+          "ingredient": "rucolaa",
+          "index": 3
+        },
+        {
+          "recipeId": "bun-cha-hanoi",
+          "ingredient": "porkkanaa tai vihreää papaijaa",
+          "index": 11
+        },
+        {
+          "recipeId": "bibimbap",
+          "ingredient": "tuoretta pinaattia",
+          "index": 2
+        },
+        {
+          "recipeId": "bibimbap",
+          "ingredient": "pavunituja",
+          "index": 3
+        },
+        {
+          "recipeId": "bibimbap",
+          "ingredient": "siitakesieniä",
+          "index": 4
+        },
+        {
+          "recipeId": "bibimbap",
+          "ingredient": "porkkanaa",
+          "index": 5
+        },
+        {
+          "recipeId": "chow-mein",
+          "ingredient": "valkokaalia",
+          "index": 4
+        },
+        {
+          "recipeId": "chow-mein",
+          "ingredient": "porkkanaa",
+          "index": 5
+        },
+        {
+          "recipeId": "dan-dan-nuudelit",
+          "ingredient": "paksoita",
+          "index": 11
+        },
+        {
+          "recipeId": "goi-cuon",
+          "ingredient": "pavunituja",
+          "index": 6
+        },
+        {
+          "recipeId": "hapanimela-porsas",
+          "ingredient": "punaista paprikaa",
+          "index": 5
+        },
+        {
+          "recipeId": "idli-sambar",
+          "ingredient": "porkkana",
+          "index": 4
+        },
+        {
+          "recipeId": "intialainen-aloo-paratha",
+          "ingredient": "korianteri",
+          "index": 2
+        },
+        {
+          "recipeId": "yangzhou-paistettu-riisi",
+          "ingredient": "kevätsipulia",
+          "index": 7
+        },
+        {
+          "recipeId": "lanttulaatikko-kermainen",
+          "ingredient": "lanttua",
+          "index": 0
+        },
+        {
+          "recipeId": "uunimakkara-sipulipedilla",
+          "ingredient": "sipuli",
+          "index": 2
+        },
+        {
+          "recipeId": "nakkikeitto-kukkakaalilla",
+          "ingredient": "kukkakaalia",
+          "index": 1
+        },
+        {
+          "recipeId": "lindstrominpihvit-kaalilla",
+          "ingredient": "säilykepunajuurta",
+          "index": 1
+        },
+        {
+          "recipeId": "lindstrominpihvit-kaalilla",
+          "ingredient": "valkokaalia",
+          "index": 7
+        },
+        {
+          "recipeId": "kana-yakitori-kaalilla",
+          "ingredient": "keräkaalia",
+          "index": 5
+        },
+        {
+          "recipeId": "kana-yakitori-kaalilla",
+          "ingredient": "kevätsipulia",
+          "index": 8
+        },
+        {
+          "recipeId": "paprikainen-vhh-gulassi",
+          "ingredient": "sipulia",
+          "index": 1
+        },
+        {
+          "recipeId": "paprikainen-vhh-gulassi",
+          "ingredient": "punaista paprikaa",
+          "index": 3
+        },
+        {
+          "recipeId": "kana-enchilada-kukkakaalivuoka",
+          "ingredient": "kukkakaalia",
+          "index": 1
+        },
+        {
+          "recipeId": "nakkikastike-kukkakaalimuusi",
+          "ingredient": "kukkakaalia",
+          "index": 6
+        },
+        {
+          "recipeId": "ropa-vieja",
+          "ingredient": "punaista paprikaa",
+          "index": 3
+        },
+        {
+          "recipeId": "karjalanpaisti-vhh",
+          "ingredient": "valkokaalia",
+          "index": 7
+        },
+        {
+          "recipeId": "kerala-kalacurry",
+          "ingredient": "sipuli",
+          "index": 2
+        },
+        {
+          "recipeId": "kantonilainen-hoyrytetty-kala",
+          "ingredient": "kevätsipulia",
+          "index": 2
+        },
+        {
+          "recipeId": "sitruuna-yrttikana-parsa",
+          "ingredient": "vihreää parsaa",
+          "index": 1
+        },
+        {
+          "recipeId": "thai-khao-tom-katkaravuilla",
+          "ingredient": "valkosipuli",
+          "index": 2
+        },
+        {
+          "recipeId": "thai-khao-tom-katkaravuilla",
+          "ingredient": "inkivääri",
+          "index": 3
+        },
+        {
+          "recipeId": "lahi-ita-kikhernejauho-yrttilettu",
+          "ingredient": "sipuli",
+          "index": 2
+        },
+        {
+          "recipeId": "lahi-ita-kikhernejauho-yrttilettu",
+          "ingredient": "neutraalia paistoöljyä",
+          "index": 4
+        },
+        {
+          "recipeId": "korealainen-yachaejuk-kasvisjuk",
+          "ingredient": "porkkana",
+          "index": 1
+        },
+        {
+          "recipeId": "korealainen-yachaejuk-kasvisjuk",
+          "ingredient": "kesäkurpitsa",
+          "index": 2
+        },
+        {
+          "recipeId": "malesialainen-congee-inkivaarilla",
+          "ingredient": "kevätsipuli",
+          "index": 3
+        },
+        {
+          "recipeId": "kiinalainen-tomaattimunakas-riisilla",
+          "ingredient": "tomaatti",
+          "index": 1
+        },
+        {
+          "recipeId": "kiinalainen-tomaattimunakas-riisilla",
+          "ingredient": "kevätsipuli",
+          "index": 3
+        },
+        {
+          "recipeId": "kiinalainen-tomaattimunakas-riisilla",
+          "ingredient": "neutraalia paistoöljyä",
+          "index": 4
+        },
+        {
+          "recipeId": "kiinalainen-riisipuuro-kananmunalla",
+          "ingredient": "kevätsipuli",
+          "index": 3
+        },
+        {
+          "recipeId": "paella-valenciana",
+          "ingredient": "vihreät pavut, tuoreet",
+          "index": 2
+        },
+        {
+          "recipeId": "paella-valenciana",
+          "ingredient": "tomaattimurska",
+          "index": 3
+        },
+        {
+          "recipeId": "lanzhou-naudanliha-nuudelikeitto",
+          "ingredient": "retikkaa",
+          "index": 8
+        },
+        {
+          "recipeId": "indialainen-poha-maapahkinoilla",
+          "ingredient": "herne",
+          "index": 3
+        },
+        {
+          "recipeId": "meksikolainen-paputostada-aamupalaksi",
+          "ingredient": "avokado",
+          "index": 3
+        },
+        {
+          "recipeId": "intialainen-mannasuurimoupma",
+          "ingredient": "herne",
+          "index": 1
+        },
+        {
+          "recipeId": "korealainen-bindaetteok-aamiaiseksi",
+          "ingredient": "pavunitu",
+          "index": 1
+        },
+        {
+          "recipeId": "vietnamilainen-banh-cuon-sienilla",
+          "ingredient": "sieni",
+          "index": 1
+        },
+        {
+          "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+          "ingredient": "pavunitu",
+          "index": 3
+        },
+        {
+          "recipeId": "vietnamilainen-hu-tieu-aamiaiskeitto",
+          "ingredient": "pavunitu",
+          "index": 2
+        },
+        {
+          "recipeId": "kiinalainen-bao-munalla",
+          "ingredient": "kurkku",
+          "index": 2
+        },
+        {
+          "recipeId": "japanilainen-soba-aamiaiskeitto",
+          "ingredient": "pinaatti",
+          "index": 3
+        },
+        {
+          "recipeId": "indonesialainen-ketoprak-aamiaiskulho",
+          "ingredient": "pavunitu",
+          "index": 2
+        },
+        {
+          "recipeId": "meksikolainen-quesadilla-sienilla",
+          "ingredient": "sieni",
+          "index": 2
+        },
+        {
+          "recipeId": "vietnamilainen-banh-bao-kananmunalla",
+          "ingredient": "sieni",
+          "index": 2
+        },
+        {
+          "recipeId": "indonesialainen-bakwan-maissifritter",
+          "ingredient": "porkkana",
+          "index": 1
+        },
+        {
+          "recipeId": "korealainen-jumeokbap-merilevalla",
+          "ingredient": "porkkana",
+          "index": 3
+        },
+        {
+          "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
+          "ingredient": "pavunitu",
+          "index": 3
+        },
+        {
+          "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+          "ingredient": "kaali",
+          "index": 2
+        },
+        {
+          "recipeId": "malesialainen-mee-goreng-aamunuudeleilla",
+          "ingredient": "pavunitu",
+          "index": 3
+        },
+        {
+          "recipeId": "vietnamilainen-banh-mi-munalla",
+          "ingredient": "kurkkua",
+          "index": 2
+        },
+        {
+          "recipeId": "vietnamilainen-banh-mi-munalla",
+          "ingredient": "kuorittua porkkanaa",
+          "index": 3
+        },
+        {
+          "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+          "ingredient": "kurkku",
+          "index": 3
+        },
+        {
+          "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
+          "ingredient": "kurkkua",
+          "index": 3
+        },
+        {
+          "recipeId": "intialainen-pinaatti-paneer-chilla",
+          "ingredient": "pinaatti",
+          "index": 1
+        },
+        {
+          "recipeId": "tunisialainen-brik",
+          "ingredient": "tuoretta persiljaa",
+          "index": 4
+        },
+        {
+          "recipeId": "mala-xiang-guo",
+          "ingredient": "parsakaalia",
+          "index": 2
+        },
+        {
+          "recipeId": "mala-xiang-guo",
+          "ingredient": "herkkusieniä",
+          "index": 3
+        },
+        {
+          "recipeId": "bouillabaisse",
+          "ingredient": "fenkolia",
+          "index": 4
+        },
+        {
+          "recipeId": "pav-bhaji",
+          "ingredient": "kukkakaalia",
+          "index": 1
+        },
+        {
+          "recipeId": "pav-bhaji",
+          "ingredient": "herneitä",
+          "index": 2
+        },
+        {
+          "recipeId": "pav-bhaji",
+          "ingredient": "porkkanaa",
+          "index": 3
+        },
+        {
+          "recipeId": "pekingin-ankka",
+          "ingredient": "kurkkua",
+          "index": 5
+        },
+        {
+          "recipeId": "sichuan-hot-pot",
+          "ingredient": "herkkusieniä",
+          "index": 10
+        },
+        {
+          "recipeId": "tunisialainen-ojja",
+          "ingredient": "tuoretta persiljaa",
+          "index": 9
+        },
+        {
+          "recipeId": "japanilainen-miso-tofu-paksoi",
+          "ingredient": "paksoi",
+          "index": 2
+        },
+        {
+          "recipeId": "japanilainen-curry-tofulla",
+          "ingredient": "porkkanaa",
+          "index": 2
+        },
+        {
+          "recipeId": "japanilainen-curry-tofulla",
+          "ingredient": "kesäkurpitsaa",
+          "index": 3
+        },
+        {
+          "recipeId": "japanilainen-curry-tofulla",
+          "ingredient": "kukkakaali",
+          "index": 7
+        },
+        {
+          "recipeId": "kanaviillokki-kukkakaalilla",
+          "ingredient": "kukkakaalia",
+          "index": 7
+        },
+        {
+          "recipeId": "kookos-lime-kanacurry",
+          "ingredient": "vihreitä papuja",
+          "index": 3
+        },
+        {
+          "recipeId": "janssoninkiusaus-juuriselleri",
+          "ingredient": "juuriselleriä",
+          "index": 0
+        },
+        {
+          "recipeId": "okonomiyaki-kaaliletut",
+          "ingredient": "valkokaalia",
+          "index": 0
+        },
+        {
+          "recipeId": "karibia-callaloo-munakas",
+          "ingredient": "tuoretta pinaattia",
+          "index": 0
+        },
+        {
+          "recipeId": "korealainen-gyeran-mari-kasviksilla",
+          "ingredient": "porkkana",
+          "index": 1
+        },
+        {
+          "recipeId": "lahi-ita-labneh-kulho-zaatarilla",
+          "ingredient": "kurkku",
+          "index": 3
+        },
+        {
+          "recipeId": "valimerellinen-pinaatti-fetashakshuka",
+          "ingredient": "pinaatti",
+          "index": 2
+        },
+        {
+          "recipeId": "yrttituorejuusto-kinkkurullat",
+          "ingredient": "kurkkua",
+          "index": 4
+        },
+        {
+          "recipeId": "miso-lohi-paksoi",
+          "ingredient": "paksoita",
+          "index": 5
+        },
+        {
+          "recipeId": "palak-paneer",
+          "ingredient": "tuoretta pinaattia",
+          "index": 0
+        },
+        {
+          "recipeId": "shoyu-kanakeitto-konjac",
+          "ingredient": "shiitakesieniä",
+          "index": 5
+        },
+        {
+          "recipeId": "hunaja-sinappikana-kaalilla",
+          "ingredient": "valkokaalia",
+          "index": 1
+        },
+        {
+          "recipeId": "siskonmakkarakeitto-juurekset",
+          "ingredient": "lanttua",
+          "index": 2
+        },
+        {
+          "recipeId": "siskonmakkarakeitto-juurekset",
+          "ingredient": "porkkanaa",
+          "index": 3
+        },
+        {
+          "recipeId": "siskonmakkarakeitto-juurekset",
+          "ingredient": "juuriselleriä",
+          "index": 4
+        },
+        {
+          "recipeId": "siskonmakkarakeitto-juurekset",
+          "ingredient": "silputtua persiljaa",
+          "index": 7
+        },
+        {
+          "recipeId": "vhh-pyttipannu",
+          "ingredient": "kesäkurpitsaa",
+          "index": 1
+        },
+        {
+          "recipeId": "vhh-pyttipannu",
+          "ingredient": "lanttua",
+          "index": 2
+        }
+      ]
+    },
+    {
+      "id": "soups-category-mean-gi-49",
+      "classification": "P1",
+      "finding": "Finished-soup mean assigned to broth/stock products; product-to-component transfer needs review.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 14,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 14,
+      "calculatedUsersAfter": [],
+      "bindings": [
+        {
+          "recipeId": "jauheliha-kaalikeitto-vhh",
+          "ingredient": "lihalientä",
+          "index": 3
+        },
+        {
+          "recipeId": "marokkolainen-couscous",
+          "ingredient": "kanalientä",
+          "index": 6
+        },
+        {
+          "recipeId": "congee-riisipuuro",
+          "ingredient": "kanalientä",
+          "index": 1
+        },
+        {
+          "recipeId": "khao-soi-vhh-konjac",
+          "ingredient": "kanalientä",
+          "index": 5
+        },
+        {
+          "recipeId": "kanakeitto-pinaatti-sitruuna",
+          "ingredient": "kanalientä",
+          "index": 1
+        },
+        {
+          "recipeId": "tom-yum-goong-vhh",
+          "ingredient": "kalaliemikuutiota",
+          "index": 3
+        },
+        {
+          "recipeId": "tom-kha-gai-vhh",
+          "ingredient": "kanalientä",
+          "index": 2
+        },
+        {
+          "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+          "ingredient": "lihalientä",
+          "index": 8
+        },
+        {
+          "recipeId": "nakkikeitto-kukkakaalilla",
+          "ingredient": "lihalientä",
+          "index": 5
+        },
+        {
+          "recipeId": "paprikainen-vhh-gulassi",
+          "ingredient": "lihalientä",
+          "index": 9
+        },
+        {
+          "recipeId": "ropa-vieja",
+          "ingredient": "lihalientä",
+          "index": 5
+        },
+        {
+          "recipeId": "thai-khao-tom-katkaravuilla",
+          "ingredient": "laimennettua kanalientä",
+          "index": 4
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-lablabi",
+          "ingredient": "laimennettua kanalientä",
+          "index": 4
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-bissara",
+          "ingredient": "kasvis- tai kanalientä",
+          "index": 4
+        }
+      ]
+    },
+    {
+      "id": "coconut-milk-porridge-gi-31",
+      "classification": "PASS",
+      "finding": "Protected REFERENCE_ONLY, zero active bindings. Existing restriction prevents calculation use; PASS is not scientific re-approval.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/22849311/",
+      "sourceTitle": "Green leafy porridges: how good are they in controlling glycaemic response?",
+      "activeBindingsBefore": 0,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 0,
+      "calculatedUsersAfter": [],
+      "bindings": []
+    },
+    {
+      "id": "asian-regional-category-mean-gi-60",
+      "classification": "P1",
+      "finding": "Regional mixed-food mean is not a measurement of individual paste/flour/ingredient. No currently calculated users; do not expand bindings.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 8,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 8,
+      "calculatedUsersAfter": [],
+      "bindings": [
+        {
+          "recipeId": "massaman-curry-kanalla-vhh",
+          "ingredient": "massaman-currytahna",
+          "index": 1
+        },
+        {
+          "recipeId": "punainen-kanacurry-vhh",
+          "ingredient": "täysrasvaista kookosmaitoa",
+          "index": 0
+        },
+        {
+          "recipeId": "thai-vihrea-curry-kanalla-vhh",
+          "ingredient": "täysrasvaista kookosmaitoa",
+          "index": 0
+        },
+        {
+          "recipeId": "panang-curry-kanalla-vhh",
+          "ingredient": "täysrasvaista kookosmaitoa",
+          "index": 0
+        },
+        {
+          "recipeId": "keltainen-kanacurry-vhh",
+          "ingredient": "Mae Ploy -keltaista currytahnaa",
+          "index": 2
+        },
+        {
+          "recipeId": "khao-soi-vhh-konjac",
+          "ingredient": "Mae Ploy -punaista currytahnaa",
+          "index": 2
+        },
+        {
+          "recipeId": "kiinalainen-bao-munalla",
+          "ingredient": "hoisin-kastike",
+          "index": 3
+        },
+        {
+          "recipeId": "pekingin-ankka",
+          "ingredient": "hoisinkastiketta",
+          "index": 7
+        }
+      ]
+    },
+    {
+      "id": "nuts-category-mean-gi-22",
+      "classification": "P1",
+      "finding": "Nut mean and grinding/product correspondence require review. Ground coriander appears among incomplete users; calculated users are recorded separately.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 29,
+      "calculatedUsersBefore": [
+        "gulab-jamun",
+        "indonesialainen-ketoprak-aamiaiskulho",
+        "keto-joulutortut",
+        "keto-kauralesesampylat",
+        "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+        "valimerellinen-jogurttikulho-hunajalla",
+        "valimerellinen-ricotta-persikkakulho"
+      ],
+      "activeBindingsAfter": 29,
+      "calculatedUsersAfter": [
+        "gulab-jamun",
+        "indonesialainen-ketoprak-aamiaiskulho",
+        "keto-joulutortut",
+        "keto-kauralesesampylat",
+        "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+        "valimerellinen-jogurttikulho-hunajalla",
+        "valimerellinen-ricotta-persikkakulho"
+      ],
+      "bindings": [
+        {
+          "recipeId": "massaman-curry-kanalla-vhh",
+          "ingredient": "maapähkinät",
+          "index": 4
+        },
+        {
+          "recipeId": "gulab-jamun",
+          "ingredient": "pistaasipähkinää",
+          "index": 4
+        },
+        {
+          "recipeId": "marokkolainen-couscous",
+          "ingredient": "jauhettua korianteria",
+          "index": 8
+        },
+        {
+          "recipeId": "pad-thai-vhh-konjac",
+          "ingredient": "maapähkinöitä",
+          "index": 9
+        },
+        {
+          "recipeId": "rahka-marjakerroskulho",
+          "ingredient": "hasselpähkinöitä",
+          "index": 4
+        },
+        {
+          "recipeId": "som-tam-vhh-kurkkuna",
+          "ingredient": "maapähkinöitä",
+          "index": 3
+        },
+        {
+          "recipeId": "vhh-mustikkapiirakka",
+          "ingredient": "mantelijauhoa",
+          "index": 0
+        },
+        {
+          "recipeId": "keto-kauralesesampylat",
+          "ingredient": "mantelijauhoa",
+          "index": 2
+        },
+        {
+          "recipeId": "dan-dan-nuudelit",
+          "ingredient": "paahdettuja maapähkinöitä",
+          "index": 9
+        },
+        {
+          "recipeId": "intialainen-ven-pongal",
+          "ingredient": "cashewpähkinä",
+          "index": 2
+        },
+        {
+          "recipeId": "indonesialainen-ketoprak-aamiaiskulho",
+          "ingredient": "maapähkinä",
+          "index": 3
+        },
+        {
+          "recipeId": "japanilainen-kabocha-puuro",
+          "ingredient": "musta seesami",
+          "index": 3
+        },
+        {
+          "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
+          "ingredient": "seesami",
+          "index": 3
+        },
+        {
+          "recipeId": "valimerellinen-tahinipuuro",
+          "ingredient": "tahini",
+          "index": 1
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+          "ingredient": "manteli",
+          "index": 2
+        },
+        {
+          "recipeId": "japanilainen-okayu-umeboshipluumulla",
+          "ingredient": "seesaminsiemen",
+          "index": 3
+        },
+        {
+          "recipeId": "vietnamilainen-xoi-maapahkinalla",
+          "ingredient": "maapähkinä",
+          "index": 1
+        },
+        {
+          "recipeId": "vietnamilainen-xoi-maapahkinalla",
+          "ingredient": "seesami",
+          "index": 2
+        },
+        {
+          "recipeId": "kiinalainen-musta-seesamipuuro",
+          "ingredient": "mustat seesaminsiemenet",
+          "index": 0
+        },
+        {
+          "recipeId": "lahi-ita-pistaasijogurtti",
+          "ingredient": "pistaasi",
+          "index": 1
+        },
+        {
+          "recipeId": "kung-pao-kana",
+          "ingredient": "paahdettuja maapähkinöitä",
+          "index": 7
+        },
+        {
+          "recipeId": "keto-joulutortut",
+          "ingredient": "mantelijauhoa",
+          "index": 0
+        },
+        {
+          "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+          "ingredient": "saksanpähkinä",
+          "index": 1
+        },
+        {
+          "recipeId": "okonomiyaki-kaaliletut",
+          "ingredient": "mantelijauhoa",
+          "index": 2
+        },
+        {
+          "recipeId": "okonomiyaki-kaaliletut",
+          "ingredient": "seesaminsiemeniä",
+          "index": 8
+        },
+        {
+          "recipeId": "valimerellinen-ricotta-persikkakulho",
+          "ingredient": "pistaasi",
+          "index": 2
+        },
+        {
+          "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+          "ingredient": "seesaminsiemen",
+          "index": 3
+        },
+        {
+          "recipeId": "pellava-puuro-pahkinoilla",
+          "ingredient": "saksanpähkinöitä",
+          "index": 5
+        },
+        {
+          "recipeId": "miso-lohi-paksoi",
+          "ingredient": "seesaminsiemeniä",
+          "index": 6
+        }
+      ]
+    },
+    {
+      "id": "bakery-products-category-mean-gi-58",
+      "classification": "P0",
+      "finding": "Mean for finished bakery products is actively assigned to almond flour, a different food family. Confirmed published almond-flour subset is listed separately; all users require a bounded follow-up.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 62,
+      "calculatedUsersBefore": [
+        "aloo-paratha",
+        "gulab-jamun",
+        "kanaviillokki-kukkakaalilla",
+        "karibia-johnny-cake",
+        "keto-kauralesesampylat",
+        "keto-korvapuustit",
+        "keto-mutakakku",
+        "keto-suklaakeksit",
+        "kiinalainen-kevatsipulipannukakku",
+        "lahi-ita-manakish-zaatarilla",
+        "pizza-margherita",
+        "pohjoisafrikkalainen-baghrir",
+        "pohjoisafrikkalainen-harcha-juustolla",
+        "pohjoisafrikkalainen-msemen-hunajalla",
+        "rahkapiirakka-vhh",
+        "samosa",
+        "silakkapihvit-tilli-kermakastike",
+        "valimerellinen-appelsiini-aamiaiskakku",
+        "vhh-brita-kakku",
+        "vhh-juustokakku",
+        "vhh-korvapuustit",
+        "vhh-letut",
+        "vhh-lihapiirakka",
+        "vhh-mansikkakakku",
+        "vhh-mokkapalat",
+        "vhh-omenapiirakka",
+        "vietnamilainen-banh-bao-kananmunalla",
+        "vietnamilainen-banh-cuon-sienilla"
+      ],
+      "activeBindingsAfter": 62,
+      "calculatedUsersAfter": [
+        "aloo-paratha",
+        "gulab-jamun",
+        "kanaviillokki-kukkakaalilla",
+        "karibia-johnny-cake",
+        "keto-kauralesesampylat",
+        "keto-korvapuustit",
+        "keto-mutakakku",
+        "keto-suklaakeksit",
+        "kiinalainen-kevatsipulipannukakku",
+        "lahi-ita-manakish-zaatarilla",
+        "pizza-margherita",
+        "pohjoisafrikkalainen-baghrir",
+        "pohjoisafrikkalainen-harcha-juustolla",
+        "pohjoisafrikkalainen-msemen-hunajalla",
+        "rahkapiirakka-vhh",
+        "samosa",
+        "silakkapihvit-tilli-kermakastike",
+        "valimerellinen-appelsiini-aamiaiskakku",
+        "vhh-brita-kakku",
+        "vhh-juustokakku",
+        "vhh-korvapuustit",
+        "vhh-letut",
+        "vhh-lihapiirakka",
+        "vhh-mansikkakakku",
+        "vhh-mokkapalat",
+        "vhh-omenapiirakka",
+        "vietnamilainen-banh-bao-kananmunalla",
+        "vietnamilainen-banh-cuon-sienilla"
+      ],
+      "bindings": [
+        {
+          "recipeId": "chole-bhature",
+          "ingredient": "vehnäjauhoja",
+          "index": 2
+        },
+        {
+          "recipeId": "gulab-jamun",
+          "ingredient": "vehnäjauhoja",
+          "index": 1
+        },
+        {
+          "recipeId": "samosa",
+          "ingredient": "vehnäjauhoja",
+          "index": 0
+        },
+        {
+          "recipeId": "aloo-paratha",
+          "ingredient": "vehnäjauhoja",
+          "index": 0
+        },
+        {
+          "recipeId": "pani-puri",
+          "ingredient": "mannasuurimoita",
+          "index": 0
+        },
+        {
+          "recipeId": "pani-puri",
+          "ingredient": "vehnäjauhoja",
+          "index": 1
+        },
+        {
+          "recipeId": "pizza-margherita",
+          "ingredient": "vehnäjauhoja",
+          "index": 0
+        },
+        {
+          "recipeId": "meheva-suklaakakku",
+          "ingredient": "vehnäjauhoja",
+          "index": 4
+        },
+        {
+          "recipeId": "meheva-suklaakakku",
+          "ingredient": "kaakaojauhetta",
+          "index": 5
+        },
+        {
+          "recipeId": "baozi",
+          "ingredient": "vehnäjauhoja",
+          "index": 0
+        },
+        {
+          "recipeId": "marokkolainen-couscous",
+          "ingredient": "couscousia",
+          "index": 1
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "ingredient": "vehnäjauhoja",
+          "index": 8
+        },
+        {
+          "recipeId": "spanakopita",
+          "ingredient": "filotaikinaa",
+          "index": 5
+        },
+        {
+          "recipeId": "tabbouleh",
+          "ingredient": "hienoa bulguria",
+          "index": 0
+        },
+        {
+          "recipeId": "vhh-omenapiirakka",
+          "ingredient": "mantelijauhoa",
+          "index": 0
+        },
+        {
+          "recipeId": "vhh-raparperipiirakka",
+          "ingredient": "mantelijauhoa",
+          "index": 0
+        },
+        {
+          "recipeId": "vhh-mansikkakakku",
+          "ingredient": "mantelijauhoa",
+          "index": 2
+        },
+        {
+          "recipeId": "vhh-juustokakku",
+          "ingredient": "mantelijauhoa",
+          "index": 0
+        },
+        {
+          "recipeId": "vhh-brita-kakku",
+          "ingredient": "mantelijauhoa",
+          "index": 3
+        },
+        {
+          "recipeId": "rahkapiirakka-vhh",
+          "ingredient": "mantelijauhoa",
+          "index": 0
+        },
+        {
+          "recipeId": "vhh-letut",
+          "ingredient": "mantelijauhoa",
+          "index": 2
+        },
+        {
+          "recipeId": "vhh-lihapiirakka",
+          "ingredient": "mantelijauhoa",
+          "index": 0
+        },
+        {
+          "recipeId": "keto-korvapuustit",
+          "ingredient": "mantelijauhoa",
+          "index": 0
+        },
+        {
+          "recipeId": "vhh-korvapuustit",
+          "ingredient": "mantelijauhoa",
+          "index": 2
+        },
+        {
+          "recipeId": "keto-mutakakku",
+          "ingredient": "mantelijauhoa",
+          "index": 4
+        },
+        {
+          "recipeId": "keto-suklaakeksit",
+          "ingredient": "mantelijauhoa",
+          "index": 3
+        },
+        {
+          "recipeId": "vhh-mokkapalat",
+          "ingredient": "mantelijauhoa",
+          "index": 3
+        },
+        {
+          "recipeId": "keto-kauralesesampylat",
+          "ingredient": "kauralesettä",
+          "index": 3
+        },
+        {
+          "recipeId": "hapanimela-porsas",
+          "ingredient": "maissitärkkelystä",
+          "index": 2
+        },
+        {
+          "recipeId": "intialainen-rava-uttapam",
+          "ingredient": "mannasuurimo",
+          "index": 0
+        },
+        {
+          "recipeId": "dim-sum",
+          "ingredient": "maissitärkkelystä",
+          "index": 5
+        },
+        {
+          "recipeId": "silakkapihvit-tilli-kermakastike",
+          "ingredient": "ruisjauhoja",
+          "index": 1
+        },
+        {
+          "recipeId": "lanzhou-naudanliha-nuudelikeitto",
+          "ingredient": "vehnänuudeleita",
+          "index": 7
+        },
+        {
+          "recipeId": "roujiamo",
+          "ingredient": "vehnäjauhoja",
+          "index": 8
+        },
+        {
+          "recipeId": "intialainen-mannasuurimoupma",
+          "ingredient": "mannasuurimo",
+          "index": 0
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-baghrir",
+          "ingredient": "mannasuurimo",
+          "index": 0
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-baghrir",
+          "ingredient": "vehnäjauho",
+          "index": 1
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+          "ingredient": "mannasuurimo",
+          "index": 0
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+          "ingredient": "vehnäjauho",
+          "index": 1
+        },
+        {
+          "recipeId": "malesialainen-roti-canai-dhalilla",
+          "ingredient": "vehnäjauho",
+          "index": 0
+        },
+        {
+          "recipeId": "vietnamilainen-banh-cuon-sienilla",
+          "ingredient": "riisijauho",
+          "index": 0
+        },
+        {
+          "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+          "ingredient": "riisijauho",
+          "index": 0
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+          "ingredient": "mannasuurimo",
+          "index": 0
+        },
+        {
+          "recipeId": "kiinalainen-bao-munalla",
+          "ingredient": "vehnäjauho",
+          "index": 0
+        },
+        {
+          "recipeId": "karibia-maissipuuro-kookoksella",
+          "ingredient": "maissijauho",
+          "index": 0
+        },
+        {
+          "recipeId": "kiinalainen-jianbing-munaletty",
+          "ingredient": "vehnäjauho",
+          "index": 1
+        },
+        {
+          "recipeId": "karibia-johnny-cake",
+          "ingredient": "vehnäjauho",
+          "index": 0
+        },
+        {
+          "recipeId": "lahi-ita-taatelipuuro-tahinilla",
+          "ingredient": "kaurahiutale",
+          "index": 0
+        },
+        {
+          "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+          "ingredient": "vehnäjauho",
+          "index": 0
+        },
+        {
+          "recipeId": "vietnamilainen-banh-bao-kananmunalla",
+          "ingredient": "vehnäjauho",
+          "index": 0
+        },
+        {
+          "recipeId": "indonesialainen-bakwan-maissifritter",
+          "ingredient": "vehnäjauho",
+          "index": 2
+        },
+        {
+          "recipeId": "korealainen-kimchi-jeon-aamiaiseksi",
+          "ingredient": "vehnäjauho",
+          "index": 1
+        },
+        {
+          "recipeId": "valimerellinen-tahinipuuro",
+          "ingredient": "kaurahiutale",
+          "index": 0
+        },
+        {
+          "recipeId": "lahi-ita-manakish-zaatarilla",
+          "ingredient": "vehnäjauho",
+          "index": 0
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-minttutee-kaurapuuro",
+          "ingredient": "kaurahiutale",
+          "index": 0
+        },
+        {
+          "recipeId": "meksikolainen-atole-maissipuuro",
+          "ingredient": "maissijauho",
+          "index": 0
+        },
+        {
+          "recipeId": "malesialainen-roti-jala-currykanalla",
+          "ingredient": "vehnäjauho",
+          "index": 0
+        },
+        {
+          "recipeId": "thai-roti-munalla-banaanilla",
+          "ingredient": "vehnäjauho",
+          "index": 2
+        },
+        {
+          "recipeId": "karibia-saltfish-fritterit",
+          "ingredient": "vehnäjauho",
+          "index": 1
+        },
+        {
+          "recipeId": "kiinalainen-kevatsipulipannukakku",
+          "ingredient": "vehnäjauho",
+          "index": 0
+        },
+        {
+          "recipeId": "thai-maissifritterit",
+          "ingredient": "vehnäjauho",
+          "index": 2
+        },
+        {
+          "recipeId": "kanaviillokki-kukkakaalilla",
+          "ingredient": "vehnäjauhoja",
+          "index": 4
+        }
+      ],
+      "confirmedAlmondFlourPublishedSubset": [
+        "keto-korvapuustit",
+        "keto-mutakakku",
+        "keto-suklaakeksit",
+        "rahkapiirakka-vhh",
+        "vhh-brita-kakku",
+        "vhh-juustokakku",
+        "vhh-korvapuustit",
+        "vhh-letut",
+        "vhh-lihapiirakka",
+        "vhh-mansikkakakku",
+        "vhh-mokkapalat",
+        "vhh-omenapiirakka"
+      ],
+      "urgency": "Next bounded source-quality task; do not add coverage or mutate this family in the pepper PR."
+    },
+    {
+      "id": "bread-category-mean-gi-64",
+      "classification": "P1",
+      "finding": "DOI and category label match the 2021 table; a category average is not a product/preparation-specific measurement. Binding-level validation remains necessary.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 13,
+      "calculatedUsersBefore": [
+        "gazpacho",
+        "lahi-ita-fattet-hummus",
+        "lahi-ita-zaatar-munat",
+        "meksikolainen-molletes-pico-de-gallolla",
+        "souvlaki",
+        "vietnamilainen-banh-mi-munalla"
+      ],
+      "activeBindingsAfter": 13,
+      "calculatedUsersAfter": [
+        "gazpacho",
+        "lahi-ita-fattet-hummus",
+        "lahi-ita-zaatar-munat",
+        "meksikolainen-molletes-pico-de-gallolla",
+        "souvlaki",
+        "vietnamilainen-banh-mi-munalla"
+      ],
+      "bindings": [
+        {
+          "recipeId": "vada-pav",
+          "ingredient": "pehmeitä sämpylöitä",
+          "index": 2
+        },
+        {
+          "recipeId": "doner-kebab",
+          "ingredient": "pitaleipää",
+          "index": 9
+        },
+        {
+          "recipeId": "souvlaki",
+          "ingredient": "pitaleipää",
+          "index": 9
+        },
+        {
+          "recipeId": "gazpacho",
+          "ingredient": "vaaleaa leipää",
+          "index": 8
+        },
+        {
+          "recipeId": "intialainen-aloo-paratha",
+          "ingredient": "vehnäjauho",
+          "index": 0
+        },
+        {
+          "recipeId": "lahi-ita-fattet-hummus",
+          "ingredient": "pita",
+          "index": 1
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-lablabi",
+          "ingredient": "pita",
+          "index": 1
+        },
+        {
+          "recipeId": "meksikolainen-molletes-pico-de-gallolla",
+          "ingredient": "bolillosämpylä",
+          "index": 0
+        },
+        {
+          "recipeId": "vietnamilainen-banh-mi-munalla",
+          "ingredient": "patonki",
+          "index": 0
+        },
+        {
+          "recipeId": "bouillabaisse",
+          "ingredient": "vaaleaa leipää",
+          "index": 12
+        },
+        {
+          "recipeId": "pav-bhaji",
+          "ingredient": "pehmeitä sämpylöitä",
+          "index": 11
+        },
+        {
+          "recipeId": "tunisialainen-ojja",
+          "ingredient": "maalaisleipää",
+          "index": 10
+        },
+        {
+          "recipeId": "lahi-ita-zaatar-munat",
+          "ingredient": "pita",
+          "index": 1
+        }
+      ]
+    },
+    {
+      "id": "potatoes-category-mean-gi-71",
+      "classification": "P1",
+      "finding": "DOI and category label match the 2021 table; a category average is not a product/preparation-specific measurement. Binding-level validation remains necessary.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 9,
+      "calculatedUsersBefore": [
+        "marjakiisseli-vaniljakastikkeella",
+        "pohjoisafrikkalainen-maakouda"
+      ],
+      "activeBindingsAfter": 9,
+      "calculatedUsersAfter": [
+        "marjakiisseli-vaniljakastikkeella",
+        "pohjoisafrikkalainen-maakouda"
+      ],
+      "bindings": [
+        {
+          "recipeId": "vada-pav",
+          "ingredient": "perunoita",
+          "index": 0
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredient": "perunajauhoja",
+          "index": 3
+        },
+        {
+          "recipeId": "koshari",
+          "ingredient": "maissitärkkelystä",
+          "index": 4
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "ingredient": "perunoita",
+          "index": 1
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-maakouda",
+          "ingredient": "perunaa",
+          "index": 0
+        },
+        {
+          "recipeId": "intialainen-masala-dosa",
+          "ingredient": "peruna",
+          "index": 2
+        },
+        {
+          "recipeId": "korealainen-bataatti-riisikulho",
+          "ingredient": "bataatti",
+          "index": 0
+        },
+        {
+          "recipeId": "bouillabaisse",
+          "ingredient": "perunoita",
+          "index": 11
+        },
+        {
+          "recipeId": "pav-bhaji",
+          "ingredient": "perunoita",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "id": "pasta-category-mean-gi-52",
+      "classification": "P1",
+      "finding": "DOI and category label match the 2021 table; a category average is not a product/preparation-specific measurement. Binding-level validation remains necessary.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 10,
+      "calculatedUsersBefore": [
+        "jauheliha-makaronilaatikko",
+        "malesialainen-mee-goreng-aamunuudeleilla"
+      ],
+      "activeBindingsAfter": 10,
+      "calculatedUsersAfter": [
+        "jauheliha-makaronilaatikko",
+        "malesialainen-mee-goreng-aamunuudeleilla"
+      ],
+      "bindings": [
+        {
+          "recipeId": "jauheliha-makaronilaatikko",
+          "ingredient": "makaronia",
+          "index": 0
+        },
+        {
+          "recipeId": "koshari",
+          "ingredient": "pientä makaronia",
+          "index": 2
+        },
+        {
+          "recipeId": "pasta-alla-norma",
+          "ingredient": "rigatoni- tai pennepastaa",
+          "index": 0
+        },
+        {
+          "recipeId": "harira",
+          "ingredient": "ohuita vermisellinuudeleita",
+          "index": 10
+        },
+        {
+          "recipeId": "chow-mein",
+          "ingredient": "munanuudeleita",
+          "index": 0
+        },
+        {
+          "recipeId": "dan-dan-nuudelit",
+          "ingredient": "vehnänuudeleita",
+          "index": 0
+        },
+        {
+          "recipeId": "vietnamilainen-hu-tieu-aamiaiskeitto",
+          "ingredient": "riisinuudeli",
+          "index": 0
+        },
+        {
+          "recipeId": "japanilainen-soba-aamiaiskeitto",
+          "ingredient": "soba-nuudeli",
+          "index": 0
+        },
+        {
+          "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
+          "ingredient": "riisinuudeli",
+          "index": 0
+        },
+        {
+          "recipeId": "malesialainen-mee-goreng-aamunuudeleilla",
+          "ingredient": "vehnänuudeli",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "id": "rice-category-mean-gi-67",
+      "classification": "P1",
+      "finding": "DOI and category label match the 2021 table; a category average is not a product/preparation-specific measurement. Binding-level validation remains necessary.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 55,
+      "calculatedUsersBefore": [
+        "intialainen-pesarattu-mungpavuista",
+        "japanilainen-onigiri-lohella",
+        "japanilainen-tamago-kake-gohan",
+        "kiinalainen-riisipuuro-kananmunalla",
+        "kiinalainen-tomaattimunakas-riisilla",
+        "korealainen-gyeranbap-riisikulho",
+        "korealainen-jumeokbap-merilevalla",
+        "korealainen-yachaejuk-kasvisjuk",
+        "larb-moo-vhh",
+        "malesialainen-congee-inkivaarilla",
+        "medu-vada",
+        "thai-jok-kanalla",
+        "thai-porsasjok",
+        "yangzhou-paistettu-riisi"
+      ],
+      "activeBindingsAfter": 55,
+      "calculatedUsersAfter": [
+        "intialainen-pesarattu-mungpavuista",
+        "japanilainen-onigiri-lohella",
+        "japanilainen-tamago-kake-gohan",
+        "kiinalainen-riisipuuro-kananmunalla",
+        "kiinalainen-tomaattimunakas-riisilla",
+        "korealainen-gyeranbap-riisikulho",
+        "korealainen-jumeokbap-merilevalla",
+        "korealainen-yachaejuk-kasvisjuk",
+        "larb-moo-vhh",
+        "malesialainen-congee-inkivaarilla",
+        "medu-vada",
+        "thai-jok-kanalla",
+        "thai-porsasjok",
+        "yangzhou-paistettu-riisi"
+      ],
+      "bindings": [
+        {
+          "recipeId": "medu-vada",
+          "ingredient": "riisijauhoja",
+          "index": 1
+        },
+        {
+          "recipeId": "larb-moo-vhh",
+          "ingredient": "paahdettua riisijauhetta",
+          "index": 0
+        },
+        {
+          "recipeId": "koshari",
+          "ingredient": "riisiä",
+          "index": 1
+        },
+        {
+          "recipeId": "bulgogi",
+          "ingredient": "jasmiiniriisiä",
+          "index": 1
+        },
+        {
+          "recipeId": "congee-riisipuuro",
+          "ingredient": "jasmiiniriisiä",
+          "index": 0
+        },
+        {
+          "recipeId": "tomaatti-kananmuna-wokki",
+          "ingredient": "keitettyä riisiä",
+          "index": 7
+        },
+        {
+          "recipeId": "hyderabadi-kanabiryani",
+          "ingredient": "basmatiriisiä",
+          "index": 1
+        },
+        {
+          "recipeId": "bibimbap",
+          "ingredient": "jasmiiniriisiä",
+          "index": 0
+        },
+        {
+          "recipeId": "goi-cuon",
+          "ingredient": "kuivattuja riisivermisellejä",
+          "index": 2
+        },
+        {
+          "recipeId": "idli-sambar",
+          "ingredient": "idli-riisiä tai puuroriisiä",
+          "index": 0
+        },
+        {
+          "recipeId": "indonesialainen-bubur-sumsum",
+          "ingredient": "riisijauho",
+          "index": 0
+        },
+        {
+          "recipeId": "indonesialainen-bubur-ayam-kanariisipuuro",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "indonesialainen-serabi-kookospannukakku",
+          "ingredient": "riisijauho",
+          "index": 0
+        },
+        {
+          "recipeId": "yangzhou-paistettu-riisi",
+          "ingredient": "keitettyä kylmää riisiä",
+          "index": 0
+        },
+        {
+          "recipeId": "pho-bo",
+          "ingredient": "kuivattuja litteitä riisinuudeleita",
+          "index": 3
+        },
+        {
+          "recipeId": "karibia-kookosriisi-pavuilla",
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "index": 0
+        },
+        {
+          "recipeId": "thai-khao-tom-katkaravuilla",
+          "ingredient": "kuivaa valkoista pitkäjyväistä riisiä",
+          "index": 1
+        },
+        {
+          "recipeId": "korealainen-yachaejuk-kasvisjuk",
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "index": 0
+        },
+        {
+          "recipeId": "malesialainen-congee-inkivaarilla",
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "index": 0
+        },
+        {
+          "recipeId": "kiinalainen-tomaattimunakas-riisilla",
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "index": 2
+        },
+        {
+          "recipeId": "kiinalainen-riisipuuro-kananmunalla",
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "index": 0
+        },
+        {
+          "recipeId": "thai-jok-kanalla",
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "index": 1
+        },
+        {
+          "recipeId": "thai-porsasjok",
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "index": 1
+        },
+        {
+          "recipeId": "paella-valenciana",
+          "ingredient": "puuroriisiä, kuivapaino",
+          "index": 1
+        },
+        {
+          "recipeId": "char-siu",
+          "ingredient": "riisiviinietikkaa",
+          "index": 4
+        },
+        {
+          "recipeId": "char-siu",
+          "ingredient": "keitettyä pitkäjyväistä valkoista riisiä",
+          "index": 8
+        },
+        {
+          "recipeId": "intialainen-ven-pongal",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
+          "ingredient": "riisi",
+          "index": 1
+        },
+        {
+          "recipeId": "indialainen-poha-maapahkinoilla",
+          "ingredient": "riisihiutale",
+          "index": 0
+        },
+        {
+          "recipeId": "intialainen-pesarattu-mungpavuista",
+          "ingredient": "riisi",
+          "index": 3
+        },
+        {
+          "recipeId": "masala-dosa",
+          "ingredient": "basmatiriisiä",
+          "index": 0
+        },
+        {
+          "recipeId": "intialainen-idli-kookoschutneylla",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "intialainen-masala-dosa",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "vietnamilainen-chao-ga-kanapuuro",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "korealainen-gyeranbap-riisikulho",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "thai-kookosriisi-mangolla",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "korealainen-bataatti-riisikulho",
+          "ingredient": "riisi",
+          "index": 1
+        },
+        {
+          "recipeId": "japanilainen-dashimaki-tamago-aamiaislautasella",
+          "ingredient": "riisi",
+          "index": 3
+        },
+        {
+          "recipeId": "japanilainen-kabocha-puuro",
+          "ingredient": "riisi",
+          "index": 1
+        },
+        {
+          "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
+          "ingredient": "riisi",
+          "index": 2
+        },
+        {
+          "recipeId": "korealainen-jumeokbap-merilevalla",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "malesialainen-kuih-seri-muka",
+          "ingredient": "tahmariisi",
+          "index": 0
+        },
+        {
+          "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "index": 0
+        },
+        {
+          "recipeId": "japanilainen-natto-riisikulho",
+          "ingredient": "riisi",
+          "index": 1
+        },
+        {
+          "recipeId": "japanilainen-okayu-umeboshipluumulla",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "japanilainen-onigiri-lohella",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "japanilainen-yaki-onigiri-misolla",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "xiaolongbao",
+          "ingredient": "mustariisiviinietikkaa",
+          "index": 8
+        },
+        {
+          "recipeId": "kiinalainen-musta-seesamipuuro",
+          "ingredient": "riisi",
+          "index": 1
+        },
+        {
+          "recipeId": "kung-pao-kana",
+          "ingredient": "keitettyä riisiä",
+          "index": 13
+        },
+        {
+          "recipeId": "mapo-tofu",
+          "ingredient": "keitettyä riisiä",
+          "index": 12
+        },
+        {
+          "recipeId": "japanilainen-tamago-kake-gohan",
+          "ingredient": "riisi",
+          "index": 0
+        },
+        {
+          "recipeId": "indonesialainen-tempeh-munakulho",
+          "ingredient": "riisi",
+          "index": 2
+        }
+      ]
+    },
+    {
+      "id": "sugar-syrups-category-mean-gi-58",
+      "classification": "P1",
+      "finding": "DOI and category label match the 2021 table; a category average is not a product/preparation-specific measurement. Binding-level validation remains necessary.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 31,
+      "calculatedUsersBefore": [
+        "gulab-jamun",
+        "keto-joulutortut",
+        "marjakiisseli-vaniljakastikkeella",
+        "pannacotta-marjakastikkeella",
+        "pohjoisafrikkalainen-baghrir",
+        "pohjoisafrikkalainen-msemen-hunajalla"
+      ],
+      "activeBindingsAfter": 31,
+      "calculatedUsersAfter": [
+        "gulab-jamun",
+        "keto-joulutortut",
+        "marjakiisseli-vaniljakastikkeella",
+        "pannacotta-marjakastikkeella",
+        "pohjoisafrikkalainen-baghrir",
+        "pohjoisafrikkalainen-msemen-hunajalla"
+      ],
+      "bindings": [
+        {
+          "recipeId": "gulab-jamun",
+          "ingredient": "sokeria",
+          "index": 3
+        },
+        {
+          "recipeId": "butter-chicken",
+          "ingredient": "hunajaa",
+          "index": 3
+        },
+        {
+          "recipeId": "meheva-suklaakakku",
+          "ingredient": "sokeria",
+          "index": 3
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredient": "sokeria",
+          "index": 2
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredient": "sokeria",
+          "index": 8
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredient": "vaniljasokeria",
+          "index": 9
+        },
+        {
+          "recipeId": "pannacotta-marjakastikkeella",
+          "ingredient": "sokeria",
+          "index": 2
+        },
+        {
+          "recipeId": "pannacotta-marjakastikkeella",
+          "ingredient": "vaniljasokeria",
+          "index": 3
+        },
+        {
+          "recipeId": "pannacotta-marjakastikkeella",
+          "ingredient": "sokeria",
+          "index": 6
+        },
+        {
+          "recipeId": "caponata",
+          "ingredient": "sokeria",
+          "index": 8
+        },
+        {
+          "recipeId": "baozi",
+          "ingredient": "sokeria",
+          "index": 3
+        },
+        {
+          "recipeId": "bulgogi",
+          "ingredient": "fariinisokeria",
+          "index": 3
+        },
+        {
+          "recipeId": "tomaatti-kananmuna-wokki",
+          "ingredient": "sokeria",
+          "index": 3
+        },
+        {
+          "recipeId": "bun-cha-hanoi",
+          "ingredient": "fariinisokeria",
+          "index": 4
+        },
+        {
+          "recipeId": "bun-cha-hanoi",
+          "ingredient": "sokeria",
+          "index": 9
+        },
+        {
+          "recipeId": "chow-mein",
+          "ingredient": "soijakastiketta",
+          "index": 6
+        },
+        {
+          "recipeId": "goi-cuon",
+          "ingredient": "hoisinkastiketta",
+          "index": 8
+        },
+        {
+          "recipeId": "hapanimela-porsas",
+          "ingredient": "sokeria",
+          "index": 10
+        },
+        {
+          "recipeId": "indonesialainen-bubur-sumsum",
+          "ingredient": "palmusokeri",
+          "index": 2
+        },
+        {
+          "recipeId": "indonesialainen-serabi-kookospannukakku",
+          "ingredient": "fariinisokeri",
+          "index": 3
+        },
+        {
+          "recipeId": "dim-sum",
+          "ingredient": "soijakastiketta",
+          "index": 3
+        },
+        {
+          "recipeId": "dim-sum",
+          "ingredient": "soijakastiketta",
+          "index": 8
+        },
+        {
+          "recipeId": "lanttulaatikko-kermainen",
+          "ingredient": "siirappia",
+          "index": 4
+        },
+        {
+          "recipeId": "pho-bo",
+          "ingredient": "ruokosokeri",
+          "index": 9
+        },
+        {
+          "recipeId": "char-siu",
+          "ingredient": "hunajaa",
+          "index": 3
+        },
+        {
+          "recipeId": "char-siu",
+          "ingredient": "hunajaa",
+          "index": 7
+        },
+        {
+          "recipeId": "hernekeitto-savupotkalla",
+          "ingredient": "sinappia tarjoiluun",
+          "index": 7
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-baghrir",
+          "ingredient": "hunaja",
+          "index": 3
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+          "ingredient": "hunaja",
+          "index": 3
+        },
+        {
+          "recipeId": "kung-pao-kana",
+          "ingredient": "sokeria",
+          "index": 11
+        },
+        {
+          "recipeId": "keto-joulutortut",
+          "ingredient": "luumuhilloa",
+          "index": 4
+        }
+      ]
+    },
+    {
+      "id": "fruit-category-mean-gi-51",
+      "classification": "P1",
+      "finding": "DOI and category label match the 2021 table; a category average is not a product/preparation-specific measurement. Binding-level validation remains necessary.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 51,
+      "calculatedUsersBefore": [
+        "marjakiisseli-vaniljakastikkeella",
+        "pannacotta-marjakastikkeella",
+        "savulohi-avokadokulho",
+        "souvlaki",
+        "valimerellinen-appelsiini-aamiaiskakku",
+        "valimerellinen-jogurttikulho-hunajalla",
+        "valimerellinen-ricotta-persikkakulho",
+        "vhh-brita-kakku",
+        "vhh-mansikkakakku",
+        "vhh-omenapiirakka"
+      ],
+      "activeBindingsAfter": 51,
+      "calculatedUsersAfter": [
+        "marjakiisseli-vaniljakastikkeella",
+        "pannacotta-marjakastikkeella",
+        "savulohi-avokadokulho",
+        "souvlaki",
+        "valimerellinen-appelsiini-aamiaiskakku",
+        "valimerellinen-jogurttikulho-hunajalla",
+        "valimerellinen-ricotta-persikkakulho",
+        "vhh-brita-kakku",
+        "vhh-mansikkakakku",
+        "vhh-omenapiirakka"
+      ],
+      "bindings": [
+        {
+          "recipeId": "pani-puri",
+          "ingredient": "tamarinditahnaa",
+          "index": 4
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredient": "pakastemarjoja",
+          "index": 0
+        },
+        {
+          "recipeId": "pannacotta-marjakastikkeella",
+          "ingredient": "pakastemarjoja",
+          "index": 5
+        },
+        {
+          "recipeId": "siemengranola-jogurtilla",
+          "ingredient": "vadelmia",
+          "index": 7
+        },
+        {
+          "recipeId": "koshari",
+          "ingredient": "sitruunamehua",
+          "index": 11
+        },
+        {
+          "recipeId": "harira",
+          "ingredient": "sitruunamehua",
+          "index": 12
+        },
+        {
+          "recipeId": "souvlaki",
+          "ingredient": "sitruunan mehu",
+          "index": 2
+        },
+        {
+          "recipeId": "tabbouleh",
+          "ingredient": "sitruunamehua",
+          "index": 5
+        },
+        {
+          "recipeId": "vhh-omenapiirakka",
+          "ingredient": "pientä omenaa",
+          "index": 4
+        },
+        {
+          "recipeId": "vhh-raparperipiirakka",
+          "ingredient": "raparperia",
+          "index": 3
+        },
+        {
+          "recipeId": "vhh-mansikkakakku",
+          "ingredient": "tuoreita mansikoita",
+          "index": 6
+        },
+        {
+          "recipeId": "vhh-brita-kakku",
+          "ingredient": "mansikoita",
+          "index": 8
+        },
+        {
+          "recipeId": "vhh-runebergintortut",
+          "ingredient": "vadelmia",
+          "index": 7
+        },
+        {
+          "recipeId": "maksalaatikko-kukkakaalilla",
+          "ingredient": "puolukoita",
+          "index": 8
+        },
+        {
+          "recipeId": "pad-thai-vhh-konjac",
+          "ingredient": "tamarinditahnaa",
+          "index": 5
+        },
+        {
+          "recipeId": "rahka-marjakerroskulho",
+          "ingredient": "mansikoita",
+          "index": 2
+        },
+        {
+          "recipeId": "rahka-marjakerroskulho",
+          "ingredient": "mustikoita",
+          "index": 3
+        },
+        {
+          "recipeId": "kanakeitto-pinaatti-sitruuna",
+          "ingredient": "sitruunaa",
+          "index": 7
+        },
+        {
+          "recipeId": "vhh-mustikkapiirakka",
+          "ingredient": "mustikoita",
+          "index": 5
+        },
+        {
+          "recipeId": "marjainen-chiavanukas",
+          "ingredient": "vadelmia",
+          "index": 3
+        },
+        {
+          "recipeId": "marjainen-chiavanukas",
+          "ingredient": "mustikoita",
+          "index": 4
+        },
+        {
+          "recipeId": "uunilohi-smetanakuorrutteella",
+          "ingredient": "sitruunaa (edible portion)",
+          "index": 3
+        },
+        {
+          "recipeId": "savulohi-avokadokulho",
+          "ingredient": "sitruunamehua",
+          "index": 5
+        },
+        {
+          "recipeId": "goi-cuon",
+          "ingredient": "limettimehua",
+          "index": 10
+        },
+        {
+          "recipeId": "hapanimela-porsas",
+          "ingredient": "ananasta",
+          "index": 7
+        },
+        {
+          "recipeId": "idli-sambar",
+          "ingredient": "tamarinditahnaa",
+          "index": 7
+        },
+        {
+          "recipeId": "kerala-kalacurry",
+          "ingredient": "tamarinditahnaa",
+          "index": 5
+        },
+        {
+          "recipeId": "falafel",
+          "ingredient": "sitruunamehua",
+          "index": 9
+        },
+        {
+          "recipeId": "falafel",
+          "ingredient": "sitruunamehua",
+          "index": 13
+        },
+        {
+          "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+          "ingredient": "kuorittua appelsiinia",
+          "index": 1
+        },
+        {
+          "recipeId": "valimerellinen-tahinipuuro",
+          "ingredient": "appelsiini",
+          "index": 3
+        },
+        {
+          "recipeId": "thai-roti-munalla-banaanilla",
+          "ingredient": "banaani",
+          "index": 1
+        },
+        {
+          "recipeId": "karibia-bammy-kassavaleipa",
+          "ingredient": "lime",
+          "index": 3
+        },
+        {
+          "recipeId": "thai-papaijajogurtti",
+          "ingredient": "papaija",
+          "index": 0
+        },
+        {
+          "recipeId": "thai-papaijajogurtti",
+          "ingredient": "lime",
+          "index": 3
+        },
+        {
+          "recipeId": "lahi-ita-pistaasijogurtti",
+          "ingredient": "granaattiomena",
+          "index": 3
+        },
+        {
+          "recipeId": "karibia-plantain-aamiaislautanen",
+          "ingredient": "lime",
+          "index": 3
+        },
+        {
+          "recipeId": "tunisialainen-brik",
+          "ingredient": "sitruunaa",
+          "index": 7
+        },
+        {
+          "recipeId": "vietnamilainen-papaija-kookospuuro",
+          "ingredient": "papaija",
+          "index": 2
+        },
+        {
+          "recipeId": "vietnamilainen-papaija-kookospuuro",
+          "ingredient": "lime",
+          "index": 3
+        },
+        {
+          "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+          "ingredient": "banaani",
+          "index": 2
+        },
+        {
+          "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+          "ingredient": "tuoretta viikunaa",
+          "index": 3
+        },
+        {
+          "recipeId": "kookos-lime-kanacurry",
+          "ingredient": "limetti",
+          "index": 6
+        },
+        {
+          "recipeId": "sate-ayam",
+          "ingredient": "limetti",
+          "index": 9
+        },
+        {
+          "recipeId": "valimerellinen-ricotta-persikkakulho",
+          "ingredient": "kivettömiä persikkaviipaleita",
+          "index": 1
+        },
+        {
+          "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+          "ingredient": "persimon",
+          "index": 1
+        },
+        {
+          "recipeId": "pellava-puuro-pahkinoilla",
+          "ingredient": "vadelmia",
+          "index": 6
+        },
+        {
+          "recipeId": "carnitas-salaattitacot",
+          "ingredient": "appelsiini",
+          "index": 1
+        },
+        {
+          "recipeId": "carnitas-salaattitacot",
+          "ingredient": "limetti",
+          "index": 2
+        },
+        {
+          "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+          "ingredient": "sitruunamehua",
+          "index": 7
+        },
+        {
+          "recipeId": "kana-tagine-sitruunalla",
+          "ingredient": "säilöttyä sitruunaa",
+          "index": 6
+        }
+      ]
+    },
+    {
+      "id": "asian-indian-category-mean-gi-65",
+      "classification": "P1",
+      "finding": "Regional mixed-food mean is not a measurement of individual paste/flour/ingredient. No currently calculated users; do not expand bindings.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 1,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 1,
+      "calculatedUsersAfter": [],
+      "bindings": [
+        {
+          "recipeId": "vada-pav",
+          "ingredient": "kikhernejauhoja",
+          "index": 1
+        }
+      ]
+    },
+    {
+      "id": "potato-boiled-preparation-analogue-gi-66",
+      "classification": "P1",
+      "finding": "Boiled/mashed preparation is documented, but transfer to recipe preparation or cultivar requires a separate evidence review.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 3,
+      "calculatedUsersBefore": [
+        "samosa"
+      ],
+      "activeBindingsAfter": 3,
+      "calculatedUsersAfter": [
+        "samosa"
+      ],
+      "bindings": [
+        {
+          "recipeId": "samosa",
+          "ingredient": "perunoita",
+          "index": 1
+        },
+        {
+          "recipeId": "pani-puri",
+          "ingredient": "perunoita",
+          "index": 2
+        },
+        {
+          "recipeId": "lohikeitto-kuohukermalla",
+          "ingredient": "perunaa",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "id": "potato-mashed-preparation-analogue-gi-73",
+      "classification": "P1",
+      "finding": "Boiled/mashed preparation is documented, but transfer to recipe preparation or cultivar requires a separate evidence review.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 1,
+      "calculatedUsersBefore": [
+        "aloo-paratha"
+      ],
+      "activeBindingsAfter": 1,
+      "calculatedUsersAfter": [
+        "aloo-paratha"
+      ],
+      "bindings": [
+        {
+          "recipeId": "aloo-paratha",
+          "ingredient": "perunoita",
+          "index": 1
+        }
+      ]
+    },
+    {
+      "id": "dark-chocolate-international-tables-mean-gi-29",
+      "classification": "PASS",
+      "finding": "2021 source identity and named food/preparation are consistent at screening level; cultivar/product/analogue limits remain as catalogued. No new scientific approval.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 2,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 2,
+      "calculatedUsersAfter": [],
+      "bindings": [
+        {
+          "recipeId": "meheva-suklaakakku",
+          "ingredient": "tummaa suklaata",
+          "index": 0
+        },
+        {
+          "recipeId": "meheva-suklaakakku",
+          "ingredient": "tummaa suklaata",
+          "index": 7
+        }
+      ]
+    },
+    {
+      "id": "corn-tortilla-noriega-2000-glucose-estimate",
+      "classification": "PASS",
+      "finding": "Primary abstract identifies corn tortilla and bread=100, n=8. Catalog explicitly labels glucose conversion as estimate; do not treat it as direct glucose-reference measurement.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/10824718/",
+      "sourceTitle": "Glycaemic and insulinaemic indices of Mexican foods high in complex carbohydrates",
+      "activeBindingsBefore": 5,
+      "calculatedUsersBefore": [
+        "meksikolainen-aamiais-tacot-mustapavuilla",
+        "meksikolainen-munakokkeli-pico-de-gallolla"
+      ],
+      "activeBindingsAfter": 5,
+      "calculatedUsersAfter": [
+        "meksikolainen-aamiais-tacot-mustapavuilla",
+        "meksikolainen-munakokkeli-pico-de-gallolla"
+      ],
+      "bindings": [
+        {
+          "recipeId": "meksikolainen-aamiais-tacot-mustapavuilla",
+          "ingredient": "maissitortilla",
+          "index": 3
+        },
+        {
+          "recipeId": "meksikolainen-paputostada-aamupalaksi",
+          "ingredient": "maissitortilla",
+          "index": 2
+        },
+        {
+          "recipeId": "meksikolainen-chilaquiles-verdes",
+          "ingredient": "maissitortilla",
+          "index": 0
+        },
+        {
+          "recipeId": "meksikolainen-quesadilla-sienilla",
+          "ingredient": "maissitortilla",
+          "index": 0
+        },
+        {
+          "recipeId": "meksikolainen-munakokkeli-pico-de-gallolla",
+          "ingredient": "maissitortilla",
+          "index": 3
+        }
+      ]
+    },
+    {
+      "id": "couscous-groats-rozanska-2020-gi-99",
+      "classification": "PASS",
+      "finding": "DOI and primary groat-study title match; cooked groat product limits remain explicit. No new recipe-equivalence approval.",
+      "sourceUrl": "https://doi.org/10.32394/rpzh.2020.0101",
+      "sourceTitle": "Assessment of the glycemic index of groats available on the Polish food market",
+      "activeBindingsBefore": 1,
+      "calculatedUsersBefore": [
+        "pohjoisafrikkalainen-kuskus-aamiaiskulho"
+      ],
+      "activeBindingsAfter": 1,
+      "calculatedUsersAfter": [
+        "pohjoisafrikkalainen-kuskus-aamiaiskulho"
+      ],
+      "bindings": [
+        {
+          "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+          "ingredient": "kuskus",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "id": "millet-groats-rozanska-2020-gi-56-2",
+      "classification": "PASS",
+      "finding": "DOI and primary groat-study title match; cooked groat product limits remain explicit. No new recipe-equivalence approval.",
+      "sourceUrl": "https://doi.org/10.32394/rpzh.2020.0101",
+      "sourceTitle": "Assessment of the glycemic index of groats available on the Polish food market",
+      "activeBindingsBefore": 1,
+      "calculatedUsersBefore": [
+        "kiinalainen-hirssipuuro-taateleilla"
+      ],
+      "activeBindingsAfter": 1,
+      "calculatedUsersAfter": [
+        "kiinalainen-hirssipuuro-taateleilla"
+      ],
+      "bindings": [
+        {
+          "recipeId": "kiinalainen-hirssipuuro-taateleilla",
+          "ingredient": "hirssi",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "id": "rice-noodles-dried-boiled-chan-2001-gi-61",
+      "classification": "P1",
+      "finding": "Specific noodle product is identified in catalog; PubMed response did not expose text in this run. Primary identifier/protocol needs independently accessible verification; access failure alone is not evidence of wrong DOI.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
+      "sourceTitle": "The glycaemic index values of Vietnamese foods",
+      "activeBindingsBefore": 4,
+      "calculatedUsersBefore": [
+        "indonesialainen-ketoprak-aamiaiskulho"
+      ],
+      "activeBindingsAfter": 4,
+      "calculatedUsersAfter": [
+        "indonesialainen-ketoprak-aamiaiskulho"
+      ],
+      "bindings": [
+        {
+          "recipeId": "bun-cha-hanoi",
+          "ingredient": "kuivattuja riisivermisellejä",
+          "index": 2
+        },
+        {
+          "recipeId": "indonesialainen-ketoprak-aamiaiskulho",
+          "ingredient": "kuivia riisinuudeleita",
+          "index": 1
+        },
+        {
+          "recipeId": "vietnamilainen-pho-ga-aamuksi",
+          "ingredient": "riisinuudeli",
+          "index": 0
+        },
+        {
+          "recipeId": "thai-riisinuudelikeitto-aamuksi",
+          "ingredient": "riisinuudeli",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "id": "honey-category-mean-gi-55-2002",
+      "classification": "PASS",
+      "finding": "2002 international-tables DOI/title match. Record clearly labels food-specific means and raw/varietal limits; no obvious metadata mismatch.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+      "sourceTitle": "International table of glycemic index and glycemic load values: 2002",
+      "activeBindingsBefore": 2,
+      "calculatedUsersBefore": [
+        "valimerellinen-jogurttikulho-hunajalla"
+      ],
+      "activeBindingsAfter": 2,
+      "calculatedUsersAfter": [
+        "valimerellinen-jogurttikulho-hunajalla"
+      ],
+      "bindings": [
+        {
+          "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+          "ingredient": "hunaja",
+          "index": 2
+        },
+        {
+          "recipeId": "hunaja-sinappikana-kaalilla",
+          "ingredient": "hunajaa",
+          "index": 3
+        }
+      ]
+    },
+    {
+      "id": "mango-raw-mean-gi-51-2002",
+      "classification": "PASS",
+      "finding": "2002 international-tables DOI/title match. Record clearly labels food-specific means and raw/varietal limits; no obvious metadata mismatch.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+      "sourceTitle": "International table of glycemic index and glycemic load values: 2002",
+      "activeBindingsBefore": 2,
+      "calculatedUsersBefore": [
+        "karibia-mango-limejogurtti"
+      ],
+      "activeBindingsAfter": 2,
+      "calculatedUsersAfter": [
+        "karibia-mango-limejogurtti"
+      ],
+      "bindings": [
+        {
+          "recipeId": "thai-kookosriisi-mangolla",
+          "ingredient": "mango",
+          "index": 2
+        },
+        {
+          "recipeId": "karibia-mango-limejogurtti",
+          "ingredient": "kuorittua mangoa",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "id": "pear-raw-mean-gi-38-2002",
+      "classification": "PASS",
+      "finding": "2002 international-tables DOI/title match. Record clearly labels food-specific means and raw/varietal limits; no obvious metadata mismatch.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+      "sourceTitle": "International table of glycemic index and glycemic load values: 2002",
+      "activeBindingsBefore": 1,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 1,
+      "calculatedUsersAfter": [],
+      "bindings": [
+        {
+          "recipeId": "bulgogi",
+          "ingredient": "päärynää",
+          "index": 6
+        }
+      ]
+    },
+    {
+      "id": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
+      "classification": "PASS",
+      "finding": "DOI/title identify 17 Saudi date varieties; tamer-stage mean and product limitations are explicit. No paste/syrup equivalence inferred.",
+      "sourceUrl": "https://doi.org/10.5144/0256-4947.2016.397",
+      "sourceTitle": "Glycemic indices, glycemic load and glycemic response for seventeen varieties of dates grown in Saudi Arabia",
+      "activeBindingsBefore": 3,
+      "calculatedUsersBefore": [
+        "kiinalainen-hirssipuuro-taateleilla",
+        "pohjoisafrikkalainen-kuskus-aamiaiskulho"
+      ],
+      "activeBindingsAfter": 3,
+      "calculatedUsersAfter": [
+        "kiinalainen-hirssipuuro-taateleilla",
+        "pohjoisafrikkalainen-kuskus-aamiaiskulho"
+      ],
+      "bindings": [
+        {
+          "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+          "ingredient": "kivettömiä kuivattuja taateleita",
+          "index": 1
+        },
+        {
+          "recipeId": "kiinalainen-hirssipuuro-taateleilla",
+          "ingredient": "kivettömiä kuivattuja taateleita",
+          "index": 1
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+          "ingredient": "kivettömiä kuivattuja taateleita",
+          "index": 1
+        }
+      ]
+    },
+    {
+      "id": "semolina-steamed-gelatinized-mani-1992-gi-55",
+      "classification": "P1",
+      "finding": "Publisher confirms DOI/title. Steam-gelatinized semolina with added oil, n=6 and sparse sampling is not interchangeable with water-boiled oil-free porridge; retain existing restriction.",
+      "sourceUrl": "https://doi.org/10.1079/BJN19920102",
+      "sourceTitle": "Glycaemic index of conventional carbohydrate meals",
+      "activeBindingsBefore": 0,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 0,
+      "calculatedUsersAfter": [],
+      "bindings": []
+    },
+    {
+      "id": "orange-navel-2021-gi-45",
+      "classification": "PASS",
+      "finding": "2021 source identity and named food/preparation are consistent at screening level; cultivar/product/analogue limits remain as catalogued. No new scientific approval.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "sourceTitle": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+      "activeBindingsBefore": 1,
+      "calculatedUsersBefore": [],
+      "activeBindingsAfter": 1,
+      "calculatedUsersAfter": [],
+      "bindings": [
+        {
+          "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+          "ingredient": "appelsiini",
+          "index": 2
+        }
+      ]
+    }
+  ],
+  "sourceAccessNotes": [
+    "2021 DOI publisher direct requests intermittently 403/500; primary supplemental tables read from author-table PDF copies at ghwinstitute.com (139 and 136 pages).",
+    "DOI metadata checked against Crossref where available; four 429 responses supplemented by publisher/indexed primary records.",
+    "PMID 11781674 response unavailable; classified P1 rather than assumed valid.",
+    "2020 review Table 1 footnote [1] points to Jenkins 1983 (10.1007/BF00282710), not Jenkins 1981. Older onion review narrative is preserved as history; correct this documentation in a separate follow-up."
+  ]
+}

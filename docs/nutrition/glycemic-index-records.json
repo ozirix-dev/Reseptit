@@ -383,24 +383,26 @@
     {
       "id": "red-pepper-literature-analogue-gi-40",
       "gi": 40,
-      "foodKey": "red-pepper",
-      "preparationKey": "cooked-in-recipe",
-      "food": "Pepper, generic vegetable table entry",
-      "preparation": "Cooking in recipe; broad literature proxy",
+      "foodKey": "pepper-unspecified-secondary-table",
+      "preparationKey": "unspecified-secondary-table",
+      "food": "Pepper, unspecified product in secondary illustrative table",
+      "preparation": "Not specified; neither species/colour nor raw/cooked state is established",
       "qualityTier": "SUPPLEMENTARY",
       "referenceScale": "GLUCOSE_100",
       "matchKind": "ANALOG",
       "confidence": "LOW",
       "source": {
         "title": "Mens sana in corpore sano: Does the Glycemic Index Have a Role to Play?",
-        "url": "https://doi.org/10.3390/nu12103041",
-        "table": "Table 2, pepper entry (GI 40; secondary compilation)",
+        "url": "https://doi.org/10.3390/nu12102989",
+        "table": "Table 1: Pepper, serving 2 g, GI 40, carbohydrate 1 g; illustrative secondary table, no pepper-specific primary protocol",
         "year": 2020,
         "published": true,
         "iso26642Confirmed": false,
-        "qualityEvidence": "Peer-reviewed narrative review reproduces a generic pepper GI value but does not provide a primary study or preparation protocol for this entry. Used as a low-confidence proxy for cooked red bell pepper and clearly marked as such."
+        "qualityEvidence": "Full-text JATS XML Table 1 has a generic Pepper row (2 g portion), not an identified red bell pepper test. The general footnote cites glycemicindex.com and Jenkins et al. 1983 (10.1007/BF00282710), without a row-specific primary study. Neither species, colour, preparation, participants nor original reference scale can be verified. GI 40 is retained only as historical secondary-table data; not an approved LOW analogue.",
+        "authors": "Lionel Carneiro; Corinne Leloup"
       },
-      "note": "Generic pepper entry; species, preparation, and primary measurement details are not established."
+      "note": "AJO 1.6B: REFERENCE_ONLY. The review defines glucose=100 generally; this does not verify the scale of a primary pepper experiment. No matching standalone red/green bell pepper measurement traced in Sydney GI Search or International Tables 2021 supplements 1/2. A 2 g serving suggests a seasoning but does not identify black pepper; no species inference is approved.",
+      "calculationUse": "REFERENCE_ONLY"
     },
     {
       "id": "onion-literature-analogue-gi-15",
