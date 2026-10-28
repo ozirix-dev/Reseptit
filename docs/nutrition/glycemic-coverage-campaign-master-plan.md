@@ -1,5 +1,11 @@
 # CODEX MASTER PLAN – RESEPTIT GI/GK COVERAGE EXPANSION
 
+> Historiallinen alkuperäistoimeksianto. AJO 0:n jälkeen PR #124 korjasi
+> kookosmaitopuuron GI-sidonnan: tuotanto on nyt 326/137/189, main
+> `f7a43503c8dde25c6c2281885807c3e7ed31f07e`. Ajantasainen työjono ja
+> dokumentoitu regressiopoikkeus ovat [AJO 0.6 -suunnitelmassa](glycemic-coverage-run-0-plan.md).
+> Alla olevat alkuperäiset luvut ja tavoitteet säilyvät historiallisina.
+
 ## Kampanja 2B6E → eteenpäin
 
 **Päätavoite: saada mahdollisimman monelle julkaistulle reseptille tieteellisesti puolustettava, toistettavasti laskettu glykeeminen kuorma (GK).**

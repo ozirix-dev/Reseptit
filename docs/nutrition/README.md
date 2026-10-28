@@ -462,10 +462,12 @@ Koneellinen, 325 rivin ennen/jälkeen-auditointi on
 
 ## Kattavuuskampanjan jatkaminen
 
-Ajantasainen suunnittelupohja: [AJO 0 ja seuraava erä 2B6E](glycemic-coverage-run-0-plan.md).
+Ajantasainen suunnittelupohja: [AJO 0.6 ja seuraava erä 2B6E](glycemic-coverage-run-0-plan.md).
 [Kampanjan toimeksianto](glycemic-coverage-campaign-master-plan.md) ja
-[188 keskeneräisen reseptin inventaario](glycemic-coverage-run-0-inventory.json)
-säilyttävät työjonon eri istuntojen välillä. AJO 0 ei muuta julkaistuja GK-arvoja.
+[189 keskeneräisen reseptin inventaario](glycemic-coverage-run-0-inventory.json)
+säilyttävät työjonon eri istuntojen välillä. AJO 0.6 perustuu PR #124:n jälkeiseen
+326/137/189-tuotantotilaan eikä muuta julkaistuja GK-arvoja. Alkuperäinen
+326/138/188-analyysi säilyy suunnitelmassa historiallisena osuutena.
 Tämän ohjeen vanhat kattavuusluvut ovat historiallisia; varmista nykytilanne tuoreella auditoinnilla.
 
 ## AJO 0.5: kookosmaitopuuron GI-sidonnan korjaus

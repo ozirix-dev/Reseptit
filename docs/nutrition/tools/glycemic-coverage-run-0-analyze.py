@@ -10,6 +10,7 @@ import pathlib
 import re
 import subprocess
 import sys
+from glycemic_run0_validation import PRODUCTION_COMMIT, ORIGINAL_RUN_COMMIT, WITHDRAWN, unique_by, verify_regression
 
 root = pathlib.Path(sys.argv[1]).resolve()
 out = pathlib.Path(sys.argv[2]).resolve()
@@ -31,22 +32,36 @@ def dump(name, obj):
     else:
         (out / name).write_text(json.dumps(obj, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
 
+# Planning is locked to the accepted production revision, not merely the folder name.
+subprocess.run(['git','merge-base','--is-ancestor',PRODUCTION_COMMIT,'HEAD'],cwd=root,check=True)
+allowed = {
+ 'docs/nutrition/README.md', 'docs/nutrition/glycemic-coverage-campaign-master-plan.md',
+ 'docs/nutrition/glycemic-coverage-run-0-plan.md', 'docs/nutrition/glycemic-coverage-run-0-inventory.json',
+ 'docs/nutrition/tools/glycemic-coverage-run-0-analyze.py', 'docs/nutrition/tools/glycemic-coverage-run-0-probe.mts',
+ 'docs/nutrition/tools/glycemic_run0_validation.py', 'docs/nutrition/tools/test_glycemic_run0_validation.py',
+}
+changed = set(subprocess.check_output(['git','diff','--name-only',PRODUCTION_COMMIT,'--'],cwd=root,text=True).splitlines())
+assert changed <= allowed, ('Changes outside planning scope', sorted(changed-allowed))
+historical = json.loads(subprocess.check_output(['git','show',ORIGINAL_RUN_COMMIT+':docs/nutrition/glycemic-coverage-run-0-inventory.json'],cwd=root))
+review = read('docs/nutrition/glycemic-coconut-source-review.json')
+
 pilot = read('tmp/nutrition/glycemic-load-pilot.json')
 nutrition = read('tmp/nutrition/audit.json')
 general = read('docs/nutrition/glycemic-coverage-current-2026-10-25.json')
 batch = read('docs/nutrition/glycemic-coverage-batch-2b6d-current.json')
 baseline = read('docs/nutrition/glycemic-coverage-batch-2b6d-baseline.json')
 catalog = read('docs/nutrition/glycemic-index-records.json')
-gi = {x['id']: x for x in catalog['records']}
-food = {x['id']: x for x in read('docs/nutrition/food-records.json')}
-ns = {x['recipe_id']: x for x in nutrition['inventory']}
-inputs = {x['recipeId']: x for x in pilot['calculationInputs']}
+gi = unique_by(catalog['records'], 'id', 'GI catalog')
+# Match the unchanged calculator's last-record-wins food catalog semantics.
+food = {x['id']:x for x in read('docs/nutrition/food-records.json')}
+ns = unique_by(nutrition['inventory'], 'recipe_id', 'nutrition audit')
+inputs = unique_by(pilot['calculationInputs'], 'recipeId', 'calculation inputs')
 current = {x['recipeId']: x for x in batch['recipes']}
-results = {x['recipeId']: x for x in pilot['results']}
+results = unique_by(pilot['results'], 'recipeId', 'GL results')
 assert len(results) == len(pilot['results']) == len(ns)
 assert set(ns) == set(results) == set(inputs)
 for saved in (general, batch):
-    assert set(x['recipeId'] for x in saved['recipes']) == set(results)
+    assert set(unique_by(saved['recipes'], 'recipeId', 'saved inventory')) == set(results)
     for row in saved['recipes']:
         rid = row['recipeId']
         for key in ('status', 'glycemicLoadPerServing'):
@@ -55,10 +70,7 @@ for saved in (general, batch):
         for key, hashes in [('recipeVersion','sourceHashes'),('calculationInputVersion','calculationInputHashes'),('calculationEvidenceVersion','calculationEvidenceHashes')]:
             assert row[key] == pilot[hashes][rid], (rid, key)
         assert row['nutritionStatus'] == ns[rid]['status'], rid
-for r in baseline['recipes']:
-    if r['status'] == 'CALCULATED':
-        assert results[r['recipeId']]['status'] == 'CALCULATED'
-        assert results[r['recipeId']]['glycemicLoadPerServing'] == r['glycemicLoadPerServing']
+regression = verify_regression(baseline, pilot, review, catalog)
 
 def family(name):
     rules = [
@@ -83,8 +95,9 @@ reuse = {
  'siemengranola-jogurtilla': ('nuts-category-mean-gi-22','40 g paahdettuja mantelilastuja: 0,660 g/annos; hyväksytty GI vähentäisi poisjätön 2,06375 -> 1,40375. Paahdon lähdevastaavuutta ei vielä hyväksytty.'),
 }
 first = ['jauhelihapihvit-vhh-kermakastikkeella','vhh-kaalilaatikko','som-tam-vhh-kurkkuna','siemengranola-jogurtilla','valimerellinen-halloumi-tomaattileipa']
-extra_priority = ['jerk-kana','hunaja-sinappikana-kaalilla','caponata','pasta-alla-norma','harira','kanapyorykat-tomaattikastike','karibia-kookosriisi-pavuilla','vietnamilainen-banh-xeo-aamiaisletut','indonesialainen-nasi-uduk-aamiaisella','thai-roti-munalla-banaanilla','paella-valenciana','pohjoisafrikkalainen-lablabi','kana-enchilada-kukkakaalivuoka','vhh-raparperipiirakka','baozi']
+extra_priority = ['jerk-kana','hunaja-sinappikana-kaalilla','caponata','pasta-alla-norma','harira','kanapyorykat-tomaattikastike','keltainen-kanacurry-vhh','karibia-kookosriisi-pavuilla','vietnamilainen-banh-xeo-aamiaisletut','indonesialainen-nasi-uduk-aamiaisella','thai-roti-munalla-banaanilla','paella-valenciana','pohjoisafrikkalainen-lablabi','kana-enchilada-kukkakaalivuoka','vhh-raparperipiirakka']
 notes = {
+ 'keltainen-kanacurry-vhh':'PR #124 palautti nulliksi: 2,81 g/annos kookosmaitoa tarvitsee oman soveltuvan GI-lähteen. Ainoa mallin esto, mutta REFERENCE_ONLY-riisipuurolähde ei käy. Koko ainesketju ja valmistus tarkistettava ennen mitään palautusta.',
  'jauhelihapihvit-vhh-kermakastikkeella':'Lihaliemi 0,750 g/annos; väärän GI-sidoksen poiston jälkeen poisjättö 1,18705 g/annos. Varmista liemen koostumus ja kaikki nykyiset määrät; ravintoauditointi ei yksin todista syötettä.',
  'valimerellinen-halloumi-tomaattileipa':'Leivän koostumus on nykyisessä ravintolaskelmassa Fineli 31842 -maalaisleipäproxy. Tarkista hapanjuurileivän vastaavuus ja leipä-GI; älä siirrä proxya automaattisesti.',
  'jerk-kana':'Neljä kevätsipulia: ravintolaskelman määrä ja Fineli-mitta verrattava reseptiin; lisäksi rakennesidonnan tarkistus.',
@@ -130,6 +143,7 @@ for rid, result in results.items():
         blocking=[s for s in i['issues'] if f'{rid}: {i["name"]}: {s}' in result['blockers']]
         carb=i.get('availableCarbohydratePerServingG')
         gid=i.get('giRecordId')
+        assert not gid or gi.get(gid,{}).get('calculationUse') != 'REFERENCE_ONLY', (rid, gid)
         state=('accepted-by-current-model' if i.get('giContribution') is not None else
                'invalid-or-uncertain' if gid and blocking else
                'unreviewed-composition-or-amount' if carb is None and i.get('availableCarbohydrateUpperBoundPerServingG') is None else
@@ -190,7 +204,10 @@ for rid, result in results.items():
       'priority':{'potentialNetNewMaximum':1,'evidenceAvailabilityOrdinal':evidence,'effortOrdinal':source_effort,'regressionRiskOrdinal':risk,'score':score,'recipeImpact':'one recipe; shared catalogs require separate global impact review','oneSmallPrProbability':'kohtalainen' if cls in 'AB' else 'matala' if cls in 'CDEF' else 'erittäin matala'},
       'nextAction':notes.get(rid,reuse.get(rid,('',None))[1]) or {'A':'Tarkista koko syöte ja pienosuudet; dokumentoi kelpaamattoman sidoksen poisto ilman uutta GI-oletusta.','B':'Katselmoi katalogin lähde, valmistus ja analogian perustelu reseptikohtaisesti.','C':'Hanki oikeaan ruokaan ja valmistukseen soveltuva GI-lähde; säilytä null, jos näyttö puuttuu.','D':'Vertaa nykyistä ravintolaskelmaa ja viiteaineistoja; varmista koostumus ja sen jälkeen kaikki GI-estot.','E':'Varmenna annos-, massa-, yksikkö- ja valmistusperusta ennen laskentaa.','F':'Vertaa reseptiä ja syötettä ainesosa kerrallaan; fingerprintin vaihto ei yksin riitä.','G':'Ratkaise useampi riippumaton lähde-/syöteongelma; yhden aineksen korjaus ei riitä.','H':'Hanki toimituksellinen ratkaisu vaihtoehtoon tai valmistukseen; älä valitse skenaariota hiljaisesti.'}[cls]})
 
-byid={r['recipeId']:r for r in rows}
+byid=unique_by(rows, 'recipeId', 'incomplete planning inventory')
+for candidate in reuse.values():
+    assert gi[candidate[0]].get('calculationUse') != 'REFERENCE_ONLY'
+assert set(byid) == {rid for rid, r in results.items() if r['status'] != 'CALCULATED'}
 assert len(byid)==len(rows)==pilot['summary']['insufficientSourceData']
 counts={c:sum(r['primaryClass']==c for r in rows) for c in 'ABCDEFGH'}
 assert sum(counts.values())==len(rows)
@@ -237,109 +254,157 @@ for fam in shared_order:
        'qualification':'Catalog reuse for selected ingredients only' if fam in {'maitotuote','pähkinä/siemen'} else 'New measured preparation-matched evidence required; otherwise yield zero'})
     seen |= eligible
 
-manifest_paths=['docs/nutrition/glycemic-load-pilot-input.json','docs/nutrition/glycemic-index-records.json','docs/nutrition/food-records.json','docs/nutrition/glycemic-load-recipe-bindings.json','site/scripts/glycemic-load-model.ts','site/scripts/glycemic-load-pilot.ts','site/scripts/glycemic-load-recipe-binding.ts','docs/nutrition/glycemic-coverage-batch-2b6d-baseline.json','docs/nutrition/glycemic-coverage-batch-2b6d-current.json','docs/nutrition/glycemic-coverage-current-2026-10-25.json']
-report={'schemaVersion':1,'scope':'AJO 0 planning; current model acceptance is not new source approval',
+manifest_paths=['docs/nutrition/glycemic-coconut-source-review.json','docs/nutrition/glycemic-load-pilot-input.json','docs/nutrition/glycemic-index-records.json','docs/nutrition/food-records.json','docs/nutrition/glycemic-load-recipe-bindings.json','site/scripts/glycemic-load-model.ts','site/scripts/glycemic-load-pilot.ts','site/scripts/glycemic-load-recipe-binding.ts','docs/nutrition/glycemic-coverage-batch-2b6d-baseline.json','docs/nutrition/glycemic-coverage-batch-2b6d-current.json','docs/nutrition/glycemic-coverage-current-2026-10-25.json']
+report={'schemaVersion':2,'scope':'AJO 0.6 planning only; current model acceptance is not scientific source approval',
+ 'productionCommit':PRODUCTION_COMMIT, 'productionRun':'https://github.com/ozirix-dev/Reseptit/actions/runs/40640331867',
+ 'historicalRun0':{'commit':ORIGINAL_RUN_COMMIT,'summary':historical['summary'],'classCounts':historical['classCounts']},
+ 'regressionChecks':regression,
+ 'referenceOnlyGiRecordIds':sorted(r['id'] for r in gi.values() if r.get('calculationUse')=='REFERENCE_ONLY'),
  'sourceCommit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip(),
  'inputs':{p:digest(p) for p in manifest_paths},'freshAuditTimes':{'glycemic':pilot['generatedAt'],'nutrition':nutrition['calculatedAt']},
  'summary':pilot['summary'],'giRecords':len(gi),'giTiers':dict(collections.Counter(r['qualityTier'] for r in gi.values())),
  'nutritionCounts':nutrition['counts'],'incompleteNutritionCounts':dict(collections.Counter(r['nutritionStatus'] for r in rows)),
  'classCounts':counts,'overlapCounts':{t:sum(t in r['blockerTags'] for r in rows) for t in sorted({t for r in rows for t in r['blockerTags']})},
  'persistentFingerprintMismatches':{k:pilot[k] for k in ('recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches')},
- 'inventoryChecks':{'generalAndBatchMatchFreshRows':True,'historicalCalculatedValuesUnchanged':True,'freshCalculatedValuesUnchanged':True},
+ 'inventoryChecks':{'generalAndBatchMatchFreshRows':True,'historicalValuesPreservedExceptApprovedWithdrawal':True,'publishedPostCorrectionValuesUnchanged':True},
+ 'existingDuplicateFoodRecordIds':sorted(k for k,v in collections.Counter(r['id'] for r in read('docs/nutrition/food-records.json')).items() if v>1),
  'semanticFindingsIncludingCalculated':semantic_all,'families':family_rows,'top20':top20,
  'priorityExplanation':'Editorially reviewed top20 overrides purely mechanical score: no empirical probabilities. Recipe/source mismatch, actual preparation, existing evidence and realistic whole-recipe unlock determine order. A single GI family can contain incompatible preparations.',
- 'sharedTop5':shared,'firstBatch':{'recipeIds':first,'planningNetGainRange':[1,3],'guaranteedNetGain':0,'conditionalMaximum':5,'requires':'Independent per-recipe source review, source-backed amounts, unchanged calculator, full publication checks; failure may yield zero.'},
+ 'sharedTop5':shared,'firstBatch':{'recipeIds':first,'planningNetGainRange':[0,5],'guaranteedNetGain':0,'conditionalMaximum':5,'requires':'Independent per-recipe source review, source-backed amounts, unchanged calculator, full publication checks; failure may yield zero.'},
  'recipes':rows}
+
+# Each field below is an explicit planning judgement, not a new source approval.
+first_reviews = {
+ 'jauhelihapihvit-vhh-kermakastikkeella': {
+  'sourceReview':'Fineli 29 -liemen tuote, laimennus ja 100 ml → 100 g; myös nykyiset kuumennetun kerman ja sipulin analogiat tarkistetaan koko reseptin katselmoinnissa.',
+  'amountReadiness':'4 annosta; kaikki laskentamassat ovat olemassa. Munan 55 g, voin 14 g ja liemen tilavuusmuunnos tarvitsevat lähdevarmennuksen; tavallinen ravintoauditointi on INSUFFICIENT SOURCE DATA.',
+  'tolerance':'Liemi 0,750 g/annos: väärän GI:n poistoehdokas nostaisi poisjätöt 0,43705 → 1,18705 g/annos. Alle 1 g / alle 2 g voi soveltua vain koostumuksen ja määrän tarkistuksen jälkeen.',
+  'unlock':'Poista perusteeton keitto-GI vain, jos pieni liemiosuus ja koko muu ainesketju kestävät lähdetarkistuksen.',
+  'oneBatch':'Realistinen rajattu yhden erän katselmointi; numeerista lopputulosta ei hyväksytä tässä.',
+ },
+ 'vhh-kaalilaatikko': {
+  'sourceReview':'dairy-category-mean-gi-35 on olemassa, mutta 175 °C:ssa 60–70 min kypsennetyn kerman analogia on perusteltava; avainten korjaus ei yksin riitä.',
+  'amountReadiness':'6 annosta; kerma 200 g, sipuli 55 g, munat 110 g, liemi 100 g ja meiramin arvio tarkistettava reseptimittoihin. Ei puuttuvaa olennaista massaa mallissa, mutta meiramin 0,1 g HH on oletus.',
+  'tolerance':'Kerma 0,96667 g/annos. Pelkkä GI-sidoksen poisto nostaisi yhteispoisjätön 1,17752 → 2,14418 g/annos ja estäisi edelleen. Tarvitaan kelvollinen GI-sidos tai muu erikseen lähteistetty ratkaisu.',
+  'unlock':'Varmenna kerman hyväksyttävä ruoka-/valmistusanalogia ja koko määräpohja; muuta vain perustellut avaimet myöhemmässä erässä.',
+  'oneBatch':'Mahdollinen yhden erän lähdekatselmointi, epävarmuus kohtalainen; ei automaattinen avainkorjaus.',
+ },
+ 'som-tam-vhh-kurkkuna': {
+  'sourceReview':'vegetables-category-mean-gi-66 on ehdokas keitetyille vihreille pavuille. Varmista myös Fineli 29022:n valmistustila, raakatomaatin nykyinen sidos ja pähkinäanalogia.',
+  'amountReadiness':'4 annosta; papuja 100 g ja kaikki muut massat määritelty. Keitetty/valutettu massa tarkistettava lähteeseen; nykyiset fingerprintit eivät ole vanhentuneet.',
+  'tolerance':'Papujen 1,2645 g/annos ylittää yksittäisen poisjätön rajan. Muiden poisjättö on 0,36675 g/annos; pavuille tarvitaan lähde, niitä ei saa pyöristää alle 1 g:n.',
+  'unlock':'Hyväksytty papujen ruoka-/valmistusvastaavuus ja kaikkien syötteiden tarkistus; vasta sitten vegetables/cooked-avainten korjaus.',
+  'oneBatch':'Mahdollinen yhden erän katselmointi, jos olemassa oleva lähde todella kattaa valmistuksen.',
+ },
+ 'siemengranola-jogurtilla': {
+  'sourceReview':'nuts-category-mean-gi-22 on manteliehdokas. Fineli 379 -mantelilastut paahdetaan 160 °C:ssa 18–22 min; lähteen on katettava tämä muoto. Myös jogurtti- ja vadelmasidokset tarkistetaan.',
+  'amountReadiness':'4 annosta; 40 g mantelilastuja ja kaikki muut massat määritelty. Tuettu ravintolaskelma on olemassa, mutta paahto ja syötävä osuus vaativat tarkistuksen.',
+  'tolerance':'Nykyinen poisjättö 2,06375 g/annos estää. Jos mantelien 0,660 g/annos saa hyväksyttävän GI:n, poisjättö olisi 1,40375 g/annos. GI-arvoa ei tässä kokeessa arvata.',
+  'unlock':'Vähintään riittävän yhden poisjätetyn osuuden hyväksyttävä GI-sidos sekä koko ainesketjun katselmointi; manteli on nimetty tutkimusehdokas.',
+  'oneBatch':'Rajattu mutta lähderiskinen yhden erän työ; paahtovastaavuuden puuttuessa jää nulliksi.',
+ },
+ 'valimerellinen-halloumi-tomaattileipa': {
+  'sourceReview':'Ravintolaskelman Fineli 31842 -maalaisleipäproxy ei ole hyväksytty hapanjuurileivän GK-koostumus. Leipä-GI-katalogiehdokas ja paahdon vastaavuus on tarkistettava erikseen.',
+  'amountReadiness':'2 annosta; hapanjuurileipää 100 g. Annos- ja grammapohja on täsmällinen, mutta tuotekoostumus puuttuu GK-syötteestä. Öljyn/suolan nollahiilihydraattiperuste ja muu resepti tarkistetaan.',
+  'tolerance':'Leivän imeytyvä hiilihydraatti on ratkaisematon eikä saa olla nolla. Pienosuustoleranssia ei voi soveltaa tuntemattomaan leipäosuuteen.',
+  'unlock':'Lähdevastaava hapanjuurileivän koostumus sekä paahdettuun leipään sopiva GI; yksi koostumuskorjaus yksin ei riitä.',
+  'oneBatch':'Yhden erän selvityskohde, ei varma avaus. Kahden lähdeportin vuoksi viisikon epävarmin; ei silti uutta näyttöä selvästi paremmasta korvaajasta.',
+ },
+}
+old_rows=unique_by(historical['recipes'],'recipeId','original planning snapshot')
+for rid in first:
+    row=byid[rid]
+    assert row['inputVersion']==old_rows[rid]['inputVersion'], ('First-batch input changed; reassess selection',rid)
+    assert row['blockers']==old_rows[rid]['blockers'], ('First-batch blockers changed; reassess selection',rid)
+    first_reviews[rid].update({
+        'recipeId':rid, 'servings':row['servings'], 'allCurrentBlockers':row['blockers'],
+        'availableFoodRecordIds':sorted({i['foodRecordId'] for i in row['ingredients'] if i['foodRecordId']}),
+        'modelAcceptedGiRecordIds':sorted({i['giRecordId'] for i in row['ingredients'] if i['giState']=='accepted-by-current-model'}),
+        'candidateGiRecordId':row['existingSourceCandidate']['id'] if row['existingSourceCandidate'] else None,
+        'expectedNetGain':{'guaranteed':0,'conditionalMaximum':1,'sourceReviewRequired':True},
+        'comparedWithOriginal':'Input fingerprint and full blocker list unchanged; retained after reassessment',
+    })
+report['firstBatch']['reviews']=[first_reviews[rid] for rid in first]
+report['firstBatch']['selectionDecision']='Retain all five: no change to their inputs/blockers; withdrawal recipe has no usable GI source and is not a better immediate implementation target.'
+report['firstBatch']['rangeMeaning']='0–5 is a logical conditional bound, not an expected +1–3 delivery forecast.'
+report['priorityChanges']={
+ 'addedRecipes':sorted(set(byid)-set(old_rows)), 'removedRecipes':sorted(set(old_rows)-set(byid)),
+ 'classChanges':[{'recipeId':rid,'before':old_rows[rid]['primaryClass'],'after':byid[rid]['primaryClass']} for rid in sorted(set(byid)&set(old_rows)) if byid[rid]['primaryClass']!=old_rows[rid]['primaryClass']],
+ 'top20Added':sorted(set(top20)-set(historical['top20'])), 'top20Removed':sorted(set(historical['top20'])-set(top20)),
+ 'rationale':'Yellow curry enters at 12 as a precisely documented single-source withdrawal; baozi moves outside the top20, remaining in the complete inventory. This prioritizes a traceable source-review target without claiming coconut GI availability. First ten and first batch remain unchanged.',
+}
+report['newFingerprintMismatchesComparedWithHistoricalBaseline']={k:batch['currentSummary'][k] for k in ('newStructureMismatches','newInputMismatches','newEvidenceMismatches')}
+report['analysisToolHashes']={p:digest(p) for p in (
+ 'docs/nutrition/tools/glycemic-coverage-run-0-analyze.py','docs/nutrition/tools/glycemic_run0_validation.py','docs/nutrition/tools/glycemic-coverage-run-0-probe.mts')}
+report['auditContentHashes']={p:digest(p) for p in ('tmp/nutrition/glycemic-load-pilot.json','tmp/nutrition/audit.json')}
+report['qualityReviewQueue']={
+ 'coconut':{'bindingCorrection':'MERGED PR #124','remainingIssue':'No accepted standalone coconut-milk GI','referenceOnlyId':'coconut-milk-porridge-gi-31'},
+ 'alooParatha':{'recipeId':'intialainen-aloo-paratha','issue':'Fineli 310 is Jerusalem artichoke, not potato; separate composition/source-match review'},
+ 'semolina':{'recipeIds':['intialainen-rava-uttapam','pohjoisafrikkalainen-baghrir','pohjoisafrikkalainen-msemen-hunajalla','pohjoisafrikkalainen-harcha-juustolla'],'issue':'Separate preparation-match review; published values unchanged'},
+}
+for rid in report['qualityReviewQueue']['semolina']['recipeIds']:
+    assert results[rid]['status']=='CALCULATED'
+for f in family_rows:
+    f['confirmedNewValues']=0
+    f['potentialBasis']='Conditional count of recipes whose other model blockers can clear; no source approval or empirical yield forecast'
 dump('glycemic-coverage-run-0-inventory.json',report)
-labels={'A':'Lähes laskentavalmis','B':'Olemassa olevan GI-lähteen katselmointi','C':'Uusi soveltuva GI-lähde','D':'Ravinto-/koostumustieto','E':'Massa, annos tai valmistus','F':'Rakenne tai syöteversio','G':'Useita riippumattomia vaikeita esteitä','H':'Toimituksellinen päätös'}
-lines=['# GI/GK-kattavuuskampanja — AJO 0, 28.10.2026','',
- '## Päätös ja rajaus','',
- '**AJO 0 COMPLETE – READY FOR COVERAGE BATCH 2B6E**','',
- 'AJO 0 tuottaa työjonon ja seuraavan erän suunnitelman. AJO 1:tä ei ole aloitettu. Reseptit, GI-katalogi, laskentasyötteet, kaava, rajat, fingerprintit ja historialliset baselinet säilyvät muuttumattomina. Julkaistujen uusien GK-arvojen nettolisäys on **0**.','',
- 'Tämä valmius koskee suunnittelua, ei uusien lähteiden tai GK-arvojen hyväksyntää. Nykyisissä sidoksissa löytyneet semanttiset laatuongelmat alla on erotettava kattavuuserästä; yhden jo lasketun reseptin kookosmaitosidos tarvitsee erillisen kiireellisen katselmoinnin.','',
- '## Varmennettu lähtötilanne','',
- f'- GitHub main ja analyysipohja: `{report["sourceCommit"]}`.',
- '- Tuotanto: [Recipe site / Pages 40587729118](https://github.com/ozirix-dev/Reseptit/actions/runs/40587729118), success. [GK-sivu](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) palautti HTTP 200 ja näkyvät luvut 326 / 138 / 188.',
- '- Tuore content:sync, strict-ravintoauditointi ja GK-ajo: 326 / 138 / 188; kattavuus 42,33 %. GI 45: 6 STRONG, 39 SUPPLEMENTARY.',
- '- Ravintoauditointi koko kokoelmassa: 180 ESTIMATE WITH EVIDENCE, 86 INSUFFICIENT SOURCE DATA, 60 MISSING, 0 CONFLICT. Keskeneräisissä GK-resepteissä vastaavasti 94 / 40 / 54.',
- '- Yleisen ja 2B6D-inventaarion kaikki 326 tilaa, arvoa, estoviestiä ja kolme fingerprinttiä vastaavat tuoretta ajoa. Historiallisen 2B6D-baselinen 136 laskettua arvoa säilyvät.',
- '- **38 voimassa olevaa rakennesidonnan estoa**, 0 syöte- ja 0 lähdesidonnan poikkeamaa. Aiemman raportin 0/0/0 koski uusia muutoksia baselineen nähden, ei kaikkien estojen puuttumista.',
- '- Avoimet PR:t alussa: #100 Nutritics, #116 Vite, #118 GK-vaihteluväli-/skenaariosuunnitelma, #119 GK-suodattimet. #118 säilyy erillisenä; vaihteluvälejä ei toteuteta. Muita työpuita ei muutettu eikä poistettu.',
- '- `docs/nutrition/README.md`: vanhat 261/325- ja 190/325-luvut ovat historiallista tekstiä, eivät nykytilan mittareita.','',
- '## Luokittelumenetelmä','',
- 'Inventaario sisältää jokaisen keskeneräisen reseptin kaikki ainesrivit, nykyiset lähde-ID:t, hiilihydraatit/annos, massat ja lähdemuistiot, hyväksytyt/missing/epävarmat GI-sidokset, ravintolaskelman täsmänimiosumat, nykyisen reseptin määrät, estoviestit, variantit, pienosuudet ja fingerprintit. `accepted-by-current-model` tarkoittaa nykyisen ohjelman hyväksyntää; se ei ole tämän ajon uusi tieteellinen hyväksyntä. Tuntematon määrä säilyy nullina.','',
- 'Disjunkti ensisijainen työlinja valitaan järjestyksessä: H (ratkaisematon vaihtoehto), G (koostumus+GI eri perheissä tai vähintään kolme estävää perhettä), F (voimassa oleva sidontaesto), D (koostumus), E (massa), A (vain lähteistetyn alle 1 g:n väärän sidoksen poistoehdokas, kokonaissumma alle 2 g eikä havaittua semanttista estoa), B (nimetty olemassa oleva katalogiehdokas), C (jäljellä oleva GI-/valmistus-/toleranssiongelma). Kaikki sivuestot säilyvät.','',
- 'Luokitus on toistettava työnsuunnittelun heuristiikka. Tekstihakujen PREPARATION-lippu tarkoittaa valmistuksen tarkistuskohtaa, ei 144 todistettua valmistusvirhettä. Työyksikköjen määrä perustuu estäviin ainesperheisiin sekä sidonta-/toleranssiportteihin; se ei ole työtuntiarvio. Ravintoauditoinnin puuttuva status ei yksin muodosta GK-estoa, eikä tuettu status todista kaikkia GI-analogia- tai tuotemuoto-oletuksia.','',
- '| Luokka | Ensisijainen työlinja | Reseptejä |','| --- | --- | ---: |']
-lines += [f'| {c} | {labels[c]} | {counts[c]} |' for c in labels]
-lines += [f'| Yhteensä | | {len(rows)} |','',
- f'Lähes valmiita **{counts["A"]}**, olemassa olevan GI:n ehdokkaita **{counts["B"]}**, ensisijaisesti uuden GI-lähteen tarpeessa **{counts["C"]}**. Koostumus- tai massakorjaus ensisijaisena D+E: **{counts["D"]+counts["E"]}**. Kaikki päällekkäiset koostumus-/massaliput huomioiden **{sum(bool(set(r["blockerTags"]) & {"COMPOSITION","MASS"}) for r in rows)}** reseptiä tarvitsee tämän tarkistuksen. GI-tarkistuslipun saa {report["overlapCounts"]["GI"]} reseptiä; tämä ei tarkoita yhtä montaa uuden GI-mittauksen tarvetta.','',
- 'Päällekkäiset koneelliset liput: '+', '.join(f'{k} {v}' for k,v in report['overlapCounts'].items())+'.','',
- '## Kymmenen suurinta yhteistä esteperhettä','',
- 'Perheet ovat hakuryhmiä, eivät keskenään vaihdettavia GI-ruokia. Tomaattiperhe sisältää myös salsat; kookosmaitoperhe myös kookosjuoman. Valmistus ja tarkka nimi säilyvät jokaisessa ainesrivissä. Esiintyminen kattaa nykyisen reseptin tai GK-syötteen; ristiriitainen vanha syöte voi sisältää eri nimikkeen. Tuntemattomia hiilihydraatteja ei sisällytetä vaihteluväliin eikä lasketa nollaksi.','',
- '| Perhe | Esiintyy | Estää | Ainoa estävä perhe¹ | Muut portit valmiit² | Muilla paikallinen korjauspolku³ | Tunnettu HH g/annos |','| --- | ---: | ---: | ---: | ---: | ---: | --- |']
-for f in family_rows[:10]:
-    ran='tuntematon' if f['knownMinG'] is None else f'{f["knownMinG"]:.3f}–{f["knownMaxG"]:.3f}'
-    lines.append(f'| {f["family"]} | {f["presentRecipes"]} | {f["blockingRecipes"]} | {f["soleBlockingFamilyRecipes"]} | {f["otherwiseCompositionAndMassReadyRecipes"]} | {f["allOtherBlockersHaveLocalReviewPathCount"]} | {ran} |')
-lines += ['',
- '¹ Sama perhe voi sisältää useita koostumus-/määräongelmia. ² Konservatiivinen teoreettinen enimmäismäärä, jos kyseisen perheen kaikki täsmälliset lähdeongelmat ratkeavat; sisältää myös perheen GI:llä mahdollisesti alittuvan kumulatiivisen toleranssin. ³ Muut aineskohtaiset estot ovat korkeintaan tunnettuja alle 1 g:n virheellisiä sidoksia, joiden poistoehdotus pitää summan alle 2 g:n. Tämä on katselmointipolku, ei jo hyväksytty korjaus. Sarakkeet ² ja ³ käyttävät eri ehtoja eivätkä ole summattavia.','',
- 'Täydet reseptijoukot, jokaisen perheen tuntemattomat osuudet, tunnetut annosmäärät, päällekkäisyydet ja lähteen saatavuus ovat [JSON-inventaariossa](glycemic-coverage-run-0-inventory.json).','',
- '## Viisi parasta yhteistä lähdetyötä','',
- '| Järjestys | Kohde | Työ ja näyttö | Ehdollinen enimmäisavaus |','| ---: | --- | --- | ---: |']
-shared_notes={
- 'maitotuote':'Kerman nykyinen kategoriatietue: aloita kaalilaatikosta. Smetana jää erilliseen lähde-/ruokaperhekatselmointiin; regexin laajennus ei ole tämän erän ratkaisu. Pieni–keskisuuri työ, epävarmuus kohtalainen.',
- 'pähkinä/siemen':'Mantelin GI granolassa voisi alittaa yhteistoleranssin. Paahdetut lastut ja leivottu mantelijauho eivät ole sama valmistus: Runebergintorttujen siirto on erityisen epävarma. Keskisuuri työ, korkea lähderiski.',
- 'tomaatti':'Murska, kypsä tomaatti, salsa ja pyree erikseen. Aloita caponatasta, pastasta ja harirasta, joissa ravintolaskelma on tuettu. Raakatomaatin GI ei kelpaa kypsän ratkaisuksi. Suuri lähdetyö, korkea epävarmuus.',
- 'kookosmaito':'Täsmällinen tuote, määrä ja kuumennus. Riisipuuro-GI hylätään yksittäisen kookosmaidon näyttönä. Seitsemän yhden perheen tapausta ja yksi toleranssitapaus; suuri työ ja korkea epävarmuus.',
- 'liemi':'Ensimmäinen hyöty voi tulla lähteistetystä pienosuudesta jauhelihapihveissä. Suuremmat osuudet tarvitsevat tuotekohtaisen koostumuksen ja kelvollisen GI:n; keittojen keskiarvo ei kelpaa automaattisesti. Keskisuuri–suuri työ, korkea epävarmuus.'}
-for no,s in enumerate(shared,1):
-    lines.append(f'| {no} | {s["family"]} | {shared_notes[s["family"]]} | {s["candidateCeiling"]} |')
-lines += ['',f'Näiden viiden ehdokasjoukon unioni on **{len(seen)} reseptiä**, ei julkaisuennuste. Inventaarion `incrementalCeilingInThisOrder` poistaa päällekkäisyydet. Perheiden kaikki muodot eivät ratkea yhdellä lähteellä; todellinen avaus voi olla nolla. Lähteiden saatavuutta ei väitetä osoitetuksi uudella kirjallisuustutkimuksella tässä ajossa.','',
- '## 20 ensisijaista reseptiehdokasta','',
- 'Järjestys yhdistää toistettavan pisteytyksen ja dokumentoidun reseptikatselmoinnin. Piste = näytön saatavuus (1–3) / (työ (1–6) × riski (1–4) × riippumattomien työyksiköiden arvio). Arvot ovat järjestysasteikkoja, eivät tilastollisia todennäköisyyksiä. Jokaisen reseptin potentiaalinen nettolisäys on enintään +1; yhteisen katalogin muutos laajentaa regressiotarkistuksen kaikkiin käyttäjiin.','',
- '| # | Resepti-ID | Luokka | Piste | Seuraava tarkistus |','| ---: | --- | --- | ---: | --- |']
+
+labels={'A':'Lähes laskentavalmis','B':'Olemassa olevan GI-lähteen katselmointi','C':'Uusi soveltuva GI-lähde','D':'Ravinto-/koostumustieto','E':'Massa, annos tai valmistus','F':'Rakenne tai syöteversio','G':'Useita riippumattomia esteitä','H':'Toimituksellinen päätös'}
+original_plan=subprocess.check_output(['git','show',ORIGINAL_RUN_COMMIT+':docs/nutrition/glycemic-coverage-run-0-plan.md'],cwd=root).decode('utf-8').rstrip()
+# Keep original prose/numbers byte-for-byte (apart from checkout line endings).
+lines=['# AJO 0–0.6: GI/GK-kattavuuskampanjan suunnitteluhistoria','',
+ 'Ajantasainen suunnittelu on tämän dokumentin **AJO 0.6** -osuudessa. Alla oleva alkuperäinen AJO 0 on historiallinen: sen 326/138/188-luvut ja silloiset riskit eivät kuvaa uutta tuotantoa.','',
+ '## AJO 0 – alkuperäinen analyysi','',original_plan,'',
+ '## AJO 0.5 – lähdelaadun korjaus','',
+ '[PR #124](https://github.com/ozirix-dev/Reseptit/pull/124) yhdistettiin ja julkaistiin. Keltaisen kanacurryn aiempi GK 3,48 poistettiin, koska riisi-kookosmaitopuuron GI 31 ei tue yksittäistä kookosmaitoa. Neljä virheellistä sidontaa poistettiin; kolme muuta reseptiä olivat jo keskeneräisiä. Katalogin tutkimus säilyy REFERENCE_ONLY-viitteenä. [Tarkka lähdekorjausnäyttö](glycemic-coconut-source-review.md) ja sen koneluettava raportti ovat poikkeuksen peruste.','',
+ '## AJO 0.6 – ajantasaistettu suunnittelu','',
+ f'Tuotannon lähtöcommit `{PRODUCTION_COMMIT}`. Analyysin checkout-commit `{report["sourceCommit"]}` ja työkalujen/syötteiden SHA-256:t on lukittu koneelliseen inventaarioon. [Pages-CI 40640331867](https://github.com/ozirix-dev/Reseptit/actions/runs/40640331867): build ja deploy SUCCESS. [Julkinen GK-sivu](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/).',
+ f'Tuore auditointi: **{pilot["summary"]["recipes"]} reseptiä / {pilot["summary"]["calculated"]} laskettua / {pilot["summary"]["insufficientSourceData"]} keskeneräistä**, kattavuus {100*pilot["summary"]["calculated"]/pilot["summary"]["recipes"]:.1f} %. GI {len(gi)}: 6 STRONG / 39 SUPPLEMENTARY; yksi REFERENCE_ONLY, jota ei hyväksytä laskentalähteeksi eikä lähde-ehdokkaaksi. Julkaistujen arvojen nettomuutos tässä suunnitteluerässä **0**.','',
+ '### Uusi luokitus ja koko työjono','',
+ 'Kaikki nykyiset keskeneräiset reseptit on analysoitu uudelleen tuoreista GK- ja ravintoauditeista. Tunnisteiden uniikkius, täydellinen reseptijoukko sekä molempien nykyinventaarioiden tilat, arvot, estoviestit, ravintoluokat ja kolme fingerprintiä tarkistetaan.','',
+ '| Luokka | Ensisijainen työlinja | Alkuperäinen AJO 0 | AJO 0.6 |','| --- | --- | ---: | ---: |']
+lines += [f'| {c} | {labels[c]} | {historical["classCounts"][c]} | {counts[c]} |' for c in labels]
+lines += [f'| Yhteensä | | {historical["summary"]["insufficientSourceData"]} | {len(rows)} |','',
+ 'Päällekkäiset liput: '+', '.join(f'{k} {v}' for k,v in report['overlapCounts'].items())+'. Liput ovat tarkistusluokkia, eivät todisteita samanmääräisistä tieteellisistä virheistä. Ensisijaiset A–H-luokat ovat erilliset; sivuestot säilyvät.',
+ f'Työjonoon lisättiin `{WITHDRAWN}`; mitään aiempaa keskeneräistä ei poistunut. Vanhojen ensisijaisten luokkien muutokset: {len(report["priorityChanges"]["classChanges"])}. Alkuperäisen 20 listaan nähden keltainen curry tulee sijalle 12 ja baozi siirtyy listan ulkopuolelle mutta säilyy täydellisessä työjonossa. Tämä on jäljitettävän lähdetarkistuksen priorisointi, ei oletus kookosmaito-GI:n löytymisestä.','',
+ '### Yhteisten esteperheiden todellinen ehdollinen potentiaali','',
+ 'Yhden perheen ratkaisu ei riitä, jos reseptillä on muita portteja. Alla ainoan perheen, muiden porttien ja paikallisen tarkistuspolun määrät ovat eri ehtoja eikä niitä summata. Myös saman perheen tuotteet ja valmistustavat vaativat eri lähteitä. **Varmennettu uusi nettotuotto on jokaisessa perheessä 0**; ehdollinen katto ei ole julkaisuennuste.','',
+ '| Perhe | Estää reseptejä | Ainoa estävä perhe | Muut portit valmiit / ehdollinen katto | Muilla paikallinen tarkistuspolku |','| --- | ---: | ---: | ---: | ---: |']
+lines += [f'| {f["family"]} | {f["blockingRecipes"]} | {f["soleBlockingFamilyRecipes"]} | {f["otherwiseCompositionAndMassReadyRecipes"]} | {f["allOtherBlockersHaveLocalReviewPathCount"]} |' for f in family_rows[:10]]
+coconut=next(f for f in family_rows if f['family']=='kookosmaito')
+old_coconut=next(f for f in historical['families'] if f['family']=='kookosmaito')
+lines += ['',f'Kookosmaito: esiintyy {coconut["presentRecipes"]} keskeneräisessä (ennen {old_coconut["presentRecipes"]}), estää {coconut["blockingRecipes"]} (ennen {old_coconut["blockingRecipes"]}), ehdollinen avauskatto {coconut["theoreticalNewValuesUpperBound"]} (ennen {old_coconut["theoreticalNewValuesUpperBound"]}). Kolmen vanhan reseptin semanttinen riski on nyt todellinen puuttuvan GI:n esto; uusi curry lisää yhden reseptin. Tiheys-/tuote-/määrä-/varianttiongelmat eivät katoa GI-lähteen löytymisellä.','',
+ '### Päivitetty 20 reseptin prioriteettijono','',
+ 'Pisteytyksen kaava ja A–H-luokittelun säännöt ovat alkuperäisessä menetelmäkuvauksessa. Järjestys sisältää dokumentoidun toimituksellisen valinnan. Ensimmäinen kymmenikkö säilyi, koska sen lähdepolut ja estot eivät muuttuneet ja uusilta ehdokkailta puuttuu parempi varmistettu lähdepolku.','',
+ '| # | Resepti | Luokka | Piste | Seuraava portti |','| ---: | --- | --- | ---: | --- |']
 for no,rid in enumerate(top20,1):
-    r=byid[rid]
-    reason=r['nextAction']
-    if rid not in notes and rid not in reuse: reason='; '.join(r['blockingFamilies'])+'. '+reason
-    lines.append(f'| {no} | `{rid}` | {r["primaryClass"]} | {r["priority"]["score"]} | {reason} |')
-lines += ['',
- 'A/B-ehdokkaiden valmistuminen yhden pienen PR:n aikana arvioidaan kohtalaiseksi; C–F-ehdokkaiden matalaksi ja G/H-ehdokkaiden erittäin matalaksi. Nämä ovat suunnitteluarvioita ilman empiiristä prosenttilupausta. Tuetun ravintolaskelman ja yhden selkeän lähdepuutteen reseptit nostettiin listalle ennen monen ongelman reseptejä.','',
- '## Ensimmäinen toteutuserä: 2B6E','',
- 'Viiden reseptin rajattu katselmointi:','']
-lines += [f'{no}. `{rid}` — {byid[rid]["nextAction"]}' for no,rid in enumerate(first,1)]
-lines += ['',
- '**Realistinen suunnitteluarvio: +1–3; varma lisäys 0; ehdollinen enimmäismäärä +5.** Yhtäkään uutta arvoa ei hyväksytty tässä ajossa. Jos koko lähde- ja määräketju ei kestä katselmointia, tulos voi olla nolla. Mallin kaavaa tai validointiehtoja ei muuteta.','',
- 'Ensimmäisen reseptin nykyinen liemiosuus on 0,750 g/annos. Nykyisen virheellisen GI-sidoksen poistamista kokeiltiin vain muistissa: laskentamalli päätyi alle 2 g:n kokonaispoisjättöön 1,18705 g/annos. Sidoksen poisto edellyttää silti lähdekohtaisen hiilihydraattimäärän varmentamista. Näitä mallikokeita ei kirjoitettu reseptisyötteisiin eikä julkaistu GK-lukuina.','',
- 'Kaalilaatikon `dairy-category` on eri kuin katalogin `unflavoured-dairy`; som tamin pavuissa `vegetables/cooked` eroaa katalogin `vegetable/vegetable-category`-avaimista. Avainten korjaaminen ei saa peittää lähde-/valmistusvastaavuuden puutetta. Granolan mantelien uunipaahto 160 °C / 18–22 min on nimenomainen lähdeportti. Halloumileivän hapanjuurileipä käyttää ravintosyötteessä maalaisleipäproxya; sitä ei kopioida GK:hon ilman vastaavuuden tarkistusta.','',
- 'AJO 1: tarkista ensin kaikkien viiden reseptin aines- ja valmistusketju, valitse vain kelvolliset korjaukset, lukitse nykyisten 138 lasketun arvon regressiovertailu, aja käyttäjän kampanjan mukaiset laskentaerän tarkistukset, avaa yksi Draft-PR ja varmista CI täsmälleen julkaistavalla HEADilla. Ei mergeä. Ei automaattista AJO 2:ta.','',
- '## Laatuportit ja syyt lykätä muita reseptejä','',
- '- `khao-soi-vhh-konjac`: liemisidoksen poisto näyttäisi mallissa onnistuvan (poisjättö 1,983 g), mutta kookosmaidon 2,81 g/annos on sidottu riisipuuron GI 31:een. Ei lähes valmis. Sama tietue on käytössä keskeneräisissä massamanissa ja tom khassa sekä jo lasketussa `keltainen-kanacurry-vhh`-reseptissä. Viimeinen tarvitsee erillisen laatukatselmoinnin; mahdollinen −1 on raportoitava erillään uusista avauksista. AJO 0 ei muuta sen arvoa.',
- '- `intialainen-aloo-paratha`: ravintolaskelman `fineli-310-release-20` on nimeltään MAA-ARTISOKKA, vaikka aines ja vastaavuusmuistio kuvaavat perunaa. Nykyinen ravintoauditin tuettu luokka ei ole riittävä takuu. Korjaa koostumus erillisessä laskentatyössä ennen GK-ehdotusta.',
- '- `valimerellinen-tortilla-espanola-aamupalaksi`: sipulin avainpoikkeaman lisäksi vesikeitetyn perunan lähde on tarkistettava öljyssä kypsennettyä tortillaa vasten. Ei pelkkä avainkorjaus.',
- '- Vanha kahdeksan tomaattireseptin lista ei ole kahdeksan avausta: tabboulehin estot ovat bulgur ja yrtit, paellan kanaliemi, bouillabaissen sinisimpukat ja fenkoli. Gulassissa ja ropa viejassa on myös liemi; gulassissa lisäksi toleranssi. Farinatan tomaatti paistetaan uunissa, vaikka ravintotietueen lähtömuoto on raaka.',
- '- 38 sidontaestoa ei korjata vaihtamalla hashia. Jokaisessa on myös nykyisestä syötteestä tulevia esteitä; yksi täsmällinen massakorjauskin vaatii koko reseptin vertailun.',
- '- H-luokan vesi/maito/liemivaihtoehdot, tuotteet ja määrät tarvitsevat toimituksellisen ratkaisun. G-luokan usean esteen reseptejä ei priorisoida yhden yleisen ainesosalähteen perusteella.',
- '- Keitetty taateli, vesikeitetty öljytön mannapuuro, rapea tostada ja paistettu suklaa pysyvät ilman sopivaa lähdettä estettyinä. Reseptin sisältöä ei vaihdeta laskennan avaamiseksi.',
- '- Semanttinen tarkistus on rajattu havaittuihin selviin ristiriitoihin, ei kaikkien 138 aiemman arvon täydellinen lähdeauditti. AJO 7:n neljä mannasuurimoreseptiä säilyvät erillisen katselmoinnin työjonossa.','',
- 'Vanhentuneet esteet: 2B6D:n baselineen verrattuna taatelipuuro-tahinin nestevaihtoehto, tahinisidos ja vanha rakenne-esto ovat poistuneet, mutta keitetyn taatelin GI-esto jää. Appelsiinimannapuuron aiemmat taateli/neste/rakenne-estot ovat korvautuneet vesikeitetyn mannan täsmällisellä NO MATCH -estolla. Ajantasaiset estolistat säilyvät; vanhoja selitteitä ei lasketa uudelleen nykyisiksi.','',
- '## Jäljitettävyys, uudelleenajo ja tarkistukset','',
- '- [Kampanjan alkuperäinen toimeksianto](glycemic-coverage-campaign-master-plan.md) säilyttää AJO 0–10:n rajat ja STOP-ehdot.',
- '- [Koneellinen inventaario](glycemic-coverage-run-0-inventory.json): 188 uniikkia keskeneräistä ID:tä, A–H summa 188; lähdetiedostojen SHA-256:t ja reseptien fingerprintit.',
- '- [Analyysityökalu](tools/glycemic-coverage-run-0-analyze.py) lukee tuoreet auditoinnit ja kirjoittaa vain erilliseen scratch-hakemistoon. Nykyinventaarioiden erimielisyys, baseline-arvon muutos tai reseptijoukon ero keskeyttää ajon.',
- '- [Pienosuuksien mallikoe](tools/glycemic-coverage-run-0-probe.mts) muuttaa vain muistissa kloonattuja syötteitä ja tallentaa estot/poisjättösummat scratchiin. Ei uusia GI-arvoja eikä kokonais-GK-ennusteita.',
- '- Paikallinen `content:sync`, `audit:nutrition -- --strict`, `audit:glycemic-load` ja `test:glycemic`: PASS (64/64). Kokonainen sivustobuild ja selaintestit eivät ole tämän suunnitteludiffin paikallisia vaatimuksia; GitHubin riskivalitsin ratkaisee CI:n lisätarkistukset.',
- '- Markdown-lint ja diff-tarkistus sekä Draft-PR:n CI varmennetaan toimituksen yhteydessä. Lopullinen HEAD ja CI-linkki ovat PR:n Checks-näkymässä ja tämän ajon loppuraportissa. ReportHubia ei muuteta.','',
- 'Uudelleenajo oikean checkoutin `site/`-hakemistosta (tarkista repo_guard ja buildin kirjoituskohteet ensin):','',
- '```powershell',
- 'npm run content:sync',
- 'npm run audit:nutrition -- --strict',
- 'npm run audit:glycemic-load',
- 'python ../docs/nutrition/tools/glycemic-coverage-run-0-analyze.py .. D:/Temp/reseptit-run0-replay',
- 'node --import tsx ../docs/nutrition/tools/glycemic-coverage-run-0-probe.mts .. D:/Temp/reseptit-run0-replay/probe.json',
- 'npm run test:glycemic',
- '```','',
- 'Valmiit JSON/Markdown-tulokset tuodaan repoon vain repo_guard `write` -operaatiolla ja olemassa olevan tiedoston nykyisellä SHA-256:lla. Älä aja tavallista `audit:glycemic-coverage`-komentoa suoraan suunnitteludiffiin: se kirjoittaa seurattuja nykyraportteja. Tässä ajossa sen sijasta verrattiin kaikki tuoreet tulosrivit, estot ja fingerprintit kumpaankin nykyinventaarioon muuttamatta niitä. Jos main muuttuu, analyysi ja valittu työjoukko on varmennettava uudelleen.','',
- '**Pysähdy tähän. AJO 1 edellyttää seuraavaa toimeksiantoa.**','']
+    r=byid[rid];lines.append(f'| {no} | `{rid}` | {r["primaryClass"]} | {r["priority"]["score"]} | {r["nextAction"]} |')
+lines += ['', '### Seuraavan 2B6E-erän ehdotettu viisikko','',
+ 'Säilytetään alkuperäinen viisikko. Kaikkien viiden syötefingerprint ja koko estolista ovat ennallaan; jokainen tarkistettiin uuden tuotantotilan rinnalla. Keltaisen curryn oma GI puuttuu eikä se ole näitä parempi välitön toteutuskohde.','',
+ '**Varmistettu nettolisäys 0; jokaisessa reseptissä ehdollisesti 0–1 ja koko joukossa 0–5. Aiempi +1–3 ei ole toimituslupaus eikä tämän ajon odotusarvo.** Tulokset voivat jäädä kokonaan nollaan. Määrät ovat loogisia ylärajoja, eivät lähteiden löytämisen todennäköisyyksiä.','']
+for no,rid in enumerate(first,1):
+    r=first_reviews[rid]
+    lines += [f'#### {no}. `{rid}`','',
+     'Nykyiset estot: '+'; '.join(b['message'] for b in r['allCurrentBlockers']),
+     'Jo olemassa: '+', '.join('`'+v+'`' for v in r['availableFoodRecordIds'])+'. Mallin nyt hyväksymät GI-tietueet: '+', '.join('`'+v+'`' for v in r['modelAcceptedGiRecordIds'])+'. Mallihyväksyntä ei korvaa lähdekatselmointia.',
+     '**Tarkistettava lähde:** '+r['sourceReview'], '**Syöte ja annos:** '+r['amountReadiness'],
+     '**Pienosuudet:** '+r['tolerance'], '**Avaava ratkaisu:** '+r['unlock'], '**Erän realistisuus:** '+r['oneBatch']+' Ehdollinen nettolisäys 0–1.','']
+lines += ['### Historiallinen regressiosuoja ja erilliset laatutyöt','',
+ f'Historiallinen 2B6D-baseline säilyy muuttumattomana: {regression["historicalCalculatedCount"]} silloista laskettua arvoa. Vain `{WITHDRAWN}` saa poiketa lasketusta tilasta, ja sen koko nykyinen tulos on täsmättävä PR #124:n dokumentoituun jälkeen-tilaan. Muut historialliset arvot sekä kaikki {regression["previouslyPublishedValuesPreserved"]} nykyistä laskettua arvoa tarkistetaan; kahden 2B6D-lisäyksen arvot säilyvät: hirssipuuro 21,19 ja kuskus-aamiaiskulho 34,36.',
+ 'REFERENCE_ONLY-lipun poistaminen, hylätyn kookosmaitosidoksen palautus, muun aiemman arvon poistuminen/muuttuminen, uusi laskettu resepti, duplikaatti-ID tai työjonon aukko keskeyttää analyysin. Julkaistua dataa tai laskentakoodia ei sallita muutetuksi suhteessa lukittuun tuotantocommittiin.',
+ 'Voimassa olevat fingerprint-poikkeamat: '+', '.join(f'{k}={len(v)}' for k,v in report['persistentFingerprintMismatches'].items())+'. Uudet poikkeamat historiallisen vertailun suhteen: '+', '.join(f'{k}={v}' for k,v in report['newFingerprintMismatchesComparedWithHistoricalBaseline'].items())+'. 38 rakenne-estoa ja uusien muutosten 0/0/0 kuvaavat eri asioita.',
+ '`intialainen-aloo-paratha`: Fineli 310 / MAA-ARTISOKKA vs peruna säilyy erillisenä koostumus- ja lähdevastaavuustyönä. Tortillan keitetty peruna vs öljykypsennys säilyy erillisenä valmistusriskinä.',
+ 'Lisähavainto: koostumuskatalogissa on ennestään kaksi eri tietuetta samalla ID:llä `fineli-11557-2026-10-24`. Analyysi säilyttää laskentamallin nykyisen viimeisen tietueen valinnan; koostumuksia ei muuteta. Tämä jää erilliseksi lähdekatalogin laatutarkistukseksi.',
+ 'Neljä laskettua mannasuurimoreseptiä säilyvät erillisessä valmistusvastaavuuden katselmoinnissa: '+', '.join('`'+rid+'`' for rid in report['qualityReviewQueue']['semolina']['recipeIds'])+'. Niiden arvoja ei muutettu.','',
+ '### Uudelleenajo ja tarkistukset','',
+ 'Aja oikean checkoutin `site/`-hakemistosta. Audittien tulokset menevät ohitettuun `tmp/nutrition`-hakemistoon; content/build vain tämän työpuun generoituun sivustoon. Analyysin ja probe-kokeen tuloskohteen on oltava repon ulkopuolinen scratch. Versionhallittuihin tiedostoihin siirto tehdään repo_guardilla.','',
+ '```powershell','npm run content:sync','npm run audit:nutrition -- --strict','npm run audit:glycemic-load',
+ 'python ../docs/nutrition/tools/glycemic-coverage-run-0-analyze.py .. D:/Temp/reseptit-run06-replay',
+ 'python ../docs/nutrition/tools/test_glycemic_run0_validation.py',
+ 'node --import tsx ../docs/nutrition/tools/glycemic-coverage-run-0-probe.mts .. D:/Temp/reseptit-run06-replay/probe.json',
+ 'npm run test:glycemic','npm test','npm run test:select-ci','npm run build','npm run test:static','```','',
+ 'Kattavuuskomentoa ei tarvita seurattujen nykyinventaarioiden muuttamiseen: analyysi täsmää jokaisen tuoreen tulosrivin kumpaankin nykyinventaarioon. Kahden peräkkäisen analyysiajon JSON/Markdown ja probe-tulokset verrataan byte-for-byte samoilla syötteillä. Paikallinen testitulos ja viimeisen HEADin CI raportoidaan PR #123:ssa; aiemman HEADin CI ei hyväksy tätä päivitystä.',
+ 'Git-integraatiossa säilytettiin molemmat README-lisäykset. PR #124:n laskentatoteutus, historialliset baselinet ja tuotannon GK-tulokset ovat muuttumattomat. PR #123 pysyy Draftina; ei mergeä, deployta, ReportHubia eikä 2B6E-laskentaa.','',
+ '**Pysähdy tähän. AJO 1 / 2B6E edellyttää erillistä toimeksiantoa.**','']
 (out/'glycemic-coverage-run-0-plan.md').write_text('\n'.join(lines),encoding='utf-8')
-print(json.dumps({'summary':report['summary'],'classes':counts,'overlap':report['overlapCounts'],'shared':shared,'first':first},ensure_ascii=False,indent=2))
+print(json.dumps({'summary':report['summary'],'classes':counts,'overlap':report['overlapCounts'],'familiesTop5':[{k:f[k] for k in ('family','blockingRecipes','theoreticalNewValuesUpperBound')} for f in family_rows[:5]],'priorityChanges':report['priorityChanges'],'first':first},ensure_ascii=False,indent=2))
