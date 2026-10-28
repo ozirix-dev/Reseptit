@@ -1,18 +1,18 @@
 # GK-esteinventaario
 
-Lähdecommit: `ea661fbb45f4ed07903262e06604393cb787e09b`. Vertailun lähtösnapshot: `5e9cdeb830f468ecf099e9c286f9344afe3b6b71` (114 laskettua / 211 keskeneräistä; 38 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
+Lähdecommit: `cd9a6f4f740b31dc8b52c6c09cc1574cb7a89950`. Vertailun lähtösnapshot: `5e9cdeb830f468ecf099e9c286f9344afe3b6b71` (114 laskettua / 211 keskeneräistä; 38 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
 
 Erän 2A lähtösnapshot on historiallinen vertailupohja, ei tämän ajon nykytila. Ajantasainen laskentatila ja nykyiset GK-luvut esitetään alla.
 
-Nykyinen ajo kattaa 326 reseptiä: 138 laskettua, 188 keskeneräistä. GI-katalogissa on 45 tietuetta (6 STRONG, 39 SUPPLEMENTARY).
+Nykyinen ajo kattaa 326 reseptiä: 137 laskettua, 189 keskeneräistä. GI-katalogissa on 45 tietuetta (6 STRONG, 39 SUPPLEMENTARY).
 
 Uusi resepti historiallisen 325 reseptin vertailusnapshotin jälkeen: munakoiso-kesakurpitsalasagne. Se kuuluu nykyinventaarioon, mutta ei historialliseen baselineen.
 
 ## Muutos hyväksytystä vertailusta
 
-- Aiemmin keskeneräisiä, nyt laskettavia: 24. Aiemmin laskettuja, nyt estettyjä: 0. Edelleen keskeneräisiä: 187.
-- Estoperuste muuttui 38 reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: 0/0/0.
-- Keskeneräisiä, joiden ravintoarvotila on tuettu: 94; tarkistettava: 40; puuttuva: 54.
+- Aiemmin keskeneräisiä, nyt laskettavia: 24. Aiemmin laskettuja, nyt estettyjä: 1. Edelleen keskeneräisiä: 187.
+- Estoperuste muuttui 42 reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: 0/0/0.
+- Keskeneräisiä, joiden ravintoarvotila on tuettu: 94; tarkistettava: 41; puuttuva: 54.
 
 ## Päällekkäiset esteet
 
@@ -26,7 +26,7 @@ Luokat menevät päällekkäin; sama resepti voi esiintyä useassa rivissä.
 | COMPOSITION | 66 | 99 |
 | MASS_PREPARATION | 20 | 23 |
 | GI_MATCH | 81 | 101 |
-| GI_MISSING | 42 | 45 |
+| GI_MISSING | 46 | 49 |
 | TOLERANCE | 6 | 6 |
 
 ## Historiallinen erä 2A: rakennesidontojen lähtötilanne ja lopputulos
@@ -103,7 +103,7 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | vhh-kaalilaatikko | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | munakoiso-jauhelihavuoka-vhh | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | lahi-ita-kikherne-shakshuka | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
-| massaman-curry-kanalla-vhh | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
+| massaman-curry-kanalla-vhh | GI_MISSING | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | chole-bhature | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | vada-pav | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | pani-puri | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
@@ -129,16 +129,17 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | vhh-runebergintortut | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | maksalaatikko-kukkakaalilla | GI_MISSING | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | paistettu-maksa-pekonilla | GI_MISSING | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
+| keltainen-kanacurry-vhh | GI_MISSING | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | pad-thai-vhh-konjac | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | rahka-marjakerroskulho | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | valimerellinen-tortilla-espanola-aamupalaksi | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
-| khao-soi-vhh-konjac | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
+| khao-soi-vhh-konjac | GI_MISSING | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | som-tam-vhh-kurkkuna | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | kanakeitto-pinaatti-sitruuna | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | tom-yum-goong-vhh | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | vhh-mustikkapiirakka | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | ketopizza-pofiber-pohjalla | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | MANUAL_TRIAGE |
-| tom-kha-gai-vhh | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
+| tom-kha-gai-vhh | GI_MISSING | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | marjainen-chiavanukas | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | pad-see-ew-vhh-konjac | TOLERANCE | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | MANUAL_TRIAGE |
 | raejuusto-uunimunakas | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | MANUAL_TRIAGE |
