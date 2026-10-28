@@ -380,9 +380,10 @@ test("current inventory preserves historical values except the documented coconu
   assert.equal(current.currentSummary.incomplete, current.recipes.filter((row) => row.status !== "CALCULATED").length);
   assert.equal(current.currentSummary.newlyCalculated, current.recipes.filter((row) => row.newlyCalculated).length);
   const onionReview = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-onion-source-review.json"), "utf8"));
+  const pepperReview = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-red-pepper-source-review.json"), "utf8"));
   const newlyBlockedIds = baseline.recipes.filter((prior) => prior.status === "CALCULATED"
     && current.recipes.find((row) => row.recipeId === prior.recipeId)?.status !== "CALCULATED").map((row) => row.recipeId);
-  assert.deepEqual([...newlyBlockedIds].sort(), ["keltainen-kanacurry-vhh", ...onionReview.withdrawnRecipeIds].sort());
+  assert.deepEqual([...newlyBlockedIds].sort(), ["keltainen-kanacurry-vhh", ...onionReview.withdrawnRecipeIds, ...pepperReview.withdrawnRecipeIds].sort());
   assert.equal(current.currentSummary.newlyBlocked, newlyBlockedIds.length);
   assert.deepEqual([current.currentSummary.giTierCounts.STRONG, current.currentSummary.giTierCounts.SUPPLEMENTARY], [6, 39]);
   assert.equal(current.currentSummary.newStructureMismatches, 0);
@@ -395,7 +396,7 @@ test("current inventory preserves historical values except the documented coconu
   for (const [id, value] of previousResults) {
     const row = current.recipes.find((item) => item.recipeId === id);
     assert.ok(row, `${id} remains in the current inventory`);
-    const corrected = onionReview.affectedRecipes.find((item: { recipeId: string }) => item.recipeId === id);
+    const corrected = [...pepperReview.affectedRecipes, ...onionReview.affectedRecipes].find((item: { recipeId: string }) => item.recipeId === id);
     if (corrected) {
       assert.equal(row.status, corrected.after.status);
       assert.equal(row.glycemicLoadPerServing, corrected.after.glycemicLoadPerServing);

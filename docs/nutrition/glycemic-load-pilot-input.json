@@ -240,14 +240,15 @@
       "servings": 2,
       "ingredients": [
         {
-          "name": "punainen paprika",
-          "grams": 340,
-          "fineliRecordId": "fineli-386-2026-10-24",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
-          "massEvidence": "2 kpl × documented Fineli mass 170 g/kpl",
-          "giMatchEvidence": "Generic pepper GI 40 from a secondary review; species/preparation are not established.",
-          "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe"
+          "name": "isoa paprikaa (väri yksilöimättä)",
+          "grams": 460,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "AJO 1.6B: original 2 large peppers × Fineli Rel20 #386/#387 KPL_L 230 g = 460 g edible raw portion estimate. Both red and green records have the same portion mass and 100% edible basis; stems/seeds are not added to this edible amount. Fineli data-file instructions pp.2–3 https://fineli.fi/fineli/content/file/8 . No cooking-loss multiplier or weighed batch claim.",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero. AJO 1.6B: recipe does not identify pepper colour; red composition must not be inferred from the photograph. Product-specific carbohydrate composition is unresolved.",
+          "foodKey": "bell-pepper-colour-unspecified",
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "compositionEvidence": "AJO 1.6B: recipe does not identify pepper colour; red composition must not be inferred from the photograph. Product-specific carbohydrate composition is unresolved."
         },
         {
           "name": "kananmuna",
@@ -300,11 +301,11 @@
           "name": "punainen paprika",
           "grams": 170,
           "fineliRecordId": "fineli-386-2026-10-24",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
-          "massEvidence": "1 kpl × documented Fineli mass 170 g/kpl",
-          "giMatchEvidence": "Generic pepper GI 40 from a secondary review; species/preparation are not established.",
+          "giRecordId": null,
+          "massEvidence": "1 kpl × documented Fineli mass 170 g/kpl AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero.",
           "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe"
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi"
         },
         {
           "name": "keltasipuli",
@@ -656,11 +657,11 @@
           "name": "punainen paprika",
           "grams": 170,
           "fineliRecordId": "fineli-386-2026-10-24",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
+          "giRecordId": null,
           "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
-          "massEvidence": "Fineli Rel20 KPL_M 170 g, reseptissä 1 kpl."
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero.",
+          "massEvidence": "Fineli Rel20 KPL_M 170 g, reseptissä 1 kpl. AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier."
         },
         {
           "name": "tomaattimurskaa",
@@ -760,11 +761,11 @@
           "name": "punaista paprikaa",
           "grams": 170,
           "fineliRecordId": "fineli-386-2026-10-24",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
+          "giRecordId": null,
           "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
-          "massEvidence": "Fineli Rel20 KPL_M 170 g, reseptissä 1 kpl."
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero.",
+          "massEvidence": "Fineli Rel20 KPL_M 170 g, reseptissä 1 kpl. AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier."
         },
         {
           "name": "sipuli",
@@ -1000,12 +1001,13 @@
         {
           "name": "isoa paprikaa",
           "grams": 920,
-          "fineliRecordId": "fineli-386-2026-10-24",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
-          "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
-          "massEvidence": "Fineli Rel20 KPL_L 230 g, reseptissä 4 kpl."
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "foodKey": "bell-pepper-colour-unspecified",
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero. AJO 1.6B: recipe does not identify pepper colour; red composition must not be inferred from the photograph. Product-specific carbohydrate composition is unresolved.",
+          "massEvidence": "Fineli Rel20 KPL_L 230 g, reseptissä 4 kpl. AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
+          "compositionEvidence": "AJO 1.6B: recipe does not identify pepper colour; red composition must not be inferred from the photograph. Product-specific carbohydrate composition is unresolved."
         },
         {
           "name": "naudan jauhelihaa",
@@ -6399,14 +6401,15 @@
           "massEvidence": "Recipe-listed mass; structured Finnish recipe"
         },
         {
-          "name": "punaista paprikaa",
+          "name": "paprikaa (väri yksilöimättä)",
           "grams": 340,
-          "fineliRecordId": "fineli-386-2026-10-24",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
-          "massEvidence": "2 medium peppers × Fineli #386 170 g each",
-          "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published Pepper, generic vegetable table entry category/analogue; match limitations disclosed centrally."
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Two recipe-listed peppers (size unspecified) × Fineli #386/#387 KPL_M 170 g standard portion estimate; not a weighed batch AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
+          "foodKey": "bell-pepper-colour-unspecified",
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero. AJO 1.6B: recipe does not identify pepper colour; red composition must not be inferred from the photograph. Product-specific carbohydrate composition is unresolved.",
+          "compositionEvidence": "AJO 1.6B: recipe does not identify pepper colour; red composition must not be inferred from the photograph. Product-specific carbohydrate composition is unresolved."
         },
         {
           "name": "punasipulia",
@@ -6529,11 +6532,11 @@
           "name": "punaista paprikaa",
           "grams": 120,
           "fineliRecordId": "fineli-386-2026-10-24",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
-          "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed mass; structured Finnish recipe AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
           "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published Pepper, generic vegetable table entry category/analogue; match limitations disclosed centrally."
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
         },
         {
           "name": "mozzarellaraastetta",
@@ -7440,12 +7443,12 @@
         {
           "name": "punaista paprikaa",
           "grams": 120,
-          "massEvidence": "Recipe-listed edible mass.",
+          "massEvidence": "Recipe-listed edible mass. AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
           "fineliRecordId": "fineli-386-2026-10-25",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
+          "giRecordId": null,
           "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
         },
         {
           "name": "thaibasilikaa",
@@ -19836,13 +19839,13 @@
         },
         {
           "name": "punainen paprika",
-          "grams": 170,
+          "grams": 150,
           "fineliRecordId": "fineli-386-release-20",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
-          "massEvidence": "Recipe-listed 170 g, mapped to PAPRIKA, PUNAINEN (raw red bell pepper).",
+          "giRecordId": null,
+          "massEvidence": "AJO 1.6B: original recipe specifies 150 g raw red pepper, diced, not 170 g. All edible input is simmered in the dish; no cooking-loss deduction.",
           "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Pepper, generic vegetable table entry: Generic pepper entry; species, preparation, and primary measurement details are not established.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
         },
         {
           "name": "valkosipulinkynttä",
@@ -20673,11 +20676,11 @@
           "name": "punainen paprika",
           "grams": 170,
           "fineliRecordId": "fineli-386-release-20",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
-          "massEvidence": "Recipe-listed 170 g, mapped to PAPRIKA, PUNAINEN (raw red bell pepper).",
+          "giRecordId": null,
+          "massEvidence": "One recipe-listed pepper represented by Fineli KPL_M 170 g standard portion estimate (size not specified; not weighed), mapped to PAPRIKA, PUNAINEN (raw red bell pepper). AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
           "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Pepper, generic vegetable table entry: Generic pepper entry; species, preparation, and primary measurement details are not established.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
         },
         {
           "name": "kalakastiketta",
@@ -21134,22 +21137,23 @@
         {
           "name": "punaista paprikaa",
           "grams": 170,
-          "fineliRecordId": "fineli-387-release-20",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
-          "massEvidence": "Recipe-listed 170 g, mapped to PAPRIKA, VIHREÄ (raw green bell pepper).",
+          "fineliRecordId": "fineli-386-release-20",
+          "giRecordId": null,
+          "massEvidence": "One recipe-listed pepper represented by Fineli KPL_M 170 g standard portion estimate (size not specified; not weighed), mapped to PAPRIKA, PUNAINEN (raw red bell pepper). AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
           "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Pepper, generic vegetable table entry: Generic pepper entry; species, preparation, and primary measurement details are not established.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero. AJO 1.6B: original red pepper matches Fineli #386: CHOAVL 4.5, fibre 1.9, polyols 0 g/100 g; previous #387 green pepper had CHOAVL 2.5. Corrected using source values, no colour multiplier.",
+          "compositionEvidence": "AJO 1.6B: original red pepper matches Fineli #386: CHOAVL 4.5, fibre 1.9, polyols 0 g/100 g; previous #387 green pepper had CHOAVL 2.5. Corrected using source values, no colour multiplier."
         },
         {
           "name": "vihreää paprikaa",
           "grams": 170,
           "fineliRecordId": "fineli-387-release-20",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
-          "massEvidence": "Recipe-listed 170 g, mapped to PAPRIKA, VIHREÄ (raw green bell pepper).",
-          "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Pepper, generic vegetable table entry: Generic pepper entry; species, preparation, and primary measurement details are not established.; category/analogue estimate, low confidence."
+          "giRecordId": null,
+          "massEvidence": "One recipe-listed pepper represented by Fineli KPL_M 170 g standard portion estimate (size not specified; not weighed), mapped to PAPRIKA, VIHREÄ (raw green bell pepper). AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
+          "foodKey": "green-pepper",
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
         },
         {
           "name": "maustamatonta jogurttia",
@@ -21758,11 +21762,11 @@
           "name": "vihreä paprika",
           "grams": 170,
           "fineliRecordId": "fineli-387-release-20",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
-          "massEvidence": "Recipe-listed 170 g, mapped to PAPRIKA, VIHREÄ (raw green bell pepper).",
-          "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Pepper, generic vegetable table entry: Generic pepper entry; species, preparation, and primary measurement details are not established.; category/analogue estimate, low confidence."
+          "giRecordId": null,
+          "massEvidence": "One recipe-listed pepper represented by Fineli KPL_M 170 g standard portion estimate (size not specified; not weighed), mapped to PAPRIKA, VIHREÄ (raw green bell pepper). AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
+          "foodKey": "green-pepper",
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
         },
         {
           "name": "sumakki",
@@ -22053,12 +22057,13 @@
         {
           "name": "punaista paprikaa",
           "grams": 100,
-          "fineliRecordId": "fineli-387-release-20",
-          "giRecordId": "red-pepper-literature-analogue-gi-40",
-          "massEvidence": "Recipe-listed 100 g, mapped to PAPRIKA, VIHREÄ (raw green bell pepper).",
+          "fineliRecordId": "fineli-386-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 100 g, mapped to PAPRIKA, PUNAINEN (raw red bell pepper). AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
           "foodKey": "red-pepper",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Pepper, generic vegetable table entry: Generic pepper entry; species, preparation, and primary measurement details are not established.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero. AJO 1.6B: original red pepper matches Fineli #386: CHOAVL 4.5, fibre 1.9, polyols 0 g/100 g; previous #387 green pepper had CHOAVL 2.5. Corrected using source values, no colour multiplier.",
+          "compositionEvidence": "AJO 1.6B: original red pepper matches Fineli #386: CHOAVL 4.5, fibre 1.9, polyols 0 g/100 g; previous #387 green pepper had CHOAVL 2.5. Corrected using source values, no colour multiplier."
         },
         {
           "name": "kurkkua",
