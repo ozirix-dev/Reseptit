@@ -365,7 +365,7 @@ test("current 2A and 2B6D inventories share one generated state while keeping hi
   assert.match(report, /erän 2A lähtösnapshot on historiallinen vertailupohja/i);
 });
 
-test("current inventory preserves historical GK values except the reviewed coconut-source withdrawal", async () => {
+test("current inventory preserves historical values except the documented coconut and onion corrections", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const baseline = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b6d-baseline.json"), "utf8")) as {
     sourceCommit: string; recipeCount: number; calculated: number; incomplete: number; giRecordCount: number;
@@ -379,9 +379,10 @@ test("current inventory preserves historical GK values except the reviewed cocon
   assert.equal(current.currentSummary.calculated, current.recipes.filter((row) => row.status === "CALCULATED").length);
   assert.equal(current.currentSummary.incomplete, current.recipes.filter((row) => row.status !== "CALCULATED").length);
   assert.equal(current.currentSummary.newlyCalculated, current.recipes.filter((row) => row.newlyCalculated).length);
+  const onionReview = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-onion-source-review.json"), "utf8"));
   const newlyBlockedIds = baseline.recipes.filter((prior) => prior.status === "CALCULATED"
     && current.recipes.find((row) => row.recipeId === prior.recipeId)?.status !== "CALCULATED").map((row) => row.recipeId);
-  assert.deepEqual(newlyBlockedIds, ["keltainen-kanacurry-vhh"]);
+  assert.deepEqual([...newlyBlockedIds].sort(), ["keltainen-kanacurry-vhh", ...onionReview.withdrawnRecipeIds].sort());
   assert.equal(current.currentSummary.newlyBlocked, newlyBlockedIds.length);
   assert.deepEqual([current.currentSummary.giTierCounts.STRONG, current.currentSummary.giTierCounts.SUPPLEMENTARY], [6, 39]);
   assert.equal(current.currentSummary.newStructureMismatches, 0);
@@ -394,6 +395,13 @@ test("current inventory preserves historical GK values except the reviewed cocon
   for (const [id, value] of previousResults) {
     const row = current.recipes.find((item) => item.recipeId === id);
     assert.ok(row, `${id} remains in the current inventory`);
+    const corrected = onionReview.affectedRecipes.find((item: { recipeId: string }) => item.recipeId === id);
+    if (corrected) {
+      assert.equal(row.status, corrected.after.status);
+      assert.equal(row.glycemicLoadPerServing, corrected.after.glycemicLoadPerServing);
+      assert.equal(row.previousApprovedGlycemicLoadPerServing, value, "history stays immutable");
+      continue;
+    }
     if (id === "keltainen-kanacurry-vhh") {
       assert.equal(row.status, "INSUFFICIENT SOURCE DATA");
       assert.equal(row.glycemicLoadPerServing, null);

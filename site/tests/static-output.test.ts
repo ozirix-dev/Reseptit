@@ -110,7 +110,7 @@ test("vegetable lasagne publishes its supplied image and notes without unsupport
 test("GK values link to centralized recipe details on every published translation", async () => {
   const sourceRecipeIds = new Set(siteContent.recipes.filter((recipe) => recipe.locale === "fi").map((recipe) => recipe.recipeId));
   const audit = JSON.parse(await readFile(path.resolve(import.meta.dirname, "../../tmp/nutrition/glycemic-load-pilot.json"), "utf8")) as {
-    results: Array<{ recipeId: string; status: "CALCULATED" | "INSUFFICIENT SOURCE DATA"; glycemicLoadPerServing: number | null; ingredients: Array<{ availableCarbohydratePerServingG: number | null; gi: number | null; fineliRecordId: string | null; giRecordId: string | null }> }>;
+    results: Array<{ recipeId: string; status: "CALCULATED" | "INSUFFICIENT SOURCE DATA"; glycemicLoadPerServing: number | null; omittedAvailableCarbohydratePerServingG: number; ingredients: Array<{ availableCarbohydratePerServingG: number | null; gi: number | null; fineliRecordId: string | null; giRecordId: string | null }> }>;
   };
   const publicAuditResults = audit.results.filter((result) => result.recipeId !== "maksalaatikko-kukkakaalilla");
   const reviewedRecipeIds = new Set(audit.results.map((result) => result.recipeId));
@@ -143,7 +143,12 @@ test("GK values link to centralized recipe details on every published translatio
   assert.equal(paella?.glycemicLoadPerServing, null);
   const calculatedWithOmissions = glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED" && result.omittedAvailableCarbohydratePerServingG > 0);
   assert.ok(calculatedWithOmissions.every((result) => result.confidence === "LOW"), "omitted carbohydrate always lowers estimate confidence");
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED" && result.glycemicLoadPerServing === 0 && result.omittedAvailableCarbohydratePerServingG > 0).length, 8);
+  const zeroWithOmissions = glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED" && result.glycemicLoadPerServing === 0 && result.omittedAvailableCarbohydratePerServingG > 0);
+  assert.deepEqual(zeroWithOmissions.map(row => row.recipeId).sort(), publicAuditResults.filter(row => row.status === "CALCULATED" && row.glycemicLoadPerServing === 0 && row.omittedAvailableCarbohydratePerServingG > 0).map(row => row.recipeId).sort());
+  const pork = zeroWithOmissions.find(row => row.recipeId === "uuniporsas-kermakastikkeessa-vhh");
+  assert.ok(pork, "reviewed onion removal yields a disclosed LOW-confidence zero estimate");
+  assert.equal(pork.confidence, "LOW");
+  assert.ok(Math.abs(pork.omittedAvailableCarbohydratePerServingG - 1.5116333333333334) < 1e-12);
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
     assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);
