@@ -1,18 +1,18 @@
 # GK-esteinventaario
 
-Lähdecommit: `dede397321dee9ebb2a8701748694ece33c511be`. Vertailun lähtösnapshot: `5e9cdeb830f468ecf099e9c286f9344afe3b6b71` (114 laskettua / 211 keskeneräistä; 38 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
+Lähdecommit: `6975421298e28b56c8dbda69ff7aab2f01e83902`. Vertailun lähtösnapshot: `5e9cdeb830f468ecf099e9c286f9344afe3b6b71` (114 laskettua / 211 keskeneräistä; 38 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
 
 Erän 2A lähtösnapshot on historiallinen vertailupohja, ei tämän ajon nykytila. Ajantasainen laskentatila ja nykyiset GK-luvut esitetään alla.
 
-Nykyinen ajo kattaa 326 reseptiä: 101 laskettua, 225 keskeneräistä. GI-katalogissa on 45 tietuetta (6 STRONG, 39 SUPPLEMENTARY).
+Nykyinen ajo kattaa 326 reseptiä: 97 laskettua, 229 keskeneräistä. GI-katalogissa on 45 tietuetta (6 STRONG, 39 SUPPLEMENTARY).
 
 Uusi resepti historiallisen 325 reseptin vertailusnapshotin jälkeen: munakoiso-kesakurpitsalasagne. Se kuuluu nykyinventaarioon, mutta ei historialliseen baselineen.
 
 ## Muutos hyväksytystä vertailusta
 
-- Aiemmin keskeneräisiä, nyt laskettavia: 18. Aiemmin laskettuja, nyt estettyjä: 31. Edelleen keskeneräisiä: 193.
-- Estoperuste muuttui 94 reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: 0/0/0.
-- Keskeneräisiä, joiden ravintoarvotila on tuettu: 122; tarkistettava: 46; puuttuva: 57.
+- Aiemmin keskeneräisiä, nyt laskettavia: 18. Aiemmin laskettuja, nyt estettyjä: 35. Edelleen keskeneräisiä: 193.
+- Estoperuste muuttui 98 reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: 0/0/0.
+- Keskeneräisiä, joiden ravintoarvotila on tuettu: 125; tarkistettava: 47; puuttuva: 57.
 
 ## Päällekkäiset esteet
 
@@ -165,6 +165,7 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | marjainen-chiavanukas | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | pad-see-ew-vhh-konjac | TOLERANCE | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | MANUAL_TRIAGE |
 | raejuusto-uunimunakas | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | MANUAL_TRIAGE |
+| keto-kauralesesampylat | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | MANUAL_TRIAGE |
 | jauhelihapihvit-vhh-kermakastikkeella | GI_MATCH | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | kaakao-kookos-chia | GI_MISSING | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | parsakaali-sinihomejuustofrittata | OTHER | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | MANUAL_TRIAGE |
@@ -195,6 +196,7 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | ropa-vieja | GI_MATCH | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
 | kerala-kalacurry | GI_MISSING | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
 | kanapyorykat-tomaattikastike | GI_MATCH | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
+| silakkapihvit-tilli-kermakastike | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | sitruuna-yrttikana-parsa | GI_MATCH | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
 | pho-bo | OTHER | INSUFFICIENT SOURCE DATA | MISSING | MANUAL_TRIAGE |
 | karibia-kookosriisi-pavuilla | GI_MISSING | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
@@ -227,6 +229,7 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | meksikolainen-chilaquiles-verdes | COMPOSITION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
 | meksikolainen-huevos-divorciados | COMPOSITION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
 | korealainen-bindaetteok-aamiaiseksi | COMPOSITION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
+| vietnamilainen-banh-cuon-sienilla | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | vietnamilainen-banh-xeo-aamiaisletut | GI_MISSING | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
 | intialainen-besan-chilla | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | vietnamilainen-chao-ga-kanapuuro | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | STRUCTURE_BINDING_REVIEW |
@@ -292,6 +295,7 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | thai-kananmunat-kookoscurryssa | GI_MISSING | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | STRUCTURE_BINDING_REVIEW |
 | japanilainen-miso-tofu-paksoi | COMPOSITION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
 | japanilainen-curry-tofulla | COMPOSITION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
+| kanaviillokki-kukkakaalilla | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | kookos-lime-kanacurry | COMPOSITION | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | COMPOSITION_OR_CONVERSION |
 | kimchi-jjigae | COMPOSITION | INSUFFICIENT SOURCE DATA | MISSING | COMPOSITION_OR_CONVERSION |
 | sate-ayam | COMPOSITION | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | STRUCTURE_BINDING_REVIEW |

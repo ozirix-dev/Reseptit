@@ -8114,10 +8114,9 @@
           "grams": 25,
           "massEvidence": "Recipe-listed edible mass.",
           "fineliRecordId": "fineli-170-2026-10-25",
-          "giRecordId": "bakery-products-category-mean-gi-58",
-          "foodKey": "bakery-products-category-mean",
-          "preparationKey": "category-mean",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "giRecordId": null,
+          "giMatchEvidence": "AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+          "ingredientUse": "OAT_BRAN_IN_DOUGH"
         },
         {
           "name": "psylliumia",
@@ -11865,9 +11864,10 @@
           "name": "ruisjauhoja",
           "grams": 16,
           "fineliRecordId": "fineli-100-release-20",
-          "giRecordId": "bakery-products-category-mean-gi-58",
+          "giRecordId": null,
           "massEvidence": "Ingredient-specific household measure conversion: 8 g per rkl; recipe quantity converted to edible mass.",
-          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+          "giMatchEvidence": "AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+          "ingredientUse": "RYE_FLOUR_COATING"
         },
         {
           "name": "voita paistamiseen",
@@ -11881,10 +11881,10 @@
         },
         {
           "name": "kuohukermaa",
-          "grams": 138,
+          "grams": 150,
           "fineliRecordId": "fineli-631-release-20",
           "giRecordId": "dairy-category-mean-gi-35",
-          "massEvidence": "Ingredient-specific household measure conversion: 0.92 g per ml; recipe quantity converted to edible mass.",
+          "massEvidence": "AJO 1.8: 150 ml cream; Fineli 631 release 20 DL=100 g.",
           "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
         },
         {
@@ -11899,33 +11899,27 @@
         },
         {
           "name": "tuoretta tilliä",
-          "grams": 6,
+          "grams": 5,
           "fineliRecordId": "fineli-369-release-20",
           "giRecordId": null,
-          "massEvidence": "Ingredient-specific household measure conversion: 3 g per rkl; recipe quantity converted to edible mass.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.013500000000000002,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "massEvidence": "AJO 1.8: 2 rkl fresh dill; Fineli 369 release 20 RKL=2.5 g.",
+          "giMatchEvidence": "AJO 1.8: no matched dill GI; use linked Fineli 369 CHO 0.9 g/100 g and verified 5 g recipe mass for cumulative sub-1 g omission."
         },
         {
           "name": "suolaa ja valkopippuria",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
-          "estimatedAvailableCarbohydratePerServingG": 0.25,
-          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+          "massEvidence": "Unknown; requires actual product/portion evidence.",
+          "excludedReason": "AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling."
         },
         {
           "name": "sitruuna tarjoiluun",
-          "grams": 58,
+          "grams": null,
           "fineliRecordId": "fineli-11048-release-20",
           "giRecordId": null,
-          "massEvidence": "Edible portion set to 58 g per medium peeled lemon; Fineli peeled lemon record 11048.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.319,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "massEvidence": "Unknown; requires actual product/portion evidence.",
+          "excludedReason": "AJO 1.8: One serving lemon has no verified edible mass or consumed fraction; previous 58 g was unsupported."
         }
       ]
     },
@@ -14820,18 +14814,17 @@
           "name": "riisijauho",
           "grams": 100,
           "fineliRecordId": "fineli-182-release-20",
-          "giRecordId": "bakery-products-category-mean-gi-58",
+          "giRecordId": null,
           "massEvidence": "Recipe-listed 100 g, mapped to JAUHO, RIISIJAUHO, RIISIHIUTALE (dry rice flakes / rice flour).",
-          "foodKey": "bakery-products-category-mean",
-          "preparationKey": "category-mean",
-          "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
+          "giMatchEvidence": "AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+          "ingredientUse": "RICE_FLOUR_STEAMED_SHEET"
         },
         {
           "name": "sieni",
-          "grams": 15,
+          "grams": 100,
           "fineliRecordId": "fineli-345-release-20",
           "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Recipe-listed 15 g, mapped to HERKKUSIENI (raw button mushroom).",
+          "massEvidence": "Original recipe explicitly lists 100 g fresh mushrooms; previous 15 g input was incorrect.",
           "foodKey": "vegetable",
           "preparationKey": "vegetable-category",
           "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
@@ -14845,10 +14838,16 @@
         },
         {
           "name": "kalakastike",
-          "grams": 15,
-          "fineliRecordId": "fineli-8029-release-20",
+          "grams": null,
+          "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 15 g, mapped to KALAKASTIKE, MADEMUHENNOS (fish sauce as sold)."
+          "massEvidence": "Recipe gives 1 tablespoon; 15 g was not verified for the actual fermented fish sauce.",
+          "giMatchEvidence": "AJO 1.8: Fermented Asian fish sauce is not Fineli 8029 burbot stew. Correct composition and tablespoon mass remain unverified.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "rkl",
+            "massGrams": null
+          }
         },
         {
           "name": "suolaa maun mukaan",
@@ -20564,9 +20563,10 @@
         {
           "name": "kypsää, nahatonta broilerin rintafileetä",
           "grams": 500,
-          "fineliRecordId": "afcd-F002806-release-3",
+          "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 500 g, mapped to Chicken, thigh, lean flesh, raw (raw chicken meat)."
+          "massEvidence": "Original recipe explicitly lists 500 g cooked skinless chicken breast. Previous raw-thigh composition mapping rejected; gram mass retained.",
+          "giMatchEvidence": "AJO 1.8: Cooked skinless chicken breast is not AFCD raw lean thigh. Correct composition remains unverified."
         },
         {
           "name": "broilerin lientä",
@@ -20596,21 +20596,18 @@
           "name": "vehnäjauhoja",
           "grams": 20,
           "fineliRecordId": "fineli-110-release-20",
-          "giRecordId": "bakery-products-category-mean-gi-58",
-          "massEvidence": "Recipe-listed 20 g, mapped to JAUHO, VEHNÄJAUHO, PUOLIKARKEA (semi-coarse wheat flour).",
-          "foodKey": "bakery-products-category-mean",
-          "preparationKey": "category-mean",
-          "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
+          "giRecordId": null,
+          "massEvidence": "Original recipe lists 2 rkl wheat flour; Fineli 110 release 20 RKL=10 g, hence 20 g dry edible input. No invented cooking retention.",
+          "giMatchEvidence": "AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+          "ingredientUse": "WHEAT_FLOUR_ROUX"
         },
         {
           "name": "currya",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
-          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          "excludedReason": "AJO 1.8: One teaspoon curry mixture has no verified mass/composition ceiling.",
+          "massEvidence": "Unknown; requires actual product/portion evidence."
         },
         {
           "name": "sitruunamehua",
@@ -20622,22 +20619,18 @@
         {
           "name": "kukkakaalia",
           "grams": 600,
-          "fineliRecordId": "fineli-320-release-20",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Recipe-listed 600 g, mapped to VALKOKAALI, KERÄKAALI (raw white cabbage).",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category",
-          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Original recipe explicitly lists 600 g cauliflower. Previous white-cabbage composition mapping rejected; gram mass retained.",
+          "giMatchEvidence": "AJO 1.8: Cauliflower is not Fineli 320 white cabbage. Correct composition and GI remain unverified."
         },
         {
           "name": "suolaa ja valkopippuria",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
-          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          "excludedReason": "AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling.",
+          "massEvidence": "Unknown; requires actual product/portion evidence."
         }
       ]
     },
