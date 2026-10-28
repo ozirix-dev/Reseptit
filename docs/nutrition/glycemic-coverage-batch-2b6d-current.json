@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-28T14:10:23.803Z",
-  "sourceCommit": "fc8fa390fc43e8ad11e71d606c393a17c28006ed",
+  "generatedAt": "2026-10-28T16:43:33.709Z",
+  "sourceCommit": "dede397321dee9ebb2a8701748694ece33c511be",
   "previousApprovedBaseline": {
     "sourceCommit": "f2ba9e849e677f9e223103022e309a09b9992f62",
     "recipeCount": 325,
@@ -23,20 +23,20 @@
   "currentSummary": {
     "recipeCount": 326,
     "newlyAdded": 1,
-    "calculated": 111,
-    "incomplete": 215,
+    "calculated": 101,
+    "incomplete": 225,
     "giRecordCount": 45,
     "giTierCounts": {
       "STRONG": 6,
       "SUPPLEMENTARY": 39
     },
-    "incompleteWithSupportedNutrition": 112,
+    "incompleteWithSupportedNutrition": 122,
     "incompleteNutritionNeedsReview": 46,
     "incompleteNutritionMissing": 57,
     "newlyCalculated": 2,
-    "newlyBlocked": 27,
+    "newlyBlocked": 37,
     "stillIncomplete": 187,
-    "changedBlockerRecipes": 56,
+    "changedBlockerRecipes": 67,
     "newStructureMismatches": 0,
     "newInputMismatches": 0,
     "newEvidenceMismatches": 0
@@ -20131,9 +20131,9 @@
     {
       "recipeId": "vhh-omenapiirakka",
       "recipeVersion": "7cc2698a2cee6abad75f115cad35214864728537712c20bd23e74c2f600e9345",
-      "calculationInputVersion": "c3e6020033ab771d2770be8bcce17d1a2faf58986438e470a024d93e9a957a65",
-      "calculationEvidenceVersion": "812ef951d919e7c9b7259c4a72a148846c22fd47d6ac9ef95b32d2d422a3c210",
-      "status": "CALCULATED",
+      "calculationInputVersion": "60c1a87aa9d7442c4598ab050818f0631199be34ec6d4395115f798b7ea37748",
+      "calculationEvidenceVersion": "d43a1e140ea47b3e449281ecabb47ebb6e1169bc5b4a4d912426eba8c146c708",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/jalkiruoat/vhh-omenapiirakka.md",
@@ -20202,11 +20202,11 @@
             "name": "mantelijauhoa",
             "grams": 150,
             "fineliRecordId": "afcd-F006077-2026-10-24",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-            "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean"
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 150 g almond flour; 8 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+            "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+            "foodKey": "almond-meal",
+            "preparationKey": "baked-in-recipe-no-approved-gi"
           },
           {
             "name": "voita kylmänä",
@@ -20251,10 +20251,8 @@
             "grams": null,
             "fineliRecordId": null,
             "giRecordId": null,
-            "massEvidence": "Measured tablespoon is small; omitted conservatively within per-serving tolerance.",
-            "excludedReason": "Small lemon juice quantity omitted",
-            "estimatedAvailableCarbohydratePerServingG": 0.3,
-            "negligibleAssumption": "Nutrition-batch omission bound ≤0.3 g available carbohydrate/serving, below the 1 g GL cutoff."
+            "massEvidence": "AJO 1.7: prior culinary mass/omission assumption is not verified. Original recipe quantity stays unchanged; no source-backed gram conversion or maximum carbohydrate amount is established for this row.",
+            "excludedReason": "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
           },
           {
             "name": "maitorahkaa",
@@ -20282,20 +20280,46 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 2.08,
-      "omittedAvailableCarbohydratePerServingG": 0.48062499999999997,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 0.180625,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 2.08,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "vhh-omenapiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
+          "message": "vhh-omenapiirakka: sitruunamehua: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "vhh-omenapiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "mantelijauhoa",
+          "grams": 150,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 1.0125,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+          ]
+        },
         {
           "name": "voita kylmänä",
           "grams": 50,
@@ -20341,11 +20365,11 @@
           "recipeQuantity": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.3,
+          "availableCarbohydratePerServingG": null,
           "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": "Small lemon juice quantity omitted",
+          "excludedReason": "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
           "issues": [
-            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Nutrition-batch omission bound ≤0.3 g available carbohydrate/serving, below the 1 g GL cutoff."
+            "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
           ]
         },
         {
@@ -20362,13 +20386,18 @@
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "vhh-omenapiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+        "vhh-omenapiirakka: sitruunamehua: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
+      ],
       "removedBlockers": []
     },
     {
@@ -20771,8 +20800,8 @@
     {
       "recipeId": "vhh-raparperipiirakka",
       "recipeVersion": "8436e8d2508c9cc3ba949d3ef59c08403a033f21d6dacd9e144442e9bb9c037f",
-      "calculationInputVersion": "7a021a463dfe9af9c4ebd68a1ce675c72b9e9d406973601640f456e702bec310",
-      "calculationEvidenceVersion": "062e4401ac9400b884b5fb384e02a601bf68f84fafdbe897e0c7d06ee013f1f4",
+      "calculationInputVersion": "5729f3f1437645dba745dd6ee4f51983605b35535e50f616a6bf16e7cf8e3441",
+      "calculationEvidenceVersion": "f9fabf4862068d6a31415c6d32dc0c5dfd04a6b16f7739a33bd5f50ef7b57fc7",
       "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
@@ -20837,11 +20866,11 @@
             "name": "mantelijauhoa",
             "grams": 150,
             "fineliRecordId": "afcd-F006077-2026-10-24",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-            "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean"
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 150 g almond flour; 8 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+            "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+            "foodKey": "almond-meal",
+            "preparationKey": "baked-in-recipe-no-approved-gi"
           },
           {
             "name": "voita sulatettuna",
@@ -20914,9 +20943,14 @@
       "previousApprovedGlycemicLoadPerServing": null,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
+        {
+          "category": "OTHER",
+          "message": "vhh-raparperipiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
         {
           "category": "GI_MATCH",
           "message": "vhh-raparperipiirakka: raparperia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
@@ -20924,11 +20958,25 @@
         }
       ],
       "blockingCategories": [
+        "OTHER",
         "GI_MATCH"
       ],
-      "primaryBlockingCategory": "GI_MATCH",
-      "primaryBlockingReason": "vhh-raparperipiirakka: raparperia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "vhh-raparperipiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "mantelijauhoa",
+          "grams": 150,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 1.0125,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+          ]
+        },
         {
           "name": "voita sulatettuna",
           "grams": 60,
@@ -21009,6 +21057,7 @@
         }
       ],
       "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu.",
         "Tarkista ruoka-aineen perhe, valmistus ja GI-lähde; älä käytä perusteetonta analogiaa."
       ],
       "suggestedNextWorkstream": "GI_SOURCE_REVIEW",
@@ -21016,15 +21065,17 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "vhh-raparperipiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+      ],
       "removedBlockers": []
     },
     {
       "recipeId": "vhh-mansikkakakku",
       "recipeVersion": "dbc705cfeb9997ed1f5edee08d997b2c094dfe46f1fa2818ecba9c3b79937ab4",
-      "calculationInputVersion": "bc672a42046c4e7929a649ef5005f5cfaaa898cf78a64fe2cfd68c578f07ed0e",
-      "calculationEvidenceVersion": "8a9b997c2acab9dcbcd0020e53df4c022aff55a30ad0e888a87dc2d167543416",
-      "status": "CALCULATED",
+      "calculationInputVersion": "d1f5d5df763189ac7d0fdcd8a8b2ab63a0b539e1fe46a7045c9076ba7ebd7fde",
+      "calculationEvidenceVersion": "319ad604da829502e51706615c54dc0374f9f3992dd2102709b0bf4e889a0255",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/jalkiruoat/vhh-mansikkakakku.md",
@@ -21097,11 +21148,11 @@
             "name": "mantelijauhoa",
             "grams": 120,
             "fineliRecordId": "afcd-F006077-2026-10-24",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-            "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean"
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 120 g almond flour; 10 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+            "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+            "foodKey": "almond-meal",
+            "preparationKey": "baked-in-recipe-no-approved-gi"
           },
           {
             "name": "leivinjauhetta",
@@ -21142,26 +21193,39 @@
           },
           {
             "name": "vaniljauutetta",
-            "grams": 2,
+            "grams": null,
             "fineliRecordId": "afcd-F009350-2026-10-24",
             "giRecordId": null,
-            "massEvidence": "Ingredient-specific teaspoon mass estimate for vaniljauutetta."
+            "massEvidence": "AJO 1.7: recipe lists 1 tsp; prior 2 g conversion lacks a traceable source. No new mass is invented.",
+            "recipeQuantity": {
+              "amount": 1,
+              "unit": "tl",
+              "massGrams": null
+            }
           }
         ]
       },
-      "glycemicLoadPerServing": 1.45,
-      "omittedAvailableCarbohydratePerServingG": 0.1704,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 0.7932,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 1.45,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "vhh-mansikkakakku: vaniljauutetta: Ingredient mass is missing or invalid.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "vhh-mansikkakakku: vaniljauutetta: Ingredient mass is missing or invalid.",
       "missingFoodAndGIRecords": [
         {
           "name": "kananmunaa",
@@ -21174,6 +21238,19 @@
           "excludedReason": null,
           "issues": [
             "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.066 g available carbohydrate): GI evidence is missing."
+          ]
+        },
+        {
+          "name": "mantelijauhoa",
+          "grams": 120,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.648,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.648 g available carbohydrate): AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
           ]
         },
         {
@@ -21191,25 +21268,33 @@
         },
         {
           "name": "vaniljauutetta",
-          "grams": 2,
-          "recipeQuantity": null,
+          "grams": null,
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "tl",
+            "massGrams": null
+          },
           "fineliRecordId": "afcd-F009350-2026-10-24",
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.0252,
+          "availableCarbohydratePerServingG": null,
           "availableCarbohydrateUpperBoundPerServingG": null,
           "excludedReason": null,
           "issues": [
-            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.025 g available carbohydrate): GI evidence is missing."
+            "Ingredient mass is missing or invalid."
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "vhh-mansikkakakku: vaniljauutetta: Ingredient mass is missing or invalid."
+      ],
       "removedBlockers": []
     },
     {
@@ -21917,9 +22002,9 @@
     {
       "recipeId": "vhh-juustokakku",
       "recipeVersion": "55c06ccc6f0a18e6054fd034f3142fa1505becc8be96a65708163a71da3d00f4",
-      "calculationInputVersion": "ae9e9203b1919390e1c96463ed8eedc1c90ae9fbfd99036e99058abdec68bf23",
-      "calculationEvidenceVersion": "fb14e5d268173d6fb11e1e36a3089b9b4ea88b312373ba677fcf59e2a062ee34",
-      "status": "CALCULATED",
+      "calculationInputVersion": "bf5e310d378aa7fcdf575274b9c0969a9eb6c004d1dd8f7e918c07ad165f4b27",
+      "calculationEvidenceVersion": "03a3c79103b4c7531b180588849009f16bd473d23fde159e702385745007e5b9",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/jalkiruoat/vhh-juustokakku.md",
@@ -21977,11 +22062,11 @@
             "name": "mantelijauhoa",
             "grams": 120,
             "fineliRecordId": "afcd-F006077-2026-10-24",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-            "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean"
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 120 g almond flour; 10 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+            "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+            "foodKey": "almond-meal",
+            "preparationKey": "baked-in-recipe-no-approved-gi"
           },
           {
             "name": "voita sulatettuna",
@@ -22036,27 +22121,46 @@
             "grams": null,
             "fineliRecordId": null,
             "giRecordId": null,
-            "massEvidence": "Measured tablespoon is small; omitted conservatively within per-serving tolerance.",
-            "excludedReason": "Small lemon juice quantity omitted",
-            "estimatedAvailableCarbohydratePerServingG": 0.3,
-            "negligibleAssumption": "Nutrition-batch omission bound ≤0.3 g available carbohydrate/serving, below the 1 g GL cutoff."
+            "massEvidence": "AJO 1.7: prior culinary mass/omission assumption is not verified. Original recipe quantity stays unchanged; no source-backed gram conversion or maximum carbohydrate amount is established for this row.",
+            "excludedReason": "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
           }
         ]
       },
-      "glycemicLoadPerServing": 1.09,
-      "omittedAvailableCarbohydratePerServingG": 0.41469999999999996,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 0.7627,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 1.09,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "vhh-juustokakku: sitruunamehua: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "vhh-juustokakku: sitruunamehua: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "mantelijauhoa",
+          "grams": 120,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.648,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.648 g available carbohydrate): AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+          ]
+        },
         {
           "name": "voita sulatettuna",
           "grams": 50,
@@ -22102,28 +22206,32 @@
           "recipeQuantity": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.3,
+          "availableCarbohydratePerServingG": null,
           "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": "Small lemon juice quantity omitted",
+          "excludedReason": "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
           "issues": [
-            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Nutrition-batch omission bound ≤0.3 g available carbohydrate/serving, below the 1 g GL cutoff."
+            "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "vhh-juustokakku: sitruunamehua: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
+      ],
       "removedBlockers": []
     },
     {
       "recipeId": "vhh-brita-kakku",
       "recipeVersion": "95f010a7e946062b698dc94ac1f7d54b2f263619719feaa1c7f4c6fbeee7f1a5",
-      "calculationInputVersion": "64a670e3126ebe9509336209d91c8b10a1c12647a11a4a6584313f28bbe1d839",
-      "calculationEvidenceVersion": "399c79bca23448b58f0252222cc5e498250744033fae05069c1acd3390e42e05",
+      "calculationInputVersion": "c55892dea7631382aeed253b2d2feb53cc8986b3299d7b14e63cf707a470f6be",
+      "calculationEvidenceVersion": "c22baddcf260f49c673b206714b14e8aa196283b8623a8660034c81ddb480660",
       "status": "CALCULATED",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
@@ -22208,18 +22316,21 @@
             "name": "mantelijauhoa",
             "grams": 100,
             "fineliRecordId": "afcd-F006077-2026-10-24",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-            "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean"
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 100 g almond flour; 8 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+            "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+            "foodKey": "almond-meal",
+            "preparationKey": "baked-in-recipe-no-approved-gi"
           },
           {
             "name": "leivinjauhetta",
             "grams": 4,
             "fineliRecordId": "afcd-F000247-2026-10-24",
             "giRecordId": null,
-            "massEvidence": "Ingredient-specific teaspoon mass estimate for leivinjauhetta."
+            "massEvidence": "Ingredient-specific teaspoon mass estimate for leivinjauhetta.",
+            "excludedReason": "AJO 1.7: source-backed small-portion ceiling, not a new exact nutrient estimate.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.23625,
+            "upperBoundEvidence": "Fineli Release 20 #74, 1 recipe-listed tsp; portion TL 5 g and CHOAVL 37.8 g/100 g, 8 servings. This higher sourced standard-portion scenario bounds the old AFCD/Fineli estimate; source: docs/nutrition/fineli-release-20-reference.json and https://fineli.fi/fineli/fi/elintarvikkeet/74. No recipe quantity change; not a clinical confidence bound."
           },
           {
             "name": "kananmunan valkuaista",
@@ -22257,15 +22368,15 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 1.18,
-      "omittedAvailableCarbohydratePerServingG": 0.2665,
-      "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+      "glycemicLoadPerServing": 0.79,
+      "omittedAvailableCarbohydratePerServingG": 1.07875,
+      "omittedAvailableCarbohydrateUpperBoundPerServingG": 0.23625,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 1.18,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [],
       "blockingCategories": [],
       "primaryBlockingCategory": null,
@@ -22298,16 +22409,29 @@
           ]
         },
         {
+          "name": "mantelijauhoa",
+          "grams": 100,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.675,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.675 g available carbohydrate): AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+          ]
+        },
+        {
           "name": "leivinjauhetta",
           "grams": 4,
           "recipeQuantity": null,
           "fineliRecordId": "afcd-F000247-2026-10-24",
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.099,
-          "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": 0.23625,
+          "excludedReason": "AJO 1.7: source-backed small-portion ceiling, not a new exact nutrient estimate.",
           "issues": [
-            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.099 g available carbohydrate): GI evidence is missing."
+            "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: Fineli Release 20 #74, 1 recipe-listed tsp; portion TL 5 g and CHOAVL 37.8 g/100 g, 8 servings. This higher sourced standard-portion scenario bounds the old AFCD/Fineli estimate; source: docs/nutrition/fineli-release-20-reference.json and https://fineli.fi/fineli/fi/elintarvikkeet/74. No recipe quantity change; not a clinical confidence bound."
           ]
         },
         {
@@ -22336,9 +22460,9 @@
     {
       "recipeId": "rahkapiirakka-vhh",
       "recipeVersion": "f8138ca1423e8f32a7b9e58768d7aff3bb4a622618252d2029f704b290b6a5f9",
-      "calculationInputVersion": "6f5359bd878461ae3510450c07a37e04ec1841e4bf7e8961129f23db384e810a",
-      "calculationEvidenceVersion": "3a812e5938e862d1c7d3bae16840c9659da1f44204346b8144b5f753df18fe5f",
-      "status": "CALCULATED",
+      "calculationInputVersion": "b9987fcaa294fe58c8c58047ae8433e4e6ed883082da79301e464fce26fbf368",
+      "calculationEvidenceVersion": "6b5de6424bd6c05caa66a566c1cf74c8044d9277037ea5b665d4ab381cdd2ab8",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/jalkiruoat/rahkapiirakka-vhh.md",
@@ -22396,11 +22520,11 @@
             "name": "mantelijauhoa",
             "grams": 150,
             "fineliRecordId": "afcd-F006077-2026-10-24",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-            "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean"
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 150 g almond flour; 8 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+            "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+            "foodKey": "almond-meal",
+            "preparationKey": "baked-in-recipe-no-approved-gi"
           },
           {
             "name": "voita",
@@ -22459,20 +22583,41 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 1.11,
+      "glycemicLoadPerServing": null,
       "omittedAvailableCarbohydratePerServingG": 0.168375,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 1.11,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "rahkapiirakka-vhh: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "rahkapiirakka-vhh: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "mantelijauhoa",
+          "grams": 150,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 1.0125,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+          ]
+        },
         {
           "name": "voita",
           "grams": 75,
@@ -22526,21 +22671,25 @@
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "rahkapiirakka-vhh: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+      ],
       "removedBlockers": []
     },
     {
       "recipeId": "vhh-letut",
       "recipeVersion": "b7c5737b999719a5dc36be836b3e07fd27040a3836c1721517a1669a5bd4571e",
-      "calculationInputVersion": "f1e471abd4d79a9e9d1a320295e7dc6a37bd8f175086ffeb3b4757dca4598496",
-      "calculationEvidenceVersion": "993182154f72d37e8e3bb660578fe33a9d5608dc2ebc578dfa30083ef2959b59",
-      "status": "CALCULATED",
+      "calculationInputVersion": "1ef7b6579dcf2735456df19e73ff98bca10e6a1a81565c6d3eb45c8a7ec5a447",
+      "calculationEvidenceVersion": "7d7260f25a8c08eec820ccb95b16a69d0e08e6c07e5de2196c0a94c569c69c6e",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/jalkiruoat/vhh-letut.md",
@@ -22611,11 +22760,11 @@
             "name": "mantelijauhoa",
             "grams": 50,
             "fineliRecordId": "afcd-F006077-2026-10-24",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-            "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean"
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 50 g almond flour; 4 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+            "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+            "foodKey": "almond-meal",
+            "preparationKey": "pan-fried-in-recipe-no-approved-gi"
           },
           {
             "name": "kuohukermaa",
@@ -22646,26 +22795,32 @@
             "grams": null,
             "fineliRecordId": null,
             "giRecordId": null,
-            "massEvidence": "Unquantified pinch excluded with conservative macro bound.",
-            "excludedReason": "Unquantified minor seasoning; no numeric amount",
-            "estimatedAvailableCarbohydratePerServingG": 0.1,
-            "negligibleAssumption": "Nutrition-batch omission bound ≤0.1 g available carbohydrate/serving, below the 1 g GL cutoff."
+            "massEvidence": "AJO 1.7: prior culinary mass/omission assumption is not verified. Original recipe quantity stays unchanged; no source-backed gram conversion or maximum carbohydrate amount is established for this row.",
+            "excludedReason": "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
           }
         ]
       },
-      "glycemicLoadPerServing": 1,
-      "omittedAvailableCarbohydratePerServingG": 0.274,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 0.8490000000000001,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 1,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "vhh-letut: ripaus suolaa: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "vhh-letut: ripaus suolaa: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
       "missingFoodAndGIRecords": [
         {
           "name": "kananmunaa",
@@ -22678,6 +22833,19 @@
           "excludedReason": null,
           "issues": [
             "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.165 g available carbohydrate): GI evidence is missing."
+          ]
+        },
+        {
+          "name": "mantelijauhoa",
+          "grams": 50,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.675,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.675 g available carbohydrate): AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
           ]
         },
         {
@@ -22699,29 +22867,33 @@
           "recipeQuantity": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.1,
+          "availableCarbohydratePerServingG": null,
           "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": "Unquantified minor seasoning; no numeric amount",
+          "excludedReason": "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
           "issues": [
-            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Nutrition-batch omission bound ≤0.1 g available carbohydrate/serving, below the 1 g GL cutoff."
+            "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "vhh-letut: ripaus suolaa: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
+      ],
       "removedBlockers": []
     },
     {
       "recipeId": "vhh-lihapiirakka",
       "recipeVersion": "86e7a7d53bf64545dbd20c76bd17094df2e7e43b10f31e8a702155c9c4569061",
-      "calculationInputVersion": "648dbca5e5d9259264da6c283fd815bc5fbcd23cd9ae2083d099200f220047e0",
-      "calculationEvidenceVersion": "76509f1bde642848d7584ca34096fbc6d726ecd1b73698f58bdca1bda4d7ff7a",
-      "status": "CALCULATED",
+      "calculationInputVersion": "2dff51626e684a66e46b355bd50044d042e80dfbecf598c7f223bbd887abced8",
+      "calculationEvidenceVersion": "5fc2444ab0bb20117f4c718450550002341c264fca341171d40bb2a55d980a36",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/leivonnaiset/vhh-lihapiirakka.md",
@@ -22779,11 +22951,11 @@
             "name": "mantelijauhoa",
             "grams": 200,
             "fineliRecordId": "afcd-F006077-2026-10-24",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-            "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean"
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 200 g almond flour; 8 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+            "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+            "foodKey": "almond-meal",
+            "preparationKey": "baked-in-recipe-no-approved-gi"
           },
           {
             "name": "juustoraastetta",
@@ -22853,7 +23025,7 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 0.99,
+      "glycemicLoadPerServing": null,
       "omittedAvailableCarbohydratePerServingG": 0.37125,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
@@ -22862,11 +23034,32 @@
       "recipeVersionChanged": false,
       "calculationInputVersionChanged": true,
       "calculationEvidenceVersionChanged": true,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "vhh-lihapiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "vhh-lihapiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "mantelijauhoa",
+          "grams": 200,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 1.35,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+          ]
+        },
         {
           "name": "kananmunaa",
           "grams": 110,
@@ -22898,13 +23091,17 @@
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "vhh-lihapiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+      ],
       "removedBlockers": []
     },
     {
@@ -23136,9 +23333,9 @@
     {
       "recipeId": "keto-korvapuustit",
       "recipeVersion": "37b99eeec2733aa9e2a26f1baa1204531346c7820b67b93c30ccf6e72ff263dd",
-      "calculationInputVersion": "d008c8e48a1b9245ff3a5a06c93d07c879ea871d7ad106a9748bed14cae5ea61",
-      "calculationEvidenceVersion": "4c06223310dce70a02a92080afed94b55b24089c428460fb2f4d913193d9bb03",
-      "status": "CALCULATED",
+      "calculationInputVersion": "9b207f519f96dca1a63b8b74a512e403cf68608d4efd7e5d239da95293ee7ba4",
+      "calculationEvidenceVersion": "520b20bc73395d49a1fc9557105b0a7db95d84c3d90e529f1dcd3bf2214383c8",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/leivonnaiset/keto-korvapuustit.md",
@@ -23191,11 +23388,11 @@
             "name": "mantelijauhoa",
             "grams": 200,
             "fineliRecordId": "afcd-F006077-2026-10-24",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-            "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean"
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 200 g almond flour; 8 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+            "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+            "foodKey": "almond-meal",
+            "preparationKey": "baked-in-recipe-no-approved-gi"
           },
           {
             "name": "mozzarellaraastetta",
@@ -23247,20 +23444,41 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 0.96,
+      "glycemicLoadPerServing": null,
       "omittedAvailableCarbohydratePerServingG": 0.14,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 0.96,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "keto-korvapuustit: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "keto-korvapuustit: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "mantelijauhoa",
+          "grams": 200,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 1.35,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+          ]
+        },
         {
           "name": "kananmuna",
           "grams": 55,
@@ -23301,21 +23519,25 @@
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "keto-korvapuustit: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+      ],
       "removedBlockers": []
     },
     {
       "recipeId": "vhh-korvapuustit",
       "recipeVersion": "e2b1b2426a5e217c5dfac662bcff55b7ea2874b94d89f2d4791070dc3f8aeec5",
-      "calculationInputVersion": "d8d827949bcf3a3514d5bad31dd94065b0323f5f89638e74b399993423c964d5",
-      "calculationEvidenceVersion": "48c754a6ad9a45e8d66f5083eddb5c48fff3612de8c1096cc0a4f36dd5309c67",
-      "status": "CALCULATED",
+      "calculationInputVersion": "4dc459ce3368abd355b9287f844dd088be65a79e90e1b71bb0b458d9fb1bc7cf",
+      "calculationEvidenceVersion": "ed5db81c2119a3e4aa94f601b342207e1283591baa3eac5d3f30da0bce1db2a9",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/jalkiruoat/vhh-korvapuustit.md",
@@ -23398,11 +23620,11 @@
             "name": "mantelijauhoa",
             "grams": 120,
             "fineliRecordId": "afcd-F006077-2026-10-24",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-            "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean"
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 120 g almond flour; 8 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+            "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+            "foodKey": "almond-meal",
+            "preparationKey": "baked-in-recipe-no-approved-gi"
           },
           {
             "name": "psylliumia",
@@ -23434,10 +23656,15 @@
           },
           {
             "name": "kanelia",
-            "grams": 15,
+            "grams": null,
             "fineliRecordId": "afcd-F002963-2026-10-24",
             "giRecordId": null,
-            "massEvidence": "Ingredient-specific tablespoon mass estimate for kanelia."
+            "massEvidence": "AJO 1.7: original 1 tbsp cinnamon; prior 15 g conversion is unverified. Fineli #11184 has no portion mass; no invented density.",
+            "recipeQuantity": {
+              "amount": 1,
+              "unit": "rkl",
+              "massGrams": null
+            }
           },
           {
             "name": "kananmunaa voiteluun",
@@ -23448,20 +23675,41 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 0.56,
-      "omittedAvailableCarbohydratePerServingG": 0.596875,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 0.8912500000000001,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 0.56,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "vhh-korvapuustit: kanelia: Ingredient mass is missing or invalid.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "vhh-korvapuustit: kanelia: Ingredient mass is missing or invalid.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "mantelijauhoa",
+          "grams": 120,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.81,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.810 g available carbohydrate): AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+          ]
+        },
         {
           "name": "psylliumia",
           "grams": 8,
@@ -23503,15 +23751,19 @@
         },
         {
           "name": "kanelia",
-          "grams": 15,
-          "recipeQuantity": null,
+          "grams": null,
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "rkl",
+            "massGrams": null
+          },
           "fineliRecordId": "afcd-F002963-2026-10-24",
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.515625,
+          "availableCarbohydratePerServingG": null,
           "availableCarbohydrateUpperBoundPerServingG": null,
           "excludedReason": null,
           "issues": [
-            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.516 g available carbohydrate): GI evidence is missing."
+            "Ingredient mass is missing or invalid."
           ]
         },
         {
@@ -23528,21 +23780,25 @@
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "vhh-korvapuustit: kanelia: Ingredient mass is missing or invalid."
+      ],
       "removedBlockers": []
     },
     {
       "recipeId": "keto-mutakakku",
       "recipeVersion": "61ba06885129ef05d9e2b696c02f5569383e49bec368d8ddb7b6284ca50c4a7e",
-      "calculationInputVersion": "4b0505c0086c41456be5f1082157e055bb6d9bfb47c3e1783a631455a2e362af",
-      "calculationEvidenceVersion": "eb1213d737ae33b103951c5565a3dbfe797943b239bbaf3d1fd0ef5e54f6a5d9",
-      "status": "CALCULATED",
+      "calculationInputVersion": "fd460a2fdf4e43b05f780d578d10ce045c376ea41ba6e33b3f1394759734281a",
+      "calculationEvidenceVersion": "783ee509a0d6dc2e0187dd6c984a4261887ce4fa3eca03885b818119a716fc6c",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/jalkiruoat/keto-mutakakku.md",
@@ -23632,11 +23888,11 @@
             "name": "mantelijauhoa",
             "grams": 60,
             "fineliRecordId": "afcd-F006077-2026-10-24",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-            "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean"
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 60 g almond flour; 8 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+            "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+            "foodKey": "almond-meal",
+            "preparationKey": "baked-in-recipe-no-approved-gi"
           },
           {
             "name": "kaakaojauhetta",
@@ -23660,26 +23916,32 @@
             "grams": null,
             "fineliRecordId": null,
             "giRecordId": null,
-            "massEvidence": "Unquantified pinch excluded with conservative macro bound.",
-            "excludedReason": "Unquantified minor seasoning; no numeric amount",
-            "estimatedAvailableCarbohydratePerServingG": 0.1,
-            "negligibleAssumption": "Nutrition-batch omission bound ≤0.1 g available carbohydrate/serving, below the 1 g GL cutoff."
+            "massEvidence": "AJO 1.7: prior culinary mass/omission assumption is not verified. Original recipe quantity stays unchanged; no source-backed gram conversion or maximum carbohydrate amount is established for this row.",
+            "excludedReason": "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
           }
         ]
       },
-      "glycemicLoadPerServing": 0.23,
-      "omittedAvailableCarbohydratePerServingG": 1.2196250000000002,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 1.5246250000000001,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 0.23,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "keto-mutakakku: ripaus suolaa: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "keto-mutakakku: ripaus suolaa: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
       "missingFoodAndGIRecords": [
         {
           "name": "sokeritonta tummaa suklaata",
@@ -23721,6 +23983,19 @@
           ]
         },
         {
+          "name": "mantelijauhoa",
+          "grams": 60,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.405,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.405 g available carbohydrate): AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+          ]
+        },
+        {
           "name": "kaakaojauhetta",
           "grams": 10,
           "recipeQuantity": null,
@@ -23752,29 +24027,33 @@
           "recipeQuantity": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.1,
+          "availableCarbohydratePerServingG": null,
           "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": "Unquantified minor seasoning; no numeric amount",
+          "excludedReason": "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
           "issues": [
-            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Nutrition-batch omission bound ≤0.1 g available carbohydrate/serving, below the 1 g GL cutoff."
+            "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "keto-mutakakku: ripaus suolaa: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
+      ],
       "removedBlockers": []
     },
     {
       "recipeId": "keto-suklaakeksit",
       "recipeVersion": "c01016a511b098b37c9e595276f74b489f4244320cef40f6cc7e118af5f856a6",
-      "calculationInputVersion": "1e5494244928d12bad2743c230d1e5a12baa1981761cf9b27ccf81702e58ccd6",
-      "calculationEvidenceVersion": "b367f86141ec8a4d0ea94ab817325c3a02102df081a8119c7d700d1f4ae01781",
-      "status": "CALCULATED",
+      "calculationInputVersion": "ef45ed8fd3cc907356c579a6b0f475d599ebb84286070e44fb4c1a68d5ce19b0",
+      "calculationEvidenceVersion": "21bfef3295bebd052c8819f8ce19a285cb2c174fc063d1fd3d598a513575178c",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/jalkiruoat/keto-suklaakeksit.md",
@@ -23854,11 +24133,11 @@
             "name": "mantelijauhoa",
             "grams": 180,
             "fineliRecordId": "afcd-F006077-2026-10-24",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-            "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean"
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 180 g almond flour; 10 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+            "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+            "foodKey": "almond-meal",
+            "preparationKey": "baked-in-recipe-no-approved-gi"
           },
           {
             "name": "leivinjauhetta",
@@ -23891,26 +24170,32 @@
             "grams": null,
             "fineliRecordId": null,
             "giRecordId": null,
-            "massEvidence": "Unquantified pinch excluded with conservative macro bound.",
-            "excludedReason": "Unquantified minor seasoning; no numeric amount",
-            "estimatedAvailableCarbohydratePerServingG": 0.1,
-            "negligibleAssumption": "Nutrition-batch omission bound ≤0.1 g available carbohydrate/serving, below the 1 g GL cutoff."
+            "massEvidence": "AJO 1.7: prior culinary mass/omission assumption is not verified. Original recipe quantity stays unchanged; no source-backed gram conversion or maximum carbohydrate amount is established for this row.",
+            "excludedReason": "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
           }
         ]
       },
-      "glycemicLoadPerServing": 0.56,
-      "omittedAvailableCarbohydratePerServingG": 0.5073,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 1.3793000000000002,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 0.56,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "keto-suklaakeksit: ripaus suolaa: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "keto-suklaakeksit: ripaus suolaa: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
       "missingFoodAndGIRecords": [
         {
           "name": "pehmeää voita",
@@ -23936,6 +24221,19 @@
           "excludedReason": null,
           "issues": [
             "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.017 g available carbohydrate): GI evidence is missing."
+          ]
+        },
+        {
+          "name": "mantelijauhoa",
+          "grams": 180,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.9720000000000001,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.972 g available carbohydrate): AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
           ]
         },
         {
@@ -23983,28 +24281,32 @@
           "recipeQuantity": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.1,
+          "availableCarbohydratePerServingG": null,
           "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": "Unquantified minor seasoning; no numeric amount",
+          "excludedReason": "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance.",
           "issues": [
-            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Nutrition-batch omission bound ≤0.1 g available carbohydrate/serving, below the 1 g GL cutoff."
+            "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "keto-suklaakeksit: ripaus suolaa: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
+      ],
       "removedBlockers": []
     },
     {
       "recipeId": "vhh-mokkapalat",
       "recipeVersion": "bcae6a2d92dc1bd0a9796a02c4b59f71bcc919aa80554000ead86c4993bd39eb",
-      "calculationInputVersion": "82ae3cc75f1b4bd328990b96dcbf8cfec22b6e896ba784955ad498cca44dc6b0",
-      "calculationEvidenceVersion": "aab0bf45f79456bd6313c7126609d28bbae7d95296fb0d42ded99b252b3b7525",
+      "calculationInputVersion": "548ccd4d33ffd97c9e50fb4892e59bc2ee1362304a2d84c93d1229af89dd9efc",
+      "calculationEvidenceVersion": "bf59cf6f1305ff7cf994fd2e802ac0c2b2bd993197a4c978166e31c818a47d7c",
       "status": "CALCULATED",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
@@ -24103,11 +24405,11 @@
             "name": "mantelijauhoa",
             "grams": 120,
             "fineliRecordId": "afcd-F006077-2026-10-24",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal.",
-            "giMatchEvidence": "Published Bakery products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean"
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 120 g almond flour; 12 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+            "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+            "foodKey": "almond-meal",
+            "preparationKey": "baked-in-recipe-no-approved-gi"
           },
           {
             "name": "kaakaojauhetta",
@@ -24115,11 +24417,12 @@
             "fineliRecordId": "fineli-20-2026-10-24",
             "giRecordId": null,
             "massEvidence": "Ingredient-specific tablespoon mass estimate for kaakaojauhetta.",
-            "estimatedAvailableCarbohydratePerServingG": 0.09166667,
-            "negligibleAssumption": "GI omitted under the documented <1 g available-carbohydrate/serving editorial tolerance; Fineli composition is retained, this is not a measured cocoa-powder GI.",
             "giMatchEvidence": null,
             "foodKey": null,
-            "preparationKey": null
+            "preparationKey": null,
+            "excludedReason": "AJO 1.7: source-backed small-portion ceiling, not a new exact nutrient estimate.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.11,
+            "upperBoundEvidence": "Fineli Release 20 #20, 2 recipe-listed tbsp; portion RKL 6 g and CHOAVL 11 g/100 g, 12 servings. This higher sourced standard-portion scenario bounds the old AFCD/Fineli estimate; source: docs/nutrition/fineli-release-20-reference.json and https://fineli.fi/fineli/fi/elintarvikkeet/20. No recipe quantity change; not a clinical confidence bound."
           },
           {
             "name": "erytritolia",
@@ -24133,7 +24436,10 @@
             "grams": 4,
             "fineliRecordId": "afcd-F000247-2026-10-24",
             "giRecordId": null,
-            "massEvidence": "Ingredient-specific teaspoon mass estimate for leivinjauhetta."
+            "massEvidence": "Ingredient-specific teaspoon mass estimate for leivinjauhetta.",
+            "excludedReason": "AJO 1.7: source-backed small-portion ceiling, not a new exact nutrient estimate.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.1575,
+            "upperBoundEvidence": "Fineli Release 20 #74, 1 recipe-listed tsp; portion TL 5 g and CHOAVL 37.8 g/100 g, 12 servings. This higher sourced standard-portion scenario bounds the old AFCD/Fineli estimate; source: docs/nutrition/fineli-release-20-reference.json and https://fineli.fi/fineli/fi/elintarvikkeet/74. No recipe quantity change; not a clinical confidence bound."
           },
           {
             "name": "voita kuorrutteeseen",
@@ -24162,23 +24468,24 @@
             "fineliRecordId": "fineli-20-2026-10-24",
             "giRecordId": null,
             "massEvidence": "Ingredient-specific tablespoon mass estimate for kaakaojauhetta kuorrutteeseen.",
-            "estimatedAvailableCarbohydratePerServingG": 0.04583333,
-            "negligibleAssumption": "GI omitted under the documented <1 g available-carbohydrate/serving editorial tolerance; Fineli composition is retained, this is not a measured cocoa-powder GI.",
             "giMatchEvidence": null,
             "foodKey": null,
-            "preparationKey": null
+            "preparationKey": null,
+            "excludedReason": "AJO 1.7: source-backed small-portion ceiling, not a new exact nutrient estimate.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.055,
+            "upperBoundEvidence": "Fineli Release 20 #20, 1 recipe-listed tbsp; portion RKL 6 g and CHOAVL 11 g/100 g, 12 servings. This higher sourced standard-portion scenario bounds the old AFCD/Fineli estimate; source: docs/nutrition/fineli-release-20-reference.json and https://fineli.fi/fineli/fi/elintarvikkeet/20. No recipe quantity change; not a clinical confidence bound."
           }
         ]
       },
-      "glycemicLoadPerServing": 0.4,
-      "omittedAvailableCarbohydratePerServingG": 0.36475,
-      "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+      "glycemicLoadPerServing": 0.08,
+      "omittedAvailableCarbohydratePerServingG": 1.02375,
+      "omittedAvailableCarbohydrateUpperBoundPerServingG": 0.3225,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 0.4,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [],
       "blockingCategories": [],
       "primaryBlockingCategory": null,
@@ -24211,16 +24518,29 @@
           ]
         },
         {
+          "name": "mantelijauhoa",
+          "grams": 120,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.54,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.540 g available carbohydrate): AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+          ]
+        },
+        {
           "name": "kaakaojauhetta",
           "grams": 10,
           "recipeQuantity": null,
           "fineliRecordId": "fineli-20-2026-10-24",
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.09166666666666667,
-          "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": 0.11,
+          "excludedReason": "AJO 1.7: source-backed small-portion ceiling, not a new exact nutrient estimate.",
           "issues": [
-            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.092 g available carbohydrate): GI evidence is missing."
+            "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: Fineli Release 20 #20, 2 recipe-listed tbsp; portion RKL 6 g and CHOAVL 11 g/100 g, 12 servings. This higher sourced standard-portion scenario bounds the old AFCD/Fineli estimate; source: docs/nutrition/fineli-release-20-reference.json and https://fineli.fi/fineli/fi/elintarvikkeet/20. No recipe quantity change; not a clinical confidence bound."
           ]
         },
         {
@@ -24229,11 +24549,11 @@
           "recipeQuantity": null,
           "fineliRecordId": "afcd-F000247-2026-10-24",
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.066,
-          "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": 0.1575,
+          "excludedReason": "AJO 1.7: source-backed small-portion ceiling, not a new exact nutrient estimate.",
           "issues": [
-            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.066 g available carbohydrate): GI evidence is missing."
+            "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: Fineli Release 20 #74, 1 recipe-listed tsp; portion TL 5 g and CHOAVL 37.8 g/100 g, 12 servings. This higher sourced standard-portion scenario bounds the old AFCD/Fineli estimate; source: docs/nutrition/fineli-release-20-reference.json and https://fineli.fi/fineli/fi/elintarvikkeet/74. No recipe quantity change; not a clinical confidence bound."
           ]
         },
         {
@@ -24255,11 +24575,11 @@
           "recipeQuantity": null,
           "fineliRecordId": "fineli-20-2026-10-24",
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.04583333333333334,
-          "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": 0.055,
+          "excludedReason": "AJO 1.7: source-backed small-portion ceiling, not a new exact nutrient estimate.",
           "issues": [
-            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.046 g available carbohydrate): GI evidence is missing."
+            "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: Fineli Release 20 #20, 1 recipe-listed tbsp; portion RKL 6 g and CHOAVL 11 g/100 g, 12 servings. This higher sourced standard-portion scenario bounds the old AFCD/Fineli estimate; source: docs/nutrition/fineli-release-20-reference.json and https://fineli.fi/fineli/fi/elintarvikkeet/20. No recipe quantity change; not a clinical confidence bound."
           ]
         }
       ],

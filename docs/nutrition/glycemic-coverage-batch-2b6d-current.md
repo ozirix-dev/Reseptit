@@ -1,16 +1,16 @@
 # GK-esteinventaario
 
-Lähdecommit: `fc8fa390fc43e8ad11e71d606c393a17c28006ed`. Vertailun lähtösnapshot: `f2ba9e849e677f9e223103022e309a09b9992f62` (136 laskettua / 189 keskeneräistä; 42 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
+Lähdecommit: `dede397321dee9ebb2a8701748694ece33c511be`. Vertailun lähtösnapshot: `f2ba9e849e677f9e223103022e309a09b9992f62` (136 laskettua / 189 keskeneräistä; 42 GI-tietuetta). Historiallinen 213 reseptin inventaario säilyy erillisenä.
 
-Nykyinen ajo kattaa 326 reseptiä: 111 laskettua, 215 keskeneräistä. GI-katalogissa on 45 tietuetta (6 STRONG, 39 SUPPLEMENTARY).
+Nykyinen ajo kattaa 326 reseptiä: 101 laskettua, 225 keskeneräistä. GI-katalogissa on 45 tietuetta (6 STRONG, 39 SUPPLEMENTARY).
 
 Uusi resepti historiallisen 325 reseptin vertailusnapshotin jälkeen: munakoiso-kesakurpitsalasagne. Se kuuluu nykyinventaarioon, mutta ei historialliseen baselineen.
 
 ## Muutos hyväksytystä vertailusta
 
-- Aiemmin keskeneräisiä, nyt laskettavia: 2. Aiemmin laskettuja, nyt estettyjä: 27. Edelleen keskeneräisiä: 187.
-- Estoperuste muuttui 56 reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: 0/0/0.
-- Keskeneräisiä, joiden ravintoarvotila on tuettu: 112; tarkistettava: 46; puuttuva: 57.
+- Aiemmin keskeneräisiä, nyt laskettavia: 2. Aiemmin laskettuja, nyt estettyjä: 37. Edelleen keskeneräisiä: 187.
+- Estoperuste muuttui 67 reseptillä. Uusia rakenne-/syöte-/lähdesidonnan muutoksia: 0/0/0.
+- Keskeneräisiä, joiden ravintoarvotila on tuettu: 122; tarkistettava: 46; puuttuva: 57.
 
 ## Päällekkäiset esteet
 
@@ -129,11 +129,21 @@ JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syöt
 | spanakopita | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
 | tabbouleh | GI_MATCH | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
 | liha-juureskeitto-perunaton | GI_MATCH | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
+| vhh-omenapiirakka | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | chettinad-kana | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
-| vhh-raparperipiirakka | GI_MATCH | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
+| vhh-raparperipiirakka | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | GI_SOURCE_REVIEW |
+| vhh-mansikkakakku | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | kermainen-kanasienipannu | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | kana-parmesaanipannu-parsakaali | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
+| vhh-juustokakku | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
+| rahkapiirakka-vhh | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
+| vhh-letut | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
+| vhh-lihapiirakka | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | vhh-runebergintortut | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
+| keto-korvapuustit | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
+| vhh-korvapuustit | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
+| keto-mutakakku | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
+| keto-suklaakeksit | OTHER | INSUFFICIENT SOURCE DATA | ESTIMATE WITH EVIDENCE | MANUAL_TRIAGE |
 | maksalaatikko-kukkakaalilla | GI_MISSING | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | paistettu-maksa-pekonilla | GI_MISSING | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |
 | keltainen-kanacurry-vhh | GI_MISSING | INSUFFICIENT SOURCE DATA | INSUFFICIENT SOURCE DATA | GI_SOURCE_REVIEW |

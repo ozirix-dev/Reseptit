@@ -154,6 +154,21 @@ function hasClearFoodFamilyMismatch(foodKey: string, foodName: string, ingredien
   return milkChocolate && sourceIsDairy;
 }
 
+/** A finished-bakery category cannot represent a ground almond ingredient.
+ * Use composition identity as well as names: copying GI keys or renaming a row
+ * must not turn AFCD almond meal into a tested bakery product. Baking a mixed
+ * recipe does not establish an ingredient-level analogy to that category.
+ */
+function almondBakeryMismatch(ingredient: GlycemicLoadIngredientInput, food: FoodRecord | undefined, gi: GlycemicIndexRecord): boolean {
+  const bakery = gi.id === "bakery-products-category-mean-gi-58"
+    || gi.foodKey === "bakery-products-category-mean";
+  if (!bakery) return false;
+  const identity = `${food?.name ?? ""} ${food?.state ?? ""} ${ingredient.name}`
+    .normalize("NFKC").toLocaleLowerCase("fi-FI").replace(/[-_]/g, " ");
+  const almondMeal = /almond\s+(?:meal|flour)|(?:ground|milled|defatted)\s+almond|manteli(?:jauho|jauhe)|jauhettu\w*\s+mantel/.test(identity);
+  return /^afcd-F006077(?:-|$)/i.test(food?.id ?? ingredient.fineliRecordId ?? "") || almondMeal;
+}
+
 /**
  * Calculate an ingredient-based GL estimate. Every positive carbohydrate
  * contribution is included or counted toward the cumulative editorial tolerance.
@@ -181,7 +196,8 @@ export function calculateGlycemicLoad(
   const ingredients = input.ingredients.map((ingredient) => {
     const issues: string[] = [];
     const giCandidates = ingredient.foodKey
-      ? giRecords.filter((record) => record.foodKey === ingredient.foodKey && record.calculationUse !== "REFERENCE_ONLY").map((record) => ({
+      ? giRecords.filter((record) => record.foodKey === ingredient.foodKey && record.calculationUse !== "REFERENCE_ONLY"
+        && !almondBakeryMismatch(ingredient, foodsById.get(ingredient.fineliRecordId ?? ""), record)).map((record) => ({
         id: record.id,
         gi: record.gi,
         preparation: record.preparation,
@@ -290,12 +306,13 @@ export function calculateGlycemicLoad(
         && (!ingredient.foodKey || ingredient.foodKey === matchedGi.foodKey)
         && (!ingredient.preparationKey || ingredient.preparationKey === matchedGi.preparationKey)
         && categoryMeanMatchesFood(matchedGi.foodKey, food?.name ?? "", ingredient.name));
-      const foodFamilyMismatch = Boolean(matchedGi && food && hasClearFoodFamilyMismatch(matchedGi.foodKey, food.name, ingredient.name));
+      const foodFamilyMismatch = Boolean(matchedGi && food && (hasClearFoodFamilyMismatch(matchedGi.foodKey, food.name, ingredient.name) || almondBakeryMismatch(ingredient, food, matchedGi)));
       const matchValid = Boolean(matchedGi && !foodFamilyMismatch && (match === "CATEGORY_MEAN" ? categoryMeanMatch : keysMatch)
         && ["EXACT", "ANALOG", "CATEGORY_MEAN"].includes(match));
       if (!sourceValid || !matchValid) {
         const reason = !matchedGi ? ingredient.giMatchEvidence || "GI evidence is missing."
           : matchedGi.calculationUse === "REFERENCE_ONLY" ? "GI record is reference-only; its evidence is not approved for ingredient-based calculation."
+          : almondBakeryMismatch(ingredient, food, matchedGi) ? "Almond meal/flour cannot use a finished bakery-products GI category mean; copied keys or recipe baking do not establish a valid food/preparation analogy."
           : foodFamilyMismatch ? "GI food family does not match the ingredient (for example, rice is not rice vinegar or dairy is not milk chocolate)."
           : "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.";
         if (availablePerServing < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G && ingredient.giRecordId === null) {
