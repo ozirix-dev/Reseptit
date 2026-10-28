@@ -295,7 +295,7 @@ export function calculateGlycemicLoad(
         && ["EXACT", "ANALOG", "CATEGORY_MEAN"].includes(match));
       if (!sourceValid || !matchValid) {
         const reason = !matchedGi ? ingredient.giMatchEvidence || "GI evidence is missing."
-          : matchedGi.calculationUse === "REFERENCE_ONLY" ? "GI record is reference-only; the measured mixed meal is not approved for ingredient-based calculation."
+          : matchedGi.calculationUse === "REFERENCE_ONLY" ? "GI record is reference-only; its evidence is not approved for ingredient-based calculation."
           : foodFamilyMismatch ? "GI food family does not match the ingredient (for example, rice is not rice vinegar or dairy is not milk chocolate)."
           : "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.";
         if (availablePerServing < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G && ingredient.giRecordId === null) {

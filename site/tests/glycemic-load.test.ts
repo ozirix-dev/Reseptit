@@ -9,6 +9,20 @@ import { completePublishedRecipeInputs } from "../scripts/glycemic-load-pilot-in
 import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches } from "../scripts/glycemic-load-recipe-binding";
 import { publishedGlycemicLoadForRecipe } from "../src/features/recipes/glycemic-load-display";
 
+
+// Historical batch expectations yield only to the explicitly reviewed source correction.
+const onionReviewPromise = readFile(path.resolve(import.meta.dirname, "../../docs/nutrition/glycemic-onion-source-review.json"), "utf8").then(JSON.parse);
+async function assertReviewedOnionCorrection(result: ReturnType<typeof calculateGlycemicLoad>): Promise<boolean> {
+  const review = await onionReviewPromise;
+  const row = review.affectedRecipes.find((item: { recipeId: string }) => item.recipeId === result.recipeId);
+  if (!row) return false;
+  assert.equal(result.status, row.after.status, result.recipeId);
+  assert.equal(result.glycemicLoadPerServing, row.after.glycemicLoadPerServing, result.recipeId);
+  assert.equal(result.unroundedGlycemicLoadPerServing, row.after.unroundedGlycemicLoadPerServing, result.recipeId);
+  assert.deepEqual(result.glycemicLoadRangePerServing, row.after.glycemicLoadRangePerServing, result.recipeId);
+  return true;
+}
+
 function food(id: string, availableCarbohydrate: number, name = id): FoodRecord {
   return {
     id,
@@ -800,7 +814,7 @@ test("recipe pages receive only calculated, non-null complete GL results", () =>
   assert.equal(publishedGlycemicLoadForRecipe("unknown", results), null);
 });
 
-test("batch 2B3 eight estimates match report classes, sources, amounts and fingerprints", async () => {
+test("batch 2B3 historical estimates retain their checks except the reviewed onion withdrawal", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const ids = ["malesialainen-congee-inkivaarilla", "kiinalainen-riisipuuro-kananmunalla", "thai-porsasjok", "lahi-ita-kikhernejauho-yrttilettu", "kai-jiew-vhh", "hyderabadi-kanabiryani", "yrttituorejuusto-kinkkurullat", "keto-mutakakku"];
   const files = await Promise.all([
@@ -823,6 +837,7 @@ test("batch 2B3 eight estimates match report classes, sources, amounts and finge
     assert.ok(input, `${id} input exists exactly once`);
     assert.equal(inputs.recipes.filter((row) => row.recipeId === id).length, 1);
     const result = calculateGlycemicLoad(input, foods, gis);
+    if (await assertReviewedOnionCorrection(result)) continue;
     assert.equal(result.status, "CALCULATED", id);
     assert.equal(result.confidence, "LOW", id);
     assert.ok(result.glycemicLoadPerServing !== null);
@@ -846,7 +861,7 @@ test("batch 2B3 eight estimates match report classes, sources, amounts and finge
     assert.equal(classMap[cells[7]], classification, `${id} report GL class`);
     assert.equal(cells[8], "LOW", `${id} confidence is separate from GL class`);
   }
-  assert.deepEqual(classes, { HIGH: 4, MEDIUM: 0, LOW: 4 });
+  assert.deepEqual(classes, { HIGH: 3, MEDIUM: 0, LOW: 4 });
   assert.match(report, /4 korkea, 4 matala ja 0 keskitaso/);
 });
 
@@ -870,10 +885,11 @@ test("batch 2B3 regressions block missing sources, changed bindings, invalid GI 
   wrongGiRecipe.ingredients.find((row) => row.name === "basmatiriisiä")!.giRecordId = "onion-literature-analogue-gi-15";
   assert.equal(calculateGlycemicLoad(wrongGiRecipe, foods, gis).status, "INSUFFICIENT SOURCE DATA");
   const overBudget = structuredClone(recipe);
-  const smallOmissions = overBudget.ingredients.filter((row) => typeof row.estimatedAvailableCarbohydratePerServingG === "number" && Number(row.estimatedAvailableCarbohydratePerServingG) > 0);
-  smallOmissions[0].estimatedAvailableCarbohydratePerServingG = 0.99;
-  smallOmissions[1].estimatedAvailableCarbohydratePerServingG = 0.99;
-  smallOmissions[2].estimatedAvailableCarbohydratePerServingG = 0.1;
+  overBudget.ingredients.push(...[0.99, 0.99, 0.1].map((amount, index) => ({
+    name: `test omission ${index}`, grams: null, fineliRecordId: null, giRecordId: null,
+    excludedReason: "Synthetic tolerance regression", estimatedAvailableCarbohydratePerServingG: amount,
+    negligibleAssumption: "Test fixture only",
+  })));
   const overBudgetResult = calculateGlycemicLoad(overBudget, foods, gis);
   assert.ok(overBudgetResult.omittedAvailableCarbohydratePerServingG >= 2);
   assert.equal(overBudgetResult.status, "INSUFFICIENT SOURCE DATA");
@@ -1160,7 +1176,7 @@ test("batch 2B6D pitted-date source and new GK values pass an independent numeri
   assert.equal(cookedResult.ingredients.find((row) => /taatel/i.test(row.name))?.availableCarbohydratePerServingG, 3.36);
 });
 
-test("batch 2B5 small-portion corrections calculate the cottage-cheese bowl and Chettinad chicken", async () => {
+test("batch 2B5 bowl remains calculated and Chettinad follows the reviewed source withdrawal", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const [inputText, foodText, giText, bindingText, aliasText, pilotText] = await Promise.all([
     readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
@@ -1190,6 +1206,7 @@ test("batch 2B5 small-portion corrections calculate the cottage-cheese bowl and 
     const input = inputs.recipes.find((row) => row.recipeId === item.id)!;
     const result = calculateGlycemicLoad(input, foods, gis);
     assert.equal(input.servings, 4, `${item.id} servings`);
+    if (await assertReviewedOnionCorrection(result)) continue;
     assert.equal(result.status, "CALCULATED", item.id);
     assert.ok(Math.abs(result.unroundedGlycemicLoadPerServing! - item.unrounded) < 1e-12, `${item.id} unrounded GK`);
     assert.equal(result.glycemicLoadPerServing, item.stored, `${item.id} numeric GK`);
@@ -1240,7 +1257,7 @@ test("batch 2B5 small-portion corrections calculate the cottage-cheese bowl and 
   assert.equal(calculateGlycemicLoad(unknownComposition, foods, gis).status, "INSUFFICIENT SOURCE DATA", "unknown composition remains blocking");
 });
 
-test("batch 2B6A uses a food-specific pear source and only omits source-backed sub-1 g portions", async () => {
+test("batch 2B6A pear source remains scoped while the onion audit blocks bulgogi", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const [inputText, foodText, giText, bindingText, aliasText, pilotText] = await Promise.all([
     readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
@@ -1279,6 +1296,7 @@ test("batch 2B6A uses a food-specific pear source and only omits source-backed s
     const input = inputs.recipes.find((row) => row.recipeId === item.id)!;
     const result = calculateGlycemicLoad(input, foods, gis);
     assert.equal(input.servings, item.servings);
+    if (await assertReviewedOnionCorrection(result)) continue;
     assert.equal(result.status, "CALCULATED", item.id);
     assert.ok(Math.abs(result.unroundedGlycemicLoadPerServing! - item.unrounded) < 1e-12, `${item.id} unrounded GK`);
     assert.equal(result.glycemicLoadPerServing, item.stored, `${item.id} stored GK`);
@@ -1311,7 +1329,8 @@ test("batch 2B6A uses a food-specific pear source and only omits source-backed s
   assert.equal(bulgogiResult.ingredients.find((row) => row.name === "seesaminsiemeniä")?.availableCarbohydratePerServingG, 0.02488375);
   assert.equal(bulgogiResult.ingredients.find((row) => row.name === "mustapippuria")?.availableCarbohydratePer100g, 38.6);
   assert.equal(bulgogiResult.ingredients.find((row) => row.name === "mustapippuria")?.availableCarbohydratePerServingG, 0.04825);
-  assert.equal(bulgogiResult.omittedAvailableCarbohydratePerServingG, 0.07313375);
+  assert.equal(bulgogiResult.status, "INSUFFICIENT SOURCE DATA");
+  assert.ok(bulgogiResult.blockers.some((blocker) => /kevätsipulia.*mass/.test(blocker)));
   for (const id of ["keto-suklaakeksit", "vhh-mokkapalat"]) {
     const input = inputs.recipes.find((row) => row.recipeId === id)!;
     const cocoaOrChocolate = input.ingredients.filter((row) => /suklaata|kaakaojauhetta/i.test(row.name));
@@ -1395,7 +1414,7 @@ test("coconut rice-porridge GI is reference-only even if an ingredient copies it
   }
 });
 
-test("coconut correction withdraws only its published curry and preserves all other previously calculated values", async () => {
+test("coconut withdrawal remains protected alongside the separately reviewed onion correction", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const read = async (name: string) => JSON.parse(await readFile(path.join(root, "docs/nutrition", name), "utf8"));
   const [inputs, foods, catalog, review, bindings, inventory] = await Promise.all([
@@ -1411,6 +1430,10 @@ test("coconut correction withdraws only its published curry and preserves all ot
     const input = byId.get(prior.recipeId)!;
     assert.ok(input, prior.recipeId);
     const current = calculateGlycemicLoad(input, foods, catalog.records);
+    if (await assertReviewedOnionCorrection(current)) {
+      if (current.status !== "CALCULATED") withdrawn.push(prior.recipeId);
+      continue;
+    }
     if (current.status !== "CALCULATED") {
       withdrawn.push(prior.recipeId);
       assert.equal(current.glycemicLoadPerServing, null);
@@ -1420,7 +1443,7 @@ test("coconut correction withdraws only its published curry and preserves all ot
       assert.deepEqual(current.glycemicLoadRangePerServing, prior.glycemicLoadRangePerServing, prior.recipeId);
     }
   }
-  assert.deepEqual(withdrawn, ["keltainen-kanacurry-vhh"]);
+  assert.deepEqual([...withdrawn].sort(), ["keltainen-kanacurry-vhh", ...(await onionReviewPromise).withdrawnRecipeIds].sort());
   for (const id of affected) {
     const input = byId.get(id)!;
     const current = calculateGlycemicLoad(input, foods, catalog.records);
@@ -1443,4 +1466,123 @@ test("coconut correction withdraws only its published curry and preserves all ot
     assert.equal(stored.glycemicLoadPerServing, current.glycemicLoadPerServing);
   }
   assert.equal(inventory.currentSummary.calculated, review.previouslyCalculated.length - withdrawn.length, "no unrelated additions or losses");
+});
+
+test("onion secondary-table GI remains reference-only even with copied keys and tiny amounts", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const catalog = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8"));
+  const onion = catalog.records.find((row: GlycemicIndexRecord) => row.id === "onion-literature-analogue-gi-15") as GlycemicIndexRecord;
+  assert.equal(onion.calculationUse, "REFERENCE_ONLY");
+  assert.equal(onion.source.url, "https://doi.org/10.3390/nu12102989");
+  assert.match(onion.source.table, /Table 1/);
+  assert.match(onion.source.qualityEvidence, /10.3945\/an.112.003509/);
+  const composition = food("onion", 4.8, "Sipuli");
+  for (const grams of [1, 55, 100]) {
+    const input: GlycemicLoadRecipeInput = { recipeId: "restore-onion", servings: 1, ingredients: [{
+      name: "sipuli", grams, fineliRecordId: composition.id, giRecordId: onion.id,
+      foodKey: onion.foodKey, preparationKey: onion.preparationKey, giMatchEvidence: "Copied keys cannot establish a primary study.",
+    }] };
+    const result = calculateGlycemicLoad(input, [composition], [onion]);
+    assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+    assert.equal(result.glycemicLoadPerServing, null);
+    assert.match(result.blockers.join(" "), /reference-only/);
+    assert.equal(result.ingredients[0].giCandidates.length, 0);
+  }
+});
+
+test("onion source correction accounts for every published result and preserves all unaffected evidence", async () => {
+  const { createHash } = await import("node:crypto");
+  const root = path.resolve(import.meta.dirname, "../..");
+  const read = async (name: string) => JSON.parse(await readFile(path.join(root, name), "utf8"));
+  const [review, pilot, inputs, foods, catalog, bindings, inventory] = await Promise.all([
+    onionReviewPromise, read("tmp/nutrition/glycemic-load-pilot.json"), read("docs/nutrition/glycemic-load-pilot-input.json"),
+    read("docs/nutrition/food-records.json"), read("docs/nutrition/glycemic-index-records.json"),
+    read("docs/nutrition/glycemic-load-recipe-bindings.json"), read("docs/nutrition/glycemic-coverage-current-2026-10-25.json"),
+  ]);
+  const affected = new Set<string>(review.affectedRecipeIds);
+  assert.equal(affected.size, 48);
+  assert.equal(review.activeBindingCount, 54);
+  const priorUsers = review.affectedRecipes.filter((row: { before: { status: string } }) => row.before.status === "CALCULATED");
+  assert.equal(priorUsers.length, 24);
+  assert.equal(inputs.recipes.some((r: GlycemicLoadRecipeInput) => r.ingredients.some(i => i.giRecordId === "onion-literature-analogue-gi-15")), false);
+  assert.equal(review.allRecipeComparisons.length, pilot.results.length);
+  assert.equal(new Set(review.allRecipeComparisons.map((row: { recipeId: string }) => row.recipeId)).size, pilot.results.length);
+  const digest = (value: unknown) => createHash("sha256").update(JSON.stringify(value)).digest("hex");
+  const changes: Record<string, number> = {};
+  for (const row of review.allRecipeComparisons) {
+    const actual = pilot.results.find((r: { recipeId: string }) => r.recipeId === row.recipeId);
+    assert.ok(actual, row.recipeId);
+    assert.equal(digest(actual), row.after.resultSHA256, row.recipeId);
+    if (!affected.has(row.recipeId)) assert.equal(digest(actual), row.before.resultSHA256, `${row.recipeId} full result unchanged`);
+    assert.equal(actual.glycemicLoadPerServing, row.after.glycemicLoadPerServing);
+    assert.equal(actual.unroundedGlycemicLoadPerServing, row.after.unroundedGlycemicLoadPerServing);
+    assert.deepEqual(actual.glycemicLoadRangePerServing, row.after.glycemicLoadRangePerServing);
+    assert.equal(actual.status === "CALCULATED" ? classifyGlycemicLoad(actual.glycemicLoadPerServing) : null, row.after.glycemicClass);
+    const stored = inventory.recipes.find((r: { recipeId: string }) => r.recipeId === row.recipeId);
+    assert.equal(stored.status, actual.status);
+    assert.equal(stored.glycemicLoadPerServing, actual.glycemicLoadPerServing);
+    changes[row.change] = (changes[row.change] ?? 0) + 1;
+  }
+  assert.deepEqual(changes, { UNCHANGED_CALCULATED: 113, STILL_INCOMPLETE: 189, WITHDRAWN: 19, CHANGED: 5 });
+  for (const row of review.affectedRecipes) {
+    const input = inputs.recipes.find((r: GlycemicLoadRecipeInput) => r.recipeId === row.recipeId) as GlycemicLoadRecipeInput;
+    const result = calculateGlycemicLoad(input, foods, catalog.records);
+    assert.equal(result.status, row.after.status);
+    assert.equal(result.unroundedGlycemicLoadPerServing, row.after.unroundedGlycemicLoadPerServing);
+    assert.equal(glycemicLoadInputHash(input), bindings.calculationInputs[row.recipeId]);
+    assert.equal(glycemicLoadEvidenceHash(input, foods, catalog.records), bindings.calculationEvidence[row.recipeId]);
+    for (const old of row.onionBindings) {
+      assert.equal(input.ingredients[old.index].giRecordId, null);
+      const restored = structuredClone(input);
+      restored.ingredients[old.index].giRecordId = "onion-literature-analogue-gi-15";
+      assert.notEqual(glycemicLoadInputHash(restored), bindings.calculationInputs[row.recipeId]);
+      assert.equal(calculateGlycemicLoad(restored, foods, catalog.records).status, "INSUFFICIENT SOURCE DATA");
+    }
+  }
+  for (const [filename, expected] of Object.entries(review.historicalBaselineCanonicalSHA256)) {
+    const text = (await readFile(path.join(root, filename), "utf8")).replaceAll("\r\n", "\n");
+    assert.equal(createHash("sha256").update(text).digest("hex"), expected, filename);
+  }
+  for (const [filename, expected] of Object.entries(review.preserved2B6EFileSHA256)) {
+    const text = (await readFile(path.join(root, filename), "utf8")).replaceAll("\r\n", "\n");
+    assert.equal(createHash("sha256").update(text).digest("hex"), expected, filename);
+  }
+  const preserved = await read("docs/nutrition/glycemic-coverage-batch-2b6e-review.json");
+  assert.equal(preserved.recipes.reduce((sum: number, row: { ingredientReview: unknown[] }) => sum + row.ingredientReview.length, 0), 44);
+  assert.deepEqual(pilot.calculationInputMismatches, []);
+  assert.deepEqual(pilot.calculationEvidenceMismatches, []);
+  assert.equal(pilot.results.find((row: { recipeId: string }) => row.recipeId === "keltainen-kanacurry-vhh").glycemicLoadPerServing, null);
+});
+
+test("only individually verified onion omissions retain five LOW-confidence estimates", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const read = async (name: string) => JSON.parse(await readFile(path.join(root, "docs/nutrition", name), "utf8"));
+  const [inputSource, foods, catalog] = await Promise.all([read("glycemic-load-pilot-input.json"), read("food-records.json"), read("glycemic-index-records.json")]);
+  const cases = [
+    ["souvlaki", 17.90106, 0.36675, "MEDIUM"], ["gazpacho", 8.30484, 0.12675, "LOW"],
+    ["poronkaristys-kukkakaalimuusilla", 3.08944, 0.716, "LOW"], ["vhh-lihapiirakka", 0.989845, 0.37125, "LOW"],
+    ["uuniporsas-kermakastikkeessa-vhh", 0, 1.5116333333333334, "LOW"],
+  ] as const;
+  for (const [id, exact, omitted, category] of cases) {
+    const input = inputSource.recipes.find((row: GlycemicLoadRecipeInput) => row.recipeId === id) as GlycemicLoadRecipeInput;
+    const result = calculateGlycemicLoad(input, foods, catalog.records);
+    assert.equal(result.status, "CALCULATED", id);
+    assert.ok(Math.abs(result.unroundedGlycemicLoadPerServing! - exact) < 1e-12, id);
+    assert.ok(Math.abs(result.omittedAvailableCarbohydratePerServingG - omitted) < 1e-12, id);
+    assert.equal(classifyGlycemicLoad(result.glycemicLoadPerServing!), category);
+    assert.equal(result.confidence, "LOW");
+    const positiveOmissions = result.ingredients.filter(i => i.giContribution === null && (i.availableCarbohydratePerServingG ?? 0) > 0);
+    assert.ok(positiveOmissions.every(i => i.grams !== null && i.fineliRecordId !== null && i.availableCarbohydratePerServingG! < 1));
+    assert.ok(result.omittedAvailableCarbohydratePerServingG < 2);
+    const unknown = structuredClone(input);
+    unknown.ingredients.find(i => i.name === positiveOmissions[0].name)!.grams = null;
+    assert.equal(calculateGlycemicLoad(unknown, foods, catalog.records).glycemicLoadPerServing, null, `${id}: unknown mass cannot be omitted`);
+  }
+  const review = await onionReviewPromise;
+  assert.deepEqual([...review.changedCalculatedRecipeIds].sort(), cases.map(row => row[0]).sort());
+  for (const id of ["bulgogi", "tomaatti-kananmuna-wokki", "kreikkalainen-moussaka", "doner-kebab", "chettinad-kana", "kermainen-kanasienipannu", "kana-parmesaanipannu-parsakaali", "parsakaali-sinihomejuustofrittata", "kana-tagine-sitruunalla", "palak-paneer"]) {
+    const row = review.affectedRecipes.find((r: { recipeId: string }) => r.recipeId === id);
+    assert.equal(row.removalOnlyCounterfactual.status, "CALCULATED", `${id}: numeric threshold alone would pass`);
+    assert.equal(row.after.status, "INSUFFICIENT SOURCE DATA", `${id}: unverified omission evidence blocks`);
+  }
 });

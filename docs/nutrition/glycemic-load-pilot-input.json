@@ -308,13 +308,18 @@
         },
         {
           "name": "keltasipuli",
-          "grams": 55,
+          "grams": 30,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "1 small onion; documented 55 g per onion",
-          "giMatchEvidence": "Secondary-table onion GI 15; primary method and preparation are unavailable.",
+          "giRecordId": null,
+          "massEvidence": "Original recipe: one small onion; Fineli Release 20 #335 KPL_S = 30 g (previous 55 g was medium).",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "tomaattimurska",
@@ -338,10 +343,8 @@
           "grams": 1.5,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Estimated culinary amount; not weighed and excluded under the pilot <1 g/serving policy.",
-          "massEvidence": "Standard pilot assumption: 1.5 g combined seasoning per batch; not weighed.",
-          "estimatedAvailableCarbohydratePerServingG": 0.3,
-          "negligibleAssumption": "standard assumed 1.5 g batch amount; estimated available carbohydrate 0.6 g for the whole batch (0.300 g/serving), below the 1 g cutoff"
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "massEvidence": "Standard pilot assumption: 1.5 g combined seasoning per batch; not weighed."
         }
       ]
     },
@@ -2372,11 +2375,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Per-unit mass estimate for sipuli; edible-state basis documented.",
-          "giMatchEvidence": "Published GI analogue/category record onion-literature-analogue-gi-15; source and limitations are listed centrally.",
+          "giRecordId": null,
+          "massEvidence": "Per-unit mass estimate for sipuli; edible-state basis documented. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "sellerinvartta",
@@ -2555,11 +2563,16 @@
           "name": "sipulia",
           "grams": 110,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for sipulia: 55 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for sipulia: 55 g/unit, Fineli portion where available or standard piece. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "maissitärkkelystä",
@@ -2590,13 +2603,18 @@
         },
         {
           "name": "valkosipulinkynttä",
-          "grams": 6,
+          "grams": 7.0,
           "fineliRecordId": "afcd-F004193-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "Fineli Release 20 #393 KPL_M = 3.5 g edible garlic clove; original recipe clove count × 3.5 g. AFCD F004193 supplies raw ingredient available carbohydrate; total starting ingredient retained in the batch.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "garlic",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "punaviinietikkaa",
@@ -2700,13 +2718,18 @@
         },
         {
           "name": "kevätsipulia",
-          "grams": 30,
+          "grams": null,
           "fineliRecordId": "afcd-F006250-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "AJO 1.5: Spring-onion 15 g/piece was an unsourced standard-piece assumption, not a verified mass. Original recipe piece count is retained in recipeQuantity; weighed edible mass is required.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "spring-onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "soijakastiketta",
@@ -2767,11 +2790,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "porkkanaa",
@@ -2893,13 +2921,18 @@
         },
         {
           "name": "valkosipulinkynttä",
-          "grams": 6,
+          "grams": 7.0,
           "fineliRecordId": "afcd-F004193-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "Fineli Release 20 #393 KPL_M = 3.5 g edible garlic clove; original recipe clove count × 3.5 g. AFCD F004193 supplies raw ingredient available carbohydrate; total starting ingredient retained in the batch.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "garlic",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "oliiviöljyä",
@@ -2997,13 +3030,18 @@
         },
         {
           "name": "valkosipulinkynttä",
-          "grams": 9,
+          "grams": 10.5,
           "fineliRecordId": "afcd-F004193-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "Fineli Release 20 #393 KPL_M = 3.5 g edible garlic clove; original recipe clove count × 3.5 g. AFCD F004193 supplies raw ingredient available carbohydrate; total starting ingredient retained in the batch.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "garlic",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 3,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "päärynää",
@@ -3019,21 +3057,31 @@
           "name": "keltasipulia",
           "grams": 27.5,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for keltasipulia: 55 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for keltasipulia: 55 g/unit, Fineli portion where available or standard piece. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 0.5,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "kevätsipulia",
-          "grams": 30,
+          "grams": null,
           "fineliRecordId": "afcd-F006250-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "AJO 1.5: Spring-onion 15 g/piece was an unsourced standard-piece assumption, not a verified mass. Original recipe piece count is retained in recipeQuantity; weighed edible mass is required.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "spring-onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "seesaminsiemeniä",
@@ -3103,13 +3151,18 @@
         },
         {
           "name": "kevätsipulia",
-          "grams": 30,
+          "grams": null,
           "fineliRecordId": "afcd-F006250-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "AJO 1.5: Spring-onion 15 g/piece was an unsourced standard-piece assumption, not a verified mass. Original recipe piece count is retained in recipeQuantity; weighed edible mass is required.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "spring-onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "soijakastiketta",
@@ -3191,13 +3244,18 @@
         },
         {
           "name": "kevätsipulia",
-          "grams": 15,
+          "grams": null,
           "fineliRecordId": "afcd-F006250-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "AJO 1.5: Spring-onion 15 g/piece was an unsourced standard-piece assumption, not a verified mass. Original recipe piece count is retained in recipeQuantity; weighed edible mass is required.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "spring-onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "keitettyä riisiä",
@@ -3226,11 +3284,16 @@
           "name": "keltasipulia",
           "grams": 55,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for keltasipulia: 55 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for keltasipulia: 55 g/unit, Fineli portion where available or standard piece. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "sellerinvartta",
@@ -3365,11 +3428,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "tomaattimurskaa",
@@ -3383,10 +3451,10 @@
         },
         {
           "name": "kanelia",
-          "grams": 2,
+          "grams": null,
           "fineliRecordId": "afcd-F002963-2026-10-24",
           "giRecordId": null,
-          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kanelia."
+          "massEvidence": "AJO 1.5: Cinnamon 2 g/tsp has no verified portion source in the reviewed reference; cumulative tolerance not approved."
         },
         {
           "name": "oliiviöljyä",
@@ -3486,31 +3554,41 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "valkosipulinkynttä",
-          "grams": 6,
+          "grams": 7.0,
           "fineliRecordId": "afcd-F004193-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "Fineli Release 20 #393 KPL_M = 3.5 g edible garlic clove; original recipe clove count × 3.5 g. AFCD F004193 supplies raw ingredient available carbohydrate; total starting ingredient retained in the batch.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "garlic",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "juustokuminaa",
-          "grams": 2,
+          "grams": null,
           "fineliRecordId": "afcd-F003327-2026-10-24",
-          "giRecordId": "dairy-category-mean-gi-35",
-          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for juustokuminaa.",
-          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
-          "foodKey": "dairy",
-          "preparationKey": "unflavoured-dairy"
+          "giRecordId": null,
+          "massEvidence": "AJO 1.5: Cumin teaspoon mass was not verified. Missing mass cannot qualify as a small omission.",
+          "giMatchEvidence": "AJO 1.5: cumin is not dairy; reject the dairy-category mapping.",
+          "foodKey": "cumin",
+          "preparationKey": "cooked-spice-no-approved-gi"
         },
         {
           "name": "paprikajauhetta",
@@ -3524,10 +3602,10 @@
         },
         {
           "name": "oreganoa",
-          "grams": 1,
+          "grams": 0.25,
           "fineliRecordId": "afcd-F006281-2026-10-24",
           "giRecordId": null,
-          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for oreganoa."
+          "massEvidence": "Original recipe dry oregano: Fineli Release 20 #11191 RKL = 1.5 g, TL = 0.5 g; recipe uses 1 tbsp (souvlaki) / 0.5 tsp (doner). Existing AFCD dried-oregano composition retained."
         },
         {
           "name": "suolaa",
@@ -3601,20 +3679,20 @@
         },
         {
           "name": "valkosipulinkynttä",
-          "grams": 6,
+          "grams": 7.0,
           "fineliRecordId": "afcd-F004193-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "Fineli Release 20 #393 KPL_M = 3.5 g edible garlic clove; original recipe clove count × 3.5 g. AFCD F004193 supplies raw ingredient available carbohydrate; total starting ingredient retained in the batch.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "garlic",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi"
         },
         {
           "name": "kuivattua oreganoa",
-          "grams": 6,
+          "grams": 1.5,
           "fineliRecordId": "afcd-F006281-2026-10-24",
           "giRecordId": null,
-          "massEvidence": "Ingredient-specific tablespoon mass: 6 g/rkl for kuivattua oreganoa."
+          "massEvidence": "Original recipe dry oregano: Fineli Release 20 #11191 RKL = 1.5 g, TL = 0.5 g; recipe uses 1 tbsp (souvlaki) / 0.5 tsp (doner). Existing AFCD dried-oregano composition retained."
         },
         {
           "name": "suolaa",
@@ -3648,13 +3726,13 @@
         },
         {
           "name": "valkosipulinkynttä",
-          "grams": 3,
+          "grams": 3.5,
           "fineliRecordId": "afcd-F004193-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "Fineli Release 20 #393 KPL_M = 3.5 g edible garlic clove; original recipe clove count × 3.5 g. AFCD F004193 supplies raw ingredient available carbohydrate; total starting ingredient retained in the batch.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "garlic",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi"
         },
         {
           "name": "pitaleipää",
@@ -3714,13 +3792,18 @@
         },
         {
           "name": "valkosipulinkynttä",
-          "grams": 3,
+          "grams": 3.5,
           "fineliRecordId": "afcd-F004193-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "Fineli Release 20 #393 KPL_M = 3.5 g edible garlic clove; original recipe clove count × 3.5 g. AFCD F004193 supplies raw ingredient available carbohydrate; total starting ingredient retained in the batch.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "garlic",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "sherryviinietikkaa tai punaviinietikkaa",
@@ -3784,13 +3867,18 @@
         },
         {
           "name": "kevätsipulia",
-          "grams": 60,
+          "grams": null,
           "fineliRecordId": "afcd-F006250-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "AJO 1.5: Spring-onion 15 g/piece was an unsourced standard-piece assumption, not a verified mass. Original recipe piece count is retained in recipeQuantity; weighed edible mass is required.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "spring-onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 4,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "fetajuustoa",
@@ -3881,13 +3969,18 @@
         },
         {
           "name": "kevätsipulia",
-          "grams": 30,
+          "grams": null,
           "fineliRecordId": "afcd-F006250-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for kevätsipulia: 15 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Ingredient-category match: Onion, generic vegetable table entry; Secondary-table value with limited traceability; confidence low.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "AJO 1.5: Spring-onion 15 g/piece was an unsourced standard-piece assumption, not a verified mass. Original recipe piece count is retained in recipeQuantity; weighed edible mass is required.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "spring-onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "tuoretta minttua",
@@ -3953,11 +4046,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Published Onion, generic vegetable table entry proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "voita",
@@ -4073,11 +4171,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Published Onion, generic vegetable table entry proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "laakerinlehteä",
@@ -4085,9 +4188,7 @@
           "fineliRecordId": null,
           "giRecordId": null,
           "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Excluded minor laakerinleht seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "Nutrition-batch omission bound ≤0.1 g available carbohydrate/serving, below the 1 g GL cutoff."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "kokonaista mustapippuria",
@@ -4095,9 +4196,7 @@
           "fineliRecordId": null,
           "giRecordId": null,
           "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Excluded minor kokonaista mustapippuria seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "Nutrition-batch omission bound ≤0.1 g available carbohydrate/serving, below the 1 g GL cutoff."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "silputtua persiljaa",
@@ -4224,11 +4323,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Published Onion, generic vegetable table entry proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "tomaattia",
@@ -4242,13 +4346,18 @@
         },
         {
           "name": "valkosipulinkynttä",
-          "grams": 6,
+          "grams": 7.0,
           "fineliRecordId": "afcd-F004193-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Published Onion, generic vegetable table entry proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "Fineli Release 20 #393 KPL_M = 3.5 g edible garlic clove; original recipe clove count × 3.5 g. AFCD F004193 supplies raw ingredient available carbohydrate; total starting ingredient retained in the batch.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "garlic",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "tuoretta inkivääriä",
@@ -4286,9 +4395,7 @@
           "fineliRecordId": null,
           "giRecordId": null,
           "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Excluded minor fenkolinsiemen seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
-          "estimatedAvailableCarbohydratePerServingG": 0.2,
-          "negligibleAssumption": "Nutrition-batch omission bound ≤0.2 g available carbohydrate/serving, below the 1 g GL cutoff."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "kanelitanko",
@@ -4310,9 +4417,7 @@
           "fineliRecordId": null,
           "giRecordId": null,
           "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Excluded minor curryleht seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
-          "estimatedAvailableCarbohydratePerServingG": 0.35,
-          "negligibleAssumption": "Nutrition-batch omission bound ≤0.35 g available carbohydrate/serving, below the 1 g GL cutoff."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "suolaa",
@@ -4511,13 +4616,18 @@
         },
         {
           "name": "salottisipuli",
-          "grams": 55,
+          "grams": null,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Edible piece mass for salottisipuli: 55 g/unit, Fineli portion where available or standard piece.",
-          "giMatchEvidence": "Published Onion, generic vegetable table entry proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "AJO 1.5: Shallot mass and yellow-onion composition proxy were not verified for the recipe. Unknown amount/composition cannot qualify as a small omission.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "shallot",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "kuohukermaa",
@@ -4566,9 +4676,7 @@
           "fineliRecordId": null,
           "giRecordId": null,
           "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Excluded minor salt and pepper seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "Nutrition-batch omission bound ≤0.1 g available carbohydrate/serving, below the 1 g GL cutoff."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         }
       ]
     },
@@ -4709,13 +4817,18 @@
         },
         {
           "name": "valkosipulimurskaa",
-          "grams": 2,
+          "grams": null,
           "fineliRecordId": "afcd-F004193-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for valkosipulimurskaa.",
-          "giMatchEvidence": "Published Onion, generic vegetable table entry proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "giRecordId": null,
+          "massEvidence": "AJO 1.5: Garlic-paste teaspoon mass and product form are not source-verified; no small-portion approval.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "garlic",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "tl",
+            "massGrams": null
+          }
         },
         {
           "name": "suolaa ja mustapippuria",
@@ -4723,9 +4836,7 @@
           "fineliRecordId": null,
           "giRecordId": null,
           "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Excluded minor salt and pepper seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "Nutrition-batch omission bound ≤0.1 g available carbohydrate/serving, below the 1 g GL cutoff."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         }
       ]
     },
@@ -5071,11 +5182,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Per-unit mass estimate for sipuli; edible-state basis documented.",
-          "giMatchEvidence": "Published Onion, generic vegetable table entry proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "giRecordId": null,
+          "massEvidence": "Per-unit mass estimate for sipuli; edible-state basis documented. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe"
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "suolaa",
@@ -6237,11 +6353,16 @@
           "name": "sipulia",
           "grams": 55,
           "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "1 medium onion × Fineli #335 55 g",
+          "giRecordId": null,
+          "massEvidence": "1 medium onion × Fineli #335 55 g AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked",
-          "giMatchEvidence": "Published onion analogue; cooked ingredient match is approximate and disclosed centrally."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "oliiviöljyä",
@@ -6262,9 +6383,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Standard salt seasoning assumption; carbohydrate below 1 g/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.2,
-          "negligibleAssumption": "Standard salt seasoning assumption; carbohydrate below 1 g/serving."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         }
       ]
     },
@@ -8067,12 +8186,17 @@
         {
           "name": "sipulia",
           "grams": 30,
-          "massEvidence": "1 small onion × Fineli #335 KPL_S 30 g",
+          "massEvidence": "1 small onion × Fineli #335 KPL_S 30 g AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "fineliRecordId": "fineli-335-2026-10-25",
-          "giRecordId": "onion-literature-analogue-gi-15",
+          "giRecordId": null,
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "suolaa",
@@ -8266,12 +8390,17 @@
         {
           "name": "sipulia",
           "grams": 27.5,
-          "massEvidence": "0.5 medium onion × Fineli #335 KPL_M 55 g",
+          "massEvidence": "0.5 medium onion × Fineli #335 KPL_M 55 g AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "fineliRecordId": "fineli-335-2026-10-25",
-          "giRecordId": "onion-literature-analogue-gi-15",
+          "giRecordId": null,
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 0.5,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "parsakaalia",
@@ -8312,9 +8441,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Standard seasoning assumption; available carbohydrate is below 1 g per serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "Standard seasoning assumption; available carbohydrate is below 1 g per serving."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         }
       ]
     },
@@ -8716,12 +8843,17 @@
         {
           "name": "sipuli",
           "grams": 55,
-          "massEvidence": "1 medium onion × Fineli #335 KPL_M 55 g",
+          "massEvidence": "1 medium onion × Fineli #335 KPL_M 55 g AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "fineliRecordId": "fineli-335-2026-10-25",
-          "giRecordId": "onion-literature-analogue-gi-15",
+          "giRecordId": null,
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "suolaa",
@@ -8734,26 +8866,22 @@
         },
         {
           "name": "mustapippuria",
-          "grams": null,
-          "fineliRecordId": null,
+          "grams": 1,
+          "fineliRecordId": "fineli-11177-2026-10-25",
           "giRecordId": null,
-          "excludedReason": "Half teaspoon of pepper in six servings stays below 1 g carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "Half teaspoon of pepper in six servings stays below 1 g carbohydrate/serving."
+          "massEvidence": "AJO 1.5: 0.5 tsp × Fineli #11177 TL 2 g; local Fineli Release 20 portion reference verified."
         },
         {
           "name": "timjamia",
-          "grams": null,
-          "fineliRecordId": null,
+          "grams": 0.5,
+          "fineliRecordId": "fineli-11194-2026-10-24",
           "giRecordId": null,
-          "excludedReason": "One teaspoon dried thyme in six servings stays below 1 g carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "One teaspoon dried thyme in six servings stays below 1 g carbohydrate/serving."
+          "massEvidence": "AJO 1.5: 1 tsp dried thyme × Fineli #11194 TL 0.5 g; local Fineli Release 20 portion reference verified."
         },
         {
           "name": "voita",
-          "grams": 13.5,
-          "massEvidence": "1 tbsp × Fineli #500 RKL 13.5 g",
+          "grams": 14,
+          "massEvidence": "AJO 1.5: 1 tbsp × Fineli #500 RKL 14 g; local Fineli Release 20 portion reference verified.",
           "fineliRecordId": "fineli-500-2026-10-25",
           "giRecordId": null
         }
@@ -8983,12 +9111,17 @@
         {
           "name": "sipulia",
           "grams": 110,
-          "massEvidence": "2 medium onions × Fineli #335 KPL_M 55 g",
+          "massEvidence": "2 medium onions × Fineli #335 KPL_M 55 g AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "fineliRecordId": "fineli-335-2026-10-25",
-          "giRecordId": "onion-literature-analogue-gi-15",
+          "giRecordId": null,
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "öljyä",
@@ -9009,27 +9142,21 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "2 tsp dried spice across four servings is below 1 g available carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.2,
-          "negligibleAssumption": "2 tsp dried spice across four servings is below 1 g available carbohydrate/serving."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "jauhettua juustokuminaa",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "1 tsp spice across four servings is below 1 g available carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "1 tsp spice across four servings is below 1 g available carbohydrate/serving."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "jauhettua korianteria",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "1 tsp spice across four servings is below 1 g available carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "1 tsp spice across four servings is below 1 g available carbohydrate/serving."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "suolaa",
@@ -9045,36 +9172,28 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Half teaspoon spice across four servings is below 1 g available carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "Half teaspoon spice across four servings is below 1 g available carbohydrate/serving."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "kanelitanko",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "One cinnamon stick infused in the pot is bounded below 1 g available carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "One cinnamon stick infused in the pot is bounded below 1 g available carbohydrate/serving."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "kardemummakotaa",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Four whole pods infused in the pot are bounded below 1 g available carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "Four whole pods infused in the pot are bounded below 1 g available carbohydrate/serving."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "sahramia",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "One gram saffron in four servings is below 1 g available carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "One gram saffron in four servings is below 1 g available carbohydrate/serving."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "tuoretta korianteria",
@@ -9082,18 +9201,14 @@
           "massEvidence": "Recipe-listed edible mass.",
           "fineliRecordId": "fineli-34238-2026-10-25",
           "giRecordId": null,
-          "excludedReason": "Pieni ainesosakohtainen osuus jätetään GK-laskennasta toimituksellisen <1 g/annos -toleranssin puitteissa; reseptimäärä säilyy ennallaan.",
-          "estimatedAvailableCarbohydratePerServingG": 0.02525,
-          "negligibleAssumption": "Koostumuslähteen perusteella 0.025 g käytettävissä olevaa hiilihydraattia annosta kohti; yksittäinen osuus on alle 1 g. Tämä on toimituksellinen toleranssi, ei kliininen tarkkuusraja."
+          "giMatchEvidence": "AJO 1.5: use documented ingredient mass and composition for small-portion accounting; no GI assigned."
         },
         {
           "name": "tuoretta minttua",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "10 g fresh mint in four servings is below 1 g available carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.2,
-          "negligibleAssumption": "10 g fresh mint in four servings is below 1 g available carbohydrate/serving."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         }
       ]
     },
@@ -9130,9 +9245,7 @@
           "grams": 105,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "No generic exact composition is assigned because fish-sauce carbohydrate varies by brand; sourced Squid-label upper estimate used for this small portion.",
-          "estimatedAvailableCarbohydratePerServingG": 0.9,
-          "negligibleAssumption": "105 ml at 3.4 g carbohydrate/100 ml is about 3.57 g per batch, or 0.89 g/serving; product label is a conservative brand example, not a universal fish-sauce value.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "foodKey": null,
           "preparationKey": null,
           "massEvidence": "Combined recipe amount: 3 tbsp marinade plus 60 ml dip; documented tablespoon conversion gives approximately 105 ml total."
@@ -9156,13 +9269,18 @@
         },
         {
           "name": "salottisipulia",
-          "grams": 60,
-          "massEvidence": "2 shallots approximated as 30 g each yellow onion; source composition proxy.",
+          "grams": null,
+          "massEvidence": "AJO 1.5: Shallot mass and yellow-onion composition proxy were not verified for the recipe. Unknown amount/composition cannot qualify as a small omission.",
           "fineliRecordId": "fineli-335-2026-10-25",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "giRecordId": null,
+          "foodKey": "shallot",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "mustapippuria",
@@ -9176,9 +9294,7 @@
           "grams": 30,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Plain unsweetened rice vinegar assumed; under 1 g available carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "Plain unsweetened rice vinegar assumed; under 1 g available carbohydrate/serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed 2 tbsp, converted as 30 ml and approximately 30 g using the recipe's small-volume water-density convention."
         },
         {
@@ -9684,12 +9800,17 @@
         {
           "name": "sipuli",
           "grams": 55,
-          "massEvidence": "1 medium onion × Fineli #335 KPL_M 55 g",
+          "massEvidence": "1 medium onion × Fineli #335 KPL_M 55 g AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "fineliRecordId": "fineli-335-2026-10-25",
-          "giRecordId": "onion-literature-analogue-gi-15",
+          "giRecordId": null,
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "ananasta",
@@ -9713,9 +9834,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Plain unsweetened rice vinegar assumed; below 1 g available carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.1,
-          "negligibleAssumption": "Plain unsweetened rice vinegar assumed; below 1 g available carbohydrate/serving."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "sokeria",
@@ -9813,12 +9932,17 @@
         {
           "name": "sipuli",
           "grams": 55,
-          "massEvidence": "1 medium onion × Fineli #335 KPL_M 55 g",
+          "massEvidence": "1 medium onion × Fineli #335 KPL_M 55 g AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "fineliRecordId": "fineli-335-2026-10-25",
-          "giRecordId": "onion-literature-analogue-gi-15",
+          "giRecordId": null,
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "tamarinditahnaa",
@@ -9842,18 +9966,14 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "1 tsp spice is below 1 g available carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.2,
-          "negligibleAssumption": "1 tsp spice is below 1 g available carbohydrate/serving."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "tuoreita currylehtiä",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "10 g fresh leaves are below 1 g available carbohydrate/serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.2,
-          "negligibleAssumption": "10 g fresh leaves are below 1 g available carbohydrate/serving."
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
         },
         {
           "name": "öljyä",
@@ -9971,12 +10091,17 @@
         {
           "name": "sipuli",
           "grams": 55,
-          "massEvidence": "1 medium onion × Fineli #335 KPL_M 55 g",
+          "massEvidence": "1 medium onion × Fineli #335 KPL_M 55 g AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "fineliRecordId": "fineli-335-2026-10-25",
-          "giRecordId": "onion-literature-analogue-gi-15",
+          "giRecordId": null,
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "neutraalia paistoöljyä",
@@ -10144,13 +10269,18 @@
         },
         {
           "name": "salottisipuli",
-          "grams": 30,
-          "massEvidence": "1 shallot represented by 30 g yellow onion composition proxy.",
+          "grams": null,
+          "massEvidence": "AJO 1.5: Shallot mass and yellow-onion composition proxy were not verified for the recipe. Unknown amount/composition cannot qualify as a small omission.",
           "fineliRecordId": "fineli-335-2026-10-25",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "giRecordId": null,
+          "foodKey": "shallot",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "neutraalia paistoöljyä",
@@ -14809,20 +14939,23 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "korianteri",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.25,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -18789,11 +18922,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "valkosipulinkynttä",
@@ -18807,9 +18945,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -18827,9 +18963,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -18837,9 +18971,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -18864,9 +18996,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         }
       ]
@@ -19257,11 +19387,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "fenkolia",
@@ -19302,9 +19437,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -19322,9 +19455,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -19414,11 +19545,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "valkosipulinkynttä",
@@ -19470,9 +19606,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         }
       ]
@@ -19689,11 +19823,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "punainen paprika",
@@ -19735,9 +19874,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -20330,11 +20467,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "porkkanaa",
@@ -20604,11 +20746,16 @@
           "name": "keltasipulia",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "kanalientä tai vettä",
@@ -20631,9 +20778,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -20648,9 +20793,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -20780,11 +20923,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "kuohukermaa",
@@ -20818,9 +20966,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -20828,9 +20974,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         }
       ]
@@ -21101,11 +21245,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "tuoretta jalapeñoa",
@@ -21216,11 +21365,16 @@
           "name": "keltasipulia",
           "grams": 50,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 50 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 50 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 50,
+            "unit": "g",
+            "massGrams": 50
+          }
         },
         {
           "name": "kananmuna",
@@ -21234,9 +21388,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.25,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -21244,9 +21396,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.25,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22061,11 +22211,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "maustamatonta jogurttia",
@@ -22096,9 +22251,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22106,9 +22259,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22116,9 +22267,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22126,9 +22275,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22136,9 +22283,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22146,9 +22291,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22198,11 +22341,16 @@
           "name": "punasipuli",
           "grams": 100,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 100 g red onion; previous 55 g yellow-onion estimate was mismatched.",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 100 g red onion; previous 55 g yellow-onion estimate was mismatched. AJO 1.5: quantity is explicit, but yellow-onion composition is a red-onion proxy; not newly approved.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 100,
+            "unit": "g",
+            "massGrams": 100
+          }
         },
         {
           "name": "fetajuustoa",
@@ -22236,9 +22384,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22256,9 +22402,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         }
       ]
@@ -22278,11 +22422,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "valkosipulinkynttä",
@@ -22296,9 +22445,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "One recipe-listed teaspoon of ground ginger is bounded at 1.2 g available carbohydrate for the whole recipe using AFCD ground-ginger composition and a conservative 2 g teaspoon; below 1 g per serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.3,
-          "negligibleAssumption": "AFCD ground ginger has 57.5 g available carbohydrate/100 g; a 2 g teaspoon gives at most 1.15 g per recipe, below 1 g/serving for this four-serving recipe.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Food-specific spoon mass unavailable; a conservative 2 g spice teaspoon bound is used only to establish the <1 g/serving omission."
         },
         {
@@ -22306,9 +22453,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22316,9 +22461,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22360,9 +22503,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22480,11 +22621,16 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "valkosipulinkynttä",
@@ -22515,9 +22661,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22525,9 +22669,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22535,9 +22677,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22791,20 +22931,23 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
         },
         {
           "name": "laakerinlehti",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -22822,9 +22965,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         }
       ]
@@ -22969,11 +23110,11 @@
           "name": "sipuli",
           "grams": 55,
           "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "onion-literature-analogue-gi-15",
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion).",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
           "foodKey": "onion",
-          "preparationKey": "cooked-in-recipe",
-          "giMatchEvidence": "Onion, generic vegetable table entry: Secondary-table value with limited traceability; confidence low.; category/analogue estimate, low confidence."
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero."
         },
         {
           "name": "voita",
@@ -23004,9 +23145,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
@@ -23014,9 +23153,7 @@
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-          "estimatedAvailableCarbohydratePerServingG": 0.125,
-          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         }
       ]

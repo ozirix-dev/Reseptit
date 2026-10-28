@@ -1,0 +1,1176 @@
+{
+  "schemaVersion": 1,
+  "decision": "AJO 1 / 2B6E – NO CALCULATIONS APPROVED",
+  "approvedMainCommit": "775711c3e81fba4ad25e489f17eb83c05be99e10",
+  "mergedPlanningPullRequest": 123,
+  "planningHead": "1bc4a371b5b99febb7bf9679c63eb0112d4caf46",
+  "productionRun": "https://github.com/ozirix-dev/Reseptit/actions/runs/40672505952",
+  "productionDeploy": "SUCCESS",
+  "liveCoverageVerified": {
+    "recipes": 326,
+    "calculated": 137,
+    "insufficientSourceData": 189
+  },
+  "currentCoverage": {
+    "recipeCount": 326,
+    "newlyAdded": 0,
+    "calculated": 137,
+    "incomplete": 189,
+    "giRecordCount": 45,
+    "giTierCounts": {
+      "STRONG": 6,
+      "SUPPLEMENTARY": 39
+    },
+    "incompleteWithSupportedNutrition": 94,
+    "incompleteNutritionNeedsReview": 41,
+    "incompleteNutritionMissing": 54,
+    "newlyCalculated": 0,
+    "newlyBlocked": 0,
+    "stillIncomplete": 189,
+    "changedBlockerRecipes": 0,
+    "newStructureMismatches": 0,
+    "newInputMismatches": 0,
+    "newEvidenceMismatches": 0
+  },
+  "newApprovedCalculations": 0,
+  "changedPreviouslyCalculated": [],
+  "calculationChanges": [],
+  "sources": [
+    {
+      "id": "fineli",
+      "url": "https://fineli.fi/fineli/fi/avoin-data",
+      "local": "docs/nutrition/fineli-release-20-reference.json",
+      "finding": "Paikallinen THL Rel20 -viite luettiin ruoka- ja mittatasolla. Live-API palautti Cloudflare-haasteen; live-arvoja tai liemireseptin laimennussuhdetta ei väitetä varmennetuksi."
+    },
+    {
+      "id": "afcd",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+      "local": "docs/nutrition/afcd-release-3-reference.json",
+      "finding": "Paikallinen AFCD Release 3 -viite ja käytettyjen food-records-rivien koostumustiedot tarkistettiin; analogian hyväksyntä ja lämpökäsittely ovat erillisiä."
+    },
+    {
+      "id": "tables2021",
+      "url": "https://doi.org/10.1093/ajcn/nqab233",
+      "finding": "Atkinson ym. 2021, Table 1: dairy 35 (186 ruokaa), nuts 22 (3), vegetables other than potatoes 66 (91). Ryhmäkeskiarvo ei ole valmistetun kohdeainesosan mittaus. Kustantajan kokoteksti-/liitepolku ei ollut suoraan saatavilla; Table 1 löytyi indeksoidusta alkuperäisjulkaisusta ja ruokatasoiset tiedot tarkistettiin yliopiston tietokannasta."
+    },
+    {
+      "id": "sydney",
+      "url": "https://glycemicindex.com/gi-search/",
+      "finding": "Yliopiston ruokataulukossa nut-ryhmän kolme vastaavaa riviä: cashew salted 22, mixed nuts and raisins 21, mixed nuts roasted and salted 24. Ne eivät yksilöi paahdettua mantelilastua. Sopivaa erillisen kuohukerman tai keitetyn vihreän pavun mittausta ei löytynyt tarkistuksessa. Tämä ei todista, ettei mittausta ole missään."
+    },
+    {
+      "id": "onion-correct",
+      "url": "https://doi.org/10.3390/nu12102989",
+      "finding": "Mens sana in corpore sano -katsauksen oikea DOI on 2989, PMC7599769. Sen Table 1 sisältää yleisen sipuliluvun 15; kypsennysprotokollaa ja jäljitettävää sipulin primaarimittausta ei varmennettu. Kokoteksti luettiin Europe PMC:n XML:stä."
+    },
+    {
+      "id": "onion-wrong",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33023067/",
+      "finding": "Katalogin DOI 10.3390/nu12103041 viittaa äidin DHA-lisän ja lapsen kehityksen tutkimukseen, ei nimettyyn GI-katsaukseen. Tämä on bibliografinen virhe; yhteistä katalogia ei muutettu erän ulkopuolella."
+    },
+    {
+      "id": "green-beans",
+      "url": "https://doi.org/10.23880/fsnt-16000211",
+      "finding": "Hutchins & Winham 2020: pinto-/vihreiden papujen 12 viikon interventio, ei näiden keitettyjen vihreiden papujen ainesosakohtainen GI-mittaus. Sitä ei muunnettu GI-luvuksi."
+    },
+    {
+      "id": "almond",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21276226/",
+      "finding": "Mori ym. 2011: mantelimuodot osana 75 g imeytyvää hiilihydraattia sisältävää aamiaisateriaa; seka-aterian vaikutus ei anna tämän paahdetun mantelilastun GI:tä."
+    },
+    {
+      "id": "foodin",
+      "url": "https://foodin.fi/tuote/erytritoli-luomu-200g-2/",
+      "finding": "Valmistajan ravintoarvomerkintä: hiilihydraatti 100 g, polyolit 100 g, sokerit 0 g / 100 g. Tämä tukee yksilöidyn erytritolin nykyistä 0 imeytyvän HH:n käsittelyä, ei puuttuvan GI:n korvaamista nollalla."
+    },
+    {
+      "id": "toast",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17426743/",
+      "finding": "Burton & Lightowler: paahtaminen muutti valkoisen leivän vastetta. Tulos ei anna yleistä kerrointa eikä GI:tä yksilöimättömälle hapanjuurileivälle."
+    }
+  ],
+  "recipes": [
+    {
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "servings": 4,
+      "sourcePath": "reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md",
+      "initialBlocker": "Liemen virheellinen GI",
+      "decision": "BLOCKED",
+      "approvedGlycemicLoadPerServing": null,
+      "confidence": null,
+      "finalBarriers": "Kerman GI/kypsennysvastaavuutta ja liemen tuote-/vahvuusketjua ei varmennettu. Sipulin viitteessä on väärä DOI.",
+      "toleranceReview": "Liemen sidoksen yksin poistava muistissa tehty AJO 0.6 -koe ei ole hyväksytty laskenta. Nykyinen poisjättö 0,43705; liemi mukaan 1,18705; lisäksi pieni kerma ja sipuli mukaan 1,90955. Kastikkeen kerma 1,45 g/annos ylittää yksittäisen rajan ja tarvitsee GI:n.",
+      "currentModelBlockers": [
+        "jauhelihapihvit-vhh-kermakastikkeella: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "fingerprints": {
+        "sourceHashes": "698c0441ea581d84174cedc8b128dd0602df3174727f4016d4ca39a714ac6d1c",
+        "calculationInputHashes": "3a06520560c00735bf481cf2a8849b5b312da15348d6aca39acb42971c2c398a",
+        "calculationEvidenceHashes": "ced48109d2198ea44a310747ba06cdcd754d1750b595cd698da7f2cecc841a0b"
+      },
+      "ingredientReview": [
+        {
+          "index": 0,
+          "input": {
+            "name": "naudan jauhelihaa",
+            "grams": 600,
+            "massEvidence": "Recipe-listed edible mass.",
+            "fineliRecordId": "fineli-11562-2026-10-25",
+            "giRecordId": null
+          },
+          "currentRecipeIngredient": {
+            "amount": 600,
+            "unit": "g",
+            "item": "naudan jauhelihaa"
+          },
+          "foodName": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/11562?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0,
+          "review": "600 g vastaa reseptiä. Fineli 11562 kuvaa 17 % jauhelihaa, mutta resepti ei yksilöi rasvaprosenttia; imeytyvä HH on tietueessa 0. Paistorasvan ja lihan koko määrä kuuluu erään."
+        },
+        {
+          "index": 1,
+          "input": {
+            "name": "kananmunaa",
+            "grams": 55,
+            "massEvidence": "1 egg × Fineli #858 KPL_M 55 g",
+            "fineliRecordId": "fineli-858-2026-10-25",
+            "giRecordId": null
+          },
+          "currentRecipeIngredient": {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "kananmuna"
+          },
+          "foodName": "KANANMUNA, KUORETON",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/858?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.04125,
+          "review": "1 muna → 55 g kuorettomana: paikallisen Fineli 858 KPL_M vahvistaa. 0,04125 g HH/annos on tunnettu pienosuus."
+        },
+        {
+          "index": 2,
+          "input": {
+            "name": "kuohukermaa",
+            "grams": 50,
+            "massEvidence": "0.5 dl × Fineli #631 100 g/dl",
+            "fineliRecordId": "fineli-631-2026-10-25",
+            "giRecordId": "dairy-category-mean-gi-35",
+            "foodKey": "dairy",
+            "preparationKey": "unflavoured-dairy",
+            "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          },
+          "currentRecipeIngredient": {
+            "amount": 0.5,
+            "unit": "dl",
+            "item": "kuohukermaa"
+          },
+          "foodName": "KERMA, KUOHUKERMA, RASVAA 38 %",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/631?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.3625,
+          "review": "0,5 dl → 50 g: Fineli 631 DL 100 g. 0,3625 g HH/annos. GI 35 on maitotuoteryhmän keskiarvo, ei pihvin sisällä paistetun kuohukerman mittaus."
+        },
+        {
+          "index": 3,
+          "input": {
+            "name": "sipulia",
+            "grams": 30,
+            "massEvidence": "1 small onion × Fineli #335 KPL_S 30 g",
+            "fineliRecordId": "fineli-335-2026-10-25",
+            "giRecordId": "onion-literature-analogue-gi-15",
+            "foodKey": "onion",
+            "preparationKey": "cooked-in-recipe",
+            "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          },
+          "currentRecipeIngredient": {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "pieni sipuli",
+            "note": "hienoksi raastettuna"
+          },
+          "foodName": "SIPULI, KELTASIPULI",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/335?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.36,
+          "review": "Pieni sipuli → 30 g: Fineli 335 KPL_S vahvistaa. 0,36 g HH/annos voidaan arvioida pienosuutena vain yhdessä muiden poisjättöjen kanssa. GI 15:n DOI ja taulukkoviite ovat virheelliset, eikä oikea katsaus osoita kypsennetyn sipulin primaarimittausta."
+        },
+        {
+          "index": 4,
+          "input": {
+            "name": "suolaa",
+            "grams": 6.5,
+            "massEvidence": "1 tsp × Fineli #30 6.5 g/tsp",
+            "fineliRecordId": "fineli-30-2026-10-25",
+            "giRecordId": null
+          },
+          "currentRecipeIngredient": {
+            "amount": 1,
+            "unit": "tl",
+            "item": "suolaa"
+          },
+          "foodName": "RUOKASUOLA, JODIOITU",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/30?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0,
+          "review": "1 tl → 6,5 g: Fineli 30 TL vahvistaa; HH 0."
+        },
+        {
+          "index": 5,
+          "input": {
+            "name": "mustapippuria",
+            "grams": 1,
+            "massEvidence": "Recipe-listed edible mass.",
+            "fineliRecordId": "fineli-11177-2026-10-25",
+            "giRecordId": null
+          },
+          "currentRecipeIngredient": {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "mustapippuria"
+          },
+          "foodName": "MUSTAPIPPURI",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/11177?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.095775,
+          "review": "0,5 tl → 1 g: Fineli 11177 TL 2 g vahvistaa. Syötteen teksti Recipe-listed edible mass on epätarkka, koska resepti antaa tl-mitan. HH 0,095775 g/annos."
+        },
+        {
+          "index": 6,
+          "input": {
+            "name": "voita",
+            "grams": 14,
+            "massEvidence": "1 tbsp × Fineli #500 14 g/tbsp",
+            "fineliRecordId": "fineli-500-2026-10-25",
+            "giRecordId": null
+          },
+          "currentRecipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "voita",
+            "note": "paistamiseen"
+          },
+          "foodName": "VOI",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/500?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.028000000000000004,
+          "review": "1 rkl → 14 g: Fineli 500 RKL vahvistaa; HH 0,028 g/annos. Koko lisätty voi sisältyy erään."
+        },
+        {
+          "index": 7,
+          "input": {
+            "name": "kuohukermaa",
+            "grams": 200,
+            "massEvidence": "2 dl × Fineli #631 100 g/dl",
+            "fineliRecordId": "fineli-631-2026-10-25",
+            "giRecordId": "dairy-category-mean-gi-35",
+            "foodKey": "dairy",
+            "preparationKey": "unflavoured-dairy",
+            "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          },
+          "currentRecipeIngredient": {
+            "amount": 2,
+            "unit": "dl",
+            "item": "kuohukermaa",
+            "note": "kastikkeeseen"
+          },
+          "foodName": "KERMA, KUOHUKERMA, RASVAA 38 %",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/631?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 1.45,
+          "review": "2 dl → 200 g: Fineli 631 vahvistaa; 1,45 g HH/annos ylittää yksittäisen pienosuuden rajan. Kastike keitetään 5–8 min ja kuumennetaan uudelleen. GI 35:n siirrolle tähän valmistukseen ei varmennettu hyväksyttävää perustetta."
+        },
+        {
+          "index": 8,
+          "input": {
+            "name": "lihalientä",
+            "grams": 100,
+            "massEvidence": "1 dl × Fineli #29 100 g/dl; diluted beef broth category proxy.",
+            "fineliRecordId": "fineli-29-2026-10-25",
+            "giRecordId": "soups-category-mean-gi-49",
+            "foodKey": "soup",
+            "preparationKey": "soup-category",
+            "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          },
+          "currentRecipeIngredient": {
+            "amount": 1,
+            "unit": "dl",
+            "item": "lihalientä"
+          },
+          "foodName": "LIHALIEMI, LAIMENNETTU",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/29?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.75,
+          "review": "1 dl → 100 g on Fineli 29:n oma mitta; 3 g/100 g → 0,750 g/annos. Tietue on yleinen LIHALIEMI, LAIMENNETTU (DISH/BOIL), ei yksilöity tuote. Resepti ei anna laimennussuhdetta, pakkausta tai liemen valmistusohjetta. Keittoryhmän GI 49 ei kelpaa liemen GI:ksi."
+        },
+        {
+          "index": 9,
+          "input": {
+            "name": "Dijon-sinappia",
+            "grams": 5,
+            "massEvidence": "1 tsp × Fineli #28 5 g/tsp",
+            "fineliRecordId": "fineli-28-2026-10-25",
+            "giRecordId": null
+          },
+          "currentRecipeIngredient": {
+            "amount": 1,
+            "unit": "tl",
+            "item": "Dijon-sinappia"
+          },
+          "foodName": "SINAPPI",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/28?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.17625,
+          "review": "Reseptissä Dijon, Fineli 28 on yleinen SINAPPI. 1 tl → 5 g ja 0,17625 g HH/annos ovat tämän proxyn lukuja; Dijon-tuotteen koostumusta ei yksilöity eikä vastaavuutta hyväksytty uudelleen."
+        },
+        {
+          "index": 10,
+          "input": {
+            "name": "mustapippuria",
+            "grams": 1,
+            "massEvidence": "Recipe-listed edible mass.",
+            "fineliRecordId": "fineli-11177-2026-10-25",
+            "giRecordId": null
+          },
+          "currentRecipeIngredient": {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "mustapippuria",
+            "note": "kastikkeeseen"
+          },
+          "foodName": "MUSTAPIPPURI",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/11177?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.095775,
+          "review": "Toinen 0,5 tl pippuria → 1 g ja 0,095775 g HH/annos. Molemmat pippurimäärät on laskettava mukaan."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "servings": 6,
+      "sourcePath": "reseptit/paaruoat/kaalilaatikko.md",
+      "initialBlocker": "Kerman GI-avain ja valmistus",
+      "decision": "BLOCKED",
+      "approvedGlycemicLoadPerServing": null,
+      "confidence": null,
+      "finalBarriers": "Kerman ja kaalin valmistusvastaavuus sekä meiramin määrä/koostumus puuttuvat.",
+      "toleranceReview": "Kerman GI:n pelkkä poistaminen: 1,1775166666666668 + 0,9666666666666667 = 2,1441833333333335 g/annos, joten kumulatiivinen toleranssi ei riitä. Lisäksi 0,1 g meiramiarvio ei ole lähdenäyttöä.",
+      "currentModelBlockers": [
+        "vhh-kaalilaatikko: kuohukermaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "fingerprints": {
+        "sourceHashes": "1277f053913b9fe0c258ba93ad39fedc64fec68cc10385f111233eeee48e7da6",
+        "calculationInputHashes": "b49dceed8b5d146107b929bbb6082e29bcea7c55fc9dacfefd7bc8455db5f776",
+        "calculationEvidenceHashes": "13e8a3256b86abac888cecb5c5d30d54eee5b22ae54b4513dc8ce7c031013f57"
+      },
+      "ingredientReview": [
+        {
+          "index": 0,
+          "input": {
+            "name": "valkokaalia",
+            "grams": 900,
+            "fineliRecordId": "fineli-320-2026-10-24",
+            "giRecordId": "vegetables-category-mean-gi-66",
+            "foodKey": "vegetable",
+            "preparationKey": "vegetable-category",
+            "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+            "massEvidence": "Reseptin punnittu 900 g."
+          },
+          "currentRecipeIngredient": {
+            "amount": 900,
+            "unit": "g",
+            "item": "valkokaalia",
+            "note": "ohuiksi suikaleiksi leikattuna"
+          },
+          "foodName": "Valkokaali, kerÃ¤kaali",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/320?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 7.5,
+          "review": "900 g raakakaalia / 6 annosta vastaa määrää; nykyisen tietueen HH 7,5 g/annos. Kaali haudutetaan liemessä 20 min ja paistetaan 175 °C:ssa 60–70 min. GI 66 on laajan kasvisryhmän keskiarvo; tätä kaalivalmistusta ei ole osoitettu vastaavaksi."
+        },
+        {
+          "index": 1,
+          "input": {
+            "name": "naudan jauhelihaa",
+            "grams": 500,
+            "fineliRecordId": "fineli-11562-2026-10-24",
+            "giRecordId": null,
+            "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+            "massEvidence": "Reseptin punnittu 500 g."
+          },
+          "currentRecipeIngredient": {
+            "amount": 500,
+            "unit": "g",
+            "item": "naudan jauhelihaa"
+          },
+          "foodName": "Jauheliha, naudan, rasvaa 17 %",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/11562?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0,
+          "review": "500 g jauhelihaa vastaa reseptiä; Fineli 17 % jauheliha on yleinen tuotevalinta, HH 0."
+        },
+        {
+          "index": 2,
+          "input": {
+            "name": "sipuli",
+            "grams": 55,
+            "fineliRecordId": "fineli-335-2026-10-24",
+            "giRecordId": null,
+            "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+            "massEvidence": "Fineli Rel20 KPL_M 55 g, reseptissä 1 kpl."
+          },
+          "currentRecipeIngredient": {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "sipuli"
+          },
+          "foodName": "Sipuli, keltasipuli",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/335?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.44,
+          "review": "1 sipuli → 55 g Fineli 335 KPL_M; 0,44 g HH/annos mukana nykyisessä pienosuussummassa."
+        },
+        {
+          "index": 3,
+          "input": {
+            "name": "kuohukermaa",
+            "grams": 200,
+            "fineliRecordId": "fineli-631-2026-10-24",
+            "giRecordId": "dairy-category-mean-gi-35",
+            "massEvidence": "Fineli Rel20 ruoka-ainekohtainen dl-massa 100 g, reseptissä 2 dl.",
+            "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+            "preparationKey": "dairy-category"
+          },
+          "currentRecipeIngredient": {
+            "amount": 2,
+            "unit": "dl",
+            "item": "kuohukermaa"
+          },
+          "foodName": "Kerma, kuohukerma, rasvaa 38 %",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/631?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.9666666666666667,
+          "review": "2 dl kermaa → 200 g, 0,9666666666666667 g HH/annos. Pitkän uunikypsennyksen vastaavuutta GI 35:een ei varmennettu. Avaimen vaihto dairy-category → unflavoured-dairy ei olisi lähdeperustelu."
+        },
+        {
+          "index": 4,
+          "input": {
+            "name": "kananmunaa",
+            "grams": 110,
+            "fineliRecordId": "fineli-858-2026-10-24",
+            "giRecordId": null,
+            "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+            "massEvidence": "Fineli Rel20 KPL_M 55 g, reseptissä 2 kpl."
+          },
+          "currentRecipeIngredient": {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "kananmunaa"
+          },
+          "foodName": "Kananmuna, kuoreton",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/858?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.055,
+          "review": "2 munaa → 110 g Fineli 858 KPL_M; 0,055 g HH/annos."
+        },
+        {
+          "index": 5,
+          "input": {
+            "name": "lihalientä",
+            "grams": 100,
+            "fineliRecordId": "fineli-29-2026-10-24",
+            "giRecordId": null,
+            "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+            "massEvidence": "Fineli Rel20 ruoka-ainekohtainen dl-massa 100 g, reseptissä 1 dl."
+          },
+          "currentRecipeIngredient": {
+            "amount": 1,
+            "unit": "dl",
+            "item": "lihalientä"
+          },
+          "foodName": "Lihaliemi, laimennettu",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/29?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.5,
+          "review": "1 dl liemi → 100 g Fineli 29, 0,5 g HH/annos. Tarkka liemen koostumus ja vahvuus jäävät avoimiksi kuten jauhelihapihveissä."
+        },
+        {
+          "index": 6,
+          "input": {
+            "name": "voita",
+            "grams": 14,
+            "fineliRecordId": "fineli-500-2026-10-24",
+            "giRecordId": null,
+            "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+            "massEvidence": "Fineli Rel20 RKL 14 g, reseptissä 1 rkl."
+          },
+          "currentRecipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "voita"
+          },
+          "foodName": "Voi",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/500?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.018666666666666668,
+          "review": "1 rkl voita → 14 g Fineli 500; 0,018666666666666668 g HH/annos."
+        },
+        {
+          "index": 7,
+          "input": {
+            "name": "suolaa",
+            "grams": 6.5,
+            "fineliRecordId": "fineli-30-2026-10-24",
+            "giRecordId": null,
+            "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+            "massEvidence": "Fineli Rel20 TL 6.5 g, reseptissä 1 tl."
+          },
+          "currentRecipeIngredient": {
+            "amount": 1,
+            "unit": "tl",
+            "item": "suolaa"
+          },
+          "foodName": "RUOKASUOLA, JODIOITU",
+          "foodSourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+          "currentAvailableCarbohydratePerServingG": 0,
+          "review": "1 tl suolaa → 6,5 g Fineli 30; HH 0."
+        },
+        {
+          "index": 8,
+          "input": {
+            "name": "mustapippuria",
+            "grams": 1,
+            "fineliRecordId": "fineli-11177-2026-10-24",
+            "giRecordId": null,
+            "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
+            "massEvidence": "Fineli Rel20 TL 2 g, reseptissä 0.5 tl."
+          },
+          "currentRecipeIngredient": {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "mustapippuria"
+          },
+          "foodName": "MUSTAPIPPURI",
+          "foodSourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+          "currentAvailableCarbohydratePerServingG": 0.06385,
+          "review": "0,5 tl pippuria → 1 g Fineli 11177; 0,06385 g HH/annos."
+        },
+        {
+          "index": 9,
+          "input": {
+            "name": "kuivattua meiramia",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Trace seasoning or unspecified salt has no matching Fineli measure; conservative standard assumption is used only below 1 g available carbohydrate per serving.",
+            "estimatedAvailableCarbohydratePerServingG": 0.1,
+            "negligibleAssumption": "Conservative estimate 0.1 g available carbohydrate per serving; omitted below 1 g.",
+            "massEvidence": "No exact Fineli Rel20 unit mass; trace estimate only."
+          },
+          "currentRecipeIngredient": {
+            "amount": 1,
+            "unit": "tl",
+            "item": "kuivattua meiramia"
+          },
+          "foodName": null,
+          "foodSourceUrl": null,
+          "currentAvailableCarbohydratePerServingG": 0.1,
+          "review": "1 tl kuivattua meiramia: syötteen massa ja koostumustietue puuttuvat; 0,1 g HH/annos on lähteetön arvio. Tuntematon määrä ei täytä tämän erän dokumentoidun pienosuuden vaatimusta."
+        }
+      ]
+    },
+    {
+      "recipeId": "som-tam-vhh-kurkkuna",
+      "servings": 4,
+      "sourcePath": "reseptit/alkuruoat/som-tam-vhh-kurkkuna.md",
+      "initialBlocker": "Keitettyjen vihreiden papujen GI",
+      "decision": "BLOCKED",
+      "approvedGlycemicLoadPerServing": null,
+      "confidence": null,
+      "finalBarriers": "Papujen GI ja raaka→keitetty/valutettu massa ratkaisematta; myös kurkun lähde-/syötävä massa ja tomaatti-/pähkinäanalogia avoimia.",
+      "toleranceReview": "Papujen nykyinen 1,2645 g/annos ylittää 1 g. Nykyinen poisjättö 0,36675; pähkinänkin poisjättö nostaisi sen 1,30425:een, mutta pavut ja kurkku estäisivät edelleen.",
+      "currentModelBlockers": [
+        "som-tam-vhh-kurkkuna: vihreitä papuja: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "fingerprints": {
+        "sourceHashes": "e91c561b032ef4f5eacbafbeae0b23f04279ac3b5d7c54cb72143adefd7af8f1",
+        "calculationInputHashes": "7e0c4310ca73c93a83645f7fb729dbe3dc8a6afbab9841515ce611b3cdac3892",
+        "calculationEvidenceHashes": "63912490f53dd7125606a4fb5623ec99b24d0172cd42dfe791f79e07a9d4395c"
+      },
+      "ingredientReview": [
+        {
+          "index": 0,
+          "input": {
+            "name": "kurkkua",
+            "grams": 500,
+            "fineliRecordId": "fineli-346-2026-10-24",
+            "giRecordId": "vegetables-category-mean-gi-66",
+            "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+            "foodKey": "vegetable",
+            "preparationKey": "vegetable-category",
+            "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+          },
+          "currentRecipeIngredient": {
+            "amount": 500,
+            "unit": "g",
+            "item": "kurkkua",
+            "note": "siemenet poistettuna ja suikaloituna"
+          },
+          "foodName": "Kurkku",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/346",
+          "currentAvailableCarbohydratePerServingG": 1.75,
+          "review": "500 g kurkkua vastaa ilmoitettua määrää, mutta siemenet poistetaan eikä punnituksen vaihetta nimetä. Kokonaisen kurkun koostumuksen ja syötävän massan vastaavuus on avoin. GI 66 ei ole kurkkukohtainen mittaus; nykyinen 1,75 g/annos ei ole pienosuus."
+        },
+        {
+          "index": 1,
+          "input": {
+            "name": "kirsikkatomaatteja",
+            "grams": 150,
+            "fineliRecordId": "fineli-352-2026-10-24",
+            "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+            "massEvidence": "Recipe-listed 150 g; tomato composition proxy",
+            "foodKey": "tomato",
+            "preparationKey": "whole-raw",
+            "giMatchEvidence": "Published Whole raw tomato category/analogue; match limitations disclosed centrally."
+          },
+          "currentRecipeIngredient": {
+            "amount": 150,
+            "unit": "g",
+            "item": "kirsikkatomaatteja",
+            "note": "puolikkaina"
+          },
+          "foodName": "Tomaatti",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/352",
+          "currentAvailableCarbohydratePerServingG": 1.3125,
+          "review": "150 g kirsikkatomaatteja; tavallinen tomaatti on koostumusproxy, nykyinen HH 1,3125 g/annos. Väitetty raw tomato GI 22 -rivi jäi alkuperäisestä lähdetaulukosta varmentamatta; pelkkä nykyinen avainosuma ei hyväksy sitä."
+        },
+        {
+          "index": 2,
+          "input": {
+            "name": "vihreitä papuja",
+            "grams": 100,
+            "fineliRecordId": "fineli-29022-2026-10-24",
+            "giRecordId": "vegetables-category-mean-gi-66",
+            "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+            "foodKey": "vegetables",
+            "preparationKey": "cooked",
+            "giMatchEvidence": "Broad vegetable category mean; individual green bean value and preparation not measured."
+          },
+          "currentRecipeIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "vihreitä papuja",
+            "note": "ohuiksi paloiksi leikattuina"
+          },
+          "foodName": "PAPU, VIHREÄ PAPU, KEITETTY",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/29022?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 1.2645,
+          "review": "Reseptissä 100 g vihreitä papuja ennen keittämisohjetta; syöte käyttää Fineli 29022:n keitetyn pavun 100 g:aa ilman saanto-/valutusmuunnosta. 1,2645 g/annos on tämän syötteen tulos, ei varmennettu kypsä annosmassa. GI 66 ei ole keitettyjen vihreiden papujen mittaus."
+        },
+        {
+          "index": 3,
+          "input": {
+            "name": "maapähkinöitä",
+            "grams": 30,
+            "fineliRecordId": "fineli-378-2026-10-24",
+            "giRecordId": "nuts-category-mean-gi-22",
+            "massEvidence": "Recipe-listed mass; structured Finnish recipe",
+            "foodKey": "peanut",
+            "preparationKey": "nuts-category-mean",
+            "giMatchEvidence": "Published Nuts, category mean category/analogue; match limitations disclosed centrally."
+          },
+          "currentRecipeIngredient": {
+            "amount": 30,
+            "unit": "g",
+            "item": "suolattomia maapähkinöitä",
+            "note": "paahdettuina"
+          },
+          "foodName": "PÄHKINÄ, MAAPÄHKINÄ",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/378?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.9375,
+          "review": "30 g suolattomia paahdettuja maapähkinöitä; koostumusproxy on yleinen maapähkinä. GI 22:n kolmikko sisältää cashewin ja sekoituksia, ei juuri tätä tuotetta. HH 0,9375 g/annos on alle 1, mutta lähdevastaavuus ja koko summaarvio ovat silti tarpeen."
+        },
+        {
+          "index": 4,
+          "input": {
+            "name": "valkosipulia",
+            "grams": 3.5,
+            "fineliRecordId": "afcd-F004193-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+          },
+          "currentRecipeIngredient": {
+            "amount": 3.5,
+            "unit": "g",
+            "item": "valkosipulia",
+            "note": "Finelin valkosipulinkynnen massa"
+          },
+          "foodName": "Garlic, peeled, fresh, raw",
+          "foodSourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "currentAvailableCarbohydratePerServingG": 0.08925,
+          "review": "Valkosipuli 3,5 g on reseptissä täsmällinen; AFCD F004193 kuorittu raaka valkosipuli, nykyinen HH 0,08925 g/annos."
+        },
+        {
+          "index": 5,
+          "input": {
+            "name": "punaista chiliä",
+            "grams": 5,
+            "fineliRecordId": "afcd-F002901-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+          },
+          "currentRecipeIngredient": {
+            "amount": 5,
+            "unit": "g",
+            "item": "punainen chili",
+            "note": "tai maun mukaan"
+          },
+          "foodName": "Chilli (chili), red, raw",
+          "foodSourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "currentAvailableCarbohydratePerServingG": 0.06,
+          "review": "Chili 5 g on laskentavariantti; tai maun mukaan voi kasvattaa määrää. AFCD raaka punainen chili, nykyinen HH 0,06 g/annos koskee vain 5 g varianttia."
+        },
+        {
+          "index": 6,
+          "input": {
+            "name": "limettimehua",
+            "grams": 30,
+            "fineliRecordId": "afcd-F004729-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+          },
+          "currentRecipeIngredient": {
+            "amount": 30,
+            "unit": "g",
+            "item": "limettimehua"
+          },
+          "foodName": "Juice, lime",
+          "foodSourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "currentAvailableCarbohydratePerServingG": 0.09,
+          "review": "Limettimehu 30 g on massana annettu; AFCD juice-lime vastaa nimettyä muotoa, nykyinen HH 0,09 g/annos."
+        },
+        {
+          "index": 7,
+          "input": {
+            "name": "Squid Brand -kalakastiketta",
+            "grams": 15,
+            "fineliRecordId": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+          },
+          "currentRecipeIngredient": {
+            "amount": 15,
+            "unit": "g",
+            "item": "Squid Brand -kalakastiketta"
+          },
+          "foodName": "Squid Brand Fish Sauce, 725 ml",
+          "foodSourceUrl": "https://world.openfoodfacts.org/product/13692210/fish-sauce-squid-brand",
+          "currentAvailableCarbohydratePerServingG": 0.1275,
+          "review": "Squid Brand 15 g on yksilöity tuote ja massa. Nykyinen tuotetietue antaa 0,1275 g HH/annos; uusi pakkaus-/aluevariantin lähdevarmennus ei yksin ratkaisisi papu- ja kurkkuesteitä."
+        },
+        {
+          "index": 8,
+          "input": {
+            "name": "Foodin-erytritolia",
+            "grams": 4,
+            "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed mass; structured Finnish recipe"
+          },
+          "currentRecipeIngredient": {
+            "amount": 4,
+            "unit": "g",
+            "item": "Foodin-erytritolia"
+          },
+          "foodName": "Foodin Erytritoli, Luomu 200 g",
+          "foodSourceUrl": "https://foodin.fi/tuote/erytritoli-luomu-200g-2/",
+          "currentAvailableCarbohydratePerServingG": 0,
+          "review": "Foodin erytritoli 4 g: valmistajan tuotesivu vahvistaa 100 g hiilihydraattia ja 100 g polyoleja / 100 g sekä 0 g sokeria; dokumentoitu 0 imeytyvää HH. Ei korvata puuttuvaa GI:tä numerolla 0."
+        }
+      ]
+    },
+    {
+      "recipeId": "siemengranola-jogurtilla",
+      "servings": 4,
+      "sourcePath": "reseptit/aamupalat/siemengranola-jogurtilla.md",
+      "initialBlocker": "Mantelin GI ja kumulatiivinen poisjättö",
+      "decision": "BLOCKED",
+      "approvedGlycemicLoadPerServing": null,
+      "confidence": null,
+      "finalBarriers": "Paahdetun mantelilastun GI ei varmistunut; jogurtin ja vadelman GI-analogiat sekä kanelin tl-massa jäävät avoimiksi.",
+      "toleranceReview": "Nykyinen poisjättö 2,06375 g/annos. Vain hyväksyttävä manteliosuus poistaisi siitä 0,66 (jäljelle 1,40375). Sellaista GI-sidosta ei hyväksytty; rajoja tai määriä ei muutettu.",
+      "currentModelBlockers": [
+        "siemengranola-jogurtilla: cumulative omitted available carbohydrate is 2.064 g/serving, at or above the 2 g editorial tolerance."
+      ],
+      "fingerprints": {
+        "sourceHashes": "f56c1cc8aa23cfe2d89be95281bb9876b41fe6840a007326f9fb0c4f3c25e6f8",
+        "calculationInputHashes": "6dae3fcb994d0d7f7750b800bcbe3e4a47c1a1889c53f1aaf8d26ab346a18ab8",
+        "calculationEvidenceHashes": "34e532142903f9f00ad69c958f3fb26e78c0fca8f5deebd9ecb8293367e5fa07"
+      },
+      "ingredientReview": [
+        {
+          "index": 0,
+          "input": {
+            "name": "kurpitsansiemeniä",
+            "grams": 80,
+            "fineliRecordId": "afcd-F008212-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F008212; source state: hulled pumpkin seeds."
+          },
+          "currentRecipeIngredient": {
+            "amount": 80,
+            "unit": "g",
+            "item": "kurpitsansiemeniä"
+          },
+          "foodName": "Seed, pumpkin, hulled & dried",
+          "foodSourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "currentAvailableCarbohydratePerServingG": 0.42,
+          "review": "Kurpitsansiemenet 80 g; AFCD kuoritut kuivat siemenet, HH 0,42 g/annos. Reseptimäärä on ennen paahtoa; kuivan lähtöaineen koostumus on erotettava paahdetun tuotteen 100 g -arvoista."
+        },
+        {
+          "index": 1,
+          "input": {
+            "name": "auringonkukansiemeniä",
+            "grams": 60,
+            "fineliRecordId": "afcd-F008215-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F008215; source state: dried sunflower seeds."
+          },
+          "currentRecipeIngredient": {
+            "amount": 60,
+            "unit": "g",
+            "item": "auringonkukansiemeniä"
+          },
+          "foodName": "Seed, sunflower",
+          "foodSourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "currentAvailableCarbohydratePerServingG": 0.465,
+          "review": "Auringonkukansiemenet 60 g; AFCD kuivat siemenet, HH 0,465 g/annos, mukana poisjätössä."
+        },
+        {
+          "index": 2,
+          "input": {
+            "name": "pellavansiemenrouhetta",
+            "grams": 40,
+            "fineliRecordId": "afcd-F008210-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F008210; source state: ground linseed."
+          },
+          "currentRecipeIngredient": {
+            "amount": 40,
+            "unit": "g",
+            "item": "pellavansiemenrouhetta"
+          },
+          "foodName": "Seed, linseed or flaxseed",
+          "foodSourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "currentAvailableCarbohydratePerServingG": 0.28,
+          "review": "Pellavansiemenrouhe 40 g; AFCD siementietueen ja rouhitun muodon vastaavuus kirjattu proxyksi, HH 0,28 g/annos. Reseptin paahto on tarkistettava koko ketjussa."
+        },
+        {
+          "index": 3,
+          "input": {
+            "name": "mantelilastuja",
+            "grams": 40,
+            "fineliRecordId": "fineli-379-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to fineli-release-20 record 379; source state: almonds, sliced; whole almond composition proxy."
+          },
+          "currentRecipeIngredient": {
+            "amount": 40,
+            "unit": "g",
+            "item": "mantelilastuja"
+          },
+          "foodName": "Manteli",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/379?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.66,
+          "review": "Mantelilastut 40 g; Fineli 379 on raaka kokonainen manteli, HH 0,660 g/annos. GI 22 ei yksilöi mantelia; 160 °C / 18–22 min paahdetuille lastuille ei löytynyt hyväksyttävää mittaus- tai analogiaperustetta. Mantelia sisältävän aterian tutkimusta ei siirretä mantelille."
+        },
+        {
+          "index": 4,
+          "input": {
+            "name": "voita",
+            "grams": 30,
+            "fineliRecordId": "fineli-500-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+          },
+          "currentRecipeIngredient": {
+            "amount": 30,
+            "unit": "g",
+            "item": "voita"
+          },
+          "foodName": "Voi",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/500?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 0.06,
+          "review": "Voi 30 g on reseptissä punnittu; Fineli 500, HH 0,060 g/annos."
+        },
+        {
+          "index": 5,
+          "input": {
+            "name": "kanelia",
+            "grams": 2.6,
+            "fineliRecordId": "afcd-F002963-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Ingredient-specific teaspoon mass estimate for kanelia."
+          },
+          "currentRecipeIngredient": {
+            "amount": 1,
+            "unit": "tl",
+            "item": "kanelia"
+          },
+          "foodName": "Cinnamon, dried, ground",
+          "foodSourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "currentAvailableCarbohydratePerServingG": 0.17875,
+          "review": "Kaneli 1 tl → 2,6 g on syötteessä estimate eikä yksilöity mittalähde. AFCD-kanelin 27,5 g HH/100 g tuottaa 0,17875 g/annos, mutta massan lähde on varmennettava; määrää ei pienennetä toleranssin saavuttamiseksi."
+        },
+        {
+          "index": 6,
+          "input": {
+            "name": "maustamatonta kreikkalaista jogurttia",
+            "grams": 400,
+            "fineliRecordId": "fineli-32201-2026-10-24",
+            "giRecordId": "dairy-category-mean-gi-35",
+            "massEvidence": "Ingredient mapped to fineli-release-20 record 32201; source state: plain Greek yogurt, 10% fat.",
+            "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally.",
+            "foodKey": "dairy",
+            "preparationKey": "unflavoured-dairy"
+          },
+          "currentRecipeIngredient": {
+            "amount": 400,
+            "unit": "g",
+            "item": "maustamatonta kreikkalaista jogurttia"
+          },
+          "foodName": "Jogurtti, turkkilainen/kreikkalainen, rasvaa 10 %",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/32201?c=2034&c2=2168",
+          "currentAvailableCarbohydratePerServingG": 4.3,
+          "review": "Kreikkalainen maustamaton jogurtti 400 g; Fineli 32201 on 10 % jogurtti, resepti ei määritä rasvaprosenttia. HH 4,3 g/annos; GI 35 on koko maitotuoteryhmän keskiarvo, ei tämä jogurtti. Jogurtti tarjoillaan kylmänä, ei paahdeta."
+        },
+        {
+          "index": 7,
+          "input": {
+            "name": "vadelmia",
+            "grams": 100,
+            "fineliRecordId": "afcd-F007619-2026-10-24",
+            "giRecordId": "fruit-category-mean-gi-51",
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F007619; source state: raw raspberries.",
+            "giMatchEvidence": "Published GI analogue/category record fruit-category-mean-gi-51; source and limitations are listed centrally.",
+            "foodKey": "fruit-category-mean",
+            "preparationKey": "category-mean"
+          },
+          "currentRecipeIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "vadelmia"
+          },
+          "foodName": "Raspberry, raw",
+          "foodSourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "currentAvailableCarbohydratePerServingG": 1.725,
+          "review": "Vadelmat 100 g tarjoillaan raakana, AFCD raw raspberry; HH 1,725 g/annos. Hedelmien laaja GI 51 ei itsessään osoita vadelmien vastaavuutta, eikä osuus ole pienosuus."
+        }
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "servings": 2,
+      "sourcePath": "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md",
+      "initialBlocker": "Hapanjuurileivän koostumus/GI",
+      "decision": "BLOCKED",
+      "approvedGlycemicLoadPerServing": null,
+      "confidence": null,
+      "finalBarriers": "Leipä yksilöimättä; paahtovastaavuus puuttuu. Lisäksi tomaatti 100 g vs syötteen 125 g ja paistetun halloumin GI-analogia ratkaisematta.",
+      "toleranceReview": "Leivän tuntematon hiilihydraatti ei ole pienosuus. Nykyinen poisjättösumma 0 ei kerro leivän hiilihydraattimäärää. Määräkorjausta ei tehdä irrallisena hyväksyntänä.",
+      "currentModelBlockers": [
+        "valimerellinen-halloumi-tomaattileipa: hapanjuurileipä: No source-matched composition and preparation was resolved for “hapanjuurileipä”; it is not treated as zero."
+      ],
+      "fingerprints": {
+        "sourceHashes": "55783f120d6cb8827f30589c9142ac527372353dbac580399a953a7a78f5fc04",
+        "calculationInputHashes": "b3d6e2b345afd55a1ddaa375a95fe91fdb94fa4b3538b7e6faf13ce75befa5a9",
+        "calculationEvidenceHashes": "108a94f98c119f56aed5279072705a8e9a2bae13a81f8d00337ac4156be7d922"
+      },
+      "ingredientReview": [
+        {
+          "index": 0,
+          "input": {
+            "name": "halloumi",
+            "grams": 150,
+            "fineliRecordId": "fineli-33465-release-20",
+            "giRecordId": "dairy-category-mean-gi-35",
+            "massEvidence": "Recipe-listed 150 g, mapped to JUUSTO, HALLOUMIJUUSTO, VUOHENMAITO, RASVAA 22 % (halloumi cheese).",
+            "foodKey": "dairy",
+            "preparationKey": "unflavoured-dairy",
+            "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          },
+          "currentRecipeIngredient": {
+            "amount": 150,
+            "unit": "g",
+            "item": "halloumi"
+          },
+          "foodName": "JUUSTO, HALLOUMIJUUSTO, VUOHENMAITO, RASVAA 22 %",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/33465",
+          "currentAvailableCarbohydratePerServingG": 1.875,
+          "review": "Halloumi 150 g; Fineli 33465 kuvaa vuohenmaitojuustoa (22 % rasvaa), mutta resepti ei yksilöi tuotetta. Paistettu halloumi ei saa hyväksyntää maitotuoteryhmän GI 35:stä pelkällä perheavaimella. Nykyinen HH 1,875 g/annos on merkittävä."
+        },
+        {
+          "index": 1,
+          "input": {
+            "name": "tomaatti",
+            "grams": 125,
+            "fineliRecordId": "fineli-352-release-20",
+            "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+            "massEvidence": "Recipe-listed 125 g, mapped to TOMAATTI (raw tomato).",
+            "foodKey": "tomato",
+            "preparationKey": "whole-raw",
+            "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+          },
+          "currentRecipeIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "tomaattia"
+          },
+          "foodName": "TOMAATTI",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/352",
+          "currentAvailableCarbohydratePerServingG": 2.15625,
+          "review": "Reseptissä tomaatti 100 g, GK-syötteessä 125 g ja virheellinen Recipe-listed 125 g -perustelu. Määräero on korjattava ennen mahdollista hyväksyntää. Nykyinen 2,15625 g HH/annos ei vastaa reseptin määrää. GI 22:n primaaririviä ei varmennettu."
+        },
+        {
+          "index": 2,
+          "input": {
+            "name": "oliivi",
+            "grams": 25,
+            "fineliRecordId": "fineli-34972-release-20",
+            "giRecordId": null,
+            "massEvidence": "Current recipe lists 25 g green olives; Fineli pitted green olive record."
+          },
+          "currentRecipeIngredient": {
+            "amount": 25,
+            "unit": "g",
+            "item": "vihreitä oliiveja"
+          },
+          "foodName": "OLIIVI, KESKIARVO, KIVETÖN, SUOLALIEMESSÄ, VIHREÄ",
+          "foodSourceUrl": "https://fineli.fi/fineli/api/v1/foods/34972",
+          "currentAvailableCarbohydratePerServingG": 0,
+          "review": "25 g vihreitä oliiveja: Fineli kivettömän suolaliemioliivin tietue vastaa luokkaa; dokumentoitu HH 0. Syötävä kivettömän massan oletus kirjataan, ei GI 0 -korviketta."
+        },
+        {
+          "index": 3,
+          "input": {
+            "name": "hapanjuurileipä",
+            "grams": 100,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "No source-matched composition and preparation was resolved for “hapanjuurileipä”; it is not treated as zero.",
+            "massEvidence": "Recipe-listed 100 g hapanjuurileipä."
+          },
+          "currentRecipeIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "hapanjuurileipä"
+          },
+          "foodName": null,
+          "foodSourceUrl": null,
+          "currentAvailableCarbohydratePerServingG": null,
+          "review": "Hapanjuurileipä 100 g / 2 annosta: tuote, viljaseos, hapatus, kosteus ja ravintokoostumus yksilöimättä. Fineli 31842 on Fazerin vehnämaalaisleipä, ei todiste tämän leivän koostumuksesta. Paahto huomioitava; puuttuvaa merkittävää HH-osuutta ei ohiteta."
+        },
+        {
+          "index": 4,
+          "input": {
+            "name": "neutraalia paistoöljyä",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+            "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+          },
+          "currentRecipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "neutraalia paistoöljyä"
+          },
+          "foodName": null,
+          "foodSourceUrl": null,
+          "currentAvailableCarbohydratePerServingG": 0,
+          "review": "1 rkl neutraalia puhdasta paistoöljyä: tarkka massa puuttuu, mutta puhtaan öljyn dokumentoitu HH 0 tekee massasta GK:n kannalta merkityksettömän. Muiden ravintoarvojen massa on eri tarkistus."
+        },
+        {
+          "index": 5,
+          "input": {
+            "name": "suolaa maun mukaan",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Plain salt contributes no available carbohydrate.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+            "massEvidence": "Recipe-listed salt; not weighed."
+          },
+          "currentRecipeIngredient": {
+            "amount": null,
+            "unit": "",
+            "item": "suolaa maun mukaan"
+          },
+          "foodName": null,
+          "foodSourceUrl": null,
+          "currentAvailableCarbohydratePerServingG": 0,
+          "review": "Suola maun mukaan: massa avoin, mutta puhtaan suolan HH 0; tämä ei ole tuntemattoman hiilihydraatin korvaamista nollalla."
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "allResultsIdenticalToBaseline": 326,
+    "previousCalculatedPreserved": 137,
+    "historicalBaselineGitBlobSHA256": {
+      "docs/nutrition/glycemic-coverage-batch-2a-baseline.json": "4cc47815e4880d48adc4660c339b6ce8e0d04dd658bea5c67faf30e9376f12df",
+      "docs/nutrition/glycemic-coverage-batch-2b1-baseline.json": "6c28a8bd555235011e87699005c92bfd0948f56edb35e93eb771325cdebdc53c",
+      "docs/nutrition/glycemic-coverage-batch-2b2-baseline.json": "159473ea1d27703f6f5060e642ca9c5333ff62b2f3a8487dca2a0d4a689054db",
+      "docs/nutrition/glycemic-coverage-batch-2b3-baseline.json": "9fbb22272f81b44081bbfa6e1adadc0352fd96b673b6733e7d13b7139d83da3d",
+      "docs/nutrition/glycemic-coverage-batch-2b4-baseline.json": "b20328c9d57434edc1f3b3f864420d4c3b16985e9defabdecbb6affc4ac426c6",
+      "docs/nutrition/glycemic-coverage-batch-2b5-baseline.json": "3cd17aa610197a09bcf0302c1141f9acec1e2d3ee5a8c10b4d7fa5a31928c53a",
+      "docs/nutrition/glycemic-coverage-batch-2b6a-baseline.json": "dc565ff8246b9a62ea9ceeecf7dea8256b40d735ff3ee2025e7c3c40431ca321",
+      "docs/nutrition/glycemic-coverage-batch-2b6b-baseline.json": "8d7472ccabe5bbebc6304ba2b945e64d563de38c60e8ee6bf86e3f9bc1f76b8b",
+      "docs/nutrition/glycemic-coverage-batch-2b6c-baseline.json": "e4c44dcc49d4f064a94d8ced9d1751a3413f7797966fa360cb7eb49d43015190",
+      "docs/nutrition/glycemic-coverage-batch-2b6d-baseline.json": "f2ee976235342f7f5de8fd0a0961f39aa94207bae20cd750e132c4b8d2b568c5"
+    },
+    "newBaselineSHA256": "14d12bfeb68100a7e339bd153b14b1a99d30e76cc859410188aeccc95352ca2c",
+    "manifestSHA256": {
+      "docs/nutrition/glycemic-coverage-batch-2b6e-baseline.json": "14d12bfeb68100a7e339bd153b14b1a99d30e76cc859410188aeccc95352ca2c",
+      "docs/nutrition/food-records.json": "824e79a8abd9402a3c48ee6e477140503860f67a01c3160c24a0a3521963eeaa",
+      "docs/nutrition/glycemic-index-records.json": "991a90ea14de6087eb892b87eab1f7efbbae29b3c2079e4fac814aee6025cb7a",
+      "docs/nutrition/glycemic-load-pilot-input.json": "5452c9bf4cd217f7da42b140fa20a580689a29f4360dbec076f7d84c9f41c42f",
+      "docs/nutrition/glycemic-load-recipe-bindings.json": "58e8533d2dc4f7bc02a0ed2ec98d8f7bd13f53797831b357d0cdae2e4ff28dd3",
+      "docs/nutrition/fineli-release-20-reference.json": "1205ae1fc65cbc3f56d48823ed4fcd838eb7f64b77467da100fe789dab460bc1",
+      "docs/nutrition/afcd-release-3-reference.json": "cfb83649b52a1f599b918c6da01721603d7794f4241aa165ffde5a58b37f2afa",
+      "tmp/nutrition/glycemic-load-pilot.json": "831b96ce5e4320b7e19b2ac5680dba32f946fefb24d2f8564e6babe570686e39",
+      "tmp/nutrition/audit.json": "68b72d7d7e5ca27e589ec7cb06090c6a77d82fd41d9eaf7b98d5be9f5f950a43"
+    },
+    "selectedRecipeFingerprintMismatches": [],
+    "persistentRecipeStructureMismatches": 38,
+    "newFingerprintMismatches": [
+      0,
+      0,
+      0
+    ],
+    "generalAndBatchInventoriesMatch": true
+  },
+  "tests": {
+    "contentSync": "PASS",
+    "nutritionStrict": "PASS",
+    "glycemicAudit": "PASS",
+    "coverageGeneral": "PASS",
+    "coverageBatch": "PASS",
+    "glycemicTests": 66,
+    "unitTests": 136,
+    "selectorTests": 12,
+    "buildRoutes": 691,
+    "staticTests": 24,
+    "newCalculationRegressionTests": "Not added: no calculation changes or new approved value. Existing regressions and full baseline equality passed."
+  },
+  "nextBatchCandidates": [
+    {
+      "recipeId": "jerk-kana",
+      "gate": "Kevätsipulin kappalemassa ja rakenne; tarkista koko muu GI-ketju ennen toteutusta."
+    },
+    {
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "gate": "Valkosipulijauheen oma koostumus/tl-massa ja rakenne; älä käytä tuoreen valkosipulin muunnosta."
+    },
+    {
+      "recipeId": "harira",
+      "gate": "Keitetyn tomaattimurskan GI sekä koko palkokasvi-/viljaketju; mahdollinen yhteinen lähdetyö."
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "gate": "Kypsennetyn tomaattimurskan GI ja pastan tarkka keittovastaavuus."
+    },
+    {
+      "recipeId": "caponata",
+      "gate": "Kypsennetyn tomaattimurskan GI sekä muiden kypsien kasvisten analogiat."
+    }
+  ],
+  "nextBatchCaveat": "Suunnitteluehdotus vain AJO 0.6 -inventaarion perusteella. Ensimmäiset kaksi poistavat lähteistettävän massa-/sidontaesteen; seuraavat kolme jakavat tomaattitutkimuksen. Yhtään niistä ei hyväksytty tai toteutettu tässä. Ei nettonousulupausta."
+}

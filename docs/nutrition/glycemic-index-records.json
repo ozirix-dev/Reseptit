@@ -406,23 +406,25 @@
       "id": "onion-literature-analogue-gi-15",
       "gi": 15,
       "foodKey": "onion",
-      "preparationKey": "cooked-in-recipe",
+      "preparationKey": "unspecified-secondary-table",
       "food": "Onion, generic vegetable table entry",
-      "preparation": "Cooking in recipe; broad literature proxy",
+      "preparation": "Preparation not reported; neither raw nor cooked onion was verified in a primary GI protocol.",
       "qualityTier": "SUPPLEMENTARY",
       "referenceScale": "GLUCOSE_100",
       "matchKind": "ANALOG",
       "confidence": "LOW",
       "source": {
         "title": "Mens sana in corpore sano: Does the Glycemic Index Have a Role to Play?",
-        "url": "https://doi.org/10.3390/nu12103041",
-        "table": "Table 2, onion entry (GI 15; secondary compilation)",
+        "url": "https://doi.org/10.3390/nu12102989",
+        "table": "Table 1, generic onion entry (GI 15); secondary illustration, not a primary onion experiment",
         "year": 2020,
         "published": true,
         "iso26642Confirmed": false,
-        "qualityEvidence": "Peer-reviewed narrative review reproduces a generic onion GI value but says the value was obtained from online sources; no primary protocol or preparation details are supplied. Used only as a low-confidence proxy for cooked onion."
+        "qualityEvidence": "Carneiro & Leloup (2020), Table 1, illustrates onion GI 15 but provides no onion-specific human protocol or preparation. Anderson, Soeandy & Smith (2013), DOI 10.3945/an.112.003509, Table 3 footnote 2, explicitly identifies onion 10–15 as online-source values without peer-reviewed GI measurements or preparation methods. The table uses a glucose reference, but the original onion experiment and scale cannot be verified. Retained as REFERENCE_ONLY; not an approved LOW analogue.",
+        "authors": "Lionel Carneiro; Corinne Leloup"
       },
-      "note": "Secondary-table value with limited traceability; confidence low."
+      "note": "Historical secondary-table number only. No traceable preparation-matched human GI measurement; LOW confidence cannot substitute for missing primary provenance. Not approved for onion, garlic, spring onion or shallot calculations.",
+      "calculationUse": "REFERENCE_ONLY"
     },
     {
       "id": "dairy-category-mean-gi-35",

@@ -475,3 +475,10 @@ Tämän ohjeen vanhat kattavuusluvut ovat historiallisia; varmista nykytilanne t
 [Lähdetarkistus, neljä vaikutusreseptiä ja regressiot](glycemic-coconut-source-review.md).
 Kattavuus 138 → 137: puurotutkimuksen GI 31 ei tue kookosmaidon ainesosasidontaa.
 [Koneluettava ennen/jälkeen-näyttö](glycemic-coconut-source-review.json).
+
+## AJO 1.5: sipulin GI-lähteen korjausehdotus
+
+[Sipulin lähde- ja vaikutuskatselmointi](glycemic-onion-source-review.md) kattaa 48 reseptiä ja 54 sidontaa.
+GI 15 säilytetään REFERENCE_ONLY-viitteenä; ehdotettu kattavuus on 118/326.
+[Koneluettava vertailu](glycemic-onion-source-review.json) sisältää kaikkien 326 reseptin ennen/jälkeen-tulokset.
+[2B6E:n 44 ainesrivin tutkimus](glycemic-coverage-batch-2b6e-review.md) säilyy alkuperäisenä historiallisena tallenteena.
