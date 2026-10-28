@@ -459,3 +459,11 @@ Koneellinen, 325 rivin ennen/jälkeen-auditointi on
 `glycemic-load-before-after-2026-10-25.json`; numeerinen yhteenveto on
 `glycemic-load-quality-audit-2026-10-25.json` ja yksityiskohtainen katselmus on
 `glycemic-load-quality-audit-2026-10-25.md`.
+
+## Kattavuuskampanjan jatkaminen
+
+Ajantasainen suunnittelupohja: [AJO 0 ja seuraava erä 2B6E](glycemic-coverage-run-0-plan.md).
+[Kampanjan toimeksianto](glycemic-coverage-campaign-master-plan.md) ja
+[188 keskeneräisen reseptin inventaario](glycemic-coverage-run-0-inventory.json)
+säilyttävät työjonon eri istuntojen välillä. AJO 0 ei muuta julkaistuja GK-arvoja.
+Tämän ohjeen vanhat kattavuusluvut ovat historiallisia; varmista nykytilanne tuoreella auditoinnilla.
