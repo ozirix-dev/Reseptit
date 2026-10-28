@@ -343,8 +343,12 @@ test("current 2A and 2B6D inventories share one generated state while keeping hi
   const general = JSON.parse(generalText) as CurrentInventory;
   const batch = JSON.parse(batchText) as CurrentInventory;
   assert.equal(general.sourceCommit, batch.sourceCommit, "both reports derive from the same audited source revision");
-  assert.deepEqual([general.currentSummary.recipeCount, general.currentSummary.calculated, general.currentSummary.incomplete, general.currentSummary.giRecordCount], [326, 138, 188, 45]);
-  assert.deepEqual([batch.currentSummary.recipeCount, batch.currentSummary.calculated, batch.currentSummary.incomplete, batch.currentSummary.giRecordCount], [326, 138, 188, 45]);
+  assert.equal(general.currentSummary.recipeCount, general.recipes.length);
+  assert.equal(general.currentSummary.calculated, general.recipes.filter((row) => row.status === "CALCULATED").length);
+  assert.equal(general.currentSummary.incomplete, general.recipes.filter((row) => row.status !== "CALCULATED").length);
+  assert.equal(batch.currentSummary.recipeCount, batch.recipes.length);
+  assert.equal(batch.currentSummary.calculated, batch.recipes.filter((row) => row.status === "CALCULATED").length);
+  assert.equal(batch.currentSummary.incomplete, batch.recipes.filter((row) => row.status !== "CALCULATED").length);
   assert.deepEqual(general.currentSummary.giTierCounts, batch.currentSummary.giTierCounts);
   assert.equal(general.previousApprovedBaseline.sourceCommit, "5e9cdeb830f468ecf099e9c286f9344afe3b6b71", "the general view keeps the immutable historical 2A baseline");
   assert.equal(batch.previousApprovedBaseline.sourceCommit, "f2ba9e849e677f9e223103022e309a09b9992f62", "the batch view keeps the immutable 2B6D baseline");
@@ -361,7 +365,7 @@ test("current 2A and 2B6D inventories share one generated state while keeping hi
   assert.match(report, /erän 2A lähtösnapshot on historiallinen vertailupohja/i);
 });
 
-test("batch 2B6D rejects the unsupported semolina GI and preserves the previous 136 GK values", async () => {
+test("current inventory preserves historical GK values except the reviewed coconut-source withdrawal", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const baseline = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b6d-baseline.json"), "utf8")) as {
     sourceCommit: string; recipeCount: number; calculated: number; incomplete: number; giRecordCount: number;
@@ -372,7 +376,13 @@ test("batch 2B6D rejects the unsupported semolina GI and preserves the previous 
     recipes: Array<{ recipeId: string; status: string; glycemicLoadPerServing: number | null; previousApprovedGlycemicLoadPerServing: number | null; newlyCalculated: boolean; blockingCategories: string[] }>;
   };
   assert.deepEqual([baseline.sourceCommit, baseline.recipeCount, baseline.calculated, baseline.incomplete, baseline.giRecordCount], ["f2ba9e849e677f9e223103022e309a09b9992f62", 325, 136, 189, 42]);
-  assert.deepEqual([current.currentSummary.recipeCount, current.currentSummary.calculated, current.currentSummary.incomplete, current.currentSummary.giRecordCount, current.currentSummary.newlyCalculated, current.currentSummary.newlyBlocked], [326, 138, 188, 45, 2, 0]);
+  assert.equal(current.currentSummary.calculated, current.recipes.filter((row) => row.status === "CALCULATED").length);
+  assert.equal(current.currentSummary.incomplete, current.recipes.filter((row) => row.status !== "CALCULATED").length);
+  assert.equal(current.currentSummary.newlyCalculated, current.recipes.filter((row) => row.newlyCalculated).length);
+  const newlyBlockedIds = baseline.recipes.filter((prior) => prior.status === "CALCULATED"
+    && current.recipes.find((row) => row.recipeId === prior.recipeId)?.status !== "CALCULATED").map((row) => row.recipeId);
+  assert.deepEqual(newlyBlockedIds, ["keltainen-kanacurry-vhh"]);
+  assert.equal(current.currentSummary.newlyBlocked, newlyBlockedIds.length);
   assert.deepEqual([current.currentSummary.giTierCounts.STRONG, current.currentSummary.giTierCounts.SUPPLEMENTARY], [6, 39]);
   assert.equal(current.currentSummary.newStructureMismatches, 0);
   assert.equal(current.currentSummary.newInputMismatches, 0);
@@ -384,6 +394,12 @@ test("batch 2B6D rejects the unsupported semolina GI and preserves the previous 
   for (const [id, value] of previousResults) {
     const row = current.recipes.find((item) => item.recipeId === id);
     assert.ok(row, `${id} remains in the current inventory`);
+    if (id === "keltainen-kanacurry-vhh") {
+      assert.equal(row.status, "INSUFFICIENT SOURCE DATA");
+      assert.equal(row.glycemicLoadPerServing, null);
+      assert.equal(row.previousApprovedGlycemicLoadPerServing, value, "withdrawal must not rewrite history");
+      continue;
+    }
     assert.equal(row.status, "CALCULATED", `${id} stays calculated`);
     assert.equal(row.glycemicLoadPerServing, value, `${id} retains the previous GK`);
     assert.equal(row.previousApprovedGlycemicLoadPerServing, value, `${id} matches the immutable baseline`);
@@ -417,7 +433,10 @@ test("current 326-recipe batch inventory includes the lasagne as new and incompl
   };
   assert.deepEqual([baseline.sourceCommit, baseline.recipeCount, baseline.calculated, baseline.incomplete, baseline.giRecordCount], ["f2ba9e849e677f9e223103022e309a09b9992f62", 325, 136, 189, 42]);
   assert.deepEqual([current.previousApprovedBaseline.sourceCommit, current.previousApprovedBaseline.recipeCount], [baseline.sourceCommit, 325]);
-  assert.deepEqual([current.currentSummary.recipeCount, current.currentSummary.calculated, current.currentSummary.incomplete, current.currentSummary.giRecordCount, current.currentSummary.newlyAdded], [326, 138, 188, 45, 1]);
+  assert.equal(current.currentSummary.recipeCount, current.recipes.length);
+  assert.equal(current.currentSummary.calculated, current.recipes.filter((row) => row.status === "CALCULATED").length);
+  assert.equal(current.currentSummary.incomplete, current.recipes.filter((row) => row.status !== "CALCULATED").length);
+  assert.equal(current.currentSummary.newlyAdded, current.recipes.filter((row) => row.newlyAdded).length);
   const rows = new Map(current.recipes.map((row) => [row.recipeId, row]));
   assert.equal(rows.size, 326);
   for (const prior of baseline.recipes) assert.ok(rows.has(prior.recipeId), "historical recipe remains present: " + prior.recipeId);

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T20:47:17.145Z",
-  "sourceCommit": "ea661fbb45f4ed07903262e06604393cb787e09b",
+  "generatedAt": "2026-10-28T05:22:29.669Z",
+  "sourceCommit": "ce43a160e4c51d9510c856193810edc99e6c5b81",
   "previousApprovedBaseline": {
     "sourceCommit": "5e9cdeb830f468ecf099e9c286f9344afe3b6b71",
     "recipeCount": 325,
@@ -23,20 +23,20 @@
   "currentSummary": {
     "recipeCount": 326,
     "newlyAdded": 1,
-    "calculated": 138,
-    "incomplete": 188,
+    "calculated": 137,
+    "incomplete": 189,
     "giRecordCount": 45,
     "giTierCounts": {
       "STRONG": 6,
       "SUPPLEMENTARY": 39
     },
     "incompleteWithSupportedNutrition": 94,
-    "incompleteNutritionNeedsReview": 40,
+    "incompleteNutritionNeedsReview": 41,
     "incompleteNutritionMissing": 54,
     "newlyCalculated": 24,
-    "newlyBlocked": 0,
+    "newlyBlocked": 1,
     "stillIncomplete": 187,
-    "changedBlockerRecipes": 38,
+    "changedBlockerRecipes": 42,
     "newStructureMismatches": 0,
     "newInputMismatches": 0,
     "newEvidenceMismatches": 0
@@ -67,8 +67,8 @@
       "blockerMessages": 101
     },
     "GI_MISSING": {
-      "recipes": 42,
-      "blockerMessages": 45
+      "recipes": 46,
+      "blockerMessages": 49
     },
     "TOLERANCE": {
       "recipes": 6,
@@ -11045,8 +11045,8 @@
     {
       "recipeId": "massaman-curry-kanalla-vhh",
       "recipeVersion": "040bdf3d6d10f0f8dcc005e7463284d952bbd9604b5d921e3bd8c3ca9ed5739f",
-      "calculationInputVersion": "5017e50174324a33b074705b11beb90ddfdb4537a0cf751e3d92c00153846ed6",
-      "calculationEvidenceVersion": "94460f8af337bee81165b6b70c36ff875f72fb76a9be93f672af1164299bd757",
+      "calculationInputVersion": "4ad45dd0fbd21989e0c93cfa8481d1180f1748274d950dbbcae804b6c476a667",
+      "calculationEvidenceVersion": "ab888d510e4a8f2d69759bab66f2ebdb73015a8082cbc9fd28789eabf2df57fb",
       "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "INSUFFICIENT SOURCE DATA",
       "currentRecipeStructure": {
@@ -11124,11 +11124,11 @@
             "name": "kookosmaito",
             "grams": 400,
             "fineliRecordId": "fineli-29014-2026-10-24",
-            "giRecordId": "coconut-milk-porridge-gi-31",
+            "giRecordId": null,
             "foodKey": "coconut-milk",
-            "preparationKey": "rice-porridge-with-coconut-milk",
+            "preparationKey": "coconut-milk-cooked-in-recipe",
             "massEvidence": "400 ml recipe amount converted using Fineli id 29014, 100 g/dl.",
-            "giMatchEvidence": "Published GI 31 for coconut-milk rice porridge; used as a low-confidence analogue, not plain coconut milk."
+            "giMatchEvidence": "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
           },
           {
             "name": "massaman-currytahna",
@@ -11194,9 +11194,14 @@
       "previousApprovedGlycemicLoadPerServing": null,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
+        {
+          "category": "GI_MISSING",
+          "message": "massaman-curry-kanalla-vhh: kookosmaito: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
+          "nextAction": "Etsi soveltuva julkaistu GI-lähde; älä keksi arvoa."
+        },
         {
           "category": "GI_MATCH",
           "message": "massaman-curry-kanalla-vhh: nauris: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
@@ -11204,11 +11209,25 @@
         }
       ],
       "blockingCategories": [
+        "GI_MISSING",
         "GI_MATCH"
       ],
-      "primaryBlockingCategory": "GI_MATCH",
-      "primaryBlockingReason": "massaman-curry-kanalla-vhh: nauris: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "primaryBlockingCategory": "GI_MISSING",
+      "primaryBlockingReason": "massaman-curry-kanalla-vhh: kookosmaito: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "kookosmaito",
+          "grams": 400,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 2.81,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
+          ]
+        },
         {
           "name": "nauris",
           "grams": 250,
@@ -11237,6 +11256,7 @@
         }
       ],
       "nextActions": [
+        "Etsi soveltuva julkaistu GI-lähde; älä keksi arvoa.",
         "Tarkista ruoka-aineen perhe, valmistus ja GI-lähde; älä käytä perusteetonta analogiaa."
       ],
       "suggestedNextWorkstream": "GI_SOURCE_REVIEW",
@@ -11244,7 +11264,9 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "massaman-curry-kanalla-vhh: kookosmaito: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
+      ],
       "removedBlockers": []
     },
     {
@@ -24137,9 +24159,9 @@
     {
       "recipeId": "keltainen-kanacurry-vhh",
       "recipeVersion": "c5b066ed1d9ddd63a86f93648f4ed0ad2bf2c1ec729a100cb2cc6ceb7da74502",
-      "calculationInputVersion": "0b038bce4bfca2a14e81ba48131e1f348d159f0a12f225102a34e56f12d223c0",
-      "calculationEvidenceVersion": "66b611c71497097804ae47c03c6f82a166ae47fe2e8f8968cc91667865e09377",
-      "status": "CALCULATED",
+      "calculationInputVersion": "0431633e24c758f054c62d2ec660bfd40b322726be3b66ef13716777b6cdbca4",
+      "calculationEvidenceVersion": "e6d1b9b94b52a0edf21ad5771307e9a833aca8cbcc3906a29cf996bd4b37b67e",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "INSUFFICIENT SOURCE DATA",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/paaruoat/keltainen-kanacurry-vhh.md",
@@ -24220,11 +24242,11 @@
             "name": "täysrasvaista kookosmaitoa",
             "grams": 400,
             "fineliRecordId": "fineli-29014-2026-10-24",
-            "giRecordId": "coconut-milk-porridge-gi-31",
+            "giRecordId": null,
             "massEvidence": "400 ml at documented Fineli #29014 100 g/dl",
             "foodKey": "coconut-milk",
-            "preparationKey": "rice-porridge-with-coconut-milk",
-            "giMatchEvidence": "Published Coconut-milk porridge category/analogue; match limitations disclosed centrally."
+            "preparationKey": "coconut-milk-cooked-in-recipe",
+            "giMatchEvidence": "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
           },
           {
             "name": "Mae Ploy -keltaista currytahnaa",
@@ -24290,20 +24312,41 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 3.48,
+      "glycemicLoadPerServing": null,
       "omittedAvailableCarbohydratePerServingG": 1.1577499999999998,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 3.48,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "GI_MISSING",
+          "message": "keltainen-kanacurry-vhh: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
+          "nextAction": "Etsi soveltuva julkaistu GI-lähde; älä keksi arvoa."
+        }
+      ],
+      "blockingCategories": [
+        "GI_MISSING"
+      ],
+      "primaryBlockingCategory": "GI_MISSING",
+      "primaryBlockingReason": "keltainen-kanacurry-vhh: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 2.81,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
+          ]
+        },
         {
           "name": "sipulia",
           "grams": 70,
@@ -24357,13 +24400,17 @@
           ]
         }
       ],
-      "nextActions": [],
-      "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "nextActions": [
+        "Etsi soveltuva julkaistu GI-lähde; älä keksi arvoa."
+      ],
+      "suggestedNextWorkstream": "GI_SOURCE_REVIEW",
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "keltainen-kanacurry-vhh: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
+      ],
       "removedBlockers": []
     },
     {
@@ -26280,8 +26327,8 @@
     {
       "recipeId": "khao-soi-vhh-konjac",
       "recipeVersion": "b353ef79275b4fedb12935ce2a88dee7baaa987545ee559764fa0c3b2524d442",
-      "calculationInputVersion": "95ab0ab1352c303b9831a813edf523f118451f9eda0e4a3a71ad285622bba2f8",
-      "calculationEvidenceVersion": "3e0e675ce76bb99775c59f7db3f2d44198bfb8a0a447795003ff7b89b86bc30a",
+      "calculationInputVersion": "fa642efad693812bac25fea83ed1f36b739aa79978dcbeca67a4757c6d785c60",
+      "calculationEvidenceVersion": "c0695170c01290587315ac6beb663ec2479bde29d07c9bb8b97abd690834e72d",
       "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "INSUFFICIENT SOURCE DATA",
       "currentRecipeStructure": {
@@ -26370,11 +26417,11 @@
             "name": "täysrasvaista kookosmaitoa",
             "grams": 400,
             "fineliRecordId": "fineli-29014-2026-10-24",
-            "giRecordId": "coconut-milk-porridge-gi-31",
+            "giRecordId": null,
             "massEvidence": "400 ml at Fineli #29014 100 g/dl",
             "foodKey": "coconut-milk",
-            "preparationKey": "rice-porridge-with-coconut-milk",
-            "giMatchEvidence": "Published Coconut-milk porridge category/analogue; match limitations disclosed centrally."
+            "preparationKey": "coconut-milk-cooked-in-recipe",
+            "giMatchEvidence": "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
           },
           {
             "name": "Mae Ploy -punaista currytahnaa",
@@ -26461,9 +26508,14 @@
       "previousApprovedGlycemicLoadPerServing": null,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
+        {
+          "category": "GI_MISSING",
+          "message": "khao-soi-vhh-konjac: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
+          "nextAction": "Etsi soveltuva julkaistu GI-lähde; älä keksi arvoa."
+        },
         {
           "category": "GI_MATCH",
           "message": "khao-soi-vhh-konjac: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
@@ -26471,11 +26523,25 @@
         }
       ],
       "blockingCategories": [
+        "GI_MISSING",
         "GI_MATCH"
       ],
-      "primaryBlockingCategory": "GI_MATCH",
-      "primaryBlockingReason": "khao-soi-vhh-konjac: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "primaryBlockingCategory": "GI_MISSING",
+      "primaryBlockingReason": "khao-soi-vhh-konjac: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 2.81,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
+          ]
+        },
         {
           "name": "curryjauhetta",
           "grams": 2,
@@ -26569,6 +26635,7 @@
         }
       ],
       "nextActions": [
+        "Etsi soveltuva julkaistu GI-lähde; älä keksi arvoa.",
         "Tarkista ruoka-aineen perhe, valmistus ja GI-lähde; älä käytä perusteetonta analogiaa."
       ],
       "suggestedNextWorkstream": "GI_SOURCE_REVIEW",
@@ -26576,7 +26643,9 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "khao-soi-vhh-konjac: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
+      ],
       "removedBlockers": []
     },
     {
@@ -29399,8 +29468,8 @@
     {
       "recipeId": "tom-kha-gai-vhh",
       "recipeVersion": "7c2cb57736f77730586d2142bb8ce031265cf366db4986dec64b96d23dee568c",
-      "calculationInputVersion": "1c9efa3dbee99be843ce9a490bceff0449d04bb42b81428642a1e6a95647e2af",
-      "calculationEvidenceVersion": "3c0e989f94a864e0a5d1b111954390a893fb96ef18e10316ffa2f4d3f47c3b32",
+      "calculationInputVersion": "de5405c5fdd52c44008ad8377ea5e8660479bfa84d2daacb7c339b3785d9da67",
+      "calculationEvidenceVersion": "6445b204e3629e4eba575477a03616030f942176d69314728b42bfa52180d281",
       "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "INSUFFICIENT SOURCE DATA",
       "currentRecipeStructure": {
@@ -29490,10 +29559,10 @@
             "grams": 400,
             "massEvidence": "Recipe-listed edible mass.",
             "fineliRecordId": "fineli-29014-2026-10-25",
-            "giRecordId": "coconut-milk-porridge-gi-31",
+            "giRecordId": null,
             "foodKey": "coconut-milk",
-            "preparationKey": "rice-porridge-with-coconut-milk",
-            "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+            "preparationKey": "coconut-milk-cooked-in-recipe",
+            "giMatchEvidence": "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
           },
           {
             "name": "kanalientä",
@@ -29582,9 +29651,14 @@
       "previousApprovedGlycemicLoadPerServing": null,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
       "blockers": [
+        {
+          "category": "GI_MISSING",
+          "message": "tom-kha-gai-vhh: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
+          "nextAction": "Etsi soveltuva julkaistu GI-lähde; älä keksi arvoa."
+        },
         {
           "category": "GI_MATCH",
           "message": "tom-kha-gai-vhh: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
@@ -29597,12 +29671,26 @@
         }
       ],
       "blockingCategories": [
+        "GI_MISSING",
         "GI_MATCH",
         "OTHER"
       ],
-      "primaryBlockingCategory": "GI_MATCH",
-      "primaryBlockingReason": "tom-kha-gai-vhh: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+      "primaryBlockingCategory": "GI_MISSING",
+      "primaryBlockingReason": "tom-kha-gai-vhh: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-29014-2026-10-25",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 2.81,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
+          ]
+        },
         {
           "name": "kanalientä",
           "grams": 500,
@@ -29709,6 +29797,7 @@
         }
       ],
       "nextActions": [
+        "Etsi soveltuva julkaistu GI-lähde; älä keksi arvoa.",
         "Tarkista ruoka-aineen perhe, valmistus ja GI-lähde; älä käytä perusteetonta analogiaa.",
         "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
       ],
@@ -29717,7 +29806,9 @@
       "newlyCalculated": false,
       "newlyBlocked": false,
       "stillIncomplete": true,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "tom-kha-gai-vhh: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
+      ],
       "removedBlockers": []
     },
     {

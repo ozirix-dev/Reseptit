@@ -157,6 +157,7 @@ export function glycemicLoadEvidenceHash(
       return record ? {
         id: record.id,
         gi: record.gi,
+        ...(record.calculationUse ? { calculationUse: record.calculationUse } : {}),
         foodKey: normalizeText(record.foodKey),
         preparationKey: normalizeText(record.preparationKey),
         qualityTier: record.qualityTier,

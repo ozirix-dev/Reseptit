@@ -459,3 +459,9 @@ Koneellinen, 325 rivin ennen/jälkeen-auditointi on
 `glycemic-load-before-after-2026-10-25.json`; numeerinen yhteenveto on
 `glycemic-load-quality-audit-2026-10-25.json` ja yksityiskohtainen katselmus on
 `glycemic-load-quality-audit-2026-10-25.md`.
+
+## AJO 0.5: kookosmaitopuuron GI-sidonnan korjaus
+
+[Lähdetarkistus, neljä vaikutusreseptiä ja regressiot](glycemic-coconut-source-review.md).
+Kattavuus 138 → 137: puurotutkimuksen GI 31 ei tue kookosmaidon ainesosasidontaa.
+[Koneluettava ennen/jälkeen-näyttö](glycemic-coconut-source-review.json).
