@@ -88,7 +88,13 @@ button { font: inherit; }
 .recipe-filter-select select { width: 100%; }
 .recipe-filters :focus-visible, .recipe-filter-reset:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 .recipe-result-count { margin: .85rem 0 .15rem; font-weight: 700; }
-.recipe-active-filters { margin-bottom: .8rem; color: var(--ink-soft); font-size: .92rem; overflow-wrap: anywhere; }
+.recipe-active-filters { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; margin-bottom: .8rem; }
+.recipe-filter-chip { display: inline-flex; align-items: center; gap: .55rem; min-height: 44px; padding: .35rem .65rem; border: 1px solid #87988e; border-radius: 99px; background: #fffefa; color: var(--ink-soft); font: inherit; font-size: .9rem; text-align: left; cursor: pointer; overflow-wrap: anywhere; }
+.recipe-filter-chip:hover { background: #e8f0e9; color: var(--accent); }
+.recipe-filter-chip:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.recipe-filter-chip__remove { font-size: 1.3rem; line-height: 1; }
+.recipe-gl-disclosure { margin: .5rem 0; max-width: 90ch; }
+.recipe-gl-disclosure a { color: var(--accent); }
 .recipe-card-grid { display: grid; grid-template-columns: minmax(0, 1fr); align-items: stretch; gap: 1rem; margin-top: .75rem; }
 .recipe-card, .recipe-panel { min-width: 0; padding: 1rem; border: 1px solid var(--line); border-radius: 1.1rem; background: var(--surface); box-shadow: 0 12px 30px rgba(25, 51, 46, .06); }
 .recipe-card { display: flex; padding: .65rem; }
@@ -170,7 +176,8 @@ button { font: inherit; }
 .print-servings { display: none; }
 .serving-control button { width: 44px; height: 44px; }
 #recipe-instructions { scroll-margin-top: 1rem; }
-@media (min-width: 700px) { .recipe-more-filters > div { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 700px) { .recipe-more-filters > div { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1100px) { .recipe-more-filters > div { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media (max-width: 520px) { .glycemic-pilot__summary { grid-template-columns: 1fr; gap: .55rem; } .glycemic-pilot__summary article { grid-template-columns: auto 1fr; align-items: baseline; gap: .65rem; } .glycemic-pilot__summary strong { font-size: 1.45rem; } .glycemic-pilot__method, .glycemic-pilot__recipes { padding: .9rem; } .glycemic-pilot__recipe { overflow-wrap: anywhere; } }
 @media print {
