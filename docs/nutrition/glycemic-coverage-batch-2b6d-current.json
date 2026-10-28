@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-28T19:39:28.920Z",
-  "sourceCommit": "6975421298e28b56c8dbda69ff7aab2f01e83902",
+  "generatedAt": "2026-10-28T19:42:29.616Z",
+  "sourceCommit": "04fb5ff33b68cab28481245e6a7adf80fe5c9a88",
   "previousApprovedBaseline": {
     "sourceCommit": "f2ba9e849e677f9e223103022e309a09b9992f62",
     "recipeCount": 325,
@@ -72369,7 +72369,7 @@
             "grams": 500,
             "fineliRecordId": null,
             "giRecordId": null,
-            "massEvidence": "Recipe-listed 500 g, mapped to Chicken, thigh, lean flesh, raw (raw chicken meat).",
+            "massEvidence": "Original recipe explicitly lists 500 g cooked skinless chicken breast. Previous raw-thigh composition mapping rejected; gram mass retained.",
             "giMatchEvidence": "AJO 1.8: Cooked skinless chicken breast is not AFCD raw lean thigh. Correct composition remains unverified."
           },
           {
@@ -72401,7 +72401,7 @@
             "grams": 20,
             "fineliRecordId": "fineli-110-release-20",
             "giRecordId": null,
-            "massEvidence": "Recipe-listed 20 g, mapped to JAUHO, VEHNÄJAUHO, PUOLIKARKEA (semi-coarse wheat flour).",
+            "massEvidence": "Original recipe lists 2 rkl wheat flour; Fineli 110 release 20 RKL=10 g, hence 20 g dry edible input. No invented cooking retention.",
             "giMatchEvidence": "AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
             "ingredientUse": "WHEAT_FLOUR_ROUX"
           },
@@ -72425,7 +72425,7 @@
             "grams": 600,
             "fineliRecordId": null,
             "giRecordId": null,
-            "massEvidence": "Recipe-listed 600 g, mapped to VALKOKAALI, KERÄKAALI (raw white cabbage).",
+            "massEvidence": "Original recipe explicitly lists 600 g cauliflower. Previous white-cabbage composition mapping rejected; gram mass retained.",
             "giMatchEvidence": "AJO 1.8: Cauliflower is not Fineli 320 white cabbage. Correct composition and GI remain unverified."
           },
           {
