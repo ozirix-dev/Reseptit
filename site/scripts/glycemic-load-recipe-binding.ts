@@ -89,6 +89,7 @@ export function glycemicLoadInputHash(input: unknown): string {
     ingredients: value.ingredients.map((ingredient) => ({
       name: normalizeText(ingredient.name),
       grams: ingredient.grams,
+      ...(ingredient.ingredientUse ? { ingredientUse: ingredient.ingredientUse } : {}),
       ...(ingredient.recipeQuantity ? { recipeQuantity: ingredient.recipeQuantity } : {}),
       fineliRecordId: ingredient.fineliRecordId,
       giRecordId: ingredient.giRecordId,

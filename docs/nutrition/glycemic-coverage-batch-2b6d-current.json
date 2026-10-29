@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-28T16:43:33.709Z",
-  "sourceCommit": "dede397321dee9ebb2a8701748694ece33c511be",
+  "generatedAt": "2026-10-28T19:42:29.616Z",
+  "sourceCommit": "04fb5ff33b68cab28481245e6a7adf80fe5c9a88",
   "previousApprovedBaseline": {
     "sourceCommit": "f2ba9e849e677f9e223103022e309a09b9992f62",
     "recipeCount": 325,
@@ -23,20 +23,20 @@
   "currentSummary": {
     "recipeCount": 326,
     "newlyAdded": 1,
-    "calculated": 101,
-    "incomplete": 225,
+    "calculated": 97,
+    "incomplete": 229,
     "giRecordCount": 45,
     "giTierCounts": {
       "STRONG": 6,
       "SUPPLEMENTARY": 39
     },
-    "incompleteWithSupportedNutrition": 122,
-    "incompleteNutritionNeedsReview": 46,
+    "incompleteWithSupportedNutrition": 125,
+    "incompleteNutritionNeedsReview": 47,
     "incompleteNutritionMissing": 57,
     "newlyCalculated": 2,
-    "newlyBlocked": 37,
+    "newlyBlocked": 41,
     "stillIncomplete": 187,
-    "changedBlockerRecipes": 67,
+    "changedBlockerRecipes": 71,
     "newStructureMismatches": 0,
     "newInputMismatches": 0,
     "newEvidenceMismatches": 0
@@ -31987,9 +31987,9 @@
     {
       "recipeId": "keto-kauralesesampylat",
       "recipeVersion": "8d1bae122773795ecfe56fcda81ebd4bc81fb13b03c674074b717b8821ece9a5",
-      "calculationInputVersion": "fd88da6cf9faaf07b4fe2ad777c918f35b70705f3ce28c1043c9ace13f14eaa5",
-      "calculationEvidenceVersion": "5986ea99d264bf3024acb025ebc317f1a26efe94742580d1ede4bc7f3c9d47f9",
-      "status": "CALCULATED",
+      "calculationInputVersion": "602f77645e3515dcaf7710609d170279c4f7345b3559639a69541bd29d7e1d85",
+      "calculationEvidenceVersion": "871a5c513a8df191fbee7197df13ee7fd370eb66fcec916075fdbf934bf4989b",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "INSUFFICIENT SOURCE DATA",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/leivonnaiset/keto-kauralesesampylat.md",
@@ -32088,10 +32088,9 @@
             "grams": 25,
             "massEvidence": "Recipe-listed edible mass.",
             "fineliRecordId": "fineli-170-2026-10-25",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean",
-            "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+            "giRecordId": null,
+            "giMatchEvidence": "AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+            "ingredientUse": "OAT_BRAN_IN_DOUGH"
           },
           {
             "name": "psylliumia",
@@ -32140,19 +32139,27 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 1.34,
+      "glycemicLoadPerServing": null,
       "omittedAvailableCarbohydratePerServingG": 0.573375,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 1.34,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "keto-kauralesesampylat: kauralesettä: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "keto-kauralesesampylat: kauralesettä: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
       "missingFoodAndGIRecords": [
         {
           "name": "kananmunia",
@@ -32165,6 +32172,19 @@
           "excludedReason": null,
           "issues": [
             "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.062 g available carbohydrate): GI evidence is missing."
+          ]
+        },
+        {
+          "name": "kauralesettä",
+          "grams": 25,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-170-2026-10-25",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 1.6309375,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md."
           ]
         },
         {
@@ -32207,13 +32227,17 @@
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "keto-kauralesesampylat: kauralesettä: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md."
+      ],
       "removedBlockers": []
     },
     {
@@ -43637,9 +43661,9 @@
     {
       "recipeId": "silakkapihvit-tilli-kermakastike",
       "recipeVersion": "e1f93ab37740acd3fa473aa6f1108670c5edb3f09dff9910a71c9bed8e450a89",
-      "calculationInputVersion": "986ba7275a09336496be3c4380969f6f5e0283a5130ae6243786ff5bcdf987d6",
-      "calculationEvidenceVersion": "08aa737ae8b5f44950f657704f15a316c16723ea8a0bae8f91cdd8978f22edc6",
-      "status": "CALCULATED",
+      "calculationInputVersion": "73bf81e8f6e61c181eb314564ed9ad7c43869b421f1e0fa64629a7f7cc7d7db0",
+      "calculationEvidenceVersion": "2c1062a3218833d0126f8aed9961eeed5b7c607f1f8636c5d420e57b95be0554",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/paaruoat/silakkapihvit-tilli-kermakastike.md",
@@ -43707,9 +43731,10 @@
             "name": "ruisjauhoja",
             "grams": 16,
             "fineliRecordId": "fineli-100-release-20",
-            "giRecordId": "bakery-products-category-mean-gi-58",
+            "giRecordId": null,
             "massEvidence": "Ingredient-specific household measure conversion: 8 g per rkl; recipe quantity converted to edible mass.",
-            "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+            "giMatchEvidence": "AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+            "ingredientUse": "RYE_FLOUR_COATING"
           },
           {
             "name": "voita paistamiseen",
@@ -43723,10 +43748,10 @@
           },
           {
             "name": "kuohukermaa",
-            "grams": 138,
+            "grams": 150,
             "fineliRecordId": "fineli-631-release-20",
             "giRecordId": "dairy-category-mean-gi-35",
-            "massEvidence": "Ingredient-specific household measure conversion: 0.92 g per ml; recipe quantity converted to edible mass.",
+            "massEvidence": "AJO 1.8: 150 ml cream; Fineli 631 release 20 DL=100 g.",
             "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
           },
           {
@@ -43741,49 +43766,61 @@
           },
           {
             "name": "tuoretta tilliä",
-            "grams": 6,
+            "grams": 5,
             "fineliRecordId": "fineli-369-release-20",
             "giRecordId": null,
-            "massEvidence": "Ingredient-specific household measure conversion: 3 g per rkl; recipe quantity converted to edible mass.",
-            "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-            "estimatedAvailableCarbohydratePerServingG": 0.013500000000000002,
-            "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+            "massEvidence": "AJO 1.8: 2 rkl fresh dill; Fineli 369 release 20 RKL=2.5 g.",
+            "giMatchEvidence": "AJO 1.8: no matched dill GI; use linked Fineli 369 CHO 0.9 g/100 g and verified 5 g recipe mass for cumulative sub-1 g omission."
           },
           {
             "name": "suolaa ja valkopippuria",
             "grams": null,
             "fineliRecordId": null,
             "giRecordId": null,
-            "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-            "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
-            "estimatedAvailableCarbohydratePerServingG": 0.25,
-            "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+            "massEvidence": "Unknown; requires actual product/portion evidence.",
+            "excludedReason": "AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling."
           },
           {
             "name": "sitruuna tarjoiluun",
-            "grams": 58,
+            "grams": null,
             "fineliRecordId": "fineli-11048-release-20",
             "giRecordId": null,
-            "massEvidence": "Edible portion set to 58 g per medium peeled lemon; Fineli peeled lemon record 11048.",
-            "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-            "estimatedAvailableCarbohydratePerServingG": 0.319,
-            "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+            "massEvidence": "Unknown; requires actual product/portion evidence.",
+            "excludedReason": "AJO 1.8: One serving lemon has no verified edible mass or consumed fraction; previous 58 g was unsupported."
           }
         ]
       },
-      "glycemicLoadPerServing": 1.73,
-      "omittedAvailableCarbohydratePerServingG": 0.6985,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 0.12725,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 1.73,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "silakkapihvit-tilli-kermakastike: ruisjauhoja: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
+          "message": "silakkapihvit-tilli-kermakastike: suolaa ja valkopippuria: AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
+          "message": "silakkapihvit-tilli-kermakastike: sitruuna tarjoiluun: AJO 1.8: One serving lemon has no verified edible mass or consumed fraction; previous 58 g was unsupported.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "silakkapihvit-tilli-kermakastike: ruisjauhoja: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
       "missingFoodAndGIRecords": [
         {
           "name": "silakkafileitä",
@@ -43796,6 +43833,19 @@
           "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
           "issues": [
             "Source-documented zero available carbohydrate: Calculated from the linked food record and documented recipe quantity."
+          ]
+        },
+        {
+          "name": "ruisjauhoja",
+          "grams": 16,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-100-release-20",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 2.3756399999999998,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md."
           ]
         },
         {
@@ -43826,15 +43876,15 @@
         },
         {
           "name": "tuoretta tilliä",
-          "grams": 6,
+          "grams": 5,
           "recipeQuantity": null,
           "fineliRecordId": "fineli-369-release-20",
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.013500000000000002,
+          "availableCarbohydratePerServingG": 0.01125,
           "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "excludedReason": null,
           "issues": [
-            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Calculated from the linked food record and documented recipe quantity."
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.011 g available carbohydrate): AJO 1.8: no matched dill GI; use linked Fineli 369 CHO 0.9 g/100 g and verified 5 g recipe mass for cumulative sub-1 g omission."
           ]
         },
         {
@@ -43843,34 +43893,40 @@
           "recipeQuantity": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.25,
+          "availableCarbohydratePerServingG": null,
           "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
+          "excludedReason": "AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling.",
           "issues": [
-            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+            "AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling."
           ]
         },
         {
           "name": "sitruuna tarjoiluun",
-          "grams": 58,
+          "grams": null,
           "recipeQuantity": null,
           "fineliRecordId": "fineli-11048-release-20",
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.319,
+          "availableCarbohydratePerServingG": null,
           "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "excludedReason": "AJO 1.8: One serving lemon has no verified edible mass or consumed fraction; previous 58 g was unsupported.",
           "issues": [
-            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Calculated from the linked food record and documented recipe quantity."
+            "AJO 1.8: One serving lemon has no verified edible mass or consumed fraction; previous 58 g was unsupported."
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "silakkapihvit-tilli-kermakastike: ruisjauhoja: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+        "silakkapihvit-tilli-kermakastike: suolaa ja valkopippuria: AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling.",
+        "silakkapihvit-tilli-kermakastike: sitruuna tarjoiluun: AJO 1.8: One serving lemon has no verified edible mass or consumed fraction; previous 58 g was unsupported."
+      ],
       "removedBlockers": []
     },
     {
@@ -53606,9 +53662,9 @@
     {
       "recipeId": "vietnamilainen-banh-cuon-sienilla",
       "recipeVersion": "392fd579abbe22a7e001b07caef5b9df67efe79ca4686cc37aa0b95d37503e26",
-      "calculationInputVersion": "ede1a3cde2d6a804ab7519b6b0cf53af04cea408605589c63ff67aaecb7134cf",
-      "calculationEvidenceVersion": "0a1e81745ee36c73d15ee9fed7905b8a0b9b9b60cc45fbf81345719505a56c59",
-      "status": "CALCULATED",
+      "calculationInputVersion": "283e0215b5ba888b078c1663aa62302a3f0494310bc7c5b03d3cd1b452246665",
+      "calculationEvidenceVersion": "f6e83fb80f10ebd3060aa31aa4c054abeceb2f9c0261497a50af3c6fd69a752f",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md",
@@ -53656,18 +53712,17 @@
             "name": "riisijauho",
             "grams": 100,
             "fineliRecordId": "fineli-182-release-20",
-            "giRecordId": "bakery-products-category-mean-gi-58",
+            "giRecordId": null,
             "massEvidence": "Recipe-listed 100 g, mapped to JAUHO, RIISIJAUHO, RIISIHIUTALE (dry rice flakes / rice flour).",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean",
-            "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
+            "giMatchEvidence": "AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+            "ingredientUse": "RICE_FLOUR_STEAMED_SHEET"
           },
           {
             "name": "sieni",
-            "grams": 15,
+            "grams": 100,
             "fineliRecordId": "fineli-345-release-20",
             "giRecordId": "vegetables-category-mean-gi-66",
-            "massEvidence": "Recipe-listed 15 g, mapped to HERKKUSIENI (raw button mushroom).",
+            "massEvidence": "Original recipe explicitly lists 100 g fresh mushrooms; previous 15 g input was incorrect.",
             "foodKey": "vegetable",
             "preparationKey": "vegetable-category",
             "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
@@ -53681,10 +53736,16 @@
           },
           {
             "name": "kalakastike",
-            "grams": 15,
-            "fineliRecordId": "fineli-8029-release-20",
+            "grams": null,
+            "fineliRecordId": null,
             "giRecordId": null,
-            "massEvidence": "Recipe-listed 15 g, mapped to KALAKASTIKE, MADEMUHENNOS (fish sauce as sold)."
+            "massEvidence": "Recipe gives 1 tablespoon; 15 g was not verified for the actual fermented fish sauce.",
+            "giMatchEvidence": "AJO 1.8: Fermented Asian fish sauce is not Fineli 8029 burbot stew. Correct composition and tablespoon mass remain unverified.",
+            "recipeQuantity": {
+              "amount": 1,
+              "unit": "rkl",
+              "massGrams": null
+            }
           },
           {
             "name": "suolaa maun mukaan",
@@ -53698,31 +53759,67 @@
           }
         ]
       },
-      "glycemicLoadPerServing": 23.01,
-      "omittedAvailableCarbohydratePerServingG": 0.1263,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 0,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 23.01,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "vietnamilainen-banh-cuon-sienilla: riisijauho: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
+          "message": "vietnamilainen-banh-cuon-sienilla: kalakastike: Ingredient mass is missing or invalid.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
+          "message": "vietnamilainen-banh-cuon-sienilla: kalakastike: Fineli food record is missing.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "vietnamilainen-banh-cuon-sienilla: riisijauho: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
       "missingFoodAndGIRecords": [
         {
-          "name": "kalakastike",
-          "grams": 15,
+          "name": "riisijauho",
+          "grams": 100,
           "recipeQuantity": null,
-          "fineliRecordId": "fineli-8029-release-20",
+          "fineliRecordId": "fineli-182-release-20",
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.1263,
+          "availableCarbohydratePerServingG": 39.65,
           "availableCarbohydrateUpperBoundPerServingG": null,
           "excludedReason": null,
           "issues": [
-            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.126 g available carbohydrate): GI evidence is missing."
+            "AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md."
+          ]
+        },
+        {
+          "name": "kalakastike",
+          "grams": null,
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "rkl",
+            "massGrams": null
+          },
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "Ingredient mass is missing or invalid.",
+            "Fineli food record is missing."
           ]
         },
         {
@@ -53739,13 +53836,19 @@
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "vietnamilainen-banh-cuon-sienilla: riisijauho: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+        "vietnamilainen-banh-cuon-sienilla: kalakastike: Ingredient mass is missing or invalid.",
+        "vietnamilainen-banh-cuon-sienilla: kalakastike: Fineli food record is missing."
+      ],
       "removedBlockers": []
     },
     {
@@ -72200,9 +72303,9 @@
     {
       "recipeId": "kanaviillokki-kukkakaalilla",
       "recipeVersion": "f7650c07963e930fe2e551c343b79e93f4e0534ffc739c0ef21ebf86f677c529",
-      "calculationInputVersion": "21049972a243a5a43cc2ceab1f9a3280074399941165c4d8b0a8e6051392a04c",
-      "calculationEvidenceVersion": "7b6d2548474790e6c1477ee99f4ebc4ee52837571b8e332b2d3e36e257f766e8",
-      "status": "CALCULATED",
+      "calculationInputVersion": "02a02421bf237d62428cc8e510c3fdda0fc81f6e051c9b45e5bd8cddb4c57f3c",
+      "calculationEvidenceVersion": "a99dccccc3a8577d2a8264cb78f5b14346e77b459340c885311f50241c197165",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/paaruoat/kanaviillokki-kukkakaalilla.md",
@@ -72264,9 +72367,10 @@
           {
             "name": "kypsää, nahatonta broilerin rintafileetä",
             "grams": 500,
-            "fineliRecordId": "afcd-F002806-release-3",
+            "fineliRecordId": null,
             "giRecordId": null,
-            "massEvidence": "Recipe-listed 500 g, mapped to Chicken, thigh, lean flesh, raw (raw chicken meat)."
+            "massEvidence": "Original recipe explicitly lists 500 g cooked skinless chicken breast. Previous raw-thigh composition mapping rejected; gram mass retained.",
+            "giMatchEvidence": "AJO 1.8: Cooked skinless chicken breast is not AFCD raw lean thigh. Correct composition remains unverified."
           },
           {
             "name": "broilerin lientä",
@@ -72296,21 +72400,18 @@
             "name": "vehnäjauhoja",
             "grams": 20,
             "fineliRecordId": "fineli-110-release-20",
-            "giRecordId": "bakery-products-category-mean-gi-58",
-            "massEvidence": "Recipe-listed 20 g, mapped to JAUHO, VEHNÄJAUHO, PUOLIKARKEA (semi-coarse wheat flour).",
-            "foodKey": "bakery-products-category-mean",
-            "preparationKey": "category-mean",
-            "giMatchEvidence": "Bakery products category mean: bakery products category mean; flour and semolina are broad grain-product analogues; category/analogue estimate, low confidence."
+            "giRecordId": null,
+            "massEvidence": "Original recipe lists 2 rkl wheat flour; Fineli 110 release 20 RKL=10 g, hence 20 g dry edible input. No invented cooking retention.",
+            "giMatchEvidence": "AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+            "ingredientUse": "WHEAT_FLOUR_ROUX"
           },
           {
             "name": "currya",
             "grams": null,
             "fineliRecordId": null,
             "giRecordId": null,
-            "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-            "estimatedAvailableCarbohydratePerServingG": 0.125,
-            "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
-            "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+            "excludedReason": "AJO 1.8: One teaspoon curry mixture has no verified mass/composition ceiling.",
+            "massEvidence": "Unknown; requires actual product/portion evidence."
           },
           {
             "name": "sitruunamehua",
@@ -72322,39 +72423,76 @@
           {
             "name": "kukkakaalia",
             "grams": 600,
-            "fineliRecordId": "fineli-320-release-20",
-            "giRecordId": "vegetables-category-mean-gi-66",
-            "massEvidence": "Recipe-listed 600 g, mapped to VALKOKAALI, KERÄKAALI (raw white cabbage).",
-            "foodKey": "vegetable",
-            "preparationKey": "vegetable-category",
-            "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "massEvidence": "Original recipe explicitly lists 600 g cauliflower. Previous white-cabbage composition mapping rejected; gram mass retained.",
+            "giMatchEvidence": "AJO 1.8: Cauliflower is not Fineli 320 white cabbage. Correct composition and GI remain unverified."
           },
           {
             "name": "suolaa ja valkopippuria",
             "grams": null,
             "fineliRecordId": null,
             "giRecordId": null,
-            "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
-            "estimatedAvailableCarbohydratePerServingG": 0.125,
-            "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
-            "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+            "excludedReason": "AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling.",
+            "massEvidence": "Unknown; requires actual product/portion evidence."
           }
         ]
       },
-      "glycemicLoadPerServing": 7.57,
-      "omittedAvailableCarbohydratePerServingG": 0.7929999999999999,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 0.5429999999999999,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 7.57,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "kanaviillokki-kukkakaalilla: kypsää, nahatonta broilerin rintafileetä: Fineli food record is missing.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
+          "message": "kanaviillokki-kukkakaalilla: vehnäjauhoja: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
+          "message": "kanaviillokki-kukkakaalilla: currya: AJO 1.8: One teaspoon curry mixture has no verified mass/composition ceiling.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
+          "message": "kanaviillokki-kukkakaalilla: kukkakaalia: Fineli food record is missing.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
+          "message": "kanaviillokki-kukkakaalilla: suolaa ja valkopippuria: AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "kanaviillokki-kukkakaalilla: kypsää, nahatonta broilerin rintafileetä: Fineli food record is missing.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "kypsää, nahatonta broilerin rintafileetä",
+          "grams": 500,
+          "recipeQuantity": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "Fineli food record is missing."
+          ]
+        },
         {
           "name": "broilerin lientä",
           "grams": 400,
@@ -72382,16 +72520,29 @@
           ]
         },
         {
+          "name": "vehnäjauhoja",
+          "grams": 20,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-110-release-20",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 3.6999,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md."
+          ]
+        },
+        {
           "name": "currya",
           "grams": null,
           "recipeQuantity": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.125,
+          "availableCarbohydratePerServingG": null,
           "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+          "excludedReason": "AJO 1.8: One teaspoon curry mixture has no verified mass/composition ceiling.",
           "issues": [
-            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+            "AJO 1.8: One teaspoon curry mixture has no verified mass/composition ceiling."
           ]
         },
         {
@@ -72408,26 +72559,47 @@
           ]
         },
         {
+          "name": "kukkakaalia",
+          "grams": 600,
+          "recipeQuantity": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "Fineli food record is missing."
+          ]
+        },
+        {
           "name": "suolaa ja valkopippuria",
           "grams": null,
           "recipeQuantity": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.125,
+          "availableCarbohydratePerServingG": null,
           "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+          "excludedReason": "AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling.",
           "issues": [
-            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+            "AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling."
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "kanaviillokki-kukkakaalilla: kypsää, nahatonta broilerin rintafileetä: Fineli food record is missing.",
+        "kanaviillokki-kukkakaalilla: vehnäjauhoja: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+        "kanaviillokki-kukkakaalilla: currya: AJO 1.8: One teaspoon curry mixture has no verified mass/composition ceiling.",
+        "kanaviillokki-kukkakaalilla: kukkakaalia: Fineli food record is missing.",
+        "kanaviillokki-kukkakaalilla: suolaa ja valkopippuria: AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling."
+      ],
       "removedBlockers": []
     },
     {
