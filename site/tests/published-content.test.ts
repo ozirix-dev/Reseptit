@@ -411,7 +411,7 @@ test("batch twelve publishes recalculated macronutrients for every recipe and av
   const expected = new Map([
     ["kana-enchilada-kukkakaalivuoka", [8.13, 11.64, 46.66, 29.27]],
     ["kanasalaatti-pesto-mozzarella", [1.88, 4.36, 32, 24.19]],
-    ["yangzhou-paistettu-riisi", [40.97, 43.14, 21.91, 11.19]],
+    ["yangzhou-paistettu-riisi", [39.01, 40.38, 21.18, 11.11]],
     ["tacokulho-nauta-avokado", [2.71, 5.28, 31.27, 26.41]],
     ["silakkapihvit-tilli-kermakastike", [3.82, 4.76, 21.27, 30.04]],
     ["sitruuna-yrttikana-parsa", [1.78, 4.33, 36.34, 16.09]],
@@ -684,4 +684,18 @@ test("minced beef cabbage soup metadata and image match the existing ingredient 
   assert.deepEqual(ingredients.map((ingredient) => ingredient.item), [
     "naudan jauhelihaa", "valkokaalia", "sipuli", "lihalientä", "tomaattipyreetä", "suolaa", "mustapippuria", "meiramia",
   ]);
+});
+
+
+
+test("R1B corrected Koshari nutrition evidence is synchronized across published locales", () => {
+  const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === "koshari");
+  assert.deepEqual(translations.map((recipe) => recipe.locale).sort(), ["en", "fi", "sv", "th"]);
+  for (const recipe of translations) {
+    assert.deepEqual(
+      [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],
+      [95.91, 103.14, 22.26, 12.03],
+      `koshari/${recipe.locale}`,
+    );
+  }
 });

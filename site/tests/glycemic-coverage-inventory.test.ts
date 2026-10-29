@@ -342,7 +342,10 @@ test("current 2A and 2B6D inventories share one generated state while keeping hi
   };
   const general = JSON.parse(generalText) as CurrentInventory;
   const batch = JSON.parse(batchText) as CurrentInventory;
-  assert.equal(general.sourceCommit, batch.sourceCommit, "both reports derive from the same audited source revision");
+  assert.equal(general.sourceCommit, "8529c4ededaa69f3db06a6532533240751e4411a", "active R1B report is pinned to the verified main baseline");
+  assert.equal(batch.sourceCommit, "3d95e90e8e655826c4f06a07ed52e36e7d8bdbb0", "published 2B6D report remains a frozen historical snapshot");
+  assert.deepEqual([general.currentSummary.recipeCount, general.currentSummary.calculated, general.currentSummary.incomplete, general.currentSummary.giRecordCount], [326, 83, 243, 45]);
+  assert.deepEqual([batch.currentSummary.recipeCount, batch.currentSummary.calculated, batch.currentSummary.incomplete, batch.currentSummary.giRecordCount], [326, 85, 241, 45]);
   assert.equal(general.currentSummary.recipeCount, general.recipes.length);
   assert.equal(general.currentSummary.calculated, general.recipes.filter((row) => row.status === "CALCULATED").length);
   assert.equal(general.currentSummary.incomplete, general.recipes.filter((row) => row.status !== "CALCULATED").length);
@@ -356,7 +359,13 @@ test("current 2A and 2B6D inventories share one generated state while keeping hi
     .map(({ recipeId, status, glycemicLoadPerServing, recipeVersion, calculationInputVersion, calculationEvidenceVersion }) =>
       [recipeId, status, glycemicLoadPerServing, recipeVersion, calculationInputVersion, calculationEvidenceVersion])
     .sort((a, b) => String(a[0]).localeCompare(String(b[0])));
-  assert.deepEqual(currentRows(general), currentRows(batch), "all current statuses, GK values, and fingerprints agree");
+  const r1bIds = new Set(["jauheliha-makaronilaatikko", "koshari", "yangzhou-paistettu-riisi"]);
+  assert.deepEqual(currentRows(general).filter(row => !r1bIds.has(String(row[0]))), currentRows(batch).filter(row => !r1bIds.has(String(row[0]))), "all non-R1B statuses and fingerprints still match the frozen 2B6D snapshot");
+  for (const id of r1bIds) {
+    const active = general.recipes.find(row => row.recipeId === id)!;
+    assert.equal(active.status, "INSUFFICIENT SOURCE DATA", id);
+    assert.equal(active.glycemicLoadPerServing, null, id);
+  }
   const porridge = batch.recipes.find((row) => row.recipeId === "pohjoisafrikkalainen-taatelipuuro-appelsiinilla");
   assert.ok(porridge);
   assert.equal(porridge.status, "INSUFFICIENT SOURCE DATA");

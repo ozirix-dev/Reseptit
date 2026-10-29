@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T02:37:54.928Z",
-  "sourceCommit": "3d95e90e8e655826c4f06a07ed52e36e7d8bdbb0",
+  "generatedAt": "2026-10-29T18:59:29.370Z",
+  "sourceCommit": "8529c4ededaa69f3db06a6532533240751e4411a",
   "previousApprovedBaseline": {
     "sourceCommit": "5e9cdeb830f468ecf099e9c286f9344afe3b6b71",
     "recipeCount": 325,
@@ -23,20 +23,20 @@
   "currentSummary": {
     "recipeCount": 326,
     "newlyAdded": 1,
-    "calculated": 85,
-    "incomplete": 241,
+    "calculated": 83,
+    "incomplete": 243,
     "giRecordCount": 45,
     "giTierCounts": {
       "STRONG": 6,
       "SUPPLEMENTARY": 39
     },
-    "incompleteWithSupportedNutrition": 133,
-    "incompleteNutritionNeedsReview": 50,
+    "incompleteWithSupportedNutrition": 134,
+    "incompleteNutritionNeedsReview": 51,
     "incompleteNutritionMissing": 58,
     "newlyCalculated": 16,
-    "newlyBlocked": 45,
+    "newlyBlocked": 47,
     "stillIncomplete": 195,
-    "changedBlockerRecipes": 129,
+    "changedBlockerRecipes": 131,
     "newStructureMismatches": 0,
     "newInputMismatches": 0,
     "newEvidenceMismatches": 0
@@ -12572,9 +12572,9 @@
     {
       "recipeId": "jauheliha-makaronilaatikko",
       "recipeVersion": "3f5e6effea618dce832d8199b2ca3ae99853e7551b462cd2a83c675b59368f5e",
-      "calculationInputVersion": "d701149d0e52777f1e29c33410fd7f1e226532b35d63fca72d1f4d5961e88c03",
-      "calculationEvidenceVersion": "d04e344b59cf09e2af419a754ba777da454bf81e7e9c84b8656f28ccf2146e1c",
-      "status": "CALCULATED",
+      "calculationInputVersion": "89f8851d23fd1676dafade265f65ba3e67c1ae541e3cf6c4a3c8d46e8887d6e1",
+      "calculationEvidenceVersion": "c16187b03bc5e286f0a4cff17020a9c0bc9f43680acaab8b435cc48c13187600",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "INSUFFICIENT SOURCE DATA",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/paaruoat/jauheliha-makaronilaatikko.md",
@@ -12662,52 +12662,331 @@
         "servings": 8,
         "ingredients": [
           {
-            "name": "makaronia",
+            "name": "kuivattua makaronia",
             "grams": 400,
             "fineliRecordId": "fineli-117-2026-10-24",
-            "giRecordId": "pasta-category-mean-gi-52",
-            "massEvidence": "Fineli #117 dry macaroni; recipe-listed 400 g.",
-            "giMatchEvidence": "2021 International Tables category mean or named GI analogue: pasta-category-mean-gi-52. Fineli #117 dry macaroni; recipe-listed 400 g."
+            "giRecordId": null,
+            "massEvidence": "Current recipe specifies 400 g dry macaroni; Fineli #117 composition record. No preparation-matched, glucose-scale GI established for macaroni parboiled and then baked 40–50 minutes in this egg/dairy mixture. Wolever et al. 1986 found different GI for macaroni and spaghetti in diabetic participants, but that source does not test this casserole preparation.",
+            "giMatchEvidence": "R1B source review: no GI binding retained for the casserole preparation; plain pasta/category averages do not establish the GI of pasta baked in egg and dairy."
           },
           {
-            "name": "raejuustoa",
+            "name": "7 % naudan jauhelihaa",
+            "grams": 600,
+            "fineliRecordId": "fineli-11562-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 600 g. Fineli ground beef record used only for available-carbohydrate screening; its 17% fat composition is not used as a full macro match for this 7% product.",
+            "excludedReason": "No carbohydrate-bearing seasoning/sauce is part of the beef ingredient; composition source documents zero available carbohydrate.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Fineli ground beef composition records 0 g available carbohydrate per 100 g; 7% vs 17% fat changes other macros, not carbohydrate."
+          },
+          {
+            "name": "keltasipulia",
+            "grams": 70,
+            "fineliRecordId": "fineli-335-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 70 g yellow onion; Fineli #335, available carbohydrate 4.8 g/100 g.",
+            "excludedReason": "Below 1 g available carbohydrate per serving; counted against the unchanged cumulative 2 g editorial tolerance.",
+            "estimatedAvailableCarbohydratePerServingG": 0.42,
+            "negligibleAssumption": "70 g × 4.8 g/100 g ÷ 8 servings = 0.42 g/serving; Fineli #335; no GI assigned."
+          },
+          {
+            "name": "öljyä",
+            "grams": 13.5,
+            "fineliRecordId": "fineli-541-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 13.5 g oil; Fineli average cooking oil #541.",
+            "excludedReason": "Source-documented zero available carbohydrate.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Fineli #541 records 0 g available carbohydrate."
+          },
+          {
+            "name": "raejuustoa, rasvaa 2–5 %",
             "grams": 500,
             "fineliRecordId": "fineli-649-2026-10-24",
             "giRecordId": "dairy-category-mean-gi-35",
-            "massEvidence": "Fineli #649 cottage cheese; recipe-listed 500 g.",
-            "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #649 cottage cheese; recipe-listed 500 g."
+            "massEvidence": "Recipe-listed 500 g; Fineli #649, cottage cheese 2–5% fat.",
+            "giMatchEvidence": "Existing supplementary dairy category mean GI 35 retained under the project’s category-mean policy; LOW confidence. R1B does not broaden the Dairy source audit."
           },
           {
-            "name": "maitoa",
+            "name": "kananmunaa",
+            "grams": 330,
+            "fineliRecordId": "fineli-858-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Six medium eggs × 55 g edible portion each; Fineli #858.",
+            "excludedReason": "Available carbohydrate contribution is below 1 g per serving and counted against the unchanged cumulative tolerance.",
+            "estimatedAvailableCarbohydratePerServingG": 0.12375,
+            "negligibleAssumption": "Fineli #858 has 0.3 g available carbohydrate/100 g; 330 g ÷ 8 servings = 0.12375 g/serving."
+          },
+          {
+            "name": "kevytmaitoa, rasvaa 1,5 %",
             "grams": 200,
             "fineliRecordId": "fineli-675-2026-10-24",
             "giRecordId": "dairy-category-mean-gi-35",
-            "massEvidence": "Fineli #675; 2 dl converted using the food-specific 100 g/dl measure.",
-            "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #675; 2 dl converted using the food-specific 100 g/dl measure."
+            "massEvidence": "Recipe-listed 200 g; Fineli #675 light milk, 1.5% fat.",
+            "giMatchEvidence": "Existing supplementary dairy category mean GI 35 retained under the project’s category-mean policy; LOW confidence. R1B does not broaden the Dairy source audit."
+          },
+          {
+            "name": "ruokakermaa, rasvaa 15 %",
+            "grams": 200,
+            "fineliRecordId": "fineli-29065-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 200 g; Fineli #29065 cooking cream 15%, 2.7 g available carbohydrate/100 g.",
+            "excludedReason": "Below 1 g available carbohydrate per serving; counted against the unchanged cumulative 2 g editorial tolerance.",
+            "estimatedAvailableCarbohydratePerServingG": 0.675,
+            "negligibleAssumption": "200 g × 2.7 g/100 g ÷ 8 servings = 0.675 g/serving; Fineli #29065; no GI assigned."
+          },
+          {
+            "name": "raastettua emmentaljuustoa (munaseokseen)",
+            "grams": 200,
+            "fineliRecordId": "fineli-642-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 200 g into the egg mixture; Fineli #642 Emmental composition.",
+            "excludedReason": "Source-documented zero available carbohydrate.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Fineli #642 Emmental records 0 g available carbohydrate."
+          },
+          {
+            "name": "raastettua emmentaljuustoa (pinnalle)",
+            "grams": 100,
+            "fineliRecordId": "fineli-642-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 100 g as topping; Fineli #642 Emmental composition.",
+            "excludedReason": "Source-documented zero available carbohydrate.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Fineli #642 Emmental records 0 g available carbohydrate."
+          },
+          {
+            "name": "valkosipulijauhetta",
+            "grams": 3,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 3 g; no suitable garlic-powder composition record is present in the reviewed project food catalog.",
+            "excludedReason": "No GI or exact project composition source; use only the physical ingredient-mass ceiling for the omission check.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.375,
+            "upperBoundEvidence": "The maximum available carbohydrate cannot exceed the full 3 g ingredient mass; 3 g ÷ 8 servings = 0.375 g/serving."
+          },
+          {
+            "name": "mustapippuria",
+            "grams": 1,
+            "fineliRecordId": "fineli-11177-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 1 g black pepper; Fineli #11177 composition. Omission bound uses the full ingredient mass because the source fibre field is missing.",
+            "excludedReason": "Conservative physical mass ceiling is below 1 g/serving and counted toward the cumulative tolerance.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.125,
+            "upperBoundEvidence": "The maximum available carbohydrate cannot exceed the full 1 g ingredient mass; 1 g ÷ 8 servings = 0.125 g/serving."
+          },
+          {
+            "name": "paprikajauhetta",
+            "grams": 2,
+            "fineliRecordId": "afcd-F006316-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 2 g dry paprika powder; AFCD F006316, available carbohydrate 19.1 g/100 g.",
+            "excludedReason": "Source-backed available carbohydrate is below 1 g/serving and counted toward the cumulative tolerance.",
+            "estimatedAvailableCarbohydratePerServingG": 0.04775,
+            "negligibleAssumption": "2 g × 19.1 g/100 g ÷ 8 servings = 0.04775 g/serving; AFCD F006316."
+          },
+          {
+            "name": "suolaa",
+            "grams": 6,
+            "fineliRecordId": "fineli-30-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 6 g salt; Fineli #30 iodized table salt.",
+            "excludedReason": "Source-documented zero available carbohydrate.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Fineli #30 records 0 g available carbohydrate."
           }
         ]
       },
-      "glycemicLoadPerServing": 18.23,
-      "omittedAvailableCarbohydratePerServingG": 0,
-      "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 1.7665,
+      "omittedAvailableCarbohydrateUpperBoundPerServingG": 0.5,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 18.23,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
-      "missingFoodAndGIRecords": [],
-      "nextActions": [],
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "jauheliha-makaronilaatikko: kuivattua makaronia: R1B source review: no GI binding retained for the casserole preparation; plain pasta/category averages do not establish the GI of pasta baked in egg and dairy.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "jauheliha-makaronilaatikko: kuivattua makaronia: R1B source review: no GI binding retained for the casserole preparation; plain pasta/category averages do not establish the GI of pasta baked in egg and dairy.",
+      "missingFoodAndGIRecords": [
+        {
+          "name": "kuivattua makaronia",
+          "grams": 400,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-117-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 33.2,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "R1B source review: no GI binding retained for the casserole preparation; plain pasta/category averages do not establish the GI of pasta baked in egg and dairy."
+          ]
+        },
+        {
+          "name": "7 % naudan jauhelihaa",
+          "grams": 600,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-11562-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": "No carbohydrate-bearing seasoning/sauce is part of the beef ingredient; composition source documents zero available carbohydrate.",
+          "issues": [
+            "Source-documented zero available carbohydrate: Fineli ground beef composition records 0 g available carbohydrate per 100 g; 7% vs 17% fat changes other macros, not carbohydrate."
+          ]
+        },
+        {
+          "name": "keltasipulia",
+          "grams": 70,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.42,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": "Below 1 g available carbohydrate per serving; counted against the unchanged cumulative 2 g editorial tolerance.",
+          "issues": [
+            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: 70 g × 4.8 g/100 g ÷ 8 servings = 0.42 g/serving; Fineli #335; no GI assigned."
+          ]
+        },
+        {
+          "name": "öljyä",
+          "grams": 13.5,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-541-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": "Source-documented zero available carbohydrate.",
+          "issues": [
+            "Source-documented zero available carbohydrate: Fineli #541 records 0 g available carbohydrate."
+          ]
+        },
+        {
+          "name": "kananmunaa",
+          "grams": 330,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.12375,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": "Available carbohydrate contribution is below 1 g per serving and counted against the unchanged cumulative tolerance.",
+          "issues": [
+            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Fineli #858 has 0.3 g available carbohydrate/100 g; 330 g ÷ 8 servings = 0.12375 g/serving."
+          ]
+        },
+        {
+          "name": "ruokakermaa, rasvaa 15 %",
+          "grams": 200,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-29065-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.675,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": "Below 1 g available carbohydrate per serving; counted against the unchanged cumulative 2 g editorial tolerance.",
+          "issues": [
+            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: 200 g × 2.7 g/100 g ÷ 8 servings = 0.675 g/serving; Fineli #29065; no GI assigned."
+          ]
+        },
+        {
+          "name": "raastettua emmentaljuustoa (munaseokseen)",
+          "grams": 200,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-642-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": "Source-documented zero available carbohydrate.",
+          "issues": [
+            "Source-documented zero available carbohydrate: Fineli #642 Emmental records 0 g available carbohydrate."
+          ]
+        },
+        {
+          "name": "raastettua emmentaljuustoa (pinnalle)",
+          "grams": 100,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-642-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": "Source-documented zero available carbohydrate.",
+          "issues": [
+            "Source-documented zero available carbohydrate: Fineli #642 Emmental records 0 g available carbohydrate."
+          ]
+        },
+        {
+          "name": "valkosipulijauhetta",
+          "grams": 3,
+          "recipeQuantity": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": 0.375,
+          "excludedReason": "No GI or exact project composition source; use only the physical ingredient-mass ceiling for the omission check.",
+          "issues": [
+            "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: The maximum available carbohydrate cannot exceed the full 3 g ingredient mass; 3 g ÷ 8 servings = 0.375 g/serving."
+          ]
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 1,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-11177-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": 0.125,
+          "excludedReason": "Conservative physical mass ceiling is below 1 g/serving and counted toward the cumulative tolerance.",
+          "issues": [
+            "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: The maximum available carbohydrate cannot exceed the full 1 g ingredient mass; 1 g ÷ 8 servings = 0.125 g/serving."
+          ]
+        },
+        {
+          "name": "paprikajauhetta",
+          "grams": 2,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F006316-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.04775,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": "Source-backed available carbohydrate is below 1 g/serving and counted toward the cumulative tolerance.",
+          "issues": [
+            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: 2 g × 19.1 g/100 g ÷ 8 servings = 0.04775 g/serving; AFCD F006316."
+          ]
+        },
+        {
+          "name": "suolaa",
+          "grams": 6,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-30-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": "Source-documented zero available carbohydrate.",
+          "issues": [
+            "Source-documented zero available carbohydrate: Fineli #30 records 0 g available carbohydrate."
+          ]
+        }
+      ],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "jauheliha-makaronilaatikko: kuivattua makaronia: R1B source review: no GI binding retained for the casserole preparation; plain pasta/category averages do not establish the GI of pasta baked in egg and dairy."
+      ],
       "removedBlockers": []
     },
     {
@@ -15755,8 +16034,8 @@
     {
       "recipeId": "koshari",
       "recipeVersion": "76c483b7b585e8076cec99a4fee483525cd4f27801d9db046d0b9b13d0aab5fb",
-      "calculationInputVersion": "3198226656666edb03be768b3c0317cb50ebd556e6bd7d473983cc656e8baf38",
-      "calculationEvidenceVersion": "52297f6e046bfe056f63271ce245c5bb4036d18f98abaf9472b53e1d6d2fb626",
+      "calculationInputVersion": "3c3a9f6e342aa9f9d5ab6fe37e9a647c111c33fada305b11137f0b97992498e7",
+      "calculationEvidenceVersion": "bb4d1e6ef80481f9903066a351c71cd6d1460af82a03c5d3350c9dcaf6ced239",
       "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
@@ -15838,31 +16117,25 @@
             "name": "ruskeita linssejä",
             "grams": 200,
             "fineliRecordId": "fineli-399-2026-10-24",
-            "giRecordId": "legumes-category-mean-gi-34",
+            "giRecordId": null,
             "massEvidence": "ruskeita linssejä maps to fineli-release-20 record 399; state: dry green/brown lentils.",
-            "giMatchEvidence": "Ingredient-category match: Legumes, category mean; Broad category mean; substantial uncertainty when applied to a specific cooked bean.",
-            "foodKey": "legume",
-            "preparationKey": "legume-category"
+            "giMatchEvidence": "R1B: the recipe uses dry brown/green lentils boiled 20–25 minutes; the broad legume category mean does not establish this cultivar and preparation. Published human lentil trials show substantial variety and processing effects; no preparation-matched glucose-scale source is bound."
           },
           {
             "name": "riisiä",
             "grams": 200,
             "fineliRecordId": "fineli-11521-2026-10-24",
-            "giRecordId": "rice-category-mean-gi-67",
+            "giRecordId": null,
             "massEvidence": "riisiä maps to fineli-release-20 record 11521; state: uncooked long-grain rice.",
-            "giMatchEvidence": "Ingredient-category match: Rice category mean; rice category mean; rice flour is a broad grain-form analogue",
-            "foodKey": "rice-category-mean",
-            "preparationKey": "category-mean"
+            "giMatchEvidence": "R1B: rice variety is unspecified and no preparation-matched rice GI is established for this recipe; the generic rice category mean is not retained as an exact food GI."
           },
           {
             "name": "pientä makaronia",
             "grams": 150,
             "fineliRecordId": "fineli-117-2026-10-24",
-            "giRecordId": "pasta-category-mean-gi-52",
+            "giRecordId": null,
             "massEvidence": "pientä makaronia maps to fineli-release-20 record 117; state: dry wheat macaroni.",
-            "giMatchEvidence": "Ingredient-category match: Pasta category mean; pasta category mean; product and cooking variation remains",
-            "foodKey": "pasta-category-mean",
-            "preparationKey": "category-mean"
+            "giMatchEvidence": "R1B: pasta category mean 52 and the 1986 human macaroni study do not establish a glucose-scale GI for this unspecified small pasta boiled by package instructions in this mixed koshari serving."
           },
           {
             "name": "sipulia",
@@ -15882,12 +16155,10 @@
           {
             "name": "maissitärkkelystä",
             "grams": 16,
-            "fineliRecordId": "fineli-162-2026-10-24",
-            "giRecordId": "potatoes-category-mean-gi-71",
-            "massEvidence": "Ingredient-specific tablespoon mass: 8 g/rkl for maissitärkkelystä.",
-            "giMatchEvidence": "Ingredient-category match: Potatoes and potato products category mean; potato category mean; this is not preparation-specific",
-            "foodKey": "potatoes-category-mean",
-            "preparationKey": "category-mean"
+            "fineliRecordId": "fineli-27-2026-10-25",
+            "giRecordId": null,
+            "massEvidence": "Fineli Release 20 #27 corn starch; recipe-listed 2 tbsp × 8 g/tbsp = 16 g. Same food identity and mass as the original recipe; potato starch is not a valid composition or GI substitute.",
+            "giMatchEvidence": "R1B: no preparation-matched human GI source established for corn starch used as an onion coating and fried; no potato GI binding retained."
           },
           {
             "name": "oliiviöljyä",
@@ -15900,11 +16171,9 @@
             "name": "tomaattimurskaa",
             "grams": 400,
             "fineliRecordId": "fineli-398-2026-10-24",
-            "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+            "giRecordId": null,
             "massEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato.",
-            "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
-            "foodKey": "tomato",
-            "preparationKey": "whole-raw"
+            "giMatchEvidence": "R1B: the bound raw whole-tomato GI does not match canned crushed tomato simmered for 15 minutes; no cooked sauce GI source is established."
           },
           {
             "name": "valkosipulinkynttä",
@@ -15912,7 +16181,7 @@
             "fineliRecordId": "afcd-F004193-2026-10-24",
             "giRecordId": null,
             "massEvidence": "Fineli Release 20 #393 KPL_M = 3.5 g edible garlic clove; original recipe clove count × 3.5 g. AFCD F004193 supplies raw ingredient available carbohydrate; total starting ingredient retained in the batch.",
-            "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+            "giMatchEvidence": "R1B: no preparation-matched human GI binding; available carbohydrate is source-mapped and below 1 g per serving.",
             "foodKey": "garlic",
             "preparationKey": "recipe-specific-preparation-no-approved-gi",
             "recipeQuantity": {
@@ -15932,11 +16201,9 @@
             "name": "juustokuminaa",
             "grams": 2,
             "fineliRecordId": "afcd-F003327-2026-10-24",
-            "giRecordId": "dairy-category-mean-gi-35",
+            "giRecordId": null,
             "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for juustokuminaa.",
-            "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
-            "foodKey": "dairy",
-            "preparationKey": "unflavoured-dairy"
+            "giMatchEvidence": "R1B: the prior dairy-category GI assignment is a food-family mismatch; the exact 2 g teaspoon contributes only 0.1685 g available carbohydrate per serving and is omitted under the existing tolerance."
           },
           {
             "name": "suolaa",
@@ -15952,16 +16219,14 @@
             "name": "sitruunamehua",
             "grams": 15,
             "fineliRecordId": "afcd-F004726-2026-10-24",
-            "giRecordId": "fruit-category-mean-gi-51",
+            "giRecordId": null,
             "massEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for sitruunamehua.",
-            "giMatchEvidence": "Ingredient-category match: Fruits and fruit products category mean; fruit category mean; used only as a broad tamarind-paste analogue",
-            "foodKey": "fruit-category-mean",
-            "preparationKey": "category-mean"
+            "giMatchEvidence": "R1B: the broad fruit-category mean is not a preparation-specific lemon-juice GI; this measured 15 g portion contributes 0.0675 g available carbohydrate per serving and is omitted under the existing tolerance."
           }
         ]
       },
       "glycemicLoadPerServing": null,
-      "omittedAvailableCarbohydratePerServingG": 0.216,
+      "omittedAvailableCarbohydratePerServingG": 0.452,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 50.57,
@@ -15972,7 +16237,32 @@
       "blockers": [
         {
           "category": "OTHER",
+          "message": "koshari: ruskeita linssejä: R1B: the recipe uses dry brown/green lentils boiled 20–25 minutes; the broad legume category mean does not establish this cultivar and preparation. Published human lentil trials show substantial variety and processing effects; no preparation-matched glucose-scale source is bound.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
+          "message": "koshari: riisiä: R1B: rice variety is unspecified and no preparation-matched rice GI is established for this recipe; the generic rice category mean is not retained as an exact food GI.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
+          "message": "koshari: pientä makaronia: R1B: pasta category mean 52 and the 1986 human macaroni study do not establish a glucose-scale GI for this unspecified small pasta boiled by package instructions in this mixed koshari serving.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
           "message": "koshari: sipulia: AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
+          "message": "koshari: maissitärkkelystä: R1B: no preparation-matched human GI source established for corn starch used as an onion coating and fried; no potato GI binding retained.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        },
+        {
+          "category": "OTHER",
+          "message": "koshari: tomaattimurskaa: R1B: the bound raw whole-tomato GI does not match canned crushed tomato simmered for 15 minutes; no cooked sauce GI source is established.",
           "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
         }
       ],
@@ -15980,8 +16270,47 @@
         "OTHER"
       ],
       "primaryBlockingCategory": "OTHER",
-      "primaryBlockingReason": "koshari: sipulia: AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+      "primaryBlockingReason": "koshari: ruskeita linssejä: R1B: the recipe uses dry brown/green lentils boiled 20–25 minutes; the broad legume category mean does not establish this cultivar and preparation. Published human lentil trials show substantial variety and processing effects; no preparation-matched glucose-scale source is bound.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "ruskeita linssejä",
+          "grams": 200,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-399-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 22.85,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "R1B: the recipe uses dry brown/green lentils boiled 20–25 minutes; the broad legume category mean does not establish this cultivar and preparation. Published human lentil trials show substantial variety and processing effects; no preparation-matched glucose-scale source is bound."
+          ]
+        },
+        {
+          "name": "riisiä",
+          "grams": 200,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-11521-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 39.5,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "R1B: rice variety is unspecified and no preparation-matched rice GI is established for this recipe; the generic rice category mean is not retained as an exact food GI."
+          ]
+        },
+        {
+          "name": "pientä makaronia",
+          "grams": 150,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-117-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 24.9,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "R1B: pasta category mean 52 and the 1986 human macaroni study do not establish a glucose-scale GI for this unspecified small pasta boiled by package instructions in this mixed koshari serving."
+          ]
+        },
         {
           "name": "sipulia",
           "grams": 110,
@@ -16000,6 +16329,32 @@
           ]
         },
         {
+          "name": "maissitärkkelystä",
+          "grams": 16,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-27-2026-10-25",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 3.44,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "R1B: no preparation-matched human GI source established for corn starch used as an onion coating and fried; no potato GI binding retained."
+          ]
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 400,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-398-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 3.45,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "R1B: the bound raw whole-tomato GI does not match canned crushed tomato simmered for 15 minutes; no cooked sauce GI source is established."
+          ]
+        },
+        {
           "name": "valkosipulinkynttä",
           "grams": 7,
           "recipeQuantity": {
@@ -16013,7 +16368,7 @@
           "availableCarbohydrateUpperBoundPerServingG": null,
           "excludedReason": null,
           "issues": [
-            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.178 g available carbohydrate): AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero."
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.178 g available carbohydrate): R1B: no preparation-matched human GI binding; available carbohydrate is source-mapped and below 1 g per serving."
           ]
         },
         {
@@ -16030,6 +16385,19 @@
           ]
         },
         {
+          "name": "juustokuminaa",
+          "grams": 2,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F003327-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.1685,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.169 g available carbohydrate): R1B: the prior dairy-category GI assignment is a food-family mismatch; the exact 2 g teaspoon contributes only 0.1685 g available carbohydrate per serving and is omitted under the existing tolerance."
+          ]
+        },
+        {
           "name": "suolaa",
           "grams": null,
           "recipeQuantity": null,
@@ -16040,6 +16408,19 @@
           "excludedReason": "Water and salt have no material macro contribution.",
           "issues": [
             "Source-documented zero available carbohydrate: Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+          ]
+        },
+        {
+          "name": "sitruunamehua",
+          "grams": 15,
+          "recipeQuantity": null,
+          "fineliRecordId": "afcd-F004726-2026-10-24",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.0675,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.068 g available carbohydrate): R1B: the broad fruit-category mean is not a preparation-specific lemon-juice GI; this measured 15 g portion contributes 0.0675 g available carbohydrate per serving and is omitted under the existing tolerance."
           ]
         }
       ],
@@ -16052,7 +16433,12 @@
       "newlyBlocked": true,
       "stillIncomplete": false,
       "changedBlockers": [
-        "koshari: sipulia: AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero."
+        "koshari: ruskeita linssejä: R1B: the recipe uses dry brown/green lentils boiled 20–25 minutes; the broad legume category mean does not establish this cultivar and preparation. Published human lentil trials show substantial variety and processing effects; no preparation-matched glucose-scale source is bound.",
+        "koshari: riisiä: R1B: rice variety is unspecified and no preparation-matched rice GI is established for this recipe; the generic rice category mean is not retained as an exact food GI.",
+        "koshari: pientä makaronia: R1B: pasta category mean 52 and the 1986 human macaroni study do not establish a glucose-scale GI for this unspecified small pasta boiled by package instructions in this mixed koshari serving.",
+        "koshari: sipulia: AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+        "koshari: maissitärkkelystä: R1B: no preparation-matched human GI source established for corn starch used as an onion coating and fried; no potato GI binding retained.",
+        "koshari: tomaattimurskaa: R1B: the bound raw whole-tomato GI does not match canned crushed tomato simmered for 15 minutes; no cooked sauce GI source is established."
       ],
       "removedBlockers": []
     },
@@ -39590,9 +39976,9 @@
     {
       "recipeId": "yangzhou-paistettu-riisi",
       "recipeVersion": "cec3b27bf55283684ff2f5aeb3be226fd411bbbba9731477132533d25483a1c6",
-      "calculationInputVersion": "b0d6b2fcc208738407106cc6b18a9f6b0fe4cfe7176b451b910d37b70376b5b4",
-      "calculationEvidenceVersion": "14154a2c2d1967560765bca7e4472e58fb9c0e6c1d911181e42de902a8f8e6dd",
-      "status": "CALCULATED",
+      "calculationInputVersion": "e8c948d17ca6a955f0aa533873f69afa6ed7137a42cb92bbd847e3e8aa143168",
+      "calculationEvidenceVersion": "b9b38a2b565012da7c0da85aeab09f98e1d7bf41f4c03f70bde003f3479bb4cf",
+      "status": "INSUFFICIENT SOURCE DATA",
       "nutritionStatus": "ESTIMATE WITH EVIDENCE",
       "currentRecipeStructure": {
         "sourcePath": "reseptit/paaruoat/yangzhou-paistettu-riisi.md",
@@ -39658,9 +40044,9 @@
             "name": "keitettyä kylmää riisiä",
             "grams": 600,
             "fineliRecordId": "fineli-30346-release-20",
-            "giRecordId": "rice-category-mean-gi-67",
+            "giRecordId": null,
             "massEvidence": "Cooked long-grain white rice; Fineli record 30346.",
-            "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+            "giMatchEvidence": "R1B: no recipe-specific GI. The recipe does not identify cultivar; it rapidly cools cooked rice overnight and reheats it in a wok. Human studies show variety/cooking/storage/reheating alter postprandial response but do not establish this recipe’s GI."
           },
           {
             "name": "kananmunaa",
@@ -39724,36 +40110,65 @@
             "name": "kevätsipulia",
             "grams": 30,
             "fineliRecordId": "afcd-F006250-release-3",
-            "giRecordId": "vegetables-category-mean-gi-66",
-            "massEvidence": "AFCD serving mass 15 g per spring onion; 2 pieces converted to 30 g. The 100 g-per-piece assumption in the existing macro calculation was rejected as implausible.",
-            "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+            "giRecordId": null,
+            "massEvidence": "AFCD F006250 serving mass is 15 g per raw spring onion; 2 pieces = 30 g. Available carbohydrate 4.6 g/100 g.",
+            "giMatchEvidence": "R1B: no GI bound; contribution is within the existing sub-1 g per-serving omission rule.",
+            "recipeQuantity": {
+              "amount": 2,
+              "unit": "kpl",
+              "massGrams": 30
+            },
+            "excludedReason": "Source-mapped contribution is below 1 g per serving and counted toward the unchanged cumulative tolerance.",
+            "estimatedAvailableCarbohydratePerServingG": 0.345,
+            "negligibleAssumption": "30 g × 4.6 g/100 g ÷ 4 servings = 0.345 g/serving; AFCD F006250; no preparation-matched GI needed under the existing cutoff."
           },
           {
             "name": "suolaa",
             "grams": null,
-            "fineliRecordId": null,
+            "fineliRecordId": "fineli-30-2026-10-24",
             "giRecordId": null,
-            "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-            "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
-            "estimatedAvailableCarbohydratePerServingG": 0.25,
-            "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+            "massEvidence": "Recipe-listed 0.5 tsp salt; available carbohydrate is zero irrespective of exact teaspoon conversion.",
+            "excludedReason": "Source-documented zero available carbohydrate.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Fineli #30 records zero available carbohydrate for salt; the recipe quantity is 0.5 tsp."
           }
         ]
       },
-      "glycemicLoadPerServing": 24.71,
-      "omittedAvailableCarbohydratePerServingG": 1.20225,
+      "glycemicLoadPerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 1.29725,
       "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
       "previousApprovedStatus": "CALCULATED",
       "previousApprovedGlycemicLoadPerServing": 24.71,
       "newlyAdded": false,
       "recipeVersionChanged": false,
-      "calculationInputVersionChanged": false,
-      "calculationEvidenceVersionChanged": false,
-      "blockers": [],
-      "blockingCategories": [],
-      "primaryBlockingCategory": null,
-      "primaryBlockingReason": null,
+      "calculationInputVersionChanged": true,
+      "calculationEvidenceVersionChanged": true,
+      "blockers": [
+        {
+          "category": "OTHER",
+          "message": "yangzhou-paistettu-riisi: keitettyä kylmää riisiä: R1B: no recipe-specific GI. The recipe does not identify cultivar; it rapidly cools cooked rice overnight and reheats it in a wok. Human studies show variety/cooking/storage/reheating alter postprandial response but do not establish this recipe’s GI.",
+          "nextAction": "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+        }
+      ],
+      "blockingCategories": [
+        "OTHER"
+      ],
+      "primaryBlockingCategory": "OTHER",
+      "primaryBlockingReason": "yangzhou-paistettu-riisi: keitettyä kylmää riisiä: R1B: no recipe-specific GI. The recipe does not identify cultivar; it rapidly cools cooked rice overnight and reheats it in a wok. Human studies show variety/cooking/storage/reheating alter postprandial response but do not establish this recipe’s GI.",
       "missingFoodAndGIRecords": [
+        {
+          "name": "keitettyä kylmää riisiä",
+          "grams": 600,
+          "recipeQuantity": null,
+          "fineliRecordId": "fineli-30346-release-20",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 35.3415,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": null,
+          "issues": [
+            "R1B: no recipe-specific GI. The recipe does not identify cultivar; it rapidly cools cooked rice overnight and reheats it in a wok. Human studies show variety/cooking/storage/reheating alter postprandial response but do not establish this recipe’s GI."
+          ]
+        },
         {
           "name": "kananmunaa",
           "grams": 110,
@@ -39820,26 +40235,47 @@
           ]
         },
         {
+          "name": "kevätsipulia",
+          "grams": 30,
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": 30
+          },
+          "fineliRecordId": "afcd-F006250-release-3",
+          "giRecordId": null,
+          "availableCarbohydratePerServingG": 0.345,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "excludedReason": "Source-mapped contribution is below 1 g per serving and counted toward the unchanged cumulative tolerance.",
+          "issues": [
+            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: 30 g × 4.6 g/100 g ÷ 4 servings = 0.345 g/serving; AFCD F006250; no preparation-matched GI needed under the existing cutoff."
+          ]
+        },
+        {
           "name": "suolaa",
           "grams": null,
           "recipeQuantity": null,
-          "fineliRecordId": null,
+          "fineliRecordId": "fineli-30-2026-10-24",
           "giRecordId": null,
-          "availableCarbohydratePerServingG": 0.25,
+          "availableCarbohydratePerServingG": 0,
           "availableCarbohydrateUpperBoundPerServingG": null,
-          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
+          "excludedReason": "Source-documented zero available carbohydrate.",
           "issues": [
-            "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+            "Source-documented zero available carbohydrate: Fineli #30 records zero available carbohydrate for salt; the recipe quantity is 0.5 tsp."
           ]
         }
       ],
-      "nextActions": [],
+      "nextActions": [
+        "Selvitä estoviestin lähde ja dokumentoi ratkaisu."
+      ],
       "suggestedNextWorkstream": "MANUAL_TRIAGE",
-      "statusChanged": false,
+      "statusChanged": true,
       "newlyCalculated": false,
-      "newlyBlocked": false,
+      "newlyBlocked": true,
       "stillIncomplete": false,
-      "changedBlockers": [],
+      "changedBlockers": [
+        "yangzhou-paistettu-riisi: keitettyä kylmää riisiä: R1B: no recipe-specific GI. The recipe does not identify cultivar; it rapidly cools cooked rice overnight and reheats it in a wok. Human studies show variety/cooking/storage/reheating alter postprandial response but do not establish this recipe’s GI."
+      ],
       "removedBlockers": []
     },
     {
