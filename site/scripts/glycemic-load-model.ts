@@ -220,20 +220,24 @@ export function calculateGlycemicLoad(
       : [];
 
     if (ingredient.excludedReason) {
+      // An explicit rejected source cannot be laundered through an omission override.
+      const referenceOnly = giById.get(ingredient.giRecordId ?? "")?.calculationUse === "REFERENCE_ONLY";
       const estimatedCarbs = ingredient.estimatedAvailableCarbohydratePerServingG;
       const upperBound = ingredient.availableCarbohydrateUpperBoundPerServingG;
       const validUpperBound = upperBound === undefined || (valid(upperBound) && Boolean(ingredient.upperBoundEvidence));
-      const documentedZero = valid(estimatedCarbs) && estimatedCarbs === 0 && Boolean(ingredient.negligibleAssumption);
+      const documentedZero = !referenceOnly && valid(estimatedCarbs) && estimatedCarbs === 0 && Boolean(ingredient.negligibleAssumption);
       const smallEstimate = valid(estimatedCarbs) && estimatedCarbs > 0 && estimatedCarbs < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G && Boolean(ingredient.negligibleAssumption);
       const smallUpperBound = upperBound !== undefined && validUpperBound && upperBound > 0 && upperBound < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G;
-      const smallOmission = smallEstimate || smallUpperBound;
+      const smallOmission = !referenceOnly && (smallEstimate || smallUpperBound);
       if (smallOmission) {
         const omittedAmount = smallUpperBound ? upperBound! : estimatedCarbs!;
         omittedAvailableCarbohydratePerServingG += omittedAmount;
         if (smallUpperBound) omittedAvailableCarbohydrateUpperBoundPerServingG += upperBound!;
         confidence = "LOW";
       }
-      const issue = documentedZero
+      const issue = referenceOnly
+        ? "GI record is reference-only; an explicit binding cannot qualify for an omission override."
+        : documentedZero
         ? `Source-documented zero available carbohydrate: ${ingredient.negligibleAssumption}`
         : smallUpperBound ? `Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: ${ingredient.upperBoundEvidence}`
           : smallEstimate ? `Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: ${ingredient.negligibleAssumption}`
@@ -246,8 +250,8 @@ export function calculateGlycemicLoad(
         ...(ingredient.recipeQuantity ? { recipeQuantity: ingredient.recipeQuantity } : {}),
         fineliRecordId: ingredient.fineliRecordId,
         availableCarbohydratePer100g: null,
-        availableCarbohydratePerServingG: documentedZero || smallEstimate ? estimatedCarbs ?? null : null,
-        availableCarbohydrateUpperBoundPerServingG: smallUpperBound ? upperBound! : null,
+        availableCarbohydratePerServingG: !referenceOnly && (documentedZero || smallEstimate) ? estimatedCarbs ?? null : null,
+        availableCarbohydrateUpperBoundPerServingG: !referenceOnly && smallUpperBound ? upperBound! : null,
         availableCarbohydratePerServingRangeG: null,
         gi: null,
         giRecordId: ingredient.giRecordId,

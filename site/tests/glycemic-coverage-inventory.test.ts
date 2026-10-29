@@ -137,8 +137,8 @@ test("batch 2A preserves its starting overlap audit and only accepts reviewed cu
   assert.equal(current.structuralBindingAnalysis.withOtherBlockersAtReviewStart, 51);
   assert.equal(current.structuralBindingAnalysis.potentiallyResolvableByBindingOnlyAtReviewStart, 0);
   assert.equal(current.structuralBindingAnalysis.reviewedInBatch2A, 10);
-  assert.equal(current.structuralBindingAnalysis.calculatedAfterContentReview, 3);
-  assert.equal(current.structuralBindingAnalysis.reviewedStillIncomplete, 7);
+  assert.equal(current.structuralBindingAnalysis.calculatedAfterContentReview, 1);
+  assert.equal(current.structuralBindingAnalysis.reviewedStillIncomplete, 9);
   assert.equal(current.structuralBindingAnalysis.outOfScope, 41);
   assert.equal(current.structuralBindingAnalysis.rows.filter((row) => row.bindingOnlyWouldResolveAtStart).length, 0);
   const reviewedIds = [
@@ -382,10 +382,11 @@ test("current inventory preserves historical values except the documented coconu
   const onionReview = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-onion-source-review.json"), "utf8"));
   const pepperReview = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-red-pepper-source-review.json"), "utf8"));
   const bakeryReview = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-bakery-four-source-review.json"), "utf8"));
+  const finalBakeryReview = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-bakery-final-source-review.json"), "utf8"));
   const almondReview = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-almond-source-review.json"), "utf8"));
   const newlyBlockedIds = baseline.recipes.filter((prior) => prior.status === "CALCULATED"
     && current.recipes.find((row) => row.recipeId === prior.recipeId)?.status !== "CALCULATED").map((row) => row.recipeId);
-  assert.deepEqual([...newlyBlockedIds].sort(), ["keltainen-kanacurry-vhh", ...onionReview.withdrawnRecipeIds, ...pepperReview.withdrawnRecipeIds, ...almondReview.withdrawnRecipeIds, ...bakeryReview.withdrawnRecipeIds.filter((id: string) => baseline.recipes.some(prior => prior.recipeId === id && prior.status === "CALCULATED"))].sort());
+  assert.deepEqual([...newlyBlockedIds].sort(), ["keltainen-kanacurry-vhh", ...onionReview.withdrawnRecipeIds, ...pepperReview.withdrawnRecipeIds, ...almondReview.withdrawnRecipeIds, ...finalBakeryReview.withdrawnRecipeIds, ...bakeryReview.withdrawnRecipeIds.filter((id: string) => baseline.recipes.some(prior => prior.recipeId === id && prior.status === "CALCULATED"))].sort());
   assert.equal(current.currentSummary.newlyBlocked, newlyBlockedIds.length);
   assert.deepEqual([current.currentSummary.giTierCounts.STRONG, current.currentSummary.giTierCounts.SUPPLEMENTARY], [6, 39]);
   assert.equal(current.currentSummary.newStructureMismatches, 0);
@@ -398,7 +399,7 @@ test("current inventory preserves historical values except the documented coconu
   for (const [id, value] of previousResults) {
     const row = current.recipes.find((item) => item.recipeId === id);
     assert.ok(row, `${id} remains in the current inventory`);
-    const corrected = [...bakeryReview.affectedRecipes, ...almondReview.affectedRecipes, ...pepperReview.affectedRecipes, ...onionReview.affectedRecipes].find((item: { recipeId: string }) => item.recipeId === id);
+    const corrected = [...finalBakeryReview.affectedRecipes, ...bakeryReview.affectedRecipes, ...almondReview.affectedRecipes, ...pepperReview.affectedRecipes, ...onionReview.affectedRecipes].find((item: { recipeId: string }) => item.recipeId === id);
     if (corrected) {
       assert.equal(row.status, corrected.after.status);
       assert.equal(row.glycemicLoadPerServing, corrected.after.glycemicLoadPerServing);

@@ -657,11 +657,12 @@
         "year": 2021,
         "published": true,
         "iso26642Confirmed": false,
-        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+        "qualityEvidence": "AJO 1.9: historical Table 1 mean of finished bakery products (72 entries), not an ingredient-specific human measurement. All 45 remaining bindings in 41 recipes were individually reviewed; none provides food/preparation equivalence. Retain the published category statistic as reference only. See glycemic-bakery-final-source-review.md."
       },
-      "note": "bakery products category mean; flour and semolina are broad grain-product analogues",
+      "note": "Historical bakery-products category mean GI 58 preserved; not a GI source for flour, semolina, starch, flakes, couscous, bulgur, raw filo, noodles or cocoa. No active ingredient-calculation use is approved.",
       "matchKind": "CATEGORY_MEAN",
-      "confidence": "LOW"
+      "confidence": "LOW",
+      "calculationUse": "REFERENCE_ONLY"
     },
     {
       "id": "bread-category-mean-gi-64",
