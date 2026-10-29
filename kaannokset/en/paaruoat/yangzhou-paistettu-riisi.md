@@ -56,10 +56,10 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/yangzhou-paistettu-riisi.md
 translation_of: yangzhou-paistettu-riisi
-carbs_net_per_serving_g: 40.97
-carbs_total_per_serving_g: 43.14
-protein_per_serving_g: 21.91
-fat_per_serving_g: 11.19
+carbs_net_per_serving_g: 39.01
+carbs_total_per_serving_g: 40.38
+protein_per_serving_g: 21.18
+fat_per_serving_g: 11.11
 
 ---
 

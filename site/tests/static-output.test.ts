@@ -144,7 +144,7 @@ test("GK values link to centralized recipe details on every published translatio
     assert.equal(result?.status, "INSUFFICIENT SOURCE DATA", `${id}: bakery source withdrawal is public`);
     assert.equal(result?.glycemicLoadPerServing, null);
   }
-  assert.equal(publicAuditResults.filter(result => result.status === "CALCULATED").length, 85);
+  assert.equal(publicAuditResults.filter(result => result.status === "CALCULATED").length, 83, "R1B withdraws the two source-invalid published estimates");
   const paella = glycemicLoadPilotResults.find((entry) => entry.recipeId === "paella-valenciana");
   assert.equal(paella?.status, "INSUFFICIENT SOURCE DATA", "Paella remains blocked without a suitable chicken-stock GI source");
   assert.equal(paella?.glycemicLoadPerServing, null);
