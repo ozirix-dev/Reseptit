@@ -1,0 +1,195 @@
+{
+  "title": "GK 2.1 R1A locked sample",
+  "repository": "ozirix-dev/Reseptit",
+  "branch": "codex/gk-2-1-r1a",
+  "lockedAt": "2026-10-29",
+  "mainHead": "8529c4ededaa69f3db06a6532533240751e4411a",
+  "productionBaseline": {
+    "recipes": 326,
+    "calculated": 85,
+    "incomplete": 241,
+    "giRecords": 45,
+    "verification": "npm run audit:glycemic-load in this worktree, exit 0"
+  },
+  "selectionMethod": "Purposive feasibility sample based on the five strata in PR 118. Exactly six recipes were assigned to one primary stratum each. The sample is not statistically representative and supports no estimate for the other 296 recipes.",
+  "strata": [
+    {
+      "id": "GI_UNCERTAINTY_WITH_CARBOHYDRATE_COMPOSITION",
+      "count": 6,
+      "recipes": [
+        {
+          "recipeId": "pizza-margherita",
+          "reason": "High known available carbohydrate; dominant flour GI is reference-only."
+        },
+        {
+          "recipeId": "jauheliha-makaronilaatikko",
+          "reason": "Large carbohydrate portion; pasta and dairy rely on category GI proxies."
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "reason": "Large carbohydrate portion; cooked berry mixture and dairy category matches."
+        },
+        {
+          "recipeId": "yangzhou-paistettu-riisi",
+          "reason": "Large carbohydrate portion; cooked-cooled-stir-fried rice form differs from the broad rice mean."
+        },
+        {
+          "recipeId": "lahi-ita-fattet-hummus",
+          "reason": "Supported per-serving CHO estimate with direct ingredient mapping; pita, chickpea, and yogurt use broad category GI proxies."
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+          "reason": "High current GK and carbohydrate portion; couscous study is small and highly variable, with additional category proxies."
+        }
+      ]
+    },
+    {
+      "id": "MISSING_OR_PREPARATION_CONTRADICTORY_GI",
+      "count": 6,
+      "recipes": [
+        {
+          "recipeId": "poronkaristys-kukkakaalimuusilla",
+          "reason": "R0 reuse; cooked cauliflower and dairy GI transfer are uncertain."
+        },
+        {
+          "recipeId": "kesakurpitsalasagne-vhh",
+          "reason": "R0 reuse; cooked tomato analogue and dairy proxy are uncertain."
+        },
+        {
+          "recipeId": "liha-juureskeitto-perunaton",
+          "reason": "Rutabaga GI match is unsupported; small ingredients also have source issues."
+        },
+        {
+          "recipeId": "caponata",
+          "reason": "Canned crushed tomato has no preparation-matched GI source."
+        },
+        {
+          "recipeId": "pasta-alla-norma",
+          "reason": "Canned crushed tomato GI is missing despite a substantial pasta carbohydrate load."
+        },
+        {
+          "recipeId": "koshari",
+          "reason": "Onion GI 15 was withdrawn; large mixed rice/pasta/lentil carbohydrate portion remains."
+        }
+      ]
+    },
+    {
+      "id": "ALTERNATIVE_LIQUID_OR_PRODUCT_FORM",
+      "count": 6,
+      "recipes": [
+        {
+          "recipeId": "savulohi-avokadokulho",
+          "reason": "R0 reuse; cold-smoked/raw/cultured product forms are represented by broad proxies."
+        },
+        {
+          "recipeId": "valimerellinen-ricotta-persikkakulho",
+          "reason": "R0 reuse; canned peach and ricotta are not interchangeable with generic fruit/dairy means."
+        },
+        {
+          "recipeId": "vietnamilainen-hu-tieu-aamiaiskeitto",
+          "reason": "Recipe permits materially different water, milk, or broth choices; input flags unresolved liquid."
+        },
+        {
+          "recipeId": "japanilainen-soba-aamiaiskeitto",
+          "reason": "Dashi and vegetable/chicken broth choices are unresolved; product/liquid form matters."
+        },
+        {
+          "recipeId": "indonesialainen-bubur-sumsum",
+          "reason": "Recipe permits water or mild broth; coconut milk volume conversion and pandan identity are unresolved."
+        },
+        {
+          "recipeId": "kimchi-jjigae",
+          "reason": "Recipe permits broth or water; kimchi and paste composition also lack matched inputs."
+        }
+      ]
+    },
+    {
+      "id": "MISSING_COMPOSITION_OR_MASS",
+      "count": 6,
+      "recipes": [
+        {
+          "recipeId": "paprikauunimunakkaat",
+          "reason": "Large pepper has no Fineli composition binding."
+        },
+        {
+          "recipeId": "bulgogi",
+          "reason": "Spring onion mass is missing in a high-carbohydrate rice dish."
+        },
+        {
+          "recipeId": "tomaatti-kananmuna-wokki",
+          "reason": "Spring onion mass is missing in a rice-based dish."
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "reason": "Cinnamon mass is missing; flour GI is separately reference-only."
+        },
+        {
+          "recipeId": "chettinad-kana",
+          "reason": "Unweighed fennel seed and curry leaf inputs lack verified carbohydrate bounds."
+        },
+        {
+          "recipeId": "baozi",
+          "reason": "Flour GI is reference-only; spring onion mass and cornstarch GI mapping are unresolved."
+        }
+      ]
+    },
+    {
+      "id": "SMALL_CARBOHYDRATE_OR_LOW_CONFIDENCE_USER_IMPACT",
+      "count": 6,
+      "recipes": [
+        {
+          "recipeId": "vhh-mokkapalat",
+          "reason": "R0 reuse; very small LOW-confidence point and omitted ingredients can create false precision."
+        },
+        {
+          "recipeId": "vhh-brita-kakku",
+          "reason": "R0 reuse; low point, omissions, and raw-strawberry source uncertainty."
+        },
+        {
+          "recipeId": "halloumimunakas",
+          "reason": "Low-confidence point with dairy/tomato proxies; included in 2B source-risk set."
+        },
+        {
+          "recipeId": "keto-pinaattiletut",
+          "reason": "Very small LOW-confidence point and cumulative omissions."
+        },
+        {
+          "recipeId": "keto-pannukakku",
+          "reason": "Very small LOW-confidence point with dairy-category dependence."
+        },
+        {
+          "recipeId": "kurkku-oliivi-aamiaiskulho",
+          "reason": "Very small LOW-confidence point; category proxy and omissions can overwhelm the display precision."
+        }
+      ]
+    }
+  ],
+  "r0Reuse": [
+    "poronkaristys-kukkakaalimuusilla",
+    "vhh-mokkapalat",
+    "savulohi-avokadokulho",
+    "kesakurpitsalasagne-vhh",
+    "jauheliha-makaronilaatikko",
+    "marjakiisseli-vaniljakastikkeella",
+    "vhh-brita-kakku",
+    "valimerellinen-ricotta-persikkakulho",
+    "paprikauunimunakkaat",
+    "pizza-margherita",
+    "yangzhou-paistettu-riisi"
+  ],
+  "selectionInputSha256": {
+    "docs/nutrition/glycemic-load-pilot-input.json": "b57a0eecee6139d82e9d8d10273691b8c5d87f9e563306ca105d6d29361c3cd1",
+    "docs/nutrition/glycemic-index-records.json": "29d4470ad32184ce3f9d437380c2b396cc60bd7bba73d21f4d2f5c9c70e07083",
+    "docs/nutrition/food-records.json": "824e79a8abd9402a3c48ee6e477140503860f67a01c3160c24a0a3521963eeaa",
+    "docs/nutrition/glycemic-coverage-current-2026-10-25.json": "3564abb3fd377005fba8dfbec184c2525df4bbde92e644dd5e49f1b6938cb014",
+    "docs/nutrition/glycemic-user-assessment-pilot-r0.json": "812bade3f9d4a7be043246efbe7fcecb9fee07631a2684a8471fe049d489067b"
+  },
+  "r0NotSelected": [
+    {
+      "reason": "Excluded after initial light screen: project strict nutrition audit reports INSUFFICIENT SOURCE DATA because recipe calculation evidence file is missing; it does not satisfy the carb-composition stratum.",
+      "recipeId": "hummus"
+    }
+  ],
+  "selectionChange": "Before deep review, replaced hummus with lahi-ita-fattet-hummus after strict nutrition audit showed the former lacked calculation evidence. The final 30 IDs are locked at revision 2.",
+  "selectionRevision": 2
+}
