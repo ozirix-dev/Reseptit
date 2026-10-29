@@ -130,7 +130,6 @@ test("GK values link to centralized recipe details on every published translatio
   assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, publicAuditResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length);
   for (const [id, expected] of [
     ["indonesialainen-ketoprak-aamiaiskulho", 26.67],
-    ["lahi-ita-manakish-zaatarilla", 33.06],
     ["japanilainen-onigiri-lohella", 26.47],
     ["kiinalainen-soijamaito-aamiaisella", 0.67],
   ] as const) {
@@ -138,6 +137,14 @@ test("GK values link to centralized recipe details on every published translatio
     assert.equal(result?.status, "CALCULATED", `${id}: reviewed current inputs have a complete result`);
     assert.equal(result?.glycemicLoadPerServing, expected, `${id}: current calculation is exposed`);
   }
+  const bakeryReview = JSON.parse(await readFile(path.resolve(import.meta.dirname, "../../docs/nutrition/glycemic-bakery-final-source-review.json"), "utf8"));
+  assert.equal(bakeryReview.withdrawnRecipeIds.length, 12);
+  for (const id of bakeryReview.withdrawnRecipeIds) {
+    const result = glycemicLoadPilotResults.find(entry => entry.recipeId === id);
+    assert.equal(result?.status, "INSUFFICIENT SOURCE DATA", `${id}: bakery source withdrawal is public`);
+    assert.equal(result?.glycemicLoadPerServing, null);
+  }
+  assert.equal(publicAuditResults.filter(result => result.status === "CALCULATED").length, 85);
   const paella = glycemicLoadPilotResults.find((entry) => entry.recipeId === "paella-valenciana");
   assert.equal(paella?.status, "INSUFFICIENT SOURCE DATA", "Paella remains blocked without a suitable chicken-stock GI source");
   assert.equal(paella?.glycemicLoadPerServing, null);
