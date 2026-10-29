@@ -1,11 +1,11 @@
 # GK 2.1 R1A – Stage B feasibility review
 
-Status: **Ready for independent review**  
-Repository: `ozirix-dev/Reseptit`  
-Worktree: `D:\Projects\tmp\reseptit-gk-2-1-r1a`  
-Branch: `codex/gk-2-1-r1a`  
-Locked production main: `8529c4ededaa69f3db06a6532533240751e4411a`  
-Locked sample: [glycemic-user-assessment-r1a-selection.json](glycemic-user-assessment-r1a-selection.json), revision 2  
+Status: **Ready for independent review**
+Repository: `ozirix-dev/Reseptit`
+Worktree: `D:\Projects\tmp\reseptit-gk-2-1-r1a`
+Branch: `codex/gk-2-1-r1a`
+Locked production main: `8529c4ededaa69f3db06a6532533240751e4411a`
+Locked sample: [glycemic-user-assessment-r1a-selection.json](glycemic-user-assessment-r1a-selection.json), revision 2
 Review date: 2026-10-29
 
 This is a research and documentation review only. No recipe, GI record, nutrition calculation input, displayed GK, formula, tolerance, UI, or historical baseline was changed. The new files in this branch are the locked sample and this review.
@@ -190,4 +190,3 @@ No historical baseline was rewritten or recaptured. No new tests were added beca
 - AJO 2.0B diagnostic report: [glycemic-dairy-fruit-source-impact-review.json](https://github.com/ozirix-dev/Reseptit/blob/codex/glycemic-dairy-fruit-impact-review/docs/nutrition/glycemic-dairy-fruit-source-impact-review.json) on the reviewed source branch.
 
 **GK 2.1 R1A – READY FOR INDEPENDENT REVIEW**
-
