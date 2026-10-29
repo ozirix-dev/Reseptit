@@ -15,7 +15,7 @@ Päivitetty 2026-10-29. Tämä raportti käsittelee vain R1B:n rajattua erää. 
 - Koshari: maissitärkkelyksen perunatärkkelys-/peruna-GI-sidonta poistettiin ja koostumustietue korjattiin. Tilalle ei lisätty yleistä GI-arviota. Koshari oli jo nykyisessä baseline-julkaisussa GK-arvoltaan keskeneräinen; vanha 50.57 on historiallisen laskelman merkintä, ei nykyinen julkaistu arvo.
 - Yangzhou-paistettu riisi: geneerinen riisi-GI 67 poistettiin, koska lajiketta ei tunneta ja resepti jäähdyttää riisin sekä kuumentaa sen wokissa uudelleen. Kevätsipulin massa korjattiin kahdelle sipulille 30 grammaan lähteen 15 g/kpl mukaisesti. Arvo 24.71 (pyöristämätön 24.71358, HIGH) palautuu keskeneräiseksi.
 - Näistä aiheutuu kattavuuteen kaksi odotettua GK-poistoa, ei uutta arvoa. Koshari ei muuta nykyistä kattavuutta.
-- 326 reseptin julkaistu vertailu: 324 arvoa ennallaan; 2 laskettua palautuu keskeneräiseksi; 243 keskeneräistä korjausten jälkeen; 45 GI-tietuetta. Nettokattavuus on 83/326. Muut 321 reseptit eivät muutu. Kaikki historialliset baseline-tiedostot jätettiin muuttamatta.
+- Kokoelman GK-vertailu: 326 reseptiä. Kahden reseptin GK-tulos muuttuu lasketusta keskeneräiseksi; 324 reseptin GK-status ja GK-arvo pysyvät ennallaan. Kattavuus muuttuu 85 → 83 lasketusta ja 241 → 243 keskeneräiseen; GI-tietueita on 45. Vertailu koskee GK-tulosta, ei kaikkia ravintoarvotietoja: Koshari pysyy GK:n osalta keskeneräisenä, mutta sen ravintoarvoja päivitettiin. Historialliset baseline-tiedostot jätettiin muuttamatta.
 
 ## A. Jauheliha-makaronilaatikko – 14 ainesosaa
 
@@ -56,7 +56,7 @@ Kaikki 12 reseptiriviä ovat mukana; 4 annosta. Koostumussumma on 95,9125 g käy
 | Valkosipuli 7 g | AFCD F004193; 0,1785 | Koostumus mukana, GI-sidontaa ei tarvita pienosuuden vuoksi. |
 | Punaviinietikka 30 g | Fineli #929; 0,0375 | Koostumus mukana, GI:tä ei asetettu. |
 | Juustokumina 2 g | AFCD F003327; 0,1685 | Koostumus mukana, aiheeton dairy-keskiarvo poistettu. |
-| Suola | Fineli #30; 0 | Nolla. |
+| Suola 0,5 tl | Pilot-input: grams=null, fineliRecordId=null ja arvioitu käytettävä hiilihydraatti 0 g/annos; laskentatiedoston rivi on 0,5 tl. | Laskentatiedosto käsittelee suolan nollavaikutteisena poisjättönä. Pilot-inputissa ei ole Fineli-sidontaa, joten sitä ei pidä kuvata Fineli #30 -sidotuksi nollaravintoarvoksi. Sidonnan yhdenmukaistaminen on myöhempää työtä. |
 | Sitruunamehu 15 g | AFCD F004726; 0,0675 | Koostumus mukana; hedelmäkeskiarvo poistettu. |
 
 Maissitärkkelyksen koostumuskorjaus sekä valkosipulin keskikynnen massa 3,5 g (Fineli #393) päivitettiin laskentatiedostoon. Pienosuuksiksi rajattu summa on 0,452 g/annos; sipuli (1,32 g) ja maissitärkkelys (3,44 g) eivät alita yksittäisen ainesosan 1 g rajaa eikä niitä sivuuteta toleranssilla. Koko hiilihydraattisumma 95,9125 vs. strict-auditin 95,91 eroaa 0,0025 g pyöristyksestä. Strict nutrition audit -tila on ESTIMATE WITH EVIDENCE. Koko annoksen hiilihydraattimäärä on perusteltavissa arviona; tuleva CARBOHYDRATE_ONLY voisi olla arvioitava tuotetila, mutta sitä ei tässä julkaista eikä UI:ta muuteta. GK pysyy keskeneräisenä, koska useat merkittävät hiilihydraattilähteet ovat ilman reseptiin soveltuvaa GI:tä.
@@ -155,7 +155,7 @@ Nämä 38 tunnistettiin R1A:n vanhemmassa rakenteellisessa vertailussa (vertailu
 - Koko yksikkötestisarja: 157/157 PASS.
 - Staattiset testit: 24/24 PASS.
 - Build: PASS; strict nutrition- ja GK-auditit sekä TypeScript/Vite/prerender onnistuvat. Vite antaa olemassa olevan suuren chunkin varoituksen (>500 kB).
-- Vaikutusjoukon uudelleenlaskenta aiemmalla inputilla ja nykyisellä mallilla/koostumustiedoilla: 324/326 täsmää täysin. Vain makaronilaatikon ja Yangzhou-riisin julkaistut GK-arvot muuttuvat yllä kuvatusti. Koshari pysyy keskeneräisenä.
+- GK-laskentatulosten vaikutusvertailu aiemmalla inputilla ja nykyisellä mallilla/koostumustiedoilla: 324/326 GK-tulosta täsmää julkaistuun baselineen. Ainoat eroavat GK-tulokset ovat makaronilaatikon ja Yangzhou-riisin poistetut arvot; Koshari pysyy keskeneräisenä. Tämä vertailu ei tarkoita, että Koshari-reseptin ravintoarvotiedot olisivat ennallaan.
 - Historialliset baseline-tiedostot jätettiin koskematta. Aktiivinen kattavuusraportti päivitettiin nykyiseen laskentatilaan.
 
 GitHub Actionsin tulos tarkistetaan Draft-PR:n lopulliselle HEADille; PR:n tarkistuslinkki raportoidaan erikseen.
