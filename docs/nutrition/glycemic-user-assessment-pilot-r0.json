@@ -1,0 +1,638 @@
+{
+  "repository": "ozirix-dev/Reseptit",
+  "sourceCommit": "16a9c0444ff7b9d6ea61b20abd2c31b0d0ae9fa2",
+  "asOf": "2026-10-29 Europe/Helsinki",
+  "baseline": {
+    "recipes": 326,
+    "calculated": 85,
+    "incomplete": 241,
+    "coveragePercent": 26.1,
+    "giRecords": 45
+  },
+  "assessmentTypes": [
+    "POINT",
+    "RANGE",
+    "CLASS_ONLY",
+    "CONDITIONAL_SCENARIOS",
+    "CARBOHYDRATE_ONLY",
+    "UNAVAILABLE"
+  ],
+  "limitations": [
+    "Known CHO subtotal can be incomplete; unknown is not zero.",
+    "Legacy range is not GI uncertainty.",
+    "Potential states are hypotheses, not approvals.",
+    "R0 establishes no GI bounds."
+  ],
+  "recipes": [
+    {
+      "recipeId": "poronkaristys-kukkakaalimuusilla",
+      "group": "B",
+      "currentStatus": "CALCULATED",
+      "currentGkPerServing": 3.09,
+      "unroundedGk": 3.0894399999999997,
+      "confidence": "LOW",
+      "knownAvailableCarbSubtotalGPerServing": 5.7375,
+      "unknownCarbIngredients": [],
+      "omittedCarbGPerServing": 0.7160000000000001,
+      "topKnownCarbRows": [
+        {
+          "ingredient": "kukkakaalia",
+          "carbG": 4.2,
+          "gi": 66,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "gkContribution": 2.772
+        }
+      ],
+      "dairyFruitBindings": [
+        {
+          "ingredient": "kuohukermaa",
+          "giId": "dairy-category-mean-gi-35",
+          "foodRecordId": "fineli-631-2026-10-24",
+          "grams": 100,
+          "matchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        }
+      ],
+      "currentBlockers": [],
+      "review": "3.08944 now; 2B no-category diagnostic 2.83569. Dairy mean is used for cream. Vegetable GI 66 transfer also needs a future food/preparation audit.",
+      "futureAssessmentPotential": "CHO_ONLY possible if all composition accepted; no evidence-bounded range/stable class.",
+      "r0Decision": "No production change; feasibility only.",
+      "preparationForm": "Poronkäristys is pan-fried/simmered; cauliflower is boiled and mashed; cream heated into mash.",
+      "assessmentFeasibility": {
+        "POINT": "Need recipe-matched support for important GI sources and preparation before any revised point.",
+        "RANGE": "No bounded GI alternatives; no justified class-only claim.",
+        "CLASS_ONLY": "Not evidenced in R0; no complete bounded input proves all outcomes stay within one existing class.",
+        "CONDITIONAL_SCENARIOS": "No explicit recipe alternative assessed.",
+        "CARBOHYDRATE_ONLY": "Known CHO subtotal plausible candidate only after complete composition is verified.",
+        "UNAVAILABLE": "Not the current overall state; use only if future GI/CHO source gates fail.",
+        "comparisonValue": "Compare carbohydrate amount with the carbohydrate-dense cauliflower side; do not read the low point as certain low class.",
+        "misinterpretationRisk": "A low number may hide missing GI transfer for cooked vegetables and cream."
+      }
+    },
+    {
+      "recipeId": "vhh-mokkapalat",
+      "group": "B",
+      "currentStatus": "CALCULATED",
+      "currentGkPerServing": 0.08,
+      "unroundedGk": 0.08458333333333334,
+      "confidence": "LOW",
+      "knownAvailableCarbSubtotalGPerServing": 0.942917,
+      "unknownCarbIngredients": [
+        "kaakaojauhetta",
+        "leivinjauhetta",
+        "kaakaojauhetta kuorrutteeseen"
+      ],
+      "omittedCarbGPerServing": 1.02375,
+      "topKnownCarbRows": [],
+      "dairyFruitBindings": [
+        {
+          "ingredient": "kuohukermaa",
+          "giId": "dairy-category-mean-gi-35",
+          "foodRecordId": "fineli-631-2026-10-24",
+          "grams": 100,
+          "matchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        }
+      ],
+      "currentBlockers": [],
+      "review": "0.08458 now; prior diagnostic 0.00 followed 1.2654 g/serving omission. That is a model artifact, not physiological zero; LOW and omission must be explained.",
+      "futureAssessmentPotential": "CHO_ONLY possible after total-composition review; no justified range/class.",
+      "r0Decision": "No production change; feasibility only.",
+      "preparationForm": "Cake batter is baked; cream is included in batter. Frosting is assembled separately.",
+      "assessmentFeasibility": {
+        "POINT": "New point requires ingredient-level match and a reviewed treatment of all omissions; the previous 0.00 diagnostic is not zero physiology.",
+        "RANGE": "Not established; unknown ingredient GI contribution can cross unproven bounds.",
+        "CLASS_ONLY": "Not evidenced in R0; no complete bounded input proves all outcomes stay within one existing class.",
+        "CONDITIONAL_SCENARIOS": "No named alternative identified.",
+        "CARBOHYDRATE_ONLY": "Potential only after unknown cocoa/baking-powder rows are bounded and whole recipe total is verified.",
+        "UNAVAILABLE": "Not the current overall state; use only if future GI/CHO source gates fail.",
+        "comparisonValue": "Show known CHO, omitted amount and uncertainty; comparison by tiny point alone is weak.",
+        "misinterpretationRisk": "Rounded 0.00 could be misread as no glucose effect; do not publish that scenario."
+      }
+    },
+    {
+      "recipeId": "savulohi-avokadokulho",
+      "group": "B",
+      "currentStatus": "CALCULATED",
+      "currentGkPerServing": 0.4,
+      "unroundedGk": 0.40448999999999996,
+      "confidence": "LOW",
+      "knownAvailableCarbSubtotalGPerServing": 1.073125,
+      "unknownCarbIngredients": [],
+      "omittedCarbGPerServing": 0.286625,
+      "topKnownCarbRows": [],
+      "dairyFruitBindings": [
+        {
+          "ingredient": "kreikkalaista jogurttia",
+          "giId": "dairy-category-mean-gi-35",
+          "foodRecordId": "fineli-32088-2026-10-25",
+          "grams": 30,
+          "matchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+        },
+        {
+          "ingredient": "sitruunamehua",
+          "giId": "fruit-category-mean-gi-51",
+          "foodRecordId": "fineli-11557-2026-10-25",
+          "grams": 5,
+          "matchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+        }
+      ],
+      "currentBlockers": [],
+      "review": "0.40449 now; diagnostic 0.26829. Small contributions and broad vegetable/dairy/fruit proxies do not prove stable class.",
+      "futureAssessmentPotential": "CHO_ONLY possible if complete; GI bounds absent.",
+      "r0Decision": "No production change; feasibility only.",
+      "preparationForm": "No cooked assembly; cold-smoked salmon, ripe avocado, raw cucumber/arugula, yogurt and lemon.",
+      "assessmentFeasibility": {
+        "POINT": "Recheck dairy/fruit category matches and vegetable analogues before retaining a new point.",
+        "RANGE": "No GI bounds; low point alone does not prove class.",
+        "CLASS_ONLY": "Not evidenced in R0; no complete bounded input proves all outcomes stay within one existing class.",
+        "CONDITIONAL_SCENARIOS": "No explicit recipe alternative assessed.",
+        "CARBOHYDRATE_ONLY": "Possible after complete composition and portion check.",
+        "UNAVAILABLE": "Not the current overall state; use only if future GI/CHO source gates fail.",
+        "comparisonValue": "Compare total CHO and source shares; low GK does not establish a safe individual response.",
+        "misinterpretationRisk": "Many small proxy contributions create false precision."
+      }
+    },
+    {
+      "recipeId": "kesakurpitsalasagne-vhh",
+      "group": "B",
+      "currentStatus": "CALCULATED",
+      "currentGkPerServing": 2.77,
+      "unroundedGk": 2.7693333333333334,
+      "confidence": "LOW",
+      "knownAvailableCarbSubtotalGPerServing": 6.691308,
+      "unknownCarbIngredients": [],
+      "omittedCarbGPerServing": 0.507975,
+      "topKnownCarbRows": [
+        {
+          "ingredient": "kesäkurpitsaa",
+          "carbG": 2.9166666666666665,
+          "gi": 66,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "gkContribution": 1.925
+        },
+        {
+          "ingredient": "tomaattimurskaa",
+          "carbG": 2.3000000000000003,
+          "gi": 22,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "gkContribution": 0.5060000000000001
+        }
+      ],
+      "dairyFruitBindings": [
+        {
+          "ingredient": "kuohukermaa",
+          "giId": "dairy-category-mean-gi-35",
+          "foodRecordId": "fineli-631-2026-10-24",
+          "grams": 200,
+          "matchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        }
+      ],
+      "currentBlockers": [],
+      "review": "2.76933 now; diagnostic 2.431. Zucchini is major CHO; tomato source is a raw-to-cooked sauce analogue and cream a broad mean.",
+      "futureAssessmentPotential": "CHO_ONLY possible; class stability not established.",
+      "r0Decision": "No production change; feasibility only.",
+      "preparationForm": "Kesäkurpitsa leikataan ohuiksi viipaleiksi ja kuivataan. Jauheliha ja sipuli ruskistetaan; tomaattimurska/mausteet haudutetaan 10 min. Vuokaan ladotaan kesäkurpitsa, kastike ja kerma kerroksittain; juusto päälle. Uunissa 200°C noin 35 min.",
+      "assessmentFeasibility": {
+        "POINT": "Verify cooked tomato analogue and high-CHO ingredient mapping; dairy mean is not cream-specific.",
+        "RANGE": "Not established; no complete GI interval for vegetable and dairy contributors.",
+        "CLASS_ONLY": "Not evidenced in R0; no complete bounded input proves all outcomes stay within one existing class.",
+        "CONDITIONAL_SCENARIOS": "No named alternative assessed.",
+        "CARBOHYDRATE_ONLY": "Possible after recipe input completeness check.",
+        "UNAVAILABLE": "Not the current overall state; use only if future GI/CHO source gates fail.",
+        "comparisonValue": "Surface zucchini and tomato/sauce CHO drivers plus serving size.",
+        "misinterpretationRisk": "Raw-to-cooked GI transfer and broad cream mean may look more exact than evidence allows."
+      }
+    },
+    {
+      "recipeId": "jauheliha-makaronilaatikko",
+      "group": "C",
+      "currentStatus": "CALCULATED",
+      "currentGkPerServing": 18.23,
+      "unroundedGk": 18.230875,
+      "confidence": "LOW",
+      "knownAvailableCarbSubtotalGPerServing": 35.9625,
+      "unknownCarbIngredients": [],
+      "omittedCarbGPerServing": 0,
+      "topKnownCarbRows": [
+        {
+          "ingredient": "makaronia",
+          "carbG": 33.2,
+          "gi": 52,
+          "giRecordId": "pasta-category-mean-gi-52",
+          "gkContribution": 17.264
+        },
+        {
+          "ingredient": "raejuustoa",
+          "carbG": 1.5625,
+          "gi": 35,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "gkContribution": 0.546875
+        },
+        {
+          "ingredient": "maitoa",
+          "carbG": 1.2,
+          "gi": 35,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "gkContribution": 0.42
+        }
+      ],
+      "dairyFruitBindings": [
+        {
+          "ingredient": "raejuustoa",
+          "giId": "dairy-category-mean-gi-35",
+          "foodRecordId": "fineli-649-2026-10-24",
+          "grams": 500,
+          "matchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #649 cottage cheese; recipe-listed 500 g."
+        },
+        {
+          "ingredient": "maitoa",
+          "giId": "dairy-category-mean-gi-35",
+          "foodRecordId": "fineli-675-2026-10-24",
+          "grams": 200,
+          "matchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #675; 2 dl converted using the food-specific 100 g/dl measure."
+        }
+      ],
+      "currentBlockers": [],
+      "review": "18.230875 now. Pasta ~33.2 g CHO/serving; cottage cheese and milk use dairy mean without exact product evidence.",
+      "futureAssessmentPotential": "CHO_ONLY possible if full composition confirmed; no justified GI range/class.",
+      "r0Decision": "No production change; feasibility only.",
+      "preparationForm": "Makaronit keitetään hieman pakkauksen aikaa lyhyemmin; liha ja sipuli ruskistetaan. Raejuusto soseutetaan kananmunan, kevytmaidon ja ruokakerman kanssa. Seos ja pasta yhdistetään, pinta juustotetaan ja paistetaan uunissa 180°C 40–50 min.",
+      "assessmentFeasibility": {
+        "POINT": "Pasta is dominant; dairy GI mean does not stand in for 1.5% milk or cottage cheese. Review actual product nutrient identity.",
+        "RANGE": "No bounds for milk/cottage cheese GI; class stability not established.",
+        "CLASS_ONLY": "Not evidenced in R0; no complete bounded input proves all outcomes stay within one existing class.",
+        "CONDITIONAL_SCENARIOS": "No named product alternatives assessed.",
+        "CARBOHYDRATE_ONLY": "Possible; recipe quantities and carbohydrate values currently appear fully populated, but source audit still required.",
+        "UNAVAILABLE": "Not the current overall state; use only if future GI/CHO source gates fail.",
+        "comparisonValue": "Carbohydrate amount and pasta contribution are more useful than unqualified legacy GK.",
+        "misinterpretationRisk": "A point near class boundary may appear robust despite unsupported dairy contribution."
+      }
+    },
+    {
+      "recipeId": "marjakiisseli-vaniljakastikkeella",
+      "group": "C",
+      "currentStatus": "CALCULATED",
+      "currentGkPerServing": 19.93,
+      "unroundedGk": 19.92955666666667,
+      "confidence": "LOW",
+      "knownAvailableCarbSubtotalGPerServing": 35.743667,
+      "unknownCarbIngredients": [],
+      "omittedCarbGPerServing": 0.013333333333333334,
+      "topKnownCarbRows": [
+        {
+          "ingredient": "sokeria",
+          "carbG": 13.32,
+          "gi": 58,
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "gkContribution": 7.725600000000001
+        },
+        {
+          "ingredient": "pakastemarjoja",
+          "carbG": 8,
+          "gi": 51,
+          "giRecordId": "fruit-category-mean-gi-51",
+          "gkContribution": 4.08
+        },
+        {
+          "ingredient": "sokeria",
+          "carbG": 6.66,
+          "gi": 58,
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "gkContribution": 3.8628000000000005
+        },
+        {
+          "ingredient": "perunajauhoja",
+          "carbG": 3.876,
+          "gi": 71,
+          "giRecordId": "potatoes-category-mean-gi-71",
+          "gkContribution": 2.7519599999999995
+        },
+        {
+          "ingredient": "täysmaitoa",
+          "carbG": 2,
+          "gi": 35,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "gkContribution": 0.7
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "carbG": 1.2083333333333333,
+          "gi": 35,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "gkContribution": 0.42291666666666666
+        }
+      ],
+      "dairyFruitBindings": [
+        {
+          "ingredient": "pakastemarjoja",
+          "giId": "fruit-category-mean-gi-51",
+          "foodRecordId": "afcd-F009881-2026-10-24",
+          "grams": 500,
+          "matchEvidence": "Published GI analogue/category record fruit-category-mean-gi-51; source and limitations are listed centrally."
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "giId": "dairy-category-mean-gi-35",
+          "foodRecordId": "fineli-631-2026-10-24",
+          "grams": 250,
+          "matchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally."
+        },
+        {
+          "ingredient": "täysmaitoa",
+          "giId": "dairy-category-mean-gi-35",
+          "foodRecordId": "fineli-689-2026-10-24",
+          "grams": 250,
+          "matchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally."
+        }
+      ],
+      "currentBlockers": [],
+      "review": "19.92956 now. Berry mix ~8 g CHO/serving plus sugar/starch; mixture/cooked form has unresolved GI transfer; cream/milk are also broad mean uses.",
+      "futureAssessmentPotential": "CHO_ONLY only if mix/serving composition is reliable; no range/class.",
+      "r0Decision": "No production change; feasibility only.",
+      "preparationForm": "Frozen berries are boiled into kissel; starch thickener added; custard is heated and cooled.",
+      "assessmentFeasibility": {
+        "POINT": "Berry mixture, cooked form and dairy components need product/food-specific evidence.",
+        "RANGE": "No component GI bounds for mixture/cooking.",
+        "CLASS_ONLY": "Not evidenced in R0; no complete bounded input proves all outcomes stay within one existing class.",
+        "CONDITIONAL_SCENARIOS": "No berry mix alternative selected or quantified.",
+        "CARBOHYDRATE_ONLY": "Possible only after berry mix composition and recipe-serving mass are confirmed.",
+        "UNAVAILABLE": "Not the current overall state; use only if future GI/CHO source gates fail.",
+        "comparisonValue": "Show added sugar/starch and berry carbohydrate separately.",
+        "misinterpretationRisk": "A single fruit mean can conceal very different berry composition and cooked preparation."
+      }
+    },
+    {
+      "recipeId": "vhh-brita-kakku",
+      "group": "C",
+      "currentStatus": "CALCULATED",
+      "currentGkPerServing": 0.79,
+      "unroundedGk": 0.78925,
+      "confidence": "LOW",
+      "knownAvailableCarbSubtotalGPerServing": 2.6175,
+      "unknownCarbIngredients": [
+        "leivinjauhetta"
+      ],
+      "omittedCarbGPerServing": 1.07875,
+      "topKnownCarbRows": [
+        {
+          "ingredient": "mansikoita",
+          "carbG": 1.05,
+          "gi": 51,
+          "giRecordId": "fruit-category-mean-gi-51",
+          "gkContribution": 0.5355000000000001
+        }
+      ],
+      "dairyFruitBindings": [
+        {
+          "ingredient": "kuohukermaa",
+          "giId": "dairy-category-mean-gi-35",
+          "foodRecordId": "fineli-631-2026-10-24",
+          "grams": 200,
+          "matchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        },
+        {
+          "ingredient": "mansikoita",
+          "giId": "fruit-category-mean-gi-51",
+          "foodRecordId": "afcd-F008952-2026-10-24",
+          "grams": 150,
+          "matchEvidence": "Published Fruits and fruit products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        }
+      ],
+      "currentBlockers": [],
+      "review": "0.78925 now. Fresh raw strawberries are added after cake cools. 2021 SI1 lists raw fresh strawberry GI40±7, n=10, but original observations are unpublished. Candidate only, not accepted. Strawberry CHO ~1.05 g/serving.",
+      "futureAssessmentPotential": "Potential point only after policy decision and full ingredient audit; no range/class in R0.",
+      "r0Decision": "No production change; feasibility only.",
+      "preparationForm": "Cake base and meringue are baked; cream is whipped; raw fresh strawberries are added after cooling.",
+      "assessmentFeasibility": {
+        "POINT": "Raw strawberry GI40±7 in 2021 SI1 is a supplementary candidate; original Sydney observations unpublished. Review cream omission and all ingredients.",
+        "RANGE": "No evidenced interval; ±7 is not an automatic bound.",
+        "CLASS_ONLY": "Not evidenced in R0; no complete bounded input proves all outcomes stay within one existing class.",
+        "CONDITIONAL_SCENARIOS": "No cooked strawberry scenario; recipe uses raw topping.",
+        "CARBOHYDRATE_ONLY": "Possible if input covers the whole serving and omissions are valid.",
+        "UNAVAILABLE": "Not the current overall state; use only if future GI/CHO source gates fail.",
+        "comparisonValue": "If supported, separate raw strawberry from baked base; disclose source limitation.",
+        "misinterpretationRisk": "Do not apply raw strawberry GI to heated filling or imply the cake was tested."
+      }
+    },
+    {
+      "recipeId": "valimerellinen-ricotta-persikkakulho",
+      "group": "C",
+      "currentStatus": "CALCULATED",
+      "currentGkPerServing": 4.08,
+      "unroundedGk": 4.083600000000001,
+      "confidence": "LOW",
+      "knownAvailableCarbSubtotalGPerServing": 9.975,
+      "unknownCarbIngredients": [],
+      "omittedCarbGPerServing": 0.12,
+      "topKnownCarbRows": [
+        {
+          "ingredient": "kivettömiä persikkaviipaleita",
+          "carbG": 6,
+          "gi": 51,
+          "giRecordId": "fruit-category-mean-gi-51",
+          "gkContribution": 3.06
+        },
+        {
+          "ingredient": "pistaasi",
+          "carbG": 2.505,
+          "gi": 22,
+          "giRecordId": "nuts-category-mean-gi-22",
+          "gkContribution": 0.5511
+        },
+        {
+          "ingredient": "ricotta",
+          "carbG": 1.35,
+          "gi": 35,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "gkContribution": 0.4725
+        }
+      ],
+      "dairyFruitBindings": [
+        {
+          "ingredient": "ricotta",
+          "giId": "dairy-category-mean-gi-35",
+          "foodRecordId": "afcd-F002488-release-3",
+          "grams": 100,
+          "matchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "kivettömiä persikkaviipaleita",
+          "giId": "fruit-category-mean-gi-51",
+          "foodRecordId": "afcd-F006573-release-3",
+          "grams": 150,
+          "matchEvidence": "Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence."
+        }
+      ],
+      "currentBlockers": [],
+      "review": "4.0836 now. Canned peach and ricotta do not match generic fruit/dairy means; drained mass/product/liquid require review.",
+      "futureAssessmentPotential": "CHO_ONLY possible after composition review; no fresh-peach GI substitution.",
+      "r0Decision": "No production change; feasibility only.",
+      "preparationForm": "Kylmä annos: ricotta, kivettömät persikkaviipaleet, sitruunamehu ja pistaasi kootaan kulhoon; reseptin vaihe yleisesti mainitsee lämpimät pohjat, mutta tässä aineslistassa ei ole lämmitettävää pohjaa.",
+      "assessmentFeasibility": {
+        "POINT": "Exact canned peach form and ricotta product source needed; category means are not sufficient.",
+        "RANGE": "No exact-source ranges for these ingredients.",
+        "CLASS_ONLY": "Not evidenced in R0; no complete bounded input proves all outcomes stay within one existing class.",
+        "CONDITIONAL_SCENARIOS": "No explicit alternate product scenario assessed.",
+        "CARBOHYDRATE_ONLY": "Possible after package/drained mass and nutrition record are verified.",
+        "UNAVAILABLE": "Not the current overall state; use only if future GI/CHO source gates fail.",
+        "comparisonValue": "Display portion CHO and separate canned peach as main driver.",
+        "misinterpretationRisk": "Fresh peach or milk GI substitution would misrepresent preparation/product."
+      }
+    },
+    {
+      "recipeId": "paprikauunimunakkaat",
+      "group": "Previously incomplete",
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGkPerServing": null,
+      "unroundedGk": null,
+      "confidence": null,
+      "knownAvailableCarbSubtotalGPerServing": 0.65555,
+      "unknownCarbIngredients": [
+        "isoa paprikaa (väri yksilöimättä)"
+      ],
+      "omittedCarbGPerServing": 0.6555500006675721,
+      "topKnownCarbRows": [],
+      "dairyFruitBindings": [],
+      "currentBlockers": [
+        "paprikauunimunakkaat: isoa paprikaa (väri yksilöimättä): Fineli food record is missing."
+      ],
+      "review": "GK null. Fineli composition for a large pepper is missing; known subtotal 0.65555 g/serving excludes pepper. Unknown is not zero.",
+      "futureAssessmentPotential": "UNAVAILABLE until pepper identity/mass/composition resolved; subtotal is not total.",
+      "r0Decision": "No production change; feasibility only.",
+      "preparationForm": "Paprikat halkaistaan ja paistetaan ensin 8 min 200°C:ssa. Munat, juusto ja mausteet lisätään; paistoa jatketaan 12–16 min. Paprikan väri/massa puuttuu ravintoarvosidonnasta.",
+      "assessmentFeasibility": {
+        "POINT": "Composition for a large pepper is missing; declared recipe macro is not enough to establish the complete GI calculation input.",
+        "RANGE": "No, both composition and source are missing.",
+        "CLASS_ONLY": "Not evidenced in R0; no complete bounded input proves all outcomes stay within one existing class.",
+        "CONDITIONAL_SCENARIOS": "No variant selected; pepper colour is unspecified.",
+        "CARBOHYDRATE_ONLY": "No: known subtotal excludes pepper.",
+        "UNAVAILABLE": "Current GK unavailable until the blocker is fixed; even CHO-only fails because a major ingredient is unresolved.",
+        "comparisonValue": "First resolve pepper mass/colour/product; then CHO may be useful.",
+        "misinterpretationRisk": "Treating 0.65555 g known subtotal as total would falsely imply negligible CHO."
+      }
+    },
+    {
+      "recipeId": "pizza-margherita",
+      "group": "Previously incomplete",
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGkPerServing": null,
+      "unroundedGk": null,
+      "confidence": null,
+      "knownAvailableCarbSubtotalGPerServing": 114.5839,
+      "unknownCarbIngredients": [],
+      "omittedCarbGPerServing": 0.1369,
+      "topKnownCarbRows": [
+        {
+          "ingredient": "vehnäjauhoja",
+          "carbG": 110.99700000000001,
+          "gi": null,
+          "giRecordId": null,
+          "gkContribution": null
+        },
+        {
+          "ingredient": "tomaattimurskaa",
+          "carbG": 3.45,
+          "gi": 22,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "gkContribution": 0.759
+        }
+      ],
+      "dairyFruitBindings": [],
+      "currentBlockers": [
+        "pizza-margherita: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
+      ],
+      "review": "GK null; flour GI is REFERENCE_ONLY (AJO1.9). Known CHO subtotal ~114.5839 g/serving, flour ~110.997 g.",
+      "futureAssessmentPotential": "CHO_ONLY candidate if complete serving inputs confirmed; no GK without suitable flour GI.",
+      "r0Decision": "No production change; feasibility only.",
+      "preparationForm": "Yeast dough is proofed, topped with tomato, mozzarella and basil, then baked at high heat.",
+      "assessmentFeasibility": {
+        "POINT": "Wheat flour is dominant and GI source is REFERENCE_ONLY; tomato proxy cannot compensate for missing flour GI.",
+        "RANGE": "No justified flour GI range, so no reliable range/class.",
+        "CLASS_ONLY": "Not evidenced in R0; no complete bounded input proves all outcomes stay within one existing class.",
+        "CONDITIONAL_SCENARIOS": "No named flour/product scenario evaluated.",
+        "CARBOHYDRATE_ONLY": "Likely useful if carbohydrate mass/input is confirmed; do not confuse with GK.",
+        "UNAVAILABLE": "Current GK remains unavailable while the material GI blocker persists; CHO-only may be separate if total CHO inputs are complete.",
+        "comparisonValue": "CHO-only information could support portion comparison; wheat flour is the main driver.",
+        "misinterpretationRisk": "Do not convert high CHO into a GK estimate or claim individual response."
+      }
+    },
+    {
+      "recipeId": "hummus",
+      "group": "Calculated outside impact set",
+      "currentStatus": "CALCULATED",
+      "currentGkPerServing": 6.16,
+      "unroundedGk": 6.16,
+      "confidence": "LOW",
+      "knownAvailableCarbSubtotalGPerServing": 18.173875,
+      "unknownCarbIngredients": [],
+      "omittedCarbGPerServing": 0.573875,
+      "topKnownCarbRows": [
+        {
+          "ingredient": "kypsiä kikherneitä",
+          "carbG": 17.6,
+          "gi": 35,
+          "giRecordId": "chickpea-canned-gi-35",
+          "gkContribution": 6.16
+        }
+      ],
+      "dairyFruitBindings": [],
+      "currentBlockers": [],
+      "review": "Current 6.16; known CHO subtotal ~18.17 g/serving; LOW. Moderate-carb comparator; not re-approved by R0.",
+      "futureAssessmentPotential": "Current point only as baseline; robustness not evaluated.",
+      "r0Decision": "No production change; feasibility only.",
+      "preparationForm": "Cooked chickpeas are rinsed and blended with tahini/lemon; oil and paprika are served as garnish.",
+      "assessmentFeasibility": {
+        "POINT": "Current baseline uses existing model sources; not independently source-reviewed in R0.",
+        "RANGE": "Not analyzed.",
+        "CLASS_ONLY": "Not evidenced in R0; no complete bounded input proves all outcomes stay within one existing class.",
+        "CONDITIONAL_SCENARIOS": "No scenarios.",
+        "CARBOHYDRATE_ONLY": "No new assessment; existing composition is a comparator only.",
+        "UNAVAILABLE": "Not the current overall state; use only if future GI/CHO source gates fail.",
+        "comparisonValue": "Moderate-CHO comparator against a higher-CHO rice dish.",
+        "misinterpretationRisk": "Legacy point is not a new independent approval."
+      }
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "group": "Calculated outside impact set",
+      "currentStatus": "CALCULATED",
+      "currentGkPerServing": 24.71,
+      "unroundedGk": 24.71358,
+      "confidence": "LOW",
+      "knownAvailableCarbSubtotalGPerServing": 39.2625,
+      "unknownCarbIngredients": [],
+      "omittedCarbGPerServing": 1.20225,
+      "topKnownCarbRows": [
+        {
+          "ingredient": "keitettyä kylmää riisiä",
+          "carbG": 35.3415,
+          "gi": 67,
+          "giRecordId": "rice-category-mean-gi-67",
+          "gkContribution": 23.678805
+        },
+        {
+          "ingredient": "herneitä",
+          "carbG": 2.37375,
+          "gi": 34,
+          "giRecordId": "legumes-category-mean-gi-34",
+          "gkContribution": 0.807075
+        }
+      ],
+      "dairyFruitBindings": [],
+      "currentBlockers": [],
+      "review": "Current 24.71; known CHO subtotal ~39.26 g/serving; LOW. Higher-carb rice comparator; cooking/product identity matters.",
+      "futureAssessmentPotential": "Current point only as baseline; robustness not evaluated.",
+      "r0Decision": "No production change; feasibility only.",
+      "preparationForm": "Rice is cooked and cooled, then stir-fried with egg, shrimp, peas and ham.",
+      "assessmentFeasibility": {
+        "POINT": "Current baseline only; exact rice/cooling/frying preparation should be considered before uncertainty bounds are proposed.",
+        "RANGE": "No bounds evaluated.",
+        "CLASS_ONLY": "Not evidenced in R0; no complete bounded input proves all outcomes stay within one existing class.",
+        "CONDITIONAL_SCENARIOS": "No rice/product alternatives selected.",
+        "CARBOHYDRATE_ONLY": "No new assessment; current point is comparator only.",
+        "UNAVAILABLE": "Not the current overall state; use only if future GI/CHO source gates fail.",
+        "comparisonValue": "High-CHO contrast to hummus; portion carbohydrate is salient.",
+        "misinterpretationRisk": "Do not assume cooked-cooled-stir-fried rice GI from another rice form."
+      }
+    }
+  ]
+}
