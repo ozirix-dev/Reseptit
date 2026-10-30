@@ -1,0 +1,918 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "e8da2c9417e2aeff55a85d599b3b7e1ad465f36c",
+  "publicationState": "DRAFT_REVIEW_ONLY",
+  "changes": [
+    {
+      "recipeId": "bulgogi",
+      "ingredient": "kevätsipulia",
+      "kind": "MASS_VERIFIED",
+      "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250",
+      "reason": "Previously missing food-specific piece mass is now independently verified in the original AFCD API.",
+      "before": {
+        "name": "kevätsipulia",
+        "grams": null,
+        "fineliRecordId": "afcd-F006250-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "AJO 1.5: Spring-onion 15 g/piece was an unsourced standard-piece assumption, not a verified mass. Original recipe piece count is retained in recipeQuantity; weighed edible mass is required.",
+        "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+        "foodKey": "spring-onion",
+        "preparationKey": "recipe-specific-preparation-no-approved-gi",
+        "recipeQuantity": {
+          "amount": 2,
+          "unit": "kpl",
+          "massGrams": null
+        }
+      },
+      "after": {
+        "name": "kevätsipulia",
+        "grams": 30,
+        "fineliRecordId": "afcd-F006250-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "R2: AFCD Release 3 F006250 measurements lists Spring Onion, 15 g. 2 recipe pieces x 15 g = 30 g edible reference portion; this is a food-specific portion estimate, not a weighing. Source: https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250. Analysed bulb/stem and excluded tops/roots are documented in gk-r2-source-review.json; no second 78% deduction.",
+        "giMatchEvidence": "R2: source-backed spring-onion amount; no matched human GI. Its nonzero carbohydrate is included once in the unchanged omission sum.",
+        "foodKey": "spring-onion",
+        "preparationKey": "recipe-specific-preparation-no-approved-gi",
+        "recipeQuantity": {
+          "amount": 2,
+          "unit": "kpl",
+          "massGrams": null
+        }
+      },
+      "beforeIngredientCarbohydrateG": null,
+      "afterIngredientCarbohydrateG": 0.345,
+      "servings": 4
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "kevätsipulia",
+      "kind": "MASS_VERIFIED",
+      "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250",
+      "reason": "Previously missing food-specific piece mass is now independently verified in the original AFCD API.",
+      "before": {
+        "name": "kevätsipulia",
+        "grams": null,
+        "fineliRecordId": "afcd-F006250-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "AJO 1.5: Spring-onion 15 g/piece was an unsourced standard-piece assumption, not a verified mass. Original recipe piece count is retained in recipeQuantity; weighed edible mass is required.",
+        "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+        "foodKey": "spring-onion",
+        "preparationKey": "recipe-specific-preparation-no-approved-gi",
+        "recipeQuantity": {
+          "amount": 1,
+          "unit": "kpl",
+          "massGrams": null
+        }
+      },
+      "after": {
+        "name": "kevätsipulia",
+        "grams": 15,
+        "fineliRecordId": "afcd-F006250-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "R2: AFCD Release 3 F006250 measurements lists Spring Onion, 15 g. 1 recipe pieces x 15 g = 15 g edible reference portion; this is a food-specific portion estimate, not a weighing. Source: https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250. Analysed bulb/stem and excluded tops/roots are documented in gk-r2-source-review.json; no second 78% deduction.",
+        "giMatchEvidence": "R2: source-backed spring-onion amount; no matched human GI. Its nonzero carbohydrate is included once in the unchanged omission sum.",
+        "foodKey": "spring-onion",
+        "preparationKey": "recipe-specific-preparation-no-approved-gi",
+        "recipeQuantity": {
+          "amount": 1,
+          "unit": "kpl",
+          "massGrams": null
+        }
+      },
+      "beforeIngredientCarbohydrateG": null,
+      "afterIngredientCarbohydrateG": 0.22999999999999998,
+      "servings": 3
+    },
+    {
+      "recipeId": "baozi",
+      "ingredient": "kevätsipulia",
+      "kind": "MASS_VERIFIED",
+      "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250",
+      "reason": "Previously missing food-specific piece mass is now independently verified in the original AFCD API.",
+      "before": {
+        "name": "kevätsipulia",
+        "grams": null,
+        "fineliRecordId": "afcd-F006250-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "AJO 1.5: Spring-onion 15 g/piece was an unsourced standard-piece assumption, not a verified mass. Original recipe piece count is retained in recipeQuantity; weighed edible mass is required.",
+        "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+        "foodKey": "spring-onion",
+        "preparationKey": "recipe-specific-preparation-no-approved-gi",
+        "recipeQuantity": {
+          "amount": 2,
+          "unit": "kpl",
+          "massGrams": null
+        }
+      },
+      "after": {
+        "name": "kevätsipulia",
+        "grams": 30,
+        "fineliRecordId": "afcd-F006250-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "R2: AFCD Release 3 F006250 measurements lists Spring Onion, 15 g. 2 recipe pieces x 15 g = 30 g edible reference portion; this is a food-specific portion estimate, not a weighing. Source: https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250. Analysed bulb/stem and excluded tops/roots are documented in gk-r2-source-review.json; no second 78% deduction.",
+        "giMatchEvidence": "R2: source-backed spring-onion amount; no matched human GI. Its nonzero carbohydrate is included once in the unchanged omission sum.",
+        "foodKey": "spring-onion",
+        "preparationKey": "recipe-specific-preparation-no-approved-gi",
+        "recipeQuantity": {
+          "amount": 2,
+          "unit": "kpl",
+          "massGrams": null
+        }
+      },
+      "beforeIngredientCarbohydrateG": null,
+      "afterIngredientCarbohydrateG": 0.345,
+      "servings": 4
+    },
+    {
+      "recipeId": "bulgogi",
+      "ingredient": "soijakastiketta",
+      "kind": "MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31",
+      "reason": "Use the existing exact composition record food-specific mass; the former 1 g/ml or 15 g/rkl was not its published portion.",
+      "before": {
+        "name": "soijakastiketta",
+        "grams": 60,
+        "fineliRecordId": "fineli-31-2026-10-24",
+        "giRecordId": "legumes-category-mean-gi-34",
+        "massEvidence": "Ingredient-specific volume mass: 1 g/ml for soijakastiketta.",
+        "foodKey": "legume",
+        "preparationKey": "legume-category",
+        "giMatchEvidence": "Low-confidence broad proxy: unsweetened fermented soy sauce is mapped to the published legume-category mean; not a soy-sauce-specific measurement."
+      },
+      "after": {
+        "name": "soijakastiketta",
+        "grams": 72,
+        "fineliRecordId": "fineli-31-2026-10-24",
+        "giRecordId": "legumes-category-mean-gi-34",
+        "massEvidence": "R2: Fineli Release 20 #31 foodaddunit MASS: DL=120 g, RKL=18 g, TL=6 g. 60 ml x (120 g/dl / 100 ml/dl) = 72 g. Same soy-sauce composition; no generic water density. See gk-r2-source-review.json.",
+        "foodKey": "legume",
+        "preparationKey": "legume-category",
+        "giMatchEvidence": "Low-confidence broad proxy: unsweetened fermented soy sauce is mapped to the published legume-category mean; not a soy-sauce-specific measurement."
+      },
+      "beforeIngredientCarbohydrateG": 1.425,
+      "afterIngredientCarbohydrateG": 1.71,
+      "servings": 4
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "soijakastiketta",
+      "kind": "MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31",
+      "reason": "Use the existing exact composition record food-specific mass; the former 1 g/ml or 15 g/rkl was not its published portion.",
+      "before": {
+        "name": "soijakastiketta",
+        "grams": 15,
+        "fineliRecordId": "fineli-31-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for soijakastiketta."
+      },
+      "after": {
+        "name": "soijakastiketta",
+        "grams": 18,
+        "fineliRecordId": "fineli-31-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "R2: Fineli Release 20 #31 foodaddunit MASS: DL=120 g, RKL=18 g, TL=6 g. 1 rkl x 18 g/rkl = 18 g. Same soy-sauce composition; no generic water density. See gk-r2-source-review.json."
+      },
+      "beforeIngredientCarbohydrateG": 0.47500000000000003,
+      "afterIngredientCarbohydrateG": 0.57,
+      "servings": 3
+    },
+    {
+      "recipeId": "baozi",
+      "ingredient": "soijakastiketta",
+      "kind": "MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31",
+      "reason": "Use the existing exact composition record food-specific mass; the former 1 g/ml or 15 g/rkl was not its published portion.",
+      "before": {
+        "name": "soijakastiketta",
+        "grams": 30,
+        "fineliRecordId": "fineli-31-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for soijakastiketta."
+      },
+      "after": {
+        "name": "soijakastiketta",
+        "grams": 36,
+        "fineliRecordId": "fineli-31-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "R2: Fineli Release 20 #31 foodaddunit MASS: DL=120 g, RKL=18 g, TL=6 g. 2 rkl x 18 g/rkl = 36 g. Same soy-sauce composition; no generic water density. See gk-r2-source-review.json."
+      },
+      "beforeIngredientCarbohydrateG": 0.7125,
+      "afterIngredientCarbohydrateG": 0.855,
+      "servings": 4
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "ingredient": "soijakastiketta",
+      "kind": "MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31",
+      "reason": "Use the existing exact composition record food-specific mass; the former 1 g/ml or 15 g/rkl was not its published portion.",
+      "before": {
+        "name": "soijakastiketta",
+        "grams": 30,
+        "fineliRecordId": "fineli-31-release-20",
+        "giRecordId": null,
+        "massEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass.",
+        "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+        "estimatedAvailableCarbohydratePerServingG": 0.7125,
+        "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+      },
+      "after": {
+        "name": "soijakastiketta",
+        "grams": 36,
+        "fineliRecordId": "fineli-31-release-20",
+        "giRecordId": null,
+        "massEvidence": "R2: Fineli Release 20 #31 foodaddunit MASS: DL=120 g, RKL=18 g, TL=6 g. 2 rkl x 18 g/rkl = 36 g. Same soy-sauce composition; no generic water density. See gk-r2-source-review.json.",
+        "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+        "estimatedAvailableCarbohydratePerServingG": 0.855,
+        "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+      },
+      "beforeIngredientCarbohydrateG": 0.7125,
+      "afterIngredientCarbohydrateG": 0.855,
+      "servings": 4
+    },
+    {
+      "recipeId": "baozi",
+      "ingredient": "maissitärkkelystä",
+      "kind": "FOOD_AND_MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/27",
+      "reason": "Corn starch #27 (7 g/tbsp), not potato starch #162 or an undocumented 8 g/tbsp.",
+      "before": {
+        "name": "maissitärkkelystä",
+        "grams": 8,
+        "fineliRecordId": "fineli-162-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "Ingredient-specific tablespoon mass: 8 g/rkl for maissitärkkelystä.",
+        "giMatchEvidence": "Potato-products category mean is not a valid match for cornstarch; remove the unrelated GI mapping."
+      },
+      "after": {
+        "name": "maissitärkkelystä",
+        "grams": 7,
+        "fineliRecordId": "fineli-27-2026-10-25",
+        "giRecordId": null,
+        "massEvidence": "R2: Fineli Release 20 #27 corn starch, CHOAVL=86 g/100 g; foodaddunit RKL=7 g. 1 recipe tbsp x 7 g = 7 g. potato starch is not a valid composition or GI substitute. Source: https://fineli.fi/fineli/fi/elintarvikkeet/27 and locked Fineli reference.",
+        "giMatchEvidence": "R2: no preparation-matched human GI for steamed pork filling / fried onion coating. Lang et al. PMID 10357737 is reference-only for these recipes, not a transferable GI.",
+        "foodKey": "corn-starch",
+        "preparationKey": "recipe-specific-no-approved-gi"
+      },
+      "beforeIngredientCarbohydrateG": 1.632,
+      "afterIngredientCarbohydrateG": 1.505,
+      "servings": 4
+    },
+    {
+      "recipeId": "koshari",
+      "ingredient": "maissitärkkelystä",
+      "kind": "MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/27",
+      "reason": "Corn starch #27 (7 g/tbsp), not potato starch #162 or an undocumented 8 g/tbsp.",
+      "before": {
+        "name": "maissitärkkelystä",
+        "grams": 16,
+        "fineliRecordId": "fineli-27-2026-10-25",
+        "giRecordId": null,
+        "massEvidence": "Fineli Release 20 #27 corn starch; recipe-listed 2 tbsp × 8 g/tbsp = 16 g. Same food identity and mass as the original recipe; potato starch is not a valid composition or GI substitute.",
+        "giMatchEvidence": "R1B: no preparation-matched human GI source established for corn starch used as an onion coating and fried; no potato GI binding retained."
+      },
+      "after": {
+        "name": "maissitärkkelystä",
+        "grams": 14,
+        "fineliRecordId": "fineli-27-2026-10-25",
+        "giRecordId": null,
+        "massEvidence": "R2: Fineli Release 20 #27 corn starch, CHOAVL=86 g/100 g; foodaddunit RKL=7 g. 2 recipe tbsp x 7 g = 14 g. potato starch is not a valid composition or GI substitute. Source: https://fineli.fi/fineli/fi/elintarvikkeet/27 and locked Fineli reference.",
+        "giMatchEvidence": "R2: no preparation-matched human GI for steamed pork filling / fried onion coating. Lang et al. PMID 10357737 is reference-only for these recipes, not a transferable GI.",
+        "foodKey": "corn-starch",
+        "preparationKey": "recipe-specific-no-approved-gi"
+      },
+      "beforeIngredientCarbohydrateG": 3.44,
+      "afterIngredientCarbohydrateG": 3.01,
+      "servings": 4
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "ingredient": "neutraalia öljyä",
+      "kind": "MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/541",
+      "reason": "Align the already selected food record and its household measure; CHO effect is zero, fat effect stays a separate macro proposal.",
+      "before": {
+        "name": "neutraalia öljyä",
+        "grams": 27.4,
+        "fineliRecordId": "fineli-541-release-20",
+        "giRecordId": null,
+        "massEvidence": "Ingredient-specific household measure conversion: 13.7 g per rkl; recipe quantity converted to edible mass.",
+        "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+        "estimatedAvailableCarbohydratePerServingG": 0,
+        "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+      },
+      "after": {
+        "name": "neutraalia öljyä",
+        "grams": 27,
+        "fineliRecordId": "fineli-541-release-20",
+        "giRecordId": null,
+        "massEvidence": "R2: Fineli Release 20 #541 RKL=13.5 g; 2 tbsp = 27 g, not 27.4 g. Available carbohydrate remains source-documented zero.",
+        "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+        "estimatedAvailableCarbohydratePerServingG": 0,
+        "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+      },
+      "beforeIngredientCarbohydrateG": 0.0,
+      "afterIngredientCarbohydrateG": 0.0,
+      "servings": 4
+    },
+    {
+      "recipeId": "bulgogi",
+      "ingredient": "jasmiiniriisiä",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Rice category mean is not a tested jasmine cultivar/cooking match.",
+      "before": {
+        "name": "jasmiiniriisiä",
+        "grams": 300,
+        "fineliRecordId": "afcd-F007682-2026-10-24",
+        "giRecordId": "rice-category-mean-gi-67",
+        "massEvidence": "jasmiiniriisiä maps to afcd-release-3 record F007682; state: uncooked white rice.",
+        "giMatchEvidence": "Ingredient-category match: Rice category mean; rice category mean; rice flour is a broad grain-form analogue",
+        "foodKey": "rice-category-mean",
+        "preparationKey": "category-mean"
+      },
+      "after": {
+        "name": "jasmiiniriisiä",
+        "grams": 300,
+        "fineliRecordId": "afcd-F007682-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "jasmiiniriisiä maps to afcd-release-3 record F007682; state: uncooked white rice.",
+        "giMatchEvidence": "R2: Rice category mean is not a tested jasmine cultivar/cooking match. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 55.5,
+      "afterIngredientCarbohydrateG": 55.5,
+      "servings": 4
+    },
+    {
+      "recipeId": "bulgogi",
+      "ingredient": "soijakastiketta",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Whole-legume mean is not fermented soy sauce.",
+      "before": {
+        "name": "soijakastiketta",
+        "grams": 72,
+        "fineliRecordId": "fineli-31-2026-10-24",
+        "giRecordId": "legumes-category-mean-gi-34",
+        "massEvidence": "R2: Fineli Release 20 #31 foodaddunit MASS: DL=120 g, RKL=18 g, TL=6 g. 60 ml x (120 g/dl / 100 ml/dl) = 72 g. Same soy-sauce composition; no generic water density. See gk-r2-source-review.json.",
+        "foodKey": "legume",
+        "preparationKey": "legume-category",
+        "giMatchEvidence": "Low-confidence broad proxy: unsweetened fermented soy sauce is mapped to the published legume-category mean; not a soy-sauce-specific measurement."
+      },
+      "after": {
+        "name": "soijakastiketta",
+        "grams": 72,
+        "fineliRecordId": "fineli-31-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "R2: Fineli Release 20 #31 foodaddunit MASS: DL=120 g, RKL=18 g, TL=6 g. 60 ml x (120 g/dl / 100 ml/dl) = 72 g. Same soy-sauce composition; no generic water density. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null,
+        "giMatchEvidence": "R2: Whole-legume mean is not fermented soy sauce. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json."
+      },
+      "beforeIngredientCarbohydrateG": 1.71,
+      "afterIngredientCarbohydrateG": 1.71,
+      "servings": 4
+    },
+    {
+      "recipeId": "bulgogi",
+      "ingredient": "fariinisokeria",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Sugars/syrups group mean is not this brown-sugar product.",
+      "before": {
+        "name": "fariinisokeria",
+        "grams": 12,
+        "fineliRecordId": "afcd-F008969-2026-10-24",
+        "giRecordId": "sugar-syrups-category-mean-gi-58",
+        "massEvidence": "Ingredient-specific tablespoon mass: 12 g/rkl for fariinisokeria.",
+        "giMatchEvidence": "Ingredient-category match: Sugars and syrups category mean; sugars and syrups category mean",
+        "foodKey": "sugar-syrups-category-mean",
+        "preparationKey": "category-mean"
+      },
+      "after": {
+        "name": "fariinisokeria",
+        "grams": 12,
+        "fineliRecordId": "afcd-F008969-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "Ingredient-specific tablespoon mass: 12 g/rkl for fariinisokeria.",
+        "giMatchEvidence": "R2: Sugars/syrups group mean is not this brown-sugar product. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 2.904,
+      "afterIngredientCarbohydrateG": 2.904,
+      "servings": 4
+    },
+    {
+      "recipeId": "bulgogi",
+      "ingredient": "päärynää",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Raw pear mean does not validate pear heated in the beef marinade.",
+      "before": {
+        "name": "päärynää",
+        "grams": 100,
+        "fineliRecordId": "fineli-11062-2026-10-24",
+        "giRecordId": "pear-raw-mean-gi-38-2002",
+        "massEvidence": "päärynää maps to fineli-release-20 record 11062; state: peeled pear.",
+        "giMatchEvidence": "Published food-specific raw-pear mean (Foster-Powell K, Holt SHA, Brand-Miller JC, International Tables 2002, Table 1, entries 423–426); low-confidence ANALOG because the pear is grated raw for the marinade, then heated briefly with the beef. This is not an exact preparation match or a measured bulgogi GI.",
+        "foodKey": "pear",
+        "preparationKey": "raw"
+      },
+      "after": {
+        "name": "päärynää",
+        "grams": 100,
+        "fineliRecordId": "fineli-11062-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "päärynää maps to fineli-release-20 record 11062; state: peeled pear.",
+        "giMatchEvidence": "R2: Raw pear mean does not validate pear heated in the beef marinade. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 2.0,
+      "afterIngredientCarbohydrateG": 2.0,
+      "servings": 4
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "kypsää tomaattia",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Raw whole-tomato GI does not validate tomatoes fried until softened into sauce.",
+      "before": {
+        "name": "kypsää tomaattia",
+        "grams": 500,
+        "fineliRecordId": "fineli-352-2026-10-24",
+        "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+        "massEvidence": "Edible piece mass for kypsää tomaattia: 125 g/unit, Fineli portion where available or standard piece.",
+        "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw"
+      },
+      "after": {
+        "name": "kypsää tomaattia",
+        "grams": 500,
+        "fineliRecordId": "fineli-352-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "Edible piece mass for kypsää tomaattia: 125 g/unit, Fineli portion where available or standard piece.",
+        "giMatchEvidence": "R2: Raw whole-tomato GI does not validate tomatoes fried until softened into sauce. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 5.833333333333333,
+      "afterIngredientCarbohydrateG": 5.833333333333333,
+      "servings": 3
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "keitettyä riisiä",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Unspecified cooked rice has no cultivar/preparation-matched GI.",
+      "before": {
+        "name": "keitettyä riisiä",
+        "grams": 450,
+        "fineliRecordId": "fineli-1370-2026-10-24",
+        "giRecordId": "rice-category-mean-gi-67",
+        "massEvidence": "keitettyä riisiä maps to fineli-release-20 record 1370; state: cooked plain rice.",
+        "giMatchEvidence": "Ingredient-category match: Rice category mean; rice category mean; rice flour is a broad grain-form analogue",
+        "foodKey": "rice-category-mean",
+        "preparationKey": "category-mean"
+      },
+      "after": {
+        "name": "keitettyä riisiä",
+        "grams": 450,
+        "fineliRecordId": "fineli-1370-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "keitettyä riisiä maps to fineli-release-20 record 1370; state: cooked plain rice.",
+        "giMatchEvidence": "R2: Unspecified cooked rice has no cultivar/preparation-matched GI. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 30.926999999999996,
+      "afterIngredientCarbohydrateG": 30.926999999999996,
+      "servings": 3
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "sokeria",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Sugars/syrups group mean is not an individual sucrose measurement.",
+      "before": {
+        "name": "sokeria",
+        "grams": 4,
+        "fineliRecordId": "fineli-1-2026-10-24",
+        "giRecordId": "sugar-syrups-category-mean-gi-58",
+        "massEvidence": "Ingredient-specific teaspoon mass: 4 g/tl for sokeria.",
+        "giMatchEvidence": "Ingredient-category match: Sugars and syrups category mean; sugars and syrups category mean",
+        "foodKey": "sugar-syrups-category-mean",
+        "preparationKey": "category-mean"
+      },
+      "after": {
+        "name": "sokeria",
+        "grams": 4,
+        "fineliRecordId": "fineli-1-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "Ingredient-specific teaspoon mass: 4 g/tl for sokeria.",
+        "giMatchEvidence": "R2: Sugars/syrups group mean is not an individual sucrose measurement. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 1.332,
+      "afterIngredientCarbohydrateG": 1.332,
+      "servings": 3
+    },
+    {
+      "recipeId": "baozi",
+      "ingredient": "sokeria",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Sugars/syrups group mean does not establish sugar remaining after yeast fermentation and steaming.",
+      "before": {
+        "name": "sokeria",
+        "grams": 12,
+        "fineliRecordId": "fineli-1-2026-10-24",
+        "giRecordId": "sugar-syrups-category-mean-gi-58",
+        "massEvidence": "Ingredient-specific tablespoon mass: 12 g/rkl for sokeria.",
+        "giMatchEvidence": "Ingredient-category match: Sugars and syrups category mean; sugars and syrups category mean",
+        "foodKey": "sugar-syrups-category-mean",
+        "preparationKey": "category-mean"
+      },
+      "after": {
+        "name": "sokeria",
+        "grams": 12,
+        "fineliRecordId": "fineli-1-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "Ingredient-specific tablespoon mass: 12 g/rkl for sokeria.",
+        "giMatchEvidence": "R2: Sugars/syrups group mean does not establish sugar remaining after yeast fermentation and steaming. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 2.9970000000000003,
+      "afterIngredientCarbohydrateG": 2.9970000000000003,
+      "servings": 4
+    },
+    {
+      "recipeId": "baozi",
+      "ingredient": "kiinankaalia",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Vegetable category mean does not establish squeezed and steamed Chinese cabbage.",
+      "before": {
+        "name": "kiinankaalia",
+        "grams": 150,
+        "fineliRecordId": "fineli-359-2026-10-24",
+        "giRecordId": "vegetables-category-mean-gi-66",
+        "massEvidence": "kiinankaalia maps to fineli-release-20 record 359; state: raw Chinese cabbage.",
+        "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+        "foodKey": "vegetable",
+        "preparationKey": "vegetable-category"
+      },
+      "after": {
+        "name": "kiinankaalia",
+        "grams": 150,
+        "fineliRecordId": "fineli-359-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "kiinankaalia maps to fineli-release-20 record 359; state: raw Chinese cabbage.",
+        "giMatchEvidence": "R2: Vegetable category mean does not establish squeezed and steamed Chinese cabbage. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 0.6037500000000001,
+      "afterIngredientCarbohydrateG": 0.6037500000000001,
+      "servings": 4
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "munakoisoa",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Vegetable group mean is not roasted and baked aubergine.",
+      "before": {
+        "name": "munakoisoa",
+        "grams": 800,
+        "fineliRecordId": "fineli-362-2026-10-24",
+        "giRecordId": "vegetables-category-mean-gi-66",
+        "massEvidence": "Edible piece mass for munakoisoa: 400 g/unit, Fineli portion where available or standard piece.",
+        "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+        "foodKey": "vegetable",
+        "preparationKey": "vegetable-category"
+      },
+      "after": {
+        "name": "munakoisoa",
+        "grams": 800,
+        "fineliRecordId": "fineli-362-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "Edible piece mass for munakoisoa: 400 g/unit, Fineli portion where available or standard piece.",
+        "giMatchEvidence": "R2: Vegetable group mean is not roasted and baked aubergine. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 4.133333333333334,
+      "afterIngredientCarbohydrateG": 4.133333333333334,
+      "servings": 6
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "perunoita",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Potato group mean is not this unspecified cultivar, roasted then baked.",
+      "before": {
+        "name": "perunoita",
+        "grams": 500,
+        "fineliRecordId": "fineli-205-2026-10-24",
+        "giRecordId": "potatoes-category-mean-gi-71",
+        "massEvidence": "perunoita maps to fineli-release-20 record 205; state: peeled raw potato.",
+        "giMatchEvidence": "Ingredient-category match: Potatoes and potato products category mean; potato category mean; this is not preparation-specific",
+        "foodKey": "potatoes-category-mean",
+        "preparationKey": "category-mean"
+      },
+      "after": {
+        "name": "perunoita",
+        "grams": 500,
+        "fineliRecordId": "fineli-205-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "perunoita maps to fineli-release-20 record 205; state: peeled raw potato.",
+        "giMatchEvidence": "R2: Potato group mean is not this unspecified cultivar, roasted then baked. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 12.916666666666666,
+      "afterIngredientCarbohydrateG": 12.916666666666666,
+      "servings": 6
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "tomaattimurskaa",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Raw whole tomato is not canned crushed tomato simmered then baked.",
+      "before": {
+        "name": "tomaattimurskaa",
+        "grams": 400,
+        "fineliRecordId": "fineli-398-2026-10-24",
+        "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+        "massEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato.",
+        "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw"
+      },
+      "after": {
+        "name": "tomaattimurskaa",
+        "grams": 400,
+        "fineliRecordId": "fineli-398-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato.",
+        "giMatchEvidence": "R2: Raw whole tomato is not canned crushed tomato simmered then baked. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 2.3000000000000003,
+      "afterIngredientCarbohydrateG": 2.3000000000000003,
+      "servings": 6
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "maitoa",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Dairy category mean does not establish this milk in cooked bechamel.",
+      "before": {
+        "name": "maitoa",
+        "grams": 600,
+        "fineliRecordId": "fineli-689-2026-10-24",
+        "giRecordId": "dairy-category-mean-gi-35",
+        "massEvidence": "Ingredient-specific volume mass: 100 g/dl for maitoa.",
+        "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
+        "foodKey": "dairy",
+        "preparationKey": "unflavoured-dairy"
+      },
+      "after": {
+        "name": "maitoa",
+        "grams": 600,
+        "fineliRecordId": "fineli-689-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "Ingredient-specific volume mass: 100 g/dl for maitoa.",
+        "giMatchEvidence": "R2: Dairy category mean does not establish this milk in cooked bechamel. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 4.8,
+      "afterIngredientCarbohydrateG": 4.8,
+      "servings": 6
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "raastettua kovaa juustoa",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Dairy category mean is not unspecified hard cheese.",
+      "before": {
+        "name": "raastettua kovaa juustoa",
+        "grams": 80,
+        "fineliRecordId": "fineli-643-2026-10-24",
+        "giRecordId": "dairy-category-mean-gi-35",
+        "massEvidence": "raastettua kovaa juustoa maps to fineli-release-20 record 643; state: semi-hard Edam cheese proxy.",
+        "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
+        "foodKey": "dairy",
+        "preparationKey": "unflavoured-dairy"
+      },
+      "after": {
+        "name": "raastettua kovaa juustoa",
+        "grams": 80,
+        "fineliRecordId": "fineli-643-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "raastettua kovaa juustoa maps to fineli-release-20 record 643; state: semi-hard Edam cheese proxy.",
+        "giMatchEvidence": "R2: Dairy category mean is not unspecified hard cheese. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 0.0,
+      "afterIngredientCarbohydrateG": 0.0,
+      "servings": 6
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "mustapippuria",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Vegetable category mean is not ground black pepper.",
+      "before": {
+        "name": "mustapippuria",
+        "grams": 0.5,
+        "fineliRecordId": "afcd-F006618-2026-10-24",
+        "giRecordId": "vegetables-category-mean-gi-66",
+        "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria.",
+        "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+        "foodKey": "vegetable",
+        "preparationKey": "vegetable-category"
+      },
+      "after": {
+        "name": "mustapippuria",
+        "grams": 0.5,
+        "fineliRecordId": "afcd-F006618-2026-10-24",
+        "giRecordId": null,
+        "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria.",
+        "giMatchEvidence": "R2: Vegetable category mean is not ground black pepper. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 0.03216666666666667,
+      "afterIngredientCarbohydrateG": 0.03216666666666667,
+      "servings": 6
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "ingredient": "herneitä",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Legume category mean is not the selected green peas heated in a wok.",
+      "before": {
+        "name": "herneitä",
+        "grams": 100,
+        "fineliRecordId": "fineli-370-release-20",
+        "giRecordId": "legumes-category-mean-gi-34",
+        "massEvidence": "Green peas; Fineli record 370.",
+        "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+      },
+      "after": {
+        "name": "herneitä",
+        "grams": 100,
+        "fineliRecordId": "fineli-370-release-20",
+        "giRecordId": null,
+        "massEvidence": "Green peas; Fineli record 370.",
+        "giMatchEvidence": "R2: Legume category mean is not the selected green peas heated in a wok. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json.",
+        "foodKey": null,
+        "preparationKey": null
+      },
+      "beforeIngredientCarbohydrateG": 2.37375,
+      "afterIngredientCarbohydrateG": 2.37375,
+      "servings": 4
+    },
+    {
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "ingredient": "soba-nuudeli",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Pasta category mean does not establish a soba product of unspecified buckwheat/wheat fraction. Hätönen-style transfer is not assumed; see matched-study review.",
+      "before": {
+        "name": "soba-nuudeli",
+        "grams": 100,
+        "fineliRecordId": "afcd-F006043-release-3",
+        "giRecordId": "pasta-category-mean-gi-52",
+        "massEvidence": "Recipe-listed 100 g, mapped to Noodle, soba, dry (dry soba noodles).",
+        "foodKey": "pasta-category-mean",
+        "preparationKey": "category-mean",
+        "giMatchEvidence": "Pasta category mean: pasta category mean; product and cooking variation remains; category/analogue estimate, low confidence."
+      },
+      "after": {
+        "name": "soba-nuudeli",
+        "grams": 100,
+        "fineliRecordId": "afcd-F006043-release-3",
+        "giRecordId": null,
+        "massEvidence": "Recipe-listed 100 g, mapped to Noodle, soba, dry (dry soba noodles).",
+        "foodKey": null,
+        "preparationKey": null,
+        "giMatchEvidence": "R2: Pasta category mean does not establish a soba product of unspecified buckwheat/wheat fraction. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json."
+      },
+      "beforeIngredientCarbohydrateG": 35.6,
+      "afterIngredientCarbohydrateG": 35.6,
+      "servings": 2
+    },
+    {
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "ingredient": "pinaatti",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Vegetable category mean is not spinach, and the 1-piece mass remains unknown.",
+      "before": {
+        "name": "pinaatti",
+        "grams": null,
+        "fineliRecordId": "afcd-F008749-release-3",
+        "giRecordId": "vegetables-category-mean-gi-66",
+        "excludedReason": "The recipe amount 1 kpl has no food-specific mass conversion for Spinach, baby, fresh, raw.",
+        "massEvidence": "Mapped food state: fresh raw baby spinach; mass conversion unavailable."
+      },
+      "after": {
+        "name": "pinaatti",
+        "grams": null,
+        "fineliRecordId": "afcd-F008749-release-3",
+        "giRecordId": null,
+        "excludedReason": "The recipe amount 1 kpl has no food-specific mass conversion for Spinach, baby, fresh, raw.",
+        "massEvidence": "Mapped food state: fresh raw baby spinach; mass conversion unavailable.",
+        "foodKey": null,
+        "preparationKey": null,
+        "giMatchEvidence": "R2: Vegetable category mean is not spinach, and the 1-piece mass remains unknown. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json."
+      },
+      "beforeIngredientCarbohydrateG": null,
+      "afterIngredientCarbohydrateG": null,
+      "servings": 2
+    },
+    {
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "ingredient": "riisijauho",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Rice category mean is not rice flour gelatinised in coconut milk.",
+      "before": {
+        "name": "riisijauho",
+        "grams": 100,
+        "massEvidence": "Fineli #182 combined rice flour/rice flakes entry used as nearest rice-flour composition record.",
+        "fineliRecordId": "fineli-182-2026-10-25",
+        "giRecordId": "rice-category-mean-gi-67",
+        "foodKey": "rice-category-mean",
+        "preparationKey": "category-mean",
+        "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+      },
+      "after": {
+        "name": "riisijauho",
+        "grams": 100,
+        "massEvidence": "Fineli #182 combined rice flour/rice flakes entry used as nearest rice-flour composition record.",
+        "fineliRecordId": "fineli-182-2026-10-25",
+        "giRecordId": null,
+        "foodKey": null,
+        "preparationKey": null,
+        "giMatchEvidence": "R2: Rice category mean is not rice flour gelatinised in coconut milk. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json."
+      },
+      "beforeIngredientCarbohydrateG": 39.65,
+      "afterIngredientCarbohydrateG": 39.65,
+      "servings": 2
+    },
+    {
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "ingredient": "palmusokeri",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Sugars/syrups group mean does not identify the palm-sugar product or its prepared syrup.",
+      "before": {
+        "name": "palmusokeri",
+        "grams": 150,
+        "massEvidence": "Fineli granulated sugar used as carbohydrate analogue because palm-sugar product is unspecified.",
+        "fineliRecordId": "fineli-1-2026-10-25",
+        "giRecordId": "sugar-syrups-category-mean-gi-58",
+        "foodKey": "sugar-syrups-category-mean",
+        "preparationKey": "category-mean",
+        "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+      },
+      "after": {
+        "name": "palmusokeri",
+        "grams": 150,
+        "massEvidence": "Fineli granulated sugar used as carbohydrate analogue because palm-sugar product is unspecified.",
+        "fineliRecordId": "fineli-1-2026-10-25",
+        "giRecordId": null,
+        "foodKey": null,
+        "preparationKey": null,
+        "giMatchEvidence": "R2: Sugars/syrups group mean does not identify the palm-sugar product or its prepared syrup. No applicable source is bound; missing GI is not zero. See gk-r2-source-review.json."
+      },
+      "beforeIngredientCarbohydrateG": 74.925,
+      "afterIngredientCarbohydrateG": 74.925,
+      "servings": 2
+    }
+  ]
+}
