@@ -126,7 +126,7 @@ npm ci
 npm run content:sync
 npm run audit:nutrition -- --strict
 npm run audit:glycemic-load
-npm run test:gk 80
+npm run test:gk80
 python scripts/gk80-decimal-check.py
 npm exec -- tsx scripts/gk80-preview.ts
 npm test
@@ -141,6 +141,10 @@ Muutokset: master plan, tämä katselmointiohje,6 JSON-aineistoa, eristetty Type
 
 ## I. Yksi seuraava erä
 
-Riippumaton kolmen numeerisen ehdotuksen katselmointi: kahvijogurtin tuotevastaavuus, halloumin maitoanalogia/leipävalinta ja harchan mannasuurimosiirto. Päätä jokaiselle hyväksy/hylkää/rajattu korjaus sekä tarkista pienen CHO-vaikutuksen käsittely. Tätä työtä, ajoa 2 tai tuotantoon vientiä ei käynnistetty.
+Katselmoi koko 20 reseptin pilottierä yhtenä kokonaisuutena. Kolmen numeerisen ehdotuksen lähdevastaavuus, harchan mannasuurimosiirto, halloumin maitoanalogia ja pienen CHO-vaikutuksen käsittely ovat erän yhteisen katselmoinnin painopisteitä. Kirjaa myös 17 keskeneräisen reseptin jatkotoimet ja nimeä seuraavan vaiheen rajaus.
+
+Omistajan 30.10.2026 tekemän täsmennyksen mukainen päätös on yksi: **Hyväksytäänkö erä seuraavaan vaiheeseen? Kyllä / Ei.** Codex tekee perustellut arviot ja koko erän itsenäisesti ilman reseptikohtaisia lupakysymyksiä. Reseptikohtaiset havainnot tukevat eräpäätöstä. [Pysyvä toimintaperiaate on master planin kohdassa 18](../../plans/gk80-master-plan-v1.md).
+
+Nykyistä erää ei ole tällä periaatepäätöksellä hyväksytty jatkoon. Seuraavaa ajoa tai tuotantoon vientiä ei käynnistetty.
 
 Baozin pilottilaskentaan palautettiin lähteistetty hiiva 7 g: annokseen 0,11025 g CHO, 0,637 g proteiinia, 0,0875 g rasvaa ja 0,47075 g kuitua. R3:n aiempi puuttuva rivi säilyy historiatietona. Käymisen ja kaalin puristuksen epävarmuus jää avoimeksi.

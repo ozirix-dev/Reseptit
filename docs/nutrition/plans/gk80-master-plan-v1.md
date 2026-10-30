@@ -863,3 +863,29 @@ Jos vaihteluväliä ei voi perustella, ilmoita este avoimesti.
 **ALOITA NYT VAIN AJO 1: GK-80 PILOT – 20 RESEPTIÄ.**
 
 Tallenna koko MASTER PLAN pysyvästi, tee ensimmäinen rajattu pilotti ja palauta tulokset riippumattomaan katselmointiin. Älä julkaise, yhdistä PR:iä tai aloita seuraavaa ajoa ilman erillistä hyväksyntää.
+
+## 18. Omistajan täsmennys 30.10.2026: itsenäinen erä ja yksi hyväksymispäätös
+
+Codex tekee valtuutetun 20 reseptin erän kokonaisuudessaan itsenäisesti.
+Se valitsee ja perustelee lähteet, sovelletut arviot, laskentaskenaariot ja
+reseptitäsmennysten ehdotukset sekä tekee laskelmat, dokumentoinnin ja testit.
+Näille perustelluille erän sisäisille ratkaisuille ei pyydetä erillisiä lupia.
+
+Codex tuo katselmointiin kaikki 20 reseptiä yhtenä valmiina kokonaisuutena:
+tulokset, lähteet, epävarmuudet, tarvittavat reseptitäsmennykset, testit ja
+ehdotuksen seuraavan vaiheen rajauksesta. Erään voi kuulua keskeneräisiä
+reseptejä; niiden esteet ja seuraavat korjaustoimet kerrotaan samassa paketissa.
+Yhden reseptin epävarmuus ei keskeytä muiden reseptien käsittelyä eikä puuttuvaa
+näyttöä korvata keksityllä luvulla.
+
+Katselmoinnin jälkeen omistajalle esitetään yksi eräkohtainen päätös:
+
+**Hyväksytäänkö erä seuraavaan vaiheeseen? Kyllä / Ei.**
+
+Reseptikohtaiset havainnot ja korjaustarpeet ovat tämän päätöksen taustatietoa,
+eivät erillisiä omistajalta pyydettäviä hyväksyntöjä. Kyllä koskee paketissa
+nimettyä seuraavaa vaihetta; Ei palauttaa erän kirjattujen korjausten tekemiseen.
+Nykyiset tuotantoon julkaisun ja PR:n yhdistämisen erilliset rajaukset säilyvät.
+
+Tämä omistajan päätös täsmentää ohjelman työskentely- ja katselmointitapaa.
+Se ei itsessään hyväksy nykyistä pilottierää seuraavaan vaiheeseen.
