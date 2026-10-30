@@ -1,10 +1,10 @@
 # CODEX – RESEPTIT GK-80
 # AJO 2: LÄPIMURTOERÄ – VÄHINTÄÄN 10 UUTTA NUMEERISTA GK-EHDOTUSTA
 
-**Päivä:** 30.10.2026  
-**Projekti:** `ozirix-dev/Reseptit`  
-**Raportointi:** `ozirix-dev/ReportHub`  
-**Pääohjelma:** GK-80 MASTER PLAN V1.0  
+**Päivä:** 30.10.2026
+**Projekti:** `ozirix-dev/Reseptit`
+**Raportointi:** `ozirix-dev/ReportHub`
+**Pääohjelma:** GK-80 MASTER PLAN V1.0
 **Työn tila:** DEVELOPMENT + DRAFT REVIEW
 
 ## 0. TEHTÄVÄN YDIN
