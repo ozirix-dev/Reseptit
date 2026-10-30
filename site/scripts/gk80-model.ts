@@ -100,4 +100,3 @@ export function display(result: ReturnType<typeof calculate>, locale: keyof type
 export function proposalCount(results: ReturnType<typeof calculate>[]) {
   return new Set(results.filter(r => r.numericProposal).map(r => r.recipeId)).size;
 }
-

@@ -88,4 +88,3 @@ test('994 protected source files and all326 legacy outputs remain unchanged',()=
   assert.deepEqual(resultHashes,json('legacy-results.json'));assert.equal(audit.summary.recipes,326);assert.equal(audit.summary.calculated,83);
   const zeros=json('legacy-zero-review.json').recipes;assert.equal(zeros.length,9);assert.ok(zeros.every((z:{omittedCarbohydrateG:number})=>z.omittedCarbohydrateG>0));
 });
-

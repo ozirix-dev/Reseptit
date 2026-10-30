@@ -13,4 +13,3 @@ const outputs = recipes.map(r => {
   return {...result,display:Object.fromEntries((['fi','en','sv','th'] as const).map(l=>[l,display(result,l)]))};
 });
 console.log(JSON.stringify({publication:'ISOLATED_DRAFT_PREVIEW',outputs},null,2));
-
