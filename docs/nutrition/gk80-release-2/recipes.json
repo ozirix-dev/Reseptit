@@ -1,0 +1,2559 @@
+{
+  "status": "DRAFT_CANDIDATE_OWNER_APPROVAL_REQUIRED",
+  "recipes": [
+    {
+      "recipeId": "meksikolainen-huevos-a-la-mexicana",
+      "title": "Huevos a la mexicana",
+      "sourcePath": "reseptit/aamupalat/meksikolainen-huevos-a-la-mexicana.md",
+      "sourceSha256": "3d46a18385c6a81314abbd1c65cb2d1411ea7cbdd4412a8b91a537289a9de48a",
+      "servings": 2,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kananmuna",
+              "state": "raw edible egg, shell removed",
+              "massG": 110,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "fineli-858-release-20-ae10a9b7",
+                "evidenceHash": "762906dbb1f9bdd26cd673df40c988afdcca33ce47943b58213bbf40ca068ad2"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 110,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 1,
+              "name": "tomaatti",
+              "state": "raw medium tomato, edible portion",
+              "massG": 125,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 3.45,
+                "protein": 0.55,
+                "fat": 0.3,
+                "fibre": 0.4
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "fineli-352-release-20-be0843a6",
+                "evidenceHash": "a678d31ceae6f456cd77fcba4e8e8a8b00036b751705911701f831440587cdc9"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 125,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 2,
+              "name": "sipuli",
+              "state": "raw yellow onion, medium edible portion",
+              "massG": 55,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "fineli-335-release-20-c19feae0",
+                "evidenceHash": "038faa81ea173ed1291c232062cadfad448233f89b5e66472003dd1b967f083c"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 55,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 3,
+              "name": "tuoretta jalapeñoa",
+              "state": "fresh jalapeño represented by fresh green chilli",
+              "massG": 15,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1,
+                "protein": 2.8,
+                "fat": 0.3,
+                "fibre": 12.9
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "afcd-F002896-release-3-ce271a35",
+                "evidenceHash": "dabecfcdda42c560f08be38eef09cc80d0c591c03db47ad5d6698c7e0272c252"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 15,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 4,
+              "name": "neutraalia paistoöljyä",
+              "state": "neutral vegetable cooking oil",
+              "massG": 13.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 99.9,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": {
+                "sourceId": "fineli-541-release-20-b43b6f9e",
+                "evidenceHash": "e32ce332e6efde0866c7345021ced345be16825d5fd4c23309b61d3e1bb2334a"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 13.5,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              }
+            },
+            {
+              "index": 5,
+              "name": "suolaa",
+              "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": null,
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": null,
+                "basis": "Named weighed recipe version. Converted historical spoon/cup masses become proposed gram amounts, not a newly verified density or portion measurement."
+              }
+            }
+          ]
+        }
+      ],
+      "group": "near-complete",
+      "batch": 1,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "approved": false,
+      "published": false,
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "originalPreparation": "\n\n1. Pilko täytteen kasvikset ja muut suuret ainekset pieniksi paloiksi. Kuullota ne pannulla tilkassa öljyä, kunnes ne ovat pehmenneet.\n2. Vatkaa kananmunat ja mausta ripauksella suolaa. Kaada munaseos pannulle ja laske lämpö miedoksi.\n3. Vedä hyytynyttä munaa reunoilta kohti keskustaa. Taita tai rullaa, kun pinta on juuri hyytynyt.\n4. Paista tomaatti, sipuli ja jalapeno pehmeiksi ennen kananmunien lisäämistä.\n",
+      "proposedPreparation": [
+        "Kuumenna 13,5 g öljyä pannulla. Pehmennä 55 g sipulia ja 15 g tuoretta jalapeñoa. Lisää 125 g tomaattia.",
+        "Lisää 110 g kuoretonta kananmunaa ja kypsennä sekoittaen. Mausta suolalla.",
+        "Jaa koko pannullinen nesteineen kahteen annokseen. Ei tortillaa tai muita lisukkeita tässä versiossa."
+      ],
+      "notes": [],
+      "proposedTitle": "Huevos a la mexicana",
+      "releaseInputVersion": 2
+    },
+    {
+      "recipeId": "karibia-callaloo-munakas",
+      "title": "Callaloo-munakas pinaatista",
+      "sourcePath": "reseptit/aamupalat/karibia-callaloo-munakas.md",
+      "sourceSha256": "f00a003067ded632eee9b021913c13da6487102a60bfd2bff2252cda997e5ed3",
+      "servings": 2,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "tuoretta pinaattia",
+              "state": "fresh mature English spinach, raw",
+              "massG": 150,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.6,
+                "protein": 2.4,
+                "fat": 0.3,
+                "fibre": 2.5
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "afcd-F008761-release-3-12700b24",
+                "evidenceHash": "fcc7fc43e31f3576f5d8e7758324ca8f8c3463b07ed26c9a3c06fd2d63c794fa"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 150,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 1,
+              "name": "keltasipulia",
+              "state": "raw yellow onion",
+              "massG": 50,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "fineli-335-release-20-c19feae0",
+                "evidenceHash": "038faa81ea173ed1291c232062cadfad448233f89b5e66472003dd1b967f083c"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 50,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 2,
+              "name": "kananmuna",
+              "state": "raw edible egg, shell removed",
+              "massG": 110,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "fineli-858-release-20-ae10a9b7",
+                "evidenceHash": "762906dbb1f9bdd26cd673df40c988afdcca33ce47943b58213bbf40ca068ad2"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 110,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 3,
+              "name": "kevätsipuli",
+              "state": "raw spring onion, chopped",
+              "massG": 12,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.6,
+                "protein": 1.7,
+                "fat": 0.2,
+                "fibre": 1.9
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "afcd-F006250-release-3-b70e842b",
+                "evidenceHash": "dd9d065afa016565d42424375b1b2b9f3243707d946c6100d29599ffdd1431c2"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 12,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 4,
+              "name": "tuoretta timjamia",
+              "state": "fresh thyme leaves",
+              "massG": 6,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.1,
+                "protein": 5.6,
+                "fat": 1.7,
+                "fibre": 14
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "afcd-F010466-release-3-eb65cd9f",
+                "evidenceHash": "55d3c33dfadc3c229e6791edb76160b928d082be9c943aad3a0abf02aa465d13"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 6,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 5,
+              "name": "neutraalia paistoöljyä",
+              "state": "neutral vegetable cooking oil",
+              "massG": 13.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 99.9,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": {
+                "sourceId": "fineli-541-release-20-b43b6f9e",
+                "evidenceHash": "e32ce332e6efde0866c7345021ced345be16825d5fd4c23309b61d3e1bb2334a"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 13.5,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              }
+            },
+            {
+              "index": 6,
+              "name": "suolaa",
+              "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": null,
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": null,
+                "basis": "Named weighed recipe version. Converted historical spoon/cup masses become proposed gram amounts, not a newly verified density or portion measurement."
+              }
+            }
+          ]
+        }
+      ],
+      "group": "near-complete",
+      "batch": 1,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "approved": false,
+      "published": false,
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "originalPreparation": "\n\n1. Pilko täytteen kasvikset ja muut suuret ainekset pieniksi paloiksi. Kuullota ne pannulla tilkassa öljyä, kunnes ne ovat pehmenneet.\n2. Vatkaa kananmunat ja mausta ripauksella suolaa. Kaada munaseos pannulle ja laske lämpö miedoksi.\n3. Vedä hyytynyttä munaa reunoilta kohti keskustaa. Taita tai rullaa, kun pinta on juuri hyytynyt.\n4. Kuullota sipuli, pinaatti ja timjami pannulla öljyssä. Kaada päälle vatkatut munat ja kypsennä miedolla lämmöllä.\n",
+      "proposedPreparation": [
+        "Kuullota 50 g sipulia ja 12 g kevätsipulia 13,5 g öljyssä. Lisää 150 g tuoretta pinaattia ja 6 g tuoretta timjamia.",
+        "Lisää 110 g kuoretonta kananmunaa ja kypsennä kannen alla. Mausta suolalla.",
+        "Jaa koko munakas ja pannuneste kahteen annokseen. Tämä on pinaattiversio, ei toisen callaloo-kasvin laskelma."
+      ],
+      "notes": [],
+      "proposedTitle": "Callaloo-munakas – pinaattiversio",
+      "releaseInputVersion": 2
+    },
+    {
+      "recipeId": "yrttituorejuusto-kinkkurullat",
+      "title": "Yrttituorejuusto-kinkkurullat",
+      "sourcePath": "reseptit/aamupalat/yrttituorejuusto-kinkkurullat.md",
+      "sourceSha256": "e5649f6b71fb0131def0f4332f1522e4c96c4e90af5abeed947df8681ec25363",
+      "servings": 4,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "3 %:n keittokinkkusiivuja",
+              "state": "cooked lean ham slices, 3% fat",
+              "massG": 150,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.629,
+                "protein": 17.61,
+                "fat": 2.985,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "fineli-779-release-20-66a2e282",
+                "evidenceHash": "0e5d99faddd7956b699d79e08434e21d1db001b0165f4a2ee4e1e5ca5c68b19e"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 150,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 1,
+              "name": "maustamatonta tuorejuustoa, 20 % rasvaa",
+              "state": "plain cream cheese, 20% fat",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 3.735,
+                "protein": 4.09,
+                "fat": 20.032,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "dairy-code",
+              "match": "APPLIED",
+              "applicability": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI.",
+              "composition": {
+                "sourceId": "fineli-34765-release-20-34233197",
+                "evidenceHash": "b2d7fc585a9bafd90fa4684fadaecec768ad272a43f73662cfd510a99411836b"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+              }
+            },
+            {
+              "index": 2,
+              "name": "silputtua ruohosipulia",
+              "state": "fresh chopped chives",
+              "massG": 7,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.73,
+                "protein": 2.2,
+                "fat": 0.92,
+                "fibre": 2.1
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "fineli-392-release-20-9a557419",
+                "evidenceHash": "166fe949731cafab0aaa85584791440810a5c330eee848ba363847bd43dbd0be"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 7,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 3,
+              "name": "punaista paprikaa",
+              "state": "raw red bell pepper",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.5,
+                "protein": 0.94,
+                "fat": 0.3,
+                "fibre": 1.9
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "fineli-386-release-20-27d18f94",
+                "evidenceHash": "ce580f305babe9f3731ee3ddaab089ae99c874012d938fba6ef2bb8a1a65e617"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 4,
+              "name": "kurkkua",
+              "state": "raw cucumber",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.4,
+                "protein": 0.65,
+                "fat": 0.1,
+                "fibre": 1.1
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "fineli-346-release-20-1a06f8f9",
+                "evidenceHash": "b733fe8f232cbcf5344571032b397017711fbc19d8646bb96a38229c9b6d0c2d"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 5,
+              "name": "salaatinlehtiä",
+              "state": "raw leaf lettuce",
+              "massG": 40,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.98,
+                "protein": 1.12,
+                "fat": 0.2,
+                "fibre": 1.2
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "fineli-330-release-20-ced163d1",
+                "evidenceHash": "13be7824e3ba0ebe8ac6a7a15e4593ab29fd1a52e030b1d0e9fbd3cbb690db6c"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 40,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 6,
+              "name": "jauhettua mustapippuria",
+              "state": "ground black pepper",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "small-spice-extension",
+              "match": "APPLIED",
+              "applicability": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
+              "composition": {
+                "sourceId": "afcd-F006618-release-3-a814ab84",
+                "evidenceHash": "4c323b5bf415d582684499fe3efe7acfa2c516478ec3e174b9e6106a926c1d70"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 0.5,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "spice-portion50-v2",
+                "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+                "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+              }
+            },
+            {
+              "index": 7,
+              "name": "suolaa",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "salt",
+              "match": "DIRECT",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero"
+            }
+          ]
+        }
+      ],
+      "group": "near-complete",
+      "batch": 1,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "approved": false,
+      "published": false,
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "originalPreparation": "\n\n1. Sekoita ruohosipuli ja mustapippuri tuorejuustoon.\n2. Leikkaa paprika ja kurkku ohuiksi suikaleiksi.\n3. Levitä kinkkusiivulle ohut kerros tuorejuustoa ja lisää salaatti sekä kasvikset.\n4. Kääri rullalle ja leikkaa halutessasi suupaloiksi.\n\n## Muistiinpanot\n\nValitse kinkku, jonka ainesosaluettelo sopii omaan ruokavalioosi.\n",
+      "proposedPreparation": [
+        "Sekoita 100 g maustamatonta 20 prosenttista tuorejuustoa 7 g ruohosipulin ja 0,5 g jauhetun mustapippurin kanssa.",
+        "Levitä 150 g 3 prosenttisen keittokinkun siivuille ja kääri. Leikkaa 100 g paprikaa ja 100 g kurkkua tikuiksi.",
+        "Tarjoa kaikki rullat, kasvikset ja 40 g salaatinlehtiä kahtena annoksena. Ei muuta kastiketta."
+      ],
+      "notes": [],
+      "proposedTitle": "Yrttituorejuusto-kinkkurullat",
+      "releaseInputVersion": 2
+    },
+    {
+      "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+      "title": "Kreikkalainen kanavuoka oliiveilla",
+      "sourcePath": "reseptit/paaruoat/kreikkalainen-kanavuoka-oliiveilla.md",
+      "sourceSha256": "749b32ad9948922028b7f9f5b8927f80c8a3fb508e0a6dc0ea15b4716b69485f",
+      "servings": 4,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "nahatonta ja luutonta broilerin reisilihaa",
+              "state": "raw lean skinless chicken thigh flesh, boneless edible meat",
+              "massG": 600,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 19.1,
+                "fat": 3,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": {
+                "sourceId": "afcd-F002806-release-3-dc6c0ef4",
+                "evidenceHash": "2e3a5059a173d664ccbeeec4268bb7de6b3fa9f7619f7803dee155899d9b88c0"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 600,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              }
+            },
+            {
+              "index": 1,
+              "name": "kirsikkatomaatteja",
+              "state": "raw cherry tomatoes",
+              "massG": 250,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 3.5,
+                "protein": 0.9,
+                "fat": 0,
+                "fibre": 1.7
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "afcd-F009190-release-3-1e5eedf6",
+                "evidenceHash": "2fb2372c61770b58db844121d6a48510d7306a94b548914f58ca52ab8ad6766b"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 250,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 2,
+              "name": "punasipulia",
+              "state": "raw red onion, edible portion",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 5.447,
+                "protein": 1.506,
+                "fat": 0.114,
+                "fibre": 1.2
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "fineli-34234-release-20-1ec76743",
+                "evidenceHash": "66de4c5920bce5f025cd328616aecadc12d1b5f4a9c9d8ecafcf29cbd42cb18b"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 3,
+              "name": "fetajuustoa",
+              "state": "feta cheese, 25% fat",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.2,
+                "protein": 18,
+                "fat": 25,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "dairy-code",
+              "match": "APPLIED",
+              "applicability": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI.",
+              "composition": {
+                "sourceId": "fineli-11211-release-20-b39d078a",
+                "evidenceHash": "d67f40de4c201ce25afe83ff24f599b213a9793d19945dbe57a78a0cde76c7d5"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+              }
+            },
+            {
+              "index": 4,
+              "name": "kalamataoliiveja",
+              "state": "drained olives, green or black",
+              "massG": 60,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 2.2,
+                "fat": 21.7,
+                "fibre": 3.2
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": {
+                "sourceId": "afcd-F006198-release-3-e7c2d9f7",
+                "evidenceHash": "e3dfdcfdcf917f5c709190c694f23c16bfb9e1f448f07fc442baa5b8b42332a4"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 60,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              }
+            },
+            {
+              "index": 5,
+              "name": "oliiviöljyä",
+              "state": "olive oil as sold",
+              "massG": 27.0,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 100,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": {
+                "sourceId": "fineli-536-release-20-89a9a16a",
+                "evidenceHash": "f6d600a7cb197c9ec68628ef93adf7229a135760dd14d706fa8c83d07c9fa578"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 27.0,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              }
+            },
+            {
+              "index": 6,
+              "name": "kuivattua oreganoa",
+              "state": "dried oregano",
+              "massG": 2,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 26.4,
+                "protein": 9,
+                "fat": 4.3,
+                "fibre": 42.5
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "small-spice-extension",
+              "match": "APPLIED",
+              "applicability": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
+              "composition": {
+                "sourceId": "afcd-F006281-release-3-6c6c6bfe",
+                "evidenceHash": "dc5aa0ee2aa7039b7a768ee5ee84ae208f31ff59c75f3e25fef794678ea98723"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 2,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "spice-portion50-v2",
+                "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+                "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+              }
+            },
+            {
+              "index": 7,
+              "name": "sitruunamehua",
+              "state": "undiluted lemon juice",
+              "massG": 30,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.6,
+                "protein": 0.31,
+                "fat": 0,
+                "fibre": 0.1
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "fineli-11557-release-20-0e2f3532",
+                "evidenceHash": "b06f70e94acfa212f9f13a67ec8097d33610db9419481d43c0e9fa471dae085c"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 30,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 8,
+              "name": "jauhettua mustapippuria",
+              "state": "ground black pepper",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "small-spice-extension",
+              "match": "APPLIED",
+              "applicability": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
+              "composition": {
+                "sourceId": "afcd-F006618-release-3-a814ab84",
+                "evidenceHash": "4c323b5bf415d582684499fe3efe7acfa2c516478ec3e174b9e6106a926c1d70"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 0.5,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "spice-portion50-v2",
+                "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+                "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+              }
+            },
+            {
+              "index": 9,
+              "name": "suolaa",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "salt",
+              "match": "DIRECT",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero"
+            }
+          ]
+        }
+      ],
+      "group": "near-complete",
+      "batch": 1,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "approved": false,
+      "published": false,
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "originalPreparation": "\n\n1. Kuumenna uuni 200 asteeseen. Laita broileri uunivuokaan ja mausta suolalla, pippurilla ja oreganolla.\n2. Lisää puolitetut tomaatit, lohkottu punasipuli ja oliivit. Valuta päälle oliiviöljy ja sitruunamehu.\n3. Paista 30–35 minuuttia, kunnes broileri on kypsää. Murustele feta pinnalle viimeiseksi 10 minuutiksi.\n4. Leikkaa broileri ja punasipuli paloiksi. Yhdistä uunivuokaan broilerin, tomaattien, oliivien, oliiviöljyn, oreganon ja sitruunamehun kanssa. Paista, kunnes broileri on kypsää. Murenna feta päälle vasta kypsennyksen lopussa.\n\n## Muistiinpanot\n\nBroilerin sisälämpötilan tulee olla vähintään 75 °C.\n",
+      "proposedPreparation": [
+        "Laita 600 g nahatonta luutonta broilerin reisilihaa vuokaan. Lisää 250 g kirsikkatomaattia ja 100 g punasipulia.",
+        "Sekoita 27 g oliiviöljyä,30 g sitruunamehua,2 g kuivattua oreganoa ja 0,5 g mustapippuria. Lisää vuokaan 100 g fetan ja 60 g kivettömien oliivien kanssa.",
+        "Kypsennä 200 asteessa kunnes broileri on kauttaaltaan kypsää. Jaa koko vuoka nesteineen neljään annokseen."
+      ],
+      "notes": [],
+      "proposedTitle": "Kreikkalainen kanavuoka oliiveilla",
+      "releaseInputVersion": 2
+    },
+    {
+      "recipeId": "kanapyorykat-tomaattikastike",
+      "title": "Kanapyörykät tomaatti-kermakastikkeessa",
+      "sourcePath": "reseptit/paaruoat/kanapyorykat-tomaattikastike.md",
+      "sourceSha256": "01958a901ed9588e7dd3b8444d4789a7248be65c44f474d76bd6bf3ac7c2b3b8",
+      "servings": 4,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "broilerin jauhelihaa",
+              "state": "raw chicken mince",
+              "massG": 500,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 19.27,
+                "fat": 3.871,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": {
+                "sourceId": "fineli-28930-release-20-b50a41d5",
+                "evidenceHash": "903cd0de5f36db28c1a60f572fe41161301e03e7c4d8b6203688a16a8a87228e"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 500,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              }
+            },
+            {
+              "index": 1,
+              "name": "kananmuna",
+              "state": "raw edible egg, shell removed",
+              "massG": 55,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "fineli-858-release-20-ae10a9b7",
+                "evidenceHash": "762906dbb1f9bdd26cd673df40c988afdcca33ce47943b58213bbf40ca068ad2"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 55,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 2,
+              "name": "parmesaania",
+              "state": "fresh regular-fat Parmesan",
+              "massG": 30,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 32,
+                "fat": 27,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": {
+                "sourceId": "afcd-F002479-release-3-439e5fcd",
+                "evidenceHash": "5e8d39d77d634c5846e6005b78d4c30e6158b95748fd5216fe83529e502fdabd"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 30,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              }
+            },
+            {
+              "index": 3,
+              "name": "kuivattua oreganoa",
+              "state": "dried oregano",
+              "massG": 1,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 26.4,
+                "protein": 9,
+                "fat": 4.3,
+                "fibre": 42.5
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "small-spice-extension",
+              "match": "APPLIED",
+              "applicability": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
+              "composition": {
+                "sourceId": "afcd-F006281-release-3-6c6c6bfe",
+                "evidenceHash": "dc5aa0ee2aa7039b7a768ee5ee84ae208f31ff59c75f3e25fef794678ea98723"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 1,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "spice-portion50-v2",
+                "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+                "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+              }
+            },
+            {
+              "index": 4,
+              "name": "sipuli",
+              "state": "raw yellow onion, medium",
+              "massG": 55,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "fineli-335-release-20-c19feae0",
+                "evidenceHash": "038faa81ea173ed1291c232062cadfad448233f89b5e66472003dd1b967f083c"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 55,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 5,
+              "name": "tomaattimurskaa",
+              "state": "crushed tomato",
+              "massG": 400,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 3.45,
+                "protein": 0.55,
+                "fat": 0.2,
+                "fibre": 0.4
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "fineli-398-release-20-bccfe449",
+                "evidenceHash": "3a679f2f126b327fe7d7111a8119676526a23b01766d2ce8c4aa3f870dbd4536"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 400,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 6,
+              "name": "kuohukermaa",
+              "state": "whipping cream, 38% fat",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.9,
+                "protein": 1.88,
+                "fat": 38,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "dairy-code",
+              "match": "APPLIED",
+              "applicability": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI.",
+              "composition": {
+                "sourceId": "fineli-631-release-20-6d1f5fee",
+                "evidenceHash": "d44e1bbc514ca34811c62c77167f07d0d3e014f7cd6145e38a96f460808686bb"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+              }
+            },
+            {
+              "index": 7,
+              "name": "oliiviöljyä",
+              "state": "olive oil",
+              "massG": 13.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 100,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": {
+                "sourceId": "fineli-536-release-20-89a9a16a",
+                "evidenceHash": "f6d600a7cb197c9ec68628ef93adf7229a135760dd14d706fa8c83d07c9fa578"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 13.5,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              }
+            },
+            {
+              "index": 8,
+              "name": "jauhettua mustapippuria",
+              "state": "ground black pepper",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "small-spice-extension",
+              "match": "APPLIED",
+              "applicability": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
+              "composition": {
+                "sourceId": "afcd-F006618-release-3-a814ab84",
+                "evidenceHash": "4c323b5bf415d582684499fe3efe7acfa2c516478ec3e174b9e6106a926c1d70"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 0.5,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "spice-portion50-v2",
+                "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+                "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+              }
+            },
+            {
+              "index": 9,
+              "name": "suolaa",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "salt",
+              "match": "DIRECT",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero"
+            }
+          ]
+        }
+      ],
+      "group": "near-complete",
+      "batch": 1,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "approved": false,
+      "published": false,
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "originalPreparation": "\n\n1. Sekoita broilerin jauheliha, kananmuna, raastettu parmesaani, oregano, suola ja pippuri. Muotoile 16 pyörykäksi.\n2. Kuumenna öljy syvässä pannussa ja ruskista pyörykät kauttaaltaan. Nosta lautaselle.\n3. Kuullota hienonnettu sipuli samalla pannulla. Lisää tomaattimurska ja hauduta 8 minuuttia.\n4. Sekoita kerma kastikkeeseen ja nosta pyörykät takaisin pannulle. Hauduta kannen alla 10 minuuttia kypsiksi.\n5. Tarkista maku ja tarjoa.\n\n## Muistiinpanot\n\nBroilerin jauheliha kypsennetään kauttaaltaan. Sisälämpötilan tulee olla vähintään 75 °C.\n",
+      "proposedPreparation": [
+        "Sekoita 500 g broilerin jauhelihaa,55 g kuoretonta kananmunaa,30 g parmesaania ja 1 g kuivattua oreganoa. Muotoile pyöryköiksi.",
+        "Kuullota 55 g sipulia 13,5 g öljyssä. Lisää 400 g tomaattimurskaa,100 g kermaa ja 0,5 g jauhettua mustapippuria.",
+        "Kypsennä pyörykät kastikkeessa kauttaaltaan. Jaa kaikki pyörykät ja kastike neljään annokseen."
+      ],
+      "notes": [],
+      "proposedTitle": "Kanapyörykät tomaatti-kermakastikkeessa",
+      "releaseInputVersion": 2
+    },
+    {
+      "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+      "title": "Nasi lemak -kookosriisi ja kananmuna",
+      "sourcePath": "reseptit/aamupalat/malesialainen-nasi-lemak-aamiaisella.md",
+      "sourceSha256": "a6e430aabed3fd11242235a2f89ff564d8d29934f6f9bc1a10161fa5270216fb",
+      "servings": 2,
+      "evidenceVersion": 2,
+      "method": "D",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "basmati-hot-grain",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kuivaa valkoista basmati- tai jasmiiniriisiä",
+              "state": "dry uncooked white long-grain rice",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 74,
+                "protein": 7,
+                "fat": 0.9,
+                "fibre": 0.8
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "rice-grain",
+              "match": "APPLIED",
+              "applicability": "Named basmati or jasmine white-rice option, hot cooked intact grain. Rice cooked with coconut milk is a LOW preparation analogue; no fat discount. Generic dry-rice composition is a proxy, not branded label.",
+              "composition": {
+                "sourceId": "afcd-F007682-release-3-e20d6ed7",
+                "evidenceHash": "ebddd47c4ceeebc8fb1aec0415ff1029954b3689d9d47866f9db20e58b1bf760"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "rice-basmati57",
+                "evidenceHash": "a644c4fd5e3969e23f403a0ca732e108cfe9c9dd4157c96c76b1117ca773c57c",
+                "rationale": "Named basmati or jasmine white-rice option, hot cooked intact grain. Rice cooked with coconut milk is a LOW preparation analogue; no fat discount. Generic dry-rice composition is a proxy, not branded label."
+              }
+            },
+            {
+              "index": 1,
+              "name": "kookosmaito",
+              "state": "regular-fat canned coconut milk as sold",
+              "massG": 184.0,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.7,
+                "protein": 1.4,
+                "fat": 15.4,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "afcd-F002991-release-3-aef4d973",
+                "evidenceHash": "d6dcb688d40a92f44f555c7cc66e34b480d89a56ba59f49f8db8b4d0e7ab5bca"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 184.0,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 2,
+              "name": "kananmuna",
+              "state": "raw edible egg, shell removed",
+              "massG": 110,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "fineli-858-release-20-ae10a9b7",
+                "evidenceHash": "762906dbb1f9bdd26cd673df40c988afdcca33ce47943b58213bbf40ca068ad2"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 110,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 3,
+              "name": "kurkku",
+              "state": "raw peeled cucumber",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.1,
+                "protein": 0.4,
+                "fat": 0.1,
+                "fibre": 0.6
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "afcd-F003319-release-3-90c997be",
+                "evidenceHash": "323f7dfd0bee1e50140e42872ce52ae79e8fc1920cd19f6dff3e25f8a494eb07"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 4,
+              "name": "suolaa",
+              "state": "salt omitted; no contribution to displayed macronutrients",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": null,
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": null,
+                "basis": "Named weighed recipe version. Converted historical spoon/cup masses become proposed gram amounts, not a newly verified density or portion measurement."
+              }
+            },
+            {
+              "index": 5,
+              "name": "vettä",
+              "state": "tap water",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "composition": {
+                "sourceId": "fineli-922-release-20",
+                "evidenceHash": "10faa2ab35a19393a514f57e1dcd9f05988b2235dcd4f545611efd831eb857ad"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "water",
+              "match": "DIRECT",
+              "applicability": "Plain water, explicit zero CHO"
+            }
+          ]
+        },
+        {
+          "id": "jasmine-hot-grain",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kuivaa valkoista basmati- tai jasmiiniriisiä",
+              "state": "dry uncooked white long-grain rice",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 74,
+                "protein": 7,
+                "fat": 0.9,
+                "fibre": 0.8
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "rice-grain",
+              "match": "APPLIED",
+              "applicability": "Named basmati or jasmine white-rice option, hot cooked intact grain. Rice cooked with coconut milk is a LOW preparation analogue; no fat discount. Generic dry-rice composition is a proxy, not branded label.",
+              "composition": {
+                "sourceId": "afcd-F007682-release-3-e20d6ed7",
+                "evidenceHash": "ebddd47c4ceeebc8fb1aec0415ff1029954b3689d9d47866f9db20e58b1bf760"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "rice-jasmine68",
+                "evidenceHash": "3ecc3f0a5f8206b53edb3b53c56e2dd317df7bfcfe159254bd488b93a4f4c2b0",
+                "rationale": "Named basmati or jasmine white-rice option, hot cooked intact grain. Rice cooked with coconut milk is a LOW preparation analogue; no fat discount. Generic dry-rice composition is a proxy, not branded label."
+              }
+            },
+            {
+              "index": 1,
+              "name": "kookosmaito",
+              "state": "regular-fat canned coconut milk as sold",
+              "massG": 184.0,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.7,
+                "protein": 1.4,
+                "fat": 15.4,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "afcd-F002991-release-3-aef4d973",
+                "evidenceHash": "d6dcb688d40a92f44f555c7cc66e34b480d89a56ba59f49f8db8b4d0e7ab5bca"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 184.0,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 2,
+              "name": "kananmuna",
+              "state": "raw edible egg, shell removed",
+              "massG": 110,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "fineli-858-release-20-ae10a9b7",
+                "evidenceHash": "762906dbb1f9bdd26cd673df40c988afdcca33ce47943b58213bbf40ca068ad2"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 110,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 3,
+              "name": "kurkku",
+              "state": "raw peeled cucumber",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.1,
+                "protein": 0.4,
+                "fat": 0.1,
+                "fibre": 0.6
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "afcd-F003319-release-3-90c997be",
+                "evidenceHash": "323f7dfd0bee1e50140e42872ce52ae79e8fc1920cd19f6dff3e25f8a494eb07"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 4,
+              "name": "suolaa",
+              "state": "salt omitted; no contribution to displayed macronutrients",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": null,
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": null,
+                "basis": "Named weighed recipe version. Converted historical spoon/cup masses become proposed gram amounts, not a newly verified density or portion measurement."
+              }
+            },
+            {
+              "index": 5,
+              "name": "vettä",
+              "state": "tap water",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "composition": {
+                "sourceId": "fineli-922-release-20",
+                "evidenceHash": "10faa2ab35a19393a514f57e1dcd9f05988b2235dcd4f545611efd831eb857ad"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "water",
+              "match": "DIRECT",
+              "applicability": "Plain water, explicit zero CHO"
+            }
+          ]
+        }
+      ],
+      "group": "near-complete",
+      "batch": 1,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "approved": false,
+      "published": false,
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "originalPreparation": "\n\n1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.\n2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.\n3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.\n4. Huuhtele riisi ja kypsennä se kookosmaidossa miedolla lämmöllä, kunnes neste on imeytynyt. Keitä kananmunat, viipaloi kurkku ja tarjoa kookosriisin kanssa.\n",
+      "proposedPreparation": [
+        "Valitse 100 g kuivaa valkoista basmati- tai jasmiiniriisiä. Kypsennä 184 g kookosmaidon ja 100 g veden kanssa pakkauksen kypsennysaikaa noudattaen, tarjoa kuumana.",
+        "Kypsennä 110 g kuoretonta kananmunaa höyryssä pienessä astiassa ilman muuta rasvaa; käytä koko määrä.",
+        "Tarjoa kaikki kookosriisi, muna ja 100 g kurkkua kahtena annoksena. Tämä yksinkertainen versio ei sisällä sambalia, anjovista, pähkinöitä tai muita lisukkeita."
+      ],
+      "notes": [],
+      "proposedTitle": "Nasi lemak – yksinkertainen kookosriisi kananmunalla ja kurkulla",
+      "releaseInputVersion": 2
+    },
+    {
+      "recipeId": "kiinalainen-musta-seesamipuuro",
+      "title": "Musta seesamipuuro",
+      "sourcePath": "reseptit/aamupalat/kiinalainen-musta-seesamipuuro.md",
+      "sourceSha256": "db86ca92a25bcdf33eaa453b1d104edab22f11c2e888be3071cdcf3b8a5f3551",
+      "servings": 2,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kokonaisia mustia seesaminsiemeniä",
+              "state": "generic unsalted sesame seed, black variety not separated in source",
+              "massG": 10,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 6.2,
+                "protein": 22.2,
+                "fat": 55.6,
+                "fibre": 10.1
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "small-spice-extension",
+              "match": "APPLIED",
+              "applicability": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
+              "composition": {
+                "sourceId": "afcd-F008214-release-3-82a89f38",
+                "evidenceHash": "f8691f4a8c7d5e7be8aaaa8529cfeb27865a302d4a98ec341cda1c2c56979c32"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 10,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "spice-portion50-v2",
+                "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+                "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+              }
+            },
+            {
+              "index": 1,
+              "name": "kuivaa valkoista jasmiiniriisiä",
+              "state": "dry uncooked white long-grain rice",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 74,
+                "protein": 7,
+                "fat": 0.9,
+                "fibre": 0.8
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "rice-congee",
+              "match": "APPLIED",
+              "applicability": "Specify white jasmine rice simmered as soft hot porridge about 40 min. Published 40min steamed porridge is an explicit LOW cooking analogue, not ordinary boiled grain GI.",
+              "composition": {
+                "sourceId": "afcd-F007682-release-3-e20d6ed7",
+                "evidenceHash": "ebddd47c4ceeebc8fb1aec0415ff1029954b3689d9d47866f9db20e58b1bf760"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "rice-congee80",
+                "evidenceHash": "af37b2de4742d497b6d320272bc4c41ab2e6a22c532a3cc7e46bb0ab6a747fcc",
+                "rationale": "Specify white jasmine rice simmered as soft hot porridge about 40 min. Published 40min steamed porridge is an explicit LOW cooking analogue, not ordinary boiled grain GI."
+              }
+            },
+            {
+              "index": 2,
+              "name": "soijamaito",
+              "state": "calcium-fortified soy drink as sold",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.96,
+                "protein": 3,
+                "fat": 2,
+                "fibre": 1.61
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "fineli-30207-release-20-ddf2b2b5",
+                "evidenceHash": "12e1005038e338a1a8558c3d67d51e440fa17ecaa0c178bd5dbd55d0a22acc78"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 200,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 3,
+              "name": "hunaja",
+              "state": "honey as sold",
+              "massG": 20,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 72.3,
+                "protein": 0.3,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "honey",
+              "match": "APPLIED",
+              "applicability": "Named generic honey mean; not exact jar measurement.",
+              "composition": {
+                "sourceId": "afcd-F004380-release-3-058f1987",
+                "evidenceHash": "87b5fcde746b909ecfb063a88565467ff03a13c1400d5402a23ae18338a6c678"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 20,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "honey-category-mean-gi-55-2002",
+                "evidenceHash": "077705618b3aceedea03e5f2a3e5f23a032b1a923d811869303a141a873a3dd4",
+                "rationale": "Named generic honey mean; not exact jar measurement."
+              }
+            },
+            {
+              "index": 4,
+              "name": "vettä",
+              "state": "plain tap water",
+              "massG": 700,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": {
+                "sourceId": "fineli-922-release-20-b29dcbd9",
+                "evidenceHash": "f950a9f29e3f1ec0b0120a66fb65a52d997e952ec700c8a21d93cdd1d164ec7b"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 700,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              }
+            },
+            {
+              "index": 5,
+              "name": "suolaa",
+              "state": "salt omitted; no contribution to displayed macronutrients",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": null,
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": null,
+                "basis": "Named weighed recipe version. Converted historical spoon/cup masses become proposed gram amounts, not a newly verified density or portion measurement."
+              }
+            }
+          ]
+        }
+      ],
+      "group": "near-complete",
+      "batch": 1,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "approved": false,
+      "published": false,
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "originalPreparation": "\n\n1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Sekoita sileäksi ja viimeistele muutamalla seesaminsiemenellä.\n",
+      "proposedPreparation": [
+        "Keitä 100 g kuivaa valkoista jasmiiniriisiä 700 g vedessä noin 40 min pehmeäksi kuumaksi puuroksi.",
+        "Lisää 200 g makeuttamatonta soijajuomaa,20 g hunajaa ja 10 g kokonaisia mustia seesaminsiemeniä. Kuumenna ja mausta suolalla.",
+        "Jaa koko puuro kahteen annokseen. Siemenet syödään kokonaisina, niitä ei jauheta tahnaksi. Tämä on riisipohjainen versio, ei runsaasti seesamitahnaa sisältävän puuron laskelma."
+      ],
+      "notes": [],
+      "proposedTitle": "Kiinalaistyylinen riisipuuro mustilla seesaminsiemenillä",
+      "releaseInputVersion": 2
+    },
+    {
+      "recipeId": "harira",
+      "title": "Marokkolainen harira-linssi-kikhernekeitto",
+      "sourcePath": "reseptit/paaruoat/harira.md",
+      "sourceSha256": "54fe8adcb137295896f0830879cb4d1862946dadf8a303b37cf333f2b725f72f",
+      "servings": 6,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "naudan jauhelihaa",
+              "state": "raw beef mince, 17% fat",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 19.065,
+                "fat": 16.949,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": {
+                "sourceId": "fineli-11562-release-20-5261d352",
+                "evidenceHash": "e866476c174eba8a37caa5453bc6a7e06c8ef252e64b37b0e526dd4a0cf84780"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 200,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              }
+            },
+            {
+              "index": 1,
+              "name": "keltasipulia",
+              "state": "yellow onion",
+              "massG": 55,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "fineli-335-release-20-c19feae0",
+                "evidenceHash": "038faa81ea173ed1291c232062cadfad448233f89b5e66472003dd1b967f083c"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 55,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 2,
+              "name": "sellerinvartta",
+              "state": "raw celery stalk",
+              "massG": 80,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.1,
+                "protein": 1.12,
+                "fat": 0.2,
+                "fibre": 2.5
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "fineli-339-release-20-57b03833",
+                "evidenceHash": "8ff5e23eeaa895137c31a8557908b6b32d8c6401e9bf74c458dabd7d6bc62f84"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 80,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 3,
+              "name": "tomaattimurskaa",
+              "state": "canned crushed tomato",
+              "massG": 400,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 3.45,
+                "protein": 0.55,
+                "fat": 0.2,
+                "fibre": 0.4
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
+              "composition": {
+                "sourceId": "fineli-398-release-20-bccfe449",
+                "evidenceHash": "3a679f2f126b327fe7d7111a8119676526a23b01766d2ce8c4aa3f870dbd4536"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 400,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+              }
+            },
+            {
+              "index": 4,
+              "name": "kuivattuja vihreitä linssejä",
+              "state": "dry green/brown lentils",
+              "massG": 150,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 45.7,
+                "protein": 24.38,
+                "fat": 1.13,
+                "fibre": 8.9
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "cooked-lentil",
+              "match": "APPLIED",
+              "applicability": "Whole dried green/brown lentils boiled until soft, not split lentil puree; food-specific boiled-lentil mean applied as LOW analogue. All soup liquid retained.",
+              "composition": {
+                "sourceId": "fineli-399-release-20-536be774",
+                "evidenceHash": "ad52c2cef06f52af70eb6852ca7083215976488c36228ebfcfd38a945b3bb357"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 150,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "lentil-mean32",
+                "evidenceHash": "0986393e2ccc72660695cb00ec6550bf6ab7696957b37354ed35457b241534d3",
+                "rationale": "Whole dried green/brown lentils boiled until soft, not split lentil puree; food-specific boiled-lentil mean applied as LOW analogue. All soup liquid retained."
+              }
+            },
+            {
+              "index": 5,
+              "name": "kypsiä, valutettuja kikherneitä",
+              "state": "cooked drained chickpeas",
+              "massG": 400,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 17.6,
+                "protein": 8.44,
+                "fat": 2.5,
+                "fibre": 5
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "cooked-chickpea",
+              "match": "APPLIED",
+              "applicability": "Whole cooked drained chickpeas; food-specific chickpea mean used as LOW analogue, not all-pulse category mean.",
+              "composition": {
+                "sourceId": "fineli-11089-release-20-96a64b8b",
+                "evidenceHash": "4c5321459cab59cfaf4caef923bbab4ff973bc8090cdbb1aa5153e1b926dc5da"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 400,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "chickpea-mean28",
+                "evidenceHash": "be748b0bd80b411c52a55fd893b28cc4dfbc35cf1a24898ba5cf5fc6afe7c6bc",
+                "rationale": "Whole cooked drained chickpeas; food-specific chickpea mean used as LOW analogue, not all-pulse category mean."
+              }
+            },
+            {
+              "index": 6,
+              "name": "lihalientä",
+              "state": "prepared liquid stock",
+              "massG": 1000,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.4,
+                "protein": 0.2,
+                "fat": 0.2,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "afcd-F008936-release-3-145aa9dd",
+                "evidenceHash": "23d79a5ab795003675bb067c62a13587290e65cbb6c70f8d5920773497687b6f"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 1000,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 7,
+              "name": "jauhettua inkivääriä",
+              "state": "ground ginger",
+              "massG": 2,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 57.5,
+                "protein": 9,
+                "fat": 4.2,
+                "fibre": 14.1
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "small-spice-extension",
+              "match": "APPLIED",
+              "applicability": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
+              "composition": {
+                "sourceId": "afcd-F004210-release-3-538a2dde",
+                "evidenceHash": "f1e90fe54dec0f34fa7bc9485f32765bdbf1b9825e31b3cb82bcac373414904d"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 2,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "spice-portion50-v2",
+                "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+                "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+              }
+            },
+            {
+              "index": 8,
+              "name": "kurkumaa",
+              "state": "ground turmeric",
+              "massG": 2,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 44.4,
+                "protein": 9.7,
+                "fat": 3.2,
+                "fibre": 22.7
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "small-spice-extension",
+              "match": "APPLIED",
+              "applicability": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
+              "composition": {
+                "sourceId": "afcd-F009335-release-3-34c60a8e",
+                "evidenceHash": "277efc441832fa2e9627ab6145d49244b8aeb9817933c69780c7e0b1bf3b67ea"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 2,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "spice-portion50-v2",
+                "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+                "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+              }
+            },
+            {
+              "index": 9,
+              "name": "kanelia",
+              "state": "ground cinnamon",
+              "massG": 1.0,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 27.5,
+                "protein": 4,
+                "fat": 1.2,
+                "fibre": 53.1
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "small-spice-extension",
+              "match": "APPLIED",
+              "applicability": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
+              "composition": {
+                "sourceId": "afcd-F002963-release-3-675e24d6",
+                "evidenceHash": "db0b48c9291930b785f2316d65ecfb0f408c39e550ec7450bcb6d59e8a8b3c14"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 1.0,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "spice-portion50-v2",
+                "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+                "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+              }
+            },
+            {
+              "index": 10,
+              "name": "kuivaa durumvehnävermiselliä",
+              "state": "dry wheat pasta as vermicelli proxy",
+              "massG": 60,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 66.4,
+                "protein": 13,
+                "fat": 1.1,
+                "fibre": 3
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "wheat-pasta",
+              "match": "APPLIED",
+              "applicability": "Specified durum-wheat vermicelli boiled in soup; spaghetti mean applied as LOW wheat-pasta shape analogue, not rice/bean vermicelli.",
+              "composition": {
+                "sourceId": "fineli-117-release-20-b8a1b384",
+                "evidenceHash": "e95fdffbb4d530f85c589c860272f19823bbe73edfa3f1a7f3e8244a82a94a3f"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 60,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "pasta-mean49",
+                "evidenceHash": "e971485deadcfa73418ca97b974a6fc495f6a5ec6e77faaa6f2bbfaa98d19f13",
+                "rationale": "Specified durum-wheat vermicelli boiled in soup; spaghetti mean applied as LOW wheat-pasta shape analogue, not rice/bean vermicelli."
+              }
+            },
+            {
+              "index": 11,
+              "name": "tuoretta korianteria",
+              "state": "fresh raw coriander leaf",
+              "massG": 20,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.9,
+                "protein": 3.1,
+                "fat": 0.6,
+                "fibre": 3.2
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "afcd-F003192-release-3-7fae0a2f",
+                "evidenceHash": "cd5d0e120532d641fef30f685cd5634a3c41ac0e0ab031ee8d4c9bb2c8e198e9"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 20,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 12,
+              "name": "sitruunamehua",
+              "state": "lemon juice",
+              "massG": 30,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.8,
+                "protein": 0.6,
+                "fat": 0.1,
+                "fibre": 2
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "afcd-F004726-release-3-8b45863e",
+                "evidenceHash": "60143d5c765af4abbc67c6c1a7206de316225cd5350633d805188171babbf999"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 30,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            }
+          ]
+        }
+      ],
+      "group": "shared-source",
+      "batch": 1,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "approved": false,
+      "published": false,
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "originalPreparation": "\n\n1. Ruskista jauheliha suuressa kattilassa. Lisää sipuli ja selleri ja kuullota muutama minuutti.\n2. Lisää tomaattimurska, huuhdellut linssit, lihaliemi, inkivääri, kurkuma ja kaneli.\n3. Kiehauta ja hauduta kannen alla noin 45 minuuttia, kunnes linssit ovat lähes pehmeitä.\n4. Lisää valutetut kikherneet ja vermiselli. Keitä vielä vermisellin pakkauksen ohjeen mukaan.\n5. Sekoita joukkoon korianteri ja sitruunamehu. Tarkista suola ja tarjoa kuumana.\n\n## Muistiinpanot\n\n- Jos käytät kuivattuja kikherneitä, liota ja kypsennä ne erikseen ennen keittoon lisäämistä.\n",
+      "proposedPreparation": [
+        "Kypsennä 200 g naudan jauhelihaa 55 g sipulin ja 80 g varsisellerin kanssa kattilassa ilman lisärasvaa. Käytä kaikki irronnut rasva.",
+        "Lisää 400 g tomaattimurskaa,1000 g käyttövalmista lihalientä,150 g kuivia kokonaisia vihreitä/ruskeita linssejä,2 g inkiväärijauhetta,2 g kurkumaa ja 1 g jauhettua kanelia. Keitä linssit täysin pehmeiksi.",
+        "Lisää 400 g kypsiä valutettuja kokonaisia kikherneitä ja 60 g kuivaa durumvehnävermiselliä. Keitä nuudelit kypsiksi. Lisää 20 g korianteria ja 30 g sitruunamehua.",
+        "Jaa koko keitto nesteineen kuuteen annokseen. Ei soseutusta tai keitinveden pois valuttamista."
+      ],
+      "notes": [],
+      "proposedTitle": "Marokkolainen harira-linssi-kikhernekeitto",
+      "releaseInputVersion": 2
+    }
+  ]
+}

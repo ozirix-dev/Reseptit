@@ -1,23 +1,19 @@
 {
   "recipeId": "karibia-kookosriisi-pavuilla",
-  "sourceHash": "ec5c608b5172b7df9beced4fd131d88959daf1b56ed15cff2cd7ed94a2f63e5c",
-  "calculatedAt": "2026-10-24",
-  "batchId": "batch-13",
+  "sourceHash": "569ca1cee5c1ea24d5854a94ba7e661a15b63df5ca5f9464273f7c4a2ef1770f",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-82",
   "servings": 2,
-  "scope": "Two servings. Uses dry long-grain rice, regular-fat canned coconut milk, canned red kidney beans drained, and fresh thyme. The revised method contains no unlisted protein or garnish. Practical estimate, not laboratory analysis.",
+  "scope": "Complete weighed candidate, all edible ingredients and liquid retained, raw-input nutrient proxies explicitly disclosed",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "kuivaa pitkäjyväistä valkoista riisiä",
+      "item": "kuivaa valkoista jasmiiniriisiä",
       "amount": 100,
       "unit": "g",
       "state": "dry uncooked long-grain white rice",
-      "matchEvidence": "Dry long-grain white rice; Fineli Release 20 record 11521.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named white jasmine rice served hot as intact cooked grain, cooked per pack. Coconut/soup/pan context is an explicit LOW analogy; no cooling or fat discount. Generic composition separately sourced.",
       "record": {
         "id": "fineli-11521-release-20",
         "name": "RIISI PITKÄJYVÄINEN, PUUROUTUMATON",
@@ -46,27 +42,25 @@
           "protein": 8.13,
           "fat": 1.03
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "täysrasvainen tölkkikookosmaito",
-      "amount": 200,
-      "unit": "ml",
-      "state": "canned regular-fat coconut milk",
-      "matchEvidence": "Canned regular-fat coconut milk; AFCD record F002991.",
-      "gramsPerUnit": 0.92,
-      "conversionEvidence": "Canned coconut milk represented at 0.92 g/ml based on its typical density; recipe specifies regular-fat canned product.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "amount": 184.0,
+      "unit": "g",
+      "state": "regular-fat canned coconut milk as sold",
+      "matchEvidence": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
       "record": {
         "id": "afcd-F002991-release-3",
         "name": "Coconut, milk, canned, regular fat",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "canned regular-fat coconut milk",
+        "state": "regular-fat canned coconut milk as sold",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -78,18 +72,18 @@
           "protein": 1.4,
           "fat": 15.4
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "kypsiä, valutettuja kidneypapuja",
       "amount": 150,
       "unit": "g",
       "state": "canned red kidney beans, drained",
-      "matchEvidence": "Cooked kidney beans specified drained; AFCD canned drained kidney bean record F000448.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Cooked drained whole red kidney beans; boiled-kidney mean applied to canned beans as LOW preparation analogy, not broad legumes mean.",
       "record": {
         "id": "afcd-F000448-release-3",
         "name": "Bean, red kidney, canned, drained",
@@ -108,20 +102,18 @@
           "protein": 6.6,
           "fat": 0.6
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "tuoretta timjamia",
-      "amount": 2,
-      "unit": "rkl",
+      "amount": 6,
+      "unit": "g",
       "state": "fresh thyme leaves",
-      "matchEvidence": "Fresh thyme; AFCD record F010466.",
-      "gramsPerUnit": 3,
-      "conversionEvidence": "Chopped fresh thyme represented as 3 g per tablespoon.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
       "record": {
         "id": "afcd-F010466-release-3",
         "name": "Thyme, fresh, raw",
@@ -140,19 +132,18 @@
           "protein": 5.6,
           "fat": 1.7
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
-      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "state": "pure salt",
+      "excludedReason": "Pure salt has zero of the four macros",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -160,7 +151,11 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
     }
   ]
 }

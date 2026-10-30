@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "approvalState": "OWNER_APPROVAL_REQUIRED",
+  "baseMain": "e8da2c9417e2aeff55a85d599b3b7e1ad465f36c",
+  "reviewedResearchCommit": "61a4563a997a5c5aa603df109cea020f89c10d08",
+  "recipeIds": [
+    "vietnamilainen-hu-tieu-aamiaiskeitto",
+    "vietnamilainen-chao-ga-kanapuuro",
+    "indonesialainen-bubur-ayam-kanariisipuuro",
+    "pohjoisafrikkalainen-minttutee-kaurapuuro"
+  ],
+  "policyDecisionsRequired": [
+    "Atkinson vegetable40 imputation for named low-carbohydrate vegetables/herbs",
+    "Rice-congee steaming-to-simmering and noodle/oat preparation analogues",
+    "Edible-mint and simple bubur recipe variants"
+  ],
+  "existingLocales": {
+    "vietnamilainen-hu-tieu-aamiaiskeitto": [
+      "fi"
+    ],
+    "vietnamilainen-chao-ga-kanapuuro": [
+      "fi"
+    ],
+    "indonesialainen-bubur-ayam-kanariisipuuro": [
+      "fi"
+    ],
+    "pohjoisafrikkalainen-minttutee-kaurapuuro": [
+      "fi"
+    ]
+  },
+  "languageScope": "Only FI versions currently exist; no EN/SV/TH counterpart to modify. UI estimate label localized in all four languages.",
+  "packId": "gk80-release-1",
+  "packVersion": 1
+}

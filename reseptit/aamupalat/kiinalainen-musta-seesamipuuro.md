@@ -1,59 +1,58 @@
 ---
-title: "Musta seesamipuuro"
+title: Kiinalaistyylinen riisipuuro mustilla seesaminsiemenillä
 recipe_id: kiinalainen-musta-seesamipuuro
 url_slug: kiinalainen-musta-seesamipuuro
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "mustat seesaminsiemenet"
-  - "riisi"
-  - "soijamaito"
+- mustat seesaminsiemenet
+- riisi
+- soijamaito
 cooking_method:
-  - "keittäminen"
+- keittäminen
 ingredients:
-  - amount: 10
-    unit: g
-    item: mustat seesaminsiemenet
-  - amount: 100
-    unit: g
-    item: riisi
-  - amount: 200
-    unit: ml
-    item: soijamaito
-  - amount: 1
-    unit: rkl
-    item: hunaja
-  - amount: 700
-    unit: ml
-    item: vettä
-  - amount: null
-    unit: ""
-    item: suolaa maun mukaan
+- amount: 10
+  unit: g
+  item: kokonaisia mustia seesaminsiemeniä
+- amount: 100
+  unit: g
+  item: kuivaa valkoista jasmiiniriisiä
+- amount: 200
+  unit: g
+  item: soijamaito
+- amount: 20
+  unit: g
+  item: hunaja
+- amount: 700
+  unit: g
+  item: vettä
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 servings: 2
-time_total_min: 25
+time_total_min: 45
 difficulty: Helppo
 tags:
-  - "aamupala"
-  - "kiinalainen"
-  - "puuro"
+- aamupala
+- kiinalainen
+- puuro
 image:
   src: aamupalat/kiinalainen-musta-seesamipuuro.webp
-  alt: "Musta seesamipuuro tarjoiltuna aamiaisella"
+  alt: Musta seesamipuuro tarjoiltuna aamiaisella
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 46.5
 carbs_total_per_serving_g: 49.02
 protein_per_serving_g: 7.64
 fat_per_serving_g: 5.23
-
 ---
 
-# Musta seesamipuuro
+# Kiinalaistyylinen riisipuuro mustilla seesaminsiemenillä
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan musta seesamipuuro. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Kiinalaistyylinen riisipuuro mustilla seesaminsiemenillä. Täsmällinen punnittu versio 2 annokselle.
 
 ## Ainekset
 
@@ -61,7 +60,12 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
-2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
-4. Sekoita sileäksi ja viimeistele muutamalla seesaminsiemenellä.
+1. Keitä 100 g kuivaa valkoista jasmiiniriisiä 700 g vedessä noin 40 min pehmeäksi kuumaksi puuroksi.
+2. Lisää 200 g makeuttamatonta soijajuomaa,20 g hunajaa ja 10 g kokonaisia mustia seesaminsiemeniä. Kuumenna ja mausta suolalla.
+3. Jaa koko puuro kahteen annokseen. Siemenet syödään kokonaisina, niitä ei jauheta tahnaksi. Tämä on riisipohjainen versio, ei runsaasti seesamitahnaa sisältävän puuron laskelma.
+
+## Muistiinpanot
+
+Mallinnettu GK perustuu julkaistuihin ruoka- ja valmistusvertailuihin sekä nimettyihin koodausoletuksiin. Luottamus on matala. Kaikki imeytyvät hiilihydraatit ovat mukana. Skenaarioalue kuvaa vain nimettyjä vaihtoehtoja, ei fysiologista epävarmuusväliä. GK ei ole yksilöllinen verensokeriennuste eikä insuliinin annosteluohje.
+
+Kuvan muut lisukkeet eivät kuulu tämän täsmällisen version ravintoarvoihin tai GK-arvioon. Käytä yllä lueteltuja aineksia.
