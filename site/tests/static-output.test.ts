@@ -144,7 +144,11 @@ test("GK values link to centralized recipe details on every published translatio
     assert.equal(result?.status, "INSUFFICIENT SOURCE DATA", `${id}: bakery source withdrawal is public`);
     assert.equal(result?.glycemicLoadPerServing, null);
   }
-  assert.equal(publicAuditResults.filter(result => result.status === "CALCULATED").length, 83, "R1B withdraws the two source-invalid published estimates");
+  const releaseManifest=JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-2/manifest.json'),'utf8'));
+  const releaseIds=new Set<string>(releaseManifest.recipeIds);
+  assert.deepEqual(publicAuditResults.filter(result=>result.status==='CALCULATED'&&releaseIds.has(result.recipeId)).map(result=>result.recipeId).sort(),[...releaseIds].sort());
+  assert.equal(publicAuditResults.filter(result=>result.status==='CALCULATED'&&!releaseIds.has(result.recipeId)).length,83,'R1B legacy count remains 83 outside the eight intentional GK80 additions');
+  assert.equal(publicAuditResults.filter(result=>result.status==='CALCULATED').length,91,'candidate adds exactly eight complete modeled estimates');
   const paella = glycemicLoadPilotResults.find((entry) => entry.recipeId === "paella-valenciana");
   assert.equal(paella?.status, "INSUFFICIENT SOURCE DATA", "Paella remains blocked without a suitable chicken-stock GI source");
   assert.equal(paella?.glycemicLoadPerServing, null);
@@ -167,9 +171,10 @@ test("GK values link to centralized recipe details on every published translatio
         assert.ok(html.includes(`${recipe.locale === "fi" ? "/Reseptit" : "/Reseptit"}${recipe.locale === "fi" ? "/glykeeminen-kuorma/" : recipe.locale === "en" ? "/en/glycemic-load/" : recipe.locale === "sv" ? "/sv/glykemisk-belastning/" : "/th/glycemic-load/"}#${result.recipeId}`));
         assert.ok(result.confidence && html.includes(recipeUi[recipe.locale].glycemicLoadConfidence(result.confidence)), `${result.recipeId}/${recipe.locale}: confidence is visible`);
         if (result.omittedAvailableCarbohydratePerServingG > 0) assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoadOmission(new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumSignificantDigits: 1 }).format(result.omittedAvailableCarbohydratePerServingG))), `${result.recipeId}/${recipe.locale}: omitted small carbohydrate is disclosed`);
+        const displayNumber = new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], result.assessmentType ? {maximumFractionDigits:0} : {maximumSignificantDigits:1,minimumSignificantDigits:1});
         const displayed = result.glycemicLoadRangePerServing
-          ? `${new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumSignificantDigits: 1, minimumSignificantDigits: 1 }).format(result.glycemicLoadRangePerServing.min)}–${new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumSignificantDigits: 1, minimumSignificantDigits: 1 }).format(result.glycemicLoadRangePerServing.max)}`
-          : new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumSignificantDigits: 1, minimumSignificantDigits: 1 }).format(result.glycemicLoadPerServing);
+          ? `${displayNumber.format(result.glycemicLoadRangePerServing.min)}–${displayNumber.format(result.glycemicLoadRangePerServing.max)}`
+          : displayNumber.format(result.glycemicLoadPerServing);
         assert.ok(html.includes(displayed), `${result.recipeId}/${recipe.locale}: displayed GL value`);
         assert.ok(result.sourceReferences.length > 0, `${result.recipeId}: calculated result has source references`);
       } else {
@@ -177,13 +182,13 @@ test("GK values link to centralized recipe details on every published translatio
       }
     }
   }
-  const coconutMilkBlocker = glycemicLoadPilotResults.find((result) => result.recipeId === "malesialainen-nasi-lemak-aamiaisella");
-  assert.ok(coconutMilkBlocker?.incompleteReasons.length, "incomplete recipe includes a structured reason");
+  const pasteBlocker = glycemicLoadPilotResults.find((result) => result.recipeId === "kookos-lime-kanacurry");
+  assert.ok(pasteBlocker?.incompleteReasons.length, "incomplete recipe includes a structured reason");
   const methodPagePaths = { fi: "glykeeminen-kuorma", en: "en/glycemic-load", sv: "sv/glykemisk-belastning", th: "th/glycemic-load" };
   const labels = { fi: "Miksi kokonaisarviota ei ole?", en: "Why is there no total estimate?", sv: "Varför saknas ett totalvärde?", th: "เหตุใดจึงไม่มีค่าประมาณรวม" };
   for (const locale of ["fi", "en", "sv", "th"] as const) {
     const html = await readFile(path.join(dist, methodPagePaths[locale], "index.html"), "utf8");
-    const resultStart = html.indexOf('id="malesialainen-nasi-lemak-aamiaisella"');
+    const resultStart = html.indexOf('id="kookos-lime-kanacurry"');
     assert.ok(resultStart >= 0 && html.slice(resultStart, resultStart + 1_500).includes(labels[locale]), `${locale}: missing-result explanation is localized`);
   }
   const massaman = glycemicLoadPilotResults.find((result) => result.recipeId === "massaman-curry-kanalla-vhh");
@@ -441,5 +446,13 @@ test("responsive image metadata reaches every route, SEO and matching preloads",
         assert.ok(html.includes(`hreflang="${translation.locale}" href="https://ozirix-dev.github.io/Reseptit${translation.routePath}"`));
       }
     }
+  }
+});
+
+test('all eight candidate recipe pages show the modeled label and carbohydrate information',async()=>{
+  const manifest=JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-2/manifest.json'),'utf8'));
+  for(const id of manifest.recipeIds){const r=siteContent.recipes.find(r=>r.recipeId===id&&r.locale==='fi')!;
+    const html=await readFile(path.join(dist,r.routePath.slice(1),'index.html'),'utf8');
+    assert.match(html,/Mallinnettu/);assert.match(html,/hiilihydraatit/i);assert.match(html,/Luottamus|luottamus/);
   }
 });
