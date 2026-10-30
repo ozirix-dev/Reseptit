@@ -37,4 +37,3 @@ Hyväksyttävä täsmällinen punnittu sisältö, ruoka/valmistusanalogiat, GI40
 ## Julkaisun neljä makroa, pyöristämättömät arviot
 
 Imeytyvät CHO 4.646250 g; kokonais-CHO 7.280375 g; proteiini 25.691650 g; rasva 23.489750 g/annos. Kuitu erikseen 2.634125 g.
-
