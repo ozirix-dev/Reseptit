@@ -1,0 +1,333 @@
+{
+  "reviewScope": "Separate source and preparation review by the same execution agent; original-source reading plus independent Decimal arithmetic, not independent human approval.",
+  "pilotHead": "bff8c6a1799cf56947413ddfc634e72ea4d2efce",
+  "reviews": [
+    {
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "decision": "ACCEPTABLE_FOR_REVIEW",
+      "reviewState": "READY_FOR_INDEPENDENT_APPROVAL",
+      "countedAsNew": false,
+      "approved": false,
+      "published": false,
+      "conclusion": "Maustamaton makeuttamaton jogurtti 100 g, kahvijuoma 200 g, banaanin syötävä massa 125 g ja makeutettu kondensoitu maito 30 g; kaksi annosta. Neljä koostumusta ja kaikki makrot tarkistettu pilotin lähderiveistä. GI 61 vastaa makeutettua kondensoitua maitoa, ei haihdutettua makeuttamatonta maitoa. Banaani 47 tarkoittaa kypsentämätöntä banaania, jonka kypsyysastetta ei täsmennetä; 57 on ylikypsä. Kyse ei ole varmennetusta raa'an ja kypsän banaanin rajasta. Jogurtin GI 17/35 ovat eri tuotetyyppien analogiat. Geneerinen koostumus säilyy samana; nimetty mallialue ei kata kaikkea tuote- tai kypsyysvaihtelua.",
+      "independentDecimal": {
+        "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+        "inputHash": "e079a1ee42dfd261521a2e777e22c9598c491f4ddcdd0ce0996044bb9c0fd5ca",
+        "scenarios": [
+          {
+            "id": "lower-comparators",
+            "macros": {
+              "availableCarbohydrate": 21.3875,
+              "protein": 3.795,
+              "fat": 3.68,
+              "fibre": 1.0625
+            },
+            "contributions": [
+              {
+                "index": 0,
+                "carbohydrate": 1.7,
+                "gk": 0.289
+              },
+              {
+                "index": 1,
+                "carbohydrate": 0.0,
+                "gk": 0.0
+              },
+              {
+                "index": 2,
+                "carbohydrate": 11.4375,
+                "gk": 5.375625
+              },
+              {
+                "index": 3,
+                "carbohydrate": 8.25,
+                "gk": 5.0325
+              }
+            ],
+            "knownSubtotal": 10.697125,
+            "wholeGk": 10.697125,
+            "wholeCarbohydrate": 21.3875,
+            "imputedImpact": 0.0
+          },
+          {
+            "id": "upper-comparators",
+            "macros": {
+              "availableCarbohydrate": 21.3875,
+              "protein": 3.795,
+              "fat": 3.68,
+              "fibre": 1.0625
+            },
+            "contributions": [
+              {
+                "index": 0,
+                "carbohydrate": 1.7,
+                "gk": 0.595
+              },
+              {
+                "index": 1,
+                "carbohydrate": 0.0,
+                "gk": 0.0
+              },
+              {
+                "index": 2,
+                "carbohydrate": 11.4375,
+                "gk": 6.519375
+              },
+              {
+                "index": 3,
+                "carbohydrate": 8.25,
+                "gk": 5.0325
+              }
+            ],
+            "knownSubtotal": 12.146875,
+            "wholeGk": 12.146875,
+            "wholeCarbohydrate": 21.3875,
+            "imputedImpact": 0.0
+          }
+        ]
+      },
+      "originalInputSha256": "e079a1ee42dfd261521a2e777e22c9598c491f4ddcdd0ce0996044bb9c0fd5ca"
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "decision": "ACCEPTABLE_FOR_REVIEW",
+      "reviewState": "READY_FOR_INDEPENDENT_APPROVAL",
+      "countedAsNew": false,
+      "approved": false,
+      "published": false,
+      "conclusion": "Ehdollinen korjattu skenaario: 150 g halloumia, 100 g raakaa tomaattia, 25 g oliiveja, 100 g vehnähapanjuurileipää, 13.5 g öljyä ja suola, kaksi annosta. Paista vain halloumi; leipä tarjoillaan paahtamatta, tomaatti raakana. Koko öljymäärä ja ruoat syödään. Tämä korvaa ristiriitaiset taikinavaiheet ja aiemman kevyen paahtamisen; nykyisen paahdetun version vaikutusta ei väitetä rajatuksi. GI 54: vehnähapanjuurileipä, Australia 2003, UO5, valmistus tarkemmin ilmoittamatta. GI 82: Uusi-Seelanti 2010, 50:50 täysjyvä-/valkoinen vehnä, 80 min nousu, 60 min kohotus, 200 °C / 60 min paisto. Pilotin 54-tietueen preparation-kenttään kopioitu 82-rivin tarkka resepti oli virhe: vain 82 saa nämä tiedot. Tässä katselmoinnissa metadata korjataan erillisellä overlaylla, historia säilyy. Halloumin 0.75 g CHO/annos saa maitoanalogialla 0.225–0.345 GK; ero 0.12 ei ole biologinen enimmäisraja. Leivän geneerinen koostumus ja eri GI-tuotteet ovat LOW-analogia.",
+      "independentDecimal": {
+        "recipeId": "valimerellinen-halloumi-tomaattileipa",
+        "inputHash": "f67450892d7e8585bd7b3c804a06dd19f3b887e1e75d860943e79a54f85942eb",
+        "scenarios": [
+          {
+            "id": "lower-comparators",
+            "macros": {
+              "availableCarbohydrate": 27.581,
+              "protein": 20.18,
+              "fat": 28.56175,
+              "fibre": 1.924
+            },
+            "contributions": [
+              {
+                "index": 0,
+                "carbohydrate": 0.75,
+                "gk": 0.225
+              },
+              {
+                "index": 1,
+                "carbohydrate": 1.725,
+                "gk": 0.3795
+              },
+              {
+                "index": 2,
+                "carbohydrate": 0.0,
+                "gk": 0.0
+              },
+              {
+                "index": 3,
+                "carbohydrate": 25.106,
+                "gk": 13.55724
+              },
+              {
+                "index": 4,
+                "carbohydrate": 0.0,
+                "gk": 0.0
+              },
+              {
+                "index": 5,
+                "carbohydrate": 0.0,
+                "gk": 0.0
+              }
+            ],
+            "knownSubtotal": 14.16174,
+            "wholeGk": 14.16174,
+            "wholeCarbohydrate": 27.581,
+            "imputedImpact": 0.0
+          },
+          {
+            "id": "upper-comparators",
+            "macros": {
+              "availableCarbohydrate": 27.581,
+              "protein": 20.18,
+              "fat": 28.56175,
+              "fibre": 1.924
+            },
+            "contributions": [
+              {
+                "index": 0,
+                "carbohydrate": 0.75,
+                "gk": 0.345
+              },
+              {
+                "index": 1,
+                "carbohydrate": 1.725,
+                "gk": 0.3795
+              },
+              {
+                "index": 2,
+                "carbohydrate": 0.0,
+                "gk": 0.0
+              },
+              {
+                "index": 3,
+                "carbohydrate": 25.106,
+                "gk": 20.58692
+              },
+              {
+                "index": 4,
+                "carbohydrate": 0.0,
+                "gk": 0.0
+              },
+              {
+                "index": 5,
+                "carbohydrate": 0.0,
+                "gk": 0.0
+              }
+            ],
+            "knownSubtotal": 21.31142,
+            "wholeGk": 21.31142,
+            "wholeCarbohydrate": 27.581,
+            "imputedImpact": 0.0
+          }
+        ]
+      },
+      "originalInputSha256": "f67450892d7e8585bd7b3c804a06dd19f3b887e1e75d860943e79a54f85942eb"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+      "decision": "REJECTED",
+      "reviewState": "REJECTED",
+      "countedAsNew": false,
+      "approved": false,
+      "published": false,
+      "conclusion": "Mani 1992 alkuperäinen artikkeli, kuvatut sivut 447–448, tarkistettu. GI 55 ja 76 koskevat höyrytettyä tai paahdettua ja vedessä gelatinisoitua mannasuurimoa: 67 g suurimoa, 400 ml vettä, 5 g öljyä, 20 min; 6 T2D-osallistujaa per ruokaryhmä. Tiivis pannuleipä on eri ruokamatriisi. Uudempi mannasuurimoleipä-/couscous-/pastatutkimus ei anna suoraa harcha-rajausta. Säilytä vanha 19–26 tutkimushistoriana, poista se aktiivisesta ehdotuskattavuudesta. Älä levennä aluetta keksityillä päillä tai muuta harchaa puuroksi.",
+      "independentDecimal": {
+        "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+        "inputHash": "c61ddb3ddf497847d433f19dd56d7d3dd2523acb7a14afa43eca6db6cc8ca038",
+        "scenarios": [
+          {
+            "id": "lower-comparators",
+            "macros": {
+              "availableCarbohydrate": 35.66,
+              "protein": 10.66425,
+              "fat": 20.20325,
+              "fibre": 2.0285
+            },
+            "contributions": [
+              {
+                "index": 0,
+                "carbohydrate": 31.8,
+                "gk": 17.49
+              },
+              {
+                "index": 1,
+                "carbohydrate": 0.06,
+                "gk": 0.018
+              },
+              {
+                "index": 2,
+                "carbohydrate": 1.8,
+                "gk": 0.54
+              },
+              {
+                "index": 3,
+                "carbohydrate": 2.0,
+                "gk": 0.6
+              },
+              {
+                "index": 4,
+                "carbohydrate": 0.0,
+                "gk": 0.0
+              },
+              {
+                "index": 5,
+                "carbohydrate": 0.0,
+                "gk": 0.0
+              }
+            ],
+            "knownSubtotal": 18.648,
+            "wholeGk": 18.648,
+            "wholeCarbohydrate": 35.66,
+            "imputedImpact": 0.0
+          },
+          {
+            "id": "upper-comparators",
+            "macros": {
+              "availableCarbohydrate": 35.66,
+              "protein": 10.66425,
+              "fat": 20.20325,
+              "fibre": 2.0285
+            },
+            "contributions": [
+              {
+                "index": 0,
+                "carbohydrate": 31.8,
+                "gk": 24.168
+              },
+              {
+                "index": 1,
+                "carbohydrate": 0.06,
+                "gk": 0.0276
+              },
+              {
+                "index": 2,
+                "carbohydrate": 1.8,
+                "gk": 0.828
+              },
+              {
+                "index": 3,
+                "carbohydrate": 2.0,
+                "gk": 0.92
+              },
+              {
+                "index": 4,
+                "carbohydrate": 0.0,
+                "gk": 0.0
+              },
+              {
+                "index": 5,
+                "carbohydrate": 0.0,
+                "gk": 0.0
+              }
+            ],
+            "knownSubtotal": 25.9436,
+            "wholeGk": 25.9436,
+            "wholeCarbohydrate": 35.66,
+            "imputedImpact": 0.0
+          }
+        ]
+      },
+      "originalInputSha256": "c61ddb3ddf497847d433f19dd56d7d3dd2523acb7a14afa43eca6db6cc8ca038"
+    }
+  ],
+  "correctedSourceOverlay": [
+    {
+      "id": "sourdough54",
+      "gi": 54,
+      "scale": "GLUCOSE_100",
+      "family": "wheat-sourdough",
+      "food": "Wheat sourdough bread 54",
+      "preparation": "Sourdough wheat bread; detailed flour proportions, fermentation, baking and toast status not specified in row 226. Do not copy row 227 recipe.",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "originalStudy": "Sydney UO5 bread test",
+      "location": "Table1 row226 p16",
+      "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "accessMethod": "Original supplement document retrieved from a third-party mirror; not publisher-host access",
+      "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "referenceFood": "Glucose",
+      "statisticalUncertainty": {
+        "kind": "SEM",
+        "value": 5,
+        "usedAsRecipeRange": false
+      },
+      "participants": 10,
+      "limitations": "Source flour, fermentation and density differ; slight toasting is an unmeasured transformation. Fixed generic CHO is a separate composition proxy, not source-brand nutrition.",
+      "confidence": "LOW",
+      "allowedUse": "Only explicit food/preparation matches or separately reasoned ingredient analogies; no automatic family default",
+      "newRecord": true,
+      "supersedesEvidenceHash": "c9bcb532cd885eb81b738efa8e9d01495f6772762df483657f4b6d74345966f9",
+      "evidenceHash": "8c065ffb16928b9d5a0dba32a8da4227286fbf2ab7be868fbe9824c34c129ed0"
+    }
+  ]
+}

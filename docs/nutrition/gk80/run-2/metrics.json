@@ -1,0 +1,92 @@
+{
+  "decision": "PARTIAL",
+  "selected": 30,
+  "newNumericProposals": 4,
+  "points": 4,
+  "ranges": 0,
+  "recipeClarificationRequired": 4,
+  "publishedImputationMethodApprovalRequired": 4,
+  "productionBefore": 83,
+  "productionAfter": 83,
+  "total": 326,
+  "currentIncomplete": 243,
+  "target": 261,
+  "gapWithoutApprovals": 178,
+  "newApproved": 0,
+  "newPublished": 0,
+  "pilotHistoricalProposals": 3,
+  "pilotStillReviewable": 2,
+  "pilotRejected": 1,
+  "combinedReviewableNew": 6,
+  "conditionalCoverageIfAllSixApproved": 89,
+  "conditionalGapIfAllSixApproved": 172,
+  "notCounted": 26,
+  "numeric": [
+    {
+      "recipeId": "vietnamilainen-hu-tieu-aamiaiskeitto",
+      "title": "Hu tieu -nuudelikeitto kasviksilla",
+      "method": "B",
+      "uncertainty": "LOW",
+      "macros": {
+        "availableCarbohydrate": 42.077,
+        "protein": 21.613,
+        "fat": 2.023,
+        "fibre": 2.106
+      },
+      "gk": 25.403,
+      "displayGk": "25",
+      "imputedImpact": 0.5028,
+      "reviewState": "READY_FOR_INDEPENDENT_APPROVAL"
+    },
+    {
+      "recipeId": "vietnamilainen-chao-ga-kanapuuro",
+      "title": "Chao ga -inkiväärinen kanapuuro",
+      "method": "B",
+      "uncertainty": "LOW",
+      "macros": {
+        "availableCarbohydrate": 37.324,
+        "protein": 20.485,
+        "fat": 1.066,
+        "fibre": 0.542
+      },
+      "gk": 29.7296,
+      "displayGk": "30",
+      "imputedImpact": 0.1296,
+      "reviewState": "READY_FOR_INDEPENDENT_APPROVAL"
+    },
+    {
+      "recipeId": "indonesialainen-bubur-ayam-kanariisipuuro",
+      "title": "Bubur ayam -kanariisipuuro",
+      "method": "B",
+      "uncertainty": "LOW",
+      "macros": {
+        "availableCarbohydrate": 37.324,
+        "protein": 20.485,
+        "fat": 1.066,
+        "fibre": 0.542
+      },
+      "gk": 29.7296,
+      "displayGk": "30",
+      "imputedImpact": 0.1296,
+      "reviewState": "READY_FOR_INDEPENDENT_APPROVAL"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-minttutee-kaurapuuro",
+      "title": "Marokkolainen minttutee-kaurapuuro",
+      "method": "B",
+      "uncertainty": "LOW",
+      "macros": {
+        "availableCarbohydrate": 39.412,
+        "protein": 9.223,
+        "fat": 8.283,
+        "fibre": 4.966
+      },
+      "gk": 26.1793,
+      "displayGk": "26",
+      "imputedImpact": 0.0528,
+      "reviewState": "READY_FOR_INDEPENDENT_APPROVAL"
+    }
+  ],
+  "approvedCoverageTotal": null,
+  "approvedCoverageNote": "Current 83 are calculated production outputs, not reapproved quality coverage. Nine zero results require separate correction."
+}
