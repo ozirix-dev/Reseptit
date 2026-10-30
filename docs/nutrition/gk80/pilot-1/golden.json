@@ -1625,15 +1625,15 @@
     },
     {
       "recipeId": "baozi",
-      "inputHash": "2c6d155b375b9cd4ec9b8714426eac4557618df550ba5b3ac785cea2c4b719d5",
+      "inputHash": "43b6b62cbb114bbe2a48e17375845997ba5213a72486b8472530e50dec8d04cb",
       "scenarios": [
         {
           "id": "lower-comparators",
           "macros": {
-            "availableCarbohydrate": 80.37575,
-            "protein": 26.768425,
-            "fat": 14.5362,
-            "fibre": 4.1345
+            "availableCarbohydrate": 80.486,
+            "protein": 27.405425,
+            "fat": 14.6237,
+            "fibre": 4.60525
           },
           "knownSubtotal": 1.7982,
           "wholeGk": null,
@@ -1645,12 +1645,12 @@
             },
             {
               "index": 1,
-              "carbohydrate": null,
-              "gk": null
+              "carbohydrate": 0.0,
+              "gk": 0.0
             },
             {
               "index": 2,
-              "carbohydrate": null,
+              "carbohydrate": 0.11025,
               "gk": null
             },
             {
@@ -1698,10 +1698,10 @@
         {
           "id": "upper-comparators",
           "macros": {
-            "availableCarbohydrate": 80.37575,
-            "protein": 26.768425,
-            "fat": 14.5362,
-            "fibre": 4.1345
+            "availableCarbohydrate": 80.486,
+            "protein": 27.405425,
+            "fat": 14.6237,
+            "fibre": 4.60525
           },
           "knownSubtotal": 1.7982,
           "wholeGk": null,
@@ -1713,12 +1713,12 @@
             },
             {
               "index": 1,
-              "carbohydrate": null,
-              "gk": null
+              "carbohydrate": 0.0,
+              "gk": 0.0
             },
             {
               "index": 2,
-              "carbohydrate": null,
+              "carbohydrate": 0.11025,
               "gk": null
             },
             {

@@ -17200,51 +17200,83 @@
             {
               "index": 1,
               "name": "lämmintä vettä",
-              "state": "documented low-impact seasoning or nutrient-free item",
-              "massG": null,
+              "state": "Plain water, 2.5dl; standardized 1g/ml mass has no effect on zero macro contribution",
+              "massG": 250,
               "certifiedZeroSalt": false,
               "retention": 1,
               "retentionBasis": {
                 "fraction": 1,
                 "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
               },
-              "per100g": null,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
               "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
               "family": "unresolved",
               "giId": null,
               "giEvidenceHash": null,
               "match": "APPLIED",
               "applicability": "No justified food/preparation GI assignment. Known carbohydrate remains explicit; not zero.",
-              "compositionEvidence": null,
+              "compositionEvidence": {
+                "source": "Fineli922 pure water; zero available CHO/protein/fat/fibre"
+              },
               "massEvidence": {
-                "status": "ZERO_MACRO",
-                "source": "Water and salt have no material macro contribution.",
-                "assumedGrams": null
+                "source": "Original recipe 2.5dl plain water; 1dl=100ml, reference density1g/ml"
               }
             },
             {
               "index": 2,
               "name": "kuivahiivaa",
-              "state": "documented low-impact seasoning or nutrient-free item",
-              "massG": null,
+              "state": "Dry yeast input, before fermentation",
+              "massG": 7,
               "certifiedZeroSalt": false,
               "retention": 1,
               "retentionBasis": {
                 "fraction": 1,
                 "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
               },
-              "per100g": null,
+              "per100g": {
+                "availableCarbohydrate": 6.3,
+                "protein": 36.4,
+                "fat": 5,
+                "fibre": 26.9
+              },
               "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
               "family": "unresolved",
               "giId": null,
               "giEvidenceHash": null,
               "match": "APPLIED",
               "applicability": "No justified food/preparation GI assignment. Known carbohydrate remains explicit; not zero.",
-              "compositionEvidence": null,
+              "compositionEvidence": {
+                "id": "F009606",
+                "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F009606",
+                "rawResponseSha256": "5dd0815f516dd2e243f35179d48667fb188b74650d6e08bdebd91dc45ff528e4",
+                "access": "LIVE_PRIMARY_READ",
+                "specificGravity": 0,
+                "apiNutrientBasis": "100g",
+                "apiMacroExcerpt": {
+                  "AVAILCHO": 6.3,
+                  "PROT": 36.4,
+                  "FAT": 5,
+                  "AOACDFTOTW": 26.9
+                },
+                "measurements": [
+                  {
+                    "measurement": "100 g",
+                    "amount": 100
+                  },
+                  {
+                    "measurement": "Custom (g)",
+                    "amount": 1
+                  }
+                ],
+                "analysedPortion": "100%"
+              },
               "massEvidence": {
-                "status": "NONZERO_OMITTED",
-                "source": "Excluded minor dry yeast seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
-                "assumedGrams": null
+                "source": "Original recipe 7g dry yeast"
               }
             },
             {
@@ -17700,51 +17732,83 @@
             {
               "index": 1,
               "name": "lämmintä vettä",
-              "state": "documented low-impact seasoning or nutrient-free item",
-              "massG": null,
+              "state": "Plain water, 2.5dl; standardized 1g/ml mass has no effect on zero macro contribution",
+              "massG": 250,
               "certifiedZeroSalt": false,
               "retention": 1,
               "retentionBasis": {
                 "fraction": 1,
                 "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
               },
-              "per100g": null,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
               "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
               "family": "unresolved",
               "giId": null,
               "giEvidenceHash": null,
               "match": "APPLIED",
               "applicability": "No justified food/preparation GI assignment. Known carbohydrate remains explicit; not zero.",
-              "compositionEvidence": null,
+              "compositionEvidence": {
+                "source": "Fineli922 pure water; zero available CHO/protein/fat/fibre"
+              },
               "massEvidence": {
-                "status": "ZERO_MACRO",
-                "source": "Water and salt have no material macro contribution.",
-                "assumedGrams": null
+                "source": "Original recipe 2.5dl plain water; 1dl=100ml, reference density1g/ml"
               }
             },
             {
               "index": 2,
               "name": "kuivahiivaa",
-              "state": "documented low-impact seasoning or nutrient-free item",
-              "massG": null,
+              "state": "Dry yeast input, before fermentation",
+              "massG": 7,
               "certifiedZeroSalt": false,
               "retention": 1,
               "retentionBasis": {
                 "fraction": 1,
                 "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
               },
-              "per100g": null,
+              "per100g": {
+                "availableCarbohydrate": 6.3,
+                "protein": 36.4,
+                "fat": 5,
+                "fibre": 26.9
+              },
               "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
               "family": "unresolved",
               "giId": null,
               "giEvidenceHash": null,
               "match": "APPLIED",
               "applicability": "No justified food/preparation GI assignment. Known carbohydrate remains explicit; not zero.",
-              "compositionEvidence": null,
+              "compositionEvidence": {
+                "id": "F009606",
+                "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F009606",
+                "rawResponseSha256": "5dd0815f516dd2e243f35179d48667fb188b74650d6e08bdebd91dc45ff528e4",
+                "access": "LIVE_PRIMARY_READ",
+                "specificGravity": 0,
+                "apiNutrientBasis": "100g",
+                "apiMacroExcerpt": {
+                  "AVAILCHO": 6.3,
+                  "PROT": 36.4,
+                  "FAT": 5,
+                  "AOACDFTOTW": 26.9
+                },
+                "measurements": [
+                  {
+                    "measurement": "100 g",
+                    "amount": 100
+                  },
+                  {
+                    "measurement": "Custom (g)",
+                    "amount": 1
+                  }
+                ],
+                "analysedPortion": "100%"
+              },
               "massEvidence": {
-                "status": "NONZERO_OMITTED",
-                "source": "Excluded minor dry yeast seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
-                "assumedGrams": null
+                "source": "Original recipe 7g dry yeast"
               }
             },
             {
@@ -18153,7 +18217,7 @@
           ]
         }
       ],
-      "editorialProposal": "Approve corn identity/soy quantities separately; rebuild full ingredient rows including yeast and define cabbage/fermentation basis before a public nutrition update.",
+      "editorialProposal": "Define cabbage150g as pre- or post-squeeze edible mass and document fermentation retention/finished yield. Yeast7g and water250ml are now included in isolated inputs; do not publish all-input totals as measured cooked nutrition.",
       "publicationState": "DRAFT_REVIEW_REQUIRED",
       "independentApproval": false,
       "completeInputScope": false,
@@ -18164,7 +18228,8 @@
       ],
       "method": "F",
       "coverageProposalEligible": false,
-      "reviewRisk": "INDEPENDENT_REVIEW_REQUIRED"
+      "reviewRisk": "INDEPENDENT_REVIEW_REQUIRED",
+      "pilotRepair": "Known 7g dry yeast restored: 0.11025g CHO,0.637g protein,0.0875g fat,0.47075g fibre per serving. Water250ml included with explicit zero macros. Fermentation and cabbage squeezing still prevent a whole eaten estimate. Historical R3 rows are retained as history, not the active pilot calculation."
     },
     {
       "recipeId": "koshari",

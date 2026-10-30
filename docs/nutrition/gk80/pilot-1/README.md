@@ -38,7 +38,7 @@ E = kokonaisen nimetyn syöteskenaarion CHO, ilman kokonaista GK:ta. F = myös r
 | Halloumi-tomaattileipä oliiveilla | Vaihe 4 yhdeksi ohjeeksi; vehnähapanjuurileipä ja halloumin laktoosille maitoanalogia. Leivän koostumus erillinen geneerinen arvio. | C | 14–21 | LOW; lähde-/valmistusvalinta | Numeerinen ehdotus, ei hyväksytty |
 | Appelsiini-oliiviöljykakku jogurtilla | Appelsiini/sitruuna-ristiriita ja jogurtin paikka ratkaistava; paistetun taikinan GI ei ole jauhon tai leipäryhmän yleisarvo. | F | — | LOW; lähde-/valmistusvalinta; tuntematon vaikutus | Keskeneräinen |
 | Kookospannukakku serabilla | Yksi valmistuskerta, täysrasvainen kookosmaito ja fariinisokeri täsmennetty skenaarioksi; riisijauhopannukakun ihmis-GI puuttuu. | E | — | LOW; lähde-/valmistusvalinta; tuntematon vaikutus | Keskeneräinen |
-| Baozi-höyrysämpylät porsastäytteellä | Hiiva lisättävä laskentaan, kaali määriteltävä puristetuksi syötäväksi massaksi; käymisen ja höyrytetyn vehnätaikinan vaikutus avoin. | F | — | LOW; lähde-/valmistusvalinta; tuntematon vaikutus | Keskeneräinen |
+| Baozi-höyrysämpylät porsastäytteellä | Hiiva 7 g ja vesi 250 ml on nyt sisällytetty syöteskenaarioon; kaali määriteltävä puristetuksi syötäväksi massaksi; käymisen ja höyrytetyn vehnätaikinan vaikutus avoin. | F | — | LOW; lähde-/valmistusvalinta; tuntematon vaikutus | Keskeneräinen |
 | Egyptiläinen koshari riisistä, linsseistä ja pastasta | Valutettujen linssien ja pastan saannot sekä sipulin tärkkelyspäällysteen säilyminen määriteltävä; ei keksittyä hävikkiprosenttia. | F | — | LOW; lähde-/valmistusvalinta; tuntematon vaikutus | Keskeneräinen |
 | Msemen-kerrosleipä hunajalla | Nesteen laji ja määrä sekä hunajan käyttö täsmennettävä. Kerrostettu pannuleipä tarvitsee oman vertailun. | F | — | LOW; lähde-/valmistusvalinta; tuntematon vaikutus | Keskeneräinen |
 | Japanilainen soba-aamiaiskeitto | Nuudelin kuivapaino, tattariosuus, pinaatin grammat ja yksi liemikaava puuttuvat; tutkimusnuudeli ei yksilöi geneeristä tuotetta. | F | — | LOW; lähde-/valmistusvalinta; tuntematon vaikutus | Keskeneräinen |
@@ -142,3 +142,5 @@ Muutokset: master plan, tämä katselmointiohje,6 JSON-aineistoa, eristetty Type
 ## I. Yksi seuraava erä
 
 Riippumaton kolmen numeerisen ehdotuksen katselmointi: kahvijogurtin tuotevastaavuus, halloumin maitoanalogia/leipävalinta ja harchan mannasuurimosiirto. Päätä jokaiselle hyväksy/hylkää/rajattu korjaus sekä tarkista pienen CHO-vaikutuksen käsittely. Tätä työtä, ajoa 2 tai tuotantoon vientiä ei käynnistetty.
+
+Baozin pilottilaskentaan palautettiin lähteistetty hiiva 7 g: annokseen 0,11025 g CHO, 0,637 g proteiinia, 0,0875 g rasvaa ja 0,47075 g kuitua. R3:n aiempi puuttuva rivi säilyy historiatietona. Käymisen ja kaalin puristuksen epävarmuus jää avoimeksi.
