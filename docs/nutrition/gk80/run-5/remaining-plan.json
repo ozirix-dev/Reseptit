@@ -1,0 +1,3537 @@
+{
+  "remaining": 169,
+  "groups": {
+    "1": {
+      "count": 2,
+      "evidenceBackedWholeCho": 0,
+      "confirmedNewNumericBenefit": 0,
+      "interpretation": "Existing input composition and known scoped methods; final dose/preparation/content audit still needed",
+      "recipes": [
+        {
+          "recipeId": "lahi-ita-menemen-sumakilla",
+          "group": 1,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "sumakki"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-harissa-shakshuka",
+          "group": 1,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "harissa"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        }
+      ]
+    },
+    "2": {
+      "count": 69,
+      "evidenceBackedWholeCho": 50,
+      "confirmedNewNumericBenefit": 0,
+      "interpretation": "Named shared GI/composition/preparation gaps; complete composition does not establish a valid GI",
+      "recipes": [
+        {
+          "recipeId": "chow-mein",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A006044",
+              "kind": null,
+              "item": "keitettyjä ja valutettuja vehnämunanuudeleita"
+            },
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "soijakastiketta"
+            },
+            {
+              "foodId": "A008026",
+              "kind": null,
+              "item": "osterikastiketta"
+            }
+          ],
+          "knownBlockers": [
+            "Boiled egg-noodle then wok preparation and oyster sauce need matched evidence; no generic boiled-rice/noodle transfer."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "keto-korvapuustit",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A006077",
+              "kind": "ALMOND_FLOUR",
+              "item": "mantelijauhoa"
+            },
+            {
+              "foodId": "foodin-erythritol-200g-label-2026-10-24",
+              "kind": null,
+              "item": "erytritolia"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "kookos-lime-kanacurry",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "mae-ploy-green-curry-paste-2026-10-24",
+              "kind": null,
+              "item": "thaimaalaista currytahnaa"
+            },
+            {
+              "foodId": "A000431",
+              "kind": null,
+              "item": "vihreitä papuja"
+            },
+            {
+              "foodId": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+              "kind": null,
+              "item": "kalakastiketta"
+            },
+            {
+              "foodId": "A005198",
+              "kind": "NATIVE_LIME",
+              "item": "limetti"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "meheva-suklaakakku",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F32",
+              "kind": null,
+              "item": "tummaa suklaata"
+            },
+            {
+              "foodId": "F1",
+              "kind": "SUGAR",
+              "item": "sokeria"
+            },
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauhoja"
+            },
+            {
+              "foodId": "F20",
+              "kind": null,
+              "item": "kaakaojauhetta"
+            },
+            {
+              "foodId": "A000247",
+              "kind": null,
+              "item": "leivinjauhetta"
+            },
+            {
+              "foodId": "F32",
+              "kind": null,
+              "item": "tummaa suklaata"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "miso-lohi-paksoi",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A005702",
+              "kind": null,
+              "item": "vaaleaa misotahnaa"
+            },
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "tamaria"
+            },
+            {
+              "foodId": "A001301",
+              "kind": null,
+              "item": "paksoita"
+            }
+          ],
+          "knownBlockers": [
+            "Miso paste remains outside low-CHO50 scope at this composition and dose; no raw soy bean or fish classification."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "rahkapiirakka-vhh",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A006077",
+              "kind": "ALMOND_FLOUR",
+              "item": "mantelijauhoa"
+            },
+            {
+              "foodId": "F622",
+              "kind": null,
+              "item": "maitorahkaa"
+            },
+            {
+              "foodId": "foodin-erythritol-200g-label-2026-10-24",
+              "kind": null,
+              "item": "erytritolia"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "sate-ayam",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "soijakastiketta"
+            },
+            {
+              "foodId": "A008969",
+              "kind": "SUGAR",
+              "item": "fariinisokeria"
+            },
+            {
+              "foodId": "F34667",
+              "kind": "PEANUT_BUTTER",
+              "item": "maapähkinävoita"
+            },
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "soijakastiketta"
+            },
+            {
+              "foodId": "A008969",
+              "kind": "SUGAR",
+              "item": "fariinisokeria"
+            },
+            {
+              "foodId": "A005198",
+              "kind": "NATIVE_LIME",
+              "item": "limetti"
+            }
+          ],
+          "knownBlockers": [
+            "Plain peanut-butter GI14 is not verified by the cited tables; peanut bars and whole peanuts do not establish this paste. No dairy-butter classification."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "siemengranola-jogurtilla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A008212",
+              "kind": null,
+              "item": "kurpitsansiemeniä"
+            },
+            {
+              "foodId": "A008215",
+              "kind": null,
+              "item": "auringonkukansiemeniä"
+            },
+            {
+              "foodId": "A008210",
+              "kind": null,
+              "item": "pellavansiemenrouhetta"
+            },
+            {
+              "foodId": "F379",
+              "kind": null,
+              "item": "mantelilastuja"
+            },
+            {
+              "foodId": "F32201",
+              "kind": null,
+              "item": "maustamatonta kreikkalaista jogurttia"
+            },
+            {
+              "foodId": "A007619",
+              "kind": null,
+              "item": "vadelmia"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "spanakopita",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A002452",
+              "kind": null,
+              "item": "fetajuustoa"
+            },
+            {
+              "foodId": "A006497",
+              "kind": null,
+              "item": "filotaikinaa"
+            }
+          ],
+          "knownBlockers": [
+            "Finished baked filo pastry lacks a matched GI comparator; raw flour/bread category substitution not justified."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vhh-korvapuustit",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A006077",
+              "kind": "ALMOND_FLOUR",
+              "item": "mantelijauhoa"
+            },
+            {
+              "foodId": "A007502",
+              "kind": null,
+              "item": "psylliumia"
+            },
+            {
+              "foodId": "foodin-erythritol-200g-label-2026-10-24",
+              "kind": null,
+              "item": "erytritolia täytteeseen"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vhh-lihapiirakka",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A006077",
+              "kind": "ALMOND_FLOUR",
+              "item": "mantelijauhoa"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vhh-mansikkakakku",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "foodin-erythritol-200g-label-2026-10-24",
+              "kind": null,
+              "item": "erytritolia"
+            },
+            {
+              "foodId": "A006077",
+              "kind": "ALMOND_FLOUR",
+              "item": "mantelijauhoa"
+            },
+            {
+              "foodId": "A000247",
+              "kind": null,
+              "item": "leivinjauhetta"
+            },
+            {
+              "foodId": "F622",
+              "kind": null,
+              "item": "maitorahkaa"
+            },
+            {
+              "foodId": "A008952",
+              "kind": null,
+              "item": "tuoreita mansikoita"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vhh-raparperipiirakka",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A006077",
+              "kind": "ALMOND_FLOUR",
+              "item": "mantelijauhoa"
+            },
+            {
+              "foodId": "F338",
+              "kind": null,
+              "item": "raparperia"
+            },
+            {
+              "foodId": "F622",
+              "kind": null,
+              "item": "maitorahkaa"
+            },
+            {
+              "foodId": "foodin-erythritol-200g-label-2026-10-24",
+              "kind": null,
+              "item": "erytritolia"
+            },
+            {
+              "foodId": "A007502",
+              "kind": null,
+              "item": "psylliumia"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vhh-runebergintortut",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A006077",
+              "kind": "ALMOND_FLOUR",
+              "item": "mantelijauhoa"
+            },
+            {
+              "foodId": "F622",
+              "kind": null,
+              "item": "maitorahkaa"
+            },
+            {
+              "foodId": "foodin-erythritol-200g-label-2026-10-24",
+              "kind": null,
+              "item": "erytritolia"
+            },
+            {
+              "foodId": "A000247",
+              "kind": null,
+              "item": "leivinjauhetta"
+            },
+            {
+              "foodId": "A007619",
+              "kind": null,
+              "item": "vadelmia"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "char-siu",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "kiinalaista viismaustetta"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A008008",
+              "kind": null,
+              "item": "hoisinkastiketta"
+            },
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "soijakastiketta"
+            },
+            {
+              "foodId": "A004380",
+              "kind": "HONEY",
+              "item": "hunajaa"
+            },
+            {
+              "foodId": "A004380",
+              "kind": "HONEY",
+              "item": "hunajaa"
+            },
+            {
+              "foodId": "F30346",
+              "kind": "RICE",
+              "item": "keitettyä pitkäjyväistä valkoista riisiä"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "dan-dan-nuudelit",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "nuudeleiden keitinvettä"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F120",
+              "kind": null,
+              "item": "vehnänuudeleita"
+            },
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "soijakastiketta"
+            },
+            {
+              "foodId": "F11087",
+              "kind": null,
+              "item": "seesamitahnaa"
+            },
+            {
+              "foodId": "A006110",
+              "kind": null,
+              "item": "paahdettuja maapähkinöitä"
+            },
+            {
+              "foodId": "A001301",
+              "kind": null,
+              "item": "paksoita"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "falafel",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A002881",
+              "kind": null,
+              "item": "kuivattuja kikherneitä"
+            },
+            {
+              "foodId": "A000247",
+              "kind": null,
+              "item": "leivinjauhetta"
+            },
+            {
+              "foodId": "F11087",
+              "kind": null,
+              "item": "tahinia"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "hapanimela-porsas",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F27",
+              "kind": null,
+              "item": "maissitärkkelystä"
+            },
+            {
+              "foodId": "F471",
+              "kind": null,
+              "item": "valutettua ananasta omassa mehussaan"
+            },
+            {
+              "foodId": "F353",
+              "kind": null,
+              "item": "ketsuppia"
+            },
+            {
+              "foodId": "F1",
+              "kind": "SUGAR",
+              "item": "sokeria"
+            },
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "soijakastiketta"
+            },
+            {
+              "foodId": "F30346",
+              "kind": "RICE",
+              "item": "keitettyä pitkäjyväistä valkoista riisiä"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "indonesialainen-bakwan-maissifritter",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A003209",
+              "kind": null,
+              "item": "tuoreita maissinjyviä"
+            },
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauho"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "indonesialainen-pisang-goreng-aamiaiseksi",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F11049",
+              "kind": "BANANA",
+              "item": "kuorittua banaania"
+            },
+            {
+              "foodId": "F182",
+              "kind": "RICE_FLOUR",
+              "item": "riisijauho"
+            },
+            {
+              "foodId": "A002987",
+              "kind": null,
+              "item": "kuivattua kookoshiutaletta"
+            },
+            {
+              "foodId": "F1",
+              "kind": "SUGAR",
+              "item": "fariinisokeria"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "indonesialainen-serabi-kookospannukakku",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F182",
+              "kind": "RICE_FLOUR",
+              "item": "riisijauho"
+            },
+            {
+              "foodId": "A002987",
+              "kind": null,
+              "item": "kuivattua kookoshiutaletta"
+            },
+            {
+              "foodId": "F29014",
+              "kind": null,
+              "item": "täysrasvaista kookosmaitoa"
+            },
+            {
+              "foodId": "F1",
+              "kind": "SUGAR",
+              "item": "fariinisokeria"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "intialainen-aloo-paratha",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauho"
+            },
+            {
+              "foodId": "F310",
+              "kind": null,
+              "item": "kuorittua perunaa"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "intialainen-besan-chilla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A003986",
+              "kind": null,
+              "item": "kikhernejauho"
+            }
+          ],
+          "knownBlockers": [
+            "Batra1994 abstract confirms cheela study but does not identify the exact chickpea result/formulation. Full primary paper access failed; no guessed36–45 interval."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "intialainen-rava-uttapam",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F112",
+              "kind": null,
+              "item": "mannasuurimo"
+            }
+          ],
+          "knownBlockers": [
+            "No matched semolina-yogurt pancake comparator. Steamed semolina or mixed upma GI does not establish this food."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "intialainen-ven-pongal",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A007682",
+              "kind": "RICE",
+              "item": "riisi"
+            },
+            {
+              "foodId": "A000446",
+              "kind": null,
+              "item": "mungpapu"
+            },
+            {
+              "foodId": "A006088",
+              "kind": null,
+              "item": "cashewpähkinä"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "kanaviillokki-kukkakaalilla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauhoja"
+            },
+            {
+              "foodId": "A003337",
+              "kind": null,
+              "item": "currya"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "karibia-bammy-kassavaleipa",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A002286",
+              "kind": null,
+              "item": "kuorittua tuoretta kassavaa"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "karibia-johnny-cake",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauho"
+            },
+            {
+              "foodId": "A000247",
+              "kind": null,
+              "item": "leivinjauhe"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "keto-mutakakku",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A009837",
+              "kind": null,
+              "item": "sokeritonta tummaa suklaata"
+            },
+            {
+              "foodId": "foodin-erythritol-200g-label-2026-10-24",
+              "kind": null,
+              "item": "erytritolia"
+            },
+            {
+              "foodId": "A006077",
+              "kind": "ALMOND_FLOUR",
+              "item": "mantelijauhoa"
+            },
+            {
+              "foodId": "F20",
+              "kind": null,
+              "item": "kaakaojauhetta"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "keto-suklaakeksit",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "foodin-erythritol-200g-label-2026-10-24",
+              "kind": null,
+              "item": "erytritolia"
+            },
+            {
+              "foodId": "A006077",
+              "kind": "ALMOND_FLOUR",
+              "item": "mantelijauhoa"
+            },
+            {
+              "foodId": "A000247",
+              "kind": null,
+              "item": "leivinjauhetta"
+            },
+            {
+              "foodId": "A009837",
+              "kind": null,
+              "item": "sokeritonta tummaa suklaata paloina"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "kiinalainen-jianbing-munaletty",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauho"
+            },
+            {
+              "foodId": "A005702",
+              "kind": null,
+              "item": "soijapaputahnaa"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "kiinalainen-kevatsipulipannukakku",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauho"
+            },
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "soijakastike"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F205",
+              "kind": "POTATO",
+              "item": "perunoita"
+            },
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauhoja"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "kung-pao-kana",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "vettä"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "soijakastiketta"
+            },
+            {
+              "foodId": "F27",
+              "kind": null,
+              "item": "maissitärkkelystä"
+            },
+            {
+              "foodId": "A006110",
+              "kind": null,
+              "item": "paahdettuja maapähkinöitä"
+            },
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "soijakastiketta"
+            },
+            {
+              "foodId": "F1",
+              "kind": "SUGAR",
+              "item": "sokeria"
+            },
+            {
+              "foodId": "F1370",
+              "kind": "RICE",
+              "item": "keitettyä valkoista riisiä"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "lahi-ita-manakish-zaatarilla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauhoja"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "malesialainen-apam-balik",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauho"
+            },
+            {
+              "foodId": "A006107",
+              "kind": null,
+              "item": "maapähkinä"
+            },
+            {
+              "foodId": "A003202",
+              "kind": "SWEET_CORN",
+              "item": "maissinjyviä"
+            },
+            {
+              "foodId": "F1",
+              "kind": "SUGAR",
+              "item": "sokeri"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "malesialainen-kaya-paahtoleipa",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F31842",
+              "kind": "WHEAT_BREAD",
+              "item": "hapanjuurileipä"
+            },
+            {
+              "foodId": "F29014",
+              "kind": null,
+              "item": "kookosmaitoa"
+            },
+            {
+              "foodId": "F1",
+              "kind": "SUGAR",
+              "item": "sokeria"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "malesialainen-roti-jala-currykanalla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauho"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "okonomiyaki-kaaliletut",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "srirachaa"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A006077",
+              "kind": "ALMOND_FLOUR",
+              "item": "mantelijauhoa"
+            },
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "tamaria"
+            },
+            {
+              "foodId": "A005441",
+              "kind": null,
+              "item": "majoneesia"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pizza-margherita",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "tuoretta basilikaa"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauhoja"
+            },
+            {
+              "foodId": "A009606",
+              "kind": null,
+              "item": "kuivahiivaa"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-baghrir",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F112",
+              "kind": null,
+              "item": "mannasuurimo"
+            },
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauho"
+            },
+            {
+              "foodId": "A009606",
+              "kind": null,
+              "item": "kuivahiivaa"
+            },
+            {
+              "foodId": "A004380",
+              "kind": "HONEY",
+              "item": "hunaja"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-bissara",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A000416",
+              "kind": null,
+              "item": "kuivattuja härkäpapuja"
+            }
+          ],
+          "knownBlockers": [
+            "Dried broad-bean puree does not match frozen whole broad beans microwaved (GI63); no unqualified whole-to-puree transfer."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F112",
+              "kind": null,
+              "item": "mannasuurimo"
+            },
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauho"
+            },
+            {
+              "foodId": "A004380",
+              "kind": "HONEY",
+              "item": "hunaja"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F112",
+              "kind": null,
+              "item": "mannasuurimo"
+            },
+            {
+              "foodId": "A003496",
+              "kind": "DATE",
+              "item": "kivettömiä kuivattuja taateleita"
+            },
+            {
+              "foodId": "F11045",
+              "kind": "ORANGE",
+              "item": "kuorittua appelsiinia"
+            }
+          ],
+          "knownBlockers": [
+            "Published semolina55/76 refers to specific steam/roast+oil methods in T2 cohorts; current water porridge lacks a defensible matched preparation."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "silakkapihvit-tilli-kermakastike",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F100",
+              "kind": null,
+              "item": "ruisjauhoja"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "thai-kananmunat-kookoscurryssa",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "mae-ploy-red-curry-paste-2026-10-24",
+              "kind": null,
+              "item": "Mae Ploy punaista currytahnaa"
+            },
+            {
+              "foodId": "A007682",
+              "kind": "RICE",
+              "item": "kuivaa pitkäjyväistä valkoista riisiä"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "thai-maissifritterit",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F3040",
+              "kind": null,
+              "item": "kypsennettyjä, valutettuja maissinjyviä"
+            },
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauho"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "thai-roti-munalla-banaanilla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F11049",
+              "kind": "BANANA",
+              "item": "banaani"
+            },
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauho"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "uunimakkara-sipulipedilla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [
+            "mustapippuria"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F7607",
+              "kind": "SAUSAGE_HIGH_CHO",
+              "item": "lenkkimakkaraa"
+            },
+            {
+              "foodId": "F28",
+              "kind": null,
+              "item": "Dijon-sinappia"
+            }
+          ],
+          "knownBlockers": [
+            "Fineli7607 lenkkimakkara contains7.598g CHO/100g; low-CHO50 cutoff cannot be used. No product/preparation-specific human comparator established."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauho"
+            },
+            {
+              "foodId": "F11045",
+              "kind": "ORANGE",
+              "item": "kuorittua appelsiinia"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vhh-juustokakku",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "sitruunamehua"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A006077",
+              "kind": "ALMOND_FLOUR",
+              "item": "mantelijauhoa"
+            },
+            {
+              "foodId": "foodin-erythritol-200g-label-2026-10-24",
+              "kind": null,
+              "item": "erytritolia"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vhh-letut",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A006077",
+              "kind": "ALMOND_FLOUR",
+              "item": "mantelijauhoa"
+            },
+            {
+              "foodId": "foodin-erythritol-200g-label-2026-10-24",
+              "kind": null,
+              "item": "erytritolia"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vhh-omenapiirakka",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "sitruunamehua"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A006077",
+              "kind": "ALMOND_FLOUR",
+              "item": "mantelijauhoa"
+            },
+            {
+              "foodId": "foodin-erythritol-200g-label-2026-10-24",
+              "kind": null,
+              "item": "erytritolia pohjaan"
+            },
+            {
+              "foodId": "A000095",
+              "kind": null,
+              "item": "pientä omenaa"
+            },
+            {
+              "foodId": "F622",
+              "kind": null,
+              "item": "maitorahkaa"
+            },
+            {
+              "foodId": "foodin-erythritol-200g-label-2026-10-24",
+              "kind": null,
+              "item": "erytritolia täytteeseen"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vietnamilainen-banh-cuon-sienilla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F182",
+              "kind": "RICE_FLOUR",
+              "item": "riisijauho"
+            },
+            {
+              "foodId": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+              "kind": null,
+              "item": "kalakastike"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F182",
+              "kind": "RICE_FLOUR",
+              "item": "riisijauho"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vietnamilainen-papaija-kookospuuro",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A009090",
+              "kind": null,
+              "item": "tapiokahelmiä"
+            },
+            {
+              "foodId": "A006528",
+              "kind": "PAPAYA",
+              "item": "papaija"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "indialainen-poha-maapahkinoilla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "curry-lehti"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F182",
+              "kind": "RICE_FLOUR",
+              "item": "riisihiutale"
+            },
+            {
+              "foodId": "A006107",
+              "kind": null,
+              "item": "maapähkinä"
+            },
+            {
+              "foodId": "F370",
+              "kind": "GREEN_PEA",
+              "item": "herne"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "intialainen-mannasuurimoupma",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "tuoreita curry-lehtiä"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F112",
+              "kind": null,
+              "item": "mannasuurimo"
+            },
+            {
+              "foodId": "F370",
+              "kind": "GREEN_PEA",
+              "item": "herne"
+            }
+          ],
+          "knownBlockers": [
+            "Urooj2000 GI69 is a full oil/onion/semolina dish, not isolated semolina. Current oil-free vegetable recipe and curry leaves remain unmatched."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "hojicha-teetä"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A006628",
+              "kind": null,
+              "item": "persimon"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "jiaozi",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "vettä taikinaan"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauhoja taikinaan"
+            },
+            {
+              "foodId": "F359",
+              "kind": null,
+              "item": "kiinankaalia"
+            },
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "soijakastiketta"
+            },
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "soijakastiketta"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A000458",
+              "kind": null,
+              "item": "soijapapu"
+            },
+            {
+              "foodId": "A007682",
+              "kind": "RICE",
+              "item": "riisi"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "lahi-ita-pistaasijogurtti",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "ruusuvesi"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A006113",
+              "kind": null,
+              "item": "pistaasi"
+            },
+            {
+              "foodId": "A006842",
+              "kind": null,
+              "item": "granaattiomenan siemeniä"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "lanttulaatikko-kermainen",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "valkopippuria"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F3",
+              "kind": null,
+              "item": "siirappia"
+            },
+            {
+              "foodId": "A006118",
+              "kind": null,
+              "item": "muskottipähkinää"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "lindstrominpihvit-kaalilla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "punajuurilientä"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A001010",
+              "kind": null,
+              "item": "säilykepunajuurta"
+            },
+            {
+              "foodId": "F28",
+              "kind": null,
+              "item": "Dijon-sinappia"
+            }
+          ],
+          "knownBlockers": [
+            "Pickled beetroot and its consumed brine need a named product composition and defensible GI application; no zero brine assumption."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "malesialainen-roti-canai-dhalilla",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "tuoreita curry-lehtiä"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauho"
+            },
+            {
+              "foodId": "A005184",
+              "kind": null,
+              "item": "kuivia punaisia linssejä"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "tunisialainen-ojja",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "harissaa"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F31842",
+              "kind": "WHEAT_BREAD",
+              "item": "maalaisleipää"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "valimerellinen-farinata-aamupalaksi",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "tuoretta rosmariinia"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A003986",
+              "kind": null,
+              "item": "kikhernejauho"
+            }
+          ],
+          "knownBlockers": [
+            "No verified chickpea-flour baked batter comparator. Whole chickpea GI28 and wheat bread GI cannot be transferred to flour."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vietnamilainen-pho-ga-aamuksi",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "tähtianis"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F29055",
+              "kind": "RICE_NOODLE",
+              "item": "riisinuudeli"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "xiaolongbao",
+          "group": 2,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "vettä taikinaan"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauhoja taikinaan"
+            },
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "soijakastiketta"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        }
+      ]
+    },
+    "3": {
+      "count": 98,
+      "evidenceBackedWholeCho": 1,
+      "confirmedNewNumericBenefit": 0,
+      "interpretation": "Quantity, source mapping, extraction or recipe-version work; includes rejected cases requiring decisive new evidence",
+      "recipes": [
+        {
+          "recipeId": "aloo-paratha",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "bibimbap",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "butter-chicken",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "chole-bhature",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "dal-makhani",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "dim-sum",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "goi-cuon",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "gulab-jamun",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "hernekeitto-savupotkalla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "idli-sambar",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "indonesialainen-bubur-sumsum",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "indonesialainen-tempeh-munakulho",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "intialainen-idli-kookoschutneylla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "intialainen-masala-dosa",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "intialainen-pinaatti-paneer-chilla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "japanilainen-curry-tofulla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "japanilainen-dashimaki-tamago-aamiaislautasella",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "japanilainen-miso-tofu-paksoi",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "japanilainen-natto-riisikulho",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "japanilainen-okayu-umeboshipluumulla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "japanilainen-soba-aamiaiskeitto",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "japanilainen-yaki-onigiri-misolla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "jauheliha-makaronilaatikko",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "kaakao-kookos-chia",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "kana-tagine-sitruunalla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "karibia-ackee-ja-suolakala",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "karibia-plantain-aamiaislautanen",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "karibia-saltfish-fritterit",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "keltainen-kanacurry-vhh",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "keto-kauralesesampylat",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "ketopizza-pofiber-pohjalla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "khao-soi-vhh-konjac",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "kiinalainen-bao-munalla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "kiinalainen-katkarapu-wontonkeitto",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "kimchi-jjigae",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "korealainen-bataatti-riisikulho",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "korealainen-bindaetteok-aamiaiseksi",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "korealainen-kimchi-jeon-aamiaiseksi",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "korealainen-mandu-keitto-aamiaiseksi",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "lahi-ita-labneh-kulho-zaatarilla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "lanzhou-naudanliha-nuudelikeitto",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "maksalaatikko-kukkakaalilla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "mala-xiang-guo",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "malesialainen-kookos-banaanikulho",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "malesialainen-kuih-seri-muka",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "mapo-tofu",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "marjainen-chiavanukas",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "masala-dosa",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "massaman-curry-kanalla-vhh",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "meksikolainen-chilaquiles-verdes",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "meksikolainen-huevos-divorciados",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "meksikolainen-paputostada-aamupalaksi",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "moo-ping-vhh",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "munakoiso-kesakurpitsalasagne",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "munatacot-huevos-rancheros",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "nasi-lemak",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pad-kee-mao-vhh-konjac",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pad-see-ew-vhh-konjac",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pad-thai-vhh-konjac",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "paistettu-maksa-pekonilla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "palak-paneer",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "panang-curry-kanalla-vhh",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "paneer-tikka",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pani-puri",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pekingin-ankka",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pellava-puuro-pahkinoilla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pho-bo",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+          "group": 3,
+          "compositionEvidence": true,
+          "wholeChoEvidence": true,
+          "missing": [],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F112",
+              "kind": null,
+              "item": "mannasuurimo"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "punainen-kanacurry-vhh",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "rahka-marjakerroskulho",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "roujiamo",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "samosa",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "sichuan-hot-pot",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "som-tam-vhh-kurkkuna",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "tangyuan",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "thai-vihrea-curry-kanalla-vhh",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "tom-kha-gai-vhh",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "tom-yum-goong-vhh",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "tunisialainen-brik",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vada-pav",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vhh-mustikkapiirakka",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vhh-pyttipannu",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vietnamilainen-banh-bao-kananmunalla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "vietnamilainen-xoi-maapahkinalla",
+          "group": 3,
+          "compositionEvidence": false,
+          "wholeChoEvidence": false,
+          "missing": [
+            "No complete calculation evidence"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "baozi",
+          "group": 3,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "lämmintä vettä",
+            "kuivahiivaa"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F110",
+              "kind": null,
+              "item": "vehnäjauhoja"
+            },
+            {
+              "foodId": "F1",
+              "kind": "SUGAR",
+              "item": "sokeria"
+            },
+            {
+              "foodId": "F359",
+              "kind": null,
+              "item": "kiinankaalia"
+            },
+            {
+              "foodId": "F31",
+              "kind": null,
+              "item": "soijakastiketta"
+            },
+            {
+              "foodId": "F162",
+              "kind": "POTATO_STARCH",
+              "item": "maissitärkkelystä"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "bouillabaisse",
+          "group": 3,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "sahramia",
+            "kuivattua timjamia"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A005968",
+              "kind": null,
+              "item": "sinisimpukoita"
+            },
+            {
+              "foodId": "A003820",
+              "kind": null,
+              "item": "fenkolia"
+            },
+            {
+              "foodId": "F205",
+              "kind": "POTATO",
+              "item": "perunoita"
+            },
+            {
+              "foodId": "F1107",
+              "kind": null,
+              "item": "vaaleaa leipää"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "hyderabadi-kanabiryani",
+          "group": 3,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "garam masalaa",
+            "sahramia"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A007682",
+              "kind": "RICE",
+              "item": "basmatiriisiä"
+            }
+          ],
+          "knownBlockers": [
+            "Whole spices/extraction, garam masala and saffron composition plus layered rice preparation need a coherent named cooking version."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "nakkikeitto-kukkakaalilla",
+          "group": 3,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "laakerinlehti",
+            "mustapippuria",
+            "tuoretta persiljaa"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "paella-valenciana",
+          "group": 3,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "sahramia",
+            "rosmariinin oksa"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A007682",
+              "kind": "RICE",
+              "item": "puuroriisiä, kuivapaino"
+            },
+            {
+              "foodId": "A000431",
+              "kind": null,
+              "item": "tuoreita vihreitä papuja"
+            }
+          ],
+          "knownBlockers": [
+            "Short-grain/Bomba paella rice lacks a matched preparation comparator here; jasmine/congee GI is not substituted. Saffron and rosemary extraction also open."
+          ],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "paprikainen-vhh-gulassi",
+          "group": 3,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "mustapippuria",
+            "persiljaa"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "F354",
+              "kind": null,
+              "item": "tomaattipyreetä"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "rendang-padang",
+          "group": 3,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "sitruunaruohoa",
+            "kaffirlimetinlehteä"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A002901",
+              "kind": null,
+              "item": "punaista chiliä"
+            },
+            {
+              "foodId": "A002987",
+              "kind": null,
+              "item": "paahdettua kookoshiutaletta"
+            },
+            {
+              "foodId": "A007682",
+              "kind": "RICE",
+              "item": "jasmiiniriisiä"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "chettinad-kana",
+          "group": 3,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "fenkolinsiemeniä",
+            "tuoreita currylehtiä",
+            "vettä"
+          ],
+          "unresolvedFoodFamilies": [],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "kerala-kalacurry",
+          "group": 3,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "sinapinsiemeniä",
+            "tuoreita currylehtiä",
+            "lämmintä vettä tamarindiin"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A009081",
+              "kind": null,
+              "item": "tamarinditahnaa"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        },
+        {
+          "recipeId": "liha-juureskeitto-perunaton",
+          "group": 3,
+          "compositionEvidence": true,
+          "wholeChoEvidence": false,
+          "missing": [
+            "vettä",
+            "laakerinlehteä",
+            "kokonaista mustapippuria"
+          ],
+          "unresolvedFoodFamilies": [
+            {
+              "foodId": "A009021",
+              "kind": null,
+              "item": "lanttua"
+            }
+          ],
+          "knownBlockers": [],
+          "readiness": "MACHINE_TRIAGE_ONLY_NOT_APPROVED",
+          "expectedNumericBenefitConfirmed": 0
+        }
+      ]
+    }
+  },
+  "batches": [
+    {
+      "id": "C01",
+      "recipeIds": [
+        "lahi-ita-menemen-sumakilla",
+        "pohjoisafrikkalainen-harissa-shakshuka",
+        "intialainen-besan-chilla",
+        "intialainen-rava-uttapam",
+        "karibia-bammy-kassavaleipa",
+        "lahi-ita-manakish-zaatarilla",
+        "malesialainen-roti-jala-currykanalla",
+        "pohjoisafrikkalainen-bissara",
+        "silakkapihvit-tilli-kermakastike",
+        "vhh-lihapiirakka",
+        "vietnamilainen-banh-xeo-aamiaisletut",
+        "indonesialainen-bakwan-maissifritter",
+        "intialainen-aloo-paratha",
+        "kanaviillokki-kukkakaalilla",
+        "karibia-johnny-cake",
+        "keto-korvapuustit",
+        "kiinalainen-jianbing-munaletty",
+        "kiinalainen-kevatsipulipannukakku",
+        "korealainen-kongjuk-soijapapu-riisipuuro",
+        "kreikkalainen-moussaka"
+      ],
+      "researchScope": 20,
+      "newNumericWorkTarget": 13,
+      "forecast": false
+    },
+    {
+      "id": "C02",
+      "recipeIds": [
+        "spanakopita",
+        "thai-kananmunat-kookoscurryssa",
+        "thai-maissifritterit",
+        "thai-roti-munalla-banaanilla",
+        "valimerellinen-appelsiini-aamiaiskakku",
+        "vhh-letut",
+        "vietnamilainen-banh-cuon-sienilla",
+        "vietnamilainen-papaija-kookospuuro",
+        "chow-mein",
+        "falafel",
+        "intialainen-ven-pongal",
+        "malesialainen-kaya-paahtoleipa",
+        "miso-lohi-paksoi",
+        "pohjoisafrikkalainen-msemen-hunajalla",
+        "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+        "rahkapiirakka-vhh",
+        "vhh-korvapuustit",
+        "indonesialainen-pisang-goreng-aamiaiseksi",
+        "indonesialainen-serabi-kookospannukakku",
+        "keto-mutakakku"
+      ],
+      "researchScope": 20,
+      "newNumericWorkTarget": 13,
+      "forecast": false
+    },
+    {
+      "id": "C03",
+      "recipeIds": [
+        "keto-suklaakeksit",
+        "kookos-lime-kanacurry",
+        "malesialainen-apam-balik",
+        "pohjoisafrikkalainen-baghrir",
+        "vhh-mansikkakakku",
+        "vhh-raparperipiirakka",
+        "vhh-runebergintortut",
+        "hapanimela-porsas",
+        "meheva-suklaakakku",
+        "sate-ayam",
+        "siemengranola-jogurtilla",
+        "japanilainen-hojicha-jogurtti-persimonilla",
+        "tunisialainen-ojja",
+        "valimerellinen-farinata-aamupalaksi",
+        "vietnamilainen-pho-ga-aamuksi",
+        "intialainen-mannasuurimoupma",
+        "lahi-ita-pistaasijogurtti",
+        "lanttulaatikko-kermainen",
+        "lindstrominpihvit-kaalilla",
+        "malesialainen-roti-canai-dhalilla"
+      ],
+      "researchScope": 20,
+      "newNumericWorkTarget": 13,
+      "forecast": false
+    },
+    {
+      "id": "C04",
+      "recipeIds": [
+        "pizza-margherita",
+        "uunimakkara-sipulipedilla",
+        "vhh-juustokakku",
+        "xiaolongbao",
+        "indialainen-poha-maapahkinoilla",
+        "okonomiyaki-kaaliletut",
+        "jiaozi",
+        "char-siu",
+        "dan-dan-nuudelit",
+        "vhh-omenapiirakka",
+        "kung-pao-kana",
+        "pohjoisafrikkalainen-harcha-juustolla",
+        "aloo-paratha",
+        "bibimbap",
+        "butter-chicken",
+        "chole-bhature",
+        "dal-makhani",
+        "dim-sum",
+        "goi-cuon",
+        "gulab-jamun"
+      ],
+      "researchScope": 20,
+      "newNumericWorkTarget": 13,
+      "forecast": false
+    },
+    {
+      "id": "C05",
+      "recipeIds": [
+        "hernekeitto-savupotkalla",
+        "idli-sambar",
+        "indonesialainen-bubur-sumsum",
+        "indonesialainen-lontong-sayur-aamiaiseksi",
+        "indonesialainen-nasi-goreng-aamiaisriisi",
+        "indonesialainen-tempeh-munakulho",
+        "intialainen-idli-kookoschutneylla",
+        "intialainen-masala-dosa",
+        "intialainen-pinaatti-paneer-chilla",
+        "japanilainen-curry-tofulla",
+        "japanilainen-dashimaki-tamago-aamiaislautasella",
+        "japanilainen-miso-tofu-paksoi",
+        "japanilainen-natto-riisikulho",
+        "japanilainen-okayu-umeboshipluumulla",
+        "japanilainen-soba-aamiaiskeitto",
+        "japanilainen-yaki-onigiri-misolla",
+        "jauheliha-makaronilaatikko",
+        "kaakao-kookos-chia",
+        "kana-tagine-sitruunalla",
+        "karibia-ackee-ja-suolakala"
+      ],
+      "researchScope": 20,
+      "newNumericWorkTarget": 13,
+      "forecast": false
+    },
+    {
+      "id": "C06",
+      "recipeIds": [
+        "karibia-plantain-aamiaislautanen",
+        "karibia-saltfish-fritterit",
+        "keltainen-kanacurry-vhh",
+        "keto-kauralesesampylat",
+        "ketopizza-pofiber-pohjalla",
+        "khao-soi-vhh-konjac",
+        "kiinalainen-bao-munalla",
+        "kiinalainen-katkarapu-wontonkeitto",
+        "kimchi-jjigae",
+        "korealainen-bataatti-riisikulho",
+        "korealainen-bindaetteok-aamiaiseksi",
+        "korealainen-kimchi-jeon-aamiaiseksi",
+        "korealainen-mandu-keitto-aamiaiseksi",
+        "korealainen-tofu-kimchi-aamiaiskulho",
+        "lahi-ita-labneh-kulho-zaatarilla",
+        "lanzhou-naudanliha-nuudelikeitto",
+        "maksalaatikko-kukkakaalilla",
+        "mala-xiang-guo",
+        "malesialainen-kookos-banaanikulho",
+        "malesialainen-kuih-seri-muka"
+      ],
+      "researchScope": 20,
+      "newNumericWorkTarget": 13,
+      "forecast": false
+    },
+    {
+      "id": "C07",
+      "recipeIds": [
+        "malesialainen-laksa-lemak-aamiaiseksi",
+        "mapo-tofu",
+        "marjainen-chiavanukas",
+        "masala-dosa",
+        "massaman-curry-kanalla-vhh",
+        "meksikolainen-chilaquiles-verdes",
+        "meksikolainen-huevos-divorciados",
+        "meksikolainen-paputostada-aamupalaksi",
+        "moo-ping-vhh",
+        "munakoiso-kesakurpitsalasagne",
+        "munatacot-huevos-rancheros",
+        "nasi-lemak",
+        "pad-kee-mao-vhh-konjac",
+        "pad-see-ew-vhh-konjac",
+        "pad-thai-vhh-konjac",
+        "paistettu-maksa-pekonilla",
+        "palak-paneer",
+        "panang-curry-kanalla-vhh",
+        "paneer-tikka",
+        "pani-puri"
+      ],
+      "researchScope": 20,
+      "newNumericWorkTarget": 13,
+      "forecast": false
+    },
+    {
+      "id": "C08",
+      "recipeIds": [
+        "pekingin-ankka",
+        "pellava-puuro-pahkinoilla",
+        "pho-bo",
+        "punainen-kanacurry-vhh",
+        "rahka-marjakerroskulho",
+        "roujiamo",
+        "samosa",
+        "sichuan-hot-pot",
+        "som-tam-vhh-kurkkuna",
+        "tangyuan",
+        "thai-vihrea-curry-kanalla-vhh",
+        "tom-kha-gai-vhh",
+        "tom-yum-goong-vhh",
+        "tunisialainen-brik",
+        "vada-pav",
+        "vhh-mustikkapiirakka",
+        "vhh-pyttipannu",
+        "vietnamilainen-banh-bao-kananmunalla",
+        "vietnamilainen-xoi-maapahkinalla",
+        "hyderabadi-kanabiryani"
+      ],
+      "researchScope": 20,
+      "newNumericWorkTarget": 13,
+      "forecast": false
+    },
+    {
+      "id": "C09",
+      "recipeIds": [
+        "paprikainen-vhh-gulassi",
+        "paella-valenciana",
+        "rendang-padang",
+        "bouillabaisse",
+        "baozi",
+        "chettinad-kana",
+        "nakkikeitto-kukkakaalilla",
+        "kerala-kalacurry",
+        "liha-juureskeitto-perunaton"
+      ],
+      "researchScope": 9,
+      "newNumericWorkTarget": 9,
+      "forecast": false
+    }
+  ],
+  "workTarget": "After all74 conditional approvals and9 zero corrections, need104 further unique numeric IDs. Eight20-ID batches at13 successes would supply104; this is an arithmetic target, not an evidenced forecast. Review after each20; no forced estimates. Final9-ID buffer remains.",
+  "qualityBatch": "Q09: nine exact legacy zero IDs, no new-coverage credit",
+  "preparationBacklog": 50
+}
