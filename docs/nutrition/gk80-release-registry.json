@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "requiredPacks": [
+    {
+      "folder": "gk80-release-3",
+      "version": 1,
+      "recipeIds": [
+        "shoyu-kanakeitto-konjac",
+        "indonesialainen-nasi-uduk-aamiaisella",
+        "thai-khao-tom-katkaravuilla",
+        "karibia-kookosriisi-pavuilla",
+        "pohjoisafrikkalainen-lablabi",
+        "meksikolainen-atole-maissipuuro",
+        "karibia-maissipuuro-kookoksella",
+        "meksikolainen-kurpitsapuuro-piloncillolla",
+        "lahi-ita-taatelipuuro-tahinilla",
+        "valimerellinen-tahinipuuro",
+        "thai-papaijajogurtti",
+        "lahi-ita-kikherne-shakshuka"
+      ],
+      "sha256": {
+        "manifest.json": "3f5901789db8bdc01199849c40af97f5a2806b9b8d2716d5745cb6744f4d876f",
+        "recipes.json": "dd9bd8da9214ea762d766be1d8cbce2fb8b640dcadef92bc51d5c3381042e11e",
+        "sources.json": "50a77250fb5fb693cd2e6decdd029228d977d3f965d424fe0426949736d0e1f2",
+        "composition-sources.json": "4fb43c55097c02df5e5072372a0857cb11ff033679bb6480e52a197bff2b6851",
+        "golden.json": "0165778d3eb2bd2924930ff80c96a1740ec2bc71df3eb66e73ddd7a9d4b67247"
+      }
+    }
+  ]
+}
