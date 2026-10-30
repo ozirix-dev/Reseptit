@@ -1,0 +1,2105 @@
+{
+  "method": "Independent Python decimal arithmetic, immutable curated inputs; tests compare every ingredient and all four macros, not just final rounding.",
+  "recipes": [
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "inputHash": "89cb8e401de979f4fc58aee67b0e281024f03fd36c1bacfb57e80cfde4bc0a8f",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 39.029,
+            "protein": 13.0342,
+            "fat": 16.5773,
+            "fibre": 1.7021666666666666
+          },
+          "knownSubtotal": 19.69259,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.22,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 5.75,
+              "gk": 1.265
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 3,
+              "carbohydrate": 1.332,
+              "gk": 0.7992
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0,
+              "gk": 0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.57,
+              "gk": null
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.23,
+              "gk": null
+            },
+            {
+              "index": 7,
+              "carbohydrate": 30.927,
+              "gk": 17.62839
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 39.029,
+            "protein": 13.0342,
+            "fat": 16.5773,
+            "fibre": 1.7021666666666666
+          },
+          "knownSubtotal": 23.09456,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.22,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 5.75,
+              "gk": 1.265
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 3,
+              "carbohydrate": 1.332,
+              "gk": 0.7992
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0,
+              "gk": 0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.57,
+              "gk": null
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.23,
+              "gk": null
+            },
+            {
+              "index": 7,
+              "carbohydrate": 30.927,
+              "gk": 21.03036
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "inputHash": "7420d93727d24182f7994b22ad67d2d7a6350bb99093fd6562a7789bfbd555de",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 39.155,
+            "protein": 21.2613,
+            "fat": 11.00995,
+            "fibre": 1.3645
+          },
+          "knownSubtotal": 20.144655,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 35.3415,
+              "gk": 20.144655
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.0825,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 3,
+              "carbohydrate": 2.37375,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.15725,
+              "gk": null
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.855,
+              "gk": null
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.345,
+              "gk": null
+            },
+            {
+              "index": 8,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 39.155,
+            "protein": 21.2613,
+            "fat": 11.00995,
+            "fibre": 1.3645
+          },
+          "knownSubtotal": 24.03222,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 35.3415,
+              "gk": 24.03222
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.0825,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 3,
+              "carbohydrate": 2.37375,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.15725,
+              "gk": null
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.855,
+              "gk": null
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.345,
+              "gk": null
+            },
+            {
+              "index": 8,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "siemengranola-jogurtilla",
+      "inputHash": "4d2bf336a44ffbda27c9571ad7d3fede6501f148a6e133321aafeb9c4947fefd",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 8.08675,
+            "protein": 18.68125,
+            "fat": 40.8563,
+            "fibre": 8.42515
+          },
+          "knownSubtotal": 0.74866,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.42,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.465,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.28,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.66,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.06,
+              "gk": 0.018
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.17875,
+              "gk": null
+            },
+            {
+              "index": 6,
+              "carbohydrate": 4.298,
+              "gk": 0.73066
+            },
+            {
+              "index": 7,
+              "carbohydrate": 1.725,
+              "gk": null
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 8.08675,
+            "protein": 18.68125,
+            "fat": 40.8563,
+            "fibre": 8.42515
+          },
+          "knownSubtotal": 1.5319,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.42,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.465,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.28,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.66,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.06,
+              "gk": 0.0276
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.17875,
+              "gk": null
+            },
+            {
+              "index": 6,
+              "carbohydrate": 4.298,
+              "gk": 1.5043
+            },
+            {
+              "index": 7,
+              "carbohydrate": 1.725,
+              "gk": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "inputHash": "dff834b34995ecac57bacdcc45fe1dda9d6dd447e309046c1339dd095387b244",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 32.24863333333333,
+            "protein": 27.596333333333334,
+            "fat": 35.19595,
+            "fibre": 5.47785
+          },
+          "knownSubtotal": 1.97,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 4.133333333333334,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 12.916666666666666,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.44,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 2.3,
+              "gk": 0.506
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.11916666666666667,
+              "gk": null
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.08,
+              "gk": 0.024
+            },
+            {
+              "index": 8,
+              "carbohydrate": 7.3998,
+              "gk": null
+            },
+            {
+              "index": 9,
+              "carbohydrate": 4.8,
+              "gk": 1.44
+            },
+            {
+              "index": 10,
+              "carbohydrate": 0.0275,
+              "gk": null
+            },
+            {
+              "index": 11,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 12,
+              "carbohydrate": 0,
+              "gk": 0
+            },
+            {
+              "index": 13,
+              "carbohydrate": 0.03216666666666667,
+              "gk": null
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 32.24863333333333,
+            "protein": 27.596333333333334,
+            "fat": 35.19595,
+            "fibre": 5.47785
+          },
+          "knownSubtotal": 2.7508,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 4.133333333333334,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 12.916666666666666,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.44,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 2.3,
+              "gk": 0.506
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.11916666666666667,
+              "gk": null
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.08,
+              "gk": 0.0368
+            },
+            {
+              "index": 8,
+              "carbohydrate": 7.3998,
+              "gk": null
+            },
+            {
+              "index": 9,
+              "carbohydrate": 4.8,
+              "gk": 2.208
+            },
+            {
+              "index": 10,
+              "carbohydrate": 0.0275,
+              "gk": null
+            },
+            {
+              "index": 11,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 12,
+              "carbohydrate": 0,
+              "gk": 0
+            },
+            {
+              "index": 13,
+              "carbohydrate": 0.03216666666666667,
+              "gk": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-lihapiirakka",
+      "inputHash": "8e8d30b74137778694b781897e1ac2f6c21e3aba0a2595a00b9f04be6130b980",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 2.2695,
+            "protein": 20.06480625,
+            "fat": 26.962375,
+            "fibre": 2.93375
+          },
+          "knownSubtotal": 0.15,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 1.35,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.5,
+              "gk": 0.15
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.04125,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.33,
+              "gk": null
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.04825,
+              "gk": null
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 2.2695,
+            "protein": 20.06480625,
+            "fat": 26.962375,
+            "fibre": 2.93375
+          },
+          "knownSubtotal": 0.23,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 1.35,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.5,
+              "gk": 0.23
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.04125,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.33,
+              "gk": null
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.04825,
+              "gk": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "inputHash": "e079a1ee42dfd261521a2e777e22c9598c491f4ddcdd0ce0996044bb9c0fd5ca",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 21.3875,
+            "protein": 3.795,
+            "fat": 3.68,
+            "fibre": 1.0625
+          },
+          "knownSubtotal": 10.697125,
+          "wholeGk": 10.697125,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 1.7,
+              "gk": 0.289
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 2,
+              "carbohydrate": 11.4375,
+              "gk": 5.375625
+            },
+            {
+              "index": 3,
+              "carbohydrate": 8.25,
+              "gk": 5.0325
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 21.3875,
+            "protein": 3.795,
+            "fat": 3.68,
+            "fibre": 1.0625
+          },
+          "knownSubtotal": 12.146875,
+          "wholeGk": 12.146875,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 1.7,
+              "gk": 0.595
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 2,
+              "carbohydrate": 11.4375,
+              "gk": 6.519375
+            },
+            {
+              "index": 3,
+              "carbohydrate": 8.25,
+              "gk": 5.0325
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "thai-papaijajogurtti",
+      "inputHash": "93d35ae8fa52cf81651c9cf6394864524646f68028cd2a4c35d65563c8c37cb8",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 12.4375,
+            "protein": 3.9775,
+            "fat": 8.8125,
+            "fibre": 3.525
+          },
+          "knownSubtotal": 3.77,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 8.4,
+              "gk": 3.192
+            },
+            {
+              "index": 1,
+              "carbohydrate": 3.4,
+              "gk": 0.578
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.5475,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.09,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 12.4375,
+            "protein": 3.9775,
+            "fat": 8.8125,
+            "fibre": 3.525
+          },
+          "knownSubtotal": 4.718,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 8.4,
+              "gk": 3.528
+            },
+            {
+              "index": 1,
+              "carbohydrate": 3.4,
+              "gk": 1.19
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.5475,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.09,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "meksikolainen-quesadilla-sienilla",
+      "inputHash": "aca1848ae5e8ba0fa34d8ecebfc8b2b75cfcfd7e6d649490ffaa0cda33e5ba7c",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 32.9425,
+            "protein": 11.21,
+            "fat": 20.31975,
+            "fibre": 2.111
+          },
+          "knownSubtotal": 17.01059,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 25.9225,
+              "gk": 13.58339
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.3,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 6.72,
+              "gk": 3.4272
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 32.9425,
+            "protein": 11.21,
+            "fat": 20.31975,
+            "fibre": 2.111
+          },
+          "knownSubtotal": 17.27939,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 25.9225,
+              "gk": 13.58339
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.3,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 6.72,
+              "gk": 3.696
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-letut",
+      "inputHash": "2b40e0d8756413233f724da680d885a92051664872ff19bc71533ed80540c69e",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 2.574,
+            "protein": 11.7313875,
+            "fat": 24.559125,
+            "fibre": 1.51425
+          },
+          "knownSubtotal": 0.5202,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.165,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 1.0,
+              "gk": 0.3
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.675,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.725,
+              "gk": 0.2175
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.009,
+              "gk": 0.0027
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 2.574,
+            "protein": 11.7313875,
+            "fat": 24.559125,
+            "fibre": 1.51425
+          },
+          "knownSubtotal": 0.79764,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.165,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 1.0,
+              "gk": 0.46
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.675,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.725,
+              "gk": 0.3335
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.009,
+              "gk": 0.00414
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+      "inputHash": "c61ddb3ddf497847d433f19dd56d7d3dd2523acb7a14afa43eca6db6cc8ca038",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 35.66,
+            "protein": 10.66425,
+            "fat": 20.20325,
+            "fibre": 2.0285
+          },
+          "knownSubtotal": 18.648,
+          "wholeGk": 18.648,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 31.8,
+              "gk": 17.49
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.06,
+              "gk": 0.018
+            },
+            {
+              "index": 2,
+              "carbohydrate": 1.8,
+              "gk": 0.54
+            },
+            {
+              "index": 3,
+              "carbohydrate": 2.0,
+              "gk": 0.6
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 35.66,
+            "protein": 10.66425,
+            "fat": 20.20325,
+            "fibre": 2.0285
+          },
+          "knownSubtotal": 25.9436,
+          "wholeGk": 25.9436,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 31.8,
+              "gk": 24.168
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.06,
+              "gk": 0.0276
+            },
+            {
+              "index": 2,
+              "carbohydrate": 1.8,
+              "gk": 0.828
+            },
+            {
+              "index": 3,
+              "carbohydrate": 2.0,
+              "gk": 0.92
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+      "inputHash": "b07d30af90df279f03c2b54587eb205fc1221e5d230f97fc90f349cbbfc41436",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 41.3025,
+            "protein": 6.266,
+            "fat": 0.6666,
+            "fibre": 4.4853
+          },
+          "knownSubtotal": 21.94797,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 31.8,
+              "gk": 17.49
+            },
+            {
+              "index": 1,
+              "carbohydrate": 3.36,
+              "gk": 1.85472
+            },
+            {
+              "index": 2,
+              "carbohydrate": 5.785,
+              "gk": 2.60325
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.3575,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 41.3025,
+            "protein": 6.266,
+            "fat": 0.6666,
+            "fibre": 4.4853
+          },
+          "knownSubtotal": 28.62597,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 31.8,
+              "gk": 24.168
+            },
+            {
+              "index": 1,
+              "carbohydrate": 3.36,
+              "gk": 1.85472
+            },
+            {
+              "index": 2,
+              "carbohydrate": 5.785,
+              "gk": 2.60325
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.3575,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "thai-kookosriisi-mangolla",
+      "inputHash": "5733d28e2343689746443e9733b3cf830fe59b7eda33e06a678026f043077a0d",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 48.21913,
+            "protein": 5.966,
+            "fat": 17.949,
+            "fibre": 1.714
+          },
+          "knownSubtotal": 25.9095,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 37.0,
+              "gk": 21.09
+            },
+            {
+              "index": 1,
+              "carbohydrate": 1.734,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": 9.45,
+              "gk": 4.8195
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.03513,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 48.21913,
+            "protein": 5.966,
+            "fat": 17.949,
+            "fibre": 1.714
+          },
+          "knownSubtotal": 29.9795,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 37.0,
+              "gk": 25.16
+            },
+            {
+              "index": 1,
+              "carbohydrate": 1.734,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": 9.45,
+              "gk": 4.8195
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.03513,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "keto-korvapuustit",
+      "inputHash": "9913542abc8619ff7ec477d966afa86883bbb78141dce117460626212d2d6ea1",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 1.99,
+            "protein": 10.2620625,
+            "fat": 21.56915,
+            "fibre": 2.9922
+          },
+          "knownSubtotal": 0.159,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 1.35,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.5,
+              "gk": 0.15
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.020625,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.089375,
+              "gk": null
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.03,
+              "gk": 0.009
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 1.99,
+            "protein": 10.2620625,
+            "fat": 21.56915,
+            "fibre": 2.9922
+          },
+          "knownSubtotal": 0.2438,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 1.35,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.5,
+              "gk": 0.23
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.020625,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.089375,
+              "gk": null
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.03,
+              "gk": 0.0138
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "inputHash": "f67450892d7e8585bd7b3c804a06dd19f3b887e1e75d860943e79a54f85942eb",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 27.581,
+            "protein": 20.18,
+            "fat": 28.56175,
+            "fibre": 1.924
+          },
+          "knownSubtotal": 14.16174,
+          "wholeGk": 14.16174,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.75,
+              "gk": 0.225
+            },
+            {
+              "index": 1,
+              "carbohydrate": 1.725,
+              "gk": 0.3795
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 3,
+              "carbohydrate": 25.106,
+              "gk": 13.55724
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 27.581,
+            "protein": 20.18,
+            "fat": 28.56175,
+            "fibre": 1.924
+          },
+          "knownSubtotal": 21.31142,
+          "wholeGk": 21.31142,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.75,
+              "gk": 0.345
+            },
+            {
+              "index": 1,
+              "carbohydrate": 1.725,
+              "gk": 0.3795
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 3,
+              "carbohydrate": 25.106,
+              "gk": 20.58692
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+      "inputHash": "e313fb40a1d53a03984b38e59948b1de9148e4dbdbbf6c94145025198e48f405",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 44.484,
+            "protein": 7.664,
+            "fat": 16.31425,
+            "fibre": 3.31
+          },
+          "knownSubtotal": 2.89225,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 36.999,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 5.785,
+              "gk": 2.60325
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 3,
+              "carbohydrate": 1.7,
+              "gk": 0.289
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 44.484,
+            "protein": 7.664,
+            "fat": 16.31425,
+            "fibre": 3.31
+          },
+          "knownSubtotal": 3.19825,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 36.999,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 5.785,
+              "gk": 2.60325
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 3,
+              "carbohydrate": 1.7,
+              "gk": 0.595
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-serabi-kookospannukakku",
+      "inputHash": "2cdd0062ef665a2f5e16d953675e6e3e8bc994f7ecd368da4f1027a1513c4322",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 57.0075,
+            "protein": 6.08,
+            "fat": 29.98075,
+            "fibre": 6.54875
+          },
+          "knownSubtotal": 8.712,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 39.65,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.73,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": 2.1075,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 14.52,
+              "gk": 8.712
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 57.0075,
+            "protein": 6.08,
+            "fat": 29.98075,
+            "fibre": 6.54875
+          },
+          "knownSubtotal": 8.712,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 39.65,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.73,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": 2.1075,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 14.52,
+              "gk": 8.712
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "baozi",
+      "inputHash": "2c6d155b375b9cd4ec9b8714426eac4557618df550ba5b3ac785cea2c4b719d5",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 80.37575,
+            "protein": 26.768425,
+            "fat": 14.5362,
+            "fibre": 4.1345
+          },
+          "knownSubtotal": 1.7982,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 73.998,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": null,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": null,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 2.997,
+              "gk": 1.7982
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.60375,
+              "gk": null
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.345,
+              "gk": null
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.855,
+              "gk": null
+            },
+            {
+              "index": 8,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 9,
+              "carbohydrate": 0.072,
+              "gk": null
+            },
+            {
+              "index": 10,
+              "carbohydrate": 1.505,
+              "gk": null
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 80.37575,
+            "protein": 26.768425,
+            "fat": 14.5362,
+            "fibre": 4.1345
+          },
+          "knownSubtotal": 1.7982,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 73.998,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": null,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": null,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 2.997,
+              "gk": 1.7982
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.60375,
+              "gk": null
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.345,
+              "gk": null
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.855,
+              "gk": null
+            },
+            {
+              "index": 8,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 9,
+              "carbohydrate": 0.072,
+              "gk": null
+            },
+            {
+              "index": 10,
+              "carbohydrate": 1.505,
+              "gk": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "koshari",
+      "inputHash": "09fbbb10d2a40439e275c60926d6206afc4b72e335d4f629c6bed837064482b1",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 95.482,
+            "protein": 22.25425,
+            "fat": 12.03025,
+            "fibre": 7.22825
+          },
+          "knownSubtotal": 23.274,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 22.85,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 39.5,
+              "gk": 22.515
+            },
+            {
+              "index": 2,
+              "carbohydrate": 24.9,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 1.32,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 3.01,
+              "gk": null
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 6,
+              "carbohydrate": 3.45,
+              "gk": 0.759
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.1785,
+              "gk": null
+            },
+            {
+              "index": 8,
+              "carbohydrate": 0.0375,
+              "gk": null
+            },
+            {
+              "index": 9,
+              "carbohydrate": 0.1685,
+              "gk": null
+            },
+            {
+              "index": 10,
+              "carbohydrate": 0,
+              "gk": 0
+            },
+            {
+              "index": 11,
+              "carbohydrate": 0.0675,
+              "gk": null
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 95.482,
+            "protein": 22.25425,
+            "fat": 12.03025,
+            "fibre": 7.22825
+          },
+          "knownSubtotal": 27.619,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 22.85,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 39.5,
+              "gk": 26.86
+            },
+            {
+              "index": 2,
+              "carbohydrate": 24.9,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": 1.32,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": 3.01,
+              "gk": null
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 6,
+              "carbohydrate": 3.45,
+              "gk": 0.759
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.1785,
+              "gk": null
+            },
+            {
+              "index": 8,
+              "carbohydrate": 0.0375,
+              "gk": null
+            },
+            {
+              "index": 9,
+              "carbohydrate": 0.1685,
+              "gk": null
+            },
+            {
+              "index": 10,
+              "carbohydrate": 0,
+              "gk": 0
+            },
+            {
+              "index": 11,
+              "carbohydrate": 0.0675,
+              "gk": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+      "inputHash": "988db79208233f759fb3de912a3d6d69a1a10a956be3de611396a3e077b0e88b",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 76.229,
+            "protein": 11.8775,
+            "fat": 28.39825,
+            "fibre": 3.5
+          },
+          "knownSubtotal": 21.5265,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 31.8,
+              "gk": 17.49
+            },
+            {
+              "index": 1,
+              "carbohydrate": 36.999,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.2,
+              "gk": 0.06
+            },
+            {
+              "index": 3,
+              "carbohydrate": 7.23,
+              "gk": 3.9765
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 76.229,
+            "protein": 11.8775,
+            "fat": 28.39825,
+            "fibre": 3.5
+          },
+          "knownSubtotal": 28.2365,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 31.8,
+              "gk": 24.168
+            },
+            {
+              "index": 1,
+              "carbohydrate": 36.999,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.2,
+              "gk": 0.092
+            },
+            {
+              "index": 3,
+              "carbohydrate": 7.23,
+              "gk": 3.9765
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0,
+              "gk": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "inputHash": "d89e09f5fa69590e49d780d7c73f2d0c72121083afdf03728c0e9cea168f8b8f",
+      "scenarios": [
+        {
+          "id": "lower-comparators",
+          "macros": {
+            "availableCarbohydrate": 0.165,
+            "protein": 6.9355,
+            "fat": 5.082,
+            "fibre": 0.0
+          },
+          "knownSubtotal": 0.0,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": null,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.165,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": null,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": null,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": null,
+              "gk": null
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ]
+        },
+        {
+          "id": "upper-comparators",
+          "macros": {
+            "availableCarbohydrate": 0.165,
+            "protein": 6.9355,
+            "fat": 5.082,
+            "fibre": 0.0
+          },
+          "knownSubtotal": 0.0,
+          "wholeGk": null,
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": null,
+              "gk": null
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.165,
+              "gk": null
+            },
+            {
+              "index": 2,
+              "carbohydrate": null,
+              "gk": null
+            },
+            {
+              "index": 3,
+              "carbohydrate": null,
+              "gk": null
+            },
+            {
+              "index": 4,
+              "carbohydrate": null,
+              "gk": null
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
