@@ -862,15 +862,29 @@
       "newDeepReviewInR3": true,
       "detail": "gk-r3-batch-3.json",
       "uncertainties": [
+        "Author intent not established independently",
+        "Current contradictory preparation text",
+        "Actual pan residue/oil retention",
+        "Consistency/time of the proposed single-pass preparation",
         "Average full-fat coconut milk and brown sugar",
         "Pan residue",
         "Generic pancake thickness"
       ],
       "blockerCategories": [
+        "RECIPE_TEXT_CORRECTION_REQUIRED",
         "INDEPENDENT_ACCEPTANCE_PENDING"
       ],
-      "nextAction": "Include density and brown-sugar composition in the next bounded nutrition correction after independent review.",
-      "independentApproval": false
+      "nextAction": "R4 only after approving the explicit single-scenario ingredient/preparation proposal in gk-r3-1-review.json; correct current recipe text before any nutrition publication.",
+      "independentApproval": false,
+      "scenarioScope": {
+        "id": "SERABI_SINGLE_BATCH_STEP4",
+        "scope": "NAMED_PROPOSED_SINGLE_PREPARATION;not all literal readings of current recipe",
+        "currentRecipeTextResolved": false,
+        "publicationReady": false,
+        "requiresRecipeCorrection": true,
+        "independentReviewUrl": "https://github.com/ozirix-dev/Reseptit/pull/134#pullrequestreview-5711068770",
+        "reviewIsApproval": false
+      }
     },
     {
       "recipeId": "thai-kookosriisi-mangolla",
@@ -901,16 +915,30 @@
       "newDeepReviewInR3": true,
       "detail": "gk-r3-batch-3.json",
       "uncertainties": [
+        "Current contradictory preparation text",
+        "Dry rice/edible mango not explicit in current ingredient text",
+        "Rice variety,rinsing starch loss and actual cooked yield",
+        "Absorption cooking adequacy/time without an invented extra water amount",
         "Unspecified rice cultivar and rinsing loss",
         "Edible mango mass/ripeness",
         "Average canned coconut milk",
         "Full-retention estimate"
       ],
       "blockerCategories": [
+        "RECIPE_TEXT_CORRECTION_REQUIRED",
         "INDEPENDENT_ACCEPTANCE_PENDING"
       ],
-      "nextAction": "Independent review of dry-rice/edible-mango/full-retention scope and coconut density correction. No GI proposal.",
-      "independentApproval": false
+      "nextAction": "R4 only after approving the explicit single-scenario ingredient/preparation proposal in gk-r3-1-review.json; correct current recipe text before any nutrition publication.",
+      "independentApproval": false,
+      "scenarioScope": {
+        "id": "COCONUT_RICE_RAW100G_ABSORPTION",
+        "scope": "NAMED_PROPOSED_SINGLE_PREPARATION;not all literal readings of current recipe",
+        "currentRecipeTextResolved": false,
+        "publicationReady": false,
+        "requiresRecipeCorrection": true,
+        "independentReviewUrl": "https://github.com/ozirix-dev/Reseptit/pull/134#pullrequestreview-5711068770",
+        "reviewIsApproval": false
+      }
     },
     {
       "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
@@ -952,5 +980,17 @@
       "nextAction": "Specify water or other liquid and amount,plus honey serving instruction,before calling the input calculation complete.",
       "independentApproval": false
     }
-  ]
+  ],
+  "reviewFixup": {
+    "reviewId": 5711068770,
+    "reviewUrl": "https://github.com/ozirix-dev/Reseptit/pull/134#pullrequestreview-5711068770",
+    "reviewedCommit": "1d7dc77f15de34e92607b979484504b9834e162c",
+    "reviewState": "COMMENTED",
+    "newIndependentApproval": false,
+    "countsUnchangedReason": "B is a complete named-scenario estimate,not publication-ready original text. These two B totals remain arithmetic/source-backed only for the named step4/single-pass proposals; their current recipe texts must be corrected before publication.",
+    "conditionalWholeScenarioCount": 14,
+    "ofThoseRequiringThisPreparationFix": 2,
+    "wholeScenarioBWithoutTheseTwoTextConflicts": 12,
+    "publicationReadyCount": 0
+  }
 }

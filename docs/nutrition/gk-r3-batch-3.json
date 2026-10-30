@@ -1993,23 +1993,40 @@
         "gramsPerUnitCorrections": {
           "täysrasvaista kookosmaitoa": 1
         },
-        "preparation": "2 servings. Rice flour,coconut milk and desiccated coconut batter rests10min and pan-fries; all30g brown sugar melts on top. Thin-versus-thick generic wording changes geometry,not the ingredient inventory.",
+        "preparation": "The most recipe-specific instruction is step4. R3 selected this one-batch scenario; this is a reasoned interpretation,not proof of author intent. All6 listed ingredient rows,including one13.5g total oil amount and all30g brown sugar,are used once.",
         "compositionMatch": "Fineli182 white rice flour and29014 coconut milk (21.33gfat/100g) fit the listed full-fat product;AFCD F002987 unsweetened desiccated coconut. Replace generic sucrose Fineli1 with actual brown-sugar AFCD F008969 composition,already read live in batch1.",
         "amountReview": "100g flour,20g coconut flakes,30g brown sugar,13.5g oil. Fineli29014 DL100g establishes150ml=150g,not138g from the prior oil-like0.92g/ml assumption.",
-        "retention": "No liquid drained; whole batter/sugar consumed,oil1 retention a fat estimate. No guess for resistant starch from heating rice flour.",
+        "retention": "All four input macros remain57.01/6.08/29.98/6.55g per serving in the named single-batch/full-input-retention scenario. If the generic steps imply extra batter/oil or a second cooking sequence,amounts and losses are unknown; no second numerical total is asserted. Pan residue especially affects fat; thin/thick processing does not prove identical eaten macros.",
         "strictComparison": "Independent baseline57.30g/serving versus corrected scenario recorded with all four macro deltas. Source-backed density and sugar identity corrections are proposals only.",
         "uncertainties": [
+          "Author intent not established independently",
+          "Current contradictory preparation text",
+          "Actual pan residue/oil retention",
+          "Consistency/time of the proposed single-pass preparation",
           "Average full-fat coconut milk and brown sugar",
           "Pan residue",
           "Generic pancake thickness"
         ],
         "blockerCategories": [
+          "RECIPE_TEXT_CORRECTION_REQUIRED",
           "INDEPENDENT_ACCEPTANCE_PENDING"
         ],
-        "nextAction": "Include density and brown-sugar composition in the next bounded nutrition correction after independent review."
+        "nextAction": "R4 only after approving the explicit single-scenario ingredient/preparation proposal in gk-r3-1-review.json; correct current recipe text before any nutrition publication.",
+        "r31IndependentFinding": "Steps1–3 describe a generic thin pancake process;step4 restarts mixing/resting/pan-frying as thick small rice-flour coconut pancakes with sugar on top. Both sequences cannot be treated as one clear literal preparation.",
+        "r31Interpretation": "The most recipe-specific instruction is step4. R3 selected this one-batch scenario; this is a reasoned interpretation,not proof of author intent. All6 listed ingredient rows,including one13.5g total oil amount and all30g brown sugar,are used once.",
+        "decisionRationaleR31": "Retain B only for the already defined whole-input named scenario. No upgrade to VERIFIED_TOTAL. R3 B meant complete named scenario,not publication readiness; current contradictory recipe remains blocked for publication. Other C cases lack a defined complete ingredient scenario."
       },
       "independentApproval": false,
-      "calculationSha256": "c9d52f84dbbe160a5c09cca69f064df9ba57fe0781b3e24e2f875216970b0a5c"
+      "calculationSha256": "c9d52f84dbbe160a5c09cca69f064df9ba57fe0781b3e24e2f875216970b0a5c",
+      "scenarioScope": {
+        "id": "SERABI_SINGLE_BATCH_STEP4",
+        "scope": "NAMED_PROPOSED_SINGLE_PREPARATION;not all literal readings of current recipe",
+        "currentRecipeTextResolved": false,
+        "publicationReady": false,
+        "requiresRecipeCorrection": true,
+        "independentReviewUrl": "https://github.com/ozirix-dev/Reseptit/pull/134#pullrequestreview-5711068770",
+        "reviewIsApproval": false
+      }
     },
     {
       "recipeId": "thai-kookosriisi-mangolla",
@@ -2296,24 +2313,41 @@
         "gramsPerUnitCorrections": {
           "kookosmaito": 1.02
         },
-        "preparation": "2 servings. Rinse uncooked rice then absorb coconut milk until tender;serve with mango and sesame. Generic optional tofu/egg is not in this named ingredient scenario. Recipe does not specify sticky-rice cultivar.",
+        "preparation": "R3 selected step4:100g dry uncooked white rice,200ml regular-fat canned coconut milk,150g peeled/pitted mango flesh and6g hulled sesame,2servings. This is supported as a named ingredient scenario by the composition rows and specific step,not established as the unique literal reading of the current recipe.",
         "compositionMatch": "AFCD F007682 dry white rice is an explicit representative for unspecified rice,F002991 regular canned coconut milk andF005299 peeled mango;Fineli34245 hulled sesame. Mango150g interpreted as edible flesh,not whole fruit weight.",
         "amountReview": "100g dry rice,150g edible mango,6g sesame. AFCD original coconut-milk specific gravity1.02g/ml makes200ml=204g; old0.92 factor gave184g. API per100ml values are not mistaken for per100g composition.",
-        "retention": "Absorption cooking with no post-cooking draining. Full nutrient input retention is an estimate; rinse loss is unmeasured and not assigned a fabricated correction. No assumed cooling/resistant-starch reduction.",
+        "retention": "Named input-retention scenario remains48.22/5.97/17.95/1.71g per serving. Rinsing removes unspecified starch; loss is not measured. Absorption cooking has no drained cooking liquid; evaporation changes density,not batch nutrient input. Preboiling/draining,100g cooked rice or extra tofu/egg would require a different full calculation,not a fabricated yield/loss coefficient.",
         "strictComparison": "Corrected coconut mass produces recorded CHO/protein/fat/fibre deltas from independently reconstructed strict baseline48.05g. This is an ingredient-retention estimate with explicit rice state,not a laboratory cooked-dish measurement.",
         "uncertainties": [
+          "Current contradictory preparation text",
+          "Dry rice/edible mango not explicit in current ingredient text",
+          "Rice variety,rinsing starch loss and actual cooked yield",
+          "Absorption cooking adequacy/time without an invented extra water amount",
           "Unspecified rice cultivar and rinsing loss",
           "Edible mango mass/ripeness",
           "Average canned coconut milk",
           "Full-retention estimate"
         ],
         "blockerCategories": [
+          "RECIPE_TEXT_CORRECTION_REQUIRED",
           "INDEPENDENT_ACCEPTANCE_PENDING"
         ],
-        "nextAction": "Independent review of dry-rice/edible-mango/full-retention scope and coconut density correction. No GI proposal."
+        "nextAction": "R4 only after approving the explicit single-scenario ingredient/preparation proposal in gk-r3-1-review.json; correct current recipe text before any nutrition publication.",
+        "r31IndependentFinding": "Step1 cooks rice by package instructions and mentions tofu/egg;step4 starts by rinsing rice then cooking it in coconut milk. Steps2–3 add generic vegetables,herbs,sauce language. Ingredient list does not explicitly mark dry rice or edible peeled mango.",
+        "r31Interpretation": "R3 selected step4:100g dry uncooked white rice,200ml regular-fat canned coconut milk,150g peeled/pitted mango flesh and6g hulled sesame,2servings. This is supported as a named ingredient scenario by the composition rows and specific step,not established as the unique literal reading of the current recipe.",
+        "decisionRationaleR31": "Retain B only for the already defined whole-input named scenario. No upgrade to VERIFIED_TOTAL. R3 B meant complete named scenario,not publication readiness; current contradictory recipe remains blocked for publication. Other C cases lack a defined complete ingredient scenario."
       },
       "independentApproval": false,
-      "calculationSha256": "9ce6cd95e10ad530b70697017e4b10eb3f3b2a9134922ff500f7378b9be7570d"
+      "calculationSha256": "9ce6cd95e10ad530b70697017e4b10eb3f3b2a9134922ff500f7378b9be7570d",
+      "scenarioScope": {
+        "id": "COCONUT_RICE_RAW100G_ABSORPTION",
+        "scope": "NAMED_PROPOSED_SINGLE_PREPARATION;not all literal readings of current recipe",
+        "currentRecipeTextResolved": false,
+        "publicationReady": false,
+        "requiresRecipeCorrection": true,
+        "independentReviewUrl": "https://github.com/ozirix-dev/Reseptit/pull/134#pullrequestreview-5711068770",
+        "reviewIsApproval": false
+      }
     },
     {
       "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",

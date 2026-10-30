@@ -4,6 +4,28 @@ Tila: **R3 – READY FOR INDEPENDENT REVIEW**. Tutkimus- ja ehdotusaineisto,
 ei riippumaton hyväksyntä, julkaisutietue tai lupa tuotantoon.
 Päivä: 2026-10-30. Lähtö-main: `e8da2c9417e2aeff55a85d599b3b7e1ad465f36c`.
 
+## R3.1 – nykyinen katselmointitila 2026-10-30
+
+**CONDITIONAL GO tutkimusaineistolle; ei julkaisuhyväksyntää.** Yllä oleva
+READY FOR INDEPENDENT REVIEW ja alla alkuperäinen R3-osuus säilyvät
+historiallisena tutkimustuloksena. R3.1:n täsmennykset ovat
+[katselmointikorjauksissa](gk-r3-1-review.md), [päätöstietueessa](gk-r3-1-review.json)
+ja [erillisessä GI-politiikkaehdotuksessa](gk-r3-1-gi-policy.md).
+
+14 B:tä tarkoittaa edelleen nimettyjä kokonaisia ainesosaskenaarioita:
+serabin ja thai-kookosriisin kahdessa B:ssä on nyt nimenomainen valmistustekstin
+korjausportti, 12:ssa ei ole näitä kahta ristiriitaa. Julkaisuvalmiita on nolla;
+luokkaa ei ole nostettu VERIFIED_TOTALiksi. Nykyinen ristiriitainen teksti
+ei ole kummankaan luvun julkaisuhyväksyntä.
+
+Kookosmaidon 100 g/dl ja 1,02 ovat eri tietueiden laskentaoletuksia;
+yleinen FSANZ 1,01 ei ole kaikkien tuotteiden sääntö. Neljän makron herkkyys on
+laskettu erikseen. Öljyn vihannes-GI on kahdessa reseptissä käyttämätöntä
+CHO 0 -metadataa; mustapippurin väärä vihannes-GI vaikuttaa yhteen laskelmaan.
+[Kohdennettu seula](gk-r3-1-targeted-screen.json) erottaa nämä.
+R2:n 14 suoraa GK-riippuvuutta on ratkaistava ennen viiden kohteen julkaisua.
+R4–R6 jäivät suunnitelmiksi; aktiivisia arvoja ei muutettu.
+
 ## Tulos ja aineiston lukeminen
 
 24 reseptistä 14 sai koko annoksen lähteistetyn **arvion**, kahdeksan jäi

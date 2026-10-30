@@ -18,6 +18,22 @@ Tarkat ainesosat, tietueet, valmistusavaimet ja lähdeperustelut ovat
 [koneellisessa seulassa](gk-r3-existing-83-risk-screen.json).
 [Päätelmät, kynnysarvot ja rajat](gk-r3-review.md) kuuluvat samaan aineistoon.
 
+## R3.1-täsmennys: tallennettu sidos ja numeerinen käyttö
+
+Koneellinen aineisto sisältää nyt bindingRole- ja giContribution-kentät.
+CHO 0 -rivin GI-tunniste on käyttämätöntä metadataa, ei numeerinen GI-osuus.
+Kiinalaisen tomaattimunakkaan ja Lähi-idän kikhernejauholetun öljyissä on
+todettu väärä vihannesryhmäsidos, mutta niiden GK pysyy ennallaan.
+Poronkäristyksen mustapippurilla sama väärä perhe vaikuttaa summaan:
+muistissa tehty poisto muuttaisi 3,09 → 3,03. Aktiivista poistoa ei tehty.
+
+[Kohdennettu tutkimus](gk-r3-1-targeted-screen.json) ja
+[katselmoinnin selitys](gk-r3-1-review.md) erottavat kolme todettua perhevirhettä,
+yhdeksän valmistusmuodon jatkohavaintoa ja yhdeksän todellista GK 0 + poisjättö
+-tapausta. 47 vanhaa valmistuslippua eivät tarkoita 47 todettua virhettä.
+Alla oleva historiallinen priorisointi ja lippumäärät säilyvät.
+[GI-politiikka](gk-r3-1-gi-policy.md) on erillinen ehdotus, ei hyväksyntä tai massapoisto.
+
 | Sija | Resepti | Pisteet | Liput | Nykyinen GK | Epävarman GI:n CHO g/annos | Pois jätetty CHO g/annos |
 | ---: | --- | ---: | --- | ---: | ---: | ---: |
 | 1 | vhh-kaalikaarryleet | 33 | R, M, P, V | 9.24 | 14,00 | 1,58 |

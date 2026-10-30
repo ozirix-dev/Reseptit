@@ -1403,5 +1403,170 @@
       "fibre": 0.47075
     },
     "limitation": "Input contribution only,not a measured post-fermentation retention correction."
+  },
+  "r31CoconutDensityReview": {
+    "reviewId": 5711068770,
+    "originalAfcdResponse": {
+      "file": "F002991.json",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F002991",
+      "status": "read",
+      "bytes": 12335,
+      "sha256": "e7cc11804d0e0f1a9d043b83f75d237acf37e00838633c59978853a63ffe776a"
+    },
+    "originalGeneralDensityPdf": {
+      "file": "npc-gravities.pdf",
+      "url": "https://www.foodstandards.gov.au/sites/default/files/2023-12/npc-specific-gravities.pdf",
+      "status": "read",
+      "bytes": 222817,
+      "sha256": "383bb4b4c961ab31890b374d3623a362e7c6ee5e7c7acce61ccd331305ba2004"
+    },
+    "generalHtmlAccess": "HTTP403;original7-pagePDF read,PDFp1 explanatory context andp2 coconut milk row",
+    "fineli29014": "DL100g in approved Release20 foodaddunit is a food-record reference portion,not a measured density for every brand.150ml=>150g only under this source-specific assumption.",
+    "afcdF002991": "specific_gravity1.02 for canned regular-fat coconut milk; composition is a composite/reference food,not a measurement of the users brand.200ml=>204g only for this record-matched assumption.",
+    "fsanzGeneralNpc": "Coconut,milk1.01 is an indicative generic NPC guide;source notes composition,temperature and measurement influence specificgravity. It does not overwrite a more specific record.",
+    "recordTerminologyCorrection": "Record-specific,not universal or single-brand product-specific. Both Fineli andAFCD are representative foods.",
+    "conclusion": "NO_CONFIRMED_SOURCE_OR_UNIT_ERROR; source-matched assumptions retained. Future actual conflicting label/measurement =>BLOCKED until reconciled,not silent active-data replacement.",
+    "comparisons": [
+      {
+        "recipeId": "indonesialainen-serabi-kookospannukakku",
+        "servings": 2,
+        "compositionId": "29014",
+        "volumeMl": 150,
+        "retainedReferenceMassG": 150.0,
+        "originalUnroundedPerServing": {
+          "availableCarbohydrate": 57.0075,
+          "protein": 6.08,
+          "fat": 29.98075,
+          "fibre": 6.54875
+        },
+        "per100g": {
+          "availableCarbohydrate": 2.81,
+          "protein": 2.02,
+          "fat": 21.33,
+          "fibre": 5.145
+        },
+        "densityOnlyComparisons": [
+          {
+            "gramsPerMl": 1.0,
+            "batchMassG": 150.0,
+            "deltaPerServingUnrounded": {
+              "availableCarbohydrate": 0.0,
+              "protein": 0.0,
+              "fat": 0.0,
+              "fibre": 0.0
+            },
+            "scenarioPerServing": {
+              "availableCarbohydrate": 57.01,
+              "protein": 6.08,
+              "fat": 29.98,
+              "fibre": 6.55
+            }
+          },
+          {
+            "gramsPerMl": 1.01,
+            "batchMassG": 151.5,
+            "deltaPerServingUnrounded": {
+              "availableCarbohydrate": 0.021075,
+              "protein": 0.01515,
+              "fat": 0.159975,
+              "fibre": 0.0385875
+            },
+            "scenarioPerServing": {
+              "availableCarbohydrate": 57.03,
+              "protein": 6.1,
+              "fat": 30.14,
+              "fibre": 6.59
+            }
+          },
+          {
+            "gramsPerMl": 1.02,
+            "batchMassG": 153.0,
+            "deltaPerServingUnrounded": {
+              "availableCarbohydrate": 0.04215,
+              "protein": 0.0303,
+              "fat": 0.31995,
+              "fibre": 0.077175
+            },
+            "scenarioPerServing": {
+              "availableCarbohydrate": 57.05,
+              "protein": 6.11,
+              "fat": 30.3,
+              "fibre": 6.63
+            }
+          }
+        ],
+        "interpretation": "Hold composition and all other ingredients constant; density sensitivity only,NOT a statistical uncertainty interval or product-wide bound. Product composition variation and actual retention are not quantified."
+      },
+      {
+        "recipeId": "thai-kookosriisi-mangolla",
+        "servings": 2,
+        "compositionId": "F002991",
+        "volumeMl": 200,
+        "retainedReferenceMassG": 204.0,
+        "originalUnroundedPerServing": {
+          "availableCarbohydrate": 48.21913,
+          "protein": 5.966,
+          "fat": 17.949,
+          "fibre": 1.714
+        },
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "densityOnlyComparisons": [
+          {
+            "gramsPerMl": 1.0,
+            "batchMassG": 200.0,
+            "deltaPerServingUnrounded": {
+              "availableCarbohydrate": -0.034,
+              "protein": -0.028,
+              "fat": -0.308,
+              "fibre": -0.0
+            },
+            "scenarioPerServing": {
+              "availableCarbohydrate": 48.19,
+              "protein": 5.94,
+              "fat": 17.64,
+              "fibre": 1.71
+            }
+          },
+          {
+            "gramsPerMl": 1.01,
+            "batchMassG": 202.0,
+            "deltaPerServingUnrounded": {
+              "availableCarbohydrate": -0.017,
+              "protein": -0.014,
+              "fat": -0.154,
+              "fibre": -0.0
+            },
+            "scenarioPerServing": {
+              "availableCarbohydrate": 48.2,
+              "protein": 5.95,
+              "fat": 17.8,
+              "fibre": 1.71
+            }
+          },
+          {
+            "gramsPerMl": 1.02,
+            "batchMassG": 204.0,
+            "deltaPerServingUnrounded": {
+              "availableCarbohydrate": 0.0,
+              "protein": 0.0,
+              "fat": 0.0,
+              "fibre": 0.0
+            },
+            "scenarioPerServing": {
+              "availableCarbohydrate": 48.22,
+              "protein": 5.97,
+              "fat": 17.95,
+              "fibre": 1.71
+            }
+          }
+        ],
+        "interpretation": "Hold composition and all other ingredients constant; density sensitivity only,NOT a statistical uncertainty interval or product-wide bound. Product composition variation and actual retention are not quantified."
+      }
+    ]
   }
 }

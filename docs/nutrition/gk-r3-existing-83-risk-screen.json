@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "scope": "Automatic-only heuristic screen of existing83; no new deep recipe review or scientific approval",
+  "scope": "Automatic-only heuristic screen of existing83;R3.1 distinguishes storedGIid from numerical use;no83scientific approval",
   "limitations": "Regex/key/metadata flags may miss actual cooking mismatches or flag a disclosed analogue. No flag means no detected signal, not validated evidence. Omission fractions use known CHO only; bounds can overstate them. Scores are editorial priorities, not clinical risk probabilities.",
+  "bindingInterpretation": "A storedGIid on sourceCHO0 is unused metadata,not a numericGI contribution. Targeted family findings are separate in gk-r3-1-targeted-screen.json.",
   "thresholds": {
     "largeOmissionG": 1.5,
     "largeOmissionShare": 0.5,
@@ -44,7 +45,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record."
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 8.25
         },
         {
           "ingredient": "kukkakaalirouhetta",
@@ -55,7 +58,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record."
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.99
         }
       ],
       "rank": 1
@@ -86,7 +91,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "legume-category",
-          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 3.2725
         }
       ],
       "rank": 2
@@ -117,7 +124,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 3.2802
         },
         {
           "ingredient": "kevätsipulia",
@@ -128,7 +137,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.5179999999999998
         }
       ],
       "rank": 3
@@ -159,7 +170,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 3.8269
         }
       ],
       "rank": 4
@@ -189,7 +202,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 26.465
         },
         {
           "ingredient": "porkkana",
@@ -200,7 +215,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.1008799999999999
         },
         {
           "ingredient": "kesäkurpitsa",
@@ -211,7 +228,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.8875
         }
       ],
       "rank": 5
@@ -241,7 +260,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "dried-rice-noodles-boiled",
           "recordPreparationKey": "dried-rice-noodles-boiled",
-          "giMatchEvidence": "Published rice-noodle record matches dry rice-noodle identity and boiled preparation."
+          "giMatchEvidence": "Published rice-noodle record matches dry rice-noodle identity and boiled preparation.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 24.900199999999998
         },
         {
           "ingredient": "pavunitu",
@@ -252,7 +273,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.287
         },
         {
           "ingredient": "maapähkinä",
@@ -263,7 +286,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "nuts-category-mean",
           "recordPreparationKey": "nuts-category-mean",
-          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.48125
         }
       ],
       "rank": 6
@@ -293,7 +318,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.423125
         },
         {
           "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
@@ -304,7 +331,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 26.465
         },
         {
           "ingredient": "kevätsipuli",
@@ -315,7 +344,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.18216
         },
         {
           "ingredient": "neutraalia paistoöljyä",
@@ -326,7 +357,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "UNUSED_ZERO_CHO_METADATA",
+          "giContribution": null
         }
       ],
       "rank": 7
@@ -356,7 +389,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 26.465
         },
         {
           "ingredient": "porkkana",
@@ -367,7 +402,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.1008799999999999
         }
       ],
       "rank": 8
@@ -397,7 +434,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 26.465
         },
         {
           "ingredient": "kevätsipuli",
@@ -408,7 +447,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.18216
         }
       ],
       "rank": 9
@@ -438,7 +479,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 26.465
         },
         {
           "ingredient": "kevätsipuli",
@@ -449,7 +492,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.18216
         }
       ],
       "rank": 10
@@ -479,7 +524,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "cooked-couscous-unspecified",
           "recordPreparationKey": "cooked-couscous-unspecified",
-          "giMatchEvidence": "Couscous groats: Use only as a low-confidence couscous analogue; study mean has high variability and unspecified product/preparation.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Couscous groats: Use only as a low-confidence couscous analogue; study mean has high variability and unspecified product/preparation.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 31.482000000000003
         },
         {
           "ingredient": "kivettömiä kuivattuja taateleita",
@@ -490,7 +537,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "tamer-stage-as-sold",
           "recordPreparationKey": "tamer-stage-as-sold",
-          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement."
+          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.8547200000000001
         },
         {
           "ingredient": "manteli",
@@ -501,7 +550,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "nuts-category-mean",
           "recordPreparationKey": "nuts-category-mean",
-          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.14520000000000002
         },
         {
           "ingredient": "jogurtti",
@@ -512,7 +563,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy-products category mean used as a low-confidence estimate for plain yogurt; not a measurement of this product or recipe."
+          "giMatchEvidence": "Dairy-products category mean used as a low-confidence estimate for plain yogurt; not a measurement of this product or recipe.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.875
         }
       ],
       "rank": 11
@@ -542,7 +595,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Breads category mean: bread category mean; product and processing variation is substantial; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Breads category mean: bread category mean; product and processing variation is substantial; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 17.075519999999997
         },
         {
           "ingredient": "musta papu",
@@ -553,7 +608,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "legume-category",
           "recordPreparationKey": "legume-category",
-          "giMatchEvidence": "Legumes, category mean: Broad category mean; substantial uncertainty when applied to a specific cooked bean.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Legumes, category mean: Broad category mean; substantial uncertainty when applied to a specific cooked bean.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.46075
         },
         {
           "ingredient": "tomaatti",
@@ -564,7 +621,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "whole-raw",
           "recordPreparationKey": "whole-raw",
-          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.474375
         }
       ],
       "rank": 12
@@ -594,7 +653,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Pasta category mean: pasta category mean; product and cooking variation remains; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Pasta category mean: pasta category mean; product and cooking variation remains; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 17.264
         },
         {
           "ingredient": "pavunitu",
@@ -605,7 +666,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.287
         }
       ],
       "rank": 13
@@ -635,7 +698,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Breads category mean: bread category mean; product and processing variation is substantial; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Breads category mean: bread category mean; product and processing variation is substantial; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 17.93056
         },
         {
           "ingredient": "kurkkua",
@@ -646,7 +711,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.46199999999999997
         },
         {
           "ingredient": "kuorittua porkkanaa",
@@ -657,7 +724,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.1008799999999999
         }
       ],
       "rank": 14
@@ -687,7 +756,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Ingredient-category match: Fruits and fruit products category mean; fruit category mean; used only as a broad tamarind-paste analogue"
+          "giMatchEvidence": "Ingredient-category match: Fruits and fruit products category mean; fruit category mean; used only as a broad tamarind-paste analogue",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.103275
         },
         {
           "ingredient": "kreikkalaista jogurttia",
@@ -698,7 +769,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese."
+          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.634375
         },
         {
           "ingredient": "kurkkua",
@@ -709,7 +782,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence."
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.46199999999999997
         },
         {
           "ingredient": "pitaleipää",
@@ -720,7 +795,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Ingredient-category match: Breads category mean; bread category mean; product and processing variation is substantial"
+          "giMatchEvidence": "Ingredient-category match: Breads category mean; bread category mean; product and processing variation is substantial",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 16.22016
         },
         {
           "ingredient": "tomaattia",
@@ -731,7 +808,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "whole-raw",
           "recordPreparationKey": "whole-raw",
-          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce."
+          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.48125
         }
       ],
       "rank": 15
@@ -761,7 +840,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "legume-category",
-          "giMatchEvidence": "Low-confidence category proxy: Legumes, category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Legumes, category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 6.545
         },
         {
           "ingredient": "sipuli",
@@ -772,7 +853,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.8712000000000001
         },
         {
           "ingredient": "neutraalia paistoöljyä",
@@ -783,7 +866,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "UNUSED_ZERO_CHO_METADATA",
+          "giContribution": null
         }
       ],
       "rank": 16
@@ -813,7 +898,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "whole-raw",
           "recordPreparationKey": "whole-raw",
-          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce."
+          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.925
         },
         {
           "ingredient": "kurkkua",
@@ -824,7 +911,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence."
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.9239999999999999
         },
         {
           "ingredient": "punaista paprikaa",
@@ -835,7 +924,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence."
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.188
         },
         {
           "ingredient": "vaaleaa leipää",
@@ -846,7 +937,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Ingredient-category match: Breads category mean; bread category mean; product and processing variation is substantial"
+          "giMatchEvidence": "Ingredient-category match: Breads category mean; bread category mean; product and processing variation is substantial",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 4.26784
         }
       ],
       "rank": 17
@@ -876,7 +969,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "canned-drained",
           "recordPreparationKey": "canned-drained",
-          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record."
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 3.08
         },
         {
           "ingredient": "kurkku",
@@ -887,7 +982,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record."
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.8479999999999999
         }
       ],
       "rank": 18
@@ -917,7 +1014,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 2 dl converted using 100 g/dl."
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 2 dl converted using 100 g/dl.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.5075
         },
         {
           "ingredient": "turkkilaista jogurttia",
@@ -928,7 +1027,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #32201 plain Turkish/Greek yogurt, 10% fat; recipe-listed 150 g."
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #32201 plain Turkish/Greek yogurt, 10% fat; recipe-listed 150 g.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.564375
         },
         {
           "ingredient": "kukkakaalia",
@@ -939,7 +1040,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322 raw cauliflower; recipe-listed 600 g cauliflower rice."
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322 raw cauliflower; recipe-listed 600 g cauliflower rice.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.376
         }
       ],
       "rank": 19
@@ -969,7 +1072,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 3 dl across meatball mixture and sauce converted to 300 g."
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 3 dl across meatball mixture and sauce converted to 300 g.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.76125
         },
         {
           "ingredient": "kukkakaalia",
@@ -980,7 +1085,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322; recipe-listed 700 g cauliflower for mash."
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322; recipe-listed 700 g cauliflower for mash.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.772
         }
       ],
       "rank": 20
@@ -1010,7 +1117,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.772
         },
         {
           "ingredient": "kurkkua",
@@ -1021,7 +1130,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.46199999999999997
         },
         {
           "ingredient": "Healthy Boy -soijapaputahnaa",
@@ -1032,7 +1143,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "legume-category",
           "recordPreparationKey": "legume-category",
-          "giMatchEvidence": "Published Legumes, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Legumes, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.43349999999999994
         }
       ],
       "rank": 21
@@ -1062,7 +1175,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.925
         },
         {
           "ingredient": "tomaattimurskaa",
@@ -1073,7 +1188,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "whole-raw",
           "recordPreparationKey": "whole-raw",
-          "giMatchEvidence": "Published Whole raw tomato category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Whole raw tomato category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.5060000000000001
         },
         {
           "ingredient": "kuohukermaa",
@@ -1084,7 +1201,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.3383333333333334
         }
       ],
       "rank": 22
@@ -1114,7 +1233,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #389 medium courgette 350 g each, 2 = 700 g."
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #389 medium courgette 350 g each, 2 = 700 g.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.8875
         },
         {
           "ingredient": "kuohukermaa",
@@ -1125,7 +1246,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 2 dl converted using 100 g/dl."
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 2 dl converted using 100 g/dl.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.5075
         }
       ],
       "rank": 23
@@ -1155,7 +1278,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.772
         },
         {
           "ingredient": "kuohukermaa",
@@ -1166,7 +1291,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.5075
         }
       ],
       "rank": 24
@@ -1196,7 +1323,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "whole-raw",
           "recordPreparationKey": "whole-raw",
-          "giMatchEvidence": "Published Whole raw tomato category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Whole raw tomato category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.48125
         },
         {
           "ingredient": "vihreää paprikaa",
@@ -1207,7 +1336,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.4025
         },
         {
           "ingredient": "fetajuustoa",
@@ -1218,7 +1349,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.315
         }
       ],
       "rank": 25
@@ -1248,7 +1381,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.376
         },
         {
           "ingredient": "kuohukermaa",
@@ -1259,7 +1394,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.5075
         }
       ],
       "rank": 26
@@ -1289,7 +1426,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.376
         },
         {
           "ingredient": "kuohukermaa",
@@ -1300,7 +1439,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.5075
         }
       ],
       "rank": 27
@@ -1330,7 +1471,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.06369
         },
         {
           "ingredient": "kukkakaalia",
@@ -1341,7 +1484,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.772
         },
         {
           "ingredient": "kuohukermaa",
@@ -1352,7 +1497,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.25375
         }
       ],
       "rank": 28
@@ -1382,7 +1529,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: rice-category-mean-gi-67. Fineli #182 rice flour; 1 tbsp converted to 8 g using the food-specific measure."
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: rice-category-mean-gi-67. Fineli #182 rice flour; 1 tbsp converted to 8 g using the food-specific measure.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.06262
         },
         {
           "ingredient": "valkokaalia",
@@ -1393,7 +1542,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #320 white cabbage; recipe-listed 250 g."
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #320 white cabbage; recipe-listed 250 g.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.0625
         }
       ],
       "rank": 29
@@ -1423,7 +1574,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #359 Chinese cabbage used for the recipe option; recipe-listed 300 g."
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #359 Chinese cabbage used for the recipe option; recipe-listed 300 g.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.7969500000000003
         },
         {
           "ingredient": "kukkakaaliriisiä",
@@ -1434,7 +1587,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322 raw cauliflower; recipe-listed 500 g."
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322 raw cauliflower; recipe-listed 500 g.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.98
         }
       ],
       "rank": 30
@@ -1464,7 +1619,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.046
         },
         {
           "ingredient": "kreikkalaista jogurttia",
@@ -1475,7 +1632,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.38285624999999995
         }
       ],
       "rank": 31
@@ -1505,7 +1664,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.376
         },
         {
           "ingredient": "suolatonta soijakastiketta",
@@ -1516,7 +1677,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "legume-category",
           "recordPreparationKey": "legume-category",
-          "giMatchEvidence": "Published Legumes, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Legumes, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.12112500000000001
         }
       ],
       "rank": 32
@@ -1546,7 +1709,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.93875
         },
         {
           "ingredient": "kurkkua",
@@ -1557,7 +1722,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.46199999999999997
         }
       ],
       "rank": 33
@@ -1587,7 +1754,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.7
         },
         {
           "ingredient": "kuohukermaa",
@@ -1598,7 +1767,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.5075
         },
         {
           "ingredient": "pinaattia",
@@ -1609,7 +1780,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.0495
         }
       ],
       "rank": 34
@@ -1639,7 +1812,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "whole-raw",
           "recordPreparationKey": "whole-raw",
-          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.474375
         },
         {
           "ingredient": "pinaatti",
@@ -1650,7 +1825,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence.",
+          "bindingRole": "UNUSED_ZERO_CHO_METADATA",
+          "giContribution": null
         },
         {
           "ingredient": "feta",
@@ -1661,7 +1838,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.315
         }
       ],
       "rank": 35
@@ -1691,7 +1870,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.4375
         },
         {
           "ingredient": "kirsikkatomaatteja",
@@ -1702,7 +1883,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "whole-raw",
           "recordPreparationKey": "whole-raw",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.3795
         }
       ],
       "rank": 36
@@ -1732,7 +1915,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.4375
         },
         {
           "ingredient": "kirsikkatomaatteja",
@@ -1743,7 +1928,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "whole-raw",
           "recordPreparationKey": "whole-raw",
-          "giMatchEvidence": "Published Whole raw tomato proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+          "giMatchEvidence": "Published Whole raw tomato proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.1925
         },
         {
           "ingredient": "kurkkua",
@@ -1754,7 +1941,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.23099999999999998
         }
       ],
       "rank": 37
@@ -1784,7 +1973,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "legume-category",
           "recordPreparationKey": "legume-category",
-          "giMatchEvidence": "Legumes, category mean: Broad category mean; substantial uncertainty when applied to a specific cooked bean.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Legumes, category mean: Broad category mean; substantial uncertainty when applied to a specific cooked bean.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.6664
         }
       ],
       "rank": 38
@@ -1814,7 +2005,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.19262
         }
       ],
       "rank": 39
@@ -1844,7 +2037,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "whole-raw",
           "recordPreparationKey": "whole-raw",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.2371875
         }
       ],
       "rank": 40
@@ -1874,7 +2069,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "International Tables dairy-category mean (35); not specific to cream cheese."
+          "giMatchEvidence": "International Tables dairy-category mean (35); not specific to cream cheese.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.35
         }
       ],
       "rank": 41
@@ -1904,7 +2101,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": null,
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.22769999999999999
         }
       ],
       "rank": 42
@@ -1933,7 +2132,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "legume-category",
-          "giMatchEvidence": "Low-confidence proxy: Legumes, category mean; source category or closest published analogue, not a measured recipe GI."
+          "giMatchEvidence": "Low-confidence proxy: Legumes, category mean; source category or closest published analogue, not a measured recipe GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 10.6845
         },
         {
           "ingredient": "riisi",
@@ -1944,7 +2145,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Low-confidence proxy: Rice category mean; source category or closest published analogue, not a measured recipe GI."
+          "giMatchEvidence": "Low-confidence proxy: Rice category mean; source category or closest published analogue, not a measured recipe GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 26.465
         }
       ],
       "rank": 43
@@ -1973,7 +2176,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 26.465
         }
       ],
       "rank": 44
@@ -2002,7 +2207,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 26.465
         }
       ],
       "rank": 45
@@ -2031,7 +2238,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 26.465
         }
       ],
       "rank": 46
@@ -2060,7 +2269,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 26.465
         }
       ],
       "rank": 47
@@ -2089,7 +2300,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 26.465
         }
       ],
       "rank": 48
@@ -2118,7 +2331,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "cooked-millet-groats",
           "recordPreparationKey": "cooked-millet-groats",
-          "giMatchEvidence": "Millet groats: Low-confidence cooked-millet analogue; source reports a wide GI range.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Millet groats: Low-confidence cooked-millet analogue; source reports a wide GI range.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 19.3328
         },
         {
           "ingredient": "kivettömiä kuivattuja taateleita",
@@ -2129,7 +2344,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "tamer-stage-as-sold",
           "recordPreparationKey": "tamer-stage-as-sold",
-          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement."
+          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.8547200000000001
         }
       ],
       "rank": 49
@@ -2158,7 +2375,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Published GI analogue/category record fruit-category-mean-gi-51; source and limitations are listed centrally."
+          "giMatchEvidence": "Published GI analogue/category record fruit-category-mean-gi-51; source and limitations are listed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 4.08
         },
         {
           "ingredient": "sokeria",
@@ -2169,7 +2388,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally."
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 7.725600000000001
         },
         {
           "ingredient": "perunajauhoja",
@@ -2180,7 +2401,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Published GI analogue/category record potatoes-category-mean-gi-71; source and limitations are listed centrally."
+          "giMatchEvidence": "Published GI analogue/category record potatoes-category-mean-gi-71; source and limitations are listed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.7519599999999995
         },
         {
           "ingredient": "kuohukermaa",
@@ -2191,7 +2414,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally."
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.42291666666666666
         },
         {
           "ingredient": "täysmaitoa",
@@ -2202,7 +2427,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally."
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.7
         },
         {
           "ingredient": "sokeria",
@@ -2213,7 +2440,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally."
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 3.8628000000000005
         },
         {
           "ingredient": "vaniljasokeria",
@@ -2224,7 +2453,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally."
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.38628
         }
       ],
       "rank": 50
@@ -2253,7 +2484,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "legume-category",
-          "giMatchEvidence": "Low-confidence category proxy: Legumes, category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Legumes, category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.9920000000000004
         },
         {
           "ingredient": "pita",
@@ -2264,7 +2497,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Low-confidence category proxy: Breads category mean. Not a recipe or exact ingredient GI."
+          "giMatchEvidence": "Low-confidence category proxy: Breads category mean. Not a recipe or exact ingredient GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 14.7456
         },
         {
           "ingredient": "jogurtti",
@@ -2275,7 +2510,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Low-confidence category proxy: unflavoured dairy category mean from International Tables 2021 Table 1; yogurt-specific GI is not measured by this match."
+          "giMatchEvidence": "Low-confidence category proxy: unflavoured dairy category mean from International Tables 2021 Table 1; yogurt-specific GI is not measured by this match.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.595
         }
       ],
       "rank": 51
@@ -2304,7 +2541,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "legume-category",
-          "giMatchEvidence": "Low-confidence proxy: Legumes, category mean; source category or closest published analogue, not a measured recipe GI."
+          "giMatchEvidence": "Low-confidence proxy: Legumes, category mean; source category or closest published analogue, not a measured recipe GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.46075
         },
         {
           "ingredient": "maissitortilla",
@@ -2315,7 +2554,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "commercial-corn-tortilla",
           "recordPreparationKey": "commercial-corn-tortilla",
-          "giMatchEvidence": "Published corn tortilla human test; the study product is a commercial corn tortilla, matched to the recipe-listed gluten-free corn tortilla with low confidence due to the single small study and bread-to-glucose scale conversion."
+          "giMatchEvidence": "Published corn tortilla human test; the study product is a commercial corn tortilla, matched to the recipe-listed gluten-free corn tortilla with low confidence due to the single small study and bread-to-glucose scale conversion.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 13.58339
         }
       ],
       "rank": 52
@@ -2344,7 +2585,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "legume-category",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: legumes-category-mean-gi-34. Fineli #399 dried green/brown lentils used as a legume-composition analogue for urad dal; recipe-listed 250 g. Low confidence."
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: legumes-category-mean-gi-34. Fineli #399 dried green/brown lentils used as a legume-composition analogue for urad dal; recipe-listed 250 g. Low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 9.71125
         },
         {
           "ingredient": "riisijauhoja",
@@ -2355,7 +2598,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: rice-category-mean-gi-67. Fineli #182; one tablespoon converted to 8 g using the food-specific measure."
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: rice-category-mean-gi-67. Fineli #182; one tablespoon converted to 8 g using the food-specific measure.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.06262
         }
       ],
       "rank": 53
@@ -2384,7 +2629,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "whole-raw",
           "recordPreparationKey": "whole-raw",
-          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.474375
         },
         {
           "ingredient": "maissitortilla",
@@ -2395,7 +2642,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "commercial-corn-tortilla",
           "recordPreparationKey": "commercial-corn-tortilla",
-          "giMatchEvidence": "Corn tortilla: Single published regional study; conversion to glucose scale uses the 0.71 factor described in International Tables 2021. Low confidence.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Corn tortilla: Single published regional study; conversion to glucose scale uses the 0.71 factor described in International Tables 2021. Low confidence.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 13.58339
         }
       ],
       "rank": 54
@@ -2424,7 +2673,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Breads category mean: bread category mean; product and processing variation is substantial; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Breads category mean: bread category mean; product and processing variation is substantial; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 14.7456
         },
         {
           "ingredient": "jogurtti",
@@ -2435,7 +2686,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.875
         }
       ],
       "rank": 55
@@ -2464,7 +2717,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally."
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.6766666666666667
         },
         {
           "ingredient": "täysmaitoa",
@@ -2475,7 +2730,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally."
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.27999999999999997
         },
         {
           "ingredient": "sokeria",
@@ -2486,7 +2743,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally."
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 6.7599
         },
         {
           "ingredient": "vaniljasokeria",
@@ -2497,7 +2756,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally."
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.38628
         },
         {
           "ingredient": "pakastemarjoja",
@@ -2508,7 +2769,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Published GI analogue/category record fruit-category-mean-gi-51; source and limitations are listed centrally."
+          "giMatchEvidence": "Published GI analogue/category record fruit-category-mean-gi-51; source and limitations are listed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.04
         },
         {
           "ingredient": "sokeria",
@@ -2519,7 +2782,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally."
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 2.4142500000000005
         }
       ],
       "rank": 56
@@ -2548,7 +2813,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "raw",
           "recordPreparationKey": "raw",
-          "giMatchEvidence": "Published raw-mango mean GI 51 from three studies (International Tables 2002, Table 2, item 412); varieties and ripeness differ, so this is a low-confidence generic raw-mango analogue, not a recipe or meal measurement."
+          "giMatchEvidence": "Published raw-mango mean GI 51 from three studies (International Tables 2002, Table 2, item 412); varieties and ripeness differ, so this is a low-confidence generic raw-mango analogue, not a recipe or meal measurement.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 6.426
         },
         {
           "ingredient": "jogurtti",
@@ -2559,7 +2826,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.875
         }
       ],
       "rank": 57
@@ -2588,7 +2857,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.510475
         },
         {
           "ingredient": "saksanpähkinä",
@@ -2599,7 +2870,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "nuts-category-mean",
           "recordPreparationKey": "nuts-category-mean",
-          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.10559999999999999
         },
         {
           "ingredient": "hunaja",
@@ -2610,7 +2883,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Honey, mean of 11 types: Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Honey, mean of 11 types: Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 4.444
         },
         {
           "ingredient": "tuoretta viikunaa",
@@ -2621,7 +2896,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.0327499999999998
         }
       ],
       "rank": 58
@@ -2650,7 +2927,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": null,
           "recordPreparationKey": "legume-category",
-          "giMatchEvidence": "Low-confidence proxy: Legumes, category mean; source category or closest published analogue, not a measured recipe GI."
+          "giMatchEvidence": "Low-confidence proxy: Legumes, category mean; source category or closest published analogue, not a measured recipe GI.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 3.60315
         }
       ],
       "rank": 59
@@ -2679,7 +2958,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.4725
         },
         {
           "ingredient": "kivettömiä persikkaviipaleita",
@@ -2690,7 +2971,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 3.06
         },
         {
           "ingredient": "pistaasi",
@@ -2701,7 +2984,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "nuts-category-mean",
           "recordPreparationKey": "nuts-category-mean",
-          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.5511
         }
       ],
       "rank": 60
@@ -2730,7 +3015,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Published Potatoes and potato products category mean category/analogue; match limitations disclosed centrally."
+          "giMatchEvidence": "Published Potatoes and potato products category mean category/analogue; match limitations disclosed centrally.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 3.3015000000000003
         }
       ],
       "rank": 61
@@ -2759,7 +3046,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "nuts-category-mean",
           "recordPreparationKey": "nuts-category-mean",
-          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.27225
         },
         {
           "ingredient": "tuorejuustoa",
@@ -2770,7 +3059,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.188125
         },
         {
           "ingredient": "luumuhilloa",
@@ -2781,7 +3072,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Sugars and syrups category mean: sugars and syrups category mean; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Sugars and syrups category mean: sugars and syrups category mean; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 1.3359140000000003
         }
       ],
       "rank": 62
@@ -2810,7 +3103,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.875
         }
       ],
       "rank": 63
@@ -2839,7 +3134,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.5075
         },
         {
           "ingredient": "tuorejuustoa",
@@ -2850,7 +3147,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.35
         }
       ],
       "rank": 64
@@ -2879,7 +3178,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "whole-raw",
           "recordPreparationKey": "whole-raw",
-          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.474375
         }
       ],
       "rank": 65
@@ -2908,7 +3209,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.25375
         },
         {
           "ingredient": "mansikoita",
@@ -2919,7 +3222,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Published Fruits and fruit products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+          "giMatchEvidence": "Published Fruits and fruit products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.5355000000000001
         }
       ],
       "rank": 66
@@ -2948,7 +3253,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.4666666666666666
         }
       ],
       "rank": 67
@@ -2977,7 +3284,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.1575
         },
         {
           "ingredient": "kirsikkatomaatteja",
@@ -2988,7 +3297,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "whole-raw",
           "recordPreparationKey": "whole-raw",
-          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.1518
         }
       ],
       "rank": 68
@@ -3017,7 +3328,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.23099999999999998
         },
         {
           "ingredient": "rucolaa",
@@ -3028,7 +3341,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.037290000000000004
         },
         {
           "ingredient": "kreikkalaista jogurttia",
@@ -3039,7 +3354,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.126
         },
         {
           "ingredient": "sitruunamehua",
@@ -3050,7 +3367,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "category-mean",
           "recordPreparationKey": "category-mean",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.0102
         }
       ],
       "rank": 69
@@ -3079,7 +3398,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.11384999999999999
         },
         {
           "ingredient": "kurkkua",
@@ -3090,7 +3411,9 @@
           "declaredOrKeyPreparationMismatch": true,
           "inputPreparationKey": "vegetable-category",
           "recordPreparationKey": "vegetable-category",
-          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.3465
         }
       ],
       "rank": 70
@@ -3173,7 +3496,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "unflavoured-dairy",
           "recordPreparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.08458333333333334
         }
       ],
       "rank": 74
@@ -3201,7 +3526,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "canned-drained",
           "recordPreparationKey": "canned-drained",
-          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record."
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 6.16
         }
       ],
       "rank": 75
@@ -3229,7 +3556,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "whole-raw",
           "recordPreparationKey": "whole-raw",
-          "giMatchEvidence": "Low-confidence cultivar analogue: International Tables 2021 reports GI 22 for whole raw tomatoes; the tested cultivar is not identified as cherry tomato. Recipe tomatoes are served raw."
+          "giMatchEvidence": "Low-confidence cultivar analogue: International Tables 2021 reports GI 22 for whole raw tomatoes; the tested cultivar is not identified as cherry tomato. Recipe tomatoes are served raw.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.28875
         }
       ],
       "rank": 76
@@ -3257,7 +3586,9 @@
           "declaredOrKeyPreparationMismatch": false,
           "inputPreparationKey": "plain-unsweetened-yogurt",
           "recordPreparationKey": "plain-unsweetened-yogurt",
-          "giMatchEvidence": "Low-confidence category mean for plain yogurt (GI 27 ± 11, 43 database entries); this is not a brand-specific measurement."
+          "giMatchEvidence": "Low-confidence category mean for plain yogurt (GI 27 ± 11, 43 database entries); this is not a brand-specific measurement.",
+          "bindingRole": "NUMERICALLY_USED",
+          "giContribution": 0.22949999999999998
         }
       ],
       "rank": 77

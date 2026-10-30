@@ -3,7 +3,7 @@
 No network, generated-file writes, active data mutations or publication decisions.
 Python standard library; Decimal arithmetic is independent of the TS model.
 """
-import argparse, collections, hashlib, json, pathlib, re
+import argparse, collections, hashlib, json, pathlib, re, subprocess
 from decimal import Decimal, ROUND_HALF_UP
 
 def read(path):
@@ -51,14 +51,14 @@ def screen_risks(root):
                 uncertain += cho
                 if cho >= 5 or (cho >= 1 and total and cho / total >= .25): flags.add("MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH")
             if category or analog or prep_key_mismatch or declared_mismatch or uncertain_match:
-                evidence.append({"ingredient": i["name"], "availableCarbohydratePerServingG": rounded(cho), "giRecordId": i.get("giRecordId"), "matchKind": i.get("matchKind"), "categoryMean": category, "declaredOrKeyPreparationMismatch": prep_key_mismatch or declared_mismatch, "inputPreparationKey": inp.get("preparationKey"), "recordPreparationKey": g.get("preparationKey"), "giMatchEvidence": inp.get("giMatchEvidence")})
+                evidence.append({"ingredient": i["name"], "availableCarbohydratePerServingG": rounded(cho), "giRecordId": i.get("giRecordId"), "matchKind": i.get("matchKind"), "categoryMean": category, "declaredOrKeyPreparationMismatch": prep_key_mismatch or declared_mismatch, "inputPreparationKey": inp.get("preparationKey"), "recordPreparationKey": g.get("preparationKey"), "giMatchEvidence": inp.get("giMatchEvidence"), "bindingRole": "NUMERICALLY_USED" if i.get("giContribution") is not None else "UNUSED_ZERO_CHO_METADATA" if cho == 0 else "BOUND_NOT_USED", "giContribution": i.get("giContribution")})
         weights = {"FOOD_CATEGORY_MEAN": 8, "PREPARATION_MATCH_FLAG": 8, "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH": 10, "OMISSION_AT_LEAST_75_PERCENT_OF_2G_CAP": 5, "AT_LEAST_HALF_KNOWN_CHO_OMITTED": 4, "DISPLAYED_ZERO_WITH_NONZERO_OMISSIONS": 4, "LOW_CONFIDENCE": 2}
         score = sum(weights[f] for f in flags)
         rows.append({"recipeId": r["recipeId"], "priorityScore": score, "flags": sorted(flags), "currentGk": r["glycemicLoadPerServing"], "confidence": r["confidence"], "knownAvailableCarbohydratePerServingG": rounded(total), "omittedCarbohydrateIncludingBoundsPerServingG": rounded(omitted), "omittedFractionOfKnownCarbohydrate": round(omitted / total, 4) if total else None, "uncertainMatchedCarbohydratePerServingG": rounded(uncertain), "ingredientFlags": evidence})
     rows.sort(key=lambda r: (-r["priorityScore"], -r["uncertainMatchedCarbohydratePerServingG"], -r["omittedCarbohydrateIncludingBoundsPerServingG"], r["recipeId"]))
     for rank, row in enumerate(rows, 1): row["rank"] = rank
     assert len(rows) == 83 and len({r["recipeId"] for r in rows}) == 83
-    return {"schemaVersion": 1, "scope": "Automatic-only heuristic screen of existing83; no new deep recipe review or scientific approval", "limitations": "Regex/key/metadata flags may miss actual cooking mismatches or flag a disclosed analogue. No flag means no detected signal, not validated evidence. Omission fractions use known CHO only; bounds can overstate them. Scores are editorial priorities, not clinical risk probabilities.", "thresholds": {"largeOmissionG": 1.5, "largeOmissionShare": .5, "majorIngredientG": 5, "majorIngredientShareWithAtLeast1g": .25}, "flagCounts": dict(sorted(collections.Counter(f for r in rows for f in r["flags"]).items())), "recipes": rows}
+    return {"schemaVersion": 1, "scope": "Automatic-only heuristic screen of existing83;R3.1 distinguishes storedGIid from numerical use;no83scientific approval", "limitations": "Regex/key/metadata flags may miss actual cooking mismatches or flag a disclosed analogue. No flag means no detected signal, not validated evidence. Omission fractions use known CHO only; bounds can overstate them. Scores are editorial priorities, not clinical risk probabilities.", "bindingInterpretation": "A storedGIid on sourceCHO0 is unused metadata,not a numericGI contribution. Targeted family findings are separate in gk-r3-1-targeted-screen.json.", "thresholds": {"largeOmissionG": 1.5, "largeOmissionShare": .5, "majorIngredientG": 5, "majorIngredientShareWithAtLeast1g": .25}, "flagCounts": dict(sorted(collections.Counter(f for r in rows for f in r["flags"]).items())), "recipes": rows}
 
 def verify(root):
     folder = root / "docs/nutrition"
@@ -70,6 +70,11 @@ def verify(root):
     pilot = read(root / "tmp/nutrition/glycemic-load-pilot.json")
     assert pilot["summary"] == manifest["publicGkSummary"]
     assert hashlib.sha256(json.dumps(pilot["results"], ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest() == manifest["publicGkResultsSha256"]
+    for prefix, expected_tree in manifest.get("protectedContentTrees", {}).items():
+        names = subprocess.check_output(["git", "-C", str(root), "ls-files", "-z", "--", prefix]).decode().split(chr(0))
+        rows = [{"path": n, "sha256": sha(root / n)} for n in names if n]
+        actual_tree = {"files": len(rows), "sha256": hashlib.sha256(json.dumps(rows, sort_keys=True, separators=(",", ":")).encode()).hexdigest()}
+        assert actual_tree == expected_tree, ("protected recipe/translation/calculation tree changed", prefix)
     fineli = {r["source_id"]: r for r in read(folder / "fineli-release-20-reference.json")["foods"]}
     afcd = {r["source_id"]: r for r in read(folder / "afcd-release-3-reference.json")["foods"]}
     audit = {r["recipe_id"]: r for r in read(root / "tmp/nutrition/audit.json")["inventory"]}
@@ -167,13 +172,33 @@ def verify(root):
     studies = read(folder / "gk-r3-gi-studies.json")
     assert len(studies["studies"]) == 8 and all(not s["applicable"] for s in studies["studies"])
     assert all(id in {r["recipeId"] for r in recipes} for s in studies["studies"] for id in s["recipeIds"])
+    fixup = read(folder / "gk-r3-1-review.json")
+    for file in fixup["r2Compatibility"]["nutritionAndCompositionFilesVerifiedIdentical"]:
+        original = subprocess.check_output(["git", "-C", str(root), "show", manifest["r2Head"] + ":" + file])
+        assert original.replace(b"\r\n", b"\n") == (root / file).read_bytes().replace(b"\r\n", b"\n"), ("R2 shared source/calculation mismatch", file)
+    assert fixup["currentCounts"] == register["counts"]
+    for id in manifest["reviewFixup"]["requiresRecipeTextCorrectionForB"]:
+        r = next(r for r in recipes if r["recipeId"] == id)
+        assert r["decision"] == "ESTIMATED_TOTAL_WITH_EVIDENCE"
+        assert r["scenarioScope"]["requiresRecipeCorrection"] and not r["scenarioScope"]["currentRecipeTextResolved"]
+        assert not r["scenarioScope"]["publicationReady"] and not r["scenarioScope"]["reviewIsApproval"]
+    for item in fixup["densityComparisons"]:
+        r = next(r for r in recipes if r["recipeId"] == item["recipeId"])
+        coconut = next(i for i in r["ingredients"] if "kookosmaito" in i["recipeIngredient"]["item"])
+        for option in item["densityOnlyComparisons"]:
+            mass = Decimal(str(item["volumeMl"])) * Decimal(str(option["gramsPerMl"]))
+            assert mass == Decimal(str(option["batchMassG"]))
+            for key in keys:
+                change = (mass - Decimal(str(coconut["edibleMassG"]))) * Decimal(str(coconut["per100g"][key])) / 100 / Decimal(str(r["servings"]))
+                assert change == Decimal(str(option["deltaPerServingUnrounded"][key]))
+                assert rounded(Decimal(str(item["originalUnroundedPerServing"][key])) + change) == option["scenarioPerServing"][key]
     assert screen_risks(root) == read(folder / "gk-r3-existing-83-risk-screen.json")
     # Omission classification is a substantive invariant, not a snapshot waiver.
     probe = next(r for r in recipes if r["recipeId"] == "tomaatti-kananmuna-wokki")
     rice = next(i for i in probe["ingredients"] if i.get("composition", {}).get("id") == "1370")
     assert rice["edibleMassG"] == rice["recipeIngredient"]["amount"] == 450
     assert all(r["wholeAvailableCarbohydratePerServingG"] is None for r in recipes if r["decision"] in ("PARTIAL_ONLY", "INSUFFICIENT_EVIDENCE"))
-    print(json.dumps({"result": "PASS", "recipes": 24, "candidateRecipes": 22, "decisions": counts, "riskScreenRecipes": 83, "sourcePins": len(manifest["unchangedSourceFiles"]), "independentApproval": False}, indent=2))
+    print(json.dumps({"result": "PASS", "recipes": 24, "candidateRecipes": 22, "decisions": counts, "riskScreenRecipes": 83, "sourcePins": len(manifest["unchangedSourceFiles"]), "independentApproval": False, "unchangedGkResults": len(pilot["results"]), "protectedTrees": {p: t["files"] for p, t in manifest["protectedContentTrees"].items()}}, indent=2))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

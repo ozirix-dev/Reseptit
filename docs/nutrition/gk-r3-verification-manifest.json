@@ -92,5 +92,30 @@
     "nutritionTests": 20,
     "glycemicTests": 86,
     "independentApproval": false
+  },
+  "reviewFixup": {
+    "reviewId": 5711068770,
+    "reviewedR3Head": "1d7dc77f15de34e92607b979484504b9834e162c",
+    "decision": "CONDITIONAL_GO_RESEARCH_ONLY",
+    "requiresRecipeTextCorrectionForB": [
+      "indonesialainen-serabi-kookospannukakku",
+      "thai-kookosriisi-mangolla"
+    ],
+    "publicationReady": 0,
+    "densityComparisonFile": "gk-r3-1-review.json"
+  },
+  "protectedContentTrees": {
+    "reseptit": {
+      "files": 369,
+      "sha256": "551a70f7d19a859b58851ad07e734576519909848242e9dd575e7b48ac6e4d0d"
+    },
+    "kaannokset": {
+      "files": 361,
+      "sha256": "9108eb8b060e9c53937ad15aab212ee6b421c5a35f737cd3b424a8fe6e3b1587"
+    },
+    "docs/nutrition/calculations": {
+      "files": 180,
+      "sha256": "e9d68eb5fb7414152905c383128ea1f7f142ca33056bcb7811d7861e0fa73002"
+    }
   }
 }
