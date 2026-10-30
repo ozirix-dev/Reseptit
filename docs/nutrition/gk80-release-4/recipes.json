@@ -1,0 +1,1772 @@
+{
+  "recipes": [
+    {
+      "recipeId": "munakokkeli",
+      "title": "Munakokkeli",
+      "proposedTitle": "Munakokkeli – punnittu versio",
+      "sourcePath": "reseptit/aamupalat/munakokkeli.md",
+      "sourceSha256": "73b70be874882bb17388243182623522ee3411596115ec0443f9fe8bc87e2420",
+      "servings": 2,
+      "evidenceVersion": 1,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "scenarios": [
+        {
+          "id": "q09-complete-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kananmunaa kuorettomana",
+              "state": "KANANMUNA, KUORETON",
+              "massG": 220,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F858-q09",
+                "evidenceHash": "9c6ef86f8643575f4f6dfeccdb7a660f26c6f4ef803b6c59909ef3268639765e"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "7bd58b861dab7a23e95f4fa6f6003159b8cd5d9f6e0de2102311b641685af6bc",
+                "rationale": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 1,
+              "name": "38% kuohukermaa",
+              "state": "KERMA, KUOHUKERMA, RASVAA 38 %",
+              "massG": 30,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.9,
+                "protein": 1.88,
+                "fat": 38.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F631-q09",
+                "evidenceHash": "201adf9d48e5db8968ab6e895e00fad11efb9cc4fbbaffd85b536af442c25219"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "155f2de5585062b776f1ceb76ab5a338fc3c76e045fa0da7798d852ca71deb37",
+                "rationale": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 2,
+              "name": "voita",
+              "state": "VOI",
+              "massG": 14,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.8,
+                "protein": 1.19,
+                "fat": 81.3,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F500-q09",
+                "evidenceHash": "e025f784bb30746ce34223392f9f49107e39788f4db8c83371d5d5eb11b1404c"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "155f2de5585062b776f1ceb76ab5a338fc3c76e045fa0da7798d852ca71deb37",
+                "rationale": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 3,
+              "name": "tuoretta ruohosipulia",
+              "state": "RUOHOSIPULI",
+              "massG": 7,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.73,
+                "protein": 2.2,
+                "fat": 0.92,
+                "fibre": 2.1
+              },
+              "composition": {
+                "sourceId": "F392-q09",
+                "evidenceHash": "21edade8e6829cb1526806db8c888ccbc049642e4e1925e582fdab5165e2b948"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "45f4c80ac2ac10c8875df006e13d2d8d49e8145a588ec3eafbd67c757308e77a",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 4,
+              "name": "jauhettua mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-q09",
+                "evidenceHash": "2c31b16a4a01ab37a84e0990b3245e58840b92703bda5fd1413f855ff607b84c"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "a1165f8864e4127e36b4112a001fd17852f928ac9a107495f500c1d862b4295a",
+                "rationale": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 5,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has no four macros"
+            }
+          ]
+        }
+      ],
+      "proposedPreparation": [
+        "Punnitse yllä luetellut syötävät raaka-aineet grammoina, kananmunat ilman kuorta. Käytä vain lueteltu rasva ja mausteet.\n\n1. Riko munat kulhoon, lisää kerma, suola ja pippuri. Sekoita haarukalla juuri tasaiseksi.\n2. Sulata voi pannulla miedolla lämmöllä ja kaada munaseos pannulle.\n3. Vedä hyytyvää munaa reunoilta keskelle lastalla. Nosta pannu pois levyltä, kun munakokkeli on vielä hieman kiiltävää.\n4. Viimeistele ruohosipulilla ja tarjoa heti.\n\nSyö kaikki luetellut ainekset ja kastike/pannuneste ilmoitettuna annosmääränä. Raakojen ainesten koostumus toimii kypsän ruoan ravintoarvoproxyna; mittaamatonta kypsennyshävikkiä ei vähennetä."
+      ],
+      "blockers": [],
+      "publicationConditions": [
+        "Owner method/content approval",
+        "Exact weighed preparation and all four publication macros",
+        "Composition proxies are not exact product/cultivar measurements"
+      ],
+      "proposedVersionHash": "182608de31ee6865b82d668a5f4b24eb1d0dd39ecff40d5d960bf56161d24d14",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "releaseInputVersion": 4
+    },
+    {
+      "recipeId": "munakasmuffinit",
+      "title": "Munakasmuffinit",
+      "proposedTitle": "Munakasmuffinit – punnittu versio",
+      "sourcePath": "reseptit/aamupalat/munakasmuffinit.md",
+      "sourceSha256": "8fb9bd93679e1b4ddbb8604f16eba144a1d849c6d8ff7d54120a9ebcf176c73f",
+      "servings": 3,
+      "evidenceVersion": 1,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "scenarios": [
+        {
+          "id": "q09-complete-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kananmunaa kuorettomana",
+              "state": "KANANMUNA, KUORETON",
+              "massG": 275,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F858-q09",
+                "evidenceHash": "9c6ef86f8643575f4f6dfeccdb7a660f26c6f4ef803b6c59909ef3268639765e"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "7bd58b861dab7a23e95f4fa6f6003159b8cd5d9f6e0de2102311b641685af6bc",
+                "rationale": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 1,
+              "name": "pekonia",
+              "state": "PEKONI, 32 % RASVAA",
+              "massG": 60,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 14.2,
+                "fat": 32.394,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F707-q09",
+                "evidenceHash": "1aecac80b5d880fd4d581a71c5148b50b1be54882485e5747e8bfeeda01d39a5"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit ZERO_CHO identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+            },
+            {
+              "index": 2,
+              "name": "pinaattia",
+              "state": "PINAATTI",
+              "massG": 40,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.25,
+                "protein": 2.1,
+                "fat": 0.56,
+                "fibre": 1.3
+              },
+              "composition": {
+                "sourceId": "F33456-q09",
+                "evidenceHash": "c34b11cdf346cfb15408aea60c7ac297e23d9aecf45297dd314604bd990d9252"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "45f4c80ac2ac10c8875df006e13d2d8d49e8145a588ec3eafbd67c757308e77a",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 3,
+              "name": "34% cheddarjuustoa",
+              "state": "JUUSTO, CHEDDAR, RASVAA 34 %",
+              "massG": 50,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.1,
+                "protein": 25.63,
+                "fat": 34.4,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F698-q09",
+                "evidenceHash": "17e2e3f57e12b3500050b7a618029b085292e5bc0a5488809a50b914e1d43c4c"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "155f2de5585062b776f1ceb76ab5a338fc3c76e045fa0da7798d852ca71deb37",
+                "rationale": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 4,
+              "name": "38% kuohukermaa",
+              "state": "KERMA, KUOHUKERMA, RASVAA 38 %",
+              "massG": 30,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.9,
+                "protein": 1.88,
+                "fat": 38.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F631-q09",
+                "evidenceHash": "201adf9d48e5db8968ab6e895e00fad11efb9cc4fbbaffd85b536af442c25219"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "155f2de5585062b776f1ceb76ab5a338fc3c76e045fa0da7798d852ca71deb37",
+                "rationale": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 5,
+              "name": "jauhettua mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-q09",
+                "evidenceHash": "2c31b16a4a01ab37a84e0990b3245e58840b92703bda5fd1413f855ff607b84c"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "a1165f8864e4127e36b4112a001fd17852f928ac9a107495f500c1d862b4295a",
+                "rationale": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 6,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has no four macros"
+            }
+          ]
+        }
+      ],
+      "proposedPreparation": [
+        "Punnitse yllä luetellut syötävät raaka-aineet grammoina, kananmunat ilman kuorta. Käytä vain lueteltu rasva ja mausteet.\n\n1. Lämmitä uuni 190 asteeseen. Voitele kuusi muffinivuokaa.\n2. Paista pekoni pannulla rapeaksi ja nosta talouspaperille. Hienonna pinaatti ja pekoni.\n3. Vatkaa munat ja kerma. Sekoita mukaan pinaatti, murennettu pekoni, juusto ja pippuri.\n4. Jaa seos vuokiin ja paista 16–20 minuuttia, kunnes keskusta on hyytynyt.\n5. Anna muffinien levätä viisi minuuttia ennen tarjoilua.\n\nSyö kaikki luetellut ainekset ja kastike/pannuneste ilmoitettuna annosmääränä. Raakojen ainesten koostumus toimii kypsän ruoan ravintoarvoproxyna; mittaamatonta kypsennyshävikkiä ei vähennetä."
+      ],
+      "blockers": [],
+      "publicationConditions": [
+        "Owner method/content approval",
+        "Exact weighed preparation and all four publication macros",
+        "Composition proxies are not exact product/cultivar measurements"
+      ],
+      "proposedVersionHash": "a5401195815776e9c1b0840012e3228f4ef04d0cb4746a52bb8169d4ff3aa5ef",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "releaseInputVersion": 4
+    },
+    {
+      "recipeId": "uunimuna-avokadot",
+      "title": "Uunimuna-avokadot",
+      "proposedTitle": "Uunimuna-avokadot – punnittu versio",
+      "sourcePath": "reseptit/aamupalat/uunimuna-avokadot.md",
+      "sourceSha256": "7f93c5780c639a828a97932134f1568c265ba3f750c81fd62ee96d08e23d4b41",
+      "servings": 2,
+      "evidenceVersion": 1,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "scenarios": [
+        {
+          "id": "q09-complete-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "avokadon syötävää hedelmälihaa",
+              "state": "AVOKADO, KUORITTU, KIVETÖN",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.77,
+                "protein": 2.63,
+                "fat": 19.4,
+                "fibre": 3.6
+              },
+              "composition": {
+                "sourceId": "F11057-q09",
+                "evidenceHash": "950751f9274854b3d15fdc273c8c4e55f5610d9e96a31c006a3e2827be0af0a0"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit AVOCADO identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "7bd58b861dab7a23e95f4fa6f6003159b8cd5d9f6e0de2102311b641685af6bc",
+                "rationale": "Explicit AVOCADO identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 1,
+              "name": "kananmunaa kuorettomana",
+              "state": "KANANMUNA, KUORETON",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F858-q09",
+                "evidenceHash": "9c6ef86f8643575f4f6dfeccdb7a660f26c6f4ef803b6c59909ef3268639765e"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "7bd58b861dab7a23e95f4fa6f6003159b8cd5d9f6e0de2102311b641685af6bc",
+                "rationale": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 2,
+              "name": "laimentamatonta sitruunamehua",
+              "state": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+              "massG": 5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.6,
+                "protein": 0.31,
+                "fat": 0.0,
+                "fibre": 0.1
+              },
+              "composition": {
+                "sourceId": "F11557-q09",
+                "evidenceHash": "ea8142a55bb30145bc5cb7ec342828a0531a14c4a5dddffe16d16c9dd6fd3a9e"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit CITRUS_JUICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "7bd58b861dab7a23e95f4fa6f6003159b8cd5d9f6e0de2102311b641685af6bc",
+                "rationale": "Explicit CITRUS_JUICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 3,
+              "name": "tuoretta ruohosipulia",
+              "state": "RUOHOSIPULI",
+              "massG": 7,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.73,
+                "protein": 2.2,
+                "fat": 0.92,
+                "fibre": 2.1
+              },
+              "composition": {
+                "sourceId": "F392-q09",
+                "evidenceHash": "21edade8e6829cb1526806db8c888ccbc049642e4e1925e582fdab5165e2b948"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "45f4c80ac2ac10c8875df006e13d2d8d49e8145a588ec3eafbd67c757308e77a",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 4,
+              "name": "jauhettua mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-q09",
+                "evidenceHash": "2c31b16a4a01ab37a84e0990b3245e58840b92703bda5fd1413f855ff607b84c"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "a1165f8864e4127e36b4112a001fd17852f928ac9a107495f500c1d862b4295a",
+                "rationale": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 5,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has no four macros"
+            }
+          ]
+        }
+      ],
+      "proposedPreparation": [
+        "Punnitse yllä luetellut syötävät raaka-aineet grammoina, kananmunat ilman kuorta. Käytä vain lueteltu rasva ja mausteet.\n\n1. Lämmitä uuni 200 asteeseen. Halkaise avokadot ja poista kivet. Koverra kuoppia hieman suuremmiksi lusikalla.\n2. Aseta avokadonpuolikkaat pieneen uunivuokaan niin, etteivät ne keiku.\n3. Riko jokaiseen puolikkaaseen muna. Jos muna ei mahdu kokonaan, lisää ensin keltuainen ja sen verran valkuaista kuin kuoppaan sopii.\n4. Mausta ja paista 12–16 minuuttia, kunnes valkuainen on hyytynyt.\n5. Pirskota sitruunamehu ja lisää ruohosipuli juuri ennen tarjoilua.\n\nSyö kaikki luetellut ainekset ja kastike/pannuneste ilmoitettuna annosmääränä. Raakojen ainesten koostumus toimii kypsän ruoan ravintoarvoproxyna; mittaamatonta kypsennyshävikkiä ei vähennetä."
+      ],
+      "blockers": [],
+      "publicationConditions": [
+        "Owner method/content approval",
+        "Exact weighed preparation and all four publication macros",
+        "Composition proxies are not exact product/cultivar measurements"
+      ],
+      "proposedVersionHash": "b89bd48b2b1646d417b597392f67cd81b78a07aa2f9d01d8ba7545cb36505fc7",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "releaseInputVersion": 4
+    },
+    {
+      "recipeId": "uunimunat-pinaatilla",
+      "title": "Uunimunat pinaatilla",
+      "proposedTitle": "Uunimunat pinaatilla – punnittu versio",
+      "sourcePath": "reseptit/aamupalat/uunimunat-pinaatilla.md",
+      "sourceSha256": "f9a686ffdb677d17ebeda6c06f90dd04734d8d0c2a544194ade2ab251d754ff6",
+      "servings": 2,
+      "evidenceVersion": 1,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "scenarios": [
+        {
+          "id": "q09-complete-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kananmunaa kuorettomana",
+              "state": "KANANMUNA, KUORETON",
+              "massG": 220,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F858-q09",
+                "evidenceHash": "9c6ef86f8643575f4f6dfeccdb7a660f26c6f4ef803b6c59909ef3268639765e"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "7bd58b861dab7a23e95f4fa6f6003159b8cd5d9f6e0de2102311b641685af6bc",
+                "rationale": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 1,
+              "name": "pinaattia",
+              "state": "PINAATTI",
+              "massG": 60,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.25,
+                "protein": 2.1,
+                "fat": 0.56,
+                "fibre": 1.3
+              },
+              "composition": {
+                "sourceId": "F33456-q09",
+                "evidenceHash": "c34b11cdf346cfb15408aea60c7ac297e23d9aecf45297dd314604bd990d9252"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "45f4c80ac2ac10c8875df006e13d2d8d49e8145a588ec3eafbd67c757308e77a",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 2,
+              "name": "38% kuohukermaa",
+              "state": "KERMA, KUOHUKERMA, RASVAA 38 %",
+              "massG": 60,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.9,
+                "protein": 1.88,
+                "fat": 38.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F631-q09",
+                "evidenceHash": "201adf9d48e5db8968ab6e895e00fad11efb9cc4fbbaffd85b536af442c25219"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "155f2de5585062b776f1ceb76ab5a338fc3c76e045fa0da7798d852ca71deb37",
+                "rationale": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 3,
+              "name": "emmentaljuustoa",
+              "state": "JUUSTO, EMMENTALJUUSTO, RASVAA 27-30 %, PUNALEIMA",
+              "massG": 30,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 27.88,
+                "fat": 30.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F642-q09",
+                "evidenceHash": "fad5337b700aa87b738c4ad2c88c94a9803053269eb00b4e33aaf595199d0586"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+            },
+            {
+              "index": 4,
+              "name": "voita",
+              "state": "VOI",
+              "massG": 4.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.8,
+                "protein": 1.19,
+                "fat": 81.3,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F500-q09",
+                "evidenceHash": "e025f784bb30746ce34223392f9f49107e39788f4db8c83371d5d5eb11b1404c"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "155f2de5585062b776f1ceb76ab5a338fc3c76e045fa0da7798d852ca71deb37",
+                "rationale": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 5,
+              "name": "jauhettua mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 0.4,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-q09",
+                "evidenceHash": "2c31b16a4a01ab37a84e0990b3245e58840b92703bda5fd1413f855ff607b84c"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "a1165f8864e4127e36b4112a001fd17852f928ac9a107495f500c1d862b4295a",
+                "rationale": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 6,
+              "name": "jauhettua muskottipähkinää",
+              "state": "Nutmeg, dried, ground",
+              "massG": 0.1,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 28.5,
+                "protein": 5.8,
+                "fat": 36.3,
+                "fibre": 20.8
+              },
+              "composition": {
+                "sourceId": "A006118-q09",
+                "evidenceHash": "d64b1aacf09a3ca38937edca47ad230a973cd55ffb9c836c496afcd8e036ce66"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "a1165f8864e4127e36b4112a001fd17852f928ac9a107495f500c1d862b4295a",
+                "rationale": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 7,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has no four macros"
+            }
+          ]
+        }
+      ],
+      "proposedPreparation": [
+        "Punnitse yllä luetellut syötävät raaka-aineet grammoina, kananmunat ilman kuorta. Käytä vain lueteltu rasva ja mausteet.\n\n1. Lämmitä uuni 200 asteeseen. Voitele kaksi pientä uunivuokaa.\n2. Jaa pinaatti vuokiin ja lusikoi päälle kerma. Riko kumpaankin vuokaan kaksi kananmunaa.\n3. Mausta, lisää juustoraaste ja paista 10–14 minuuttia, kunnes valkuainen on hyytynyt ja keltuainen halutun pehmeä.\n4. Anna jäähtyä pari minuuttia ja tarjoa vuoista.\n\nSyö kaikki luetellut ainekset ja kastike/pannuneste ilmoitettuna annosmääränä. Raakojen ainesten koostumus toimii kypsän ruoan ravintoarvoproxyna; mittaamatonta kypsennyshävikkiä ei vähennetä."
+      ],
+      "blockers": [],
+      "publicationConditions": [
+        "Owner method/content approval",
+        "Exact weighed preparation and all four publication macros",
+        "Composition proxies are not exact product/cultivar measurements"
+      ],
+      "proposedVersionHash": "bcde871ff6d20bee257bf22e4b6009495980abb9d347a53285963077b1dac057",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "releaseInputVersion": 4
+    },
+    {
+      "recipeId": "vhh-lihamureke",
+      "title": "Mehevä VHH-lihamureke",
+      "proposedTitle": "Mehevä VHH-lihamureke – punnittu versio",
+      "sourcePath": "reseptit/paaruoat/vhh-lihamureke.md",
+      "sourceSha256": "4f759af39411b2253278348fd02abb4710a8d4fd6c2b67b463db7dcebc1ae4d7",
+      "servings": 6,
+      "evidenceVersion": 1,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "scenarios": [
+        {
+          "id": "q09-complete-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "17% naudan jauhelihaa",
+              "state": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+              "massG": 800,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 19.065,
+                "fat": 16.949,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F11562-q09",
+                "evidenceHash": "f4fea763b211121e7e57413f7c6f6c1d766f0c3b3138148d6a0b81edb26c0e8a"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit ZERO_CHO identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+            },
+            {
+              "index": 1,
+              "name": "kesäkurpitsaa",
+              "state": "KESÄKURPITSA, ZUCCHINI",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.5,
+                "protein": 0.65,
+                "fat": 0.4,
+                "fibre": 2.0
+              },
+              "composition": {
+                "sourceId": "F389-q09",
+                "evidenceHash": "3192b16807c5daa254fbf93a9c55744580d5cc9f4e8fb6501b81ef505c2a93d1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "45f4c80ac2ac10c8875df006e13d2d8d49e8145a588ec3eafbd67c757308e77a",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 2,
+              "name": "kananmunaa kuorettomana",
+              "state": "KANANMUNA, KUORETON",
+              "massG": 110,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F858-q09",
+                "evidenceHash": "9c6ef86f8643575f4f6dfeccdb7a660f26c6f4ef803b6c59909ef3268639765e"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "7bd58b861dab7a23e95f4fa6f6003159b8cd5d9f6e0de2102311b641685af6bc",
+                "rationale": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 3,
+              "name": "38% kuohukermaa",
+              "state": "KERMA, KUOHUKERMA, RASVAA 38 %",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.9,
+                "protein": 1.88,
+                "fat": 38.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F631-q09",
+                "evidenceHash": "201adf9d48e5db8968ab6e895e00fad11efb9cc4fbbaffd85b536af442c25219"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "155f2de5585062b776f1ceb76ab5a338fc3c76e045fa0da7798d852ca71deb37",
+                "rationale": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 4,
+              "name": "keltasipulia",
+              "state": "SIPULI, KELTASIPULI",
+              "massG": 55,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2
+              },
+              "composition": {
+                "sourceId": "F335-q09",
+                "evidenceHash": "e21cce03571bd4ec3484a62c11ac63c123078ace35687af058d492542626c406"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "45f4c80ac2ac10c8875df006e13d2d8d49e8145a588ec3eafbd67c757308e77a",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 5,
+              "name": "jauhettua mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 1,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-q09",
+                "evidenceHash": "2c31b16a4a01ab37a84e0990b3245e58840b92703bda5fd1413f855ff607b84c"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "a1165f8864e4127e36b4112a001fd17852f928ac9a107495f500c1d862b4295a",
+                "rationale": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 6,
+              "name": "paprikajauhetta",
+              "state": "Paprika, dry powder",
+              "massG": 1,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 19.1,
+                "protein": 14.1,
+                "fat": 12.9,
+                "fibre": 34.9
+              },
+              "composition": {
+                "sourceId": "A006316-q09",
+                "evidenceHash": "e35ae9edd250d47973088a3b34be9f40cc4f31eff28b384f73912b92553283cd"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "a1165f8864e4127e36b4112a001fd17852f928ac9a107495f500c1d862b4295a",
+                "rationale": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 7,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has no four macros"
+            }
+          ]
+        }
+      ],
+      "proposedPreparation": [
+        "Punnitse yllä luetellut syötävät raaka-aineet grammoina, kananmunat ilman kuorta. Käytä vain lueteltu rasva ja mausteet.\n\n1. Kuumenna uuni 200 °C:seen. Raasta punnittu kesäkurpitsa; tässä versiossa sitä ei puristeta, vaan koko määrä käytetään.\n2. Sekoita ainekset tasaiseksi massaksi ja mausta.\n3. Muotoile leivinpaperilla vuorattuun vuokaan pitkulainen mureke.\n4. Paista noin 50 minuuttia, kunnes mureke on kypsä. Anna vetäytyä 10 minuuttia ennen viipalointia.\n\nSyö kaikki luetellut ainekset ja kastike/pannuneste ilmoitettuna annosmääränä. Raakojen ainesten koostumus toimii kypsän ruoan ravintoarvoproxyna; mittaamatonta kypsennyshävikkiä ei vähennetä."
+      ],
+      "blockers": [],
+      "publicationConditions": [
+        "Owner method/content approval",
+        "Exact weighed preparation and all four publication macros",
+        "Composition proxies are not exact product/cultivar measurements"
+      ],
+      "proposedVersionHash": "bde72038d067ad42e13660f6aaa0b849b45b385d4930b8694f35469db334c43a",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "releaseInputVersion": 4
+    },
+    {
+      "recipeId": "uuniporsas-kermakastikkeessa-vhh",
+      "title": "Uuniporsas kermaisella pannukastikkeella",
+      "proposedTitle": "Uuniporsas kermaisella pannukastikkeella – punnittu versio",
+      "sourcePath": "reseptit/paaruoat/uuniporsas-kermakastikkeessa-vhh.md",
+      "sourceSha256": "540781106356ae605314d1fc849ea40277ba0da7db6afef4effd6fbb9ef43293",
+      "servings": 6,
+      "evidenceVersion": 1,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "scenarios": [
+        {
+          "id": "q09-complete-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "raakaa kassleria",
+              "state": "KASSLERPIHVI/-PAISTI, RAAKA",
+              "massG": 1200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 17.931,
+                "fat": 14.955,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F34190-q09",
+                "evidenceHash": "d7e4d2e5e8fb4624e8f100bd0f1cda517ca0cb3e9037f235d4c740b6a14e7c74"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit ZERO_CHO identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+            },
+            {
+              "index": 1,
+              "name": "38% kuohukermaa",
+              "state": "KERMA, KUOHUKERMA, RASVAA 38 %",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.9,
+                "protein": 1.88,
+                "fat": 38.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F631-q09",
+                "evidenceHash": "201adf9d48e5db8968ab6e895e00fad11efb9cc4fbbaffd85b536af442c25219"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "155f2de5585062b776f1ceb76ab5a338fc3c76e045fa0da7798d852ca71deb37",
+                "rationale": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 2,
+              "name": "vettä",
+              "state": "VESI, VESIJOHTOVESI",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 0.0,
+                "fat": 0.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F922-q09",
+                "evidenceHash": "ebb7c140029a55e66854aa6c9440a0b0532b030883dec9a0fb6102674fdc3f3f"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit ZERO_CHO identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+            },
+            {
+              "index": 3,
+              "name": "keltasipulia",
+              "state": "SIPULI, KELTASIPULI",
+              "massG": 55,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2
+              },
+              "composition": {
+                "sourceId": "F335-q09",
+                "evidenceHash": "e21cce03571bd4ec3484a62c11ac63c123078ace35687af058d492542626c406"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "45f4c80ac2ac10c8875df006e13d2d8d49e8145a588ec3eafbd67c757308e77a",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 4,
+              "name": "jauhettua mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 1,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-q09",
+                "evidenceHash": "2c31b16a4a01ab37a84e0990b3245e58840b92703bda5fd1413f855ff607b84c"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "a1165f8864e4127e36b4112a001fd17852f928ac9a107495f500c1d862b4295a",
+                "rationale": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 5,
+              "name": "kuivattua jauhettua timjamia",
+              "state": "Thyme, dried, ground",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 26.9,
+                "protein": 9.1,
+                "fat": 7.4,
+                "fibre": 37
+              },
+              "composition": {
+                "sourceId": "A009160-q09",
+                "evidenceHash": "5f4cc361bc0c762e5b6b13e58624fe9f6a68aa50fff0e4bf21767857bea6f8a5"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "a1165f8864e4127e36b4112a001fd17852f928ac9a107495f500c1d862b4295a",
+                "rationale": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 6,
+              "name": "voita",
+              "state": "VOI",
+              "massG": 14,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.8,
+                "protein": 1.19,
+                "fat": 81.3,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F500-q09",
+                "evidenceHash": "e025f784bb30746ce34223392f9f49107e39788f4db8c83371d5d5eb11b1404c"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "155f2de5585062b776f1ceb76ab5a338fc3c76e045fa0da7798d852ca71deb37",
+                "rationale": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 7,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has no four macros"
+            }
+          ]
+        }
+      ],
+      "proposedPreparation": [
+        "Punnitse yllä luetellut syötävät raaka-aineet grammoina. Käytä vain lueteltu rasva ja mausteet.\n\n1. Mausta porsas suolalla, pippurilla ja timjamilla. Nosta uunivuokaan sipulilohkojen kanssa.\n2. Lisää vesi vuokaan ja paista 175 °C:ssa noin 75 minuuttia tai kunnes liha on kypsää.\n3. Nosta liha lepäämään. Kaada kaikki paistoliemi, sipuli ja jauhetut mausteet kattilaan; tässä versiossa ei siivilöidä. Lisää kerma.\n4. Keitä kastiketta muutama minuutti ja tarkista maku. Nosta kastike liedeltä ja sekoita voi lämpimään kastikkeeseen. Viipaloi porsas ja tarjoa kastikkeen kanssa.\n\nSyö kaikki luetellut ainekset ja kastike/pannuneste ilmoitettuna annosmääränä. Raakojen ainesten koostumus toimii kypsän ruoan ravintoarvoproxyna; mittaamatonta kypsennyshävikkiä ei vähennetä."
+      ],
+      "blockers": [],
+      "publicationConditions": [
+        "Owner method/content approval",
+        "Exact weighed preparation and all four publication macros",
+        "Composition proxies are not exact product/cultivar measurements"
+      ],
+      "proposedVersionHash": "914090635a6ddea625cd903470fc305b0fb2613a2de74520e03d95f2dd7d3eb2",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "releaseInputVersion": 4
+    },
+    {
+      "recipeId": "tonnikalamunakkaat-uunissa",
+      "title": "Pienet tonnikalamunakkaat uunissa",
+      "proposedTitle": "Pienet tonnikalamunakkaat uunissa – punnittu versio",
+      "sourcePath": "reseptit/aamupalat/tonnikalamunakkaat-uunissa.md",
+      "sourceSha256": "7cab94aedfe0b1cb14070557393adf3a3268d0f0306fdbd0d1c377def7e141dd",
+      "servings": 3,
+      "evidenceVersion": 1,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "scenarios": [
+        {
+          "id": "q09-complete-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kananmunaa kuorettomana",
+              "state": "KANANMUNA, KUORETON",
+              "massG": 220,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F858-q09",
+                "evidenceHash": "9c6ef86f8643575f4f6dfeccdb7a660f26c6f4ef803b6c59909ef3268639765e"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "7bd58b861dab7a23e95f4fa6f6003159b8cd5d9f6e0de2102311b641685af6bc",
+                "rationale": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 1,
+              "name": "tonnikalaa vedessä valutettuna",
+              "state": "TONNIKALA, VEDESSÄ, SÄILYKE",
+              "massG": 120,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 22.44,
+                "fat": 0.9,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F11067-q09",
+                "evidenceHash": "dced13f460b662f2fde25c34984dab079d6110b0da4d9f75452389f309441a4f"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit ZERO_CHO identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+            },
+            {
+              "index": 2,
+              "name": "emmentaljuustoa",
+              "state": "JUUSTO, EMMENTALJUUSTO, RASVAA 27-30 %, PUNALEIMA",
+              "massG": 50,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 27.88,
+                "fat": 30.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F642-q09",
+                "evidenceHash": "fad5337b700aa87b738c4ad2c88c94a9803053269eb00b4e33aaf595199d0586"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+            },
+            {
+              "index": 3,
+              "name": "38% kuohukermaa",
+              "state": "KERMA, KUOHUKERMA, RASVAA 38 %",
+              "massG": 30,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.9,
+                "protein": 1.88,
+                "fat": 38.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F631-q09",
+                "evidenceHash": "201adf9d48e5db8968ab6e895e00fad11efb9cc4fbbaffd85b536af442c25219"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "155f2de5585062b776f1ceb76ab5a338fc3c76e045fa0da7798d852ca71deb37",
+                "rationale": "Explicit DAIRY identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 4,
+              "name": "tuoretta tilliä",
+              "state": "TILLI, TUORE",
+              "massG": 2.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.9,
+                "protein": 3.69,
+                "fat": 0.8,
+                "fibre": 2.8
+              },
+              "composition": {
+                "sourceId": "F369-q09",
+                "evidenceHash": "7de7cca0361f4724eb798a8bb00fb5bfab3c74fb0a8ad0c1271de4d550431061"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "45f4c80ac2ac10c8875df006e13d2d8d49e8145a588ec3eafbd67c757308e77a",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 5,
+              "name": "jauhettua mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-q09",
+                "evidenceHash": "2c31b16a4a01ab37a84e0990b3245e58840b92703bda5fd1413f855ff607b84c"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "a1165f8864e4127e36b4112a001fd17852f928ac9a107495f500c1d862b4295a",
+                "rationale": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 6,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has no four macros"
+            }
+          ]
+        }
+      ],
+      "proposedPreparation": [
+        "Punnitse yllä luetellut syötävät raaka-aineet grammoina, kananmunat ilman kuorta. Käytä vain lueteltu rasva ja mausteet.\n\n1. Lämmitä uuni 190 asteeseen ja voitele kuusi muffinivuokaa.\n2. Valuta tonnikala hyvin ja murenna se kulhossa. Lisää munat, kerma, juusto ja tilli.\n3. Mausta pippurilla ja tarvittaessa suolalla. Jaa seos vuokiin.\n4. Paista 15–18 minuuttia, kunnes munakkaat ovat kohonneet ja keskeltä hyytyneet.\n5. Anna jäähtyä muutama minuutti ennen irrottamista.\n\nSyö kaikki luetellut ainekset ja kastike/pannuneste ilmoitettuna annosmääränä. Raakojen ainesten koostumus toimii kypsän ruoan ravintoarvoproxyna; mittaamatonta kypsennyshävikkiä ei vähennetä."
+      ],
+      "blockers": [],
+      "publicationConditions": [
+        "Owner method/content approval",
+        "Exact weighed preparation and all four publication macros",
+        "Composition proxies are not exact product/cultivar measurements"
+      ],
+      "proposedVersionHash": "040177a3d0b96a1790e787f6635eb688ad373fb12c93d90d3df8f7bbf0e02393",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "releaseInputVersion": 4
+    },
+    {
+      "recipeId": "thai-kai-jiao-yrteilla",
+      "title": "Thaimaalainen munakas yrteillä",
+      "proposedTitle": "Thaimaalainen munakas yrteillä – punnittu versio",
+      "sourcePath": "reseptit/aamupalat/thai-kai-jiao-yrteilla.md",
+      "sourceSha256": "eeb0a0f1144002bebf46019403e5a2632217c16479cbfc01a482d5b9936c613e",
+      "servings": 2,
+      "evidenceVersion": 1,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "scenarios": [
+        {
+          "id": "q09-complete-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kananmunaa kuorettomana",
+              "state": "KANANMUNA, KUORETON",
+              "massG": 110,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F858-q09",
+                "evidenceHash": "9c6ef86f8643575f4f6dfeccdb7a660f26c6f4ef803b6c59909ef3268639765e"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "7bd58b861dab7a23e95f4fa6f6003159b8cd5d9f6e0de2102311b641685af6bc",
+                "rationale": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 1,
+              "name": "aasialaista kalakastiketta, AFCD commercial -koostumusproxy",
+              "state": "Sauce, fish, commercial",
+              "massG": 15,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.4,
+                "protein": 6.8,
+                "fat": 0.3,
+                "fibre": 1.2
+              },
+              "composition": {
+                "sourceId": "A008004-q09",
+                "evidenceHash": "e63549d3eb4d3e4f3fa4b3ad65a76d2973a83afd6705fa44d45b5ca1cc608673"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit FISH_SAUCE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "7bd58b861dab7a23e95f4fa6f6003159b8cd5d9f6e0de2102311b641685af6bc",
+                "rationale": "Explicit FISH_SAUCE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 2,
+              "name": "tuoretta basilikaa thaibasilikan koostumusproxyna",
+              "state": "Basil, green, fresh, raw",
+              "massG": 5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.2,
+                "protein": 2.6,
+                "fat": 0.5,
+                "fibre": 3.3
+              },
+              "composition": {
+                "sourceId": "A000396-q09",
+                "evidenceHash": "0f9055dca4396048cfff136e2aca2fd3cfdb0e95bf0bd434c63ddb45576668d8"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "45f4c80ac2ac10c8875df006e13d2d8d49e8145a588ec3eafbd67c757308e77a",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 3,
+              "name": "kevätsipulia",
+              "state": "Onion, spring, fresh, raw",
+              "massG": 20,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.6,
+                "protein": 1.7,
+                "fat": 0.2,
+                "fibre": 1.9
+              },
+              "composition": {
+                "sourceId": "A006250-q09",
+                "evidenceHash": "1d1918945e00034c355773dd1509a0d0afaafaf11c77987d2cbf969311723f09"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "45f4c80ac2ac10c8875df006e13d2d8d49e8145a588ec3eafbd67c757308e77a",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+              }
+            },
+            {
+              "index": 4,
+              "name": "rypsiöljyä, kokonaan mukana",
+              "state": "OLIIVIÖLJY",
+              "massG": 10,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 0.0,
+                "fat": 100.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F536-q09",
+                "evidenceHash": "ef9ff537ecd51c28cddbfde011930962fc5c3d0355cd0355faa55f8cd34a4b24"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit ZERO_CHO identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed."
+            },
+            {
+              "index": 5,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has no four macros"
+            }
+          ]
+        }
+      ],
+      "proposedPreparation": [
+        "Punnitse yllä luetellut syötävät raaka-aineet grammoina, kananmunat ilman kuorta. Käytä vain lueteltu rasva ja mausteet.\n\n1. Vatkaa kananmunat kalakastikkeen kanssa. Hienonna kevätsipuli ja thaibasilika ja sekoita munien joukkoon.\n2. Kuumenna öljy pannulla kuumaksi ja kaada munaseos pannulle.\n3. Paista munakas rapeareunaiseksi ja kypsäksi, käännä tarvittaessa varovasti.\n4. Tarjoa heti.\n\nSyö kaikki luetellut ainekset ja kastike/pannuneste ilmoitettuna annosmääränä. Raakojen ainesten koostumus toimii kypsän ruoan ravintoarvoproxyna; mittaamatonta kypsennyshävikkiä ei vähennetä."
+      ],
+      "blockers": [],
+      "publicationConditions": [
+        "Owner method/content approval",
+        "Exact weighed preparation and all four publication macros",
+        "Composition proxies are not exact product/cultivar measurements"
+      ],
+      "proposedVersionHash": "132f2884cd381f4d34682271627bc327372f03cea86b9a416ed3939808633b1b",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "releaseInputVersion": 4
+    }
+  ]
+}

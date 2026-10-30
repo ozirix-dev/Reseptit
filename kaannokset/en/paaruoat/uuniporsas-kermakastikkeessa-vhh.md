@@ -7,49 +7,49 @@ language: en
 status: published
 diet_class: vhh_tiukka
 main_ingredient:
-  - porsaan kassler
+- porsaan kassler
 cooking_method:
-  - uuni
+- uuni
 servings: 6
-carbs_net_per_serving_g: 1.43
-carbs_total_per_serving_g: 1.59
-protein_per_serving_g: 36.57
-fat_per_serving_g: 44.57
+carbs_net_per_serving_g: 1.51
+carbs_total_per_serving_g: 1.7
+protein_per_serving_g: 36.66
+fat_per_serving_g: 44.49
 time_total_min: 90
 difficulty: easy
 tags:
-  - Finnish home cooking
-  - low carb
+- Finnish home cooking
+- low carb
 image:
   src: paaruoat/uuniporsas-kermakastikkeessa-vhh.webp
   alt: Sliced ​​roast pork with creamy sauce, cauliflower mash and green beans
   width: 1280
   height: 853
 ingredients:
-  - amount: 1.2
-    unit: kg
-    item: pork collar (uncured)
-  - amount: 2
-    unit: dl
-    item: whipping cream
-  - amount: 2
-    unit: dl
-    item: water
-  - amount: 1
-    unit: ""
-    item: onion
-  - amount: 1
-    unit: tsp
-    item: salt
-  - amount: 0.5
-    unit: tsp
-    item: black pepper
-  - amount: 1
-    unit: tsp
-    item: thyme
-  - amount: 1
-    unit: tbsp
-    item: butter
+- amount: 1200
+  unit: g
+  item: raw pork collar
+- amount: 200
+  unit: g
+  item: 38% whipping cream
+- amount: 200
+  unit: g
+  item: water
+- amount: 55
+  unit: g
+  item: onion
+- amount: 1
+  unit: g
+  item: ground black pepper
+- amount: 0.5
+  unit: g
+  item: dried ground thyme
+- amount: 14
+  unit: g
+  item: butter
+- amount: null
+  unit: ''
+  item: salt to taste
 source_language: fi
 source_recipe: reseptit/paaruoat/uuniporsas-kermakastikkeessa-vhh.md
 translation_of: uuniporsas-kermakastikkeessa-vhh
@@ -57,19 +57,11 @@ translation_of: uuniporsas-kermakastikkeessa-vhh
 
 # Roast Pork with Cream Sauce
 
-Fresh pork collar is cooked in the oven with onion and water.
-
-## Description
-
-The juices, seasoned with thyme and black pepper, are then used to make a cream sauce.
-
 ## Preparation
 
-1. Season the pork with salt, pepper and thyme. Place in a baking dish with the onion wedges.
-2. Add water to the pan and bake at 175 °C for about 75 minutes or until the meat is cooked.
-3. Lift the meat to rest. Strain the frying stock into the pot and add the cream.
-4. Simmer the sauce for a few minutes and check the seasoning. Take it off the heat and stir in the butter. Slice the pork and serve with the sauce.
+1. Weigh all edible ingredients in grams. Season the pork with all listed ground spices and salt. Place with the onion in a roasting dish.
+2. Add the water and roast at 175 °C for about 75 minutes or until cooked through.
+3. Transfer the meat to rest. Keep all onion, ground spices and roasting liquid without straining. Add the cream.
+4. Simmer briefly, remove from the heat and stir in the butter. Divide all meat and sauce into 6 portions.
 
-## Notes
-
-- Check for doneness and finally season according to your own taste.
+Weighed recipe variant. The image is illustrative; extra side dishes are excluded. Modeled GK has low confidence and no known biological uncertainty interval.
