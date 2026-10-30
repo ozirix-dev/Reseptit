@@ -1,0 +1,598 @@
+{
+  "schemaVersion": 1,
+  "reviewRole": "Technical preflight of our own R2 work; not independent approval",
+  "mainCommit": "e8da2c9417e2aeff55a85d599b3b7e1ad465f36c",
+  "r2Head": "020b665582f4f1ec54e56ec978581e424adc6ace",
+  "diffCoverage": [
+    {
+      "file": "docs/nutrition/gk-r2-carbohydrate-only-candidates.json",
+      "bytes": 552932,
+      "canonicalSha256": "d7fbca0a7a09583bb5699593601e77949161428218c16c2a829b5590637e9d11"
+    },
+    {
+      "file": "docs/nutrition/gk-r2-corrections.json",
+      "bytes": 46854,
+      "canonicalSha256": "d9d6f03049b204503cfca649eec09eefb38b7f992696e745565a6be03dc072d5"
+    },
+    {
+      "file": "docs/nutrition/gk-r2-gk-proposals.json",
+      "bytes": 1085,
+      "canonicalSha256": "400746aadf56b577ad50d858aa9c9e7229666b34cfa51ed8b89857b3039264ba"
+    },
+    {
+      "file": "docs/nutrition/gk-r2-inventory.json",
+      "bytes": 1283026,
+      "canonicalSha256": "fb6bd4c5f9cba01e830eba9d1b7793faf9ecad86225d0dd8ff232068c2cea01c"
+    },
+    {
+      "file": "docs/nutrition/gk-r2-nutrition-proposals.json",
+      "bytes": 28471,
+      "canonicalSha256": "a220489e718c8685f912d966232580bf5004812d47b376166aace01768297992"
+    },
+    {
+      "file": "docs/nutrition/gk-r2-regression.json",
+      "bytes": 596259,
+      "canonicalSha256": "0e6375cd278e977455e852e871e0597a863cf4b740f5291431f95f0d886f2dd4"
+    },
+    {
+      "file": "docs/nutrition/gk-r2-review.md",
+      "bytes": 20001,
+      "canonicalSha256": "81213f9642204f750eb9a0d280b6dfda8d34f00ca982f2298305e2d05cc25a25"
+    },
+    {
+      "file": "docs/nutrition/gk-r2-source-review.json",
+      "bytes": 407724,
+      "canonicalSha256": "2f62c9c5f4f392b1026c99f04d4266dcda5b0504dee5ea5ebf36ea64f212709b"
+    },
+    {
+      "file": "docs/nutrition/glycemic-load-pilot-input.json",
+      "bytes": 1169051,
+      "canonicalSha256": "db71f0829728f5112c696d1460f4bb863bde90a87483304682787a79aa12fba8"
+    },
+    {
+      "file": "docs/nutrition/glycemic-load-recipe-bindings.json",
+      "bytes": 98847,
+      "canonicalSha256": "c3a8cd78d08965f89aa1d885c3faec495ce96b8f579a1aa53c2f2d28f9268002"
+    },
+    {
+      "file": "docs/nutrition/tools/gk-r2-inventory.py",
+      "bytes": 11694,
+      "canonicalSha256": "a7e0cf93102edd65644d2501b777a92085aea40cd482cf84af211dd807a3ab7a"
+    },
+    {
+      "file": "site/tests/glycemic-load.test.ts",
+      "bytes": 183299,
+      "canonicalSha256": "181adab4b0869cc1f3d1e9e5877ddd595a5c0af21cc27cb548238a28a3994be7"
+    }
+  ],
+  "correctionReplay": {
+    "changes": 30,
+    "exactReplay": true
+  },
+  "all326BaselineResultsMatch": true,
+  "publicCoverage": {
+    "recipes": 326,
+    "calculated": 83,
+    "insufficientSourceData": 243
+  },
+  "mutationProbes": [
+    {
+      "recipeId": "baozi",
+      "probe": "+11 g on a nonzero carbohydrate ingredient; +1gCHO/100g composition; reassigned GI binding",
+      "inputFingerprintDetected": true,
+      "fixedFullResultDetected": true,
+      "compositionEvidenceDriftDetected": true,
+      "reassignedGiBindingDetected": true
+    },
+    {
+      "recipeId": "bulgogi",
+      "probe": "+11 g on a nonzero carbohydrate ingredient; +1gCHO/100g composition; reassigned GI binding",
+      "inputFingerprintDetected": true,
+      "fixedFullResultDetected": true,
+      "compositionEvidenceDriftDetected": true,
+      "reassignedGiBindingDetected": true
+    },
+    {
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "probe": "+11 g on a nonzero carbohydrate ingredient; +1gCHO/100g composition; reassigned GI binding",
+      "inputFingerprintDetected": true,
+      "fixedFullResultDetected": true,
+      "compositionEvidenceDriftDetected": true,
+      "reassignedGiBindingDetected": true
+    },
+    {
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "probe": "+11 g on a nonzero carbohydrate ingredient; +1gCHO/100g composition; reassigned GI binding",
+      "inputFingerprintDetected": true,
+      "fixedFullResultDetected": true,
+      "compositionEvidenceDriftDetected": true,
+      "reassignedGiBindingDetected": true
+    },
+    {
+      "recipeId": "koshari",
+      "probe": "+11 g on a nonzero carbohydrate ingredient; +1gCHO/100g composition; reassigned GI binding",
+      "inputFingerprintDetected": true,
+      "fixedFullResultDetected": true,
+      "compositionEvidenceDriftDetected": true,
+      "reassignedGiBindingDetected": true
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "probe": "+11 g on a nonzero carbohydrate ingredient; +1gCHO/100g composition; reassigned GI binding",
+      "inputFingerprintDetected": true,
+      "fixedFullResultDetected": true,
+      "compositionEvidenceDriftDetected": true,
+      "reassignedGiBindingDetected": true
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "probe": "+11 g on a nonzero carbohydrate ingredient; +1gCHO/100g composition; reassigned GI binding",
+      "inputFingerprintDetected": true,
+      "fixedFullResultDetected": true,
+      "compositionEvidenceDriftDetected": true,
+      "reassignedGiBindingDetected": true
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "probe": "+11 g on a nonzero carbohydrate ingredient; +1gCHO/100g composition; reassigned GI binding",
+      "inputFingerprintDetected": true,
+      "fixedFullResultDetected": true,
+      "compositionEvidenceDriftDetected": true,
+      "reassignedGiBindingDetected": true
+    }
+  ],
+  "r2Pr": "https://github.com/ozirix-dev/Reseptit/pull/133",
+  "r2ReportPr": "https://github.com/ozirix-dev/ReportHub/pull/73",
+  "r2ReportHead": "fabdecd0ad41b56eb8ebd00eeaa8fbc0368ec935",
+  "fullDiffBytes": 3017172,
+  "fullDiffReadMethod": "Complete 12-file diff loaded and parsed; every changed file read and JSON parsed; all 30 active-row replacements replayed, all326 result fingerprints compared; human source/test review of substantive changes. This does not claim manual line-by-line scientific approval of generated inventories.",
+  "checks": {
+    "massCorrections": 10,
+    "compositionIdentityCorrections": 1,
+    "removedGiBindings": 20,
+    "changeRows": 30,
+    "overlap": "Baozi corn mass and identity share one row",
+    "reviewedRecipeInputs": 8,
+    "proposalCalculationsReproduced": 5,
+    "distinctMutationProbes": 24,
+    "activeCalculatedCoverage": 83,
+    "all326PublicGkValuesUnchanged": true
+  },
+  "testExceptionReview": {
+    "finding": "No uncovered binding error found in the eight-recipe waiver; fixed whole-result pins and input/evidence hashes replace historical exact snapshots, not assertions calculated from the same actual result.",
+    "mutations": "For each8: +11g nonzeroCHO ingredient, +1gCHO/100g composition, reassigned GI binding. All detected by relevant fingerprints/result assertions.",
+    "baozi": "OmittedCHO2.6391g after R2; test expects rejection against unchanged <2g cap. It does not waive the limit.",
+    "limitations": "Technical checks of our own work, not independent source approval or proof against every possible bug."
+  },
+  "reviewedChanges": [
+    {
+      "recipeId": "bulgogi",
+      "ingredient": "kevätsipulia",
+      "kind": "MASS_VERIFIED",
+      "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250",
+      "reason": "Previously missing food-specific piece mass is now independently verified in the original AFCD API.",
+      "beforeMassG": null,
+      "afterMassG": 30,
+      "beforeCompositionId": "afcd-F006250-2026-10-24",
+      "afterCompositionId": "afcd-F006250-2026-10-24",
+      "removedGiRecordId": null,
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "kevätsipulia",
+      "kind": "MASS_VERIFIED",
+      "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250",
+      "reason": "Previously missing food-specific piece mass is now independently verified in the original AFCD API.",
+      "beforeMassG": null,
+      "afterMassG": 15,
+      "beforeCompositionId": "afcd-F006250-2026-10-24",
+      "afterCompositionId": "afcd-F006250-2026-10-24",
+      "removedGiRecordId": null,
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "baozi",
+      "ingredient": "kevätsipulia",
+      "kind": "MASS_VERIFIED",
+      "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250",
+      "reason": "Previously missing food-specific piece mass is now independently verified in the original AFCD API.",
+      "beforeMassG": null,
+      "afterMassG": 30,
+      "beforeCompositionId": "afcd-F006250-2026-10-24",
+      "afterCompositionId": "afcd-F006250-2026-10-24",
+      "removedGiRecordId": null,
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "bulgogi",
+      "ingredient": "soijakastiketta",
+      "kind": "MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31",
+      "reason": "Use the existing exact composition record food-specific mass; the former 1 g/ml or 15 g/rkl was not its published portion.",
+      "beforeMassG": 60,
+      "afterMassG": 72,
+      "beforeCompositionId": "fineli-31-2026-10-24",
+      "afterCompositionId": "fineli-31-2026-10-24",
+      "removedGiRecordId": null,
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "soijakastiketta",
+      "kind": "MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31",
+      "reason": "Use the existing exact composition record food-specific mass; the former 1 g/ml or 15 g/rkl was not its published portion.",
+      "beforeMassG": 15,
+      "afterMassG": 18,
+      "beforeCompositionId": "fineli-31-2026-10-24",
+      "afterCompositionId": "fineli-31-2026-10-24",
+      "removedGiRecordId": null,
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "baozi",
+      "ingredient": "soijakastiketta",
+      "kind": "MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31",
+      "reason": "Use the existing exact composition record food-specific mass; the former 1 g/ml or 15 g/rkl was not its published portion.",
+      "beforeMassG": 30,
+      "afterMassG": 36,
+      "beforeCompositionId": "fineli-31-2026-10-24",
+      "afterCompositionId": "fineli-31-2026-10-24",
+      "removedGiRecordId": null,
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "ingredient": "soijakastiketta",
+      "kind": "MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31",
+      "reason": "Use the existing exact composition record food-specific mass; the former 1 g/ml or 15 g/rkl was not its published portion.",
+      "beforeMassG": 30,
+      "afterMassG": 36,
+      "beforeCompositionId": "fineli-31-release-20",
+      "afterCompositionId": "fineli-31-release-20",
+      "removedGiRecordId": null,
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "baozi",
+      "ingredient": "maissitärkkelystä",
+      "kind": "FOOD_AND_MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/27",
+      "reason": "Corn starch #27 (7 g/tbsp), not potato starch #162 or an undocumented 8 g/tbsp.",
+      "beforeMassG": 8,
+      "afterMassG": 7,
+      "beforeCompositionId": "fineli-162-2026-10-24",
+      "afterCompositionId": "fineli-27-2026-10-25",
+      "removedGiRecordId": null,
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "koshari",
+      "ingredient": "maissitärkkelystä",
+      "kind": "MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/27",
+      "reason": "Corn starch #27 (7 g/tbsp), not potato starch #162 or an undocumented 8 g/tbsp.",
+      "beforeMassG": 16,
+      "afterMassG": 14,
+      "beforeCompositionId": "fineli-27-2026-10-25",
+      "afterCompositionId": "fineli-27-2026-10-25",
+      "removedGiRecordId": null,
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "ingredient": "neutraalia öljyä",
+      "kind": "MASS_CORRECTED",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/541",
+      "reason": "Align the already selected food record and its household measure; CHO effect is zero, fat effect stays a separate macro proposal.",
+      "beforeMassG": 27.4,
+      "afterMassG": 27,
+      "beforeCompositionId": "fineli-541-release-20",
+      "afterCompositionId": "fineli-541-release-20",
+      "removedGiRecordId": null,
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "bulgogi",
+      "ingredient": "jasmiiniriisiä",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Rice category mean is not a tested jasmine cultivar/cooking match.",
+      "beforeMassG": 300,
+      "afterMassG": 300,
+      "beforeCompositionId": "afcd-F007682-2026-10-24",
+      "afterCompositionId": "afcd-F007682-2026-10-24",
+      "removedGiRecordId": "rice-category-mean-gi-67",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "bulgogi",
+      "ingredient": "soijakastiketta",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Whole-legume mean is not fermented soy sauce.",
+      "beforeMassG": 72,
+      "afterMassG": 72,
+      "beforeCompositionId": "fineli-31-2026-10-24",
+      "afterCompositionId": "fineli-31-2026-10-24",
+      "removedGiRecordId": "legumes-category-mean-gi-34",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "bulgogi",
+      "ingredient": "fariinisokeria",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Sugars/syrups group mean is not this brown-sugar product.",
+      "beforeMassG": 12,
+      "afterMassG": 12,
+      "beforeCompositionId": "afcd-F008969-2026-10-24",
+      "afterCompositionId": "afcd-F008969-2026-10-24",
+      "removedGiRecordId": "sugar-syrups-category-mean-gi-58",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "bulgogi",
+      "ingredient": "päärynää",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Raw pear mean does not validate pear heated in the beef marinade.",
+      "beforeMassG": 100,
+      "afterMassG": 100,
+      "beforeCompositionId": "fineli-11062-2026-10-24",
+      "afterCompositionId": "fineli-11062-2026-10-24",
+      "removedGiRecordId": "pear-raw-mean-gi-38-2002",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "kypsää tomaattia",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Raw whole-tomato GI does not validate tomatoes fried until softened into sauce.",
+      "beforeMassG": 500,
+      "afterMassG": 500,
+      "beforeCompositionId": "fineli-352-2026-10-24",
+      "afterCompositionId": "fineli-352-2026-10-24",
+      "removedGiRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "keitettyä riisiä",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Unspecified cooked rice has no cultivar/preparation-matched GI.",
+      "beforeMassG": 450,
+      "afterMassG": 450,
+      "beforeCompositionId": "fineli-1370-2026-10-24",
+      "afterCompositionId": "fineli-1370-2026-10-24",
+      "removedGiRecordId": "rice-category-mean-gi-67",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "sokeria",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Sugars/syrups group mean is not an individual sucrose measurement.",
+      "beforeMassG": 4,
+      "afterMassG": 4,
+      "beforeCompositionId": "fineli-1-2026-10-24",
+      "afterCompositionId": "fineli-1-2026-10-24",
+      "removedGiRecordId": "sugar-syrups-category-mean-gi-58",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "baozi",
+      "ingredient": "sokeria",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Sugars/syrups group mean does not establish sugar remaining after yeast fermentation and steaming.",
+      "beforeMassG": 12,
+      "afterMassG": 12,
+      "beforeCompositionId": "fineli-1-2026-10-24",
+      "afterCompositionId": "fineli-1-2026-10-24",
+      "removedGiRecordId": "sugar-syrups-category-mean-gi-58",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "baozi",
+      "ingredient": "kiinankaalia",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Vegetable category mean does not establish squeezed and steamed Chinese cabbage.",
+      "beforeMassG": 150,
+      "afterMassG": 150,
+      "beforeCompositionId": "fineli-359-2026-10-24",
+      "afterCompositionId": "fineli-359-2026-10-24",
+      "removedGiRecordId": "vegetables-category-mean-gi-66",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "munakoisoa",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Vegetable group mean is not roasted and baked aubergine.",
+      "beforeMassG": 800,
+      "afterMassG": 800,
+      "beforeCompositionId": "fineli-362-2026-10-24",
+      "afterCompositionId": "fineli-362-2026-10-24",
+      "removedGiRecordId": "vegetables-category-mean-gi-66",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "perunoita",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Potato group mean is not this unspecified cultivar, roasted then baked.",
+      "beforeMassG": 500,
+      "afterMassG": 500,
+      "beforeCompositionId": "fineli-205-2026-10-24",
+      "afterCompositionId": "fineli-205-2026-10-24",
+      "removedGiRecordId": "potatoes-category-mean-gi-71",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "tomaattimurskaa",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Raw whole tomato is not canned crushed tomato simmered then baked.",
+      "beforeMassG": 400,
+      "afterMassG": 400,
+      "beforeCompositionId": "fineli-398-2026-10-24",
+      "afterCompositionId": "fineli-398-2026-10-24",
+      "removedGiRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "maitoa",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Dairy category mean does not establish this milk in cooked bechamel.",
+      "beforeMassG": 600,
+      "afterMassG": 600,
+      "beforeCompositionId": "fineli-689-2026-10-24",
+      "afterCompositionId": "fineli-689-2026-10-24",
+      "removedGiRecordId": "dairy-category-mean-gi-35",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "raastettua kovaa juustoa",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Dairy category mean is not unspecified hard cheese.",
+      "beforeMassG": 80,
+      "afterMassG": 80,
+      "beforeCompositionId": "fineli-643-2026-10-24",
+      "afterCompositionId": "fineli-643-2026-10-24",
+      "removedGiRecordId": "dairy-category-mean-gi-35",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "mustapippuria",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Vegetable category mean is not ground black pepper.",
+      "beforeMassG": 0.5,
+      "afterMassG": 0.5,
+      "beforeCompositionId": "afcd-F006618-2026-10-24",
+      "afterCompositionId": "afcd-F006618-2026-10-24",
+      "removedGiRecordId": "vegetables-category-mean-gi-66",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "ingredient": "herneitä",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Legume category mean is not the selected green peas heated in a wok.",
+      "beforeMassG": 100,
+      "afterMassG": 100,
+      "beforeCompositionId": "fineli-370-release-20",
+      "afterCompositionId": "fineli-370-release-20",
+      "removedGiRecordId": "legumes-category-mean-gi-34",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "ingredient": "soba-nuudeli",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Pasta category mean does not establish a soba product of unspecified buckwheat/wheat fraction. Hätönen-style transfer is not assumed; see matched-study review.",
+      "beforeMassG": 100,
+      "afterMassG": 100,
+      "beforeCompositionId": "afcd-F006043-release-3",
+      "afterCompositionId": "afcd-F006043-release-3",
+      "removedGiRecordId": "pasta-category-mean-gi-52",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "ingredient": "pinaatti",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Vegetable category mean is not spinach, and the 1-piece mass remains unknown.",
+      "beforeMassG": null,
+      "afterMassG": null,
+      "beforeCompositionId": "afcd-F008749-release-3",
+      "afterCompositionId": "afcd-F008749-release-3",
+      "removedGiRecordId": "vegetables-category-mean-gi-66",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "ingredient": "riisijauho",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Rice category mean is not rice flour gelatinised in coconut milk.",
+      "beforeMassG": 100,
+      "afterMassG": 100,
+      "beforeCompositionId": "fineli-182-2026-10-25",
+      "afterCompositionId": "fineli-182-2026-10-25",
+      "removedGiRecordId": "rice-category-mean-gi-67",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    },
+    {
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "ingredient": "palmusokeri",
+      "kind": "GI_REMOVED",
+      "source": "https://doi.org/10.1093/ajcn/nqab233",
+      "reason": "Sugars/syrups group mean does not identify the palm-sugar product or its prepared syrup.",
+      "beforeMassG": 150,
+      "afterMassG": 150,
+      "beforeCompositionId": "fineli-1-2026-10-25",
+      "afterCompositionId": "fineli-1-2026-10-25",
+      "removedGiRecordId": "sugar-syrups-category-mean-gi-58",
+      "technicalReview": "REPRODUCED_AND_CONSERVATIVE_SOURCE_CORRECTION; no activation or independent approval in R3"
+    }
+  ],
+  "sourceFindings": [
+    {
+      "id": "spring-onion",
+      "finding": "AFCD F006250 live original measurement15g per edible spring onion;3 corrections.78% analysed-part statement is not a second edible-mass deduction. Reference estimate, not measured recipe mass."
+    },
+    {
+      "id": "soy",
+      "finding": "Approved local Fineli31 RKL18g,DL120g,CHO9.5g/100g;4 corrections; no claim that live Fineli API was readable."
+    },
+    {
+      "id": "corn",
+      "finding": "Fineli27 corn CHO86g/100g,RKL7g;2 mass corrections;baozi formerFineli162 potato identity corrected. No corn GI inferred."
+    },
+    {
+      "id": "oil",
+      "finding": "Fineli541 RKL13.5g;1 Yangzhou correction. Actual pan retention is an estimate."
+    },
+    {
+      "id": "gi-removals",
+      "finding": "All20 removals retain unavailableGI: group means or raw/processed mismatches do not justify recipe assignments; new original-paper review in gk-r3-gi-studies.json supplies no replacement binding."
+    }
+  ],
+  "preciseCorrectionProposals": [
+    {
+      "recipeId": "bulgogi",
+      "issue": "R2 proposed calculation inherits retention1/no-discard description without proving marinade consumption; sugar12g/rkl and sesameoil13.5g/rkl unsupported (USDA sesame tablespoon13.6g is not13.5).",
+      "action": "Change claim to conditional all-input subtotal; specify marinade consumption and weigh/verify sugar and oil before public full-macro update. Keep isolated source-backed corrections."
+    },
+    {
+      "recipeId": "baozi",
+      "issue": "R2 proposal omits7g nonzero yeast; cabbage squeeze and fermentation contradict an exact all-input-to-eaten equivalence.",
+      "action": "Add AFCD F009606 yeast row;define cabbage mass basis and fermentation retention. Adding yeast alone gives inputCHO80.49g/serving,not validated final total. Sesame teaspoon gap resolved byUSDA171016;ginger tablespoon remains open."
+    },
+    {
+      "recipeId": "koshari",
+      "issue": "R2 proposed retention/no-discard wording conflicts with drained legumes/pasta and fried onions on paper.",
+      "action": "Label95.48g as conditional listed-input subtotal; determine retained coating,oil and cooking losses before public full-macro correction."
+    }
+  ]
+}

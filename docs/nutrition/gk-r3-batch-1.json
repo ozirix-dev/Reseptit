@@ -1,0 +1,3789 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "e8da2c9417e2aeff55a85d599b3b7e1ad465f36c",
+  "batch": 1,
+  "publicationState": "RESEARCH_ONLY_NOT_APPROVED",
+  "recipes": [
+    {
+      "recipeId": "bulgogi",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/paaruoat/bulgogi.md",
+      "sourceSha256": "c84490ec24ce44ad3f0930dbb242db9017a01431f2d910e0723af526fffc8cc8",
+      "servings": 4,
+      "servingsMatchesRecipe": true,
+      "calculationPath": "docs/nutrition/calculations/bulgogi.json",
+      "carbohydrateDefinition": "Available sugars/starch excluding fibre and polyols; Fineli CHOAVL or AFCD AVAILCHO. Fibre is not subtracted twice. No invented resistant-starch correction.",
+      "ingredients": [
+        {
+          "index": 0,
+          "recipeIngredient": {
+            "amount": 600,
+            "unit": "g",
+            "item": "naudan ulkofileetä",
+            "note": "ohuina viipaleina"
+          },
+          "calculationItem": "naudan ulkofileetä",
+          "stateMatch": "raw lean beef sirloin",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 600.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F000810",
+            "name": "Beef, sirloin steak, lean, raw",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F000810",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Beef, sirloin steak, lean, raw",
+            "derivation": "Analysed",
+            "apiSha256": "16bcfe8fa144019fba333bb952359c9cb3ef87c58ed30221b232c92c845354a1",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 0,
+              "protein": 24.1,
+              "fat": 1.9,
+              "fibre": 0
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "100%",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 0,
+            "protein": 24.1,
+            "fat": 1.9,
+            "fibre": 0
+          },
+          "edibleMassG": 600.0,
+          "availableCarbohydrateContributionPerServingG": 0.0,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 1,
+          "recipeIngredient": {
+            "amount": 300,
+            "unit": "g",
+            "item": "jasmiiniriisiä",
+            "note": "kuivapaino"
+          },
+          "calculationItem": "jasmiiniriisiä",
+          "stateMatch": "uncooked white rice",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 300.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F007682",
+            "name": "Rice, white, uncooked",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F007682",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Rice, white, uncooked",
+            "derivation": "Analysed",
+            "apiSha256": "e02405bd537da27ae5b1991a748bce0ab9dc02d4af7f95b48c306455e66a35ff",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 74,
+              "protein": 7,
+              "fat": 0.9,
+              "fibre": 0.8
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "100%",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 74,
+            "protein": 7,
+            "fat": 0.9,
+            "fibre": 0.8
+          },
+          "edibleMassG": 300.0,
+          "availableCarbohydrateContributionPerServingG": 55.5,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 2,
+          "recipeIngredient": {
+            "amount": 60,
+            "unit": "ml",
+            "item": "soijakastiketta"
+          },
+          "calculationItem": "soijakastiketta",
+          "stateMatch": "soy sauce",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 31 foodaddunit DL",
+            "sourceGramsPerUnit": 1.2,
+            "usedGramsPerUnit": 1.2,
+            "assumedGrams": 72.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "31",
+            "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/31",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 120.0,
+              "RKL": 18.0,
+              "TL": 6.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 9.5,
+            "protein": 5.17,
+            "fat": 0.08,
+            "fibre": 0.0
+          },
+          "edibleMassG": 72.0,
+          "availableCarbohydrateContributionPerServingG": 1.71,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 3,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "fariinisokeria"
+          },
+          "calculationItem": "fariinisokeria",
+          "stateMatch": "brown sugar",
+          "mass": {
+            "status": "UNVERIFIED_CONVERSION",
+            "source": "Ingredient-specific tablespoon mass: 12 g/rkl for fariinisokeria.",
+            "usedGramsPerUnit": 12,
+            "assumedGrams": 12.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F008969",
+            "name": "Sugar, brown",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F008969",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Sugar, brown",
+            "derivation": "Analysed",
+            "apiSha256": "cd54e0f0134067f9c41bd4b5eb26097622329381a975bf0ca75bacfcfd9b67fe",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 96.8,
+              "protein": 0.2,
+              "fat": 0,
+              "fibre": 0
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Sachet/Packet, 3 g",
+                "amount": 3
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "100%",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 96.8,
+            "protein": 0.2,
+            "fat": 0,
+            "fibre": 0
+          },
+          "edibleMassG": 12.0,
+          "availableCarbohydrateContributionPerServingG": 2.904,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 4,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "seesamiöljyä"
+          },
+          "calculationItem": "seesamiöljyä",
+          "stateMatch": "sesame oil",
+          "mass": {
+            "status": "UNVERIFIED_CONVERSION",
+            "source": "Ingredient-specific tablespoon mass: 13.5 g/rkl for seesamiöljyä.",
+            "usedGramsPerUnit": 13.5,
+            "assumedGrams": 13.5
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F006187",
+            "name": "Oil, sesame",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006187",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Oil, sesame",
+            "derivation": "Analysed",
+            "apiSha256": "27a5fd27cb64a35f9e46e84f1617a26588fd417070bd1ce1cdb3f4324d22f0c9",
+            "apiBasis": "100 mL",
+            "specificGravity": 0.92,
+            "apiMacros": {
+              "availableCarbohydrate": 0,
+              "protein": 0,
+              "fat": 92,
+              "fibre": 0
+            },
+            "measurements": [
+              {
+                "measurement": "100 mL",
+                "amount": 100
+              },
+              {
+                "measurement": "Custom (mL)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "100%",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 0,
+            "protein": 0,
+            "fat": 100,
+            "fibre": 0
+          },
+          "edibleMassG": 13.5,
+          "availableCarbohydrateContributionPerServingG": 0.0,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 5,
+          "recipeIngredient": {
+            "amount": 3,
+            "unit": "kpl",
+            "item": "valkosipulinkynttä",
+            "note": "hienonnettuna"
+          },
+          "calculationItem": "valkosipulinkynttä",
+          "stateMatch": "raw garlic",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 393 foodaddunit KPL_M",
+            "sourceGramsPerUnit": 3.5,
+            "usedGramsPerUnit": 3.5,
+            "assumedGrams": 10.5
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F004193",
+            "name": "Garlic, peeled, fresh, raw",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F004193",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Garlic, peeled, fresh, raw",
+            "derivation": "Analysed",
+            "apiSha256": "ea59beb8cc44f11436fc4a02367cec9610585779740c05dfb1c50eece8309ea2",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 10.2,
+              "protein": 6.1,
+              "fat": 2.8,
+              "fibre": 16.9
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "83% (flesh)",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 10.2,
+            "protein": 6.1,
+            "fat": 2.8,
+            "fibre": 16.9
+          },
+          "edibleMassG": 10.5,
+          "availableCarbohydrateContributionPerServingG": 0.26775,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 6,
+          "recipeIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "päärynää",
+            "note": "hienoksi raastettuna"
+          },
+          "calculationItem": "päärynää",
+          "stateMatch": "peeled pear",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 100.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "11062",
+            "name": "PÄÄRYNÄ, KUORITTU",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11062",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "KPL_S": 115.0,
+              "KPL_M": 195.0,
+              "KPL_L": 280.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 8.0,
+            "protein": 0.31,
+            "fat": 0.0875,
+            "fibre": 2.8
+          },
+          "edibleMassG": 100.0,
+          "availableCarbohydrateContributionPerServingG": 2.0,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 7,
+          "recipeIngredient": {
+            "amount": 0.5,
+            "unit": "kpl",
+            "item": "keltasipulia",
+            "note": "ohuina viipaleina"
+          },
+          "calculationItem": "keltasipulia",
+          "stateMatch": "yellow onion",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 335 foodaddunit KPL_M",
+            "sourceGramsPerUnit": 55.0,
+            "usedGramsPerUnit": 55,
+            "assumedGrams": 27.5
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "335",
+            "name": "SIPULI, KELTASIPULI",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "KPL_S": 30.0,
+              "KPL_M": 55.0,
+              "KPL_L": 200.0,
+              "DL": 90.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 4.8,
+            "protein": 1.25,
+            "fat": 0.1,
+            "fibre": 1.2
+          },
+          "edibleMassG": 27.5,
+          "availableCarbohydrateContributionPerServingG": 0.33,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 8,
+          "recipeIngredient": {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "kevätsipulia",
+            "note": "viipaloituna"
+          },
+          "calculationItem": "kevätsipulia",
+          "stateMatch": "fresh spring onion",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "AFCD F006250 Spring Onion 15 g; edible bulb/stem reference; no second 78% deduction",
+            "sourceGramsPerUnit": 15,
+            "usedGramsPerUnit": 15,
+            "assumedGrams": 30.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F006250",
+            "name": "Onion, spring, fresh, raw",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Onion, spring, fresh, raw",
+            "derivation": "Analysed",
+            "apiSha256": "8a52d87460ceb7df9747ca7e88780fe5850a201b998cab2d37cbb2754844e826",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 4.6,
+              "protein": 1.7,
+              "fat": 0.2,
+              "fibre": 1.9
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Spring Onion, 15 g",
+                "amount": 15
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "78% (bulb, stem)",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 4.6,
+            "protein": 1.7,
+            "fat": 0.2,
+            "fibre": 1.9
+          },
+          "edibleMassG": 30.0,
+          "availableCarbohydrateContributionPerServingG": 0.345,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 9,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "seesaminsiemeniä"
+          },
+          "calculationItem": "seesaminsiemeniä",
+          "stateMatch": "hulled sesame seeds",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 34245 foodaddunit RKL",
+            "sourceGramsPerUnit": 8.5,
+            "usedGramsPerUnit": 8.5,
+            "assumedGrams": 8.5
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "34245",
+            "name": "SEESAMINSIEMEN, VALKOINEN, KOKONAINEN, KUORITTU",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/34245",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "DRIE",
+            "portionMassG": {
+              "DL": 60.0,
+              "RKL": 8.5,
+              "TL": 3.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 1.171,
+            "protein": 24.6,
+            "fat": 59.7,
+            "fibre": 11.3
+          },
+          "edibleMassG": 8.5,
+          "availableCarbohydrateContributionPerServingG": 0.02488375,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 10,
+          "recipeIngredient": {
+            "amount": 0.25,
+            "unit": "tl",
+            "item": "mustapippuria"
+          },
+          "calculationItem": "mustapippuria",
+          "stateMatch": "ground black pepper",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 11177 foodaddunit TL",
+            "sourceGramsPerUnit": 2.0,
+            "usedGramsPerUnit": 2,
+            "assumedGrams": 0.5
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F006618",
+            "name": "Pepper, black, ground",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Pepper, black, ground",
+            "derivation": "Borrowed",
+            "apiSha256": "84f47d9ee677b4d9663b33c01c82abe6d7bfda1878a657287d4cbf4e5c8642a9",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 38.6,
+              "protein": 10.4,
+              "fat": 3.3,
+              "fibre": 25.3
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "100%",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 38.6,
+            "protein": 10.4,
+            "fat": 3.3,
+            "fibre": 25.3
+          },
+          "edibleMassG": 0.5,
+          "availableCarbohydrateContributionPerServingG": 0.04825,
+          "embeddedCompositionMatchesReference": true
+        }
+      ],
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 62.81,
+        "protein": 43.15,
+        "fat": 8.29,
+        "fibre": 2.18
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 63.13,
+        "protein": 43.32,
+        "fat": 8.3,
+        "fibre": 2.24
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.32,
+        "protein": 0.17,
+        "fat": 0.01,
+        "fibre": 0.06
+      },
+      "publishedAvailableCarbohydratePerServingG": 62.81,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "scenarioIsWholeEstimate": false,
+      "review": {
+        "batch": 1,
+        "decision": "PARTIAL_ONLY",
+        "preparation": "Marinate beef and onion for 20–30 minutes, rinse/cook 300 g dry jasmine rice, sear beef in batches, add spring onion and sesame. Recipe does not say whether all marinade enters the pan.",
+        "compositionMatch": "Raw lean sirloin, dry white rice as a representative for unspecified jasmine, peeled pear, raw alliums and sauces. These are average composition estimates, not measured brands. AFCD spring-onion edible reference portion verified live; Fineli soy and garlic portions checked in the approved local release.",
+        "amountReview": "4 servings. R2 proposes soy 60 ml × 1.2 = 72 g and garlic 3 × 3.5 = 10.5 g. Spring onion already 2 × 15 g in nutrition calculation. Brown sugar 12 g/rkl and sesame oil 13.5 g/rkl are still not linked to food-specific portion evidence in R2; pepper 2 g/tl is supported by Fineli 11177.",
+        "retention": "R2 sets all retention factors to 1 and claims no discarded liquid. This is not established for this marinade or rinsed rice. Do not invent a loss percentage.",
+        "strictComparison": "R2 arithmetic reproduced; corrected input scenario is not the carbohydrate actually eaten until marinade scope is settled.",
+        "uncertainties": [
+          "Amount of marinade retained",
+          "Jasmine variety/representative dry rice",
+          "Brown-sugar spoon mass",
+          "Sesame-oil spoon mass"
+        ],
+        "blockerCategories": [
+          "PREPARATION_ALTERNATIVE",
+          "AMOUNT_EVIDENCE"
+        ],
+        "nextAction": "Specify whether all marinade is cooked and consumed; weigh sugar and oil or cite food-specific spoon conversion. Keep R2 corrections as isolated input proposals."
+      },
+      "independentApproval": false,
+      "calculationSha256": "ce6ac7dbba143b35903de135aeee83c104812bfb73986d84d39c1f1cf5d2c00f"
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/paaruoat/tomaatti-kananmuna-wokki.md",
+      "sourceSha256": "b861fd33f519bc2f7e08760704a25abbbac2ff9dded37fb7614c3fa17e2c7148",
+      "servings": 3,
+      "servingsMatchesRecipe": true,
+      "calculationPath": "docs/nutrition/calculations/tomaatti-kananmuna-wokki.json",
+      "carbohydrateDefinition": "Available sugars/starch excluding fibre and polyols; Fineli CHOAVL or AFCD AVAILCHO. Fibre is not subtracted twice. No invented resistant-starch correction.",
+      "ingredients": [
+        {
+          "index": 0,
+          "recipeIngredient": {
+            "amount": 4,
+            "unit": "kpl",
+            "item": "kananmunaa"
+          },
+          "calculationItem": "kananmunaa",
+          "stateMatch": "raw edible egg",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 858 foodaddunit KPL_M",
+            "sourceGramsPerUnit": 55.0,
+            "usedGramsPerUnit": 55,
+            "assumedGrams": 220.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "858",
+            "name": "KANANMUNA, KUORETON",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "KPL_M": 55.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 0.3,
+            "protein": 12.61,
+            "fat": 9.24,
+            "fibre": 0.0
+          },
+          "edibleMassG": 220.0,
+          "availableCarbohydrateContributionPerServingG": 0.22,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 1,
+          "recipeIngredient": {
+            "amount": 4,
+            "unit": "kpl",
+            "item": "kypsää tomaattia",
+            "note": "lohkoina"
+          },
+          "calculationItem": "kypsää tomaattia",
+          "stateMatch": "raw tomato",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 352 foodaddunit KPL_M",
+            "sourceGramsPerUnit": 125.0,
+            "usedGramsPerUnit": 125,
+            "assumedGrams": 500.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "352",
+            "name": "TOMAATTI",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/352",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "KPL_S": 75.0,
+              "KPL_M": 125.0,
+              "KPL_L": 170.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 3.45,
+            "protein": 0.55,
+            "fat": 0.3,
+            "fibre": 0.4
+          },
+          "edibleMassG": 500.0,
+          "availableCarbohydrateContributionPerServingG": 5.75,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 2,
+          "recipeIngredient": {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "neutraalia öljyä"
+          },
+          "calculationItem": "neutraalia öljyä",
+          "stateMatch": "canola oil proxy",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 535 foodaddunit RKL",
+            "sourceGramsPerUnit": 13.5,
+            "usedGramsPerUnit": 13.5,
+            "assumedGrams": 27.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F006159",
+            "name": "Oil, canola",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006159",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Oil, canola",
+            "derivation": "Analysed",
+            "apiSha256": "9d52c1ab8e4fce207bf933ba6dccc211dbd99dc068b99de87a03765419ef3b8d",
+            "apiBasis": "100 mL",
+            "specificGravity": 0.92,
+            "apiMacros": {
+              "availableCarbohydrate": 0,
+              "protein": 0,
+              "fat": 92,
+              "fibre": 0
+            },
+            "measurements": [
+              {
+                "measurement": "100 mL",
+                "amount": 100
+              },
+              {
+                "measurement": "Custom (mL)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "100%",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 0,
+            "protein": 0,
+            "fat": 100,
+            "fibre": 0
+          },
+          "edibleMassG": 27.0,
+          "availableCarbohydrateContributionPerServingG": 0.0,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 3,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "tl",
+            "item": "sokeria"
+          },
+          "calculationItem": "sokeria",
+          "stateMatch": "white sugar",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 1 foodaddunit TL",
+            "sourceGramsPerUnit": 4.0,
+            "usedGramsPerUnit": 4,
+            "assumedGrams": 4.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "1",
+            "name": "SOKERI",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/1",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "KPL_S": 2.0,
+              "KPL_M": 3.0,
+              "KPL_L": 4.0,
+              "DL": 85.0,
+              "RKL": 12.0,
+              "TL": 4.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 99.9,
+            "protein": 0.0,
+            "fat": 0.0,
+            "fibre": 0.0
+          },
+          "edibleMassG": 4.0,
+          "availableCarbohydrateContributionPerServingG": 1.332,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 4,
+          "recipeIngredient": {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "suolaa"
+          },
+          "calculationItem": "suolaa",
+          "stateMatch": "documented low-impact seasoning or nutrient-free item",
+          "mass": {
+            "status": "ZERO_MACRO",
+            "source": "Water and salt have no material macro contribution.",
+            "assumedGrams": null
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": "Water and salt have no material macro contribution."
+        },
+        {
+          "index": 5,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "soijakastiketta"
+          },
+          "calculationItem": "soijakastiketta",
+          "stateMatch": "soy sauce",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 31 foodaddunit RKL",
+            "sourceGramsPerUnit": 18.0,
+            "usedGramsPerUnit": 18,
+            "assumedGrams": 18.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "31",
+            "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/31",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 120.0,
+              "RKL": 18.0,
+              "TL": 6.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 9.5,
+            "protein": 5.17,
+            "fat": 0.08,
+            "fibre": 0.0
+          },
+          "edibleMassG": 18.0,
+          "availableCarbohydrateContributionPerServingG": 0.57,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 6,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "kevätsipulia",
+            "note": "viipaleina"
+          },
+          "calculationItem": "kevätsipulia",
+          "stateMatch": "fresh spring onion",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "AFCD F006250 Spring Onion 15 g; edible bulb/stem reference; no second 78% deduction",
+            "sourceGramsPerUnit": 15,
+            "usedGramsPerUnit": 15,
+            "assumedGrams": 15.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F006250",
+            "name": "Onion, spring, fresh, raw",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Onion, spring, fresh, raw",
+            "derivation": "Analysed",
+            "apiSha256": "8a52d87460ceb7df9747ca7e88780fe5850a201b998cab2d37cbb2754844e826",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 4.6,
+              "protein": 1.7,
+              "fat": 0.2,
+              "fibre": 1.9
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Spring Onion, 15 g",
+                "amount": 15
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "78% (bulb, stem)",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 4.6,
+            "protein": 1.7,
+            "fat": 0.2,
+            "fibre": 1.9
+          },
+          "edibleMassG": 15.0,
+          "availableCarbohydrateContributionPerServingG": 0.23,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 7,
+          "recipeIngredient": {
+            "amount": 450,
+            "unit": "g",
+            "item": "keitettyä riisiä",
+            "note": "tarjoiluun"
+          },
+          "calculationItem": "keitettyä riisiä",
+          "stateMatch": "cooked plain rice",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 450.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "1370",
+            "name": "RIISI, KEITETTY, SUOLATON",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/1370",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "BOIL",
+            "portionMassG": {
+              "DL": 80.0,
+              "RKL": 12.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 20.618,
+            "protein": 1.65,
+            "fat": 0.191,
+            "fibre": 0.627
+          },
+          "edibleMassG": 450.0,
+          "availableCarbohydrateContributionPerServingG": 30.927,
+          "embeddedCompositionMatchesReference": true
+        }
+      ],
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 38.93,
+        "protein": 12.98,
+        "fat": 16.58,
+        "fibre": 1.7
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 39.03,
+        "protein": 13.03,
+        "fat": 16.58,
+        "fibre": 1.7
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.1,
+        "protein": 0.05,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "publishedAvailableCarbohydratePerServingG": 38.93,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 39.03,
+      "scenarioIsWholeEstimate": true,
+      "review": {
+        "batch": 1,
+        "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+        "preparation": "4 eggs, 4 tomatoes and the two measured spoonfuls of oil are cooked in one pan. Eggs return to the pan; sauce is consumed. Serve with the listed 450 g already-cooked rice; no dry-rice multiplier.",
+        "compositionMatch": "Fineli edible egg 858, ripe raw tomato 352, cooked rice 1370, sugar 1, soy 31; AFCD canola F006159 and raw spring onion F006250. Canola oil spoon mass uses Fineli 535 (same oil type), not an Australian tablespoon volume.",
+        "amountReview": "3 servings. Egg 55 g and tomato 125 g are medium edible reference portions, not weighed actual produce. Sugar TL 4 g; canola RKL 13.5 g; spring onion 15 g. Correct soy RKL 15 to 18 g.",
+        "retention": "Full listed ingredients retained is a reasonable recipe-level estimate because no liquid is drained or ingredient discarded. Water evaporation does not remove whole-recipe carbohydrate. Oil sticking to pan affects fat and is not measured.",
+        "strictComparison": "Available carbohydrate rises from 38.93 to 39.03 g/serving solely through the soy correction; no fibre subtraction twice. All nonzero-carbohydrate ingredients included; salt contributes zero to these macros.",
+        "uncertainties": [
+          "Medium piece sizes",
+          "Generic cooked-rice hydration and variety",
+          "Average source composition",
+          "Full-retention cooking estimate"
+        ],
+        "blockerCategories": [
+          "INDEPENDENT_ACCEPTANCE_PENDING"
+        ],
+        "nextAction": "Independent review of explicit reference-portion assumptions, then a bounded nutrition-data correction; no GI proposal."
+      },
+      "independentApproval": false,
+      "calculationSha256": "c61d841a3238cff6707c66829ea16265a29b220273703da31901527ed347657b"
+    },
+    {
+      "recipeId": "baozi",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/paaruoat/baozi.md",
+      "sourceSha256": "af8efd8db3bbfc7a57f4e75fe537f88b03e9dfe4227ae586905a6c046b60f208",
+      "servings": 4,
+      "servingsMatchesRecipe": true,
+      "calculationPath": "docs/nutrition/calculations/baozi.json",
+      "carbohydrateDefinition": "Available sugars/starch excluding fibre and polyols; Fineli CHOAVL or AFCD AVAILCHO. Fibre is not subtracted twice. No invented resistant-starch correction.",
+      "ingredients": [
+        {
+          "index": 0,
+          "recipeIngredient": {
+            "amount": 400,
+            "unit": "g",
+            "item": "vehnäjauhoja"
+          },
+          "calculationItem": "vehnäjauhoja",
+          "stateMatch": "semi-coarse wheat flour",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 400.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "110",
+            "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "DL": 65.0,
+              "RKL": 10.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 73.998,
+            "protein": 11.6,
+            "fat": 1.56,
+            "fibre": 3.5
+          },
+          "edibleMassG": 400.0,
+          "availableCarbohydrateContributionPerServingG": 73.998,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 1,
+          "recipeIngredient": {
+            "amount": 2.5,
+            "unit": "dl",
+            "item": "lämmintä vettä"
+          },
+          "calculationItem": "lämmintä vettä",
+          "stateMatch": "documented low-impact seasoning or nutrient-free item",
+          "mass": {
+            "status": "ZERO_MACRO",
+            "source": "Water and salt have no material macro contribution.",
+            "assumedGrams": null
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": "Water and salt have no material macro contribution."
+        },
+        {
+          "index": 2,
+          "recipeIngredient": {
+            "amount": 7,
+            "unit": "g",
+            "item": "kuivahiivaa"
+          },
+          "calculationItem": "kuivahiivaa",
+          "stateMatch": "documented low-impact seasoning or nutrient-free item",
+          "mass": {
+            "status": "NONZERO_OMITTED",
+            "source": "Excluded minor dry yeast seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
+            "assumedGrams": null
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": "Excluded minor dry yeast seasoning; conservative per-serving upper bound is recorded and summed against project limits."
+        },
+        {
+          "index": 3,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "sokeria"
+          },
+          "calculationItem": "sokeria",
+          "stateMatch": "white sugar",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 1 foodaddunit RKL",
+            "sourceGramsPerUnit": 12.0,
+            "usedGramsPerUnit": 12,
+            "assumedGrams": 12.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "1",
+            "name": "SOKERI",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/1",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "KPL_S": 2.0,
+              "KPL_M": 3.0,
+              "KPL_L": 4.0,
+              "DL": 85.0,
+              "RKL": 12.0,
+              "TL": 4.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 99.9,
+            "protein": 0.0,
+            "fat": 0.0,
+            "fibre": 0.0
+          },
+          "edibleMassG": 12.0,
+          "availableCarbohydrateContributionPerServingG": 2.997,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 4,
+          "recipeIngredient": {
+            "amount": 300,
+            "unit": "g",
+            "item": "sian jauhelihaa"
+          },
+          "calculationItem": "sian jauhelihaa",
+          "stateMatch": "raw pork mince, 16% fat",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 300.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "28946",
+            "name": "JAUHELIHA, SIAN, RASVAA 16 %",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/28946",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "DL": 75.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 0.0,
+            "protein": 18.81,
+            "fat": 15.7,
+            "fibre": 0.0
+          },
+          "edibleMassG": 300.0,
+          "availableCarbohydrateContributionPerServingG": 0.0,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 5,
+          "recipeIngredient": {
+            "amount": 150,
+            "unit": "g",
+            "item": "kiinankaalia",
+            "note": "hienonnettuna"
+          },
+          "calculationItem": "kiinankaalia",
+          "stateMatch": "raw Chinese cabbage",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 150.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "359",
+            "name": "KIINANKAALI",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/359",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "KPL_S": 300.0,
+              "KPL_M": 850.0,
+              "KPL_L": 1000.0,
+              "DL": 25.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 1.61,
+            "protein": 1.2,
+            "fat": 0.1,
+            "fibre": 1.2
+          },
+          "edibleMassG": 150.0,
+          "availableCarbohydrateContributionPerServingG": 0.60375,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 6,
+          "recipeIngredient": {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "kevätsipulia",
+            "note": "silputtuna"
+          },
+          "calculationItem": "kevätsipulia",
+          "stateMatch": "fresh spring onion",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "AFCD F006250 Spring Onion 15 g; edible bulb/stem reference; no second 78% deduction",
+            "sourceGramsPerUnit": 15,
+            "usedGramsPerUnit": 15,
+            "assumedGrams": 30.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F006250",
+            "name": "Onion, spring, fresh, raw",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Onion, spring, fresh, raw",
+            "derivation": "Analysed",
+            "apiSha256": "8a52d87460ceb7df9747ca7e88780fe5850a201b998cab2d37cbb2754844e826",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 4.6,
+              "protein": 1.7,
+              "fat": 0.2,
+              "fibre": 1.9
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Spring Onion, 15 g",
+                "amount": 15
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "78% (bulb, stem)",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 4.6,
+            "protein": 1.7,
+            "fat": 0.2,
+            "fibre": 1.9
+          },
+          "edibleMassG": 30.0,
+          "availableCarbohydrateContributionPerServingG": 0.345,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 7,
+          "recipeIngredient": {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "soijakastiketta"
+          },
+          "calculationItem": "soijakastiketta",
+          "stateMatch": "soy sauce",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 31 foodaddunit RKL",
+            "sourceGramsPerUnit": 18.0,
+            "usedGramsPerUnit": 18,
+            "assumedGrams": 36.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "31",
+            "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/31",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 120.0,
+              "RKL": 18.0,
+              "TL": 6.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 9.5,
+            "protein": 5.17,
+            "fat": 0.08,
+            "fibre": 0.0
+          },
+          "edibleMassG": 36.0,
+          "availableCarbohydrateContributionPerServingG": 0.855,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 8,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "tl",
+            "item": "seesamiöljyä"
+          },
+          "calculationItem": "seesamiöljyä",
+          "stateMatch": "sesame oil",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "USDA SR Legacy2018 FDC171016 food_portion row87779 sesame oil1tsp; reference spoon estimate, not weighing",
+            "usedGramsPerUnit": 4.5,
+            "assumedGrams": 4.5,
+            "sourceGramsPerUnit": 4.5
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F006187",
+            "name": "Oil, sesame",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006187",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Oil, sesame",
+            "derivation": "Analysed",
+            "apiSha256": "27a5fd27cb64a35f9e46e84f1617a26588fd417070bd1ce1cdb3f4324d22f0c9",
+            "apiBasis": "100 mL",
+            "specificGravity": 0.92,
+            "apiMacros": {
+              "availableCarbohydrate": 0,
+              "protein": 0,
+              "fat": 92,
+              "fibre": 0
+            },
+            "measurements": [
+              {
+                "measurement": "100 mL",
+                "amount": 100
+              },
+              {
+                "measurement": "Custom (mL)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "100%",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 0,
+            "protein": 0,
+            "fat": 100,
+            "fibre": 0
+          },
+          "edibleMassG": 4.5,
+          "availableCarbohydrateContributionPerServingG": 0.0,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 9,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "raastettua inkivääriä"
+          },
+          "calculationItem": "raastettua inkivääriä",
+          "stateMatch": "fresh ginger",
+          "mass": {
+            "status": "UNVERIFIED_CONVERSION",
+            "source": "Ingredient-specific tablespoon mass: 6 g/rkl for raastettua inkivääriä.",
+            "usedGramsPerUnit": 6,
+            "assumedGrams": 6.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F004213",
+            "name": "Ginger, peeled, fresh, raw",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F004213",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Ginger, peeled, fresh, raw",
+            "derivation": "Analysed",
+            "apiSha256": "3c867c9cba19f55ccc87fff4687ad09e3c23e8797c06c7dfd2496ba0c8350d06",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 4.8,
+              "protein": 0.8,
+              "fat": 0.4,
+              "fibre": 2.8
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "94% (flesh)",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 4.8,
+            "protein": 0.8,
+            "fat": 0.4,
+            "fibre": 2.8
+          },
+          "edibleMassG": 6.0,
+          "availableCarbohydrateContributionPerServingG": 0.072,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 10,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "maissitärkkelystä"
+          },
+          "calculationItem": "maissitärkkelystä",
+          "stateMatch": "IND",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 27 foodaddunit RKL",
+            "sourceGramsPerUnit": 7.0,
+            "usedGramsPerUnit": 7,
+            "assumedGrams": 7.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "27",
+            "name": "JAUHO, MAISSITÄRKKELYS",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/27",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 55.0,
+              "RKL": 7.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 86.0,
+            "protein": 0.35,
+            "fat": 0.6,
+            "fibre": 0.0
+          },
+          "edibleMassG": 7.0,
+          "availableCarbohydrateContributionPerServingG": 1.505,
+          "embeddedCompositionMatchesReference": true
+        }
+      ],
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 80.36,
+        "protein": 26.69,
+        "fat": 14.53,
+        "fibre": 4.16
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 80.38,
+        "protein": 26.77,
+        "fat": 14.54,
+        "fibre": 4.13
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.02,
+        "protein": 0.08,
+        "fat": 0.01,
+        "fibre": -0.03
+      },
+      "publishedAvailableCarbohydratePerServingG": 80.36,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "scenarioIsWholeEstimate": false,
+      "review": {
+        "batch": 1,
+        "decision": "PARTIAL_ONLY",
+        "preparation": "12 buns, 4 servings. Dough ferments 45+15 minutes then steams 12–15 minutes. Chinese cabbage is squeezed before filling; recipe mass basis before/after squeezing is not stated.",
+        "compositionMatch": "R2 correctly replaces potato starch Fineli 162 with cornstarch Fineli 27. AFCD F009606 live dry-yeast record is available: 6.3 g available carbohydrate, 36.4 g protein, 5 g fat and 26.9 g fibre per100g.",
+        "amountReview": "Soy 2 ×18=36g, corn 1×7=7g, spring onion30g. Yeast7g was omitted in R2 with a nonzero bound; its input contribution is0.11025g carbohydrate,0.637g protein,0.0875g fat,0.47075g fibre per serving. Ginger6g/rkl remains unsupported. Later USDA SR Legacy original-bulk lookup verifies sesame oil FDC171016 teaspoon4.5g; this resolves that specific gap without resolving the whole recipe.",
+        "retention": "Yeast fermentation consumes carbohydrate; squeezed cabbage loses water and soluble nutrients. All-ingredient retention is not a demonstrated final-product model. Neither loss is assigned a fabricated factor.",
+        "strictComparison": "The R2 80.38 g figure is an input subtotal with yeast omitted. Adding known yeast alone would make the input scenario 80.49 g/serving, not validate final cooked carbohydrate.",
+        "uncertainties": [
+          "Nonzero omitted yeast",
+          "Cabbage pre/post-squeeze mass",
+          "Fermentation retention",
+          "Grated ginger tablespoon mass"
+        ],
+        "blockerCategories": [
+          "CALCULATION_STRUCTURE",
+          "PREPARATION_ALTERNATIVE",
+          "AMOUNT_EVIDENCE"
+        ],
+        "nextAction": "Approve corn identity/soy quantities separately; rebuild full ingredient rows including yeast and define cabbage/fermentation basis before a public nutrition update.",
+        "followupEvidence": "After batch1 checkpoint, USDA original bulk was read during batch2/3; sesame oil teaspoon source added, decision remains PARTIAL_ONLY."
+      },
+      "independentApproval": false,
+      "calculationSha256": "61ed8001140e5d15589260780cf62d188e6ace2999ae74d767f944155ca0859b"
+    },
+    {
+      "recipeId": "koshari",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/paaruoat/koshari.md",
+      "sourceSha256": "8c950d15984179a0a91229ace7ced99a0b7cbff045ba65def32f50a992554f5f",
+      "servings": 4,
+      "servingsMatchesRecipe": true,
+      "calculationPath": "docs/nutrition/calculations/koshari.json",
+      "carbohydrateDefinition": "Available sugars/starch excluding fibre and polyols; Fineli CHOAVL or AFCD AVAILCHO. Fibre is not subtracted twice. No invented resistant-starch correction.",
+      "ingredients": [
+        {
+          "index": 0,
+          "recipeIngredient": {
+            "amount": 200,
+            "unit": "g",
+            "item": "ruskeita linssejä"
+          },
+          "calculationItem": "ruskeita linssejä",
+          "stateMatch": "dry green/brown lentils",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 200.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "399",
+            "name": "LINSSI, VIHREÄ/RUSKEA, KUIVATTU",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/399",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "DRIE",
+            "portionMassG": {
+              "DL": 80.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 45.7,
+            "protein": 24.38,
+            "fat": 1.13,
+            "fibre": 8.9
+          },
+          "edibleMassG": 200.0,
+          "availableCarbohydrateContributionPerServingG": 22.85,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 1,
+          "recipeIngredient": {
+            "amount": 200,
+            "unit": "g",
+            "item": "riisiä"
+          },
+          "calculationItem": "riisiä",
+          "stateMatch": "uncooked long-grain rice",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 200.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "11521",
+            "name": "RIISI PITKÄJYVÄINEN, PUUROUTUMATON",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11521",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "DL": 85.0,
+              "RKL": 12.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 79.0,
+            "protein": 8.13,
+            "fat": 1.03,
+            "fibre": 1.0
+          },
+          "edibleMassG": 200.0,
+          "availableCarbohydrateContributionPerServingG": 39.5,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 2,
+          "recipeIngredient": {
+            "amount": 150,
+            "unit": "g",
+            "item": "pientä makaronia"
+          },
+          "calculationItem": "pientä makaronia",
+          "stateMatch": "dry wheat macaroni",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 150.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "117",
+            "name": "MAKARONI, PASTA",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/117",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "DL": 55.0,
+              "RKL": 7.5
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 66.4,
+            "protein": 13.0,
+            "fat": 1.1,
+            "fibre": 3.0
+          },
+          "edibleMassG": 150.0,
+          "availableCarbohydrateContributionPerServingG": 24.9,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 3,
+          "recipeIngredient": {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "sipulia",
+            "note": "ohuina renkaina"
+          },
+          "calculationItem": "sipulia",
+          "stateMatch": "yellow onion",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 335 foodaddunit KPL_M",
+            "sourceGramsPerUnit": 55.0,
+            "usedGramsPerUnit": 55,
+            "assumedGrams": 110.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "335",
+            "name": "SIPULI, KELTASIPULI",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "KPL_S": 30.0,
+              "KPL_M": 55.0,
+              "KPL_L": 200.0,
+              "DL": 90.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 4.8,
+            "protein": 1.25,
+            "fat": 0.1,
+            "fibre": 1.2
+          },
+          "edibleMassG": 110.0,
+          "availableCarbohydrateContributionPerServingG": 1.32,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 4,
+          "recipeIngredient": {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "maissitärkkelystä",
+            "note": "sipuleille"
+          },
+          "calculationItem": "maissitärkkelystä",
+          "stateMatch": "IND",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 27 foodaddunit RKL",
+            "sourceGramsPerUnit": 7.0,
+            "usedGramsPerUnit": 7,
+            "assumedGrams": 14.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "27",
+            "name": "JAUHO, MAISSITÄRKKELYS",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/27",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 55.0,
+              "RKL": 7.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 86.0,
+            "protein": 0.35,
+            "fat": 0.6,
+            "fibre": 0.0
+          },
+          "edibleMassG": 14.0,
+          "availableCarbohydrateContributionPerServingG": 3.01,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 5,
+          "recipeIngredient": {
+            "amount": 3,
+            "unit": "rkl",
+            "item": "oliiviöljyä"
+          },
+          "calculationItem": "oliiviöljyä",
+          "stateMatch": "olive oil",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 536 foodaddunit RKL",
+            "sourceGramsPerUnit": 13.5,
+            "usedGramsPerUnit": 13.5,
+            "assumedGrams": 40.5
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "536",
+            "name": "OLIIVIÖLJY",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 90.0,
+              "RKL": 13.5,
+              "TL": 4.5
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 0.0,
+            "protein": 0.0,
+            "fat": 100.0,
+            "fibre": 0.0
+          },
+          "edibleMassG": 40.5,
+          "availableCarbohydrateContributionPerServingG": 0.0,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 6,
+          "recipeIngredient": {
+            "amount": 400,
+            "unit": "g",
+            "item": "tomaattimurskaa"
+          },
+          "calculationItem": "tomaattimurskaa",
+          "stateMatch": "canned crushed tomato",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 400.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "398",
+            "name": "TOMAATTIMURSKA",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "CANN",
+            "portionMassG": {
+              "DL": 100.0,
+              "RKL": 15.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 3.45,
+            "protein": 0.55,
+            "fat": 0.2,
+            "fibre": 0.4
+          },
+          "edibleMassG": 400.0,
+          "availableCarbohydrateContributionPerServingG": 3.45,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 7,
+          "recipeIngredient": {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "valkosipulinkynttä",
+            "note": "murskattuna"
+          },
+          "calculationItem": "valkosipulinkynttä",
+          "stateMatch": "raw garlic",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 393 foodaddunit KPL_M",
+            "sourceGramsPerUnit": 3.5,
+            "usedGramsPerUnit": 3.5,
+            "assumedGrams": 7.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F004193",
+            "name": "Garlic, peeled, fresh, raw",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F004193",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Garlic, peeled, fresh, raw",
+            "derivation": "Analysed",
+            "apiSha256": "ea59beb8cc44f11436fc4a02367cec9610585779740c05dfb1c50eece8309ea2",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 10.2,
+              "protein": 6.1,
+              "fat": 2.8,
+              "fibre": 16.9
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "83% (flesh)",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 10.2,
+            "protein": 6.1,
+            "fat": 2.8,
+            "fibre": 16.9
+          },
+          "edibleMassG": 7.0,
+          "availableCarbohydrateContributionPerServingG": 0.1785,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 8,
+          "recipeIngredient": {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "punaviinietikkaa"
+          },
+          "calculationItem": "punaviinietikkaa",
+          "stateMatch": "wine vinegar",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 929 foodaddunit RKL",
+            "sourceGramsPerUnit": 15.0,
+            "usedGramsPerUnit": 15,
+            "assumedGrams": 30.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "929",
+            "name": "VIINIETIKKA",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/929",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 100.0,
+              "RKL": 15.0,
+              "TL": 5.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 0.5,
+            "protein": 0.0,
+            "fat": 0.0,
+            "fibre": 0.0
+          },
+          "edibleMassG": 30.0,
+          "availableCarbohydrateContributionPerServingG": 0.0375,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 9,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "tl",
+            "item": "juustokuminaa"
+          },
+          "calculationItem": "juustokuminaa",
+          "stateMatch": "ground cumin",
+          "mass": {
+            "status": "UNVERIFIED_CONVERSION",
+            "source": "Ingredient-specific teaspoon mass: 2 g/tl for juustokuminaa.",
+            "usedGramsPerUnit": 2,
+            "assumedGrams": 2.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F003327",
+            "name": "Cumin (cummin) seed, dried, ground",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F003327",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Cumin (cummin) seed, dried, ground",
+            "derivation": "Borrowed",
+            "apiSha256": "47fb07f90e8e71b18a54b2776a612f6cabdb03fae67bc18d1de486fc9a1699e9",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 33.7,
+              "protein": 17.8,
+              "fat": 22.3,
+              "fibre": 10.5
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "100%",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 33.7,
+            "protein": 17.8,
+            "fat": 22.3,
+            "fibre": 10.5
+          },
+          "edibleMassG": 2.0,
+          "availableCarbohydrateContributionPerServingG": 0.1685,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 10,
+          "recipeIngredient": {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "suolaa"
+          },
+          "calculationItem": "suolaa",
+          "stateMatch": "documented low-impact seasoning or nutrient-free item",
+          "mass": {
+            "status": "ZERO_MACRO",
+            "source": "Water and salt have no material macro contribution.",
+            "assumedGrams": null
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": "Water and salt have no material macro contribution."
+        },
+        {
+          "index": 11,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "sitruunamehua"
+          },
+          "calculationItem": "sitruunamehua",
+          "stateMatch": "lemon juice",
+          "mass": {
+            "status": "UNVERIFIED_CONVERSION",
+            "source": "Ingredient-specific tablespoon mass: 15 g/rkl for sitruunamehua.",
+            "usedGramsPerUnit": 15,
+            "assumedGrams": 15.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F004726",
+            "name": "Juice, lemon",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F004726",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Juice, lemon",
+            "derivation": "Recipe",
+            "apiSha256": "c8db4a398c802311912938d988156d7ce63a7de2ee2aef12a7d9b07bda1c4730",
+            "apiBasis": "100 mL",
+            "specificGravity": 1.05,
+            "apiMacros": {
+              "availableCarbohydrate": 1.9,
+              "protein": 0.7,
+              "fat": 0.1,
+              "fibre": 2.1
+            },
+            "measurements": [
+              {
+                "measurement": "100 mL",
+                "amount": 100
+              },
+              {
+                "measurement": "Custom (mL)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "100%",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 1.8,
+            "protein": 0.6,
+            "fat": 0.1,
+            "fibre": 2
+          },
+          "edibleMassG": 15.0,
+          "availableCarbohydrateContributionPerServingG": 0.0675,
+          "embeddedCompositionMatchesReference": true
+        }
+      ],
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 95.91,
+        "protein": 22.26,
+        "fat": 12.03,
+        "fibre": 7.23
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 95.48,
+        "protein": 22.25,
+        "fat": 12.03,
+        "fibre": 7.23
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": -0.43,
+        "protein": -0.01,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "publishedAvailableCarbohydratePerServingG": 95.91,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "scenarioIsWholeEstimate": false,
+      "review": {
+        "batch": 1,
+        "decision": "PARTIAL_ONLY",
+        "preparation": "Dry lentils and macaroni are boiled then drained; rice is cooked separately. Onion is coated with cornstarch, fried in oil, then drained on paper. Tomato sauce and garlic vinegar are served.",
+        "compositionMatch": "Dry lentil, rice and pasta records match input masses, not cooked output mass. Cornstarch Fineli 27 verified; AFCD garlic, cumin and lemon composition read. AFCD lemon API displays per100mL at specific gravity1.05, while frozen dataset is per100g.",
+        "amountReview": "4 servings. Corn 16 to14 g is source-backed. Two medium onions=110 g, garlic=7 g, olive oil=40.5 g, vinegar=30 g. Cumin2 g/tl is not established by AFCD measurements. Lemon15 g/rkl is a mass assumption, not verified by the API's 1.05g/mL density.",
+        "retention": "R2 no-discard claim conflicts explicitly with draining lentils, macaroni and fried onions. Retained starch coating and oil are unknown. Do not use retention1 as an exact eaten total.",
+        "strictComparison": "95.91 to95.48 g/serving is reproducible for the all-input scenario; protein/fat/fibre are also reproduced. This is not sufficient to publish the full macro correction.",
+        "uncertainties": [
+          "Leaching into discarded water",
+          "Starch coating retained",
+          "Oil retained after paper draining",
+          "Cumin and lemon spoon mass"
+        ],
+        "blockerCategories": [
+          "PREPARATION_ALTERNATIVE",
+          "AMOUNT_EVIDENCE"
+        ],
+        "nextAction": "Retain the 14 g input correction, but measure/define prepared yield and discarded components for a complete recipe estimate."
+      },
+      "independentApproval": false,
+      "calculationSha256": "4928c7382e450f0fb59672e468b41e24728661a83b573c188b6c37602712a031"
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/paaruoat/yangzhou-paistettu-riisi.md",
+      "sourceSha256": "39dc010628e9b276080a71ee97f5a55a073f572472aa4c74c94b292b66c7a62c",
+      "servings": 4,
+      "servingsMatchesRecipe": true,
+      "calculationPath": "docs/nutrition/calculations/yangzhou-paistettu-riisi.json",
+      "carbohydrateDefinition": "Available sugars/starch excluding fibre and polyols; Fineli CHOAVL or AFCD AVAILCHO. Fibre is not subtracted twice. No invented resistant-starch correction.",
+      "ingredients": [
+        {
+          "index": 0,
+          "recipeIngredient": {
+            "amount": 600,
+            "unit": "g",
+            "item": "keitettyä kylmää riisiä"
+          },
+          "calculationItem": "keitettyä kylmää riisiä",
+          "stateMatch": "cooked long-grain white rice, unsalted",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 600.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "30346",
+            "name": "RIISI, PITKÄJYVÄINEN, KEITETTY, SUOLATON",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/30346",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "BOIL",
+            "portionMassG": {
+              "DL": 80.0,
+              "RKL": 12.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 23.561,
+            "protein": 2.42,
+            "fat": 0.307,
+            "fibre": 0.298
+          },
+          "edibleMassG": 600.0,
+          "availableCarbohydrateContributionPerServingG": 35.3415,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 1,
+          "recipeIngredient": {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "kananmunaa"
+          },
+          "calculationItem": "kananmunaa",
+          "stateMatch": "raw edible egg, shell removed",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 858 foodaddunit KPL_M",
+            "sourceGramsPerUnit": 55.0,
+            "usedGramsPerUnit": 55,
+            "assumedGrams": 110.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "858",
+            "name": "KANANMUNA, KUORETON",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "KPL_M": 55.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 0.3,
+            "protein": 12.61,
+            "fat": 9.24,
+            "fibre": 0.0
+          },
+          "edibleMassG": 110.0,
+          "availableCarbohydrateContributionPerServingG": 0.0825,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 2,
+          "recipeIngredient": {
+            "amount": 150,
+            "unit": "g",
+            "item": "katkarapuja",
+            "note": "kuorittuina"
+          },
+          "calculationItem": "katkarapuja",
+          "stateMatch": "raw prawn flesh",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 150.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F007433",
+            "name": "Prawn, flesh, raw (green)",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F007433",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Prawn, flesh, raw (green)",
+            "derivation": "Recipe",
+            "apiSha256": "4ec3aa6e02560f42d6464895e30d1abfe16918fe832b2c0bc9df1a5b22ecf326",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 0,
+              "protein": 20.7,
+              "fat": 0.8,
+              "fibre": 0
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "50% (tail flesh)",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 0,
+            "protein": 20.7,
+            "fat": 0.8,
+            "fibre": 0
+          },
+          "edibleMassG": 150.0,
+          "availableCarbohydrateContributionPerServingG": 0.0,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 3,
+          "recipeIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "herneitä"
+          },
+          "calculationItem": "herneitä",
+          "stateMatch": "raw green peas",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 100.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "370",
+            "name": "HERNE, VIHREÄ, TUORE",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/370",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "DL": 60.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 9.495,
+            "protein": 5.623,
+            "fat": 0.787,
+            "fibre": 3.1
+          },
+          "edibleMassG": 100.0,
+          "availableCarbohydrateContributionPerServingG": 2.37375,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 4,
+          "recipeIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "kypsää kinkkua",
+            "note": "pieninä kuutioina"
+          },
+          "calculationItem": "kypsää kinkkua",
+          "stateMatch": "cooked lean ham, 3% fat",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 100.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "779",
+            "name": "KOKOLIHALEIKKELE, KEITTOKINKKU, RASVAA 3 %",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/779",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "BOIL",
+            "portionMassG": {
+              "KPL_S": 9.0,
+              "KPL_M": 15.0,
+              "KPL_L": 20.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 0.629,
+            "protein": 17.61,
+            "fat": 2.985,
+            "fibre": 0.0
+          },
+          "edibleMassG": 100.0,
+          "availableCarbohydrateContributionPerServingG": 0.15725,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 5,
+          "recipeIngredient": {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "neutraalia öljyä"
+          },
+          "calculationItem": "neutraalia öljyä",
+          "stateMatch": "neutral vegetable oil",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 541 foodaddunit RKL",
+            "sourceGramsPerUnit": 13.5,
+            "usedGramsPerUnit": 13.5,
+            "assumedGrams": 27.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "541",
+            "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/541",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 90.0,
+              "RKL": 13.5,
+              "TL": 4.5
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 0.0,
+            "protein": 0.0,
+            "fat": 99.9,
+            "fibre": 0.0
+          },
+          "edibleMassG": 27.0,
+          "availableCarbohydrateContributionPerServingG": 0.0,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 6,
+          "recipeIngredient": {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "soijakastiketta"
+          },
+          "calculationItem": "soijakastiketta",
+          "stateMatch": "soy sauce",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 31 foodaddunit RKL",
+            "sourceGramsPerUnit": 18.0,
+            "usedGramsPerUnit": 18,
+            "assumedGrams": 36.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "31",
+            "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/31",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 120.0,
+              "RKL": 18.0,
+              "TL": 6.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 9.5,
+            "protein": 5.17,
+            "fat": 0.08,
+            "fibre": 0.0
+          },
+          "edibleMassG": 36.0,
+          "availableCarbohydrateContributionPerServingG": 0.855,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 7,
+          "recipeIngredient": {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "kevätsipulia",
+            "note": "viipaleina"
+          },
+          "calculationItem": "kevätsipulia",
+          "stateMatch": "raw spring onion",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "AFCD F006250 Spring Onion 15 g; edible bulb/stem reference; no second 78% deduction",
+            "sourceGramsPerUnit": 15,
+            "usedGramsPerUnit": 15,
+            "assumedGrams": 30.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F006250",
+            "name": "Onion, spring, fresh, raw",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Onion, spring, fresh, raw",
+            "derivation": "Analysed",
+            "apiSha256": "8a52d87460ceb7df9747ca7e88780fe5850a201b998cab2d37cbb2754844e826",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 4.6,
+              "protein": 1.7,
+              "fat": 0.2,
+              "fibre": 1.9
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Spring Onion, 15 g",
+                "amount": 15
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "78% (bulb, stem)",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 4.6,
+            "protein": 1.7,
+            "fat": 0.2,
+            "fibre": 1.9
+          },
+          "edibleMassG": 30.0,
+          "availableCarbohydrateContributionPerServingG": 0.345,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 8,
+          "recipeIngredient": {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "suolaa"
+          },
+          "calculationItem": "suolaa",
+          "stateMatch": "documented low-impact seasoning or nutrient-free item",
+          "mass": {
+            "status": "ZERO_MACRO",
+            "source": "Salt contributes none of the four published macronutrients; sodium is not displayed.",
+            "assumedGrams": null
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": "Excluded low-impact suolaa; exact nutrient impact is bounded per serving."
+        }
+      ],
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 39.01,
+        "protein": 21.18,
+        "fat": 11.11,
+        "fibre": 1.36
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 39.16,
+        "protein": 21.26,
+        "fat": 11.01,
+        "fibre": 1.36
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.15,
+        "protein": 0.08,
+        "fat": -0.1,
+        "fibre": 0.0
+      },
+      "publishedAvailableCarbohydratePerServingG": 39.01,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 39.16,
+      "scenarioIsWholeEstimate": true,
+      "review": {
+        "batch": 1,
+        "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+        "preparation": "600 g cooked cold rice is broken up and reheated in a wok with egg, raw peeled shrimp, ham, peas, oil, soy and spring onion. Eggs are returned; no draining step.",
+        "compositionMatch": "Fineli30346 already-cooked long-grain rice, egg858, peas370, ham779, oil541 and soy31. AFCD raw shrimp F007433 matches the instruction to cook shrimp;150 g is interpreted as edible peeled flesh, not shell-on mass. AFCD spring onion F006250 edible portion confirmed.",
+        "amountReview": "4 servings. Correct oil2 ×13.7 to2 ×13.5=27 g and soy2 ×15 to2 ×18=36 g. Egg2 ×55 g and spring onion2 ×15 g are supported portions.",
+        "retention": "Listed ingredient retention1 is a documented estimate with no discarded cooking liquid. Rice cooling time/temperature and varietal details are absent: no resistant-starch subtraction or GI benefit is assumed. Water evaporation changes per100g density, not batch CHO.",
+        "strictComparison": "39.01 to39.16 g/serving from soy; oil correction also reduces fat. All nonzero ingredients included, salt zero macro.",
+        "uncertainties": [
+          "Rice hydration/variety and unspecified cooling",
+          "Medium egg/onion mass",
+          "Edible shrimp weight interpretation",
+          "Pan residue and average composition"
+        ],
+        "blockerCategories": [
+          "INDEPENDENT_ACCEPTANCE_PENDING"
+        ],
+        "nextAction": "Independent review of edible shrimp/cooked-rice/reference-portion scope, then bounded nutrition correction. Keep GI absent."
+      },
+      "independentApproval": false,
+      "calculationSha256": "b422c0dc01ec3e2565c1c79257c281838339c96f93f49a7924c98367e73b5a1d"
+    },
+    {
+      "recipeId": "meheva-suklaakakku",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/jalkiruoat/meheva-suklaakakku.md",
+      "sourceSha256": "a06e4c19b30eb701df9fdd76435153ceb6d14cf4cf4769360dde92de2dff9d3a",
+      "servings": 10,
+      "servingsMatchesRecipe": true,
+      "calculationPath": "docs/nutrition/calculations/meheva-suklaakakku.json",
+      "carbohydrateDefinition": "Available sugars/starch excluding fibre and polyols; Fineli CHOAVL or AFCD AVAILCHO. Fibre is not subtracted twice. No invented resistant-starch correction.",
+      "ingredients": [
+        {
+          "index": 0,
+          "recipeIngredient": {
+            "amount": 200,
+            "unit": "g",
+            "item": "tummaa suklaata",
+            "note": "kakkuun"
+          },
+          "calculationItem": "tummaa suklaata",
+          "stateMatch": "dark chocolate as sold",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 200.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "32",
+            "name": "SUKLAA, TUMMA",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/32",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "KPL_S": 45.0,
+              "KPL_M": 100.0,
+              "KPL_L": 200.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 53.26,
+            "protein": 4.88,
+            "fat": 31.0,
+            "fibre": 7.904
+          },
+          "edibleMassG": 200.0,
+          "availableCarbohydrateContributionPerServingG": 10.652,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 1,
+          "recipeIngredient": {
+            "amount": 200,
+            "unit": "g",
+            "item": "voita"
+          },
+          "calculationItem": "voita",
+          "stateMatch": "raw/as listed",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 200.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "500",
+            "name": "VOI",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 95.0,
+              "RKL": 14.0,
+              "TL": 4.5
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 0.8,
+            "protein": 1.19,
+            "fat": 81.3,
+            "fibre": 0.0
+          },
+          "edibleMassG": 200.0,
+          "availableCarbohydrateContributionPerServingG": 0.16,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 2,
+          "recipeIngredient": {
+            "amount": 4,
+            "unit": "kpl",
+            "item": "kananmunaa"
+          },
+          "calculationItem": "kananmunaa",
+          "stateMatch": "raw egg, shell excluded",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 858 foodaddunit KPL_M",
+            "sourceGramsPerUnit": 55.0,
+            "usedGramsPerUnit": 55,
+            "assumedGrams": 220.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "858",
+            "name": "KANANMUNA, KUORETON",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "KPL_M": 55.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 0.3,
+            "protein": 12.61,
+            "fat": 9.24,
+            "fibre": 0.0
+          },
+          "edibleMassG": 220.0,
+          "availableCarbohydrateContributionPerServingG": 0.066,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 3,
+          "recipeIngredient": {
+            "amount": 180,
+            "unit": "g",
+            "item": "sokeria"
+          },
+          "calculationItem": "sokeria",
+          "stateMatch": "raw/as listed",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 180.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "1",
+            "name": "SOKERI",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/1",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "KPL_S": 2.0,
+              "KPL_M": 3.0,
+              "KPL_L": 4.0,
+              "DL": 85.0,
+              "RKL": 12.0,
+              "TL": 4.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 99.9,
+            "protein": 0.0,
+            "fat": 0.0,
+            "fibre": 0.0
+          },
+          "edibleMassG": 180.0,
+          "availableCarbohydrateContributionPerServingG": 17.982,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 4,
+          "recipeIngredient": {
+            "amount": 120,
+            "unit": "g",
+            "item": "vehnäjauhoja"
+          },
+          "calculationItem": "vehnäjauhoja",
+          "stateMatch": "raw/as listed",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 120.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "110",
+            "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "DL": 65.0,
+              "RKL": 10.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 73.998,
+            "protein": 11.6,
+            "fat": 1.56,
+            "fibre": 3.5
+          },
+          "edibleMassG": 120.0,
+          "availableCarbohydrateContributionPerServingG": 8.87976,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 5,
+          "recipeIngredient": {
+            "amount": 30,
+            "unit": "g",
+            "item": "kaakaojauhetta"
+          },
+          "calculationItem": "kaakaojauhetta",
+          "stateMatch": "raw/as listed",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 30.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "20",
+            "name": "KAAKAOJAUHE, EI LISÄTTYÄ SOKERIA",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/20",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 40.0,
+              "RKL": 6.0,
+              "TL": 3.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 11.0,
+            "protein": 18.5,
+            "fat": 21.7,
+            "fibre": 30.4
+          },
+          "edibleMassG": 30.0,
+          "availableCarbohydrateContributionPerServingG": 0.33,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 6,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "tl",
+            "item": "leivinjauhetta"
+          },
+          "calculationItem": "leivinjauhetta",
+          "stateMatch": "dry baking powder",
+          "mass": {
+            "status": "CONVERSION_CONFLICT",
+            "source": "Fineli Release 20 74 foodaddunit TL",
+            "sourceGramsPerUnit": 5.0,
+            "usedGramsPerUnit": 4,
+            "assumedGrams": 4.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/afcd-release-3-reference.json",
+            "id": "F000247",
+            "name": "Baking powder, dry powder",
+            "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F000247",
+            "access": "LIVE_PRIMARY_READ",
+            "state": "Baking powder, dry powder",
+            "derivation": "Recipe",
+            "apiSha256": "ba66b9e2cadc286bfd12b67a7ea0c95fa65a2e261bfb7d7a51fe8e55f94a88bc",
+            "apiBasis": "100 g",
+            "specificGravity": 0,
+            "apiMacros": {
+              "availableCarbohydrate": 19.8,
+              "protein": 0.8,
+              "fat": 0.3,
+              "fibre": 0.4
+            },
+            "measurements": [
+              {
+                "measurement": "100 g",
+                "amount": 100
+              },
+              {
+                "measurement": "Custom (g)",
+                "amount": 1
+              }
+            ],
+            "analysedPortion": "100%",
+            "apiVersusFrozen": "Liquids API is per100mL; frozen file per100g. Values compared after density conversion, allowing displayed decimal rounding."
+          },
+          "per100g": {
+            "availableCarbohydrate": 19.8,
+            "protein": 0.8,
+            "fat": 0.3,
+            "fibre": 0.4
+          },
+          "edibleMassG": 4.0,
+          "availableCarbohydrateContributionPerServingG": 0.0792,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 7,
+          "recipeIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "tummaa suklaata",
+            "note": "kuorrutteeseen"
+          },
+          "calculationItem": "tummaa suklaata",
+          "stateMatch": "dark chocolate as sold",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 100.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "32",
+            "name": "SUKLAA, TUMMA",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/32",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "KPL_S": 45.0,
+              "KPL_M": 100.0,
+              "KPL_L": 200.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 53.26,
+            "protein": 4.88,
+            "fat": 31.0,
+            "fibre": 7.904
+          },
+          "edibleMassG": 100.0,
+          "availableCarbohydrateContributionPerServingG": 5.326,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 8,
+          "recipeIngredient": {
+            "amount": 100,
+            "unit": "ml",
+            "item": "kuohukermaa",
+            "note": "kuorrutteeseen"
+          },
+          "calculationItem": "kuohukermaa",
+          "stateMatch": "liquid 38% cream",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 631 foodaddunit DL",
+            "sourceGramsPerUnit": 1.0,
+            "usedGramsPerUnit": 1,
+            "assumedGrams": 100.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "631",
+            "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/631",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 100.0,
+              "RKL": 15.0,
+              "TL": 5.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 2.9,
+            "protein": 1.88,
+            "fat": 38.0,
+            "fibre": 0.0
+          },
+          "edibleMassG": 100.0,
+          "availableCarbohydrateContributionPerServingG": 0.29,
+          "embeddedCompositionMatchesReference": true
+        }
+      ],
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 43.76,
+        "protein": 6.61,
+        "fat": 32.23,
+        "fibre": 3.7
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 43.76,
+        "protein": 6.61,
+        "fat": 32.23,
+        "fibre": 3.7
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "publishedAvailableCarbohydratePerServingG": 43.76,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "scenarioIsWholeEstimate": false,
+      "review": {
+        "batch": 1,
+        "decision": "PARTIAL_ONLY",
+        "preparation": "10 portions.200 g chocolate in cake and100 g in frosting are distinct rows. Baking175°C25–30min; frosting adds100ml cream. Pan must be greased and floured but no quantities are listed.",
+        "compositionMatch": "Dark chocolate32, butter500, egg858, sugar1, wheat110, cocoa20, cream631 are Fineli average foods. Cocoa is unsweetened. AFCD baking powder F000247 read live; compositions agree with reference.",
+        "amountReview": "Egg4 ×55=220 g; cream100 ml ×1=100 g are source-supported. Baking powder4 g/tl has no AFCD spoon evidence; Fineli74 gives5 g/tl for a different average baking-powder composition. Do not silently switch source or multiply the AFCD record without documenting the choice.",
+        "retention": "Cake/frosting assumed consumed, but pan flour is unquantified nonzero carbohydrate. No amount is invented. Water loss does not justify omitting pan flour.",
+        "strictComparison": "43.76 g/serving reproduced for listed inputs only. The missing pan flour and baking-powder conversion prevent calling this a complete original-recipe total.",
+        "uncertainties": [
+          "Unlisted greasing/flouring",
+          "Baking-powder teaspoon mass",
+          "Chocolate formulation"
+        ],
+        "blockerCategories": [
+          "AMOUNT_EVIDENCE",
+          "RECIPE_TEXT_CONFLICT"
+        ],
+        "nextAction": "Specify pan preparation amounts and baking-powder mass; keep chocolate rows separate."
+      },
+      "independentApproval": false,
+      "calculationSha256": "933573fcfed0585985f8f1c22360a84b44cceb58333550b532c28304905fa1ea"
+    },
+    {
+      "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/valimerellinen-appelsiini-aamiaiskakku.md",
+      "sourceSha256": "0866699f37d32c4330e6b089ed1567ede7b9b64ddf7081012fa97d644e588bee",
+      "servings": 2,
+      "servingsMatchesRecipe": true,
+      "calculationPath": "docs/nutrition/calculations/valimerellinen-appelsiini-aamiaiskakku.json",
+      "carbohydrateDefinition": "Available sugars/starch excluding fibre and polyols; Fineli CHOAVL or AFCD AVAILCHO. Fibre is not subtracted twice. No invented resistant-starch correction.",
+      "ingredients": [
+        {
+          "index": 0,
+          "recipeIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "vehnäjauho"
+          },
+          "calculationItem": "vehnäjauho",
+          "stateMatch": "medium wheat flour, as sold",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 100.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "110",
+            "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "DL": 65.0,
+              "RKL": 10.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 73.998,
+            "protein": 11.6,
+            "fat": 1.56,
+            "fibre": 3.5
+          },
+          "edibleMassG": 100.0,
+          "availableCarbohydrateContributionPerServingG": 36.999,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 1,
+          "recipeIngredient": {
+            "amount": 130,
+            "unit": "g",
+            "item": "kuorittua appelsiinia"
+          },
+          "calculationItem": "kuorittua appelsiinia",
+          "stateMatch": "raw peeled orange flesh",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 130.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "11045",
+            "name": "APPELSIINI, KUORITTU",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11045",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "KPL_S": 155.0,
+              "KPL_M": 215.0,
+              "KPL_L": 270.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 8.9,
+            "protein": 0.56,
+            "fat": 0.14,
+            "fibre": 2.4
+          },
+          "edibleMassG": 130.0,
+          "availableCarbohydrateContributionPerServingG": 5.785,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 2,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "oliiviöljy"
+          },
+          "calculationItem": "oliiviöljy",
+          "stateMatch": "olive oil as sold",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 536 foodaddunit RKL",
+            "sourceGramsPerUnit": 13.5,
+            "usedGramsPerUnit": 13.5,
+            "assumedGrams": 13.5
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "536",
+            "name": "OLIIVIÖLJY",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 90.0,
+              "RKL": 13.5,
+              "TL": 4.5
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 0.0,
+            "protein": 0.0,
+            "fat": 100.0,
+            "fibre": 0.0
+          },
+          "edibleMassG": 13.5,
+          "availableCarbohydrateContributionPerServingG": 0.0,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 3,
+          "recipeIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "jogurtti"
+          },
+          "calculationItem": "jogurtti",
+          "stateMatch": "plain unsweetened yogurt, 3.9% fat",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 100.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "620",
+            "name": "JOGURTTI, MAUSTAMATON, BULGARIAN, RASVAA 3,9%",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/620",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 100.0,
+              "RKL": 15.0,
+              "TL": 5.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 3.4,
+            "protein": 3.0,
+            "fat": 3.9,
+            "fibre": 0.0
+          },
+          "edibleMassG": 100.0,
+          "availableCarbohydrateContributionPerServingG": 1.7,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 4,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "neutraalia paistoöljyä"
+          },
+          "calculationItem": "neutraalia paistoöljyä",
+          "stateMatch": "neutral vegetable cooking oil",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 541 foodaddunit RKL",
+            "sourceGramsPerUnit": 13.5,
+            "usedGramsPerUnit": 13.5,
+            "assumedGrams": 13.5
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "541",
+            "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/541",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 90.0,
+              "RKL": 13.5,
+              "TL": 4.5
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 0.0,
+            "protein": 0.0,
+            "fat": 99.9,
+            "fibre": 0.0
+          },
+          "edibleMassG": 13.5,
+          "availableCarbohydrateContributionPerServingG": 0.0,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 5,
+          "recipeIngredient": {
+            "amount": null,
+            "unit": "",
+            "item": "suolaa maun mukaan"
+          },
+          "calculationItem": "suolaa maun mukaan",
+          "stateMatch": "documented bounded omission",
+          "mass": {
+            "status": "ZERO_MACRO",
+            "source": "Salt (sodium chloride) contains no carbohydrate, fibre, protein or fat; its omission has zero impact on displayed macros.",
+            "assumedGrams": null
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": "Salt is sodium chloride and contributes none of the four displayed macronutrients."
+        }
+      ],
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 44.48,
+        "protein": 7.66,
+        "fat": 16.31,
+        "fibre": 3.31
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 44.48,
+        "protein": 7.66,
+        "fat": 16.31,
+        "fibre": 3.31
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "publishedAvailableCarbohydratePerServingG": 44.48,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "scenarioIsWholeEstimate": false,
+      "review": {
+        "batch": 1,
+        "decision": "PARTIAL_ONLY",
+        "preparation": "2 servings. Recipe lists orange, flour, olive oil, yogurt and pan oil, but last step calls the batter lemon-flavoured and says to serve with yogurt after an earlier instruction to mix ingredients.",
+        "compositionMatch": "Fineli110 flour,11045 peeled orange,536 olive oil,620 plain3.9% yogurt and541 neutral oil. These are defensible representative compositions for the listed inputs; yogurt type is not stated in original.",
+        "amountReview": "100 g flour,130 g peeled orange,100 g yogurt and two separate13.5 g spoonfuls of oil; zero-macro salt unquantified. All list quantities can be estimated from source portions.",
+        "retention": "Baked dish would retain carbohydrates, but whether yogurt is mixed/served and whether lemon is an unlisted ingredient need an editorial decision. Cannot infer extra lemon amount.",
+        "strictComparison": "44.48 g/serving is the complete listed-ingredient scenario, not a resolved whole original preparation.",
+        "uncertainties": [
+          "Lemon/orange instruction conflict",
+          "Unspecified yogurt type",
+          "Yogurt mixing/serving scope"
+        ],
+        "blockerCategories": [
+          "RECIPE_TEXT_CONFLICT"
+        ],
+        "nextAction": "Resolve the lemon wording and yogurt scope in a separate recipe-content proposal, then reassess whole estimate."
+      },
+      "independentApproval": false,
+      "calculationSha256": "6fa65354ea4a9891f9ad562a262e9ebefb43c70e92f51d45f979cd3673359589"
+    },
+    {
+      "recipeId": "intialainen-rava-uttapam",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/intialainen-rava-uttapam.md",
+      "sourceSha256": "da667b2f0d44a192fa9f930e08a640dbb2473eb0629452279506e4a77904f85b",
+      "servings": 2,
+      "servingsMatchesRecipe": true,
+      "calculationPath": "docs/nutrition/calculations/intialainen-rava-uttapam.json",
+      "carbohydrateDefinition": "Available sugars/starch excluding fibre and polyols; Fineli CHOAVL or AFCD AVAILCHO. Fibre is not subtracted twice. No invented resistant-starch correction.",
+      "ingredients": [
+        {
+          "index": 0,
+          "recipeIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "mannasuurimo"
+          },
+          "calculationItem": "mannasuurimo",
+          "stateMatch": "dry semolina as sold",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 100.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "112",
+            "name": "MANNASUURIMO",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/112",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "DL": 100.0,
+              "RKL": 15.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 63.6,
+            "protein": 11.5,
+            "fat": 1.1,
+            "fibre": 3.5
+          },
+          "edibleMassG": 100.0,
+          "availableCarbohydrateContributionPerServingG": 31.8,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 1,
+          "recipeIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "jogurtti"
+          },
+          "calculationItem": "jogurtti",
+          "stateMatch": "plain unsweetened yogurt, 3.9% fat",
+          "mass": {
+            "status": "RECIPE_MASS",
+            "source": "Version-pinned recipe ingredient amount; edible mass assumption reviewed below",
+            "assumedGrams": 100.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "620",
+            "name": "JOGURTTI, MAUSTAMATON, BULGARIAN, RASVAA 3,9%",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/620",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 100.0,
+              "RKL": 15.0,
+              "TL": 5.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 3.4,
+            "protein": 3.0,
+            "fat": 3.9,
+            "fibre": 0.0
+          },
+          "edibleMassG": 100.0,
+          "availableCarbohydrateContributionPerServingG": 1.7,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 2,
+          "recipeIngredient": {
+            "amount": 100,
+            "unit": "ml",
+            "item": "vettä"
+          },
+          "calculationItem": "vettä",
+          "stateMatch": "tap water",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 922 foodaddunit DL",
+            "sourceGramsPerUnit": 1.0,
+            "usedGramsPerUnit": 1,
+            "assumedGrams": 100.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "922",
+            "name": "VESI, VESIJOHTOVESI",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "X",
+            "portionMassG": {
+              "DL": 100.0,
+              "RKL": 15.0,
+              "TL": 5.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 0.0,
+            "protein": 0.0,
+            "fat": 0.0,
+            "fibre": 0.0
+          },
+          "edibleMassG": 100.0,
+          "availableCarbohydrateContributionPerServingG": 0.0,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 3,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "tomaatti"
+          },
+          "calculationItem": "tomaatti",
+          "stateMatch": "raw medium tomato, edible portion",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 352 foodaddunit KPL_M",
+            "sourceGramsPerUnit": 125.0,
+            "usedGramsPerUnit": 125,
+            "assumedGrams": 125.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "352",
+            "name": "TOMAATTI",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/352",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "KPL_S": 75.0,
+              "KPL_M": 125.0,
+              "KPL_L": 170.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 3.45,
+            "protein": 0.55,
+            "fat": 0.3,
+            "fibre": 0.4
+          },
+          "edibleMassG": 125.0,
+          "availableCarbohydrateContributionPerServingG": 2.15625,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 4,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "sipuli"
+          },
+          "calculationItem": "sipuli",
+          "stateMatch": "raw yellow onion, medium edible portion",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 335 foodaddunit KPL_M",
+            "sourceGramsPerUnit": 55.0,
+            "usedGramsPerUnit": 55,
+            "assumedGrams": 55.0
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "335",
+            "name": "SIPULI, KELTASIPULI",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "RAW",
+            "portionMassG": {
+              "KPL_S": 30.0,
+              "KPL_M": 55.0,
+              "KPL_L": 200.0,
+              "DL": 90.0
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 4.8,
+            "protein": 1.25,
+            "fat": 0.1,
+            "fibre": 1.2
+          },
+          "edibleMassG": 55.0,
+          "availableCarbohydrateContributionPerServingG": 1.32,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 5,
+          "recipeIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "neutraalia paistoöljyä"
+          },
+          "calculationItem": "neutraalia paistoöljyä",
+          "stateMatch": "neutral vegetable cooking oil",
+          "mass": {
+            "status": "FOOD_SPECIFIC_PORTION_ESTIMATE",
+            "source": "Fineli Release 20 541 foodaddunit RKL",
+            "sourceGramsPerUnit": 13.5,
+            "usedGramsPerUnit": 13.5,
+            "assumedGrams": 13.5
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": null,
+          "composition": {
+            "dataset": "docs/nutrition/fineli-release-20-reference.json",
+            "id": "541",
+            "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+            "url": "https://fineli.fi/fineli/fi/elintarvikkeet/541",
+            "access": "APPROVED_LOCAL_RELEASE_20; live bulk HTTP 403",
+            "state": "IND",
+            "portionMassG": {
+              "DL": 90.0,
+              "RKL": 13.5,
+              "TL": 4.5
+            }
+          },
+          "per100g": {
+            "availableCarbohydrate": 0.0,
+            "protein": 0.0,
+            "fat": 99.9,
+            "fibre": 0.0
+          },
+          "edibleMassG": 13.5,
+          "availableCarbohydrateContributionPerServingG": 0.0,
+          "embeddedCompositionMatchesReference": true
+        },
+        {
+          "index": 6,
+          "recipeIngredient": {
+            "amount": null,
+            "unit": "",
+            "item": "suolaa maun mukaan"
+          },
+          "calculationItem": "suolaa maun mukaan",
+          "stateMatch": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
+          "mass": {
+            "status": "ZERO_MACRO",
+            "source": "Plain salt has no meaningful energy or the four displayed macronutrients.",
+            "assumedGrams": null
+          },
+          "retentionAssumption": {
+            "fraction": 1,
+            "basis": "Recipe-specific preparation review below; not an experimentally measured nutrient retention"
+          },
+          "sourceExcludedReason": "Omitted unquantified salt; sodium is not displayed."
+        }
+      ],
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 36.98,
+        "protein": 7.94,
+        "fat": 9.46,
+        "fibre": 2.33
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 36.98,
+        "protein": 7.94,
+        "fat": 9.46,
+        "fibre": 2.33
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "publishedAvailableCarbohydratePerServingG": 36.98,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "scenarioIsWholeEstimate": false,
+      "review": {
+        "batch": 1,
+        "decision": "PARTIAL_ONLY",
+        "preparation": "2 servings. Semolina/yogurt/water batter rests10 minutes then pan-fries with onion,tomato and coriander; coriander appears only in preparation.",
+        "compositionMatch": "Fineli112 dry semolina,620 plain yogurt,352 tomato,335 onion,541 oil and922 water match listed ingredients with explicit representative yogurt assumption.",
+        "amountReview": "100 g semolina,100 g yogurt,100 ml water,one125 g tomato,one55 g onion and13.5 g oil. No coriander quantity exists; Fineli34238 establishes nonzero carbohydrate0.505g/100g but not its recipe mass.",
+        "retention": "No drained liquid; all listed carbohydrate can be an input-retention estimate. Unlisted coriander must not be assigned zero merely because small.",
+        "strictComparison": "36.98 g/serving reproduced for the list; whole total remains null because preparation adds an unquantified ingredient.",
+        "uncertainties": [
+          "Unquantified coriander in preparation",
+          "Yogurt type",
+          "Piece-size and pan-retention estimates"
+        ],
+        "blockerCategories": [
+          "AMOUNT_EVIDENCE",
+          "RECIPE_TEXT_CONFLICT"
+        ],
+        "nextAction": "Add a measured coriander amount or explicitly remove it in a reviewed content change; recalculate before whole-total proposal."
+      },
+      "independentApproval": false,
+      "calculationSha256": "a60abc8da432e50d1d738ad70d86cc2c2e90bd883b41bab5a3da83a46752bf83"
+    }
+  ],
+  "checkpoint": {
+    "sourcesChecked": true,
+    "arithmetic": "Independent Python Decimal from source reference records, not nutrition-model.ts or published totals",
+    "wholeEstimates": 2,
+    "continue": "Continue next bounded batch. Findings block individual recipes, not safe documentation research."
+  }
+}

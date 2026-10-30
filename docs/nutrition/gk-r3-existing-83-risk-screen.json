@@ -1,0 +1,3368 @@
+{
+  "schemaVersion": 1,
+  "scope": "Automatic-only heuristic screen of existing83; no new deep recipe review or scientific approval",
+  "limitations": "Regex/key/metadata flags may miss actual cooking mismatches or flag a disclosed analogue. No flag means no detected signal, not validated evidence. Omission fractions use known CHO only; bounds can overstate them. Scores are editorial priorities, not clinical risk probabilities.",
+  "thresholds": {
+    "largeOmissionG": 1.5,
+    "largeOmissionShare": 0.5,
+    "majorIngredientG": 5,
+    "majorIngredientShareWithAtLeast1g": 0.25
+  },
+  "flagCounts": {
+    "AT_LEAST_HALF_KNOWN_CHO_OMITTED": 13,
+    "DISPLAYED_ZERO_WITH_NONZERO_OMISSIONS": 9,
+    "FOOD_CATEGORY_MEAN": 68,
+    "LOW_CONFIDENCE": 83,
+    "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH": 68,
+    "OMISSION_AT_LEAST_75_PERCENT_OF_2G_CAP": 7,
+    "PREPARATION_MATCH_FLAG": 47
+  },
+  "recipes": [
+    {
+      "recipeId": "vhh-kaalikaarryleet",
+      "priorityScore": 33,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "OMISSION_AT_LEAST_75_PERCENT_OF_2G_CAP",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 9.24,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 15.58,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.58,
+      "omittedFractionOfKnownCarbohydrate": 0.1013,
+      "uncertainMatchedCarbohydratePerServingG": 14.0,
+      "ingredientFlags": [
+        {
+          "ingredient": "valkokaalia",
+          "availableCarbohydratePerServingG": 12.5,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record."
+        },
+        {
+          "ingredient": "kukkakaalirouhetta",
+          "availableCarbohydratePerServingG": 1.5,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "recipeId": "amritsari-kala",
+      "priorityScore": 33,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "OMISSION_AT_LEAST_75_PERCENT_OF_2G_CAP",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 3.27,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 11.24,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.61,
+      "omittedFractionOfKnownCarbohydrate": 0.1436,
+      "uncertainMatchedCarbohydratePerServingG": 9.63,
+      "ingredientFlags": [
+        {
+          "ingredient": "kikhernejauhoja",
+          "availableCarbohydratePerServingG": 9.63,
+          "giRecordId": "legumes-category-mean-gi-34",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "legume-category",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "recipeId": "kana-yakitori-kaalilla",
+      "priorityScore": 33,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "OMISSION_AT_LEAST_75_PERCENT_OF_2G_CAP",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 4.8,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 9.16,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.89,
+      "omittedFractionOfKnownCarbohydrate": 0.2065,
+      "uncertainMatchedCarbohydratePerServingG": 7.27,
+      "ingredientFlags": [
+        {
+          "ingredient": "keräkaalia",
+          "availableCarbohydratePerServingG": 4.97,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        },
+        {
+          "ingredient": "kevätsipulia",
+          "availableCarbohydratePerServingG": 2.3,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "recipeId": "karjalanpaisti-vhh",
+      "priorityScore": 33,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "OMISSION_AT_LEAST_75_PERCENT_OF_2G_CAP",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 3.83,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 7.4,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.6,
+      "omittedFractionOfKnownCarbohydrate": 0.2163,
+      "uncertainMatchedCarbohydratePerServingG": 5.8,
+      "ingredientFlags": [
+        {
+          "ingredient": "valkokaalia",
+          "availableCarbohydratePerServingG": 5.8,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "recipeId": "korealainen-yachaejuk-kasvisjuk",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 30.45,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 45.54,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.0,
+      "omittedFractionOfKnownCarbohydrate": 0.0,
+      "uncertainMatchedCarbohydratePerServingG": 45.54,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "availableCarbohydratePerServingG": 39.5,
+          "giRecordId": "rice-category-mean-gi-67",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI."
+        },
+        {
+          "ingredient": "porkkana",
+          "availableCarbohydratePerServingG": 1.67,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+        },
+        {
+          "ingredient": "kesäkurpitsa",
+          "availableCarbohydratePerServingG": 4.38,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "recipeId": "indonesialainen-ketoprak-aamiaiskulho",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 26.67,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 44.96,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.0,
+      "omittedFractionOfKnownCarbohydrate": 0.0,
+      "uncertainMatchedCarbohydratePerServingG": 44.96,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuivia riisinuudeleita",
+          "availableCarbohydratePerServingG": 40.82,
+          "giRecordId": "rice-noodles-dried-boiled-chan-2001-gi-61",
+          "matchKind": "EXACT",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "dried-rice-noodles-boiled",
+          "recordPreparationKey": "dried-rice-noodles-boiled",
+          "giMatchEvidence": "Published rice-noodle record matches dry rice-noodle identity and boiled preparation."
+        },
+        {
+          "ingredient": "pavunitu",
+          "availableCarbohydratePerServingG": 1.95,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "maapähkinä",
+          "availableCarbohydratePerServingG": 2.19,
+          "giRecordId": "nuts-category-mean-gi-22",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "nuts-category-mean",
+          "recordPreparationKey": "nuts-category-mean",
+          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "recipeId": "kiinalainen-tomaattimunakas-riisilla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 28.07,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 42.1,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.17,
+      "omittedFractionOfKnownCarbohydrate": 0.0039,
+      "uncertainMatchedCarbohydratePerServingG": 41.93,
+      "ingredientFlags": [
+        {
+          "ingredient": "tomaatti",
+          "availableCarbohydratePerServingG": 2.16,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+        },
+        {
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "availableCarbohydratePerServingG": 39.5,
+          "giRecordId": "rice-category-mean-gi-67",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI."
+        },
+        {
+          "ingredient": "kevätsipuli",
+          "availableCarbohydratePerServingG": 0.28,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+        },
+        {
+          "ingredient": "neutraalia paistoöljyä",
+          "availableCarbohydratePerServingG": 0.0,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": null,
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "recipeId": "korealainen-jumeokbap-merilevalla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 27.57,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 41.17,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.0,
+      "omittedFractionOfKnownCarbohydrate": 0.0,
+      "uncertainMatchedCarbohydratePerServingG": 41.17,
+      "ingredientFlags": [
+        {
+          "ingredient": "riisi",
+          "availableCarbohydratePerServingG": 39.5,
+          "giRecordId": "rice-category-mean-gi-67",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "porkkana",
+          "availableCarbohydratePerServingG": 1.67,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "recipeId": "malesialainen-congee-inkivaarilla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 26.65,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 40.68,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.9,
+      "omittedFractionOfKnownCarbohydrate": 0.0222,
+      "uncertainMatchedCarbohydratePerServingG": 39.78,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "availableCarbohydratePerServingG": 39.5,
+          "giRecordId": "rice-category-mean-gi-67",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI."
+        },
+        {
+          "ingredient": "kevätsipuli",
+          "availableCarbohydratePerServingG": 0.28,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "recipeId": "kiinalainen-riisipuuro-kananmunalla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 26.65,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 39.99,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.21,
+      "omittedFractionOfKnownCarbohydrate": 0.0053,
+      "uncertainMatchedCarbohydratePerServingG": 39.78,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "availableCarbohydratePerServingG": 39.5,
+          "giRecordId": "rice-category-mean-gi-67",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI."
+        },
+        {
+          "ingredient": "kevätsipuli",
+          "availableCarbohydratePerServingG": 0.28,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 34.36,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 38.32,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.0,
+      "omittedFractionOfKnownCarbohydrate": 0.0,
+      "uncertainMatchedCarbohydratePerServingG": 38.32,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuskus",
+          "availableCarbohydratePerServingG": 31.8,
+          "giRecordId": "couscous-groats-rozanska-2020-gi-99",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "cooked-couscous-unspecified",
+          "recordPreparationKey": "cooked-couscous-unspecified",
+          "giMatchEvidence": "Couscous groats: Use only as a low-confidence couscous analogue; study mean has high variability and unspecified product/preparation.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "kivettömiä kuivattuja taateleita",
+          "availableCarbohydratePerServingG": 3.36,
+          "giRecordId": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "tamer-stage-as-sold",
+          "recordPreparationKey": "tamer-stage-as-sold",
+          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement."
+        },
+        {
+          "ingredient": "manteli",
+          "availableCarbohydratePerServingG": 0.66,
+          "giRecordId": "nuts-category-mean-gi-22",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "nuts-category-mean",
+          "recordPreparationKey": "nuts-category-mean",
+          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "jogurtti",
+          "availableCarbohydratePerServingG": 2.5,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Dairy-products category mean used as a low-confidence estimate for plain yogurt; not a measurement of this product or recipe."
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "recipeId": "meksikolainen-molletes-pico-de-gallolla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 20.01,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 36.07,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.0,
+      "omittedFractionOfKnownCarbohydrate": 0.0,
+      "uncertainMatchedCarbohydratePerServingG": 36.07,
+      "ingredientFlags": [
+        {
+          "ingredient": "bolillosämpylä",
+          "availableCarbohydratePerServingG": 26.68,
+          "giRecordId": "bread-category-mean-gi-64",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Breads category mean: bread category mean; product and processing variation is substantial; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "musta papu",
+          "availableCarbohydratePerServingG": 7.24,
+          "giRecordId": "legumes-category-mean-gi-34",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "legume-category",
+          "recordPreparationKey": "legume-category",
+          "giMatchEvidence": "Legumes, category mean: Broad category mean; substantial uncertainty when applied to a specific cooked bean.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "tomaatti",
+          "availableCarbohydratePerServingG": 2.16,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "whole-raw",
+          "recordPreparationKey": "whole-raw",
+          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 12
+    },
+    {
+      "recipeId": "malesialainen-mee-goreng-aamunuudeleilla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 18.55,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 35.32,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.17,
+      "omittedFractionOfKnownCarbohydrate": 0.0047,
+      "uncertainMatchedCarbohydratePerServingG": 35.15,
+      "ingredientFlags": [
+        {
+          "ingredient": "vehnänuudeli",
+          "availableCarbohydratePerServingG": 33.2,
+          "giRecordId": "pasta-category-mean-gi-52",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Pasta category mean: pasta category mean; product and cooking variation remains; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "pavunitu",
+          "availableCarbohydratePerServingG": 1.95,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "recipeId": "vietnamilainen-banh-mi-munalla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 19.49,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 30.55,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.17,
+      "omittedFractionOfKnownCarbohydrate": 0.0054,
+      "uncertainMatchedCarbohydratePerServingG": 30.38,
+      "ingredientFlags": [
+        {
+          "ingredient": "patonki",
+          "availableCarbohydratePerServingG": 28.02,
+          "giRecordId": "bread-category-mean-gi-64",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Breads category mean: bread category mean; product and processing variation is substantial; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "kurkkua",
+          "availableCarbohydratePerServingG": 0.7,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "kuorittua porkkanaa",
+          "availableCarbohydratePerServingG": 1.67,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "recipeId": "souvlaki",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 17.9,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 30.61,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.37,
+      "omittedFractionOfKnownCarbohydrate": 0.012,
+      "uncertainMatchedCarbohydratePerServingG": 30.25,
+      "ingredientFlags": [
+        {
+          "ingredient": "sitruunan mehu",
+          "availableCarbohydratePerServingG": 0.2,
+          "giRecordId": "fruit-category-mean-gi-51",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Ingredient-category match: Fruits and fruit products category mean; fruit category mean; used only as a broad tamarind-paste analogue"
+        },
+        {
+          "ingredient": "kreikkalaista jogurttia",
+          "availableCarbohydratePerServingG": 1.81,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese."
+        },
+        {
+          "ingredient": "kurkkua",
+          "availableCarbohydratePerServingG": 0.7,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence."
+        },
+        {
+          "ingredient": "pitaleipää",
+          "availableCarbohydratePerServingG": 25.34,
+          "giRecordId": "bread-category-mean-gi-64",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Ingredient-category match: Breads category mean; bread category mean; product and processing variation is substantial"
+        },
+        {
+          "ingredient": "tomaattia",
+          "availableCarbohydratePerServingG": 2.19,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "whole-raw",
+          "recordPreparationKey": "whole-raw",
+          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce."
+        }
+      ],
+      "rank": 15
+    },
+    {
+      "recipeId": "lahi-ita-kikhernejauho-yrttilettu",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 7.42,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 20.94,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.37,
+      "omittedFractionOfKnownCarbohydrate": 0.0177,
+      "uncertainMatchedCarbohydratePerServingG": 20.57,
+      "ingredientFlags": [
+        {
+          "ingredient": "kikhernejauho",
+          "availableCarbohydratePerServingG": 19.25,
+          "giRecordId": "legumes-category-mean-gi-34",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "legume-category",
+          "giMatchEvidence": "Low-confidence category proxy: Legumes, category mean. Not a recipe or exact ingredient GI."
+        },
+        {
+          "ingredient": "sipuli",
+          "availableCarbohydratePerServingG": 1.32,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+        },
+        {
+          "ingredient": "neutraalia paistoöljyä",
+          "availableCarbohydratePerServingG": 0.0,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": null,
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Low-confidence category proxy: Vegetables other than potatoes, category mean. Not a recipe or exact ingredient GI."
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "recipeId": "gazpacho",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 8.3,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 18.75,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.13,
+      "omittedFractionOfKnownCarbohydrate": 0.0068,
+      "uncertainMatchedCarbohydratePerServingG": 18.62,
+      "ingredientFlags": [
+        {
+          "ingredient": "kypsiä tomaatteja",
+          "availableCarbohydratePerServingG": 8.75,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "whole-raw",
+          "recordPreparationKey": "whole-raw",
+          "giMatchEvidence": "Ingredient-category match: Whole raw tomato; GI 22 was measured for whole raw tomato, not cooked tomato sauce."
+        },
+        {
+          "ingredient": "kurkkua",
+          "availableCarbohydratePerServingG": 1.4,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence."
+        },
+        {
+          "ingredient": "punaista paprikaa",
+          "availableCarbohydratePerServingG": 1.8,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence."
+        },
+        {
+          "ingredient": "vaaleaa leipää",
+          "availableCarbohydratePerServingG": 6.67,
+          "giRecordId": "bread-category-mean-gi-64",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Ingredient-category match: Breads category mean; bread category mean; product and processing variation is substantial"
+        }
+      ],
+      "rank": 17
+    },
+    {
+      "recipeId": "valimerellinen-kikherne-yrttiaamiainen",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 4.93,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 12.55,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.95,
+      "omittedFractionOfKnownCarbohydrate": 0.0758,
+      "uncertainMatchedCarbohydratePerServingG": 11.6,
+      "ingredientFlags": [
+        {
+          "ingredient": "kikherne",
+          "availableCarbohydratePerServingG": 8.8,
+          "giRecordId": "chickpea-canned-gi-35",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "canned-drained",
+          "recordPreparationKey": "canned-drained",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record."
+        },
+        {
+          "ingredient": "kurkku",
+          "availableCarbohydratePerServingG": 2.8,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record."
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "recipeId": "kanakorma-kukkakaaliriisilla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 3.45,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 6.66,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.0,
+      "omittedFractionOfKnownCarbohydrate": 0.0,
+      "uncertainMatchedCarbohydratePerServingG": 6.66,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 1.45,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 2 dl converted using 100 g/dl."
+        },
+        {
+          "ingredient": "turkkilaista jogurttia",
+          "availableCarbohydratePerServingG": 1.61,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #32201 plain Turkish/Greek yogurt, 10% fat; recipe-listed 150 g."
+        },
+        {
+          "ingredient": "kukkakaalia",
+          "availableCarbohydratePerServingG": 3.6,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322 raw cauliflower; recipe-listed 600 g cauliflower rice."
+        }
+      ],
+      "rank": 19
+    },
+    {
+      "recipeId": "lihapullat-kermakastikkeessa-vhh",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 3.53,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 6.38,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.0,
+      "omittedFractionOfKnownCarbohydrate": 0.0,
+      "uncertainMatchedCarbohydratePerServingG": 6.38,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 2.18,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 3 dl across meatball mixture and sauce converted to 300 g."
+        },
+        {
+          "ingredient": "kukkakaalia",
+          "availableCarbohydratePerServingG": 4.2,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322; recipe-listed 700 g cauliflower for mash."
+        }
+      ],
+      "rank": 20
+    },
+    {
+      "recipeId": "khao-man-gai-vhh",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 3.67,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 6.84,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.66,
+      "omittedFractionOfKnownCarbohydrate": 0.0966,
+      "uncertainMatchedCarbohydratePerServingG": 6.18,
+      "ingredientFlags": [
+        {
+          "ingredient": "kukkakaaliriisiä",
+          "availableCarbohydratePerServingG": 4.2,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "ingredient": "kurkkua",
+          "availableCarbohydratePerServingG": 0.7,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "ingredient": "Healthy Boy -soijapaputahnaa",
+          "availableCarbohydratePerServingG": 1.28,
+          "giRecordId": "legumes-category-mean-gi-34",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "legume-category",
+          "recordPreparationKey": "legume-category",
+          "giMatchEvidence": "Published Legumes, category mean category/analogue; match limitations disclosed centrally."
+        }
+      ],
+      "rank": 21
+    },
+    {
+      "recipeId": "kesakurpitsalasagne-vhh",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 2.77,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 6.69,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.51,
+      "omittedFractionOfKnownCarbohydrate": 0.0759,
+      "uncertainMatchedCarbohydratePerServingG": 6.18,
+      "ingredientFlags": [
+        {
+          "ingredient": "kesäkurpitsaa",
+          "availableCarbohydratePerServingG": 2.92,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "ingredient": "tomaattimurskaa",
+          "availableCarbohydratePerServingG": 2.3,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "whole-raw",
+          "recordPreparationKey": "whole-raw",
+          "giMatchEvidence": "Published Whole raw tomato category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 0.97,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        }
+      ],
+      "rank": 22
+    },
+    {
+      "recipeId": "jauhelihakastike-kesakurpitsanuudeleilla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 3.4,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 5.83,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.0,
+      "omittedFractionOfKnownCarbohydrate": 0.0,
+      "uncertainMatchedCarbohydratePerServingG": 5.83,
+      "ingredientFlags": [
+        {
+          "ingredient": "kesäkurpitsaa",
+          "availableCarbohydratePerServingG": 4.38,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #389 medium courgette 350 g each, 2 = 700 g."
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 1.45,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: dairy-category-mean-gi-35. Fineli #631; 2 dl converted using 100 g/dl."
+        }
+      ],
+      "rank": 23
+    },
+    {
+      "recipeId": "kukkakaaligratiini-pekonilla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 3.28,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 5.85,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.2,
+      "omittedFractionOfKnownCarbohydrate": 0.0342,
+      "uncertainMatchedCarbohydratePerServingG": 5.65,
+      "ingredientFlags": [
+        {
+          "ingredient": "kukkakaalia",
+          "availableCarbohydratePerServingG": 4.2,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 1.45,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        }
+      ],
+      "rank": 24
+    },
+    {
+      "recipeId": "valimerellinen-menemen-fetalla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 2.2,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 5.58,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.37,
+      "omittedFractionOfKnownCarbohydrate": 0.0654,
+      "uncertainMatchedCarbohydratePerServingG": 5.21,
+      "ingredientFlags": [
+        {
+          "ingredient": "tomaattia",
+          "availableCarbohydratePerServingG": 2.19,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "whole-raw",
+          "recordPreparationKey": "whole-raw",
+          "giMatchEvidence": "Published Whole raw tomato category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "ingredient": "vihreää paprikaa",
+          "availableCarbohydratePerServingG": 2.13,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "ingredient": "fetajuustoa",
+          "availableCarbohydratePerServingG": 0.9,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        }
+      ],
+      "rank": 25
+    },
+    {
+      "recipeId": "vhh-lohikeitto-kukkakaalilla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 2.88,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 6.28,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.23,
+      "omittedFractionOfKnownCarbohydrate": 0.1962,
+      "uncertainMatchedCarbohydratePerServingG": 5.05,
+      "ingredientFlags": [
+        {
+          "ingredient": "kukkakaalia",
+          "availableCarbohydratePerServingG": 3.6,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 1.45,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        }
+      ],
+      "rank": 26
+    },
+    {
+      "recipeId": "broileri-kukkakaaligratiini",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 2.88,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 5.2,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.15,
+      "omittedFractionOfKnownCarbohydrate": 0.0285,
+      "uncertainMatchedCarbohydratePerServingG": 5.05,
+      "ingredientFlags": [
+        {
+          "ingredient": "kukkakaalia",
+          "availableCarbohydratePerServingG": 3.6,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 1.45,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        }
+      ],
+      "rank": 27
+    },
+    {
+      "recipeId": "poronkaristys-kukkakaalimuusilla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 3.09,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 5.74,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.72,
+      "omittedFractionOfKnownCarbohydrate": 0.1248,
+      "uncertainMatchedCarbohydratePerServingG": 5.02,
+      "ingredientFlags": [
+        {
+          "ingredient": "mustapippuria",
+          "availableCarbohydratePerServingG": 0.1,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        },
+        {
+          "ingredient": "kukkakaalia",
+          "availableCarbohydratePerServingG": 4.2,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 0.73,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        }
+      ],
+      "rank": 28
+    },
+    {
+      "recipeId": "larb-moo-vhh",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 3.13,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 4.71,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.0,
+      "omittedFractionOfKnownCarbohydrate": 0.0,
+      "uncertainMatchedCarbohydratePerServingG": 4.71,
+      "ingredientFlags": [
+        {
+          "ingredient": "paahdettua riisijauhetta",
+          "availableCarbohydratePerServingG": 1.59,
+          "giRecordId": "rice-category-mean-gi-67",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: rice-category-mean-gi-67. Fineli #182 rice flour; 1 tbsp converted to 8 g using the food-specific measure."
+        },
+        {
+          "ingredient": "valkokaalia",
+          "availableCarbohydratePerServingG": 3.13,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #320 white cabbage; recipe-listed 250 g."
+        }
+      ],
+      "rank": 29
+    },
+    {
+      "recipeId": "khao-kha-moo-vhh",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 2.78,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 4.21,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.0,
+      "omittedFractionOfKnownCarbohydrate": 0.0,
+      "uncertainMatchedCarbohydratePerServingG": 4.21,
+      "ingredientFlags": [
+        {
+          "ingredient": "kiinankaalia tai paksoita",
+          "availableCarbohydratePerServingG": 1.21,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #359 Chinese cabbage used for the recipe option; recipe-listed 300 g."
+        },
+        {
+          "ingredient": "kukkakaaliriisiä",
+          "availableCarbohydratePerServingG": 3.0,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #322 raw cauliflower; recipe-listed 500 g."
+        }
+      ],
+      "rank": 30
+    },
+    {
+      "recipeId": "paahdettu-aamiaismunakoiso",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 2.43,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 4.55,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.36,
+      "omittedFractionOfKnownCarbohydrate": 0.0786,
+      "uncertainMatchedCarbohydratePerServingG": 4.19,
+      "ingredientFlags": [
+        {
+          "ingredient": "munakoisoa",
+          "availableCarbohydratePerServingG": 3.1,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        },
+        {
+          "ingredient": "kreikkalaista jogurttia",
+          "availableCarbohydratePerServingG": 1.09,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        }
+      ],
+      "rank": 31
+    },
+    {
+      "recipeId": "pad-kra-pao-vhh",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 2.5,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 4.95,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.99,
+      "omittedFractionOfKnownCarbohydrate": 0.2003,
+      "uncertainMatchedCarbohydratePerServingG": 3.96,
+      "ingredientFlags": [
+        {
+          "ingredient": "kukkakaaliriisiä",
+          "availableCarbohydratePerServingG": 3.6,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "ingredient": "suolatonta soijakastiketta",
+          "availableCarbohydratePerServingG": 0.36,
+          "giRecordId": "legumes-category-mean-gi-34",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "legume-category",
+          "recordPreparationKey": "legume-category",
+          "giMatchEvidence": "Published Legumes, category mean category/analogue; match limitations disclosed centrally."
+        }
+      ],
+      "rank": 32
+    },
+    {
+      "recipeId": "gai-yang-vhh",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 2.4,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 4.98,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.35,
+      "omittedFractionOfKnownCarbohydrate": 0.2702,
+      "uncertainMatchedCarbohydratePerServingG": 3.64,
+      "ingredientFlags": [
+        {
+          "ingredient": "kukkakaaliriisiä",
+          "availableCarbohydratePerServingG": 2.94,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        },
+        {
+          "ingredient": "kurkkua",
+          "availableCarbohydratePerServingG": 0.7,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        }
+      ],
+      "rank": 33
+    },
+    {
+      "recipeId": "kermainen-lohipata",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 1.26,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 5.02,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.5,
+      "omittedFractionOfKnownCarbohydrate": 0.2984,
+      "uncertainMatchedCarbohydratePerServingG": 3.53,
+      "ingredientFlags": [
+        {
+          "ingredient": "maustamatonta tuorejuustoa",
+          "availableCarbohydratePerServingG": 2.0,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 1.45,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean category/analogue; match limitations disclosed centrally."
+        },
+        {
+          "ingredient": "pinaattia",
+          "availableCarbohydratePerServingG": 0.08,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean category/analogue; match limitations disclosed centrally."
+        }
+      ],
+      "rank": 34
+    },
+    {
+      "recipeId": "valimerellinen-pinaatti-fetashakshuka",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 0.79,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 3.22,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.17,
+      "omittedFractionOfKnownCarbohydrate": 0.0512,
+      "uncertainMatchedCarbohydratePerServingG": 3.06,
+      "ingredientFlags": [
+        {
+          "ingredient": "tomaatti",
+          "availableCarbohydratePerServingG": 2.16,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "whole-raw",
+          "recordPreparationKey": "whole-raw",
+          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "pinaatti",
+          "availableCarbohydratePerServingG": 0.0,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": null,
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "feta",
+          "availableCarbohydratePerServingG": 0.9,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 35
+    },
+    {
+      "recipeId": "halloumimunakas",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 0.82,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 3.5,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.52,
+      "omittedFractionOfKnownCarbohydrate": 0.1499,
+      "uncertainMatchedCarbohydratePerServingG": 2.98,
+      "ingredientFlags": [
+        {
+          "ingredient": "halloumijuustoa",
+          "availableCarbohydratePerServingG": 1.25,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        },
+        {
+          "ingredient": "kirsikkatomaatteja",
+          "availableCarbohydratePerServingG": 1.73,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "whole-raw",
+          "recordPreparationKey": "whole-raw",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        }
+      ],
+      "rank": 36
+    },
+    {
+      "recipeId": "raejuusto-pesto-kasviskulho",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 0.86,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 3.11,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.63,
+      "omittedFractionOfKnownCarbohydrate": 0.2031,
+      "uncertainMatchedCarbohydratePerServingG": 2.48,
+      "ingredientFlags": [
+        {
+          "ingredient": "raejuustoa",
+          "availableCarbohydratePerServingG": 1.25,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        },
+        {
+          "ingredient": "kirsikkatomaatteja",
+          "availableCarbohydratePerServingG": 0.88,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "whole-raw",
+          "recordPreparationKey": "whole-raw",
+          "giMatchEvidence": "Published Whole raw tomato proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        },
+        {
+          "ingredient": "kurkkua",
+          "availableCarbohydratePerServingG": 0.35,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        }
+      ],
+      "rank": 37
+    },
+    {
+      "recipeId": "kiinalainen-soijamaito-aamiaisella",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 0.67,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 2.31,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.35,
+      "omittedFractionOfKnownCarbohydrate": 0.1515,
+      "uncertainMatchedCarbohydratePerServingG": 1.96,
+      "ingredientFlags": [
+        {
+          "ingredient": "soijamaito",
+          "availableCarbohydratePerServingG": 1.96,
+          "giRecordId": "legumes-category-mean-gi-34",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "legume-category",
+          "recordPreparationKey": "legume-category",
+          "giMatchEvidence": "Legumes, category mean: Broad category mean; substantial uncertainty when applied to a specific cooked bean.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 38
+    },
+    {
+      "recipeId": "korealainen-gyeran-mari-kasviksilla",
+      "priorityScore": 28,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 1.19,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 2.22,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.42,
+      "omittedFractionOfKnownCarbohydrate": 0.1868,
+      "uncertainMatchedCarbohydratePerServingG": 1.81,
+      "ingredientFlags": [
+        {
+          "ingredient": "porkkana",
+          "availableCarbohydratePerServingG": 1.81,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 39
+    },
+    {
+      "recipeId": "yum-woon-sen-vhh",
+      "priorityScore": 24,
+      "flags": [
+        "AT_LEAST_HALF_KNOWN_CHO_OMITTED",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 0.24,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 2.21,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.13,
+      "omittedFractionOfKnownCarbohydrate": 0.5125,
+      "uncertainMatchedCarbohydratePerServingG": 1.08,
+      "ingredientFlags": [
+        {
+          "ingredient": "tomaattia",
+          "availableCarbohydratePerServingG": 1.08,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "whole-raw",
+          "recordPreparationKey": "whole-raw",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        }
+      ],
+      "rank": 40
+    },
+    {
+      "recipeId": "munakasrulla-pinaatti-tuorejuustolla",
+      "priorityScore": 24,
+      "flags": [
+        "AT_LEAST_HALF_KNOWN_CHO_OMITTED",
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 0.35,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 2.2,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.2,
+      "omittedFractionOfKnownCarbohydrate": 0.5456,
+      "uncertainMatchedCarbohydratePerServingG": 1.0,
+      "ingredientFlags": [
+        {
+          "ingredient": "tuorejuusto",
+          "availableCarbohydratePerServingG": 1.0,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "International Tables dairy-category mean (35); not specific to cream cheese."
+        }
+      ],
+      "rank": 41
+    },
+    {
+      "recipeId": "kantonilainen-hoyrytetty-kala",
+      "priorityScore": 22,
+      "flags": [
+        "AT_LEAST_HALF_KNOWN_CHO_OMITTED",
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 0.23,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 1.18,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.83,
+      "omittedFractionOfKnownCarbohydrate": 0.7075,
+      "uncertainMatchedCarbohydratePerServingG": 0.35,
+      "ingredientFlags": [
+        {
+          "ingredient": "kevätsipulia",
+          "availableCarbohydratePerServingG": 0.35,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        }
+      ],
+      "rank": 42
+    },
+    {
+      "recipeId": "intialainen-pesarattu-mungpavuista",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 37.15,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 71.53,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.6,
+      "omittedFractionOfKnownCarbohydrate": 0.0084,
+      "uncertainMatchedCarbohydratePerServingG": 70.93,
+      "ingredientFlags": [
+        {
+          "ingredient": "mungpapu",
+          "availableCarbohydratePerServingG": 31.43,
+          "giRecordId": "legumes-category-mean-gi-34",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "legume-category",
+          "giMatchEvidence": "Low-confidence proxy: Legumes, category mean; source category or closest published analogue, not a measured recipe GI."
+        },
+        {
+          "ingredient": "riisi",
+          "availableCarbohydratePerServingG": 39.5,
+          "giRecordId": "rice-category-mean-gi-67",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Low-confidence proxy: Rice category mean; source category or closest published analogue, not a measured recipe GI."
+        }
+      ],
+      "rank": 43
+    },
+    {
+      "recipeId": "japanilainen-tamago-kake-gohan",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 26.47,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 40.52,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.02,
+      "omittedFractionOfKnownCarbohydrate": 0.0252,
+      "uncertainMatchedCarbohydratePerServingG": 39.5,
+      "ingredientFlags": [
+        {
+          "ingredient": "riisi",
+          "availableCarbohydratePerServingG": 39.5,
+          "giRecordId": "rice-category-mean-gi-67",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 44
+    },
+    {
+      "recipeId": "korealainen-gyeranbap-riisikulho",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 26.47,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 40.52,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.02,
+      "omittedFractionOfKnownCarbohydrate": 0.0252,
+      "uncertainMatchedCarbohydratePerServingG": 39.5,
+      "ingredientFlags": [
+        {
+          "ingredient": "riisi",
+          "availableCarbohydratePerServingG": 39.5,
+          "giRecordId": "rice-category-mean-gi-67",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 45
+    },
+    {
+      "recipeId": "thai-jok-kanalla",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 26.47,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 39.67,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.24,
+      "omittedFractionOfKnownCarbohydrate": 0.0061,
+      "uncertainMatchedCarbohydratePerServingG": 39.5,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "availableCarbohydratePerServingG": 39.5,
+          "giRecordId": "rice-category-mean-gi-67",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI."
+        }
+      ],
+      "rank": 46
+    },
+    {
+      "recipeId": "thai-porsasjok",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 26.47,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 39.71,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.21,
+      "omittedFractionOfKnownCarbohydrate": 0.0054,
+      "uncertainMatchedCarbohydratePerServingG": 39.5,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuivaa pitkäjyväistä valkoista riisiä",
+          "availableCarbohydratePerServingG": 39.5,
+          "giRecordId": "rice-category-mean-gi-67",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Low-confidence category proxy: Rice category mean. Not a recipe or exact ingredient GI."
+        }
+      ],
+      "rank": 47
+    },
+    {
+      "recipeId": "japanilainen-onigiri-lohella",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 26.47,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 39.52,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.02,
+      "omittedFractionOfKnownCarbohydrate": 0.0006,
+      "uncertainMatchedCarbohydratePerServingG": 39.5,
+      "ingredientFlags": [
+        {
+          "ingredient": "riisi",
+          "availableCarbohydratePerServingG": 39.5,
+          "giRecordId": "rice-category-mean-gi-67",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 48
+    },
+    {
+      "recipeId": "kiinalainen-hirssipuuro-taateleilla",
+      "priorityScore": 20,
+      "flags": [
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 21.19,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 37.84,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.08,
+      "omittedFractionOfKnownCarbohydrate": 0.0022,
+      "uncertainMatchedCarbohydratePerServingG": 37.76,
+      "ingredientFlags": [
+        {
+          "ingredient": "hirssi",
+          "availableCarbohydratePerServingG": 34.4,
+          "giRecordId": "millet-groats-rozanska-2020-gi-56-2",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "cooked-millet-groats",
+          "recordPreparationKey": "cooked-millet-groats",
+          "giMatchEvidence": "Millet groats: Low-confidence cooked-millet analogue; source reports a wide GI range.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "kivettömiä kuivattuja taateleita",
+          "availableCarbohydratePerServingG": 3.36,
+          "giRecordId": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "tamer-stage-as-sold",
+          "recordPreparationKey": "tamer-stage-as-sold",
+          "giMatchEvidence": "AlGeffari et al. 2016 tested 17 Tamer-stage date varieties (mean GI 55.2, glucose scale); this recipe adds chopped dried dates at serving without cooking them. Low-confidence ingredient estimate, not a meal measurement."
+        }
+      ],
+      "rank": 49
+    },
+    {
+      "recipeId": "marjakiisseli-vaniljakastikkeella",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 19.93,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 35.74,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.01,
+      "omittedFractionOfKnownCarbohydrate": 0.0004,
+      "uncertainMatchedCarbohydratePerServingG": 35.73,
+      "ingredientFlags": [
+        {
+          "ingredient": "pakastemarjoja",
+          "availableCarbohydratePerServingG": 8.0,
+          "giRecordId": "fruit-category-mean-gi-51",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Published GI analogue/category record fruit-category-mean-gi-51; source and limitations are listed centrally."
+        },
+        {
+          "ingredient": "sokeria",
+          "availableCarbohydratePerServingG": 13.32,
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally."
+        },
+        {
+          "ingredient": "perunajauhoja",
+          "availableCarbohydratePerServingG": 3.88,
+          "giRecordId": "potatoes-category-mean-gi-71",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Published GI analogue/category record potatoes-category-mean-gi-71; source and limitations are listed centrally."
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 1.21,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally."
+        },
+        {
+          "ingredient": "täysmaitoa",
+          "availableCarbohydratePerServingG": 2.0,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally."
+        },
+        {
+          "ingredient": "sokeria",
+          "availableCarbohydratePerServingG": 6.66,
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally."
+        },
+        {
+          "ingredient": "vaniljasokeria",
+          "availableCarbohydratePerServingG": 0.67,
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally."
+        }
+      ],
+      "rank": 50
+    },
+    {
+      "recipeId": "lahi-ita-fattet-hummus",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 18.33,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 33.61,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.07,
+      "omittedFractionOfKnownCarbohydrate": 0.002,
+      "uncertainMatchedCarbohydratePerServingG": 33.54,
+      "ingredientFlags": [
+        {
+          "ingredient": "kypsiä, valutettuja kikherneitä",
+          "availableCarbohydratePerServingG": 8.8,
+          "giRecordId": "legumes-category-mean-gi-34",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "legume-category",
+          "giMatchEvidence": "Low-confidence category proxy: Legumes, category mean. Not a recipe or exact ingredient GI."
+        },
+        {
+          "ingredient": "pita",
+          "availableCarbohydratePerServingG": 23.04,
+          "giRecordId": "bread-category-mean-gi-64",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Low-confidence category proxy: Breads category mean. Not a recipe or exact ingredient GI."
+        },
+        {
+          "ingredient": "jogurtti",
+          "availableCarbohydratePerServingG": 1.7,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Low-confidence category proxy: unflavoured dairy category mean from International Tables 2021 Table 1; yogurt-specific GI is not measured by this match."
+        }
+      ],
+      "rank": 51
+    },
+    {
+      "recipeId": "meksikolainen-aamiais-tacot-mustapavuilla",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 16.04,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 33.89,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.73,
+      "omittedFractionOfKnownCarbohydrate": 0.0215,
+      "uncertainMatchedCarbohydratePerServingG": 33.16,
+      "ingredientFlags": [
+        {
+          "ingredient": "musta papu",
+          "availableCarbohydratePerServingG": 7.24,
+          "giRecordId": "legumes-category-mean-gi-34",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "legume-category",
+          "giMatchEvidence": "Low-confidence proxy: Legumes, category mean; source category or closest published analogue, not a measured recipe GI."
+        },
+        {
+          "ingredient": "maissitortilla",
+          "availableCarbohydratePerServingG": 25.92,
+          "giRecordId": "corn-tortilla-noriega-2000-glucose-estimate",
+          "matchKind": "EXACT",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "commercial-corn-tortilla",
+          "recordPreparationKey": "commercial-corn-tortilla",
+          "giMatchEvidence": "Published corn tortilla human test; the study product is a commercial corn tortilla, matched to the recipe-listed gluten-free corn tortilla with low confidence due to the single small study and bread-to-glucose scale conversion."
+        }
+      ],
+      "rank": 52
+    },
+    {
+      "recipeId": "medu-vada",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 10.77,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 30.15,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.0,
+      "omittedFractionOfKnownCarbohydrate": 0.0,
+      "uncertainMatchedCarbohydratePerServingG": 30.15,
+      "ingredientFlags": [
+        {
+          "ingredient": "urad-dal-linssejä",
+          "availableCarbohydratePerServingG": 28.56,
+          "giRecordId": "legumes-category-mean-gi-34",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "legume-category",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: legumes-category-mean-gi-34. Fineli #399 dried green/brown lentils used as a legume-composition analogue for urad dal; recipe-listed 250 g. Low confidence."
+        },
+        {
+          "ingredient": "riisijauhoja",
+          "availableCarbohydratePerServingG": 1.59,
+          "giRecordId": "rice-category-mean-gi-67",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: rice-category-mean-gi-67. Fineli #182; one tablespoon converted to 8 g using the food-specific measure."
+        }
+      ],
+      "rank": 53
+    },
+    {
+      "recipeId": "meksikolainen-munakokkeli-pico-de-gallolla",
+      "priorityScore": 20,
+      "flags": [
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 14.06,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 28.49,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.42,
+      "omittedFractionOfKnownCarbohydrate": 0.0146,
+      "uncertainMatchedCarbohydratePerServingG": 28.08,
+      "ingredientFlags": [
+        {
+          "ingredient": "tomaatti",
+          "availableCarbohydratePerServingG": 2.16,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "whole-raw",
+          "recordPreparationKey": "whole-raw",
+          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "maissitortilla",
+          "availableCarbohydratePerServingG": 25.92,
+          "giRecordId": "corn-tortilla-noriega-2000-glucose-estimate",
+          "matchKind": "EXACT",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "commercial-corn-tortilla",
+          "recordPreparationKey": "commercial-corn-tortilla",
+          "giMatchEvidence": "Corn tortilla: Single published regional study; conversion to glucose scale uses the 0.71 factor described in International Tables 2021. Low confidence.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "recipeId": "lahi-ita-zaatar-munat",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 15.62,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 25.96,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.42,
+      "omittedFractionOfKnownCarbohydrate": 0.016,
+      "uncertainMatchedCarbohydratePerServingG": 25.54,
+      "ingredientFlags": [
+        {
+          "ingredient": "pita",
+          "availableCarbohydratePerServingG": 23.04,
+          "giRecordId": "bread-category-mean-gi-64",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Breads category mean: bread category mean; product and processing variation is substantial; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "jogurtti",
+          "availableCarbohydratePerServingG": 2.5,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "recipeId": "pannacotta-marjakastikkeella",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 12.56,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 23.26,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.04,
+      "omittedFractionOfKnownCarbohydrate": 0.0017,
+      "uncertainMatchedCarbohydratePerServingG": 23.22,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 1.93,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally."
+        },
+        {
+          "ingredient": "täysmaitoa",
+          "availableCarbohydratePerServingG": 0.8,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally."
+        },
+        {
+          "ingredient": "sokeria",
+          "availableCarbohydratePerServingG": 11.66,
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally."
+        },
+        {
+          "ingredient": "vaniljasokeria",
+          "availableCarbohydratePerServingG": 0.67,
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally."
+        },
+        {
+          "ingredient": "pakastemarjoja",
+          "availableCarbohydratePerServingG": 4.0,
+          "giRecordId": "fruit-category-mean-gi-51",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Published GI analogue/category record fruit-category-mean-gi-51; source and limitations are listed centrally."
+        },
+        {
+          "ingredient": "sokeria",
+          "availableCarbohydratePerServingG": 4.16,
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally."
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "recipeId": "karibia-mango-limejogurtti",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 7.3,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 15.83,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.73,
+      "omittedFractionOfKnownCarbohydrate": 0.0461,
+      "uncertainMatchedCarbohydratePerServingG": 15.1,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuorittua mangoa",
+          "availableCarbohydratePerServingG": 12.6,
+          "giRecordId": "mango-raw-mean-gi-51-2002",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "raw",
+          "recordPreparationKey": "raw",
+          "giMatchEvidence": "Published raw-mango mean GI 51 from three studies (International Tables 2002, Table 2, item 412); varieties and ripeness differ, so this is a low-confidence generic raw-mango analogue, not a recipe or meal measurement."
+        },
+        {
+          "ingredient": "jogurtti",
+          "availableCarbohydratePerServingG": 2.5,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 6.09,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 12.04,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.0,
+      "omittedFractionOfKnownCarbohydrate": 0.0,
+      "uncertainMatchedCarbohydratePerServingG": 12.04,
+      "ingredientFlags": [
+        {
+          "ingredient": "maustamatonta kreikkalaista jogurttia, 7 % rasvaa",
+          "availableCarbohydratePerServingG": 1.46,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "saksanpähkinä",
+          "availableCarbohydratePerServingG": 0.48,
+          "giRecordId": "nuts-category-mean-gi-22",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "nuts-category-mean",
+          "recordPreparationKey": "nuts-category-mean",
+          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "hunaja",
+          "availableCarbohydratePerServingG": 8.08,
+          "giRecordId": "honey-category-mean-gi-55-2002",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Honey, mean of 11 types: Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "tuoretta viikunaa",
+          "availableCarbohydratePerServingG": 2.03,
+          "giRecordId": "fruit-category-mean-gi-51",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "recipeId": "lahi-ita-ful-medames",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 3.6,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 11.29,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.69,
+      "omittedFractionOfKnownCarbohydrate": 0.0611,
+      "uncertainMatchedCarbohydratePerServingG": 10.6,
+      "ingredientFlags": [
+        {
+          "ingredient": "härkäpapu",
+          "availableCarbohydratePerServingG": 10.6,
+          "giRecordId": "legumes-category-mean-gi-34",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": null,
+          "recordPreparationKey": "legume-category",
+          "giMatchEvidence": "Low-confidence proxy: Legumes, category mean; source category or closest published analogue, not a measured recipe GI."
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "recipeId": "valimerellinen-ricotta-persikkakulho",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 4.08,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 9.98,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.12,
+      "omittedFractionOfKnownCarbohydrate": 0.012,
+      "uncertainMatchedCarbohydratePerServingG": 9.86,
+      "ingredientFlags": [
+        {
+          "ingredient": "ricotta",
+          "availableCarbohydratePerServingG": 1.35,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "kivettömiä persikkaviipaleita",
+          "availableCarbohydratePerServingG": 6.0,
+          "giRecordId": "fruit-category-mean-gi-51",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "pistaasi",
+          "availableCarbohydratePerServingG": 2.51,
+          "giRecordId": "nuts-category-mean-gi-22",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "nuts-category-mean",
+          "recordPreparationKey": "nuts-category-mean",
+          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 60
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-maakouda",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 3.3,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 5.15,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.5,
+      "omittedFractionOfKnownCarbohydrate": 0.0977,
+      "uncertainMatchedCarbohydratePerServingG": 4.65,
+      "ingredientFlags": [
+        {
+          "ingredient": "perunaa",
+          "availableCarbohydratePerServingG": 4.65,
+          "giRecordId": "potatoes-category-mean-gi-71",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Published Potatoes and potato products category mean category/analogue; match limitations disclosed centrally."
+        }
+      ],
+      "rank": 61
+    },
+    {
+      "recipeId": "keto-joulutortut",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 1.8,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 4.2,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.12,
+      "omittedFractionOfKnownCarbohydrate": 0.0287,
+      "uncertainMatchedCarbohydratePerServingG": 4.08,
+      "ingredientFlags": [
+        {
+          "ingredient": "mantelijauhoa",
+          "availableCarbohydratePerServingG": 1.24,
+          "giRecordId": "nuts-category-mean-gi-22",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "nuts-category-mean",
+          "recordPreparationKey": "nuts-category-mean",
+          "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "tuorejuustoa",
+          "availableCarbohydratePerServingG": 0.54,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+        },
+        {
+          "ingredient": "luumuhilloa",
+          "availableCarbohydratePerServingG": 2.3,
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Sugars and syrups category mean: sugars and syrups category mean; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 62
+    },
+    {
+      "recipeId": "tandoorikana",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 0.88,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 3.94,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.44,
+      "omittedFractionOfKnownCarbohydrate": 0.3649,
+      "uncertainMatchedCarbohydratePerServingG": 2.5,
+      "ingredientFlags": [
+        {
+          "ingredient": "maustamatonta jogurttia",
+          "availableCarbohydratePerServingG": 2.5,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 63
+    },
+    {
+      "recipeId": "keto-pannukakku",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 0.86,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 3.01,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.55,
+      "omittedFractionOfKnownCarbohydrate": 0.1847,
+      "uncertainMatchedCarbohydratePerServingG": 2.45,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 1.45,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        },
+        {
+          "ingredient": "tuorejuustoa",
+          "availableCarbohydratePerServingG": 1.0,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        }
+      ],
+      "rank": 64
+    },
+    {
+      "recipeId": "karibia-jamaikalainen-munakokkeli",
+      "priorityScore": 20,
+      "flags": [
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 0.47,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 2.82,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.67,
+      "omittedFractionOfKnownCarbohydrate": 0.2357,
+      "uncertainMatchedCarbohydratePerServingG": 2.16,
+      "ingredientFlags": [
+        {
+          "ingredient": "tomaatti",
+          "availableCarbohydratePerServingG": 2.16,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "whole-raw",
+          "recordPreparationKey": "whole-raw",
+          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+        }
+      ],
+      "rank": 65
+    },
+    {
+      "recipeId": "vhh-brita-kakku",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 0.79,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 2.62,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.08,
+      "omittedFractionOfKnownCarbohydrate": 0.4121,
+      "uncertainMatchedCarbohydratePerServingG": 1.78,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 0.73,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        },
+        {
+          "ingredient": "mansikoita",
+          "availableCarbohydratePerServingG": 1.05,
+          "giRecordId": "fruit-category-mean-gi-51",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Published Fruits and fruit products category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        }
+      ],
+      "rank": 66
+    },
+    {
+      "recipeId": "keto-pinaattiletut",
+      "priorityScore": 20,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 0.47,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 2.21,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.88,
+      "omittedFractionOfKnownCarbohydrate": 0.3968,
+      "uncertainMatchedCarbohydratePerServingG": 1.33,
+      "ingredientFlags": [
+        {
+          "ingredient": "tuorejuustoa",
+          "availableCarbohydratePerServingG": 1.33,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        }
+      ],
+      "rank": 67
+    },
+    {
+      "recipeId": "kurkku-oliivi-aamiaiskulho",
+      "priorityScore": 18,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 0.31,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 2.19,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.05,
+      "omittedFractionOfKnownCarbohydrate": 0.4785,
+      "uncertainMatchedCarbohydratePerServingG": 1.14,
+      "ingredientFlags": [
+        {
+          "ingredient": "fetajuustoa",
+          "availableCarbohydratePerServingG": 0.45,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        },
+        {
+          "ingredient": "kirsikkatomaatteja",
+          "availableCarbohydratePerServingG": 0.69,
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "whole-raw",
+          "recordPreparationKey": "whole-raw",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        }
+      ],
+      "rank": 68
+    },
+    {
+      "recipeId": "savulohi-avokadokulho",
+      "priorityScore": 18,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 0.4,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 1.07,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.29,
+      "omittedFractionOfKnownCarbohydrate": 0.2671,
+      "uncertainMatchedCarbohydratePerServingG": 0.79,
+      "ingredientFlags": [
+        {
+          "ingredient": "kurkkua",
+          "availableCarbohydratePerServingG": 0.35,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+        },
+        {
+          "ingredient": "rucolaa",
+          "availableCarbohydratePerServingG": 0.06,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+        },
+        {
+          "ingredient": "kreikkalaista jogurttia",
+          "availableCarbohydratePerServingG": 0.36,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+        },
+        {
+          "ingredient": "sitruunamehua",
+          "availableCarbohydratePerServingG": 0.02,
+          "giRecordId": "fruit-category-mean-gi-51",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "category-mean",
+          "recordPreparationKey": "category-mean",
+          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+        }
+      ],
+      "rank": 69
+    },
+    {
+      "recipeId": "kai-jiew-vhh",
+      "priorityScore": 18,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE",
+        "PREPARATION_MATCH_FLAG"
+      ],
+      "currentGk": 0.46,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 1.12,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.42,
+      "omittedFractionOfKnownCarbohydrate": 0.3766,
+      "uncertainMatchedCarbohydratePerServingG": 0.7,
+      "ingredientFlags": [
+        {
+          "ingredient": "kevätsipulia",
+          "availableCarbohydratePerServingG": 0.17,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+        },
+        {
+          "ingredient": "kurkkua",
+          "availableCarbohydratePerServingG": 0.53,
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": true,
+          "inputPreparationKey": "vegetable-category",
+          "recordPreparationKey": "vegetable-category",
+          "giMatchEvidence": "Published category or analogue; not a direct test of this exact ingredient and preparation."
+        }
+      ],
+      "rank": 70
+    },
+    {
+      "recipeId": "vhh-lihamureke",
+      "priorityScore": 15,
+      "flags": [
+        "AT_LEAST_HALF_KNOWN_CHO_OMITTED",
+        "DISPLAYED_ZERO_WITH_NONZERO_OMISSIONS",
+        "LOW_CONFIDENCE",
+        "OMISSION_AT_LEAST_75_PERCENT_OF_2G_CAP"
+      ],
+      "currentGk": 0,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 1.91,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.91,
+      "omittedFractionOfKnownCarbohydrate": 1.0,
+      "uncertainMatchedCarbohydratePerServingG": 0.0,
+      "ingredientFlags": [],
+      "rank": 71
+    },
+    {
+      "recipeId": "uunimunat-pinaatilla",
+      "priorityScore": 15,
+      "flags": [
+        "AT_LEAST_HALF_KNOWN_CHO_OMITTED",
+        "DISPLAYED_ZERO_WITH_NONZERO_OMISSIONS",
+        "LOW_CONFIDENCE",
+        "OMISSION_AT_LEAST_75_PERCENT_OF_2G_CAP"
+      ],
+      "currentGk": 0,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 1.58,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.58,
+      "omittedFractionOfKnownCarbohydrate": 1.0,
+      "uncertainMatchedCarbohydratePerServingG": 0.0,
+      "ingredientFlags": [],
+      "rank": 72
+    },
+    {
+      "recipeId": "uuniporsas-kermakastikkeessa-vhh",
+      "priorityScore": 15,
+      "flags": [
+        "AT_LEAST_HALF_KNOWN_CHO_OMITTED",
+        "DISPLAYED_ZERO_WITH_NONZERO_OMISSIONS",
+        "LOW_CONFIDENCE",
+        "OMISSION_AT_LEAST_75_PERCENT_OF_2G_CAP"
+      ],
+      "currentGk": 0,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 1.51,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.51,
+      "omittedFractionOfKnownCarbohydrate": 1.0,
+      "uncertainMatchedCarbohydratePerServingG": 0.0,
+      "ingredientFlags": [],
+      "rank": 73
+    },
+    {
+      "recipeId": "vhh-mokkapalat",
+      "priorityScore": 14,
+      "flags": [
+        "AT_LEAST_HALF_KNOWN_CHO_OMITTED",
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE"
+      ],
+      "currentGk": 0.08,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 0.94,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.02,
+      "omittedFractionOfKnownCarbohydrate": 1.0857,
+      "uncertainMatchedCarbohydratePerServingG": 0.24,
+      "ingredientFlags": [
+        {
+          "ingredient": "kuohukermaa",
+          "availableCarbohydratePerServingG": 0.24,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "unflavoured-dairy",
+          "recordPreparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        }
+      ],
+      "rank": 74
+    },
+    {
+      "recipeId": "hummus",
+      "priorityScore": 12,
+      "flags": [
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 6.16,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 18.17,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.57,
+      "omittedFractionOfKnownCarbohydrate": 0.0316,
+      "uncertainMatchedCarbohydratePerServingG": 17.6,
+      "ingredientFlags": [
+        {
+          "ingredient": "kypsiä kikherneitä",
+          "availableCarbohydratePerServingG": 17.6,
+          "giRecordId": "chickpea-canned-gi-35",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "canned-drained",
+          "recordPreparationKey": "canned-drained",
+          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record."
+        }
+      ],
+      "rank": 75
+    },
+    {
+      "recipeId": "kanasalaatti-pesto-mozzarella",
+      "priorityScore": 12,
+      "flags": [
+        "LOW_CONFIDENCE",
+        "MAJOR_CHO_WITH_UNCERTAIN_GI_MATCH"
+      ],
+      "currentGk": 0.29,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 2.13,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.82,
+      "omittedFractionOfKnownCarbohydrate": 0.3834,
+      "uncertainMatchedCarbohydratePerServingG": 1.31,
+      "ingredientFlags": [
+        {
+          "ingredient": "kirsikkatomaatteja",
+          "availableCarbohydratePerServingG": 1.31,
+          "giRecordId": "tomato-cherry-raw-analogue-gi-22",
+          "matchKind": "ANALOG",
+          "categoryMean": false,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "whole-raw",
+          "recordPreparationKey": "whole-raw",
+          "giMatchEvidence": "Low-confidence cultivar analogue: International Tables 2021 reports GI 22 for whole raw tomatoes; the tested cultivar is not identified as cherry tomato. Recipe tomatoes are served raw."
+        }
+      ],
+      "rank": 76
+    },
+    {
+      "recipeId": "tacokulho-nauta-avokado",
+      "priorityScore": 10,
+      "flags": [
+        "FOOD_CATEGORY_MEAN",
+        "LOW_CONFIDENCE"
+      ],
+      "currentGk": 0.42,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 2.96,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.25,
+      "omittedFractionOfKnownCarbohydrate": 0.421,
+      "uncertainMatchedCarbohydratePerServingG": 0.85,
+      "ingredientFlags": [
+        {
+          "ingredient": "maustamatonta jogurttia 3,9 % rasvaa",
+          "availableCarbohydratePerServingG": 0.85,
+          "giRecordId": "plain-yogurt-category-mean-gi-27-2017",
+          "matchKind": "CATEGORY_MEAN",
+          "categoryMean": true,
+          "declaredOrKeyPreparationMismatch": false,
+          "inputPreparationKey": "plain-unsweetened-yogurt",
+          "recordPreparationKey": "plain-unsweetened-yogurt",
+          "giMatchEvidence": "Low-confidence category mean for plain yogurt (GI 27 ± 11, 43 database entries); this is not a brand-specific measurement."
+        }
+      ],
+      "rank": 77
+    },
+    {
+      "recipeId": "uunimuna-avokadot",
+      "priorityScore": 10,
+      "flags": [
+        "AT_LEAST_HALF_KNOWN_CHO_OMITTED",
+        "DISPLAYED_ZERO_WITH_NONZERO_OMISSIONS",
+        "LOW_CONFIDENCE"
+      ],
+      "currentGk": 0,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 1.46,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.46,
+      "omittedFractionOfKnownCarbohydrate": 1.0,
+      "uncertainMatchedCarbohydratePerServingG": 0.0,
+      "ingredientFlags": [],
+      "rank": 78
+    },
+    {
+      "recipeId": "kiinalainen-teehaudutetut-munat",
+      "priorityScore": 10,
+      "flags": [
+        "AT_LEAST_HALF_KNOWN_CHO_OMITTED",
+        "DISPLAYED_ZERO_WITH_NONZERO_OMISSIONS",
+        "LOW_CONFIDENCE"
+      ],
+      "currentGk": 0,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 1.27,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.27,
+      "omittedFractionOfKnownCarbohydrate": 1.0,
+      "uncertainMatchedCarbohydratePerServingG": 0.0,
+      "ingredientFlags": [],
+      "rank": 79
+    },
+    {
+      "recipeId": "munakokkeli",
+      "priorityScore": 10,
+      "flags": [
+        "AT_LEAST_HALF_KNOWN_CHO_OMITTED",
+        "DISPLAYED_ZERO_WITH_NONZERO_OMISSIONS",
+        "LOW_CONFIDENCE"
+      ],
+      "currentGk": 0,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 1.15,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 1.15,
+      "omittedFractionOfKnownCarbohydrate": 1.0,
+      "uncertainMatchedCarbohydratePerServingG": 0.0,
+      "ingredientFlags": [],
+      "rank": 80
+    },
+    {
+      "recipeId": "munakasmuffinit",
+      "priorityScore": 10,
+      "flags": [
+        "AT_LEAST_HALF_KNOWN_CHO_OMITTED",
+        "DISPLAYED_ZERO_WITH_NONZERO_OMISSIONS",
+        "LOW_CONFIDENCE"
+      ],
+      "currentGk": 0,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 0.81,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.81,
+      "omittedFractionOfKnownCarbohydrate": 1.0,
+      "uncertainMatchedCarbohydratePerServingG": 0.0,
+      "ingredientFlags": [],
+      "rank": 81
+    },
+    {
+      "recipeId": "thai-kai-jiao-yrteilla",
+      "priorityScore": 10,
+      "flags": [
+        "AT_LEAST_HALF_KNOWN_CHO_OMITTED",
+        "DISPLAYED_ZERO_WITH_NONZERO_OMISSIONS",
+        "LOW_CONFIDENCE"
+      ],
+      "currentGk": 0,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 0.79,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.79,
+      "omittedFractionOfKnownCarbohydrate": 1.0,
+      "uncertainMatchedCarbohydratePerServingG": 0.0,
+      "ingredientFlags": [],
+      "rank": 82
+    },
+    {
+      "recipeId": "tonnikalamunakkaat-uunissa",
+      "priorityScore": 10,
+      "flags": [
+        "AT_LEAST_HALF_KNOWN_CHO_OMITTED",
+        "DISPLAYED_ZERO_WITH_NONZERO_OMISSIONS",
+        "LOW_CONFIDENCE"
+      ],
+      "currentGk": 0,
+      "confidence": "LOW",
+      "knownAvailableCarbohydratePerServingG": 0.62,
+      "omittedCarbohydrateIncludingBoundsPerServingG": 0.62,
+      "omittedFractionOfKnownCarbohydrate": 1.0,
+      "uncertainMatchedCarbohydratePerServingG": 0.0,
+      "ingredientFlags": [],
+      "rank": 83
+    }
+  ]
+}

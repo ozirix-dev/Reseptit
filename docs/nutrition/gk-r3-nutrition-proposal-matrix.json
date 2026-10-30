@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "units": "g per serving; availableCHO excludes fibre and polyols; rounded model values, not laboratory precision",
+  "baseCommit": "e8da2c9417e2aeff55a85d599b3b7e1ad465f36c",
+  "r2Head": "020b665582f4f1ec54e56ec978581e424adc6ace",
+  "proposals": [
+    {
+      "recipeId": "bulgogi",
+      "servings": 4,
+      "sourcePath": "reseptit/paaruoat/bulgogi.md",
+      "calculationPath": "docs/nutrition/calculations/bulgogi.json",
+      "publishedAvailableCarbohydratePerServingG": 62.81,
+      "currentStrictPerServing": {
+        "availableCarbohydrate": 62.81,
+        "protein": 43.15,
+        "fat": 8.29,
+        "fibre": 2.18
+      },
+      "r2ProposedInputScenarioPerServing": {
+        "availableCarbohydrate": 63.13,
+        "protein": 43.32,
+        "fat": 8.3,
+        "fibre": 2.24
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.32,
+        "protein": 0.17,
+        "fat": 0.01,
+        "fibre": 0.06
+      },
+      "decision": "HOLD_FULL_MACRO_PUBLICATION",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "retentionReview": "R2 sets all retention factors to 1 and claims no discarded liquid. This is not established for this marinade or rinsed rice. Do not invent a loss percentage.",
+      "compositionReview": "Raw lean sirloin, dry white rice as a representative for unspecified jasmine, peeled pear, raw alliums and sauces. These are average composition estimates, not measured brands. AFCD spring-onion edible reference portion verified live; Fineli soy and garlic portions checked in the approved local release.",
+      "amountReview": "4 servings. R2 proposes soy 60 ml × 1.2 = 72 g and garlic 3 × 3.5 = 10.5 g. Spring onion already 2 × 15 g in nutrition calculation. Brown sugar 12 g/rkl and sesame oil 13.5 g/rkl are still not linked to food-specific portion evidence in R2; pepper 2 g/tl is supported by Fineli 11177.",
+      "conflictsAndUncertainties": [
+        "Amount of marinade retained",
+        "Jasmine variety/representative dry rice",
+        "Brown-sugar spoon mass",
+        "Sesame-oil spoon mass"
+      ],
+      "nextAction": "Specify whether all marinade is cooked and consumed; weigh sugar and oil or cite food-specific spoon conversion. Keep R2 corrections as isolated input proposals.",
+      "independentApproval": false,
+      "detail": "gk-r3-batch-1.json"
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "servings": 3,
+      "sourcePath": "reseptit/paaruoat/tomaatti-kananmuna-wokki.md",
+      "calculationPath": "docs/nutrition/calculations/tomaatti-kananmuna-wokki.json",
+      "publishedAvailableCarbohydratePerServingG": 38.93,
+      "currentStrictPerServing": {
+        "availableCarbohydrate": 38.93,
+        "protein": 12.98,
+        "fat": 16.58,
+        "fibre": 1.7
+      },
+      "r2ProposedInputScenarioPerServing": {
+        "availableCarbohydrate": 39.03,
+        "protein": 13.03,
+        "fat": 16.58,
+        "fibre": 1.7
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.1,
+        "protein": 0.05,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "decision": "ESTIMATE_READY_FOR_INDEPENDENT_REVIEW",
+      "wholeAvailableCarbohydratePerServingG": 39.03,
+      "retentionReview": "Full listed ingredients retained is a reasonable recipe-level estimate because no liquid is drained or ingredient discarded. Water evaporation does not remove whole-recipe carbohydrate. Oil sticking to pan affects fat and is not measured.",
+      "compositionReview": "Fineli edible egg 858, ripe raw tomato 352, cooked rice 1370, sugar 1, soy 31; AFCD canola F006159 and raw spring onion F006250. Canola oil spoon mass uses Fineli 535 (same oil type), not an Australian tablespoon volume.",
+      "amountReview": "3 servings. Egg 55 g and tomato 125 g are medium edible reference portions, not weighed actual produce. Sugar TL 4 g; canola RKL 13.5 g; spring onion 15 g. Correct soy RKL 15 to 18 g.",
+      "conflictsAndUncertainties": [
+        "Medium piece sizes",
+        "Generic cooked-rice hydration and variety",
+        "Average source composition",
+        "Full-retention cooking estimate"
+      ],
+      "nextAction": "Independent review of explicit reference-portion assumptions, then a bounded nutrition-data correction; no GI proposal.",
+      "independentApproval": false,
+      "detail": "gk-r3-batch-1.json"
+    },
+    {
+      "recipeId": "baozi",
+      "servings": 4,
+      "sourcePath": "reseptit/paaruoat/baozi.md",
+      "calculationPath": "docs/nutrition/calculations/baozi.json",
+      "publishedAvailableCarbohydratePerServingG": 80.36,
+      "currentStrictPerServing": {
+        "availableCarbohydrate": 80.36,
+        "protein": 26.69,
+        "fat": 14.53,
+        "fibre": 4.16
+      },
+      "r2ProposedInputScenarioPerServing": {
+        "availableCarbohydrate": 80.38,
+        "protein": 26.77,
+        "fat": 14.54,
+        "fibre": 4.13
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.02,
+        "protein": 0.08,
+        "fat": 0.01,
+        "fibre": -0.03
+      },
+      "decision": "HOLD_FULL_MACRO_PUBLICATION",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "retentionReview": "Yeast fermentation consumes carbohydrate; squeezed cabbage loses water and soluble nutrients. All-ingredient retention is not a demonstrated final-product model. Neither loss is assigned a fabricated factor.",
+      "compositionReview": "R2 correctly replaces potato starch Fineli 162 with cornstarch Fineli 27. AFCD F009606 live dry-yeast record is available: 6.3 g available carbohydrate, 36.4 g protein, 5 g fat and 26.9 g fibre per100g.",
+      "amountReview": "Soy 2 ×18=36g, corn 1×7=7g, spring onion30g. Yeast7g was omitted in R2 with a nonzero bound; its input contribution is0.11025g carbohydrate,0.637g protein,0.0875g fat,0.47075g fibre per serving. Ginger6g/rkl remains unsupported. Later USDA SR Legacy original-bulk lookup verifies sesame oil FDC171016 teaspoon4.5g; this resolves that specific gap without resolving the whole recipe.",
+      "conflictsAndUncertainties": [
+        "Nonzero omitted yeast",
+        "Cabbage pre/post-squeeze mass",
+        "Fermentation retention",
+        "Grated ginger tablespoon mass"
+      ],
+      "nextAction": "Approve corn identity/soy quantities separately; rebuild full ingredient rows including yeast and define cabbage/fermentation basis before a public nutrition update.",
+      "independentApproval": false,
+      "detail": "gk-r3-batch-1.json"
+    },
+    {
+      "recipeId": "koshari",
+      "servings": 4,
+      "sourcePath": "reseptit/paaruoat/koshari.md",
+      "calculationPath": "docs/nutrition/calculations/koshari.json",
+      "publishedAvailableCarbohydratePerServingG": 95.91,
+      "currentStrictPerServing": {
+        "availableCarbohydrate": 95.91,
+        "protein": 22.26,
+        "fat": 12.03,
+        "fibre": 7.23
+      },
+      "r2ProposedInputScenarioPerServing": {
+        "availableCarbohydrate": 95.48,
+        "protein": 22.25,
+        "fat": 12.03,
+        "fibre": 7.23
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": -0.43,
+        "protein": -0.01,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "decision": "HOLD_FULL_MACRO_PUBLICATION",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "retentionReview": "R2 no-discard claim conflicts explicitly with draining lentils, macaroni and fried onions. Retained starch coating and oil are unknown. Do not use retention1 as an exact eaten total.",
+      "compositionReview": "Dry lentil, rice and pasta records match input masses, not cooked output mass. Cornstarch Fineli 27 verified; AFCD garlic, cumin and lemon composition read. AFCD lemon API displays per100mL at specific gravity1.05, while frozen dataset is per100g.",
+      "amountReview": "4 servings. Corn 16 to14 g is source-backed. Two medium onions=110 g, garlic=7 g, olive oil=40.5 g, vinegar=30 g. Cumin2 g/tl is not established by AFCD measurements. Lemon15 g/rkl is a mass assumption, not verified by the API's 1.05g/mL density.",
+      "conflictsAndUncertainties": [
+        "Leaching into discarded water",
+        "Starch coating retained",
+        "Oil retained after paper draining",
+        "Cumin and lemon spoon mass"
+      ],
+      "nextAction": "Retain the 14 g input correction, but measure/define prepared yield and discarded components for a complete recipe estimate.",
+      "independentApproval": false,
+      "detail": "gk-r3-batch-1.json"
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "servings": 4,
+      "sourcePath": "reseptit/paaruoat/yangzhou-paistettu-riisi.md",
+      "calculationPath": "docs/nutrition/calculations/yangzhou-paistettu-riisi.json",
+      "publishedAvailableCarbohydratePerServingG": 39.01,
+      "currentStrictPerServing": {
+        "availableCarbohydrate": 39.01,
+        "protein": 21.18,
+        "fat": 11.11,
+        "fibre": 1.36
+      },
+      "r2ProposedInputScenarioPerServing": {
+        "availableCarbohydrate": 39.16,
+        "protein": 21.26,
+        "fat": 11.01,
+        "fibre": 1.36
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.15,
+        "protein": 0.08,
+        "fat": -0.1,
+        "fibre": 0.0
+      },
+      "decision": "ESTIMATE_READY_FOR_INDEPENDENT_REVIEW",
+      "wholeAvailableCarbohydratePerServingG": 39.16,
+      "retentionReview": "Listed ingredient retention1 is a documented estimate with no discarded cooking liquid. Rice cooling time/temperature and varietal details are absent: no resistant-starch subtraction or GI benefit is assumed. Water evaporation changes per100g density, not batch CHO.",
+      "compositionReview": "Fineli30346 already-cooked long-grain rice, egg858, peas370, ham779, oil541 and soy31. AFCD raw shrimp F007433 matches the instruction to cook shrimp;150 g is interpreted as edible peeled flesh, not shell-on mass. AFCD spring onion F006250 edible portion confirmed.",
+      "amountReview": "4 servings. Correct oil2 ×13.7 to2 ×13.5=27 g and soy2 ×15 to2 ×18=36 g. Egg2 ×55 g and spring onion2 ×15 g are supported portions.",
+      "conflictsAndUncertainties": [
+        "Rice hydration/variety and unspecified cooling",
+        "Medium egg/onion mass",
+        "Edible shrimp weight interpretation",
+        "Pan residue and average composition"
+      ],
+      "nextAction": "Independent review of edible shrimp/cooked-rice/reference-portion scope, then bounded nutrition correction. Keep GI absent.",
+      "independentApproval": false,
+      "detail": "gk-r3-batch-1.json"
+    }
+  ],
+  "readyForIndependentEstimateReview": 2,
+  "heldFullMacroProposals": 3
+}

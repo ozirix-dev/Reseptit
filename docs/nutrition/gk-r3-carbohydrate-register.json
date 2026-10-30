@@ -1,0 +1,956 @@
+{
+  "schemaVersion": 1,
+  "scope": "24 deep reviews in3sequential batches;22 of R2 preliminary134;8 R2followups+16 newly deep-reviewed. No second326 inventory.",
+  "baseCommit": "e8da2c9417e2aeff55a85d599b3b7e1ad465f36c",
+  "r2Head": "020b665582f4f1ec54e56ec978581e424adc6ace",
+  "counts": {
+    "VERIFIED_TOTAL": 0,
+    "PARTIAL_ONLY": 8,
+    "ESTIMATED_TOTAL_WITH_EVIDENCE": 14,
+    "INSUFFICIENT_EVIDENCE": 2
+  },
+  "definition": "B means a complete, source-backed ingredient-retention estimate under explicitly stated product/portion/preparation assumptions, ready for independent review, not independently approved or measured food. C/D never expose the subtotal as whole.",
+  "publicationState": "RESEARCH_ONLY_NOT_APPROVED",
+  "blockerCountsNonexclusive": {
+    "PREPARATION_ALTERNATIVE": 5,
+    "AMOUNT_EVIDENCE": 7,
+    "CALCULATION_STRUCTURE": 3,
+    "RECIPE_TEXT_CONFLICT": 5,
+    "COMPOSITION_MATCH": 3
+  },
+  "recipes": [
+    {
+      "recipeId": "bulgogi",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/paaruoat/bulgogi.md",
+      "servings": 4,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 62.81,
+        "protein": 43.15,
+        "fat": 8.29,
+        "fibre": 2.18
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 63.13,
+        "protein": 43.32,
+        "fat": 8.3,
+        "fibre": 2.24
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.32,
+        "protein": 0.17,
+        "fat": 0.01,
+        "fibre": 0.06
+      },
+      "newDeepReviewInR3": false,
+      "detail": "gk-r3-batch-1.json",
+      "uncertainties": [
+        "Amount of marinade retained",
+        "Jasmine variety/representative dry rice",
+        "Brown-sugar spoon mass",
+        "Sesame-oil spoon mass"
+      ],
+      "blockerCategories": [
+        "PREPARATION_ALTERNATIVE",
+        "AMOUNT_EVIDENCE"
+      ],
+      "nextAction": "Specify whether all marinade is cooked and consumed; weigh sugar and oil or cite food-specific spoon conversion. Keep R2 corrections as isolated input proposals.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/paaruoat/tomaatti-kananmuna-wokki.md",
+      "servings": 3,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 39.03,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 38.93,
+        "protein": 12.98,
+        "fat": 16.58,
+        "fibre": 1.7
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 39.03,
+        "protein": 13.03,
+        "fat": 16.58,
+        "fibre": 1.7
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.1,
+        "protein": 0.05,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": false,
+      "detail": "gk-r3-batch-1.json",
+      "uncertainties": [
+        "Medium piece sizes",
+        "Generic cooked-rice hydration and variety",
+        "Average source composition",
+        "Full-retention cooking estimate"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Independent review of explicit reference-portion assumptions, then a bounded nutrition-data correction; no GI proposal.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "baozi",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/paaruoat/baozi.md",
+      "servings": 4,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 80.36,
+        "protein": 26.69,
+        "fat": 14.53,
+        "fibre": 4.16
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 80.38,
+        "protein": 26.77,
+        "fat": 14.54,
+        "fibre": 4.13
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.02,
+        "protein": 0.08,
+        "fat": 0.01,
+        "fibre": -0.03
+      },
+      "newDeepReviewInR3": false,
+      "detail": "gk-r3-batch-1.json",
+      "uncertainties": [
+        "Nonzero omitted yeast",
+        "Cabbage pre/post-squeeze mass",
+        "Fermentation retention",
+        "Grated ginger tablespoon mass"
+      ],
+      "blockerCategories": [
+        "CALCULATION_STRUCTURE",
+        "PREPARATION_ALTERNATIVE",
+        "AMOUNT_EVIDENCE"
+      ],
+      "nextAction": "Approve corn identity/soy quantities separately; rebuild full ingredient rows including yeast and define cabbage/fermentation basis before a public nutrition update.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "koshari",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/paaruoat/koshari.md",
+      "servings": 4,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 95.91,
+        "protein": 22.26,
+        "fat": 12.03,
+        "fibre": 7.23
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 95.48,
+        "protein": 22.25,
+        "fat": 12.03,
+        "fibre": 7.23
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": -0.43,
+        "protein": -0.01,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": false,
+      "detail": "gk-r3-batch-1.json",
+      "uncertainties": [
+        "Leaching into discarded water",
+        "Starch coating retained",
+        "Oil retained after paper draining",
+        "Cumin and lemon spoon mass"
+      ],
+      "blockerCategories": [
+        "PREPARATION_ALTERNATIVE",
+        "AMOUNT_EVIDENCE"
+      ],
+      "nextAction": "Retain the 14 g input correction, but measure/define prepared yield and discarded components for a complete recipe estimate.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/paaruoat/yangzhou-paistettu-riisi.md",
+      "servings": 4,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 39.16,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 39.01,
+        "protein": 21.18,
+        "fat": 11.11,
+        "fibre": 1.36
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 39.16,
+        "protein": 21.26,
+        "fat": 11.01,
+        "fibre": 1.36
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.15,
+        "protein": 0.08,
+        "fat": -0.1,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": false,
+      "detail": "gk-r3-batch-1.json",
+      "uncertainties": [
+        "Rice hydration/variety and unspecified cooling",
+        "Medium egg/onion mass",
+        "Edible shrimp weight interpretation",
+        "Pan residue and average composition"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Independent review of edible shrimp/cooked-rice/reference-portion scope, then bounded nutrition correction. Keep GI absent.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "meheva-suklaakakku",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/jalkiruoat/meheva-suklaakakku.md",
+      "servings": 10,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 43.76,
+        "protein": 6.61,
+        "fat": 32.23,
+        "fibre": 3.7
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 43.76,
+        "protein": 6.61,
+        "fat": 32.23,
+        "fibre": 3.7
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-1.json",
+      "uncertainties": [
+        "Unlisted greasing/flouring",
+        "Baking-powder teaspoon mass",
+        "Chocolate formulation"
+      ],
+      "blockerCategories": [
+        "AMOUNT_EVIDENCE",
+        "RECIPE_TEXT_CONFLICT"
+      ],
+      "nextAction": "Specify pan preparation amounts and baking-powder mass; keep chocolate rows separate.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/valimerellinen-appelsiini-aamiaiskakku.md",
+      "servings": 2,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 44.48,
+        "protein": 7.66,
+        "fat": 16.31,
+        "fibre": 3.31
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 44.48,
+        "protein": 7.66,
+        "fat": 16.31,
+        "fibre": 3.31
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-1.json",
+      "uncertainties": [
+        "Lemon/orange instruction conflict",
+        "Unspecified yogurt type",
+        "Yogurt mixing/serving scope"
+      ],
+      "blockerCategories": [
+        "RECIPE_TEXT_CONFLICT"
+      ],
+      "nextAction": "Resolve the lemon wording and yogurt scope in a separate recipe-content proposal, then reassess whole estimate.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "intialainen-rava-uttapam",
+      "batch": 1,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/intialainen-rava-uttapam.md",
+      "servings": 2,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 36.98,
+        "protein": 7.94,
+        "fat": 9.46,
+        "fibre": 2.33
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 36.98,
+        "protein": 7.94,
+        "fat": 9.46,
+        "fibre": 2.33
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-1.json",
+      "uncertainties": [
+        "Unquantified coriander in preparation",
+        "Yogurt type",
+        "Piece-size and pan-retention estimates"
+      ],
+      "blockerCategories": [
+        "AMOUNT_EVIDENCE",
+        "RECIPE_TEXT_CONFLICT"
+      ],
+      "nextAction": "Add a measured coriander amount or explicitly remove it in a reviewed content change; recalculate before whole-total proposal.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "vhh-lihapiirakka",
+      "batch": 2,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/leivonnaiset/vhh-lihapiirakka.md",
+      "servings": 8,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 2.27,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 2.27,
+        "protein": 20.06,
+        "fat": 26.96,
+        "fibre": 2.93
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 2.27,
+        "protein": 20.06,
+        "fat": 26.96,
+        "fibre": 2.93
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-2.json",
+      "uncertainties": [
+        "Non-defatted almond meal assumption",
+        "Generic cheese/mince fat levels",
+        "Medium portions and pan residue"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Review the explicitly named ingredient types and source-based total; GI remains absent.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "vhh-letut",
+      "batch": 2,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/jalkiruoat/vhh-letut.md",
+      "servings": 4,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 2.57,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 2.57,
+        "protein": 11.73,
+        "fat": 24.56,
+        "fibre": 1.51
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 2.57,
+        "protein": 11.73,
+        "fat": 24.56,
+        "fibre": 1.51
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-2.json",
+      "uncertainties": [
+        "Plain serving only",
+        "Erythritol mass unresolved for polyol reporting",
+        "Reference egg size",
+        "Representative cream cheese and almond meal"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Review carbohydrate-only estimate for plain pancakes; weigh erythritol before approving total-polyol/full-label output.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "siemengranola-jogurtilla",
+      "batch": 2,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/siemengranola-jogurtilla.md",
+      "servings": 4,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 8.09,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 8.09,
+        "protein": 18.68,
+        "fat": 40.86,
+        "fibre": 8.43
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 8.09,
+        "protein": 18.68,
+        "fat": 40.86,
+        "fibre": 8.43
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-2.json",
+      "uncertainties": [
+        "Reference cinnamon spoon",
+        "Greek yogurt fat/type choice",
+        "Roasting/transfer residue",
+        "Average seed and berry composition"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Approve source/portion linkage independently and expose only the explicitly defined whole estimate.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "meksikolainen-quesadilla-sienilla",
+      "batch": 2,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/meksikolainen-quesadilla-sienilla.md",
+      "servings": 2,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 32.94,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 32.94,
+        "protein": 11.21,
+        "fat": 20.32,
+        "fibre": 2.11
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 32.94,
+        "protein": 11.21,
+        "fat": 20.32,
+        "fibre": 2.11
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-2.json",
+      "uncertainties": [
+        "Commercial tortilla and mozzarella formulation",
+        "Frozen versus fresh corn representative composition",
+        "Pan residue"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Independently approve named purchased-product scenario; replace generic dough prose in a later content edit if desired.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "batch": 2,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md",
+      "servings": 2,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 27.58,
+        "protein": 20.18,
+        "fat": 28.56,
+        "fibre": 1.92
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 27.58,
+        "protein": 20.18,
+        "fat": 28.56,
+        "fibre": 1.92
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-2.json",
+      "uncertainties": [
+        "Bread grain/formulation unidentified",
+        "Green/black olive pooled source",
+        "Halloumi brand and pan residue"
+      ],
+      "blockerCategories": [
+        "COMPOSITION_MATCH"
+      ],
+      "nextAction": "Specify bread grain/type or nutrition declaration; retain current calculation only as a labelled white-bread scenario.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "batch": 2,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-kahvijogurtti-banaanilla.md",
+      "servings": 2,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 21.39,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 21.39,
+        "protein": 3.8,
+        "fat": 3.68,
+        "fibre": 1.06
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 21.39,
+        "protein": 3.8,
+        "fat": 3.68,
+        "fibre": 1.06
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-2.json",
+      "uncertainties": [
+        "Medium banana size and ripeness",
+        "Plain yogurt selection",
+        "Coffee strength",
+        "Condensed-milk formulation"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Independent acceptance of the explicit sweetened-condensed-milk/plain-yogurt serving scope.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "thai-papaijajogurtti",
+      "batch": 2,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/thai-papaijajogurtti.md",
+      "servings": 2,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 12.44,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 12.44,
+        "protein": 3.98,
+        "fat": 8.81,
+        "fibre": 3.53
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 12.44,
+        "protein": 3.98,
+        "fat": 8.81,
+        "fibre": 3.53
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-2.json",
+      "uncertainties": [
+        "Edible papaya weight interpretation",
+        "Plain yogurt selection",
+        "Fruit ripeness and coconut product",
+        "Toasting residue"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Independent review of edible fruit and unsweetened/plain product assumptions.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+      "batch": 2,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/pohjoisafrikkalainen-harcha-juustolla.md",
+      "servings": 2,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 35.66,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 35.66,
+        "protein": 10.66,
+        "fat": 20.2,
+        "fibre": 2.03
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 35.66,
+        "protein": 10.66,
+        "fat": 20.2,
+        "fibre": 2.03
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-2.json",
+      "uncertainties": [
+        "Representative whole milk",
+        "Pan residue",
+        "Generic shape instructions affect GI/preparation reproducibility"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Review complete carbohydrate estimate with named milk assumption; improve shape instructions separately before any GI matching.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "batch": 3,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/paaruoat/kreikkalainen-moussaka.md",
+      "servings": 6,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 32.25,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 32.22,
+        "protein": 27.59,
+        "fat": 35.19,
+        "fibre": 5.42
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 32.25,
+        "protein": 27.6,
+        "fat": 35.2,
+        "fibre": 5.48
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.03,
+        "protein": 0.01,
+        "fat": 0.01,
+        "fibre": 0.06
+      },
+      "newDeepReviewInR3": false,
+      "detail": "gk-r3-batch-3.json",
+      "uncertainties": [
+        "Average400g aubergine piece",
+        "Whole-milk and Edam representative choices",
+        "Pan/oven residue",
+        "Reference cinnamon spoon"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Independent review of explicit milk/cheese/portion assumptions,then a separate nutrition calculation update; no GI recovery.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "batch": 3,
+      "r2Candidate": false,
+      "sourcePath": "reseptit/aamupalat/japanilainen-soba-aamiaiskeitto.md",
+      "servings": 2,
+      "decision": "INSUFFICIENT_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "strictBaselinePerServing": null,
+      "independentScenarioPerServing": null,
+      "deltaPerServing": null,
+      "newDeepReviewInR3": false,
+      "detail": "gk-r3-batch-3.json",
+      "uncertainties": [
+        "Spinach piece mass",
+        "Noodle composition and mass state",
+        "Dashi/broth alternatives",
+        "Separate noodle cooking loss"
+      ],
+      "blockerCategories": [
+        "AMOUNT_EVIDENCE",
+        "COMPOSITION_MATCH",
+        "PREPARATION_ALTERNATIVE",
+        "CALCULATION_STRUCTURE"
+      ],
+      "nextAction": "Specify dry noodle product,buckwheat fraction,spinach grams and one broth formula before nutrition or GI proposal. Kim2019 buckwheat-noodle primary study is documented but not an exact match.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "batch": 3,
+      "r2Candidate": false,
+      "sourcePath": "reseptit/aamupalat/indonesialainen-bubur-sumsum.md",
+      "servings": 2,
+      "decision": "INSUFFICIENT_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "strictBaselinePerServing": null,
+      "independentScenarioPerServing": null,
+      "deltaPerServing": null,
+      "newDeepReviewInR3": false,
+      "detail": "gk-r3-batch-3.json",
+      "uncertainties": [
+        "Pandan150g physical form and retention",
+        "Coconut/palm-sugar products",
+        "Water versus broth",
+        "Unlisted filling instruction"
+      ],
+      "blockerCategories": [
+        "COMPOSITION_MATCH",
+        "PREPARATION_ALTERNATIVE",
+        "RECIPE_TEXT_CONFLICT",
+        "CALCULATION_STRUCTURE"
+      ],
+      "nextAction": "Editorial clarification of pandan,liquid and filling instructions plus ingredient product matching; Korean steamed rice-cake measurement is not transferable.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+      "batch": 3,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md",
+      "servings": 2,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 41.3,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 41.3,
+        "protein": 6.27,
+        "fat": 0.67,
+        "fibre": 4.49
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 41.3,
+        "protein": 6.27,
+        "fat": 0.67,
+        "fibre": 4.49
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-3.json",
+      "uncertainties": [
+        "Date/orange variety and ripeness",
+        "Reference cinnamon spoon",
+        "Cooking/transfer residue"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Independent approval of the complete ingredient estimate and source portion linkage.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "keto-korvapuustit",
+      "batch": 3,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/leivonnaiset/keto-korvapuustit.md",
+      "servings": 8,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 1.99,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 1.99,
+        "protein": 10.26,
+        "fat": 21.57,
+        "fibre": 2.99
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 1.99,
+        "protein": 10.26,
+        "fat": 21.57,
+        "fibre": 2.99
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-3.json",
+      "uncertainties": [
+        "Cheese product scope,excluding starch-coated blends",
+        "Erythritol mass for polyol output",
+        "Reference egg/spice portions",
+        "Baking residue"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Review carbohydrate-only estimate for named plain-cheese/non-defatted-almond scope; no GI value.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "indonesialainen-serabi-kookospannukakku",
+      "batch": 3,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/indonesialainen-serabi-kookospannukakku.md",
+      "servings": 2,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 57.01,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 57.3,
+        "protein": 5.93,
+        "fat": 28.7,
+        "fibre": 6.24
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 57.01,
+        "protein": 6.08,
+        "fat": 29.98,
+        "fibre": 6.55
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": -0.29,
+        "protein": 0.15,
+        "fat": 1.28,
+        "fibre": 0.31
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-3.json",
+      "uncertainties": [
+        "Average full-fat coconut milk and brown sugar",
+        "Pan residue",
+        "Generic pancake thickness"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Include density and brown-sugar composition in the next bounded nutrition correction after independent review.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "thai-kookosriisi-mangolla",
+      "batch": 3,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/thai-kookosriisi-mangolla.md",
+      "servings": 2,
+      "decision": "ESTIMATED_TOTAL_WITH_EVIDENCE",
+      "wholeAvailableCarbohydratePerServingG": 48.22,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 48.05,
+        "protein": 5.83,
+        "fat": 16.41,
+        "fibre": 1.71
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 48.22,
+        "protein": 5.97,
+        "fat": 17.95,
+        "fibre": 1.71
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.17,
+        "protein": 0.14,
+        "fat": 1.54,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-3.json",
+      "uncertainties": [
+        "Unspecified rice cultivar and rinsing loss",
+        "Edible mango mass/ripeness",
+        "Average canned coconut milk",
+        "Full-retention estimate"
+      ],
+      "blockerCategories": [
+        "INDEPENDENT_ACCEPTANCE_PENDING"
+      ],
+      "nextAction": "Independent review of dry-rice/edible-mango/full-retention scope and coconut density correction. No GI proposal.",
+      "independentApproval": false
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+      "batch": 3,
+      "r2Candidate": true,
+      "sourcePath": "reseptit/aamupalat/pohjoisafrikkalainen-msemen-hunajalla.md",
+      "servings": 2,
+      "decision": "PARTIAL_ONLY",
+      "wholeAvailableCarbohydratePerServingG": null,
+      "strictBaselinePerServing": {
+        "availableCarbohydrate": 76.23,
+        "protein": 11.88,
+        "fat": 28.4,
+        "fibre": 3.5
+      },
+      "independentScenarioPerServing": {
+        "availableCarbohydrate": 76.23,
+        "protein": 11.88,
+        "fat": 28.4,
+        "fibre": 3.5
+      },
+      "deltaPerServing": {
+        "availableCarbohydrate": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "fibre": 0.0
+      },
+      "newDeepReviewInR3": true,
+      "detail": "gk-r3-batch-3.json",
+      "uncertainties": [
+        "Liquid identity/quantity",
+        "Honey serving scope",
+        "Pan/butter residue"
+      ],
+      "blockerCategories": [
+        "AMOUNT_EVIDENCE",
+        "RECIPE_TEXT_CONFLICT"
+      ],
+      "nextAction": "Specify water or other liquid and amount,plus honey serving instruction,before calling the input calculation complete.",
+      "independentApproval": false
+    }
+  ]
+}
