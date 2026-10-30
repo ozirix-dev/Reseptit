@@ -22,10 +22,10 @@ Toisen osan vaikeita jauho-, taikina- ja maustetahnatapauksia ei laskettu väkis
 | Nasi lemak -kookosriisi ja kananmuna | 39.779 | noin 22–26 | MODELLED_SCENARIO | matala | READY_FOR_OWNER_APPROVAL |
 | Musta seesamipuuro | 46.500 | noin 35 | PUBLISHED_IMPUTATION | matala | READY_FOR_OWNER_APPROVAL |
 | Marokkolainen harira-linssi-kikhernekeitto | 33.891 | noin 12 | PUBLISHED_IMPUTATION | matala | READY_FOR_OWNER_APPROVAL |
-| Japanilainen kurpitsapuuro kabocha | 47.218 | noin 33 | PUBLISHED_IMPUTATION | matala | READY_FOR_OWNER_APPROVAL |
+| Myskikurpitsa-riisipuuro – kabocha-reseptin variantti | 47.218 | noin 33 | PUBLISHED_IMPUTATION | matala | READY_FOR_OWNER_APPROVAL |
 | Marokkolainen couscous kanalla ja kasviksilla | 68.361 | noin 37 | PUBLISHED_IMPUTATION | matala | READY_FOR_OWNER_APPROVAL |
-| Kashmirilainen rogan josh | 4.173 | noin 2 | PUBLISHED_IMPUTATION | matala | READY_FOR_OWNER_APPROVAL |
-| Pasta alla Norma munakoisolla | 64.861 | noin 30–32 | MODELLED_SCENARIO | matala | READY_FOR_OWNER_APPROVAL |
+| Rogan josh jauhetuilla mausteilla – variantti | 4.173 | noin 2 | PUBLISHED_IMPUTATION | matala | READY_FOR_OWNER_APPROVAL |
+| Pasta alla Norma parmesaanilla – variantti | 64.861 | noin 30–32 | MODELLED_SCENARIO | matala | READY_FOR_OWNER_APPROVAL |
 
 Luvut koskevat ehdotettuja punnittuja versioita ja koko määriteltyä kastiketta ilman lisukkeita.
 Tarkat pisteet ja kaikki neljä makroa: [golden.json](golden.json). Kaikki ovat matalan luottamuksen
