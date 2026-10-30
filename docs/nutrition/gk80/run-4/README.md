@@ -18,6 +18,15 @@ Yksi jo tuotannossa laskettu ehdokas poistettiin ennen lopullista50 valintaa.
 Valinta on tarkoitushakuinen, ei satunnaisotos. Ryhmät20 lähes valmista,
 15 yhteisellä lähteellä ratkaistavaa ja15 määrä-/valmistusselvennystä.
 
+| Prioriteetti | Valinnan peruste | Valitut | Numeeriset |
+|---|---|---:|---:|
+|1: lähes valmis|Koostumus ja päähiilihydraatin vertailu valmiina, pienet rivit rajattavissa|20|19|
+|2: yhteislähde|Nimetty koostumus tai valmistusvertailu voi avata monta samaa ruokaa|15|6|
+|3: täsmennys|Kuiva/kypsä, koko kastike, nimetty variantti tai valmistus ratkaistava|15|1|
+
+Täydet243 seulontariviä ja50 valittua ID:tä ovat selection.json:ssa.
+Taulukon tulos ei ollut valintakriteeri eikä erä ole satunnaisotos.
+
 KierrosA tuotti alustavasti19 ja nimettyjen valintojen sulkemisen jälkeen22.
 KierrosB hyödynsi samoja täydellisen koostumuksen ja konkreettisen version
 ratkaisuja, mutta tuotti vain4. Vaikeat jauho-, tahna- ja uuttumisongelmat

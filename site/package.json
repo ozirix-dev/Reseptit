@@ -24,7 +24,7 @@
     "audit:glycemic-load": "tsx scripts/glycemic-load-pilot.ts",
     "audit:glycemic-coverage": "tsx scripts/glycemic-coverage-inventory.ts",
     "review:translations": "tsx scripts/translation-review.ts",
-    "test:gk80": "tsx --test tests/gk80-model.test.ts tests/gk80-impact.test.ts tests/gk80-run2.test.ts tests/gk80-broth-sauce.test.ts tests/gk80-chicken-pans.test.ts tests/gk80-run3.test.ts"
+    "test:gk80": "tsx --test tests/gk80-model.test.ts tests/gk80-impact.test.ts tests/gk80-run2.test.ts tests/gk80-broth-sauce.test.ts tests/gk80-chicken-pans.test.ts tests/gk80-run3.test.ts tests/gk80-run4.test.ts"
   },
   "dependencies": {
     "react": "^19.2.0",
