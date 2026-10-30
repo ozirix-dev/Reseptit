@@ -1,0 +1,1572 @@
+{
+  "schemaVersion": 1,
+  "accessDate": "2026-10-30",
+  "fineli": {
+    "publisher": "THL",
+    "release": 20,
+    "licence": "CC BY4.0; attribution retained in repository source",
+    "sourceFile": "docs/nutrition/fineli-release-20-reference.json",
+    "canonicalSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "originalBulkUrl": "https://fineli.fi/fineli/content/file/47",
+    "originalGuideUrl": "https://fineli.fi/fineli/content/file/8",
+    "access": "Official open-data landing/guide readable; API/bulk HTTP403 in this run. Calculations use approved frozen local release, not a claimed successful re-download.",
+    "definition": "CHOAVL,per100g edible portion; excludes fibre and polyols. Food composition and portion masses are averages, not measurements of the recipe."
+  },
+  "afcd": {
+    "publisher": "Food Standards Australia New Zealand",
+    "release": 3,
+    "sourceFile": "docs/nutrition/afcd-release-3-reference.json",
+    "canonicalSha256": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "definition": "AVAILCHO excluding sugar alcohols;frozenper100g. Original API liquids areper100mL at supplied specificgravity; compare after conversion with display-rounding tolerance. No fibre subtraction twice.",
+    "originalResponses": [
+      {
+        "id": "F000247",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F000247",
+        "rawResponseSha256": "ba66b9e2cadc286bfd12b67a7ea0c95fa65a2e261bfb7d7a51fe8e55f94a88bc",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 19.8,
+          "PROT": 0.8,
+          "FAT": 0.3,
+          "AOACDFTOTW": 0.4
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F000810",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F000810",
+        "rawResponseSha256": "16bcfe8fa144019fba333bb952359c9cb3ef87c58ed30221b232c92c845354a1",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 0,
+          "PROT": 24.1,
+          "FAT": 1.9,
+          "AOACDFTOTW": 0
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F002466",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F002466",
+        "rawResponseSha256": "6eb55ecbfcae31076d4fc6b628615e5e94793faa9f7a7ae2d72e5536bba55269",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 1,
+          "PROT": 20.5,
+          "FAT": 24.6,
+          "AOACDFTOTW": 0
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F002963",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F002963",
+        "rawResponseSha256": "bc809b90dd84cbf52a190a39c5ea212d8bc15b8d548a716c73a0e00597cf5da8",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 27.5,
+          "PROT": 4,
+          "FAT": 1.2,
+          "AOACDFTOTW": 53.1
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F002987",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F002987",
+        "rawResponseSha256": "1edeb335054ec0a1f0827395ebc9507f9f4211188db4aa3d3bf368bc28da1872",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 7.3,
+          "PROT": 6.9,
+          "FAT": 65.4,
+          "AOACDFTOTW": 15.4
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F002991",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F002991",
+        "rawResponseSha256": "e7cc11804d0e0f1a9d043b83f75d237acf37e00838633c59978853a63ffe776a",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 1.02,
+        "apiNutrientBasis": "100mL",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 1.7,
+          "PROT": 1.4,
+          "FAT": 15.7,
+          "AOACDFTOTW": 0
+        },
+        "measurements": [
+          {
+            "measurement": "100 mL",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (mL)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F003065",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F003065",
+        "rawResponseSha256": "587ef9fef53e2436b1d6d705186767526bff083d4d1c5211d1b8d4ade45861ae",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 1,
+        "apiNutrientBasis": "100mL",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 0,
+          "PROT": 0.3,
+          "FAT": 0.1,
+          "AOACDFTOTW": 0
+        },
+        "measurements": [
+          {
+            "measurement": "100 mL",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (mL)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F003202",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F003202",
+        "rawResponseSha256": "92d425ce3fed408de99f142becfc0b0cea3ea2968e86d212a309be5e3128e89e",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 16.8,
+          "PROT": 3,
+          "FAT": 0.9,
+          "AOACDFTOTW": 2.5
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F003327",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F003327",
+        "rawResponseSha256": "47fb07f90e8e71b18a54b2776a612f6cabdb03fae67bc18d1de486fc9a1699e9",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 33.7,
+          "PROT": 17.8,
+          "FAT": 22.3,
+          "AOACDFTOTW": 10.5
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F003496",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F003496",
+        "rawResponseSha256": "9cf6828be25cb6f9c5e24f89998172588a9b09bdb4cc7c829c9803e74321daa4",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 67.2,
+          "PROT": 2,
+          "FAT": 0.2,
+          "AOACDFTOTW": 9.7
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Date, 5 g",
+            "amount": 5
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F004193",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F004193",
+        "rawResponseSha256": "ea59beb8cc44f11436fc4a02367cec9610585779740c05dfb1c50eece8309ea2",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 10.2,
+          "PROT": 6.1,
+          "FAT": 2.8,
+          "AOACDFTOTW": 16.9
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "83% (flesh)"
+      },
+      {
+        "id": "F004213",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F004213",
+        "rawResponseSha256": "3c867c9cba19f55ccc87fff4687ad09e3c23e8797c06c7dfd2496ba0c8350d06",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 4.8,
+          "PROT": 0.8,
+          "FAT": 0.4,
+          "AOACDFTOTW": 2.8
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "94% (flesh)"
+      },
+      {
+        "id": "F004380",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F004380",
+        "rawResponseSha256": "2e73c6e48cbf7b350f15a2a317864f82dd95999fa170ce5e0860ca75922cbba1",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 1.43,
+        "apiNutrientBasis": "100mL",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 103.4,
+          "PROT": 0.4,
+          "FAT": 0,
+          "AOACDFTOTW": 0
+        },
+        "measurements": [
+          {
+            "measurement": "100 mL",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (mL)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F004726",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F004726",
+        "rawResponseSha256": "c8db4a398c802311912938d988156d7ce63a7de2ee2aef12a7d9b07bda1c4730",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 1.05,
+        "apiNutrientBasis": "100mL",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 1.9,
+          "PROT": 0.7,
+          "FAT": 0.1,
+          "AOACDFTOTW": 2.1
+        },
+        "measurements": [
+          {
+            "measurement": "100 mL",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (mL)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F004729",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F004729",
+        "rawResponseSha256": "d905402dfab10e3584badef002c2ede6629ca2f6ca100360ef20096bf13419ac",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 1.05,
+        "apiNutrientBasis": "100mL",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 1.3,
+          "PROT": 0.8,
+          "FAT": 0.1,
+          "AOACDFTOTW": 3.8
+        },
+        "measurements": [
+          {
+            "measurement": "100 mL",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (mL)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F005299",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F005299",
+        "rawResponseSha256": "9b39f5f699611a176739683c0aec78920507d733d91ac0fc6779a3337e612c34",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 12.6,
+          "PROT": 0.4,
+          "FAT": 0,
+          "AOACDFTOTW": 1.3
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Mango, 294 g",
+            "amount": 294
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "68% (flesh)"
+      },
+      {
+        "id": "F005582",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F005582",
+        "rawResponseSha256": "8ffc450eaf44b979d611eeeb6aff1ad39974de3cb05acf7ec21773067b12048f",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 1.29,
+        "apiNutrientBasis": "100mL",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 71,
+          "PROT": 10.7,
+          "FAT": 11.9,
+          "AOACDFTOTW": 0
+        },
+        "measurements": [
+          {
+            "measurement": "100 mL",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (mL)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F005946",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F005946",
+        "rawResponseSha256": "52663990a3fe91c24ca8cdd667ec231e9fff038fb001a6c8cf4faa80ec634eaf",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 0.8,
+          "PROT": 2.2,
+          "FAT": 0.8,
+          "AOACDFTOTW": 1.4
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Mushroom, 35 g",
+            "amount": 35
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F006077",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F006077",
+        "rawResponseSha256": "63196e83f4178f1e6c804e536b592916227281b70197ca2dafd4decc3fe3c792",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 5.4,
+          "PROT": 19.7,
+          "FAT": 50.5,
+          "AOACDFTOTW": 11
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F006159",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F006159",
+        "rawResponseSha256": "9d52c1ab8e4fce207bf933ba6dccc211dbd99dc068b99de87a03765419ef3b8d",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0.92,
+        "apiNutrientBasis": "100mL",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 0,
+          "PROT": 0,
+          "FAT": 92,
+          "AOACDFTOTW": 0
+        },
+        "measurements": [
+          {
+            "measurement": "100 mL",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (mL)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F006187",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F006187",
+        "rawResponseSha256": "27a5fd27cb64a35f9e46e84f1617a26588fd417070bd1ce1cdb3f4324d22f0c9",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0.92,
+        "apiNutrientBasis": "100mL",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 0,
+          "PROT": 0,
+          "FAT": 92,
+          "AOACDFTOTW": 0
+        },
+        "measurements": [
+          {
+            "measurement": "100 mL",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (mL)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F006198",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F006198",
+        "rawResponseSha256": "a39c055b55dc9fb3273c9a8e79d70b5e300e8457d43fff68976762b90a179a35",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 0,
+          "PROT": 2.2,
+          "FAT": 21.7,
+          "AOACDFTOTW": 3.2
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Olive, 4 g",
+            "amount": 4
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "80% (flesh)"
+      },
+      {
+        "id": "F006250",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F006250",
+        "rawResponseSha256": "8a52d87460ceb7df9747ca7e88780fe5850a201b998cab2d37cbb2754844e826",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 4.6,
+          "PROT": 1.7,
+          "FAT": 0.2,
+          "AOACDFTOTW": 1.9
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Spring Onion, 15 g",
+            "amount": 15
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "78% (bulb, stem)"
+      },
+      {
+        "id": "F006528",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F006528",
+        "rawResponseSha256": "8718a7453601a70059e4b79d1c06dd2573134b642189e74d58de503dc2eb1a66",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 8.4,
+          "PROT": 0.4,
+          "FAT": 0,
+          "AOACDFTOTW": 2.1
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "70% (flesh)"
+      },
+      {
+        "id": "F006618",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F006618",
+        "rawResponseSha256": "84f47d9ee677b4d9663b33c01c82abe6d7bfda1878a657287d4cbf4e5c8642a9",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 38.6,
+          "PROT": 10.4,
+          "FAT": 3.3,
+          "AOACDFTOTW": 25.3
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F007433",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F007433",
+        "rawResponseSha256": "4ec3aa6e02560f42d6464895e30d1abfe16918fe832b2c0bc9df1a5b22ecf326",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 0,
+          "PROT": 20.7,
+          "FAT": 0.8,
+          "AOACDFTOTW": 0
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "50% (tail flesh)"
+      },
+      {
+        "id": "F007619",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F007619",
+        "rawResponseSha256": "61566fcc0dc5a4e73a45b9be1bd9cc18c8a6b9c74aa8a839eef64b65e0fa1549",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 6.9,
+          "PROT": 1.1,
+          "FAT": 0.3,
+          "AOACDFTOTW": 4.8
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F007682",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F007682",
+        "rawResponseSha256": "e02405bd537da27ae5b1991a748bce0ab9dc02d4af7f95b48c306455e66a35ff",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 74,
+          "PROT": 7,
+          "FAT": 0.9,
+          "AOACDFTOTW": 0.8
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F008210",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F008210",
+        "rawResponseSha256": "2a13384f93e7dc5d8ec732ee8c5bb74e47c5e30dcd800a79a9ff44240aba13af",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 2.8,
+          "PROT": 21.6,
+          "FAT": 32.6,
+          "AOACDFTOTW": 32.9
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F008212",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F008212",
+        "rawResponseSha256": "e3aaf6186c23c169597769b153844828abfe79b0e13d51f1e7fc06e2465b153e",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 2.1,
+          "PROT": 30.2,
+          "FAT": 45,
+          "AOACDFTOTW": 4.6
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F008215",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F008215",
+        "rawResponseSha256": "c1d73c3ad5b3dab6886b90142a5d56d851bd9556d4bba220478790f24be219b8",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 3.1,
+          "PROT": 24.7,
+          "FAT": 48.3,
+          "AOACDFTOTW": 13
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F008969",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F008969",
+        "rawResponseSha256": "cd54e0f0134067f9c41bd4b5eb26097622329381a975bf0ca75bacfcfd9b67fe",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 96.8,
+          "PROT": 0.2,
+          "FAT": 0,
+          "AOACDFTOTW": 0
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Sachet/Packet, 3 g",
+            "amount": 3
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      },
+      {
+        "id": "F009606",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F009606",
+        "rawResponseSha256": "5dd0815f516dd2e243f35179d48667fb188b74650d6e08bdebd91dc45ff528e4",
+        "access": "LIVE_PRIMARY_READ",
+        "specificGravity": 0,
+        "apiNutrientBasis": "100g",
+        "apiMacroExcerpt": {
+          "AVAILCHO": 6.3,
+          "PROT": 36.4,
+          "FAT": 5,
+          "AOACDFTOTW": 26.9
+        },
+        "measurements": [
+          {
+            "measurement": "100 g",
+            "amount": 100
+          },
+          {
+            "measurement": "Custom (g)",
+            "amount": 1
+          }
+        ],
+        "analysedPortion": "100%"
+      }
+    ]
+  },
+  "usda": {
+    "publisher": "USDA FoodData Central",
+    "downloadPage": "https://fdc.nal.usda.gov/download-datasets/",
+    "sourceUrl": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_2018-04.zip",
+    "zipSha256": "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0",
+    "bytes": 6074592,
+    "access": "Original SR Legacy bulk CSV downloaded and food/food_portion rows read directly. FoodData Central webpage rendering was not needed.",
+    "selectedOriginalFoods": [
+      {
+        "fdc_id": "168833",
+        "data_type": "sr_legacy_food",
+        "description": "Sugars, brown",
+        "food_category_id": "19",
+        "publication_date": "2019-04-01"
+      },
+      {
+        "fdc_id": "169231",
+        "data_type": "sr_legacy_food",
+        "description": "Ginger root, raw",
+        "food_category_id": "11",
+        "publication_date": "2019-04-01"
+      },
+      {
+        "fdc_id": "169765",
+        "data_type": "sr_legacy_food",
+        "description": "Ginger root, pickled, canned, with artificial sweetener",
+        "food_category_id": "11",
+        "publication_date": "2019-04-01"
+      },
+      {
+        "fdc_id": "170919",
+        "data_type": "sr_legacy_food",
+        "description": "Spices, cardamom",
+        "food_category_id": "2",
+        "publication_date": "2019-04-01"
+      },
+      {
+        "fdc_id": "170923",
+        "data_type": "sr_legacy_food",
+        "description": "Spices, cumin seed",
+        "food_category_id": "2",
+        "publication_date": "2019-04-01"
+      },
+      {
+        "fdc_id": "171016",
+        "data_type": "sr_legacy_food",
+        "description": "Oil, sesame, salad or cooking",
+        "food_category_id": "4",
+        "publication_date": "2019-04-01"
+      },
+      {
+        "fdc_id": "171320",
+        "data_type": "sr_legacy_food",
+        "description": "Spices, cinnamon, ground",
+        "food_category_id": "2",
+        "publication_date": "2019-04-01"
+      },
+      {
+        "fdc_id": "172235",
+        "data_type": "sr_legacy_food",
+        "description": "Vanilla extract, imitation, alcohol",
+        "food_category_id": "2",
+        "publication_date": "2019-04-01"
+      },
+      {
+        "fdc_id": "172236",
+        "data_type": "sr_legacy_food",
+        "description": "Vanilla extract, imitation, no alcohol",
+        "food_category_id": "2",
+        "publication_date": "2019-04-01"
+      },
+      {
+        "fdc_id": "172803",
+        "data_type": "sr_legacy_food",
+        "description": "Leavening agents, baking powder, double-acting, sodium aluminum sulfate",
+        "food_category_id": "18",
+        "publication_date": "2019-04-01"
+      },
+      {
+        "fdc_id": "172804",
+        "data_type": "sr_legacy_food",
+        "description": "Leavening agents, baking powder, double-acting, straight phosphate",
+        "food_category_id": "18",
+        "publication_date": "2019-04-01"
+      },
+      {
+        "fdc_id": "172805",
+        "data_type": "sr_legacy_food",
+        "description": "Leavening agents, baking powder, low-sodium",
+        "food_category_id": "18",
+        "publication_date": "2019-04-01"
+      },
+      {
+        "fdc_id": "173471",
+        "data_type": "sr_legacy_food",
+        "description": "Vanilla extract",
+        "food_category_id": "2",
+        "publication_date": "2019-04-01"
+      }
+    ],
+    "selectedOriginalPortions": [
+      {
+        "id": "83854",
+        "fdc_id": "168833",
+        "seq_num": "1",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp unpacked",
+        "gram_weight": "3",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "83855",
+        "fdc_id": "168833",
+        "seq_num": "2",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "cup packed",
+        "gram_weight": "220",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "83856",
+        "fdc_id": "168833",
+        "seq_num": "3",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "cup unpacked",
+        "gram_weight": "145",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "83857",
+        "fdc_id": "168833",
+        "seq_num": "4",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp packed",
+        "gram_weight": "4.6",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "83858",
+        "fdc_id": "168833",
+        "seq_num": "5",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp brownulated",
+        "gram_weight": "3.2",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "84482",
+        "fdc_id": "169231",
+        "seq_num": "1",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp",
+        "gram_weight": "2",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "84483",
+        "fdc_id": "169231",
+        "seq_num": "2",
+        "amount": "0.25",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "cup slices (1\" dia)",
+        "gram_weight": "24",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "84484",
+        "fdc_id": "169231",
+        "seq_num": "3",
+        "amount": "5",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "slices (1\" dia)",
+        "gram_weight": "11",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "85470",
+        "fdc_id": "169765",
+        "seq_num": "1",
+        "amount": "2",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tablespoon",
+        "gram_weight": "25",
+        "data_points": "3",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "87536",
+        "fdc_id": "170919",
+        "seq_num": "1",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp, ground",
+        "gram_weight": "2",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "87537",
+        "fdc_id": "170919",
+        "seq_num": "2",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tbsp, ground",
+        "gram_weight": "5.8",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "87544",
+        "fdc_id": "170923",
+        "seq_num": "1",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp, whole",
+        "gram_weight": "2.1",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "87545",
+        "fdc_id": "170923",
+        "seq_num": "2",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tbsp, whole",
+        "gram_weight": "6",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "87777",
+        "fdc_id": "171016",
+        "seq_num": "1",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tablespoon",
+        "gram_weight": "13.6",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "87778",
+        "fdc_id": "171016",
+        "seq_num": "2",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "cup",
+        "gram_weight": "218",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "87779",
+        "fdc_id": "171016",
+        "seq_num": "3",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp",
+        "gram_weight": "4.5",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "88429",
+        "fdc_id": "171320",
+        "seq_num": "1",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp",
+        "gram_weight": "2.6",
+        "data_points": "13",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "88430",
+        "fdc_id": "171320",
+        "seq_num": "2",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tbsp",
+        "gram_weight": "7.8",
+        "data_points": "12",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "90132",
+        "fdc_id": "172235",
+        "seq_num": "1",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp",
+        "gram_weight": "4.2",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "90133",
+        "fdc_id": "172235",
+        "seq_num": "2",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tbsp",
+        "gram_weight": "13",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "90134",
+        "fdc_id": "172236",
+        "seq_num": "1",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp",
+        "gram_weight": "4.2",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "90135",
+        "fdc_id": "172236",
+        "seq_num": "2",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tbsp",
+        "gram_weight": "13",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "91437",
+        "fdc_id": "172803",
+        "seq_num": "1",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp",
+        "gram_weight": "4.6",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "91438",
+        "fdc_id": "172803",
+        "seq_num": "2",
+        "amount": "0.5",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp",
+        "gram_weight": "2.3",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "91439",
+        "fdc_id": "172804",
+        "seq_num": "1",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp",
+        "gram_weight": "4.6",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "91440",
+        "fdc_id": "172804",
+        "seq_num": "2",
+        "amount": "0.5",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp",
+        "gram_weight": "2.3",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "91441",
+        "fdc_id": "172805",
+        "seq_num": "1",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp",
+        "gram_weight": "5",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "91442",
+        "fdc_id": "172805",
+        "seq_num": "2",
+        "amount": "0.5",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp",
+        "gram_weight": "2.5",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "92603",
+        "fdc_id": "173471",
+        "seq_num": "1",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tsp",
+        "gram_weight": "4.2",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "92604",
+        "fdc_id": "173471",
+        "seq_num": "2",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "tbsp",
+        "gram_weight": "13",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      },
+      {
+        "id": "92605",
+        "fdc_id": "173471",
+        "seq_num": "3",
+        "amount": "1",
+        "measure_unit_id": "9999",
+        "portion_description": "",
+        "modifier": "cup",
+        "gram_weight": "208",
+        "data_points": "",
+        "footnote": "",
+        "min_year_acquired": ""
+      }
+    ],
+    "interpretation": "Ground cinnamon FDC1713201tsp2.6g;sesameoil1710161tsp4.5g. Whole-cumin portion does not establish ground-cumin density. Brown sugar spoon packing differs. These excerpts do not validate every prior conversion."
+  },
+  "foodin": {
+    "url": "https://foodin.fi/tuote/erytritoli-luomu-200g-2/",
+    "access": "LIVE_PRIMARY_LABEL_READ",
+    "ingredient": "Pure organic erythritol",
+    "declaredPer100g": {
+      "carbohydrate": 100,
+      "polyols": 100,
+      "protein": 0,
+      "fat": 0
+    },
+    "availableChoDefinition": "100-100=0; pure ingredient contains no fibre.12g/tablespoon remains unverified,so no total-polyol approval. No GI marketing claim used."
+  },
+  "primaryGiTable": "gk-r3-gi-studies.json",
+  "journalAccessNotes": "6 full original publications read;Sugiyama2003 andLang1999 primaryabstract/previewonly. The Sugiyama downloadedPDF is a subscription-page rendition,not original fulltext.",
+  "additionalSourceFinding": {
+    "yeastId": "F009606",
+    "recipe": "baozi",
+    "massG": 7,
+    "servings": 4,
+    "perServingInputAddition": {
+      "availableCarbohydrate": 0.11025,
+      "protein": 0.637,
+      "fat": 0.0875,
+      "fibre": 0.47075
+    },
+    "limitation": "Input contribution only,not a measured post-fermentation retention correction."
+  },
+  "r31CoconutDensityReview": {
+    "reviewId": 5711068770,
+    "originalAfcdResponse": {
+      "file": "F002991.json",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F002991",
+      "status": "read",
+      "bytes": 12335,
+      "sha256": "e7cc11804d0e0f1a9d043b83f75d237acf37e00838633c59978853a63ffe776a"
+    },
+    "originalGeneralDensityPdf": {
+      "file": "npc-gravities.pdf",
+      "url": "https://www.foodstandards.gov.au/sites/default/files/2023-12/npc-specific-gravities.pdf",
+      "status": "read",
+      "bytes": 222817,
+      "sha256": "383bb4b4c961ab31890b374d3623a362e7c6ee5e7c7acce61ccd331305ba2004"
+    },
+    "generalHtmlAccess": "HTTP403;original7-pagePDF read,PDFp1 explanatory context andp2 coconut milk row",
+    "fineli29014": "DL100g in approved Release20 foodaddunit is a food-record reference portion,not a measured density for every brand.150ml=>150g only under this source-specific assumption.",
+    "afcdF002991": "specific_gravity1.02 for canned regular-fat coconut milk; composition is a composite/reference food,not a measurement of the users brand.200ml=>204g only for this record-matched assumption.",
+    "fsanzGeneralNpc": "Coconut,milk1.01 is an indicative generic NPC guide;source notes composition,temperature and measurement influence specificgravity. It does not overwrite a more specific record.",
+    "recordTerminologyCorrection": "Record-specific,not universal or single-brand product-specific. Both Fineli andAFCD are representative foods.",
+    "conclusion": "NO_CONFIRMED_SOURCE_OR_UNIT_ERROR; source-matched assumptions retained. Future actual conflicting label/measurement =>BLOCKED until reconciled,not silent active-data replacement.",
+    "comparisons": [
+      {
+        "recipeId": "indonesialainen-serabi-kookospannukakku",
+        "servings": 2,
+        "compositionId": "29014",
+        "volumeMl": 150,
+        "retainedReferenceMassG": 150.0,
+        "originalUnroundedPerServing": {
+          "availableCarbohydrate": 57.0075,
+          "protein": 6.08,
+          "fat": 29.98075,
+          "fibre": 6.54875
+        },
+        "per100g": {
+          "availableCarbohydrate": 2.81,
+          "protein": 2.02,
+          "fat": 21.33,
+          "fibre": 5.145
+        },
+        "densityOnlyComparisons": [
+          {
+            "gramsPerMl": 1.0,
+            "batchMassG": 150.0,
+            "deltaPerServingUnrounded": {
+              "availableCarbohydrate": 0.0,
+              "protein": 0.0,
+              "fat": 0.0,
+              "fibre": 0.0
+            },
+            "scenarioPerServing": {
+              "availableCarbohydrate": 57.01,
+              "protein": 6.08,
+              "fat": 29.98,
+              "fibre": 6.55
+            }
+          },
+          {
+            "gramsPerMl": 1.01,
+            "batchMassG": 151.5,
+            "deltaPerServingUnrounded": {
+              "availableCarbohydrate": 0.021075,
+              "protein": 0.01515,
+              "fat": 0.159975,
+              "fibre": 0.0385875
+            },
+            "scenarioPerServing": {
+              "availableCarbohydrate": 57.03,
+              "protein": 6.1,
+              "fat": 30.14,
+              "fibre": 6.59
+            }
+          },
+          {
+            "gramsPerMl": 1.02,
+            "batchMassG": 153.0,
+            "deltaPerServingUnrounded": {
+              "availableCarbohydrate": 0.04215,
+              "protein": 0.0303,
+              "fat": 0.31995,
+              "fibre": 0.077175
+            },
+            "scenarioPerServing": {
+              "availableCarbohydrate": 57.05,
+              "protein": 6.11,
+              "fat": 30.3,
+              "fibre": 6.63
+            }
+          }
+        ],
+        "interpretation": "Hold composition and all other ingredients constant; density sensitivity only,NOT a statistical uncertainty interval or product-wide bound. Product composition variation and actual retention are not quantified."
+      },
+      {
+        "recipeId": "thai-kookosriisi-mangolla",
+        "servings": 2,
+        "compositionId": "F002991",
+        "volumeMl": 200,
+        "retainedReferenceMassG": 204.0,
+        "originalUnroundedPerServing": {
+          "availableCarbohydrate": 48.21913,
+          "protein": 5.966,
+          "fat": 17.949,
+          "fibre": 1.714
+        },
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "densityOnlyComparisons": [
+          {
+            "gramsPerMl": 1.0,
+            "batchMassG": 200.0,
+            "deltaPerServingUnrounded": {
+              "availableCarbohydrate": -0.034,
+              "protein": -0.028,
+              "fat": -0.308,
+              "fibre": -0.0
+            },
+            "scenarioPerServing": {
+              "availableCarbohydrate": 48.19,
+              "protein": 5.94,
+              "fat": 17.64,
+              "fibre": 1.71
+            }
+          },
+          {
+            "gramsPerMl": 1.01,
+            "batchMassG": 202.0,
+            "deltaPerServingUnrounded": {
+              "availableCarbohydrate": -0.017,
+              "protein": -0.014,
+              "fat": -0.154,
+              "fibre": -0.0
+            },
+            "scenarioPerServing": {
+              "availableCarbohydrate": 48.2,
+              "protein": 5.95,
+              "fat": 17.8,
+              "fibre": 1.71
+            }
+          },
+          {
+            "gramsPerMl": 1.02,
+            "batchMassG": 204.0,
+            "deltaPerServingUnrounded": {
+              "availableCarbohydrate": 0.0,
+              "protein": 0.0,
+              "fat": 0.0,
+              "fibre": 0.0
+            },
+            "scenarioPerServing": {
+              "availableCarbohydrate": 48.22,
+              "protein": 5.97,
+              "fat": 17.95,
+              "fibre": 1.71
+            }
+          }
+        ],
+        "interpretation": "Hold composition and all other ingredients constant; density sensitivity only,NOT a statistical uncertainty interval or product-wide bound. Product composition variation and actual retention are not quantified."
+      }
+    ]
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "state": "REVIEW_FIXUP_DRAFT_ONLY",
+  "review": {
+    "id": 5711068770,
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/134#pullrequestreview-5711068770",
+    "state": "COMMENTED",
+    "submittedAt": "2026-10-30T10:37:06Z",
+    "reviewedCommit": "1d7dc77f15de34e92607b979484504b9834e162c",
+    "bodySha256": "0fc9c88b2f4ba8e7f151cf3971ce23e1f1c102b9a31e24e1269caa8435e1fa51",
+    "allSixRequestsRead": true,
+    "inlineComments": 0,
+    "approval": false
+  },
+  "decision": "CONDITIONAL_GO",
+  "originalR3Counts": {
+    "VERIFIED_TOTAL": 0,
+    "ESTIMATED_TOTAL_WITH_EVIDENCE": 14,
+    "PARTIAL_ONLY": 8,
+    "INSUFFICIENT_EVIDENCE": 2
+  },
+  "currentCounts": {
+    "VERIFIED_TOTAL": 0,
+    "PARTIAL_ONLY": 8,
+    "ESTIMATED_TOTAL_WITH_EVIDENCE": 14,
+    "INSUFFICIENT_EVIDENCE": 2
+  },
+  "decisionScope": {
+    "reviewId": 5711068770,
+    "reviewUrl": "https://github.com/ozirix-dev/Reseptit/pull/134#pullrequestreview-5711068770",
+    "reviewedCommit": "1d7dc77f15de34e92607b979484504b9834e162c",
+    "reviewState": "COMMENTED",
+    "newIndependentApproval": false,
+    "countsUnchangedReason": "B is a complete named-scenario estimate,not publication-ready original text. These two B totals remain arithmetic/source-backed only for the named step4/single-pass proposals; their current recipe texts must be corrected before publication.",
+    "conditionalWholeScenarioCount": 14,
+    "ofThoseRequiringThisPreparationFix": 2,
+    "wholeScenarioBWithoutTheseTwoTextConflicts": 12,
+    "publicationReadyCount": 0
+  },
+  "recipePreparationProposals": [
+    {
+      "recipeId": "indonesialainen-serabi-kookospannukakku",
+      "scenarioId": "SERABI_SINGLE_BATCH_STEP4",
+      "originalFinding": "Steps1–3 describe a generic thin pancake process;step4 restarts mixing/resting/pan-frying as thick small rice-flour coconut pancakes with sugar on top. Both sequences cannot be treated as one clear literal preparation.",
+      "interpretation": "The most recipe-specific instruction is step4. R3 selected this one-batch scenario; this is a reasoned interpretation,not proof of author intent. All6 listed ingredient rows,including one13.5g total oil amount and all30g brown sugar,are used once.",
+      "macroEffect": "All four input macros remain57.01/6.08/29.98/6.55g per serving in the named single-batch/full-input-retention scenario. If the generic steps imply extra batter/oil or a second cooking sequence,amounts and losses are unknown; no second numerical total is asserted. Pan residue especially affects fat; thin/thick processing does not prove identical eaten macros.",
+      "proposedIngredientClarifications": [
+        "Keep100g rice flour,20g unsweetened dried coconut,150ml full-fat coconut milk,30g brown sugar,1tbsp oil and salt for2servings. The1tbsp oil is for the whole batch."
+      ],
+      "proposedPreparationFi": [
+        "Sekoita riisijauho, kookosmaito, kookoshiutaleet ja suola tasaiseksi taikinaksi. Anna taikinan levätä 10 minuuttia.",
+        "Paista taikina pieninä paksuina pannukakkuina öljytyssä pannussa miedolla lämmöllä molemmin puolin kypsäksi. Käytä koko erään yhteensä reseptin 1 rkl öljyä.",
+        "Jaa kaikki fariinisokeri pannukakkujen päälle ja kuumenna miedolla lämmöllä, kunnes sokeri sulaa. Jaa koko erä kahdeksi annokseksi."
+      ],
+      "r4Conditions": [
+        "Replace all four current steps with this one-pass proposal after content review; no extra dry ingredient/liquid/oil is implied.",
+        "Kitchen-check batter consistency,doneness and25min time before publishing the revised preparation; if amounts change,recalculate all macros.",
+        "Accept explicitly the Fineli29014 representative product/portion,AFCD brown sugar and full-input-retention estimate."
+      ],
+      "unresolved": [
+        "Author intent not established independently",
+        "Current contradictory preparation text",
+        "Actual pan residue/oil retention",
+        "Consistency/time of the proposed single-pass preparation"
+      ]
+    },
+    {
+      "recipeId": "thai-kookosriisi-mangolla",
+      "scenarioId": "COCONUT_RICE_RAW100G_ABSORPTION",
+      "originalFinding": "Step1 cooks rice by package instructions and mentions tofu/egg;step4 starts by rinsing rice then cooking it in coconut milk. Steps2–3 add generic vegetables,herbs,sauce language. Ingredient list does not explicitly mark dry rice or edible peeled mango.",
+      "interpretation": "R3 selected step4:100g dry uncooked white rice,200ml regular-fat canned coconut milk,150g peeled/pitted mango flesh and6g hulled sesame,2servings. This is supported as a named ingredient scenario by the composition rows and specific step,not established as the unique literal reading of the current recipe.",
+      "macroEffect": "Named input-retention scenario remains48.22/5.97/17.95/1.71g per serving. Rinsing removes unspecified starch; loss is not measured. Absorption cooking has no drained cooking liquid; evaporation changes density,not batch nutrient input. Preboiling/draining,100g cooked rice or extra tofu/egg would require a different full calculation,not a fabricated yield/loss coefficient.",
+      "proposedIngredientClarifications": [
+        "Rice100g: add note dry weight,uncooked white rice.",
+        "Mango150g: add note peeled,pitted edible flesh.",
+        "Coconut milk200ml: regular-fat canned product represented by AFCD F002991,not coconut beverage.",
+        "Sesame6g: hulled seeds matching Fineli34245.",
+        "Cooking method: replace current paistaminen with keittäminen/hauduttaminen as supported by the recipe schema."
+      ],
+      "proposedPreparationFi": [
+        "Huuhtele 100 g kuivaa riisiä ja valuta huuhteluvesi.",
+        "Laita riisi, 200 ml kookosmaitoa ja suola kattilaan. Kuumenna kiehuvaksi ja kypsennä miedolla lämmöllä kannen alla, kunnes neste on imeytynyt ja riisi on pehmeää.",
+        "Leikkaa 150 g kuorittua, kivetöntä mangon hedelmälihaa paloiksi. Jaa koko riisierä kahteen annokseen ja tarjoa kaiken mangon sekä seesaminsiementen kanssa."
+      ],
+      "r4Conditions": [
+        "Replace all four original steps; remove generic tofu/egg,vegetable,herb,sauce and preboiling instructions.",
+        "Independently accept100g dry-rice and150g edible-mango scope; no cooked-rice mass substitution.",
+        "Kitchen-check100g dry rice/200ml coconut milk and25min time. If extra water is needed,measure and state it explicitly; do not invent an amount in R3.1.",
+        "Accept that full-input retention is an estimate with unquantified rinsing loss,not a measured eaten total."
+      ],
+      "unresolved": [
+        "Current contradictory preparation text",
+        "Dry rice/edible mango not explicit in current ingredient text",
+        "Rice variety,rinsing starch loss and actual cooked yield",
+        "Absorption cooking adequacy/time without an invented extra water amount"
+      ]
+    }
+  ],
+  "densityComparisons": [
+    {
+      "recipeId": "indonesialainen-serabi-kookospannukakku",
+      "servings": 2,
+      "compositionId": "29014",
+      "volumeMl": 150,
+      "retainedReferenceMassG": 150.0,
+      "originalUnroundedPerServing": {
+        "availableCarbohydrate": 57.0075,
+        "protein": 6.08,
+        "fat": 29.98075,
+        "fibre": 6.54875
+      },
+      "per100g": {
+        "availableCarbohydrate": 2.81,
+        "protein": 2.02,
+        "fat": 21.33,
+        "fibre": 5.145
+      },
+      "densityOnlyComparisons": [
+        {
+          "gramsPerMl": 1.0,
+          "batchMassG": 150.0,
+          "deltaPerServingUnrounded": {
+            "availableCarbohydrate": 0.0,
+            "protein": 0.0,
+            "fat": 0.0,
+            "fibre": 0.0
+          },
+          "scenarioPerServing": {
+            "availableCarbohydrate": 57.01,
+            "protein": 6.08,
+            "fat": 29.98,
+            "fibre": 6.55
+          }
+        },
+        {
+          "gramsPerMl": 1.01,
+          "batchMassG": 151.5,
+          "deltaPerServingUnrounded": {
+            "availableCarbohydrate": 0.021075,
+            "protein": 0.01515,
+            "fat": 0.159975,
+            "fibre": 0.0385875
+          },
+          "scenarioPerServing": {
+            "availableCarbohydrate": 57.03,
+            "protein": 6.1,
+            "fat": 30.14,
+            "fibre": 6.59
+          }
+        },
+        {
+          "gramsPerMl": 1.02,
+          "batchMassG": 153.0,
+          "deltaPerServingUnrounded": {
+            "availableCarbohydrate": 0.04215,
+            "protein": 0.0303,
+            "fat": 0.31995,
+            "fibre": 0.077175
+          },
+          "scenarioPerServing": {
+            "availableCarbohydrate": 57.05,
+            "protein": 6.11,
+            "fat": 30.3,
+            "fibre": 6.63
+          }
+        }
+      ],
+      "interpretation": "Hold composition and all other ingredients constant; density sensitivity only,NOT a statistical uncertainty interval or product-wide bound. Product composition variation and actual retention are not quantified."
+    },
+    {
+      "recipeId": "thai-kookosriisi-mangolla",
+      "servings": 2,
+      "compositionId": "F002991",
+      "volumeMl": 200,
+      "retainedReferenceMassG": 204.0,
+      "originalUnroundedPerServing": {
+        "availableCarbohydrate": 48.21913,
+        "protein": 5.966,
+        "fat": 17.949,
+        "fibre": 1.714
+      },
+      "per100g": {
+        "availableCarbohydrate": 1.7,
+        "protein": 1.4,
+        "fat": 15.4,
+        "fibre": 0
+      },
+      "densityOnlyComparisons": [
+        {
+          "gramsPerMl": 1.0,
+          "batchMassG": 200.0,
+          "deltaPerServingUnrounded": {
+            "availableCarbohydrate": -0.034,
+            "protein": -0.028,
+            "fat": -0.308,
+            "fibre": -0.0
+          },
+          "scenarioPerServing": {
+            "availableCarbohydrate": 48.19,
+            "protein": 5.94,
+            "fat": 17.64,
+            "fibre": 1.71
+          }
+        },
+        {
+          "gramsPerMl": 1.01,
+          "batchMassG": 202.0,
+          "deltaPerServingUnrounded": {
+            "availableCarbohydrate": -0.017,
+            "protein": -0.014,
+            "fat": -0.154,
+            "fibre": -0.0
+          },
+          "scenarioPerServing": {
+            "availableCarbohydrate": 48.2,
+            "protein": 5.95,
+            "fat": 17.8,
+            "fibre": 1.71
+          }
+        },
+        {
+          "gramsPerMl": 1.02,
+          "batchMassG": 204.0,
+          "deltaPerServingUnrounded": {
+            "availableCarbohydrate": 0.0,
+            "protein": 0.0,
+            "fat": 0.0,
+            "fibre": 0.0
+          },
+          "scenarioPerServing": {
+            "availableCarbohydrate": 48.22,
+            "protein": 5.97,
+            "fat": 17.95,
+            "fibre": 1.71
+          }
+        }
+      ],
+      "interpretation": "Hold composition and all other ingredients constant; density sensitivity only,NOT a statistical uncertainty interval or product-wide bound. Product composition variation and actual retention are not quantified."
+    }
+  ],
+  "sourceConclusion": "NO_CONFIRMED_SOURCE_OR_UNIT_ERROR; source-matched assumptions retained. Future actual conflicting label/measurement =>BLOCKED until reconciled,not silent active-data replacement.",
+  "confirmedFindings": [
+    "Duplicate/conflicting serabi steps",
+    "Preboiling/absorption and generic protein/vegetable/sauce conflict in coconut rice",
+    "Different scope of1.01general and1.02record density",
+    "Oil-to-vegetable GI metadata in2recipes",
+    "Ground black pepper numerically bound to vegetable category in1recipe",
+    "Existing category-mean acceptance is weaker than R2 source removals;requires unified review policy",
+    "NinezeroGKvalues omit all known positiveCHO;not rounding artifacts"
+  ],
+  "falseAlarmsOrOverstatements": [
+    "The oil association is real,but it does not contribute GI66or anyGK when sourceCHOis0.",
+    "1.01versus1.02does not prove a source/unit error.",
+    "47preparation flags are not47confirmed errors.",
+    "A skipped dedicated CI step does not mean the suite was absent:originalR3 npmtest included both nutrition andGK test files."
+  ],
+  "reviewDisposition": [
+    {
+      "request": 1,
+      "result": "CONFIRMED;named serabi scenario and exact future text supplied;publication blocked until corrected"
+    },
+    {
+      "request": 2,
+      "result": "CONFIRMED;raw100g/edible150g/absorption scenario and exact future text supplied"
+    },
+    {
+      "request": 3,
+      "result": "SCOPE_DIFFERENCE_CONFIRMED_NO_NUMERIC_SOURCE_ERROR;density sensitivity supplied"
+    },
+    {
+      "request": 4,
+      "result": "PROPOSED_UNIFIED_POLICY_AND_MECHANICAL_COVERAGE;not activated"
+    },
+    {
+      "request": 5,
+      "result": "CONFIRMED_METADATA_WITH_NO_OIL_GK_EFFECT;secondoil andnumericblackpepper found;no active edits"
+    },
+    {
+      "request": 6,
+      "result": "DEPENDENCY_ORDER_AND_CI_GATES_SUPPLIED;R4not started"
+    }
+  ],
+  "r2Compatibility": {
+    "r2Head": "020b665582f4f1ec54e56ec978581e424adc6ace",
+    "counts": {
+      "massCorrections": 10,
+      "compositionCorrections": 1,
+      "giRemovals": 20,
+      "changeRows": 30
+    },
+    "researchMacroEffectOfR2Integration": "NONE: R2 changes GK inputs/bindings and research/test files,not the five nutrition calculations,recipe files or shared composition sources. R3 tomato/Yangzhou scenarios already include the proposed amounts;do not apply them twice.",
+    "heldR2WholeNutritionProposals": [
+      "bulgogi",
+      "baozi",
+      "koshari"
+    ],
+    "r4DirectGkOverlap": {
+      "recipes": 3,
+      "massRows": 4,
+      "giRemovalRows": 10,
+      "totalRows": 14
+    },
+    "preferredOrder": "Finish R3.1 review;independently review and integrate R2 in separately authorized lifecycle work;start R4 from then-currentmain and recheck all source/binding hashes.",
+    "withoutR2Merge": "Research/preparation remains possible. Publication requires independent review and explicit integration of the14relevant R2rows or a justified replacement,including bindings/regressions and coordination with R2. Not safe to ignore them;no cherry-pick or integration performed here.",
+    "nutritionAndCompositionFilesVerifiedIdentical": [
+      "docs/nutrition/food-records.json",
+      "docs/nutrition/fineli-release-20-reference.json",
+      "docs/nutrition/afcd-release-3-reference.json",
+      "docs/nutrition/calculations/tomaatti-kananmuna-wokki.json",
+      "docs/nutrition/calculations/yangzhou-paistettu-riisi.json",
+      "docs/nutrition/calculations/kreikkalainen-moussaka.json",
+      "docs/nutrition/calculations/indonesialainen-serabi-kookospannukakku.json",
+      "docs/nutrition/calculations/thai-kookosriisi-mangolla.json"
+    ]
+  },
+  "targetedScreen": "gk-r3-1-targeted-screen.json",
+  "r4Dependencies": [
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "sourcePath": "reseptit/paaruoat/tomaatti-kananmuna-wokki.md",
+      "paths": [
+        "docs/nutrition/calculations/tomaatti-kananmuna-wokki.json",
+        "kaannokset/en/paaruoat/tomaatti-kananmuna-wokki.md",
+        "kaannokset/sv/paaruoat/tomaatti-kananmuna-wokki.md",
+        "kaannokset/th/paaruoat/tomaatti-kananmuna-wokki.md",
+        "reseptit/paaruoat/tomaatti-kananmuna-wokki.md"
+      ],
+      "r2InputChanges": [
+        {
+          "ingredient": "kevätsipulia",
+          "kind": "MASS_VERIFIED"
+        },
+        {
+          "ingredient": "soijakastiketta",
+          "kind": "MASS_CORRECTED"
+        },
+        {
+          "ingredient": "kypsää tomaattia",
+          "kind": "GI_REMOVED"
+        },
+        {
+          "ingredient": "keitettyä riisiä",
+          "kind": "GI_REMOVED"
+        },
+        {
+          "ingredient": "sokeria",
+          "kind": "GI_REMOVED"
+        }
+      ],
+      "ciPlan": {
+        "unitTests": [
+          "tests/glycemic-coverage-inventory.test.ts",
+          "tests/glycemic-load.test.ts",
+          "tests/nutrition-evidence.test.ts",
+          "tests/nutrition-model.test.ts"
+        ],
+        "runNutrition": true,
+        "runGlycemic": true,
+        "runContent": true
+      },
+      "condition": "Require both nutrition and GK suites in CI even when actual path selector would omit GK; no CI change in R3.1"
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "sourcePath": "reseptit/paaruoat/yangzhou-paistettu-riisi.md",
+      "paths": [
+        "docs/nutrition/calculations/yangzhou-paistettu-riisi.json",
+        "kaannokset/en/paaruoat/yangzhou-paistettu-riisi.md",
+        "kaannokset/sv/paaruoat/yangzhou-paistettu-riisi.md",
+        "kaannokset/th/paaruoat/yangzhou-paistettu-riisi.md",
+        "reseptit/paaruoat/yangzhou-paistettu-riisi.md"
+      ],
+      "r2InputChanges": [
+        {
+          "ingredient": "soijakastiketta",
+          "kind": "MASS_CORRECTED"
+        },
+        {
+          "ingredient": "neutraalia öljyä",
+          "kind": "MASS_CORRECTED"
+        },
+        {
+          "ingredient": "herneitä",
+          "kind": "GI_REMOVED"
+        }
+      ],
+      "ciPlan": {
+        "unitTests": [
+          "tests/glycemic-coverage-inventory.test.ts",
+          "tests/glycemic-load.test.ts",
+          "tests/nutrition-evidence.test.ts",
+          "tests/nutrition-model.test.ts"
+        ],
+        "runNutrition": true,
+        "runGlycemic": true,
+        "runContent": true
+      },
+      "condition": "Require both nutrition and GK suites in CI even when actual path selector would omit GK; no CI change in R3.1"
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "sourcePath": "reseptit/paaruoat/kreikkalainen-moussaka.md",
+      "paths": [
+        "docs/nutrition/calculations/kreikkalainen-moussaka.json",
+        "kaannokset/en/paaruoat/kreikkalainen-moussaka.md",
+        "kaannokset/sv/paaruoat/kreikkalainen-moussaka.md",
+        "kaannokset/th/paaruoat/kreikkalainen-moussaka.md",
+        "reseptit/paaruoat/kreikkalainen-moussaka.md"
+      ],
+      "r2InputChanges": [
+        {
+          "ingredient": "munakoisoa",
+          "kind": "GI_REMOVED"
+        },
+        {
+          "ingredient": "perunoita",
+          "kind": "GI_REMOVED"
+        },
+        {
+          "ingredient": "tomaattimurskaa",
+          "kind": "GI_REMOVED"
+        },
+        {
+          "ingredient": "maitoa",
+          "kind": "GI_REMOVED"
+        },
+        {
+          "ingredient": "raastettua kovaa juustoa",
+          "kind": "GI_REMOVED"
+        },
+        {
+          "ingredient": "mustapippuria",
+          "kind": "GI_REMOVED"
+        }
+      ],
+      "ciPlan": {
+        "unitTests": [
+          "tests/glycemic-coverage-inventory.test.ts",
+          "tests/glycemic-load.test.ts",
+          "tests/nutrition-evidence.test.ts",
+          "tests/nutrition-model.test.ts"
+        ],
+        "runNutrition": true,
+        "runGlycemic": true,
+        "runContent": true
+      },
+      "condition": "Require both nutrition and GK suites in CI even when actual path selector would omit GK; no CI change in R3.1"
+    },
+    {
+      "recipeId": "indonesialainen-serabi-kookospannukakku",
+      "sourcePath": "reseptit/aamupalat/indonesialainen-serabi-kookospannukakku.md",
+      "paths": [
+        "docs/nutrition/calculations/indonesialainen-serabi-kookospannukakku.json",
+        "reseptit/aamupalat/indonesialainen-serabi-kookospannukakku.md"
+      ],
+      "r2InputChanges": [],
+      "ciPlan": {
+        "unitTests": [
+          "tests/glycemic-coverage-inventory.test.ts",
+          "tests/glycemic-load.test.ts",
+          "tests/nutrition-evidence.test.ts",
+          "tests/nutrition-model.test.ts"
+        ],
+        "runNutrition": true,
+        "runGlycemic": true,
+        "runContent": true
+      },
+      "condition": "Require both nutrition and GK suites in CI even when actual path selector would omit GK; no CI change in R3.1"
+    },
+    {
+      "recipeId": "thai-kookosriisi-mangolla",
+      "sourcePath": "reseptit/aamupalat/thai-kookosriisi-mangolla.md",
+      "paths": [
+        "docs/nutrition/calculations/thai-kookosriisi-mangolla.json",
+        "reseptit/aamupalat/thai-kookosriisi-mangolla.md"
+      ],
+      "r2InputChanges": [],
+      "ciPlan": {
+        "unitTests": [
+          "tests/glycemic-coverage-inventory.test.ts",
+          "tests/glycemic-load.test.ts",
+          "tests/nutrition-evidence.test.ts",
+          "tests/nutrition-model.test.ts"
+        ],
+        "runNutrition": true,
+        "runGlycemic": true,
+        "runContent": true
+      },
+      "condition": "Require both nutrition and GK suites in CI even when actual path selector would omit GK; no CI change in R3.1"
+    }
+  ],
+  "protectedContentTrees": {
+    "reseptit": {
+      "files": 369,
+      "sha256": "551a70f7d19a859b58851ad07e734576519909848242e9dd575e7b48ac6e4d0d"
+    },
+    "kaannokset": {
+      "files": 361,
+      "sha256": "9108eb8b060e9c53937ad15aab212ee6b421c5a35f737cd3b424a8fe6e3b1587"
+    },
+    "docs/nutrition/calculations": {
+      "files": 180,
+      "sha256": "e9d68eb5fb7414152905c383128ea1f7f142ca33056bcb7811d7861e0fa73002"
+    }
+  },
+  "independentApproval": false
+}
