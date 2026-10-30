@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "content:sync": "tsx scripts/build-content.ts",
-    "test": "tsx --test tests/servings.test.ts tests/published-content.test.ts tests/markdown-safety.test.ts tests/recipe-schema.test.ts tests/recipe-search.test.ts tests/route-content.test.ts tests/nutrition-model.test.ts tests/nutrition-evidence.test.ts tests/glycemic-load.test.ts tests/glycemic-coverage-inventory.test.ts scripts/changed-content-checks.test.ts",
+    "test": "tsx --test tests/servings.test.ts tests/published-content.test.ts tests/markdown-safety.test.ts tests/recipe-schema.test.ts tests/recipe-search.test.ts tests/route-content.test.ts tests/nutrition-model.test.ts tests/nutrition-evidence.test.ts tests/glycemic-load.test.ts tests/glycemic-coverage-inventory.test.ts scripts/changed-content-checks.test.ts tests/gk80-release3.test.ts tests/gk80-food-safety.test.ts tests/gk80-source-classification.test.ts tests/gk80-display.test.ts",
     "test:nutrition": "tsx --test tests/nutrition-model.test.ts tests/nutrition-evidence.test.ts",
     "test:glycemic": "tsx --test tests/glycemic-load.test.ts tests/glycemic-coverage-inventory.test.ts",
     "test:select-ci": "node --test scripts/select-ci-checks.test.mjs",

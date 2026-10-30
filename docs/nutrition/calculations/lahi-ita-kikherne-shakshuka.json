@@ -1,0 +1,231 @@
+{
+  "recipeId": "lahi-ita-kikherne-shakshuka",
+  "sourceHash": "b315effb5b6693ad7ea8628c8166a89c93936e89fb55a2c58c94dbe4987e5f3e",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-82",
+  "servings": 2,
+  "scope": "Complete weighed candidate, all edible ingredients and liquid retained, raw-input nutrient proxies explicitly disclosed",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kananmunaa",
+      "amount": 110,
+      "unit": "g",
+      "state": "raw edible egg, shell removed",
+      "matchEvidence": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible egg, shell removed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
+    },
+    {
+      "item": "tomaattia",
+      "amount": 125,
+      "unit": "g",
+      "state": "raw medium tomato, edible portion",
+      "matchEvidence": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
+      "record": {
+        "id": "fineli-352-release-20",
+        "name": "TOMAATTI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/352",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw medium tomato, edible portion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.45,
+          "FIBT": 0.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3.45,
+          "fibre": 0.4,
+          "polyols": 0,
+          "protein": 0.55,
+          "fat": 0.3
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
+    },
+    {
+      "item": "kypsiä valutettuja kikherneitä",
+      "amount": 100,
+      "unit": "g",
+      "state": "cooked drained chickpeas",
+      "matchEvidence": "Cooked whole drained chickpeas; food-specific human mean analogue, no chickpea flour transfer.",
+      "record": {
+        "id": "fineli-11089-release-20",
+        "name": "KIKHERNE SUOLATTOMASSA VEDESSÄ",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11089",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "cooked drained chickpeas",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 17.6,
+          "FIBT": 5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 17.6,
+          "fibre": 5,
+          "polyols": 0,
+          "protein": 8.44,
+          "fat": 2.5
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
+    },
+    {
+      "item": "tuoretta persiljaa",
+      "amount": 8,
+      "unit": "g",
+      "state": "fresh parsley",
+      "matchEvidence": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
+      "record": {
+        "id": "fineli-333-release-20",
+        "name": "PERSILJA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/333",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh parsley",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.1,
+          "FIBT": 2.9,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.1,
+          "fibre": 2.9,
+          "polyols": 0,
+          "protein": 1.38,
+          "fat": 0.2
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
+    },
+    {
+      "item": "oliiviöljyä",
+      "amount": 13.5,
+      "unit": "g",
+      "state": "olive oil as sold",
+      "matchEvidence": "Explicit zero available CHO composition, not a zero GI assignment",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "olive oil as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "pure salt",
+      "excludedReason": "Pure salt has zero of the four macros",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
+    }
+  ]
+}

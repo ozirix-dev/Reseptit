@@ -1,0 +1,1458 @@
+{
+  "records": [
+    {
+      "id": "afcd-F000448-release-3-a27b1f9e",
+      "per100g": {
+        "availableCarbohydrate": 14,
+        "protein": 6.6,
+        "fat": 0.6,
+        "fibre": 6.5
+      },
+      "sourceRecord": {
+        "id": "afcd-F000448-release-3",
+        "name": "Bean, red kidney, canned, drained",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "canned red kidney beans, drained",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 14,
+          "fibre": 6.5,
+          "polyols": 0,
+          "protein": 6.6,
+          "fat": 0.6
+        }
+      },
+      "evidenceHash": "5575a5ba12627b5fc44a67c4a4373ba987cfde65c8fe756716bef9d809e6fb28"
+    },
+    {
+      "id": "afcd-F002258-release-3-e23045e9",
+      "per100g": {
+        "availableCarbohydrate": 34.4,
+        "protein": 10.8,
+        "fat": 6.7,
+        "fibre": 28
+      },
+      "sourceRecord": {
+        "id": "afcd-F002258-release-3",
+        "name": "Cardamom seed, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground cardamom seed",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 34.4,
+          "fibre": 28,
+          "polyols": 0,
+          "protein": 10.8,
+          "fat": 6.7
+        }
+      },
+      "evidenceHash": "1f3354168ee59921e35f8303200e5f4702e669610ee0d15f8cbca03460d0306b"
+    },
+    {
+      "id": "afcd-F002963-release-3-675e24d6",
+      "per100g": {
+        "availableCarbohydrate": 27.5,
+        "protein": 4,
+        "fat": 1.2,
+        "fibre": 53.1
+      },
+      "sourceRecord": {
+        "id": "afcd-F002963-release-3",
+        "name": "Cinnamon, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground cinnamon",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 27.5,
+          "fibre": 53.1,
+          "polyols": 0,
+          "protein": 4,
+          "fat": 1.2
+        }
+      },
+      "evidenceHash": "db0b48c9291930b785f2316d65ecfb0f408c39e550ec7450bcb6d59e8a8b3c14"
+    },
+    {
+      "id": "afcd-F002983-r4",
+      "per100g": {
+        "availableCarbohydrate": 3.3,
+        "protein": 3.8,
+        "fat": 32.8,
+        "fibre": 8.1
+      },
+      "sourceRecord": {
+        "id": "afcd-F002983-r4-publication-record",
+        "name": "Coconut, fresh, mature fruit, flesh",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F002983",
+        "retrievedAt": "2026-10-30",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia; selected fields unchanged. Australian average, not Finnish branded label.",
+        "state": "Coconut, fresh, mature fruit, flesh",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD Release3 available carbohydrate without sugar alcohols; per100g worksheet verified in AJO4",
+        "per100g": {
+          "carbohydrate": 3.3,
+          "protein": 3.8,
+          "fat": 32.8,
+          "fibre": 8.1,
+          "polyols": 0
+        },
+        "referenceRecord": {
+          "name": "Coconut, fresh, mature fruit, flesh",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F002983",
+          "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia; selected fields unchanged. Australian average, not Finnish branded label.",
+          "sourceRecord": {
+            "source_id": "F002983",
+            "classification": 22203,
+            "derivation": "Analysed",
+            "name": "Coconut, fresh, mature fruit, flesh",
+            "protein_g_per_100g": 3.8,
+            "fat_g_per_100g": 32.8,
+            "fibre_g_per_100g": 8.1,
+            "glycerol_g_per_100g": null,
+            "erythritol_g_per_100g": null,
+            "maltitol_g_per_100g": null,
+            "mannitol_g_per_100g": null,
+            "xylitol_g_per_100g": null,
+            "sorbitol_g_per_100g": null,
+            "available_carbohydrate_without_sugar_alcohols_g_per_100g": 3.3,
+            "available_carbohydrate_with_sugar_alcohols_g_per_100g": 3.3
+          },
+          "referenceFile": "docs/nutrition/afcd-release-3-reference.json",
+          "referenceSha256": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e"
+        }
+      },
+      "evidenceHash": "7df8b9e187ada88c8a1e31183fe157eb8ccf926bd90e381a0772b927b06258ad"
+    },
+    {
+      "id": "afcd-F002991-release-3-aef4d973",
+      "per100g": {
+        "availableCarbohydrate": 1.7,
+        "protein": 1.4,
+        "fat": 15.4,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "afcd-F002991-release-3",
+        "name": "Coconut, milk, canned, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "regular-fat canned coconut milk as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.7,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.4,
+          "fat": 15.4
+        }
+      },
+      "evidenceHash": "d6dcb688d40a92f44f555c7cc66e34b480d89a56ba59f49f8db8b4d0e7ab5bca"
+    },
+    {
+      "id": "afcd-F003327-release-3-66a5ea67",
+      "per100g": {
+        "availableCarbohydrate": 33.7,
+        "protein": 17.8,
+        "fat": 22.3,
+        "fibre": 10.5
+      },
+      "sourceRecord": {
+        "id": "afcd-F003327-release-3",
+        "name": "Cumin (cummin) seed, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground cumin",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 33.7,
+          "fibre": 10.5,
+          "polyols": 0,
+          "protein": 17.8,
+          "fat": 22.3
+        }
+      },
+      "evidenceHash": "64c3d980406d996adfd4470e390455f7e4bb314a1e72ef5b9d989a64ad11c566"
+    },
+    {
+      "id": "afcd-F003496-release-3-a5d64e04",
+      "per100g": {
+        "availableCarbohydrate": 67.2,
+        "protein": 2,
+        "fat": 0.2,
+        "fibre": 9.7
+      },
+      "sourceRecord": {
+        "id": "afcd-F003496-release-3",
+        "name": "Date, dried (pitted)",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F003496",
+        "retrievedAt": "2026-10-27",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dried pitted date, edible portion",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD Release 3 reports available carbohydrate with and without sugar alcohols; both are 67.2 g/100 g and sorbitol is 0 g.",
+        "per100g": {
+          "carbohydrate": 67.2,
+          "fibre": 9.7,
+          "polyols": 0,
+          "protein": 2,
+          "fat": 0.2
+        }
+      },
+      "evidenceHash": "0b8d6b6020f2506596fc3284f46a7fee7023821b8c99c750e8cd14a1c8a41c6a"
+    },
+    {
+      "id": "afcd-F004193-release-3-f052c14b",
+      "per100g": {
+        "availableCarbohydrate": 10.2,
+        "protein": 6.1,
+        "fat": 2.8,
+        "fibre": 16.9
+      },
+      "sourceRecord": {
+        "id": "afcd-F004193-release-3",
+        "name": "Garlic, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw peeled garlic",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 10.2,
+          "fibre": 16.9,
+          "polyols": 0,
+          "protein": 6.1,
+          "fat": 2.8
+        }
+      },
+      "evidenceHash": "a4451e35d7d804fd6b8581e0b13579198c12bad657d06c899eb2fde946ebcd89"
+    },
+    {
+      "id": "afcd-F004213-release-3-f156f4c7",
+      "per100g": {
+        "availableCarbohydrate": 4.8,
+        "protein": 0.8,
+        "fat": 0.4,
+        "fibre": 2.8
+      },
+      "sourceRecord": {
+        "id": "afcd-F004213-release-3",
+        "name": "Ginger, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw peeled ginger root",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 2.8,
+          "polyols": 0,
+          "protein": 0.8,
+          "fat": 0.4
+        }
+      },
+      "evidenceHash": "e0bf0770d6ca680c3370c300ffb1f8166c7cf1e3b8c192d76167f0d965074615"
+    },
+    {
+      "id": "afcd-F004380-release-3-058f1987",
+      "per100g": {
+        "availableCarbohydrate": 72.3,
+        "protein": 0.3,
+        "fat": 0,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "afcd-F004380-release-3",
+        "name": "Honey",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "honey as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 72.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.3,
+          "fat": 0
+        }
+      },
+      "evidenceHash": "87b5fcde746b909ecfb063a88565467ff03a13c1400d5402a23ae18338a6c678"
+    },
+    {
+      "id": "afcd-F004729-release-3-6915a221",
+      "per100g": {
+        "availableCarbohydrate": 1.2,
+        "protein": 0.8,
+        "fat": 0.1,
+        "fibre": 3.6
+      },
+      "sourceRecord": {
+        "id": "afcd-F004729-release-3",
+        "name": "Juice, lime",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "lime juice",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.2,
+          "fibre": 3.6,
+          "polyols": 0,
+          "protein": 0.8,
+          "fat": 0.1
+        }
+      },
+      "evidenceHash": "a64a14b168db2f021f36bb78389066de0a88ec088542321685bcb0c193715ec3"
+    },
+    {
+      "id": "afcd-F005946-release-3-13b128f1",
+      "per100g": {
+        "availableCarbohydrate": 0.8,
+        "protein": 2.2,
+        "fat": 0.8,
+        "fibre": 1.4
+      },
+      "sourceRecord": {
+        "id": "afcd-F005946-release-3",
+        "name": "Mushroom, common, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw common mushroom",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 1.4,
+          "polyols": 1.2,
+          "protein": 2.2,
+          "fat": 0.8
+        }
+      },
+      "evidenceHash": "4b3fa4802b9ad529bd494e38a8062e173e9f72af6935d763407dcffed3da6ab5"
+    },
+    {
+      "id": "afcd-F006143-release-3-26989550",
+      "per100g": {
+        "availableCarbohydrate": 54.5,
+        "protein": 12.2,
+        "fat": 9.5,
+        "fibre": 9.5
+      },
+      "sourceRecord": {
+        "id": "afcd-F006143-release-3",
+        "name": "Oats, rolled, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "rolled oats, uncooked",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 54.5,
+          "fibre": 9.5,
+          "polyols": 0,
+          "protein": 12.2,
+          "fat": 9.5
+        }
+      },
+      "evidenceHash": "9a386575e3273274700f064696b529087d8497db33d970fb3a5211dc50ab167b"
+    },
+    {
+      "id": "afcd-F006187-release-3-89a9a16a",
+      "per100g": {
+        "availableCarbohydrate": 0,
+        "protein": 0,
+        "fat": 100,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "afcd-F006187-release-3",
+        "name": "Oil, sesame",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "sesame oil as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      },
+      "evidenceHash": "f7be3a738b92857ea6a8b1971acb089ce4764494bcd725010e005da57f2aa665"
+    },
+    {
+      "id": "afcd-F006250-release-3-b70e842b",
+      "per100g": {
+        "availableCarbohydrate": 4.6,
+        "protein": 1.7,
+        "fat": 0.2,
+        "fibre": 1.9
+      },
+      "sourceRecord": {
+        "id": "afcd-F006250-release-3",
+        "name": "Onion, spring, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw spring onion, chopped",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.6,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 1.7,
+          "fat": 0.2
+        }
+      },
+      "evidenceHash": "dd9d065afa016565d42424375b1b2b9f3243707d946c6100d29599ffdd1431c2"
+    },
+    {
+      "id": "afcd-F006528-release-3-8f724a3f",
+      "per100g": {
+        "availableCarbohydrate": 8.4,
+        "protein": 0.4,
+        "fat": 0,
+        "fibre": 2.1
+      },
+      "sourceRecord": {
+        "id": "afcd-F006528-release-3",
+        "name": "Pawpaw (papaya), peeled, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "peeled raw papaya",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 8.4,
+          "fibre": 2.1,
+          "polyols": 0,
+          "protein": 0.4,
+          "fat": 0
+        }
+      },
+      "evidenceHash": "dc90c7bb9aa87c3296cec1551008becc0d6e93fa0ed64ab37df4b910303fb09d"
+    },
+    {
+      "id": "afcd-F007422-release-3-130963a1",
+      "per100g": {
+        "availableCarbohydrate": 0,
+        "protein": 13.2,
+        "fat": 0.6,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "afcd-F007422-release-3",
+        "name": "Prawn, banana, wild, flesh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw peeled prawn flesh",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 13.2,
+          "fat": 0.6
+        }
+      },
+      "evidenceHash": "4bbaaaac9c5328e866331c94501c70553e4a9299ac65b9613bdd0bc00c7c2ff4"
+    },
+    {
+      "id": "afcd-F007535-release-3-e6f3b6c9",
+      "per100g": {
+        "availableCarbohydrate": 6.9,
+        "protein": 2.1,
+        "fat": 0.6,
+        "fibre": 1.8
+      },
+      "sourceRecord": {
+        "id": "afcd-F007535-release-3",
+        "name": "Pumpkin, butternut, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw butternut pumpkin, peeled edible portion",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 6.9,
+          "fibre": 1.8,
+          "polyols": 0,
+          "protein": 2.1,
+          "fat": 0.6
+        }
+      },
+      "evidenceHash": "da4b1f9e12700ec905a0568dabeac3183bf830df4a2db34df53bfeb433eb4906"
+    },
+    {
+      "id": "afcd-F007682-release-3-e20d6ed7",
+      "per100g": {
+        "availableCarbohydrate": 74,
+        "protein": 7,
+        "fat": 0.9,
+        "fibre": 0.8
+      },
+      "sourceRecord": {
+        "id": "afcd-F007682-release-3",
+        "name": "Rice, white, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dry uncooked white long-grain rice",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 74,
+          "fibre": 0.8,
+          "polyols": 0,
+          "protein": 7,
+          "fat": 0.9
+        }
+      },
+      "evidenceHash": "ebddd47c4ceeebc8fb1aec0415ff1029954b3689d9d47866f9db20e58b1bf760"
+    },
+    {
+      "id": "afcd-F008065-r4",
+      "per100g": {
+        "availableCarbohydrate": 3.2,
+        "protein": 6.8,
+        "fat": 0,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "afcd-F008065-r4-publication-record",
+        "name": "Sauce, soy, commercial",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F008065",
+        "retrievedAt": "2026-10-30",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia; selected fields unchanged. Australian average, not Finnish branded label.",
+        "state": "Sauce, soy, commercial",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD Release3 available carbohydrate without sugar alcohols; per100g worksheet verified in AJO4",
+        "per100g": {
+          "carbohydrate": 3.2,
+          "protein": 6.8,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0
+        },
+        "referenceRecord": {
+          "name": "Sauce, soy, commercial",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F008065",
+          "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia; selected fields unchanged. Australian average, not Finnish branded label.",
+          "sourceRecord": {
+            "source_id": "F008065",
+            "classification": 23102,
+            "derivation": "Analysed",
+            "name": "Sauce, soy, commercial",
+            "protein_g_per_100g": 6.8,
+            "fat_g_per_100g": 0,
+            "fibre_g_per_100g": 0,
+            "glycerol_g_per_100g": null,
+            "erythritol_g_per_100g": null,
+            "maltitol_g_per_100g": null,
+            "mannitol_g_per_100g": null,
+            "xylitol_g_per_100g": null,
+            "sorbitol_g_per_100g": null,
+            "available_carbohydrate_without_sugar_alcohols_g_per_100g": 3.2,
+            "available_carbohydrate_with_sugar_alcohols_g_per_100g": 3.2
+          },
+          "referenceFile": "docs/nutrition/afcd-release-3-reference.json",
+          "referenceSha256": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+          "primaryResponseSha256": "48d906ec3b4459048836bb34b6276d74e1d2563ca81a8bb42379514931d9d528"
+        }
+      },
+      "evidenceHash": "433fbafb4b464c8bf44eb50155875b19c5174530d53dd88ea93b42e937558d55"
+    },
+    {
+      "id": "afcd-F008936-release-3-145aa9dd",
+      "per100g": {
+        "availableCarbohydrate": 0.4,
+        "protein": 0.2,
+        "fat": 0.2,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "afcd-F008936-release-3",
+        "name": "Stock, liquid, all flavours (except fish), prepared from commercial powder or cube",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "prepared liquid stock",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0.4,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.2,
+          "fat": 0.2
+        }
+      },
+      "evidenceHash": "23d79a5ab795003675bb067c62a13587290e65cbb6c70f8d5920773497687b6f"
+    },
+    {
+      "id": "afcd-F008969-release-3-ea75b300",
+      "per100g": {
+        "availableCarbohydrate": 96.8,
+        "protein": 0.2,
+        "fat": 0,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "afcd-F008969-release-3",
+        "name": "Sugar, brown",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "brown sugar as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 96.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.2,
+          "fat": 0
+        }
+      },
+      "evidenceHash": "e0d7eace527a9d4110cba40ae81adb79a83e1a93308c98281d76d05b627d2864"
+    },
+    {
+      "id": "afcd-F009076-r4",
+      "per100g": {
+        "availableCarbohydrate": 1,
+        "protein": 20.4,
+        "fat": 60.7,
+        "fibre": 13.5
+      },
+      "sourceRecord": {
+        "id": "afcd-F009076-r4-publication-record",
+        "name": "Tahini, sesame seed pulp",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F009076",
+        "retrievedAt": "2026-10-30",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia; selected fields unchanged. Australian average, not Finnish branded label.",
+        "state": "Tahini, sesame seed pulp",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD Release3 available carbohydrate without sugar alcohols; per100g worksheet verified in AJO4",
+        "per100g": {
+          "carbohydrate": 1,
+          "protein": 20.4,
+          "fat": 60.7,
+          "fibre": 13.5,
+          "polyols": 0
+        },
+        "referenceRecord": {
+          "name": "Tahini, sesame seed pulp",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F009076",
+          "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia; selected fields unchanged. Australian average, not Finnish branded label.",
+          "sourceRecord": {
+            "source_id": "F009076",
+            "classification": 22102,
+            "derivation": "Analysed",
+            "name": "Tahini, sesame seed pulp",
+            "protein_g_per_100g": 20.4,
+            "fat_g_per_100g": 60.7,
+            "fibre_g_per_100g": 13.5,
+            "glycerol_g_per_100g": null,
+            "erythritol_g_per_100g": null,
+            "maltitol_g_per_100g": null,
+            "mannitol_g_per_100g": null,
+            "xylitol_g_per_100g": null,
+            "sorbitol_g_per_100g": null,
+            "available_carbohydrate_without_sugar_alcohols_g_per_100g": 1,
+            "available_carbohydrate_with_sugar_alcohols_g_per_100g": 1
+          },
+          "referenceFile": "docs/nutrition/afcd-release-3-reference.json",
+          "referenceSha256": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+          "primaryResponseSha256": "c80736fc4e9d44d7c4af534f97d49187f939e85a15c8265f5f5aad1fc244493a"
+        }
+      },
+      "evidenceHash": "6350e99f98c0a93c0d0f89be28a60b65f35c578bd034e26f7f377d65dab552bd"
+    },
+    {
+      "id": "afcd-F009350-release-3-2181fb59",
+      "per100g": {
+        "availableCarbohydrate": 12.6,
+        "protein": 0.1,
+        "fat": 0.1,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "afcd-F009350-release-3",
+        "name": "Vanilla bean extract",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "vanilla bean extract",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 12.6,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.1,
+          "fat": 0.1
+        }
+      },
+      "evidenceHash": "5151f694104b4e0afcdeca7994094557c314b9fa1f6820ed6070de526394bf36"
+    },
+    {
+      "id": "afcd-F010466-release-3-eb65cd9f",
+      "per100g": {
+        "availableCarbohydrate": 1.1,
+        "protein": 5.6,
+        "fat": 1.7,
+        "fibre": 14
+      },
+      "sourceRecord": {
+        "id": "afcd-F010466-release-3",
+        "name": "Thyme, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh thyme leaves",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.1,
+          "fibre": 14,
+          "polyols": 0,
+          "protein": 5.6,
+          "fat": 1.7
+        }
+      },
+      "evidenceHash": "55d3c33dfadc3c229e6791edb76160b928d082be9c943aad3a0abf02aa465d13"
+    },
+    {
+      "id": "fineli-1056-release-20-948816ca",
+      "per100g": {
+        "availableCarbohydrate": 46.08,
+        "protein": 7.49,
+        "fat": 0.979,
+        "fibre": 2.322
+      },
+      "sourceRecord": {
+        "id": "fineli-1056-release-20",
+        "name": "VAALEA LEIPÄ, PITALEIPÄ",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1056",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain wheat pita bread",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 46.08,
+          "FIBT": 2.322,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 46.08,
+          "fibre": 2.322,
+          "polyols": 0,
+          "protein": 7.49,
+          "fat": 0.979
+        }
+      },
+      "evidenceHash": "1f8d7dae273e5b531e8c2380130b6ae8a4c0baac09b85130c1b786e7757941c7"
+    },
+    {
+      "id": "fineli-11045-release-20-4a0f3339",
+      "per100g": {
+        "availableCarbohydrate": 8.9,
+        "protein": 0.56,
+        "fat": 0.14,
+        "fibre": 2.4
+      },
+      "sourceRecord": {
+        "id": "fineli-11045-release-20",
+        "name": "APPELSIINI, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11045",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw peeled orange flesh",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 8.9,
+          "FIBT": 2.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 8.9,
+          "fibre": 2.4,
+          "polyols": 0,
+          "protein": 0.56,
+          "fat": 0.14
+        }
+      },
+      "evidenceHash": "dcec3ca725ce85727db097a35eb9ed558369932b3188b65a18367f6fc0c40b43"
+    },
+    {
+      "id": "fineli-11089-release-20-96a64b8b",
+      "per100g": {
+        "availableCarbohydrate": 17.6,
+        "protein": 8.44,
+        "fat": 2.5,
+        "fibre": 5
+      },
+      "sourceRecord": {
+        "id": "fineli-11089-release-20",
+        "name": "KIKHERNE SUOLATTOMASSA VEDESSÄ",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11089",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "cooked drained chickpeas",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 17.6,
+          "FIBT": 5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 17.6,
+          "fibre": 5,
+          "polyols": 0,
+          "protein": 8.44,
+          "fat": 2.5
+        }
+      },
+      "evidenceHash": "4c5321459cab59cfaf4caef923bbab4ff973bc8090cdbb1aa5153e1b926dc5da"
+    },
+    {
+      "id": "fineli-11521-release-20-a02836f7",
+      "per100g": {
+        "availableCarbohydrate": 79,
+        "protein": 8.13,
+        "fat": 1.03,
+        "fibre": 1
+      },
+      "sourceRecord": {
+        "id": "fineli-11521-release-20",
+        "name": "RIISI PITKÄJYVÄINEN, PUUROUTUMATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11521",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "dry uncooked long-grain white rice",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 79,
+          "FIBT": 1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 79,
+          "fibre": 1,
+          "polyols": 0,
+          "protein": 8.13,
+          "fat": 1.03
+        }
+      },
+      "evidenceHash": "2aaf990ae6a271ee0c27fdbb92858bff9927eefd8bbe542be0ed4a4725cdacb4"
+    },
+    {
+      "id": "fineli-29823-release-20-b288ff50",
+      "per100g": {
+        "availableCarbohydrate": 83.85,
+        "protein": 5.59,
+        "fat": 1.39,
+        "fibre": 1.9
+      },
+      "sourceRecord": {
+        "id": "fineli-29823-release-20",
+        "name": "JAUHO, MAISSIJAUHO, HIENOKSI JAUHETTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29823",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fine-ground corn flour as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 83.85,
+          "FIBT": 1.9,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 83.85,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 5.59,
+          "fat": 1.39
+        }
+      },
+      "evidenceHash": "a1ccaac92f1baf1df27f5c5e90858276fac02180575b2711b114ed5cb69265f4"
+    },
+    {
+      "id": "fineli-30315-release-20-36a6124d",
+      "per100g": {
+        "availableCarbohydrate": 0.427,
+        "protein": 0.27,
+        "fat": 0.792,
+        "fibre": 0.029
+      },
+      "sourceRecord": {
+        "id": "fineli-30315-release-20",
+        "name": "KANALIEMI, LAIMENNETTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30315",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "prepared diluted chicken stock",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.427,
+          "FIBT": 0.029,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.427,
+          "fibre": 0.029,
+          "polyols": 0,
+          "protein": 0.27,
+          "fat": 0.792
+        }
+      },
+      "evidenceHash": "7648f3f06b6166f3cc2a6ddc111bab9565fef2de31e654d053cda1dc0f1e4fe3"
+    },
+    {
+      "id": "fineli-30792-release-20-2f1d1e5f",
+      "per100g": {
+        "availableCarbohydrate": 0,
+        "protein": 19.65,
+        "fat": 3.42,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "fineli-30792-release-20",
+        "name": "BROILERI, KOIPI-REISI, NAHATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30792",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw skinless chicken thigh meat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 19.65,
+          "fat": 3.42
+        }
+      },
+      "evidenceHash": "a97cbe79edcb7b38c2e3bff851ce3bb175b4b3485a4bb8643bfe3d85e6e8d35e"
+    },
+    {
+      "id": "fineli-333-release-20-3576584e",
+      "per100g": {
+        "availableCarbohydrate": 1.1,
+        "protein": 1.38,
+        "fat": 0.2,
+        "fibre": 2.9
+      },
+      "sourceRecord": {
+        "id": "fineli-333-release-20",
+        "name": "PERSILJA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/333",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh parsley",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.1,
+          "FIBT": 2.9,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.1,
+          "fibre": 2.9,
+          "polyols": 0,
+          "protein": 1.38,
+          "fat": 0.2
+        }
+      },
+      "evidenceHash": "f7968291a90ab9450dc608d9548c9fe848a860ce1c1a38d0ba6f722faf5de8ab"
+    },
+    {
+      "id": "fineli-346-release-20-1a06f8f9",
+      "per100g": {
+        "availableCarbohydrate": 1.4,
+        "protein": 0.65,
+        "fat": 0.1,
+        "fibre": 1.1
+      },
+      "sourceRecord": {
+        "id": "fineli-346-release-20",
+        "name": "KURKKU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/346",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw cucumber",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.4,
+          "FIBT": 1.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.4,
+          "fibre": 1.1,
+          "polyols": 0,
+          "protein": 0.65,
+          "fat": 0.1
+        }
+      },
+      "evidenceHash": "b733fe8f232cbcf5344571032b397017711fbc19d8646bb96a38229c9b6d0c2d"
+    },
+    {
+      "id": "fineli-352-release-20-be0843a6",
+      "per100g": {
+        "availableCarbohydrate": 3.45,
+        "protein": 0.55,
+        "fat": 0.3,
+        "fibre": 0.4
+      },
+      "sourceRecord": {
+        "id": "fineli-352-release-20",
+        "name": "TOMAATTI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/352",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw medium tomato, edible portion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.45,
+          "FIBT": 0.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3.45,
+          "fibre": 0.4,
+          "polyols": 0,
+          "protein": 0.55,
+          "fat": 0.3
+        }
+      },
+      "evidenceHash": "a678d31ceae6f456cd77fcba4e8e8a8b00036b751705911701f831440587cdc9"
+    },
+    {
+      "id": "fineli-536-release-20-89a9a16a",
+      "per100g": {
+        "availableCarbohydrate": 0,
+        "protein": 0,
+        "fat": 100,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "olive oil as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      },
+      "evidenceHash": "f6d600a7cb197c9ec68628ef93adf7229a135760dd14d706fa8c83d07c9fa578"
+    },
+    {
+      "id": "fineli-620-release-20-d980f5fe",
+      "per100g": {
+        "availableCarbohydrate": 3.4,
+        "protein": 3,
+        "fat": 3.9,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "fineli-620-release-20",
+        "name": "JOGURTTI, MAUSTAMATON, BULGARIAN, RASVAA 3,9%",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/620",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain unsweetened yogurt, 3.9% fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.4,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3.4,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.9
+        }
+      },
+      "evidenceHash": "322ff6ccdcf7ab6dd2bf54767f1edf1a6d87e21f992d12afec8a02623ea9fe3d"
+    },
+    {
+      "id": "fineli-689-release-20-acd5b196",
+      "per100g": {
+        "availableCarbohydrate": 4.8,
+        "protein": 3,
+        "fat": 3.5,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "fineli-689-release-20",
+        "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/689",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "whole cow milk as sold, 3.5% fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.5
+        }
+      },
+      "evidenceHash": "2291952a9cc3a645c92680c4338196d6fa050930f8e532b70309c1e771592058"
+    },
+    {
+      "id": "fineli-858-release-20-ae10a9b7",
+      "per100g": {
+        "availableCarbohydrate": 0.3,
+        "protein": 12.61,
+        "fat": 9.24,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible egg, shell removed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      },
+      "evidenceHash": "762906dbb1f9bdd26cd673df40c988afdcca33ce47943b58213bbf40ca068ad2"
+    },
+    {
+      "id": "fineli-922-release-20-b29dcbd9",
+      "per100g": {
+        "availableCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "evidenceHash": "f950a9f29e3f1ec0b0120a66fb65a52d997e952ec700c8a21d93cdd1d164ec7b"
+    },
+    {
+      "id": "fineli-929-release-20-59dd350d",
+      "per100g": {
+        "availableCarbohydrate": 0.5,
+        "protein": 0,
+        "fat": 0,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "fineli-929-release-20",
+        "name": "VIINIETIKKA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/929",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.5,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.5,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "evidenceHash": "c183876f4d537eed0efbfdcf6f712935d60c4b2806551cfb9b43d0d8b323ca45"
+    },
+    {
+      "id": "koro-konjac-noodles-prepared-2026-10-24-e1bc8475",
+      "per100g": {
+        "availableCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0,
+        "fibre": 2.7
+      },
+      "sourceRecord": {
+        "id": "koro-konjac-noodles-prepared-2026-10-24",
+        "name": "KoRo prepared konjac noodles",
+        "sourceUrl": "https://www.koro.com/fi/detail/3b5494aabff551ca99b988b15da2b5ab",
+        "retrievedAt": "2026-10-24",
+        "licence": "KoRo product-label factual nutrient declaration; product reference only, not an open-database licence",
+        "state": "prepared product; label nutrient values per 100 g prepared noodles",
+        "basis": "per100g-prepared",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Published ingredient declaration lists water, konjac flour and citric acid; no polyol ingredient.",
+        "per100g": {
+          "kcal": 5,
+          "protein": 0,
+          "fat": 0,
+          "carbohydrate": 0,
+          "fibre": 2.7,
+          "sugars": 0,
+          "polyols": 0
+        }
+      },
+      "evidenceHash": "f80552c0bcb3eb8a79cae3dd97a3b1db30cb47cc711b4b0393471f4900355122"
+    }
+  ]
+}
