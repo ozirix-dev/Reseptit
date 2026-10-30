@@ -1,23 +1,19 @@
 {
   "recipeId": "kiinalainen-musta-seesamipuuro",
-  "sourceHash": "3d25535447af59b09518efaf3402fab9097be45b8bd80019e36179ae9e065da4",
-  "calculatedAt": "2026-10-25",
-  "batchId": "batch-16",
+  "sourceHash": "9c368d90f05094a47fbd5eb9500c0571cddd3606b0d4bc7718f805a12cd9f85f",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-81",
   "servings": 2,
-  "scope": "Two servings; 10 g black sesame represented by generic AFCD sesame seed, 100 g dry white rice, 200 ml calcium-fortified soy drink, one tablespoon honey, 700 ml water; salt omitted.",
+  "scope": "Complete weighed candidate; all edible ingredients and listed liquid retained. Raw-input composition proxies and LOW preparation analogues disclosed.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "mustat seesaminsiemenet",
+      "item": "kokonaisia mustia seesaminsiemeniä",
       "amount": 10,
       "unit": "g",
       "state": "generic unsalted sesame seed, black variety not separated in source",
-      "matchEvidence": "AFCD Release 3 record F008214 is unsalted sesame seed; the database does not separate black sesame, so this is the documented close variety proxy.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
       "record": {
         "id": "afcd-F008214-release-3",
         "name": "Seed, sesame, unsalted",
@@ -36,18 +32,18 @@
           "protein": 22.2,
           "fat": 55.6
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
-      "item": "riisi",
+      "item": "kuivaa valkoista jasmiiniriisiä",
       "amount": 100,
       "unit": "g",
       "state": "dry uncooked white long-grain rice",
-      "matchEvidence": "AFCD Release 3 record F007682 is uncooked white long-grain rice; these porridge and bowl recipes measure rice dry.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Specify white jasmine rice simmered as soft hot porridge about 40 min. Published 40min steamed porridge is an explicit LOW cooking analogue, not ordinary boiled grain GI.",
       "record": {
         "id": "afcd-F007682-release-3",
         "name": "Rice, white, uncooked",
@@ -66,20 +62,18 @@
           "protein": 7,
           "fat": 0.9
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "soijamaito",
       "amount": 200,
-      "unit": "ml",
+      "unit": "g",
       "state": "calcium-fortified soy drink as sold",
-      "matchEvidence": "Fineli Release 20 record 30207 is calcium-fortified soy drink; used as the generic unsweetened soy-milk proxy.",
-      "gramsPerUnit": 1,
-      "conversionEvidence": "Soy drink represented at 1 g/ml.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
       "record": {
         "id": "fineli-30207-release-20",
         "name": "SOIJAJUOMA, KALSIUMIA",
@@ -108,20 +102,18 @@
           "protein": 3,
           "fat": 2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "hunaja",
-      "amount": 1,
-      "unit": "rkl",
+      "amount": 20,
+      "unit": "g",
       "state": "honey as sold",
-      "matchEvidence": "AFCD Release 3 record F004380 is honey; its paired available-carbohydrate data support the macro calculation.",
-      "gramsPerUnit": 20,
-      "conversionEvidence": "One tablespoon of honey represented as 20 g, matching the Fineli household portion.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named generic honey mean; not exact jar measurement.",
       "record": {
         "id": "afcd-F004380-release-3",
         "name": "Honey",
@@ -140,20 +132,18 @@
           "protein": 0.3,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "vettä",
       "amount": 700,
-      "unit": "ml",
+      "unit": "g",
       "state": "plain tap water",
-      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
-      "gramsPerUnit": 1,
-      "conversionEvidence": "Water is represented at 1 g/ml.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit zero CHO composition; no assigned GI zero",
       "record": {
         "id": "fineli-922-release-20",
         "name": "VESI, VESIJOHTOVESI",
@@ -182,19 +172,19 @@
           "protein": 0,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "salt omitted; no contribution to displayed macronutrients",
-      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "state": "pure salt",
+      "matchEvidence": "Pure salt has no four-macro contribution",
+      "excludedReason": "Pure salt, sodium not calculated",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -202,7 +192,11 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
     }
   ]
 }
