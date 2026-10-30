@@ -35,5 +35,3 @@ Luottamus LOW, biologista epävarmuusväliä ei tunneta. Tämä ei ole mitattu a
 ## Julkaisuehdot
 
 Omistajan yhteinen menetelmäpäätös, tämän täsmällisen version sisällön hyväksyntä, samat makrot ja versiohashit julkaisuhaarassa sekä kohdennetut sisältö- ja selainkokeet.
-
-
