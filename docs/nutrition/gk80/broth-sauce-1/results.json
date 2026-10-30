@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "calculation": "Declared label value × proposed quantity / 100 / servings; no fibre subtraction; no assumed g/ml; all-consumed proposal",
+  "results": [
+    {
+      "recipeId": "thai-khao-tom-katkaravuilla",
+      "inputHash": "f915e5ba8680b699b1787ff19b68973934143f61019d8a3c303dcabd5a7eff7d",
+      "productLabelContributionPerServing": {
+        "carbohydrate": "0.7",
+        "protein": "10.5",
+        "fat": "0.35",
+        "fibre": "3.85"
+      },
+      "previousResearchTargetCarbohydratePerServing": "1.4945",
+      "nominalLabelMinusPriorAvailableCarbohydrate": "-0.7945",
+      "comparisonWarning": "Different product, proposed measured amount and carbohydrate definitions; this is not a verified change in available carbohydrate.",
+      "unknownGkCoefficient": "0.007",
+      "diagnosticOnly": {
+        "hypotheticalGi50": "0.35",
+        "hypotheticalGi100": "0.7",
+        "hypotheticalGi150": "1.05",
+        "labelBasedGiForOneGk": "142.857142857143",
+        "usesDeclaredCarbohydrateAsIfAllGlycaemic": true,
+        "isMeasuredOrSourceBound": false,
+        "coverageEligible": false
+      },
+      "wholeRecipeGk": null,
+      "numericGkProposal": false
+    },
+    {
+      "recipeId": "thai-riisinuudelikeitto-aamuksi",
+      "inputHash": "36a9bf38f8dfcb0689fde48494252c83786be682ec49435768288bb589208a10",
+      "productLabelContributionPerServing": {
+        "carbohydrate": "0.7",
+        "protein": "10.5",
+        "fat": "0.35",
+        "fibre": "3.85"
+      },
+      "previousResearchTargetCarbohydratePerServing": null,
+      "nominalLabelMinusPriorAvailableCarbohydrate": null,
+      "comparisonWarning": "Different product, proposed measured amount and carbohydrate definitions; this is not a verified change in available carbohydrate.",
+      "unknownGkCoefficient": "0.007",
+      "diagnosticOnly": {
+        "hypotheticalGi50": "0.35",
+        "hypotheticalGi100": "0.7",
+        "hypotheticalGi150": "1.05",
+        "labelBasedGiForOneGk": "142.857142857143",
+        "usesDeclaredCarbohydrateAsIfAllGlycaemic": true,
+        "isMeasuredOrSourceBound": false,
+        "coverageEligible": false
+      },
+      "wholeRecipeGk": null,
+      "numericGkProposal": false
+    },
+    {
+      "recipeId": "bulgogi",
+      "inputHash": "d611b5067054fb3e862d92ed9858a63619579eaa180ae210cc8980a6502235f6",
+      "productLabelContributionPerServing": {
+        "carbohydrate": "0.48",
+        "protein": "1.5",
+        "fat": "0",
+        "fibre": null
+      },
+      "previousResearchTargetCarbohydratePerServing": "1.425",
+      "nominalLabelMinusPriorAvailableCarbohydrate": "-0.945",
+      "comparisonWarning": "Different product, proposed measured amount and carbohydrate definitions; this is not a verified change in available carbohydrate.",
+      "unknownGkCoefficient": "0.0048",
+      "diagnosticOnly": {
+        "hypotheticalGi50": "0.24",
+        "hypotheticalGi100": "0.48",
+        "hypotheticalGi150": "0.72",
+        "labelBasedGiForOneGk": "208.333333333333",
+        "usesDeclaredCarbohydrateAsIfAllGlycaemic": true,
+        "isMeasuredOrSourceBound": false,
+        "coverageEligible": false
+      },
+      "wholeRecipeGk": null,
+      "numericGkProposal": false
+    },
+    {
+      "recipeId": "bun-cha-hanoi",
+      "inputHash": "d1b0bf8e8749f8d89a9dcc3105f4bc1c425fe641a2e882ed1ca66c8f75088632",
+      "productLabelContributionPerServing": {
+        "carbohydrate": "0.945",
+        "protein": "1.89",
+        "fat": "0",
+        "fibre": "0"
+      },
+      "previousResearchTargetCarbohydratePerServing": "1.02",
+      "nominalLabelMinusPriorAvailableCarbohydrate": "-0.075",
+      "comparisonWarning": "Different product, proposed measured amount and carbohydrate definitions; this is not a verified change in available carbohydrate.",
+      "unknownGkCoefficient": "0.00945",
+      "diagnosticOnly": {
+        "hypotheticalGi50": "0.4725",
+        "hypotheticalGi100": "0.945",
+        "hypotheticalGi150": "1.4175",
+        "labelBasedGiForOneGk": "105.820105820106",
+        "usesDeclaredCarbohydrateAsIfAllGlycaemic": true,
+        "isMeasuredOrSourceBound": false,
+        "coverageEligible": false
+      },
+      "wholeRecipeGk": null,
+      "numericGkProposal": false
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "inputHash": "e867b5e07bbc00718c4caf13fa1dfbc09ba290f1abadeb98eb453488d06ccad3",
+      "productLabelContributionPerServing": {
+        "carbohydrate": "0.075",
+        "protein": "1.125",
+        "fat": "0.0375",
+        "fibre": "0.4125"
+      },
+      "previousResearchTargetCarbohydratePerServing": "0.15",
+      "nominalLabelMinusPriorAvailableCarbohydrate": "-0.075",
+      "comparisonWarning": "Different product, proposed measured amount and carbohydrate definitions; this is not a verified change in available carbohydrate.",
+      "unknownGkCoefficient": "0.00075",
+      "diagnosticOnly": {
+        "hypotheticalGi50": "0.0375",
+        "hypotheticalGi100": "0.075",
+        "hypotheticalGi150": "0.1125",
+        "labelBasedGiForOneGk": "1333.333333333333",
+        "usesDeclaredCarbohydrateAsIfAllGlycaemic": true,
+        "isMeasuredOrSourceBound": false,
+        "coverageEligible": false
+      },
+      "wholeRecipeGk": null,
+      "numericGkProposal": false
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "inputHash": "9129dc4e597d622a097c41ebea7e236f3046d680e8d347610ef6e0cc5f1adb2b",
+      "productLabelContributionPerServing": {
+        "carbohydrate": "0.075",
+        "protein": "1.125",
+        "fat": "0.0375",
+        "fibre": "0.4125"
+      },
+      "previousResearchTargetCarbohydratePerServing": "0.15",
+      "nominalLabelMinusPriorAvailableCarbohydrate": "-0.075",
+      "comparisonWarning": "Different product, proposed measured amount and carbohydrate definitions; this is not a verified change in available carbohydrate.",
+      "unknownGkCoefficient": "0.00075",
+      "diagnosticOnly": {
+        "hypotheticalGi50": "0.0375",
+        "hypotheticalGi100": "0.075",
+        "hypotheticalGi150": "0.1125",
+        "labelBasedGiForOneGk": "1333.333333333333",
+        "usesDeclaredCarbohydrateAsIfAllGlycaemic": true,
+        "isMeasuredOrSourceBound": false,
+        "coverageEligible": false
+      },
+      "wholeRecipeGk": null,
+      "numericGkProposal": false
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "inputHash": "863272bcdc367a53660111dc89b209902fe84a921ed6a03966dcdfad9659abd6",
+      "productLabelContributionPerServing": {
+        "carbohydrate": "0.583333333333",
+        "protein": "4.416666666667",
+        "fat": "0.083333333333",
+        "fibre": "0.833333333333"
+      },
+      "previousResearchTargetCarbohydratePerServing": "2.5",
+      "nominalLabelMinusPriorAvailableCarbohydrate": "-1.916666666667",
+      "comparisonWarning": "Different product, proposed measured amount and carbohydrate definitions; this is not a verified change in available carbohydrate.",
+      "unknownGkCoefficient": "0.005833333333",
+      "diagnosticOnly": {
+        "hypotheticalGi50": "0.291666666667",
+        "hypotheticalGi100": "0.583333333333",
+        "hypotheticalGi150": "0.875",
+        "labelBasedGiForOneGk": "171.428571428571",
+        "usesDeclaredCarbohydrateAsIfAllGlycaemic": true,
+        "isMeasuredOrSourceBound": false,
+        "coverageEligible": false
+      },
+      "wholeRecipeGk": null,
+      "numericGkProposal": false
+    },
+    {
+      "recipeId": "paprikainen-vhh-gulassi",
+      "inputHash": "2550e0892185ed0f793a9c036daae3f8e151428bd5e829b2d890eeebc9885d56",
+      "productLabelContributionPerServing": {
+        "carbohydrate": "0.525",
+        "protein": "3.975",
+        "fat": "0.075",
+        "fibre": "0.75"
+      },
+      "previousResearchTargetCarbohydratePerServing": "2.25",
+      "nominalLabelMinusPriorAvailableCarbohydrate": "-1.725",
+      "comparisonWarning": "Different product, proposed measured amount and carbohydrate definitions; this is not a verified change in available carbohydrate.",
+      "unknownGkCoefficient": "0.00525",
+      "diagnosticOnly": {
+        "hypotheticalGi50": "0.2625",
+        "hypotheticalGi100": "0.525",
+        "hypotheticalGi150": "0.7875",
+        "labelBasedGiForOneGk": "190.47619047619",
+        "usesDeclaredCarbohydrateAsIfAllGlycaemic": true,
+        "isMeasuredOrSourceBound": false,
+        "coverageEligible": false
+      },
+      "wholeRecipeGk": null,
+      "numericGkProposal": false
+    }
+  ]
+}

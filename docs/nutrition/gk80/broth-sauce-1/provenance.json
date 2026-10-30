@@ -1,0 +1,124 @@
+{
+  "sourceRepository": "ozirix-dev/Reseptit",
+  "sourceHead": "61a4563a997a5c5aa603df109cea020f89c10d08",
+  "sourcePr": "https://github.com/ozirix-dev/Reseptit/pull/136",
+  "asOf": "2026-10-30",
+  "localFiles": [
+    {
+      "path": "docs/nutrition/gk80/run-2/recipes.json",
+      "sha256": "ea7f9596f3b3001298fd2e666b448edcdfb033659f6f5975a27e697ca093127c"
+    },
+    {
+      "path": "docs/nutrition/gk80/run-2/golden.json",
+      "sha256": "b77f68b2bc3163f1945755cdd24a36a1927fac777140b5abba023eaf6d4f1c7b"
+    },
+    {
+      "path": "docs/nutrition/gk80/run-2/metrics.json",
+      "sha256": "8ed73ae7a8fe1d0707b01d5ca38fa4253f9cf701cae72868b571dc5d19b8bd60"
+    },
+    {
+      "path": "docs/nutrition/gk80/run-2/sources.json",
+      "sha256": "bb03af3a41c2c0b887e1a768788bfaaf1630e5f383a8860074adbe1d3aa9ae84"
+    },
+    {
+      "path": "docs/nutrition/gk80/run-2/composition-sources.json",
+      "sha256": "c607a88074148a8a16bd0bd65aee1378c7d9be16dda63aaa341e22e1304858f7"
+    },
+    {
+      "path": "docs/nutrition/gk80/pilot-1/baseline.json",
+      "sha256": "9cb4c1b10360ab787b213f008267c174ab3dc687f2c77ea4fd3bed20a4aea94a"
+    },
+    {
+      "path": "docs/nutrition/gk80/pilot-1/legacy-results.json",
+      "sha256": "d83027c17dcdc7925a8640fb555578cfb34b45c5b62ffc166d86d54662b78150"
+    },
+    {
+      "path": "site/scripts/gk80-model.ts",
+      "sha256": "2946777837ef8a353290ed4f3e7ba5dadd6156ae896f7ab99cf42d6ad1798761"
+    },
+    {
+      "path": "reseptit/aamupalat/thai-khao-tom-katkaravuilla.md",
+      "sha256": "5765d241c0419394f42c8868fabaf1483fdaa02bb4d31b214960ef5842b4d360"
+    },
+    {
+      "path": "reseptit/aamupalat/thai-riisinuudelikeitto-aamuksi.md",
+      "sha256": "a567e74b33619bac136a42ff3305baacc05455fc5e330ef04477c202419607ac"
+    },
+    {
+      "path": "reseptit/paaruoat/bulgogi.md",
+      "sha256": "c84490ec24ce44ad3f0930dbb242db9017a01431f2d910e0723af526fffc8cc8"
+    },
+    {
+      "path": "reseptit/paaruoat/bun-cha-hanoi.md",
+      "sha256": "c5f2ee00e21ab79683da7f45d6c97a5fc87435b8c7460fc17a2603c46146c16a"
+    },
+    {
+      "path": "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md",
+      "sha256": "e1d5cf315e47cd08c585cbb9b7b75b04fffbe159d4ae36d3be99526b844b0baa"
+    },
+    {
+      "path": "reseptit/paaruoat/kermainen-kanasienipannu.md",
+      "sha256": "f6b6f171feae82846d66325e1ff90866a78f158a9b6d5b36d51b30d7803ba7bf"
+    },
+    {
+      "path": "reseptit/paaruoat/ropa-vieja.md",
+      "sha256": "d0803f871258b512241ad449d728793b48800f8d1af83d84710952fba012bddd"
+    },
+    {
+      "path": "reseptit/paaruoat/paprikainen-vhh-gulassi.md",
+      "sha256": "0c9af581ee1838efba58eb62b2ef8ac3d5b84e792bc4668c5fe27b02c4b50c6c"
+    }
+  ],
+  "externalDocuments": [
+    {
+      "id": "chicken",
+      "url": "https://www.kivikylan.fi/tuotteet/paahdettu-kanaliemi/",
+      "fetchedAt": "2026-10-30T14:48:39.953118+00:00",
+      "sha256": "808da7706220d51886c7bfcd0c4b3492df138c0a18bcdc8e3b4ed0f2baadfe10"
+    },
+    {
+      "id": "beef",
+      "url": "https://www.kivikylan.fi/tuotteet/paahdettu-lihaliemi/",
+      "fetchedAt": "2026-10-30T14:48:41.527592+00:00",
+      "sha256": "352bf5941dba8ba73f2bdfe8919a625cc9b5e9e557de450cf1f8aef2527f438d"
+    },
+    {
+      "id": "fish-dabas",
+      "url": "https://www.dabas.com/productsheet/07311310035280",
+      "fetchedAt": "2026-10-30T14:48:42.593316+00:00",
+      "sha256": "0c64eea37d694ec5ffc97e70337abcf87a01653ef0ca1e724b821d2bdb4503f1"
+    },
+    {
+      "id": "foodstudio-products-fi",
+      "url": "https://foodstudio.eu/fi/product_category/liemet/",
+      "fetchedAt": "2026-10-30T14:48:43.223223+00:00",
+      "sha256": "42db15b9fcee3975c90c535870f285dbc2144bc6e2593586022e680f99c1806f"
+    },
+    {
+      "id": "foodstudio-products-en",
+      "url": "https://foodstudio.eu/product_category/broths-2/",
+      "fetchedAt": "2026-10-30T14:48:44.370640+00:00",
+      "sha256": "7fe004d38c82a7875d71f467cdfcaeec359f7560509a78c56cc4f99fde8997f5"
+    },
+    {
+      "id": "kombucha",
+      "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2023.1036717/full",
+      "fetchedAt": "2026-10-30T14:48:46.966317+00:00",
+      "sha256": "a2f0c9cc1e1bb0a67464ff01245307688c9604eaf96ef8df3c7046e68405f770"
+    },
+    {
+      "id": "kikkoman",
+      "url": "https://www.kikkoman.fi/ammattikeittioet/tuotteet/detail/kikkoman-luonnollisesti-valmistettu-soijakastike",
+      "fetchedDate": "2026-10-30",
+      "sha256": "1daec269b19bdff487413fa10053c545e0df2d54f4caed87655fde2e0c231a5b"
+    },
+    {
+      "id": "santa-fish",
+      "url": "https://www.santamariaworld.com/fi/tuotteet/fish-sauce/",
+      "fetchedDate": "2026-10-30",
+      "sha256": "64fe37ff52a0bb12f756b2985a1842d6ec471473aad52f6a9c62985665cf0d25"
+    }
+  ],
+  "externalArchiveNote": "Original downloaded HTML is retained in task scratch, not copyrighted full-page copies in the repo. SHA pins the fetched bytes; live HTML may change. Product facts are frozen separately with canonical hashes.",
+  "originalProtocolsRead": false
+}

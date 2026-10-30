@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "batch": "broth-sauce-1",
+  "scope": "Eight existing run-2 recipes; product contributions only",
+  "recipes": [
+    {
+      "recipeId": "thai-khao-tom-katkaravuilla",
+      "title": "Khao tom katkaravuilla",
+      "sourcePath": "reseptit/aamupalat/thai-khao-tom-katkaravuilla.md",
+      "sourceSha256": "5765d241c0419394f42c8868fabaf1483fdaa02bb4d31b214960ef5842b4d360",
+      "servings": "2",
+      "inputRecipeVersion": "61a4563a997a5c5aa603df109cea020f89c10d08",
+      "productBindings": [
+        {
+          "ingredientIndex": 4,
+          "originalName": "laimennettua kanalientä",
+          "originalQuantity": {
+            "amount": 700,
+            "unit": "ml",
+            "gramsPerUnit": 1,
+            "conversionEvidence": "Fineli record 30315 lists 100 g per decilitre, equivalent to 1 g/ml.",
+            "edibleFraction": 1,
+            "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat"
+          },
+          "previousResearchIngredientHash": "853c1b5885726960770addae841552feaca502cec146052696ab44dc45079a55",
+          "previousResearchCarbohydratePerServing": "1.4945",
+          "productId": "chicken",
+          "productEvidenceHash": "0bf62bf8c72b500b4065e6d5edca16965b33319938d994a9a92a575d8db6e051",
+          "amount": "700",
+          "unit": "g",
+          "quantityStatus": "PROPOSED_WEIGHED_AMOUNT_NOT_VERIFIED_VOLUME_CONVERSION",
+          "consumedFraction": "1",
+          "consumedFractionEvidence": "EXPLICIT_PROPOSED_ALL_CONSUMED_SCENARIO_NOT_MEASURED",
+          "consumedFractionCurrentRecipe": "not-measured"
+        }
+      ],
+      "proposedRecipeChanges": [
+        "Korvaa liemirivi punnitulla määrällä 700 g Kivikylän Sooci Paahdettua kanalientä, EAN 6406300045026. Käytä käyttövalmista lientä sellaisenaan; ei kuutiota, tiivistettä eikä uudelleen laimennusta.",
+        "Määrä on grammoina määritelty reseptitäsmennys, ei väite aiemman 700 ml rivin täsmällisestä massasta.",
+        "Tarjoa koko liemi/kastike tasan reseptin annoksiin. Haihtuvaa vettä korvataan tarvittaessa vedellä; ylimääräistä lientä ei lisätä kirjaamatta sitä. Muut ainekset jäävät nykyiseen tutkimusversioon."
+      ],
+      "remainingBlockers": [
+        "Riisin tarkka puuromainen valmistusskenaario ja sovellettava GI on vielä sidottava; valkosipulin/inkiväärin julkaistu kasvisoletus vaatii erillisen menetelmäpäätöksen.",
+        "Tuotteen soveltuva GI tai lähteistetty vaikutusmalli puuttuu. Pakkaus-CHO:n polyolien erottelua ja pyöristystä ei ole varmennettu."
+      ],
+      "reviewState": "PRODUCT_BINDING_READY_FOR_BATCH_REVIEW",
+      "wholeRecipeGk": null,
+      "numericGkProposal": false,
+      "evidenceHash": "f915e5ba8680b699b1787ff19b68973934143f61019d8a3c303dcabd5a7eff7d"
+    },
+    {
+      "recipeId": "thai-riisinuudelikeitto-aamuksi",
+      "title": "Thaimaalainen riisinuudelikeitto aamuksi",
+      "sourcePath": "reseptit/aamupalat/thai-riisinuudelikeitto-aamuksi.md",
+      "sourceSha256": "a567e74b33619bac136a42ff3305baacc05455fc5e330ef04477c202419607ac",
+      "servings": "2",
+      "inputRecipeVersion": "61a4563a997a5c5aa603df109cea020f89c10d08",
+      "productBindings": [
+        {
+          "ingredientIndex": 4,
+          "originalName": "kasvis- tai kanaliemi",
+          "originalQuantity": {
+            "proposedWeighedEdibleMassG": 700,
+            "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+          },
+          "previousResearchIngredientHash": "030405e3d4f720854dbdf2b7771ebf6ca079be9f0975bb7c4f07b24cf0988ea2",
+          "previousResearchCarbohydratePerServing": null,
+          "productId": "chicken",
+          "productEvidenceHash": "0bf62bf8c72b500b4065e6d5edca16965b33319938d994a9a92a575d8db6e051",
+          "amount": "700",
+          "unit": "g",
+          "quantityStatus": "PROPOSED_WEIGHED_AMOUNT_NOT_VERIFIED_VOLUME_CONVERSION",
+          "consumedFraction": "1",
+          "consumedFractionEvidence": "EXPLICIT_PROPOSED_ALL_CONSUMED_SCENARIO_NOT_MEASURED",
+          "consumedFractionCurrentRecipe": "not-measured"
+        }
+      ],
+      "proposedRecipeChanges": [
+        "Korvaa liemirivi punnitulla määrällä 700 g Kivikylän Sooci Paahdettua kanalientä, EAN 6406300045026. Käytä käyttövalmista lientä sellaisenaan; ei kuutiota, tiivistettä eikä uudelleen laimennusta.",
+        "Määrä on grammoina määritelty reseptitäsmennys, ei väite aiemman 700 ml rivin täsmällisestä massasta.",
+        "Tarjoa koko liemi/kastike tasan reseptin annoksiin. Haihtuvaa vettä korvataan tarvittaessa vedellä; ylimääräistä lientä ei lisätä kirjaamatta sitä. Muut ainekset jäävät nykyiseen tutkimusversioon."
+      ],
+      "remainingBlockers": [
+        "Valitaan kanaliemi eikä kasvisliemivaihtoehtoa. Limetin syötävä mehumassa ja koostumus sekä epämääräiset aromi-, öljy-, lehtivihannes- ja chilivaiheet jäävät täsmennettäviksi.",
+        "Tuotteen soveltuva GI tai lähteistetty vaikutusmalli puuttuu. Pakkaus-CHO:n polyolien erottelua ja pyöristystä ei ole varmennettu."
+      ],
+      "reviewState": "PRODUCT_BINDING_READY_FOR_BATCH_REVIEW",
+      "wholeRecipeGk": null,
+      "numericGkProposal": false,
+      "evidenceHash": "36a9bf38f8dfcb0689fde48494252c83786be682ec49435768288bb589208a10"
+    },
+    {
+      "recipeId": "bulgogi",
+      "title": "Korealainen bulgogi",
+      "sourcePath": "reseptit/paaruoat/bulgogi.md",
+      "sourceSha256": "c84490ec24ce44ad3f0930dbb242db9017a01431f2d910e0723af526fffc8cc8",
+      "servings": "4",
+      "inputRecipeVersion": "61a4563a997a5c5aa603df109cea020f89c10d08",
+      "productBindings": [
+        {
+          "ingredientIndex": 2,
+          "originalName": "soijakastiketta",
+          "originalQuantity": {
+            "amount": 60,
+            "unit": "ml",
+            "gramsPerUnit": 1,
+            "conversionEvidence": "Ingredient-specific volume mass: 1 g/ml for soijakastiketta.",
+            "edibleFraction": 1,
+            "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat"
+          },
+          "previousResearchIngredientHash": "32db1716e991dd3602dba2fd9f0fc347a0c56f5744de91a15cd8169c689d0374",
+          "previousResearchCarbohydratePerServing": "1.425",
+          "productId": "soy",
+          "productEvidenceHash": "f101739c6e47f14ad097a79d4f0f769b8e884670f782aa6b2d0dc26d9f1115f2",
+          "amount": "60",
+          "unit": "ml",
+          "quantityStatus": "UNCHANGED_VOLUME",
+          "consumedFraction": "1",
+          "consumedFractionEvidence": "EXPLICIT_PROPOSED_ALL_CONSUMED_SCENARIO_NOT_MEASURED",
+          "consumedFractionCurrentRecipe": null
+        }
+      ],
+      "proposedRecipeChanges": [
+        "Käytä 60 ml tavallista Kikkoman luonnollisesti valmistettua soijakastiketta. Tämän lähteen CHO on 3,2 g/100 ml. Älä vaihda tamariin, vähäsuolaiseen, makeaan tai teollisuuden standard-tuotteeseen samalla laskelmalla.",
+        "Rajattu pannuskenaario: kaikki marinadi kypsennetään ja jaetaan ruoan mukana neljään annokseen. Tämä on uusi ohjetäsmennys; nykyisen paisto-ohjeen todellista marinadihävikkiä ei ole mitattu."
+      ],
+      "remainingBlockers": [
+        "Soijakastikkeen GI, seesamin ja pippurin vaikutus sekä koko reseptin valmistusvastaavuus jäävät avoimiksi. Kikkomanin kuitutieto puuttuu.",
+        "Tuotteen soveltuva GI tai lähteistetty vaikutusmalli puuttuu. Pakkaus-CHO:n polyolien erottelua ja pyöristystä ei ole varmennettu."
+      ],
+      "reviewState": "PRODUCT_BINDING_READY_FOR_BATCH_REVIEW",
+      "wholeRecipeGk": null,
+      "numericGkProposal": false,
+      "evidenceHash": "d611b5067054fb3e862d92ed9858a63619579eaa180ae210cc8980a6502235f6"
+    },
+    {
+      "recipeId": "bun-cha-hanoi",
+      "title": "Hanoilainen bún chả",
+      "sourcePath": "reseptit/paaruoat/bun-cha-hanoi.md",
+      "sourceSha256": "c5f2ee00e21ab79683da7f45d6c97a5fc87435b8c7460fc17a2603c46146c16a",
+      "servings": "4",
+      "inputRecipeVersion": "61a4563a997a5c5aa603df109cea020f89c10d08",
+      "productBindings": [
+        {
+          "ingredientIndex": 3,
+          "originalName": "kalakastiketta",
+          "originalQuantity": {
+            "amount": 3,
+            "unit": "rkl",
+            "gramsPerUnit": 18,
+            "conversionEvidence": "1 tbsp fish sauce = 18 g.",
+            "edibleFraction": 1,
+            "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat"
+          },
+          "previousResearchIngredientHash": "c43fd21d72af8f87833c58cedb1c7218ddd87f8efc9ef1d88657a4a5b65f5462",
+          "previousResearchCarbohydratePerServing": "0.459",
+          "productId": "fish",
+          "productEvidenceHash": "0eb7e712c10977b9608e2b4aa18e39f35000b36d02f6bb7f24602df1fb3370b0",
+          "amount": "54",
+          "unit": "g",
+          "quantityStatus": "PROPOSED_WEIGHED_AMOUNT_NOT_VERIFIED_VOLUME_CONVERSION",
+          "consumedFraction": "1",
+          "consumedFractionEvidence": "EXPLICIT_PROPOSED_ALL_CONSUMED_SCENARIO_NOT_MEASURED",
+          "consumedFractionCurrentRecipe": null
+        },
+        {
+          "ingredientIndex": 8,
+          "originalName": "kalakastiketta",
+          "originalQuantity": {
+            "amount": 60,
+            "unit": "ml",
+            "gramsPerUnit": 1.1,
+            "conversionEvidence": "Fish sauce density is represented as 1.1 g/ml.",
+            "edibleFraction": 1,
+            "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat"
+          },
+          "previousResearchIngredientHash": "9d246b42c5339b1e9bd597389bf1badb3b13b192ddca1cc645c6e916fcc99c94",
+          "previousResearchCarbohydratePerServing": "0.561",
+          "productId": "fish",
+          "productEvidenceHash": "0eb7e712c10977b9608e2b4aa18e39f35000b36d02f6bb7f24602df1fb3370b0",
+          "amount": "72",
+          "unit": "g",
+          "quantityStatus": "PROPOSED_WEIGHED_AMOUNT_NOT_VERIFIED_VOLUME_CONVERSION",
+          "consumedFraction": "1",
+          "consumedFractionEvidence": "EXPLICIT_PROPOSED_ALL_CONSUMED_SCENARIO_NOT_MEASURED",
+          "consumedFractionCurrentRecipe": null
+        }
+      ],
+      "proposedRecipeChanges": [
+        "Käytä Santa Maria Fish Sauce -kalakastiketta, EAN 7311310035280: punnitse 54 g lihamarinadiin ja 72 g dippiin. Korvaa tilavuusmitat näillä punnituilla määrillä.",
+        "Lihamarinadi jakautuu 27 g jauhelihaan ja 27 g vatsaviipaleisiin. Dippiosuus jaetaan neljään annokseen, 18 g kalakastiketta kussakin.",
+        "Suljettu pannuskenaario edellyttää koko marinadin kypsentämistä ja syömistä sekä kaiken dippiliemen syömistä. Nykyiselle grilli-/dippiversiolle ei oleteta 100 % pidättymistä. Tämä laskelma ei ole sen todellinen syöty määrä."
+      ],
+      "remainingBlockers": [
+        "Kalakastikkeen GI, pippurin massa ja GI sekä grillauksessa hukkuva marinadi ja syömättä jäävä dippi eivät ratkea pelkästä tuotteen koostumuksesta.",
+        "Tuotteen soveltuva GI tai lähteistetty vaikutusmalli puuttuu. Pakkaus-CHO:n polyolien erottelua ja pyöristystä ei ole varmennettu."
+      ],
+      "reviewState": "PRODUCT_BINDING_READY_FOR_BATCH_REVIEW",
+      "wholeRecipeGk": null,
+      "numericGkProposal": false,
+      "evidenceHash": "d1b0bf8e8749f8d89a9dcc3105f4bc1c425fe641a2e882ed1ca66c8f75088632"
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "title": "Parmesaaninen kanapannu parsakaalilla",
+      "sourcePath": "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md",
+      "sourceSha256": "e1d5cf315e47cd08c585cbb9b7b75b04fffbe159d4ae36d3be99526b844b0baa",
+      "servings": "4",
+      "inputRecipeVersion": "61a4563a997a5c5aa603df109cea020f89c10d08",
+      "productBindings": [
+        {
+          "ingredientIndex": 4,
+          "originalName": "kanalientä",
+          "originalQuantity": {
+            "amount": 150,
+            "unit": "ml",
+            "gramsPerUnit": 1,
+            "conversionEvidence": "Ingredient-specific volume mass: 1 g/ml for kanalientä.",
+            "edibleFraction": 1,
+            "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat"
+          },
+          "previousResearchIngredientHash": "ae7bf763c662e2b534185940ed66ab907442b58a973aeb713f8622769e33076d",
+          "previousResearchCarbohydratePerServing": "0.15",
+          "productId": "chicken",
+          "productEvidenceHash": "0bf62bf8c72b500b4065e6d5edca16965b33319938d994a9a92a575d8db6e051",
+          "amount": "150",
+          "unit": "g",
+          "quantityStatus": "PROPOSED_WEIGHED_AMOUNT_NOT_VERIFIED_VOLUME_CONVERSION",
+          "consumedFraction": "1",
+          "consumedFractionEvidence": "EXPLICIT_PROPOSED_ALL_CONSUMED_SCENARIO_NOT_MEASURED",
+          "consumedFractionCurrentRecipe": "not-measured"
+        }
+      ],
+      "proposedRecipeChanges": [
+        "Korvaa liemirivi punnitulla määrällä 150 g Kivikylän Sooci Paahdettua kanalientä, EAN 6406300045026. Käytä käyttövalmista lientä sellaisenaan; ei kuutiota, tiivistettä eikä uudelleen laimennusta.",
+        "Määrä on grammoina määritelty reseptitäsmennys, ei väite aiemman 150 ml rivin täsmällisestä massasta.",
+        "Tarjoa koko liemi/kastike tasan reseptin annoksiin. Haihtuvaa vettä korvataan tarvittaessa vedellä; ylimääräistä lientä ei lisätä kirjaamatta sitä. Muut ainekset jäävät nykyiseen tutkimusversioon."
+      ],
+      "remainingBlockers": [
+        "Pippurin massa/GI, parsakaalin ja valkosipulin kasvisoletus sekä kerman/voin maitoanalogia tarvitsevat ratkaisut. Lisäliemen määrää ei voi jättää avoimeksi.",
+        "Tuotteen soveltuva GI tai lähteistetty vaikutusmalli puuttuu. Pakkaus-CHO:n polyolien erottelua ja pyöristystä ei ole varmennettu."
+      ],
+      "reviewState": "PRODUCT_BINDING_READY_FOR_BATCH_REVIEW",
+      "wholeRecipeGk": null,
+      "numericGkProposal": false,
+      "evidenceHash": "e867b5e07bbc00718c4caf13fa1dfbc09ba290f1abadeb98eb453488d06ccad3"
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "title": "Kermainen kanasienipannu",
+      "sourcePath": "reseptit/paaruoat/kermainen-kanasienipannu.md",
+      "sourceSha256": "f6b6f171feae82846d66325e1ff90866a78f158a9b6d5b36d51b30d7803ba7bf",
+      "servings": "4",
+      "inputRecipeVersion": "61a4563a997a5c5aa603df109cea020f89c10d08",
+      "productBindings": [
+        {
+          "ingredientIndex": 4,
+          "originalName": "kanalientä",
+          "originalQuantity": {
+            "amount": 150,
+            "unit": "ml",
+            "gramsPerUnit": 1,
+            "conversionEvidence": "Ingredient-specific volume mass: 1 g/ml for kanalientä.",
+            "edibleFraction": 1,
+            "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat"
+          },
+          "previousResearchIngredientHash": "ae7bf763c662e2b534185940ed66ab907442b58a973aeb713f8622769e33076d",
+          "previousResearchCarbohydratePerServing": "0.15",
+          "productId": "chicken",
+          "productEvidenceHash": "0bf62bf8c72b500b4065e6d5edca16965b33319938d994a9a92a575d8db6e051",
+          "amount": "150",
+          "unit": "g",
+          "quantityStatus": "PROPOSED_WEIGHED_AMOUNT_NOT_VERIFIED_VOLUME_CONVERSION",
+          "consumedFraction": "1",
+          "consumedFractionEvidence": "EXPLICIT_PROPOSED_ALL_CONSUMED_SCENARIO_NOT_MEASURED",
+          "consumedFractionCurrentRecipe": "not-measured"
+        }
+      ],
+      "proposedRecipeChanges": [
+        "Korvaa liemirivi punnitulla määrällä 150 g Kivikylän Sooci Paahdettua kanalientä, EAN 6406300045026. Käytä käyttövalmista lientä sellaisenaan; ei kuutiota, tiivistettä eikä uudelleen laimennusta.",
+        "Määrä on grammoina määritelty reseptitäsmennys, ei väite aiemman 150 ml rivin täsmällisestä massasta.",
+        "Tarjoa koko liemi/kastike tasan reseptin annoksiin. Haihtuvaa vettä korvataan tarvittaessa vedellä; ylimääräistä lientä ei lisätä kirjaamatta sitä. Muut ainekset jäävät nykyiseen tutkimusversioon."
+      ],
+      "remainingBlockers": [
+        "Dijon-tuote, timjamin/pippurin määrä ja GI sekä sienten ja maitotuotteiden sovellettavuus jäävät avoimiksi. Sienen polyoleja ei vähennetä AFCD-arvosta toista kertaa.",
+        "Tuotteen soveltuva GI tai lähteistetty vaikutusmalli puuttuu. Pakkaus-CHO:n polyolien erottelua ja pyöristystä ei ole varmennettu."
+      ],
+      "reviewState": "PRODUCT_BINDING_READY_FOR_BATCH_REVIEW",
+      "wholeRecipeGk": null,
+      "numericGkProposal": false,
+      "evidenceHash": "9129dc4e597d622a097c41ebea7e236f3046d680e8d347610ef6e0cc5f1adb2b"
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "title": "Kuubalainen ropa vieja",
+      "sourcePath": "reseptit/paaruoat/ropa-vieja.md",
+      "sourceSha256": "d0803f871258b512241ad449d728793b48800f8d1af83d84710952fba012bddd",
+      "servings": "6",
+      "inputRecipeVersion": "61a4563a997a5c5aa603df109cea020f89c10d08",
+      "productBindings": [
+        {
+          "ingredientIndex": 5,
+          "originalName": "lihalientä",
+          "originalQuantity": {
+            "amount": 500,
+            "unit": "ml",
+            "gramsPerUnit": 1,
+            "conversionEvidence": "Ingredient-specific household measure conversion: 1 g per ml; recipe quantity converted to edible mass.",
+            "edibleFraction": 1,
+            "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat"
+          },
+          "previousResearchIngredientHash": "f48dfa8b2ef7211c8b122ed72e7ba407084389b808eb38d831a7dfc355ff1383",
+          "previousResearchCarbohydratePerServing": "2.5",
+          "productId": "beef",
+          "productEvidenceHash": "46784cd03622268a96f01c180d350e291a88fe0e91b20ba70239586381dd74d2",
+          "amount": "500",
+          "unit": "g",
+          "quantityStatus": "PROPOSED_WEIGHED_AMOUNT_NOT_VERIFIED_VOLUME_CONVERSION",
+          "consumedFraction": "1",
+          "consumedFractionEvidence": "EXPLICIT_PROPOSED_ALL_CONSUMED_SCENARIO_NOT_MEASURED",
+          "consumedFractionCurrentRecipe": "not-measured"
+        }
+      ],
+      "proposedRecipeChanges": [
+        "Korvaa liemirivi punnitulla määrällä 500 g Kivikylän Sooci Paahdettua lihalientä, EAN 6406300045002. Käyttövalmis tuote, ei laimennusta.",
+        "Tämä määrittelee uuden grammoina punnitun version. Tilavuuden tiheyttä ei oleteta. Kaikki padan kastike jaetaan annoksiin; mahdollinen nesteen lisäys on pelkkää vettä."
+      ],
+      "remainingBlockers": [
+        "Laakerin uuttuminen, mausteiden GI sekä riisi-/papulisukkeen rajaus jäävät avoimiksi. Laskentakohde on kuudesosa pataa; määrittelemätöntä lisuketta ei lasketa mukaan eikä kutsuta kokonaiseksi ateriaksi.",
+        "Tuotteen soveltuva GI tai lähteistetty vaikutusmalli puuttuu. Pakkaus-CHO:n polyolien erottelua ja pyöristystä ei ole varmennettu."
+      ],
+      "reviewState": "PRODUCT_BINDING_READY_FOR_BATCH_REVIEW",
+      "wholeRecipeGk": null,
+      "numericGkProposal": false,
+      "evidenceHash": "863272bcdc367a53660111dc89b209902fe84a921ed6a03966dcdfad9659abd6"
+    },
+    {
+      "recipeId": "paprikainen-vhh-gulassi",
+      "title": "Paprikainen VHH-gulassi",
+      "sourcePath": "reseptit/paaruoat/paprikainen-vhh-gulassi.md",
+      "sourceSha256": "0c9af581ee1838efba58eb62b2ef8ac3d5b84e792bc4668c5fe27b02c4b50c6c",
+      "servings": "4",
+      "inputRecipeVersion": "61a4563a997a5c5aa603df109cea020f89c10d08",
+      "productBindings": [
+        {
+          "ingredientIndex": 9,
+          "originalName": "lihalientä",
+          "originalQuantity": {
+            "amount": 3,
+            "unit": "dl",
+            "gramsPerUnit": 100,
+            "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per dl; recipe quantity converted to edible mass.",
+            "edibleFraction": 1,
+            "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat"
+          },
+          "previousResearchIngredientHash": "0f5d683734ad4fe440ad63dc9113101cad5d7d64e27ad595e86a396bedc7a02e",
+          "previousResearchCarbohydratePerServing": "2.25",
+          "productId": "beef",
+          "productEvidenceHash": "46784cd03622268a96f01c180d350e291a88fe0e91b20ba70239586381dd74d2",
+          "amount": "300",
+          "unit": "g",
+          "quantityStatus": "PROPOSED_WEIGHED_AMOUNT_NOT_VERIFIED_VOLUME_CONVERSION",
+          "consumedFraction": "1",
+          "consumedFractionEvidence": "EXPLICIT_PROPOSED_ALL_CONSUMED_SCENARIO_NOT_MEASURED",
+          "consumedFractionCurrentRecipe": "not-measured"
+        }
+      ],
+      "proposedRecipeChanges": [
+        "Korvaa liemirivi punnitulla määrällä 300 g Kivikylän Sooci Paahdettua lihalientä, EAN 6406300045002. Käyttövalmis tuote, ei laimennusta.",
+        "Tämä määrittelee uuden grammoina punnitun version. Tilavuuden tiheyttä ei oleteta. Kaikki padan kastike jaetaan annoksiin; mahdollinen nesteen lisäys on pelkkää vettä."
+      ],
+      "remainingBlockers": [
+        "Paprikajauheen, kuminan, pippurin ja persiljan määrät/GI sekä voi-/öljyvaihtoehto ja smetana tarvitsevat yhdenmukaisen kokonaisversion. Lisuke on erikseen määriteltävä.",
+        "Tuotteen soveltuva GI tai lähteistetty vaikutusmalli puuttuu. Pakkaus-CHO:n polyolien erottelua ja pyöristystä ei ole varmennettu."
+      ],
+      "reviewState": "PRODUCT_BINDING_READY_FOR_BATCH_REVIEW",
+      "wholeRecipeGk": null,
+      "numericGkProposal": false,
+      "evidenceHash": "2550e0892185ed0f793a9c036daae3f8e151428bd5e829b2d890eeebc9885d56"
+    }
+  ]
+}

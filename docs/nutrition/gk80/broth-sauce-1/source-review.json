@@ -1,0 +1,97 @@
+{
+  "asOf": "2026-10-30",
+  "decision": "No applicable product GI established; keep complete GK unavailable. Product contribution analysis is ready for batch review.",
+  "searches": [
+    {
+      "source": "Atkinson 2021 original supplements, tables 1 and 2",
+      "url": "https://doi.org/10.1093/ajcn/nqab233",
+      "terms": [
+        "soy sauce",
+        "fish sauce",
+        "chicken broth",
+        "beef broth",
+        "chicken stock",
+        "beef stock",
+        "bouillon",
+        "consomme"
+      ],
+      "finding": "No direct selected product record found. One soy-sauce hit is rice with raw egg and 2 g soy sauce; a mixed meal is not the sauce GI.",
+      "files": [
+        {
+          "name": "atkinson2021-table1.txt",
+          "sha256": "6b524d791d7ba91d1f1eeb3b7d74f8a2f0338d15e49bbca0f0a7e2e581169691"
+        },
+        {
+          "name": "atkinson2021-table2.txt",
+          "sha256": "43c093299823c053baefc3914a2e621c12fd0e15c03e5d67a10ca43e346d53b1"
+        }
+      ]
+    },
+    {
+      "source": "University of Sydney public GI search",
+      "url": "https://glycemicindex.com/gi-search/",
+      "accessed": "2026-10-30",
+      "terms": [
+        "fish sauce",
+        "soy sauce",
+        "broth"
+      ],
+      "finding": "No fish-sauce match. Soy sauce appears in a rice/egg meal. Broth matches are noodle meals or legume broths, not these stocks. This bounded search does not prove no study exists anywhere."
+    },
+    {
+      "source": "Atkinson et al. 2023 randomised crossover trial",
+      "url": "https://doi.org/10.3389/fnut.2023.1036717",
+      "sourceReceipt": {
+        "id": "kombucha",
+        "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2023.1036717/full",
+        "fetchedAt": "2026-10-30T14:48:46.966317+00:00",
+        "sha256": "a2f0c9cc1e1bb0a67464ff01245307688c9604eaf96ef8df3c7046e68405f770"
+      },
+      "finding": "11 healthy adults; meal includes rice, peas and 10 g Kikkoman plus test drink. The meal GI cannot be assigned to Kikkoman alone."
+    }
+  ],
+  "rejectedShortcuts": [
+    "A sugar line equal to the carbohydrate line is not proof that all sugars are sucrose.",
+    "A fermented sauce is not nutritionally equivalent to the unfermented soybean or wheat.",
+    "The vegetable GI-40 imputation was not extended to filtered broth or fermented sauce without an applicability decision.",
+    "Generic web GI 0/25/50/57.6 without a corresponding primary food test was not adopted.",
+    "No hypothetical GI including 100 or 150 is a physiological maximum."
+  ],
+  "alternativeProducts": [
+    {
+      "product": "FoodStudio FI 500 ml broths",
+      "primaryUrl": "https://foodstudio.eu/fi/product_category/liemet/",
+      "fiDeclaredChoPer100ml": {
+        "chicken": "0.7",
+        "beef": "1.2"
+      },
+      "englishUrl": "https://foodstudio.eu/product_category/broths-2/",
+      "englishDeclaredChoPer100ml": {
+        "chicken": "<0.3",
+        "beef": "<0.3"
+      },
+      "decision": "Not selected: ingredient/market/version differences and Finnish retailer conflict prevent mixing these records. No claim that the FI page is necessarily the current physical pack."
+    },
+    {
+      "product": "Bong Touch of Taste concentrates",
+      "url": "https://www.bongtouchoftaste.fi/tuotteet/kanafondi",
+      "decision": "Not selected: concentrate mass basis versus volume dilution adds an avoidable quantity dependency."
+    },
+    {
+      "product": "Kikkoman industrial standard",
+      "url": "https://www.kikkoman.fi/teollisuus/nestemaeinen-soijakastike/soijakastike-vakiotuote",
+      "decision": "Different 20 l industrial record (CHO 1.16 g/100 ml), not substituted for the selected ordinary 3.2 g/100 ml sauce."
+    },
+    {
+      "product": "Red Boat 40N",
+      "url": "https://redboatfishsauce.com/products/fish-sauce-40n",
+      "decision": "No-added-sugar or zero label is not analytical proof of zero carbohydrate; not selected as a GI-zero shortcut."
+    }
+  ],
+  "labelDefinitionSource": {
+    "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/fin?locale=fi",
+    "location": "Annex I carbohydrate/sugars/fibre definitions",
+    "decision": "Preserve declared EU carbohydrate separately from the prototype definition excluding polyols. Missing fibre is not zero; zero labels and equality of rounded values are not exact chemical identities."
+  },
+  "approvalScope": "Whole batch review of four product references, eight recipe binding proposals and consumption assumptions. It does not approve an overall GK, earlier run-2 imputation, production changes or publication."
+}
