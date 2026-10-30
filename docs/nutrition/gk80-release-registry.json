@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "requiredPacks": [
+    {
+      "folder": "gk80-release-1",
+      "version": 1,
+      "recipeIds": [
+        "vietnamilainen-hu-tieu-aamiaiskeitto",
+        "vietnamilainen-chao-ga-kanapuuro",
+        "indonesialainen-bubur-ayam-kanariisipuuro",
+        "pohjoisafrikkalainen-minttutee-kaurapuuro"
+      ],
+      "sha256": {
+        "manifest.json": "1b70a339dd5e7fe14d369c4eb01c33ef60f4bddb6654b056e3bf8a790f90e83f",
+        "recipes.json": "7622f57323f61fe0f2304a73eb0c40adc6139b7504f354f9c2d9a9921ee9247f",
+        "sources.json": "bbdf53f8f64d8d966ecd2cc5ddeec4d3b90ffc8158298d09b2b40e52e7ca96ce",
+        "composition-sources.json": "600c935bf42a74fb9754a18030bc68ac9372be5365bca19642f157a82ca9cea9",
+        "golden.json": "e3d3bdff7371ea597ec793e2b170ffbf89566e5053fc0ba21f80bbf68fbd9b32"
+      }
+    },
+    {
+      "folder": "gk80-release-2",
+      "version": 1,
+      "recipeIds": [
+        "meksikolainen-huevos-a-la-mexicana",
+        "karibia-callaloo-munakas",
+        "yrttituorejuusto-kinkkurullat",
+        "kreikkalainen-kanavuoka-oliiveilla",
+        "kanapyorykat-tomaattikastike",
+        "malesialainen-nasi-lemak-aamiaisella",
+        "kiinalainen-musta-seesamipuuro",
+        "harira"
+      ],
+      "sha256": {
+        "manifest.json": "931340cad09e8489ab22ccb5754bb72f635a47519ee6ad3c1ec0233bfcaa9150",
+        "recipes.json": "2a6b6e96a45f2773f929060bb5f78aeea96ed710ff306dc0c7064c6c8cf921c3",
+        "sources.json": "6f76bd1e5d7ff7cb140ad053d84611eacae46659c31fa96d29437141fb2dc4cb",
+        "composition-sources.json": "8ce1213c51fcd518adebab0454c998b954405ac6528a9b7f8abf4f74b127387e",
+        "golden.json": "e460c7754833adbf7672bd1070910be85b98cd0dd342e526f590abdae0ac808d"
+      }
+    }
+  ]
+}
