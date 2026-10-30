@@ -1,0 +1,81 @@
+{
+  "recipes": [
+    {
+      "recipeId": "munakokkeli",
+      "unrounded": 0,
+      "positiveAvailableCarbohydratePerServing": 1.146550000667572,
+      "omittedAvailableCarbohydratePerServing": 1.146550000667572,
+      "classification": "OMITTED_POSITIVE_CHO_ZERO",
+      "correctionPriority": "Q09; preserve current result in integration regression; rebuild full source/food bindings before replacing"
+    },
+    {
+      "recipeId": "munakasmuffinit",
+      "unrounded": 0,
+      "positiveAvailableCarbohydratePerServing": 0.8083333335816859,
+      "omittedAvailableCarbohydratePerServing": 0.8083333335816859,
+      "classification": "OMITTED_POSITIVE_CHO_ZERO",
+      "correctionPriority": "Q09; preserve current result in integration regression; rebuild full source/food bindings before replacing"
+    },
+    {
+      "recipeId": "uunimuna-avokadot",
+      "unrounded": 0,
+      "positiveAvailableCarbohydratePerServing": 1.455549981594086,
+      "omittedAvailableCarbohydratePerServing": 1.455549981594086,
+      "classification": "OMITTED_POSITIVE_CHO_ZERO",
+      "correctionPriority": "Q09; preserve current result in integration regression; rebuild full source/food bindings before replacing"
+    },
+    {
+      "recipeId": "uunimunat-pinaatilla",
+      "unrounded": 0,
+      "positiveAvailableCarbohydratePerServing": 1.578,
+      "omittedAvailableCarbohydratePerServing": 1.578,
+      "classification": "OMITTED_POSITIVE_CHO_ZERO",
+      "correctionPriority": "Q09; preserve current result in integration regression; rebuild full source/food bindings before replacing"
+    },
+    {
+      "recipeId": "vhh-lihamureke",
+      "unrounded": 0,
+      "positiveAvailableCarbohydratePerServing": 1.9116666666666666,
+      "omittedAvailableCarbohydratePerServing": 1.9116666666666668,
+      "classification": "OMITTED_POSITIVE_CHO_ZERO",
+      "correctionPriority": "Q09; preserve current result in integration regression; rebuild full source/food bindings before replacing"
+    },
+    {
+      "recipeId": "uuniporsas-kermakastikkeessa-vhh",
+      "unrounded": 0,
+      "positiveAvailableCarbohydratePerServing": 1.5116333333333334,
+      "omittedAvailableCarbohydratePerServing": 1.5116333333333334,
+      "classification": "OMITTED_POSITIVE_CHO_ZERO",
+      "correctionPriority": "Q09; preserve current result in integration regression; rebuild full source/food bindings before replacing"
+    },
+    {
+      "recipeId": "tonnikalamunakkaat-uunissa",
+      "unrounded": 0,
+      "positiveAvailableCarbohydratePerServing": 0.6174999999999999,
+      "omittedAvailableCarbohydratePerServing": 0.6174999999999999,
+      "classification": "OMITTED_POSITIVE_CHO_ZERO",
+      "correctionPriority": "Q09; preserve current result in integration regression; rebuild full source/food bindings before replacing"
+    },
+    {
+      "recipeId": "kiinalainen-teehaudutetut-munat",
+      "unrounded": 0,
+      "positiveAvailableCarbohydratePerServing": 1.27,
+      "omittedAvailableCarbohydratePerServing": 1.27,
+      "classification": "OMITTED_POSITIVE_CHO_ZERO",
+      "correctionPriority": "Q09; preserve current result in integration regression; rebuild full source/food bindings before replacing"
+    },
+    {
+      "recipeId": "thai-kai-jiao-yrteilla",
+      "unrounded": 0,
+      "positiveAvailableCarbohydratePerServing": 0.7913,
+      "omittedAvailableCarbohydratePerServing": 0.7913,
+      "classification": "OMITTED_POSITIVE_CHO_ZERO",
+      "correctionPriority": "Q09; preserve current result in integration regression; rebuild full source/food bindings before replacing"
+    }
+  ],
+  "trueZeroCho": 0,
+  "omittedPositiveChoZeros": 9,
+  "technicalProduction": 83,
+  "nonzeroProduction": 74,
+  "note": "No nine-recipe deep research or original result rewrite. New path requires every positive-CHO ingredient GI and renders positive modeled values<1 as<1."
+}
