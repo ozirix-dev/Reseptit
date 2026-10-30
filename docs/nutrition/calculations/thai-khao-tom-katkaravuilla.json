@@ -1,10 +1,10 @@
 {
   "recipeId": "thai-khao-tom-katkaravuilla",
-  "sourceHash": "b9ebf6f4da142e2d05b2eac3b045270cea26ee15a76db7cbdb6df78e9b632207",
-  "calculatedAt": "2026-10-24",
-  "batchId": "batch-13",
+  "sourceHash": "addfc85cd9b25a46d47e76853b485ccd8bc62a5bd2e854b3b49de1106e3bbf6b",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-82",
   "servings": 2,
-  "scope": "Two servings. Uses raw peeled prawn flesh, dry long-grain white rice, listed fresh garlic and ginger, and diluted chicken stock. The soup recipe method was clarified to match its listed ingredients. Practical estimate, not laboratory analysis.",
+  "scope": "Complete weighed candidate, all edible ingredients and liquid retained, raw-input nutrient proxies explicitly disclosed",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -13,11 +13,7 @@
       "amount": 150,
       "unit": "g",
       "state": "raw peeled prawn flesh",
-      "matchEvidence": "Generic raw peeled shrimp represented by raw prawn flesh; AFCD record F007422 has complete fibre and paired carbohydrate data.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit zero available CHO composition, not a zero GI assignment",
       "record": {
         "id": "afcd-F007422-release-3",
         "name": "Prawn, banana, wild, flesh, raw",
@@ -36,18 +32,18 @@
           "protein": 13.2,
           "fat": 0.6
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
-      "item": "kuivaa valkoista pitkäjyväistä riisiä",
+      "item": "kuivaa valkoista jasmiiniriisiä",
       "amount": 100,
       "unit": "g",
       "state": "dry uncooked long-grain white rice",
-      "matchEvidence": "Dry long-grain white rice; Fineli Release 20 record 11521.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named white jasmine rice served hot as intact cooked grain, cooked per pack. Coconut/soup/pan context is an explicit LOW analogy; no cooling or fat discount. Generic composition separately sourced.",
       "record": {
         "id": "fineli-11521-release-20",
         "name": "RIISI PITKÄJYVÄINEN, PUUROUTUMATON",
@@ -76,27 +72,25 @@
           "protein": 8.13,
           "fat": 1.03
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "valkosipuli",
-      "amount": 1,
-      "unit": "tl",
-      "state": "raw peeled garlic, minced",
-      "matchEvidence": "Raw peeled garlic; AFCD record F004193.",
-      "gramsPerUnit": 3,
-      "conversionEvidence": "One teaspoon minced garlic represented as 3 g.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "amount": 3,
+      "unit": "g",
+      "state": "raw peeled garlic",
+      "matchEvidence": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
       "record": {
         "id": "afcd-F004193-release-3",
         "name": "Garlic, peeled, fresh, raw",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "raw peeled garlic, minced",
+        "state": "raw peeled garlic",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -108,27 +102,25 @@
           "protein": 6.1,
           "fat": 2.8
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "inkivääri",
-      "amount": 1,
-      "unit": "tl",
-      "state": "fresh peeled ginger, grated",
-      "matchEvidence": "Fresh peeled ginger; AFCD record F004213 has paired available-carbohydrate values.",
-      "gramsPerUnit": 2,
-      "conversionEvidence": "One teaspoon finely grated fresh ginger represented as 2 g.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "amount": 2,
+      "unit": "g",
+      "state": "raw peeled ginger root",
+      "matchEvidence": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
       "record": {
         "id": "afcd-F004213-release-3",
         "name": "Ginger, peeled, fresh, raw",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "fresh peeled ginger, grated",
+        "state": "raw peeled ginger root",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -140,20 +132,18 @@
           "protein": 0.8,
           "fat": 0.4
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "laimennettua kanalientä",
       "amount": 700,
-      "unit": "ml",
+      "unit": "g",
       "state": "prepared diluted chicken stock",
-      "matchEvidence": "Prepared diluted chicken stock; Fineli Release 20 record 30315.",
-      "gramsPerUnit": 1,
-      "conversionEvidence": "Fineli record 30315 lists 100 g per decilitre, equivalent to 1 g/ml.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
       "record": {
         "id": "fineli-30315-release-20",
         "name": "KANALIEMI, LAIMENNETTU",
@@ -182,19 +172,18 @@
           "protein": 0.27,
           "fat": 0.792
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
-      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "state": "pure salt",
+      "excludedReason": "Pure salt has zero of the four macros",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -202,7 +191,11 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
     }
   ]
 }

@@ -1,67 +1,70 @@
 ---
-title: "Jamaikalainen maissipuuro kookoksella"
+title: Jamaikalainen maissipuuro kookoksella
 recipe_id: karibia-maissipuuro-kookoksella
 url_slug: karibia-maissipuuro-kookoksella
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "maissijauho"
-  - "kookosmaito"
-  - "kaneli"
+- maissijauho
+- kookosmaito
+- kaneli
 cooking_method:
-  - "keittäminen"
+- keittäminen
 ingredients:
-  - amount: 100
-    unit: g
-    item: maissijauho
-  - amount: 200
-    unit: ml
-    item: kookosmaito
-  - amount: 1
-    unit: tl
-    item: kaneli
-  - amount: 1
-    unit: tl
-    item: vanilja
-  - amount: 700
-    unit: ml
-    item: vettä
-  - amount: null
-    unit: ""
-    item: suolaa maun mukaan
+- amount: 100
+  unit: g
+  item: maissijauho
+- amount: 184.0
+  unit: g
+  item: kookosmaito
+- amount: 2.6
+  unit: g
+  item: jauhettua kanelia
+- amount: 5
+  unit: g
+  item: vaniljauutetta
+- amount: 700
+  unit: g
+  item: vettä
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
 tags:
-  - "aamupala"
-  - "karibia"
-  - "puuro"
+- aamupala
+- karibia
+- puuro
 image:
   src: aamupalat/karibia-maissipuuro-kookoksella.webp
-  alt: "Jamaikalainen maissipuuro kookoksella tarjoiltuna aamiaisella"
+  alt: Jamaikalainen maissipuuro kookoksella tarjoiltuna aamiaisella
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 43.8
-carbs_total_per_serving_g: 44.75
-protein_per_serving_g: 4.09
-fat_per_serving_g: 14.87
-
+carbs_net_per_serving_g: 44.16
+carbs_total_per_serving_g: 45.8
+protein_per_serving_g: 4.14
+fat_per_serving_g: 14.88
 ---
 
 # Jamaikalainen maissipuuro kookoksella
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan jamaikalainen maissipuuro kookoksella. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Jamaikalainen maissipuuro kookoksella. Täsmällinen versio 2 annokselle.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Valmistele puuron pääraaka-aineet. Sekoita jauho tai murskattu raaka-aine ensin kylmään nesteeseen paakkujen välttämiseksi.
-2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
-4. Vatkaa maissijauho kylmään veteen ja keitä kookosmaidossa jatkuvasti sekoittaen.
+1. Sekoita 100 g hienoa ei-nixtamalisoitua maissijauhoa 700 g veteen. Keitä sekoittaen ja hauduta täysin kypsäksi puuroksi.
+2. Lisää 184 g kookosmaitoa,2,6 g jauhettua kanelia ja 5 g vaniljauutetta. Syö kaikki mausteet, ei siivilöintiä.
+3. Jaa koko puuro kahteen annokseen.
+
+## Muistiinpanot
+
+Mallinnettu GK-arvio perustuu ainesosiin, julkaistuihin GI-vertailuihin ja nimettyihin laskennallisiin oletuksiin. Luottamus on matala. Kaikki imeytyvät hiilihydraatit ovat mukana. Biologista epävarmuusväliä ei tunneta. Tuotteiden koostumus ja annoskoko vaikuttavat arvioon.
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.

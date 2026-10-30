@@ -1,67 +1,71 @@
 ---
-title: "Kreikkalainen hunajainen tahinipuuro"
+title: Tahini-kaurapuuro appelsiinilla
 recipe_id: valimerellinen-tahinipuuro
 url_slug: valimerellinen-tahinipuuro
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "kaurahiutale"
-  - "tahini"
-  - "hunaja"
+- kaurahiutale
+- tahini
+- hunaja
 cooking_method:
-  - "keittäminen"
+- keittäminen
 ingredients:
-  - amount: 100
-    unit: "g"
-    item: "kaurahiutale"
-  - amount: 1
-    unit: "rkl"
-    item: "tahini"
-  - amount: 1
-    unit: "rkl"
-    item: "hunaja"
-  - amount: 130
-    unit: "g"
-    item: "kuorittua appelsiinia"
-  - amount: 700
-    unit: "ml"
-    item: "vettä"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+- amount: 100
+  unit: g
+  item: 0,5–0,6 mm kaurahiutaleita
+- amount: 15
+  unit: g
+  item: makeuttamatonta seesamitahinia
+- amount: 20
+  unit: g
+  item: hunaja
+- amount: 130
+  unit: g
+  item: kuorittua appelsiinia
+- amount: 700
+  unit: g
+  item: vettä
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
 tags:
-  - "aamupala"
-  - "valimerellinen"
-  - "puuro"
+- aamupala
+- valimerellinen
+- puuro
 image:
   src: aamupalat/valimerellinen-tahinipuuro.webp
-  alt: "Kreikkalainen hunajainen tahinipuuro tarjoiltuna aamiaisella"
+  alt: Kuvituskuva puurosta viikunoilla ja pähkinöillä; tämän reseptiversion hedelmä on appelsiini
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 40.33
-carbs_total_per_serving_g: 47.15
-protein_per_serving_g: 8.13
-fat_per_serving_g: 9.19
-
+carbs_net_per_serving_g: 40.34
+carbs_total_per_serving_g: 47.66
+protein_per_serving_g: 8.02
+fat_per_serving_g: 9.39
 ---
 
-# Kreikkalainen hunajainen tahinipuuro
+# Tahini-kaurapuuro appelsiinilla
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan kreikkalainen hunajainen tahinipuuro. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Tahini-kaurapuuro appelsiinilla. Täsmällinen versio 2 annokselle.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Mittaa kaurahiutale kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
-2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
-4. Sekoita tahini lämpimään puuroon ja lisää appelsiinia sekä hunajaa.
+1. Keitä 100 g 0,5–0,6 mm kaurahiutaleita 700 g vedessä 10 min.
+2. Sekoita kaikki punnittu makeuttamaton seesamitahini ja hunaja puuroon.
+3. Jaa koko puuro kahteen annokseen ja lisää 130 g kuorittua raakaa navel-appelsiinia paloina. Ei mehun siivilöintiä.
+
+## Muistiinpanot
+
+Mallinnettu GK-arvio perustuu ainesosiin, julkaistuihin GI-vertailuihin ja nimettyihin laskennallisiin oletuksiin. Luottamus on matala. Kaikki imeytyvät hiilihydraatit ovat mukana. Biologista epävarmuusväliä ei tunneta. Tuotteiden koostumus ja annoskoko vaikuttavat arvioon.
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
+Tässä versiossa käytetään appelsiinia. Kuvan viikunat ja pähkinät eivät kuulu versioon tai sen laskelmaan.

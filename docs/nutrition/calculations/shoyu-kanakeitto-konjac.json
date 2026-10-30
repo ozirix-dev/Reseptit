@@ -1,10 +1,10 @@
 {
   "recipeId": "shoyu-kanakeitto-konjac",
-  "sourceHash": "e771d9f9b8f5e7f494545835f0007e79d4560e74524bd4451acaa956350185d6",
-  "calculatedAt": "2026-10-25",
-  "batchId": "batch-18",
+  "sourceHash": "4552592fa58257f6ed1a37c81c841bd187ca114cd884a94bb47545d8fccb9871",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-82",
   "servings": 4,
-  "scope": "4 servings; prepared KoRo konjac noodles use the product label per 100 g prepared; fresh common mushrooms replace shiitake; chicken is raw boneless thigh.",
+  "scope": "Complete weighed candidate, all edible ingredients and liquid retained, raw-input nutrient proxies explicitly disclosed",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -13,11 +13,7 @@
       "amount": 400,
       "unit": "g",
       "state": "raw skinless chicken thigh meat",
-      "matchEvidence": "Raw skinless chicken thigh meat; Fineli Release 20 record 30792.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit zero available CHO composition, not a zero GI assignment",
       "record": {
         "id": "fineli-30792-release-20",
         "name": "BROILERI, KOIPI-REISI, NAHATON",
@@ -46,20 +42,18 @@
           "protein": 19.65,
           "fat": 3.42
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "kanalientä",
-      "amount": 1.2,
-      "unit": "l",
+      "amount": 1200.0,
+      "unit": "g",
       "state": "prepared liquid stock",
-      "matchEvidence": "kanalientä maps to afcd-release-3 record F008936; state: prepared liquid stock.",
-      "gramsPerUnit": 1000,
-      "conversionEvidence": "Ingredient-specific volume mass: 1000 g/l for kanalientä.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
       "record": {
         "id": "afcd-F008936-release-3",
         "name": "Stock, liquid, all flavours (except fish), prepared from commercial powder or cube",
@@ -78,69 +72,80 @@
           "protein": 0.2,
           "fat": 0.2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
-      "item": "tamaria",
-      "amount": 2,
-      "unit": "rkl",
-      "state": "tamari represented by generic soy sauce",
-      "matchEvidence": "Fineli 31 is soy sauce, closest measured fermented soy-sauce equivalent.",
-      "gramsPerUnit": 16,
-      "conversionEvidence": "1 tbsp soy sauce = 16 g.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "item": "tavallista suolaista soijakastiketta",
+      "amount": 32,
+      "unit": "g",
+      "state": "Sauce, soy, commercial",
+      "matchEvidence": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
       "record": {
-        "id": "fineli-31-release-20",
-        "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/31",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "tamari represented by generic soy sauce",
+        "id": "afcd-F008065-r4-publication-record",
+        "name": "Sauce, soy, commercial",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F008065",
+        "retrievedAt": "2026-10-30",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia; selected fields unchanged. Australian average, not Finnish branded label.",
+        "state": "Sauce, soy, commercial",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 9.5,
-          "FIBT": 0,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "AFCD Release3 available carbohydrate without sugar alcohols; per100g worksheet verified in AJO4",
         "per100g": {
-          "carbohydrate": 9.5,
+          "carbohydrate": 3.2,
+          "protein": 6.8,
+          "fat": 0,
           "fibre": 0,
-          "polyols": 0,
-          "protein": 5.17,
-          "fat": 0.08
+          "polyols": 0
+        },
+        "referenceRecord": {
+          "name": "Sauce, soy, commercial",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F008065",
+          "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia; selected fields unchanged. Australian average, not Finnish branded label.",
+          "sourceRecord": {
+            "source_id": "F008065",
+            "classification": 23102,
+            "derivation": "Analysed",
+            "name": "Sauce, soy, commercial",
+            "protein_g_per_100g": 6.8,
+            "fat_g_per_100g": 0,
+            "fibre_g_per_100g": 0,
+            "glycerol_g_per_100g": null,
+            "erythritol_g_per_100g": null,
+            "maltitol_g_per_100g": null,
+            "mannitol_g_per_100g": null,
+            "xylitol_g_per_100g": null,
+            "sorbitol_g_per_100g": null,
+            "available_carbohydrate_without_sugar_alcohols_g_per_100g": 3.2,
+            "available_carbohydrate_with_sugar_alcohols_g_per_100g": 3.2
+          },
+          "referenceFile": "docs/nutrition/afcd-release-3-reference.json",
+          "referenceSha256": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+          "primaryResponseSha256": "48d906ec3b4459048836bb34b6276d74e1d2563ca81a8bb42379514931d9d528"
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "riisiviinietikkaa",
-      "amount": 1,
-      "unit": "rkl",
-      "state": "rice vinegar represented by generic wine vinegar",
-      "matchEvidence": "The recipe does not name a vinegar brand; Fineli generic wine vinegar is used as a low-dose vinegar proxy, with the style difference documented.",
-      "gramsPerUnit": 15,
-      "conversionEvidence": "Fineli record 929 lists 15 g per tablespoon (RKL).",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "amount": 15,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
       "record": {
         "id": "fineli-929-release-20",
         "name": "VIINIETIKKA",
         "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/929",
         "retrievedAt": "2026-10-24",
         "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "rice vinegar represented by generic wine vinegar",
+        "state": "raw/as listed",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "componentValues": {
@@ -162,18 +167,18 @@
           "protein": 0,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "konjac-nuudeleita",
       "amount": 200,
       "unit": "g",
       "state": "prepared product; label nutrient values per 100 g prepared noodles",
-      "matchEvidence": "Local KoRo record is the exact prepared product and basis.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit zero available CHO composition, not a zero GI assignment",
       "record": {
         "id": "koro-konjac-noodles-prepared-2026-10-24",
         "name": "KoRo prepared konjac noodles",
@@ -194,18 +199,18 @@
           "sugars": 0,
           "polyols": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "herkkusieniä",
       "amount": 100,
       "unit": "g",
       "state": "raw common mushroom",
-      "matchEvidence": "AFCD F005946 is fresh raw common mushroom.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
       "record": {
         "id": "afcd-F005946-release-3",
         "name": "Mushroom, common, fresh, raw",
@@ -224,27 +229,25 @@
           "protein": 2.2,
           "fat": 0.8
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "kevätsipulia",
-      "amount": 2,
-      "unit": "kpl",
-      "state": "raw spring onion",
-      "matchEvidence": "Raw spring onion; AFCD record F006250.",
-      "gramsPerUnit": 100,
-      "conversionEvidence": "Ingredient-specific household measure conversion: 100 g per kpl; recipe quantity converted to edible mass.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "amount": 200,
+      "unit": "g",
+      "state": "raw spring onion, chopped",
+      "matchEvidence": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
       "record": {
         "id": "afcd-F006250-release-3",
         "name": "Onion, spring, fresh, raw",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "raw spring onion",
+        "state": "raw spring onion, chopped",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -256,20 +259,18 @@
           "protein": 1.7,
           "fat": 0.2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "raastettua inkivääriä",
-      "amount": 1,
-      "unit": "tl",
+      "amount": 2,
+      "unit": "g",
       "state": "raw peeled ginger root",
-      "matchEvidence": "Raw peeled ginger; AFCD record F004213 has paired carbohydrate values confirming zero sugar alcohols.",
-      "gramsPerUnit": 2,
-      "conversionEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
       "record": {
         "id": "afcd-F004213-release-3",
         "name": "Ginger, peeled, fresh, raw",
@@ -288,27 +289,25 @@
           "protein": 0.8,
           "fat": 0.4
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "seesamiöljyä",
-      "amount": 1,
-      "unit": "rkl",
-      "state": "sesame oil",
-      "matchEvidence": "seesamiöljyä maps to afcd-release-3 record F006187; state: sesame oil.",
-      "gramsPerUnit": 13.5,
-      "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for seesamiöljyä.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "amount": 13.5,
+      "unit": "g",
+      "state": "sesame oil as sold",
+      "matchEvidence": "Explicit zero available CHO composition, not a zero GI assignment",
       "record": {
         "id": "afcd-F006187-release-3",
         "name": "Oil, sesame",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "sesame oil",
+        "state": "sesame oil as sold",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -320,7 +319,11 @@
           "protein": 0,
           "fat": 100
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     }
   ]
 }

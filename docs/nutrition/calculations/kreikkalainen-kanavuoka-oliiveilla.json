@@ -1,23 +1,19 @@
 {
   "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
-  "sourceHash": "9417b480c1f9fe01f13029f5c080f30a7b37e340325f4ea921e309be25eb23e1",
-  "calculatedAt": "2026-10-25",
-  "batchId": "batch-17",
+  "sourceHash": "8f59332fcbd91612dd1d31a382bfcadc9fe53466e9b2d686dd357985d2a82199",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-81",
   "servings": 4,
-  "scope": "4 servings; measured ingredient quantities as listed: 600 g nahatonta broilerin reisilihaa; 250 g kirsikkatomaatteja; 100 g punasipulia; 100 g fetajuustoa; 60 g kalamataoliiveja; 2 rkl oliiviöljyä; 1 tl kuivattua oreganoa; 30 g sitruunamehua; unquantified  suolaa ja mustapippuria. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded.",
+  "scope": "Complete weighed candidate; all edible ingredients and listed liquid retained. Raw-input composition proxies and LOW preparation analogues disclosed.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "nahatonta broilerin reisilihaa",
+      "item": "nahatonta ja luutonta broilerin reisilihaa",
       "amount": 600,
       "unit": "g",
       "state": "raw lean skinless chicken thigh flesh, boneless edible meat",
-      "matchEvidence": "AFCD Release 3 record F002806 is raw lean chicken thigh flesh; recipe specifies boneless skinless thigh meat.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit zero CHO composition; no assigned GI zero",
       "record": {
         "id": "afcd-F002806-release-3",
         "name": "Chicken, thigh, lean flesh, raw",
@@ -36,18 +32,18 @@
           "protein": 19.1,
           "fat": 3
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "kirsikkatomaatteja",
       "amount": 250,
       "unit": "g",
       "state": "raw cherry tomatoes",
-      "matchEvidence": "AFCD Release 3 F009190 is raw cherry tomato, matching the listed cherry tomato.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
       "record": {
         "id": "afcd-F009190-release-3",
         "name": "Tomato, cherry, raw",
@@ -66,18 +62,18 @@
           "protein": 0.9,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "punasipulia",
       "amount": 100,
       "unit": "g",
       "state": "raw red onion, edible portion",
-      "matchEvidence": "Fineli Release 20 record 34234 is red onion.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
       "record": {
         "id": "fineli-34234-release-20",
         "name": "SIPULI, PUNASIPULI",
@@ -106,18 +102,18 @@
           "protein": 1.506,
           "fat": 0.114
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "fetajuustoa",
       "amount": 100,
       "unit": "g",
       "state": "feta cheese, 25% fat",
-      "matchEvidence": "Fineli Release 20 record 11211 is feta cheese in brine.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI.",
       "record": {
         "id": "fineli-11211-release-20",
         "name": "JUUSTO, FETAJUUSTO, RASVAA 25 %, VUOHENMAITO, SUOLALIEMESSÄ",
@@ -146,18 +142,18 @@
           "protein": 18,
           "fat": 25
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "kalamataoliiveja",
       "amount": 60,
       "unit": "g",
       "state": "drained olives, green or black",
-      "matchEvidence": "AFCD Release 3 F006198 is drained olives; the source does not separate Kalamata cultivar.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit zero CHO composition; no assigned GI zero",
       "record": {
         "id": "afcd-F006198-release-3",
         "name": "Olive, green or black, drained",
@@ -176,20 +172,18 @@
           "protein": 2.2,
           "fat": 21.7
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "oliiviöljyä",
-      "amount": 2,
-      "unit": "rkl",
+      "amount": 27.0,
+      "unit": "g",
       "state": "olive oil as sold",
-      "matchEvidence": "Fineli Release 20 record 536 is olive oil.",
-      "gramsPerUnit": 13.5,
-      "conversionEvidence": "One level tablespoon oil is standardized to 13.5 g.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit zero CHO composition; no assigned GI zero",
       "record": {
         "id": "fineli-536-release-20",
         "name": "OLIIVIÖLJY",
@@ -218,20 +212,18 @@
           "protein": 0,
           "fat": 100
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "kuivattua oreganoa",
-      "amount": 1,
-      "unit": "tl",
+      "amount": 2,
+      "unit": "g",
       "state": "dried oregano",
-      "matchEvidence": "AFCD Release 3 F006281 is dried oregano.",
-      "gramsPerUnit": 2,
-      "conversionEvidence": "One teaspoon dried oregano is represented as 2 g.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
       "record": {
         "id": "afcd-F006281-release-3",
         "name": "Oregano, dried",
@@ -250,18 +242,18 @@
           "protein": 9,
           "fat": 4.3
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "sitruunamehua",
       "amount": 30,
       "unit": "g",
       "state": "undiluted lemon juice",
-      "matchEvidence": "Fineli Release 20 record 11557 is undiluted lemon juice; recipe amount is measured juice.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
       "record": {
         "id": "fineli-11557-release-20",
         "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
@@ -290,27 +282,61 @@
           "protein": 0.31,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
-      "item": "suolaa ja mustapippuria",
+      "item": "jauhettua mustapippuria",
+      "amount": 0.5,
+      "unit": "g",
+      "state": "ground black pepper",
+      "matchEvidence": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
+      "record": {
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground black pepper",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 38.6,
+          "fibre": 25.3,
+          "polyols": 0,
+          "protein": 10.4,
+          "fat": 3.3
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
+    },
+    {
+      "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "salt and a small amount of black pepper omitted",
-      "matchEvidence": "Pepper is a small seasoning; conservative per-serving upper bound remains below the agreed tolerance.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Salt has no displayed macros; one small seasoning portion of black pepper is omitted.",
+      "state": "pure salt",
+      "matchEvidence": "Pure salt has no four-macro contribution",
+      "excludedReason": "Pure salt, sodium not calculated",
       "omissionImpactUpperBoundPerServing": {
-        "kcal": 0.5,
-        "netCarbohydrate": 0.05,
-        "totalCarbohydrate": 0.1,
-        "protein": 0.05,
-        "fat": 0.05
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
       },
-      "omissionImpactEvidence": "Pepper is a small seasoning; conservative per-serving upper bound remains below the agreed tolerance."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
     }
   ]
 }

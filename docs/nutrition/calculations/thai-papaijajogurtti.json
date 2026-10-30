@@ -1,10 +1,10 @@
 {
   "recipeId": "thai-papaijajogurtti",
-  "sourceHash": "dfcba59042f0e5719cb662028f0a1ee7b1d2b4554c52586843f0c2d1a28412aa",
-  "calculatedAt": "2026-10-25",
-  "batchId": "batch-16",
+  "sourceHash": "d03a88fdd71c4349e173da3a293e4fcb86e46e4e2bf18c3e268a0d4d24b80c67",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-82",
   "servings": 2,
-  "scope": "Two servings; 200 g peeled raw papaya, 200 g plain 3.9% yogurt, 15 g unsweetened desiccated coconut, 15 g lime juice; salt omitted.",
+  "scope": "Complete weighed candidate, all edible ingredients and liquid retained, raw-input nutrient proxies explicitly disclosed",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -13,11 +13,7 @@
       "amount": 200,
       "unit": "g",
       "state": "peeled raw papaya",
-      "matchEvidence": "AFCD Release 3 record F006528 is peeled raw papaya and supplies all required macro fields.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Peeled raw papaya pieces, matching tested form; no puree or cooked papaya.",
       "record": {
         "id": "afcd-F006528-release-3",
         "name": "Pawpaw (papaya), peeled, raw",
@@ -36,25 +32,25 @@
           "protein": 0.4,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "jogurtti",
       "amount": 200,
       "unit": "g",
-      "state": "plain unsweetened Bulgarian-style yogurt, 3.9% fat",
-      "matchEvidence": "Fineli Release 20 record 620 is plain unsweetened Bulgarian-style yogurt with 3.9% fat.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "plain unsweetened yogurt, 3.9% fat",
+      "matchEvidence": "Atkinson unsweetened animal-dairy published coding assignment, not measured ingredient GI.",
       "record": {
         "id": "fineli-620-release-20",
         "name": "JOGURTTI, MAUSTAMATON, BULGARIAN, RASVAA 3,9%",
         "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/620",
         "retrievedAt": "2026-10-24",
         "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "plain unsweetened Bulgarian-style yogurt, 3.9% fat",
+        "state": "plain unsweetened yogurt, 3.9% fat",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "componentValues": {
@@ -76,55 +72,79 @@
           "protein": 3,
           "fat": 3.9
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
-      "item": "kookoshiutale",
+      "item": "tuoretta kypsän kookospähkinän hedelmälihaa",
       "amount": 15,
       "unit": "g",
-      "state": "unsweetened grated desiccated coconut",
-      "matchEvidence": "AFCD Release 3 record F002987 is grated and desiccated coconut.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "Coconut, fresh, mature fruit, flesh",
+      "matchEvidence": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
       "record": {
-        "id": "afcd-F002987-release-3",
-        "name": "Coconut, grated & desiccated",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "unsweetened grated desiccated coconut",
-        "basis": "per100g-as-sold",
+        "id": "afcd-F002983-r4-publication-record",
+        "name": "Coconut, fresh, mature fruit, flesh",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F002983",
+        "retrievedAt": "2026-10-30",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia; selected fields unchanged. Australian average, not Finnish branded label.",
+        "state": "Coconut, fresh, mature fruit, flesh",
+        "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsEvidence": "AFCD Release3 available carbohydrate without sugar alcohols; per100g worksheet verified in AJO4",
         "per100g": {
-          "carbohydrate": 7.3,
-          "fibre": 15.4,
-          "polyols": 0,
-          "protein": 6.9,
-          "fat": 65.4
+          "carbohydrate": 3.3,
+          "protein": 3.8,
+          "fat": 32.8,
+          "fibre": 8.1,
+          "polyols": 0
+        },
+        "referenceRecord": {
+          "name": "Coconut, fresh, mature fruit, flesh",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F002983",
+          "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia; selected fields unchanged. Australian average, not Finnish branded label.",
+          "sourceRecord": {
+            "source_id": "F002983",
+            "classification": 22203,
+            "derivation": "Analysed",
+            "name": "Coconut, fresh, mature fruit, flesh",
+            "protein_g_per_100g": 3.8,
+            "fat_g_per_100g": 32.8,
+            "fibre_g_per_100g": 8.1,
+            "glycerol_g_per_100g": null,
+            "erythritol_g_per_100g": null,
+            "maltitol_g_per_100g": null,
+            "mannitol_g_per_100g": null,
+            "xylitol_g_per_100g": null,
+            "sorbitol_g_per_100g": null,
+            "available_carbohydrate_without_sugar_alcohols_g_per_100g": 3.3,
+            "available_carbohydrate_with_sugar_alcohols_g_per_100g": 3.3
+          },
+          "referenceFile": "docs/nutrition/afcd-release-3-reference.json",
+          "referenceSha256": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e"
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "limettimehua",
       "amount": 15,
       "unit": "g",
-      "state": "undiluted lime juice",
-      "matchEvidence": "AFCD Release 3 record F004729 is lime juice.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "lime juice",
+      "matchEvidence": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
       "record": {
         "id": "afcd-F004729-release-3",
         "name": "Juice, lime",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "undiluted lime juice",
+        "state": "lime juice",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -136,19 +156,18 @@
           "protein": 0.8,
           "fat": 0.1
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "salt omitted; no contribution to displayed macronutrients",
-      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "state": "pure salt",
+      "excludedReason": "Pure salt has zero of the four macros",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -156,7 +175,11 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
     }
   ]
 }

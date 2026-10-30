@@ -1,59 +1,58 @@
 ---
-title: "Marokkolainen minttutee-kaurapuuro"
+title: Minttu-kaurapuuro maidolla ja hunajalla – syötävän mintun versio
 recipe_id: pohjoisafrikkalainen-minttutee-kaurapuuro
 url_slug: pohjoisafrikkalainen-minttutee-kaurapuuro
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "kaurahiutale"
-  - "minttu"
-  - "maito"
+- kaurahiutale
+- minttu
+- maito
 cooking_method:
-  - "keittäminen"
+- keittäminen
 ingredients:
-  - amount: 100
-    unit: "g"
-    item: "kaurahiutale"
-  - amount: 2
-    unit: "rkl"
-    item: "tuoretta minttua"
-  - amount: 200
-    unit: "ml"
-    item: "maito"
-  - amount: 1
-    unit: "rkl"
-    item: "hunaja"
-  - amount: 500
-    unit: "ml"
-    item: "vettä"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+- amount: 100
+  unit: g
+  item: 0,5–0,6 mm kaurahiutaleita
+- amount: 6
+  unit: g
+  item: tuoreita mintunlehtiä, syödään puurossa
+- amount: 200
+  unit: g
+  item: maito
+- amount: 20
+  unit: g
+  item: hunaja
+- amount: 500
+  unit: g
+  item: vettä
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 servings: 2
-time_total_min: 25
+time_total_min: 20
 difficulty: Helppo
 tags:
-  - "aamupala"
-  - "pohjoisafrikkalainen"
-  - "puuro"
+- aamupala
+- pohjoisafrikkalainen
+- puuro
 image:
   src: aamupalat/pohjoisafrikkalainen-minttutee-kaurapuuro.webp
-  alt: "Marokkolainen minttutee-kaurapuuro tarjoiltuna aamiaisella"
+  alt: Minttu-kaurapuuro maidolla ja hunajalla
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 39.41
 carbs_total_per_serving_g: 44.38
 protein_per_serving_g: 9.22
 fat_per_serving_g: 8.28
-
 ---
 
-# Marokkolainen minttutee-kaurapuuro
+# Minttu-kaurapuuro maidolla ja hunajalla – syötävän mintun versio
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan marokkolainen minttutee-kaurapuuro. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Minttu-kaurapuuro maidolla ja hunajalla – syötävän mintun versio. Punnittu laskentaversio kahdelle annokselle.
 
 ## Ainekset
 
@@ -61,7 +60,12 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Mittaa kaurahiutale kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
-2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
-4. Hauduta minttua maidossa, siivilöi ja keitä nesteessä kaurapuuro.
+1. Keitä 0,5–0,6 mm kaurahiutaleita 500 grammassa vettä 10 minuuttia.
+2. Lisää täysmaito, hienonnetut tuoreet mintunlehdet ja hunaja. Lämmitä ja mausta suolalla.
+3. Minttu syödään puuron mukana. Hauduketta ei siivilöidä tässä versiossa. Jaa koko määrä kahteen annokseen ja tarjoa lämpimänä.
+
+## Muistiinpanot
+
+Mallinnettu GK-arvio perustuu nimettyihin GI-vertailuihin ja kasvisoletukseen. Luottamus on matala. Arvio ei ole aterialla mitattu eikä henkilökohtainen verensokeriennuste tai insuliiniannoksen peruste.
+
+**Syötävän mintun versio:** tämän sivun ravintoarvot ja GK koskevat vain puuroon jääviä lehtiä. Vanha minttutee-osoite säilyy sivun löytämiseksi. Alkuperäinen vaihtoehto on hauduttaa minttu vedessä ja siivilöidä lehdet ennen puuron keittämistä. Tälle siivilöidylle vaihtoehdolle ei ole laskettu GK-arviota; tämän sivun lukua ei saa käyttää sille.
