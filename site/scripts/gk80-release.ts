@@ -1,8 +1,9 @@
 import {readFile} from 'node:fs/promises';import path from 'node:path';import {createHash} from 'node:crypto';
 import {calculate,type Recipe,type Source,type CompositionSource} from './gk80-candidate-model';
 import type {GlycemicLoadResult} from './glycemic-load-model';
-type Ref={title:string;url:string;matchKind:'CALCULATION_POLICY';confidence:'LOW';note:string};
-type Extended=GlycemicLoadResult&{assessmentType?:'PUBLISHED_IMPUTATION';candidateSources?:Ref[];candidateCarbohydrateSources?:Array<{title:string;url:string;note:string}>};
+import {classifyGk80Source, type EvidenceKind, type ApplicationKind} from './gk80-source-classification';
+type Ref={title:string;url:string;matchKind:'EXACT'|'ANALOG'|'CALCULATION_POLICY';evidenceKind:EvidenceKind;applicationKind:ApplicationKind;confidence:'LOW';note:string};
+type Extended=GlycemicLoadResult&{assessmentType?:'PUBLISHED_IMPUTATION';modelScenario?:'POINT_SCENARIO'|'NAMED_SCENARIO_RANGE';candidateSources?:Ref[];candidateCarbohydrateSources?:Array<{title:string;url:string;note:string}>};
 export async function validateGk80Candidate(root:string,recipeId:string):Promise<boolean>{
  const folder=path.join(root,'docs/nutrition/gk80-release-1');
  const json=async(n:string)=>JSON.parse(await readFile(path.join(folder,n),'utf8'));
@@ -30,13 +31,13 @@ export async function applyGk80Release(root:string,legacy:GlycemicLoadResult[]):
   const ids=[...new Set(r.scenarios.flatMap(s=>s.ingredients.flatMap(i=>i.composition?[i.composition.sourceId]:[])))];
   out[index]={...out[index],status:'CALCULATED',servings:r.servings,unroundedGlycemicLoadPerServing:result.min,
    glycemicLoadPerServing:Math.round(result.min!*100)/100,glycemicLoadRangePerServing:result.min!==result.max?{min:result.min!,max:result.max!}:null,
-   omittedAvailableCarbohydratePerServingG:0,omittedAvailableCarbohydrateUpperBoundPerServingG:0,confidence:'LOW',blockers:[],assessmentType:'PUBLISHED_IMPUTATION',
+   omittedAvailableCarbohydratePerServingG:0,omittedAvailableCarbohydrateUpperBoundPerServingG:0,confidence:'LOW',blockers:[],assessmentType:'PUBLISHED_IMPUTATION',modelScenario:r.scenarios.length>1?'NAMED_SCENARIO_RANGE':'POINT_SCENARIO',
    interpretation:'Modeled ingredient-sum estimate with published vegetable GI assignment and named preparation analogues; no measured meal response or physiological uncertainty bound.',
    ingredients:r.scenarios[0].ingredients.map((i,n)=>({name:i.name,grams:i.massG,fineliRecordId:i.composition?.sourceId??null,
     availableCarbohydratePer100g:i.per100g?.availableCarbohydrate??null,availableCarbohydratePerServingG:s.contributions[n].carbohydrate,
     availableCarbohydratePerServingRangeG:null,gi:map.get(i.giId??i.impact?.sourceId??'')?.gi??null,giRecordId:i.giId??i.impact?.sourceId??null,
     qualityTier:null,matchKind:null,confidence:'LOW',giContribution:s.contributions[n].gk,giContributionRange:null,giCandidates:[],issues:[]})),
-   candidateSources:used.map(id=>{const source=map.get(id)!;return {title:String(source.food??id),url:String(source.sourceUrl),matchKind:'CALCULATION_POLICY',confidence:'LOW',note:`GK80 ${source.evidenceKind??'HUMAN_GI'}: ${source.limitations??source.food}. Recipe-specific applicability: ${r.scenarios[0].ingredients.filter(i=>(i.giId??i.impact?.sourceId)===id).map(i=>i.applicability).join('; ')}`};}),
+   candidateSources:used.map(id=>{const source=map.get(id)!;return {title:String(source.food??id),url:String(source.sourceUrl),...classifyGk80Source(source.evidenceKind??'HUMAN_GI',r.scenarios.flatMap(s=>s.ingredients).filter(i=>(i.giId??i.impact?.sourceId)===id).every(i=>i.match==='DIRECT')?'DIRECT':'APPLIED'),confidence:'LOW',note:`GK80 ${source.evidenceKind??'HUMAN_GI'}: ${source.limitations??source.food}. Recipe-specific applicability: ${r.scenarios[0].ingredients.filter(i=>(i.giId??i.impact?.sourceId)===id).map(i=>i.applicability).join('; ')}`};}),
    candidateCarbohydrateSources:ids.map(id=>{const c=comps.find(x=>x.id===id)!,rec=c.sourceRecord as {name:string;sourceUrl:string;licence?:string};return {title:rec.name,url:rec.sourceUrl,note:rec.licence??'Identified composition source; available carbohydrate already excludes fibre and polyols.'};})};
  }
  return out;

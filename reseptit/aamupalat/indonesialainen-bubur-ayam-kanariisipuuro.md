@@ -67,3 +67,5 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 ## Muistiinpanot
 
 Mallinnettu GK-arvio perustuu nimettyihin GI-vertailuihin ja kasvisoletukseen. Luottamus on matala. Arvio ei ole aterialla mitattu eikä henkilökohtainen verensokeriennuste tai insuliiniannoksen peruste.
+
+Tämä on bubur ayam -kanariisipuuron yksinkertainen perusversio, jossa inkivääri ja kevätsipuli syödään. Mukana ei ole soijakastiketta, sambalia tai rapeita lisukkeita. Niiden lisääminen muuttaa laskelmaa. [Ruokalajin tausta: Marvellina](https://whattocooktoday.com/chicken-porridge.html). Peruspohjan ainekset ovat tässä samat kuin kokoelman chao ga -versiossa; ruokalajin nimi ei itsessään muuta ravintoarvoja.

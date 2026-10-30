@@ -25,3 +25,12 @@ test('variants, distinct porridge IDs and existing-language scope remain explici
 });
 
 test('independent Decimal checks all release contribution terms',()=>{const output=execFileSync(process.platform==='win32'?'python':'python3',[fileURLToPath(new URL('site/scripts/gk80-release-decimal.py',root))],{encoding:'utf8'});assert.equal(JSON.parse(output).status,'PASS');});
+
+test('release sources distinguish human analogues, published coding and recipe scenarios',()=>{
+ const results=JSON.parse(readFileSync(new URL('tmp/nutrition/glycemic-load-pilot.json',root),'utf8')).results;
+ for(const r of recipes){const result=results.find((x:{recipeId:string})=>x.recipeId===r.recipeId);
+  assert.equal(result.modelScenario,'POINT_SCENARIO');
+  assert.ok(result.candidateSources.some((s:{evidenceKind:string,matchKind:string})=>s.evidenceKind==='HUMAN_GI'&&s.matchKind==='ANALOG'));
+  assert.ok(result.candidateSources.some((s:{evidenceKind:string,matchKind:string})=>s.evidenceKind==='PUBLISHED_IMPUTATION'&&s.matchKind==='CALCULATION_POLICY'));
+ }
+});

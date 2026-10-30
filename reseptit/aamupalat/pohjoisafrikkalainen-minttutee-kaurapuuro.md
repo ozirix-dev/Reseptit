@@ -39,7 +39,7 @@ tags:
 - puuro
 image:
   src: aamupalat/pohjoisafrikkalainen-minttutee-kaurapuuro.webp
-  alt: Marokkolainen minttutee-kaurapuuro tarjoiltuna aamiaisella
+  alt: Minttu-kaurapuuro maidolla ja hunajalla
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 39.41
@@ -67,3 +67,5 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 ## Muistiinpanot
 
 Mallinnettu GK-arvio perustuu nimettyihin GI-vertailuihin ja kasvisoletukseen. Luottamus on matala. Arvio ei ole aterialla mitattu eikä henkilökohtainen verensokeriennuste tai insuliiniannoksen peruste.
+
+**Syötävän mintun versio:** tämän sivun ravintoarvot ja GK koskevat vain puuroon jääviä lehtiä. Vanha minttutee-osoite säilyy sivun löytämiseksi. Alkuperäinen vaihtoehto on hauduttaa minttu vedessä ja siivilöidä lehdet ennen puuron keittämistä. Tälle siivilöidylle vaihtoehdolle ei ole laskettu GK-arviota; tämän sivun lukua ei saa käyttää sille.
