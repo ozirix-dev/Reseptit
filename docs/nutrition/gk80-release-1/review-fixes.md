@@ -11,3 +11,5 @@ Katselmointi: [5717723908](https://github.com/ozirix-dev/Reseptit/pull/140#pullr
 Luvut eivät muuttuneet. Hu tieu CHO42,077/GK25,403; chao ga ja bubur kumpikin CHO37,324/GK29,7296; minttu CHO39,412/GK26,1793. Kaikki neljä makroa tarkistettiin uudelleen Decimalilla. Proosamuutosten resepti- ja syötehashit päivittyivät. Muut322 täydellistä tulosobjektia säilyivät.
 
 Varmennus: 165 yksikkötestiä,25 staattista testiä ja27 käännöstestiä PASS; build PASS. Brave-selain: kolme muuttunutta reseptisivua sekä neljä menetelmäsivun kieliversiota. Paikallinen Vite-preview hallitussa terminaalisessiossa, ei tuotantojulkaisua. Omistajan menetelmä- ja sisältöhyväksyntä odottaa edelleen.
+
+Kaksi erillistä main-pohjaista julkaisupakettia käyttävät samaa rajattua adapteria. Se hyväksyy vain ennalta nimetyt neljä tai kahdeksan ID:tä; puuttuvaa toista pakettia ei tuoda mukaan. Molempien pakettien yhteiskäyttö vaatii vielä yhdistetyn julkaisuversion erillisen hyväksynnän ja regressiot. Tämä PR sisältää vain ensimmäisen neljän datan. Kohdennetut8testiä ja TypeScript PASS myös yhteisellä adapterilla.

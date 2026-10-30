@@ -1,26 +1,37 @@
-import {readFile} from 'node:fs/promises';import path from 'node:path';import {createHash} from 'node:crypto';
-import {calculate,type Recipe,type Source,type CompositionSource} from './gk80-candidate-model';
+import {readFile,access} from 'node:fs/promises';import path from 'node:path';import {createHash} from 'node:crypto';
+import {type Recipe,type Source,type CompositionSource} from './gk80-candidate-model';
+import {calculateCandidate as calculate} from './gk80-candidate-policy';
 import type {GlycemicLoadResult} from './glycemic-load-model';
 import {classifyGk80Source, type EvidenceKind, type ApplicationKind} from './gk80-source-classification';
 type Ref={title:string;url:string;matchKind:'EXACT'|'ANALOG'|'CALCULATION_POLICY';evidenceKind:EvidenceKind;applicationKind:ApplicationKind;confidence:'LOW';note:string};
 type Extended=GlycemicLoadResult&{assessmentType?:'PUBLISHED_IMPUTATION';modelScenario?:'POINT_SCENARIO'|'NAMED_SCENARIO_RANGE';candidateSources?:Ref[];candidateCarbohydrateSources?:Array<{title:string;url:string;note:string}>};
+const packs = [{"folder": "gk80-release-1", "ids": ["vietnamilainen-hu-tieu-aamiaiskeitto", "vietnamilainen-chao-ga-kanapuuro", "indonesialainen-bubur-ayam-kanariisipuuro", "pohjoisafrikkalainen-minttutee-kaurapuuro"]}, {"folder": "gk80-release-2", "ids": ["meksikolainen-huevos-a-la-mexicana", "karibia-callaloo-munakas", "yrttituorejuusto-kinkkurullat", "kreikkalainen-kanavuoka-oliiveilla", "kanapyorykat-tomaattikastike", "malesialainen-nasi-lemak-aamiaisella", "kiinalainen-musta-seesamipuuro", "harira"]}];
+async function loadPacks(root:string){
+ const found=[];
+ for(const pack of packs){
+  const folder=path.join(root,'docs/nutrition',pack.folder);
+  try{await access(folder);}catch(e){if((e as NodeJS.ErrnoException).code==='ENOENT')continue;throw e;}
+  const json=async(n:string)=>JSON.parse(await readFile(path.join(folder,n),'utf8'));
+  const manifest=await json('manifest.json'),recipes:(Recipe&{sourcePath:string})[]=(await json('recipes.json')).recipes;
+  const sorted=(a:string[])=>JSON.stringify([...a].sort());
+  if(sorted(manifest.recipeIds)!==sorted(pack.ids)||recipes.length!==pack.ids.length||new Set(recipes.map(r=>r.recipeId)).size!==pack.ids.length||sorted(recipes.map(r=>r.recipeId))!==sorted(pack.ids))throw Error('GK80_RELEASE_SCOPE');
+  found.push({recipes,sources:(await json('sources.json')).records as Source[],comps:(await json('composition-sources.json')).records as CompositionSource[],golden:(await json('golden.json')).recipes});
+ }
+ return found;
+}
 export async function validateGk80Candidate(root:string,recipeId:string):Promise<boolean>{
- const folder=path.join(root,'docs/nutrition/gk80-release-1');
- const json=async(n:string)=>JSON.parse(await readFile(path.join(folder,n),'utf8'));
- const manifest=await json('manifest.json');if(!manifest.recipeIds.includes(recipeId))return false;
- const r=(await json('recipes.json')).recipes.find((r:Recipe)=>r.recipeId===recipeId);
- if(!r)throw Error('GK80_RELEASE_SCOPE');
- const text=(await readFile(path.join(root,r.sourcePath),'utf8')).replaceAll('\r\n','\n');
- const hash=createHash('sha256').update(text).digest('hex');
- const golden=(await json('golden.json')).recipes.find((g:{recipeId:string})=>g.recipeId===recipeId);
- return calculate(r,(await json('sources.json')).records,hash,golden.inputHash,(await json('composition-sources.json')).records).numericProposal;
+ for(const pack of await loadPacks(root)){
+  const r=pack.recipes.find(r=>r.recipeId===recipeId);if(!r)continue;
+  const text=(await readFile(path.join(root,r.sourcePath),'utf8')).replaceAll('\r\n','\n');
+  const hash=createHash('sha256').update(text).digest('hex');
+  const golden=pack.golden.find((g:{recipeId:string})=>g.recipeId===recipeId);
+  return calculate(r,pack.sources,hash,golden.inputHash,pack.comps).numericProposal;
+ }
+ return false;
 }
 export async function applyGk80Release(root:string,legacy:GlycemicLoadResult[]):Promise<Extended[]>{
- const folder=path.join(root,'docs/nutrition/gk80-release-1'),json=async(n:string)=>JSON.parse(await readFile(path.join(folder,n),'utf8'));
- const recipes:(Recipe&{sourcePath:string})[]=(await json('recipes.json')).recipes,sources:Source[]=(await json('sources.json')).records,comps:CompositionSource[]=(await json('composition-sources.json')).records,golden=(await json('golden.json')).recipes;
- const manifest=await json('manifest.json');
- if(recipes.length!==4||new Set(recipes.map(r=>r.recipeId)).size!==4||JSON.stringify(recipes.map(r=>r.recipeId))!==JSON.stringify(manifest.recipeIds))throw Error('GK80_RELEASE_SCOPE');
  const out:Extended[]=[...legacy];
+ for(const {recipes,sources,comps,golden} of await loadPacks(root)){
  for(const r of recipes){
   const current=createHash('sha256').update((await readFile(path.join(root,r.sourcePath),'utf8')).replaceAll('\r\n','\n')).digest('hex');
   const expected=golden.find((g:{recipeId:string})=>g.recipeId===r.recipeId);
@@ -37,8 +48,9 @@ export async function applyGk80Release(root:string,legacy:GlycemicLoadResult[]):
     availableCarbohydratePer100g:i.per100g?.availableCarbohydrate??null,availableCarbohydratePerServingG:s.contributions[n].carbohydrate,
     availableCarbohydratePerServingRangeG:null,gi:map.get(i.giId??i.impact?.sourceId??'')?.gi??null,giRecordId:i.giId??i.impact?.sourceId??null,
     qualityTier:null,matchKind:null,confidence:'LOW',giContribution:s.contributions[n].gk,giContributionRange:null,giCandidates:[],issues:[]})),
-   candidateSources:used.map(id=>{const source=map.get(id)!;return {title:String(source.food??id),url:String(source.sourceUrl),...classifyGk80Source(source.evidenceKind??'HUMAN_GI',r.scenarios.flatMap(s=>s.ingredients).filter(i=>(i.giId??i.impact?.sourceId)===id).every(i=>i.match==='DIRECT')?'DIRECT':'APPLIED'),confidence:'LOW',note:`GK80 ${source.evidenceKind??'HUMAN_GI'}: ${source.limitations??source.food}. Recipe-specific applicability: ${r.scenarios[0].ingredients.filter(i=>(i.giId??i.impact?.sourceId)===id).map(i=>i.applicability).join('; ')}`};}),
+   candidateSources:used.map(id=>{const source=map.get(id)!;return {title:String(source.food??id),url:String(source.sourceUrl),...classifyGk80Source(source.evidenceKind??'HUMAN_GI',r.scenarios.flatMap(s=>s.ingredients).filter(i=>(i.giId??i.impact?.sourceId)===id).every(i=>i.match==='DIRECT')?'DIRECT':'APPLIED'),confidence:'LOW',note:`GK80 ${source.evidenceKind??'HUMAN_GI'}: ${source.limitations??source.food}. Recipe-specific applicability: ${r.scenarios.flatMap(s=>s.ingredients).filter(i=>(i.giId??i.impact?.sourceId)===id).map(i=>i.applicability).join('; ')}`};}),
    candidateCarbohydrateSources:ids.map(id=>{const c=comps.find(x=>x.id===id)!,rec=c.sourceRecord as {name:string;sourceUrl:string;licence?:string};return {title:rec.name,url:rec.sourceUrl,note:rec.licence??'Identified composition source; available carbohydrate already excludes fibre and polyols.'};})};
+ }
  }
  return out;
 }
