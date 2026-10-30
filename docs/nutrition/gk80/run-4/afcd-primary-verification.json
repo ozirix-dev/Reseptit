@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "sourceUrl": "https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Nutrient%20profiles.xlsx",
+  "documentSha256": "14cb3e73dbf58987b440e6299624c0fefd7a4e61591fc1f753995d9534e0efc9",
+  "worksheet": "Release 3 - Nutrient profiles (per 100 g)",
+  "selectedRows": [
+    {
+      "id": "F008004",
+      "name": "Sauce, fish, commercial",
+      "availableCarbohydrate": 4.4,
+      "protein": 6.8,
+      "fat": 0.3,
+      "fibre": 1.2
+    },
+    {
+      "id": "F008065",
+      "name": "Sauce, soy, commercial",
+      "availableCarbohydrate": 3.2,
+      "protein": 6.8,
+      "fat": 0.0,
+      "fibre": 0.0
+    },
+    {
+      "id": "F002983",
+      "name": "Coconut, fresh, mature fruit, flesh",
+      "availableCarbohydrate": 3.3,
+      "protein": 3.8,
+      "fat": 32.8,
+      "fibre": 8.1
+    },
+    {
+      "id": "F009076",
+      "name": "Tahini, sesame seed pulp",
+      "availableCarbohydrate": 1.0,
+      "protein": 20.4,
+      "fat": 60.7,
+      "fibre": 13.5
+    }
+  ],
+  "comparison": "All four macros exactly match the existing immutable per100g reference within1e-10 numerical representation tolerance. Live API defaults to per100mL for some liquids and was not used as a direct per100g numeric source."
+}

@@ -1,0 +1,692 @@
+{
+  "reviewed": 14,
+  "selectedForRelease2": [
+    "meksikolainen-huevos-a-la-mexicana",
+    "karibia-callaloo-munakas",
+    "yrttituorejuusto-kinkkurullat",
+    "kreikkalainen-kanavuoka-oliiveilla",
+    "kanapyorykat-tomaattikastike",
+    "malesialainen-nasi-lemak-aamiaisella",
+    "kiinalainen-musta-seesamipuuro",
+    "harira"
+  ],
+  "recipes": [
+    {
+      "recipeId": "meksikolainen-huevos-a-la-mexicana",
+      "selectedForRelease2": true,
+      "decision": "Eight-recipe release2 candidate, complete composition and weighed content; shared policy approval remains open.",
+      "oldInputHash": "3a7066fe6cf54306027945f4a73ea19b3a73bbcb98fd67642db0b32c670d9e35"
+    },
+    {
+      "recipeId": "karibia-callaloo-munakas",
+      "selectedForRelease2": true,
+      "decision": "Eight-recipe release2 candidate, complete composition and weighed content; shared policy approval remains open.",
+      "oldInputHash": "d7b66c49c3a83e8697b3f563d8af4cf27a1ea519d86cf91c40c379eb324ca865"
+    },
+    {
+      "recipeId": "yrttituorejuusto-kinkkurullat",
+      "selectedForRelease2": true,
+      "decision": "Eight-recipe release2 candidate, complete composition and weighed content; shared policy approval remains open.",
+      "oldInputHash": "c0bce26cbc324ab8ee5f6ae2a6218c671118ed3d84e78d5f9e6622484878a7db"
+    },
+    {
+      "recipeId": "janssoninkiusaus-juuriselleri",
+      "selectedForRelease2": false,
+      "decision": "Not selected: oil-preserved anchovy version must be named separately from Swedish sweet ansjovis; no claim to traditional product composition.",
+      "oldInputHash": "b53437ce3cd12bd769a07de5bf1f5dc70b0fdcd5e0c5aa1946e72fb1bb23b419"
+    },
+    {
+      "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+      "selectedForRelease2": true,
+      "decision": "Eight-recipe release2 candidate, complete composition and weighed content; shared policy approval remains open.",
+      "oldInputHash": "d67ac3380e6bddea4420fe7f70cd18da0ef27b940be00c86c8ef454b5aae2f29"
+    },
+    {
+      "recipeId": "caponata",
+      "selectedForRelease2": false,
+      "decision": "Not selected: needs synchronized FI/EN/SV/TH content preparation.",
+      "oldInputHash": "3f687aa938842db9447d0a6b447e746bc39245d483257bc6f39562202eb0eac3"
+    },
+    {
+      "recipeId": "kanapyorykat-tomaattikastike",
+      "selectedForRelease2": true,
+      "decision": "Eight-recipe release2 candidate, complete composition and weighed content; shared policy approval remains open.",
+      "oldInputHash": "e39384f50e961b0873e910348dc915024758cb969b24a0f6ef526d1dd3548abb"
+    },
+    {
+      "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+      "selectedForRelease2": true,
+      "decision": "Eight-recipe release2 candidate, complete composition and weighed content; shared policy approval remains open.",
+      "oldInputHash": "5465ca4476b8628b636afb7ffc090067a687fd7d97abcda4a60884d2a96feedf"
+    },
+    {
+      "recipeId": "kiinalainen-musta-seesamipuuro",
+      "selectedForRelease2": true,
+      "decision": "Eight-recipe release2 candidate, complete composition and weighed content; shared policy approval remains open.",
+      "oldInputHash": "9d6fa92078581b68fa20c611120ac242945661e6645ccca79f479cf20479082e"
+    },
+    {
+      "recipeId": "harira",
+      "selectedForRelease2": true,
+      "decision": "Eight-recipe release2 candidate, complete composition and weighed content; shared policy approval remains open.",
+      "oldInputHash": "7694df2de1dcb039a86f34e0297a77fa7a892dbd6da5bbaf0a6d4c5b23056f4e"
+    },
+    {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "selectedForRelease2": false,
+      "decision": "CORRECTED: butternut incorrectly matched the substring butter and received dairy30; replace with boiled-butternut human analogue51. No new-ID credit.",
+      "oldInputHash": "8154be9aa3f233b4524853b62fb80fd2b108a8173d5692c7cae9e23922f4b491"
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "selectedForRelease2": false,
+      "decision": "Not selected: needs synchronized FI/EN/SV/TH content preparation.",
+      "oldInputHash": "9e7b2a706efd11d349db3394be9a537047492b4eb6849e0076fbe05ae2073ce3"
+    },
+    {
+      "recipeId": "rogan-josh",
+      "selectedForRelease2": false,
+      "decision": "Not selected: needs synchronized FI/EN/SV/TH content preparation.",
+      "oldInputHash": "80409be93cbb4e40a8e4bf956b9d7bee8a3d98c777199460f694aef17b67a737"
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "selectedForRelease2": false,
+      "decision": "Not selected: needs synchronized FI/EN/SV/TH content preparation.",
+      "oldInputHash": "7f0f08b8128cfa6fa2be0e33c21ab648ef19257ccb249e5fcbe7f71dfeb819ab"
+    }
+  ],
+  "correction": {
+    "recipe": {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "title": "Japanilainen kurpitsapuuro kabocha",
+      "sourcePath": "reseptit/aamupalat/japanilainen-kabocha-puuro.md",
+      "sourceSha256": "9adaae1694bb45b1664113eab4a30e8aeba99e55848d163594c5af9c2f1ed418",
+      "servings": 2,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kuorittua myskikurpitsaa",
+              "state": "raw butternut pumpkin, peeled edible portion",
+              "massG": 250,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 6.9,
+                "protein": 2.1,
+                "fat": 0.6,
+                "fibre": 1.8
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "boiled-butternut",
+              "match": "APPLIED",
+              "applicability": "Explicit peeled butternut variant, soft boiled pieces; human boiled-butternut51 preparation analogue, never dairy coding.",
+              "composition": {
+                "sourceId": "afcd-F007535-release-3-e6f3b6c9",
+                "evidenceHash": "73ca5bd92d8d0752f795e9de8efa3dd79b9902fb337dfdca231b611a0e2e20d0"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 250,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "pumpkin51",
+                "evidenceHash": "3e39c711069ef80f308c0b43030a28e2de3a8bc27c359cba33a8565b9e5b4d2c",
+                "rationale": "Correct erroneous butter substring match; named human food/preparation comparison, LOW confidence."
+              }
+            },
+            {
+              "index": 1,
+              "name": "riisi",
+              "state": "dry uncooked white long-grain rice",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 74,
+                "protein": 7,
+                "fat": 0.9,
+                "fibre": 0.8
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "rice-congee",
+              "match": "APPLIED",
+              "applicability": "Specify white jasmine rice simmered as soft hot porridge about 40 min. Published 40min steamed porridge is an explicit LOW cooking analogue, not ordinary boiled grain GI.",
+              "composition": {
+                "sourceId": "afcd-F007682-release-3-e20d6ed7",
+                "evidenceHash": "b67c00bf1efde856be513d556c7227945081f26357b7a270d9c10574f06c2334"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "rice-congee80",
+                "evidenceHash": "af37b2de4742d497b6d320272bc4c41ab2e6a22c532a3cc7e46bb0ab6a747fcc",
+                "rationale": "Specify white jasmine rice simmered as soft hot porridge about 40 min. Published 40min steamed porridge is an explicit LOW cooking analogue, not ordinary boiled grain GI."
+              }
+            },
+            {
+              "index": 2,
+              "name": "kookosmaito",
+              "state": "regular-fat canned coconut milk as sold",
+              "massG": 184.0,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.7,
+                "protein": 1.4,
+                "fat": 15.4,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "lowcho-code",
+              "match": "APPLIED",
+              "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+              "composition": {
+                "sourceId": "afcd-F002991-release-3-aef4d973",
+                "evidenceHash": "e6134017a50f1d00dcf471dd9c178643e642b260f5bacaf24f8827db4519dc61"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 184.0,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-v2",
+                "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+                "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+              }
+            },
+            {
+              "index": 3,
+              "name": "mustia seesaminsiemeniä",
+              "state": "hulled sesame seeds, black variety not separately available",
+              "massG": 5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.171,
+                "protein": 24.6,
+                "fat": 59.7,
+                "fibre": 11.3
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "small-spice-extension",
+              "match": "APPLIED",
+              "applicability": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
+              "composition": {
+                "sourceId": "fineli-34245-release-20-60090bb3",
+                "evidenceHash": "ef1a9b5a0579042c16fd4ef3cc473fa04d0eba87dd1d51927349ac41577e208b"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 5,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              },
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "spice-portion50-v2",
+                "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+                "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+              }
+            },
+            {
+              "index": 4,
+              "name": "vettä",
+              "state": "plain tap water",
+              "massG": 700,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": false,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": {
+                "sourceId": "fineli-922-release-20-b29dcbd9",
+                "evidenceHash": "25d0304ab4c658dd4fdc879c9c576d0332fa4a30e36d27c5ed3fe0a21d7a23d1"
+              },
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 700,
+                "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+              }
+            },
+            {
+              "index": 5,
+              "name": "suolaa",
+              "state": "salt omitted; no contribution to displayed macronutrients",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero CHO composition; no assigned GI zero",
+              "composition": null,
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": null,
+                "basis": "Named weighed recipe version. Converted historical spoon/cup masses become proposed gram amounts, not a newly verified density or portion measurement."
+              }
+            }
+          ]
+        }
+      ],
+      "group": "shared-source",
+      "batch": 1,
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "approved": false,
+      "published": false,
+      "reviewState": "CORRECTED_DRAFT_NUMERIC",
+      "originalPreparation": "\n\n1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Huuhtele riisi ja kuutioi kuorittu myskikurpitsa. Keitä riisiä ja kurpitsaa vedessä, kunnes riisi on pehmeää ja kurpitsa hajoaa puuroon. Lisää kookosmaito ja hauduta hetki. Tarjoa mustien seesaminsiementen kanssa.\n",
+      "proposedPreparation": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota.",
+        "Keitä valkoisesta jasmiiniriisistä ja määritellystä nesteestä pehmeä puuro noin 40 minuutissa. Kaikki siemenet ja lisäainekset syödään. Ei sileäksi jauhamista tai jäähdytyksen vaikutuksesta annettavaa hyvitystä."
+      ],
+      "notes": [
+        "Named butternut-rice porridge variant: 250 g peeled butternut replaces title kabocha. No puree."
+      ],
+      "compositionPath": "docs/nutrition/calculations/japanilainen-kabocha-puuro.json",
+      "compositionSha256": "68ce13188b8f043e284a593407dcdb7dfb92d2e8529c78c94d6008ceeea155ea",
+      "proposedTitle": "Japanilaistyylinen myskikurpitsa-riisipuuro",
+      "correction": "R3 dairy30 assignment was an ingredient-classification error. No production result ever used it."
+    },
+    "golden": {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "inputHash": "b9667020aaeebfcc54d85791c84d8bca31f8d1238af78c4a7db4b0b36a3adc4a",
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "macros": {
+            "availableCarbohydrate": 47.218275,
+            "protein": 8.028,
+            "fat": 16.8605,
+            "fibre": 2.9325
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 8.625,
+              "gk": 4.39875
+            },
+            {
+              "index": 1,
+              "carbohydrate": 37.0,
+              "gk": 29.6
+            },
+            {
+              "index": 2,
+              "carbohydrate": 1.564,
+              "gk": 0.782
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.029275,
+              "gk": 0.0146375
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 34.7953875,
+          "wholeGk": 34.7953875,
+          "wholeCarbohydrate": 47.218275,
+          "imputedImpact": 0.7966375
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "chickpea-mean28",
+        "gi": 28,
+        "scale": "GLUCOSE_100",
+        "family": "cooked-chickpea",
+        "food": "Chickpeas, food-specific mean",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Table 1 food-specific means; not SEM as range",
+        "confidence": "LOW",
+        "limitations": "Applied food/preparation analogue; generic composition separately sourced. Not a broad all-legume or all-grain mean.",
+        "evidenceHash": "be748b0bd80b411c52a55fd893b28cc4dfbc35cf1a24898ba5cf5fc6afe7c6bc"
+      },
+      {
+        "id": "couscous65",
+        "gi": 65,
+        "scale": "GLUCOSE_100",
+        "family": "couscous",
+        "food": "San Remo couscous rehydrated hot water",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Table1 row560 p39",
+        "confidence": "LOW",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "69deea1d1229c1d06f25bb8ff27b19e6003b63f39c6aec25cffb8bc99475122a",
+        "limitations": "Named published glucose-scale point; no additional scale conversion. Generic raw composition is a separate proxy, not the exact branded label. Alternative products/preparations, not confidence bounds.",
+        "evidenceHash": "b3ff179daac313c118913cc2861889805bbdb38bf2a7cf17c8a640baf7904056"
+      },
+      {
+        "id": "dairy-imputation30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "dairy-code",
+        "food": "Unsweetened animal dairy coding assignment",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Conclusions, low-carbohydrate product assignment",
+        "confidence": "LOW",
+        "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+        "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+      },
+      {
+        "id": "honey-category-mean-gi-55-2002",
+        "gi": 55,
+        "scale": "GLUCOSE_100",
+        "family": "honey",
+        "food": "Honey, mean of 11 types",
+        "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+        "originalStudy": {
+          "title": "International table of glycemic index and glycemic load values: 2002",
+          "url": "https://doi.org/10.1093/ajcn/76.1.5",
+          "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+          "year": 2002,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": null,
+          "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+          "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+        },
+        "referenceFood": "Already glucose-normalized in pinned active registry; do not convert twice",
+        "confidence": "LOW",
+        "limitations": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey.",
+        "allowedUse": "Only the named family and explicit preparation review",
+        "activeRecord": {
+          "id": "honey-category-mean-gi-55-2002",
+          "gi": 55,
+          "foodKey": "honey-category-mean",
+          "preparationKey": "category-mean",
+          "food": "Honey, mean of 11 types",
+          "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+          "qualityTier": "SUPPLEMENTARY",
+          "referenceScale": "GLUCOSE_100",
+          "matchKind": "CATEGORY_MEAN",
+          "confidence": "LOW",
+          "source": {
+            "title": "International table of glycemic index and glycemic load values: 2002",
+            "url": "https://doi.org/10.1093/ajcn/76.1.5",
+            "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+            "year": 2002,
+            "published": true,
+            "iso26642Confirmed": false,
+            "participants": null,
+            "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+            "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+          },
+          "note": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey."
+        },
+        "newRecord": false,
+        "evidenceHash": "077705618b3aceedea03e5f2a3e5f23a032b1a923d811869303a141a873a3dd4"
+      },
+      {
+        "id": "lentil-mean32",
+        "gi": 32,
+        "scale": "GLUCOSE_100",
+        "family": "cooked-lentil",
+        "food": "Boiled lentils, food-specific mean",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Table 1 food-specific means; not SEM as range",
+        "confidence": "LOW",
+        "limitations": "Applied food/preparation analogue; generic composition separately sourced. Not a broad all-legume or all-grain mean.",
+        "evidenceHash": "0986393e2ccc72660695cb00ec6550bf6ab7696957b37354ed35457b241534d3"
+      },
+      {
+        "id": "lowcho50-v2",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default. The <=5 g/100 g operational cutoff and named bindings are explicit project interpretation, not a threshold validated by Schakel. Excludes ordinary fruit, flour, concentrated sauce and nuts above the cutoff.",
+        "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889"
+      },
+      {
+        "id": "pasta-mean49",
+        "gi": 49,
+        "scale": "GLUCOSE_100",
+        "family": "wheat-pasta",
+        "food": "White spaghetti, food-specific mean",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Table 1 food-specific means; not SEM as range",
+        "confidence": "LOW",
+        "limitations": "Applied food/preparation analogue; generic composition separately sourced. Not a broad all-legume or all-grain mean.",
+        "evidenceHash": "e971485deadcfa73418ca97b974a6fc495f6a5ec6e77faaa6f2bbfaa98d19f13"
+      },
+      {
+        "id": "penne47",
+        "gi": 47,
+        "scale": "GLUCOSE_100",
+        "family": "penne",
+        "food": "De Cecco penne mezzane durum wheat",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Table1 row1455 p99",
+        "confidence": "LOW",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "69deea1d1229c1d06f25bb8ff27b19e6003b63f39c6aec25cffb8bc99475122a",
+        "limitations": "Named published glucose-scale point; no additional scale conversion. Generic raw composition is a separate proxy, not the exact branded label. Alternative products/preparations, not confidence bounds.",
+        "evidenceHash": "a1c74112a4ed87bace5dc1caabbdba6dcd7ec860e4f958adc3020e29a56c58f2"
+      },
+      {
+        "id": "penne50",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "penne",
+        "food": "Barilla penne durum wheat",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Table1 row1454 p99",
+        "confidence": "LOW",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "69deea1d1229c1d06f25bb8ff27b19e6003b63f39c6aec25cffb8bc99475122a",
+        "limitations": "Named published glucose-scale point; no additional scale conversion. Generic raw composition is a separate proxy, not the exact branded label. Alternative products/preparations, not confidence bounds.",
+        "evidenceHash": "cb87a52a86618681629be3ad0a9315ab49b613b1ef54099db5b1cba8e42e8961"
+      },
+      {
+        "id": "rice-basmati57",
+        "gi": 57,
+        "family": "rice-grain",
+        "food": "basmati rice",
+        "preparation": "cooked rice as specified in Venn2014; no cooled-rice claim",
+        "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+        "originalStudy": "Venn2014 PMID24885045 PMC4047427",
+        "location": "Table2 European cohort glucose-reference column",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4047427/fullTextXML",
+        "documentSha256": "c4342f41f5c5478e1c9e9baaf257c480e885f8eb064ecf53fa053d0ab55585c8",
+        "scale": "GLUCOSE_100",
+        "referenceFood": "Glucose",
+        "participants": 31,
+        "statisticalUncertainty": {
+          "kind": "95%CI",
+          "usedAsRecipeRange": false
+        },
+        "limitations": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+        "confidence": "LOW",
+        "allowedUse": "Named grain-rice or sucrose applications only",
+        "newRecord": true,
+        "evidenceHash": "a644c4fd5e3969e23f403a0ca732e108cfe9c9dd4157c96c76b1117ca773c57c"
+      },
+      {
+        "id": "rice-congee80",
+        "gi": 80,
+        "scale": "GLUCOSE_100",
+        "family": "rice-congee",
+        "food": "Jasmine rice porridge, steamed 40 min; 31.6 g rice + 250 ml water",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+        "location": "Table 1 row 659 p46",
+        "originalStudy": "Thailand 2016, COFCO China rice, unpublished observations UO18",
+        "evidenceKind": "HUMAN_GI",
+        "confidence": "LOW",
+        "limitations": "Published GI result; detailed original protocol unavailable. Applied to a specified hot 40-minute rice porridge, not ordinary grain rice; simmering vs steaming remains an explicit analogy.",
+        "newRecordInRun2": true,
+        "accessMethod": "Published original supplement, third-party mirror; cited original study not automatically full-text verified",
+        "participants": 10,
+        "statisticalUncertainty": {
+          "kind": "SEM",
+          "value": 7,
+          "usedAsRecipeRange": false
+        },
+        "evidenceHash": "af37b2de4742d497b6d320272bc4c41ab2e6a22c532a3cc7e46bb0ab6a747fcc"
+      },
+      {
+        "id": "rice-jasmine68",
+        "gi": 68,
+        "family": "rice-grain",
+        "food": "jasmine rice",
+        "preparation": "cooked rice as specified in Venn2014; no cooled-rice claim",
+        "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+        "originalStudy": "Venn2014 PMID24885045 PMC4047427",
+        "location": "Table2 European cohort glucose-reference column",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4047427/fullTextXML",
+        "documentSha256": "c4342f41f5c5478e1c9e9baaf257c480e885f8eb064ecf53fa053d0ab55585c8",
+        "scale": "GLUCOSE_100",
+        "referenceFood": "Glucose",
+        "participants": 31,
+        "statisticalUncertainty": {
+          "kind": "95%CI",
+          "usedAsRecipeRange": false
+        },
+        "limitations": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+        "confidence": "LOW",
+        "allowedUse": "Named grain-rice or sucrose applications only",
+        "newRecord": true,
+        "evidenceHash": "3ecc3f0a5f8206b53edb3b53c56e2dd317df7bfcfe159254bd488b93a4f4c2b0"
+      },
+      {
+        "id": "spice-portion50-v2",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed small culinary dried-spice or seed portion",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Not a measured seed/spice GI. Explicit owner method decision required. Only spices/seeds with complete composition and fixed mass, <=0.5 g CHO each and <=1 g aggregate per serving. No oilseed flour, tahini, nut butter, whole sticks/pods, unknown extraction or large portions.",
+        "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369"
+      },
+      {
+        "id": "sucrose60",
+        "gi": 60,
+        "family": "sucrose",
+        "food": "LoGiCane sucrose",
+        "preparation": "sucrose solution",
+        "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+        "originalStudy": "Venn2014 PMID24885045 PMC4047427",
+        "location": "Table2 European cohort glucose-reference column",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4047427/fullTextXML",
+        "documentSha256": "c4342f41f5c5478e1c9e9baaf257c480e885f8eb064ecf53fa053d0ab55585c8",
+        "scale": "GLUCOSE_100",
+        "referenceFood": "Glucose",
+        "participants": 31,
+        "statisticalUncertainty": {
+          "kind": "95%CI",
+          "usedAsRecipeRange": false
+        },
+        "limitations": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+        "confidence": "LOW",
+        "allowedUse": "Named grain-rice or sucrose applications only",
+        "newRecord": true,
+        "evidenceHash": "544a951d71bed9d596342e2e5b0671f21a888f4fff78e909281877e5621fd783"
+      },
+      {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      {
+        "id": "pumpkin51",
+        "gi": 51,
+        "scale": "GLUCOSE_100",
+        "family": "boiled-butternut",
+        "food": "Peeled boiled butternut pumpkin",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Supplement1 row1799 p120",
+        "confidence": "LOW",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "69deea1d1229c1d06f25bb8ff27b19e6003b63f39c6aec25cffb8bc99475122a",
+        "limitations": "Human evidence applied to named food/preparation, LOW analogue. Not measured meal GI. Source SEM is not a recipe interval. Generic composition remains a separate proxy.",
+        "evidenceHash": "3e39c711069ef80f308c0b43030a28e2de3a8bc27c359cba33a8565b9e5b4d2c"
+      }
+    ],
+    "compositionReference": "docs/nutrition/gk80/run-3-v2/composition-sources.json",
+    "oldGk": 32.9841375,
+    "newGk": 34.7953875,
+    "macrosChanged": false,
+    "newUniqueCount": 0
+  }
+}

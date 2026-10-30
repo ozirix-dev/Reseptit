@@ -1,0 +1,64 @@
+{
+  "families": [
+    {
+      "id": "GRAIN_PREPARATION",
+      "solution": "Named hot rice, rolled-oat, white-pita and cooked-cornmeal food/preparation comparisons. No raw-flour GI transfer.",
+      "recipeIds": [
+        "congee-riisipuuro",
+        "tomaatti-kananmuna-wokki",
+        "indonesialainen-nasi-uduk-aamiaisella",
+        "thai-khao-tom-katkaravuilla",
+        "karibia-kookosriisi-pavuilla",
+        "pohjoisafrikkalainen-lablabi",
+        "meksikolainen-atole-maissipuuro",
+        "karibia-maissipuuro-kookoksella",
+        "meksikolainen-kurpitsapuuro-piloncillolla",
+        "lahi-ita-taatelipuuro-tahinilla",
+        "valimerellinen-tahinipuuro",
+        "bulgogi",
+        "doner-kebab",
+        "bun-cha-hanoi"
+      ],
+      "count": 14,
+      "limits": "Exact named food/state/heat required; no cooled rice, dough, raw flour, instant oats, corn starch or physiological interval.",
+      "reusable": true
+    },
+    {
+      "id": "NAMED_LOW_CHO_PRODUCTS",
+      "solution": "Complete named AFCD soy sauce3.2, fish sauce4.4, tahini1.0 and Maille Dijon3.5 compositions, followed by explicit published default50 application.",
+      "recipeIds": [
+        "shoyu-kanakeitto-konjac",
+        "congee-riisipuuro",
+        "tomaatti-kananmuna-wokki",
+        "hunaja-sinappikana-kaalilla",
+        "nakkikastike-kukkakaalimuusi",
+        "lahi-ita-taatelipuuro-tahinilla",
+        "valimerellinen-tahinipuuro",
+        "bulgogi",
+        "bun-cha-hanoi"
+      ],
+      "count": 9,
+      "limits": "Project5g/100g cutoff and named composition allowlist; not all tamari/tahini/mustard brands. No oyster/miso/curry or unknown-paste blanket assignment.",
+      "reusable": true
+    },
+    {
+      "id": "COMPLETE_EDIBLE_VARIANTS",
+      "solution": "Concrete retained-pan marinades, edible peeled citrus, raw-cabbage/fresh-coconut/crushed-tomato/fresh-garlic variants. All weighed food, fat and sauce consumed; source and proposed-version hashes.",
+      "recipeIds": [
+        "bulgogi",
+        "bun-cha-hanoi",
+        "carnitas-salaattitacot",
+        "doner-kebab",
+        "thai-papaijajogurtti",
+        "taytetyt-paprikat-vhh",
+        "uunikanapasta-kesakurpitsa",
+        "sitruuna-yrttikana-parsa"
+      ],
+      "count": 8,
+      "limits": "Requires explicit new title/version and owner content approval; does not establish retention for discarded marinade, extracted leaves, original grill version or optional sides.",
+      "reusable": true
+    }
+  ],
+  "countsOverlap": true,
+  "uniqueNumeric": 26
+}
