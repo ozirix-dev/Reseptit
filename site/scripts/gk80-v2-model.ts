@@ -28,7 +28,7 @@ export function calculateV2(recipe:Recipe,sources:Source[],recipeHash:string,inp
   const numericProposal=complete&&recipe.coverageProposalEligible&&['A','B','C','D'].includes(recipe.method)&&!result.broad;
   const evidenceTypes=[...new Set(recipe.scenarios.flatMap(s=>s.ingredients.flatMap(i=>i.impact?[i.impact.kind==='PUBLISHED_IMPUTATION'?'PUBLISHED_IMPUTATION':'FOOD_ANALOGUE']:i.giId?[i.match==='DIRECT'?'DIRECT':'FOOD_ANALOGUE']:[])))] as EvidenceType[];
   return {...result,numericProposal,policyVersion:'GK80-V2-2026-10-30',
-    methodType:(numericProposal?(recipe.scenarios.length>1?'MODELLED_SCENARIO':evidenceTypes.includes('PUBLISHED_IMPUTATION')?'PUBLISHED_IMPUTATION':evidenceTypes.includes('FOOD_ANALOGUE')?'FOOD_ANALOGUE':'DIRECT'):result.scenarios.every(s=>s.contributions.every(c=>c.carbohydrate!==null))?'CHO_ONLY':'UNAVAILABLE') as EvidenceType,
+    methodType:(numericProposal?(recipe.scenarios.length>1?'MODELLED_SCENARIO':evidenceTypes.includes('PUBLISHED_IMPUTATION')?'PUBLISHED_IMPUTATION':evidenceTypes.includes('FOOD_ANALOGUE')?'FOOD_ANALOGUE':'DIRECT'):result.scenarios.every(s=>s.wholeCarbohydrate!==null)?'CHO_ONLY':'UNAVAILABLE') as EvidenceType,
     evidenceTypes,previousOneUnitScreenPassed:result.impact.imputedWithinPolicy,
     interpretation:'Named modeled recipe proposal; LOW confidence. Scenario options are not physiological uncertainty bounds. All positive CHO retained; no implicit zero or GI100 maximum.'};
 }

@@ -24,6 +24,7 @@ test('valid published imputation can exceed one GK without being relabelled dire
 test('a missing binding or stale recipe input blocks a whole numerical proposal',()=>{
  const r=structuredClone(recipes[0]);delete r.scenarios[0].ingredients[0].impact;
  assert.throws(()=>run(r),/STALE_INPUT/);assert.equal(calculateV2(r,sources,r.sourceSha256,fingerprint(r),comps).numericProposal,false);
+ const incompleteScope=structuredClone(recipes[0]);incompleteScope.completeInputScope=false;assert.equal(calculateV2(incompleteScope,sources,incompleteScope.sourceSha256,fingerprint(incompleteScope),comps).methodType,'UNAVAILABLE');
 });
 test('small portion extension has food and aggregate dose limits; no general spice fallback',()=>{
  const r=structuredClone(recipes.find((r:Recipe)=>r.recipeId==='kiinalainen-musta-seesamipuuro'));r.scenarios[0].ingredients[0].massG=100;
