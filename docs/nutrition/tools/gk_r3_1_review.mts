@@ -87,4 +87,3 @@ if(process.argv.includes("--verify")){
  const saved=await read("docs/nutrition/gk-r3-1-targeted-screen.json");assert.deepEqual(result,saved);
  console.log(JSON.stringify({result:"PASS",...result.counts,policyMechanicalGate:result.proposedPolicyMechanicalGate.afterZeroPresentationGate,simulations:result.sensitivity.map(({name,calculated,blocked}:any)=>({name,calculated,blocked}))},null,2));
 }else console.log(JSON.stringify(result,null,2));
-
