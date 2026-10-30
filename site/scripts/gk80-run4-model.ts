@@ -1,6 +1,6 @@
 // Bounded source reuse for run4. Frozen historical models remain unchanged.
 import {calculateV2} from './gk80-v2-model';
-import {fingerprint,type Recipe,type Source,type CompositionSource} from './gk80-model';
+import {type Recipe,type Source,type CompositionSource} from './gk80-model';
 export function calculateRun4(r:Recipe,sources:Source[],recipeHash:string,inputHash:string,comps:CompositionSource[]){
  const result=calculateV2(r,sources,recipeHash,inputHash,comps),map=new Map(sources.map(s=>[s.id,s]));
  for(const scenario of r.scenarios){let minorCho=0;

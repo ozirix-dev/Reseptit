@@ -10,7 +10,7 @@ test('50 unique new IDs yield exactly26 numeric proposals, A22/B4; every term an
  const prior=new Set(json('selection.json').priorNumericExcluded);assert.equal(prior.size,22);
  let count=0;for(const r of recipes){assert.ok(!prior.has(r.recipeId));const out=calc(r),g=gold.find((g:any)=>g.recipeId===r.recipeId);
   assert.equal(out.numericProposal,r.coverageProposalEligible,r.recipeId);if(out.numericProposal)count++;
-  for(let n=0;n<out.scenarios.length;n++){const s=out.scenarios[n],d=g.scenarios[n];for(const k of ['availableCarbohydrate','protein','fat','fibre'])assert.ok(Math.abs(s.macros[k]-d.macros[k])<1e-9,r.recipeId+'/'+k);s.contributions.forEach((c:any,i:number)=>{assert.equal(c.gk===null,d.contributions[i].gk===null);if(c.gk!==null)assert.ok(Math.abs(c.gk-d.contributions[i].gk)<1e-9);});}
+  for(let n=0;n<out.scenarios.length;n++){const s=out.scenarios[n],d=g.scenarios[n];for(const k of ['availableCarbohydrate','protein','fat','fibre'] as const)assert.ok(Math.abs(s.macros[k]-d.macros[k])<1e-9,r.recipeId+'/'+k);s.contributions.forEach((c:any,i:number)=>{assert.equal(c.gk===null,d.contributions[i].gk===null);if(c.gk!==null)assert.ok(Math.abs(c.gk-d.contributions[i].gk)<1e-9);});}
  }assert.equal(count,26);assert.equal(json('metrics.json').first25,22);assert.equal(json('metrics.json').second25,4);
 });
 test('source recipes, variant hashes, source fingerprints and GLUCOSE100 scale are mandatory',()=>{
@@ -25,7 +25,7 @@ test('new lowCHO and flavour assignments reject out-of-scope food and doses',()=
  const s=structuredClone(sources);const record=s.find((s:any)=>s.id==='lowcho50-r4');record.allowedCompositionIds=[];record.evidenceHash=fingerprint(Object.fromEntries(Object.entries(record).filter(([k])=>k!=='evidenceHash')));const q=structuredClone(recipes[0]);for(const scenario of q.scenarios)for(const i of scenario.ingredients)if(i.impact?.sourceId===record.id)i.impact.evidenceHash=record.evidenceHash;assert.throws(()=>calc(q,undefined,s),/UNREVIEWED_COMPOSITION_SCOPE/);
 });
 test('named rice scenarios are ordered numerical options, never SEM or physiological bounds',()=>{
- const out=calc(recipes.find((r:any)=>r.recipeId==='tomaatti-kananmuna-wokki'));assert.equal(out.methodType,'MODELLED_SCENARIO');assert.ok(out.min<out.max);assert.equal(out.impact.biologicalBoundEstablished,false);
+ const out=calc(recipes.find((r:any)=>r.recipeId==='tomaatti-kananmuna-wokki'));assert.equal(out.methodType,'MODELLED_SCENARIO');assert.ok(out.min!==null&&out.max!==null&&out.min<out.max);assert.equal(out.impact.biologicalBoundEstablished,false);
  const open=calc(recipes.find((r:any)=>r.recipeId==='tabbouleh'));assert.equal(open.numericProposal,false);assert.equal(open.methodType,'UNAVAILABLE');
 });
 test('all326 legacy production result objects retain exact frozen hashes',()=>{
@@ -43,5 +43,5 @@ test('butternut never inherits dairy coding; prior proposal correction repeats i
  assert.throws(()=>calculateRun4(original,oldSources,original.sourceSha256,fingerprint(original),cs),/DAIRY_SCOPE/);
  const out=calculateRun4(c.recipe,c.sources,c.recipe.sourceSha256,c.golden.inputHash,cs);
  assert.equal(out.numericProposal,true);assert.ok(Math.abs(out.min!-34.7953875)<1e-9);assert.equal(c.newUniqueCount,0);
- for(const k of ['availableCarbohydrate','protein','fat','fibre'])assert.ok(Math.abs((out.scenarios[0].macros as any)[k]-c.golden.scenarios[0].macros[k])<1e-9);
+ for(const k of ['availableCarbohydrate','protein','fat','fibre'] as const)assert.ok(Math.abs((out.scenarios[0].macros as any)[k]-c.golden.scenarios[0].macros[k])<1e-9);
 });
