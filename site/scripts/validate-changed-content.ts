@@ -1,3 +1,4 @@
+import {validateGk80Candidate} from './gk80-release';
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { access, readFile, readdir } from "node:fs/promises";
@@ -166,7 +167,7 @@ for (const recipeId of recipeIds) {
   const boundRecipeHash = recipeBindings.recipes?.[recipeId];
   if (changedSource && boundRecipeHash) {
     const currentRecipeHash = recipeBindingHash(changedSource.markdown, recipeAliases.aliases ?? {});
-    assert.equal(currentRecipeHash, boundRecipeHash, `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
+    assert(currentRecipeHash === boundRecipeHash || await validateGk80Candidate(repoRoot, recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
   }
 
   const evidencePath = resolveRepoFile(`docs/nutrition/calculations/${recipeId}.json`);

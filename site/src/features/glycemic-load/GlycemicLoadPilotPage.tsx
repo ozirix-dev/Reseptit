@@ -47,9 +47,10 @@ export function GlycemicLoadPilotPage() {
   const calculated = glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED");
   const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[locale];
   const number = new Intl.NumberFormat(numberLocale, { maximumSignificantDigits: 1, minimumSignificantDigits: 1 });
+  const modelled = { fi: "Mallinnettu", en: "Modeled", sv: "Modellerad", th: "ค่าประมาณจากแบบจำลอง" }[locale];
   const formatValue = (result: typeof glycemicLoadPilotResults[number]) => result.glycemicLoadRangePerServing
     ? `${text.about} ${number.format(result.glycemicLoadRangePerServing.min)}–${number.format(result.glycemicLoadRangePerServing.max)} ${text.perServing}`
-    : result.glycemicLoadPerServing === null ? text.incomplete : `${text.about} ${number.format(result.glycemicLoadPerServing)} ${text.perServing}`;
+    : result.glycemicLoadPerServing === null ? text.incomplete : `${result.assessmentType ? modelled + " " : ""}${text.about} ${(result.assessmentType ? new Intl.NumberFormat(numberLocale, {maximumFractionDigits:0}) : number).format(result.glycemicLoadPerServing)} ${text.perServing}`;
   return <section className="page-section glycemic-pilot" lang={locale}>
     <div className="container container--narrow">
       <header className="page-intro glycemic-pilot__intro"><p className="eyebrow">{text.eyebrow}</p><h1>{text.title}</h1><p className="page-intro__description">{text.intro}</p></header>

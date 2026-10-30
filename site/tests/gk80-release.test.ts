@@ -1,0 +1,27 @@
+import {execFileSync} from 'node:child_process';
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';import {calculate,fingerprint} from '../scripts/gk80-candidate-model';import {applyGk80Release} from '../scripts/gk80-release';import {parseMarkdown} from '../src/content/markdown';import {verifyNutritionEvidence} from '../scripts/nutrition-evidence';
+const root=new URL('../../',import.meta.url),folder=new URL('docs/nutrition/gk80-release-1/',root),json=(n:string)=>JSON.parse(readFileSync(new URL(n,folder),'utf8'));
+const recipes=json('recipes.json').recipes,sources=json('sources.json').records,comps=json('composition-sources.json').records,gold=json('golden.json').recipes;
+test('four changed recipe files and cooking instructions bind to exact numerical inputs',()=>{
+ for(const r of recipes){const markdown=readFileSync(new URL(r.sourcePath,root),'utf8'),hash=createHash('sha256').update(markdown.replaceAll('\r\n','\n')).digest('hex');const out=calculate(r,sources,hash,gold.find((g:{recipeId:string})=>g.recipeId===r.recipeId).inputHash,comps);assert.equal(out.numericProposal,true);assert.ok(out.impact.imputationUsed);assert.equal(out.impact.biologicalBoundEstablished,false);
+  const changed=structuredClone(r);changed.scenarios[0].ingredients[0].massG+=10;assert.throws(()=>calculate(changed,sources,hash,fingerprint(r),comps),/STALE_INPUT/);
+  assert.throws(()=>calculate(r,sources,'0'.repeat(64),fingerprint(r),comps),/STALE_INPUT/);
+ }
+});
+test('four macro evidence files exactly match weighed published candidate ingredients',()=>{
+ for(const r of recipes){const parsed=parseMarkdown(readFileSync(new URL(r.sourcePath,root),'utf8'))!;const evidence=JSON.parse(readFileSync(new URL(`docs/nutrition/calculations/${r.recipeId}.json`,root),'utf8'));const out=verifyNutritionEvidence(parsed.data as never,evidence);assert.deepEqual(out.errors,[]);assert.equal(out.status,'ESTIMATE WITH EVIDENCE');}
+});
+test('exactly four intended results change, all other 322 retain legacy status and values',async()=>{
+ const report=JSON.parse(readFileSync(new URL('tmp/nutrition/glycemic-load-pilot.json',root),'utf8'));const baseline=json('legacy-baseline.json').recipes;const selected=new Set(recipes.map((r:{recipeId:string})=>r.recipeId));assert.equal(selected.size,4);assert.equal(report.summary.calculated,87);assert.equal(report.summary.insufficientSourceData,239);
+ for(const old of baseline){const now=report.results.find((r:{recipeId:string})=>r.recipeId===old.recipeId);if(selected.has(old.recipeId)){assert.equal(old.status,'INSUFFICIENT SOURCE DATA');assert.equal(now.status,'CALCULATED');assert.equal(now.assessmentType,'PUBLISHED_IMPUTATION');assert.equal(now.confidence,'LOW');assert.equal(now.omittedAvailableCarbohydratePerServingG,0);}else{assert.equal(now.status,old.status,old.recipeId);assert.equal(createHash('sha256').update(JSON.stringify(now)).digest('hex'),old.sha256,old.recipeId);}}
+ const applied=await applyGk80Release(fileURLToPath(root),report.results);assert.equal(applied.length,326);
+});
+test('variants, distinct porridge IDs and existing-language scope remain explicit',()=>{
+ const m=json('manifest.json');for(const id of m.recipeIds)assert.deepEqual(m.existingLocales[id],['fi']);assert.equal(m.approvalState,'OWNER_APPROVAL_REQUIRED');
+ assert.equal(recipes.length,4);assert.equal(new Set(recipes.map((r:{sourcePath:string})=>r.sourcePath)).size,4);
+ const mint=recipes.find((r:{recipeId:string})=>r.recipeId.includes('minttutee'));assert.match(mint.proposedTitle,/syötävän mintun/);assert.match(mint.proposedPreparation.join(' '),/ei siivilöidä/);
+ const bubur=recipes.find((r:{recipeId:string})=>r.recipeId.includes('bubur'));assert.match(bubur.proposedTitle,/perusversio/);
+});
+
+test('independent Decimal checks all release contribution terms',()=>{const output=execFileSync(process.platform==='win32'?'python':'python3',[fileURLToPath(new URL('site/scripts/gk80-release-decimal.py',root))],{encoding:'utf8'});assert.equal(JSON.parse(output).status,'PASS');});

@@ -1,59 +1,58 @@
 ---
-title: "Bubur ayam -kanariisipuuro"
+title: Bubur ayam – yksinkertainen kanariisipuuron perusversio
 recipe_id: indonesialainen-bubur-ayam-kanariisipuuro
 url_slug: indonesialainen-bubur-ayam-kanariisipuuro
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "riisi"
-  - "kana"
-  - "inkivääri"
+- riisi
+- kana
+- inkivääri
 cooking_method:
-  - "keittäminen"
+- keittäminen
 ingredients:
-  - amount: 100
-    unit: "g"
-    item: "kuivaa pitkäjyväistä valkoista riisiä"
-  - amount: 150
-    unit: "g"
-    item: "broilerin nahatonta rintafileetä"
-  - amount: 1
-    unit: "tl"
-    item: "inkivääri"
-  - amount: 2
-    unit: "rkl"
-    item: "kevätsipuli"
-  - amount: 700
-    unit: "ml"
-    item: "vettä"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+- amount: 100
+  unit: g
+  item: kuivaa valkoista jasmiiniriisiä
+- amount: 150
+  unit: g
+  item: broilerin nahatonta rintafileetä
+- amount: 2
+  unit: g
+  item: inkivääri
+- amount: 12
+  unit: g
+  item: kevätsipuli
+- amount: 800
+  unit: g
+  item: vettä
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 servings: 2
-time_total_min: 25
+time_total_min: 45
 difficulty: Helppo
 tags:
-  - "aamupala"
-  - "indonesialainen"
-  - "puuro"
+- aamupala
+- indonesialainen
+- puuro
 image:
   src: aamupalat/indonesialainen-bubur-ayam-kanariisipuuro.webp
-  alt: "Bubur ayam -kanariisipuuro tarjoiltuna aamiaisella"
+  alt: Bubur ayam -kanariisipuuro tarjoiltuna aamiaisella
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 37.32
 carbs_total_per_serving_g: 37.87
 protein_per_serving_g: 20.49
 fat_per_serving_g: 1.07
-
 ---
 
-# Bubur ayam -kanariisipuuro
+# Bubur ayam – yksinkertainen kanariisipuuron perusversio
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan bubur ayam -kanariisipuuro. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Bubur ayam – yksinkertainen kanariisipuuron perusversio. Punnittu laskentaversio kahdelle annokselle.
 
 ## Ainekset
 
@@ -61,7 +60,10 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
-2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
-4. Keitä riisi pehmeäksi puuroksi ja lisää revitty kana, kevätsipuli sekä rapea salottisipuli.
+1. Mittaa kuiva valkoinen jasmiiniriisi ja 800 g vettä kattilaan. Hauduta noin 40 minuuttia pehmeäksi puuroksi. Sekoita välillä; mahdollinen lisäneste on vettä.
+2. Kypsennä broilerin rintafilee puurossa kauttaaltaan. Revi kypsä kana ja palauta se sekä kaikki neste puuroon.
+3. Lisää hienonnettu inkivääri ja kevätsipuli, mausta suolalla ja tarjoa kuumana kahtena tasaisena annoksena. Tämä yksinkertainen perusversio ei sisällä rapeaa sipulia, kastikkeita tai muita lisukkeita.
+
+## Muistiinpanot
+
+Mallinnettu GK-arvio perustuu nimettyihin GI-vertailuihin ja kasvisoletukseen. Luottamus on matala. Arvio ei ole aterialla mitattu eikä henkilökohtainen verensokeriennuste tai insuliiniannoksen peruste.
