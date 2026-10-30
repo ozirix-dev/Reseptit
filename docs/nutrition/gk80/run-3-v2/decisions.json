@@ -1,0 +1,3005 @@
+{
+  "recipes": [
+    {
+      "recipeId": "meksikolainen-huevos-a-la-mexicana",
+      "sourceVersion": "7eae429a197df2ba7df52ad594bbe43f7a90adab56cd971f834935c51c115bb0",
+      "servings": 2,
+      "wholeChoPerServing": 3.71625,
+      "knownChoSubtotal": 3.71625,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "tomaatti",
+          2.15625
+        ],
+        [
+          "sipuli",
+          1.32
+        ],
+        [
+          "kananmuna",
+          0.165
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kananmuna",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "tomaatti",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "sipuli",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "tuoretta jalapeñoa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      ],
+      "imputations": [
+        "kananmuna",
+        "tomaatti",
+        "sipuli",
+        "tuoretta jalapeñoa"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota."
+      ],
+      "gkPoints": [
+        1.5105
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 2",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": []
+    },
+    {
+      "recipeId": "karibia-callaloo-munakas",
+      "sourceVersion": "9675ecdd4423dd40c316fe1392e9c9db10f0c05b993a52eeceb3b442471fe72a",
+      "servings": 2,
+      "wholeChoPerServing": 2.124,
+      "knownChoSubtotal": 2.124,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "keltasipulia",
+          1.2
+        ],
+        [
+          "tuoretta pinaattia",
+          0.44999999999999996
+        ],
+        [
+          "kevätsipuli",
+          0.27599999999999997
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "tuoretta pinaattia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "keltasipulia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "kananmuna",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "kevätsipuli",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "tuoretta timjamia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        }
+      ],
+      "imputations": [
+        "tuoretta pinaattia",
+        "keltasipulia",
+        "kananmuna",
+        "kevätsipuli",
+        "tuoretta timjamia"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota."
+      ],
+      "gkPoints": [
+        0.8661
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 1",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": []
+    },
+    {
+      "recipeId": "yrttituorejuusto-kinkkurullat",
+      "sourceVersion": "ef1e9fc58410534935f84849277ec263c6b86da11c3c8b5f2418466dc6e99865",
+      "servings": 4,
+      "wholeChoPerServing": 2.80365,
+      "knownChoSubtotal": 2.80365,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "punaista paprikaa",
+          1.125
+        ],
+        [
+          "maustamatonta tuorejuustoa, 20 % rasvaa",
+          0.93375
+        ],
+        [
+          "kurkkua",
+          0.35
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "3 %:n keittokinkkusiivuja",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "maustamatonta tuorejuustoa, 20 % rasvaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "silputtua ruohosipulia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "punaista paprikaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "kurkkua",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "salaatinlehtiä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "jauhettua mustapippuria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "3 %:n keittokinkkusiivuja",
+        "maustamatonta tuorejuustoa, 20 % rasvaa",
+        "silputtua ruohosipulia",
+        "punaista paprikaa",
+        "kurkkua",
+        "salaatinlehtiä",
+        "jauhettua mustapippuria"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota."
+      ],
+      "gkPoints": [
+        1.0564975
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 1",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": []
+    },
+    {
+      "recipeId": "janssoninkiusaus-juuriselleri",
+      "sourceVersion": "df27d4740a241dae876d78efb121cdde952881b83e2079e78e46bbcc9fc99870",
+      "servings": 4,
+      "wholeChoPerServing": 8.43225,
+      "knownChoSubtotal": 8.43225,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "juuriselleriä",
+          4.6375
+        ],
+        [
+          "kuohukermaa",
+          1.8125
+        ],
+        [
+          "täysmaitoa",
+          1.2
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "juuriselleriä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "sipuli",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "täysmaitoa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "voita",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "jauhettua mustapippuria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "silputtua tilliä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        }
+      ],
+      "imputations": [
+        "juuriselleriä",
+        "sipuli",
+        "kuohukermaa",
+        "täysmaitoa",
+        "voita",
+        "jauhettua mustapippuria",
+        "silputtua tilliä"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota."
+      ],
+      "gkPoints": [
+        3.070875
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 3",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": []
+    },
+    {
+      "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+      "sourceVersion": "d41c3fd1abe5d3ca3423d65c0c548e5e058a38ed5135288c0c60463d3a5113e6",
+      "servings": 4,
+      "wholeChoPerServing": 4.1495,
+      "knownChoSubtotal": 4.1495,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "kirsikkatomaatteja",
+          2.1875
+        ],
+        [
+          "punasipulia",
+          1.36175
+        ],
+        [
+          "fetajuustoa",
+          0.3
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kirsikkatomaatteja",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "punasipulia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "fetajuustoa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "kuivattua oreganoa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "sitruunamehua",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "jauhettua mustapippuria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "kirsikkatomaatteja",
+        "punasipulia",
+        "fetajuustoa",
+        "kuivattua oreganoa",
+        "sitruunamehua",
+        "jauhettua mustapippuria"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota."
+      ],
+      "gkPoints": [
+        1.659825
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 2",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": []
+    },
+    {
+      "recipeId": "caponata",
+      "sourceVersion": "3e9e33e0ab6607e44603534b5fbb7e81f2d0117ca190b7699bd01d11472471d0",
+      "servings": 4,
+      "wholeChoPerServing": 13.875125,
+      "knownChoSubtotal": 13.875125,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "munakoisoa",
+          6.2
+        ],
+        [
+          "tomaattimurskaa",
+          3.45
+        ],
+        [
+          "sokeria",
+          3.121875
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "munakoisoa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "sipuli",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "sellerinvartta",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "tomaattimurskaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "kapriksia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "punaviinietikkaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "sokeria",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "sucrose60",
+          "evidenceHash": "544a951d71bed9d596342e2e5b0671f21a888f4fff78e909281877e5621fd783",
+          "rationale": "Weighed sucrose; glucose-scale human comparison; no honey/syrup substitution."
+        },
+        {
+          "ingredient": "tuoretta basilikaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      ],
+      "imputations": [
+        "munakoisoa",
+        "sipuli",
+        "sellerinvartta",
+        "tomaattimurskaa",
+        "kapriksia",
+        "punaviinietikkaa",
+        "tuoretta basilikaa"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota."
+      ],
+      "gkPoints": [
+        6.18275
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 6",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": []
+    },
+    {
+      "recipeId": "kanapyorykat-tomaattikastike",
+      "sourceVersion": "cf80968fd50299fb25de75752f05a933962c8a7ed42b74c2c61a3f8c1831647f",
+      "servings": 4,
+      "wholeChoPerServing": 4.9905,
+      "knownChoSubtotal": 4.9905,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "tomaattimurskaa",
+          3.45
+        ],
+        [
+          "kuohukermaa",
+          0.725
+        ],
+        [
+          "sipuli",
+          0.66
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kananmuna",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "oreganoa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "sipuli",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "tomaattimurskaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "jauhettua mustapippuria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "kananmuna",
+        "oreganoa",
+        "sipuli",
+        "tomaattimurskaa",
+        "kuohukermaa",
+        "jauhettua mustapippuria"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota."
+      ],
+      "gkPoints": [
+        1.93925
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 2",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": []
+    },
+    {
+      "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+      "sourceVersion": "2708538fc22a03a9f48990b4af97f4177b1bcae8c8cb436c1ddca8d66a4a4dbd",
+      "servings": 2,
+      "wholeChoPerServing": 39.779,
+      "knownChoSubtotal": 39.779,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "riisi",
+          37.0
+        ],
+        [
+          "kookosmaito",
+          1.564
+        ],
+        [
+          "kurkku",
+          1.05
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "riisi",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "rice-basmati57",
+          "evidenceHash": "a644c4fd5e3969e23f403a0ca732e108cfe9c9dd4157c96c76b1117ca773c57c",
+          "rationale": "Named basmati or jasmine white-rice option, hot cooked intact grain. Rice cooked with coconut milk is a LOW preparation analogue; no fat discount. Generic dry-rice composition is a proxy, not branded label."
+        },
+        {
+          "ingredient": "kookosmaito",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "kananmuna",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "kurkku",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        }
+      ],
+      "imputations": [
+        "kookosmaito",
+        "kananmuna",
+        "kurkku"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota.",
+        "Valitse kuiva valkoinen basmati- tai jasmiiniriisi. Kypsennä kookosmaidon ja tarvittavan veden kanssa pakkauksen kypsennysajan mukaan. Syö kuumana keitetyn kananmunan ja kurkun kanssa; ei muita täytteitä tai kastiketta."
+      ],
+      "gkPoints": [
+        22.3745,
+        26.4445
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 22–26",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": []
+    },
+    {
+      "recipeId": "kiinalainen-musta-seesamipuuro",
+      "sourceVersion": "06a30a717a0aff6b6c95b0efecded66bbbd9b1b62e2bf5342a7d1eeb89d46907",
+      "servings": 2,
+      "wholeChoPerServing": 46.5,
+      "knownChoSubtotal": 46.5,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "riisi",
+          37.0
+        ],
+        [
+          "hunaja",
+          7.23
+        ],
+        [
+          "soijamaito",
+          1.96
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "mustat seesaminsiemenet",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "riisi",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "rice-congee80",
+          "evidenceHash": "af37b2de4742d497b6d320272bc4c41ab2e6a22c532a3cc7e46bb0ab6a747fcc",
+          "rationale": "Specify white jasmine rice simmered as soft hot porridge about 40 min. Published 40min steamed porridge is an explicit LOW cooking analogue, not ordinary boiled grain GI."
+        },
+        {
+          "ingredient": "soijamaito",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "hunaja",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "honey-category-mean-gi-55-2002",
+          "evidenceHash": "077705618b3aceedea03e5f2a3e5f23a032b1a923d811869303a141a873a3dd4",
+          "rationale": "Named generic honey mean; not exact jar measurement."
+        }
+      ],
+      "imputations": [
+        "mustat seesaminsiemenet",
+        "soijamaito"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota.",
+        "Keitä valkoisesta jasmiiniriisistä ja määritellystä nesteestä pehmeä puuro noin 40 minuutissa. Kaikki siemenet ja lisäainekset syödään. Ei sileäksi jauhamista tai jäähdytyksen vaikutuksesta annettavaa hyvitystä."
+      ],
+      "gkPoints": [
+        34.7115
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 35",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": []
+    },
+    {
+      "recipeId": "harira",
+      "sourceVersion": "14382d84c9cb7c2eca7cb3eb717183f792ce1c21c936ecb60ed09e45222ca080",
+      "servings": 6,
+      "wholeChoPerServing": 33.8905,
+      "knownChoSubtotal": 33.8905,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "kikherneitä",
+          11.733333333333334
+        ],
+        [
+          "kuivattuja vihreitä linssejä",
+          11.425
+        ],
+        [
+          "ohuita vermisellinuudeleita",
+          6.64
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "keltasipulia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "sellerinvartta",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "tomaattimurskaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "kuivattuja vihreitä linssejä",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "lentil-mean32",
+          "evidenceHash": "0986393e2ccc72660695cb00ec6550bf6ab7696957b37354ed35457b241534d3",
+          "rationale": "Whole dried green/brown lentils boiled until soft, not split lentil puree; food-specific boiled-lentil mean applied as LOW analogue. All soup liquid retained."
+        },
+        {
+          "ingredient": "kikherneitä",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "chickpea-mean28",
+          "evidenceHash": "be748b0bd80b411c52a55fd893b28cc4dfbc35cf1a24898ba5cf5fc6afe7c6bc",
+          "rationale": "Whole cooked drained chickpeas; food-specific chickpea mean used as LOW analogue, not all-pulse category mean."
+        },
+        {
+          "ingredient": "lihalientä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "jauhettua inkivääriä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "kurkumaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "kanelia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "ohuita vermisellinuudeleita",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "pasta-mean49",
+          "evidenceHash": "e971485deadcfa73418ca97b974a6fc495f6a5ec6e77faaa6f2bbfaa98d19f13",
+          "rationale": "Specified durum-wheat vermicelli boiled in soup; spaghetti mean applied as LOW wheat-pasta shape analogue, not rice/bean vermicelli."
+        },
+        {
+          "ingredient": "tuoretta korianteria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "sitruunamehua",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      ],
+      "imputations": [
+        "keltasipulia",
+        "sellerinvartta",
+        "tomaattimurskaa",
+        "lihalientä",
+        "jauhettua inkivääriä",
+        "kurkumaa",
+        "kanelia",
+        "tuoretta korianteria",
+        "sitruunamehua"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota.",
+        "Keitä 150 g kuivia vihreitä/ruskeita kokonaisia linssejä keitossa täysin pehmeiksi, lisää 400 g jo kypsiä valutettuja kikherneitä ja 60 g kuivia durumvehnävermisellejä niiden kypsennysajan mukaan. Lientä ei valuteta. Ei soseutusta."
+      ],
+      "gkPoints": [
+        11.95235
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 12",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": []
+    },
+    {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "sourceVersion": "9adaae1694bb45b1664113eab4a30e8aeba99e55848d163594c5af9c2f1ed418",
+      "servings": 2,
+      "wholeChoPerServing": 47.218275,
+      "knownChoSubtotal": 47.218275,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "riisi",
+          37.0
+        ],
+        [
+          "kuorittua myskikurpitsaa",
+          8.625
+        ],
+        [
+          "kookosmaito",
+          1.564
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kuorittua myskikurpitsaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "riisi",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "rice-congee80",
+          "evidenceHash": "af37b2de4742d497b6d320272bc4c41ab2e6a22c532a3cc7e46bb0ab6a747fcc",
+          "rationale": "Specify white jasmine rice simmered as soft hot porridge about 40 min. Published 40min steamed porridge is an explicit LOW cooking analogue, not ordinary boiled grain GI."
+        },
+        {
+          "ingredient": "kookosmaito",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "mustia seesaminsiemeniä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "kuorittua myskikurpitsaa",
+        "kookosmaito",
+        "mustia seesaminsiemeniä"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota.",
+        "Keitä valkoisesta jasmiiniriisistä ja määritellystä nesteestä pehmeä puuro noin 40 minuutissa. Kaikki siemenet ja lisäainekset syödään. Ei sileäksi jauhamista tai jäähdytyksen vaikutuksesta annettavaa hyvitystä.",
+        "Named butternut-rice porridge variant: 250 g peeled butternut replaces title kabocha. No puree."
+      ],
+      "gkPoints": [
+        32.9841375
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 33",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [],
+      "proposedTitle": "Myskikurpitsa-riisipuuro – kabocha-reseptin variantti"
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "sourceVersion": "ac56be985edbbaa8d44fd385f50d5b19587f3c34b6acfe9148232605f52778f9",
+      "servings": 4,
+      "wholeChoPerServing": 68.3605,
+      "knownChoSubtotal": 68.3605,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "couscousia",
+          46.0
+        ],
+        [
+          "kikherneitä",
+          17.6
+        ],
+        [
+          "porkkanaa",
+          1.529
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "couscousia",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "couscous65",
+          "evidenceHash": "b3ff179daac313c118913cc2861889805bbdb38bf2a7cf17c8a640baf7904056",
+          "rationale": "Dry couscous weighed, separately rehydrated with boiling water as named source; no fry/cooling credit."
+        },
+        {
+          "ingredient": "sipuli",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "porkkanaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "kesäkurpitsaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "kikherneitä",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "chickpea-mean28",
+          "evidenceHash": "be748b0bd80b411c52a55fd893b28cc4dfbc35cf1a24898ba5cf5fc6afe7c6bc",
+          "rationale": "Whole cooked drained chickpeas; food-specific chickpea mean used as LOW analogue, not all-pulse category mean."
+        },
+        {
+          "ingredient": "kanalientä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "juustokuminaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "jauhettua korianteria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "kurkumaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "sipuli",
+        "porkkanaa",
+        "kesäkurpitsaa",
+        "kanalientä",
+        "juustokuminaa",
+        "jauhettua korianteria",
+        "kurkumaa"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota.",
+        "Käytä 600 g luutonta nahatonta broilerin paistileikettä, 110 g porkkanaa, 200 g kesäkurpitsaa ja 400 g kypsiä valutettuja kikherneitä. Kypsennä kana, kasvikset ja liemi padassa. Hydratoi couscous erikseen kiehuvalla vedellä, yhdistä koko padan sisältöön ja tarjoa kuumana."
+      ],
+      "gkPoints": [
+        36.86435
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 37",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": []
+    },
+    {
+      "recipeId": "spanakopita",
+      "sourceVersion": "c3477f355a83989aa699f969d38c542abea95759eab5cc0110b9a4e48dac99fe",
+      "servings": 6,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 16.1485,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "filotaikinaa",
+          14.879999999999999
+        ],
+        [
+          "tuoretta pinaattia",
+          0.5
+        ],
+        [
+          "kevätsipulia",
+          0.4599999999999999
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "tuoretta pinaattia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "kevätsipulia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "fetajuustoa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "kananmunaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "tuoretta tilliä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "mustapippuria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "tuoretta pinaattia",
+        "kevätsipulia",
+        "fetajuustoa",
+        "kananmunaa",
+        "tuoretta tilliä",
+        "mustapippuria"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "filotaikinaa"
+      ]
+    },
+    {
+      "recipeId": "miso-lohi-paksoi",
+      "sourceVersion": "c83d14f66d5add960227fc90e39e720ccebb5c9473a5a69608a40ff2c8b2305e",
+      "servings": 4,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 2.91125,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "vaaleaa misotahnaa",
+          1.773
+        ],
+        [
+          "paksoita",
+          0.6
+        ],
+        [
+          "tamaria",
+          0.38
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "riisiviinietikkaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "paksoita",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "seesaminsiemeniä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "riisiviinietikkaa",
+        "paksoita",
+        "seesaminsiemeniä"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "vaaleaa misotahnaa",
+        "tamaria"
+      ]
+    },
+    {
+      "recipeId": "kana-enchilada-kukkakaalivuoka",
+      "sourceVersion": "14228b572f437f399fc8494f6e25337120ca924a14b7ce7f656f2a9379fbd888",
+      "servings": 4,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 8.1325,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "tomaattisalsaa",
+          4.0512500000000005
+        ],
+        [
+          "kukkakaalia",
+          2.9375
+        ],
+        [
+          "ranskankermaa",
+          0.75
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kypsää broilerin rintafileetä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "kukkakaalia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "tomaattisalsaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "cheddarjuustoa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "ranskankermaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "juustokuminaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "savupaprikaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "korianteria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        }
+      ],
+      "imputations": [
+        "kypsää broilerin rintafileetä",
+        "kukkakaalia",
+        "tomaattisalsaa",
+        "cheddarjuustoa",
+        "ranskankermaa",
+        "juustokuminaa",
+        "savupaprikaa",
+        "korianteria"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "limetti"
+      ]
+    },
+    {
+      "recipeId": "shoyu-kanakeitto-konjac",
+      "sourceVersion": "aa887227119f4e0c77748c0dc55d311acfef3fa10b1bc717ca622af988d871f4",
+      "servings": 4,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 4.50275,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "kevätsipulia",
+          2.3
+        ],
+        [
+          "kanalientä",
+          1.2000000000000002
+        ],
+        [
+          "tamaria",
+          0.76
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kanalientä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "riisiviinietikkaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "herkkusieniä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "kevätsipulia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "raastettua inkivääriä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      ],
+      "imputations": [
+        "kanalientä",
+        "riisiviinietikkaa",
+        "herkkusieniä",
+        "kevätsipulia",
+        "raastettua inkivääriä"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "tamaria"
+      ]
+    },
+    {
+      "recipeId": "chow-mein",
+      "sourceVersion": "3e9d6ed75ef531708f84720de20aa4fc8d40122f0fdd81c6a6f609d34cbab9c2",
+      "servings": 4,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 27.505,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "keitettyjä ja valutettuja vehnämunanuudeleita",
+          21.825000000000003
+        ],
+        [
+          "valkokaalia",
+          2.485
+        ],
+        [
+          "soijakastiketta",
+          1.2825000000000002
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "valkosipulinkynttä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "valkokaalia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "porkkanaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "kevätsipulia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        }
+      ],
+      "imputations": [
+        "valkosipulinkynttä",
+        "valkokaalia",
+        "porkkanaa",
+        "kevätsipulia"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "keitettyjä ja valutettuja vehnämunanuudeleita",
+        "soijakastiketta",
+        "osterikastiketta"
+      ]
+    },
+    {
+      "recipeId": "congee-riisipuuro",
+      "sourceVersion": "1041166cfeaedda86d91d80ab89cd9ebd39b9abdeff0f8164fc5720389212fca",
+      "servings": 4,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 40.212,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "jasmiiniriisiä",
+          37.0
+        ],
+        [
+          "kanalientä",
+          2.0
+        ],
+        [
+          "soijakastiketta",
+          0.7125
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "jasmiiniriisiä",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "rice-congee80",
+          "evidenceHash": "af37b2de4742d497b6d320272bc4c41ab2e6a22c532a3cc7e46bb0ab6a747fcc",
+          "rationale": "Specify white jasmine rice simmered as soft hot porridge about 40 min. Published 40min steamed porridge is an explicit LOW cooking analogue, not ordinary boiled grain GI."
+        },
+        {
+          "ingredient": "kanalientä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "tuoretta inkivääriä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "kevätsipulia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "keitettyä kananmunaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      ],
+      "imputations": [
+        "kanalientä",
+        "tuoretta inkivääriä",
+        "kevätsipulia",
+        "keitettyä kananmunaa"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "soijakastiketta"
+      ]
+    },
+    {
+      "recipeId": "tabbouleh",
+      "sourceVersion": "83988594c36da2c0745176006ab38fe9e117368d85fe3bcb138b779d9db853c0",
+      "servings": 4,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 11.3445,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "hienoa bulguria",
+          8.2625
+        ],
+        [
+          "tomaattia",
+          2.15625
+        ],
+        [
+          "kevätsipulia",
+          0.345
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "lehtipersiljaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "tomaattia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "kevätsipulia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "tuoretta minttua",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "sitruunamehua",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "mustapippuria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "lehtipersiljaa",
+        "tomaattia",
+        "kevätsipulia",
+        "tuoretta minttua",
+        "sitruunamehua",
+        "mustapippuria"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "hienoa bulguria"
+      ]
+    },
+    {
+      "recipeId": "sate-ayam",
+      "sourceVersion": "3ed0776b1f7a4358f11648e9311faef5018a28b758e0826c72a0f62d26dda93b",
+      "servings": 4,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 13.5895,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "maapähkinävoita",
+          4.6875
+        ],
+        [
+          "fariinisokeria",
+          4.356
+        ],
+        [
+          "fariinisokeria",
+          2.178
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "limettimehua",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "valkosipulinkynttä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "jauhettua korianteria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "kurkumaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "kookosmaitoa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      ],
+      "imputations": [
+        "limettimehua",
+        "valkosipulinkynttä",
+        "jauhettua korianteria",
+        "kurkumaa",
+        "kookosmaitoa"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "soijakastiketta",
+        "fariinisokeria",
+        "maapähkinävoita",
+        "soijakastiketta",
+        "fariinisokeria",
+        "limetti"
+      ]
+    },
+    {
+      "recipeId": "vietnamilainen-papaija-kookospuuro",
+      "sourceVersion": "02440d7cfaac9b9b3b79e2467ee0fc4bd26afc49a0204253accf3478992aec99",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 49.704,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "tapiokahelmiä",
+          39.65
+        ],
+        [
+          "papaija",
+          8.4
+        ],
+        [
+          "kookosmaito",
+          1.564
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kookosmaito",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "limettimehua",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      ],
+      "imputations": [
+        "kookosmaito",
+        "limettimehua"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "tapiokahelmiä",
+        "papaija"
+      ]
+    },
+    {
+      "recipeId": "thai-kananmunat-kookoscurryssa",
+      "sourceVersion": "1d127dee1a5b1e82c2cbbb7d71e41aac62e4d86266074d27d867197aa9e0ae83",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 43.30525,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "kuivaa pitkäjyväistä valkoista riisiä",
+          37.0
+        ],
+        [
+          "Mae Ploy punaista currytahnaa",
+          2.42
+        ],
+        [
+          "tomaatti",
+          2.15625
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kananmuna",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "kookosmaito",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "tomaatti",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        }
+      ],
+      "imputations": [
+        "kananmuna",
+        "kookosmaito",
+        "tomaatti"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "Mae Ploy punaista currytahnaa",
+        "kuivaa pitkäjyväistä valkoista riisiä"
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-farinata-aamupalaksi",
+      "sourceVersion": "1b15fd29f9d833b84289c2d1345e27a0110c4bda7044ed6939d581ede947d237",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 20.975,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "kikhernejauho",
+          19.25
+        ],
+        [
+          "tomaattia",
+          1.725
+        ],
+        [
+          "vihreitä oliiveja",
+          0.0
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "tomaattia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        }
+      ],
+      "imputations": [
+        "tomaattia"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [
+        "tuoretta rosmariinia"
+      ],
+      "unresolvedGi": [
+        "kikhernejauho"
+      ]
+    },
+    {
+      "recipeId": "intialainen-besan-chilla",
+      "sourceVersion": "287c9e88b59c37d1ce84bb0c9021b5bc328a285dfba85a8cbba5f8d45e887010",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 22.78325,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "kikhernejauho",
+          19.25
+        ],
+        [
+          "tomaatti",
+          2.15625
+        ],
+        [
+          "sipuli",
+          1.32
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "tomaatti",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "sipuli",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "tuoretta korianteria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        }
+      ],
+      "imputations": [
+        "tomaatti",
+        "sipuli",
+        "tuoretta korianteria"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "kikhernejauho"
+      ]
+    },
+    {
+      "recipeId": "intialainen-ven-pongal",
+      "sourceVersion": "7ab0b5f0350e1e9631afbe1a3cad9d99b9e6788ec1ecbf83fd1e400a5e242763",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 71.101,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "riisi",
+          37.0
+        ],
+        [
+          "mungpapu",
+          31.424999999999997
+        ],
+        [
+          "cashewpähkinä",
+          2.29
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "mustapippuri",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "mustapippuri"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "riisi",
+        "mungpapu",
+        "cashewpähkinä"
+      ]
+    },
+    {
+      "recipeId": "rogan-josh",
+      "sourceVersion": "a9d91f6ea97769d93f5fb1e5bded03bcf5fe7393e613830c520572bef2b5ff4b",
+      "servings": 4,
+      "wholeChoPerServing": 4.172625,
+      "knownChoSubtotal": 4.172625,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "maustamatonta jogurttia",
+          2.5
+        ],
+        [
+          "sipuli",
+          0.66
+        ],
+        [
+          "jauhettua juustokuminaa",
+          0.337
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "sipuli",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "maustamatonta jogurttia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "valkosipulinkynttä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "tuoretta inkivääriä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "jauhettua juustokuminaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "jauhettua korianteria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "paprikajauhetta",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "chilijauhetta",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "jauhettua kanelia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "jauhettua kardemummaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "sipuli",
+        "maustamatonta jogurttia",
+        "valkosipulinkynttä",
+        "tuoretta inkivääriä",
+        "jauhettua juustokuminaa",
+        "jauhettua korianteria",
+        "paprikajauhetta",
+        "chilijauhetta",
+        "jauhettua kanelia",
+        "jauhettua kardemummaa"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota.",
+        "Named ground-spice version: 0.5 g ground cinnamon and 0.5 g ground cardamom consumed, replacing extracted stick/pods. All other weighed spices retained."
+      ],
+      "gkPoints": [
+        1.5050125
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 2",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [],
+      "proposedTitle": "Rogan josh jauhetuilla mausteilla – variantti"
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "sourceVersion": "d40a2168f6aed28d22c69bec104d12543aa922908bfec900a9189c1b32678509",
+      "servings": 4,
+      "wholeChoPerServing": 64.86125,
+      "knownChoSubtotal": 64.86125,
+      "subtotalNotWhole": false,
+      "mainCarbohydrateSources": [
+        [
+          "rigatoni- tai pennepastaa",
+          58.10000000000001
+        ],
+        [
+          "tomaattimurskaa",
+          3.45
+        ],
+        [
+          "munakoisoa",
+          3.1
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "rigatoni- tai pennepastaa",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "penne47",
+          "evidenceHash": "a1c74112a4ed87bace5dc1caabbdba6dcd7ec860e4f958adc3020e29a56c58f2",
+          "rationale": "Specify white durum-wheat penne cooked per pack and served hot. Named De Cecco/Barilla comparison; generic dry-pasta composition kept separate."
+        },
+        {
+          "ingredient": "munakoisoa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "tomaattimurskaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "valkosipulinkynttä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "tuoretta basilikaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "mustapippuria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "munakoisoa",
+        "tomaattimurskaa",
+        "valkosipulinkynttä",
+        "tuoretta basilikaa",
+        "mustapippuria"
+      ],
+      "preparationAndProductAssumptions": [
+        "Punnitse recipes.json-skenaarion kaikki syötävät ainekset grammoina. Käytä koko ilmoitettu määrä, mukaan lukien paistamisrasva ja kastike. Jaa valmis kokonaisuus reseptin annosmäärään. Ei määrittelemättömiä lisukkeita.",
+        "Valmistus perustuu alkuperäisen reseptin varsinaiseen ruokalajikohtaiseen vaiheeseen; päällekkäiset yleisvaiheet korvataan yhdellä valmistuksella. Alla olevat täsmennykset ovat osa laskentaversiota.",
+        "Named Parmesan version: 50 g fresh Parmesan replaces ricotta salata, whose composition is unresolved. Penne only; eggplant sauce fully consumed; no claim to original ricotta version."
+      ],
+      "gkPoints": [
+        30.016325,
+        31.759325
+      ],
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "noin 30–32",
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [],
+      "proposedTitle": "Pasta alla Norma parmesaanilla – variantti"
+    },
+    {
+      "recipeId": "kookos-lime-kanacurry",
+      "sourceVersion": "3b0e306e88dc4feed09e84a47c445e87dff9046c7ea83bddf4605cfe98187f9c",
+      "servings": 4,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 5.657,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "täysrasvaista kookosmaitoa",
+          1.564
+        ],
+        [
+          "punainen paprika",
+          1.3499999999999999
+        ],
+        [
+          "thaimaalaista currytahnaa",
+          1.2975
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "täysrasvaista kookosmaitoa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "vihreitä papuja",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "punainen paprika",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "thaibasilikaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      ],
+      "imputations": [
+        "täysrasvaista kookosmaitoa",
+        "vihreitä papuja",
+        "punainen paprika",
+        "thaibasilikaa"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "thaimaalaista currytahnaa",
+        "kalakastiketta",
+        "limetti"
+      ]
+    },
+    {
+      "recipeId": "intialainen-rava-uttapam",
+      "sourceVersion": "da667b2f0d44a192fa9f930e08a640dbb2473eb0629452279506e4a77904f85b",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 36.97625,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "mannasuurimo",
+          31.8
+        ],
+        [
+          "tomaatti",
+          2.15625
+        ],
+        [
+          "jogurtti",
+          1.7
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "jogurtti",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "tomaatti",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "sipuli",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        }
+      ],
+      "imputations": [
+        "jogurtti",
+        "tomaatti",
+        "sipuli"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "mannasuurimo"
+      ]
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-lablabi",
+      "sourceVersion": "a92bcb839df34fa9861bf57b691ce6852455bc51164ba1183fb5c084983481fa",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 33.8365,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "pita",
+          23.04
+        ],
+        [
+          "kypsiä, valutettuja kikherneitä",
+          8.8
+        ],
+        [
+          "laimennettua kanalientä",
+          1.4945
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kypsiä, valutettuja kikherneitä",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "chickpea-mean28",
+          "evidenceHash": "be748b0bd80b411c52a55fd893b28cc4dfbc35cf1a24898ba5cf5fc6afe7c6bc",
+          "rationale": "Whole cooked drained chickpeas; food-specific chickpea mean used as LOW analogue, not all-pulse category mean."
+        },
+        {
+          "ingredient": "juustokumina",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        },
+        {
+          "ingredient": "kananmuna",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "laimennettua kanalientä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      ],
+      "imputations": [
+        "juustokumina",
+        "kananmuna",
+        "laimennettua kanalientä"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "pita"
+      ]
+    },
+    {
+      "recipeId": "silakkapihvit-tilli-kermakastike",
+      "sourceVersion": "c2a1a660591eee52740e6356f88172ca92f765d4aad9e6dffb3044e32f590389",
+      "servings": 4,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 3.87289,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "ruisjauhoja",
+          2.37564
+        ],
+        [
+          "kuohukermaa",
+          1.0005
+        ],
+        [
+          "sitruuna tarjoiluun",
+          0.319
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "voita paistamiseen",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "sitruunamehua",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "tuoretta tilliä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "jauhettua mustapippuria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "voita paistamiseen",
+        "kuohukermaa",
+        "sitruunamehua",
+        "tuoretta tilliä",
+        "jauhettua mustapippuria"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "ruisjauhoja",
+        "sitruuna tarjoiluun"
+      ]
+    },
+    {
+      "recipeId": "kanaviillokki-kukkakaalilla",
+      "sourceVersion": "b9cd58a0912c9ca8ff4b3af7578164805667bb9640a03fc4b0c36507538c5a9a",
+      "servings": 4,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 9.2939,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "vehnäjauhoja",
+          3.6999000000000004
+        ],
+        [
+          "kukkakaalia",
+          3.5250000000000004
+        ],
+        [
+          "kuohukermaa",
+          1.45
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kypsää, nahatonta broilerin rintafileetä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "broilerin lientä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "kuohukermaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "voita",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "currya",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "sitruunamehua",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "kukkakaalia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "jauhettua mustapippuria",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "kypsää, nahatonta broilerin rintafileetä",
+        "broilerin lientä",
+        "kuohukermaa",
+        "voita",
+        "currya",
+        "sitruunamehua",
+        "kukkakaalia",
+        "jauhettua mustapippuria"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "vehnäjauhoja"
+      ]
+    },
+    {
+      "recipeId": "lahi-ita-menemen-sumakilla",
+      "sourceVersion": "761665715f51419e9c1de3beffaf5d0c375b92475aa111c9dcefeb8a09a6d899",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 4.44625,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "tomaatti",
+          2.15625
+        ],
+        [
+          "vihreä paprika",
+          2.125
+        ],
+        [
+          "kananmuna",
+          0.165
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kananmuna",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "tomaatti",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "vihreä paprika",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        }
+      ],
+      "imputations": [
+        "kananmuna",
+        "tomaatti",
+        "vihreä paprika"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [
+        "sumakki"
+      ],
+      "unresolvedGi": []
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-harissa-shakshuka",
+      "sourceVersion": "d18df791334b9180f2a37a2495cf956287f31e958b701d3b574d4f620d393d10",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 5.69625,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "punaista paprikaa",
+          3.375
+        ],
+        [
+          "tomaattia",
+          2.15625
+        ],
+        [
+          "kananmuna",
+          0.165
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kananmuna",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "tomaattia",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        },
+        {
+          "ingredient": "punaista paprikaa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "vegetable-imputation40",
+          "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "rationale": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI."
+        }
+      ],
+      "imputations": [
+        "kananmuna",
+        "tomaattia",
+        "punaista paprikaa"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [
+        "harissa"
+      ],
+      "unresolvedGi": []
+    },
+    {
+      "recipeId": "karibia-maissipuuro-kookoksella",
+      "sourceVersion": "98a15b784a3ac7e399503a931868b27e7850a05ce1f0c54df58acaa07a557ef7",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 43.804,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "maissijauho",
+          41.925
+        ],
+        [
+          "kookosmaito",
+          1.564
+        ],
+        [
+          "vanilja",
+          0.315
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kookosmaito",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      ],
+      "imputations": [
+        "kookosmaito"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [
+        "kaneli"
+      ],
+      "unresolvedGi": [
+        "maissijauho",
+        "vanilja"
+      ]
+    },
+    {
+      "recipeId": "thai-roti-munalla-banaanilla",
+      "sourceVersion": "01b5f49344afa698e599aa1ae8672649a18182892227ae5aa8d49b07e582c0ba",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 50.1655,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "vehnäjauho",
+          36.999
+        ],
+        [
+          "banaani",
+          11.4375
+        ],
+        [
+          "kookosmaito",
+          1.564
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kananmuna",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "kookosmaito",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      ],
+      "imputations": [
+        "kananmuna",
+        "kookosmaito"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "banaani",
+        "vehnäjauho"
+      ]
+    },
+    {
+      "recipeId": "vietnamilainen-banh-cuon-sienilla",
+      "sourceVersion": "54b5cf45d8eeff8a07d9c5e9bcac2e4db43d916fb594818c2cc72485aafa9385",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 40.305,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "riisijauho",
+          39.65
+        ],
+        [
+          "tuoreita herkkusieniä",
+          0.4
+        ],
+        [
+          "kalakastike",
+          0.255
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "tuoreita herkkusieniä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      ],
+      "imputations": [
+        "tuoreita herkkusieniä"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "riisijauho",
+        "kalakastike"
+      ]
+    },
+    {
+      "recipeId": "karibia-johnny-cake",
+      "sourceVersion": "eab5edacb27b76b31b5fb07912922d23bf5b88c5b09210efbff7802f138e34bc",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 38.994,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "vehnäjauho",
+          36.999
+        ],
+        [
+          "maito",
+          1.44
+        ],
+        [
+          "leivinjauhe",
+          0.49500000000000005
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "maito",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "voi",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        }
+      ],
+      "imputations": [
+        "maito",
+        "voi"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "vehnäjauho",
+        "leivinjauhe"
+      ]
+    },
+    {
+      "recipeId": "malesialainen-kaya-paahtoleipa",
+      "sourceVersion": "9ed7ae702fd399d11e8487c838343828207c2c6c064ba1b221514efe515f12bf",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 36.5936,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "hapanjuurileipä",
+          25.106
+        ],
+        [
+          "sokeria",
+          9.990000000000002
+        ],
+        [
+          "kookosmaitoa",
+          1.2926
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "kananmuna",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "voita",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "kookosmaitoa",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "kananmuna",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        },
+        {
+          "ingredient": "sokeria",
+          "kind": "SOURCE_COMPARATOR",
+          "sourceId": "sucrose60",
+          "evidenceHash": "544a951d71bed9d596342e2e5b0671f21a888f4fff78e909281877e5621fd783",
+          "rationale": "Weighed sucrose; glucose-scale human comparison; no honey/syrup substitution."
+        }
+      ],
+      "imputations": [
+        "kananmuna",
+        "voita",
+        "kookosmaitoa",
+        "kananmuna"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "hapanjuurileipä"
+      ]
+    },
+    {
+      "recipeId": "lahi-ita-manakish-zaatarilla",
+      "sourceVersion": "b1c6167df859ba8589506e7bdc4a87a42e72a69ed175d073001422eb515fbd45",
+      "servings": 2,
+      "wholeChoPerServing": null,
+      "knownChoSubtotal": 57.485065,
+      "subtotalNotWhole": true,
+      "mainCarbohydrateSources": [
+        [
+          "vehnäjauhoja",
+          55.49850000000001
+        ],
+        [
+          "jogurtti",
+          1.7
+        ],
+        [
+          "kuivattua timjamia",
+          0.269
+        ]
+      ],
+      "giBindings": [
+        {
+          "ingredient": "jogurtti",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "dairy-imputation30",
+          "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "rationale": "Atkinson dairy coding assignment for this unsweetened animal dairy; not an ingredient-specific measured GI."
+        },
+        {
+          "ingredient": "seesaminsiemeniä",
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "spice-portion50-v2",
+          "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369",
+          "rationale": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked."
+        }
+      ],
+      "imputations": [
+        "jogurtti",
+        "seesaminsiemeniä"
+      ],
+      "preparationAndProductAssumptions": [],
+      "gkPoints": null,
+      "uncertainty": "LOW confidence; named scenario range not confidence bounds",
+      "recipeClarificationRequired": true,
+      "display": "—",
+      "reviewState": "NEEDS_SOURCE_REVIEW",
+      "missingQuantityOrComposition": [],
+      "unresolvedGi": [
+        "vehnäjauhoja",
+        "kuivattua timjamia"
+      ]
+    }
+  ]
+}

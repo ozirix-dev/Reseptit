@@ -1,0 +1,648 @@
+# CODEX – RESEPTIT GK-80
+# AJO 3 V2 – KATTAVUUDEN LÄPIMURTO JA ENSIMMÄINEN JULKAISUVALMISTELU
+
+**Päivä:** 30.10.2026
+**Päärepo:** `ozirix-dev/Reseptit`
+**Raportointi:** `ozirix-dev/ReportHub`
+**Toteutustapa:** Itsenäinen, rajattu Codex-ajo
+**Työn tila:** DEVELOPMENT / DRAFT ONLY
+**Omistajan pitkän aikavälin tavoite:** Vähintään 80 % resepteistä numeerisen GK-arvion tai numeerisen GK-skenaarioalueen piiriin.
+
+---
+
+## 0. TEHTÄVÄN YDIN – TULOKSIA, EI UUTTA LOPUTONTA AUDITOINTIA
+
+GK-80-projektissa on tehty huomattava määrä laadukasta lähde- ja laskentatyötä. Kattavuus ei kuitenkaan ole kasvanut tuotannossa.
+
+Lähtötilanne:
+
+- 326 nykyistä reseptiä.
+- 83 nykyistä laskettua GK-tulosta.
+- 243 keskeneräistä.
+- Kahdeksan uutta ehdollista GK-80-ehdotusta tutkimus-Drafteissa.
+- Nolla uutta julkaistua GK-80-arvoa.
+- Lopullinen tavoite vähintään 261/326.
+
+Edelliset erät tuottivat:
+
+- Pilot 1: kolme ehdotusta, joista harchan vanha skenaario myöhemmin hylättiin.
+- AJO 2: neljä uutta ehdotusta 30 reseptistä.
+- Liemi-/kastike-erä: nolla uutta kokonaista GK-ehdotusta.
+- Kanapannuerä: kaksi uutta ehdotusta kahdelle reseptille.
+
+Nykyinen tutkimusjono sisältää kahdeksan edelleen ehdollista numeerista ehdotusta.
+
+**NYT MUUTETAAN TYÖTAPA.**
+
+Tämän ajon päätavoitteet:
+
+1. **Vähintään 12 uutta numeerista GK-ehdotusta 40 uudelle keskeneräiselle reseptille.**
+2. **Tavoitellaan 15–20 ehdotusta, jos aineisto mahdollistaa tämän ilman perusteettomia oletuksia.**
+3. **Valmistellaan vähintään neljä aikaisemmista kahdeksasta GK-ehdotuksesta erilliseen tuotantovalmiutta tavoittelevaan Draft-PR:ään, jos niiden hyväksymisehdot voidaan täyttää.**
+4. **Luodaan yhteinen, uudelleenkäytettävä arviointimenetelmä, jolla pienet GI-epävarmuudet eivät aiheuta automaattista koko reseptin estoa.**
+
+Älä luokittele teknistä PASS-tulosta ohjelman pääonnistumiseksi, ellei numeeristen arvioiden ja julkaisukelpoisten muutosten määrä kasva.
+
+Älä keksi GI-arvoja tai välejä tulostavoitteen saavuttamiseksi.
+
+---
+
+## 1. LÄHTÖAINEISTON TARKISTUS
+
+Tarkista ensin oikea repository, origin, työpuu, main ja avoimet PR:t.
+
+Tarkista repo_guardin nykyinen kevennetty menettely. Tavallinen tutkimus-, laskenta- ja Draft-PR-työ kuuluu tämän toimeksiannon valtuutukseen. Kriittiset toimet noudattavat edelleen guardin rajoja.
+
+Erityisesti varmista, ettei työ vahingossa käynnisty Ravinto-repossa.
+
+Tarkista nämä pinotut Reseptit-PR:t:
+
+- #135 – GK-80 Pilot 1.
+- #136 – GK-80 AJO 2.
+- #137 – Liemi- ja kastike-erä.
+- #138 – Kanapannujen kaksi arviota.
+
+Viimeksi tarkistettu #138 HEAD:
+
+`0eb8747069a57c306f32a612fad79d43e9892d65`
+
+ReportHubin vastaavat PR:t:
+
+- #75.
+- #77.
+- #78.
+- #79.
+
+R2 #133 ja R3 #134 ovat erillisiä tutkimus- ja korjausriippuvuuksia.
+
+Älä sekoita niiden historiallista sisältöä GK-80:n uuteen päätöspolitiikkaan.
+
+Jos uusi AJO 3 on jo aloitettu jossakin paikallisessa worktreessä tai haarassa, selvitä sen tila ja jatka oikeaa työtä sen sijaan, että aloittaisit päällekkäisen ajon.
+
+---
+
+## 2. LOPULLINEN KÄYTTÄJÄTARKOITUS
+
+Reseptit-sivuston GK-toiminnon tehtävä on auttaa käyttäjää hahmottamaan aterian glykeemisen kuorman suuruusluokkaa.
+
+Käyttäjä haluaa esimerkiksi nähdä:
+
+**GK-arvio noin 14–20/annos**
+
+tai:
+
+**GK-arvio noin 5/annos**
+
+Ei ole edellytys, että juuri kyseinen kokonainen ateria olisi tutkittu ihmisillä.
+
+Laskennallinen arvio saa perustua julkaistuihin vertailututkimuksiin, selvästi nimettyihin tuotetietoihin ja hyväksyttyyn imputointimenetelmään.
+
+Käyttäjälle on kuitenkin kerrottava, kun kyseessä on:
+
+- Lähteistetty suora sovellus.
+- Sovellettu vertailuarvo.
+- Mallinnettu arvio.
+- Mallinnettu vaihtoehtojen vaihteluväli.
+
+Kaikki käyttäjälle näytettävät numeeriset arvot ovat arvioita.
+
+Terveydellisessä käytössä GK ei ole yksilöllinen verensokeriennuste eikä insuliiniannoksen laskentaperuste.
+
+Ketoilijalle on näytettävä myös imeytyvien hiilihydraattien määrä, koska pieni GK ei yksin tarkoita vähähiilihydraattista ateriaa.
+
+---
+
+## 3. YHTEINEN GK-80-ARVIOINTIPOLITIIKKA
+
+Tämä on ajon tärkein menetelmätehtävä.
+
+Aikaisemmassa mallissa yhden pienen ainesosan GI-puute saattoi estää koko reseptin numeerisen arvioinnin.
+
+Uuden mallin tulee tukea seuraavia tietotyyppejä.
+
+### A. DIRECT
+
+Elintarvikkeen ja valmistuksen kannalta hyvin vastaava ihmisillä mitattu GI.
+
+### B. FOOD_ANALOGUE
+
+Riittävän vastaavasta ruoasta julkaistu GI, jonka soveltuvuus on selvästi perusteltu.
+
+### C. PUBLISHED_IMPUTATION
+
+Julkaistuun ruokavaliotutkimuksen tai elintarviketietokannan koodausmenetelmään perustuva GI-oletus.
+
+Esimerkiksi Atkinson ym. 2008 mainitsee seuraavat puuttuvien GI-arvojen koodausvaihtoehdot vähähiilihydraattisille tuotteille:
+
+- Kasvikset: 40.
+- Jauhotuotteet: 70.
+- Maitotuotteet: 30.
+
+Nämä ovat ehdollisia koodausehdotuksia, eivät yleisesti mitattuja GI-arvoja.
+
+Älä sovella niitä väärään ruokaperheeseen.
+
+Erityisesti jauhotuotteen koodausarvo ei ole automaattisesti oikea arvo kaikille leiville, leivonnaisille tai yksittäisille jauhoille valmistuksesta riippumatta.
+
+### D. MODELLED_SCENARIO
+
+Useasta nimetystä vertailutuotteesta, valmistuksesta tai muusta perustellusta vaihtoehdosta laskettu GK-alue.
+
+### E. CHO_ONLY
+
+Kokonaisen annoksen hiilihydraattimäärä on laskettavissa, mutta numeerinen GK ei vielä ole.
+
+### F. UNAVAILABLE
+
+Olennainen tieto jää ratkaisematta.
+
+**Tärkeä muutos: luokka C on hyväksyttävä mallinnusmenetelmä silloin, kun julkaistun koodausmenetelmän soveltamisala ja reseptin ainesosat kohtaavat hyväksyttävällä tavalla.**
+
+Se ei ole käyttäjälle näkymätön tietokantakorjaus.
+
+Sen pitää näkyä matalan luottamuksen laskennallisena arviona.
+
+---
+
+## 4. PIENEN GI-EPÄVARMUUDEN KÄSITTELY
+
+Toteuta yhteinen laskentasääntö, joka tarkastelee epävarman ainesosan vaikutusta koko reseptiin.
+
+Käytä ensisijaisesti todellista käytettävää hiilihydraattimäärää annosta kohti.
+
+Tee ero seuraavien välillä:
+
+1. Lähteistetty mitattu GI.
+2. Lähteistetty vertailuarvo.
+3. Julkaistun koodausmenetelmän pisteoletus.
+4. Nimettyjen vaihtoehtojen GK-alue.
+5. Täysin tuntematon vaikutus.
+
+Jos pieni ainesosa ei saa suoraa GI:tä, mutta kuuluu perustellusti julkaistun imputointimenetelmän soveltamisalaan, se voidaan sisällyttää mallinnettuun kokonaispisteeseen.
+
+Tällainen piste on edelleen mallinnettu.
+
+Jos lähteistettyjä vaihtoehtoja on useita, muodosta numeerinen skenaarioalue.
+
+Jos numeerinen ala- tai yläraja ei ole lähteillä perusteltavissa, älä nimeä herkkyyskoetta todelliseksi vaihteluväliksi.
+
+Älä muuta tuntematonta GI:tä automaattisesti nollaksi.
+
+Älä sovella yleistä GI 100 -ylärajaa.
+
+### Erityistapaus: hyvin vähähiilihydraattinen ateria
+
+Kahden kanapannun lähtökohtaiset arvot ovat:
+
+- CHO noin 2,88 g / GK noin 1.
+- CHO noin 2,90 g / GK noin 1.
+
+Näissä kaikki positiiviset GK-osuudet perustuvat sovellettuihin lähteisiin tai imputointiin.
+
+Tutki, voidaanko tällaiset matalan luottamuksen arvot esittää yhtenäisesti esimerkiksi:
+
+**Mallinnettu GK-arvio noin 1/annos.**
+
+Tee soveltamispäätös erikseen Schakelin GI 50 -menetelmälle, maitotuotteiden analogioille ja mustapippurin erityiselle annosperusteiselle oletukselle.
+
+Älä muuta Schakelin oletusarvoa mitatuksi kanaliemen, Dijonin tai mustapippurin GI:ksi.
+
+Jos kokonaispiste voidaan hyväksyä mallinnuspolitiikan mukaan, kaikkea tuntematonta fysiologista vaihtelua ei tarvitse esittää tunnetuksi vaihteluväliksi.
+
+Mutta käyttäjälle on selvästi kerrottava, ettei piste ole aterialla mitattu GK.
+
+---
+
+## 5. KAHDEKSAN VANHAN GK-EHDOTUKSEN YHTEINEN KATSELMOINTI
+
+Käsittele kaikki kahdeksan edelleen ehdollista arviota samassa katselmointimatriisissa.
+
+### Pilot 1
+
+**Vietnamilainen kahvijogurtti banaanilla**
+
+- Nykyinen arvio 11–12.
+- Tarkista maustamaton jogurtti, kondensoitu maito ja syötävän banaanin massa.
+- Säilytä banaanin kypsyys- ja jogurtin tuotevaihtoehdot selvästi nimettyinä.
+
+**Halloumi-tomaattileipä**
+
+- Nykyinen arvio 14–21.
+- Tarkista leivän lähde, tuotetyyppi ja paahtamaton laskentaversio.
+- Tarkista halloumin vähäinen CHO ja maitoanalogia.
+- Korjaa päällekkäiset valmistusvaiheet.
+
+### AJO 2
+
+**Hu tieu -nuudelikeitto**
+
+- Nykyinen ehdotus noin 25.
+- Tarkista riisinuudelin GI, valmistus ja kasvisoletus.
+
+**Chao ga -kanariisipuuro**
+
+- Nykyinen ehdotus noin 30.
+- Tarkista riisipuuron valmistus ja lähtöreseptin yksilöinti.
+
+**Bubur ayam -kanariisipuuro**
+
+- Nykyinen ehdotus noin 30.
+- Älä päättele sen olevan chao gan kanssa sama resepti vain siksi, että tutkimussyötteet ovat identtiset.
+- Tarkista erillinen resepti-identiteetti, annoskoko ja valmistus.
+
+**Marokkolainen minttutee-kaurapuuro**
+
+- Nykyinen ehdotus noin 26.
+- Ratkaise alkuperäisen siivilöidyn minttuhaudukkeen ja uuden syötävän mintun välinen ristiriita.
+- Nimeä tarvittaessa erillinen variantti.
+
+### Kanapannuerä
+
+**Kana-parmesaanipannu parsakaalilla**
+
+- CHO 2,88 g.
+- GK noin 1.
+- Kivikylän kanalientä 150 g.
+- GI-oletukset ja koko kastikkeen käyttö näkyviksi.
+
+**Kermainen kanasienipannu keltasipulilla**
+
+- CHO 2,90 g.
+- GK noin 1.
+- Keltasipuli 55 g korvaa alkuperäisen salottisipulin.
+- Maille Dijon 15 g.
+- Valmistus ja ainesosamuutos dokumentoitava.
+
+### Katselmointiluokat
+
+Anna jokaiselle:
+
+- `READY_FOR_OWNER_APPROVAL`
+- `READY_AFTER_SPECIFIED_FIX`
+- `NEEDS_METHOD_DECISION`
+- `NEEDS_SOURCE_REVIEW`
+- `REJECTED`
+
+Aikaisemmin hylättyä harchan 19–26-skenaariota ei saa laskea kahdeksan joukkoon eikä palauttaa ilman uutta näyttöä.
+
+**Tavoite on saada vähintään neljä näistä kahdeksasta tuotantototeutusta varten valmiiksi katselmoitaviksi.**
+
+Älä hyväksy reseptiä itsenäisesti käyttäjän puolesta.
+
+---
+
+## 6. ERILLINEN JULKAISUEHDOKAS-DRAFT
+
+Luo tarvittaessa erillinen Draft-PR ensimmäiselle hyväksyttäväksi ehdotettavalle GK-80-tuotantopaketille.
+
+Valitse tähän enintään 4–8 mahdollisimman hyvin perusteltua reseptiä.
+
+**Tavoite: vähintään neljä käyttökelpoista reseptikohtaista muutoskokonaisuutta**, jos katselmointi tukee niitä.
+
+Tämä PR ei saa sisältää turhaan kaikkia historiallisia tutkimusaineistoja.
+
+Toteutusehdotukseen kuuluvat:
+
+- Varsinainen hyväksyttäväksi ehdotettu GK-arvio.
+- Laskennan lähdesidokset.
+- Reseptin tarvittava täsmennys.
+- Neljän makron johdonmukaisuus.
+- Nykyisten kieliversioiden vastaavat muutokset.
+- Laskennan versiointi ja vanhenemisen esto.
+- Käyttäjälle yksinkertainen arviointimerkintä.
+- Kohdennetut testit ja regressiot.
+
+Varmista oikea Git-base.
+
+Älä siirrä tutkimushaaran keskeneräisiä muutoksia tuotantoon vahingossa.
+
+Älä tee mergeä tai deployta.
+
+Jos neljän reseptin teknisesti valmis Draft on mahdollinen mutta vaatii erillisen GI-politiikan hyväksynnän, merkitse se avoimeksi nimenomaiseksi julkaisuehdoksi.
+
+Älä nimeä tällaista PR:ää jo hyväksytyksi tuotantosisällöksi.
+
+---
+
+## 7. 40 UUDEN RESEPTIN LASKENTAERÄ
+
+Tämä on ajon suurin uusi tuloste.
+
+Valitse 40 sellaista reseptiä, jotka:
+
+- Ovat nykyisessä tuotantomallissa keskeneräisiä.
+- Eivät kuulu jo laskettuihin 83:een.
+- Eivät ole aikaisempien kahdeksan ehdotuksen reseptejä.
+- Eivät ole aikaisempien GK-80-pilottien tutkimuskohteita, ellei erikseen perustella miksi uusi erä hyötyy juuri niiden ratkaisusta.
+
+Päätavoite: **vähintään 12 uutta numeerista GK-arvioehdotusta**.
+
+Kunnianhimoinen tavoite: 15–20 ehdotusta.
+
+### Valintamenetelmä
+
+Älä aloita taas 40 vaikeasta reseptistä.
+
+Seulo ensin kaikki nykyiset keskeneräiset koneellisesti jo olemassa olevien tietojen perusteella.
+
+Valitse:
+
+**15 lähes laskettavaa reseptiä**
+
+Pääainesosan GI jo olemassa, suurin osa koostumuksesta kunnossa, epävarmuus rajallinen tai mallinnettavissa.
+
+**15 yhteisellä lähteellä ratkaistavaa reseptiä**
+
+Esimerkiksi useita reseptejä, jotka tarvitsevat samaa riisi-, leipä-, maitotuote-, kasvis-, nuudeli- tai palkokasvitietoa.
+
+**10 täsmennettävää reseptiä**
+
+Ongelma voidaan ratkaista perustellulla valmistus- tai ainesosatarkennuksella.
+
+Mukana tulee olla vähintään 10 reseptiä, joissa on merkittävä päähiilihydraattilähde, jotta tulokset eivät koostu pelkästään hyvin vähähiilihydraattisista ruoista.
+
+### Työskentelyjärjestys
+
+Käsittele ensin 20 korkeimmin priorisoitua.
+
+Tavoittele niistä vähintään kuutta uutta GK-ehdotusta.
+
+Arvioi sitten, mikä yhteinen menetelmä auttoi eniten.
+
+Käsittele seuraavat 20 käyttäen samaa menetelmää.
+
+Älä tee uutta yleisauditointia välissä.
+
+Älä anna saman pienen GI-ongelman pysäyttää jokaista reseptiä erikseen, jos se voidaan ratkaista yhteisellä katselmoitavalla imputointi- tai vertailumenetelmällä.
+
+### Jokaisen reseptin päätös
+
+Tallenna:
+
+1. Resepti-ID ja lähdeversio.
+2. Annosmäärä.
+3. Koko annoksen käytettävä CHO.
+4. Pääasialliset hiilihydraattilähteet.
+5. Suorat tai sovelletut GI-lähteet.
+6. Julkaistut imputoinnit erikseen.
+7. Valmistus- ja tuoteoletukset.
+8. Laskennallinen GK-piste tai skenaarioalue.
+9. Epävarmuuden tulkinta.
+10. Tarvittava reseptitäsmennys.
+11. Käyttäjälle ehdotettu näyttö.
+12. Katselmointitila.
+
+---
+
+## 8. NUMEERINEN VAIHTELUVÄLI
+
+GK-80:n alkuperäinen tavoite oli sallia myös laskennalliset vaihteluvälit.
+
+Aikaisempien ajojen uudet arvot ovat pääosin pistearvioita.
+
+Tässä ajossa tutki aktiivisesti, saadaanko skenaarioalueita myös merkittävästi hiilihydraatteja sisältäville resepteille.
+
+Esimerkiksi:
+
+- Eri perustellut riisilaadut.
+- Eri valmistusmuodot.
+- Eri nimetyt leipätyypit.
+- Tuotevaihtoehtojen GI-tutkimukset.
+- Lähteistetyt ja samaan valmistukseen sopivat elintarvikeanalogiat.
+
+Älä rakenna kuvitteellisia ala- ja ylärajoja.
+
+Jos nimettyjen vaihtoehtojen vaikutus GK:hon voidaan laskea, esitä mallinnettu skenaarioalue.
+
+Jos tulos ylittää luokkarajan, näytä molemmat luokat.
+
+Esimerkki käyttäjälle:
+
+**GK-arvio noin 14–24 – keskisuuri–korkea**
+
+Alue ei ole tilastollinen luottamusväli.
+
+Tavoittele tässä erässä myös numeerisia skenaarioalueita, ei vain yksittäisiä pisteitä.
+
+Älä kuitenkaan muuta yhtä julkaistua GI-oletuspistettä keinotekoiseksi vaihteluväliksi.
+
+---
+
+## 9. RESEPTIMUUTOKSET
+
+Omistajan hyväksymä GK-80-linja sallii reseptien täsmentämisen.
+
+Tee aktiivisesti tarvittavia ehdotuksia:
+
+- Kuivapaino tai kypsäpaino.
+- Tuotteen nimi.
+- Syötävän osan massa.
+- Annoksen koko.
+- Riisilaji.
+- Leipätyyppi.
+- Keittotapa.
+- Marinadin kuluminen.
+- Kastikkeen kokonaismäärä.
+- Mausteiden realistiset määrät.
+- Valmistuksen ristiriitaiset vaiheet.
+
+Jos muutos ei muuta ruoan identiteettiä olennaisesti, se voidaan ehdottaa nykyisen reseptin täsmennykseksi.
+
+Jos muutos on olennainen, nimeä erillinen variantti.
+
+Älä muuta alkuperäistä reseptiä huomaamatta vain siksi, että jokin GI-arvo sopisi paremmin.
+
+Toteuta ehdotetut reseptimuutokset julkaisuehdokkaan Draft-PR:ssä, jos niiden lähde- ja toimitusehdot ovat selkeät.
+
+---
+
+## 10. TULOSTEN MITTAAMINEN
+
+Pidä neljä lukua erillään:
+
+1. Tuotannon numeeriset GK-tulokset.
+2. Uudet ehdolliset numeeriset ehdotukset.
+3. Hyväksyntävalmiit reseptit ja laskelmat.
+4. Uudet julkaistut arvot.
+
+Älä ilmoita tuotantokattavuuden kasvaneen, jos vain tutkimustiedot ovat lisääntyneet.
+
+Erota myös:
+
+- Suora lähde.
+- Sovellettu mittaus.
+- Julkaistu imputointi.
+- Mallinnettu vaihtoehtoalue.
+
+Numeeriseen kattavuuteen lasketaan yksi resepti-ID vain kerran.
+
+Hylättyä ehdotusta ei lasketa mukaan.
+
+Vain CHO-arvon saanut resepti ei kuulu numeeriseen GK-kattavuuteen.
+
+Kattavuuden pitkä tavoite on edelleen:
+
+**Vähintään 261/326.**
+
+Tämän ajon tuloksena haluan nähdä, että ehdollisten numeeristen arvioiden määrä kasvaa selvästi nykyisestä kahdeksasta.
+
+Jos kaikki kahdeksan aiempaa ja 12 uutta osoittautuvat myöhemmin hyväksyttäviksi, yhteinen ehdokasjoukko olisi 20. Tämä on tutkimuskattavuutta, ei vielä julkaistua kattavuutta.
+
+---
+
+## 11. TESTAUS
+
+Noudata FAST-FIRST-periaatetta.
+
+Kehityksen aikana aja kohdennetut laskentatestit ja muuttuvien tiedostojen tarkistukset.
+
+Lopuksi:
+
+- Uusien GK-laskelmien toisto Python Decimalilla.
+- Kaikkien neljän makron tarkistus.
+- GI-asteikkojen tarkistus.
+- Lähdehashien ja syötteiden tarkistus.
+- Reseptin ja laskennan vastaavuus.
+- Luokkarajojen testit.
+- Vanhentuneiden sidosten esto.
+- FI/EN/SV/TH-synkronointi, jos reseptejä muutetaan.
+- Kokoelma-auditointi.
+- Nykyisten 326 tuloksen regressiovertailu.
+- GitHub CI lopulliselle HEADille.
+
+Säilytä alkuperäinen baseline, älä muokkaa testiodotuksia vain PASS-tuloksen saavuttamiseksi.
+
+Jos julkaisuehdokkaan tarkoituksellinen muutos vaikuttaa aiemmin laskettuihin arvoihin, dokumentoi vaikutus erikseen. Älä piilota tarkoituksellista muutosta muuttumattomuustestin taakse.
+
+---
+
+## 12. GITHUB JA REPORTHUB
+
+Tee uusi rajattu työhaara ja Draft-PR GK-80 AJO 3:lle.
+
+Aiemmat PR:t ovat pinottuja. Tarkista ja säilytä niiden riippuvuudet.
+
+Tee erillinen julkaisuehdokkaan Draft-PR, jos saat riittävän valmiit reseptimuutokset kasaan.
+
+Älä yhdistä keskeneräisiä tutkimus-PR:iä mainiin vain uuden PR:n avaamiseksi.
+
+Älä muuta R2/R3-historiaa.
+
+ReportHubiin yksi kattava AJO 3 -raportti, joka sisältää:
+
+- Numeeristen uusien tulosten määrän.
+- Uudet reseptit ja GK-arviot.
+- Kahdeksan aiemman ehdotuksen tilanteen.
+- Mahdollisen julkaisuehdokas-PR:n.
+- Uuden GK-80-politiikan.
+- Kattavuuden nykytilan.
+- Seuraavan etenemiskohteen.
+
+Vältä turhia väli- ja rinnakkaisraportteja.
+
+---
+
+## 13. TYÖN ITSENÄISYYS
+
+Suorita tämä koko rajattu ajo itsenäisesti.
+
+Älä kysy käyttäjältä lupaa jokaisen reseptin, lähteen tai mallinnusoletuksen tutkimiseen.
+
+Jos repo_guard tarvitsee kyllä/ei-vahvistuksen erikseen suojattuun toimeen, kerro täsmällisesti mitä ollaan vahvistamassa.
+
+Älä ohita guardia.
+
+Älä tee tuotantoon mergeä tai deployta.
+
+Älä käynnistä seuraavaa laajaa ajoa automaattisesti.
+
+---
+
+## 14. LOPPURAPORTTI
+
+Aloita täsmällisesti:
+
+**GK-80 AJO 3 V2 – X/40 uutta numeerista GK-ehdotusta. Tavoite 12. Julkaisuvalmisteluun Y/8 vanhaa ehdotusta. Päätös GO / PARTIAL / BLOCKED.**
+
+### A. Uudet numeeriset tulokset
+
+Taulukko:
+
+| Resepti | CHO/annos | GK-arvio tai väli | Menetelmä | Luottamus | Tila |
+| --- | ---: | --- | --- | --- | --- |
+
+### B. Aiemmat kahdeksan
+
+Näytä jokaisen tila, muuttuneet tiedot ja hyväksyntää vaativat päätökset.
+
+### C. Julkaisuehdokas
+
+Ilmoita:
+
+- Onko erillinen Draft-PR avattu?
+- Kuinka monta reseptiä siinä on?
+- Mitä hyväksyntöjä puuttuu?
+- Ovatko kieliversiot ja testit valmiit?
+
+### D. Yhteinen arviointimenetelmä
+
+Kerro, mikä aiempi automaattinen esto korvattiin ja kuinka monen reseptin laskennan tämä mahdollisti.
+
+### E. Kattavuus
+
+Erottele:
+
+- Tuotanto.
+- Ehdolliset arviot.
+- Hyväksyntävalmiit.
+- Julkaistut.
+- Jäljellä oleva matka 261:n tavoitteeseen.
+
+### F. Testit ja PR:t
+
+- Tarkat commit-SHA:t.
+- PR-linkit.
+- CI-tulokset.
+- Uusien testien tulokset.
+- Mahdolliset regressiot.
+- Julkaisemattomuuden vahvistus.
+
+### G. Seuraava vaihe
+
+Ehdota yksi rajattu seuraava ajo, joka tuottaa todennäköisesti mahdollisimman paljon uusia GK-arvioita tai vie valmiit ehdotukset tuotantoon hyväksynnän jälkeen.
+
+Älä käynnistä sitä.
+
+---
+
+# 15. LOPULLINEN SUORITUSKÄSKY
+
+**ALOITA GK-80 AJO 3 V2 NYT.**
+
+Päätavoite:
+
+**VÄHINTÄÄN 12 UUTTA NUMEERISTA GK-EHDOTUSTA 40 RESEPTISTÄ.**
+
+Kunnianhimoinen tavoite:
+
+**15–20 UUTTA EHDOTUSTA.**
+
+Rinnakkainen tavoite:
+
+**VÄHINTÄÄN NELJÄ AIEMPAA GK-EHDOTUSTA VALMISTELTU JULKAISUEHDOKAS-DRAFTIIN, JOS NÄYTTÖ RIITTÄÄ.**
+
+Menetelmätavoite:
+
+**YHTEINEN JULKAISTUIHIN LÄHTEISIIN POHJAUTUVA MALLINNUSPOLITIIKKA, JOKA MAHDOLLISTAA KATTAVUUDEN KASVATTAMISEN ILMAN YKSITTÄISTEN MAUSTEIDEN LOPUTONTA TUTKIMISTA.**
+
+Lopullinen ohjelmatavoite:
+
+**VÄHINTÄÄN 80 % RESEPTEISTÄ NUMEERISEN GK-ARVION TAI GK-SKENAARIOALUEEN PIIRIIN.**
+
+Tee itsenäisesti koko rajattu ajo, testaa tulos, päivitä GitHub ja ReportHub ja palauta yhtenä kokonaisuutena katselmoitavaksi.
+
+Älä anna teknisesti onnistuneen mutta numeerisesti tuloksettoman tutkimuserän korvata tavoitteeseen etenemistä.
+
+Älä kuitenkaan keksi arvoja vain tavoitteen täyttämiseksi.
+
+**EI MERGEÄ. EI TUOTANTODEPLOYTA. EI AUTOMAATTISTA SEURAAVAA AJOA.**
