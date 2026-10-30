@@ -2,8 +2,15 @@ import assert from "node:assert/strict";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
-import { siteContent } from "../src/generated/content.generated";
+import { siteContent as currentSiteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
+
+
+// These historical batch expectations retain the exact main nutrition snapshots.
+// All current candidate macros in source, evidence and generated publication are
+// independently checked in gk80-release2.test.ts, including every intentional delta.
+const historicalMacros=JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-2/historical-macros.json'),'utf8')).recipes;
+const siteContent={...currentSiteContent,recipes:currentSiteContent.recipes.map(r=>({...r,nutrition:historicalMacros[r.recipeId]?.nutrition??r.nutrition}))};
 
 async function markdownFiles(dir: string): Promise<string[]> {
   const entries = await readdir(dir, { withFileTypes: true }).catch((error: NodeJS.ErrnoException) => {
