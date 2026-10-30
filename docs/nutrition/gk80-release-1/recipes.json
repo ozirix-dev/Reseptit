@@ -1,0 +1,1003 @@
+{
+  "status": "DRAFT_CANDIDATE_OWNER_APPROVAL_REQUIRED",
+  "recipes": [
+    {
+      "recipeId": "vietnamilainen-hu-tieu-aamiaiskeitto",
+      "title": "Hu tieu -nuudelikeitto kasviksilla",
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-hu-tieu-aamiaiskeitto.md",
+      "sourceSha256": "95af371c01980896cb8087a07edbfa593b6cf8a65f893b481108634e70f459f8",
+      "servings": 2,
+      "group": "near-complete",
+      "evidenceVersion": 2,
+      "method": "B",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "scenarios": [
+        {
+          "id": "specified-hot-recipe-with-disclosed-vegetable-imputation",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "riisinuudeli",
+              "massG": 100,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 81.64,
+                "protein": 3.44,
+                "fat": 0.56,
+                "fibre": 2.07
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": "rice-noodle61",
+              "giEvidenceHash": "51f4937eaa6c5a576a9e8b488efcdbc19521c178a79790b493d0097501d01cf0",
+              "family": "rice-noodle",
+              "match": "APPLIED",
+              "applicability": "100 g dry rice noodles, boiled and served hot. Same food form as table row 1463, different unspecified brand is a LOW analogy.",
+              "composition": {
+                "sourceId": "fineli-29055-release-20",
+                "evidenceHash": "d93b875af7f0b146e16f37d51ac62091fc25ee714e2b13b557c9585e0305c885"
+              },
+              "state": "dry rice noodles as sold",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 1,
+              "name": "porsaan ulkofileetä",
+              "massG": 150,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 23.3,
+                "fat": 2.2,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
+              "composition": {
+                "sourceId": "afcd-F007037-release-3",
+                "evidenceHash": "18f7082918d2abf0d6da28de7446d744bccef4a6e6fbc996f6408435056a3e8d"
+              },
+              "state": "raw lean pork loin roast",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 150,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 2,
+              "name": "pavunitu",
+              "massG": 150,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 1.6,
+                "protein": 3.1,
+                "fat": 0.1,
+                "fibre": 1.3
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained.",
+              "composition": {
+                "sourceId": "afcd-F008806-release-3",
+                "evidenceHash": "68d8483496c639ad90175c0c60035293233b42f52883a4f31ebe4d6e831ec9f1"
+              },
+              "state": "fresh raw bean sprouts",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 150,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained."
+              }
+            },
+            {
+              "index": 3,
+              "name": "korianteri",
+              "massG": 6,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 1.9,
+                "protein": 3.1,
+                "fat": 0.6,
+                "fibre": 3.2
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained.",
+              "composition": {
+                "sourceId": "afcd-F003192-release-3",
+                "evidenceHash": "b2113e8416216bb97c71dd28ceb48c7c6abefcb51bcbe4586b404580745ff6a5"
+              },
+              "state": "fresh raw coriander leaves, chopped",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 6,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained."
+              }
+            },
+            {
+              "index": 4,
+              "name": "vettä",
+              "massG": 700,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
+              "composition": {
+                "sourceId": "fineli-922-release-20",
+                "evidenceHash": "10faa2ab35a19393a514f57e1dcd9f05988b2235dcd4f545611efd831eb857ad"
+              },
+              "state": "plain tap water",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 700,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 5,
+              "name": "suolaa maun mukaan",
+              "massG": null,
+              "certifiedZeroSalt": true,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
+              "composition": null,
+              "state": "salt omitted; no contribution to displayed macronutrients",
+              "quantityEvidence": {
+                "amount": null,
+                "unit": "",
+                "edibleFraction": 1,
+                "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat"
+              },
+              "originalOmission": "Salt has zero impact on the four displayed macronutrients."
+            }
+          ]
+        }
+      ],
+      "originalPreparation": "## Valmistus\n\n1. Kuumenna kattilassa öljy tai liemi. Lisää aromit ja hitaammin kypsyvät ainekset; paista tai hauduta muutama minuutti.\n2. Kaada kattilaan liemi ja keitä miedosti, kunnes pääraaka-aineet ovat kypsiä.\n3. Lisää nuudelit, lehtivihannekset tai muut nopeasti kypsyvät ainekset niiden kypsymisajan mukaan.\n4. Kypsennä porsaan ulkofileetä vedessä hiljalleen. Lisää riisinuudelit niiden pakkauksen kypsennysajan mukaan. Tarjoa pavunitujen ja hienonnetun tuoreen korianterin kanssa.\n",
+      "originalIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisinuudeli"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "porsaan ulkofileetä"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "pavunitu"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "korianteri"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "uncertainty": "LOW",
+      "reviewNote": "Conditional arithmetic proposal with named published vegetable imputation. Method and exact recipe wording still need independent approval; not a guaranteed one-unit uncertainty bound.",
+      "requiresRecipeClarification": true,
+      "requiresMethodApproval": true,
+      "approved": false,
+      "published": false,
+      "proposedPreparation": [
+        "Kiehauta vesi. Lisää suikaleiksi leikattu porsaan ulkofilee ja kypsennä kauttaaltaan.",
+        "Lisää kuivat riisinuudelit ja kypsennä pakkauksen ohjeen mukaan. Lisää pavunidut ja kuumenna kauttaaltaan.",
+        "Lisää hienonnettu korianteri ja suola. Jaa koko keitto nesteineen kahteen yhtä suureen annokseen. Lisäöljyä, erillistä lientä tai muita täytteitä ei kuulu laskentaversioon."
+      ],
+      "proposedTitle": "Hu tieu -nuudelikeitto kasviksilla",
+      "releaseInputVersion": 1
+    },
+    {
+      "recipeId": "vietnamilainen-chao-ga-kanapuuro",
+      "title": "Chao ga -inkiväärinen kanapuuro",
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-chao-ga-kanapuuro.md",
+      "sourceSha256": "d2b3105d6525b2b626792cbbe2bf12a2e073183ba061cd2f05dcef230ba85e97",
+      "servings": 2,
+      "group": "near-complete",
+      "evidenceVersion": 2,
+      "method": "B",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "scenarios": [
+        {
+          "id": "specified-hot-recipe-with-disclosed-vegetable-imputation",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kuivaa valkoista jasmiiniriisiä",
+              "massG": 100,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 74,
+                "protein": 7,
+                "fat": 0.9,
+                "fibre": 0.8
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": "rice-congee80",
+              "giEvidenceHash": "af37b2de4742d497b6d320272bc4c41ab2e6a22c532a3cc7e46bb0ab6a747fcc",
+              "family": "rice-congee",
+              "match": "APPLIED",
+              "applicability": "100 g dry jasmine rice cooked as hot soft porridge for about 40 min in 800 g water. Source steamed 31.6 g rice in 250 ml water; simmering is an explicit applied comparison, not identical measurement.",
+              "composition": {
+                "sourceId": "afcd-F007682-release-3",
+                "evidenceHash": "56170d712d83a6f42bd4338f38baf2044edb1f698bf329c897b2b254529e2dc0"
+              },
+              "state": "dry uncooked white long-grain rice",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 1,
+              "name": "nahatonta broilerin rintafileetä",
+              "massG": 150,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 22.5,
+                "fat": 0.8,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
+              "composition": {
+                "sourceId": "afcd-F002594-release-3",
+                "evidenceHash": "dd7e905a1e79f68b5b2922722c85df09e6105d20565ac76d35bfc788c077f698"
+              },
+              "state": "raw lean skinless chicken breast flesh",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 150,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 2,
+              "name": "tuoretta inkivääriä",
+              "massG": 2,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 0.8,
+                "fat": 0.4,
+                "fibre": 2.8
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained.",
+              "composition": {
+                "sourceId": "afcd-F004213-release-3",
+                "evidenceHash": "31bce1287ada034a38ef5810967052302dc623abe175be94300ef80f653a8cf2"
+              },
+              "state": "peeled fresh raw ginger",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 2,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained."
+              }
+            },
+            {
+              "index": 3,
+              "name": "kevätsipuli",
+              "massG": 12,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 4.6,
+                "protein": 1.7,
+                "fat": 0.2,
+                "fibre": 1.9
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained.",
+              "composition": {
+                "sourceId": "afcd-F006250-release-3",
+                "evidenceHash": "986b014257d1c1d39880366c43b5481ca008d916af3c4fab40519cabd437821b"
+              },
+              "state": "fresh raw spring onion, chopped",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 12,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained."
+              }
+            },
+            {
+              "index": 4,
+              "name": "vettä",
+              "massG": 800,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
+              "composition": {
+                "sourceId": "fineli-922-release-20",
+                "evidenceHash": "10faa2ab35a19393a514f57e1dcd9f05988b2235dcd4f545611efd831eb857ad"
+              },
+              "state": "plain tap water",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 800,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 5,
+              "name": "suolaa maun mukaan",
+              "massG": null,
+              "certifiedZeroSalt": true,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
+              "composition": null,
+              "state": "salt omitted; no contribution to displayed macronutrients",
+              "quantityEvidence": {
+                "amount": null,
+                "unit": "",
+                "edibleFraction": 1,
+                "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat"
+              },
+              "originalOmission": "Salt has zero impact on the four displayed macronutrients."
+            }
+          ]
+        }
+      ],
+      "originalPreparation": "## Valmistus\n\n1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Keitä riisi ja raaka kananrinta vedessä hiljalleen, kunnes kana on kypsä ja riisi pehmeää. Nosta kana, revi pieneksi ja palauta puuroon. Viimeistele tuoreella inkiväärillä ja kevätsipulilla.\n",
+      "originalIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisi"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "nahatonta broilerin rintafileetä"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "tuoretta inkivääriä"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "kevätsipuli"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "uncertainty": "LOW",
+      "reviewNote": "Conditional arithmetic proposal with named published vegetable imputation. Method and exact recipe wording still need independent approval; not a guaranteed one-unit uncertainty bound.",
+      "requiresRecipeClarification": true,
+      "requiresMethodApproval": true,
+      "approved": false,
+      "published": false,
+      "proposedPreparation": [
+        "Mittaa kuiva valkoinen jasmiiniriisi ja 800 g vettä kattilaan. Kuumenna kiehuvaksi ja hauduta pehmeäksi puuroksi noin 40 minuuttia; sekoita välillä ja lisää tarvittaessa vain vettä.",
+        "Kypsennä broilerin rintafilee puurossa kauttaaltaan. Nosta kana, revi pieneksi ja palauta kaikki kana ja siitä irronnut neste puuroon.",
+        "Lisää raastettu inkivääri ja hienonnettu kevätsipuli. Mausta suolalla. Jaa koko määrä kahteen annokseen ja tarjoa kuumana."
+      ],
+      "proposedTitle": "Chao ga – yksinkertainen kanariisipuuron perusversio",
+      "releaseInputVersion": 1
+    },
+    {
+      "recipeId": "indonesialainen-bubur-ayam-kanariisipuuro",
+      "title": "Bubur ayam -kanariisipuuro",
+      "sourcePath": "reseptit/aamupalat/indonesialainen-bubur-ayam-kanariisipuuro.md",
+      "sourceSha256": "1d2cb832c221d6645c32dfe6bacd4516b26b7fc84864a4b9965d514c9b9de9f0",
+      "servings": 2,
+      "group": "near-complete",
+      "evidenceVersion": 2,
+      "method": "B",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "scenarios": [
+        {
+          "id": "specified-hot-recipe-with-disclosed-vegetable-imputation",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kuivaa valkoista jasmiiniriisiä",
+              "massG": 100,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 74,
+                "protein": 7,
+                "fat": 0.9,
+                "fibre": 0.8
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": "rice-congee80",
+              "giEvidenceHash": "af37b2de4742d497b6d320272bc4c41ab2e6a22c532a3cc7e46bb0ab6a747fcc",
+              "family": "rice-congee",
+              "match": "APPLIED",
+              "applicability": "100 g dry jasmine rice cooked as hot soft porridge for about 40 min in 800 g water. Source steamed 31.6 g rice in 250 ml water; simmering is an explicit applied comparison, not identical measurement.",
+              "composition": {
+                "sourceId": "afcd-F007682-release-3",
+                "evidenceHash": "56170d712d83a6f42bd4338f38baf2044edb1f698bf329c897b2b254529e2dc0"
+              },
+              "state": "dry white long-grain rice, uncooked",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 1,
+              "name": "broilerin nahatonta rintafileetä",
+              "massG": 150,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 22.5,
+                "fat": 0.8,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
+              "composition": {
+                "sourceId": "afcd-F002594-release-3",
+                "evidenceHash": "dd7e905a1e79f68b5b2922722c85df09e6105d20565ac76d35bfc788c077f698"
+              },
+              "state": "raw lean skinless chicken breast meat",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 150,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 2,
+              "name": "inkivääri",
+              "massG": 2,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 0.8,
+                "fat": 0.4,
+                "fibre": 2.8
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained.",
+              "composition": {
+                "sourceId": "afcd-F004213-release-3",
+                "evidenceHash": "31bce1287ada034a38ef5810967052302dc623abe175be94300ef80f653a8cf2"
+              },
+              "state": "fresh peeled ginger, grated",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 2,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained."
+              }
+            },
+            {
+              "index": 3,
+              "name": "kevätsipuli",
+              "massG": 12,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 4.6,
+                "protein": 1.7,
+                "fat": 0.2,
+                "fibre": 1.9
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained.",
+              "composition": {
+                "sourceId": "afcd-F006250-release-3",
+                "evidenceHash": "986b014257d1c1d39880366c43b5481ca008d916af3c4fab40519cabd437821b"
+              },
+              "state": "raw spring onion, chopped",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 12,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained."
+              }
+            },
+            {
+              "index": 4,
+              "name": "vettä",
+              "massG": 800,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
+              "composition": {
+                "sourceId": "fineli-922-release-20",
+                "evidenceHash": "10faa2ab35a19393a514f57e1dcd9f05988b2235dcd4f545611efd831eb857ad"
+              },
+              "state": "tap water",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 800,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 5,
+              "name": "suolaa maun mukaan",
+              "massG": null,
+              "certifiedZeroSalt": true,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
+              "composition": null,
+              "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
+              "quantityEvidence": {
+                "amount": null,
+                "unit": "",
+                "edibleFraction": 1,
+                "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat"
+              },
+              "originalOmission": "Omitted unquantified salt; sodium is not displayed."
+            }
+          ]
+        }
+      ],
+      "originalPreparation": "## Valmistus\n\n1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Keitä riisi pehmeäksi puuroksi ja lisää revitty kana, kevätsipuli sekä rapea salottisipuli.\n",
+      "originalIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kuivaa pitkäjyväistä valkoista riisiä"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "broilerin nahatonta rintafileetä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "inkivääri"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "kevätsipuli"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "uncertainty": "LOW",
+      "reviewNote": "Conditional arithmetic proposal with named published vegetable imputation. Method and exact recipe wording still need independent approval; not a guaranteed one-unit uncertainty bound.",
+      "requiresRecipeClarification": true,
+      "requiresMethodApproval": true,
+      "approved": false,
+      "published": false,
+      "proposedPreparation": [
+        "Mittaa kuiva valkoinen jasmiiniriisi ja 800 g vettä kattilaan. Hauduta noin 40 minuuttia pehmeäksi puuroksi. Sekoita välillä; mahdollinen lisäneste on vettä.",
+        "Kypsennä broilerin rintafilee puurossa kauttaaltaan. Revi kypsä kana ja palauta se sekä kaikki neste puuroon.",
+        "Lisää hienonnettu inkivääri ja kevätsipuli, mausta suolalla ja tarjoa kuumana kahtena tasaisena annoksena. Tämä yksinkertainen perusversio ei sisällä rapeaa sipulia, kastikkeita tai muita lisukkeita."
+      ],
+      "proposedTitle": "Bubur ayam – yksinkertainen kanariisipuuron perusversio",
+      "releaseInputVersion": 1
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-minttutee-kaurapuuro",
+      "title": "Marokkolainen minttutee-kaurapuuro",
+      "sourcePath": "reseptit/aamupalat/pohjoisafrikkalainen-minttutee-kaurapuuro.md",
+      "sourceSha256": "117727dfb2aeb61745b21ab1f38916b4c3c6d266b2eaaec5c0979cb9309fb6a9",
+      "servings": 2,
+      "group": "near-complete",
+      "evidenceVersion": 2,
+      "method": "B",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "reviewState": "READY_FOR_OWNER_APPROVAL",
+      "scenarios": [
+        {
+          "id": "specified-hot-recipe-with-disclosed-vegetable-imputation",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "0,5–0,6 mm kaurahiutaleita",
+              "massG": 100,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 54.5,
+                "protein": 12.2,
+                "fat": 9.5,
+                "fibre": 9.5
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": "oats-elovena76",
+              "giEvidenceHash": "b5d97449900e45b78330b696c2f4d4c2df640b3bc2950ec510d68a9522f38da1",
+              "family": "oat-porridge",
+              "match": "APPLIED",
+              "applicability": "100 g traditional rolled oats, 0.5–0.6 mm flakes, cooked 10 min. Water/oat preparation is compared to study; milk and honey modelled separately.",
+              "composition": {
+                "sourceId": "afcd-F006143-release-3",
+                "evidenceHash": "e875c1d8d4173610daf29f4216c715d357350c59424561f0d61eae9dce4094a6"
+              },
+              "state": "rolled oats, uncooked",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 100,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 1,
+              "name": "tuoreita mintunlehtiä, syödään puurossa",
+              "massG": 6,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 4.4,
+                "protein": 3.1,
+                "fat": 1.1,
+                "fibre": 7.2
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained.",
+              "composition": {
+                "sourceId": "afcd-F005700-release-3",
+                "evidenceHash": "1a8fba71fb0503a197ca6035cf6916ce6184711ca19ae4ce34b12b28b8168ec6"
+              },
+              "state": "fresh mint leaves, raw",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 6,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained."
+              }
+            },
+            {
+              "index": 2,
+              "name": "maito",
+              "massG": 200,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 3,
+                "fat": 3.5,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": "milk30",
+              "giEvidenceHash": "c1ffbc72f69c337bcb024399da00e2f2724309598b487a8162f28cdad70d87c8",
+              "family": "plain-dairy",
+              "match": "APPLIED",
+              "applicability": "Whole unflavoured milk; published milk comparator, separate generic composition.",
+              "composition": {
+                "sourceId": "fineli-689-release-20",
+                "evidenceHash": "5bf478b764de9c075b11763fe66a3ba485f9f5ae66a76c3fe4f36b720a2d3198"
+              },
+              "state": "whole cow milk as sold",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 200,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 3,
+              "name": "hunaja",
+              "massG": 20,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 72.3,
+                "protein": 0.3,
+                "fat": 0,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": "honey-category-mean-gi-55-2002",
+              "giEvidenceHash": "077705618b3aceedea03e5f2a3e5f23a032b1a923d811869303a141a873a3dd4",
+              "family": "honey",
+              "match": "APPLIED",
+              "applicability": "Unspecified honey; category GI mean 55, LOW product uncertainty, not a measured GI of the jar.",
+              "composition": {
+                "sourceId": "afcd-F004380-release-3",
+                "evidenceHash": "41ea59144460388834c986e85af3bbacfa4a78cf29b54374afba7338eb361f91"
+              },
+              "state": "honey as sold",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 20,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 4,
+              "name": "vettä",
+              "massG": 500,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
+              "composition": {
+                "sourceId": "fineli-922-release-20",
+                "evidenceHash": "10faa2ab35a19393a514f57e1dcd9f05988b2235dcd4f545611efd831eb857ad"
+              },
+              "state": "tap water",
+              "quantityEvidence": {
+                "proposedWeighedEdibleMassG": 500,
+                "basis": "Explicit full-recipe input proposal; not an experimentally measured spoon/cup conversion. All retained and consumed."
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 5,
+              "name": "suolaa maun mukaan",
+              "massG": null,
+              "certifiedZeroSalt": true,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
+              "composition": null,
+              "state": "documented bounded omission",
+              "quantityEvidence": {
+                "amount": null,
+                "unit": "",
+                "edibleFraction": 1,
+                "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat"
+              },
+              "originalOmission": "Salt is sodium chloride and contributes none of the four displayed macronutrients."
+            }
+          ]
+        }
+      ],
+      "originalPreparation": "## Valmistus\n\n1. Mittaa kaurahiutale kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Hauduta minttua maidossa, siivilöi ja keitä nesteessä kaurapuuro.\n",
+      "originalIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kaurahiutale"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "tuoretta minttua"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "maito"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "hunaja"
+        },
+        {
+          "amount": 500,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "uncertainty": "LOW",
+      "reviewNote": "Conditional arithmetic proposal with named published vegetable imputation. Method and exact recipe wording still need independent approval; not a guaranteed one-unit uncertainty bound.",
+      "requiresRecipeClarification": true,
+      "requiresMethodApproval": true,
+      "approved": false,
+      "published": false,
+      "proposedPreparation": [
+        "Keitä 0,5–0,6 mm kaurahiutaleita 500 grammassa vettä 10 minuuttia.",
+        "Lisää täysmaito, hienonnetut tuoreet mintunlehdet ja hunaja. Lämmitä ja mausta suolalla.",
+        "Minttu syödään puuron mukana. Hauduketta ei siivilöidä tässä versiossa. Jaa koko määrä kahteen annokseen ja tarjoa lämpimänä."
+      ],
+      "proposedTitle": "Minttu-kaurapuuro maidolla ja hunajalla – syötävän mintun versio",
+      "releaseInputVersion": 1
+    }
+  ]
+}

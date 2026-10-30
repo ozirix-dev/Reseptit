@@ -1,45 +1,45 @@
 ---
-title: "Chao ga -inkiväärinen kanapuuro"
+title: Chao ga – yksinkertainen kanariisipuuron perusversio
 recipe_id: vietnamilainen-chao-ga-kanapuuro
 url_slug: vietnamilainen-chao-ga-kanapuuro
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "riisi"
-  - "kana"
-  - "inkivääri"
+- riisi
+- kana
+- inkivääri
 cooking_method:
-  - "keittäminen"
+- keittäminen
 ingredients:
-  - amount: 100
-    unit: g
-    item: riisi
-  - amount: 150
-    unit: g
-    item: nahatonta broilerin rintafileetä
-  - amount: 2
-    unit: g
-    item: tuoretta inkivääriä
-  - amount: 2
-    unit: rkl
-    item: kevätsipuli
-  - amount: 700
-    unit: ml
-    item: vettä
-  - amount: null
-    unit: ""
-    item: suolaa maun mukaan
+- amount: 100
+  unit: g
+  item: kuivaa valkoista jasmiiniriisiä
+- amount: 150
+  unit: g
+  item: nahatonta broilerin rintafileetä
+- amount: 2
+  unit: g
+  item: tuoretta inkivääriä
+- amount: 12
+  unit: g
+  item: kevätsipuli
+- amount: 800
+  unit: g
+  item: vettä
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 servings: 2
-time_total_min: 25
+time_total_min: 45
 difficulty: Helppo
 tags:
-  - "aamupala"
-  - "vietnamilainen"
-  - "puuro"
+- aamupala
+- vietnamilainen
+- puuro
 image:
   src: aamupalat/vietnamilainen-chao-ga-kanapuuro.webp
-  alt: "Chao ga -inkiväärinen kanapuuro tarjoiltuna aamiaisella"
+  alt: Chao ga – yksinkertainen kanariisipuuron perusversio tarjoiltuna aamiaisella
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 37.32
@@ -48,11 +48,11 @@ protein_per_serving_g: 20.49
 fat_per_serving_g: 1.07
 ---
 
-# Chao ga -inkiväärinen kanapuuro
+# Chao ga – yksinkertainen kanariisipuuron perusversio
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan chao ga -inkiväärinen kanapuuro. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Chao ga – yksinkertainen kanariisipuuron perusversio. Punnittu laskentaversio kahdelle annokselle.
 
 ## Ainekset
 
@@ -60,7 +60,12 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
-2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
-4. Keitä riisi ja raaka kananrinta vedessä hiljalleen, kunnes kana on kypsä ja riisi pehmeää. Nosta kana, revi pieneksi ja palauta puuroon. Viimeistele tuoreella inkiväärillä ja kevätsipulilla.
+1. Mittaa kuiva valkoinen jasmiiniriisi ja 800 g vettä kattilaan. Kuumenna kiehuvaksi ja hauduta pehmeäksi puuroksi noin 40 minuuttia; sekoita välillä ja lisää tarvittaessa vain vettä.
+2. Kypsennä broilerin rintafilee puurossa kauttaaltaan. Nosta kana, revi pieneksi ja palauta kaikki kana ja siitä irronnut neste puuroon.
+3. Lisää raastettu inkivääri ja hienonnettu kevätsipuli. Mausta suolalla. Jaa koko määrä kahteen annokseen ja tarjoa kuumana.
+
+## Muistiinpanot
+
+Mallinnettu GK-arvio perustuu nimettyihin GI-vertailuihin ja kasvisoletukseen. Luottamus on matala. Arvio ei ole aterialla mitattu eikä henkilökohtainen verensokeriennuste tai insuliiniannoksen peruste.
+
+Tämä on vietnamilaisesta chao ga -puurosta yksinkertaistettu riisin, kanan ja inkiväärin perusversio. Kana kypsyy samassa nesteessä, joka jää puuroon. Tyypillisiä lisukkeita, kuten paahdettua sipulia, ei ole tässä laskelmassa. [Ruokalajin tausta: Vicky Pham](https://vickypham.com/blog/vietnamese-chicken-porridge-chao-ga/).

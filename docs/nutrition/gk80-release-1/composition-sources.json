@@ -1,0 +1,411 @@
+{
+  "records": [
+    {
+      "id": "fineli-29055-release-20",
+      "per100g": {
+        "availableCarbohydrate": 81.64,
+        "protein": 3.44,
+        "fat": 0.56,
+        "fibre": 2.07
+      },
+      "sourceRecord": {
+        "id": "fineli-29055-release-20",
+        "name": "NUUDELI, RIISINUUDELI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29055",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "dry rice noodles as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 81.64,
+          "FIBT": 2.07,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 81.64,
+          "fibre": 2.07,
+          "polyols": 0,
+          "protein": 3.44,
+          "fat": 0.56
+        }
+      },
+      "evidenceHash": "d93b875af7f0b146e16f37d51ac62091fc25ee714e2b13b557c9585e0305c885"
+    },
+    {
+      "id": "afcd-F007037-release-3",
+      "per100g": {
+        "availableCarbohydrate": 0,
+        "protein": 23.3,
+        "fat": 2.2,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "afcd-F007037-release-3",
+        "name": "Pork, loin roast, lean, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw lean pork loin roast",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 23.3,
+          "fat": 2.2
+        }
+      },
+      "evidenceHash": "18f7082918d2abf0d6da28de7446d744bccef4a6e6fbc996f6408435056a3e8d"
+    },
+    {
+      "id": "afcd-F008806-release-3",
+      "per100g": {
+        "availableCarbohydrate": 1.6,
+        "protein": 3.1,
+        "fat": 0.1,
+        "fibre": 1.3
+      },
+      "sourceRecord": {
+        "id": "afcd-F008806-release-3",
+        "name": "Sprout, bean, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh raw bean sprouts",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "fibre": 1.3,
+          "polyols": 0,
+          "protein": 3.1,
+          "fat": 0.1
+        }
+      },
+      "evidenceHash": "68d8483496c639ad90175c0c60035293233b42f52883a4f31ebe4d6e831ec9f1"
+    },
+    {
+      "id": "afcd-F003192-release-3",
+      "per100g": {
+        "availableCarbohydrate": 1.9,
+        "protein": 3.1,
+        "fat": 0.6,
+        "fibre": 3.2
+      },
+      "sourceRecord": {
+        "id": "afcd-F003192-release-3",
+        "name": "Coriander, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh raw coriander leaves, chopped",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.9,
+          "fibre": 3.2,
+          "polyols": 0,
+          "protein": 3.1,
+          "fat": 0.6
+        }
+      },
+      "evidenceHash": "b2113e8416216bb97c71dd28ceb48c7c6abefcb51bcbe4586b404580745ff6a5"
+    },
+    {
+      "id": "fineli-922-release-20",
+      "per100g": {
+        "availableCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "evidenceHash": "10faa2ab35a19393a514f57e1dcd9f05988b2235dcd4f545611efd831eb857ad"
+    },
+    {
+      "id": "afcd-F007682-release-3",
+      "per100g": {
+        "availableCarbohydrate": 74,
+        "protein": 7,
+        "fat": 0.9,
+        "fibre": 0.8
+      },
+      "sourceRecord": {
+        "id": "afcd-F007682-release-3",
+        "name": "Rice, white, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dry uncooked white long-grain rice",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 74,
+          "fibre": 0.8,
+          "polyols": 0,
+          "protein": 7,
+          "fat": 0.9
+        }
+      },
+      "evidenceHash": "56170d712d83a6f42bd4338f38baf2044edb1f698bf329c897b2b254529e2dc0"
+    },
+    {
+      "id": "afcd-F002594-release-3",
+      "per100g": {
+        "availableCarbohydrate": 0,
+        "protein": 22.5,
+        "fat": 0.8,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "afcd-F002594-release-3",
+        "name": "Chicken, breast, lean flesh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw lean skinless chicken breast flesh",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 22.5,
+          "fat": 0.8
+        }
+      },
+      "evidenceHash": "dd7e905a1e79f68b5b2922722c85df09e6105d20565ac76d35bfc788c077f698"
+    },
+    {
+      "id": "afcd-F004213-release-3",
+      "per100g": {
+        "availableCarbohydrate": 4.8,
+        "protein": 0.8,
+        "fat": 0.4,
+        "fibre": 2.8
+      },
+      "sourceRecord": {
+        "id": "afcd-F004213-release-3",
+        "name": "Ginger, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "peeled fresh raw ginger",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 2.8,
+          "polyols": 0,
+          "protein": 0.8,
+          "fat": 0.4
+        }
+      },
+      "evidenceHash": "31bce1287ada034a38ef5810967052302dc623abe175be94300ef80f653a8cf2"
+    },
+    {
+      "id": "afcd-F006250-release-3",
+      "per100g": {
+        "availableCarbohydrate": 4.6,
+        "protein": 1.7,
+        "fat": 0.2,
+        "fibre": 1.9
+      },
+      "sourceRecord": {
+        "id": "afcd-F006250-release-3",
+        "name": "Onion, spring, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh raw spring onion, chopped",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.6,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 1.7,
+          "fat": 0.2
+        }
+      },
+      "evidenceHash": "986b014257d1c1d39880366c43b5481ca008d916af3c4fab40519cabd437821b"
+    },
+    {
+      "id": "afcd-F006143-release-3",
+      "per100g": {
+        "availableCarbohydrate": 54.5,
+        "protein": 12.2,
+        "fat": 9.5,
+        "fibre": 9.5
+      },
+      "sourceRecord": {
+        "id": "afcd-F006143-release-3",
+        "name": "Oats, rolled, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "rolled oats, uncooked",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 54.5,
+          "fibre": 9.5,
+          "polyols": 0,
+          "protein": 12.2,
+          "fat": 9.5
+        }
+      },
+      "evidenceHash": "e875c1d8d4173610daf29f4216c715d357350c59424561f0d61eae9dce4094a6"
+    },
+    {
+      "id": "afcd-F005700-release-3",
+      "per100g": {
+        "availableCarbohydrate": 4.4,
+        "protein": 3.1,
+        "fat": 1.1,
+        "fibre": 7.2
+      },
+      "sourceRecord": {
+        "id": "afcd-F005700-release-3",
+        "name": "Mint, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh mint leaves, raw",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.4,
+          "fibre": 7.2,
+          "polyols": 0,
+          "protein": 3.1,
+          "fat": 1.1
+        }
+      },
+      "evidenceHash": "1a8fba71fb0503a197ca6035cf6916ce6184711ca19ae4ce34b12b28b8168ec6"
+    },
+    {
+      "id": "fineli-689-release-20",
+      "per100g": {
+        "availableCarbohydrate": 4.8,
+        "protein": 3,
+        "fat": 3.5,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "fineli-689-release-20",
+        "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/689",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "whole cow milk as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.5
+        }
+      },
+      "evidenceHash": "5bf478b764de9c075b11763fe66a3ba485f9f5ae66a76c3fe4f36b720a2d3198"
+    },
+    {
+      "id": "afcd-F004380-release-3",
+      "per100g": {
+        "availableCarbohydrate": 72.3,
+        "protein": 0.3,
+        "fat": 0,
+        "fibre": 0
+      },
+      "sourceRecord": {
+        "id": "afcd-F004380-release-3",
+        "name": "Honey",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "honey as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 72.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.3,
+          "fat": 0
+        }
+      },
+      "evidenceHash": "41ea59144460388834c986e85af3bbacfa4a78cf29b54374afba7338eb361f91"
+    }
+  ]
+}

@@ -11,6 +11,21 @@ import { publishedGlycemicLoadForRecipe } from "../src/features/recipes/glycemic
 import { parseMarkdown } from "../src/content/markdown";
 
 
+
+// Historical source-correction tests retain their original before/after scope.
+// The dedicated GK80 release test compares current 326 results and permits exactly four changes.
+const gk80HistoricalPromise=readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-1/historical-four.json'),'utf8').then(JSON.parse);
+async function historicalSourceReviewView(name:string,value:any){
+  if(name!=='tmp/nutrition/glycemic-load-pilot.json')return value;
+  const old=await gk80HistoricalPromise;const ids=new Set(old.results.map((r:any)=>r.recipeId));
+  for(const key of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches']){
+    assert.deepEqual(value[key].filter((id:string)=>!ids.has(id)),old[key].filter((id:string)=>!ids.has(id)),`${key}: non-candidate recipes unchanged`);
+  }
+  return {...value,results:value.results.map((r:any)=>old.results.find((x:any)=>x.recipeId===r.recipeId)??r),
+    sourceHashes:{...value.sourceHashes,...old.sourceHashes},recipeBindingMismatches:old.recipeBindingMismatches,
+    calculationInputMismatches:old.calculationInputMismatches,calculationEvidenceMismatches:old.calculationEvidenceMismatches};
+}
+
 // Historical batch expectations yield only to the explicitly reviewed source correction.
 const finalBakeryReviewPromise = readFile(path.resolve(import.meta.dirname, "../../docs/nutrition/glycemic-bakery-final-source-review.json"), "utf8").then(JSON.parse);
 const finalBakeryBaselinePromise = readFile(path.resolve(import.meta.dirname, "../../docs/nutrition/glycemic-bakery-final-source-baseline.json"), "utf8").then(JSON.parse);
@@ -22,7 +37,7 @@ const onionReviewPromise = readFile(path.resolve(import.meta.dirname, "../../doc
 const pepperReviewPromise = readFile(path.resolve(import.meta.dirname, "../../docs/nutrition/glycemic-red-pepper-source-review.json"), "utf8").then(JSON.parse);
 // Current expectations incorporate the bounded source reviews and the isolated R1B recipe overlay; historical files remain immutable.
 const r1bAffectedRecipeIds = new Set(["jauheliha-makaronilaatikko", "koshari", "yangzhou-paistettu-riisi"]);
-const r1bCurrentPilotPromise = readFile(path.resolve(import.meta.dirname, "../../tmp/nutrition/glycemic-load-pilot.json"), "utf8").then(JSON.parse);
+const r1bCurrentPilotPromise = readFile(path.resolve(import.meta.dirname, "../../tmp/nutrition/glycemic-load-pilot.json"), "utf8").then(JSON.parse).then(value=>historicalSourceReviewView("tmp/nutrition/glycemic-load-pilot.json",value));
 const currentBakeryReviewPromise = Promise.all([bakeryReviewPromise, finalBakeryReviewPromise]).then(([four, final]) => ({
   ...four, ...final,
   affectedRecipeIds: [...new Set([...four.affectedRecipeIds, ...final.affectedRecipeIds])],
@@ -1529,7 +1544,7 @@ test("onion secondary-table GI remains reference-only even with copied keys and 
 test("onion source correction accounts for every published result and preserves all unaffected evidence", async () => {
   const { createHash } = await import("node:crypto");
   const root = path.resolve(import.meta.dirname, "../..");
-  const read = async (name: string) => JSON.parse(await readFile(path.join(root, name), "utf8"));
+  const read = async (name: string) => historicalSourceReviewView(name,JSON.parse(await readFile(path.join(root, name), "utf8")));
   const [review, pilot, inputs, foods, catalog, bindings, inventory] = await Promise.all([
     onionReviewPromise, read("tmp/nutrition/glycemic-load-pilot.json"), read("docs/nutrition/glycemic-load-pilot-input.json"),
     read("docs/nutrition/food-records.json"), read("docs/nutrition/glycemic-index-records.json"),
@@ -1645,7 +1660,7 @@ test("only individually verified onion omissions retain five LOW-confidence esti
 test("pepper correction locks all 326 baseline results, with exactly seven withdrawals and no unrelated change", async () => {
   const { createHash } = await import("node:crypto");
   const root = path.resolve(import.meta.dirname, "../..");
-  const read = async (file: string) => JSON.parse(await readFile(path.join(root, file), "utf8"));
+  const read = async (file: string) => historicalSourceReviewView(file,JSON.parse(await readFile(path.join(root, file), "utf8")));
   const [review, baseline, pilot, foods, catalog, bindings] = await Promise.all([
     pepperReviewPromise, read("docs/nutrition/glycemic-red-pepper-source-baseline.json"),
     read("tmp/nutrition/glycemic-load-pilot.json"), read("docs/nutrition/food-records.json"),
@@ -1871,7 +1886,7 @@ test("almond meal rejects bakery means across identity, name, state and copied p
 test("almond correction freezes the published 326 baseline and allows exactly 99 unchanged, 2 revised and 10 withdrawn estimates", async () => {
   const { createHash } = await import("node:crypto");
   const root = path.resolve(import.meta.dirname, "../..");
-  const read = async (file: string) => JSON.parse(await readFile(path.join(root, file), "utf8"));
+  const read = async (file: string) => historicalSourceReviewView(file,JSON.parse(await readFile(path.join(root, file), "utf8")));
   const [baseline, review, pilot, catalog] = await Promise.all([almondBaselinePromise, almondReviewPromise, read("tmp/nutrition/glycemic-load-pilot.json"), read("docs/nutrition/glycemic-index-records.json")]);
   const hash = (x: unknown) => createHash("sha256").update(JSON.stringify(x)).digest("hex");
   const baselineText = (await readFile(path.join(root, "docs/nutrition/glycemic-almond-source-baseline.json"), "utf8")).replaceAll("\r\n", "\n");
@@ -2036,7 +2051,7 @@ test("bakery audit accounts for 62 bindings, 58 recipes and all 28 published use
 test("AJO 1.8 freezes published 101/326, withdraws exactly four and preserves 322 complete results and fingerprints", async () => {
   const { createHash } = await import("node:crypto");
   const root = path.resolve(import.meta.dirname, "../..");
-  const read = async (file: string) => JSON.parse(await readFile(path.join(root, file), "utf8"));
+  const read = async (file: string) => historicalSourceReviewView(file,JSON.parse(await readFile(path.join(root, file), "utf8")));
   const [baseline, review, pilot, catalog] = await Promise.all([bakeryBaselinePromise, bakeryReviewPromise, read("tmp/nutrition/glycemic-load-pilot.json"), read("docs/nutrition/glycemic-index-records.json")]);
   const hash = (value: unknown) => createHash("sha256").update(JSON.stringify(value)).digest("hex");
   const canonicalHash = async (file: string) => createHash("sha256").update((await readFile(path.join(root, file), "utf8")).replaceAll("\r\n", "\n")).digest("hex");
@@ -2086,7 +2101,7 @@ test("AJO 1.8 freezes published 101/326, withdraws exactly four and preserves 32
 
 test("reviewed bran/flour uses reject copied bakery keys even at tiny mass; use removal invalidates fingerprint", async () => {
   const root = path.resolve(import.meta.dirname, "../../docs/nutrition");
-  const read = async (file: string) => JSON.parse(await readFile(path.join(root, file), "utf8"));
+  const read = async (file: string) => historicalSourceReviewView(file,JSON.parse(await readFile(path.join(root, file), "utf8")));
   const [baseline, review, inputs, foods, catalog, bindings] = await Promise.all([bakeryBaselinePromise, bakeryReviewPromise, read("glycemic-load-pilot-input.json"), read("food-records.json"), read("glycemic-index-records.json"), read("glycemic-load-recipe-bindings.json")]);
   const bakery = catalog.records.find((r: GlycemicIndexRecord) => r.id === "bakery-products-category-mean-gi-58");
   const actualChanges: string[] = [];
@@ -2159,7 +2174,7 @@ test("four-recipe audit rejects known false composition and unverified positive 
 test("AJO 1.9 freezes published 97 and withdraws exactly twelve across all 326 results", async () => {
   const { createHash } = await import("node:crypto");
   const root = path.resolve(import.meta.dirname, "../..");
-  const read = async (file: string) => JSON.parse(await readFile(path.join(root, file), "utf8"));
+  const read = async (file: string) => historicalSourceReviewView(file,JSON.parse(await readFile(path.join(root, file), "utf8")));
   const hash = (value: unknown) => createHash("sha256").update(JSON.stringify(value)).digest("hex");
   const fileHash = async (file: string) => createHash("sha256").update((await readFile(path.join(root, file), "utf8")).replaceAll("\r\n", "\n")).digest("hex");
   const [baseline, review, pilot, catalog, four] = await Promise.all([finalBakeryBaselinePromise, finalBakeryReviewPromise, read("tmp/nutrition/glycemic-load-pilot.json"), read("docs/nutrition/glycemic-index-records.json"), bakeryReviewPromise]);
@@ -2220,7 +2235,7 @@ test("AJO 1.9 freezes published 97 and withdraws exactly twelve across all 326 r
 
 test("AJO 1.9 reviews all 45 bindings, preserves composition and forbids reference-only restoration at any positive mass", async () => {
   const root = path.resolve(import.meta.dirname, "../../docs/nutrition");
-  const read = async (file: string) => JSON.parse(await readFile(path.join(root, file), "utf8"));
+  const read = async (file: string) => historicalSourceReviewView(file,JSON.parse(await readFile(path.join(root, file), "utf8")));
   const [baseline, review, inputs, foods, catalog, bindings] = await Promise.all([finalBakeryBaselinePromise, finalBakeryReviewPromise, read("glycemic-load-pilot-input.json"), read("food-records.json"), read("glycemic-index-records.json"), read("glycemic-load-recipe-bindings.json")]);
   const bakery = catalog.records.find((r: GlycemicIndexRecord) => r.id === "bakery-products-category-mean-gi-58");
   assert.equal(review.allBakeryBindings.length, 45);
@@ -2301,7 +2316,7 @@ test("reference-only records cannot bypass rejection through tiny, bounded or ze
 
 test("GK 2.1 R1B audits all three recipe inputs without publishing unsupported GI estimates", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
-  const read = async (file: string) => JSON.parse(await readFile(path.join(root, file), "utf8"));
+  const read = async (file: string) => historicalSourceReviewView(file,JSON.parse(await readFile(path.join(root, file), "utf8")));
   const [inputReport, pilot, foods, coverage, nutrition] = await Promise.all([
     read("docs/nutrition/glycemic-load-pilot-input.json"),
     read("tmp/nutrition/glycemic-load-pilot.json"),
