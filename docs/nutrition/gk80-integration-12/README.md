@@ -50,10 +50,18 @@ Ei mergeä, Ready-siirtymää, tuotantodeployta tai automaattista AJO 6:tta.
 
 ## Paikallinen varmennus
 
-Integroitu build esirenderöi 691 reittiä. 174 yksikkötestiä, 27 käännöstestiä
+Integroitu build esirenderöi 691 reittiä. 176 yksikkötestiä, 27 käännöstestiä
 ja 25 staattista testiä läpäisivät tarkistuksen. Molempien pakettien Decimal
 tarkistaa kaikki 12 reseptiä. Muuttuneiden 12 lähdereseptin ja 12 laskennan
 sisältötarkistus läpäisi. Brave/Playwright tarkisti kaikki 12 reseptisivua,
 mallinnusmerkinnän ja luottamustason ilman JavaScript-virheitä. Nasi lemakin
 22–26-skenaarioalue tarkistettiin myös kuvakaappauksesta.
 Täsmällisen GitHub-HEADin CI raportoidaan AJO 5:n koontiraportissa.
+
+Yhteinen eksplisiittisten ruoka-ID:iden ja valmistusmuotojen katalogi kattaa
+48 aiemman ehdotuksen 373 GI-sidosta. Seitsemän kielteistä ruokaperhetapausta
+ja pienen mausteannoksen rajat testataan. Positiivinen mallinnettu GK alle
+yhden esitetään alle yhtenä; myöskään tallennuksen kahden desimaalin pyöristys
+ei saa muuttaa hyvin pientä positiivista arvoa nollaksi. Yhdeksän vanhaa
+poisjätetystä positiivisesta CHO:sta syntynyttä nollaa säilyy 314 tuloksen
+regressiossa ja odottaa erillistä laatukorjausta.

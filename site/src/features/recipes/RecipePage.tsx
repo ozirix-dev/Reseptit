@@ -1,3 +1,4 @@
+import {formatGlycemicLoadNumber} from "./gk80-format";
 import { recipeHeroSizes } from "./image-layout";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -24,15 +25,15 @@ export function RecipePage() {
   const glApprox = { fi: "noin ", en: "about ", sv: "cirka ", th: "ประมาณ " }[recipe.locale];
   const glUnit = { fi: "/ annos", en: "/ serving", sv: "/ portion", th: "/ หนึ่งที่" }[recipe.locale];
   const glycemicLoad = publishedGlycemicLoadForRecipe(recipe.recipeId, glycemicLoadPilotResults);
-  const glNumber = new Intl.NumberFormat(numberLocale, glycemicLoad?.assessmentType ? { maximumFractionDigits: 0 } : { maximumSignificantDigits: 1, minimumSignificantDigits: 1 });
+  const glFormat=(value:number)=>formatGlycemicLoadNumber(value,numberLocale,!!glycemicLoad?.assessmentType);
   const modelledLabel = { fi: "Mallinnettu", en: "Modeled", sv: "Modellerad", th: "ค่าประมาณจากแบบจำลอง" }[recipe.locale];
   const modelledNote = {"fi": "Kaikki imeytyvät hiilihydraatit ovat mukana. Ei pieniä pois jätettyjä osuuksia. Mallinnettu ainesosalaskelma, ei aterialla mitattu vaste. Numeerista biologista epävarmuusväliä ei tunneta.", "en": "All available carbohydrate is included, with no small portions omitted. This is a modeled ingredient estimate, not a measured meal response. Biological uncertainty has not been quantified.", "sv": "Alla tillgängliga kolhydrater ingår utan utelämnade små mängder. Detta är en modellerad ingrediensberäkning, inte ett uppmätt måltidssvar. Biologisk osäkerhet har inte kvantifierats.", "th": "รวมคาร์โบไฮเดรตที่ใช้ได้ทั้งหมดโดยไม่ตัดส่วนเล็กน้อยออก เป็นค่าประมาณจากวัตถุดิบ ไม่ใช่ผลตอบสนองจากมื้ออาหารที่วัดจริง ยังไม่ทราบช่วงความไม่แน่นอนทางชีวภาพเป็นตัวเลข"}[recipe.locale];
   const glClass = (v:number) => v <= 10 ? 0 : v < 20 ? 1 : 2;
   const classNames = {fi:["matala GK", "keskisuuri GK", "korkea GK"],en:["low GL","medium GL","high GL"],sv:["låg GL","medelhög GL","hög GL"],th:["GL ต่ำ","GL ปานกลาง","GL สูง"]}[recipe.locale];
   const classLabel = glycemicLoad ? [...new Set([glClass(glycemicLoad.glycemicLoadRangePerServing?.min ?? glycemicLoad.glycemicLoadPerServing),glClass(glycemicLoad.glycemicLoadRangePerServing?.max ?? glycemicLoad.glycemicLoadPerServing)])].map(i=>classNames[i]).join("–") : "";
   const glValue = glycemicLoad?.glycemicLoadRangePerServing
-    ? `${glApprox}${glNumber.format(glycemicLoad.glycemicLoadRangePerServing.min)}–${glNumber.format(glycemicLoad.glycemicLoadRangePerServing.max)}`
-    : glycemicLoad ? `${glApprox}${glNumber.format(glycemicLoad.glycemicLoadPerServing)}` : "";
+    ? `${glApprox}${glFormat(glycemicLoad.glycemicLoadRangePerServing.min)}–${glFormat(glycemicLoad.glycemicLoadRangePerServing.max)}`
+    : glycemicLoad ? `${glApprox}${glFormat(glycemicLoad.glycemicLoadPerServing)}` : "";
   return <article className="page-section recipe-page"><div className="container container--narrow">
     <nav className="article-breadcrumbs" aria-label={labels.breadcrumb}><Link to={recipe.locale === "fi" ? "/" : `/${recipe.locale === "sv" ? "sv/recept" : `${recipe.locale}/recipes`}/`}>{labels.indexTitle}</Link><span aria-hidden="true">/</span><span>{recipe.title}</span></nav>
     <header className="recipe-header"><p className="eyebrow">{labels.category[recipe.category]}</p><h1>{recipe.title}</h1><p className="article-excerpt">{recipe.description}</p>

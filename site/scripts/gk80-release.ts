@@ -1,6 +1,6 @@
 import {readFile} from 'node:fs/promises';import path from 'node:path';import {createHash} from 'node:crypto';
 import {type Recipe,type Source,type CompositionSource} from './gk80-candidate-model';
-import {calculateCandidate as calculate} from './gk80-candidate-policy';
+import {calculateCandidate as calculate,roundedCandidatePoint} from './gk80-candidate-policy';
 import type {GlycemicLoadResult} from './glycemic-load-model';
 import {classifyGk80Source, type EvidenceKind, type ApplicationKind} from './gk80-source-classification';
 type Ref={title:string;url:string;matchKind:'EXACT'|'ANALOG'|'CALCULATION_POLICY';evidenceKind:EvidenceKind;applicationKind:ApplicationKind;confidence:'LOW';note:string};
@@ -46,7 +46,7 @@ export async function applyGk80Release(root:string,legacy:GlycemicLoadResult[]):
   const used=[...new Set(r.scenarios.flatMap(s=>s.ingredients.flatMap(i=>i.giId?[i.giId]:i.impact?[i.impact.sourceId]:[])))];
   const ids=[...new Set(r.scenarios.flatMap(s=>s.ingredients.flatMap(i=>i.composition?[i.composition.sourceId]:[])))];
   out[index]={...out[index],status:'CALCULATED',servings:r.servings,unroundedGlycemicLoadPerServing:result.min,
-   glycemicLoadPerServing:Math.round(result.min!*100)/100,glycemicLoadRangePerServing:result.min!==result.max?{min:result.min!,max:result.max!}:null,
+   glycemicLoadPerServing:roundedCandidatePoint(result.min!),glycemicLoadRangePerServing:result.min!==result.max?{min:result.min!,max:result.max!}:null,
    omittedAvailableCarbohydratePerServingG:0,omittedAvailableCarbohydrateUpperBoundPerServingG:0,confidence:'LOW',blockers:[],assessmentType:'PUBLISHED_IMPUTATION',modelScenario:r.scenarios.length>1?'NAMED_SCENARIO_RANGE':'POINT_SCENARIO',
    interpretation:'Modeled ingredient-sum estimate with published vegetable GI assignment and named preparation analogues; no measured meal response or physiological uncertainty bound.',
    ingredients:r.scenarios[0].ingredients.map((i,n)=>({name:i.name,grams:i.massG,fineliRecordId:i.composition?.sourceId??null,

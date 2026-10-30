@@ -1,3 +1,4 @@
+import {formatGlycemicLoadNumber} from '../recipes/gk80-format';
 import { Link, useLocation } from "react-router-dom";
 import { glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "@/generated/glycemic-load-pilot.generated";
 import { recipeLocaleFromPath } from "@/features/recipes/recipe-i18n";
@@ -54,10 +55,10 @@ export function GlycemicLoadPilotPage() {
   const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[locale];
   const number = new Intl.NumberFormat(numberLocale, { maximumSignificantDigits: 1, minimumSignificantDigits: 1 });
   const modelled = { fi: "Mallinnettu", en: "Modeled", sv: "Modellerad", th: "ค่าประมาณจากแบบจำลอง" }[locale];
-  const displayNumber = (v:number, modeled:boolean) => (modeled ? new Intl.NumberFormat(numberLocale, {maximumFractionDigits:0}) : number).format(v);
+  const displayNumber = (v:number, modeled:boolean) => formatGlycemicLoadNumber(v,numberLocale,modeled);
   const formatValue = (result: typeof glycemicLoadPilotResults[number]) => result.glycemicLoadRangePerServing
     ? `${result.assessmentType ? modelled + " " : ""}${text.about} ${displayNumber(result.glycemicLoadRangePerServing.min,!!result.assessmentType)}–${displayNumber(result.glycemicLoadRangePerServing.max,!!result.assessmentType)} ${text.perServing}`
-    : result.glycemicLoadPerServing === null ? text.incomplete : `${result.assessmentType ? modelled + " " : ""}${text.about} ${(result.assessmentType ? new Intl.NumberFormat(numberLocale, {maximumFractionDigits:0}) : number).format(result.glycemicLoadPerServing)} ${text.perServing}`;
+    : result.glycemicLoadPerServing === null ? text.incomplete : `${result.assessmentType ? modelled + " " : ""}${text.about} ${displayNumber(result.glycemicLoadPerServing,!!result.assessmentType)} ${text.perServing}`;
   return <section className="page-section glycemic-pilot" lang={locale}>
     <div className="container container--narrow">
       <header className="page-intro glycemic-pilot__intro"><p className="eyebrow">{text.eyebrow}</p><h1>{text.title}</h1><p className="page-intro__description">{text.intro}</p></header>
