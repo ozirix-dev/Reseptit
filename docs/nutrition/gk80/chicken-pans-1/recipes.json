@@ -1,0 +1,866 @@
+{
+  "status": "DRAFT_CONDITIONAL_NOT_PUBLISHED",
+  "recipes": [
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "title": "Parmesaaninen kanapannu parsakaalilla",
+      "sourcePath": "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md",
+      "sourceSha256": "e1d5cf315e47cd08c585cbb9b7b75b04fffbe159d4ae36d3be99526b844b0baa",
+      "servings": 4,
+      "group": "small-impact",
+      "evidenceVersion": 2,
+      "method": "B",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "reviewState": "CONDITIONAL_READY_FOR_BATCH_REVIEW",
+      "scenarios": [
+        {
+          "id": "weighed-parmesan-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "broilerin rintafileetä",
+              "massG": 500,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 22.5,
+                "fat": 0.8,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Zero CHO is explicit in this composition dataset. It is not an invented GI=0 or proof of exact chemical absence.",
+              "composition": {
+                "sourceId": "afcd-F002594-release-3",
+                "evidenceHash": "fe2b6195617908e43c0113229fd629da69c149a959ae6a8422b38355785f2417"
+              },
+              "state": "raw lean chicken breast",
+              "quantityEvidence": {
+                "amount": 500,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Retained explicit edible ingredient mass; measure before cooking.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 1,
+              "name": "parsakaalia",
+              "massG": 300,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 1.64,
+                "protein": 3.9,
+                "fat": 0.53,
+                "fibre": 2.5
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Named low-carbohydrate vegetable assumption from Atkinson 2008; raw composition with all cooking liquid retained. Applies to this weighed vegetable, not a measured vegetable GI.",
+              "composition": {
+                "sourceId": "fineli-324-release-20",
+                "evidenceHash": "7aeef63592e736faa463f91b85462c7b176eb3505afc27619702aa5dba4f6daf"
+              },
+              "state": "raw broccoli",
+              "quantityEvidence": {
+                "amount": 300,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Retained explicit edible ingredient mass; measure before cooking.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Named low-carbohydrate vegetable assumption from Atkinson 2008; raw composition with all cooking liquid retained. Applies to this weighed vegetable, not a measured vegetable GI."
+              }
+            },
+            {
+              "index": 2,
+              "name": "kuohukermaa",
+              "massG": 200,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 2.9,
+                "protein": 1.88,
+                "fat": 38,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "plain-dairy",
+              "match": "APPLIED",
+              "applicability": "Whole milk GI 34 is a LOW lactose/dairy comparator for plain 38% cream and unsalted butter. Fat/protein and processing differ; neither ingredient was directly tested. Other retained milk comparators 30 and 46 are diagnostic, not uncertainty bounds.",
+              "composition": {
+                "sourceId": "fineli-631-release-20",
+                "evidenceHash": "1b2c73aef3541aef41e7458aa054d327dd289f1942677d5bcd52d74351913f64"
+              },
+              "state": "38% cream",
+              "quantityEvidence": {
+                "amount": 200,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Weigh 200 g plain 38% cream; this replaces the original 200 ml specification without assuming density.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "milk34",
+                "evidenceHash": "f49f48c2edbdb5cd567dcfc0d3be114a26eda4cd94294cbed113bc5dff7f35e3",
+                "rationale": "Whole milk GI 34 is a LOW lactose/dairy comparator for plain 38% cream and unsalted butter. Fat/protein and processing differ; neither ingredient was directly tested. Other retained milk comparators 30 and 46 are diagnostic, not uncertainty bounds."
+              }
+            },
+            {
+              "index": 3,
+              "name": "raastettua parmesaania",
+              "massG": 60,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 32,
+                "fat": 27,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Zero CHO is explicit in this composition dataset. It is not an invented GI=0 or proof of exact chemical absence.",
+              "composition": {
+                "sourceId": "afcd-F002479-release-3",
+                "evidenceHash": "a4abe0a82eac0761614a14e1d236c93b5ea0e3dfefecfb1fa620a6c64ee5a71f"
+              },
+              "state": "fresh parmesan",
+              "quantityEvidence": {
+                "amount": 60,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Retained explicit edible ingredient mass; measure before cooking.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 4,
+              "name": "Kivikylän Sooci Paahdettua kanalientä",
+              "massG": 150,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0.2,
+                "protein": 3,
+                "fat": 0.1,
+                "fibre": 1.1
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-cho-default",
+              "match": "APPLIED",
+              "applicability": "0.2 g label CHO/100 g: published low-carbohydrate default 50 applied to the explicit full-label-CHO proxy. Product GI remains unmeasured. Contribution is 0.0375 per serving.",
+              "composition": {
+                "sourceId": "chicken-label-proxy",
+                "evidenceHash": "6d13068a5f416aa1fcfda5be747a22f621e940fb59726ee0ebeb8cf1fcecac77"
+              },
+              "state": "prepared liquid stock",
+              "quantityEvidence": {
+                "amount": 150,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Previously reviewed weighed stock proposal. Add only water if needed; serve all sauce.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "schakel-default50",
+                "evidenceHash": "8a55ad7d7c338f3081af35cae72813091b0991f2196c2d6e14013dcc8b7027e6",
+                "rationale": "0.2 g label CHO/100 g: published low-carbohydrate default 50 applied to the explicit full-label-CHO proxy. Product GI remains unmeasured. Contribution is 0.0375 per serving."
+              },
+              "carbohydrateEvidence": "MODEL_PROXY_NOT_MEASURED_POLYOL_FREE"
+            },
+            {
+              "index": 5,
+              "name": "voita",
+              "massG": 14,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0.8,
+                "protein": 1.19,
+                "fat": 81.3,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "plain-dairy",
+              "match": "APPLIED",
+              "applicability": "Whole milk GI 34 is a LOW lactose/dairy comparator for plain 38% cream and unsalted butter. Fat/protein and processing differ; neither ingredient was directly tested. Other retained milk comparators 30 and 46 are diagnostic, not uncertainty bounds.",
+              "composition": {
+                "sourceId": "fineli-576-release-20",
+                "evidenceHash": "5e2010b47906bf4998bca227b573c1d0eb0531ad80b04d37461e8338a1dd4252"
+              },
+              "state": "unsalted butter",
+              "quantityEvidence": {
+                "amount": 14,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Retained explicit edible ingredient mass; measure before cooking.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "milk34",
+                "evidenceHash": "f49f48c2edbdb5cd567dcfc0d3be114a26eda4cd94294cbed113bc5dff7f35e3",
+                "rationale": "Whole milk GI 34 is a LOW lactose/dairy comparator for plain 38% cream and unsalted butter. Fat/protein and processing differ; neither ingredient was directly tested. Other retained milk comparators 30 and 46 are diagnostic, not uncertainty bounds."
+              }
+            },
+            {
+              "index": 6,
+              "name": "valkosipulimurskaa",
+              "massG": 2,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 10.2,
+                "protein": 6.1,
+                "fat": 2.8,
+                "fibre": 16.9
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Named low-carbohydrate vegetable assumption from Atkinson 2008; raw composition with all cooking liquid retained. Applies to this weighed vegetable, not a measured vegetable GI.",
+              "composition": {
+                "sourceId": "afcd-F004193-release-3",
+                "evidenceHash": "de8bc83c7dcd632fdafc141ebb74d02b21bd3bbd4b2ca271d65f161212cf17db"
+              },
+              "state": "raw garlic",
+              "quantityEvidence": {
+                "amount": 2,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Retained explicit edible ingredient mass; measure before cooking.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Named low-carbohydrate vegetable assumption from Atkinson 2008; raw composition with all cooking liquid retained. Applies to this weighed vegetable, not a measured vegetable GI."
+              }
+            },
+            {
+              "index": 7,
+              "name": "mustapippuria, jauhettu",
+              "massG": 0.5,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-cho-default",
+              "match": "APPLIED",
+              "applicability": "EXPLICIT PROJECT EXTENSION: pepper is not low-CHO per 100 g (38.6). Its fixed 0.5 g pan dose contributes 0.04825 g CHO/serving. Apply the published coding default only to this tiny portion; no claim that Schakel tested pepper or specified this portion threshold. Separate sensitivity is required.",
+              "composition": {
+                "sourceId": "afcd-F006618-checked",
+                "evidenceHash": "75726165836e649c433604e304c9ff2d60bc0fc2c93d9e05d48c60cf5a0cbccc"
+              },
+              "state": "dried ground black pepper",
+              "quantityEvidence": {
+                "amount": 0.5,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Proposed 0.5 g ground black pepper for the complete four-serving pan. Weighed recipe definition, not a measured former pinch.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "schakel-default50",
+                "evidenceHash": "8a55ad7d7c338f3081af35cae72813091b0991f2196c2d6e14013dcc8b7027e6",
+                "rationale": "EXPLICIT PROJECT EXTENSION: pepper is not low-CHO per 100 g (38.6). Its fixed 0.5 g pan dose contributes 0.04825 g CHO/serving. Apply the published coding default only to this tiny portion; no claim that Schakel tested pepper or specified this portion threshold. Separate sensitivity is required."
+              },
+              "projectExtension": true
+            },
+            {
+              "index": 8,
+              "name": "suolaa",
+              "massG": null,
+              "certifiedZeroSalt": true,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "salt",
+              "match": "DIRECT",
+              "applicability": "Plain mineral salt has no CHO, protein, fat or fibre; unspecified salt does not hide pepper. Sodium/salt intake is outside this four-macro calculation."
+            }
+          ]
+        }
+      ],
+      "originalPreparation": "## Valmistus\n\n1. Leikkaa broileri suupaloiksi ja jaa parsakaali pieniksi kukinnoiksi.\n2. Ruskista broileri voissa pannulla. Lisää valkosipuli ja paista 30 sekuntia.\n3. Kaada pannulle kanaliemi ja kerma. Lisää parsakaali ja hauduta kannen alla 8–10 minuuttia.\n4. Sekoita parmesaani joukkoon ja kuumenna, kunnes juusto sulaa ja broileri on kypsää.\n5. Mausta suolalla ja pippurilla.\n\n## Muistiinpanot\n\nJos kastike sakenee liikaa, lisää tilkka vettä tai kanalientä.\n",
+      "originalIngredients": [
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "broilerin rintafileetä"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "parsakaalia"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "item": "raastettua parmesaania"
+        },
+        {
+          "amount": 150,
+          "unit": "ml",
+          "item": "kanalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "valkosipulimurskaa"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa ja mustapippuria"
+        }
+      ],
+      "uncertainty": "NOT_BOUNDED",
+      "reviewNote": "Conditional numerical proposal: published imputation plus dairy comparator. No product-specific measured GI or physiological interval. Full label CHO is an explicit model proxy for stock and Dijon.",
+      "requiresRecipeClarification": true,
+      "requiresMethodApproval": true,
+      "approved": false,
+      "published": false,
+      "proposedTitle": "Parmesaaninen kanapannu parsakaalilla",
+      "scenarioScope": "One fourth of the complete pan, all ingredients and sauce served. No cauliflower mash, rice, bread or other side.",
+      "methodApprovalScope": [
+        "Schakel default 50 for named low-CHO foods",
+        "Explicit small-portion extension for 0.5 g pepper",
+        "Full EU label CHO as model proxy while polyols are unmeasured",
+        "Milk34 comparator for cream and butter",
+        "Atkinson vegetable40 and weighed proposed recipe version"
+      ],
+      "proposedPreparation": [
+        "Punnitse 500 g nahatonta ja luutonta broilerin rintafileetä, 300 g parsakaalia, 200 g tavallista 38 % kuohukermaa, 60 g parmesaania, 150 g nimettyä käyttövalmista kanalientä, 14 g suolatonta voita, 2 g murskattua tuoretta valkosipulia ja 0,5 g jauhettua mustapippuria.",
+        "Ruskista paloiteltu broileri voissa. Lisää valkosipuli, sitten liemi, kerma ja parsakaalin pienet kukinnot. Hauduta kannen alla 8–10 minuuttia. Lisää parmesaani ja varmista broilerin kypsyys.",
+        "Lisää punnitut mausteet ja halutessasi puhdasta suolaa. Mahdollinen lisäneste on vettä. Älä valuta tai jätä kastiketta pois; jaa koko pannun sisältö neljään yhtä suureen annokseen ja tarjoa sellaisenaan. Todellista kypsennyshävikkiä ei ole mitattu."
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "title": "Kermainen kanasienipannu",
+      "sourcePath": "reseptit/paaruoat/kermainen-kanasienipannu.md",
+      "sourceSha256": "f6b6f171feae82846d66325e1ff90866a78f158a9b6d5b36d51b30d7803ba7bf",
+      "servings": 4,
+      "group": "small-impact",
+      "evidenceVersion": 2,
+      "method": "B",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "reviewState": "CONDITIONAL_READY_FOR_BATCH_REVIEW",
+      "scenarios": [
+        {
+          "id": "weighed-yellow-onion-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "broilerin paistileikettä",
+              "massG": 500,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 19.1,
+                "fat": 3,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "unresolved",
+              "match": "APPLIED",
+              "applicability": "Zero CHO is explicit in this composition dataset. It is not an invented GI=0 or proof of exact chemical absence.",
+              "composition": {
+                "sourceId": "afcd-F002806-release-3",
+                "evidenceHash": "9d4066a4d02154ebbfccbd897ac995e27fb521358ff96f36330d54eeeaaf3528"
+              },
+              "state": "raw lean chicken thigh flesh",
+              "quantityEvidence": {
+                "amount": 500,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Retained explicit edible ingredient mass; measure before cooking.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null
+            },
+            {
+              "index": 1,
+              "name": "herkkusieniä",
+              "massG": 250,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0.8,
+                "protein": 2.2,
+                "fat": 0.8,
+                "fibre": 1.4
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-cho-default",
+              "match": "APPLIED",
+              "applicability": "AFCD available CHO of mushroom is 0.8 g/100 g, already excluding sugar alcohols. Use the published low-carbohydrate default 50, not a vegetable measurement or a second polyol subtraction.",
+              "composition": {
+                "sourceId": "afcd-F005946-release-3",
+                "evidenceHash": "1b61908abb55d55d9fc15e7db9291d6685f538d229b61a7ce34acdc629ff5f68"
+              },
+              "state": "fresh common raw mushroom",
+              "quantityEvidence": {
+                "amount": 250,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Retained explicit edible ingredient mass; measure before cooking.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "schakel-default50",
+                "evidenceHash": "8a55ad7d7c338f3081af35cae72813091b0991f2196c2d6e14013dcc8b7027e6",
+                "rationale": "AFCD available CHO of mushroom is 0.8 g/100 g, already excluding sugar alcohols. Use the published low-carbohydrate default 50, not a vegetable measurement or a second polyol subtraction."
+              }
+            },
+            {
+              "index": 2,
+              "name": "keltaista sipulia, kuorittu",
+              "massG": 55,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-carb-vegetable",
+              "match": "APPLIED",
+              "applicability": "Named low-carbohydrate vegetable assumption from Atkinson 2008; raw composition with all cooking liquid retained. Applies to this weighed vegetable, not a measured vegetable GI.",
+              "composition": {
+                "sourceId": "fineli-335-release-20",
+                "evidenceHash": "0bd63126db22c374e6f42c2e2d65058107546fc4f781d273a1f388a3bbff4f3f"
+              },
+              "state": "raw peeled yellow onion",
+              "quantityEvidence": {
+                "amount": 55,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Explicit ingredient replacement: yellow onion instead of shallot. Fineli 335 actually describes yellow onion; no claim that shallot has this composition.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Named low-carbohydrate vegetable assumption from Atkinson 2008; raw composition with all cooking liquid retained. Applies to this weighed vegetable, not a measured vegetable GI."
+              }
+            },
+            {
+              "index": 3,
+              "name": "kuohukermaa",
+              "massG": 200,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 2.9,
+                "protein": 1.88,
+                "fat": 38,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "plain-dairy",
+              "match": "APPLIED",
+              "applicability": "Whole milk GI 34 is a LOW lactose/dairy comparator for plain 38% cream and unsalted butter. Fat/protein and processing differ; neither ingredient was directly tested. Other retained milk comparators 30 and 46 are diagnostic, not uncertainty bounds.",
+              "composition": {
+                "sourceId": "fineli-631-release-20",
+                "evidenceHash": "1b2c73aef3541aef41e7458aa054d327dd289f1942677d5bcd52d74351913f64"
+              },
+              "state": "38% cream",
+              "quantityEvidence": {
+                "amount": 200,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Weigh 200 g plain 38% cream; this replaces the original 200 ml specification without assuming density.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "milk34",
+                "evidenceHash": "f49f48c2edbdb5cd567dcfc0d3be114a26eda4cd94294cbed113bc5dff7f35e3",
+                "rationale": "Whole milk GI 34 is a LOW lactose/dairy comparator for plain 38% cream and unsalted butter. Fat/protein and processing differ; neither ingredient was directly tested. Other retained milk comparators 30 and 46 are diagnostic, not uncertainty bounds."
+              }
+            },
+            {
+              "index": 4,
+              "name": "Kivikylän Sooci Paahdettua kanalientä",
+              "massG": 150,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0.2,
+                "protein": 3,
+                "fat": 0.1,
+                "fibre": 1.1
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-cho-default",
+              "match": "APPLIED",
+              "applicability": "0.2 g label CHO/100 g: published low-carbohydrate default 50 applied to the explicit full-label-CHO proxy. Product GI remains unmeasured. Contribution is 0.0375 per serving.",
+              "composition": {
+                "sourceId": "chicken-label-proxy",
+                "evidenceHash": "6d13068a5f416aa1fcfda5be747a22f621e940fb59726ee0ebeb8cf1fcecac77"
+              },
+              "state": "prepared liquid stock",
+              "quantityEvidence": {
+                "amount": 150,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Previously reviewed weighed stock proposal. Add only water if needed; serve all sauce.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "schakel-default50",
+                "evidenceHash": "8a55ad7d7c338f3081af35cae72813091b0991f2196c2d6e14013dcc8b7027e6",
+                "rationale": "0.2 g label CHO/100 g: published low-carbohydrate default 50 applied to the explicit full-label-CHO proxy. Product GI remains unmeasured. Contribution is 0.0375 per serving."
+              },
+              "carbohydrateEvidence": "MODEL_PROXY_NOT_MEASURED_POLYOL_FREE"
+            },
+            {
+              "index": 5,
+              "name": "Maille Dijon Originale -sinappia",
+              "massG": 15,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 3.5,
+                "protein": 7,
+                "fat": 11,
+                "fibre": 2
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-cho-default",
+              "match": "APPLIED",
+              "applicability": "Smooth unsweetened Dijon has 3.5 g label CHO/100 g. Use published low-carbohydrate default, with label-CHO proxy explicitly assumed. No GI is borrowed from mustard-rice meal experiments.",
+              "composition": {
+                "sourceId": "maille-label-proxy",
+                "evidenceHash": "d94c9ea25cc574f20be8a2e373e828848a84a8ee017aee8ebaa924343a7d56aa"
+              },
+              "state": "cream-style mustard proxy",
+              "quantityEvidence": {
+                "amount": 15,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Weigh 15 g of the named smooth Dijon; not a density conversion from a tablespoon.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "schakel-default50",
+                "evidenceHash": "8a55ad7d7c338f3081af35cae72813091b0991f2196c2d6e14013dcc8b7027e6",
+                "rationale": "Smooth unsweetened Dijon has 3.5 g label CHO/100 g. Use published low-carbohydrate default, with label-CHO proxy explicitly assumed. No GI is borrowed from mustard-rice meal experiments."
+              },
+              "carbohydrateEvidence": "MODEL_PROXY_NOT_MEASURED_POLYOL_FREE"
+            },
+            {
+              "index": 6,
+              "name": "voita",
+              "massG": 14,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 0.8,
+                "protein": 1.19,
+                "fat": 81.3,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "plain-dairy",
+              "match": "APPLIED",
+              "applicability": "Whole milk GI 34 is a LOW lactose/dairy comparator for plain 38% cream and unsalted butter. Fat/protein and processing differ; neither ingredient was directly tested. Other retained milk comparators 30 and 46 are diagnostic, not uncertainty bounds.",
+              "composition": {
+                "sourceId": "fineli-576-release-20",
+                "evidenceHash": "5e2010b47906bf4998bca227b573c1d0eb0531ad80b04d37461e8338a1dd4252"
+              },
+              "state": "unsalted butter",
+              "quantityEvidence": {
+                "amount": 14,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Retained explicit edible ingredient mass; measure before cooking.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "milk34",
+                "evidenceHash": "f49f48c2edbdb5cd567dcfc0d3be114a26eda4cd94294cbed113bc5dff7f35e3",
+                "rationale": "Whole milk GI 34 is a LOW lactose/dairy comparator for plain 38% cream and unsalted butter. Fat/protein and processing differ; neither ingredient was directly tested. Other retained milk comparators 30 and 46 are diagnostic, not uncertainty bounds."
+              }
+            },
+            {
+              "index": 7,
+              "name": "silputtua timjamia",
+              "massG": 2,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 1.1,
+                "protein": 5.6,
+                "fat": 1.7,
+                "fibre": 14
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-cho-default",
+              "match": "APPLIED",
+              "applicability": "Fresh thyme has 1.1 g available CHO/100 g; apply low-carbohydrate coding default 50. Not dried thyme or discarded sprigs.",
+              "composition": {
+                "sourceId": "afcd-F010466-checked",
+                "evidenceHash": "50d924128cce90520a79d4e0bc8970b36350fd7c6504f0f3fa8be633e9c6f36b"
+              },
+              "state": "fresh thyme",
+              "quantityEvidence": {
+                "amount": 2,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Proposed 2 g fresh stripped thyme leaves, chopped and eaten; replaces unsupported old 15 g/tablespoon, not a measured spoon conversion.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "schakel-default50",
+                "evidenceHash": "8a55ad7d7c338f3081af35cae72813091b0991f2196c2d6e14013dcc8b7027e6",
+                "rationale": "Fresh thyme has 1.1 g available CHO/100 g; apply low-carbohydrate coding default 50. Not dried thyme or discarded sprigs."
+              }
+            },
+            {
+              "index": 8,
+              "name": "mustapippuria, jauhettu",
+              "massG": 0.5,
+              "certifiedZeroSalt": false,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "low-cho-default",
+              "match": "APPLIED",
+              "applicability": "EXPLICIT PROJECT EXTENSION: pepper is not low-CHO per 100 g (38.6). Its fixed 0.5 g pan dose contributes 0.04825 g CHO/serving. Apply the published coding default only to this tiny portion; no claim that Schakel tested pepper or specified this portion threshold. Separate sensitivity is required.",
+              "composition": {
+                "sourceId": "afcd-F006618-checked",
+                "evidenceHash": "75726165836e649c433604e304c9ff2d60bc0fc2c93d9e05d48c60cf5a0cbccc"
+              },
+              "state": "dried ground black pepper",
+              "quantityEvidence": {
+                "amount": 0.5,
+                "unit": "g",
+                "edibleFraction": 1,
+                "conversionEvidence": "PROPOSED_WEIGHED_RECIPE_AMOUNT_NOT_EQUIVALENCE_CLAIM",
+                "rationale": "Proposed 0.5 g ground black pepper for the complete four-serving pan. Weighed recipe definition, not a measured former pinch.",
+                "retentionEvidence": "Defined all-consumed pan scenario; not measured cooking loss"
+              },
+              "originalOmission": null,
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "schakel-default50",
+                "evidenceHash": "8a55ad7d7c338f3081af35cae72813091b0991f2196c2d6e14013dcc8b7027e6",
+                "rationale": "EXPLICIT PROJECT EXTENSION: pepper is not low-CHO per 100 g (38.6). Its fixed 0.5 g pan dose contributes 0.04825 g CHO/serving. Apply the published coding default only to this tiny portion; no claim that Schakel tested pepper or specified this portion threshold. Separate sensitivity is required."
+              },
+              "projectExtension": true
+            },
+            {
+              "index": 9,
+              "name": "suolaa",
+              "massG": null,
+              "certifiedZeroSalt": true,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "retention": 1,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "giId": null,
+              "giEvidenceHash": null,
+              "family": "salt",
+              "match": "DIRECT",
+              "applicability": "Plain mineral salt has no CHO, protein, fat or fibre; unspecified salt does not hide pepper. Sodium/salt intake is outside this four-macro calculation."
+            }
+          ]
+        }
+      ],
+      "originalPreparation": "## Valmistus\n\n1. Viipaloi sienet ja hienonna salottisipuli. Leikkaa broileri suupaloiksi.\n2. Ruskista broileri voissa kuumalla pannulla kahdessa erässä. Siirrä lautaselle.\n3. Paista sienet pannulla kullanruskeiksi, lisää sipuli ja kypsennä pehmeäksi.\n4. Kaada pannulle kanaliemi, kerma ja sinappi. Kiehauta, lisää broileri takaisin ja hauduta 8–10 minuuttia kypsäksi.\n5. Mausta timjamilla, suolalla ja pippurilla.\n\n## Muistiinpanot\n\nTarjoa sellaisenaan tai kukkakaalimuusin kanssa.\n",
+      "originalIngredients": [
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "broilerin paistileikettä"
+        },
+        {
+          "amount": 250,
+          "unit": "g",
+          "item": "herkkusieniä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "salottisipuli"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 150,
+          "unit": "ml",
+          "item": "kanalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "Dijon-sinappia"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "silputtua timjamia"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa ja mustapippuria"
+        }
+      ],
+      "uncertainty": "NOT_BOUNDED",
+      "reviewNote": "Conditional numerical proposal: published imputation plus dairy comparator. No product-specific measured GI or physiological interval. Full label CHO is an explicit model proxy for stock and Dijon.",
+      "requiresRecipeClarification": true,
+      "requiresMethodApproval": true,
+      "approved": false,
+      "published": false,
+      "proposedTitle": "Kermainen kanasienipannu keltasipulilla",
+      "scenarioScope": "One fourth of the complete pan, all ingredients and sauce served. No cauliflower mash, rice, bread or other side.",
+      "methodApprovalScope": [
+        "Schakel default 50 for named low-CHO foods",
+        "Explicit small-portion extension for 0.5 g pepper",
+        "Full EU label CHO as model proxy while polyols are unmeasured",
+        "Milk34 comparator for cream and butter",
+        "Atkinson vegetable40 and weighed proposed recipe version"
+      ],
+      "proposedPreparation": [
+        "Punnitse 500 g nahatonta ja luutonta broilerin paistileikettä, 250 g tuoreita herkkusieniä, 55 g kuorittua keltasipulia, 200 g tavallista 38 % kuohukermaa, 150 g nimettyä käyttövalmista kanalientä, 15 g nimettyä Dijon-sinappia, 14 g suolatonta voita, 2 g tuoreita timjaminlehtiä ja 0,5 g jauhettua mustapippuria.",
+        "Ruskista paloiteltu broileri voissa ja siirrä lautaselle. Paista sienet ja hienonnettu keltasipuli samalla pannulla. Lisää liemi, kerma ja Dijon. Palauta broileri sekä lautaselle valuneet nesteet pannulle, hauduta 8–10 minuuttia ja varmista broilerin kypsyys.",
+        "Lisää punnitut mausteet ja halutessasi puhdasta suolaa. Mahdollinen lisäneste on vettä. Älä valuta tai jätä kastiketta pois; jaa koko pannun sisältö neljään yhtä suureen annokseen ja tarjoa sellaisenaan. Todellista kypsennyshävikkiä ei ole mitattu."
+      ],
+      "confidence": "LOW"
+    }
+  ]
+}
