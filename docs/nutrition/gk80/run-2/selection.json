@@ -1,0 +1,4461 @@
+{
+  "sourceMain": "e8da2c9417e2aeff55a85d599b3b7e1ad465f36c",
+  "pilotDependency": "bff8c6a1799cf56947413ddfc634e72ea4d2efce",
+  "sourceInventory": {
+    "commit": "020b665582f4f1ec54e56ec978581e424adc6ace",
+    "path": "docs/nutrition/gk-r2-inventory.json",
+    "sha256": "fb6bd4c5f9cba01e830eba9d1b7793faf9ecad86225d0dd8ff232068c2cea01c"
+  },
+  "screened": 243,
+  "nonGiCandidates": 55,
+  "nonGiCandidatesExcludingPilot": 52,
+  "selection": "Purposive, 10 per stratum. Prioritized complete frozen composition and manageable ingredient sets; reviewed all 55 non-GI candidates. No representativeness or success-rate extrapolation. Shared sources and stratum labels are hypotheses, not approval. Ranking score uses existing composition, non-GI repair signal, input count, missing CHO rows and known unmatched CHO. Human selection then favors complete ingredient evidence and reusable rice/noodle/porridge preparation sources; no deep re-audit of all recipes.",
+  "recipes": [
+    {
+      "recipeId": "vietnamilainen-hu-tieu-aamiaiskeitto",
+      "group": "near-complete",
+      "title": "Hu tieu -nuudelikeitto kasviksilla",
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-hu-tieu-aamiaiskeitto.md",
+      "sourceSha256": "e7b9e051936eb57db985e18545d9720795df4530998a4210bded3324908536ad",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisinuudeli"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "porsaan ulkofileetä"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "pavunitu"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "korianteri"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Kuumenna kattilassa öljy tai liemi. Lisää aromit ja hitaammin kypsyvät ainekset; paista tai hauduta muutama minuutti.\n2. Kaada kattilaan liemi ja keitä miedosti, kunnes pääraaka-aineet ovat kypsiä.\n3. Lisää nuudelit, lehtivihannekset tai muut nopeasti kypsyvät ainekset niiden kypsymisajan mukaan.\n4. Kypsennä porsaan ulkofileetä vedessä hiljalleen. Lisää riisinuudelit niiden pakkauksen kypsennysajan mukaan. Tarjoa pavunitujen ja hienonnetun tuoreen korianterin kanssa.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\vietnamilainen-hu-tieu-aamiaiskeitto.json",
+      "priorCalculationSha256": "2a3a0d0fd11f9e09fff5854fedd7d256776129840c84be4e5725fc58558d32be",
+      "r2Repairability": "NON_GI_REVIEW_CANDIDATE_UNCONFIRMED",
+      "existingBlockers": [
+        "vietnamilainen-hu-tieu-aamiaiskeitto: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+        "vietnamilainen-hu-tieu-aamiaiskeitto: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
+    },
+    {
+      "recipeId": "vietnamilainen-chao-ga-kanapuuro",
+      "group": "near-complete",
+      "title": "Chao ga -inkiväärinen kanapuuro",
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-chao-ga-kanapuuro.md",
+      "sourceSha256": "5d55b47b72cf17b320e653aa28da7f5d4b4ef7a3f2cafd6e2cedbae1cc100829",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisi"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "nahatonta broilerin rintafileetä"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "tuoretta inkivääriä"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "kevätsipuli"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Keitä riisi ja raaka kananrinta vedessä hiljalleen, kunnes kana on kypsä ja riisi pehmeää. Nosta kana, revi pieneksi ja palauta puuroon. Viimeistele tuoreella inkiväärillä ja kevätsipulilla.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\vietnamilainen-chao-ga-kanapuuro.json",
+      "priorCalculationSha256": "b676f0b1cf389ce1276e38787c0e7137b587a5c15854fae6091f8dddb04920ed",
+      "r2Repairability": "NON_GI_REVIEW_CANDIDATE_UNCONFIRMED",
+      "existingBlockers": [
+        "vietnamilainen-chao-ga-kanapuuro: vettä tai mietoa lientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+        "vietnamilainen-chao-ga-kanapuuro: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-bubur-ayam-kanariisipuuro",
+      "group": "near-complete",
+      "title": "Bubur ayam -kanariisipuuro",
+      "sourcePath": "reseptit/aamupalat/indonesialainen-bubur-ayam-kanariisipuuro.md",
+      "sourceSha256": "1f01b151b3c3e2ca259605ee5552675c4b48c4d2d3777963c2b4ac534d2cb292",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kuivaa pitkäjyväistä valkoista riisiä"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "broilerin nahatonta rintafileetä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "inkivääri"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "kevätsipuli"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Keitä riisi pehmeäksi puuroksi ja lisää revitty kana, kevätsipuli sekä rapea salottisipuli.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\indonesialainen-bubur-ayam-kanariisipuuro.json",
+      "priorCalculationSha256": "b3545cb074eac84e7601065f3434e8aca2d42d352e40c5e542ddac7113112f16",
+      "r2Repairability": "NON_GI_REVIEW_CANDIDATE_UNCONFIRMED",
+      "existingBlockers": [
+        "indonesialainen-bubur-ayam-kanariisipuuro: vettä tai mietoa lientä: Recipe allows water or unspecified stock; stock type and carbohydrate concentration are not provided."
+      ]
+    },
+    {
+      "recipeId": "thai-khao-tom-katkaravuilla",
+      "group": "near-complete",
+      "title": "Khao tom katkaravuilla",
+      "sourcePath": "reseptit/aamupalat/thai-khao-tom-katkaravuilla.md",
+      "sourceSha256": "5765d241c0419394f42c8868fabaf1483fdaa02bb4d31b214960ef5842b4d360",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "katkarapu"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kuivaa valkoista pitkäjyväistä riisiä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "valkosipuli"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "inkivääri"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "laimennettua kanalientä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Huuhtele riisi ja keitä se kanaliemessä miedolla lämmöllä lähes pehmeäksi.\n2. Lisää valkosipuli ja inkivääri. Hauduta muutama minuutti.\n3. Lisää katkaravut ja kypsennä, kunnes ne ovat kauttaaltaan läpikuultamattomia.\n4. Mausta suolalla ja tarjoa kuumana.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\thai-khao-tom-katkaravuilla.json",
+      "priorCalculationSha256": "dd679f266c4543d638f515f0a514d5ccff1dc3d851435af65747cc69a68af004",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "thai-khao-tom-katkaravuilla: inkivääri: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "thai-khao-tom-katkaravuilla: laimennettua kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ]
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-minttutee-kaurapuuro",
+      "group": "near-complete",
+      "title": "Marokkolainen minttutee-kaurapuuro",
+      "sourcePath": "reseptit/aamupalat/pohjoisafrikkalainen-minttutee-kaurapuuro.md",
+      "sourceSha256": "0bc1a5d80c11c9129a71511105635c7c3300a3f85535a04a1b8c4f88311f223b",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kaurahiutale"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "tuoretta minttua"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "maito"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "hunaja"
+        },
+        {
+          "amount": 500,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Mittaa kaurahiutale kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Hauduta minttua maidossa, siivilöi ja keitä nesteessä kaurapuuro.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\pohjoisafrikkalainen-minttutee-kaurapuuro.json",
+      "priorCalculationSha256": "37b32ff0121da2e32c19e31aa2c1ce488b49a83555a5626d117c6b3538637422",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "pohjoisafrikkalainen-minttutee-kaurapuuro: kaurahiutale: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+        "pohjoisafrikkalainen-minttutee-kaurapuuro: hunaja: GI evidence is missing.",
+        "pohjoisafrikkalainen-minttutee-kaurapuuro: maitoa tai vettä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+        "pohjoisafrikkalainen-minttutee-kaurapuuro: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-tahinipuuro",
+      "group": "near-complete",
+      "title": "Kreikkalainen hunajainen tahinipuuro",
+      "sourcePath": "reseptit/aamupalat/valimerellinen-tahinipuuro.md",
+      "sourceSha256": "0098bea8ddfee897c8768262c2bc6534623421b2a2c849e801c4b03ad31e7e6e",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kaurahiutale"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "tahini"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "hunaja"
+        },
+        {
+          "amount": 130,
+          "unit": "g",
+          "item": "kuorittua appelsiinia"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Mittaa kaurahiutale kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Sekoita tahini lämpimään puuroon ja lisää appelsiinia sekä hunajaa.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\valimerellinen-tahinipuuro.json",
+      "priorCalculationSha256": "3acee925f456fa6b3bcd938d43d11ff732cfb6b39240e05e2f1c99ab43988661",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "valimerellinen-tahinipuuro: kaurahiutale: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+        "valimerellinen-tahinipuuro: tahini: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "valimerellinen-tahinipuuro: hunaja: GI evidence is missing.",
+        "valimerellinen-tahinipuuro: maitoa tai vettä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
+      ]
+    },
+    {
+      "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+      "group": "near-complete",
+      "title": "Hojicha-jogurtti persimonilla",
+      "sourcePath": "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md",
+      "sourceSha256": "cae50573ff18898460b95e9c674d0bc39514c7cbaaaa502d4008171b14261cfe",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "jogurttia"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "persimon"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "hojicha-teetä"
+        },
+        {
+          "amount": 5,
+          "unit": "g",
+          "item": "seesaminsiemeniä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Valmistele kulhon ainekset; kypsennä pavut tai proteiini, jos käytät niitä kuivina tai raakana. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.\n2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.\n3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.\n4. Jauha hojicha hienoksi tai hauduta siitä vahva tee ja jäähdytä. Annostele jogurtti kulhoihin, lisää viipaloitu persimon, hojicha ja seesaminsiemenet. Tarjoa heti.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\japanilainen-hojicha-jogurtti-persimonilla.json",
+      "priorCalculationSha256": "cba0de7a72f134ecda8846df2b0700773bd76d9efdce9ed609c49d3f30f741cd",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "japanilainen-hojicha-jogurtti-persimonilla: persimon: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "japanilainen-hojicha-jogurtti-persimonilla: hojicha: No source-matched composition and preparation was resolved for “hojicha”; it is not treated as zero.",
+        "japanilainen-hojicha-jogurtti-persimonilla: seesaminsiemen: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "japanilainen-hojicha-jogurtti-persimonilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
+    },
+    {
+      "recipeId": "lahi-ita-pistaasijogurtti",
+      "group": "near-complete",
+      "title": "Pistaasi-ruusuvesijogurtti",
+      "sourcePath": "reseptit/aamupalat/lahi-ita-pistaasijogurtti.md",
+      "sourceSha256": "f9a1d41f86c92902bbda7c9f224cbc8de48900ec7726625a482f1ecea794a9e1",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "jogurtti"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "pistaasi"
+        },
+        {
+          "amount": 5,
+          "unit": "ml",
+          "item": "ruusuvesi"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "item": "granaattiomenan siemeniä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Valmistele kulhon ainekset; kypsennä pavut tai proteiini, jos käytät niitä kuivina tai raakana. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.\n2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.\n3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.\n4. Mausta jogurtti pienellä tilkalla ruusuvettä ja lisää pistaasi sekä granaattiomenan siemenet.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\lahi-ita-pistaasijogurtti.json",
+      "priorCalculationSha256": "28e04bb12643e4de1b8932b5271d4bc168ab58d399b70038a45d88cab9416723",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "lahi-ita-pistaasijogurtti: ruusuvesi: No source-matched composition and preparation was resolved for “ruusuvesi”; it is not treated as zero.",
+        "lahi-ita-pistaasijogurtti: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
+    },
+    {
+      "recipeId": "bulgogi",
+      "group": "near-complete",
+      "title": "Korealainen bulgogi",
+      "sourcePath": "reseptit/paaruoat/bulgogi.md",
+      "sourceSha256": "c84490ec24ce44ad3f0930dbb242db9017a01431f2d910e0723af526fffc8cc8",
+      "servings": 4,
+      "sourceIngredients": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "naudan ulkofileetä",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "jasmiiniriisiä",
+          "note": "kuivapaino"
+        },
+        {
+          "amount": 60,
+          "unit": "ml",
+          "item": "soijakastiketta"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "fariinisokeria"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "seesamiöljyä"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "päärynää",
+          "note": "hienoksi raastettuna"
+        },
+        {
+          "amount": 0.5,
+          "unit": "kpl",
+          "item": "keltasipulia",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kevätsipulia",
+          "note": "viipaloituna"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "seesaminsiemeniä"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tl",
+          "item": "mustapippuria"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Sekoita soijakastike, fariinisokeri, seesamiöljy, valkosipuli, raastettu päärynä ja mustapippuri.\n2. Kääntele naudanviipaleet marinadissa, lisää sipuli ja anna maustua jääkaapissa 20–30 minuuttia.\n3. Huuhtele riisi ja keitä pakkauksen ohjeen mukaan.\n4. Kuumenna iso paistinpannu hyvin kuumaksi. Paista liha erissä nopeasti, jotta se ruskistuu eikä ala hautua nesteessään.\n5. Lisää kevätsipuli ja seesaminsiemenet. Tarjoa heti riisin kanssa.\n\n## Muistiinpanot\n\n- Ohuen lihan saa leikattua helpommin, kun sen laittaa pakastimeen noin 20 minuutiksi ennen viipalointia.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\bulgogi.json",
+      "priorCalculationSha256": "ce6ac7dbba143b35903de135aeee83c104812bfb73986d84d39c1f1cf5d2c00f",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "bulgogi: kevätsipulia: Ingredient mass is missing or invalid."
+      ]
+    },
+    {
+      "recipeId": "bun-cha-hanoi",
+      "group": "near-complete",
+      "title": "Hanoilainen bún chả",
+      "sourcePath": "reseptit/paaruoat/bun-cha-hanoi.md",
+      "sourceSha256": "c5f2ee00e21ab79683da7f45d6c97a5fc87435b8c7460fc17a2603c46146c16a",
+      "servings": 4,
+      "sourceIngredients": [
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "porsaan jauhelihaa"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "porsaan kylkeä ilman nahkaa",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "kuivattuja riisivermisellejä"
+        },
+        {
+          "amount": 3,
+          "unit": "rkl",
+          "item": "kalakastiketta",
+          "note": "lihamarinadiin"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "fariinisokeria",
+          "note": "lihamarinadiin"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "salottisipulia",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "mustapippuria"
+        },
+        {
+          "amount": 60,
+          "unit": "ml",
+          "item": "kalakastiketta",
+          "note": "dippiliemeen"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "riisiviinietikkaa"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "sokeria",
+          "note": "dippiliemeen"
+        },
+        {
+          "amount": 250,
+          "unit": "ml",
+          "item": "lämmintä vettä",
+          "note": "dippiliemeen"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "porkkanaa",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "tuoretta korianteria"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Sekoita jauhelihaan puolet kalakastikkeesta, puolet fariinisokerista, puolet valkosipulista ja salottisipulista sekä pippuri. Muotoile pieniksi litteiksi pihveiksi.\n2. Sekoita vatsaviipaleisiin loput marinadin aineksista. Anna lihojen maustua jääkaapissa vähintään 30 minuuttia.\n3. Sekoita dippiliemen kalakastike, riisiviinietikka, sokeri ja lämmin vesi. Lisää porkkana.\n4. Kypsennä riisivermisellit pakkauksen ohjeen mukaan ja huuhtele kylmällä vedellä.\n5. Grillaa tai paista pihvit ja vatsaviipaleet erissä, kunnes ne ovat läpikypsiä ja saaneet hieman paistopintaa.\n6. Tarjoa liha dippiliemessä tai sen vieressä. Nosta pöytään nuudelit ja korianteri erikseen.\n\n## Muistiinpanot\n\n- Käytä raakaa sianlihaa käsitellessäsi eri leikkuulautaa kuin kypsille aineksille. Kypsennä liha kauttaaltaan.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\bun-cha-hanoi.json",
+      "priorCalculationSha256": "b12422bb1f39e9f2bb200efcea08be72a81343f689ca958162aa2b13bbd7ccc9",
+      "r2Repairability": "NON_GI_REVIEW_CANDIDATE_UNCONFIRMED",
+      "existingBlockers": [
+        "bun-cha-hanoi: kalakastiketta: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "bun-cha-hanoi: salottisipulia: Ingredient mass is missing or invalid.",
+        "bun-cha-hanoi: riisiviinietikkaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ]
+    },
+    {
+      "recipeId": "chettinad-kana",
+      "group": "small-impact",
+      "title": "Chettinad-kana paahdetuilla mausteilla",
+      "sourcePath": "reseptit/paaruoat/chettinad-kana.md",
+      "sourceSha256": "92672822970d68f41f3a1698dbd4c665c928a48738ba2447f586e47f7c018da3",
+      "servings": 4,
+      "sourceIngredients": [
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "broilerin reisilihaa",
+          "note": "paloina"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "tomaattia",
+          "note": "kuutioituna"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta inkivääriä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "mustapippureita"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "korianterinsiemeniä"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "fenkolinsiemeniä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "kanelitanko"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "öljyä"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "tuoreita currylehtiä",
+          "note": "valinnainen"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 1,
+          "unit": "dl",
+          "item": "vettä"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Paahda kuivalla pannulla pippurit, korianterin- ja fenkolinsiemenet sekä kaneli, kunnes ne tuoksuvat. Jäähdytä ja jauha.\n2. Kuumenna öljy kattilassa. Kuullota sipuli. Lisää hienonnettu valkosipuli ja inkivääri.\n3. Lisää broileri ja ruskista kevyesti joka puolelta.\n4. Sekoita joukkoon mausteseos ja currylehdet. Lisää tomaatit ja suola.\n5. Kaada vesi, peitä ja hauduta 25–30 minuuttia, kunnes kana on kypsää ja kastike sakeaa.\n6. Tarjoa basmatiriisin tai leivän kanssa.\n\n## Muistiinpanot\n\n- Säädä mustapippurin määrää, jos haluat miedomman kastikkeen.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\chettinad-kana.json",
+      "priorCalculationSha256": "1423d3fec2ce1839f117b811417cc23a2dda0220630659d9a6e54b038bcbfa8d",
+      "r2Repairability": "NON_GI_REVIEW_CANDIDATE_UNCONFIRMED",
+      "existingBlockers": [
+        "chettinad-kana: fenkolinsiemeniä: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "chettinad-kana: tuoreita currylehtiä: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ]
+    },
+    {
+      "recipeId": "doner-kebab",
+      "group": "small-impact",
+      "title": "Kotitekoinen döner kebab naudanlihasta",
+      "sourcePath": "reseptit/paaruoat/doner-kebab.md",
+      "sourceSha256": "d1f882063dcb951563a1de6b67a3ac93cf62d31c98ffbf40ec46844cc4538917",
+      "servings": 4,
+      "sourceIngredients": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "naudan jauhelihaa"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kreikkalaista jogurttia"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli",
+          "note": "raastettuna"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "murskattuna"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "juustokuminaa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "paprikajauhetta"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "oreganoa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tl",
+          "item": "mustapippuria"
+        },
+        {
+          "amount": 4,
+          "unit": "kpl",
+          "item": "pitaleipää",
+          "note": "tarjoiluun"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "kaalisalaattia",
+          "note": "tarjoiluun"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Kuumenna uuni 220 asteeseen. Sekoita jauheliha, jogurtti, raastettu sipuli, valkosipuli ja mausteet tasaiseksi massaksi.\n2. Levitä liha ohueksi kerrokseksi leivinpaperille. Peitä toisella paperilla ja kauli tasaiseksi.\n3. Paista 12–15 minuuttia, kunnes liha on kypsää. Ota uunista ja leikkaa tai revi ohuiksi lastuiksi.\n4. Paista lihalastuja kuumalla pannulla pienissä erissä, jotta reunat ruskistuvat.\n5. Tarjoa lämpimän pitaleivän ja kaalisalaatin kanssa.\n\n## Muistiinpanot\n\n- Varmista jauhelihasta tehtyjen lihapalojen kypsyys; niiden tulee olla kauttaaltaan kypsiä.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\doner-kebab.json",
+      "priorCalculationSha256": "7971b801ae022e740845026af02cce367e0d5cf1cd1bfb732661840263c85b2d",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "doner-kebab: juustokuminaa: Ingredient mass is missing or invalid."
+      ]
+    },
+    {
+      "recipeId": "liha-juureskeitto-perunaton",
+      "group": "small-impact",
+      "title": "Perunaton suomalainen lihakeitto",
+      "sourcePath": "reseptit/paaruoat/liha-juureskeitto-perunaton.md",
+      "sourceSha256": "efd168421dc29643b4d730a92def449ddb1c23344a9c7b3fd990d1f5925f09d7",
+      "servings": 4,
+      "sourceIngredients": [
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "naudan keittolihaa"
+        },
+        {
+          "amount": 1.5,
+          "unit": "l",
+          "item": "vettä"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "lanttua"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "porkkanaa"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "juuriselleriä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "laakerinlehteä"
+        },
+        {
+          "amount": 6,
+          "unit": "kpl",
+          "item": "kokonaista mustapippuria"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "silputtua persiljaa"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Laita liha kylmään veteen kattilaan. Kuumenna kiehuvaksi ja kuori pinnalle muodostuva vaahto.\n2. Lisää sipuli, laakerinlehdet ja kokonaiset pippurit. Hauduta kannen alla hiljaa noin 1,5 tuntia, kunnes liha on mureaa.\n3. Nosta liha leikkuulaudalle ja siivilöi liemi. Paloittele liha.\n4. Kuori ja kuutioi lanttu, porkkana ja selleri. Keitä ne siivilöidyssä liemessä 12–15 minuuttia.\n5. Lisää liha takaisin, kuumenna ja mausta suolalla. Viimeistele persiljalla.\n\n## Muistiinpanot\n\nJuuresten kypsymisajat vaihtelevat kuutioiden koon mukaan.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\liha-juureskeitto-perunaton.json",
+      "priorCalculationSha256": "6d63f246e6591260c6d5a14e31f87bff05721bf043128761d1be730c8f01d7be",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "liha-juureskeitto-perunaton: lanttua: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "liha-juureskeitto-perunaton: laakerinlehteä: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "liha-juureskeitto-perunaton: kokonaista mustapippuria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "liha-juureskeitto-perunaton: silputtua persiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ]
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "group": "small-impact",
+      "title": "Parmesaaninen kanapannu parsakaalilla",
+      "sourcePath": "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md",
+      "sourceSha256": "e1d5cf315e47cd08c585cbb9b7b75b04fffbe159d4ae36d3be99526b844b0baa",
+      "servings": 4,
+      "sourceIngredients": [
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "broilerin rintafileetä"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "parsakaalia"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "item": "raastettua parmesaania"
+        },
+        {
+          "amount": 150,
+          "unit": "ml",
+          "item": "kanalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "valkosipulimurskaa"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa ja mustapippuria"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Leikkaa broileri suupaloiksi ja jaa parsakaali pieniksi kukinnoiksi.\n2. Ruskista broileri voissa pannulla. Lisää valkosipuli ja paista 30 sekuntia.\n3. Kaada pannulle kanaliemi ja kerma. Lisää parsakaali ja hauduta kannen alla 8–10 minuuttia.\n4. Sekoita parmesaani joukkoon ja kuumenna, kunnes juusto sulaa ja broileri on kypsää.\n5. Mausta suolalla ja pippurilla.\n\n## Muistiinpanot\n\nJos kastike sakenee liikaa, lisää tilkka vettä tai kanalientä.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\kana-parmesaanipannu-parsakaali.json",
+      "priorCalculationSha256": "46e98f7501545a6d27ab14aae5491daab1fc3430d06e04c559ea6e9f687ca34d",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "kana-parmesaanipannu-parsakaali: valkosipulimurskaa: Ingredient mass is missing or invalid.",
+        "kana-parmesaanipannu-parsakaali: suolaa ja mustapippuria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ]
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "group": "small-impact",
+      "title": "Kermainen kanasienipannu",
+      "sourcePath": "reseptit/paaruoat/kermainen-kanasienipannu.md",
+      "sourceSha256": "f6b6f171feae82846d66325e1ff90866a78f158a9b6d5b36d51b30d7803ba7bf",
+      "servings": 4,
+      "sourceIngredients": [
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "broilerin paistileikettä"
+        },
+        {
+          "amount": 250,
+          "unit": "g",
+          "item": "herkkusieniä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "salottisipuli"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 150,
+          "unit": "ml",
+          "item": "kanalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "Dijon-sinappia"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "silputtua timjamia"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa ja mustapippuria"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Viipaloi sienet ja hienonna salottisipuli. Leikkaa broileri suupaloiksi.\n2. Ruskista broileri voissa kuumalla pannulla kahdessa erässä. Siirrä lautaselle.\n3. Paista sienet pannulla kullanruskeiksi, lisää sipuli ja kypsennä pehmeäksi.\n4. Kaada pannulle kanaliemi, kerma ja sinappi. Kiehauta, lisää broileri takaisin ja hauduta 8–10 minuuttia kypsäksi.\n5. Mausta timjamilla, suolalla ja pippurilla.\n\n## Muistiinpanot\n\nTarjoa sellaisenaan tai kukkakaalimuusin kanssa.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\kermainen-kanasienipannu.json",
+      "priorCalculationSha256": "191d0749212f106e07779bf67b6a18f1477a630733087346a3bc5868b07d4506",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "kermainen-kanasienipannu: salottisipuli: Ingredient mass is missing or invalid.",
+        "kermainen-kanasienipannu: suolaa ja mustapippuria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ]
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "group": "small-impact",
+      "title": "Kuubalainen ropa vieja",
+      "sourcePath": "reseptit/paaruoat/ropa-vieja.md",
+      "sourceSha256": "d0803f871258b512241ad449d728793b48800f8d1af83d84710952fba012bddd",
+      "servings": 6,
+      "sourceIngredients": [
+        {
+          "amount": 900,
+          "unit": "g",
+          "item": "naudanpaistia tai flank steak -lihaa",
+          "note": "yhtenä palana"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "keltasipulia",
+          "note": "viipaloituna"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "vihreää paprikaa",
+          "note": "suikaleina"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "punaista paprikaa",
+          "note": "suikaleina"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "tomaattimurskaa"
+        },
+        {
+          "amount": 500,
+          "unit": "ml",
+          "item": "lihalientä"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "juustokuminaa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kuivattua oreganoa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "laakerinlehteä"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "item": "vihreitä oliiveja"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "valkoviinietikkaa"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Ruskista naudanliha padassa joka puolelta. Nosta hetkeksi sivuun.\n2. Kuullota sipuli ja paprikat samassa padassa. Lisää valkosipuli, juustokumina ja oregano.\n3. Lisää tomaattimurska, lihaliemi ja laakerinlehti. Nosta liha takaisin pataan.\n4. Peitä kannella ja hauduta hyvin miedolla lämmöllä noin 2,5 tuntia, kunnes liha hajoaa helposti haarukalla.\n5. Nosta liha padasta ja revi säikeiksi kahdella haarukalla. Poista laakerinlehti.\n6. Palauta liha kastikkeeseen. Lisää oliivit ja viinietikka ja hauduta vielä 10 minuuttia.\n\n## Muistiinpanot\n\n- Jos kastike on haudutuksen lopussa vetistä, keitä sitä hetki ilman kantta. Tarjoa lisäkkeenä riisiä ja mustapapuja.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\ropa-vieja.json",
+      "priorCalculationSha256": "07afa69fbf27c20bc6e8b21f73e2523daf0c4b491fc97a4096e5b014260c7db7",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "ropa-vieja: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "ropa-vieja: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ]
+    },
+    {
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "group": "small-impact",
+      "title": "Sinappinen kanapelti paahdetulla kaalilla",
+      "sourcePath": "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md",
+      "sourceSha256": "c993bedcb8e678b3ca9fa71b957a79ab3bbe0a3e50d42f624eacaf1e7904a859",
+      "servings": 4,
+      "sourceIngredients": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "nahatonta broilerin reisilihaa"
+        },
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "valkokaalia"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "Dijon-sinappia"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "hunajaa"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "valkosipulijauhetta"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "paprikajauhetta"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa ja mustapippuria"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Kuumenna uuni 210 asteeseen. Leikkaa kaali lohkoiksi ja aseta pellille broilerin kanssa.\n2. Sekoita sinappi, hunaja, öljy, valkosipulijauhe ja paprika. Valele broileri ja kaali.\n3. Mausta suolalla ja pippurilla. Paahda 35–40 minuuttia ja käännä kaali kerran.\n4. Sekoita dijonsinappi, hunaja, oliiviöljy, valkosipulijauhe ja paprikajauhe. Leikkaa broileri suupaloiksi ja kaali lohkoiksi, kääntele mausteseoksessa ja paahda uunissa, kunnes broileri on läpikypsää ja kaali pehmeää.\n\n## Muistiinpanot\n\nHunaja lisää annoksen hiilihydraatteja; sen voi jättää pois.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\hunaja-sinappikana-kaalilla.json",
+      "priorCalculationSha256": "d324f6fac9c6dd229aee6628113646173cf3b0d30af01faad02fedf7d157c1a9",
+      "r2Repairability": "NON_GI_REVIEW_CANDIDATE_UNCONFIRMED",
+      "existingBlockers": [
+        "hunaja-sinappikana-kaalilla: valkosipulijauhetta: The recipe amount 1 tl has no food-specific mass conversion for VALKOSIPULI.",
+        "hunaja-sinappikana-kaalilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
+    },
+    {
+      "recipeId": "sitruuna-yrttikana-parsa",
+      "group": "small-impact",
+      "title": "Sitruuna-yrttikana ja paahdettu parsa",
+      "sourcePath": "reseptit/paaruoat/sitruuna-yrttikana-parsa.md",
+      "sourceSha256": "e1e4e4e3fc261434816408ee1dfac1fcd085dc696f81a749b244c415782d1688",
+      "servings": 4,
+      "sourceIngredients": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "broilerin rintafileitä"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "vihreää parsaa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sitruuna"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kuivattua timjamia"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "valkosipulijauhetta"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa ja mustapippuria"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Kuumenna uuni 210 asteeseen. Aseta broileri ja parsa leivinpaperilla peitetylle pellille.\n2. Sekoita öljy, sitruunankuori ja -mehu, timjami, valkosipuli, suola ja pippuri. Valele broileri ja parsa.\n3. Lisää broilerin päälle voinokareet ja paahda 20–25 minuuttia. Käännä parsa kerran.\n4. Varmista, että broileri on kypsää, ja anna levätä 5 minuuttia.\n\n## Muistiinpanot\n\nPaksut fileet voivat tarvita hieman pidemmän kypsennysajan. Tarkista sisälämpötila.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\sitruuna-yrttikana-parsa.json",
+      "priorCalculationSha256": "560fa1c3a86e7e119d97b01739e8b5692009a8551080abf1935a89235da1d45e",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "sitruuna-yrttikana-parsa: vihreää parsaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ]
+    },
+    {
+      "recipeId": "carnitas-salaattitacot",
+      "group": "small-impact",
+      "title": "Hitaasti haudutetut carnitas-salaattitacot",
+      "sourcePath": "reseptit/paaruoat/carnitas-salaattitacot.md",
+      "sourceSha256": "49a8897b6832d1a6fb68574c366acba08311463a8e39baa586f94c1fb369e548",
+      "servings": 4,
+      "sourceIngredients": [
+        {
+          "amount": 800,
+          "unit": "g",
+          "item": "porsaan niskaa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "appelsiini"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "limetti"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "juustokuminaa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "oreganoa"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä"
+        },
+        {
+          "amount": 150,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": 12,
+          "unit": "kpl",
+          "item": "roomansalaatinlehtiä"
+        },
+        {
+          "amount": 70,
+          "unit": "g",
+          "item": "tomaattia pico de galloon"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "punasipulia pico de galloon"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "tuoretta korianteria pico de galloon"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa ja pippuria"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Leikkaa porsas suuriksi kuutioiksi. Mausta suolalla, pippurilla, juustokuminalla ja oreganolla.\n2. Laita liha pataan valkosipulin, appelsiinin mehun ja lohkojen, limetin mehun sekä veden kanssa.\n3. Hauduta kannen alla 150-asteisessa uunissa noin 2,5 tuntia, kunnes liha hajoaa haarukalla.\n4. Revi liha ja levitä pellille. Paahda grillivastuksen alla muutama minuutti, kunnes reunat rapeutuvat.\n5. Sekoita tomaatti, punasipuli ja korianteri pico de galloksi. Tarjoa lämmin liha pestyissä salaatinlehdissä ja lisää mitattu pico de gallo.\n\n## Muistiinpanot\n\nTarkkaile grillivastusta koko ajan, sillä lihan reunat ruskistuvat nopeasti.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\carnitas-salaattitacot.json",
+      "priorCalculationSha256": "11c1c2e0d3fd2955c5080ea2fecbebc80526b381e8acd98a5b763d61ed4dad81",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "carnitas-salaattitacot: limetti: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
+        "carnitas-salaattitacot: roomansalaatinlehtiä: Fineli has no validated mass for one romaine leaf; the recipe lists leaves rather than weighed lettuce, so no generic leaf mass is assumed.",
+        "carnitas-salaattitacot: pico de galloa: No source-matched composition and preparation was resolved for “pico de galloa”; it is not treated as zero.",
+        "carnitas-salaattitacot: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
+    },
+    {
+      "recipeId": "paprikainen-vhh-gulassi",
+      "group": "small-impact",
+      "title": "Paprikainen VHH-gulassi",
+      "sourcePath": "reseptit/paaruoat/paprikainen-vhh-gulassi.md",
+      "sourceSha256": "0c9af581ee1838efba58eb62b2ef8ac3d5b84e792bc4668c5fe27b02c4b50c6c",
+      "servings": 4,
+      "sourceIngredients": [
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "naudan paistia",
+          "note": "noin 3 cm:n kuutioina"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "sipulia",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "murskattuna"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "punaista paprikaa",
+          "note": "kuutioituna"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "tomaatti",
+          "note": "kuutioituna"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "tomaattipyreetä"
+        },
+        {
+          "amount": 1.5,
+          "unit": "rkl",
+          "item": "paprikajauhetta",
+          "note": "mielellään savupaprikaa tai makeaa paprikajauhetta"
+        },
+        {
+          "amount": 1.5,
+          "unit": "rkl",
+          "item": "voita tai öljyä",
+          "note": "lihan ruskistamiseen"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "juustokuminaa"
+        },
+        {
+          "amount": 3,
+          "unit": "dl",
+          "item": "lihalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa",
+          "note": "tai maun mukaan"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "mustapippuria",
+          "note": "maun mukaan"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "smetanaa",
+          "note": "tarjoiluun"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "persiljaa",
+          "note": "hienonnettuna, halutessasi"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Kuumenna uuni 160 asteeseen. Ota liha hetkeksi huoneenlämpöön ja kuivaa palat talouspaperilla.\n2. Ruskista lihapalat padassa pienissä erissä voissa tai öljyssä. Siirrä sivuun. Lisää kattilaan sipuli ja kuullota pehmeäksi. Sekoita joukkoon valkosipuli ja paprikajauhe.\n3. Lisää tomaattipyree, paprika, tomaatti ja juustokumina. Palauta liha pataan, kaada joukkoon lihaliemi ja mausta suolalla sekä mustapippurilla.\n4. Peitä kannella ja hauduta uunissa noin 1 tunti 45 minuuttia, kunnes liha on mureaa. Tarkista välillä nesteen määrä ja lisää tarvittaessa tilkka vettä.\n5. Maista ja säädä mausteet. Tarjoa smetanan ja haluamasi vähähiilihydraattisen lisukkeen kanssa.\n\n## Muistiinpanot\n\n- Pata sopii tarjottavaksi kukkakaalimuusin, paahdetun kaalin tai vihersalaatin kanssa.\n- Resepti ei sisällä perunaa eikä jauhosuurusta. VHH-luokitus on väljempi kuin kahdessa muussa reseptissä; tarkista ainesosien pakkausmerkinnät ja annoskoko oman ruokavaliosi mukaan.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\paprikainen-vhh-gulassi.json",
+      "priorCalculationSha256": "f7be6cbaa87e4d3835e21d1dc787d1f76e872bdb883a03c4a5813be5cc8fce1a",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "paprikainen-vhh-gulassi: tomaatti: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "paprikainen-vhh-gulassi: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "paprikainen-vhh-gulassi: cumulative omitted available carbohydrate is 2.584 g/serving, at or above the 2 g editorial tolerance."
+      ]
+    },
+    {
+      "recipeId": "karibia-kookosriisi-pavuilla",
+      "group": "shared-source",
+      "title": "Kookosriisi ja haudutetut pavut",
+      "sourcePath": "reseptit/aamupalat/karibia-kookosriisi-pavuilla.md",
+      "sourceSha256": "7692b9474ce05a9e747ad482595249d422e3943885a20b5598d992eaa7bcb1d8",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kuivaa pitkäjyväistä valkoista riisiä"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "täysrasvainen tölkkikookosmaito"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "kypsiä, valutettuja kidneypapuja"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "tuoretta timjamia"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Huuhtele riisi, laita kattilaan kookosmaidon kanssa ja kuumenna kiehuvaksi.\n2. Peitä kattila ja hauduta miedolla lämmöllä, kunnes riisi on kypsää ja neste imeytynyt. Sekoita välillä.\n3. Lämmitä valutetut pavut erikseen ja sekoita tuore timjami joukkoon.\n4. Jaa kookosriisi ja pavut kahdelle lautaselle. Mausta suolalla.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\karibia-kookosriisi-pavuilla.json",
+      "priorCalculationSha256": "29e173928a7e46dd4107385cc92dd40eebb808a9d89eda302fdc7c6866db77fe",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "karibia-kookosriisi-pavuilla: täysrasvainen tölkkikookosmaito: GI evidence is missing."
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
+      "group": "shared-source",
+      "title": "Nasi uduk -kookosriisi ja muna",
+      "sourcePath": "reseptit/aamupalat/indonesialainen-nasi-uduk-aamiaisella.md",
+      "sourceSha256": "6a2a2f661bbc003213ca004e185926f5bdbedfbdb4cb5b3374cd8b55d1dd9017",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kuivaa pitkäjyväistä valkoista riisiä"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kananmuna"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kurkkua"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.\n2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.\n3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.\n4. Keitä kookoksinen riisi pandanlehden kanssa ja tarjoa kananmunan sekä kurkun kanssa.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\indonesialainen-nasi-uduk-aamiaisella.json",
+      "priorCalculationSha256": "fced9e8ae387f52271e0f4943e1d034f5f14e8af5cc46aa8d896c85f16222627",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "indonesialainen-nasi-uduk-aamiaisella: täysrasvaista kookosmaitoa: GI evidence is missing."
+      ]
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-bissara",
+      "group": "shared-source",
+      "title": "Bissara-härkäpapukeitto aamiaiseksi",
+      "sourcePath": "reseptit/aamupalat/pohjoisafrikkalainen-bissara.md",
+      "sourceSha256": "1ff5c53d68cced68d1a56360dafccd38096f3192a2d0579cd79214362b9581a3",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "kuivattuja härkäpapuja"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "valkosipuli"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "juustokumina"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "oliiviöljy"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Kuumenna kattilassa öljy tai liemi. Lisää aromit ja hitaammin kypsyvät ainekset; paista tai hauduta muutama minuutti.\n2. Kaada kattilaan liemi ja keitä miedosti, kunnes pääraaka-aineet ovat kypsiä.\n3. Lisää nuudelit, lehtivihannekset tai muut nopeasti kypsyvät ainekset niiden kypsymisajan mukaan.\n4. Keitä pavut hyvin pehmeiksi, soseuta ja viimeistele juustokuminalla sekä oliiviöljyllä.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\pohjoisafrikkalainen-bissara.json",
+      "priorCalculationSha256": "922226f9e54ec86e2f23f5c097e36633b353e87dcbd3b0197f0da9ae995f4469",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "pohjoisafrikkalainen-bissara: härkäpapu: No specific Fineli/AFCD food record and preparation match was resolved for “härkäpapu”; it is not treated as zero.",
+        "pohjoisafrikkalainen-bissara: valkosipuli: The recipe gives 1 tl but SIPULI, KELTASIPULI has no matching Fineli food-specific unit mass; no general piece/spoon conversion is applied.",
+        "pohjoisafrikkalainen-bissara: kasvis- tai kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ]
+    },
+    {
+      "recipeId": "intialainen-mannasuurimoupma",
+      "group": "shared-source",
+      "title": "Pehmeä mannasuurimoupma",
+      "sourcePath": "reseptit/aamupalat/intialainen-mannasuurimoupma.md",
+      "sourceSha256": "edc2d2353036c6e400361951048a4be69d4943d9ad78a40058de0458015fd562",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "mannasuurimo"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "herne"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "porkkana"
+        },
+        {
+          "amount": 5,
+          "unit": "g",
+          "item": "tuoreita curry-lehtiä"
+        },
+        {
+          "amount": 300,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Mittaa mannasuurimo kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Tarjoa lämpimänä kookoschutneyn tai jogurtin kanssa.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\intialainen-mannasuurimoupma.json",
+      "priorCalculationSha256": "491d709fbaf556deb31d8260b6d13a8f32986be4e73e8ea7b174a3324e97c7ed",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "intialainen-mannasuurimoupma: mannasuurimo: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+        "intialainen-mannasuurimoupma: porkkana: GI evidence is missing.",
+        "intialainen-mannasuurimoupma: curry-lehti: No specific Fineli/AFCD food record and preparation match was resolved for “curry-lehti”; it is not treated as zero.",
+        "intialainen-mannasuurimoupma: maitoa tai vettä: No specific Fineli/AFCD food record and preparation match was resolved for “maitoa tai vettä”; it is not treated as zero.",
+        "intialainen-mannasuurimoupma: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
+    },
+    {
+      "recipeId": "indialainen-poha-maapahkinoilla",
+      "group": "shared-source",
+      "title": "Mausteinen poha maapähkinöillä",
+      "sourcePath": "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md",
+      "sourceSha256": "70651af4a46cc2443fba33b56c5f83235bf2bd608ba3f450b1f8f8c49f2a7485",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisihiutale"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "maapähkinä"
+        },
+        {
+          "amount": 3,
+          "unit": "g",
+          "item": "curry-lehti"
+        },
+        {
+          "amount": 50,
+          "unit": "g",
+          "item": "herne"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "tuoretta korianteria"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "sitruunamehua"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Raasta, muussaa tai hienonna pääraaka-aine. Sekoita joukkoon taikinan ainekset ja lisää vettä vain sen verran, että seos pysyy koossa.\n2. Kuumenna pannulla ohut kerros öljyä. Muotoile pieniksi pihveiksi tai lusikoi taikina pannulle.\n3. Paista keskilämmöllä molemmin puolin kypsäksi ja rapeapintaiseksi. Paista erissä, jotta pannu ei jäähdy.\n4. Huuhtele riisihiutaleet nopeasti ja valuta. Kuullota maapähkinät, herneet ja curry-lehdet öljyssä; lisää hiutaleet ja kypsennä sekoittaen. Viimeistele korianterilla ja sitruunamehulla.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\indialainen-poha-maapahkinoilla.json",
+      "priorCalculationSha256": "ea0a6f3540bf6a95e9f998b8fc1e0f06e37d43b912029437c138c9410b7186c8",
+      "r2Repairability": "NON_GI_REVIEW_CANDIDATE_UNCONFIRMED",
+      "existingBlockers": [
+        "indialainen-poha-maapahkinoilla: maapähkinä: No specific Fineli/AFCD food record and preparation match was resolved for “maapähkinä”; it is not treated as zero.",
+        "indialainen-poha-maapahkinoilla: curry-lehti: No specific Fineli/AFCD food record and preparation match was resolved for “curry-lehti”; it is not treated as zero.",
+        "indialainen-poha-maapahkinoilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
+    },
+    {
+      "recipeId": "vietnamilainen-pho-ga-aamuksi",
+      "group": "shared-source",
+      "title": "Pho ga -kanakeitto aamuksi",
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-pho-ga-aamuksi.md",
+      "sourceSha256": "350f8195cfdb010ed6e8180211d7c237078ce8493ef03d6efb786989189ad9e0",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisinuudeli"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "nahatonta broilerin rintafileetä"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "tuoretta inkivääriä"
+        },
+        {
+          "amount": 1,
+          "unit": "g",
+          "item": "tähtianis"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Kuumenna kattilassa öljy tai liemi. Lisää aromit ja hitaammin kypsyvät ainekset; paista tai hauduta muutama minuutti.\n2. Kaada kattilaan liemi ja keitä miedosti, kunnes pääraaka-aineet ovat kypsiä.\n3. Lisää nuudelit, lehtivihannekset tai muut nopeasti kypsyvät ainekset niiden kypsymisajan mukaan.\n4. Keitä inkivääriä ja tähtianista vedessä miedolla lämmöllä. Kypsennä kananrinta vedessä, nosta se ja viipaloi. Kypsennä riisinuudelit pakkauksen ajan ja tarjoa kuumassa liemessä kanan kanssa.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\vietnamilainen-pho-ga-aamuksi.json",
+      "priorCalculationSha256": "59a3d41e225fd6a42d2a79566348bec673d6f2b80b54ddd47c9b50b61e746198",
+      "r2Repairability": "NON_GI_REVIEW_CANDIDATE_UNCONFIRMED",
+      "existingBlockers": [
+        "vietnamilainen-pho-ga-aamuksi: tähtianis: No source-matched composition and preparation was resolved for “tähtianis”; it is not treated as zero.",
+        "vietnamilainen-pho-ga-aamuksi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+        "vietnamilainen-pho-ga-aamuksi: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
+    },
+    {
+      "recipeId": "thai-riisinuudelikeitto-aamuksi",
+      "group": "shared-source",
+      "title": "Thaimaalainen riisinuudelikeitto aamuksi",
+      "sourcePath": "reseptit/aamupalat/thai-riisinuudelikeitto-aamuksi.md",
+      "sourceSha256": "a567e74b33619bac136a42ff3305baacc05455fc5e330ef04477c202419607ac",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisinuudeli"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "kana"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "limetti"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "korianteri"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "kasvis- tai kanalientä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Kuumenna kattilassa öljy tai liemi. Lisää aromit ja hitaammin kypsyvät ainekset; paista tai hauduta muutama minuutti.\n2. Kaada kattilaan liemi ja keitä miedosti, kunnes pääraaka-aineet ovat kypsiä.\n3. Lisää nuudelit, lehtivihannekset tai muut nopeasti kypsyvät ainekset niiden kypsymisajan mukaan.\n4. Lisää kulhoon limettiä, yrttejä ja halutessasi chilihiutaleita.\n",
+      "priorCalculationPath": null,
+      "priorCalculationSha256": null,
+      "r2Repairability": "NON_GI_REVIEW_CANDIDATE_UNCONFIRMED",
+      "existingBlockers": [
+        "thai-riisinuudelikeitto-aamuksi: limetti: No source-matched composition and preparation was resolved for “limetti”; it is not treated as zero.",
+        "thai-riisinuudelikeitto-aamuksi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
+      ]
+    },
+    {
+      "recipeId": "lahi-ita-taatelipuuro-tahinilla",
+      "group": "shared-source",
+      "title": "Kardemumma-taatelipuuro tahinilla",
+      "sourcePath": "reseptit/aamupalat/lahi-ita-taatelipuuro-tahinilla.md",
+      "sourceSha256": "e9a89cc1f8b8effc6adc6135b42e33883a956f99b0d6ddf9e150cbc60d6c409e",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kaurahiutale"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "kivettömiä kuivattuja taateleita"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kardemumma"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "tahini"
+        },
+        {
+          "amount": 300,
+          "unit": "ml",
+          "item": "täysmaitoa"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Mittaa kaurahiutale kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Keitä puuro taatelien ja kardemumman kanssa, viimeistele lusikallisella tahinia.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\lahi-ita-taatelipuuro-tahinilla.json",
+      "priorCalculationSha256": "707b2ef082c970381f85aed0f51424c2cb10afeee120bb0fbd83b5a6f9adcfb8",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "lahi-ita-taatelipuuro-tahinilla: kaurahiutale: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+        "lahi-ita-taatelipuuro-tahinilla: kivettömiä kuivattuja taateleita: Not applied: this recipe cooks the dried dates with the porridge, while the GI study tested dates as a separate food. AFCD-backed available carbohydrate is 3.36 g/serving, so the recipe remains blocked."
+      ]
+    },
+    {
+      "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
+      "group": "shared-source",
+      "title": "Kongjuk soijapapu-riisipuuro",
+      "sourcePath": "reseptit/aamupalat/korealainen-kongjuk-soijapapu-riisipuuro.md",
+      "sourceSha256": "6aca70cdb27f83a51c2d759e58bdcd446e6a1f9f5c414a71494fb44ec9454f31",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "soijapapu"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisi"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "seesaminsiemen"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suola"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Liota kuivia soijapapuja yön yli ja valuta. Keitä pavut ja riisi vedessä pehmeiksi. Soseuta pavut osittain puuroon ja viimeistele seesaminsiemenillä.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\korealainen-kongjuk-soijapapu-riisipuuro.json",
+      "priorCalculationSha256": "b2478e725b277d7a6114afb69faf474e44fdfd9ea841ff4bb29d0884e8843260",
+      "r2Repairability": "NON_GI_REVIEW_CANDIDATE_UNCONFIRMED",
+      "existingBlockers": [
+        "korealainen-kongjuk-soijapapu-riisipuuro: vettä tai mietoa lientä: No specific Fineli/AFCD food record and preparation match was resolved for “vettä tai mietoa lientä”; it is not treated as zero.",
+        "korealainen-kongjuk-soijapapu-riisipuuro: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ]
+    },
+    {
+      "recipeId": "meksikolainen-atole-maissipuuro",
+      "group": "shared-source",
+      "title": "Meksikolainen maissipuuro canelalla",
+      "sourcePath": "reseptit/aamupalat/meksikolainen-atole-maissipuuro.md",
+      "sourceSha256": "29bf3860053ab003ec8208d98fcf35f88d5fd9d7c0b2cbe171352636a508ad6c",
+      "servings": 2,
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "hienoksi jauhettua maissijauhoa"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "maito"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kaneli"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "vaniljauutetta"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparation": "## Valmistus\n\n1. Valmistele puuron pääraaka-aineet. Sekoita jauho tai murskattu raaka-aine ensin kylmään nesteeseen paakkujen välttämiseksi.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Keitä sekoittaen tasaiseksi ja mausta kanelilla sekä vaniljalla.\n",
+      "priorCalculationPath": "docs\\nutrition\\calculations\\meksikolainen-atole-maissipuuro.json",
+      "priorCalculationSha256": "16d3414e3cedc1e394ab1d39603bbf576e36a3e1f1e8b6ebd06bc7994f0305ef",
+      "r2Repairability": "GI_RESEARCH_AND_OTHER_REVIEW",
+      "existingBlockers": [
+        "meksikolainen-atole-maissipuuro: maissijauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+        "meksikolainen-atole-maissipuuro: maitoa tai vettä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
+      ]
+    }
+  ],
+  "screening": [
+    {
+      "recipeId": "indonesialainen-pisang-goreng-aamiaiseksi",
+      "priorityScore": 94,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 1,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "jerk-kana",
+      "priorityScore": 94,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 1,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "malesialainen-apam-balik",
+      "priorityScore": 94,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 1,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "meksikolainen-kurpitsapuuro-piloncillolla",
+      "priorityScore": 94,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 1,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "rendang-padang",
+      "priorityScore": 94,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 1,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "thai-kookosriisi-mangolla",
+      "priorityScore": 89.946,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.027,
+      "knownChoWithGiG": 47.525,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+      "priorityScore": 89.67,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.165,
+      "knownChoWithGiG": 40.2,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "meksikolainen-quesadilla-sienilla",
+      "priorityScore": 89,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 26.2225,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vietnamilainen-hu-tieu-aamiaiskeitto",
+      "priorityScore": 88.5,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.25,
+      "knownChoWithGiG": 42.77,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "intialainen-ven-pongal",
+      "priorityScore": 88.3,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.35,
+      "knownChoWithGiG": 80.325,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vietnamilainen-chao-ga-kanapuuro",
+      "priorityScore": 88.0,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.5,
+      "knownChoWithGiG": 39.5,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
+      "priorityScore": 87.4,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.8,
+      "knownChoWithGiG": 47.225,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "indonesialainen-bubur-ayam-kanariisipuuro",
+      "priorityScore": 87.2,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.9,
+      "knownChoWithGiG": 39.5,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "priorityScore": 85.508,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.746,
+      "knownChoWithGiG": 11.495,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "keto-suklaakeksit",
+      "priorityScore": 84.241,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.3793,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "indonesialainen-serabi-kookospannukakku",
+      "priorityScore": 84,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 114.575,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "keto-mutakakku",
+      "priorityScore": 83.951,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.524625,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "indialainen-poha-maapahkinoilla",
+      "priorityScore": 83.8,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.1,
+      "knownChoWithGiG": 46.67,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vietnamilainen-pho-ga-aamuksi",
+      "priorityScore": 83.5,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.25,
+      "knownChoWithGiG": 40.82,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "malesialainen-kaya-paahtoleipa",
+      "priorityScore": 82.47,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.765,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "char-siu",
+      "priorityScore": 80.367,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 5.3165,
+      "knownChoWithGiG": 46.20525,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "thai-khao-tom-katkaravuilla",
+      "priorityScore": 79,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 41.1955,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "intialainen-aloo-paratha",
+      "priorityScore": 78.8,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0.1,
+      "knownChoWithGiG": 41.6591,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "xiaolongbao",
+      "priorityScore": 78.395,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.8025,
+      "knownChoWithGiG": 4.74,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-lablabi",
+      "priorityScore": 77.996,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0.502,
+      "knownChoWithGiG": 33.3345,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "karibia-kookosriisi-pavuilla",
+      "priorityScore": 76.806,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.597,
+      "knownChoWithGiG": 50.0,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
+      "priorityScore": 76.542,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.729,
+      "knownChoWithGiG": 40.2,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "paella-valenciana",
+      "priorityScore": 76.265,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.3675,
+      "knownChoWithGiG": 59.7765,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "meksikolainen-huevos-a-la-mexicana",
+      "priorityScore": 75.655,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.6725,
+      "knownChoWithGiG": 2.15625,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "lanttulaatikko-kermainen",
+      "priorityScore": 75.575,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0.7125,
+      "knownChoWithGiG": 16.4655,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "priorityScore": 75.4,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.3,
+      "knownChoWithGiG": 13.9375,
+      "inputRowCount": 4,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "keto-korvapuustit",
+      "priorityScore": 75.02,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.49,
+      "knownChoWithGiG": 0.5,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+      "priorityScore": 75,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 14.95,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "lahi-ita-pistaasijogurtti",
+      "priorityScore": 75,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 24.815,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pav-bhaji",
+      "priorityScore": 74.989,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 1.00525,
+      "knownChoWithGiG": 51.219,
+      "inputRowCount": 13,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "sitruuna-yrttikana-parsa",
+      "priorityScore": 74.742,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.129,
+      "knownChoWithGiG": 1.4,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "rahkapiirakka-vhh",
+      "priorityScore": 74.638,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.180875,
+      "knownChoWithGiG": 1.4875,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "yrttituorejuusto-kinkkurullat",
+      "priorityScore": 74.582,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.708875,
+      "knownChoWithGiG": 1.28375,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "chettinad-kana",
+      "priorityScore": 74.081,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 1.45975,
+      "knownChoWithGiG": 2.1875,
+      "inputRowCount": 13,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "priorityScore": 74,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 4.03125,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "lahi-ita-menemen-sumakilla",
+      "priorityScore": 73.92,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 2.54,
+      "knownChoWithGiG": 2.15625,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kana-enchilada-kukkakaalivuoka",
+      "priorityScore": 73.713,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.14375,
+      "knownChoWithGiG": 6.98875,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vhh-raparperipiirakka",
+      "priorityScore": 73.648,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.175875,
+      "knownChoWithGiG": 2.28125,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vhh-lihapiirakka",
+      "priorityScore": 73.558,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.72125,
+      "knownChoWithGiG": 0.54825,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "siemengranola-jogurtilla",
+      "priorityScore": 72.873,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 2.06375,
+      "knownChoWithGiG": 6.025,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kanapyorykat-tomaattikastike",
+      "priorityScore": 72.516,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.74225,
+      "knownChoWithGiG": 3.45,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "intialainen-besan-chilla",
+      "priorityScore": 71.36,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.32,
+      "knownChoWithGiG": 21.40625,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vhh-letut",
+      "priorityScore": 71.302,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.849,
+      "knownChoWithGiG": 1.725,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "miso-lohi-paksoi",
+      "priorityScore": 71.108,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.44625,
+      "knownChoWithGiG": 1.629125,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "bun-cha-hanoi",
+      "priorityScore": 70.856,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 0.5718,
+      "knownChoWithGiG": 76.443,
+      "inputRowCount": 13,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "priorityScore": 70.61,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.695,
+      "knownChoWithGiG": 38.092333,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "dan-dan-nuudelit",
+      "priorityScore": 70.575,
+      "existingCalculation": true,
+      "nonGiCandidate": true,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 1.21275,
+      "knownChoWithGiG": 51.6675,
+      "inputRowCount": 12,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "thai-kananmunat-kookoscurryssa",
+      "priorityScore": 70.542,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.729,
+      "knownChoWithGiG": 2.15625,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vhh-juustokakku",
+      "priorityScore": 70.475,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.7627,
+      "knownChoWithGiG": 2.05,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vhh-mansikkakakku",
+      "priorityScore": 70.414,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.7932,
+      "knownChoWithGiG": 2.43,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "congee-riisipuuro",
+      "priorityScore": 70.41,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.795,
+      "knownChoWithGiG": 39.072,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "priorityScore": 69.568,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.715833,
+      "knownChoWithGiG": 6.0,
+      "inputRowCount": 12,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "valimerellinen-farinata-aamupalaksi",
+      "priorityScore": 69.55,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.725,
+      "knownChoWithGiG": 19.25,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vhh-runebergintortut",
+      "priorityScore": 69.333,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.333667,
+      "knownChoWithGiG": 0.707,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "priorityScore": 69.276,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 3.36175,
+      "knownChoWithGiG": 8.9375,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vhh-korvapuustit",
+      "priorityScore": 69.218,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.89125,
+      "knownChoWithGiG": 0.25,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "nakkikastike-kukkakaalimuusi",
+      "priorityScore": 69.195,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 3.4025,
+      "knownChoWithGiG": 4.975,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "chow-mein",
+      "priorityScore": 68.43,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.78525,
+      "knownChoWithGiG": 54.4015,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-bissara",
+      "priorityScore": 68.3,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.35,
+      "knownChoWithGiG": 1.4945,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "lindstrominpihvit-kaalilla",
+      "priorityScore": 68.203,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.39875,
+      "knownChoWithGiG": 8.3875,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "bulgogi",
+      "priorityScore": 67.658,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.670884,
+      "knownChoWithGiG": 61.829,
+      "inputRowCount": 11,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vhh-omenapiirakka",
+      "priorityScore": 67.614,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.193125,
+      "knownChoWithGiG": 3.05,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "doner-kebab",
+      "priorityScore": 67.29,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.855,
+      "knownChoWithGiG": 29.84125,
+      "inputRowCount": 11,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "priorityScore": 66.644,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.178,
+      "knownChoWithGiG": 2.65,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kerala-kalacurry",
+      "priorityScore": 66.133,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 2.9335,
+      "knownChoWithGiG": 3.3525,
+      "inputRowCount": 13,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "shoyu-kanakeitto-konjac",
+      "priorityScore": 66.046,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 2.476875,
+      "knownChoWithGiG": 0.075,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "paprikainen-vhh-gulassi",
+      "priorityScore": 65.833,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 2.583625,
+      "knownChoWithGiG": 6.885,
+      "inputRowCount": 14,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "priorityScore": 65.561,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.21925,
+      "knownChoWithGiG": 2.1825,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "thai-papaijajogurtti",
+      "priorityScore": 65.4,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 4.8,
+      "knownChoWithGiG": 14.23,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "karibia-callaloo-munakas",
+      "priorityScore": 65.27,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 1.365,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "karibia-bammy-kassavaleipa",
+      "priorityScore": 64.948,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 2.026,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "okonomiyaki-kaaliletut",
+      "priorityScore": 64.442,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 3.27875,
+      "knownChoWithGiG": 5.979125,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "malesialainen-kookos-banaanikulho",
+      "priorityScore": 64,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 1,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "nasi-lemak",
+      "priorityScore": 64,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 1,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "tangyuan",
+      "priorityScore": 64,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 1,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "liha-juureskeitto-perunaton",
+      "priorityScore": 63.68,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.66,
+      "knownChoWithGiG": 4.96575,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+      "priorityScore": 63.6,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 1.2,
+      "knownChoWithGiG": 2.57625,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "priorityScore": 63.068,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 3.966,
+      "knownChoWithGiG": 61.24825,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-harissa-shakshuka",
+      "priorityScore": 62.608,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 5.69625,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "silakkapihvit-tilli-kermakastike",
+      "priorityScore": 61.994,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 2.50289,
+      "knownChoWithGiG": 1.0875,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kookos-lime-kanacurry",
+      "priorityScore": 61.799,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 2.10065,
+      "knownChoWithGiG": 6.69675,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vietnamilainen-papaija-kookospuuro",
+      "priorityScore": 60.872,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 1.564,
+      "knownChoWithGiG": 11.73,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "caponata",
+      "priorityScore": 60.626,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 4.18725,
+      "knownChoWithGiG": 9.681875,
+      "inputRowCount": 11,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "janssoninkiusaus-juuriselleri",
+      "priorityScore": 60.568,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 0.716,
+      "knownChoWithGiG": 11.7625,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "harira",
+      "priorityScore": 59.672,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 3.663833,
+      "knownChoWithGiG": 30.035,
+      "inputRowCount": 13,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "lahi-ita-labneh-kulho-zaatarilla",
+      "priorityScore": 59.5,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.25,
+      "knownChoWithGiG": 2.8,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "japanilainen-natto-riisikulho",
+      "priorityScore": 59.17,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.415,
+      "knownChoWithGiG": 39.5,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kung-pao-kana",
+      "priorityScore": 59.067,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 3.4665,
+      "knownChoWithGiG": 6.122,
+      "inputRowCount": 14,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "indonesialainen-bakwan-maissifritter",
+      "priorityScore": 59,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 43.499,
+      "knownChoWithGiG": 1.807,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "intialainen-rava-uttapam",
+      "priorityScore": 59,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 33.12,
+      "knownChoWithGiG": 4.65625,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "japanilainen-yaki-onigiri-misolla",
+      "priorityScore": 59,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 39.5,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "karibia-johnny-cake",
+      "priorityScore": 59,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 38.004,
+      "knownChoWithGiG": 1.44,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "lahi-ita-taatelipuuro-tahinilla",
+      "priorityScore": 59,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 33.6725,
+      "knownChoWithGiG": 7.2,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "malesialainen-roti-jala-currykanalla",
+      "priorityScore": 59,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 38.728,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-baghrir",
+      "priorityScore": 59,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 68.999,
+      "knownChoWithGiG": 8.08,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+      "priorityScore": 59,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 31.86,
+      "knownChoWithGiG": 3.95,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+      "priorityScore": 59,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 69.099,
+      "knownChoWithGiG": 8.08,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+      "priorityScore": 59,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 32.05,
+      "knownChoWithGiG": 9.145,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "thai-maissifritterit",
+      "priorityScore": 59,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 55.654,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "thai-roti-munalla-banaanilla",
+      "priorityScore": 59,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 38.728,
+      "knownChoWithGiG": 11.4375,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+      "priorityScore": 59,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 36.999,
+      "knownChoWithGiG": 8.285,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "priorityScore": 59,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 41.214,
+      "knownChoWithGiG": 1.95,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "carnitas-salaattitacot",
+      "priorityScore": 58.93,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 0.53525,
+      "knownChoWithGiG": 4.78375,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "priorityScore": 58.872,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 7.564,
+      "knownChoWithGiG": 39.95,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "intialainen-masala-dosa",
+      "priorityScore": 58.8,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.1,
+      "knownChoWithGiG": 67.0,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "paprikauunimunakkaat",
+      "priorityScore": 58.689,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.65555,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "meksikolainen-huevos-divorciados",
+      "priorityScore": 58.67,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.165,
+      "knownChoWithGiG": 9.39375,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "korealainen-bindaetteok-aamiaiseksi",
+      "priorityScore": 58.5,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.25,
+      "knownChoWithGiG": 33.375,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "tunisialainen-ojja",
+      "priorityScore": 58.404,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 2.79775,
+      "knownChoWithGiG": 18.55485,
+      "inputRowCount": 11,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "sate-ayam",
+      "priorityScore": 58.329,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 4,
+      "knownChoWithoutGiG": 0.83525,
+      "knownChoWithGiG": 2.4,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "falafel",
+      "priorityScore": 58.28,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 3.86,
+      "knownChoWithGiG": 17.09875,
+      "inputRowCount": 14,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kiinalainen-kevatsipulipannukakku",
+      "priorityScore": 58,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 38.104,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "jiaozi",
+      "priorityScore": 57.47,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 2.765,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 12,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "lahi-ita-manakish-zaatarilla",
+      "priorityScore": 57,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 55.762,
+      "knownChoWithGiG": 2.5,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pizza-margherita",
+      "priorityScore": 57,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 111.1339,
+      "knownChoWithGiG": 3.45,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "uunimakkara-sipulipedilla",
+      "priorityScore": 57,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 11.069,
+      "knownChoWithGiG": 1.2,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "meheva-suklaakakku",
+      "priorityScore": 56.97,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 9.51496,
+      "knownChoWithGiG": 34.25,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "japanilainen-dashimaki-tamago-aamiaislautasella",
+      "priorityScore": 56.96,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.02,
+      "knownChoWithGiG": 39.5,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "priorityScore": 56,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 36.63875,
+      "knownChoWithGiG": 2.37375,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vietnamilainen-banh-cuon-sienilla",
+      "priorityScore": 55,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 39.65,
+      "knownChoWithGiG": 0.15,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "intialainen-idli-kookoschutneylla",
+      "priorityScore": 54.8,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.1,
+      "knownChoWithGiG": 62.35,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "moo-ping-vhh",
+      "priorityScore": 54.563,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 2.218625,
+      "knownChoWithGiG": 0.7,
+      "inputRowCount": 11,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "tabbouleh",
+      "priorityScore": 54.475,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 8.2625,
+      "knownChoWithGiG": 2.76825,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "bouillabaisse",
+      "priorityScore": 54.234,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 3.88275,
+      "knownChoWithGiG": 34.9136,
+      "inputRowCount": 13,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "karibia-maissipuuro-kookoksella",
+      "priorityScore": 54,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 43.989,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kiinalainen-musta-seesamipuuro",
+      "priorityScore": 54,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 10.04,
+      "knownChoWithGiG": 39.95,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "malesialainen-roti-canai-dhalilla",
+      "priorityScore": 54,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 38.663,
+      "knownChoWithGiG": 22.85,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "meksikolainen-atole-maissipuuro",
+      "priorityScore": 54,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 42.425,
+      "knownChoWithGiG": 4.8,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-minttutee-kaurapuuro",
+      "priorityScore": 54,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 38.325,
+      "knownChoWithGiG": 4.8,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "valimerellinen-tahinipuuro",
+      "priorityScore": 54,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 38.075,
+      "knownChoWithGiG": 9.635,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pad-see-ew-vhh-konjac",
+      "priorityScore": 53.683,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 2.6585,
+      "knownChoWithGiG": 1.23,
+      "inputRowCount": 11,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
+      "priorityScore": 53.67,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.165,
+      "knownChoWithGiG": 39.5,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "karibia-ackee-ja-suolakala",
+      "priorityScore": 53.5,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.25,
+      "knownChoWithGiG": 2.15625,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "thai-riisinuudelikeitto-aamuksi",
+      "priorityScore": 53.5,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.25,
+      "knownChoWithGiG": 40.82,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kiinalainen-jianbing-munaletty",
+      "priorityScore": 53,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 37.45,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "koshari",
+      "priorityScore": 53,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 95.912,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 12,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "lohikeitto-kuohukermalla",
+      "priorityScore": 53,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 15.35,
+      "inputRowCount": 2,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "priorityScore": 53,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 46.771,
+      "knownChoWithGiG": 20.69425,
+      "inputRowCount": 12,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "menemen",
+      "priorityScore": 53,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 5.791667,
+      "inputRowCount": 2,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "rogan-josh",
+      "priorityScore": 52.927,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 6,
+      "knownChoWithoutGiG": 1.536625,
+      "knownChoWithGiG": 2.5,
+      "inputRowCount": 14,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kanaviillokki-kukkakaalilla",
+      "priorityScore": 52.514,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 4,
+      "knownChoWithoutGiG": 4.2429,
+      "knownChoWithGiG": 1.45,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "panang-curry-kanalla-vhh",
+      "priorityScore": 52,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 7.70675,
+      "inputRowCount": 3,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "punainen-kanacurry-vhh",
+      "priorityScore": 52,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 7.76,
+      "inputRowCount": 3,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "spanakopita",
+      "priorityScore": 52,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 14.9575,
+      "knownChoWithGiG": 0.731,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "uunikanapasta-kesakurpitsa",
+      "priorityScore": 52,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 6.375,
+      "inputRowCount": 3,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vada-pav",
+      "priorityScore": 52,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 54.9985,
+      "inputRowCount": 3,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "hyderabadi-kanabiryani",
+      "priorityScore": 51.201,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 8,
+      "knownChoWithoutGiG": 1.39925,
+      "knownChoWithGiG": 57.2,
+      "inputRowCount": 16,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "butter-chicken",
+      "priorityScore": 51,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 11.41975,
+      "inputRowCount": 4,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "priorityScore": 51,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 8.8225,
+      "inputRowCount": 4,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "mala-xiang-guo",
+      "priorityScore": 50.825,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.08775,
+      "knownChoWithGiG": 0.7275,
+      "inputRowCount": 12,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "priorityScore": 50.105,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 7.9473,
+      "knownChoWithGiG": 24.182167,
+      "inputRowCount": 14,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "japanilainen-curry-tofulla",
+      "priorityScore": 49.68,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.66,
+      "knownChoWithGiG": 7.1725,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "bibimbap",
+      "priorityScore": 49.351,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.324375,
+      "knownChoWithGiG": 62.09025,
+      "inputRowCount": 13,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "intialainen-mannasuurimoupma",
+      "priorityScore": 49,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 33.707,
+      "knownChoWithGiG": 7.02,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "japanilainen-miso-tofu-paksoi",
+      "priorityScore": 49,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 6.8425,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "mapo-tofu",
+      "priorityScore": 48.571,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.714417,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 13,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "lahi-ita-kikherne-shakshuka",
+      "priorityScore": 48.526,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0.237,
+      "knownChoWithGiG": 10.9875,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "meksikolainen-paputostada-aamupalaksi",
+      "priorityScore": 48.47,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0.265,
+      "knownChoWithGiG": 33.622,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "korealainen-mandu-keitto-aamiaiseksi",
+      "priorityScore": 48.17,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 0.415,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "tortilla-de-patatas",
+      "priorityScore": 47.885,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.0575,
+      "knownChoWithGiG": 23.25,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "priorityScore": 47.864,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 9.068,
+      "knownChoWithGiG": 7.021,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vhh-mustikkapiirakka",
+      "priorityScore": 45.611,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.194375,
+      "knownChoWithGiG": 3.146625,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "uunilohi-smetanakuorrutteella",
+      "priorityScore": 45.609,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0.695462,
+      "knownChoWithGiG": 1.54,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "munakoiso-jauhelihavuoka-vhh",
+      "priorityScore": 45.434,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0.782813,
+      "knownChoWithGiG": 9.65,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "som-tam-vhh-kurkkuna",
+      "priorityScore": 45.267,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0.36675,
+      "knownChoWithGiG": 5.2645,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kanakeitto-pinaatti-sitruuna",
+      "priorityScore": 45.094,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0.453,
+      "knownChoWithGiG": 4.5275,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "priorityScore": 45.072,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0.96385,
+      "knownChoWithGiG": 10.833333,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
+      "priorityScore": 45,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 39.95,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "hapanimela-porsas",
+      "priorityScore": 44.712,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 5.64375,
+      "knownChoWithGiG": 12.1065,
+      "inputRowCount": 14,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "indonesialainen-tempeh-munakulho",
+      "priorityScore": 44.67,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.165,
+      "knownChoWithGiG": 42.25,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "korealainen-bataatti-riisikulho",
+      "priorityScore": 44.67,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.165,
+      "knownChoWithGiG": 50.4395,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "munatacot-huevos-rancheros",
+      "priorityScore": 44.166,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.917018,
+      "knownChoWithGiG": 2.625,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "meksikolainen-chilaquiles-verdes",
+      "priorityScore": 43.67,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.165,
+      "knownChoWithGiG": 29.1475,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "priorityScore": 43.5,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.25,
+      "knownChoWithGiG": 21.4,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "priorityScore": 42.94,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.03,
+      "knownChoWithGiG": 6.32,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kimchi-jjigae",
+      "priorityScore": 42.825,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 5,
+      "knownChoWithoutGiG": 1.0875,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "priorityScore": 42.645,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.177517,
+      "knownChoWithGiG": 8.466667,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "marjainen-chiavanukas",
+      "priorityScore": 42.475,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.2625,
+      "knownChoWithGiG": 3.43075,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "priorityScore": 42.406,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 0.79705,
+      "knownChoWithGiG": 2.5625,
+      "inputRowCount": 11,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "sichuan-hot-pot",
+      "priorityScore": 42.319,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 1.84025,
+      "knownChoWithGiG": 0.15,
+      "inputRowCount": 14,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "ketopizza-pofiber-pohjalla",
+      "priorityScore": 42.05,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.975,
+      "knownChoWithGiG": 2.3625,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "parsakaali-sinihomejuustofrittata",
+      "priorityScore": 41.791,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.6045,
+      "knownChoWithGiG": 1.9075,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "italian-pata",
+      "priorityScore": 41.607,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.69655,
+      "knownChoWithGiG": 4.225,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "malesialainen-kuih-seri-muka",
+      "priorityScore": 41.542,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.729,
+      "knownChoWithGiG": 39.5,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "massaman-curry-kanalla-vhh",
+      "priorityScore": 41.48,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 3.76,
+      "knownChoWithGiG": 8.92625,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pellava-puuro-pahkinoilla",
+      "priorityScore": 41.26,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.37,
+      "knownChoWithGiG": 4.0475,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "valimerellinen-tortilla-espanola-aamupalaksi",
+      "priorityScore": 41.03,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.485,
+      "knownChoWithGiG": 4.65,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
+      "priorityScore": 40.872,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.564,
+      "knownChoWithGiG": 42.77,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "keto-kauralesesampylat",
+      "priorityScore": 40.591,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 2.204312,
+      "knownChoWithGiG": 1.30125,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "munakoiso-kesakurpitsalasagne",
+      "priorityScore": 40,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 15,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 15,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vietnamilainen-xoi-maapahkinalla",
+      "priorityScore": 40,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 6.7,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "hernekeitto-savupotkalla",
+      "priorityScore": 39.98,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.01,
+      "knownChoWithGiG": 34.5215,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "masala-dosa",
+      "priorityScore": 39.28,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 1.36,
+      "knownChoWithGiG": 60.8,
+      "inputRowCount": 13,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kaakao-kookos-chia",
+      "priorityScore": 39.04,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.98,
+      "knownChoWithGiG": 0.725,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "baozi",
+      "priorityScore": 39,
+      "existingCalculation": true,
+      "nonGiCandidate": false,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 76.3425,
+      "knownChoWithGiG": 3.60075,
+      "inputRowCount": 11,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "priorityScore": 39,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0,
+      "knownChoWithGiG": 114.575,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pad-thai-vhh-konjac",
+      "priorityScore": 38.728,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 1.63575,
+      "knownChoWithGiG": 5.2425,
+      "inputRowCount": 13,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "chili-con-carne-kukkakaaliriisi",
+      "priorityScore": 38.655,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 3.1725,
+      "knownChoWithGiG": 14.7,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "dal-makhani",
+      "priorityScore": 38.54,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 5,
+      "knownChoWithoutGiG": 1.73025,
+      "knownChoWithGiG": 6.502,
+      "inputRowCount": 13,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "japanilainen-okayu-umeboshipluumulla",
+      "priorityScore": 38.5,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.25,
+      "knownChoWithGiG": 39.95,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "taytetyt-paprikat-vhh",
+      "priorityScore": 38.494,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 0.752812,
+      "knownChoWithGiG": 1.29375,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "paneer-tikka",
+      "priorityScore": 38.18,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 3.41,
+      "knownChoWithGiG": 6.175,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kana-fajita-pelti",
+      "priorityScore": 37.95,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.525018,
+      "knownChoWithGiG": 0.725,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pho-bo",
+      "priorityScore": 37.9,
+      "existingCalculation": false,
+      "nonGiCandidate": true,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 1.550167,
+      "knownChoWithGiG": 56.424667,
+      "inputRowCount": 14,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "karibia-plantain-aamiaislautanen",
+      "priorityScore": 37.746,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.627,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "ratatouille",
+      "priorityScore": 37.436,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 3.281938,
+      "knownChoWithGiG": 11.85,
+      "inputRowCount": 11,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "keltainen-kanacurry-vhh",
+      "priorityScore": 37.064,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 3.96775,
+      "knownChoWithGiG": 4.1025,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "raejuusto-uunimunakas",
+      "priorityScore": 36.775,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.6125,
+      "knownChoWithGiG": 2.9375,
+      "inputRowCount": 7,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "tunisialainen-brik",
+      "priorityScore": 36.55,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.225,
+      "knownChoWithGiG": 0.48125,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pad-kee-mao-vhh-konjac",
+      "priorityScore": 36.361,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 3.3195,
+      "knownChoWithGiG": 1.89675,
+      "inputRowCount": 12,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "tom-yum-goong-vhh",
+      "priorityScore": 34.93,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 1.535,
+      "knownChoWithGiG": 3.371005,
+      "inputRowCount": 12,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "paistettu-maksa-pekonilla",
+      "priorityScore": 34.668,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 7.166,
+      "knownChoWithGiG": 0.725,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "khao-soi-vhh-konjac",
+      "priorityScore": 34.414,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 4.293,
+      "knownChoWithGiG": 2.315,
+      "inputRowCount": 12,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "shakshuka",
+      "priorityScore": 34.25,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 4.875,
+      "knownChoWithGiG": 3.5,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "maksalaatikko-kukkakaalilla",
+      "priorityScore": 33.785,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 6.10725,
+      "knownChoWithGiG": 6.3125,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "priorityScore": 33.67,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 0.165,
+      "knownChoWithGiG": 35.6,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "aloo-paratha",
+      "priorityScore": 33,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 55.4985,
+      "knownChoWithGiG": 15.5,
+      "inputRowCount": 2,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "goi-cuon",
+      "priorityScore": 32.8,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 0.6,
+      "knownChoWithGiG": 34.1,
+      "inputRowCount": 11,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "chole-bhature",
+      "priorityScore": 32,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 64.74825,
+      "knownChoWithGiG": 38.25,
+      "inputRowCount": 3,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "samosa",
+      "priorityScore": 32,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 55.4985,
+      "knownChoWithGiG": 17.87375,
+      "inputRowCount": 3,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "gulab-jamun",
+      "priorityScore": 31.5,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 9.24975,
+      "knownChoWithGiG": 83.9285,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "dim-sum",
+      "priorityScore": 30.99,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 2.005,
+      "knownChoWithGiG": 2.565,
+      "inputRowCount": 10,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+      "priorityScore": 30.872,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 1.564,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pani-puri",
+      "priorityScore": 30,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 27.5499,
+      "knownChoWithGiG": 22.53,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vietnamilainen-banh-bao-kananmunalla",
+      "priorityScore": 30,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 0,
+      "knownChoWithoutGiG": 38.019,
+      "knownChoWithGiG": 0.0225,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "tom-kha-gai-vhh",
+      "priorityScore": 29.478,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 4.261,
+      "knownChoWithGiG": 0.68375,
+      "inputRowCount": 12,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "vhh-pyttipannu",
+      "priorityScore": 29.238,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 0.881,
+      "knownChoWithGiG": 4.5025,
+      "inputRowCount": 9,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kana-tagine-sitruunalla",
+      "priorityScore": 25.469,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 4,
+      "knownChoWithoutGiG": 1.2655,
+      "knownChoWithGiG": 0.44,
+      "inputRowCount": 12,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kiinalainen-bao-munalla",
+      "priorityScore": 25,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 37.164,
+      "knownChoWithGiG": 2.8,
+      "inputRowCount": 5,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "kiinalainen-katkarapu-wontonkeitto",
+      "priorityScore": 24.815,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 7.0925,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "idli-sambar",
+      "priorityScore": 24.68,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 5,
+      "knownChoWithoutGiG": 0.66,
+      "knownChoWithGiG": 74.214625,
+      "inputRowCount": 14,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "karibia-saltfish-fritterit",
+      "priorityScore": 24,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 37.499,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "korealainen-kimchi-jeon-aamiaiseksi",
+      "priorityScore": 24,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 37.414,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 6,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "palak-paneer",
+      "priorityScore": 23.807,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 1.596625,
+      "knownChoWithGiG": 3.4125,
+      "inputRowCount": 13,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "lanzhou-naudanliha-nuudelikeitto",
+      "priorityScore": 18,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 1,
+      "knownChoWithoutGiG": 60.83,
+      "knownChoWithGiG": 0.0765,
+      "inputRowCount": 12,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "pekingin-ankka",
+      "priorityScore": 15.515,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 8.2425,
+      "knownChoWithGiG": 1.4,
+      "inputRowCount": 8,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "jauheliha-makaronilaatikko",
+      "priorityScore": 11,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 2,
+      "knownChoWithoutGiG": 34.4665,
+      "knownChoWithGiG": 2.7625,
+      "inputRowCount": 14,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    },
+    {
+      "recipeId": "roujiamo",
+      "priorityScore": 8,
+      "existingCalculation": false,
+      "nonGiCandidate": false,
+      "missingChoRows": 3,
+      "knownChoWithoutGiG": 57.1085,
+      "knownChoWithGiG": 0,
+      "inputRowCount": 12,
+      "note": "Known amounts only; missing CHO is counted separately, never treated as zero. Legacy GI bindings/omissions are screening signals, not source approval."
+    }
+  ]
+}
