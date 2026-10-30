@@ -1,0 +1,174 @@
+{
+  "arithmetic": "Python Decimal precision 40, independent of TypeScript",
+  "recipes": [
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "inputHash": "d88a5f93d02767831929b53d52958bb8695896c6d6ed2353e55b16a91d5abf72",
+      "scenarios": [
+        {
+          "id": "weighed-parmesan-version",
+          "macros": {
+            "availableCarbohydrate": 2.88225,
+            "protein": 38.00015,
+            "fat": 27.348625,
+            "fibre": 2.403625
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 1,
+              "carbohydrate": 1.23,
+              "gk": 0.492
+            },
+            {
+              "index": 2,
+              "carbohydrate": 1.45,
+              "gk": 0.493
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.075,
+              "gk": 0.0375
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.028,
+              "gk": 0.00952
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.051,
+              "gk": 0.0204
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.04825,
+              "gk": 0.024125
+            },
+            {
+              "index": 8,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 1.076545,
+          "wholeGk": 1.076545,
+          "wholeCarbohydrate": 2.88225,
+          "imputedImpact": 0.574025
+        }
+      ]
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "inputHash": "366080268bcd4d6bee55492fab2041ed6a3cb3ecff8a601cecf9454d32d409a5",
+      "scenarios": [
+        {
+          "id": "weighed-yellow-onion-version",
+          "macros": {
+            "availableCarbohydrate": 2.898,
+            "protein": 27.832025,
+            "fat": 26.571875,
+            "fibre": 1.629125
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.5,
+              "gk": 0.25
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.66,
+              "gk": 0.264
+            },
+            {
+              "index": 3,
+              "carbohydrate": 1.45,
+              "gk": 0.493
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.075,
+              "gk": 0.0375
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.13125,
+              "gk": 0.065625
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.028,
+              "gk": 0.00952
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.0055,
+              "gk": 0.00275
+            },
+            {
+              "index": 8,
+              "carbohydrate": 0.04825,
+              "gk": 0.024125
+            },
+            {
+              "index": 9,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 1.14652,
+          "wholeGk": 1.14652,
+          "wholeCarbohydrate": 2.898,
+          "imputedImpact": 0.644
+        }
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "default50Cho": 0.12325,
+      "default50Contribution": 0.061625,
+      "dairyCho": 1.478,
+      "hypotheticalAllDefault100": 1.13817,
+      "hypotheticalAllDefault150": 1.199795,
+      "milk30Comparator": 1.017425,
+      "milk46Comparator": 1.253905,
+      "allLabelProxyRemovedAtFixedAssignedGi": 1.039045,
+      "numericRangeClaim": false,
+      "biologicalBoundEstablished": false,
+      "coverageEligible": false,
+      "note": "Diagnostics are not uncertainty intervals. Milk choices vary jointly for cream and butter. Removing label CHO diagnoses the proxy assumption, not a zero-CHO ingredient claim."
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "default50Cho": 0.76,
+      "default50Contribution": 0.38,
+      "dairyCho": 1.478,
+      "hypotheticalAllDefault100": 1.52652,
+      "hypotheticalAllDefault150": 1.90652,
+      "milk30Comparator": 1.0874,
+      "milk46Comparator": 1.32388,
+      "allLabelProxyRemovedAtFixedAssignedGi": 1.043395,
+      "numericRangeClaim": false,
+      "biologicalBoundEstablished": false,
+      "coverageEligible": false,
+      "note": "Diagnostics are not uncertainty intervals. Milk choices vary jointly for cream and butter. Removing label CHO diagnoses the proxy assumption, not a zero-CHO ingredient claim."
+    }
+  ]
+}

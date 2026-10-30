@@ -1,0 +1,120 @@
+{
+  "records": [
+    {
+      "id": "vegetable-imputation40",
+      "gi": 40,
+      "scale": "GLUCOSE_100",
+      "family": "low-carb-vegetable",
+      "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+      "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+      "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+      "location": "Conclusions: assignment discussion",
+      "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+      "confidence": "LOW",
+      "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+      "newRecordInRun2": true,
+      "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+    },
+    {
+      "id": "schakel-default50",
+      "gi": 50,
+      "scale": "GLUCOSE_100",
+      "family": "low-cho-default",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+      "accessMethod": "Author presentation mirrored by Semantic Scholar, slide 12 visually checked; publisher results snippet independently confirms default 50. Full journal article not accessed.",
+      "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+      "originalStudy": "Schakel, Schauer, Himes, Harnack, Van Heel, 2008. J Food Comp Anal 21 Suppl S50-S55.",
+      "confidence": "LOW",
+      "food": "Published default for low-carbohydrate foods; not measured GI of any selected ingredient",
+      "limitations": "The authors describe 50 as a coding default. It is not a biological midpoint, maximum, uncertainty bound or product test. Black pepper at 38.6 g CHO/100 g is NOT a low-carbohydrate food: applying the same default to its fixed 0.5 g recipe portion is a separate explicit project extension.",
+      "allowedRecipeIds": [
+        "kana-parmesaanipannu-parsakaali",
+        "kermainen-kanasienipannu"
+      ],
+      "allowedUse": "Only reviewed explicit bindings in this two-recipe draft; no global fallback.",
+      "evidenceHash": "8a55ad7d7c338f3081af35cae72813091b0991f2196c2d6e14013dcc8b7027e6"
+    },
+    {
+      "id": "milk30",
+      "gi": 30,
+      "scale": "GLUCOSE_100",
+      "family": "plain-dairy",
+      "food": "Full-fat cow milk 30",
+      "preparation": "pasteurized full-fat milk",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "originalStudy": "Sydney UO5 2018",
+      "location": "Table1 row937 p63",
+      "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "accessMethod": "Original supplement document retrieved from a third-party mirror; not publisher-host access",
+      "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "referenceFood": "Glucose",
+      "statisticalUncertainty": {
+        "kind": "SEM",
+        "value": 3,
+        "usedAsRecipeRange": false
+      },
+      "participants": 13,
+      "limitations": "Application to residual lactose in plain cheese/butter is a LOW mechanistic analogy: same lactose, different fermented/solid fat-protein matrix; not measured cheese GI or a proven bound.",
+      "confidence": "LOW",
+      "allowedUse": "Only explicit food/preparation matches or separately reasoned ingredient analogies; no automatic family default",
+      "newRecord": true,
+      "evidenceHash": "c1ffbc72f69c337bcb024399da00e2f2724309598b487a8162f28cdad70d87c8"
+    },
+    {
+      "id": "milk34",
+      "gi": 34,
+      "scale": "GLUCOSE_100",
+      "family": "plain-dairy",
+      "food": "Full-fat cow milk 34",
+      "preparation": "pasteurized full-fat milk",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "originalStudy": "Henry 2005 DOI 10.1079/BJN20051594",
+      "location": "Table1 row938 p63",
+      "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "accessMethod": "Original supplement document retrieved from a third-party mirror; not publisher-host access",
+      "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "referenceFood": "Glucose",
+      "statisticalUncertainty": {
+        "kind": "SEM",
+        "value": 6,
+        "usedAsRecipeRange": false
+      },
+      "participants": 9,
+      "limitations": "Application to residual lactose in plain cheese/butter is a LOW mechanistic analogy: same lactose, different fermented/solid fat-protein matrix; not measured cheese GI or a proven bound.",
+      "confidence": "LOW",
+      "allowedUse": "Only explicit food/preparation matches or separately reasoned ingredient analogies; no automatic family default",
+      "newRecord": true,
+      "evidenceHash": "f49f48c2edbdb5cd567dcfc0d3be114a26eda4cd94294cbed113bc5dff7f35e3"
+    },
+    {
+      "id": "milk46",
+      "gi": 46,
+      "scale": "GLUCOSE_100",
+      "family": "plain-dairy",
+      "food": "Full-fat cow milk 46",
+      "preparation": "pasteurized full-fat milk",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "originalStudy": "Henry 2005 DOI 10.1079/BJN20051594",
+      "location": "Table1 row939 p63",
+      "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "accessMethod": "Original supplement document retrieved from a third-party mirror; not publisher-host access",
+      "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "referenceFood": "Glucose",
+      "statisticalUncertainty": {
+        "kind": "SEM",
+        "value": 10,
+        "usedAsRecipeRange": false
+      },
+      "participants": 10,
+      "limitations": "Application to residual lactose in plain cheese/butter is a LOW mechanistic analogy: same lactose, different fermented/solid fat-protein matrix; not measured cheese GI or a proven bound.",
+      "confidence": "LOW",
+      "allowedUse": "Only explicit food/preparation matches or separately reasoned ingredient analogies; no automatic family default",
+      "newRecord": true,
+      "evidenceHash": "24ff79847ea787136b7032e1bdd59f731a3bd78337149d780b2b6821f8b0ce99"
+    }
+  ]
+}
