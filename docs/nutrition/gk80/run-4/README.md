@@ -119,5 +119,9 @@ Tätä seuraavaa vaihetta ei käynnistetä automaattisesti.
 Paikallinen varmennus:210/210 yksikkötestiä PASS, mukana seitsemän AJO4-testiä.
 Decimal toisti kaikki50 syötettä,26 numeerista tulosta ja neljä makroa.
 Kaikki326 vanhaa täydellistä GK-tulosobjektia ja549 suojattua lähdetiedostoa
-säilyivät. Markdownlint881 tiedostoa,0 virhettä. GitHub CI seurataan
+säilyivät. Markdownlint882 tiedostoa,0 virhettä. GitHub CI seurataan
 Draftin täsmällisellä HEADilla; tuloslinkit ovat AJO4 ReportHub-handoffissa.
+
+Neljän uuden koostumustyypin tuore virallinen AFCD-työkirjavarmennus on
+source-verification.md:ssä ja afcd-primary-verification.json-tiedostossa.
+Per100g ja API:n oletusper100mL erotettiin; makrot ja GK-luvut säilyivät.
