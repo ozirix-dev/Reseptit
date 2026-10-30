@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-30",
+  "status": "DRAFT_REVIEW",
+  "records": [
+    {
+      "id": "chicken",
+      "name": "Kivikylän Sooci Paahdettu kanaliemi",
+      "market": "Finland",
+      "ean": "6406300045026",
+      "package": "1 l",
+      "state": "READY_TO_USE_UNDILUTED",
+      "nutritionBasis": {
+        "amount": "100",
+        "unit": "g"
+      },
+      "declaredPer100": {
+        "carbohydrate": "0.2",
+        "protein": "3",
+        "fat": "0.1",
+        "fibre": "1.1"
+      },
+      "sugarsPer100": "0.2",
+      "saltPer100": "0.2",
+      "carbohydrateDefinition": "EU_LABEL_CARBOHYDRATE_EXCLUDES_FIBRE_INCLUDES_ANY_POLYOLS",
+      "polyolsPer100": null,
+      "availableCarbohydrateExcludingPolyolsPer100": null,
+      "zeroValuesAreLabelDeclarations": true,
+      "gi": null,
+      "giStatus": "NO_APPLICABLE_HUMAN_GI_IDENTIFIED",
+      "source": {
+        "id": "chicken",
+        "url": "https://www.kivikylan.fi/tuotteet/paahdettu-kanaliemi/",
+        "fetchedAt": "2026-10-30T14:48:39.953118+00:00",
+        "sha256": "808da7706220d51886c7bfcd0c4b3492df138c0a18bcdc8e3b4ed0f2baadfe10"
+      },
+      "ingredientsSummary": "Broilerista, kasviksista, sienistä ja yrteistä keitetty liemi; mukana suola. Ei ilmoitettua lisättyä sokeria tai tärkkelystä.",
+      "limitations": [
+        "Valmistajan arvot per 100 g, ei per 100 ml.",
+        "Suunnitellussa versiossa liemi punnitaan. Millilitrojen ja grammojen vastaavuutta ei väitetä.",
+        "Sokerien keskinäisiä osuuksia tai polyoleja ei ilmoiteta. Sokereiden ja CHO:n sama pyöristetty luku ei todista tarkkaa koostumusta."
+      ],
+      "reviewState": "PROPOSED_PRODUCT_BINDING_NOT_APPROVED",
+      "evidenceHash": "0bf62bf8c72b500b4065e6d5edca16965b33319938d994a9a92a575d8db6e051"
+    },
+    {
+      "id": "beef",
+      "name": "Kivikylän Sooci Paahdettu lihaliemi",
+      "market": "Finland",
+      "ean": "6406300045002",
+      "package": "1 l",
+      "state": "READY_TO_USE_UNDILUTED",
+      "nutritionBasis": {
+        "amount": "100",
+        "unit": "g"
+      },
+      "declaredPer100": {
+        "carbohydrate": "0.7",
+        "protein": "5.3",
+        "fat": "0.1",
+        "fibre": "1"
+      },
+      "sugarsPer100": "0.5",
+      "saltPer100": "0.2",
+      "carbohydrateDefinition": "EU_LABEL_CARBOHYDRATE_EXCLUDES_FIBRE_INCLUDES_ANY_POLYOLS",
+      "polyolsPer100": null,
+      "availableCarbohydrateExcludingPolyolsPer100": null,
+      "zeroValuesAreLabelDeclarations": true,
+      "gi": null,
+      "giStatus": "NO_APPLICABLE_HUMAN_GI_IDENTIFIED",
+      "source": {
+        "id": "beef",
+        "url": "https://www.kivikylan.fi/tuotteet/paahdettu-lihaliemi/",
+        "fetchedAt": "2026-10-30T14:48:41.527592+00:00",
+        "sha256": "352bf5941dba8ba73f2bdfe8919a625cc9b5e9e557de450cf1f8aef2527f438d"
+      },
+      "ingredientsSummary": "Naudanluista, kasviksista, sienistä ja yrteistä keitetty liemi; mukana suola. Ei ilmoitettua lisättyä sokeria tai tärkkelystä.",
+      "limitations": [
+        "Arvot per 100 g; käytetään punnittua käyttövalmista lientä.",
+        "CHO:n ja sokerien ilmoitettujen lukujen erotus 0,2 g ei yksilöi tärkkelystä eikä muuta hiilihydraattilajia."
+      ],
+      "reviewState": "PROPOSED_PRODUCT_BINDING_NOT_APPROVED",
+      "evidenceHash": "46784cd03622268a96f01c180d350e291a88fe0e91b20ba70239586381dd74d2"
+    },
+    {
+      "id": "soy",
+      "name": "Kikkoman luonnollisesti valmistettu soijakastike, tavallinen",
+      "market": "Finland",
+      "ean": null,
+      "package": "1 l",
+      "state": "READY_TO_USE_UNDILUTED",
+      "nutritionBasis": {
+        "amount": "100",
+        "unit": "ml"
+      },
+      "declaredPer100": {
+        "carbohydrate": "3.2",
+        "protein": "10",
+        "fat": "0",
+        "fibre": null
+      },
+      "sugarsPer100": "0.6",
+      "saltPer100": "16.9",
+      "carbohydrateDefinition": "EU_LABEL_CARBOHYDRATE_EXCLUDES_FIBRE_INCLUDES_ANY_POLYOLS",
+      "polyolsPer100": null,
+      "availableCarbohydrateExcludingPolyolsPer100": null,
+      "zeroValuesAreLabelDeclarations": true,
+      "gi": null,
+      "giStatus": "NO_APPLICABLE_HUMAN_GI_IDENTIFIED",
+      "source": {
+        "id": "kikkoman",
+        "url": "https://www.kikkoman.fi/ammattikeittioet/tuotteet/detail/kikkoman-luonnollisesti-valmistettu-soijakastike",
+        "fetchedDate": "2026-10-30",
+        "sha256": "1daec269b19bdff487413fa10053c545e0df2d54f4caed87655fde2e0c231a5b"
+      },
+      "ingredientsSummary": "Vesi, soijapapu, vehnä ja suola; fermentoitu. Ei tamari, vähäsuolainen, makea tai teollisuuden standard-tuote.",
+      "limitations": [
+        "Valmistajan Suomen kuluttaja-/ammattikeittiösivu kattaa 1 l pakkauksen. EANia ei päätellä toisesta tuotteesta.",
+        "Arvot per 100 ml: 60 ml lasketaan suoraan ilman tiheyttä.",
+        "Ravintokuitua ei ilmoiteta tällä valmistajan sivulla; se pysyy null-arvona.",
+        "Fermentoidun kastikkeen GI:tä ei johdeta soijapavun tai vehnän GI:stä."
+      ],
+      "reviewState": "PROPOSED_PRODUCT_BINDING_NOT_APPROVED",
+      "evidenceHash": "f101739c6e47f14ad097a79d4f0f769b8e884670f782aa6b2d0dc26d9f1115f2"
+    },
+    {
+      "id": "fish",
+      "name": "Santa Maria Fish Sauce",
+      "market": "Finland",
+      "ean": "7311310035280",
+      "package": "200 ml",
+      "state": "READY_TO_USE_UNDILUTED",
+      "nutritionBasis": {
+        "amount": "100",
+        "unit": "g"
+      },
+      "declaredPer100": {
+        "carbohydrate": "3",
+        "protein": "6",
+        "fat": "0",
+        "fibre": "0"
+      },
+      "sugarsPer100": "3",
+      "saltPer100": "22",
+      "carbohydrateDefinition": "EU_LABEL_CARBOHYDRATE_EXCLUDES_FIBRE_INCLUDES_ANY_POLYOLS",
+      "polyolsPer100": null,
+      "availableCarbohydrateExcludingPolyolsPer100": null,
+      "zeroValuesAreLabelDeclarations": true,
+      "gi": null,
+      "giStatus": "NO_APPLICABLE_HUMAN_GI_IDENTIFIED",
+      "source": {
+        "id": "fish-dabas",
+        "url": "https://www.dabas.com/productsheet/07311310035280",
+        "fetchedAt": "2026-10-30T14:48:42.593316+00:00",
+        "sha256": "0c64eea37d694ec5ffc97e70337abcf87a01653ef0ca1e724b821d2bdb4503f1"
+      },
+      "ingredientsSummary": "Anjovisuute 60 %, suola, lisätty sokeri ja sitruunahappo.",
+      "limitations": [
+        "Santa Maria AB:n Dabas-tietue: Ruotsin markkina, sama GTIN; Suomen valmistajasivun JSON-LD vahvistaa makrot, Suomen jälleenmyyjä vahvistaa EANin ja 100 g perustan.",
+        "Dabas-version voimaantulopäivä 2016-12-12; luettu 2026-10-30. Pakkauksen uusinta erää ei nähty.",
+        "Punnitut 54 g ja 72 g ovat reseptiehdotuksen määritelmä. Pakkaustiedoista 450 g brutto − 210 g pakkaus / 200 ml johdettu 1,2 g/ml on vain nimellinen suunnittelutuki, ei mitattu tiheys.",
+        "Lisätty sokeri ei todista kaiken ilmoitetun sokerin olevan sakkaroosia; GI 65:tä ei nimetä mitatuksi kalakastikkeen GI:ksi."
+      ],
+      "reviewState": "PROPOSED_PRODUCT_BINDING_NOT_APPROVED",
+      "corroboration": [
+        {
+          "id": "santa-fish",
+          "url": "https://www.santamariaworld.com/fi/tuotteet/fish-sauce/",
+          "fetchedDate": "2026-10-30",
+          "sha256": "64fe37ff52a0bb12f756b2985a1842d6ec471473aad52f6a9c62985665cf0d25"
+        },
+        {
+          "url": "https://www.s-kaupat.fi/tuote/santa-maria-kalakastike-200-ml/7311310035280",
+          "role": "Retail identity and serving-basis cross-check only; manufacturer macro facts remain primary",
+          "accessed": "2026-10-30"
+        }
+      ],
+      "evidenceHash": "0eb7e712c10977b9608e2b4aa18e39f35000b36d02f6bb7f24602df1fb3370b0"
+    }
+  ]
+}
