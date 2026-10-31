@@ -152,7 +152,14 @@
     "F182": "RICE_FLOUR",
     "F162": "POTATO_STARCH",
     "F34255": "FISH",
-    "A003269": "DAIRY"
+    "A003269": "DAIRY",
+    "A000430": "NONSTARCHY_VEGETABLE",
+    "A006110": "WHOLE_PEANUT",
+    "N01301": "DAIRY",
+    "F707": "NAMED_LOW_CHO",
+    "F34190": "NAMED_LOW_CHO",
+    "A002970": "GROUND_SPICE",
+    "A006118": "GROUND_SPICE"
   },
   "sourceRules": {
     "vegetable-imputation40": {
@@ -521,6 +528,38 @@
         "CORN_TORTILLA"
       ],
       "consumedForm": "FINISHED_CORN_TORTILLA_BRIEFLY_HEATED"
+    },
+    "lowcho50-r6": {
+      "foodKinds": [
+        "NONSTARCHY_VEGETABLE",
+        "COCONUT_MILK",
+        "COCONUT_FLESH",
+        "SOY_DRINK",
+        "SOY_SAUCE",
+        "FISH_SAUCE",
+        "TAHINI",
+        "CITRUS_JUICE",
+        "CITRUS_FRUIT",
+        "NAMED_LOW_CHO",
+        "EGG",
+        "STOCK",
+        "AVOCADO"
+      ],
+      "consumedForm": "AS_DEFINED"
+    },
+    "small-flavour50-r6": {
+      "foodKinds": [
+        "GROUND_SPICE",
+        "WHOLE_SEED",
+        "VANILLA_EXTRACT"
+      ],
+      "consumedForm": "AS_DEFINED"
+    },
+    "whole-peanut13-r6": {
+      "foodKinds": [
+        "WHOLE_PEANUT"
+      ],
+      "consumedForm": "whole roasted peanuts; preparation-unspecified human comparator LOW analogy, no peanut butter or flour"
     }
   },
   "aliases": [
@@ -3570,6 +3609,486 @@
       ],
       "consumedForms": {
         "dairy-imputation30": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F34611-r6",
+      "foodId": "F34611",
+      "foodKind": "YOGURT",
+      "inputForm": "JOGURTTI, MAUSTAMATON, KREIKKALAINEN, RASVAA 7 %, LAKTOOSITON",
+      "allowedSources": [
+        "dairy-imputation30"
+      ],
+      "consumedForms": {
+        "dairy-imputation30": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F11557-r6",
+      "foodId": "F11557",
+      "foodKind": "CITRUS_JUICE",
+      "inputForm": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+      "allowedSources": [
+        "lowcho50-r6"
+      ],
+      "consumedForms": {
+        "lowcho50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A003190-r6",
+      "foodId": "A003190",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "Coriander seed, dried, ground",
+      "allowedSources": [
+        "small-flavour50-r6"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A003327-r6",
+      "foodId": "A003327",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "Cumin (cummin) seed, dried, ground",
+      "allowedSources": [
+        "small-flavour50-r6"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A002963-r6",
+      "foodId": "A002963",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "Cinnamon, dried, ground",
+      "allowedSources": [
+        "small-flavour50-r6"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A002258-r6",
+      "foodId": "A002258",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "Cardamom seed, dried, ground",
+      "allowedSources": [
+        "small-flavour50-r6"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A002970-r6",
+      "foodId": "A002970",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "Cloves, dried, ground",
+      "allowedSources": [
+        "small-flavour50-r6"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A006618-r6",
+      "foodId": "A006618",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "Pepper, black, ground",
+      "allowedSources": [
+        "small-flavour50-r6"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F500-r6",
+      "foodId": "F500",
+      "foodKind": "DAIRY",
+      "inputForm": "VOI",
+      "allowedSources": [
+        "dairy-imputation30"
+      ],
+      "consumedForms": {
+        "dairy-imputation30": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F335-r6",
+      "foodId": "F335",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "SIPULI, KELTASIPULI",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A004193-r6",
+      "foodId": "A004193",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "Garlic, peeled, fresh, raw",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A004213-r6",
+      "foodId": "A004213",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "Ginger, peeled, fresh, raw",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F398-r6",
+      "foodId": "F398",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "TOMAATTIMURSKA",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F631-r6",
+      "foodId": "F631",
+      "foodKind": "DAIRY",
+      "inputForm": "KERMA, KUOHUKERMA, RASVAA 38 %",
+      "allowedSources": [
+        "dairy-imputation30"
+      ],
+      "consumedForms": {
+        "dairy-imputation30": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A006316-r6",
+      "foodId": "A006316",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "Paprika, dry powder",
+      "allowedSources": [
+        "small-flavour50-r6"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A004380-r6",
+      "foodId": "A004380",
+      "foodKind": "HONEY",
+      "inputForm": "Honey",
+      "allowedSources": [
+        "honey-category-mean-gi-55-2002"
+      ],
+      "consumedForms": {
+        "honey-category-mean-gi-55-2002": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A003192-r6",
+      "foodId": "A003192",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "Coriander, fresh, raw",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A008761-r6",
+      "foodId": "A008761",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "Spinach, Mature English, fresh, raw",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A009335-r6",
+      "foodId": "A009335",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "Turmeric, dried, ground",
+      "allowedSources": [
+        "small-flavour50-r6"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F346-r6",
+      "foodId": "F346",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "KURKKU",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F352-r6",
+      "foodId": "F352",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "TOMAATTI",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A000430-r6",
+      "foodId": "A000430",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "Bean, green, fresh, boiled, drained",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A006110-r6",
+      "foodId": "A006110",
+      "foodKind": "WHOLE_PEANUT",
+      "inputForm": "Nut, peanut, without skin, roasted, with oil, unsalted",
+      "allowedSources": [
+        "whole-peanut13-r6"
+      ],
+      "consumedForms": {
+        "whole-peanut13-r6": "whole roasted peanuts; preparation-unspecified human comparator LOW analogy, no peanut butter or flour"
+      }
+    },
+    {
+      "compositionId": "A002896-r6",
+      "foodId": "A002896",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "Chilli (chili), green, raw",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A004729-r6",
+      "foodId": "A004729",
+      "foodKind": "CITRUS_JUICE",
+      "inputForm": "Juice, lime",
+      "allowedSources": [
+        "lowcho50-r6"
+      ],
+      "consumedForms": {
+        "lowcho50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A008004-r6",
+      "foodId": "A008004",
+      "foodKind": "FISH_SAUCE",
+      "inputForm": "Sauce, fish, commercial",
+      "allowedSources": [
+        "lowcho50-r6"
+      ],
+      "consumedForms": {
+        "lowcho50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F858-r6",
+      "foodId": "F858",
+      "foodKind": "EGG",
+      "inputForm": "KANANMUNA, KUORETON",
+      "allowedSources": [
+        "lowcho50-r6"
+      ],
+      "consumedForms": {
+        "lowcho50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F386-r6",
+      "foodId": "F386",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "PAPRIKA, PUNAINEN",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A002991-r6",
+      "foodId": "A002991",
+      "foodKind": "COCONUT_MILK",
+      "inputForm": "Coconut, milk, canned, regular fat",
+      "allowedSources": [
+        "lowcho50-r6"
+      ],
+      "consumedForms": {
+        "lowcho50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A008065-r6",
+      "foodId": "A008065",
+      "foodKind": "SOY_SAUCE",
+      "inputForm": "Sauce, soy, commercial",
+      "allowedSources": [
+        "lowcho50-r6"
+      ],
+      "consumedForms": {
+        "lowcho50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A005199-r6",
+      "foodId": "A005199",
+      "foodKind": "CITRUS_FRUIT",
+      "inputForm": "Lime, peeled, raw",
+      "allowedSources": [
+        "lowcho50-r6"
+      ],
+      "consumedForms": {
+        "lowcho50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F7600-r6",
+      "foodId": "F7600",
+      "foodKind": "NAMED_LOW_CHO",
+      "inputForm": "NAKKI, KEITETTY",
+      "allowedSources": [
+        "lowcho50-r6"
+      ],
+      "consumedForms": {
+        "lowcho50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F322-r6",
+      "foodId": "F322",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "KUKKAKAALI",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A002390-r6",
+      "foodId": "A002390",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "Celery, fresh, raw",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F337-r6",
+      "foodId": "F337",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "PURJOSIPULI",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F29-r6",
+      "foodId": "F29",
+      "foodKind": "STOCK",
+      "inputForm": "LIHALIEMI, LAIMENNETTU",
+      "allowedSources": [
+        "lowcho50-r6"
+      ],
+      "consumedForms": {
+        "lowcho50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "U170917-r6",
+      "foodId": "U170917",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "Spices, bay leaf",
+      "allowedSources": [
+        "small-flavour50-r6"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F333-r6",
+      "foodId": "F333",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "PERSILJA",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F303-r6",
+      "foodId": "F303",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "LANTTU",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A006118-r6",
+      "foodId": "A006118",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "Nutmeg, dried, ground",
+      "allowedSources": [
+        "small-flavour50-r6"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6": "AS_DEFINED"
       }
     }
   ]

@@ -1,0 +1,1332 @@
+{
+  "baseMain": "e8da2c9417e2aeff55a85d599b3b7e1ad465f36c",
+  "productionTechnical": 83,
+  "productionKnownFlagFiltered": 74,
+  "knownFlagFilteredNotWholeCollectionReaudit": true,
+  "knownPositiveChoZeroFlags": 9,
+  "conditionalUnique": 81,
+  "reviewReady": 32,
+  "runtimePrepared24": 24,
+  "reviewMaterialOnly8": 8,
+  "approved": 0,
+  "newGk80Published": 0,
+  "technicalPotentialWithoutQ09": 164,
+  "qualityPotentialWithoutQ09": 155,
+  "potentialWithQ09": 163,
+  "gapTo261WithQ09": 98,
+  "combinedIntegrationAndQ09WouldBe": 106,
+  "combinedIntegrationAndQ09Tested": false,
+  "categories": {
+    "CHO_ONLY": 51,
+    "DRAFT_NUMERIC": 49,
+    "PRODUCTION_NUMERIC": 83,
+    "READY_FOR_OWNER_APPROVAL": 32,
+    "UNAVAILABLE": 111
+  },
+  "assignments": [
+    {
+      "recipeId": "aloo-paratha",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "amritsari-kala",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "baozi",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "bibimbap",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "bouillabaisse",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "broileri-kukkakaaligratiini",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "bulgogi",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "bun-cha-hanoi",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "butter-chicken",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "caponata",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "carnitas-salaattitacot",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "char-siu",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "chettinad-kana",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "chili-con-carne-kukkakaaliriisi",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "chole-bhature",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "chow-mein",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "congee-riisipuuro",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "dal-makhani",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "dan-dan-nuudelit",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "dim-sum",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "doner-kebab",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "falafel",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "gai-yang-vhh",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "gazpacho",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "goi-cuon",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "gulab-jamun",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "halloumimunakas",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "hapanimela-porsas",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "harira",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "hernekeitto-savupotkalla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "hummus",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "hyderabadi-kanabiryani",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "idli-sambar",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "indialainen-poha-maapahkinoilla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "indonesialainen-bakwan-maissifritter",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "indonesialainen-bubur-ayam-kanariisipuuro",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "indonesialainen-ketoprak-aamiaiskulho",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "indonesialainen-pisang-goreng-aamiaiseksi",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "indonesialainen-serabi-kookospannukakku",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "indonesialainen-tempeh-munakulho",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "intialainen-aloo-paratha",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "intialainen-besan-chilla",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "intialainen-idli-kookoschutneylla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "intialainen-mannasuurimoupma",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "intialainen-masala-dosa",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "intialainen-pesarattu-mungpavuista",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "intialainen-rava-uttapam",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "intialainen-ven-pongal",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "italian-pata",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "janssoninkiusaus-juuriselleri",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "japanilainen-curry-tofulla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "japanilainen-dashimaki-tamago-aamiaislautasella",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "japanilainen-miso-tofu-paksoi",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "japanilainen-natto-riisikulho",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "japanilainen-okayu-umeboshipluumulla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "japanilainen-onigiri-lohella",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "japanilainen-tamago-kake-gohan",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "japanilainen-yaki-onigiri-misolla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "jauheliha-makaronilaatikko",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "jauhelihakastike-kesakurpitsanuudeleilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "jerk-kana",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "jiaozi",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "kaakao-kookos-chia",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "kai-jiew-vhh",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "kana-enchilada-kukkakaalivuoka",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "kana-fajita-pelti",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "kana-tagine-sitruunalla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "kana-yakitori-kaalilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "kanakeitto-pinaatti-sitruuna",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "kanakorma-kukkakaaliriisilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "kanapyorykat-tomaattikastike",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "kanasalaatti-pesto-mozzarella",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "kanaviillokki-kukkakaalilla",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "kantonilainen-hoyrytetty-kala",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "karibia-ackee-ja-suolakala",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "karibia-bammy-kassavaleipa",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "karibia-callaloo-munakas",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "karibia-jamaikalainen-munakokkeli",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "karibia-johnny-cake",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "karibia-kookosriisi-pavuilla",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "karibia-maissipuuro-kookoksella",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "karibia-mango-limejogurtti",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "karibia-plantain-aamiaislautanen",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "karibia-saltfish-fritterit",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "karjalanpaisti-vhh",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "keltainen-kanacurry-vhh",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "kerala-kalacurry",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "kermainen-lohipata",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "kesakurpitsalasagne-vhh",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "keto-joulutortut",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "keto-kauralesesampylat",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "keto-korvapuustit",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "keto-mutakakku",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "keto-pannukakku",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "keto-pinaattiletut",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "keto-suklaakeksit",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "ketopizza-pofiber-pohjalla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "khao-kha-moo-vhh",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "khao-man-gai-vhh",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "khao-soi-vhh-konjac",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "kiinalainen-bao-munalla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "kiinalainen-hirssipuuro-taateleilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "kiinalainen-jianbing-munaletty",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "kiinalainen-katkarapu-wontonkeitto",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "kiinalainen-kevatsipulipannukakku",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "kiinalainen-musta-seesamipuuro",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "kiinalainen-riisipuuro-kananmunalla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "kiinalainen-soijamaito-aamiaisella",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "kiinalainen-teehaudutetut-munat",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "kiinalainen-tomaattimunakas-riisilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "kimchi-jjigae",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "kookos-lime-kanacurry",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "korealainen-bataatti-riisikulho",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "korealainen-bindaetteok-aamiaiseksi",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "korealainen-gyeran-mari-kasviksilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "korealainen-gyeranbap-riisikulho",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "korealainen-jumeokbap-merilevalla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "korealainen-kimchi-jeon-aamiaiseksi",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "korealainen-mandu-keitto-aamiaiseksi",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "korealainen-yachaejuk-kasvisjuk",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "koshari",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "kukkakaaligratiini-pekonilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "kung-pao-kana",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "kurkku-oliivi-aamiaiskulho",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "lahi-ita-fattet-hummus",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "lahi-ita-ful-medames",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "lahi-ita-kikherne-shakshuka",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "lahi-ita-kikhernejauho-yrttilettu",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "lahi-ita-labneh-kulho-zaatarilla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "lahi-ita-manakish-zaatarilla",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "lahi-ita-menemen-sumakilla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "lahi-ita-pistaasijogurtti",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "lahi-ita-taatelipuuro-tahinilla",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "lahi-ita-zaatar-munat",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "lanttulaatikko-kermainen",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "lanzhou-naudanliha-nuudelikeitto",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "larb-moo-vhh",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "liha-juureskeitto-perunaton",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "lihapullat-kermakastikkeessa-vhh",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "lindstrominpihvit-kaalilla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "lohikeitto-kuohukermalla",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "maksalaatikko-kukkakaalilla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "mala-xiang-guo",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "malesialainen-apam-balik",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "malesialainen-congee-inkivaarilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "malesialainen-kaya-paahtoleipa",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "malesialainen-kookos-banaanikulho",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "malesialainen-kuih-seri-muka",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "malesialainen-mee-goreng-aamunuudeleilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "malesialainen-roti-canai-dhalilla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "malesialainen-roti-jala-currykanalla",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "mapo-tofu",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "marjainen-chiavanukas",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "marjakiisseli-vaniljakastikkeella",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "masala-dosa",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "massaman-curry-kanalla-vhh",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "medu-vada",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "meheva-suklaakakku",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "meksikolainen-aamiais-tacot-mustapavuilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "meksikolainen-atole-maissipuuro",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "meksikolainen-chilaquiles-verdes",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "meksikolainen-huevos-a-la-mexicana",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "meksikolainen-huevos-divorciados",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "meksikolainen-kurpitsapuuro-piloncillolla",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "meksikolainen-molletes-pico-de-gallolla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "meksikolainen-munakokkeli-pico-de-gallolla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "meksikolainen-paputostada-aamupalaksi",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "meksikolainen-quesadilla-sienilla",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "menemen",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "miso-lohi-paksoi",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "moo-ping-vhh",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "munakasmuffinit",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "munakasrulla-pinaatti-tuorejuustolla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "munakoiso-jauhelihavuoka-vhh",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "munakoiso-kesakurpitsalasagne",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "munakokkeli",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "munatacot-huevos-rancheros",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "nakkikastike-kukkakaalimuusi",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "nasi-lemak",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "okonomiyaki-kaaliletut",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "paahdettu-aamiaismunakoiso",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "pad-kee-mao-vhh-konjac",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "pad-kra-pao-vhh",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "pad-see-ew-vhh-konjac",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "pad-thai-vhh-konjac",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "paella-valenciana",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "paistettu-maksa-pekonilla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "palak-paneer",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "panang-curry-kanalla-vhh",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "paneer-tikka",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "pani-puri",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "pannacotta-marjakastikkeella",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "paprikainen-vhh-gulassi",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "paprikauunimunakkaat",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "parsakaali-sinihomejuustofrittata",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "pav-bhaji",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "pekingin-ankka",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "pellava-puuro-pahkinoilla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "pho-bo",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "pizza-margherita",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-baghrir",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-bissara",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-harissa-shakshuka",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-lablabi",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-maakouda",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-minttutee-kaurapuuro",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "poronkaristys-kukkakaalimuusilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "punainen-kanacurry-vhh",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "raejuusto-pesto-kasviskulho",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "raejuusto-uunimunakas",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "rahkapiirakka-vhh",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "ratatouille",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "rendang-padang",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "rogan-josh",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "roujiamo",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "samosa",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "sate-ayam",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "savulohi-avokadokulho",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "shakshuka",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "shoyu-kanakeitto-konjac",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "sichuan-hot-pot",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "siemengranola-jogurtilla",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "silakkapihvit-tilli-kermakastike",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "sitruuna-yrttikana-parsa",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "som-tam-vhh-kurkkuna",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "souvlaki",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "spanakopita",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "tabbouleh",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "tacokulho-nauta-avokado",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "tandoorikana",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "tangyuan",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "taytetyt-paprikat-vhh",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "thai-jok-kanalla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "thai-kai-jiao-yrteilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "thai-kananmunat-kookoscurryssa",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "thai-khao-tom-katkaravuilla",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "thai-kookosriisi-mangolla",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "thai-maissifritterit",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "thai-papaijajogurtti",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "thai-porsasjok",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "thai-riisinuudelikeitto-aamuksi",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "thai-roti-munalla-banaanilla",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "tom-kha-gai-vhh",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "tom-yum-goong-vhh",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "tonnikalamunakkaat-uunissa",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "tortilla-de-patatas",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "tunisialainen-brik",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "tunisialainen-ojja",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "uunikanapasta-kesakurpitsa",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "uunilohi-smetanakuorrutteella",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "uunimakkara-sipulipedilla",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "uunimuna-avokadot",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "uunimunat-pinaatilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "uuniporsas-kermakastikkeessa-vhh",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "vada-pav",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "valimerellinen-farinata-aamupalaksi",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "valimerellinen-kikherne-yrttiaamiainen",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "valimerellinen-menemen-fetalla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "valimerellinen-pinaatti-fetashakshuka",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "valimerellinen-ricotta-persikkakulho",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "valimerellinen-tahinipuuro",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "valimerellinen-tortilla-espanola-aamupalaksi",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "vhh-brita-kakku",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "vhh-juustokakku",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "vhh-kaalikaarryleet",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "vhh-korvapuustit",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "vhh-letut",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "vhh-lihamureke",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "vhh-lihapiirakka",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "vhh-lohikeitto-kukkakaalilla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "vhh-mansikkakakku",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "vhh-mokkapalat",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "vhh-mustikkapiirakka",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "vhh-omenapiirakka",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "vhh-pyttipannu",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "vhh-raparperipiirakka",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "vhh-runebergintortut",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "vietnamilainen-banh-bao-kananmunalla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "vietnamilainen-banh-cuon-sienilla",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "vietnamilainen-banh-mi-munalla",
+      "category": "PRODUCTION_NUMERIC"
+    },
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "vietnamilainen-chao-ga-kanapuuro",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "vietnamilainen-hu-tieu-aamiaiskeitto",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "vietnamilainen-papaija-kookospuuro",
+      "category": "CHO_ONLY"
+    },
+    {
+      "recipeId": "vietnamilainen-pho-ga-aamuksi",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "vietnamilainen-xoi-maapahkinalla",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "xiaolongbao",
+      "category": "UNAVAILABLE"
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "category": "DRAFT_NUMERIC"
+    },
+    {
+      "recipeId": "yrttituorejuusto-kinkkurullat",
+      "category": "READY_FOR_OWNER_APPROVAL"
+    },
+    {
+      "recipeId": "yum-woon-sen-vhh",
+      "category": "PRODUCTION_NUMERIC"
+    }
+  ]
+}
