@@ -42,3 +42,7 @@ Konservatiivinen lähdeskenaario: netto7,381250–7,387250; kokonais10,374250–
 Vanhojen julkaisuerien historiatesteihin lisättiin vain uuden uunikanapastamuutoksen ennen-integraatiota tallennettu main-snapshot. Alkuperäisiä Golden-/baseline-aineistoja ei muuteta. Uusi nykytilan326-objektin regressio tarkistaa oikean uuden raportin ilman historiakerroksia. Samalla korjattiin mainissa jo ollut testiodotus, joka odotti PR162:ssa pidätettyjen kahden keto-reseptin vanhoja nettohiilihydraatteja. Sama virhe toistettiin erikseen puhtaassa mainia vastaavassa työpuussa; tuotannon pidätystä ei ohiteta.
 
 Ei uutta tutkimusajoa, PR153/#156/#161/#164-muutoksia tai ReportHub-muutoksia. Guardin Ready/merge, normaali Codex Review, automaattinen tarkka-HEAD-CI sekä mergen jälkeinen main-CI, Pages ja tuotannon131/326-varmennus ovat tämän integraation julkaisuvaiheet. Alkuperäinen main on `88e228bbb1f0fa4a4e16be4aeedcd509bc7bc33a`.
+
+## Codex-katselmoinnin testirekisteröinti
+
+Viisi uutta testiä on rekisteröity suoraan `site/package.json`-tiedoston `npm test`-komentoon. Ne suoritettiin ensimmäisessä versiossa `gk80-combined.test.ts`-importin kautta; tämä välillinen import poistettiin, jotta testit ajavat kerran ja CI-kytkentä näkyy suoraan. Uusi täydellinen yksikköajo varmistaa edelleen210 testiä. Resepti, laskentaevidenssi ja hyväksyntäfingerprintit eivät muutu.

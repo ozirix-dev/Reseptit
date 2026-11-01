@@ -1,4 +1,3 @@
-import './gk80-uunikanapasta.test';
 import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {createHash} from 'node:crypto';import {loadPacks} from '../scripts/gk80-release';import {calculateCandidate} from '../scripts/gk80-candidate-policy';
 const root=new URL('../../',import.meta.url);const json=(f:string)=>JSON.parse(readFileSync(new URL(f,root),'utf8'));
 test('actual main regression adds release7 eleven plus one closed recovery, retains all119 previous values and314 full objects',async()=>{
