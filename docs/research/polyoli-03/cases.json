@@ -1,0 +1,1229 @@
+{
+  "schemaVersion": 1,
+  "baseMain": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+  "allowedRecipeIds": [
+    "jauheliha-kaalikeitto-vhh",
+    "vhh-kaalilaatikko",
+    "ropa-vieja",
+    "siskonmakkarakeitto-juurekset",
+    "nakkikeitto-kukkakaalilla"
+  ],
+  "approvedSourceCommit": "08b69bd974c427c94be3a460c27d007fbcd53f54",
+  "approvedArtifactSha256": {
+    "marjoram-source-proposal.json": "cdd59a2fc2ac57f3485f91f94899b0aaf9d2da74ff0fcd7a3a79936b1650dab3",
+    "nakki-binding-proposal.json": "351162c409ab91b691ea8f71d70a8c0b3f37b019aa75bc68ce99bad3092697de",
+    "review.mts": "b6ec31b481e7c929da8b4e938503016446195d9a350307c4d48374f63f6c088e"
+  },
+  "ownerApproval": {
+    "marjoramBindings": true,
+    "nakkiSevenAliases": true,
+    "cMethod": false,
+    "publication": false
+  },
+  "policy": {
+    "fullGkWidthLimit": "0.10",
+    "giCaps": [
+      "50",
+      "100",
+      "120",
+      "150"
+    ],
+    "primaryGiCap": "150",
+    "thresholdComparison": [
+      "0.05",
+      "0.10",
+      "0.25",
+      "0.50"
+    ],
+    "macroPrecisionChoices": [
+      2,
+      1,
+      0
+    ],
+    "gkDisplayPrecision": 0,
+    "requireStableClass": true,
+    "sourceAccountingIsConditional": true,
+    "afcdPairConventionRequiresExplicitReview": true,
+    "productionEnabled": false,
+    "primaryUnknownPolicy": "ALL_UNQUANTIFIED_AGGREGATE_COMPONENTS_INCLUDING_AFCD_PARTIAL_SPECIES"
+  },
+  "cases": [
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "servings": 6,
+      "sourcePath": "reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md",
+      "sourceSha256": "add5c7fd2eefb6aa7f01c98c8921d91bafe2d27f54e2dcc29895e3f1553c91de",
+      "heldFile": "docs/nutrition/gk80-release-7/held-review.json",
+      "heldFileSha256": "ff5843d5667720ff456e4c98bae4270025ba7329c38ba35a3560ecf3a258288d",
+      "bundleHash": "5a239e8063598fea3f047e2ca09b4b4e5356190aba920de0ee1aa59fd86583bc",
+      "originalInputHash": "a449d57b10e5aaffeba23d5c41dccebdab201776795983fb714d58f261fb3a4c",
+      "completeScope": true,
+      "preparationApprovedForPublication": false,
+      "ingredients": [
+        {
+          "index": 0,
+          "name": "17% naudan jauhelihaa",
+          "massG": "500",
+          "retention": "1",
+          "sourceId": "F11562-r5",
+          "sourceEvidenceHash": "7f64d9a7102e0a569175d236fb38af818523b360d4cf6a3a2f3cc0f974ef43a6",
+          "macro": {
+            "availableCarbohydrate": "0.0",
+            "protein": "19.065",
+            "fat": "16.949",
+            "fibre": "0.0"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": null,
+          "giSourceId": null,
+          "giSourceEvidenceHash": null,
+          "preparation": "JAUHELIHA, NAUDAN, RASVAA 17 %"
+        },
+        {
+          "index": 1,
+          "name": "valkokaalia",
+          "massG": "500",
+          "retention": "1",
+          "sourceId": "F320-r5",
+          "sourceEvidenceHash": "bbe193b556704c866cc1b22f0d4ba99c51639470cb543d4e947721236478a647",
+          "macro": {
+            "availableCarbohydrate": "4.97",
+            "protein": "1.2",
+            "fat": "0.1",
+            "fibre": "2.0"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "VALKOKAALI, KERÄKAALI"
+        },
+        {
+          "index": 2,
+          "name": "keltasipulia",
+          "massG": "55",
+          "retention": "1",
+          "sourceId": "F335-r5",
+          "sourceEvidenceHash": "acc229d86c31acd802b46960407359f20dcceacfa8c865be9dfa6fa170e09b4a",
+          "macro": {
+            "availableCarbohydrate": "4.8",
+            "protein": "1.25",
+            "fat": "0.1",
+            "fibre": "1.2"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "SIPULI, KELTASIPULI"
+        },
+        {
+          "index": 3,
+          "name": "käyttövalmista lihalientä",
+          "massG": "1000",
+          "retention": "1",
+          "sourceId": "F29-r5",
+          "sourceEvidenceHash": "4c0a52018e8084f9712113c53c97169232b08a4970a86ea2ff625b3dbdbf6c9f",
+          "macro": {
+            "availableCarbohydrate": "3.0",
+            "protein": "0.34",
+            "fat": "0.6",
+            "fibre": "0.017"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "lowcho50-r5",
+          "giSourceEvidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+          "preparation": "LIHALIEMI, LAIMENNETTU"
+        },
+        {
+          "index": 4,
+          "name": "tomaattimurskaa pyreen sijasta",
+          "massG": "100",
+          "retention": "1",
+          "sourceId": "F398-r5",
+          "sourceEvidenceHash": "cb9591a3b62fd988ca6231dc70851b10b934ebd7b8020d595906190c47fb52ea",
+          "macro": {
+            "availableCarbohydrate": "3.45",
+            "protein": "0.55",
+            "fat": "0.2",
+            "fibre": "0.4"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "TOMAATTIMURSKA"
+        },
+        {
+          "index": 5,
+          "name": "jauhettua mustapippuria",
+          "massG": "0.5",
+          "retention": "1",
+          "sourceId": "A006618-r5",
+          "sourceEvidenceHash": "57fa5913e6e69a0c490ae7c142e3d87a3702079d9fe7660cc531974c39351f18",
+          "macro": {
+            "availableCarbohydrate": "38.6",
+            "protein": "10.4",
+            "fat": "3.3",
+            "fibre": "25.3"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "AFCD_PAIRED_SOURCE_MODEL",
+          "pairedCarbohydrates": {
+            "without": 38.6,
+            "withValue": 38.6,
+            "scope": "SORBITOL_MANNITOL_GLYCEROL_SOURCE_EQUATION_ONLY"
+          },
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "small-flavour50-r5",
+          "giSourceEvidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+          "preparation": "Pepper, black, ground"
+        },
+        {
+          "index": 6,
+          "name": "kuivattua meiramia jauhettuna",
+          "massG": "0.6",
+          "retention": "1",
+          "sourceId": "norway-06.186-polyoli02-20261101",
+          "sourceEvidenceHash": "67eec2d1c031276a0bb4bc0b2845680efcf907dc17311c0b2db4690112407a49",
+          "macro": {
+            "availableCarbohydrate": "20.3",
+            "protein": "12.7",
+            "fat": "7.0",
+            "fibre": "40.0"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "MISSING_AGGREGATE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": "AVAILABLE_WITH_UNKNOWN_EXTERNAL_POLYOLS",
+          "us": null,
+          "gi": "50",
+          "giSourceId": "marjoram50-polyoli02-source-substitution",
+          "giSourceEvidenceHash": "4fa08559f234bdfa41baebc09bc20feb670e84f94e157e7bb7c9d72ad8919547",
+          "preparation": "dried marjoram, ground and fully consumed"
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "servings": 6,
+      "sourcePath": "reseptit/paaruoat/kaalilaatikko.md",
+      "sourceSha256": "c2bce9525a0983643213a101150dd0e10a5db6be34e4318585c8c666f628cf3f",
+      "heldFile": "docs/nutrition/gk80-release-7/held-review.json",
+      "heldFileSha256": "ff5843d5667720ff456e4c98bae4270025ba7329c38ba35a3560ecf3a258288d",
+      "bundleHash": "858e33ca60018b250ef85e962336c6a3766edac1d2f169881e1a2686492e87a0",
+      "originalInputHash": "a09d8b292b9e425be7dc7e5192bb5ee43d7746a156f924755202922235c7d014",
+      "completeScope": true,
+      "preparationApprovedForPublication": false,
+      "ingredients": [
+        {
+          "index": 0,
+          "name": "valkokaalia",
+          "massG": "900",
+          "retention": "1",
+          "sourceId": "F320-r5",
+          "sourceEvidenceHash": "bbe193b556704c866cc1b22f0d4ba99c51639470cb543d4e947721236478a647",
+          "macro": {
+            "availableCarbohydrate": "4.97",
+            "protein": "1.2",
+            "fat": "0.1",
+            "fibre": "2.0"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "VALKOKAALI, KERÄKAALI"
+        },
+        {
+          "index": 1,
+          "name": "17% naudan jauhelihaa",
+          "massG": "500",
+          "retention": "1",
+          "sourceId": "F11562-r5",
+          "sourceEvidenceHash": "7f64d9a7102e0a569175d236fb38af818523b360d4cf6a3a2f3cc0f974ef43a6",
+          "macro": {
+            "availableCarbohydrate": "0.0",
+            "protein": "19.065",
+            "fat": "16.949",
+            "fibre": "0.0"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": null,
+          "giSourceId": null,
+          "giSourceEvidenceHash": null,
+          "preparation": "JAUHELIHA, NAUDAN, RASVAA 17 %"
+        },
+        {
+          "index": 2,
+          "name": "keltasipulia",
+          "massG": "55",
+          "retention": "1",
+          "sourceId": "F335-r5",
+          "sourceEvidenceHash": "acc229d86c31acd802b46960407359f20dcceacfa8c865be9dfa6fa170e09b4a",
+          "macro": {
+            "availableCarbohydrate": "4.8",
+            "protein": "1.25",
+            "fat": "0.1",
+            "fibre": "1.2"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "SIPULI, KELTASIPULI"
+        },
+        {
+          "index": 3,
+          "name": "38% kuohukermaa",
+          "massG": "200",
+          "retention": "1",
+          "sourceId": "F631-r5",
+          "sourceEvidenceHash": "04c39decb9122e4ba9dc81e659c4915865fbe63a0aed9ebf9c9237d2b7b82b92",
+          "macro": {
+            "availableCarbohydrate": "2.9",
+            "protein": "1.88",
+            "fat": "38.0",
+            "fibre": "0.0"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "30",
+          "giSourceId": "dairy-imputation30",
+          "giSourceEvidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "preparation": "KERMA, KUOHUKERMA, RASVAA 38 %"
+        },
+        {
+          "index": 4,
+          "name": "kuoretonta kananmunaa",
+          "massG": "110",
+          "retention": "1",
+          "sourceId": "F858-r5",
+          "sourceEvidenceHash": "a0126e3b19e5516e0e8c891f94fc7a0bce74b58f6decd4863085137e08782d82",
+          "macro": {
+            "availableCarbohydrate": "0.3",
+            "protein": "12.61",
+            "fat": "9.24",
+            "fibre": "0.0"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "lowcho50-r5",
+          "giSourceEvidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+          "preparation": "KANANMUNA, KUORETON"
+        },
+        {
+          "index": 5,
+          "name": "käyttövalmista lihalientä",
+          "massG": "100",
+          "retention": "1",
+          "sourceId": "F29-r5",
+          "sourceEvidenceHash": "4c0a52018e8084f9712113c53c97169232b08a4970a86ea2ff625b3dbdbf6c9f",
+          "macro": {
+            "availableCarbohydrate": "3.0",
+            "protein": "0.34",
+            "fat": "0.6",
+            "fibre": "0.017"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "lowcho50-r5",
+          "giSourceEvidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+          "preparation": "LIHALIEMI, LAIMENNETTU"
+        },
+        {
+          "index": 6,
+          "name": "voita",
+          "massG": "14",
+          "retention": "1",
+          "sourceId": "F500-r5",
+          "sourceEvidenceHash": "59706d540cd645bc4888acb66e4e856cf3db63b2f8071e0e751c0d534b239a27",
+          "macro": {
+            "availableCarbohydrate": "0.8",
+            "protein": "1.19",
+            "fat": "81.3",
+            "fibre": "0.0"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "30",
+          "giSourceId": "dairy-imputation30",
+          "giSourceEvidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+          "preparation": "VOI"
+        },
+        {
+          "index": 7,
+          "name": "jauhettua mustapippuria",
+          "massG": "1",
+          "retention": "1",
+          "sourceId": "A006618-r5",
+          "sourceEvidenceHash": "57fa5913e6e69a0c490ae7c142e3d87a3702079d9fe7660cc531974c39351f18",
+          "macro": {
+            "availableCarbohydrate": "38.6",
+            "protein": "10.4",
+            "fat": "3.3",
+            "fibre": "25.3"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "AFCD_PAIRED_SOURCE_MODEL",
+          "pairedCarbohydrates": {
+            "without": 38.6,
+            "withValue": 38.6,
+            "scope": "SORBITOL_MANNITOL_GLYCEROL_SOURCE_EQUATION_ONLY"
+          },
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "small-flavour50-r5",
+          "giSourceEvidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+          "preparation": "Pepper, black, ground"
+        },
+        {
+          "index": 8,
+          "name": "kuivattua meiramia jauhettuna",
+          "massG": "0.6",
+          "retention": "1",
+          "sourceId": "norway-06.186-polyoli02-20261101",
+          "sourceEvidenceHash": "67eec2d1c031276a0bb4bc0b2845680efcf907dc17311c0b2db4690112407a49",
+          "macro": {
+            "availableCarbohydrate": "20.3",
+            "protein": "12.7",
+            "fat": "7.0",
+            "fibre": "40.0"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "MISSING_AGGREGATE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": "AVAILABLE_WITH_UNKNOWN_EXTERNAL_POLYOLS",
+          "us": null,
+          "gi": "50",
+          "giSourceId": "marjoram50-polyoli02-source-substitution",
+          "giSourceEvidenceHash": "4fa08559f234bdfa41baebc09bc20feb670e84f94e157e7bb7c9d72ad8919547",
+          "preparation": "dried marjoram, ground and fully consumed"
+        }
+      ]
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "servings": 6,
+      "sourcePath": "reseptit/paaruoat/ropa-vieja.md",
+      "sourceSha256": "d0803f871258b512241ad449d728793b48800f8d1af83d84710952fba012bddd",
+      "heldFile": "docs/nutrition/gk80-release-7/held-review.json",
+      "heldFileSha256": "ff5843d5667720ff456e4c98bae4270025ba7329c38ba35a3560ecf3a258288d",
+      "bundleHash": "ba5818b4e56caf2e04e03c7e60e5e10b92d42a39e2a2efa2fe5781815e5794f9",
+      "originalInputHash": "881b2c3c35e5421f5318196aa142c26832de23036fc0c11ea7ea893128709bab",
+      "completeScope": true,
+      "preparationApprovedForPublication": false,
+      "ingredients": [
+        {
+          "index": 0,
+          "name": "naudanpaistia tai flank steak -lihaa",
+          "massG": "900",
+          "retention": "1",
+          "sourceId": "F718-r5",
+          "sourceEvidenceHash": "aeee2a979973dce0b44c9a7630c8b2bd05df44e697e8c2d46fb8b0bcad2cb7e4",
+          "macro": {
+            "availableCarbohydrate": "0.0",
+            "protein": "21.65",
+            "fat": "2.88",
+            "fibre": "0.0"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": null,
+          "giSourceId": null,
+          "giSourceEvidenceHash": null,
+          "preparation": "NAUDANPAISTI"
+        },
+        {
+          "index": 1,
+          "name": "keltasipulia",
+          "massG": "100",
+          "retention": "1",
+          "sourceId": "F335-r5",
+          "sourceEvidenceHash": "acc229d86c31acd802b46960407359f20dcceacfa8c865be9dfa6fa170e09b4a",
+          "macro": {
+            "availableCarbohydrate": "4.8",
+            "protein": "1.25",
+            "fat": "0.1",
+            "fibre": "1.2"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "SIPULI, KELTASIPULI"
+        },
+        {
+          "index": 2,
+          "name": "vihreää paprikaa",
+          "massG": "120",
+          "retention": "1",
+          "sourceId": "F387-r5",
+          "sourceEvidenceHash": "6d166847be85cb4dcc862bf010a4657632b4d86bf9bbdf50434eb8926ad3b387",
+          "macro": {
+            "availableCarbohydrate": "2.5",
+            "protein": "0.94",
+            "fat": "0.3",
+            "fibre": "1.8"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "PAPRIKA, VIHREÄ"
+        },
+        {
+          "index": 3,
+          "name": "punaista paprikaa",
+          "massG": "160",
+          "retention": "1",
+          "sourceId": "F386-r5",
+          "sourceEvidenceHash": "9253953496050418388bee968a34bd966725dbf139818ef3f1ed035293c33e93",
+          "macro": {
+            "availableCarbohydrate": "4.5",
+            "protein": "0.94",
+            "fat": "0.3",
+            "fibre": "1.9"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "PAPRIKA, PUNAINEN"
+        },
+        {
+          "index": 4,
+          "name": "tomaattimurskaa",
+          "massG": "400",
+          "retention": "1",
+          "sourceId": "F398-r5",
+          "sourceEvidenceHash": "cb9591a3b62fd988ca6231dc70851b10b934ebd7b8020d595906190c47fb52ea",
+          "macro": {
+            "availableCarbohydrate": "3.45",
+            "protein": "0.55",
+            "fat": "0.2",
+            "fibre": "0.4"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "TOMAATTIMURSKA"
+        },
+        {
+          "index": 5,
+          "name": "lihalientä",
+          "massG": "500",
+          "retention": "1",
+          "sourceId": "F29-r5",
+          "sourceEvidenceHash": "4c0a52018e8084f9712113c53c97169232b08a4970a86ea2ff625b3dbdbf6c9f",
+          "macro": {
+            "availableCarbohydrate": "3.0",
+            "protein": "0.34",
+            "fat": "0.6",
+            "fibre": "0.017"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "lowcho50-r5",
+          "giSourceEvidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+          "preparation": "LIHALIEMI, LAIMENNETTU"
+        },
+        {
+          "index": 6,
+          "name": "valkosipulinkynttä",
+          "massG": "9",
+          "retention": "1",
+          "sourceId": "A004193-r5",
+          "sourceEvidenceHash": "c39515e51bab090500c741df8fe254fe4951f04096ee669a98bb3a91fefc7dbf",
+          "macro": {
+            "availableCarbohydrate": "10.2",
+            "protein": "6.1",
+            "fat": "2.8",
+            "fibre": "16.9"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "AFCD_PAIRED_SOURCE_MODEL",
+          "pairedCarbohydrates": {
+            "without": 10.2,
+            "withValue": 10.2,
+            "scope": "SORBITOL_MANNITOL_GLYCEROL_SOURCE_EQUATION_ONLY"
+          },
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "Garlic, peeled, fresh, raw"
+        },
+        {
+          "index": 7,
+          "name": "juustokuminaa",
+          "massG": "2",
+          "retention": "1",
+          "sourceId": "A003327-r5",
+          "sourceEvidenceHash": "86bfafe1210676252f7db74ee161b68400269e593900a1ee31f68651caa7b15d",
+          "macro": {
+            "availableCarbohydrate": "33.7",
+            "protein": "17.8",
+            "fat": "22.3",
+            "fibre": "10.5"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "AFCD_PAIRED_SOURCE_MODEL",
+          "pairedCarbohydrates": {
+            "without": 33.7,
+            "withValue": 33.7,
+            "scope": "SORBITOL_MANNITOL_GLYCEROL_SOURCE_EQUATION_ONLY"
+          },
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "small-flavour50-r5",
+          "giSourceEvidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+          "preparation": "Cumin (cummin) seed, dried, ground"
+        },
+        {
+          "index": 8,
+          "name": "kuivattua oreganoa",
+          "massG": "2",
+          "retention": "1",
+          "sourceId": "A006281-r5",
+          "sourceEvidenceHash": "4dbfe8ad41ab778d87502ec638e4046b90622eed2fe1fc821588c29c654c8652",
+          "macro": {
+            "availableCarbohydrate": "26.4",
+            "protein": "9",
+            "fat": "4.3",
+            "fibre": "42.5"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "AFCD_PAIRED_SOURCE_MODEL",
+          "pairedCarbohydrates": {
+            "without": 26.4,
+            "withValue": 26.4,
+            "scope": "SORBITOL_MANNITOL_GLYCEROL_SOURCE_EQUATION_ONLY"
+          },
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "small-flavour50-r5",
+          "giSourceEvidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+          "preparation": "Oregano, dried"
+        },
+        {
+          "index": 9,
+          "name": "jauhettua laakerinlehteä, kokonaan mukana",
+          "massG": "0.2",
+          "retention": "1",
+          "sourceId": "U170917-r5",
+          "sourceEvidenceHash": "a6a2b661fedc819dde47288886a4aa2a8211ef00810de7b8911698caa55246cf",
+          "macro": {
+            "availableCarbohydrate": "48.67",
+            "protein": "7.61",
+            "fat": "8.36",
+            "fibre": "26.3"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "MISSING_AGGREGATE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": "US_TOTAL_NONFIBRE_POOL",
+          "us": {
+            "total": 74.97,
+            "fibre": 26.3
+          },
+          "gi": "50",
+          "giSourceId": "small-flavour50-r5",
+          "giSourceEvidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+          "preparation": "Spices, bay leaf"
+        },
+        {
+          "index": 10,
+          "name": "vihreitä oliiveja",
+          "massG": "60",
+          "retention": "1",
+          "sourceId": "F34972-r5",
+          "sourceEvidenceHash": "ce7721c8badce1c91c281f94b472f4a1e42fd8efa50b5edc668d9b2498c92b7d",
+          "macro": {
+            "availableCarbohydrate": "0.0",
+            "protein": "1.03",
+            "fat": "15.32",
+            "fibre": "3.3"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": null,
+          "giSourceId": null,
+          "giSourceEvidenceHash": null,
+          "preparation": "OLIIVI, KESKIARVO, KIVETÖN, SUOLALIEMESSÄ, VIHREÄ"
+        },
+        {
+          "index": 11,
+          "name": "valkoviinietikkaa",
+          "massG": "15",
+          "retention": "1",
+          "sourceId": "F929-r5",
+          "sourceEvidenceHash": "e8d8d84546d45bc311e5d42584c7b79162fc45a77e6031a13cf5d259b4d5b638",
+          "macro": {
+            "availableCarbohydrate": "0.5",
+            "protein": "0.0",
+            "fat": "0.0",
+            "fibre": "0.0"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "lowcho50-r5",
+          "giSourceEvidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+          "preparation": "VIINIETIKKA"
+        }
+      ]
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "servings": 4,
+      "sourcePath": "reseptit/paaruoat/siskonmakkarakeitto-juurekset.md",
+      "sourceSha256": "c6b6ac7820c69e7bf4c4ca9bb050f39bad678e199d2aa4179162c2c5d1da64c1",
+      "heldFile": "docs/nutrition/gk80-release-7/held-review.json",
+      "heldFileSha256": "ff5843d5667720ff456e4c98bae4270025ba7329c38ba35a3560ecf3a258288d",
+      "bundleHash": "f4d31c01e84a7cd759d4063c8066d7e8b40c84e2b0398c0d577d6cf6ba21bbc8",
+      "originalInputHash": "04a01568ee71d710476cb5359045bf7d03e1ead48605aae1eaa689d0ecd48eaa",
+      "completeScope": true,
+      "preparationApprovedForPublication": false,
+      "ingredients": [
+        {
+          "index": 0,
+          "name": "siskonmakkaraa",
+          "massG": "400",
+          "retention": "1",
+          "sourceId": "F30369-r5",
+          "sourceEvidenceHash": "a753c2dbaf8e1643eeb41bbce7a0d6bc50f51744f52c553b9d191454f7abbcc1",
+          "macro": {
+            "availableCarbohydrate": "0.908",
+            "protein": "10.01",
+            "fat": "16.725",
+            "fibre": "0.028"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "lowcho50-r5",
+          "giSourceEvidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+          "preparation": "RAAKAMAKKARA, SISKONMAKKARA"
+        },
+        {
+          "index": 1,
+          "name": "lihalientä",
+          "massG": "1000",
+          "retention": "1",
+          "sourceId": "A008936-r5",
+          "sourceEvidenceHash": "e7628ed886a67c17d2501c6c4c0892feea08483af116cb9af20e6871838db6d8",
+          "macro": {
+            "availableCarbohydrate": "0.4",
+            "protein": "0.2",
+            "fat": "0.2",
+            "fibre": "0"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "AFCD_PAIRED_SOURCE_MODEL",
+          "pairedCarbohydrates": {
+            "without": 0.4,
+            "withValue": 0.4,
+            "scope": "SORBITOL_MANNITOL_GLYCEROL_SOURCE_EQUATION_ONLY"
+          },
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "lowcho50-r5",
+          "giSourceEvidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+          "preparation": "Stock, liquid, all flavours (except fish), prepared from commercial powder or cube"
+        },
+        {
+          "index": 2,
+          "name": "lanttua",
+          "massG": "250",
+          "retention": "1",
+          "sourceId": "F303-r5",
+          "sourceEvidenceHash": "72b309046db2504c2f191870cc05818de197212f5ecc02b74dc00f52d5a53c07",
+          "macro": {
+            "availableCarbohydrate": "5.88",
+            "protein": "1.1",
+            "fat": "0.1",
+            "fibre": "1.8"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "LANTTU"
+        },
+        {
+          "index": 3,
+          "name": "porkkanaa",
+          "massG": "150",
+          "retention": "1",
+          "sourceId": "F300-r5",
+          "sourceEvidenceHash": "7ac0b4182d98c88a4f2334881604d9624a60fa70b0ca9772a017554c87a788fb",
+          "macro": {
+            "availableCarbohydrate": "5.56",
+            "protein": "0.63",
+            "fat": "0.2",
+            "fibre": "2.4"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "PORKKANA"
+        },
+        {
+          "index": 4,
+          "name": "juuriselleriä",
+          "massG": "100",
+          "retention": "1",
+          "sourceId": "F311-r5",
+          "sourceEvidenceHash": "f1199385642d72a350749eee65211a2177e464015b0bd81a8c3fb5740ce6ac87",
+          "macro": {
+            "availableCarbohydrate": "2.65",
+            "protein": "1.3",
+            "fat": "0.1",
+            "fibre": "3.1"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "JUURISELLERI, MUKULASELLERI"
+        },
+        {
+          "index": 5,
+          "name": "sipuli",
+          "massG": "55",
+          "retention": "1",
+          "sourceId": "F335-r5",
+          "sourceEvidenceHash": "acc229d86c31acd802b46960407359f20dcceacfa8c865be9dfa6fa170e09b4a",
+          "macro": {
+            "availableCarbohydrate": "4.8",
+            "protein": "1.25",
+            "fat": "0.1",
+            "fibre": "1.2"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "SIPULI, KELTASIPULI"
+        },
+        {
+          "index": 6,
+          "name": "jauhettua laakerinlehteä, kokonaan mukana",
+          "massG": "0.2",
+          "retention": "1",
+          "sourceId": "U170917-r5",
+          "sourceEvidenceHash": "a6a2b661fedc819dde47288886a4aa2a8211ef00810de7b8911698caa55246cf",
+          "macro": {
+            "availableCarbohydrate": "48.67",
+            "protein": "7.61",
+            "fat": "8.36",
+            "fibre": "26.3"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "MISSING_AGGREGATE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": "US_TOTAL_NONFIBRE_POOL",
+          "us": {
+            "total": 74.97,
+            "fibre": 26.3
+          },
+          "gi": "50",
+          "giSourceId": "small-flavour50-r5",
+          "giSourceEvidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+          "preparation": "Spices, bay leaf"
+        },
+        {
+          "index": 7,
+          "name": "silputtua persiljaa",
+          "massG": "8",
+          "retention": "1",
+          "sourceId": "A006321-r5",
+          "sourceEvidenceHash": "7c8dc58e0dbac42d80ed0d9e2e3981b23f69558684d81e821e9ffdbce810b43b",
+          "macro": {
+            "availableCarbohydrate": "1.1",
+            "protein": "3.9",
+            "fat": "0.7",
+            "fibre": "5"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "AFCD_PAIRED_SOURCE_MODEL",
+          "pairedCarbohydrates": {
+            "without": 1.1,
+            "withValue": 1.1,
+            "scope": "SORBITOL_MANNITOL_GLYCEROL_SOURCE_EQUATION_ONLY"
+          },
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "Parsley, continental, fresh, raw"
+        },
+        {
+          "index": 8,
+          "name": "jauhettua mustapippuria",
+          "massG": "0.5",
+          "retention": "1",
+          "sourceId": "A006618-r5",
+          "sourceEvidenceHash": "57fa5913e6e69a0c490ae7c142e3d87a3702079d9fe7660cc531974c39351f18",
+          "macro": {
+            "availableCarbohydrate": "38.6",
+            "protein": "10.4",
+            "fat": "3.3",
+            "fibre": "25.3"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "AFCD_PAIRED_SOURCE_MODEL",
+          "pairedCarbohydrates": {
+            "without": 38.6,
+            "withValue": 38.6,
+            "scope": "SORBITOL_MANNITOL_GLYCEROL_SOURCE_EQUATION_ONLY"
+          },
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "small-flavour50-r5",
+          "giSourceEvidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+          "preparation": "Pepper, black, ground"
+        }
+      ]
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "servings": 4,
+      "sourcePath": "reseptit/paaruoat/nakkikeitto-kukkakaalilla.md",
+      "sourceSha256": "aa0d76c90de9b16a060457fc7e56fe50f8793e6835e784b03d9c6122f07f5463",
+      "heldFile": "docs/nutrition/gk80-release-6/held-review.json",
+      "heldFileSha256": "dff21635b41567d3de85b28c491b34a159ed5a80ce5eecef26f86d44dde1fbeb",
+      "bundleHash": "6301e77c1e4a1453e732e3c8f8f3aa3f8181bf513064e518612a329c6b7964d3",
+      "originalInputHash": "2071329a31315d2ac834d0be23310b5b6e335636b11932a225b623076d49cc34",
+      "completeScope": true,
+      "preparationApprovedForPublication": false,
+      "ingredients": [
+        {
+          "index": 0,
+          "name": "keitettyä nakkia, Fineli7600-tyyppi",
+          "massG": "350",
+          "retention": "1",
+          "sourceId": "F7600-r6",
+          "sourceEvidenceHash": "241f19be92119789474c38585b475fcb75f436bf2af3e45158c86640df18856e",
+          "macro": {
+            "availableCarbohydrate": "1.162",
+            "protein": "11.31",
+            "fat": "18.23",
+            "fibre": "0.008"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "lowcho50-r6",
+          "giSourceEvidenceHash": "b831cb9118a8e0990b807a35aa80b854ec0c9ee0aeaf878dd32bb9f0f94fe86d",
+          "preparation": "NAKKI, KEITETTY"
+        },
+        {
+          "index": 1,
+          "name": "kukkakaalia",
+          "massG": "500",
+          "retention": "1",
+          "sourceId": "F322-r6",
+          "sourceEvidenceHash": "0e30bc294c609c310216b69aab26e7d4a94225fd78492aea123c87e9a03a662d",
+          "macro": {
+            "availableCarbohydrate": "2.35",
+            "protein": "2.0",
+            "fat": "0.21",
+            "fibre": "1.9"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "KUKKAKAALI"
+        },
+        {
+          "index": 2,
+          "name": "varsiselleriä",
+          "massG": "100",
+          "retention": "1",
+          "sourceId": "A002390-r6",
+          "sourceEvidenceHash": "110820aa1f2583188d6f1883f8c0342e4d157a71b70f92d1bc0dfd70857d0dfb",
+          "macro": {
+            "availableCarbohydrate": "1.8",
+            "protein": "0.6",
+            "fat": "0.1",
+            "fibre": "1.6"
+          },
+          "polyolsSourceValue": 1.0,
+          "polyolEvidenceKind": "AFCD_PAIRED_SOURCE_MODEL",
+          "pairedCarbohydrates": {
+            "without": 1.8,
+            "withValue": 2.8,
+            "scope": "SORBITOL_MANNITOL_GLYCEROL_SOURCE_EQUATION_ONLY"
+          },
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "Celery, fresh, raw"
+        },
+        {
+          "index": 3,
+          "name": "purjoa",
+          "massG": "80",
+          "retention": "1",
+          "sourceId": "F337-r6",
+          "sourceEvidenceHash": "f32039c2511485a1fa1c971b311d0a71fa04d76f66d1d2f24460d82cbafe3bf3",
+          "macro": {
+            "availableCarbohydrate": "2.4",
+            "protein": "1.81",
+            "fat": "0.2",
+            "fibre": "2.1"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "PURJOSIPULI"
+        },
+        {
+          "index": 4,
+          "name": "sipulia",
+          "massG": "55",
+          "retention": "1",
+          "sourceId": "F335-r6",
+          "sourceEvidenceHash": "7123bcfe9a0dae08d2629d82fa2258c2784aa98a86b402e866780751ec8c4897",
+          "macro": {
+            "availableCarbohydrate": "4.8",
+            "protein": "1.25",
+            "fat": "0.1",
+            "fibre": "1.2"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "SIPULI, KELTASIPULI"
+        },
+        {
+          "index": 5,
+          "name": "käyttövalmista lihalientä",
+          "massG": "800",
+          "retention": "1",
+          "sourceId": "F29-r6",
+          "sourceEvidenceHash": "fb10d1e1de85542f82e770d9c10c5926079f27d24510a4c04e605a4ca7130021",
+          "macro": {
+            "availableCarbohydrate": "3.0",
+            "protein": "0.34",
+            "fat": "0.6",
+            "fibre": "0.017"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "lowcho50-r6",
+          "giSourceEvidenceHash": "b831cb9118a8e0990b807a35aa80b854ec0c9ee0aeaf878dd32bb9f0f94fe86d",
+          "preparation": "LIHALIEMI, LAIMENNETTU"
+        },
+        {
+          "index": 6,
+          "name": "jauhettua laakerinlehteä kokonaan syötäväksi",
+          "massG": "0.2",
+          "retention": "1",
+          "sourceId": "U170917-r6",
+          "sourceEvidenceHash": "ff5621895902eeed69a222a07fae378824b92374f92d9e6e8e6d9ed14eb20ac1",
+          "macro": {
+            "availableCarbohydrate": "48.67",
+            "protein": "7.61",
+            "fat": "8.36",
+            "fibre": "26.3"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "MISSING_AGGREGATE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": "US_TOTAL_NONFIBRE_POOL",
+          "us": {
+            "total": 74.97,
+            "fibre": 26.3
+          },
+          "gi": "50",
+          "giSourceId": "small-flavour50-r6",
+          "giSourceEvidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2",
+          "preparation": "Spices, bay leaf"
+        },
+        {
+          "index": 7,
+          "name": "jauhettua mustapippuria",
+          "massG": "1",
+          "retention": "1",
+          "sourceId": "A006618-r6",
+          "sourceEvidenceHash": "d8ab25b158562afbd71af5b72b5675230f301bf2273aceafd015a5eee4d5d537",
+          "macro": {
+            "availableCarbohydrate": "38.6",
+            "protein": "10.4",
+            "fat": "3.3",
+            "fibre": "25.3"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "AFCD_PAIRED_SOURCE_MODEL",
+          "pairedCarbohydrates": {
+            "without": 38.6,
+            "withValue": 38.6,
+            "scope": "SORBITOL_MANNITOL_GLYCEROL_SOURCE_EQUATION_ONLY"
+          },
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "small-flavour50-r6",
+          "giSourceEvidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2",
+          "preparation": "Pepper, black, ground"
+        },
+        {
+          "index": 8,
+          "name": "tuoretta persiljaa",
+          "massG": "5",
+          "retention": "1",
+          "sourceId": "F333-r6",
+          "sourceEvidenceHash": "b17bfe7472dbc2ced91d4130909c745cc0c8544f68904a7d0565b65b65f006b5",
+          "macro": {
+            "availableCarbohydrate": "1.1",
+            "protein": "1.38",
+            "fat": "0.2",
+            "fibre": "2.9"
+          },
+          "polyolsSourceValue": 0.0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "PERSILJA"
+        }
+      ]
+    }
+  ]
+}

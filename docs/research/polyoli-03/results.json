@@ -1,0 +1,639 @@
+{
+  "schemaVersion": 1,
+  "baseMain": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+  "method": "SCOPED_C_STABLE_ROUNDING_PROPOSAL",
+  "scope": [
+    "jauheliha-kaalikeitto-vhh",
+    "vhh-kaalilaatikko",
+    "ropa-vieja",
+    "siskonmakkarakeitto-juurekset",
+    "nakkikeitto-kukkakaalilla"
+  ],
+  "results": [
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "basis": "DECLARED_MACRO_SLACK_EXCLUDES_DERIVED_WATER",
+      "unknownSourcePolyolsPer100g": null,
+      "unknownPPerServing": {
+        "min": "0",
+        "max": "0.03866666666666666666666666666666666666667"
+      },
+      "targetUnknownPMax": "0.0200",
+      "targetOnlyGkWidth": "0.030000000000000000000000000000000000000",
+      "includesAllAfcdPartialEvidence": true,
+      "sourceModelGk": {
+        "lower": "4.588900000000000000000000000000000000000",
+        "upper": "4.646900000000000000000000000000000000000",
+        "width": "0.058000000000000000000000000000000000000"
+      },
+      "referenceScenarioGk": "4.588900000000000000000000000000000000000",
+      "proposedDisplayedGk": {
+        "lower": "4.588900000000000000000000000000000000000",
+        "upper": "4.646900000000000000000000000000000000000",
+        "decimalPlaces": 0,
+        "stable": true,
+        "value": "5"
+      },
+      "gkClass": "LOW",
+      "macros": {
+        "carbsNetG": {
+          "lower": "10.20913333333333333333333333333333333334",
+          "upper": "10.20913333333333333333333333333333333334",
+          "decimalPlaces": 2,
+          "stable": true,
+          "value": "10.21"
+        },
+        "carbsTotalG": {
+          "lower": "12.14188333333333333333333333333333333334",
+          "upper": "12.18055000000000000000000000000000000001",
+          "decimalPlaces": 0,
+          "stable": true,
+          "value": "12"
+        },
+        "proteinG": {
+          "lower": "17.68178333333333333333333333333333333334",
+          "upper": "17.68178333333333333333333333333333333334",
+          "decimalPlaces": 2,
+          "stable": true,
+          "value": "17.68"
+        },
+        "fatG": {
+          "lower": "15.25975000000000000000000000000000000000",
+          "upper": "15.25975000000000000000000000000000000000",
+          "decimalPlaces": 2,
+          "stable": true,
+          "value": "15.26"
+        }
+      },
+      "proposedEditorialBudget": "0.10",
+      "giResponseScenario": [
+        "0",
+        "150"
+      ],
+      "arithmeticCandidate": true,
+      "methodApprovalPending": true,
+      "publicationEligible": false,
+      "physicalMassStress": {
+        "lower": "4.588900000000000000000000000000000000000",
+        "upper": "4.738900000000000000000000000000000000000",
+        "width": "0.150000000000000000000000000000000000000"
+      },
+      "afcdPartialEvidence": [
+        {
+          "sourceId": "A006618-r5",
+          "sourcePolyolsValue": null,
+          "pairedSourceModelValue": "0.0",
+          "notAMeasurementOfAllSpecies": true,
+          "additionalSpeciesSourceAccountingStressP": "0.01866666666666666666666666666666666666667"
+        }
+      ],
+      "broaderSpeciesStressWidth": "0.058000000000000000000000000000000000000",
+      "remainingOwnerDecisions": [
+        "SOURCE_ACCOUNTING_DOMAIN",
+        "AFCD_PAIRED_SOURCE_CONVENTION_LIMITS",
+        "EXACT_INTERVALS_AND_DISPLAY_PRECISIONS",
+        "NAMED_PREPARATION_VERSION",
+        "LOW_DISCLOSURE"
+      ],
+      "biologicalBoundEstablished": false
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "basis": "DECLARED_MACRO_SLACK_EXCLUDES_DERIVED_WATER",
+      "unknownSourcePolyolsPer100g": null,
+      "unknownPPerServing": {
+        "min": "0",
+        "max": "0.05733333333333333333333333333333333333334"
+      },
+      "targetUnknownPMax": "0.0200",
+      "targetOnlyGkWidth": "0.030000000000000000000000000000000000000",
+      "includesAllAfcdPartialEvidence": true,
+      "sourceModelGk": {
+        "lower": "3.773416666666666666666666666666666666667",
+        "upper": "3.859416666666666666666666666666666666667",
+        "width": "0.086000000000000000000000000000000000000"
+      },
+      "referenceScenarioGk": "3.773416666666666666666666666666666666667",
+      "proposedDisplayedGk": {
+        "lower": "3.773416666666666666666666666666666666667",
+        "upper": "3.859416666666666666666666666666666666667",
+        "decimalPlaces": 0,
+        "stable": true,
+        "value": "4"
+      },
+      "gkClass": "LOW",
+      "macros": {
+        "carbsNetG": {
+          "lower": "9.519966666666666666666666666666666666667",
+          "upper": "9.519966666666666666666666666666666666667",
+          "decimalPlaces": 2,
+          "stable": true,
+          "value": "9.52"
+        },
+        "carbsTotalG": {
+          "lower": "12.71496666666666666666666666666666666667",
+          "upper": "12.77230000000000000000000000000000000000",
+          "decimalPlaces": 0,
+          "stable": true,
+          "value": "13"
+        },
+        "proteinG": {
+          "lower": "20.85505000000000000000000000000000000000",
+          "upper": "20.85505000000000000000000000000000000000",
+          "decimalPlaces": 2,
+          "stable": true,
+          "value": "20.86"
+        },
+        "fatG": {
+          "lower": "30.65350000000000000000000000000000000001",
+          "upper": "30.65350000000000000000000000000000000001",
+          "decimalPlaces": 2,
+          "stable": true,
+          "value": "30.65"
+        }
+      },
+      "proposedEditorialBudget": "0.10",
+      "giResponseScenario": [
+        "0",
+        "150"
+      ],
+      "arithmeticCandidate": true,
+      "methodApprovalPending": true,
+      "publicationEligible": false,
+      "physicalMassStress": {
+        "lower": "3.773416666666666666666666666666666666667",
+        "upper": "3.923416666666666666666666666666666666667",
+        "width": "0.150000000000000000000000000000000000000"
+      },
+      "afcdPartialEvidence": [
+        {
+          "sourceId": "A006618-r5",
+          "sourcePolyolsValue": null,
+          "pairedSourceModelValue": "0.0",
+          "notAMeasurementOfAllSpecies": true,
+          "additionalSpeciesSourceAccountingStressP": "0.03733333333333333333333333333333333333334"
+        }
+      ],
+      "broaderSpeciesStressWidth": "0.08600000000000000000000000000000000000001",
+      "remainingOwnerDecisions": [
+        "SOURCE_ACCOUNTING_DOMAIN",
+        "AFCD_PAIRED_SOURCE_CONVENTION_LIMITS",
+        "EXACT_INTERVALS_AND_DISPLAY_PRECISIONS",
+        "NAMED_PREPARATION_VERSION",
+        "LOW_DISCLOSURE"
+      ],
+      "biologicalBoundEstablished": false
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "basis": "US_REPORTED_TOTAL_MINUS_FIBRE_SOURCE_POOL",
+      "unknownSourcePolyolsPer100g": null,
+      "unknownPPerServing": {
+        "min": "0",
+        "max": "1.087889999999999999999999999999999999999"
+      },
+      "targetUnknownPMax": "0.01622333333333333333333333333333333333333",
+      "targetOnlyGkWidth": "0.024335000000000000000000000000000000000",
+      "includesAllAfcdPartialEvidence": true,
+      "sourceModelGk": {
+        "lower": "3.337616666666666666666666666666666666667",
+        "upper": "4.969451666666666666666666666666666666666",
+        "width": "1.631834999999999999999999999999999999999"
+      },
+      "referenceScenarioGk": "3.345728333333333333333333333333333333334",
+      "proposedDisplayedGk": {
+        "lower": "3.337616666666666666666666666666666666667",
+        "upper": "4.969451666666666666666666666666666666666",
+        "decimalPlaces": 0,
+        "stable": false,
+        "value": null
+      },
+      "gkClass": "LOW",
+      "macros": {
+        "carbsNetG": {
+          "lower": "7.665833333333333333333333333333333333333",
+          "upper": "7.682056666666666666666666666666666666666",
+          "decimalPlaces": 1,
+          "stable": true,
+          "value": "7.7"
+        },
+        "carbsTotalG": {
+          "lower": "9.798490000000000000000000000000000000001",
+          "upper": "10.87015666666666666666666666666666666667",
+          "decimalPlaces": null,
+          "stable": false,
+          "value": null
+        },
+        "proteinG": {
+          "lower": "34.05837000000000000000000000000000000000",
+          "upper": "34.05837000000000000000000000000000000000",
+          "decimalPlaces": 2,
+          "stable": true,
+          "value": "34.06"
+        },
+        "fatG": {
+          "lower": "6.775453333333333333333333333333333333333",
+          "upper": "6.775453333333333333333333333333333333333",
+          "decimalPlaces": 2,
+          "stable": true,
+          "value": "6.78"
+        }
+      },
+      "proposedEditorialBudget": "0.10",
+      "giResponseScenario": [
+        "0",
+        "150"
+      ],
+      "arithmeticCandidate": false,
+      "methodApprovalPending": true,
+      "publicationEligible": false,
+      "physicalMassStress": {
+        "lower": "3.337616666666666666666666666666666666667",
+        "upper": "3.387616666666666666666666666666666666667",
+        "width": "0.050000000000000000000000000000000000000"
+      },
+      "afcdPartialEvidence": [
+        {
+          "sourceId": "A004193-r5",
+          "sourcePolyolsValue": null,
+          "pairedSourceModelValue": "0.0",
+          "notAMeasurementOfAllSpecies": true,
+          "additionalSpeciesSourceAccountingStressP": "0.9600"
+        },
+        {
+          "sourceId": "A003327-r5",
+          "sourcePolyolsValue": null,
+          "pairedSourceModelValue": "0.0",
+          "notAMeasurementOfAllSpecies": true,
+          "additionalSpeciesSourceAccountingStressP": "0.05233333333333333333333333333333333333333"
+        },
+        {
+          "sourceId": "A006281-r5",
+          "sourcePolyolsValue": null,
+          "pairedSourceModelValue": "0.0",
+          "notAMeasurementOfAllSpecies": true,
+          "additionalSpeciesSourceAccountingStressP": "0.05933333333333333333333333333333333333333"
+        }
+      ],
+      "broaderSpeciesStressWidth": "1.631834999999999999999999999999999999999",
+      "remainingOwnerDecisions": [
+        "SOURCE_ACCOUNTING_DOMAIN",
+        "AFCD_PAIRED_SOURCE_CONVENTION_LIMITS",
+        "EXACT_INTERVALS_AND_DISPLAY_PRECISIONS",
+        "NAMED_PREPARATION_VERSION",
+        "LOW_DISCLOSURE"
+      ],
+      "biologicalBoundEstablished": false
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "basis": "US_REPORTED_TOTAL_MINUS_FIBRE_SOURCE_POOL",
+      "unknownSourcePolyolsPer100g": null,
+      "unknownPPerServing": {
+        "min": "0",
+        "max": "249.838335"
+      },
+      "targetUnknownPMax": "0.024335",
+      "targetOnlyGkWidth": "0.0365025",
+      "includesAllAfcdPartialEvidence": true,
+      "sourceModelGk": {
+        "lower": "3.8199250",
+        "upper": "378.5774275",
+        "width": "374.7575025"
+      },
+      "referenceScenarioGk": "3.8320925",
+      "proposedDisplayedGk": {
+        "lower": "3.8199250",
+        "upper": "378.5774275",
+        "decimalPlaces": 0,
+        "stable": false,
+        "value": null
+      },
+      "gkClass": null,
+      "macros": {
+        "carbsNetG": {
+          "lower": "9.060750",
+          "upper": "9.085085",
+          "decimalPlaces": 1,
+          "stable": true,
+          "value": "9.1"
+        },
+        "carbsTotalG": {
+          "lower": "12.222860",
+          "upper": "262.036860",
+          "decimalPlaces": null,
+          "stable": false,
+          "value": null
+        },
+        "proteinG": {
+          "lower": "12.025430",
+          "upper": "12.025430",
+          "decimalPlaces": 2,
+          "stable": true,
+          "value": "12.03"
+        },
+        "fatG": {
+          "lower": "17.423555",
+          "upper": "17.423555",
+          "decimalPlaces": 2,
+          "stable": true,
+          "value": "17.42"
+        }
+      },
+      "proposedEditorialBudget": "0.10",
+      "giResponseScenario": [
+        "0",
+        "150"
+      ],
+      "arithmeticCandidate": false,
+      "methodApprovalPending": true,
+      "publicationEligible": false,
+      "physicalMassStress": {
+        "lower": "3.8199250",
+        "upper": "3.8949250",
+        "width": "0.0750000"
+      },
+      "afcdPartialEvidence": [
+        {
+          "sourceId": "A008936-r5",
+          "sourcePolyolsValue": null,
+          "pairedSourceModelValue": "0.0",
+          "notAMeasurementOfAllSpecies": true,
+          "additionalSpeciesSourceAccountingStressP": "248.00"
+        },
+        {
+          "sourceId": "A006321-r5",
+          "sourcePolyolsValue": null,
+          "pairedSourceModelValue": "0.0",
+          "notAMeasurementOfAllSpecies": true,
+          "additionalSpeciesSourceAccountingStressP": "1.786"
+        },
+        {
+          "sourceId": "A006618-r5",
+          "sourcePolyolsValue": null,
+          "pairedSourceModelValue": "0.0",
+          "notAMeasurementOfAllSpecies": true,
+          "additionalSpeciesSourceAccountingStressP": "0.028000"
+        }
+      ],
+      "broaderSpeciesStressWidth": "374.7575025",
+      "remainingOwnerDecisions": [
+        "SOURCE_ACCOUNTING_DOMAIN",
+        "AFCD_PAIRED_SOURCE_CONVENTION_LIMITS",
+        "EXACT_INTERVALS_AND_DISPLAY_PRECISIONS",
+        "NAMED_PREPARATION_VERSION",
+        "LOW_DISCLOSURE"
+      ],
+      "biologicalBoundEstablished": false
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "basis": "US_REPORTED_TOTAL_MINUS_FIBRE_SOURCE_POOL",
+      "unknownSourcePolyolsPer100g": null,
+      "unknownPPerServing": {
+        "min": "0",
+        "max": "23.805335"
+      },
+      "targetUnknownPMax": "0.024335",
+      "targetOnlyGkWidth": "0.0365025",
+      "includesAllAfcdPartialEvidence": true,
+      "sourceModelGk": {
+        "lower": "5.3731250",
+        "upper": "41.0811275",
+        "width": "35.7080025"
+      },
+      "referenceScenarioGk": "5.3852925",
+      "proposedDisplayedGk": {
+        "lower": "5.3731250",
+        "upper": "41.0811275",
+        "decimalPlaces": 0,
+        "stable": false,
+        "value": null
+      },
+      "gkClass": null,
+      "macros": {
+        "carbsNetG": {
+          "lower": "11.654500",
+          "upper": "11.678835",
+          "decimalPlaces": 1,
+          "stable": true,
+          "value": "11.7"
+        },
+        "carbsTotalG": {
+          "lower": "15.442485",
+          "upper": "39.223485",
+          "decimalPlaces": null,
+          "stable": false,
+          "value": null
+        },
+        "proteinG": {
+          "lower": "13.807180",
+          "upper": "13.807180",
+          "decimalPlaces": 2,
+          "stable": true,
+          "value": "13.81"
+        },
+        "fatG": {
+          "lower": "17.507430",
+          "upper": "17.507430",
+          "decimalPlaces": 2,
+          "stable": true,
+          "value": "17.51"
+        }
+      },
+      "proposedEditorialBudget": "0.10",
+      "giResponseScenario": [
+        "0",
+        "150"
+      ],
+      "arithmeticCandidate": false,
+      "methodApprovalPending": true,
+      "publicationEligible": false,
+      "physicalMassStress": {
+        "lower": "5.3731250",
+        "upper": "5.4481250",
+        "width": "0.0750000"
+      },
+      "afcdPartialEvidence": [
+        {
+          "sourceId": "A002390-r6",
+          "sourcePolyolsValue": 1.0,
+          "pairedSourceModelValue": "1.0",
+          "notAMeasurementOfAllSpecies": true,
+          "additionalSpeciesSourceAccountingStressP": "23.725"
+        },
+        {
+          "sourceId": "A006618-r6",
+          "sourcePolyolsValue": 0.0,
+          "pairedSourceModelValue": "0.0",
+          "notAMeasurementOfAllSpecies": true,
+          "additionalSpeciesSourceAccountingStressP": "0.05600"
+        }
+      ],
+      "broaderSpeciesStressWidth": "35.7080025",
+      "remainingOwnerDecisions": [
+        "SOURCE_ACCOUNTING_DOMAIN",
+        "AFCD_PAIRED_SOURCE_CONVENTION_LIMITS",
+        "EXACT_INTERVALS_AND_DISPLAY_PRECISIONS",
+        "NAMED_PREPARATION_VERSION",
+        "LOW_DISCLOSURE"
+      ],
+      "biologicalBoundEstablished": false
+    }
+  ],
+  "comparisons": [
+    {
+      "cap": "50",
+      "fullWidthBudget": "0.05",
+      "wholeRecipeCandidates": 2,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 5,
+      "broaderSpeciesBudgetMatches": 2,
+      "newPublishable": 0
+    },
+    {
+      "cap": "50",
+      "fullWidthBudget": "0.10",
+      "wholeRecipeCandidates": 2,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 5,
+      "broaderSpeciesBudgetMatches": 2,
+      "newPublishable": 0
+    },
+    {
+      "cap": "50",
+      "fullWidthBudget": "0.25",
+      "wholeRecipeCandidates": 2,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 5,
+      "broaderSpeciesBudgetMatches": 2,
+      "newPublishable": 0
+    },
+    {
+      "cap": "50",
+      "fullWidthBudget": "0.50",
+      "wholeRecipeCandidates": 2,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 5,
+      "broaderSpeciesBudgetMatches": 2,
+      "newPublishable": 0
+    },
+    {
+      "cap": "100",
+      "fullWidthBudget": "0.05",
+      "wholeRecipeCandidates": 1,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 3,
+      "broaderSpeciesBudgetMatches": 1,
+      "newPublishable": 0
+    },
+    {
+      "cap": "100",
+      "fullWidthBudget": "0.10",
+      "wholeRecipeCandidates": 2,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 5,
+      "broaderSpeciesBudgetMatches": 2,
+      "newPublishable": 0
+    },
+    {
+      "cap": "100",
+      "fullWidthBudget": "0.25",
+      "wholeRecipeCandidates": 2,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 5,
+      "broaderSpeciesBudgetMatches": 2,
+      "newPublishable": 0
+    },
+    {
+      "cap": "100",
+      "fullWidthBudget": "0.50",
+      "wholeRecipeCandidates": 2,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 5,
+      "broaderSpeciesBudgetMatches": 2,
+      "newPublishable": 0
+    },
+    {
+      "cap": "120",
+      "fullWidthBudget": "0.05",
+      "wholeRecipeCandidates": 1,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 1,
+      "broaderSpeciesBudgetMatches": 1,
+      "newPublishable": 0
+    },
+    {
+      "cap": "120",
+      "fullWidthBudget": "0.10",
+      "wholeRecipeCandidates": 2,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 3,
+      "broaderSpeciesBudgetMatches": 2,
+      "newPublishable": 0
+    },
+    {
+      "cap": "120",
+      "fullWidthBudget": "0.25",
+      "wholeRecipeCandidates": 2,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 5,
+      "broaderSpeciesBudgetMatches": 2,
+      "newPublishable": 0
+    },
+    {
+      "cap": "120",
+      "fullWidthBudget": "0.50",
+      "wholeRecipeCandidates": 2,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 5,
+      "broaderSpeciesBudgetMatches": 2,
+      "newPublishable": 0
+    },
+    {
+      "cap": "150",
+      "fullWidthBudget": "0.05",
+      "wholeRecipeCandidates": 0,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 1,
+      "broaderSpeciesBudgetMatches": 0,
+      "newPublishable": 0
+    },
+    {
+      "cap": "150",
+      "fullWidthBudget": "0.10",
+      "wholeRecipeCandidates": 2,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 3,
+      "broaderSpeciesBudgetMatches": 2,
+      "newPublishable": 0
+    },
+    {
+      "cap": "150",
+      "fullWidthBudget": "0.25",
+      "wholeRecipeCandidates": 2,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 5,
+      "broaderSpeciesBudgetMatches": 2,
+      "newPublishable": 0
+    },
+    {
+      "cap": "150",
+      "fullWidthBudget": "0.50",
+      "wholeRecipeCandidates": 2,
+      "targetOnlyCandidates": 5,
+      "physicalMassBudgetMatches": 5,
+      "broaderSpeciesBudgetMatches": 2,
+      "newPublishable": 0
+    }
+  ],
+  "conditionalArithmeticCandidates": 2,
+  "newPublishable": 0,
+  "productionEnabled": false,
+  "ownerApproval": {
+    "marjoramBindings": true,
+    "nakkiSevenAliases": true,
+    "cMethod": false,
+    "publication": false
+  }
+}
