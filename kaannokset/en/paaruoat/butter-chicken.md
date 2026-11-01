@@ -1,110 +1,121 @@
 ---
-title: Butter chicken in tomato cream sauce
+title: Butter chicken – weighed honey version
 recipe_id: butter-chicken
 url_slug: butter-chicken
 category: paaruoka
 language: en
 status: published
 servings: 4
-carbs_net_per_serving_g: 12.99
-carbs_total_per_serving_g: 13.66
-protein_per_serving_g: 37.37
-fat_per_serving_g: 36.17
+carbs_net_per_serving_g: 11.54
+carbs_total_per_serving_g: 13.17
+protein_per_serving_g: 38.73
+fat_per_serving_g: 36.96
 time_total_min: 60
 main_ingredient:
-  - broileri
-  - tomaatti
+- broileri
+- tomaatti
 cooking_method:
-  - liesi
-  - paistinpannu
+- liesi
+- paistinpannu
 difficulty: medium
 tags:
-  - Indian
-  - chicken
-  - curry
+- Indian
+- chicken
+- curry
 image:
   src: paaruoat/butter-chicken.webp
   alt: Butter chicken in a velvety tomato sauce, coriander and basmati rice
   width: 1280
   height: 853
 ingredients:
-  - amount: 700
-    unit: g
-    item: chicken thigh meat
-    note: cut into bite-sized pieces
-  - amount: 150
-    unit: g
-    item: plain yogurt
-  - amount: 1
-    unit: tbsp
-    item: lemon juice
-  - amount: 2
-    unit: tsp
-    item: garam masala
-  - amount: 1
-    unit: tsp
-    item: ground cumin
-  - amount: 1
-    unit: tsp
-    item: salt
-  - amount: 30
-    unit: g
-    item: butter
-  - amount: 1
-    unit: piece
-    item: onion
-    note: "finely chopped"
-  - amount: 2
-    unit: piece
-    item: a clove of garlic
-    note: "finely chopped"
-  - amount: 20
-    unit: g
-    item: fresh ginger
-    note: grated
-  - amount: 400
-    unit: g
-    item: crushed tomatoes
-  - amount: 2
-    unit: dl
-    item: "whipping cream"
-  - amount: 1
-    unit: tsp
-    item: paprika powder
-  - amount: 1
-    unit: tbsp
-    item: honey
-    note: optional
-  - amount: 10
-    unit: g
-    item: fresh coriander
-    note: "Chopped, for serving."
-  - amount: 15
-    unit: ml
-    item: oil
-    note: "For browning the chicken."
+- amount: 700
+  unit: g
+  item: raw skinless boneless chicken thigh meat
+- amount: 150
+  unit: g
+  item: plain lactose-free Greek yogurt, 7% fat
+- amount: 15
+  unit: g
+  item: lemon juice
+- amount: 1.5
+  unit: g
+  item: ground coriander
+- amount: 1
+  unit: g
+  item: ground cumin
+- amount: 0.6
+  unit: g
+  item: ground cinnamon
+- amount: 0.4
+  unit: g
+  item: ground cardamom
+- amount: 0.2
+  unit: g
+  item: ground cloves
+- amount: 0.3
+  unit: g
+  item: ground black pepper
+- amount: 2
+  unit: g
+  item: ground cumin
+- amount: 30
+  unit: g
+  item: butter
+- amount: 55
+  unit: g
+  item: onion
+- amount: 7
+  unit: g
+  item: peeled fresh garlic
+- amount: 20
+  unit: g
+  item: fresh peeled ginger
+- amount: 400
+  unit: g
+  item: crushed tomatoes
+- amount: 200
+  unit: g
+  item: whipping cream, 38% fat
+- amount: 2
+  unit: g
+  item: paprika powder
+- amount: 21
+  unit: g
+  item: honey
+- amount: 10
+  unit: g
+  item: fresh coriander
+- amount: 13.5
+  unit: g
+  item: olive oil
+- amount: null
+  unit: ''
+  item: salt to taste
 source_language: fi
 source_recipe: reseptit/paaruoat/butter-chicken.md
 translation_of: butter-chicken
 ---
 
-# Butter chicken in tomato cream sauce
-
-Softly seasoned butter chicken is cooked in yogurt marinade and a rich tomato-cream sauce. Serve with basmati rice or naan bread.
+# Butter chicken – weighed honey version
 
 ## Description
 
-Softly seasoned butter chicken is cooked in yogurt marinade and a rich tomato-cream sauce. Serve with basmati rice or naan bread.
+Butter chicken – weighed honey version.
 
-## Preparation
+## Ingredients
 
-1. Mix yogurt, lemon juice, garam masala, cumin and half the salt. Add the chicken and leave to marinate for at least 20 minutes.
-2. Brown the chicken in a pan in batches in a splash of oil. Set aside.
-3. Melt the butter in a pan. Saute the onion until soft. Add garlic, ginger and paprika; fry for a minute.
-4. Add crushed tomatoes and simmer for 10 minutes. Purée the sauce if desired.
-5. Stir in the cream and add the honey if desired. Add the chicken and simmer for 10–15 minutes, until cooked through.
-6. Season with the remaining salt and serve garnished with coriander.
+The weighed ingredients are shown above.
+
+## Instructions
+
+1. Weigh all listed edible ingredients. Do not add unlisted oil or side dishes.
+2. Mix the six garam masala spices (4 g in total), the additional 2 g cumin, yogurt and lemon juice. Marinate 700 g skinless edible chicken thigh meat for 20 min.
+3. Brown the chicken in the olive oil, retaining all marinade. Soften the onion in the butter, then add garlic, ginger and paprika. Add the crushed tomatoes and simmer for 10 min.
+4. Add cream, 21 g honey, chicken and all marinade. Cook the chicken throughout to at least 75 °C. Finish with coriander and divide all meat and sauce into four portions. Side dishes are excluded.
+5. Cook every part that contains raw animal ingredients thoroughly. Consume all ingredients and pan juices. Raw ingredient composition is a nutrient-retention proxy; unmeasured losses are not deducted.
 
 ## Notes
 
-- The salt content and heat of garam masala vary between brands.
+The GL is a modeled ingredient-sum estimate with low confidence, not a measured meal response. All available carbohydrate is included; no biological uncertainty interval is known. The photograph illustrates serving only; unlisted side dishes are excluded from the nutrition and GL estimates.
+
+This version includes all 21 g honey and all marinade. Prepare the six listed garam masala spices separately from the additional 2 g cumin. Rice and naan are excluded.

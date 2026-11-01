@@ -1,0 +1,79 @@
+{
+  "recipes": [
+    {
+      "recipeId": "butter-chicken",
+      "before": {
+        "carbs_net_per_serving_g": 12.99,
+        "carbs_total_per_serving_g": 13.66,
+        "protein_per_serving_g": 37.37,
+        "fat_per_serving_g": 36.17
+      },
+      "after": {
+        "carbsNetG": 11.54,
+        "carbsTotalG": 13.17,
+        "proteinG": 38.73,
+        "fatG": 36.96
+      }
+    },
+    {
+      "recipeId": "som-tam-vhh-kurkkuna",
+      "before": {
+        "carbs_net_per_serving_g": 4.92,
+        "carbs_total_per_serving_g": 9.76,
+        "protein_per_serving_g": 3.96,
+        "fat_per_serving_g": 3.7
+      },
+      "after": {
+        "carbsNetG": 5.33,
+        "carbsTotalG": 9.7,
+        "proteinG": 3.78,
+        "fatG": 4.24
+      }
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-harissa-shakshuka",
+      "before": {
+        "carbs_net_per_serving_g": 5.7,
+        "carbs_total_per_serving_g": 7.37,
+        "protein_per_serving_g": 7.98,
+        "fat_per_serving_g": 12.24
+      },
+      "after": {
+        "carbsNetG": 5.81,
+        "carbsTotalG": 7.77,
+        "proteinG": 8.08,
+        "fatG": 12.81
+      }
+    },
+    {
+      "recipeId": "moo-ping-vhh",
+      "before": {
+        "carbs_net_per_serving_g": 2,
+        "carbs_total_per_serving_g": 4.44,
+        "protein_per_serving_g": 34.86,
+        "fat_per_serving_g": 34.69
+      },
+      "after": {
+        "carbsNetG": 2.16,
+        "carbsTotalG": 4.81,
+        "proteinG": 33.14,
+        "fatG": 33.56
+      }
+    },
+    {
+      "recipeId": "lanttulaatikko-kermainen",
+      "before": {
+        "carbs_net_per_serving_g": 16.68,
+        "carbs_total_per_serving_g": 20.33,
+        "protein_per_serving_g": 4.75,
+        "fat_per_serving_g": 24.83
+      },
+      "after": {
+        "carbsNetG": 13.11,
+        "carbsTotalG": 16.79,
+        "proteinG": 4.82,
+        "fatG": 25.98
+      }
+    }
+  ]
+}

@@ -54,7 +54,7 @@ test("all published translations match the source structure and known critical t
   assert.ok(somTam, "som tam has a published Thai version");
   assert.equal(somTam.data.url_slug, "som-tam-taeng-kwa-vhh");
   assert.equal(somTam.data.source_recipe, "reseptit/alkuruoat/som-tam-vhh-kurkkuna.md");
-  assert.equal(somTam.data.ingredients.length, 9);
+  assert.equal(somTam.data.ingredients.length, 10); // weighed version includes pure salt separately
 });
 
 test("a targeted translation audit contains only the requested recipe and its pairs", async () => {
@@ -187,29 +187,10 @@ test("fish-stock prose regressions include titles, descriptions, notes and image
   }
 });
 
-test("butter chicken quantifies frying oil and preserves optional honey and cooking meaning", async () => {
-  const result = await auditTranslations();
-  const recipes = [...result.publishedSources, ...result.publishedTranslations];
-  const expectations = {
-    fi: { oil: "öljyä", optional: /halutessasi hunaja/, aside: /Nosta sivuun/, minute: /minuutti/ },
-    en: { oil: "oil", optional: /honey if desired/, aside: /Set aside/, minute: /a minute/ },
-    sv: { oil: "olja", optional: /honung om du vill/, aside: /Lägg åt sidan/, minute: /en minut/ },
-    th: { oil: "น้ำมัน", optional: /น้ำผึ้งหากต้องการ/, aside: /ตักพักไว้/, minute: /หนึ่งนาที/ },
-  };
-  for (const [locale, expected] of Object.entries(expectations)) {
-    const recipe = recipes.find((r) => r.data.recipe_id === "butter-chicken" && r.data.language === locale)!;
-    assert.ok(recipe, locale);
-    const oil = recipe.data.ingredients.filter((i) => i.item === expected.oil);
-    assert.equal(oil.length, 1, `${locale}: frying oil must appear exactly once`);
-    assert.equal(oil[0].amount, 15, `${locale}: frying oil amount`);
-    assert.equal(oil[0].unit, "ml");
-    assert.ok(oil[0].note);
-    assert.match(recipe.content.match(/^2\. (.+)$/m)?.[1] ?? "", expected.aside);
-    assert.match(recipe.content.match(/^3\. (.+)$/m)?.[1] ?? "", expected.minute);
-    assert.match(recipe.content.match(/^5\. (.+)$/m)?.[1] ?? "", expected.optional);
-    assert.equal(recipe.data.servings, 4);
-    assert.equal(recipe.data.time_total_min, 60);
-  }
+test("weighed butter chicken retains one13.5g olive oil input, fixed21g honey and all marinade in every locale", async () => {
+ const result=await auditTranslations();const all=[...result.publishedSources,...result.publishedTranslations];
+ const terms={fi:{oil:"oliiviöljyä",honey:"hunajaa",all:/koko marinadi/,cook:/75/},en:{oil:"olive oil",honey:"honey",all:/all marinade/,cook:/75/},sv:{oil:"olivolja",honey:"honung",all:/hela marinaden/,cook:/75/},th:{oil:"น้ำมันมะกอก",honey:"น้ำผึ้ง",all:/น้ำหมักทั้งหมด/,cook:/75/}};
+ for(const [locale,expected] of Object.entries(terms)){const r=all.find(r=>r.data.recipe_id==="butter-chicken"&&r.data.language===locale)!;assert.ok(r);const oil=r.data.ingredients.filter(i=>i.item===expected.oil);assert.equal(oil.length,1);assert.equal(oil[0].amount,13.5);assert.equal(oil[0].unit,"g");const honey=r.data.ingredients.find(i=>i.item===expected.honey)!;assert.ok(honey);assert.equal(honey.amount,21);assert.equal(honey.unit,"g");assert.match(r.content,expected.all);assert.match(r.content,expected.cook);assert.equal(r.data.servings,4);assert.equal(r.data.time_total_min,60);}
 });
 
 test("Italian bake timing is an explicit estimate including preparation, baking and rest in all locales", async () => {
