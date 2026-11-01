@@ -1,10 +1,10 @@
 {
   "recipeId": "meksikolainen-atole-maissipuuro",
-  "sourceHash": "d5be324aee30b3ec3b1c85d9b3454f5ad007671d0d2b74a5ea70c4731aac0b17",
-  "calculatedAt": "2026-10-24",
-  "batchId": "batch-14",
+  "sourceHash": "d3847d32f79ea0bfa1d37f10e92530fe10abcf14dcfda7524914bc8e506c7d7c",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-82",
   "servings": 2,
-  "scope": "Two servings. Uses 100 g finely ground cornmeal, 200 ml whole milk and 700 ml water, plus one teaspoon cinnamon and vanilla extract. This resolves the optional milk-or-water ingredient as both specified milk and water in the recipe.",
+  "scope": "Complete weighed candidate, all edible ingredients and liquid retained, raw-input nutrient proxies explicitly disclosed",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -12,19 +12,15 @@
       "item": "hienoksi jauhettua maissijauhoa",
       "amount": 100,
       "unit": "g",
-      "state": "fine-ground cornmeal as sold",
-      "matchEvidence": "Fineli Release 20 record 29823 is finely ground cornmeal, matching the specified fine corn flour.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "fine-ground corn flour as sold",
+      "matchEvidence": "Fine non-nixtamalized cornmeal simmered to fully gelatinized hot porridge; Chinese cornmeal-porridge human point is applied LOW analogy. Not raw flour, fried tortilla or maize starch GI.",
       "record": {
         "id": "fineli-29823-release-20",
         "name": "JAUHO, MAISSIJAUHO, HIENOKSI JAUHETTU",
         "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29823",
         "retrievedAt": "2026-10-24",
         "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "fine-ground cornmeal as sold",
+        "state": "fine-ground corn flour as sold",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "componentValues": {
@@ -46,27 +42,25 @@
           "protein": 5.59,
           "fat": 1.39
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "maito",
       "amount": 200,
-      "unit": "ml",
-      "state": "whole cow milk as sold",
-      "matchEvidence": "Fineli Release 20 record 689 is whole milk with added vitamin D, the closest generic full-fat milk entry.",
-      "gramsPerUnit": 1,
-      "conversionEvidence": "For liquid milk, 1 ml is represented as 1 g.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "unit": "g",
+      "state": "whole cow milk as sold, 3.5% fat",
+      "matchEvidence": "Atkinson unsweetened animal-dairy published coding assignment, not measured ingredient GI.",
       "record": {
         "id": "fineli-689-release-20",
         "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
         "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/689",
         "retrievedAt": "2026-10-24",
         "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "whole cow milk as sold",
+        "state": "whole cow milk as sold, 3.5% fat",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "componentValues": {
@@ -88,27 +82,25 @@
           "protein": 3,
           "fat": 3.5
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
-      "item": "kaneli",
-      "amount": 1,
-      "unit": "tl",
-      "state": "dried ground cinnamon",
-      "matchEvidence": "AFCD Release 3 record F002963 is dried ground cinnamon; one level teaspoon is represented as 2.6 g.",
-      "gramsPerUnit": 2.6,
-      "conversionEvidence": "One level teaspoon of ground cinnamon is represented as 2.6 g.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "item": "jauhettua kanelia",
+      "amount": 2.6,
+      "unit": "g",
+      "state": "ground cinnamon",
+      "matchEvidence": "Named fixed culinary ground spice, herb, seed or vanilla-extract dose; explicit own project extension. Complete composition, <=0.5 g CHO each/serving and <=1 g aggregate checked, no measured GI or biological bound.",
       "record": {
         "id": "afcd-F002963-release-3",
         "name": "Cinnamon, dried, ground",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "dried ground cinnamon",
+        "state": "ground cinnamon",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -120,27 +112,25 @@
           "protein": 4,
           "fat": 1.2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "vaniljauutetta",
-      "amount": 1,
-      "unit": "tl",
-      "state": "vanilla bean extract as sold",
-      "matchEvidence": "AFCD Release 3 record F009350 is vanilla bean extract; a teaspoon is 5 g.",
-      "gramsPerUnit": 5,
-      "conversionEvidence": "One teaspoon vanilla extract is represented as 5 g.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "amount": 5,
+      "unit": "g",
+      "state": "vanilla bean extract",
+      "matchEvidence": "Named fixed culinary ground spice, herb, seed or vanilla-extract dose; explicit own project extension. Complete composition, <=0.5 g CHO each/serving and <=1 g aggregate checked, no measured GI or biological bound.",
       "record": {
         "id": "afcd-F009350-release-3",
         "name": "Vanilla bean extract",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "vanilla bean extract as sold",
+        "state": "vanilla bean extract",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -152,27 +142,25 @@
           "protein": 0.1,
           "fat": 0.1
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "vettä",
       "amount": 700,
-      "unit": "ml",
-      "state": "tap water",
-      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
-      "gramsPerUnit": 1,
-      "conversionEvidence": "Tap water density represented as 1 g/ml; Fineli record 922 confirms zero energy and macronutrients.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "unit": "g",
+      "state": "plain tap water",
+      "matchEvidence": "Explicit zero available CHO composition, not a zero GI assignment",
       "record": {
         "id": "fineli-922-release-20",
         "name": "VESI, VESIJOHTOVESI",
         "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
         "retrievedAt": "2026-10-24",
         "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "tap water",
+        "state": "plain tap water",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "componentValues": {
@@ -194,19 +182,18 @@
           "protein": 0,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
-      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "state": "pure salt",
+      "excludedReason": "Pure salt has zero of the four macros",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -214,7 +201,11 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
     }
   ]
 }

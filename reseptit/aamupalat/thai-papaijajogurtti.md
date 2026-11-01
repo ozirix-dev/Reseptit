@@ -1,64 +1,68 @@
 ---
-title: "Papaija-limejogurtti paahdetulla kookoksella"
+title: Papaijajogurtti tuoreella kookoksella
 recipe_id: thai-papaijajogurtti
 url_slug: thai-papaijajogurtti
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "papaija"
-  - "jogurtti"
-  - "kookoshiutale"
+- papaija
+- jogurtti
+- kookoshiutale
 cooking_method:
-  - "paistaminen"
+- paistaminen
 ingredients:
-  - amount: 200
-    unit: g
-    item: papaija
-  - amount: 200
-    unit: g
-    item: jogurtti
-  - amount: 15
-    unit: g
-    item: kookoshiutale
-  - amount: 15
-    unit: g
-    item: limettimehua
-  - amount: null
-    unit: ""
-    item: suolaa maun mukaan
+- amount: 200
+  unit: g
+  item: papaija
+- amount: 200
+  unit: g
+  item: jogurtti
+- amount: 15
+  unit: g
+  item: tuoretta kypsän kookospähkinän hedelmälihaa
+- amount: 15
+  unit: g
+  item: limettimehua
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 servings: 2
 time_total_min: 25
 difficulty: Helppo
 tags:
-  - "aamupala"
-  - "thaimaalainen"
-  - "aamiaisruoka"
+- aamupala
+- thaimaalainen
+- aamiaisruoka
 image:
   src: aamupalat/thai-papaijajogurtti.webp
-  alt: "Papaija-limejogurtti paahdetulla kookoksella tarjoiltuna aamiaisella"
+  alt: Papaija-limejogurtti paahdetulla kookoksella tarjoiltuna aamiaisella
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 12.44
-carbs_total_per_serving_g: 15.96
-protein_per_serving_g: 3.98
-fat_per_serving_g: 8.81
-
+carbs_net_per_serving_g: 12.14
+carbs_total_per_serving_g: 15.12
+protein_per_serving_g: 3.75
+fat_per_serving_g: 6.37
 ---
 
-# Papaija-limejogurtti paahdetulla kookoksella
+# Papaijajogurtti tuoreella kookoksella
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan papaija-limejogurtti paahdetulla kookoksella. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Papaijajogurtti tuoreella kookoksella. Täsmällinen versio 2 annokselle.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Valmistele kulhon ainekset; kypsennä pavut tai proteiini, jos käytät niitä kuivina tai raakana. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
-2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
-3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Ripottele pinnalle paahdettua kookosta ja purista joukkoon limeä.
+1. Tuoreen kookoksen versio: punnitse 200 g kuorittua raakaa papaijaa paloina, ei soseena.
+2. Sekoita 200 g makeuttamatonta jogurttia ja 15 g limettimehua. Lisää 15 g tuoretta kypsän kookospähkinän raastettua hedelmälihaa.
+3. Jaa kaikki jogurtti, papaija ja kookos kahteen annokseen. Ei kuivattua kookosta tai lisättyä makeutusta.
+
+## Muistiinpanot
+
+Mallinnettu GK-arvio perustuu ainesosiin, julkaistuihin GI-vertailuihin ja nimettyihin laskennallisiin oletuksiin. Luottamus on matala. Kaikki imeytyvät hiilihydraatit ovat mukana. Biologista epävarmuusväliä ei tunneta. Tuotteiden koostumus ja annoskoko vaikuttavat arvioon.
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
+Tämä versio käyttää tuoretta kookoksen hedelmälihaa, ei kuivattua kookosta.

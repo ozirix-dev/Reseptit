@@ -1,5 +1,5 @@
 ---
-title: Pienet tonnikalamunakkaat uunissa
+title: Pienet tonnikalamunakkaat uunissa – punnittu versio
 recipe_id: tonnikalamunakkaat-uunissa
 url_slug: tonnikalamunakkaat-uunissa
 category: aamupala
@@ -7,39 +7,42 @@ language: fi
 status: published
 diet_class: keto
 main_ingredient:
-  - kananmuna
+- kananmuna
 cooking_method:
-  - paistaminen
+- paistaminen
 ingredients:
-  - amount: 4
-    unit: kpl
-    item: kananmunaa
-  - amount: 120
-    unit: g
-    item: tonnikalaa vedessä valutettuna
-  - amount: 50
-    unit: g
-    item: juustoraastetta
-  - amount: 2
-    unit: rkl
-    item: kuohukermaa
-  - amount: 1
-    unit: rkl
-    item: silputtua tilliä
-  - amount: null
-    unit: ""
-    item: mustapippuria ja tarvittaessa suolaa
-carbs_net_per_serving_g: 0.53
-carbs_total_per_serving_g: 0.58
-protein_per_serving_g: 23.13
-fat_per_serving_g: 15.93
+- amount: 220
+  unit: g
+  item: kananmunaa kuorettomana
+- amount: 120
+  unit: g
+  item: tonnikalaa vedessä valutettuna
+- amount: 50
+  unit: g
+  item: emmentaljuustoa
+- amount: 30
+  unit: g
+  item: 38% kuohukermaa
+- amount: 2.5
+  unit: g
+  item: tuoretta tilliä
+- amount: 0.5
+  unit: g
+  item: jauhettua mustapippuria
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
+carbs_net_per_serving_g: 0.58
+carbs_total_per_serving_g: 0.65
+protein_per_serving_g: 23.11
+fat_per_serving_g: 15.95
 servings: 3
 time_total_min: 25
 difficulty: Helppo
 tags:
-  - aamupala
-  - kananmuna
-  - munaruoka
+- aamupala
+- kananmuna
+- munaruoka
 image:
   src: aamupalat/tonnikalamunakkaat-uunissa.webp
   alt: Pienet tonnikala- ja munamuffinit lautasella
@@ -47,17 +50,11 @@ image:
   height: 1024
 ---
 
-# Pienet tonnikalamunakkaat uunissa
-
-## Kuvaus
-
-Tonnikala, kananmuna ja juusto paistuvat pieniksi suolaisiksi aamupalapaloiksi muffinivuoassa.
-
-## Ainekset
-
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+# Pienet tonnikalamunakkaat uunissa – punnittu versio
 
 ## Valmistus
+
+Punnitse yllä luetellut syötävät raaka-aineet grammoina, kananmunat ilman kuorta. Käytä vain lueteltu rasva ja mausteet.
 
 1. Lämmitä uuni 190 asteeseen ja voitele kuusi muffinivuokaa.
 2. Valuta tonnikala hyvin ja murenna se kulhossa. Lisää munat, kerma, juusto ja tilli.
@@ -65,6 +62,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 4. Paista 15–18 minuuttia, kunnes munakkaat ovat kohonneet ja keskeltä hyytyneet.
 5. Anna jäähtyä muutama minuutti ennen irrottamista.
 
+Syö kaikki luetellut ainekset ja kastike/pannuneste ilmoitettuna annosmääränä. Raakojen ainesten koostumus toimii kypsän ruoan ravintoarvoproxyna; mittaamatonta kypsennyshävikkiä ei vähennetä.
+
 ## Muistiinpanot
 
-Muffinipellin sijasta voit käyttää silikonivuokia. Tonnikala kannattaa valuttaa huolellisesti, jotta rakenne ei jää vetiseksi.
+Mallinnettu ainesosakohtainen GK perustuu julkaistuun GI-koodaukseen ja nimettyihin projektin soveltamisrajoihin. Luottamus on matala; biologista epävarmuusväliä ei tunneta. Kaikki imeytyvät hiilihydraatit ovat mukana. Kuva on kuvituskuva: ylimääräiset lisukkeet eivät kuulu arvioon.

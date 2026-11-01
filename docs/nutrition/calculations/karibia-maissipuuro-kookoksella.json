@@ -1,10 +1,10 @@
 {
   "recipeId": "karibia-maissipuuro-kookoksella",
-  "sourceHash": "71002c65ca3d8cbb034e00dc15c3ab6f0fc5a5013f4b67000ea0e58e959342c8",
-  "calculatedAt": "2026-10-25",
-  "batchId": "batch-16",
+  "sourceHash": "15e2e1f55466ba162625bec3f762710febe8dfc462a5bdc6caa8d931076cc495",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-82",
   "servings": 2,
-  "scope": "Two servings; 100 g fine-ground maize flour, 200 ml canned regular-fat coconut milk, one teaspoon vanilla extract, 700 ml water; cinnamon bounded as a small seasoning and salt omitted.",
+  "scope": "Complete weighed candidate, all edible ingredients and liquid retained, raw-input nutrient proxies explicitly disclosed",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -13,11 +13,7 @@
       "amount": 100,
       "unit": "g",
       "state": "fine-ground corn flour as sold",
-      "matchEvidence": "Fineli Release 20 record 29823 is fine-ground maize flour, matching the listed corn flour.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Fine non-nixtamalized cornmeal simmered to fully gelatinized hot porridge; Chinese cornmeal-porridge human point is applied LOW analogy. Not raw flour, fried tortilla or maize starch GI.",
       "record": {
         "id": "fineli-29823-release-20",
         "name": "JAUHO, MAISSIJAUHO, HIENOKSI JAUHETTU",
@@ -46,20 +42,18 @@
           "protein": 5.59,
           "fat": 1.39
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "kookosmaito",
-      "amount": 200,
-      "unit": "ml",
+      "amount": 184.0,
+      "unit": "g",
       "state": "regular-fat canned coconut milk as sold",
-      "matchEvidence": "The recipe specifies coconut milk without a reduced-fat variant; AFCD record F002991 is canned regular-fat coconut milk.",
-      "gramsPerUnit": 0.92,
-      "conversionEvidence": "Canned regular-fat coconut milk represented at 0.92 g/ml, consistent with prior ingredient-specific batch conversions.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
       "record": {
         "id": "afcd-F002991-release-3",
         "name": "Coconut, milk, canned, regular fat",
@@ -78,40 +72,48 @@
           "protein": 1.4,
           "fat": 15.4
         }
-      }
-    },
-    {
-      "item": "kaneli",
-      "amount": 1,
-      "unit": "tl",
-      "state": "small ground cinnamon seasoning omitted under a conservative bound",
-      "matchEvidence": "One teaspoon of cinnamon is a small seasoning dose; the estimate conservatively bounds its per-serving contribution.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Small cinnamon contribution omitted under the documented seasoning tolerance.",
-      "omissionImpactUpperBoundPerServing": {
-        "kcal": 2,
-        "netCarbohydrate": 0.2,
-        "totalCarbohydrate": 0.3,
-        "protein": 0.1,
-        "fat": 0.1
       },
-      "omissionImpactEvidence": "A 2 g teaspoon across two servings is bounded well below 1 g per serving for each displayed macro and 10 kcal."
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
-      "item": "vanilja",
-      "amount": 1,
-      "unit": "tl",
-      "state": "vanilla bean extract",
-      "matchEvidence": "Vanilla flavour is represented by AFCD Release 3 vanilla bean extract F009350.",
-      "gramsPerUnit": 5,
-      "conversionEvidence": "One teaspoon of vanilla extract is represented as 5 g.",
+      "item": "jauhettua kanelia",
+      "amount": 2.6,
+      "unit": "g",
+      "state": "ground cinnamon",
+      "matchEvidence": "Named fixed culinary ground spice, herb, seed or vanilla-extract dose; explicit own project extension. Complete composition, <=0.5 g CHO each/serving and <=1 g aggregate checked, no measured GI or biological bound.",
+      "record": {
+        "id": "afcd-F002963-release-3",
+        "name": "Cinnamon, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground cinnamon",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 27.5,
+          "fibre": 53.1,
+          "polyols": 0,
+          "protein": 4,
+          "fat": 1.2
+        }
+      },
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
+    },
+    {
+      "item": "vaniljauutetta",
+      "amount": 5,
+      "unit": "g",
+      "state": "vanilla bean extract",
+      "matchEvidence": "Named fixed culinary ground spice, herb, seed or vanilla-extract dose; explicit own project extension. Complete composition, <=0.5 g CHO each/serving and <=1 g aggregate checked, no measured GI or biological bound.",
       "record": {
         "id": "afcd-F009350-release-3",
         "name": "Vanilla bean extract",
@@ -130,20 +132,18 @@
           "protein": 0.1,
           "fat": 0.1
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "vettä",
       "amount": 700,
-      "unit": "ml",
+      "unit": "g",
       "state": "plain tap water",
-      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
-      "gramsPerUnit": 1,
-      "conversionEvidence": "Water is represented at 1 g/ml.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit zero available CHO composition, not a zero GI assignment",
       "record": {
         "id": "fineli-922-release-20",
         "name": "VESI, VESIJOHTOVESI",
@@ -172,19 +172,18 @@
           "protein": 0,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "salt omitted; no contribution to displayed macronutrients",
-      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "state": "pure salt",
+      "excludedReason": "Pure salt has zero of the four macros",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -192,7 +191,11 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
     }
   ]
 }

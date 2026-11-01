@@ -1,25 +1,19 @@
 {
   "recipeId": "meksikolainen-huevos-a-la-mexicana",
-  "sourceHash": "65d0eec4b2c45b0f3978c9ed6a4a0385e5150cfb6661ec6f45ebeb0a2ebfd06d",
-  "calculatedAt": "2026-10-24",
-  "batchId": "batch-14",
+  "sourceHash": "a0f7b6c105e515e3248067e37e2c472c92cce301e954ce4fcb28cd3485e46574",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-81",
   "servings": 2,
-  "scope": "Two servings. Uses two medium eggs (55 g edible each), one medium tomato and onion, 15 g fresh jalapeño (proxied with AFCD green chilli), and listed pan oil counted fully retained.",
+  "scope": "Complete weighed candidate; all edible ingredients and listed liquid retained. Raw-input composition proxies and LOW preparation analogues disclosed.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
       "item": "kananmuna",
-      "amount": 2,
-      "unit": "kpl",
+      "amount": 110,
+      "unit": "g",
       "state": "raw edible egg, shell removed",
-      "matchEvidence": "Raw edible egg; Fineli Release 20 record 858.",
-      "gramsPerUnit": 55,
-      "conversionEvidence": "Fineli record 858 medium egg portion KPL_M = 55 g edible egg without shell.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
       "record": {
         "id": "fineli-858-release-20",
         "name": "KANANMUNA, KUORETON",
@@ -48,20 +42,18 @@
           "protein": 12.61,
           "fat": 9.24
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "tomaatti",
-      "amount": 1,
-      "unit": "kpl",
+      "amount": 125,
+      "unit": "g",
       "state": "raw medium tomato, edible portion",
-      "matchEvidence": "Raw tomato; Fineli Release 20 record 352.",
-      "gramsPerUnit": 125,
-      "conversionEvidence": "Fineli record 352 medium tomato portion KPL_M = 125 g.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
       "record": {
         "id": "fineli-352-release-20",
         "name": "TOMAATTI",
@@ -90,20 +82,18 @@
           "protein": 0.55,
           "fat": 0.3
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "sipuli",
-      "amount": 1,
-      "unit": "kpl",
+      "amount": 55,
+      "unit": "g",
       "state": "raw yellow onion, medium edible portion",
-      "matchEvidence": "Raw yellow onion; Fineli Release 20 record 335.",
-      "gramsPerUnit": 55,
-      "conversionEvidence": "Fineli record 335 medium yellow onion portion KPL_M = 55 g.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
       "record": {
         "id": "fineli-335-release-20",
         "name": "SIPULI, KELTASIPULI",
@@ -132,18 +122,18 @@
           "protein": 1.25,
           "fat": 0.1
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "tuoretta jalapeñoa",
       "amount": 15,
       "unit": "g",
       "state": "fresh jalapeño represented by fresh green chilli",
-      "matchEvidence": "AFCD Release 3 has no jalapeño cultivar entry; F002896 fresh green chilli is the closest product proxy for this 15 g small chilli amount.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
       "record": {
         "id": "afcd-F002896-release-3",
         "name": "Chilli (chili), green, raw",
@@ -162,20 +152,18 @@
           "protein": 2.8,
           "fat": 0.3
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "neutraalia paistoöljyä",
-      "amount": 1,
-      "unit": "rkl",
+      "amount": 13.5,
+      "unit": "g",
       "state": "neutral vegetable cooking oil",
-      "matchEvidence": "Average neutral cooking oil; Fineli Release 20 record 541.",
-      "gramsPerUnit": 13.5,
-      "conversionEvidence": "Fineli record 541 lists 13.5 g per tablespoon (RKL). All listed pan oil is counted as retained.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit zero CHO composition; no assigned GI zero",
       "record": {
         "id": "fineli-541-release-20",
         "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
@@ -204,19 +192,19 @@
           "protein": 0,
           "fat": 99.9
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
-      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "state": "pure salt",
+      "matchEvidence": "Pure salt has no four-macro contribution",
+      "excludedReason": "Pure salt, sodium not calculated",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -224,7 +212,11 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
     }
   ]
 }

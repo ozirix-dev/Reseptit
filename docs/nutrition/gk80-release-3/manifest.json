@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "packId": "gk80-release-3",
+  "packVersion": 1,
+  "approvalState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+  "baseMain": "e8da2c9417e2aeff55a85d599b3b7e1ad465f36c",
+  "reviewedResearchCommit": "a332822fd29d054eb4c9510f07b22ee398404990",
+  "recipeIds": [
+    "shoyu-kanakeitto-konjac",
+    "indonesialainen-nasi-uduk-aamiaisella",
+    "thai-khao-tom-katkaravuilla",
+    "karibia-kookosriisi-pavuilla",
+    "pohjoisafrikkalainen-lablabi",
+    "meksikolainen-atole-maissipuuro",
+    "karibia-maissipuuro-kookoksella",
+    "meksikolainen-kurpitsapuuro-piloncillolla",
+    "lahi-ita-taatelipuuro-tahinilla",
+    "valimerellinen-tahinipuuro",
+    "thai-papaijajogurtti",
+    "lahi-ita-kikherne-shakshuka"
+  ],
+  "existingLocales": {
+    "shoyu-kanakeitto-konjac": [
+      "fi"
+    ],
+    "indonesialainen-nasi-uduk-aamiaisella": [
+      "fi"
+    ],
+    "thai-khao-tom-katkaravuilla": [
+      "fi"
+    ],
+    "karibia-kookosriisi-pavuilla": [
+      "fi"
+    ],
+    "pohjoisafrikkalainen-lablabi": [
+      "fi"
+    ],
+    "meksikolainen-atole-maissipuuro": [
+      "fi"
+    ],
+    "karibia-maissipuuro-kookoksella": [
+      "fi"
+    ],
+    "meksikolainen-kurpitsapuuro-piloncillolla": [
+      "fi"
+    ],
+    "lahi-ita-taatelipuuro-tahinilla": [
+      "fi"
+    ],
+    "valimerellinen-tahinipuuro": [
+      "fi"
+    ],
+    "thai-papaijajogurtti": [
+      "fi"
+    ],
+    "lahi-ita-kikherne-shakshuka": [
+      "fi"
+    ]
+  },
+  "policyDecisionsRequired": [
+    "Named weighed recipe versions, vegetable40/dairy30 coding, named lowCHO50 and small-flavour50 project limits",
+    "Hot jasmine rice, boiled pulse/pita/corn-porridge/oat/fruit analogues; LOW and no biological uncertainty bound",
+    "Raw-input/cooked-egg nutrient proxy and generic ingredient composition; fresh coconut and butternut variants"
+  ],
+  "languageScope": "All12 existing FI-only; UI modeling label FI/EN/SV/TH; no translation approval raised"
+}

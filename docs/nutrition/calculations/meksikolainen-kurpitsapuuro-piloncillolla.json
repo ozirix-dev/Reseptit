@@ -1,23 +1,19 @@
 {
   "recipeId": "meksikolainen-kurpitsapuuro-piloncillolla",
-  "sourceHash": "3a28c5c49582b31c24a66ee60586442ddde09b037ae565d604c53f410f526dcb",
-  "calculatedAt": "2026-10-25",
-  "batchId": "batch-15",
+  "sourceHash": "9cd969840881510c5e70c69c7043fa34e72236a02eaaee39c3bfaa0c75049d86",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-82",
   "servings": 2,
-  "scope": "Two servings; 100 g dry oats, 250 g peeled pumpkin, 1 tsp cinnamon, 30 g brown sugar and 500 ml water; salt omitted. Title and ingredient name align to brown sugar because no piloncillo source/product is specified.",
+  "scope": "Complete weighed candidate, all edible ingredients and liquid retained, raw-input nutrient proxies explicitly disclosed",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "kaurahiutale",
+      "item": "0,5–0,6 mm kaurahiutaleita",
       "amount": 100,
       "unit": "g",
       "state": "rolled oats, uncooked",
-      "matchEvidence": "AFCD Release 3 record F006143 is uncooked rolled oats with paired carbohydrate and polyol values.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Specify rolled oats0.5–0.6mm boiled10min and served hot; Elovena human preparation analogue. Not instant or steel-cut oats.",
       "record": {
         "id": "afcd-F006143-release-3",
         "name": "Oats, rolled, uncooked",
@@ -36,67 +32,55 @@
           "protein": 12.2,
           "fat": 9.5
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
-      "item": "kuorittua kurpitsaa",
+      "item": "kuorittua myskikurpitsaa",
       "amount": 250,
       "unit": "g",
-      "state": "raw pumpkin flesh, peeled edible portion",
-      "matchEvidence": "Fineli Release 20 record 350 is raw pumpkin; recipe amount specifies 250 g peeled edible flesh.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "raw butternut pumpkin, peeled edible portion",
+      "matchEvidence": "Named peeled butternut pieces boiled soft; not kabocha, unknown pumpkin variety or puree.",
       "record": {
-        "id": "fineli-350-release-20",
-        "name": "KURPITSA",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/350",
+        "id": "afcd-F007535-release-3",
+        "name": "Pumpkin, butternut, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "raw pumpkin flesh, peeled edible portion",
-        "basis": "per100g-edible",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw butternut pumpkin, peeled edible portion",
+        "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 2,
-          "FIBT": 2,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
         "per100g": {
-          "carbohydrate": 2,
-          "fibre": 2,
+          "carbohydrate": 6.9,
+          "fibre": 1.8,
           "polyols": 0,
-          "protein": 0.75,
-          "fat": 0.1
+          "protein": 2.1,
+          "fat": 0.6
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
-      "item": "kaneli",
-      "amount": 1,
-      "unit": "tl",
-      "state": "dried ground cinnamon",
-      "matchEvidence": "AFCD Release 3 record F002963 is dried ground cinnamon.",
-      "gramsPerUnit": 2.6,
-      "conversionEvidence": "One level teaspoon ground cinnamon is standardized to 2.6 g.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "item": "jauhettua kanelia",
+      "amount": 2.6,
+      "unit": "g",
+      "state": "ground cinnamon",
+      "matchEvidence": "Named fixed culinary ground spice, herb, seed or vanilla-extract dose; explicit own project extension. Complete composition, <=0.5 g CHO each/serving and <=1 g aggregate checked, no measured GI or biological bound.",
       "record": {
         "id": "afcd-F002963-release-3",
         "name": "Cinnamon, dried, ground",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "dried ground cinnamon",
+        "state": "ground cinnamon",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -108,18 +92,18 @@
           "protein": 4,
           "fat": 1.2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "fariinisokeri",
       "amount": 30,
       "unit": "g",
       "state": "brown sugar as sold",
-      "matchEvidence": "AFCD Release 3 record F008969 is brown sugar; recipe title and ingredient now consistently specify brown sugar instead of piloncillo.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Weighed brown sugar with separately sourced composition; sucrose60 human comparator is explicit LOW food analogue, not measured brown-sugar GI.",
       "record": {
         "id": "afcd-F008969-release-3",
         "name": "Sugar, brown",
@@ -138,27 +122,25 @@
           "protein": 0.2,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "vettä",
       "amount": 500,
-      "unit": "ml",
-      "state": "tap water",
-      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
-      "gramsPerUnit": 1,
-      "conversionEvidence": "Tap water density represented as 1 g/ml; Fineli record 922 confirms zero energy and macronutrients.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "unit": "g",
+      "state": "plain tap water",
+      "matchEvidence": "Explicit zero available CHO composition, not a zero GI assignment",
       "record": {
         "id": "fineli-922-release-20",
         "name": "VESI, VESIJOHTOVESI",
         "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
         "retrievedAt": "2026-10-24",
         "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "tap water",
+        "state": "plain tap water",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "componentValues": {
@@ -180,19 +162,18 @@
           "protein": 0,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "documented bounded omission",
-      "matchEvidence": "Salt (sodium chloride) contains no carbohydrate, fibre, protein or fat; its omission has zero impact on displayed macros.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Salt is sodium chloride and contributes none of the four displayed macronutrients.",
+      "state": "pure salt",
+      "excludedReason": "Pure salt has zero of the four macros",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -200,7 +181,11 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Salt (sodium chloride) contains no carbohydrate, fibre, protein or fat; its omission has zero impact on displayed macros."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
     }
   ]
 }

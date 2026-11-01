@@ -7,49 +7,49 @@ language: sv
 status: published
 diet_class: vhh_tiukka
 main_ingredient:
-  - porsaan kassler
+- porsaan kassler
 cooking_method:
-  - uuni
+- uuni
 servings: 6
-carbs_net_per_serving_g: 1.43
-carbs_total_per_serving_g: 1.59
-protein_per_serving_g: 36.57
-fat_per_serving_g: 44.57
+carbs_net_per_serving_g: 1.51
+carbs_total_per_serving_g: 1.7
+protein_per_serving_g: 36.66
+fat_per_serving_g: 44.49
 time_total_min: 90
 difficulty: lätt
 tags:
-  - finsk husmanskost
-  - lågkolhydrat
+- finsk husmanskost
+- lågkolhydrat
 image:
   src: paaruoat/uuniporsas-kermakastikkeessa-vhh.webp
   alt: Skivad stekt fläsk med krämig sås, blomkålsröra och haricots verts
   width: 1280
   height: 853
 ingredients:
-  - amount: 1.2
-    unit: kg
-    item: fläskkarré (inte rökt kassler)
-  - amount: 2
-    unit: dl
-    item: vispgrädde
-  - amount: 2
-    unit: dl
-    item: vatten
-  - amount: 1
-    unit: st
-    item: lök
-  - amount: 1
-    unit: tsk
-    item: salt
-  - amount: 0.5
-    unit: tsk
-    item: svartpeppar
-  - amount: 1
-    unit: tsk
-    item: timjan
-  - amount: 1
-    unit: msk
-    item: smör
+- amount: 1200
+  unit: g
+  item: rå fläskkarré
+- amount: 200
+  unit: g
+  item: vispgrädde38%
+- amount: 200
+  unit: g
+  item: vatten
+- amount: 55
+  unit: g
+  item: gul lök
+- amount: 1
+  unit: g
+  item: mald svartpeppar
+- amount: 0.5
+  unit: g
+  item: torkad mald timjan
+- amount: 14
+  unit: g
+  item: smör
+- amount: null
+  unit: ''
+  item: salt efter smak
 source_language: fi
 source_recipe: reseptit/paaruoat/uuniporsas-kermakastikkeessa-vhh.md
 translation_of: uuniporsas-kermakastikkeessa-vhh
@@ -57,19 +57,11 @@ translation_of: uuniporsas-kermakastikkeessa-vhh
 
 # Ugnsstekt fläskkött med gräddsås
 
-Fläskkarré tillagas i ugnen med lök och vatten.
+## Tillagning
 
-## Beskrivning
+1. Väg alla ätbara ingredienser i gram. Krydda köttet med alla angivna malda kryddor och salt. Lägg i en ugnsform med löken.
+2. Tillsätt vattnet och stek i 175 °C cirka 75 minuter eller tills genomstekt.
+3. Låt köttet vila. Behåll all lök, alla malda kryddor och hela stekskyn utan att sila. Tillsätt grädden.
+4. Sjud kort, ta kastrullen från värmen och rör ner smöret. Dela allt kött och all sås i 6 portioner.
 
-Skyn med timjan och svartpeppar används sedan till en gräddsås.
-
-## Gör så här
-
-1. Krydda fläsket med salt, peppar och timjan. Lägg i en ugnsform med lökklyftorna.
-2. Tillsätt vatten i pannan och grädda i 175 °C i ca 75 minuter eller tills köttet är genomstekt.
-3. Lyft köttet till vila. Sila ner stekfonden i grytan och tillsätt grädden.
-4. Sjud såsen i några minuter och smaka av. Ta den från värmen och rör ner smöret. Skiva fläskköttet och servera med såsen.
-
-## Anteckningar
-
-– Kontrollera om de är färdiga och krydda till sist efter egen smak.
+Vägd receptversion. Bilden är illustrativ; extra tillbehör ingår inte. Modellerad GK har låg tillförlitlighet och inget känt biologiskt osäkerhetsintervall.

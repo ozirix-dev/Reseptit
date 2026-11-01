@@ -1,10 +1,10 @@
 {
   "recipeId": "harira",
-  "sourceHash": "0c842c0d3ec9f90994b3777b17ee3ea9baabad0ef2f158588369a0c0c703a333",
-  "calculatedAt": "2026-10-24",
-  "batchId": "batch-11",
+  "sourceHash": "390c42095a441ae01a49ab2405349fcc9c294255d6dfc742603fc16bd34cffce",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-81",
   "servings": 6,
-  "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+  "scope": "Complete weighed candidate; all edible ingredients and listed liquid retained. Raw-input composition proxies and LOW preparation analogues disclosed.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -13,11 +13,7 @@
       "amount": 200,
       "unit": "g",
       "state": "raw beef mince, 17% fat",
-      "matchEvidence": "naudan jauhelihaa maps to fineli-release-20 record 11562; state: raw beef mince, 17% fat.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit zero CHO composition; no assigned GI zero",
       "record": {
         "id": "fineli-11562-release-20",
         "name": "JAUHELIHA, NAUDAN, RASVAA 17 %",
@@ -46,27 +42,25 @@
           "protein": 19.065,
           "fat": 16.949
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "keltasipulia",
-      "amount": 1,
-      "unit": "kpl",
-      "state": "yellow onion",
-      "matchEvidence": "keltasipulia maps to fineli-release-20 record 335; state: yellow onion.",
-      "gramsPerUnit": 55,
-      "conversionEvidence": "Edible piece mass for keltasipulia: 55 g/unit, Fineli portion where available or standard piece.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "amount": 55,
+      "unit": "g",
+      "state": "raw yellow onion, medium edible portion",
+      "matchEvidence": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
       "record": {
         "id": "fineli-335-release-20",
         "name": "SIPULI, KELTASIPULI",
         "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
         "retrievedAt": "2026-10-24",
         "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "yellow onion",
+        "state": "raw yellow onion, medium edible portion",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "componentValues": {
@@ -88,20 +82,18 @@
           "protein": 1.25,
           "fat": 0.1
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "sellerinvartta",
-      "amount": 2,
-      "unit": "kpl",
+      "amount": 80,
+      "unit": "g",
       "state": "raw celery stalk",
-      "matchEvidence": "sellerinvartta maps to fineli-release-20 record 339; state: raw celery stalk.",
-      "gramsPerUnit": 40,
-      "conversionEvidence": "Edible piece mass for sellerinvartta: 40 g/unit, Fineli portion where available or standard piece.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
       "record": {
         "id": "fineli-339-release-20",
         "name": "LEHTISELLERI, VARSISELLERI",
@@ -130,18 +122,18 @@
           "protein": 1.12,
           "fat": 0.2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "tomaattimurskaa",
       "amount": 400,
       "unit": "g",
       "state": "canned crushed tomato",
-      "matchEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
       "record": {
         "id": "fineli-398-release-20",
         "name": "TOMAATTIMURSKA",
@@ -170,18 +162,18 @@
           "protein": 0.55,
           "fat": 0.2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "kuivattuja vihreitä linssejä",
       "amount": 150,
       "unit": "g",
       "state": "dry green/brown lentils",
-      "matchEvidence": "kuivattuja vihreitä linssejä maps to fineli-release-20 record 399; state: dry green/brown lentils.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Whole dried green/brown lentils boiled until soft, not split lentil puree; food-specific boiled-lentil mean applied as LOW analogue. All soup liquid retained.",
       "record": {
         "id": "fineli-399-release-20",
         "name": "LINSSI, VIHREÄ/RUSKEA, KUIVATTU",
@@ -210,18 +202,18 @@
           "protein": 24.38,
           "fat": 1.13
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
-      "item": "kikherneitä",
+      "item": "kypsiä, valutettuja kikherneitä",
       "amount": 400,
       "unit": "g",
       "state": "cooked drained chickpeas",
-      "matchEvidence": "kikherneitä maps to fineli-release-20 record 11089; state: cooked drained chickpeas.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Whole cooked drained chickpeas; food-specific chickpea mean used as LOW analogue, not all-pulse category mean.",
       "record": {
         "id": "fineli-11089-release-20",
         "name": "KIKHERNE SUOLATTOMASSA VEDESSÄ",
@@ -250,20 +242,18 @@
           "protein": 8.44,
           "fat": 2.5
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "lihalientä",
-      "amount": 1,
-      "unit": "l",
+      "amount": 1000,
+      "unit": "g",
       "state": "prepared liquid stock",
-      "matchEvidence": "lihalientä maps to afcd-release-3 record F008936; state: prepared liquid stock.",
-      "gramsPerUnit": 1000,
-      "conversionEvidence": "Ingredient-specific volume mass: 1000 g/l for lihalientä.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
       "record": {
         "id": "afcd-F008936-release-3",
         "name": "Stock, liquid, all flavours (except fish), prepared from commercial powder or cube",
@@ -282,20 +272,18 @@
           "protein": 0.2,
           "fat": 0.2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "jauhettua inkivääriä",
-      "amount": 1,
-      "unit": "tl",
+      "amount": 2,
+      "unit": "g",
       "state": "ground ginger",
-      "matchEvidence": "jauhettua inkivääriä maps to afcd-release-3 record F004210; state: ground ginger.",
-      "gramsPerUnit": 2,
-      "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for jauhettua inkivääriä.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
       "record": {
         "id": "afcd-F004210-release-3",
         "name": "Ginger, dried, ground",
@@ -314,20 +302,18 @@
           "protein": 9,
           "fat": 4.2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "kurkumaa",
-      "amount": 1,
-      "unit": "tl",
+      "amount": 2,
+      "unit": "g",
       "state": "ground turmeric",
-      "matchEvidence": "kurkumaa maps to afcd-release-3 record F009335; state: ground turmeric.",
-      "gramsPerUnit": 2,
-      "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kurkumaa.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
       "record": {
         "id": "afcd-F009335-release-3",
         "name": "Turmeric, dried, ground",
@@ -346,20 +332,18 @@
           "protein": 9.7,
           "fat": 3.2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "kanelia",
-      "amount": 0.5,
-      "unit": "tl",
+      "amount": 1.0,
+      "unit": "g",
       "state": "ground cinnamon",
-      "matchEvidence": "kanelia maps to afcd-release-3 record F002963; state: ground cinnamon.",
-      "gramsPerUnit": 2,
-      "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kanelia.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
       "record": {
         "id": "afcd-F002963-release-3",
         "name": "Cinnamon, dried, ground",
@@ -378,18 +362,18 @@
           "protein": 4,
           "fat": 1.2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
-      "item": "ohuita vermisellinuudeleita",
+      "item": "kuivaa durumvehnävermiselliä",
       "amount": 60,
       "unit": "g",
       "state": "dry wheat pasta as vermicelli proxy",
-      "matchEvidence": "ohuita vermisellinuudeleita maps to fineli-release-20 record 117; state: dry wheat pasta as vermicelli proxy.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Specified durum-wheat vermicelli boiled in soup; spaghetti mean applied as LOW wheat-pasta shape analogue, not rice/bean vermicelli.",
       "record": {
         "id": "fineli-117-release-20",
         "name": "MAKARONI, PASTA",
@@ -418,18 +402,18 @@
           "protein": 13,
           "fat": 1.1
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "tuoretta korianteria",
       "amount": 20,
       "unit": "g",
       "state": "fresh raw coriander leaf",
-      "matchEvidence": "Fresh coriander leaf mapped to AFCD Release 3 record F003192; selected state: fresh raw leaf.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
       "record": {
         "id": "afcd-F003192-release-3",
         "name": "Coriander, fresh, raw",
@@ -448,20 +432,18 @@
           "protein": 3.1,
           "fat": 0.6
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "sitruunamehua",
-      "amount": 2,
-      "unit": "rkl",
+      "amount": 30,
+      "unit": "g",
       "state": "lemon juice",
-      "matchEvidence": "sitruunamehua maps to afcd-release-3 record F004726; state: lemon juice.",
-      "gramsPerUnit": 15,
-      "conversionEvidence": "Ingredient-specific tablespoon mass: 15 g/rkl for sitruunamehua.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
       "record": {
         "id": "afcd-F004726-release-3",
         "name": "Juice, lemon",
@@ -480,7 +462,11 @@
           "protein": 0.6,
           "fat": 0.1
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     }
   ]
 }
