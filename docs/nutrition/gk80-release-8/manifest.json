@@ -5,7 +5,7 @@
   "baseMain": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
   "reviewedResearchCommit": "767f57795f981028227167d52ee23f7e674494db",
   "ownerApproved": false,
-  "approvalState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+  "approvalState": "AFCD_POLYOL_HOLD_AWAITING_NEW_SOURCE_AND_METHOD_REVIEW",
   "reviewedRecipeIds": [
     "bulgogi",
     "bun-cha-hanoi",
@@ -177,5 +177,7 @@
     "Carnitas ordinary lime F005199; butternut pumpkin51, no dairy imputation",
     "No assumed zero polyols; two Dijon recipes stay HOLD; no general method change"
   ],
-  "noRuntimeChangesToHeldRecipes": true
+  "noRuntimeChangesToHeldRecipes": true,
+  "releaseAuthorized": false,
+  "sourceResolutionReport": "docs/research/gk80-pr153-polyol-resolution/README.md"
 }

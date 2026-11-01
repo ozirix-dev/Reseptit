@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "completeResultObjectsUnchanged": 326,
+  "publishedBaselineNumericObjectsUnchanged": 130,
+  "technicalCandidateNumericCount": 150,
+  "recipeTotal": 326,
+  "releaseEligibleNow": 0,
+  "sourceMetadataUnchanged": true,
+  "bulgogiPreparationRendered": true,
+  "existingNutritionInputHashPreserved": true,
+  "twoChocolateNutritionWithdrawalsPreserved": true,
+  "localBuildCount": 1,
+  "localBuildRoutes": 691,
+  "unitTests": {
+    "passed": 211,
+    "failed": 0
+  },
+  "staticTests": {
+    "passed": 25,
+    "failed": 0
+  },
+  "sourceScenarioVerifier": "PASS",
+  "release8Decimal": "20/20 PASS",
+  "changedRecipeFiles": "1/1 PASS",
+  "integrationFinding": "Old dessert test expected the two PR162 withdrawn values. Replaced those obsolete entries with direct assertions that all four current values are null. No production restoration.",
+  "buildRuns": 1,
+  "manualActionsRuns": 0,
+  "manualCodexReviewRequests": 0,
+  "reportHubChanges": 0
+}

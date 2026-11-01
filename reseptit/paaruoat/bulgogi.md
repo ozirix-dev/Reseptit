@@ -77,9 +77,9 @@ Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Pannuversio: sekoita kaikki punnittu soijakastike, fariinisokeri, päärynä, valkosipuli ja mausteet lihaan. Kaikki marinadi kypsennetään ja syödään.
+1. Leikkaa 600 g naudan ulkofileetä ohuiksi viipaleiksi, hienonna 9 g valkosipulia ja raasta 100 g päärynää. Sekoita marinadiin kaikki 60 g soijakastiketta, 12 g fariinisokeria, 13,5 g seesamiöljyä ja 0,5 g jauhettua mustapippuria sekä päärynä ja valkosipuli. Suikaloi 27,5 g keltasipulia ja sekoita se sekä koko marinadi lihaan.
 2. Kypsennä 300 g kuivaa valkoista jasmiiniriisiä 600 g:ssa vettä pakkauksen kypsennysaikaa noudattaen. Tarjoa kuumana.
-3. Kypsennä liha koko marinadissa pannulla. Jaa kaikki riisi, liha, kastike ja seesaminsiemenet neljään annokseen. Ei valutettu grilliversio.
+3. Kypsennä liha ja keltasipuli koko marinadissa pannulla; myös kaikki 13,5 g marinadiin lisättyä seesamiöljyä ja paistonesteet käytetään, eikä rasvaa tai kastiketta valuteta pois. Hienonna 30 g kevätsipulia viimeistelyyn. Jaa kaikki riisi, liha, sipuli, kastike, kevätsipuli ja 8,5 g seesaminsiemeniä neljään annokseen. Tämä ei ole valutettu grilliversio.
 
 ## Muistiinpanot
 

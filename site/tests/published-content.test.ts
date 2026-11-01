@@ -112,7 +112,6 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     ["valimerellinen-menemen-fetalla", 5.38],
     ["valimerellinen-tortilla-espanola-aamupalaksi", 6.14],
     ["valimerellinen-kikherne-yrttiaamiainen", 11.98],
-    ["keto-mutakakku", 1.52], ["keto-suklaakeksit", 1.38],
     ["marjakiisseli-vaniljakastikkeella", 35.74], ["meheva-suklaakakku", 43.76],
     ["pannacotta-marjakastikkeella", 23.22], ["rahkapiirakka-vhh", 2.67],
     ["vhh-brita-kakku", 2.72], ["vhh-juustokakku", 2.81],
@@ -198,6 +197,12 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     ["thai-kananmunat-kookoscurryssa", 43.31],
     ["malesialainen-apam-balik", 57.18],
   ]);
+  // PR162 intentionally withdrew these complete nutrition packages.
+  // Assert current publication directly, independently of historical batch views.
+  for (const id of ["keto-mutakakku", "keto-suklaakeksit"]) {
+    const current = currentSiteContent.recipes.find(recipe => recipe.recipeId === id && recipe.locale === "fi");
+    assert.deepEqual(current?.nutrition, { carbsNetG: null, carbsTotalG: null, proteinG: null, fatG: null });
+  }
   for (const recipe of [...breakfast, ...desserts]) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
     assert.equal(

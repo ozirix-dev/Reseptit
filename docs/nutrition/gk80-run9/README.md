@@ -1,8 +1,8 @@
 # AJO 9 — ensimmäinen viidestä 22 reseptin erästä
 
-Omistajan sisältö- ja menetelmähyväksyntä puuttuu. Vain Draft on valtuutettu.
-Ei Ready-siirtymää, mergeä tai deployta. ReportHub #91/#90/#88 ja vanha
-raporttipino jätetään erilleen.
+**Jatkokatselmointi 1.11.2026: koko 20 reseptin julkaisu HOLDissa AFCD-polyolikattavuuden vuoksi.** Bulgogin P2 on korjattu muuttamatta ravintoarvoja tai GK-lukuja. [20 reseptin lähdepäätökset, 41 tietuetta ja yksi ehdollinen C-sovellusehdotus](../../research/gk80-pr153-polyol-resolution/README.md). Vaihtoehtoja ei ole integroitu, eikä aiempaa sisältöhyväksyntää käytetä niiden julkaisulupana. Ei mergeä tai deployta. ReportHub jää erilleen.
+
+Alla on alkuperäisen AJO9-ehdokkaan historiallinen koonti. Sen 150/326 ei ole tuotantokattavuus tai nykyisen lähdekattavuuden hyväksyntä. Julkaistu lähtötila on PR #162:n jälkeen edelleen 130/326.
 
 [Tavoitepäätös](target-decision.md) lukittiin ennen integraatiota:
 viisi erää, kussakin 22 eri reseptiä, minimi 15, varsinainen 18, venytys 20.
@@ -27,7 +27,8 @@ ehdokkaita 20, HOLDeja yhteensä 13 ja ilman muuta riittävää laskelmaa 163.
 
 ## Hyväksyttäväksi tuotavat 20 reseptiversiota
 
-Makrot grammoina annosta kohden; kokonais-CHO sisältää kuidun ja polyolit.
+Alkuperäiset makrot grammoina annosta kohden. Kokonais-CHO:n polyolikattavuus
+on nyt avoin; alla olevia vanhoja numeroita ei ole tällä jatkokatselmoinnilla hyväksytty julkaisuun.
 GK on pyöristämätön malliluku. Kaikki ovat LOW-luottamuksen arvioita.
 Vaihteluväli tarkoittaa vain nimettyjä lähdevertailuskenaarioita,
 ei tilastollista tai biologista epävarmuusväliä.
