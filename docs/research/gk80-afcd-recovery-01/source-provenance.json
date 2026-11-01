@@ -1,0 +1,222 @@
+{
+  "scope": "GK80_AFCD_RECOVERY_01",
+  "baseMain": "88e228bbb1f0fa4a4e16be4aeedcd509bc7bc33a",
+  "modelConfigured": "gpt-6.1-sol/high",
+  "activeChatSelectorExposed": false,
+  "files": [
+    {
+      "path": "D:\\Projects\\tmp\\reseptit-gk80-run9\\docs\\research\\gk80-pr153-polyol-resolution\\analysis.json",
+      "sha256LfNormalized": "76d3d2ca2ab1c3815bc674823620a0ae3e9f0dbe8619f77f9e43adeec880b627"
+    },
+    {
+      "path": "D:\\Projects\\tmp\\reseptit-gk80-run9\\docs\\nutrition\\gk80-release-8\\recipes.json",
+      "sha256LfNormalized": "367cf62f2fc76b53eff8007dc992c1ab63490f62ba0f076f42a0f00cea88f40c"
+    },
+    {
+      "path": "D:\\Projects\\tmp\\reseptit-gk80-run9\\docs\\nutrition\\gk80-release-8\\composition-sources.json",
+      "sha256LfNormalized": "229b277ac1399e05a0dc43c3972a94d725b0ba26338987cbd0153b71da9fc4cf"
+    },
+    {
+      "path": "D:\\Projects\\tmp\\reseptit-gk80-run9\\docs\\nutrition\\gk80-release-8\\sources.json",
+      "sha256LfNormalized": "d88a53f992ed359866cf1512e8c2078f289ffc31f2a30409b08ad38f947922d6"
+    },
+    {
+      "path": "D:\\Projects\\tmp\\reseptit-gk80-run9\\docs\\nutrition\\fineli-release-20-reference.json",
+      "sha256LfNormalized": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "path": "D:\\Projects\\tmp\\reseptit-gk80-run9\\site\\scripts\\gk80-food-catalog.json",
+      "sha256LfNormalized": "a7988762bd6b4e70ef3ede3e91400b9c7b1103f6b4583a554714a72dbefe179c"
+    },
+    {
+      "path": "D:\\Projects\\tmp\\reseptit-gk80-run9\\reseptit\\paaruoat\\uunikanapasta-kesakurpitsa.md",
+      "sha256LfNormalized": "07eae5d1c8917a3a90e7e7623cffacf11fdb6425c4da7450e4f25b4914db3a58"
+    },
+    {
+      "path": "D:\\Projects\\tmp\\reseptit-gk80-afcd-recovery-01\\reseptit\\paaruoat\\uunikanapasta-kesakurpitsa.md",
+      "sha256LfNormalized": "334e64407cfad090013a0213a1f5186a378e15e72c8e21c2fa43e912ca0d8ad4"
+    },
+    {
+      "path": "D:\\Projects\\tmp\\reseptit-afcd-polyol-impact-01\\docs\\research\\gk80-afcd-polyol-impact\\matrix.json",
+      "sha256LfNormalized": "176cee02d1d2c81bd7b507d803a72a2f6cbca06be29d89e4511dd84a6ba265ad"
+    },
+    {
+      "path": "D:\\Projects\\tmp\\reseptit-gk80-polyol-scoped-c-method\\docs\\research\\polyoli-03\\approval-ledger.json",
+      "sha256LfNormalized": "5de69749e595f5d185e5411449528cec8907e410a67ad24b9e73eef6c624edb8"
+    },
+    {
+      "path": "D:\\Projects\\tmp\\reseptit-gk80-polyol-scoped-c-method\\site\\scripts\\gk80-polyol-c.ts",
+      "sha256LfNormalized": "a26bffd9f8b1a63beea7b9a24de0281a38f82125d6ff2f3c4e854c38a5c0df83"
+    },
+    {
+      "path": "D:\\Projects\\tmp\\reseptit-gk80-polyol-scoped-c-method\\docs\\nutrition\\calculations\\jauheliha-kaalikeitto-vhh.json",
+      "sha256LfNormalized": "1642ddc19a99aff8d85ccea8ce070759f409238d1f04e392919cdd9eae4a4a1a"
+    },
+    {
+      "path": "D:\\Projects\\tmp\\reseptit-gk80-polyol-scoped-c-method\\docs\\nutrition\\calculations\\vhh-kaalilaatikko.json",
+      "sha256LfNormalized": "d2a1741a3624e4a36f2b9cd13a65fe2d6b5518a44f07e8572def48f50b45d8a6"
+    }
+  ],
+  "worktreesBefore": {
+    "153": {
+      "root": "D:\\Projects\\tmp\\reseptit-gk80-run9",
+      "head": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+      "status": ""
+    },
+    "156": {
+      "root": "D:\\Projects\\tmp\\reseptit-gk80-polyol-scoped-c-method",
+      "head": "d31c3a7ae157337177733375a9c7d811646187ee",
+      "status": ""
+    },
+    "161": {
+      "root": "D:\\Projects\\tmp\\reseptit-afcd-polyol-impact-01",
+      "head": "6f09e0a4b4caaac17412f12b1f3dcc79d875f345",
+      "status": ""
+    },
+    "162": {
+      "root": "D:\\Projects\\tmp\\reseptit-afcd9837-withhold-nutrition",
+      "head": "b4801f269ee2339725a568f229b9e57fe29976f1",
+      "status": ""
+    }
+  },
+  "sourceResearchReused": true,
+  "newGeneralAfcdSearches": 0,
+  "newRecipeDecimalCases": 1,
+  "productionBuilds": 0,
+  "fullTestSuites": 0,
+  "manualActions": 0,
+  "manualReviews": 0,
+  "reportHubChanges": 0,
+  "originalPr156Approvals": {
+    "jauheliha-kaalikeitto-vhh": "7e16f21f52cc2365c6b1742d891542fb118b7b879b5bf73d88d5dbef361c0f2f",
+    "vhh-kaalilaatikko": "57540a15a0e29a4fc6c7cdfe83dfbaa8f59222a0dd48ad77f75c96cf36d82235"
+  },
+  "webChecks": [
+    {
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+      "date": "2026-11-01",
+      "scope": "Same raw food; whole table display profile and reportedP0 confirmed"
+    },
+    {
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11134",
+      "date": "2026-11-01",
+      "scope": "Fresh basil; main nutrient-table display values used, not hidden raw precision. P0 is derived."
+    },
+    {
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+      "date": "2026-11-01",
+      "scope": "Ground/dried pepper; absent aggregate-P row is not zero. AFCD macro profile retained in conditional case."
+    }
+  ],
+  "githubState": [
+    {
+      "number": 153,
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/153",
+      "head": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+      "base": "88e228bbb1f0fa4a4e16be4aeedcd509bc7bc33a",
+      "state": "open",
+      "draft": false,
+      "merged": false,
+      "mergeSha": null,
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41327124595,
+            "name": "Recipe site",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 429,
+            "jobs_url": "https://api.github.com/repos/ozirix-dev/Reseptit/actions/runs/41327124595/jobs",
+            "logs_url": "https://api.github.com/repos/ozirix-dev/Reseptit/actions/runs/41327124595/logs",
+            "workflow_id": 390753647
+          }
+        ]
+      }
+    },
+    {
+      "number": 156,
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/156",
+      "head": "d31c3a7ae157337177733375a9c7d811646187ee",
+      "base": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "mergeSha": null,
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41306524502,
+            "name": "Recipe site",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 419,
+            "jobs_url": "https://api.github.com/repos/ozirix-dev/Reseptit/actions/runs/41306524502/jobs",
+            "logs_url": "https://api.github.com/repos/ozirix-dev/Reseptit/actions/runs/41306524502/logs",
+            "workflow_id": 390753647
+          }
+        ]
+      }
+    },
+    {
+      "number": 161,
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/161",
+      "head": "6f09e0a4b4caaac17412f12b1f3dcc79d875f345",
+      "base": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "mergeSha": null,
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41320949584,
+            "name": "Recipe site",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 425,
+            "jobs_url": "https://api.github.com/repos/ozirix-dev/Reseptit/actions/runs/41320949584/jobs",
+            "logs_url": "https://api.github.com/repos/ozirix-dev/Reseptit/actions/runs/41320949584/logs",
+            "workflow_id": 390753647
+          }
+        ]
+      }
+    },
+    {
+      "number": 162,
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/162",
+      "head": "b4801f269ee2339725a568f229b9e57fe29976f1",
+      "base": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+      "state": "closed",
+      "draft": false,
+      "merged": true,
+      "mergeSha": "88e228bbb1f0fa4a4e16be4aeedcd509bc7bc33a",
+      "ci": {
+        "run": 41324602556,
+        "event": "push",
+        "head": "88e228bbb1f0fa4a4e16be4aeedcd509bc7bc33a"
+      }
+    }
+  ],
+  "mainCiDeploy": {
+    "head": "88e228bbb1f0fa4a4e16be4aeedcd509bc7bc33a",
+    "run": 41324602556,
+    "event": "push",
+    "build": "success",
+    "deploy": "success"
+  },
+  "otherChatCheck": {
+    "scope": "Most recent15 chat metadata, not exhaustive history",
+    "sameProjectOtherActiveSeen": false,
+    "relatedChats": [
+      {
+        "title": "Tutki vaikeita GI-lähteitä",
+        "status": "idle"
+      },
+      {
+        "title": "Audit polyol GK calculations",
+        "status": "notLoaded"
+      }
+    ],
+    "noMessagesSent": true
+  }
+}

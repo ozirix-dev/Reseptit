@@ -1,0 +1,418 @@
+{
+  "sourcePr": 153,
+  "sourceHead": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+  "sourceAnalysisSha256": "76d3d2ca2ab1c3815bc674823620a0ae3e9f0dbe8619f77f9e43adeec880b627",
+  "counts": {
+    "A": 0,
+    "B": 1,
+    "C": 19
+  },
+  "selected": 1,
+  "newRecipeGkCalculationsPerformedForScreening": 0,
+  "records": [
+    {
+      "recipeId": "uunikanapasta-kesakurpitsa",
+      "class": "B",
+      "selected": true,
+      "reason": "Only case passing prior whole-case scenario budget and stable display; exact source/food bindings and a new owner method decision still required",
+      "sourceRecipeSha256": "07eae5d1c8917a3a90e7e7623cffacf11fdb6425c4da7450e4f25b4914db3a58",
+      "existingReplacementOptions": [
+        "F000396",
+        "F002594",
+        "F004193"
+      ],
+      "remainingAfcdFoodIds": [
+        "F006618"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "0.0420000"
+      ],
+      "priorBudgetPass": true,
+      "priorIntegerDisplayPass": true
+    },
+    {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "3a74e561b06c18ab5f5bc9b7f254f88f412c8ded6d40ce88b88c6fef7f206c08",
+      "existingReplacementOptions": [
+        "F002991",
+        "F007682"
+      ],
+      "remainingAfcdFoodIds": [
+        "F007535"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "166.1250"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": false
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "7f37e694ffa19488cb7d17354ed9d1e4fa562963d0f5dfd917a5210a4ab179f6",
+      "existingReplacementOptions": [
+        "F006159",
+        "F008065"
+      ],
+      "remainingAfcdFoodIds": [
+        "F006250"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "6.870000000000000000000000000000000000000",
+        "6.870000000000000000000000000000000000000"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": false
+    },
+    {
+      "recipeId": "caponata",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "32a4c53891d9dfcf06341917399a4171f632b102b598f44eb04f3b820f45e150",
+      "existingReplacementOptions": [
+        "F000396",
+        "F002390"
+      ],
+      "remainingAfcdFoodIds": [
+        "F002220",
+        "F006198"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "24.968250"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": false
+    },
+    {
+      "recipeId": "janssoninkiusaus-juuriselleri",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "95c0967f6d4f09681abecb486a2da8c3a1dd326b36669278b94ace46223d89a3",
+      "existingReplacementOptions": [],
+      "remainingAfcdFoodIds": [
+        "F000074",
+        "F006618"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "30.8388750"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": false
+    },
+    {
+      "recipeId": "menemen",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "ce0e938b0ab068e3406747f7c1c07529a1aa09211aeae34452d0e1ae8304668a",
+      "existingReplacementOptions": [],
+      "remainingAfcdFoodIds": [
+        "F006316",
+        "F006618"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "0.1510000000000000000000000000000000000000"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": true
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "5c75d315780a3df95e5a8433a83f9e6a00f5c4160761a35c60ce0d0592cd7f91",
+      "existingReplacementOptions": [
+        "F000396",
+        "F004193"
+      ],
+      "remainingAfcdFoodIds": [
+        "F002479",
+        "F006618"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "7.7295000",
+        "7.7295000"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": false
+    },
+    {
+      "recipeId": "ratatouille",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "e554a790e8098434a8a471af5e8ae3f3252cc07cce605f654523a242123e6ce4",
+      "existingReplacementOptions": [
+        "F000396",
+        "F004193"
+      ],
+      "remainingAfcdFoodIds": [
+        "F006618",
+        "F009160"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "0.1890000"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": true
+    },
+    {
+      "recipeId": "sitruuna-yrttikana-parsa",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "e8787ec778f9c377fa233dde07787681f546f3d2e0ef282b6330e43af9de61bf",
+      "existingReplacementOptions": [
+        "F000155",
+        "F004193"
+      ],
+      "remainingAfcdFoodIds": [
+        "F006618",
+        "F009160"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "0.1890000"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": true
+    },
+    {
+      "recipeId": "taytetyt-paprikat-vhh",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "7a535046e3d9570070843e8d6a8b251807dc0c24f4349027c67f898714cb8077",
+      "existingReplacementOptions": [],
+      "remainingAfcdFoodIds": [
+        "F006281",
+        "F006618"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "0.217500"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": true
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "670418ee9ed18bc6a222b6d2b8a13ee2ea40a649c727bd17f787050be4c4c2b0",
+      "existingReplacementOptions": [],
+      "remainingAfcdFoodIds": [
+        "F002466",
+        "F006198"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "74.30625",
+        "74.30625"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": false
+    },
+    {
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "459996bc80e342a0b4f6636add8e6bfa3238f05381f5b6af950523f9afe53c2d",
+      "existingReplacementOptions": [],
+      "remainingAfcdFoodIds": [
+        "F003065",
+        "F005582"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "155.5875",
+        "155.5875"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": false
+    },
+    {
+      "recipeId": "congee-riisipuuro",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "ed7d02a9e6c682855cf6751e9c0531ee3f8ea3ad1a119bc135824d3cc6ee8e45",
+      "existingReplacementOptions": [
+        "F007682",
+        "F008065",
+        "F008936"
+      ],
+      "remainingAfcdFoodIds": [
+        "F004213",
+        "F006187",
+        "F006250"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "12.3570000"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": false
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "5e3a25ead736af734fc4df35ba28fb0e181d24369a4c5fbbfdff6025c6e3fd49",
+      "existingReplacementOptions": [
+        "F002806",
+        "F003239",
+        "F008936"
+      ],
+      "remainingAfcdFoodIds": [
+        "F003190",
+        "F003327",
+        "F009335"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "0.339000"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": true
+    },
+    {
+      "recipeId": "shakshuka",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "ee8f305cb3c148218db51a3d31226cdf99de752706beb91872ac54294300267f",
+      "existingReplacementOptions": [],
+      "remainingAfcdFoodIds": [
+        "F003327",
+        "F006316",
+        "F006618"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "0.504750"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": false
+    },
+    {
+      "recipeId": "bulgogi",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "a2f42e570904ebb0bd878ecf4668d2c5bf789fe4b45e06311161bec491377106",
+      "existingReplacementOptions": [
+        "F000810",
+        "F004193",
+        "F007682",
+        "F008065"
+      ],
+      "remainingAfcdFoodIds": [
+        "F006187",
+        "F006250",
+        "F006618",
+        "F008969"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "10.4820000"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": false
+    },
+    {
+      "recipeId": "bun-cha-hanoi",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "d280ca6468c47db8740e2e33c7f18202fa975c9896e3f78189b68bae2c1c7e3d",
+      "existingReplacementOptions": [
+        "F004193",
+        "F006862"
+      ],
+      "remainingAfcdFoodIds": [
+        "F003192",
+        "F006618",
+        "F008004",
+        "F008969"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "46.4370000"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": false
+    },
+    {
+      "recipeId": "doner-kebab",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "e5b699b76bfd05ca7049a9ec1784cfb7421686b15db5816ce92eaae5650c8ce5",
+      "existingReplacementOptions": [
+        "F004193"
+      ],
+      "remainingAfcdFoodIds": [
+        "F003327",
+        "F006281",
+        "F006316",
+        "F006618"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "0.3690000"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": true
+    },
+    {
+      "recipeId": "carnitas-salaattitacot",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "7f143263799124068fb041f45daee5487851e50e59d05bb8a73b43afc8276f4b",
+      "existingReplacementOptions": [
+        "F004193"
+      ],
+      "remainingAfcdFoodIds": [
+        "F003192",
+        "F003327",
+        "F005191",
+        "F005199",
+        "F006281",
+        "F006618"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "72.6277500"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": false
+    },
+    {
+      "recipeId": "rogan-josh",
+      "class": "C",
+      "selected": false,
+      "reason": "Essential aggregate/form gap remains or prior width/display criterion fails; no new family-wide search or recalculation performed",
+      "sourceRecipeSha256": "4a7db96a9b2ac5f533e22a8375b7dc5429a35856140a9195fd45533514e67e7f",
+      "existingReplacementOptions": [
+        "F004193"
+      ],
+      "remainingAfcdFoodIds": [
+        "F002258",
+        "F002893",
+        "F002963",
+        "F003190",
+        "F003327",
+        "F004213",
+        "F005077",
+        "F006316"
+      ],
+      "priorAdditionalScenarioWidths": [
+        "206.6596875"
+      ],
+      "priorBudgetPass": false,
+      "priorIntegerDisplayPass": false
+    }
+  ]
+}

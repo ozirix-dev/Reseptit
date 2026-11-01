@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "caseId": "GK80-AFCD-RECOVERY-01-UUNIKANAPASTA-C-PILOT",
+  "recipeId": "uunikanapasta-kesakurpitsa",
+  "classification": "B",
+  "decision": "CONDITIONAL_GO_FOR_NEW_OWNER_METHOD_REVIEW_ONLY",
+  "ownerMethodApproved": false,
+  "ownerContentApprovedForThisVersion": false,
+  "productionIntegrationApproved": false,
+  "mergeApproved": false,
+  "deployApproved": false,
+  "productionEnabled": false,
+  "publicationEligibleNow": false,
+  "candidateCalculationReadyWithinNamedModel": true,
+  "sourcePr": 153,
+  "sourcePrHead": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+  "sourceRecipeSha256": "07eae5d1c8917a3a90e7e7623cffacf11fdb6425c4da7450e4f25b4914db3a58",
+  "mainRecipeSha256": "334e64407cfad090013a0213a1f5186a378e15e72c8e21c2fa43e912ca0d8ad4",
+  "sourceProposedVersionHash": "f28d63824e8959494b9712951b46cafb704b78c9e76c30e5a82e3070f2485f4a",
+  "servings": 4,
+  "proposedTitle": "Uunikanapasta kesäkurpitsasuikaleilla – punnittu versio",
+  "preparation": [
+    "Tämä on tuoreen valkosipulin ja basilikan versio ilman vehnäpastaa. Yhdistä 150 g tuorejuustoa, 100 g kermaa, 200 g tomaatteja, 6 g valkosipulia ja 6 g basilikaa.",
+    "Lisää 500 g broileria vuokaan ja kypsennä 200 °C:ssa noin 20 min. Lisää 500 g kesäkurpitsanauhoja, 100 g juustoraastetta ja 0,5 g mustapippuria.",
+    "Jatka kypsennystä kunnes kana on kauttaaltaan kypsää. Jaa koko vuoka nesteineen neljään annokseen."
+  ],
+  "ingredients": [
+    {
+      "index": 0,
+      "name": "broilerin rintafileetä",
+      "massG": "500",
+      "retention": "1",
+      "state": "raw lean skinless chicken breast meat",
+      "sourceId": "recovery01-fineli-11565-release20",
+      "originalCompositionId": "afcd-F002594-release-3-a4196c4e",
+      "originalCompositionEvidenceHash": "9496fab4fa251b2ed1d8094d7b58abf24b8245c2193281db1d42a6a9f2dc1e70",
+      "macroPer100g": {
+        "availableCarbohydrate": "0.0",
+        "protein": "22.44",
+        "fat": "2.01",
+        "fibre": "0.0"
+      },
+      "aggregatePolyolPer100g": "0.0",
+      "knownPartialPolyolPer100g": "0.0",
+      "polyolEvidence": "REPORTED_FINELI_POLYL_NOT_EXHAUSTIVE_ASSAY",
+      "unknownAggregate": false,
+      "gi": null,
+      "giSourceId": null,
+      "giSourceEvidenceHash": null,
+      "giEvidenceKind": null,
+      "giApplicationRationale": "Explicit zero available CHO composition, not a zero GI assignment",
+      "giValueChanged": false,
+      "sourceChanged": true
+    },
+    {
+      "index": 1,
+      "name": "kesäkurpitsaa",
+      "massG": "500",
+      "retention": "1",
+      "state": "raw zucchini",
+      "sourceId": "fineli-389-release-20-f6167187",
+      "originalCompositionId": "fineli-389-release-20-f6167187",
+      "originalCompositionEvidenceHash": "324293ec25f2182822bf97d0f939a8f2aaaf308c3361cfb5f1b735dcd181e89d",
+      "macroPer100g": {
+        "availableCarbohydrate": "2.5",
+        "protein": "0.65",
+        "fat": "0.4",
+        "fibre": "2"
+      },
+      "aggregatePolyolPer100g": "0.0",
+      "knownPartialPolyolPer100g": "0.0",
+      "polyolEvidence": "REPORTED_FINELI_POLYL_NOT_EXHAUSTIVE_ASSAY",
+      "unknownAggregate": false,
+      "gi": "40",
+      "giSourceId": "vegetable-imputation40",
+      "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+      "giEvidenceKind": "PUBLISHED_IMPUTATION",
+      "giApplicationRationale": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
+      "giValueChanged": false,
+      "sourceChanged": false
+    },
+    {
+      "index": 2,
+      "name": "kirsikkatomaattia",
+      "massG": "200",
+      "retention": "1",
+      "state": "raw medium tomato, edible portion",
+      "sourceId": "fineli-352-release-20-be0843a6",
+      "originalCompositionId": "fineli-352-release-20-be0843a6",
+      "originalCompositionEvidenceHash": "5954c5d0cfaf6e5e58ec35f46af894b6bd2a61497cf3ddaee62b3c04158dd142",
+      "macroPer100g": {
+        "availableCarbohydrate": "3.45",
+        "protein": "0.55",
+        "fat": "0.3",
+        "fibre": "0.4"
+      },
+      "aggregatePolyolPer100g": "0.0",
+      "knownPartialPolyolPer100g": "0.0",
+      "polyolEvidence": "REPORTED_FINELI_POLYL_NOT_EXHAUSTIVE_ASSAY",
+      "unknownAggregate": false,
+      "gi": "40",
+      "giSourceId": "vegetable-imputation40",
+      "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+      "giEvidenceKind": "PUBLISHED_IMPUTATION",
+      "giApplicationRationale": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
+      "giValueChanged": false,
+      "sourceChanged": false
+    },
+    {
+      "index": 3,
+      "name": "maustamatonta tuorejuustoa, rasvaa 11 %",
+      "massG": "150",
+      "retention": "1",
+      "state": "plain 11% cream cheese",
+      "sourceId": "fineli-11571-release-20-ef726bca",
+      "originalCompositionId": "fineli-11571-release-20-ef726bca",
+      "originalCompositionEvidenceHash": "40fab109f8d57829b97160393090a8507538047b7d7fb9c1113f9226d16fc7d8",
+      "macroPer100g": {
+        "availableCarbohydrate": "4",
+        "protein": "7.4",
+        "fat": "11",
+        "fibre": "0.557"
+      },
+      "aggregatePolyolPer100g": "0.0",
+      "knownPartialPolyolPer100g": "0.0",
+      "polyolEvidence": "REPORTED_FINELI_POLYL_NOT_EXHAUSTIVE_ASSAY",
+      "unknownAggregate": false,
+      "gi": "30",
+      "giSourceId": "dairy-imputation30",
+      "giSourceEvidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+      "giEvidenceKind": "PUBLISHED_IMPUTATION",
+      "giApplicationRationale": "Atkinson unsweetened animal-dairy published coding assignment, not measured ingredient GI.",
+      "giValueChanged": false,
+      "sourceChanged": false
+    },
+    {
+      "index": 4,
+      "name": "kuohukermaa, rasvaa 38 %",
+      "massG": "100",
+      "retention": "1",
+      "state": "whipping cream, 38% fat",
+      "sourceId": "fineli-631-release-20-6d1f5fee",
+      "originalCompositionId": "fineli-631-release-20-6d1f5fee",
+      "originalCompositionEvidenceHash": "b57e62bfdff3d5b9353cadfb7e1a812e6194c8f0bf02e25b7420b7e75abbf25e",
+      "macroPer100g": {
+        "availableCarbohydrate": "2.9",
+        "protein": "1.88",
+        "fat": "38",
+        "fibre": "0"
+      },
+      "aggregatePolyolPer100g": "0.0",
+      "knownPartialPolyolPer100g": "0.0",
+      "polyolEvidence": "REPORTED_FINELI_POLYL_NOT_EXHAUSTIVE_ASSAY",
+      "unknownAggregate": false,
+      "gi": "30",
+      "giSourceId": "dairy-imputation30",
+      "giSourceEvidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+      "giEvidenceKind": "PUBLISHED_IMPUTATION",
+      "giApplicationRationale": "Atkinson unsweetened animal-dairy published coding assignment, not measured ingredient GI.",
+      "giValueChanged": false,
+      "sourceChanged": false
+    },
+    {
+      "index": 5,
+      "name": "puolikovaa juustoraastetta, koostumusvertailussa rasvaa 25–35 %",
+      "massG": "100",
+      "retention": "1",
+      "state": "semi-hard cheese, generic 25–35% fat",
+      "sourceId": "fineli-655-release-20-62ca869b",
+      "originalCompositionId": "fineli-655-release-20-62ca869b",
+      "originalCompositionEvidenceHash": "7c847682cbb242febab754738cd8383d9b59aba84ee9f7057090cfbf8968f4c0",
+      "macroPer100g": {
+        "availableCarbohydrate": "0",
+        "protein": "27.88",
+        "fat": "28.4",
+        "fibre": "0"
+      },
+      "aggregatePolyolPer100g": "0.0",
+      "knownPartialPolyolPer100g": "0.0",
+      "polyolEvidence": "REPORTED_FINELI_POLYL_NOT_EXHAUSTIVE_ASSAY",
+      "unknownAggregate": false,
+      "gi": null,
+      "giSourceId": null,
+      "giSourceEvidenceHash": null,
+      "giEvidenceKind": null,
+      "giApplicationRationale": "Explicit zero available CHO composition, not a zero GI assignment",
+      "giValueChanged": false,
+      "sourceChanged": false
+    },
+    {
+      "index": 6,
+      "name": "tuoretta kuorittua valkosipulia",
+      "massG": "6",
+      "retention": "1",
+      "state": "raw peeled garlic",
+      "sourceId": "recovery01-fineli-393-web-table-20261101",
+      "originalCompositionId": "afcd-F004193-release-3-f052c14b",
+      "originalCompositionEvidenceHash": "1d216dbbfc4ce743f683167713fb2be610541c20e9b6740111ff79af2f434b79",
+      "macroPer100g": {
+        "availableCarbohydrate": "16.3",
+        "protein": "7.9",
+        "fat": "0.6",
+        "fibre": "2.1"
+      },
+      "aggregatePolyolPer100g": "0",
+      "knownPartialPolyolPer100g": "0",
+      "polyolEvidence": "REPORTED_FINELI_POLYL_NOT_EXHAUSTIVE_ASSAY",
+      "unknownAggregate": false,
+      "gi": "40",
+      "giSourceId": "vegetable-imputation40",
+      "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+      "giEvidenceKind": "PUBLISHED_IMPUTATION",
+      "giApplicationRationale": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
+      "giValueChanged": false,
+      "sourceChanged": true
+    },
+    {
+      "index": 7,
+      "name": "tuoretta basilikaa",
+      "massG": "6",
+      "retention": "1",
+      "state": "fresh raw basil",
+      "sourceId": "recovery01-fineli-11134-web-table-20261101",
+      "originalCompositionId": "afcd-F000396-release-3-a1aa6eb1",
+      "originalCompositionEvidenceHash": "c395238db908d86bf96d0fad8a3d975a65ef05c1e204a1d0f7e5706d55615cc4",
+      "macroPer100g": {
+        "availableCarbohydrate": "1.1",
+        "protein": "3.1",
+        "fat": "0.7",
+        "fibre": "1.6"
+      },
+      "aggregatePolyolPer100g": "0",
+      "knownPartialPolyolPer100g": "0",
+      "polyolEvidence": "REPORTED_FINELI_POLYL_NOT_EXHAUSTIVE_ASSAY",
+      "unknownAggregate": false,
+      "gi": "50",
+      "giSourceId": "lowcho50-r4",
+      "giSourceEvidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770",
+      "giEvidenceKind": "PUBLISHED_IMPUTATION",
+      "giApplicationRationale": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
+      "giValueChanged": false,
+      "sourceChanged": true
+    },
+    {
+      "index": 8,
+      "name": "jauhettua mustapippuria",
+      "massG": "0.5",
+      "retention": "1",
+      "state": "ground black pepper",
+      "sourceId": "afcd-F006618-release-3-a814ab84",
+      "originalCompositionId": "afcd-F006618-release-3-a814ab84",
+      "originalCompositionEvidenceHash": "d76efb478f115ba271542884c1cdc099e3be2956502c05910617ee513f4b4904",
+      "macroPer100g": {
+        "availableCarbohydrate": "38.6",
+        "protein": "10.4",
+        "fat": "3.3",
+        "fibre": "25.3"
+      },
+      "aggregatePolyolPer100g": null,
+      "knownPartialPolyolPer100g": "0",
+      "polyolEvidence": "AFCD_PARTIAL_PAIR_NOT_AGGREGATE",
+      "unknownAggregate": true,
+      "pairedCarbohydrates": {
+        "with": "38.6",
+        "without": "38.6"
+      },
+      "individuallyReportedSpecies": {
+        "sorbitol": null,
+        "mannitol": null,
+        "glycerol": null,
+        "erythritol": null,
+        "maltitol": null,
+        "xylitol": null
+      },
+      "derivation": "Analysed does not establish a full polyol assay",
+      "gi": "50",
+      "giSourceId": "small-flavour50-r4",
+      "giSourceEvidenceHash": "8daa54a7a72b78c45e25da32e9b2f72ddc1e720bd6e12b5468cea0aa0ecf067a",
+      "giEvidenceKind": "PUBLISHED_IMPUTATION",
+      "giApplicationRationale": "Named fixed culinary ground spice, herb, seed or vanilla-extract dose; explicit own project extension. Complete composition, <=0.5 g CHO each/serving and <=1 g aggregate checked, no measured GI or biological bound.",
+      "giValueChanged": false,
+      "sourceChanged": false
+    },
+    {
+      "index": 9,
+      "name": "suolaa",
+      "massG": null,
+      "retention": "1",
+      "sourceId": "defined-pure-food-salt",
+      "state": "PURE_SALT",
+      "macroPer100g": {
+        "availableCarbohydrate": "0",
+        "protein": "0",
+        "fat": "0",
+        "fibre": "0"
+      },
+      "aggregatePolyolPer100g": "0",
+      "polyolEvidence": "DEFINED_PURE_SALT_ONLY_NOT_UNKNOWN_ZERO",
+      "knownPartialPolyolPer100g": "0",
+      "unknownAggregate": false,
+      "gi": null,
+      "giSourceId": null,
+      "massScope": "Mass stays unknown, never zero. Only pure food salt with zero tracked macros; no compound seasoning. Sodium is outside this four-macro/GK assessment.",
+      "certifiedZeroSalt": true
+    }
+  ],
+  "scopeClarifications": [
+    "All weighed edible ingredients, cooking liquids, fat and sauce are consumed; retention1 is a named source model, not measured cooking yield.",
+    "Pure food salt only, not compound seasoning; salt mass remains unknown and no sodium calculation is made.",
+    "Tomato composition remains the existing Fineli352 regular raw-tomato proxy for the weighed cherry tomatoes; not a cherry-tomato measurement.",
+    "The named cheese/cream profiles do not certify every brand or every25-35% fat cheese."
+  ],
+  "model": {
+    "aggregateUnknownCount": 1,
+    "unknownIngredientIndices": [
+      8
+    ],
+    "responseFactorScenario": [
+      0,
+      150
+    ],
+    "fullGkWidthBudget": "0.10",
+    "fixedSourceAccounting": "100 - A - fibre - protein - fat - known partial polyols; no subtraction of water-by-difference",
+    "sourceMacroAndPublishedRoundingUncertaintyIncluded": false,
+    "productVariationIncluded": false,
+    "biologicalBoundEstablished": false,
+    "polyolSpeciesAssumedAbsent": false,
+    "physiologicalMaximumGiEstablished": false,
+    "borrowedPr156Approval": false
+  },
+  "calculation": {
+    "macroPerServing": {
+      "availableCarbohydrate": "7.384250",
+      "protein": "39.530500",
+      "fat": "23.911125",
+      "fibre": "2.996000"
+    },
+    "ordinaryKnownAIngredientSum": "2.737675",
+    "glycemicLoadExactPoint": null,
+    "aggregatePolyolsExactPoint": null,
+    "knownPolyolSubtotal": "0",
+    "additionalPolyolScenario": [
+      "0",
+      "0.028000"
+    ],
+    "totalChoScenario": [
+      "10.380250",
+      "10.408250"
+    ],
+    "gkScenario": [
+      "2.737675",
+      "2.7796750"
+    ],
+    "fullGkScenarioWidth": "0.0420000",
+    "gkClass": "LOW",
+    "gkClassStable": true,
+    "displayGk": {
+      "value": "3",
+      "decimalPlaces": 0,
+      "confidence": "LOW",
+      "label": "Mallinnettu noin 3 / annos"
+    },
+    "displayMacros": {
+      "carbsNetG": {
+        "interval": [
+          "7.384250",
+          "7.384250"
+        ],
+        "decimalPlaces": 2,
+        "value": "7.38"
+      },
+      "carbsTotalG": {
+        "interval": [
+          "10.380250",
+          "10.408250"
+        ],
+        "decimalPlaces": 1,
+        "value": "10.4",
+        "twoDecimalEndpoints": [
+          "10.38",
+          "10.41"
+        ],
+        "twoDecimalStable": false,
+        "oneDecimalEndpoints": [
+          "10.4",
+          "10.4"
+        ],
+        "earlierIntegerDisplayAlsoStable": "10"
+      },
+      "proteinG": {
+        "interval": [
+          "39.530500",
+          "39.530500"
+        ],
+        "decimalPlaces": 2,
+        "value": "39.53"
+      },
+      "fatG": {
+        "interval": [
+          "23.911125",
+          "23.911125"
+        ],
+        "decimalPlaces": 2,
+        "value": "23.91"
+      }
+    },
+    "contributions": [
+      {
+        "index": 0,
+        "availableChoPerServingG": "0.000",
+        "ordinaryGkContribution": "0",
+        "knownPolyolPerServingG": "0.000",
+        "conditionalUnreportedPolyolCeilingG": "0.00",
+        "residualPer100g": null
+      },
+      {
+        "index": 1,
+        "availableChoPerServingG": "3.125",
+        "ordinaryGkContribution": "1.250",
+        "knownPolyolPerServingG": "0.000",
+        "conditionalUnreportedPolyolCeilingG": "0.00",
+        "residualPer100g": null
+      },
+      {
+        "index": 2,
+        "availableChoPerServingG": "1.725",
+        "ordinaryGkContribution": "0.690",
+        "knownPolyolPerServingG": "0.00",
+        "conditionalUnreportedPolyolCeilingG": "0.0",
+        "residualPer100g": null
+      },
+      {
+        "index": 3,
+        "availableChoPerServingG": "1.500",
+        "ordinaryGkContribution": "0.450",
+        "knownPolyolPerServingG": "0.0000",
+        "conditionalUnreportedPolyolCeilingG": "0.000",
+        "residualPer100g": null
+      },
+      {
+        "index": 4,
+        "availableChoPerServingG": "0.725",
+        "ordinaryGkContribution": "0.2175",
+        "knownPolyolPerServingG": "0.000",
+        "conditionalUnreportedPolyolCeilingG": "0.00",
+        "residualPer100g": null
+      },
+      {
+        "index": 5,
+        "availableChoPerServingG": "0.00",
+        "ordinaryGkContribution": "0",
+        "knownPolyolPerServingG": "0.000",
+        "conditionalUnreportedPolyolCeilingG": "0.00",
+        "residualPer100g": null
+      },
+      {
+        "index": 6,
+        "availableChoPerServingG": "0.2445",
+        "ordinaryGkContribution": "0.0978",
+        "knownPolyolPerServingG": "0.000",
+        "conditionalUnreportedPolyolCeilingG": "0.000",
+        "residualPer100g": null
+      },
+      {
+        "index": 7,
+        "availableChoPerServingG": "0.0165",
+        "ordinaryGkContribution": "0.00825",
+        "knownPolyolPerServingG": "0.000",
+        "conditionalUnreportedPolyolCeilingG": "0.000",
+        "residualPer100g": null
+      },
+      {
+        "index": 8,
+        "availableChoPerServingG": "0.048250",
+        "ordinaryGkContribution": "0.024125",
+        "knownPolyolPerServingG": "0.00000",
+        "conditionalUnreportedPolyolCeilingG": "0.028000",
+        "residualPer100g": "22.4"
+      },
+      {
+        "index": 9,
+        "availableChoPerServingG": "0",
+        "ordinaryGkContribution": "0",
+        "knownPolyolPerServingG": "0",
+        "conditionalUnreportedPolyolCeilingG": "0",
+        "residualPer100g": null
+      }
+    ],
+    "sensitivityResponseFactor200": {
+      "gkWidth": "0.056000",
+      "within010": true
+    },
+    "responseFactorAtBudget": "357.1428571428571428571428571428571428571"
+  },
+  "changesVsPr153": {
+    "ingredientMassesChanged": false,
+    "servingsChanged": false,
+    "preparationStepsChanged": false,
+    "pureSaltDefinitionMadeExplicit": true,
+    "compositionSourcesChanged": [
+      "F002594 -> Fineli11565",
+      "F004193 -> Fineli393 current web table",
+      "F000396 -> Fineli11134 current web table"
+    ],
+    "allFourDisplayedMacrosChange": true,
+    "previousDisplayedMacros": {
+      "carbs_net_per_serving_g": 7.28,
+      "carbs_total_per_serving_g": 10.52,
+      "protein_per_serving_g": 39.57,
+      "fat_per_serving_g": 22.43
+    },
+    "previousGkArithmetic": "2.694325",
+    "newKnownAArithmeticDelta": "0.043350"
+  },
+  "changesVsProduction": {
+    "productionVersionContainsDriedGarlicAndBasil": true,
+    "proposedVersionUsesFreshWeighedHerbs": true,
+    "cream100mlBecomes100g": true,
+    "pepperUnmeasuredBecomes0point5g": true,
+    "fourMacrosPreviouslyPublished": {
+      "carbs_net_per_serving_g": 7.1,
+      "carbs_total_per_serving_g": 8.86,
+      "protein_per_serving_g": 39.38,
+      "fat_per_serving_g": 24.27
+    },
+    "productionHasNumericGk": false
+  },
+  "ownerDecisionsNeeded": [
+    "Approve exact fresh-herb/raw-breast profiles and the retained tomato and dairy composition proxies.",
+    "Approve this recipe-specific fixed-source residual, response-factor0..150 and complete-width0.10 scenario; no physiological guarantee.",
+    "Approve all four display precisions: net7.38,total10.4,protein39.53,fat23.91 and modeled GK about3 LOW. Total10.38 is not stable over the full scenario;10.4 is.",
+    "Approve the exact GI food/form bindings for new profiles, especially basil to existing50 application; no new GI value or global default.",
+    "Approve exact weighed preparation and pure-salt scope.",
+    "Authorize a later isolated closed-case integration only after this packet review; release remains separately authorized."
+  ],
+  "pr156ScopeUnchanged": true,
+  "caseFingerprintSha256": "d09c61c2d3796efe1a04add86966c20b1affd00414ac8e0834b5eb7db2b766ae"
+}
