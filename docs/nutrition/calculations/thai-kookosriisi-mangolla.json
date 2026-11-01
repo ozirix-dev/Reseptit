@@ -1,156 +1,246 @@
 {
   "recipeId": "thai-kookosriisi-mangolla",
-  "sourceHash": "5394212da3f536825b82789bb8047dc3e669d5322d569e89ada9e0317140d6f4",
-  "calculatedAt": "2026-10-25",
-  "batchId": "batch-16",
+  "sourceHash": "9f4be1446dd13c6606e906b2c58a6b076f7ebd532feee09cb8a17ab7078757f9",
+  "calculatedAt": "2026-11-01",
+  "batchId": "batch-84",
   "servings": 2,
-  "scope": "Two servings; 100 g dry white long-grain rice, 200 ml canned regular-fat coconut milk, 150 g peeled raw mango, 6 g sesame seed; salt omitted.",
+  "scope": "Complete weighed GK80 release5 draft, exact named preparation, generic composition proxies explicitly disclosed",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "riisi",
+      "item": "kuivaa valkoista jasmiiniriisiä",
       "amount": 100,
       "unit": "g",
-      "state": "dry uncooked white long-grain rice",
-      "matchEvidence": "AFCD Release 3 record F007682 is uncooked white long-grain rice; these porridge and bowl recipes measure rice dry.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "Rice, white, uncooked",
+      "matchEvidence": "Explicit RICE food ID A007682 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
       "record": {
-        "id": "afcd-F007682-release-3",
+        "id": "A007682-r5",
         "name": "Rice, white, uncooked",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "dry uncooked white long-grain rice",
-        "basis": "per100g-as-sold",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F007682",
+        "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+        "basis": "per100g-edible",
+        "state": "Rice, white, uncooked",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsValue": null,
+        "referenceRecord": {
+          "source_id": "F007682",
+          "classification": 12102,
+          "derivation": "Analysed",
+          "name": "Rice, white, uncooked",
+          "protein_g_per_100g": 7,
+          "fat_g_per_100g": 0.9,
+          "fibre_g_per_100g": 0.8,
+          "glycerol_g_per_100g": null,
+          "erythritol_g_per_100g": null,
+          "maltitol_g_per_100g": null,
+          "mannitol_g_per_100g": null,
+          "xylitol_g_per_100g": null,
+          "sorbitol_g_per_100g": null,
+          "available_carbohydrate_without_sugar_alcohols_g_per_100g": 74,
+          "available_carbohydrate_with_sugar_alcohols_g_per_100g": 74
+        },
+        "retrievedAt": "2026-10-30",
+        "verifiedAt": "2026-11-01",
         "per100g": {
           "carbohydrate": 74,
-          "fibre": 0.8,
-          "polyols": 0,
           "protein": 7,
-          "fat": 0.9
-        }
-      }
+          "fat": 0.9,
+          "fibre": 0.8,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Fineli reported POLYL or AFCD paired with/without sugar alcohol carbohydrate; not a new analytical measurement"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible raw input or cooked/drained weight explicitly named",
+      "retainedFraction": 1,
+      "retentionEvidence": "All nutrient inputs retained as a named proxy; drained potato/noodle cooking water is not consumed and no unmeasured leaching discount is claimed"
     },
     {
-      "item": "kookosmaito",
-      "amount": 200,
-      "unit": "ml",
-      "state": "regular-fat canned coconut milk as sold",
-      "matchEvidence": "The recipe specifies coconut milk without a reduced-fat variant; AFCD record F002991 is canned regular-fat coconut milk.",
-      "gramsPerUnit": 0.92,
-      "conversionEvidence": "Canned regular-fat coconut milk represented at 0.92 g/ml, consistent with prior ingredient-specific batch conversions.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "item": "täysrasvaista tölkkikookosmaitoa",
+      "amount": 184.0,
+      "unit": "g",
+      "state": "Coconut, milk, canned, regular fat",
+      "matchEvidence": "Explicit COCONUT_MILK food ID A002991 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
       "record": {
-        "id": "afcd-F002991-release-3",
+        "id": "A002991-r5",
         "name": "Coconut, milk, canned, regular fat",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "regular-fat canned coconut milk as sold",
-        "basis": "per100g-as-sold",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002991",
+        "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+        "basis": "per100g-edible",
+        "state": "Coconut, milk, canned, regular fat",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsValue": null,
+        "referenceRecord": {
+          "source_id": "F002991",
+          "classification": 22203,
+          "derivation": "Analysed",
+          "name": "Coconut, milk, canned, regular fat",
+          "protein_g_per_100g": 1.4,
+          "fat_g_per_100g": 15.4,
+          "fibre_g_per_100g": 0,
+          "glycerol_g_per_100g": null,
+          "erythritol_g_per_100g": null,
+          "maltitol_g_per_100g": null,
+          "mannitol_g_per_100g": null,
+          "xylitol_g_per_100g": null,
+          "sorbitol_g_per_100g": null,
+          "available_carbohydrate_without_sugar_alcohols_g_per_100g": 1.7,
+          "available_carbohydrate_with_sugar_alcohols_g_per_100g": 1.7
+        },
+        "retrievedAt": "2026-10-30",
+        "verifiedAt": "2026-11-01",
         "per100g": {
           "carbohydrate": 1.7,
-          "fibre": 0,
-          "polyols": 0,
           "protein": 1.4,
-          "fat": 15.4
-        }
-      }
+          "fat": 15.4,
+          "fibre": 0,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Fineli reported POLYL or AFCD paired with/without sugar alcohol carbohydrate; not a new analytical measurement"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible raw input or cooked/drained weight explicitly named",
+      "retainedFraction": 1,
+      "retentionEvidence": "All nutrient inputs retained as a named proxy; drained potato/noodle cooking water is not consumed and no unmeasured leaching discount is claimed"
     },
     {
-      "item": "mango",
+      "item": "kuorittua raakaa mangoa",
       "amount": 150,
       "unit": "g",
-      "state": "peeled raw mango",
-      "matchEvidence": "AFCD Release 3 record F005299 is peeled raw mango; recipe amount is edible fruit flesh.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "Mango, peeled, raw",
+      "matchEvidence": "Explicit MANGO food ID A005299 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
       "record": {
-        "id": "afcd-F005299-release-3",
+        "id": "A005299-r5",
         "name": "Mango, peeled, raw",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "peeled raw mango",
-        "basis": "per100g-as-sold",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F005299",
+        "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+        "basis": "per100g-edible",
+        "state": "Mango, peeled, raw",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsValue": null,
+        "referenceRecord": {
+          "source_id": "F005299",
+          "classification": 16502,
+          "derivation": "Analysed",
+          "name": "Mango, peeled, raw",
+          "protein_g_per_100g": 0.4,
+          "fat_g_per_100g": 0,
+          "fibre_g_per_100g": 1.3,
+          "glycerol_g_per_100g": null,
+          "erythritol_g_per_100g": null,
+          "maltitol_g_per_100g": null,
+          "mannitol_g_per_100g": null,
+          "xylitol_g_per_100g": null,
+          "sorbitol_g_per_100g": null,
+          "available_carbohydrate_without_sugar_alcohols_g_per_100g": 12.6,
+          "available_carbohydrate_with_sugar_alcohols_g_per_100g": 12.6
+        },
+        "retrievedAt": "2026-10-30",
+        "verifiedAt": "2026-11-01",
         "per100g": {
           "carbohydrate": 12.6,
-          "fibre": 1.3,
-          "polyols": 0,
           "protein": 0.4,
-          "fat": 0
-        }
-      }
+          "fat": 0,
+          "fibre": 1.3,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Fineli reported POLYL or AFCD paired with/without sugar alcohol carbohydrate; not a new analytical measurement"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible raw input or cooked/drained weight explicitly named",
+      "retainedFraction": 1,
+      "retentionEvidence": "All nutrient inputs retained as a named proxy; drained potato/noodle cooking water is not consumed and no unmeasured leaching discount is claimed"
     },
     {
-      "item": "seesaminsiemen",
+      "item": "kokonaisia kuorittuja seesaminsiemeniä",
       "amount": 6,
       "unit": "g",
-      "state": "white whole hulled sesame seed",
-      "matchEvidence": "Fineli Release 20 record 34245 is whole hulled white sesame seed, the generic seed match.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "SEESAMINSIEMEN, VALKOINEN, KOKONAINEN, KUORITTU",
+      "matchEvidence": "Explicit WHOLE_SEED food ID F34245 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
       "record": {
-        "id": "fineli-34245-release-20",
+        "id": "F34245-r5",
         "name": "SEESAMINSIEMEN, VALKOINEN, KOKONAINEN, KUORITTU",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34245",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "white whole hulled sesame seed",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34245",
+        "licence": "THL Fineli Release20, CC BY4.0",
         "basis": "per100g-edible",
+        "state": "SEESAMINSIEMEN, VALKOINEN, KOKONAINEN, KUORITTU",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 1.171,
-          "FIBT": 11.3,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsValue": 0.0,
+        "referenceRecord": {
+          "source_id": "34245",
+          "name": "SEESAMINSIEMEN, VALKOINEN, KOKONAINEN, KUORITTU",
+          "food_type": "FOOD",
+          "process": "DRIE",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "NUTSEED",
+          "food_class": "SNACKVEG",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 1.171,
+            "fibre_g_per_100g": 11.3,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 24.6,
+            "fat_g_per_100g": 59.7
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI1302"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "K",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 60.0,
+            "RKL": 8.5,
+            "TL": 3.0
+          }
+        },
+        "retrievedAt": "2026-10-30",
+        "verifiedAt": "2026-11-01",
         "per100g": {
           "carbohydrate": 1.171,
-          "fibre": 11.3,
-          "polyols": 0,
           "protein": 24.6,
-          "fat": 59.7
-        }
-      }
+          "fat": 59.7,
+          "fibre": 11.3,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Fineli reported POLYL or AFCD paired with/without sugar alcohol carbohydrate; not a new analytical measurement"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible raw input or cooked/drained weight explicitly named",
+      "retainedFraction": 1,
+      "retentionEvidence": "All nutrient inputs retained as a named proxy; drained potato/noodle cooking water is not consumed and no unmeasured leaching discount is claimed"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "salt omitted; no contribution to displayed macronutrients",
-      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "state": "pure salt",
+      "excludedReason": "Pure salt has zero of the four macros",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -158,7 +248,91 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
+    },
+    {
+      "item": "vettä kypsennykseen",
+      "amount": 100,
+      "unit": "g",
+      "state": "VESI, VESIJOHTOVESI",
+      "matchEvidence": "Exact identified composition; no GI assigned to zero available CHO",
+      "record": {
+        "id": "F922-r5",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+        "licence": "THL Fineli Release20, CC BY4.0",
+        "basis": "per100g-edible",
+        "state": "VESI, VESIJOHTOVESI",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsValue": 0.0,
+        "referenceRecord": {
+          "source_id": "922",
+          "name": "VESI, VESIJOHTOVESI",
+          "food_type": "FOOD",
+          "process": "X",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "WATER",
+          "food_class": "DRWATER",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.0,
+            "fibre_g_per_100g": 0.0,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 0.0,
+            "fat_g_per_100g": 0.0
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR003"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 100.0,
+            "RKL": 15.0,
+            "TL": 5.0
+          }
+        },
+        "retrievedAt": "2026-10-30",
+        "verifiedAt": "2026-11-01",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "protein": 0.0,
+          "fat": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Fineli reported POLYL or AFCD paired with/without sugar alcohol carbohydrate; not a new analytical measurement"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible raw input or cooked/drained weight explicitly named",
+      "retainedFraction": 1,
+      "retentionEvidence": "All nutrient inputs retained as a named proxy; drained potato/noodle cooking water is not consumed and no unmeasured leaching discount is claimed"
     }
   ]
 }

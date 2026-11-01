@@ -1,66 +1,76 @@
 ---
-title: "Espanjalainen peruna-sipulimunakas"
+title: Tortilla española – esikeitetyn perunan versio
 recipe_id: valimerellinen-tortilla-espanola-aamupalaksi
 url_slug: valimerellinen-tortilla-espanola-aamupalaksi
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "kananmuna"
-  - "peruna"
-  - "sipuli"
+- kananmuna
+- peruna
+- sipuli
 cooking_method:
-  - "paistaminen"
+- paistaminen
 ingredients:
-  - amount: 2
-    unit: "kpl"
-    item: "kananmuna"
-  - amount: 1
-    unit: "kpl"
-    item: "peruna"
-  - amount: 1
-    unit: "kpl"
-    item: "sipuli"
-  - amount: 1
-    unit: "rkl"
-    item: "oliiviöljy"
-  - amount: 1
-    unit: "rkl"
-    item: "neutraalia paistoöljyä"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+- amount: 110
+  unit: g
+  item: kuoretonta kananmunaa
+- amount: 60
+  unit: g
+  item: kuorittua raakaa perunaa
+- amount: 55
+  unit: g
+  item: keltasipulia
+- amount: 13.5
+  unit: g
+  item: oliiviöljyä
+- amount: 13.5
+  unit: g
+  item: rypsiöljyä
+- amount: 500
+  unit: g
+  item: vettä perunoiden esikypsennykseen
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 servings: 2
 carbs_net_per_serving_g: 6.14
-carbs_total_per_serving_g: 6.90
-protein_per_serving_g: 7.83
-fat_per_serving_g: 18.61
+carbs_total_per_serving_g: 6.89
+protein_per_serving_g: 7.84
+fat_per_serving_g: 18.64
 time_total_min: 25
 difficulty: Helppo
 tags:
-  - "aamupala"
-  - "valimerellinen"
-  - "kananmuna"
+- aamupala
+- valimerellinen
+- kananmuna
 image:
   src: aamupalat/valimerellinen-tortilla-espanola-aamupalaksi.webp
-  alt: "Espanjalainen peruna-sipulimunakas tarjoiltuna aamiaisella"
+  alt: Espanjalainen peruna-sipulimunakas tarjoiltuna aamiaisella
   width: 1536
   height: 1024
 ---
 
-# Espanjalainen peruna-sipulimunakas
+# Tortilla española – esikeitetyn perunan versio
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan espanjalainen peruna-sipulimunakas. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Tortilla española – esikeitetyn perunan versio. Täsmällinen versio 2 annokselle.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Pilko täytteen kasvikset ja muut suuret ainekset pieniksi paloiksi. Kuullota ne pannulla tilkassa öljyä, kunnes ne ovat pehmenneet.
-2. Vatkaa kananmunat ja mausta ripauksella suolaa. Kaada munaseos pannulle ja laske lämpö miedoksi.
-3. Vedä hyytynyttä munaa reunoilta kohti keskustaa. Taita tai rullaa, kun pinta on juuri hyytynyt.
-4. Kypsennä peruna-sipuli pehmeäksi öljyssä ja hyydytä munien kanssa paksuksi tortillaksi.
+1. Esikeitetyn perunan versio: keitä 60 g punnittua kuorittua raakaa perunaa 500 g:ssa vettä kypsäksi ja valuta. Makrot ovat raaka-aineproxy ilman liukenemishyvitystä.
+2. Kuullota 55 g sipulia 13,5 g:ssa oliiviöljyä ja 13,5 g:ssa rypsiöljyä. Lisää peruna ja 110 g kuoretonta kananmunaa.
+3. Kypsennä juuri hyytyneeksi. Jaa kaikki ruoka ja öljy kahteen annokseen. Ei alkuperäisen pitkään öljyssä kypsennetyn perunaversion GK-siirtoa.
+
+## Muistiinpanot
+
+Mallinnettu GK-arvio perustuu ainesosiin, nimettyihin GI-vertailuihin ja laskennallisiin oletuksiin. Luottamus on matala. Kaikki imeytyvät hiilihydraatit ovat mukana. Tämä ei ole aterialla mitattu verensokerivaste. Biologista epävarmuusväliä ei tunneta.
+
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
+
+Tämä on esikeitetyn perunan versio. Perunan keitinvesi valutetaan pois; makrot käyttävät raakapanosten koostumusproxya ilman liukenemishyvitystä. Arvio ei koske pitkään öljyssä kypsennettyä alkuperäistä versiota. Kaikki punnittu paistoöljy kuuluu annoksiin.

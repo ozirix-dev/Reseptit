@@ -1,5 +1,5 @@
 ---
-title: Paprikauunimunakkaat
+title: Paprikauunimunakkaat – punnittu versio
 recipe_id: paprikauunimunakkaat
 url_slug: paprikauunimunakkaat
 category: aamupala
@@ -7,36 +7,39 @@ language: fi
 status: published
 diet_class: vhh_tiukka
 main_ingredient:
-  - kananmuna
+- kananmuna
 cooking_method:
-  - paistaminen
+- paistaminen
 ingredients:
-  - amount: 2
-    unit: kpl
-    item: isoa paprikaa
-  - amount: 4
-    unit: kpl
-    item: kananmunaa
-  - amount: 40
-    unit: g
-    item: juustoraastetta
-  - amount: 1
-    unit: rkl
-    item: silputtua ruohosipulia
-  - amount: null
-    unit: ""
-    item: suolaa ja mustapippuria
-carbs_net_per_serving_g: 8.0
-carbs_total_per_serving_g: 11.2
-protein_per_serving_g: 21.2
-fat_per_serving_g: 16.7
+- amount: 320
+  unit: g
+  item: punaista paprikaa syötävä osa
+- amount: 220
+  unit: g
+  item: kuoretonta kananmunaa
+- amount: 40
+  unit: g
+  item: puolikovaa juustoraastetta
+- amount: 3
+  unit: g
+  item: tuoretta ruohosipulia
+- amount: 0.5
+  unit: g
+  item: jauhettua mustapippuria
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
+carbs_net_per_serving_g: 7.64
+carbs_total_per_serving_g: 10.77
+protein_per_serving_g: 21.01
+fat_per_serving_g: 16.35
 servings: 2
 time_total_min: 30
 difficulty: Helppo
 tags:
-  - aamupala
-  - kananmuna
-  - munaruoka
+- aamupala
+- kananmuna
+- munaruoka
 image:
   src: aamupalat/paprikauunimunakkaat.webp
   alt: Paistettu kananmuna punaisen paprikan puolikkaassa
@@ -44,24 +47,24 @@ image:
   height: 1024
 ---
 
-# Paprikauunimunakkaat
+# Paprikauunimunakkaat – punnittu versio
 
 ## Kuvaus
 
-Paprikapuolikkaat toimivat pieninä uunivuokina kananmunalle ja juustolle. Ne sopivat lämpimäksi aamupalaksi tai brunssille.
+Paprikauunimunakkaat – punnittu versio. Täsmällinen versio 2 annokselle.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Lämmitä uuni 200 asteeseen. Halkaise paprikat pituussuunnassa ja poista siemenet.
-2. Aseta puolikkaat leikkuupinta ylöspäin pieneen uunivuokaan. Paista niitä ensin 8 minuuttia, jotta ne pehmenevät hieman.
-3. Riko kuhunkin paprikapuolikkaaseen muna. Mausta ja ripottele päälle juusto.
-4. Jatka paistamista 12–16 minuuttia, kunnes valkuainen on hyytynyt.
-5. Viimeistele ruohosipulilla. Nosta paprikat varovasti tarjoilulautasille.
+1. Halkaise paprikat ja poista siemenet; punnitse 320 g syötävää punaista paprikaa. Sekoita 220 g kuoretonta munaa, 40 g juustoraastetta, 3 g ruohosipulia ja 0,5 g mustapippuria.
+2. Täytä paprikat koko munaseoksella. Paista 200 asteessa, kunnes muna on kypsää ja paprika pehmeää.
+3. Jaa kaikki paprikat ja munaseos kahteen annokseen. Ei listaamatonta öljyä.
 
 ## Muistiinpanot
 
-Jos paprikapuolikkaat kallistuvat, tue niitä tiiviisti vuokaan asetetuilla foliopalloilla.
+Mallinnettu GK-arvio perustuu ainesosiin, nimettyihin GI-vertailuihin ja laskennallisiin oletuksiin. Luottamus on matala. Kaikki imeytyvät hiilihydraatit ovat mukana. Tämä ei ole aterialla mitattu verensokerivaste. Biologista epävarmuusväliä ei tunneta.
+
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
