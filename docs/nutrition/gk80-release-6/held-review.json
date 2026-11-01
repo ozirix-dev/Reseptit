@@ -1,0 +1,3813 @@
+{
+  "recipes": [
+    {
+      "recipeId": "palak-paneer",
+      "state": "HOLD — PUBLICATION POLYOL EVIDENCE MISSING",
+      "reason": "N01301-r6 polyolsSourceVerified=false, polyolsValue=null. Official paneer CHO is calculated from starch+sugars, not proof of absent polyols. Four publication macros remain unverified under current strict nutrition model.",
+      "lockedResearchBundle": {
+        "recipe": {
+          "recipeId": "palak-paneer",
+          "title": "Palak paneer – pinaattia ja intialaista tuorejuustoa",
+          "proposedTitle": "Palak paneer – pinaattia ja intialaista tuorejuustoa – AJO6 punnittu versio",
+          "sourcePath": "reseptit/paaruoat/palak-paneer.md",
+          "sourceSha256": "a87a53457ea3df1d51b2d0ed933e997ad873fecee7ecd4331d82621eee71dfd9",
+          "servings": 4,
+          "evidenceVersion": 1,
+          "method": "C",
+          "completeInputScope": true,
+          "coverageProposalEligible": true,
+          "scenarios": [
+            {
+              "id": "defined-weighed-version",
+              "ingredients": [
+                {
+                  "index": 0,
+                  "name": "tuoretta pinaattia",
+                  "state": "Spinach, Mature English, fresh, raw",
+                  "massG": 500,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 0.6,
+                    "protein": 2.4,
+                    "fat": 0.3,
+                    "fibre": 2.5
+                  },
+                  "composition": {
+                    "sourceId": "A008761-r6",
+                    "evidenceHash": "dc65488466f0fe2d4bc72d6868727bc94c445689c15eec884896890cd2c9d109"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "low-carb-vegetable",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "vegetable-imputation40",
+                    "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 1,
+                  "name": "paneeria, norjalainen koostumusproxy",
+                  "state": "paneer, generic Norwegian composition proxy",
+                  "massG": 250,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 0,
+                    "protein": 26,
+                    "fat": 24.5,
+                    "fibre": 0
+                  },
+                  "composition": {
+                    "sourceId": "N01301-r6",
+                    "evidenceHash": "fbfd6198057497622f38daec6c38b389b3c929f41f3399132bff584cff7a0044"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "unresolved",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention."
+                },
+                {
+                  "index": 2,
+                  "name": "sipulia",
+                  "state": "SIPULI, KELTASIPULI",
+                  "massG": 55,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 4.8,
+                    "protein": 1.25,
+                    "fat": 0.1,
+                    "fibre": 1.2
+                  },
+                  "composition": {
+                    "sourceId": "F335-r6",
+                    "evidenceHash": "7123bcfe9a0dae08d2629d82fa2258c2784aa98a86b402e866780751ec8c4897"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "low-carb-vegetable",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "vegetable-imputation40",
+                    "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 3,
+                  "name": "valkosipulia",
+                  "state": "Garlic, peeled, fresh, raw",
+                  "massG": 7,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 10.2,
+                    "protein": 6.1,
+                    "fat": 2.8,
+                    "fibre": 16.9
+                  },
+                  "composition": {
+                    "sourceId": "A004193-r6",
+                    "evidenceHash": "dc2400e8c68474c28ed7c2aeb3fa3f45d6ffe21e8f9b5a913993411fb2677d7e"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "low-carb-vegetable",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "vegetable-imputation40",
+                    "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 4,
+                  "name": "tuoretta inkivääriä",
+                  "state": "Ginger, peeled, fresh, raw",
+                  "massG": 15,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 4.8,
+                    "protein": 0.8,
+                    "fat": 0.4,
+                    "fibre": 2.8
+                  },
+                  "composition": {
+                    "sourceId": "A004213-r6",
+                    "evidenceHash": "76dcbbf7beab470df4f4b60ecc70bbb3c70de18213c1687ca591285b652189b5"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "low-carb-vegetable",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "vegetable-imputation40",
+                    "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 5,
+                  "name": "oliiviöljyä",
+                  "state": "OLIIVIÖLJY",
+                  "massG": 27,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 0.0,
+                    "protein": 0.0,
+                    "fat": 100.0,
+                    "fibre": 0.0
+                  },
+                  "composition": {
+                    "sourceId": "F536-r6",
+                    "evidenceHash": "ebf4e906a714e4473c595ea96ca667a6a4ddcbebce86f4c6fbb753bda102038a"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "unresolved",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention."
+                },
+                {
+                  "index": 6,
+                  "name": "jauhettua juustokuminaa",
+                  "state": "Cumin (cummin) seed, dried, ground",
+                  "massG": 2,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 33.7,
+                    "protein": 17.8,
+                    "fat": 22.3,
+                    "fibre": 10.5
+                  },
+                  "composition": {
+                    "sourceId": "A003327-r6",
+                    "evidenceHash": "60cb122d3360e1a918f187c03d3b3a9485973d01d6ad9a20f4eb9f2838d30389"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "small-spice-extension",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "small-flavour50-r6",
+                    "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 7,
+                  "name": "kurkumaa",
+                  "state": "Turmeric, dried, ground",
+                  "massG": 1,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 44.4,
+                    "protein": 9.7,
+                    "fat": 3.2,
+                    "fibre": 22.7
+                  },
+                  "composition": {
+                    "sourceId": "A009335-r6",
+                    "evidenceHash": "cc7ff1788191c611de892c7d13bf6eccb5ff685124d24ef4a4af3718e8288960"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "small-spice-extension",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "small-flavour50-r6",
+                    "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 8,
+                  "name": "garam masalaan jauhettua korianteria",
+                  "state": "Coriander seed, dried, ground",
+                  "massG": 0.75,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 8.4,
+                    "protein": 12.4,
+                    "fat": 17.8,
+                    "fibre": 41.9
+                  },
+                  "composition": {
+                    "sourceId": "A003190-r6",
+                    "evidenceHash": "14b5863cb3aa6f867c947e76a9795c030380758d1234f29ca03e2372e0a9d04b"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "small-spice-extension",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "small-flavour50-r6",
+                    "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 9,
+                  "name": "garam masalaan jauhettua juustokuminaa",
+                  "state": "Cumin (cummin) seed, dried, ground",
+                  "massG": 0.5,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 33.7,
+                    "protein": 17.8,
+                    "fat": 22.3,
+                    "fibre": 10.5
+                  },
+                  "composition": {
+                    "sourceId": "A003327-r6",
+                    "evidenceHash": "60cb122d3360e1a918f187c03d3b3a9485973d01d6ad9a20f4eb9f2838d30389"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "small-spice-extension",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "small-flavour50-r6",
+                    "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 10,
+                  "name": "garam masalaan jauhettua kanelia",
+                  "state": "Cinnamon, dried, ground",
+                  "massG": 0.3,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 27.5,
+                    "protein": 4,
+                    "fat": 1.2,
+                    "fibre": 53.1
+                  },
+                  "composition": {
+                    "sourceId": "A002963-r6",
+                    "evidenceHash": "af443e0962b2452135eabf6e708c25399f16937d90d6d004023b119397cce64d"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "small-spice-extension",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "small-flavour50-r6",
+                    "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 11,
+                  "name": "garam masalaan jauhettua kardemummaa",
+                  "state": "Cardamom seed, dried, ground",
+                  "massG": 0.2,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 34.4,
+                    "protein": 10.8,
+                    "fat": 6.7,
+                    "fibre": 28
+                  },
+                  "composition": {
+                    "sourceId": "A002258-r6",
+                    "evidenceHash": "2e3c565acd9706cabfc2525c5babb385aa8867fe79fe8f91b66253b5cbc441d6"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "small-spice-extension",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "small-flavour50-r6",
+                    "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 12,
+                  "name": "garam masalaan jauhettua neilikkaa",
+                  "state": "Cloves, dried, ground",
+                  "massG": 0.1,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 31.6,
+                    "protein": 6,
+                    "fat": 13,
+                    "fibre": 33.9
+                  },
+                  "composition": {
+                    "sourceId": "A002970-r6",
+                    "evidenceHash": "0644555e6bd837be559c085bc0c50c48d279b50a6a4b08a6436a41e8cdb83949"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "small-spice-extension",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "small-flavour50-r6",
+                    "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 13,
+                  "name": "garam masalaan jauhettua mustapippuria",
+                  "state": "Pepper, black, ground",
+                  "massG": 0.15,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 38.6,
+                    "protein": 10.4,
+                    "fat": 3.3,
+                    "fibre": 25.3
+                  },
+                  "composition": {
+                    "sourceId": "A006618-r6",
+                    "evidenceHash": "d8ab25b158562afbd71af5b72b5675230f301bf2273aceafd015a5eee4d5d537"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "small-spice-extension",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "small-flavour50-r6",
+                    "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 14,
+                  "name": "38% kuohukermaa",
+                  "state": "KERMA, KUOHUKERMA, RASVAA 38 %",
+                  "massG": 100,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 2.9,
+                    "protein": 1.88,
+                    "fat": 38.0,
+                    "fibre": 0.0
+                  },
+                  "composition": {
+                    "sourceId": "F631-r6",
+                    "evidenceHash": "8615038aa6f71f8fdd54531a12e235d0f8ed7a5038396a524e694341371ca0f2"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "dairy-code",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit DAIRY identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "dairy-imputation30",
+                    "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit DAIRY identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 15,
+                  "name": "sitruunamehua",
+                  "state": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+                  "massG": 15,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 1.6,
+                    "protein": 0.31,
+                    "fat": 0.0,
+                    "fibre": 0.1
+                  },
+                  "composition": {
+                    "sourceId": "F11557-r6",
+                    "evidenceHash": "11d041152c9f63499d5f8b1d414ef54bf442a4c662d118e4fa93a4a107ba4ec2"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "lowcho-code",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit CITRUS_JUICE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "lowcho50-r6",
+                    "evidenceHash": "b831cb9118a8e0990b807a35aa80b854ec0c9ee0aeaf878dd32bb9f0f94fe86d",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit CITRUS_JUICE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 16,
+                  "name": "vettä",
+                  "state": "VESI, VESIJOHTOVESI",
+                  "massG": 50,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 0.0,
+                    "protein": 0.0,
+                    "fat": 0.0,
+                    "fibre": 0.0
+                  },
+                  "composition": {
+                    "sourceId": "F922-r6",
+                    "evidenceHash": "0af84763df87ded0f6f7f0b715965a6705ade53c5517ee06e228ebe2bb7b9490"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "unresolved",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention."
+                },
+                {
+                  "index": 17,
+                  "name": "suolaa maun mukaan",
+                  "state": "pure salt",
+                  "massG": null,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 0,
+                    "protein": 0,
+                    "fat": 0,
+                    "fibre": 0
+                  },
+                  "certifiedZeroSalt": true,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "salt",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "DIRECT",
+                  "applicability": "Pure salt has zero four macros"
+                }
+              ]
+            }
+          ],
+          "batch": "ROUND1",
+          "confidence": "LOW",
+          "uncertainty": "NOT_BOUNDED",
+          "approved": false,
+          "published": false,
+          "reviewState": "READY FOR OWNER REVIEW",
+          "originalIngredients": [
+            {
+              "amount": 500,
+              "unit": "g",
+              "item": "tuoretta pinaattia"
+            },
+            {
+              "amount": 250,
+              "unit": "g",
+              "item": "paneer-juustoa",
+              "note": "kuutioituna"
+            },
+            {
+              "amount": 1,
+              "unit": "kpl",
+              "item": "sipuli",
+              "note": "hienonnettuna"
+            },
+            {
+              "amount": 2,
+              "unit": "kpl",
+              "item": "valkosipulinkynttä"
+            },
+            {
+              "amount": 15,
+              "unit": "g",
+              "item": "tuoretta inkivääriä",
+              "note": "raastettuna"
+            },
+            {
+              "amount": 2,
+              "unit": "rkl",
+              "item": "öljyä"
+            },
+            {
+              "amount": 1,
+              "unit": "tl",
+              "item": "jauhettua juustokuminaa"
+            },
+            {
+              "amount": 0.5,
+              "unit": "tl",
+              "item": "kurkumaa"
+            },
+            {
+              "amount": 1,
+              "unit": "tl",
+              "item": "garam masalaa"
+            },
+            {
+              "amount": 1,
+              "unit": "dl",
+              "item": "kuohukermaa"
+            },
+            {
+              "amount": 1,
+              "unit": "tl",
+              "item": "suolaa"
+            },
+            {
+              "amount": 1,
+              "unit": "rkl",
+              "item": "sitruunamehua"
+            },
+            {
+              "unit": "dl",
+              "item": "vettä",
+              "amount": 0.5
+            }
+          ],
+          "originalPreparation": "\n\n1. Huuhtele pinaatti ja ryöppää kiehuvassa vedessä minuutti. Jäähdytä nopeasti ja valuta.\n2. Soseuta pinaatti karkeaksi soseeksi.\n3. Ruskista paneer-kuutiot pannulla ruokalusikallisessa öljyä. Nosta sivuun.\n4. Kuullota sipuli jäljellä olevassa öljyssä. Lisää valkosipuli, inkivääri, juustokumina ja kurkuma. Paista minuutti.\n5. Lisää pinaattisose, suola ja puoli desilitraa vettä. Hauduta 8 minuuttia.\n6. Lisää kerma, garam masala ja paneer. Kuumenna varovasti 5 minuuttia. Mausta sitruunamehulla.\n\n## Muistiinpanot\n\n- Älä keitä kermaista pinaattikastiketta voimakkaasti paneerin lisäämisen jälkeen.\n",
+          "proposedPreparation": [
+            "Punnitse luetellut syötävät raaka-aineet grammoina; älä lisää luetteloimatonta rasvaa tai lisukkeita.",
+            "Sekoita kuusi garam masalan maustetta (yhteensä2g). Punnitse250g paneeria, jonka koostumuksena käytetään nimettyä norjalaista paneer-proxya.",
+            "Ruskista paneer puolessa öljystä ja siirrä sivuun. Kuullota sipuli lopussa öljyssä. Lisää valkosipuli, inkivääri, juustokumina ja kurkuma.",
+            "Lisää pinaatti ja50g vettä suoraan pannulle. Hauduta pinaatti pehmeäksi, soseuta karkeasti ja säilytä kaikki neste; tässä versiossa ei ryöpätä eikä valuteta.",
+            "Lisää kerma, garam masala ja paneer. Kuumenna5min ja lisää sitruunamehu. Jaa koko seos neljään annokseen.",
+            "Kypsennä kaikki raakaa eläinperäistä ainesta sisältävät osat kypsiksi. Syö kaikki tämän punnitun version ainekset ja kastike/pannuneste. Raakojen ainesten ravintokoostumus on kypsän ruoan proxy; mittaamatonta hävikkiä ei vähennetä."
+          ],
+          "publicationFixes": [
+            "Garam masala2g is the same six-spice blend. Norwegian generic paneer is a disclosed composition proxy, not an exact Finnish branded product. Wilt spinach directly in pan with50g water rather than discard blanching liquid; consume all."
+          ],
+          "blockers": [],
+          "publicationConditions": [
+            "Owner method/content approval",
+            "Exact weighed version and all four macros; no unlisted sides",
+            "Product/preparation proxies and LOW language visible; translation review before any locale publication"
+          ],
+          "proposedVersionHash": "1b43306c10cdf8239421befaf6eb090caac2f712f04d5a326a254a34391d05fc"
+        },
+        "sources": [
+          {
+            "id": "vegetable-imputation40",
+            "gi": 40,
+            "scale": "GLUCOSE_100",
+            "family": "low-carb-vegetable",
+            "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+            "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+            "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+            "location": "Conclusions: assignment discussion",
+            "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+            "confidence": "LOW",
+            "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+            "newRecordInRun2": true,
+            "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+          },
+          {
+            "id": "dairy-imputation30",
+            "gi": 30,
+            "scale": "GLUCOSE_100",
+            "family": "dairy-code",
+            "food": "Unsweetened animal dairy coding assignment",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+            "location": "Conclusions, low-carbohydrate product assignment",
+            "confidence": "LOW",
+            "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+            "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+          },
+          {
+            "id": "lowcho50-r6",
+            "gi": 50,
+            "scale": "GLUCOSE_100",
+            "family": "lowcho-code",
+            "food": "Named foods with <=5 g available CHO/100 g",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+            "location": "Author presentation slide 12",
+            "confidence": "LOW",
+            "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+            "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+            "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+            "allowedCompositionIds": [
+              "A002991-r6",
+              "A004729-r6",
+              "A005199-r6",
+              "A008004-r6",
+              "A008065-r6",
+              "F11557-r6",
+              "F29-r6",
+              "F7600-r6",
+              "F858-r6"
+            ],
+            "evidenceHash": "b831cb9118a8e0990b807a35aa80b854ec0c9ee0aeaf878dd32bb9f0f94fe86d"
+          },
+          {
+            "id": "small-flavour50-r6",
+            "gi": 50,
+            "scale": "GLUCOSE_100",
+            "family": "small-spice-extension",
+            "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+            "location": "Explicit project extension of coding default, not directly published for these foods",
+            "confidence": "LOW",
+            "projectExtension": true,
+            "maxCarbohydratePerServing": 0.5,
+            "maxCumulativeCarbohydratePerServing": 1,
+            "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+            "allowedCompositionIds": [
+              "A002258-r6",
+              "A002963-r6",
+              "A002970-r6",
+              "A003190-r6",
+              "A003327-r6",
+              "A006118-r6",
+              "A006316-r6",
+              "A006618-r6",
+              "A009335-r6",
+              "U170917-r6"
+            ],
+            "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2"
+          }
+        ],
+        "comps": [
+          {
+            "id": "F11557-r6",
+            "per100g": {
+              "availableCarbohydrate": 1.6,
+              "protein": 0.31,
+              "fat": 0.0,
+              "fibre": 0.1
+            },
+            "sourceRecord": {
+              "id": "F11557-r6",
+              "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+              "state": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11557",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "THL Fineli Release20 CC BY4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "11557",
+                "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+                "food_type": "FOOD",
+                "process": "MASH",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "JUICE",
+                "food_class": "FRUBJUIC",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 1.6,
+                  "fibre_g_per_100g": 0.1,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 0.31,
+                  "fat_g_per_100g": 0.0
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0181"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "IG",
+                    "method_indicator": "MIR003"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  }
+                },
+                "portion_mass_g": {
+                  "DL": 100.0,
+                  "RKL": 15.0,
+                  "TL": 5.0
+                }
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 1.7,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "CITRUS_JUICE",
+            "evidenceHash": "11d041152c9f63499d5f8b1d414ef54bf442a4c662d118e4fa93a4a107ba4ec2"
+          },
+          {
+            "id": "A003190-r6",
+            "per100g": {
+              "availableCarbohydrate": 8.4,
+              "protein": 12.4,
+              "fat": 17.8,
+              "fibre": 41.9
+            },
+            "sourceRecord": {
+              "id": "A003190-r6",
+              "name": "Coriander seed, dried, ground",
+              "state": "Coriander seed, dried, ground",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F003190",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "F003190",
+                "classification": 31302,
+                "derivation": "Borrowed",
+                "name": "Coriander seed, dried, ground",
+                "protein_g_per_100g": 12.4,
+                "fat_g_per_100g": 17.8,
+                "fibre_g_per_100g": 41.9,
+                "glycerol_g_per_100g": null,
+                "erythritol_g_per_100g": null,
+                "maltitol_g_per_100g": null,
+                "mannitol_g_per_100g": null,
+                "xylitol_g_per_100g": null,
+                "sorbitol_g_per_100g": null,
+                "available_carbohydrate_without_sugar_alcohols_g_per_100g": 8.4,
+                "available_carbohydrate_with_sugar_alcohols_g_per_100g": 8.4
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 50.3,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "GROUND_SPICE",
+            "evidenceHash": "14b5863cb3aa6f867c947e76a9795c030380758d1234f29ca03e2372e0a9d04b"
+          },
+          {
+            "id": "A003327-r6",
+            "per100g": {
+              "availableCarbohydrate": 33.7,
+              "protein": 17.8,
+              "fat": 22.3,
+              "fibre": 10.5
+            },
+            "sourceRecord": {
+              "id": "A003327-r6",
+              "name": "Cumin (cummin) seed, dried, ground",
+              "state": "Cumin (cummin) seed, dried, ground",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F003327",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "F003327",
+                "classification": 31302,
+                "derivation": "Borrowed",
+                "name": "Cumin (cummin) seed, dried, ground",
+                "protein_g_per_100g": 17.8,
+                "fat_g_per_100g": 22.3,
+                "fibre_g_per_100g": 10.5,
+                "glycerol_g_per_100g": null,
+                "erythritol_g_per_100g": null,
+                "maltitol_g_per_100g": null,
+                "mannitol_g_per_100g": null,
+                "xylitol_g_per_100g": null,
+                "sorbitol_g_per_100g": null,
+                "available_carbohydrate_without_sugar_alcohols_g_per_100g": 33.7,
+                "available_carbohydrate_with_sugar_alcohols_g_per_100g": 33.7
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 44.2,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "GROUND_SPICE",
+            "evidenceHash": "60cb122d3360e1a918f187c03d3b3a9485973d01d6ad9a20f4eb9f2838d30389"
+          },
+          {
+            "id": "A002963-r6",
+            "per100g": {
+              "availableCarbohydrate": 27.5,
+              "protein": 4,
+              "fat": 1.2,
+              "fibre": 53.1
+            },
+            "sourceRecord": {
+              "id": "A002963-r6",
+              "name": "Cinnamon, dried, ground",
+              "state": "Cinnamon, dried, ground",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002963",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "F002963",
+                "classification": 31302,
+                "derivation": "Borrowed",
+                "name": "Cinnamon, dried, ground",
+                "protein_g_per_100g": 4,
+                "fat_g_per_100g": 1.2,
+                "fibre_g_per_100g": 53.1,
+                "glycerol_g_per_100g": null,
+                "erythritol_g_per_100g": null,
+                "maltitol_g_per_100g": null,
+                "mannitol_g_per_100g": null,
+                "xylitol_g_per_100g": null,
+                "sorbitol_g_per_100g": null,
+                "available_carbohydrate_without_sugar_alcohols_g_per_100g": 27.5,
+                "available_carbohydrate_with_sugar_alcohols_g_per_100g": 27.5
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 80.6,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "GROUND_SPICE",
+            "evidenceHash": "af443e0962b2452135eabf6e708c25399f16937d90d6d004023b119397cce64d"
+          },
+          {
+            "id": "A002258-r6",
+            "per100g": {
+              "availableCarbohydrate": 34.4,
+              "protein": 10.8,
+              "fat": 6.7,
+              "fibre": 28
+            },
+            "sourceRecord": {
+              "id": "A002258-r6",
+              "name": "Cardamom seed, dried, ground",
+              "state": "Cardamom seed, dried, ground",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002258",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "F002258",
+                "classification": 31302,
+                "derivation": "Borrowed",
+                "name": "Cardamom seed, dried, ground",
+                "protein_g_per_100g": 10.8,
+                "fat_g_per_100g": 6.7,
+                "fibre_g_per_100g": 28,
+                "glycerol_g_per_100g": null,
+                "erythritol_g_per_100g": null,
+                "maltitol_g_per_100g": null,
+                "mannitol_g_per_100g": null,
+                "xylitol_g_per_100g": null,
+                "sorbitol_g_per_100g": null,
+                "available_carbohydrate_without_sugar_alcohols_g_per_100g": 34.4,
+                "available_carbohydrate_with_sugar_alcohols_g_per_100g": 34.4
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 62.4,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "GROUND_SPICE",
+            "evidenceHash": "2e3c565acd9706cabfc2525c5babb385aa8867fe79fe8f91b66253b5cbc441d6"
+          },
+          {
+            "id": "A002970-r6",
+            "per100g": {
+              "availableCarbohydrate": 31.6,
+              "protein": 6,
+              "fat": 13,
+              "fibre": 33.9
+            },
+            "sourceRecord": {
+              "id": "A002970-r6",
+              "name": "Cloves, dried, ground",
+              "state": "Cloves, dried, ground",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002970",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "F002970",
+                "classification": 31302,
+                "derivation": "Borrowed",
+                "name": "Cloves, dried, ground",
+                "protein_g_per_100g": 6,
+                "fat_g_per_100g": 13,
+                "fibre_g_per_100g": 33.9,
+                "glycerol_g_per_100g": null,
+                "erythritol_g_per_100g": null,
+                "maltitol_g_per_100g": null,
+                "mannitol_g_per_100g": null,
+                "xylitol_g_per_100g": null,
+                "sorbitol_g_per_100g": null,
+                "available_carbohydrate_without_sugar_alcohols_g_per_100g": 31.6,
+                "available_carbohydrate_with_sugar_alcohols_g_per_100g": 31.6
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 65.5,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "GROUND_SPICE",
+            "evidenceHash": "0644555e6bd837be559c085bc0c50c48d279b50a6a4b08a6436a41e8cdb83949"
+          },
+          {
+            "id": "A006618-r6",
+            "per100g": {
+              "availableCarbohydrate": 38.6,
+              "protein": 10.4,
+              "fat": 3.3,
+              "fibre": 25.3
+            },
+            "sourceRecord": {
+              "id": "A006618-r6",
+              "name": "Pepper, black, ground",
+              "state": "Pepper, black, ground",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "F006618",
+                "classification": 31302,
+                "derivation": "Borrowed",
+                "name": "Pepper, black, ground",
+                "protein_g_per_100g": 10.4,
+                "fat_g_per_100g": 3.3,
+                "fibre_g_per_100g": 25.3,
+                "glycerol_g_per_100g": null,
+                "erythritol_g_per_100g": null,
+                "maltitol_g_per_100g": null,
+                "mannitol_g_per_100g": null,
+                "xylitol_g_per_100g": null,
+                "sorbitol_g_per_100g": null,
+                "available_carbohydrate_without_sugar_alcohols_g_per_100g": 38.6,
+                "available_carbohydrate_with_sugar_alcohols_g_per_100g": 38.6
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 63.9,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "GROUND_SPICE",
+            "evidenceHash": "d8ab25b158562afbd71af5b72b5675230f301bf2273aceafd015a5eee4d5d537"
+          },
+          {
+            "id": "F335-r6",
+            "per100g": {
+              "availableCarbohydrate": 4.8,
+              "protein": 1.25,
+              "fat": 0.1,
+              "fibre": 1.2
+            },
+            "sourceRecord": {
+              "id": "F335-r6",
+              "name": "SIPULI, KELTASIPULI",
+              "state": "SIPULI, KELTASIPULI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "THL Fineli Release20 CC BY4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "335",
+                "name": "SIPULI, KELTASIPULI",
+                "food_type": "FOOD",
+                "process": "RAW",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "VEGONI",
+                "food_class": "VEGFRESH",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 4.8,
+                  "fibre_g_per_100g": 1.2,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 1.25,
+                  "fat_g_per_100g": 0.1
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0181"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "T",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MIR006"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "KPL_S": 30.0,
+                  "KPL_M": 55.0,
+                  "KPL_L": 200.0,
+                  "DL": 90.0
+                }
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 6.0,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "NONSTARCHY_VEGETABLE",
+            "evidenceHash": "7123bcfe9a0dae08d2629d82fa2258c2784aa98a86b402e866780751ec8c4897"
+          },
+          {
+            "id": "A004193-r6",
+            "per100g": {
+              "availableCarbohydrate": 10.2,
+              "protein": 6.1,
+              "fat": 2.8,
+              "fibre": 16.9
+            },
+            "sourceRecord": {
+              "id": "A004193-r6",
+              "name": "Garlic, peeled, fresh, raw",
+              "state": "Garlic, peeled, fresh, raw",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F004193",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "F004193",
+                "classification": 24802,
+                "derivation": "Analysed",
+                "name": "Garlic, peeled, fresh, raw",
+                "protein_g_per_100g": 6.1,
+                "fat_g_per_100g": 2.8,
+                "fibre_g_per_100g": 16.9,
+                "glycerol_g_per_100g": null,
+                "erythritol_g_per_100g": null,
+                "maltitol_g_per_100g": null,
+                "mannitol_g_per_100g": null,
+                "xylitol_g_per_100g": null,
+                "sorbitol_g_per_100g": null,
+                "available_carbohydrate_without_sugar_alcohols_g_per_100g": 10.2,
+                "available_carbohydrate_with_sugar_alcohols_g_per_100g": 10.2
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 27.1,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "NONSTARCHY_VEGETABLE",
+            "evidenceHash": "dc2400e8c68474c28ed7c2aeb3fa3f45d6ffe21e8f9b5a913993411fb2677d7e"
+          },
+          {
+            "id": "A004213-r6",
+            "per100g": {
+              "availableCarbohydrate": 4.8,
+              "protein": 0.8,
+              "fat": 0.4,
+              "fibre": 2.8
+            },
+            "sourceRecord": {
+              "id": "A004213-r6",
+              "name": "Ginger, peeled, fresh, raw",
+              "state": "Ginger, peeled, fresh, raw",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F004213",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "F004213",
+                "classification": 24302,
+                "derivation": "Analysed",
+                "name": "Ginger, peeled, fresh, raw",
+                "protein_g_per_100g": 0.8,
+                "fat_g_per_100g": 0.4,
+                "fibre_g_per_100g": 2.8,
+                "glycerol_g_per_100g": null,
+                "erythritol_g_per_100g": null,
+                "maltitol_g_per_100g": null,
+                "mannitol_g_per_100g": null,
+                "xylitol_g_per_100g": null,
+                "sorbitol_g_per_100g": null,
+                "available_carbohydrate_without_sugar_alcohols_g_per_100g": 4.8,
+                "available_carbohydrate_with_sugar_alcohols_g_per_100g": 4.8
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 7.6,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "NONSTARCHY_VEGETABLE",
+            "evidenceHash": "76dcbbf7beab470df4f4b60ecc70bbb3c70de18213c1687ca591285b652189b5"
+          },
+          {
+            "id": "F631-r6",
+            "per100g": {
+              "availableCarbohydrate": 2.9,
+              "protein": 1.88,
+              "fat": 38.0,
+              "fibre": 0.0
+            },
+            "sourceRecord": {
+              "id": "F631-r6",
+              "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+              "state": "KERMA, KUOHUKERMA, RASVAA 38 %",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/631",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "THL Fineli Release20 CC BY4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "631",
+                "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+                "food_type": "FOOD",
+                "process": "IND",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "CREAM",
+                "food_class": "CREAM",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 2.9,
+                  "fibre_g_per_100g": 0.0,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 1.88,
+                  "fat_g_per_100g": 38.0
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0181"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "U",
+                    "method_indicator": "MIR007"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "DL": 100.0,
+                  "RKL": 15.0,
+                  "TL": 5.0
+                }
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 2.9,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "DAIRY",
+            "evidenceHash": "8615038aa6f71f8fdd54531a12e235d0f8ed7a5038396a524e694341371ca0f2"
+          },
+          {
+            "id": "F536-r6",
+            "per100g": {
+              "availableCarbohydrate": 0.0,
+              "protein": 0.0,
+              "fat": 100.0,
+              "fibre": 0.0
+            },
+            "sourceRecord": {
+              "id": "F536-r6",
+              "name": "OLIIVIÖLJY",
+              "state": "OLIIVIÖLJY",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "THL Fineli Release20 CC BY4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "536",
+                "name": "OLIIVIÖLJY",
+                "food_type": "FOOD",
+                "process": "IND",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "OIL",
+                "food_class": "OIL",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 0.0,
+                  "fibre_g_per_100g": 0.0,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 0.0,
+                  "fat_g_per_100g": 100.0
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "IG",
+                    "method_indicator": "MIR003"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "U",
+                    "method_indicator": "MIR007"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "DL": 90.0,
+                  "RKL": 13.5,
+                  "TL": 4.5
+                }
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 0.0,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "UNREVIEWED",
+            "evidenceHash": "ebf4e906a714e4473c595ea96ca667a6a4ddcbebce86f4c6fbb753bda102038a"
+          },
+          {
+            "id": "A008761-r6",
+            "per100g": {
+              "availableCarbohydrate": 0.6,
+              "protein": 2.4,
+              "fat": 0.3,
+              "fibre": 2.5
+            },
+            "sourceRecord": {
+              "id": "A008761-r6",
+              "name": "Spinach, Mature English, fresh, raw",
+              "state": "Spinach, Mature English, fresh, raw",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F008761",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "F008761",
+                "classification": 24401,
+                "derivation": "Analysed",
+                "name": "Spinach, Mature English, fresh, raw",
+                "protein_g_per_100g": 2.4,
+                "fat_g_per_100g": 0.3,
+                "fibre_g_per_100g": 2.5,
+                "glycerol_g_per_100g": null,
+                "erythritol_g_per_100g": null,
+                "maltitol_g_per_100g": null,
+                "mannitol_g_per_100g": null,
+                "xylitol_g_per_100g": null,
+                "sorbitol_g_per_100g": null,
+                "available_carbohydrate_without_sugar_alcohols_g_per_100g": 0.6,
+                "available_carbohydrate_with_sugar_alcohols_g_per_100g": 0.6
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 3.1,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "NONSTARCHY_VEGETABLE",
+            "evidenceHash": "dc65488466f0fe2d4bc72d6868727bc94c445689c15eec884896890cd2c9d109"
+          },
+          {
+            "id": "N01301-r6",
+            "per100g": {
+              "availableCarbohydrate": 0,
+              "protein": 26,
+              "fat": 24.5,
+              "fibre": 0
+            },
+            "sourceRecord": {
+              "id": "matvaretabellen-01.301",
+              "name": "Cheese, paneer",
+              "sourceUrl": "https://www.matvaretabellen.no/en/cheese-paneer/",
+              "retrievedAt": "2026-10-31",
+              "licence": "Norwegian Food Composition Table factual nutrient reference",
+              "state": "paneer, generic Norwegian composition proxy",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "foodId": "01.301",
+                "carbohydrate": 0,
+                "protein": 26,
+                "fat": 24.5,
+                "dietaryFibre": 0
+              },
+              "polyolsSourceVerified": false,
+              "totalCarbohydratePer100g": 0,
+              "polyolsValue": null
+            },
+            "foodKind": "DAIRY",
+            "evidenceHash": "fbfd6198057497622f38daec6c38b389b3c929f41f3399132bff584cff7a0044"
+          },
+          {
+            "id": "A009335-r6",
+            "per100g": {
+              "availableCarbohydrate": 44.4,
+              "protein": 9.7,
+              "fat": 3.2,
+              "fibre": 22.7
+            },
+            "sourceRecord": {
+              "id": "A009335-r6",
+              "name": "Turmeric, dried, ground",
+              "state": "Turmeric, dried, ground",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009335",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "F009335",
+                "classification": 31302,
+                "derivation": "Borrowed",
+                "name": "Turmeric, dried, ground",
+                "protein_g_per_100g": 9.7,
+                "fat_g_per_100g": 3.2,
+                "fibre_g_per_100g": 22.7,
+                "glycerol_g_per_100g": null,
+                "erythritol_g_per_100g": null,
+                "maltitol_g_per_100g": null,
+                "mannitol_g_per_100g": null,
+                "xylitol_g_per_100g": null,
+                "sorbitol_g_per_100g": null,
+                "available_carbohydrate_without_sugar_alcohols_g_per_100g": 44.4,
+                "available_carbohydrate_with_sugar_alcohols_g_per_100g": 44.4
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 67.1,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "GROUND_SPICE",
+            "evidenceHash": "cc7ff1788191c611de892c7d13bf6eccb5ff685124d24ef4a4af3718e8288960"
+          },
+          {
+            "id": "F922-r6",
+            "per100g": {
+              "availableCarbohydrate": 0.0,
+              "protein": 0.0,
+              "fat": 0.0,
+              "fibre": 0.0
+            },
+            "sourceRecord": {
+              "id": "F922-r6",
+              "name": "VESI, VESIJOHTOVESI",
+              "state": "VESI, VESIJOHTOVESI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "THL Fineli Release20 CC BY4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "922",
+                "name": "VESI, VESIJOHTOVESI",
+                "food_type": "FOOD",
+                "process": "X",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "WATER",
+                "food_class": "DRWATER",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 0.0,
+                  "fibre_g_per_100g": 0.0,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 0.0,
+                  "fat_g_per_100g": 0.0
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "IG",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "IG",
+                    "method_indicator": "MIR003"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "IG",
+                    "method_indicator": "MIR003"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "U",
+                    "method_indicator": "MIR003"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "DL": 100.0,
+                  "RKL": 15.0,
+                  "TL": 5.0
+                }
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 0.0,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "UNREVIEWED",
+            "evidenceHash": "0af84763df87ded0f6f7f0b715965a6705ade53c5517ee06e228ebe2bb7b9490"
+          }
+        ],
+        "origin": "docs/nutrition/gk80/run-6/",
+        "originCommit": "767f57795f981028227167d52ee23f7e674494db",
+        "golden": {
+          "recipeId": "palak-paneer",
+          "inputHash": "fa4b12a88b60223a8cd9598ed1c66be3421ce38188ac36f012a389e4ecd28449",
+          "scenarios": [
+            {
+              "id": "defined-weighed-version",
+              "macros": {
+                "availableCarbohydrate": 2.951075,
+                "protein": 20.2128,
+                "fat": 32.2047375,
+                "fibre": 3.967225
+              },
+              "contributions": [
+                {
+                  "index": 0,
+                  "carbohydrate": 0.75,
+                  "gk": 0.3
+                },
+                {
+                  "index": 1,
+                  "carbohydrate": 0.0,
+                  "gk": 0.0
+                },
+                {
+                  "index": 2,
+                  "carbohydrate": 0.66,
+                  "gk": 0.264
+                },
+                {
+                  "index": 3,
+                  "carbohydrate": 0.1785,
+                  "gk": 0.0714
+                },
+                {
+                  "index": 4,
+                  "carbohydrate": 0.18,
+                  "gk": 0.072
+                },
+                {
+                  "index": 5,
+                  "carbohydrate": 0.0,
+                  "gk": 0.0
+                },
+                {
+                  "index": 6,
+                  "carbohydrate": 0.1685,
+                  "gk": 0.08425
+                },
+                {
+                  "index": 7,
+                  "carbohydrate": 0.111,
+                  "gk": 0.0555
+                },
+                {
+                  "index": 8,
+                  "carbohydrate": 0.01575,
+                  "gk": 0.007875
+                },
+                {
+                  "index": 9,
+                  "carbohydrate": 0.042125,
+                  "gk": 0.0210625
+                },
+                {
+                  "index": 10,
+                  "carbohydrate": 0.020625,
+                  "gk": 0.0103125
+                },
+                {
+                  "index": 11,
+                  "carbohydrate": 0.0172,
+                  "gk": 0.0086
+                },
+                {
+                  "index": 12,
+                  "carbohydrate": 0.0079,
+                  "gk": 0.00395
+                },
+                {
+                  "index": 13,
+                  "carbohydrate": 0.014475,
+                  "gk": 0.0072375
+                },
+                {
+                  "index": 14,
+                  "carbohydrate": 0.725,
+                  "gk": 0.2175
+                },
+                {
+                  "index": 15,
+                  "carbohydrate": 0.06,
+                  "gk": 0.03
+                },
+                {
+                  "index": 16,
+                  "carbohydrate": 0.0,
+                  "gk": 0.0
+                },
+                {
+                  "index": 17,
+                  "carbohydrate": 0.0,
+                  "gk": 0.0
+                }
+              ],
+              "knownSubtotal": 1.1536875,
+              "wholeGk": 1.1536875,
+              "wholeCarbohydrate": 2.951075,
+              "imputedImpact": 1.1536875
+            }
+          ]
+        },
+        "originalVersionHash": "1b43306c10cdf8239421befaf6eb090caac2f712f04d5a326a254a34391d05fc",
+        "decision": "READY FOR OWNER REVIEW",
+        "correction": null,
+        "scopeNote": "Garam masala2g samalla suhteella. Paneer250g: Matvaretabellen01.301 CHO0,P26,F24.5,kuitu0/100g. Norjalainen yleinen proxy, ei suomalaisen tuotteen tarkka pakkaus. Kaikki pinaatin haudutusneste säilyy.",
+        "blocker": null,
+        "ownerApprovalPending": true,
+        "publicationNutrition": {
+          "carbsNetG": 2.951075,
+          "carbsTotalG": 6.9183,
+          "proteinG": 20.2128,
+          "fatG": 32.2047375,
+          "fibreG": 3.967225,
+          "proxyCompositionIds": [],
+          "status": "PROPOSAL"
+        },
+        "bundleHash": "ffd1d53857b38cc30aa204c0fb02e93afbf1e8816c320d244c3c7faf919214d0"
+      },
+      "proposalIsNotPublicationEvidence": true
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "state": "HOLD — PUBLICATION POLYOL EVIDENCE MISSING",
+      "reason": "U170917-r6 bay leaf uses US total-minus-fibre proxy with unquantified polyols. Current strict nutrition model correctly withholds net/total carbohydrate. No zero-polyol assumption or general model relaxation.",
+      "lockedResearchBundle": {
+        "recipe": {
+          "recipeId": "nakkikeitto-kukkakaalilla",
+          "title": "Nakkikeitto kukkakaalilla",
+          "proposedTitle": "Nakkikeitto kukkakaalilla – AJO6 punnittu versio",
+          "sourcePath": "reseptit/paaruoat/nakkikeitto-kukkakaalilla.md",
+          "sourceSha256": "aa0d76c90de9b16a060457fc7e56fe50f8793e6835e784b03d9c6122f07f5463",
+          "servings": 4,
+          "evidenceVersion": 1,
+          "method": "C",
+          "completeInputScope": true,
+          "coverageProposalEligible": true,
+          "scenarios": [
+            {
+              "id": "defined-weighed-version",
+              "ingredients": [
+                {
+                  "index": 0,
+                  "name": "keitettyä nakkia, Fineli7600-tyyppi",
+                  "state": "NAKKI, KEITETTY",
+                  "massG": 350,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 1.162,
+                    "protein": 11.31,
+                    "fat": 18.23,
+                    "fibre": 0.008
+                  },
+                  "composition": {
+                    "sourceId": "F7600-r6",
+                    "evidenceHash": "241f19be92119789474c38585b475fcb75f436bf2af3e45158c86640df18856e"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "lowcho-code",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NAMED_LOW_CHO identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "lowcho50-r6",
+                    "evidenceHash": "b831cb9118a8e0990b807a35aa80b854ec0c9ee0aeaf878dd32bb9f0f94fe86d",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NAMED_LOW_CHO identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 1,
+                  "name": "kukkakaalia",
+                  "state": "KUKKAKAALI",
+                  "massG": 500,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 2.35,
+                    "protein": 2.0,
+                    "fat": 0.21,
+                    "fibre": 1.9
+                  },
+                  "composition": {
+                    "sourceId": "F322-r6",
+                    "evidenceHash": "0e30bc294c609c310216b69aab26e7d4a94225fd78492aea123c87e9a03a662d"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "low-carb-vegetable",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "vegetable-imputation40",
+                    "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 2,
+                  "name": "varsiselleriä",
+                  "state": "Celery, fresh, raw",
+                  "massG": 100,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 1.8,
+                    "protein": 0.6,
+                    "fat": 0.1,
+                    "fibre": 1.6
+                  },
+                  "composition": {
+                    "sourceId": "A002390-r6",
+                    "evidenceHash": "110820aa1f2583188d6f1883f8c0342e4d157a71b70f92d1bc0dfd70857d0dfb"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "low-carb-vegetable",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "vegetable-imputation40",
+                    "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 3,
+                  "name": "purjoa",
+                  "state": "PURJOSIPULI",
+                  "massG": 80,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 2.4,
+                    "protein": 1.81,
+                    "fat": 0.2,
+                    "fibre": 2.1
+                  },
+                  "composition": {
+                    "sourceId": "F337-r6",
+                    "evidenceHash": "f32039c2511485a1fa1c971b311d0a71fa04d76f66d1d2f24460d82cbafe3bf3"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "low-carb-vegetable",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "vegetable-imputation40",
+                    "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 4,
+                  "name": "sipulia",
+                  "state": "SIPULI, KELTASIPULI",
+                  "massG": 55,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 4.8,
+                    "protein": 1.25,
+                    "fat": 0.1,
+                    "fibre": 1.2
+                  },
+                  "composition": {
+                    "sourceId": "F335-r6",
+                    "evidenceHash": "7123bcfe9a0dae08d2629d82fa2258c2784aa98a86b402e866780751ec8c4897"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "low-carb-vegetable",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "vegetable-imputation40",
+                    "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 5,
+                  "name": "käyttövalmista lihalientä",
+                  "state": "LIHALIEMI, LAIMENNETTU",
+                  "massG": 800,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 3.0,
+                    "protein": 0.34,
+                    "fat": 0.6,
+                    "fibre": 0.017
+                  },
+                  "composition": {
+                    "sourceId": "F29-r6",
+                    "evidenceHash": "fb10d1e1de85542f82e770d9c10c5926079f27d24510a4c04e605a4ca7130021"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "lowcho-code",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit STOCK identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "lowcho50-r6",
+                    "evidenceHash": "b831cb9118a8e0990b807a35aa80b854ec0c9ee0aeaf878dd32bb9f0f94fe86d",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit STOCK identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 6,
+                  "name": "jauhettua laakerinlehteä kokonaan syötäväksi",
+                  "state": "Spices, bay leaf",
+                  "massG": 0.2,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 48.67,
+                    "protein": 7.61,
+                    "fat": 8.36,
+                    "fibre": 26.3
+                  },
+                  "composition": {
+                    "sourceId": "U170917-r6",
+                    "evidenceHash": "ff5621895902eeed69a222a07fae378824b92374f92d9e6e8e6d9ed14eb20ac1"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "small-spice-extension",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "small-flavour50-r6",
+                    "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 7,
+                  "name": "jauhettua mustapippuria",
+                  "state": "Pepper, black, ground",
+                  "massG": 1,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 38.6,
+                    "protein": 10.4,
+                    "fat": 3.3,
+                    "fibre": 25.3
+                  },
+                  "composition": {
+                    "sourceId": "A006618-r6",
+                    "evidenceHash": "d8ab25b158562afbd71af5b72b5675230f301bf2273aceafd015a5eee4d5d537"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "small-spice-extension",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "small-flavour50-r6",
+                    "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit GROUND_SPICE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 8,
+                  "name": "tuoretta persiljaa",
+                  "state": "PERSILJA",
+                  "massG": 5,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 1.1,
+                    "protein": 1.38,
+                    "fat": 0.2,
+                    "fibre": 2.9
+                  },
+                  "composition": {
+                    "sourceId": "F333-r6",
+                    "evidenceHash": "b17bfe7472dbc2ced91d4130909c745cc0c8544f68904a7d0565b65b65f006b5"
+                  },
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "low-carb-vegetable",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "APPLIED",
+                  "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "vegetable-imputation40",
+                    "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                    "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit NONSTARCHY_VEGETABLE identity. Published GI coding plus project scope, not human-measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 9,
+                  "name": "suolaa maun mukaan",
+                  "state": "pure salt",
+                  "massG": null,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 0,
+                    "protein": 0,
+                    "fat": 0,
+                    "fibre": 0
+                  },
+                  "certifiedZeroSalt": true,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "family": "salt",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "match": "DIRECT",
+                  "applicability": "Pure salt has zero four macros"
+                }
+              ]
+            }
+          ],
+          "batch": "ROUND2",
+          "confidence": "LOW",
+          "uncertainty": "NOT_BOUNDED",
+          "approved": false,
+          "published": false,
+          "reviewState": "READY FOR OWNER REVIEW",
+          "originalIngredients": [
+            {
+              "amount": 350,
+              "unit": "g",
+              "item": "nakkeja"
+            },
+            {
+              "amount": 500,
+              "unit": "g",
+              "item": "kukkakaalia",
+              "note": "pieniksi paloiksi jaettuna"
+            },
+            {
+              "amount": 100,
+              "unit": "g",
+              "item": "varsiselleriä",
+              "note": "viipaloituna"
+            },
+            {
+              "amount": 80,
+              "unit": "g",
+              "item": "purjoa",
+              "note": "huuhdeltuna ja viipaloituna"
+            },
+            {
+              "amount": 1,
+              "unit": "kpl",
+              "item": "pieni sipuli"
+            },
+            {
+              "amount": 8,
+              "unit": "dl",
+              "item": "lihalientä"
+            },
+            {
+              "amount": 1,
+              "unit": "kpl",
+              "item": "laakerinlehti"
+            },
+            {
+              "amount": 0.5,
+              "unit": "tl",
+              "item": "mustapippuria"
+            },
+            {
+              "amount": null,
+              "unit": "",
+              "item": "tuoretta persiljaa",
+              "note": "silputtuna"
+            }
+          ],
+          "originalPreparation": "\n\n1. Hienonna sipuli, viipaloi selleri ja purjo ja jaa kukkakaali pieniksi kukinnoiksi.\n2. Kuumenna lihaliemi kiehuvaksi. Lisää sipuli, selleri, purjo, laakerinlehti ja mustapippuri. Keitä miedolla lämmöllä 5 minuuttia.\n3. Lisää kukkakaali ja keitä vielä noin 8 minuuttia, kunnes se on napakan pehmeää.\n4. Viipaloi nakit ja lisää keittoon. Kuumenna 3–4 minuuttia kiehumatta voimakkaasti.\n5. Poista laakerinlehti, maista liemi ja lisää tarvittaessa suolaa. Viimeistele persiljalla.\n\n## Muistiinpanot\n\n- Valitse vähähiilihydraattiset nakit ja tarkista pakkausmerkinnät. Kukkakaalin ja purjon määrä tekee tästä VHH-version, ei tiukkaa ketoreseptiä.\n",
+          "proposedPreparation": [
+            "Punnitse luetellut syötävät raaka-aineet grammoina; älä lisää luetteloimatonta rasvaa tai lisukkeita.",
+            "Punnitse350g keitettyä nakkia, jonka koostumus vastaa Fineli7600-tyyppiä. Viipaloi selleri,purjo,sipuli ja nakki; jaa kukkakaali.",
+            "Keitä sipuli,selleri,purjo,jauhettu laakeri0.2g ja pippuri1g lihaliemessä5min. Lisää kukkakaali ja kypsennä noin8min.",
+            "Lisää nakit ja kuumenna kauttaaltaan. Lisää persilja5g. Jauhettu laakeri syödään kokonaan; lehteä ei poisteta. Jaa kaikki keitto neljään annokseen.",
+            "Kypsennä kaikki raakaa eläinperäistä ainesta sisältävät osat kypsiksi. Syö kaikki tämän punnitun version ainekset ja kastike/pannuneste. Raakojen ainesten ravintokoostumus on kypsän ruoan proxy; mittaamatonta hävikkiä ei vähennetä."
+          ],
+          "publicationFixes": [
+            "350g cooked sausage uses actual Fineli7600, not high-CHO lenkkimakkara7607. Ground bay0.2g is consumed, rather than assumed-zero extraction from a removed leaf. Parsley5g and pepper1g weighed."
+          ],
+          "blockers": [],
+          "publicationConditions": [
+            "Owner method/content approval",
+            "Exact weighed version and all four macros; no unlisted sides",
+            "Product/preparation proxies and LOW language visible; translation review before any locale publication"
+          ],
+          "proposedVersionHash": "7f20835a18550a81db99c370fe235b8101a4f4558038e226a4390d8d4f7a9986"
+        },
+        "sources": [
+          {
+            "id": "vegetable-imputation40",
+            "gi": 40,
+            "scale": "GLUCOSE_100",
+            "family": "low-carb-vegetable",
+            "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+            "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+            "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+            "location": "Conclusions: assignment discussion",
+            "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+            "confidence": "LOW",
+            "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+            "newRecordInRun2": true,
+            "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+          },
+          {
+            "id": "lowcho50-r6",
+            "gi": 50,
+            "scale": "GLUCOSE_100",
+            "family": "lowcho-code",
+            "food": "Named foods with <=5 g available CHO/100 g",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+            "location": "Author presentation slide 12",
+            "confidence": "LOW",
+            "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+            "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+            "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+            "allowedCompositionIds": [
+              "A002991-r6",
+              "A004729-r6",
+              "A005199-r6",
+              "A008004-r6",
+              "A008065-r6",
+              "F11557-r6",
+              "F29-r6",
+              "F7600-r6",
+              "F858-r6"
+            ],
+            "evidenceHash": "b831cb9118a8e0990b807a35aa80b854ec0c9ee0aeaf878dd32bb9f0f94fe86d"
+          },
+          {
+            "id": "small-flavour50-r6",
+            "gi": 50,
+            "scale": "GLUCOSE_100",
+            "family": "small-spice-extension",
+            "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+            "location": "Explicit project extension of coding default, not directly published for these foods",
+            "confidence": "LOW",
+            "projectExtension": true,
+            "maxCarbohydratePerServing": 0.5,
+            "maxCumulativeCarbohydratePerServing": 1,
+            "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+            "allowedCompositionIds": [
+              "A002258-r6",
+              "A002963-r6",
+              "A002970-r6",
+              "A003190-r6",
+              "A003327-r6",
+              "A006118-r6",
+              "A006316-r6",
+              "A006618-r6",
+              "A009335-r6",
+              "U170917-r6"
+            ],
+            "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2"
+          }
+        ],
+        "comps": [
+          {
+            "id": "A006618-r6",
+            "per100g": {
+              "availableCarbohydrate": 38.6,
+              "protein": 10.4,
+              "fat": 3.3,
+              "fibre": 25.3
+            },
+            "sourceRecord": {
+              "id": "A006618-r6",
+              "name": "Pepper, black, ground",
+              "state": "Pepper, black, ground",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "F006618",
+                "classification": 31302,
+                "derivation": "Borrowed",
+                "name": "Pepper, black, ground",
+                "protein_g_per_100g": 10.4,
+                "fat_g_per_100g": 3.3,
+                "fibre_g_per_100g": 25.3,
+                "glycerol_g_per_100g": null,
+                "erythritol_g_per_100g": null,
+                "maltitol_g_per_100g": null,
+                "mannitol_g_per_100g": null,
+                "xylitol_g_per_100g": null,
+                "sorbitol_g_per_100g": null,
+                "available_carbohydrate_without_sugar_alcohols_g_per_100g": 38.6,
+                "available_carbohydrate_with_sugar_alcohols_g_per_100g": 38.6
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 63.9,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "GROUND_SPICE",
+            "evidenceHash": "d8ab25b158562afbd71af5b72b5675230f301bf2273aceafd015a5eee4d5d537"
+          },
+          {
+            "id": "F335-r6",
+            "per100g": {
+              "availableCarbohydrate": 4.8,
+              "protein": 1.25,
+              "fat": 0.1,
+              "fibre": 1.2
+            },
+            "sourceRecord": {
+              "id": "F335-r6",
+              "name": "SIPULI, KELTASIPULI",
+              "state": "SIPULI, KELTASIPULI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "THL Fineli Release20 CC BY4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "335",
+                "name": "SIPULI, KELTASIPULI",
+                "food_type": "FOOD",
+                "process": "RAW",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "VEGONI",
+                "food_class": "VEGFRESH",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 4.8,
+                  "fibre_g_per_100g": 1.2,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 1.25,
+                  "fat_g_per_100g": 0.1
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0181"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "T",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MIR006"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "KPL_S": 30.0,
+                  "KPL_M": 55.0,
+                  "KPL_L": 200.0,
+                  "DL": 90.0
+                }
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 6.0,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "NONSTARCHY_VEGETABLE",
+            "evidenceHash": "7123bcfe9a0dae08d2629d82fa2258c2784aa98a86b402e866780751ec8c4897"
+          },
+          {
+            "id": "F7600-r6",
+            "per100g": {
+              "availableCarbohydrate": 1.162,
+              "protein": 11.31,
+              "fat": 18.23,
+              "fibre": 0.008
+            },
+            "sourceRecord": {
+              "id": "F7600-r6",
+              "name": "NAKKI, KEITETTY",
+              "state": "NAKKI, KEITETTY",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/7600",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "THL Fineli Release20 CC BY4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "7600",
+                "name": "NAKKI, KEITETTY",
+                "food_type": "DISH",
+                "process": "BOIL",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "DISH",
+                "food_class": "SAUSAGE",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 1.162,
+                  "fibre_g_per_100g": 0.008,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 11.31,
+                  "fat_g_per_100g": 18.23
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  }
+                },
+                "portion_mass_g": {}
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 1.17,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "NAMED_LOW_CHO",
+            "evidenceHash": "241f19be92119789474c38585b475fcb75f436bf2af3e45158c86640df18856e"
+          },
+          {
+            "id": "F322-r6",
+            "per100g": {
+              "availableCarbohydrate": 2.35,
+              "protein": 2.0,
+              "fat": 0.21,
+              "fibre": 1.9
+            },
+            "sourceRecord": {
+              "id": "F322-r6",
+              "name": "KUKKAKAALI",
+              "state": "KUKKAKAALI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/322",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "THL Fineli Release20 CC BY4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "322",
+                "name": "KUKKAKAALI",
+                "food_type": "FOOD",
+                "process": "RAW",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "CABBAGE",
+                "food_class": "VEGFRESH",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 2.35,
+                  "fibre_g_per_100g": 1.9,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 2.0,
+                  "fat_g_per_100g": 0.21
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "D",
+                    "method_type": "AG",
+                    "method_indicator": "MI1302"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0181"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "D",
+                    "method_type": "S",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MIR006"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "KPL_S": 400.0,
+                  "KPL_M": 600.0,
+                  "KPL_L": 1000.0,
+                  "DL": 40.0
+                }
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 4.25,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "NONSTARCHY_VEGETABLE",
+            "evidenceHash": "0e30bc294c609c310216b69aab26e7d4a94225fd78492aea123c87e9a03a662d"
+          },
+          {
+            "id": "A002390-r6",
+            "per100g": {
+              "availableCarbohydrate": 1.8,
+              "protein": 0.6,
+              "fat": 0.1,
+              "fibre": 1.6
+            },
+            "sourceRecord": {
+              "id": "A002390-r6",
+              "name": "Celery, fresh, raw",
+              "state": "Celery, fresh, raw",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002390",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "F002390",
+                "classification": 24402,
+                "derivation": "Analysed",
+                "name": "Celery, fresh, raw",
+                "protein_g_per_100g": 0.6,
+                "fat_g_per_100g": 0.1,
+                "fibre_g_per_100g": 1.6,
+                "glycerol_g_per_100g": null,
+                "erythritol_g_per_100g": null,
+                "maltitol_g_per_100g": null,
+                "mannitol_g_per_100g": 1,
+                "xylitol_g_per_100g": null,
+                "sorbitol_g_per_100g": null,
+                "available_carbohydrate_without_sugar_alcohols_g_per_100g": 1.8,
+                "available_carbohydrate_with_sugar_alcohols_g_per_100g": 2.8
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 4.4,
+              "polyolsValue": 1.0
+            },
+            "foodKind": "NONSTARCHY_VEGETABLE",
+            "evidenceHash": "110820aa1f2583188d6f1883f8c0342e4d157a71b70f92d1bc0dfd70857d0dfb"
+          },
+          {
+            "id": "F337-r6",
+            "per100g": {
+              "availableCarbohydrate": 2.4,
+              "protein": 1.81,
+              "fat": 0.2,
+              "fibre": 2.1
+            },
+            "sourceRecord": {
+              "id": "F337-r6",
+              "name": "PURJOSIPULI",
+              "state": "PURJOSIPULI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/337",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "THL Fineli Release20 CC BY4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "337",
+                "name": "PURJOSIPULI",
+                "food_type": "FOOD",
+                "process": "RAW",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "VEGONI",
+                "food_class": "VEGFRESH",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 2.4,
+                  "fibre_g_per_100g": 2.1,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 1.81,
+                  "fat_g_per_100g": 0.2
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0181"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MIR006"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "KPL_S": 120.0,
+                  "KPL_M": 200.0,
+                  "KPL_L": 280.0
+                }
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 4.5,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "NONSTARCHY_VEGETABLE",
+            "evidenceHash": "f32039c2511485a1fa1c971b311d0a71fa04d76f66d1d2f24460d82cbafe3bf3"
+          },
+          {
+            "id": "F29-r6",
+            "per100g": {
+              "availableCarbohydrate": 3.0,
+              "protein": 0.34,
+              "fat": 0.6,
+              "fibre": 0.017
+            },
+            "sourceRecord": {
+              "id": "F29-r6",
+              "name": "LIHALIEMI, LAIMENNETTU",
+              "state": "LIHALIEMI, LAIMENNETTU",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "THL Fineli Release20 CC BY4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "29",
+                "name": "LIHALIEMI, LAIMENNETTU",
+                "food_type": "DISH",
+                "process": "BOIL",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "DISH",
+                "food_class": "SAVSAUCE",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 3.0,
+                  "fibre_g_per_100g": 0.017,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 0.34,
+                  "fat_g_per_100g": 0.6
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "CG",
+                    "method_indicator": "MIR003"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  }
+                },
+                "portion_mass_g": {
+                  "DL": 100.0,
+                  "RKL": 15.0,
+                  "TL": 5.0
+                }
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 3.017,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "STOCK",
+            "evidenceHash": "fb10d1e1de85542f82e770d9c10c5926079f27d24510a4c04e605a4ca7130021"
+          },
+          {
+            "id": "U170917-r6",
+            "per100g": {
+              "availableCarbohydrate": 48.67,
+              "protein": 7.61,
+              "fat": 8.36,
+              "fibre": 26.3
+            },
+            "sourceRecord": {
+              "id": "U170917-r5",
+              "name": "Spices, bay leaf",
+              "sourceUrl": "https://fdc.nal.usda.gov/food-details/170917/nutrients",
+              "licence": "USDA FoodData Central SR Legacy, public domain",
+              "basis": "per100g-edible",
+              "state": "Spices, bay leaf",
+              "carbohydrateDefinition": "US_TOTAL_MINUS_FIBRE_PROXY_POLYOLS_UNQUANTIFIED",
+              "polyolsSourceVerified": false,
+              "polyolsValue": null,
+              "referenceRecord": {
+                "fdcId": 170917,
+                "description": "Spices, bay leaf",
+                "publicationDate": "4/1/2019",
+                "foodNutrients": [
+                  {
+                    "nutrient": {
+                      "id": 2045,
+                      "number": "951",
+                      "name": "Proximates",
+                      "rank": 50,
+                      "unitName": "g"
+                    },
+                    "type": "FoodNutrient"
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1051,
+                      "number": "255",
+                      "name": "Water",
+                      "rank": 100,
+                      "unitName": "g"
+                    },
+                    "id": 1565415,
+                    "amount": 5.44,
+                    "dataPoints": 23
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1008,
+                      "number": "208",
+                      "name": "Energy",
+                      "rank": 300,
+                      "unitName": "kcal"
+                    },
+                    "foodNutrientDerivation": {
+                      "id": 49,
+                      "code": "NC",
+                      "description": "Calculated",
+                      "foodNutrientSource": {
+                        "id": 2,
+                        "code": "4",
+                        "description": "Calculated or imputed"
+                      }
+                    },
+                    "id": 1565414,
+                    "amount": 313.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1062,
+                      "number": "268",
+                      "name": "Energy",
+                      "rank": 400,
+                      "unitName": "kJ"
+                    },
+                    "id": 1565391,
+                    "amount": 1312.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1003,
+                      "number": "203",
+                      "name": "Protein",
+                      "rank": 600,
+                      "unitName": "g"
+                    },
+                    "id": 1565409,
+                    "amount": 7.61,
+                    "dataPoints": 6
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1004,
+                      "number": "204",
+                      "name": "Total lipid (fat)",
+                      "rank": 800,
+                      "unitName": "g"
+                    },
+                    "id": 1565412,
+                    "amount": 8.36,
+                    "dataPoints": 6
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1007,
+                      "number": "207",
+                      "name": "Ash",
+                      "rank": 1000,
+                      "unitName": "g"
+                    },
+                    "id": 1565410,
+                    "amount": 3.62,
+                    "dataPoints": 24
+                  },
+                  {
+                    "nutrient": {
+                      "id": 2039,
+                      "number": "956",
+                      "name": "Carbohydrates",
+                      "rank": 1100,
+                      "unitName": "g"
+                    },
+                    "type": "FoodNutrient"
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1005,
+                      "number": "205",
+                      "name": "Carbohydrate, by difference",
+                      "rank": 1110,
+                      "unitName": "g"
+                    },
+                    "foodNutrientDerivation": {
+                      "id": 49,
+                      "code": "NC",
+                      "description": "Calculated",
+                      "foodNutrientSource": {
+                        "id": 2,
+                        "code": "4",
+                        "description": "Calculated or imputed"
+                      }
+                    },
+                    "id": 1565413,
+                    "amount": 74.97,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1079,
+                      "number": "291",
+                      "name": "Fiber, total dietary",
+                      "rank": 1200,
+                      "unitName": "g"
+                    },
+                    "id": 1565399,
+                    "amount": 26.3,
+                    "dataPoints": 0
+                  },
+                  {
+                    "nutrient": {
+                      "id": 2043,
+                      "number": "300",
+                      "name": "Minerals",
+                      "rank": 5200,
+                      "unitName": "mg"
+                    },
+                    "type": "FoodNutrient"
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1087,
+                      "number": "301",
+                      "name": "Calcium, Ca",
+                      "rank": 5300,
+                      "unitName": "mg"
+                    },
+                    "id": 1565416,
+                    "amount": 834.0,
+                    "dataPoints": 4
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1089,
+                      "number": "303",
+                      "name": "Iron, Fe",
+                      "rank": 5400,
+                      "unitName": "mg"
+                    },
+                    "id": 1565400,
+                    "amount": 43.0,
+                    "dataPoints": 4
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1090,
+                      "number": "304",
+                      "name": "Magnesium, Mg",
+                      "rank": 5500,
+                      "unitName": "mg"
+                    },
+                    "id": 1565401,
+                    "amount": 120.0,
+                    "dataPoints": 3
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1091,
+                      "number": "305",
+                      "name": "Phosphorus, P",
+                      "rank": 5600,
+                      "unitName": "mg"
+                    },
+                    "id": 1565402,
+                    "amount": 113.0,
+                    "dataPoints": 3
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1092,
+                      "number": "306",
+                      "name": "Potassium, K",
+                      "rank": 5700,
+                      "unitName": "mg"
+                    },
+                    "id": 1565417,
+                    "amount": 529.0,
+                    "dataPoints": 5
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1093,
+                      "number": "307",
+                      "name": "Sodium, Na",
+                      "rank": 5800,
+                      "unitName": "mg"
+                    },
+                    "id": 1565403,
+                    "amount": 23.0,
+                    "dataPoints": 4
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1095,
+                      "number": "309",
+                      "name": "Zinc, Zn",
+                      "rank": 5900,
+                      "unitName": "mg"
+                    },
+                    "id": 1565418,
+                    "amount": 3.7,
+                    "dataPoints": 3
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1098,
+                      "number": "312",
+                      "name": "Copper, Cu",
+                      "rank": 6000,
+                      "unitName": "mg"
+                    },
+                    "id": 1565437,
+                    "amount": 0.416,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1101,
+                      "number": "315",
+                      "name": "Manganese, Mn",
+                      "rank": 6100,
+                      "unitName": "mg"
+                    },
+                    "id": 1565404,
+                    "amount": 8.167,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1103,
+                      "number": "317",
+                      "name": "Selenium, Se",
+                      "rank": 6200,
+                      "unitName": "µg"
+                    },
+                    "foodNutrientDerivation": {
+                      "id": 16,
+                      "code": "BFSN",
+                      "description": "Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used",
+                      "foodNutrientSource": {
+                        "id": 2,
+                        "code": "4",
+                        "description": "Calculated or imputed"
+                      }
+                    },
+                    "id": 1565441,
+                    "amount": 2.8,
+                    "dataPoints": 0
+                  },
+                  {
+                    "nutrient": {
+                      "id": 2046,
+                      "number": "952",
+                      "name": "Vitamins and Other Components",
+                      "rank": 6250,
+                      "unitName": "g"
+                    },
+                    "type": "FoodNutrient"
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1162,
+                      "number": "401",
+                      "name": "Vitamin C, total ascorbic acid",
+                      "rank": 6300,
+                      "unitName": "mg"
+                    },
+                    "id": 1565406,
+                    "amount": 46.5,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1165,
+                      "number": "404",
+                      "name": "Thiamin",
+                      "rank": 6400,
+                      "unitName": "mg"
+                    },
+                    "id": 1565407,
+                    "amount": 0.009,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1166,
+                      "number": "405",
+                      "name": "Riboflavin",
+                      "rank": 6500,
+                      "unitName": "mg"
+                    },
+                    "id": 1565408,
+                    "amount": 0.421,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1167,
+                      "number": "406",
+                      "name": "Niacin",
+                      "rank": 6600,
+                      "unitName": "mg"
+                    },
+                    "id": 1565411,
+                    "amount": 2.005,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1175,
+                      "number": "415",
+                      "name": "Vitamin B-6",
+                      "rank": 6800,
+                      "unitName": "mg"
+                    },
+                    "foodNutrientDerivation": {
+                      "id": 1,
+                      "code": "A",
+                      "description": "Analytical",
+                      "foodNutrientSource": {
+                        "id": 1,
+                        "code": "1",
+                        "description": "Analytical or derived from analytical"
+                      }
+                    },
+                    "id": 1565445,
+                    "amount": 1.74,
+                    "dataPoints": 2
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1177,
+                      "number": "417",
+                      "name": "Folate, total",
+                      "rank": 6900,
+                      "unitName": "µg"
+                    },
+                    "id": 1565448,
+                    "amount": 180.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1186,
+                      "number": "431",
+                      "name": "Folic acid",
+                      "rank": 7000,
+                      "unitName": "µg"
+                    },
+                    "foodNutrientDerivation": {
+                      "id": 68,
+                      "code": "Z",
+                      "description": "Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)",
+                      "foodNutrientSource": {
+                        "id": 5,
+                        "code": "7",
+                        "description": "Assumed zero"
+                      }
+                    },
+                    "id": 1565436,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1187,
+                      "number": "432",
+                      "name": "Folate, food",
+                      "rank": 7100,
+                      "unitName": "µg"
+                    },
+                    "id": 1565443,
+                    "amount": 180.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1190,
+                      "number": "435",
+                      "name": "Folate, DFE",
+                      "rank": 7200,
+                      "unitName": "µg"
+                    },
+                    "foodNutrientDerivation": {
+                      "id": 49,
+                      "code": "NC",
+                      "description": "Calculated",
+                      "foodNutrientSource": {
+                        "id": 2,
+                        "code": "4",
+                        "description": "Calculated or imputed"
+                      }
+                    },
+                    "id": 1565444,
+                    "amount": 180.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1178,
+                      "number": "418",
+                      "name": "Vitamin B-12",
+                      "rank": 7300,
+                      "unitName": "µg"
+                    },
+                    "foodNutrientDerivation": {
+                      "id": 68,
+                      "code": "Z",
+                      "description": "Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)",
+                      "foodNutrientSource": {
+                        "id": 5,
+                        "code": "7",
+                        "description": "Assumed zero"
+                      }
+                    },
+                    "id": 1565392,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1106,
+                      "number": "320",
+                      "name": "Vitamin A, RAE",
+                      "rank": 7420,
+                      "unitName": "µg"
+                    },
+                    "id": 1565442,
+                    "amount": 309.0,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1105,
+                      "number": "319",
+                      "name": "Retinol",
+                      "rank": 7430,
+                      "unitName": "µg"
+                    },
+                    "foodNutrientDerivation": {
+                      "id": 68,
+                      "code": "Z",
+                      "description": "Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)",
+                      "foodNutrientSource": {
+                        "id": 5,
+                        "code": "7",
+                        "description": "Assumed zero"
+                      }
+                    },
+                    "id": 1565439,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1104,
+                      "number": "318",
+                      "name": "Vitamin A, IU",
+                      "rank": 7500,
+                      "unitName": "IU"
+                    },
+                    "id": 1565405,
+                    "amount": 6185.0,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1110,
+                      "number": "324",
+                      "name": "Vitamin D (D2 + D3), International Units",
+                      "rank": 8650,
+                      "unitName": "IU"
+                    },
+                    "foodNutrientDerivation": {
+                      "id": 68,
+                      "code": "Z",
+                      "description": "Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)",
+                      "foodNutrientSource": {
+                        "id": 5,
+                        "code": "7",
+                        "description": "Assumed zero"
+                      }
+                    },
+                    "id": 1565438,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1114,
+                      "number": "328",
+                      "name": "Vitamin D (D2 + D3)",
+                      "rank": 8700,
+                      "unitName": "µg"
+                    },
+                    "foodNutrientDerivation": {
+                      "id": 68,
+                      "code": "Z",
+                      "description": "Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)",
+                      "foodNutrientSource": {
+                        "id": 5,
+                        "code": "7",
+                        "description": "Assumed zero"
+                      }
+                    },
+                    "id": 1565446,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "nutrient": {
+                      "id": 2044,
+                      "number": "950",
+                      "name": "Lipids",
+                      "rank": 9600,
+                      "unitName": "g"
+                    },
+                    "type": "FoodNutrient"
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1258,
+                      "number": "606",
+                      "name": "Fatty acids, total saturated",
+                      "rank": 9700,
+                      "unitName": "g"
+                    },
+                    "id": 1565394,
+                    "amount": 2.28,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1259,
+                      "number": "607",
+                      "name": "SFA 4:0",
+                      "rank": 9800,
+                      "unitName": "g"
+                    },
+                    "id": 1565427,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1260,
+                      "number": "608",
+                      "name": "SFA 6:0",
+                      "rank": 9900,
+                      "unitName": "g"
+                    },
+                    "id": 1565428,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1261,
+                      "number": "609",
+                      "name": "SFA 8:0",
+                      "rank": 10000,
+                      "unitName": "g"
+                    },
+                    "id": 1565395,
+                    "amount": 0.01,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1262,
+                      "number": "610",
+                      "name": "SFA 10:0",
+                      "rank": 10100,
+                      "unitName": "g"
+                    },
+                    "id": 1565419,
+                    "amount": 0.01,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1263,
+                      "number": "611",
+                      "name": "SFA 12:0",
+                      "rank": 10300,
+                      "unitName": "g"
+                    },
+                    "id": 1565396,
+                    "amount": 0.53,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1264,
+                      "number": "612",
+                      "name": "SFA 14:0",
+                      "rank": 10500,
+                      "unitName": "g"
+                    },
+                    "id": 1565397,
+                    "amount": 0.21,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1265,
+                      "number": "613",
+                      "name": "SFA 16:0",
+                      "rank": 10700,
+                      "unitName": "g"
+                    },
+                    "id": 1565420,
+                    "amount": 1.27,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1266,
+                      "number": "614",
+                      "name": "SFA 18:0",
+                      "rank": 10900,
+                      "unitName": "g"
+                    },
+                    "id": 1565421,
+                    "amount": 0.16,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1292,
+                      "number": "645",
+                      "name": "Fatty acids, total monounsaturated",
+                      "rank": 11400,
+                      "unitName": "g"
+                    },
+                    "id": 1565425,
+                    "amount": 1.64,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1275,
+                      "number": "626",
+                      "name": "MUFA 16:1",
+                      "rank": 11700,
+                      "unitName": "g"
+                    },
+                    "id": 1565398,
+                    "amount": 0.14,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1268,
+                      "number": "617",
+                      "name": "MUFA 18:1",
+                      "rank": 12100,
+                      "unitName": "g"
+                    },
+                    "id": 1565422,
+                    "amount": 1.5,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1277,
+                      "number": "628",
+                      "name": "MUFA 20:1",
+                      "rank": 12400,
+                      "unitName": "g"
+                    },
+                    "id": 1565431,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1279,
+                      "number": "630",
+                      "name": "MUFA 22:1",
+                      "rank": 12500,
+                      "unitName": "g"
+                    },
+                    "id": 1565432,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1293,
+                      "number": "646",
+                      "name": "Fatty acids, total polyunsaturated",
+                      "rank": 12900,
+                      "unitName": "g"
+                    },
+                    "id": 1565426,
+                    "amount": 2.29,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1269,
+                      "number": "618",
+                      "name": "PUFA 18:2",
+                      "rank": 13100,
+                      "unitName": "g"
+                    },
+                    "id": 1565423,
+                    "amount": 1.24,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1270,
+                      "number": "619",
+                      "name": "PUFA 18:3",
+                      "rank": 13900,
+                      "unitName": "g"
+                    },
+                    "id": 1565424,
+                    "amount": 1.05,
+                    "dataPoints": 1
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1276,
+                      "number": "627",
+                      "name": "PUFA 18:4",
+                      "rank": 14250,
+                      "unitName": "g"
+                    },
+                    "id": 1565430,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1271,
+                      "number": "620",
+                      "name": "PUFA 20:4",
+                      "rank": 14700,
+                      "unitName": "g"
+                    },
+                    "id": 1565429,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1278,
+                      "number": "629",
+                      "name": "PUFA 20:5 n-3 (EPA)",
+                      "rank": 15000,
+                      "unitName": "g"
+                    },
+                    "id": 1565434,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1280,
+                      "number": "631",
+                      "name": "PUFA 22:5 n-3 (DPA)",
+                      "rank": 15200,
+                      "unitName": "g"
+                    },
+                    "id": 1565435,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1272,
+                      "number": "621",
+                      "name": "PUFA 22:6 n-3 (DHA)",
+                      "rank": 15300,
+                      "unitName": "g"
+                    },
+                    "id": 1565433,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1257,
+                      "number": "605",
+                      "name": "Fatty acids, total trans",
+                      "rank": 15400,
+                      "unitName": "g"
+                    },
+                    "foodNutrientDerivation": {
+                      "id": 68,
+                      "code": "Z",
+                      "description": "Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)",
+                      "foodNutrientSource": {
+                        "id": 5,
+                        "code": "7",
+                        "description": "Assumed zero"
+                      }
+                    },
+                    "id": 1565440,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1253,
+                      "number": "601",
+                      "name": "Cholesterol",
+                      "rank": 15700,
+                      "unitName": "mg"
+                    },
+                    "foodNutrientDerivation": {
+                      "id": 68,
+                      "code": "Z",
+                      "description": "Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)",
+                      "foodNutrientSource": {
+                        "id": 5,
+                        "code": "7",
+                        "description": "Assumed zero"
+                      }
+                    },
+                    "id": 1565393,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  },
+                  {
+                    "nutrient": {
+                      "id": 2042,
+                      "number": "500",
+                      "name": "Amino acids",
+                      "rank": 16250,
+                      "unitName": "g"
+                    },
+                    "type": "FoodNutrient"
+                  },
+                  {
+                    "type": "FoodNutrient",
+                    "nutrient": {
+                      "id": 1018,
+                      "number": "221",
+                      "name": "Alcohol, ethyl",
+                      "rank": 18200,
+                      "unitName": "g"
+                    },
+                    "id": 1565447,
+                    "amount": 0.0,
+                    "dataPoints": 0
+                  }
+                ],
+                "foodPortions": [
+                  {
+                    "id": 87533,
+                    "gramWeight": 1.8,
+                    "sequenceNumber": 2,
+                    "amount": 1.0,
+                    "modifier": "tbsp, crumbled",
+                    "measureUnit": {
+                      "id": 9999,
+                      "name": "undetermined",
+                      "abbreviation": "undetermined"
+                    }
+                  },
+                  {
+                    "id": 87532,
+                    "gramWeight": 0.6,
+                    "sequenceNumber": 1,
+                    "amount": 1.0,
+                    "modifier": "tsp, crumbled",
+                    "measureUnit": {
+                      "id": 9999,
+                      "name": "undetermined",
+                      "abbreviation": "undetermined"
+                    }
+                  }
+                ],
+                "dataType": "SR Legacy",
+                "foodClass": "FinalFood",
+                "scientificName": "Laurus nobilis",
+                "foodComponents": [],
+                "foodAttributes": [
+                  {
+                    "id": 3328681,
+                    "value": "http://purl.obolibrary.org/obo/NCBITaxon_85223",
+                    "name": "NCBI Taxon",
+                    "foodAttributeType": {
+                      "id": 999,
+                      "name": "Attribute",
+                      "description": "Generic attributes"
+                    }
+                  },
+                  {
+                    "id": 3328682,
+                    "value": "http://purl.obolibrary.org/obo/NCBITaxon_35493",
+                    "name": "NCBI Taxon Parent",
+                    "foodAttributeType": {
+                      "id": 999,
+                      "name": "Attribute",
+                      "description": "Generic attributes"
+                    }
+                  },
+                  {
+                    "id": 3328683,
+                    "value": "Laurus nobilis",
+                    "name": "Scientific Name",
+                    "foodAttributeType": {
+                      "id": 999,
+                      "name": "Attribute",
+                      "description": "Generic attributes"
+                    }
+                  },
+                  {
+                    "id": 3328684,
+                    "value": "http://purl.obolibrary.org/obo/FOODON_00003802",
+                    "name": "FoodOn Ontology ID #1 For FDC Item",
+                    "foodAttributeType": {
+                      "id": 999,
+                      "name": "Attribute",
+                      "description": "Generic attributes"
+                    }
+                  },
+                  {
+                    "id": 3328685,
+                    "value": "bay leaf",
+                    "name": "FoodOn Ontology Name #1 For FDC Item",
+                    "foodAttributeType": {
+                      "id": 999,
+                      "name": "Attribute",
+                      "description": "Generic attributes"
+                    }
+                  },
+                  {
+                    "id": 3328686,
+                    "value": "http://purl.obolibrary.org/obo/FOODON_00001242",
+                    "name": "Ontology ID For Source",
+                    "foodAttributeType": {
+                      "id": 999,
+                      "name": "Attribute",
+                      "description": "Generic attributes"
+                    }
+                  },
+                  {
+                    "id": 3328687,
+                    "value": "spice or herb",
+                    "name": "Ontology Name For Source",
+                    "foodAttributeType": {
+                      "id": 999,
+                      "name": "Attribute",
+                      "description": "Generic attributes"
+                    }
+                  }
+                ],
+                "nutrientConversionFactors": [
+                  {
+                    "id": 13876,
+                    "proteinValue": 2.44,
+                    "fatValue": 8.37,
+                    "carbohydrateValue": 3.0,
+                    "type": ".CalorieConversionFactor",
+                    "name": "Calories From Proximates"
+                  },
+                  {
+                    "id": 19047,
+                    "value": 6.25,
+                    "type": ".ProteinConversionFactor",
+                    "name": "Protein From Nitrogen"
+                  }
+                ],
+                "inputFoods": [],
+                "ndbNumber": 2004,
+                "isHistoricalReference": true,
+                "foodCategory": {
+                  "id": 2,
+                  "code": "0200",
+                  "description": "Spices and Herbs"
+                }
+              },
+              "totalCarbohydratePer100g": 74.97,
+              "retrievedAt": "2026-10-30"
+            },
+            "foodKind": "GROUND_SPICE",
+            "evidenceHash": "ff5621895902eeed69a222a07fae378824b92374f92d9e6e8e6d9ed14eb20ac1"
+          },
+          {
+            "id": "F333-r6",
+            "per100g": {
+              "availableCarbohydrate": 1.1,
+              "protein": 1.38,
+              "fat": 0.2,
+              "fibre": 2.9
+            },
+            "sourceRecord": {
+              "id": "F333-r6",
+              "name": "PERSILJA",
+              "state": "PERSILJA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/333",
+              "retrievedAt": "2026-10-30",
+              "verifiedAt": "2026-10-31",
+              "licence": "THL Fineli Release20 CC BY4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "referenceRecord": {
+                "source_id": "333",
+                "name": "PERSILJA",
+                "food_type": "FOOD",
+                "process": "RAW",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "VEGLEAF",
+                "food_class": "VEGFRESH",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 1.1,
+                  "fibre_g_per_100g": 2.9,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 1.38,
+                  "fat_g_per_100g": 0.2
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0181"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "T",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MIR006"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "RKL": 2.0
+                }
+              },
+              "polyolsSourceVerified": true,
+              "totalCarbohydratePer100g": 4.0,
+              "polyolsValue": 0.0
+            },
+            "foodKind": "NONSTARCHY_VEGETABLE",
+            "evidenceHash": "b17bfe7472dbc2ced91d4130909c745cc0c8544f68904a7d0565b65b65f006b5"
+          }
+        ],
+        "origin": "docs/nutrition/gk80/run-6/",
+        "originCommit": "767f57795f981028227167d52ee23f7e674494db",
+        "golden": {
+          "recipeId": "nakkikeitto-kukkakaalilla",
+          "inputHash": "2071329a31315d2ac834d0be23310b5b6e335636b11932a225b623076d49cc34",
+          "scenarios": [
+            {
+              "id": "defined-weighed-version",
+              "macros": {
+                "availableCarbohydrate": 11.678835,
+                "protein": 13.80718,
+                "fat": 17.50743,
+                "fibre": 3.51365
+              },
+              "contributions": [
+                {
+                  "index": 0,
+                  "carbohydrate": 1.01675,
+                  "gk": 0.508375
+                },
+                {
+                  "index": 1,
+                  "carbohydrate": 2.9375,
+                  "gk": 1.175
+                },
+                {
+                  "index": 2,
+                  "carbohydrate": 0.45,
+                  "gk": 0.18
+                },
+                {
+                  "index": 3,
+                  "carbohydrate": 0.48,
+                  "gk": 0.192
+                },
+                {
+                  "index": 4,
+                  "carbohydrate": 0.66,
+                  "gk": 0.264
+                },
+                {
+                  "index": 5,
+                  "carbohydrate": 6.0,
+                  "gk": 3.0
+                },
+                {
+                  "index": 6,
+                  "carbohydrate": 0.024335,
+                  "gk": 0.0121675
+                },
+                {
+                  "index": 7,
+                  "carbohydrate": 0.0965,
+                  "gk": 0.04825
+                },
+                {
+                  "index": 8,
+                  "carbohydrate": 0.01375,
+                  "gk": 0.0055
+                },
+                {
+                  "index": 9,
+                  "carbohydrate": 0.0,
+                  "gk": 0.0
+                }
+              ],
+              "knownSubtotal": 5.3852925,
+              "wholeGk": 5.3852925,
+              "wholeCarbohydrate": 11.678835,
+              "imputedImpact": 5.3852925
+            }
+          ]
+        },
+        "originalVersionHash": "7f20835a18550a81db99c370fe235b8101a4f4558038e226a4390d8d4f7a9986",
+        "decision": "READY FOR OWNER REVIEW",
+        "correction": null,
+        "scopeNote": "350g keitettyä nakkia Fineli7600, yleinen koostumusproxy eikä nimetty kauppatuote. Ei lenkkimakkara7607. Jauhettu laakeri0.2g syödään: USDA total-minus-fibre-proxy vaatii omistajan menetelmäpäätöksen; polyoleja ei väitetä mitatuiksi nolliksi.",
+        "blocker": null,
+        "ownerApprovalPending": true,
+        "publicationNutrition": {
+          "carbsNetG": 11.678835,
+          "carbsTotalG": 15.442485,
+          "proteinG": 13.80718,
+          "fatG": 17.50743,
+          "fibreG": 3.51365,
+          "proxyCompositionIds": [
+            "U170917-r6"
+          ],
+          "status": "PROPOSAL"
+        },
+        "bundleHash": "6301e77c1e4a1453e732e3c8f8f3aa3f8181bf513064e518612a329c6b7964d3"
+      },
+      "proposalIsNotPublicationEvidence": true
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 ---
-title: lågkolhydrat-som Tam-stil thailändsk gurksallad
+title: Som tam med gurka – vägd version
 recipe_id: som-tam-vhh-kurkkuna
 url_slug: som-tam-vhh-kurkkuna
 category: alkuruoka
@@ -7,62 +7,59 @@ language: sv
 status: published
 diet_class: vhh_tiukka
 main_ingredient:
-  - kurkku
-  - limetti
+- kurkku
+- limetti
 cooking_method:
-  - tuore
+- tuore
 servings: 4
 time_total_min: 20
 difficulty: lätt
 tags:
-  - Thai
-  - sallad
-  - VHH
+- Thai
+- sallad
+- VHH
 image:
   src: paaruoat/som-tam-vhh-kurkkuna.webp
   alt: Som Tam-stil sallad av gurkstrimlor, tomater, bönor och jordnötter
   width: 1280
   height: 853
-carbs_net_per_serving_g: 4.92
-carbs_total_per_serving_g: 9.76
-protein_per_serving_g: 3.96
-fat_per_serving_g: 3.7
+carbs_net_per_serving_g: 5.33
+carbs_total_per_serving_g: 9.7
+protein_per_serving_g: 3.78
+fat_per_serving_g: 4.24
 ingredients:
-  - amount: 500
-    unit: g
-    item: gurka
-    note: frön avlägsnas och skivas
-  - amount: 150
-    unit: g
-    item: körsbärstomater
-    note: i halvor
-  - amount: 100
-    unit: g
-    item: gröna bönor
-    note: skär i tunna bitar
-  - amount: 30
-    unit: g
-    item: osaltade jordnötter
-    note: rostade
-  - amount: 3.5
-    unit: g
-    item: vitlök
-    note: Finelis vikt för en klyfta
-  - amount: 5
-    unit: g
-    item: röd chili
-    note: eller efter smak
-  - amount: 30
-    unit: g
-    item: limejuice
-  - amount: 15
-    unit: g
-    item: Squid Brand-fisksås
-  - amount: 4
-    unit: g
-    item: Foodin-erytritol
+- amount: 500
+  unit: g
+  item: ätlig gurka efter att kärnhuset tagits bort
+- amount: 150
+  unit: g
+  item: tomat
+- amount: 100
+  unit: g
+  item: kokta avrunna gröna bönor
+- amount: 30
+  unit: g
+  item: hela osaltade rostade jordnötter
+- amount: 3.5
+  unit: g
+  item: skalad färsk vitlök
+- amount: 5
+  unit: g
+  item: färsk chili
+- amount: 30
+  unit: g
+  item: limesaft
+- amount: 15
+  unit: g
+  item: fisksås, generell AFCD-sammansättning som jämförelse
+- amount: 4
+  unit: g
+  item: Foodin-erytritol
+- amount: null
+  unit: ''
+  item: salt efter smak
 translation_languages:
-  - th
+- th
 translation_status:
   th: published
 source_language: fi
@@ -70,24 +67,25 @@ source_recipe: reseptit/alkuruoat/som-tam-vhh-kurkkuna.md
 translation_of: som-tam-vhh-kurkkuna
 ---
 
-# lågkolhydrat-som Tam-stil thailändsk gurksallad
-
-Den fräscha, syrliga, salta och starka lågkolhydratsalladen hämtar sin smak från som tam, men grön papaya ersätts med krispig gurka. Det här är en variant av som tam stil, inte en traditionell papayasallad. Servera som tillbehör eller som förrätt.
+# Som tam med gurka – vägd version
 
 ## Beskrivning
 
-Ta bort den vattniga frödelen av gurkan för att hålla salladen krispig. Chili kan läggas till vid bordet.
+Som tam med gurka – vägd version.
+
+## Ingredienser
+
+De vägda ingredienserna visas ovan.
 
 ## Tillagning
 
-1. Dela gurkan och skrapa ur frödelen. Skär i tunna långa strimlor.
-2. Koka färska gröna bönor i saltat vatten i 5–7 minuter tills de är tillagade och låt svalna. Följ förpackningens tillagningsråd för frysta bönor. Halvera tomaterna.
-3. Krossa vitlöken och chilin i en mortel. Tillsätt hälften av jordnötterna och mal grovt.
-4. Tillsätt limejuice, fisksås och erytritol. Rör om såsen och smaka av.
-5. Tillsätt gurkan, bönorna och tomaterna. Häll försiktigt i såsen.
-6. Avsluta med resterande jordnötter och servera direkt.
+1. Väg alla angivna ätliga ingredienser. Tillsätt inte olistad olja eller tillbehör.
+2. Ta bort gurkans kärnhus och väg därefter 500 g ätlig gurka. Väg 100 g redan kokta och avrunna gröna bönor; använd inte råa bönor. Skär tomaten.
+3. Krossa vitlök och chili. Grovhacka hälften av de hela rostade jordnötterna; mal dem inte till en pasta. Tillsätt limesaft, fisksås och 4 g Foodin-erytritol.
+4. Blanda alla grönsaker med dressingen och tillsätt resten av jordnötterna. Ät hela dressingen och fördela i fyra portioner.
 
 ## Anteckningar
 
-– Det här är en lågkolhydrat-vänlig som tam variant. Gurka matchar inte smaken eller konsistensen hos traditionell grön papaya.
-- Näringsvärdena är ungefärliga uppskattningar och påverkas av produkter och portionsstorlek.
+GL är en modellerad ingrediensberäkning med låg tillförlitlighet, inte ett uppmätt måltidssvar. Alla tillgängliga kolhydrater ingår; något biologiskt osäkerhetsintervall är inte känt. Bilden visar endast ett serveringsförslag; olistade tillbehör ingår inte i näringsvärdena eller GL.
+
+Använd hela rostade jordnötter, grovhackade, inte jordnötssmör eller mjöl. Fisksåsen använder generell AFCD-sammansättning, inte en verifierad märkesetikett. Erytritol räknas en gång i totala kolhydrater och tillför inga nettokolhydrater.

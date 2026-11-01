@@ -9,7 +9,7 @@ import { parseMarkdown } from "../src/content/markdown";
 // These historical batch expectations retain the exact main nutrition snapshots.
 // All current candidate macros in source, evidence and generated publication are
 // independently checked in gk80-release2.test.ts, including every intentional delta.
-const historicalMacros={...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/historical-macros.json'),'utf8')).recipes};
+const historicalMacros={...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-6/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/historical-macros.json'),'utf8')).recipes};
 const siteContent={...currentSiteContent,recipes:currentSiteContent.recipes.map(r=>({...r,nutrition:historicalMacros[r.recipeId]?.nutrition??r.nutrition}))};
 
 async function markdownFiles(dir: string): Promise<string[]> {
@@ -289,7 +289,7 @@ test("new recipe totals, servings, and ingredients match the preparation steps",
   assert.equal(recipes.get("hernekeitto-savupotkalla")?.timeTotalMin, 750);
   assert.match(recipes.get("hernekeitto-savupotkalla")?.notesHtml ?? "", /12 tunnin/);
   assert.match(recipes.get("savulohi-avokadokulho")?.instructionsText.join(" ") ?? "", /neljään kulhoon tai lautaselle/);
-  assert.match(recipes.get("lanttulaatikko-kermainen")?.instructionsText.join(" ") ?? "", /siirappi/);
+  const rutabaga=recipes.get("lanttulaatikko-kermainen")!;assert.match(rutabaga.instructionsText.join(" "),/makeuttamaton/);assert.equal(rutabaga.ingredients.some(i=>/siirappi/.test(i.item)),false);
   const jansson = recipes.get("janssoninkiusaus-juuriselleri")!;
   assert.equal(jansson.ingredients.find(ingredient => ingredient.item.includes("anjovis"))?.item, "öljyyn säilöttyjä anjovisfileitä, valutettuna");
   assert.doesNotMatch(jansson.instructionsText.join(" "), /anjovisten maustelientä/);

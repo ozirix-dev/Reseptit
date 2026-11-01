@@ -12,7 +12,7 @@ const root=fileURLToPath(new URL('../../',import.meta.url));
 const json=(f:string)=>JSON.parse(readFileSync(path.join(root,f),'utf8'));
 const ids=new Set<string>(json('docs/nutrition/gk80-integration-24/manifest.json').recipeIds);
 test('historical isolated24 view adds exactly24 (actual33 deltas tested separately), preserving all 302 other result objects',async()=>{
- const actual=json('tmp/nutrition/glycemic-load-pilot.json');const frozen=JSON.parse(readFileSync(new URL('../../docs/nutrition/gk80-release-5/main-baseline.json',import.meta.url),'utf8')).selectedResults;actual.results=actual.results.map((r:any)=>frozen.find((x:any)=>x.recipeId===r.recipeId)??r);const old=json('docs/nutrition/gk80-q09/historical-nine.json');const report={...actual,summary:{...actual.summary,calculated:107,insufficientSourceData:219},results:actual.results.map((r:any)=>old.results.find((x:any)=>x.recipeId===r.recipeId)??r)};
+ const actual=json('tmp/nutrition/glycemic-load-pilot.json');const pre6=JSON.parse(readFileSync(new URL('../../docs/nutrition/gk80-release-6/main-baseline.json',import.meta.url),'utf8')).selectedResults;actual.results=actual.results.map((r:any)=>pre6.find((x:any)=>x.recipeId===r.recipeId)??r);const frozen=JSON.parse(readFileSync(new URL('../../docs/nutrition/gk80-release-5/main-baseline.json',import.meta.url),'utf8')).selectedResults;actual.results=actual.results.map((r:any)=>frozen.find((x:any)=>x.recipeId===r.recipeId)??r);const old=json('docs/nutrition/gk80-q09/historical-nine.json');const report={...actual,summary:{...actual.summary,calculated:107,insufficientSourceData:219},results:actual.results.map((r:any)=>old.results.find((x:any)=>x.recipeId===r.recipeId)??r)};
  const baseline=json('docs/nutrition/gk80-release-1/legacy-baseline.json').recipes;
  assert.equal(ids.size,24);assert.equal(report.results.length,326);assert.equal(report.summary.calculated,107);assert.equal(report.summary.insufficientSourceData,219);
  let changed=0,unchanged=0;
@@ -27,12 +27,12 @@ test('all24 generated macros match independently verified Decimal data',async()=
   const live=siteContent.recipes.find(x=>x.recipeId===r.recipeId&&x.locale==='fi')!;assert.ok(live);
   const g=pack.golden.find((g:{recipeId:string})=>g.recipeId===r.recipeId).scenarios[0].macros;
   const round=(v:number)=>Math.round(v*100)/100;
-  assert.deepEqual(live.nutrition,{carbsNetG:round(g.availableCarbohydrate),carbsTotalG:(r as {releaseInputVersion?:number}).releaseInputVersion===4?json('docs/nutrition/gk80-release-4/publication-macros.json').recipes.find((x:any)=>x.recipeId===r.recipeId).publishedMacros.carbsTotalG:(r as {releaseInputVersion?:number}).releaseInputVersion===3?json('docs/nutrition/gk80-release-3/publication-macros.json').recipes.find((x:any)=>x.recipeId===r.recipeId).publishedMacros.carbsTotalG:round(g.availableCarbohydrate+g.fibre),proteinG:round(g.protein),fatG:round(g.fat)},r.recipeId);
+  const version=(r as {releaseInputVersion?:number}).releaseInputVersion;const expected=version&&version>=3?json('docs/nutrition/gk80-release-'+version+'/publication-macros.json').recipes.find((x:any)=>x.recipeId===r.recipeId).publishedMacros:{carbsNetG:round(g.availableCarbohydrate),carbsTotalG:round(g.availableCarbohydrate+g.fibre),proteinG:round(g.protein),fatG:round(g.fat)};assert.deepEqual(live.nutrition,expected,r.recipeId);
  }
 });
 async function fixture(fn:(dir:string)=>Promise<void>){
  const dir=await mkdtemp(path.join(tmpdir(),'gk80-integration-'));
- try{await cp(path.join(root,'docs/nutrition/gk80-release-registry.json'),path.join(dir,'docs/nutrition/gk80-release-registry.json'),{recursive:true});for(const n of [1,2,3,4,5])await cp(path.join(root,`docs/nutrition/gk80-release-${n}`),path.join(dir,`docs/nutrition/gk80-release-${n}`),{recursive:true});await fn(dir);}finally{await rm(dir,{recursive:true,force:true});}
+ try{await cp(path.join(root,'docs/nutrition/gk80-release-registry.json'),path.join(dir,'docs/nutrition/gk80-release-registry.json'),{recursive:true});for(const n of [1,2,3,4,5,6])await cp(path.join(root,`docs/nutrition/gk80-release-${n}`),path.join(dir,`docs/nutrition/gk80-release-${n}`),{recursive:true});await fn(dir);}finally{await rm(dir,{recursive:true,force:true});}
 }
 async function mutate(dir:string,n:number,file:string,fn:(v:any)=>void){
  const f=path.join(dir,`docs/nutrition/gk80-release-${n}`,file),v=JSON.parse(await readFile(f,'utf8'));fn(v);const text=JSON.stringify(v);await writeFile(f,text);
@@ -49,4 +49,4 @@ test('changed source, wrong package version, duplicate IDs and stale recipe fail
  await fixture(async dir=>{const packs=await loadPacks(root);const r=packs[0].recipes[0];await cp(path.join(root,r.sourcePath),path.join(dir,r.sourcePath),{recursive:true});await writeFile(path.join(dir,r.sourcePath),'stale');await assert.rejects(applyGk80Release(dir,[]),/STALE_INPUT/);});
 });
 
-test('integration explicitly installs exactly five packs and40 numeric IDs',async()=>{const packs=await loadPacks(root);assert.equal(packs.length,5);assert.equal(new Set(packs.flatMap(p=>p.recipes.map(r=>r.recipeId))).size,40);await fixture(async dir=>{await rm(path.join(dir,'docs/nutrition/gk80-release-3'),{recursive:true});await assert.rejects(loadPacks(dir),/ENOENT/);});});
+test('integration explicitly installs exactly six packs and45 numeric IDs',async()=>{const packs=await loadPacks(root);assert.equal(packs.length,6);assert.equal(new Set(packs.flatMap(p=>p.recipes.map(r=>r.recipeId))).size,45);await fixture(async dir=>{await rm(path.join(dir,'docs/nutrition/gk80-release-3'),{recursive:true});await assert.rejects(loadPacks(dir),/ENOENT/);});});
