@@ -1,0 +1,64 @@
+{
+  "main": "88e228bbb1f0fa4a4e16be4aeedcd509bc7bc33a",
+  "packetFingerprint": "ba3cb85ba2d94392baeeb4b451f9e8afea004cc92c6da11d6ca9e762bb283ff2",
+  "recipeSnapshotSha256": "07eae5d1c8917a3a90e7e7623cffacf11fdb6425c4da7450e4f25b4914db3a58",
+  "mainSnapshotSha256": "334e64407cfad090013a0213a1f5186a378e15e72c8e21c2fa43e912ca0d8ad4",
+  "sourcePrs": {
+    "153": {
+      "root": "D:\\Projects\\tmp\\reseptit-gk80-run9",
+      "head": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+      "clean": true
+    },
+    "156": {
+      "root": "D:\\Projects\\tmp\\reseptit-gk80-polyol-scoped-c-method",
+      "head": "d31c3a7ae157337177733375a9c7d811646187ee",
+      "clean": true
+    },
+    "161": {
+      "root": "D:\\Projects\\tmp\\reseptit-afcd-polyol-impact-01",
+      "head": "6f09e0a4b4caaac17412f12b1f3dcc79d875f345",
+      "clean": true
+    },
+    "163": {
+      "root": "D:\\Projects\\tmp\\reseptit-gk80-afcd-recovery-01",
+      "head": "961cdd9af906d71de8fb1d512bf385cceaecece0",
+      "clean": true
+    }
+  },
+  "pr156FileHashes": {
+    "site/scripts/gk80-polyol-c.ts": "a26bffd9f8b1a63beea7b9a24de0281a38f82125d6ff2f3c4e854c38a5c0df83",
+    "docs/nutrition/calculations/jauheliha-kaalikeitto-vhh.json": "1642ddc19a99aff8d85ccea8ce070759f409238d1f04e392919cdd9eae4a4a1a",
+    "docs/nutrition/calculations/vhh-kaalilaatikko.json": "d2a1741a3624e4a36f2b9cd13a65fe2d6b5518a44f07e8572def48f50b45d8a6",
+    "docs/research/polyoli-03/approval-ledger.json": "5de69749e595f5d185e5411449528cec8907e410a67ad24b9e73eef6c624edb8"
+  },
+  "pr156EvidenceFingerprints": {
+    "jauheliha-kaalikeitto-vhh": "7e16f21f52cc2365c6b1742d891542fb118b7b879b5bf73d88d5dbef361c0f2f",
+    "vhh-kaalilaatikko": "57540a15a0e29a4fc6c7cdfe83dfbaa8f59222a0dd48ad77f75c96cf36d82235"
+  },
+  "webChecks": [
+    {
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+      "table": {
+        "availableCarbohydrate": "16.3",
+        "protein": "7.9",
+        "fat": "0.6",
+        "fibre": "2.1",
+        "polyols": "0"
+      },
+      "polyolMethod": "summed from constituents"
+    },
+    {
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11134",
+      "table": {
+        "availableCarbohydrate": "1.1",
+        "protein": "3.1",
+        "fat": "0.7",
+        "fibre": "1.6",
+        "polyols": "0"
+      },
+      "polyolMethod": "derived"
+    }
+  ],
+  "checkedAt": "2026-11-01",
+  "scope": "Only two web-table profiles; other seven composition profiles fixed. No analytical, brand or biological uncertainty bound claimed."
+}

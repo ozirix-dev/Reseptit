@@ -1,0 +1,119 @@
+{
+  "fixedSource": {
+    "macroPerServing": {
+      "availableCarbohydrate": "7.384250",
+      "protein": "39.530500",
+      "fat": "23.911125",
+      "fibre": "2.996000"
+    },
+    "gk": [
+      "2.737675",
+      "2.7796750"
+    ],
+    "gkWidth": "0.0420000"
+  },
+  "sensitivity": {
+    "nearestQuantum": {
+      "intervals": {
+        "carbsNetG": [
+          "7.382750",
+          "7.385750"
+        ],
+        "carbsTotalG": [
+          "10.377250",
+          "10.426250"
+        ],
+        "proteinG": [
+          "39.529000",
+          "39.532000"
+        ],
+        "fatG": [
+          "23.909625",
+          "23.912625"
+        ],
+        "gk": [
+          "2.737000",
+          "2.8028500"
+        ]
+      },
+      "displays": {
+        "carbsNetG": [
+          "7.38",
+          "7.39"
+        ],
+        "carbsTotalG": [
+          "10.4",
+          "10.4"
+        ],
+        "proteinG": [
+          "39.53",
+          "39.53"
+        ],
+        "fatG": [
+          "23.91",
+          "23.91"
+        ],
+        "gk": [
+          "3",
+          "3"
+        ]
+      },
+      "gkWidth": "0.0658500",
+      "netDisplayStable": false
+    },
+    "conservativeQuantum": {
+      "intervals": {
+        "carbsNetG": [
+          "7.381250",
+          "7.387250"
+        ],
+        "carbsTotalG": [
+          "10.374250",
+          "10.444250"
+        ],
+        "proteinG": [
+          "39.527500",
+          "39.533500"
+        ],
+        "fatG": [
+          "23.908125",
+          "23.914125"
+        ],
+        "gk": [
+          "2.736325",
+          "2.8260250"
+        ]
+      },
+      "displays": {
+        "carbsNetG": [
+          "7.38",
+          "7.39"
+        ],
+        "carbsTotalG": [
+          "10.4",
+          "10.4"
+        ],
+        "proteinG": [
+          "39.53",
+          "39.53"
+        ],
+        "fatG": [
+          "23.91",
+          "23.91"
+        ],
+        "gk": [
+          "3",
+          "3"
+        ]
+      },
+      "gkWidth": "0.0897000",
+      "netDisplayStable": false
+    }
+  },
+  "status": "PASS",
+  "decision": "HOLD",
+  "publicationEligible": false,
+  "selectedRecipes": 1,
+  "changedDisplayPrecision": false,
+  "explanation": "Net7.38 fails its original precision under both conditional rounding envelopes. Total10.4,protein39.53,fat23.91 and aboutGK3 remain stable within this limited audit. No complete analytical uncertainty bound is claimed."
+}

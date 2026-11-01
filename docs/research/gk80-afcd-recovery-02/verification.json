@@ -1,0 +1,91 @@
+{
+  "decision": "HOLD",
+  "prototypeImplemented": true,
+  "productionEnabled": false,
+  "publicationEligible": false,
+  "productionGkOverride": null,
+  "localPrototypeTests": {
+    "pass": 9,
+    "fail": 0,
+    "includes": "14 mutation variants; raw preparation drift; closed source/recipe fingerprints; standard model rejection; source alias and GI allowlist gates;326 preserved objects;PR156 immutable evidence"
+  },
+  "existingNutritionTests": {
+    "pass": 23,
+    "fail": 0
+  },
+  "strictNutritionAudit": {
+    "status": "PASS",
+    "sources": 326,
+    "counts": {
+      "VERIFIED": 0,
+      "ESTIMATE WITH EVIDENCE": 202,
+      "INSUFFICIENT SOURCE DATA": 65,
+      "CONFLICT REQUIRES REVIEW": 0,
+      "MISSING": 59
+    },
+    "withheld": {
+      "keto-mutakakku": {
+        "status": "INSUFFICIENT SOURCE DATA",
+        "values": {
+          "carbs_net_per_serving_g": null,
+          "carbs_total_per_serving_g": null,
+          "protein_per_serving_g": null,
+          "fat_per_serving_g": null
+        },
+        "evidenceErrors": []
+      },
+      "keto-suklaakeksit": {
+        "status": "INSUFFICIENT SOURCE DATA",
+        "values": {
+          "carbs_net_per_serving_g": null,
+          "carbs_total_per_serving_g": null,
+          "protein_per_serving_g": null,
+          "fat_per_serving_g": null
+        },
+        "evidenceErrors": []
+      }
+    }
+  },
+  "standaloneStrictTypeScript": "PASS",
+  "independentDecimalCrossComparison": "PASS",
+  "newRecipeGkCalculations": 1,
+  "newProductionGkCalculations": 0,
+  "reusedProductionObjects": 326,
+  "numericProductionGk": 130,
+  "siteBuilds": 0,
+  "fullTestSuiteRuns": 0,
+  "manualActionsRuns": 0,
+  "ownerApproval": false,
+  "main": "88e228bbb1f0fa4a4e16be4aeedcd509bc7bc33a",
+  "sourcePrs": {
+    "153": {
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/153",
+      "head": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+      "base": "88e228bbb1f0fa4a4e16be4aeedcd509bc7bc33a",
+      "draft": false,
+      "state": "open"
+    },
+    "156": {
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/156",
+      "head": "d31c3a7ae157337177733375a9c7d811646187ee",
+      "base": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+      "draft": true,
+      "state": "open"
+    },
+    "161": {
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/161",
+      "head": "6f09e0a4b4caaac17412f12b1f3dcc79d875f345",
+      "base": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+      "draft": true,
+      "state": "open"
+    },
+    "163": {
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/163",
+      "head": "961cdd9af906d71de8fb1d512bf385cceaecece0",
+      "base": "88e228bbb1f0fa4a4e16be4aeedcd509bc7bc33a",
+      "draft": true,
+      "state": "open"
+    }
+  },
+  "automaticCi": "Verify after one guarded commit/push and Draft creation; no manual run."
+}

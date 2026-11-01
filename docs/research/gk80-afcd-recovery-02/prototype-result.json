@@ -1,0 +1,258 @@
+{
+  "caseId": "GK80-AFCD-RECOVERY-02-UUNIKANAPASTA-DISABLED",
+  "recipeId": "uunikanapasta-kesakurpitsa",
+  "caseFingerprint": "ba3cb85ba2d94392baeeb4b451f9e8afea004cc92c6da11d6ca9e762bb283ff2",
+  "researchFingerprint": "d09c61c2d3796efe1a04add86966c20b1affd00414ac8e0834b5eb7db2b766ae",
+  "status": "HOLD",
+  "publicationEligible": false,
+  "productionEnabled": false,
+  "activationSupported": false,
+  "productionGkOverride": null,
+  "ownerDecision": "HOLD",
+  "blockers": [
+    "OWNER_METHOD_AND_CONTENT_APPROVAL_PENDING",
+    "SOURCE_BINDINGS_NOT_INSTALLED",
+    "MISSING_PEPPER_AGGREGATE_POLYOLS",
+    "PUBLICATION_DISABLED",
+    "NET_CHO_TWO_DECIMAL_DISPLAY_UNSTABLE"
+  ],
+  "foodBindingBlocker": "UNREVIEWED_FOOD_PREPARATION: recovery01-fineli-393-web-table-20261101 / raw peeled garlic / vegetable-imputation40",
+  "standardModel": {
+    "status": "INSUFFICIENT SOURCE DATA",
+    "pepperNet": null,
+    "totalCarbohydratePerServingG": null,
+    "saltMass": null
+  },
+  "arithmeticDiagnostic": {
+    "numericProposal": false,
+    "knownAWholeGk": 2.737675,
+    "missing": []
+  },
+  "precision": {
+    "fixedSource": {
+      "macroPerServing": {
+        "availableCarbohydrate": 7.38425,
+        "protein": 39.5305,
+        "fat": 23.911125,
+        "fibre": 2.996
+      },
+      "gk": {
+        "lower": 2.737675,
+        "upper": 2.779675
+      },
+      "gkWidth": 0.042,
+      "totalCho": {
+        "lower": 10.38025,
+        "upper": 10.40825
+      },
+      "unknownAggregatePolyolPoint": null,
+      "wholeGkPoint": null
+    },
+    "nearestQuantum": {
+      "displays": {
+        "carbsNetG": {
+          "lower": 7.38275,
+          "upper": 7.38575,
+          "decimalPlaces": 2,
+          "requestedValue": 7.38,
+          "endpointDisplays": [
+            7.38,
+            7.39
+          ],
+          "stable": false
+        },
+        "carbsTotalG": {
+          "lower": 10.37725,
+          "upper": 10.42625,
+          "decimalPlaces": 1,
+          "requestedValue": 10.4,
+          "endpointDisplays": [
+            10.4,
+            10.4
+          ],
+          "stable": true
+        },
+        "proteinG": {
+          "lower": 39.529,
+          "upper": 39.532,
+          "decimalPlaces": 2,
+          "requestedValue": 39.53,
+          "endpointDisplays": [
+            39.53,
+            39.53
+          ],
+          "stable": true
+        },
+        "fatG": {
+          "lower": 23.909625,
+          "upper": 23.912625,
+          "decimalPlaces": 2,
+          "requestedValue": 23.91,
+          "endpointDisplays": [
+            23.91,
+            23.91
+          ],
+          "stable": true
+        },
+        "gk": {
+          "lower": 2.737,
+          "upper": 2.80285,
+          "decimalPlaces": 0,
+          "requestedValue": 3,
+          "endpointDisplays": [
+            3,
+            3
+          ],
+          "stable": true
+        }
+      },
+      "gkWidth": 0.06585,
+      "gkClassStable": true,
+      "withinNamedWidthBudget": true,
+      "decomposition": {
+        "pepperPolyolWidth": 0.042,
+        "availableChoRoundingWidth": 0.00135,
+        "reportedZeroPolyolResponseSensitivity": 0.0225
+      },
+      "allFourMacroDisplaysStable": false
+    },
+    "conservativeQuantum": {
+      "displays": {
+        "carbsNetG": {
+          "lower": 7.38125,
+          "upper": 7.38725,
+          "decimalPlaces": 2,
+          "requestedValue": 7.38,
+          "endpointDisplays": [
+            7.38,
+            7.39
+          ],
+          "stable": false
+        },
+        "carbsTotalG": {
+          "lower": 10.37425,
+          "upper": 10.44425,
+          "decimalPlaces": 1,
+          "requestedValue": 10.4,
+          "endpointDisplays": [
+            10.4,
+            10.4
+          ],
+          "stable": true
+        },
+        "proteinG": {
+          "lower": 39.5275,
+          "upper": 39.5335,
+          "decimalPlaces": 2,
+          "requestedValue": 39.53,
+          "endpointDisplays": [
+            39.53,
+            39.53
+          ],
+          "stable": true
+        },
+        "fatG": {
+          "lower": 23.908125,
+          "upper": 23.914125,
+          "decimalPlaces": 2,
+          "requestedValue": 23.91,
+          "endpointDisplays": [
+            23.91,
+            23.91
+          ],
+          "stable": true
+        },
+        "gk": {
+          "lower": 2.736325,
+          "upper": 2.826025,
+          "decimalPlaces": 0,
+          "requestedValue": 3,
+          "endpointDisplays": [
+            3,
+            3
+          ],
+          "stable": true
+        }
+      },
+      "gkWidth": 0.0897,
+      "gkClassStable": true,
+      "withinNamedWidthBudget": true,
+      "decomposition": {
+        "pepperPolyolWidth": 0.042,
+        "availableChoRoundingWidth": 0.0027,
+        "reportedZeroPolyolResponseSensitivity": 0.045
+      },
+      "allFourMacroDisplaysStable": false
+    },
+    "uncertaintyScope": "Conditional display-quantum sensitivity for Fineli393/11134 only. Not a proved source rounding algorithm or an analytical/biological bound. Other source profiles fixed."
+  },
+  "bindingProposals": [
+    {
+      "ingredientIndex": 6,
+      "aliasProposal": {
+        "compositionId": "recovery01-fineli-393-web-table-20261101",
+        "foodId": "A004193",
+        "foodKind": "NONSTARCHY_VEGETABLE",
+        "inputForm": "raw peeled garlic",
+        "allowedSources": [
+          "vegetable-imputation40"
+        ],
+        "consumedForms": {
+          "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+        }
+      },
+      "giSourceId": "vegetable-imputation40",
+      "sourceAllowlistEntryRequired": false,
+      "ownerApproved": false,
+      "installed": false
+    },
+    {
+      "ingredientIndex": 7,
+      "aliasProposal": {
+        "compositionId": "recovery01-fineli-11134-web-table-20261101",
+        "foodId": "A000396",
+        "foodKind": "NONSTARCHY_VEGETABLE",
+        "inputForm": "fresh raw basil",
+        "allowedSources": [
+          "lowcho50-r4"
+        ],
+        "consumedForms": {
+          "lowcho50-r4": "AS_DEFINED"
+        }
+      },
+      "giSourceId": "lowcho50-r4",
+      "sourceAllowlistEntryRequired": true,
+      "ownerApproved": false,
+      "installed": false
+    }
+  ],
+  "bindingDiagnostics": [
+    {
+      "ingredientIndex": 6,
+      "compositionId": "recovery01-fineli-393-web-table-20261101",
+      "giSourceId": "vegetable-imputation40",
+      "consumedForm": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED",
+      "productionGate": "UNREVIEWED_FOOD_PREPARATION: recovery01-fineli-393-web-table-20261101 / raw peeled garlic / vegetable-imputation40",
+      "existingSourceAllowsNewComposition": true
+    },
+    {
+      "ingredientIndex": 7,
+      "compositionId": "recovery01-fineli-11134-web-table-20261101",
+      "giSourceId": "lowcho50-r4",
+      "consumedForm": "AS_DEFINED",
+      "productionGate": "UNREVIEWED_FOOD_PREPARATION: recovery01-fineli-11134-web-table-20261101 / fresh raw basil / lowcho50-r4",
+      "existingSourceAllowsNewComposition": false
+    }
+  ],
+  "basilApplicability": {
+    "namedFood": "fresh raw basil",
+    "sourceId": "recovery01-fineli-11134-web-table-20261101",
+    "giSourceId": "lowcho50-r4",
+    "availableChoUpperPer100g": 1.2,
+    "lowChoCutoff": 5,
+    "compositionQualifiesWithinSensitivity": true,
+    "existingSourceAllowsNewComposition": false,
+    "ownerApproved": false,
+    "installed": false
+  }
+}
