@@ -1,0 +1,217 @@
+{
+  "status": "PASS",
+  "localOnly": false,
+  "expectedReleaseSha": "583fdb91aeb12114f909412b9165fc3b02a6515d",
+  "reviewedHead": "36387a360fbb522e2c4794c33c87ff8360f638ef",
+  "verifiedAtUtc": "2026-11-01T21:42:46.559474+00:00",
+  "coverage": {
+    "numeric": 133,
+    "recipes": 326,
+    "incomplete": 193,
+    "percent": 40.8
+  },
+  "centralHttp": {
+    "url": "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/?release=583fdb91aeb12114f909412b9165fc3b02a6515d",
+    "status": 200,
+    "etag": "\"6ae7ae0a-887af\"",
+    "lastModified": "Sun, 01 Nov 2026 21:24:26 GMT"
+  },
+  "numericIdsMatch131PriorPlusTwo": true,
+  "all325PublicEntriesMatchReviewedBuild": true,
+  "eightApprovedRecipePages": {
+    "jauheliha-kaalikeitto-vhh": [
+      {
+        "locale": "fi",
+        "http": {
+          "url": "https://ozirix-dev.github.io/Reseptit/jauheliha-kaalikeitto-vhh/?release=583fdb91aeb12114f909412b9165fc3b02a6515d",
+          "status": 200,
+          "etag": "\"6ae7ae0a-3d1b\"",
+          "lastModified": "Sun, 01 Nov 2026 21:24:26 GMT"
+        },
+        "nutrition": {
+          "carbsNetG": 10.21,
+          "carbsTotalG": 12,
+          "proteinG": 17.68,
+          "fatG": 15.26
+        },
+        "modeledGk": 5,
+        "lowAndScenarioDisclosureMatchesReviewedBuild": true
+      },
+      {
+        "locale": "en",
+        "http": {
+          "url": "https://ozirix-dev.github.io/Reseptit/en/recipes/jauheliha-kaalikeitto-vhh/?release=583fdb91aeb12114f909412b9165fc3b02a6515d",
+          "status": 200,
+          "etag": "\"6ae7ae0a-3cc2\"",
+          "lastModified": "Sun, 01 Nov 2026 21:24:26 GMT"
+        },
+        "nutrition": {
+          "carbsNetG": 10.21,
+          "carbsTotalG": 12,
+          "proteinG": 17.68,
+          "fatG": 15.26
+        },
+        "modeledGk": 5,
+        "lowAndScenarioDisclosureMatchesReviewedBuild": true
+      },
+      {
+        "locale": "sv",
+        "http": {
+          "url": "https://ozirix-dev.github.io/Reseptit/sv/recept/jauheliha-kaalikeitto-vhh/?release=583fdb91aeb12114f909412b9165fc3b02a6515d",
+          "status": 200,
+          "etag": "\"6ae7ae0a-3d1f\"",
+          "lastModified": "Sun, 01 Nov 2026 21:24:26 GMT"
+        },
+        "nutrition": {
+          "carbsNetG": 10.21,
+          "carbsTotalG": 12,
+          "proteinG": 17.68,
+          "fatG": 15.26
+        },
+        "modeledGk": 5,
+        "lowAndScenarioDisclosureMatchesReviewedBuild": true
+      },
+      {
+        "locale": "th",
+        "http": {
+          "url": "https://ozirix-dev.github.io/Reseptit/th/recipes/jauheliha-kaalikeitto-vhh/?release=583fdb91aeb12114f909412b9165fc3b02a6515d",
+          "status": 200,
+          "etag": "\"6ae7ae0a-608e\"",
+          "lastModified": "Sun, 01 Nov 2026 21:24:26 GMT"
+        },
+        "nutrition": {
+          "carbsNetG": 10.21,
+          "carbsTotalG": 12,
+          "proteinG": 17.68,
+          "fatG": 15.26
+        },
+        "modeledGk": 5,
+        "lowAndScenarioDisclosureMatchesReviewedBuild": true
+      }
+    ],
+    "vhh-kaalilaatikko": [
+      {
+        "locale": "fi",
+        "http": {
+          "url": "https://ozirix-dev.github.io/Reseptit/vhh-kaalilaatikko/?release=583fdb91aeb12114f909412b9165fc3b02a6515d",
+          "status": 200,
+          "etag": "\"6ae7ae0a-3d16\"",
+          "lastModified": "Sun, 01 Nov 2026 21:24:26 GMT"
+        },
+        "nutrition": {
+          "carbsNetG": 9.52,
+          "carbsTotalG": 13,
+          "proteinG": 20.86,
+          "fatG": 30.65
+        },
+        "modeledGk": 4,
+        "lowAndScenarioDisclosureMatchesReviewedBuild": true
+      },
+      {
+        "locale": "en",
+        "http": {
+          "url": "https://ozirix-dev.github.io/Reseptit/en/recipes/vhh-kaalilaatikko/?release=583fdb91aeb12114f909412b9165fc3b02a6515d",
+          "status": 200,
+          "etag": "\"6ae7ae0a-3d49\"",
+          "lastModified": "Sun, 01 Nov 2026 21:24:26 GMT"
+        },
+        "nutrition": {
+          "carbsNetG": 9.52,
+          "carbsTotalG": 13,
+          "proteinG": 20.86,
+          "fatG": 30.65
+        },
+        "modeledGk": 4,
+        "lowAndScenarioDisclosureMatchesReviewedBuild": true
+      },
+      {
+        "locale": "sv",
+        "http": {
+          "url": "https://ozirix-dev.github.io/Reseptit/sv/recept/vhh-kaalilaatikko/?release=583fdb91aeb12114f909412b9165fc3b02a6515d",
+          "status": 200,
+          "etag": "\"6ae7ae0a-3da5\"",
+          "lastModified": "Sun, 01 Nov 2026 21:24:26 GMT"
+        },
+        "nutrition": {
+          "carbsNetG": 9.52,
+          "carbsTotalG": 13,
+          "proteinG": 20.86,
+          "fatG": 30.65
+        },
+        "modeledGk": 4,
+        "lowAndScenarioDisclosureMatchesReviewedBuild": true
+      },
+      {
+        "locale": "th",
+        "http": {
+          "url": "https://ozirix-dev.github.io/Reseptit/th/recipes/vhh-kaalilaatikko/?release=583fdb91aeb12114f909412b9165fc3b02a6515d",
+          "status": 200,
+          "etag": "\"6ae7ae0a-627b\"",
+          "lastModified": "Sun, 01 Nov 2026 21:24:26 GMT"
+        },
+        "nutrition": {
+          "carbsNetG": 9.52,
+          "carbsTotalG": 13,
+          "proteinG": 20.86,
+          "fatG": 30.65
+        },
+        "modeledGk": 4,
+        "lowAndScenarioDisclosureMatchesReviewedBuild": true
+      }
+    ]
+  },
+  "uunikanapastaPreserved": {
+    "http": {
+      "url": "https://ozirix-dev.github.io/Reseptit/uunikanapasta-kesakurpitsa/?release=583fdb91aeb12114f909412b9165fc3b02a6515d",
+      "status": 200,
+      "etag": "\"6ae7ae0a-4005\"",
+      "lastModified": "Sun, 01 Nov 2026 21:24:26 GMT"
+    },
+    "nutrition": {
+      "carbsNetG": 7.4,
+      "carbsTotalG": 10.4,
+      "proteinG": 39.53,
+      "fatG": 23.91
+    },
+    "modeledGk": 3
+  },
+  "withheld": {
+    "keto-suklaakeksit": {
+      "http": {
+        "url": "https://ozirix-dev.github.io/Reseptit/keto-suklaakeksit/?release=583fdb91aeb12114f909412b9165fc3b02a6515d",
+        "status": 200,
+        "etag": "\"6ae7ae0a-30bb\"",
+        "lastModified": "Sun, 01 Nov 2026 21:24:26 GMT"
+      },
+      "nutrition": {
+        "carbsNetG": null,
+        "carbsTotalG": null,
+        "proteinG": null,
+        "fatG": null
+      }
+    },
+    "keto-mutakakku": {
+      "http": {
+        "url": "https://ozirix-dev.github.io/Reseptit/keto-mutakakku/?release=583fdb91aeb12114f909412b9165fc3b02a6515d",
+        "status": 200,
+        "etag": "\"6ae7ae0a-3235\"",
+        "lastModified": "Sun, 01 Nov 2026 21:24:26 GMT"
+      },
+      "nutrition": {
+        "carbsNetG": null,
+        "carbsTotalG": null,
+        "proteinG": null,
+        "fatG": null
+      }
+    }
+  },
+  "holdsPreserved": [
+    "kiinalainen-teehaudutetut-munat",
+    "ropa-vieja",
+    "siskonmakkarakeitto-juurekset",
+    "nakkikeitto-kukkakaalilla",
+    "keto-suklaakeksit",
+    "keto-mutakakku"
+  ],
+  "mainCiAndDeployShaVerifiedSeparately": true
+}

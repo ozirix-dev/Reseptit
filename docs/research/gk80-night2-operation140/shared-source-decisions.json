@@ -1,0 +1,106 @@
+{
+  "familiesStudied": 2,
+  "technicalRuntimeBindingsChanged": 0,
+  "wholeRecipesFreed": 0,
+  "readyForNextOwnerRecipeGate": 0,
+  "families": [
+    {
+      "family": "coconut milk",
+      "exactSourceIds": [
+        "Fineli29014",
+        "AFCD F002991"
+      ],
+      "newPrimarySource": "https://fineli.fi/fineli/fi/elintarvikkeet/29014",
+      "accessMethod": "Rendered official current web nutrient table, not raw API/download",
+      "frozenReference": {
+        "source_id": "29014",
+        "name": "KOOKOSMAITO, KOOKOSJUOMA",
+        "food_type": "FOOD",
+        "process": "CANN",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "LEGULIQ",
+        "food_class": "VEGJUICE",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 2.81,
+          "fibre_g_per_100g": 5.145,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 2.02,
+          "fat_g_per_100g": 21.33
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "frozenReferenceFileLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+      "currentWebDisplayedPer100g": {
+        "availableCarbohydrate": "2.8",
+        "protein": "2.0",
+        "fat": "21.3",
+        "fibre": "0.5",
+        "reportedSugarAlcohols": "0"
+      },
+      "webAccessCaveat": "Official web view via browsing tool; crawl metadata2days old. No new raw API/ZIP obtained and no dated version transition established.",
+      "webZeroProvenance": "Sugar alcohol value is source-calculated from a recipe; not an exhaustive analytical assay.",
+      "componentDifferenceFor400gFourServingCaseOnly": {
+        "availableCarbohydrate": "-0.01",
+        "protein": "-0.02",
+        "fat": "-0.03",
+        "fibre": "-4.645",
+        "totalCarbohydrateKnownSourceModel": "-4.655"
+      },
+      "deltaNotWholeRecipeOrBiologicalUncertainty": true,
+      "giPolicy": "Existing project lowcho50 admits named coconut-milk forms <=5g A/100g. Extending a pinned composition ID is a separately reviewed application, not a general GI measurement.",
+      "decision": "DO_NOT_REPLACE_FROZEN_PROFILE_AUTOMATICALLY. Current/frozen fibre difference0.5 vs5.145 is established; cause/importer error is not established without exact raw version. Full curry paste, herb and retention evidence remains incomplete.",
+      "unlockedRecipeIds": []
+    },
+    {
+      "family": "chickpea flour in batter",
+      "exactSourceId": "AFCD F003986",
+      "primaryGiSource": "https://apjcn.nhri.org.tw/server/APJCN/3/4/151.pdf",
+      "existingPdfSha256": "4b90cf8309e1246a5cd4ee30d12b50278facd3e75de791745bb51e519a20bc39",
+      "sourceReusedNotRedownloaded": true,
+      "visualPagesReviewed": [
+        151,
+        152
+      ],
+      "study": "Batra, Sharma and Seth1994; legume cheela test meals,15 healthy volunteers, glucose reference",
+      "preparationFacts": "Powder from whole legumes;90g powder with200ml water, three pan-cooked cheelas,5g fat per cheela. Fermented comparison24h. These are not deep-fried potato coatings.",
+      "decision": "No transfer of the cheela GI to vada-pav batter. AFCD aggregate-polyol gap also remains. Existing paper does not yield a complete release-ready recipe.",
+      "unlockedRecipeIds": []
+    }
+  ],
+  "unchangedKnownGaps": [
+    "No repeated almond-meal/black-pepper/thyme searches",
+    "No absent label polyol ingredient list is promoted to an aggregate assay",
+    "No new alias or generic GI activated"
+  ]
+}

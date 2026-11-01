@@ -1,0 +1,84 @@
+{
+  "baseMain": "583fdb91aeb12114f909412b9165fc3b02a6515d",
+  "hashConvention": "UTF-8 text with CRLF normalized to LF; PDFs use raw SHA256, not newline conversion",
+  "mainFiles": [
+    {
+      "path": "AGENTS.md",
+      "lfSha256": "30cf846f96209dd89ad1115f32bac3489887b3b95ceec21fe8c1eb26a7cd1024"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "lfSha256": "a3f3ab3df913d8437fd8db99e1502f981847e746a4a589d85991c26ee1a00d02"
+    },
+    {
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "lfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "lfSha256": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e"
+    },
+    {
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "lfSha256": "d1e6ed1299167ae8e1784109c8814ea65cfaa81d66e84d2b7ca999e1da5c1858"
+    },
+    {
+      "path": "docs/nutrition/glycemic-load-pilot-input.json",
+      "lfSha256": "ecb38f2feb199ebce436181542a4dbb0e8b4b9753d9be401ff9ce45dce2bb04b"
+    },
+    {
+      "path": "docs/nutrition/glycemic-load-recipe-bindings.json",
+      "lfSha256": "b66bcee77ea47ca220a0adff933adbf419e668f7764819289a6bfcab82b074b1"
+    },
+    {
+      "path": "docs/nutrition/glycemic-load-recipe-aliases.json",
+      "lfSha256": "5856e97939c5a0f1beaf1a2ba9804109291354c7640209b92828e240bdcf17e7"
+    },
+    {
+      "path": "docs/nutrition/batches/batch-87.json",
+      "lfSha256": "9abd8625104499bf1670a6bd0c93c9d414dd1c1ee5a60a6560994c25ebd36d8f"
+    },
+    {
+      "path": "docs/nutrition/batches/batch-88.json",
+      "lfSha256": "d63943e8f31ddd2faaac1b04ce632ed70a0b18f77f1795ca64e546591ef4a8df"
+    }
+  ],
+  "historicalInputs": [
+    {
+      "commit": "bcf214a8a900308a9b26cea68cf6cbee0f10a358",
+      "path": "docs/nutrition/gk80-run11/recipes.json",
+      "lfSha256": "77d1e61ad41739a620f8620f0a4889d8fa979bbe049b082124d0876d69ef421b"
+    },
+    {
+      "commit": "bcf214a8a900308a9b26cea68cf6cbee0f10a358",
+      "path": "docs/nutrition/gk80-run11/golden.json",
+      "lfSha256": "e5ac06e1f2b063a95b8ea886286656e3468732026688289be82dc52dfa533771"
+    },
+    {
+      "commit": "bcf214a8a900308a9b26cea68cf6cbee0f10a358",
+      "path": "docs/nutrition/gk80-run11/sources.json",
+      "lfSha256": "21d8f2133cabf4d407282871807b54bef6179dfb8ca1156dae3d74771f12638a"
+    },
+    {
+      "commit": "bcf214a8a900308a9b26cea68cf6cbee0f10a358",
+      "path": "docs/nutrition/gk80-run11/versions/malesialainen-kaya-paahtoleipa.md",
+      "lfSha256": "45ff3d0f01401c4106ecf12c3ec1d2a17cddffbb9f13fa9b16b033aef3f02a43"
+    },
+    {
+      "commit": "b89a891171566cd6c8553349fdd363db6e5a93a9",
+      "path": "docs/research/gk80-main131-night/inventory.json",
+      "lfSha256": "9e546a176972e574434b3393c8c45e67d02d7de64c49171fb61a57ed317f8a1c"
+    }
+  ],
+  "cacheOnlySources": [
+    {
+      "url": "https://apjcn.nhri.org.tw/server/APJCN/3/4/151.pdf",
+      "rawSha256": "4b90cf8309e1246a5cd4ee30d12b50278facd3e75de791745bb51e519a20bc39"
+    },
+    {
+      "publication": "https://doi.org/10.1093/ajcn/nqab233",
+      "access": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "rawSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061"
+    }
+  ]
+}

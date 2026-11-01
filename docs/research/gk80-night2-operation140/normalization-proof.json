@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "baseMain": "583fdb91aeb12114f909412b9165fc3b02a6515d",
+  "recordUsesCompared": 1933,
+  "uniqueRecordIds": 751,
+  "definitions": {
+    "EU_AVAILABLE": 1914,
+    "EU_TOTAL_INCLUDING_POLYOLS": 19
+  },
+  "activeUsTotalUses": 0,
+  "everyExistingNormalizationUnchanged": true,
+  "changedSyntheticControl": {
+    "before": {
+      "available": 16,
+      "net": 13
+    },
+    "after": {
+      "available": 13,
+      "net": 13
+    },
+    "reconstructedBefore": 23,
+    "reconstructedAfter": 20
+  },
+  "mainModelLfSha256": "f9fc43595afffc6668985c58db3a5c8b2a6dc27536338dbb397c44c4f1fa78bb",
+  "patchedModelLfSha256": "a200305f6247eb30584c79a12fda4523bacd848b73426a57db516adb3b1e8808",
+  "new326Calculations": 0
+}

@@ -1,0 +1,20 @@
+{
+  "targetedTests": {
+    "command": "node --import tsx --test tests/nutrition-model.test.ts tests/nutrition-evidence.test.ts",
+    "workingDirectory": "site",
+    "runs": 1,
+    "tests": 26,
+    "pass": 26,
+    "fail": 0,
+    "logLfSha256": "31acf26f31d5fa8c45e9fe8a000a9884ff34696b6a44cfcb5a5fb94b7e08b96c"
+  },
+  "normalizationParity": {
+    "recordUses": 1933,
+    "uniqueIds": 751,
+    "differences": 0,
+    "activeUsTotal": 0
+  },
+  "newBuilds": 0,
+  "recipeDecimal": 0,
+  "full326Calculations": 0
+}

@@ -1,0 +1,114 @@
+{
+  "recipeId": "malesialainen-kaya-paahtoleipa",
+  "decision": "HOLD",
+  "sourcePr": 158,
+  "sourceHead": "bcf214a8a900308a9b26cea68cf6cbee0f10a358",
+  "versionPath": "versions\\malesialainen-kaya-paahtoleipa.md",
+  "versionLfSha256": "45ff3d0f01401c4106ecf12c3ec1d2a17cddffbb9f13fa9b16b033aef3f02a43",
+  "recipeInputFingerprintSha256": "0f28ae8993d57916a83c7368b262e46aa6fa47ad85ac78f82fdccef3e1d533a3",
+  "historicalOnlyNotCurrentCandidate": {
+    "carbsNetG": 36.59,
+    "carbsTotalG": 40.28,
+    "proteinG": 12.18,
+    "fatG": 26.21,
+    "gkScenario": [
+      20.29204,
+      27.32172
+    ],
+    "numericClass": "HIGH only inside that unapproved scenario"
+  },
+  "oldSourceCardsUnmodified": [
+    {
+      "id": "sourdough54-r11",
+      "gi": 54,
+      "scale": "GLUCOSE_100",
+      "family": "wheat-sourdough",
+      "food": "Wheat sourdough bread 54",
+      "preparation": "baked fermented wheat bread; row227 50:50 wholemeal/white, 80min rise,60min proof,200C60min",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "originalStudy": "Sydney UO5 bread test",
+      "location": "Table1 row226 p16",
+      "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "accessMethod": "Original supplement document retrieved from a third-party mirror; not publisher-host access",
+      "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "referenceFood": "Glucose",
+      "statisticalUncertainty": {
+        "kind": "SEM",
+        "value": 5,
+        "usedAsRecipeRange": false
+      },
+      "participants": 10,
+      "limitations": "Source flour, fermentation and density differ; slight toasting is an unmeasured transformation. Fixed generic CHO is a separate composition proxy, not source-brand nutrition.",
+      "confidence": "LOW",
+      "allowedUse": "Only explicit food/preparation matches or separately reasoned ingredient analogies; no automatic family default",
+      "newRecord": true,
+      "reviewScopeRecipeIds": [
+        "malesialainen-kaya-paahtoleipa"
+      ],
+      "originalSourceId": "sourdough54",
+      "originalEvidenceHash": "c9bcb532cd885eb81b738efa8e9d01495f6772762df483657f4b6d74345966f9",
+      "allowedCompositionIds": [
+        "F31842-974063c7c3f0"
+      ],
+      "evidenceHash": "2e65648a3e2ea2e74f3218bfdd24284082b96dcec7903c6ac06363923c1efacc"
+    },
+    {
+      "id": "sourdough82-r11",
+      "gi": 82,
+      "scale": "GLUCOSE_100",
+      "family": "wheat-sourdough",
+      "food": "Wheat sourdough bread 82",
+      "preparation": "baked fermented wheat bread; row227 50:50 wholemeal/white, 80min rise,60min proof,200C60min",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "originalStudy": "2021 supplement ref31 (2010 New Zealand bread study)",
+      "location": "Table1 row227 p17",
+      "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "accessMethod": "Original supplement document retrieved from a third-party mirror; not publisher-host access",
+      "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "referenceFood": "Glucose",
+      "statisticalUncertainty": {
+        "kind": "SEM",
+        "value": 13,
+        "usedAsRecipeRange": false
+      },
+      "participants": 10,
+      "limitations": "Source flour, fermentation and density differ; slight toasting is an unmeasured transformation. Fixed generic CHO is a separate composition proxy, not source-brand nutrition.",
+      "confidence": "LOW",
+      "allowedUse": "Only explicit food/preparation matches or separately reasoned ingredient analogies; no automatic family default",
+      "newRecord": true,
+      "originalSourceId": "sourdough82",
+      "originalEvidenceHash": "d6f8d925902d22ec4cda57d3f305c4fab7cb71b5db6a51f619ce011c666b9e14",
+      "allowedCompositionIds": [
+        "F31842-974063c7c3f0"
+      ],
+      "reviewScopeRecipeIds": [
+        "malesialainen-kaya-paahtoleipa"
+      ],
+      "evidenceHash": "ea708229fdc68d374675dc8d4f463500964ed70dbf3e95284ebb9f60b3beb019"
+    }
+  ],
+  "correctedSourceAttribution": {
+    "row226": {
+      "gi": 54,
+      "sem": 5,
+      "country": "Australia",
+      "year": 2003,
+      "publishedPage": 16,
+      "specificFermentationRecipe": "not given in this row"
+    },
+    "row227": {
+      "gi": 82,
+      "sem": 13,
+      "country": "New Zealand",
+      "year": 2010,
+      "publishedPage": 17,
+      "specificPreparation": "50:50 wholemeal/white wheat and specified starter/rise/proof/bake conditions belongs only to this row"
+    }
+  },
+  "underlyingSupplementSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+  "newSourceCardCorrection": "The54 card borrowed the82-row preparation annotation. Corrected here as a decision/provenance statement only; old hashed research cards remain immutable.",
+  "additionalPrimarySource": "https://pubmed.ncbi.nlm.nih.gov/17426743/",
+  "reason": "Generic country-bread composition, specific sourdough comparators and slight pan-toasting are not a verified preparation match. The54–82 comparator spread is not a proven bound on toasting or biological response.",
+  "needed": "Exact bread formulation/fermentation/weight and a source-matched toasting application. No automatic approval, renaming or recipe alteration.",
+  "newWholeGk": null
+}
