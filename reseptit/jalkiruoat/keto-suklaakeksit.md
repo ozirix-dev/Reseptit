@@ -48,10 +48,10 @@ image:
   alt: Mantelijauhoiset suklaakeksit suklaapaloilla
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 1.38
-carbs_total_per_serving_g: 12.63
-protein_per_serving_g: 4.77
-fat_per_serving_g: 20.03
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 
 ---
 
@@ -76,3 +76,5 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 ## Muistiinpanot
 
 Keksit ovat pehmeitä kuumana ja kovettuvat jäähtyessään. Makeuttamattoman suklaan maku ja hiilihydraatit vaihtelevat tuotteittain.
+
+Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.
