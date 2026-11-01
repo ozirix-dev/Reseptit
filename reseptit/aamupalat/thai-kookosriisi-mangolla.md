@@ -1,42 +1,45 @@
 ---
-title: "Kookosriisi mangolla ja seesamilla"
+title: Kookosriisi mangolla ja seesamilla – punnittu versio
 recipe_id: thai-kookosriisi-mangolla
 url_slug: thai-kookosriisi-mangolla
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "riisi"
-  - "kookosmaito"
-  - "mango"
+- riisi
+- kookosmaito
+- mango
 cooking_method:
-  - "paistaminen"
+- paistaminen
 ingredients:
-  - amount: 100
-    unit: g
-    item: riisi
-  - amount: 200
-    unit: ml
-    item: kookosmaito
-  - amount: 150
-    unit: g
-    item: mango
-  - amount: 6
-    unit: g
-    item: seesaminsiemen
-  - amount: null
-    unit: ""
-    item: suolaa maun mukaan
+- amount: 100
+  unit: g
+  item: kuivaa valkoista jasmiiniriisiä
+- amount: 184.0
+  unit: g
+  item: täysrasvaista tölkkikookosmaitoa
+- amount: 150
+  unit: g
+  item: kuorittua raakaa mangoa
+- amount: 6
+  unit: g
+  item: kokonaisia kuorittuja seesaminsiemeniä
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
+- amount: 100
+  unit: g
+  item: vettä kypsennykseen
 servings: 2
 time_total_min: 25
 difficulty: Helppo
 tags:
-  - "aamupala"
-  - "thaimaalainen"
-  - "aamiaisruoka"
+- aamupala
+- thaimaalainen
+- aamiaisruoka
 image:
   src: aamupalat/thai-kookosriisi-mangolla.webp
-  alt: "Kookosriisi mangolla ja seesamilla tarjoiltuna aamiaisella"
+  alt: Kookosriisi mangolla ja seesamilla tarjoiltuna aamiaisella
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 48.05
@@ -45,19 +48,24 @@ protein_per_serving_g: 5.83
 fat_per_serving_g: 16.41
 ---
 
-# Kookosriisi mangolla ja seesamilla
+# Kookosriisi mangolla ja seesamilla – punnittu versio
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan kookosriisi mangolla ja seesamilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Kookosriisi mangolla ja seesamilla – punnittu versio. Täsmällinen versio 2 annokselle.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
-2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
-3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Huuhtele riisi ja kypsennä se kookosmaidossa miedolla lämmöllä, kunnes neste on imeytynyt ja riisi pehmeää. Tarjoa mango- ja seesaminsiementen kanssa.
+1. Kypsennä 100 g kuivaa valkoista jasmiiniriisiä 184 g:ssa kookosmaitoa ja 100 g:ssa vettä pakkauksen kypsennysaikaa noudattaen. Tarjoa kuumana jyvinä, ei tahmariisin tai jäähdytetyn riisin laskelma.
+2. Lisää 6 g kokonaisia seesaminsiemeniä. Kuori mango ja punnitse 150 g syötävää hedelmälihaa; tarjoa raakoina paloina, ei soseena.
+3. Jaa koko kuuma kookosriisi ja mango kahteen annokseen. Ei muuta makeutusta.
+
+## Muistiinpanot
+
+Mallinnettu GK-arvio perustuu ainesosiin, nimettyihin GI-vertailuihin ja laskennallisiin oletuksiin. Luottamus on matala. Kaikki imeytyvät hiilihydraatit ovat mukana. Tämä ei ole aterialla mitattu verensokerivaste. Biologista epävarmuusväliä ei tunneta.
+
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.

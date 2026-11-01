@@ -1,54 +1,57 @@
 ---
-title: Chili con carne kukkakaaliriisillä
+title: Chili con carne kukkakaaliriisillä – punnittu versio
 recipe_id: chili-con-carne-kukkakaaliriisi
 url_slug: chili-con-carne-kukkakaaliriisi
 category: paaruoka
 language: fi
 status: published
 main_ingredient:
-  - naudan jauheliha
-  - kukkakaali
+- naudan jauheliha
+- kukkakaali
 cooking_method:
-  - hauduttaminen
+- hauduttaminen
 tags:
-  - meksikolainen
-  - nauta
-  - chili
+- meksikolainen
+- nauta
+- chili
 ingredients:
-  - amount: 500
-    unit: g
-    item: naudan jauhelihaa
-  - amount: 1
-    unit: kpl
-    item: sipuli
-  - amount: 1
-    unit: kpl
-    item: punainen paprika
-  - amount: 400
-    unit: g
-    item: tomaattimurskaa
-  - amount: 200
-    unit: g
-    item: kidneypapuja
-  - amount: 1
-    unit: tl
-    item: juustokuminaa
-  - amount: 1
-    unit: tl
-    item: savupaprikaa
-  - amount: 0.5
-    unit: tl
-    item: chilijauhetta
-  - amount: 1
-    unit: kpl
-    item: kukkakaali
-  - amount: 2
-    unit: rkl
-    item: oliiviöljyä
-carbs_net_per_serving_g: 17.32
-carbs_total_per_serving_g: 26.76
-protein_per_serving_g: 32.32
-fat_per_serving_g: 28.87
+- amount: 500
+  unit: g
+  item: 17% naudan jauhelihaa
+- amount: 55
+  unit: g
+  item: keltasipulia
+- amount: 120
+  unit: g
+  item: punaista paprikaa
+- amount: 400
+  unit: g
+  item: tomaattimurskaa
+- amount: 200
+  unit: g
+  item: kypsiä valutettuja kidneypapuja
+- amount: 2
+  unit: g
+  item: jauhettua juustokuminaa
+- amount: 1
+  unit: g
+  item: jauhettua savupaprikaa
+- amount: 0.5
+  unit: g
+  item: jauhettua chiliä
+- amount: 500
+  unit: g
+  item: kukkakaalia
+- amount: 27
+  unit: g
+  item: oliiviöljyä
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
+carbs_net_per_serving_g: 15.63
+carbs_total_per_serving_g: 22.57
+protein_per_serving_g: 30.77
+fat_per_serving_g: 28.96
 servings: 4
 time_total_min: 55
 difficulty: Helppo
@@ -58,24 +61,25 @@ image:
   width: 1536
   height: 1024
 ---
-# Chili con carne kukkakaaliriisillä
+
+# Chili con carne kukkakaaliriisillä – punnittu versio
 
 ## Kuvaus
 
-Mausteinen jauhelihachili saa täyteläisyyttä tomaatista ja pavuista; sen parina on nopeasti paistettu kukkakaaliriisi.
+Chili con carne kukkakaaliriisillä – punnittu versio. Täsmällinen versio 4 annokselle.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Ruskista jauheliha padassa. Lisää hienonnettu sipuli ja kuutioitu paprika, kypsennä 5 minuuttia.
-2. Sekoita joukkoon juustokumina, savupaprika ja chili. Lisää tomaattimurska ja huuhdellut pavut.
-3. Hauduta kannen alla 30 minuuttia. Maista ja säädä mausteet.
-4. Raasta kukkakaali riisimäiseksi. Paista öljyssä pannulla 5–7 minuuttia ja mausta suolalla.
-5. Tarjoa chili kukkakaaliriisin kanssa.
+1. Ruskista 500 g jauhelihaa ja 55 g sipulia 27 g:ssa oliiviöljyä. Lisää 120 g paprikaa,400 g tomaattimurskaa,2 g juustokuminaa,1 g savupaprikaa ja 0,5 g chiliä.
+2. Lisää 200 g kypsiä valutettuja kokonaisia kidneypapuja. Hauduta kypsäksi. Hienonna 500 g kukkakaalia ja höyrytä kypsäksi erikseen.
+3. Jaa koko kastike ja kukkakaali neljään annokseen. Pavut pidetään kokonaisina; rasvaa tai kastiketta ei valuteta.
 
 ## Muistiinpanot
 
-Pavut sisältävät hiilihydraatteja. Jätä ne pois tai pienennä määrää, jos tavoittelet vähähiilihydraattisempaa annosta.
+Mallinnettu GK-arvio perustuu ainesosiin, nimettyihin GI-vertailuihin ja laskennallisiin oletuksiin. Luottamus on matala. Kaikki imeytyvät hiilihydraatit ovat mukana. Tämä ei ole aterialla mitattu verensokerivaste. Biologista epävarmuusväliä ei tunneta.
+
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.

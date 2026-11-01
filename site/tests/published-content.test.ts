@@ -9,7 +9,7 @@ import { parseMarkdown } from "../src/content/markdown";
 // These historical batch expectations retain the exact main nutrition snapshots.
 // All current candidate macros in source, evidence and generated publication are
 // independently checked in gk80-release2.test.ts, including every intentional delta.
-const historicalMacros=JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-macros.json'),'utf8')).recipes;
+const historicalMacros={...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/historical-macros.json'),'utf8')).recipes};
 const siteContent={...currentSiteContent,recipes:currentSiteContent.recipes.map(r=>({...r,nutrition:historicalMacros[r.recipeId]?.nutrition??r.nutrition}))};
 
 async function markdownFiles(dir: string): Promise<string[]> {

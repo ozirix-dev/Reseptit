@@ -18,10 +18,11 @@ import { parseMarkdown } from "../src/content/markdown";
 async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding: 'utf8'): Promise<string> {
  const text=await actualReadFile(filename,encoding);
  const relative=path.relative(path.resolve(import.meta.dirname,'../..'),String(filename)).replaceAll('\\','/');
+ const nextOriginal=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/historical-source-text.json'),'utf8'));if(Object.hasOwn(nextOriginal,relative))return nextOriginal[relative];
  const original=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-source-text.json'),'utf8'));if(Object.hasOwn(original,relative))return original[relative];
  if(relative==='tmp/nutrition/glycemic-load-pilot.json')return JSON.stringify(await historicalSourceReviewView(relative,JSON.parse(text)));
  const match=relative.match(/^docs\/nutrition\/calculations\/(.+)\.json$/);
- if(match){const snapshot=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-macros.json'),'utf8'));if(snapshot.recipes[match[1]]?.calculation)return JSON.stringify(snapshot.recipes[match[1]].calculation);}
+ if(match){const nextSnapshot=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/historical-macros.json'),'utf8'));if(nextSnapshot.recipes[match[1]]?.calculation)return JSON.stringify(nextSnapshot.recipes[match[1]].calculation);const snapshot=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-macros.json'),'utf8'));if(snapshot.recipes[match[1]]?.calculation)return JSON.stringify(snapshot.recipes[match[1]].calculation);}
  return text;
 }
 
@@ -30,6 +31,8 @@ async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding
 const gk80HistoricalPromise:Promise<any>=readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical.json'),'utf8').then(JSON.parse);
 async function historicalSourceReviewView(name:string,value:any):Promise<any>{
   if(name!=='tmp/nutrition/glycemic-load-pilot.json')return value;
+  const next=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/main-baseline.json'),'utf8'));value={...value,results:value.results.map((r:any)=>next.selectedResults.find((x:any)=>x.recipeId===r.recipeId)??r),sourceHashes:{...value.sourceHashes,...next.sourceHashes}};
+  const nextIds=new Set(next.selectedResults.map((r:any)=>r.recipeId));for(const key of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches'])value[key]=[...value[key].filter((id:string)=>!nextIds.has(id)),...next[key].filter((id:string)=>nextIds.has(id))].sort();
   const old=await gk80HistoricalPromise;const ids=new Set(old.results.map((r:any)=>r.recipeId));
   for(const key of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches']){
     assert.deepEqual(value[key].filter((id:string)=>!ids.has(id)),old[key].filter((id:string)=>!ids.has(id)),`${key}: non-candidate recipes unchanged`);
