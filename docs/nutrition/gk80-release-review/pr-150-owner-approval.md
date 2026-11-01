@@ -120,3 +120,31 @@ projektin aiemmin käyttämään päätöskansioon erillisessä
 `codex/gk80-pr150-owner-approval`-haarassa. PR150:n HEAD pysyy ennallaan;
 tämä dokumentointicommit ei kuulu sen julkaistavaan diffiin eikä käynnistä
 uutta sivuston kokonaisbuildia. Haaraa ei yhdistetä tai avata uutena PR:nä.
+## Lopullinen katselmointitulos
+
+Päätös: RELEASE_REVIEW_PASS.
+
+Normaali Codex Code Review käynnistyi Draft marked ready -tapahtumasta ja
+valmistui1.11.2026. Katselmoitu commit on täsmälleen
+`d6531e4702e1fb1bac6224a3b4fad9d3a7790903`.
+Botin rakenteinen tila: status completed, has_any_findings false,
+has_unresolved_findings false.
+Näyttö: <https://github.com/ozirix-dev/Reseptit/pull/150#issuecomment-6555556219>.
+
+Repo_guardin viimeinen read-only pr-merge-esitarkastus palautti READY_TO_MERGE,
+mutated false, unresolvedThreads0. PR on OPEN ja Ready, HEAD ja main vastaavat
+edellä kirjattuja SHA:ita. CI41273749844 on SUCCESS; deploy on SKIPPED.
+
+Olemassa olevan buildaineiston rajattu uudelleenluku vahvisti8 uutta,
+318 ennallaan pysynyttä täyttä tulosobjektia, kaikkien106 aiemman numeron
+säilymisen,114/326-ehdokaskattavuuden ja tee-munien keskeneräisen tilan.
+Rekisterissä ovat vain paketit1–5, eikä diffissä ole AJO6/7-tutkimuspaketteja.
+Reseptiteksti- ja pakettihashit täsmäsivät hyväksyttyihin syötteisiin.
+
+Ei uusia laskenta-, resepti-, lähde- tai Golden-muutoksia. Ei uutta buildia
+tai CI-uusintaa. Hyväksyntäkirjauksen Markdown tarkistettiin.
+ReportHub PR90 ja tutkimuksen7+18 tapausta jäivät erilleen, molemmat HOLDit
+säilyivät. Suositus GO erikseen luvitettavaan julkaisupäätökseen.
+
+Tila säilyy OWNER_METHOD_AND_CONTENT_APPROVED — AWAITING_SEPARATE_RELEASE_AUTHORIZATION.
+Mergeä ja tuotantodeployta ei ole tehty eikä niihin ole tämän portin lupaa.
