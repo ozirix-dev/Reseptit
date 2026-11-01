@@ -94,7 +94,7 @@ Yleinen ravintomalli, GK-moottori ja ruokaperhesuoja säilyvät ennallaan.
 - Uunilohi: mustapippuri valkopippurin sijasta; smetanan AFCD-koostumusproxy
   sisältää 36,3 % rasvaa. Ei väitettä toisen rasvapitoisuuden tuotekohtaisuudesta.
   Sitruunan 65 g on kuoritun hedelmälihan ja kaiken mehun paino.
-- Quesadilla: valmis maissitortilla 100 g (GI 59,2 -analogia), ei vehnätortilla
+- Quesadilla: valmis maissitortilla 100 g (GI 52,4 -analogia), ei vehnätortilla
   tai raakajauho. Maissinjyvät kypsennetään mikrossa; lyhyt pannulla viimeistely.
   Kaikki 13,5 g öljyä kulutetaan; ei friteerausta.
 - Koshari: kuorruttamaton sipuli, ei alkuperäistä maissitärkkelystä. Valkosipuli

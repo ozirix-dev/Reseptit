@@ -218,3 +218,30 @@ Sisältömuutos vaatii hyväksynnän soveltuvuuden uuden arvioinnin.
 Seuraava valtuutettu toimi on repo_guardin Ready-siirtymä ja normaalin Codex
 Code Review’n valmistumisen sekä mahdollisten havaintojen tarkistus.
 Ei päällekkäistä katselmointia, uutta tutkimusajoa, ReportHub-muutoksia, mergeä tai deployta.
+
+## Codex-katselmoinnin selitekorjaus hyväksynnän jälkeen
+
+Normaali katselmointi HEADille 80fe4ebc722e2680277200cdc769842b012c504c
+löysi P2-ristiriidan quesadillan tekstistä:
+https://github.com/ozirix-dev/Reseptit/pull/152#discussion_r4435228772.
+Reseptin muistiinpanoissa ja AJO 8:n koosteessa luki virheellisesti GI 59,2.
+Alkuperäisen hyväksytyn lähdepaketin sidos corn-tortilla52_4-r5 käyttää GI 52,4;
+golden on jo laskenut GK 17,13059 tämän oikean sidoksen perusteella.
+
+Korjaus oikaisee vain nämä kaksi selitettä vastaamaan jo hyväksyttyä lähdesidosta.
+Lähdettä, GI-sovellusta, valmistusta, ainesosamassoja, annoksia tai neljää
+ravintoarvomakroa ei muuteta. Kaikkien 11 reseptin kaikki Decimal-skenaariot
+varmistettiin täsmälleen samoiksi; vain tekstin sourceSha256 ja siitä seuraavat
+paketin inputHash/rekisterihashit päivittyvät. Tämä ei ole uusi omistajapäätös.
+Alkuperäiset yllä luetellut hashit säilyvät alkuperäisen päätöksen tilannekuvana.
+
+Korjatun selitteen sidonta:
+
+- reseptit/aamupalat/meksikolainen-quesadilla-sienilla.md: c0f464398a665d1855d2850af1d96c3eda9dc2d447c784fb5bee0d0d51b77275
+- docs/nutrition/gk80-release-7/recipes.json: 6140dc522bc0e4c985161295cb40a5a7b6cdf5253e5743b560610e686dfcf3dc
+- docs/nutrition/gk80-release-7/golden.json: e8083d143af0bd0d63482db32b1d21396c45fdb602f86bf09450aa0c5450d52b
+- docs/nutrition/gk80-run8/README.md: c7b75d1ad9071fc2e54fdd2dc932f0b12279a09c2c38cf0d6ab3817ec8565a80
+
+- Quesadillan päivitetty inputHash: 46572658abfcf38645f0444599033ac5803f8c6e973bc97b1026ef431196e963
+
+Kohdistettu regressio vertaa sekä reseptin että katselmointikoosteen GI-selitettä lähteen todelliseen arvoon. Mergeä tai deployta ei valtuuteta.

@@ -70,6 +70,6 @@ Mallinnettu GK-arvio perustuu ainesosiin ja nimettyihin laskennallisiin oletuksi
 
 Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
 
-Käytä 100 g valmista maissitortillaa ja 80 g 20 % mozzarellaa. Tortillan GI 59,2 on maissitortillan analogia; sitä ei siirretä vehnätortillaan tai raakajauhoon. Maissin mikrokypsennys on nimetty LOW-valmistusanalogia. Kaikki 13,5 g ruokaöljyä kulutetaan; ei friteerausta.
+Käytä 100 g valmista maissitortillaa ja 80 g 20 % mozzarellaa. Tortillan GI 52,4 on maissitortillan analogia; sitä ei siirretä vehnätortillaan tai raakajauhoon. Maissin mikrokypsennys on nimetty LOW-valmistusanalogia. Kaikki 13,5 g ruokaöljyä kulutetaan; ei friteerausta.
 
 Kaikki luetellut syötävät ainekset ja kastike kulutetaan. Raakojen tai kuivien ainesten ravintokoostumusta käytetään nimetyn valmistuksen koostumusarvion pohjana; mittaamatonta kypsennys- tai liukenemishävikkiä ei vähennetä.
