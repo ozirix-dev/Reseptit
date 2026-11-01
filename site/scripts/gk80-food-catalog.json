@@ -4196,6 +4196,30 @@
       "consumedForms": {
         "small-flavour50-r6": "AS_DEFINED"
       }
+    },
+    {
+      "compositionId": "recovery01-fineli-393-web-table-20261101",
+      "foodId": "A004193",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw peeled garlic",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "recovery01-fineli-11134-web-table-20261101",
+      "foodId": "A000396",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "fresh raw basil",
+      "allowedSources": [
+        "lowcho50-r4"
+      ],
+      "consumedForms": {
+        "lowcho50-r4": "AS_DEFINED"
+      }
     }
   ]
 }

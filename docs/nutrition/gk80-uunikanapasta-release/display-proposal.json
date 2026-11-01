@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "proposalId": "GK80-AFCD-RECOVERY-03-DISPLAY-1",
+  "recipeId": "uunikanapasta-kesakurpitsa",
+  "decision": "CONDITIONAL_GO_TO_EXPLICIT_OWNER_METHOD_AND_CONTENT_REVIEW_ONLY",
+  "basePr": 164,
+  "basePrHead": "36c191ea04c95a53e83c07101e329a4055f35da2",
+  "main": "88e228bbb1f0fa4a4e16be4aeedcd509bc7bc33a",
+  "baseCaseFingerprint": "ba3cb85ba2d94392baeeb4b451f9e8afea004cc92c6da11d6ca9e762bb283ff2",
+  "originalResearchFingerprint": "d09c61c2d3796efe1a04add86966c20b1affd00414ac8e0834b5eb7db2b766ae",
+  "baseRecipeSha256": "07eae5d1c8917a3a90e7e7623cffacf11fdb6425c4da7450e4f25b4914db3a58",
+  "servings": 4,
+  "publicationEligible": false,
+  "productionEnabled": false,
+  "activationSupported": false,
+  "productionGkOverride": null,
+  "ownerMethodApproved": false,
+  "ownerContentApproved": false,
+  "sourceBindingsApproved": false,
+  "releaseAuthorized": false,
+  "display": {
+    "carbsNetG": {
+      "value": "7.4",
+      "decimalPlaces": 1,
+      "unit": "g"
+    },
+    "carbsTotalG": {
+      "value": "10.4",
+      "decimalPlaces": 1,
+      "unit": "g"
+    },
+    "proteinG": {
+      "value": "39.53",
+      "decimalPlaces": 2,
+      "unit": "g"
+    },
+    "fatG": {
+      "value": "23.91",
+      "decimalPlaces": 2,
+      "unit": "g"
+    },
+    "gk": {
+      "value": "3",
+      "decimalPlaces": 0,
+      "unit": "GK",
+      "label": "Mallinnettu noin 3 / annos",
+      "class": "LOW",
+      "confidence": "LOW"
+    }
+  },
+  "changes": {
+    "onlyProposedDisplayChange": "carbsNetG7.38(2dp) ->7.4(1dp)",
+    "sourceValuesChanged": false,
+    "ingredientMassesChanged": false,
+    "servingsChanged": false,
+    "preparationChanged": false,
+    "originalEvidenceChanged": false,
+    "oldPrototypeDecisionChanged": false,
+    "globalDisplayPolicyChanged": false
+  },
+  "stabilityCriterion": "For this exact case only: each requested field rounds to the same declared value at both endpoints and therefore throughout each monotone closed interval in all three existing scenarios. Preserve the originally proposed precision of other fields; change only the owner-requested netCHO display. This is not a claim of analytical accuracy.",
+  "scenarioEvidence": {
+    "fixedSource": {
+      "carbsNetG": {
+        "interval": [
+          "7.384250",
+          "7.384250"
+        ],
+        "roundedEndpoints": [
+          "7.4",
+          "7.4"
+        ],
+        "stableAcrossWholeInterval": true
+      },
+      "carbsTotalG": {
+        "interval": [
+          "10.38025",
+          "10.40825"
+        ],
+        "roundedEndpoints": [
+          "10.4",
+          "10.4"
+        ],
+        "stableAcrossWholeInterval": true
+      },
+      "proteinG": {
+        "interval": [
+          "39.530500",
+          "39.530500"
+        ],
+        "roundedEndpoints": [
+          "39.53",
+          "39.53"
+        ],
+        "stableAcrossWholeInterval": true
+      },
+      "fatG": {
+        "interval": [
+          "23.911125",
+          "23.911125"
+        ],
+        "roundedEndpoints": [
+          "23.91",
+          "23.91"
+        ],
+        "stableAcrossWholeInterval": true
+      },
+      "gk": {
+        "interval": [
+          "2.737675",
+          "2.7796750"
+        ],
+        "roundedEndpoints": [
+          "3",
+          "3"
+        ],
+        "stableAcrossWholeInterval": true
+      }
+    },
+    "nearestQuantum": {
+      "carbsNetG": {
+        "interval": [
+          "7.382750",
+          "7.385750"
+        ],
+        "roundedEndpoints": [
+          "7.4",
+          "7.4"
+        ],
+        "stableAcrossWholeInterval": true
+      },
+      "carbsTotalG": {
+        "interval": [
+          "10.377250",
+          "10.426250"
+        ],
+        "roundedEndpoints": [
+          "10.4",
+          "10.4"
+        ],
+        "stableAcrossWholeInterval": true
+      },
+      "proteinG": {
+        "interval": [
+          "39.529000",
+          "39.532000"
+        ],
+        "roundedEndpoints": [
+          "39.53",
+          "39.53"
+        ],
+        "stableAcrossWholeInterval": true
+      },
+      "fatG": {
+        "interval": [
+          "23.909625",
+          "23.912625"
+        ],
+        "roundedEndpoints": [
+          "23.91",
+          "23.91"
+        ],
+        "stableAcrossWholeInterval": true
+      },
+      "gk": {
+        "interval": [
+          "2.737000",
+          "2.8028500"
+        ],
+        "roundedEndpoints": [
+          "3",
+          "3"
+        ],
+        "stableAcrossWholeInterval": true
+      }
+    },
+    "conservativeQuantum": {
+      "carbsNetG": {
+        "interval": [
+          "7.381250",
+          "7.387250"
+        ],
+        "roundedEndpoints": [
+          "7.4",
+          "7.4"
+        ],
+        "stableAcrossWholeInterval": true
+      },
+      "carbsTotalG": {
+        "interval": [
+          "10.374250",
+          "10.444250"
+        ],
+        "roundedEndpoints": [
+          "10.4",
+          "10.4"
+        ],
+        "stableAcrossWholeInterval": true
+      },
+      "proteinG": {
+        "interval": [
+          "39.527500",
+          "39.533500"
+        ],
+        "roundedEndpoints": [
+          "39.53",
+          "39.53"
+        ],
+        "stableAcrossWholeInterval": true
+      },
+      "fatG": {
+        "interval": [
+          "23.908125",
+          "23.914125"
+        ],
+        "roundedEndpoints": [
+          "23.91",
+          "23.91"
+        ],
+        "stableAcrossWholeInterval": true
+      },
+      "gk": {
+        "interval": [
+          "2.736325",
+          "2.8260250"
+        ],
+        "roundedEndpoints": [
+          "3",
+          "3"
+        ],
+        "stableAcrossWholeInterval": true
+      }
+    }
+  },
+  "sourceAndInputFileHashes": {
+    "case.json": "9f3e01b9ec8c9987dde9a7c26369e014787d12c8e99edda70ffff31ccdcb3b15",
+    "decimal-verification.json": "a7487afbb4e932b911edd14f29c406948badbb6901a7888cdd9bcb892d7134e0",
+    "decimal.py": "77b2dfb8b7f8d7904720a40e42e6452c712f3daca7752e67ffed0c0cd589dd2c",
+    "main-baseline.json": "ad89200e24fddb2133d1330e2f684487ed8aadf86ce6e71bff0851eac730d79f",
+    "main-source.md": "334e64407cfad090013a0213a1f5186a378e15e72c8e21c2fa43e912ca0d8ad4",
+    "pr153-source.md": "07eae5d1c8917a3a90e7e7623cffacf11fdb6425c4da7450e4f25b4914db3a58",
+    "prototype-result.json": "dd729e83930711d96288c0c409e7e5e59050aabdd3d334de275c46e1c8210dff",
+    "prototype.mts": "7e27a31d9ad4629077b99e6b1a4842af37a2ceb6f98fc14e47b49f4c08c16be8",
+    "prototype.test.mts": "f4171732f0e7ed7d6bf2d8d3e72a549e8211aca7fdc5fc5787c358f30ea9fb82",
+    "source-pins.json": "b36e949bed4fe06da8405390395cc598809c479acb4752a904b8895951a61b9e",
+    "verification.json": "c62a24e49be1a052f10ef10d67876b03769cd685c8199c00c5dadf325f9abf63"
+  },
+  "unresolvedOwnerDecisions": [
+    "Exact four-serving weighed fresh-garlic/basil preparation; all edible liquids and fat retained; pure salt scope.",
+    "Three named Fineli profiles11565/393/11134 and retained tomato/dairy/cheese composition proxies.",
+    "Exact garlicGI40 alias and basilGI50 alias plus explicit new allowed-composition binding; no new GI measurement.",
+    "Pepper aggregate-P remains null; approve only this closed source-residual/response0..150/fullwidth0.10 scenario.",
+    "Accept conditional two-profile rounding sensitivity, original precision limitations and the new display7.4/10.4/39.53/23.91 with modeled about3LOW.",
+    "Authorize later separate case-specific implementation, never activation by a JSON flag; release remains separately authorized."
+  ],
+  "uncertaintyScope": "Existing conditional source-accounting and two-web-profile display-quantum sensitivity only; other source profiles fixed. Not full measurement uncertainty, biological interval or measured glycemic response.",
+  "technicalReadiness": {
+    "storageSchemaAcceptsValues": true,
+    "frontmatterWriterAcceptsAtMostTwoDecimalValues": true,
+    "uiSupportsOneAndTwoDecimalValues": true,
+    "ordinaryNutritionValidatorCurrentlyAcceptsCase": false,
+    "laterClosedCaseIntegrationRequired": true,
+    "globalCalculatorOrGlobalPrecisionChangeRequired": false
+  },
+  "originalPrototypeState": {
+    "status": "HOLD",
+    "publicationEligible": false,
+    "productionEnabled": false,
+    "activationSupported": false,
+    "productionGkOverride": null
+  },
+  "proposalFingerprintSha256": "e1f620de4ef73f347ddff4c14e41dadb1acf9b8282b7761404865491b415cc07"
+}

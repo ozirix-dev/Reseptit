@@ -9,7 +9,8 @@ import { parseMarkdown } from "../src/content/markdown";
 // These historical batch expectations retain the exact main nutrition snapshots.
 // All current candidate macros in source, evidence and generated publication are
 // independently checked in gk80-release2.test.ts, including every intentional delta.
-const historicalMacros={...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-7/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-6/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/historical-macros.json'),'utf8')).recipes};
+const recoveryHistorical=JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-uunikanapasta-release/historical-metadata.json'),'utf8'));
+const historicalMacros={[recoveryHistorical.recipeId]:{nutrition:recoveryHistorical.nutrition},...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-7/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-6/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/historical-macros.json'),'utf8')).recipes};
 const siteContent={...currentSiteContent,recipes:currentSiteContent.recipes.map(r=>({...r,nutrition:historicalMacros[r.recipeId]?.nutrition??r.nutrition}))};
 
 async function markdownFiles(dir: string): Promise<string[]> {
@@ -198,6 +199,9 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     ["thai-kananmunat-kookoscurryssa", 43.31],
     ["malesialainen-apam-balik", 57.18],
   ]);
+  // PR162 intentionally withheld these exact packages; they remain public nulls.
+  documentedBreakfastNetCarbs.delete("keto-suklaakeksit");
+  documentedBreakfastNetCarbs.delete("keto-mutakakku");
   for (const recipe of [...breakfast, ...desserts]) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
     assert.equal(
