@@ -1,76 +1,68 @@
 ---
-title: Kermainen lohikeitto kuohukermalla
+title: Lohikeitto kuohukermalla – fonditon vesiversio
 recipe_id: lohikeitto-kuohukermalla
 url_slug: lohikeitto-kuohukermalla
 category: paaruoka
 language: fi
 servings: 4
-carbs_net_per_serving_g: 17.8
-carbs_total_per_serving_g: 20.16
-protein_per_serving_g: 23.39
-fat_per_serving_g: 38.64
+carbs_net_per_serving_g: 17.43
+carbs_total_per_serving_g: 19.64
+protein_per_serving_g: 23.29
+fat_per_serving_g: 38.62
 main_ingredient:
-  - lohi
-  - peruna
+- lohi
+- peruna
 cooking_method:
-  - liesi
+- liesi
 difficulty: helppo
 tags:
-  - lohikeitto
-  - keitto
-  - kalaruoka
-  - kuohukerma
+- lohikeitto
+- keitto
+- kalaruoka
+- kuohukerma
 image:
   src: paaruoat/lohikeitto-kuohukermalla.webp
-  alt: Kermainen lohikeitto kuohukermalla, perunalla, porkkanalla, purjolla ja
-    tuoreella tillillä
+  alt: Lohikeitto kuohukermalla – fonditon vesiversio – kuvituskuva
   width: 1280
   height: 853
 ingredients:
-  - amount: 1
-    unit: ""
-    item: sipuli
-  - amount: 50
-    unit: g
-    item: purjoa
-  - amount: 6
-    unit: ""
-    item: perunaa
-  - amount: 1
-    unit: ""
-    item: porkkana
-  - amount: 15
-    unit: g
-    item: voita
-    note: "Kuullottamiseen."
-  - amount: 8
-    unit: dl
-    item: vettä
-  - amount: 15
-    unit: ml
-    item: kalafondia
-    note: "Oletus 15 ml / 8 dl vettä; tarkista pakkauksen annostus."
-  - amount: 8
-    unit: kpl
-    item: kokonaista mustapippuria
-  - amount: 400
-    unit: g
-    item: lohifileetä
-  - amount: 2
-    unit: dl
-    item: kuohukermaa
-  - amount: 3
-    unit: g
-    item: suolaa
-    note: "Noin 1/2 tl; säädä kalafondin suolaisuuden mukaan."
-  - amount: 10
-    unit: g
-    item: tuoretta tilliä
-    note: "Hienonnettuna."
+- amount: 55
+  unit: g
+  item: keltasipulia
+- amount: 50
+  unit: g
+  item: purjoa
+- amount: 360
+  unit: g
+  item: kuorittua raakaa perunaa
+- amount: 70
+  unit: g
+  item: porkkanaa
+- amount: 15
+  unit: g
+  item: voita
+- amount: 800
+  unit: g
+  item: vettä; ei kalafondia
+- amount: 0.5
+  unit: g
+  item: jauhettua mustapippuria, kokonaan mukana
+- amount: 400
+  unit: g
+  item: raakaa kasvatetun lohen fileetä
+- amount: 200
+  unit: g
+  item: 38% kuohukermaa
+- amount: 10
+  unit: g
+  item: tuoretta tilliä
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 translation_languages:
-  - en
-  - sv
-  - th
+- en
+- sv
+- th
 translation_status:
   en: published
   sv: published
@@ -78,24 +70,28 @@ translation_status:
 status: published
 ---
 
-# Kermainen lohikeitto kuohukermalla
-
-Täyteläinen lohikeitto kypsyy perunoista, kasviksista ja lohesta. Kuohukerma ja tuore tilli viimeistelevät pehmeän liemen.
+# Lohikeitto kuohukermalla – fonditon vesiversio
 
 ## Kuvaus
 
-Perinteisen makuinen kotikeitto, jossa kalafondi antaa liemelle syvyyttä ja voi pehmentää sipulin ja purjon makua. Tarjoa halutessasi ruisleivän kanssa.
+Lohikeitto kuohukermalla – fonditon vesiversio. Täsmällinen versio 4 annokselle.
+
+## Ainekset
+
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Kuori ja hienonna sipuli. Halkaise purjo pituussuunnassa, huuhtele huolellisesti ja leikkaa ohuiksi viipaleiksi. Kuori tai harjaa perunat ja leikkaa suupaloiksi. Paloittele porkkana.
-2. Sulata kattilassa voita oman maun mukaan. Kuullota sipulia ja purjoa muutama minuutti, kunnes ne pehmenevät mutta eivät ruskistu.
-3. Lisää kattilaan vesi, kalafondi pakkauksen annostuksen mukaan ja kokonaiset mustapippurit. Lisää perunat ja porkkana. Keitä lempeästi, kunnes kasvikset ovat lähes kypsiä.
-4. Poista lohesta nahka ja ruodot. Leikkaa kala reiluiksi kuutioiksi ja lisää kattilaan.
-5. Kaada joukkoon kuohukerma. Hauduta miedolla lämmöllä muutama minuutti, kunnes lohi kypsyy. Vältä voimakasta kiehumista.
-6. Maista lientä ja lisää tarvittaessa suolaa. Sekoita joukkoon hienonnettu tilli ja tarjoa kuumana.
+1. Fonditon vesiversio: kypsennä 55 g sipulia, 50 g purjoa ja 70 g porkkanaa 15 g:ssa voita. Lisää 800 g vettä ja 360 g kuorittuna punnittua raakaa perunaa. Keitä peruna kypsäksi.
+2. Lisää 400 g raakaa lohifileetä, 200 g kermaa ja 0,5 g jauhettua mustapippuria. Kypsennä kala kauttaaltaan. Kalafondia ei lisätä tähän nimettyyn versioon.
+3. Lisää 10 g tilliä ja jaa koko keitto nesteineen neljään annokseen. Mustapippuri syödään; ei pois nostettavia kokonaisia pippureita.
 
 ## Muistiinpanot
 
-- Kalafondien suolaisuus ja vahvuus vaihtelevat. Noudata pakkauksen annostusta ja tarkista maku ennen suolan lisäämistä.
-- Ruisleipä sopii keiton kanssa tarjottavaksi.
+Mallinnettu GK-arvio perustuu ainesosiin ja nimettyihin laskennallisiin oletuksiin. Luottamus on matala. Kaikki imeytyvät hiilihydraatit ovat mukana. Tämä ei ole aterialla mitattu verensokerivaste. Biologista epävarmuusväliä ei tunneta.
+
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
+
+Tämä fonditon vesiversio sisältää 800 g vettä; kalafondia ei lisätä. Perunan 360 g on kuorittua raakapainoa. Jauhettu mustapippuri syödään kokonaan. GI 66 on nimetty keitetyn perunan LOW-analogia. GK noin 10,46 ei takaa pysymistä matalan ja keskisuuren luokan rajan samalla puolella toisella GI-vastineella; biologista epävarmuusväliä ei ole määritetty.
+
+Kaikki luetellut syötävät ainekset ja kastike kulutetaan. Raakojen tai kuivien ainesten ravintokoostumusta käytetään nimetyn valmistuksen koostumusarvion pohjana; mittaamatonta kypsennys- tai liukenemishävikkiä ei vähennetä.

@@ -1,87 +1,81 @@
 ---
-title: Broccoli- och ädelostfrittata
+title: Broccoli- och blåmögelostfrittata – vägd version
 recipe_id: parsakaali-sinihomejuustofrittata
 url_slug: parsakaali-sinihomejuustofrittata
 category: paaruoka
 language: sv
 diet_class: vhh_tiukka
 servings: 4
-carbs_net_per_serving_g: 2.49
-carbs_total_per_serving_g: 4.36
-protein_per_serving_g: 18.23
-fat_per_serving_g: 32.19
+carbs_net_per_serving_g: 2.64
+carbs_total_per_serving_g: 4.0
+protein_per_serving_g: 17.97
+fat_per_serving_g: 33.22
 main_ingredient:
-  - kananmuna
-  - parsakaali
-  - sinihomejuusto
+- kananmuna
+- parsakaali
+- sinihomejuusto
 cooking_method:
-  - uuni
+- uuni
 difficulty: lätt
 tags:
-  - lågkolhydrat
-  - frittata
-  - broccoli
-  - ädelost
+- lågkolhydrat
+- frittata
+- broccoli
+- ädelost
 image:
   src: paaruoat/parsakaali-sinihomejuustofrittata.webp
-  alt: Gyllene broccoli och ädelostfrittata i en gjutjärnspanna
+  alt: Broccoli- och blåmögelostfrittata – vägd version – serveringsillustration
   width: 1280
   height: 853
 ingredients:
-  - amount: 1
-    unit: msk
-    item: smör
-    note: för stekning
-  - amount: 0.5
-    unit: st
-    item: lök
-    note: "finhackad"
-  - amount: 200
-    unit: g
-    item: broccoli
-    note: "i små buketter"
-  - amount: 6
-    unit: st
-    item: ägg
-  - amount: 1.5
-    unit: dl
-    item: vispgrädde
-  - amount: 100
-    unit: g
-    item: ädelost
-    note: krossad
-  - amount: null
-    unit: ""
-    item: svartpeppar
-    note: efter smak
-  - amount: 0.25
-    unit: tsk
-    item: salt
-    note: om det behövs är osten salt
+- amount: 14
+  unit: g
+  item: smör, inklusive allt smör till panna eller form
+- amount: 27.5
+  unit: g
+  item: skalad gul lök
+- amount: 200
+  unit: g
+  item: broccoli
+- amount: 330
+  unit: g
+  item: ägg utan skal
+- amount: 150
+  unit: g
+  item: vispgrädde, 38 % fett
+- amount: 100
+  unit: g
+  item: vanlig blåmögelost, generell AFCD-sammansättning
+- amount: 0.5
+  unit: g
+  item: malen svartpeppar
+- amount: null
+  unit: ''
+  item: salt efter smak
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/parsakaali-sinihomejuustofrittata.md
 translation_of: parsakaali-sinihomejuustofrittata
 ---
 
-# Broccoli- och ädelostfrittata
-
-En mjuk, fyllig bakad omelett kombinerar broccoli, ägg och en stark ädelostfrittata.
+# Broccoli- och blåmögelostfrittata – vägd version
 
 ## Beskrivning
 
-Frittata passar till lunch eller en lätt middag. Den kan bakas i en rund ugnssäker form eller i en liten form.
+Broccoli- och blåmögelostfrittata – vägd version.
 
-## Gör så här
+## Ingredienser
 
-1. Värm ugnen till 200 grader. Smörj en ugnsform på 20 x 25 cm eller använd en ugnssäker långpanna.
-2. Smält smöret i en kastrull. Fräs löken en stund och tillsätt broccolibuketterna. Fräs ca 3 minuter tills broccolin tar lite färg.
-3. Överför grönsakerna till pannan. Vispa äggen lätt och blanda i vispgrädde, smulad ost och svartpeppar. Salta försiktigt eftersom osten är salt.
-4. Häll äggblandningen över broccolin. Grädda i ca 20-25 minuter tills mitten stelnat och ytan är gyllenbrun.
-5. Låt frittatan stelna några minuter innan den skärs upp. Servera som den är eller med en grönsallad.
+De vägda ingredienserna visas ovan.
+
+## Tillagning
+
+1. Fräs 27,5 g lök i 14 g smör och tillsätt 200 g broccoli. Tillaga broccolin tills den är mjuk.
+2. Blanda 330 g ägg utan skal, 150 g grädde, 100 g blåmögelost och 0,5 g malen svartpeppar. Häll i en form tillsammans med grönsakerna.
+3. Grädda vid 200 °C tills ägget har stelnat helt. Fördela all mat och allt fett på fyra portioner.
 
 ## Anteckningar
 
+GL är en modellerad summa av ingredienser med låg säkerhet, inte ett uppmätt måltidssvar. Alla tillgängliga kolhydrater ingår. Något biologiskt osäkerhetsintervall är inte känt. Bilden illustrerar servering; tillbehör som inte finns i listan ingår inte i näringsvärden eller GL. Alla angivna ätliga ingredienser, sås och allt fett äts. Hantera kokvattnet enligt instruktionen; ingen omätt tillagnings- eller urlakningsförlust dras av.
 
-- Sältan varierar mellan blåmögelostar. Stek en liten provbit helt färdig om du vill kontrollera äggblandningens smak.
-- Klassningen som lågkolhydratkost bygger på ingredienserna. Kontrollera förpackningarna på produkterna du använder.
+Grädden har 38 % fett; blåmögelosten använder generell AFCD-sammansättning, inte en verifierad märkesetikett.

@@ -1,0 +1,715 @@
+{
+  "recipes": [
+    {
+      "recipeId": "tortilla-de-patatas",
+      "inputHash": "c3a4b93562600cc7d2e99beefacbf9f3b257be89d0b98ed1f3bc7980a8335154",
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "macros": {
+            "availableCarbohydrate": 24.20575,
+            "protein": 13.408125,
+            "fat": 24.686875,
+            "fibre": 2.296625
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 23.25,
+              "gk": 15.345
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.66,
+              "gk": 0.264
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.2475,
+              "gk": 0.12375
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.04825,
+              "gk": 0.024125
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 15.756875,
+          "wholeGk": 15.756875,
+          "wholeCarbohydrate": 24.20575,
+          "imputedImpact": 0.411875
+        }
+      ]
+    },
+    {
+      "recipeId": "tabbouleh",
+      "inputHash": "e453c1ac6153219848fff5b4f8caed7795f8fe6806e7e04d905d76897ae3145c",
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "macros": {
+            "availableCarbohydrate": 11.3445,
+            "protein": 2.5405,
+            "fat": 14.114125,
+            "fibre": 2.644125
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 8.2625,
+              "gk": 5.3293125
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.165,
+              "gk": 0.066
+            },
+            {
+              "index": 2,
+              "carbohydrate": 2.15625,
+              "gk": 0.8625
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.345,
+              "gk": 0.138
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.165,
+              "gk": 0.066
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.2025,
+              "gk": 0.10125
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 8,
+              "carbohydrate": 0.04825,
+              "gk": 0.024125
+            },
+            {
+              "index": 9,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 6.5871875,
+          "wholeGk": 6.5871875,
+          "wholeCarbohydrate": 11.3445,
+          "imputedImpact": 1.257875
+        }
+      ]
+    },
+    {
+      "recipeId": "munakoiso-jauhelihavuoka-vhh",
+      "inputHash": "42b51d7ff35b1e652db8d38208519953ad5591c4dc59caaa0e23e185db66b3c5",
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "macros": {
+            "availableCarbohydrate": 8.9225,
+            "protein": 35.806625,
+            "fat": 32.369,
+            "fibre": 4.4845
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 4.65,
+              "gk": 1.86
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 2,
+              "carbohydrate": 3.45,
+              "gk": 1.38
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.66,
+              "gk": 0.264
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.0965,
+              "gk": 0.04825
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.066,
+              "gk": 0.033
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 3.58525,
+          "wholeGk": 3.58525,
+          "wholeCarbohydrate": 8.9225,
+          "imputedImpact": 3.58525
+        }
+      ]
+    },
+    {
+      "recipeId": "parsakaali-sinihomejuustofrittata",
+      "inputHash": "e35bb059abfffe061e715d9e97227e825d9829b229eb1e9d99e0cdb8051ab93b",
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "macros": {
+            "availableCarbohydrate": 2.63625,
+            "protein": 17.9738375,
+            "fat": 33.2195,
+            "fibre": 1.364125
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.028,
+              "gk": 0.0084
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.33,
+              "gk": 0.132
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.82,
+              "gk": 0.328
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.2475,
+              "gk": 0.12375
+            },
+            {
+              "index": 4,
+              "carbohydrate": 1.0875,
+              "gk": 0.32625
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.075,
+              "gk": 0.0225
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.04825,
+              "gk": 0.024125
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 0.965025,
+          "wholeGk": 0.965025,
+          "wholeCarbohydrate": 2.63625,
+          "imputedImpact": 0.965025
+        }
+      ]
+    },
+    {
+      "recipeId": "italian-pata",
+      "inputHash": "c0b8bf2a2baaa40460ba7dba6a3c6db84ac2ad3af4c1830113c4278d999279f3",
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "macros": {
+            "availableCarbohydrate": 5.89275,
+            "protein": 32.137625,
+            "fat": 32.593,
+            "fibre": 3.193625
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 1,
+              "carbohydrate": 1.725,
+              "gk": 0.69
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.132,
+              "gk": 0.066
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.0965,
+              "gk": 0.04825
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.08925,
+              "gk": 0.0357
+            },
+            {
+              "index": 5,
+              "carbohydrate": 2.5,
+              "gk": 1.0
+            },
+            {
+              "index": 6,
+              "carbohydrate": 1.35,
+              "gk": 0.54
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 8,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 9,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 2.37995,
+          "wholeGk": 2.37995,
+          "wholeCarbohydrate": 5.89275,
+          "imputedImpact": 2.37995
+        }
+      ]
+    },
+    {
+      "recipeId": "raejuusto-uunimunakas",
+      "inputHash": "922cc6694d58cdcbed20f25c7e821f7e7a2ee003850c8844b6e6a85bfeb96191",
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "macros": {
+            "availableCarbohydrate": 3.417375,
+            "protein": 26.986625,
+            "fat": 24.111875,
+            "fibre": 0.057875
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.4125,
+              "gk": 0.20625
+            },
+            {
+              "index": 1,
+              "carbohydrate": 1.6875,
+              "gk": 0.50625
+            },
+            {
+              "index": 2,
+              "carbohydrate": 1.25,
+              "gk": 0.375
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.04825,
+              "gk": 0.024125
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.01,
+              "gk": 0.003
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.009125,
+              "gk": 0.00365
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 1.118275,
+          "wholeGk": 1.118275,
+          "wholeCarbohydrate": 3.417375,
+          "imputedImpact": 1.118275
+        }
+      ]
+    },
+    {
+      "recipeId": "uunilohi-smetanakuorrutteella",
+      "inputHash": "a084a691f9c7989269b82077f3def62aafde40851226681a20cdbaa055563fa1",
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "macros": {
+            "availableCarbohydrate": 2.03825,
+            "protein": 36.623375,
+            "fat": 47.9155,
+            "fibre": 1.016625
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 1,
+              "carbohydrate": 1.0,
+              "gk": 0.3
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.6,
+              "gk": 0.24
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.3575,
+              "gk": 0.17875
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0225,
+              "gk": 0.009
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.04825,
+              "gk": 0.024125
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.01,
+              "gk": 0.003
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 0.754875,
+          "wholeGk": 0.754875,
+          "wholeCarbohydrate": 2.03825,
+          "imputedImpact": 0.754875
+        }
+      ]
+    },
+    {
+      "recipeId": "meksikolainen-quesadilla-sienilla",
+      "inputHash": "46572658abfcf38645f0444599033ac5803f8c6e973bc97b1026ef431196e963",
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "macros": {
+            "availableCarbohydrate": 32.9425,
+            "protein": 11.21,
+            "fat": 20.31975,
+            "fibre": 2.111
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 25.9225,
+              "gk": 13.58339
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.3,
+              "gk": 0.12
+            },
+            {
+              "index": 3,
+              "carbohydrate": 6.72,
+              "gk": 3.4272
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 17.13059,
+          "wholeGk": 17.13059,
+          "wholeCarbohydrate": 32.9425,
+          "imputedImpact": 0.12
+        }
+      ]
+    },
+    {
+      "recipeId": "koshari",
+      "inputHash": "22212e8899a55e76b5c3536c6281fea35e1d2c5a1408eda0a347a5178ee2a79d",
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "macros": {
+            "availableCarbohydrate": 92.472,
+            "protein": 22.242,
+            "fat": 12.00925,
+            "fibre": 7.22825
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 22.85,
+              "gk": 7.312
+            },
+            {
+              "index": 1,
+              "carbohydrate": 39.5,
+              "gk": 26.86
+            },
+            {
+              "index": 2,
+              "carbohydrate": 24.9,
+              "gk": 12.201
+            },
+            {
+              "index": 3,
+              "carbohydrate": 1.32,
+              "gk": 0.528
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 5,
+              "carbohydrate": 3.45,
+              "gk": 1.38
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.1785,
+              "gk": 0.0714
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.0375,
+              "gk": 0.01875
+            },
+            {
+              "index": 8,
+              "carbohydrate": 0.1685,
+              "gk": 0.08425
+            },
+            {
+              "index": 9,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 10,
+              "carbohydrate": 0.0675,
+              "gk": 0.03375
+            },
+            {
+              "index": 11,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 48.48915,
+          "wholeGk": 48.48915,
+          "wholeCarbohydrate": 92.472,
+          "imputedImpact": 2.11615
+        }
+      ]
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "inputHash": "301b5323034269c309b7df25ff43dbf21b0da8b7092f1b892603ada6784f6db9",
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "macros": {
+            "availableCarbohydrate": 37.76625,
+            "protein": 21.20025,
+            "fat": 10.9809,
+            "fibre": 2.1145
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 35.3415,
+              "gk": 24.03222
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.0825,
+              "gk": 0.04125
+            },
+            {
+              "index": 2,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 3,
+              "carbohydrate": 1.6,
+              "gk": 0.672
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.15725,
+              "gk": 0.078625
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.24,
+              "gk": 0.12
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.345,
+              "gk": 0.138
+            },
+            {
+              "index": 8,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 25.082095,
+          "wholeGk": 25.082095,
+          "wholeCarbohydrate": 37.76625,
+          "imputedImpact": 0.377875
+        }
+      ]
+    },
+    {
+      "recipeId": "lohikeitto-kuohukermalla",
+      "inputHash": "a8e934c1abb080e1035a18f7f59cb6c7b9e32adbcf91325954c3c0137974e1e1",
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "macros": {
+            "availableCarbohydrate": 17.43375,
+            "protein": 23.29025,
+            "fat": 38.619225,
+            "fibre": 2.209125
+          },
+          "contributions": [
+            {
+              "index": 0,
+              "carbohydrate": 0.66,
+              "gk": 0.264
+            },
+            {
+              "index": 1,
+              "carbohydrate": 0.3,
+              "gk": 0.12
+            },
+            {
+              "index": 2,
+              "carbohydrate": 13.95,
+              "gk": 9.207
+            },
+            {
+              "index": 3,
+              "carbohydrate": 0.973,
+              "gk": 0.3892
+            },
+            {
+              "index": 4,
+              "carbohydrate": 0.03,
+              "gk": 0.009
+            },
+            {
+              "index": 5,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 6,
+              "carbohydrate": 0.04825,
+              "gk": 0.024125
+            },
+            {
+              "index": 7,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            },
+            {
+              "index": 8,
+              "carbohydrate": 1.45,
+              "gk": 0.435
+            },
+            {
+              "index": 9,
+              "carbohydrate": 0.0225,
+              "gk": 0.009
+            },
+            {
+              "index": 10,
+              "carbohydrate": 0.0,
+              "gk": 0.0
+            }
+          ],
+          "knownSubtotal": 10.457325,
+          "wholeGk": 10.457325,
+          "wholeCarbohydrate": 17.43375,
+          "imputedImpact": 1.250325
+        }
+      ]
+    }
+  ]
+}

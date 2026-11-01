@@ -1,89 +1,87 @@
 ---
-title: Italian-Style Minced Beef and Courgette Bake
+title: Italian-style beef and courgette pan – weighed version
 recipe_id: italian-pata
 url_slug: italian-pata
 category: paaruoka
 language: en
 servings: 4
-carbs_net_per_serving_g: 5.66
+carbs_net_per_serving_g: 5.89
 time_total_min: 60
 main_ingredient:
-  - jauheliha
-  - kesäkurpitsa
+- jauheliha
+- kesäkurpitsa
 cooking_method:
-  - uuni
+- liesi
 difficulty: easy
 tags:
-  - "oven dish"
-  - "minced meat"
-  - "courgette"
-carbs_total_per_serving_g: 8.58
-fat_per_serving_g: 32.56
-protein_per_serving_g: 32.07
+- pan dish
+- minced beef
+- courgette
+carbs_total_per_serving_g: 9.09
+fat_per_serving_g: 32.59
+protein_per_serving_g: 32.14
 image:
   src: paaruoat/italian-pata.webp
-  alt: An Italian minced meat-zucchini stew topped with melted mozzarella and basil
+  alt: Italian-style beef and courgette pan – weighed version – serving illustration
   width: 1280
   height: 853
 ingredients:
-  - amount: 500
-    unit: g
-    item: "17% beef mince"
-  - amount: 200
-    unit: g
-    item: "chopped tomatoes"
-  - amount: 2
-    unit: g
-    item: dried oregano
-  - amount: 5
-    unit: g
-    item: salt
-  - amount: 1
-    unit: g
-    item: black pepper
-  - amount: 3.5
-    unit: g
-    item: "garlic"
-  - amount: 400
-    unit: g
-    item: zucchini
-  - amount: 120
-    unit: g
-    item: "red bell pepper"
-  - amount: 150
-    unit: g
-    item: "grated mozzarella"
-  - amount: 12
-    unit: g
-    item: olive oil
-    note: "12 g for the whole dish; the nutrition estimate uses this amount"
+- amount: 500
+  unit: g
+  item: beef mince, 17% fat
+- amount: 200
+  unit: g
+  item: crushed tomatoes
+- amount: 2
+  unit: g
+  item: dried oregano
+- amount: 1
+  unit: g
+  item: ground black pepper
+- amount: 3.5
+  unit: g
+  item: peeled fresh garlic
+- amount: 400
+  unit: g
+  item: courgette
+- amount: 120
+  unit: g
+  item: red pepper
+- amount: 150
+  unit: g
+  item: mozzarella, 20% fat
+- amount: 12
+  unit: g
+  item: olive oil
+- amount: null
+  unit: ''
+  item: salt to taste
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/italian-pata.md
 translation_of: italian-pata
 ---
 
-# Italian-Style Minced Beef and Courgette Bake
-
-This tomatoey bake combines minced beef, courgette and pointed pepper under a golden layer of melted cheese. Serve with salad.
+# Italian-style beef and courgette pan – weighed version
 
 ## Description
 
-Seasoned minced beef, courgette, pointed pepper and mozzarella are baked together until bubbling. Finish each serving with a drizzle of olive oil.
+Italian-style beef and courgette pan – weighed version.
 
-## Preparation
+## Ingredients
 
-1. Preheat the oven to 225°C.
-2. Brown the minced meat in a frying pan. Add the crushed garlic, oregano, salt and black pepper.
-3. Stir in the chopped tomatoes and let the sauce simmer briefly.
-4. Rinse and coarsely grate the courgette. Spread the grated courgette in a large baking dish.
-5. Dice the pointed pepper and add it to the dish.
-6. Taste the sauce and add salt if needed. Pour the minced beef and tomato mixture over the vegetables and mix well.
-7. Stir in most of the grated cheese, reserving a little for the top.
-8. Bake at 225°C for about 20 minutes.
-9. Leave to rest for at least 15 minutes. Serve with salad and divide a total of 12 g olive oil over the portions.
+The weighed ingredients are shown above.
+
+## Instructions
+
+1. Brown 500 g beef mince with 17% fat in 12 g olive oil. Add 3.5 g garlic, 120 g red pepper and 400 g courgette.
+2. Add 200 g crushed tomatoes, 2 g oregano and 1 g black pepper. Cook the meat and vegetables thoroughly.
+3. Stir 150 g mozzarella with 20% fat into the hot food. Divide the entire pan and all liquid into four portions. This version contains no ordinary pasta.
 
 ## Notes
 
-- Estimated total time is about 60 minutes: allow around 25 minutes for preparation, browning and assembling the dish, 20 minutes for baking and at least 15 minutes for resting. Preheat the oven during preparation. This estimate is based on the steps, not a timed kitchen trial; preparing the salad is not included.
-- Nutrition values are estimates per serving, based on four servings.
+The GL is a modeled ingredient-sum estimate with low confidence, not a measured meal response. All available carbohydrate is included. No biological uncertainty interval is known. The photograph illustrates serving; unlisted side dishes are excluded from the nutrition and GL estimates. All listed edible ingredients, sauce and fat are consumed. Handle cooking water as instructed; no unmeasured cooking or leaching losses are deducted.
+
+This courgette version contains no ordinary pasta.
+
+Estimated total time of 60 min is an approximate estimate for this pan-cooked version.

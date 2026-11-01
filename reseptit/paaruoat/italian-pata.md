@@ -1,66 +1,65 @@
 ---
-title: Italialainen jauheliha-kesäkurpitsapata
+title: Italialainen jauheliha-kesäkurpitsapata – punnittu versio
 recipe_id: italian-pata
 url_slug: italian-pata
 category: paaruoka
 language: fi
 servings: 4
-carbs_net_per_serving_g: 5.66
+carbs_net_per_serving_g: 5.89
 time_total_min: 60
 main_ingredient:
-  - jauheliha
-  - kesäkurpitsa
+- jauheliha
+- kesäkurpitsa
 cooking_method:
-  - uuni
+- liesi
 difficulty: helppo
 tags:
-  - uuniruoka
-  - jauheliha
-  - kesäkurpitsa
-carbs_total_per_serving_g: 8.58
-fat_per_serving_g: 32.56
-protein_per_serving_g: 32.07
+- pannuruoka
+- jauheliha
+- kesäkurpitsa
+carbs_total_per_serving_g: 9.09
+fat_per_serving_g: 32.59
+protein_per_serving_g: 32.14
 image:
   src: paaruoat/italian-pata.webp
-  alt: Italialainen jauheliha-kesäkurpitsapata, jonka pinnalla on sulanutta mozzarellaa ja basilikaa
+  alt: Italialainen jauheliha-kesäkurpitsapata – punnittu versio – kuvituskuva
   width: 1280
   height: 853
 ingredients:
-  - amount: 500
-    unit: g
-    item: "17 % naudan jauhelihaa"
-  - amount: 200
-    unit: g
-    item: "tomaattimurskaa"
-  - amount: 2
-    unit: g
-    item: kuivattua oreganoa
-  - amount: 5
-    unit: g
-    item: suolaa
-  - amount: 1
-    unit: g
-    item: mustapippuria
-  - amount: 3.5
-    unit: g
-    item: "valkosipulia"
-  - amount: 400
-    unit: g
-    item: kesäkurpitsaa
-  - amount: 120
-    unit: g
-    item: "punainen paprika"
-  - amount: 150
-    unit: g
-    item: "mozzarellaraastetta"
-  - amount: 12
-    unit: g
-    item: oliiviöljyä
-    note: "12 g koko vuokaan; ravintoarvio käyttää tätä määrää"
+- amount: 500
+  unit: g
+  item: 17% naudan jauhelihaa
+- amount: 200
+  unit: g
+  item: tomaattimurskaa
+- amount: 2
+  unit: g
+  item: kuivattua oreganoa
+- amount: 1
+  unit: g
+  item: jauhettua mustapippuria
+- amount: 3.5
+  unit: g
+  item: tuoretta valkosipulia
+- amount: 400
+  unit: g
+  item: kesäkurpitsaa
+- amount: 120
+  unit: g
+  item: punaista paprikaa
+- amount: 150
+  unit: g
+  item: 20% mozzarellaa
+- amount: 12
+  unit: g
+  item: oliiviöljyä
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 translation_languages:
-  - en
-  - sv
-  - th
+- en
+- sv
+- th
 translation_status:
   en: published
   sv: published
@@ -68,27 +67,30 @@ translation_status:
 status: published
 ---
 
-# Italialainen jauheliha-kesäkurpitsapata
-
-Tomaattinen jauheliha-kesäkurpitsapata saa pinnalleen reilusti sulanutta juustoa. Tarjoa salaatin kanssa.
+# Italialainen jauheliha-kesäkurpitsapata – punnittu versio
 
 ## Kuvaus
 
-Uunissa kypsyvässä padassa yhdistyvät maustettu jauheliha, kesäkurpitsa, suippopaprika ja mozzarella. Annoksen päälle viimeistellään tilkka oliiviöljyä.
+Italialainen jauheliha-kesäkurpitsapata – punnittu versio. Täsmällinen versio 4 annokselle.
+
+## Ainekset
+
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Kuumenna uuni 225 asteeseen.
-2. Ruskista jauheliha pannulla. Lisää murskattu valkosipuli, oregano, suola ja mustapippuri.
-3. Lisää tomaattimurska ja anna kastikkeen porista hetki kokoon.
-4. Huuhtele ja raasta kesäkurpitsa karkealla terällä. Levitä raaste isoon uunivuokaan.
-5. Pilko suippopaprika pieniksi kuutioiksi ja lisää vuokaan.
-6. Maista kastiketta ja lisää tarvittaessa suolaa. Kaada jauhelihatomaattikastike vuokaan ja sekoita hyvin.
-7. Lisää suurin osa juustoraasteesta ja sekoita. Jätä hieman juustoa pinnalle ripoteltavaksi.
-8. Paista 225 asteessa noin 20 minuuttia.
-9. Anna padan vetäytyä vähintään 15 minuuttia ennen tarjoamista. Tarjoa salaatin kanssa ja jaa yhteensä 12 g oliiviöljyä annosten päälle.
+1. Ruskista 500 g 17% naudan jauhelihaa 12 g:ssa oliiviöljyä. Lisää 3,5 g valkosipulia, 120 g paprikaa ja 400 g kesäkurpitsaa.
+2. Lisää 200 g tomaattimurskaa, 2 g oreganoa ja 1 g mustapippuria. Kypsennä liha ja kasvikset kauttaaltaan.
+3. Sekoita 150 g 20% mozzarellaa kuumaan ruokaan. Jaa koko pata nesteineen neljään annokseen. Ei tavallista pastaa tässä versiossa.
 
 ## Muistiinpanot
 
-- Arvioitu kokonaisaika on noin 60 minuuttia: valmistelu, ruskistus ja vuoan kokoaminen noin 25 minuuttia, paisto 20 minuuttia ja vetäytyminen vähintään 15 minuuttia. Uuni lämpenee valmistelun aikana. Aika on työvaiheisiin perustuva arvio, ei kellotettu koekeittiötulos; salaatin valmistus ei sisälly siihen.
-- Ravintoarvot ovat suuntaa-antavia arvioita yhtä annosta kohti, kun reseptistä tulee neljä annosta.
+Mallinnettu GK-arvio perustuu ainesosiin ja nimettyihin laskennallisiin oletuksiin. Luottamus on matala. Kaikki imeytyvät hiilihydraatit ovat mukana. Tämä ei ole aterialla mitattu verensokerivaste. Biologista epävarmuusväliä ei tunneta.
+
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
+
+Tämä kesäkurpitsaversio ei sisällä tavallista pastaa. Jauhelihan rasva on 17 % ja mozzarellan 20 %. Kaikki 12 g oliiviöljyä ja kastike kulutetaan.
+
+Kaikki luetellut syötävät ainekset ja kastike kulutetaan. Raakojen tai kuivien ainesten ravintokoostumusta käytetään nimetyn valmistuksen koostumusarvion pohjana; mittaamatonta kypsennys- tai liukenemishävikkiä ei vähennetä.
+
+Arvioitu kokonaisaika 60 min on tälle pannuversiolle suuntaa-antava arvio.

@@ -1,0 +1,463 @@
+{
+  "screenedAt": "2026-11-01T11:41:49.840321+02:00",
+  "baseMain": "ed5e3a67046cff3b1fd56acf4cb214a0fe3813ad",
+  "researchHead": "f3777a8c423f4cb49eb67b0f2aca318aaebb7531",
+  "classes": {
+    "A": 9,
+    "B": 2,
+    "C": 2,
+    "D": 5
+  },
+  "recipes": [
+    {
+      "id": "jauheliha-kaalikeitto-vhh",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 6,
+      "ingredientCount": 8,
+      "compositions": 7,
+      "unverifiedPolyols": [
+        "U170928-r5"
+      ],
+      "gk": 4.58888,
+      "readinessClass": "C",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": false,
+        "availableChoSupported": false,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": false,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": true,
+        "registryCompatibleWithoutEngineChange": false
+      },
+      "reason": "Complete net/total CHO withheld: unquantified polyols in U170928-r5"
+    },
+    {
+      "id": "tortilla-de-patatas",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 7,
+      "compositions": 6,
+      "unverifiedPolyols": [],
+      "gk": 15.756875,
+      "readinessClass": "A",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": true,
+        "availableChoSupported": true,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": true,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": false,
+        "registryCompatibleWithoutEngineChange": true
+      },
+      "reason": "Locked recipe/source evidence and existing bounded methods; owner approval pending"
+    },
+    {
+      "id": "tabbouleh",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 10,
+      "compositions": 9,
+      "unverifiedPolyols": [],
+      "gk": 6.5871875,
+      "readinessClass": "A",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": true,
+        "availableChoSupported": true,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": true,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": false,
+        "registryCompatibleWithoutEngineChange": true
+      },
+      "reason": "Locked recipe/source evidence and existing bounded methods; owner approval pending"
+    },
+    {
+      "id": "jauhelihapihvit-vhh-kermakastikkeella",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 11,
+      "compositions": 8,
+      "unverifiedPolyols": [
+        "maille-label-proxy"
+      ],
+      "gk": 1.33015,
+      "readinessClass": "D",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": false,
+        "availableChoSupported": false,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": false,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": true,
+        "registryCompatibleWithoutEngineChange": false
+      },
+      "reason": "Complete net/total CHO withheld: unquantified polyols in maille-label-proxy"
+    },
+    {
+      "id": "vhh-kaalilaatikko",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 6,
+      "ingredientCount": 10,
+      "compositions": 9,
+      "unverifiedPolyols": [
+        "U170928-r5"
+      ],
+      "gk": 3.7733966666666667,
+      "readinessClass": "C",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": false,
+        "availableChoSupported": false,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": false,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": true,
+        "registryCompatibleWithoutEngineChange": false
+      },
+      "reason": "Complete net/total CHO withheld: unquantified polyols in U170928-r5"
+    },
+    {
+      "id": "munakoiso-jauhelihavuoka-vhh",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 8,
+      "compositions": 7,
+      "unverifiedPolyols": [],
+      "gk": 3.58525,
+      "readinessClass": "A",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": true,
+        "availableChoSupported": true,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": true,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": false,
+        "registryCompatibleWithoutEngineChange": true
+      },
+      "reason": "Locked recipe/source evidence and existing bounded methods; owner approval pending"
+    },
+    {
+      "id": "parsakaali-sinihomejuustofrittata",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 8,
+      "compositions": 7,
+      "unverifiedPolyols": [],
+      "gk": 0.965025,
+      "readinessClass": "A",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": true,
+        "availableChoSupported": true,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": true,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": false,
+        "registryCompatibleWithoutEngineChange": true
+      },
+      "reason": "Locked recipe/source evidence and existing bounded methods; owner approval pending"
+    },
+    {
+      "id": "italian-pata",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 10,
+      "compositions": 9,
+      "unverifiedPolyols": [],
+      "gk": 2.37995,
+      "readinessClass": "A",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": true,
+        "availableChoSupported": true,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": true,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": false,
+        "registryCompatibleWithoutEngineChange": true
+      },
+      "reason": "Locked recipe/source evidence and existing bounded methods; owner approval pending"
+    },
+    {
+      "id": "raejuusto-uunimunakas",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 7,
+      "compositions": 6,
+      "unverifiedPolyols": [],
+      "gk": 1.118275,
+      "readinessClass": "A",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": true,
+        "availableChoSupported": true,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": true,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": false,
+        "registryCompatibleWithoutEngineChange": true
+      },
+      "reason": "Locked recipe/source evidence and existing bounded methods; owner approval pending"
+    },
+    {
+      "id": "uunilohi-smetanakuorrutteella",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 8,
+      "compositions": 7,
+      "unverifiedPolyols": [],
+      "gk": 0.754875,
+      "readinessClass": "A",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": true,
+        "availableChoSupported": true,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": true,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": false,
+        "registryCompatibleWithoutEngineChange": true
+      },
+      "reason": "Locked recipe/source evidence and existing bounded methods; owner approval pending"
+    },
+    {
+      "id": "meksikolainen-quesadilla-sienilla",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 2,
+      "ingredientCount": 6,
+      "compositions": 5,
+      "unverifiedPolyols": [],
+      "gk": 17.13059,
+      "readinessClass": "A",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": true,
+        "availableChoSupported": true,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": true,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": false,
+        "registryCompatibleWithoutEngineChange": true
+      },
+      "reason": "Locked recipe/source evidence and existing bounded methods; owner approval pending"
+    },
+    {
+      "id": "koshari",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 12,
+      "compositions": 11,
+      "unverifiedPolyols": [],
+      "gk": 48.48915,
+      "readinessClass": "B",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": true,
+        "availableChoSupported": true,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": true,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": false,
+        "registryCompatibleWithoutEngineChange": true
+      },
+      "reason": "Locked recipe/source evidence and existing bounded methods; owner approval pending"
+    },
+    {
+      "id": "yangzhou-paistettu-riisi",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 9,
+      "compositions": 8,
+      "unverifiedPolyols": [],
+      "gk": 25.082095,
+      "readinessClass": "B",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": true,
+        "availableChoSupported": true,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": true,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": false,
+        "registryCompatibleWithoutEngineChange": true
+      },
+      "reason": "Locked recipe/source evidence and existing bounded methods; owner approval pending"
+    },
+    {
+      "id": "lohikeitto-kuohukermalla",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 11,
+      "compositions": 10,
+      "unverifiedPolyols": [],
+      "gk": 10.457325,
+      "readinessClass": "A",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": true,
+        "availableChoSupported": true,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": true,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": false,
+        "registryCompatibleWithoutEngineChange": true
+      },
+      "reason": "Locked recipe/source evidence and existing bounded methods; owner approval pending"
+    },
+    {
+      "id": "ropa-vieja",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 6,
+      "ingredientCount": 13,
+      "compositions": 12,
+      "unverifiedPolyols": [
+        "U170917-r5"
+      ],
+      "gk": 3.345728333333333,
+      "readinessClass": "D",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": false,
+        "availableChoSupported": false,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": false,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": true,
+        "registryCompatibleWithoutEngineChange": false
+      },
+      "reason": "Complete net/total CHO withheld: unquantified polyols in U170917-r5"
+    },
+    {
+      "id": "siskonmakkarakeitto-juurekset",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 10,
+      "compositions": 9,
+      "unverifiedPolyols": [
+        "U170917-r5"
+      ],
+      "gk": 3.8320925,
+      "readinessClass": "D",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": false,
+        "availableChoSupported": false,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": false,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": true,
+        "registryCompatibleWithoutEngineChange": false
+      },
+      "reason": "Complete net/total CHO withheld: unquantified polyols in U170917-r5"
+    },
+    {
+      "id": "kana-parmesaanipannu-parsakaali",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 9,
+      "compositions": 8,
+      "unverifiedPolyols": [
+        "afcd-F006618-checked",
+        "chicken-label-proxy"
+      ],
+      "gk": 1.076545,
+      "readinessClass": "D",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": false,
+        "availableChoSupported": false,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": false,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": true,
+        "registryCompatibleWithoutEngineChange": false
+      },
+      "reason": "Complete net/total CHO withheld: unquantified polyols in afcd-F006618-checked, chicken-label-proxy"
+    },
+    {
+      "id": "kermainen-kanasienipannu",
+      "currentSourceMatches": true,
+      "alreadyNumeric": false,
+      "servings": 4,
+      "ingredientCount": 10,
+      "compositions": 9,
+      "unverifiedPolyols": [
+        "afcd-F006618-checked",
+        "afcd-F010466-checked",
+        "chicken-label-proxy",
+        "maille-label-proxy"
+      ],
+      "gk": 1.14652,
+      "readinessClass": "D",
+      "checks": {
+        "currentProductionSourceIdentified": true,
+        "weighedInputsLocked": true,
+        "fourMacrosComputable": false,
+        "availableChoSupported": false,
+        "boundedGiScopeIdentified": true,
+        "preparationAnalogyExplicit": true,
+        "polyolsSufficient": false,
+        "contentChangesRequired": true,
+        "newPrimaryEvidenceRequired": true,
+        "registryCompatibleWithoutEngineChange": false
+      },
+      "reason": "Complete net/total CHO withheld: unquantified polyols in afcd-F006618-checked, afcd-F010466-checked, chicken-label-proxy, maille-label-proxy"
+    }
+  ]
+}

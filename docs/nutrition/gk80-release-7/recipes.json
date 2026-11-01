@@ -1,0 +1,3250 @@
+{
+  "recipes": [
+    {
+      "recipeId": "tortilla-de-patatas",
+      "title": "Espanjalainen peruna-sipulimunakas",
+      "sourcePath": "reseptit/paaruoat/tortilla-de-patatas.md",
+      "sourceSha256": "4d41c79005e495157ee83baf71ee52909f05be96fe46056a713c8fd392093d40",
+      "servings": 4,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kuorittua raakaa perunaa",
+              "state": "PERUNA, VANHA, KUORITTU",
+              "massG": 600,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 15.5,
+                "protein": 1.88,
+                "fat": 0.114,
+                "fibre": 1.4
+              },
+              "composition": {
+                "sourceId": "F205-r5",
+                "evidenceHash": "81156f7be8dbae62d625361b3b2f7df08326b7c511fd59161659ad8382643e43"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "POTATO",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit POTATO food ID F205 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "potato-boiled66-r5",
+                "evidenceHash": "f25b18579925dbf83988b8c91ef3a90e8bc3336c40d2e3eafaba40b51796bd73",
+                "rationale": "Explicit POTATO food ID F205 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. "
+              }
+            },
+            {
+              "index": 1,
+              "name": "keltasipulia",
+              "state": "SIPULI, KELTASIPULI",
+              "massG": 55,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2
+              },
+              "composition": {
+                "sourceId": "F335-r5",
+                "evidenceHash": "73268aed7eb5758b5c2edb1e4d47021bb312b21ce33c6827acd2f3975503df38"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F335 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F335 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 2,
+              "name": "kuoretonta kananmunaa",
+              "state": "KANANMUNA, KUORETON",
+              "massG": 330,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F858-r5",
+                "evidenceHash": "90b4e05142daf0adb44578ba0fd49f6eb550eafb1181bb458e12e73b63e559b1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit EGG food ID F858 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+                "rationale": "Explicit EGG food ID F858 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 3,
+              "name": "oliiviöljyä",
+              "state": "OLIIVIÖLJY",
+              "massG": 67.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 0.0,
+                "fat": 100.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F536-r5",
+                "evidenceHash": "827e09161c456d31a8ea67ef4afdd7bfa5fa1116124fb694059032fc2cd322a0"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 4,
+              "name": "jauhettua mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-r5",
+                "evidenceHash": "708aef03660bc69c4b47b9a65cf3403a357f8d1d2d25085465766afa1c5c0977"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+                "rationale": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 5,
+              "name": "vettä perunoiden esikypsennykseen",
+              "state": "VESI, VESIJOHTOVESI",
+              "massG": 1000,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 0.0,
+                "fat": 0.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F922-r5",
+                "evidenceHash": "5bdf047f102715714238e5691b2d56fc3d290d314d7daed5501dc6d0075c0955"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 6,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has zero of the four macros"
+            }
+          ]
+        }
+      ],
+      "batch": "A",
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "approved": false,
+      "published": false,
+      "publicationFixes": [
+        "Cooking water may be drained; retainedFraction1 is nutrient-input proxy without a leaching discount, not a claim that all cooking water is consumed."
+      ],
+      "blockers": [],
+      "originalPreparation": "\n\n1. Kuumenna 3 ruokalusikallista öljyä paistinpannussa. Lisää perunat ja sipuli, peitä ja kypsennä miedolla lämmöllä noin 20 minuuttia välillä käännellen.\n2. Vatkaa kananmunat kulhossa suolan ja pippurin kanssa. Valuta pehmeät perunat ja sipuli ylimääräisestä öljystä ja sekoita munien joukkoon.\n3. Kuumenna loput öljystä pannulla. Kaada seos pannuun ja kypsennä miedolla lämmöllä, kunnes reunat hyytyvät.\n4. Laita lautanen pannun päälle ja käännä tortilla lautaselle. Liu'uta se takaisin pannuun ja kypsennä toinen puoli 3–5 minuuttia.\n5. Anna tortillan levätä muutama minuutti ennen leikkaamista.\n\n## Muistiinpanot\n\n- Jos haluat täysin kypsän keskustan, käytä matalaa lämpöä ja pidennä kypsennysaikaa.\n",
+      "proposedTitle": "Tortilla de patatas – esikeitetyn perunan versio",
+      "proposedPreparation": [
+        "Esikeitetyn perunan versio: keitä 600 g punnittua kuorittua raakaa perunaa 1000 g:ssa vettä kypsäksi ja valuta. Raakaperunan makroista ei vähennetä mittaamatonta liukenemishävikkiä.",
+        "Kuullota 55 g sipulia 67,5 g:ssa oliiviöljyä. Lisää kypsä peruna, 330 g kuoretonta kananmunaa ja 0,5 g jauhettua mustapippuria.",
+        "Kypsennä munaseos kokonaan juuri hyytyneeksi, ei pitkää öljyssä kypsennystä perunalle. Jaa koko ruoka ja kaikki öljy neljään annokseen. Tämä on esikeitetyn perunan variantti."
+      ],
+      "proposedVersionHash": "7c71d7a265d4457d4a0da61952efb66bf9e4f336d99481cb420de5785f67d35b",
+      "displayProposal": {
+        "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+        "en": "Modeled GL about X/serving; low confidence",
+        "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+        "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+      },
+      "nutritionPerServing": {
+        "carbsNetG": 24.20575,
+        "carbsTotalG": 26.502375,
+        "proteinG": 13.408125,
+        "fatG": 24.686875,
+        "fibreG": 2.296625,
+        "availableCarbohydrateProxyUsed": false,
+        "proxyCompositionIds": [],
+        "totalDefinition": "Direct source total: Fineli available+fibre+reported polyols; AFCD with-polyols+fibre; USDA carbohydrate-by-difference; EU label carbohydrate including polyols+fibre",
+        "proxyNote": "Available and total CHO retain distinct source definitions; no fibre/polyol subtraction twice."
+      },
+      "releaseInputVersion": 7
+    },
+    {
+      "recipeId": "tabbouleh",
+      "title": "Libanonilainen tabbouleh-persiljasalaatti",
+      "sourcePath": "reseptit/alkuruoat/tabbouleh.md",
+      "sourceSha256": "fba31d3887d9ff4f7eca535eac9b4a827ee739ba2d9f928aaec8fdaa8c3c6520",
+      "servings": 4,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "hienoa bulguria",
+              "state": "Bulgur, uncooked",
+              "massG": 50,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 66.1,
+                "protein": 10.3,
+                "fat": 2,
+                "fibre": 7.8
+              },
+              "composition": {
+                "sourceId": "A001929-r5",
+                "evidenceHash": "55b96ad7198a097b62eda2a8332ed56f27f777b80fd8371bfbe7e7dd011aedae"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "BULGUR",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit BULGUR food ID A001929 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "bulgur64_5-r5",
+                "evidenceHash": "dcbe008d7fd818b1b19bb003c15bf774517099cf575c46442bb8e873d3d0cf5c",
+                "rationale": "Explicit BULGUR food ID A001929 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. "
+              }
+            },
+            {
+              "index": 1,
+              "name": "lehtipersiljaa",
+              "state": "Parsley, continental, fresh, raw",
+              "massG": 60,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.1,
+                "protein": 3.9,
+                "fat": 0.7,
+                "fibre": 5
+              },
+              "composition": {
+                "sourceId": "A006321-r5",
+                "evidenceHash": "d3349f0fe5d51b76e633796785ced159dd2a9e3946a56769688803eb4e534575"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID A006321 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID A006321 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 2,
+              "name": "tomaattia",
+              "state": "TOMAATTI",
+              "massG": 250,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 3.45,
+                "protein": 0.55,
+                "fat": 0.3,
+                "fibre": 0.4
+              },
+              "composition": {
+                "sourceId": "F352-r5",
+                "evidenceHash": "287e9d8d47d3d41b70ae01787e9511c7ad858093fe163c13d899e9806fc1ac86"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F352 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F352 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 3,
+              "name": "kevätsipulia",
+              "state": "Onion, spring, fresh, raw",
+              "massG": 30,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.6,
+                "protein": 1.7,
+                "fat": 0.2,
+                "fibre": 1.9
+              },
+              "composition": {
+                "sourceId": "A006250-r5",
+                "evidenceHash": "f8e21fdbd772ed90abfac3e7e05c0b8e6f65631d2addcaca62f9dee01f821b80"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID A006250 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID A006250 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 4,
+              "name": "tuoretta minttua",
+              "state": "Mint, fresh, raw",
+              "massG": 15,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.4,
+                "protein": 3.1,
+                "fat": 1.1,
+                "fibre": 7.2
+              },
+              "composition": {
+                "sourceId": "A005700-r5",
+                "evidenceHash": "88b4e912501ba99b8e526ca0ef5535bc79d682dfe626de2bb00b22a1aae275df"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID A005700 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID A005700 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 5,
+              "name": "sitruunamehua",
+              "state": "Juice, lemon",
+              "massG": 45,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.8,
+                "protein": 0.6,
+                "fat": 0.1,
+                "fibre": 2
+              },
+              "composition": {
+                "sourceId": "A004726-r5",
+                "evidenceHash": "1cca713dfc848d018b10d862dcd599ce17908cd2046b11ac9c0fd6cb915d41c1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit CITRUS_JUICE food ID A004726 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+                "rationale": "Explicit CITRUS_JUICE food ID A004726 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 6,
+              "name": "oliiviöljyä",
+              "state": "OLIIVIÖLJY",
+              "massG": 54.0,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 0.0,
+                "fat": 100.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F536-r5",
+                "evidenceHash": "827e09161c456d31a8ea67ef4afdd7bfa5fa1116124fb694059032fc2cd322a0"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 7,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has zero of the four macros"
+            },
+            {
+              "index": 8,
+              "name": "mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-r5",
+                "evidenceHash": "708aef03660bc69c4b47b9a65cf3403a357f8d1d2d25085465766afa1c5c0977"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+                "rationale": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 9,
+              "name": "vettä kypsennykseen",
+              "state": "VESI, VESIJOHTOVESI",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 0.0,
+                "fat": 0.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F922-r5",
+                "evidenceHash": "5bdf047f102715714238e5691b2d56fc3d290d314d7daed5501dc6d0075c0955"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            }
+          ]
+        }
+      ],
+      "batch": "A",
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "approved": false,
+      "published": false,
+      "publicationFixes": [
+        "Warm15min-cooked bulgur variant; original cold-soaked fine bulgur has no transferred estimate."
+      ],
+      "blockers": [],
+      "originalPreparation": "\n\n1. Huuhtele bulgur ja liota sitä lämpimässä vedessä 15 minuuttia. Valuta ja purista kuivaksi.\n2. Hienonna persilja ja minttu veitsellä. Kuutioi tomaatit ja silppua kevätsipuli.\n3. Sekoita kaikki ainekset kulhossa. Lisää sitruunamehu, oliiviöljy, suola ja pippuri.\n4. Anna salaatin maustua jääkaapissa 10–15 minuuttia ja tarjoa.\n\n## Muistiinpanot\n\n- Kuivaa yrtit hyvin ennen hienontamista, jotta salaatista ei tule vetistä.\n",
+      "proposedTitle": "Tabbouleh-tyylinen lämmin salaatti keitetystä bulgurista",
+      "proposedPreparation": [
+        "Keitetyn bulgurin lämmin versio: keitä 50 g kuivaa bulguria 100 g:ssa vettä 15 min, kunnes vesi on imeytynyt. Ei kylmässä liotetun hienon bulgurin laskelma.",
+        "Hienonna kaikki punnittu persilja, tomaatti, kevätsipuli ja minttu. Sekoita mukaan kaikki sitruunamehu, öljy ja jauhettu mustapippuri.",
+        "Lisää juuri kypsennetty lämmin bulgur ja tarjoa heti neljänä annoksena. Kaikki kasvismehut ja kastike syödään; ei jäähdytyshyvitystä."
+      ],
+      "proposedVersionHash": "f59f63d187723d7a3fdcc55761dc4cb4978d63afb4767f1af29f7dd3120f1ff2",
+      "displayProposal": {
+        "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+        "en": "Modeled GL about X/serving; low confidence",
+        "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+        "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+      },
+      "nutritionPerServing": {
+        "carbsNetG": 11.3445,
+        "carbsTotalG": 13.988625,
+        "proteinG": 2.5405,
+        "fatG": 14.114125,
+        "fibreG": 2.644125,
+        "availableCarbohydrateProxyUsed": false,
+        "proxyCompositionIds": [],
+        "totalDefinition": "Direct source total: Fineli available+fibre+reported polyols; AFCD with-polyols+fibre; USDA carbohydrate-by-difference; EU label carbohydrate including polyols+fibre",
+        "proxyNote": "Available and total CHO retain distinct source definitions; no fibre/polyol subtraction twice."
+      },
+      "releaseInputVersion": 7
+    },
+    {
+      "recipeId": "munakoiso-jauhelihavuoka-vhh",
+      "title": "Munakoiso-jauhelihavuoka",
+      "sourcePath": "reseptit/paaruoat/munakoiso-jauhelihavuoka-vhh.md",
+      "sourceSha256": "210a6df211caa4d038f894d11014be4852e87287d2616554e2d3c39a7d3db601",
+      "servings": 4,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "munakoisoa",
+              "state": "MUNAKOISO",
+              "massG": 600,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 3.1,
+                "protein": 0.5,
+                "fat": 0.2,
+                "fibre": 2.5
+              },
+              "composition": {
+                "sourceId": "F362-r5",
+                "evidenceHash": "c488dd1c6b8e6b1e0d16a692cfc2c1164f73c7c6df4a32d3a0e3430459a9f76f"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F362 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F362 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 1,
+              "name": "17% naudan jauhelihaa",
+              "state": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+              "massG": 500,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 19.065,
+                "fat": 16.949,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F11562-r5",
+                "evidenceHash": "e8b52428cf2673f4119d9acbf8ab535b21e2d887c3e9bb9f3541b938924465f1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 2,
+              "name": "tomaattimurskaa",
+              "state": "TOMAATTIMURSKA",
+              "massG": 400,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 3.45,
+                "protein": 0.55,
+                "fat": 0.2,
+                "fibre": 0.4
+              },
+              "composition": {
+                "sourceId": "F398-r5",
+                "evidenceHash": "0c91a82a6c7b3c0e9427eedf48084258c3cdbf952475ed5608b84099ee163436"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F398 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F398 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 3,
+              "name": "puolikovaa juustoraastetta",
+              "state": "JUUSTO, PUOLIKOVA JUUSTO, RASVAA 25-35 %, LAPPI/SMÅLAND/BILLINGE/RUSTHOLLI",
+              "massG": 150,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 27.88,
+                "fat": 28.4,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F655-r5",
+                "evidenceHash": "de35f89032e4f95367ecb2ee6f041c8aff4c8c297ea31505b259d2207c20474c"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 4,
+              "name": "keltasipulia",
+              "state": "SIPULI, KELTASIPULI",
+              "massG": 55,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2
+              },
+              "composition": {
+                "sourceId": "F335-r5",
+                "evidenceHash": "73268aed7eb5758b5c2edb1e4d47021bb312b21ce33c6827acd2f3975503df38"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F335 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F335 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 5,
+              "name": "jauhettua mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 1,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-r5",
+                "evidenceHash": "708aef03660bc69c4b47b9a65cf3403a357f8d1d2d25085465766afa1c5c0977"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+                "rationale": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 6,
+              "name": "kuivattua oreganoa",
+              "state": "Oregano, dried",
+              "massG": 1,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 26.4,
+                "protein": 9,
+                "fat": 4.3,
+                "fibre": 42.5
+              },
+              "composition": {
+                "sourceId": "A006281-r5",
+                "evidenceHash": "ed5280712e3fb48c330312a5b37fd18629f9c7481a541b4a20cd01d4152356e1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE food ID A006281 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+                "rationale": "Explicit GROUND_SPICE food ID A006281 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 7,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has zero of the four macros"
+            }
+          ]
+        }
+      ],
+      "batch": "A",
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "approved": false,
+      "published": false,
+      "publicationFixes": [],
+      "blockers": [],
+      "originalPreparation": "\n\n1. Viipaloi munakoisot, ripottele pinnalle suolaa ja anna itkettyä 15 minuuttia. Kuivaa viipaleet.\n2. Ruskista jauheliha ja sipuli. Lisää tomaattimurska ja mausteet, hauduta 10 minuuttia.\n3. Lado vuokaan munakoisoa ja kastiketta kerroksittain. Ripottele juusto päälle.\n4. Paista 200 °C:ssa noin 30 minuuttia.\n\n## Muistiinpanot\n\n- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.\n",
+      "proposedTitle": "Munakoiso-jauhelihavuoka – punnittu versio",
+      "proposedPreparation": [
+        "Viipaloi 600 g munakoisoa. Kypsennä 500 g jauhelihaa ja 55 g sipulia omassa rasvassaan. Lisää 400 g tomaattimurskaa, 1 g oreganoa ja 1 g mustapippuria.",
+        "Lado munakoiso ja kaikki kastike vuokaan, lisää 150 g juustoraastetta. Älä lisää listaamatonta paistoöljyä.",
+        "Kypsennä 200 °C:ssa, kunnes liha ja munakoiso ovat kypsiä. Jaa koko vuoka ja kaikki neste neljään annokseen."
+      ],
+      "proposedVersionHash": "49229cd71ee6d3f876b55058002d47ae959489a9a9bdc8214f33d8a82c798816",
+      "displayProposal": {
+        "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+        "en": "Modeled GL about X/serving; low confidence",
+        "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+        "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+      },
+      "nutritionPerServing": {
+        "carbsNetG": 8.9225,
+        "carbsTotalG": 13.407,
+        "proteinG": 35.806625,
+        "fatG": 32.369,
+        "fibreG": 4.4845,
+        "availableCarbohydrateProxyUsed": false,
+        "proxyCompositionIds": [],
+        "totalDefinition": "Direct source total: Fineli available+fibre+reported polyols; AFCD with-polyols+fibre; USDA carbohydrate-by-difference; EU label carbohydrate including polyols+fibre",
+        "proxyNote": "Available and total CHO retain distinct source definitions; no fibre/polyol subtraction twice."
+      },
+      "releaseInputVersion": 7
+    },
+    {
+      "recipeId": "parsakaali-sinihomejuustofrittata",
+      "title": "Parsakaali-sinihomejuustofrittata",
+      "sourcePath": "reseptit/paaruoat/parsakaali-sinihomejuustofrittata.md",
+      "sourceSha256": "8c0fc0611d60a74b3a21b40a861918b521f35362d845d1a49ccec762ed6a5978",
+      "servings": 4,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "voita",
+              "state": "VOI",
+              "massG": 14,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.8,
+                "protein": 1.19,
+                "fat": 81.3,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F500-r5",
+                "evidenceHash": "6f6d6631cd7e5d9610852b15d8c971aaf6a9eddd70640dc21e63a791dbb4b60a"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY food ID F500 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                "rationale": "Explicit DAIRY food ID F500 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 1,
+              "name": "keltasipulia",
+              "state": "SIPULI, KELTASIPULI",
+              "massG": 27.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2
+              },
+              "composition": {
+                "sourceId": "F335-r5",
+                "evidenceHash": "73268aed7eb5758b5c2edb1e4d47021bb312b21ce33c6827acd2f3975503df38"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F335 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F335 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 2,
+              "name": "parsakaalia",
+              "state": "PARSAKAALI, BROKKOLI",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.64,
+                "protein": 3.9,
+                "fat": 0.53,
+                "fibre": 2.5
+              },
+              "composition": {
+                "sourceId": "F324-r5",
+                "evidenceHash": "3861c7a864da44ab73e1152b45c872dd4cd4d602f55b13c5dfecf4a5567a11b6"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F324 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F324 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 3,
+              "name": "kuoretonta kananmunaa",
+              "state": "KANANMUNA, KUORETON",
+              "massG": 330,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F858-r5",
+                "evidenceHash": "90b4e05142daf0adb44578ba0fd49f6eb550eafb1181bb458e12e73b63e559b1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit EGG food ID F858 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+                "rationale": "Explicit EGG food ID F858 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 4,
+              "name": "38% kuohukermaa",
+              "state": "KERMA, KUOHUKERMA, RASVAA 38 %",
+              "massG": 150,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.9,
+                "protein": 1.88,
+                "fat": 38.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F631-r5",
+                "evidenceHash": "6050442a2317de90f66a6228fc785e38b5ba382851fc73a3098794e642f5f970"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY food ID F631 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                "rationale": "Explicit DAIRY food ID F631 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 5,
+              "name": "sinihomejuustoa, AFCD regular blue vein -koostumus",
+              "state": "Cheese, blue vein",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 19.1,
+                "fat": 32.9,
+                "fibre": 0
+              },
+              "composition": {
+                "sourceId": "A002405-r5",
+                "evidenceHash": "1d02d49c0c6eefe76d41b50136dd36d3ec67aa991a0f83fcc7ff3b50cefed2bc"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY food ID A002405 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                "rationale": "Explicit DAIRY food ID A002405 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 6,
+              "name": "jauhettua mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-r5",
+                "evidenceHash": "708aef03660bc69c4b47b9a65cf3403a357f8d1d2d25085465766afa1c5c0977"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+                "rationale": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 7,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has zero of the four macros"
+            }
+          ]
+        }
+      ],
+      "batch": "A",
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "approved": false,
+      "published": false,
+      "publicationFixes": [],
+      "blockers": [],
+      "originalPreparation": "\n\n1. Kuumenna uuni 200 asteeseen. Voitele noin 20 × 25 cm:n uunivuoka tai käytä uuninkestävää paistinpannua.\n2. Sulata voi pannulla. Kuullota sipulia hetki ja lisää parsakaalin nuput. Paista sekoitellen noin 3 minuuttia, kunnes parsakaali saa hieman väriä.\n3. Siirrä kasvikset vuokaan. Vatkaa munien rakenne kevyesti rikki ja sekoita joukkoon kuohukerma, murennettu juusto ja mustapippuri. Lisää suolaa harkiten, sillä juusto on suolaista.\n4. Kaada munaseos parsakaalien päälle. Paista noin 20–25 minuuttia, kunnes keskusta on hyytynyt ja pinta kullanruskea.\n5. Anna frittatan asettua muutama minuutti ennen leikkaamista. Tarjoa sellaisenaan tai vihersalaatin kanssa.\n\n## Muistiinpanot\n\n\n- Sinihomejuuston suolaisuus vaihtelee. Paista pieni koepala kypsäksi, jos haluat tarkistaa munaseoksen maun.\n- VHH-luokitus perustuu reseptin ainesosiin. Tarkista käyttämiesi tuotteiden pakkausmerkinnät.\n",
+      "proposedTitle": "Parsakaali-sinihomejuustofrittata – punnittu versio",
+      "proposedPreparation": [
+        "Kuullota 27,5 g sipulia 14 g:ssa voita ja lisää 200 g parsakaalia. Kypsennä parsakaali pehmeäksi.",
+        "Sekoita 330 g munaa, 150 g kermaa, 100 g sinihomejuustoa ja 0,5 g jauhettua mustapippuria. Kaada vuokaan kasvisten kanssa.",
+        "Paista 200 °C:ssa, kunnes muna on hyytynyt. Jaa kaikki ruoka ja rasva neljään annokseen."
+      ],
+      "proposedVersionHash": "89680942b56e99d2b5a066502f744f3ba946570bd1dd6fbcf18ad54e5962ca3d",
+      "displayProposal": {
+        "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+        "en": "Modeled GL about X/serving; low confidence",
+        "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+        "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+      },
+      "nutritionPerServing": {
+        "carbsNetG": 2.63625,
+        "carbsTotalG": 4.000375,
+        "proteinG": 17.9738375,
+        "fatG": 33.2195,
+        "fibreG": 1.364125,
+        "availableCarbohydrateProxyUsed": false,
+        "proxyCompositionIds": [],
+        "totalDefinition": "Direct source total: Fineli available+fibre+reported polyols; AFCD with-polyols+fibre; USDA carbohydrate-by-difference; EU label carbohydrate including polyols+fibre",
+        "proxyNote": "Available and total CHO retain distinct source definitions; no fibre/polyol subtraction twice."
+      },
+      "releaseInputVersion": 7
+    },
+    {
+      "recipeId": "italian-pata",
+      "title": "Italialainen jauheliha-kesäkurpitsapata",
+      "sourcePath": "reseptit/paaruoat/italian-pata.md",
+      "sourceSha256": "bfa148f6e58cd10312afc88cc83f09432e12facde9fa7dc4fdbb7e61f18599fd",
+      "servings": 4,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "17% naudan jauhelihaa",
+              "state": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+              "massG": 500,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 19.065,
+                "fat": 16.949,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F11562-r5",
+                "evidenceHash": "e8b52428cf2673f4119d9acbf8ab535b21e2d887c3e9bb9f3541b938924465f1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 1,
+              "name": "tomaattimurskaa",
+              "state": "TOMAATTIMURSKA",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 3.45,
+                "protein": 0.55,
+                "fat": 0.2,
+                "fibre": 0.4
+              },
+              "composition": {
+                "sourceId": "F398-r5",
+                "evidenceHash": "0c91a82a6c7b3c0e9427eedf48084258c3cdbf952475ed5608b84099ee163436"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F398 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F398 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 2,
+              "name": "kuivattua oreganoa",
+              "state": "Oregano, dried",
+              "massG": 2,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 26.4,
+                "protein": 9,
+                "fat": 4.3,
+                "fibre": 42.5
+              },
+              "composition": {
+                "sourceId": "A006281-r5",
+                "evidenceHash": "ed5280712e3fb48c330312a5b37fd18629f9c7481a541b4a20cd01d4152356e1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE food ID A006281 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+                "rationale": "Explicit GROUND_SPICE food ID A006281 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 3,
+              "name": "jauhettua mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 1,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-r5",
+                "evidenceHash": "708aef03660bc69c4b47b9a65cf3403a357f8d1d2d25085465766afa1c5c0977"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+                "rationale": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 4,
+              "name": "tuoretta valkosipulia",
+              "state": "Garlic, peeled, fresh, raw",
+              "massG": 3.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 10.2,
+                "protein": 6.1,
+                "fat": 2.8,
+                "fibre": 16.9
+              },
+              "composition": {
+                "sourceId": "A004193-r5",
+                "evidenceHash": "26c95a1feb4667f055ea25adbf15b982c8a6cc4331fc491cdd476973a5df7da1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID A004193 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID A004193 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 5,
+              "name": "kesäkurpitsaa",
+              "state": "KESÄKURPITSA, ZUCCHINI",
+              "massG": 400,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.5,
+                "protein": 0.65,
+                "fat": 0.4,
+                "fibre": 2.0
+              },
+              "composition": {
+                "sourceId": "F389-r5",
+                "evidenceHash": "5890cfec826c44179669c0d07b196723a25410540ca673a58faa34610560ea86"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F389 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F389 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 6,
+              "name": "punaista paprikaa",
+              "state": "PAPRIKA, PUNAINEN",
+              "massG": 120,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.5,
+                "protein": 0.94,
+                "fat": 0.3,
+                "fibre": 1.9
+              },
+              "composition": {
+                "sourceId": "F386-r5",
+                "evidenceHash": "efb30cbb0f11ef63325d70d6d2735316434b01d1efaf2d38404d773204cbd37d"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F386 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F386 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 7,
+              "name": "20% mozzarellaa",
+              "state": "JUUSTO, MOZZARELLA, RASVAA 20 %, TUOREJUUSTO",
+              "massG": 150,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 18.6,
+                "fat": 20.7,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F29239-r5",
+                "evidenceHash": "c9cc874a9e35ee02ff39764748b9c05ab851e5d3770291f8a423fd00e2804158"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 8,
+              "name": "oliiviöljyä",
+              "state": "OLIIVIÖLJY",
+              "massG": 12,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 0.0,
+                "fat": 100.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F536-r5",
+                "evidenceHash": "827e09161c456d31a8ea67ef4afdd7bfa5fa1116124fb694059032fc2cd322a0"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 9,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has zero of the four macros"
+            }
+          ]
+        }
+      ],
+      "batch": "A",
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "approved": false,
+      "published": false,
+      "publicationFixes": [],
+      "blockers": [],
+      "originalPreparation": "\n\n1. Kuumenna uuni 225 asteeseen.\n2. Ruskista jauheliha pannulla. Lisää murskattu valkosipuli, oregano, suola ja mustapippuri.\n3. Lisää tomaattimurska ja anna kastikkeen porista hetki kokoon.\n4. Huuhtele ja raasta kesäkurpitsa karkealla terällä. Levitä raaste isoon uunivuokaan.\n5. Pilko suippopaprika pieniksi kuutioiksi ja lisää vuokaan.\n6. Maista kastiketta ja lisää tarvittaessa suolaa. Kaada jauhelihatomaattikastike vuokaan ja sekoita hyvin.\n7. Lisää suurin osa juustoraasteesta ja sekoita. Jätä hieman juustoa pinnalle ripoteltavaksi.\n8. Paista 225 asteessa noin 20 minuuttia.\n9. Anna padan vetäytyä vähintään 15 minuuttia ennen tarjoamista. Tarjoa salaatin kanssa ja jaa yhteensä 12 g oliiviöljyä annosten päälle.\n\n## Muistiinpanot\n\n- Arvioitu kokonaisaika on noin 60 minuuttia: valmistelu, ruskistus ja vuoan kokoaminen noin 25 minuuttia, paisto 20 minuuttia ja vetäytyminen vähintään 15 minuuttia. Uuni lämpenee valmistelun aikana. Aika on työvaiheisiin perustuva arvio, ei kellotettu koekeittiötulos; salaatin valmistus ei sisälly siihen.\n- Ravintoarvot ovat suuntaa-antavia arvioita yhtä annosta kohti, kun reseptistä tulee neljä annosta.\n",
+      "proposedTitle": "Italialainen jauheliha-kesäkurpitsapata – punnittu versio",
+      "proposedPreparation": [
+        "Ruskista 500 g 17% naudan jauhelihaa 12 g:ssa oliiviöljyä. Lisää 3,5 g valkosipulia, 120 g paprikaa ja 400 g kesäkurpitsaa.",
+        "Lisää 200 g tomaattimurskaa, 2 g oreganoa ja 1 g mustapippuria. Kypsennä liha ja kasvikset kauttaaltaan.",
+        "Sekoita 150 g 20% mozzarellaa kuumaan ruokaan. Jaa koko pata nesteineen neljään annokseen. Ei tavallista pastaa tässä versiossa."
+      ],
+      "proposedVersionHash": "f158c1e6cff95b79f35e8790c287bf636cc12938e80cd1d1c59b928405b57acd",
+      "displayProposal": {
+        "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+        "en": "Modeled GL about X/serving; low confidence",
+        "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+        "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+      },
+      "nutritionPerServing": {
+        "carbsNetG": 5.89275,
+        "carbsTotalG": 9.086375,
+        "proteinG": 32.137625,
+        "fatG": 32.593,
+        "fibreG": 3.193625,
+        "availableCarbohydrateProxyUsed": false,
+        "proxyCompositionIds": [],
+        "totalDefinition": "Direct source total: Fineli available+fibre+reported polyols; AFCD with-polyols+fibre; USDA carbohydrate-by-difference; EU label carbohydrate including polyols+fibre",
+        "proxyNote": "Available and total CHO retain distinct source definitions; no fibre/polyol subtraction twice."
+      },
+      "releaseInputVersion": 7
+    },
+    {
+      "recipeId": "raejuusto-uunimunakas",
+      "title": "Pehmeä raejuusto-uunimunakas",
+      "sourcePath": "reseptit/paaruoat/raejuusto-uunimunakas.md",
+      "sourceSha256": "adc2da28ad27fe0f94ef8e8889fc81b5f8b98df7467d415b642ff7debba6c2ce",
+      "servings": 4,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kuoretonta kananmunaa",
+              "state": "KANANMUNA, KUORETON",
+              "massG": 550,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F858-r5",
+                "evidenceHash": "90b4e05142daf0adb44578ba0fd49f6eb550eafb1181bb458e12e73b63e559b1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit EGG food ID F858 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+                "rationale": "Explicit EGG food ID F858 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 1,
+              "name": "15% ruokakermaa",
+              "state": "RUOANVALMISTUSKERMA, RASVAA 15 %",
+              "massG": 250,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.7,
+                "protein": 2.7,
+                "fat": 15.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F29065-r5",
+                "evidenceHash": "d598c3941334ad60fd32ea6096fc3cdbe1e01a5b01f927e327b9f6a38e9274bd"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY food ID F29065 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                "rationale": "Explicit DAIRY food ID F29065 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 2,
+              "name": "2% raejuustoa",
+              "state": "RAEJUUSTO, RASVAA 2-5 %",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.5,
+                "protein": 15.81,
+                "fat": 2.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F649-r5",
+                "evidenceHash": "820751b7dc037a7e2aebbd905b8e6b61c58853a82c720cdfb44daf8279892bd1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY food ID F649 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                "rationale": "Explicit DAIRY food ID F649 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 3,
+              "name": "jauhettua mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-r5",
+                "evidenceHash": "708aef03660bc69c4b47b9a65cf3403a357f8d1d2d25085465766afa1c5c0977"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+                "rationale": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 4,
+              "name": "voita vuokaan, kokonaan mukana",
+              "state": "VOI",
+              "massG": 5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.8,
+                "protein": 1.19,
+                "fat": 81.3,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F500-r5",
+                "evidenceHash": "6f6d6631cd7e5d9610852b15d8c971aaf6a9eddd70640dc21e63a791dbb4b60a"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY food ID F500 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                "rationale": "Explicit DAIRY food ID F500 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 5,
+              "name": "tuoretta ruohosipulia",
+              "state": "RUOHOSIPULI",
+              "massG": 5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.73,
+                "protein": 2.2,
+                "fat": 0.92,
+                "fibre": 2.1
+              },
+              "composition": {
+                "sourceId": "F392-r5",
+                "evidenceHash": "c4e7cfac274a8d8d60ef86182cf4c7f80cb33643b148c13b8ec58055e2215bae"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F392 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F392 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 6,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has zero of the four macros"
+            }
+          ]
+        }
+      ],
+      "batch": "A",
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "approved": false,
+      "published": false,
+      "publicationFixes": [],
+      "blockers": [],
+      "originalPreparation": "\n\n1. Kuumenna kiertoilmauuni 125 asteeseen tai tavallinen uuni 150 asteeseen. Voitele noin 22 cm:n uunivuoka.\n2. Soseuta raejuusto tasaiseksi. Riko kananmunien rakenne kulhossa kevyesti vatkaamatta seosta vaahdoksi. Sekoita joukkoon ruokakerma, soseutettu raejuusto, suola ja ripaus pippuria.\n3. Kaada seos vuokaan. Aseta vuoka syvälle uunipannulle ja kaada pannulle kuumaa vettä vuoan ympärille.\n4. Kypsennä uunin alaosassa 45–55 minuuttia. Sekoita munakasta varovasti noin 15 ja 30 minuutin kohdalla. Ota vuoka uunista, kun seos on hyytynyt mutta vielä pehmeä.\n5. Silppua halutessasi pinnalle ruohosipulia ja tarjoa lämpimänä.\n\n## Muistiinpanot\n\n- Vesihaude auttaa munakasta hyytymään pehmeästi ja tasaisesti.\n",
+      "proposedTitle": "Pehmeä raejuusto-uunimunakas – punnittu versio",
+      "proposedPreparation": [
+        "Voitele vuoka 5 g:lla voita; koko määrä lasketaan mukaan. Sekoita 550 g kuoretonta munaa, 250 g 15% ruokakermaa ja 200 g 2% raejuustoa.",
+        "Lisää 0,5 g mustapippuria ja 5 g ruohosipulia. Kypsennä 200 °C:ssa, kunnes muna on kauttaaltaan hyytynyt.",
+        "Jaa koko vuoka neljään annokseen. Maun mukaan lisättävää voita, pippuria tai yrttiä ei jää määrältään avoimeksi."
+      ],
+      "proposedVersionHash": "36cdd134032025f01ef2d26d145a10fd61da07cb9b888a07d4475511d9e6def4",
+      "displayProposal": {
+        "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+        "en": "Modeled GL about X/serving; low confidence",
+        "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+        "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+      },
+      "nutritionPerServing": {
+        "carbsNetG": 3.417375,
+        "carbsTotalG": 3.47525,
+        "proteinG": 26.986625,
+        "fatG": 24.111875,
+        "fibreG": 0.057875,
+        "availableCarbohydrateProxyUsed": false,
+        "proxyCompositionIds": [],
+        "totalDefinition": "Direct source total: Fineli available+fibre+reported polyols; AFCD with-polyols+fibre; USDA carbohydrate-by-difference; EU label carbohydrate including polyols+fibre",
+        "proxyNote": "Available and total CHO retain distinct source definitions; no fibre/polyol subtraction twice."
+      },
+      "releaseInputVersion": 7
+    },
+    {
+      "recipeId": "uunilohi-smetanakuorrutteella",
+      "title": "Uunilohi smetana-yrttikuorrutteella",
+      "sourcePath": "reseptit/paaruoat/uunilohi-smetanakuorrutteella.md",
+      "sourceSha256": "7498c9ba8036b5917d2be5c8c1319e6734b862dd17fefcfbe3d6e9d2ac0c4b01",
+      "servings": 4,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "raakaa kasvatetun lohen fileetä",
+              "state": "LOHI, FILEE, KASVATETTU",
+              "massG": 700,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 20.0,
+                "fat": 16.37,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F34255-r5",
+                "evidenceHash": "ad1440659d2bb5a64d5bb25b7a2b7dc0834b8b1f7d14fb7dd6a7ef1c2f032b2a"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 1,
+              "name": "täysrasvaista smetanaa, AFCD:n 36,3 % rasvaa sisältävä koostumusvertailu",
+              "state": "Cream, sour, regular fat",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2,
+                "protein": 1.9,
+                "fat": 36.3,
+                "fibre": 0
+              },
+              "composition": {
+                "sourceId": "A003269-r5",
+                "evidenceHash": "285d82c9723c2e16123221a19ba4306fae32f01a5493102beecd958d36a068f0"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY food ID A003269 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                "rationale": "Explicit DAIRY food ID A003269 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 2,
+              "name": "purjoa",
+              "state": "PURJOSIPULI",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.4,
+                "protein": 1.81,
+                "fat": 0.2,
+                "fibre": 2.1
+              },
+              "composition": {
+                "sourceId": "F337-r5",
+                "evidenceHash": "ca4581c03c47a6bf47affd3d6a128080b012ce5773b2ceade0d0f66473d42174"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F337 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F337 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 3,
+              "name": "kuorittua sitruunan hedelmälihaa ja mehua",
+              "state": "SITRUUNA, KUORITTU",
+              "massG": 65,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.2,
+                "protein": 0.62,
+                "fat": 0.17,
+                "fibre": 2.4
+              },
+              "composition": {
+                "sourceId": "F11048-r5",
+                "evidenceHash": "cfdc22c546c7dc8fa80f28484fe36b5c697179d17f6dae6adc8a8874afd5fe73"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit CITRUS_FRUIT food ID F11048 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+                "rationale": "Explicit CITRUS_FRUIT food ID F11048 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 4,
+              "name": "tuoretta tilliä",
+              "state": "TILLI, TUORE",
+              "massG": 10,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.9,
+                "protein": 3.69,
+                "fat": 0.8,
+                "fibre": 2.8
+              },
+              "composition": {
+                "sourceId": "F369-r5",
+                "evidenceHash": "94520ab8ef5038c889d63379be79b91dc54433e52210111e59607337d152dc4d"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F369 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F369 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 5,
+              "name": "jauhettua mustapippuria valkopippurin sijasta",
+              "state": "Pepper, black, ground",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-r5",
+                "evidenceHash": "708aef03660bc69c4b47b9a65cf3403a357f8d1d2d25085465766afa1c5c0977"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+                "rationale": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 6,
+              "name": "voita",
+              "state": "VOI",
+              "massG": 5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.8,
+                "protein": 1.19,
+                "fat": 81.3,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F500-r5",
+                "evidenceHash": "6f6d6631cd7e5d9610852b15d8c971aaf6a9eddd70640dc21e63a791dbb4b60a"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY food ID F500 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                "rationale": "Explicit DAIRY food ID F500 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 7,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has zero of the four macros"
+            }
+          ]
+        }
+      ],
+      "batch": "A",
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "approved": false,
+      "published": false,
+      "publicationFixes": [],
+      "blockers": [],
+      "originalPreparation": "\n\n1. Kuumenna uuni 180 asteeseen ja voitele uunivuoka kevyesti.\n2. Tarkista lohifilee ruotojen varalta ja aseta se vuokaan nahkapuoli alaspäin. Mausta suolalla ja valkopippurilla.\n3. Raasta sitruunasta kuori ja purista mehu. Hienonna tilli ja viipaloi huuhdeltu purjo. Sekoita ne smetanan kanssa ja lusikoi seos lohen päälle.\n4. Paista uunin keskitasolla noin 25–30 minuuttia, kunnes kala on juuri kypsää ja helposti lohkeavaa.\n5. Anna vetäytyä muutama minuutti ja tarjoa lämpimänä.\n\n## Muistiinpanot\n\n- Kypsennysaika riippuu fileen paksuudesta. Ota lohi uunista heti, kun se on kypsä ja mehevä.\n- VHH-luokitus perustuu reseptin ainesosiin. Tarkista käyttämiesi tuotteiden pakkausmerkinnät.\n",
+      "proposedTitle": "Uunilohi smetanakuorrutteella – mustapippuriversio",
+      "proposedPreparation": [
+        "Mustapippuriversio: laita 700 g raakaa lohifileetä 5 g:lla voita voideltuun vuokaan. Lisää 100 g purjoa.",
+        "Sekoita 200 g täysrasvaista hapatettua kermaa, 65 g kuorittua sitruunan hedelmälihaa mehuineen, 10 g tilliä ja 0,5 g mustapippuria valkopippurin sijasta. Levitä lohelle.",
+        "Kypsennä 200 °C:ssa, kunnes kala on kypsää. Jaa kaikki kala, kastike ja rasva neljään annokseen."
+      ],
+      "proposedVersionHash": "eef9e8d166791b2b9b78a1cb05070236296b46e4fa5a6acf17c86234c403f37f",
+      "displayProposal": {
+        "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+        "en": "Modeled GL about X/serving; low confidence",
+        "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+        "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+      },
+      "nutritionPerServing": {
+        "carbsNetG": 2.03825,
+        "carbsTotalG": 3.054875,
+        "proteinG": 36.623375,
+        "fatG": 47.9155,
+        "fibreG": 1.016625,
+        "availableCarbohydrateProxyUsed": false,
+        "proxyCompositionIds": [],
+        "totalDefinition": "Direct source total: Fineli available+fibre+reported polyols; AFCD with-polyols+fibre; USDA carbohydrate-by-difference; EU label carbohydrate including polyols+fibre",
+        "proxyNote": "Available and total CHO retain distinct source definitions; no fibre/polyol subtraction twice."
+      },
+      "releaseInputVersion": 7
+    },
+    {
+      "recipeId": "meksikolainen-quesadilla-sienilla",
+      "title": "Aamiaisquesadilla sienillä ja maissilla",
+      "sourcePath": "reseptit/aamupalat/meksikolainen-quesadilla-sienilla.md",
+      "sourceSha256": "c0f464398a665d1855d2850af1d96c3eda9dc2d447c784fb5bee0d0d51b77275",
+      "servings": 2,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "maissitortilla",
+              "state": "MAISSITORTILLA, GLUTEENITON",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 51.845,
+                "protein": 3.49,
+                "fat": 9.273,
+                "fibre": 1.172
+              },
+              "composition": {
+                "sourceId": "F35554-r5",
+                "evidenceHash": "f284ec848ceb26008548c45aed414eb355d8de3ff8a680c5a6e63fd09ee84bda"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "CORN_TORTILLA",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit CORN_TORTILLA food ID F35554 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "corn-tortilla52_4-r5",
+                "evidenceHash": "bd0b29dd318d75e3a5cb353e866c69a0cb62f4334d68f9a9788f796401493c85",
+                "rationale": "Explicit CORN_TORTILLA food ID F35554 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. "
+              }
+            },
+            {
+              "index": 1,
+              "name": "raastettua mozzarellajuustoa",
+              "state": "JUUSTO, MOZZARELLA, RASVAA 20 %, TUOREJUUSTO",
+              "massG": 80,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 18.6,
+                "fat": 20.7,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F29239-r5",
+                "evidenceHash": "c9cc874a9e35ee02ff39764748b9c05ab851e5d3770291f8a423fd00e2804158"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 2,
+              "name": "herkkusieniä",
+              "state": "Mushroom, common, fresh, raw",
+              "massG": 75,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.8,
+                "protein": 2.2,
+                "fat": 0.8,
+                "fibre": 1.4
+              },
+              "composition": {
+                "sourceId": "A005946-r5",
+                "evidenceHash": "98e1a997ec5129efb7d9d4d8c65b46f29fc5e0e707f225f75c9d7da595cd4858"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID A005946 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID A005946 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 3,
+              "name": "maissinjyviä",
+              "state": "Corn, kernels, purchased frozen, raw",
+              "massG": 80,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 16.8,
+                "protein": 3,
+                "fat": 0.9,
+                "fibre": 2.5
+              },
+              "composition": {
+                "sourceId": "A003202-r5",
+                "evidenceHash": "3aaadf4ead6aed2023633c6317188db4bf99b3777f5d39dfb4ac55d39f5887dd"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "SWEET_CORN",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit SWEET_CORN food ID A003202 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "sweetcorn51-r5",
+                "evidenceHash": "dcd56790c144eb062bc05b00aba3a85478f6197dbb1c9cf898ee0ee6171cecb8",
+                "rationale": "Explicit SWEET_CORN food ID A003202 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. "
+              }
+            },
+            {
+              "index": 4,
+              "name": "neutraalia ruokaöljyä, Finelin ruokaöljykeskiarvon koostumus",
+              "state": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+              "massG": 13.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 0.0,
+                "fat": 99.9,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F541-r5",
+                "evidenceHash": "dfc03d744e853b17e3735a6ccb28e640ce82c35348d93b0ced679438b164a9f5"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 5,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has zero of the four macros"
+            }
+          ]
+        }
+      ],
+      "batch": "B",
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "approved": false,
+      "published": false,
+      "publicationFixes": [],
+      "blockers": [],
+      "originalPreparation": "\n\n1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.\n2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.\n3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.\n4. Viipaloi herkkusienet ja paista ne nopeasti pannulla maissinjyvien kanssa. Levitä juusto, sienet ja maissi maissitortillalle, taita ja paista öljytyssä pannussa molemmin puolin, kunnes juusto sulaa.\n",
+      "proposedTitle": "Aamiaisquesadilla sienillä ja maissilla – punnittu versio",
+      "proposedPreparation": [
+        "Käytä 100 g valmista maissitortillaa, ei vehnätortillaa tai raakaa maissijauhoa. Kypsennä 75 g herkkusieniä 13,5 g:ssa öljyä.",
+        "Kypsennä 80 g punnittuja maissinjyviä mikrossa täysin kypsiksi; ihmistutkimuksen 1,5 min on valmistusvertailu, noudata myös tuotteen turvallista kypsennystä. Täytä tortillat 80 g mozzarellalla, sienillä ja kaikella maissilla.",
+        "Kuumenna pannulla juuri, kunnes juusto sulaa. Ei friteerausta tai lisäöljyä. Jaa koko ruoka öljyineen kahteen annokseen."
+      ],
+      "proposedVersionHash": "cde224ff95d17ad71127d705051b360d6565f946bd9544e27d85f95a231221a8",
+      "displayProposal": {
+        "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+        "en": "Modeled GL about X/serving; low confidence",
+        "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+        "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+      },
+      "nutritionPerServing": {
+        "carbsNetG": 32.9425,
+        "carbsTotalG": 35.5035,
+        "proteinG": 11.21,
+        "fatG": 20.31975,
+        "fibreG": 2.111,
+        "availableCarbohydrateProxyUsed": false,
+        "proxyCompositionIds": [],
+        "totalDefinition": "Direct source total: Fineli available+fibre+reported polyols; AFCD with-polyols+fibre; USDA carbohydrate-by-difference; EU label carbohydrate including polyols+fibre",
+        "proxyNote": "Available and total CHO retain distinct source definitions; no fibre/polyol subtraction twice."
+      },
+      "releaseInputVersion": 7
+    },
+    {
+      "recipeId": "koshari",
+      "title": "Egyptiläinen koshari riisistä, linsseistä ja pastasta",
+      "sourcePath": "reseptit/paaruoat/koshari.md",
+      "sourceSha256": "651620fb69bd05d461229bc5b44fa960bc61917e338ced33f1c328d0e66ca16d",
+      "servings": 4,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "kuivia kokonaisia ruskeita tai vihreitä linssejä",
+              "state": "LINSSI, VIHREÄ/RUSKEA, KUIVATTU",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 45.7,
+                "protein": 24.38,
+                "fat": 1.13,
+                "fibre": 8.9
+              },
+              "composition": {
+                "sourceId": "F399-r5",
+                "evidenceHash": "a3271214e8e4f1e8a71bded2eb8b1f8ab3f8d9ecd537c07bd748a1c95294d57a"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "cooked-lentil",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit LENTIL food ID F399 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "lentil-mean32",
+                "evidenceHash": "0986393e2ccc72660695cb00ec6550bf6ab7696957b37354ed35457b241534d3",
+                "rationale": "Explicit LENTIL food ID F399 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. "
+              }
+            },
+            {
+              "index": 1,
+              "name": "kuivaa valkoista jasmiiniriisiä",
+              "state": "RIISI PITKÄJYVÄINEN, PUUROUTUMATON",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 79.0,
+                "protein": 8.13,
+                "fat": 1.03,
+                "fibre": 1.0
+              },
+              "composition": {
+                "sourceId": "F11521-r5",
+                "evidenceHash": "cc0a57b03a65f0e5f540b12d4a7e573990e873f7e9bbfd79a40ac5beaa329536"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "rice-grain",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit RICE food ID F11521 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "rice-jasmine68",
+                "evidenceHash": "3ecc3f0a5f8206b53edb3b53c56e2dd317df7bfcfe159254bd488b93a4f4c2b0",
+                "rationale": "Explicit RICE food ID F11521 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. "
+              }
+            },
+            {
+              "index": 2,
+              "name": "kuivaa durumvehnämakaronia",
+              "state": "MAKARONI, PASTA",
+              "massG": 150,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 66.4,
+                "protein": 13.0,
+                "fat": 1.1,
+                "fibre": 3.0
+              },
+              "composition": {
+                "sourceId": "F117-r5",
+                "evidenceHash": "8a6bfe4d34145e3d8f4f3710fcce29036a84d72e75dda036c93446596abb84d1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "wheat-pasta",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit WHEAT_PASTA food ID F117 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "pasta-mean49",
+                "evidenceHash": "e971485deadcfa73418ca97b974a6fc495f6a5ec6e77faaa6f2bbfaa98d19f13",
+                "rationale": "Explicit WHEAT_PASTA food ID F117 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. "
+              }
+            },
+            {
+              "index": 3,
+              "name": "sipulia",
+              "state": "SIPULI, KELTASIPULI",
+              "massG": 110,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2
+              },
+              "composition": {
+                "sourceId": "F335-r5",
+                "evidenceHash": "73268aed7eb5758b5c2edb1e4d47021bb312b21ce33c6827acd2f3975503df38"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F335 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F335 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 4,
+              "name": "oliiviöljyä",
+              "state": "OLIIVIÖLJY",
+              "massG": 40.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 0.0,
+                "fat": 100.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F536-r5",
+                "evidenceHash": "827e09161c456d31a8ea67ef4afdd7bfa5fa1116124fb694059032fc2cd322a0"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 5,
+              "name": "tomaattimurskaa",
+              "state": "TOMAATTIMURSKA",
+              "massG": 400,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 3.45,
+                "protein": 0.55,
+                "fat": 0.2,
+                "fibre": 0.4
+              },
+              "composition": {
+                "sourceId": "F398-r5",
+                "evidenceHash": "0c91a82a6c7b3c0e9427eedf48084258c3cdbf952475ed5608b84099ee163436"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F398 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F398 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 6,
+              "name": "kuorittua tuoretta valkosipulia",
+              "state": "Garlic, peeled, fresh, raw",
+              "massG": 7.0,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 10.2,
+                "protein": 6.1,
+                "fat": 2.8,
+                "fibre": 16.9
+              },
+              "composition": {
+                "sourceId": "A004193-r5",
+                "evidenceHash": "26c95a1feb4667f055ea25adbf15b982c8a6cc4331fc491cdd476973a5df7da1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID A004193 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID A004193 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 7,
+              "name": "punaviinietikkaa",
+              "state": "VIINIETIKKA",
+              "massG": 30,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.5,
+                "protein": 0.0,
+                "fat": 0.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F929-r5",
+                "evidenceHash": "8a1ed8e82deb181b5938fbd521ccc41459f9b8f7c52765070422dccccb34f71f"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NAMED_LOW_CHO food ID F929 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+                "rationale": "Explicit NAMED_LOW_CHO food ID F929 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 8,
+              "name": "juustokuminaa",
+              "state": "Cumin (cummin) seed, dried, ground",
+              "massG": 2,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 33.7,
+                "protein": 17.8,
+                "fat": 22.3,
+                "fibre": 10.5
+              },
+              "composition": {
+                "sourceId": "A003327-r5",
+                "evidenceHash": "156928ca27bcb45ffb086680205ac52b9d25105a009096c56a2671e2939d0ed9"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE food ID A003327 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+                "rationale": "Explicit GROUND_SPICE food ID A003327 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 9,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has zero of the four macros"
+            },
+            {
+              "index": 10,
+              "name": "sitruunamehua",
+              "state": "Juice, lemon",
+              "massG": 15,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 1.8,
+                "protein": 0.6,
+                "fat": 0.1,
+                "fibre": 2
+              },
+              "composition": {
+                "sourceId": "A004726-r5",
+                "evidenceHash": "1cca713dfc848d018b10d862dcd599ce17908cd2046b11ac9c0fd6cb915d41c1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit CITRUS_JUICE food ID A004726 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+                "rationale": "Explicit CITRUS_JUICE food ID A004726 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 11,
+              "name": "vettä kypsennykseen",
+              "state": "VESI, VESIJOHTOVESI",
+              "massG": 2500,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 0.0,
+                "fat": 0.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F922-r5",
+                "evidenceHash": "5bdf047f102715714238e5691b2d56fc3d290d314d7daed5501dc6d0075c0955"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            }
+          ]
+        }
+      ],
+      "batch": "B",
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "approved": false,
+      "published": false,
+      "publicationFixes": [
+        "Uncoated onion version: no corn-starch coating. Whole green/brown lentils fully cooked, named hot jasmine grain rice and boiled durum macaroni; all sauce consumed.",
+        "Cooking water may be drained; retainedFraction1 is nutrient-input proxy without a leaching discount, not a claim that all cooking water is consumed."
+      ],
+      "blockers": [],
+      "originalPreparation": "\n\n1. Huuhtele linssit ja keitä vedessä kypsiksi mutta napakoiksi, noin 20–25 minuuttia. Valuta.\n2. Keitä riisi kypsäksi. Keitä makaroni erillisessä kattilassa pakkauksen ohjeen mukaan ja valuta.\n3. Kuullota yksi valkosipulinkynsi pienessä kattilassa öljytilkassa. Lisää tomaattimurska, juustokumina, suola ja sitruunamehu. Hauduta 15 minuuttia.\n4. Sekoita loppu valkosipuli etikkaan. Paista sipulirenkaat maissitärkkelyksessä kieritettyinä öljyssä rapeiksi. Valuta talouspaperilla.\n5. Kokoa kulhoihin riisi, linssit ja makaroni. Lusikoi päälle tomaattikastiketta ja valkosipulietikkaa. Viimeistele rapealla sipulilla.\n\n## Muistiinpanot\n\n- Tarjoa kastikkeet erikseen, jotta jokainen voi säätää annoksen hapokkuutta ja tulisuutta.\n",
+      "proposedTitle": "Koshari – kuorruttamattoman sipulin versio",
+      "proposedPreparation": [
+        "Kuorruttamattoman sipulin versio: kypsennä 200 g kokonaisia kuivia vihreitä/ruskeita linssejä täysin pehmeiksi. Kypsennä 200 g kuivaa valkoista jasmiiniriisiä kuumaksi jyväriisiksi ja 150 g kuivaa durumvehnämakaronia pakkauksen keitto-ohjeella, valuta.",
+        "Paahda 110 g sipulia 40,5 g:ssa oliiviöljyä ilman maissitärkkelyskuorrutusta. Valmista koko 400 g tomaattimurskasta, 7 g valkosipulista, 30 g punaviinietikasta, 2 g juustokuminasta ja 15 g sitruunamehusta kastike.",
+        "Yhdistä kaikki kuumat osat neljäksi annokseksi. Kaikki sipuliöljy ja kastike syödään. Kuivan raaka-aineen makroproxy ei anna mittaamatonta liukenemishyvitystä."
+      ],
+      "proposedVersionHash": "5c1e5c0a87048737ccdd7c1acff0c523635c22bec8d7c97e47d67f5fcedad576",
+      "displayProposal": {
+        "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+        "en": "Modeled GL about X/serving; low confidence",
+        "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+        "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+      },
+      "nutritionPerServing": {
+        "carbsNetG": 92.472,
+        "carbsTotalG": 99.70025,
+        "proteinG": 22.242,
+        "fatG": 12.00925,
+        "fibreG": 7.22825,
+        "availableCarbohydrateProxyUsed": false,
+        "proxyCompositionIds": [],
+        "totalDefinition": "Direct source total: Fineli available+fibre+reported polyols; AFCD with-polyols+fibre; USDA carbohydrate-by-difference; EU label carbohydrate including polyols+fibre",
+        "proxyNote": "Available and total CHO retain distinct source definitions; no fibre/polyol subtraction twice."
+      },
+      "releaseInputVersion": 7
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "title": "Yangzhoun paistettu riisi",
+      "sourcePath": "reseptit/paaruoat/yangzhou-paistettu-riisi.md",
+      "sourceSha256": "8c7df728c8ba0c5470ddb2052f7c9dea46e19e00cf4928bed3ddf2527ccdbe68",
+      "servings": 4,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "juuri keitettyä kuumaa valkoista jasmiiniriisiä",
+              "state": "RIISI, PITKÄJYVÄINEN, KEITETTY, SUOLATON",
+              "massG": 600,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 23.561,
+                "protein": 2.42,
+                "fat": 0.307,
+                "fibre": 0.298
+              },
+              "composition": {
+                "sourceId": "F30346-r5",
+                "evidenceHash": "ab4f5c546c86e7a7ef1d52ca356fa50dea85a0f9e66a63bfea85879f082661ec"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "rice-grain",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit RICE food ID F30346 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "rice-jasmine68",
+                "evidenceHash": "3ecc3f0a5f8206b53edb3b53c56e2dd317df7bfcfe159254bd488b93a4f4c2b0",
+                "rationale": "Explicit RICE food ID F30346 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. "
+              }
+            },
+            {
+              "index": 1,
+              "name": "kananmunaa",
+              "state": "KANANMUNA, KUORETON",
+              "massG": 110,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.3,
+                "protein": 12.61,
+                "fat": 9.24,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F858-r5",
+                "evidenceHash": "90b4e05142daf0adb44578ba0fd49f6eb550eafb1181bb458e12e73b63e559b1"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit EGG food ID F858 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+                "rationale": "Explicit EGG food ID F858 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 2,
+              "name": "katkarapuja",
+              "state": "Prawn, flesh, raw (green)",
+              "massG": 150,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 20.7,
+                "fat": 0.8,
+                "fibre": 0
+              },
+              "composition": {
+                "sourceId": "A007433-r5",
+                "evidenceHash": "45543884f28fbb5dc6104340fd6355cb4bc62ac561f9ae0b7069e63adf7f3b07"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 3,
+              "name": "kypsiä valutettuja pakasteherneitä",
+              "state": "Pea, green, frozen, boiled, drained",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 6.4,
+                "protein": 5.2,
+                "fat": 0.3,
+                "fibre": 6.1
+              },
+              "composition": {
+                "sourceId": "A006538-r5",
+                "evidenceHash": "ed7f4a05085f20a128280d297ad1f7a9769fc7fc89b5e6ee88f9af1a86ca63b2"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "GREEN_PEA",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GREEN_PEA food ID A006538 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "peas42-r5",
+                "evidenceHash": "57fa8b80740ce65e6cd704f8f1055db2f5931ff8cbcd9e7da0ac4ae1143dba9a",
+                "rationale": "Explicit GREEN_PEA food ID A006538 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. "
+              }
+            },
+            {
+              "index": 4,
+              "name": "kypsää kinkkua",
+              "state": "KOKOLIHALEIKKELE, KEITTOKINKKU, RASVAA 3 %",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.629,
+                "protein": 17.61,
+                "fat": 2.985,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F779-r5",
+                "evidenceHash": "91ee89b45c7e2994f6ed779edc042470b04e6bed17bdb67795048406c9e36e98"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NAMED_LOW_CHO food ID F779 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+                "rationale": "Explicit NAMED_LOW_CHO food ID F779 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 5,
+              "name": "neutraalia ruokaöljyä, Finelin ruokaöljykeskiarvon koostumus",
+              "state": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+              "massG": 27.4,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 0.0,
+                "fat": 99.9,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F541-r5",
+                "evidenceHash": "dfc03d744e853b17e3735a6ccb28e640ce82c35348d93b0ced679438b164a9f5"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 6,
+              "name": "kaupallista soijakastiketta, AFCD F008065 -tyyppi",
+              "state": "Sauce, soy, commercial",
+              "massG": 30,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 3.2,
+                "protein": 6.8,
+                "fat": 0,
+                "fibre": 0
+              },
+              "composition": {
+                "sourceId": "A008065-r5",
+                "evidenceHash": "f2d278a6377628a89f5b3e2ffc20723dba6400dfa6ad75f5a1f53afede7f88f8"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit SOY_SAUCE food ID A008065 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+                "rationale": "Explicit SOY_SAUCE food ID A008065 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 7,
+              "name": "kevätsipulia",
+              "state": "Onion, spring, fresh, raw",
+              "massG": 30,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.6,
+                "protein": 1.7,
+                "fat": 0.2,
+                "fibre": 1.9
+              },
+              "composition": {
+                "sourceId": "A006250-r5",
+                "evidenceHash": "f8e21fdbd772ed90abfac3e7e05c0b8e6f65631d2addcaca62f9dee01f821b80"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID A006250 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID A006250 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 8,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has zero of the four macros"
+            }
+          ]
+        }
+      ],
+      "batch": "B",
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "approved": false,
+      "published": false,
+      "publicationFixes": [
+        "Defined mass of cooked drained frozen peas; microwave human GI applied as explicit LOW cooking analogy.",
+        "Named fresh-hot jasmine version replaces unspecified cooled/reheated rice; does not revive the rejected generic cold-rice GI."
+      ],
+      "blockers": [],
+      "originalPreparation": "\n\n1. Riko riisin paakut haarukalla. Vatkaa kananmunat kevyesti.\n2. Kuumenna wokki, lisää puolet öljystä ja paista kananmunat pehmeäksi kokkeliksi. Nosta sivuun.\n3. Lisää loput öljystä. Paista katkarapuja kypsiksi, lisää kinkku ja herneet.\n4. Lisää riisi ja paista kuumaksi samalla sekoittaen. Mausta soijakastikkeella ja suolalla.\n5. Sekoita kananmunat takaisin wokkiin. Lisää kevätsipuli ja tarjoa heti.\n\n## Muistiinpanot\n\n- Jäähdytä keitetty riisi nopeasti ja säilytä jääkaapissa. Käytä riisi mieluiten seuraavana päivänä.\n",
+      "proposedTitle": "Yangzhou-tyylinen paistettu riisi – kuumasta jasmiiniriisistä",
+      "proposedPreparation": [
+        "Juuri kypsennetyn riisin versio: käytä 600 g valkoista jasmiiniriisiä kuumana ja kypsänä punnittuna. Ei kylmäsäilytettyä tai uudelleen lämmitettyä riisiä tässä laskelmassa.",
+        "Kypsennä 110 g munaa ja 150 g kuorittuja katkarapuja 27,4 g:ssa öljyä. Lisää 100 g kypsiä valutettuja pakasteherneitä, 100 g kypsää kinkkua ja 30 g kevätsipulia.",
+        "Lisää kaikki soijakastike ja kuuma riisi. Sekoita kuumalla pannulla, kuumenna kauttaaltaan ja tarjoa heti neljänä annoksena. Ei jäähdytyshyvitystä tai lisäöljyä."
+      ],
+      "proposedVersionHash": "eac884e298f1f7db273cf0c20994e3d08c00f6f4af250b5f3a27a998ff911291",
+      "displayProposal": {
+        "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+        "en": "Modeled GL about X/serving; low confidence",
+        "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+        "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+      },
+      "nutritionPerServing": {
+        "carbsNetG": 37.76625,
+        "carbsTotalG": 39.88075,
+        "proteinG": 21.20025,
+        "fatG": 10.9809,
+        "fibreG": 2.1145,
+        "availableCarbohydrateProxyUsed": false,
+        "proxyCompositionIds": [],
+        "totalDefinition": "Direct source total: Fineli available+fibre+reported polyols; AFCD with-polyols+fibre; USDA carbohydrate-by-difference; EU label carbohydrate including polyols+fibre",
+        "proxyNote": "Available and total CHO retain distinct source definitions; no fibre/polyol subtraction twice."
+      },
+      "releaseInputVersion": 7
+    },
+    {
+      "recipeId": "lohikeitto-kuohukermalla",
+      "title": "Kermainen lohikeitto kuohukermalla",
+      "sourcePath": "reseptit/paaruoat/lohikeitto-kuohukermalla.md",
+      "sourceSha256": "bde79971941231dada8f1a188e2bd01490a465562315012c27b4c30de85d2223",
+      "servings": 4,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "keltasipulia",
+              "state": "SIPULI, KELTASIPULI",
+              "massG": 55,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2
+              },
+              "composition": {
+                "sourceId": "F335-r5",
+                "evidenceHash": "73268aed7eb5758b5c2edb1e4d47021bb312b21ce33c6827acd2f3975503df38"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F335 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F335 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 1,
+              "name": "purjoa",
+              "state": "PURJOSIPULI",
+              "massG": 50,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.4,
+                "protein": 1.81,
+                "fat": 0.2,
+                "fibre": 2.1
+              },
+              "composition": {
+                "sourceId": "F337-r5",
+                "evidenceHash": "ca4581c03c47a6bf47affd3d6a128080b012ce5773b2ceade0d0f66473d42174"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F337 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F337 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 2,
+              "name": "kuorittua raakaa perunaa",
+              "state": "PERUNA, VANHA, KUORITTU",
+              "massG": 360,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 15.5,
+                "protein": 1.88,
+                "fat": 0.114,
+                "fibre": 1.4
+              },
+              "composition": {
+                "sourceId": "F205-r5",
+                "evidenceHash": "81156f7be8dbae62d625361b3b2f7df08326b7c511fd59161659ad8382643e43"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "POTATO",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit POTATO food ID F205 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
+              "impact": {
+                "kind": "SOURCE_COMPARATOR",
+                "sourceId": "potato-boiled66-r5",
+                "evidenceHash": "f25b18579925dbf83988b8c91ef3a90e8bc3336c40d2e3eafaba40b51796bd73",
+                "rationale": "Explicit POTATO food ID F205 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. "
+              }
+            },
+            {
+              "index": 3,
+              "name": "porkkanaa",
+              "state": "PORKKANA",
+              "massG": 70,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 5.56,
+                "protein": 0.63,
+                "fat": 0.2,
+                "fibre": 2.4
+              },
+              "composition": {
+                "sourceId": "F300-r5",
+                "evidenceHash": "0f83a925f8fe24c1362a5625884cc55e16233828804e4d68164f69ec15ca0037"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F300 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F300 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 4,
+              "name": "voita",
+              "state": "VOI",
+              "massG": 15,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.8,
+                "protein": 1.19,
+                "fat": 81.3,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F500-r5",
+                "evidenceHash": "6f6d6631cd7e5d9610852b15d8c971aaf6a9eddd70640dc21e63a791dbb4b60a"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY food ID F500 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                "rationale": "Explicit DAIRY food ID F500 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 5,
+              "name": "vettä; ei kalafondia",
+              "state": "VESI, VESIJOHTOVESI",
+              "massG": 800,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 0.0,
+                "fat": 0.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F922-r5",
+                "evidenceHash": "5bdf047f102715714238e5691b2d56fc3d290d314d7daed5501dc6d0075c0955"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 6,
+              "name": "jauhettua mustapippuria, kokonaan mukana",
+              "state": "Pepper, black, ground",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-r5",
+                "evidenceHash": "708aef03660bc69c4b47b9a65cf3403a357f8d1d2d25085465766afa1c5c0977"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+                "rationale": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 7,
+              "name": "raakaa kasvatetun lohen fileetä",
+              "state": "LOHI, FILEE, KASVATETTU",
+              "massG": 400,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.0,
+                "protein": 20.0,
+                "fat": 16.37,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F34255-r5",
+                "evidenceHash": "ad1440659d2bb5a64d5bb25b7a2b7dc0834b8b1f7d14fb7dd6a7ef1c2f032b2a"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 8,
+              "name": "38% kuohukermaa",
+              "state": "KERMA, KUOHUKERMA, RASVAA 38 %",
+              "massG": 200,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 2.9,
+                "protein": 1.88,
+                "fat": 38.0,
+                "fibre": 0.0
+              },
+              "composition": {
+                "sourceId": "F631-r5",
+                "evidenceHash": "6050442a2317de90f66a6228fc785e38b5ba382851fc73a3098794e642f5f970"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "dairy-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit DAIRY food ID F631 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "dairy-imputation30",
+                "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                "rationale": "Explicit DAIRY food ID F631 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 9,
+              "name": "tuoretta tilliä",
+              "state": "TILLI, TUORE",
+              "massG": 10,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0.9,
+                "protein": 3.69,
+                "fat": 0.8,
+                "fibre": 2.8
+              },
+              "composition": {
+                "sourceId": "F369-r5",
+                "evidenceHash": "94520ab8ef5038c889d63379be79b91dc54433e52210111e59607337d152dc4d"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F369 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F369 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 10,
+              "name": "suolaa maun mukaan",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has zero of the four macros"
+            }
+          ]
+        }
+      ],
+      "batch": "B",
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "reviewState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+      "approved": false,
+      "published": false,
+      "publicationFixes": [
+        "No fish fond in this explicit water version; original fond composition remains unresolved."
+      ],
+      "blockers": [],
+      "originalPreparation": "\n\n1. Kuori ja hienonna sipuli. Halkaise purjo pituussuunnassa, huuhtele huolellisesti ja leikkaa ohuiksi viipaleiksi. Kuori tai harjaa perunat ja leikkaa suupaloiksi. Paloittele porkkana.\n2. Sulata kattilassa voita oman maun mukaan. Kuullota sipulia ja purjoa muutama minuutti, kunnes ne pehmenevät mutta eivät ruskistu.\n3. Lisää kattilaan vesi, kalafondi pakkauksen annostuksen mukaan ja kokonaiset mustapippurit. Lisää perunat ja porkkana. Keitä lempeästi, kunnes kasvikset ovat lähes kypsiä.\n4. Poista lohesta nahka ja ruodot. Leikkaa kala reiluiksi kuutioiksi ja lisää kattilaan.\n5. Kaada joukkoon kuohukerma. Hauduta miedolla lämmöllä muutama minuutti, kunnes lohi kypsyy. Vältä voimakasta kiehumista.\n6. Maista lientä ja lisää tarvittaessa suolaa. Sekoita joukkoon hienonnettu tilli ja tarjoa kuumana.\n\n## Muistiinpanot\n\n- Kalafondien suolaisuus ja vahvuus vaihtelevat. Noudata pakkauksen annostusta ja tarkista maku ennen suolan lisäämistä.\n- Ruisleipä sopii keiton kanssa tarjottavaksi.\n",
+      "proposedTitle": "Lohikeitto kuohukermalla – fonditon vesiversio",
+      "proposedPreparation": [
+        "Fonditon vesiversio: kypsennä 55 g sipulia, 50 g purjoa ja 70 g porkkanaa 15 g:ssa voita. Lisää 800 g vettä ja 360 g kuorittuna punnittua raakaa perunaa. Keitä peruna kypsäksi.",
+        "Lisää 400 g raakaa lohifileetä, 200 g kermaa ja 0,5 g jauhettua mustapippuria. Kypsennä kala kauttaaltaan. Kalafondia ei lisätä tähän nimettyyn versioon.",
+        "Lisää 10 g tilliä ja jaa koko keitto nesteineen neljään annokseen. Mustapippuri syödään; ei pois nostettavia kokonaisia pippureita."
+      ],
+      "proposedVersionHash": "d8971c7cea969c0ea981dd587e619258e1bd5b4172d8b931861db45291362541",
+      "displayProposal": {
+        "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+        "en": "Modeled GL about X/serving; low confidence",
+        "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+        "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+      },
+      "nutritionPerServing": {
+        "carbsNetG": 17.43375,
+        "carbsTotalG": 19.642875,
+        "proteinG": 23.29025,
+        "fatG": 38.619225,
+        "fibreG": 2.209125,
+        "availableCarbohydrateProxyUsed": false,
+        "proxyCompositionIds": [],
+        "totalDefinition": "Direct source total: Fineli available+fibre+reported polyols; AFCD with-polyols+fibre; USDA carbohydrate-by-difference; EU label carbohydrate including polyols+fibre",
+        "proxyNote": "Available and total CHO retain distinct source definitions; no fibre/polyol subtraction twice."
+      },
+      "releaseInputVersion": 7
+    }
+  ]
+}

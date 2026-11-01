@@ -1,10 +1,10 @@
 {
   "recipeId": "meksikolainen-quesadilla-sienilla",
-  "sourceHash": "d688080aa95113365b6138cacb31017705870e9db64d0ae8ef9a106dddcde846",
-  "calculatedAt": "2026-10-25",
-  "batchId": "batch-17",
+  "sourceHash": "6782d0c6a67dd836defb59a4120fe383bda137cabc1e957ef99d28bd584bd2cd",
+  "calculatedAt": "2026-11-01",
+  "batchId": "batch-86",
   "servings": 2,
-  "scope": "2 servings; measured ingredient quantities as listed: 100 g maissitortilla; 80 g raastettua mozzarellajuustoa; 75 g herkkusieniä; 80 g maissinjyviä; 1 rkl neutraalia paistoöljyä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded.",
+  "scope": "Complete weighed GK80 release7 draft, named exact preparation and source composition, owner decision pending",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -12,195 +12,342 @@
       "item": "maissitortilla",
       "amount": 100,
       "unit": "g",
-      "state": "commercial gluten-free corn tortilla as sold",
-      "matchEvidence": "Fineli Release 20 record 35554 is a commercial gluten-free corn tortilla, matching the listed tortilla.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "MAISSITORTILLA, GLUTEENITON",
+      "matchEvidence": "Explicit CORN_TORTILLA food ID F35554 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
       "record": {
-        "id": "fineli-35554-release-20",
+        "id": "F35554-r5",
         "name": "MAISSITORTILLA, GLUTEENITON",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/35554",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "commercial gluten-free corn tortilla as sold",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/35554",
+        "licence": "THL Fineli Release20, CC BY4.0",
         "basis": "per100g-edible",
+        "state": "MAISSITORTILLA, GLUTEENITON",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 51.845,
-          "FIBT": 1.172,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsValue": 0.0,
+        "referenceRecord": {
+          "source_id": "35554",
+          "name": "MAISSITORTILLA, GLUTEENITON",
+          "food_type": "DISH",
+          "process": "FRIE",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "DISH",
+          "food_class": "SANDWICH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 51.845,
+            "fibre_g_per_100g": 1.172,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 3.49,
+            "fat_g_per_100g": 9.273
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "R",
+              "method_indicator": "MI0002"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "R",
+              "method_indicator": "MI0002"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "R",
+              "method_indicator": "MI0002"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "R",
+              "method_indicator": "MI0002"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "R",
+              "method_indicator": "MI0002"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_S": 42.0,
+            "KPL_L": 91.0,
+            "KPL_M": 63.0
+          }
+        },
         "per100g": {
           "carbohydrate": 51.845,
-          "fibre": 1.172,
-          "polyols": 0,
           "protein": 3.49,
-          "fat": 9.273
-        }
-      }
+          "fat": 9.273,
+          "fibre": 1.172,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Reported Fineli POLYL or AFCD paired available-carbohydrate with/without sugar alcohols",
+        "verifiedAt": "2026-11-01",
+        "retrievedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Named weighed edible input or cooked/drained food",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole sauce and edible inputs consumed; explicit raw-input nutrient retention proxy, no unmeasured loss discount"
     },
     {
       "item": "raastettua mozzarellajuustoa",
       "amount": 80,
       "unit": "g",
-      "state": "fresh mozzarella cheese",
-      "matchEvidence": "Fineli Release 20 record 29239 is mozzarella cheese.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "JUUSTO, MOZZARELLA, RASVAA 20 %, TUOREJUUSTO",
+      "matchEvidence": "Exact identified zero available-CHO composition, not zero GI",
       "record": {
-        "id": "fineli-29239-release-20",
+        "id": "F29239-r5",
         "name": "JUUSTO, MOZZARELLA, RASVAA 20 %, TUOREJUUSTO",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29239",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "fresh mozzarella cheese",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29239",
+        "licence": "THL Fineli Release20, CC BY4.0",
         "basis": "per100g-edible",
+        "state": "JUUSTO, MOZZARELLA, RASVAA 20 %, TUOREJUUSTO",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 0,
-          "FIBT": 0,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsValue": 0.0,
+        "referenceRecord": {
+          "source_id": "29239",
+          "name": "JUUSTO, MOZZARELLA, RASVAA 20 %, TUOREJUUSTO",
+          "food_type": "FOOD",
+          "process": "IND",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "CHEEUNHI",
+          "food_class": "CHEESUNC",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.0,
+            "fibre_g_per_100g": 0.0,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 18.6,
+            "fat_g_per_100g": 20.7
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "CG",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            }
+          },
+          "portion_mass_g": {}
+        },
         "per100g": {
-          "carbohydrate": 0,
-          "fibre": 0,
-          "polyols": 0,
+          "carbohydrate": 0.0,
           "protein": 18.6,
-          "fat": 20.7
-        }
-      }
+          "fat": 20.7,
+          "fibre": 0.0,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Reported Fineli POLYL or AFCD paired available-carbohydrate with/without sugar alcohols",
+        "verifiedAt": "2026-11-01",
+        "retrievedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Named weighed edible input or cooked/drained food",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole sauce and edible inputs consumed; explicit raw-input nutrient retention proxy, no unmeasured loss discount"
     },
     {
       "item": "herkkusieniä",
       "amount": 75,
       "unit": "g",
-      "state": "fresh raw common mushrooms",
-      "matchEvidence": "AFCD Release 3 F005946 is common mushroom, fresh and raw.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "Mushroom, common, fresh, raw",
+      "matchEvidence": "Explicit NONSTARCHY_VEGETABLE food ID A005946 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
       "record": {
-        "id": "afcd-F005946-release-3",
+        "id": "A005946-r5",
         "name": "Mushroom, common, fresh, raw",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "fresh raw common mushrooms",
-        "basis": "per100g-as-sold",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F005946",
+        "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+        "basis": "per100g-edible",
+        "state": "Mushroom, common, fresh, raw",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsValue": null,
+        "referenceRecord": {
+          "source_id": "F005946",
+          "classification": 24703,
+          "derivation": "Analysed",
+          "name": "Mushroom, common, fresh, raw",
+          "protein_g_per_100g": 2.2,
+          "fat_g_per_100g": 0.8,
+          "fibre_g_per_100g": 1.4,
+          "glycerol_g_per_100g": null,
+          "erythritol_g_per_100g": null,
+          "maltitol_g_per_100g": null,
+          "mannitol_g_per_100g": 1.3,
+          "xylitol_g_per_100g": null,
+          "sorbitol_g_per_100g": null,
+          "available_carbohydrate_without_sugar_alcohols_g_per_100g": 0.8,
+          "available_carbohydrate_with_sugar_alcohols_g_per_100g": 2
+        },
         "per100g": {
           "carbohydrate": 0.8,
-          "fibre": 1.4,
-          "polyols": 1.2,
           "protein": 2.2,
-          "fat": 0.8
-        }
-      }
+          "fat": 0.8,
+          "fibre": 1.4,
+          "polyols": 1.2
+        },
+        "polyolsEvidence": "Reported Fineli POLYL or AFCD paired available-carbohydrate with/without sugar alcohols",
+        "verifiedAt": "2026-11-01",
+        "retrievedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Named weighed edible input or cooked/drained food",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole sauce and edible inputs consumed; explicit raw-input nutrient retention proxy, no unmeasured loss discount"
     },
     {
       "item": "maissinjyviä",
       "amount": 80,
       "unit": "g",
-      "state": "frozen sweetcorn kernels, uncooked",
-      "matchEvidence": "AFCD Release 3 record F003202 is frozen corn kernels; the recipe now lists the edible kernels by weight.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "Corn, kernels, purchased frozen, raw",
+      "matchEvidence": "Explicit SWEET_CORN food ID A003202 in the named cooking version; named human food/preparation comparator used as LOW ingredient analogy; no measured meal response. ",
       "record": {
-        "id": "afcd-F003202-release-3",
+        "id": "A003202-r5",
         "name": "Corn, kernels, purchased frozen, raw",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "frozen sweetcorn kernels, uncooked",
-        "basis": "per100g-as-sold",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F003202",
+        "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+        "basis": "per100g-edible",
+        "state": "Corn, kernels, purchased frozen, raw",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsValue": null,
+        "referenceRecord": {
+          "source_id": "F003202",
+          "classification": 24704,
+          "derivation": "Analysed",
+          "name": "Corn, kernels, purchased frozen, raw",
+          "protein_g_per_100g": 3,
+          "fat_g_per_100g": 0.9,
+          "fibre_g_per_100g": 2.5,
+          "glycerol_g_per_100g": null,
+          "erythritol_g_per_100g": null,
+          "maltitol_g_per_100g": null,
+          "mannitol_g_per_100g": null,
+          "xylitol_g_per_100g": null,
+          "sorbitol_g_per_100g": null,
+          "available_carbohydrate_without_sugar_alcohols_g_per_100g": 16.8,
+          "available_carbohydrate_with_sugar_alcohols_g_per_100g": 16.8
+        },
         "per100g": {
           "carbohydrate": 16.8,
-          "fibre": 2.5,
-          "polyols": 0,
           "protein": 3,
-          "fat": 0.9
-        }
-      }
+          "fat": 0.9,
+          "fibre": 2.5,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Reported Fineli POLYL or AFCD paired available-carbohydrate with/without sugar alcohols",
+        "verifiedAt": "2026-11-01",
+        "retrievedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Named weighed edible input or cooked/drained food",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole sauce and edible inputs consumed; explicit raw-input nutrient retention proxy, no unmeasured loss discount"
     },
     {
-      "item": "neutraalia paistoöljyä",
-      "amount": 1,
-      "unit": "rkl",
-      "state": "neutral vegetable cooking oil",
-      "matchEvidence": "Fineli Release 20 record 541 is average neutral cooking oil.",
-      "gramsPerUnit": 13.5,
-      "conversionEvidence": "Fineli record 541 lists 13.5 g per tablespoon; all listed pan oil is counted as retained.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "item": "neutraalia ruokaöljyä, Finelin ruokaöljykeskiarvon koostumus",
+      "amount": 13.5,
+      "unit": "g",
+      "state": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+      "matchEvidence": "Exact identified zero available-CHO composition, not zero GI",
       "record": {
-        "id": "fineli-541-release-20",
+        "id": "F541-r5",
         "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "neutral vegetable cooking oil",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/541",
+        "licence": "THL Fineli Release20, CC BY4.0",
         "basis": "per100g-edible",
+        "state": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 0,
-          "FIBT": 0,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsValue": 0.0,
+        "referenceRecord": {
+          "source_id": "541",
+          "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+          "food_type": "FOOD",
+          "process": "IND",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "OIL",
+          "food_class": "OIL",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.0,
+            "fibre_g_per_100g": 0.0,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 0.0,
+            "fat_g_per_100g": 99.9
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR003"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "R",
+              "method_indicator": "MI0002"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 90.0,
+            "RKL": 13.5,
+            "TL": 4.5
+          }
+        },
         "per100g": {
-          "carbohydrate": 0,
-          "fibre": 0,
-          "polyols": 0,
-          "protein": 0,
-          "fat": 99.9
-        }
-      }
+          "carbohydrate": 0.0,
+          "protein": 0.0,
+          "fat": 99.9,
+          "fibre": 0.0,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Reported Fineli POLYL or AFCD paired available-carbohydrate with/without sugar alcohols",
+        "verifiedAt": "2026-11-01",
+        "retrievedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Named weighed edible input or cooked/drained food",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole sauce and edible inputs consumed; explicit raw-input nutrient retention proxy, no unmeasured loss discount"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "salt omitted; no contribution to displayed macronutrients",
-      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "state": "pure salt",
+      "excludedReason": "Pure salt has zero of the four macros",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -208,7 +355,11 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
     }
   ]
 }

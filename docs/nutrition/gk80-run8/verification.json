@@ -1,0 +1,172 @@
+{
+  "verifiedAt": "2026-11-01T12:03:58.172642+02:00",
+  "baseMain": "ed5e3a67046cff3b1fd56acf4cb214a0fe3813ad",
+  "production": {
+    "url": "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/?audit=run8-113756",
+    "status": 200,
+    "counts": [
+      326,
+      119,
+      207
+    ],
+    "verifiedAt": "2026-11-01T11:37:57.175637+02:00",
+    "htmlSha256": "2b781522b0dc787bff21034875c09ed1aac2027f0f34a0f57d8f7ade23639e74",
+    "baseMain": "ed5e3a67046cff3b1fd56acf4cb214a0fe3813ad"
+  },
+  "localFullBuilds": 1,
+  "prCiPlanned": 1,
+  "manualActionsRuns": 0,
+  "newImageGenerations": 0,
+  "decimal": {
+    "status": "PASS",
+    "recipes": 11,
+    "publicationMacros": 11
+  },
+  "primaryComposition": {
+    "status": "PASS",
+    "AFCD": 16,
+    "Fineli": 32
+  },
+  "currentMainRegression": {
+    "status": "PASS",
+    "recipes": 326,
+    "previousNumericPreserved": 119,
+    "intentionalNewNumeric": 11,
+    "unchangedFullResultObjects": 315,
+    "candidateNumeric": 130,
+    "candidateIncomplete": 196,
+    "teaIncomplete": true
+  },
+  "unit": {
+    "passed": 201,
+    "failed": 0
+  },
+  "static": {
+    "passed": 25,
+    "failed": 0
+  },
+  "translations": {
+    "changedExistingPages": 30,
+    "newLocales": 0,
+    "scopedAuditErrors": 0,
+    "fullRunThenSingleObsoleteIndexFailure": "26/27, corrected garlic lookup and two affected tests PASS",
+    "humanReview": "PENDING"
+  },
+  "brave": {
+    "status": "PASS",
+    "candidateNumeric": 130,
+    "productionBaseline": 119,
+    "pages": 14,
+    "results": [
+      {
+        "recipeId": "tortilla-de-patatas",
+        "locale": "fi",
+        "value": "noin 16 / annos",
+        "macros": 4,
+        "low": true
+      },
+      {
+        "recipeId": "tabbouleh",
+        "locale": "fi",
+        "value": "noin 7 / annos",
+        "macros": 4,
+        "low": true
+      },
+      {
+        "recipeId": "munakoiso-jauhelihavuoka-vhh",
+        "locale": "fi",
+        "value": "noin 4 / annos",
+        "macros": 4,
+        "low": true
+      },
+      {
+        "recipeId": "parsakaali-sinihomejuustofrittata",
+        "locale": "fi",
+        "value": "noin <1 / annos",
+        "macros": 4,
+        "low": true
+      },
+      {
+        "recipeId": "italian-pata",
+        "locale": "fi",
+        "value": "noin 2 / annos",
+        "macros": 4,
+        "low": true
+      },
+      {
+        "recipeId": "raejuusto-uunimunakas",
+        "locale": "fi",
+        "value": "noin 1 / annos",
+        "macros": 4,
+        "low": true
+      },
+      {
+        "recipeId": "uunilohi-smetanakuorrutteella",
+        "locale": "fi",
+        "value": "noin <1 / annos",
+        "macros": 4,
+        "low": true
+      },
+      {
+        "recipeId": "meksikolainen-quesadilla-sienilla",
+        "locale": "fi",
+        "value": "noin 17 / annos",
+        "macros": 4,
+        "low": true
+      },
+      {
+        "recipeId": "koshari",
+        "locale": "fi",
+        "value": "noin 48 / annos",
+        "macros": 4,
+        "low": true
+      },
+      {
+        "recipeId": "yangzhou-paistettu-riisi",
+        "locale": "fi",
+        "value": "noin 25 / annos",
+        "macros": 4,
+        "low": true
+      },
+      {
+        "recipeId": "lohikeitto-kuohukermalla",
+        "locale": "fi",
+        "value": "noin 10 / annos",
+        "macros": 4,
+        "low": true
+      },
+      {
+        "recipeId": "koshari",
+        "locale": "en",
+        "value": "about 48 / serving",
+        "macros": 4,
+        "low": true
+      },
+      {
+        "recipeId": "tabbouleh",
+        "locale": "sv",
+        "value": "cirka 7 / portion",
+        "macros": 4,
+        "low": true
+      },
+      {
+        "recipeId": "yangzhou-paistettu-riisi",
+        "locale": "th",
+        "value": "ประมาณ 25 / หนึ่งที่",
+        "macros": 4,
+        "low": true
+      }
+    ],
+    "heldIncomplete": 11,
+    "teaIncomplete": true,
+    "sourceLinks": 11,
+    "pageErrors": []
+  },
+  "correctionsBeforeFirstBuild": [
+    "Explicit source verification date",
+    "Decimal-comma prose spacing",
+    "Stovetop cooking metadata and localized Italian tags",
+    "Historical source/nutrition snapshots and obsolete previous-version expectations"
+  ],
+  "orchestrationException": "One focused test group ran before ignored generated fixtures completed; failed missing-file checks were rerun after dependencies completed. No extra full build or PR CI."
+}

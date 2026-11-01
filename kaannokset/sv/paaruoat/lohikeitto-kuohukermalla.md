@@ -1,95 +1,88 @@
 ---
-title: Krämig laxsoppa med vispgrädde
+title: Laxsoppa med grädde – vattenversion utan fond
 recipe_id: lohikeitto-kuohukermalla
 url_slug: lohikeitto-kuohukermalla
 category: paaruoka
 language: sv
 servings: 4
-carbs_net_per_serving_g: 17.8
-carbs_total_per_serving_g: 20.16
-protein_per_serving_g: 23.39
-fat_per_serving_g: 38.64
+carbs_net_per_serving_g: 17.43
+carbs_total_per_serving_g: 19.64
+protein_per_serving_g: 23.29
+fat_per_serving_g: 38.62
 main_ingredient:
-  - lohi
-  - peruna
+- lohi
+- peruna
 cooking_method:
-  - liesi
+- liesi
 difficulty: lätt
 tags:
-  - lax soppa
-  - soppa
-  - fiskrätt
-  - vispgrädde
+- lax soppa
+- soppa
+- fiskrätt
+- vispgrädde
 image:
   src: paaruoat/lohikeitto-kuohukermalla.webp
-  alt: Krämig laxsoppa med vispgrädde, potatis, morot, purjolök och färsk dill
+  alt: Laxsoppa med grädde – vattenversion utan fond – serveringsillustration
   width: 1280
   height: 853
 ingredients:
-  - amount: 1
-    unit: ""
-    item: lök
-  - amount: 50
-    unit: g
-    item: purjolök
-  - amount: 6
-    unit: ""
-    item: potatis
-  - amount: 1
-    unit: ""
-    item: morot
-  - amount: 15
-    unit: g
-    item: smör
-    note: "Till stekning."
-  - amount: 8
-    unit: dl
-    item: vatten
-  - amount: 15
-    unit: ml
-    item: fiskfond
-    note: "Riktvärde 15 ml per 8 dl vatten; kontrollera förpackningens dosering."
-  - amount: 8
-    unit: st
-    item: "hela svartpepparkorn"
-  - amount: 400
-    unit: g
-    item: laxfilé
-  - amount: 2
-    unit: dl
-    item: vispgrädde
-  - amount: 3
-    unit: g
-    item: salt
-    note: "Cirka 1/2 tsk; anpassa efter fondens salthalt."
-  - amount: 10
-    unit: g
-    item: färsk dill
-    note: "Hackad."
+- amount: 55
+  unit: g
+  item: skalad gul lök
+- amount: 50
+  unit: g
+  item: purjolök
+- amount: 360
+  unit: g
+  item: rå skalad potatis
+- amount: 70
+  unit: g
+  item: morot
+- amount: 15
+  unit: g
+  item: smör, inklusive allt smör till panna eller form
+- amount: 800
+  unit: g
+  item: vatten för angiven tillagning
+- amount: 0.5
+  unit: g
+  item: malen svartpeppar
+- amount: 400
+  unit: g
+  item: rå odlad laxfilé
+- amount: 200
+  unit: g
+  item: vispgrädde, 38 % fett
+- amount: 10
+  unit: g
+  item: färsk dill
+- amount: null
+  unit: ''
+  item: salt efter smak
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/lohikeitto-kuohukermalla.md
 translation_of: lohikeitto-kuohukermalla
 ---
 
-# Krämig laxsoppa med vispgrädde
-
-En rejäl laxsoppa görs på potatis, grönsaker och lax. Vispgrädde och färsk dill kompletterar den milda buljongen.
+# Laxsoppa med grädde – vattenversion utan fond
 
 ## Beskrivning
 
-Hemmasoppa med traditionell smak, där fiskfond ger djup åt buljongen och kan mjuka upp smaken av lök och purjolök. Servera med rågbröd om du vill.
+Laxsoppa med grädde – vattenversion utan fond.
 
-## Gör så här
+## Ingredienser
 
-1. Skala och hacka löken. Dela purjolöken på längden, skölj noga och skär i tunna skivor. Skala eller pensla potatisen och skär i lagom stora bitar. Hacka moroten.
-2. Smält smöret i en kastrull efter smak. Fräs löken och purjolöken i några minuter tills de mjuknar men inte får färg.
-3. Tillsätt vatten, fiskfond enligt förpackningsdosering och hela svartpepparkorn i grytan. Tillsätt potatis och morot. Koka försiktigt tills grönsakerna nästan är kokta.
-4. Ta bort skinn och ben från laxen. Skär fisken i stora tärningar och lägg i grytan.
-5. Häll i vispgrädden. Sjud på svag värme i några minuter tills laxen är genomstekt. Undvik kraftig kokning.
-6. Smaka av buljongen och salt vid behov. Rör ner den hackade dillen och servera varm.
+De vägda ingredienserna visas ovan.
+
+## Tillagning
+
+1. Fräs 55 g lök, 50 g purjolök och 70 g morot i 15 g smör för denna version utan fond. Tillsätt 800 g vatten och 360 g rå skalad potatis. Koka potatisen klar.
+2. Tillsätt 400 g rå laxfilé, 200 g grädde och 0,5 g malen svartpeppar. Tillaga fisken helt. Tillsätt ingen fiskfond i denna namngivna version.
+3. Tillsätt 10 g dill och fördela hela soppan med all vätska på fyra portioner. Den malda pepparn äts; inga hela pepparkorn ska tas bort.
 
 ## Anteckningar
 
-– Fiskfond varierar i styrka och sälta. Följ doseringen på förpackningen och smaka av innan du tillsätter salt.
-– Rågbröd passar att servera till soppa.
+GL är en modellerad summa av ingredienser med låg säkerhet, inte ett uppmätt måltidssvar. Alla tillgängliga kolhydrater ingår. Något biologiskt osäkerhetsintervall är inte känt. Bilden illustrerar servering; tillbehör som inte finns i listan ingår inte i näringsvärden eller GL. Alla angivna ätliga ingredienser, sås och allt fett äts. Hantera kokvattnet enligt instruktionen; ingen omätt tillagnings- eller urlakningsförlust dras av.
+
+Potatisens GI 66 är en namngiven analogi med låg säkerhet. Ett modellerat GL nära 10,46 garanterar inte samma sida av gränsen mellan låg och måttlig nivå vid ett annat GI-val. Något biologiskt osäkerhetsintervall är inte fastställt.
