@@ -1,23 +1,19 @@
 {
   "recipeId": "malesialainen-nasi-lemak-aamiaisella",
-  "sourceHash": "550e92e83292a6f67d08f36b03c0ab78c66c6b7453b230fffea970daf128d67b",
-  "calculatedAt": "2026-10-25",
-  "batchId": "batch-16",
+  "sourceHash": "b1e5ef9f2d3e0dbe51e82eaa78e2dccfc7761ad452bbde6a241ca7f4aada4281",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-81",
   "servings": 2,
-  "scope": "Two servings; 100 g dry white long-grain rice, 200 ml canned regular-fat coconut milk, two medium eggs (110 g edible), 100 g peeled raw cucumber; salt omitted.",
+  "scope": "Complete weighed candidate; all edible ingredients and listed liquid retained. Raw-input composition proxies and LOW preparation analogues disclosed.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "riisi",
+      "item": "kuivaa valkoista basmati- tai jasmiiniriisiä",
       "amount": 100,
       "unit": "g",
       "state": "dry uncooked white long-grain rice",
-      "matchEvidence": "AFCD Release 3 record F007682 is uncooked white long-grain rice; these porridge and bowl recipes measure rice dry.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named basmati or jasmine white-rice option, hot cooked intact grain. Rice cooked with coconut milk is a LOW preparation analogue; no fat discount. Generic dry-rice composition is a proxy, not branded label.",
       "record": {
         "id": "afcd-F007682-release-3",
         "name": "Rice, white, uncooked",
@@ -36,20 +32,18 @@
           "protein": 7,
           "fat": 0.9
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "kookosmaito",
-      "amount": 200,
-      "unit": "ml",
+      "amount": 184.0,
+      "unit": "g",
       "state": "regular-fat canned coconut milk as sold",
-      "matchEvidence": "The recipe specifies coconut milk without a reduced-fat variant; AFCD record F002991 is canned regular-fat coconut milk.",
-      "gramsPerUnit": 0.92,
-      "conversionEvidence": "Canned regular-fat coconut milk represented at 0.92 g/ml, consistent with prior ingredient-specific batch conversions.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
       "record": {
         "id": "afcd-F002991-release-3",
         "name": "Coconut, milk, canned, regular fat",
@@ -68,20 +62,18 @@
           "protein": 1.4,
           "fat": 15.4
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "kananmuna",
-      "amount": 2,
-      "unit": "kpl",
+      "amount": 110,
+      "unit": "g",
       "state": "raw edible egg, shell removed",
-      "matchEvidence": "Fineli Release 20 record 858 is raw edible egg, shell removed.",
-      "gramsPerUnit": 55,
-      "conversionEvidence": "Fineli record 858 lists a medium egg portion (KPL_M) as 55 g edible egg without shell.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
       "record": {
         "id": "fineli-858-release-20",
         "name": "KANANMUNA, KUORETON",
@@ -110,18 +102,18 @@
           "protein": 12.61,
           "fat": 9.24
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "kurkku",
       "amount": 100,
       "unit": "g",
       "state": "raw peeled cucumber",
-      "matchEvidence": "AFCD Release 3 record F003319 is peeled raw common cucumber; listed amount is edible flesh.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit non-potato vegetable/fresh herb assignment under Atkinson coding method. Recipe-specific edible mass and all juices retained; not a tested GI.",
       "record": {
         "id": "afcd-F003319-release-3",
         "name": "Cucumber, common, peeled, raw",
@@ -140,19 +132,19 @@
           "protein": 0.4,
           "fat": 0.1
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "salt omitted; no contribution to displayed macronutrients",
-      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "state": "pure salt",
+      "matchEvidence": "Pure salt has no four-macro contribution",
+      "excludedReason": "Pure salt, sodium not calculated",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -160,7 +152,51 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
+    },
+    {
+      "item": "vettä",
+      "amount": 100,
+      "unit": "g",
+      "state": "plain tap water",
+      "matchEvidence": "Plain water, explicit zero CHO",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible ingredient before cooking, or identified cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients, fat and recipe liquid consumed; raw input macro proxy does not claim measured nutrient retention"
     }
   ]
 }

@@ -1,30 +1,26 @@
 {
   "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
-  "sourceHash": "6caa2053314dd931db49e4243a6a5481b4a33bc3b61e63dce0f269dcc9212da9",
-  "calculatedAt": "2026-10-24",
-  "batchId": "batch-14",
+  "sourceHash": "2c73c5865e30726fe6041f7e26a1d30d8546e98a5e6caaa3761660cc0d392d24",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-82",
   "servings": 2,
-  "scope": "Two servings. Uses 100 g dry white long-grain rice, 200 ml regular-fat canned coconut milk, two medium eggs (55 g edible each), and 100 g cucumber. All ingredients are counted as consumed.",
+  "scope": "Complete weighed candidate, all edible ingredients and liquid retained, raw-input nutrient proxies explicitly disclosed",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "kuivaa pitkäjyväistä valkoista riisiä",
+      "item": "kuivaa valkoista jasmiiniriisiä",
       "amount": 100,
       "unit": "g",
-      "state": "dry white long-grain rice, uncooked",
-      "matchEvidence": "AFCD Release 3 record F007682 is raw white long-grain rice; the recipes now specify the dry ingredient mass.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "dry uncooked white long-grain rice",
+      "matchEvidence": "Named white jasmine rice served hot as intact cooked grain, cooked per pack. Coconut/soup/pan context is an explicit LOW analogy; no cooling or fat discount. Generic composition separately sourced.",
       "record": {
         "id": "afcd-F007682-release-3",
         "name": "Rice, white, uncooked",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "dry white long-grain rice, uncooked",
+        "state": "dry uncooked white long-grain rice",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -36,27 +32,25 @@
           "protein": 7,
           "fat": 0.9
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "täysrasvaista kookosmaitoa",
       "amount": 200,
-      "unit": "ml",
-      "state": "canned regular-fat coconut milk as sold",
-      "matchEvidence": "AFCD Release 3 record F002991 is regular-fat canned coconut milk, matching the recipe wording.",
-      "gramsPerUnit": 1,
-      "conversionEvidence": "For this pourable canned coconut milk, 1 ml is represented as 1 g; all listed amount is counted.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "unit": "g",
+      "state": "regular-fat canned coconut milk as sold",
+      "matchEvidence": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
       "record": {
         "id": "afcd-F002991-release-3",
         "name": "Coconut, milk, canned, regular fat",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "canned regular-fat coconut milk as sold",
+        "state": "regular-fat canned coconut milk as sold",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -68,20 +62,18 @@
           "protein": 1.4,
           "fat": 15.4
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "kananmuna",
-      "amount": 2,
-      "unit": "kpl",
+      "amount": 110,
+      "unit": "g",
       "state": "raw edible egg, shell removed",
-      "matchEvidence": "Raw edible egg; Fineli Release 20 record 858.",
-      "gramsPerUnit": 55,
-      "conversionEvidence": "Fineli record 858 medium egg portion KPL_M = 55 g edible egg without shell.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
       "record": {
         "id": "fineli-858-release-20",
         "name": "KANANMUNA, KUORETON",
@@ -110,18 +102,18 @@
           "protein": 12.61,
           "fat": 9.24
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "kurkkua",
       "amount": 100,
       "unit": "g",
       "state": "raw cucumber",
-      "matchEvidence": "Raw cucumber; Fineli Release 20 record 346.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
       "record": {
         "id": "fineli-346-release-20",
         "name": "KURKKU",
@@ -150,19 +142,18 @@
           "protein": 0.65,
           "fat": 0.1
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Proposed weighed edible input or cooked/drained product as stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible ingredients and recipe liquid consumed; raw nutrient-input proxy, no unmeasured loss discount"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
-      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "state": "pure salt",
+      "excludedReason": "Pure salt has zero of the four macros",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -170,7 +161,11 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
     }
   ]
 }

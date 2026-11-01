@@ -1,10 +1,10 @@
 {
   "recipeId": "vietnamilainen-hu-tieu-aamiaiskeitto",
-  "sourceHash": "7db7cdd4730deaca493d842dc1e04358c8f858aa243342151553fd4083d469de",
-  "calculatedAt": "2026-10-25",
-  "batchId": "batch-16",
+  "sourceHash": "b3def13d581597ebad4c96e285618043a3958e0928dddc0bcb03af152d3ac518",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-80",
   "servings": 2,
-  "scope": "Two servings; 100 g dry rice noodles, 150 g raw lean pork loin, 150 g raw bean sprouts, two tablespoons chopped coriander (6 g), 700 ml water; salt omitted.",
+  "scope": "Specified weighed recipe version; all listed food and liquid consumed; LOW ingredient-based model, not measured meal response.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -13,11 +13,7 @@
       "amount": 100,
       "unit": "g",
       "state": "dry rice noodles as sold",
-      "matchEvidence": "Fineli Release 20 record 29055 is dry rice noodles; both soup recipes list the uncooked ingredient weight.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "100 g dry rice noodles, boiled and served hot. Same food form as table row 1463, different unspecified brand is a LOW analogy.",
       "record": {
         "id": "fineli-29055-release-20",
         "name": "NUUDELI, RIISINUUDELI",
@@ -46,18 +42,18 @@
           "protein": 3.44,
           "fat": 0.56
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion as recipe definition",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredients and cooking liquid divided equally; actual kitchen losses not measured"
     },
     {
       "item": "porsaan ulkofileetä",
       "amount": 150,
       "unit": "g",
       "state": "raw lean pork loin roast",
-      "matchEvidence": "AFCD Release 3 record F007037 is raw lean pork loin, matching the clarified pork ingredient.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
       "record": {
         "id": "afcd-F007037-release-3",
         "name": "Pork, loin roast, lean, raw",
@@ -76,18 +72,18 @@
           "protein": 23.3,
           "fat": 2.2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion as recipe definition",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredients and cooking liquid divided equally; actual kitchen losses not measured"
     },
     {
       "item": "pavunitu",
       "amount": 150,
       "unit": "g",
       "state": "fresh raw bean sprouts",
-      "matchEvidence": "AFCD Release 3 record F008806 is fresh raw bean sprout.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained.",
       "record": {
         "id": "afcd-F008806-release-3",
         "name": "Sprout, bean, fresh, raw",
@@ -106,20 +102,18 @@
           "protein": 3.1,
           "fat": 0.1
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion as recipe definition",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredients and cooking liquid divided equally; actual kitchen losses not measured"
     },
     {
       "item": "korianteri",
-      "amount": 2,
-      "unit": "rkl",
+      "amount": 6,
+      "unit": "g",
       "state": "fresh raw coriander leaves, chopped",
-      "matchEvidence": "AFCD Release 3 record F003192 is fresh raw coriander leaves.",
-      "gramsPerUnit": 3,
-      "conversionEvidence": "One tablespoon chopped coriander leaves is represented as 3 g.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained.",
       "record": {
         "id": "afcd-F003192-release-3",
         "name": "Coriander, fresh, raw",
@@ -138,20 +132,18 @@
           "protein": 3.1,
           "fat": 0.6
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion as recipe definition",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredients and cooking liquid divided equally; actual kitchen losses not measured"
     },
     {
       "item": "vettä",
       "amount": 700,
-      "unit": "ml",
+      "unit": "g",
       "state": "plain tap water",
-      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
-      "gramsPerUnit": 1,
-      "conversionEvidence": "Water is represented at 1 g/ml.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
       "record": {
         "id": "fineli-922-release-20",
         "name": "VESI, VESIJOHTOVESI",
@@ -180,19 +172,19 @@
           "protein": 0,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion as recipe definition",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredients and cooking liquid divided equally; actual kitchen losses not measured"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "salt omitted; no contribution to displayed macronutrients",
-      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "state": "pure salt",
+      "matchEvidence": "Pure salt has no contribution to four macros",
+      "excludedReason": "Pure salt, sodium not calculated",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -200,7 +192,11 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "All consumed"
     }
   ]
 }

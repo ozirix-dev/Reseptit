@@ -1,30 +1,26 @@
 {
   "recipeId": "indonesialainen-bubur-ayam-kanariisipuuro",
-  "sourceHash": "7eef8dab61b5e8b34634c008415e949873fbc4a31df814ba68319eb826175b7a",
-  "calculatedAt": "2026-10-24",
-  "batchId": "batch-14",
+  "sourceHash": "8acb79f9c313abd32e67004a8dfda4d15ada6bc538cc0354e4a392935fe340c0",
+  "calculatedAt": "2026-10-30",
+  "batchId": "batch-80",
   "servings": 2,
-  "scope": "Two servings. Uses 100 g dry white long-grain rice, 150 g raw skinless chicken breast, ginger, spring onion and 700 ml water. Chicken is included at raw weight; cooking water is retained in the porridge.",
+  "scope": "Specified weighed recipe version; all listed food and liquid consumed; LOW ingredient-based model, not measured meal response.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "kuivaa pitkäjyväistä valkoista riisiä",
+      "item": "kuivaa valkoista jasmiiniriisiä",
       "amount": 100,
       "unit": "g",
-      "state": "dry white long-grain rice, uncooked",
-      "matchEvidence": "AFCD Release 3 record F007682 is raw white long-grain rice; the recipes now specify the dry ingredient mass.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "dry uncooked white long-grain rice",
+      "matchEvidence": "100 g dry jasmine rice cooked as hot soft porridge for about 40 min in 800 g water. Source steamed 31.6 g rice in 250 ml water; simmering is an explicit applied comparison, not identical measurement.",
       "record": {
         "id": "afcd-F007682-release-3",
         "name": "Rice, white, uncooked",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "dry white long-grain rice, uncooked",
+        "state": "dry uncooked white long-grain rice",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -36,25 +32,25 @@
           "protein": 7,
           "fat": 0.9
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion as recipe definition",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredients and cooking liquid divided equally; actual kitchen losses not measured"
     },
     {
       "item": "broilerin nahatonta rintafileetä",
       "amount": 150,
       "unit": "g",
-      "state": "raw lean skinless chicken breast meat",
-      "matchEvidence": "AFCD Release 3 record F002594 is raw lean chicken breast flesh; recipe quantity is raw edible weight.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "state": "raw lean skinless chicken breast flesh",
+      "matchEvidence": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
       "record": {
         "id": "afcd-F002594-release-3",
         "name": "Chicken, breast, lean flesh, raw",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "raw lean skinless chicken breast meat",
+        "state": "raw lean skinless chicken breast flesh",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -66,27 +62,25 @@
           "protein": 22.5,
           "fat": 0.8
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion as recipe definition",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredients and cooking liquid divided equally; actual kitchen losses not measured"
     },
     {
       "item": "inkivääri",
-      "amount": 1,
-      "unit": "tl",
-      "state": "fresh peeled ginger, grated",
-      "matchEvidence": "Fresh peeled ginger; AFCD record F004213 has paired available-carbohydrate values.",
-      "gramsPerUnit": 2,
-      "conversionEvidence": "One teaspoon finely grated fresh ginger represented as 2 g.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "amount": 2,
+      "unit": "g",
+      "state": "peeled fresh raw ginger",
+      "matchEvidence": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained.",
       "record": {
         "id": "afcd-F004213-release-3",
         "name": "Ginger, peeled, fresh, raw",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "fresh peeled ginger, grated",
+        "state": "peeled fresh raw ginger",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -98,27 +92,25 @@
           "protein": 0.8,
           "fat": 0.4
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion as recipe definition",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredients and cooking liquid divided equally; actual kitchen losses not measured"
     },
     {
       "item": "kevätsipuli",
-      "amount": 2,
-      "unit": "rkl",
-      "state": "raw spring onion, chopped",
-      "matchEvidence": "Raw spring onion; AFCD record F006250.",
-      "gramsPerUnit": 6,
-      "conversionEvidence": "Two tablespoons chopped spring onion are represented as 6 g per tablespoon.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "amount": 12,
+      "unit": "g",
+      "state": "fresh raw spring onion, chopped",
+      "matchEvidence": "Explicit low-carbohydrate fresh vegetable/herb assignment following Atkinson 2008. Not measured GI, a maximum or a confidence interval. All positive carbohydrate is retained.",
       "record": {
         "id": "afcd-F006250-release-3",
         "name": "Onion, spring, fresh, raw",
         "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
         "retrievedAt": "2026-10-24",
         "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "raw spring onion, chopped",
+        "state": "fresh raw spring onion, chopped",
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
@@ -130,27 +122,25 @@
           "protein": 1.7,
           "fat": 0.2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion as recipe definition",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredients and cooking liquid divided equally; actual kitchen losses not measured"
     },
     {
       "item": "vettä",
-      "amount": 700,
-      "unit": "ml",
-      "state": "tap water",
-      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
-      "gramsPerUnit": 1,
-      "conversionEvidence": "Tap water density represented as 1 g/ml; Fineli record 922 confirms zero energy and macronutrients.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "amount": 800,
+      "unit": "g",
+      "state": "plain tap water",
+      "matchEvidence": "Explicit zero available carbohydrate in the identified composition record, not a GI=0 assumption.",
       "record": {
         "id": "fineli-922-release-20",
         "name": "VESI, VESIJOHTOVESI",
         "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
         "retrievedAt": "2026-10-24",
         "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "tap water",
+        "state": "plain tap water",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "componentValues": {
@@ -172,19 +162,19 @@
           "protein": 0,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion as recipe definition",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredients and cooking liquid divided equally; actual kitchen losses not measured"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
-      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "state": "pure salt",
+      "matchEvidence": "Pure salt has no contribution to four macros",
+      "excludedReason": "Pure salt, sodium not calculated",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -192,7 +182,11 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "All consumed"
     }
   ]
 }

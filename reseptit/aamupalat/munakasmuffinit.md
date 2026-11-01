@@ -1,5 +1,5 @@
 ---
-title: Munakasmuffinit
+title: Munakasmuffinit – punnittu versio
 recipe_id: munakasmuffinit
 url_slug: munakasmuffinit
 category: aamupala
@@ -7,39 +7,42 @@ language: fi
 status: published
 diet_class: keto
 main_ingredient:
-  - kananmuna
+- kananmuna
 cooking_method:
-  - paistaminen
+- paistaminen
 ingredients:
-  - amount: 5
-    unit: kpl
-    item: kananmunaa
-  - amount: 60
-    unit: g
-    item: pekonia
-  - amount: 40
-    unit: g
-    item: tuoretta pinaattia
-  - amount: 50
-    unit: g
-    item: cheddarjuustoa
-  - amount: 2
-    unit: rkl
-    item: kuohukermaa
-  - amount: null
-    unit: ""
-    item: mustapippuria
-carbs_net_per_serving_g: 0.6
-carbs_total_per_serving_g: 0.9
-protein_per_serving_g: 19.1
-fat_per_serving_g: 24.6
+- amount: 275
+  unit: g
+  item: kananmunaa kuorettomana
+- amount: 60
+  unit: g
+  item: pekonia
+- amount: 40
+  unit: g
+  item: pinaattia
+- amount: 50
+  unit: g
+  item: 34% cheddarjuustoa
+- amount: 30
+  unit: g
+  item: 38% kuohukermaa
+- amount: 0.5
+  unit: g
+  item: jauhettua mustapippuria
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
+carbs_net_per_serving_g: 0.68
+carbs_total_per_serving_g: 0.89
+protein_per_serving_g: 19.16
+fat_per_serving_g: 24.56
 servings: 3
 time_total_min: 30
 difficulty: Helppo
 tags:
-  - aamupala
-  - kananmuna
-  - munaruoka
+- aamupala
+- kananmuna
+- munaruoka
 image:
   src: aamupalat/munakasmuffinit.webp
   alt: Pekoni-, pinaatti- ja juustomunakasmuffinit
@@ -47,17 +50,11 @@ image:
   height: 1024
 ---
 
-# Munakasmuffinit
-
-## Kuvaus
-
-Munakasmuffinit kypsyvät uunissa pieniksi annospaloiksi. Täytteeksi tulee pinaattia, pekonia ja juustoa.
-
-## Ainekset
-
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+# Munakasmuffinit – punnittu versio
 
 ## Valmistus
+
+Punnitse yllä luetellut syötävät raaka-aineet grammoina, kananmunat ilman kuorta. Käytä vain lueteltu rasva ja mausteet.
 
 1. Lämmitä uuni 190 asteeseen. Voitele kuusi muffinivuokaa.
 2. Paista pekoni pannulla rapeaksi ja nosta talouspaperille. Hienonna pinaatti ja pekoni.
@@ -65,6 +62,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 4. Jaa seos vuokiin ja paista 16–20 minuuttia, kunnes keskusta on hyytynyt.
 5. Anna muffinien levätä viisi minuuttia ennen tarjoilua.
 
+Syö kaikki luetellut ainekset ja kastike/pannuneste ilmoitettuna annosmääränä. Raakojen ainesten koostumus toimii kypsän ruoan ravintoarvoproxyna; mittaamatonta kypsennyshävikkiä ei vähennetä.
+
 ## Muistiinpanot
 
-Muffinit säilyvät jääkaapissa pari päivää ja lämpenevät nopeasti uudelleen.
+Mallinnettu ainesosakohtainen GK perustuu julkaistuun GI-koodaukseen ja nimettyihin projektin soveltamisrajoihin. Luottamus on matala; biologista epävarmuusväliä ei tunneta. Kaikki imeytyvät hiilihydraatit ovat mukana. Kuva on kuvituskuva: ylimääräiset lisukkeet eivät kuulu arvioon.

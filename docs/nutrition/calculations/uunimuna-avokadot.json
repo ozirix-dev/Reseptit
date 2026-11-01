@@ -1,0 +1,396 @@
+{
+  "recipeId": "uunimuna-avokadot",
+  "sourceHash": "336061c09c139d9976960e68815b94c891a64e610b8cbd6f5e4a98215caa58a7",
+  "calculatedAt": "2026-10-31",
+  "batchId": "batch-83",
+  "servings": 2,
+  "scope": "Complete weighed Q09 variant; all edible ingredients and sauce consumed",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "avokadon syötävää hedelmälihaa",
+      "amount": 200,
+      "unit": "g",
+      "state": "AVOKADO, KUORITTU, KIVETÖN",
+      "matchEvidence": "Explicit AVOCADO identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+      "record": {
+        "id": "F11057-q09",
+        "name": "AVOKADO, KUORITTU, KIVETÖN",
+        "state": "AVOKADO, KUORITTU, KIVETÖN",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11057",
+        "licence": "THL Fineli Release20 CC BY4.0",
+        "basis": "per100g-edible",
+        "referenceRecord": {
+          "source_id": "11057",
+          "name": "AVOKADO, KUORITTU, KIVETÖN",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "FRUITOTH",
+          "food_class": "FRUFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.77,
+            "fibre_g_per_100g": 3.6,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 2.63,
+            "fat_g_per_100g": 19.4
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_S": 100.0,
+            "KPL_M": 120.0
+          }
+        },
+        "totalCarbohydratePer100g": 4.37,
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.77,
+          "protein": 2.63,
+          "fat": 19.4,
+          "fibre": 3.6,
+          "polyols": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported Fineli component or AFCD with-minus-without sugar alcohol carbohydrate; not a new laboratory measurement",
+        "retrievedAt": "2026-10-30",
+        "verifiedAt": "2026-10-31"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, egg without shell, fish drained as listed",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible ingredients, seasonings, sauce and pan juices consumed; raw-input composition proxy, no invented cooking loss"
+    },
+    {
+      "item": "kananmunaa kuorettomana",
+      "amount": 200,
+      "unit": "g",
+      "state": "KANANMUNA, KUORETON",
+      "matchEvidence": "Explicit EGG identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+      "record": {
+        "id": "F858-q09",
+        "name": "KANANMUNA, KUORETON",
+        "state": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+        "licence": "THL Fineli Release20 CC BY4.0",
+        "basis": "per100g-edible",
+        "referenceRecord": {
+          "source_id": "858",
+          "name": "KANANMUNA, KUORETON",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "EGG",
+          "food_class": "EGGS",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.3,
+            "fibre_g_per_100g": 0.0,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 12.61,
+            "fat_g_per_100g": 9.24
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI1302"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_M": 55.0
+          }
+        },
+        "totalCarbohydratePer100g": 0.3,
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "protein": 12.61,
+          "fat": 9.24,
+          "fibre": 0.0,
+          "polyols": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported Fineli component or AFCD with-minus-without sugar alcohol carbohydrate; not a new laboratory measurement",
+        "retrievedAt": "2026-10-30",
+        "verifiedAt": "2026-10-31"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, egg without shell, fish drained as listed",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible ingredients, seasonings, sauce and pan juices consumed; raw-input composition proxy, no invented cooking loss"
+    },
+    {
+      "item": "laimentamatonta sitruunamehua",
+      "amount": 5,
+      "unit": "g",
+      "state": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+      "matchEvidence": "Explicit CITRUS_JUICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+      "record": {
+        "id": "F11557-q09",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "state": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11557",
+        "licence": "THL Fineli Release20 CC BY4.0",
+        "basis": "per100g-edible",
+        "referenceRecord": {
+          "source_id": "11557",
+          "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+          "food_type": "FOOD",
+          "process": "MASH",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "JUICE",
+          "food_class": "FRUBJUIC",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 1.6,
+            "fibre_g_per_100g": 0.1,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 0.31,
+            "fat_g_per_100g": 0.0
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 100.0,
+            "RKL": 15.0,
+            "TL": 5.0
+          }
+        },
+        "totalCarbohydratePer100g": 1.7000000000000002,
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "protein": 0.31,
+          "fat": 0.0,
+          "fibre": 0.1,
+          "polyols": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported Fineli component or AFCD with-minus-without sugar alcohol carbohydrate; not a new laboratory measurement",
+        "retrievedAt": "2026-10-30",
+        "verifiedAt": "2026-10-31"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, egg without shell, fish drained as listed",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible ingredients, seasonings, sauce and pan juices consumed; raw-input composition proxy, no invented cooking loss"
+    },
+    {
+      "item": "tuoretta ruohosipulia",
+      "amount": 7,
+      "unit": "g",
+      "state": "RUOHOSIPULI",
+      "matchEvidence": "Explicit NONSTARCHY_VEGETABLE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+      "record": {
+        "id": "F392-q09",
+        "name": "RUOHOSIPULI",
+        "state": "RUOHOSIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/392",
+        "licence": "THL Fineli Release20 CC BY4.0",
+        "basis": "per100g-edible",
+        "referenceRecord": {
+          "source_id": "392",
+          "name": "RUOHOSIPULI",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "VEGLEAF",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.73,
+            "fibre_g_per_100g": 2.1,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 2.2,
+            "fat_g_per_100g": 0.92
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI1302"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 40.0,
+            "RKL": 7.0
+          }
+        },
+        "totalCarbohydratePer100g": 2.83,
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.73,
+          "protein": 2.2,
+          "fat": 0.92,
+          "fibre": 2.1,
+          "polyols": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported Fineli component or AFCD with-minus-without sugar alcohol carbohydrate; not a new laboratory measurement",
+        "retrievedAt": "2026-10-30",
+        "verifiedAt": "2026-10-31"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, egg without shell, fish drained as listed",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible ingredients, seasonings, sauce and pan juices consumed; raw-input composition proxy, no invented cooking loss"
+    },
+    {
+      "item": "jauhettua mustapippuria",
+      "amount": 0.5,
+      "unit": "g",
+      "state": "Pepper, black, ground",
+      "matchEvidence": "Explicit GROUND_SPICE identity and weighed edible input. Published coding/project scope, LOW, not a measured ingredient GI; raw-input nutrient retention proxy with all edible portions consumed.",
+      "record": {
+        "id": "A006618-q09",
+        "name": "Pepper, black, ground",
+        "state": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618",
+        "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+        "basis": "per100g-edible",
+        "referenceRecord": {
+          "source_id": "F006618",
+          "classification": 31302,
+          "derivation": "Borrowed",
+          "name": "Pepper, black, ground",
+          "protein_g_per_100g": 10.4,
+          "fat_g_per_100g": 3.3,
+          "fibre_g_per_100g": 25.3,
+          "glycerol_g_per_100g": null,
+          "erythritol_g_per_100g": null,
+          "maltitol_g_per_100g": null,
+          "mannitol_g_per_100g": null,
+          "xylitol_g_per_100g": null,
+          "sorbitol_g_per_100g": null,
+          "available_carbohydrate_without_sugar_alcohols_g_per_100g": 38.6,
+          "available_carbohydrate_with_sugar_alcohols_g_per_100g": 38.6
+        },
+        "totalCarbohydratePer100g": 63.900000000000006,
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 38.6,
+          "protein": 10.4,
+          "fat": 3.3,
+          "fibre": 25.3,
+          "polyols": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported Fineli component or AFCD with-minus-without sugar alcohol carbohydrate; not a new laboratory measurement",
+        "retrievedAt": "2026-10-30",
+        "verifiedAt": "2026-10-31"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, egg without shell, fish drained as listed",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible ingredients, seasonings, sauce and pan juices consumed; raw-input composition proxy, no invented cooking loss"
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "pure salt",
+      "excludedReason": "Pure salt contains zero of the four macros",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure sodium chloride has no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
+    }
+  ]
+}
