@@ -1,0 +1,48 @@
+{
+  "A": {
+    "recipes": 130,
+    "decisions": {
+      "CONDITIONAL": 101,
+      "HOLD": 21,
+      "NOT AFFECTED": 8
+    },
+    "afcdRecipes": 101
+  },
+  "B": {
+    "recipes": 20,
+    "decisions": {
+      "HOLD": 20
+    },
+    "afcdRecipes": 20
+  },
+  "C": {
+    "recipes": 2,
+    "decisions": {
+      "CONDITIONAL": 2
+    },
+    "afcdRecipes": 2
+  },
+  "D": {
+    "recipes": 88,
+    "decisions": {
+      "HOLD": 87,
+      "NOT AFFECTED": 1
+    },
+    "afcdRecipes": 78
+  },
+  "productionDetails": {
+    "confirmedAfcdChainRecipes": 101,
+    "gkSourceAfcd": 91,
+    "macroSourceAfcd": 94,
+    "both": 84,
+    "onlyGk": 7,
+    "onlyMacros": 10,
+    "missingMacroEvidenceFiles": 30,
+    "displayedMacroEvidenceGap": 28,
+    "additionalMacroTraceGapWithNoAfcdGk": 21,
+    "noAfcdIssueInTracedData": 8,
+    "ofThoseNoNutritionPackageDisplayed": 2,
+    "provedChangedProductionGkPoints": 0,
+    "knownAdditionalSpeciesPositiveFoodsAmongThe130": 0
+  }
+}

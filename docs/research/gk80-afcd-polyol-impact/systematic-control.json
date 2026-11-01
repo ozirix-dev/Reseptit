@@ -1,0 +1,24 @@
+{
+  "status": "REPRODUCED_EXISTING_DEFECT",
+  "syntheticOnly": true,
+  "expected": {
+    "available": 13,
+    "net": 13,
+    "totalCarbohydrate": 20
+  },
+  "actual": {
+    "available": 16,
+    "net": 13,
+    "totalCarbohydrate": 23
+  },
+  "cause": "US_TOTAL available is C-F including P, while net is C-F-P. Total then reconstructs (C-F)+F+P and double-counts P; the legacy GL path consumes available rather than net.",
+  "unknownPolyolsControl": {
+    "available": 16,
+    "net": null
+  },
+  "euAvailableNoDoubleSubtraction": {
+    "available": 20,
+    "net": 20
+  },
+  "productionCodeChanged": false
+}

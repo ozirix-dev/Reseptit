@@ -1,0 +1,15 @@
+{
+  "status": "PROPOSAL_ONLY_NOT_APPLIED",
+  "name": "AFCD9837 published nutrition-package correction",
+  "recipeIds": [
+    "keto-suklaakeksit",
+    "keto-mutakakku"
+  ],
+  "currentGkState": "Both already HOLD; remain HOLD",
+  "numericGkCoverageChange": 0,
+  "why": "Both recipe pages are published although GK is HOLD. AFCD9837 has separately reported maltitol28, erythritol3.8 and xylitol3.6. Existing macro evidence uses only28g/100g polyols, undercounting the reported-species subtotal by7.4g/100g. Aggregate remains unknown, so adding7.4 and publishing a new precise total would still be unsupported.",
+  "proposedDataOnlyCorrection": "Preserve exact recipe/servings/grams/preparation. Archive old four macros and source/hash provenance. Mark aggregate polyols unknown while retaining pair and named species separately. Withhold the two currently published four-macro packages using the existing insufficient-evidence path, including every existing translated version. Do not weaken the global verifier or add a new partial-publication contract. Other three nutrient values are not asserted to be arithmetically wrong; the four-macro package is withheld because the existing verifier requires complete evidence.",
+  "futureValidation": "Exactly these two nutrition packages and explicit evidence status change; all130 numeric GK values and the326-result status set remain unchanged. Verify source hashes, translations, strict audit and one necessary publication build only during the separately authorized correction. No action in this audit.",
+  "ownerApprovalRequired": true,
+  "alternativeNotSelected": "valimerellinen-pinaatti-fetashakshuka"
+}
