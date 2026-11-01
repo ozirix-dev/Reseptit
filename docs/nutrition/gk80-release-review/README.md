@@ -1,7 +1,10 @@
 # Julkaisukatselmointi:24 reseptiä ja Q09
 
-Päätös CONDITIONAL GO tekniseen julkaisuvalmisteluun. Omistajan hyväksyntää
-ei ole saatu. Ei Readyä, mergeä, deployta eikä AJO7:ää.
+Omistaja hyväksyi päätökset A–C final release gaten rajauksin1.11.2026.
+Voimassa oleva [hyväksyntä ja seuraava julkaisuportti](owner-approval.md)
+yksilöi katselmoidun HEADin ja32 reseptiversiota sekä tee-munien numeron poiston.
+Alla oleva katselmointi säilyy päätöksen taustana. Readyä, mergeä, deployta
+tai AJO7:ää ei ole tässä valtuutettu.
 
 Lähtö: main e8da2c9417e2aeff55a85d599b3b7e1ad465f36c.
 Lähde-PR146:5735e46f3939bfbc3154a1226e71729fa112522c;
