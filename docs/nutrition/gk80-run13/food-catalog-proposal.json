@@ -1,0 +1,1062 @@
+{
+  "schemaVersion": 1,
+  "foodTypes": {
+    "A000155": "NONSTARCHY_VEGETABLE",
+    "A000396": "NONSTARCHY_VEGETABLE",
+    "A002390": "NONSTARCHY_VEGETABLE",
+    "A002896": "NONSTARCHY_VEGETABLE",
+    "A003192": "NONSTARCHY_VEGETABLE",
+    "A003319": "NONSTARCHY_VEGETABLE",
+    "A004193": "NONSTARCHY_VEGETABLE",
+    "A004213": "NONSTARCHY_VEGETABLE",
+    "A005191": "NONSTARCHY_VEGETABLE",
+    "A005700": "NONSTARCHY_VEGETABLE",
+    "A005946": "NONSTARCHY_VEGETABLE",
+    "A006250": "NONSTARCHY_VEGETABLE",
+    "A008761": "NONSTARCHY_VEGETABLE",
+    "A008806": "NONSTARCHY_VEGETABLE",
+    "A009190": "NONSTARCHY_VEGETABLE",
+    "A010466": "NONSTARCHY_VEGETABLE",
+    "F300": "NONSTARCHY_VEGETABLE",
+    "F311": "NONSTARCHY_VEGETABLE",
+    "F320": "NONSTARCHY_VEGETABLE",
+    "F322": "NONSTARCHY_VEGETABLE",
+    "F324": "NONSTARCHY_VEGETABLE",
+    "F330": "NONSTARCHY_VEGETABLE",
+    "F333": "NONSTARCHY_VEGETABLE",
+    "F335": "NONSTARCHY_VEGETABLE",
+    "F339": "NONSTARCHY_VEGETABLE",
+    "F34234": "NONSTARCHY_VEGETABLE",
+    "F346": "NONSTARCHY_VEGETABLE",
+    "F352": "NONSTARCHY_VEGETABLE",
+    "F362": "NONSTARCHY_VEGETABLE",
+    "F369": "NONSTARCHY_VEGETABLE",
+    "F386": "NONSTARCHY_VEGETABLE",
+    "F387": "NONSTARCHY_VEGETABLE",
+    "F389": "NONSTARCHY_VEGETABLE",
+    "F392": "NONSTARCHY_VEGETABLE",
+    "F398": "NONSTARCHY_VEGETABLE",
+    "A002258": "GROUND_SPICE",
+    "A002893": "GROUND_SPICE",
+    "A002963": "GROUND_SPICE",
+    "A003190": "GROUND_SPICE",
+    "A003327": "GROUND_SPICE",
+    "A004210": "GROUND_SPICE",
+    "A006281": "GROUND_SPICE",
+    "A006316": "GROUND_SPICE",
+    "A006618": "GROUND_SPICE",
+    "A009160": "GROUND_SPICE",
+    "A009335": "GROUND_SPICE",
+    "A008214": "WHOLE_SEED",
+    "F34245": "WHOLE_SEED",
+    "F500": "DAIRY",
+    "F576": "DAIRY",
+    "F631": "DAIRY",
+    "F11211": "DAIRY",
+    "F11571": "DAIRY",
+    "F34765": "DAIRY",
+    "A002466": "DAIRY",
+    "F689": "MILK",
+    "F619": "YOGURT",
+    "F620": "YOGURT",
+    "F34611": "YOGURT",
+    "F685": "CONDENSED_MILK",
+    "A005633": "CONDENSED_MILK",
+    "A005582": "CONDENSED_MILK",
+    "A007682": "RICE",
+    "F11521": "RICE",
+    "F1370": "RICE",
+    "A006143": "OAT_FLAKES",
+    "F29055": "RICE_NOODLE",
+    "A003239": "COUSCOUS",
+    "F117": "WHEAT_PASTA",
+    "F29823": "CORN_FLOUR",
+    "F1056": "WHEAT_BREAD",
+    "F31842": "WHEAT_BREAD",
+    "A007535": "BUTTERNUT",
+    "A002991": "COCONUT_MILK",
+    "A002983": "COCONUT_FLESH",
+    "F30207": "SOY_DRINK",
+    "A008065": "SOY_SAUCE",
+    "A008004": "FISH_SAUCE",
+    "A009076": "TAHINI",
+    "A000448": "KIDNEY_BEAN",
+    "F11089": "CHICKPEA",
+    "F399": "LENTIL",
+    "F11049": "BANANA",
+    "A003496": "DATE",
+    "A006528": "PAPAYA",
+    "F11045": "ORANGE",
+    "F11062": "PEAR",
+    "F11048": "CITRUS_FRUIT",
+    "A005199": "CITRUS_FRUIT",
+    "A005198": "NATIVE_LIME",
+    "F11557": "CITRUS_JUICE",
+    "A004726": "CITRUS_JUICE",
+    "A004729": "CITRUS_JUICE",
+    "F1": "SUGAR",
+    "A008969": "SUGAR",
+    "A004380": "HONEY",
+    "A009350": "VANILLA_EXTRACT",
+    "F858": "EGG",
+    "F8513": "EGG",
+    "F29": "STOCK",
+    "F30315": "STOCK",
+    "A008936": "STOCK",
+    "chicken-label-proxy": "STOCK",
+    "A002220": "NAMED_LOW_CHO",
+    "F7600": "NAMED_LOW_CHO",
+    "F779": "NAMED_LOW_CHO",
+    "F929": "NAMED_LOW_CHO",
+    "maille-label-proxy": "NAMED_LOW_CHO",
+    "F205": "POTATO",
+    "F337": "NONSTARCHY_VEGETABLE",
+    "F303": "NONSTARCHY_VEGETABLE",
+    "F30369": "NAMED_LOW_CHO",
+    "F7607": "SAUSAGE_HIGH_CHO",
+    "F649": "DAIRY",
+    "F29065": "DAIRY",
+    "F675": "MILK",
+    "F628": "DAIRY",
+    "F630": "DAIRY",
+    "F653": "DAIRY",
+    "F655": "DAIRY",
+    "F642": "DAIRY",
+    "A002414": "DAIRY",
+    "A002405": "DAIRY",
+    "A005299": "MANGO",
+    "A001929": "BULGUR",
+    "A009854": "CORN_TORTILLA",
+    "F1108": "WHEAT_BREAD",
+    "A006677": "GREEN_PEA",
+    "A003129": "SWEET_CORN",
+    "A003133": "SWEET_CORN",
+    "F11178": "GROUND_SPICE",
+    "F11057": "AVOCADO",
+    "U171315": "GROUND_SPICE",
+    "U170917": "GROUND_SPICE",
+    "U170928": "GROUND_SPICE",
+    "U171325": "GROUND_SPICE",
+    "A006321": "NONSTARCHY_VEGETABLE",
+    "F7530": "NAMED_LOW_CHO",
+    "F698": "DAIRY",
+    "F29239": "DAIRY",
+    "maille": "NAMED_LOW_CHO",
+    "F35554": "CORN_TORTILLA",
+    "A003202": "SWEET_CORN",
+    "F370": "GREEN_PEA",
+    "A006538": "GREEN_PEA",
+    "F30346": "RICE",
+    "F34667": "PEANUT_BUTTER",
+    "A006077": "ALMOND_FLOUR",
+    "F182": "RICE_FLOUR",
+    "F162": "POTATO_STARCH",
+    "F34255": "FISH",
+    "A003269": "DAIRY",
+    "F33456": "NONSTARCHY_VEGETABLE",
+    "A006118": "GROUND_SPICE",
+    "A002970": "GROUND_SPICE",
+    "A000430": "NONSTARCHY_VEGETABLE",
+    "A006110": "WHOLE_PEANUT",
+    "A000431": "NONSTARCHY_VEGETABLE",
+    "A001301": "NONSTARCHY_VEGETABLE",
+    "A002901": "NONSTARCHY_VEGETABLE",
+    "A003820": "NONSTARCHY_VEGETABLE",
+    "A009021": "NONSTARCHY_VEGETABLE",
+    "F359": "NONSTARCHY_VEGETABLE",
+    "F354": "NONSTARCHY_VEGETABLE",
+    "F338": "NONSTARCHY_VEGETABLE",
+    "F393": "NONSTARCHY_VEGETABLE",
+    "F34238": "NONSTARCHY_VEGETABLE",
+    "A002452": "DAIRY",
+    "F32201": "DAIRY",
+    "F622": "DAIRY",
+    "A003337": "GROUND_SPICE",
+    "F11177": "GROUND_SPICE",
+    "A008210": "WHOLE_SEED",
+    "A008212": "WHOLE_SEED",
+    "A008215": "WHOLE_SEED",
+    "F385": "WHOLE_SEED",
+    "A007502": "NAMED_LOW_CHO",
+    "A009837": "NAMED_LOW_CHO",
+    "A005968": "NAMED_LOW_CHO",
+    "F34738": "NAMED_LOW_CHO",
+    "F34845": "NAMED_LOW_CHO",
+    "F34847": "NAMED_LOW_CHO",
+    "F375": "NAMED_LOW_CHO",
+    "F29014": "COCONUT_MILK",
+    "F11087": "TAHINI",
+    "A003209": "SWEET_CORN",
+    "F3040": "SWEET_CORN",
+    "F34229": "GREEN_PEA",
+    "A002881": "CHICKPEA",
+    "F31218": "CHICKPEA",
+    "A008952": "STRAWBERRY",
+    "F447": "STRAWBERRY",
+    "A001290": "BLUEBERRY",
+    "A001289": "BLUEBERRY",
+    "F442": "BLUEBERRY",
+    "A006628": "PERSIMMON",
+    "A006088": "WHOLE_CASHEW"
+  },
+  "sourceRules": {
+    "vegetable-imputation40-r13": {
+      "foodKinds": [
+        "NONSTARCHY_VEGETABLE"
+      ],
+      "consumedForm": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+    },
+    "small-flavour50-r6-r13": {
+      "foodKinds": [
+        "GROUND_SPICE",
+        "WHOLE_SEED",
+        "VANILLA_EXTRACT"
+      ],
+      "consumedForm": "AS_DEFINED"
+    },
+    "lowcho50-r6-r13": {
+      "foodKinds": [
+        "NONSTARCHY_VEGETABLE",
+        "COCONUT_MILK",
+        "COCONUT_FLESH",
+        "SOY_DRINK",
+        "SOY_SAUCE",
+        "FISH_SAUCE",
+        "TAHINI",
+        "CITRUS_JUICE",
+        "CITRUS_FRUIT",
+        "NAMED_LOW_CHO",
+        "EGG",
+        "STOCK",
+        "AVOCADO"
+      ],
+      "consumedForm": "AS_DEFINED"
+    },
+    "sucrose60-r13": {
+      "foodKinds": [
+        "SUGAR"
+      ],
+      "consumedForm": "AS_DEFINED"
+    },
+    "peas42-r5-r13": {
+      "foodKinds": [
+        "GREEN_PEA"
+      ],
+      "consumedForm": "COOKED_WHOLE"
+    },
+    "pasta-mean49-r13": {
+      "foodKinds": [
+        "WHEAT_PASTA"
+      ],
+      "consumedForm": "BOILED_DRAINED"
+    },
+    "dairy-imputation30-r13": {
+      "foodKinds": [
+        "DAIRY",
+        "MILK",
+        "YOGURT"
+      ],
+      "consumedForm": "AS_DEFINED"
+    },
+    "honey-category-mean-gi-55-2002-r13": {
+      "foodKinds": [
+        "HONEY"
+      ],
+      "consumedForm": "AS_DEFINED"
+    }
+  },
+  "aliases": [
+    {
+      "compositionId": "F335-6ba1ac5f0fae",
+      "foodId": "F335",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "yellow onion",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F352-58127334244a",
+      "foodId": "F352",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw tomato",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A004193-373db01f4b79",
+      "foodId": "A004193",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw garlic",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A004213-9f483aefc457",
+      "foodId": "A004213",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "fresh ginger",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A006618-7e2ec113475e",
+      "foodId": "A006618",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "ground black pepper",
+      "allowedSources": [
+        "small-flavour50-r6-r13"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A003190-0a7b321e52b2",
+      "foodId": "A003190",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "ground coriander seed",
+      "allowedSources": [
+        "small-flavour50-r6-r13"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A002963-c7d8c5e492dd",
+      "foodId": "A002963",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "ground cinnamon",
+      "allowedSources": [
+        "small-flavour50-r6-r13"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F858-1ea4f3108df6",
+      "foodId": "F858",
+      "foodKind": "EGG",
+      "inputForm": "raw edible egg, shell removed",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F386-e27f40a9b153",
+      "foodId": "F386",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw red bell pepper, medium edible portion",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F335-f12f9eeb2fe6",
+      "foodId": "F335",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw yellow onion, medium edible portion",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F929-136105c6fc3f",
+      "foodId": "F929",
+      "foodKind": "NAMED_LOW_CHO",
+      "inputForm": "rice vinegar represented by generic wine vinegar",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F1-05750d79139c",
+      "foodId": "F1",
+      "foodKind": "SUGAR",
+      "inputForm": "white granulated sugar",
+      "allowedSources": [
+        "sucrose60-r13"
+      ],
+      "consumedForms": {
+        "sucrose60-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F1-fa79516444f9",
+      "foodId": "F1",
+      "foodKind": "SUGAR",
+      "inputForm": "sugar; generic sucrose proxy for brown sugar",
+      "allowedSources": [
+        "sucrose60-r13"
+      ],
+      "consumedForms": {
+        "sucrose60-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F370-d9d33d015ed6",
+      "foodId": "F370",
+      "foodKind": "GREEN_PEA",
+      "inputForm": "fresh green peas, raw edible portion",
+      "allowedSources": [
+        "peas42-r5-r13"
+      ],
+      "consumedForms": {
+        "peas42-r5-r13": "COOKED_WHOLE"
+      }
+    },
+    {
+      "compositionId": "F300-8df873cec159",
+      "foodId": "F300",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw medium carrot, edible portion",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F117-14a36d1eff0e",
+      "foodId": "F117",
+      "foodKind": "WHEAT_PASTA",
+      "inputForm": "as-listed; no recipe-specific cooking retention adjustment",
+      "allowedSources": [
+        "pasta-mean49-r13"
+      ],
+      "consumedForms": {
+        "pasta-mean49-r13": "BOILED_DRAINED"
+      }
+    },
+    {
+      "compositionId": "F335-28df8555f540",
+      "foodId": "F335",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "as-listed; recipe-specific edible/retention adjustments are not modelled",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F649-841dec5e7158",
+      "foodId": "F649",
+      "foodKind": "DAIRY",
+      "inputForm": "RAEJUUSTO, RASVAA 2-5 %",
+      "allowedSources": [
+        "dairy-imputation30-r13"
+      ],
+      "consumedForms": {
+        "dairy-imputation30-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F858-c9fe16913280",
+      "foodId": "F858",
+      "foodKind": "EGG",
+      "inputForm": "as-listed; recipe-specific edible/retention adjustments are not modelled",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F675-39492a985710",
+      "foodId": "F675",
+      "foodKind": "MILK",
+      "inputForm": "as-listed; no recipe-specific cooking retention adjustment",
+      "allowedSources": [
+        "dairy-imputation30-r13"
+      ],
+      "consumedForms": {
+        "dairy-imputation30-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F29065-cc34ca2b0936",
+      "foodId": "F29065",
+      "foodKind": "DAIRY",
+      "inputForm": "as-listed; recipe-specific edible/retention adjustments are not modelled",
+      "allowedSources": [
+        "dairy-imputation30-r13"
+      ],
+      "consumedForms": {
+        "dairy-imputation30-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A004193-489d8be5ddeb",
+      "foodId": "A004193",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "Garlic, peeled, fresh, raw",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A006618-86e7fe9b5674",
+      "foodId": "A006618",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "Pepper, black, ground",
+      "allowedSources": [
+        "small-flavour50-r6-r13"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A006316-c1b7c942aad4",
+      "foodId": "A006316",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "ground paprika",
+      "allowedSources": [
+        "small-flavour50-r6-r13"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A002991-2a40d1552bad",
+      "foodId": "A002991",
+      "foodKind": "COCONUT_MILK",
+      "inputForm": "regular-fat canned coconut milk as sold",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F11057-8ab850816ec4",
+      "foodId": "F11057",
+      "foodKind": "AVOCADO",
+      "inputForm": "peeled pitted avocado",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A004729-54bcef29b36e",
+      "foodId": "A004729",
+      "foodKind": "CITRUS_JUICE",
+      "inputForm": "undiluted lime juice",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A009837-47350a9faba0",
+      "foodId": "A009837",
+      "foodKind": "NAMED_LOW_CHO",
+      "inputForm": "dark chocolate, no added sugar",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F500-a3d3eecfb8f2",
+      "foodId": "F500",
+      "foodKind": "DAIRY",
+      "inputForm": "raw/as listed",
+      "allowedSources": [
+        "dairy-imputation30-r13"
+      ],
+      "consumedForms": {
+        "dairy-imputation30-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F858-4cb08623e89c",
+      "foodId": "F858",
+      "foodKind": "EGG",
+      "inputForm": "raw egg, shell excluded",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A009350-faa8256752f5",
+      "foodId": "A009350",
+      "foodKind": "VANILLA_EXTRACT",
+      "inputForm": "vanilla bean extract",
+      "allowedSources": [
+        "small-flavour50-r6-r13"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A002991-7dfe4e74453e",
+      "foodId": "A002991",
+      "foodKind": "COCONUT_MILK",
+      "inputForm": "canned coconut milk, regular fat",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A000431-30b5fb6423d5",
+      "foodId": "A000431",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw green bean, edible portion",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F386-c09fccdaced2",
+      "foodId": "F386",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw red pepper edible portion",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A005199-5025b4c7e23e",
+      "foodId": "A005199",
+      "foodKind": "CITRUS_FRUIT",
+      "inputForm": "ordinary peeled lime, all flesh and juice retained",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A000396-351b8d7f71f4",
+      "foodId": "A000396",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "fresh raw basil",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A009160-c0676aa048e5",
+      "foodId": "A009160",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "dried ground thyme",
+      "allowedSources": [
+        "small-flavour50-r6-r13"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F620-0a4e118f14c2",
+      "foodId": "F620",
+      "foodKind": "YOGURT",
+      "inputForm": "plain unsweetened Bulgarian-style yogurt, 3.9% fat",
+      "allowedSources": [
+        "dairy-imputation30-r13"
+      ],
+      "consumedForms": {
+        "dairy-imputation30-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F34245-58806bb9fc58",
+      "foodId": "F34245",
+      "foodKind": "WHOLE_SEED",
+      "inputForm": "hulled white sesame seeds",
+      "allowedSources": [
+        "small-flavour50-r6-r13"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F335-56d2b77c8d9e",
+      "foodId": "F335",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw yellow onion",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F500-1b8f2b0fdc36",
+      "foodId": "F500",
+      "foodKind": "DAIRY",
+      "inputForm": "butter",
+      "allowedSources": [
+        "dairy-imputation30-r13"
+      ],
+      "consumedForms": {
+        "dairy-imputation30-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F320-4489906aae71",
+      "foodId": "F320",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw white cabbage",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A001301-ab35edfd5586",
+      "foodId": "A001301",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw bok choy",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A008214-bcf96a2e6a8b",
+      "foodId": "A008214",
+      "foodKind": "WHOLE_SEED",
+      "inputForm": "sesame seeds",
+      "allowedSources": [
+        "small-flavour50-r6-r13"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F398-915ca563e3f8",
+      "foodId": "F398",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "canned crushed tomatoes",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A008936-491510bd8b71",
+      "foodId": "A008936",
+      "foodKind": "STOCK",
+      "inputForm": "prepared liquid stock",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A006316-47d3c25a3bd0",
+      "foodId": "A006316",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "dried ground paprika, smoked style represented by dry paprika",
+      "allowedSources": [
+        "small-flavour50-r6-r13"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A004380-839570b4d160",
+      "foodId": "A004380",
+      "foodKind": "HONEY",
+      "inputForm": "honey as sold",
+      "allowedSources": [
+        "honey-category-mean-gi-55-2002-r13"
+      ],
+      "consumedForms": {
+        "honey-category-mean-gi-55-2002-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A002963-ed0ea7b5c0a9",
+      "foodId": "A002963",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "dried ground cinnamon",
+      "allowedSources": [
+        "small-flavour50-r6-r13"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A008969-9bb71fa63b36",
+      "foodId": "A008969",
+      "foodKind": "SUGAR",
+      "inputForm": "brown sugar as sold",
+      "allowedSources": [
+        "sucrose60-r13"
+      ],
+      "consumedForms": {
+        "sucrose60-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A004729-59807dbca3eb",
+      "foodId": "A004729",
+      "foodKind": "CITRUS_JUICE",
+      "inputForm": "lime juice",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A004193-cfe971794ffd",
+      "foodId": "A004193",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw peeled garlic",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A009335-8a7d921d0793",
+      "foodId": "A009335",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "ground turmeric",
+      "allowedSources": [
+        "small-flavour50-r6-r13"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F352-5de18ea9da91",
+      "foodId": "F352",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw medium tomato, edible portion",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F698-52a74c3d626a",
+      "foodId": "F698",
+      "foodKind": "DAIRY",
+      "inputForm": "regular-fat cheddar cheese",
+      "allowedSources": [
+        "dairy-imputation30-r13"
+      ],
+      "consumedForms": {
+        "dairy-imputation30-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F628-e9195b318e35",
+      "foodId": "F628",
+      "foodKind": "DAIRY",
+      "inputForm": "crème fraîche, 28% fat",
+      "allowedSources": [
+        "dairy-imputation30-r13"
+      ],
+      "consumedForms": {
+        "dairy-imputation30-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A006316-dd63995f5114",
+      "foodId": "A006316",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "dried paprika powder",
+      "allowedSources": [
+        "small-flavour50-r6-r13"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F11571-74dad4880b13",
+      "foodId": "F11571",
+      "foodKind": "DAIRY",
+      "inputForm": "plain 11% cream cheese",
+      "allowedSources": [
+        "dairy-imputation30-r13"
+      ],
+      "consumedForms": {
+        "dairy-imputation30-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A007502-9d1f463a1c62",
+      "foodId": "A007502",
+      "foodKind": "NAMED_LOW_CHO",
+      "inputForm": "dry psyllium husk",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A004726-76ae0b5a6ee2",
+      "foodId": "A004726",
+      "foodKind": "CITRUS_JUICE",
+      "inputForm": "Juice, lemon",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F622-a19b020de539",
+      "foodId": "F622",
+      "foodKind": "DAIRY",
+      "inputForm": "raw/as listed",
+      "allowedSources": [
+        "dairy-imputation30-r13"
+      ],
+      "consumedForms": {
+        "dairy-imputation30-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A005946-d6706347417a",
+      "foodId": "A005946",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "common button mushroom, fresh raw",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F29-835aae2365ae",
+      "foodId": "F29",
+      "foodKind": "STOCK",
+      "inputForm": "diluted meat stock as sold",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A006250-1a2ce191ee19",
+      "foodId": "A006250",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw spring onion",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F929-8a35f59a4fed",
+      "foodId": "F929",
+      "foodKind": "NAMED_LOW_CHO",
+      "inputForm": "black rice vinegar represented by vinegar",
+      "allowedSources": [
+        "lowcho50-r6-r13"
+      ],
+      "consumedForms": {
+        "lowcho50-r6-r13": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "A004213-2d2a2f072b0f",
+      "foodId": "A004213",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "fresh raw ginger",
+      "allowedSources": [
+        "vegetable-imputation40-r13"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40-r13": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    }
+  ]
+}

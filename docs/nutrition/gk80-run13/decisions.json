@@ -1,0 +1,759 @@
+{
+  "recipes": [
+    {
+      "recipeId": "chettinad-kana",
+      "title": "Chettinad-kana paahdetuilla mausteilla",
+      "state": "HOLD",
+      "reasonCodes": [
+        "MISSING_COMPOSITION_OR_QUANTITY"
+      ],
+      "reasons": [
+        {
+          "code": "MISSING_COMPOSITION_OR_QUANTITY",
+          "ingredient": 7,
+          "name": "fenkolinsiemeniä",
+          "detail": "UNRESOLVED_OMITTED_INGREDIENT"
+        },
+        {
+          "code": "MISSING_COMPOSITION_OR_QUANTITY",
+          "ingredient": 10,
+          "name": "tuoreita currylehtiä",
+          "detail": "UNRESOLVED_OMITTED_INGREDIENT"
+        }
+      ],
+      "sourcePath": "reseptit/paaruoat/chettinad-kana.md",
+      "sourceSha256": "92672822970d68f41f3a1698dbd4c665c928a48738ba2447f586e47f7c018da3",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "0549a69f9ed3f935a184c0f2c6aea0bc310cba18226517e4701d411c85739480",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "hapanimela-porsas",
+      "title": "Hapanimelä porsas ja kasvikset",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 2,
+          "name": "maissitärkkelystä",
+          "foodId": "F27",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 7,
+          "name": "valutettua ananasta omassa mehussaan",
+          "foodId": "F471",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 8,
+          "name": "ketsuppia",
+          "foodId": "F353",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 11,
+          "name": "soijakastiketta",
+          "foodId": "F31",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 13,
+          "name": "keitettyä pitkäjyväistä valkoista riisiä",
+          "foodId": "F30346",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/paaruoat/hapanimela-porsas.md",
+      "sourceSha256": "2b5b1a12add2b95057c032ad37750688908a7e561114c856a3ce4517bfd10966",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "6de2a718fbfdba7d2d2d43ce748f48bbbdbedaf9d852d7426bfbabfe1136b574",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "indonesialainen-pisang-goreng-aamiaiseksi",
+      "title": "Pisang goreng banaanifritterit",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 0,
+          "name": "kuorittua banaania",
+          "foodId": "F11049",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 1,
+          "name": "riisijauho",
+          "foodId": "F182",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 2,
+          "name": "kuivattua kookoshiutaletta",
+          "foodId": "A002987",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/aamupalat/indonesialainen-pisang-goreng-aamiaiseksi.md",
+      "sourceSha256": "138cdf475d4ee52853833fad3ad08a91fb97f0f5f1e951edaeb8d0477d0a79f7",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "5e16b0dd7a4b74a84ab650f13f028c15eb9b4e94252e3f25ffb496318ed02654",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "intialainen-mannasuurimoupma",
+      "title": "Pehmeä mannasuurimoupma",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+        "MISSING_COMPOSITION_OR_QUANTITY"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 0,
+          "name": "mannasuurimo",
+          "foodId": "F112",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "MISSING_COMPOSITION_OR_QUANTITY",
+          "ingredient": 3,
+          "name": "tuoreita curry-lehtiä",
+          "detail": "UNRESOLVED_OMITTED_INGREDIENT"
+        }
+      ],
+      "sourcePath": "reseptit/aamupalat/intialainen-mannasuurimoupma.md",
+      "sourceSha256": "edc2d2353036c6e400361951048a4be69d4943d9ad78a40058de0458015fd562",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "32ed4955026fdc498aeecd4abbfb2b004dbc328e4818fb142a732a82313254b6",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "jauheliha-makaronilaatikko",
+      "title": "Jauheliha-makaronilaatikko — 7 % jauhelihan ja tuoreen valkosipulin versio",
+      "state": "NUMERIC_REVIEW_PROPOSAL",
+      "reasonCodes": [],
+      "reasons": [],
+      "sourcePath": "reseptit/paaruoat/jauheliha-makaronilaatikko.md",
+      "sourceSha256": "29d29a7faeff8029b9700b1d21f3e14bde10bedae2988112987437eee4e98eba",
+      "proposedVersionPath": "docs/nutrition/gk80-run13/versions/jauheliha-makaronilaatikko.md",
+      "wholeGk": 17.607725,
+      "publicationMacros": {
+        "carbsNetG": 37.35,
+        "carbsTotalG": 39.2,
+        "proteinG": 47.73,
+        "fatG": 27.99
+      },
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "2d39b0c11f3e710c38a0d23b44c437606e881795e14a738dff85e6fca8a2527d",
+      "wholeGkRange": null,
+      "scenarioValues": [
+        17.607725
+      ]
+    },
+    {
+      "recipeId": "karibia-bammy-kassavaleipa",
+      "title": "Bammy-kassavaleipä avokadolla",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 0,
+          "name": "kuorittua tuoretta kassavaa",
+          "foodId": "A002286",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/aamupalat/karibia-bammy-kassavaleipa.md",
+      "sourceSha256": "7d428074d611fe4099d474cae84332bfada53d7be72e7aaba65f2eb440530951",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "def28ddf364d5b0fea0d919ef1fe0c82829c1c691dcf39fd52c1190987dbf877",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "keto-mutakakku",
+      "title": "Mutakakku – keto",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 4,
+          "name": "mantelijauhoa",
+          "foodId": "A006077",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 5,
+          "name": "kaakaojauhetta",
+          "foodId": "F20",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/jalkiruoat/keto-mutakakku.md",
+      "sourceSha256": "4c3766146f4fd3379a8581f4ec4023c0b32d7bab1e593f75bb7ca30e096de17e",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "a346cfd4d120dca9f8832907e3f5386857628619aed53a9b4dccd4ed347951ec",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "kookos-lime-kanacurry",
+      "title": "Kookos-lime-kanacurry",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 2,
+          "name": "thaimaalaista currytahnaa",
+          "foodId": null,
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 5,
+          "name": "kalakastiketta",
+          "foodId": null,
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/paaruoat/kookos-lime-kanacurry.md",
+      "sourceSha256": "3b0e306e88dc4feed09e84a47c445e87dff9046c7ea83bddf4605cfe98187f9c",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "eb175334f5d100571068309255de00b0ec3b850f96e4bff51a1df1830aa20dc4",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "lahi-ita-manakish-zaatarilla",
+      "title": "Manakish za’atarilla aamiaiseksi",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 0,
+          "name": "vehnäjauhoja",
+          "foodId": "F110",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md",
+      "sourceSha256": "b1c6167df859ba8589506e7bdc4a87a42e72a69ed175d073001422eb515fbd45",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "9d9258e41454bd3a974a7fdb99d40e33d0bb34940cd2e7cdf3964e8fa17c99ae",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "lindstrominpihvit-kaalilla",
+      "title": "Lindströminpihvit ja voissa paistettu kaali",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+        "MISSING_COMPOSITION_OR_QUANTITY"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 1,
+          "name": "säilykepunajuurta",
+          "foodId": "A001010",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "MISSING_COMPOSITION_OR_QUANTITY",
+          "ingredient": 2,
+          "name": "punajuurilientä",
+          "detail": "UNRESOLVED_OMITTED_INGREDIENT"
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 5,
+          "name": "Dijon-sinappia",
+          "foodId": "F28",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/paaruoat/lindstrominpihvit-kaalilla.md",
+      "sourceSha256": "ea116b68468b429136a7d799a9e84530ab6d618b77aa4dcd2a18857599f77069",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "d7cb1865fd8109083381b31b6c1294bd4d9ffb89c646966554aef33110258dc3",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "malesialainen-roti-jala-currykanalla",
+      "title": "Roti jala currykanalla",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 0,
+          "name": "vehnäjauho",
+          "foodId": "F110",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/aamupalat/malesialainen-roti-jala-currykanalla.md",
+      "sourceSha256": "47a941e68c3b47e9b62d534ce5f21dd04c76b7db37426df7fe659e580474d576",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "f82f86bb5b06b3e5dedc3ba89475485c4c01762a45dd8b665f3a2b0bfc063e2c",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "miso-lohi-paksoi",
+      "title": "Miso-lohi paistetuilla paksoilla",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 1,
+          "name": "vaaleaa misotahnaa",
+          "foodId": "A005702",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 2,
+          "name": "tamaria",
+          "foodId": "F31",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/paaruoat/miso-lohi-paksoi.md",
+      "sourceSha256": "c83d14f66d5add960227fc90e39e720ccebb5c9473a5a69608a40ff2c8b2305e",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "bf65dd1219d2ecf7a551a90edacdd2c375d8c9b4a700ba1616aad0d21127a2c7",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "paella-valenciana",
+      "title": "Valencialainen paella kanalla",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+        "MISSING_COMPOSITION_OR_QUANTITY"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 1,
+          "name": "puuroriisiä, kuivapaino",
+          "foodId": "A007682",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "MISSING_COMPOSITION_OR_QUANTITY",
+          "ingredient": 6,
+          "name": "sahramia",
+          "detail": "UNRESOLVED_OMITTED_INGREDIENT"
+        },
+        {
+          "code": "MISSING_COMPOSITION_OR_QUANTITY",
+          "ingredient": 9,
+          "name": "rosmariinin oksa",
+          "detail": "UNRESOLVED_OMITTED_INGREDIENT"
+        }
+      ],
+      "sourcePath": "reseptit/paaruoat/paella-valenciana.md",
+      "sourceSha256": "49089d94833037456fa7f21b7e9b258a531c731db6f0344b2a789add6b96b3dd",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "a8287b2258cded38cc24af05c366cda8f474145155f968fe1c29751d320681f3",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-baghrir",
+      "title": "Marokkolainen baghrir hunajavoilla",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 0,
+          "name": "mannasuurimo",
+          "foodId": "F112",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 1,
+          "name": "vehnäjauho",
+          "foodId": "F110",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 2,
+          "name": "kuivahiivaa",
+          "foodId": "A009606",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md",
+      "sourceSha256": "465c021ba03a828a5a70f17ad6d5bce142e9cf957dc7af730bf5c1c352d8f706",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "00ac7e04489278d669bf66caa03f7440393bf30308bee083f146e064c1d555fc",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+      "title": "Pohjoisafrikkalainen taatelipuuro appelsiinilla",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 0,
+          "name": "mannasuurimo",
+          "foodId": "F112",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 1,
+          "name": "kivettömiä kuivattuja taateleita",
+          "foodId": "A003496",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 2,
+          "name": "kuorittua appelsiinia",
+          "foodId": "F11045",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md",
+      "sourceSha256": "bc0b56fcd0d24b4a227a0ff9343d86a8c4105760c6faf1735a0f8d044a68cfaf",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "0f45b5870c2aa04e964485f76dc562d2e9d70103534bc7ec9b5a03c3599b72f1",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "sate-ayam",
+      "title": "Indonesialaiset sate ayam -kanavartaat maapähkinäkastikkeella",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 1,
+          "name": "soijakastiketta",
+          "foodId": "F31",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 7,
+          "name": "maapähkinävoita",
+          "foodId": "F34667",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 9,
+          "name": "soijakastiketta",
+          "foodId": "F31",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/paaruoat/sate-ayam.md",
+      "sourceSha256": "3ed0776b1f7a4358f11648e9311faef5018a28b758e0826c72a0f62d26dda93b",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "88ef044516b52bed287b2265ae7048ef05b5cf9cc6ab016ed16a86b001e284ec",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "thai-kananmunat-kookoscurryssa",
+      "title": "Kananmunat kookoscurrykastikkeessa",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 2,
+          "name": "Mae Ploy punaista currytahnaa",
+          "foodId": null,
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 5,
+          "name": "kuivaa pitkäjyväistä valkoista riisiä",
+          "foodId": "A007682",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/aamupalat/thai-kananmunat-kookoscurryssa.md",
+      "sourceSha256": "1d127dee1a5b1e82c2cbbb7d71e41aac62e4d86266074d27d867197aa9e0ae83",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "b0efddb0a20814999c830ad4d5a24997f60d9ba788a1146de2c479eb81f44acb",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "uunimakkara-sipulipedilla",
+      "title": "Uunimakkara sipuli-sinappipeitteellä",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 0,
+          "name": "lenkkimakkaraa",
+          "foodId": "F7607",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 3,
+          "name": "Dijon-sinappia",
+          "foodId": "F28",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/paaruoat/uunimakkara-sipulipedilla.md",
+      "sourceSha256": "4bc6f751fc46af1fcb7b72419438cc55fd8132b6893d74ddb65a9b732089b092",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "d4a8dfa74129878771d79e5d571724c2109b85986987e8623a4bc23351335bbe",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "vhh-korvapuustit",
+      "title": "Korvapuustit mantelitaikinasta",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+        "MINOR_PORTION_RULE_NOT_MET"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 2,
+          "name": "mantelijauhoa",
+          "foodId": "A006077",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "MINOR_PORTION_RULE_NOT_MET",
+          "ingredient": 7,
+          "name": "kanelia",
+          "availableChoPerServing": 0.515625
+        }
+      ],
+      "sourcePath": "reseptit/jalkiruoat/vhh-korvapuustit.md",
+      "sourceSha256": "5719d9a040bacca1c6a8106269c736d57b8e560446ef81ce93a25b0d845aed2f",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "52d8b589e71713614faec81fe5591ae3d04b0962a53a761427ed1152a4da820a",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "vhh-omenapiirakka",
+      "title": "Omenapiirakka – VHH",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 0,
+          "name": "mantelijauhoa",
+          "foodId": "A006077",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 4,
+          "name": "pientä omenaa",
+          "foodId": "A000095",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/jalkiruoat/vhh-omenapiirakka.md",
+      "sourceSha256": "a22e61974772a696521e6a70376e7eeb132fb81668a5a04df4da700a77952536",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "7b4b491f6757d5b6c51f1007f12566eb91ba41fb37ecb469cca74835fc6e5f39",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "vietnamilainen-banh-cuon-sienilla",
+      "title": "Banh cuon sienitäytteellä",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 0,
+          "name": "riisijauho",
+          "foodId": "F182",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 4,
+          "name": "kalakastike",
+          "foodId": null,
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md",
+      "sourceSha256": "54b5cf45d8eeff8a07d9c5e9bcac2e4db43d916fb594818c2cc72485aafa9385",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "8d1be1a78b7231568fa4df6bef9d20ffbcb0dbddb2c7d93fdfc3837a9fe10809",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    },
+    {
+      "recipeId": "xiaolongbao",
+      "title": "Xiaolongbao-höyrynyytit",
+      "state": "HOLD",
+      "reasonCodes": [
+        "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED"
+      ],
+      "reasons": [
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 0,
+          "name": "vehnäjauhoja taikinaan",
+          "foodId": "F110",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        },
+        {
+          "code": "GI_FOOD_OR_PREPARATION_NOT_JUSTIFIED",
+          "ingredient": 6,
+          "name": "soijakastiketta",
+          "foodId": "F31",
+          "detail": "No relevant verified ingredient/preparation comparator or scoped existing assignment in this review. A whole-food, mixed-meal, flour or paste GI is not automatically interchangeable."
+        }
+      ],
+      "sourcePath": "reseptit/alkuruoat/xiaolongbao.md",
+      "sourceSha256": "2d0e026ce3e13ae802fb836053ee7c0b2a28a43ac0306a5ee902d59d1d2aa549",
+      "proposedVersionPath": null,
+      "wholeGk": null,
+      "publicationMacros": null,
+      "scope": "Owner review only, not installed or published",
+      "inputHash": "ec172472550cfa5b84095380224de1c6615b0329b3de390689389851998c5240",
+      "wholeGkRange": null,
+      "scenarioValues": []
+    }
+  ]
+}
