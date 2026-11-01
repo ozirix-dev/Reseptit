@@ -1,0 +1,25 @@
+{
+  "state": "READY FOR OWNER REVIEW",
+  "ownerApproved": false,
+  "runtimeIntegrated": false,
+  "independentMainBasedIntegrationRequired": true,
+  "recipeIds": [
+    "butter-chicken",
+    "palak-paneer",
+    "som-tam-vhh-kurkkuna",
+    "pohjoisafrikkalainen-harissa-shakshuka",
+    "moo-ping-vhh",
+    "nakkikeitto-kukkakaalilla",
+    "lanttulaatikko-kermainen"
+  ],
+  "lockedBundleHashes": {
+    "butter-chicken": "11432af0b5eb9fab808c6cad35d904f4c62eb7f1d3d65c3e326c152771fa512d",
+    "palak-paneer": "ffd1d53857b38cc30aa204c0fb02e93afbf1e8816c320d244c3c7faf919214d0",
+    "som-tam-vhh-kurkkuna": "dc7a2b57f8613da88f6ebb6e950f6a9c858c15dbdd0ec24b4c3bffe164a4ab0a",
+    "pohjoisafrikkalainen-harissa-shakshuka": "de2d2746ecd57f4dbf90a0c08db0dd3b8634223ceb57f4a49fc0be5e6c716a42",
+    "moo-ping-vhh": "e4d0750ba9ef69770b428f54e462bb31e4604c559631adc1c919fb8ec9175cb2",
+    "nakkikeitto-kukkakaalilla": "6301e77c1e4a1453e732e3c8f8f3aa3f8181bf513064e518612a329c6b7964d3",
+    "lanttulaatikko-kermainen": "7858b27d1cedc1e0006b5066d3ede35a64d4701a7bcd98677c8df417a835ba8e"
+  },
+  "scope": "Seven recipes only. Review exact contents, proxies and GI applications as one batch; do not append to PR150 after its final CI."
+}

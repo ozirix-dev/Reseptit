@@ -1,0 +1,2307 @@
+{
+  "baseMain": "cec3263b8643961a0da2538662960283fe6fdb0f",
+  "production": 106,
+  "releaseDraftAdditional": 8,
+  "reviewMaterialAdditional": 25,
+  "otherConditional": 22,
+  "withoutSufficientCurrentCalculation": 165,
+  "conditionalPotential": 161,
+  "gapProductionTo261": 155,
+  "gapAfterDraftTo261": 147,
+  "gapAfterAllCurrentlyConditionalTo261": 100,
+  "oldPotential163ReducedByHolds": 2,
+  "categories": {
+    "CHO_ONLY": 51,
+    "CONDITIONAL_RESEARCH_NUMERIC": 22,
+    "GK_NOT_CALCULABLE": 111,
+    "OWNER_REVIEW_MATERIAL_READY": 25,
+    "PREPARATION_VERSION_UNRESOLVED": 2,
+    "PREVIOUS_SOURCE_BINDING_REJECTED": 1,
+    "PUBLISHED_NUMERIC": 106,
+    "RELEASE_DRAFT": 8
+  },
+  "assignments": [
+    {
+      "recipeId": "munakokkeli",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "munakasmuffinit",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "munakasrulla-pinaatti-tuorejuustolla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "munatacot-huevos-rancheros",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "paprikauunimunakkaat",
+      "category": "RELEASE_DRAFT",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "shakshuka",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "uunimuna-avokadot",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "uunimunat-pinaatilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "tortilla-de-patatas",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "vhh-lihamureke",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "hummus",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "chili-con-carne-kukkakaaliriisi",
+      "category": "RELEASE_DRAFT",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "ratatouille",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "vhh-kaalikaarryleet",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "taytetyt-paprikat-vhh",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "munakoiso-jauhelihavuoka-vhh",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "valimerellinen-kikherne-yrttiaamiainen",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "lahi-ita-kikherne-shakshuka",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "massaman-curry-kanalla-vhh",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 6,
+      "remainingGiRows": 7
+    },
+    {
+      "recipeId": "chole-bhature",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 12,
+      "remainingGiRows": 13
+    },
+    {
+      "recipeId": "gulab-jamun",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 6,
+      "remainingGiRows": 7
+    },
+    {
+      "recipeId": "samosa",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 8,
+      "remainingGiRows": 9
+    },
+    {
+      "recipeId": "aloo-paratha",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 7,
+      "remainingGiRows": 8
+    },
+    {
+      "recipeId": "vada-pav",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 10,
+      "remainingGiRows": 9
+    },
+    {
+      "recipeId": "pani-puri",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 10,
+      "remainingGiRows": 11
+    },
+    {
+      "recipeId": "medu-vada",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "jauheliha-makaronilaatikko",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "lohikeitto-kuohukermalla",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "butter-chicken",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": 12,
+      "remainingGiRows": 12
+    },
+    {
+      "recipeId": "punainen-kanacurry-vhh",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 8,
+      "remainingGiRows": 8
+    },
+    {
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 7,
+      "remainingGiRows": 7
+    },
+    {
+      "recipeId": "panang-curry-kanalla-vhh",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 7,
+      "remainingGiRows": 7
+    },
+    {
+      "recipeId": "menemen",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "lihapullat-kermakastikkeessa-vhh",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kanakorma-kukkakaaliriisilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "uunikanapasta-kesakurpitsa",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "khao-kha-moo-vhh",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "larb-moo-vhh",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "jauhelihakastike-kesakurpitsanuudeleilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "pizza-margherita",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "meheva-suklaakakku",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 0,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "marjakiisseli-vaniljakastikkeella",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "pannacotta-marjakastikkeella",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "caponata",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "siemengranola-jogurtilla",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 0,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "koshari",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "baozi",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "bulgogi",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "congee-riisipuuro",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "harira",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kreikkalainen-moussaka",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "doner-kebab",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "souvlaki",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "gazpacho",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "spanakopita",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 0,
+      "remainingGiRows": 1
+    },
+    {
+      "recipeId": "tabbouleh",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "poronkaristys-kukkakaalimuusilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "liha-juureskeitto-perunaton",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "vhh-omenapiirakka",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "chettinad-kana",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "vhh-raparperipiirakka",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "vhh-mansikkakakku",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "raejuusto-pesto-kasviskulho",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "vhh-juustokakku",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "vhh-brita-kakku",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "rahkapiirakka-vhh",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "vhh-letut",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "vhh-lihapiirakka",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 0,
+      "remainingGiRows": 1
+    },
+    {
+      "recipeId": "vhh-runebergintortut",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "keto-korvapuustit",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "vhh-korvapuustit",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "keto-mutakakku",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "keto-suklaakeksit",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "vhh-mokkapalat",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "maksalaatikko-kukkakaalilla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "paistettu-maksa-pekonilla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "khao-man-gai-vhh",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "keltainen-kanacurry-vhh",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "kesakurpitsalasagne-vhh",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "pad-thai-vhh-konjac",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "vhh-lohikeitto-kukkakaalilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "valimerellinen-tortilla-espanola-aamupalaksi",
+      "category": "RELEASE_DRAFT",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kana-fajita-pelti",
+      "category": "RELEASE_DRAFT",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "italian-pata",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kukkakaaligratiini-pekonilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "valimerellinen-menemen-fetalla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "khao-soi-vhh-konjac",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 6
+    },
+    {
+      "recipeId": "broileri-kukkakaaligratiini",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "som-tam-vhh-kurkkuna",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "kanakeitto-pinaatti-sitruuna",
+      "category": "RELEASE_DRAFT",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "pad-kra-pao-vhh",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-maakouda",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kermainen-lohipata",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "gai-yang-vhh",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "tom-yum-goong-vhh",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "pad-kee-mao-vhh-konjac",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 6
+    },
+    {
+      "recipeId": "paahdettu-aamiaismunakoiso",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "vhh-mustikkapiirakka",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 0,
+      "remainingGiRows": 1
+    },
+    {
+      "recipeId": "ketopizza-pofiber-pohjalla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "tom-kha-gai-vhh",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 6
+    },
+    {
+      "recipeId": "marjainen-chiavanukas",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "halloumimunakas",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "pad-see-ew-vhh-konjac",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 6
+    },
+    {
+      "recipeId": "raejuusto-uunimunakas",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "keto-kauralesesampylat",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 0,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "keto-pannukakku",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kaakao-kookos-chia",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "parsakaali-sinihomejuustofrittata",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "yum-woon-sen-vhh",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "keto-pinaattiletut",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kurkku-oliivi-aamiaiskulho",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "uunilohi-smetanakuorrutteella",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "moo-ping-vhh",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": 6,
+      "remainingGiRows": 8
+    },
+    {
+      "recipeId": "uuniporsas-kermakastikkeessa-vhh",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kai-jiew-vhh",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "savulohi-avokadokulho",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "tonnikalamunakkaat-uunissa",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "hyderabadi-kanabiryani",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 10,
+      "remainingGiRows": 10
+    },
+    {
+      "recipeId": "bun-cha-hanoi",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "bibimbap",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "chow-mein",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "dan-dan-nuudelit",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 5,
+      "remainingGiRows": 6
+    },
+    {
+      "recipeId": "goi-cuon",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "hapanimela-porsas",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 6
+    },
+    {
+      "recipeId": "idli-sambar",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 6,
+      "remainingGiRows": 6
+    },
+    {
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "intialainen-rava-uttapam",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "intialainen-aloo-paratha",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "indonesialainen-bubur-ayam-kanariisipuuro",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "indonesialainen-serabi-kookospannukakku",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "dim-sum",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "yangzhou-paistettu-riisi",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "lanttulaatikko-kermainen",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "uunimakkara-sipulipedilla",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "amritsari-kala",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "lindstrominpihvit-kaalilla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "kana-yakitori-kaalilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "paprikainen-vhh-gulassi",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "kana-enchilada-kukkakaalivuoka",
+      "category": "RELEASE_DRAFT",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "nakkikastike-kukkakaalimuusi",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "karjalanpaisti-vhh",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kerala-kalacurry",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "kanapyorykat-tomaattikastike",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "silakkapihvit-tilli-kermakastike",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "kantonilainen-hoyrytetty-kala",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "tacokulho-nauta-avokado",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kanasalaatti-pesto-mozzarella",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "sitruuna-yrttikana-parsa",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "pho-bo",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 11,
+      "remainingGiRows": 12
+    },
+    {
+      "recipeId": "karibia-kookosriisi-pavuilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "thai-khao-tom-katkaravuilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "lahi-ita-kikhernejauho-yrttilettu",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "korealainen-yachaejuk-kasvisjuk",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "malesialainen-congee-inkivaarilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kiinalainen-tomaattimunakas-riisilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kiinalainen-riisipuuro-kananmunalla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "thai-jok-kanalla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "thai-porsasjok",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "lahi-ita-fattet-hummus",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-lablabi",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "jerk-kana",
+      "category": "PREPARATION_VERSION_UNRESOLVED",
+      "reason": "Alkuperäisen ja ehdotetun valmistuksen inkiväärijauhe puuttuu laskentasyötteestä kokonaan. Aiempi46.749225 on vain subtotal, ei koko reseptin GK. Lisää todellinen punnittu inkivääri, täydellinen koostumus ja sallittu GI-sidos; älä poista inkivääriä tavoitteen vuoksi.",
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "tangyuan",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 8,
+      "remainingGiRows": 8
+    },
+    {
+      "recipeId": "paella-valenciana",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 5,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "rendang-padang",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 12,
+      "remainingGiRows": 12
+    },
+    {
+      "recipeId": "malesialainen-apam-balik",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 8,
+      "remainingGiRows": 8
+    },
+    {
+      "recipeId": "malesialainen-kookos-banaanikulho",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 5,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "meksikolainen-kurpitsapuuro-piloncillolla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "indonesialainen-pisang-goreng-aamiaiseksi",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 7,
+      "remainingGiRows": 7
+    },
+    {
+      "recipeId": "nasi-lemak",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 12,
+      "remainingGiRows": 12
+    },
+    {
+      "recipeId": "char-siu",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "hernekeitto-savupotkalla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "lanzhou-naudanliha-nuudelikeitto",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 8,
+      "remainingGiRows": 9
+    },
+    {
+      "recipeId": "roujiamo",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 10,
+      "remainingGiRows": 11
+    },
+    {
+      "recipeId": "intialainen-ven-pongal",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "indialainen-poha-maapahkinoilla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 5,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "meksikolainen-aamiais-tacot-mustapavuilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "meksikolainen-paputostada-aamupalaksi",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 1
+    },
+    {
+      "recipeId": "intialainen-mannasuurimoupma",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "intialainen-pesarattu-mungpavuista",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "falafel",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 7,
+      "remainingGiRows": 8
+    },
+    {
+      "recipeId": "masala-dosa",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 9,
+      "remainingGiRows": 9
+    },
+    {
+      "recipeId": "intialainen-idli-kookoschutneylla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-baghrir",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "intialainen-masala-dosa",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "malesialainen-roti-canai-dhalilla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-bissara",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "lahi-ita-ful-medames",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "meksikolainen-chilaquiles-verdes",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "meksikolainen-huevos-divorciados",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "meksikolainen-molletes-pico-de-gallolla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "korealainen-bindaetteok-aamiaiseksi",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "vietnamilainen-banh-cuon-sienilla",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "intialainen-besan-chilla",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "vietnamilainen-chao-ga-kanapuuro",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "korealainen-gyeranbap-riisikulho",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "vietnamilainen-hu-tieu-aamiaiskeitto",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kiinalainen-bao-munalla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "karibia-maissipuuro-kookoksella",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "kiinalainen-jianbing-munaletty",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 6
+    },
+    {
+      "recipeId": "karibia-johnny-cake",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "lahi-ita-taatelipuuro-tahinilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "indonesialainen-ketoprak-aamiaiskulho",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "thai-kookosriisi-mangolla",
+      "category": "RELEASE_DRAFT",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "korealainen-bataatti-riisikulho",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "meksikolainen-quesadilla-sienilla",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "vietnamilainen-banh-bao-kananmunalla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 1,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "japanilainen-dashimaki-tamago-aamiaislautasella",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "indonesialainen-bakwan-maissifritter",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "malesialainen-kaya-paahtoleipa",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 6,
+      "remainingGiRows": 6
+    },
+    {
+      "recipeId": "valimerellinen-farinata-aamupalaksi",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "korealainen-kimchi-jeon-aamiaiseksi",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "korealainen-jumeokbap-merilevalla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "valimerellinen-tahinipuuro",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "malesialainen-kuih-seri-muka",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "lahi-ita-manakish-zaatarilla",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 5,
+      "remainingGiRows": 7
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-minttutee-kaurapuuro",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "malesialainen-mee-goreng-aamunuudeleilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "meksikolainen-atole-maissipuuro",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "vietnamilainen-banh-mi-munalla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "japanilainen-natto-riisikulho",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "japanilainen-okayu-umeboshipluumulla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "japanilainen-onigiri-lohella",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "japanilainen-yaki-onigiri-misolla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "kiinalainen-hirssipuuro-taateleilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "vietnamilainen-pho-ga-aamuksi",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "thai-riisinuudelikeitto-aamuksi",
+      "category": "RELEASE_DRAFT",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "vietnamilainen-xoi-maapahkinalla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "malesialainen-roti-jala-currykanalla",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "thai-roti-munalla-banaanilla",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "karibia-saltfish-fritterit",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 5,
+      "remainingGiRows": 6
+    },
+    {
+      "recipeId": "kiinalainen-kevatsipulipannukakku",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 5,
+      "remainingGiRows": 7
+    },
+    {
+      "recipeId": "thai-maissifritterit",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "kiinalainen-katkarapu-wontonkeitto",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "jiaozi",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 8,
+      "remainingGiRows": 11
+    },
+    {
+      "recipeId": "xiaolongbao",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 9,
+      "remainingGiRows": 10
+    },
+    {
+      "recipeId": "karibia-bammy-kassavaleipa",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "kiinalainen-musta-seesamipuuro",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "meksikolainen-munakokkeli-pico-de-gallolla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "karibia-mango-limejogurtti",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "thai-papaijajogurtti",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "lahi-ita-pistaasijogurtti",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "karibia-plantain-aamiaislautanen",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "korealainen-mandu-keitto-aamiaiseksi",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 5,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "tunisialainen-brik",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "dal-makhani",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 9,
+      "remainingGiRows": 8
+    },
+    {
+      "recipeId": "kung-pao-kana",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 6,
+      "remainingGiRows": 9
+    },
+    {
+      "recipeId": "mala-xiang-guo",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 7,
+      "remainingGiRows": 8
+    },
+    {
+      "recipeId": "mapo-tofu",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 8,
+      "remainingGiRows": 10
+    },
+    {
+      "recipeId": "bouillabaisse",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "pav-bhaji",
+      "category": "PREPARATION_VERSION_UNRESOLVED",
+      "reason": "Valmistuksessa70g porkkanaa, syötteessä60g; lisäksi keitetyn kokonaisen perunan GI66 ei yksin osoita myöhemmin soseutetun bhajin vastinetta. Aiempi43.343425 pidätetään kokoarviona, kunnes versio ja valmistusanalogia on perusteltu. Ei uuden globaalin perunasäännön hyväksyntää.",
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "pekingin-ankka",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "sichuan-hot-pot",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 10,
+      "remainingGiRows": 11
+    },
+    {
+      "recipeId": "tunisialainen-ojja",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 5,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "vietnamilainen-papaija-kookospuuro",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "japanilainen-tamago-kake-gohan",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "indonesialainen-tempeh-munakulho",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 2,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "lahi-ita-zaatar-munat",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "keto-joulutortut",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kiinalainen-soijamaito-aamiaisella",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "thai-kananmunat-kookoscurryssa",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "japanilainen-miso-tofu-paksoi",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "japanilainen-curry-tofulla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "kanaviillokki-kukkakaalilla",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "kookos-lime-kanacurry",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "kimchi-jjigae",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 6,
+      "remainingGiRows": 7
+    },
+    {
+      "recipeId": "sate-ayam",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 7,
+      "remainingGiRows": 7
+    },
+    {
+      "recipeId": "janssoninkiusaus-juuriselleri",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "okonomiyaki-kaaliletut",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "valimerellinen-ricotta-persikkakulho",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "paneer-tikka",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 5,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "meksikolainen-huevos-a-la-mexicana",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "karibia-ackee-ja-suolakala",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 5,
+      "remainingGiRows": 5
+    },
+    {
+      "recipeId": "karibia-callaloo-munakas",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "korealainen-gyeran-mari-kasviksilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 2
+    },
+    {
+      "recipeId": "karibia-jamaikalainen-munakokkeli",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "lahi-ita-labneh-kulho-zaatarilla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "pellava-puuro-pahkinoilla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "lahi-ita-menemen-sumakilla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-harissa-shakshuka",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 3
+    },
+    {
+      "recipeId": "valimerellinen-pinaatti-fetashakshuka",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kiinalainen-teehaudutetut-munat",
+      "category": "PREVIOUS_SOURCE_BINDING_REJECTED",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "thai-kai-jiao-yrteilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "yrttituorejuusto-kinkkurullat",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "carnitas-salaattitacot",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "rogan-josh",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "kana-tagine-sitruunalla",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 7,
+      "remainingGiRows": 7
+    },
+    {
+      "recipeId": "miso-lohi-paksoi",
+      "category": "CHO_ONLY",
+      "reason": null,
+      "remainingCompositionRows": 3,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "palak-paneer",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": 7,
+      "remainingGiRows": 8
+    },
+    {
+      "recipeId": "shoyu-kanakeitto-konjac",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "category": "CONDITIONAL_RESEARCH_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "category": "OWNER_REVIEW_MATERIAL_READY",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "tandoorikana",
+      "category": "PUBLISHED_NUMERIC",
+      "reason": null,
+      "remainingCompositionRows": null,
+      "remainingGiRows": null
+    },
+    {
+      "recipeId": "vhh-pyttipannu",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 4,
+      "remainingGiRows": 4
+    },
+    {
+      "recipeId": "munakoiso-kesakurpitsalasagne",
+      "category": "GK_NOT_CALCULABLE",
+      "reason": null,
+      "remainingCompositionRows": 15,
+      "remainingGiRows": 15
+    }
+  ]
+}

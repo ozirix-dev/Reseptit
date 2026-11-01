@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "decimalReady": 25,
+  "decimalHeld": 2,
+  "typedBindingsReady": 25,
+  "typedBindingsHeld": 2,
+  "runtimeIntegrated": 0,
+  "ownerApproved": 0,
+  "sourceRecipeHashes": "all27 equal actual main",
+  "releaseCandidatePR": 150,
+  "releaseCandidateHead": "d6531e4702e1fb1bac6224a3b4fad9d3a7790903",
+  "releaseCI": 41273749844,
+  "releaseCIConclusion": "success",
+  "releaseDeploy": "skipped",
+  "buildsLocal": 1,
+  "newRecipeBranches": 2,
+  "productionDeploys": 0,
+  "researchPRCreated": false,
+  "researchCITriggered": false,
+  "reason": "Documentation-only research; existing selector would trigger a redundant full site CI. Commit and branch pushed for review."
+}
