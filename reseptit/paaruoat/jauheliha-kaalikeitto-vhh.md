@@ -12,10 +12,10 @@ main_ingredient:
 cooking_method:
   - liesi
 servings: 6
-carbs_net_per_serving_g: 12.63
-carbs_total_per_serving_g: 15.95
-protein_per_serving_g: 18.23
-fat_per_serving_g: 15.43
+carbs_net_per_serving_g: 10.21
+carbs_total_per_serving_g: 12
+protein_per_serving_g: 17.68
+fat_per_serving_g: 15.26
 time_total_min: 40
 difficulty: helppo
 tags:
@@ -23,35 +23,34 @@ tags:
   - vähähiilihydraattinen
 image:
   src: paaruoat/jauheliha-kaalikeitto-vhh.webp
-  alt: Kulhollinen jauheliha-kaalikeittoa, jossa näkyy kaalisuikaleita, jauhelihaa
-    ja meiramia
+  alt: Kulhollinen jauheliha-kaalikeittoa, jossa näkyy kaalisuikaleita, jauhelihaa ja meiramia
   width: 1280
   height: 853
 ingredients:
   - amount: 500
     unit: g
-    item: naudan jauhelihaa
-  - amount: 700
+    item: 17% naudan jauhelihaa
+  - amount: 500
     unit: g
     item: valkokaalia
-  - amount: 1
-    unit: kpl
-    item: sipuli
-  - amount: 1.2
-    unit: l
-    item: lihalientä
-  - amount: 2
-    unit: rkl
-    item: tomaattipyreetä
+  - amount: 55
+    unit: g
+    item: keltasipulia
+  - amount: 1000
+    unit: g
+    item: käyttövalmista lihalientä
+  - amount: 100
+    unit: g
+    item: tomaattimurskaa
   - amount: 1
     unit: tl
     item: suolaa
   - amount: 0.5
-    unit: tl
-    item: mustapippuria
-  - amount: 1
-    unit: tl
-    item: meiramia
+    unit: g
+    item: jauhettua mustapippuria
+  - amount: 0.6
+    unit: g
+    item: kuivattua meiramia jauhettuna
 translation_languages:
   - en
   - sv
@@ -64,19 +63,20 @@ translation_status:
 
 # Jauheliha-kaalikeitto
 
-Jauheliha-kaalikeitossa naudanliha ja valkokaali hautuvat lihaliemessä.
+Punnittu jauheliha-kaalikeitto, jossa on tomaattimurskaa ja kuivattua meiramia.
 
 ## Kuvaus
 
-Tomaattipyree ja meirami antavat keitolle makua.
+Käytä ainesosaluettelon tarkkoja koostumuksia ja syötäviä massoja. Kaikki nesteet, rasvat ja mausteet jäävät ruokaan. Suola säilyy alkuperäisen reseptin määrässä.
 
 ## Valmistus
 
-1. Ruskista jauheliha ja hienonnettu sipuli kattilassa.
-2. Suikaloi kaali ja lisää kattilaan lihaliemen kanssa.
-3. Sekoita joukkoon tomaattipyree ja mausteet. Keitä hiljaa noin 25 minuuttia, kunnes kaali pehmenee.
-4. Tarkista maku ja tarjoa kuumana.
+1. Ruskista 500 g 17% naudan jauhelihaa omassa rasvassaan. Lisää 55 g sipulia, 500 g valkokaalia ja 100 g tomaattimurskaa pyreen sijasta.
+2. Lisää 1000 g käyttövalmista lihalientä, 0,5 g jauhettua mustapippuria ja 0,6 g jauhettua kuivattua meiramia. Keitä kaali pehmeäksi.
+3. Jaa koko keitto nesteineen ja rasvoineen kuuteen annokseen. Kaikki mausteet syödään.
 
 ## Muistiinpanot
 
-- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.
+- Mallinnettu arvio, matala luottamus. Mausteiden puuttuvaa polyolitietoa on käsitelty tähän reseptiversioon rajatulla laskentamallilla. Arvio ei ole mitattu aterian verensokerivaste.
+- Kokonais-CHO on pyöristetty kokonaisiin grammoihin, jotta sama luku säilyy koko hyväksytyssä laskentaskenaariossa. Muut makrot esitetään kahdella desimaalilla; lähdearvojen muu epävarmuus säilyy.
+- Kuva on tarjoilua havainnollistava kuvituskuva; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.

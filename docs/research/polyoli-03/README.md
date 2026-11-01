@@ -1,4 +1,8 @@
-# POLYOLI-03 — viiden reseptin rajattu C-menetelmä omistajan päätettäväksi
+# POLYOLI-03 — viiden reseptin arvio ja kahden meiramireseptin integraatio
+
+**Ajantasainen tila:** omistaja hyväksyi kahden meiramireseptin C-menetelmän, 0,10 GK/annos -rajan, oletukset, tarkkuudet ja valmistusversiot. Rajattu integraatio on toteutettu samaan Draftiin #156. [Integraatioraportti](integration.md) on nykyinen päätös- ja varmennuskuvaus: 132/326 laskennallista arviota, 324 muuta tulosobjektia ennallaan. Kolme muuta reseptiä pysyy HOLDissa. Ei mergeä tai deployta.
+
+**Alla oleva alkuperäinen menetelmäehdotus ja sen snapshotit ovat historiallisia.** Niiden pending- ja `publicationEligible:false`-liput kuvaavat ehdotusvaihetta; nykyinen kahteen versioon rajattu hyväksyntä on [ledgerissä](approval-ledger.json).
 
 **1.11.2026 — menetelmäehdotus valmis; päätös PARTIAL / CONDITIONAL GO kahdelle.**
 Kaikki viisi reseptiä on arvioitu samalla rajatulla menetelmällä. Jauheliha-
@@ -274,7 +278,7 @@ menetelmä- ja sisältöpäätöstä sekä myöhempää erillistä integraatiota
   manuaalista Actions-ajoa. Tiedostot ovat docs/research-polussa,
   joten yksi Draft käyttää kevyttä CI-valintaa.
 
-Toisto repon juuressa, Node-riippuvuudet asennettuina:
+Historiallisen tutkimusvaiheen toisto edellyttää erillistä puhdasta checkoutia commitista `3896e13182c2184c016fe8a63a5e722fe157f9e0`, koska nämä komennot edellyttävät vanhoja lähdereseptejä. Nykyisen integraation toistot ovat [integraatioraportissa](integration.md). Tutkimusvaiheen komennot:
 
 ```powershell
 python -B -m unittest discover -s docs/research/polyoli-03 -p test_scoped_c.py

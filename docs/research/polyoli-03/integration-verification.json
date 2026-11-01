@@ -1,0 +1,681 @@
+{
+  "status": "PASS_LOCAL",
+  "baseMain": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+  "draftPr": 156,
+  "integratedRecipeIds": [
+    "jauheliha-kaalikeitto-vhh",
+    "vhh-kaalilaatikko"
+  ],
+  "remainHold": [
+    "ropa-vieja",
+    "siskonmakkarakeitto-juurekset",
+    "nakkikeitto-kukkakaalilla"
+  ],
+  "calculated": 132,
+  "insufficientSourceData": 194,
+  "completeUnchangedResultObjects": 324,
+  "previousNumericResultsUnchanged": 130,
+  "unknownAggregatePolyolsReplacedWithZero": false,
+  "generalPolyolBypass": false,
+  "unitTests": {
+    "passed": 211,
+    "failed": 0
+  },
+  "newIntegrationTests": 9,
+  "staticSeoTranslationTests": {
+    "passed": 52,
+    "failed": 0,
+    "oneOldCountTestRerunAfterCorrection": true
+  },
+  "independentDecimal": "PASS",
+  "strictNutritionAudit": "PASS",
+  "typescript": "PASS",
+  "changedContent": {
+    "recipeFiles": 8,
+    "evidenceFiles": 2,
+    "recipeIds": 2,
+    "status": "PASS"
+  },
+  "build": {
+    "routes": 691,
+    "status": "PASS",
+    "initialIngredientHashErrorCorrected": true
+  },
+  "fullAutomaticPrCiSelected": true,
+  "manualActionsDispatches": 0,
+  "mergePerformed": false,
+  "deploymentPerformed": false,
+  "results": [
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "servings": 6,
+      "status": "CALCULATED",
+      "unroundedGlycemicLoadPerServing": null,
+      "glycemicLoadPerServing": 5,
+      "glycemicLoadRangePerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 0,
+      "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+      "confidence": "LOW",
+      "interpretation": "Stable rounded value across the owner-approved source-accounting scenario. Unknown aggregate polyols remain unknown; no physiological bound or exact unrounded point is claimed.",
+      "ingredients": [
+        {
+          "name": "17% naudan jauhelihaa",
+          "grams": 500,
+          "fineliRecordId": "F11562-r5",
+          "availableCarbohydratePer100g": 0,
+          "availableCarbohydratePerServingG": 0,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "valkokaalia",
+          "grams": 500,
+          "fineliRecordId": "F320-r5",
+          "availableCarbohydratePer100g": 4.97,
+          "availableCarbohydratePerServingG": 4.141666666666667,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 40,
+          "giRecordId": "vegetable-imputation40",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 1.6566666666666665,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "keltasipulia",
+          "grams": 55,
+          "fineliRecordId": "F335-r5",
+          "availableCarbohydratePer100g": 4.8,
+          "availableCarbohydratePerServingG": 0.43999999999999995,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 40,
+          "giRecordId": "vegetable-imputation40",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.176,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "käyttövalmista lihalientä",
+          "grams": 1000,
+          "fineliRecordId": "F29-r5",
+          "availableCarbohydratePer100g": 3,
+          "availableCarbohydratePerServingG": 5,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "lowcho50-r5",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 2.5,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 100,
+          "fineliRecordId": "F398-r5",
+          "availableCarbohydratePer100g": 3.45,
+          "availableCarbohydratePerServingG": 0.575,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 40,
+          "giRecordId": "vegetable-imputation40",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.23,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "availableCarbohydratePer100g": 0,
+          "availableCarbohydratePerServingG": 0,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "jauhettua mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "A006618-r5",
+          "availableCarbohydratePer100g": 38.6,
+          "availableCarbohydratePerServingG": 0.03216666666666667,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "small-flavour50-r5",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": null,
+          "giContributionRange": {
+            "min": 0.016083333333333335,
+            "max": 0.044083333333333335
+          },
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "kuivattua meiramia jauhettuna",
+          "grams": 0.6,
+          "fineliRecordId": "norway-06.186-polyoli02-20261101",
+          "availableCarbohydratePer100g": 20.3,
+          "availableCarbohydratePerServingG": 0.020300000000000002,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "marjoram50-polyoli02-source-substitution",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": null,
+          "giContributionRange": {
+            "min": 0.010150000000000001,
+            "max": 0.040150000000000005
+          },
+          "giCandidates": [],
+          "issues": []
+        }
+      ],
+      "blockers": [],
+      "assessmentType": "PUBLISHED_IMPUTATION",
+      "boundedPolyolC": true,
+      "modelScenario": "POINT_SCENARIO",
+      "boundedPolyolEvidence": {
+        "gkInterval": {
+          "lower": 4.588900000000001,
+          "upper": 4.6469000000000005,
+          "decimalPlaces": 0,
+          "value": 5
+        },
+        "unknowns": [
+          {
+            "sourceId": "A006618-r5",
+            "aggregatePolyolsPer100g": null,
+            "maximumScenarioGPerServing": 0.018666666666666665,
+            "evidence": "AFCD_PAIRED_SOURCE_MODEL"
+          },
+          {
+            "sourceId": "norway-06.186-polyoli02-20261101",
+            "aggregatePolyolsPer100g": null,
+            "maximumScenarioGPerServing": 0.020000000000000004,
+            "evidence": "MISSING_AGGREGATE"
+          }
+        ],
+        "macros": {
+          "carbsNetG": {
+            "lower": 10.209133333333334,
+            "upper": 10.209133333333334,
+            "decimalPlaces": 2,
+            "value": 10.21
+          },
+          "carbsTotalG": {
+            "lower": 12.141883333333334,
+            "upper": 12.18055,
+            "decimalPlaces": 0,
+            "value": 12
+          },
+          "proteinG": {
+            "lower": 17.681783333333332,
+            "upper": 17.681783333333332,
+            "decimalPlaces": 2,
+            "value": 17.68
+          },
+          "fatG": {
+            "lower": 15.259750000000004,
+            "upper": 15.259750000000004,
+            "decimalPlaces": 2,
+            "value": 15.26
+          }
+        },
+        "responseScenario": [
+          0,
+          150
+        ],
+        "fullWidthLimit": 0.1,
+        "biologicalBoundEstablished": false
+      },
+      "candidateSources": [
+        {
+          "title": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+          "url": "https://doi.org/10.2337/dc08-1239",
+          "evidenceKind": "PUBLISHED_IMPUTATION",
+          "applicationKind": "PUBLISHED_IMPUTATION",
+          "matchKind": "CALCULATION_POLICY",
+          "confidence": "LOW",
+          "note": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock."
+        },
+        {
+          "title": "Named foods with <=5 g available CHO/100 g",
+          "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+          "evidenceKind": "PUBLISHED_IMPUTATION",
+          "applicationKind": "PUBLISHED_IMPUTATION",
+          "matchKind": "CALCULATION_POLICY",
+          "confidence": "LOW",
+          "note": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food."
+        },
+        {
+          "title": "Fixed weighed culinary ground spice, seed or vanilla extract",
+          "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+          "evidenceKind": "PUBLISHED_IMPUTATION",
+          "applicationKind": "PUBLISHED_IMPUTATION",
+          "matchKind": "CALCULATION_POLICY",
+          "confidence": "LOW",
+          "note": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval."
+        },
+        {
+          "title": "Fixed weighed culinary ground spice, seed or vanilla extract",
+          "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+          "evidenceKind": "PUBLISHED_IMPUTATION",
+          "applicationKind": "PUBLISHED_IMPUTATION",
+          "matchKind": "CALCULATION_POLICY",
+          "confidence": "LOW",
+          "note": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval."
+        }
+      ],
+      "candidateCarbohydrateSources": [
+        {
+          "title": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11562",
+          "note": "THL Fineli Release20, CC BY4.0"
+        },
+        {
+          "title": "VALKOKAALI, KERÄKAALI",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/320",
+          "note": "THL Fineli Release20, CC BY4.0"
+        },
+        {
+          "title": "SIPULI, KELTASIPULI",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+          "note": "THL Fineli Release20, CC BY4.0"
+        },
+        {
+          "title": "LIHALIEMI, LAIMENNETTU",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/29",
+          "note": "THL Fineli Release20, CC BY4.0"
+        },
+        {
+          "title": "TOMAATTIMURSKA",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
+          "note": "THL Fineli Release20, CC BY4.0"
+        },
+        {
+          "title": "Pepper, black, ground",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618",
+          "note": "FSANZ AFCD Release3 CC BY-SA3.0 Australia"
+        },
+        {
+          "title": "Marjoram, dried",
+          "url": "https://www.matvaretabellen.no/en/marjoram-dried/",
+          "note": "Source-specific available carbohydrate; missing polyols retained as unknown in the approved recipe model."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "servings": 6,
+      "status": "CALCULATED",
+      "unroundedGlycemicLoadPerServing": null,
+      "glycemicLoadPerServing": 4,
+      "glycemicLoadRangePerServing": null,
+      "omittedAvailableCarbohydratePerServingG": 0,
+      "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+      "confidence": "LOW",
+      "interpretation": "Stable rounded value across the owner-approved source-accounting scenario. Unknown aggregate polyols remain unknown; no physiological bound or exact unrounded point is claimed.",
+      "ingredients": [
+        {
+          "name": "valkokaalia",
+          "grams": 900,
+          "fineliRecordId": "F320-r5",
+          "availableCarbohydratePer100g": 4.97,
+          "availableCarbohydratePerServingG": 7.455,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 40,
+          "giRecordId": "vegetable-imputation40",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 2.9819999999999998,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "17% naudan jauhelihaa",
+          "grams": 500,
+          "fineliRecordId": "F11562-r5",
+          "availableCarbohydratePer100g": 0,
+          "availableCarbohydratePerServingG": 0,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "keltasipulia",
+          "grams": 55,
+          "fineliRecordId": "F335-r5",
+          "availableCarbohydratePer100g": 4.8,
+          "availableCarbohydratePerServingG": 0.43999999999999995,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 40,
+          "giRecordId": "vegetable-imputation40",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.176,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "38% kuohukermaa",
+          "grams": 200,
+          "fineliRecordId": "F631-r5",
+          "availableCarbohydratePer100g": 2.9,
+          "availableCarbohydratePerServingG": 0.9666666666666666,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 30,
+          "giRecordId": "dairy-imputation30",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.29,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "kuoretonta kananmunaa",
+          "grams": 110,
+          "fineliRecordId": "F858-r5",
+          "availableCarbohydratePer100g": 0.3,
+          "availableCarbohydratePerServingG": 0.05499999999999999,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "lowcho50-r5",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.027499999999999997,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "käyttövalmista lihalientä",
+          "grams": 100,
+          "fineliRecordId": "F29-r5",
+          "availableCarbohydratePer100g": 3,
+          "availableCarbohydratePerServingG": 0.5,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "lowcho50-r5",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.25,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "voita",
+          "grams": 14,
+          "fineliRecordId": "F500-r5",
+          "availableCarbohydratePer100g": 0.8,
+          "availableCarbohydratePerServingG": 0.018666666666666668,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 30,
+          "giRecordId": "dairy-imputation30",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.005600000000000001,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "availableCarbohydratePer100g": 0,
+          "availableCarbohydratePerServingG": 0,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "jauhettua mustapippuria",
+          "grams": 1,
+          "fineliRecordId": "A006618-r5",
+          "availableCarbohydratePer100g": 38.6,
+          "availableCarbohydratePerServingG": 0.06433333333333334,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "small-flavour50-r5",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": null,
+          "giContributionRange": {
+            "min": 0.03216666666666667,
+            "max": 0.08816666666666667
+          },
+          "giCandidates": [],
+          "issues": []
+        },
+        {
+          "name": "kuivattua meiramia jauhettuna",
+          "grams": 0.6,
+          "fineliRecordId": "norway-06.186-polyoli02-20261101",
+          "availableCarbohydratePer100g": 20.3,
+          "availableCarbohydratePerServingG": 0.020300000000000002,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "marjoram50-polyoli02-source-substitution",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": null,
+          "giContributionRange": {
+            "min": 0.010150000000000001,
+            "max": 0.040150000000000005
+          },
+          "giCandidates": [],
+          "issues": []
+        }
+      ],
+      "blockers": [],
+      "assessmentType": "PUBLISHED_IMPUTATION",
+      "boundedPolyolC": true,
+      "modelScenario": "POINT_SCENARIO",
+      "boundedPolyolEvidence": {
+        "gkInterval": {
+          "lower": 3.773416666666666,
+          "upper": 3.859416666666666,
+          "decimalPlaces": 0,
+          "value": 4
+        },
+        "unknowns": [
+          {
+            "sourceId": "A006618-r5",
+            "aggregatePolyolsPer100g": null,
+            "maximumScenarioGPerServing": 0.03733333333333333,
+            "evidence": "AFCD_PAIRED_SOURCE_MODEL"
+          },
+          {
+            "sourceId": "norway-06.186-polyoli02-20261101",
+            "aggregatePolyolsPer100g": null,
+            "maximumScenarioGPerServing": 0.020000000000000004,
+            "evidence": "MISSING_AGGREGATE"
+          }
+        ],
+        "macros": {
+          "carbsNetG": {
+            "lower": 9.519966666666667,
+            "upper": 9.519966666666667,
+            "decimalPlaces": 2,
+            "value": 9.52
+          },
+          "carbsTotalG": {
+            "lower": 12.714966666666667,
+            "upper": 12.772300000000001,
+            "decimalPlaces": 0,
+            "value": 13
+          },
+          "proteinG": {
+            "lower": 20.85505,
+            "upper": 20.85505,
+            "decimalPlaces": 2,
+            "value": 20.86
+          },
+          "fatG": {
+            "lower": 30.653500000000005,
+            "upper": 30.653500000000005,
+            "decimalPlaces": 2,
+            "value": 30.65
+          }
+        },
+        "responseScenario": [
+          0,
+          150
+        ],
+        "fullWidthLimit": 0.1,
+        "biologicalBoundEstablished": false
+      },
+      "candidateSources": [
+        {
+          "title": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+          "url": "https://doi.org/10.2337/dc08-1239",
+          "evidenceKind": "PUBLISHED_IMPUTATION",
+          "applicationKind": "PUBLISHED_IMPUTATION",
+          "matchKind": "CALCULATION_POLICY",
+          "confidence": "LOW",
+          "note": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock."
+        },
+        {
+          "title": "Unsweetened animal dairy coding assignment",
+          "url": "https://doi.org/10.2337/dc08-1239",
+          "evidenceKind": "PUBLISHED_IMPUTATION",
+          "applicationKind": "PUBLISHED_IMPUTATION",
+          "matchKind": "CALCULATION_POLICY",
+          "confidence": "LOW",
+          "note": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy."
+        },
+        {
+          "title": "Named foods with <=5 g available CHO/100 g",
+          "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+          "evidenceKind": "PUBLISHED_IMPUTATION",
+          "applicationKind": "PUBLISHED_IMPUTATION",
+          "matchKind": "CALCULATION_POLICY",
+          "confidence": "LOW",
+          "note": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food."
+        },
+        {
+          "title": "Fixed weighed culinary ground spice, seed or vanilla extract",
+          "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+          "evidenceKind": "PUBLISHED_IMPUTATION",
+          "applicationKind": "PUBLISHED_IMPUTATION",
+          "matchKind": "CALCULATION_POLICY",
+          "confidence": "LOW",
+          "note": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval."
+        },
+        {
+          "title": "Fixed weighed culinary ground spice, seed or vanilla extract",
+          "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+          "evidenceKind": "PUBLISHED_IMPUTATION",
+          "applicationKind": "PUBLISHED_IMPUTATION",
+          "matchKind": "CALCULATION_POLICY",
+          "confidence": "LOW",
+          "note": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval."
+        }
+      ],
+      "candidateCarbohydrateSources": [
+        {
+          "title": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11562",
+          "note": "THL Fineli Release20, CC BY4.0"
+        },
+        {
+          "title": "VALKOKAALI, KERÄKAALI",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/320",
+          "note": "THL Fineli Release20, CC BY4.0"
+        },
+        {
+          "title": "SIPULI, KELTASIPULI",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+          "note": "THL Fineli Release20, CC BY4.0"
+        },
+        {
+          "title": "LIHALIEMI, LAIMENNETTU",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/29",
+          "note": "THL Fineli Release20, CC BY4.0"
+        },
+        {
+          "title": "Pepper, black, ground",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618",
+          "note": "FSANZ AFCD Release3 CC BY-SA3.0 Australia"
+        },
+        {
+          "title": "KANANMUNA, KUORETON",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+          "note": "THL Fineli Release20, CC BY4.0"
+        },
+        {
+          "title": "KERMA, KUOHUKERMA, RASVAA 38 %",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/631",
+          "note": "THL Fineli Release20, CC BY4.0"
+        },
+        {
+          "title": "VOI",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+          "note": "THL Fineli Release20, CC BY4.0"
+        },
+        {
+          "title": "Marjoram, dried",
+          "url": "https://www.matvaretabellen.no/en/marjoram-dried/",
+          "note": "Source-specific available carbohydrate; missing polyols retained as unknown in the approved recipe model."
+        }
+      ]
+    }
+  ]
+}

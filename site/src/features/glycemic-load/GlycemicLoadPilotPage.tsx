@@ -1,3 +1,4 @@
+import {scopedPolyolDisclosure} from '../recipes/scoped-polyol-disclosure';
 import {formatGlycemicLoadNumber} from '../recipes/gk80-format';
 import { Link, useLocation } from "react-router-dom";
 import { glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "@/generated/glycemic-load-pilot.generated";
@@ -79,6 +80,7 @@ export function GlycemicLoadPilotPage() {
           return <li key={result.recipeId} id={result.recipeId} className="glycemic-pilot__recipe">
             <h3><Link to={localized?.routePath ?? result.routePath}>{localized?.title ?? result.title}</Link></h3>
             {result.status === "CALCULATED" ? <><p><strong>{text.value}: {result.recipeId === "massaman-curry-kanalla-vhh" ? `${text.about} 5–6 ${text.perServing}` : formatValue(result)}</strong> · {text.confidence}: {confidence}</p>{result.omittedAvailableCarbohydratePerServingG > 0 ? <p>{omissionCopy[locale](number.format(result.omittedAvailableCarbohydratePerServingG))}</p> : null}
+              {result.boundedPolyolC ? <p>{scopedPolyolDisclosure[locale]}</p> : null}
               {result.recipeId === "massaman-curry-kanalla-vhh" ? <p>{text.massaman}</p> : null}
               <details><summary>{text.source}</summary>{result.carbohydrateSources.length ? <><p>{text.carbohydrateData}</p><ul>{result.carbohydrateSources.map((source) => <li key={`${source.url}-${source.title}`}><a href={source.url} rel="noopener noreferrer">{source.title}</a> — {source.note}</li>)}</ul></> : null}<ul>{result.sourceReferences.map((source) => <li key={`${source.url}-${source.title}`}><a href={source.url} rel="noopener noreferrer">{source.title}</a> — {source.note} ({source.confidence === "LOW" ? text.low : source.confidence === "MEDIUM" ? text.medium : text.high})</li>)}</ul></details>
             </> : <><p>{text.incomplete}</p>{result.incompleteReasons.length ? <details><summary>{incompleteCopy[locale].title}</summary><ul>{result.incompleteReasons.map((reason, index) => {

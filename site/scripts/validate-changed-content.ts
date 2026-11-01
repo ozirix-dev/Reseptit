@@ -1,3 +1,4 @@
+import {isScopedPolyolEvidence,validateScopedPolyolC} from './gk80-polyol-c';
 import {validateGk80Candidate} from './gk80-release';
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
@@ -167,7 +168,7 @@ for (const recipeId of recipeIds) {
   const boundRecipeHash = recipeBindings.recipes?.[recipeId];
   if (changedSource && boundRecipeHash) {
     const currentRecipeHash = recipeBindingHash(changedSource.markdown, recipeAliases.aliases ?? {});
-    assert(currentRecipeHash === boundRecipeHash || await validateGk80Candidate(repoRoot, recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
+    assert(currentRecipeHash === boundRecipeHash || await validateGk80Candidate(repoRoot, recipeId) || await validateScopedPolyolC(repoRoot, recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
   }
 
   const evidencePath = resolveRepoFile(`docs/nutrition/calculations/${recipeId}.json`);
@@ -181,6 +182,7 @@ for (const recipeId of recipeIds) {
     recipe.data.recipe_id === recipeId && changedNutritionValues(recipe.path));
   if (nutritionChanged) assert(evidence, `${recipeId}: changed published nutrition values require matching calculation evidence`);
   if (evidence) {
+    if (isScopedPolyolEvidence(evidence)) assert(await validateScopedPolyolC(repoRoot, recipeId), `${recipeId}: scoped C preparation approval is stale`);
     const result = verifyNutritionEvidence(source.data, evidence, translations);
     assert.deepEqual(result.errors, [], `${recipeId}: nutrition evidence validation failed`);
   } else {

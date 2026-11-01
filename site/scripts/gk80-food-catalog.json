@@ -157,7 +157,8 @@
     "A006118": "GROUND_SPICE",
     "A002970": "GROUND_SPICE",
     "A000430": "NONSTARCHY_VEGETABLE",
-    "A006110": "WHOLE_PEANUT"
+    "A006110": "WHOLE_PEANUT",
+    "NO06.186": "GROUND_SPICE"
   },
   "sourceRules": {
     "vegetable-imputation40": {
@@ -558,6 +559,12 @@
         "WHOLE_PEANUT"
       ],
       "consumedForm": "whole roasted peanuts; preparation-unspecified human comparator LOW analogy, no peanut butter or flour"
+    },
+    "marjoram50-polyoli02-source-substitution": {
+      "foodKinds": [
+        "GROUND_SPICE"
+      ],
+      "consumedForm": "AS_DEFINED"
     }
   },
   "aliases": [
@@ -4195,6 +4202,18 @@
       ],
       "consumedForms": {
         "small-flavour50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "norway-06.186-polyoli02-20261101",
+      "foodId": "NO06.186",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "dried marjoram, ground and fully consumed",
+      "allowedSources": [
+        "marjoram50-polyoli02-source-substitution"
+      ],
+      "consumedForms": {
+        "marjoram50-polyoli02-source-substitution": "AS_DEFINED"
       }
     }
   ]

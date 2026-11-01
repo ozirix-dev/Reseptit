@@ -5,13 +5,26 @@
   "approvedSourceArtifactCommit": "08b69bd974c427c94be3a460c27d007fbcd53f54",
   "userApprovedMarjoramBindings": true,
   "userApprovedNakkiSevenAliases": true,
-  "currentTaskAuthorization": "PREPARE_ONE_MAIN_BASED_SCOPED_C_DRAFT_FOR_FIVE_RECIPES",
-  "cMethodThresholdAndDisplayApproval": false,
-  "publicationPreparationVersionsApproved": false,
-  "productionIntegrationApproved": false,
+  "currentTaskAuthorization": "IMPLEMENT_OWNER_APPROVED_TWO_RECIPE_SCOPED_C_IN_DRAFT_156",
+  "cMethodThresholdAndDisplayApproval": true,
+  "publicationPreparationVersionsApproved": true,
+  "productionIntegrationApproved": true,
   "mergeApproved": false,
   "deployApproved": false,
-  "historicalArtifactPendingFlagsAreSupersededForSourceBindingsOnly": true,
-  "conditionalMethodCandidates": ["jauheliha-kaalikeitto-vhh", "vhh-kaalilaatikko"],
-  "remainHold": ["ropa-vieja", "siskonmakkarakeitto-juurekset", "nakkikeitto-kukkakaalilla"]
+  "remainHold": [
+    "ropa-vieja",
+    "siskonmakkarakeitto-juurekset",
+    "nakkikeitto-kukkakaalilla"
+  ],
+  "historicalProposalFlagsSupersededForApprovedTwoVersions": true,
+  "approvedFullWidthBudget": 0.1,
+  "approvedResponseScenario": [
+    0,
+    150
+  ],
+  "integratedRecipeIds": [
+    "jauheliha-kaalikeitto-vhh",
+    "vhh-kaalilaatikko"
+  ],
+  "approvalScope": "Two exact marjoram source-accounting methods, display precisions and preparation versions; integrate into Draft156 only. Other three remain HOLD."
 }

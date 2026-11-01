@@ -13,10 +13,10 @@ cooking_method:
   - uuni
   - haudutus
 servings: 6
-carbs_net_per_serving_g: 9.48
-carbs_total_per_serving_g: 13.40
-protein_per_serving_g: 20.85
-fat_per_serving_g: 30.59
+carbs_net_per_serving_g: 9.52
+carbs_total_per_serving_g: 13
+protein_per_serving_g: 20.86
+fat_per_serving_g: 30.65
 time_total_min: 110
 difficulty: helppo
 tags:
@@ -26,42 +26,40 @@ tags:
   - kaali
 image:
   src: paaruoat/kaalilaatikko-vhh.webp
-  alt: VHH-kaalilaatikko, jossa on haudutettua kaalia ja jauhelihaa, tarjolla
-    puolukan kanssa
+  alt: VHH-kaalilaatikko, jossa on haudutettua kaalia ja jauhelihaa, tarjolla puolukan kanssa
   width: 1280
   height: 853
 ingredients:
   - amount: 900
     unit: g
     item: valkokaalia
-    note: ohuiksi suikaleiksi leikattuna
   - amount: 500
     unit: g
-    item: naudan jauhelihaa
-  - amount: 1
-    unit: kpl
-    item: sipuli
-  - amount: 2
-    unit: dl
-    item: kuohukermaa
-  - amount: 2
-    unit: kpl
-    item: kananmunaa
-  - amount: 1
-    unit: dl
-    item: lihalientä
-  - amount: 1
-    unit: rkl
+    item: 17% naudan jauhelihaa
+  - amount: 55
+    unit: g
+    item: keltasipulia
+  - amount: 200
+    unit: g
+    item: 38% kuohukermaa
+  - amount: 110
+    unit: g
+    item: kuoretonta kananmunaa
+  - amount: 100
+    unit: g
+    item: käyttövalmista lihalientä
+  - amount: 14
+    unit: g
     item: voita
   - amount: 1
     unit: tl
     item: suolaa
-  - amount: 0.5
-    unit: tl
-    item: mustapippuria
   - amount: 1
-    unit: tl
-    item: kuivattua meiramia
+    unit: g
+    item: jauhettua mustapippuria
+  - amount: 0.6
+    unit: g
+    item: kuivattua meiramia jauhettuna
 translation_languages:
   - en
   - sv
@@ -74,22 +72,20 @@ translation_status:
 
 # VHH-kaalilaatikko ilman riisiä
 
-Perinteisen kaalilaatikon tutut maut syntyvät haudutetusta kaalista, jauhelihasta ja mehevästä kermamunaseoksesta ilman riisiä tai siirappia.
+Punnittu VHH-kaalilaatikko ilman riisiä tai siirappia.
 
 ## Kuvaus
 
-Tässä arkisessa uuniruoassa kaali saa rauhassa pehmetä ennen paistamista. Jauheliha ja meirami tuovat tuttua makua, ja kananmunalla kevyesti hyytyvä kerma sitoo vuoan ilman viljaa.
+Käytä ainesosaluettelon tarkkoja koostumuksia ja syötäviä massoja. Kaikki nesteet, rasvat ja mausteet jäävät ruokaan. Suola säilyy alkuperäisen reseptin määrässä.
 
 ## Valmistus
 
-1. Kuumenna uuni 175 asteeseen. Suikaloi kaali ja hienonna sipuli.
-2. Sulata voi isossa kattilassa. Lisää kaali ja lihaliemi. Hauduta kannen alla noin 20 minuuttia välillä sekoittaen, kunnes kaali pehmenee.
-3. Ruskista jauheliha pannulla. Lisää sipuli ja paista muutama minuutti. Mausta suolalla, mustapippurilla ja meiramilla.
-4. Sekoita kerma ja kananmunat kulhossa. Yhdistä kaaliseos ja jauheliha uunivuoassa ja kaada kermaseos päälle.
-5. Paista keskitasolla noin 60–70 minuuttia, kunnes pinta on saanut väriä ja vuoka on hyytynyt. Jos pinta tummuu liikaa, peitä kevyesti foliolla.
-6. Anna vetäytyä 10 minuuttia ennen tarjoilua.
+1. Kypsennä 500 g jauhelihaa ja 55 g sipulia 14 g:ssa voita. Lisää 900 g hienonnettua valkokaalia.
+2. Sekoita 200 g kermaa, 110 g munaa, 100 g lihalientä, 1 g mustapippuria ja 0,6 g jauhettua meiramia. Yhdistä kaikki vuokaan.
+3. Paista 175 asteessa, kunnes munaseos ja liha ovat kypsiä ja kaali pehmeää. Jaa koko vuoka nesteineen kuuteen annokseen.
 
 ## Muistiinpanot
 
-- Tarjoa halutessasi pienen sokerittoman puolukkalisäkkeen tai vihersalaatin kanssa.
-- Kaali kutistuu haudutettaessa, joten aloita riittävän suurella kattilalla.
+- Mallinnettu arvio, matala luottamus. Mausteiden puuttuvaa polyolitietoa on käsitelty tähän reseptiversioon rajatulla laskentamallilla. Arvio ei ole mitattu aterian verensokerivaste.
+- Kokonais-CHO on pyöristetty kokonaisiin grammoihin, jotta sama luku säilyy koko hyväksytyssä laskentaskenaariossa. Muut makrot esitetään kahdella desimaalilla; lähdearvojen muu epävarmuus säilyy.
+- Kuva on tarjoilua havainnollistava kuvituskuva; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
