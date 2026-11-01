@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scope": "Local source/math checks, not scientific owner approval or publication",
+  "engine": {
+    "run": 12,
+    "models": 21,
+    "numeric": 0,
+    "held": 22,
+    "status": "PASS"
+  },
+  "engineSourceHashes": {
+    "gk80-candidate-model.ts": "848374babaf6baced483f07d114ef1ea6d2ce4bf70d6b932476723905252a0e1",
+    "gk80-candidate-policy.ts": "982d29cc4998a0f28b2159ee4c570f86e74c933adfafb0904743cdc5d4e0c6a2",
+    "gk80-food-safety.ts": "2cc540bdf22d80072495ad2a45a43d6820336540387b54c6f5733297f95bf6a8"
+  },
+  "nutritionEvidenceCompleteProposals": 0,
+  "independentDecimalAllModels": true,
+  "ci": "CHECK_PR_FINAL_HEAD_AFTER_PUSH",
+  "localFullBuilds": 0,
+  "browserRuns": 0
+}
