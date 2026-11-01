@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "localOnly": false,
+  "expectedReleaseSha": "ec7f4b01e6fa86cc6a45308286cf32e776e91e88",
+  "verifiedAtUtc": "2026-11-01T20:19:04.371029+00:00",
+  "coverage": {
+    "numeric": 131,
+    "recipes": 326,
+    "incomplete": 195,
+    "percent": 40.18
+  },
+  "numericRecipeIdsMatch130PriorPlusOne": true,
+  "all325PublicRecipeEntriesMatchVerifiedRelease": true,
+  "recipe": {
+    "http": {
+      "url": "https://ozirix-dev.github.io/Reseptit/uunikanapasta-kesakurpitsa/?release=ec7f4b01e6fa86cc6a45308286cf32e776e91e88",
+      "status": 200,
+      "etag": "\"6ae79992-4005\"",
+      "lastModified": "Sun, 01 Nov 2026 19:57:06 GMT"
+    },
+    "id": "uunikanapasta-kesakurpitsa",
+    "servings": 4,
+    "nutrition": {
+      "carbsNetG": 7.4,
+      "carbsTotalG": 10.4,
+      "proteinG": 39.53,
+      "fatG": 23.91
+    },
+    "modeledGk": "about3LOW",
+    "sourceAndPrecisionDisclosure": true
+  },
+  "withheld": {
+    "keto-suklaakeksit": {
+      "nutrition": {
+        "carbsNetG": null,
+        "carbsTotalG": null,
+        "proteinG": null,
+        "fatG": null
+      },
+      "http": {
+        "url": "https://ozirix-dev.github.io/Reseptit/keto-suklaakeksit/?release=ec7f4b01e6fa86cc6a45308286cf32e776e91e88",
+        "status": 200,
+        "etag": "\"6ae79993-30bb\"",
+        "lastModified": "Sun, 01 Nov 2026 19:57:07 GMT"
+      }
+    },
+    "keto-mutakakku": {
+      "nutrition": {
+        "carbsNetG": null,
+        "carbsTotalG": null,
+        "proteinG": null,
+        "fatG": null
+      },
+      "http": {
+        "url": "https://ozirix-dev.github.io/Reseptit/keto-mutakakku/?release=ec7f4b01e6fa86cc6a45308286cf32e776e91e88",
+        "status": 200,
+        "etag": "\"6ae79993-3235\"",
+        "lastModified": "Sun, 01 Nov 2026 19:57:07 GMT"
+      }
+    }
+  },
+  "central": {
+    "url": "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/?release=ec7f4b01e6fa86cc6a45308286cf32e776e91e88",
+    "status": 200,
+    "etag": "\"6ae79993-865d4\"",
+    "lastModified": "Sun, 01 Nov 2026 19:57:07 GMT"
+  },
+  "otherHoldsPreserved": true,
+  "mainCiAndDeploymentShaMustBeVerifiedSeparately": true
+}

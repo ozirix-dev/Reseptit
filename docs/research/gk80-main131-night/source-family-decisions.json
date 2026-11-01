@@ -1,0 +1,859 @@
+{
+  "selection": "Tied maximum4 complete recorded source-barrier sets across <=3 families. Chose almond meal+black pepper+thyme, not occurrence-frequency leaders. Other tied maxima retained in inventory.json.",
+  "selected": [
+    "F006077",
+    "F006618",
+    "F009160"
+  ],
+  "optimisticClosureIds": [
+    "vhh-letut",
+    "vhh-lihapiirakka",
+    "ratatouille",
+    "sitruuna-yrttikana-parsa"
+  ],
+  "verifiedNewReadyRecipes": 0,
+  "claimLimit": "Closure refers to recorded source barriers only, not owner approval or unperformed preparation review. No source-HOLD status is changed. Missing mass or preparation scope remains disqualifying.",
+  "result": "Existing evidence is precisely insufficient; no alias or general GI added. The requirement to resolve OR precisely explain a shared source gap is satisfied by the two independent missing almond-meal requirements and absent aggregateP in both dried spices.",
+  "records": [
+    {
+      "foodId": "F006077",
+      "originalSource": {
+        "foodId": "F006077",
+        "name": "Nut, almond meal",
+        "derivation": "Imputed",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006077",
+        "sourceWithout": 5.4,
+        "sourceWith": 5.4,
+        "pairDifference": 0.0,
+        "species": {
+          "sorbitol": null,
+          "mannitol": null,
+          "glycerol": null,
+          "erythritol": null,
+          "maltitol": null,
+          "xylitol": null
+        },
+        "protein": 19.7,
+        "fat": 50.5,
+        "fibre": 11.0,
+        "aggregatePolyol": null,
+        "aggregateEvidence": "No independent aggregate assay is established. Pair difference is a derived field, not exhaustive species coverage.",
+        "adapterRecordIds": [
+          "A006077-campaign4",
+          "afcd-F006077",
+          "afcd-F006077-2026-10-24",
+          "afcd-F006077-release-3"
+        ],
+        "scopeRecipeIds": [
+          "keto-joulutortut",
+          "keto-korvapuustit",
+          "keto-mutakakku",
+          "keto-suklaakeksit",
+          "okonomiyaki-kaaliletut",
+          "rahkapiirakka-vhh",
+          "vhh-brita-kakku",
+          "vhh-juustokakku",
+          "vhh-korvapuustit",
+          "vhh-letut",
+          "vhh-lihapiirakka",
+          "vhh-mansikkakakku",
+          "vhh-mokkapalat",
+          "vhh-omenapiirakka",
+          "vhh-raparperipiirakka",
+          "vhh-runebergintortut"
+        ],
+        "sumOfIndividuallyReportedSpecies": null,
+        "allSixListedSpeciesReported": false
+      },
+      "originalSourceFingerprint": "192c94849b11e0970979fbbd63519f0602c540f9518f494dc098fb076ee34c0c",
+      "actualNewReleaseEligible": 0,
+      "technicalBindingBugFound": false,
+      "recipeBarriers": [
+        {
+          "recipeId": "keto-suklaakeksit",
+          "allRemainingFamilies": [
+            "F000247",
+            "F006077",
+            "F009350",
+            "F009837"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "vhh-letut",
+          "allRemainingFamilies": [
+            "F006077"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": true
+        },
+        {
+          "recipeId": "rahkapiirakka-vhh",
+          "allRemainingFamilies": [
+            "F006077",
+            "F009350"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "vhh-lihapiirakka",
+          "allRemainingFamilies": [
+            "F006077",
+            "F006618"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": true
+        },
+        {
+          "recipeId": "vhh-raparperipiirakka",
+          "allRemainingFamilies": [
+            "F006077",
+            "F007502",
+            "F009350"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "keto-korvapuustit",
+          "allRemainingFamilies": [
+            "F002963",
+            "F006077"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "okonomiyaki-kaaliletut",
+          "allRemainingFamilies": [
+            "F005441",
+            "F006077",
+            "F006250",
+            "F008214",
+            "F31"
+          ],
+          "otherBlockers": [
+            {
+              "code": "MISSING_COMPOSITION_OR_QUANTITY",
+              "ingredient": 7,
+              "name": "srirachaa",
+              "detail": "UNRESOLVED_OMITTED_INGREDIENT"
+            }
+          ],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "vhh-juustokakku",
+          "allRemainingFamilies": [
+            "F004726",
+            "F006077",
+            "F009350"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "vhh-mansikkakakku",
+          "allRemainingFamilies": [
+            "F000247",
+            "F006077",
+            "F008952",
+            "F009350"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "vhh-runebergintortut",
+          "allRemainingFamilies": [
+            "F000247",
+            "F002258",
+            "F006077",
+            "F007619"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "keto-mutakakku",
+          "allRemainingFamilies": [
+            "F006077",
+            "F009350",
+            "F009837",
+            "F20"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "vhh-korvapuustit",
+          "allRemainingFamilies": [
+            "F002963",
+            "F006077",
+            "F007502"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "vhh-omenapiirakka",
+          "allRemainingFamilies": [
+            "F000095",
+            "F002963",
+            "F004726",
+            "F006077"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        }
+      ],
+      "name": "Full-fat dry almond meal; not whole almonds or defatted flour",
+      "remaining": "Both preparation-specific GI/comparator and trustworthy aggregate-polyol full profile are missing. Existing lowcho50 rule requires <=5 g A/100g; pinned almond meal A=5.4, so automatic lowcho substitution would violate scope.",
+      "fineliOption": "No exact full-fat almond-meal profile with complete five fields established in existing selected evidence. Whole nut/defatted flour is not a silent replacement.",
+      "macroEffect": "Existing fixed source contributes A/protein/fat/fibre=0.675/2.4625/6.3125/1.375g per vhh-letut serving (50g/4); in vhh-lihapiirakka 1.35/4.925/12.625/2.75g (200g/8). Total-CHO remains unknown because aggregateP is null. A new profile may alter all four display macros; no numeric delta without one."
+    },
+    {
+      "foodId": "F006618",
+      "originalSource": {
+        "foodId": "F006618",
+        "name": "Pepper, black, ground",
+        "derivation": "Borrowed",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618",
+        "sourceWithout": 38.6,
+        "sourceWith": 38.6,
+        "pairDifference": 0.0,
+        "species": {
+          "sorbitol": null,
+          "mannitol": null,
+          "glycerol": null,
+          "erythritol": null,
+          "maltitol": null,
+          "xylitol": null
+        },
+        "protein": 10.4,
+        "fat": 3.3,
+        "fibre": 25.3,
+        "aggregatePolyol": null,
+        "aggregateEvidence": "No independent aggregate assay is established. Pair difference is a derived field, not exhaustive species coverage.",
+        "adapterRecordIds": [
+          "A006618-campaign4",
+          "A006618-q09",
+          "A006618-r5",
+          "A006618-r6",
+          "afcd-F006618",
+          "afcd-F006618-2026-10-24",
+          "afcd-F006618-release-3"
+        ],
+        "scopeRecipeIds": [
+          "bulgogi",
+          "bun-cha-hanoi",
+          "butter-chicken",
+          "carnitas-salaattitacot",
+          "chettinad-kana",
+          "doner-kebab",
+          "intialainen-ven-pongal",
+          "italian-pata",
+          "janssoninkiusaus-juuriselleri",
+          "jauheliha-kaalikeitto-vhh",
+          "jauheliha-makaronilaatikko",
+          "kanakeitto-pinaatti-sitruuna",
+          "kanapyorykat-tomaattikastike",
+          "kreikkalainen-kanavuoka-oliiveilla",
+          "kreikkalainen-moussaka",
+          "lanttulaatikko-kermainen",
+          "liha-juureskeitto-perunaton",
+          "lindstrominpihvit-kaalilla",
+          "lohikeitto-kuohukermalla",
+          "menemen",
+          "moo-ping-vhh",
+          "munakasmuffinit",
+          "munakoiso-jauhelihavuoka-vhh",
+          "munakoiso-kesakurpitsalasagne",
+          "munakokkeli",
+          "munatacot-huevos-rancheros",
+          "paistettu-maksa-pekonilla",
+          "paprikainen-vhh-gulassi",
+          "paprikauunimunakkaat",
+          "parsakaali-sinihomejuustofrittata",
+          "pasta-alla-norma",
+          "poronkaristys-kukkakaalimuusilla",
+          "raejuusto-uunimunakas",
+          "ratatouille",
+          "shakshuka",
+          "sitruuna-yrttikana-parsa",
+          "spanakopita",
+          "tabbouleh",
+          "taytetyt-paprikat-vhh",
+          "tonnikalamunakkaat-uunissa",
+          "tortilla-de-patatas",
+          "uunikanapasta-kesakurpitsa",
+          "uunilohi-smetanakuorrutteella",
+          "uunimakkara-sipulipedilla",
+          "uunimuna-avokadot",
+          "uunimunat-pinaatilla",
+          "uuniporsas-kermakastikkeessa-vhh",
+          "vhh-kaalilaatikko",
+          "vhh-lihamureke",
+          "vhh-lihapiirakka",
+          "vhh-pyttipannu",
+          "yrttituorejuusto-kinkkurullat"
+        ],
+        "sumOfIndividuallyReportedSpecies": null,
+        "allSixListedSpeciesReported": false
+      },
+      "originalSourceFingerprint": "388780a3ce85fa83eaa85c2f5f25b92f23cde955ec57055b64f4f586ad9f0ade",
+      "actualNewReleaseEligible": 0,
+      "technicalBindingBugFound": false,
+      "recipeBarriers": [
+        {
+          "recipeId": "munakoiso-kesakurpitsalasagne",
+          "allRemainingFamilies": [
+            "F000396",
+            "F004193",
+            "F006618",
+            "F010466",
+            "F117"
+          ],
+          "otherBlockers": [
+            {
+              "code": "MISSING_COMPOSITION_OR_QUANTITY",
+              "ingredient": 6,
+              "name": "valmis italialainen tomaattikastike",
+              "detail": "UNSPECIFIED_PREPARED_PRODUCT_OR_CHEESE"
+            },
+            {
+              "code": "MISSING_COMPOSITION_OR_QUANTITY",
+              "ingredient": 9,
+              "name": "parmesaani tai vastaava kova juusto",
+              "detail": "UNSPECIFIED_PREPARED_PRODUCT_OR_CHEESE"
+            }
+          ],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "paistettu-maksa-pekonilla",
+          "allRemainingFamilies": [
+            "F006618",
+            "F786"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "vhh-pyttipannu",
+          "allRemainingFamilies": [
+            "F006618"
+          ],
+          "otherBlockers": [
+            {
+              "code": "MISSING_COMPOSITION_OR_QUANTITY",
+              "ingredient": 0,
+              "name": "vähähiilihydraattista makkaraa",
+              "detail": "MISSING_COMPLETE_SOURCE_COMPOSITION_OR_QUANTITY"
+            }
+          ],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "intialainen-ven-pongal",
+          "allRemainingFamilies": [
+            "F000446",
+            "F004205",
+            "F006088",
+            "F006618",
+            "F007682"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "allRemainingFamilies": [
+            "F002963",
+            "F006618",
+            "F110",
+            "F205"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "munatacot-huevos-rancheros",
+          "allRemainingFamilies": [
+            "F003192",
+            "F003327",
+            "F006316",
+            "F006618"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "paprikainen-vhh-gulassi",
+          "allRemainingFamilies": [
+            "F003269",
+            "F003327",
+            "F004193",
+            "F006316",
+            "F006618"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "vhh-lihapiirakka",
+          "allRemainingFamilies": [
+            "F006077",
+            "F006618"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": true
+        },
+        {
+          "recipeId": "liha-juureskeitto-perunaton",
+          "allRemainingFamilies": [
+            "F000514",
+            "F006321",
+            "F006618",
+            "F009021"
+          ],
+          "otherBlockers": [
+            {
+              "code": "MISSING_COMPOSITION_OR_QUANTITY",
+              "ingredient": 6,
+              "name": "laakerinlehteä",
+              "detail": "UNRESOLVED_OMITTED_INGREDIENT"
+            }
+          ],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "spanakopita",
+          "allRemainingFamilies": [
+            "F002452",
+            "F006250",
+            "F006497",
+            "F006618",
+            "F008761"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "chettinad-kana",
+          "allRemainingFamilies": [
+            "F002806",
+            "F002963",
+            "F003190",
+            "F004193",
+            "F004213",
+            "F006159",
+            "F006618"
+          ],
+          "otherBlockers": [
+            {
+              "code": "MISSING_COMPOSITION_OR_QUANTITY",
+              "ingredient": 7,
+              "name": "fenkolinsiemeniä",
+              "detail": "UNRESOLVED_OMITTED_INGREDIENT"
+            },
+            {
+              "code": "MISSING_COMPOSITION_OR_QUANTITY",
+              "ingredient": 10,
+              "name": "tuoreita currylehtiä",
+              "detail": "UNRESOLVED_OMITTED_INGREDIENT"
+            }
+          ],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "jauheliha-makaronilaatikko",
+          "allRemainingFamilies": [
+            "F004193",
+            "F006316",
+            "F006618"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "lindstrominpihvit-kaalilla",
+          "allRemainingFamilies": [
+            "F000678",
+            "F001010",
+            "F006618",
+            "F28"
+          ],
+          "otherBlockers": [
+            {
+              "code": "MISSING_COMPOSITION_OR_QUANTITY",
+              "ingredient": 2,
+              "name": "punajuurilientä",
+              "detail": "UNRESOLVED_OMITTED_INGREDIENT"
+            }
+          ],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "uunimakkara-sipulipedilla",
+          "allRemainingFamilies": [
+            "F006316",
+            "F006618",
+            "F28",
+            "F7607"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "bulgogi",
+          "allRemainingFamilies": [
+            "F006187",
+            "F006250",
+            "F006618",
+            "F008969"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "bun-cha-hanoi",
+          "allRemainingFamilies": [
+            "F003192",
+            "F006618",
+            "F008004",
+            "F008969"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "carnitas-salaattitacot",
+          "allRemainingFamilies": [
+            "F003192",
+            "F003327",
+            "F005191",
+            "F005199",
+            "F006281",
+            "F006618"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "doner-kebab",
+          "allRemainingFamilies": [
+            "F003327",
+            "F006281",
+            "F006316",
+            "F006618"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "janssoninkiusaus-juuriselleri",
+          "allRemainingFamilies": [
+            "F000074",
+            "F006618"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "menemen",
+          "allRemainingFamilies": [
+            "F006316",
+            "F006618"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "pasta-alla-norma",
+          "allRemainingFamilies": [
+            "F002479",
+            "F006618"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "ratatouille",
+          "allRemainingFamilies": [
+            "F006618",
+            "F009160"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": true
+        },
+        {
+          "recipeId": "shakshuka",
+          "allRemainingFamilies": [
+            "F003327",
+            "F006316",
+            "F006618"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "sitruuna-yrttikana-parsa",
+          "allRemainingFamilies": [
+            "F006618",
+            "F009160"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": true
+        },
+        {
+          "recipeId": "taytetyt-paprikat-vhh",
+          "allRemainingFamilies": [
+            "F006281",
+            "F006618"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        }
+      ],
+      "existingFamilyAssessment": {
+        "foodId": "F006618",
+        "name": "Pepper, black, ground",
+        "affectedRecipeIds": [
+          "bulgogi",
+          "bun-cha-hanoi",
+          "carnitas-salaattitacot",
+          "doner-kebab",
+          "janssoninkiusaus-juuriselleri",
+          "menemen",
+          "pasta-alla-norma",
+          "ratatouille",
+          "shakshuka",
+          "sitruuna-yrttikana-parsa",
+          "taytetyt-paprikat-vhh",
+          "uunikanapasta-kesakurpitsa"
+        ],
+        "recipeCount": 12,
+        "currentSource": {
+          "foodId": "F006618",
+          "name": "Pepper, black, ground",
+          "derivation": "Borrowed",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618",
+          "sourceWithout": 38.6,
+          "sourceWith": 38.6,
+          "pairDifference": 0.0,
+          "species": {
+            "sorbitol": null,
+            "mannitol": null,
+            "glycerol": null,
+            "erythritol": null,
+            "maltitol": null,
+            "xylitol": null
+          },
+          "protein": 10.4,
+          "fat": 3.3,
+          "fibre": 25.3,
+          "aggregatePolyol": null,
+          "aggregateEvidence": "No independent aggregate assay is established. Pair difference is a derived field, not exhaustive species coverage.",
+          "adapterRecordIds": [
+            "A006618-campaign4",
+            "A006618-q09",
+            "A006618-r5",
+            "A006618-r6",
+            "afcd-F006618",
+            "afcd-F006618-2026-10-24",
+            "afcd-F006618-release-3"
+          ],
+          "scopeRecipeIds": [
+            "bulgogi",
+            "bun-cha-hanoi",
+            "butter-chicken",
+            "carnitas-salaattitacot",
+            "chettinad-kana",
+            "doner-kebab",
+            "intialainen-ven-pongal",
+            "italian-pata",
+            "janssoninkiusaus-juuriselleri",
+            "jauheliha-kaalikeitto-vhh",
+            "jauheliha-makaronilaatikko",
+            "kanakeitto-pinaatti-sitruuna",
+            "kanapyorykat-tomaattikastike",
+            "kreikkalainen-kanavuoka-oliiveilla",
+            "kreikkalainen-moussaka",
+            "lanttulaatikko-kermainen",
+            "liha-juureskeitto-perunaton",
+            "lindstrominpihvit-kaalilla",
+            "lohikeitto-kuohukermalla",
+            "menemen",
+            "moo-ping-vhh",
+            "munakasmuffinit",
+            "munakoiso-jauhelihavuoka-vhh",
+            "munakoiso-kesakurpitsalasagne",
+            "munakokkeli",
+            "munatacot-huevos-rancheros",
+            "paistettu-maksa-pekonilla",
+            "paprikainen-vhh-gulassi",
+            "paprikauunimunakkaat",
+            "parsakaali-sinihomejuustofrittata",
+            "pasta-alla-norma",
+            "poronkaristys-kukkakaalimuusilla",
+            "raejuusto-uunimunakas",
+            "ratatouille",
+            "shakshuka",
+            "sitruuna-yrttikana-parsa",
+            "spanakopita",
+            "tabbouleh",
+            "taytetyt-paprikat-vhh",
+            "tonnikalamunakkaat-uunissa",
+            "tortilla-de-patatas",
+            "uunikanapasta-kesakurpitsa",
+            "uunilohi-smetanakuorrutteella",
+            "uunimakkara-sipulipedilla",
+            "uunimuna-avokadot",
+            "uunimunat-pinaatilla",
+            "uuniporsas-kermakastikkeessa-vhh",
+            "vhh-kaalilaatikko",
+            "vhh-lihamureke",
+            "vhh-lihapiirakka",
+            "vhh-pyttipannu",
+            "yrttituorejuusto-kinkkurullat"
+          ],
+          "sumOfIndividuallyReportedSpecies": null,
+          "allSixListedSpeciesReported": false
+        },
+        "replacementProposal": null,
+        "remainingEvidence": "Fineli11177: aggregate polyol absent; fibre26.5 on live page does not establish P. Source-bound scenario only, no assigned zero.",
+        "decision": "HOLD_OR_CASE_SPECIFIC_SCENARIO"
+      },
+      "primaryPageChecked": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+      "primaryCheck": "Official web nutrient table inspected2026-11-01: fibre present, no aggregate polyol row. This does not prove P0. No raw download obtained.",
+      "remaining": "Existing scoped small-spice GI50 may apply only at the existing weighed/scoped limits; the composition aggregate-polyol gap remains. PR165/156 scenario approvals do not transfer to new recipes.",
+      "macroEffect": "Original A/protein/fat remain fixed only inside the old source model; totalCHO has an unresolved additive polyol term. A Fineli replacement also changes source macros and needs its own precision/preparation approval."
+    },
+    {
+      "foodId": "F009160",
+      "originalSource": {
+        "foodId": "F009160",
+        "name": "Thyme, dried, ground",
+        "derivation": "Borrowed",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009160",
+        "sourceWithout": 26.9,
+        "sourceWith": 26.9,
+        "pairDifference": 0.0,
+        "species": {
+          "sorbitol": null,
+          "mannitol": null,
+          "glycerol": null,
+          "erythritol": null,
+          "maltitol": null,
+          "xylitol": null
+        },
+        "protein": 9.1,
+        "fat": 7.4,
+        "fibre": 37.0,
+        "aggregatePolyol": null,
+        "aggregateEvidence": "No independent aggregate assay is established. Pair difference is a derived field, not exhaustive species coverage.",
+        "adapterRecordIds": [
+          "A009160-campaign4",
+          "A009160-q09",
+          "afcd-F009160",
+          "afcd-F009160-r4"
+        ],
+        "scopeRecipeIds": [
+          "lahi-ita-manakish-zaatarilla",
+          "ratatouille",
+          "sitruuna-yrttikana-parsa",
+          "uuniporsas-kermakastikkeessa-vhh"
+        ],
+        "sumOfIndividuallyReportedSpecies": null,
+        "allSixListedSpeciesReported": false
+      },
+      "originalSourceFingerprint": "97dc42fd0eaafb5a2ee3b9173b97ce1c4236877dac4d0bd3477ef89ad612e05f",
+      "actualNewReleaseEligible": 0,
+      "technicalBindingBugFound": false,
+      "recipeBarriers": [
+        {
+          "recipeId": "lahi-ita-manakish-zaatarilla",
+          "allRemainingFamilies": [
+            "F009160",
+            "F110"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": false
+        },
+        {
+          "recipeId": "ratatouille",
+          "allRemainingFamilies": [
+            "F006618",
+            "F009160"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": true
+        },
+        {
+          "recipeId": "sitruuna-yrttikana-parsa",
+          "allRemainingFamilies": [
+            "F006618",
+            "F009160"
+          ],
+          "otherBlockers": [],
+          "completeOnlyIfSelectedThreeResolved": true
+        }
+      ],
+      "existingFamilyAssessment": {
+        "foodId": "F009160",
+        "name": "Thyme, dried, ground",
+        "affectedRecipeIds": [
+          "ratatouille",
+          "sitruuna-yrttikana-parsa"
+        ],
+        "recipeCount": 2,
+        "currentSource": {
+          "foodId": "F009160",
+          "name": "Thyme, dried, ground",
+          "derivation": "Borrowed",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009160",
+          "sourceWithout": 26.9,
+          "sourceWith": 26.9,
+          "pairDifference": 0.0,
+          "species": {
+            "sorbitol": null,
+            "mannitol": null,
+            "glycerol": null,
+            "erythritol": null,
+            "maltitol": null,
+            "xylitol": null
+          },
+          "protein": 9.1,
+          "fat": 7.4,
+          "fibre": 37.0,
+          "aggregatePolyol": null,
+          "aggregateEvidence": "No independent aggregate assay is established. Pair difference is a derived field, not exhaustive species coverage.",
+          "adapterRecordIds": [
+            "A009160-campaign4",
+            "A009160-q09",
+            "afcd-F009160",
+            "afcd-F009160-r4"
+          ],
+          "scopeRecipeIds": [
+            "lahi-ita-manakish-zaatarilla",
+            "ratatouille",
+            "sitruuna-yrttikana-parsa",
+            "uuniporsas-kermakastikkeessa-vhh"
+          ],
+          "sumOfIndividuallyReportedSpecies": null,
+          "allSixListedSpeciesReported": false
+        },
+        "replacementProposal": null,
+        "remainingEvidence": "Fineli11194 official page lacks aggregate polyol. Conditional scenario is not a measured error bound.",
+        "decision": "HOLD_OR_CASE_SPECIFIC_SCENARIO"
+      },
+      "primaryPageChecked": "https://fineli.fi/fineli/fi/elintarvikkeet/11194",
+      "primaryCheck": "Official web nutrient table inspected2026-11-01: fibre present, no aggregate polyol row. This does not prove P0. No raw download obtained.",
+      "remaining": "Existing scoped small-spice GI50 may apply only at the existing weighed/scoped limits; the composition aggregate-polyol gap remains. PR165/156 scenario approvals do not transfer to new recipes.",
+      "macroEffect": "Original A/protein/fat remain fixed only inside the old source model; totalCHO has an unresolved additive polyol term. A Fineli replacement also changes source macros and needs its own precision/preparation approval."
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 import test from "node:test";
 import { readFileSync } from "node:fs";
+import { copyFile, mkdir, mkdtemp, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import assert from "node:assert/strict";
@@ -130,4 +134,58 @@ test("withdrawal cannot restore values or accept changed inputs, evidence, or tr
 test("unlisted recipes do not acquire an evidence-withdrawal exception", () => {
   const cleared = { ...recipe, carbs_net_per_serving_g: null, carbs_total_per_serving_g: null, protein_per_serving_g: null, fat_per_serving_g: null };
   assert.ok(verifyNutritionEvidence(cleared, evidence()).errors.length > 0);
+});
+
+// PR153 still carries the superseded recipe. Exercise its real archived text
+// against the production gate without regenerating the 326-recipe report.
+import { applyRecovery, loadRecovery, recoveryRecipeId } from "../scripts/gk80-uunikanapasta";
+import type { GlycemicLoadResult } from "../scripts/glycemic-load-model";
+
+const recoveryRoot = fileURLToPath(new URL("../..", import.meta.url));
+const recoveryRecipePath = "reseptit/paaruoat/uunikanapasta-kesakurpitsa.md";
+
+test("published uunikanapasta retains its approved display and incomplete-only entry gate", async () => {
+  const { result } = await loadRecovery(recoveryRoot, recoveryRecipeId);
+  assert.equal(result.gk.value, 3);
+  assert.deepEqual(Object.fromEntries(Object.entries(result.macros).map(([key, value]) => [key, value.value])), {
+    carbsNetG: 7.4, carbsTotalG: 10.4, proteinG: 39.53, fatG: 23.91,
+  });
+  assert.equal(result.wholeGkPoint, null);
+  assert.equal(result.unknownAggregatePolyols, null);
+  const before = JSON.parse(readFileSync(path.join(recoveryRoot, "docs/nutrition/gk80-uunikanapasta-release/historical-result.json"), "utf8")) as GlycemicLoadResult;
+  assert.equal(before.status, "INSUFFICIENT SOURCE DATA");
+  const [after] = await applyRecovery(recoveryRoot, [before]);
+  assert.equal(after.glycemicLoadPerServing, 3);
+  assert.equal(before.status, "INSUFFICIENT SOURCE DATA");
+});
+
+test("the actual PR153 recipe cannot replace the newer published preparation", async () => {
+  const prefix = path.join(tmpdir(), "gk80-published-version-");
+  const fixture = await mkdtemp(prefix);
+  try {
+    const { e } = await loadRecovery(recoveryRoot, recoveryRecipeId);
+    const files = ["docs/nutrition/calculations/" + recoveryRecipeId + ".json", ...Object.keys(e.recoveryC.versionHashes)];
+    for (const file of files) {
+      const target = path.join(fixture, file);
+      await mkdir(path.dirname(target), { recursive: true });
+      await copyFile(path.join(recoveryRoot, file), target);
+    }
+    await loadRecovery(fixture, recoveryRecipeId);
+    const stale = "docs/nutrition/gk80-uunikanapasta-release/reviewed-source.md";
+    assert.notEqual(readFileSync(path.join(recoveryRoot, stale), "utf8"), readFileSync(path.join(recoveryRoot, recoveryRecipePath), "utf8"));
+    await copyFile(path.join(recoveryRoot, stale), path.join(fixture, recoveryRecipePath));
+    await assert.rejects(loadRecovery(fixture, recoveryRecipeId), /RECOVERY_STALE_PREPARATION/);
+  } finally {
+    // Verify the resolved disposable target before recursive cleanup on Windows.
+    assert.equal(path.dirname(path.resolve(fixture)), path.resolve(tmpdir()));
+    assert.ok(path.basename(fixture).startsWith("gk80-published-version-"));
+    await rm(fixture, { recursive: true, force: true });
+  }
+});
+
+test("a numeric result from an old release pack collides instead of silently replacing published recovery", async () => {
+  const before = JSON.parse(readFileSync(path.join(recoveryRoot, "docs/nutrition/gk80-uunikanapasta-release/historical-result.json"), "utf8")) as GlycemicLoadResult;
+  const oldPackResult = { ...before, status: "CALCULATED", glycemicLoadPerServing: 2.694325 } as GlycemicLoadResult;
+  await assert.rejects(applyRecovery(recoveryRoot, [oldPackResult]), /RECOVERY_RELEASE_COLLISION/);
+  assert.equal(oldPackResult.glycemicLoadPerServing, 2.694325);
 });

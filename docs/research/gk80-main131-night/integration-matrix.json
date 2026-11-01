@@ -1,0 +1,435 @@
+{
+  "baseMain": "ec7f4b01e6fa86cc6a45308286cf32e776e91e88",
+  "heads": {
+    "153": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+    "156": "d31c3a7ae157337177733375a9c7d811646187ee"
+  },
+  "overlapCounts": {
+    "153_165": 10,
+    "156_165": 14,
+    "153_156": 8
+  },
+  "guardSyncPreview": {
+    "153": "BLOCKED merge_conflict,mutated=false",
+    "156": "BLOCKED merge_conflict,mutated=false"
+  },
+  "wholeOldPrMergeAllowed": false,
+  "rows": [
+    {
+      "pair": [
+        153,
+        165
+      ],
+      "path": "docs/nutrition/calculations/uunikanapasta-kesakurpitsa.json",
+      "gitBlobByVersion": {
+        "153": "65a0d9e469d26465331cedcfbfbdc8b24f569622",
+        "165": "08c59fce080948b4a0401ef8ef4ed9d7a3a542e7",
+        "main": "08c59fce080948b4a0401ef8ef4ed9d7a3a542e7"
+      },
+      "resolution": "Keep current-main uunikanapasta bytes/evidence unchanged. Exclude old PR153 uunikanapasta from all active packs, manifests, macros, calculation files and recipe edits."
+    },
+    {
+      "pair": [
+        153,
+        165
+      ],
+      "path": "reseptit/paaruoat/uunikanapasta-kesakurpitsa.md",
+      "gitBlobByVersion": {
+        "153": "382e3b9e4dfa94804db7b260f4c0d659bfbb8feb",
+        "165": "827d1589267118b959769588383f2abdaddba260",
+        "main": "827d1589267118b959769588383f2abdaddba260"
+      },
+      "resolution": "Keep current-main uunikanapasta bytes/evidence unchanged. Exclude old PR153 uunikanapasta from all active packs, manifests, macros, calculation files and recipe edits."
+    },
+    {
+      "pair": [
+        153,
+        165
+      ],
+      "path": "site/package.json",
+      "gitBlobByVersion": {
+        "153": "9a2b8050ab4bf7d1cf60eeab85db476c1874ca5b",
+        "165": "a07a1628df395b3a0047cc55fb5d211638b7afc4",
+        "main": "a07a1628df395b3a0047cc55fb5d211638b7afc4"
+      },
+      "resolution": "Keep current explicit uunikanapasta test registration; add only future approved integration tests; do not copy old package.json."
+    },
+    {
+      "pair": [
+        153,
+        165
+      ],
+      "path": "site/scripts/gk80-food-catalog.json",
+      "gitBlobByVersion": {
+        "153": "63ea331016c41908b80249d29b637bc72efe95b9",
+        "165": "b831658fde99e3d9ac6d7412c97d56716d189c5c",
+        "main": "b831658fde99e3d9ac6d7412c97d56716d189c5c"
+      },
+      "resolution": "Add only separately approved aliases/profiles to main, retaining recovery garlic/basil bindings. No whole-file replacement and no invented aggregate polyol."
+    },
+    {
+      "pair": [
+        153,
+        165
+      ],
+      "path": "site/tests/gk80-combined.test.ts",
+      "gitBlobByVersion": {
+        "153": "2def1f9b9faafca0f97b025d41d092b7551c5f81",
+        "165": "6b9990781d0e906979fbdbad180e8706e8be54f9",
+        "main": "6b9990781d0e906979fbdbad180e8706e8be54f9"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        153,
+        165
+      ],
+      "path": "site/tests/gk80-integration.test.ts",
+      "gitBlobByVersion": {
+        "153": "ee17b0b2a2ef41a9f2ea8b1a9e84a30856bcbf7e",
+        "165": "b59911b7fdb54a6955e36ddd2d8c3f7866655737",
+        "main": "b59911b7fdb54a6955e36ddd2d8c3f7866655737"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        153,
+        165
+      ],
+      "path": "site/tests/gk80-q09.test.ts",
+      "gitBlobByVersion": {
+        "153": "8f7a61a4a6ba7ee4b6e383c680ce50a6ce792921",
+        "165": "d487ab6a85d7d466ecf2b9ae0d6a0cdde7654f1c",
+        "main": "d487ab6a85d7d466ecf2b9ae0d6a0cdde7654f1c"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        153,
+        165
+      ],
+      "path": "site/tests/glycemic-load.test.ts",
+      "gitBlobByVersion": {
+        "153": "51cd06d81efe4291c7af29353acf081f92f4b8a4",
+        "165": "ef1ecd73e001ff6cd8bd5000d883b97b6ab9fc80",
+        "main": "ef1ecd73e001ff6cd8bd5000d883b97b6ab9fc80"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        153,
+        165
+      ],
+      "path": "site/tests/published-content.test.ts",
+      "gitBlobByVersion": {
+        "153": "17e52eedf94396b37ad5110602fe3c69e2db6e7c",
+        "165": "af5d823dbf3aeecec155be8646030a5d2ae6c8f4",
+        "main": "af5d823dbf3aeecec155be8646030a5d2ae6c8f4"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        153,
+        165
+      ],
+      "path": "site/tests/static-output.test.ts",
+      "gitBlobByVersion": {
+        "153": "8eace8c6984ad36e0b2de1de57d70cf4221969fb",
+        "165": "b09920d062cfc1dc5504290e36e61b57b902190c",
+        "main": "b09920d062cfc1dc5504290e36e61b57b902190c"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/scripts/gk80-food-catalog.json",
+      "gitBlobByVersion": {
+        "156": "9e7d68841af3bc247827acfbbef37d2ba8174979",
+        "165": "b831658fde99e3d9ac6d7412c97d56716d189c5c",
+        "main": "b831658fde99e3d9ac6d7412c97d56716d189c5c"
+      },
+      "resolution": "Add only separately approved aliases/profiles to main, retaining recovery garlic/basil bindings. No whole-file replacement and no invented aggregate polyol."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/scripts/glycemic-load-pilot.ts",
+      "gitBlobByVersion": {
+        "156": "6ef18c5eb68f6963422e315600b684f7998d9e92",
+        "165": "4fc875dcae751e693ce969aba347d171747a979e",
+        "main": "4fc875dcae751e693ce969aba347d171747a979e"
+      },
+      "resolution": "Retain current main recovery; add only separately approved scoped-C integration. Do not copy old full runtime or unrelated research packs."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/scripts/nutrition-audit.ts",
+      "gitBlobByVersion": {
+        "156": "c85e18da6153e637f33876f8b88d4bfa68643bf4",
+        "165": "aa0a76689c5778b1f36d629d33a8dec0a99d7794",
+        "main": "aa0a76689c5778b1f36d629d33a8dec0a99d7794"
+      },
+      "resolution": "Keep main recovery+CLOSED withholding checks and add separate two-case scoped-C dispatch only after hash validation; no old-file overwrite."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/scripts/nutrition-evidence.ts",
+      "gitBlobByVersion": {
+        "156": "18dbac10d4f08804d8f1f4c3d2e6d2b1a8c188c3",
+        "165": "f6c72acd5ab6a50ff49a681fc76530e34a739cd9",
+        "main": "f6c72acd5ab6a50ff49a681fc76530e34a739cd9"
+      },
+      "resolution": "Keep main recovery+CLOSED withholding checks and add separate two-case scoped-C dispatch only after hash validation; no old-file overwrite."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/scripts/validate-changed-content.ts",
+      "gitBlobByVersion": {
+        "156": "70cd4fc93c7a46399e7158c317617a3a763cc88b",
+        "165": "f330c397542c35f17031f4231a91e5439972df17",
+        "main": "f330c397542c35f17031f4231a91e5439972df17"
+      },
+      "resolution": "Keep main recovery+CLOSED withholding checks and add separate two-case scoped-C dispatch only after hash validation; no old-file overwrite."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/src/features/glycemic-load/GlycemicLoadPilotPage.tsx",
+      "gitBlobByVersion": {
+        "156": "9876c3636df106c4381bbcde726da8789cd4d108",
+        "165": "12a84ed1f685bab2eed5fe7c5da87b6568c6b414",
+        "main": "12a84ed1f685bab2eed5fe7c5da87b6568c6b414"
+      },
+      "resolution": "Retain current closedRecoveryC display and LOW/source limitations; add separate boundedPolyolC branch only for the two exact cases."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/src/features/recipes/RecipePage.tsx",
+      "gitBlobByVersion": {
+        "156": "e0f0792f2b73c678e8db7030d4877d15a1b614da",
+        "165": "5255dd917efc2909fe224b4c828f40cd3989268f",
+        "main": "5255dd917efc2909fe224b4c828f40cd3989268f"
+      },
+      "resolution": "Retain current closedRecoveryC display and LOW/source limitations; add separate boundedPolyolC branch only for the two exact cases."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/src/features/recipes/glycemic-load-display.ts",
+      "gitBlobByVersion": {
+        "156": "d0b84a862941177e86e1ad4c4b2b432573091fb2",
+        "165": "9fddff9021239a031af6d09a37856f6b727587c5",
+        "main": "9fddff9021239a031af6d09a37856f6b727587c5"
+      },
+      "resolution": "Retain current closedRecoveryC display and LOW/source limitations; add separate boundedPolyolC branch only for the two exact cases."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/tests/gk80-combined.test.ts",
+      "gitBlobByVersion": {
+        "156": "5628ba05104e6d034718d44492d070ad1a3fe0a8",
+        "165": "6b9990781d0e906979fbdbad180e8706e8be54f9",
+        "main": "6b9990781d0e906979fbdbad180e8706e8be54f9"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/tests/gk80-integration.test.ts",
+      "gitBlobByVersion": {
+        "156": "2a7bd3d541c3fe32f8f95c12730274d483d27cfa",
+        "165": "b59911b7fdb54a6955e36ddd2d8c3f7866655737",
+        "main": "b59911b7fdb54a6955e36ddd2d8c3f7866655737"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/tests/gk80-q09.test.ts",
+      "gitBlobByVersion": {
+        "156": "284f423e5fa9853576a18f47f733077ed96c601e",
+        "165": "d487ab6a85d7d466ecf2b9ae0d6a0cdde7654f1c",
+        "main": "d487ab6a85d7d466ecf2b9ae0d6a0cdde7654f1c"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/tests/glycemic-load.test.ts",
+      "gitBlobByVersion": {
+        "156": "01ea9d9e78e979bd90cf22c370ba8e42ed5bb30e",
+        "165": "ef1ecd73e001ff6cd8bd5000d883b97b6ab9fc80",
+        "main": "ef1ecd73e001ff6cd8bd5000d883b97b6ab9fc80"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/tests/published-content.test.ts",
+      "gitBlobByVersion": {
+        "156": "db76434a16c105cdd123edaae68922289f07697f",
+        "165": "af5d823dbf3aeecec155be8646030a5d2ae6c8f4",
+        "main": "af5d823dbf3aeecec155be8646030a5d2ae6c8f4"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        156,
+        165
+      ],
+      "path": "site/tests/static-output.test.ts",
+      "gitBlobByVersion": {
+        "156": "6385f4f1790a4e187c700fbf2105d382e874cb72",
+        "165": "b09920d062cfc1dc5504290e36e61b57b902190c",
+        "main": "b09920d062cfc1dc5504290e36e61b57b902190c"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        153,
+        156
+      ],
+      "path": "docs/nutrition/batches/batch-87.json",
+      "gitBlobByVersion": {
+        "153": "24ae29ba9dcafd9645238a8caff2522dda872d19",
+        "156": "b84b657cb2fac0334a5aa71a0fd2305f44f1fd3d",
+        "main": null
+      },
+      "resolution": "Reserve87 for the exact approved PR156 two-case packet. Future PR15319 receive a new unused number >=89; regenerate its own references only after approval."
+    },
+    {
+      "pair": [
+        153,
+        156
+      ],
+      "path": "site/scripts/gk80-food-catalog.json",
+      "gitBlobByVersion": {
+        "153": "63ea331016c41908b80249d29b637bc72efe95b9",
+        "156": "9e7d68841af3bc247827acfbbef37d2ba8174979",
+        "main": "b831658fde99e3d9ac6d7412c97d56716d189c5c"
+      },
+      "resolution": "Add only separately approved aliases/profiles to main, retaining recovery garlic/basil bindings. No whole-file replacement and no invented aggregate polyol."
+    },
+    {
+      "pair": [
+        153,
+        156
+      ],
+      "path": "site/tests/gk80-combined.test.ts",
+      "gitBlobByVersion": {
+        "153": "2def1f9b9faafca0f97b025d41d092b7551c5f81",
+        "156": "5628ba05104e6d034718d44492d070ad1a3fe0a8",
+        "main": "6b9990781d0e906979fbdbad180e8706e8be54f9"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        153,
+        156
+      ],
+      "path": "site/tests/gk80-integration.test.ts",
+      "gitBlobByVersion": {
+        "153": "ee17b0b2a2ef41a9f2ea8b1a9e84a30856bcbf7e",
+        "156": "2a7bd3d541c3fe32f8f95c12730274d483d27cfa",
+        "main": "b59911b7fdb54a6955e36ddd2d8c3f7866655737"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        153,
+        156
+      ],
+      "path": "site/tests/gk80-q09.test.ts",
+      "gitBlobByVersion": {
+        "153": "8f7a61a4a6ba7ee4b6e383c680ce50a6ce792921",
+        "156": "284f423e5fa9853576a18f47f733077ed96c601e",
+        "main": "d487ab6a85d7d466ecf2b9ae0d6a0cdde7654f1c"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        153,
+        156
+      ],
+      "path": "site/tests/glycemic-load.test.ts",
+      "gitBlobByVersion": {
+        "153": "51cd06d81efe4291c7af29353acf081f92f4b8a4",
+        "156": "01ea9d9e78e979bd90cf22c370ba8e42ed5bb30e",
+        "main": "ef1ecd73e001ff6cd8bd5000d883b97b6ab9fc80"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        153,
+        156
+      ],
+      "path": "site/tests/published-content.test.ts",
+      "gitBlobByVersion": {
+        "153": "17e52eedf94396b37ad5110602fe3c69e2db6e7c",
+        "156": "db76434a16c105cdd123edaae68922289f07697f",
+        "main": "af5d823dbf3aeecec155be8646030a5d2ae6c8f4"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    },
+    {
+      "pair": [
+        153,
+        156
+      ],
+      "path": "site/tests/static-output.test.ts",
+      "gitBlobByVersion": {
+        "153": "8eace8c6984ad36e0b2de1de57d70cf4221969fb",
+        "156": "6385f4f1790a4e187c700fbf2105d382e874cb72",
+        "main": "b09920d062cfc1dc5504290e36e61b57b902190c"
+      },
+      "resolution": "Keep current131-object baseline and keto/tea assertions. Reconcile current tests additively; archived snapshot views only in explicit historical tests."
+    }
+  ]
+}
