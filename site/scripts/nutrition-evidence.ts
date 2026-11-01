@@ -2,6 +2,14 @@ import { createHash } from "node:crypto";
 import type { Calculation } from "./nutrition-model";
 import { calculate } from "./nutrition-model";
 
+// Owner-approved AFCD9837 withdrawal: suppress only these two exact historical
+// evidence objects. This neither validates their old polyol claim nor relaxes
+// the four-value calculation rules. Restoring values requires a separate change.
+const withdrawnEvidenceHashes: Readonly<Record<string, string>> = {
+  "keto-suklaakeksit": "53b29654ae27ad3069892bcad94f9710ef4893798a0aef4cc5239845abf16e28",
+  "keto-mutakakku": "d1b17dcd782b109e50cf62abcb40f7deeab083b02e954d3de536231493f2573b"
+};
+
 const nutritionKeys = [
   "carbs_net_per_serving_g",
   "carbs_total_per_serving_g",
@@ -37,6 +45,8 @@ export function verifyNutritionEvidence(
   const errors: string[] = [];
   const values = Object.fromEntries(nutritionKeys.map((key) => [key, recipe[key] ?? null]));
   const hasValues = Object.values(values).some((value) => value !== null);
+  const withdrawnHash = Object.hasOwn(withdrawnEvidenceHashes, recipe.recipe_id) ? withdrawnEvidenceHashes[recipe.recipe_id] : undefined;
+  if (withdrawnHash && !evidence) return { status: "CONFLICT REQUIRES REVIEW", errors: ["Withdrawn package must retain its exact historical calculation evidence"], calculated: null, values };
   if (!evidence) return { status: hasValues ? "INSUFFICIENT SOURCE DATA" : "MISSING", errors: ["Calculation evidence file is missing"], calculated: null, values };
 
   if (evidence.recipeId !== recipe.recipe_id) errors.push(`recipe ID mismatch: ${evidence.recipeId}`);
@@ -52,6 +62,20 @@ export function verifyNutritionEvidence(
     if (input.item !== source.item || input.amount !== source.amount || input.unit !== source.unit) {
       errors.push(`ingredient ${index + 1} does not match the published source recipe`);
     }
+  }
+
+  for (const translation of translations) {
+    if (translation.data.recipe_id !== recipe.recipe_id) errors.push(`${translation.path}: recipe ID mismatch`);
+    for (const key of nutritionKeys) {
+      if ((translation.data[key] ?? null) !== (recipe[key] ?? null)) errors.push(`${translation.path}: ${key} differs from Finnish source`);
+    }
+  }
+
+  if (withdrawnHash) {
+    if (hasValues) errors.push("Withdrawn package must withhold all four nutrition values");
+    const actualHash = createHash("sha256").update(JSON.stringify(evidence)).digest("hex");
+    if (actualHash !== withdrawnHash) errors.push("Withdrawn calculation evidence fingerprint changed; separate review required");
+    return { status: errors.length === 0 ? "INSUFFICIENT SOURCE DATA" : "CONFLICT REQUIRES REVIEW", errors, calculated: null, values };
   }
 
   let calculated: ReturnType<typeof calculate> | null = null;
@@ -73,13 +97,6 @@ export function verifyNutritionEvidence(
     }
   } catch (error) {
     errors.push(`calculation failed: ${error instanceof Error ? error.message : String(error)}`);
-  }
-
-  for (const translation of translations) {
-    if (translation.data.recipe_id !== recipe.recipe_id) errors.push(`${translation.path}: recipe ID mismatch`);
-    for (const key of nutritionKeys) {
-      if ((translation.data[key] ?? null) !== (recipe[key] ?? null)) errors.push(`${translation.path}: ${key} differs from Finnish source`);
-    }
   }
 
   const status = errors.length === 0 ? "ESTIMATE WITH EVIDENCE" : hasValues ? "CONFLICT REQUIRES REVIEW" : "INSUFFICIENT SOURCE DATA";

@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "baseMain": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+  "numericGk": 130,
+  "recipes": 326,
+  "unchangedWholeGkResults": 326,
+  "unchangedNumericGkResults": 130,
+  "teaStillIncomplete": true,
+  "nutritionConflicts": 0,
+  "recipesChecked": [
+    {
+      "recipeId": "keto-suklaakeksit",
+      "nutrition": "INSUFFICIENT SOURCE DATA",
+      "gk": "INSUFFICIENT SOURCE DATA",
+      "locales": [
+        "fi"
+      ],
+      "sourceInputsUnchanged": true,
+      "historicalEvidenceUnchanged": true,
+      "publicValuesAbsent": true,
+      "jsonLdNutritionAbsent": true
+    },
+    {
+      "recipeId": "keto-mutakakku",
+      "nutrition": "INSUFFICIENT SOURCE DATA",
+      "gk": "INSUFFICIENT SOURCE DATA",
+      "locales": [
+        "fi"
+      ],
+      "sourceInputsUnchanged": true,
+      "historicalEvidenceUnchanged": true,
+      "publicValuesAbsent": true,
+      "jsonLdNutritionAbsent": true
+    }
+  ],
+  "productionBuilds": 1,
+  "localChecks": {
+    "targetedUnitTestsPassed": 109,
+    "staticTestsPassed": 25,
+    "changedRecipeFilesPassed": 2,
+    "strictNutritionAudit": "PASS",
+    "localSiteBuildRoutes": 691,
+    "localSiteBuildRuns": 1
+  },
+  "baselineReference": "https://github.com/ozirix-dev/Reseptit/blob/19a559d80d3b64d8d17954f87be5e4b0955a4826/docs/nutrition/gk80-release-8/main-baseline.json",
+  "verifiedFileHashesLfNormalized": {
+    "reseptit/jalkiruoat/keto-suklaakeksit.md": "3890f2c40c40685cfde284dcd0e8346c020b46de45dc5387c6d4c490a261c859",
+    "reseptit/jalkiruoat/keto-mutakakku.md": "11295775a58c43785b65f67d7b717d8f17163f20ac4196337112abd048740c43",
+    "site/scripts/nutrition-evidence.ts": "41c340964ed2f4465f024cc6dc50713f23dc6866eb41a05dbb72debb0fccec95",
+    "site/tests/nutrition-evidence.test.ts": "8c89d33477a9901740cfdf36b5b42ae2be2dc5c7bd1ce719aa612dd563509e5d"
+  }
+}
