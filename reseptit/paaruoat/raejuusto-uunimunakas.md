@@ -1,63 +1,59 @@
 ---
-title: Pehmeä raejuusto-uunimunakas
+title: Pehmeä raejuusto-uunimunakas – punnittu versio
 recipe_id: raejuusto-uunimunakas
 url_slug: raejuusto-uunimunakas
 category: paaruoka
 language: fi
 diet_class: vhh_tiukka
 servings: 4
-carbs_net_per_serving_g: 3.30
-carbs_total_per_serving_g: 3.30
-protein_per_serving_g: 27.21
-fat_per_serving_g: 22.77
+carbs_net_per_serving_g: 3.42
+carbs_total_per_serving_g: 3.48
+protein_per_serving_g: 26.99
+fat_per_serving_g: 24.11
 main_ingredient:
-  - kananmuna
-  - raejuusto
+- kananmuna
+- raejuusto
 cooking_method:
-  - uuni
+- uuni
 time_total_min: 55
 difficulty: helppo
 tags:
-  - munakas
-  - uuniruoka
-  - raejuusto
-  - arki
-  - VHH
+- munakas
+- uuniruoka
+- raejuusto
+- arki
+- VHH
 image:
   src: paaruoat/raejuusto-uunimunakas.webp
-  alt: Pehmeästi paistunut raejuusto-uunimunakas, jonka pinnalla on tuoretta
-    ruohosipulia
+  alt: Pehmeä raejuusto-uunimunakas – punnittu versio – kuvituskuva
   width: 1280
   height: 853
 ingredients:
-  - amount: 10
-    unit: ""
-    item: kananmunaa
-  - amount: 2.5
-    unit: dl
-    item: ruokakermaa
-  - amount: 200
-    unit: g
-    item: raejuustoa
-  - amount: 0.25
-    unit: tl
-    item: suolaa
-  - amount: null
-    unit: ""
-    item: valko- tai mustapippuria
-    note: ripaus
-  - amount: null
-    unit: ""
-    item: voita
-    note: vuoan voiteluun
-  - amount: null
-    unit: ""
-    item: ruohosipulia
-    note: halutessasi pinnalle
+- amount: 550
+  unit: g
+  item: kuoretonta kananmunaa
+- amount: 250
+  unit: g
+  item: 15% ruokakermaa
+- amount: 200
+  unit: g
+  item: 2% raejuustoa
+- amount: 0.5
+  unit: g
+  item: jauhettua mustapippuria
+- amount: 5
+  unit: g
+  item: voita vuokaan, kokonaan mukana
+- amount: 5
+  unit: g
+  item: tuoretta ruohosipulia
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 translation_languages:
-  - en
-  - sv
-  - th
+- en
+- sv
+- th
 translation_status:
   en: published
   sv: published
@@ -65,22 +61,28 @@ translation_status:
 status: published
 ---
 
-# Pehmeä raejuusto-uunimunakas
-
-Pehmeä uunimunakas saa täyteläisyyttä sileäksi soseutetusta raejuustosta.
+# Pehmeä raejuusto-uunimunakas – punnittu versio
 
 ## Kuvaus
 
-Pieni muutos perinteiseen uunimunakkaaseen: raejuusto soseutetaan ja sekoitetaan kermaiseen munaseokseen. Vesihauteessa paistettuna munakkaasta tulee tasaisesti hyytyvä ja pehmeä.
+Pehmeä raejuusto-uunimunakas – punnittu versio. Täsmällinen versio 4 annokselle.
+
+## Ainekset
+
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Kuumenna kiertoilmauuni 125 asteeseen tai tavallinen uuni 150 asteeseen. Voitele noin 22 cm:n uunivuoka.
-2. Soseuta raejuusto tasaiseksi. Riko kananmunien rakenne kulhossa kevyesti vatkaamatta seosta vaahdoksi. Sekoita joukkoon ruokakerma, soseutettu raejuusto, suola ja ripaus pippuria.
-3. Kaada seos vuokaan. Aseta vuoka syvälle uunipannulle ja kaada pannulle kuumaa vettä vuoan ympärille.
-4. Kypsennä uunin alaosassa 45–55 minuuttia. Sekoita munakasta varovasti noin 15 ja 30 minuutin kohdalla. Ota vuoka uunista, kun seos on hyytynyt mutta vielä pehmeä.
-5. Silppua halutessasi pinnalle ruohosipulia ja tarjoa lämpimänä.
+1. Voitele vuoka 5 g:lla voita; koko määrä lasketaan mukaan. Sekoita 550 g kuoretonta munaa, 250 g 15% ruokakermaa ja 200 g 2% raejuustoa.
+2. Lisää 0,5 g mustapippuria ja 5 g ruohosipulia. Kypsennä 200 °C:ssa, kunnes muna on kauttaaltaan hyytynyt.
+3. Jaa koko vuoka neljään annokseen. Maun mukaan lisättävää voita, pippuria tai yrttiä ei jää määrältään avoimeksi.
 
 ## Muistiinpanot
 
-- Vesihaude auttaa munakasta hyytymään pehmeästi ja tasaisesti.
+Mallinnettu GK-arvio perustuu ainesosiin ja nimettyihin laskennallisiin oletuksiin. Luottamus on matala. Kaikki imeytyvät hiilihydraatit ovat mukana. Tämä ei ole aterialla mitattu verensokerivaste. Biologista epävarmuusväliä ei tunneta.
+
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
+
+Munan paino 550 g tarkoittaa kuoretonta munaa. Ruokakerma on 15 % ja raejuusto 2 %. Kaikki 5 g vuoan voita sisältyy arvioon.
+
+Kaikki luetellut syötävät ainekset ja kastike kulutetaan. Raakojen tai kuivien ainesten ravintokoostumusta käytetään nimetyn valmistuksen koostumusarvion pohjana; mittaamatonta kypsennys- tai liukenemishävikkiä ei vähennetä.

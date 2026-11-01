@@ -1,67 +1,61 @@
 ---
-title: Parsakaali-sinihomejuustofrittata
+title: Parsakaali-sinihomejuustofrittata – punnittu versio
 recipe_id: parsakaali-sinihomejuustofrittata
 url_slug: parsakaali-sinihomejuustofrittata
 category: paaruoka
 language: fi
 diet_class: vhh_tiukka
 servings: 4
-carbs_net_per_serving_g: 2.49
-carbs_total_per_serving_g: 4.36
-protein_per_serving_g: 18.23
-fat_per_serving_g: 32.19
+carbs_net_per_serving_g: 2.64
+carbs_total_per_serving_g: 4.0
+protein_per_serving_g: 17.97
+fat_per_serving_g: 33.22
 main_ingredient:
-  - kananmuna
-  - parsakaali
-  - sinihomejuusto
+- kananmuna
+- parsakaali
+- sinihomejuusto
 cooking_method:
-  - uuni
+- uuni
 difficulty: helppo
 tags:
-  - vhh
-  - frittata
-  - parsakaali
-  - sinihomejuusto
+- vhh
+- frittata
+- parsakaali
+- sinihomejuusto
 image:
   src: paaruoat/parsakaali-sinihomejuustofrittata.webp
-  alt: Kullanruskea parsakaali-sinihomejuustofrittata valurautapannussa
+  alt: Parsakaali-sinihomejuustofrittata – punnittu versio – kuvituskuva
   width: 1280
   height: 853
 ingredients:
-  - amount: 1
-    unit: rkl
-    item: voita
-    note: paistamiseen
-  - amount: 0.5
-    unit: kpl
-    item: sipuli
-    note: hienonnettuna
-  - amount: 200
-    unit: g
-    item: parsakaalia
-    note: pieninä nuppuina
-  - amount: 6
-    unit: kpl
-    item: kananmunaa
-  - amount: 1.5
-    unit: dl
-    item: kuohukermaa
-  - amount: 100
-    unit: g
-    item: sinihomejuustoa
-    note: murennettuna
-  - amount: null
-    unit: ""
-    item: mustapippuria
-    note: maun mukaan
-  - amount: 0.25
-    unit: tl
-    item: suolaa
-    note: tarvittaessa, juusto on suolaista
+- amount: 14
+  unit: g
+  item: voita
+- amount: 27.5
+  unit: g
+  item: keltasipulia
+- amount: 200
+  unit: g
+  item: parsakaalia
+- amount: 330
+  unit: g
+  item: kuoretonta kananmunaa
+- amount: 150
+  unit: g
+  item: 38% kuohukermaa
+- amount: 100
+  unit: g
+  item: sinihomejuustoa, AFCD regular blue vein -koostumus
+- amount: 0.5
+  unit: g
+  item: jauhettua mustapippuria
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 translation_languages:
-  - en
-  - sv
-  - th
+- en
+- sv
+- th
 translation_status:
   en: published
   sv: published
@@ -69,24 +63,28 @@ translation_status:
 status: published
 ---
 
-# Parsakaali-sinihomejuustofrittata
-
-Pehmeän täyteläinen uunimunakas yhdistää parsakaalin, kananmunan ja voimakkaan sinihomejuuston.
+# Parsakaali-sinihomejuustofrittata – punnittu versio
 
 ## Kuvaus
 
-Frittata sopii lounaaksi tai kevyeksi päivälliseksi. Sen voi paistaa pyöreässä uuninkestävässä pannussa tai pienessä vuoassa.
+Parsakaali-sinihomejuustofrittata – punnittu versio. Täsmällinen versio 4 annokselle.
+
+## Ainekset
+
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Kuumenna uuni 200 asteeseen. Voitele noin 20 × 25 cm:n uunivuoka tai käytä uuninkestävää paistinpannua.
-2. Sulata voi pannulla. Kuullota sipulia hetki ja lisää parsakaalin nuput. Paista sekoitellen noin 3 minuuttia, kunnes parsakaali saa hieman väriä.
-3. Siirrä kasvikset vuokaan. Vatkaa munien rakenne kevyesti rikki ja sekoita joukkoon kuohukerma, murennettu juusto ja mustapippuri. Lisää suolaa harkiten, sillä juusto on suolaista.
-4. Kaada munaseos parsakaalien päälle. Paista noin 20–25 minuuttia, kunnes keskusta on hyytynyt ja pinta kullanruskea.
-5. Anna frittatan asettua muutama minuutti ennen leikkaamista. Tarjoa sellaisenaan tai vihersalaatin kanssa.
+1. Kuullota 27,5 g sipulia 14 g:ssa voita ja lisää 200 g parsakaalia. Kypsennä parsakaali pehmeäksi.
+2. Sekoita 330 g munaa, 150 g kermaa, 100 g sinihomejuustoa ja 0,5 g jauhettua mustapippuria. Kaada vuokaan kasvisten kanssa.
+3. Paista 200 °C:ssa, kunnes muna on hyytynyt. Jaa kaikki ruoka ja rasva neljään annokseen.
 
 ## Muistiinpanot
 
+Mallinnettu GK-arvio perustuu ainesosiin ja nimettyihin laskennallisiin oletuksiin. Luottamus on matala. Kaikki imeytyvät hiilihydraatit ovat mukana. Tämä ei ole aterialla mitattu verensokerivaste. Biologista epävarmuusväliä ei tunneta.
 
-- Sinihomejuuston suolaisuus vaihtelee. Paista pieni koepala kypsäksi, jos haluat tarkistaa munaseoksen maun.
-- VHH-luokitus perustuu reseptin ainesosiin. Tarkista käyttämiesi tuotteiden pakkausmerkinnät.
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
+
+Käytä 38 % kuohukermaa. Sinihomejuuston koostumus käyttää nimettyä AFCD:n tavallisen sinihomejuuston vertailua; kyseessä ei ole varmennettu tuotemerkki.
+
+Kaikki luetellut syötävät ainekset ja kastike kulutetaan. Raakojen tai kuivien ainesten ravintokoostumusta käytetään nimetyn valmistuksen koostumusarvion pohjana; mittaamatonta kypsennys- tai liukenemishävikkiä ei vähennetä.

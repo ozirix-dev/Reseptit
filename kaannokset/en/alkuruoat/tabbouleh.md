@@ -1,5 +1,5 @@
 ---
-title: Lebanese tabbouleh parsley salad
+title: Warm tabbouleh-style salad with boiled bulgur
 recipe_id: tabbouleh
 url_slug: tabbouleh
 category: alkuruoka
@@ -8,53 +8,52 @@ status: published
 servings: 4
 time_total_min: 30
 main_ingredient:
-  - persilja
-  - tomaatti
+- persilja
+- tomaatti
 cooking_method:
-  - kylma
+- liesi
 difficulty: easy
 tags:
-  - "Mediterranean"
-  - "Lebanese"
-  - "parsley"
-  - "tomato"
+- Mediterranean
+- Lebanese
+- parsley
+- tomato
 image:
   src: paaruoat/tabbouleh.webp
-  alt: Lebanese tabbouleh with plenty of parsley, tomato, mint and bulgur
+  alt: Warm tabbouleh-style salad with boiled bulgur – serving illustration
   width: 1279
   height: 853
 ingredients:
-  - amount: 50
-    unit: g
-    item: fine bulgur
-  - amount: 60
-    unit: g
-    item: parsley leaves
-    note: "finely chopped"
-  - amount: 2
-    unit: piece
-    item: tomato
-    note: in small cubes
-  - amount: 2
-    unit: piece
-    item: spring onions
-    note: shredded
-  - amount: 15
-    unit: g
-    item: fresh mint
-    note: shredded
-  - amount: 3
-    unit: tbsp
-    item: lemon juice
-  - amount: 4
-    unit: tbsp
-    item: olive oil
-  - amount: 0.5
-    unit: tsp
-    item: salt
-  - amount: 0.25
-    unit: tsp
-    item: black pepper
+- amount: 50
+  unit: g
+  item: dry bulgur
+- amount: 60
+  unit: g
+  item: fresh flat-leaf parsley
+- amount: 250
+  unit: g
+  item: tomato
+- amount: 30
+  unit: g
+  item: spring onion
+- amount: 15
+  unit: g
+  item: fresh mint
+- amount: 45
+  unit: g
+  item: lemon juice
+- amount: 54.0
+  unit: g
+  item: olive oil
+- amount: null
+  unit: ''
+  item: salt to taste
+- amount: 0.5
+  unit: g
+  item: ground black pepper
+- amount: 100
+  unit: g
+  item: water for the stated cooking method
 source_language: fi
 source_recipe: reseptit/alkuruoat/tabbouleh.md
 translation_of: tabbouleh
@@ -62,24 +61,26 @@ carbs_net_per_serving_g: 11.34
 carbs_total_per_serving_g: 13.99
 protein_per_serving_g: 2.54
 fat_per_serving_g: 14.11
-
 ---
 
-# Lebanese tabbouleh parsley salad
-
-In this tabbouleh, parsley plays the main role and bulgur is used sparingly. Lemon and olive oil keep the salad fresh.
+# Warm tabbouleh-style salad with boiled bulgur
 
 ## Description
 
-In this tabbouleh, parsley plays the main role and bulgur is used sparingly. Lemon and olive oil keep the salad fresh.
+Warm tabbouleh-style salad with boiled bulgur.
 
-## Preparation
+## Ingredients
 
-1. Rinse the bulgur and soak it in warm water for 15 minutes. Drain and squeeze dry.
-2. Chop the parsley and mint with a knife. Dice the tomatoes and chop the spring onion.
-3. Mix all the ingredients in a bowl. Add lemon juice, olive oil, salt and pepper.
-4. Let the salad season in the refrigerator for 10–15 minutes and serve.
+The weighed ingredients are shown above.
+
+## Instructions
+
+1. For this warm version, boil 50 g dry bulgur in 100 g water for 15 min until absorbed. This is not a calculation for cold-soaked fine bulgur.
+2. Chop all weighed parsley, tomato, spring onion and mint. Mix in all lemon juice, olive oil and ground black pepper.
+3. Add the freshly cooked warm bulgur and serve immediately as four portions. Consume all vegetable juices and dressing; no cooling benefit is deducted.
 
 ## Notes
 
-- Dry the herbs well before chopping, so that the salad does not become watery.
+The GL is a modeled ingredient-sum estimate with low confidence, not a measured meal response. All available carbohydrate is included. No biological uncertainty interval is known. The photograph illustrates serving; unlisted side dishes are excluded from the nutrition and GL estimates. All listed edible ingredients, sauce and fat are consumed. Handle cooking water as instructed; no unmeasured cooking or leaching losses are deducted.
+
+The boiled-bulgur GI analogy applies to this warm version only.

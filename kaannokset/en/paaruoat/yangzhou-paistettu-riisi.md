@@ -1,5 +1,5 @@
 ---
-title: Yangzhou fried rice
+title: Yangzhou-style fried rice – freshly cooked hot rice
 recipe_id: yangzhou-paistettu-riisi
 url_slug: yangzhou-paistettu-riisi
 category: paaruoka
@@ -8,77 +8,75 @@ status: published
 servings: 4
 time_total_min: 25
 main_ingredient:
-  - riisi
-  - kananmuna
+- riisi
+- kananmuna
 cooking_method:
-  - wokki
+- wokki
 difficulty: easy
 tags:
-  - Chinese
-  - rice
-  - egg
+- Chinese
+- rice
+- egg
 image:
   src: paaruoat/yangzhou-paistettu-riisi.webp
-  alt: Yangzhou fried rice with shrimp, egg, peas and spring onions
+  alt: Yangzhou-style fried rice – freshly cooked hot rice – serving illustration
   width: 1279
   height: 853
 ingredients:
-  - amount: 600
-    unit: g
-    item: boiled cold rice
-  - amount: 2
-    unit: piece
-    item: egg
-  - amount: 150
-    unit: g
-    item: shrimps
-    note: peeled
-  - amount: 100
-    unit: g
-    item: peas
-  - amount: 100
-    unit: g
-    item: cooked ham
-    note: in small cubes
-  - amount: 2
-    unit: tbsp
-    item: neutral oil
-  - amount: 2
-    unit: tbsp
-    item: soy sauce
-  - amount: 2
-    unit: piece
-    item: spring onions
-    note: in slices
-  - amount: 0.5
-    unit: tsp
-    item: salt
+- amount: 600
+  unit: g
+  item: freshly cooked hot white jasmine rice, cooked weight
+- amount: 110
+  unit: g
+  item: egg without shell
+- amount: 150
+  unit: g
+  item: raw peeled prawns
+- amount: 100
+  unit: g
+  item: cooked drained frozen peas
+- amount: 100
+  unit: g
+  item: cooked ham, generic 3% fat composition
+- amount: 27.4
+  unit: g
+  item: neutral cooking oil, Fineli average composition
+- amount: 30
+  unit: g
+  item: ordinary soy sauce, generic AFCD composition
+- amount: 30
+  unit: g
+  item: spring onion
+- amount: null
+  unit: ''
+  item: salt to taste
 source_language: fi
 source_recipe: reseptit/paaruoat/yangzhou-paistettu-riisi.md
 translation_of: yangzhou-paistettu-riisi
-carbs_net_per_serving_g: 39.01
-carbs_total_per_serving_g: 40.38
-protein_per_serving_g: 21.18
-fat_per_serving_g: 11.11
-
+carbs_net_per_serving_g: 37.77
+carbs_total_per_serving_g: 39.88
+protein_per_serving_g: 21.2
+fat_per_serving_g: 10.98
 ---
 
-# Yangzhou fried rice
-
-A quick wok of rice, egg, shrimp and peas is a smart way to make use of already cooked rice.
+# Yangzhou-style fried rice – freshly cooked hot rice
 
 ## Description
 
-A quick wok of rice, egg, shrimp and peas is a smart way to make use of already cooked rice.
+Yangzhou-style fried rice – freshly cooked hot rice.
 
-## Preparation
+## Ingredients
 
-1. Break up the lumps of rice with a fork. Beat the eggs lightly.
-2. Heat the wok, add half the oil and fry the eggs until soft. Set aside.
-3. Add the rest of the oil. Fry the prawns until cooked, add ham and peas.
-4. Add the rice and fry until hot while stirring. Season with soy sauce and salt.
-5. Mix the eggs back into the wok. Add spring onion and serve immediately.
+The weighed ingredients are shown above.
+
+## Instructions
+
+1. Use 600 g freshly cooked white jasmine rice, weighed hot after cooking. This calculation excludes chilled or reheated rice.
+2. Cook 110 g egg and 150 g raw peeled prawns in 27.4 g oil. Add 100 g cooked drained frozen peas, 100 g cooked ham and 30 g spring onion.
+3. Add all soy sauce and hot rice. Stir in a hot pan, heat thoroughly and serve immediately as four portions. No cooling benefit or extra oil is included.
 
 ## Notes
 
-- Cool the cooked rice quickly and store in the refrigerator. Use the rice preferably the next day.
+The GL is a modeled ingredient-sum estimate with low confidence, not a measured meal response. All available carbohydrate is included. No biological uncertainty interval is known. The photograph illustrates serving; unlisted side dishes are excluded from the nutrition and GL estimates. All listed edible ingredients, sauce and fat are consumed. Handle cooking water as instructed; no unmeasured cooking or leaching losses are deducted.
+
+Oil uses Fineli average cooking-oil composition and ham uses a generic 3% fat record. Boiled jasmine rice GI 68 is a low-confidence analogy for the pan-finished rice. Neither cooling nor fat is assumed to reduce GL.

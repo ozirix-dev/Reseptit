@@ -1,74 +1,77 @@
 ---
-title: Spansk potatis- och lökomelett
+title: Tortilla de patatas – version med förkokt potatis
 recipe_id: tortilla-de-patatas
 url_slug: tortilla-de-patatas
 category: paaruoka
 language: sv
 status: published
-carbs_net_per_serving_g: 24.2
-carbs_total_per_serving_g: 25.9
-protein_per_serving_g: 13.4
-fat_per_serving_g: 17.9
+carbs_net_per_serving_g: 24.21
+carbs_total_per_serving_g: 26.5
+protein_per_serving_g: 13.41
+fat_per_serving_g: 24.69
 servings: 4
 time_total_min: 45
 main_ingredient:
-  - kananmuna
-  - peruna
+- kananmuna
+- peruna
 cooking_method:
-  - liesi
+- liesi
 difficulty: mellannivå
 tags:
-  - "medelhavsmat"
-  - "spanska"
-  - "ägg"
-  - "potatis"
+- medelhavsmat
+- spanska
+- ägg
+- potatis
 image:
   src: paaruoat/tortilla-de-patatas.webp
-  alt: En tjock spansk potatis- och lökomelett skuren i tårtbitar
+  alt: Tortilla de patatas – version med förkokt potatis – serveringsillustration
   width: 1279
   height: 853
 ingredients:
-  - amount: 600
-    unit: g
-    item: potatis
-    note: skalad och tunt skivad
-  - amount: 1
-    unit: st
-    item: lök
-    note: i tunna skivor
-  - amount: 6
-    unit: st
-    item: ägg
-  - amount: 5
-    unit: msk
-    item: olivolja
-  - amount: 1
-    unit: tsk
-    item: salt
-  - amount: 0.25
-    unit: tsk
-    item: svartpeppar
+- amount: 600
+  unit: g
+  item: rå skalad potatis
+- amount: 55
+  unit: g
+  item: skalad gul lök
+- amount: 330
+  unit: g
+  item: ägg utan skal
+- amount: 67.5
+  unit: g
+  item: olivolja
+- amount: 0.5
+  unit: g
+  item: malen svartpeppar
+- amount: 1000
+  unit: g
+  item: vatten för angiven tillagning
+- amount: null
+  unit: ''
+  item: salt efter smak
 source_language: fi
 source_recipe: reseptit/paaruoat/tortilla-de-patatas.md
 translation_of: tortilla-de-patatas
 ---
 
-# Spansk potatis- och lökomelett
-
-En spansk tortilla tillagas långsamt av potatis, lök och ägg. Det smakar varmt eller i rumstemperatur.
+# Tortilla de patatas – version med förkokt potatis
 
 ## Beskrivning
 
-En spansk tortilla tillagas långsamt av potatis, lök och ägg. Det smakar varmt eller i rumstemperatur.
+Tortilla de patatas – version med förkokt potatis.
+
+## Ingredienser
+
+De vägda ingredienserna visas ovan.
 
 ## Tillagning
 
-1. Hetta upp 3 matskedar olja i en stekpanna. Tillsätt potatisen och löken, täck över och koka på låg värme i cirka 20 minuter, vänd då och då.
-2. Vispa äggen i en skål med salt och peppar. Häll av den mjuka potatisen och löken från överflödig olja och blanda med äggen.
-3. Hetta upp resten av oljan i en panna. Häll blandningen i pannan och koka på låg värme tills kanterna stelnat.
-4. Lägg plåten på pannan och vänd upp tortillan på plåten. Skjut tillbaka den i pannan och tillaga den andra sidan i 3-5 minuter.
-5. Låt tortillan vila några minuter innan den skärs.
+1. Koka 600 g rå skalad potatis i 1000 g vatten tills den är klar och häll av. Ingen omätt urlakningsförlust dras av från råpotatisens näringsvärden.
+2. Fräs 55 g lök i 67,5 g olivolja. Tillsätt kokt potatis, 330 g ägg utan skal och 0,5 g malen svartpeppar.
+3. Tillaga precis tills ägget har stelnat helt; tillaga inte potatisen länge i olja. Fördela all mat och olja på fyra portioner. Detta är versionen med förkokt potatis.
 
 ## Anteckningar
 
-– Om du vill ha en genomstekt center, använd låg värme och förläng tillagningstiden.
+GL är en modellerad summa av ingredienser med låg säkerhet, inte ett uppmätt måltidssvar. Alla tillgängliga kolhydrater ingår. Något biologiskt osäkerhetsintervall är inte känt. Bilden illustrerar servering; tillbehör som inte finns i listan ingår inte i näringsvärden eller GL. Alla angivna ätliga ingredienser, sås och allt fett äts. Hantera kokvattnet enligt instruktionen; ingen omätt tillagnings- eller urlakningsförlust dras av.
+
+GI-analogin 66 avser förkokt potatis, inte lång tillagning i olja. Detta recept-ID är skilt från det tidigare publicerade frukostreceptet Tortilla española.

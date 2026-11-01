@@ -1,84 +1,80 @@
 ---
-title: Oven-Baked Salmon with Sour Cream Topping
+title: Salmon with sour cream – black pepper version
 recipe_id: uunilohi-smetanakuorrutteella
 url_slug: uunilohi-smetanakuorrutteella
 category: paaruoka
 language: en
 diet_class: vhh_tiukka
 servings: 4
-carbs_net_per_serving_g: 2.03
-carbs_total_per_serving_g: 2.97
-protein_per_serving_g: 36.76
-fat_per_serving_g: 50.77
+carbs_net_per_serving_g: 2.04
+carbs_total_per_serving_g: 3.05
+protein_per_serving_g: 36.62
+fat_per_serving_g: 47.92
 main_ingredient:
-  - lohi
-  - smetana
+- lohi
+- smetana
 cooking_method:
-  - uuni
+- uuni
 difficulty: easy
 tags:
-  - "low carb"
-  - "baked salmon"
-  - "smetana"
-  - "fish dish"
+- low carb
+- baked salmon
+- smetana
+- fish dish
 image:
   src: paaruoat/uunilohi-smetanalla.webp
-  alt: Oven-cooked salmon under a sour cream, leek and dill glaze with lemon slices
+  alt: Salmon with sour cream – black pepper version – serving illustration
   width: 1280
   height: 853
 ingredients:
-  - amount: 700
-    unit: g
-    item: salmon fillet
-  - amount: 200
-    unit: g
-    item: "smetana (thick sour cream)"
-  - amount: 100
-    unit: g
-    item: leek
-    note: thinly sliced
-  - amount: 1
-    unit: ""
-    item: lemon
-    note: rind grated and juice squeezed
-  - amount: 1
-    unit: dl
-    item: fresh dill
-    note: "finely chopped"
-  - amount: 0.75
-    unit: tsp
-    item: salt
-  - amount: 0.5
-    unit: g
-    item: white pepper
-    note: "About 1/4 tsp ground white pepper."
-  - amount: 5
-    unit: g
-    item: butter
-    note: "For sautéing."
+- amount: 700
+  unit: g
+  item: raw farmed salmon fillet
+- amount: 200
+  unit: g
+  item: full-fat sour cream, AFCD 36.3% fat composition proxy
+- amount: 100
+  unit: g
+  item: leek
+- amount: 65
+  unit: g
+  item: peeled lemon flesh and all its juice
+- amount: 10
+  unit: g
+  item: fresh dill
+- amount: 0.5
+  unit: g
+  item: ground black pepper
+- amount: 5
+  unit: g
+  item: butter, including all pan or dish grease
+- amount: null
+  unit: ''
+  item: salt to taste
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/uunilohi-smetanakuorrutteella.md
 translation_of: uunilohi-smetanakuorrutteella
 ---
 
-# Oven-Baked Salmon with Sour Cream Topping
-
-Succulent baked salmon gets a sour cream coating seasoned with lemon, leek and dill.
+# Salmon with sour cream – black pepper version
 
 ## Description
 
-This simple salmon dish is cooked in the oven together with a rich glaze. Serve with a green salad or roasted low-carb vegetables.
+Salmon with sour cream – black pepper version.
 
-## Preparation
+## Ingredients
 
-1. Heat the oven to 180 degrees and lightly grease the baking dish.
-2. Check the salmon fillet for bones and place it in the pan, skin side down. Season with salt and white pepper.
-3. Grate the zest from the lemon and squeeze the juice. Chop the dill and slice the rinsed leek. Mix them with sour cream and spoon the mixture over the salmon.
-4. Bake on the medium of the oven for about 25–30 minutes, until the fish is just cooked and easily splits.
-5. Let it rest for a few minutes and serve warm.
+The weighed ingredients are shown above.
+
+## Instructions
+
+1. For this black pepper version, place 700 g raw salmon fillet in a dish greased with 5 g butter. Add 100 g leek.
+2. Mix 200 g full-fat sour cream, 65 g peeled lemon flesh with all its juice, 10 g dill and 0.5 g black pepper instead of white pepper. Spread over the salmon.
+3. Bake at 200 °C until the fish is cooked through. Divide all fish, sauce and fat into four portions.
 
 ## Notes
 
-- The cooking time depends on the thickness of the fillet. Take the salmon out of the oven as soon as it is cooked and juicy.
-- The low-carb classification is based on the ingredients of the recipe. Check the packaging labels of the products you use.
+The GL is a modeled ingredient-sum estimate with low confidence, not a measured meal response. All available carbohydrate is included. No biological uncertainty interval is known. The photograph illustrates serving; unlisted side dishes are excluded from the nutrition and GL estimates. All listed edible ingredients, sauce and fat are consumed. Handle cooking water as instructed; no unmeasured cooking or leaching losses are deducted.
+
+The sour-cream proxy contains 36.3% fat; other fat contents or branded products are not verified. The lemon flesh and juice are consumed, not the peel.

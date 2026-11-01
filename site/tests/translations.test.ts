@@ -8,7 +8,7 @@ test("review backlog fixes stay aligned in all four recipe locales", async () =>
   const all = [...real.publishedSources, ...real.publishedTranslations];
   for (const locale of ["fi", "en", "sv", "th"] as const) {
     const get = (id: string) => all.find(r => r.data.recipe_id === id && r.data.language === locale)!;
-    const garlic = get("italian-pata").data.ingredients[5];
+    const garlic = get("italian-pata").data.ingredients.find(i=>/valkosipuli|garlic|vitlök|กระเทียม/.test(i.item))!;
     assert.equal(garlic.amount, 3.5);
     assert.equal(garlic.unit, "g");
     assert.doesNotMatch(garlic.note ?? "", /1[–-]2/);
@@ -193,18 +193,10 @@ test("weighed butter chicken retains one13.5g olive oil input, fixed21g honey an
  for(const [locale,expected] of Object.entries(terms)){const r=all.find(r=>r.data.recipe_id==="butter-chicken"&&r.data.language===locale)!;assert.ok(r);const oil=r.data.ingredients.filter(i=>i.item===expected.oil);assert.equal(oil.length,1);assert.equal(oil[0].amount,13.5);assert.equal(oil[0].unit,"g");const honey=r.data.ingredients.find(i=>i.item===expected.honey)!;assert.ok(honey);assert.equal(honey.amount,21);assert.equal(honey.unit,"g");assert.match(r.content,expected.all);assert.match(r.content,expected.cook);assert.equal(r.data.servings,4);assert.equal(r.data.time_total_min,60);}
 });
 
-test("Italian bake timing is an explicit estimate including preparation, baking and rest in all locales", async () => {
-  const result = await auditTranslations();
-  const recipes = [...result.publishedSources, ...result.publishedTranslations].filter((r) => r.data.recipe_id === "italian-pata");
-  assert.equal(recipes.length, 4);
-  const estimateWords = { fi: /Arvioitu kokonaisaika/, en: /Estimated total time/, sv: /Uppskattad totaltid/, th: /เวลารวมโดยประมาณ/ };
-  for (const recipe of recipes) {
-    assert.equal(recipe.data.time_total_min, 60);
-    assert.match(recipe.content, estimateWords[recipe.data.language as keyof typeof estimateWords]);
-    assert.match(recipe.content, /60.*25.*20.*15/);
-    assert.match(recipe.content.match(/^8\. (.+)$/m)?.[1] ?? "", /20/);
-    assert.match(recipe.content.match(/^9\. (.+)$/m)?.[1] ?? "", /15/);
-  }
+test("weighed Italian pan has consistent oil, no ordinary pasta and explicit approximate time in all locales", async () => {
+ const result=await auditTranslations();const recipes=[...result.publishedSources,...result.publishedTranslations].filter(r=>r.data.recipe_id==='italian-pata');assert.equal(recipes.length,4);
+ const terms={fi:{oil:'oliiviöljyä',estimate:/Arvioitu kokonaisaika/,scope:/Ei tavallista pastaa/},en:{oil:'olive oil',estimate:/Estimated total time/,scope:/no ordinary pasta/},sv:{oil:'olivolja',estimate:/Uppskattad totaltid/,scope:/Vanlig pasta ingår inte/},th:{oil:'น้ำมันมะกอก',estimate:/เวลารวมโดยประมาณ/,scope:/ไม่มีพาสต้าปกติ/}};
+ for(const r of recipes){const e=terms[r.data.language as keyof typeof terms];assert.equal(r.data.time_total_min,60);assert.match(r.content,e.estimate);assert.match(r.content,e.scope);assert.equal(r.content.match(/^\d+\. /gm)?.length,3);const oil=r.data.ingredients.filter(i=>i.item===e.oil);assert.equal(oil.length,1);assert.equal(oil[0].amount,12);assert.equal(oil[0].unit,'g');}
 });
 
 test("audit output distinguishes structural passes from pending human language review", async () => {

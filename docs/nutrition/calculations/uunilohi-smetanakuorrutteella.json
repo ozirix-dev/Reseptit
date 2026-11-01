@@ -1,0 +1,523 @@
+{
+  "recipeId": "uunilohi-smetanakuorrutteella",
+  "sourceHash": "4f4b297feaa35f017cb8e58fe47f8b1b589986247a232a63e23c91ea98fde99a",
+  "calculatedAt": "2026-11-01",
+  "batchId": "batch-86",
+  "servings": 4,
+  "scope": "Complete weighed GK80 release7 draft, named exact preparation and source composition, owner decision pending",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "raakaa kasvatetun lohen fileetä",
+      "amount": 700,
+      "unit": "g",
+      "state": "LOHI, FILEE, KASVATETTU",
+      "matchEvidence": "Exact identified zero available-CHO composition, not zero GI",
+      "record": {
+        "id": "F34255-r5",
+        "name": "LOHI, FILEE, KASVATETTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34255",
+        "licence": "THL Fineli Release20, CC BY4.0",
+        "basis": "per100g-edible",
+        "state": "LOHI, FILEE, KASVATETTU",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsValue": 0.0,
+        "referenceRecord": {
+          "source_id": "34255",
+          "name": "LOHI, FILEE, KASVATETTU",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "FISH",
+          "food_class": "FISH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.0,
+            "fibre_g_per_100g": 0.0,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 20.0,
+            "fat_g_per_100g": 16.37
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI1302"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            }
+          },
+          "portion_mass_g": {}
+        },
+        "per100g": {
+          "carbohydrate": 0.0,
+          "protein": 20.0,
+          "fat": 16.37,
+          "fibre": 0.0,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Reported Fineli POLYL or AFCD paired available-carbohydrate with/without sugar alcohols",
+        "verifiedAt": "2026-11-01",
+        "retrievedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Named weighed edible input or cooked/drained food",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole sauce and edible inputs consumed; explicit raw-input nutrient retention proxy, no unmeasured loss discount"
+    },
+    {
+      "item": "täysrasvaista smetanaa, AFCD:n 36,3 % rasvaa sisältävä koostumusvertailu",
+      "amount": 200,
+      "unit": "g",
+      "state": "Cream, sour, regular fat",
+      "matchEvidence": "Explicit DAIRY food ID A003269 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+      "record": {
+        "id": "A003269-r5",
+        "name": "Cream, sour, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F003269",
+        "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+        "basis": "per100g-edible",
+        "state": "Cream, sour, regular fat",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsValue": null,
+        "referenceRecord": {
+          "source_id": "F003269",
+          "classification": 19303,
+          "derivation": "Analysed",
+          "name": "Cream, sour, regular fat",
+          "protein_g_per_100g": 1.9,
+          "fat_g_per_100g": 36.3,
+          "fibre_g_per_100g": 0,
+          "glycerol_g_per_100g": null,
+          "erythritol_g_per_100g": null,
+          "maltitol_g_per_100g": null,
+          "mannitol_g_per_100g": null,
+          "xylitol_g_per_100g": null,
+          "sorbitol_g_per_100g": null,
+          "available_carbohydrate_without_sugar_alcohols_g_per_100g": 2,
+          "available_carbohydrate_with_sugar_alcohols_g_per_100g": 2
+        },
+        "per100g": {
+          "carbohydrate": 2,
+          "protein": 1.9,
+          "fat": 36.3,
+          "fibre": 0,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Reported Fineli POLYL or AFCD paired available-carbohydrate with/without sugar alcohols",
+        "verifiedAt": "2026-11-01",
+        "retrievedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Named weighed edible input or cooked/drained food",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole sauce and edible inputs consumed; explicit raw-input nutrient retention proxy, no unmeasured loss discount"
+    },
+    {
+      "item": "purjoa",
+      "amount": 100,
+      "unit": "g",
+      "state": "PURJOSIPULI",
+      "matchEvidence": "Explicit NONSTARCHY_VEGETABLE food ID F337 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+      "record": {
+        "id": "F337-r5",
+        "name": "PURJOSIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/337",
+        "licence": "THL Fineli Release20, CC BY4.0",
+        "basis": "per100g-edible",
+        "state": "PURJOSIPULI",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsValue": 0.0,
+        "referenceRecord": {
+          "source_id": "337",
+          "name": "PURJOSIPULI",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "VEGONI",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 2.4,
+            "fibre_g_per_100g": 2.1,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 1.81,
+            "fat_g_per_100g": 0.2
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MIR006"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_S": 120.0,
+            "KPL_M": 200.0,
+            "KPL_L": 280.0
+          }
+        },
+        "per100g": {
+          "carbohydrate": 2.4,
+          "protein": 1.81,
+          "fat": 0.2,
+          "fibre": 2.1,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Reported Fineli POLYL or AFCD paired available-carbohydrate with/without sugar alcohols",
+        "verifiedAt": "2026-11-01",
+        "retrievedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Named weighed edible input or cooked/drained food",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole sauce and edible inputs consumed; explicit raw-input nutrient retention proxy, no unmeasured loss discount"
+    },
+    {
+      "item": "kuorittua sitruunan hedelmälihaa ja mehua",
+      "amount": 65,
+      "unit": "g",
+      "state": "SITRUUNA, KUORITTU",
+      "matchEvidence": "Explicit CITRUS_FRUIT food ID F11048 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+      "record": {
+        "id": "F11048-r5",
+        "name": "SITRUUNA, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11048",
+        "licence": "THL Fineli Release20, CC BY4.0",
+        "basis": "per100g-edible",
+        "state": "SITRUUNA, KUORITTU",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsValue": 0.0,
+        "referenceRecord": {
+          "source_id": "11048",
+          "name": "SITRUUNA, KUORITTU",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "CITRUS",
+          "food_class": "FRUFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 2.2,
+            "fibre_g_per_100g": 2.4,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 0.62,
+            "fat_g_per_100g": 0.17
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "CG",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "T",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_S": 60.0,
+            "KPL_M": 80.0,
+            "KPL_L": 100.0
+          }
+        },
+        "per100g": {
+          "carbohydrate": 2.2,
+          "protein": 0.62,
+          "fat": 0.17,
+          "fibre": 2.4,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Reported Fineli POLYL or AFCD paired available-carbohydrate with/without sugar alcohols",
+        "verifiedAt": "2026-11-01",
+        "retrievedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Named weighed edible input or cooked/drained food",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole sauce and edible inputs consumed; explicit raw-input nutrient retention proxy, no unmeasured loss discount"
+    },
+    {
+      "item": "tuoretta tilliä",
+      "amount": 10,
+      "unit": "g",
+      "state": "TILLI, TUORE",
+      "matchEvidence": "Explicit NONSTARCHY_VEGETABLE food ID F369 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+      "record": {
+        "id": "F369-r5",
+        "name": "TILLI, TUORE",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/369",
+        "licence": "THL Fineli Release20, CC BY4.0",
+        "basis": "per100g-edible",
+        "state": "TILLI, TUORE",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsValue": 0.0,
+        "referenceRecord": {
+          "source_id": "369",
+          "name": "TILLI, TUORE",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "VEGLEAF",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.9,
+            "fibre_g_per_100g": 2.8,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 3.69,
+            "fat_g_per_100g": 0.8
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "RKL": 2.5
+          }
+        },
+        "per100g": {
+          "carbohydrate": 0.9,
+          "protein": 3.69,
+          "fat": 0.8,
+          "fibre": 2.8,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Reported Fineli POLYL or AFCD paired available-carbohydrate with/without sugar alcohols",
+        "verifiedAt": "2026-11-01",
+        "retrievedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Named weighed edible input or cooked/drained food",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole sauce and edible inputs consumed; explicit raw-input nutrient retention proxy, no unmeasured loss discount"
+    },
+    {
+      "item": "jauhettua mustapippuria valkopippurin sijasta",
+      "amount": 0.5,
+      "unit": "g",
+      "state": "Pepper, black, ground",
+      "matchEvidence": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+      "record": {
+        "id": "A006618-r5",
+        "name": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618",
+        "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+        "basis": "per100g-edible",
+        "state": "Pepper, black, ground",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsValue": null,
+        "referenceRecord": {
+          "source_id": "F006618",
+          "classification": 31302,
+          "derivation": "Borrowed",
+          "name": "Pepper, black, ground",
+          "protein_g_per_100g": 10.4,
+          "fat_g_per_100g": 3.3,
+          "fibre_g_per_100g": 25.3,
+          "glycerol_g_per_100g": null,
+          "erythritol_g_per_100g": null,
+          "maltitol_g_per_100g": null,
+          "mannitol_g_per_100g": null,
+          "xylitol_g_per_100g": null,
+          "sorbitol_g_per_100g": null,
+          "available_carbohydrate_without_sugar_alcohols_g_per_100g": 38.6,
+          "available_carbohydrate_with_sugar_alcohols_g_per_100g": 38.6
+        },
+        "per100g": {
+          "carbohydrate": 38.6,
+          "protein": 10.4,
+          "fat": 3.3,
+          "fibre": 25.3,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Reported Fineli POLYL or AFCD paired available-carbohydrate with/without sugar alcohols",
+        "verifiedAt": "2026-11-01",
+        "retrievedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Named weighed edible input or cooked/drained food",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole sauce and edible inputs consumed; explicit raw-input nutrient retention proxy, no unmeasured loss discount"
+    },
+    {
+      "item": "voita",
+      "amount": 5,
+      "unit": "g",
+      "state": "VOI",
+      "matchEvidence": "Explicit DAIRY food ID F500 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+      "record": {
+        "id": "F500-r5",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+        "licence": "THL Fineli Release20, CC BY4.0",
+        "basis": "per100g-edible",
+        "state": "VOI",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsValue": 0.0,
+        "referenceRecord": {
+          "source_id": "500",
+          "name": "VOI",
+          "food_type": "FOOD",
+          "process": "IND",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "BUTTER",
+          "food_class": "BUTTER",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.8,
+            "fibre_g_per_100g": 0.0,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 1.19,
+            "fat_g_per_100g": 81.3
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 95.0,
+            "RKL": 14.0,
+            "TL": 4.5
+          }
+        },
+        "per100g": {
+          "carbohydrate": 0.8,
+          "protein": 1.19,
+          "fat": 81.3,
+          "fibre": 0.0,
+          "polyols": 0.0
+        },
+        "polyolsEvidence": "Reported Fineli POLYL or AFCD paired available-carbohydrate with/without sugar alcohols",
+        "verifiedAt": "2026-11-01",
+        "retrievedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Named weighed edible input or cooked/drained food",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole sauce and edible inputs consumed; explicit raw-input nutrient retention proxy, no unmeasured loss discount"
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "state": "pure salt",
+      "excludedReason": "Pure salt has zero of the four macros",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
+    }
+  ]
+}

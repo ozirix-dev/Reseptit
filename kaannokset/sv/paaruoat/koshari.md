@@ -1,5 +1,5 @@
 ---
-title: Egyptisk koshari med ris, linser och pasta
+title: Koshari – version med lök utan stärkelsepanering
 recipe_id: koshari
 url_slug: koshari
 category: paaruoka
@@ -8,89 +8,85 @@ status: published
 servings: 4
 time_total_min: 60
 main_ingredient:
-  - riisi
-  - linssi
+- riisi
+- linssi
 cooking_method:
-  - liesi
+- liesi
 difficulty: mellannivå
 tags:
-  - "medelhavsmat"
-  - "egyptisk"
-  - "ris"
-  - "linser"
+- medelhavsmat
+- egyptisk
+- ris
+- linser
 image:
   src: paaruoat/koshari.webp
-  alt: Egyptisk koshari med lager av ris, linser och pasta med tomatsås och
-    krispig lök
+  alt: Koshari – version med lök utan stärkelsepanering – serveringsillustration
   width: 1279
   height: 853
 ingredients:
-  - amount: 200
-    unit: g
-    item: bruna linser
-  - amount: 200
-    unit: g
-    item: ris
-  - amount: 150
-    unit: g
-    item: små makaroner
-  - amount: 2
-    unit: st
-    item: lök
-    note: som tunna ringar
-  - amount: 2
-    unit: msk
-    item: majsstärkelse
-    note: för löken
-  - amount: 3
-    unit: msk
-    item: olivolja
-  - amount: 400
-    unit: g
-    item: krossade tomater
-  - amount: 2
-    unit: st
-    item: en vitlöksklyfta
-    note: krossad
-  - amount: 2
-    unit: msk
-    item: rödvinsvinäger
-  - amount: 1
-    unit: tsk
-    item: spiskummin
-  - amount: 0.5
-    unit: tsk
-    item: salt
-  - amount: 1
-    unit: msk
-    item: citronsaft
+- amount: 200
+  unit: g
+  item: hela torra bruna eller gröna linser
+- amount: 200
+  unit: g
+  item: torrt vitt jasminris
+- amount: 150
+  unit: g
+  item: torra makaroner av durumvete
+- amount: 110
+  unit: g
+  item: skalad gul lök
+- amount: 40.5
+  unit: g
+  item: olivolja
+- amount: 400
+  unit: g
+  item: krossade tomater
+- amount: 7.0
+  unit: g
+  item: skalad färsk vitlök
+- amount: 30
+  unit: g
+  item: rödvinsvinäger
+- amount: 2
+  unit: g
+  item: malen spiskummin
+- amount: null
+  unit: ''
+  item: salt efter smak
+- amount: 15
+  unit: g
+  item: citronsaft
+- amount: 2500
+  unit: g
+  item: vatten för angiven tillagning
 source_language: fi
 source_recipe: reseptit/paaruoat/koshari.md
 translation_of: koshari
-carbs_net_per_serving_g: 95.91
-carbs_total_per_serving_g: 103.14
-protein_per_serving_g: 22.26
-fat_per_serving_g: 12.03
-
+carbs_net_per_serving_g: 92.47
+carbs_total_per_serving_g: 99.7
+protein_per_serving_g: 22.24
+fat_per_serving_g: 12.01
 ---
 
-# Egyptisk koshari med ris, linser och pasta
-
-Koshari samlar ris, linser och pasta i samma skål. Kryddig tomatsås, vitlöksvinäger och krispig lök gör rätten komplett.
+# Koshari – version med lök utan stärkelsepanering
 
 ## Beskrivning
 
-Koshari samlar ris, linser och pasta i samma skål. Kryddig tomatsås, vitlöksvinäger och krispig lök gör rätten komplett.
+Koshari – version med lök utan stärkelsepanering.
+
+## Ingredienser
+
+De vägda ingredienserna visas ovan.
 
 ## Tillagning
 
-1. Skölj linserna och koka dem i vatten tills de är kokta men mjuka, ca 20–25 minuter. Dränera.
-2. Koka riset tills det är kokt. Koka makaronerna i en separat gryta enligt anvisningarna på förpackningen och låt rinna av.
-3. Fräs en vitlöksklyfta i en liten gryta i en skvätt olja. Tillsätt krossade tomater, spiskummin, salt och citronsaft. Sjud i 15 minuter.
-4. Blanda resten av vitlöken med vinägern. Stek lökringar inslagna i majsstärkelse i olja tills de är knapriga. Låt rinna av med hushållspapper.
-5. Lägg ris, linser och makaroner i skålar. Häll tomatsås och vitlöksvinäger ovanpå. Avsluta med krispig lök.
+1. Koka 200 g hela torra bruna eller gröna linser helt mjuka för denna version med opanerad lök. Koka 200 g torrt vitt jasminris till varmt grynigt ris och 150 g torra durumvetemakaroner enligt förpackningen, häll av.
+2. Bryn 110 g lök i 40,5 g olivolja utan majsstärkelsepanering. Gör såsen av hela mängden 400 g krossade tomater, 7 g vitlök, 30 g rödvinsvinäger, 2 g spiskummin och 15 g citronsaft.
+3. Fördela alla varma delar på fyra portioner. Ät all lökolja och sås. Sammansättningen för torra råvaror ger inget avdrag för omätt urlakning.
 
 ## Anteckningar
 
+GL är en modellerad summa av ingredienser med låg säkerhet, inte ett uppmätt måltidssvar. Alla tillgängliga kolhydrater ingår. Något biologiskt osäkerhetsintervall är inte känt. Bilden illustrerar servering; tillbehör som inte finns i listan ingår inte i näringsvärden eller GL. Alla angivna ätliga ingredienser, sås och allt fett äts. Hantera kokvattnet enligt instruktionen; ingen omätt tillagnings- eller urlakningsförlust dras av.
 
-- Servera såserna separat så att var och en kan anpassa rättens syra och hetta.
+Näringsvärden för torra ingredienser använder namngivna sammansättningsproxyn; riset är varmt jasminris. Det höga modellerade GL-värdet redovisas neutralt.

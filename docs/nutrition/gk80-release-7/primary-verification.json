@@ -1,0 +1,324 @@
+{
+  "afcd": {
+    "url": "https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Nutrient%20profiles.xlsx",
+    "sha256": "14cb3e73dbf58987b440e6299624c0fefd7a4e61591fc1f753995d9534e0efc9",
+    "worksheet": "sheet2 per100g",
+    "records": [
+      {
+        "foodId": "F003327",
+        "name": "Cumin (cummin) seed, dried, ground",
+        "per100g": {
+          "protein": 17.8,
+          "fat": 22.3,
+          "fibre": 10.5,
+          "availableCarbohydrate": 33.7
+        },
+        "totalWithFibre": 44.2
+      },
+      {
+        "foodId": "F006281",
+        "name": "Oregano, dried",
+        "per100g": {
+          "protein": 9.0,
+          "fat": 4.3,
+          "fibre": 42.5,
+          "availableCarbohydrate": 26.4
+        },
+        "totalWithFibre": 68.9
+      },
+      {
+        "foodId": "F006618",
+        "name": "Pepper, black, ground",
+        "per100g": {
+          "protein": 10.4,
+          "fat": 3.3,
+          "fibre": 25.3,
+          "availableCarbohydrate": 38.6
+        },
+        "totalWithFibre": 63.900000000000006
+      },
+      {
+        "foodId": "F004726",
+        "name": "Juice, lemon",
+        "per100g": {
+          "protein": 0.6,
+          "fat": 0.1,
+          "fibre": 2.0,
+          "availableCarbohydrate": 1.8
+        },
+        "totalWithFibre": 3.8
+      },
+      {
+        "foodId": "F001929",
+        "name": "Bulgur, uncooked",
+        "per100g": {
+          "protein": 10.3,
+          "fat": 2.0,
+          "fibre": 7.8,
+          "availableCarbohydrate": 66.1
+        },
+        "totalWithFibre": 73.89999999999999
+      },
+      {
+        "foodId": "F008065",
+        "name": "Sauce, soy, commercial",
+        "per100g": {
+          "protein": 6.8,
+          "fat": 0.0,
+          "fibre": 0.0,
+          "availableCarbohydrate": 3.2
+        },
+        "totalWithFibre": 3.2
+      },
+      {
+        "foodId": "F002405",
+        "name": "Cheese, blue vein",
+        "per100g": {
+          "protein": 19.1,
+          "fat": 32.9,
+          "fibre": 0.0,
+          "availableCarbohydrate": 0.3
+        },
+        "totalWithFibre": 0.3
+      },
+      {
+        "foodId": "F003269",
+        "name": "Cream, sour, regular fat",
+        "per100g": {
+          "protein": 1.9,
+          "fat": 36.3,
+          "fibre": 0.0,
+          "availableCarbohydrate": 2.0
+        },
+        "totalWithFibre": 2.0
+      },
+      {
+        "foodId": "F007433",
+        "name": "Prawn, flesh, raw (green)",
+        "per100g": {
+          "protein": 20.7,
+          "fat": 0.8,
+          "fibre": 0.0,
+          "availableCarbohydrate": 0.0
+        },
+        "totalWithFibre": 0.0
+      },
+      {
+        "foodId": "F005700",
+        "name": "Mint, fresh, raw",
+        "per100g": {
+          "protein": 3.1,
+          "fat": 1.1,
+          "fibre": 7.2,
+          "availableCarbohydrate": 4.4
+        },
+        "totalWithFibre": 11.600000000000001
+      },
+      {
+        "foodId": "F006321",
+        "name": "Parsley, continental, fresh, raw",
+        "per100g": {
+          "protein": 3.9,
+          "fat": 0.7,
+          "fibre": 5.0,
+          "availableCarbohydrate": 1.1
+        },
+        "totalWithFibre": 6.1
+      },
+      {
+        "foodId": "F003202",
+        "name": "Corn, kernels, purchased frozen, raw",
+        "per100g": {
+          "protein": 3.0,
+          "fat": 0.9,
+          "fibre": 2.5,
+          "availableCarbohydrate": 16.8
+        },
+        "totalWithFibre": 19.3
+      },
+      {
+        "foodId": "F004193",
+        "name": "Garlic, peeled, fresh, raw",
+        "per100g": {
+          "protein": 6.1,
+          "fat": 2.8,
+          "fibre": 16.9,
+          "availableCarbohydrate": 10.2
+        },
+        "totalWithFibre": 27.099999999999998
+      },
+      {
+        "foodId": "F005946",
+        "name": "Mushroom, common, fresh, raw",
+        "per100g": {
+          "protein": 2.2,
+          "fat": 0.8,
+          "fibre": 1.4,
+          "availableCarbohydrate": 0.8
+        },
+        "totalWithFibre": 3.4
+      },
+      {
+        "foodId": "F006250",
+        "name": "Onion, spring, fresh, raw",
+        "per100g": {
+          "protein": 1.7,
+          "fat": 0.2,
+          "fibre": 1.9,
+          "availableCarbohydrate": 4.6
+        },
+        "totalWithFibre": 6.5
+      },
+      {
+        "foodId": "F006538",
+        "name": "Pea, green, frozen, boiled, drained",
+        "per100g": {
+          "protein": 5.2,
+          "fat": 0.3,
+          "fibre": 6.1,
+          "availableCarbohydrate": 6.4
+        },
+        "totalWithFibre": 12.5
+      }
+    ]
+  },
+  "fineli": {
+    "reference": "docs/nutrition/fineli-release-20-reference.json",
+    "records": [
+      {
+        "foodId": "335",
+        "name": "SIPULI, KELTASIPULI"
+      },
+      {
+        "foodId": "205",
+        "name": "PERUNA, VANHA, KUORITTU"
+      },
+      {
+        "foodId": "858",
+        "name": "KANANMUNA, KUORETON"
+      },
+      {
+        "foodId": "536",
+        "name": "OLIIVIÖLJY"
+      },
+      {
+        "foodId": "922",
+        "name": "VESI, VESIJOHTOVESI"
+      },
+      {
+        "foodId": "352",
+        "name": "TOMAATTI"
+      },
+      {
+        "foodId": "11562",
+        "name": "JAUHELIHA, NAUDAN, RASVAA 17 %"
+      },
+      {
+        "foodId": "398",
+        "name": "TOMAATTIMURSKA"
+      },
+      {
+        "foodId": "362",
+        "name": "MUNAKOISO"
+      },
+      {
+        "foodId": "655",
+        "name": "JUUSTO, PUOLIKOVA JUUSTO, RASVAA 25-35 %, LAPPI/SMÅLAND/BILLINGE/RUSTHOLLI"
+      },
+      {
+        "foodId": "631",
+        "name": "KERMA, KUOHUKERMA, RASVAA 38 %"
+      },
+      {
+        "foodId": "500",
+        "name": "VOI"
+      },
+      {
+        "foodId": "324",
+        "name": "PARSAKAALI, BROKKOLI"
+      },
+      {
+        "foodId": "386",
+        "name": "PAPRIKA, PUNAINEN"
+      },
+      {
+        "foodId": "389",
+        "name": "KESÄKURPITSA, ZUCCHINI"
+      },
+      {
+        "foodId": "29239",
+        "name": "JUUSTO, MOZZARELLA, RASVAA 20 %, TUOREJUUSTO"
+      },
+      {
+        "foodId": "29065",
+        "name": "RUOANVALMISTUSKERMA, RASVAA 15 %"
+      },
+      {
+        "foodId": "649",
+        "name": "RAEJUUSTO, RASVAA 2-5 %"
+      },
+      {
+        "foodId": "392",
+        "name": "RUOHOSIPULI"
+      },
+      {
+        "foodId": "337",
+        "name": "PURJOSIPULI"
+      },
+      {
+        "foodId": "11048",
+        "name": "SITRUUNA, KUORITTU"
+      },
+      {
+        "foodId": "34255",
+        "name": "LOHI, FILEE, KASVATETTU"
+      },
+      {
+        "foodId": "369",
+        "name": "TILLI, TUORE"
+      },
+      {
+        "foodId": "541",
+        "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY"
+      },
+      {
+        "foodId": "35554",
+        "name": "MAISSITORTILLA, GLUTEENITON"
+      },
+      {
+        "foodId": "11521",
+        "name": "RIISI PITKÄJYVÄINEN, PUUROUTUMATON"
+      },
+      {
+        "foodId": "399",
+        "name": "LINSSI, VIHREÄ/RUSKEA, KUIVATTU"
+      },
+      {
+        "foodId": "117",
+        "name": "MAKARONI, PASTA"
+      },
+      {
+        "foodId": "929",
+        "name": "VIINIETIKKA"
+      },
+      {
+        "foodId": "30346",
+        "name": "RIISI, PITKÄJYVÄINEN, KEITETTY, SUOLATON"
+      },
+      {
+        "foodId": "779",
+        "name": "KOKOLIHALEIKKELE, KEITTOKINKKU, RASVAA 3 %"
+      },
+      {
+        "foodId": "300",
+        "name": "PORKKANA"
+      }
+    ]
+  },
+  "screenedPolyolBlockers": [
+    "Dried marjoram: USDA170928 total-minus-fibre does not quantify polyols; AFCD has fresh only; no matching dried Fineli record in current reference",
+    "Bay leaf USDA170917 lacks quantified polyols",
+    "Named chicken broth and Maille Dijon label do not quantify polyols"
+  ],
+  "noAssumedZeroPolyols": true
+}

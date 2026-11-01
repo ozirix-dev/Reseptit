@@ -1,5 +1,5 @@
 ---
-title: Libanesisk tabbouleh persiljesallad
+title: Varm tabbouleh-inspirerad sallad med kokt bulgur
 recipe_id: tabbouleh
 url_slug: tabbouleh
 category: alkuruoka
@@ -8,53 +8,52 @@ status: published
 servings: 4
 time_total_min: 30
 main_ingredient:
-  - persilja
-  - tomaatti
+- persilja
+- tomaatti
 cooking_method:
-  - kylma
+- liesi
 difficulty: lätt
 tags:
-  - "medelhavsmat"
-  - "libanesiska"
-  - "persilja"
-  - "tomat"
+- medelhavsmat
+- libanesiska
+- persilja
+- tomat
 image:
   src: paaruoat/tabbouleh.webp
-  alt: Libanesisk tabbouleh med mycket persilja, tomat, mynta och bulgur
+  alt: Varm tabbouleh-inspirerad sallad med kokt bulgur – serveringsillustration
   width: 1279
   height: 853
 ingredients:
-  - amount: 50
-    unit: g
-    item: fin bulgur
-  - amount: 60
-    unit: g
-    item: bladpersilja
-    note: "finhackad"
-  - amount: 2
-    unit: st
-    item: tomat
-    note: i små kuber
-  - amount: 2
-    unit: st
-    item: vårlök
-    note: strimlad
-  - amount: 15
-    unit: g
-    item: färsk mynta
-    note: strimlad
-  - amount: 3
-    unit: msk
-    item: citronsaft
-  - amount: 4
-    unit: msk
-    item: olivolja
-  - amount: 0.5
-    unit: tsk
-    item: salt
-  - amount: 0.25
-    unit: tsk
-    item: svartpeppar
+- amount: 50
+  unit: g
+  item: torr bulgur
+- amount: 60
+  unit: g
+  item: färsk slätbladig persilja
+- amount: 250
+  unit: g
+  item: tomat
+- amount: 30
+  unit: g
+  item: salladslök
+- amount: 15
+  unit: g
+  item: färsk mynta
+- amount: 45
+  unit: g
+  item: citronsaft
+- amount: 54.0
+  unit: g
+  item: olivolja
+- amount: null
+  unit: ''
+  item: salt efter smak
+- amount: 0.5
+  unit: g
+  item: malen svartpeppar
+- amount: 100
+  unit: g
+  item: vatten för angiven tillagning
 source_language: fi
 source_recipe: reseptit/alkuruoat/tabbouleh.md
 translation_of: tabbouleh
@@ -62,24 +61,26 @@ carbs_net_per_serving_g: 11.34
 carbs_total_per_serving_g: 13.99
 protein_per_serving_g: 2.54
 fat_per_serving_g: 14.11
-
 ---
 
-# Libanesisk tabbouleh persiljesallad
-
-I denna tabbouleh spelar persilja huvudrollen och bulgur används sparsamt. Citron och olivolja håller salladen fräsch.
+# Varm tabbouleh-inspirerad sallad med kokt bulgur
 
 ## Beskrivning
 
-I denna tabbouleh spelar persilja huvudrollen och bulgur används sparsamt. Citron och olivolja håller salladen fräsch.
+Varm tabbouleh-inspirerad sallad med kokt bulgur.
+
+## Ingredienser
+
+De vägda ingredienserna visas ovan.
 
 ## Tillagning
 
-1. Skölj bulguren och blöt den i varmt vatten i 15 minuter. Häll av och pressa torrt.
-2. Hacka persiljan och myntan med en kniv. Tärna tomaterna och hacka vårlöken.
-3. Blanda alla ingredienser i en skål. Tillsätt citronsaft, olivolja, salt och peppar.
-4. Låt salladen krydda i kylen i 10–15 minuter och servera.
+1. Koka 50 g torr bulgur i 100 g vatten i 15 min tills vattnet har absorberats. Denna varma version avser inte kallblötlagd fin bulgur.
+2. Hacka all vägd persilja, tomat, salladslök och mynta. Blanda i all citronsaft, olivolja och malen svartpeppar.
+3. Tillsätt nykokt varm bulgur och servera genast i fyra portioner. Ät all grönsakssaft och dressing; ingen sänkning på grund av kylning räknas.
 
 ## Anteckningar
 
-– Torka av örterna väl innan du hackar, så att salladen inte blir vattnig.
+GL är en modellerad summa av ingredienser med låg säkerhet, inte ett uppmätt måltidssvar. Alla tillgängliga kolhydrater ingår. Något biologiskt osäkerhetsintervall är inte känt. Bilden illustrerar servering; tillbehör som inte finns i listan ingår inte i näringsvärden eller GL. Alla angivna ätliga ingredienser, sås och allt fett äts. Hantera kokvattnet enligt instruktionen; ingen omätt tillagnings- eller urlakningsförlust dras av.
+
+GI-analogin för kokt bulgur gäller endast denna varma version.
