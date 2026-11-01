@@ -1,0 +1,1975 @@
+{
+  "recipes": [
+    {
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "state": "HOLD — PUBLICATION POLYOL EVIDENCE MISSING",
+      "reason": "Maille Dijon Originale: required polyol amount unquantified; no assumed zero",
+      "lockedResearchBundle": {
+        "recipe": {
+          "recipeId": "hunaja-sinappikana-kaalilla",
+          "title": "Sinappinen kanapelti paahdetulla kaalilla",
+          "sourcePath": "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md",
+          "sourceSha256": "c993bedcb8e678b3ca9fa71b957a79ab3bbe0a3e50d42f624eacaf1e7904a859",
+          "servings": 4,
+          "evidenceVersion": 2,
+          "method": "C",
+          "completeInputScope": true,
+          "coverageProposalEligible": true,
+          "scenarios": [
+            {
+              "id": "defined-weighed-hot-version",
+              "ingredients": [
+                {
+                  "index": 0,
+                  "name": "nahatonta broilerin reisilihaa",
+                  "state": "raw lean skinless chicken thigh flesh, boneless edible meat",
+                  "massG": 600,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 0,
+                    "protein": 19.1,
+                    "fat": 3,
+                    "fibre": 0
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "unresolved",
+                  "match": "APPLIED",
+                  "applicability": "Explicit zero available CHO composition, not a zero GI assignment",
+                  "composition": {
+                    "sourceId": "afcd-F002806-release-3-dc6c0ef4",
+                    "evidenceHash": "353f5e5a00f77861cfad6388d52ca2488e99a25b90f068b46e44259da7602c73"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 600,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  }
+                },
+                {
+                  "index": 1,
+                  "name": "valkokaalia",
+                  "state": "raw white cabbage, edible portion",
+                  "massG": 600,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 4.97,
+                    "protein": 1.2,
+                    "fat": 0.1,
+                    "fibre": 2
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "low-carb-vegetable",
+                  "match": "APPLIED",
+                  "applicability": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
+                  "composition": {
+                    "sourceId": "fineli-320-release-20-88c752cd",
+                    "evidenceHash": "2d214b2f642ec494b3a89fa156eac6f0805d28a31b759ad0a85c3d69ade9c4b3"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 600,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "vegetable-imputation40",
+                    "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                    "rationale": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste."
+                  }
+                },
+                {
+                  "index": 2,
+                  "name": "Maille Dijon Originale -sinappia",
+                  "state": "Maille Dijon Originale 1 kg, EAN8711200375684",
+                  "massG": 30,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 3.5,
+                    "protein": 7,
+                    "fat": 11,
+                    "fibre": 2
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "lowcho-code",
+                  "match": "APPLIED",
+                  "applicability": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
+                  "composition": {
+                    "sourceId": "maille-label-proxy",
+                    "evidenceHash": "d94c9ea25cc574f20be8a2e373e828848a84a8ee017aee8ebaa924343a7d56aa"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 30,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "lowcho50-r4",
+                    "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770",
+                    "rationale": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 3,
+                  "name": "hunajaa",
+                  "state": "honey as sold",
+                  "massG": 20,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 72.3,
+                    "protein": 0.3,
+                    "fat": 0,
+                    "fibre": 0
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "honey",
+                  "match": "APPLIED",
+                  "applicability": "Named weighed honey; published food-specific mean as LOW analogue, not exact jar measurement.",
+                  "composition": {
+                    "sourceId": "afcd-F004380-release-3-058f1987",
+                    "evidenceHash": "30496901ed35c0bc454505fde21400bc3afb314b6a6bb6ab70b2d9353c964fc8"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 20,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "SOURCE_COMPARATOR",
+                    "sourceId": "honey-category-mean-gi-55-2002",
+                    "evidenceHash": "077705618b3aceedea03e5f2a3e5f23a032b1a923d811869303a141a873a3dd4",
+                    "rationale": "Named weighed honey; published food-specific mean as LOW analogue, not exact jar measurement."
+                  }
+                },
+                {
+                  "index": 4,
+                  "name": "oliiviöljyä",
+                  "state": "olive oil as sold",
+                  "massG": 27.0,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 0,
+                    "protein": 0,
+                    "fat": 100,
+                    "fibre": 0
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "unresolved",
+                  "match": "APPLIED",
+                  "applicability": "Explicit zero available CHO composition, not a zero GI assignment",
+                  "composition": {
+                    "sourceId": "fineli-536-release-20-89a9a16a",
+                    "evidenceHash": "de5401a29a71d10dccf692253c4c575fcb96fa17c11c5da14baddbd8f6fdb80c"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 27.0,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  }
+                },
+                {
+                  "index": 5,
+                  "name": "tuoretta valkosipulia",
+                  "state": "raw peeled garlic",
+                  "massG": 6,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 10.2,
+                    "protein": 6.1,
+                    "fat": 2.8,
+                    "fibre": 16.9
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "low-carb-vegetable",
+                  "match": "APPLIED",
+                  "applicability": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
+                  "composition": {
+                    "sourceId": "afcd-F004193-release-3-f052c14b",
+                    "evidenceHash": "1d216dbbfc4ce743f683167713fb2be610541c20e9b6740111ff79af2f434b79"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 6,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "vegetable-imputation40",
+                    "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                    "rationale": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste."
+                  }
+                },
+                {
+                  "index": 6,
+                  "name": "paprikajauhetta",
+                  "state": "dried ground paprika",
+                  "massG": 2,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 19.1,
+                    "protein": 14.1,
+                    "fat": 12.9,
+                    "fibre": 34.9
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "small-spice-extension",
+                  "match": "APPLIED",
+                  "applicability": "Named fixed culinary ground spice, herb, seed or vanilla-extract dose; explicit own project extension. Complete composition, <=0.5 g CHO each/serving and <=1 g aggregate checked, no measured GI or biological bound.",
+                  "composition": {
+                    "sourceId": "afcd-F006316-release-3-c369b734",
+                    "evidenceHash": "70d200f537719252c63234466246ac9fc66cd1a4deb9867f72f6370a0f576320"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 2,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "small-flavour50-r4",
+                    "evidenceHash": "8daa54a7a72b78c45e25da32e9b2f72ddc1e720bd6e12b5468cea0aa0ecf067a",
+                    "rationale": "Named fixed culinary ground spice, herb, seed or vanilla-extract dose; explicit own project extension. Complete composition, <=0.5 g CHO each/serving and <=1 g aggregate checked, no measured GI or biological bound."
+                  }
+                },
+                {
+                  "index": 7,
+                  "name": "jauhettua mustapippuria",
+                  "state": "ground black pepper consumed",
+                  "massG": 0.5,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 38.6,
+                    "protein": 10.4,
+                    "fat": 3.3,
+                    "fibre": 25.3
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "small-spice-extension",
+                  "match": "APPLIED",
+                  "applicability": "Named fixed culinary ground spice, herb, seed or vanilla-extract dose; explicit own project extension. Complete composition, <=0.5 g CHO each/serving and <=1 g aggregate checked, no measured GI or biological bound.",
+                  "composition": {
+                    "sourceId": "afcd-F006618-release-3-a814ab84",
+                    "evidenceHash": "d76efb478f115ba271542884c1cdc099e3be2956502c05910617ee513f4b4904"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 0.5,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "small-flavour50-r4",
+                    "evidenceHash": "8daa54a7a72b78c45e25da32e9b2f72ddc1e720bd6e12b5468cea0aa0ecf067a",
+                    "rationale": "Named fixed culinary ground spice, herb, seed or vanilla-extract dose; explicit own project extension. Complete composition, <=0.5 g CHO each/serving and <=1 g aggregate checked, no measured GI or biological bound."
+                  }
+                }
+              ]
+            }
+          ],
+          "group": "near-complete",
+          "batch": "A",
+          "confidence": "LOW",
+          "uncertainty": "NOT_BOUNDED",
+          "approved": false,
+          "published": false,
+          "reviewState": "DRAFT_NUMERIC",
+          "originalPreparation": "\n\n1. Kuumenna uuni 210 asteeseen. Leikkaa kaali lohkoiksi ja aseta pellille broilerin kanssa.\n2. Sekoita sinappi, hunaja, öljy, valkosipulijauhe ja paprika. Valele broileri ja kaali.\n3. Mausta suolalla ja pippurilla. Paahda 35–40 minuuttia ja käännä kaali kerran.\n4. Sekoita dijonsinappi, hunaja, oliiviöljy, valkosipulijauhe ja paprikajauhe. Leikkaa broileri suupaloiksi ja kaali lohkoiksi, kääntele mausteseoksessa ja paahda uunissa, kunnes broileri on läpikypsää ja kaali pehmeää.\n\n## Muistiinpanot\n\nHunaja lisää annoksen hiilihydraatteja; sen voi jättää pois.\n",
+          "proposedPreparation": [
+            "Suikaloi kaali ja broileri. Sekoita kaikki Maille Dijon Originale, hunaja, öljy, tuore valkosipuli ja punnitut mausteet.",
+            "Kypsennä broileri ja kaali koko kastikkeessa kauttaaltaan. Älä valuta rasvaa tai jätä marinadia kulhoon.",
+            "Jaa kaikki ruoka ja kastike neljään annokseen."
+          ],
+          "publicationFixes": [
+            "Suola erikseen; 0,5 g jauhettua mustapippuria syödään.",
+            "Maille Dijon Originale 1 kg EAN 8711200375684; EU-pakkaus-CHO käytettävän CHO:n mallivastine, ei todistettu luonnollisten polyolien nolla.",
+            "Tuoreen valkosipulin 6 g versio korvaa aiemman määrittelemättömän jauheannoksen."
+          ],
+          "notes": [],
+          "displayProposal": {
+            "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+            "en": "Modeled GL about X/serving; low confidence",
+            "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+            "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+          },
+          "proposedTitle": "Sinappinen kanapelti paahdetulla kaalilla – punnittu laskentaversio",
+          "proposedVersionHash": "a12d18d2eab5cd2c3e3831e80782e63515790036b4302257d54875ac5c5cab92"
+        },
+        "sources": [
+          {
+            "id": "honey-category-mean-gi-55-2002",
+            "gi": 55,
+            "scale": "GLUCOSE_100",
+            "family": "honey",
+            "food": "Honey, mean of 11 types",
+            "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+            "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+            "originalStudy": {
+              "title": "International table of glycemic index and glycemic load values: 2002",
+              "url": "https://doi.org/10.1093/ajcn/76.1.5",
+              "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+              "year": 2002,
+              "published": true,
+              "iso26642Confirmed": false,
+              "participants": null,
+              "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+              "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+            },
+            "referenceFood": "Already glucose-normalized in pinned active registry; do not convert twice",
+            "confidence": "LOW",
+            "limitations": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey.",
+            "allowedUse": "Only the named family and explicit preparation review",
+            "activeRecord": {
+              "id": "honey-category-mean-gi-55-2002",
+              "gi": 55,
+              "foodKey": "honey-category-mean",
+              "preparationKey": "category-mean",
+              "food": "Honey, mean of 11 types",
+              "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+              "qualityTier": "SUPPLEMENTARY",
+              "referenceScale": "GLUCOSE_100",
+              "matchKind": "CATEGORY_MEAN",
+              "confidence": "LOW",
+              "source": {
+                "title": "International table of glycemic index and glycemic load values: 2002",
+                "url": "https://doi.org/10.1093/ajcn/76.1.5",
+                "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+                "year": 2002,
+                "published": true,
+                "iso26642Confirmed": false,
+                "participants": null,
+                "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+                "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+              },
+              "note": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey."
+            },
+            "newRecord": false,
+            "evidenceHash": "077705618b3aceedea03e5f2a3e5f23a032b1a923d811869303a141a873a3dd4"
+          },
+          {
+            "id": "lowcho50-r4",
+            "gi": 50,
+            "scale": "GLUCOSE_100",
+            "family": "lowcho-code",
+            "food": "Named foods with <=5 g available CHO/100 g",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+            "location": "Author presentation slide 12",
+            "confidence": "LOW",
+            "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+            "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+            "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+            "allowedCompositionIds": [
+              "afcd-F000396-release-3-a1aa6eb1",
+              "afcd-F001301-release-3-578f337d",
+              "afcd-F002983-r4",
+              "afcd-F002991-release-3-aef4d973",
+              "afcd-F003337-release-3-358d7f7a",
+              "afcd-F004726-release-3-8b45863e",
+              "afcd-F004729-release-3-6915a221",
+              "afcd-F005198-release-3-d5346b07",
+              "afcd-F005946-release-3-13b128f1",
+              "afcd-F008004-r4",
+              "afcd-F008065-r4",
+              "afcd-F008936-release-3-145aa9dd",
+              "afcd-F009076-r4",
+              "fineli-11048-release-20-ef608526",
+              "fineli-11557-release-20-0e2f3532",
+              "fineli-29-release-20-efe46494",
+              "fineli-30315-release-20-36a6124d",
+              "fineli-30369-release-20-d894c260",
+              "fineli-7530-release-20-21f4037e",
+              "fineli-7600-release-20-f85560ba",
+              "fineli-779-release-20-66a2e282",
+              "fineli-8513-release-20-ae10a9b7",
+              "fineli-858-release-20-ae10a9b7",
+              "fineli-929-release-20-59dd350d",
+              "maille-label-proxy"
+            ],
+            "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770"
+          },
+          {
+            "id": "small-flavour50-r4",
+            "gi": 50,
+            "scale": "GLUCOSE_100",
+            "family": "small-spice-extension",
+            "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+            "location": "Explicit project extension of coding default, not directly published for these foods",
+            "confidence": "LOW",
+            "projectExtension": true,
+            "maxCarbohydratePerServing": 0.5,
+            "maxCumulativeCarbohydratePerServing": 1,
+            "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound.",
+            "allowedCompositionIds": [
+              "afcd-F002258-release-3-e23045e9",
+              "afcd-F002963-release-3-675e24d6",
+              "afcd-F003190-release-3-75db5621",
+              "afcd-F003327-release-3-66a5ea67",
+              "afcd-F006281-release-3-6c6c6bfe",
+              "afcd-F006316-release-3-c369b734",
+              "afcd-F006618-release-3-a814ab84",
+              "afcd-F008214-release-3-82a89f38",
+              "afcd-F009160-r4",
+              "afcd-F009160-release-3-88061dcd",
+              "afcd-F009335-release-3-34c60a8e",
+              "afcd-F009350-release-3-2181fb59",
+              "fineli-34245-release-20-60090bb3"
+            ],
+            "evidenceHash": "8daa54a7a72b78c45e25da32e9b2f72ddc1e720bd6e12b5468cea0aa0ecf067a"
+          },
+          {
+            "id": "vegetable-imputation40",
+            "gi": 40,
+            "scale": "GLUCOSE_100",
+            "family": "low-carb-vegetable",
+            "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+            "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+            "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+            "location": "Conclusions: assignment discussion",
+            "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+            "confidence": "LOW",
+            "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+            "newRecordInRun2": true,
+            "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+          }
+        ],
+        "comps": [
+          {
+            "id": "afcd-F002806-release-3-dc6c0ef4",
+            "per100g": {
+              "availableCarbohydrate": 0,
+              "protein": 19.1,
+              "fat": 3,
+              "fibre": 0
+            },
+            "sourceRecord": {
+              "id": "afcd-F002806-release-3",
+              "name": "Chicken, thigh, lean flesh, raw",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+              "retrievedAt": "2026-10-24",
+              "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+              "state": "raw lean skinless chicken thigh flesh, boneless edible meat",
+              "basis": "per100g-as-sold",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "AFCD paired available CHO with/without sugar alcohols in original release3 Excel",
+              "per100g": {
+                "carbohydrate": 0.0,
+                "protein": 19.1,
+                "fat": 3.0,
+                "fibre": 0.0,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "foodId": "F002806",
+                "name": "Chicken, thigh, lean flesh, raw",
+                "availableCarbohydrateWithoutSugarAlcohols": 0.0,
+                "availableCarbohydrateWithSugarAlcohols": 0.0,
+                "per100g": {
+                  "availableCarbohydrate": 0.0,
+                  "protein": 19.1,
+                  "fat": 3.0,
+                  "fibre": 0.0
+                }
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/kreikkalainen-kanavuoka-oliiveilla.json",
+            "originCalculationSha256": "ae044dc7a23125b9121d85498369afe2f9f318f24e00178c7cf79edd436ec7dc",
+            "evidenceHash": "353f5e5a00f77861cfad6388d52ca2488e99a25b90f068b46e44259da7602c73"
+          },
+          {
+            "id": "afcd-F004193-release-3-f052c14b",
+            "per100g": {
+              "availableCarbohydrate": 10.2,
+              "protein": 6.1,
+              "fat": 2.8,
+              "fibre": 16.9
+            },
+            "sourceRecord": {
+              "id": "afcd-F004193-release-3",
+              "name": "Garlic, peeled, fresh, raw",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+              "retrievedAt": "2026-10-24",
+              "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+              "state": "raw peeled garlic",
+              "basis": "per100g-as-sold",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "AFCD paired available CHO with/without sugar alcohols in original release3 Excel",
+              "per100g": {
+                "carbohydrate": 10.2,
+                "protein": 6.1,
+                "fat": 2.8,
+                "fibre": 16.9,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "foodId": "F004193",
+                "name": "Garlic, peeled, fresh, raw",
+                "availableCarbohydrateWithoutSugarAlcohols": 10.2,
+                "availableCarbohydrateWithSugarAlcohols": 10.2,
+                "per100g": {
+                  "availableCarbohydrate": 10.2,
+                  "protein": 6.1,
+                  "fat": 2.8,
+                  "fibre": 16.9
+                }
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/chow-mein.json",
+            "originCalculationSha256": "3b7ed3c5048ca348b2dffd68eb4efafaa94b189034d89f87a21bc83480f3964f",
+            "evidenceHash": "1d216dbbfc4ce743f683167713fb2be610541c20e9b6740111ff79af2f434b79"
+          },
+          {
+            "id": "afcd-F004380-release-3-058f1987",
+            "per100g": {
+              "availableCarbohydrate": 72.3,
+              "protein": 0.3,
+              "fat": 0,
+              "fibre": 0
+            },
+            "sourceRecord": {
+              "id": "afcd-F004380-release-3",
+              "name": "Honey",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+              "retrievedAt": "2026-10-24",
+              "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+              "state": "honey as sold",
+              "basis": "per100g-as-sold",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "AFCD paired available CHO with/without sugar alcohols in original release3 Excel",
+              "per100g": {
+                "carbohydrate": 72.3,
+                "protein": 0.3,
+                "fat": 0.0,
+                "fibre": 0.0,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "foodId": "F004380",
+                "name": "Honey",
+                "availableCarbohydrateWithoutSugarAlcohols": 72.3,
+                "availableCarbohydrateWithSugarAlcohols": 72.3,
+                "per100g": {
+                  "availableCarbohydrate": 72.3,
+                  "protein": 0.3,
+                  "fat": 0.0,
+                  "fibre": 0.0
+                }
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/kiinalainen-musta-seesamipuuro.json",
+            "originCalculationSha256": "2b4026c55b0079a1442f20d8cfd29f51684a3a83d229c7600bec01a3b633233a",
+            "evidenceHash": "30496901ed35c0bc454505fde21400bc3afb314b6a6bb6ab70b2d9353c964fc8"
+          },
+          {
+            "id": "afcd-F006316-release-3-c369b734",
+            "per100g": {
+              "availableCarbohydrate": 19.1,
+              "protein": 14.1,
+              "fat": 12.9,
+              "fibre": 34.9
+            },
+            "sourceRecord": {
+              "id": "afcd-F006316-release-3",
+              "name": "Paprika, dry powder",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+              "retrievedAt": "2026-10-24",
+              "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+              "state": "ground paprika, smoke-seasoned",
+              "basis": "per100g-as-sold",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "AFCD paired available CHO with/without sugar alcohols in original release3 Excel",
+              "per100g": {
+                "carbohydrate": 19.1,
+                "protein": 14.1,
+                "fat": 12.9,
+                "fibre": 34.9,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "foodId": "F006316",
+                "name": "Paprika, dry powder",
+                "availableCarbohydrateWithoutSugarAlcohols": 19.1,
+                "availableCarbohydrateWithSugarAlcohols": 19.1,
+                "per100g": {
+                  "availableCarbohydrate": 19.1,
+                  "protein": 14.1,
+                  "fat": 12.9,
+                  "fibre": 34.9
+                }
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/kana-enchilada-kukkakaalivuoka.json",
+            "originCalculationSha256": "d1444789a681623ba476daa06b4222a5b92c11d8f124dd641ead64901512b06e",
+            "evidenceHash": "70d200f537719252c63234466246ac9fc66cd1a4deb9867f72f6370a0f576320"
+          },
+          {
+            "id": "afcd-F006618-release-3-a814ab84",
+            "per100g": {
+              "availableCarbohydrate": 38.6,
+              "protein": 10.4,
+              "fat": 3.3,
+              "fibre": 25.3
+            },
+            "sourceRecord": {
+              "id": "afcd-F006618-release-3",
+              "name": "Pepper, black, ground",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+              "retrievedAt": "2026-10-24",
+              "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+              "state": "ground black pepper",
+              "basis": "per100g-as-sold",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "AFCD paired available CHO with/without sugar alcohols in original release3 Excel",
+              "per100g": {
+                "carbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "foodId": "F006618",
+                "name": "Pepper, black, ground",
+                "availableCarbohydrateWithoutSugarAlcohols": 38.6,
+                "availableCarbohydrateWithSugarAlcohols": 38.6,
+                "per100g": {
+                  "availableCarbohydrate": 38.6,
+                  "protein": 10.4,
+                  "fat": 3.3,
+                  "fibre": 25.3
+                }
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/bulgogi.json",
+            "originCalculationSha256": "ce6ac7dbba143b35903de135aeee83c104812bfb73986d84d39c1f1cf5d2c00f",
+            "evidenceHash": "d76efb478f115ba271542884c1cdc099e3be2956502c05910617ee513f4b4904"
+          },
+          {
+            "id": "fineli-320-release-20-88c752cd",
+            "per100g": {
+              "availableCarbohydrate": 4.97,
+              "protein": 1.2,
+              "fat": 0.1,
+              "fibre": 2
+            },
+            "sourceRecord": {
+              "id": "fineli-320-release-20",
+              "name": "VALKOKAALI, KERÄKAALI",
+              "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/320",
+              "retrievedAt": "2026-10-24",
+              "licence": "THL, Fineli Release 20, CC BY 4.0",
+              "state": "raw white cabbage, edible portion",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "componentValues": {
+                "CHO": 4.97,
+                "FIBT": 2,
+                "POLYL": 0
+              },
+              "componentIds": {
+                "CHO": 2034,
+                "FIBT": 2168,
+                "POLYL": 2260
+              },
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release20 POLYL component",
+              "per100g": {
+                "carbohydrate": 4.97,
+                "protein": 1.2,
+                "fat": 0.1,
+                "fibre": 2.0,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "source_id": "320",
+                "name": "VALKOKAALI, KERÄKAALI",
+                "food_type": "FOOD",
+                "process": "RAW",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "CABBAGE",
+                "food_class": "VEGFRESH",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 4.97,
+                  "fibre_g_per_100g": 2.0,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 1.2,
+                  "fat_g_per_100g": 0.1
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "D",
+                    "method_type": "AG",
+                    "method_indicator": "MI1302"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0181"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "D",
+                    "method_type": "S",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MIR006"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "KPL_S": 800.0,
+                  "KPL_M": 1200.0,
+                  "KPL_L": 1500.0,
+                  "DL": 40.0
+                }
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/chow-mein.json",
+            "originCalculationSha256": "3b7ed3c5048ca348b2dffd68eb4efafaa94b189034d89f87a21bc83480f3964f",
+            "evidenceHash": "2d214b2f642ec494b3a89fa156eac6f0805d28a31b759ad0a85c3d69ade9c4b3"
+          },
+          {
+            "id": "fineli-536-release-20-89a9a16a",
+            "per100g": {
+              "availableCarbohydrate": 0,
+              "protein": 0,
+              "fat": 100,
+              "fibre": 0
+            },
+            "sourceRecord": {
+              "id": "fineli-536-release-20",
+              "name": "OLIIVIÖLJY",
+              "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+              "retrievedAt": "2026-10-24",
+              "licence": "THL, Fineli Release 20, CC BY 4.0",
+              "state": "olive oil as sold",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "componentValues": {
+                "CHO": 0,
+                "FIBT": 0,
+                "POLYL": 0
+              },
+              "componentIds": {
+                "CHO": 2034,
+                "FIBT": 2168,
+                "POLYL": 2260
+              },
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release20 POLYL component",
+              "per100g": {
+                "carbohydrate": 0.0,
+                "protein": 0.0,
+                "fat": 100.0,
+                "fibre": 0.0,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "source_id": "536",
+                "name": "OLIIVIÖLJY",
+                "food_type": "FOOD",
+                "process": "IND",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "OIL",
+                "food_class": "OIL",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 0.0,
+                  "fibre_g_per_100g": 0.0,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 0.0,
+                  "fat_g_per_100g": 100.0
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "IG",
+                    "method_indicator": "MIR003"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "U",
+                    "method_indicator": "MIR007"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "DL": 90.0,
+                  "RKL": 13.5,
+                  "TL": 4.5
+                }
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/kreikkalainen-kanavuoka-oliiveilla.json",
+            "originCalculationSha256": "ae044dc7a23125b9121d85498369afe2f9f318f24e00178c7cf79edd436ec7dc",
+            "evidenceHash": "de5401a29a71d10dccf692253c4c575fcb96fa17c11c5da14baddbd8f6fdb80c"
+          },
+          {
+            "id": "maille-label-proxy",
+            "name": "Maille Dijon Originale 1 kg, EAN 8711200375684",
+            "per100g": {
+              "availableCarbohydrate": 3.5,
+              "protein": 7,
+              "fat": 11,
+              "fibre": 2
+            },
+            "sourceRecord": {
+              "sourceUrl": "https://www.unileverfoodsolutions.fi/tuotteet/maille-dijon-originale-sinappi-1-kg-34-FI-1203997.html",
+              "corroborationUrl": "https://www.unileverfoodsolutions.fi/dam/global-ufs/mcos/nordics/finland/themes/tuoteopas-2025/UFS_2025_Tuoteluettelo_S%C3%A4hk%C3%B6inen.pdf",
+              "accessed": "2026-10-30",
+              "accessMethod": "Primary manufacturer page and 2025 catalogue read through web indexed content. Direct downloads returned 403; no invented raw-document hash.",
+              "identityEvidence": "2025 Finnish catalogue: consumer EAN 8711200375684; case EAN 8711200375691. One older cached webpage repeats the case EAN in both positions; use catalogue consumer EAN.",
+              "basis": "per 100 g (catalogue explicitly says Ravintosisältö 100 g; page generic heading g/ml)",
+              "ingredients": "Water, mustard seed 26%, vinegar, salt, citric acid, potassium disulphite.",
+              "declaredPer100": {
+                "carbohydrate": 3.5,
+                "sugars": 1.9,
+                "protein": 7,
+                "fat": 11,
+                "fibre": 2,
+                "salt": 4.9
+              },
+              "gi": null,
+              "polyolsPer100": null
+            },
+            "carbohydrateDefinition": "MODELLED_AVAILABLE_CHO_FROM_EU_LABEL",
+            "measuredPolyolsPer100": null,
+            "modelAssumption": "Use the complete EU label carbohydrate as the available-CHO proxy. No added polyol is listed, but naturally occurring polyols and rounding are unmeasured. This is not a verified zero-polyol result; fibre is not subtracted again.",
+            "sensitivity": "At fixed assigned GI, removing any part of this label-CHO proxy reduces its model contribution. No bound on real glycaemia is established.",
+            "confidence": "LOW",
+            "basis": "per100g",
+            "evidenceHash": "d94c9ea25cc574f20be8a2e373e828848a84a8ee017aee8ebaa924343a7d56aa"
+          }
+        ],
+        "sourceHash": "c993bedcb8e678b3ca9fa71b957a79ab3bbe0a3e50d42f624eacaf1e7904a859",
+        "originalBundleHash": "1a6bde213e71b5984c2db2310e100c301a9b4d854ba23fa245618e96302b017a"
+      },
+      "proposalIsNotPublicationEvidence": true
+    },
+    {
+      "recipeId": "nakkikastike-kukkakaalimuusi",
+      "state": "HOLD — PUBLICATION POLYOL EVIDENCE MISSING",
+      "reason": "Maille Dijon Originale: required polyol amount unquantified; no assumed zero",
+      "lockedResearchBundle": {
+        "recipe": {
+          "recipeId": "nakkikastike-kukkakaalimuusi",
+          "title": "Nakkikastike ja kukkakaalimuusi",
+          "sourcePath": "reseptit/paaruoat/nakkikastike-kukkakaalimuusi.md",
+          "sourceSha256": "a329a55acc5af70cedc06c6bc0c3ed9f5be8d100e95baa90675e02822aaf8fae",
+          "servings": 4,
+          "evidenceVersion": 2,
+          "method": "C",
+          "completeInputScope": true,
+          "coverageProposalEligible": true,
+          "scenarios": [
+            {
+              "id": "defined-weighed-hot-version",
+              "ingredients": [
+                {
+                  "index": 0,
+                  "name": "nakkeja",
+                  "state": "boiled frankfurter sausage",
+                  "massG": 400,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 1.162,
+                    "protein": 11.31,
+                    "fat": 18.23,
+                    "fibre": 0.008
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "lowcho-code",
+                  "match": "APPLIED",
+                  "applicability": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
+                  "composition": {
+                    "sourceId": "fineli-7600-release-20-f85560ba",
+                    "evidenceHash": "2a091fcdbb4711d4f002904cdcddd5b37cad25aa38618a47430f6c09470339b1"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 400,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "lowcho50-r4",
+                    "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770",
+                    "rationale": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 1,
+                  "name": "pieni sipuli",
+                  "state": "raw yellow onion",
+                  "massG": 70,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 4.8,
+                    "protein": 1.25,
+                    "fat": 0.1,
+                    "fibre": 1.2
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "low-carb-vegetable",
+                  "match": "APPLIED",
+                  "applicability": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
+                  "composition": {
+                    "sourceId": "fineli-335-release-20-c19feae0",
+                    "evidenceHash": "c576bb69faeb2bd85e3a3d12772decd927340fe73033afdbffc4e12cbda9d1f2"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 70,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "vegetable-imputation40",
+                    "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                    "rationale": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste."
+                  }
+                },
+                {
+                  "index": 2,
+                  "name": "kuohukermaa",
+                  "state": "whipping cream, 38% fat",
+                  "massG": 200,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 2.9,
+                    "protein": 1.88,
+                    "fat": 38,
+                    "fibre": 0
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "dairy-code",
+                  "match": "APPLIED",
+                  "applicability": "Atkinson unsweetened animal-dairy published coding assignment, not measured ingredient GI.",
+                  "composition": {
+                    "sourceId": "fineli-631-release-20-6d1f5fee",
+                    "evidenceHash": "b57e62bfdff3d5b9353cadfb7e1a812e6194c8f0bf02e25b7420b7e75abbf25e"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 200,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "dairy-imputation30",
+                    "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                    "rationale": "Atkinson unsweetened animal-dairy published coding assignment, not measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 3,
+                  "name": "lihalientä",
+                  "state": "diluted beef stock",
+                  "massG": 100,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 3,
+                    "protein": 0.34,
+                    "fat": 0.6,
+                    "fibre": 0.017
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "lowcho-code",
+                  "match": "APPLIED",
+                  "applicability": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
+                  "composition": {
+                    "sourceId": "fineli-29-release-20-efe46494",
+                    "evidenceHash": "06371d09732721b354e1caa19be68736fc69531222f41a7499e1ab6ccedd714d"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 100,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "lowcho50-r4",
+                    "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770",
+                    "rationale": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 4,
+                  "name": "Maille Dijon Originale -sinappia",
+                  "state": "Maille Dijon Originale 1 kg, EAN8711200375684",
+                  "massG": 2,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 3.5,
+                    "protein": 7,
+                    "fat": 11,
+                    "fibre": 2
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "lowcho-code",
+                  "match": "APPLIED",
+                  "applicability": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
+                  "composition": {
+                    "sourceId": "maille-label-proxy",
+                    "evidenceHash": "d94c9ea25cc574f20be8a2e373e828848a84a8ee017aee8ebaa924343a7d56aa"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 2,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "lowcho50-r4",
+                    "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770",
+                    "rationale": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 5,
+                  "name": "jauhettua mustapippuria",
+                  "state": "ground black pepper consumed",
+                  "massG": 0.5,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 38.6,
+                    "protein": 10.4,
+                    "fat": 3.3,
+                    "fibre": 25.3
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "small-spice-extension",
+                  "match": "APPLIED",
+                  "applicability": "Named fixed culinary ground spice, herb, seed or vanilla-extract dose; explicit own project extension. Complete composition, <=0.5 g CHO each/serving and <=1 g aggregate checked, no measured GI or biological bound.",
+                  "composition": {
+                    "sourceId": "afcd-F006618-release-3-a814ab84",
+                    "evidenceHash": "d76efb478f115ba271542884c1cdc099e3be2956502c05910617ee513f4b4904"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 0.5,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "small-flavour50-r4",
+                    "evidenceHash": "8daa54a7a72b78c45e25da32e9b2f72ddc1e720bd6e12b5468cea0aa0ecf067a",
+                    "rationale": "Named fixed culinary ground spice, herb, seed or vanilla-extract dose; explicit own project extension. Complete composition, <=0.5 g CHO each/serving and <=1 g aggregate checked, no measured GI or biological bound."
+                  }
+                },
+                {
+                  "index": 6,
+                  "name": "kukkakaalia",
+                  "state": "raw cauliflower",
+                  "massG": 600,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 2.35,
+                    "protein": 2,
+                    "fat": 0.21,
+                    "fibre": 1.9
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "low-carb-vegetable",
+                  "match": "APPLIED",
+                  "applicability": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste.",
+                  "composition": {
+                    "sourceId": "fineli-322-release-20-11f8cef3",
+                    "evidenceHash": "e9b3512ba2620a2b21d5a540d8934e94de3b4275761626c844f246236c25a2f8"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 600,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "vegetable-imputation40",
+                    "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                    "rationale": "Named non-starchy vegetable/fresh herb under Atkinson coding assignment40, not measured food GI. All weighed edible matter and juices retained; not flour/potato/paste."
+                  }
+                },
+                {
+                  "index": 7,
+                  "name": "voita",
+                  "state": "butter",
+                  "massG": 40,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 0.8,
+                    "protein": 1.19,
+                    "fat": 81.3,
+                    "fibre": 0
+                  },
+                  "certifiedZeroSalt": false,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "dairy-code",
+                  "match": "APPLIED",
+                  "applicability": "Atkinson unsweetened animal-dairy published coding assignment, not measured ingredient GI.",
+                  "composition": {
+                    "sourceId": "fineli-500-release-20-8ce86bab",
+                    "evidenceHash": "0130684697b41b8e3f618acfa229240a1f30d491ac9545c708a5d69cbb6396cb"
+                  },
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": 40,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  },
+                  "impact": {
+                    "kind": "PUBLISHED_IMPUTATION",
+                    "sourceId": "dairy-imputation30",
+                    "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850",
+                    "rationale": "Atkinson unsweetened animal-dairy published coding assignment, not measured ingredient GI."
+                  }
+                },
+                {
+                  "index": 8,
+                  "name": "suolaa",
+                  "state": "pure salt",
+                  "massG": null,
+                  "retention": 1,
+                  "per100g": {
+                    "availableCarbohydrate": 0,
+                    "protein": 0,
+                    "fat": 0,
+                    "fibre": 0
+                  },
+                  "certifiedZeroSalt": true,
+                  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+                  "giId": null,
+                  "giEvidenceHash": null,
+                  "family": "unresolved",
+                  "match": "APPLIED",
+                  "applicability": "No assigned GI until named food/preparation review",
+                  "quantityEvidence": {
+                    "proposedWeighedEdibleMassG": null,
+                    "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+                  }
+                }
+              ]
+            }
+          ],
+          "group": "near-complete",
+          "batch": "A",
+          "confidence": "LOW",
+          "uncertainty": "NOT_BOUNDED",
+          "approved": false,
+          "published": false,
+          "reviewState": "DRAFT_NUMERIC",
+          "originalPreparation": "\n\n1. Paloittele nakit ja hienonna sipuli. Ruskista nakkeja pannulla ja lisää sipuli kuullottumaan.\n2. Kaada pannulle lihaliemi ja kuohukerma. Sekoita joukkoon sinappi ja mustapippuri. Anna kiehua hiljaa 8–10 minuuttia, kunnes kastike hieman sakenee. Maista ennen suolan lisäämistä.\n3. Paloittele kukkakaali ja keitä suolatussa vedessä pehmeäksi. Valuta huolellisesti ja anna ylimääräisen höyryn haihtua.\n4. Soseuta kukkakaali voin kanssa. Mausta suolalla ja tarjoa nakkikastikkeen kanssa.\n\n## Muistiinpanot\n\n- Valitse mahdollisimman vähähiilihydraattiset nakit ja tarkista ainesosaluettelo.\n- Jos kastikkeesta halutaan paksumpi, anna sen kiehua hieman pidempään. Älä käytä vehnäjauhoa.\n",
+          "proposedPreparation": [
+            "Kypsennä sipuli ja punnitut nakit kastikekattilassa. Lisää käyttövalmis liemi, kerma, Maille Dijon Originale ja mustapippuri.",
+            "Kypsennä kukkakaali höyryssä pehmeäksi; käytä koko punnittu syötävä määrä ja soseuta voin kanssa. Ei GI-alennusta soseutuksesta.",
+            "Jaa koko kastike ja muusi neljään annokseen."
+          ],
+          "publicationFixes": [
+            "Suola erikseen; 0,5 g jauhettua mustapippuria syödään.",
+            "Maille Dijon Originale 1 kg EAN 8711200375684; EU-pakkaus-CHO käytettävän CHO:n mallivastine, ei todistettu luonnollisten polyolien nolla."
+          ],
+          "notes": [],
+          "displayProposal": {
+            "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+            "en": "Modeled GL about X/serving; low confidence",
+            "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+            "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+          },
+          "proposedTitle": "Nakkikastike ja kukkakaalimuusi – punnittu laskentaversio",
+          "proposedVersionHash": "e03755d5122dde3d7da5eb72e7f880fb46f2acc3f9d13f30773dd73511ee4efb"
+        },
+        "sources": [
+          {
+            "id": "dairy-imputation30",
+            "gi": 30,
+            "scale": "GLUCOSE_100",
+            "family": "dairy-code",
+            "food": "Unsweetened animal dairy coding assignment",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+            "location": "Conclusions, low-carbohydrate product assignment",
+            "confidence": "LOW",
+            "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+            "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+          },
+          {
+            "id": "lowcho50-r4",
+            "gi": 50,
+            "scale": "GLUCOSE_100",
+            "family": "lowcho-code",
+            "food": "Named foods with <=5 g available CHO/100 g",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+            "location": "Author presentation slide 12",
+            "confidence": "LOW",
+            "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+            "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+            "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+            "allowedCompositionIds": [
+              "afcd-F000396-release-3-a1aa6eb1",
+              "afcd-F001301-release-3-578f337d",
+              "afcd-F002983-r4",
+              "afcd-F002991-release-3-aef4d973",
+              "afcd-F003337-release-3-358d7f7a",
+              "afcd-F004726-release-3-8b45863e",
+              "afcd-F004729-release-3-6915a221",
+              "afcd-F005198-release-3-d5346b07",
+              "afcd-F005946-release-3-13b128f1",
+              "afcd-F008004-r4",
+              "afcd-F008065-r4",
+              "afcd-F008936-release-3-145aa9dd",
+              "afcd-F009076-r4",
+              "fineli-11048-release-20-ef608526",
+              "fineli-11557-release-20-0e2f3532",
+              "fineli-29-release-20-efe46494",
+              "fineli-30315-release-20-36a6124d",
+              "fineli-30369-release-20-d894c260",
+              "fineli-7530-release-20-21f4037e",
+              "fineli-7600-release-20-f85560ba",
+              "fineli-779-release-20-66a2e282",
+              "fineli-8513-release-20-ae10a9b7",
+              "fineli-858-release-20-ae10a9b7",
+              "fineli-929-release-20-59dd350d",
+              "maille-label-proxy"
+            ],
+            "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770"
+          },
+          {
+            "id": "small-flavour50-r4",
+            "gi": 50,
+            "scale": "GLUCOSE_100",
+            "family": "small-spice-extension",
+            "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+            "location": "Explicit project extension of coding default, not directly published for these foods",
+            "confidence": "LOW",
+            "projectExtension": true,
+            "maxCarbohydratePerServing": 0.5,
+            "maxCumulativeCarbohydratePerServing": 1,
+            "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound.",
+            "allowedCompositionIds": [
+              "afcd-F002258-release-3-e23045e9",
+              "afcd-F002963-release-3-675e24d6",
+              "afcd-F003190-release-3-75db5621",
+              "afcd-F003327-release-3-66a5ea67",
+              "afcd-F006281-release-3-6c6c6bfe",
+              "afcd-F006316-release-3-c369b734",
+              "afcd-F006618-release-3-a814ab84",
+              "afcd-F008214-release-3-82a89f38",
+              "afcd-F009160-r4",
+              "afcd-F009160-release-3-88061dcd",
+              "afcd-F009335-release-3-34c60a8e",
+              "afcd-F009350-release-3-2181fb59",
+              "fineli-34245-release-20-60090bb3"
+            ],
+            "evidenceHash": "8daa54a7a72b78c45e25da32e9b2f72ddc1e720bd6e12b5468cea0aa0ecf067a"
+          },
+          {
+            "id": "vegetable-imputation40",
+            "gi": 40,
+            "scale": "GLUCOSE_100",
+            "family": "low-carb-vegetable",
+            "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+            "evidenceKind": "PUBLISHED_IMPUTATION",
+            "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+            "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+            "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+            "location": "Conclusions: assignment discussion",
+            "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+            "confidence": "LOW",
+            "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+            "newRecordInRun2": true,
+            "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+          }
+        ],
+        "comps": [
+          {
+            "id": "afcd-F006618-release-3-a814ab84",
+            "per100g": {
+              "availableCarbohydrate": 38.6,
+              "protein": 10.4,
+              "fat": 3.3,
+              "fibre": 25.3
+            },
+            "sourceRecord": {
+              "id": "afcd-F006618-release-3",
+              "name": "Pepper, black, ground",
+              "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+              "retrievedAt": "2026-10-24",
+              "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+              "state": "ground black pepper",
+              "basis": "per100g-as-sold",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "AFCD paired available CHO with/without sugar alcohols in original release3 Excel",
+              "per100g": {
+                "carbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "foodId": "F006618",
+                "name": "Pepper, black, ground",
+                "availableCarbohydrateWithoutSugarAlcohols": 38.6,
+                "availableCarbohydrateWithSugarAlcohols": 38.6,
+                "per100g": {
+                  "availableCarbohydrate": 38.6,
+                  "protein": 10.4,
+                  "fat": 3.3,
+                  "fibre": 25.3
+                }
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/bulgogi.json",
+            "originCalculationSha256": "ce6ac7dbba143b35903de135aeee83c104812bfb73986d84d39c1f1cf5d2c00f",
+            "evidenceHash": "d76efb478f115ba271542884c1cdc099e3be2956502c05910617ee513f4b4904"
+          },
+          {
+            "id": "fineli-29-release-20-efe46494",
+            "per100g": {
+              "availableCarbohydrate": 3,
+              "protein": 0.34,
+              "fat": 0.6,
+              "fibre": 0.017
+            },
+            "sourceRecord": {
+              "id": "fineli-29-release-20",
+              "name": "LIHALIEMI, LAIMENNETTU",
+              "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29",
+              "retrievedAt": "2026-10-24",
+              "licence": "THL, Fineli Release 20, CC BY 4.0",
+              "state": "diluted beef stock",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "componentValues": {
+                "CHO": 3,
+                "FIBT": 0.017,
+                "POLYL": 0
+              },
+              "componentIds": {
+                "CHO": 2034,
+                "FIBT": 2168,
+                "POLYL": 2260
+              },
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release20 POLYL component",
+              "per100g": {
+                "carbohydrate": 3.0,
+                "protein": 0.34,
+                "fat": 0.6,
+                "fibre": 0.017,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "source_id": "29",
+                "name": "LIHALIEMI, LAIMENNETTU",
+                "food_type": "DISH",
+                "process": "BOIL",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "DISH",
+                "food_class": "SAVSAUCE",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 3.0,
+                  "fibre_g_per_100g": 0.017,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 0.34,
+                  "fat_g_per_100g": 0.6
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "CG",
+                    "method_indicator": "MIR003"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  }
+                },
+                "portion_mass_g": {
+                  "DL": 100.0,
+                  "RKL": 15.0,
+                  "TL": 5.0
+                }
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/nakkikastike-kukkakaalimuusi.json",
+            "originCalculationSha256": "68ba6543fe85119f10e33608b726553b9c266b1922e31d750f59001b994a1d64",
+            "evidenceHash": "06371d09732721b354e1caa19be68736fc69531222f41a7499e1ab6ccedd714d"
+          },
+          {
+            "id": "fineli-322-release-20-11f8cef3",
+            "per100g": {
+              "availableCarbohydrate": 2.35,
+              "protein": 2,
+              "fat": 0.21,
+              "fibre": 1.9
+            },
+            "sourceRecord": {
+              "id": "fineli-322-release-20",
+              "name": "KUKKAKAALI",
+              "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/322",
+              "retrievedAt": "2026-10-24",
+              "licence": "THL, Fineli Release 20, CC BY 4.0",
+              "state": "raw cauliflower",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "componentValues": {
+                "CHO": 2.35,
+                "FIBT": 1.9,
+                "POLYL": 0
+              },
+              "componentIds": {
+                "CHO": 2034,
+                "FIBT": 2168,
+                "POLYL": 2260
+              },
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release20 POLYL component",
+              "per100g": {
+                "carbohydrate": 2.35,
+                "protein": 2.0,
+                "fat": 0.21,
+                "fibre": 1.9,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "source_id": "322",
+                "name": "KUKKAKAALI",
+                "food_type": "FOOD",
+                "process": "RAW",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "CABBAGE",
+                "food_class": "VEGFRESH",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 2.35,
+                  "fibre_g_per_100g": 1.9,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 2.0,
+                  "fat_g_per_100g": 0.21
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "D",
+                    "method_type": "AG",
+                    "method_indicator": "MI1302"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0181"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "D",
+                    "method_type": "S",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MIR006"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "KPL_S": 400.0,
+                  "KPL_M": 600.0,
+                  "KPL_L": 1000.0,
+                  "DL": 40.0
+                }
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/kana-enchilada-kukkakaalivuoka.json",
+            "originCalculationSha256": "d1444789a681623ba476daa06b4222a5b92c11d8f124dd641ead64901512b06e",
+            "evidenceHash": "e9b3512ba2620a2b21d5a540d8934e94de3b4275761626c844f246236c25a2f8"
+          },
+          {
+            "id": "fineli-335-release-20-c19feae0",
+            "per100g": {
+              "availableCarbohydrate": 4.8,
+              "protein": 1.25,
+              "fat": 0.1,
+              "fibre": 1.2
+            },
+            "sourceRecord": {
+              "id": "fineli-335-release-20",
+              "name": "SIPULI, KELTASIPULI",
+              "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
+              "retrievedAt": "2026-10-24",
+              "licence": "THL, Fineli Release 20, CC BY 4.0",
+              "state": "raw yellow onion, medium edible portion",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "componentValues": {
+                "CHO": 4.8,
+                "FIBT": 1.2,
+                "POLYL": 0
+              },
+              "componentIds": {
+                "CHO": 2034,
+                "FIBT": 2168,
+                "POLYL": 2260
+              },
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release20 POLYL component",
+              "per100g": {
+                "carbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "source_id": "335",
+                "name": "SIPULI, KELTASIPULI",
+                "food_type": "FOOD",
+                "process": "RAW",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "VEGONI",
+                "food_class": "VEGFRESH",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 4.8,
+                  "fibre_g_per_100g": 1.2,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 1.25,
+                  "fat_g_per_100g": 0.1
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0181"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "T",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MIR006"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "KPL_S": 30.0,
+                  "KPL_M": 55.0,
+                  "KPL_L": 200.0,
+                  "DL": 90.0
+                }
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/meksikolainen-huevos-a-la-mexicana.json",
+            "originCalculationSha256": "b31dc95a1c515762b01d3a8ebc1113d63c55b1012e08e2299767f33927f7a42f",
+            "evidenceHash": "c576bb69faeb2bd85e3a3d12772decd927340fe73033afdbffc4e12cbda9d1f2"
+          },
+          {
+            "id": "fineli-500-release-20-8ce86bab",
+            "per100g": {
+              "availableCarbohydrate": 0.8,
+              "protein": 1.19,
+              "fat": 81.3,
+              "fibre": 0
+            },
+            "sourceRecord": {
+              "id": "fineli-500-release-20",
+              "name": "VOI",
+              "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+              "retrievedAt": "2026-10-24",
+              "licence": "THL, Fineli Release 20, CC BY 4.0",
+              "state": "butter",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "componentValues": {
+                "CHO": 0.8,
+                "FIBT": 0,
+                "POLYL": 0
+              },
+              "componentIds": {
+                "CHO": 2034,
+                "FIBT": 2168,
+                "POLYL": 2260
+              },
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release20 POLYL component",
+              "per100g": {
+                "carbohydrate": 0.8,
+                "protein": 1.19,
+                "fat": 81.3,
+                "fibre": 0.0,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "source_id": "500",
+                "name": "VOI",
+                "food_type": "FOOD",
+                "process": "IND",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "BUTTER",
+                "food_class": "BUTTER",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 0.8,
+                  "fibre_g_per_100g": 0.0,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 1.19,
+                  "fat_g_per_100g": 81.3
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0181"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "U",
+                    "method_indicator": "MIR007"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "DL": 95.0,
+                  "RKL": 14.0,
+                  "TL": 4.5
+                }
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/janssoninkiusaus-juuriselleri.json",
+            "originCalculationSha256": "ec27ede400ae7fec48bc661b16070c3b7f384391b38b2f6d35f881304b0163e7",
+            "evidenceHash": "0130684697b41b8e3f618acfa229240a1f30d491ac9545c708a5d69cbb6396cb"
+          },
+          {
+            "id": "fineli-631-release-20-6d1f5fee",
+            "per100g": {
+              "availableCarbohydrate": 2.9,
+              "protein": 1.88,
+              "fat": 38,
+              "fibre": 0
+            },
+            "sourceRecord": {
+              "id": "fineli-631-release-20",
+              "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+              "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/631",
+              "retrievedAt": "2026-10-24",
+              "licence": "THL, Fineli Release 20, CC BY 4.0",
+              "state": "whipping cream, 38% fat",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "componentValues": {
+                "CHO": 2.9,
+                "FIBT": 0,
+                "POLYL": 0
+              },
+              "componentIds": {
+                "CHO": 2034,
+                "FIBT": 2168,
+                "POLYL": 2260
+              },
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release20 POLYL component",
+              "per100g": {
+                "carbohydrate": 2.9,
+                "protein": 1.88,
+                "fat": 38.0,
+                "fibre": 0.0,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "source_id": "631",
+                "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+                "food_type": "FOOD",
+                "process": "IND",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "CREAM",
+                "food_class": "CREAM",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 2.9,
+                  "fibre_g_per_100g": 0.0,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 1.88,
+                  "fat_g_per_100g": 38.0
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "F",
+                    "method_type": "E",
+                    "method_indicator": "MIR003"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0181"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0123"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "U",
+                    "method_indicator": "MIR007"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "S",
+                    "method_indicator": "MI0172"
+                  }
+                },
+                "portion_mass_g": {
+                  "DL": 100.0,
+                  "RKL": 15.0,
+                  "TL": 5.0
+                }
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/janssoninkiusaus-juuriselleri.json",
+            "originCalculationSha256": "ec27ede400ae7fec48bc661b16070c3b7f384391b38b2f6d35f881304b0163e7",
+            "evidenceHash": "b57e62bfdff3d5b9353cadfb7e1a812e6194c8f0bf02e25b7420b7e75abbf25e"
+          },
+          {
+            "id": "fineli-7600-release-20-f85560ba",
+            "per100g": {
+              "availableCarbohydrate": 1.162,
+              "protein": 11.31,
+              "fat": 18.23,
+              "fibre": 0.008
+            },
+            "sourceRecord": {
+              "id": "fineli-7600-release-20",
+              "name": "NAKKI, KEITETTY",
+              "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/7600",
+              "retrievedAt": "2026-10-24",
+              "licence": "THL, Fineli Release 20, CC BY 4.0",
+              "state": "boiled frankfurter sausage",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "componentValues": {
+                "CHO": 1.162,
+                "FIBT": 0.008,
+                "POLYL": 0
+              },
+              "componentIds": {
+                "CHO": 2034,
+                "FIBT": 2168,
+                "POLYL": 2260
+              },
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release20 POLYL component",
+              "per100g": {
+                "carbohydrate": 1.162,
+                "protein": 11.31,
+                "fat": 18.23,
+                "fibre": 0.008,
+                "polyols": 0.0
+              },
+              "primaryVerification": {
+                "source_id": "7600",
+                "name": "NAKKI, KEITETTY",
+                "food_type": "DISH",
+                "process": "BOIL",
+                "edible_portion_percent": 100.0,
+                "ingredient_class": "DISH",
+                "food_class": "SAUSAGE",
+                "per100g": {
+                  "available_carbohydrate_g_per_100g": 1.162,
+                  "fibre_g_per_100g": 0.008,
+                  "polyols_g_per_100g": 0.0,
+                  "protein_g_per_100g": 11.31,
+                  "fat_g_per_100g": 18.23
+                },
+                "component_provenance": {
+                  "fat_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  },
+                  "available_carbohydrate_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  },
+                  "protein_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  },
+                  "polyols_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  },
+                  "fibre_g_per_100g": {
+                    "acquisition_type": "S",
+                    "method_type": "R",
+                    "method_indicator": "MI0002"
+                  }
+                },
+                "portion_mass_g": {}
+              },
+              "verifiedAt": "2026-11-01"
+            },
+            "originCalculation": "docs/nutrition/calculations/nakkikastike-kukkakaalimuusi.json",
+            "originCalculationSha256": "68ba6543fe85119f10e33608b726553b9c266b1922e31d750f59001b994a1d64",
+            "evidenceHash": "2a091fcdbb4711d4f002904cdcddd5b37cad25aa38618a47430f6c09470339b1"
+          },
+          {
+            "id": "maille-label-proxy",
+            "name": "Maille Dijon Originale 1 kg, EAN 8711200375684",
+            "per100g": {
+              "availableCarbohydrate": 3.5,
+              "protein": 7,
+              "fat": 11,
+              "fibre": 2
+            },
+            "sourceRecord": {
+              "sourceUrl": "https://www.unileverfoodsolutions.fi/tuotteet/maille-dijon-originale-sinappi-1-kg-34-FI-1203997.html",
+              "corroborationUrl": "https://www.unileverfoodsolutions.fi/dam/global-ufs/mcos/nordics/finland/themes/tuoteopas-2025/UFS_2025_Tuoteluettelo_S%C3%A4hk%C3%B6inen.pdf",
+              "accessed": "2026-10-30",
+              "accessMethod": "Primary manufacturer page and 2025 catalogue read through web indexed content. Direct downloads returned 403; no invented raw-document hash.",
+              "identityEvidence": "2025 Finnish catalogue: consumer EAN 8711200375684; case EAN 8711200375691. One older cached webpage repeats the case EAN in both positions; use catalogue consumer EAN.",
+              "basis": "per 100 g (catalogue explicitly says Ravintosisältö 100 g; page generic heading g/ml)",
+              "ingredients": "Water, mustard seed 26%, vinegar, salt, citric acid, potassium disulphite.",
+              "declaredPer100": {
+                "carbohydrate": 3.5,
+                "sugars": 1.9,
+                "protein": 7,
+                "fat": 11,
+                "fibre": 2,
+                "salt": 4.9
+              },
+              "gi": null,
+              "polyolsPer100": null
+            },
+            "carbohydrateDefinition": "MODELLED_AVAILABLE_CHO_FROM_EU_LABEL",
+            "measuredPolyolsPer100": null,
+            "modelAssumption": "Use the complete EU label carbohydrate as the available-CHO proxy. No added polyol is listed, but naturally occurring polyols and rounding are unmeasured. This is not a verified zero-polyol result; fibre is not subtracted again.",
+            "sensitivity": "At fixed assigned GI, removing any part of this label-CHO proxy reduces its model contribution. No bound on real glycaemia is established.",
+            "confidence": "LOW",
+            "basis": "per100g",
+            "evidenceHash": "d94c9ea25cc574f20be8a2e373e828848a84a8ee017aee8ebaa924343a7d56aa"
+          }
+        ],
+        "sourceHash": "a329a55acc5af70cedc06c6bc0c3ed9f5be8d100e95baa90675e02822aaf8fae",
+        "originalBundleHash": "0a69c6b5550144218bb1172071e06256a6cfdb0f12c5f4f8369f567518187435"
+      },
+      "proposalIsNotPublicationEvidence": true
+    }
+  ]
+}

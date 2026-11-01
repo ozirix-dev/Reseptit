@@ -1,84 +1,83 @@
 ---
-title: Turkisk menemen med tomater och paprika
+title: Turkisk menemen med lök – vägd version
 recipe_id: menemen
 url_slug: menemen
 category: paaruoka
 language: sv
 status: published
-carbs_net_per_serving_g: 8.06
-carbs_total_per_serving_g: 11.47
-protein_per_serving_g: 10.77
-fat_per_serving_g: 16.32
+carbs_net_per_serving_g: 6.99
+carbs_total_per_serving_g: 8.99
+protein_per_serving_g: 10.81
+fat_per_serving_g: 16.39
 servings: 3
 time_total_min: 25
 main_ingredient:
-  - kananmuna
-  - tomaatti
+- kananmuna
+- tomaatti
 cooking_method:
-  - liesi
+- liesi
 difficulty: lätt
 tags:
-  - "medelhavsmat"
-  - "turkisk"
-  - "ägg"
-  - "tomat"
+- medelhavsmat
+- turkisk
+- ägg
+- tomat
 image:
   src: paaruoat/menemen.webp
-  alt: Turkiska menener med tomater och grön paprika i en liten panna
+  alt: Turkisk menemen med lök – vägd version – serveringsillustration
   width: 1279
   height: 853
 ingredients:
-  - amount: 4
-    unit: st
-    item: ägg
-  - amount: 3
-    unit: st
-    item: mogen tomat
-    note: "tärnad"
-  - amount: 1
-    unit: st
-    item: grön paprika
-    note: hackad
-  - amount: 1
-    unit: st
-    item: lök
-    note: "finhackad"
-  - amount: 2
-    unit: msk
-    item: olivolja
-  - amount: 0.5
-    unit: tsk
-    item: paprikapulver
-  - amount: 0.5
-    unit: tsk
-    item: salt
-  - amount: 0.25
-    unit: tsk
-    item: svartpeppar
-  - amount: 10
-    unit: g
-    item: färsk persilja
-    note: strimlad
+- amount: 220
+  unit: g
+  item: ägg utan skal
+- amount: 375
+  unit: g
+  item: tomat
+- amount: 170
+  unit: g
+  item: grön paprika
+- amount: 55
+  unit: g
+  item: skalad gul lök
+- amount: 27
+  unit: g
+  item: olivolja
+- amount: 1
+  unit: g
+  item: malen paprika
+- amount: 0.5
+  unit: g
+  item: malen svartpeppar
+- amount: 10
+  unit: g
+  item: färsk persilja
+- amount: null
+  unit: ''
+  item: salt efter smak
 source_language: fi
 source_recipe: reseptit/paaruoat/menemen.md
 translation_of: menemen
 ---
 
-# Turkisk menemen med tomater och paprika
-
-I Menemen kokas ägg mjukt i en tomat- och paprikablandning. Servera med färskt bröd.
+# Turkisk menemen med lök – vägd version
 
 ## Beskrivning
 
-I Menemen kokas ägg mjukt i en tomat- och paprikablandning. Servera med färskt bröd.
+Turkisk menemen med lök – vägd version.
+
+## Ingredienser
+
+De vägda ingredienserna visas ovan.
 
 ## Tillagning
 
-1. Hetta upp olivoljan i en panna. Fräs löken och paprikan tills den är mjuk i cirka 6 minuter.
-2. Tillsätt tomater och paprikapulver. Sjud tills tomaterna har brutit ner och vätskan har avdunstat lite.
-3. Knäck äggen i pannan. Blanda försiktigt tills äggvitan precis stelnat men blandningen fortfarande är mjuk.
-4. Krydda med salt och peppar. Avsluta med persilja och servera genast.
+1. Fräs hela mängden 55 g lök och 170 g grön paprika i 27 g olivolja. Tillsätt 375 g tomat och 1 g paprika och sjud tills allt är mjukt.
+2. Tillsätt 220 g ägg utan skal och tillaga försiktigt under omrörning. Tillsätt 10 g persilja och 0,5 g svartpeppar och smaka av med salt.
+3. Fördela hela pannan med all vätska på tre portioner. Lök ingår i denna exakta version.
 
 ## Anteckningar
 
-- Vissa versioner använder inte lök; du kan utelämna det.
+GL är en modellerad ingredienssumma med låg säkerhet, inte ett uppmätt måltidssvar. Något biologiskt osäkerhetsintervall är inte känt. Namngivna källjämförelser är inte ett statistiskt konfidensintervall. Bilden illustrerar servering; tillbehör som inte anges ingår inte. Alla angivna ätliga ingredienser, all sås och allt fett äts. Ingen omätt tillagnings- eller urlakningsförlust dras av.
+
+Bedömningen gäller endast den visade vägda versionen.

@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "packId": "gk80-release-8",
+  "packVersion": 1,
+  "baseMain": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+  "reviewedResearchCommit": "767f57795f981028227167d52ee23f7e674494db",
+  "ownerApproved": false,
+  "approvalState": "READY_FOR_OWNER_METHOD_AND_CONTENT_REVIEW",
+  "reviewedRecipeIds": [
+    "bulgogi",
+    "bun-cha-hanoi",
+    "caponata",
+    "carnitas-salaattitacot",
+    "congee-riisipuuro",
+    "doner-kebab",
+    "hunaja-sinappikana-kaalilla",
+    "janssoninkiusaus-juuriselleri",
+    "japanilainen-kabocha-puuro",
+    "marokkolainen-couscous",
+    "menemen",
+    "nakkikastike-kukkakaalimuusi",
+    "pasta-alla-norma",
+    "ratatouille",
+    "rogan-josh",
+    "shakshuka",
+    "sitruuna-yrttikana-parsa",
+    "taytetyt-paprikat-vhh",
+    "tomaatti-kananmuna-wokki",
+    "uunikanapasta-kesakurpitsa",
+    "valimerellinen-halloumi-tomaattileipa",
+    "vietnamilainen-kahvijogurtti-banaanilla"
+  ],
+  "recipeIds": [
+    "bulgogi",
+    "bun-cha-hanoi",
+    "caponata",
+    "carnitas-salaattitacot",
+    "congee-riisipuuro",
+    "doner-kebab",
+    "janssoninkiusaus-juuriselleri",
+    "japanilainen-kabocha-puuro",
+    "marokkolainen-couscous",
+    "menemen",
+    "pasta-alla-norma",
+    "ratatouille",
+    "rogan-josh",
+    "shakshuka",
+    "sitruuna-yrttikana-parsa",
+    "taytetyt-paprikat-vhh",
+    "tomaatti-kananmuna-wokki",
+    "uunikanapasta-kesakurpitsa",
+    "valimerellinen-halloumi-tomaattileipa",
+    "vietnamilainen-kahvijogurtti-banaanilla"
+  ],
+  "heldRecipeIds": [
+    "hunaja-sinappikana-kaalilla",
+    "nakkikastike-kukkakaalimuusi"
+  ],
+  "existingLocales": {
+    "bulgogi": [
+      "fi"
+    ],
+    "bun-cha-hanoi": [
+      "fi"
+    ],
+    "caponata": [
+      "fi",
+      "th",
+      "sv",
+      "en"
+    ],
+    "carnitas-salaattitacot": [
+      "fi"
+    ],
+    "congee-riisipuuro": [
+      "fi",
+      "th",
+      "sv",
+      "en"
+    ],
+    "doner-kebab": [
+      "fi",
+      "th",
+      "sv",
+      "en"
+    ],
+    "janssoninkiusaus-juuriselleri": [
+      "fi"
+    ],
+    "japanilainen-kabocha-puuro": [
+      "fi"
+    ],
+    "marokkolainen-couscous": [
+      "fi",
+      "th",
+      "sv",
+      "en"
+    ],
+    "menemen": [
+      "fi",
+      "th",
+      "sv",
+      "en"
+    ],
+    "pasta-alla-norma": [
+      "fi",
+      "th",
+      "sv",
+      "en"
+    ],
+    "ratatouille": [
+      "fi",
+      "th",
+      "sv",
+      "en"
+    ],
+    "rogan-josh": [
+      "fi",
+      "th",
+      "sv",
+      "en"
+    ],
+    "shakshuka": [
+      "fi"
+    ],
+    "sitruuna-yrttikana-parsa": [
+      "fi"
+    ],
+    "taytetyt-paprikat-vhh": [
+      "fi",
+      "th",
+      "sv",
+      "en"
+    ],
+    "tomaatti-kananmuna-wokki": [
+      "fi",
+      "th",
+      "sv",
+      "en"
+    ],
+    "uunikanapasta-kesakurpitsa": [
+      "fi"
+    ],
+    "valimerellinen-halloumi-tomaattileipa": [
+      "fi"
+    ],
+    "vietnamilainen-kahvijogurtti-banaanilla": [
+      "fi"
+    ]
+  },
+  "lockedResearchBundleHashes": {
+    "bulgogi": "776ba65acc7c3633387a29958cd90222cb08b99e8f249ddcb5c9f7683244bf39",
+    "bun-cha-hanoi": "dd88be783024a3745e8c959f80280b45541997c0282dfcac116385419d710241",
+    "caponata": "dcd426a1e0f3791baa9c43f4bc0ad8f7c726c1dce51cbc21936c884d73804a90",
+    "carnitas-salaattitacot": "993a6d6bbda166c5b486902c87445e357ce64da43c2f84a0251de9b7f07f36ec",
+    "congee-riisipuuro": "c8c38aca6a3c7a4176ead9a415c2ba27de9d874e360546c2e4b0902233c90b66",
+    "doner-kebab": "bf20b7b29c8c5c830d0376e7960cce74794c666e1545b7d9a120a52ea9e3aab8",
+    "hunaja-sinappikana-kaalilla": "1a6bde213e71b5984c2db2310e100c301a9b4d854ba23fa245618e96302b017a",
+    "janssoninkiusaus-juuriselleri": "f2ad3e43b6e40eddaedd9bddcc7d4d5b75571cac4999973f30de98c15f5b6332",
+    "japanilainen-kabocha-puuro": "7fc9df9923f23beded59ac7bb2688cd91216c42e9d7d9d0f0e3140e98c3d1c67",
+    "marokkolainen-couscous": "f2c20e491f34a09da5ecb08f81594babd78f84303a4ff9dc462f2fccb6f74c6a",
+    "menemen": "a878757f595ca244d33861557d64a1db8de01858baaddcc69464064c0ac0431e",
+    "nakkikastike-kukkakaalimuusi": "0a69c6b5550144218bb1172071e06256a6cfdb0f12c5f4f8369f567518187435",
+    "pasta-alla-norma": "cb673624e559950cfc29bc3cd9f145a2f160f060a094c5795fc83715183183dc",
+    "ratatouille": "75b846116d3259ee9169104a3049dbb93ac9b4d1e96c34ca8b095213657a3b3a",
+    "rogan-josh": "e7b59f0ff83dc8aba8aa2e148567071c6232994516c0c4d212534aa9b71f14b9",
+    "shakshuka": "b61062f8cd1bb11ef277eaa43d5b042ca8232c1e7dbd1a978e27862031798866",
+    "sitruuna-yrttikana-parsa": "29d0e3bdd8de8b48f3004081bfe855d2aeb6aecc7141def4e05bb32074bceaeb",
+    "taytetyt-paprikat-vhh": "596e4189ca2f4e8f20de128d94d2dfb6ac93e9ced5ca9b8eec52491a7422a708",
+    "tomaatti-kananmuna-wokki": "654d94c57dcf00ad86e2cd7cf8b63df1307c81c40f4061a74d90c9aa059fded4",
+    "uunikanapasta-kesakurpitsa": "d02b7846b02395bd5b3a2d5d9468b675f757ab40e6636b99ad5e71b04dc1f7ef",
+    "valimerellinen-halloumi-tomaattileipa": "81585800ea97a4fa161e027c3e067031f125f0bf2b74953e355945c805e5b05b",
+    "vietnamilainen-kahvijogurtti-banaanilla": "72ddd6575ebf6c0e9c0a92333545966102e9d0d55707edb1ed345c0077ff10e9"
+  },
+  "policyDecisionsRequired": [
+    "Twenty exact weighed versions, four macros and named source/preparation comparisons, all LOW",
+    "Carnitas ordinary lime F005199; butternut pumpkin51, no dairy imputation",
+    "No assumed zero polyols; two Dijon recipes stay HOLD; no general method change"
+  ],
+  "noRuntimeChangesToHeldRecipes": true
+}

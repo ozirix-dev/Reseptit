@@ -1,5 +1,5 @@
 ---
-title: Low-Carb Stuffed Peppers with Beef and Cheese
+title: Beef and cheese stuffed peppers – weighed version
 recipe_id: taytetyt-paprikat-vhh
 url_slug: taytetyt-paprikat-vhh
 category: paaruoka
@@ -7,81 +7,82 @@ language: en
 status: published
 diet_class: vhh_valjempi
 main_ingredient:
-  - naudan jauheliha
-  - paprika
-  - juusto
+- naudan jauheliha
+- paprika
+- juusto
 cooking_method:
-  - uuni
-carbs_net_per_serving_g: 12.29
-carbs_total_per_serving_g: 17.35
-protein_per_serving_g: 36.88
-fat_per_serving_g: 36.56
+- uuni
+carbs_net_per_serving_g: 10.42
+carbs_total_per_serving_g: 14.2
+protein_per_serving_g: 36.42
+fat_per_serving_g: 35.86
 servings: 4
 time_total_min: 50
 difficulty: easy
 tags:
-  - Finnish home cooking
-  - low carb
-  - stuffed peppers
-  - minced meat
+- Finnish home cooking
+- low carb
+- stuffed peppers
+- minced meat
 image:
   src: paaruoat/taytetyt-paprikat-vhh.webp
-  alt: Peppers stuffed with minced meat and melted cheese with green salad
+  alt: Beef and cheese stuffed peppers – weighed version – serving illustration
   width: 1280
   height: 853
 ingredients:
-  - amount: 4
-    unit: ""
-    item: large bell pepper
-  - amount: 500
-    unit: g
-    item: ground beef
-  - amount: 1
-    unit: ""
-    item: small onion
-  - amount: 150
-    unit: g
-    item: crushed tomatoes
-  - amount: 1
-    unit: tbsp
-    item: tomato puree
-  - amount: 1
-    unit: tsp
-    item: dried oregano
-  - amount: 0.5
-    unit: tsp
-    item: salt
-  - amount: 0.5
-    unit: tsp
-    item: black pepper
-  - amount: 150
-    unit: g
-    item: grated cheese
-  - amount: 1
-    unit: tbsp
-    item: olive oil
+- amount: 640
+  unit: g
+  item: red pepper
+- amount: 500
+  unit: g
+  item: beef mince, 17% fat
+- amount: 70
+  unit: g
+  item: peeled onion
+- amount: 150
+  unit: g
+  item: crushed tomatoes
+- amount: 100
+  unit: g
+  item: crushed tomatoes instead of tomato paste
+- amount: 2
+  unit: g
+  item: dried oregano
+- amount: 1
+  unit: g
+  item: ground black pepper
+- amount: 150
+  unit: g
+  item: grated semi-hard cheese
+- amount: 13.5
+  unit: g
+  item: olive oil
+- amount: null
+  unit: ''
+  item: salt to taste
 source_language: fi
 source_recipe: reseptit/paaruoat/taytetyt-paprikat-vhh.md
 translation_of: taytetyt-paprikat-vhh
 ---
 
-# Low-Carb Stuffed Peppers with Beef and Cheese
-
-Juicy stuffed peppers get a minced meat-tomato filling and a cheese frosting. The rice is left out and the filling is kept simple.
+# Beef and cheese stuffed peppers – weighed version
 
 ## Description
 
-Fried minced meat, oregano and tomato make up the filling, which cooks inside the paprika in the oven. Serve with a salad.
+Beef and cheese stuffed peppers – weighed version.
 
-## Preparation
+## Ingredients
 
-1. Heat the oven to 200 degrees. Halve the peppers lengthwise and remove the seeds and stem. Place the halves in the baking dish with the cutting surface facing up.
-2. Chop the onion. Heat the oil in a pan and brown the minced meat. Add the onion and fry until soft.
-3. Mix in crushed tomatoes, tomato puree, oregano, salt and pepper. Simmer for 5 minutes so that the filling thickens a little.
-4. Divide the filling between the peppers and sprinkle grated cheese on top.
-5. Bake for about 25–30 minutes until the peppers soften and the cheese takes on color. Serve with a green salad.
+The weighed ingredients are shown above.
+
+## Instructions
+
+1. This crushed-tomato variant replaces 16 g tomato paste with 100 g extra crushed tomatoes, making 250 g in total. Brown 500 g beef mince and 70 g onion in 13.5 g olive oil.
+2. Add all tomatoes, 2 g oregano and 1 g black pepper. Simmer until thick. Fill 640 g edible red peppers with all the filling and top with 150 g grated cheese.
+3. Bake at 200 °C until the meat is cooked and peppers are tender. Divide the whole dish and all liquid into four portions; a separate salad is excluded.
 
 ## Notes
 
-- The amount of carbohydrates in peppers is medium, so this is a food suitable for a wider low-carb diet.
-- If the filling looks watery, cook it in the pan for a few more minutes before filling.
+GL is a modeled ingredient-sum estimate with low confidence, not a measured meal response. No biological uncertainty interval is known. Named source comparisons are not a statistical confidence interval. The photograph illustrates serving; unlisted side dishes are excluded. All listed edible ingredients, sauce and fat are consumed. No unmeasured cooking or leaching losses are deducted.
+
+This estimate is limited to the weighed version shown.

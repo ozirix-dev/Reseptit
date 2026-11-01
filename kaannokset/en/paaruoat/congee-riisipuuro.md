@@ -1,80 +1,77 @@
 ---
-title: Chinese congee rice porridge
+title: Chinese congee with egg – weighed version
 recipe_id: congee-riisipuuro
 url_slug: congee-riisipuuro
 category: paaruoka
 language: en
 status: published
 servings: 4
-time_total_min: 75
+time_total_min: 55
 main_ingredient:
-  - riisi
+- riisi
 cooking_method:
-  - liesi
+- liesi
 difficulty: easy
 tags:
-  - Chinese
-  - rice
+- Chinese
+- rice
 image:
   src: paaruoat/congee-riisipuuro.webp
-  alt: Chinese rice porridge with ginger, spring onions and salty side dishes
+  alt: Chinese congee with egg – weighed version – serving illustration
   width: 1279
   height: 853
 ingredients:
-  - amount: 200
-    unit: g
-    item: jasmine rice
-  - amount: 2
-    unit: l
-    item: chicken stock
-  - amount: 1
-    unit: tsp
-    item: salt
-  - amount: 1
-    unit: tbsp
-    item: fresh ginger
-    note: in strips
-  - amount: 2
-    unit: piece
-    item: spring onions
-    note: in slices
-  - amount: 2
-    unit: tbsp
-    item: soy sauce
-    note: for serving
-  - amount: 1
-    unit: tsp
-    item: sesame oil
-    note: for serving
-  - amount: 2
-    unit: piece
-    item: boiled egg
-    note: halved, optional
+- amount: 200
+  unit: g
+  item: dry white jasmine rice
+- amount: 2000
+  unit: g
+  item: prepared liquid stock, generic AFCD composition
+- amount: null
+  unit: ''
+  item: salt to taste
+- amount: 6
+  unit: g
+  item: peeled fresh ginger
+- amount: 30
+  unit: g
+  item: spring onion
+- amount: 30
+  unit: g
+  item: ordinary soy sauce, generic AFCD composition
+- amount: 4.5
+  unit: g
+  item: sesame oil
+- amount: 110
+  unit: g
+  item: boiled egg without shell
 source_language: fi
 source_recipe: reseptit/paaruoat/congee-riisipuuro.md
 translation_of: congee-riisipuuro
-carbs_net_per_serving_g: 40.21
-carbs_total_per_serving_g: 40.8
-protein_per_serving_g: 8.5
+carbs_net_per_serving_g: 39.74
+carbs_total_per_serving_g: 40.32
+protein_per_serving_g: 8.62
 fat_per_serving_g: 5.14
-
 ---
 
-# Chinese congee rice porridge
-
-Slow-cooked rice porridge is a soft and mild everyday dish that can be served with ginger, spring onion and other salty side dishes.
+# Chinese congee with egg – weighed version
 
 ## Description
 
-Slow-cooked rice porridge is a soft and mild everyday dish that can be served with ginger, spring onion and other salty side dishes.
+Chinese congee with egg – weighed version.
 
-## Preparation
+## Ingredients
 
-1. Rinse the rice with cold water.
-2. Put the rice, water or stock and salt in the pot. Bring to a boil and cook on very low heat in the crack of the lid for about 60 minutes. Stir occasionally.
-3. When the rice has broken down into a soft porridge, stir in the ginger and cook for another 5 minutes.
-4. Divide the porridge into bowls. Add spring onions, soy sauce and sesame oil. Serve with an egg if desired.
+The weighed ingredients are shown above.
+
+## Instructions
+
+1. Simmer 200 g dry white jasmine rice in 2000 g prepared stock for about 40 min until it becomes soft congee.
+2. Add 6 g ginger and 30 g spring onion. Boil eggs separately and weigh 110 g without shells.
+3. Add all 30 g soy sauce and 4.5 g sesame oil. Season with salt and divide the whole congee, liquid and eggs into four portions.
 
 ## Notes
 
-- Porridge thickens as it cools. When serving, add hot water or broth if you want it thinner.
+GL is a modeled ingredient-sum estimate with low confidence, not a measured meal response. No biological uncertainty interval is known. Named source comparisons are not a statistical confidence interval. The photograph illustrates serving; unlisted side dishes are excluded. All listed edible ingredients, sauce and fat are consumed. No unmeasured cooking or leaching losses are deducted.
+
+Stock and soy sauce use named generic AFCD compositions; a specific brand is not verified.

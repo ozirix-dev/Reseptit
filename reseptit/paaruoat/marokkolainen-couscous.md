@@ -8,90 +8,94 @@ status: published
 servings: 4
 time_total_min: 75
 main_ingredient:
-  - kana
-  - kikherne
+- kana
+- kikherne
 cooking_method:
-  - liesi
+- liesi
 difficulty: keskitaso
 tags:
-  - valimerellinen
-  - marokkolainen
-  - kana
-  - kikherne
+- valimerellinen
+- marokkolainen
+- kana
+- kikherne
 image:
   src: paaruoat/marokkolainen-couscous.webp
-  alt: Marokkolainen couscous-annos kanalla, kikherneillä ja värikkäillä kasviksilla
+  alt: Marokkolainen couscous kanalla ja kasviksilla – kuvituskuva
   width: 1279
   height: 853
 ingredients:
-  - amount: 600
-    unit: g
-    item: broilerin koipia tai paistileikettä
-  - amount: 250
-    unit: g
-    item: couscousia
-  - amount: 1
-    unit: kpl
-    item: sipuli
-    note: hienonnettuna
-  - amount: 2
-    unit: kpl
-    item: porkkanaa
-    note: paloina
-  - amount: 1
-    unit: kpl
-    item: kesäkurpitsaa
-    note: paloina
-  - amount: 400
-    unit: g
-    item: kikherneitä
-    note: huuhdeltuna
-  - amount: 1
-    unit: l
-    item: kanalientä
-  - amount: 1
-    unit: tl
-    item: juustokuminaa
-  - amount: 1
-    unit: tl
-    item: jauhettua korianteria
-  - amount: 0.5
-    unit: tl
-    item: kurkumaa
-  - amount: 2
-    unit: rkl
-    item: oliiviöljyä
-  - amount: 1
-    unit: tl
-    item: suolaa
+- amount: 600
+  unit: g
+  item: luutonta nahatonta broilerin reisilihaa
+- amount: 250
+  unit: g
+  item: kuivaa couscousia
+- amount: 55
+  unit: g
+  item: sipuli
+- amount: 110
+  unit: g
+  item: porkkanaa
+- amount: 200
+  unit: g
+  item: kesäkurpitsaa
+- amount: 400
+  unit: g
+  item: kypsiä valutettuja kikherneitä
+- amount: 1000
+  unit: g
+  item: käyttövalmista lientä, AFCD:n yleinen koostumusvertailu
+- amount: 2
+  unit: g
+  item: juustokuminaa
+- amount: 2
+  unit: g
+  item: jauhettua korianterinsiementä
+- amount: 1.0
+  unit: g
+  item: kurkumaa
+- amount: 27.0
+  unit: g
+  item: oliiviöljyä
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 translation_languages:
-  - en
-  - sv
-  - th
-translation_status: {en: published, sv: published, th: published}
-carbs_net_per_serving_g: 67.45
-carbs_total_per_serving_g: 76.5
-protein_per_serving_g: 46.82
-fat_per_serving_g: 14.71
-
+- en
+- sv
+- th
+translation_status:
+  en: published
+  sv: published
+  th: published
+carbs_net_per_serving_g: 68.36
+carbs_total_per_serving_g: 78.13
+protein_per_serving_g: 47.06
+fat_per_serving_g: 14.85
 ---
 
 # Marokkolainen couscous kanalla ja kasviksilla
 
-Mausteinen kanaliemi kypsentää porkkanat, kesäkurpitsan ja kikherneet. Tarjoa kasvikset ja liemi höyryävän couscousin päällä.
-
 ## Kuvaus
 
-Mausteinen kanaliemi kypsentää porkkanat, kesäkurpitsan ja kikherneet. Tarjoa kasvikset ja liemi höyryävän couscousin päällä.
+Marokkolainen couscous kanalla ja kasviksilla. Täsmällinen versio 4 annokselle.
+
+## Ainekset
+
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Ruskista broileri öljyssä kattilassa. Lisää sipuli ja kuullota pehmeäksi.
-2. Lisää juustokumina, korianteri ja kurkuma. Sekoita ja kaada joukkoon liemi.
-3. Lisää porkkanat ja hauduta 20 minuuttia. Lisää kesäkurpitsa ja kikherneet ja jatka kypsennystä 15 minuuttia, kunnes broileri ja kasvikset ovat kypsiä.
-4. Valmista couscous pakkauksen ohjeella. Kuohkeuta haarukalla.
-5. Nosta couscous tarjoiluastiaan ja asettele päälle broileri sekä kasvikset. Lusikoi päälle hieman lientä.
+1. Paloittele 600 g luutonta nahatonta broilerin reisilihaa, 55 g sipulia, 110 g porkkanaa ja 200 g kesäkurpitsaa. Pehmennä sipuli 27 g:ssa oliiviöljyä ja lisää kana sekä kasvikset.
+2. Lisää 1000 g käyttövalmista lientä, 400 g kypsiä valutettuja kikherneitä sekä 2 g juustokuminaa, 2 g korianteria ja 1 g kurkumaa. Hauduta kana ja kasvikset täysin kypsiksi.
+3. Ota osa padan kuumasta liemestä 250 g:n kuivan couscousin turvottamiseen pakkauksen ohjeen mukaan. Yhdistä koko couscous ja liemi pataan ja tarjoa kuumana neljänä annoksena.
 
 ## Muistiinpanot
 
-- Lisää harissaa pöytään erikseen, jos ruokailijat haluavat lisää tulisuutta.
+Mallinnettu GK-arvio perustuu ainesosiin ja nimettyihin laskennallisiin oletuksiin. Luottamus on matala. Tämä ei ole aterialla mitattu verensokerivaste. Biologista epävarmuusväliä ei tunneta.
+
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
+
+Käyttövalmis liemi on AFCD F008936 -yleiskoostumusarvio; ei tuotemerkin varmennus. Couscous on kuivapaino, kikherneet kypsä valutettu paino.
+
+Kaikki luetellut syötävät ainekset, rasva ja kastike kulutetaan. Raakojen tai kuivien ainesten ravintokoostumusta käytetään nimetyn valmistuksen koostumusarvion pohjana; mittaamatonta kypsennys- tai liukenemishävikkiä ei vähennetä.

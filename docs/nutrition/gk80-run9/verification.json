@@ -1,0 +1,100 @@
+{
+  "baseMain": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+  "publicationState": "DRAFT_ONLY_AWAITING_OWNER_APPROVAL",
+  "batchPosition": "1 of 5",
+  "reviewedRecipes": 22,
+  "numericCandidates": 20,
+  "holds": 2,
+  "targets": {
+    "minimum": 15,
+    "primary": 18,
+    "stretch": 20,
+    "allPassed": true
+  },
+  "production": {
+    "numeric": 130,
+    "total": 326,
+    "verifiedFromLiveMethodPage": true
+  },
+  "candidate": {
+    "numeric": 150,
+    "total": 326,
+    "percent": 46.01,
+    "notProduction": true
+  },
+  "numericBaselinePreserved": 130,
+  "unchangedFullResultObjects": 306,
+  "teaIncomplete": true,
+  "independentDecimal": {
+    "status": "PASS",
+    "recipes": 20,
+    "allScenarios": true,
+    "publicationMacros": 20
+  },
+  "unit": {
+    "status": "PASS",
+    "tests": 208
+  },
+  "static": {
+    "status": "PASS",
+    "tests": 25
+  },
+  "translations": {
+    "status": "PASS",
+    "tests": 27,
+    "auditedPairs": 357,
+    "auditIssues": 0,
+    "humanReview": "PENDING"
+  },
+  "brave": {
+    "status": "PASS",
+    "candidateNumeric": 150,
+    "productionBaseline": 130,
+    "pages": 23,
+    "heldIncomplete": 13,
+    "teaIncomplete": true,
+    "sourceLinks": 20,
+    "pageErrors": [],
+    "seconds": 11.87
+  },
+  "builds": {
+    "planned": 1,
+    "actual": 3,
+    "prerenderedRoutes": 691,
+    "seconds": [
+      17.37,
+      18.25,
+      18.27
+    ],
+    "additionalReasons": [
+      "Static regression caught a lost rogan-josh curdling explanation; restored across4 locales",
+      "Removed internal correction-history sentence from public pumpkin recipe notes; numbers and ingredients unchanged"
+    ]
+  },
+  "finalNoteChecks": [
+    {
+      "name": "build-final-note",
+      "seconds": 18.27,
+      "exitCode": 0
+    },
+    {
+      "name": "targeted-final-note",
+      "seconds": 1.16,
+      "exitCode": 0
+    },
+    {
+      "name": "static-final-note",
+      "seconds": 4.03,
+      "exitCode": 0
+    }
+  ],
+  "normalPrCi": {
+    "plannedRuns": 1,
+    "state": "AWAITING_FINAL_HEAD_PR",
+    "noManualDispatch": true
+  },
+  "noReady": true,
+  "noMerge": true,
+  "noDeploy": true,
+  "noReportHubChanges": true
+}

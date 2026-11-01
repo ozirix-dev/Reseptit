@@ -1,5 +1,5 @@
 ---
-title: Hemlagad biff döner kebab
+title: Döner av nötfärs med rå vitkål – vägd version
 recipe_id: doner-kebab
 url_slug: doner-kebab
 category: paaruoka
@@ -8,86 +8,82 @@ status: published
 servings: 4
 time_total_min: 45
 main_ingredient:
-  - naudanliha
-  - jogurtti
+- naudanliha
+- jogurtti
 cooking_method:
-  - uuni
-  - paistaminen
+- uuni
 difficulty: mellannivå
 tags:
-  - "medelhavsmat"
-  - "turkisk"
-  - "nötkött"
-  - "yoghurt"
+- medelhavsmat
+- turkisk
+- nötkött
+- yoghurt
 image:
   src: paaruoat/doner-kebab.webp
-  alt: Kryddad döner kebabbiff med pitabröd, sallad och yoghurtsås
+  alt: Döner av nötfärs med rå vitkål – vägd version – serveringsillustration
   width: 1279
   height: 853
 ingredients:
-  - amount: 600
-    unit: g
-    item: nötfärs
-  - amount: 100
-    unit: g
-    item: Grekisk yoghurt
-  - amount: 1
-    unit: st
-    item: lök
-    note: riven
-  - amount: 2
-    unit: st
-    item: en vitlöksklyfta
-    note: krossad
-  - amount: 1
-    unit: tsk
-    item: spiskummin
-  - amount: 1
-    unit: tsk
-    item: paprikapulver
-  - amount: 0.5
-    unit: tsk
-    item: oregano
-  - amount: 1
-    unit: tsk
-    item: salt
-  - amount: 0.25
-    unit: tsk
-    item: svartpeppar
-  - amount: 4
-    unit: st
-    item: pitabröd
-    note: för servering
-  - amount: 200
-    unit: g
-    item: coleslaw
-    note: för servering
+- amount: 600
+  unit: g
+  item: nötfärs, 17 % fett
+- amount: 100
+  unit: g
+  item: naturell laktosfri grekisk yoghurt, 7 % fett
+- amount: 55
+  unit: g
+  item: skalad gul lök
+- amount: 6
+  unit: g
+  item: skalad färsk vitlök
+- amount: 2
+  unit: g
+  item: malen spiskummin
+- amount: 2
+  unit: g
+  item: malen paprika
+- amount: 1.0
+  unit: g
+  item: torkad oregano
+- amount: null
+  unit: ''
+  item: salt efter smak
+- amount: 0.5
+  unit: g
+  item: malen svartpeppar
+- amount: 220
+  unit: g
+  item: färdigt ljust pitabröd
+- amount: 200
+  unit: g
+  item: rå vitkål
 source_language: fi
 source_recipe: reseptit/paaruoat/doner-kebab.md
 translation_of: doner-kebab
-carbs_net_per_serving_g: 30.89
-carbs_total_per_serving_g: 33.73
-protein_per_serving_g: 35.77
-fat_per_serving_g: 34.6
-
+carbs_net_per_serving_g: 29.75
+carbs_total_per_serving_g: 32.81
+protein_per_serving_g: 35.79
+fat_per_serving_g: 28.01
 ---
 
-# Hemlagad biff döner kebab
-
-Den här hemlagade dönern görs av kryddad nötfärs som tillagas i ugnen och skärs i tunna skivor. Servera med bröd och en fräsch sallad.
+# Döner av nötfärs med rå vitkål – vägd version
 
 ## Beskrivning
 
-Den här hemlagade dönern görs av kryddad nötfärs som tillagas i ugnen och skärs i tunna skivor. Servera med bröd och en fräsch sallad.
+Döner av nötfärs med rå vitkål – vägd version.
+
+## Ingredienser
+
+De vägda ingredienserna visas ovan.
 
 ## Tillagning
 
-1. Värm ugnen till 220 grader. Blanda köttfärs, yoghurt, riven lök, vitlök och kryddor till en slät massa.
-2. Bred ut köttet i ett tunt lager på bakplåtspapper. Täck med ett annat papper och kavla ut platt.
-3. Grädda i 12–15 minuter tills köttet är genomstekt. Ta ut ur ugnen och skär eller riv i tunna skivor.
-4. Stek köttchipsen i en het panna i små omgångar för att bryna kanterna.
-5. Servera med varmt pitabröd och kålsallad.
+1. Värm ugnen till 220 °C. Blanda 600 g nötfärs med 17 % fett, 100 g naturell grekisk yoghurt med 7 % fett, 55 g lök, 6 g vitlök och alla vägda kryddor.
+2. Bred ut köttet tunt på bakplåtspapper. Grädda i 12–15 min tills det är genomstekt och skär sedan i strimlor. Avsluta i panna i det egna fettet och spara allt fett och all vätska.
+3. Värm 220 g färdigt ljust pitabröd utan extra olja. Servera allt kött med steksky och 200 g rå vitkål i fyra portioner; separat dressing till kålsallad ingår inte.
 
 ## Anteckningar
 
-- Se till att köttbitarna gjorda av köttfärs är klara; de ska vara genomkokta.
+GL är en modellerad ingredienssumma med låg säkerhet, inte ett uppmätt måltidssvar. Något biologiskt osäkerhetsintervall är inte känt. Namngivna källjämförelser är inte ett statistiskt konfidensintervall. Bilden illustrerar servering; tillbehör som inte anges ingår inte. Alla angivna ätliga ingredienser, all sås och allt fett äts. Ingen omätt tillagnings- eller urlakningsförlust dras av.
+
+Bedömningen gäller endast den visade vägda versionen.

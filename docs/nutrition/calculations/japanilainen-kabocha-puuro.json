@@ -1,23 +1,19 @@
 {
   "recipeId": "japanilainen-kabocha-puuro",
-  "sourceHash": "db5d27d44fddfdf4a68f8f05c8496b6218614651e8312ebab146d9428104ebd7",
-  "calculatedAt": "2026-10-25",
-  "batchId": "batch-17",
+  "sourceHash": "5ef48b321227f9eb6852719e402f71c75556ebe4876dc30a1a590e5af3501577",
+  "calculatedAt": "2026-11-01",
+  "batchId": "batch-87",
   "servings": 2,
-  "scope": "2 servings; measured ingredient quantities as listed: 250 g kuorittua myskikurpitsaa; 100 g riisi; 200 ml kookosmaito; 5 g mustia seesaminsiemeniä; 700 ml vettä; unquantified  suolaa maun mukaan. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded.",
+  "scope": "Complete weighed GK80 release8 Draft; exact preparation, all four macros and owner approval pending",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "kuorittua myskikurpitsaa",
+      "item": "kuorittua raakaa myskikurpitsaa",
       "amount": 250,
       "unit": "g",
       "state": "raw butternut pumpkin, peeled edible portion",
-      "matchEvidence": "AFCD Release 3 F007535 is raw butternut pumpkin, used as a local data match for peeled winter squash.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named butternut pumpkin cooked in rice porridge; pumpkin GI51 is a LOW preparation/variety analogy, not animal dairy or measured meal GI",
       "record": {
         "id": "afcd-F007535-release-3",
         "name": "Pumpkin, butternut, peeled, fresh, raw",
@@ -28,26 +24,39 @@
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsEvidence": "AFCD paired available CHO with/without sugar alcohols in original release3 Excel",
         "per100g": {
           "carbohydrate": 6.9,
-          "fibre": 1.8,
-          "polyols": 0,
           "protein": 2.1,
-          "fat": 0.6
-        }
-      }
+          "fat": 0.6,
+          "fibre": 1.8,
+          "polyols": 0.0
+        },
+        "primaryVerification": {
+          "foodId": "F007535",
+          "name": "Pumpkin, butternut, peeled, fresh, raw",
+          "availableCarbohydrateWithoutSugarAlcohols": 6.9,
+          "availableCarbohydrateWithSugarAlcohols": 6.9,
+          "per100g": {
+            "availableCarbohydrate": 6.9,
+            "protein": 2.1,
+            "fat": 0.6,
+            "fibre": 1.8
+          }
+        },
+        "verifiedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Explicit weighed edible input; cooked/drained where stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole edible inputs, fat and sauce consumed; explicit raw-input nutrient retention proxy without unmeasured loss discount"
     },
     {
-      "item": "riisi",
+      "item": "kuivaa valkoista jasmiiniriisiä",
       "amount": 100,
       "unit": "g",
       "state": "dry uncooked white long-grain rice",
-      "matchEvidence": "AFCD Release 3 record F007682 is uncooked white long-grain rice; these porridge and bowl recipes measure rice dry.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Specify white jasmine rice simmered as soft hot porridge about 40 min. Published 40min steamed porridge is an explicit LOW cooking analogue, not ordinary boiled grain GI.",
       "record": {
         "id": "afcd-F007682-release-3",
         "name": "Rice, white, uncooked",
@@ -58,28 +67,39 @@
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsEvidence": "AFCD paired available CHO with/without sugar alcohols in original release3 Excel",
         "per100g": {
-          "carbohydrate": 74,
+          "carbohydrate": 74.0,
+          "protein": 7.0,
+          "fat": 0.9,
           "fibre": 0.8,
-          "polyols": 0,
-          "protein": 7,
-          "fat": 0.9
-        }
-      }
+          "polyols": 0.0
+        },
+        "primaryVerification": {
+          "foodId": "F007682",
+          "name": "Rice, white, uncooked",
+          "availableCarbohydrateWithoutSugarAlcohols": 74.0,
+          "availableCarbohydrateWithSugarAlcohols": 74.0,
+          "per100g": {
+            "availableCarbohydrate": 74.0,
+            "protein": 7.0,
+            "fat": 0.9,
+            "fibre": 0.8
+          }
+        },
+        "verifiedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Explicit weighed edible input; cooked/drained where stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole edible inputs, fat and sauce consumed; explicit raw-input nutrient retention proxy without unmeasured loss discount"
     },
     {
-      "item": "kookosmaito",
-      "amount": 200,
-      "unit": "ml",
+      "item": "tavallista täysrasvaista kookosmaitoa",
+      "amount": 184.0,
+      "unit": "g",
       "state": "regular-fat canned coconut milk as sold",
-      "matchEvidence": "The recipe specifies coconut milk without a reduced-fat variant; AFCD record F002991 is canned regular-fat coconut milk.",
-      "gramsPerUnit": 0.92,
-      "conversionEvidence": "Canned regular-fat coconut milk represented at 0.92 g/ml, consistent with prior ingredient-specific batch conversions.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
       "record": {
         "id": "afcd-F002991-release-3",
         "name": "Coconut, milk, canned, regular fat",
@@ -90,26 +110,39 @@
         "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsEvidence": "AFCD paired available CHO with/without sugar alcohols in original release3 Excel",
         "per100g": {
           "carbohydrate": 1.7,
-          "fibre": 0,
-          "polyols": 0,
           "protein": 1.4,
-          "fat": 15.4
-        }
-      }
+          "fat": 15.4,
+          "fibre": 0.0,
+          "polyols": 0.0
+        },
+        "primaryVerification": {
+          "foodId": "F002991",
+          "name": "Coconut, milk, canned, regular fat",
+          "availableCarbohydrateWithoutSugarAlcohols": 1.7,
+          "availableCarbohydrateWithSugarAlcohols": 1.7,
+          "per100g": {
+            "availableCarbohydrate": 1.7,
+            "protein": 1.4,
+            "fat": 15.4,
+            "fibre": 0.0
+          }
+        },
+        "verifiedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Explicit weighed edible input; cooked/drained where stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole edible inputs, fat and sauce consumed; explicit raw-input nutrient retention proxy without unmeasured loss discount"
     },
     {
-      "item": "mustia seesaminsiemeniä",
+      "item": "kuorittuja valkoisia seesaminsiemeniä",
       "amount": 5,
       "unit": "g",
       "state": "hulled sesame seeds, black variety not separately available",
-      "matchEvidence": "Fineli Release 20 record 34245 is generic hulled sesame; the source does not separate black sesame.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit project extension to this weighed small culinary spice/seed portion; not a measured GI or direct Schakel scope. Dose and aggregate CHO limits checked.",
       "record": {
         "id": "fineli-34245-release-20",
         "name": "SEESAMINSIEMEN, VALKOINEN, KOKONAINEN, KUORITTU",
@@ -130,28 +163,75 @@
           "POLYL": 2260
         },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "Fineli Release20 POLYL component",
         "per100g": {
           "carbohydrate": 1.171,
-          "fibre": 11.3,
-          "polyols": 0,
           "protein": 24.6,
-          "fat": 59.7
-        }
-      }
+          "fat": 59.7,
+          "fibre": 11.3,
+          "polyols": 0.0
+        },
+        "primaryVerification": {
+          "source_id": "34245",
+          "name": "SEESAMINSIEMEN, VALKOINEN, KOKONAINEN, KUORITTU",
+          "food_type": "FOOD",
+          "process": "DRIE",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "NUTSEED",
+          "food_class": "SNACKVEG",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 1.171,
+            "fibre_g_per_100g": 11.3,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 24.6,
+            "fat_g_per_100g": 59.7
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI1302"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "K",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 60.0,
+            "RKL": 8.5,
+            "TL": 3.0
+          }
+        },
+        "verifiedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Explicit weighed edible input; cooked/drained where stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole edible inputs, fat and sauce consumed; explicit raw-input nutrient retention proxy without unmeasured loss discount"
     },
     {
       "item": "vettä",
       "amount": 700,
-      "unit": "ml",
+      "unit": "g",
       "state": "plain tap water",
-      "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
-      "gramsPerUnit": 1,
-      "conversionEvidence": "Water is represented at 1 g/ml.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "matchEvidence": "Explicit zero CHO composition; no assigned GI zero",
       "record": {
         "id": "fineli-922-release-20",
         "name": "VESI, VESIJOHTOVESI",
@@ -172,27 +252,75 @@
           "POLYL": 2260
         },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "Fineli Release20 POLYL component",
         "per100g": {
-          "carbohydrate": 0,
-          "fibre": 0,
-          "polyols": 0,
-          "protein": 0,
-          "fat": 0
-        }
-      }
+          "carbohydrate": 0.0,
+          "protein": 0.0,
+          "fat": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0
+        },
+        "primaryVerification": {
+          "source_id": "922",
+          "name": "VESI, VESIJOHTOVESI",
+          "food_type": "FOOD",
+          "process": "X",
+          "edible_portion_percent": 100.0,
+          "ingredient_class": "WATER",
+          "food_class": "DRWATER",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.0,
+            "fibre_g_per_100g": 0.0,
+            "polyols_g_per_100g": 0.0,
+            "protein_g_per_100g": 0.0,
+            "fat_g_per_100g": 0.0
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR003"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 100.0,
+            "RKL": 15.0,
+            "TL": 5.0
+          }
+        },
+        "verifiedAt": "2026-11-01"
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Explicit weighed edible input; cooked/drained where stated",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole edible inputs, fat and sauce consumed; explicit raw-input nutrient retention proxy without unmeasured loss discount"
     },
     {
       "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
-      "state": "salt omitted; no contribution to displayed macronutrients",
-      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "state": "pure salt",
+      "excludedReason": "Pure salt has zero of the four macros",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -200,7 +328,11 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+      "omissionImpactEvidence": "Pure salt contains no carbohydrate, fat, protein or fibre",
+      "edibleFraction": 1,
+      "edibleEvidence": "Pure salt",
+      "retainedFraction": 1,
+      "retentionEvidence": "Consumed"
     }
   ]
 }

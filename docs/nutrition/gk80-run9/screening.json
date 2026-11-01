@@ -1,0 +1,547 @@
+{
+  "reviewed": 22,
+  "numeric": 20,
+  "held": 2,
+  "recipes": [
+    {
+      "recipeId": "bulgogi",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "73d34dc658f727773dd1752a5d9ba04437112a68e56357298eee8eacf26effda",
+      "inputHash": "75e444c22347d5107bbd32759a0d4865134d9eb08623fc749dac77e41a9c1192",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 61.86,
+        "carbsTotalG": 64.04,
+        "proteinG": 43.39,
+        "fatG": 8.28
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Pannuversio: sekoita kaikki punnittu soijakastike, fariinisokeri, päärynä, valkosipuli ja mausteet lihaan. Kaikki marinadi kypsennetään ja syödään.",
+        "Kypsennä 300 g kuivaa valkoista jasmiiniriisiä 600 g:ssa vettä pakkauksen kypsennysaikaa noudattaen. Tarjoa kuumana.",
+        "Kypsennä liha koko marinadissa pannulla. Jaa kaikki riisi, liha, kastike ja seesaminsiemenet neljään annokseen. Ei valutettu grilliversio."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        40.880766875
+      ]
+    },
+    {
+      "recipeId": "bun-cha-hanoi",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "96d6ae14dae5556ef7afcb86b8623b45b337548efe3e4209c1bc54963fc3bbcf",
+      "inputHash": "f3a5fc5e4385a8785bc6ea1a3e899894f5d0e296bbd81ba2045b64ecc7d1717f",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 77.25,
+        "carbsTotalG": 80.63,
+        "proteinG": 38.01,
+        "fatG": 36.02
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Bun cha -aineksista tehty pannuversio: sekoita kaikki punnittu marinadi lihaan ja kypsennä koko määrä pannulla. Marinadia tai rasvaa ei valuteta, tämä ei ole grillattu alkuperäisversio.",
+        "Keitä 300 g kuivia riisivermisellejä pakkauksen ohjeen mukaan, valuta. Punnittu kuiva koostumus on keitetyn, valutetun tuotteen proxy; liukenemishävikkiä ei ole mitattu eikä siitä anneta hyvitystä.",
+        "Tee kaikesta punnitusta kalakastikkeesta, vedestä, sokerista, etikasta, porkkanasta ja korianterista kastike. Jaa ja syö koko kastike, liha ja nuudelit neljänä annoksena."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        46.259575
+      ]
+    },
+    {
+      "recipeId": "caponata",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "32a4c53891d9dfcf06341917399a4171f632b102b598f44eb04f3b820f45e150",
+      "inputHash": "3db44cb3c94ea6964e3e638dad8c711cc428f6ad7e62c2254a25f69a9a35afd7",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 13.88,
+        "carbsTotalG": 20.8,
+        "proteinG": 2.44,
+        "fatG": 11.76
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Kuutioi 800 g munakoisoa, 55 g sipulia ja 80 g varsiselleriä. Pehmennä niitä kannen alla 27 g:ssa oliiviöljyä; käytä kaikki öljy.",
+        "Lisää 400 g tomaattimurskaa, 80 g valutettuja oliiveja, 9 g valutettuja kapriksia, 30 g viinietikkaa ja 12,5 g sokeria. Hauduta kasvikset pehmeiksi.",
+        "Lisää 15 g basilikaa ja 6,5 g suolaa. Jaa koko ruoka kastikkeineen neljään annokseen; leipä ei sisälly tähän versioon."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        6.18275
+      ]
+    },
+    {
+      "recipeId": "carnitas-salaattitacot",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "7f143263799124068fb041f45daee5487851e50e59d05bb8a73b43afc8276f4b",
+      "inputHash": "b32491744b81036739faa99fea110b61e2e6eccb6d02965e9b6f6b4acb51778a",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 5.05,
+        "carbsTotalG": 7.58,
+        "proteinG": 37.04,
+        "fatG": 30.28
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Paloittele 800 g porsaan niskaa. Hienonna 130 g kuorittua appelsiinia ja 50 g tavallista kuorittua limettiä kaikkine mehuineen.",
+        "Yhdistä liha, hedelmät, 6 g valkosipulia, 2 g juustokuminaa, 1 g oreganoa, 0,5 g mustapippuria ja 150 g vettä. Hauduta kannen alla 150 °C:ssa noin 2,5 tuntia, kunnes liha on mureaa. Kaikki hedelmäliha, rasva ja kastike syödään.",
+        "Revi liha ja tarjoa koko kastikkeen kanssa. Sekoita 70 g tomaattia, 20 g punasipulia ja 10 g korianteria pico de galloksi ja jaa kaikkien 144 g:n salaatinlehtien kanssa neljään annokseen."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        2.20784
+      ]
+    },
+    {
+      "recipeId": "congee-riisipuuro",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "ed7d02a9e6c682855cf6751e9c0531ee3f8ea3ad1a119bc135824d3cc6ee8e45",
+      "inputHash": "d667bffd8a50513c9e767d7c4d8cd281ae6c3a691b6a225186c86d4694afa4c7",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 39.74,
+        "carbsTotalG": 40.32,
+        "proteinG": 8.62,
+        "fatG": 5.14
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Keitä 200 g kuivaa valkoista jasmiiniriisiä 2000 g:ssa käyttövalmista kanalientä noin 40 min pehmeäksi puuroksi.",
+        "Lisää inkivääri ja kevätsipuli. Keitä kananmunat erikseen ja punnitse 110 g kuoretonta keitettyä munaa.",
+        "Lisää kaikki soijakastike ja seesamiöljy. Jaa koko puuro nesteineen ja munat neljään annokseen."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        30.92805
+      ]
+    },
+    {
+      "recipeId": "doner-kebab",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "e5b699b76bfd05ca7049a9ec1784cfb7421686b15db5816ce92eaae5650c8ce5",
+      "inputHash": "7fbf2627b804a3d6037b244601b7d781ff62b70580c1f64018eb41481ba6fce3",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 29.75,
+        "carbsTotalG": 32.81,
+        "proteinG": 35.79,
+        "fatG": 28.01
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Kuumenna uuni 220 °C:seen. Sekoita 600 g naudan 17 % jauhelihaa, 100 g maustamatonta 7 % kreikkalaista jogurttia, 55 g sipulia, 6 g valkosipulia ja kaikki punnitut mausteet.",
+        "Levitä liha ohueksi kerrokseksi leivinpaperille. Paista 12–15 min, kunnes liha on kauttaaltaan kypsää, ja leikkaa lastuiksi. Viimeistele lastut pannulla omassa rasvassaan ja säästä kaikki rasva ja neste.",
+        "Lämmitä 220 g valmista vaaleaa pitaleipää ilman lisäöljyä. Tarjoa koko liha nesteineen ja 200 g raakaa valkokaalia neljänä annoksena; erillinen kaalisalaattikastike ei sisälly tähän versioon."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        18.96102
+      ]
+    },
+    {
+      "recipeId": "janssoninkiusaus-juuriselleri",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "95c0967f6d4f09681abecb486a2da8c3a1dd326b36669278b94ace46223d89a3",
+      "inputHash": "57182fe2f7455d6391fe38b5d81c44272cec6a8aa511b6ddca63572c3c6d7438",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 8.43,
+        "carbsTotalG": 14.11,
+        "proteinG": 12.48,
+        "fatG": 33.31
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Suikaloi 700 g kuorittua juuriselleriä ja 55 g sipulia. Voitele vuoka osalla punnitusta 28 g voita; käytä loput voi nokareina ruoan päällä.",
+        "Lado juuriselleri, sipuli ja 125 g valutettuja öljyyn säilöttyjä anjovisfileitä vuokaan. Lisää 250 g 38 % kuohukermaa, 100 g täysmaitoa ja 0,5 g mustapippuria.",
+        "Kypsennä 200 °C:ssa kunnes juuriselleri on pehmeää. Lisää 8 g tilliä ja jaa koko vuoka nesteineen neljään annokseen."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        3.070875
+      ]
+    },
+    {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "3a74e561b06c18ab5f5bc9b7f254f88f412c8ded6d40ce88b88c6fef7f206c08",
+      "inputHash": "9910bb446a711daaad6e9db499a2452948fd0df68cfa0391af405fa4988a1ebe",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 47.22,
+        "carbsTotalG": 50.15,
+        "proteinG": 8.03,
+        "fatG": 16.86
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Paloittele 250 g kuorittua myskikurpitsaa. Laita se kattilaan 100 g:n kuivan valkoisen jasmiiniriisin ja 700 g:n veden kanssa.",
+        "Keitä miedolla lämmöllä noin 40 min, kunnes riisi on pehmeää puuroa ja kurpitsa kypsää. Lisää 184 g kookosmaitoa ja kuumenna.",
+        "Lisää 5 g seesaminsiemeniä, mausta suolalla ja jaa koko puuro kahteen annokseen. Tämä on myskikurpitsaversio; kylmäsäilytyksen vaikutusta ei lasketa."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        34.7953875
+      ]
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "5e3a25ead736af734fc4df35ba28fb0e181d24369a4c5fbbfdff6025c6e3fd49",
+      "inputHash": "c43ab15a8b9a008482192fe759944dd2107262529a24b2878d7f54bd8fb0209c",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 68.36,
+        "carbsTotalG": 78.13,
+        "proteinG": 47.06,
+        "fatG": 14.85
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Paloittele 600 g luutonta nahatonta broilerin reisilihaa, 55 g sipulia, 110 g porkkanaa ja 200 g kesäkurpitsaa. Pehmennä sipuli 27 g:ssa oliiviöljyä ja lisää kana sekä kasvikset.",
+        "Lisää 1000 g käyttövalmista lientä, 400 g kypsiä valutettuja kikherneitä sekä 2 g juustokuminaa, 2 g korianteria ja 1 g kurkumaa. Hauduta kana ja kasvikset täysin kypsiksi.",
+        "Ota osa padan kuumasta liemestä 250 g:n kuivan couscousin turvottamiseen pakkauksen ohjeen mukaan. Yhdistä koko couscous ja liemi pataan ja tarjoa kuumana neljänä annoksena."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        36.86435
+      ]
+    },
+    {
+      "recipeId": "menemen",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "ce0e938b0ab068e3406747f7c1c07529a1aa09211aeae34452d0e1ae8304668a",
+      "inputHash": "ca1b3a8f2b8b54e054a0eab8991ce67011b979d28bc8203ba3f61b75c2561122",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 6.99,
+        "carbsTotalG": 8.99,
+        "proteinG": 10.81,
+        "fatG": 16.39
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Kuullota kaikki punnittu sipuli ja vihreä paprika öljyssä. Lisää tomaatti ja paprikajauhe, hauduta pehmeäksi.",
+        "Lisää 220 g kuoretonta kananmunaa ja kypsennä varovasti sekoittaen. Lisää persilja ja 0,5 g mustapippuria, mausta suolalla.",
+        "Jaa koko pannullinen nesteineen kolmeen annokseen. Ei pois jätettävää sipulivaihtoehtoa tässä versiossa."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        2.832333333333333
+      ]
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "5c75d315780a3df95e5a8433a83f9e6a00f5c4160761a35c60ce0d0592cd7f91",
+      "inputHash": "f6c0e9733118163942080e6b84dfdebf29915afa6f494f1a1fa758a1f4eb6e01",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 64.86,
+        "carbsTotalG": 70.84,
+        "proteinG": 16.66,
+        "fatG": 14.93
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Kuutioi 400 g munakoisoa ja hienonna 6 g valkosipulia. Pehmennä ne 40,5 g:ssa oliiviöljyä. Lisää 400 g tomaattimurskaa ja 0,5 g mustapippuria ja hauduta pehmeiksi.",
+        "Keitä 350 g kuivaa durumvehnäpennepastaa pakkauksen ohjeen mukaan ja valuta. Kuivan pastan ravintokoostumus on keitetyn tuotteen koostumusarvio; mittaamatonta liukenemishävikkiä ei vähennetä.",
+        "Yhdistä pasta ja kaikki kastike. Lisää 20 g basilikaa ja 50 g parmesaania, mausta suolalla ja jaa neljään annokseen. Tämä on parmesaaniversio ricotta salatan sijasta."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        30.016325,
+        31.759325
+      ]
+    },
+    {
+      "recipeId": "ratatouille",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "e554a790e8098434a8a471af5e8ae3f3252cc07cce605f654523a242123e6ce4",
+      "inputHash": "8e845625f6cb914eb465ad51166a82aee6594c1d007998bf28914fcd2af1e523",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 11.57,
+        "carbsTotalG": 17.4,
+        "proteinG": 2.46,
+        "fatG": 14.65
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Pehmennä 300 g munakoisoa koko punnitussa 54 g oliiviöljymäärässä. Älä lisää muuta öljyä.",
+        "Lisää 55 g sipulia, 120 g paprikaa, 9 g valkosipulia, 400 g kesäkurpitsaa ja 500 g tomaattia. Hauduta kannen alla noin 30 min.",
+        "Lisää 2 g jauhettua kuivaa timjamia, 0,5 g mustapippuria ja 15 g basilikaa. Jaa kaikki kasvikset ja neste neljään annokseen. Ei leipä- tai riisilisuketta."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        4.645925
+      ]
+    },
+    {
+      "recipeId": "rogan-josh",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "4a7db96a9b2ac5f533e22a8375b7dc5429a35856140a9195fd45533514e67e7f",
+      "inputHash": "3a107b84fbdffe4b48d41b536aa1e4f04ca1f3df376464eaed323bab07088fca",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 4.17,
+        "carbsTotalG": 5.55,
+        "proteinG": 35.32,
+        "fatG": 41.76
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Paloittele 800 g lampaan lapaa ja hienonna 55 g sipulia, 6 g valkosipulia sekä 15 g inkivääriä. Ruskista liha ja sipuli 27 g:ssa oliiviöljyä.",
+        "Lisää valkosipuli, inkivääri, 4 g juustokuminaa, 2 g korianteria, 4 g paprikaa, 1 g chiliä, 0,5 g kanelia ja 0,5 g kardemummaa. Sekoita joukkoon vähitellen miedolla lämmöllä 200 g maustamatonta 2,5 % jogurttia ja 400 g vettä.",
+        "Hauduta kannen alla noin 1,5 tuntia, kunnes lammas on pehmeää. Kaikki mausteet ovat jauhettuja ja syödään. Mausta suolalla ja jaa kaikki liha, rasva ja kastike neljään annokseen; riisi ei sisälly arvioon."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        1.5050125
+      ]
+    },
+    {
+      "recipeId": "shakshuka",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "ee8f305cb3c148218db51a3d31226cdf99de752706beb91872ac54294300267f",
+      "inputHash": "d2cc71278a84fa43f62eb5f05d598e0fb58471fba2f5c734485c1c6ccee9de97",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 8.76,
+        "carbsTotalG": 11.23,
+        "proteinG": 15.77,
+        "fatG": 17.65
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Kuullota 70 g sipulia ja 120 g punaista paprikaa 13,5 g öljyssä. Lisää 200 g tomaattimurskaa, 2 g juustokuminaa ja yhteensä 1,3 g jauhettua paprikaa. Hauduta 10 min.",
+        "Tee kastikkeeseen syvennykset ja kypsennä 220 g kuoretonta munaa kannen alla. Lisää 8 g persiljaa ja 0,5 g mustapippuria.",
+        "Jaa koko pannu kahteen annokseen. Tämä mieto paprikaversio korvaa avoimen chilihiutaleannoksen."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        3.593425
+      ]
+    },
+    {
+      "recipeId": "sitruuna-yrttikana-parsa",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "e8787ec778f9c377fa233dde07787681f546f3d2e0ef282b6330e43af9de61bf",
+      "inputHash": "7e2f462ce9b9284a10e73fddfa5bd17a44f953556f53672cde6c8b0f34ce4899",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 2.11,
+        "carbsTotalG": 5.13,
+        "proteinG": 36.49,
+        "fatG": 16.17
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Tuoreen valkosipulin versio käyttää 6 g valkosipulia jauheen sijasta. Sekoita kaikki punnittu öljy, voi, valkosipuli, jauhettu timjami ja mustapippuri.",
+        "Kypsennä broileri ja parsa kauttaaltaan koko rasvamäärässä. Käytä koko punnittu kuoreton sitruunan hedelmäliha ja mehu, ei poistettavia kuoria tai uuttamista.",
+        "Jaa kaikki ainekset ja pannuneste neljään annokseen."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        0.890075
+      ]
+    },
+    {
+      "recipeId": "taytetyt-paprikat-vhh",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "7a535046e3d9570070843e8d6a8b251807dc0c24f4349027c67f898714cb8077",
+      "inputHash": "1c68126729511cb64704784d3992f8d04cfe193accd6142fcd5e8cf0c1a8ae03",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 10.42,
+        "carbsTotalG": 14.2,
+        "proteinG": 36.42,
+        "fatG": 35.86
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Tomaattimurskaversio:100 g lisämurskaa korvaa 16 g pyreetä, yhteensä 250 g murskaa. Ruskista liha ja sipuli 13,5 g öljyssä.",
+        "Lisää kaikki murska, oregano ja mustapippuri. Hauduta sakeaksi. Täytä 640 g syötävää punaista paprikaa koko täytteellä, lisää 150 g juustoa.",
+        "Kypsennä 200 °C:ssa kunnes liha on kypsää ja paprika pehmeää. Jaa koko vuoka nesteineen neljään annokseen, ei erillistä salaattia laskelmassa."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        4.19275
+      ]
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "7f37e694ffa19488cb7d17354ed9d1e4fa562963d0f5dfd917a5210a4ab179f6",
+      "inputHash": "4907dc0ad7a66ca8cd995c20ec04785ed20cd61f88a0d28e1a9a086b6800e31d",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 38.62,
+        "carbsTotalG": 40.32,
+        "proteinG": 13.06,
+        "fatG": 16.57
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Käytä 450 g kuumaa valkoista jasmiini- tai basmatiriisiä kypsänä punnittuna. Skenaariot pidetään erillisinä.",
+        "Kypsennä kaikki munat öljyssä. Lisää tomaatti, sokeri ja soijakastike. Hauduta kunnes munat ovat kypsiä.",
+        "Lisää kevätsipuli. Jaa koko pannullinen kastikkeineen sekä riisi kolmeen annokseen."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        24.41156,
+        21.00959
+      ]
+    },
+    {
+      "recipeId": "uunikanapasta-kesakurpitsa",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "07eae5d1c8917a3a90e7e7623cffacf11fdb6425c4da7450e4f25b4914db3a58",
+      "inputHash": "83507b3c95630aa9ea7f54a0a3f3d85d1fac535285c9ada5267be151d349c1d1",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 7.28,
+        "carbsTotalG": 10.52,
+        "proteinG": 39.57,
+        "fatG": 22.43
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Tämä on tuoreen valkosipulin ja basilikan versio ilman vehnäpastaa. Yhdistä 150 g tuorejuustoa, 100 g kermaa, 200 g tomaatteja, 6 g valkosipulia ja 6 g basilikaa.",
+        "Lisää 500 g broileria vuokaan ja kypsennä 200 °C:ssa noin 20 min. Lisää 500 g kesäkurpitsanauhoja, 100 g juustoraastetta ja 0,5 g mustapippuria.",
+        "Jatka kypsennystä kunnes kana on kauttaaltaan kypsää. Jaa koko vuoka nesteineen neljään annokseen."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        2.694325
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "670418ee9ed18bc6a222b6d2b8a13ee2ea40a649c727bd17f787050be4c4c2b0",
+      "inputHash": "174ae1a932f199fd894ceecfa7ff323fb110f40eea285071118eaef48622b6fc",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 27.58,
+        "carbsTotalG": 29.51,
+        "proteinG": 20.18,
+        "fatG": 28.56
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Viipaloi 150 g halloumia ja paista se 13,5 g:ssa neutraalia ruokaöljyä. Käytä kaikki punnittu öljy.",
+        "Lämmitä 100 g valmista vaaleaa hapanjuurityyppistä leipää kevyesti kuivalla pannulla; leipätaikinaa ei valmisteta tässä ohjeessa. Viipaloi 100 g tomaattia ja valuta 25 g oliiveja.",
+        "Kokoa leivät kaikesta halloumista, tomaatista ja oliiveista ja jaa kahteen annokseen. Lisää suolaa tarvittaessa. Muut lisukkeet eivät sisälly tähän versioon."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        14.16174,
+        21.31142
+      ]
+    },
+    {
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "decision": "DRAFT_NUMERIC",
+      "sourceSha256": "459996bc80e342a0b4f6636add8e6bfa3238f05381f5b6af950523f9afe53c2d",
+      "inputHash": "0b6d9cc055b1f4b9fcd3cbf2b052c1c99dc46aa28a4e3aa83d10361f69fbd6bc",
+      "completeWeighedScope": true,
+      "fourPublicationMacros": {
+        "carbsNetG": 21.39,
+        "carbsTotalG": 22.45,
+        "proteinG": 3.8,
+        "fatG": 3.68
+      },
+      "requiredPolyolsVerified": true,
+      "typedFoodBindingsVerified": true,
+      "preparationScope": [
+        "Valmista ja jäähdytä 200 g mustaa, makeuttamatonta kahvia. Punnitse 125 g kuorittua banaania.",
+        "Sekoita 100 g maustamatonta 3,9 % jogurttia, koko kahvimäärä ja 30 g tavallista makeutettua kondensoitua maitoa.",
+        "Viipaloi banaani seokseen ja jaa koko määrä kahteen annokseen. Sokeria, siirappia tai muita lisukkeita ei lisätä."
+      ],
+      "confidence": "LOW",
+      "biologicalUncertainty": "NOT_BOUNDED",
+      "ownerApproved": false,
+      "scenarioGk": [
+        10.697125,
+        12.146875
+      ]
+    },
+    {
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "decision": "HOLD",
+      "reason": "Maille Dijon Originale: required polyol amount unquantified; no assumed zero",
+      "sourceSha256": "c993bedcb8e678b3ca9fa71b957a79ab3bbe0a3e50d42f624eacaf1e7904a859",
+      "noRuntimeChanges": true,
+      "numericPublicationAuthorized": false
+    },
+    {
+      "recipeId": "nakkikastike-kukkakaalimuusi",
+      "decision": "HOLD",
+      "reason": "Maille Dijon Originale: required polyol amount unquantified; no assumed zero",
+      "sourceSha256": "a329a55acc5af70cedc06c6bc0c3ed9f5be8d100e95baa90675e02822aaf8fae",
+      "noRuntimeChanges": true,
+      "numericPublicationAuthorized": false
+    }
+  ]
+}

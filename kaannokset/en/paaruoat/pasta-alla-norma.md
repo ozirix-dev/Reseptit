@@ -1,5 +1,5 @@
 ---
-title: Pasta alla Norma with aubergine
+title: Pasta alla Norma with Parmesan – variant
 recipe_id: pasta-alla-norma
 url_slug: pasta-alla-norma
 category: paaruoka
@@ -8,78 +8,76 @@ status: published
 servings: 4
 time_total_min: 40
 main_ingredient:
-  - pasta
-  - munakoiso
+- pasta
+- munakoiso
 cooking_method:
-  - liesi
+- liesi
 difficulty: easy
 tags:
-  - "Mediterranean"
-  - "Sicilian"
-  - "pasta"
-  - "eggplant"
+- Mediterranean
+- Sicilian
+- pasta
+- eggplant
 image:
   src: paaruoat/pasta-alla-norma.webp
-  alt: Pasta alla Norma with tomato sauce, eggplant, basil and grated ricotta cheese
+  alt: Pasta alla Norma with Parmesan – variant – serving illustration
   width: 1279
   height: 853
 ingredients:
-  - amount: 350
-    unit: g
-    item: rigatoni or penne pasta
-  - amount: 1
-    unit: piece
-    item: eggplant
-    note: "diced"
-  - amount: 400
-    unit: g
-    item: crushed tomatoes
-  - amount: 2
-    unit: piece
-    item: a clove of garlic
-    note: in slices
-  - amount: 3
-    unit: tbsp
-    item: olive oil
-  - amount: 20
-    unit: g
-    item: fresh basil
-  - amount: 50
-    unit: g
-    item: salty ricotta
-    note: grated
-  - amount: 1
-    unit: tsp
-    item: salt
-  - amount: 0.25
-    unit: tsp
-    item: black pepper
+- amount: 350
+  unit: g
+  item: dry durum wheat penne
+- amount: 400
+  unit: g
+  item: aubergine
+- amount: 400
+  unit: g
+  item: crushed tomatoes
+- amount: 6
+  unit: g
+  item: peeled fresh garlic
+- amount: 40.5
+  unit: g
+  item: olive oil
+- amount: 20
+  unit: g
+  item: fresh basil
+- amount: 50
+  unit: g
+  item: fresh regular Parmesan
+- amount: null
+  unit: ''
+  item: salt to taste
+- amount: 0.5
+  unit: g
+  item: ground black pepper
 source_language: fi
 source_recipe: reseptit/paaruoat/pasta-alla-norma.md
 translation_of: pasta-alla-norma
 carbs_net_per_serving_g: 64.86
 carbs_total_per_serving_g: 70.84
-protein_per_serving_g: 12.66
-fat_per_serving_g: 11.56
-
+protein_per_serving_g: 16.66
+fat_per_serving_g: 14.93
 ---
 
-# Pasta alla Norma with aubergine
-
-The Sicilian pasta classic combines tomato sauce, fried eggplant, basil and salty ricotta.
+# Pasta alla Norma with Parmesan – variant
 
 ## Description
 
-The Sicilian pasta classic combines tomato sauce, fried eggplant, basil and salty ricotta.
+Pasta alla Norma with Parmesan – variant.
 
-## Preparation
+## Ingredients
 
-1. Sprinkle salt on the eggplant cubes and let them stand for 15 minutes. Pat dry.
-2. Fry the eggplant in olive oil in batches until golden brown. Set aside.
-3. Saute the garlic in a pan. Add crushed tomatoes, salt and pepper and simmer for 15 minutes.
-4. Cook the pasta in salted water according to the instructions on the package. Save a deciliter of boiling water.
-5. Add pasta and eggplant to the sauce. Stir; add boiling water if necessary. Finish with basil and grated ricotta.
+The weighed ingredients are shown above.
+
+## Instructions
+
+1. Dice 400 g aubergine and chop 6 g garlic. Soften in all 40.5 g olive oil. Add 400 g crushed tomatoes and 0.5 g black pepper and simmer until tender.
+2. Boil 350 g dry durum wheat penne according to the package and drain. Dry-pasta composition is the proxy for the cooked pasta; no unmeasured leaching loss is deducted.
+3. Combine the pasta and all sauce. Add 20 g basil and 50 g Parmesan, season with salt and divide into four portions. This variant uses Parmesan instead of ricotta salata.
 
 ## Notes
 
-- Salty ricotta can be replaced with pecorino.
+GL is a modeled ingredient-sum estimate with low confidence, not a measured meal response. No biological uncertainty interval is known. Named source comparisons are not a statistical confidence interval. The photograph illustrates serving; unlisted side dishes are excluded. All listed edible ingredients, sauce and fat are consumed. No unmeasured cooking or leaching losses are deducted.
+
+The two GI source comparisons apply to the named boiled wheat pasta; they are not a biological uncertainty interval.

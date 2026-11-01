@@ -6,71 +6,78 @@ category: paaruoka
 language: fi
 status: published
 main_ingredient:
-  - anjovis
-  - juuriselleri
+- anjovis
+- juuriselleri
 cooking_method:
-  - kypsentäminen
+- uuni
 tags:
-  - suomalainen
-  - kala
-  - uuniruoka
+- suomalainen
+- kala
+- uuniruoka
 ingredients:
-  - amount: 700
-    unit: g
-    item: juuriselleriä
-  - amount: 125
-    unit: g
-    item: öljyyn säilöttyjä anjovisfileitä, valutettuna
-  - amount: 1
-    unit: kpl
-    item: sipuli
-  - amount: 250
-    unit: ml
-    item: kuohukermaa
-  - amount: 100
-    unit: ml
-    item: täysmaitoa
-  - amount: 2
-    unit: rkl
-    item: voita
-  - amount: null
-    unit: ""
-    item: mustapippuria
-  - amount: 2
-    unit: rkl
-    item: silputtua tilliä
+- amount: 700
+  unit: g
+  item: juuriselleriä
+- amount: 125
+  unit: g
+  item: öljyyn säilöttyjä anjovisfileitä, valutettuna
+- amount: 55
+  unit: g
+  item: sipuli
+- amount: 250
+  unit: g
+  item: kuohukermaa, rasvaa 38 %
+- amount: 100
+  unit: g
+  item: täysmaitoa, rasvaa 3,5 %
+- amount: 28
+  unit: g
+  item: voita
+- amount: 0.5
+  unit: g
+  item: jauhettua mustapippuria
+- amount: 8
+  unit: g
+  item: silputtua tilliä
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 servings: 4
 time_total_min: 70
 difficulty: Helppo
 image:
   src: paaruoat/janssoninkiusaus-juuriselleri.webp
-  alt: Janssoninkiusaus juuriselleristä tarjoiltuna
+  alt: Janssoninkiusaus juuriselleristä – kuvituskuva
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 8.38
-carbs_total_per_serving_g: 14.03
-protein_per_serving_g: 12.47
-fat_per_serving_g: 33.3
-
+carbs_net_per_serving_g: 8.43
+carbs_total_per_serving_g: 14.11
+protein_per_serving_g: 12.48
+fat_per_serving_g: 33.31
 ---
+
 # Janssoninkiusaus juuriselleristä
 
 ## Kuvaus
 
-Janssoninkiusauksen suolainen anjovis ja kermainen paistopinta säilyvät, kun perunasuikaleet vaihdetaan juuriselleriin.
+Janssoninkiusaus juuriselleristä. Täsmällinen versio 4 annokselle.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Kuumenna uuni 200 asteeseen. Kuori juuriselleri ja leikkaa ohuiksi suikaleiksi. Hienonna sipuli.
-2. Voitele uunivuoka. Lado siihen juuriselleri, sipuli ja paloitellut anjovikset kerroksittain.
-3. Sekoita kerma ja maito. Kaada vuokaan. Mausta kevyesti pippurilla; valutetuista anjoviksista tulee riittävästi suolaisuutta.
-4. Paista 50–60 minuuttia, kunnes selleri on pehmeää ja pinta kullanruskea. Peitä foliolla, jos pinta tummuu liikaa.
-5. Anna vetäytyä 10 minuuttia ja ripottele pinnalle tilli.
+1. Suikaloi 700 g kuorittua juuriselleriä ja 55 g sipulia. Voitele vuoka osalla punnitusta 28 g voita; käytä loput voi nokareina ruoan päällä.
+2. Lado juuriselleri, sipuli ja 125 g valutettuja öljyyn säilöttyjä anjovisfileitä vuokaan. Lisää 250 g 38 % kuohukermaa, 100 g täysmaitoa ja 0,5 g mustapippuria.
+3. Kypsennä 200 °C:ssa kunnes juuriselleri on pehmeää. Lisää 8 g tilliä ja jaa koko vuoka nesteineen neljään annokseen.
 
 ## Muistiinpanot
 
-Valitse valutettuja öljyyn säilöttyjä anjovisfileitä. Anjovis on suolaista, joten lisäsuolaa ei yleensä tarvita.
+Mallinnettu GK-arvio perustuu ainesosiin ja nimettyihin laskennallisiin oletuksiin. Luottamus on matala. Tämä ei ole aterialla mitattu verensokerivaste. Biologista epävarmuusväliä ei tunneta.
+
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
+
+Käytä öljyyn säilöttyjä, valutettuja anjovisfileitä; tämä ei ole makeaan mausteliemeen säilötyn suomalaisen anjoviksen koostumus. Kerma on 38 % ja maito 3,5 % rasvaa.
+
+Kaikki luetellut syötävät ainekset, rasva ja kastike kulutetaan. Raakojen tai kuivien ainesten ravintokoostumusta käytetään nimetyn valmistuksen koostumusarvion pohjana; mittaamatonta kypsennys- tai liukenemishävikkiä ei vähennetä.

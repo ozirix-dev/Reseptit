@@ -2415,10 +2415,12 @@
       "foodKind": "NONSTARCHY_VEGETABLE",
       "inputForm": "fresh raw basil",
       "allowedSources": [
-        "lowcho50-r4"
+        "lowcho50-r4",
+        "lowcho50-v2"
       ],
       "consumedForms": {
-        "lowcho50-r4": "AS_DEFINED"
+        "lowcho50-r4": "AS_DEFINED",
+        "lowcho50-v2": "AS_DEFINED"
       }
     },
     {
@@ -4195,6 +4197,86 @@
       ],
       "consumedForms": {
         "small-flavour50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "afcd-F002466-release-3-run9",
+      "foodId": "A002466",
+      "foodKind": "DAIRY",
+      "inputForm": "halloumi cheese",
+      "allowedSources": [
+        "milk30",
+        "milk46"
+      ],
+      "consumedForms": {
+        "milk30": "EXPLICIT_LOW_CONFIDENCE_MILK_TO_DAIRY_ANALOGUE",
+        "milk46": "EXPLICIT_LOW_CONFIDENCE_MILK_TO_DAIRY_ANALOGUE"
+      }
+    },
+    {
+      "compositionId": "fineli-352-release-20-run9",
+      "foodId": "F352",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "raw tomato",
+      "allowedSources": [
+        "whole-tomato-raw-gi-22"
+      ],
+      "consumedForms": {
+        "whole-tomato-raw-gi-22": "RAW_TOMATO"
+      }
+    },
+    {
+      "compositionId": "fineli-31842-release-20-run9",
+      "foodId": "F31842",
+      "foodKind": "WHEAT_BREAD",
+      "inputForm": "white country bread used as sourdough-style bread proxy",
+      "allowedSources": [
+        "sourdough54",
+        "sourdough82"
+      ],
+      "consumedForms": {
+        "sourdough54": "FINISHED_BREAD_WARMED_NO_FRYING",
+        "sourdough82": "FINISHED_BREAD_WARMED_NO_FRYING"
+      }
+    },
+    {
+      "compositionId": "fineli-620-release-20-run9",
+      "foodId": "F620",
+      "foodKind": "YOGURT",
+      "inputForm": "plain unsweetened yogurt, 3.9% fat",
+      "allowedSources": [
+        "yogurt17",
+        "yogurt35"
+      ],
+      "consumedForms": {
+        "yogurt17": "AS_DEFINED",
+        "yogurt35": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "fineli-11049-release-20-run9",
+      "foodId": "F11049",
+      "foodKind": "BANANA",
+      "inputForm": "raw peeled banana, edible portion",
+      "allowedSources": [
+        "banana47",
+        "banana57"
+      ],
+      "consumedForms": {
+        "banana47": "RAW_PEELED",
+        "banana57": "RAW_PEELED"
+      }
+    },
+    {
+      "compositionId": "afcd-F005582-release-3-run9",
+      "foodId": "A005582",
+      "foodKind": "CONDENSED_MILK",
+      "inputForm": "regular sweetened condensed cow milk, as sold",
+      "allowedSources": [
+        "condensed61"
+      ],
+      "consumedForms": {
+        "condensed61": "AS_DEFINED"
       }
     }
   ]

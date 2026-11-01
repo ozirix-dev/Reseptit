@@ -1,93 +1,89 @@
 ---
-title: Provençal ratatouille
+title: Provençal ratatouille – weighed version
 recipe_id: ratatouille
 url_slug: ratatouille
 category: paaruoka
 language: en
 status: published
-carbs_net_per_serving_g: 16.40
-carbs_total_per_serving_g: 23.62
-protein_per_serving_g: 3.37
-fat_per_serving_g: 14.96
+carbs_net_per_serving_g: 11.57
+carbs_total_per_serving_g: 17.4
+protein_per_serving_g: 2.46
+fat_per_serving_g: 14.65
 servings: 4
 time_total_min: 60
 main_ingredient:
-  - kesakurpitsa
-  - munakoiso
+- kesakurpitsa
+- munakoiso
 cooking_method:
-  - liesi
+- liesi
 difficulty: easy
 tags:
-  - "Mediterranean"
-  - "french"
-  - "courgette"
-  - "eggplant"
+- Mediterranean
+- french
+- courgette
+- eggplant
 image:
   src: paaruoat/ratatouille.webp
-  alt: Provençal ratatouille from zucchini, eggplant, bell pepper and tomato
+  alt: Provençal ratatouille – weighed version – serving illustration
   width: 1279
   height: 853
 ingredients:
-  - amount: 1
-    unit: piece
-    item: eggplant
-    note: "diced"
-  - amount: 2
-    unit: piece
-    item: zucchini
-    note: "diced"
-  - amount: 1
-    unit: piece
-    item: red pepper
-    note: in pieces
-  - amount: 1
-    unit: piece
-    item: onion
-    note: "finely chopped"
-  - amount: 3
-    unit: piece
-    item: a clove of garlic
-    note: shredded
-  - amount: 500
-    unit: g
-    item: ripe tomatoes
-    note: "diced"
-  - amount: 4
-    unit: tbsp
-    item: olive oil
-  - amount: 1
-    unit: tsp
-    item: dried thyme
-  - amount: 1
-    unit: tsp
-    item: salt
-  - amount: 0.25
-    unit: tsp
-    item: black pepper
-  - amount: 15
-    unit: g
-    item: fresh basil
+- amount: 300
+  unit: g
+  item: aubergine
+- amount: 400
+  unit: g
+  item: courgette
+- amount: 120
+  unit: g
+  item: red pepper
+- amount: 55
+  unit: g
+  item: peeled onion
+- amount: 9
+  unit: g
+  item: peeled fresh garlic
+- amount: 500
+  unit: g
+  item: tomato
+- amount: 54
+  unit: g
+  item: olive oil
+- amount: 2
+  unit: g
+  item: dried ground thyme
+- amount: 0.5
+  unit: g
+  item: ground black pepper
+- amount: 15
+  unit: g
+  item: fresh basil
+- amount: null
+  unit: ''
+  item: salt to taste
 source_language: fi
 source_recipe: reseptit/paaruoat/ratatouille.md
 translation_of: ratatouille
 ---
 
-# Provençal ratatouille
-
-Ratatouille is a slowly stewed vegetable dish in which zucchini, eggplant, bell pepper and tomato are seasoned with herbs and olive oil.
+# Provençal ratatouille – weighed version
 
 ## Description
 
-Ratatouille is a slowly stewed vegetable dish in which zucchini, eggplant, bell pepper and tomato are seasoned with herbs and olive oil.
+Provençal ratatouille – weighed version.
 
-## Preparation
+## Ingredients
 
-1. Fry the eggplant in a pan in olive oil in two batches until soft. Set aside.
-2. Add oil to the pan if necessary. Sauté the onion and paprika for 5 minutes, add the garlic.
-3. Add zucchini, tomatoes, thyme, salt and pepper. Cover and simmer on low heat for 20 minutes.
-4. Stir the eggplant back into the pan and simmer for another 10-15 minutes until the vegetables are soft but keep their shape.
-5. Finish with basil. Serve on its own or as a side dish.
+The weighed ingredients are shown above.
+
+## Instructions
+
+1. Soften 300 g aubergine in all 54 g olive oil. Do not add any extra oil.
+2. Add 55 g onion, 120 g red pepper, 9 g garlic, 400 g courgette and 500 g tomato. Simmer covered for about 30 min.
+3. Add 2 g dried ground thyme, 0.5 g black pepper and 15 g basil. Divide all vegetables and liquid into four portions; bread and rice are excluded.
 
 ## Notes
 
-- Avoid overcooking so that the vegetables don't turn into puree.
+GL is a modeled ingredient-sum estimate with low confidence, not a measured meal response. No biological uncertainty interval is known. Named source comparisons are not a statistical confidence interval. The photograph illustrates serving; unlisted side dishes are excluded. All listed edible ingredients, sauce and fat are consumed. No unmeasured cooking or leaching losses are deducted.
+
+This estimate is limited to the weighed version shown.

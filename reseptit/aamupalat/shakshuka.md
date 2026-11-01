@@ -1,5 +1,5 @@
 ---
-title: Shakshuka
+title: Shakshuka – punnittu versio
 recipe_id: shakshuka
 url_slug: shakshuka
 category: aamupala
@@ -7,73 +7,83 @@ language: fi
 status: published
 diet_class: vhh_tiukka
 main_ingredient:
-  - kananmuna
+- kananmuna
 cooking_method:
-  - paistaminen
+- liesi
 ingredients:
-  - amount: 4
-    unit: kpl
-    item: kananmunaa
-  - amount: 1
-    unit: kpl
-    item: punainen paprika
-  - amount: 1
-    unit: kpl
-    item: pieni sipuli
-  - amount: 200
-    unit: g
-    item: tomaattimurskaa
-  - amount: 1
-    unit: rkl
-    item: oliiviöljyä
-  - amount: 1
-    unit: tl
-    item: juustokuminaa
-  - amount: 0.5
-    unit: tl
-    item: savupaprikaa
-  - amount: null
-    unit: ""
-    item: suolaa, mustapippuria ja chilihiutaleita
-  - amount: 2
-    unit: rkl
-    item: silputtua persiljaa
-carbs_net_per_serving_g: 8.9
-carbs_total_per_serving_g: 12.4
-protein_per_serving_g: 15.6
-fat_per_serving_g: 17.5
+- amount: 220
+  unit: g
+  item: kuoretonta kananmunaa
+- amount: 120
+  unit: g
+  item: punaista paprikaa
+- amount: 70
+  unit: g
+  item: sipulia
+- amount: 200
+  unit: g
+  item: tomaattimurskaa
+- amount: 13.5
+  unit: g
+  item: oliiviöljyä
+- amount: 2
+  unit: g
+  item: juustokuminaa
+- amount: 1
+  unit: g
+  item: paprikajauhetta
+- amount: 0.5
+  unit: g
+  item: jauhettua mustapippuria
+- amount: 0.3
+  unit: g
+  item: jauhettua paprikaa chilin sijasta
+- amount: 8
+  unit: g
+  item: tuoretta persiljaa
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
+carbs_net_per_serving_g: 8.76
+carbs_total_per_serving_g: 11.23
+protein_per_serving_g: 15.77
+fat_per_serving_g: 17.65
 servings: 2
 time_total_min: 30
 difficulty: Helppo
 tags:
-  - aamupala
-  - kananmuna
-  - munaruoka
+- aamupala
+- kananmuna
+- munaruoka
 image:
   src: aamupalat/shakshuka.webp
-  alt: Munat kypsyvät tomaatti-paprikakastikkeessa pannulla
+  alt: Shakshuka – punnittu versio – kuvituskuva
   width: 1536
   height: 1024
 ---
 
-# Shakshuka
+# Shakshuka – punnittu versio
 
 ## Kuvaus
 
-Shakshukassa kananmunat kypsyvät mausteisessa tomaatti-paprikapannussa. Ruoka tarjoillaan sellaisenaan ilman leipää.
+Shakshuka – punnittu versio. Täsmällinen versio 2 annokselle.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Kuullota hienonnettu sipuli öljyssä pannulla. Lisää kuutioitu paprika ja kypsennä pehmeäksi.
-2. Sekoita joukkoon juustokumina, savupaprika ja tomaattimurska. Mausta ja hauduta noin 10 minuuttia, kunnes kastike sakenee.
-3. Tee kastikkeeseen neljä syvennystä ja riko munat niihin.
-4. Peitä pannu ja kypsennä miedolla lämmöllä 5–8 minuuttia, kunnes valkuaiset ovat hyytyneet.
-5. Viimeistele persiljalla ja tarjoa pannusta.
+1. Kuullota 70 g sipulia ja 120 g punaista paprikaa 13,5 g öljyssä. Lisää 200 g tomaattimurskaa, 2 g juustokuminaa ja yhteensä 1,3 g jauhettua paprikaa. Hauduta 10 min.
+2. Tee kastikkeeseen syvennykset ja kypsennä 220 g kuoretonta munaa kannen alla. Lisää 8 g persiljaa ja 0,5 g mustapippuria.
+3. Jaa koko pannu kahteen annokseen. Tämä mieto paprikaversio korvaa avoimen chilihiutaleannoksen.
 
 ## Muistiinpanot
 
-Tomaatti sisältää hiilihydraatteja, joten tämä on VHH-versio eikä tiukka keto-ohje. Säädä chilin määrä oman maun mukaan.
+Mallinnettu GK-arvio perustuu ainesosiin ja nimettyihin laskennallisiin oletuksiin. Luottamus on matala. Tämä ei ole aterialla mitattu verensokerivaste. Biologista epävarmuusväliä ei tunneta.
+
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
+
+Tämä arvio koskee vain yllä punnittua, nimettyä valmistusversiota.
+
+Kaikki luetellut syötävät ainekset, rasva ja kastike kulutetaan. Raakojen tai kuivien ainesten ravintokoostumusta käytetään nimetyn valmistuksen koostumusarvion pohjana; mittaamatonta kypsennys- tai liukenemishävikkiä ei vähennetä.

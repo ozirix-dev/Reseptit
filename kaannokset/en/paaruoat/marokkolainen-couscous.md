@@ -1,5 +1,5 @@
 ---
-title: Moroccan couscous with chicken and vegetables
+title: Moroccan-style chicken and vegetable couscous
 recipe_id: marokkolainen-couscous
 url_slug: marokkolainen-couscous
 category: paaruoka
@@ -8,88 +8,85 @@ status: published
 servings: 4
 time_total_min: 75
 main_ingredient:
-  - kana
-  - kikherne
+- kana
+- kikherne
 cooking_method:
-  - liesi
+- liesi
 difficulty: medium
 tags:
-  - "Mediterranean"
-  - "Moroccan"
-  - "chicken"
-  - "chickpea"
+- Mediterranean
+- Moroccan
+- chicken
+- chickpea
 image:
   src: paaruoat/marokkolainen-couscous.webp
-  alt: Moroccan couscous dish with chicken, chickpeas and colorful vegetables
+  alt: Moroccan-style chicken and vegetable couscous – serving illustration
   width: 1279
   height: 853
 ingredients:
-  - amount: 600
-    unit: g
-    item: chicken legs or boneless thigh fillets
-  - amount: 250
-    unit: g
-    item: couscous
-  - amount: 1
-    unit: piece
-    item: onion
-    note: "finely chopped"
-  - amount: 2
-    unit: piece
-    item: carrot
-    note: in pieces
-  - amount: 1
-    unit: piece
-    item: zucchini
-    note: in pieces
-  - amount: 400
-    unit: g
-    item: chickpeas
-    note: rinsed
-  - amount: 1
-    unit: l
-    item: chicken broth
-  - amount: 1
-    unit: tsp
-    item: cumin
-  - amount: 1
-    unit: tsp
-    item: ground coriander
-  - amount: 0.5
-    unit: tsp
-    item: turmeric
-  - amount: 2
-    unit: tbsp
-    item: olive oil
-  - amount: 1
-    unit: tsp
-    item: salt
+- amount: 600
+  unit: g
+  item: boneless skinless chicken thigh flesh
+- amount: 250
+  unit: g
+  item: dry couscous
+- amount: 55
+  unit: g
+  item: peeled onion
+- amount: 110
+  unit: g
+  item: carrot
+- amount: 200
+  unit: g
+  item: courgette
+- amount: 400
+  unit: g
+  item: cooked drained chickpeas
+- amount: 1000
+  unit: g
+  item: prepared liquid stock, generic AFCD composition
+- amount: 2
+  unit: g
+  item: ground cumin
+- amount: 2
+  unit: g
+  item: ground coriander seed
+- amount: 1.0
+  unit: g
+  item: ground turmeric
+- amount: 27.0
+  unit: g
+  item: olive oil
+- amount: null
+  unit: ''
+  item: salt to taste
 source_language: fi
 source_recipe: reseptit/paaruoat/marokkolainen-couscous.md
 translation_of: marokkolainen-couscous
-carbs_net_per_serving_g: 67.45
-carbs_total_per_serving_g: 76.5
-protein_per_serving_g: 46.82
-fat_per_serving_g: 14.71
-
+carbs_net_per_serving_g: 68.36
+carbs_total_per_serving_g: 78.13
+protein_per_serving_g: 47.06
+fat_per_serving_g: 14.85
 ---
 
-# Moroccan couscous with chicken and vegetables
-
-Spicy chicken broth cooks carrots, zucchini and chickpeas. Serve the vegetables and broth over the steaming couscous.
+# Moroccan-style chicken and vegetable couscous
 
 ## Description
 
-Spicy chicken broth cooks carrots, zucchini and chickpeas. Serve the vegetables and broth over the steaming couscous.
+Moroccan-style chicken and vegetable couscous.
 
-## Preparation
+## Ingredients
 
-1. Brown the chicken in oil in a pot. Add the onion and saute until soft.
-2. Add cumin, coriander and turmeric. Mix and pour in the stock.
-3. Add the carrots and simmer for 20 minutes. Add the zucchini and chickpeas and continue cooking for 15 minutes until the chicken and vegetables are cooked.
-4. Prepare the couscous according to the instructions on the package. Fluff with a fork.
-5. Place the couscous in a serving dish and place the chicken and vegetables on top. Spoon a little broth over it.
+The weighed ingredients are shown above.
+
+## Instructions
+
+1. Cut 600 g boneless skinless chicken thigh, 55 g onion, 110 g carrot and 200 g courgette. Soften the onion in 27 g olive oil, then add chicken and vegetables.
+2. Add 1000 g prepared stock, 400 g cooked drained chickpeas, 2 g cumin, 2 g ground coriander and 1 g turmeric. Simmer until the chicken and vegetables are thoroughly cooked.
+3. Use part of the hot pot liquid to hydrate 250 g dry couscous according to its package. Return all couscous and liquid to the pot and serve hot as four portions.
 
 ## Notes
 
-- Add harissa to the table separately if diners want more heat.
+GL is a modeled ingredient-sum estimate with low confidence, not a measured meal response. No biological uncertainty interval is known. Named source comparisons are not a statistical confidence interval. The photograph illustrates serving; unlisted side dishes are excluded. All listed edible ingredients, sauce and fat are consumed. No unmeasured cooking or leaching losses are deducted.
+
+Stock uses a generic AFCD composition, not a verified brand. Couscous is dry weight and chickpeas are cooked drained weight.

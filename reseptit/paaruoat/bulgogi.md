@@ -1,5 +1,5 @@
 ---
-title: "Korealainen bulgogi"
+title: Korealainen bulgogi – pannuversio
 recipe_id: bulgogi
 url_slug: bulgogi
 category: paaruoka
@@ -8,41 +8,85 @@ status: published
 servings: 4
 time_total_min: 45
 difficulty: keskitaso
-main_ingredient: [naudanliha, riisi]
-cooking_method: [pannulla paistaminen]
-tags: [korealainen, bulgogi, naudanliha]
-image: {src: paaruoat/bulgogi.webp, alt: "Korealaista bulgogia seesamilla ja kevätsipulilla, tarjoiltuna riisin kanssa", width: 1280, height: 853}
+main_ingredient:
+- naudanliha
+- riisi
+cooking_method:
+- liesi
+tags:
+- korealainen
+- bulgogi
+- naudanliha
+image:
+  src: paaruoat/bulgogi.webp
+  alt: Korealainen bulgogi – pannuversio – kuvituskuva
+  width: 1280
+  height: 853
 ingredients:
-  - {amount: 600, unit: g, item: naudan ulkofileetä, note: ohuina viipaleina}
-  - {amount: 300, unit: g, item: jasmiiniriisiä, note: kuivapaino}
-  - {amount: 60, unit: ml, item: soijakastiketta}
-  - {amount: 1, unit: rkl, item: fariinisokeria}
-  - {amount: 1, unit: rkl, item: seesamiöljyä}
-  - {amount: 3, unit: kpl, item: valkosipulinkynttä, note: hienonnettuna}
-  - {amount: 100, unit: g, item: päärynää, note: hienoksi raastettuna}
-  - {amount: 0.5, unit: kpl, item: keltasipulia, note: ohuina viipaleina}
-  - {amount: 2, unit: kpl, item: kevätsipulia, note: viipaloituna}
-  - {amount: 1, unit: rkl, item: seesaminsiemeniä}
-  - {amount: 0.25, unit: tl, item: mustapippuria}
-carbs_net_per_serving_g: 62.81
-carbs_total_per_serving_g: 64.98
-protein_per_serving_g: 43.15
-fat_per_serving_g: 8.29
-
+- amount: 600
+  unit: g
+  item: naudan ulkofileetä
+- amount: 300
+  unit: g
+  item: kuivaa valkoista jasmiiniriisiä
+- amount: 60
+  unit: g
+  item: kaupallista soijakastiketta (AFCD F008065 -koostumusvertailu)
+- amount: 12
+  unit: g
+  item: fariinisokeria
+- amount: 13.5
+  unit: g
+  item: seesamiöljyä
+- amount: 9
+  unit: g
+  item: tuoretta kuorittua valkosipulia
+- amount: 100
+  unit: g
+  item: päärynää
+- amount: 27.5
+  unit: g
+  item: keltasipulia
+- amount: 30
+  unit: g
+  item: kevätsipulia
+- amount: 8.5
+  unit: g
+  item: seesaminsiemeniä
+- amount: 0.5
+  unit: g
+  item: jauhettua mustapippuria
+- amount: 600
+  unit: g
+  item: vettä riisin kypsennykseen
+carbs_net_per_serving_g: 61.86
+carbs_total_per_serving_g: 64.04
+protein_per_serving_g: 43.39
+fat_per_serving_g: 8.28
 ---
 
-# Korealainen bulgogi
+# Korealainen bulgogi – pannuversio
 
-Ohueksi leikattu naudanliha maustuu soijalla, seesamilla, valkosipulilla ja päärynällä. Paista liha nopeasti kuumalla pannulla ja tarjoa riisin kanssa.
+## Kuvaus
+
+Korealainen bulgogi – pannuversio. Täsmällinen versio 4 annokselle.
+
+## Ainekset
+
+Ainekset näkyvät yllä annoslaskurin yhteydessä.
 
 ## Valmistus
 
-1. Sekoita soijakastike, fariinisokeri, seesamiöljy, valkosipuli, raastettu päärynä ja mustapippuri.
-2. Kääntele naudanviipaleet marinadissa, lisää sipuli ja anna maustua jääkaapissa 20–30 minuuttia.
-3. Huuhtele riisi ja keitä pakkauksen ohjeen mukaan.
-4. Kuumenna iso paistinpannu hyvin kuumaksi. Paista liha erissä nopeasti, jotta se ruskistuu eikä ala hautua nesteessään.
-5. Lisää kevätsipuli ja seesaminsiemenet. Tarjoa heti riisin kanssa.
+1. Pannuversio: sekoita kaikki punnittu soijakastike, fariinisokeri, päärynä, valkosipuli ja mausteet lihaan. Kaikki marinadi kypsennetään ja syödään.
+2. Kypsennä 300 g kuivaa valkoista jasmiiniriisiä 600 g:ssa vettä pakkauksen kypsennysaikaa noudattaen. Tarjoa kuumana.
+3. Kypsennä liha koko marinadissa pannulla. Jaa kaikki riisi, liha, kastike ja seesaminsiemenet neljään annokseen. Ei valutettu grilliversio.
 
 ## Muistiinpanot
 
-- Ohuen lihan saa leikattua helpommin, kun sen laittaa pakastimeen noin 20 minuutiksi ennen viipalointia.
+Mallinnettu GK-arvio perustuu ainesosiin ja nimettyihin laskennallisiin oletuksiin. Luottamus on matala. Tämä ei ole aterialla mitattu verensokerivaste. Biologista epävarmuusväliä ei tunneta.
+
+Kuva on tarjoilua havainnollistava kuvituskuva. Tämän version ravintoarvot ja GK koskevat vain yllä lueteltuja ainesosia; kuvan ylimääräiset lisukkeet eivät kuulu arvioon.
+
+Tämä arvio koskee vain yllä punnittua, nimettyä valmistusversiota.
+
+Kaikki luetellut syötävät ainekset, rasva ja kastike kulutetaan. Raakojen tai kuivien ainesten ravintokoostumusta käytetään nimetyn valmistuksen koostumusarvion pohjana; mittaamatonta kypsennys- tai liukenemishävikkiä ei vähennetä.

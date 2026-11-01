@@ -1,5 +1,5 @@
 ---
-title: Homemade beef döner kebab
+title: Beef döner with raw cabbage – weighed version
 recipe_id: doner-kebab
 url_slug: doner-kebab
 category: paaruoka
@@ -8,86 +8,82 @@ status: published
 servings: 4
 time_total_min: 45
 main_ingredient:
-  - naudanliha
-  - jogurtti
+- naudanliha
+- jogurtti
 cooking_method:
-  - uuni
-  - paistaminen
+- uuni
 difficulty: medium
 tags:
-  - "Mediterranean"
-  - "Turkish"
-  - "beef"
-  - "yogurt"
+- Mediterranean
+- Turkish
+- beef
+- yogurt
 image:
   src: paaruoat/doner-kebab.webp
-  alt: Seasoned döner kebab beef with pita bread, salad and yogurt sauce
+  alt: Beef döner with raw cabbage – weighed version – serving illustration
   width: 1279
   height: 853
 ingredients:
-  - amount: 600
-    unit: g
-    item: ground beef
-  - amount: 100
-    unit: g
-    item: Greek yogurt
-  - amount: 1
-    unit: piece
-    item: onion
-    note: grated
-  - amount: 2
-    unit: piece
-    item: a clove of garlic
-    note: crushed
-  - amount: 1
-    unit: tsp
-    item: cumin
-  - amount: 1
-    unit: tsp
-    item: paprika powder
-  - amount: 0.5
-    unit: tsp
-    item: oregano
-  - amount: 1
-    unit: tsp
-    item: salt
-  - amount: 0.25
-    unit: tsp
-    item: black pepper
-  - amount: 4
-    unit: piece
-    item: pita bread
-    note: for serving
-  - amount: 200
-    unit: g
-    item: coleslaw
-    note: for serving
+- amount: 600
+  unit: g
+  item: beef mince, 17% fat
+- amount: 100
+  unit: g
+  item: plain lactose-free Greek yoghurt, 7% fat
+- amount: 55
+  unit: g
+  item: peeled onion
+- amount: 6
+  unit: g
+  item: peeled fresh garlic
+- amount: 2
+  unit: g
+  item: ground cumin
+- amount: 2
+  unit: g
+  item: ground paprika
+- amount: 1.0
+  unit: g
+  item: dried oregano
+- amount: null
+  unit: ''
+  item: salt to taste
+- amount: 0.5
+  unit: g
+  item: ground black pepper
+- amount: 220
+  unit: g
+  item: ready-made white pita bread
+- amount: 200
+  unit: g
+  item: raw white cabbage
 source_language: fi
 source_recipe: reseptit/paaruoat/doner-kebab.md
 translation_of: doner-kebab
-carbs_net_per_serving_g: 30.89
-carbs_total_per_serving_g: 33.73
-protein_per_serving_g: 35.77
-fat_per_serving_g: 34.6
-
+carbs_net_per_serving_g: 29.75
+carbs_total_per_serving_g: 32.81
+protein_per_serving_g: 35.79
+fat_per_serving_g: 28.01
 ---
 
-# Homemade beef döner kebab
-
-This homemade döner-style meat is baked from seasoned minced beef and cut into thin shavings. Serve with bread and a fresh salad.
+# Beef döner with raw cabbage – weighed version
 
 ## Description
 
-This homemade döner-style meat is baked from seasoned minced beef and cut into thin shavings. Serve with bread and a fresh salad.
+Beef döner with raw cabbage – weighed version.
 
-## Preparation
+## Ingredients
 
-1. Heat the oven to 220 degrees. Mix the minced meat, yogurt, grated onion, garlic and spices into a smooth mass.
-2. Spread the meat in a thin layer on baking paper. Cover with another paper and roll out flat.
-3. Bake for 12–15 minutes until the meat is cooked. Remove from the oven and cut or tear into thin chips.
-4. Fry the meat chips in a hot pan in small batches to brown the edges.
-5. Serve with warm pita bread and cabbage salad.
+The weighed ingredients are shown above.
+
+## Instructions
+
+1. Heat the oven to 220 °C. Mix 600 g beef mince with 17% fat, 100 g plain Greek yoghurt with 7% fat, 55 g onion, 6 g garlic and all weighed spices.
+2. Spread the meat thinly on baking paper. Bake for 12–15 min until cooked throughout, then cut into strips. Finish in a pan in its own fat and keep all fat and liquid.
+3. Warm 220 g ready-made white pita without extra oil. Serve all meat and juices with 200 g raw white cabbage as four portions; a separate coleslaw dressing is excluded.
 
 ## Notes
 
-- Ensure the doneness of the meat pieces made from minced meat; they should be cooked throughout.
+GL is a modeled ingredient-sum estimate with low confidence, not a measured meal response. No biological uncertainty interval is known. Named source comparisons are not a statistical confidence interval. The photograph illustrates serving; unlisted side dishes are excluded. All listed edible ingredients, sauce and fat are consumed. No unmeasured cooking or leaching losses are deducted.
+
+This estimate is limited to the weighed version shown.
