@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "id": "norway-06.186-polyoli02-20261101",
+      "per100g": {
+        "availableCarbohydrate": 20.3,
+        "protein": 12.7,
+        "fat": 7.0,
+        "fibre": 40.0
+      },
+      "sourceRecord": {
+        "id": "matvaretabellen-06.186",
+        "name": "Marjoram, dried",
+        "state": "dried marjoram, ground and fully consumed",
+        "sourceUrl": "https://www.matvaretabellen.no/en/marjoram-dried/",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "AVAILABLE_SUM_SUGARS_AND_STARCH_MI0181",
+        "polyolsSourceVerified": false,
+        "polyolsValue": null,
+        "polyolsValueType": "MISSING_SOURCE10",
+        "sourceApiSha256": "89b8f5f494a79731bf7d8d98065ee66c55263ccdbb519e7c87941218be6c948d",
+        "componentEvidence": [
+          {
+            "sourceId": "MI0181",
+            "quantity": 20.3,
+            "unit": "g",
+            "nutrientId": "Karbo",
+            "sourceDescription": "Carbohydrate, available calculated from sugar and starch   (CHO[g] = SUGAR[g] + STARCH[g])"
+          },
+          {
+            "sourceId": "50",
+            "quantity": 0.0,
+            "unit": "g",
+            "nutrientId": "Alko",
+            "sourceDescription": "Estimated as a naturally occurring zero value, not analysed."
+          },
+          {
+            "sourceId": "460g",
+            "quantity": 40.0,
+            "unit": "g",
+            "nutrientId": "Fiber",
+            "sourceDescription": "US Department of Agriculture, Agricultural Research Service. USDA National Nutrient Database for Standard Reference, Release 28 (2015). Nutrient Data Laboratory Home Page"
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "CHOCALOH",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "460g",
+            "quantity": 12.7,
+            "unit": "g",
+            "nutrientId": "Protein",
+            "sourceDescription": "US Department of Agriculture, Agricultural Research Service. USDA National Nutrient Database for Standard Reference, Release 28 (2015). Nutrient Data Laboratory Home Page"
+          },
+          {
+            "sourceId": "MI_SUGAR_NO",
+            "quantity": 4.1,
+            "unit": "g",
+            "nutrientId": "Mono+Di",
+            "sourceDescription": "Sugar calculated as the sum of fructose, glucose, lactose, maltose and sucrose   (SUGAR[g] = FRUS[g] + GLUS[g] + LACS[g] + MALS[g] + SUCS[g])"
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "POLYL",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "GLUS",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "MALS",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "SUCS",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "460g",
+            "quantity": 7.0,
+            "unit": "g",
+            "nutrientId": "Fett",
+            "sourceDescription": "US Department of Agriculture, Agricultural Research Service. USDA National Nutrient Database for Standard Reference, Release 28 (2015). Nutrient Data Laboratory Home Page"
+          },
+          {
+            "sourceId": "331",
+            "quantity": 16.2,
+            "unit": "g",
+            "nutrientId": "Stivel",
+            "sourceDescription": "Frydenberg, H, Urke EB & Carlsen MH. Sugar project 2021-2024. University of Oslo, department of nutrition."
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "FRUS",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "LACS",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "CHOCAL",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          }
+        ]
+      },
+      "foodKind": "GROUND_SPICE",
+      "reviewState": "SOURCE_SPECIFIC_RESEARCH_PROPOSAL_NOT_PUBLICATION_EVIDENCE",
+      "evidenceHash": "67eec2d1c031276a0bb4bc0b2845680efcf907dc17311c0b2db4690112407a49"
+    }
+  ],
+  "recipeScope": [
+    "jauheliha-kaalikeitto-vhh",
+    "vhh-kaalilaatikko"
+  ],
+  "publicationEligible": false
+}

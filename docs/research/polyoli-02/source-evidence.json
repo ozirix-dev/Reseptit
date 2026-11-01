@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "sourceRetrievals": [
+    {
+      "id": "no-foods",
+      "url": "https://www.matvaretabellen.no/api/en/foods.json",
+      "retrievedAt": "2026-11-01T11:20:58.047463+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.matvaretabellen.no/api/en/foods.json",
+      "bytes": 13690405,
+      "sha256": "89b8f5f494a79731bf7d8d98065ee66c55263ccdbb519e7c87941218be6c948d"
+    },
+    {
+      "id": "no-nutrients",
+      "url": "https://www.matvaretabellen.no/api/en/nutrients.json",
+      "retrievedAt": "2026-11-01T11:20:58.048843+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.matvaretabellen.no/api/en/nutrients.json",
+      "bytes": 13081,
+      "sha256": "15a95f0ebd0682daa293685203dad9aaa28b07df4e9b943ca03269161fbefd91"
+    },
+    {
+      "id": "no-sources",
+      "url": "https://www.matvaretabellen.no/api/en/sources.json",
+      "retrievedAt": "2026-11-01T11:20:58.049734+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.matvaretabellen.no/api/en/sources.json",
+      "bytes": 97245,
+      "sha256": "71917dadc84a5218bb3a78327cda6945c48eb6b2e72e4ee7fbf0c23ab7f6778d"
+    },
+    {
+      "id": "no-marjoram",
+      "url": "https://www.matvaretabellen.no/en/marjoram-dried/",
+      "retrievedAt": "2026-11-01T11:20:58.050631+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.matvaretabellen.no/en/marjoram-dried/",
+      "bytes": 130392,
+      "sha256": "c30a11bd8c586244802f1386fc2e6499bf15e59aad15e98da46d823904ce69f8"
+    },
+    {
+      "id": "no-bay",
+      "url": "https://www.matvaretabellen.no/laurbaerblad-torket/",
+      "retrievedAt": "2026-11-01T11:20:58.051858+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.matvaretabellen.no/laurbaerblad-torket/",
+      "bytes": 129953,
+      "sha256": "f06e76c8faf27799e59abedb29a51ebea323f12f0d3b685b2d1210e6d1e366e7"
+    },
+    {
+      "id": "frida",
+      "url": "https://fcdb.fooddata.dk/",
+      "retrievedAt": "2026-11-01T11:20:58.052760+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1082)>"
+    },
+    {
+      "id": "se-search",
+      "url": "https://soknaringsinnehall.livsmedelsverket.se/",
+      "retrievedAt": "2026-11-01T11:20:58.500923+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://soknaringsinnehall.livsmedelsverket.se/",
+      "bytes": 72987,
+      "sha256": "ccb18867205f6c35d2a254a2591096093d54bb37d63c28ab75dbbc1e025bc497"
+    },
+    {
+      "id": "cofid-guide",
+      "url": "https://assets.publishing.service.gov.uk/media/60538e66d3bf7f03249bac58/McCance_and_Widdowsons_Composition_of_Foods_integrated_dataset_2021.pdf",
+      "retrievedAt": "2026-11-01T11:20:58.595196+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://assets.publishing.service.gov.uk/media/60538e66d3bf7f03249bac58/McCance_and_Widdowsons_Composition_of_Foods_integrated_dataset_2021.pdf",
+      "bytes": 777103,
+      "sha256": "cbac83af403531f1db260a15de058ceca1c1bae6707a8748ee3788fee7f945ec"
+    },
+    {
+      "id": "pages",
+      "url": "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/",
+      "retrievedAt": "2026-11-01T11:20:58.615614+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/",
+      "bytes": 546051,
+      "sha256": "614c99774367a1d203e634fe87bc0a995159858f61ff16a16c8965cf4d6cef06"
+    },
+    {
+      "id": "cofid-xlsx",
+      "url": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+      "httpStatus": 200,
+      "sha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+      "bytes": 4629542,
+      "retrievedAt": "2026-11-01T11:21:45.548964+00:00"
+    },
+    {
+      "id": "se-api-foods",
+      "url": "https://dataportal.livsmedelsverket.se/livsmedel/api/v1/livsmedel",
+      "retrievedAt": "2026-11-01T11:23:28.728303+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://dataportal.livsmedelsverket.se/livsmedel/api/v1/livsmedel",
+      "sha256": "3ce00a66bc70e5a7b68691b09f190f7d8e257abefbad73299ced0bc52e5c3a74",
+      "bytes": 11461
+    },
+    {
+      "id": "fineli-29",
+      "url": "https://fineli.fi/fineli/api/v1/foods/29",
+      "retrievedAt": "2026-11-01T11:23:28.729563+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "fineli-7600",
+      "url": "https://fineli.fi/fineli/api/v1/foods/7600",
+      "retrievedAt": "2026-11-01T11:23:28.730411+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "meira-marjoram",
+      "url": "https://meira.fi/tuote/meirami/",
+      "retrievedAt": "2026-11-01T11:23:28.731038+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://meira.fi/tuote/meirami/",
+      "sha256": "4744f7cffa151ad07aca05a7c45315cfbd700fb9b57326c70c7cb52442c112b9",
+      "bytes": 91192
+    },
+    {
+      "id": "meira-bay",
+      "url": "https://meira.fi/tuote/laakerinlehti/",
+      "retrievedAt": "2026-11-01T11:23:28.732807+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://meira.fi/tuote/laakerinlehti/",
+      "sha256": "d7b991e0f90dca56e81c97da66f0ad19b998d1b3334d8837fe8d46c95fa5d289",
+      "bytes": 91468
+    },
+    {
+      "id": "se-food-catalog",
+      "url": "https://dataportal.livsmedelsverket.se/livsmedel/api/v1/livsmedel?offset=0&limit=10000&sprak=1",
+      "retrievedAt": "2026-11-01T11:23:49.979746+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://dataportal.livsmedelsverket.se/livsmedel/api/v1/livsmedel?offset=0&limit=10000&sprak=1",
+      "sha256": "bab5e61c72cd78e557a7a200aa2207246015c1bb4de33360bdde601869f741e3",
+      "bytes": 1470929
+    }
+  ],
+  "norway": [
+    {
+      "foodId": "06.186",
+      "name": "Marjoram, dried",
+      "url": "https://www.matvaretabellen.no/en/marjoram-dried/",
+      "basis": "100g edible",
+      "apiUrl": "https://www.matvaretabellen.no/api/en/foods.json",
+      "apiSha256": "89b8f5f494a79731bf7d8d98065ee66c55263ccdbb519e7c87941218be6c948d",
+      "constituents": [
+        {
+          "sourceId": "MI0181",
+          "quantity": 20.3,
+          "unit": "g",
+          "nutrientId": "Karbo",
+          "sourceDescription": "Carbohydrate, available calculated from sugar and starch   (CHO[g] = SUGAR[g] + STARCH[g])"
+        },
+        {
+          "sourceId": "50",
+          "quantity": 0.0,
+          "unit": "g",
+          "nutrientId": "Alko",
+          "sourceDescription": "Estimated as a naturally occurring zero value, not analysed."
+        },
+        {
+          "sourceId": "460g",
+          "quantity": 40.0,
+          "unit": "g",
+          "nutrientId": "Fiber",
+          "sourceDescription": "US Department of Agriculture, Agricultural Research Service. USDA National Nutrient Database for Standard Reference, Release 28 (2015). Nutrient Data Laboratory Home Page"
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "CHOCALOH",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "460g",
+          "quantity": 12.7,
+          "unit": "g",
+          "nutrientId": "Protein",
+          "sourceDescription": "US Department of Agriculture, Agricultural Research Service. USDA National Nutrient Database for Standard Reference, Release 28 (2015). Nutrient Data Laboratory Home Page"
+        },
+        {
+          "sourceId": "MI_SUGAR_NO",
+          "quantity": 4.1,
+          "unit": "g",
+          "nutrientId": "Mono+Di",
+          "sourceDescription": "Sugar calculated as the sum of fructose, glucose, lactose, maltose and sucrose   (SUGAR[g] = FRUS[g] + GLUS[g] + LACS[g] + MALS[g] + SUCS[g])"
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "POLYL",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "GLUS",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "MALS",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "SUCS",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "460g",
+          "quantity": 7.0,
+          "unit": "g",
+          "nutrientId": "Fett",
+          "sourceDescription": "US Department of Agriculture, Agricultural Research Service. USDA National Nutrient Database for Standard Reference, Release 28 (2015). Nutrient Data Laboratory Home Page"
+        },
+        {
+          "sourceId": "331",
+          "quantity": 16.2,
+          "unit": "g",
+          "nutrientId": "Stivel",
+          "sourceDescription": "Frydenberg, H, Urke EB & Carlsen MH. Sugar project 2021-2024. University of Oslo, department of nutrition."
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "FRUS",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "LACS",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "CHOCAL",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        }
+      ],
+      "sourceValueKind": "SOURCE_DECLARED_AVAILABLE_SUM_NOT_NEW_POLYOL_MEASUREMENT",
+      "publicationEligible": false
+    },
+    {
+      "foodId": "06.177",
+      "name": "Bay leaf, dried",
+      "url": "https://www.matvaretabellen.no/en/bay-leaf-dried/",
+      "basis": "100g edible",
+      "apiUrl": "https://www.matvaretabellen.no/api/en/foods.json",
+      "apiSha256": "89b8f5f494a79731bf7d8d98065ee66c55263ccdbb519e7c87941218be6c948d",
+      "constituents": [
+        {
+          "sourceId": "50",
+          "quantity": 0.0,
+          "unit": "g",
+          "nutrientId": "Alko",
+          "sourceDescription": "Estimated as a naturally occurring zero value, not analysed."
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "CHOCALOH",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "MI0181",
+          "quantity": 48.6,
+          "unit": "g",
+          "nutrientId": "Karbo",
+          "sourceDescription": "Carbohydrate, available calculated from sugar and starch   (CHO[g] = SUGAR[g] + STARCH[g])"
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "POLYL",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "GLUS",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "MALS",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "450c",
+          "quantity": 8.4,
+          "unit": "g",
+          "nutrientId": "Fett",
+          "sourceDescription": "Public Health England og Institute of food research (2015). McCance and Widdowson`s The Composition of Foods, Seventh summary edition. Cambridge: The Royal Society of Chemistry."
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "SUCS",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "460g",
+          "quantity": 26.0,
+          "unit": "g",
+          "nutrientId": "Fiber",
+          "sourceDescription": "US Department of Agriculture, Agricultural Research Service. USDA National Nutrient Database for Standard Reference, Release 28 (2015). Nutrient Data Laboratory Home Page"
+        },
+        {
+          "sourceId": "450c",
+          "quantity": 7.6,
+          "unit": "g",
+          "nutrientId": "Protein",
+          "sourceDescription": "Public Health England og Institute of food research (2015). McCance and Widdowson`s The Composition of Foods, Seventh summary edition. Cambridge: The Royal Society of Chemistry."
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "FRUS",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "MI_SUGAR_NO",
+          "quantity": 48.6,
+          "unit": "g",
+          "nutrientId": "Mono+Di",
+          "sourceDescription": "Sugar calculated as the sum of fructose, glucose, lactose, maltose and sucrose   (SUGAR[g] = FRUS[g] + GLUS[g] + LACS[g] + MALS[g] + SUCS[g])"
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "LACS",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "10",
+          "nutrientId": "CHOCAL",
+          "sourceDescription": "Missing value, content not known.",
+          "quantity": null
+        },
+        {
+          "sourceId": "331",
+          "quantity": 0.0,
+          "unit": "g",
+          "nutrientId": "Stivel",
+          "sourceDescription": "Frydenberg, H, Urke EB & Carlsen MH. Sugar project 2021-2024. University of Oslo, department of nutrition."
+        }
+      ],
+      "sourceValueKind": "SOURCE_DECLARED_AVAILABLE_SUM_NOT_NEW_POLYOL_MEASUREMENT",
+      "publicationEligible": false
+    }
+  ],
+  "cofid": [
+    {
+      "workbookSheet": "1.3 Proximates",
+      "excelRow": 118,
+      "sourceSha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+      "fields": {
+        "Food Code": "13-806",
+        "Food Name": "Bay leaf, dried",
+        "Description": "Reviewed 2013. LGC, Fruit and Vegetables, 1989-1990; Polacchi et al. (1982) Food composition tables for the near east; and Leung et al. (1972) Food composition table for use in East Asia",
+        "Group": "H",
+        "Previous": null,
+        "Main data references": "Marsh et al. (1977) Composition of foods: spices and herbs, raw, processed and prepared, Agriculture Handbook No. 8-2",
+        "Footnote": null,
+        "Water (g)": "5.4",
+        "Total nitrogen (g)": "1.22",
+        "Protein (g)": "7.6",
+        "Fat (g)": "8.4",
+        "Carbohydrate (g)": "48.6",
+        "Energy (kcal) (kcal)": "313",
+        "Energy (kJ) (kJ)": "1312",
+        "Starch (g)": "Tr",
+        "Oligosaccharide (g)": null,
+        "Total sugars (g)": "N",
+        "Glucose (g)": "N",
+        "Galactose (g)": "0.0",
+        "Fructose (g)": "N",
+        "Sucrose (g)": "N",
+        "Maltose (g)": "0.0",
+        "Lactose (g)": "0.0",
+        "Alcohol (g)": null,
+        "NSP (g)": "N",
+        "AOAC fibre (g)": null
+      },
+      "polyolsPer100g": null,
+      "cholesterolIsNotPolyols": true,
+      "carbohydrateBasis": "MONOSACCHARIDE_EQUIVALENTS_SOURCE_GUIDE_P10",
+      "adopted": false
+    },
+    {
+      "workbookSheet": "1.3 Proximates",
+      "excelRow": 1612,
+      "sourceSha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+      "fields": {
+        "Food Code": "13-835",
+        "Food Name": "Marjoram, dried",
+        "Description": "Literature sources",
+        "Group": "H",
+        "Previous": null,
+        "Main data references": "Marsh et al. (1977) Composition of foods: spices and herbs, raw, processed and prepared, Agriculture Handbook No. 8-2",
+        "Footnote": null,
+        "Water (g)": "7.6",
+        "Total nitrogen (g)": "2.03",
+        "Protein (g)": "12.7",
+        "Fat (g)": "7.0",
+        "Carbohydrate (g)": "42.5",
+        "Energy (kcal) (kcal)": "271",
+        "Energy (kJ) (kJ)": "1136",
+        "Starch (g)": "N",
+        "Oligosaccharide (g)": null,
+        "Total sugars (g)": "N",
+        "Glucose (g)": "N",
+        "Galactose (g)": "0.0",
+        "Fructose (g)": "N",
+        "Sucrose (g)": "N",
+        "Maltose (g)": "0.0",
+        "Lactose (g)": "0.0",
+        "Alcohol (g)": null,
+        "NSP (g)": "N",
+        "AOAC fibre (g)": null
+      },
+      "polyolsPer100g": null,
+      "cholesterolIsNotPolyols": true,
+      "carbohydrateBasis": "MONOSACCHARIDE_EQUIVALENTS_SOURCE_GUIDE_P10",
+      "adopted": false
+    }
+  ],
+  "swedishCatalog": {
+    "totalRecords": 2606,
+    "exactDriedMarjoramOrBayNameMatches": 0,
+    "query": "casefold: mejram OR lagerblad; no substitution by generic mixed spices",
+    "sourceHash": "bab5e61c72cd78e557a7a200aa2207246015c1bb4de33360bdde601869f741e3"
+  },
+  "manufacturerFindings": [
+    {
+      "url": "https://meira.fi/tuote/meirami/",
+      "ingredient": "Meirami",
+      "package": "5g,7g,70g",
+      "nutritionTableValuesPresent": false,
+      "polyolsPer100g": null
+    },
+    {
+      "url": "https://meira.fi/tuote/laakerinlehti/",
+      "ingredient": "Laakerinlehti",
+      "package": "4g,35g",
+      "nutritionTableValuesPresent": false,
+      "polyolsPer100g": null
+    }
+  ],
+  "decision": "NO_COMPLETE_NEW_POLYOL_SOURCE",
+  "publicationEligible": false
+}

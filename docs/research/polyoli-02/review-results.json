@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "baseMain": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+  "status": "PASS",
+  "scope": [
+    "jauheliha-kaalikeitto-vhh",
+    "vhh-kaalilaatikko",
+    "ropa-vieja",
+    "siskonmakkarakeitto-juurekset",
+    "nakkikeitto-kukkakaalilla"
+  ],
+  "results": [
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "sourceRecipeHashMatchesMain": true,
+      "installedPolicyError": null,
+      "originalResearchGk": 4.58888,
+      "proposedResearchGk": 4.588900000000001,
+      "researchMacros": {
+        "availableCarbohydrate": 10.209133333333334,
+        "protein": 17.681783333333332,
+        "fat": 15.259750000000004,
+        "fibre": 1.9327500000000002
+      },
+      "inputHash": "7145a7047e7d6d1d2d8c631ca598c0b19d0b8410bed879a02a8161697db3de6a",
+      "stagedFoodBindings": "PASS",
+      "sourceDecision": "PROPOSE_NO_06_186_AVAILABLE_ONLY",
+      "normalization": {
+        "available": 20.3,
+        "net": null
+      },
+      "strictTotalCarbohydratePerServing": null,
+      "polyolsPer100g": null,
+      "status": "HOLD_PUBLICATION_POLYOL_SOURCE_INCOMPLETE",
+      "publicationEligible": false
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "sourceRecipeHashMatchesMain": true,
+      "installedPolicyError": null,
+      "originalResearchGk": 3.7733966666666667,
+      "proposedResearchGk": 3.773416666666666,
+      "researchMacros": {
+        "availableCarbohydrate": 9.519966666666667,
+        "protein": 20.85505,
+        "fat": 30.653500000000005,
+        "fibre": 3.195
+      },
+      "inputHash": "1cb1fcc25e1d2bc8d6245fab21f3a3f67bc8f82db055b579476b988ae1acf723",
+      "stagedFoodBindings": "PASS",
+      "sourceDecision": "PROPOSE_NO_06_186_AVAILABLE_ONLY",
+      "normalization": {
+        "available": 20.3,
+        "net": null
+      },
+      "strictTotalCarbohydratePerServing": null,
+      "polyolsPer100g": null,
+      "status": "HOLD_PUBLICATION_POLYOL_SOURCE_INCOMPLETE",
+      "publicationEligible": false
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "sourceRecipeHashMatchesMain": true,
+      "installedPolicyError": null,
+      "originalResearchGk": 3.345728333333333,
+      "proposedResearchGk": 3.345728333333333,
+      "researchMacros": {
+        "availableCarbohydrate": 7.682056666666666,
+        "protein": 34.058370000000004,
+        "fat": 6.775453333333333,
+        "fibre": 2.1164333333333327
+      },
+      "inputHash": "881b2c3c35e5421f5318196aa142c26832de23036fc0c11ea7ea893128709bab",
+      "stagedFoodBindings": "PASS",
+      "sourceDecision": "RETAIN_USDA_PROXY_NO_BAY_SUBSTITUTION",
+      "normalization": null,
+      "strictTotalCarbohydratePerServing": null,
+      "polyolsPer100g": null,
+      "status": "HOLD_PUBLICATION_POLYOL_SOURCE_INCOMPLETE",
+      "publicationEligible": false
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "sourceRecipeHashMatchesMain": true,
+      "installedPolicyError": null,
+      "originalResearchGk": 3.8320925,
+      "proposedResearchGk": 3.8320925,
+      "researchMacros": {
+        "availableCarbohydrate": 9.085085000000001,
+        "protein": 12.025429999999998,
+        "fat": 17.423555,
+        "fibre": 3.137775
+      },
+      "inputHash": "04a01568ee71d710476cb5359045bf7d03e1ead48605aae1eaa689d0ecd48eaa",
+      "stagedFoodBindings": "PASS",
+      "sourceDecision": "RETAIN_USDA_PROXY_NO_BAY_SUBSTITUTION",
+      "normalization": null,
+      "strictTotalCarbohydratePerServing": null,
+      "polyolsPer100g": null,
+      "status": "HOLD_PUBLICATION_POLYOL_SOURCE_INCOMPLETE",
+      "publicationEligible": false
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "sourceRecipeHashMatchesMain": true,
+      "installedPolicyError": "Error: UNREVIEWED_FOOD_PREPARATION: F7600-r6 / NAKKI, KEITETTY / lowcho50-r6",
+      "originalResearchGk": 5.3852925,
+      "proposedResearchGk": 5.3852925,
+      "researchMacros": {
+        "availableCarbohydrate": 11.678835000000001,
+        "protein": 13.80718,
+        "fat": 17.507430000000003,
+        "fibre": 3.5136499999999997
+      },
+      "inputHash": "2071329a31315d2ac834d0be23310b5b6e335636b11932a225b623076d49cc34",
+      "stagedFoodBindings": "PASS",
+      "sourceDecision": "RETAIN_USDA_PROXY_NO_BAY_SUBSTITUTION",
+      "normalization": null,
+      "strictTotalCarbohydratePerServing": null,
+      "polyolsPer100g": null,
+      "status": "HOLD_PUBLICATION_POLYOL_SOURCE_INCOMPLETE",
+      "publicationEligible": false
+    }
+  ],
+  "nakkiBindingReview": {
+    "existingAliases": 2,
+    "proposedAliases": 7,
+    "allNineIngredientBindingsPassInScratch": true,
+    "installedCatalogUnchanged": true,
+    "newFoodTypes": 0,
+    "newSourceRules": 0
+  },
+  "marjoramProposal": {
+    "sourceRecord": {
+      "id": "norway-06.186-polyoli02-20261101",
+      "per100g": {
+        "availableCarbohydrate": 20.3,
+        "protein": 12.7,
+        "fat": 7,
+        "fibre": 40
+      },
+      "sourceRecord": {
+        "id": "matvaretabellen-06.186",
+        "name": "Marjoram, dried",
+        "state": "dried marjoram, ground and fully consumed",
+        "sourceUrl": "https://www.matvaretabellen.no/en/marjoram-dried/",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "AVAILABLE_SUM_SUGARS_AND_STARCH_MI0181",
+        "polyolsSourceVerified": false,
+        "polyolsValue": null,
+        "polyolsValueType": "MISSING_SOURCE10",
+        "sourceApiSha256": "89b8f5f494a79731bf7d8d98065ee66c55263ccdbb519e7c87941218be6c948d",
+        "componentEvidence": [
+          {
+            "sourceId": "MI0181",
+            "quantity": 20.3,
+            "unit": "g",
+            "nutrientId": "Karbo",
+            "sourceDescription": "Carbohydrate, available calculated from sugar and starch   (CHO[g] = SUGAR[g] + STARCH[g])"
+          },
+          {
+            "sourceId": "50",
+            "quantity": 0,
+            "unit": "g",
+            "nutrientId": "Alko",
+            "sourceDescription": "Estimated as a naturally occurring zero value, not analysed."
+          },
+          {
+            "sourceId": "460g",
+            "quantity": 40,
+            "unit": "g",
+            "nutrientId": "Fiber",
+            "sourceDescription": "US Department of Agriculture, Agricultural Research Service. USDA National Nutrient Database for Standard Reference, Release 28 (2015). Nutrient Data Laboratory Home Page"
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "CHOCALOH",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "460g",
+            "quantity": 12.7,
+            "unit": "g",
+            "nutrientId": "Protein",
+            "sourceDescription": "US Department of Agriculture, Agricultural Research Service. USDA National Nutrient Database for Standard Reference, Release 28 (2015). Nutrient Data Laboratory Home Page"
+          },
+          {
+            "sourceId": "MI_SUGAR_NO",
+            "quantity": 4.1,
+            "unit": "g",
+            "nutrientId": "Mono+Di",
+            "sourceDescription": "Sugar calculated as the sum of fructose, glucose, lactose, maltose and sucrose   (SUGAR[g] = FRUS[g] + GLUS[g] + LACS[g] + MALS[g] + SUCS[g])"
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "POLYL",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "GLUS",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "MALS",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "SUCS",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "460g",
+            "quantity": 7,
+            "unit": "g",
+            "nutrientId": "Fett",
+            "sourceDescription": "US Department of Agriculture, Agricultural Research Service. USDA National Nutrient Database for Standard Reference, Release 28 (2015). Nutrient Data Laboratory Home Page"
+          },
+          {
+            "sourceId": "331",
+            "quantity": 16.2,
+            "unit": "g",
+            "nutrientId": "Stivel",
+            "sourceDescription": "Frydenberg, H, Urke EB & Carlsen MH. Sugar project 2021-2024. University of Oslo, department of nutrition."
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "FRUS",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "LACS",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          },
+          {
+            "sourceId": "10",
+            "nutrientId": "CHOCAL",
+            "sourceDescription": "Missing value, content not known.",
+            "quantity": null
+          }
+        ]
+      },
+      "foodKind": "GROUND_SPICE",
+      "reviewState": "SOURCE_SPECIFIC_RESEARCH_PROPOSAL_NOT_PUBLICATION_EVIDENCE",
+      "evidenceHash": "67eec2d1c031276a0bb4bc0b2845680efcf907dc17311c0b2db4690112407a49"
+    },
+    "giSourceVariant": {
+      "id": "marjoram50-polyoli02-source-substitution",
+      "gi": 50,
+      "scale": "GLUCOSE_100",
+      "family": "small-spice-extension",
+      "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "location": "Explicit project extension of coding default, not directly published for these foods",
+      "confidence": "LOW",
+      "projectExtension": true,
+      "maxCarbohydratePerServing": 0.5,
+      "maxCumulativeCarbohydratePerServing": 1,
+      "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+      "allowedCompositionIds": [
+        "norway-06.186-polyoli02-20261101"
+      ],
+      "recipeScope": [
+        "jauheliha-kaalikeitto-vhh",
+        "vhh-kaalilaatikko"
+      ],
+      "applicationNote": "Existing named GI50 assumption rebound only to the reviewed dried-marjoram composition; source substitution awaits owner review.",
+      "evidenceHash": "4fa08559f234bdfa41baebc09bc20feb670e84f94e157e7bb7c9d72ad8919547"
+    },
+    "catalogAlias": {
+      "compositionId": "norway-06.186-polyoli02-20261101",
+      "foodId": "NO06.186",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "dried marjoram, ground and fully consumed",
+      "allowedSources": [
+        "marjoram50-polyoli02-source-substitution"
+      ],
+      "consumedForms": {
+        "marjoram50-polyoli02-source-substitution": "AS_DEFINED"
+      }
+    },
+    "catalogSourceRule": {
+      "foodKinds": [
+        "GROUND_SPICE"
+      ],
+      "consumedForm": "AS_DEFINED"
+    },
+    "ownerApprovalPending": true
+  },
+  "controls": {
+    "negativeFoodBindingControls": 4,
+    "unknownVsKnownPolyolControls": 2
+  },
+  "copiedProductionValidatorSha256": "80d048873db4931b6c3739d5058ae9ad3c576f4e331ccdc3ddc722f5fdf5814c",
+  "newPublishableRecipes": 0,
+  "publicationEligible": false
+}

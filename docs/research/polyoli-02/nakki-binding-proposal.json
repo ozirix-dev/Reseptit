@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "baseMain": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+  "recipeId": "nakkikeitto-kukkakaalilla",
+  "bundleHash": "6301e77c1e4a1453e732e3c8f8f3aa3f8181bf513064e518612a329c6b7964d3",
+  "catalogSha256": "34a096e732899dd72f05677d5dc5fbc1f2e65d7ca6e819fb2e3033186c7f3af0",
+  "existingAliasesRetained": 2,
+  "addAliases": [
+    {
+      "compositionId": "F7600-r6",
+      "foodId": "F7600",
+      "foodKind": "NAMED_LOW_CHO",
+      "inputForm": "NAKKI, KEITETTY",
+      "allowedSources": [
+        "lowcho50-r6"
+      ],
+      "consumedForms": {
+        "lowcho50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F322-r6",
+      "foodId": "F322",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "KUKKAKAALI",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "A002390-r6",
+      "foodId": "A002390",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "Celery, fresh, raw",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F337-r6",
+      "foodId": "F337",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "PURJOSIPULI",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    },
+    {
+      "compositionId": "F29-r6",
+      "foodId": "F29",
+      "foodKind": "STOCK",
+      "inputForm": "LIHALIEMI, LAIMENNETTU",
+      "allowedSources": [
+        "lowcho50-r6"
+      ],
+      "consumedForms": {
+        "lowcho50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "U170917-r6",
+      "foodId": "U170917",
+      "foodKind": "GROUND_SPICE",
+      "inputForm": "Spices, bay leaf",
+      "allowedSources": [
+        "small-flavour50-r6"
+      ],
+      "consumedForms": {
+        "small-flavour50-r6": "AS_DEFINED"
+      }
+    },
+    {
+      "compositionId": "F333-r6",
+      "foodId": "F333",
+      "foodKind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "PERSILJA",
+      "allowedSources": [
+        "vegetable-imputation40"
+      ],
+      "consumedForms": {
+        "vegetable-imputation40": "WHOLE_CHOPPED_OR_CRUSHED_NONSTARCHY_VEGETABLE_RETAINED"
+      }
+    }
+  ],
+  "ingredientReview": [
+    {
+      "index": 0,
+      "name": "keitettyä nakkia, Fineli7600-tyyppi",
+      "compositionId": "F7600-r6",
+      "sourceEvidenceHash": "241f19be92119789474c38585b475fcb75f436bf2af3e45158c86640df18856e",
+      "foodId": "F7600",
+      "kind": "NAMED_LOW_CHO",
+      "inputForm": "NAKKI, KEITETTY",
+      "giSourceId": "lowcho50-r6",
+      "sourceExplicitlyAllowsComposition": true,
+      "existingAlias": false,
+      "action": "PROPOSE_EXACT_ALIAS"
+    },
+    {
+      "index": 1,
+      "name": "kukkakaalia",
+      "compositionId": "F322-r6",
+      "sourceEvidenceHash": "0e30bc294c609c310216b69aab26e7d4a94225fd78492aea123c87e9a03a662d",
+      "foodId": "F322",
+      "kind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "KUKKAKAALI",
+      "giSourceId": "vegetable-imputation40",
+      "sourceExplicitlyAllowsComposition": true,
+      "existingAlias": false,
+      "action": "PROPOSE_EXACT_ALIAS"
+    },
+    {
+      "index": 2,
+      "name": "varsiselleriä",
+      "compositionId": "A002390-r6",
+      "sourceEvidenceHash": "110820aa1f2583188d6f1883f8c0342e4d157a71b70f92d1bc0dfd70857d0dfb",
+      "foodId": "A002390",
+      "kind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "Celery, fresh, raw",
+      "giSourceId": "vegetable-imputation40",
+      "sourceExplicitlyAllowsComposition": true,
+      "existingAlias": false,
+      "action": "PROPOSE_EXACT_ALIAS"
+    },
+    {
+      "index": 3,
+      "name": "purjoa",
+      "compositionId": "F337-r6",
+      "sourceEvidenceHash": "f32039c2511485a1fa1c971b311d0a71fa04d76f66d1d2f24460d82cbafe3bf3",
+      "foodId": "F337",
+      "kind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "PURJOSIPULI",
+      "giSourceId": "vegetable-imputation40",
+      "sourceExplicitlyAllowsComposition": true,
+      "existingAlias": false,
+      "action": "PROPOSE_EXACT_ALIAS"
+    },
+    {
+      "index": 4,
+      "name": "sipulia",
+      "compositionId": "F335-r6",
+      "sourceEvidenceHash": "7123bcfe9a0dae08d2629d82fa2258c2784aa98a86b402e866780751ec8c4897",
+      "foodId": "F335",
+      "kind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "SIPULI, KELTASIPULI",
+      "giSourceId": "vegetable-imputation40",
+      "sourceExplicitlyAllowsComposition": true,
+      "existingAlias": true,
+      "action": "RETAIN"
+    },
+    {
+      "index": 5,
+      "name": "käyttövalmista lihalientä",
+      "compositionId": "F29-r6",
+      "sourceEvidenceHash": "fb10d1e1de85542f82e770d9c10c5926079f27d24510a4c04e605a4ca7130021",
+      "foodId": "F29",
+      "kind": "STOCK",
+      "inputForm": "LIHALIEMI, LAIMENNETTU",
+      "giSourceId": "lowcho50-r6",
+      "sourceExplicitlyAllowsComposition": true,
+      "existingAlias": false,
+      "action": "PROPOSE_EXACT_ALIAS"
+    },
+    {
+      "index": 6,
+      "name": "jauhettua laakerinlehteä kokonaan syötäväksi",
+      "compositionId": "U170917-r6",
+      "sourceEvidenceHash": "ff5621895902eeed69a222a07fae378824b92374f92d9e6e8e6d9ed14eb20ac1",
+      "foodId": "U170917",
+      "kind": "GROUND_SPICE",
+      "inputForm": "Spices, bay leaf",
+      "giSourceId": "small-flavour50-r6",
+      "sourceExplicitlyAllowsComposition": true,
+      "existingAlias": false,
+      "action": "PROPOSE_EXACT_ALIAS"
+    },
+    {
+      "index": 7,
+      "name": "jauhettua mustapippuria",
+      "compositionId": "A006618-r6",
+      "sourceEvidenceHash": "d8ab25b158562afbd71af5b72b5675230f301bf2273aceafd015a5eee4d5d537",
+      "foodId": "A006618",
+      "kind": "GROUND_SPICE",
+      "inputForm": "Pepper, black, ground",
+      "giSourceId": "small-flavour50-r6",
+      "sourceExplicitlyAllowsComposition": true,
+      "existingAlias": true,
+      "action": "RETAIN"
+    },
+    {
+      "index": 8,
+      "name": "tuoretta persiljaa",
+      "compositionId": "F333-r6",
+      "sourceEvidenceHash": "b17bfe7472dbc2ced91d4130909c745cc0c8544f68904a7d0565b65b65f006b5",
+      "foodId": "F333",
+      "kind": "NONSTARCHY_VEGETABLE",
+      "inputForm": "PERSILJA",
+      "giSourceId": "vegetable-imputation40",
+      "sourceExplicitlyAllowsComposition": true,
+      "existingAlias": false,
+      "action": "PROPOSE_EXACT_ALIAS"
+    }
+  ],
+  "newFoodTypes": {},
+  "newSourceRules": {},
+  "ownerApprovalPending": true,
+  "applyToProduction": false,
+  "publicationEligible": false,
+  "remainingBlocker": "U170917-r6 missing polyol quantity and unverifiable available-CHO partition"
+}

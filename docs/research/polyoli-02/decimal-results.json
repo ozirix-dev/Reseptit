@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "recipes": 5,
+  "arithmeticTolerance": "1e-12",
+  "results": [
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "researchGk": "4.588900000000000000000000000000000000000",
+      "deltaGk": "0.000020000000000000000000000000000000000",
+      "researchMacros": {
+        "availableCarbohydrate": "10.20913333333333333333333333333333333334",
+        "protein": "17.68178333333333333333333333333333333334",
+        "fat": "15.25975000000000000000000000000000000000",
+        "fibre": "1.932750000000000000000000000000000000000"
+      },
+      "deltaMacros": {
+        "availableCarbohydrate": "0.00004000000000000000000000000000000000",
+        "protein": "0.00004000000000000000000000000000000000",
+        "fat": "-0.00004000000000000000000000000000000000",
+        "fibre": "-0.000300000000000000000000000000000000000"
+      },
+      "totalCarbohydratePerServing": null,
+      "publicationEligible": false
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "researchGk": "3.773416666666666666666666666666666666667",
+      "deltaGk": "0.000020000000000000000000000000000000000",
+      "researchMacros": {
+        "availableCarbohydrate": "9.519966666666666666666666666666666666667",
+        "protein": "20.85505000000000000000000000000000000000",
+        "fat": "30.65350000000000000000000000000000000001",
+        "fibre": "3.195000000000000000000000000000000000000"
+      },
+      "deltaMacros": {
+        "availableCarbohydrate": "0.000040000000000000000000000000000000000",
+        "protein": "0.00004000000000000000000000000000000000",
+        "fat": "-0.00004000000000000000000000000000000000",
+        "fibre": "-0.000300000000000000000000000000000000000"
+      },
+      "totalCarbohydratePerServing": null,
+      "publicationEligible": false
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "researchGk": "3.345728333333333333333333333333333333334",
+      "deltaGk": "0E-39",
+      "researchMacros": {
+        "availableCarbohydrate": "7.682056666666666666666666666666666666666",
+        "protein": "34.05837000000000000000000000000000000000",
+        "fat": "6.775453333333333333333333333333333333333",
+        "fibre": "2.116433333333333333333333333333333333335"
+      },
+      "deltaMacros": {
+        "availableCarbohydrate": "0E-39",
+        "protein": "0E-38",
+        "fat": "0E-39",
+        "fibre": "0E-39"
+      },
+      "totalCarbohydratePerServing": null,
+      "publicationEligible": false
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "researchGk": "3.8320925",
+      "deltaGk": "0E-7",
+      "researchMacros": {
+        "availableCarbohydrate": "9.085085",
+        "protein": "12.025430",
+        "fat": "17.423555",
+        "fibre": "3.137775"
+      },
+      "deltaMacros": {
+        "availableCarbohydrate": "0.000000",
+        "protein": "0.000000",
+        "fat": "0.000000",
+        "fibre": "0.000000"
+      },
+      "totalCarbohydratePerServing": null,
+      "publicationEligible": false
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "researchGk": "5.3852925",
+      "deltaGk": "0E-7",
+      "researchMacros": {
+        "availableCarbohydrate": "11.678835",
+        "protein": "13.807180",
+        "fat": "17.507430",
+        "fibre": "3.513650"
+      },
+      "deltaMacros": {
+        "availableCarbohydrate": "0.000000",
+        "protein": "0.000000",
+        "fat": "0.000000",
+        "fibre": "0.000000"
+      },
+      "totalCarbohydratePerServing": null,
+      "publicationEligible": false
+    }
+  ]
+}
