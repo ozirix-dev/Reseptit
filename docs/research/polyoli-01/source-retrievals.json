@@ -1,0 +1,104 @@
+{
+  "retrievals": [
+    {
+      "id": "pages",
+      "url": "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/",
+      "fetchedAt": "2026-11-01T11:01:27.057395+00:00",
+      "status": 200,
+      "finalUrl": "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/",
+      "sha256": "614c99774367a1d203e634fe87bc0a995159858f61ff16a16c8965cf4d6cef06",
+      "bytes": 546051
+    },
+    {
+      "id": "pepper",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F006618",
+      "fetchedAt": "2026-11-01T11:01:27.058312+00:00",
+      "status": 200,
+      "finalUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F006618",
+      "sha256": "84f47d9ee677b4d9663b33c01c82abe6d7bfda1878a657287d4cbf4e5c8642a9",
+      "bytes": 10273
+    },
+    {
+      "id": "thyme",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F010466",
+      "fetchedAt": "2026-11-01T11:01:27.059632+00:00",
+      "status": 200,
+      "finalUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F010466",
+      "sha256": "83aa2b71751f136378d820d56d0c2ab01e9c378afe3690ea841528191a68722d",
+      "bytes": 11950
+    },
+    {
+      "id": "fresh-marjoram",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F010451",
+      "fetchedAt": "2026-11-01T11:01:27.060570+00:00",
+      "status": 200,
+      "finalUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F010451",
+      "sha256": "3b5c41fc681612474cc742c86bf28a4761782667fd2e2814530156303b968537",
+      "bytes": 9246
+    },
+    {
+      "id": "afcd-nutrients",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/nutrients",
+      "fetchedAt": "2026-11-01T11:01:27.061441+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "paneer",
+      "url": "https://www.matvaretabellen.no/en/cheese-paneer/",
+      "fetchedAt": "2026-11-01T11:01:27.063359+00:00",
+      "status": 200,
+      "finalUrl": "https://www.matvaretabellen.no/en/cheese-paneer/",
+      "sha256": "034436512aec60377017d3264d3b59c85f86e77cad76bd94c59d2fc9482a6029",
+      "bytes": 138842
+    },
+    {
+      "id": "norway-about",
+      "url": "https://www.matvaretabellen.no/en/calculation-of-nutrient-content/",
+      "fetchedAt": "2026-11-01T11:01:27.508034+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "chicken",
+      "url": "https://www.kivikylan.fi/tuotteet/paahdettu-kanaliemi/",
+      "fetchedAt": "2026-11-01T11:01:27.612706+00:00",
+      "status": 200,
+      "finalUrl": "https://www.kivikylan.fi/tuotteet/paahdettu-kanaliemi/",
+      "sha256": "66d25a7699a119e9ea086924527cc3d65cbaef8b243766dbe0c654a9c55ea240",
+      "bytes": 346905
+    },
+    {
+      "id": "maille",
+      "url": "https://www.unileverfoodsolutions.fi/tuotteet/maille-dijon-originale-sinappi-1-kg-34-FI-1203997.html",
+      "fetchedAt": "2026-11-01T11:01:27.655543+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "dried-marjoram",
+      "url": "https://www.matvaretabellen.no/en/marjoram-dried/",
+      "status": 200,
+      "fetchedAt": "2026-11-01T11:08:55.597388+00:00",
+      "sha256": "c30a11bd8c586244802f1386fc2e6499bf15e59aad15e98da46d823904ce69f8",
+      "bytes": 130392
+    },
+    {
+      "id": "dried-bay",
+      "url": "https://www.matvaretabellen.no/laurbaerblad-torket/",
+      "status": 200,
+      "fetchedAt": "2026-11-01T11:08:55.885413+00:00",
+      "sha256": "f06e76c8faf27799e59abedb29a51ebea323f12f0d3b685b2d1210e6d1e366e7",
+      "bytes": 129953
+    },
+    {
+      "id": "afcd-nutrient-details-release-3",
+      "url": "https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Nutrient%20details.xlsx",
+      "status": 200,
+      "sha256": "7c455129a90e65d29840ecd188fa223cca8bdf0729b21efebc286884d69fafaa",
+      "readMethod": "Python zipfile + XML, sheet3 nutrient equations, no workbook edits"
+    }
+  ],
+  "notes": [
+    "Raw source documents remain in disposable scratch; hashes bind exact read versions.",
+    "Failed retrievals do not supply evidence. Maille catalogue values were re-read in primary indexed PDF; no invented download hash.",
+    "AFCD paired difference is a derived source-model quantity, not total polyols measured in a food."
+  ]
+}

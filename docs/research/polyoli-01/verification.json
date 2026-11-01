@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "date": "2026-11-01",
+  "baseMain": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+  "prototypeUnitTests": {"passed": 12, "failed": 0},
+  "existingTargetedTests": {
+    "passed": 17,
+    "failed": 0,
+    "files": ["site/tests/nutrition-model.test.ts", "site/tests/gk80-food-safety.test.ts", "site/tests/gk80-display.test.ts"]
+  },
+  "independentDecimalNumberScenarioComparisons": 144,
+  "maxComparisonTolerance": "1e-12",
+  "independentHeldDecimalBaselines": 9,
+  "knownRecipeAndMacroControls": 3,
+  "productionRegression": {"recipes": 326, "numeric": 130, "identicalCompleteResultObjects": 326},
+  "repositoryChanges": "docs/research/polyoli-01 only",
+  "ciSelector": {"full": false, "needsNode": false, "runBuild": false, "runBrowser": false, "publish": false},
+  "fullSiteBuilds": 0,
+  "browserSessions": 0,
+  "manualActionsDispatches": 0,
+  "productionCalculationChanged": false,
+  "newPublicationEligibleResults": 0,
+  "mergeOrDeployAuthorized": false
+}

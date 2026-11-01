@@ -1,0 +1,1247 @@
+{
+  "schemaVersion": 1,
+  "baseMain": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+  "researchCommit": "f3777a8c423f4cb49eb67b0f2aca318aaebb7531",
+  "production": {
+    "recipes": 326,
+    "calculated": 130
+  },
+  "publicationEligible": false,
+  "giScenarioCaps": [
+    50,
+    100,
+    120,
+    150
+  ],
+  "thresholds": [
+    0.05,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "recipes": [
+    {
+      "recipeId": "palak-paneer",
+      "title": "Palak paneer – pinaattia ja intialaista tuorejuustoa",
+      "originFile": "docs/nutrition/gk80-release-6/held-review.json",
+      "originFileSha256": "dff21635b41567d3de85b28c491b34a159ed5a80ce5eecef26f86d44dde1fbeb",
+      "bundleHash": "ffd1d53857b38cc30aa204c0fb02e93afbf1e8816c320d244c3c7faf919214d0",
+      "recipeInputHash": "fa4b12a88b60223a8cd9598ed1c66be3421ce38188ac36f012a389e4ecd28449",
+      "currentSourceMatches": true,
+      "servings": 4,
+      "baselineModelGk": "1.1536875",
+      "originalGoldenGk": 1.1536875,
+      "completeScope": true,
+      "otherPreparationBlockers": [
+        "Error: UNREVIEWED_FOOD_PREPARATION: A008761-r6 / Spinach, Mature English, fresh, raw / vegetable-imputation40"
+      ],
+      "publicationMacroBlocker": true,
+      "uncertainties": [
+        {
+          "ingredientIndex": 1,
+          "name": "paneeria, norjalainen koostumusproxy",
+          "sourceId": "N01301-r6",
+          "sourceEvidenceHash": "fbfd6198057497622f38daec6c38b389b3c929f41f3399132bff584cff7a0044",
+          "sourceUrl": "https://www.matvaretabellen.no/en/cheese-paneer/",
+          "group": "P4",
+          "definition": "AVAILABLE_EXCLUDING_POLYOLS",
+          "choPer100": 0,
+          "fibrePer100": 0,
+          "sugarsPer100": 0,
+          "polyolsPer100": null,
+          "massG": 250,
+          "retention": 1,
+          "assignedGi": null,
+          "modelChoPer100": 0,
+          "unknownPoolPer100": null,
+          "scenarioPoolUpperPer100": null,
+          "roundingScenario": "MASS_ONLY_NO_POLYOL_CEILING_FROM_CHO",
+          "roundingStepHalf": null,
+          "consumed": "LOCKED_VERSION_ALL_CONSUMED"
+        }
+      ]
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "title": "Nakkikeitto kukkakaalilla",
+      "originFile": "docs/nutrition/gk80-release-6/held-review.json",
+      "originFileSha256": "dff21635b41567d3de85b28c491b34a159ed5a80ce5eecef26f86d44dde1fbeb",
+      "bundleHash": "6301e77c1e4a1453e732e3c8f8f3aa3f8181bf513064e518612a329c6b7964d3",
+      "recipeInputHash": "2071329a31315d2ac834d0be23310b5b6e335636b11932a225b623076d49cc34",
+      "currentSourceMatches": true,
+      "servings": 4,
+      "baselineModelGk": "5.3852925",
+      "originalGoldenGk": 5.3852925,
+      "completeScope": true,
+      "otherPreparationBlockers": [
+        "Error: UNREVIEWED_FOOD_PREPARATION: F7600-r6 / NAKKI, KEITETTY / lowcho50-r6"
+      ],
+      "publicationMacroBlocker": true,
+      "uncertainties": [
+        {
+          "ingredientIndex": 6,
+          "name": "jauhettua laakerinlehteä kokonaan syötäväksi",
+          "sourceId": "U170917-r6",
+          "sourceEvidenceHash": "ff5621895902eeed69a222a07fae378824b92374f92d9e6e8e6d9ed14eb20ac1",
+          "sourceUrl": "https://fdc.nal.usda.gov/food-details/170917/nutrients",
+          "group": "P1",
+          "definition": "US_TOTAL",
+          "choPer100": 74.97,
+          "fibrePer100": 26.3,
+          "sugarsPer100": null,
+          "polyolsPer100": null,
+          "massG": 0.2,
+          "retention": 1,
+          "assignedGi": 50,
+          "modelChoPer100": 48.67,
+          "unknownPoolPer100": 48.67,
+          "scenarioPoolUpperPer100": 48.67,
+          "roundingScenario": "SOURCE_MODEL_NOT_ANALYTICAL_BOUND",
+          "roundingStepHalf": 0,
+          "consumed": "ALL_GROUND_AND_EATEN"
+        }
+      ]
+    },
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "title": "Jauheliha-kaalikeitto",
+      "originFile": "docs/nutrition/gk80-release-7/held-review.json",
+      "originFileSha256": "ff5843d5667720ff456e4c98bae4270025ba7329c38ba35a3560ecf3a258288d",
+      "bundleHash": "5a239e8063598fea3f047e2ca09b4b4e5356190aba920de0ee1aa59fd86583bc",
+      "recipeInputHash": "a449d57b10e5aaffeba23d5c41dccebdab201776795983fb714d58f261fb3a4c",
+      "currentSourceMatches": true,
+      "servings": 6,
+      "baselineModelGk": "4.588880000000000000000000000",
+      "originalGoldenGk": 4.58888,
+      "completeScope": true,
+      "otherPreparationBlockers": [],
+      "publicationMacroBlocker": true,
+      "uncertainties": [
+        {
+          "ingredientIndex": 6,
+          "name": "kuivattua meiramia jauhettuna",
+          "sourceId": "U170928-r5",
+          "sourceEvidenceHash": "282966ab15a23786dc2afc3ea7dcf7e2a9aebb4aef7ca9172a07eb8417b4494e",
+          "sourceUrl": "https://fdc.nal.usda.gov/food-details/170928/nutrients",
+          "group": "P1",
+          "definition": "US_TOTAL",
+          "choPer100": 60.56,
+          "fibrePer100": 40.3,
+          "sugarsPer100": 4.09,
+          "polyolsPer100": null,
+          "massG": 0.6,
+          "retention": 1,
+          "assignedGi": 50,
+          "modelChoPer100": 20.26,
+          "unknownPoolPer100": 20.26,
+          "scenarioPoolUpperPer100": 20.26,
+          "roundingScenario": "SOURCE_MODEL_NOT_ANALYTICAL_BOUND",
+          "roundingStepHalf": 0,
+          "consumed": "LOCKED_VERSION_ALL_CONSUMED"
+        }
+      ]
+    },
+    {
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "title": "Jauhelihapihvit ja kermakastike ilman jauhoja",
+      "originFile": "docs/nutrition/gk80-release-7/held-review.json",
+      "originFileSha256": "ff5843d5667720ff456e4c98bae4270025ba7329c38ba35a3560ecf3a258288d",
+      "bundleHash": "a602528ab80b35db13a6db97ff629df83d95dfb1d227272cf193ce6121a1ae69",
+      "recipeInputHash": "6b22b903772a9779f42547937564d437ba3bacb3e6556b68cc915a3b31cf0cbf",
+      "currentSourceMatches": true,
+      "servings": 4,
+      "baselineModelGk": "1.330150",
+      "originalGoldenGk": 1.33015,
+      "completeScope": true,
+      "otherPreparationBlockers": [],
+      "publicationMacroBlocker": true,
+      "uncertainties": [
+        {
+          "ingredientIndex": 8,
+          "name": "Maille Dijon Originale 1kg EAN8711200375684",
+          "sourceId": "maille-label-proxy",
+          "sourceEvidenceHash": "d94c9ea25cc574f20be8a2e373e828848a84a8ee017aee8ebaa924343a7d56aa",
+          "sourceUrl": "https://www.unileverfoodsolutions.fi/tuotteet/maille-dijon-originale-sinappi-1-kg-34-FI-1203997.html",
+          "group": "P2",
+          "definition": "EU_LABEL",
+          "choPer100": 3.5,
+          "fibrePer100": 2,
+          "sugarsPer100": 1.9,
+          "polyolsPer100": null,
+          "massG": 5,
+          "retention": 1,
+          "assignedGi": 50,
+          "modelChoPer100": 3.5,
+          "unknownPoolPer100": 3.5,
+          "scenarioPoolUpperPer100": 3.55,
+          "roundingScenario": "NEAREST_0_1_SCENARIO_ONLY",
+          "roundingStepHalf": 0.05,
+          "consumed": "LOCKED_VERSION_ALL_CONSUMED"
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "title": "VHH-kaalilaatikko ilman riisiä",
+      "originFile": "docs/nutrition/gk80-release-7/held-review.json",
+      "originFileSha256": "ff5843d5667720ff456e4c98bae4270025ba7329c38ba35a3560ecf3a258288d",
+      "bundleHash": "858e33ca60018b250ef85e962336c6a3766edac1d2f169881e1a2686492e87a0",
+      "recipeInputHash": "a09d8b292b9e425be7dc7e5192bb5ee43d7746a156f924755202922235c7d014",
+      "currentSourceMatches": true,
+      "servings": 6,
+      "baselineModelGk": "3.773396666666666666666666667",
+      "originalGoldenGk": 3.7733966666666667,
+      "completeScope": true,
+      "otherPreparationBlockers": [],
+      "publicationMacroBlocker": true,
+      "uncertainties": [
+        {
+          "ingredientIndex": 8,
+          "name": "kuivattua meiramia jauhettuna",
+          "sourceId": "U170928-r5",
+          "sourceEvidenceHash": "282966ab15a23786dc2afc3ea7dcf7e2a9aebb4aef7ca9172a07eb8417b4494e",
+          "sourceUrl": "https://fdc.nal.usda.gov/food-details/170928/nutrients",
+          "group": "P1",
+          "definition": "US_TOTAL",
+          "choPer100": 60.56,
+          "fibrePer100": 40.3,
+          "sugarsPer100": 4.09,
+          "polyolsPer100": null,
+          "massG": 0.6,
+          "retention": 1,
+          "assignedGi": 50,
+          "modelChoPer100": 20.26,
+          "unknownPoolPer100": 20.26,
+          "scenarioPoolUpperPer100": 20.26,
+          "roundingScenario": "SOURCE_MODEL_NOT_ANALYTICAL_BOUND",
+          "roundingStepHalf": 0,
+          "consumed": "LOCKED_VERSION_ALL_CONSUMED"
+        }
+      ]
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "title": "Kuubalainen ropa vieja",
+      "originFile": "docs/nutrition/gk80-release-7/held-review.json",
+      "originFileSha256": "ff5843d5667720ff456e4c98bae4270025ba7329c38ba35a3560ecf3a258288d",
+      "bundleHash": "ba5818b4e56caf2e04e03c7e60e5e10b92d42a39e2a2efa2fe5781815e5794f9",
+      "recipeInputHash": "881b2c3c35e5421f5318196aa142c26832de23036fc0c11ea7ea893128709bab",
+      "currentSourceMatches": true,
+      "servings": 6,
+      "baselineModelGk": "3.345728333333333333333333334",
+      "originalGoldenGk": 3.345728333333333,
+      "completeScope": true,
+      "otherPreparationBlockers": [],
+      "publicationMacroBlocker": true,
+      "uncertainties": [
+        {
+          "ingredientIndex": 9,
+          "name": "jauhettua laakerinlehteä, kokonaan mukana",
+          "sourceId": "U170917-r5",
+          "sourceEvidenceHash": "a6a2b661fedc819dde47288886a4aa2a8211ef00810de7b8911698caa55246cf",
+          "sourceUrl": "https://fdc.nal.usda.gov/food-details/170917/nutrients",
+          "group": "P1",
+          "definition": "US_TOTAL",
+          "choPer100": 74.97,
+          "fibrePer100": 26.3,
+          "sugarsPer100": null,
+          "polyolsPer100": null,
+          "massG": 0.2,
+          "retention": 1,
+          "assignedGi": 50,
+          "modelChoPer100": 48.67,
+          "unknownPoolPer100": 48.67,
+          "scenarioPoolUpperPer100": 48.67,
+          "roundingScenario": "SOURCE_MODEL_NOT_ANALYTICAL_BOUND",
+          "roundingStepHalf": 0,
+          "consumed": "ALL_GROUND_AND_EATEN"
+        }
+      ]
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "title": "Siskonmakkarakeitto juureksilla",
+      "originFile": "docs/nutrition/gk80-release-7/held-review.json",
+      "originFileSha256": "ff5843d5667720ff456e4c98bae4270025ba7329c38ba35a3560ecf3a258288d",
+      "bundleHash": "f4d31c01e84a7cd759d4063c8066d7e8b40c84e2b0398c0d577d6cf6ba21bbc8",
+      "recipeInputHash": "04a01568ee71d710476cb5359045bf7d03e1ead48605aae1eaa689d0ecd48eaa",
+      "currentSourceMatches": true,
+      "servings": 4,
+      "baselineModelGk": "3.8320925",
+      "originalGoldenGk": 3.8320925,
+      "completeScope": true,
+      "otherPreparationBlockers": [],
+      "publicationMacroBlocker": true,
+      "uncertainties": [
+        {
+          "ingredientIndex": 6,
+          "name": "jauhettua laakerinlehteä, kokonaan mukana",
+          "sourceId": "U170917-r5",
+          "sourceEvidenceHash": "a6a2b661fedc819dde47288886a4aa2a8211ef00810de7b8911698caa55246cf",
+          "sourceUrl": "https://fdc.nal.usda.gov/food-details/170917/nutrients",
+          "group": "P1",
+          "definition": "US_TOTAL",
+          "choPer100": 74.97,
+          "fibrePer100": 26.3,
+          "sugarsPer100": null,
+          "polyolsPer100": null,
+          "massG": 0.2,
+          "retention": 1,
+          "assignedGi": 50,
+          "modelChoPer100": 48.67,
+          "unknownPoolPer100": 48.67,
+          "scenarioPoolUpperPer100": 48.67,
+          "roundingScenario": "SOURCE_MODEL_NOT_ANALYTICAL_BOUND",
+          "roundingStepHalf": 0,
+          "consumed": "ALL_GROUND_AND_EATEN"
+        }
+      ]
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "title": "Parmesaaninen kanapannu parsakaalilla",
+      "originFile": "docs/nutrition/gk80-release-7/held-review.json",
+      "originFileSha256": "ff5843d5667720ff456e4c98bae4270025ba7329c38ba35a3560ecf3a258288d",
+      "bundleHash": "f147d59dda8b017030c074b6836927453ad795a9fbe564476af937c3b0f05b01",
+      "recipeInputHash": "7f849d82e529726ecc5658c11dffb6bd08930165503ee142bbf3af5c0be81b00",
+      "currentSourceMatches": true,
+      "servings": 4,
+      "baselineModelGk": "1.076545",
+      "originalGoldenGk": 1.076545,
+      "completeScope": true,
+      "otherPreparationBlockers": [],
+      "publicationMacroBlocker": true,
+      "uncertainties": [
+        {
+          "ingredientIndex": 4,
+          "name": "Kivikylän Sooci Paahdettua kanalientä",
+          "sourceId": "chicken-label-proxy",
+          "sourceEvidenceHash": "6d13068a5f416aa1fcfda5be747a22f621e940fb59726ee0ebeb8cf1fcecac77",
+          "sourceUrl": "https://www.kivikylan.fi/tuotteet/paahdettu-kanaliemi/",
+          "group": "P3",
+          "definition": "EU_LABEL",
+          "choPer100": 0.2,
+          "fibrePer100": 1.1,
+          "sugarsPer100": 0.2,
+          "polyolsPer100": null,
+          "massG": 150,
+          "retention": 1,
+          "assignedGi": 50,
+          "modelChoPer100": 0.2,
+          "unknownPoolPer100": 0.2,
+          "scenarioPoolUpperPer100": 0.25,
+          "roundingScenario": "NEAREST_0_1_SCENARIO_ONLY_LOW_VALUE_REQUIRES_MANUFACTURER_CONFIRMATION",
+          "roundingStepHalf": 0.05,
+          "consumed": "LOCKED_VERSION_ALL_CONSUMED"
+        }
+      ]
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "title": "Kermainen kanasienipannu",
+      "originFile": "docs/nutrition/gk80-release-7/held-review.json",
+      "originFileSha256": "ff5843d5667720ff456e4c98bae4270025ba7329c38ba35a3560ecf3a258288d",
+      "bundleHash": "5cf44193e3d733c99a2771db3bc5548d15aa3dd7b8df4c433ff15e4a324b734a",
+      "recipeInputHash": "c087aaef8108504571f85493de2fab3afbffe3293d2266e5f28adf1156388709",
+      "currentSourceMatches": true,
+      "servings": 4,
+      "baselineModelGk": "1.146520",
+      "originalGoldenGk": 1.14652,
+      "completeScope": true,
+      "otherPreparationBlockers": [],
+      "publicationMacroBlocker": true,
+      "uncertainties": [
+        {
+          "ingredientIndex": 4,
+          "name": "Kivikylän Sooci Paahdettua kanalientä",
+          "sourceId": "chicken-label-proxy",
+          "sourceEvidenceHash": "6d13068a5f416aa1fcfda5be747a22f621e940fb59726ee0ebeb8cf1fcecac77",
+          "sourceUrl": "https://www.kivikylan.fi/tuotteet/paahdettu-kanaliemi/",
+          "group": "P3",
+          "definition": "EU_LABEL",
+          "choPer100": 0.2,
+          "fibrePer100": 1.1,
+          "sugarsPer100": 0.2,
+          "polyolsPer100": null,
+          "massG": 150,
+          "retention": 1,
+          "assignedGi": 50,
+          "modelChoPer100": 0.2,
+          "unknownPoolPer100": 0.2,
+          "scenarioPoolUpperPer100": 0.25,
+          "roundingScenario": "NEAREST_0_1_SCENARIO_ONLY_LOW_VALUE_REQUIRES_MANUFACTURER_CONFIRMATION",
+          "roundingStepHalf": 0.05,
+          "consumed": "LOCKED_VERSION_ALL_CONSUMED"
+        },
+        {
+          "ingredientIndex": 5,
+          "name": "Maille Dijon Originale -sinappia",
+          "sourceId": "maille-label-proxy",
+          "sourceEvidenceHash": "d94c9ea25cc574f20be8a2e373e828848a84a8ee017aee8ebaa924343a7d56aa",
+          "sourceUrl": "https://www.unileverfoodsolutions.fi/tuotteet/maille-dijon-originale-sinappi-1-kg-34-FI-1203997.html",
+          "group": "P2",
+          "definition": "EU_LABEL",
+          "choPer100": 3.5,
+          "fibrePer100": 2,
+          "sugarsPer100": 1.9,
+          "polyolsPer100": null,
+          "massG": 15,
+          "retention": 1,
+          "assignedGi": 50,
+          "modelChoPer100": 3.5,
+          "unknownPoolPer100": 3.5,
+          "scenarioPoolUpperPer100": 3.55,
+          "roundingScenario": "NEAREST_0_1_SCENARIO_ONLY",
+          "roundingStepHalf": 0.05,
+          "consumed": "LOCKED_VERSION_ALL_CONSUMED"
+        }
+      ]
+    }
+  ],
+  "otherHolds": [
+    {
+      "recipeId": "jerk-kana",
+      "group": "P5",
+      "reason": "Alkuperäisen ja ehdotetun valmistuksen inkiväärijauhe puuttuu laskentasyötteestä kokonaan. Aiempi46.749225 on vain subtotal, ei koko reseptin GK. Lisää todellinen punnittu inkivääri, täydellinen koostumus ja sallittu GI-sidos; älä poista inkivääriä tavoitteen vuoksi."
+    },
+    {
+      "recipeId": "pav-bhaji",
+      "group": "P5",
+      "reason": "Valmistuksessa70g porkkanaa, syötteessä60g; lisäksi keitetyn kokonaisen perunan GI66 ei yksin osoita myöhemmin soseutetun bhajin vastinetta. Aiempi43.343425 pidätetään kokoarviona, kunnes versio ja valmistusanalogia on perusteltu. Ei uuden globaalin perunasäännön hyväksyntää."
+    }
+  ],
+  "rawMissingFieldOccurrences": [
+    {
+      "recipeId": "palak-paneer",
+      "sourceId": "N01301-r6",
+      "paired": {
+        "AVAILCHO": null,
+        "AVAILCHOCNS": null
+      }
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "sourceId": "U170917-r6",
+      "paired": {
+        "AVAILCHO": null,
+        "AVAILCHOCNS": null
+      }
+    },
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "sourceId": "A006618-r5",
+      "paired": {
+        "AVAILCHO": 38.6,
+        "AVAILCHOCNS": 38.6
+      }
+    },
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "sourceId": "U170928-r5",
+      "paired": {
+        "AVAILCHO": null,
+        "AVAILCHOCNS": null
+      }
+    },
+    {
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "sourceId": "A006618-r5",
+      "paired": {
+        "AVAILCHO": 38.6,
+        "AVAILCHOCNS": 38.6
+      }
+    },
+    {
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "sourceId": "maille-label-proxy",
+      "paired": {
+        "AVAILCHO": null,
+        "AVAILCHOCNS": null
+      }
+    },
+    {
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "sourceId": "A006618-r5",
+      "paired": {
+        "AVAILCHO": 38.6,
+        "AVAILCHOCNS": 38.6
+      }
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "sourceId": "A006618-r5",
+      "paired": {
+        "AVAILCHO": 38.6,
+        "AVAILCHOCNS": 38.6
+      }
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "sourceId": "U170928-r5",
+      "paired": {
+        "AVAILCHO": null,
+        "AVAILCHOCNS": null
+      }
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "sourceId": "A004193-r5",
+      "paired": {
+        "AVAILCHO": 10.2,
+        "AVAILCHOCNS": 10.2
+      }
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "sourceId": "A003327-r5",
+      "paired": {
+        "AVAILCHO": 33.7,
+        "AVAILCHOCNS": 33.7
+      }
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "sourceId": "A006281-r5",
+      "paired": {
+        "AVAILCHO": 26.4,
+        "AVAILCHOCNS": 26.4
+      }
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "sourceId": "U170917-r5",
+      "paired": {
+        "AVAILCHO": null,
+        "AVAILCHOCNS": null
+      }
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "sourceId": "A008936-r5",
+      "paired": {
+        "AVAILCHO": 0.4,
+        "AVAILCHOCNS": 0.4
+      }
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "sourceId": "U170917-r5",
+      "paired": {
+        "AVAILCHO": null,
+        "AVAILCHOCNS": null
+      }
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "sourceId": "A006321-r5",
+      "paired": {
+        "AVAILCHO": 1.1,
+        "AVAILCHOCNS": 1.1
+      }
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "sourceId": "A006618-r5",
+      "paired": {
+        "AVAILCHO": 38.6,
+        "AVAILCHOCNS": 38.6
+      }
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "sourceId": "chicken-label-proxy",
+      "paired": {
+        "AVAILCHO": null,
+        "AVAILCHOCNS": null
+      }
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "sourceId": "afcd-F006618-checked",
+      "paired": {
+        "AVAILCHO": 38.6,
+        "AVAILCHOCNS": 38.6,
+        "PROT": 10.4,
+        "FAT": 3.3,
+        "AOACDFTOTW": 25.3
+      }
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "sourceId": "chicken-label-proxy",
+      "paired": {
+        "AVAILCHO": null,
+        "AVAILCHOCNS": null
+      }
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "sourceId": "maille-label-proxy",
+      "paired": {
+        "AVAILCHO": null,
+        "AVAILCHOCNS": null
+      }
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "sourceId": "afcd-F010466-checked",
+      "paired": {
+        "AVAILCHO": 1.1,
+        "AVAILCHOCNS": 1.1,
+        "PROT": 5.6,
+        "FAT": 1.7,
+        "AOACDFTOTW": 14
+      }
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "sourceId": "afcd-F006618-checked",
+      "paired": {
+        "AVAILCHO": 38.6,
+        "AVAILCHOCNS": 38.6,
+        "PROT": 10.4,
+        "FAT": 3.3,
+        "AOACDFTOTW": 25.3
+      }
+    }
+  ],
+  "additionalExistingEvidenceScreen": [],
+  "legacyNullPolyolReferences": [
+    {
+      "recipeId": "ratatouille",
+      "sourceIds": [
+        "fineli-11194-2026-10-24",
+        "fineli-11177-2026-10-24"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "vhh-kaalikaarryleet",
+      "sourceIds": [
+        "fineli-11177-2026-10-24"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "sourceIds": [
+        "fineli-11177-2026-10-24"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "taytetyt-paprikat-vhh",
+      "sourceIds": [
+        "fineli-11191-2026-10-24",
+        "fineli-11177-2026-10-24"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "sourceIds": [
+        "fineli-11177-2026-10-24"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "munakoiso-jauhelihavuoka-vhh",
+      "sourceIds": [
+        "fineli-11177-2026-10-24",
+        "fineli-11191-2026-10-24"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "chole-bhature",
+      "sourceIds": [
+        "fineli-31218-2026-10-24"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "jauheliha-makaronilaatikko",
+      "sourceIds": [
+        "fineli-11177-2026-10-24"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "panang-curry-kanalla-vhh",
+      "sourceIds": [
+        "fineli-29022-2026-10-24"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "kesakurpitsalasagne-vhh",
+      "sourceIds": [
+        "fineli-11177-2026-10-24",
+        "fineli-11191-2026-10-24"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "vhh-lohikeitto-kukkakaalilla",
+      "sourceIds": [
+        "fineli-34255-search-snapshot-2026-10-22"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "italian-pata",
+      "sourceIds": [
+        "fineli-11191-2026-10-24",
+        "fineli-11177-2026-10-24"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "broileri-kukkakaaligratiini",
+      "sourceIds": [
+        "fineli-11177-2026-10-24"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "som-tam-vhh-kurkkuna",
+      "sourceIds": [
+        "fineli-29022-2026-10-24"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "kermainen-lohipata",
+      "sourceIds": [
+        "fineli-34255-search-snapshot-2026-10-22",
+        "fineli-11177-2026-10-24",
+        "fineli-11191-2026-10-24"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "tom-yum-goong-vhh",
+      "sourceIds": [
+        "fineli-345-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "pad-kee-mao-vhh-konjac",
+      "sourceIds": [
+        "fineli-29022-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "vhh-mustikkapiirakka",
+      "sourceIds": [
+        "fineli-442-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "tom-kha-gai-vhh",
+      "sourceIds": [
+        "fineli-345-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "marjainen-chiavanukas",
+      "sourceIds": [
+        "fineli-448-2026-10-25",
+        "fineli-442-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "halloumimunakas",
+      "sourceIds": [
+        "fineli-33465-2026-10-25"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "keto-kauralesesampylat",
+      "sourceIds": [
+        "fineli-74-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "sourceIds": [
+        "fineli-11177-2026-10-25",
+        "fineli-11177-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "kaakao-kookos-chia",
+      "sourceIds": [
+        "fineli-382-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "parsakaali-sinihomejuustofrittata",
+      "sourceIds": [
+        "fineli-653-2026-10-25"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "kurkku-oliivi-aamiaiskulho",
+      "sourceIds": [
+        "fineli-28938-2026-10-25",
+        "fineli-11191-2026-10-25"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "uunilohi-smetanakuorrutteella",
+      "sourceIds": [
+        "fineli-34255-search-snapshot-2026-10-22",
+        "fineli-630-2026-10-25",
+        "fineli-11177-2026-10-25"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "moo-ping-vhh",
+      "sourceIds": [
+        "fineli-11178-2026-10-25"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "uuniporsas-kermakastikkeessa-vhh",
+      "sourceIds": [
+        "fineli-11177-2026-10-25",
+        "fineli-11194-2026-10-24"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "bun-cha-hanoi",
+      "sourceIds": [
+        "fineli-11177-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "bibimbap",
+      "sourceIds": [
+        "fineli-11734-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "goi-cuon",
+      "sourceIds": [
+        "fineli-835-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "idli-sambar",
+      "sourceIds": [
+        "fineli-156-2026-10-25",
+        "fineli-31219-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "dim-sum",
+      "sourceIds": [
+        "fineli-835-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "paella-valenciana",
+      "sourceIds": [
+        "fineli-156-release-20",
+        "fineli-372-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "meksikolainen-aamiais-tacot-mustapavuilla",
+      "sourceIds": [
+        "fineli-35638-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "meksikolainen-paputostada-aamupalaksi",
+      "sourceIds": [
+        "fineli-35638-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-baghrir",
+      "sourceIds": [
+        "fineli-4-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+      "sourceIds": [
+        "fineli-4-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "lahi-ita-ful-medames",
+      "sourceIds": [
+        "fineli-31233-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "meksikolainen-huevos-divorciados",
+      "sourceIds": [
+        "fineli-35638-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "meksikolainen-molletes-pico-de-gallolla",
+      "sourceIds": [
+        "fineli-35638-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "vietnamilainen-banh-cuon-sienilla",
+      "sourceIds": [
+        "fineli-345-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "sourceIds": [
+        "fineli-835-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "korealainen-gyeranbap-riisikulho",
+      "sourceIds": [
+        "fineli-34136-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "karibia-johnny-cake",
+      "sourceIds": [
+        "fineli-74-2026-10-25"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "lahi-ita-taatelipuuro-tahinilla",
+      "sourceIds": [
+        "fineli-153-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "vietnamilainen-banh-bao-kananmunalla",
+      "sourceIds": [
+        "fineli-345-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "sourceIds": [
+        "fineli-33465-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "korealainen-jumeokbap-merilevalla",
+      "sourceIds": [
+        "fineli-34136-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "valimerellinen-tahinipuuro",
+      "sourceIds": [
+        "fineli-153-release-20",
+        "fineli-4-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-minttutee-kaurapuuro",
+      "sourceIds": [
+        "fineli-153-release-20",
+        "fineli-4-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "japanilainen-onigiri-lohella",
+      "sourceIds": [
+        "fineli-34136-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "japanilainen-yaki-onigiri-misolla",
+      "sourceIds": [
+        "fineli-34136-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "kiinalainen-katkarapu-wontonkeitto",
+      "sourceIds": [
+        "fineli-835-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "kiinalainen-musta-seesamipuuro",
+      "sourceIds": [
+        "fineli-4-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "karibia-mango-limejogurtti",
+      "sourceIds": [
+        "fineli-382-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "thai-papaijajogurtti",
+      "sourceIds": [
+        "fineli-34694-release-20",
+        "fineli-382-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "lahi-ita-pistaasijogurtti",
+      "sourceIds": [
+        "fineli-31212-release-20",
+        "fineli-31555-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "dal-makhani",
+      "sourceIds": [
+        "fineli-31214-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "mala-xiang-guo",
+      "sourceIds": [
+        "fineli-345-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "bouillabaisse",
+      "sourceIds": [
+        "fineli-835-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "pekingin-ankka",
+      "sourceIds": [
+        "fineli-4-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "sichuan-hot-pot",
+      "sourceIds": [
+        "fineli-345-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "vietnamilainen-papaija-kookospuuro",
+      "sourceIds": [
+        "fineli-34694-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "japanilainen-tamago-kake-gohan",
+      "sourceIds": [
+        "fineli-34136-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "indonesialainen-tempeh-munakulho",
+      "sourceIds": [
+        "fineli-31249-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "sourceIds": [
+        "fineli-930-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+      "sourceIds": [
+        "fineli-4-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "kookos-lime-kanacurry",
+      "sourceIds": [
+        "fineli-29022-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "valimerellinen-ricotta-persikkakulho",
+      "sourceIds": [
+        "fineli-31212-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+      "sourceIds": [
+        "fineli-33038-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "rogan-josh",
+      "sourceIds": [
+        "fineli-33023-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "palak-paneer",
+      "sourceIds": [
+        "fineli-33023-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "shoyu-kanakeitto-konjac",
+      "sourceIds": [
+        "fineli-345-release-20",
+        "fineli-33023-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "sourceIds": [
+        "fineli-4-release-20"
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "directPolyolBlocker": false
+    },
+    {
+      "recipeId": "tandoorikana",
+      "sourceIds": [
+        "fineli-33023-release-20"
+      ],
+      "currentStatus": "CALCULATED",
+      "directPolyolBlocker": false
+    }
+  ]
+}

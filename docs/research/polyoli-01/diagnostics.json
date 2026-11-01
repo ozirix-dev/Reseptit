@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "normalizationControls": 6,
+  "usDiagnostic": {
+    "available": 40,
+    "net": 20,
+    "actualGk": 8.8,
+    "polyolExcludingModelGk": 4.4,
+    "actualNutritionTotal": 70,
+    "sourceTotal": 50,
+    "activeUsRecords": 0
+  },
+  "held": [
+    {
+      "recipeId": "palak-paneer",
+      "numericProposal": false,
+      "currentPolicyError": "Error: UNREVIEWED_FOOD_PREPARATION: A008761-r6 / Spinach, Mature English, fresh, raw / vegetable-imputation40"
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "numericProposal": false,
+      "currentPolicyError": "Error: UNREVIEWED_FOOD_PREPARATION: F7600-r6 / NAKKI, KEITETTY / lowcho50-r6"
+    },
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "numericProposal": true,
+      "currentPolicyError": null
+    },
+    {
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "numericProposal": true,
+      "currentPolicyError": null
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "numericProposal": true,
+      "currentPolicyError": null
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "numericProposal": true,
+      "currentPolicyError": null
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "numericProposal": true,
+      "currentPolicyError": null
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "numericProposal": true,
+      "currentPolicyError": null
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "numericProposal": true,
+      "currentPolicyError": null
+    }
+  ],
+  "independentNumberComparisons": 144,
+  "docsPlan": {
+    "full": false,
+    "runContent": false,
+    "runNutrition": false,
+    "runGlycemic": false,
+    "runTranslationReview": false,
+    "runImages": false,
+    "runStatic": false,
+    "runBrowser": false,
+    "runBuild": false,
+    "runContentSync": false,
+    "needsNode": false,
+    "unitTests": [],
+    "publish": false
+  },
+  "nutritionPlan": {
+    "full": true,
+    "runContent": false,
+    "runNutrition": false,
+    "runGlycemic": false,
+    "runTranslationReview": true,
+    "runImages": true,
+    "runStatic": true,
+    "runBrowser": true,
+    "runBuild": true,
+    "runContentSync": false,
+    "needsNode": true,
+    "unitTests": [
+      "*"
+    ],
+    "publish": false
+  }
+}

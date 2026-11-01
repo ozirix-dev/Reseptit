@@ -1,0 +1,125 @@
+{
+  "knownRecipeControls": [
+    {
+      "recipeId": "tortilla-de-patatas",
+      "exactGk": "15.756875",
+      "polyolsPerServing": "0.000000",
+      "macros": {
+        "availableCarbohydrate": "24.205750",
+        "fibre": "2.296625",
+        "protein": "13.408125",
+        "fat": "24.686875"
+      },
+      "status": "PASS",
+      "source": "CURRENT_REGISTERED_RELEASE_7_UNMODIFIED"
+    },
+    {
+      "recipeId": "parsakaali-sinihomejuustofrittata",
+      "exactGk": "0.965025",
+      "polyolsPerServing": "0.000000",
+      "macros": {
+        "availableCarbohydrate": "2.636250",
+        "fibre": "1.364125",
+        "protein": "17.9738375",
+        "fat": "33.219500"
+      },
+      "status": "PASS",
+      "source": "CURRENT_REGISTERED_RELEASE_7_UNMODIFIED"
+    },
+    {
+      "recipeId": "lohikeitto-kuohukermalla",
+      "exactGk": "10.457325",
+      "polyolsPerServing": "0.000000",
+      "macros": {
+        "availableCarbohydrate": "17.433750",
+        "fibre": "2.209125",
+        "protein": "23.290250",
+        "fat": "38.619225"
+      },
+      "status": "PASS",
+      "source": "CURRENT_REGISTERED_RELEASE_7_UNMODIFIED"
+    }
+  ],
+  "sourceAlternatives": [
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "sourceId": "Matvaretabellen-06.177",
+      "sourceUrl": "https://www.matvaretabellen.no/laurbaerblad-torket/",
+      "carbohydrateDefinition": "MI0181_SUGAR_PLUS_STARCH",
+      "availableChoPer100": "48.6",
+      "polyolsPer100": null,
+      "deltaGkIfSourceAndFormApproved": "-0.0000175",
+      "wholeGkIfSourceAndFormApproved": "5.3852750",
+      "publicationEligible": false,
+      "limitations": [
+        "Whole source substitution needs protein/fat/fibre and GI alias review.",
+        "No total-polyol value, no automatic four-macro release.",
+        "Bay source reports sugar48.6/starch0, fraction derivation requires review."
+      ]
+    },
+    {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "sourceId": "Matvaretabellen-06.186",
+      "sourceUrl": "https://www.matvaretabellen.no/en/marjoram-dried/",
+      "carbohydrateDefinition": "MI0181_SUGAR_PLUS_STARCH",
+      "availableChoPer100": "20.3",
+      "polyolsPer100": null,
+      "deltaGkIfSourceAndFormApproved": "0.00002",
+      "wholeGkIfSourceAndFormApproved": "4.588900000000000000000000000",
+      "publicationEligible": false,
+      "limitations": [
+        "No fresh-to-dried transfer. Exact dried-food identity exists.",
+        "No measured total polyols.",
+        "Water20/fibre40 differ from USDA input; do not mix source fractions."
+      ]
+    },
+    {
+      "recipeId": "vhh-kaalilaatikko",
+      "sourceId": "Matvaretabellen-06.186",
+      "sourceUrl": "https://www.matvaretabellen.no/en/marjoram-dried/",
+      "carbohydrateDefinition": "MI0181_SUGAR_PLUS_STARCH",
+      "availableChoPer100": "20.3",
+      "polyolsPer100": null,
+      "deltaGkIfSourceAndFormApproved": "0.00002",
+      "wholeGkIfSourceAndFormApproved": "3.773416666666666666666666667",
+      "publicationEligible": false,
+      "limitations": [
+        "No fresh-to-dried transfer. Exact dried-food identity exists.",
+        "No measured total polyols.",
+        "Water20/fibre40 differ from USDA input; do not mix source fractions."
+      ]
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "sourceId": "Matvaretabellen-06.177",
+      "sourceUrl": "https://www.matvaretabellen.no/laurbaerblad-torket/",
+      "carbohydrateDefinition": "MI0181_SUGAR_PLUS_STARCH",
+      "availableChoPer100": "48.6",
+      "polyolsPer100": null,
+      "deltaGkIfSourceAndFormApproved": "-0.00001166666666666666666666666666666666666666",
+      "wholeGkIfSourceAndFormApproved": "3.345716666666666666666666667333333333333",
+      "publicationEligible": false,
+      "limitations": [
+        "Whole source substitution needs protein/fat/fibre and GI alias review.",
+        "No total-polyol value, no automatic four-macro release.",
+        "Bay source reports sugar48.6/starch0, fraction derivation requires review."
+      ]
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "sourceId": "Matvaretabellen-06.177",
+      "sourceUrl": "https://www.matvaretabellen.no/laurbaerblad-torket/",
+      "carbohydrateDefinition": "MI0181_SUGAR_PLUS_STARCH",
+      "availableChoPer100": "48.6",
+      "polyolsPer100": null,
+      "deltaGkIfSourceAndFormApproved": "-0.0000175",
+      "wholeGkIfSourceAndFormApproved": "3.8320750",
+      "publicationEligible": false,
+      "limitations": [
+        "Whole source substitution needs protein/fat/fibre and GI alias review.",
+        "No total-polyol value, no automatic four-macro release.",
+        "Bay source reports sugar48.6/starch0, fraction derivation requires review."
+      ]
+    }
+  ]
+}
