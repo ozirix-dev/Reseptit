@@ -1,3 +1,4 @@
+import {calculateRecovery,isRecoveryEvidence} from "./gk80-uunikanapasta";
 import { createHash } from "node:crypto";
 import type { Calculation } from "./nutrition-model";
 import { calculate } from "./nutrition-model";
@@ -78,9 +79,9 @@ export function verifyNutritionEvidence(
     return { status: errors.length === 0 ? "INSUFFICIENT SOURCE DATA" : "CONFLICT REQUIRES REVIEW", errors, calculated: null, values };
   }
 
-  let calculated: ReturnType<typeof calculate> | null = null;
+  let calculated: ReturnType<typeof calculate> | ReturnType<typeof calculateRecovery> | null = null;
   try {
-    calculated = calculate(evidence);
+    calculated = isRecoveryEvidence(evidence) ? calculateRecovery(evidence) : calculate(evidence);
     if (calculated.status !== "ESTIMATE WITH EVIDENCE") errors.push(`calculation status is ${calculated.status}`);
     const calculatedValues = {
       carbs_net_per_serving_g: calculated.perServing.netCarbohydrate,

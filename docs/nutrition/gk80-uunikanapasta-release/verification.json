@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "main": "88e228bbb1f0fa4a4e16be4aeedcd509bc7bc33a",
+  "candidateCoverage": {
+    "numeric": 131,
+    "recipes": 326,
+    "percent": 40.18
+  },
+  "productionReleaseVerified": false,
+  "currentResultObjectChanges": [
+    "uunikanapasta-kesakurpitsa"
+  ],
+  "unchangedWholeObjects": 325,
+  "preservedNumericObjects": 130,
+  "unitTests": {
+    "pass": 210,
+    "fail": 0
+  },
+  "staticTests": {
+    "pass": 25,
+    "fail": 0
+  },
+  "translationTests": {
+    "pass": 27,
+    "fail": 0
+  },
+  "strictNutritionAudit": {
+    "conflicts": 0,
+    "counts": {
+      "VERIFIED": 0,
+      "ESTIMATE WITH EVIDENCE": 203,
+      "INSUFFICIENT SOURCE DATA": 64,
+      "CONFLICT REQUIRES REVIEW": 0,
+      "MISSING": 59
+    },
+    "withheld": {
+      "keto-mutakakku": {
+        "status": "INSUFFICIENT SOURCE DATA",
+        "values": {
+          "carbs_net_per_serving_g": null,
+          "carbs_total_per_serving_g": null,
+          "protein_per_serving_g": null,
+          "fat_per_serving_g": null
+        }
+      },
+      "keto-suklaakeksit": {
+        "status": "INSUFFICIENT SOURCE DATA",
+        "values": {
+          "carbs_net_per_serving_g": null,
+          "carbs_total_per_serving_g": null,
+          "protein_per_serving_g": null,
+          "fat_per_serving_g": null
+        }
+      }
+    }
+  },
+  "typeScript": "PASS",
+  "changedContentCheck": {
+    "status": "PASS",
+    "recipeFiles": 1,
+    "evidenceFiles": 1
+  },
+  "build": {
+    "status": "PASS",
+    "routes": 691
+  },
+  "recipeStaticHtml": {
+    "path": "site/dist/uunikanapasta-kesakurpitsa/index.html",
+    "sha256": "b325377d71baaae18b4fccca2e0124fc6b6b85e26620b8dbbfc7bb27ce38f940",
+    "requestedNumbersAndDisclosurePresent": true
+  },
+  "independentDecimal": {
+    "status": "PASS",
+    "recipeId": "uunikanapasta-kesakurpitsa",
+    "scenarios": [
+      {
+        "carbsNetG": [
+          "7.384250",
+          "7.384250"
+        ],
+        "carbsTotalG": [
+          "10.380250",
+          "10.408250"
+        ],
+        "proteinG": [
+          "39.530500",
+          "39.530500"
+        ],
+        "fatG": [
+          "23.911125",
+          "23.911125"
+        ],
+        "gk": [
+          "2.737675",
+          "2.7796750"
+        ]
+      },
+      {
+        "carbsNetG": [
+          "7.382750",
+          "7.385750"
+        ],
+        "carbsTotalG": [
+          "10.377250",
+          "10.426250"
+        ],
+        "proteinG": [
+          "39.529000",
+          "39.532000"
+        ],
+        "fatG": [
+          "23.909625",
+          "23.912625"
+        ],
+        "gk": [
+          "2.737000",
+          "2.8028500"
+        ]
+      },
+      {
+        "carbsNetG": [
+          "7.381250",
+          "7.387250"
+        ],
+        "carbsTotalG": [
+          "10.374250",
+          "10.444250"
+        ],
+        "proteinG": [
+          "39.527500",
+          "39.533500"
+        ],
+        "fatG": [
+          "23.908125",
+          "23.914125"
+        ],
+        "gk": [
+          "2.736325",
+          "2.8260250"
+        ]
+      }
+    ],
+    "display": {
+      "net": "7.4",
+      "total": "10.4",
+      "protein": "39.53",
+      "fat": "23.91",
+      "gk": "about3LOW"
+    },
+    "aggregatePolyolPoint": null,
+    "wholeGkPoint": null
+  },
+  "preExistingTestIssue": "The old published-content breakfast inventory still expected keto package carb values withdrawn by merged PR162. Reproduced on clean main-equivalent worktree b4801f2, then corrected only those two expectations to null. Current source/evidence withholding checks pass.",
+  "historicalTests": "Existing historical batch views restore only uunikanapasta from immutable pre-integration main snapshots. Current326-object regression consumes the actual new report without history overlays.",
+  "codeReview": "Awaiting normal Ready-triggered Codex Review.",
+  "ci": "Awaiting exact-HEAD automatic PR CI; no manual Actions."
+}

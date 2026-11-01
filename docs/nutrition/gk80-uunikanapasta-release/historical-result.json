@@ -1,0 +1,79 @@
+{
+  "recipeId": "uunikanapasta-kesakurpitsa",
+  "servings": 4,
+  "status": "INSUFFICIENT SOURCE DATA",
+  "unroundedGlycemicLoadPerServing": null,
+  "glycemicLoadPerServing": null,
+  "glycemicLoadRangePerServing": null,
+  "omittedAvailableCarbohydratePerServingG": 0,
+  "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+  "confidence": null,
+  "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+  "ingredients": [
+    {
+      "name": "kesäkurpitsaa",
+      "grams": 500,
+      "fineliRecordId": "fineli-389-2026-10-24",
+      "availableCarbohydratePer100g": 2.5,
+      "availableCarbohydratePerServingG": 3.125,
+      "availableCarbohydrateUpperBoundPerServingG": null,
+      "availableCarbohydratePerServingRangeG": null,
+      "gi": 66,
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "qualityTier": "SUPPLEMENTARY",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "giContribution": 2.0625,
+      "giContributionRange": {
+        "min": 2.0625,
+        "max": 2.0625
+      },
+      "giCandidates": [],
+      "issues": []
+    },
+    {
+      "name": "kirsikkatomaatteja",
+      "grams": 200,
+      "fineliRecordId": "fineli-352-2026-10-24",
+      "availableCarbohydratePer100g": 3.5,
+      "availableCarbohydratePerServingG": 1.75,
+      "availableCarbohydrateUpperBoundPerServingG": null,
+      "availableCarbohydratePerServingRangeG": null,
+      "gi": 22,
+      "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+      "qualityTier": "SUPPLEMENTARY",
+      "matchKind": "ANALOG",
+      "confidence": "MEDIUM",
+      "giContribution": null,
+      "giContributionRange": null,
+      "giCandidates": [],
+      "issues": [
+        "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ]
+    },
+    {
+      "name": "tuorejuustoa",
+      "grams": 150,
+      "fineliRecordId": "fineli-11571-2026-10-24",
+      "availableCarbohydratePer100g": 4,
+      "availableCarbohydratePerServingG": 1.5,
+      "availableCarbohydrateUpperBoundPerServingG": null,
+      "availableCarbohydratePerServingRangeG": null,
+      "gi": 35,
+      "giRecordId": "dairy-category-mean-gi-35",
+      "qualityTier": "SUPPLEMENTARY",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "giContribution": 0.525,
+      "giContributionRange": {
+        "min": 0.525,
+        "max": 0.525
+      },
+      "giCandidates": [],
+      "issues": []
+    }
+  ],
+  "blockers": [
+    "uunikanapasta-kesakurpitsa: kirsikkatomaatteja: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+  ]
+}

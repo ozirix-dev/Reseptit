@@ -1,3 +1,4 @@
+import {isRecoveryEvidence,loadRecovery} from "./gk80-uunikanapasta";
 import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { nutritionProvenance } from "./nutrition-provenance";
@@ -26,6 +27,7 @@ for (const filename of evidenceFiles.filter((name) => name.endsWith(".json"))) {
   const evidence = JSON.parse(await readFile(path.join(evidenceDirectory, filename), "utf8")) as Calculation;
   if (!evidence.recipeId || evidenceByRecipe.has(evidence.recipeId)) throw new Error(`Duplicate or invalid nutrition evidence recipeId in ${filename}`);
   if (filename !== `${evidence.recipeId}.json`) throw new Error(`Nutrition evidence filename must match recipeId: ${filename}`);
+  if (isRecoveryEvidence(evidence)) await loadRecovery(root,evidence.recipeId);
   evidenceByRecipe.set(evidence.recipeId, evidence);
 }
 const publishedRecipeIds = new Set(audit.publishedSources.map((recipe) => recipe.data.recipe_id));

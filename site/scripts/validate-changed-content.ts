@@ -1,3 +1,4 @@
+import {validateRecovery,isRecoveryEvidence,loadRecovery} from "./gk80-uunikanapasta";
 import {validateGk80Candidate} from './gk80-release';
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
@@ -167,7 +168,7 @@ for (const recipeId of recipeIds) {
   const boundRecipeHash = recipeBindings.recipes?.[recipeId];
   if (changedSource && boundRecipeHash) {
     const currentRecipeHash = recipeBindingHash(changedSource.markdown, recipeAliases.aliases ?? {});
-    assert(currentRecipeHash === boundRecipeHash || await validateGk80Candidate(repoRoot, recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
+    assert(currentRecipeHash === boundRecipeHash || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
   }
 
   const evidencePath = resolveRepoFile(`docs/nutrition/calculations/${recipeId}.json`);
@@ -181,6 +182,7 @@ for (const recipeId of recipeIds) {
     recipe.data.recipe_id === recipeId && changedNutritionValues(recipe.path));
   if (nutritionChanged) assert(evidence, `${recipeId}: changed published nutrition values require matching calculation evidence`);
   if (evidence) {
+    if (isRecoveryEvidence(evidence)) await loadRecovery(repoRoot,recipeId);
     const result = verifyNutritionEvidence(source.data, evidence, translations);
     assert.deepEqual(result.errors, [], `${recipeId}: nutrition evidence validation failed`);
   } else {
