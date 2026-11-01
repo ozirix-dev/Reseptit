@@ -1,3 +1,4 @@
+import {isScopedPolyolEvidence,loadScopedPolyolC} from './gk80-polyol-c';
 import {isRecoveryEvidence,loadRecovery} from "./gk80-uunikanapasta";
 import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
@@ -28,6 +29,7 @@ for (const filename of evidenceFiles.filter((name) => name.endsWith(".json"))) {
   if (!evidence.recipeId || evidenceByRecipe.has(evidence.recipeId)) throw new Error(`Duplicate or invalid nutrition evidence recipeId in ${filename}`);
   if (filename !== `${evidence.recipeId}.json`) throw new Error(`Nutrition evidence filename must match recipeId: ${filename}`);
   if (isRecoveryEvidence(evidence)) await loadRecovery(root,evidence.recipeId);
+  if (isScopedPolyolEvidence(evidence)) await loadScopedPolyolC(root,evidence.recipeId);
   evidenceByRecipe.set(evidence.recipeId, evidence);
 }
 const publishedRecipeIds = new Set(audit.publishedSources.map((recipe) => recipe.data.recipe_id));
@@ -56,12 +58,12 @@ const inventory = audit.publishedSources.map((recipe) => {
     recalculatedValues: checked.calculated ? { carbs_net_per_serving_g: checked.calculated.perServing.netCarbohydrate, carbs_total_per_serving_g: checked.calculated.totalCarbohydratePerServingG, protein_per_serving_g: checked.calculated.perServing.protein, fat_per_serving_g: checked.calculated.perServing.fat } : null,
     evidenceErrors,
     carbohydrateDefinition: recipe.data.carbs_net_per_serving_g == null ? "NOT DOCUMENTED" : "AVAILABLE_EXCLUDING_FIBRE",
-    totalCarbohydrateDefinition: evidencePath && status === "ESTIMATE WITH EVIDENCE" ? "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS" : "NOT VERIFIED",
+    totalCarbohydrateDefinition: evidence && isScopedPolyolEvidence(evidence) ? "STABLE_ROUNDED_SOURCE_ACCOUNTING_SCENARIO" : evidencePath && status === "ESTIMATE WITH EVIDENCE" ? "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS" : "NOT VERIFIED",
     portionBasis: "metadata fields per serving", brandAndRawWeightEvidence: status === "ESTIMATE WITH EVIDENCE" ? evidencePath : "NOT VERIFIED",
     missingFields: keys.filter((key) => recipe.data[key] == null),
     ingredients: recipe.data.ingredients,
     notes: recipe.content.split("## Muistiinpanot")[1]?.trim() ?? "",
-    uncertainties: status === "ESTIMATE WITH EVIDENCE" ? [] : evidenceErrors,
+    uncertainties: evidence && isScopedPolyolEvidence(evidence) ? ["Unknown aggregate polyols retained; owner-approved conditional source-accounting model, response scenario 0–150 and full GK width ≤0.10/serving. Not a biological bound."] : status === "ESTIMATE WITH EVIDENCE" ? [] : evidenceErrors,
   };
 });
 const blockers: Record<string, string[]> = {

@@ -13,10 +13,10 @@ cooking_method:
   - uuni
   - haudutus
 servings: 6
-carbs_net_per_serving_g: 9.48
-carbs_total_per_serving_g: 13.40
-protein_per_serving_g: 20.85
-fat_per_serving_g: 30.59
+carbs_net_per_serving_g: 9.52
+carbs_total_per_serving_g: 13
+protein_per_serving_g: 20.86
+fat_per_serving_g: 30.65
 time_total_min: 110
 difficulty: lätt
 tags:
@@ -33,34 +33,33 @@ ingredients:
   - amount: 900
     unit: g
     item: vitkål
-    note: skuren i tunna strimlor
   - amount: 500
     unit: g
-    item: nötfärs
-  - amount: 1
-    unit: st
-    item: lök
-  - amount: 2
-    unit: dl
-    item: vispgrädde
-  - amount: 2
-    unit: st
-    item: ägg
-  - amount: 1
-    unit: dl
-    item: köttbuljong
-  - amount: 1
-    unit: msk
+    item: nötfärs med 17% fett
+  - amount: 55
+    unit: g
+    item: gul lök
+  - amount: 200
+    unit: g
+    item: grädde med 38% fett
+  - amount: 110
+    unit: g
+    item: ägg utan skal
+  - amount: 100
+    unit: g
+    item: färdig köttbuljong
+  - amount: 14
+    unit: g
     item: smör
   - amount: 1
     unit: tsk
     item: salt
-  - amount: 0.5
-    unit: tsk
-    item: svartpeppar
   - amount: 1
-    unit: tsk
-    item: torkad mejram
+    unit: g
+    item: malen svartpeppar
+  - amount: 0.6
+    unit: g
+    item: torkad malen mejram
 source_language: fi
 source_recipe: reseptit/paaruoat/kaalilaatikko.md
 translation_of: vhh-kaalilaatikko
@@ -68,22 +67,20 @@ translation_of: vhh-kaalilaatikko
 
 # Lågkolhydrat-kålpudding utan ris
 
-Den här finskinspirerade kålpuddingen kombinerar mjuk kål, köttfärs och en krämig äggblandning utan ris eller sirap.
+En vägd kolhydratfattig kålpudding utan ris eller sirap.
 
 ## Beskrivning
 
-Kålen får mjukna innan rätten gräddas i ugnen. Köttfärs och mejram ger fyllig smak, medan ägget hjälper grädden att stelna och binda ihop rätten.
+Använd ingredienslistans exakta sammansättningar och ätliga vikter. All vätska, allt fett och alla kryddor stannar i rätten. Saltmängden är oförändrad från originalreceptet.
 
-## Gör så här
+## Tillagning
 
-1. Värm ugnen till 175 grader. Skiva kålen och hacka löken.
-2. Smält smöret i en stor kastrull. Tillsätt kål och buljong. Sjud under lock i cirka 20 minuter, rör om då och då, tills kålen mjuknar.
-3. Bryn köttfärsen i en panna. Tillsätt löken och fräs några minuter. Krydda med salt, svartpeppar och mejram.
-4. Blanda grädden och äggen i en skål. Blanda kålblandningen och köttfärsen i en ugnsform och häll gräddblandningen ovanpå.
-5. Grädda på ugnens mittersta fals i cirka 60–70 minuter, tills ytan fått färg och rätten har stelnat. Täck löst med folie om den får för mycket färg.
-6. Låt den vila i 10 minuter innan servering.
+1. Tillaga 500 g nötfärs och 55 g lök i 14 g smör. Tillsätt 900 g finstrimlad vitkål.
+2. Blanda 200 g grädde, 110 g ägg, 100 g köttbuljong, 1 g svartpeppar och 0,6 g malen mejram. Lägg allt i en ugnsform.
+3. Grädda i 175 grader tills äggblandningen och köttet är genomtillagade och kålen är mjuk. Fördela hela rätten, inklusive vätskan, i sex portioner.
 
 ## Anteckningar
 
-– Servera med ett litet tillbehör med sockerfria lingon eller en grönsallad om du vill.
-– Kål krymper när den sjuder, så börja med en lagom stor gryta.
+- Modellerad uppskattning med låg säkerhet. Saknade polyoluppgifter för kryddor hanteras med en beräkningsmodell som är begränsad till denna receptversion. Detta är inget uppmätt blodsockersvar från måltiden.
+- Totala kolhydrater avrundas till hela gram så att samma värde visas i hela det godkända beräkningsscenariot. Övriga makron anges med två decimaler; annan osäkerhet i källorna kvarstår.
+- Bilden illustrerar servering; extra tillbehör på bilden ingår inte i uppskattningen.

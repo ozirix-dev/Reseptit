@@ -1,3 +1,4 @@
+import {calculateScopedPolyolC,isScopedPolyolEvidence} from './gk80-polyol-c';
 import {calculateRecovery,isRecoveryEvidence} from "./gk80-uunikanapasta";
 import { createHash } from "node:crypto";
 import type { Calculation } from "./nutrition-model";
@@ -79,9 +80,9 @@ export function verifyNutritionEvidence(
     return { status: errors.length === 0 ? "INSUFFICIENT SOURCE DATA" : "CONFLICT REQUIRES REVIEW", errors, calculated: null, values };
   }
 
-  let calculated: ReturnType<typeof calculate> | ReturnType<typeof calculateRecovery> | null = null;
+  let calculated: ReturnType<typeof calculate> | ReturnType<typeof calculateRecovery> | ReturnType<typeof calculateScopedPolyolC> | null = null;
   try {
-    calculated = isRecoveryEvidence(evidence) ? calculateRecovery(evidence) : calculate(evidence);
+    calculated = isRecoveryEvidence(evidence) ? calculateRecovery(evidence) : isScopedPolyolEvidence(evidence) ? calculateScopedPolyolC(evidence) : calculate(evidence);
     if (calculated.status !== "ESTIMATE WITH EVIDENCE") errors.push(`calculation status is ${calculated.status}`);
     const calculatedValues = {
       carbs_net_per_serving_g: calculated.perServing.netCarbohydrate,

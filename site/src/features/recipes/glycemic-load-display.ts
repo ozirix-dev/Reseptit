@@ -2,6 +2,7 @@ export interface GlycemicLoadDisplayCandidate {
   recipeId: string;
   assessmentType?: "PUBLISHED_IMPUTATION";
   closedRecoveryC?: boolean;
+  boundedPolyolC?: boolean;
   status: "CALCULATED" | "INSUFFICIENT SOURCE DATA";
   glycemicLoadPerServing: number | null;
   glycemicLoadRangePerServing?: { min: number; max: number } | null;

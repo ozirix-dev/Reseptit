@@ -1,0 +1,1191 @@
+{
+  "recipeId": "jauheliha-kaalikeitto-vhh",
+  "sourceHash": "81055e706d717e68a1c10a49ca9ed861f70ec993ae6f5c25d4cccea457aeca6a",
+  "calculatedAt": "2026-11-01",
+  "batchId": "batch-87",
+  "servings": 6,
+  "scope": "Owner-approved exact weighed preparation; scoped C source-accounting scenario, not measured nutrition or biological bound.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 500,
+      "unit": "g",
+      "item": "17% naudan jauhelihaa",
+      "state": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+      "matchEvidence": "Source-specific GI application not assigned yet",
+      "edibleFraction": 1,
+      "edibleEvidence": "weighed edible input",
+      "retainedFraction": 1,
+      "retentionEvidence": "whole dish including all liquid and fat consumed"
+    },
+    {
+      "amount": 500,
+      "unit": "g",
+      "item": "valkokaalia",
+      "state": "VALKOKAALI, KERÄKAALI",
+      "matchEvidence": "Explicit NONSTARCHY_VEGETABLE food ID F320 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+      "edibleFraction": 1,
+      "edibleEvidence": "weighed edible input",
+      "retainedFraction": 1,
+      "retentionEvidence": "whole dish including all liquid and fat consumed"
+    },
+    {
+      "amount": 55,
+      "unit": "g",
+      "item": "keltasipulia",
+      "state": "SIPULI, KELTASIPULI",
+      "matchEvidence": "Explicit NONSTARCHY_VEGETABLE food ID F335 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+      "edibleFraction": 1,
+      "edibleEvidence": "weighed edible input",
+      "retainedFraction": 1,
+      "retentionEvidence": "whole dish including all liquid and fat consumed"
+    },
+    {
+      "amount": 1000,
+      "unit": "g",
+      "item": "käyttövalmista lihalientä",
+      "state": "LIHALIEMI, LAIMENNETTU",
+      "matchEvidence": "Explicit STOCK food ID F29 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+      "edibleFraction": 1,
+      "edibleEvidence": "weighed edible input",
+      "retainedFraction": 1,
+      "retentionEvidence": "whole dish including all liquid and fat consumed"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "tomaattimurskaa",
+      "state": "TOMAATTIMURSKA",
+      "matchEvidence": "Explicit NONSTARCHY_VEGETABLE food ID F398 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+      "edibleFraction": 1,
+      "edibleEvidence": "weighed edible input",
+      "retainedFraction": 1,
+      "retentionEvidence": "whole dish including all liquid and fat consumed"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "suolaa",
+      "state": "pure salt",
+      "matchEvidence": "Pure salt has zero of the four macros",
+      "edibleFraction": 1,
+      "edibleEvidence": "weighed edible input",
+      "retainedFraction": 1,
+      "retentionEvidence": "whole dish including all liquid and fat consumed"
+    },
+    {
+      "amount": 0.5,
+      "unit": "g",
+      "item": "jauhettua mustapippuria",
+      "state": "Pepper, black, ground",
+      "matchEvidence": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+      "edibleFraction": 1,
+      "edibleEvidence": "weighed edible input",
+      "retainedFraction": 1,
+      "retentionEvidence": "whole dish including all liquid and fat consumed"
+    },
+    {
+      "amount": 0.6,
+      "unit": "g",
+      "item": "kuivattua meiramia jauhettuna",
+      "state": "dried marjoram, ground and fully consumed",
+      "matchEvidence": "Owner-approved source-specific dried-marjoram GI50 assumption, with unknown polyols explicitly bounded by the scoped C calculation.",
+      "edibleFraction": 1,
+      "edibleEvidence": "weighed edible input",
+      "retainedFraction": 1,
+      "retentionEvidence": "whole dish including all liquid and fat consumed"
+    }
+  ],
+  "scopedPolyolC": {
+    "version": 1,
+    "approval": "OWNER_APPROVED_2026-11-01_TWO_MARJORAM_VERSIONS",
+    "fullGkWidthLimit": 0.1,
+    "responseScenario": [
+      0,
+      150
+    ],
+    "biologicalBoundEstablished": false,
+    "case": {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "servings": 6,
+      "sourcePath": "reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md",
+      "sourceSha256": "add5c7fd2eefb6aa7f01c98c8921d91bafe2d27f54e2dcc29895e3f1553c91de",
+      "heldFile": "docs/nutrition/gk80-release-7/held-review.json",
+      "heldFileSha256": "ff5843d5667720ff456e4c98bae4270025ba7329c38ba35a3560ecf3a258288d",
+      "bundleHash": "5a239e8063598fea3f047e2ca09b4b4e5356190aba920de0ee1aa59fd86583bc",
+      "originalInputHash": "a449d57b10e5aaffeba23d5c41dccebdab201776795983fb714d58f261fb3a4c",
+      "completeScope": true,
+      "preparationApprovedForPublication": true,
+      "ingredients": [
+        {
+          "index": 0,
+          "name": "17% naudan jauhelihaa",
+          "massG": "500",
+          "retention": "1",
+          "sourceId": "F11562-r5",
+          "sourceEvidenceHash": "7f64d9a7102e0a569175d236fb38af818523b360d4cf6a3a2f3cc0f974ef43a6",
+          "macro": {
+            "availableCarbohydrate": "0.0",
+            "protein": "19.065",
+            "fat": "16.949",
+            "fibre": "0.0"
+          },
+          "polyolsSourceValue": 0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": null,
+          "giSourceId": null,
+          "giSourceEvidenceHash": null,
+          "preparation": "JAUHELIHA, NAUDAN, RASVAA 17 %"
+        },
+        {
+          "index": 1,
+          "name": "valkokaalia",
+          "massG": "500",
+          "retention": "1",
+          "sourceId": "F320-r5",
+          "sourceEvidenceHash": "bbe193b556704c866cc1b22f0d4ba99c51639470cb543d4e947721236478a647",
+          "macro": {
+            "availableCarbohydrate": "4.97",
+            "protein": "1.2",
+            "fat": "0.1",
+            "fibre": "2.0"
+          },
+          "polyolsSourceValue": 0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "VALKOKAALI, KERÄKAALI"
+        },
+        {
+          "index": 2,
+          "name": "keltasipulia",
+          "massG": "55",
+          "retention": "1",
+          "sourceId": "F335-r5",
+          "sourceEvidenceHash": "acc229d86c31acd802b46960407359f20dcceacfa8c865be9dfa6fa170e09b4a",
+          "macro": {
+            "availableCarbohydrate": "4.8",
+            "protein": "1.25",
+            "fat": "0.1",
+            "fibre": "1.2"
+          },
+          "polyolsSourceValue": 0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "SIPULI, KELTASIPULI"
+        },
+        {
+          "index": 3,
+          "name": "käyttövalmista lihalientä",
+          "massG": "1000",
+          "retention": "1",
+          "sourceId": "F29-r5",
+          "sourceEvidenceHash": "4c0a52018e8084f9712113c53c97169232b08a4970a86ea2ff625b3dbdbf6c9f",
+          "macro": {
+            "availableCarbohydrate": "3.0",
+            "protein": "0.34",
+            "fat": "0.6",
+            "fibre": "0.017"
+          },
+          "polyolsSourceValue": 0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "lowcho50-r5",
+          "giSourceEvidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+          "preparation": "LIHALIEMI, LAIMENNETTU"
+        },
+        {
+          "index": 4,
+          "name": "tomaattimurskaa pyreen sijasta",
+          "massG": "100",
+          "retention": "1",
+          "sourceId": "F398-r5",
+          "sourceEvidenceHash": "cb9591a3b62fd988ca6231dc70851b10b934ebd7b8020d595906190c47fb52ea",
+          "macro": {
+            "availableCarbohydrate": "3.45",
+            "protein": "0.55",
+            "fat": "0.2",
+            "fibre": "0.4"
+          },
+          "polyolsSourceValue": 0,
+          "polyolEvidenceKind": "REPORTED_SOURCE_VALUE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": null,
+          "us": null,
+          "gi": "40",
+          "giSourceId": "vegetable-imputation40",
+          "giSourceEvidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+          "preparation": "TOMAATTIMURSKA"
+        },
+        {
+          "index": 5,
+          "name": "jauhettua mustapippuria",
+          "massG": "0.5",
+          "retention": "1",
+          "sourceId": "A006618-r5",
+          "sourceEvidenceHash": "57fa5913e6e69a0c490ae7c142e3d87a3702079d9fe7660cc531974c39351f18",
+          "macro": {
+            "availableCarbohydrate": "38.6",
+            "protein": "10.4",
+            "fat": "3.3",
+            "fibre": "25.3"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "AFCD_PAIRED_SOURCE_MODEL",
+          "pairedCarbohydrates": {
+            "without": 38.6,
+            "withValue": 38.6,
+            "scope": "SORBITOL_MANNITOL_GLYCEROL_SOURCE_EQUATION_ONLY"
+          },
+          "targetDefinition": null,
+          "us": null,
+          "gi": "50",
+          "giSourceId": "small-flavour50-r5",
+          "giSourceEvidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+          "preparation": "Pepper, black, ground"
+        },
+        {
+          "index": 6,
+          "name": "kuivattua meiramia jauhettuna",
+          "massG": "0.6",
+          "retention": "1",
+          "sourceId": "norway-06.186-polyoli02-20261101",
+          "sourceEvidenceHash": "67eec2d1c031276a0bb4bc0b2845680efcf907dc17311c0b2db4690112407a49",
+          "macro": {
+            "availableCarbohydrate": "20.3",
+            "protein": "12.7",
+            "fat": "7.0",
+            "fibre": "40.0"
+          },
+          "polyolsSourceValue": null,
+          "polyolEvidenceKind": "MISSING_AGGREGATE",
+          "pairedCarbohydrates": null,
+          "targetDefinition": "AVAILABLE_WITH_UNKNOWN_EXTERNAL_POLYOLS",
+          "us": null,
+          "gi": "50",
+          "giSourceId": "marjoram50-polyoli02-source-substitution",
+          "giSourceEvidenceHash": "b5981bbf999790ae431bf6072cc1152da873973e9caa650c2db68c93b89097ca",
+          "preparation": "dried marjoram, ground and fully consumed"
+        }
+      ]
+    },
+    "recipe": {
+      "recipeId": "jauheliha-kaalikeitto-vhh",
+      "title": "Jauheliha-kaalikeitto",
+      "sourcePath": "reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md",
+      "sourceSha256": "401bd41616c0318efdfc41eb34b628092b57de65031953bea88fc3bf6adbeee2",
+      "servings": 6,
+      "evidenceVersion": 2,
+      "method": "C",
+      "completeInputScope": true,
+      "coverageProposalEligible": true,
+      "scenarios": [
+        {
+          "id": "defined-weighed-version",
+          "ingredients": [
+            {
+              "index": 0,
+              "name": "17% naudan jauhelihaa",
+              "state": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+              "massG": 500,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 19.065,
+                "fat": 16.949,
+                "fibre": 0
+              },
+              "composition": {
+                "sourceId": "F11562-r5",
+                "evidenceHash": "7f64d9a7102e0a569175d236fb38af818523b360d4cf6a3a2f3cc0f974ef43a6"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "unresolved",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Source-specific GI application not assigned yet"
+            },
+            {
+              "index": 1,
+              "name": "valkokaalia",
+              "state": "VALKOKAALI, KERÄKAALI",
+              "massG": 500,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.97,
+                "protein": 1.2,
+                "fat": 0.1,
+                "fibre": 2
+              },
+              "composition": {
+                "sourceId": "F320-r5",
+                "evidenceHash": "bbe193b556704c866cc1b22f0d4ba99c51639470cb543d4e947721236478a647"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F320 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F320 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 2,
+              "name": "keltasipulia",
+              "state": "SIPULI, KELTASIPULI",
+              "massG": 55,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 4.8,
+                "protein": 1.25,
+                "fat": 0.1,
+                "fibre": 1.2
+              },
+              "composition": {
+                "sourceId": "F335-r5",
+                "evidenceHash": "acc229d86c31acd802b46960407359f20dcceacfa8c865be9dfa6fa170e09b4a"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F335 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F335 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 3,
+              "name": "käyttövalmista lihalientä",
+              "state": "LIHALIEMI, LAIMENNETTU",
+              "massG": 1000,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 3,
+                "protein": 0.34,
+                "fat": 0.6,
+                "fibre": 0.017
+              },
+              "composition": {
+                "sourceId": "F29-r5",
+                "evidenceHash": "4c0a52018e8084f9712113c53c97169232b08a4970a86ea2ff625b3dbdbf6c9f"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "lowcho-code",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit STOCK food ID F29 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "lowcho50-r5",
+                "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+                "rationale": "Explicit STOCK food ID F29 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 4,
+              "name": "tomaattimurskaa",
+              "state": "TOMAATTIMURSKA",
+              "massG": 100,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 3.45,
+                "protein": 0.55,
+                "fat": 0.2,
+                "fibre": 0.4
+              },
+              "composition": {
+                "sourceId": "F398-r5",
+                "evidenceHash": "cb9591a3b62fd988ca6231dc70851b10b934ebd7b8020d595906190c47fb52ea"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "low-carb-vegetable",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit NONSTARCHY_VEGETABLE food ID F398 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "vegetable-imputation40",
+                "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc",
+                "rationale": "Explicit NONSTARCHY_VEGETABLE food ID F398 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 5,
+              "name": "suolaa",
+              "state": "pure salt",
+              "massG": null,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 0,
+                "protein": 0,
+                "fat": 0,
+                "fibre": 0
+              },
+              "certifiedZeroSalt": true,
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "family": "salt",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "DIRECT",
+              "applicability": "Pure salt has zero of the four macros"
+            },
+            {
+              "index": 6,
+              "name": "jauhettua mustapippuria",
+              "state": "Pepper, black, ground",
+              "massG": 0.5,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 38.6,
+                "protein": 10.4,
+                "fat": 3.3,
+                "fibre": 25.3
+              },
+              "composition": {
+                "sourceId": "A006618-r5",
+                "evidenceHash": "57fa5913e6e69a0c490ae7c142e3d87a3702079d9fe7660cc531974c39351f18"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "EU_AVAILABLE",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "small-flavour50-r5",
+                "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927",
+                "rationale": "Explicit GROUND_SPICE food ID A006618 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+              }
+            },
+            {
+              "index": 7,
+              "name": "kuivattua meiramia jauhettuna",
+              "state": "dried marjoram, ground and fully consumed",
+              "massG": 0.6,
+              "retention": 1,
+              "per100g": {
+                "availableCarbohydrate": 20.3,
+                "protein": 12.7,
+                "fat": 7,
+                "fibre": 40
+              },
+              "composition": {
+                "sourceId": "norway-06.186-polyoli02-20261101",
+                "evidenceHash": "67eec2d1c031276a0bb4bc0b2845680efcf907dc17311c0b2db4690112407a49"
+              },
+              "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+              "compositionBasisNote": "US_TOTAL_MINUS_FIBRE_PROXY_POLYOLS_UNQUANTIFIED",
+              "family": "small-spice-extension",
+              "giId": null,
+              "giEvidenceHash": null,
+              "match": "APPLIED",
+              "applicability": "Owner-approved source-specific dried-marjoram GI50 assumption, with unknown polyols explicitly bounded by the scoped C calculation.",
+              "impact": {
+                "kind": "PUBLISHED_IMPUTATION",
+                "sourceId": "marjoram50-polyoli02-source-substitution",
+                "evidenceHash": "b5981bbf999790ae431bf6072cc1152da873973e9caa650c2db68c93b89097ca",
+                "rationale": "Explicit GROUND_SPICE food ID U170928 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. USDA CHO proxy: total by difference minus fibre once; endogenous polyols unquantified, not assumed measured zero."
+              }
+            }
+          ]
+        }
+      ],
+      "batch": "A",
+      "confidence": "LOW",
+      "uncertainty": "NOT_BOUNDED",
+      "reviewState": "READY FOR OWNER REVIEW",
+      "approved": false,
+      "published": false,
+      "publicationFixes": [],
+      "blockers": [],
+      "originalPreparation": "\n\n1. Ruskista jauheliha ja hienonnettu sipuli kattilassa.\n2. Suikaloi kaali ja lisää kattilaan lihaliemen kanssa.\n3. Sekoita joukkoon tomaattipyree ja mausteet. Keitä hiljaa noin 25 minuuttia, kunnes kaali pehmenee.\n4. Tarkista maku ja tarjoa kuumana.\n\n## Muistiinpanot\n\n- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.\n",
+      "proposedTitle": "Jauheliha-kaalikeitto – tomaattimurskaversio",
+      "proposedPreparation": [
+        "Ruskista 500 g 17% naudan jauhelihaa omassa rasvassaan. Lisää 55 g sipulia, 500 g valkokaalia ja 100 g tomaattimurskaa pyreen sijasta.",
+        "Lisää 1000 g käyttövalmista lihalientä, 0,5 g jauhettua mustapippuria ja 0,6 g jauhettua kuivattua meiramia. Keitä kaali pehmeäksi.",
+        "Jaa koko keitto nesteineen ja rasvoineen kuuteen annokseen. Kaikki mausteet syödään."
+      ],
+      "proposedVersionHash": "331edd3fc721154bbb09c56d804eca694582b867b8cd8c192b051f410340c288",
+      "displayProposal": {
+        "fi": "Mallinnettu GK-arvio noin X/annos; luottamus matala",
+        "en": "Modeled GL about X/serving; low confidence",
+        "sv": "Modellerad GL cirka X/portion; låg säkerhet",
+        "th": "ค่าประมาณ GL จากแบบจำลองประมาณ X ต่อหนึ่งที่ ความเชื่อมั่นต่ำ"
+      },
+      "nutritionPerServing": {
+        "carbsNetG": 10.209093333333334,
+        "carbsTotalG": 12.142143333333333,
+        "proteinG": 17.681743333333333,
+        "fatG": 15.25979,
+        "fibreG": 1.93305,
+        "availableCarbohydrateProxyUsed": true,
+        "proxyCompositionIds": [
+          "U170928-r5"
+        ],
+        "totalDefinition": "Direct source total: Fineli available+fibre+reported polyols; AFCD with-polyols+fibre; USDA carbohydrate-by-difference; EU label carbohydrate including polyols+fibre",
+        "proxyNote": "For USDA/label inputs, GI uses an available-CHO proxy without quantifying endogenous polyols. Missing polyols are not reported as measured zero; total CHO comes directly from source total definition. Owner method approval required."
+      }
+    },
+    "sources": [
+      {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      {
+        "id": "lowcho50-r5",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "A002991-r5",
+          "A004726-r5",
+          "A004729-r5",
+          "A005199-r5",
+          "A008065-r5",
+          "A008936-r5",
+          "F11048-r5",
+          "F11057-r5",
+          "F29-r5",
+          "F30369-r5",
+          "F7530-r5",
+          "F779-r5",
+          "F858-r5",
+          "F929-r5",
+          "maille-label-proxy"
+        ],
+        "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288"
+      },
+      {
+        "id": "small-flavour50-r5",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+        "allowedCompositionIds": [
+          "A002258-r5",
+          "A002893-r5",
+          "A002963-r5",
+          "A003190-r5",
+          "A003327-r5",
+          "A006281-r5",
+          "A006316-r5",
+          "A006618-r5",
+          "A008214-r5",
+          "A009160-r5",
+          "A009335-r5",
+          "F34245-r5",
+          "U170917-r5",
+          "U170928-r5",
+          "U171315-r5"
+        ],
+        "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927"
+      },
+      {
+        "id": "marjoram50-polyoli02-source-substitution",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+        "allowedCompositionIds": [
+          "norway-06.186-polyoli02-20261101"
+        ],
+        "recipeScope": [
+          "jauheliha-kaalikeitto-vhh",
+          "vhh-kaalilaatikko"
+        ],
+        "applicationNote": "Owner-approved GI50 project assumption for the named dried-marjoram versions only; not a measured marjoram GI.",
+        "evidenceHash": "b5981bbf999790ae431bf6072cc1152da873973e9caa650c2db68c93b89097ca"
+      }
+    ],
+    "comps": [
+      {
+        "id": "F11562-r5",
+        "per100g": {
+          "availableCarbohydrate": 0,
+          "protein": 19.065,
+          "fat": 16.949,
+          "fibre": 0
+        },
+        "sourceRecord": {
+          "id": "F11562-r5",
+          "name": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+          "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11562",
+          "licence": "THL Fineli Release20, CC BY4.0",
+          "basis": "per100g-edible",
+          "state": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsValue": 0,
+          "referenceRecord": {
+            "source_id": "11562",
+            "name": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+            "food_type": "FOOD",
+            "process": "RAW",
+            "edible_portion_percent": 100,
+            "ingredient_class": "BEEF",
+            "food_class": "MSTEAK",
+            "per100g": {
+              "available_carbohydrate_g_per_100g": 0,
+              "fibre_g_per_100g": 0,
+              "polyols_g_per_100g": 0,
+              "protein_g_per_100g": 19.065,
+              "fat_g_per_100g": 16.949
+            },
+            "component_provenance": {
+              "fat_g_per_100g": {
+                "acquisition_type": "D",
+                "method_type": "AG",
+                "method_indicator": "MI1302"
+              },
+              "available_carbohydrate_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "S",
+                "method_indicator": "MI0181"
+              },
+              "protein_g_per_100g": {
+                "acquisition_type": "D",
+                "method_type": "AG",
+                "method_indicator": "MI0123"
+              },
+              "polyols_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "U",
+                "method_indicator": "MIR007"
+              },
+              "fibre_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "U",
+                "method_indicator": "MIR007"
+              }
+            },
+            "portion_mass_g": {}
+          }
+        },
+        "foodKind": "UNREVIEWED",
+        "evidenceHash": "7f64d9a7102e0a569175d236fb38af818523b360d4cf6a3a2f3cc0f974ef43a6"
+      },
+      {
+        "id": "F320-r5",
+        "per100g": {
+          "availableCarbohydrate": 4.97,
+          "protein": 1.2,
+          "fat": 0.1,
+          "fibre": 2
+        },
+        "sourceRecord": {
+          "id": "F320-r5",
+          "name": "VALKOKAALI, KERÄKAALI",
+          "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/320",
+          "licence": "THL Fineli Release20, CC BY4.0",
+          "basis": "per100g-edible",
+          "state": "VALKOKAALI, KERÄKAALI",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsValue": 0,
+          "referenceRecord": {
+            "source_id": "320",
+            "name": "VALKOKAALI, KERÄKAALI",
+            "food_type": "FOOD",
+            "process": "RAW",
+            "edible_portion_percent": 100,
+            "ingredient_class": "CABBAGE",
+            "food_class": "VEGFRESH",
+            "per100g": {
+              "available_carbohydrate_g_per_100g": 4.97,
+              "fibre_g_per_100g": 2,
+              "polyols_g_per_100g": 0,
+              "protein_g_per_100g": 1.2,
+              "fat_g_per_100g": 0.1
+            },
+            "component_provenance": {
+              "fat_g_per_100g": {
+                "acquisition_type": "D",
+                "method_type": "AG",
+                "method_indicator": "MI1302"
+              },
+              "available_carbohydrate_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "S",
+                "method_indicator": "MI0181"
+              },
+              "protein_g_per_100g": {
+                "acquisition_type": "D",
+                "method_type": "S",
+                "method_indicator": "MI0123"
+              },
+              "polyols_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "S",
+                "method_indicator": "MIR006"
+              },
+              "fibre_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "S",
+                "method_indicator": "MI0172"
+              }
+            },
+            "portion_mass_g": {
+              "KPL_S": 800,
+              "KPL_M": 1200,
+              "KPL_L": 1500,
+              "DL": 40
+            }
+          }
+        },
+        "foodKind": "NONSTARCHY_VEGETABLE",
+        "evidenceHash": "bbe193b556704c866cc1b22f0d4ba99c51639470cb543d4e947721236478a647"
+      },
+      {
+        "id": "F335-r5",
+        "per100g": {
+          "availableCarbohydrate": 4.8,
+          "protein": 1.25,
+          "fat": 0.1,
+          "fibre": 1.2
+        },
+        "sourceRecord": {
+          "id": "F335-r5",
+          "name": "SIPULI, KELTASIPULI",
+          "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+          "licence": "THL Fineli Release20, CC BY4.0",
+          "basis": "per100g-edible",
+          "state": "SIPULI, KELTASIPULI",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsValue": 0,
+          "referenceRecord": {
+            "source_id": "335",
+            "name": "SIPULI, KELTASIPULI",
+            "food_type": "FOOD",
+            "process": "RAW",
+            "edible_portion_percent": 100,
+            "ingredient_class": "VEGONI",
+            "food_class": "VEGFRESH",
+            "per100g": {
+              "available_carbohydrate_g_per_100g": 4.8,
+              "fibre_g_per_100g": 1.2,
+              "polyols_g_per_100g": 0,
+              "protein_g_per_100g": 1.25,
+              "fat_g_per_100g": 0.1
+            },
+            "component_provenance": {
+              "fat_g_per_100g": {
+                "acquisition_type": "F",
+                "method_type": "E",
+                "method_indicator": "MIR003"
+              },
+              "available_carbohydrate_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "S",
+                "method_indicator": "MI0181"
+              },
+              "protein_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "T",
+                "method_indicator": "MI0123"
+              },
+              "polyols_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "S",
+                "method_indicator": "MIR006"
+              },
+              "fibre_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "S",
+                "method_indicator": "MI0172"
+              }
+            },
+            "portion_mass_g": {
+              "KPL_S": 30,
+              "KPL_M": 55,
+              "KPL_L": 200,
+              "DL": 90
+            }
+          }
+        },
+        "foodKind": "NONSTARCHY_VEGETABLE",
+        "evidenceHash": "acc229d86c31acd802b46960407359f20dcceacfa8c865be9dfa6fa170e09b4a"
+      },
+      {
+        "id": "F29-r5",
+        "per100g": {
+          "availableCarbohydrate": 3,
+          "protein": 0.34,
+          "fat": 0.6,
+          "fibre": 0.017
+        },
+        "sourceRecord": {
+          "id": "F29-r5",
+          "name": "LIHALIEMI, LAIMENNETTU",
+          "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29",
+          "licence": "THL Fineli Release20, CC BY4.0",
+          "basis": "per100g-edible",
+          "state": "LIHALIEMI, LAIMENNETTU",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsValue": 0,
+          "referenceRecord": {
+            "source_id": "29",
+            "name": "LIHALIEMI, LAIMENNETTU",
+            "food_type": "DISH",
+            "process": "BOIL",
+            "edible_portion_percent": 100,
+            "ingredient_class": "DISH",
+            "food_class": "SAVSAUCE",
+            "per100g": {
+              "available_carbohydrate_g_per_100g": 3,
+              "fibre_g_per_100g": 0.017,
+              "polyols_g_per_100g": 0,
+              "protein_g_per_100g": 0.34,
+              "fat_g_per_100g": 0.6
+            },
+            "component_provenance": {
+              "fat_g_per_100g": {
+                "acquisition_type": "F",
+                "method_type": "E",
+                "method_indicator": "MIR003"
+              },
+              "available_carbohydrate_g_per_100g": {
+                "acquisition_type": "F",
+                "method_type": "E",
+                "method_indicator": "MIR003"
+              },
+              "protein_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "CG",
+                "method_indicator": "MIR003"
+              },
+              "polyols_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "R",
+                "method_indicator": "MI0002"
+              },
+              "fibre_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "R",
+                "method_indicator": "MI0002"
+              }
+            },
+            "portion_mass_g": {
+              "DL": 100,
+              "RKL": 15,
+              "TL": 5
+            }
+          }
+        },
+        "foodKind": "STOCK",
+        "evidenceHash": "4c0a52018e8084f9712113c53c97169232b08a4970a86ea2ff625b3dbdbf6c9f"
+      },
+      {
+        "id": "F398-r5",
+        "per100g": {
+          "availableCarbohydrate": 3.45,
+          "protein": 0.55,
+          "fat": 0.2,
+          "fibre": 0.4
+        },
+        "sourceRecord": {
+          "id": "F398-r5",
+          "name": "TOMAATTIMURSKA",
+          "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
+          "licence": "THL Fineli Release20, CC BY4.0",
+          "basis": "per100g-edible",
+          "state": "TOMAATTIMURSKA",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsValue": 0,
+          "referenceRecord": {
+            "source_id": "398",
+            "name": "TOMAATTIMURSKA",
+            "food_type": "FOOD",
+            "process": "CANN",
+            "edible_portion_percent": 100,
+            "ingredient_class": "VEGCANN",
+            "food_class": "VEGCANN",
+            "per100g": {
+              "available_carbohydrate_g_per_100g": 3.45,
+              "fibre_g_per_100g": 0.4,
+              "polyols_g_per_100g": 0,
+              "protein_g_per_100g": 0.55,
+              "fat_g_per_100g": 0.2
+            },
+            "component_provenance": {
+              "fat_g_per_100g": {
+                "acquisition_type": "L",
+                "method_type": "P",
+                "method_indicator": "MIR003"
+              },
+              "available_carbohydrate_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "S",
+                "method_indicator": "MI0181"
+              },
+              "protein_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "T",
+                "method_indicator": "MI0123"
+              },
+              "polyols_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "IG",
+                "method_indicator": "MIR003"
+              },
+              "fibre_g_per_100g": {
+                "acquisition_type": "S",
+                "method_type": "S",
+                "method_indicator": "MI0172"
+              }
+            },
+            "portion_mass_g": {
+              "DL": 100,
+              "RKL": 15
+            }
+          }
+        },
+        "foodKind": "NONSTARCHY_VEGETABLE",
+        "evidenceHash": "cb9591a3b62fd988ca6231dc70851b10b934ebd7b8020d595906190c47fb52ea"
+      },
+      {
+        "id": "A006618-r5",
+        "per100g": {
+          "availableCarbohydrate": 38.6,
+          "protein": 10.4,
+          "fat": 3.3,
+          "fibre": 25.3
+        },
+        "sourceRecord": {
+          "id": "A006618-r5",
+          "name": "Pepper, black, ground",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618",
+          "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+          "basis": "per100g-edible",
+          "state": "Pepper, black, ground",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": false,
+          "polyolsValue": null,
+          "referenceRecord": {
+            "source_id": "F006618",
+            "classification": 31302,
+            "derivation": "Borrowed",
+            "name": "Pepper, black, ground",
+            "protein_g_per_100g": 10.4,
+            "fat_g_per_100g": 3.3,
+            "fibre_g_per_100g": 25.3,
+            "glycerol_g_per_100g": null,
+            "erythritol_g_per_100g": null,
+            "maltitol_g_per_100g": null,
+            "mannitol_g_per_100g": null,
+            "xylitol_g_per_100g": null,
+            "sorbitol_g_per_100g": null,
+            "available_carbohydrate_without_sugar_alcohols_g_per_100g": 38.6,
+            "available_carbohydrate_with_sugar_alcohols_g_per_100g": 38.6
+          }
+        },
+        "foodKind": "GROUND_SPICE",
+        "evidenceHash": "57fa5913e6e69a0c490ae7c142e3d87a3702079d9fe7660cc531974c39351f18"
+      },
+      {
+        "id": "norway-06.186-polyoli02-20261101",
+        "per100g": {
+          "availableCarbohydrate": 20.3,
+          "protein": 12.7,
+          "fat": 7,
+          "fibre": 40
+        },
+        "sourceRecord": {
+          "id": "matvaretabellen-06.186",
+          "name": "Marjoram, dried",
+          "state": "dried marjoram, ground and fully consumed",
+          "sourceUrl": "https://www.matvaretabellen.no/en/marjoram-dried/",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "AVAILABLE_SUM_SUGARS_AND_STARCH_MI0181",
+          "polyolsSourceVerified": false,
+          "polyolsValue": null,
+          "polyolsValueType": "MISSING_SOURCE10",
+          "sourceApiSha256": "89b8f5f494a79731bf7d8d98065ee66c55263ccdbb519e7c87941218be6c948d",
+          "componentEvidence": [
+            {
+              "sourceId": "MI0181",
+              "quantity": 20.3,
+              "unit": "g",
+              "nutrientId": "Karbo",
+              "sourceDescription": "Carbohydrate, available calculated from sugar and starch   (CHO[g] = SUGAR[g] + STARCH[g])"
+            },
+            {
+              "sourceId": "50",
+              "quantity": 0,
+              "unit": "g",
+              "nutrientId": "Alko",
+              "sourceDescription": "Estimated as a naturally occurring zero value, not analysed."
+            },
+            {
+              "sourceId": "460g",
+              "quantity": 40,
+              "unit": "g",
+              "nutrientId": "Fiber",
+              "sourceDescription": "US Department of Agriculture, Agricultural Research Service. USDA National Nutrient Database for Standard Reference, Release 28 (2015). Nutrient Data Laboratory Home Page"
+            },
+            {
+              "sourceId": "10",
+              "nutrientId": "CHOCALOH",
+              "sourceDescription": "Missing value, content not known.",
+              "quantity": null
+            },
+            {
+              "sourceId": "460g",
+              "quantity": 12.7,
+              "unit": "g",
+              "nutrientId": "Protein",
+              "sourceDescription": "US Department of Agriculture, Agricultural Research Service. USDA National Nutrient Database for Standard Reference, Release 28 (2015). Nutrient Data Laboratory Home Page"
+            },
+            {
+              "sourceId": "MI_SUGAR_NO",
+              "quantity": 4.1,
+              "unit": "g",
+              "nutrientId": "Mono+Di",
+              "sourceDescription": "Sugar calculated as the sum of fructose, glucose, lactose, maltose and sucrose   (SUGAR[g] = FRUS[g] + GLUS[g] + LACS[g] + MALS[g] + SUCS[g])"
+            },
+            {
+              "sourceId": "10",
+              "nutrientId": "POLYL",
+              "sourceDescription": "Missing value, content not known.",
+              "quantity": null
+            },
+            {
+              "sourceId": "10",
+              "nutrientId": "GLUS",
+              "sourceDescription": "Missing value, content not known.",
+              "quantity": null
+            },
+            {
+              "sourceId": "10",
+              "nutrientId": "MALS",
+              "sourceDescription": "Missing value, content not known.",
+              "quantity": null
+            },
+            {
+              "sourceId": "10",
+              "nutrientId": "SUCS",
+              "sourceDescription": "Missing value, content not known.",
+              "quantity": null
+            },
+            {
+              "sourceId": "460g",
+              "quantity": 7,
+              "unit": "g",
+              "nutrientId": "Fett",
+              "sourceDescription": "US Department of Agriculture, Agricultural Research Service. USDA National Nutrient Database for Standard Reference, Release 28 (2015). Nutrient Data Laboratory Home Page"
+            },
+            {
+              "sourceId": "331",
+              "quantity": 16.2,
+              "unit": "g",
+              "nutrientId": "Stivel",
+              "sourceDescription": "Frydenberg, H, Urke EB & Carlsen MH. Sugar project 2021-2024. University of Oslo, department of nutrition."
+            },
+            {
+              "sourceId": "10",
+              "nutrientId": "FRUS",
+              "sourceDescription": "Missing value, content not known.",
+              "quantity": null
+            },
+            {
+              "sourceId": "10",
+              "nutrientId": "LACS",
+              "sourceDescription": "Missing value, content not known.",
+              "quantity": null
+            },
+            {
+              "sourceId": "10",
+              "nutrientId": "CHOCAL",
+              "sourceDescription": "Missing value, content not known.",
+              "quantity": null
+            }
+          ]
+        },
+        "foodKind": "GROUND_SPICE",
+        "reviewState": "SOURCE_SPECIFIC_RESEARCH_PROPOSAL_NOT_PUBLICATION_EVIDENCE",
+        "evidenceHash": "67eec2d1c031276a0bb4bc0b2845680efcf907dc17311c0b2db4690112407a49"
+      }
+    ],
+    "versionHashes": {
+      "reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md": "401bd41616c0318efdfc41eb34b628092b57de65031953bea88fc3bf6adbeee2",
+      "kaannokset/en/paaruoat/jauheliha-kaalikeitto-vhh.md": "98cb84dd19e8cd1b93e0e83c7f567e45c5ae70a1b80d51530846ca120659dd75",
+      "kaannokset/sv/paaruoat/jauheliha-kaalikeitto-vhh.md": "2233f4fa3dc1c621de88ccec6a40f38ef8feee7afea84e4bc301f3807c7969aa",
+      "kaannokset/th/paaruoat/jauheliha-kaalikeitto-vhh.md": "a1124be4725bad0d0663ef6e9982e1a791b0481f4b829f64cbcad7cb22f27ba9"
+    }
+  }
+}
