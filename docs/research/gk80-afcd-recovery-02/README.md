@@ -1,5 +1,9 @@
 # GK80 AFCD-RECOVERY-02 — pois käytöstä oleva uunikanapastaprototyyppi
 
+**Ajantasainen päätösehdotus: AFCD-RECOVERY-03 — CONDITIONAL GO vain omistajan menetelmä- ja sisältökatselmointiin.** [Täsmällinen näyttötarkkuuspäätös](recovery-03/README.md) ja [erillinen hyväksymätön ehdotusversio](recovery-03/proposal.json):7,4 /10,4 /39,53 /23,91 g sekä mallinnettu noin GK3 LOW. Lähteitä tai alkuperäistä evidenssiä ei muutettu. Uusi ehdotus ratkaisee näyttövakauden; alkuperäinen prototyyppi ja tuotanto pysyvät HOLDissa, ja kaikki julkaisuestot säilyvät. Omistajapäätös puuttuu.
+
+Alla oleva AFCD-RECOVERY-02-raportti on alkuperäisen7,38 g:n ehdotuksen historiallinen HOLD-perustelu. Sen laskenta- ja lähdetodisteet säilyvät muuttumattomina.
+
 **1.11.2026 — päätös HOLD.** Yhden reseptin tekninen prototyyppi onnistui. Netto-CHO:n alkuperäinen 7,38 g:n kahden desimaalin näyttö ei kuitenkaan pysy vakaana jo kahden uuden Fineli-verkkotaulukkoprofiilin pyöristysherkkyydessä. Tarkkuutta ei muuteta tämän esteen ohittamiseksi. Ei omistajan menetelmä-/sisältöhyväksyntää eikä julkaisuvaltuutusta.
 
 ## Lähtö-main ja lähdeversiot

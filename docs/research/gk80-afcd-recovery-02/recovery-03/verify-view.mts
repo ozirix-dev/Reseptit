@@ -1,0 +1,21 @@
+// Read-only display compatibility check. No recipe or production evidence is written.
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {formatIngredientAmount} from '../../../../site/src/features/recipes/servings.ts';
+import {recipeFrontmatterSchema} from '../../../../site/src/content/schema.ts';
+import {updateNutritionFrontmatter} from '../../../../site/scripts/nutrition-markdown.ts';
+import {evaluatePrototype,loadRecipe} from '../prototype.mts';
+const p=JSON.parse(readFileSync(new URL('./proposal.json',import.meta.url),'utf8'));
+const fields={carbs_net_per_serving_g:7.4,carbs_total_per_serving_g:10.4,protein_per_serving_g:39.53,fat_per_serving_g:23.91};
+assert.deepEqual(Object.values(fields),Object.values(p.display).filter((v:any)=>v.unit==='g').map((v:any)=>Number(v.value)));
+for(const [k,v] of Object.entries(fields))recipeFrontmatterSchema.shape[k as keyof typeof fields].parse(v);
+const inMemory=updateNutritionFrontmatter(loadRecipe(),fields);
+for(const [k,v] of Object.entries(fields))assert.ok(inMemory.includes(`${k}: ${v}`));
+const fi=Object.fromEntries(Object.entries(fields).map(([k,v])=>[k,formatIngredientAmount(v,1,1,'fi-FI')]));
+assert.deepEqual(Object.values(fi),['7,4','10,4','39,53','23,91']);
+const old=evaluatePrototype();
+assert.equal(old.status,'HOLD');assert.equal(old.publicationEligible,false);
+assert.equal(old.productionEnabled,false);assert.equal(old.activationSupported,false);assert.equal(old.productionGkOverride,null);
+assert.equal(old.standardModel.pepperNet,null);assert.equal(old.standardModel.totalCarbohydratePerServingG,null);
+assert.equal(old.standardModel.status,'INSUFFICIENT SOURCE DATA');
+console.log(JSON.stringify({status:'PASS',schemaAcceptsValues:true,frontmatterWriterAcceptsValuesInMemory:true,fiDisplay:fi,uiChangeRequiredForTheseNumbers:false,ordinaryEvidenceStillRejected:true,oldPrototypeStatus:old.status,publicationEligible:false,productionEnabled:false,activationSupported:false,productionGkOverride:null,productionFilesWritten:0},null,2));

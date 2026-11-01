@@ -1,0 +1,49 @@
+{
+  "proposalFingerprint": "e1f620de4ef73f347ddff4c14e41dadb1acf9b8282b7761404865491b415cc07",
+  "decision": "CONDITIONAL_GO_TO_OWNER_REVIEW_ONLY",
+  "baseHead": "36c191ea04c95a53e83c07101e329a4055f35da2",
+  "main": "88e228bbb1f0fa4a4e16be4aeedcd509bc7bc33a",
+  "ui": {
+    "status": "PASS",
+    "schemaAcceptsValues": true,
+    "frontmatterWriterAcceptsValuesInMemory": true,
+    "fiDisplay": {
+      "carbs_net_per_serving_g": "7,4",
+      "carbs_total_per_serving_g": "10,4",
+      "protein_per_serving_g": "39,53",
+      "fat_per_serving_g": "23,91"
+    },
+    "uiChangeRequiredForTheseNumbers": false,
+    "ordinaryEvidenceStillRejected": true,
+    "oldPrototypeStatus": "HOLD",
+    "publicationEligible": false,
+    "productionEnabled": false,
+    "activationSupported": false,
+    "productionGkOverride": null,
+    "productionFilesWritten": 0
+  },
+  "targetedPrototypeTests": {
+    "pass": 4,
+    "fail": 0,
+    "output": "✔ prototype stays HOLD with no production override or activation path (19.6253ms)\n✔ basil eligibility is explicit but neither alias nor GI source allowlist is installed (10.7442ms)\n✔ all production trees and 326 reused baseline objects remain unchanged at 130 numeric (1057.2129ms)\n✔ PR156 exact two approvals, helper and source worktrees are not changed (683.6527ms)\nℹ tests 4\nℹ suites 0\nℹ pass 4\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 2010.1779\n"
+  },
+  "decimalDisplayProof": {
+    "status": "PASS",
+    "scenarios": 3,
+    "fieldsPerScenario": 5,
+    "oldEvidenceUnchanged": true,
+    "productionFlagsUnchanged": true,
+    "numericBaseline": 130,
+    "objects": 326,
+    "packageWithholding": true,
+    "pr156HashesUnchanged": true
+  },
+  "newSourceSearches": 0,
+  "newDatabaseGkRuns": 0,
+  "fullBuilds": 0,
+  "fullTestSuiteRuns": 0,
+  "ordinaryPrototypeStillHold": true,
+  "newOwnerApproval": false,
+  "productionPublishedNewGk": 0,
+  "automaticCi": "Verify the one normal post-push run on final HEAD; no manual run."
+}
