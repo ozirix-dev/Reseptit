@@ -1,4 +1,7 @@
 import test from "node:test";
+import { readFileSync } from "node:fs";
+import { parseMarkdown } from "../src/content/markdown";
+import { recipeFrontmatterSchema } from "../src/content/schema";
 import assert from "node:assert/strict";
 import { calculate } from "../scripts/nutrition-model";
 import { recipeNutritionInputHash, verifyNutritionEvidence } from "../scripts/nutrition-evidence";
@@ -91,4 +94,40 @@ test("nutrition metadata updates preserve recipe frontmatter and reject unrounde
   assert.match(updated, /^---\ntitle: Test\nservings: 2\ncarbs_net_per_serving_g: 1.2/m);
   assert.match(updated, /fat_per_serving_g: 4\.56\n\n---\n# Test/);
   assert.throws(() => updateNutritionFrontmatter(markdown, { carbs_net_per_serving_g: 1.234, carbs_total_per_serving_g: 2, protein_per_serving_g: 3, fat_per_serving_g: 4 }));
+});
+
+function withdrawnFixture(id: string) {
+  const markdown = readFileSync(new URL(`../../reseptit/jalkiruoat/${id}.md`, import.meta.url), "utf8");
+  const source = recipeFrontmatterSchema.parse(parseMarkdown(markdown)!.data);
+  const calculation = JSON.parse(readFileSync(new URL(`../../docs/nutrition/calculations/${id}.json`, import.meta.url), "utf8")) as Calculation;
+  return { source, calculation };
+}
+
+test("approved AFCD9837 packages retain evidence while withholding every public value", () => {
+  for (const id of ["keto-suklaakeksit", "keto-mutakakku"]) {
+    const { source, calculation } = withdrawnFixture(id);
+    const result = verifyNutritionEvidence(source, calculation);
+    assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+    assert.deepEqual(result.errors, []);
+    assert.equal(result.calculated, null);
+    assert.ok(Object.values(result.values).every(value => value === null));
+  }
+});
+
+test("withdrawal cannot restore values or accept changed inputs, evidence, or translations", () => {
+  const { source, calculation } = withdrawnFixture("keto-suklaakeksit");
+  for (const changed of [
+    { ...source, protein_per_serving_g: 4.77 },
+    { ...source, servings: source.servings + 1 },
+  ]) assert.equal(verifyNutritionEvidence(changed, calculation).status, "CONFLICT REQUIRES REVIEW");
+  const edited = structuredClone(calculation);
+  edited.ingredients[0]!.record!.per100g.fat! += 0.01;
+  assert.equal(verifyNutritionEvidence(source, edited).status, "CONFLICT REQUIRES REVIEW");
+  assert.equal(verifyNutritionEvidence(source, null).status, "CONFLICT REQUIRES REVIEW");
+  assert.equal(verifyNutritionEvidence(source, calculation, [{ path: "translation.md", data: { ...source, fat_per_serving_g: 20.03 } }]).status, "CONFLICT REQUIRES REVIEW");
+});
+
+test("unlisted recipes do not acquire an evidence-withdrawal exception", () => {
+  const cleared = { ...recipe, carbs_net_per_serving_g: null, carbs_total_per_serving_g: null, protein_per_serving_g: null, fat_per_serving_g: null };
+  assert.ok(verifyNutritionEvidence(cleared, evidence()).errors.length > 0);
 });

@@ -1,0 +1,70 @@
+{
+  "scope": "AFCD9837_TWO_PACKAGE_WITHDRAWAL",
+  "ownerDecision": "Hyväksyn keto-suklaakeksien ja keto-mutakakun ravintoarvopakettien pidätyksen.",
+  "auditPr": "https://github.com/ozirix-dev/Reseptit/pull/161",
+  "releaseAuthorization": false,
+  "recipes": [
+    {
+      "recipeId": "keto-suklaakeksit",
+      "sourcePath": "reseptit/jalkiruoat/keto-suklaakeksit.md",
+      "evidencePath": "docs/nutrition/calculations/keto-suklaakeksit.json",
+      "sourceBaseCommit": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+      "originalRecipeSha256": "3bdae3c9ac420759cf20afc908ba7549357fcd55d7435e6a2cbf74d192b3bc44",
+      "originalEvidenceFileSha256": "739dbe0155f62ae09dfcda815d83838cd028f0f27606c1412ea4dd48cfd6107e",
+      "evidenceCanonicalSha256": "53b29654ae27ad3069892bcad94f9710ef4893798a0aef4cc5239845abf16e28",
+      "recipeInputHash": "2b18c5aebdcb91f2f0e09bca4d34f0ce16224db3a023b9c97337d8c07f4edf65",
+      "servings": 10,
+      "previousPublishedNutrition": {
+        "carbs_net_per_serving_g": 1.38,
+        "carbs_total_per_serving_g": 12.63,
+        "protein_per_serving_g": 4.77,
+        "fat_per_serving_g": 20.03
+      },
+      "publicationStatus": "WITHHELD_ALL_FOUR",
+      "aggregatePolyolsPer100g": null,
+      "sourceFoodId": "F009837",
+      "historicalPairDifferencePer100g": 28,
+      "reportedSpeciesPer100g": {
+        "maltitol": 28,
+        "erythritol": 3.8,
+        "xylitol": 3.6,
+        "sorbitol": null,
+        "mannitol": null,
+        "glycerol": null
+      },
+      "additionalKnownSpeciesPerServingG": "0.444",
+      "originalEvidenceDisposition": "Unmodified historical calculation retained by exact hash; not accepted as a current publishable nutrition package. Its old pair-as-aggregate claim is superseded by this explicit withdrawal."
+    },
+    {
+      "recipeId": "keto-mutakakku",
+      "sourcePath": "reseptit/jalkiruoat/keto-mutakakku.md",
+      "evidencePath": "docs/nutrition/calculations/keto-mutakakku.json",
+      "sourceBaseCommit": "5761afa069ea54c9d510f1cb3c1086ae7d42f998",
+      "originalRecipeSha256": "4c3766146f4fd3379a8581f4ec4023c0b32d7bab1e593f75bb7ca30e096de17e",
+      "originalEvidenceFileSha256": "a0f55e4eae5b47531502911b2bfea5963f72a1000626c0ff940b21c9c1826d40",
+      "evidenceCanonicalSha256": "d1b17dcd782b109e50cf62abcb40f7deeab083b02e954d3de536231493f2573b",
+      "recipeInputHash": "c5142972a59c35b93425c03ac75081809db249de7994d65e9b64b94d3fa62c9f",
+      "servings": 8,
+      "previousPublishedNutrition": {
+        "carbs_net_per_serving_g": 1.52,
+        "carbs_total_per_serving_g": 19.84,
+        "protein_per_serving_g": 5.78,
+        "fat_per_serving_g": 25.34
+      },
+      "publicationStatus": "WITHHELD_ALL_FOUR",
+      "aggregatePolyolsPer100g": null,
+      "sourceFoodId": "F009837",
+      "historicalPairDifferencePer100g": 28,
+      "reportedSpeciesPer100g": {
+        "maltitol": 28,
+        "erythritol": 3.8,
+        "xylitol": 3.6,
+        "sorbitol": null,
+        "mannitol": null,
+        "glycerol": null
+      },
+      "additionalKnownSpeciesPerServingG": "1.3875",
+      "originalEvidenceDisposition": "Unmodified historical calculation retained by exact hash; not accepted as a current publishable nutrition package. Its old pair-as-aggregate claim is superseded by this explicit withdrawal."
+    }
+  ]
+}
