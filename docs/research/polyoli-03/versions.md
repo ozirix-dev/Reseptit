@@ -24,8 +24,8 @@ Suola säilyy lukitun version sertifioituna nollana; tuntemattomia mausteita ei 
 
 Valmistus lukitusta tutkimusversiosta:
 
-1. Ruskista 500 g 17% naudan jauhelihaa omassa rasvassaan. Lisää 55 g sipulia,500 g valkokaalia ja 100 g tomaattimurskaa pyreen sijasta.
-2. Lisää 1000 g käyttövalmista lihalientä,0,5 g jauhettua mustapippuria ja 0,6 g jauhettua kuivattua meiramia. Keitä kaali pehmeäksi.
+1. Ruskista 500 g 17% naudan jauhelihaa omassa rasvassaan. Lisää 55 g sipulia, 500 g valkokaalia ja 100 g tomaattimurskaa pyreen sijasta.
+2. Lisää 1000 g käyttövalmista lihalientä, 0,5 g jauhettua mustapippuria ja 0,6 g jauhettua kuivattua meiramia. Keitä kaali pehmeäksi.
 3. Jaa koko keitto nesteineen ja rasvoineen kuuteen annokseen. Kaikki mausteet syödään.
 
 ## vhh-kaalilaatikko
@@ -51,7 +51,7 @@ Suola säilyy lukitun version sertifioituna nollana; tuntemattomia mausteita ei 
 Valmistus lukitusta tutkimusversiosta:
 
 1. Kypsennä 500 g jauhelihaa ja 55 g sipulia 14 g:ssa voita. Lisää 900 g hienonnettua valkokaalia.
-2. Sekoita 200 g kermaa,110 g munaa,100 g lihalientä,1 g mustapippuria ja 0,6 g jauhettua meiramia. Yhdistä kaikki vuokaan.
+2. Sekoita 200 g kermaa, 110 g munaa, 100 g lihalientä, 1 g mustapippuria ja 0,6 g jauhettua meiramia. Yhdistä kaikki vuokaan.
 3. Paista 175 asteessa, kunnes munaseos ja liha ovat kypsiä ja kaali pehmeää. Jaa koko vuoka nesteineen kuuteen annokseen.
 
 ## ropa-vieja
@@ -105,8 +105,8 @@ Suola säilyy lukitun version sertifioituna nollana; tuntemattomia mausteita ei 
 
 Valmistus lukitusta tutkimusversiosta:
 
-1. Kiehauta 1000 g käyttövalmista lihalientä. Lisää 250 g lanttua,150 g porkkanaa,100 g juuriselleriä ja 55 g sipulia punnittuina syötävinä paloina.
-2. Lisää 400 g siskonmakkaraa,0,2 g hienoksi jauhettua laakerinlehteä ja 0,5 g jauhettua mustapippuria. Kypsennä makkara kauttaaltaan ja juurekset pehmeiksi.
+1. Kiehauta 1000 g käyttövalmista lihalientä. Lisää 250 g lanttua, 150 g porkkanaa, 100 g juuriselleriä ja 55 g sipulia punnittuina syötävinä paloina.
+2. Lisää 400 g siskonmakkaraa, 0,2 g hienoksi jauhettua laakerinlehteä ja 0,5 g jauhettua mustapippuria. Kypsennä makkara kauttaaltaan ja juurekset pehmeiksi.
 3. Lisää 8 g persiljaa ja jaa koko keitto neljään annokseen. Kaikki liemi ja jauhetut mausteet syödään.
 
 ## nakkikeitto-kukkakaalilla
@@ -136,4 +136,3 @@ Valmistus lukitusta tutkimusversiosta:
 3. Keitä sipuli,selleri,purjo,jauhettu laakeri0.2g ja pippuri1g lihaliemessä5min. Lisää kukkakaali ja kypsennä noin8min.
 4. Lisää nakit ja kuumenna kauttaaltaan. Lisää persilja5g. Jauhettu laakeri syödään kokonaan; lehteä ei poisteta. Jaa kaikki keitto neljään annokseen.
 5. Kypsennä kaikki raakaa eläinperäistä ainesta sisältävät osat kypsiksi. Syö kaikki tämän punnitun version ainekset ja kastike/pannuneste. Raakojen ainesten ravintokoostumus on kypsän ruoan proxy; mittaamatonta hävikkiä ei vähennetä.
-

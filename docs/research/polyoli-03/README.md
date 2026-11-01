@@ -101,19 +101,19 @@ makrot kiinteinä pitävä skenaario**, ei ravintoaineiden mittaustarkkuudesta
 riippumaton fyysinen yläraja.
 
 Meiramia on 0,6 g / 6 annosta. Sen oma polyoliskenaario on siksi
-0–0,020 g/annos ja GK-lisäys 0–0,030. CHO20,3:sta ei vähennetä tätä P:tä
+0–0,020 g/annos ja GK-lisäys 0–0,030. CHO 20,3:sta ei vähennetä tätä P:tä
 uudelleen. Lähdemääritelmä:
-[Matvaretabellen06.186](https://www.matvaretabellen.no/en/marjoram-dried/).
+[Matvaretabellen 06.186](https://www.matvaretabellen.no/en/marjoram-dried/).
 
 ### Laakeri: polyoli kuuluu US-totalin ei-kuituiseen pooliin
 
-Nykyinen USDA-tietue ilmoittaa total74,97 ja kuidun26,3 g/100 g.
-Ei-kuituinen lähdepooli on48,67 g/100 g. Sen jako A:n ja P:n välillä on
+Nykyinen USDA-tietue ilmoittaa total 74,97 ja kuidun 26,3 g/100 g.
+Ei-kuituinen lähdepooli on 48,67 g/100 g. Sen jako A:n ja P:n välillä on
 tuntematon: `A+P=C−F`. Siksi neton aluetta ei korvata täsmällisellä
 nettoarvolla. Sivuston kokonais-CHO voi silti muodostua suoraan US-totalista:
 `A+F+P=C`, ilman P:n määrän ratkaisemista ja ilman P=0-oletusta.
 
-Laakerin GI50 pysyy nimettynä projektivertailuna. Polyoliosuuden ja sen
+Laakerin GI 50 pysyy nimettynä projektivertailuna. Polyoliosuuden ja sen
 vasteen kaikki ilmoitettuun skenaarioon kuuluvat yhdistelmät tutkitaan.
 Norjan laakerin epäselvää sokerijakeistusta ei oteta käyttöön.
 
@@ -159,7 +159,7 @@ on liemen, persiljan ja pippurin puutteita; nakkikeitossa varsisellerin
 ja pippurin. Nakkikeiton aiemmin hyväksytyt seitsemän katalogisidosta
 ratkaisevat sidokset, eivät tätä koostumusnäytön rajoitetta.
 
-### Kynnysvertailu, vastekerroinskenaario0–150
+### Kynnysvertailu, vastekerroinskenaario 0–150
 
 | Koko alueen leveysbudjetti | Ehdokkaita vain nimetystä mausteesta | Ehdokkaita koko reseptin tarkistuksesta |
 | --- | ---: | ---: |
@@ -196,7 +196,7 @@ pysyvät matalan GK:n luokassa.
 | Jauheliha-kaalikeitto | 4,588900–4,646900 | **noin 5** | 10,21 g | **12 g** | 17,68 g | 15,26 g |
 | VHH-kaalilaatikko | 3,773416667–3,859416667 | **noin 4** | 9,52 g | **13 g** | 20,86 g | 30,65 g |
 
-Kaalikeiton kokonais-CHO:n alue on12,141883–12,180550 g ja kaalilaatikon
+Kaalikeiton kokonais-CHO:n alue on 12,141883–12,180550 g ja kaalilaatikon
 12,714967–12,772300 g/annos. Kumpaakaan ei saa esittää nykyisen kaltaisena
 kahden desimaalin täsmällisenä kokonais-CHO-pisteenä. Molemmille vasta
 kokonaiset grammat pysyvät samoina koko skenaariossa. Proteiini ja rasva
@@ -230,7 +230,7 @@ C-ehdotus, jos seuraavat uudet menetelmäehdot hyväksytään yhdessä:
 
 1. Nimetyille lähteille rajattu makrojäännösmalli ja vastekerroinskenaario
    0–150; raja on toimituksellinen lähdemalliskenaario, ei biologinen takuu.
-2. Koko reseptin leveysbudjetti0,10 GK/annos, kaikki puuttuvat AFCD-lajit
+2. Koko reseptin leveysbudjetti 0,10 GK/annos, kaikki puuttuvat AFCD-lajit
    mukana; ei kenttäparin tulkitsemista kaikkien polyolien mitatuksi nollaksi.
 3. Taulukon täsmälliset esitystarkkuudet, mukaan lukien kokonaiset grammat
    kokonais-CHO:lle, sekä nimetyt punnitut valmistusversiot ja LOW-teksti.
@@ -247,7 +247,7 @@ reseptiä. Lähdesidoksia ei pyydetä hyväksymään uudelleen.
 Jos omistaja ei hyväksy jäännösmallin tai vastealueen ehdollisuutta,
 suositus on nykyisen julkaisupidätyksen säilyttäminen myös kahdelle
 meiramireseptille. Tämän raportin perusteella ei luvata yleistä fysiologista
-virherajaa. **Mahdollinen lisäys on2, ei5**, ja sekin edellyttää uutta
+virherajaa. **Mahdollinen lisäys on 2, ei 5**, ja sekin edellyttää uutta
 menetelmä- ja sisältöpäätöstä sekä myöhempää erillistä integraatiota.
 
 ## 7. Varmennus ja toimitus
@@ -257,20 +257,20 @@ menetelmä- ja sisältöpäätöstä sekä myöhempää erillistä integraatiota
   johdettu vesi, polyolien säilyminen nullina, makrojen tarkkuus, luokkaraja
   ja positiivisen alle yhden nollaksi pyöristymisen esto.
 - 17 nykyistä nutrition-model-, food-safety- ja display-testiä PASS.
-- Decimalin alueet ja20 makrorajaa verrattiin itsenäiseen Number/Intl-
-  laskentaan. Lisäksi1815 erillistä hypoteettisen P-jaon ja vasteen
+- Decimalin alueet ja 20 makrorajaa verrattiin itsenäiseen Number/Intl-
+  laskentaan. Lisäksi 1815 erillistä hypoteettisen P-jaon ja vasteen
   yhdistelmää pysyi ilmoitetuilla alueilla; ehdokkaiden näkyvä GK säilyi.
-- Kaikkien5 lähdehashit ja hyväksytyt sidokset tarkistettiin nykyistä
-  mainia vasten. Nakkikeiton9 sidosta läpäisi muuttamattoman tarkistimen
-  vain hyväksytyt7 aliasriviä sisältävässä eristetyssä katalogissa.
+- Kaikkien 5 lähdehashit ja hyväksytyt sidokset tarkistettiin nykyistä
+  mainia vasten. Nakkikeiton 9 sidosta läpäisi muuttamattoman tarkistimen
+  vain hyväksytyt 7 aliasriviä sisältävässä eristetyssä katalogissa.
 - 326 kokonaista tuotantotulosobjektia verrataan tässä työpuussa ennen
-  tutkimustiedostojen lisäystä ja sen jälkeen; kaikki130 vanhaa numeerista
+  tutkimustiedostojen lisäystä ja sen jälkeen; kaikki 130 vanhaa numeerista
   säilyvät täsmälleen. Ei tuotannon resepti-, makro-, katalogi- tai rekisterimuutosta.
 - Kehitysvaiheessa korjattiin scratch-paketin rivinvaihtojen hash-normalisointi,
   yhden testin syntaksi sekä Decimalin viimeisten numeroiden vertailutoleranssi.
   Näiden vuoksi kohdistetut tarkistimet uusittiin; tuotantotestit läpäisivät
   ensimmäisellä ajolla eikä niitä uusittu tarpeettomasti.
-- Ei691-reittistä buildia, selainta, kuvatyötä, uutta reseptierää tai
+- Ei 691-reittistä buildia, selainta, kuvatyötä, uutta reseptierää tai
   manuaalista Actions-ajoa. Tiedostot ovat docs/research-polussa,
   joten yksi Draft käyttää kevyttä CI-valintaa.
 
@@ -285,7 +285,7 @@ node docs/research/polyoli-03/verify-main.mjs --output-dir D:/Temp/polyoli03-mai
 ```
 
 [results.json](results.json) sisältää koko viiden reseptin päätösmatriisin,
-makroalueet, tarkkuudet, kaikki osittaiset AFCD-tietueet ja16 budjettivertailua.
+makroalueet, tarkkuudet, kaikki osittaiset AFCD-tietueet ja 16 budjettivertailua.
 [verification.json](verification.json) kokoaa toistot. Kaikki kirjoittavat
 tarkistimet vaativat erikseen nimetyn repon ulkopuolisen scratch-kohteen.
 
