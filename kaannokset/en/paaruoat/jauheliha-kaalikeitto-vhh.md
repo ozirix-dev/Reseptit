@@ -12,10 +12,10 @@ main_ingredient:
 cooking_method:
   - liesi
 servings: 6
-carbs_net_per_serving_g: 12.63
-carbs_total_per_serving_g: 15.95
-protein_per_serving_g: 18.23
-fat_per_serving_g: 15.43
+carbs_net_per_serving_g: 10.21
+carbs_total_per_serving_g: 12
+protein_per_serving_g: 17.68
+fat_per_serving_g: 15.26
 time_total_min: 40
 difficulty: easy
 tags:
@@ -23,35 +23,34 @@ tags:
   - low carb
 image:
   src: paaruoat/jauheliha-kaalikeitto-vhh.webp
-  alt: A bowl of beef and cabbage soup showing cabbage strips and ground beef
-    and marjoram
+  alt: A bowl of beef and cabbage soup showing cabbage strips and ground beef and marjoram
   width: 1280
   height: 853
 ingredients:
   - amount: 500
     unit: g
-    item: ground beef
-  - amount: 700
+    item: 17% fat ground beef
+  - amount: 500
     unit: g
     item: white cabbage
-  - amount: 1
-    unit: ""
-    item: onion
-  - amount: 1.2
-    unit: l
-    item: meat broth
-  - amount: 2
-    unit: tbsp
-    item: tomato puree
+  - amount: 55
+    unit: g
+    item: yellow onion
+  - amount: 1000
+    unit: g
+    item: ready-to-use meat broth
+  - amount: 100
+    unit: g
+    item: crushed tomatoes
   - amount: 1
     unit: tsp
     item: salt
   - amount: 0.5
-    unit: tsp
-    item: black pepper
-  - amount: 1
-    unit: tsp
-    item: marjoram
+    unit: g
+    item: ground black pepper
+  - amount: 0.6
+    unit: g
+    item: ground dried marjoram
 source_language: fi
 source_recipe: reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md
 translation_of: jauheliha-kaalikeitto-vhh
@@ -59,19 +58,20 @@ translation_of: jauheliha-kaalikeitto-vhh
 
 # Ground Beef and Cabbage Soup
 
-Beef mince and white cabbage simmer in stock in this soup.
+A weighed beef and cabbage soup with crushed tomatoes and dried marjoram.
 
 ## Description
 
-Tomato purée and marjoram add flavour.
+Use the exact ingredient compositions and edible weights listed. Keep all liquid, fat and spices in the dish. The salt quantity is unchanged from the original recipe.
 
 ## Preparation
 
-1. Brown the minced meat and chopped onion in a pot.
-2. Slice the cabbage and add to the pot with the meat broth.
-3. Mix in the tomato puree and spices. Cook slowly for about 25 minutes until the cabbage softens.
-4. Check the taste and serve hot.
+1. Brown 500 g of 17% fat ground beef in its own fat. Add 55 g onion, 500 g white cabbage and 100 g crushed tomatoes instead of tomato paste.
+2. Add 1000 g ready-to-use meat broth, 0.5 g ground black pepper and 0.6 g ground dried marjoram. Simmer until the cabbage is tender.
+3. Divide the whole soup, including its liquid and fat, into six portions. All the spices are eaten.
 
 ## Notes
 
-- Check for doneness and finally season according to your own taste.
+- Modelled estimate, low confidence. Missing spice polyol data is handled using a calculation model restricted to this recipe version. This is not a measured meal glucose response.
+- Total carbohydrate is rounded to whole grams so that the displayed value stays the same throughout the approved calculation scenario. Other macros use two decimal places; other source uncertainty remains.
+- The image illustrates serving; extra accompaniments shown are not included in the estimate.

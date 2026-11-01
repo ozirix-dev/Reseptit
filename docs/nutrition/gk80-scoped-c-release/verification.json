@@ -1,0 +1,58 @@
+{
+  "status": "PASS_LOCAL",
+  "baseMain": "ec7f4b01e6fa86cc6a45308286cf32e776e91e88",
+  "candidateCoverage": {
+    "numeric": 133,
+    "recipes": 326,
+    "incomplete": 193,
+    "percent": 40.8
+  },
+  "productionCoverageAtBase": "131/326",
+  "productionPublished": false,
+  "actualChangedResultIds": [
+    "jauheliha-kaalikeitto-vhh",
+    "vhh-kaalilaatikko"
+  ],
+  "unchangedWholeObjects": 324,
+  "unchangedPriorNumericObjects": 131,
+  "uuniRecipeEvidenceAndHelperUnchanged": true,
+  "approvedEvidenceFileBytesLfUnchanged": true,
+  "eightApprovedVersionHashesUnchanged": true,
+  "preservedHolds": [
+    "ropa-vieja",
+    "siskonmakkarakeitto-juurekset",
+    "nakkikeitto-kukkakaalilla",
+    "kiinalainen-teehaudutetut-munat",
+    "keto-suklaakeksit",
+    "keto-mutakakku"
+  ],
+  "withheldFourValues": {
+    "keto-mutakakku": {
+      "carbs_net_per_serving_g": null,
+      "carbs_total_per_serving_g": null,
+      "protein_per_serving_g": null,
+      "fat_per_serving_g": null
+    },
+    "keto-suklaakeksit": {
+      "carbs_net_per_serving_g": null,
+      "carbs_total_per_serving_g": null,
+      "protein_per_serving_g": null,
+      "fat_per_serving_g": null
+    }
+  },
+  "strictNutritionAuditConflicts": 0,
+  "targetedTests": {
+    "pass": 24,
+    "fail": 0
+  },
+  "staticTests": {
+    "pass": 25,
+    "fail": 0
+  },
+  "localBuilds": 1,
+  "prerenderedRoutes": 691,
+  "testsNotRunLocally": "Full unit, browser/image and full translation suites deferred to the single normal automatic full CI selected for runtime/render changes. No manual Actions dispatch.",
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false
+}

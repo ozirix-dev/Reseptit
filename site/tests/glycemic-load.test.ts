@@ -18,6 +18,7 @@ import { parseMarkdown } from "../src/content/markdown";
 async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding: 'utf8'): Promise<string> {
  const text=await actualReadFile(filename,encoding);
  const relative=path.relative(path.resolve(import.meta.dirname,'../..'),String(filename)).replaceAll('\\','/');
+ const scopedText=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-scoped-c-release/historical-source-text.json'),'utf8'));if(Object.hasOwn(scopedText,relative))return scopedText[relative];
  const pre7Text=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-7/historical-source-text.json'),'utf8'));if(Object.hasOwn(pre7Text,relative))return pre7Text[relative];
  const pre6Text=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-6/historical-source-text.json'),'utf8'));if(Object.hasOwn(pre6Text,relative))return pre6Text[relative];
  const nextOriginal=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/historical-source-text.json'),'utf8'));if(Object.hasOwn(nextOriginal,relative))return nextOriginal[relative];
@@ -34,6 +35,7 @@ async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding
 const gk80HistoricalPromise:Promise<any>=readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical.json'),'utf8').then(JSON.parse);
 async function historicalSourceReviewView(name:string,value:any):Promise<any>{
   if(name!=='tmp/nutrition/glycemic-load-pilot.json')return value;
+  const scoped=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-scoped-c-release/main-baseline.json'),'utf8'));value={...value,results:value.results.map((r:any)=>scoped.selectedResults.find((x:any)=>x.recipeId===r.recipeId)??r),sourceHashes:{...value.sourceHashes,...scoped.sourceHashes}};for(const key of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches'])value[key]=[...value[key].filter((id:string)=>!Object.hasOwn(scoped.sourceHashes,id)),...scoped[key]].sort();
   // This function is explicitly a historical source-review view. Restore only
   // the new recovery case from its immutable pre-integration main snapshot;
   // gk80-uunikanapasta.test.ts checks all326 actual current objects separately.

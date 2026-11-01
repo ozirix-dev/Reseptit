@@ -1,0 +1,31 @@
+{
+  "baseMain": "ec7f4b01e6fa86cc6a45308286cf32e776e91e88",
+  "sourcePr": 156,
+  "sourceHead": "d31c3a7ae157337177733375a9c7d811646187ee",
+  "ownerRequest": "Hyväksyn PR #156:n kahden C-tapauksen sovittamisen uuteen main-pohjaiseen julkaisu-Draftiin. Säilytä hyväksyntähashit ja tuo erä katselmoitavaksi. Ei vielä Readyä, mergeä eikä deployta. Jätä ReportHub erilleen.",
+  "sourceApprovalLedgerUrl": "https://github.com/ozirix-dev/Reseptit/blob/d31c3a7ae157337177733375a9c7d811646187ee/docs/research/polyoli-03/approval-ledger.json",
+  "sourceApprovalLedgerLfSha256": "5de69749e595f5d185e5411449528cec8907e410a67ad24b9e73eef6c624edb8",
+  "approvedEvidenceFingerprints": {
+    "jauheliha-kaalikeitto-vhh": "7e16f21f52cc2365c6b1742d891542fb118b7b879b5bf73d88d5dbef361c0f2f",
+    "vhh-kaalilaatikko": "57540a15a0e29a4fc6c7cdfe83dfbaa8f59222a0dd48ad77f75c96cf36d82235"
+  },
+  "versionHashes": {
+    "reseptit/paaruoat/jauheliha-kaalikeitto-vhh.md": "401bd41616c0318efdfc41eb34b628092b57de65031953bea88fc3bf6adbeee2",
+    "kaannokset/en/paaruoat/jauheliha-kaalikeitto-vhh.md": "98cb84dd19e8cd1b93e0e83c7f567e45c5ae70a1b80d51530846ca120659dd75",
+    "kaannokset/sv/paaruoat/jauheliha-kaalikeitto-vhh.md": "2233f4fa3dc1c621de88ccec6a40f38ef8feee7afea84e4bc301f3807c7969aa",
+    "kaannokset/th/paaruoat/jauheliha-kaalikeitto-vhh.md": "a1124be4725bad0d0663ef6e9982e1a791b0481f4b829f64cbcad7cb22f27ba9",
+    "reseptit/paaruoat/kaalilaatikko.md": "18d42375bf5ab81844ce137dd2d83b20de26da1a314b3020d5fb79026839cc96",
+    "kaannokset/en/paaruoat/kaalilaatikko.md": "d3e19d163ab48405ba182ef1fd87aa0a22e7b15e99ad5754822cb84a97080dd6",
+    "kaannokset/sv/paaruoat/kaalilaatikko.md": "938bd6baca39eff5952fd2a4873a7f9adaa6459a02914a5916f105e15e8ccc11",
+    "kaannokset/th/paaruoat/kaalilaatikko.md": "0bf859aeca0b1062a8f47c735b649d96cbb3bda740d0796652fa0e55c739fb60"
+  },
+  "candidateCoverage": {
+    "numeric": 133,
+    "recipes": 326,
+    "percent": 40.8
+  },
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "reportHubIncluded": false
+}
