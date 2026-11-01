@@ -1,0 +1,220 @@
+{
+  "severity": "P1_SOURCE_IDENTITY",
+  "status": "CORRECTION_PROPOSAL_NOT_APPLIED",
+  "targetFile": "docs/nutrition/glycemic-load-pilot-input.json",
+  "expectedFileLfSha256": "ecb38f2feb199ebce436181542a4dbb0e8b4b9753d9be401ff9ce45dce2bb04b",
+  "cases": [
+    {
+      "recipeId": "kookos-lime-kanacurry",
+      "sourcePath": "reseptit/paaruoat/kookos-lime-kanacurry.md",
+      "recipeLfSha256": "3b0e306e88dc4feed09e84a47c445e87dff9046c7ea83bddf4605cfe98187f9c",
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "legacyInput": {
+        "name": "täysrasvaista kookosmaitoa",
+        "grams": 400,
+        "fineliRecordId": "fineli-684-release-20",
+        "giRecordId": "dairy-category-mean-gi-35",
+        "massEvidence": "Recipe-listed 400 g, mapped to MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG (plain milk).",
+        "foodKey": "dairy",
+        "preparationKey": "unflavoured-dairy",
+        "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+      },
+      "wrongFoodRecord": {
+        "id": "fineli-684-release-20",
+        "name": "MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/684",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain milk",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 1.5
+        },
+        "portionMassG": {
+          "DL": 100,
+          "RKL": 15,
+          "TL": 5
+        }
+      },
+      "cachedInvalidSubtotalOnly": {
+        "availableChoG": 4.8,
+        "gi": 35,
+        "gkContribution": 1.68,
+        "notAWholeRecipeValue": true
+      },
+      "actualRecipeVolumeMl": 400,
+      "volumeToMilkDensityNotTransferable": true,
+      "macroCalculationUsesDifferentRecord": "afcd-F002991-release-3",
+      "macroPackageNotRevalidated": true,
+      "proposedJsonPatchNotApplied": [
+        {
+          "op": "replace",
+          "path": "/recipes/293/ingredients/1/grams",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/recipes/293/ingredients/1/fineliRecordId",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/recipes/293/ingredients/1/giRecordId",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/recipes/293/ingredients/1/foodKey",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/recipes/293/ingredients/1/preparationKey",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/recipes/293/ingredients/1/giMatchEvidence",
+          "value": "HOLD: coconut ingredient was bound to cow milk and dairy GI35. No approved standalone coconut GI or source-specific ml-to-g conversion established."
+        },
+        {
+          "op": "add",
+          "path": "/recipes/293/ingredients/1/massEvidence",
+          "value": "Original recipe lists400ml coconut milk. No food-specific ml-to-g conversion verified; cow-milk mass basis withdrawn in this proposal."
+        },
+        {
+          "op": "add",
+          "path": "/recipes/293/ingredients/1/excludedReason",
+          "value": "HOLD: invalid cow-milk identity removed; standalone coconut GI, exact composition and mass require review."
+        }
+      ],
+      "expectedAfter": "Still HOLD; remove invalid1.68/0.84 subtotal, do not replace with31/68/96.82/50 automatically"
+    },
+    {
+      "recipeId": "sate-ayam",
+      "sourcePath": "reseptit/paaruoat/sate-ayam.md",
+      "recipeLfSha256": "3ed0776b1f7a4358f11648e9311faef5018a28b758e0826c72a0f62d26dda93b",
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "legacyInput": {
+        "name": "kookosmaitoa",
+        "grams": 200,
+        "fineliRecordId": "fineli-684-release-20",
+        "giRecordId": "dairy-category-mean-gi-35",
+        "massEvidence": "Recipe-listed 200 g, mapped to MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG (plain milk).",
+        "foodKey": "dairy",
+        "preparationKey": "unflavoured-dairy",
+        "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+      },
+      "wrongFoodRecord": {
+        "id": "fineli-684-release-20",
+        "name": "MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/684",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain milk",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 1.5
+        },
+        "portionMassG": {
+          "DL": 100,
+          "RKL": 15,
+          "TL": 5
+        }
+      },
+      "cachedInvalidSubtotalOnly": {
+        "availableChoG": 2.4,
+        "gi": 35,
+        "gkContribution": 0.84,
+        "notAWholeRecipeValue": true
+      },
+      "actualRecipeVolumeMl": 200,
+      "volumeToMilkDensityNotTransferable": true,
+      "macroCalculationUsesDifferentRecord": "afcd-F002991-release-3",
+      "macroPackageNotRevalidated": true,
+      "proposedJsonPatchNotApplied": [
+        {
+          "op": "replace",
+          "path": "/recipes/295/ingredients/7/grams",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/recipes/295/ingredients/7/fineliRecordId",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/recipes/295/ingredients/7/giRecordId",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/recipes/295/ingredients/7/foodKey",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/recipes/295/ingredients/7/preparationKey",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/recipes/295/ingredients/7/giMatchEvidence",
+          "value": "HOLD: coconut ingredient was bound to cow milk and dairy GI35. No approved standalone coconut GI or source-specific ml-to-g conversion established."
+        },
+        {
+          "op": "add",
+          "path": "/recipes/295/ingredients/7/massEvidence",
+          "value": "Original recipe lists200ml coconut milk. No food-specific ml-to-g conversion verified; cow-milk mass basis withdrawn in this proposal."
+        },
+        {
+          "op": "add",
+          "path": "/recipes/295/ingredients/7/excludedReason",
+          "value": "HOLD: invalid cow-milk identity removed; standalone coconut GI, exact composition and mass require review."
+        }
+      ],
+      "expectedAfter": "Still HOLD; remove invalid1.68/0.84 subtotal, do not replace with31/68/96.82/50 automatically"
+    }
+  ],
+  "publishedNumericGkAffected": 0,
+  "productionNumbersChanged": 0,
+  "notAProvenMacroError": true,
+  "approvalRequiredForFuturePatch": true
+}

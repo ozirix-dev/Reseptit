@@ -1,0 +1,685 @@
+{
+  "syntheticOnly": true,
+  "notOwnerApprovalOrFoodEvidence": true,
+  "cases": [
+    {
+      "name": "correct exact synthetic food, preparation and reviewed binding",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": "HUMAN_MEASURED",
+        "testObjectKind": "SINGLE_FOOD",
+        "humanProtocolVerified": true,
+        "participants": 10,
+        "applicationKind": "DIRECT",
+        "calculationUse": "REQUEST_SCOPED_ADMISSION",
+        "scale": "GLUCOSE_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        }
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": true,
+      "expectedReason": null
+    },
+    {
+      "name": "same display name, different product/form",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": "HUMAN_MEASURED",
+        "testObjectKind": "SINGLE_FOOD",
+        "humanProtocolVerified": true,
+        "participants": 10,
+        "applicationKind": "DIRECT",
+        "calculationUse": "REQUEST_SCOPED_ADMISSION",
+        "scale": "GLUCOSE_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-beverage",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "BEVERAGE",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        }
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": true,
+      "expectedReason": "PRODUCT_OR_PREPARATION_MISMATCH:productId"
+    },
+    {
+      "name": "same food, different preparation",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": "HUMAN_MEASURED",
+        "testObjectKind": "SINGLE_FOOD",
+        "humanProtocolVerified": true,
+        "participants": 10,
+        "applicationKind": "DIRECT",
+        "calculationUse": "REQUEST_SCOPED_ADMISSION",
+        "scale": "GLUCOSE_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "COOLED_REHEATED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        }
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": true,
+      "expectedReason": "PRODUCT_OR_PREPARATION_MISMATCH:preparation"
+    },
+    {
+      "name": "published STRONG in-vitro cannot become human GI",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": "IN_VITRO_ESTIMATE",
+        "testObjectKind": "SINGLE_FOOD",
+        "humanProtocolVerified": true,
+        "participants": 10,
+        "applicationKind": "DIRECT",
+        "calculationUse": "REQUEST_SCOPED_ADMISSION",
+        "scale": "GLUCOSE_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        },
+        "published": true,
+        "qualityTier": "STRONG",
+        "iso26642Confirmed": true
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": true,
+      "expectedReason": "IN_VITRO_IS_NOT_HUMAN_GI"
+    },
+    {
+      "name": "mixed meal not an ingredient GI",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": "HUMAN_MEASURED",
+        "testObjectKind": "MIXED_MEAL",
+        "humanProtocolVerified": true,
+        "participants": 10,
+        "applicationKind": "DIRECT",
+        "calculationUse": "REQUEST_SCOPED_ADMISSION",
+        "scale": "GLUCOSE_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        }
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": true,
+      "expectedReason": "MIXED_MEAL_NOT_INGREDIENT"
+    },
+    {
+      "name": "white-bread reference not silently glucose",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": "HUMAN_MEASURED",
+        "testObjectKind": "SINGLE_FOOD",
+        "humanProtocolVerified": true,
+        "participants": 10,
+        "applicationKind": "DIRECT",
+        "calculationUse": "REQUEST_SCOPED_ADMISSION",
+        "scale": "WHITE_BREAD_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        }
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": true,
+      "expectedReason": "REFERENCE_SCALE_NOT_VERIFIED"
+    },
+    {
+      "name": "project assumption cannot be measured DIRECT",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": "NOT_MEASURED",
+        "testObjectKind": "SINGLE_FOOD",
+        "humanProtocolVerified": true,
+        "participants": 10,
+        "applicationKind": "DIRECT",
+        "calculationUse": "REQUEST_SCOPED_ADMISSION",
+        "scale": "GLUCOSE_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        },
+        "policyId": "synthetic-policy"
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": true,
+      "expectedReason": "UNMEASURED_NOT_AN_IMPUTATION"
+    },
+    {
+      "name": "named imputation with separate scoped decision",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": "NOT_MEASURED",
+        "testObjectKind": "POLICY",
+        "humanProtocolVerified": true,
+        "participants": 10,
+        "applicationKind": "PROJECT_IMPUTATION",
+        "calculationUse": "REQUEST_SCOPED_ADMISSION",
+        "scale": "GLUCOSE_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        },
+        "policyId": "synthetic-policy"
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": true,
+      "expectedReason": null
+    },
+    {
+      "name": "explicit analogue requires its own reviewed target",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": "HUMAN_MEASURED",
+        "testObjectKind": "SINGLE_FOOD",
+        "humanProtocolVerified": true,
+        "participants": 10,
+        "applicationKind": "FOOD_ANALOGUE",
+        "calculationUse": "REQUEST_SCOPED_ADMISSION",
+        "scale": "GLUCOSE_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "NAMED_DIFFERENT_PREPARATION",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        }
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": true,
+      "expectedReason": null
+    },
+    {
+      "name": "exact source without owner decision is withheld",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": "HUMAN_MEASURED",
+        "testObjectKind": "SINGLE_FOOD",
+        "humanProtocolVerified": true,
+        "participants": 10,
+        "applicationKind": "DIRECT",
+        "calculationUse": "REQUEST_SCOPED_ADMISSION",
+        "scale": "GLUCOSE_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        }
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": false,
+      "expectedReason": "NO_SEPARATE_SCOPED_DECISION"
+    },
+    {
+      "name": "missing method never defaults to HUMAN_GI",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": null,
+        "testObjectKind": "SINGLE_FOOD",
+        "humanProtocolVerified": true,
+        "participants": 10,
+        "applicationKind": "DIRECT",
+        "calculationUse": "REQUEST_SCOPED_ADMISSION",
+        "scale": "GLUCOSE_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        }
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": true,
+      "expectedReason": "MEASUREMENT_NOT_CLASSIFIED"
+    },
+    {
+      "name": "reference-only remains excluded even with matching keys",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": "HUMAN_MEASURED",
+        "testObjectKind": "SINGLE_FOOD",
+        "humanProtocolVerified": true,
+        "participants": 10,
+        "applicationKind": "DIRECT",
+        "calculationUse": "REFERENCE_ONLY",
+        "scale": "GLUCOSE_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        }
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": true,
+      "expectedReason": "REFERENCE_OR_REVIEW_ONLY"
+    },
+    {
+      "name": "changed recipe source hash invalidates binding",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": "HUMAN_MEASURED",
+        "testObjectKind": "SINGLE_FOOD",
+        "humanProtocolVerified": true,
+        "participants": 10,
+        "applicationKind": "DIRECT",
+        "calculationUse": "REQUEST_SCOPED_ADMISSION",
+        "scale": "GLUCOSE_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        }
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": true,
+      "expectedReason": "UNBOUND_TARGET:recipeSourceHash"
+    },
+    {
+      "name": "method-unconfirmed remains disclosed under a separate decision",
+      "record": {
+        "id": "synthetic-source",
+        "evidenceHash": "5555555555555555555555555555555555555555555555555555555555555555",
+        "gi": 50,
+        "sourceUrl": "https://example.org/synthetic-test-not-food-evidence",
+        "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+        "testObjectKind": "SINGLE_FOOD",
+        "humanProtocolVerified": false,
+        "participants": 10,
+        "applicationKind": "DIRECT",
+        "calculationUse": "REQUEST_SCOPED_ADMISSION",
+        "scale": "GLUCOSE_100",
+        "referenceVerified": true,
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "binding": {
+          "recipeId": "synthetic-fixture-only",
+          "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+          "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+          "compositionId": "synthetic-comp",
+          "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333"
+        },
+        "methodLimitDisclosed": true,
+        "confidence": "LOW"
+      },
+      "target": {
+        "scope": "INGREDIENT",
+        "recipeId": "synthetic-fixture-only",
+        "recipeSourceHash": "1111111111111111111111111111111111111111111111111111111111111111",
+        "recipeInputHash": "2222222222222222222222222222222222222222222222222222222222222222",
+        "compositionId": "synthetic-comp",
+        "compositionEvidenceHash": "3333333333333333333333333333333333333333333333333333333333333333",
+        "identity": {
+          "productId": "synthetic-grain",
+          "brandOrGeneric": "Synthetic generic grain",
+          "physicalForm": "COOKED_GRAIN",
+          "preparation": "HOT_COOKED",
+          "ingredientsHash": "4444444444444444444444444444444444444444444444444444444444444444"
+        }
+      },
+      "syntheticTrustedDecision": true,
+      "expectedReason": null
+    }
+  ]
+}

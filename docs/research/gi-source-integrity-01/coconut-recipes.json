@@ -1,0 +1,2588 @@
+{
+  "baseMain": "583fdb91aeb12114f909412b9165fc3b02a6515d",
+  "allCoconutRecipeCount": 41,
+  "milkDrinkWaterRecipeCount": 35,
+  "allCoconutRecipes": [
+    {
+      "recipeId": "jerk-kana",
+      "sourcePath": "reseptit/paaruoat/jerk-kana.md",
+      "sourceSha256": "9a5501f0f5a7e397f211ed3fc6017975122aa8ce7b3e3c9bbb741096157acafc",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 150,
+          "unit": "ml",
+          "item": "kookosmaitoa",
+          "note": "riisiä ja papuja varten"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": []
+    },
+    {
+      "recipeId": "keltainen-kanacurry-vhh",
+      "sourcePath": "reseptit/paaruoat/keltainen-kanacurry-vhh.md",
+      "sourceSha256": "8b13271f5d045eceab072e1bd10020805a1edfb3fe00f5ee79ae3736c49ef668",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "kookosöljyä"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "availableCarbohydratePer100g": 2.81,
+          "availableCarbohydratePerServingG": 2.81,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
+          ]
+        },
+        {
+          "name": "kookosöljyä",
+          "grams": 10,
+          "fineliRecordId": "fineli-541-2026-10-24",
+          "availableCarbohydratePer100g": 0,
+          "availableCarbohydratePerServingG": 0,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        }
+      ]
+    },
+    {
+      "recipeId": "kerala-kalacurry",
+      "sourcePath": "reseptit/paaruoat/kerala-kalacurry.md",
+      "sourceSha256": "0c2d96d105ba258e741c9e50ffd7250f20f59167e63fb4850757f98dc46e2fed",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 400,
+          "unit": "ml",
+          "item": "kookosmaitoa"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaitoa",
+          "grams": 368,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "khao-soi-vhh-konjac",
+      "sourcePath": "reseptit/paaruoat/khao-soi-vhh-konjac.md",
+      "sourceSha256": "c6eeb19825cc92cc820255d39f61e2448a0db8f86c5221db96187dfc982a6d3c",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "availableCarbohydratePer100g": 2.81,
+          "availableCarbohydratePerServingG": 2.81,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "kookos-lime-kanacurry",
+      "sourcePath": "reseptit/paaruoat/kookos-lime-kanacurry.md",
+      "sourceSha256": "3b0e306e88dc4feed09e84a47c445e87dff9046c7ea83bddf4605cfe98187f9c",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 400,
+          "unit": "ml",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "kookosöljyä"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-684-release-20",
+          "availableCarbohydratePer100g": 4.8,
+          "availableCarbohydratePerServingG": 4.8,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 35,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "qualityTier": "SUPPLEMENTARY",
+          "matchKind": "CATEGORY_MEAN",
+          "confidence": "LOW",
+          "giContribution": 1.68,
+          "giContributionRange": {
+            "min": 1.68,
+            "max": 1.68
+          },
+          "giCandidates": [
+            {
+              "id": "dairy-category-mean-gi-35",
+              "gi": 35,
+              "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": true,
+              "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+            }
+          ],
+          "issues": []
+        },
+        {
+          "name": "kookosöljyä",
+          "grams": null,
+          "fineliRecordId": null,
+          "availableCarbohydratePer100g": null,
+          "availableCarbohydratePerServingG": 0,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "issues": [
+            "Source-documented zero available carbohydrate: Pure edible oil has zero available carbohydrate."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "massaman-curry-kanalla-vhh",
+      "sourcePath": "reseptit/paaruoat/massaman-curry-kanalla-vhh.md",
+      "sourceSha256": "43f7ce521d58bba342757e830dbfa2c05e0e156b3031c843e7a0608d6a672734",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 400,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "availableCarbohydratePer100g": 2.81,
+          "availableCarbohydratePerServingG": 2.81,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "moo-ping-vhh",
+      "sourcePath": "reseptit/paaruoat/moo-ping-vhh.md",
+      "sourceSha256": "12927430199de73435eb013f4208ab3b5b2db3deaac02e91aae15afffcc25407",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kookosmaitoa"
+        }
+      ],
+      "currentStatus": "CALCULATED",
+      "currentGk": 0.99,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaitoa",
+          "grams": 100,
+          "fineliRecordId": "A002991-r6",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 0.425,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "lowcho50-r6",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.2125,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        }
+      ]
+    },
+    {
+      "recipeId": "nasi-lemak",
+      "sourcePath": "reseptit/paaruoat/nasi-lemak.md",
+      "sourceSha256": "cf5979cb92a42aecfe907644fd7b674d101f6988750859d12bc83ee3f7a5d292",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaitoa",
+          "note": "riisiin"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "sambal ja kookosmaito",
+          "grams": null,
+          "fineliRecordId": null,
+          "availableCarbohydratePer100g": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "excludedReason": "The sambal is an unbranded prepared sauce with no ingredient composition or matching GI; coconut milk preparation also lacks a defensible GI match if its measured carbohydrate exceeds the per-serving cutoff.",
+          "issues": [
+            "The sambal is an unbranded prepared sauce with no ingredient composition or matching GI; coconut milk preparation also lacks a defensible GI match if its measured carbohydrate exceeds the per-serving cutoff."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "panang-curry-kanalla-vhh",
+      "sourcePath": "reseptit/paaruoat/panang-curry-kanalla-vhh.md",
+      "sourceSha256": "acb33f7020a710d3eac23067365abf80c449599c4714f2b06f570b2266c3eefe",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "availableCarbohydratePer100g": 2.81,
+          "availableCarbohydratePerServingG": 2.81,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 60,
+          "giRecordId": "asian-regional-category-mean-gi-60",
+          "qualityTier": "SUPPLEMENTARY",
+          "matchKind": "CATEGORY_MEAN",
+          "confidence": "LOW",
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "punainen-kanacurry-vhh",
+      "sourcePath": "reseptit/paaruoat/punainen-kanacurry-vhh.md",
+      "sourceSha256": "c332eb5b3779330a6e6c82a5172b8f7107ece977be6b72249f48ab2c950a4094",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "kookosöljyä"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "availableCarbohydratePer100g": 2.81,
+          "availableCarbohydratePerServingG": 2.81,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 60,
+          "giRecordId": "asian-regional-category-mean-gi-60",
+          "qualityTier": "SUPPLEMENTARY",
+          "matchKind": "CATEGORY_MEAN",
+          "confidence": "LOW",
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "rendang-padang",
+      "sourcePath": "reseptit/paaruoat/rendang-padang.md",
+      "sourceSha256": "e8058909f72f5543a2c65245d9bcd17b95ad6d024e69a0a770a6bc0489e8c007",
+      "servings": 6,
+      "ingredients": [
+        {
+          "amount": 800,
+          "unit": "ml",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 50,
+          "unit": "g",
+          "item": "paahdettua kookoshiutaletta"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": null,
+          "fineliRecordId": null,
+          "availableCarbohydratePer100g": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "excludedReason": "Coconut milk contributes >1 g available carbohydrate per serving and no valid GI record matches canned coconut milk; the available coconut-milk porridge value is not transferable.",
+          "issues": [
+            "Coconut milk contributes >1 g available carbohydrate per serving and no valid GI record matches canned coconut milk; the available coconut-milk porridge value is not transferable."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "sate-ayam",
+      "sourcePath": "reseptit/paaruoat/sate-ayam.md",
+      "sourceSha256": "3ed0776b1f7a4358f11648e9311faef5018a28b758e0826c72a0f62d26dda93b",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaitoa",
+          "note": "kastikkeeseen"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaitoa",
+          "grams": 200,
+          "fineliRecordId": "fineli-684-release-20",
+          "availableCarbohydratePer100g": 4.8,
+          "availableCarbohydratePerServingG": 2.4,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 35,
+          "giRecordId": "dairy-category-mean-gi-35",
+          "qualityTier": "SUPPLEMENTARY",
+          "matchKind": "CATEGORY_MEAN",
+          "confidence": "LOW",
+          "giContribution": 0.84,
+          "giContributionRange": {
+            "min": 0.84,
+            "max": 0.84
+          },
+          "giCandidates": [
+            {
+              "id": "dairy-category-mean-gi-35",
+              "gi": 35,
+              "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+              "qualityTier": "SUPPLEMENTARY",
+              "preparationMatches": true,
+              "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+            }
+          ],
+          "issues": []
+        }
+      ]
+    },
+    {
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "sourcePath": "reseptit/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+      "sourceSha256": "a4d7a2d111907b2ef34721eeb81bfd32999e112d894a3c39dcfd6b8230899173",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-29014-2026-10-24",
+          "availableCarbohydratePer100g": 2.81,
+          "availableCarbohydratePerServingG": 2.81,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 60,
+          "giRecordId": "asian-regional-category-mean-gi-60",
+          "qualityTier": "SUPPLEMENTARY",
+          "matchKind": "CATEGORY_MEAN",
+          "confidence": "LOW",
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "tom-kha-gai-vhh",
+      "sourcePath": "reseptit/paaruoat/tom-kha-gai-vhh.md",
+      "sourceSha256": "dd8b9c75be69130d255850296fbb22c4654c3364487cdd7a872a7099632950f1",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "fineliRecordId": "fineli-29014-2026-10-25",
+          "availableCarbohydratePer100g": 2.81,
+          "availableCarbohydratePerServingG": 2.81,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "sourcePath": "reseptit/aamupalat/indonesialainen-bubur-sumsum.md",
+      "sourceSha256": "b3b37b70b74efc5e310662a4e046caa13f44cda96368d0a765a8997d0cd04ee3",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": null,
+          "fineliRecordId": null,
+          "availableCarbohydratePer100g": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "excludedReason": "200 ml canned coconut milk lacks food-specific Fineli mass per ml; no generic density conversion used.",
+          "issues": [
+            "200 ml canned coconut milk lacks food-specific Fineli mass per ml; no generic density conversion used."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+      "sourcePath": "reseptit/aamupalat/indonesialainen-lontong-sayur-aamiaiseksi.md",
+      "sourceSha256": "6edb30b88df161bea6daeff58d333f752036c79784ea4366d352e8f69bc2ee7b",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
+      "sourcePath": "reseptit/aamupalat/indonesialainen-nasi-uduk-aamiaisella.md",
+      "sourceSha256": "c9a7763e156e016e1516f14d0a64ae4e94f17e30baaf97482c01b73f828e4395",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        }
+      ],
+      "currentStatus": "CALCULATED",
+      "currentGk": 26.37,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 200,
+          "fineliRecordId": "afcd-F002991-release-3-aef4d973",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.7,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "lowcho50-r4",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.85,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        }
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-pisang-goreng-aamiaiseksi",
+      "sourcePath": "reseptit/aamupalat/indonesialainen-pisang-goreng-aamiaiseksi.md",
+      "sourceSha256": "138cdf475d4ee52853833fad3ad08a91fb97f0f5f1e951edaeb8d0477d0a79f7",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "kuivattua kookoshiutaletta"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookos, palmusokeri ja banaani",
+          "grams": null,
+          "fineliRecordId": null,
+          "availableCarbohydratePer100g": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "excludedReason": "Coconut is listed without fresh/dried state, palm sugar lacks a matching Fineli record, and banana mass is unspecified.",
+          "issues": [
+            "Coconut is listed without fresh/dried state, palm sugar lacks a matching Fineli record, and banana mass is unspecified."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-serabi-kookospannukakku",
+      "sourcePath": "reseptit/aamupalat/indonesialainen-serabi-kookospannukakku.md",
+      "sourceSha256": "3c3948cb2d5e7092f203c3656f023a9c041066c4a364c624c1dea7ed82f8de70",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "kuivattua kookoshiutaletta"
+        },
+        {
+          "amount": 150,
+          "unit": "ml",
+          "item": "täysrasvaista kookosmaitoa"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": null,
+          "fineliRecordId": null,
+          "availableCarbohydratePer100g": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "excludedReason": "200 ml canned coconut milk lacks food-specific Fineli mass-per-volume data.",
+          "issues": [
+            "200 ml canned coconut milk lacks food-specific Fineli mass-per-volume data."
+          ]
+        },
+        {
+          "name": "kookos",
+          "grams": null,
+          "fineliRecordId": null,
+          "availableCarbohydratePer100g": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "excludedReason": "150 g coconut state (fresh vs dried/desiccated) unspecified; composition differs materially.",
+          "issues": [
+            "150 g coconut state (fresh vs dried/desiccated) unspecified; composition differs materially."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "intialainen-idli-kookoschutneylla",
+      "sourcePath": "reseptit/aamupalat/intialainen-idli-kookoschutneylla.md",
+      "sourceSha256": "8659de7c543284d790fbc4dab4ac0fa29b30e83fd53008679849a54572abceed",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "kookos"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookos",
+          "grams": 150,
+          "fineliRecordId": null,
+          "availableCarbohydratePer100g": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "excludedReason": "No specific Fineli/AFCD food record and preparation match was resolved for “kookos”; it is not treated as zero.",
+          "issues": [
+            "No specific Fineli/AFCD food record and preparation match was resolved for “kookos”; it is not treated as zero."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "sourcePath": "reseptit/aamupalat/japanilainen-kabocha-puuro.md",
+      "sourceSha256": "9adaae1694bb45b1664113eab4a30e8aeba99e55848d163594c5af9c2f1ed418",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "kaakao-kookos-chia",
+      "sourcePath": "reseptit/aamupalat/kaakao-kookos-chia.md",
+      "sourceSha256": "909dc73c356b1db0d393ddd5a22ebfafd76b557f5fa5068b60c624da4a72c700",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosjuomaa"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "paahdettuja kookoshiutaleita"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosjuomaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-34845-2026-10-25",
+          "availableCarbohydratePer100g": 2.635,
+          "availableCarbohydratePerServingG": 1.3175,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing."
+          ]
+        },
+        {
+          "name": "paahdettuja kookoshiutaleita",
+          "grams": 20,
+          "fineliRecordId": "fineli-382-2026-10-25",
+          "availableCarbohydratePer100g": 6.4,
+          "availableCarbohydratePerServingG": 0.32,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.320 g available carbohydrate): GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "karibia-bammy-kassavaleipa",
+      "sourcePath": "reseptit/aamupalat/karibia-bammy-kassavaleipa.md",
+      "sourceSha256": "7d428074d611fe4099d474cae84332bfada53d7be72e7aaba65f2eb440530951",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "karibia-kookosriisi-pavuilla",
+      "sourcePath": "reseptit/aamupalat/karibia-kookosriisi-pavuilla.md",
+      "sourceSha256": "bbbdf1bcb916efd8d2bb91f026bba9156233e0c2c83a12c221f1b31304933ebf",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 184.0,
+          "unit": "g",
+          "item": "täysrasvainen tölkkikookosmaito"
+        }
+      ],
+      "currentStatus": "CALCULATED",
+      "currentGk": 30.18,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "täysrasvainen tölkkikookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3-aef4d973",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "lowcho50-r4",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.782,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        }
+      ]
+    },
+    {
+      "recipeId": "karibia-maissipuuro-kookoksella",
+      "sourcePath": "reseptit/aamupalat/karibia-maissipuuro-kookoksella.md",
+      "sourceSha256": "272eb7248e83ca06cd8803cbaad8dbe76c1316d0a101c5daf37e21beb8614f80",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 184.0,
+          "unit": "g",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "CALCULATED",
+      "currentGk": 29.63,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3-aef4d973",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "lowcho50-r4",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.782,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        }
+      ]
+    },
+    {
+      "recipeId": "karibia-mango-limejogurtti",
+      "sourcePath": "reseptit/aamupalat/karibia-mango-limejogurtti.md",
+      "sourceSha256": "91fcf9425bb58e499304414a99665cc01ba7c37a1a72115262d31e04b5c93a0f",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "kookoshiutale"
+        }
+      ],
+      "currentStatus": "CALCULATED",
+      "currentGk": 7.3,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookoshiutale",
+          "grams": 20,
+          "fineliRecordId": "fineli-382-release-20",
+          "availableCarbohydratePer100g": 6.4,
+          "availableCarbohydratePerServingG": 0.64,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.640 g available carbohydrate): GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "malesialainen-kaya-paahtoleipa",
+      "sourcePath": "reseptit/aamupalat/malesialainen-kaya-paahtoleipa.md",
+      "sourceSha256": "9ed7ae702fd399d11e8487c838343828207c2c6c064ba1b221514efe515f12bf",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 100,
+          "unit": "ml",
+          "item": "kookosmaitoa"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookoshillo",
+          "grams": 150,
+          "fineliRecordId": null,
+          "availableCarbohydratePer100g": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "excludedReason": "No source-matched composition and preparation was resolved for “kookoshillo”; it is not treated as zero.",
+          "issues": [
+            "No source-matched composition and preparation was resolved for “kookoshillo”; it is not treated as zero."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "malesialainen-kookos-banaanikulho",
+      "sourcePath": "reseptit/aamupalat/malesialainen-kookos-banaanikulho.md",
+      "sourceSha256": "38098f8441fc8db0000306ca5c61fa04dd5d44754b7bd3faf8364e611b9b31f7",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": []
+    },
+    {
+      "recipeId": "malesialainen-kuih-seri-muka",
+      "sourcePath": "reseptit/aamupalat/malesialainen-kuih-seri-muka.md",
+      "sourceSha256": "6ffe47ea6905e95d5cc73cce9dd35a4aca94eddb26d2444a584da0c21546dbd6",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
+      "sourcePath": "reseptit/aamupalat/malesialainen-laksa-lemak-aamiaiseksi.md",
+      "sourceSha256": "9f5463c5eba3224d89ca5a7af7adece0bb8359d222edab33d126cea6da537d4e",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+      "sourcePath": "reseptit/aamupalat/malesialainen-nasi-lemak-aamiaisella.md",
+      "sourceSha256": "a6e430aabed3fd11242235a2f89ff564d8d29934f6f9bc1a10161fa5270216fb",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 184.0,
+          "unit": "g",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "CALCULATED",
+      "currentGk": 22.37,
+      "currentGkRange": {
+        "min": 22.3745,
+        "max": 26.4445
+      },
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3-aef4d973",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "lowcho50-v2",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.782,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        }
+      ]
+    },
+    {
+      "recipeId": "malesialainen-roti-canai-dhalilla",
+      "sourcePath": "reseptit/aamupalat/malesialainen-roti-canai-dhalilla.md",
+      "sourceSha256": "7ca86931fae4b26def3abf3c664523e3188e80df33f3e44ee55f884476b356ff",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "malesialainen-roti-jala-currykanalla",
+      "sourcePath": "reseptit/aamupalat/malesialainen-roti-jala-currykanalla.md",
+      "sourceSha256": "47a941e68c3b47e9b62d534ce5f21dd04c76b7db37426df7fe659e580474d576",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "pellava-puuro-pahkinoilla",
+      "sourcePath": "reseptit/aamupalat/pellava-puuro-pahkinoilla.md",
+      "sourceSha256": "6ef230c98eb7272242996be4d57e594d53e0727f25b4976594bc8e3a74d410f6",
+      "servings": 4,
+      "ingredients": [
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "kookosjauhoa"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosjauhoa",
+          "grams": 20,
+          "fineliRecordId": null,
+          "availableCarbohydratePer100g": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "excludedReason": "No source-matched composition and preparation was resolved for “kookosjauhoa”; it is not treated as zero.",
+          "issues": [
+            "No source-matched composition and preparation was resolved for “kookosjauhoa”; it is not treated as zero."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "thai-kananmunat-kookoscurryssa",
+      "sourcePath": "reseptit/aamupalat/thai-kananmunat-kookoscurryssa.md",
+      "sourceSha256": "1d127dee1a5b1e82c2cbbb7d71e41aac62e4d86266074d27d867197aa9e0ae83",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "thai-kookosriisi-mangolla",
+      "sourcePath": "reseptit/aamupalat/thai-kookosriisi-mangolla.md",
+      "sourceSha256": "df6fe9113a62bc23fbea66eb023b30ef2aa70eeb3ec7221826fa96ff564997f8",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 184.0,
+          "unit": "g",
+          "item": "täysrasvaista tölkkikookosmaitoa"
+        }
+      ],
+      "currentStatus": "CALCULATED",
+      "currentGk": 30.78,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "täysrasvaista tölkkikookosmaitoa",
+          "grams": 184,
+          "fineliRecordId": "A002991-r5",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "lowcho50-r5",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.782,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        }
+      ]
+    },
+    {
+      "recipeId": "thai-papaijajogurtti",
+      "sourcePath": "reseptit/aamupalat/thai-papaijajogurtti.md",
+      "sourceSha256": "60ebc51433aac48d1a05bdfa32f1503c764707e39f4a4d37bb5fa4fdd14e0926",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta kypsän kookospähkinän hedelmälihaa"
+        }
+      ],
+      "currentStatus": "CALCULATED",
+      "currentGk": 4.38,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "tuoretta kypsän kookospähkinän hedelmälihaa",
+          "grams": 15,
+          "fineliRecordId": "afcd-F002983-r4",
+          "availableCarbohydratePer100g": 3.3,
+          "availableCarbohydratePerServingG": 0.24749999999999997,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": 50,
+          "giRecordId": "lowcho50-r4",
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": "LOW",
+          "giContribution": 0.12374999999999999,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": []
+        }
+      ]
+    },
+    {
+      "recipeId": "thai-roti-munalla-banaanilla",
+      "sourcePath": "reseptit/aamupalat/thai-roti-munalla-banaanilla.md",
+      "sourceSha256": "01b5f49344afa698e599aa1ae8672649a18182892227ae5aa8d49b07e582c0ba",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md",
+      "sourceSha256": "bd4fbd1c77bd3d5383e5986c71bc87e5b2c0c0fd6ac1faa8b660b300b7b2136d",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "täysrasvaista kookosmaitoa"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "vietnamilainen-papaija-kookospuuro",
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md",
+      "sourceSha256": "02440d7cfaac9b9b3b79e2467ee0fc4bd26afc49a0204253accf3478992aec99",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookosmaito",
+          "grams": 184,
+          "fineliRecordId": "afcd-F002991-release-3",
+          "availableCarbohydratePer100g": 1.7,
+          "availableCarbohydratePerServingG": 1.564,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "issues": [
+            "GI evidence is missing."
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "vietnamilainen-xoi-maapahkinalla",
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-xoi-maapahkinalla.md",
+      "sourceSha256": "f5de045c45f50b5085810a20d18a239f5244831bf4ea06b9262b919862e61571",
+      "servings": 2,
+      "ingredients": [
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "kookos"
+        }
+      ],
+      "currentStatus": "INSUFFICIENT SOURCE DATA",
+      "currentGk": null,
+      "currentGkRange": null,
+      "legacyCoconutRows": [
+        {
+          "name": "kookos",
+          "grams": 150,
+          "fineliRecordId": null,
+          "availableCarbohydratePer100g": null,
+          "availableCarbohydratePerServingG": null,
+          "availableCarbohydrateUpperBoundPerServingG": null,
+          "availableCarbohydratePerServingRangeG": null,
+          "gi": null,
+          "giRecordId": null,
+          "qualityTier": null,
+          "matchKind": null,
+          "confidence": null,
+          "giContribution": null,
+          "giContributionRange": null,
+          "giCandidates": [],
+          "excludedReason": "No source-matched composition and preparation was resolved for “kookos”; it is not treated as zero.",
+          "issues": [
+            "No source-matched composition and preparation was resolved for “kookos”; it is not treated as zero."
+          ]
+        }
+      ]
+    }
+  ],
+  "milkDrinkWaterRecipeIds": [
+    "jerk-kana",
+    "keltainen-kanacurry-vhh",
+    "kerala-kalacurry",
+    "khao-soi-vhh-konjac",
+    "kookos-lime-kanacurry",
+    "massaman-curry-kanalla-vhh",
+    "moo-ping-vhh",
+    "nasi-lemak",
+    "panang-curry-kanalla-vhh",
+    "punainen-kanacurry-vhh",
+    "rendang-padang",
+    "sate-ayam",
+    "thai-vihrea-curry-kanalla-vhh",
+    "tom-kha-gai-vhh",
+    "indonesialainen-bubur-sumsum",
+    "indonesialainen-lontong-sayur-aamiaiseksi",
+    "indonesialainen-nasi-uduk-aamiaisella",
+    "indonesialainen-serabi-kookospannukakku",
+    "japanilainen-kabocha-puuro",
+    "kaakao-kookos-chia",
+    "karibia-bammy-kassavaleipa",
+    "karibia-kookosriisi-pavuilla",
+    "karibia-maissipuuro-kookoksella",
+    "malesialainen-kaya-paahtoleipa",
+    "malesialainen-kookos-banaanikulho",
+    "malesialainen-kuih-seri-muka",
+    "malesialainen-laksa-lemak-aamiaiseksi",
+    "malesialainen-nasi-lemak-aamiaisella",
+    "malesialainen-roti-canai-dhalilla",
+    "malesialainen-roti-jala-currykanalla",
+    "thai-kananmunat-kookoscurryssa",
+    "thai-kookosriisi-mangolla",
+    "thai-roti-munalla-banaanilla",
+    "vietnamilainen-banh-xeo-aamiaisletut",
+    "vietnamilainen-papaija-kookospuuro"
+  ],
+  "activeReleaseCoconutUses": [
+    {
+      "recipeId": "moo-ping-vhh",
+      "pack": "gk80-release-6",
+      "scenario": "defined-weighed-version",
+      "ingredient": {
+        "index": 1,
+        "name": "kookosmaitoa",
+        "state": "Coconut, milk, canned, regular fat",
+        "massG": 100,
+        "retention": 1,
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "composition": {
+          "sourceId": "A002991-r6",
+          "evidenceHash": "a59695ccec521242fa89fbd49e65a4882b605cc8c5342259e59ca40334fd9d4e"
+        },
+        "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+        "family": "lowcho-code",
+        "giId": null,
+        "giEvidenceHash": null,
+        "match": "APPLIED",
+        "applicability": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit COCONUT_MILK identity. Published GI coding plus project scope, not human-measured ingredient GI.",
+        "impact": {
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-r6",
+          "evidenceHash": "b831cb9118a8e0990b807a35aa80b854ec0c9ee0aeaf878dd32bb9f0f94fe86d",
+          "rationale": "Named weighed edible input; all listed portions consumed; raw-input nutrient retention proxy, not measured cooked-food retention. Explicit COCONUT_MILK identity. Published GI coding plus project scope, not human-measured ingredient GI."
+        }
+      },
+      "composition": {
+        "id": "A002991-r6",
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "sourceRecord": {
+          "id": "A002991-r6",
+          "name": "Coconut, milk, canned, regular fat",
+          "state": "Coconut, milk, canned, regular fat",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002991",
+          "retrievedAt": "2026-10-30",
+          "verifiedAt": "2026-11-01",
+          "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "referenceRecord": {
+            "source_id": "F002991",
+            "classification": 22203,
+            "derivation": "Analysed",
+            "name": "Coconut, milk, canned, regular fat",
+            "protein_g_per_100g": 1.4,
+            "fat_g_per_100g": 15.4,
+            "fibre_g_per_100g": 0,
+            "glycerol_g_per_100g": null,
+            "erythritol_g_per_100g": null,
+            "maltitol_g_per_100g": null,
+            "mannitol_g_per_100g": null,
+            "xylitol_g_per_100g": null,
+            "sorbitol_g_per_100g": null,
+            "available_carbohydrate_without_sugar_alcohols_g_per_100g": 1.7,
+            "available_carbohydrate_with_sugar_alcohols_g_per_100g": 1.7
+          },
+          "polyolsSourceVerified": true,
+          "totalCarbohydratePer100g": 1.7,
+          "polyolsValue": 0.0,
+          "per100g": {
+            "carbohydrate": 1.7,
+            "protein": 1.4,
+            "fat": 15.4,
+            "fibre": 0,
+            "polyols": 0.0
+          },
+          "polyolsEvidence": "Reported Fineli POLYL or AFCD paired available-carbohydrate with/without sugar alcohols"
+        },
+        "foodKind": "COCONUT_MILK",
+        "evidenceHash": "a59695ccec521242fa89fbd49e65a4882b605cc8c5342259e59ca40334fd9d4e"
+      },
+      "source": {
+        "id": "lowcho50-r6",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "A002991-r6",
+          "A004729-r6",
+          "A005199-r6",
+          "A008004-r6",
+          "A008065-r6",
+          "F11557-r6",
+          "F29-r6",
+          "F7600-r6",
+          "F858-r6"
+        ],
+        "evidenceHash": "b831cb9118a8e0990b807a35aa80b854ec0c9ee0aeaf878dd32bb9f0f94fe86d"
+      },
+      "availableChoPerServing": "0.425",
+      "gkContribution": "0.2125",
+      "publishedWholeGk": 0.99,
+      "publishedWholeGkRange": null,
+      "publishedStatus": "CALCULATED"
+    },
+    {
+      "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
+      "pack": "gk80-release-3",
+      "scenario": "defined-weighed-hot-version",
+      "ingredient": {
+        "index": 1,
+        "name": "täysrasvaista kookosmaitoa",
+        "state": "canned regular-fat coconut milk as sold",
+        "massG": 200,
+        "retention": 1,
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "certifiedZeroSalt": false,
+        "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+        "giId": null,
+        "giEvidenceHash": null,
+        "family": "lowcho-code",
+        "match": "APPLIED",
+        "applicability": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
+        "composition": {
+          "sourceId": "afcd-F002991-release-3-aef4d973",
+          "evidenceHash": "d6dcb688d40a92f44f555c7cc66e34b480d89a56ba59f49f8db8b4d0e7ab5bca"
+        },
+        "quantityEvidence": {
+          "proposedWeighedEdibleMassG": 200,
+          "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+        },
+        "impact": {
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-r4",
+          "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770",
+          "rationale": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI."
+        }
+      },
+      "composition": {
+        "id": "afcd-F002991-release-3-aef4d973",
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "sourceRecord": {
+          "id": "afcd-F002991-release-3",
+          "name": "Coconut, milk, canned, regular fat",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+          "state": "regular-fat canned coconut milk as sold",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 1.7,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 1.4,
+            "fat": 15.4
+          }
+        },
+        "evidenceHash": "d6dcb688d40a92f44f555c7cc66e34b480d89a56ba59f49f8db8b4d0e7ab5bca"
+      },
+      "source": {
+        "id": "lowcho50-r4",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "afcd-F000396-release-3-a1aa6eb1",
+          "afcd-F001301-release-3-578f337d",
+          "afcd-F002983-r4",
+          "afcd-F002991-release-3-aef4d973",
+          "afcd-F003337-release-3-358d7f7a",
+          "afcd-F004726-release-3-8b45863e",
+          "afcd-F004729-release-3-6915a221",
+          "afcd-F005198-release-3-d5346b07",
+          "afcd-F005946-release-3-13b128f1",
+          "afcd-F008004-r4",
+          "afcd-F008065-r4",
+          "afcd-F008936-release-3-145aa9dd",
+          "afcd-F009076-r4",
+          "fineli-11048-release-20-ef608526",
+          "fineli-11557-release-20-0e2f3532",
+          "fineli-29-release-20-efe46494",
+          "fineli-30315-release-20-36a6124d",
+          "fineli-30369-release-20-d894c260",
+          "fineli-7530-release-20-21f4037e",
+          "fineli-7600-release-20-f85560ba",
+          "fineli-779-release-20-66a2e282",
+          "fineli-8513-release-20-ae10a9b7",
+          "fineli-858-release-20-ae10a9b7",
+          "fineli-929-release-20-59dd350d",
+          "maille-label-proxy"
+        ],
+        "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770"
+      },
+      "availableChoPerServing": "1.7",
+      "gkContribution": "0.85",
+      "publishedWholeGk": 26.37,
+      "publishedWholeGkRange": null,
+      "publishedStatus": "CALCULATED"
+    },
+    {
+      "recipeId": "karibia-kookosriisi-pavuilla",
+      "pack": "gk80-release-3",
+      "scenario": "defined-weighed-hot-version",
+      "ingredient": {
+        "index": 1,
+        "name": "täysrasvainen tölkkikookosmaito",
+        "state": "canned regular-fat coconut milk",
+        "massG": 184.0,
+        "retention": 1,
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "certifiedZeroSalt": false,
+        "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+        "giId": null,
+        "giEvidenceHash": null,
+        "family": "lowcho-code",
+        "match": "APPLIED",
+        "applicability": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
+        "composition": {
+          "sourceId": "afcd-F002991-release-3-aef4d973",
+          "evidenceHash": "d6dcb688d40a92f44f555c7cc66e34b480d89a56ba59f49f8db8b4d0e7ab5bca"
+        },
+        "quantityEvidence": {
+          "proposedWeighedEdibleMassG": 184.0,
+          "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+        },
+        "impact": {
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-r4",
+          "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770",
+          "rationale": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI."
+        }
+      },
+      "composition": {
+        "id": "afcd-F002991-release-3-aef4d973",
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "sourceRecord": {
+          "id": "afcd-F002991-release-3",
+          "name": "Coconut, milk, canned, regular fat",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+          "state": "regular-fat canned coconut milk as sold",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 1.7,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 1.4,
+            "fat": 15.4
+          }
+        },
+        "evidenceHash": "d6dcb688d40a92f44f555c7cc66e34b480d89a56ba59f49f8db8b4d0e7ab5bca"
+      },
+      "source": {
+        "id": "lowcho50-r4",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "afcd-F000396-release-3-a1aa6eb1",
+          "afcd-F001301-release-3-578f337d",
+          "afcd-F002983-r4",
+          "afcd-F002991-release-3-aef4d973",
+          "afcd-F003337-release-3-358d7f7a",
+          "afcd-F004726-release-3-8b45863e",
+          "afcd-F004729-release-3-6915a221",
+          "afcd-F005198-release-3-d5346b07",
+          "afcd-F005946-release-3-13b128f1",
+          "afcd-F008004-r4",
+          "afcd-F008065-r4",
+          "afcd-F008936-release-3-145aa9dd",
+          "afcd-F009076-r4",
+          "fineli-11048-release-20-ef608526",
+          "fineli-11557-release-20-0e2f3532",
+          "fineli-29-release-20-efe46494",
+          "fineli-30315-release-20-36a6124d",
+          "fineli-30369-release-20-d894c260",
+          "fineli-7530-release-20-21f4037e",
+          "fineli-7600-release-20-f85560ba",
+          "fineli-779-release-20-66a2e282",
+          "fineli-8513-release-20-ae10a9b7",
+          "fineli-858-release-20-ae10a9b7",
+          "fineli-929-release-20-59dd350d",
+          "maille-label-proxy"
+        ],
+        "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770"
+      },
+      "availableChoPerServing": "1.564",
+      "gkContribution": "0.782",
+      "publishedWholeGk": 30.18,
+      "publishedWholeGkRange": null,
+      "publishedStatus": "CALCULATED"
+    },
+    {
+      "recipeId": "karibia-maissipuuro-kookoksella",
+      "pack": "gk80-release-3",
+      "scenario": "defined-weighed-hot-version",
+      "ingredient": {
+        "index": 1,
+        "name": "kookosmaito",
+        "state": "regular-fat canned coconut milk as sold",
+        "massG": 184.0,
+        "retention": 1,
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "certifiedZeroSalt": false,
+        "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+        "giId": null,
+        "giEvidenceHash": null,
+        "family": "lowcho-code",
+        "match": "APPLIED",
+        "applicability": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
+        "composition": {
+          "sourceId": "afcd-F002991-release-3-aef4d973",
+          "evidenceHash": "d6dcb688d40a92f44f555c7cc66e34b480d89a56ba59f49f8db8b4d0e7ab5bca"
+        },
+        "quantityEvidence": {
+          "proposedWeighedEdibleMassG": 184.0,
+          "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+        },
+        "impact": {
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-r4",
+          "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770",
+          "rationale": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI."
+        }
+      },
+      "composition": {
+        "id": "afcd-F002991-release-3-aef4d973",
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "sourceRecord": {
+          "id": "afcd-F002991-release-3",
+          "name": "Coconut, milk, canned, regular fat",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+          "state": "regular-fat canned coconut milk as sold",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 1.7,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 1.4,
+            "fat": 15.4
+          }
+        },
+        "evidenceHash": "d6dcb688d40a92f44f555c7cc66e34b480d89a56ba59f49f8db8b4d0e7ab5bca"
+      },
+      "source": {
+        "id": "lowcho50-r4",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "afcd-F000396-release-3-a1aa6eb1",
+          "afcd-F001301-release-3-578f337d",
+          "afcd-F002983-r4",
+          "afcd-F002991-release-3-aef4d973",
+          "afcd-F003337-release-3-358d7f7a",
+          "afcd-F004726-release-3-8b45863e",
+          "afcd-F004729-release-3-6915a221",
+          "afcd-F005198-release-3-d5346b07",
+          "afcd-F005946-release-3-13b128f1",
+          "afcd-F008004-r4",
+          "afcd-F008065-r4",
+          "afcd-F008936-release-3-145aa9dd",
+          "afcd-F009076-r4",
+          "fineli-11048-release-20-ef608526",
+          "fineli-11557-release-20-0e2f3532",
+          "fineli-29-release-20-efe46494",
+          "fineli-30315-release-20-36a6124d",
+          "fineli-30369-release-20-d894c260",
+          "fineli-7530-release-20-21f4037e",
+          "fineli-7600-release-20-f85560ba",
+          "fineli-779-release-20-66a2e282",
+          "fineli-8513-release-20-ae10a9b7",
+          "fineli-858-release-20-ae10a9b7",
+          "fineli-929-release-20-59dd350d",
+          "maille-label-proxy"
+        ],
+        "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770"
+      },
+      "availableChoPerServing": "1.564",
+      "gkContribution": "0.782",
+      "publishedWholeGk": 29.63,
+      "publishedWholeGkRange": null,
+      "publishedStatus": "CALCULATED"
+    },
+    {
+      "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+      "pack": "gk80-release-2",
+      "scenario": "basmati-hot-grain",
+      "ingredient": {
+        "index": 1,
+        "name": "kookosmaito",
+        "state": "regular-fat canned coconut milk as sold",
+        "massG": 184.0,
+        "retention": 1,
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "certifiedZeroSalt": false,
+        "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+        "giId": null,
+        "giEvidenceHash": null,
+        "family": "lowcho-code",
+        "match": "APPLIED",
+        "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+        "composition": {
+          "sourceId": "afcd-F002991-release-3-aef4d973",
+          "evidenceHash": "d6dcb688d40a92f44f555c7cc66e34b480d89a56ba59f49f8db8b4d0e7ab5bca"
+        },
+        "quantityEvidence": {
+          "proposedWeighedEdibleMassG": 184.0,
+          "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+        },
+        "impact": {
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      },
+      "composition": {
+        "id": "afcd-F002991-release-3-aef4d973",
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "sourceRecord": {
+          "id": "afcd-F002991-release-3",
+          "name": "Coconut, milk, canned, regular fat",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+          "state": "regular-fat canned coconut milk as sold",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 1.7,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 1.4,
+            "fat": 15.4
+          }
+        },
+        "evidenceHash": "d6dcb688d40a92f44f555c7cc66e34b480d89a56ba59f49f8db8b4d0e7ab5bca"
+      },
+      "source": {
+        "id": "lowcho50-v2",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default. The <=5 g/100 g operational cutoff and named bindings are explicit project interpretation, not a threshold validated by Schakel. Excludes ordinary fruit, flour, concentrated sauce and nuts above the cutoff.",
+        "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889"
+      },
+      "availableChoPerServing": "1.564",
+      "gkContribution": "0.782",
+      "publishedWholeGk": 22.37,
+      "publishedWholeGkRange": {
+        "min": 22.3745,
+        "max": 26.4445
+      },
+      "publishedStatus": "CALCULATED"
+    },
+    {
+      "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+      "pack": "gk80-release-2",
+      "scenario": "jasmine-hot-grain",
+      "ingredient": {
+        "index": 1,
+        "name": "kookosmaito",
+        "state": "regular-fat canned coconut milk as sold",
+        "massG": 184.0,
+        "retention": 1,
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "certifiedZeroSalt": false,
+        "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+        "giId": null,
+        "giEvidenceHash": null,
+        "family": "lowcho-code",
+        "match": "APPLIED",
+        "applicability": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI.",
+        "composition": {
+          "sourceId": "afcd-F002991-release-3-aef4d973",
+          "evidenceHash": "d6dcb688d40a92f44f555c7cc66e34b480d89a56ba59f49f8db8b4d0e7ab5bca"
+        },
+        "quantityEvidence": {
+          "proposedWeighedEdibleMassG": 184.0,
+          "basis": "Proposed weighed edible ingredient, consumed in full; not measured cooking loss"
+        },
+        "impact": {
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-v2",
+          "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889",
+          "rationale": "Named low-CHO food (<=5 g/100 g project operational definition) under published default50. Includes eggs, mushroom, coconut milk, unsweetened soy drink and identified prepared stock; no claim of measured food GI."
+        }
+      },
+      "composition": {
+        "id": "afcd-F002991-release-3-aef4d973",
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "sourceRecord": {
+          "id": "afcd-F002991-release-3",
+          "name": "Coconut, milk, canned, regular fat",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+          "state": "regular-fat canned coconut milk as sold",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 1.7,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 1.4,
+            "fat": 15.4
+          }
+        },
+        "evidenceHash": "d6dcb688d40a92f44f555c7cc66e34b480d89a56ba59f49f8db8b4d0e7ab5bca"
+      },
+      "source": {
+        "id": "lowcho50-v2",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default. The <=5 g/100 g operational cutoff and named bindings are explicit project interpretation, not a threshold validated by Schakel. Excludes ordinary fruit, flour, concentrated sauce and nuts above the cutoff.",
+        "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889"
+      },
+      "availableChoPerServing": "1.564",
+      "gkContribution": "0.782",
+      "publishedWholeGk": 22.37,
+      "publishedWholeGkRange": {
+        "min": 22.3745,
+        "max": 26.4445
+      },
+      "publishedStatus": "CALCULATED"
+    },
+    {
+      "recipeId": "thai-kookosriisi-mangolla",
+      "pack": "gk80-release-5",
+      "scenario": "defined-weighed-version",
+      "ingredient": {
+        "index": 1,
+        "name": "täysrasvaista tölkkikookosmaitoa",
+        "state": "Coconut, milk, canned, regular fat",
+        "massG": 184.0,
+        "retention": 1,
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "composition": {
+          "sourceId": "A002991-r5",
+          "evidenceHash": "a84836978a2472fd8d9e308ff3242541da821958c5ab6e2b8fd6a109c1c37c4e"
+        },
+        "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+        "compositionBasisNote": "EU_AVAILABLE",
+        "family": "lowcho-code",
+        "giId": null,
+        "giEvidenceHash": null,
+        "match": "APPLIED",
+        "applicability": "Explicit COCONUT_MILK food ID A002991 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. ",
+        "impact": {
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-r5",
+          "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288",
+          "rationale": "Explicit COCONUT_MILK food ID A002991 in the named cooking version; published GI coding/project scope extension, not measured ingredient GI. "
+        }
+      },
+      "composition": {
+        "id": "A002991-r5",
+        "per100g": {
+          "availableCarbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0
+        },
+        "sourceRecord": {
+          "id": "A002991-r5",
+          "name": "Coconut, milk, canned, regular fat",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002991",
+          "licence": "FSANZ AFCD Release3 CC BY-SA3.0 Australia",
+          "basis": "per100g-edible",
+          "state": "Coconut, milk, canned, regular fat",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsValue": null,
+          "referenceRecord": {
+            "source_id": "F002991",
+            "classification": 22203,
+            "derivation": "Analysed",
+            "name": "Coconut, milk, canned, regular fat",
+            "protein_g_per_100g": 1.4,
+            "fat_g_per_100g": 15.4,
+            "fibre_g_per_100g": 0,
+            "glycerol_g_per_100g": null,
+            "erythritol_g_per_100g": null,
+            "maltitol_g_per_100g": null,
+            "mannitol_g_per_100g": null,
+            "xylitol_g_per_100g": null,
+            "sorbitol_g_per_100g": null,
+            "available_carbohydrate_without_sugar_alcohols_g_per_100g": 1.7,
+            "available_carbohydrate_with_sugar_alcohols_g_per_100g": 1.7
+          },
+          "retrievedAt": "2026-10-30",
+          "verifiedAt": "2026-11-01",
+          "per100g": {
+            "carbohydrate": 1.7,
+            "protein": 1.4,
+            "fat": 15.4,
+            "fibre": 0,
+            "polyols": 0.0
+          },
+          "polyolsEvidence": "Fineli reported POLYL or AFCD paired with/without sugar alcohol carbohydrate; not a new analytical measurement"
+        },
+        "foodKind": "COCONUT_MILK",
+        "evidenceHash": "a84836978a2472fd8d9e308ff3242541da821958c5ab6e2b8fd6a109c1c37c4e"
+      },
+      "source": {
+        "id": "lowcho50-r5",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "A002991-r5",
+          "A004726-r5",
+          "A004729-r5",
+          "A005199-r5",
+          "A008065-r5",
+          "A008936-r5",
+          "F11048-r5",
+          "F11057-r5",
+          "F29-r5",
+          "F30369-r5",
+          "F7530-r5",
+          "F779-r5",
+          "F858-r5",
+          "F929-r5",
+          "maille-label-proxy"
+        ],
+        "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288"
+      },
+      "availableChoPerServing": "1.564",
+      "gkContribution": "0.782",
+      "publishedWholeGk": 30.78,
+      "publishedWholeGkRange": null,
+      "publishedStatus": "CALCULATED"
+    },
+    {
+      "recipeId": "thai-papaijajogurtti",
+      "pack": "gk80-release-3",
+      "scenario": "defined-weighed-hot-version",
+      "ingredient": {
+        "index": 2,
+        "name": "tuoretta kypsän kookospähkinän hedelmälihaa",
+        "state": "fresh mature coconut flesh",
+        "massG": 15,
+        "retention": 1,
+        "per100g": {
+          "availableCarbohydrate": 3.3,
+          "protein": 3.8,
+          "fat": 32.8,
+          "fibre": 8.1
+        },
+        "certifiedZeroSalt": false,
+        "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE_AND_POLYOLS",
+        "giId": null,
+        "giEvidenceHash": null,
+        "family": "lowcho-code",
+        "match": "APPLIED",
+        "applicability": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI.",
+        "composition": {
+          "sourceId": "afcd-F002983-r4",
+          "evidenceHash": "7df8b9e187ada88c8a1e31183fe157eb8ccf926bd90e381a0772b927b06258ad"
+        },
+        "quantityEvidence": {
+          "proposedWeighedEdibleMassG": 15,
+          "basis": "Proposed weighed edible version; full amount consumed. Historical spoon/piece conversions become explicit gram choices, not verified densities. No unknown retention replaced with zero."
+        },
+        "impact": {
+          "kind": "PUBLISHED_IMPUTATION",
+          "sourceId": "lowcho50-r4",
+          "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770",
+          "rationale": "Reviewed named full composition <=5g availableCHO/100g under published low-CHO default50; operational cutoff and this food binding are project decisions. No claim to measured ingredient GI."
+        }
+      },
+      "composition": {
+        "id": "afcd-F002983-r4",
+        "per100g": {
+          "availableCarbohydrate": 3.3,
+          "protein": 3.8,
+          "fat": 32.8,
+          "fibre": 8.1
+        },
+        "sourceRecord": {
+          "id": "afcd-F002983-r4-publication-record",
+          "name": "Coconut, fresh, mature fruit, flesh",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F002983",
+          "retrievedAt": "2026-10-30",
+          "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia; selected fields unchanged. Australian average, not Finnish branded label.",
+          "state": "Coconut, fresh, mature fruit, flesh",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD Release3 available carbohydrate without sugar alcohols; per100g worksheet verified in AJO4",
+          "per100g": {
+            "carbohydrate": 3.3,
+            "protein": 3.8,
+            "fat": 32.8,
+            "fibre": 8.1,
+            "polyols": 0
+          },
+          "referenceRecord": {
+            "name": "Coconut, fresh, mature fruit, flesh",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/api/foods/F002983",
+            "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia; selected fields unchanged. Australian average, not Finnish branded label.",
+            "sourceRecord": {
+              "source_id": "F002983",
+              "classification": 22203,
+              "derivation": "Analysed",
+              "name": "Coconut, fresh, mature fruit, flesh",
+              "protein_g_per_100g": 3.8,
+              "fat_g_per_100g": 32.8,
+              "fibre_g_per_100g": 8.1,
+              "glycerol_g_per_100g": null,
+              "erythritol_g_per_100g": null,
+              "maltitol_g_per_100g": null,
+              "mannitol_g_per_100g": null,
+              "xylitol_g_per_100g": null,
+              "sorbitol_g_per_100g": null,
+              "available_carbohydrate_without_sugar_alcohols_g_per_100g": 3.3,
+              "available_carbohydrate_with_sugar_alcohols_g_per_100g": 3.3
+            },
+            "referenceFile": "docs/nutrition/afcd-release-3-reference.json",
+            "referenceSha256": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e"
+          }
+        },
+        "evidenceHash": "7df8b9e187ada88c8a1e31183fe157eb8ccf926bd90e381a0772b927b06258ad"
+      },
+      "source": {
+        "id": "lowcho50-r4",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "afcd-F000396-release-3-a1aa6eb1",
+          "afcd-F001301-release-3-578f337d",
+          "afcd-F002983-r4",
+          "afcd-F002991-release-3-aef4d973",
+          "afcd-F003337-release-3-358d7f7a",
+          "afcd-F004726-release-3-8b45863e",
+          "afcd-F004729-release-3-6915a221",
+          "afcd-F005198-release-3-d5346b07",
+          "afcd-F005946-release-3-13b128f1",
+          "afcd-F008004-r4",
+          "afcd-F008065-r4",
+          "afcd-F008936-release-3-145aa9dd",
+          "afcd-F009076-r4",
+          "fineli-11048-release-20-ef608526",
+          "fineli-11557-release-20-0e2f3532",
+          "fineli-29-release-20-efe46494",
+          "fineli-30315-release-20-36a6124d",
+          "fineli-30369-release-20-d894c260",
+          "fineli-7530-release-20-21f4037e",
+          "fineli-7600-release-20-f85560ba",
+          "fineli-779-release-20-66a2e282",
+          "fineli-8513-release-20-ae10a9b7",
+          "fineli-858-release-20-ae10a9b7",
+          "fineli-929-release-20-59dd350d",
+          "maille-label-proxy"
+        ],
+        "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770"
+      },
+      "availableChoPerServing": "0.2475",
+      "gkContribution": "0.12375",
+      "publishedWholeGk": 4.38,
+      "publishedWholeGkRange": null,
+      "publishedStatus": "CALCULATED"
+    }
+  ]
+}
