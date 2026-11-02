@@ -1,0 +1,218 @@
+{
+  "recipeId": "hunaja-sinappikana-kaalilla",
+  "sourcePath": "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md",
+  "sourceLfSha256": "c993bedcb8e678b3ca9fa71b957a79ab3bbe0a3e50d42f624eacaf1e7904a859",
+  "sourceIngredients": [
+    {
+      "amount": 600,
+      "unit": "g",
+      "item": "nahatonta broilerin reisilihaa"
+    },
+    {
+      "amount": 600,
+      "unit": "g",
+      "item": "valkokaalia"
+    },
+    {
+      "amount": 2,
+      "unit": "rkl",
+      "item": "Dijon-sinappia"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "hunajaa"
+    },
+    {
+      "amount": 2,
+      "unit": "rkl",
+      "item": "oliiviöljyä"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "valkosipulijauhetta"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "paprikajauhetta"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "item": "suolaa ja mustapippuria"
+    }
+  ],
+  "servings": 4,
+  "originalIngredientCount": 8,
+  "calculationIngredientCount": 9,
+  "rowMapping": "Original seasoning row7 is split into pepper and plain salt; all other rows represented once. No original row dropped; salt is source0CHO, pepper is explicitly fixed NEW.5g.",
+  "variant": "PROPOSED fixed-weight version, not current unspecified pepper recipe.600g chicken,600g cabbage,31.5g named Maille DK mustard,20g honey,27g olive oil,3.1g garlic powder,2.65g paprika,.5g pepper,salt to taste. All listed sauce and vegetables consumed; no liquid/fat loss deducted.",
+  "researchStatus": "CONDITIONAL_FIXED_GRAM_SPECIFICATION_AND_NAMED_PRODUCT_REVIEW_REQUIRED",
+  "ingredients": [
+    {
+      "sourceRowIndex": 0,
+      "name": "nahatonta broilerin reisilihaa",
+      "grams": 600,
+      "fineliRecordId": "fineli-30792",
+      "giRecordId": null,
+      "massEvidence": "Current600g skinless thigh; Fineli30792; starting mass retained."
+    },
+    {
+      "sourceRowIndex": 1,
+      "name": "valkokaalia",
+      "grams": 600,
+      "fineliRecordId": "fineli-320",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "massEvidence": "Current600g raw cabbage, roasted; starting CHO retained.",
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Existing broad published category proxy,LOW, not measured food- or recipe-specific response; no fat/protein reduction factor."
+    },
+    {
+      "sourceRowIndex": 2,
+      "name": "Dijon-sinappia",
+      "grams": 31.5,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "recipeQuantity": {
+        "amount": 2,
+        "unit": "rkl",
+        "massGrams": 31.5
+      },
+      "massEvidence": "New version prescribes31.5g named Maille865g mustard. Original2rkl ×15ml ×generic mustard density1.05g/ml supplies the proposed target, not measured brand density or actual batch weight.",
+      "excludedReason": "Named EU label-based positive omission, not zero and not assigned a mustardGI.",
+      "availableCarbohydrateUpperBoundPerServingG": 0.275625,
+      "upperBoundEvidence": "Maille DK SKU12017601 EAN3036810201761 declares3.5g CHO/100g.31.5g/4 gives.275625g nominal CHO upper for this source model. Individual polyols unknown; not an analytical maximum."
+    },
+    {
+      "sourceRowIndex": 3,
+      "name": "hunajaa",
+      "grams": 20,
+      "fineliRecordId": "fineli-4",
+      "giRecordId": "honey-category-mean-gi-55-2002",
+      "massEvidence": "Keep original1rkl honey, nativeFineli4 RKL20g. Optional no-honey branch is NOT selected.",
+      "foodKey": "honey-category-mean",
+      "preparationKey": "category-mean",
+      "giMatchEvidence": "Existing broad published category proxy,LOW, not measured food- or recipe-specific response; no fat/protein reduction factor."
+    },
+    {
+      "sourceRowIndex": 4,
+      "name": "oliiviöljyä",
+      "grams": 27,
+      "fineliRecordId": "fineli-536",
+      "giRecordId": null,
+      "massEvidence": "Current2rkl ×nativeFineli536 RKL13.5g; all listed oil retained, no fat absorption factor."
+    },
+    {
+      "sourceRowIndex": 5,
+      "name": "valkosipulijauhetta",
+      "grams": 3.1,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "tl",
+        "massGrams": 3.1
+      },
+      "massEvidence": "Proposed fixed3.1g garlic powder input, informed by USDA FDC171325 portion88439 tsp3.1g n50. Not raw garlic393 and not claimed actual batch measurement.",
+      "excludedReason": "Use source-backed whole-mass ceiling, not unknown composition treated aszero.",
+      "availableCarbohydrateUpperBoundPerServingG": 0.775,
+      "upperBoundEvidence": "3.1g explicitly prescribed garlic powder /4=.775g total ingredient mass per serving, an availableCHO physical ceiling. No unsupported GI or US carbohydrate normalization is required."
+    },
+    {
+      "sourceRowIndex": 6,
+      "name": "paprikajauhetta",
+      "grams": 2.65,
+      "fineliRecordId": "afcd-F006316",
+      "giRecordId": null,
+      "massEvidence": "Fixed2.65g proposed paprika target: AUSNUT measure49463 .53g/ml ×5ml metric1tl. Native AFCD19.1g CHO WITHOUT sugar alcohols/100g, not assumedtrace."
+    },
+    {
+      "sourceRowIndex": 7,
+      "name": "mustapippuria",
+      "grams": 0.5,
+      "fineliRecordId": "afcd-F006618",
+      "giRecordId": null,
+      "massEvidence": "NEW fixed.5g black pepper specification replacing the original unknown seasoning quantity. This mass is a proposal that must be weighed in the version, not an inferred current-recipe amount."
+    },
+    {
+      "sourceRowIndex": 7,
+      "name": "suolaa",
+      "grams": null,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "excludedReason": "Plain salt part of original combined row, separate from fixed pepper; nativeFineli30 directCHO0.",
+      "estimatedAvailableCarbohydratePerServingG": 0,
+      "negligibleAssumption": "Source-catalog foods fineli-30 CHO0; no carbohydrate-bearing seasoning blend assumed. Unknown salt grams prevent full sodium/macro declaration, not GK."
+    }
+  ],
+  "expected": {
+    "unroundedGk": "7.1423",
+    "omittedChoUpperG": "1.2254125",
+    "decimalRows": [
+      {
+        "sourceRowIndex": 0,
+        "name": "nahatonta broilerin reisilihaa",
+        "choPerServingOrUpper": "0.0",
+        "giRecordId": null
+      },
+      {
+        "sourceRowIndex": 1,
+        "name": "valkokaalia",
+        "choPerServingOrUpper": "7.455",
+        "giRecordId": "vegetables-category-mean-gi-66"
+      },
+      {
+        "sourceRowIndex": 2,
+        "name": "Dijon-sinappia",
+        "choPerServingOrUpper": "0.275625",
+        "giRecordId": null
+      },
+      {
+        "sourceRowIndex": 3,
+        "name": "hunajaa",
+        "choPerServingOrUpper": "4.04",
+        "giRecordId": "honey-category-mean-gi-55-2002"
+      },
+      {
+        "sourceRowIndex": 4,
+        "name": "oliiviöljyä",
+        "choPerServingOrUpper": "0.0",
+        "giRecordId": null
+      },
+      {
+        "sourceRowIndex": 5,
+        "name": "valkosipulijauhetta",
+        "choPerServingOrUpper": "0.775",
+        "giRecordId": null
+      },
+      {
+        "sourceRowIndex": 6,
+        "name": "paprikajauhetta",
+        "choPerServingOrUpper": "0.1265375",
+        "giRecordId": null
+      },
+      {
+        "sourceRowIndex": 7,
+        "name": "mustapippuria",
+        "choPerServingOrUpper": "0.04825",
+        "giRecordId": null
+      },
+      {
+        "sourceRowIndex": 7,
+        "name": "suolaa",
+        "choPerServingOrUpper": "0",
+        "giRecordId": null
+      }
+    ]
+  },
+  "sourceApplicationApproved": false,
+  "contentChangeApproved": false,
+  "actualBatchWeighed": false,
+  "publicationApproved": false,
+  "newPublishedValue": false,
+  "macroPublicationAuthorized": false,
+  "policyChangeApplied": false
+}

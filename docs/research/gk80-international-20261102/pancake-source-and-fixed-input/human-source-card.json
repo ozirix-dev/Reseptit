@@ -1,0 +1,50 @@
+{
+  "id": "kim2019-wheat-pancake-57",
+  "doi": "10.1017/S0007114518003446",
+  "title": "Glycaemic indices and glycaemic loads of common Korean carbohydrate-rich foods",
+  "url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/glycaemic-indices-and-glycaemic-loads-of-common-korean-carbohydraterich-foods/DFCAD68512577F142D64AF2088C3D780",
+  "pdfSha256": "614201ccd30e356510c75573ff58d01472722f76a5b0ecf32a8ea1dc10e0af51",
+  "yearPrint": 2019,
+  "yearOnline": 2018,
+  "humanGi": 57.0,
+  "sem": 9.7,
+  "referenceScale": "GLUCOSE_100",
+  "participantsThisFood": 14,
+  "testPortionG": 102.8,
+  "nominalAvailableChoG": 50,
+  "reportedChoPer100g": 48.6,
+  "preparation": "Wheat flour and water paste, pan heated on high heat4min using1g oil. Table1 no26, printed418; Table3 no26 printed421. No sugar,egg,kimchi or stuffing reported in this test.",
+  "protocol": "Healthy men;2 glucose reference visits; venous glucose at0,15,30,60,90,120min. Glucose-hexokinase assay; incremental AUC, below-baseline area excluded; food-level n14. Study calls protocol adapted from FAO/WHO and ISO2010; independent full ISO compliance not established here.",
+  "quality": "Traceable published original human trial. SUPPLEMENTARY research source: preparation specificity is useful but protocol adaptation, single-sex sample and missing flour/hydration details limit transfer. Not claimed STRONG/ISO-certified.",
+  "unresolved": [
+    "Exact flour refinement,cultivar,brand and flour-water ratio not specified in inspected Table1.",
+    "1g oil in experimental serving is not a generic recipe fat level.",
+    "SEM9.7 is sampling uncertainty, not a recipeGI range.",
+    "Prepared component method is not yet approved.",
+    "No inference that added fat or eggs guarantee an equal or lower recipeGI."
+  ],
+  "registryImported": false,
+  "calculationUse": "RESEARCH_REFERENCE_ONLY_PENDING_RECIPE_MATCH_AND_METHOD_REVIEW",
+  "wholeRecipeOpeningsNow": 0,
+  "visualVerification": [
+    "PDF page3/printed418 Table1",
+    "PDF page6/printed421 Table3"
+  ],
+  "reviewTargets": [
+    {
+      "recipeId": "kiinalainen-kevatsipulipannukakku",
+      "decision": "HOLD: original100g flour60ml water is kneaded,rolled,layered and uses sesame oil; paste trial does not establish identical matrix.",
+      "remaining": "Flour refinement,hydration,fat ratio and layered preparation correspondence."
+    },
+    {
+      "recipeId": "kiinalainen-jianbing-munaletty",
+      "decision": "HOLD: thin flour-water crepe is closer, but water amount is unspecified; eggs added during cooking; soybean paste unknown.",
+      "remaining": "Quantified water, named paste mass/composition,component allocation and preparation match."
+    },
+    {
+      "recipeId": "korealainen-kimchi-jeon-aamiaiseksi",
+      "decision": "HOLD: materialkimchi and egg mixed into batter; not plain flour paste.",
+      "remaining": "Kimchi composition plus prepared-component evidence; no new zero or bulk-paste imputation."
+    }
+  ]
+}

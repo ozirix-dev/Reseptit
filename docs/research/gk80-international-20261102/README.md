@@ -1,8 +1,8 @@
 # GK80: kansainväliset GI-lähteet, Codex1
 
-> **Ajantasainen luovutus:** [sauces-and-legumes/CURRENT.md](sauces-and-legumes/CURRENT.md). Julkaistu kattavuus172/326, puuttuu89. Oma erillinen tutkimusjoukko sisältää nyt seitsemän hyväksymätöntä versiota: viimeisimpinä nykyinen falafel ja ehdollinen nimetty kaalilettuversio. Kahdeksan muualla hyväksyttyä julkaisematonta versiota on erillinen joukko. Ei uusia julkaisuja tältä tutkimushaaralta.
+> **Ajantasainen luovutus:** [pancake-source-and-fixed-input/CURRENT.md](pancake-source-and-fixed-input/CURRENT.md). Julkaistu kattavuus172/326, puuttuu89. Oma tutkimusjoukko sisältää kahdeksan hyväksymätöntä versiota. Viimeisimpänä hunaja-sinappikanan ehdollinen grammaspesifikaatio ja varmennettu Kim2019-lettulähde, jota ei sovellettu resepteihin. Kahdeksan muualla hyväksyttyä julkaisematonta versiota on erillinen joukko.
 
-Aiemmat jatkopaketit: [liemi ja nykyreseptisidonnat](stock-and-current-bindings/CURRENT.md), [granola ja pellavapuuro](followup/CURRENT.md), [pistaasijogurtti ja Codex2:n marjalähdetuki](breakfast-versions/CURRENT.md).
+Aiemmat jatkopaketit: [falafel ja kastikkeet](sauces-and-legumes/CURRENT.md), [liemi ja nykyreseptisidonnat](stock-and-current-bindings/CURRENT.md), [granola ja pellavapuuro](followup/CURRENT.md), [pistaasijogurtti ja Codex2:n marjalähdetuki](breakfast-versions/CURRENT.md).
 
 ## Ensimmäisen tutkimusajon historiallinen koonti
 
