@@ -1,5 +1,5 @@
 {
-  "id": "SOURCE_FIRST_GK_EXTENSIONS-v3",
+  "id": "SOURCE_FIRST_GK_EXTENSIONS-v4",
   "activation": false,
   "ownerApproval": false,
   "readyAuthorized": false,
@@ -31,11 +31,19 @@
     {
       "recipeId": "rahka-marjakerroskulho",
       "inputSha256": "309fdb4e31b5c59ed01f25d96f8d1aa865ef154a12d7391cc5e9fe0e89c8ab18"
+    },
+    {
+      "recipeId": "japanilainen-natto-riisikulho",
+      "inputSha256": "a23b798d343f87c31c41b49cd26eda3f66a1d0c48307ac47b50ee19830881c4a"
     }
   ],
-  "notes": "Five verified extension inputs including preferred A coffee already in PR183. Four distinct additions beyond upstream17: pongal plus two current-A source/bound versions and one explicit bilberry B analogy. All extensions unapproved/unpublished; original16 approval retained separately. No fruit/seed quantities reduced; no almond50; label13.2 is upper only, polyols unknown.",
+  "notes": "Six extension inputs, including one A-arithmetic proposal requiring explicit MEXT source-family admission; original five results must remain unchanged. Natto native source mass0.3 is distinct from estimated difference4.8; kimchi mass missing must remain HOLD. No new GI constants or natto GI.",
   "preferredCoffee": "A10.918125 agrees with PR183 additional-proposal; coffee0.3gCHO omitted by unchanged A. B source-comparator alternative excluded from unique count.",
-  "upstreamCurrentHead": "54615726324d855bbfe0d72c3fc3ba58ceced9d4",
+  "upstreamCurrentHead": "e0e761a14630d287be81eb61593b8e086e5b06a8",
   "upstreamAlreadyContainsCoffeeProposal": true,
-  "newDistinctBeyondUpstream17": 4
+  "newDistinctBeyondUpstream17": 5,
+  "newSourceFamilyAdmissionRequired": "MEXT2023_CHOAVL_MASS; current arithmetic A, source family not authorized for publication",
+  "upstreamAtFirstExtension": "54615726324d855bbfe0d72c3fc3ba58ceced9d4",
+  "newDistinctBeyondUpstream30": 3,
+  "comparisonBaseOf17IsHistorical": true
 }

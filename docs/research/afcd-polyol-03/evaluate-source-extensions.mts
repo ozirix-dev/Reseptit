@@ -6,6 +6,7 @@ import assert from 'node:assert/strict';
 import {pathToFileURL} from 'node:url';
 import {execFileSync} from 'node:child_process';
 import {labelAvailableUpper} from './label-carbohydrate-upper';
+import {mextAvailableMass} from './mext-available-source';
 
 const [root,snapshot,data,out]=process.argv.slice(2).map(p=>path.resolve(p));
 if (![root,snapshot,data,out].every(Boolean)) throw Error('ROOT SNAPSHOT DATA EXTERNAL_OUT required');
@@ -31,6 +32,9 @@ const addedGis=(await read(data+'/gi-sources.json')).records;
 const observations=await read(data+'/source-observations.json');
 const products=await read(data+'/product-observations.json');
 const method=await read(data+'/method.json');
+const mext=await read(data+'/mext-native-observations.json');
+assert.throws(()=>mextAvailableMass(mext,'06236'));
+const natto=mextAvailableMass(mext,'04046');assert.equal(natto.availablePer100g,0.3);assert.equal(natto.polyols,null);assert.equal(natto.differenceToken,'(4.8)');
 const cases=(await fs.readFile(data+'/cases.jsonl','utf8')).trim().split('\n').map(JSON.parse);
 for (const key of ['activation','ownerApproval','readyAuthorized','mergeAuthorized','deployAuthorized','newMainFoodGi50Default','sourceOnlyCoreRulesChanged']) assert.equal(method[key],false,key);
 assert.equal(method.baseHead,'7127c0014edd525ac2ced97cf36b3eb511032ae2');
@@ -38,6 +42,9 @@ assert.deepEqual(method.newCases,cases.map((c:any)=>({recipeId:c.recipeId,inputS
 const afcd=(await read(root+'/docs/nutrition/afcd-release-3-reference.json')).foods;
 const fi=(await read(root+'/docs/nutrition/fineli-release-20-reference.json')).foods;
 for (const c of addedComps) {
+  if(c.kind==='MEXT_CHOAVL_MASS') {
+    assert.equal(c.nativeField,'CHOAVL');const native=mext.records.find((r:any)=>r.nativeId===c.nativeId);assert.ok(native);assert.equal(digest(native),c.nativeRowSha256);assert.equal(mextAvailableMass(mext,c.nativeId).availablePer100g,c.availablePer100g);continue;
+  }
   if(c.kind==='LABEL_CARBOHYDRATE_UPPER') {
     assert.equal(c.path,'docs/research/afcd-polyol-03/source-extensions/product-observations.json');
     assert.equal(c.nativeField,'carbohydrate');
@@ -95,10 +102,10 @@ for(const c of cases) {
   if(c.level==='B') { assert.equal(r.omittedCho,0);assert.equal(r.unknownGiCho,0); }
   else { assert.ok(r.omittedCho<2);assert.ok(r.unknownGiCho<=r.omittedCho+1e-9); }
   assert.equal(r.publicationAuthorized,false);numericIds.add(c.recipeId);allResults.push(r);
-  rows.push({recipeId:c.recipeId,level:c.level,point:r.point??'',sourceScenarioMin:r.scenarioRange?.min??'',sourceScenarioMax:r.scenarioRange?.max??'',rangeKind:r.rangeKind,dominantUncertainty:r.dominantUncertainty,omittedCho:r.omittedCho,unknownGiCho:r.unknownGiCho,newMainFoodGi50Default:false,inputSha256:c.inputSha256,publicationAuthorized:false});
+  rows.push({recipeId:c.recipeId,level:c.level,sourcePolicy:c.sourcePolicy??'EXISTING_SOURCE_FAMILIES',point:r.point??'',sourceScenarioMin:r.scenarioRange?.min??'',sourceScenarioMax:r.scenarioRange?.max??'',rangeKind:r.rangeKind,dominantUncertainty:r.dominantUncertainty,omittedCho:r.omittedCho,unknownGiCho:r.unknownGiCho,newMainFoodGi50Default:false,inputSha256:c.inputSha256,publicationAuthorized:false});
 }
 const total=numericIds.size;
-const summary={existingNumeric:156,previousSharedCandidates:16,verifiedExtensionA:cases.filter((c:any)=>c.level==='A').length,verifiedExtensionB:cases.filter((c:any)=>c.level==='B').length,newDistinctBeyondCurrentUpstream17:total-17,totalPreparedCandidates:total,a:baseResults.filter((r:any)=>r.numericProposal&&r.level==='A').length+cases.filter((c:any)=>c.level==='A').length,b:baseResults.filter((r:any)=>r.numericProposal&&r.level==='B').length+cases.filter((c:any)=>c.level==='B').length,classOnly:0,approvedNewPublished:0,conditionalCoverage:156+total,denominator:326,percent:Number(((156+total)/326*100).toFixed(2)),target30Shortfall:30-total,target80Percent:261,remainingTo80AfterAllCandidateApprovals:261-156-total,assumptionResearchCasesCounted:0,publicationAuthorized:false};
+const summary={existingNumeric:156,previousSharedCandidates:16,verifiedExtensionA:cases.filter((c:any)=>c.level==='A').length,verifiedExtensionB:cases.filter((c:any)=>c.level==='B').length,newDistinctBeyondFrozenUpstream17:total-17,totalPreparedCandidates:total,a:baseResults.filter((r:any)=>r.numericProposal&&r.level==='A').length+cases.filter((c:any)=>c.level==='A').length,b:baseResults.filter((r:any)=>r.numericProposal&&r.level==='B').length+cases.filter((c:any)=>c.level==='B').length,aRequiringNewSourceFamily:cases.filter((c:any)=>c.sourcePolicy==='MEXT_SOURCE_FAMILY_ADMISSION_REQUIRED').length,classOnly:0,approvedNewPublished:0,conditionalCoverage:156+total,denominator:326,percent:Number(((156+total)/326*100).toFixed(2)),target30Shortfall:30-total,target80Percent:261,remainingTo80AfterAllCandidateApprovals:261-156-total,assumptionResearchCasesCounted:0,publicationAuthorized:false};
 const keys=Object.keys(rows[0]);
 const csv=[keys.join(','),...rows.map(r=>keys.map(k=>'"'+String(r[k]??'').replaceAll('"','""')+'"').join(','))].join('\n')+'\n';
 await fs.mkdir(out,{recursive:true});

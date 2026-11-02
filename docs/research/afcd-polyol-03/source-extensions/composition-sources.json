@@ -179,6 +179,18 @@
       "name": "Lemon peel, raw",
       "polyols": "UNKNOWN_OR_UNUSED; no zero inferred",
       "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+    },
+    {
+      "id": "MEXT2023-04046",
+      "kind": "MEXT_CHOAVL_MASS",
+      "path": "docs/research/afcd-polyol-03/source-extensions/mext-native-observations.json",
+      "nativeId": "04046",
+      "nativeField": "CHOAVL",
+      "nativeRowSha256": "7e48a0a26c98d711240b3768b0ee04e072bf2c321d392ab2380533a53b60d751",
+      "availablePer100g": 0.3,
+      "name": "Plain Itohiki-natto, fermented whole soybean, unseasoned",
+      "polyols": "UNKNOWN; no subtraction or P0 inference",
+      "url": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html"
     }
   ]
 }
