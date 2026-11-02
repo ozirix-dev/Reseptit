@@ -1,0 +1,336 @@
+{
+  "recipeId": "pav-bhaji",
+  "sourcePath": "reseptit/paaruoat/pav-bhaji.md",
+  "sourceIngredients": [
+    {
+      "amount": 400,
+      "unit": "g",
+      "item": "perunoita",
+      "note": "kuorittuna ja kuutioituna"
+    },
+    {
+      "amount": 200,
+      "unit": "g",
+      "item": "kukkakaalia",
+      "note": "paloina"
+    },
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "herneitä"
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "porkkanaa",
+      "note": "kuutioituna"
+    },
+    {
+      "amount": 2,
+      "unit": "rkl",
+      "item": "öljyä"
+    },
+    {
+      "amount": 30,
+      "unit": "g",
+      "item": "voita"
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "sipuli",
+      "note": "hienonnettuna"
+    },
+    {
+      "amount": 2,
+      "unit": "kpl",
+      "item": "valkosipulinkynttä",
+      "note": "murskattuna"
+    },
+    {
+      "amount": 400,
+      "unit": "g",
+      "item": "tomaattimurskaa"
+    },
+    {
+      "amount": 5,
+      "unit": "g",
+      "item": "jauhettua juustokuminaa"
+    },
+    {
+      "amount": 4,
+      "unit": "g",
+      "item": "jauhettua korianteria"
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "savupaprikajauhetta"
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "kurkumajauhetta"
+    },
+    {
+      "amount": 1,
+      "unit": "g",
+      "item": "chilijauhetta"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "suolaa"
+    },
+    {
+      "amount": 300,
+      "unit": "g",
+      "item": "pehmeitä vehnäsämpylöitä",
+      "note": "tarjoiluun"
+    },
+    {
+      "amount": 10,
+      "unit": "g",
+      "item": "tuoretta korianteria",
+      "note": "tarjoiluun"
+    }
+  ],
+  "servings": 4,
+  "ingredients": [
+    {
+      "name": "perunoita",
+      "grams": 400,
+      "fineliRecordId": "fineli-205",
+      "giRecordId": "potato-mashed-preparation-analogue-gi-73",
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 400,
+        "unit": "g",
+        "massGrams": 400
+      },
+      "foodKey": "potato",
+      "preparationKey": "mashed-unspecified",
+      "giMatchEvidence": "Existing GI preparation analogue/category mean, LOW. Named new recipe application pending review; not a measured whole-curryGI."
+    },
+    {
+      "name": "kukkakaalia",
+      "grams": 200,
+      "fineliRecordId": "fineli-322",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 200,
+        "unit": "g",
+        "massGrams": 200
+      },
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Existing GI preparation analogue/category mean, LOW. Named new recipe application pending review; not a measured whole-curryGI."
+    },
+    {
+      "name": "herneitä",
+      "grams": 150,
+      "fineliRecordId": "fineli-370",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 150,
+        "unit": "g",
+        "massGrams": 150
+      },
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Existing GI preparation analogue/category mean, LOW. Named new recipe application pending review; not a measured whole-curryGI."
+    },
+    {
+      "name": "porkkanaa",
+      "grams": 65,
+      "fineliRecordId": "fineli-300",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "kpl",
+        "massGrams": 65
+      },
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Existing GI preparation analogue/category mean, LOW. Named new recipe application pending review; not a measured whole-curryGI."
+    },
+    {
+      "name": "öljyä",
+      "grams": 27,
+      "fineliRecordId": "fineli-541",
+      "giRecordId": null,
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 2,
+        "unit": "rkl",
+        "massGrams": 27
+      }
+    },
+    {
+      "name": "voita",
+      "grams": 30,
+      "fineliRecordId": "fineli-500",
+      "giRecordId": null,
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 30,
+        "unit": "g",
+        "massGrams": 30
+      }
+    },
+    {
+      "name": "sipuli",
+      "grams": 55,
+      "fineliRecordId": "fineli-335",
+      "giRecordId": null,
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "kpl",
+        "massGrams": 55
+      }
+    },
+    {
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "fineliRecordId": "fineli-393",
+      "giRecordId": null,
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 2,
+        "unit": "kpl",
+        "massGrams": 7
+      }
+    },
+    {
+      "name": "tomaattimurskaa",
+      "grams": 400,
+      "fineliRecordId": "fineli-398",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 400,
+        "unit": "g",
+        "massGrams": 400
+      },
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Existing GI preparation analogue/category mean, LOW. Named new recipe application pending review; not a measured whole-curryGI."
+    },
+    {
+      "name": "jauhettua juustokuminaa",
+      "grams": 5,
+      "fineliRecordId": "afcd-F003327",
+      "giRecordId": null,
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 5,
+        "unit": "g",
+        "massGrams": 5
+      }
+    },
+    {
+      "name": "jauhettua korianteria",
+      "grams": 4,
+      "fineliRecordId": "afcd-F003190",
+      "giRecordId": null,
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 4,
+        "unit": "g",
+        "massGrams": 4
+      }
+    },
+    {
+      "name": "savupaprikajauhetta",
+      "grams": 2,
+      "fineliRecordId": "afcd-F006316",
+      "giRecordId": null,
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 2,
+        "unit": "g",
+        "massGrams": 2
+      }
+    },
+    {
+      "name": "kurkumajauhetta",
+      "grams": 2,
+      "fineliRecordId": "afcd-F009335",
+      "giRecordId": null,
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 2,
+        "unit": "g",
+        "massGrams": 2
+      }
+    },
+    {
+      "name": "chilijauhetta",
+      "grams": 1,
+      "fineliRecordId": "afcd-F002893",
+      "giRecordId": null,
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "g",
+        "massGrams": 1
+      }
+    },
+    {
+      "name": "suolaa",
+      "grams": 6.5,
+      "fineliRecordId": "fineli-30",
+      "giRecordId": null,
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "tl",
+        "massGrams": 6.5
+      }
+    },
+    {
+      "name": "pehmeitä vehnäsämpylöitä",
+      "grams": 300,
+      "fineliRecordId": "fineli-1108",
+      "giRecordId": "bread-category-mean-gi-64",
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 300,
+        "unit": "g",
+        "massGrams": 300
+      },
+      "foodKey": "bread-category-mean",
+      "preparationKey": "category-mean",
+      "giMatchEvidence": "Existing GI preparation analogue/category mean, LOW. Named new recipe application pending review; not a measured whole-curryGI."
+    },
+    {
+      "name": "tuoretta korianteria",
+      "grams": 10,
+      "fineliRecordId": "afcd-F003192",
+      "giRecordId": null,
+      "massEvidence": "Current recipe-listed grams or source-specific native portion; see source-catalog.quantityChoices. All original17rows represented.",
+      "recipeQuantity": {
+        "amount": 10,
+        "unit": "g",
+        "massGrams": 10
+      }
+    }
+  ],
+  "expected": {
+    "unroundedGk": "42.2723825",
+    "omittedChoG": "1.90775",
+    "omissionMarginG": "0.09225"
+  },
+  "sourceApplicationApproved": false,
+  "publicationApproved": false,
+  "newPublishedValue": false,
+  "newProductOrQuantityPrescription": false,
+  "macroPublicationAuthorized": false,
+  "preparation": "Current boiled vegetables coarsely mashed, then simmered with crushed tomato/spices; rolls300g and all10g fresh coriander included. Starting raw composition is an estimate, not measured post-drain retention.",
+  "sourceSelectionNotThresholdTuning": "Use nativeFineli garlic16.3/KPL3.5 and carrot65 even though old macro used lower values. Fresh peas370 follows existing macro identity, explicit version choice.",
+  "comparisonToOldGiInput": "Old source input still uses unresolved pav-bhaji spice blend and obsolete13-row layout; current recipe has17rows and five gram-quantified separate spices. New application does not change original recipe or macros."
+}

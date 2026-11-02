@@ -1,8 +1,8 @@
 # GK80: kansainväliset GI-lähteet, Codex1
 
-> **Ajantasainen luovutus:** [poha-and-main179/CURRENT.md](poha-and-main179/CURRENT.md). Julkaistu kattavuus179/326 (54,9 %), puuttuu82. Oma tutkimusjoukko sisältää yhdeksän hyväksymätöntä versiota. Uusin poha-versio hyödyntää jo mainissa hyväksyttyä IFCT-koostumuslähdettä; GK28,33 on ehdollinen eikä julkaistu. Aiemman kahdeksan muualla hyväksytyn julkaisuttoman joukon seitsemän on nyt julkaistu; jäljellä on rahkapiirakka-vhh. Omien9:n ja jäljellä olevan1:n ehdollinen, päällekkäisyydetön kokonaismahdollisuus olisi189/326, ei valmis julkaisuerä.
+> **Ajantasainen luovutus:** [spices-and-native-miso/CURRENT.md](spices-and-native-miso/CURRENT.md). Julkaistu kattavuus179/326 (54,9 %), puuttuu82. Oma tutkimusjoukko sisältää10 hyväksymätöntä versiota: viisi lähteistettyä nykyisten määrien versiota ja viisi muuta ehdollista. Uusin pav bhaji GK42,27 käyttää nykyohjeen viittä grammoina annettua maustetta vanhan lähteettömän seoksen sijaan. Miso- ja maissitärkkelyslähteet eivät tällä tarkistuksella avanneet uusia kokonaisia laskelmia. Erikseen jäljellä oleva muualla hyväksytty rahkapiirakka1 ja omat10 olisivat hyväksynnän/julkaisun jälkeen190/326; tämä ei ole valmis julkaisuerä.
 
-Aiemmat jatkopaketit (historialliset tilannekuvat): [pannulettulähde ja kanan grammaspesifikaatio](pancake-source-and-fixed-input/CURRENT.md), [falafel ja kastikkeet](sauces-and-legumes/CURRENT.md), [liemi ja nykyreseptisidonnat](stock-and-current-bindings/CURRENT.md), [granola ja pellavapuuro](followup/CURRENT.md), [pistaasijogurtti ja Codex2:n marjalähdetuki](breakfast-versions/CURRENT.md).
+Aiemmat jatkopaketit (historialliset tilannekuvat): [poha ja julkaistu179](poha-and-main179/CURRENT.md), [pannulettulähde ja kanan grammaspesifikaatio](pancake-source-and-fixed-input/CURRENT.md), [falafel ja kastikkeet](sauces-and-legumes/CURRENT.md), [liemi ja nykyreseptisidonnat](stock-and-current-bindings/CURRENT.md), [granola ja pellavapuuro](followup/CURRENT.md), [pistaasijogurtti ja Codex2:n marjalähdetuki](breakfast-versions/CURRENT.md).
 
 ## Ensimmäisen tutkimusajon historiallinen koonti
 
