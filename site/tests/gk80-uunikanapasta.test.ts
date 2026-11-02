@@ -1,3 +1,4 @@
+import {restorePreEHold} from './restore-pre-ehold';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -64,7 +65,7 @@ test('recovery full recipe text drift fails closed and release collisions cannot
  await assert.rejects(()=>applyRecovery(root,current),/RELEASE_COLLISION/);
 });
 test('recovery historical main131 regression changes exactly one object and retains all130 numeric values',()=>{
- const actual=json('tmp/nutrition/glycemic-load-pilot.json'),base=json('docs/nutrition/gk80-uunikanapasta-release/main-baseline.json');
+ const actual=restorePreEHold(json('tmp/nutrition/glycemic-load-pilot.json')),base=json('docs/nutrition/gk80-uunikanapasta-release/main-baseline.json');
  const pre142=json('docs/nutrition/gk80-operation142/historical-main.json');actual.results=actual.results.map((r:any)=>pre142.selectedResults.find((x:any)=>x.recipeId===r.recipeId)??r);
  // Restore only the two later C additions for this explicitly historical view.
  const scoped=json('docs/nutrition/gk80-scoped-c-release/main-baseline.json').selectedResults;actual.results=actual.results.map((r:any)=>scoped.find((x:any)=>x.recipeId===r.recipeId)??r);

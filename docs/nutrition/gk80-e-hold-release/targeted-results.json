@@ -1,0 +1,43 @@
+{
+  "checked": [
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "macros": {
+        "carbs_net_per_serving_g": 47.28,
+        "carbs_total_per_serving_g": 48.44,
+        "protein_per_serving_g": 14.49,
+        "fat_per_serving_g": 16.8
+      },
+      "gk": 30.07,
+      "omittedCho": 0.8420000000000001
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "macros": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "gk": 30.05,
+      "omittedCho": 0.1424375
+    },
+    {
+      "recipeId": "doner-kebab",
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "macros": {
+        "carbs_net_per_serving_g": 31.88,
+        "carbs_total_per_serving_g": 34.37,
+        "protein_per_serving_g": 34.92,
+        "fat_per_serving_g": 31.09
+      },
+      "gk": 20.66,
+      "omittedCho": 0.7558875
+    }
+  ],
+  "all3Calculated": true,
+  "completeMacroPackages": 2,
+  "withheldMacroPackages": 1
+}

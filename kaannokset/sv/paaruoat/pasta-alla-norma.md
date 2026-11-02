@@ -8,78 +8,70 @@ status: published
 servings: 4
 time_total_min: 40
 main_ingredient:
-  - pasta
-  - munakoiso
+- pasta
+- munakoiso
 cooking_method:
-  - liesi
+- liesi
 difficulty: lätt
 tags:
-  - "medelhavsmat"
-  - "sicilianska"
-  - "pasta"
-  - "aubergine"
+- medelhavsmat
+- sicilianska
+- pasta
+- aubergine
 image:
   src: paaruoat/pasta-alla-norma.webp
-  alt: Pasta alla Norma med tomatsås, aubergine, basilika och riven ricottaost
+  alt: Pasta alla Norma med aubergine, tomat, basilika och riven pecorino
   width: 1279
   height: 853
 ingredients:
-  - amount: 350
-    unit: g
-    item: rigatoni eller penne pasta
-  - amount: 1
-    unit: st
-    item: aubergine
-    note: "tärnad"
-  - amount: 400
-    unit: g
-    item: krossade tomater
-  - amount: 2
-    unit: st
-    item: en vitlöksklyfta
-    note: i skivor
-  - amount: 3
-    unit: msk
-    item: olivolja
-  - amount: 20
-    unit: g
-    item: färsk basilika
-  - amount: 50
-    unit: g
-    item: salt ricotta
-    note: riven
-  - amount: 1
-    unit: tsk
-    item: salt
-  - amount: 0.25
-    unit: tsk
-    item: svartpeppar
+- amount: 350
+  unit: g
+  item: De Cecco Penne Mezzane Lisce n.140 pasta, torr
+- amount: 400
+  unit: g
+  item: aubergine
+- amount: 400
+  unit: g
+  item: krossade tomater
+- amount: 6
+  unit: g
+  item: färsk skalad vitlök
+- amount: 40.5
+  unit: g
+  item: olivolja
+- amount: 20
+  unit: g
+  item: färsk basilika
+- amount: 50
+  unit: g
+  item: Auricchio Pecorino Romano DOP-ost
+- amount: 5
+  unit: g
+  item: salt
+- amount: 0.5
+  unit: g
+  item: malen svartpeppar
 source_language: fi
 source_recipe: reseptit/paaruoat/pasta-alla-norma.md
 translation_of: pasta-alla-norma
-carbs_net_per_serving_g: 64.86
-carbs_total_per_serving_g: 70.84
-protein_per_serving_g: 12.66
-fat_per_serving_g: 11.56
-
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # Pasta alla Norma med aubergine
 
-Den sicilianska pastaklassikern kombinerar tomatsås, stekt aubergine, basilika och salt ricotta.
-
-## Beskrivning
-
-Den sicilianska pastaklassikern kombinerar tomatsås, stekt aubergine, basilika och salt ricotta.
+Detta är pecorinovarianten som tilläts i det tidigare receptet. Koka den angivna pennan 11 minuter;9 minuters al dente, rigatoni, annan ost eller kyld pasta behöver egna uppskattningar. Alla fyra näringsvärden hålls inne eftersom ostens polyolhalt inte är verifierad.
 
 ## Tillagning
 
-1. Strö salt på auberginetärningarna och låt dem stå i 15 minuter. Klappa torrt.
-2. Stek auberginen i olivolja i omgångar tills den är gyllenbrun. Avsätta.
-3. Fräs vitlöken i en panna. Tillsätt krossade tomater, salt och peppar och låt sjuda i 15 minuter.
-4. Koka pastan i saltat vatten enligt anvisningarna på förpackningen. Spara en deciliter kokande vatten.
-5. Tillsätt pasta och aubergine i såsen. Rör om; tillsätt kokande vatten om det behövs. Avsluta med basilika och riven ricotta.
+1. Tärna 400 g aubergine, strö över en del av det uppmätta saltet, låt stå 15 minuter och torka av.
+2. Stek auberginen i omgångar i den angivna olivoljan tills den är gyllene; ställ åt sidan. Använd all angiven olja.
+3. Fräs vitlöken. Tillsätt krossade tomater, resten av saltet och peppar; sjud 15 minuter.
+4. Koka 350 g torr pasta i saltat vatten 11 minuter. Spara 100 ml kokvatten och häll av.
+5. Blanda pasta, sås och aubergine och tillsätt kokvatten vid behov. Avsluta med basilika och 50 g riven pecorino. Dela all mat och sås i fyra portioner och servera genast varm.
 
 ## Anteckningar
 
-– Salt ricotta kan ersättas med pecorino.
+Uppskattningen gäller endast dessa mängder och denna tillagning. Andra tillbehör eller varianter ger andra värden.

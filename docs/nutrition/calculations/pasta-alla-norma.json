@@ -1,92 +1,166 @@
 {
   "recipeId": "pasta-alla-norma",
-  "sourceHash": "aceb7151c1850aac675e59bb5399928396a1cfcc7ff33e17df7f4fc08c7576e1",
-  "calculatedAt": "2026-10-24",
-  "batchId": "batch-11",
+  "sourceHash": "887e00cd0ce708fada0d54f60f15e26abd3ff4fffb366b94c5fb0d0d5b483a95",
+  "calculatedAt": "2026-11-02",
+  "batchId": "batch-143",
   "servings": 4,
-  "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+  "scope": "E-HOLD new exact weighed version, separate evidence; full-input composition proxies and whole-ingredient omission caps explicitly disclosed. No owner approval inferred.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "rigatoni- tai pennepastaa",
+      "item": "De Cecco Penne Mezzane Lisce n.140 -pastaa, kuivana",
       "amount": 350,
       "unit": "g",
-      "state": "dry wheat pasta",
-      "matchEvidence": "rigatoni- tai pennepastaa maps to fineli-release-20 record 117; state: dry wheat pasta.",
+      "state": "RAW",
+      "matchEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. Current n140 cooked11min (standard package time), promptly served hot; source2008 penne mezzane test lot/product number is not established. Scazzina2016 gives package-time protocol. Fineli117 dry composition is independent; no yield inferred from ambiguous68g test portion.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Listed edible weighed mass.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "Full input retained for nutrient accounting; no unmeasured cooking loss credit. Water absorption/dry weight never changes batch carbohydrate total.",
       "record": {
-        "id": "fineli-117-release-20",
+        "id": "ehold-fineli-117",
         "name": "MAKARONI, PASTA",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/117",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "dry wheat pasta",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/117",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "RAW",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 66.4,
-          "FIBT": 3,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; missing remains unknown.",
         "per100g": {
           "carbohydrate": 66.4,
           "fibre": 3,
           "polyols": 0,
           "protein": 13,
           "fat": 1.1
+        },
+        "primaryReference": {
+          "source_id": "117",
+          "name": "MAKARONI, PASTA",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "WHEAT",
+          "food_class": "PASTAADD",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 66.4,
+            "fibre_g_per_100g": 3,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 13,
+            "fat_g_per_100g": 1.1
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "T",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 55,
+            "RKL": 7.5
+          }
         }
       }
     },
     {
       "item": "munakoisoa",
-      "amount": 1,
-      "unit": "kpl",
-      "state": "raw eggplant",
-      "matchEvidence": "munakoisoa maps to fineli-release-20 record 362; state: raw eggplant.",
-      "gramsPerUnit": 400,
-      "conversionEvidence": "Edible piece mass for munakoisoa: 400 g/unit, Fineli portion where available or standard piece.",
+      "amount": 400,
+      "unit": "g",
+      "state": "RAW",
+      "matchEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Listed edible weighed mass.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "Full input retained for nutrient accounting; no unmeasured cooking loss credit. Water absorption/dry weight never changes batch carbohydrate total.",
       "record": {
-        "id": "fineli-362-release-20",
+        "id": "ehold-fineli-362",
         "name": "MUNAKOISO",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/362",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "raw eggplant",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/362",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "RAW",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 3.1,
-          "FIBT": 2.5,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; missing remains unknown.",
         "per100g": {
           "carbohydrate": 3.1,
           "fibre": 2.5,
           "polyols": 0,
           "protein": 0.5,
           "fat": 0.2
+        },
+        "primaryReference": {
+          "source_id": "362",
+          "name": "MUNAKOISO",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "VEGFRU",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 3.1,
+            "fibre_g_per_100g": 2.5,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 0.5,
+            "fat_g_per_100g": 0.2
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_S": 200,
+            "KPL_M": 400,
+            "KPL_L": 500,
+            "DL": 30
+          }
         }
       }
     },
@@ -94,113 +168,237 @@
       "item": "tomaattimurskaa",
       "amount": 400,
       "unit": "g",
-      "state": "canned crushed tomato",
-      "matchEvidence": "tomaattimurskaa maps to fineli-release-20 record 398; state: canned crushed tomato.",
+      "state": "CANN",
+      "matchEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Listed edible weighed mass.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "Full input retained for nutrient accounting; no unmeasured cooking loss credit. Water absorption/dry weight never changes batch carbohydrate total.",
       "record": {
-        "id": "fineli-398-release-20",
+        "id": "ehold-fineli-398",
         "name": "TOMAATTIMURSKA",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/398",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "canned crushed tomato",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "CANN",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 3.45,
-          "FIBT": 0.4,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; missing remains unknown.",
         "per100g": {
           "carbohydrate": 3.45,
           "fibre": 0.4,
           "polyols": 0,
           "protein": 0.55,
           "fat": 0.2
+        },
+        "primaryReference": {
+          "source_id": "398",
+          "name": "TOMAATTIMURSKA",
+          "food_type": "FOOD",
+          "process": "CANN",
+          "edible_portion_percent": 100,
+          "ingredient_class": "VEGCANN",
+          "food_class": "VEGCANN",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 3.45,
+            "fibre_g_per_100g": 0.4,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 0.55,
+            "fat_g_per_100g": 0.2
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "L",
+              "method_type": "P",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "T",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 100,
+            "RKL": 15
+          }
         }
       }
     },
     {
-      "item": "valkosipulinkynttä",
-      "amount": 2,
-      "unit": "kpl",
-      "state": "raw garlic",
-      "matchEvidence": "valkosipulinkynttä maps to afcd-release-3 record F004193; state: raw garlic.",
-      "gramsPerUnit": 3,
-      "conversionEvidence": "Edible piece mass for valkosipulinkynttä: 3 g/unit, Fineli portion where available or standard piece.",
+      "item": "tuoretta kuorittua valkosipulia",
+      "amount": 6,
+      "unit": "g",
+      "state": "RAW",
+      "matchEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Listed edible weighed mass.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "Full input retained for nutrient accounting; no unmeasured cooking loss credit. Water absorption/dry weight never changes batch carbohydrate total.",
       "record": {
-        "id": "afcd-F004193-release-3",
-        "name": "Garlic, peeled, fresh, raw",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "raw garlic",
-        "basis": "per100g-as-sold",
+        "id": "ehold-fineli-393",
+        "name": "VALKOSIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; missing remains unknown.",
         "per100g": {
-          "carbohydrate": 10.2,
-          "fibre": 16.9,
+          "carbohydrate": 16.3,
+          "fibre": 2.1,
           "polyols": 0,
-          "protein": 6.1,
-          "fat": 2.8
+          "protein": 7.9,
+          "fat": 0.6
+        },
+        "primaryReference": {
+          "source_id": "393",
+          "name": "VALKOSIPULI",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "VEGONI",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 16.3,
+            "fibre_g_per_100g": null,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 7.9,
+            "fat_g_per_100g": 0.6
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MIR006"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_M": 3.5
+          }
+        },
+        "supplementaryFibreSource": {
+          "food": "Valkosipuli",
+          "fibre": 2.1,
+          "publication": "425",
+          "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+          "retrievedAt": "2026-11-02",
+          "field": "kuitu, kokonais-",
+          "basis": "g/100g edible",
+          "method": "food-composition table, displayed by THL on the same exact food ID",
+          "readMethod": "official Fineli HTML via web tool; direct API and local HTTP returned403; no API payload claimed",
+          "originalFrozenValue": null
         }
       }
     },
     {
       "item": "oliiviöljyä",
-      "amount": 3,
-      "unit": "rkl",
-      "state": "olive oil",
-      "matchEvidence": "oliiviöljyä maps to fineli-release-20 record 536; state: olive oil.",
-      "gramsPerUnit": 13.5,
-      "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä.",
+      "amount": 40.5,
+      "unit": "g",
+      "state": "IND",
+      "matchEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Listed edible weighed mass.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "Full input retained for nutrient accounting; no unmeasured cooking loss credit. Water absorption/dry weight never changes batch carbohydrate total.",
       "record": {
-        "id": "fineli-536-release-20",
+        "id": "ehold-fineli-536",
         "name": "OLIIVIÖLJY",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "olive oil",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "IND",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 0,
-          "FIBT": 0,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; missing remains unknown.",
         "per100g": {
           "carbohydrate": 0,
           "fibre": 0,
           "polyols": 0,
           "protein": 0,
           "fat": 100
+        },
+        "primaryReference": {
+          "source_id": "536",
+          "name": "OLIIVIÖLJY",
+          "food_type": "FOOD",
+          "process": "IND",
+          "edible_portion_percent": 100,
+          "ingredient_class": "OIL",
+          "food_class": "OIL",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0,
+            "fibre_g_per_100g": 0,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 0,
+            "fat_g_per_100g": 100
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 90,
+            "RKL": 13.5,
+            "TL": 4.5
+          }
         }
       }
     },
@@ -208,63 +406,127 @@
       "item": "tuoretta basilikaa",
       "amount": 20,
       "unit": "g",
-      "state": "fresh basil",
-      "matchEvidence": "tuoretta basilikaa maps to afcd-release-3 record F000396; state: fresh basil.",
+      "state": "RAW",
+      "matchEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Listed edible weighed mass.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "Full input retained for nutrient accounting; no unmeasured cooking loss credit. Water absorption/dry weight never changes batch carbohydrate total.",
       "record": {
-        "id": "afcd-F000396-release-3",
-        "name": "Basil, green, fresh, raw",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "fresh basil",
-        "basis": "per100g-as-sold",
+        "id": "ehold-fineli-11134",
+        "name": "BASILIKA, TUORE",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11134",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; missing remains unknown.",
         "per100g": {
-          "carbohydrate": 0.2,
-          "fibre": 3.3,
+          "carbohydrate": 1.06,
+          "fibre": 1.6,
           "polyols": 0,
-          "protein": 2.6,
-          "fat": 0.5
+          "protein": 3.13,
+          "fat": 0.65
+        },
+        "primaryReference": {
+          "source_id": "11134",
+          "name": "BASILIKA, TUORE",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "VEGLEAF",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 1.06,
+            "fibre_g_per_100g": null,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 3.13,
+            "fat_g_per_100g": 0.65
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "CG",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "T",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 13,
+            "RKL": 2
+          }
+        },
+        "supplementaryFibreSource": {
+          "food": "Basilika, tuore",
+          "fibre": 1.6,
+          "publication": "746",
+          "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11134",
+          "retrievedAt": "2026-11-02",
+          "field": "kuitu, kokonais-",
+          "basis": "g/100g edible",
+          "method": "food-composition table, displayed by THL on the same exact food ID",
+          "readMethod": "official Fineli HTML via web tool; direct API and local HTTP returned403; no API payload claimed",
+          "originalFrozenValue": null
         }
       }
     },
     {
-      "item": "suolaista ricottaa",
+      "item": "Auricchio Pecorino Romano DOP -juustoa",
       "amount": 50,
       "unit": "g",
-      "state": "documented low-impact seasoning or nutrient-free item",
-      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "state": "as sold cheese",
+      "matchEvidence": "Exact weighed ingredient; separate source-bound omission.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Listed edible weighed mass.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Water and salt have no material macro contribution.",
-      "omissionImpactUpperBoundPerServing": {
-        "kcal": 0,
-        "netCarbohydrate": 0,
-        "totalCarbohydrate": 0,
-        "protein": 0,
-        "fat": 0
-      },
-      "omissionImpactEvidence": "Water and salt have no material macro contribution."
+      "retentionEvidence": "Full input retained for nutrient accounting; no unmeasured cooking loss credit. Water absorption/dry weight never changes batch carbohydrate total.",
+      "record": {
+        "id": "ehold-auricchio-pecorino",
+        "name": "Auricchio Pecorino Romano DOP -juustoa",
+        "sourceUrl": "https://www.auricchio.it/marchi-e-prodotti/riserva-esclusiva/pecorino-romano-dop",
+        "retrievedAt": "2026-11-02",
+        "licence": "Manufacturer label, attributed facts",
+        "state": "as sold cheese",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "polyolsSourceVerified": false,
+        "per100g": {
+          "carbohydrate": null,
+          "fibre": 0,
+          "polyols": null,
+          "protein": 24,
+          "fat": 32
+        },
+        "declaredCarbohydrateUpperBoundGPer100g": 0.5
+      }
     },
     {
       "item": "suolaa",
-      "amount": 1,
-      "unit": "tl",
-      "state": "documented low-impact seasoning or nutrient-free item",
-      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "amount": 5,
+      "unit": "g",
+      "state": "specified edible ingredient",
+      "matchEvidence": "Exact weighed ingredient; separate source-bound omission.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Listed edible weighed mass.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Water and salt have no material macro contribution.",
+      "retentionEvidence": "Full input retained for nutrient accounting; no unmeasured cooking loss credit. Water absorption/dry weight never changes batch carbohydrate total.",
+      "excludedReason": "Pure salt has no macronutrients",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -272,39 +534,29 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Water and salt have no material macro contribution."
+      "omissionImpactEvidence": "Pure salt only, not a seasoning mixture."
     },
     {
-      "item": "mustapippuria",
-      "amount": 0.25,
-      "unit": "tl",
-      "state": "ground black pepper",
-      "matchEvidence": "mustapippuria maps to afcd-release-3 record F006618; state: ground black pepper.",
-      "gramsPerUnit": 2,
-      "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for mustapippuria.",
+      "item": "jauhettua mustapippuria",
+      "amount": 0.5,
+      "unit": "g",
+      "state": "specified edible ingredient",
+      "matchEvidence": "Exact weighed ingredient; separate source-bound omission.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Listed edible weighed mass.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "record": {
-        "id": "afcd-F006618-release-3",
-        "name": "Pepper, black, ground",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "ground black pepper",
-        "basis": "per100g-as-sold",
-        "carbohydrateDefinition": "EU_AVAILABLE",
-        "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
-        "per100g": {
-          "carbohydrate": 38.6,
-          "fibre": 25.3,
-          "polyols": 0,
-          "protein": 10.4,
-          "fat": 3.3
-        }
-      }
+      "retentionEvidence": "Full input retained for nutrient accounting; no unmeasured cooking loss credit. Water absorption/dry weight never changes batch carbohydrate total.",
+      "excludedReason": "Small whole-ingredient omission under existing macro rule.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.07993750000000001,
+        "protein": 0.0129875,
+        "fat": 0.004075,
+        "netCarbohydrate": 0.07993750000000001,
+        "kcal": 0.31375000000000003
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: nominal source totalCHO, protein, fat and energy; totalCHO ceiling used for both carbohydrate outputs, unknown polyols not zero."
     }
-  ]
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Named Pecorino label reports carbohydrate<0.5 and fibre0 but no polyol measurement; threshold label is not a point. Cheese contributes4g fat and3g protein per serving so whole-cheese omission is impermissible. Withhold all four macros, retain source values and small GK carbohydrate ceiling."
 }

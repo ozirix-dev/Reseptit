@@ -21,76 +21,75 @@ tags:
   - jogurtti
 image:
   src: paaruoat/doner-kebab.webp
-  alt: Maustettua döner-kebab-naudanlihaa pitaleivän, salaatin ja
-    jogurttikastikkeen kanssa
+  alt: Maustettua döner-kebab-naudanlihaa pitaleivän, salaatin ja jogurttikastikkeen kanssa
   width: 1279
   height: 853
 ingredients:
   - amount: 600
     unit: g
-    item: naudan jauhelihaa
+    item: naudan jauhelihaa, rasvaa 17 %
   - amount: 100
     unit: g
-    item: kreikkalaista jogurttia
-  - amount: 1
-    unit: kpl
-    item: sipuli
-    note: raastettuna
-  - amount: 2
-    unit: kpl
-    item: valkosipulinkynttä
-    note: murskattuna
-  - amount: 1
-    unit: tl
-    item: juustokuminaa
-  - amount: 1
-    unit: tl
-    item: paprikajauhetta
-  - amount: 0.5
-    unit: tl
-    item: oreganoa
-  - amount: 1
-    unit: tl
-    item: suolaa
-  - amount: 0.25
-    unit: tl
-    item: mustapippuria
-  - amount: 4
-    unit: kpl
-    item: pitaleipää
-    note: tarjoiluun
-  - amount: 200
+    item: maustamatonta kreikkalaista jogurttia, rasvaa 10 %
+  - amount: 55
     unit: g
-    item: kaalisalaattia
-    note: tarjoiluun
+    item: kuorittua sipulia
+  - amount: 6
+    unit: g
+    item: tuoretta kuorittua valkosipulia
+  - amount: 2
+    unit: g
+    item: jauhettua juustokuminaa
+  - amount: 2
+    unit: g
+    item: paprikajauhetta
+  - amount: 1
+    unit: g
+    item: kuivattua oreganoa
+  - amount: 5
+    unit: g
+    item: suolaa
+  - amount: 0.5
+    unit: g
+    item: jauhettua mustapippuria
+  - amount: 240
+    unit: g
+    item: Tesco White Plain -pitaleipää, 4 × 60 g
+  - amount: 180
+    unit: g
+    item: raakaa valkokaalia
+  - amount: 10
+    unit: g
+    item: viinietikkaa
+  - amount: 10
+    unit: g
+    item: oliiviöljyä
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
-carbs_net_per_serving_g: 30.89
-carbs_total_per_serving_g: 33.73
-protein_per_serving_g: 35.77
-fat_per_serving_g: 34.6
-
+translation_status:
+  en: published
+  sv: published
+  th: published
+carbs_net_per_serving_g: 31.88
+carbs_total_per_serving_g: 34.37
+protein_per_serving_g: 34.92
+fat_per_serving_g: 31.09
 ---
-
 # Kotitekoinen döner kebab naudanlihasta
 
-Kotikeittiössä döner-tyylinen liha paistetaan maustetusta naudan jauhelihasta ja leikataan ohuiksi lastuiksi. Tarjoa leivän ja raikkaan salaatin kanssa.
-
-## Kuvaus
-
-Kotikeittiössä döner-tyylinen liha paistetaan maustetusta naudan jauhelihasta ja leikataan ohuiksi lastuiksi. Tarjoa leivän ja raikkaan salaatin kanssa.
+Neljä leipää painavat yhteensä 240 g. Kaalisalaatin 200 g sisältää 180 g kaalia, 10 g viinietikkaa ja 10 g oliiviöljyä; se ei ole majoneesisalaatti eikä pelkkää kaalia. Kaikki paistoliemi ja rasva käytetään annoksiin.
 
 ## Valmistus
 
-1. Kuumenna uuni 220 asteeseen. Sekoita jauheliha, jogurtti, raastettu sipuli, valkosipuli ja mausteet tasaiseksi massaksi.
-2. Levitä liha ohueksi kerrokseksi leivinpaperille. Peitä toisella paperilla ja kauli tasaiseksi.
-3. Paista 12–15 minuuttia, kunnes liha on kypsää. Ota uunista ja leikkaa tai revi ohuiksi lastuiksi.
-4. Paista lihalastuja kuumalla pannulla pienissä erissä, jotta reunat ruskistuvat.
-5. Tarjoa lämpimän pitaleivän ja kaalisalaatin kanssa.
+1. Kuumenna uuni 220 asteeseen. Sekoita jauheliha, jogurtti, raastettu sipuli, valkosipuli, kuivat mausteet ja suola.
+2. Levitä massa ohueksi kerrokseksi leivinpaperille ja kauli toisen paperin läpi tasaiseksi. Poista päällimmäinen paperi.
+3. Paista 12–15 minuuttia, kunnes jauheliha on kauttaaltaan kypsää. Leikkaa ohuiksi lastuiksi.
+4. Ruskista lastut pannulla pienissä erissä. Ota kaikki paistoliemi ja rasva mukaan annoksiin.
+5. Sekoita 180 g ohueksi suikaloitua kaalia, 10 g viinietikkaa ja 10 g oliiviöljyä salaatiksi.
+6. Lämmitä neljä huoneenlämpöistä pitaleipää pakkauksen mukaan leivänpaahtimessa 1–2 minuuttia. Jaa liha liemineen ja salaatti neljään lämpimään leipään ja tarjoa heti.
 
 ## Muistiinpanot
 
-- Varmista jauhelihasta tehtyjen lihapalojen kypsyys; niiden tulee olla kauttaaltaan kypsiä.
+Arvio koskee vain näitä määriä ja valmistustapaa. Muiden lisukkeiden tai valmistusversioiden arvot poikkeavat.

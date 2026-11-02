@@ -1,0 +1,62 @@
+{
+  "retrievedAt": "2026-11-02",
+  "sources": [
+    {
+      "id": "venn2014",
+      "url": "https://doi.org/10.1186/1475-2891-13-50",
+      "access": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4047427/",
+      "cacheLfSha256": "c4342f41f5c5478e1c9e9baaf257c480e885f8eb064ecf53fa053d0ab55585c8",
+      "facts": "Named jasmine glucose-scale GI68, European31-subject cohort; ricecooker, variety-dependent water ratio held constant, availableCHO laboratory-tested. Numerical water ratio and wet yield not given. Chinese80 is not averaged with68.",
+      "application": "Dry150g version avoids wet-yield conversion. Current label water ratio is not claimed identical to original laboratory preparation."
+    },
+    {
+      "id": "scazzina2016",
+      "url": "https://doi.org/10.1016/j.numecd.2016.02.013",
+      "access": "https://air.unimi.it/retrieve/handle/2434/476796/820476/Scazzina%20et%20al.pdf",
+      "location": "Author manuscript p5, test foods protocol",
+      "facts": "Portions based on manufacturer availableCHO; pasta boiled in1L water with5g salt per test portion for package time. Historical current-product number and exact minutes not provided.",
+      "application": "Resolves existence of package-time protocol; current11min penne is still a LOW analogue, not exact test product."
+    },
+    {
+      "id": "tables2021",
+      "url": "https://doi.org/10.1093/ajcn/nqab233",
+      "access": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "rawSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "location": "Table1 row1455 p99; footnote3 p139",
+      "facts": "DeCecco penne mezzane47 SEM4 n9; test2008; testportion68g may be wet or dry per table footnote. Do not infer composition/yield from this weight.47 is a point comparator, not general pasta GI."
+    },
+    {
+      "id": "dececco-current",
+      "url": "https://www.dececco.com/gb_en/product/penne-mezzane-lisce-n-140/",
+      "facts": "Current Penne Mezzane Lisce n140: standard11min, al dente9min. Selected11min; no claim current product is historical2008 lot."
+    },
+    {
+      "id": "henry2005",
+      "url": "https://doi.org/10.1079/BJN20051594",
+      "location": "Methods p923; Table2 row9 p925",
+      "rawSha256": "1f1c8e05e5d0b435de2f01e7b1a4bca5f2f6ecfd9566e90cfbee31a4a995a78d",
+      "facts": "Tesco Value regular white pita69 SEM20 n10; source availableCHO51.2g/100g;97.7g test portion,60g standard serving. Manufacturer preparation when needed; exact heating time not reported. Mini68 and wholemeal56 are different rows.",
+      "application": "Regular current white pita served warm per manufacturer is a disclosed LOW application; no identity claim, averaged GI or SEM-derived biological bound."
+    },
+    {
+      "id": "tesco-current",
+      "url": "https://www.tesco.com/shop/en-GB/products/254945564",
+      "facts": "White Plain6pack,60g each, ambient toaster1–2min. Current carbohydrate49.7g/100g differs from source51.2; Fineli1056 availableCHO46.08 used separately as LOW composition proxy, not exact Tesco label. Label missing polyols not interpreted as zero."
+    },
+    {
+      "id": "auricchio-current",
+      "url": "https://www.auricchio.it/marchi-e-prodotti/riserva-esclusiva/pecorino-romano-dop",
+      "facts": "Pecorino Romano DOP: carbohydrate<0.5g, fibre0, protein24g, fat32g per100g. Polyols unreported. Only carbohydrate ceiling used in GK; four macro values withheld."
+    },
+    {
+      "id": "sunrice-current",
+      "url": "https://www.sunrice.com.au/products/jasmine-fragrant",
+      "facts": "Dry bagged named jasmine rice; cook per package in ricecooker and serve fresh hot. No microwave-pouch, brown rice or cooled/reheated transfer."
+    },
+    {
+      "id": "rice2023-negative",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10101220/",
+      "facts": "Dawat basmati yield example92g dry to270g cooked does not establish SunRice yield;75g OGTT comparison is not a substitute ISO GI. Not used to calculate a new GI or convert450g cooked."
+    }
+  ]
+}
