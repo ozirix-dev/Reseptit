@@ -52,7 +52,7 @@ Seuraava työjärjestys on: tarkka valmistus- ja tuoterajaus, natiivi saatava hi
 
 Lähteiden uudelleenkäytön ensimmäinen uusi tulos on `additional-proposal.json`: kahvijogurtti **GK ≈ 10,92/annos**, LOW, erillinen hyväksymätön ehdotus. Kondensoidulle maidolle löytyi nimetty Table1/936-havainto (GI61), banaanille Table1/1088 (GI47); makeutettua maitoa ei mallinneta makeuttamattoman maitotuotteen koodilla30. Jogurtin30 on erikseen arvioitava nykyisen koodauksen sovellus. Kahvin0,3g/annos on dokumentoitu A-poisjättö. Uusi ehdotus ei ole sivustoimportissa eikä mukana172:ssa. PDF-sivujen63 ja73 rivikohdistus tarkistettiin kuvasta; SEM ei muodosta reseptin vaihteluväliä.
 
-Kikherneletun ihmisillä mitattu Cheela-havainto on jatkoselvityksen kohde, ei vielä uusi hyväksytty numero. Lajit, fermentointi ja valmistus pitää sovittaa. Alkuperäisen30 ehdotuksen tavoite on edelleen kesken: hyväksytyssä integraatiossa16; erillinen uusi ehdotus1, joten yhteensä17 ehdotusta ja13 puuttuu. Uusi ehdotus tarvitsee oman hyväksynnän.
+Kikherneletun Cheela-havainto on sovitettu kahteen erikseen ehdotettuun, kokonaisista kikherneistä jauhettuun versioon. Ne eivät ole kaupallisen kuoritun besanin hyväksyntä eivätkä vielä hyväksyttyjä julkaisunumeroita. Lajit, fermentointi ja valmistus on rajattu lähdepalautuksen katselmoinnissa. Alkuperäinen30 ehdotuksen tavoite on edelleen kesken: hyväksytyssä integraatiossa16; erillisiä uusia ehdotuksia6, joten yhteensä22 ehdotusta ja8 puuttuu. Uudet ehdotukset tarvitsevat oman hyväksynnän. Katso [viiden version lähdepalautus](recovery-review.md); aikaisempi kahvijogurtti on erillinen kuudes ehdotus.
 
 ## Tarkistusnäyttö ja rajaukset
 
