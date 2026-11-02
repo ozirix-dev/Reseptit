@@ -1,6 +1,6 @@
 # GK80 – alkuperäisen reseptin säilyttävät vaihtoehtoversiot viimeisenä keinona
 
-**Tila:** PROPOSAL / DESIGN ONLY · **Päiväys:** 2026-11-02 · **Omistaja:** Reseptit / toimitus ja GK-menetelmä  
+**Tila:** PROPOSAL / DESIGN ONLY · **Päiväys:** 2026-11-02 · **Omistaja:** Reseptit / toimitus ja GK-menetelmä
 **Tavoite:** Käyttäjälle hyödyllinen ja toistettava GK-tieto myös silloin, kun alkuperäisen reseptin arvio ei ratkea; alkuperäistä reseptiä ei muuteta mittarin vuoksi.
 
 > **Päätösperiaate:** Reseptiä muutetaan tai luodaan vaihtoehtoversio vasta viimeisenä keinona. Julkaistu alkuperäisohje säilyy kanonisena, vaikka siitä ei pystyttäisi laskemaan GK:ta. Muokatun version GK:ta ei koskaan nimetä alkuperäisen ohjeen GK:ksi.
