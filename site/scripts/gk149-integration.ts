@@ -1,4 +1,5 @@
 /** Explicit owner-approved GK-only version contract, independent of parent macro evidence. */
+import {buildApprovedSixVariants} from './gk149-approved-six';
 import {readFileSync} from 'node:fs';import path from 'node:path';
 import {loadPilot,evaluate,textHash,digest,type Case} from './gk149-model';
 import type {GkOnlyVariant,LocalizedText} from '../src/features/recipes/gk-only-types';
@@ -12,7 +13,7 @@ export function verifyGkOnlyApproval(root:string,approval:any){
  }
  if(Object.keys(approval.approvedInputs??{}).length!==16)throw Error('GK-only approved scope must be exactly16');
 }
-export function buildGkOnlyVariants(root:string):GkOnlyVariant[]{
+function buildOriginalGkOnlyVariants(root:string):GkOnlyVariant[]{
  const read=(p:string)=>JSON.parse(readFileSync(path.join(root,folder+p),'utf8'));
  const approval=read('owner-approval.json');verifyGkOnlyApproval(root,approval);
  const {cases,comps,gis}=loadPilot(root),gold=read('golden.json').results,copy=read('public-copy.json');
@@ -32,3 +33,5 @@ export function buildGkOnlyVariants(root:string):GkOnlyVariant[]{
   return {recipeId:id,versionId:'gk149-'+c.inputSha256.slice(0,12),inputSha256:c.inputSha256,level:c.level,servings:c.servings,point:r.point,scenarioRange:r.scenarioRange,rangeKind:r.rangeKind,omittedCho:r.omittedCho,confidence:'LOW',macroScope:'NO_MACRO_PACKAGE_FOR_THIS_VERSION',ingredients:c.candidateIngredients.map(i=>({name:localized(copy.specialNames[i.name]??copy.ingredientNames[i.compositionId]),grams:i.grams===0&&comps.find(c=>c.id===i.compositionId)?.availablePer100g===0?null:i.grams})),preparation:localized(copy.preparation[id]),codingKinds:usedGi.flatMap(g=>g.id==='plant50'?['PLANT50' as const]:g.id==='trace50'?['TRACE50' as const]:[]),sensitivity:r.assumptionSensitivity,sources};
  });
 }
+
+export function buildGkOnlyVariants(root:string):GkOnlyVariant[]{return [...buildOriginalGkOnlyVariants(root),...buildApprovedSixVariants(root)];}

@@ -1,0 +1,122 @@
+{
+  "id": "GK80_SIX_A_SOURCE_CONTENT_REVIEW_V1",
+  "activation": false,
+  "ownerApproval": false,
+  "releaseAuthorized": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "scope": "Exact source/method/content versions for later integration only. No GI numeric constants added. No publication authority. Prior16 not reopened.",
+  "upstreamHead": "e0e761a14630d287be81eb61593b8e086e5b06a8",
+  "localCasesContentSha256Lf": "b591736df5167ccd35b8cc5ee0703fa587063c09107239b42da8a2f5144098d3",
+  "cases": [
+    {
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "point": 10.92,
+      "level": "A",
+      "origin": "local",
+      "inputSha256": "75b3125da4abf6072188d26656629bfacd4d04d83fe169109c3837da1aadc60a",
+      "caseRef": "source-extensions/cases.jsonl",
+      "servings": 2,
+      "preparationDecision": "Preferred A version agrees with PR183 additional-proposal:100g unsweetened Bulgarian-style yogurt3.9%,200ml black filter coffee,125g edible raw ordinary banana,30g regular sweetened condensed cow milk; two servings, all mixture consumed. Same original ingredients/counts retained. Use unchanged A omission for coffee0.3gCHO/serving. Explicit dairy30 binding and named milk61/banana47 analogies require exact version review; neither A arithmetic nor this proposal is owner/release approval. Approx10.92 is not measured mixture response and omission/cultivar/brand effects are not zero.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_UNSWEETENED_YOGURT620_AND_RAW_NOT_OVERRIPE_BANANA_VERSION",
+        "EXPLICIT_EXISTING_DAIRY30_BINDING_TO_FINELI620",
+        "NAMED_CONDENSED_MILK61_AND_RAW_BANANA47_BINDINGS",
+        "MACRO_VERSION_COMPATIBILITY"
+      ],
+      "sourceAdmission": null
+    },
+    {
+      "recipeId": "japanilainen-dashimaki-tamago-aamiaislautasella",
+      "point": 25.16,
+      "level": "A",
+      "origin": "local",
+      "inputSha256": "a9f8daa4b86c5b9326eed7a0f35577ed80fcb5e306d9d106276a9f8a84ab3aa8",
+      "caseRef": "source-extensions/cases.jsonl",
+      "servings": 2,
+      "preparationDecision": "Keep original2 eggs,200ml dashi,1tbsp soy sauce,100g rice and1tbsp oil. Define the listed rice as dry white jasmine, cook fully and serve freshly warm with rolled omelet. Exact dashi version uses manufacturer dilution1.4g Hondashi granules to final200ml; cook and consume all broth within omelet. Existing A omits the full powder-mass carbohydrate cap plus known soy/eggCHO, total1.72g/serving; positive omissions remain visible and are not GI0. No rice mass shrinkage, no invented broth density and no new GI numeric constant.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_DASHI_PRODUCT_1_4G_TO_FINAL200ML_VERSION",
+        "DRY_WHITE_JASMINE_RICE100G_FRESH_COOKING_AND_NATIVE_COMPOSITION_PROXY",
+        "A_OMITTED_CARBOHYDRATE1_72G_REVIEW",
+        "MACRO_VERSION_COMPATIBILITY"
+      ],
+      "sourceAdmission": null
+    },
+    {
+      "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+      "point": 8.82,
+      "level": "A",
+      "origin": "local",
+      "inputSha256": "2f0e19fde34c89031e3e4a0a11b340b86a49b3a07a9c536d3504b797abed7413",
+      "caseRef": "source-extensions/cases.jsonl",
+      "servings": 2,
+      "preparationDecision": "Exact cold bowl:200g plain unsweetened animal yogurt2.5%,150g raw ordinary edible persimmon,all2g dry MUSO TLF013 hojicha leaves ground finely and5g whole unhulled sesame. Original amounts preserved. Choose grind-finely alternative, no strained-infusion/extraction estimate. A omits bounded teaCHO0.132g/serving and known sesameCHO0.0225g/serving. Label carbohydrate includes unknown polyols, so it supplies an upper only. Named persimmon61 is a human observation, yogurt30 remains project coding; no measured mixture response or cultivar error bound claimed.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_UNSWEETENED_YOGURT619_RAW_PERSIMMON_AND_WHOLE_GROUND_HOJICHA_VERSION",
+        "MUSO_TLF013_LABEL_BASIS_AND_AVAILABLE_CHO_UPPER",
+        "NAMED_RAW_PERSIMMON61_BINDING",
+        "MACRO_VERSION_COMPATIBILITY"
+      ],
+      "sourceAdmission": null
+    },
+    {
+      "recipeId": "japanilainen-natto-riisikulho",
+      "point": 25.34,
+      "level": "A",
+      "origin": "local",
+      "inputSha256": "a23b798d343f87c31c41b49cd26eda3f66a1d0c48307ac47b50ee19830881c4a",
+      "caseRef": "source-extensions/cases.jsonl",
+      "servings": 2,
+      "preparationDecision": "Original150g natto,100g rice and2 eggs retained. Exact proposed version: plain unseasoned whole-soybean Itohiki-natto, dry white jasmine cooked fresh/warm, medium eggs and weighed20g raw chopped spring onion. The ambiguous preparation word mausteineen is defined to mean only the listed spring onion and salt; no unlisted commercial sweet tare/mustard packet is silently assigned zero. Natto uses the author-published MEXT CHOAVL mass sum, not a sum of missing components coerced to zero. The estimated difference4.8g/100g is a separate metric, not interchangeable or a scenario endpoint. New source-family admission and exact content version need owner review; no new GI number or natto GI. Original macro package not inherited.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "MEXT2023_CHOAVL_MASS_SOURCE_FAMILY_ADMISSION",
+        "NATIVE_AUTHOR_PUBLISHED_CHOAVL_SUM_WITH_UNKNOWN_COMPONENTS_AND_POLYOLS_REVIEW",
+        "EXACT_PLAIN_NATTO_NO_UNLISTED_TARE_DRY_RICE_AND_WEIGHED_SPRING_ONION20G_VERSION",
+        "MACRO_VERSION_COMPATIBILITY"
+      ],
+      "sourceAdmission": "MEXT2023_NATIVE_CHOAVL_MASS"
+    },
+    {
+      "recipeId": "pad-kee-mao-vhh-konjac",
+      "point": 1.8,
+      "level": "A",
+      "origin": "upstream",
+      "inputSha256": "0c692cf887c1a70c12d537c3685a25284f004653e752f7e3995197129a50370e",
+      "caseRef": "docs/nutrition/gk80-operation149/recovery-cases.json",
+      "servings": 4,
+      "preparationDecision": "Preserve original bean precooking5–7min, drained noodles dry-fried3–4min and wok method. Keep all sauce. Recipe quantities stay fixed; identify ready-in-water KoRo fettuccine, never dried konjac. Nominal noodle carbohydrate ceiling0.15g/serving and oyster sauceCHO0.7875g/serving are positive unknown-GI omissions; neither is zero. New named herb/bean/fish-sauce imputation bindings need owner review.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_NEW_VERSION_OWNER_APPROVAL",
+        "NEW_SOURCE_BINDINGS_REVIEW",
+        "KORO_NOMINAL_MANUFACTURER_CEILING_NOT_ANALYTIC_LOT_BOUND",
+        "FISH_SAUCE_COMPOSITION_PROXY"
+      ],
+      "sourceAdmission": null
+    },
+    {
+      "recipeId": "chettinad-kana",
+      "point": 1.42,
+      "level": "A",
+      "origin": "upstream",
+      "inputSha256": "ba7aeeede3d2222a38cf82d7ff2f571c64933269f439b52e4b9e7a4b64aec85e",
+      "caseRef": "docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "servings": 4,
+      "preparationDecision": "Preserve roasted/ground spice curry and all10g optional curry leaves. Weigh onion100g,tomato160g,garlic7g,pepper2g,coriander2g,fennel1g,cinnamon3g rather than claiming teaspoon conversions. IFCT Table6 curry-leaf availableCHO3.66 is analytically independent; Table1 difference4.51 is rejected. Fresh-leaf vegetable40 is an explicit named existing-coding application. GK applies only to curry; unlisted serving rice/bread is outside this version.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_NEW_VERSION_OWNER_APPROVAL",
+        "SOURCE_APPLICATION_REVIEW",
+        "CURRY_ONLY_EXCLUDES_UNQUANTIFIED_SERVING_RICE_OR_BREAD"
+      ],
+      "sourceAdmission": "IFCT2017_TABLE6_NATIVE_AVAILABLE_CHO"
+    }
+  ],
+  "packetBodySha256": "92a3e56aae708ef8a5c85ba897c04dec1d6970a94ba30e4300c429111348095d"
+}

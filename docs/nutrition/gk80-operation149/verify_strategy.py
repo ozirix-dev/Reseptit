@@ -1,4 +1,4 @@
-"""Read-only replay of the separate, unapproved source-reuse proposal and queue."""
+"""Read-only replay of the frozen16-version source-reuse proposal and queue snapshot."""
 from pathlib import Path
 from decimal import Decimal as D
 import csv, hashlib, json

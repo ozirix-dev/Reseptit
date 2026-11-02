@@ -1,0 +1,33 @@
+{
+  "records": [
+    {
+      "id": "muso-hojicha-leaf-tlf013",
+      "kind": "MANUFACTURER_LABEL",
+      "product": "MUSO JAS ORGANIC HOJICHA TLF013; whole dry roasted green tea leaf",
+      "sourceUrl": "https://muso-intl.com/wp-content/uploads/2022/01/TLF013-JAS-ORGANIC-HOJICHA-WEB.pdf",
+      "sourceSha256": "0502e38ab823ebfa4e240e72c5ebd4e2e131a7d2d42db1a66ee9470883f55e87",
+      "sourceRevision": "2023-07-27; accessed2026-11-02",
+      "locator": "page1 nutrition table explicitly per100g",
+      "basisAmount": 100,
+      "basisUnit": "g",
+      "carbohydrateDefinition": "EU_CARBOHYDRATE_INCLUDING_POLYOLS",
+      "carbohydrate": 13.2,
+      "totalPolyols": null,
+      "scope": "Ground whole dry leaves completely consumed, not zero-CHO brewed infusion. Original2g retained.",
+      "uncertainty": "Declared typical product composition; label/product variation not bounded biologically. Never transfer the unlabeled-basis powder sheet TLF041 to this record."
+    },
+    {
+      "id": "hondashi-th-dilution",
+      "kind": "MANUFACTURER_PREPARATION",
+      "product": "Hondashi food-service granules, Ajinomoto Thailand/Japan imported",
+      "sourceUrl": "https://www.ajinomoto.co.th/en/our-product/food-service/hon-dashi/hondashi/",
+      "sourceSha256": "3214ea5584a7b582d8aa66c47487e9bd7c1bbf0ecf8068ba60bf76b3960fbdd6",
+      "locator": "How to use Hondashi FAQ",
+      "powderGrams": 7,
+      "preparedSoupMl": 1000,
+      "recipePreparedSoupMl": 200,
+      "recipePowderGrams": 1.4,
+      "scope": "Explicit version1.4g powder diluted with water to final200ml broth. Entire powder consumed; availableCHO bounded by full powder mass, no nutritional-label subtraction or polyol zero."
+    }
+  ]
+}
