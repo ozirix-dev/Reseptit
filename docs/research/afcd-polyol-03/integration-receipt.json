@@ -1,0 +1,52 @@
+{
+  "integratedPr": "https://github.com/ozirix-dev/Reseptit/pull/183",
+  "integratedHead": "80f4360435b978d1cfa81088df1414430a88c222",
+  "approvedReviewReferenceHead": "fc8e2cbddc8d7fabd3df1cb4439db23d79d97964",
+  "packetBodySha256": "92a3e56aae708ef8a5c85ba897c04dec1d6970a94ba30e4300c429111348095d",
+  "answer": "Kyllä, hyväksyn kuuden version paketin integraatioon",
+  "approvedAdditionalInputs": {
+    "vietnamilainen-kahvijogurtti-banaanilla": "75b3125da4abf6072188d26656629bfacd4d04d83fe169109c3837da1aadc60a",
+    "japanilainen-dashimaki-tamago-aamiaislautasella": "a9f8daa4b86c5b9326eed7a0f35577ed80fcb5e306d9d106276a9f8a84ab3aa8",
+    "japanilainen-hojicha-jogurtti-persimonilla": "2f0e19fde34c89031e3e4a0a11b340b86a49b3a07a9c536d3504b797abed7413",
+    "japanilainen-natto-riisikulho": "a23b798d343f87c31c41b49cd26eda3f66a1d0c48307ac47b50ee19830881c4a",
+    "pad-kee-mao-vhh-konjac": "0c692cf887c1a70c12d537c3685a25284f004653e752f7e3995197129a50370e",
+    "chettinad-kana": "ba7aeeede3d2222a38cf82d7ff2f571c64933269f439b52e4b9e7a4b64aec85e"
+  },
+  "methodContentApprovedVersions": 22,
+  "draftNumericRecipes": 178,
+  "denominator": 326,
+  "draftPercent": 54.6,
+  "productionNumericRecipes": 156,
+  "target80NumericRecipes": 261,
+  "gapFromDraftToTarget": 83,
+  "publishedGain": 0,
+  "sourceHoldRecipeCount": 6,
+  "arithmeticProposalRecipeCount": 33,
+  "unapprovedDistinctRecipeCount": 11,
+  "bMinorOmissionProfileActivated": false,
+  "newResearchOnlyPeaSoupCounted": false,
+  "original326ResultsUnchanged": true,
+  "original16VariantsUnchanged": true,
+  "typescript": "PASS",
+  "targetedChecks": 20,
+  "prerenderRoutes": 721,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "historicalReconciliationArtifacts": [
+    "joint-proposal-index.csv",
+    "joint-proposal-summary.json",
+    "joint-method-impact.csv"
+  ],
+  "historicalSnapshotNote": "These joint files describe c559be5 before this six-version owner decision. Apply approvedAdditionalInputs to identify selected exact versions; an unselected alternative record does not inherit approval.",
+  "currentReport": "https://github.com/ozirix-dev/Reseptit/blob/80f4360435b978d1cfa81088df1414430a88c222/docs/nutrition/gk80-operation149/README.md",
+  "prTitleAndBodyUpdate": "Unsupported by the required repo_guard; old16-version title/body remain. Current README and diff document22.",
+  "observedGitHubDraftState": false,
+  "readyTransitionPerformedByThisTask": false,
+  "concurrentReadyEvent": {
+    "at": "2026-11-02T15:58:26Z",
+    "authorizedReferenceHeadInOtherTask": "c559be5855b86e4b89b8f780df51a6298612ec6f",
+    "scope": "16 original approved versions only; no merge/deploy",
+    "current22HeadReviewCoveredByOldReview": false
+  }
+}

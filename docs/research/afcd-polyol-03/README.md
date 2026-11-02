@@ -1,5 +1,16 @@
 # AFCD-POLYOL-03 / GK80: yhteinen menetelmä- ja lähderatkaisu
 
+## Kuuden version hyväksynnän jälkeinen nykytila
+
+**Kuusi A-versiota on nyt omistajan nimenomaisella hyväksynnällä integroitu samaan julkaisemattomaan PR183:een, HEAD`80f4360435b978d1cfa81088df1414430a88c222`. Hyväksyttyjä versioita on22 ja Draftin ehdokaskattavuus178/326=54,60%; tuotanto156/326.80% rajaan261 puuttuu tästä ehdokastilasta83.** [Integraatiokuitti](integration-receipt.json) sitoo päätöksen kuuteen tarkkaan syötteeseen ja erilliseen hyväksyntäkirjaukseen. [Ajantasainen pääraportti](https://github.com/ozirix-dev/Reseptit/blob/80f4360435b978d1cfa81088df1414430a88c222/docs/nutrition/gk80-operation149/README.md) on integraatiohaarassa.
+
+Alla oleva tutkimusraportti sekä`joint-*`-koontitiedostot säilyttävät hyväksyntää edeltäneen c559be5-tilannekuvan. Niiden16 hyväksyttyä täydentyy kuitin kuudella valitulla versiolla; vaihtoehtoinen syöterivi ei peri hyväksyntää. Nykyisestä33 reseptin koonnista11 jää ilman hyväksyttyä versiota, mukaan lukien kuusi lähde-HOLDia.30 käyttökelpoisen julkaisuehdokkaan tavoitetta ei ole osoitettu. B-poisjättöprofiili ja hernekeiton tutkimusmalli eivät aktivoidu. Ei julkaisua, Readyä, mergeä tai deployta.
+
+**Rinnakkainen GitHub-tilamuutos:** PR siirrettiin toisessa chatissa Readyksi2026-11-02T15:58:26Z vanhan16-version HEADin`c559be5` hyväksynnällä. Nykyinen`80f4360` sisältää22 versiota eikä peri vanhan HEADin katselmointia. Tämä ajo ei tehnyt Readya, mergeä tai deployta. Integraatiohaaran README kuvaa valmistelun sisältöä; ajantasainen GitHub-tila tarkistettiin erikseen ja on kuitissa.
+
+## Hyväksyntää edeltänyt tutkimusraportti
+
+
 ## Päätös
 
 **Käytetään yhtä yhteistä GK-only-putkea: ensin varmennettu natiivi saatava hiilihydraatti, sitten nimetty ainesosa tai valmistettu kokonaisuus GI-lähteen käyttöalan mukaan.** Valmistetun ruoan pilotti on jo [Draft PR #183:ssa](https://github.com/ozirix-dev/Reseptit/pull/183). Sen toteutusta ei kopioida toiseen haaraan. Tässä luovutuksessa sitä täydennetään MEXT-lähdeadapterilla sekä yhteisellä reseptitunnusten ja menetelmäpäätösten koonnilla.
