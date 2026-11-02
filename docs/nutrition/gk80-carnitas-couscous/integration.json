@@ -132,7 +132,7 @@
           }
         ]
       },
-      "ownerApproval": "PENDING_EXACT_VERSION_LOW_APPLICATION_AND_FOUR_MACRO_WITHHOLDING_REVIEW",
+      "ownerApproval": "APPROVED_EXACT_VERSION_LOW_APPLICATION_AND_FOUR_MACRO_WITHHOLDING",
       "sourceLfSha256": "1c75cbd6836e70046f893c74d245babe14ae8527f30e578681cb0ff028a1ba2c",
       "macroEvidenceSha256": "13c354cd22007a435db10131603d64de98c9fbe60fbc323f09e339cf23d2cb06",
       "macroStatus": "INSUFFICIENT SOURCE DATA",
@@ -148,7 +148,8 @@
         "en": "7ca4e6c209642ca792c707c3b6ea2ab0699245645fbd38f26b45473665b469b2",
         "sv": "f0fb1420dab6813601617b132696fd479e7b32dfed700592f8e7e134c6d0f7d7",
         "th": "0ba1ae6c79a0e7fca355b956a710474ac322595cf296dcfa5b7d3ad894c780b7"
-      }
+      },
+      "ownerApprovalRecord": "docs/nutrition/gk80-carnitas-couscous/owner-approval.json"
     }
   ],
   "newFoodRecords": [
@@ -168,9 +169,11 @@
     "cc-hold-lowcho50-v2",
     "cc-hold-chickpea-boiled36"
   ],
-  "ownerApproval": "PENDING_DRAFT_REVIEW",
-  "readyAuthorized": false,
+  "ownerApproval": "OWNER_METHOD_AND_CONTENT_APPROVED",
+  "readyAuthorized": true,
   "mergeAuthorized": false,
   "deployAuthorized": false,
-  "operation145Decision": "CONDITIONAL GO"
+  "operation145Decision": "CONDITIONAL GO",
+  "ownerApprovalRecord": "docs/nutrition/gk80-carnitas-couscous/owner-approval.json",
+  "approvedContentHead": "447bbad866383ed154b8a3971a8540ab6395ad84"
 }

@@ -1,0 +1,41 @@
+{
+  "status": "OWNER_METHOD_AND_CONTENT_APPROVED — AWAITING_SEPARATE_RELEASE_AUTHORIZATION",
+  "approvedHead": "447bbad866383ed154b8a3971a8540ab6395ad84",
+  "baseMain": "adda64fda9bf63e69e190b6d888698587a250a2a",
+  "origin": {
+    "kind": "EXPLICIT_OWNER_CHAT_INSTRUCTION",
+    "date": "2026-11-02",
+    "instruction": "Hyväksyn PR #175:n täsmällisen couscous-version, LOW-sovellukset ja neljän makron pidätyksen. Tee Ready-siirtymä repo_guardilla ja varmista Codex Review. Ei mergeä eikä deployta. Jätä Carnitas ja ReportHub erilleen.",
+    "provenance": "Current owner instruction in the Codex conversation preparing ozirix-dev/Reseptit PR175; not inferred from another PR, a research package or a previous release."
+  },
+  "recipeId": "marokkolainen-couscous",
+  "sourceLfSha256": "1c75cbd6836e70046f893c74d245babe14ae8527f30e578681cb0ff028a1ba2c",
+  "macroEvidenceSha256": "13c354cd22007a435db10131603d64de98c9fbe60fbc323f09e339cf23d2cb06",
+  "localeLfSha256": {
+    "en": "7ca4e6c209642ca792c707c3b6ea2ab0699245645fbd38f26b45473665b469b2",
+    "sv": "f0fb1420dab6813601617b132696fd479e7b32dfed700592f8e7e134c6d0f7d7",
+    "th": "0ba1ae6c79a0e7fca355b956a710474ac322595cf296dcfa5b7d3ad894c780b7"
+  },
+  "recipeBindingHash": "beefd8c5c6a8e5e129a1c66a3c9e2394aed4511224a74a0abd11ffb04df760e9",
+  "gkInputHash": "5a7268fcab53b4db8c46defd568e1eb18b339492f2ca439a726270af6fea935e",
+  "gkEvidenceHash": "b1a159db25cb8be53cc3904e049f65eac950051c36da16a0338d0de6a37f06d1",
+  "approvedResult": {
+    "gkPerServing": 37.5,
+    "confidence": "LOW",
+    "allFourMacrosWithheld": true,
+    "polyolsRemainUnknown": true
+  },
+  "scope": "Exact unchanged thigh-fillet/hot-boiled-whole-chickpea/full-broth/San Remo dry-product recipe version and its disclosed LOW GI/composition applications. Four-macro withholding remains mandatory; approval is not missing source data.",
+  "authorized": {
+    "readyForReview": true,
+    "codexReview": true,
+    "merge": false,
+    "productionDeploy": false
+  },
+  "excluded": [
+    "carnitas-salaattitacot",
+    "ReportHub",
+    "other PRs and research batches"
+  ],
+  "validity": "Bound only to the listed exact recipe/source/evidence hashes. A documentation-only approval receipt does not replace these hashes or relabel old evidence. Any change to their bound calculation/content requires separate assessment; no inherited approval."
+}

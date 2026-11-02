@@ -3,11 +3,13 @@
 **Päätös: CONDITIONAL GO.** Marokkolaisen couscousin korjattu
 GK-ehdokas on **37,50/annos, LOW**. Kaikki neljä julkista makroarvoa
 pidätetään puuttuvan tuotekohtaisen polyolitiedon vuoksi.
-Omistajan täsmällinen sisältö- ja menetelmähyväksyntä on edelleen PENDING.
-PR #175 säilyy Draftina. Readyä, mergeä ja deployta ei ole valtuutettu.
+Omistaja hyväksyi 2.11.2026 täsmällisen version, LOW-sovellukset ja neljän
+makron pidätyksen sekä valtuutti Ready-siirtymän ja Codex Review’n.
+PR #175 on Ready for review. **Mergeä ja deployta ei ole valtuutettu.**
+[Hyväksynnän alkuperä ja lukitut hashit](owner-approval.json).
 
 Main-pohja: `adda64fda9bf63e69e190b6d888698587a250a2a`.
-Tuotanto: **146/326 (44,79 %)**. Tämä Draft: **147/326 (45,09 %)**.
+Tuotanto: **146/326 (44,79 %)**. PR:n ehdokas: **147/326 (45,09 %)**.
 Ehdokaskattavuus ei ole tuotantokattavuus. Carnitas säilyy HOLDissa.
 Muut PR:t, ReportHub ja rinnakkaiset suunnitteluprojektit ovat erillään.
 
@@ -79,8 +81,13 @@ Kypsien kikherneiden Fineli 11089 ja kanaliemen Fineli 30315 säilyvät erillisi
 ilmoitettuina koostumusproxyinä. Aiemmat hylätyt valmistusanalogiat säilyvät
 [lähdekatselmoinnissa](source-review.json).
 
-Omistajan hyväksyttäväksi tuodaan yhtenä kokonaisuutena tämä tarkka versio,
-rajatut LOW-sovellukset, nykyetiketin käyttö ja neljän makron pidätys.
+Omistaja hyväksyi yhtenä kokonaisuutena tämän tarkan version, rajatut
+LOW-sovellukset, nykyetiketin käytön ja neljän makron pidätyksen.
+Hyväksyntä on sidottu HEADin `447bbad866383ed154b8a3971a8540ab6395ad84`
+resepti-, makro- ja GK-evidenssihasheihin. Tätä merkintää varten ei muuteta
+lukittuja reseptejä, laskentoja, lähdetietueita tai niiden hasheja.
+Alkuperäisen evidenssin ja historiallisten raporttien PENDING-tekstit kuvaavat
+niiden tallennushetkeä; nykyinen omistajapäätös on erillisessä hyväksyntätietueessa.
 Täydellisen makropaketin GO edellyttäisi vielä tuotekohtaista polyolitietoa;
 hyväksyntä ei yksin korvaa sitä. Neljän kielisivun HTML:stä varmennettu
 julkinen näyttö on tässä noin 38, ei katselmointitaulukon kahden desimaalin 37,50.
