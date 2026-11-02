@@ -28,19 +28,19 @@ ingredients:
   - amount: 900
     unit: g
     item: nötstek
-    note: yhtenä palana
+    note: i ett stycke
   - amount: 55
     unit: g
     item: skalad gul lök
-    note: viipaloituna
+    note: skivad
   - amount: 170
     unit: g
     item: grön paprika
-    note: suikaleina
+    note: i strimlor
   - amount: 170
     unit: g
     item: röd paprika
-    note: suikaleina
+    note: i strimlor
   - amount: 400
     unit: g
     item: krossade tomater
@@ -50,7 +50,7 @@ ingredients:
   - amount: 10.5
     unit: g
     item: skalad vitlök
-    note: hienonnettuna
+    note: finhackad
   - amount: 2.1
     unit: g
     item: spiskumminfrön

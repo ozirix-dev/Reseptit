@@ -28,19 +28,19 @@ ingredients:
   - amount: 900
     unit: g
     item: beef roasting joint
-    note: yhtenä palana
+    note: in one piece
   - amount: 55
     unit: g
     item: peeled yellow onion
-    note: viipaloituna
+    note: sliced
   - amount: 170
     unit: g
     item: green sweet pepper
-    note: suikaleina
+    note: cut into strips
   - amount: 170
     unit: g
     item: red sweet pepper
-    note: suikaleina
+    note: cut into strips
   - amount: 400
     unit: g
     item: crushed tomatoes
@@ -50,7 +50,7 @@ ingredients:
   - amount: 10.5
     unit: g
     item: peeled garlic
-    note: hienonnettuna
+    note: finely chopped
   - amount: 2.1
     unit: g
     item: cumin seeds

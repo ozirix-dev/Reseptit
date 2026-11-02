@@ -28,19 +28,19 @@ ingredients:
   - amount: 900
     unit: g
     item: เนื้อวัวส่วนสำหรับอบ
-    note: yhtenä palana
+    note: เป็นชิ้นเดียว
   - amount: 55
     unit: g
     item: หอมหัวใหญ่สีเหลืองปอกเปลือก
-    note: viipaloituna
+    note: หั่นเป็นแว่น
   - amount: 170
     unit: g
     item: พริกหวานสีเขียว
-    note: suikaleina
+    note: หั่นเป็นเส้น
   - amount: 170
     unit: g
     item: พริกหวานสีแดง
-    note: suikaleina
+    note: หั่นเป็นเส้น
   - amount: 400
     unit: g
     item: มะเขือเทศบดหยาบ
@@ -50,7 +50,7 @@ ingredients:
   - amount: 10.5
     unit: g
     item: กระเทียมปอกเปลือก
-    note: hienonnettuna
+    note: สับละเอียด
   - amount: 2.1
     unit: g
     item: เมล็ดยี่หร่า
