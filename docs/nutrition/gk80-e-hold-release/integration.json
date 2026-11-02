@@ -1,0 +1,402 @@
+{
+  "baseMain": "c5393a10a07fdb5f97bd50a1d14f2747f4488cbe",
+  "researchPr": 170,
+  "researchHead": "87c603bfe5ded3b1fe6af1abdaa5b0442ebc5051",
+  "recipes": [
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "originalPublishedPath": "reseptit/paaruoat/tomaatti-kananmuna-wokki.md",
+      "previousSourceLfSha256": "b861fd33f519bc2f7e08760704a25abbbac2ff9dded37fb7614c3fa17e2c7148",
+      "priorResearchEvidenceHash": "8105d794f8c023b46f5fa8cd1f70f4fe6981a155be6133565912e1ce429e1f13",
+      "previousMacroEvidenceLfSha256": "c61d841a3238cff6707c66829ea16265a29b220273703da31901527ed347657b",
+      "newInput": {
+        "recipeId": "tomaatti-kananmuna-wokki",
+        "servings": 3,
+        "ingredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 220,
+            "fineliRecordId": "ehold-fineli-858",
+            "giRecordId": "ehold-lowcho50-r4",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
+            "foodKey": "ehold-lowcho-code",
+            "preparationKey": "ehold-lowcho50-r4",
+            "giMatchEvidence": "Existing scoped published imputation, not measured ingredient GI. "
+          },
+          {
+            "name": "kypsää tomaattia",
+            "grams": 500,
+            "fineliRecordId": "ehold-fineli-352",
+            "giRecordId": "ehold-vegetable-imputation40",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
+            "foodKey": "ehold-low-carb-vegetable",
+            "preparationKey": "ehold-vegetable-imputation40",
+            "giMatchEvidence": "Existing scoped published imputation, not measured ingredient GI. "
+          },
+          {
+            "name": "rypsiöljyä",
+            "grams": 27,
+            "fineliRecordId": "ehold-fineli-535",
+            "giRecordId": null,
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. "
+          },
+          {
+            "name": "sokeria",
+            "grams": 4,
+            "fineliRecordId": "ehold-fineli-1",
+            "giRecordId": "ehold-sucrose60",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
+            "foodKey": "ehold-sucrose",
+            "preparationKey": "ehold-sucrose60",
+            "giMatchEvidence": "Named human GI result applied as LOW food/preparation analogue; not a universal food-family GI or current-lot measurement. "
+          },
+          {
+            "name": "suolaa",
+            "grams": 2.5,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt contains no carbohydrate; no mixed seasoning."
+          },
+          {
+            "name": "soijakastiketta",
+            "grams": 15,
+            "fineliRecordId": "ehold-fineli-31",
+            "giRecordId": null,
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. Fineli31 A9.5; GI omitted at0.475g/serv, not PI50."
+          },
+          {
+            "name": "tuoretta kevätsipulia",
+            "grams": 15,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed small-portion GK omission, not an actual zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.367,
+            "upperBoundEvidence": "USDA SR Legacy FDC170005 Onions, spring or scallions (includes tops and bulb), raw: source total carbohydrate includes fibre and unknown polyols; whole-ingredient nominal ceiling only, no assumed P0. Milling removes no fraction."
+          },
+          {
+            "name": "SunRice Jasmine Fragrant -jasmiiniriisiä, kuivana",
+            "grams": 150,
+            "fineliRecordId": "ehold-fineli-11521",
+            "giRecordId": "ehold-rice-jasmine68",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. 150g dry is a new normative weighed version, NOT a conversion of the old450g cooked. Fineli11521 dry longgrain composition is a separate LOW proxy. Cook in ricecooker with package water ratio and serve entire fresh hot batch; no chilling/reheating or microwave-pouch transfer.",
+            "foodKey": "ehold-rice-grain",
+            "preparationKey": "ehold-rice-jasmine68",
+            "giMatchEvidence": "Named human GI result applied as LOW food/preparation analogue; not a universal food-family GI or current-lot measurement. 150g dry is a new normative weighed version, NOT a conversion of the old450g cooked. Fineli11521 dry longgrain composition is a separate LOW proxy. Cook in ricecooker with package water ratio and serve entire fresh hot batch; no chilling/reheating or microwave-pouch transfer."
+          }
+        ]
+      },
+      "ownerApproval": "PENDING_EXACT_VERSION_AND_PROXY_REVIEW",
+      "sourceLfSha256": "ed79bec67ec96b325a56451b6450fe4799a1618d261341c29fd1d195f9d6cffe",
+      "macroEvidenceSha256": "5168b75bf9b2ec47da516d8dbabe9183e1f54bb91c388105b5179cd158dbea9d",
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "macroValues": {
+        "carbs_net_per_serving_g": 47.28,
+        "carbs_total_per_serving_g": 48.44,
+        "protein_per_serving_g": 14.49,
+        "fat_per_serving_g": 16.8
+      },
+      "gk": 30.07,
+      "omittedChoPerServingG": 0.8420000000000001,
+      "localeLfSha256": {
+        "en": "f49d86266da58a41b7ee8b4d146a649256856700e03c68504903cb4b153b9cc4",
+        "sv": "d866cdbaf8c87e0e51bfe331cb1ff83706b8fb2ec0b0190fa768a5a0cbf27d09",
+        "th": "a0af4e4ac64b7712ea21def6fd7f8b768ea8434e77738ddcaaa3d6113476c46a"
+      }
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "originalPublishedPath": "reseptit/paaruoat/pasta-alla-norma.md",
+      "previousSourceLfSha256": "d40a2168f6aed28d22c69bec104d12543aa922908bfec900a9189c1b32678509",
+      "priorResearchEvidenceHash": "30860ab2fd4c2f44bc78372b5856031ab59691b8a80f86f237589e4d39cecaba",
+      "previousMacroEvidenceLfSha256": "d7562c32212b444642ee21bda6e457734866ebb4ffe36d5204af967423162d83",
+      "newInput": {
+        "recipeId": "pasta-alla-norma",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "De Cecco Penne Mezzane Lisce n.140 -pastaa, kuivana",
+            "grams": 350,
+            "fineliRecordId": "ehold-fineli-117",
+            "giRecordId": "ehold-penne47",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. Current n140 cooked11min (standard package time), promptly served hot; source2008 penne mezzane test lot/product number is not established. Scazzina2016 gives package-time protocol. Fineli117 dry composition is independent; no yield inferred from ambiguous68g test portion.",
+            "foodKey": "ehold-penne",
+            "preparationKey": "ehold-penne47",
+            "giMatchEvidence": "Named human GI result applied as LOW food/preparation analogue; not a universal food-family GI or current-lot measurement. Current n140 cooked11min (standard package time), promptly served hot; source2008 penne mezzane test lot/product number is not established. Scazzina2016 gives package-time protocol. Fineli117 dry composition is independent; no yield inferred from ambiguous68g test portion."
+          },
+          {
+            "name": "munakoisoa",
+            "grams": 400,
+            "fineliRecordId": "ehold-fineli-362",
+            "giRecordId": "ehold-vegetable-imputation40",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
+            "foodKey": "ehold-low-carb-vegetable",
+            "preparationKey": "ehold-vegetable-imputation40",
+            "giMatchEvidence": "Existing scoped published imputation, not measured ingredient GI. "
+          },
+          {
+            "name": "tomaattimurskaa",
+            "grams": 400,
+            "fineliRecordId": "ehold-fineli-398",
+            "giRecordId": "ehold-vegetable-imputation40",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
+            "foodKey": "ehold-low-carb-vegetable",
+            "preparationKey": "ehold-vegetable-imputation40",
+            "giMatchEvidence": "Existing scoped published imputation, not measured ingredient GI. "
+          },
+          {
+            "name": "tuoretta kuorittua valkosipulia",
+            "grams": 6,
+            "fineliRecordId": "ehold-fineli-393",
+            "giRecordId": "ehold-vegetable-imputation40",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
+            "foodKey": "ehold-low-carb-vegetable",
+            "preparationKey": "ehold-vegetable-imputation40",
+            "giMatchEvidence": "Existing scoped published imputation, not measured ingredient GI. "
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 40.5,
+            "fineliRecordId": "ehold-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. "
+          },
+          {
+            "name": "tuoretta basilikaa",
+            "grams": 20,
+            "fineliRecordId": "ehold-fineli-11134",
+            "giRecordId": "ehold-vegetable-imputation40",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
+            "foodKey": "ehold-low-carb-vegetable",
+            "preparationKey": "ehold-vegetable-imputation40",
+            "giMatchEvidence": "Existing scoped published imputation, not measured ingredient GI. "
+          },
+          {
+            "name": "Auricchio Pecorino Romano DOP -juustoa",
+            "grams": 50,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed small-portion GK omission, not an actual zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.0625,
+            "upperBoundEvidence": "Named manufacturer label carbohydrate<0.5g/100g including any polyols; use0.5 nominal ceiling ->0.0625g/serv. Fibre0 separately declared, polyols unknown. Original recipe explicitly allowed pecorino; no Parmesan substitution."
+          },
+          {
+            "name": "suolaa",
+            "grams": 5,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt contains no carbohydrate; no mixed seasoning."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed small-portion GK omission, not an actual zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.07993750000000001,
+            "upperBoundEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: source total carbohydrate includes fibre and unknown polyols; whole-ingredient nominal ceiling only, no assumed P0. Milling removes no fraction."
+          }
+        ]
+      },
+      "ownerApproval": "PENDING_EXACT_VERSION_AND_PROXY_REVIEW",
+      "sourceLfSha256": "bfe62302649fc4046bdfc8704dab7e05f9c12f3c4906e41ec573849532dc4baf",
+      "macroEvidenceSha256": "fff218d7fabef1a8d3fa2d37eb6038e0942a938702bf4675fcba65671be1daa1",
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "macroValues": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "gk": 30.05,
+      "omittedChoPerServingG": 0.1424375,
+      "localeLfSha256": {
+        "en": "528a04dfc788f849f6cb22b33560e90bf6931fd7ae5a393b1fd9e9548fa9eb62",
+        "sv": "a6ed3333160fc61447b99ab29b646828787335d1e6a4e9296e73227c132776a2",
+        "th": "ac201a6225f1f027694af4f31a75645a9c77625e51fbdb5535121b34fa1a58f7"
+      }
+    },
+    {
+      "recipeId": "doner-kebab",
+      "originalPublishedPath": "reseptit/paaruoat/doner-kebab.md",
+      "previousSourceLfSha256": "d1f882063dcb951563a1de6b67a3ac93cf62d31c98ffbf40ec46844cc4538917",
+      "priorResearchEvidenceHash": "0c94a148dd2b6facc468540b45506cbb2c13c8d6fe5c10401ba91c558f00d69d",
+      "previousMacroEvidenceLfSha256": "7971b801ae022e740845026af02cce367e0d5cf1cd1bfb732661840263c85b2d",
+      "newInput": {
+        "recipeId": "doner-kebab",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "naudan jauhelihaa, rasvaa 17 %",
+            "grams": 600,
+            "fineliRecordId": "ehold-fineli-11562",
+            "giRecordId": null,
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. "
+          },
+          {
+            "name": "maustamatonta kreikkalaista jogurttia, rasvaa 10 %",
+            "grams": 100,
+            "fineliRecordId": "ehold-fineli-32201",
+            "giRecordId": "ehold-dairy-imputation30",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
+            "foodKey": "ehold-dairy-code",
+            "preparationKey": "ehold-dairy-imputation30",
+            "giMatchEvidence": "Existing scoped published imputation, not measured ingredient GI. "
+          },
+          {
+            "name": "kuorittua sipulia",
+            "grams": 55,
+            "fineliRecordId": "ehold-fineli-335",
+            "giRecordId": "ehold-vegetable-imputation40",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
+            "foodKey": "ehold-low-carb-vegetable",
+            "preparationKey": "ehold-vegetable-imputation40",
+            "giMatchEvidence": "Existing scoped published imputation, not measured ingredient GI. "
+          },
+          {
+            "name": "tuoretta kuorittua valkosipulia",
+            "grams": 6,
+            "fineliRecordId": "ehold-fineli-393",
+            "giRecordId": "ehold-vegetable-imputation40",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
+            "foodKey": "ehold-low-carb-vegetable",
+            "preparationKey": "ehold-vegetable-imputation40",
+            "giMatchEvidence": "Existing scoped published imputation, not measured ingredient GI. "
+          },
+          {
+            "name": "jauhettua juustokuminaa",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed small-portion GK omission, not an actual zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.2212,
+            "upperBoundEvidence": "USDA SR Legacy FDC170923 Spices, cumin seed: source total carbohydrate includes fibre and unknown polyols; whole-ingredient nominal ceiling only, no assumed P0. Milling removes no fraction."
+          },
+          {
+            "name": "paprikajauhetta",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed small-portion GK omission, not an actual zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.26995,
+            "upperBoundEvidence": "USDA SR Legacy FDC171329 Spices, paprika: source total carbohydrate includes fibre and unknown polyols; whole-ingredient nominal ceiling only, no assumed P0. Milling removes no fraction."
+          },
+          {
+            "name": "kuivattua oreganoa",
+            "grams": 1,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed small-portion GK omission, not an actual zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.1723,
+            "upperBoundEvidence": "USDA SR Legacy FDC171328 Spices, oregano, dried: source total carbohydrate includes fibre and unknown polyols; whole-ingredient nominal ceiling only, no assumed P0. Milling removes no fraction."
+          },
+          {
+            "name": "suolaa",
+            "grams": 5,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt contains no carbohydrate; no mixed seasoning."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed small-portion GK omission, not an actual zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.07993750000000001,
+            "upperBoundEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: source total carbohydrate includes fibre and unknown polyols; whole-ingredient nominal ceiling only, no assumed P0. Milling removes no fraction."
+          },
+          {
+            "name": "Tesco White Plain -pitaleipää, 4 × 60 g",
+            "grams": 240,
+            "fineliRecordId": "ehold-fineli-1056",
+            "giRecordId": "ehold-pita-white-regular69",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. Retains original4 pita count. Current manufacturer60g/loaf; ordinary white pita, not mini or wholemeal. Fineli1056 A46.08 is a separate disclosed LOW composition proxy, not current label49.7 or historical51.2.",
+            "foodKey": "ehold-pita-regular-white",
+            "preparationKey": "ehold-pita-white-regular69",
+            "giMatchEvidence": "Applied to current Tesco White Plain60g warmed from ambient perpack1–2min and served warm; exact2005 heating duration and present formulation not established. Named regular-white-pita result69 (not mini68); separate LOW composition proxy, owner exact-version review pending."
+          },
+          {
+            "name": "raakaa valkokaalia",
+            "grams": 180,
+            "fineliRecordId": "ehold-fineli-320",
+            "giRecordId": "ehold-vegetable-imputation40",
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. ",
+            "foodKey": "ehold-low-carb-vegetable",
+            "preparationKey": "ehold-vegetable-imputation40",
+            "giMatchEvidence": "Existing scoped published imputation, not measured ingredient GI. "
+          },
+          {
+            "name": "viinietikkaa",
+            "grams": 10,
+            "fineliRecordId": "ehold-fineli-929",
+            "giRecordId": null,
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. Fineli929 A0.5; GI omission0.0125g/serv, no lowCHO PI outside scope."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 10,
+            "fineliRecordId": "ehold-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact edible weighed input in this proposed version; all portions divided by stated servings. No guessed wet/dry conversion. "
+          }
+        ]
+      },
+      "ownerApproval": "PENDING_EXACT_VERSION_AND_PROXY_REVIEW",
+      "sourceLfSha256": "acd15c6dab212dfe791a5d9ef85cd6101d38ac9a87baa6bfc8a016e1183dc4c4",
+      "macroEvidenceSha256": "ff6b1682277ff57d820716290982a4f1d0b741aa19ebcf466748642aa8dcadc6",
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "macroValues": {
+        "carbs_net_per_serving_g": 31.88,
+        "carbs_total_per_serving_g": 34.37,
+        "protein_per_serving_g": 34.92,
+        "fat_per_serving_g": 31.09
+      },
+      "gk": 20.66,
+      "omittedChoPerServingG": 0.7558875,
+      "localeLfSha256": {
+        "en": "0e8fe93881626de877e636e9fbe2dc7889d78bb6c4697e89105845e036e1ee27",
+        "sv": "877eca32d4fce6282e3bc3e2e8f66ee066dd6c9865fb0f6a096d3b62a1568a68",
+        "th": "a13c264ec404c43752d1d5cdfd53b81e1ffbde8b95908235c83659b2cf1fa41a"
+      }
+    }
+  ],
+  "newGiRecords": [
+    "ehold-lowcho50-r4",
+    "ehold-vegetable-imputation40",
+    "ehold-sucrose60",
+    "ehold-rice-jasmine68",
+    "ehold-penne47",
+    "ehold-dairy-imputation30",
+    "ehold-pita-white-regular69"
+  ],
+  "newFoodRecords": [
+    "ehold-fineli-858",
+    "ehold-fineli-352",
+    "ehold-fineli-535",
+    "ehold-fineli-1",
+    "ehold-fineli-31",
+    "ehold-fineli-11521",
+    "ehold-fineli-117",
+    "ehold-fineli-362",
+    "ehold-fineli-398",
+    "ehold-fineli-393",
+    "ehold-fineli-536",
+    "ehold-fineli-11134",
+    "ehold-fineli-11562",
+    "ehold-fineli-32201",
+    "ehold-fineli-335",
+    "ehold-fineli-1056",
+    "ehold-fineli-320",
+    "ehold-fineli-929"
+  ],
+  "ownerApproval": "PENDING_DRAFT_REVIEW",
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false
+}

@@ -1,0 +1,38 @@
+{
+  "reviewedCases": 5,
+  "draftCandidates": 3,
+  "unchangedHolds": 2,
+  "newBroadResearchRun": false,
+  "decisions": [
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "decision": "DRAFT_CANDIDATE_OWNER_REVIEW",
+      "resolution": "New150g dry SunRice jasmine rice version; no450g cooked-to-dry yield asserted. Hot ricecooker GI68 European cohort retained; Fineli11521 dry composition independent LOW proxy. Eggs/tomatoes/soy retained.",
+      "ownerDecision": "Approve this new dry-weighed serving version and named hot-rice/composition application; no retroactive approval of old cooked-rice input."
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "decision": "DRAFT_CANDIDATE_OWNER_REVIEW",
+      "resolution": "Current named DeCecco n14011min package-time preparation, source penne47 applied LOW. Primary Scazzina2016 protocol recovered; historical product number/lot/duration still not asserted. Original permitted pecorino retained instead of research Parmesan. All4 macros withheld, no inferred polyol0.",
+      "ownerDecision": "Approve named penne preparation and separate dry composition proxy, original pecorino option and four-value withholding."
+    },
+    {
+      "recipeId": "doner-kebab",
+      "decision": "DRAFT_CANDIDATE_OWNER_REVIEW",
+      "resolution": "Primary Henry2005 Table2 regular-white-pita result69 replaces irrelevant mini68 lead. Current Tesco4x60g warmed1–2min perpack; preparation-method analogy LOW, historical recipe/formulation identity not asserted.200g oil-vinegar cabbage salad explicitly specified, not200g plain cabbage.",
+      "ownerDecision": "Approve current regular-white-pita/composition analogy and exact200g salad, beef17% and yogurt10% version. SEM20 is source sampling uncertainty, not a recipe bound."
+    },
+    {
+      "recipeId": "carnitas-salaattitacot",
+      "decision": "HOLD_UNCHANGED",
+      "resolution": "Orange juice AND segments remain simmered2.5h. Raw-orange45 does not establish cooked-orange GI, and130g orange A8.9/4=2.8925g/serv cannot be omitted. Lime juice vs pulp also must be corrected in any future integration.",
+      "needed": "Preparation-matched cooked-orange evidence or a separately approved sourced method. Do not remove citrus or invent retention/GI."
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "decision": "HOLD_UNCHANGED",
+      "resolution": "SanRemo couscous65 and Edgell drained-canned chickpea35 identify leads, not reheated-stew validation. Original thigh/chicken-leg option,15min chickpea heating and partial stock serving persist; research breast substitution and whole1L stock accounting not adopted.",
+      "needed": "Retain thigh option in a defined edible-weight version; identify retained broth composition/mass and support the heated chickpea application. No mean28 or silent cold-side recipe substitution."
+    }
+  ]
+}

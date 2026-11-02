@@ -15,10 +15,10 @@ cooking_method:
   - paistaminen
 difficulty: mellannivå
 tags:
-  - "medelhavsmat"
-  - "turkisk"
-  - "nötkött"
-  - "yoghurt"
+  - medelhavsmat
+  - turkisk
+  - nötkött
+  - yoghurt
 image:
   src: paaruoat/doner-kebab.webp
   alt: Kryddad döner kebabbiff med pitabröd, sallad och yoghurtsås
@@ -27,67 +27,64 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: nötfärs
+    item: nötfärs, 17% fett
   - amount: 100
     unit: g
-    item: Grekisk yoghurt
-  - amount: 1
-    unit: st
-    item: lök
-    note: riven
-  - amount: 2
-    unit: st
-    item: en vitlöksklyfta
-    note: krossad
-  - amount: 1
-    unit: tsk
-    item: spiskummin
-  - amount: 1
-    unit: tsk
-    item: paprikapulver
-  - amount: 0.5
-    unit: tsk
-    item: oregano
-  - amount: 1
-    unit: tsk
-    item: salt
-  - amount: 0.25
-    unit: tsk
-    item: svartpeppar
-  - amount: 4
-    unit: st
-    item: pitabröd
-    note: för servering
-  - amount: 200
+    item: naturell grekisk yoghurt, 10% fett
+  - amount: 55
     unit: g
-    item: coleslaw
-    note: för servering
+    item: skalad gul lök
+  - amount: 6
+    unit: g
+    item: färsk skalad vitlök
+  - amount: 2
+    unit: g
+    item: malen spiskummin
+  - amount: 2
+    unit: g
+    item: paprikapulver
+  - amount: 1
+    unit: g
+    item: torkad oregano
+  - amount: 5
+    unit: g
+    item: salt
+  - amount: 0.5
+    unit: g
+    item: malen svartpeppar
+  - amount: 240
+    unit: g
+    item: Tesco White Plain pitabröd, 4 × 60 g
+  - amount: 180
+    unit: g
+    item: rå vitkål
+  - amount: 10
+    unit: g
+    item: vinäger
+  - amount: 10
+    unit: g
+    item: olivolja
 source_language: fi
 source_recipe: reseptit/paaruoat/doner-kebab.md
 translation_of: doner-kebab
-carbs_net_per_serving_g: 30.89
-carbs_total_per_serving_g: 33.73
-protein_per_serving_g: 35.77
-fat_per_serving_g: 34.6
-
+carbs_net_per_serving_g: 31.88
+carbs_total_per_serving_g: 34.37
+protein_per_serving_g: 34.92
+fat_per_serving_g: 31.09
 ---
-
 # Hemlagad biff döner kebab
 
-Den här hemlagade dönern görs av kryddad nötfärs som tillagas i ugnen och skärs i tunna skivor. Servera med bröd och en fräsch sallad.
-
-## Beskrivning
-
-Den här hemlagade dönern görs av kryddad nötfärs som tillagas i ugnen och skärs i tunna skivor. Servera med bröd och en fräsch sallad.
+Fyra bröd väger totalt 240 g. Kålsalladen på 200 g består av 180 g kål,10 g vinäger och 10 g olivolja. All steksky och allt stekfett ingår i portionerna.
 
 ## Tillagning
 
-1. Värm ugnen till 220 grader. Blanda köttfärs, yoghurt, riven lök, vitlök och kryddor till en slät massa.
-2. Bred ut köttet i ett tunt lager på bakplåtspapper. Täck med ett annat papper och kavla ut platt.
-3. Grädda i 12–15 minuter tills köttet är genomstekt. Ta ut ur ugnen och skär eller riv i tunna skivor.
-4. Stek köttchipsen i en het panna i små omgångar för att bryna kanterna.
-5. Servera med varmt pitabröd och kålsallad.
+1. Värm ugnen till 220°C. Blanda färs, yoghurt, riven lök, vitlök, torkade kryddor och salt.
+2. Bred tunt på bakplåtspapper och kavla jämnt genom ett andra ark. Ta bort det översta arket.
+3. Grädda 12–15 minuter tills färsen är helt genomstekt och skär i tunna skivor.
+4. Bryn skivorna i omgångar i het panna. Ta med all steksky och allt fett till serveringen.
+5. Blanda 180 g fint strimlad kål med 10 g vinäger och 10 g olivolja.
+6. Värm fyra rumstempererade pitabröd i brödrost 1–2 minuter enligt förpackningen. Fördela kött, sky och sallad mellan de fyra varma bröden och servera genast.
 
 ## Anteckningar
 
-- Se till att köttbitarna gjorda av köttfärs är klara; de ska vara genomkokta.
+Uppskattningen gäller endast dessa mängder och denna tillagning. Andra tillbehör eller varianter ger andra värden.

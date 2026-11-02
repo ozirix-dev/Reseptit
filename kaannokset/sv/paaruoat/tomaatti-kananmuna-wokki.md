@@ -6,7 +6,7 @@ category: paaruoka
 language: sv
 status: published
 servings: 3
-time_total_min: 20
+time_total_min: 30
 main_ingredient:
   - kananmuna
   - tomaatti
@@ -23,59 +23,50 @@ image:
   width: 1279
   height: 853
 ingredients:
-  - amount: 4
-    unit: st
-    item: ägg
-  - amount: 4
-    unit: st
-    item: mogen tomat
-    note: "skuren i klyftor"
-  - amount: 2
-    unit: msk
-    item: neutral olja
-  - amount: 1
-    unit: tsk
-    item: socker
-  - amount: 0.5
-    unit: tsk
-    item: salt
-  - amount: 1
-    unit: msk
-    item: sojasås
-  - amount: 1
-    unit: st
-    item: vårlök
-    note: i skivor
-  - amount: 450
+  - amount: 220
     unit: g
-    item: kokt ris
-    note: för servering
+    item: ägg utan skal
+  - amount: 500
+    unit: g
+    item: mogna tomater
+  - amount: 27
+    unit: g
+    item: rapsolja
+  - amount: 4
+    unit: g
+    item: socker
+  - amount: 2.5
+    unit: g
+    item: salt
+  - amount: 15
+    unit: g
+    item: sojasås
+  - amount: 15
+    unit: g
+    item: färsk salladslök
+  - amount: 150
+    unit: g
+    item: SunRice Jasmine Fragrant jasminris, torrt
 source_language: fi
 source_recipe: reseptit/paaruoat/tomaatti-kananmuna-wokki.md
 translation_of: tomaatti-kananmuna-wokki
-carbs_net_per_serving_g: 38.93
-carbs_total_per_serving_g: 40.64
-protein_per_serving_g: 12.98
-fat_per_serving_g: 16.58
-
+carbs_net_per_serving_g: 47.28
+carbs_total_per_serving_g: 48.44
+protein_per_serving_g: 14.49
+fat_per_serving_g: 16.8
 ---
-
 # Kinesisk tomat-ägg wok
 
-En snabb hemmatsklassiker kombinerar saftiga tomater och ett mjukt ägg i en lätt söt wok.
-
-## Beskrivning
-
-En snabb hemmatsklassiker kombinerar saftiga tomater och ett mjukt ägg i en lätt söt wok.
+Denna torrvägda version använder 150 g ris för tre portioner; det är ingen omräkning av tidigare 450 g kokt ris. Använd torrt ris, inte mikroris. Koka i riskokare med förpackningens vattenmängd och servera hela satsen direkt varm.
 
 ## Tillagning
 
-1. Vispa äggen lätt med salt.
-2. Hetta upp hälften av oljan i en panna. Stek äggen tills de är mjuka och ställ åt sidan.
-3. Tillsätt resten av oljan och stek tomaterna i 3-4 minuter tills de mjuknar och blir saftiga.
-4. Tillsätt socker och sojasås. Blanda försiktigt tillbaka äggen i pannan och värm upp.
-5. Avsluta med vårlök och servera med ris.
+1. Koka 150 g torrt ris i riskokare enligt beskrivningen ovan.
+2. Vispa 220 g ägg med saltet. Stek till mjuk äggröra i hälften av rapsoljan och ställ åt sidan.
+3. Stek 500 g skurna tomater i resten av oljan 3–4 minuter. Tillsätt socker och soja.
+4. Lägg tillbaka äggen, värm och tillsätt skivad salladslök.
+5. Dela woken med all sås och hela satsen nykokt ris i tre portioner. Kyl eller återstek inte riset.
 
 ## Anteckningar
 
-- Välj mogna tomater för att skapa en saftig sås i pannan.
+Uppskattningen gäller endast dessa mängder och denna tillagning. Andra tillbehör eller varianter ger andra värden.

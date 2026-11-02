@@ -6,7 +6,7 @@ category: paaruoka
 language: en
 status: published
 servings: 3
-time_total_min: 20
+time_total_min: 30
 main_ingredient:
   - kananmuna
   - tomaatti
@@ -23,59 +23,50 @@ image:
   width: 1279
   height: 853
 ingredients:
-  - amount: 4
-    unit: piece
-    item: egg
-  - amount: 4
-    unit: piece
-    item: ripe tomato
-    note: "cut into wedges"
-  - amount: 2
-    unit: tbsp
-    item: neutral oil
-  - amount: 1
-    unit: tsp
-    item: sugar
-  - amount: 0.5
-    unit: tsp
-    item: salt
-  - amount: 1
-    unit: tbsp
-    item: soy sauce
-  - amount: 1
-    unit: piece
-    item: spring onions
-    note: in slices
-  - amount: 450
+  - amount: 220
     unit: g
-    item: cooked rice
-    note: for serving
+    item: shell-free egg
+  - amount: 500
+    unit: g
+    item: ripe tomatoes
+  - amount: 27
+    unit: g
+    item: rapeseed oil
+  - amount: 4
+    unit: g
+    item: sugar
+  - amount: 2.5
+    unit: g
+    item: salt
+  - amount: 15
+    unit: g
+    item: soy sauce
+  - amount: 15
+    unit: g
+    item: fresh spring onion
+  - amount: 150
+    unit: g
+    item: SunRice Jasmine Fragrant rice, dry
 source_language: fi
 source_recipe: reseptit/paaruoat/tomaatti-kananmuna-wokki.md
 translation_of: tomaatti-kananmuna-wokki
-carbs_net_per_serving_g: 38.93
-carbs_total_per_serving_g: 40.64
-protein_per_serving_g: 12.98
-fat_per_serving_g: 16.58
-
+carbs_net_per_serving_g: 47.28
+carbs_total_per_serving_g: 48.44
+protein_per_serving_g: 14.49
+fat_per_serving_g: 16.8
 ---
-
 # Chinese tomato-egg wok
 
-A quick home food classic combines juicy tomatoes and a soft egg in a lightly sweet wok.
+This dry-weighed version uses 150 g rice for three servings; it is not a conversion of the former 450 g cooked rice. Use bagged dry rice, not microwave rice. Cook in a ricecooker with the package water ratio and serve the whole batch freshly hot.
 
-## Description
+## Instructions
 
-A quick home food classic combines juicy tomatoes and a soft egg in a lightly sweet wok.
-
-## Preparation
-
-1. Beat the eggs lightly with salt.
-2. Heat half the oil in a pan. Fry the eggs until soft and set aside.
-3. Add the rest of the oil and fry the tomatoes for 3-4 minutes until they soften and become juicy.
-4. Add sugar and soy sauce. Carefully mix the eggs back into the pan and heat.
-5. Finish with spring onions and serve with rice.
+1. Cook 150 g dry rice in a ricecooker as described above.
+2. Beat 220 g egg with the salt. Scramble gently in half the rapeseed oil and set aside.
+3. Fry 500 g cut tomatoes in the remaining oil for 3–4 minutes. Add sugar and soy sauce.
+4. Return the eggs, heat through and add sliced spring onion.
+5. Divide the wok, all sauce and the entire freshly cooked rice batch into three servings. Do not chill or refry the rice.
 
 ## Notes
 
-- Choose ripe tomatoes to create a juicy sauce in the pan.
+The estimate applies only to these quantities and preparation. Other sides or preparation variants differ.

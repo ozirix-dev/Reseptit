@@ -1,3 +1,4 @@
+import {restorePreEHold} from './restore-pre-ehold';
 import assert from "node:assert/strict";
 import { readFile as actualReadFile } from "node:fs/promises";
 import path from "node:path";
@@ -18,6 +19,8 @@ import { parseMarkdown } from "../src/content/markdown";
 async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding: 'utf8'): Promise<string> {
  const text=await actualReadFile(filename,encoding);
  const relative=path.relative(path.resolve(import.meta.dirname,'../..'),String(filename)).replaceAll('\\','/');
+ const ehold=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-e-hold-release/historical-metadata.json'),'utf8'));
+ const eholdText=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-e-hold-release/historical-source-text.json'),'utf8'));if(Object.hasOwn(eholdText,relative))return eholdText[relative];
  const scopedText=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-scoped-c-release/historical-source-text.json'),'utf8'));if(Object.hasOwn(scopedText,relative))return scopedText[relative];
  const pre7Text=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-7/historical-source-text.json'),'utf8'));if(Object.hasOwn(pre7Text,relative))return pre7Text[relative];
  const pre6Text=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-6/historical-source-text.json'),'utf8'));if(Object.hasOwn(pre6Text,relative))return pre6Text[relative];
@@ -25,8 +28,8 @@ async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding
  const original=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-source-text.json'),'utf8'));if(Object.hasOwn(original,relative))return original[relative];
  const op142=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-operation142/historical-main.json'),'utf8'));
  const op142Text=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-operation142/historical-source-text.json'),'utf8'));if(Object.hasOwn(op142Text,relative))return op142Text[relative];
- if(relative==='docs/nutrition/glycemic-load-recipe-bindings.json'){const value=JSON.parse(text);for(const key of ['recipes','calculationInputs','calculationEvidence'])value[key]={...value[key],...op142.originalBindings[key]};return JSON.stringify(value);}
- if(relative==='docs/nutrition/glycemic-load-pilot-input.json'){const value=JSON.parse(text),ids=new Set(op142.recipeIds);return JSON.stringify({...value,recipes:value.recipes.filter((r:any)=>!ids.has(r.recipeId)).concat(op142.selectedInputs)});}
+ if(relative==='docs/nutrition/glycemic-load-recipe-bindings.json'){const value=JSON.parse(text);for(const key of ['recipes','calculationInputs','calculationEvidence'])value[key]={...value[key],...op142.originalBindings[key],...ehold.originalBindings[key]};return JSON.stringify(value);}
+ if(relative==='docs/nutrition/glycemic-load-pilot-input.json'){const value=JSON.parse(text),ids=new Set([...op142.recipeIds,...ehold.recipeIds]);return JSON.stringify({...value,recipes:value.recipes.filter((r:any)=>!ids.has(r.recipeId)).concat(op142.selectedInputs,ehold.selectedInputs)});}
  if(relative==='tmp/nutrition/audit.json'){const v=JSON.parse(text),old=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-7/main-baseline.json'),'utf8')).selectedNutritionInventory;return JSON.stringify({...v,inventory:v.inventory.map((r:any)=>old.find((x:any)=>x.recipe_id===r.recipe_id)??r)});}
  if(relative==='tmp/nutrition/glycemic-load-pilot.json')return JSON.stringify(await historicalSourceReviewView(relative,JSON.parse(text)));
  const match=relative.match(/^docs\/nutrition\/calculations\/(.+)\.json$/);
@@ -39,6 +42,11 @@ async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding
 const gk80HistoricalPromise:Promise<any>=readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical.json'),'utf8').then(JSON.parse);
 async function historicalSourceReviewView(name:string,value:any):Promise<any>{
   if(name!=='tmp/nutrition/glycemic-load-pilot.json')return value;
+  // Replay only the three newly integrated E cases for frozen historical assertions.
+  const eh=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-e-hold-release/historical-metadata.json'),'utf8'));
+  value=restorePreEHold(value);value.calculationInputs=value.calculationInputs.map((r:any)=>eh.selectedCalculationInputs.find((x:any)=>x.recipeId===r.recipeId)??r);
+  for(const key of ['sourceHashes','calculationInputHashes','calculationEvidenceHashes'])value[key]={...value[key],...eh[key]};
+  for(const key of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches'])value[key]=[...value[key].filter((id:string)=>!eh.recipeIds.includes(id)),...eh[key]].sort();
   // Pre142 replay is limited to these ten newly integrated recipes. The actual
   // current report and all133 original numeric hashes are checked separately.
   const op142=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-operation142/historical-main.json'),'utf8'));const op142Ids=new Set(op142.recipeIds);

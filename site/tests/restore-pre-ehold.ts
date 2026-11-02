@@ -1,0 +1,4 @@
+import {readFileSync} from 'node:fs';
+const baseline=JSON.parse(readFileSync(new URL('../../docs/nutrition/gk80-e-hold-release/main143-baseline.json',import.meta.url),'utf8'));
+/** Only for frozen historical release views; current146 regression is checked separately. */
+export function restorePreEHold(report:any){report.results=report.results.map((r:any)=>baseline.selectedResults.find((b:any)=>b.recipeId===r.recipeId)??r);report.summary={...report.summary,calculated:report.results.filter((r:any)=>r.status==='CALCULATED').length,insufficientSourceData:report.results.filter((r:any)=>r.status==='INSUFFICIENT SOURCE DATA').length};return report;}

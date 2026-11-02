@@ -8,78 +8,70 @@ status: published
 servings: 4
 time_total_min: 40
 main_ingredient:
-  - pasta
-  - munakoiso
+- pasta
+- munakoiso
 cooking_method:
-  - liesi
+- liesi
 difficulty: easy
 tags:
-  - "Mediterranean"
-  - "Sicilian"
-  - "pasta"
-  - "eggplant"
+- Mediterranean
+- Sicilian
+- pasta
+- eggplant
 image:
   src: paaruoat/pasta-alla-norma.webp
-  alt: Pasta alla Norma with tomato sauce, eggplant, basil and grated ricotta cheese
+  alt: Pasta alla Norma with aubergine, tomato, basil and grated pecorino
   width: 1279
   height: 853
 ingredients:
-  - amount: 350
-    unit: g
-    item: rigatoni or penne pasta
-  - amount: 1
-    unit: piece
-    item: eggplant
-    note: "diced"
-  - amount: 400
-    unit: g
-    item: crushed tomatoes
-  - amount: 2
-    unit: piece
-    item: a clove of garlic
-    note: in slices
-  - amount: 3
-    unit: tbsp
-    item: olive oil
-  - amount: 20
-    unit: g
-    item: fresh basil
-  - amount: 50
-    unit: g
-    item: salty ricotta
-    note: grated
-  - amount: 1
-    unit: tsp
-    item: salt
-  - amount: 0.25
-    unit: tsp
-    item: black pepper
+- amount: 350
+  unit: g
+  item: De Cecco Penne Mezzane Lisce n.140 pasta, dry
+- amount: 400
+  unit: g
+  item: aubergine
+- amount: 400
+  unit: g
+  item: crushed tomatoes
+- amount: 6
+  unit: g
+  item: fresh peeled garlic
+- amount: 40.5
+  unit: g
+  item: olive oil
+- amount: 20
+  unit: g
+  item: fresh basil
+- amount: 50
+  unit: g
+  item: Auricchio Pecorino Romano DOP cheese
+- amount: 5
+  unit: g
+  item: salt
+- amount: 0.5
+  unit: g
+  item: ground black pepper
 source_language: fi
 source_recipe: reseptit/paaruoat/pasta-alla-norma.md
 translation_of: pasta-alla-norma
-carbs_net_per_serving_g: 64.86
-carbs_total_per_serving_g: 70.84
-protein_per_serving_g: 12.66
-fat_per_serving_g: 11.56
-
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # Pasta alla Norma with aubergine
 
-The Sicilian pasta classic combines tomato sauce, fried eggplant, basil and salty ricotta.
+This uses the pecorino option allowed in the earlier recipe. Cook the named penne for 11 minutes;9-minute al dente, rigatoni, other cheeses or chilled pasta require separate estimates. All four nutrition values are withheld because the cheese polyol content is unverified.
 
-## Description
+## Instructions
 
-The Sicilian pasta classic combines tomato sauce, fried eggplant, basil and salty ricotta.
-
-## Preparation
-
-1. Sprinkle salt on the eggplant cubes and let them stand for 15 minutes. Pat dry.
-2. Fry the eggplant in olive oil in batches until golden brown. Set aside.
-3. Saute the garlic in a pan. Add crushed tomatoes, salt and pepper and simmer for 15 minutes.
-4. Cook the pasta in salted water according to the instructions on the package. Save a deciliter of boiling water.
-5. Add pasta and eggplant to the sauce. Stir; add boiling water if necessary. Finish with basil and grated ricotta.
+1. Dice 400 g aubergine, sprinkle with part of the measured salt, stand 15 minutes and pat dry.
+2. Fry the aubergine in batches in the listed olive oil until golden; set aside. Use all listed oil.
+3. Soften the garlic in the pan. Add crushed tomatoes, the remaining salt and pepper; simmer 15 minutes.
+4. Boil 350 g dry pasta in salted water for 11 minutes. Reserve 100 ml cooking water, then drain.
+5. Combine pasta, sauce and aubergine, adding cooking water as needed. Finish with basil and 50 g grated pecorino. Divide all food and sauce into four servings and serve immediately hot.
 
 ## Notes
 
-- Salty ricotta can be replaced with pecorino.
+The estimate applies only to these quantities and preparation. Other sides or preparation variants differ.
