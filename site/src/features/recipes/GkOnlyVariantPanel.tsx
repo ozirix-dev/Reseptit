@@ -18,6 +18,9 @@ export const gkScopeUi={
 export function gkOnlyValue(v:GkOnlyVariant,locale:RecipeLocale){
  if(!v.scenarioRange&&v.point!==null&&v.point<1)return gkScopeUi[locale].tiny;
  const n=new Intl.NumberFormat(locale,{maximumFractionDigits:2});
+ if(v.scenarioRange&&v.rangeDisplay==='OUTWARD_INTEGER') {
+  return `${n.format(Math.floor(v.scenarioRange.min))}–${n.format(Math.ceil(v.scenarioRange.max))}`;
+ }
  return v.scenarioRange?`${n.format(Math.floor(v.scenarioRange.min*10)/10)}–${n.format(Math.ceil(v.scenarioRange.max*10)/10)}`:`≈ ${n.format(v.point!)}`;
 }
 /** Display-only native units. A millilitre quantity never acquires a gram mass here. */
@@ -51,7 +54,7 @@ export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false}:{va
   {v.point!==null&&v.point<1&&v.omittedCho>0?<p>{gkScopeUi[locale].partial}</p>:null}<p>{t.low}</p>
   {v.scenarioRange?<p>{t.range}</p>:null}
   {v.codingKinds.includes('PLANT50')?<p>{t.plant}</p>:null}{v.codingKinds.includes('TRACE50')?<p>{t.trace}</p>:null}
-  <details><summary>{t.details}</summary><p>{{fi:'Ainesluettelon annosmäärä',en:'Servings for these amounts',sv:'Portioner för dessa mängder',th:'จำนวนที่สำหรับปริมาณนี้'}[locale]}: {n.format(servings??v.servings)}</p><ul>{v.ingredients.map((i,index)=>{const quantity=gkOnlyQuantity(v,index,servings??v.servings);return <li key={index}>{quantity?`${n.format(quantity.amount)} ${quantityUnit(quantity.unit,locale)}`:t.original} — {i.name[locale]}</li>;})}</ul><p>{t.prepare}</p><p>{gkOnlyPreparation(v,locale,servings)}</p></details>
+  <details><summary>{t.details}</summary><p>{{fi:'Ainesluettelon annosmäärä',en:'Servings for these amounts',sv:'Portioner för dessa mängder',th:'จำนวนที่สำหรับปริมาณนี้'}[locale]}: {n.format(servings??v.servings)}</p><ul>{v.ingredients.map((i,index)=>{const quantity=gkOnlyQuantity(v,index,servings??v.servings);return <li key={index}>{quantity?`${n.format(quantity.amount)} ${quantityUnit(quantity.unit,locale)}`:t.original} — {i.name[locale]}</li>;})}</ul>{v.standalonePreparation?null:<p>{t.prepare}</p>}<p>{gkOnlyPreparation(v,locale,servings)}</p></details>
   {v.sensitivity?<details><summary>{t.sensitivity}</summary><p>{n.format(Math.floor(v.sensitivity.min*1000)/1000)}–{n.format(Math.ceil(v.sensitivity.max*1000)/1000)} {t.per}</p><p>{t.sensitivityNote}</p></details>:null}
   <details><summary>{t.sources}</summary><ul>{v.sources.map((s,index)=><li key={index}>{s.url.startsWith('#')?<Link to={`${glycemicLoadPath(locale)}${s.url}`}>{s.title}</Link>:<a href={s.url} rel="noopener noreferrer">{s.title}</a>} — {s.note}</li>)}</ul></details>
   {!compact?<p><Link to={`${glycemicLoadPath(locale)}#${v.recipeId}`}>{t.method} ↗</Link></p>:null}

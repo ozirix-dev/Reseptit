@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "GK80_EXACT_PONGAL_B_SOURCE_SCENARIO_APPROVAL_2026_11_02",
+  "repository": "ozirix-dev/Reseptit",
+  "approvedInputs": {
+    "intialainen-ven-pongal": "88400041451f8120facd3394a151f79639d901cc4c8359f36859fe9251bc1345"
+  },
+  "reviewedContentCommit": "7572ef32db2651d8eb7f779e1da6a6b918668e09",
+  "reviewedCasePath": "docs/research/afcd-polyol-03/pongal-followup/cases.json",
+  "reviewedReportPath": "docs/research/afcd-polyol-03/pongal-followup.md",
+  "reviewedReportLfSha256": "8ea6d5d3e991fe5d2321bcbbf4ffc41f28caac8c67b8b6101a8e564f4f5b592e",
+  "reviewedPacketFilesLfSha256": {
+    "audit-pongal.py": "8aecab8c259af3f8efc69cfcf5c302d96c7380574f1a33d1c9a54f860b5ea1fc",
+    "cases.json": "06894ebbde210559add63903fb187ca0bd874eebc18cbd2c7c6edb5f9d8accd4",
+    "decimal-results.json": "8408d28f1ae9c8d1e132aa1d8bf71720ac2eb9890a12299a0a063f864f909d4c",
+    "engine-results.json": "65f24b1f5c7c0ec39a8995d986c864c6264c8486386b60efaa2ae1c9969ffc06",
+    "evaluate-pongal.mts": "16838cfb7c3978162e76a122c1ecadbf8840535990be2aa7339def6afbe4eb8f",
+    "method-impact.csv": "f2c39921b5c32e7339bdef53f839058b32127a03d147d5e70e4bf1b747b14b5d",
+    "recipe-dependencies.csv": "d7f18f4a13fe8964b4ad5b9d282062dee2629203c6046e1a94dc245239c38c69",
+    "shared-gates.json": "0a8715454b0b64822362e6aa3fc367c1a6e870f23ab87bed36ab70b2896e3b3d",
+    "sources.json": "750c89cc4dd2f62fb28718bfbdc00cd0b4b03fa007165117e256a520d9a5a3da",
+    "manifest.json": "1d98d470da716b843b95cbf037788fc0b10a419532504dfb42d46e2d48f84ea6"
+  },
+  "recordedAtUtc": "2026-11-02T21:30:01.054556+00:00",
+  "decisionSource": "Explicit user answer in this chat to scoped async question call_db2745b953804a80adc1986b65062e4d",
+  "userAnswer": "Kyllä, hyväksyn tarkan pongalpaketin myöhempään integraatioon",
+  "sourceAndContentApproved": true,
+  "existingBContractExactSourceApplicationsAccepted": true,
+  "newGenericGiDefaultAuthorized": false,
+  "acceptedVersions": [
+    {
+      "recipeId": "intialainen-ven-pongal",
+      "inputSha256": "88400041451f8120facd3394a151f79639d901cc4c8359f36859fe9251bc1345",
+      "originalRecipeSha256": {
+        "fi": "7ab0b5f0350e1e9631afbe1a3cad9d99b9e6788ec1ecbf83fd1e400a5e242763"
+      },
+      "sourceScenarioMin": "40.1722275",
+      "sourceScenarioMax": "45.60835",
+      "integerDisplay": {
+        "min": 40,
+        "max": 46
+      },
+      "omittedPositiveCho": 0,
+      "bindings": [
+        "Two original servings; dry white jasmine rice100g, whole dry green mung Vigna radiata150g, raw unsalted cashews20g and water700ml retained",
+        "Pepper1tsp uses native Fineli11177 TL2g; water uses Fineli922 own100g/dl",
+        "NEW separately weighed pure ghee14g, no claimed tablespoon equivalence; all ghee/cashews retained",
+        "Rice and whole mung cooked together fully soft, all liquid served; no cooked-yield or loss correction and no25min timing guarantee",
+        "Generic meat/filling instruction removed from this exact version; no added meat or omitted serving",
+        "Eight named source scenarios: AFCD74/Fineli79 dry-rice nativeCHO, reported boiled-whole-mung31.43/42, named cashew22/27; fixed congee80 and named pepper editorial trace50",
+        "Pirasath2012 reported31.43 only LOW old-study model reference, n22, reported75g digestibleCHO vs75g glucose; current-standard/repeated-reference compliance not established",
+        "Study25min drained green gram differs from fully soft mixed porridge retaining liquid; original age20–24 versus mean24.62 inconsistency retained",
+        "Earlier mung42 n7, congee80 and salted/roasted/halved cashew comparators remain LOW analogies with unquantified preparation/food mismatch",
+        "SD6.96, pongal45 pressure-cooked2:1 dhal recipe and diabetic90 are not range endpoints or calculation inputs"
+      ]
+    }
+  ],
+  "acceptedLimitations": [
+    "All positive B carbohydrate covered, no omission profile activated; pepper50 is editorial code, not measured GI",
+    "40–46 spans named source scenarios only, not confidence, biological, personal or full preparation bounds; analogical error unquantified",
+    "Native source inputCHO71.0981/73.5981g per serving does not authorize new macro publication or inherit original version macros",
+    "Later owner checks exact source/input/recipe seals, required locales, cooking instructions/time and GK-only macro-version compatibility"
+  ],
+  "displayPreference": {
+    "roundingStep": 1,
+    "lower": "floor(min source-scenario GK)",
+    "upper": "ceil(max source-scenario GK)",
+    "label": "GK-arvio {min}–{max} · mallinnettu",
+    "activation": false
+  },
+  "requiresIntegrationChecks": [
+    "GK_ONLY_CONTRACT_AND_MACRO_VERSION_COMPATIBILITY",
+    "SOURCE_INPUT_AND_ORIGINAL_RECIPE_HASHES_STILL_MATCH",
+    "OWNER_CHECKS_REQUIRED_LOCALES_AND_COOKING_TIME_PUBLIC_COPY",
+    "PLANNED_FUTURE_BATCH_THROUGH_NAMED_PUBLICATION_OWNER"
+  ],
+  "integrationAuthorizedForOwnerInLaterBatch": true,
+  "integrationOwner": "Named Codex Julkaisu owner of a separately scoped future batch",
+  "codex2ReleaseBranchWriteAuthorized": false,
+  "integratedAnywhere": false,
+  "published": false,
+  "publicationAuthorized": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "minorBOmissionProfileAuthorized": false,
+  "newStockLowChoGi50ProfileAuthorized": false,
+  "expertEstimateSourceTypeAuthorized": false,
+  "frozenResearchSnapshotPolicy": "Reviewed7572ef3 report, catalog, manifest, inputs and calculations retain exact pre-approval fields. This receipt overlays the one exact source/content/model-reference acceptance only; no release activation."
+}

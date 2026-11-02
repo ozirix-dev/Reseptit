@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "scope": "One already-indexed pongal ID; no new cohort, no GI default or B omission extension",
+  "sourceFilesLfSha256": {
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+  },
+  "pinnedGitFiles": [
+    {
+      "commit": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+      "path": "docs/nutrition/gk80-operation149/gi-sources.json",
+      "lfSha256": "1f7b9831179ca1dae27285bffa189a03a47e28018c946e60b438965abb9d880c"
+    },
+    {
+      "commit": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "lfSha256": "2ff56eb6af7a41c478001b839b94430d8c082b2408f39f9e73cc6a46eb26c4e1"
+    }
+  ],
+  "composition": [
+    {
+      "id": "11521",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "11521",
+      "name": "RIISI PITKÄJYVÄINEN, PUUROUTUMATON",
+      "availablePer100g": 79.0,
+      "process": "RAW",
+      "portionMasses": {
+        "DL": 85.0,
+        "RKL": 12.0
+      },
+      "nativeRowPythonJsonSha256": "aa4648df310dbb90f322134627e97a309c1fee937c6b5b0dea955a2e083a36cd",
+      "limitation": "Native available CHO point; no inferred total-polyol value. Rice is a generic regional long-grain composition proxy, not the jasmine lot analysis."
+    },
+    {
+      "id": "11177",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "11177",
+      "name": "MUSTAPIPPURI",
+      "availablePer100g": 38.31,
+      "process": "DRIE",
+      "portionMasses": {
+        "RKL": 6.5,
+        "TL": 2.0
+      },
+      "nativeRowPythonJsonSha256": "86f1c32056079fea25fdb3667d7c27c0ed6923b80dc34416db5638c746aff731",
+      "limitation": "Native CHOAVL and source-specific portion masses only; other macro/polyol fields unused."
+    },
+    {
+      "id": "922",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "922",
+      "name": "VESI, VESIJOHTOVESI",
+      "availablePer100g": 0.0,
+      "process": "X",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      },
+      "nativeRowPythonJsonSha256": "41972b8a17ac88e177afef853eea1ea77952f50a1f65f36ad4bf2ab36d31a22f",
+      "limitation": "Native CHOAVL and source-specific portion masses only; other macro/polyol fields unused."
+    },
+    {
+      "id": "30",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "30",
+      "name": "RUOKASUOLA, JODIOITU",
+      "availablePer100g": 0.0,
+      "process": "IND",
+      "portionMasses": {
+        "DL": 125.0,
+        "RKL": 20.0,
+        "TL": 6.5
+      },
+      "nativeRowPythonJsonSha256": "205f135e85c7f4b0490893082e770f693242c191518a163d48d427d6b61a0b2e",
+      "limitation": "Native CHOAVL and source-specific portion masses only; other macro/polyol fields unused."
+    },
+    {
+      "id": "F007682",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F007682",
+      "name": "Rice, white, uncooked",
+      "availablePer100g": 74,
+      "nativeRowPythonJsonSha256": "8e418483d9959c0721db5201f2b2092a53bf389c735921a45ad31e9bdafb5932",
+      "limitation": "Native available CHO without sugar alcohols, never with-minus-without total-polyol inference; generic regional food proxy. Dry mung source is whole, not cooked/dehulled."
+    },
+    {
+      "id": "F000446",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F000446",
+      "name": "Bean, mung, whole, dried, uncooked",
+      "availablePer100g": 41.9,
+      "nativeRowPythonJsonSha256": "017133a839110b3322a09a0a3330aee0a45017fdde3fb371d15327652bc1f90d",
+      "limitation": "Native available CHO without sugar alcohols, never with-minus-without total-polyol inference; generic regional food proxy. Dry mung source is whole, not cooked/dehulled."
+    },
+    {
+      "id": "F006088",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F006088",
+      "name": "Nut, cashew, raw, unsalted",
+      "availablePer100g": 22.9,
+      "nativeRowPythonJsonSha256": "50d2e824e92919ad15c1a96afd9cc7fbd7d5de30422719103057617e4e77f676",
+      "limitation": "Native available CHO without sugar alcohols, never with-minus-without total-polyol inference; generic regional food proxy. Dry mung source is whole, not cooked/dehulled."
+    },
+    {
+      "id": "F004205",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F004205",
+      "name": "Ghee, clarified butter",
+      "availablePer100g": 0,
+      "nativeRowPythonJsonSha256": "812aeda6b42cdb6face3c8dba632e9b3c1d458bda853a471c16d0d530d654d50",
+      "limitation": "Native available CHO without sugar alcohols, never with-minus-without total-polyol inference; generic regional food proxy. Dry mung source is whole, not cooked/dehulled."
+    }
+  ],
+  "giBindings": [
+    {
+      "id": "congee80",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        80
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "congee80",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 p46 item659; COFCO jasmine rice31.6g +250ml water steamed40min Thailand2016 n10 glucose2h UO18",
+      "limitation": "Source-backed reference point, not exact60min simmered recipe. Rice/water ratio and gelatinization differ; error not quantified.",
+      "nativeRowSha256": "c97653a48d11bb73e6db3a41aa2c87d243f4c01913d768330a4801a3e829814f",
+      "allowedCompositionIds": [
+        "F007682",
+        "11521"
+      ],
+      "sourceAdmission": "EXACT_NEW_RECIPE_APPLICATION_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "id": "mung42",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        42
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "mung42",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement2 p75 item3151; mung bean boiled in salted water, Pakistan2008 n7 glucose2h no repeated reference, 0/30/60/120min",
+      "limitation": "Khan2008; low-quality small human test. Soft porridge vs boiled bean is explicit new B preparation analogy; uncertainty not bounded by SEM4.",
+      "nativeRowSha256": "7d19a01361bbe36bb94e307b2a29ba606975a65d69264d3cfbb1fc7c2ea6b578",
+      "allowedCompositionIds": [
+        "F000446"
+      ],
+      "sourceAdmission": "EXACT_NEW_RECIPE_APPLICATION_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "id": "cashew22-27",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        22,
+        27
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "cashew22-27",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 item1431 salted Coles cashews GI22; Supplement2 items3238/3239 halves or roasted/salted GI27",
+      "limitation": "Named cashew comparators, not nut family mean. Target unsalted cooked garnish is a LOW food/preparation analogy; residual uncertainty outside envelope.",
+      "nativeRowSha256": "2ed2f96b51c67292a7b82cca8a07d7018f73f9c73a01080f93eb6ef5108e4ec4",
+      "allowedCompositionIds": [
+        "F006088"
+      ],
+      "sourceAdmission": "EXACT_NEW_RECIPE_APPLICATION_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "id": "trace50",
+      "kind": "PROPOSED_B_CODING",
+      "values": [
+        50
+      ],
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-lowcho50-v2",
+      "nativeRowSha256": "2bdac980b38c841b2f0d0d5783b30b6fe581ef0ab3136aa65c312df3f8c0b460",
+      "locator": "Published low-carbohydrate default50; project application EXTENSION only. Named culinary trace spice/seed garnish <=0.5g CHO each and <=1g aggregate per serving",
+      "limitation": "New editorial coding reference, GI uncertainty not source-bounded. Requires explicit owner method approval. GI0–150 sensitivity is separate, not a source interval.",
+      "allowedCompositionIds": [
+        "11177"
+      ],
+      "sourceAdmission": "EXACT_NEW_RECIPE_APPLICATION_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "id": "mung31.43",
+      "kind": "REPORTED_OLD_HUMAN_GI_MODEL_REFERENCE",
+      "values": [
+        31.43
+      ],
+      "allowedCompositionIds": [
+        "F000446"
+      ],
+      "sourceUrl": "https://doi.org/10.4038/gmj.v17i1.4357",
+      "locator": "Pirasath et al2012 Galle Medical Journal17(1) pp23–31; preparation p24, Table2 p26; boiled whole green gram Vigna radiata GI31.43 SD6.96, n22 healthy; reported75g digestible CHO vs75g glucose, half-hourly2h",
+      "limitation": "Reported old-study model reference only, not ISO26642-confirmed or target-meal measurement. Whole green gram boiled25min in excess water then drained; target long soft rice/whole-mung porridge retains all liquid. Study says age20–24 but reports mean24.62; repeated glucose reference not demonstrated. Native composition is independent; test food digestible-CHO basis not equated to AFCD CHO field. SD6.96 is not endpoint. Analogical processing and individual response error unquantified.",
+      "sourceAdmission": "OWNER_REVIEW_REQUIRED"
+    }
+  ],
+  "externalSources": [
+    {
+      "id": "pirasath2012",
+      "url": "https://doi.org/10.4038/gmj.v17i1.4357",
+      "downloadUrl": "https://storage.googleapis.com/jnl-sljo-j-gmj-files/journals/1/articles/4357/submission/proof/4357-1-15508-1-10-20120529.pdf",
+      "rawFile": "mung-primary.pdf",
+      "rawSha256": "544dee06e627c2d153fe89cba64eda4ade8340cb6f0a347c6470175dcfb173cd",
+      "visualPagesVerified": [
+        2,
+        4
+      ],
+      "selectedFacts": {
+        "food": "Vigna radiata whole green gram boiled25min then excess water drained",
+        "participants": 22,
+        "cohort": "healthy",
+        "reportedDigestibleCarbohydrateG": 75,
+        "glucoseReferenceG": 75,
+        "testDurationHours": 2,
+        "sampling": "half-hourly stated in abstract",
+        "gi": 31.43,
+        "sdNotEndpoint": 6.96,
+        "repeatedGlucoseConfirmed": false,
+        "iso26642Confirmed": false,
+        "ageReportingInconsistent": true
+      },
+      "sourceAdmittedToProduction": false
+    },
+    {
+      "id": "urooj2000-rejected-pongal-transfer",
+      "url": "https://doi.org/10.1017/S0007114505000611",
+      "rawFile": "urooj2000.pdf",
+      "rawSha256": "19dffea76c0bf00aff28c1192c822b67f327b9556e29fa7c85c2aa03a3ba6590",
+      "selectedFacts": {
+        "riceG": 50,
+        "greenGramDhalG": 25,
+        "oilG": 10,
+        "cookedWeightNotYieldConversionUsedG": 240,
+        "giHealthy": 45,
+        "healthyN": 8,
+        "healthySdNotEndpoint": 7,
+        "giDiabeticNotEndpoint": 90
+      },
+      "decision": "NOT_USED: source rice:dhal2:1 pressure-cooked roasted dhal differs from target100:150 whole beans with ghee and cashews. Do not assign by name or mix populations."
+    }
+  ],
+  "intervalSemantics": "Eight cross-product scenarios of2 native dry-rice CHO points x2 reported boiled-whole-mung GI means x2 named cashew GI means. Not8 independent studies, not source SEM/SD, not biological or all-preparation bounds. Existing black-pepper50 editorial coding sensitivity remains separate."
+}

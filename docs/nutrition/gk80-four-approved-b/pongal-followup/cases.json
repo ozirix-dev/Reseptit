@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "publicationAuthorized": false,
+  "profile": "EXISTING_STRICT_B_NAMED_FOOD_ANALOGIES_NO_OMISSIONS",
+  "displayPolicy": {
+    "kind": "OUTWARD_INTEGER_SOURCE_SCENARIO_ENVELOPE",
+    "roundingStep": 1,
+    "ownerPreferenceConfirmed": true,
+    "confidenceInterval": false,
+    "biologicalBound": false
+  },
+  "previousResearchInputSha256": "af1bcffe2111700c2bd3f91b9f3b7d72f493db1e18e896afd887be19188bf344",
+  "cases": [
+    {
+      "recipeId": "intialainen-ven-pongal",
+      "level": "B",
+      "servings": 2,
+      "paths": {
+        "fi": "reseptit/aamupalat/intialainen-ven-pongal.md"
+      },
+      "recipeSha256": {
+        "fi": "7ab0b5f0350e1e9631afbe1a3cad9d99b9e6788ec1ecbf83fd1e400a5e242763"
+      },
+      "candidateIngredients": [
+        {
+          "name": "dry white jasmine rice",
+          "grams": 100,
+          "compositionId": "F007682",
+          "giId": "congee80",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original100g rice. Explicit dry white-rice version; source rice-porridge analogy, not tested mixed pongal."
+        },
+        {
+          "name": "whole green mung beans, dry",
+          "grams": 150,
+          "compositionId": "F000446",
+          "giId": "mung42",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original150g preserved. Explicit whole dried green mung, not cooked-weight substitution or dehulled split dal. Entire source raw availableCHO retained; no guessed loss correction."
+        },
+        {
+          "name": "raw unsalted cashews before ghee toasting",
+          "grams": 20,
+          "compositionId": "F006088",
+          "giId": "cashew22-27",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Current original20g, not stale100g input. Cashew observations are salted/roasted/halves; target unsalted warmed garnish is LOW analogy."
+        },
+        {
+          "name": "ground black pepper",
+          "grams": 2,
+          "compositionId": "11177",
+          "giId": "trace50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original1tsp uses Fineli11177 native TL2g. Existing proposed B trace50, NOT a measured pepper GI; requires the same explicit method approval as existing pilot."
+        },
+        {
+          "name": "water",
+          "grams": 700,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original700ml water, existing source-specific water conversion1g/ml."
+        },
+        {
+          "name": "ghee",
+          "grams": 14,
+          "compositionId": "F004205",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Proposed explicitly weighed14g ghee instead of an asserted tablespoon density; availableCHO source0, no protein/fat or polyol claim."
+        },
+        {
+          "name": "pure table salt",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Computational source-CHO0 marker only; original salt-to-taste remains, amount not asserted0g."
+        }
+      ],
+      "preparationDecision": "NEW exact whole-green-mung version. Preserve100g dry white jasmine rice,150g whole dried green mung (Vigna radiata),20g raw unsalted cashews,700ml water and two servings. Rinse rice and whole mung, then cook together in all700ml water under a lid until both are fully soft; serve all liquid, no guessed soaking/cooking loss or cooked-yield substitution. Do not claim25min total time suffices for whole dried mung. Warm all20g cashews in separately weighed14g pure ghee, retain all fat and nuts in the porridge. Pepper uses existing native TL2g measure; salt-to-taste remains, source-zero sentinel is not0g salt. Remove unrelated generic meat/filling instruction; no added meat or unquantified serving. Rice porridge80, two boiled-whole-mung study means31.43/42 and cashew22/27 are LOW preparation/food analogies, not measured mixed pongal or biological bounds. No pressure-cooked-dhal45 transfer or new main-food GI50.",
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "originalIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisi"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "mungpapu"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "cashewpähkinä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "mustapippuri"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "gheetä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "originalIndexByCandidate": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "requiredDecisions": [
+        "NEW_REPORTED_MUNG31_43_MODEL_REFERENCE_WITH_OLD_PROTOCOL_LIMITATIONS",
+        "TWO_BOILED_MUNG_STUDY_MEANS_NOT_SD_ENDPOINTS",
+        "DRY_JASMINE_RICE_NATIVE_FINELI11521_AFCD_F007682_COMPOSITION_SCENARIOS",
+        "WHOLE_MUNG_FULLY_SOFT_ALL_LIQUID_RETAINED_PREPARATION_ANALOGY",
+        "PORRIDGE80_CASHEW22_27_AND_EXISTING_TRACE50_APPLICATION",
+        "EXACT_WEIGHED_GHEE14G_AND_NO_GENERIC_MEAT_CONTENT",
+        "GK_ONLY_MACRO_VERSION_LANGUAGE_AND_SOURCE_SEAL_OWNER_INTEGRATION"
+      ],
+      "publicationAuthorized": false,
+      "scenarios": [
+        {
+          "id": "F007682_MUNG31.43_CASHEW22",
+          "riceCompositionId": "F007682",
+          "mungGi": 31.43,
+          "cashewGi": 22
+        },
+        {
+          "id": "F007682_MUNG31.43_CASHEW27",
+          "riceCompositionId": "F007682",
+          "mungGi": 31.43,
+          "cashewGi": 27
+        },
+        {
+          "id": "F007682_MUNG42_CASHEW22",
+          "riceCompositionId": "F007682",
+          "mungGi": 42,
+          "cashewGi": 22
+        },
+        {
+          "id": "F007682_MUNG42_CASHEW27",
+          "riceCompositionId": "F007682",
+          "mungGi": 42,
+          "cashewGi": 27
+        },
+        {
+          "id": "11521_MUNG31.43_CASHEW22",
+          "riceCompositionId": "11521",
+          "mungGi": 31.43,
+          "cashewGi": 22
+        },
+        {
+          "id": "11521_MUNG31.43_CASHEW27",
+          "riceCompositionId": "11521",
+          "mungGi": 31.43,
+          "cashewGi": 27
+        },
+        {
+          "id": "11521_MUNG42_CASHEW22",
+          "riceCompositionId": "11521",
+          "mungGi": 42,
+          "cashewGi": 22
+        },
+        {
+          "id": "11521_MUNG42_CASHEW27",
+          "riceCompositionId": "11521",
+          "mungGi": 42,
+          "cashewGi": 27
+        }
+      ],
+      "inputSha256": "88400041451f8120facd3394a151f79639d901cc4c8359f36859fe9251bc1345"
+    }
+  ]
+}

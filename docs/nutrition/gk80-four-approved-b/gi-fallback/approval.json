@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "GK80_THREE_EXACT_B_SOURCE_SCENARIO_VERSIONS_APPROVAL_2026_11_02",
+  "repository": "ozirix-dev/Reseptit",
+  "approvedInputs": {
+    "intialainen-besan-chilla": "5c0942255538ff47e866006ff3fb40d44bd25abe5c30496c69cdcee8adccd01a",
+    "intialainen-pinaatti-paneer-chilla": "cdfff763f373d92f5142ac772b52068a2e453ebd56bcff5c29b507422c6a8d16",
+    "intialainen-mannasuurimoupma": "365f6eaff17867ea8fc415dd57af8d2ef91176e2c80239dfbc0d69ac2dc2d1cc"
+  },
+  "reviewedContentCommit": "31d2c3c9fa564745c07b61cb6209c7167d713b6d",
+  "reviewedCasePath": "docs/research/afcd-polyol-03/gi-fallback/cases.json",
+  "reviewedReportPath": "docs/research/afcd-polyol-03/gi-fallback-followup.md",
+  "reviewedReportLfSha256": "1fddad043d1c59e7bb69faad456cfee13d797e41b8603cf1a59521e32befbc44",
+  "reviewedPacketFilesLfSha256": {
+    "audit-fallback.py": "f7d0221bde7529e09023ea34d25f7adb38da4c32837568c5520dc7548c0fb549",
+    "cases.json": "fd2d6020b05e5565cbf242d46898ebf8ebb651355d76f408530df72c7457b95e",
+    "decimal-results.json": "c1a988d7bd66eb71d45298caa7c928327e6787698c316379ac644c58b495650e",
+    "display-proposals.json": "c5ec6a14ee23043d970c1e0596012c0d08d9114a18086197b959151bfe76d906",
+    "engine-results.json": "b1a766d7e0e11c59ddabad43eea41703c4447ba5c62be8d4f1acd3d55c7774c4",
+    "evaluate-fallback.mts": "3ff43202b293d593e47edc83acdbacff64a3231abbc9ffebdf9b532e73e8e7d5",
+    "method-impact.csv": "0e490c1c32d0bfbb765e9351d78d682cb2f9b33ba6adb0a8a4efc299ddfde283",
+    "recipe-dependencies.csv": "f8b89f6247c38c5237d53775edb2c1eaea2bb77e2db4727b7bd7f97f3da9c937",
+    "source-probe-decisions.csv": "4360d196e0c2d1697f5de6761303d3cb7e9b90bc99d902dbe0fb7e91a80cd2b2",
+    "sources.json": "c4e2b8dacc069de7aeb5312018af87d653b9b2deee44ee68e12aeb0528e17044",
+    "strategy-comparison.csv": "a5ddd4c741d6d2fad4164d58de6746c21c00a717f7cc727de4e96198c7bb8bde",
+    "manifest.json": "a46f380ce6646efabd7e501d4ee3fbf0620e6d8c5dc317c5eb38b51602a6265d"
+  },
+  "recordedAtUtc": "2026-11-02T20:54:06.678142+00:00",
+  "decisionSource": "Explicit user answer in this chat to scoped async question call_c6fb9457888b495a8d75b001a61f3df2",
+  "userAnswer": "Kyllä, hyväksyn nämä kolme tarkkaa B-versiota myöhempään integraatioon",
+  "sourceAndContentApproved": true,
+  "existingBContractExactSourceApplicationsAccepted": true,
+  "newGenericGiDefaultAuthorized": false,
+  "acceptedVersions": [
+    {
+      "recipeId": "intialainen-besan-chilla",
+      "inputSha256": "5c0942255538ff47e866006ff3fb40d44bd25abe5c30496c69cdcee8adccd01a",
+      "sourceScenarioMin": "9.4698",
+      "sourceScenarioMax": "11.1288",
+      "integerDisplay": {
+        "min": 9,
+        "max": 12
+      },
+      "bindings": [
+        "Two original servings;100g whole dry unhulled Cicer arietinum ground completely and all retained, not dehulled besan",
+        "Unfermented10min-rest thin pan-cooked cheela, source42 prepared-component benchmark",
+        "NEW batter water222.2ml replaces original100ml; NEW weighed oil16.7g is not a proven original-tablespoon conversion",
+        "Complete tomato100g/onion70g chutney with original6g fresh coriander included",
+        "Native AFCD dry-whole-chickpea38.5 and Fineli31218 CHOAVL46.4g/100g are two generic regional composition proxies"
+      ]
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "inputSha256": "cdfff763f373d92f5142ac772b52068a2e453ebd56bcff5c29b507422c6a8d16",
+      "sourceScenarioMin": "9.1305",
+      "sourceScenarioMax": "10.7895",
+      "integerDisplay": {
+        "min": 9,
+        "max": 11
+      },
+      "bindings": [
+        "Two original servings,100g whole unhulled dry Cicer and100g paneer retained; same222.2ml water/16.7g oil thin-pancake version",
+        "NEW spinach50g and cumin2g define original piece/spoon amounts without equivalence claims",
+        "Entire serving included: chutney15g fresh coriander+10g undiluted unsweetened lemon juice+10g water and20g edible peeled lemon",
+        "Existing named lemon11048/11557 scope in lowcho50-r4; not blanket fruit50",
+        "Existing B trace50 for cumin0.337gCHO/serving within0.5 individual/1g aggregate; editorial coding, not measured cuminGI",
+        "Two native dry-whole-chickpea composition scenarios retained; no original serving exclusion"
+      ]
+    },
+    {
+      "recipeId": "intialainen-mannasuurimoupma",
+      "inputSha256": "365f6eaff17867ea8fc415dd57af8d2ef91176e2c80239dfbc0d69ac2dc2d1cc",
+      "sourceScenarioMin": "26.146648",
+      "sourceScenarioMax": "26.836648",
+      "integerDisplay": {
+        "min": 26,
+        "max": 27
+      },
+      "bindings": [
+        "Two original servings,semolina100g,peas150g,curry leaves5g and water300ml retained",
+        "NEW onion30.8g and rapeseed oil12.3g; roast semolina2min and use192.3ml original water in named component,107.7ml for vegetables",
+        "Prepared semolina/onion/oil component69 from healthy11 Urooj2000; onion CHO counted within same unit once, not raw-semolina69 or whole-meal69",
+        "Original pea amount specified as plain frozen green pea before microwave heating; named McCain comparator42, native Fineli frozen composition proxy",
+        "NEW100g edible washed unpeeled carrot boiled with all liquid retained; named boiled-carrot32 and native raw-input composition proxy",
+        "Original yogurt-or-coconut-chutney serving option specified as NEW100g unsweetened plain3.9% yogurt, all included",
+        "IFCT G010 native analytical3.66gCHO/100g, not Table1 by-difference4.51; new named fresh-leaf application",
+        "Two native semolina points Fineli63.6/AFCD61.6gCHO/100g are generic source scenarios, not batch bounds"
+      ]
+    }
+  ],
+  "acceptedLimitations": [
+    "Batra reported42 admitted only as LOW prepared-component model reference:15 young women,sampling0/30/60/120min,single glucose reference,54.8g reported foodCHO vs50g glucose. Equicarbohydrate dose/current-standard compliance not asserted; no invented dose correction",
+    "Urooj healthy69 SD13 and diabetic67 are not recipe interval endpoints; older sparse-sampling protocol and unquantified preparation analogy remain",
+    "Named pea42 and carrot32 original unpublished UO5 observations in2021 systematic table; not category means or measured target-meal values",
+    "All positive B carbohydrate covered; no omissions. Existing dairy30/vegetable40/lemon50/trace50 codings remain editorial assignments where used",
+    "Integer envelopes only span selected compatible native source scenarios; not confidence/physiological/person-specific bounds. Unquantified analogy and processing errors remain outside range",
+    "Original gram amounts retained, but newly specified weighed content/oil/servings may not inherit old macros; GK-only macro-version and language checks required"
+  ],
+  "displayPreference": {
+    "roundingStep": 1,
+    "lower": "floor(min source-scenario GK)",
+    "upper": "ceil(max source-scenario GK)",
+    "label": "GK-arvio {min}–{max} · mallinnettu",
+    "userPreferenceQuestion": "call_674424a4a82248e18e9349e22bfebf84",
+    "userPreferenceAnswer": "Kokonaislukuväli, esimerkiksi 9–12 (suositus)",
+    "activation": false
+  },
+  "requiresIntegrationChecks": [
+    "GK_ONLY_CONTRACT_AND_MACRO_VERSION_COMPATIBILITY",
+    "SOURCE_INPUT_AND_ORIGINAL_RECIPE_HASHES_STILL_MATCH",
+    "LOCAL_PACKAGE_HAS_FI_ONLY: OWNER_CHECKS_REQUIRED_LOCALES_AND_PUBLIC_COPY",
+    "PLANNED_FUTURE_BATCH_THROUGH_NAMED_PUBLICATION_OWNER"
+  ],
+  "integrationAuthorizedForOwnerInLaterBatch": true,
+  "integrationOwner": "Named Codex Julkaisu owner of a separately scoped future batch",
+  "codex2ReleaseBranchWriteAuthorized": false,
+  "integratedAnywhere": false,
+  "published": false,
+  "publicationAuthorized": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "minorBOmissionProfileAuthorized": false,
+  "expertEstimateSourceTypeAuthorized": false,
+  "frozenResearchSnapshotPolicy": "Reviewed31d2c3c report, source catalog, manifest and three-case inputs retain their pre-approval fields and exact hashes. This receipt overlays only the scoped three source/content/model-reference approvals; display preference and source acceptance grant no activation/publication."
+}
