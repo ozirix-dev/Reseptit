@@ -1,8 +1,19 @@
 # Reseptit: yhteinen Cloudflare-siirtosuunnitelma
 
 Päivä: 2.11.2026. Tila: suunnitelma, ei käyttöönottoa.
-Kohde: `ozirix-dev/Reseptit`. Jäädytetty main: `583fdb91aeb12114f909412b9165fc3b02a6515d`.
+Kohde: `ozirix-dev/Reseptit`. Inventaarion jäädytetty main: `583fdb91aeb12114f909412b9165fc3b02a6515d`.
 Työhaara: `codex/cloudflare-images-plan-20261102`.
+
+Päivitetty 2.11.2026: Cloudflare-tilin lukevat havainnot, laaja toteutus- ja
+varmennusjärjestys sekä käyttäjän vahvistamat valinnat on yhdistetty tähän
+suunnitelmaan. GitHub Pagesin reseptisivut ohjataan onnistuneen käyttöönoton
+kanssa samassa julkaisuikkunassa uuteen osoitteeseen. Cloudflare-lisäkulujen
+kuukausitavoite on enintään 5 USD nykyisen Workers Paid -tilauksen päälle.
+Tämä PR tallentaa vain suunnitelman. Siirto toteutetaan myöhemmin erikseen.
+
+Luvut 2–3 ovat päivättyjä inventaariohavaintoja, eivät tulevan siirron
+lopullinen aineistolista. Luvut 13–20 täsmentävät tarkistetun lähtötilanteen,
+ensimmäisen toteutuksen sopimukset, vaiheet, tarkistukset ja palautuksen.
 
 Tämä suunnitelma yhdistää ravintoarvot, lähteet, reseptikuvat, julkaisemisen ja
 palautuksen yhdeksi julkaisuversioksi. Mainista ei löytynyt aiempaa D1/R2-suunnitelmaa;
@@ -14,17 +25,18 @@ Tämä dokumentti on ehdotus sen Cloudflare-seuraajaksi. Nykyinen julkaisu jatku
 | Osa | Tehtävä | Julkisuus |
 | --- | --- | --- |
 | Workers Static Assets | Esirenderöity reseptisivusto, JS/CSS, reittikohtainen julkaisu-JSON, favicon | Julkinen |
-| Worker | Rajattu ravintoarvojen luku-API tarvittaessa sekä uuden domainin yhteensopivuusreitit | Vain hyväksytyt julkaisut; hallintakirjoitukset erikseen suojattuja |
-| D1 | Versioidut ravintoarvot, lähdetietueet, määritelmät, laskentanäyttöviitteet, resepti–kuva-sidokset ja kuvametatiedot | Ei suoraa selainyhteyttä; rajattu julkaisu-API |
+| Worker | Uuden domainin vanhojen polkujen yhteensopivuus ja rajatut ohjaukset | Ei julkista kirjoitus- tai SQL-rajapintaa |
+| D1 | Versioidut ravintoarvot, lähdetietueet, määritelmät, laskentanäyttöviitteet, resepti–kuva-sidokset ja kuvametatiedot | Vienti buildia varten; ei selainyhteyttä eikä julkisen Workerin D1-bindingiä |
 | R2 `reseptit-media` | Julkaisuun hyväksytyt alkuperäiset WebP:t ja niiden optimoidut versiot | Oma kuvadomain ja CDN |
 | R2 `reseptit-private-archive` | Alkuperäismasterit, käyttämättömät kuvat, lähdeaineistot, D1-viennit ja palautusmanifestit | Yksityinen, ei kuvadomainia eikä `r2.dev`-julkisuutta |
 | Riippumaton kopio | Salattu palautuspaketti ja lähdekuvat Proton-varmistukseen | Yksityinen; avaimet K:-holvissa |
 
-Sivuston tavoitedomain on käyttäjän ilmoittama `recipavo.com`, ja kuvahostiksi
-ehdotetaan `kuvat.recipavo.com`. Lopullinen julkinen sivusto sijoittuu domainin
-juureen `https://recipavo.com/`. Bucket-nimet ovat ehdotuksia. Cloudflare-zonen
-asetuksia, domainin teknistä hallintaa, nykyistä tilausta, kiintiöiden vapaata
-osuutta tai DNS:ää ei ole tässä työssä varmennettu tai muutettu.
+Sivuston tavoitedomain on käyttäjän ilmoittama `recipavo.com`, ja kuvahosti on
+`kuvat.recipavo.com`. Lopullinen julkinen sivusto sijoittuu domainin juureen
+`https://recipavo.com/`. Resurssien suunnitellut nimet lukitaan luvussa 14.
+Cloudflare-hallinnasta luetut havainnot on kirjattu lukuun 13. Asetuksia ei ole
+muutettu eikä projektin resursseja luotu. Jaettujen kiintiöiden tulevaa vapaata
+osuutta ei päätellä yksittäisestä käyttötilanteesta.
 
 ```mermaid
 flowchart LR
@@ -211,8 +223,9 @@ D1:n riviraja on 2 MB, joten suuria laskentapaketteja ei tungeta yhteen BLOB-riv
 
 Julkinen staattinen sivusto rakennetaan hyväksytystä D1-snapshotista, ja tulos
 sisältää ravintoarvot sekä kuvaosoitteet HTML:ssä ja reitti-JSONissa. Jokainen
-sivun- tai kuvanlataus ei tee D1-kyselyä. Mahdollinen luku-API rajataan julkaistuun
-release-id:hen. Hallinta ei saa avata julkista SQL- tai kirjoitusrajapintaa.
+sivun- tai kuvanlataus ei tee D1-kyselyä. Ensimmäisessä toteutuksessa ei tehdä
+julkista ravintoarvo-API:a eikä D1-pohjaista editoria. Julkisella Workerilla ei
+ole D1-bindingiä. Hallinta ei avaa julkista SQL- tai kirjoitusrajapintaa.
 
 ## 6. URL-yhteensopivuus, oma domain ja välimuisti
 
@@ -257,8 +270,8 @@ Sisältöosoitteinen uusi versio ei tarvitse vanhan avaimen korvausta tai laajaa
 cache-purgea. Oikeuspoistoissa varaudutaan täsmälliseen CDN-purgeen ja aliaseston
 julkaisuun; immutable-selaimessa jo olevaa kopiota ei voida vetää takaisin.
 
-Static Assets palvelee sivut suoraan. Worker-first rajataan `/api/*`- ja
-kuvayhteensopivuuspolkuihin; sitä ei kytketä kaikelle liikenteelle. Tuntematon
+Static Assets palvelee sivut suoraan. Worker-first rajataan vanhojen `/Reseptit/*`- ja `/kuvat/*`-polkujen
+yhteensopivuuskäsittelyyn; sitä ei kytketä kaikelle liikenteelle. Tuntematon
 resepti-/kuvapolku palauttaa aidon 404:n, ei SPA:n 200-kuvavastausta.
 [Reititysmalli](https://developers.cloudflare.com/workers/static-assets/routing/advanced/),
 [staattisen jakelun laskutus](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/).
@@ -365,8 +378,10 @@ Nykyinen tyhjä `Reseptit-Backup`-paikka ei ole todiste toimivasta varmistuksest
 ## 10. Käyttömäärä ja kustannusarvio
 
 Hinnat tarkistettu Cloudflaren virallisista lähteistä 2.11.2026, USD ennen veroja.
-Tilin muiden projektien kulutus pienentää yhteistä vapaata kiintiötä; nykyistä
-käyttödataa tai tilin laskutusta ei luettu. Alla ovat skenaariot, eivät liikenne-ennuste.
+Tilin muiden projektien kulutus pienentää yhteistä vapaata kiintiötä. Tilin
+käyttönäkymien havaintoja on luvussa 13; ne eivät ole projektin lopullinen
+kustannus tai koko tilin laskutusauditointi. Alla ovat skenaariot, eivät
+liikenne-ennuste. Käyttäjän vahvistama lisäkulutavoite on luvussa 19.
 
 R2 Standard: 10 GB-month, 1 M Class A- ja 10 M Class B -operaatiota/kk sisältyy
 vapaaseen osuuteen. Ylittävä tallennus $0,015/GB-month, A $4,50/M,
@@ -397,7 +412,7 @@ Workers Static Assetsin suorat asset-pyynnöt ja tallennus ovat maksuttomia.
 Workers Paidin lähtöhinta on $5/kk; siihen sisältyy 10 M Worker-pyyntöä ja
 30 M CPU-ms/kk, ylitys $0,30/M pyyntöä ja $0,02/M CPU-ms. Free antaa
 100 000 Worker-pyyntöä/vrk; sitä ei tulkita samaksi kuin kuukausikiintiö.
-Maksettua tilausta ei oteta tässä työssä käyttöön.
+Workers Paid on tilillä jo aktiivinen. Tässä työssä tilausta ei muuteta.
 [Workers-hinnat](https://developers.cloudflare.com/workers/platform/pricing/),
 [Static Assets](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/).
 
@@ -416,8 +431,9 @@ kertaalleen välttää kymmenien kuvakirjastokopioiden kasvun. Jos koko R2-kulut
 nousisi 20 GB-monthiin ja vapaat 10 GB olisivat käytettävissä, tallennuksen
 lisäosa olisi noin $0,15/kk ennen muita operaatioita.
 
-Pieni staattinen toteutus voi pysyä ilmaisissa kiintiöissä; Paid-vaihtoehdon
-perusbudjetti on noin $5/kk ennen ylityksiä ja muita palveluita. Domainin
+Pieni staattinen toteutus voi mahtua tilin jäljellä oleviin sisältyviin kiintiöihin.
+Workers Paidin noin $5/kk perusmaksu on jo olemassa olevan tilauksen kustannus,
+eikä sitä lasketa tämän projektin uudeksi lisäkuluksi. Domainin
 rekisteröinti, riippumaton varmistustila, lokitus ja mahdolliset maksulliset
 CDN-ominaisuudet budjetoidaan erikseen. Cloudflare Imagesin maksullista
 muunnospalvelua ei tarvita valmiiksi tuotettujen R2-varianttien jakeluun.
@@ -430,8 +446,9 @@ Ensimmäinen toteutuserä on julkaisematon pilotti: pieni kuvaotos,
 muutama jo hyväksytty ravintoarvolaskelma, molempien bucketien käyttöoikeudet,
 yksi D1-vienti ja palautus. Vasta sen jälkeen valmistellaan koko mainin tuonti.
 Kuvien oikeudet, jaetun pho/shoyu-kuvan vastaavuus, PNG-masterin yhteys,
-recipavo.com- ja kuvadomainin tekninen kytkentä sekä säilytyksen kustannusraja
-ratkaistaan ennen julkista kytkentää.
+recipavo.com- ja kuvadomainin tekninen kytkentä ratkaistaan ennen julkista
+kytkentää. Kustannusraja ja GitHub Pagesin siirtymäkäytäntö on nyt valittu;
+niiden toteutus kuvataan luvuissa 16–19.
 Historialliset lisenssiltään rajoitetut ravintolähteet pysyvät erillään
 julkisesta manifestista ja API:sta.
 
@@ -443,8 +460,8 @@ sivustotestiä ei ajeta jokaiselle dataerälle; mahdolliset reititys- tai skeema
 tarkistukset kohdistetaan muutoksen todelliseen vaikutukseen.
 
 Tässä suunnittelutyössä tehtiin vain tiedostoinventaario, SHA-256-vertailu,
-metatietojen ja viittausten tarkistus sekä dokumentaation tarkistus.
-Ei kuvien siirtoa tai poistamista, ei varianttien generointia, sivustobuildia,
+metatietojen ja viittausten tarkistus, dokumentaation tarkistus sekä
+Cloudflare-hallinnan lukevat tarkistukset. Ei kuvien siirtoa tai poistamista, ei varianttien generointia, sivustobuildia,
 Cloudflare-resurssia, GitHub Actions -ajoa, mergeä tai deployta.
 
 ## 12. Nykyisen GitHub-version tehtävä ja GSC:n lähtötilanne
@@ -457,7 +474,8 @@ yksin todista, ettei vanhoja osoitteita olisi indeksoitu tai jaettu.
 GitHubista luetut tiedot 2.11.2026: repo on julkinen, oletushaara on `main`,
 Pages käyttää workflow-julkaisua ja sen ilmoitettu osoite on
 `https://ozirix-dev.github.io/Reseptit/`. Pagesin custom domain on asettamatta.
-Viimeisin Pages-deployment-tietue (`7479319566`, 1.11.2026 klo 23.24 Suomen aikaa)
+Aiemmassa lukevassa tarkistuksessa viimeisin Pages-deployment-tietue
+(`7479319566`, 1.11.2026 klo 23.24 Suomen aikaa)
 viittaa SHA:han `583fdb91aeb12114f909412b9165fc3b02a6515d`. Pelkkä deployment-tietue
 ei ole kaikkien tuotantosivujen tai -kuvien toimivuustodiste.
 
@@ -465,8 +483,8 @@ ei ole kaikkien tuotantosivujen tai -kuvien toimivuustodiste.
 | --- | --- | --- |
 | GitHub-repo ja historia | Säilyvät nykyisen kehityksen lähteenä; ei arkistointia tai siivousta | Säilyvät koodin, Markdown-reseptien, katselmointien ja julkaisuversioiden lähteenä |
 | GitHubin nykyiset kuvat | Säilyvät kokonaisina; ei Git-poistoja tai historian uudelleenkirjoitusta | Säilyvät ainakin siirtymän ja todistetun palautuksen ajan; Git-kuvakopioiden mahdollinen myöhempi vähentäminen on oma päätös |
-| GitHub Pages -sivusto | Jatkaa nykyisellä julkaisulla; tämän PR:n yhteydessä ei muuteta Pages-asetuksia tai deploy-workflowta | Viimeinen toimiva julkaisu jäädytetään palautuspaketiksi; yksi erillinen siirtymäjulkaisu voi säilyttää vanhat kuvaosoitteet ja ohjata reseptit recipavo.comiin |
-| `recipavo.com` | Vain suunnitelman kohde; ei resurssi-, DNS- tai liikennemuutoksia | Ainoa jatkuvasti ylläpidettävä julkinen reseptisivusto |
+| GitHub Pages -sivusto | Jatkaa nykyisellä julkaisulla; tämän PR:n yhteydessä ei muuteta Pages-asetuksia tai deploy-workflowta | Viimeinen toimiva julkaisu säilytetään palautuspakettina; reseptisivut ohjataan recipavo.comiin heti onnistuneen käyttöönoton yhteydessä, vanhat kuvat säilyttäen |
+| `recipavo.com` | Aktiivinen coming-soon Pages -sivusto; tässä työssä ei resurssi-, DNS- tai liikennemuutoksia | Ainoa jatkuvasti ylläpidettävä julkinen reseptisivusto |
 | Actions | Tämän dokumentaatio-PR:n commitit sisältävät `[skip ci]`; ei manuaalisia workflow-ajoja | Erillisen hyväksytyn käyttöönoton yhteydessä yksi julkaisuputki; vanha Pages-autodeploy poistuu käytöstä vasta sovitussa siirtymäjulkaisussa |
 
 Suositus on säilyttää GitHub-repo ja erottaa se GitHub Pages -hostingista.
@@ -476,15 +494,17 @@ Cloudflaren rinnalla toisi kaksi julkaistavaa versiota ilman osoitettua hyötyä
 
 Ennen mitään Pages-muutosta otetaan talteen täsmällinen julkaisu-SHA, staattinen
 julkaisupaketti, vanhojen HTML/JSON/kuva-URL:ien manifesti ja palautusohje.
-Palautuspaketille ehdotetaan vähintään 30 päivän käyttöönottoikkunaa;
-varmistusten muu säilytys noudattaa luvun 9 politiikkaa. GitHubin workflow-artifactin
+Palautuspaketti ja aiemmat julkaisut säilytetään vähintään 30 päivää
+käyttöönotosta. Tämä ei tarkoita 30 päivän rinnakkaista sisältöjulkaisua:
+käyttäjä valitsi vanhojen reseptisivujen ohjauksen heti käyttöönotossa.
+Varmistusten muu säilytys noudattaa luvun 9 politiikkaa. GitHubin workflow-artifactin
 vaihtuvaan säilytysaikaan ei perusteta ainoaa palautuskopiota.
 
 GitHub Pages ei tarjoa tämän sovelluksen hallittavaa HTTP-palvelinta, jolla
 vanhalle `github.io`-hostille voisi asentaa Cloudflare Worker -redirectin.
-Siirtymäjulkaisun sivukohtainen HTML-ohjaus ja näkyvä linkki sekä canonical
-uuteen vastaavaan reseptiin ovat mahdollinen myöhemmin toteutettava ratkaisu;
-sitä ei kuvata aitona HTTP 301:nä. Vanhojen kuvatavujen säilytys pitää aiemmat
+Siirtymäjulkaisu toteuttaa sivukohtaisen HTML-ohjauksen, näkyvän linkin ja
+canonicalin uuteen vastaavaan reseptiin heti onnistuneen Cloudflare-kytkennän
+jälkeen samassa julkaisuikkunassa. Tätä ei kuvata aitona HTTP 301:nä. Vanhojen kuvatavujen säilytys pitää aiemmat
 kuvaosoitteet käyttökelpoisina. Pelkkä README-linkin lisääminen ei ohjaa
 reseptisivuille saapuvaa käyttäjää.
 
@@ -521,3 +541,282 @@ python -X utf8 docs/cloudflare-migration/inventory-local-images.py D:/Projects/P
 Suunnitelman työpuu on erillinen
 `D:/Projects/tmp/reseptit-cloudflare-images-plan-20261102`. Kaikki tähän suunnitelmaan
 kuuluvat muutokset rajoittuvat tähän dokumenttiin ja `docs/cloudflare-migration/`-hakemistoon.
+
+
+## 13. Cloudflare-valmiuden lukevat havainnot 2.11.2026
+
+Lähde on käyttäjän kirjautunut [Cloudflare-hallinta](https://dash.cloudflare.com/2dda5d88f53563ddabfc97531c313ca1/recipavo.com).
+Havainnot ovat tämän päivän tilannekuva. Tunnusten arvoja ei luettu tai tallennettu
+suunnitelmaan. Uusia muutoksia edeltää aina uusi tilanne- ja kohdetarkistus.
+
+| Kohde | Todennettu havainto | Siirtovalmistelu myöhemmin |
+| --- | --- | --- |
+| Domain | `recipavo.com` Active, voimassa 24.10.2027 asti; zone Free, DNS Full setup | Domain on käytettävissä |
+| Apex ja www | Molemmat proxied CNAME -> `recipavo-coming-soon.pages.dev`, TTL Auto | Nykyinen Pages-kytkentä vaihdetaan luvun 18 mukaan |
+| Pages | `recipavo-coming-soon`, molemmat custom domainit Active ja SSL enabled; ei Git-yhteyttä | Nykyinen julkaisu ja kytkennät säilytetään palautusta varten |
+| Workers | Workers Paid aktiivinen; zoneen ei yhdistettyä Workeria eikä Worker-reittejä | Projektin Worker valmistellaan myöhemmin |
+| SSL | Universal `recipavo.com` ja `*.recipavo.com` Active, voimassa 22.1.2027 asti; varavarmenne myönnetty | TLS varmennetaan uudelleen kytkennässä |
+| HTTPS-asetukset | Full, automaattitila; Always Use HTTPS pois; TLS-minimi 1.0; TLS 1.3 ja Automatic HTTPS Rewrites päällä | HTTPS-pakotus ja TLS-minimi 1.2 ennen julkaisua |
+| D1 | Tilin ainoa tietokanta `marjavuori-db`, ei Reseptit/Recipavo-kantaa | Erillinen projektin tuotanto- ja stage-kanta |
+| R2 | Viisi muun käytön bucketia, yhteensä noin 3,35 GB; ei projektin media- tai arkistobucketia | Omat bucketit, ei muiden resurssien uudelleenkäyttöä |
+| Kuvadomain | `kuvat.recipavo.com` ei määritetty | Liitetään julkiseen R2:een Custom Domains -toiminnolla |
+| API-oikeudet | Tarkastettu Cloudflare Agent Token 2026-04-21 Active, D1/R2/Workers/Pages/DNS/SSL vain Read | Varsinaisten siirto- ja julkaisutunnusten oikeudet vielä todentamatta |
+| Varmistukset | Projektin resursseja ja palautusprosessia ei vielä olemassa | Varmistus ja palautusharjoitus ovat julkaisun ehtoja |
+
+Käyttönäkymässä D1:n tallennus oli 77,82 kB, lukurivejä 46 ja kirjoituksia 0.
+R2:ssa näkyi 228 Class A- ja noin 5,26 tuhatta Class B -operaatiota.
+Näiden palveluiden näkymissä laskutettava käyttö oli $0 kyseisellä jaksolla.
+Tästä ei päätellä koko Cloudflare-laskua tai projektin tulevaa hintaa.
+Muiden API-tokenien kirjoitusoikeuksia ei auditoitu: vain tarkastetun Agent-tokenin
+lukuoikeus on todistettu. Ei väitettä, ettei tilillä voisi olla sopivaa tunnusta.
+
+## 14. Ensimmäisen toteutuksen tekniset sopimukset
+
+### Resurssit ja eristys
+
+| Osa | Suunniteltu nimi / toteutus |
+| --- | --- |
+| Julkinen Worker ja Static Assets | `recipavo-web`, pääosoite `https://recipavo.com/` |
+| D1 | `reseptit-prod`; testikanta `reseptit-prod-stage` |
+| Julkinen media | `reseptit-media`; pilotin yksityinen testibucket `reseptit-media-stage` |
+| Yksityinen arkisto | `reseptit-private-archive`, ei custom domainia eikä r2.dev-julkisuutta |
+| Stage-Worker | `recipavo-web-stage`, erilliset stage-bindingit |
+| Varmistus | Julkisesta Workerista erotettu päivittäinen vientiprosessi |
+
+Resurssien ID:t todennetaan luomisen tai käyttöön ottamisen yhteydessä.
+Nimiristiriita pysäyttää luonnin; olemassa olevaa resurssia ei oteta käyttöön
+pelkän nimen perusteella. Julkisella Workerilla ei ole D1-, arkisto- eikä
+kirjoitustunnuksia. Stage-mediaa tarvittaessa lukeva binding kuuluu vain
+suojatulle stage-Workerille, ei tuotannon julkiselle Workerille.
+
+Nykyinen Vite/React/React Router -toteutus säilytetään. Osoitekonfiguraatio kattaa
+Viten basen, build-contentin, prerenderin, selaimen reitityksen ja sisällön latauksen.
+Tuotannon base on `/`, sivustohosti `https://recipavo.com` ja mediahosti
+`https://kuvat.recipavo.com`. Sitemap, robots, canonical, hreflang, OG, JSON-LD,
+preload ja srcset käyttävät samaa konfiguraatiota; erillisiä kovakoodattuja
+GitHub Pages -oletuksia ei jätetä tuotantopolulle.
+
+### Datan omistajuus ja yhteinen julkaisu
+
+Git säilyy toimituksellisena lähteenä. D1:een tuodaan hyväksytty, muuttumaton
+julkaisu. Build lukee täsmällisen julkaisun D1-viennin sekä saman Git-commitin
+reseptisisällön. Erillistä editoria tai julkista ravintoarvo-API:a ei tehdä.
+Julkisen sisältömallin nykyiset neljä ravintoarvokenttää ja niiden null-semanttiikka
+säilyvät. Siirto ei täydennä puuttuvia arvoja eikä muuta laskentamoottoria.
+
+Reseptiversion avain sisältää release-id:n, recipe_id:n ja kielen. Laskentamuistion
+sidos perustuu nykyiseen ainesosa-/annoshashiin. Tuonnissa säilytetään alkuperäiset
+arvot, yksiköt, tilat ja lähdemääritelmät; uusi tuontitila ei itsessään vahvista
+laskelman laatua. Lähtötilanteen puute erotetaan siirron aiheuttamasta virheestä.
+Suuret ja historialliset evidenssipaketit jäävät yksityiseen arkistoon.
+
+Release-id sitoo Git-SHA:n, skeemaversion, lukitut riippuvuudet, kaikki input- ja
+kuvamanifestit, D1-viennin, sivustopaketin, Worker-version ja varmennusraportin.
+Julkinen `/release.json` sisältää vain release-id:n, Git-SHA:n ja julkisen
+manifestin SHA-256:n. Ei sisäisiä resurssi-ID:itä, tunnuksia tai yksityisiä lähteitä.
+
+### Turvallinen ja toistettava tuonti
+
+Tuonti toimii vain eksplisiittisestä manifestista. Mediaerän rinnakkaisuus on
+aluksi neljä objektia ja enintään viisi uudelleenyritystä tilapäistä virhettä
+kohti viiveellä. Oikeusvirhe, SHA-ristiriita tai nimikollisio pysäyttää erän.
+Onnistumiset kirjataan erä- ja julkaisutunnisteella, jotta keskeytyksestä jatketaan
+ilman kaksoisobjekteja. Tunnuksia ja allekirjoitettuja URL:eja ei kirjata lokiin.
+
+Sama D1-julkaisu ei saa tuottaa kaksoisrivejä. Tunnisteeltaan sama mutta sisällöltään
+eri tietue pysäyttää tuonnin. Osittainen julkaisu pysyy prepared-tilassa.
+verified-tila edellyttää kaikkien riippuvuuksien onnistunutta vertailua.
+Vain täsmällisesti valittu verified-julkaisu kelpaa tuotantobuildiin.
+
+## 15. Myöhemmän toteutuksen vaiheistus
+
+| Vaihe | Työ | Valmistumisen näyttö |
+| --- | --- | --- |
+| 0: suunnitelman tallennus | Päivitetään vain tämä dokumentti samaan Draft-PR:ään | Dokumentaatiodiffi, ei Actions-ajoja tai Cloudflare-muutoksia |
+| 1: lähtötilanteen lukitus | Todetaan muiden töiden tilanne ja nimetään hyväksytty main-SHA | Tarkka input-joukko, ei keskeneräisten worktreeiden aineistoa |
+| 2: paikallinen valmistelu | Uusitaan inventaario; muodostetaan D1-, media-, oikeus-, URL- ja palautusmanifestit | Täydet SHA:t ja sidokset; muuttuneet tiedostot tutkittu |
+| 3: paikallinen sovitus | Parametrisoidaan osoitteet ja tehdään D1-tuonti sekä kuvaresolveri | Kohdennetut paikalliset tarkistukset läpi |
+| 4: eristetty pilotti | Käytetään stage-resursseja, pientä hyväksyttyä otosta ja suojattua previewta | Tuonti, uusinta-ajo, käyttöoikeudet ja palautus todistettu |
+| 5: koko julkaisu | Manifestiohjattu siirto, jokaisen objektin read-back, D1 ja lopullinen build | verified-julkaisu ja riippumattomat varmistukset valmiit |
+| 6: tuotantokytkentä | Kuvadomain ja Worker; perustarkistukset; GitHub Pages -ohjaukset samassa julkaisuikkunassa | Luvun 17 hyväksyntäehdot täyttyvät |
+| 7: seuranta | Heti, tunnin kuluttua sekä 1, 7 ja 30 päivän kohdalla | Toimivuus, varmistukset ja lisäkulut kirjattu |
+
+Pilottiin valitaan tavallinen kuva, suurin lähdekuva, jaettu reseptikuva,
+historiallinen alias sekä PNG-master vain yksityiseen arkistoon. Ravintoarvoista
+mukaan otetaan hyväksytty laskelma, puuttuvia arvoja sisältävä resepti ja kieliversiot.
+Paikallinen vertailu todistaa, että puutteet säilyvät puutteina.
+
+Esikatselu suojataan Cloudflare Accessilla ennen aineiston avaamista. Stage käyttää
+omia resurssejaan. Worker-version preview-URL ei yksin eristä resursseja:
+[Version URLs ja Access](https://developers.cloudflare.com/workers/versions-and-deployments/version-urls/).
+Pilotin jälkeen tuotantoartefaktin osoitteet ja kaikki manifestiviittaukset
+varmennetaan vielä lopullisella tuotantokonfiguraatiolla.
+
+Tuontia ei tehdä muutoksessa olevaan tiedostoon: jos paikallinen lähde muuttuu
+inventaarioluvun aikana, se jää pois hyväksytystä snapshotista, kunnes omistava
+istunto on saanut sen valmiiksi ja lähde on nimetty uudelleen.
+
+## 16. HTTPS, välimuisti ja GitHub Pagesin välitön ohjaus
+
+Tuotannossa Always Use HTTPS otetaan käyttöön ja TLS-minimiksi asetetaan 1.2.
+TLS 1.3 säilytetään päällä. HSTS-preloadia ei lisätä ensimmäisessä siirrossa.
+Vyöhykkeen nykyinen DNS ja asetukset luetaan uudelleen juuri ennen muutosta,
+jotta myöhemmin lisätyt muut palvelut eivät jää tarkistamatta.
+
+| Sisältö | Välimuistisopimus |
+| --- | --- |
+| Hash-nimetyt kuvat, JS ja CSS | Vuosi, immutable |
+| HTML, reitti-JSON ja muuttuvat julkaisuosoittimet | Uudelleenvalidointi tai enintään 300 sekunnin vanheneminen |
+| Vanhojen polkujen ohjaukset | Aluksi lyhyt välimuisti; pysyvä status vasta kartan varmennuttua |
+| Yksityinen arkisto ja virhevastaukset | Ei julkista pitkäaikaista välimuistia |
+
+Suora Static Assets -palvelu on ensisijainen. Worker-first kohdistetaan vain
+vanhojen polkujen yhteensopivuuskäsittelyyn, ei kaikkeen sivustoliikenteeseen.
+[Selective run_worker_first](https://developers.cloudflare.com/workers/static-assets/binding/).
+
+Käyttäjä valitsi **ohjauksen heti onnistuneen käyttöönoton yhteydessä**.
+GitHub Pagesille valmistellaan etukäteen sivukohtainen siirtymäjulkaisu, jossa
+on HTML-ohjaus, näkyvä linkki ja canonical vastaavaan Recipavo-reseptiin.
+Kielipolut ja query-/fragmenttitiedot säilytetään siltä osin kuin kyseinen
+osoitesopimus niitä käyttää; ulkoisia ohjauskohteita ei hyväksytä URL-parametreista.
+Vanhoja kuvia ja tunnettuja variantteja ei poisteta eikä korvata eri tavuilla.
+
+GitHub Pagesin nykyinen julkaisumalli tarvitsee Actions-ajon. Välttämätön
+siirtymäjulkaisu ja mahdollinen Pages-palautus tarvitsevat myöhemmän erillisen
+valtuutuksen; nykyinen ajokielto on edelleen voimassa. Jos kielto jatkuu,
+tuotantosiirtoa ei aloiteta tämän heti-ohjauksen sisältävällä suunnitelmalla.
+Cloudflare-julkaisuun ei liitetä automaattista Git-buildia tässä dokumentaatio-PR:ssä.
+
+## 17. Tarkistusmatriisi ja hyväksymiskriteerit
+
+| Tarkistus | Hyväksymiskriteeri |
+| --- | --- |
+| Kohteen identiteetti | Repo-guard PASS oikeassa erillisessä worktreessä; oikea repo, haara ja main-SHA |
+| Syötteet | Main-, lähde-, laskenta-, oikeus- ja kuvamanifesti saman julkaisun mukaiset |
+| Ravintoarvot | Ei siirron aiheuttamia muutoksia neljään julkaistuun arvoon tai puuttuvuuksiin |
+| Lähdeketju | Hyväksyttyjen laskelmien lähteet ja input-hashit täsmäävät |
+| Alkuperäiset | Jokainen säilytettävä tiedosto löytyy; takaisinluettu SHA-256 täsmää |
+| Variantit | SHA, mitat, MIME, tavumäärä ja encoder-asetukset vastaavat manifestia |
+| Resepti–kuva-sidokset | Ei uusia puuttuvia sidoksia; kielikohtaiset alt-tekstit säilyvät |
+| Toistettavuus | Uusinta-ajo ei monista rivejä tai ylikirjoita eri sisältöä |
+| Katkennut tuonti | Jatkaminen onnistuu; keskeneräinen julkaisu ei tule näkyviin |
+| URL-yhteensopivuus | Kaikilla tunnetuilla vanhoilla sivu- ja kuvapoluilla määritelty lopputulos |
+| 404 ja ohjaukset | Aito 404, ei silmukoita, ei tuntemattoman reitin etusivu-200-vastausta |
+| SEO | Canonical, hreflang, sitemap, OG, JSON-LD ja robots käyttävät oikeita hosteja |
+| Julkinen/yksityinen | Arkistoon ei anonyymiä pääsyä; salaisuuksia tai yksityistä lähdeaineistoa ei buildissa |
+| Julkaisuversio | HTML, reitti-JSON, media ja release.json vastaavat samaa julkaisua |
+| Varmistus ja palautus | SQL-vienti ja media palautuvat testikohteeseen; riippumaton salattu paketti aukeaa |
+| Budjetti | Lopullisesta koosta ja tilin jäljellä olevista kiintiöistä laskettu lisäkulutavoite täyttyy |
+
+Toteutusvaiheessa ajetaan yksi lopullinen build sekä muuttuneeseen malliin,
+ravintoarvon vientiin, kuviin, reititykseen ja SEO-tulosteeseen kohdistuvat tarkistukset.
+Koko julkaistun reittijoukon tiedosto- ja metatietovertailu tehdään koneellisesti.
+Selainotos kattaa neljä kieltä, mobiilin ja työpöydän, haun, annosmuutoksen,
+kielenvaihdon ja kuvan latauksen. Tuotannossa käytetään rajattua HTTP- ja
+selainotosta. Koko sivustoa ei kuormiteta toistuvilla selaintesteillä eikä
+laajoja testisarjoja ajeta jokaiselle kuva- tai dataerälle.
+
+Tämän dokumentin tallennuksessa ei ajeta näitä tulevan toteutuksen tarkistuksia,
+vaan vain dokumentin rakenne-, linkki- ja diff-tarkistus.
+
+## 18. Tuotantokytkentä ja palautusohje
+
+Ennen kytkentää säilytetään nykyiset DNS-tietueet, Pages-custom-domainit,
+HTTPS-asetukset, tuotantojulkaisut ja palautuskomennot. Domainmuutoksia ei
+kuvata atomiseksi vaihdoksi. Käyttöönotto tehdään valvotussa julkaisuikkunassa.
+
+1. Todetaan lopullinen verified-julkaisu, media ja molemmat varmistuskopiot.
+2. Liitetään hyväksytty julkinen media R2:n kuvadomainiin. Tarkistetaan TLS,
+   MIME, SHA-täsmäys, GET/HEAD ja välimuistin toiminta.
+3. Irrotetaan apexin nykyinen Pages-domainkytkentä ja sen CNAME vasta tässä
+   vaiheessa; liitetään `recipavo.com` Workerin Custom Domainiksi.
+4. `www` irrotetaan Pagesista ja toteutetaan proxied DNS-tietueella sekä
+   vyöhykkeen ohjaussäännöllä apexiin, polku ja kysely säilyttäen.
+5. Tarkistetaan pääsivu, neljä kieliversiota, ravintoarvot, kuvat, 404 ja release-id.
+6. Vasta onnistuneen tarkistuksen jälkeen julkaistaan valmistellut GitHub Pagesin
+   siirtymäohjaukset samassa julkaisuikkunassa. Vanhat kuvaosoitteet testataan.
+
+Cloudflare ei salli Custom Domainin lisäämistä olemassa olevan CNAME-tietueen päälle.
+`www`-ohjaus tarvitsee proxied-tietueen; toteutetaan Cloudflaren dokumentoimalla
+originless-tietueella ja ohjaussäännöllä, ei jäljelle jäävällä Pages-kytkennällä.
+[Custom Domains, CNAME-rajoite ja www-ohjaus](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/).
+
+Kytkentä keskeytetään heti, jos havaitaan väärät ravintoarvot, yksityisen aineiston
+vuoto, puuttuvia julkaisukuvia, TLS-virhe tai keskeisten reittien toimimattomuus.
+Jos uusi domain ei läpäise perustarkistuksia viidessä minuutissa, domainkytkentä
+palautetaan lähtötilanteeseen. Pages-ohjauksia ei julkaista epäonnistuneen
+Cloudflare-tarkistuksen jälkeen.
+
+| Häiriö | Palautus |
+| --- | --- |
+| Worker-/asset-virhe | Edellinen varmennettu Worker- ja asset-versio |
+| Julkaisun datavirhe | Edellinen release-id; vanhoja rivejä ei muuteta uusiksi |
+| Ensimmäisen siirron epäonnistuminen | Coming-soon-domainkytkentä ja GitHub Pagesin aiempi täysi julkaisu |
+| Tietokantavaurio | SQL-vienti erilliseen palautuskantaan; varmennus ennen käyttöönottoa |
+| Cloudflare-tilin menetys | Riippumattomasta paketista koodi, tietokanta, media ja julkaisutiedot |
+
+Palautus ei poista uuden julkaisun aineistoa tutkinnan alta. Edelliset objektit,
+release-rivit ja paketit säilytetään vähintään ensimmäisen 30 päivän ajan.
+Git-kuvien tai historian vähentäminen ei kuulu tähän toteutukseen.
+
+## 19. Varmistusajot, kustannusraja ja seuranta
+
+D1:n looginen vienti tehdään erillisellä varmistusprosessilla päivittäin klo 00.00
+UTC sekä ennen jokaista julkaisu- tai skeemamuutosta. Vientiprosessi voidaan
+rakentaa Cloudflaren Workflows-mallilla; se ei ole julkisen sivuston rajapinta.
+Sen oikeudet rajataan tarvittavaan D1-vientiin ja yksityisen arkiston kirjoitukseen.
+[Cloudflaren D1-varmistusohje](https://developers.cloudflare.com/d1/reference/time-travel/).
+Ajon onnistuminen kirjataan vasta SQL-paketin ja manifestin varmistuttua.
+Epäonnistunut varmistus estää seuraavan julkaisun, ei nykyisen sivuston palvelua.
+
+Jokaisesta julkaistavasta versiosta tehdään lisäksi salattu Proton-kopio ennen
+liikennekytkentää. Paikallinen tiedosto tai synkronointikuvake ei yksin riitä:
+paketti ladataan riippumattomasta palvelusta takaisin, puretaan ja tarkistetaan.
+Julkaisun mukana säilyvät tarvittavat salauksen palautusohjeet, mutta yksityinen
+purkuavain pysyy K:-holvissa ja sen erillisessä palautusjärjestelyssä.
+Tavoitteet RPO 24 h ja RTO 4 h ovat voimassa vasta onnistuneen harjoituksen jälkeen;
+riippumattoman kopion ajantasaisuus varmistetaan jokaiselle julkaistulle versiolle.
+
+Käyttäjän vahvistama lisäkulujen tavoite on **enintään 5 USD/kk nykyisen Workers
+Paid -tilauksen päälle**, ennen veroja ja erillisiä domain-/Proton-maksuja.
+Tilin nykyinen noin 3,35 GB:n R2-käyttö ei ole Recipavon lähtökustannus eikä
+10 GB-month -vapaan kiintiön täsmällinen käyttöaste. Tallennusluokat,
+laskutusjakson kertymä ja muiden projektien kulutus tarkistetaan ennen siirtoa.
+
+Budjettiin kuuluvat media, D1, arkistot, varmistusten operaatiot/Workflows ja
+mahdollinen lokitus. Lopullinen koko mitataan; vientien esimerkkikoko ei ole
+todennettu tietokannan koko. Cloudflare Images -tilausta tai maksullista
+kuvamuunnospalvelua ei oteta tämän toteutuksen edellytykseksi.
+
+Kun kuukausiennuste lisäkuluille saavuttaa 2,50 USD, kasvun syy tutkitaan.
+Viiden dollarin ennusteessa keskeytetään uudet vapaaehtoiset maksulliset
+laajennukset ja korjataan kustannuksen aiheuttaja. Tämä ei ole automaattinen
+laskutuskatto eikä syy pysäyttää varmuuskopiointia tai nykyistä sivustoa.
+Kulut erotellaan resurssimittareista ja verrataan ennen siirtoa kirjattuun
+lähtötasoon; koko tilin laskua ei esitetä Recipavon kuluna.
+
+Seuranta tehdään heti, tunnin kuluttua sekä 1, 7 ja 30 päivän kohdalla:
+release-id, avainsivut, kuvat, uudet 404/5xx-virheet, ohjaukset, CDN-osumat,
+R2-operaatiot, D1-käyttö, viimeisin varmistus ja arvioidut lisäkulut.
+GSC:lle vahvistetaan omistajuus, toimitetaan uusi sitemap ja tehdään pieni
+URL-tarkistusotos. Historiadataa ei odoteta eikä sen puutteesta päätellä,
+ettei vanhoja linkkejä tarvittaisi.
+
+## 20. Tallennuksen ja myöhemmän aloituksen rajat
+
+Tämä dokumentti on yksi yhteinen suunnitelma; inventaariot säilyvät omina,
+päivättyinä todistusaineistoinaan. Dokumentaatio tallennetaan olemassa olevaan
+Draft-PR:ään #172 repo-guardin kirjoitus-, commit- ja push-operaatioilla.
+PR säilyy Draftina. Commitissa käytetään `[skip ci]` ja ennen pushia luetaan
+nykyiset workflow-käynnistimet. Pushin jälkeen varmennetaan head-SHA ja
+siihen liittyvien Actions-ajojen puuttuminen. PR:n otsikon tai kuvauksen
+muokkausta ei tehdä suoralla GitHub-mutaatioilla ohi repo-guardin.
+
+Suunnitelman tallennuksessa ei muuteta kuvia, reseptejä, lähderekisteriä,
+GK80-/SOURCE-01-aineistoa, sivustokoodia, workflowta tai Cloudflare-asetuksia.
+Ei buildia, varianttien generointia, pilottiresursseja tai tuotantokytkentää.
+
+Myöhempi toteutus alkaa vasta erikseen valtuutettuna. Ennen sitä tarkistetaan
+hyväksytty main-snapshot, rinnakkaisten töiden tilanne, kuvien oikeudet,
+käyttöoikeudet ja välttämättömän Pages-julkaisun ajolupa. Tuntematonta tietoa
+selvitetään havaintona; sitä ei hyväksytä oletusarvolla tai massalatauksella.
