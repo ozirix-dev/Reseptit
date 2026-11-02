@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "role": "CODEX_JULKAISU_HANDOFF",
+  "mainInputsVerifiedAt": "1276116d8bd4c84fc62ededebc8304a73c1cc9e1",
+  "publicBaseline": {
+    "numeric": 187,
+    "denominator": 326,
+    "observationCommit": "d87927f7a307637c356f1adb29ebda503e520741"
+  },
+  "conditionalAfterIntegrationAndPublication": 191,
+  "gapTo261AfterPublication": 70,
+  "scope": "Exact approved current A variants only. Integrating owner verifies localized copy, recipe-source consistency and publication gates.",
+  "publicationAuthorized": false,
+  "recipes": [
+    {
+      "recipeId": "paella-valenciana",
+      "gkCalculatedPart": 40.35,
+      "inputSha256": "5e9c7deff4c545411210ed1c5979ff29c0c63e37c746f1cc9fcc192d11b9fa69",
+      "recipePaths": {
+        "fi": "reseptit/paaruoat/paella-valenciana.md",
+        "en": "kaannokset/en/paaruoat/paella-valenciana.md",
+        "sv": "kaannokset/sv/paaruoat/paella-valenciana.md",
+        "th": "kaannokset/th/paaruoat/paella-valenciana.md"
+      },
+      "reviewedRecipeSha256Lf": {
+        "fi": "49089d94833037456fa7f21b7e9b258a531c731db6f0344b2a789add6b96b3dd",
+        "en": "08774b35d965bf8664f489d6f2ee29b902ffdc927a4aea2d4ddc59716a17b50f",
+        "sv": "a2c5e9185073eebddb9233ba94bd19e3672231cdb55a3ac831b592ad4a454ca5",
+        "th": "4bb2dd4171bf2ba9e71f06c925a3f6b029427fcd35cce246c36d0706bbc684fa"
+      },
+      "reviewedPacketCommit": "9e7b21e8967db8641d27679cd3add757d1e194cc",
+      "reviewedPacketDirectory": "docs/research/afcd-polyol-03/current-a-cap-route",
+      "approvalReceiptCommit": "a75f984f17453a31455c6fd2d863932063cbc879",
+      "approvalReceiptPath": "docs/research/afcd-polyol-03/current-a-cap-approval.json"
+    },
+    {
+      "recipeId": "kana-tagine-sitruunalla",
+      "gkCalculatedPart": 21.05,
+      "inputSha256": "1d9e7a0b626d42571ef29d35a0732982e21f9b94cff8472b9b52a8a824d42c7c",
+      "recipePaths": {
+        "fi": "reseptit/paaruoat/kana-tagine-sitruunalla.md",
+        "en": "kaannokset/en/paaruoat/kana-tagine-sitruunalla.md",
+        "sv": "kaannokset/sv/paaruoat/kana-tagine-sitruunalla.md",
+        "th": "kaannokset/th/paaruoat/kana-tagine-sitruunalla.md"
+      },
+      "reviewedRecipeSha256Lf": {
+        "fi": "1efaed05eda7723792938f24021539622d044cfa24263c4bacad1eaddb939f49",
+        "en": "16f7bb7d26274894dd47e3c41e15685d4d32db6feaab94b5e7b151f4db98f0e8",
+        "sv": "eb2745df4d7ddaee0c3b7dbb235db8aec044f2e799b0c7061e2dd4788bc41950",
+        "th": "4ddc78d021931c5f72f84061ab0c9b325de90cefeb851a60f49ac87e2ef7ac9a"
+      },
+      "reviewedPacketCommit": "9e7b21e8967db8641d27679cd3add757d1e194cc",
+      "reviewedPacketDirectory": "docs/research/afcd-polyol-03/current-a-cap-route",
+      "approvalReceiptCommit": "a75f984f17453a31455c6fd2d863932063cbc879",
+      "approvalReceiptPath": "docs/research/afcd-polyol-03/current-a-cap-approval.json"
+    },
+    {
+      "recipeId": "hernekeitto-savupotkalla",
+      "gkCalculatedPart": 16.22,
+      "inputSha256": "ed3041f5514e3668a93361f9f5c353d38530f9a88a7db07650d2fce46fb61990",
+      "recipePaths": {
+        "fi": "reseptit/paaruoat/hernekeitto-savupotkalla.md"
+      },
+      "reviewedRecipeSha256Lf": {
+        "fi": "5ecde580ab6f4707451004339aecf82bb956d9a32bfed7851e6fd9c862d2bd6d"
+      },
+      "reviewedPacketCommit": "9e7b21e8967db8641d27679cd3add757d1e194cc",
+      "reviewedPacketDirectory": "docs/research/afcd-polyol-03/current-a-cap-route",
+      "approvalReceiptCommit": "a75f984f17453a31455c6fd2d863932063cbc879",
+      "approvalReceiptPath": "docs/research/afcd-polyol-03/current-a-cap-approval.json"
+    },
+    {
+      "recipeId": "uunimakkara-sipulipedilla",
+      "gkCalculatedPart": 0.26,
+      "inputSha256": "726315e676d5a36776e2cab4b9e75e3478e5b0c900e1230d4fbb183bb7650ae3",
+      "recipePaths": {
+        "fi": "reseptit/paaruoat/uunimakkara-sipulipedilla.md"
+      },
+      "reviewedRecipeSha256Lf": {
+        "fi": "4bc6f751fc46af1fcb7b72419438cc55fd8132b6893d74ddb65a9b732089b092"
+      },
+      "reviewedPacketCommit": "042ed2c73eb8046104fb173f80a0696ea98a4a95",
+      "reviewedPacketDirectory": "docs/research/afcd-polyol-03/sausage-a-route",
+      "approvalReceiptCommit": "c4db68b4ca1433eb5cfc05459c04ac15bf252348",
+      "approvalReceiptPath": "docs/research/afcd-polyol-03/sausage-a-approval.json"
+    }
+  ]
+}
