@@ -12,17 +12,17 @@ main_ingredient:
 cooking_method:
   - liesi
 servings: 4
-carbs_net_per_serving_g: 3.17
-carbs_total_per_serving_g: 3.34
-protein_per_serving_g: 31.83
-fat_per_serving_g: 53.44
+carbs_net_per_serving_g: 2.99
+carbs_total_per_serving_g: 3.09
+protein_per_serving_g: 31.73
+fat_per_serving_g: 53.45
 time_total_min: 35
 difficulty: lätt
 tags:
-  - "finsk husmanskost"
-  - "lågkolhydrat"
-  - "köttfärsbiffar"
-  - "gräddsås"
+  - finsk husmanskost
+  - lågkolhydrat
+  - köttfärsbiffar
+  - gräddsås
 image:
   src: paaruoat/jauhelihapihvit-kermakastikkeella.webp
   alt: Nötfärsbiffar i pepprig gräddsås med gröna bönor och blomkålspuré
@@ -31,46 +31,53 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: nötfärs
-  - amount: 1
-    unit: st
-    item: ägg
-  - amount: 0.5
-    unit: dl
-    item: vispgrädde
-  - amount: 1
-    unit: st
-    item: liten lök
+    item: nötfärs, 17 % fett
+  - amount: 55
+    unit: g
+    item: ägg utan skal
+  - amount: 50
+    unit: g
+    item: vispgrädde till biffarna, 38 % fett
+  - amount: 30
+    unit: g
+    item: skalad gul lök
     note: finriven
-  - amount: 1
-    unit: tsk
+  - amount: 5
+    unit: g
     item: salt
-  - amount: 0.5
-    unit: tsk
-    item: svartpeppar
-  - amount: 1
-    unit: msk
+  - amount: 1.15
+    unit: g
+    item: malen svartpeppar till biffarna
+  - amount: 14
+    unit: g
     item: smör
     note: för stekning
-  - amount: 2
-    unit: dl
-    item: vispgrädde
+  - amount: 200
+    unit: g
+    item: vispgrädde till såsen, 38 % fett
     note: för sås
-  - amount: 1
-    unit: dl
-    item: köttbuljong
-  - amount: 1
-    unit: tsk
-    item: Dijonsenap
-  - amount: 0.5
-    unit: tsk
-    item: svartpeppar
+  - amount: 100
+    unit: g
+    item: färdig utspädd köttbuljong
+  - amount: 5
+    unit: g
+    item: French's Dijon Mustard, amerikansk produkt 32 oz
+  - amount: 1.15
+    unit: g
+    item: malen svartpeppar till såsen
     note: för sås
 source_language: fi
 source_recipe: reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md
 translation_of: jauhelihapihvit-vhh-kermakastikkeella
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
-
 # Mjölfria köttfärsbiffar med gräddsås
 
 saftiga nötfärsbiffar och gräddsås tillagad i en panna ger välbekant husmanskost till bordet utan ströbröd eller vetemjöl.
@@ -90,3 +97,9 @@ Biffar får sin struktur från ägg och köttfärs. Såsen tjocknar långsamt ge
 ## Anteckningar
 
 - Om buljongen är salt, smaka av såsen innan du tillsätter ytterligare salt.
+
+GK och näringsvärden gäller endast dessa vägda ätliga ingredienser och detta antal portioner. GK är en modellerad uppskattning med LÅG tillförlitlighet: GI-koderna är inte mätningar av denna maträtt. Små dokumenterade utelämnanden bidrar till osäkerheten. Föreslagna tillbehör ingår inte i beräkningen. Byte av produkt eller mängd kräver en ny uppskattning.
+
+Senapen avser French’s Dijon US 32 oz (GTIN 00041500741284). Etikettens avrundade nollor behandlas inte som verkliga nollvärden.
+
+Buljongens sammansättning använder en LOW Fineli-proxy för färdig utspädd köttbuljong. All angiven buljong ingår i portionerna.

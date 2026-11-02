@@ -1,0 +1,1696 @@
+{
+  "recipeIds": [
+    "jauhelihapihvit-vhh-kermakastikkeella",
+    "ropa-vieja",
+    "siskonmakkarakeitto-juurekset",
+    "nakkikeitto-kukkakaalilla",
+    "nakkikastike-kukkakaalimuusi",
+    "lahi-ita-menemen-sumakilla",
+    "liha-juureskeitto-perunaton",
+    "vhh-letut",
+    "vhh-korvapuustit"
+  ],
+  "selectedInputs": [
+    {
+      "recipeId": "liha-juureskeitto-perunaton",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "naudan keittolihaa",
+          "grams": 700,
+          "fineliRecordId": "afcd-F000514-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "naudan keittolihaa maps to afcd-release-3 record F000514; state: raw lean beef shin."
+        },
+        {
+          "name": "vettä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound ≤0 g available carbohydrate/serving, below the 1 g GL cutoff."
+        },
+        {
+          "name": "lanttua",
+          "grams": 200,
+          "fineliRecordId": "afcd-F009021-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "lanttua maps to afcd-release-3 record F009021; state: raw peeled swede.",
+          "foodKey": "vegetables",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Swede is matched to the published broad vegetable-category mean (GI 66); not a swede-specific measurement, low confidence."
+        },
+        {
+          "name": "porkkanaa",
+          "grams": 150,
+          "fineliRecordId": "fineli-300-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "porkkanaa maps to fineli-release-20 record 300; state: raw carrot.",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "juuriselleriä",
+          "grams": 150,
+          "fineliRecordId": "fineli-311-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "juuriselleriä maps to fineli-release-20 record 311; state: raw celeriac.",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
+        },
+        {
+          "name": "laakerinlehteä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+        },
+        {
+          "name": "kokonaista mustapippuria",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+        },
+        {
+          "name": "silputtua persiljaa",
+          "grams": 8,
+          "fineliRecordId": "afcd-F006321-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific tablespoon mass: 4 g/rkl for silputtua persiljaa.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound ≤0 g available carbohydrate/serving, below the 1 g GL cutoff."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-letut",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kananmunaa",
+          "grams": 220,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "name": "maustamatonta tuorejuustoa",
+          "grams": 100,
+          "fineliRecordId": "fineli-11571-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 11571; source state: plain 11% cream cheese.",
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "mantelijauhoa",
+          "grams": 50,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 50 g almond flour; 4 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+          "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+          "foodKey": "almond-meal",
+          "preparationKey": "pan-fried-in-recipe-no-approved-gi"
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 100,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "1 dl = 100 g for water and Fineli cream DL measure.",
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "erytritolia",
+          "grams": 12,
+          "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass estimate for erytritolia."
+        },
+        {
+          "name": "voita paistamiseen",
+          "grams": 4.5,
+          "fineliRecordId": "fineli-500-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass estimate for voita paistamiseen."
+        },
+        {
+          "name": "ripaus suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "AJO 1.7: prior culinary mass/omission assumption is not verified. Original recipe quantity stays unchanged; no source-backed gram conversion or maximum carbohydrate amount is established for this row.",
+          "excludedReason": "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-korvapuustit",
+      "servings": 8,
+      "ingredients": [
+        {
+          "name": "mozzarella-raastetta",
+          "grams": 150,
+          "fineliRecordId": "fineli-29239-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 29239; source state: fresh 20% mozzarella.",
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "maustamatonta tuorejuustoa",
+          "grams": 50,
+          "fineliRecordId": "fineli-11571-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 11571; source state: plain 11% cream cheese.",
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "mantelijauhoa",
+          "grams": 120,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 120 g almond flour; 8 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+          "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+          "foodKey": "almond-meal",
+          "preparationKey": "baked-in-recipe-no-approved-gi"
+        },
+        {
+          "name": "psylliumia",
+          "grams": 8,
+          "fineliRecordId": "afcd-F007502-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass estimate for psylliumia."
+        },
+        {
+          "name": "kananmunaa",
+          "grams": 55,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "name": "voita täytteeseen",
+          "grams": 30,
+          "fineliRecordId": "fineli-500-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "name": "erytritolia täytteeseen",
+          "grams": 24,
+          "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass estimate for erytritolia täytteeseen."
+        },
+        {
+          "name": "kanelia",
+          "grams": null,
+          "fineliRecordId": "afcd-F002963-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "AJO 1.7: original 1 tbsp cinnamon; prior 15 g conversion is unverified. Fineli #11184 has no portion mass; no invented density.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "rkl",
+            "massGrams": null
+          }
+        },
+        {
+          "name": "kananmunaa voiteluun",
+          "grams": 55,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Per-unit mass estimate for kananmunaa voiteluun; edible-state basis documented."
+        }
+      ]
+    },
+    {
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "naudan jauhelihaa",
+          "grams": 600,
+          "massEvidence": "Recipe-listed edible mass.",
+          "fineliRecordId": "fineli-11562-2026-10-25",
+          "giRecordId": null
+        },
+        {
+          "name": "kananmunaa",
+          "grams": 55,
+          "massEvidence": "1 egg × Fineli #858 KPL_M 55 g",
+          "fineliRecordId": "fineli-858-2026-10-25",
+          "giRecordId": null
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 50,
+          "massEvidence": "0.5 dl × Fineli #631 100 g/dl",
+          "fineliRecordId": "fineli-631-2026-10-25",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        },
+        {
+          "name": "sipulia",
+          "grams": 30,
+          "massEvidence": "1 small onion × Fineli #335 KPL_S 30 g AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "fineliRecordId": "fineli-335-2026-10-25",
+          "giRecordId": null,
+          "foodKey": "onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
+        },
+        {
+          "name": "suolaa",
+          "grams": 6.5,
+          "massEvidence": "1 tsp × Fineli #30 6.5 g/tsp",
+          "fineliRecordId": "fineli-30-2026-10-25",
+          "giRecordId": null
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 1,
+          "massEvidence": "Recipe-listed edible mass.",
+          "fineliRecordId": "fineli-11177-2026-10-25",
+          "giRecordId": null
+        },
+        {
+          "name": "voita",
+          "grams": 14,
+          "massEvidence": "1 tbsp × Fineli #500 14 g/tbsp",
+          "fineliRecordId": "fineli-500-2026-10-25",
+          "giRecordId": null
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "massEvidence": "2 dl × Fineli #631 100 g/dl",
+          "fineliRecordId": "fineli-631-2026-10-25",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        },
+        {
+          "name": "lihalientä",
+          "grams": 100,
+          "massEvidence": "1 dl × Fineli #29 100 g/dl; diluted beef broth category proxy.",
+          "fineliRecordId": "fineli-29-2026-10-25",
+          "giRecordId": "soups-category-mean-gi-49",
+          "foodKey": "soup",
+          "preparationKey": "soup-category",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        },
+        {
+          "name": "Dijon-sinappia",
+          "grams": 5,
+          "massEvidence": "1 tsp × Fineli #28 5 g/tsp",
+          "fineliRecordId": "fineli-28-2026-10-25",
+          "giRecordId": null
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 1,
+          "massEvidence": "Recipe-listed edible mass.",
+          "fineliRecordId": "fineli-11177-2026-10-25",
+          "giRecordId": null
+        }
+      ]
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "nakkeja",
+          "grams": 350,
+          "fineliRecordId": "fineli-7600-release-20",
+          "giRecordId": null,
+          "massEvidence": "Frankfurter-style sausage represented by boiled nakki, Fineli record 7600; no brand or fat class is specified."
+        },
+        {
+          "name": "kukkakaalia",
+          "grams": 500,
+          "fineliRecordId": "fineli-322-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Raw cauliflower; Fineli record 322.",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        },
+        {
+          "name": "varsiselleriä",
+          "grams": 100,
+          "fineliRecordId": "fineli-339-release-20",
+          "giRecordId": null,
+          "massEvidence": "Raw celery stalk; Fineli record 339.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.275,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "purjoa",
+          "grams": 80,
+          "fineliRecordId": "fineli-337-release-20",
+          "giRecordId": null,
+          "massEvidence": "Raw leek; Fineli record 337.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.48,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "pieni sipuli",
+          "grams": 70,
+          "fineliRecordId": "fineli-335-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 70 g per kpl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.84,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "lihalientä",
+          "grams": 800,
+          "fineliRecordId": "fineli-29-release-20",
+          "giRecordId": "soups-category-mean-gi-49",
+          "massEvidence": "Ingredient-specific household measure conversion: 100 g per dl; recipe quantity converted to edible mass.",
+          "giMatchEvidence": "Broad soups category mean from International Tables 2021 used as a low-confidence analogue for diluted beef stock retained in the finished soup/sauce; not a stock-specific test."
+        },
+        {
+          "name": "laakerinlehti",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+        },
+        {
+          "name": "tuoretta persiljaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+        }
+      ]
+    },
+    {
+      "recipeId": "nakkikastike-kukkakaalimuusi",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "nakkeja",
+          "grams": 400,
+          "fineliRecordId": "fineli-7600-release-20",
+          "giRecordId": null,
+          "massEvidence": "Frankfurter-style sausage represented by boiled nakki, Fineli record 7600; no brand or fat class is specified."
+        },
+        {
+          "name": "pieni sipuli",
+          "grams": 70,
+          "fineliRecordId": "fineli-335-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 70 g per kpl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.84,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-631-release-20",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient-specific household measure conversion: 100 g per dl; recipe quantity converted to edible mass.",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        },
+        {
+          "name": "lihalientä",
+          "grams": 100,
+          "fineliRecordId": "fineli-29-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 100 g per dl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.75,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "Dijon-sinappia",
+          "grams": 2,
+          "fineliRecordId": "fineli-28-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.0705,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+        },
+        {
+          "name": "kukkakaalia",
+          "grams": 600,
+          "fineliRecordId": "fineli-322-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Raw cauliflower; Fineli record 322.",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        },
+        {
+          "name": "voita",
+          "grams": 40,
+          "fineliRecordId": "fineli-500-release-20",
+          "giRecordId": null,
+          "massEvidence": "Butter; Fineli record 500.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.08,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+        }
+      ]
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "servings": 6,
+      "ingredients": [
+        {
+          "name": "naudanpaistia tai flank steak -lihaa",
+          "grams": 900,
+          "fineliRecordId": "fineli-718-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ropa vieja alternative resolved to the listed beef roast option; Fineli record 718.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "keltasipulia",
+          "grams": 100,
+          "fineliRecordId": "fineli-335-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 100 g per kpl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.7999999999999999,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "vihreää paprikaa",
+          "grams": 120,
+          "fineliRecordId": "fineli-387-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 120 g per kpl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.5,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "punaista paprikaa",
+          "grams": 160,
+          "fineliRecordId": "fineli-386-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific household measure conversion: 160 g per kpl; recipe quantity converted to edible mass.",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-398-release-20",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Crushed tomatoes; Fineli record 398.",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        },
+        {
+          "name": "lihalientä",
+          "grams": 500,
+          "fineliRecordId": "fineli-29-release-20",
+          "giRecordId": "soups-category-mean-gi-49",
+          "massEvidence": "Ingredient-specific household measure conversion: 1 g per ml; recipe quantity converted to edible mass.",
+          "giMatchEvidence": "Broad soups category mean from International Tables 2021 used as a low-confidence analogue for diluted beef stock retained in the finished soup/sauce; not a stock-specific test."
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 9,
+          "fineliRecordId": "afcd-F004193-release-3",
+          "giRecordId": null,
+          "massEvidence": "Garlic clove set to 3 g edible mass per clove.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.153,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "juustokuminaa",
+          "grams": 2,
+          "fineliRecordId": "afcd-F003327-release-3",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.11233333333333334,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "kuivattua oreganoa",
+          "grams": 2,
+          "fineliRecordId": "afcd-F006281-release-3",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.08800000000000001,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "laakerinlehteä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small culinary spice; omitted under the pilot below-1 g/serving rule.",
+          "estimatedAvailableCarbohydratePerServingG": 0.05,
+          "negligibleAssumption": "One leaf shared by six servings; estimated contribution is less than 0.05 g available carbohydrate per serving."
+        },
+        {
+          "name": "vihreitä oliiveja",
+          "grams": 60,
+          "fineliRecordId": "fineli-34972-release-20",
+          "giRecordId": null,
+          "massEvidence": "Pitted green olives in brine; Fineli record 34972.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "valkoviinietikkaa",
+          "grams": 15,
+          "fineliRecordId": "fineli-929-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.012499999999999999,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        }
+      ]
+    },
+    {
+      "recipeId": "lahi-ita-menemen-sumakilla",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "kananmuna",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 110 g, mapped to KANANMUNA, KUORETON (raw edible egg, shell removed)."
+        },
+        {
+          "name": "tomaatti",
+          "grams": 125,
+          "fineliRecordId": "fineli-352-release-20",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Recipe-listed 125 g, mapped to TOMAATTI (raw tomato).",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw",
+          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "vihreä paprika",
+          "grams": 170,
+          "fineliRecordId": "fineli-387-release-20",
+          "giRecordId": null,
+          "massEvidence": "One recipe-listed pepper represented by Fineli KPL_M 170 g standard portion estimate (size not specified; not weighed), mapped to PAPRIKA, VIHREÄ (raw green bell pepper). AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
+          "foodKey": "green-pepper",
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
+        },
+        {
+          "name": "sumakki",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "siskonmakkaraa",
+          "grams": 400,
+          "fineliRecordId": "fineli-30369-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 400 g, mapped to RAAKAMAKKARA, SISKONMAKKARA (raw siskonmakkara fresh sausage; Fineli available carbohydrate 0.908 g/100 g)."
+        },
+        {
+          "name": "lihalientä",
+          "grams": 1000,
+          "fineliRecordId": "fineli-29-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 1000 g, mapped to LIHALIEMI, LAIMENNETTU (diluted beef stock)."
+        },
+        {
+          "name": "lanttua",
+          "grams": 250,
+          "fineliRecordId": "fineli-303-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 250 g, mapped to LANTTU (raw rutabaga).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "porkkanaa",
+          "grams": 150,
+          "fineliRecordId": "fineli-300-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 150 g, mapped to PORKKANA (raw medium carrot, edible portion).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "juuriselleriä",
+          "grams": 100,
+          "fineliRecordId": "afcd-F002384-release-3",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 100 g, mapped to Celeriac, peeled, raw (raw peeled celeriac).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "foodKey": "onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
+        },
+        {
+          "name": "laakerinlehti",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+        },
+        {
+          "name": "silputtua persiljaa",
+          "grams": 4,
+          "fineliRecordId": "fineli-333-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 4 g, mapped to PERSILJA (fresh parsley).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+        }
+      ]
+    }
+  ],
+  "originalBindings": {
+    "recipes": {
+      "jauhelihapihvit-vhh-kermakastikkeella": "698c0441ea581d84174cedc8b128dd0602df3174727f4016d4ca39a714ac6d1c",
+      "lahi-ita-menemen-sumakilla": "0790d81ba8dc71954d30395a249c3f0c9d59ef242ea53302ef69b5b74dd0684b",
+      "liha-juureskeitto-perunaton": "c3cf74c185a9b353d34cb3d2245f98a9b2a513ec652119bd83c41f1c3007a8c5",
+      "nakkikastike-kukkakaalimuusi": "91758ce92f99c100b270946d8465aad2e8a7fbe09c04f91b843f023e7f076f10",
+      "nakkikeitto-kukkakaalilla": "10dc930e24158282c32a1670ed76cab503206124d232b6461af82e6629aa966f",
+      "ropa-vieja": "c764e8d60e6759ce83a9b429b59f9a09c28eaac57535cdbce93d0f0d037ead10",
+      "siskonmakkarakeitto-juurekset": "46b22753ae9becfc377d4adc611093a588abbfa07add97d0f73070a860709f38",
+      "vhh-korvapuustit": "e2b1b2426a5e217c5dfac662bcff55b7ea2874b94d89f2d4791070dc3f8aeec5",
+      "vhh-letut": "b7c5737b999719a5dc36be836b3e07fd27040a3836c1721517a1669a5bd4571e"
+    },
+    "calculationInputs": {
+      "liha-juureskeitto-perunaton": "e257742f9bf00a43e1cb75224ab792590be6e01c932e4e5429c0eb10df93da51",
+      "vhh-letut": "1ef7b6579dcf2735456df19e73ff98bca10e6a1a81565c6d3eb45c8a7ec5a447",
+      "vhh-korvapuustit": "4dc459ce3368abd355b9287f844dd088be65a79e90e1b71bb0b458d9fb1bc7cf",
+      "jauhelihapihvit-vhh-kermakastikkeella": "6f8776bd6a2dd14c08bfcffe33d281070078b374d6cd0488e9afeb45509e99fc",
+      "nakkikeitto-kukkakaalilla": "1b35309c4f46139df050cfce8dda9c1dcd7fce16de0d39faf85c8bf7144a40bf",
+      "nakkikastike-kukkakaalimuusi": "b8e060855b99d241beb64da4f6d378807f5286eb84cd53d755e7d80fd20faa56",
+      "ropa-vieja": "971deb5d08bbd2c23e648317378e30ace840e1974a4c55f9e891ce139e87e4e7",
+      "lahi-ita-menemen-sumakilla": "df2c7ce59b655b0f44730a7113064be9edad2a3ac87ba0fef48b8acff5de0bb9",
+      "siskonmakkarakeitto-juurekset": "d0937475136b65d031f0573588c84c8192eca19d38ebe67b08904bb88ec1cb51"
+    },
+    "calculationEvidence": {
+      "liha-juureskeitto-perunaton": "73cea6ebb4491f4cae1073ca477e3ab417f26050871603ee540f2bbe2485f045",
+      "vhh-letut": "7d7260f25a8c08eec820ccb95b16a69d0e08e6c07e5de2196c0a94c569c69c6e",
+      "vhh-korvapuustit": "ed5db81c2119a3e4aa94f601b342207e1283591baa3eac5d3f30da0bce1db2a9",
+      "jauhelihapihvit-vhh-kermakastikkeella": "e594559f25be8aab2c6052aa7147189698b7b290a0bea7be163cc3f11bbdfc2a",
+      "nakkikeitto-kukkakaalilla": "b02681a06015848704f1bc59e5707cdfd959e6b3170c0beaea7baf4c5568907e",
+      "nakkikastike-kukkakaalimuusi": "c3957b11495988c8ad4f623d306d27f6474d1a661a302fb6fb151fd131dce2f8",
+      "ropa-vieja": "2c96942d6987e8fbf8b6b16314a3acfb96abb9d3416c478d11ccafa717ec7f27",
+      "lahi-ita-menemen-sumakilla": "d71dbf701a68296e93f42640b21f7fcd2b4cfd58685899eb32b31854d4f73e65",
+      "siskonmakkarakeitto-juurekset": "a5a4b5b7530ac68033577da4afa8491820ee735325ef98fe5013ba046e3cb5e3"
+    }
+  },
+  "selectedCalculationInputs": [
+    {
+      "recipeId": "liha-juureskeitto-perunaton",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "naudan keittolihaa",
+          "grams": 700,
+          "fineliRecordId": "afcd-F000514-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "naudan keittolihaa maps to afcd-release-3 record F000514; state: raw lean beef shin."
+        },
+        {
+          "name": "vettä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound ≤0 g available carbohydrate/serving, below the 1 g GL cutoff."
+        },
+        {
+          "name": "lanttua",
+          "grams": 200,
+          "fineliRecordId": "afcd-F009021-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "lanttua maps to afcd-release-3 record F009021; state: raw peeled swede.",
+          "foodKey": "vegetables",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Swede is matched to the published broad vegetable-category mean (GI 66); not a swede-specific measurement, low confidence."
+        },
+        {
+          "name": "porkkanaa",
+          "grams": 150,
+          "fineliRecordId": "fineli-300-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "porkkanaa maps to fineli-release-20 record 300; state: raw carrot.",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "juuriselleriä",
+          "grams": 150,
+          "fineliRecordId": "fineli-311-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "juuriselleriä maps to fineli-release-20 record 311; state: raw celeriac.",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
+        },
+        {
+          "name": "laakerinlehteä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+        },
+        {
+          "name": "kokonaista mustapippuria",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+        },
+        {
+          "name": "silputtua persiljaa",
+          "grams": 8,
+          "fineliRecordId": "afcd-F006321-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific tablespoon mass: 4 g/rkl for silputtua persiljaa.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Published Vegetables other than potatoes, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound ≤0 g available carbohydrate/serving, below the 1 g GL cutoff."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-letut",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "kananmunaa",
+          "grams": 220,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "name": "maustamatonta tuorejuustoa",
+          "grams": 100,
+          "fineliRecordId": "fineli-11571-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 11571; source state: plain 11% cream cheese.",
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "mantelijauhoa",
+          "grams": 50,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 50 g almond flour; 4 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+          "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+          "foodKey": "almond-meal",
+          "preparationKey": "pan-fried-in-recipe-no-approved-gi"
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 100,
+          "fineliRecordId": "fineli-631-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "1 dl = 100 g for water and Fineli cream DL measure.",
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "erytritolia",
+          "grams": 12,
+          "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass estimate for erytritolia."
+        },
+        {
+          "name": "voita paistamiseen",
+          "grams": 4.5,
+          "fineliRecordId": "fineli-500-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass estimate for voita paistamiseen."
+        },
+        {
+          "name": "ripaus suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "AJO 1.7: prior culinary mass/omission assumption is not verified. Original recipe quantity stays unchanged; no source-backed gram conversion or maximum carbohydrate amount is established for this row.",
+          "excludedReason": "AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
+        }
+      ]
+    },
+    {
+      "recipeId": "vhh-korvapuustit",
+      "servings": 8,
+      "ingredients": [
+        {
+          "name": "mozzarella-raastetta",
+          "grams": 150,
+          "fineliRecordId": "fineli-29239-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 29239; source state: fresh 20% mozzarella.",
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "maustamatonta tuorejuustoa",
+          "grams": 50,
+          "fineliRecordId": "fineli-11571-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 11571; source state: plain 11% cream cheese.",
+          "giMatchEvidence": "Published Dairy products, category mean proxy/category record; recipe-food or preparation limitation retained as low-confidence.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "mantelijauhoa",
+          "grams": 120,
+          "fineliRecordId": "afcd-F006077-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to afcd-release-3 record F006077; source state: dry almond meal. AJO 1.7: original recipe explicitly lists 120 g almond flour; 8 servings. Whole listed edible input is retained; no new cooking-loss factor. Generic full-fat almond meal match only, not defatted flour.",
+          "giMatchEvidence": "AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+          "foodKey": "almond-meal",
+          "preparationKey": "baked-in-recipe-no-approved-gi"
+        },
+        {
+          "name": "psylliumia",
+          "grams": 8,
+          "fineliRecordId": "afcd-F007502-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass estimate for psylliumia."
+        },
+        {
+          "name": "kananmunaa",
+          "grams": 55,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Per-unit mass estimate for kananmunaa; edible-state basis documented."
+        },
+        {
+          "name": "voita täytteeseen",
+          "grams": 30,
+          "fineliRecordId": "fineli-500-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+        },
+        {
+          "name": "erytritolia täytteeseen",
+          "grams": 24,
+          "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass estimate for erytritolia täytteeseen."
+        },
+        {
+          "name": "kanelia",
+          "grams": null,
+          "fineliRecordId": "afcd-F002963-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "AJO 1.7: original 1 tbsp cinnamon; prior 15 g conversion is unverified. Fineli #11184 has no portion mass; no invented density.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "rkl",
+            "massGrams": null
+          }
+        },
+        {
+          "name": "kananmunaa voiteluun",
+          "grams": 55,
+          "fineliRecordId": "fineli-858-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Per-unit mass estimate for kananmunaa voiteluun; edible-state basis documented."
+        }
+      ]
+    },
+    {
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "naudan jauhelihaa",
+          "grams": 600,
+          "massEvidence": "Recipe-listed edible mass.",
+          "fineliRecordId": "fineli-11562-2026-10-25",
+          "giRecordId": null
+        },
+        {
+          "name": "kananmunaa",
+          "grams": 55,
+          "massEvidence": "1 egg × Fineli #858 KPL_M 55 g",
+          "fineliRecordId": "fineli-858-2026-10-25",
+          "giRecordId": null
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 50,
+          "massEvidence": "0.5 dl × Fineli #631 100 g/dl",
+          "fineliRecordId": "fineli-631-2026-10-25",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        },
+        {
+          "name": "sipulia",
+          "grams": 30,
+          "massEvidence": "1 small onion × Fineli #335 KPL_S 30 g AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "fineliRecordId": "fineli-335-2026-10-25",
+          "giRecordId": null,
+          "foodKey": "onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
+        },
+        {
+          "name": "suolaa",
+          "grams": 6.5,
+          "massEvidence": "1 tsp × Fineli #30 6.5 g/tsp",
+          "fineliRecordId": "fineli-30-2026-10-25",
+          "giRecordId": null
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 1,
+          "massEvidence": "Recipe-listed edible mass.",
+          "fineliRecordId": "fineli-11177-2026-10-25",
+          "giRecordId": null
+        },
+        {
+          "name": "voita",
+          "grams": 14,
+          "massEvidence": "1 tbsp × Fineli #500 14 g/tbsp",
+          "fineliRecordId": "fineli-500-2026-10-25",
+          "giRecordId": null
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "massEvidence": "2 dl × Fineli #631 100 g/dl",
+          "fineliRecordId": "fineli-631-2026-10-25",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        },
+        {
+          "name": "lihalientä",
+          "grams": 100,
+          "massEvidence": "1 dl × Fineli #29 100 g/dl; diluted beef broth category proxy.",
+          "fineliRecordId": "fineli-29-2026-10-25",
+          "giRecordId": "soups-category-mean-gi-49",
+          "foodKey": "soup",
+          "preparationKey": "soup-category",
+          "giMatchEvidence": "Published category/analogue; food or preparation is not a direct GI test match."
+        },
+        {
+          "name": "Dijon-sinappia",
+          "grams": 5,
+          "massEvidence": "1 tsp × Fineli #28 5 g/tsp",
+          "fineliRecordId": "fineli-28-2026-10-25",
+          "giRecordId": null
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 1,
+          "massEvidence": "Recipe-listed edible mass.",
+          "fineliRecordId": "fineli-11177-2026-10-25",
+          "giRecordId": null
+        }
+      ]
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "nakkeja",
+          "grams": 350,
+          "fineliRecordId": "fineli-7600-release-20",
+          "giRecordId": null,
+          "massEvidence": "Frankfurter-style sausage represented by boiled nakki, Fineli record 7600; no brand or fat class is specified."
+        },
+        {
+          "name": "kukkakaalia",
+          "grams": 500,
+          "fineliRecordId": "fineli-322-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Raw cauliflower; Fineli record 322.",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        },
+        {
+          "name": "varsiselleriä",
+          "grams": 100,
+          "fineliRecordId": "fineli-339-release-20",
+          "giRecordId": null,
+          "massEvidence": "Raw celery stalk; Fineli record 339.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.275,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "purjoa",
+          "grams": 80,
+          "fineliRecordId": "fineli-337-release-20",
+          "giRecordId": null,
+          "massEvidence": "Raw leek; Fineli record 337.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.48,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "pieni sipuli",
+          "grams": 70,
+          "fineliRecordId": "fineli-335-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 70 g per kpl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.84,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "lihalientä",
+          "grams": 800,
+          "fineliRecordId": "fineli-29-release-20",
+          "giRecordId": "soups-category-mean-gi-49",
+          "massEvidence": "Ingredient-specific household measure conversion: 100 g per dl; recipe quantity converted to edible mass.",
+          "giMatchEvidence": "Broad soups category mean from International Tables 2021 used as a low-confidence analogue for diluted beef stock retained in the finished soup/sauce; not a stock-specific test."
+        },
+        {
+          "name": "laakerinlehti",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+        },
+        {
+          "name": "tuoretta persiljaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+        }
+      ]
+    },
+    {
+      "recipeId": "nakkikastike-kukkakaalimuusi",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "nakkeja",
+          "grams": 400,
+          "fineliRecordId": "fineli-7600-release-20",
+          "giRecordId": null,
+          "massEvidence": "Frankfurter-style sausage represented by boiled nakki, Fineli record 7600; no brand or fat class is specified."
+        },
+        {
+          "name": "pieni sipuli",
+          "grams": 70,
+          "fineliRecordId": "fineli-335-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 70 g per kpl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.84,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "kuohukermaa",
+          "grams": 200,
+          "fineliRecordId": "fineli-631-release-20",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient-specific household measure conversion: 100 g per dl; recipe quantity converted to edible mass.",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        },
+        {
+          "name": "lihalientä",
+          "grams": 100,
+          "fineliRecordId": "fineli-29-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 100 g per dl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.75,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "Dijon-sinappia",
+          "grams": 2,
+          "fineliRecordId": "fineli-28-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.0705,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+        },
+        {
+          "name": "kukkakaalia",
+          "grams": 600,
+          "fineliRecordId": "fineli-322-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Raw cauliflower; Fineli record 322.",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        },
+        {
+          "name": "voita",
+          "grams": 40,
+          "fineliRecordId": "fineli-500-release-20",
+          "giRecordId": null,
+          "massEvidence": "Butter; Fineli record 500.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.08,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+        }
+      ]
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "servings": 6,
+      "ingredients": [
+        {
+          "name": "naudanpaistia tai flank steak -lihaa",
+          "grams": 900,
+          "fineliRecordId": "fineli-718-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ropa vieja alternative resolved to the listed beef roast option; Fineli record 718.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "keltasipulia",
+          "grams": 100,
+          "fineliRecordId": "fineli-335-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 100 g per kpl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.7999999999999999,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "vihreää paprikaa",
+          "grams": 120,
+          "fineliRecordId": "fineli-387-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 120 g per kpl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.5,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "punaista paprikaa",
+          "grams": 160,
+          "fineliRecordId": "fineli-386-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Ingredient-specific household measure conversion: 160 g per kpl; recipe quantity converted to edible mass.",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        },
+        {
+          "name": "tomaattimurskaa",
+          "grams": 400,
+          "fineliRecordId": "fineli-398-release-20",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Crushed tomatoes; Fineli record 398.",
+          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+        },
+        {
+          "name": "lihalientä",
+          "grams": 500,
+          "fineliRecordId": "fineli-29-release-20",
+          "giRecordId": "soups-category-mean-gi-49",
+          "massEvidence": "Ingredient-specific household measure conversion: 1 g per ml; recipe quantity converted to edible mass.",
+          "giMatchEvidence": "Broad soups category mean from International Tables 2021 used as a low-confidence analogue for diluted beef stock retained in the finished soup/sauce; not a stock-specific test."
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 9,
+          "fineliRecordId": "afcd-F004193-release-3",
+          "giRecordId": null,
+          "massEvidence": "Garlic clove set to 3 g edible mass per clove.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.153,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "juustokuminaa",
+          "grams": 2,
+          "fineliRecordId": "afcd-F003327-release-3",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.11233333333333334,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "kuivattua oreganoa",
+          "grams": 2,
+          "fineliRecordId": "afcd-F006281-release-3",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.08800000000000001,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "laakerinlehteä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Small culinary spice; omitted under the pilot below-1 g/serving rule.",
+          "estimatedAvailableCarbohydratePerServingG": 0.05,
+          "negligibleAssumption": "One leaf shared by six servings; estimated contribution is less than 0.05 g available carbohydrate per serving."
+        },
+        {
+          "name": "vihreitä oliiveja",
+          "grams": 60,
+          "fineliRecordId": "fineli-34972-release-20",
+          "giRecordId": null,
+          "massEvidence": "Pitted green olives in brine; Fineli record 34972.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        },
+        {
+          "name": "valkoviinietikkaa",
+          "grams": 15,
+          "fineliRecordId": "fineli-929-release-20",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass.",
+          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
+          "estimatedAvailableCarbohydratePerServingG": 0.012499999999999999,
+          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+        }
+      ]
+    },
+    {
+      "recipeId": "lahi-ita-menemen-sumakilla",
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "kananmuna",
+          "grams": 110,
+          "fineliRecordId": "fineli-858-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 110 g, mapped to KANANMUNA, KUORETON (raw edible egg, shell removed)."
+        },
+        {
+          "name": "tomaatti",
+          "grams": 125,
+          "fineliRecordId": "fineli-352-release-20",
+          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+          "massEvidence": "Recipe-listed 125 g, mapped to TOMAATTI (raw tomato).",
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw",
+          "giMatchEvidence": "Whole raw tomato: GI 22 was measured for whole raw tomato, not cooked tomato sauce.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "vihreä paprika",
+          "grams": 170,
+          "fineliRecordId": "fineli-387-release-20",
+          "giRecordId": null,
+          "massEvidence": "One recipe-listed pepper represented by Fineli KPL_M 170 g standard portion estimate (size not specified; not weighed), mapped to PAPRIKA, VIHREÄ (raw green bell pepper). AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
+          "foodKey": "green-pepper",
+          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
+        },
+        {
+          "name": "sumakki",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+          "estimatedAvailableCarbohydratePerServingG": 0.25,
+          "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed salt; not weighed."
+        }
+      ]
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "siskonmakkaraa",
+          "grams": 400,
+          "fineliRecordId": "fineli-30369-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 400 g, mapped to RAAKAMAKKARA, SISKONMAKKARA (raw siskonmakkara fresh sausage; Fineli available carbohydrate 0.908 g/100 g)."
+        },
+        {
+          "name": "lihalientä",
+          "grams": 1000,
+          "fineliRecordId": "fineli-29-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 1000 g, mapped to LIHALIEMI, LAIMENNETTU (diluted beef stock)."
+        },
+        {
+          "name": "lanttua",
+          "grams": 250,
+          "fineliRecordId": "fineli-303-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 250 g, mapped to LANTTU (raw rutabaga).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "porkkanaa",
+          "grams": 150,
+          "fineliRecordId": "fineli-300-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 150 g, mapped to PORKKANA (raw medium carrot, edible portion).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "juuriselleriä",
+          "grams": 100,
+          "fineliRecordId": "afcd-F002384-release-3",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 100 g, mapped to Celeriac, peeled, raw (raw peeled celeriac).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "foodKey": "onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
+        },
+        {
+          "name": "laakerinlehti",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+        },
+        {
+          "name": "silputtua persiljaa",
+          "grams": 4,
+          "fineliRecordId": "fineli-333-release-20",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Recipe-listed 4 g, mapped to PERSILJA (fresh parsley).",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category",
+          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+        }
+      ]
+    }
+  ],
+  "sourceHashes": {
+    "jauhelihapihvit-vhh-kermakastikkeella": "698c0441ea581d84174cedc8b128dd0602df3174727f4016d4ca39a714ac6d1c",
+    "lahi-ita-menemen-sumakilla": "0790d81ba8dc71954d30395a249c3f0c9d59ef242ea53302ef69b5b74dd0684b",
+    "liha-juureskeitto-perunaton": "c3cf74c185a9b353d34cb3d2245f98a9b2a513ec652119bd83c41f1c3007a8c5",
+    "nakkikastike-kukkakaalimuusi": "91758ce92f99c100b270946d8465aad2e8a7fbe09c04f91b843f023e7f076f10",
+    "nakkikeitto-kukkakaalilla": "10dc930e24158282c32a1670ed76cab503206124d232b6461af82e6629aa966f",
+    "ropa-vieja": "c764e8d60e6759ce83a9b429b59f9a09c28eaac57535cdbce93d0f0d037ead10",
+    "siskonmakkarakeitto-juurekset": "46b22753ae9becfc377d4adc611093a588abbfa07add97d0f73070a860709f38",
+    "vhh-korvapuustit": "e2b1b2426a5e217c5dfac662bcff55b7ea2874b94d89f2d4791070dc3f8aeec5",
+    "vhh-letut": "b7c5737b999719a5dc36be836b3e07fd27040a3836c1721517a1669a5bd4571e"
+  },
+  "calculationInputHashes": {
+    "liha-juureskeitto-perunaton": "e257742f9bf00a43e1cb75224ab792590be6e01c932e4e5429c0eb10df93da51",
+    "vhh-letut": "1ef7b6579dcf2735456df19e73ff98bca10e6a1a81565c6d3eb45c8a7ec5a447",
+    "vhh-korvapuustit": "4dc459ce3368abd355b9287f844dd088be65a79e90e1b71bb0b458d9fb1bc7cf",
+    "jauhelihapihvit-vhh-kermakastikkeella": "6f8776bd6a2dd14c08bfcffe33d281070078b374d6cd0488e9afeb45509e99fc",
+    "nakkikeitto-kukkakaalilla": "1b35309c4f46139df050cfce8dda9c1dcd7fce16de0d39faf85c8bf7144a40bf",
+    "nakkikastike-kukkakaalimuusi": "b8e060855b99d241beb64da4f6d378807f5286eb84cd53d755e7d80fd20faa56",
+    "ropa-vieja": "971deb5d08bbd2c23e648317378e30ace840e1974a4c55f9e891ce139e87e4e7",
+    "lahi-ita-menemen-sumakilla": "df2c7ce59b655b0f44730a7113064be9edad2a3ac87ba0fef48b8acff5de0bb9",
+    "siskonmakkarakeitto-juurekset": "d0937475136b65d031f0573588c84c8192eca19d38ebe67b08904bb88ec1cb51"
+  },
+  "calculationEvidenceHashes": {
+    "liha-juureskeitto-perunaton": "73cea6ebb4491f4cae1073ca477e3ab417f26050871603ee540f2bbe2485f045",
+    "vhh-letut": "7d7260f25a8c08eec820ccb95b16a69d0e08e6c07e5de2196c0a94c569c69c6e",
+    "vhh-korvapuustit": "ed5db81c2119a3e4aa94f601b342207e1283591baa3eac5d3f30da0bce1db2a9",
+    "jauhelihapihvit-vhh-kermakastikkeella": "e594559f25be8aab2c6052aa7147189698b7b290a0bea7be163cc3f11bbdfc2a",
+    "nakkikeitto-kukkakaalilla": "b02681a06015848704f1bc59e5707cdfd959e6b3170c0beaea7baf4c5568907e",
+    "nakkikastike-kukkakaalimuusi": "c3957b11495988c8ad4f623d306d27f6474d1a661a302fb6fb151fd131dce2f8",
+    "ropa-vieja": "2c96942d6987e8fbf8b6b16314a3acfb96abb9d3416c478d11ccafa717ec7f27",
+    "lahi-ita-menemen-sumakilla": "d71dbf701a68296e93f42640b21f7fcd2b4cfd58685899eb32b31854d4f73e65",
+    "siskonmakkarakeitto-juurekset": "a5a4b5b7530ac68033577da4afa8491820ee735325ef98fe5013ba046e3cb5e3"
+  },
+  "recipeBindingMismatches": [],
+  "calculationInputMismatches": [],
+  "calculationEvidenceMismatches": []
+}

@@ -1,0 +1,633 @@
+{
+  "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+  "sourceHash": "107be1784392ccb32238d210c62a6a091ecf603a2d7df81e4e64f88c24ab3206",
+  "calculatedAt": "2026-11-02",
+  "batchId": "batch-146",
+  "servings": 4,
+  "scope": "Operation146 defined exact recipe/source candidate. Full publication binding is generated only for technically accepted entries; source-only conditional records do not alter public macros. Original beef-mince option specified at17%fat; native Fineli household/USDA pepper masses, named5g Dijon dose. All pan sauce served; no new ingredient or new macro withholding.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "naudan jauhelihaa, rasvaa17%",
+      "amount": 600,
+      "unit": "g",
+      "state": "RAW",
+      "matchEvidence": "Same food/state as the defined weighed input. ",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion, not purchase weight.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible input accounted for; no unmeasured cooking-loss credit. See explicitly bounded strained ingredients separately.",
+      "record": {
+        "id": "op146-fineli-11562",
+        "name": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11562",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20, CC BY4.0; frozen observations preserved.",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH value; source method is preserved, not asserted laboratory-measured. Unknown stays unknown.",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 19.065,
+          "fat": 16.949
+        },
+        "primaryReference": {
+          "source_id": "11562",
+          "name": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "BEEF",
+          "food_class": "MSTEAK",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0,
+            "fibre_g_per_100g": 0,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 19.065,
+            "fat_g_per_100g": 16.949
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI1302"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            }
+          },
+          "portion_mass_g": {}
+        }
+      }
+    },
+    {
+      "item": "kuoretonta kananmunaa",
+      "amount": 55,
+      "unit": "g",
+      "state": "RAW",
+      "matchEvidence": "Same food/state as the defined weighed input. ",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion, not purchase weight.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible input accounted for; no unmeasured cooking-loss credit. See explicitly bounded strained ingredients separately.",
+      "record": {
+        "id": "op146-fineli-858",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20, CC BY4.0; frozen observations preserved.",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH value; source method is preserved, not asserted laboratory-measured. Unknown stays unknown.",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        },
+        "primaryReference": {
+          "source_id": "858",
+          "name": "KANANMUNA, KUORETON",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "EGG",
+          "food_class": "EGGS",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.3,
+            "fibre_g_per_100g": 0,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 12.61,
+            "fat_g_per_100g": 9.24
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI1302"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_M": 55
+          }
+        }
+      }
+    },
+    {
+      "item": "kuohukermaa pihveihin,38%",
+      "amount": 50,
+      "unit": "g",
+      "state": "IND",
+      "matchEvidence": "Same food/state as the defined weighed input. ",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion, not purchase weight.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible input accounted for; no unmeasured cooking-loss credit. See explicitly bounded strained ingredients separately.",
+      "record": {
+        "id": "op146-fineli-631",
+        "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/631",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20, CC BY4.0; frozen observations preserved.",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH value; source method is preserved, not asserted laboratory-measured. Unknown stays unknown.",
+        "per100g": {
+          "carbohydrate": 2.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.88,
+          "fat": 38
+        },
+        "primaryReference": {
+          "source_id": "631",
+          "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+          "food_type": "FOOD",
+          "process": "IND",
+          "edible_portion_percent": 100,
+          "ingredient_class": "CREAM",
+          "food_class": "CREAM",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 2.9,
+            "fibre_g_per_100g": 0,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 1.88,
+            "fat_g_per_100g": 38
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 100,
+            "RKL": 15,
+            "TL": 5
+          }
+        }
+      }
+    },
+    {
+      "item": "kuorittua sipulia",
+      "amount": 30,
+      "unit": "g",
+      "state": "RAW",
+      "matchEvidence": "Same food/state as the defined weighed input. ",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion, not purchase weight.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible input accounted for; no unmeasured cooking-loss credit. See explicitly bounded strained ingredients separately.",
+      "record": {
+        "id": "op146-fineli-335",
+        "name": "SIPULI, KELTASIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20, CC BY4.0; frozen observations preserved.",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH value; source method is preserved, not asserted laboratory-measured. Unknown stays unknown.",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 1.25,
+          "fat": 0.1
+        },
+        "primaryReference": {
+          "source_id": "335",
+          "name": "SIPULI, KELTASIPULI",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "VEGONI",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 4.8,
+            "fibre_g_per_100g": 1.2,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 1.25,
+            "fat_g_per_100g": 0.1
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "T",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MIR006"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_S": 30,
+            "KPL_M": 55,
+            "KPL_L": 200,
+            "DL": 90
+          }
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 5,
+      "unit": "g",
+      "state": "pure salt/water",
+      "matchEvidence": "Literal pure salt or water, no nutrient-bearing mixture; no liquid density conversion needed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Literal ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "No macros in the literal input.",
+      "excludedReason": "Pure salt/water, not mixed seasoning or broth.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Literal pure salt or water, no nutrient-bearing mixture; no liquid density conversion needed."
+    },
+    {
+      "item": "mustapippuria pihveihin",
+      "amount": 1.15,
+      "unit": "g",
+      "state": "as specified, bounded whole ingredient",
+      "matchEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Specified exact edible amount.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Conservatively bound full input; no invented retention fraction.",
+      "excludedReason": "Whole ingredient omitted under unchanged cumulative macro budget.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.18385625,
+        "protein": 0.029871250000000002,
+        "fat": 0.009372499999999999,
+        "kcal": 0.721625,
+        "netCarbohydrate": 0.18385625
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+    },
+    {
+      "item": "voita",
+      "amount": 14,
+      "unit": "g",
+      "state": "IND",
+      "matchEvidence": "Same food/state as the defined weighed input. ",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion, not purchase weight.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible input accounted for; no unmeasured cooking-loss credit. See explicitly bounded strained ingredients separately.",
+      "record": {
+        "id": "op146-fineli-500",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20, CC BY4.0; frozen observations preserved.",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH value; source method is preserved, not asserted laboratory-measured. Unknown stays unknown.",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        },
+        "primaryReference": {
+          "source_id": "500",
+          "name": "VOI",
+          "food_type": "FOOD",
+          "process": "IND",
+          "edible_portion_percent": 100,
+          "ingredient_class": "BUTTER",
+          "food_class": "BUTTER",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.8,
+            "fibre_g_per_100g": 0,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 1.19,
+            "fat_g_per_100g": 81.3
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 95,
+            "RKL": 14,
+            "TL": 4.5
+          }
+        }
+      }
+    },
+    {
+      "item": "kuohukermaa kastikkeeseen,38%",
+      "amount": 200,
+      "unit": "g",
+      "state": "IND",
+      "matchEvidence": "Same food/state as the defined weighed input. ",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion, not purchase weight.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible input accounted for; no unmeasured cooking-loss credit. See explicitly bounded strained ingredients separately.",
+      "record": {
+        "id": "op146-fineli-631",
+        "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/631",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20, CC BY4.0; frozen observations preserved.",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH value; source method is preserved, not asserted laboratory-measured. Unknown stays unknown.",
+        "per100g": {
+          "carbohydrate": 2.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.88,
+          "fat": 38
+        },
+        "primaryReference": {
+          "source_id": "631",
+          "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+          "food_type": "FOOD",
+          "process": "IND",
+          "edible_portion_percent": 100,
+          "ingredient_class": "CREAM",
+          "food_class": "CREAM",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 2.9,
+            "fibre_g_per_100g": 0,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 1.88,
+            "fat_g_per_100g": 38
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 100,
+            "RKL": 15,
+            "TL": 5
+          }
+        }
+      }
+    },
+    {
+      "item": "käyttövalmista laimennettua lihalientä",
+      "amount": 100,
+      "unit": "g",
+      "state": "BOIL",
+      "matchEvidence": "Same food/state as the defined weighed input. ",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible portion, not purchase weight.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible input accounted for; no unmeasured cooking-loss credit. See explicitly bounded strained ingredients separately.",
+      "record": {
+        "id": "op146-fineli-29",
+        "name": "LIHALIEMI, LAIMENNETTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20, CC BY4.0; frozen observations preserved.",
+        "state": "BOIL",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH value; source method is preserved, not asserted laboratory-measured. Unknown stays unknown.",
+        "per100g": {
+          "carbohydrate": 3,
+          "fibre": 0.017,
+          "polyols": 0,
+          "protein": 0.34,
+          "fat": 0.6
+        },
+        "primaryReference": {
+          "source_id": "29",
+          "name": "LIHALIEMI, LAIMENNETTU",
+          "food_type": "DISH",
+          "process": "BOIL",
+          "edible_portion_percent": 100,
+          "ingredient_class": "DISH",
+          "food_class": "SAVSAUCE",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 3,
+            "fibre_g_per_100g": 0.017,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 0.34,
+            "fat_g_per_100g": 0.6
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "CG",
+              "method_indicator": "MIR003"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "R",
+              "method_indicator": "MI0002"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "R",
+              "method_indicator": "MI0002"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 100,
+            "RKL": 15,
+            "TL": 5
+          }
+        }
+      }
+    },
+    {
+      "item": "French's Dijon Mustard US32oz",
+      "amount": 5,
+      "unit": "g",
+      "state": "as specified, bounded whole ingredient",
+      "matchEvidence": "McCormick French's Dijon US32oz GTIN00041500741284 manufacturer sheet, serving5g, labelled5kcal and0g totalC/fat/protein.21CFR101.9 rounding: nominal source-model ceilings .5g each and7.5kcal per5g; not true zero, polyols unknown, not a lot/clinical guarantee. No transfer to Maille, honey/wholegrain or other markets.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Specified exact edible amount.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Conservatively bound full input; no invented retention fraction.",
+      "excludedReason": "Whole ingredient omitted under unchanged cumulative macro budget.",
+      "omissionImpactUpperBoundPerServing": {
+        "netCarbohydrate": 0.125,
+        "totalCarbohydrate": 0.125,
+        "protein": 0.125,
+        "fat": 0.125,
+        "kcal": 1.875
+      },
+      "omissionImpactEvidence": "McCormick French's Dijon US32oz GTIN00041500741284 manufacturer sheet, serving5g, labelled5kcal and0g totalC/fat/protein.21CFR101.9 rounding: nominal source-model ceilings .5g each and7.5kcal per5g; not true zero, polyols unknown, not a lot/clinical guarantee. No transfer to Maille, honey/wholegrain or other markets."
+    },
+    {
+      "item": "mustapippuria kastikkeeseen",
+      "amount": 1.15,
+      "unit": "g",
+      "state": "as specified, bounded whole ingredient",
+      "matchEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Specified exact edible amount.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Conservatively bound full input; no invented retention fraction.",
+      "excludedReason": "Whole ingredient omitted under unchanged cumulative macro budget.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.18385625,
+        "protein": 0.029871250000000002,
+        "fat": 0.009372499999999999,
+        "kcal": 0.721625,
+        "netCarbohydrate": 0.18385625
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+    }
+  ]
+}

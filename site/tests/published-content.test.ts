@@ -13,7 +13,11 @@ import { parseMarkdown } from "../src/content/markdown";
 const recoveryHistorical=JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-uunikanapasta-release/historical-metadata.json'),'utf8'));
 const op142Historical=JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-operation142/historical-macros.json'),'utf8'));
 const historicalMacros={...op142Historical.recipes,[recoveryHistorical.recipeId]:{nutrition:recoveryHistorical.nutrition},...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-7/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-6/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/historical-macros.json'),'utf8')).recipes};
-const siteContent={...currentSiteContent,recipes:currentSiteContent.recipes.map(r=>({...r,nutrition:historicalMacros[r.recipeId]?.nutrition??r.nutrition}))};
+// Operation146 recalculates nine exact versions. Freeze only their previous
+// macros for historical batch assertions; the live generated macros in all36
+// current locales are separately asserted in gk80-operation146.test.ts.
+const op146Historical=Object.fromEntries(JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-operation146/integration.json'),'utf8')).recipes.map((e:any)=>[e.recipeId,{carbsNetG:e.previousMacros.carbs_net_per_serving_g,carbsTotalG:e.previousMacros.carbs_total_per_serving_g,proteinG:e.previousMacros.protein_per_serving_g,fatG:e.previousMacros.fat_per_serving_g}]));
+const siteContent={...currentSiteContent,recipes:currentSiteContent.recipes.map(r=>({...r,nutrition:historicalMacros[r.recipeId]?.nutrition??op146Historical[r.recipeId]??r.nutrition}))};
 
 async function markdownFiles(dir: string): Promise<string[]> {
   const entries = await readdir(dir, { withFileTypes: true }).catch((error: NodeJS.ErrnoException) => {

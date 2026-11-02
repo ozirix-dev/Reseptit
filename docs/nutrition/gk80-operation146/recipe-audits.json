@@ -1,0 +1,4289 @@
+{
+  "scope": "50 current full recipe ingredient/preparation triages in ten groups of five.15 detailed numeric prototypes;35 source/preparation decisions reuse prior research rather than repeat searches. This is not50 new clinical GI studies.",
+  "reviewer": "AUTOMATED ONLY",
+  "recipes": [
+    {
+      "priority": 1,
+      "batch": 1,
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "path": "reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md",
+      "currentSourceLfSha256": "376944f862c141d176614a6e47d14e6222b27ea624b3701efb160e7f1227070f",
+      "currentMacroEngineStatus": "MISSING",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "jauhelihapihvit-vhh-kermakastikkeella: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "TECHNICAL_INTEGRATION",
+      "currentPublishedPath": "reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md",
+      "sourceLfSha256": "376944f862c141d176614a6e47d14e6222b27ea624b3701efb160e7f1227070f",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "naudan jauhelihaa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "kananmuna"
+        },
+        {
+          "amount": 0.5,
+          "unit": "dl",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "pieni sipuli",
+          "note": "hienoksi raastettuna"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "mustapippuria"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "voita",
+          "note": "paistamiseen"
+        },
+        {
+          "amount": 2,
+          "unit": "dl",
+          "item": "kuohukermaa",
+          "note": "kastikkeeseen"
+        },
+        {
+          "amount": 1,
+          "unit": "dl",
+          "item": "lihalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "Dijon-sinappia"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "mustapippuria",
+          "note": "kastikkeeseen"
+        }
+      ],
+      "preparationReviewed": "1. Sekoita kulhossa jauheliha, kananmuna, kerma, raastettu sipuli, suola ja mustapippuri. Muotoile neljä pihviä.\n2. Kuumenna voi pannulla ja paista pihvit keskilämmöllä kypsiksi, noin 4–5 minuuttia kummaltakin puolelta. Siirrä pihvit sivuun.\n3. Kaada pannulle lihaliemi ja raaputa paistopinta mukaan kastikkeeseen. Lisää kerma, sinappi ja pippuri.\n4. Keitä kastiketta hiljalleen 5–8 minuuttia, kunnes se hieman sakenee. Palauta pihvit pannulle ja kuumenna vielä pari minuuttia.\n5. Tarjoa kukkakaalimuusin tai vihreiden kasvisten kanssa.\n\n## Muistiinpanot\n\n- Jos lihaliemi on suolaista, maista kastike ennen lisäsuolan lisäämistä.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 3.17,
+        "carbs_total_per_serving_g": 3.34,
+        "protein_per_serving_g": 31.83,
+        "fat_per_serving_g": 53.44
+      },
+      "previousModelMacroStatus": "MISSING",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 1.09,
+      "macroScenario": "ESTIMATE WITH EVIDENCE",
+      "reason": "Original beef-mince option specified at17%fat; native Fineli household/USDA pepper masses, named5g Dijon dose. All pan sauce served; no new ingredient or new macro withholding.",
+      "nextAction": "Owner review of exact hashed Draft version."
+    },
+    {
+      "priority": 2,
+      "batch": 1,
+      "recipeId": "ropa-vieja",
+      "path": "reseptit/paaruoat/ropa-vieja.md",
+      "currentSourceLfSha256": "d0803f871258b512241ad449d728793b48800f8d1af83d84710952fba012bddd",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F004193-release-3",
+        "afcd-F003327-release-3",
+        "afcd-F006281-release-3"
+      ],
+      "currentBlockers": [
+        "ropa-vieja: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "ropa-vieja: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "TECHNICAL_INTEGRATION",
+      "currentPublishedPath": "reseptit/paaruoat/ropa-vieja.md",
+      "sourceLfSha256": "d0803f871258b512241ad449d728793b48800f8d1af83d84710952fba012bddd",
+      "servings": 6,
+      "ingredientsReviewed": [
+        {
+          "amount": 900,
+          "unit": "g",
+          "item": "naudanpaistia tai flank steak -lihaa",
+          "note": "yhtenä palana"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "keltasipulia",
+          "note": "viipaloituna"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "vihreää paprikaa",
+          "note": "suikaleina"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "punaista paprikaa",
+          "note": "suikaleina"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "tomaattimurskaa"
+        },
+        {
+          "amount": 500,
+          "unit": "ml",
+          "item": "lihalientä"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "juustokuminaa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kuivattua oreganoa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "laakerinlehteä"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "item": "vihreitä oliiveja"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "valkoviinietikkaa"
+        }
+      ],
+      "preparationReviewed": "1. Ruskista naudanliha padassa joka puolelta. Nosta hetkeksi sivuun.\n2. Kuullota sipuli ja paprikat samassa padassa. Lisää valkosipuli, juustokumina ja oregano.\n3. Lisää tomaattimurska, lihaliemi ja laakerinlehti. Nosta liha takaisin pataan.\n4. Peitä kannella ja hauduta hyvin miedolla lämmöllä noin 2,5 tuntia, kunnes liha hajoaa helposti haarukalla.\n5. Nosta liha padasta ja revi säikeiksi kahdella haarukalla. Poista laakerinlehti.\n6. Palauta liha kastikkeeseen. Lisää oliivit ja viinietikka ja hauduta vielä 10 minuuttia.\n\n## Muistiinpanot\n\n- Jos kastike on haudutuksen lopussa vetistä, keitä sitä hetki ilman kantta. Tarjoa lisäkkeenä riisiä ja mustapapuja.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 7.67,
+        "carbs_total_per_serving_g": 9.77,
+        "protein_per_serving_g": 34.06,
+        "fat_per_serving_g": 6.77
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 3.25,
+      "macroScenario": "ESTIMATE WITH EVIDENCE",
+      "reason": "Original beef-roast alternative, no unapproved flank substitution. All sauce retained. Bay leaf is removed, but full leaf source-total upper bound is counted; no extracted fraction invented.",
+      "nextAction": "Owner review of exact hashed Draft version."
+    },
+    {
+      "priority": 3,
+      "batch": 1,
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "path": "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md",
+      "currentSourceLfSha256": "e1d5cf315e47cd08c585cbb9b7b75b04fffbe159d4ae36d3be99526b844b0baa",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F002594-release-3",
+        "afcd-F002479-release-3",
+        "afcd-F008936-release-3",
+        "afcd-F004193-release-3"
+      ],
+      "currentBlockers": [
+        "kana-parmesaanipannu-parsakaali: valkosipulimurskaa: Ingredient mass is missing or invalid.",
+        "kana-parmesaanipannu-parsakaali: suolaa ja mustapippuria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "CONDITIONAL_NOT_ACTIVATED",
+      "currentPublishedPath": "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md",
+      "sourceLfSha256": "e1d5cf315e47cd08c585cbb9b7b75b04fffbe159d4ae36d3be99526b844b0baa",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "broilerin rintafileetä"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "parsakaalia"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "item": "raastettua parmesaania"
+        },
+        {
+          "amount": 150,
+          "unit": "ml",
+          "item": "kanalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "valkosipulimurskaa"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa ja mustapippuria"
+        }
+      ],
+      "preparationReviewed": "1. Leikkaa broileri suupaloiksi ja jaa parsakaali pieniksi kukinnoiksi.\n2. Ruskista broileri voissa pannulla. Lisää valkosipuli ja paista 30 sekuntia.\n3. Kaada pannulle kanaliemi ja kerma. Lisää parsakaali ja hauduta kannen alla 8–10 minuuttia.\n4. Sekoita parmesaani joukkoon ja kuumenna, kunnes juusto sulaa ja broileri on kypsää.\n5. Mausta suolalla ja pippurilla.\n\n## Muistiinpanot\n\nJos kastike sakenee liikaa, lisää tilkka vettä tai kanalientä.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 2.91,
+        "carbs_total_per_serving_g": 4.87,
+        "protein_per_serving_g": 36.94,
+        "fat_per_serving_g": 27.38
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 1.06,
+      "macroScenario": "INSUFFICIENT SOURCE DATA",
+      "reason": "NEVO718 P0 is explicitly only no-added-polyols reasoning REF.0474, not independently verified totalP0. Native sugar/starch A0 may support a GK source scenario, but Parmesan15g/serv cannot be omitted from four macros. No replacement by Emmental.",
+      "nextAction": "Recover missing total-polyol/source data or obtain a separate owner content decision; no new macro withholding activated."
+    },
+    {
+      "priority": 4,
+      "batch": 1,
+      "recipeId": "kermainen-kanasienipannu",
+      "path": "reseptit/paaruoat/kermainen-kanasienipannu.md",
+      "currentSourceLfSha256": "f6b6f171feae82846d66325e1ff90866a78f158a9b6d5b36d51b30d7803ba7bf",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F002806-release-3",
+        "afcd-F005946-release-3",
+        "afcd-F008936-release-3",
+        "afcd-F005973-release-3",
+        "afcd-F010466-release-3"
+      ],
+      "currentBlockers": [
+        "kermainen-kanasienipannu: salottisipuli: Ingredient mass is missing or invalid.",
+        "kermainen-kanasienipannu: suolaa ja mustapippuria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "CONDITIONAL_NOT_ACTIVATED",
+      "currentPublishedPath": "reseptit/paaruoat/kermainen-kanasienipannu.md",
+      "sourceLfSha256": "f6b6f171feae82846d66325e1ff90866a78f158a9b6d5b36d51b30d7803ba7bf",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "broilerin paistileikettä"
+        },
+        {
+          "amount": 250,
+          "unit": "g",
+          "item": "herkkusieniä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "salottisipuli"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 150,
+          "unit": "ml",
+          "item": "kanalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "Dijon-sinappia"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "silputtua timjamia"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa ja mustapippuria"
+        }
+      ],
+      "preparationReviewed": "1. Viipaloi sienet ja hienonna salottisipuli. Leikkaa broileri suupaloiksi.\n2. Ruskista broileri voissa kuumalla pannulla kahdessa erässä. Siirrä lautaselle.\n3. Paista sienet pannulla kullanruskeiksi, lisää sipuli ja kypsennä pehmeäksi.\n4. Kaada pannulle kanaliemi, kerma ja sinappi. Kiehauta, lisää broileri takaisin ja hauduta 8–10 minuuttia kypsäksi.\n5. Mausta timjamilla, suolalla ja pippurilla.\n\n## Muistiinpanot\n\nTarjoa sellaisenaan tai kukkakaalimuusin kanssa.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 3.06,
+        "carbs_total_per_serving_g": 5.53,
+        "protein_per_serving_g": 26.91,
+        "fat_per_serving_g": 26.36
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 0.74,
+      "macroScenario": "INSUFFICIENT SOURCE DATA",
+      "reason": "Fineli345 independently defined A0.3 supports GK, while mushroom polyols are unknown. NEVO19 logical0 only says no added polyols and conflicts with nonzero natural mannitol evidence; do not use it to restore macros. Full macro omission budgets and shallot proxy also need owner content review; do not activate.",
+      "nextAction": "Recover missing total-polyol/source data or obtain a separate owner content decision; no new macro withholding activated."
+    },
+    {
+      "priority": 5,
+      "batch": 1,
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "path": "reseptit/paaruoat/siskonmakkarakeitto-juurekset.md",
+      "currentSourceLfSha256": "c6b6ac7820c69e7bf4c4ca9bb050f39bad678e199d2aa4179162c2c5d1da64c1",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F008936-release-3",
+        "afcd-F006321-release-3"
+      ],
+      "currentBlockers": [
+        "siskonmakkarakeitto-juurekset: lihalientä: GI evidence is missing.",
+        "siskonmakkarakeitto-juurekset: lanttua: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "siskonmakkarakeitto-juurekset: laakerinlehti: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "siskonmakkarakeitto-juurekset: silputtua persiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "siskonmakkarakeitto-juurekset: mustapippuria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "TECHNICAL_INTEGRATION",
+      "currentPublishedPath": "reseptit/paaruoat/siskonmakkarakeitto-juurekset.md",
+      "sourceLfSha256": "c6b6ac7820c69e7bf4c4ca9bb050f39bad678e199d2aa4179162c2c5d1da64c1",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "siskonmakkaraa"
+        },
+        {
+          "amount": 1,
+          "unit": "l",
+          "item": "lihalientä"
+        },
+        {
+          "amount": 250,
+          "unit": "g",
+          "item": "lanttua"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "porkkanaa"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "juuriselleriä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "laakerinlehti"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "silputtua persiljaa"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "mustapippuria"
+        }
+      ],
+      "preparationReviewed": "1. Kuori lanttu, porkkana ja selleri. Leikkaa pieniksi tasakokoisiksi kuutioiksi. Hienonna sipuli.\n2. Kiehauta liemi sipulin ja laakerinlehden kanssa. Lisää juurekset ja keitä 12–15 minuuttia.\n3. Purista siskonmakkarasta pieniä nokareita suoraan kiehuvaan keittoon.\n4. Keitä vielä noin 8 minuuttia, kunnes makkara on kypsää ja juurekset pehmeitä.\n5. Mausta pippurilla, poista laakerinlehti ja lisää persilja.\n\n## Muistiinpanot\n\nLanttua ja porkkanaa sisältävän keiton hiilihydraattimäärä riippuu annoskoosta.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 9.01,
+        "carbs_total_per_serving_g": 12.11,
+        "protein_per_serving_g": 12.01,
+        "fat_per_serving_g": 17.42
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 7.04,
+      "macroScenario": "ESTIMATE WITH EVIDENCE",
+      "reason": "PI40 is disclosed coding for these low-starch roots, not a measured swede/carrot GI. Generic diluted stock is a separate LOW composition proxy, all broth served. Full removed-bay bound retained.",
+      "nextAction": "Owner review of exact hashed Draft version."
+    },
+    {
+      "priority": 6,
+      "batch": 2,
+      "recipeId": "palak-paneer",
+      "path": "reseptit/paaruoat/palak-paneer.md",
+      "currentSourceLfSha256": "a87a53457ea3df1d51b2d0ed933e997ad873fecee7ecd4331d82621eee71dfd9",
+      "currentMacroEngineStatus": "MISSING",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "palak-paneer: jauhettua juustokuminaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "palak-paneer: kurkumaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "palak-paneer: garam masalaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/palak-paneer.md",
+      "sourceLfSha256": "a87a53457ea3df1d51b2d0ed933e997ad873fecee7ecd4331d82621eee71dfd9",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "tuoretta pinaattia"
+        },
+        {
+          "amount": 250,
+          "unit": "g",
+          "item": "paneer-juustoa",
+          "note": "kuutioituna"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta inkivääriä",
+          "note": "raastettuna"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "öljyä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "jauhettua juustokuminaa"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "kurkumaa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "garam masalaa"
+        },
+        {
+          "amount": 1,
+          "unit": "dl",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "sitruunamehua"
+        },
+        {
+          "unit": "dl",
+          "item": "vettä",
+          "amount": 0.5
+        }
+      ],
+      "preparationReviewed": "1. Huuhtele pinaatti ja ryöppää kiehuvassa vedessä minuutti. Jäähdytä nopeasti ja valuta.\n2. Soseuta pinaatti karkeaksi soseeksi.\n3. Ruskista paneer-kuutiot pannulla ruokalusikallisessa öljyä. Nosta sivuun.\n4. Kuullota sipuli jäljellä olevassa öljyssä. Lisää valkosipuli, inkivääri, juustokumina ja kurkuma. Paista minuutti.\n5. Lisää pinaattisose, suola ja puoli desilitraa vettä. Hauduta 8 minuuttia.\n6. Lisää kerma, garam masala ja paneer. Kuumenna varovasti 5 minuuttia. Mausta sitruunamehulla.\n\n## Muistiinpanot\n\n- Älä keitä kermaista pinaattikastiketta voimakkaasti paneerin lisäämisen jälkeen.",
+      "previousMacros": {},
+      "previousModelMacroStatus": "MISSING",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "D",
+      "reason": "Paneer250g/4 is a primary nutrient-bearing component. Prior AFCD paired-fields do not establish total polyols. Spinach blanched/drained and sauce retained; garlic fibre recovery does not solve paneer or garam-masala composition.",
+      "nextAction": "Recover a complete exact paneer record and pin garam-masala product; no cottage-cheese substitution."
+    },
+    {
+      "priority": 7,
+      "batch": 2,
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "path": "reseptit/paaruoat/nakkikeitto-kukkakaalilla.md",
+      "currentSourceLfSha256": "aa0d76c90de9b16a060457fc7e56fe50f8793e6835e784b03d9c6122f07f5463",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "nakkikeitto-kukkakaalilla: nakkeja: GI evidence is missing.",
+        "nakkikeitto-kukkakaalilla: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "nakkikeitto-kukkakaalilla: cumulative omitted available carbohydrate is 2.345 g/serving, at or above the 2 g editorial tolerance."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "TECHNICAL_INTEGRATION",
+      "currentPublishedPath": "reseptit/paaruoat/nakkikeitto-kukkakaalilla.md",
+      "sourceLfSha256": "aa0d76c90de9b16a060457fc7e56fe50f8793e6835e784b03d9c6122f07f5463",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 350,
+          "unit": "g",
+          "item": "nakkeja"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "kukkakaalia",
+          "note": "pieniksi paloiksi jaettuna"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "varsiselleriä",
+          "note": "viipaloituna"
+        },
+        {
+          "amount": 80,
+          "unit": "g",
+          "item": "purjoa",
+          "note": "huuhdeltuna ja viipaloituna"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "pieni sipuli"
+        },
+        {
+          "amount": 8,
+          "unit": "dl",
+          "item": "lihalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "laakerinlehti"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "mustapippuria"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "tuoretta persiljaa",
+          "note": "silputtuna"
+        }
+      ],
+      "preparationReviewed": "1. Hienonna sipuli, viipaloi selleri ja purjo ja jaa kukkakaali pieniksi kukinnoiksi.\n2. Kuumenna lihaliemi kiehuvaksi. Lisää sipuli, selleri, purjo, laakerinlehti ja mustapippuri. Keitä miedolla lämmöllä 5 minuuttia.\n3. Lisää kukkakaali ja keitä vielä noin 8 minuuttia, kunnes se on napakan pehmeää.\n4. Viipaloi nakit ja lisää keittoon. Kuumenna 3–4 minuuttia kiehumatta voimakkaasti.\n5. Poista laakerinlehti, maista liemi ja lisää tarvittaessa suolaa. Viimeistele persiljalla.\n\n## Muistiinpanot\n\n- Valitse vähähiilihydraattiset nakit ja tarkista pakkausmerkinnät. Kukkakaalin ja purjon määrä tekee tästä VHH-version, ei tiukkaa ketoreseptiä.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 11.55,
+        "carbs_total_per_serving_g": 15.22,
+        "protein_per_serving_g": 13.94,
+        "fat_per_serving_g": 17.52
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 5.13,
+      "macroScenario": "ESTIMATE WITH EVIDENCE",
+      "reason": "Generic boiled frankfurter Fineli7600, not ring sausage7607. Named PI50 applies to this1.162g availableCHO/100g product proxy; no human sausage GI is asserted. All broth served, removed bay bounded whole.",
+      "nextAction": "Owner review of exact hashed Draft version."
+    },
+    {
+      "priority": 8,
+      "batch": 2,
+      "recipeId": "jerk-kana",
+      "path": "reseptit/paaruoat/jerk-kana.md",
+      "currentSourceLfSha256": "9a5501f0f5a7e397f211ed3fc6017975122aa8ce7b3e3c9bbb741096157acafc",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F002806-release-3",
+        "afcd-F006250-release-3",
+        "afcd-F004193-release-3",
+        "afcd-F002896-release-3",
+        "afcd-F004729-release-3",
+        "afcd-F004210-release-3",
+        "afcd-F008969-release-3",
+        "afcd-F000448-release-3",
+        "afcd-F002991-release-3"
+      ],
+      "currentBlockers": [
+        "jerk-kana: kevätsipuli: 4 spring onions have no recipe-specific Fineli mass; the estimate cannot establish their available carbohydrate per serving.",
+        "jerk-kana: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/jerk-kana.md",
+      "sourceLfSha256": "9a5501f0f5a7e397f211ed3fc6017975122aa8ce7b3e3c9bbb741096157acafc",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 1000,
+          "unit": "g",
+          "item": "nahatonta ja luutonta broilerin reisilihaa"
+        },
+        {
+          "amount": 4,
+          "unit": "kpl",
+          "item": "kevätsipulia",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "habanero-chiliä",
+          "note": "siemenet poistettuna miedompaan versioon"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "limettimehua"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "soijakastiketta"
+        },
+        {
+          "amount": 2,
+          "unit": "tl",
+          "item": "maustepippuria"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kuivattua timjamia"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "jauhettua inkivääriä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "fariinisokeria"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "öljyä"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "riisiä",
+          "note": "lisäkkeeksi"
+        },
+        {
+          "amount": 240,
+          "unit": "g",
+          "item": "valutettuja punaisia kidneypapuja",
+          "note": "lisäkkeeksi"
+        },
+        {
+          "amount": 150,
+          "unit": "ml",
+          "item": "kookosmaitoa",
+          "note": "riisiä ja papuja varten"
+        },
+        {
+          "amount": 300,
+          "unit": "ml",
+          "item": "vettä",
+          "note": "riisiä ja papuja varten"
+        }
+      ],
+      "preparationReviewed": "1. Soseuta kevätsipuli, valkosipuli, chili, limettimehu, soijakastike, maustepippuri, timjami, inkivääri, fariinisokeri ja öljy marinadiksi.\n2. Hiero marinadi broilerin reisilihaan ja anna maustua jääkaapissa vähintään 1 tunti.\n3. Kuumenna uuni 200 asteeseen. Nosta kana vuokaan ja paista 45–55 minuuttia, kunnes liha on täysin kypsää ja pinta saanut väriä. Voit viimeistellä pinnan grillivastuksen alla.\n4. Huuhtele riisi. Laita kattilaan riisi, valutetut pavut, kookosmaito ja vesi. Kiehauta, peitä kannella ja hauduta miedolla lämmöllä pakkauksen ohjeen mukaan, kunnes riisi on kypsää ja neste imeytynyt.\n5. Tarjoa riisi ja pavut jerk-kanan kanssa.\n\n## Muistiinpanot\n\n- Chili on tulinen; poista siemenet tai käytä vain osa chilistä miedompaa makua varten. Kypsennä kana kauttaaltaan.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 77.22,
+        "carbs_total_per_serving_g": 84.75,
+        "protein_per_serving_g": 60.76,
+        "fat_per_serving_g": 20.99
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "B/F",
+      "reason": "The recipe includes300g rice,240g kidney beans and150ml coconut milk, not only chicken. Coconut-rice preparation is not ordinary boiled rice; marinade transfer is unmeasured. Existing coconut31 source describes a different composite food.",
+      "nextAction": "Exact rice/coconut preparation GI and marinade accounting; do not omit the side dish."
+    },
+    {
+      "priority": 9,
+      "batch": 2,
+      "recipeId": "pav-bhaji",
+      "path": "reseptit/paaruoat/pav-bhaji.md",
+      "currentSourceLfSha256": "aee53661e51534d3dc5ca6ec9bdad7eb9eaa16fa6b420e1c233cb7c1508461d5",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F004193-release-3",
+        "afcd-F003327-release-3",
+        "afcd-F003190-release-3",
+        "afcd-F006316-release-3",
+        "afcd-F009335-release-3",
+        "afcd-F002893-release-3",
+        "afcd-F003192-release-3"
+      ],
+      "currentBlockers": [
+        "pav-bhaji: pav bhaji masala -mausteseosta: No source-matched composition and preparation was resolved for “pav bhaji masala -mausteseosta”; it is not treated as zero.",
+        "pav-bhaji: tuoretta korianteria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "pav-bhaji: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/pav-bhaji.md",
+      "sourceLfSha256": "aee53661e51534d3dc5ca6ec9bdad7eb9eaa16fa6b420e1c233cb7c1508461d5",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "perunoita",
+          "note": "kuorittuna ja kuutioituna"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "kukkakaalia",
+          "note": "paloina"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "herneitä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "porkkanaa",
+          "note": "kuutioituna"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "öljyä"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "murskattuna"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "tomaattimurskaa"
+        },
+        {
+          "amount": 5,
+          "unit": "g",
+          "item": "jauhettua juustokuminaa"
+        },
+        {
+          "amount": 4,
+          "unit": "g",
+          "item": "jauhettua korianteria"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "savupaprikajauhetta"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "kurkumajauhetta"
+        },
+        {
+          "amount": 1,
+          "unit": "g",
+          "item": "chilijauhetta"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "pehmeitä vehnäsämpylöitä",
+          "note": "tarjoiluun"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "tuoretta korianteria",
+          "note": "tarjoiluun"
+        }
+      ],
+      "preparationReviewed": "1. Keitä perunat, kukkakaali, herneet ja porkkana pehmeiksi. Valuta ja säästä keitinvettä.\n2. Kuullota sipuli öljyssä. Lisää valkosipuli, juustokumina, korianteri, savupaprika, kurkuma ja chili. Paista minuutti.\n3. Lisää tomaatit ja suola. Hauduta 10 minuuttia.\n4. Lisää kypsät kasvikset ja muussaa pannulla karkeaksi soseeksi. Ohenna keitinvedellä sopivaksi.\n5. Hauduta seosta 10–15 minuuttia välillä sekoittaen. Sekoita joukkoon puolet voista ja korianteri.\n6. Halkaise sämpylät ja paahda pannulla lopussa voissa. Tarjoa bhajin kanssa.\n\n## Muistiinpanot\n\n- Mausteseoksen määrät on annettu valmiiksi mitattuna, jotta maku ja ravintoarvio pysyvät toistettavina.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 65.29,
+        "carbs_total_per_serving_g": 72.87,
+        "protein_per_serving_g": 13.11,
+        "fat_per_serving_g": 19.24
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/B",
+      "reason": "Spices are already individually weighed, not an unknown commercial masala.400g potatoes are boiled, mashed and stewed10–15min;300g soft rolls toasted in butter. Potato66/roll64 category analogies do not establish these preparations.",
+      "nextAction": "Primary matching potato/roll preparation evidence. No boiled-potato shortcut or removal of bread."
+    },
+    {
+      "priority": 10,
+      "batch": 2,
+      "recipeId": "nakkikastike-kukkakaalimuusi",
+      "path": "reseptit/paaruoat/nakkikastike-kukkakaalimuusi.md",
+      "currentSourceLfSha256": "a329a55acc5af70cedc06c6bc0c3ed9f5be8d100e95baa90675e02822aaf8fae",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "nakkikastike-kukkakaalimuusi: nakkeja: GI evidence is missing.",
+        "nakkikastike-kukkakaalimuusi: cumulative omitted available carbohydrate is 2.240 g/serving, at or above the 2 g editorial tolerance."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "TECHNICAL_INTEGRATION",
+      "currentPublishedPath": "reseptit/paaruoat/nakkikastike-kukkakaalimuusi.md",
+      "sourceLfSha256": "a329a55acc5af70cedc06c6bc0c3ed9f5be8d100e95baa90675e02822aaf8fae",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "nakkeja"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "pieni sipuli"
+        },
+        {
+          "amount": 2,
+          "unit": "dl",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 1,
+          "unit": "dl",
+          "item": "lihalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "Dijon-sinappia"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "mustapippuria"
+        },
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "kukkakaalia"
+        },
+        {
+          "amount": 40,
+          "unit": "g",
+          "item": "voita"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa",
+          "note": "maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Paloittele nakit ja hienonna sipuli. Ruskista nakkeja pannulla ja lisää sipuli kuullottumaan.\n2. Kaada pannulle lihaliemi ja kuohukerma. Sekoita joukkoon sinappi ja mustapippuri. Anna kiehua hiljaa 8–10 minuuttia, kunnes kastike hieman sakenee. Maista ennen suolan lisäämistä.\n3. Paloittele kukkakaali ja keitä suolatussa vedessä pehmeäksi. Valuta huolellisesti ja anna ylimääräisen höyryn haihtua.\n4. Soseuta kukkakaali voin kanssa. Mausta suolalla ja tarjoa nakkikastikkeen kanssa.\n\n## Muistiinpanot\n\n- Valitse mahdollisimman vähähiilihydraattiset nakit ja tarkista ainesosaluettelo.\n- Jos kastikkeesta halutaan paksumpi, anna sen kiehua hieman pidempään. Älä käytä vehnäjauhoa.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 7.88,
+        "carbs_total_per_serving_g": 10.96,
+        "protein_per_serving_g": 15.69,
+        "fat_per_serving_g": 45.87
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 2.97,
+      "macroScenario": "ESTIMATE WITH EVIDENCE",
+      "reason": "Original cauliflower mash, no starch added. Source stock portion conversion is Fineli-specific; original5g Dijon is named and bounded, not zero.",
+      "nextAction": "Owner review of exact hashed Draft version."
+    },
+    {
+      "priority": 11,
+      "batch": 3,
+      "recipeId": "vhh-letut",
+      "path": "reseptit/jalkiruoat/vhh-letut.md",
+      "currentSourceLfSha256": "0b2f9a1915de8d0f4558a5084a4011cc2ffa285a0fddcade8c9aec8be05bd94e",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F006077-release-3"
+      ],
+      "currentBlockers": [
+        "vhh-letut: ripaus suolaa: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "TECHNICAL_INTEGRATION",
+      "currentPublishedPath": "reseptit/jalkiruoat/vhh-letut.md",
+      "sourceLfSha256": "0b2f9a1915de8d0f4558a5084a4011cc2ffa285a0fddcade8c9aec8be05bd94e",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 4,
+          "unit": "kpl",
+          "item": "kananmunaa"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "maustamatonta tuorejuustoa"
+        },
+        {
+          "amount": 50,
+          "unit": "g",
+          "item": "mantelijauhoa"
+        },
+        {
+          "amount": 1,
+          "unit": "dl",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "erytritolia"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "voita paistamiseen"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "ripaus suolaa"
+        }
+      ],
+      "preparationReviewed": "1. Soseuta kananmunat, tuorejuusto, mantelijauho, kerma ja erytritoli tasaiseksi taikinaksi.\n2. Anna taikinan levätä 5 minuuttia, jotta mantelijauho sitoo nestettä.\n3. Kuumenna pieni määrä voita paistinpannulla. Kaada pannulle ohut kerros taikinaa.\n4. Paista miedolla keskilämmöllä, kunnes reunat kuivuvat. Käännä varovasti ja paista toinen puoli.\n5. Toista lopulla taikinalla. Tarjoa sellaisenaan tai vähäsokeristen marjojen kanssa.\n\n## Muistiinpanot\n\nTaikina on tavallista lettutaikinaa hauraampi. Tee letut pieniksi, niin ne on helpompi kääntää.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 2.57,
+        "carbs_total_per_serving_g": 7.09,
+        "protein_per_serving_g": 11.73,
+        "fat_per_serving_g": 24.56
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 0.6,
+      "macroScenario": "ESTIMATE WITH EVIDENCE",
+      "reason": "Full-fat100%whole-almond meal, dry milling without oil/fibre separation, Fineli379 separate LOW composition proxy. Not defatted flour. No almond GI invented; small source availableCHO is explicitly omitted under existing limits. Fat/cheese percentages are specified to match composition.",
+      "nextAction": "Owner review of exact hashed Draft version."
+    },
+    {
+      "priority": 12,
+      "batch": 3,
+      "recipeId": "vhh-juustokakku",
+      "path": "reseptit/jalkiruoat/vhh-juustokakku.md",
+      "currentSourceLfSha256": "3bcb2bc49ab09f25eaebbe24ab59fe948ba1f86619708b71261adb01b1dddcda",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F006077-release-3",
+        "afcd-F009350-release-3"
+      ],
+      "currentBlockers": [
+        "vhh-juustokakku: sitruunamehua: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "CONDITIONAL_NOT_ACTIVATED",
+      "currentPublishedPath": "reseptit/jalkiruoat/vhh-juustokakku.md",
+      "sourceLfSha256": "3bcb2bc49ab09f25eaebbe24ab59fe948ba1f86619708b71261adb01b1dddcda",
+      "servings": 10,
+      "ingredientsReviewed": [
+        {
+          "amount": 120,
+          "unit": "g",
+          "item": "mantelijauhoa"
+        },
+        {
+          "amount": 50,
+          "unit": "g",
+          "item": "voita sulatettuna"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "maustamatonta tuorejuustoa"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "smetanaa"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "kananmunaa"
+        },
+        {
+          "amount": 80,
+          "unit": "g",
+          "item": "erytritolia"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "vaniljauutetta"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "sitruunamehua"
+        }
+      ],
+      "preparationReviewed": "1. Lämmitä uuni 160 asteeseen. Vuoraa 20 cm irtopohjavuoan pohja leivinpaperilla.\n2. Sekoita mantelijauho ja sulatettu voi. Painele seos vuoan pohjalle ja esipaista 8 minuuttia.\n3. Sekoita tuorejuusto ja erytritoli tasaiseksi. Lisää smetana, kananmunat yksi kerrallaan, vanilja ja sitruunamehu.\n4. Kaada täyte pohjan päälle. Aseta vuoka uunissa ritilälle ja paista noin 50 minuuttia; keskusta saa vielä hieman hytkyä.\n5. Sammuta uuni, raota luukkua ja anna kakun jäähtyä uunissa 30 minuuttia.\n6. Jäähdytä jääkaapissa vähintään neljä tuntia ennen leikkaamista.\n\n## Muistiinpanot\n\nHuoneenlämpöiset täyteainekset sekoittuvat tasaisemmin. Kakku kiinteytyy jäähtyessään; älä paista pintaa tummaksi.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 2.81,
+        "carbs_total_per_serving_g": 12.36,
+        "protein_per_serving_g": 7.76,
+        "fat_per_serving_g": 20.25
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 0.62,
+      "macroScenario": "INSUFFICIENT SOURCE DATA",
+      "reason": "Original smetana retained, now matched Fineli630 rather than wrong creme-fraiche628. Total polyols remain unknown; no source-complete new four-macro package. GK0.62 is an unactivated scenario only.",
+      "nextAction": "Recover missing total-polyol/source data or obtain a separate owner content decision; no new macro withholding activated."
+    },
+    {
+      "priority": 13,
+      "batch": 3,
+      "recipeId": "vhh-korvapuustit",
+      "path": "reseptit/jalkiruoat/vhh-korvapuustit.md",
+      "currentSourceLfSha256": "5719d9a040bacca1c6a8106269c736d57b8e560446ef81ce93a25b0d845aed2f",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F006077-release-3",
+        "afcd-F007502-release-3",
+        "afcd-F002963-release-3"
+      ],
+      "currentBlockers": [
+        "vhh-korvapuustit: kanelia: Ingredient mass is missing or invalid."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "TECHNICAL_INTEGRATION",
+      "currentPublishedPath": "reseptit/jalkiruoat/vhh-korvapuustit.md",
+      "sourceLfSha256": "5719d9a040bacca1c6a8106269c736d57b8e560446ef81ce93a25b0d845aed2f",
+      "servings": 8,
+      "ingredientsReviewed": [
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "mozzarella-raastetta"
+        },
+        {
+          "amount": 50,
+          "unit": "g",
+          "item": "maustamatonta tuorejuustoa"
+        },
+        {
+          "amount": 120,
+          "unit": "g",
+          "item": "mantelijauhoa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "psylliumia"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "kananmunaa"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "voita täytteeseen"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "erytritolia täytteeseen"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "kanelia"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "kananmunaa voiteluun"
+        }
+      ],
+      "preparationReviewed": "1. Lämmitä uuni 200 asteeseen ja vuoraa pelti leivinpaperilla.\n2. Sulata mozzarella ja tuorejuusto kattilassa miedolla lämmöllä sekoittaen, kunnes seos on yhtenäinen.\n3. Sekoita mantelijauho ja psyllium. Lisää lämmin juustoseos ja yksi kananmuna. Vaivaa nopeasti tasaiseksi.\n4. Kauli taikina kahden leivinpaperin välissä noin puolen sentin levyksi.\n5. Levitä päälle pehmeä voi. Sekoita erytritoli ja kaneli, ripottele seos voin päälle.\n6. Kääri levy rullalle ja leikkaa kahdeksaksi palaksi. Aseta palat pellille leikkuupinta ylöspäin ja paina keskeltä.\n7. Voitele toisella vatkatulla kananmunalla ja paista 12–15 minuuttia, kunnes pullat ovat kullanruskeita.\n8. Anna jäähtyä hetki ennen tarjoamista.\n\n## Muistiinpanot\n\nTaikina on helpompi kaulia lämpimänä. Jos se tarttuu, lämmitä sitä hetki ja käytä leivinpaperia apuna.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 1.66,
+        "carbs_total_per_serving_g": 8.22,
+        "protein_per_serving_g": 8.79,
+        "fat_per_serving_g": 16.5
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 0.1,
+      "macroScenario": "ESTIMATE WITH EVIDENCE",
+      "reason": "Full-fat100%whole-almond meal, dry milling without oil/fibre separation, Fineli379 separate LOW composition proxy. Not defatted flour. No almond GI invented; small source availableCHO is explicitly omitted under existing limits. Fat/cheese percentages are specified to match composition. USDA cinnamon tablespoon7.8g replaces unsupported15g conversion; original1tbsp unchanged. Native Fineli psyllium tablespoon10g used, no AFCD inferredP0.",
+      "nextAction": "Owner review of exact hashed Draft version."
+    },
+    {
+      "priority": 14,
+      "batch": 3,
+      "recipeId": "liha-juureskeitto-perunaton",
+      "path": "reseptit/paaruoat/liha-juureskeitto-perunaton.md",
+      "currentSourceLfSha256": "efd168421dc29643b4d730a92def449ddb1c23344a9c7b3fd990d1f5925f09d7",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F000514-release-3",
+        "afcd-F009021-release-3",
+        "afcd-F006321-release-3"
+      ],
+      "currentBlockers": [
+        "liha-juureskeitto-perunaton: lanttua: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "liha-juureskeitto-perunaton: laakerinlehteä: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "liha-juureskeitto-perunaton: kokonaista mustapippuria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "liha-juureskeitto-perunaton: silputtua persiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "TECHNICAL_INTEGRATION",
+      "currentPublishedPath": "reseptit/paaruoat/liha-juureskeitto-perunaton.md",
+      "sourceLfSha256": "efd168421dc29643b4d730a92def449ddb1c23344a9c7b3fd990d1f5925f09d7",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "naudan keittolihaa"
+        },
+        {
+          "amount": 1.5,
+          "unit": "l",
+          "item": "vettä"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "lanttua"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "porkkanaa"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "juuriselleriä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "laakerinlehteä"
+        },
+        {
+          "amount": 6,
+          "unit": "kpl",
+          "item": "kokonaista mustapippuria"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "silputtua persiljaa"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa"
+        }
+      ],
+      "preparationReviewed": "1. Laita liha kylmään veteen kattilaan. Kuumenna kiehuvaksi ja kuori pinnalle muodostuva vaahto.\n2. Lisää sipuli, laakerinlehdet ja kokonaiset pippurit. Hauduta kannen alla hiljaa noin 1,5 tuntia, kunnes liha on mureaa.\n3. Nosta liha leikkuulaudalle ja siivilöi liemi. Paloittele liha.\n4. Kuori ja kuutioi lanttu, porkkana ja selleri. Keitä ne siivilöidyssä liemessä 12–15 minuuttia.\n5. Lisää liha takaisin, kuumenna ja mausta suolalla. Viimeistele persiljalla.\n\n## Muistiinpanot\n\nJuuresten kypsymisajat vaihtelevat kuutioiden koon mukaan.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 5.61,
+        "carbs_total_per_serving_g": 9.04,
+        "protein_per_serving_g": 39.75,
+        "fat_per_serving_g": 1.19
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 2.41,
+      "macroScenario": "ESTIMATE WITH EVIDENCE",
+      "reason": "Fineli719 matches the original beef-stew cut. Original onion remains strained; its entire source nutrient input is bounded, no recipe change to keep it or invented extraction percentage. Full edible beef/root input counted without unmeasured skimming-loss credit.",
+      "nextAction": "Owner review of exact hashed Draft version."
+    },
+    {
+      "priority": 15,
+      "batch": 3,
+      "recipeId": "lahi-ita-menemen-sumakilla",
+      "path": "reseptit/aamupalat/lahi-ita-menemen-sumakilla.md",
+      "currentSourceLfSha256": "761665715f51419e9c1de3beffaf5d0c375b92475aa111c9dcefeb8a09a6d899",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "lahi-ita-menemen-sumakilla: vihreä paprika: AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "TECHNICAL_INTEGRATION",
+      "currentPublishedPath": "reseptit/aamupalat/lahi-ita-menemen-sumakilla.md",
+      "sourceLfSha256": "761665715f51419e9c1de3beffaf5d0c375b92475aa111c9dcefeb8a09a6d899",
+      "servings": 2,
+      "ingredientsReviewed": [
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kananmuna"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "tomaatti"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "vihreä paprika"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "sumakki"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Kuutioi tomaatti ja vihreä paprika.\n2. Kuumenna öljy pannulla ja paista paprika pehmeäksi. Lisää tomaatti ja kypsennä, kunnes se alkaa hajota.\n3. Riko munat pannulle ja sekoita ne tomaattien joukkoon. Kypsennä miedolla lämmöllä juuri hyytyviksi.\n4. Mausta sumakilla ja suolalla ja tarjoa heti.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 4.45,
+        "carbs_total_per_serving_g": 6.23,
+        "protein_per_serving_g": 8.08,
+        "fat_per_serving_g": 12.27
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 1.8,
+      "macroScenario": "ESTIMATE WITH EVIDENCE",
+      "reason": "Defined2g ordinary ground sumac dose, not a reduced1g dose to fit a threshold. Manufacturer AU availableCHO63.5 supports separate GK omission cap; all macros use full2g ingredient mass bound, without filling polyols/fibre.",
+      "nextAction": "Owner review of exact hashed Draft version."
+    },
+    {
+      "priority": 16,
+      "batch": 4,
+      "recipeId": "siemengranola-jogurtilla",
+      "path": "reseptit/aamupalat/siemengranola-jogurtilla.md",
+      "currentSourceLfSha256": "0ea4aec2500d7f974f28db074b912bcb4a2c987dc58f35c5de3ad736bbdd404e",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F008212-release-3",
+        "afcd-F008215-release-3",
+        "afcd-F008210-release-3",
+        "afcd-F002963-release-3",
+        "afcd-F007619-release-3"
+      ],
+      "currentBlockers": [
+        "siemengranola-jogurtilla: cumulative omitted available carbohydrate is 2.064 g/serving, at or above the 2 g editorial tolerance."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/aamupalat/siemengranola-jogurtilla.md",
+      "sourceLfSha256": "0ea4aec2500d7f974f28db074b912bcb4a2c987dc58f35c5de3ad736bbdd404e",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 80,
+          "unit": "g",
+          "item": "kurpitsansiemeniä"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "item": "auringonkukansiemeniä"
+        },
+        {
+          "amount": 40,
+          "unit": "g",
+          "item": "pellavansiemenrouhetta"
+        },
+        {
+          "amount": 40,
+          "unit": "g",
+          "item": "mantelilastuja"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kanelia"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "maustamatonta kreikkalaista jogurttia"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "vadelmia"
+        }
+      ],
+      "preparationReviewed": "1. Kuumenna uuni 160 asteeseen. Sulata voi ja sekoita siihen kaneli.\n2. Yhdistä siemenet ja mantelilastut kulhossa, kaada maustevoi joukkoon ja sekoita.\n3. Levitä seos leivinpaperille ja paahda 18–22 minuuttia. Sekoita kerran ja tarkkaile loppuvaiheessa.\n4. Anna jäähtyä täysin, jotta siemenet rapeutuvat. Tarjoa jogurtin ja vadelmien kanssa.\n\n## Muistiinpanot\n\nSäilytä täysin jäähtynyt granola tiiviissä purkissa. Marjat ja jogurtti tarjoillaan erikseen.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 8.09,
+        "carbs_total_per_serving_g": 16.54,
+        "protein_per_serving_g": 18.68,
+        "fat_per_serving_g": 40.86
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "D/A",
+      "reason": "Roasted mixed seeds and almond flakes served with raw raspberries and yogurt. Fineli raspberry448 total polyols unknown;100g/4 cannot be omitted from full macros. Original GK omissions exceed cumulative2g. Pumpkin fibre is another source gap.",
+      "nextAction": "Recover raspberry total-polyol and pumpkin-fibre records; separately match roasted-seed available CHO/GI."
+    },
+    {
+      "priority": 17,
+      "batch": 4,
+      "recipeId": "bulgogi",
+      "path": "reseptit/paaruoat/bulgogi.md",
+      "currentSourceLfSha256": "c84490ec24ce44ad3f0930dbb242db9017a01431f2d910e0723af526fffc8cc8",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F000810-release-3",
+        "afcd-F007682-release-3",
+        "afcd-F008969-release-3",
+        "afcd-F006187-release-3",
+        "afcd-F004193-release-3",
+        "afcd-F006250-release-3",
+        "afcd-F006618-release-3"
+      ],
+      "currentBlockers": [
+        "bulgogi: kevätsipulia: Ingredient mass is missing or invalid."
+      ],
+      "priorOperation141Finding": "Pear GI38 is a food-family mean; soy60g Fineli31 gives1.425g A/serving, beyond the individual omission. Need named soy product and a specific raw pear GI; do not reuse previous104.XX partial/invalid aggregate.",
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/bulgogi.md",
+      "sourceLfSha256": "c84490ec24ce44ad3f0930dbb242db9017a01431f2d910e0723af526fffc8cc8",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "naudan ulkofileetä",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "jasmiiniriisiä",
+          "note": "kuivapaino"
+        },
+        {
+          "amount": 60,
+          "unit": "ml",
+          "item": "soijakastiketta"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "fariinisokeria"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "seesamiöljyä"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "päärynää",
+          "note": "hienoksi raastettuna"
+        },
+        {
+          "amount": 0.5,
+          "unit": "kpl",
+          "item": "keltasipulia",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kevätsipulia",
+          "note": "viipaloituna"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "seesaminsiemeniä"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tl",
+          "item": "mustapippuria"
+        }
+      ],
+      "preparationReviewed": "1. Sekoita soijakastike, fariinisokeri, seesamiöljy, valkosipuli, raastettu päärynä ja mustapippuri.\n2. Kääntele naudanviipaleet marinadissa, lisää sipuli ja anna maustua jääkaapissa 20–30 minuuttia.\n3. Huuhtele riisi ja keitä pakkauksen ohjeen mukaan.\n4. Kuumenna iso paistinpannu hyvin kuumaksi. Paista liha erissä nopeasti, jotta se ruskistuu eikä ala hautua nesteessään.\n5. Lisää kevätsipuli ja seesaminsiemenet. Tarjoa heti riisin kanssa.\n\n## Muistiinpanot\n\n- Ohuen lihan saa leikattua helpommin, kun sen laittaa pakastimeen noin 20 minuutiksi ennen viipalointia.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 62.81,
+        "carbs_total_per_serving_g": 64.98,
+        "protein_per_serving_g": 43.15,
+        "fat_per_serving_g": 8.29
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "B/F",
+      "reason": "Jasmine rice plus beef in grated-pear/sugar/soy marinade. The pear is heated and the consumed marinade fraction is unspecified; raw pear GI and nominal full marinade do not establish consumed response. Prior P2/source barrier remains.",
+      "nextAction": "Exact heated-pear/marinade source and consumed quantity, not only onion grams."
+    },
+    {
+      "priority": 18,
+      "batch": 4,
+      "recipeId": "congee-riisipuuro",
+      "path": "reseptit/paaruoat/congee-riisipuuro.md",
+      "currentSourceLfSha256": "1041166cfeaedda86d91d80ab89cd9ebd39b9abdeff0f8164fc5720389212fca",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F007682-release-3",
+        "afcd-F008936-release-3",
+        "afcd-F004213-release-3",
+        "afcd-F006250-release-3",
+        "afcd-F006187-release-3"
+      ],
+      "currentBlockers": [
+        "congee-riisipuuro: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "congee-riisipuuro: tuoretta inkivääriä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "congee-riisipuuro: kevätsipulia: Ingredient mass is missing or invalid."
+      ],
+      "priorOperation141Finding": "GI80 is a specific40-minute jasmine porridge; published60-minute congee is not the same preparation. Could prepare exact40-minute version, but current AFCD dry-rice A and sesame-oil/stock sources also need explicit identities. No automatic use of GI31 black-rice/coconut mixed porridge.",
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/congee-riisipuuro.md",
+      "sourceLfSha256": "1041166cfeaedda86d91d80ab89cd9ebd39b9abdeff0f8164fc5720389212fca",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "jasmiiniriisiä"
+        },
+        {
+          "amount": 2,
+          "unit": "l",
+          "item": "kanalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "tuoretta inkivääriä",
+          "note": "suikaleina"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kevätsipulia",
+          "note": "viipaleina"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "soijakastiketta",
+          "note": "tarjoiluun"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "seesamiöljyä",
+          "note": "tarjoiluun"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "keitettyä kananmunaa",
+          "note": "puolitettuna, valinnainen"
+        }
+      ],
+      "preparationReviewed": "1. Huuhtele riisi kylmällä vedellä.\n2. Laita riisi, vesi tai liemi ja suola kattilaan. Kiehauta ja keitä hyvin miedolla lämmöllä kannen raossa noin 60 minuuttia. Sekoita välillä.\n3. Kun riisi on hajonnut pehmeäksi puuroksi, sekoita joukkoon inkivääri ja kypsennä vielä 5 minuuttia.\n4. Jaa puuro kulhoihin. Lisää kevätsipulia, soijakastiketta ja seesamiöljyä. Tarjoa halutessasi kananmunan kanssa.\n\n## Muistiinpanot\n\n- Puuro sakenee jäähtyessään. Lisää tarjoiluvaiheessa kuumaa vettä tai lientä, jos haluat siitä ohuempaa.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 40.21,
+        "carbs_total_per_serving_g": 40.8,
+        "protein_per_serving_g": 8.5,
+        "fat_per_serving_g": 5.14
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "B",
+      "reason": "200g jasmine rice is cooked about60min until disintegrated in2l stock, with optional eggs. Ordinary boiled jasmine GI does not match congee; a multi-product congee mean is not an exact preparation source.",
+      "nextAction": "Matched congee preparation/product GI; define optional-egg version and exact stock."
+    },
+    {
+      "priority": 19,
+      "batch": 4,
+      "recipeId": "paella-valenciana",
+      "path": "reseptit/paaruoat/paella-valenciana.md",
+      "currentSourceLfSha256": "49089d94833037456fa7f21b7e9b258a531c731db6f0344b2a789add6b96b3dd",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F002806-release-3",
+        "afcd-F007682-release-3",
+        "afcd-F000431-release-3",
+        "afcd-F008936-release-3",
+        "afcd-F006316-release-3"
+      ],
+      "currentBlockers": [
+        "paella-valenciana: kanalientä: No suitable GI source was found for prepared chicken stock; its known carbohydrate exceeds the current per-serving omission tolerance."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/paella-valenciana.md",
+      "sourceLfSha256": "49089d94833037456fa7f21b7e9b258a531c731db6f0344b2a789add6b96b3dd",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "nahatonta ja luutonta broilerin reisilihaa"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "puuroriisiä, kuivapaino"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "tuoreita vihreitä papuja",
+          "note": "paloiteltuna"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "tomaattimurskaa"
+        },
+        {
+          "amount": 1,
+          "unit": "l",
+          "item": "kanalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "savupaprikajauhetta"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tl",
+          "item": "sahramia"
+        },
+        {
+          "amount": 3,
+          "unit": "rkl",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "rosmariinin oksa",
+          "note": "valinnainen"
+        }
+      ],
+      "preparationReviewed": "1. Kuumenna öljy leveässä pannussa. Ruskista broileri ja jäniksenpalat kauttaaltaan.\n2. Lisää pavut ja paista muutama minuutti. Sekoita joukkoon tomaatti ja savupaprika.\n3. Lisää riisi ja sekoita, jotta jyvät peittyvät öljyyn. Kaada pannulle kuuma liemi, johon sahrami on liotettu. Mausta suolalla. Lisää halutessasi rosmariinin oksa liemeen; poista oksa ennen tarjoamista.\n4. Levitä ainekset tasaisesti pannulle. Keitä keskilämmöllä noin 8 minuuttia ja jatka miedommalla lämmöllä 12–15 minuuttia. Älä sekoita riisiä enää liemen lisäämisen jälkeen.\n5. Kun riisi on kypsää ja neste imeytynyt, nosta pannu liedeltä. Peitä kevyesti ja anna vetäytyä 5 minuuttia.\n\n## Muistiinpanot\n\n- Jos käytät vain broileria, valitse koipilihaa, joka pysyy mehevänä pitkän kypsennyksen ajan.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 59.13,
+        "carbs_total_per_serving_g": 61.1,
+        "protein_per_serving_g": 40.13,
+        "fat_per_serving_g": 16.69
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "B/CONTENT",
+      "reason": "300g porridge-type rice toasted in oil, cooked by absorption and rested. Generic rice67/boiled jasmine substitution invalid. Preparation also refers to rabbit not listed in current ingredients.",
+      "nextAction": "Resolve rice/preparation GI and rabbit/chicken wording as content decision; no new number."
+    },
+    {
+      "priority": 20,
+      "batch": 4,
+      "recipeId": "bun-cha-hanoi",
+      "path": "reseptit/paaruoat/bun-cha-hanoi.md",
+      "currentSourceLfSha256": "c5f2ee00e21ab79683da7f45d6c97a5fc87435b8c7460fc17a2603c46146c16a",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F006862-release-3",
+        "afcd-F008969-release-3",
+        "afcd-F004193-release-3",
+        "afcd-F003192-release-3"
+      ],
+      "currentBlockers": [
+        "bun-cha-hanoi: kalakastiketta: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "bun-cha-hanoi: salottisipulia: Ingredient mass is missing or invalid.",
+        "bun-cha-hanoi: riisiviinietikkaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "priorOperation141Finding": "Fish sauce120g total lacks comprehensive available-CHO source independent of polyols. Fineli substitutions close garlic/herbs, but fish sauce is not removed. Named boiled rice noodle GI61 is promising, not yet whole recipe ready.",
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/bun-cha-hanoi.md",
+      "sourceLfSha256": "c5f2ee00e21ab79683da7f45d6c97a5fc87435b8c7460fc17a2603c46146c16a",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "porsaan jauhelihaa"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "porsaan kylkeä ilman nahkaa",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "kuivattuja riisivermisellejä"
+        },
+        {
+          "amount": 3,
+          "unit": "rkl",
+          "item": "kalakastiketta",
+          "note": "lihamarinadiin"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "fariinisokeria",
+          "note": "lihamarinadiin"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "salottisipulia",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "mustapippuria"
+        },
+        {
+          "amount": 60,
+          "unit": "ml",
+          "item": "kalakastiketta",
+          "note": "dippiliemeen"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "riisiviinietikkaa"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "sokeria",
+          "note": "dippiliemeen"
+        },
+        {
+          "amount": 250,
+          "unit": "ml",
+          "item": "lämmintä vettä",
+          "note": "dippiliemeen"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "porkkanaa",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "tuoretta korianteria"
+        }
+      ],
+      "preparationReviewed": "1. Sekoita jauhelihaan puolet kalakastikkeesta, puolet fariinisokerista, puolet valkosipulista ja salottisipulista sekä pippuri. Muotoile pieniksi litteiksi pihveiksi.\n2. Sekoita vatsaviipaleisiin loput marinadin aineksista. Anna lihojen maustua jääkaapissa vähintään 30 minuuttia.\n3. Sekoita dippiliemen kalakastike, riisiviinietikka, sokeri ja lämmin vesi. Lisää porkkana.\n4. Kypsennä riisivermisellit pakkauksen ohjeen mukaan ja huuhtele kylmällä vedellä.\n5. Grillaa tai paista pihvit ja vatsaviipaleet erissä, kunnes ne ovat läpikypsiä ja saaneet hieman paistopintaa.\n6. Tarjoa liha dippiliemessä tai sen vieressä. Nosta pöytään nuudelit ja korianteri erikseen.\n\n## Muistiinpanot\n\n- Käytä raakaa sianlihaa käsitellessäsi eri leikkuulautaa kuin kypsille aineksille. Kypsennä liha kauttaaltaan.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 76.9,
+        "carbs_total_per_serving_g": 79.89,
+        "protein_per_serving_g": 38.96,
+        "fat_per_serving_g": 35.93
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "B/F",
+      "reason": "Grilled pork marinade, separately served sweet dipping broth and rinsed rice vermicelli. Dipping broth may be served beside meat; full ingredient consumption and hot-noodle analogy are not established.",
+      "nextAction": "Define consumed dip/marinade and match rinsed vermicelli source; preserve dish."
+    },
+    {
+      "priority": 21,
+      "batch": 5,
+      "recipeId": "chettinad-kana",
+      "path": "reseptit/paaruoat/chettinad-kana.md",
+      "currentSourceLfSha256": "92672822970d68f41f3a1698dbd4c665c928a48738ba2447f586e47f7c018da3",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F002806-release-3",
+        "afcd-F004193-release-3",
+        "afcd-F004213-release-3",
+        "afcd-F006618-release-3",
+        "afcd-F003190-release-3",
+        "afcd-F002963-release-3",
+        "afcd-F006159-release-3"
+      ],
+      "currentBlockers": [
+        "chettinad-kana: fenkolinsiemeniä: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "chettinad-kana: tuoreita currylehtiä: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/chettinad-kana.md",
+      "sourceLfSha256": "92672822970d68f41f3a1698dbd4c665c928a48738ba2447f586e47f7c018da3",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "broilerin reisilihaa",
+          "note": "paloina"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "tomaattia",
+          "note": "kuutioituna"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta inkivääriä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "mustapippureita"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "korianterinsiemeniä"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "fenkolinsiemeniä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "kanelitanko"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "öljyä"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "tuoreita currylehtiä",
+          "note": "valinnainen"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 1,
+          "unit": "dl",
+          "item": "vettä"
+        }
+      ],
+      "preparationReviewed": "1. Paahda kuivalla pannulla pippurit, korianterin- ja fenkolinsiemenet sekä kaneli, kunnes ne tuoksuvat. Jäähdytä ja jauha.\n2. Kuumenna öljy kattilassa. Kuullota sipuli. Lisää hienonnettu valkosipuli ja inkivääri.\n3. Lisää broileri ja ruskista kevyesti joka puolelta.\n4. Sekoita joukkoon mausteseos ja currylehdet. Lisää tomaatit ja suola.\n5. Kaada vesi, peitä ja hauduta 25–30 minuuttia, kunnes kana on kypsää ja kastike sakeaa.\n6. Tarjoa basmatiriisin tai leivän kanssa.\n\n## Muistiinpanot\n\n- Säädä mustapippurin määrää, jos haluat miedomman kastikkeen.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 3.59,
+        "carbs_total_per_serving_g": 5.1,
+        "protein_per_serving_g": 34.21,
+        "fat_per_serving_g": 12.37
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "C/E",
+      "reason": "Roasted whole pepper/coriander/fennel plus ground cinnamon stick;10g optional curry leaves. Powder conversions do not establish cinnamon-stick weight or curry-leaf composition. Chicken/vegetables alone do not determine cumulative spice omissions.",
+      "nextAction": "Weighed exact stick/leaves and complete cumulative omission/source budget; avoid seed-spice GI50."
+    },
+    {
+      "priority": 22,
+      "batch": 5,
+      "recipeId": "uunimakkara-sipulipedilla",
+      "path": "reseptit/paaruoat/uunimakkara-sipulipedilla.md",
+      "currentSourceLfSha256": "4bc6f751fc46af1fcb7b72419438cc55fd8132b6893d74ddb65a9b732089b092",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F006316-release-3"
+      ],
+      "currentBlockers": [
+        "uunimakkara-sipulipedilla: lenkkimakkaraa: GI evidence is missing."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/uunimakkara-sipulipedilla.md",
+      "sourceLfSha256": "4bc6f751fc46af1fcb7b72419438cc55fd8132b6893d74ddb65a9b732089b092",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "lenkkimakkaraa"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "cheddarjuustoraastetta"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "Dijon-sinappia"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "ranskankermaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "paprikajauhetta"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "mustapippuria"
+        }
+      ],
+      "preparationReviewed": "1. Kuumenna uuni 200 asteeseen. Viillä makkaraan pitkittäisiä viiltoja ja nosta se voideltuun uunivuokaan.\n2. Hienonna sipuli ja kuullota voissa pehmeäksi. Sekoita ranskankerma, sinappi, paprika ja pippuri sipulin joukkoon.\n3. Levitä seos makkaran päälle ja ripottele pinnalle juustoraaste.\n4. Paista 20–25 minuuttia, kunnes makkara on kuuma ja juusto saanut väriä.\n5. Anna jäähtyä hetki ennen leikkaamista.\n\n## Muistiinpanot\n\nMakkaroiden koostumus vaihtelee. Tarkista tuotteen ravintosisältö, jos seuraat hiilihydraatteja.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 12.02,
+        "carbs_total_per_serving_g": 12.7,
+        "protein_per_serving_g": 19.58,
+        "fat_per_serving_g": 38.5
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/D",
+      "reason": "Ring sausage500g has Fineli7607 A7.598/100g, above existing<=5 low-CHO scope. Dijon30g/4 nominal label-energy omission alone11.25kcal exceeds10. Product choice cannot silently become low-CHO frankfurter.",
+      "nextAction": "Exact ring-sausage GI/composition and full mustard data, not reduced mustard dose."
+    },
+    {
+      "priority": 23,
+      "batch": 5,
+      "recipeId": "char-siu",
+      "path": "reseptit/paaruoat/char-siu.md",
+      "currentSourceLfSha256": "1fac33770ec0fec36df5e22131cd067b4e237b2047956e3f126f1e9fecb3a9a6",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F007037-release-3",
+        "afcd-F008008-release-3",
+        "afcd-F004380-release-3",
+        "afcd-F004193-release-3",
+        "afcd-F004380-release-3"
+      ],
+      "currentBlockers": [
+        "char-siu: hoisinkastiketta: undefined category mean/analogue, low confidence; not a measured ingredient-specific value."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/char-siu.md",
+      "sourceLfSha256": "1fac33770ec0fec36df5e22131cd067b4e237b2047956e3f126f1e9fecb3a9a6",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 800,
+          "unit": "g",
+          "item": "näkyvästä rasvasta siistittyä porsaan ulkofileetä",
+          "note": "pitkiksi tangoiksi leikattuna"
+        },
+        {
+          "amount": 3,
+          "unit": "rkl",
+          "item": "hoisinkastiketta"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "soijakastiketta"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "hunajaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "riisiviinietikkaa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kiinalaista viismaustetta"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "raastettuna"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "hunajaa",
+          "note": "pinnan sivelyyn"
+        },
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "keitettyä pitkäjyväistä valkoista riisiä",
+          "note": "150 g annosta kohti"
+        }
+      ],
+      "preparationReviewed": "1. Sekoita hoisinkastike, soijakastike, hunaja, riisiviinietikka, viismauste ja valkosipuli. Säästä ruokalusikallinen marinadia.\n2. Kääntele porsas marinadissa ja anna maustua jääkaapissa vähintään 30 minuuttia.\n3. Kuumenna uuni 220 asteeseen. Nosta liha ritilälle uunipellin päälle ja paista 25–35 minuuttia. Käännä kerran ja valele marinadilla.\n4. Sivele pinta hunajalla ja paista vielä 3–5 minuuttia, kunnes pinta kiiltää. Varmista, että sisälämpötila on vähintään 70 °C.\n5. Anna lihan levätä 5 minuuttia ja leikkaa viipaleiksi. Tarjoa riisin kanssa.\n\n## Muistiinpanot\n\n- Marinadi sisältää raakaa lihaa, joten älä käytä sitä valmiin ruoan kastikkeena ilman kiehauttamista.\n- Kokonaisaika-arvio on 90 minuuttia: 15 min esivalmistelut, 30 min marinointi, 35 min paisto, 5 min hunajapinnan viimeistely, 5 min lepo. Arvio sisältää vähintään 30 minuutin marinoinnin; pidempi marinointi lisää kokonaisaikaa.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 51.32,
+        "carbs_total_per_serving_g": 53.07,
+        "protein_per_serving_g": 50.97,
+        "fat_per_serving_g": 5.5
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/F",
+      "reason": "Hoisin and honey in marinade plus honey finish; meat cooked on a rack, marinade is brushed but remainder not served.600g cooked rice also requires exact preparation. Concentrated hoisin is not generic legume GI.",
+      "nextAction": "Exact product GI/preparation and marinade transfer; do not invent retention percentage."
+    },
+    {
+      "priority": 24,
+      "batch": 5,
+      "recipeId": "hyderabadi-kanabiryani",
+      "path": "reseptit/paaruoat/hyderabadi-kanabiryani.md",
+      "currentSourceLfSha256": "c3434af8d2dbd5b016f9afd18839fa778fb2a13d79c2cf0b9e4c2070d43367d9",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F007682-release-3",
+        "afcd-F003327-release-3",
+        "afcd-F003190-release-3",
+        "afcd-F009335-release-3",
+        "afcd-F002963-release-3",
+        "afcd-F002258-release-3",
+        "afcd-F003192-release-3",
+        "afcd-F005700-release-3"
+      ],
+      "currentBlockers": [
+        "hyderabadi-kanabiryani: sipulia: AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+        "hyderabadi-kanabiryani: garam masalaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "hyderabadi-kanabiryani: jauhettua juustokuminaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "hyderabadi-kanabiryani: jauhettua korianteria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "hyderabadi-kanabiryani: kurkumaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "hyderabadi-kanabiryani: kanelitanko: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "hyderabadi-kanabiryani: kardemummakotaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "hyderabadi-kanabiryani: sahramia: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "hyderabadi-kanabiryani: tuoretta minttua: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/hyderabadi-kanabiryani.md",
+      "sourceLfSha256": "c3434af8d2dbd5b016f9afd18839fa778fb2a13d79c2cf0b9e4c2070d43367d9",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "broilerin reisilihaa",
+          "note": "luuttomana paloina"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "basmatiriisiä"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "maustamatonta jogurttia"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "sipulia",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "öljyä"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "gheetä tai voita"
+        },
+        {
+          "amount": 2,
+          "unit": "tl",
+          "item": "garam masalaa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "jauhettua juustokuminaa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "jauhettua korianteria"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "kurkumaa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "kanelitanko"
+        },
+        {
+          "amount": 4,
+          "unit": "kpl",
+          "item": "kardemummakotaa"
+        },
+        {
+          "amount": 1,
+          "unit": "g",
+          "item": "sahramia",
+          "note": "liotettuna 2 rkl lämpimään maitoon"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "tuoretta korianteria",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "tuoretta minttua",
+          "note": "hienonnettuna"
+        }
+      ],
+      "preparationReviewed": "1. Huuhtele riisi ja liota kylmässä vedessä 20 minuuttia. Valuta.\n2. Sekoita broileri jogurtin, garam masalan, juustokuminan, korianterin, kurkuman ja suolan kanssa. Anna maustua 20 minuuttia.\n3. Ruskista sipulit öljyssä kullanruskeiksi. Nosta puolet sivuun. Lisää kattilaan koko kanelitanko ja kaikki kardemummakodat.\n4. Lisää broileri ja ruskista pinta. Peitä ja kypsennä miedolla lämmöllä 15 minuuttia.\n5. Keitä riisiä suolatussa vedessä 5–6 minuuttia, kunnes se on puolikypsää. Valuta.\n6. Levitä riisi broilerin päälle. Lisää sahramimaito, ghee, paistettu sipuli, minttu ja korianteri.\n7. Sulje kansi tiiviisti ja kypsennä hyvin miedolla lämmöllä 20–25 minuuttia. Anna vetäytyä 10 minuuttia ja kuohkeuta varovasti.\n\n## Muistiinpanot\n\n- Tarkista broilerin kypsyys paksuimmasta kohdasta ennen tarjoamista.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 60.47,
+        "carbs_total_per_serving_g": 62.73,
+        "protein_per_serving_g": 37.41,
+        "fat_per_serving_g": 20.64
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "B/E",
+      "reason": "Basmati is partially boiled5–6min then drained and steamed20–25min with chicken/yogurt. Generic boiled-basmati GI is not this two-stage preparation. Garam masala, whole pods/stick and saffron milk need exact masses.",
+      "nextAction": "Match two-stage rice prep and quantities; no automatic GI rice mean."
+    },
+    {
+      "priority": 25,
+      "batch": 5,
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "path": "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md",
+      "currentSourceLfSha256": "53ff3eaf7cc57e6b4d4a2c7d2caf51a51dff926f99532fa069e598fb558a9e67",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F002466-release-3",
+        "afcd-F006198-release-3"
+      ],
+      "currentBlockers": [
+        "valimerellinen-halloumi-tomaattileipa: hapanjuurileipä: No source-matched composition and preparation was resolved for “hapanjuurileipä”; it is not treated as zero."
+      ],
+      "priorOperation141Finding": "Fineli33465 halloumi A2.5 now resolves GK composition alone (polyols unknown). BreadGI54 source card has row226/227 metadata mismatch; toast/heating not established. No ready value until exact bread preparation correspondence, do not reuse54–82 as uncertainty bounds.",
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md",
+      "sourceLfSha256": "53ff3eaf7cc57e6b4d4a2c7d2caf51a51dff926f99532fa069e598fb558a9e67",
+      "servings": 2,
+      "ingredientsReviewed": [
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "halloumi"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "tomaattia"
+        },
+        {
+          "amount": 25,
+          "unit": "g",
+          "item": "vihreitä oliiveja"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "hapanjuurileipä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.\n2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.\n3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.\n4. Viipaloi halloumi ja paista se kevyesti öljytyllä pannulla kullanruskeaksi. Paahda hapanjuurileipä, lisää viipaloitu tomaatti ja oliivit ja aseta lämmin halloumi päälle.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 27.58,
+        "carbs_total_per_serving_g": 29.51,
+        "protein_per_serving_g": 20.18,
+        "fat_per_serving_g": 28.56
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/CONTENT",
+      "reason": "100g unspecified sourdough toasted plus pan-fried halloumi; dominant bread composition/GI not tied to a loaf. Generic dough instructions precede ready-bread step.",
+      "nextAction": "Exact loaf/product and toasted GI application plus coherent preparation; halloumi polyols still need verification."
+    },
+    {
+      "priority": 26,
+      "batch": 6,
+      "recipeId": "valimerellinen-farinata-aamupalaksi",
+      "path": "reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md",
+      "currentSourceLfSha256": "1b15fd29f9d833b84289c2d1345e27a0110c4bda7044ed6939d581ede947d237",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F003986-release-3",
+        "afcd-F006198-release-3"
+      ],
+      "currentBlockers": [
+        "valimerellinen-farinata-aamupalaksi: tomaatti: GI evidence is missing."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md",
+      "sourceLfSha256": "1b15fd29f9d833b84289c2d1345e27a0110c4bda7044ed6939d581ede947d237",
+      "servings": 2,
+      "ingredientsReviewed": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kikhernejauho"
+        },
+        {
+          "amount": 25,
+          "unit": "g",
+          "item": "vihreitä oliiveja"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "tomaattia"
+        },
+        {
+          "amount": 1,
+          "unit": "g",
+          "item": "tuoretta rosmariinia"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": 150,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Vatkaa kikhernejauho ja vesi tasaiseksi taikinaksi ja anna levätä 20 minuuttia. Lisää hienonnettu rosmariini ja kaada öljyttyyn vuokaan. Lisää viipaloidut oliivit ja tomaatti. Paista 220-asteisessa uunissa, kunnes pinta on kullanruskea ja keskusta hyytynyt.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 20.98,
+        "carbs_total_per_serving_g": 31.98,
+        "protein_per_serving_g": 10.4,
+        "fat_per_serving_g": 12.36
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/CONTENT",
+      "reason": "100g chickpea flour is the dominant CHO. Whole boiled chickpea GI cannot be transferred to flour. Generic pan-cooking steps followed by220C baking create an unresolved preparation version.",
+      "nextAction": "Resolve baked versus pan version and matching flour GI/full composition."
+    },
+    {
+      "priority": 27,
+      "batch": 6,
+      "recipeId": "chow-mein",
+      "path": "reseptit/paaruoat/chow-mein.md",
+      "currentSourceLfSha256": "3e9d6ed75ef531708f84720de20aa4fc8d40122f0fdd81c6a6f609d34cbab9c2",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F006044-release-3",
+        "afcd-F002806-release-3",
+        "afcd-F004193-release-3",
+        "afcd-F008026-release-3",
+        "afcd-F006187-release-3",
+        "afcd-F006250-release-3"
+      ],
+      "currentBlockers": [
+        "chow-mein: soijakastiketta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "chow-mein: osterikastiketta: 1 tbsp oyster sauce has no specified brand/product data; sugar may materially affect the total.",
+        "chow-mein: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/chow-mein.md",
+      "sourceLfSha256": "3e9d6ed75ef531708f84720de20aa4fc8d40122f0fdd81c6a6f609d34cbab9c2",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "keitettyjä ja valutettuja vehnämunanuudeleita"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "nahatonta broilerin reisilihaa",
+          "note": "ohuina suikaleina"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "neutraalia öljyä"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "silputtuna"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "valkokaalia",
+          "note": "suikaleina"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "porkkanaa",
+          "note": "ohuina suikaleina"
+        },
+        {
+          "amount": 3,
+          "unit": "rkl",
+          "item": "soijakastiketta"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "osterikastiketta"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "seesamiöljyä"
+        },
+        {
+          "amount": 12,
+          "unit": "g",
+          "item": "kevätsipulia",
+          "note": "viipaleina"
+        }
+      ],
+      "preparationReviewed": "1. Keitä nuudelit pakkauksen ohjeen mukaan juuri ja juuri kypsiksi. Valuta.\n2. Sekoita soijakastike, osterikastike ja seesamiöljy.\n3. Kuumenna wokki kuumaksi ja lisää öljy. Paista broileri kypsäksi ja nosta sivuun.\n4. Paista valkosipuli, kaali ja porkkana nopeasti wokissa. Lisää nuudelit ja kastike.\n5. Palauta broileri wokkiin ja kääntele kaikki kuumaksi. Viimeistele kevätsipulilla.\n\n## Muistiinpanot\n\n- Jos wokki on pieni, paista ainekset kahdessa erässä, jotta ne ruskistuvat eivätkä höyrysty.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 27.51,
+        "carbs_total_per_serving_g": 31.14,
+        "protein_per_serving_g": 26.36,
+        "fat_per_serving_g": 12.09
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/B",
+      "reason": "300g cooked/drained egg noodles then wok-fried; soy/oyster sauces are concentrated and substantial. Matching cooked noodle mass does not solve sauce products or second cooking GI.",
+      "nextAction": "Exact sauce products and egg-noodle preparation source; no wheat-family GI."
+    },
+    {
+      "priority": 28,
+      "batch": 6,
+      "recipeId": "intialainen-ven-pongal",
+      "path": "reseptit/aamupalat/intialainen-ven-pongal.md",
+      "currentSourceLfSha256": "7ab0b5f0350e1e9631afbe1a3cad9d99b9e6788ec1ecbf83fd1e400a5e242763",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F007682-release-3",
+        "afcd-F000446-release-3",
+        "afcd-F006088-release-3",
+        "afcd-F006618-release-3",
+        "afcd-F004205-release-3"
+      ],
+      "currentBlockers": [
+        "intialainen-ven-pongal: vettä tai mietoa lientä: No specific Fineli/AFCD food record and preparation match was resolved for “vettä tai mietoa lientä”; it is not treated as zero.",
+        "intialainen-ven-pongal: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/aamupalat/intialainen-ven-pongal.md",
+      "sourceLfSha256": "7ab0b5f0350e1e9631afbe1a3cad9d99b9e6788ec1ecbf83fd1e400a5e242763",
+      "servings": 2,
+      "ingredientsReviewed": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisi"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "mungpapu"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "cashewpähkinä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "mustapippuri"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "gheetä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Huuhtele riisi ja mungpavut. Keitä niitä vedessä pehmeiksi ja mausta mustapippurilla. Paahda cashewpähkinät gheessä ja sekoita ne puuron joukkoon ennen tarjoamista.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 71.1,
+        "carbs_total_per_serving_g": 82.62,
+        "protein_per_serving_g": 23.7,
+        "fat_per_serving_g": 13.9
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "B",
+      "reason": "100g rice and150g mung beans simmered into soft porridge with20g cashews fried in ghee. Boiled intact rice/legume category means do not match combined disrupted texture.",
+      "nextAction": "Exact pongal or ingredient/preparation sources; verify raw dry bean basis."
+    },
+    {
+      "priority": 29,
+      "batch": 6,
+      "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
+      "path": "reseptit/aamupalat/korealainen-kongjuk-soijapapu-riisipuuro.md",
+      "currentSourceLfSha256": "6aca70cdb27f83a51c2d759e58bdcd446e6a1f9f5c414a71494fb44ec9454f31",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F000458-release-3",
+        "afcd-F007682-release-3"
+      ],
+      "currentBlockers": [
+        "korealainen-kongjuk-soijapapu-riisipuuro: vettä tai mietoa lientä: No specific Fineli/AFCD food record and preparation match was resolved for “vettä tai mietoa lientä”; it is not treated as zero.",
+        "korealainen-kongjuk-soijapapu-riisipuuro: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/aamupalat/korealainen-kongjuk-soijapapu-riisipuuro.md",
+      "sourceLfSha256": "6aca70cdb27f83a51c2d759e58bdcd446e6a1f9f5c414a71494fb44ec9454f31",
+      "servings": 2,
+      "ingredientsReviewed": [
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "soijapapu"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisi"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "seesaminsiemen"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suola"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Liota kuivia soijapapuja yön yli ja valuta. Keitä pavut ja riisi vedessä pehmeiksi. Soseuta pavut osittain puuroon ja viimeistele seesaminsiemenillä.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 46.43,
+        "carbs_total_per_serving_g": 62.47,
+        "protein_per_serving_g": 28.21,
+        "fat_per_serving_g": 18.59
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "B/D",
+      "reason": "150g dry soybeans soaked overnight, boiled with100g rice, partly pureed. No matching preparation GI; soy polyol/retained soaking composition not established by MEXT blank fields.",
+      "nextAction": "Exact soy/rice porridge preparation and retained composition; no missingP0."
+    },
+    {
+      "priority": 30,
+      "batch": 6,
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "path": "reseptit/aamupalat/vietnamilainen-kahvijogurtti-banaanilla.md",
+      "currentSourceLfSha256": "73b5dbb717f3833c8354f1fcdfa0fdd86ca78a342d50625881133e44b3aba0e3",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F003065-release-3",
+        "afcd-F005582-release-3"
+      ],
+      "currentBlockers": [
+        "vietnamilainen-kahvijogurtti-banaanilla: kondensoitu maito: No source-matched composition and preparation was resolved for “kondensoitu maito”; it is not treated as zero."
+      ],
+      "priorOperation141Finding": "Black filter coffee can be resolved Fineli930 A0.3 and omitted at0.3g/serving; condensed milk30g/2 with55gCHO/100g gives8.25g/serving and cannot be omitted. Need exact carbohydrate excluding polyols plus yogurt/banana preparation-specific GI, not arbitrary lower/upper comparator range.",
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/aamupalat/vietnamilainen-kahvijogurtti-banaanilla.md",
+      "sourceLfSha256": "73b5dbb717f3833c8354f1fcdfa0fdd86ca78a342d50625881133e44b3aba0e3",
+      "servings": 2,
+      "ingredientsReviewed": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "jogurtti"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kahvi"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "banaani"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "kondensoitu maito"
+        }
+      ],
+      "preparationReviewed": "1. Valmistele kulhon ainekset; kypsennä pavut tai proteiini, jos käytät niitä kuivina tai raakana. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.\n2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.\n3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.\n4. Sekoita vahva kahvi jogurttiin, makeuta kevyesti ja lisää banaaniviipaleet.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 21.39,
+        "carbs_total_per_serving_g": 22.45,
+        "protein_per_serving_g": 3.8,
+        "fat_per_serving_g": 3.68
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/E",
+      "reason": "Cold coffee yogurt with one banana and30g condensed milk. Sweetened condensed milk is outside unsweetened dairy30 scope; banana ripeness/edible mass and yogurt identity unspecified. Generic warm-bowl instructions are inconsistent.",
+      "nextAction": "Define cold version/products/banana and matched condensed-milk GI before calculation."
+    },
+    {
+      "priority": 31,
+      "batch": 7,
+      "recipeId": "miso-lohi-paksoi",
+      "path": "reseptit/paaruoat/miso-lohi-paksoi.md",
+      "currentSourceLfSha256": "c83d14f66d5add960227fc90e39e720ccebb5c9473a5a69608a40ff2c8b2305e",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F005702-release-3",
+        "afcd-F006187-release-3",
+        "afcd-F001301-release-3",
+        "afcd-F008214-release-3"
+      ],
+      "currentBlockers": [
+        "miso-lohi-paksoi: vaaleaa misotahnaa: No source-matched composition and preparation was resolved for “vaaleaa misotahnaa”; it is not treated as zero.",
+        "miso-lohi-paksoi: seesaminsiemeniä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/miso-lohi-paksoi.md",
+      "sourceLfSha256": "c83d14f66d5add960227fc90e39e720ccebb5c9473a5a69608a40ff2c8b2305e",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "lohifileetä"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "vaaleaa misotahnaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "tamaria"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "riisiviinietikkaa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "seesamiöljyä"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "paksoita"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "seesaminsiemeniä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia öljyä"
+        }
+      ],
+      "preparationReviewed": "1. Kuumenna uuni 200 asteeseen. Sekoita miso, tamari, riisiviinietikka ja seesamiöljy.\n2. Nosta lohi leivinpaperille ja sivele misoseoksella. Paista 12–15 minuuttia, kunnes lohi lohkeaa helposti.\n3. Puolita paksoit pituussuunnassa. Kuumenna öljy pannulla ja paista paksoita leikkuupinta alaspäin 2–3 minuuttia.\n4. Käännä paksoit ja kypsennä vielä minuutti. Ripottele pinnalle seesaminsiemeniä.\n5. Tarjoa misolohen kanssa.\n\n## Muistiinpanot\n\nMiso ja tamari ovat suolaisia. Maista ennen lisäsuolan lisäämistä.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 2.91,
+        "carbs_total_per_serving_g": 5.93,
+        "protein_per_serving_g": 32.4,
+        "fat_per_serving_g": 26.66
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "C/D/F",
+      "reason": "Miso/tamari glaze baked on salmon, pak choi and sesame served separately. Native MEXT miso lacks independently verified total polyols, and label-rounded zeros cannot restore full macros.",
+      "nextAction": "Exact glaze products/mass and source completeness; no generic miso or SOURCE01 approval inherited."
+    },
+    {
+      "priority": 32,
+      "batch": 7,
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "path": "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md",
+      "currentSourceLfSha256": "c993bedcb8e678b3ca9fa71b957a79ab3bbe0a3e50d42f624eacaf1e7904a859",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F002806-release-3",
+        "afcd-F004380-release-3",
+        "afcd-F006316-release-3"
+      ],
+      "currentBlockers": [
+        "hunaja-sinappikana-kaalilla: valkosipulijauhetta: The recipe amount 1 tl has no food-specific mass conversion for VALKOSIPULI.",
+        "hunaja-sinappikana-kaalilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md",
+      "sourceLfSha256": "c993bedcb8e678b3ca9fa71b957a79ab3bbe0a3e50d42f624eacaf1e7904a859",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "nahatonta broilerin reisilihaa"
+        },
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "valkokaalia"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "Dijon-sinappia"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "hunajaa"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "valkosipulijauhetta"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "paprikajauhetta"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa ja mustapippuria"
+        }
+      ],
+      "preparationReviewed": "1. Kuumenna uuni 210 asteeseen. Leikkaa kaali lohkoiksi ja aseta pellille broilerin kanssa.\n2. Sekoita sinappi, hunaja, öljy, valkosipulijauhe ja paprika. Valele broileri ja kaali.\n3. Mausta suolalla ja pippurilla. Paahda 35–40 minuuttia ja käännä kaali kerran.\n4. Sekoita dijonsinappi, hunaja, oliiviöljy, valkosipulijauhe ja paprikajauhe. Leikkaa broileri suupaloiksi ja kaali lohkoiksi, kääntele mausteseoksessa ja paahda uunissa, kunnes broileri on läpikypsää ja kaali pehmeää.\n\n## Muistiinpanot\n\nHunaja lisää annoksen hiilihydraatteja; sen voi jättää pois.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 12.22,
+        "carbs_total_per_serving_g": 15.53,
+        "protein_per_serving_g": 30.86,
+        "fat_per_serving_g": 11.91
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/D",
+      "reason": "Honey is present in ingredients despite optional-omission note.30g Dijon/4 exceeds macro energy omission budget before spices; generic honey GI mean is not exact product evidence. Duplicate preparation steps also remain.",
+      "nextAction": "Full product source for mustard/honey, coherent fixed version; do not remove honey merely to calculate."
+    },
+    {
+      "priority": 33,
+      "batch": 7,
+      "recipeId": "vhh-mansikkakakku",
+      "path": "reseptit/jalkiruoat/vhh-mansikkakakku.md",
+      "currentSourceLfSha256": "b0273164864447b2d117cbf22d4125d9f7281d7f7dbc0d57c7f2286cc62958fe",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F006077-release-3",
+        "afcd-F000247-release-3",
+        "afcd-F008952-release-3",
+        "afcd-F009350-release-3"
+      ],
+      "currentBlockers": [
+        "vhh-mansikkakakku: vaniljauutetta: Ingredient mass is missing or invalid."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/jalkiruoat/vhh-mansikkakakku.md",
+      "sourceLfSha256": "b0273164864447b2d117cbf22d4125d9f7281d7f7dbc0d57c7f2286cc62958fe",
+      "servings": 10,
+      "ingredientsReviewed": [
+        {
+          "amount": 4,
+          "unit": "kpl",
+          "item": "kananmunaa"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "erytritolia"
+        },
+        {
+          "amount": 120,
+          "unit": "g",
+          "item": "mantelijauhoa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "leivinjauhetta"
+        },
+        {
+          "amount": 2,
+          "unit": "dl",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "maitorahkaa"
+        },
+        {
+          "amount": 250,
+          "unit": "g",
+          "item": "tuoreita mansikoita"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "vaniljauutetta"
+        }
+      ],
+      "preparationReviewed": "1. Lämmitä uuni 175 asteeseen. Vuoraa 20 cm irtopohjavuoan pohja leivinpaperilla.\n2. Vatkaa munat ja erytritoli vaaleaksi vaahdoksi. Kääntele mantelijauho ja leivinjauhe joukkoon.\n3. Kaada taikina vuokaan ja paista 22–26 minuuttia. Jäähdytä pohja täysin.\n4. Vatkaa kerma pehmeäksi vaahdoksi ja sekoita rahka sekä vanilja mukaan.\n5. Halkaise pohja kahdeksi levyksi. Levitä väliin osa kermatäytteestä ja viipaloiduista mansikoista.\n6. Nosta kansi päälle ja koristele lopulla täytteellä sekä mansikoilla.\n\n## Muistiinpanot\n\nMansikat sisältävät luontaista sokeria, joten kakku on väljempi VHH-herkku. Säilytä valmis kakku jääkaapissa.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 3.25,
+        "carbs_total_per_serving_g": 15.1,
+        "protein_per_serving_g": 7.16,
+        "fat_per_serving_g": 15.8
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "D/A",
+      "reason": "Raw strawberries250g/10 with almond cake/cream/quark. Fineli447 independently defines A but not total P; old AFCD paired delta cannot supply it. Unpublished strawberry GI table item alone does not solve full macros.",
+      "nextAction": "Recover strawberry P and matched raw source; keep existing package unchanged, no new hold."
+    },
+    {
+      "priority": 34,
+      "batch": 7,
+      "recipeId": "vhh-raparperipiirakka",
+      "path": "reseptit/jalkiruoat/vhh-raparperipiirakka.md",
+      "currentSourceLfSha256": "3a467afacaac68ffe88a084834e3a084e0563f85432725543e24d67e232454ca",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F006077-release-3",
+        "afcd-F009350-release-3",
+        "afcd-F007502-release-3"
+      ],
+      "currentBlockers": [
+        "vhh-raparperipiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+        "vhh-raparperipiirakka: raparperia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/jalkiruoat/vhh-raparperipiirakka.md",
+      "sourceLfSha256": "3a467afacaac68ffe88a084834e3a084e0563f85432725543e24d67e232454ca",
+      "servings": 8,
+      "ingredientsReviewed": [
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "mantelijauhoa"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "item": "voita sulatettuna"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "kananmuna pohjaan"
+        },
+        {
+          "amount": 250,
+          "unit": "g",
+          "item": "raparperia"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "maitorahkaa"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kananmunaa täytteeseen"
+        },
+        {
+          "amount": 70,
+          "unit": "g",
+          "item": "erytritolia"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "vaniljauutetta"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "psylliumia"
+        }
+      ],
+      "preparationReviewed": "1. Lämmitä uuni 180 asteeseen ja voitele noin 22 cm piirakkavuoka.\n2. Sekoita mantelijauho, sulatettu voi ja yksi kananmuna. Painele seos vuoan pohjalle.\n3. Leikkaa raparperi pieniksi paloiksi. Sekoita rahka, kaksi munaa, erytritoli, vanilja ja psyllium.\n4. Levitä raparperi pohjalle ja kaada rahkatäyte päälle.\n5. Paista 30–35 minuuttia, kunnes täyte on hyytynyt. Jäähdytä ennen tarjoilua.\n\n## Muistiinpanot\n\nRaparperi on kirpeää; lisää makeutusta maun mukaan. Täyte jähmettyy jäähtyessään.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 3.46,
+        "carbs_total_per_serving_g": 15.59,
+        "protein_per_serving_g": 8.47,
+        "fat_per_serving_g": 17.59
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/D",
+      "reason": "Baked rhubarb250g/8 A5.5=>1.71875g/serv, so single omission<1 fails.150g almond meal whole-almond proxy also exceeds1g/serv. No invented rhubarb vegetable40 or fruit51 mean.",
+      "nextAction": "Matching baked-rhubarb GI and exact flour composition/GI; retain amounts."
+    },
+    {
+      "priority": 35,
+      "batch": 7,
+      "recipeId": "lahi-ita-pistaasijogurtti",
+      "path": "reseptit/aamupalat/lahi-ita-pistaasijogurtti.md",
+      "currentSourceLfSha256": "f9a1d41f86c92902bbda7c9f224cbc8de48900ec7726625a482f1ecea794a9e1",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F006113-release-3",
+        "afcd-F006842-release-3"
+      ],
+      "currentBlockers": [
+        "lahi-ita-pistaasijogurtti: ruusuvesi: No source-matched composition and preparation was resolved for “ruusuvesi”; it is not treated as zero.",
+        "lahi-ita-pistaasijogurtti: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/aamupalat/lahi-ita-pistaasijogurtti.md",
+      "sourceLfSha256": "f9a1d41f86c92902bbda7c9f224cbc8de48900ec7726625a482f1ecea794a9e1",
+      "servings": 2,
+      "ingredientsReviewed": [
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "jogurtti"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "pistaasi"
+        },
+        {
+          "amount": 5,
+          "unit": "ml",
+          "item": "ruusuvesi"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "item": "granaattiomenan siemeniä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Valmistele kulhon ainekset; kypsennä pavut tai proteiini, jos käytät niitä kuivina tai raakana. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.\n2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.\n3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.\n4. Mausta jogurtti pienellä tilkalla ruusuvettä ja lisää pistaasi sekä granaattiomenan siemenet.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 8.23,
+        "carbs_total_per_serving_g": 10.92,
+        "protein_per_serving_g": 5.27,
+        "fat_per_serving_g": 8.82
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/D",
+      "reason": "200g yogurt with20g pistachio,60g pomegranate seeds and rosewater. Fruit GI cannot be replaced by low-CHO/dairy code; nuts/rosewater need exact forms and total-polyol sources. Generic warm-bowl steps do not describe cold yogurt.",
+      "nextAction": "Pin unsweetened yogurt/rosewater and fruit/nut records plus coherent cold preparation."
+    },
+    {
+      "priority": 36,
+      "batch": 8,
+      "recipeId": "falafel",
+      "path": "reseptit/paaruoat/falafel.md",
+      "currentSourceLfSha256": "5f2549ef9ba3d3506719b5ccb0258b8ef374f8870c33348fd11a5a6edf4ac6b4",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F002881-release-3",
+        "afcd-F004193-release-3",
+        "afcd-F006321-release-3",
+        "afcd-F003192-release-3",
+        "afcd-F003327-release-3",
+        "afcd-F003190-release-3",
+        "afcd-F000247-release-3"
+      ],
+      "currentBlockers": [
+        "falafel: valkosipulinkynttä: GI evidence is missing.",
+        "falafel: leivinjauhetta: No specific Fineli/AFCD food record and preparation match was resolved for “leivinjauhetta”; it is not treated as zero.",
+        "falafel: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/falafel.md",
+      "sourceLfSha256": "5f2549ef9ba3d3506719b5ccb0258b8ef374f8870c33348fd11a5a6edf4ac6b4",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 250,
+          "unit": "g",
+          "item": "kuivattuja kikherneitä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "keltasipulia",
+          "note": "lohkottuna"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä"
+        },
+        {
+          "amount": 25,
+          "unit": "g",
+          "item": "lehtipersiljaa"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta korianteria"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "juustokuminaa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "jauhettua korianteria"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "leivinjauhetta"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "sitruunamehua"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "oliiviöljyä",
+          "note": "falafelien voiteluun"
+        },
+        {
+          "amount": 120,
+          "unit": "g",
+          "item": "tahinia",
+          "note": "kastikkeeseen"
+        },
+        {
+          "amount": 100,
+          "unit": "ml",
+          "item": "kylmää vettä",
+          "note": "kastikkeeseen"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "sitruunamehua",
+          "note": "kastikkeeseen"
+        }
+      ],
+      "preparationReviewed": "1. Huuhtele kikherneet ja liota niitä runsaassa kylmässä vedessä jääkaapissa 12 tuntia. Valuta ja kuivaa hyvin.\n2. Hienonna kikherneet monitoimikoneessa sipulin, valkosipulin, persiljan, korianterin, juustokuminan, jauhetun korianterin, leivinjauheen, suolan ja sitruunamehun kanssa karkeaksi, muotoiltavaksi massaksi.\n3. Peitä massa ja anna vetäytyä jääkaapissa 30 minuuttia. Muotoile noin 20 pientä palloa.\n4. Sekoita tahini ja sitruunamehu. Lisää kylmä vesi vähitellen, kunnes kastike on juoksevaa ja tasaista.\n5. Kuumenna uuni 220 asteeseen. Sivele falafelit kauttaaltaan mitatulla öljyllä ja paista leivinpaperilla 20–25 minuuttia, kunnes ne ovat kypsiä ja ruskistuneet. Käännä kerran paiston aikana.\n6. Tarjoa tahinikastikkeen, salaatin ja pitaleivän kanssa.\n\n## Muistiinpanot\n\n- Käytä kuivia, liotettuja kikherneitä. Säilykekikherneet ovat liian kosteita tähän taikinaan ja voivat hajottaa falafelit.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 26.33,
+        "carbs_total_per_serving_g": 42.76,
+        "protein_per_serving_g": 19.84,
+        "fat_per_serving_g": 26.19
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "B/D",
+      "reason": "Dry chickpeas250g soaked, ground raw, oven-baked220C20–25min, with120g tahini sauce. Boiled whole chickpea36 is not this preparation; dry-to-soaked retention is unmeasured.",
+      "nextAction": "Matched baked-falafel/chickpea method and soaked composition. Do not change to boiled canned chickpeas."
+    },
+    {
+      "priority": 37,
+      "batch": 8,
+      "recipeId": "pohjoisafrikkalainen-bissara",
+      "path": "reseptit/aamupalat/pohjoisafrikkalainen-bissara.md",
+      "currentSourceLfSha256": "1ff5c53d68cced68d1a56360dafccd38096f3192a2d0579cd79214362b9581a3",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F000416-release-3",
+        "afcd-F004193-release-3",
+        "afcd-F003327-release-3"
+      ],
+      "currentBlockers": [
+        "pohjoisafrikkalainen-bissara: härkäpapu: No specific Fineli/AFCD food record and preparation match was resolved for “härkäpapu”; it is not treated as zero.",
+        "pohjoisafrikkalainen-bissara: valkosipuli: The recipe gives 1 tl but SIPULI, KELTASIPULI has no matching Fineli food-specific unit mass; no general piece/spoon conversion is applied.",
+        "pohjoisafrikkalainen-bissara: kasvis- tai kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/aamupalat/pohjoisafrikkalainen-bissara.md",
+      "sourceLfSha256": "1ff5c53d68cced68d1a56360dafccd38096f3192a2d0579cd79214362b9581a3",
+      "servings": 2,
+      "ingredientsReviewed": [
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "kuivattuja härkäpapuja"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "valkosipuli"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "juustokumina"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "oliiviöljy"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Kuumenna kattilassa öljy tai liemi. Lisää aromit ja hitaammin kypsyvät ainekset; paista tai hauduta muutama minuutti.\n2. Kaada kattilaan liemi ja keitä miedosti, kunnes pääraaka-aineet ovat kypsiä.\n3. Lisää nuudelit, lehtivihannekset tai muut nopeasti kypsyvät ainekset niiden kypsymisajan mukaan.\n4. Keitä pavut hyvin pehmeiksi, soseuta ja viimeistele juustokuminalla sekä oliiviöljyllä.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 28.24,
+        "carbs_total_per_serving_g": 42.55,
+        "protein_per_serving_g": 18.49,
+        "fat_per_serving_g": 8.59
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "B/D",
+      "reason": "150g dry broad beans cooked very soft and pureed. Intact boiled-legume mean is not specific puree evidence; soaking/retained composition and garlic tsp form unspecified.",
+      "nextAction": "Primary puree/preparation source and full bean composition; preserve dish texture."
+    },
+    {
+      "priority": 38,
+      "batch": 8,
+      "recipeId": "intialainen-besan-chilla",
+      "path": "reseptit/aamupalat/intialainen-besan-chilla.md",
+      "currentSourceLfSha256": "287c9e88b59c37d1ce84bb0c9021b5bc328a285dfba85a8cbba5f8d45e887010",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F003986-release-3",
+        "afcd-F003192-release-3"
+      ],
+      "currentBlockers": [
+        "intialainen-besan-chilla: sipuli: AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+        "intialainen-besan-chilla: korianteri: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/aamupalat/intialainen-besan-chilla.md",
+      "sourceLfSha256": "287c9e88b59c37d1ce84bb0c9021b5bc328a285dfba85a8cbba5f8d45e887010",
+      "servings": 2,
+      "ingredientsReviewed": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kikhernejauho"
+        },
+        {
+          "amount": 100,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "tomaatti"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli"
+        },
+        {
+          "amount": 6,
+          "unit": "g",
+          "item": "tuoretta korianteria"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Tarjoa lämpimänä tomaatti-chutneyn ja tuoreen korianterin kanssa.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 22.78,
+        "carbs_total_per_serving_g": 33.86,
+        "protein_per_serving_g": 10.63,
+        "fat_per_serving_g": 9.73
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/D",
+      "reason": "100g chickpea flour with vegetables pan-fried as thin pancakes. Whole chickpea GI does not establish flour pancake GI; unspecified chutney is a serving suggestion, not a reason to omit dominant flour.",
+      "nextAction": "Exact chickpea-flour preparation/composition source, no legume-family34."
+    },
+    {
+      "priority": 39,
+      "batch": 8,
+      "recipeId": "indialainen-poha-maapahkinoilla",
+      "path": "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md",
+      "currentSourceLfSha256": "70651af4a46cc2443fba33b56c5f83235bf2bd608ba3f450b1f8f8c49f2a7485",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F006107-release-3",
+        "afcd-F003192-release-3"
+      ],
+      "currentBlockers": [
+        "indialainen-poha-maapahkinoilla: maapähkinä: No specific Fineli/AFCD food record and preparation match was resolved for “maapähkinä”; it is not treated as zero.",
+        "indialainen-poha-maapahkinoilla: curry-lehti: No specific Fineli/AFCD food record and preparation match was resolved for “curry-lehti”; it is not treated as zero.",
+        "indialainen-poha-maapahkinoilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md",
+      "sourceLfSha256": "70651af4a46cc2443fba33b56c5f83235bf2bd608ba3f450b1f8f8c49f2a7485",
+      "servings": 2,
+      "ingredientsReviewed": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisihiutale"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "maapähkinä"
+        },
+        {
+          "amount": 3,
+          "unit": "g",
+          "item": "curry-lehti"
+        },
+        {
+          "amount": 50,
+          "unit": "g",
+          "item": "herne"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "tuoretta korianteria"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "sitruunamehua"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Raasta, muussaa tai hienonna pääraaka-aine. Sekoita joukkoon taikinan ainekset ja lisää vettä vain sen verran, että seos pysyy koossa.\n2. Kuumenna pannulla ohut kerros öljyä. Muotoile pieniksi pihveiksi tai lusikoi taikina pannulle.\n3. Paista keskilämmöllä molemmin puolin kypsäksi ja rapeapintaiseksi. Paista erissä, jotta pannu ei jäähdy.\n4. Huuhtele riisihiutaleet nopeasti ja valuta. Kuullota maapähkinät, herneet ja curry-lehdet öljyssä; lisää hiutaleet ja kypsennä sekoittaen. Viimeistele korianterilla ja sitruunamehulla.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 43.06,
+        "carbs_total_per_serving_g": 45.86,
+        "protein_per_serving_g": 7.79,
+        "fat_per_serving_g": 12.36
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "B/C",
+      "reason": "100g rice flakes quickly rinsed then fried with peanuts/peas/curry leaves, not ordinary cooked rice. Generic patty steps precede actual flake preparation.",
+      "nextAction": "Exact flake processing and GI, curry-leaf composition; resolve duplicate prep, no GI67."
+    },
+    {
+      "priority": 40,
+      "batch": 8,
+      "recipeId": "japanilainen-kabocha-puuro",
+      "path": "reseptit/aamupalat/japanilainen-kabocha-puuro.md",
+      "currentSourceLfSha256": "9adaae1694bb45b1664113eab4a30e8aeba99e55848d163594c5af9c2f1ed418",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [
+        "afcd-F007535-release-3",
+        "afcd-F007682-release-3",
+        "afcd-F002991-release-3"
+      ],
+      "currentBlockers": [
+        "japanilainen-kabocha-puuro: kurpitsa: GI evidence is missing.",
+        "japanilainen-kabocha-puuro: kookosmaito: GI evidence is missing.",
+        "japanilainen-kabocha-puuro: musta seesami: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "japanilainen-kabocha-puuro: vettä tai mietoa lientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+        "japanilainen-kabocha-puuro: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "priorOperation141Finding": "New full-table check resolves GI identity: row1799 is explicitly BOILED BUTTERNUT GI51±6,n10,not a generic pumpkin mean. Recipe says butternut rather than kabocha, so retain that name. Exact butternut available-CHO composition independent of AFCD polyol issue remains unclosed. Coconut200ml/2 using official Clearspring3.4g/100ml yields3.4g totalCHO/serving and fails omission; Fineli29014 CHOAVL is an alternative frozen composition proxy requiring an explicit bound version, not a density0.92 shortcut. Rice40min steaming vs published simmered porridge also needs reconciliation. No whole GK yet.",
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/aamupalat/japanilainen-kabocha-puuro.md",
+      "sourceLfSha256": "9adaae1694bb45b1664113eab4a30e8aeba99e55848d163594c5af9c2f1ed418",
+      "servings": 2,
+      "ingredientsReviewed": [
+        {
+          "amount": 250,
+          "unit": "g",
+          "item": "kuorittua myskikurpitsaa"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisi"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        },
+        {
+          "amount": 5,
+          "unit": "g",
+          "item": "mustia seesaminsiemeniä"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Huuhtele riisi ja kuutioi kuorittu myskikurpitsa. Keitä riisiä ja kurpitsaa vedessä, kunnes riisi on pehmeää ja kurpitsa hajoaa puuroon. Lisää kookosmaito ja hauduta hetki. Tarjoa mustien seesaminsiementen kanssa.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 47.22,
+        "carbs_total_per_serving_g": 50.15,
+        "protein_per_serving_g": 8.03,
+        "fat_per_serving_g": 16.86
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "B/CONTENT",
+      "reason": "Recipe actually uses peeled butternut squash250g,100g rice and200ml coconut milk simmered until disintegrated. Kabocha name is not evidence of kabocha species; coconut composite GI31 invalid as ingredient.",
+      "nextAction": "Keep actual squash identity; source porridge/coconut/preparation rather than broad starch analogy."
+    },
+    {
+      "priority": 41,
+      "batch": 9,
+      "recipeId": "jauheliha-makaronilaatikko",
+      "path": "reseptit/paaruoat/jauheliha-makaronilaatikko.md",
+      "currentSourceLfSha256": "29d29a7faeff8029b9700b1d21f3e14bde10bedae2988112987437eee4e98eba",
+      "currentMacroEngineStatus": "MISSING",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "jauheliha-makaronilaatikko: kuivattua makaronia: R1B source review: no GI binding retained for the casserole preparation; plain pasta/category averages do not establish the GI of pasta baked in egg and dairy."
+      ],
+      "priorOperation141Finding": "GI49 is a pasta-family mean, disallowed here. New complete-table search DID find named short macaroni ANCO/Soubry GI63±3,2019,n13,row1492. This corrects the earlier too-narrow search; original cooking protocol and cooked-then-baked correspondence are still not verified. Penne47/50 is not a substitute. Keep published garlic powder3g. Spices can be bounded; dominant pasta requires protocol follow-up.",
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/jauheliha-makaronilaatikko.md",
+      "sourceLfSha256": "29d29a7faeff8029b9700b1d21f3e14bde10bedae2988112987437eee4e98eba",
+      "servings": 8,
+      "ingredientsReviewed": [
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "kuivattua makaronia"
+        },
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "7 % naudan jauhelihaa"
+        },
+        {
+          "amount": 70,
+          "unit": "g",
+          "item": "keltasipulia"
+        },
+        {
+          "amount": 13.5,
+          "unit": "g",
+          "item": "öljyä"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "raejuustoa, rasvaa 2–5 %"
+        },
+        {
+          "amount": 6,
+          "unit": "kpl",
+          "item": "kananmunaa"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "kevytmaitoa, rasvaa 1,5 %"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "ruokakermaa, rasvaa 15 %"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "raastettua emmentaljuustoa",
+          "note": "munaseokseen"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "raastettua emmentaljuustoa",
+          "note": "pinnalle"
+        },
+        {
+          "amount": 3,
+          "unit": "g",
+          "item": "valkosipulijauhetta"
+        },
+        {
+          "amount": 1,
+          "unit": "g",
+          "item": "mustapippuria"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "paprikajauhetta"
+        },
+        {
+          "amount": 6,
+          "unit": "g",
+          "item": "suolaa",
+          "note": "maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Kuumenna uuni 180 asteeseen. Voitele suuri uunivuoka kolmanneksella reseptin öljystä.\n2. Keitä makaronit suolatussa vedessä noin kaksi minuuttia pakkauksen ohjetta lyhyemmän ajan. Valuta.\n3. Hienonna sipuli. Kuumenna loppu öljy pannulla ja ruskista jauheliha sekä sipuli. Mausta valkosipulijauheella, mustapippurilla, paprikajauheella ja suolalla.\n4. Soseuta raejuusto tasaiseksi. Sekoita joukkoon kananmunat, maito ja ruokakerma. Lisää 200 g juustoraastetta ja sekoita.\n5. Yhdistä makaronit ja jauhelihaseos uunivuoassa. Kaada munaseos päälle ja sekoita varovasti.\n6. Ripottele pinnalle loput 100 g juustoraastetta. Paista 40–50 minuuttia, kunnes laatikon keskusta on hyytynyt. Peitä tarvittaessa foliolla, jos pinta tummuu liikaa.\n7. Anna laatikon vetäytyä noin 10 minuuttia ennen tarjoamista.\n\n## Muistiinpanot\n\n- Maista jauhelihaseos ennen vuokaan siirtämistä ja säädä suola oman makusi mukaan.\n- Ravintoarvot ovat suuntaa-antavia arvioita ja vaihtelevat käytettyjen tuotteiden mukaan.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 37.18,
+        "carbs_total_per_serving_g": 38.79,
+        "protein_per_serving_g": 47.63,
+        "fat_per_serving_g": 27.93
+      },
+      "previousModelMacroStatus": "MISSING",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "B",
+      "reason": "400g dry macaroni boiled2min short then baked40–50min in egg/dairy. Existing uunikanapasta approval is exact chicken/penne version, not general baked pasta permission.",
+      "nextAction": "Specific double-cooked macaroni analogy and complete dairy/meat evidence; no transfer of owner approval."
+    },
+    {
+      "priority": 42,
+      "batch": 9,
+      "recipeId": "punainen-kanacurry-vhh",
+      "path": "reseptit/paaruoat/punainen-kanacurry-vhh.md",
+      "currentSourceLfSha256": "c332eb5b3779330a6e6c82a5172b8f7107ece977be6b72249f48ab2c950a4094",
+      "currentMacroEngineStatus": "MISSING",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "punainen-kanacurry-vhh: täysrasvaista kookosmaitoa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "priorOperation141Finding": "Exact MaePloy30g and Squid15g need source-backed A/retention; coconut400g is a main ingredient and cannot be omitted. Existing lowcho50 coconut assignment is project PI, not measured coconut GI. Keep lime edible mass and Thai-basil identity separate. No propagation of disputed31/68/96.82.",
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/punainen-kanacurry-vhh.md",
+      "sourceLfSha256": "c332eb5b3779330a6e6c82a5172b8f7107ece977be6b72249f48ab2c950a4094",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "nahatonta broilerin reisilihaa",
+          "note": "suupaloiksi leikattuna"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "Mae Ploy punaista currytahnaa"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "bambunversoja",
+          "note": "valutettuna"
+        },
+        {
+          "amount": 120,
+          "unit": "g",
+          "item": "punaista paprikaa",
+          "note": "suikaleina"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
+        },
+        {
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "kookosöljyä"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "thaibasilikan lehtiä"
+        },
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "kukkakaaliriisiä"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "item": "limelohkoja"
+        }
+      ],
+      "preparationReviewed": "1. Kuumenna kookosöljy kattilassa. Lisää currytahna ja paista minuutin ajan sekoittaen.\n2. Lisää kookosmaidosta muutama ruokalusikallinen ja sekoita tahnaksi.\n3. Lisää broileri ja paista, kunnes palat ovat kauttaaltaan tahnan peitossa.\n4. Lisää loput kookosmaidosta. Hauduta miedolla lämmöllä noin 15 minuuttia, kunnes broileri on kypsää.\n5. Lisää bambunversot ja paprika. Hauduta vielä 5 minuuttia. Mausta kalakastikkeella ja halutessasi erytritolilla.\n6. Kuumenna kukkakaaliriisi pannulla. Viimeistele curry thaibasilikalla ja tarjoa limen kanssa.\n\n## Muistiinpanot\n\n- Kukkakaaliriisi korvaa tavallisen riisin. Tarkista currytahnan ja kookosmaidon pakkausmerkinnät.\n- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 9.15,
+        "carbs_total_per_serving_g": 15.9,
+        "protein_per_serving_g": 34.74,
+        "fat_per_serving_g": 22.98
+      },
+      "previousModelMacroStatus": "MISSING",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/C/D",
+      "reason": "400g coconut milk,30g Mae Ploy red paste and basil in simmered curry; named fish sauce/erythritol already exact. Previously rejected coconut31 composite-source mismatch persists.",
+      "nextAction": "Independent coconut ingredient GI and complete paste/polyol source; no source-integrity bypass."
+    },
+    {
+      "priority": 43,
+      "batch": 9,
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "path": "reseptit/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+      "currentSourceLfSha256": "a4d7a2d111907b2ef34721eeb81bfd32999e112d894a3c39dcfd6b8230899173",
+      "currentMacroEngineStatus": "MISSING",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "thai-vihrea-curry-kanalla-vhh: täysrasvaista kookosmaitoa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+      "sourceLfSha256": "a4d7a2d111907b2ef34721eeb81bfd32999e112d894a3c39dcfd6b8230899173",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "nahatonta broilerin reisilihaa"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "Mae Ploy vihreää currytahnaa"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "kesäkurpitsaa",
+          "note": "lohkottuna"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "munakoisoa",
+          "note": "lohkottuna"
+        },
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "kukkakaaliriisiä",
+          "note": "lisukkeeksi"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
+        },
+        {
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "kaffirlimetinlehteä"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "thaibasilikaa"
+        },
+        {
+          "amount": 13.5,
+          "unit": "g",
+          "item": "neutraalia öljyä"
+        }
+      ],
+      "preparationReviewed": "1. Leikkaa broileri suupaloiksi. Lohko kesäkurpitsa ja munakoiso.\n2. Kuumenna öljy kattilassa. Paista currytahnaa miedolla lämmöllä minuutti.\n3. Lisää noin desilitra kookosmaitoa ja sekoita. Lisää broileri ja kypsennä käännellen.\n4. Lisää loppu kookosmaito, kalakastike, erytritoli ja kaffirlimetinlehdet. Hauduta 10 minuuttia.\n5. Lisää kasvikset ja hauduta vielä 8–10 minuuttia, kunnes broileri on kypsää ja kasvikset napakoita.\n6. Sekoita joukkoon basilika. Kuumenna kukkakaaliriisi pannulla ja tarjoa curryn kanssa.\n\n## Muistiinpanot\n\n- Ravintoarvot ovat suuntaa-antavia ja riippuvat currytahnan sekä kookosmaidon merkistä.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 9.01,
+        "carbs_total_per_serving_g": 15.82,
+        "protein_per_serving_g": 34.97,
+        "fat_per_serving_g": 23.97
+      },
+      "previousModelMacroStatus": "MISSING",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/C/D",
+      "reason": "400g coconut milk,30g Mae Ploy green paste, eggplant/zucchini and20g Thai basil. Existing exact brand amounts do not establish coconut GI or natural-polyol absence.",
+      "nextAction": "Coconut/paste/Thai-basil complete source and exact preparation; retain recipe."
+    },
+    {
+      "priority": 44,
+      "batch": 9,
+      "recipeId": "panang-curry-kanalla-vhh",
+      "path": "reseptit/paaruoat/panang-curry-kanalla-vhh.md",
+      "currentSourceLfSha256": "acb33f7020a710d3eac23067365abf80c449599c4714f2b06f570b2266c3eefe",
+      "currentMacroEngineStatus": "MISSING",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "panang-curry-kanalla-vhh: täysrasvaista kookosmaitoa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/panang-curry-kanalla-vhh.md",
+      "sourceLfSha256": "acb33f7020a710d3eac23067365abf80c449599c4714f2b06f570b2266c3eefe",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "nahatonta broilerin reisilihaa"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "Mae Ploy Panang -currytahnaa"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "vihreitä papuja",
+          "note": "puolitettuina"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "suolattomia maapähkinöitä",
+          "note": "rouhittuna"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "kaffirlimetinlehtiä, suikaleina"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
+        },
+        {
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "thaibasilikaa"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "kukkakaaliriisiä",
+          "note": "lisukkeeksi"
+        }
+      ],
+      "preparationReviewed": "1. Leikkaa broileri suupaloiksi ja puolita pavut.\n2. Paista currytahnaa kattilassa miedolla lämmöllä minuutti.\n3. Lisää kookosmaito vähitellen ja sekoita. Lisää broileri ja hauduta noin 12 minuuttia.\n4. Lisää pavut ja jatka kypsentämistä noin 6 minuuttia, kunnes broileri on täysin kypsää.\n5. Mausta kalakastikkeella ja erytritolilla. Lisää maapähkinät ja kaffirlimetinlehdet.\n6. Sekoita joukkoon basilika juuri ennen tarjoamista. Tarjoa kuumennetun kukkakaaliriisin kanssa.\n\n## Muistiinpanot\n\n- VHH-versiossa riisi vaihtuu kukkakaaliriisiin. Ravintoarvot ovat suuntaa-antavia ja riippuvat currytahnasta.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 8.79,
+        "carbs_total_per_serving_g": 14.91,
+        "protein_per_serving_g": 36.09,
+        "fat_per_serving_g": 23.57
+      },
+      "previousModelMacroStatus": "MISSING",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "A/C/D",
+      "reason": "400g coconut milk plus Mae Ploy Panang30g and peanuts30g. General vegetable/dairy PI codes cannot cover coconut or nut concentrate.",
+      "nextAction": "Independent coconut/nut/paste source completeness and preparation GI, no family average."
+    },
+    {
+      "priority": 45,
+      "batch": 9,
+      "recipeId": "rahka-marjakerroskulho",
+      "path": "reseptit/aamupalat/rahka-marjakerroskulho.md",
+      "currentSourceLfSha256": "c571f8f509bde4da9159bfdb4e1449f856030c9c92bf8a8ba1e2376d9c33c058",
+      "currentMacroEngineStatus": "MISSING",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "rahka-marjakerroskulho: mansikoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "rahka-marjakerroskulho: mustikoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "rahka-marjakerroskulho: hasselpähkinöitä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "rahka-marjakerroskulho: makeutusainetta maun mukaan: Sweetener type and amount are unspecified; carbohydrate content cannot be determined."
+      ],
+      "priorOperation141Finding": "New source check found that GI53 row1092 is Canadian wild blueberry, not Finnish forest bilberry and not automatically cultivated highbush blueberry Fineli35596. Fineli35596 now supplies independent CHOAVL12.52, but does not establish species/preparation GI.50g/4 gives1.565g A/serving, beyond omission. Raw strawberries can use named GI40, but do not publish partial bowl.",
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/aamupalat/rahka-marjakerroskulho.md",
+      "sourceLfSha256": "c571f8f509bde4da9159bfdb4e1449f856030c9c92bf8a8ba1e2376d9c33c058",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 250,
+          "unit": "g",
+          "item": "maitorahkaa"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "maustamatonta turkkilaista jogurttia"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "mansikoita"
+        },
+        {
+          "amount": 50,
+          "unit": "g",
+          "item": "mustikoita"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "hasselpähkinöitä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "sitruunankuorta"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "makeutusainetta maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Sekoita rahka, jogurtti ja sitruunankuori tasaiseksi. Makeuta halutessasi.\n2. Viipaloi mansikat ja rouhi hasselpähkinät.\n3. Lusikoi lasiin vuorotellen rahkaa ja marjoja.\n4. Ripottele pähkinät pinnalle juuri ennen tarjoamista.\n\n## Muistiinpanot\n\nJos haluat kulhosta vähähiilihydraattisemman, vaihda mansikat vadelmiin ja vähennä marjojen määrää.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 6.32,
+        "carbs_total_per_serving_g": 8.09,
+        "protein_per_serving_g": 8.05,
+        "fat_per_serving_g": 6.01
+      },
+      "previousModelMacroStatus": "MISSING",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "D/E",
+      "reason": "Strawberries100g plus blueberries50g and hazelnuts20g in cold dairy bowl; optional unspecified sweetener. Raspberry swap suggested by notes is a new version, not a polyol solution.",
+      "nextAction": "Recover total-polyol/fruit/nut sources and define sweetener; no automatic macro withdrawal."
+    },
+    {
+      "priority": 46,
+      "batch": 10,
+      "recipeId": "keto-korvapuustit",
+      "path": "reseptit/leivonnaiset/keto-korvapuustit.md",
+      "currentSourceLfSha256": "5abe1c168908e6139e47475686df440f85b845bc10128d407d82aaaf4c161a68",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "keto-korvapuustit: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "CONDITIONAL_NOT_ACTIVATED",
+      "currentPublishedPath": "reseptit/leivonnaiset/keto-korvapuustit.md",
+      "sourceLfSha256": "84f4ef23369a64393f922fd5df3f22079ca56ddcd8e5963d2d5484542252ba24",
+      "servings": 8,
+      "ingredientsReviewed": [
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "mantelijauhoa"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "mozzarellaraastetta"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "tuorejuustoa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "kananmuna"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "erytritolia"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kanelia"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "voita"
+        }
+      ],
+      "preparationReviewed": "1. Kuumenna uuni 200 °C:seen. Sulata mozzarella ja tuorejuusto varovasti yhteen.\n2. Sekoita joukkoon mantelijauho ja kananmuna. Kauli taikina leivinpaperien välissä levyksi.\n3. Levitä pinnalle pehmeää voita, erytritolia ja kanelia. Kääri rullaksi ja leikkaa paloiksi.\n4. Paista noin 15 minuuttia, kunnes pullat ovat kullanruskeita.\n\n## Muistiinpanot\n\n- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.\n- Hiilihydraattimäärä riippuu käytetyistä tuotteista ja annoskoosta. Laske se valitsemiesi tuotteiden pakkaustiedoista ja huomioi myös lisäkkeet ja täytteet.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 1.99,
+        "carbs_total_per_serving_g": 7.98,
+        "protein_per_serving_g": 10.26,
+        "fat_per_serving_g": 21.57
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 0.17,
+      "macroScenario": "INSUFFICIENT SOURCE DATA",
+      "reason": "NEVO5579 native sugars3.5+starch.2=>derived A3.7, not nativeCHO3.6 minus an unverified logicalP0. Full macro package remains source-incomplete; old public macros are not altered and no new withholding is activated.",
+      "nextAction": "Recover missing total-polyol/source data or obtain a separate owner content decision; no new macro withholding activated."
+    },
+    {
+      "priority": 47,
+      "batch": 10,
+      "recipeId": "vhh-lihapiirakka",
+      "path": "reseptit/leivonnaiset/vhh-lihapiirakka.md",
+      "currentSourceLfSha256": "ecce61fa96e4bad04ddaaa871233e66bb2d1ff92e8b0e97baec90a265f6f4320",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "vhh-lihapiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "CONDITIONAL_NOT_ACTIVATED",
+      "currentPublishedPath": "reseptit/leivonnaiset/vhh-lihapiirakka.md",
+      "sourceLfSha256": "8b5071d4c6b08847a0855b630b34ee55471ed00cf6f61b9687e25f56f3ec96a9",
+      "servings": 8,
+      "ingredientsReviewed": [
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "mantelijauhoa"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "juustoraastetta"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "tuorejuustoa"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kananmunaa"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "naudan jauhelihaa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "mustapippuria"
+        }
+      ],
+      "preparationReviewed": "1. Kuumenna uuni 200 °C:seen. Sulata juusto ja tuorejuusto varovasti ja sekoita mantelijauho sekä yksi kananmuna joukkoon.\n2. Painele taikina leivinpaperilla vuoratun piirakkavuoan pohjalle ja reunoille.\n3. Ruskista jauheliha ja sipuli ja mausta.\n4. Sekoita toinen kananmuna täytteeseen, kaada vuokaan ja paista noin 30 minuuttia.\n\n## Muistiinpanot\n\n- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 2.27,
+        "carbs_total_per_serving_g": 5.2,
+        "protein_per_serving_g": 20.06,
+        "fat_per_serving_g": 26.96
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 0.3,
+      "macroScenario": "INSUFFICIENT SOURCE DATA",
+      "reason": "NEVO5579 native sugars3.5+starch.2=>derived A3.7, not nativeCHO3.6 minus an unverified logicalP0. Full macro package remains source-incomplete; old public macros are not altered and no new withholding is activated.",
+      "nextAction": "Recover missing total-polyol/source data or obtain a separate owner content decision; no new macro withholding activated."
+    },
+    {
+      "priority": 48,
+      "batch": 10,
+      "recipeId": "rahkapiirakka-vhh",
+      "path": "reseptit/jalkiruoat/rahkapiirakka-vhh.md",
+      "currentSourceLfSha256": "48c54ac345257f808fa457837f20af7f560128d891f3108efe1b37b4b76df3f8",
+      "currentMacroEngineStatus": "ESTIMATE WITH EVIDENCE",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "rahkapiirakka-vhh: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "CONDITIONAL_NOT_ACTIVATED",
+      "currentPublishedPath": "reseptit/jalkiruoat/rahkapiirakka-vhh.md",
+      "sourceLfSha256": "e902035d36263b4ad41d337d5fed8283d76e8fffcbfc87c28d53076c075dfdab",
+      "servings": 8,
+      "ingredientsReviewed": [
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "mantelijauhoa"
+        },
+        {
+          "amount": 75,
+          "unit": "g",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "kananmuna"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "maitorahkaa"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kananmunaa"
+        },
+        {
+          "amount": 1,
+          "unit": "dl",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "erytritolia"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "vaniljauutetta"
+        }
+      ],
+      "preparationReviewed": "1. Sekoita mantelijauho, voi ja kananmuna. Painele taikina voideltuun piirakkavuokaan.\n2. Vatkaa täytteen rahka, kananmunat, kerma, erytritoli ja vanilja yhteen.\n3. Kaada täyte pohjalle ja paista 175 °C:ssa noin 35 minuuttia.\n4. Jäähdytä kunnolla, jotta täyte asettuu.\n\n## Muistiinpanot\n\n- Tarkista kypsyys ja mausta lopuksi oman maun mukaan.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 2.67,
+        "carbs_total_per_serving_g": 7.73,
+        "protein_per_serving_g": 10.32,
+        "fat_per_serving_g": 23.9
+      },
+      "previousModelMacroStatus": "ESTIMATE WITH EVIDENCE",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "numericScenario": 0.5,
+      "macroScenario": "INSUFFICIENT SOURCE DATA",
+      "reason": "NEVO5579 native sugars3.5+starch.2=>derived A3.7, not nativeCHO3.6 minus an unverified logicalP0. Full macro package remains source-incomplete; old public macros are not altered and no new withholding is activated.",
+      "nextAction": "Recover missing total-polyol/source data or obtain a separate owner content decision; no new macro withholding activated."
+    },
+    {
+      "priority": 49,
+      "batch": 10,
+      "recipeId": "japanilainen-dashimaki-tamago-aamiaislautasella",
+      "path": "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md",
+      "currentSourceLfSha256": "cbd1fc4d7b4b5dc4a3bdd509c26b46a23b432e93ce3ab008145c08a9f37ed9c2",
+      "currentMacroEngineStatus": "MISSING",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "japanilainen-dashimaki-tamago-aamiaislautasella: dashi: No source-matched composition and preparation was resolved for “dashi”; it is not treated as zero."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md",
+      "sourceLfSha256": "cbd1fc4d7b4b5dc4a3bdd509c26b46a23b432e93ce3ab008145c08a9f37ed9c2",
+      "servings": 2,
+      "ingredientsReviewed": [
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kananmuna"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "dashi"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "soijakastike"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisi"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "preparationReviewed": "1. Vatkaa kananmunat dashi-liemen kanssa. Mausta soijakastikkeella.\n2. Kuumenna pieni paistinpannu miedolla lämmöllä ja sipaise siihen öljyä. Kaada pannulle ohut kerros munaseosta.\n3. Kun pohja alkaa hyytyä, rullaa munakas pannun reunaan. Lisää pannulle uusi kerros seosta ja jatka rullaamista kerros kerrallaan.\n4. Paista maustettu munaseos ohuina kerroksina ja rullaa; tarjoa riisin kanssa.",
+      "previousMacros": {},
+      "previousModelMacroStatus": "MISSING",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "C/D/E",
+      "reason": "Egg rolled with200ml dashi and soy, served with100g unspecified rice. Native dashi/soy candidate totalP missing and rice dry/cooked basis unspecified.",
+      "nextAction": "Define rice state and exact dashi/soy products, then match rice prep. No SOURCE01 bulk import."
+    },
+    {
+      "priority": 50,
+      "batch": 10,
+      "recipeId": "pad-kee-mao-vhh-konjac",
+      "path": "reseptit/paaruoat/pad-kee-mao-vhh-konjac.md",
+      "currentSourceLfSha256": "85931d9ea0a5d4d8910ce51bed38af5ac52b8803414114118fde62de007827be",
+      "currentMacroEngineStatus": "MISSING",
+      "engineStatusIsNotSourceApproval": true,
+      "afcdRecordsRequiringIndependentPolyolReview": [],
+      "currentBlockers": [
+        "pad-kee-mao-vhh-konjac: punaista paprikaa: AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
+      ],
+      "priorOperation141Finding": null,
+      "researchStatus": "QUEUED",
+      "decision": "HOLD_UNCHANGED",
+      "currentPublishedPath": "reseptit/paaruoat/pad-kee-mao-vhh-konjac.md",
+      "sourceLfSha256": "85931d9ea0a5d4d8910ce51bed38af5ac52b8803414114118fde62de007827be",
+      "servings": 4,
+      "ingredientsReviewed": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "KoRo-valmis konjaknuudeleita"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "nahatonta broilerin reisilihaa",
+          "note": "suikaleina"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "vihreitä papuja",
+          "note": "puolitettuna"
+        },
+        {
+          "amount": 120,
+          "unit": "g",
+          "item": "punaista paprikaa",
+          "note": "suikaleina"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "thaibasilikan lehtiä"
+        },
+        {
+          "amount": 10.5,
+          "unit": "g",
+          "item": "valkosipulinkynttä",
+          "note": "murskattuna"
+        },
+        {
+          "amount": 24,
+          "unit": "g",
+          "item": "punaista chiliä",
+          "note": "viipaloituna, tulisuus oman maun mukaan"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "soijakastiketta"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "kaupallista osterikastiketta"
+        },
+        {
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
+        },
+        {
+          "amount": 27,
+          "unit": "g",
+          "item": "neutraalia öljyä"
+        }
+      ],
+      "preparationReviewed": "1. Keitä tuoreet vihreät pavut 5–7 minuuttia, kunnes ne ovat kypsiä, ja valuta. Noudata pakastepavuille pakkauksen kypsennysohjetta. Huuhtele ja valuta nuudelit. Kuivapaista niitä kuumalla pannulla 3–4 minuuttia ja siirrä sivuun.\n2. Sekoita kalakastike, soijakastike, osterikastike ja erytritoli.\n3. Kuumenna öljy wokissa. Paista broileri kypsäksi ja siirrä hetkeksi sivuun.\n4. Lisää valkosipuli ja chili pannulle. Paista noin 30 sekuntia, lisää pavut ja paprika ja paista muutama minuutti.\n5. Lisää nuudelit, broileri ja kastike. Kääntele kuumalla pannulla, kunnes kaikki on kuumaa.\n6. Nosta pannu liedeltä ja kääntele joukkoon thaibasilika. Tarjoa heti.\n\n## Muistiinpanot\n\n- Konjaknuudelit korvaavat riisinuudelit. Kastikkeiden hiilihydraattimäärät vaihtelevat tuotemerkeittäin.\n- Ravintoarvot ovat suuntaa-antavia arvioita. Käyttämäsi tuotteet ja annoskoko vaikuttavat arvoihin.",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 4.53,
+        "carbs_total_per_serving_g": 12.09,
+        "protein_per_serving_g": 26.37,
+        "fat_per_serving_g": 10.81
+      },
+      "previousModelMacroStatus": "MISSING",
+      "warning": "A prior model PASS is not independent validation of AFCD paired-field polyol assertions.",
+      "barrierGroup": "C/D/A",
+      "reason": "Exact KoRo konjac, Squid fish sauce and Foodin erythritol retained;15g commercial oyster sauce generic, Thai basil30g and boiled/drained beans still need source-complete mapping.",
+      "nextAction": "Exact oyster sauce data/GI or validated small-dose whole omission and full basil source, no invented P0."
+    }
+  ]
+}

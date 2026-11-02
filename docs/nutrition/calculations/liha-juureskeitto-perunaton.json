@@ -1,54 +1,98 @@
 {
   "recipeId": "liha-juureskeitto-perunaton",
-  "sourceHash": "f7fc99797e37f47c9f1afdc59a3e45309e7003db756f02b640ddbea117215ac0",
-  "calculatedAt": "2026-10-24",
-  "batchId": "batch-11",
+  "sourceHash": "cb7311ac698fb5318deb77ff7a3c71a38ccd873ec33e9a078926522e582f5d27",
+  "calculatedAt": "2026-11-02",
+  "batchId": "batch-146",
   "servings": 4,
-  "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+  "scope": "Operation146 defined exact recipe/source candidate. Full publication binding is generated only for technically accepted entries; source-only conditional records do not alter public macros. Fineli719 matches the original beef-stew cut. Original onion remains strained; its entire source nutrient input is bounded, no recipe change to keep it or invented extraction percentage. Full edible beef/root input counted without unmeasured skimming-loss credit.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "naudan keittolihaa",
+      "item": "luutonta naudanlapaa tai etuselkää",
       "amount": 700,
       "unit": "g",
-      "state": "raw lean beef shin",
-      "matchEvidence": "naudan keittolihaa maps to afcd-release-3 record F000514; state: raw lean beef shin.",
+      "state": "RAW",
+      "matchEvidence": "Same food/state as the defined weighed input. ",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible portion, not purchase weight.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "All listed edible input accounted for; no unmeasured cooking-loss credit. See explicitly bounded strained ingredients separately.",
       "record": {
-        "id": "afcd-F000514-release-3",
-        "name": "Beef, casserole meat, boneless or bone-in, shin, lean, raw",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "raw lean beef shin",
-        "basis": "per100g-as-sold",
+        "id": "op146-fineli-719",
+        "name": "NAUDANLAPA/ETUSELKÄ, NAUDAN KEITTOLIHA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/719",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20, CC BY4.0; frozen observations preserved.",
+        "state": "RAW",
+        "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH value; source method is preserved, not asserted laboratory-measured. Unknown stays unknown.",
         "per100g": {
           "carbohydrate": 0,
           "fibre": 0,
           "polyols": 0,
-          "protein": 21.9,
-          "fat": 0.6
+          "protein": 21.175,
+          "fat": 3.459
+        },
+        "primaryReference": {
+          "source_id": "719",
+          "name": "NAUDANLAPA/ETUSELKÄ, NAUDAN KEITTOLIHA",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "BEEF",
+          "food_class": "MSTEAK",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0,
+            "fibre_g_per_100g": 0,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 21.175,
+            "fat_g_per_100g": 3.459
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI1302"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            }
+          },
+          "portion_mass_g": {}
         }
       }
     },
     {
       "item": "vettä",
-      "amount": 1.5,
-      "unit": "l",
-      "state": "documented low-impact seasoning or nutrient-free item",
-      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "amount": 1500,
+      "unit": "ml",
+      "state": "pure salt/water",
+      "matchEvidence": "Literal pure salt or water, no nutrient-bearing mixture; no liquid density conversion needed.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Literal ingredient.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Water and salt have no material macro contribution.",
+      "retentionEvidence": "No macros in the literal input.",
+      "excludedReason": "Pure salt/water, not mixed seasoning or broth.",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -56,229 +100,371 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Water and salt have no material macro contribution."
+      "omissionImpactEvidence": "Literal pure salt or water, no nutrient-bearing mixture; no liquid density conversion needed."
     },
     {
-      "item": "lanttua",
+      "item": "kuorittua lanttua",
       "amount": 200,
       "unit": "g",
-      "state": "raw peeled swede",
-      "matchEvidence": "lanttua maps to afcd-release-3 record F009021; state: raw peeled swede.",
+      "state": "RAW",
+      "matchEvidence": "Same food/state as the defined weighed input. ",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible portion, not purchase weight.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "All listed edible input accounted for; no unmeasured cooking-loss credit. See explicitly bounded strained ingredients separately.",
       "record": {
-        "id": "afcd-F009021-release-3",
-        "name": "Swede, peeled, fresh, raw",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "raw peeled swede",
-        "basis": "per100g-as-sold",
+        "id": "op146-fineli-303",
+        "name": "LANTTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/303",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20, CC BY4.0; frozen observations preserved.",
+        "state": "RAW",
+        "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH value; source method is preserved, not asserted laboratory-measured. Unknown stays unknown.",
         "per100g": {
-          "carbohydrate": 3.7,
-          "fibre": 2.2,
+          "carbohydrate": 5.88,
+          "fibre": 1.8,
           "polyols": 0,
-          "protein": 0.9,
-          "fat": 0
+          "protein": 1.1,
+          "fat": 0.1
+        },
+        "primaryReference": {
+          "source_id": "303",
+          "name": "LANTTU",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "ROOT",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 5.88,
+            "fibre_g_per_100g": 1.8,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 1.1,
+            "fat_g_per_100g": 0.1
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI1302"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MIR006"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {}
         }
       }
     },
     {
-      "item": "porkkanaa",
+      "item": "kuorittua porkkanaa",
       "amount": 150,
       "unit": "g",
-      "state": "raw carrot",
-      "matchEvidence": "porkkanaa maps to fineli-release-20 record 300; state: raw carrot.",
+      "state": "RAW",
+      "matchEvidence": "Same food/state as the defined weighed input. ",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible portion, not purchase weight.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "All listed edible input accounted for; no unmeasured cooking-loss credit. See explicitly bounded strained ingredients separately.",
       "record": {
-        "id": "fineli-300-release-20",
+        "id": "op146-fineli-300",
         "name": "PORKKANA",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/300",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "raw carrot",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/300",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20, CC BY4.0; frozen observations preserved.",
+        "state": "RAW",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 5.56,
-          "FIBT": 2.4,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH value; source method is preserved, not asserted laboratory-measured. Unknown stays unknown.",
         "per100g": {
           "carbohydrate": 5.56,
           "fibre": 2.4,
           "polyols": 0,
           "protein": 0.63,
           "fat": 0.2
+        },
+        "primaryReference": {
+          "source_id": "300",
+          "name": "PORKKANA",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "ROOT",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 5.56,
+            "fibre_g_per_100g": 2.4,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 0.63,
+            "fat_g_per_100g": 0.2
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "T",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MIR006"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_S": 35,
+            "KPL_M": 65,
+            "KPL_L": 100
+          }
         }
       }
     },
     {
-      "item": "juuriselleriä",
+      "item": "kuorittua juuriselleriä",
       "amount": 150,
       "unit": "g",
-      "state": "raw celeriac",
-      "matchEvidence": "juuriselleriä maps to fineli-release-20 record 311; state: raw celeriac.",
+      "state": "RAW",
+      "matchEvidence": "Same food/state as the defined weighed input. ",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible portion, not purchase weight.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "All listed edible input accounted for; no unmeasured cooking-loss credit. See explicitly bounded strained ingredients separately.",
       "record": {
-        "id": "fineli-311-release-20",
+        "id": "op146-fineli-311",
         "name": "JUURISELLERI, MUKULASELLERI",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/311",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "raw celeriac",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/311",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20, CC BY4.0; frozen observations preserved.",
+        "state": "RAW",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 2.65,
-          "FIBT": 3.1,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH value; source method is preserved, not asserted laboratory-measured. Unknown stays unknown.",
         "per100g": {
           "carbohydrate": 2.65,
           "fibre": 3.1,
           "polyols": 0,
           "protein": 1.3,
           "fat": 0.1
+        },
+        "primaryReference": {
+          "source_id": "311",
+          "name": "JUURISELLERI, MUKULASELLERI",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "ROOT",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 2.65,
+            "fibre_g_per_100g": 3.1,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 1.3,
+            "fat_g_per_100g": 0.1
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI1302"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MIR006"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_S": 200,
+            "KPL_M": 600,
+            "KPL_L": 800
+          }
         }
       }
     },
     {
-      "item": "sipuli",
-      "amount": 1,
-      "unit": "kpl",
-      "state": "yellow onion",
-      "matchEvidence": "sipuli maps to fineli-release-20 record 335; state: yellow onion.",
-      "gramsPerUnit": 55,
-      "conversionEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece.",
+      "item": "kuorittua sipulia, siivilöitävä aromikasvis",
+      "amount": 55,
+      "unit": "g",
+      "state": "as specified, bounded whole ingredient",
+      "matchEvidence": "Whole raw onion Fineli335 bounds the unknown consumed/leached fraction after straining; no0% or100% consumption point is invented. Frozen A4.8,FIB1.2,P0,protein1.25,fat.1; energy budget40kcal/100g consistent with USDA raw onion source model. Same existing cumulative omission limits.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Specified exact edible amount.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "record": {
-        "id": "fineli-335-release-20",
-        "name": "SIPULI, KELTASIPULI",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "yellow onion",
-        "basis": "per100g-edible",
-        "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 4.8,
-          "FIBT": 1.2,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
-        "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
-        "per100g": {
-          "carbohydrate": 4.8,
-          "fibre": 1.2,
-          "polyols": 0,
-          "protein": 1.25,
-          "fat": 0.1
-        }
-      }
+      "retentionEvidence": "Conservatively bound full input; no invented retention fraction.",
+      "excludedReason": "Whole ingredient omitted under unchanged cumulative macro budget.",
+      "omissionImpactUpperBoundPerServing": {
+        "netCarbohydrate": 0.66,
+        "totalCarbohydrate": 0.8250000000000001,
+        "protein": 0.171875,
+        "fat": 0.013750000000000002,
+        "kcal": 5.5
+      },
+      "omissionImpactEvidence": "Whole raw onion Fineli335 bounds the unknown consumed/leached fraction after straining; no0% or100% consumption point is invented. Frozen A4.8,FIB1.2,P0,protein1.25,fat.1; energy budget40kcal/100g consistent with USDA raw onion source model. Same existing cumulative omission limits."
     },
     {
-      "item": "laakerinlehteä",
-      "amount": 2,
-      "unit": "kpl",
-      "state": "documented low-impact seasoning or nutrient-free item",
-      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "item": "laakerinlehtiä,2 pientä kokonaista lehteä",
+      "amount": 0.4,
+      "unit": "g",
+      "state": "as specified, bounded whole ingredient",
+      "matchEvidence": "USDA SR Legacy FDC170917 Spices, bay leaf: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Specified exact edible amount.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Excluded minor laakerinleht seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
+      "retentionEvidence": "Conservatively bound full input; no invented retention fraction.",
+      "excludedReason": "Whole ingredient omitted under unchanged cumulative macro budget.",
       "omissionImpactUpperBoundPerServing": {
-        "kcal": 0.5,
-        "netCarbohydrate": 0.1,
-        "totalCarbohydrate": 0.2,
-        "protein": 0.1,
-        "fat": 0.1
+        "totalCarbohydrate": 0.07497,
+        "protein": 0.0076100000000000004,
+        "fat": 0.00836,
+        "kcal": 0.313,
+        "netCarbohydrate": 0.07497
       },
-      "omissionImpactEvidence": "Excluded minor laakerinleht seasoning; conservative per-serving upper bound is recorded and summed against project limits."
+      "omissionImpactEvidence": "USDA SR Legacy FDC170917 Spices, bay leaf: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
     },
     {
-      "item": "kokonaista mustapippuria",
-      "amount": 6,
-      "unit": "kpl",
-      "state": "documented low-impact seasoning or nutrient-free item",
-      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "item": "kokonaisia mustapippureita,6 kpl",
+      "amount": 0.3,
+      "unit": "g",
+      "state": "as specified, bounded whole ingredient",
+      "matchEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Specified exact edible amount.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Excluded minor kokonaista mustapippuria seasoning; conservative per-serving upper bound is recorded and summed against project limits.",
+      "retentionEvidence": "Conservatively bound full input; no invented retention fraction.",
+      "excludedReason": "Whole ingredient omitted under unchanged cumulative macro budget.",
       "omissionImpactUpperBoundPerServing": {
-        "kcal": 1,
-        "netCarbohydrate": 0.1,
-        "totalCarbohydrate": 0.2,
-        "protein": 0.1,
-        "fat": 0.1
+        "totalCarbohydrate": 0.047962500000000005,
+        "protein": 0.007792500000000001,
+        "fat": 0.0024449999999999997,
+        "kcal": 0.18825,
+        "netCarbohydrate": 0.047962500000000005
       },
-      "omissionImpactEvidence": "Excluded minor kokonaista mustapippuria seasoning; conservative per-serving upper bound is recorded and summed against project limits."
+      "omissionImpactEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
     },
     {
       "item": "silputtua persiljaa",
-      "amount": 2,
-      "unit": "rkl",
-      "state": "fresh parsley",
-      "matchEvidence": "silputtua persiljaa maps to afcd-release-3 record F006321; state: fresh parsley.",
-      "gramsPerUnit": 4,
-      "conversionEvidence": "Ingredient-specific tablespoon mass: 4 g/rkl for silputtua persiljaa.",
+      "amount": 4,
+      "unit": "g",
+      "state": "RAW",
+      "matchEvidence": "Same food/state as the defined weighed input. ",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible portion, not purchase weight.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "All listed edible input accounted for; no unmeasured cooking-loss credit. See explicitly bounded strained ingredients separately.",
       "record": {
-        "id": "afcd-F006321-release-3",
-        "name": "Parsley, continental, fresh, raw",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "fresh parsley",
-        "basis": "per100g-as-sold",
+        "id": "op146-fineli-333",
+        "name": "PERSILJA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/333",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20, CC BY4.0; frozen observations preserved.",
+        "state": "RAW",
+        "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH value; source method is preserved, not asserted laboratory-measured. Unknown stays unknown.",
         "per100g": {
           "carbohydrate": 1.1,
-          "fibre": 5,
+          "fibre": 2.9,
           "polyols": 0,
-          "protein": 3.9,
-          "fat": 0.7
+          "protein": 1.38,
+          "fat": 0.2
+        },
+        "primaryReference": {
+          "source_id": "333",
+          "name": "PERSILJA",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "VEGLEAF",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 1.1,
+            "fibre_g_per_100g": 2.9,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 1.38,
+            "fat_g_per_100g": 0.2
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "T",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MIR006"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "RKL": 2
+          }
         }
       }
     },
@@ -286,13 +472,13 @@
       "item": "suolaa",
       "amount": null,
       "unit": "",
-      "state": "documented low-impact seasoning or nutrient-free item",
-      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "state": "pure salt/water",
+      "matchEvidence": "Literal pure salt or water, no nutrient-bearing mixture; no liquid density conversion needed.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Literal ingredient.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Water and salt have no material macro contribution.",
+      "retentionEvidence": "No macros in the literal input.",
+      "excludedReason": "Pure salt/water, not mixed seasoning or broth.",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -300,7 +486,7 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Water and salt have no material macro contribution."
+      "omissionImpactEvidence": "Literal pure salt or water, no nutrient-bearing mixture; no liquid density conversion needed."
     }
   ]
 }

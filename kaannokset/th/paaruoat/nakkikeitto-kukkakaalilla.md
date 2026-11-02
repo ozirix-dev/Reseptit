@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 35
 difficulty: ง่าย
 tags:
-  - "การปรุงอาหารที่บ้านแบบฟินแลนด์"
-  - "คาร์โบไฮเดรตต่ำ"
-  - "ซุป"
-  - "ไส้กรอกแฟรงก์เฟิร์ต"
+  - การปรุงอาหารที่บ้านแบบฟินแลนด์
+  - คาร์โบไฮเดรตต่ำ
+  - ซุป
+  - ไส้กรอกแฟรงก์เฟิร์ต
 image:
   src: paaruoat/nakkikeitto-vhh.webp
   alt: ซุปใสไส้กรอกกับกะหล่ำดอก เซเลอรี กระเทียมหอม และพาร์สลีย์
@@ -27,45 +27,51 @@ image:
 ingredients:
   - amount: 350
     unit: g
-    item: ไส้กรอกแฟรงก์เฟิร์ต
+    item: ไส้กรอกแฟรงก์เฟิร์ตสุก
   - amount: 500
     unit: g
-    item: ดอกกะหล่ำ
+    item: กะหล่ำดอก
     note: หั่นเป็นชิ้นเล็กๆ
   - amount: 100
     unit: g
-    item: ก้านขึ้นฉ่าย
+    item: ขึ้นฉ่ายฝรั่ง
     note: หั่นบาง ๆ
   - amount: 80
     unit: g
-    item: กระเทียมหอม
+    item: ต้นกระเทียมฝรั่ง
     note: ล้างและหั่นเป็นชิ้น
-  - amount: 1
-    unit: ชิ้น
-    item: หัวหอมเล็ก
-  - amount: 8
-    unit: dl
-    item: น้ำซุปเนื้อ
-  - amount: 1
-    unit: ชิ้น
-    item: ใบกระวาน
-  - amount: 0.5
-    unit: ช้อนชา
+  - amount: 30
+    unit: g
+    item: หอมหัวใหญ่ปอกเปลือก
+  - amount: 800
+    unit: g
+    item: น้ำซุปเนื้อเจือจางพร้อมใช้
+  - amount: 0.2
+    unit: g
+    item: ใบกระวาน ใบเล็กหนึ่งใบ
+  - amount: 1.15
+    unit: g
     item: พริกไทยดำ
-  - amount: null
-    unit: ""
+  - amount: 4
+    unit: g
     item: พาร์สลีย์สด
     note: ฉีก
 source_language: fi
 source_recipe: reseptit/paaruoat/nakkikeitto-kukkakaalilla.md
 translation_of: nakkikeitto-kukkakaalilla
-carbs_net_per_serving_g: 11.55
-carbs_total_per_serving_g: 15.22
-protein_per_serving_g: 13.94
-fat_per_serving_g: 17.52
-
+carbs_net_per_serving_g: 11.08
+carbs_total_per_serving_g: 14.66
+protein_per_serving_g: 13.83
+fat_per_serving_g: 17.51
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
-
 # ซุปไส้กรอกกับดอกกะหล่ำ
 
 ซุปนักกีใสที่คุ้นเคยถูกแทนที่ด้วยมันฝรั่งพร้อมดอกกะหล่ำ คื่นฉ่าย และกระเทียมหอม น้ำซุปปรุงรสด้วยใบกระวานและพริกไทยดำ
@@ -86,3 +92,7 @@ fat_per_serving_g: 17.52
 
 
 - เลือกไส้กรอกแฟรงก์เฟิร์ตที่มีคาร์โบไฮเดรตต่ำและตรวจสอบฉลาก ปริมาณกะหล่ำดอกและกระเทียมหอมทำให้สูตรนี้เป็นสูตรคาร์โบไฮเดรตต่ำ ไม่ใช่สูตรคีโตแบบเข้มงวด
+
+ค่า GK และโภชนาการใช้กับส่วนผสมส่วนที่กินได้ซึ่งชั่งตามรายการนี้และจำนวนที่เสิร์ฟนี้เท่านั้น GK เป็นค่าประมาณจากแบบจำลองที่มีความเชื่อมั่นต่ำ รหัส GI ที่ใช้ไม่ใช่ผลการวัดอาหารจานนี้ การไม่นับส่วนผสมปริมาณน้อยที่มีหลักฐานกำกับเพิ่มความไม่แน่นอน เครื่องเคียงที่แนะนำไม่รวมในการคำนวณ หากเปลี่ยนผลิตภัณฑ์หรือปริมาณต้องประเมินใหม่
+
+ส่วนประกอบของน้ำซุปใช้ข้อมูลแทนของ Fineli สำหรับน้ำซุปเนื้อเจือจางพร้อมใช้ที่มีความเชื่อมั่นต่ำ โดยนับน้ำซุปที่ระบุทั้งหมดในจำนวนที่เสิร์ฟ

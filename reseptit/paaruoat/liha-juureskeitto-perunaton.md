@@ -17,30 +17,30 @@ tags:
 ingredients:
   - amount: 700
     unit: g
-    item: naudan keittolihaa
-  - amount: 1.5
-    unit: l
+    item: luutonta naudanlapaa tai etuselkää
+  - amount: 1500
+    unit: ml
     item: vettä
   - amount: 200
     unit: g
-    item: lanttua
+    item: kuorittua lanttua
   - amount: 150
     unit: g
-    item: porkkanaa
+    item: kuorittua porkkanaa
   - amount: 150
     unit: g
-    item: juuriselleriä
-  - amount: 1
-    unit: kpl
-    item: sipuli
-  - amount: 2
-    unit: kpl
-    item: laakerinlehteä
-  - amount: 6
-    unit: kpl
-    item: kokonaista mustapippuria
-  - amount: 2
-    unit: rkl
+    item: kuorittua juuriselleriä
+  - amount: 55
+    unit: g
+    item: kuorittua sipulia, siivilöitävä aromikasvis
+  - amount: 0.4
+    unit: g
+    item: laakerinlehtiä,2 pientä kokonaista lehteä
+  - amount: 0.3
+    unit: g
+    item: kokonaisia mustapippureita,6 kpl
+  - amount: 4
+    unit: g
     item: silputtua persiljaa
   - amount: null
     unit: ""
@@ -53,11 +53,18 @@ image:
   alt: Perunaton suomalainen lihakeitto tarjoiltuna
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 5.61
-carbs_total_per_serving_g: 9.04
-protein_per_serving_g: 39.75
-fat_per_serving_g: 1.19
-
+carbs_net_per_serving_g: 6.03
+carbs_total_per_serving_g: 9.02
+protein_per_serving_g: 38.34
+fat_per_serving_g: 6.22
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 # Perunaton suomalainen lihakeitto
 
@@ -80,3 +87,5 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 ## Muistiinpanot
 
 Juuresten kypsymisajat vaihtelevat kuutioiden koon mukaan.
+
+GK ja ravintoarvot koskevat vain näitä punnittuja, syötäviä ainesosia ja annosmäärää. GK on LOW-luottamuksen mallinnettu arvio: sovelletut GI-koodaukset eivät ole tämän ruoan mittaustuloksia. Pienet lähteistetyt poisrajaukset sisältyvät epävarmuuteen. Tarjoiluehdotusten lisukkeet eivät kuulu laskentaan. Tuotevaihdot ja määrien muutokset vaativat uuden arvion.

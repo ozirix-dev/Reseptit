@@ -21,14 +21,13 @@ tags:
   - nakit
 image:
   src: paaruoat/nakkikeitto-vhh.webp
-  alt: Nakkikeitto, jossa on kukkakaalia, selleriä, purjoa ja persiljaa kirkkaassa
-    liemessä
+  alt: Nakkikeitto, jossa on kukkakaalia, selleriä, purjoa ja persiljaa kirkkaassa liemessä
   width: 1280
   height: 853
 ingredients:
   - amount: 350
     unit: g
-    item: nakkeja
+    item: keitettyjä nakkeja
   - amount: 500
     unit: g
     item: kukkakaalia
@@ -41,20 +40,20 @@ ingredients:
     unit: g
     item: purjoa
     note: huuhdeltuna ja viipaloituna
-  - amount: 1
-    unit: kpl
-    item: pieni sipuli
-  - amount: 8
-    unit: dl
-    item: lihalientä
-  - amount: 1
-    unit: kpl
-    item: laakerinlehti
-  - amount: 0.5
-    unit: tl
+  - amount: 30
+    unit: g
+    item: kuorittua sipulia
+  - amount: 800
+    unit: g
+    item: käyttövalmista laimennettua lihalientä
+  - amount: 0.2
+    unit: g
+    item: laakerinlehteä,1 pieni kokonainen lehti
+  - amount: 1.15
+    unit: g
     item: mustapippuria
-  - amount: null
-    unit: ""
+  - amount: 4
+    unit: g
     item: tuoretta persiljaa
     note: silputtuna
 translation_languages:
@@ -65,13 +64,11 @@ translation_status:
   en: published
   sv: published
   th: published
-carbs_net_per_serving_g: 11.55
-carbs_total_per_serving_g: 15.22
-protein_per_serving_g: 13.94
-fat_per_serving_g: 17.52
-
+carbs_net_per_serving_g: 11.08
+carbs_total_per_serving_g: 14.66
+protein_per_serving_g: 13.83
+fat_per_serving_g: 17.51
 ---
-
 # Nakkikeitto kukkakaalilla
 
 Tuttu kirkas nakkikeitto saa perunoiden tilalle kukkakaalia, selleriä ja purjoa. Liemi maustetaan yksinkertaisesti laakerinlehdellä ja mustapippurilla.
@@ -91,3 +88,7 @@ Vähähiilihydraattinen nakkikeitto valmistuu yhdessä kattilassa. Nakit lisät�
 ## Muistiinpanot
 
 - Valitse vähähiilihydraattiset nakit ja tarkista pakkausmerkinnät. Kukkakaalin ja purjon määrä tekee tästä VHH-version, ei tiukkaa ketoreseptiä.
+
+GK ja ravintoarvot koskevat vain näitä punnittuja, syötäviä ainesosia ja annosmäärää. GK on LOW-luottamuksen mallinnettu arvio: sovelletut GI-koodaukset eivät ole tämän ruoan mittaustuloksia. Pienet lähteistetyt poisrajaukset sisältyvät epävarmuuteen. Tarjoiluehdotusten lisukkeet eivät kuulu laskentaan. Tuotevaihdot ja määrien muutokset vaativat uuden arvion.
+
+Liemen koostumuksena käytetään Finelin käyttövalmiin laimennetun lihaliemen LOW-proxya. Koko reseptiin merkitty liemi sisältyy annoksiin.
