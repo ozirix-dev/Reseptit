@@ -3,7 +3,7 @@ import {loadRecovery,verifyRecoveryComposition,verifyRecoveryCase} from '../scri
 import {evaluate,loadPilot,digest} from '../scripts/gk149-model';
 import {buildGkOnlyVariants} from '../scripts/gk149-integration';
 const root=fileURLToPath(new URL('../../',import.meta.url)),recovery=loadRecovery(root);
-test('five additional exact source-reuse proposals remain outside the approved16 and public coverage',()=>{
+test('five-source recovery snapshot stays closed to the original16 adapter',()=>{
  assert.equal(recovery.results.length,5);assert.ok(recovery.results.every(r=>r.numericProposal&&!r.publicationAuthorized));assert.equal(recovery.results.filter(r=>r.level==='A').length,2);assert.equal(recovery.results.filter(r=>r.level==='B').length,3);
  const publicVersions=buildGkOnlyVariants(root);assert.equal(publicVersions.length,16);for(const c of recovery.cases){assert.equal(c.approval,false);assert.ok(!publicVersions.some(p=>p.recipeId===c.recipeId));}
  const coffee=JSON.parse(readFileSync(path.join(root,'docs/nutrition/gk80-operation149/additional-proposal.json'),'utf8'));assert.equal(new Set([...publicVersions.map(v=>v.recipeId),coffee.recipeId,...recovery.cases.map(c=>c.recipeId)]).size,22);

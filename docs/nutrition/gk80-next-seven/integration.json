@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "origin": "Explicit current user request: implement seven GK versions per plan in own branch and open bounded Draft PR; no merge or publication",
+  "role": "Codex Julkaisu 3 / next-seven integration owner",
+  "baseMain": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+  "sixHandoff": "80f4360435b978d1cfa81088df1414430a88c222",
+  "padHandoff": "9bb90548ee0cb7d820c0a1d4f57b9d5082b8da24",
+  "integrationAuthorized": true,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "approvedInputs": {
+    "vietnamilainen-kahvijogurtti-banaanilla": "75b3125da4abf6072188d26656629bfacd4d04d83fe169109c3837da1aadc60a",
+    "japanilainen-dashimaki-tamago-aamiaislautasella": "a9f8daa4b86c5b9326eed7a0f35577ed80fcb5e306d9d106276a9f8a84ab3aa8",
+    "japanilainen-hojicha-jogurtti-persimonilla": "2f0e19fde34c89031e3e4a0a11b340b86a49b3a07a9c536d3504b797abed7413",
+    "japanilainen-natto-riisikulho": "a23b798d343f87c31c41b49cd26eda3f66a1d0c48307ac47b50ee19830881c4a",
+    "pad-kee-mao-vhh-konjac": "0c692cf887c1a70c12d537c3685a25284f004653e752f7e3995197129a50370e",
+    "chettinad-kana": "ba7aeeede3d2222a38cf82d7ff2f571c64933269f439b52e4b9e7a4b64aec85e",
+    "pad-see-ew-vhh-konjac": "aff3debfb7b5f7bf6f1957b68de41b1bda051e5eeb0d64a7e68fbeb92c235efc"
+  },
+  "filesLfSha256": {
+    "docs/nutrition/gk80-operation149/approved-six-owner-approval.json": "8cfa9756b1a88537349f42561c61f67a88b51242fafeafd143cb1b6e332dc925",
+    "docs/nutrition/gk80-operation149/approved-six-public-copy.json": "efb019f21396d6f86b54456028365d37bf9d02b0148024f10bddbf70ce5f55d9",
+    "docs/nutrition/gk80-operation149/approved-six-golden.json": "195020efd9266aca8d16eddf64a5bb429b610280e4ae1098db3cc9deb5ec7a20",
+    "docs/research/afcd-polyol-03/pad-see-ew-approval.json": "a08a3135cf437d941a657d069a1b33541a13d94c344caf663b61b3b61d198f9c",
+    "docs/nutrition/gk80-next-seven/pad-public-copy.json": "652d454c60bea1ad25a94e969e9e5d8fb9fe8b3826bacaaffb7dc8a0b3555732",
+    "docs/nutrition/gk80-next-seven/foodin-record-binding.json": "68d95d9d6ad0a958961b40d7a815785d9d1f1dbd6df5e9d5fbd22b655d7c4f1c",
+    "site/scripts/gk149-model.ts": "739786489b0705775e713daab2ef2347b02f8e75b1458065c2e0b067350de474",
+    "site/scripts/gk-foodin-binding.ts": "82db677cef4ffc22939df583d22dadccfb12acdfb5ddd049c98bdfa001143c43"
+  },
+  "frozenProposalModelCommit": "92dc6dbe7b27e145d6938026c73b6823f2e2108f"
+}

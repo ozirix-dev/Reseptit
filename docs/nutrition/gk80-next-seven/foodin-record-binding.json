@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "scope": "Foodin label record identity only; does not approve AFCD corrections or alter any original recipe result",
+  "originalSourceCommit": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+  "sourcePath": "docs/nutrition/food-records.json",
+  "originalFileLfSha256": "2f8ff76b97848294c28195bb92c6d202e9754168ddb169d30ee5e8610d2c2b9b",
+  "recordId": "foodin-erythritol-200g-label-2026-10-24",
+  "recordJsonSha256": "7e0a63b22c853205f20e449986fe6d7f050de2a6be6a190f978aba5899eb436b",
+  "originalRecord": {
+    "id": "foodin-erythritol-200g-label-2026-10-24",
+    "name": "Foodin Erytritoli, Luomu 200 g",
+    "sourceUrl": "https://foodin.fi/tuote/erytritoli-luomu-200g-2/",
+    "retrievedAt": "2026-10-24",
+    "licence": "Foodin product-label factual nutrient declaration; product reference only, not an open-database licence",
+    "state": "as-sold; pure organic erythritol per ingredient list",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+    "polyolsSourceVerified": true,
+    "per100g": {
+      "kcal": 0,
+      "protein": 0,
+      "fat": 0,
+      "carbohydrate": 100,
+      "fibre": 0,
+      "sugars": 0,
+      "polyols": 100
+    },
+    "polyolsEvidence": "Foodin product label states that 100 g carbohydrates per 100 g are sugar alcohols."
+  },
+  "pr182Head": "924a827b515f4d4e27d70389837e22f904d38c1f",
+  "pr182FileLfSha256": "361a945c3d6702ec64529dff267f8cd849ba0a8a14fd42ee6798d189a619dcd3"
+}

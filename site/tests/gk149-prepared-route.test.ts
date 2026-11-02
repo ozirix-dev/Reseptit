@@ -1,6 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {execFileSync} from 'node:child_process';
 import {loadPreparedRoute,evaluatePrepared,verifyPreparedComposition,verifyPreparedBindings,formatPreparedProposal} from '../scripts/gk149-prepared-route';
 import {digest,textHash} from '../scripts/gk149-model';
+import {verifyNextSevenManifest} from '../scripts/gk-next-seven';
 import {buildGkOnlyVariants} from '../scripts/gk149-integration';import {loadRecovery} from '../scripts/gk149-recovery';
 const root=fileURLToPath(new URL('../../',import.meta.url)),ctx=loadPreparedRoute(root),get=(id:string)=>structuredClone(ctx.cases.find(c=>c.recipeId===id)!);
 test('eight new proposals complete30 distinct numeric proposals while approved publication scope stays16',()=>{
@@ -8,7 +9,16 @@ test('eight new proposals complete30 distinct numeric proposals while approved p
  const approved=buildGkOnlyVariants(root),prior=loadRecovery(root),coffee=JSON.parse(readFileSync(path.join(root,'docs/nutrition/gk80-operation149/additional-proposal.json'),'utf8'));
  const all=[...approved.map(r=>r.recipeId),...prior.cases.map(c=>c.recipeId),coffee.recipeId,...ctx.cases.map(c=>c.recipeId)];assert.equal(all.length,30);assert.equal(new Set(all).size,30);assert.equal(approved.length,16);
  const batch=JSON.parse(readFileSync(path.join(root,'docs/nutrition/gk80-operation149/proposal-batch.json'),'utf8'));assert.equal(batch.pendingVersions,14);assert.equal(batch.ownerApproved,false);assert.equal(batch.publicActivation,false);
- for(const [p,h] of Object.entries(batch.sealedFilesLfSha256))assert.equal(textHash(readFileSync(path.join(root,p),'utf8')),h,'Review packet changed: '+p);
+ // Preserve the old research seal against its immutable source revision.
+ // The record-binding refinement is independently sealed by the new integration.
+ const next=verifyNextSevenManifest(root);
+ for(const [p,h] of Object.entries(batch.sealedFilesLfSha256)){
+  const current=textHash(readFileSync(path.join(root,p),'utf8'));
+  if(p==='site/scripts/gk149-model.ts'){
+   const frozen=execFileSync('git',['show',next.frozenProposalModelCommit+':'+p],{cwd:root,encoding:'utf8'});
+   assert.equal(textHash(frozen),h,'Frozen review model changed');assert.equal(current,next.filesLfSha256[p],'Current refinement changed');
+  }else assert.equal(current,h,'Review packet changed: '+p);
+ }
  for(const c of [...prior.cases,...ctx.cases])assert.equal(batch.reviewedInputs.find((x:any)=>x.recipeId===c.recipeId)?.inputSha256,c.inputSha256);assert.equal(batch.reviewedInputs.find((x:any)=>x.recipeId===coffee.recipeId)?.inputSha256,digest(coffee));
  for(const c of ctx.cases){assert.equal(c.approval,false);verifyPreparedBindings(c,ctx);assert.ok(!approved.some(r=>r.recipeId===c.recipeId));}
 });

@@ -1,0 +1,138 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "cases": [
+    {
+      "recipeId": "pad-see-ew-vhh-konjac",
+      "classification": "A",
+      "arithmeticProfile": "EXISTING_A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/pad-see-ew-vhh-konjac.md",
+        "en": "kaannokset/en/paaruoat/pad-see-ew-vhh-konjac.md",
+        "sv": "kaannokset/sv/paaruoat/pad-see-ew-vhh-konjac.md",
+        "th": "kaannokset/th/paaruoat/pad-see-ew-vhh-konjac.md"
+      },
+      "recipeSha256Lf": {
+        "fi": "f140811f1f8f5b24496579adb69df8a57e655ff1af2cb450d26257b458ec4309",
+        "en": "34ebbf3accfb73d053e437eba6426b853145e291eb9ed634b557dfb51741b865",
+        "sv": "95bbf1a614823e06934a1609e7c3c45b1e53398c914624f009ec33114fd67920",
+        "th": "a34489ae123e24be63f3efe0a2ab22d6011c5a42f6b7a5a7ab8e9a306acd5160"
+      },
+      "candidateIngredients": [
+        {
+          "originalIndex": 0,
+          "name": "KoRo-valmis konjaknuudeleita",
+          "grams": 600,
+          "compositionId": "koro-cap",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Original listed weighed quantity; all sauce and edible portion retained. See shared source/admission notes."
+        },
+        {
+          "originalIndex": 1,
+          "name": "broilerin fileetä",
+          "grams": 500,
+          "compositionId": "11565",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original listed weighed quantity; all sauce and edible portion retained. See shared source/admission notes."
+        },
+        {
+          "originalIndex": 2,
+          "name": "parsakaalia, ohuina suikaleina",
+          "grams": 300,
+          "compositionId": "324",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original listed weighed quantity; all sauce and edible portion retained. See shared source/admission notes."
+        },
+        {
+          "originalIndex": 3,
+          "name": "kananmunaa",
+          "grams": 165,
+          "compositionId": "858",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original listed weighed quantity; all sauce and edible portion retained. See shared source/admission notes."
+        },
+        {
+          "originalIndex": 4,
+          "name": "neutraalia öljyä",
+          "grams": 27,
+          "compositionId": "541",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original listed weighed quantity; all sauce and edible portion retained. See shared source/admission notes."
+        },
+        {
+          "originalIndex": 5,
+          "name": "soijakastiketta",
+          "grams": 30,
+          "compositionId": "F008065",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original listed weighed quantity; all sauce and edible portion retained. See shared source/admission notes."
+        },
+        {
+          "originalIndex": 6,
+          "name": "tummaa soijakastiketta",
+          "grams": 15,
+          "compositionId": "yutaka-dark-cap",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Original listed weighed quantity; all sauce and edible portion retained. See shared source/admission notes."
+        },
+        {
+          "originalIndex": 7,
+          "name": "kaupallista osterikastiketta",
+          "grams": 15,
+          "compositionId": "F008026",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original listed weighed quantity; all sauce and edible portion retained. See shared source/admission notes."
+        },
+        {
+          "originalIndex": 8,
+          "name": "Foodin-erytritolia",
+          "grams": 4,
+          "compositionId": "foodin-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original listed weighed quantity; all sauce and edible portion retained. See shared source/admission notes."
+        },
+        {
+          "originalIndex": 9,
+          "name": "valkosipulinkynttä",
+          "grams": 7,
+          "compositionId": "393",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original listed weighed quantity; all sauce and edible portion retained. See shared source/admission notes."
+        },
+        {
+          "originalIndex": 10,
+          "name": "valkopippuria",
+          "grams": 2,
+          "compositionId": "11178",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original listed weighed quantity; all sauce and edible portion retained. See shared source/admission notes."
+        }
+      ],
+      "preparationDecision": "Four portions. Preserve original dry-fry/wok order, every gram and all sauce. Bind600g to KoRo ready-in-water fettuccine weighed AFTER draining; bind15g dark sauce to Yutaka18L exact formulation (NOT a brand recommendation or an already specified product). Plain chicken breast; no marinade. Ordinary soy uses named AFCD commercial proxy. No starch cooking water from other noodles. No optional omitted garnishes added.",
+      "requiredDecisions": [
+        "EXACT_SOURCE_AND_CONTENT_OWNER_REVIEW",
+        "YUTAKA_PRODUCT_BINDING",
+        "KORO_DRAINED_BASIS",
+        "NOMINAL_LABEL_CEILINGS_NOT_ANALYTIC_LOT_BOUNDS",
+        "GK_ONLY_CONTRACT_AND_MACRO_VERSION_COMPATIBILITY"
+      ],
+      "approval": false,
+      "publicationAuthorized": false,
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "confidence": "LOW",
+      "inputSha256": "aff3debfb7b5f7bf6f1957b68de41b1bda051e5eeb0d64a7e68fbeb92c235efc"
+    }
+  ]
+}

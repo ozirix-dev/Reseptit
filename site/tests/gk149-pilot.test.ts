@@ -56,7 +56,9 @@ test('parent recipe/macro sources and all326 original-version results stay uncha
  const base=json(folder+'baseline.json');
  // The owner has now authorized the explicit integration adapter/UI. Parent
  // recipes, translations and nutrition sources remain immutable and distinct.
- const changed=execFileSync('git',['diff','--name-only',base.main,'--','reseptit','kaannokset','docs/nutrition'],{cwd:root,encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean).filter(p=>!p.startsWith(folder));assert.deepEqual(changed,[]);
+ const parentChanges=execFileSync('git',['diff','--name-only',base.main,'--','reseptit','kaannokset'],{cwd:root,encoding:'utf8'}).trim();assert.equal(parentChanges,'');
+ // New batch evidence may be added; existing nutrition sources may not be modified, removed or renamed.
+ const changed=execFileSync('git',['diff','--name-only','--diff-filter=DMRT',base.main,'--','docs/nutrition'],{cwd:root,encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean).filter(p=>!p.startsWith(folder));assert.deepEqual(changed,[]);
  const report=json('tmp/nutrition/glycemic-load-pilot.json');assert.equal(report.summary.calculated,156);assert.equal(report.results.length,326);for(const r of report.results)assert.equal(digest(r),base.baselineResultHashes[r.recipeId],r.recipeId);
  assert.ok(readFileSync(path.join(root,'site/scripts/glycemic-load-pilot.ts'),'utf8').includes('buildGkOnlyVariants'));assert.ok(!readFileSync(path.join(root,'site/scripts/gk80-release.ts'),'utf8').includes('gk149'));assert.equal(base.numericIds.length,156);
 });

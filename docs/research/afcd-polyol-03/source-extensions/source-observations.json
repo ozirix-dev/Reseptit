@@ -1,0 +1,101 @@
+{
+  "records": [
+    {
+      "id": "condensed-milk61",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        61
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "tablePdf": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "tablePdfSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "locator": "Supplement1 printed page63 item936",
+      "food": "Sweetened condensed cow milk, Nestle Australia",
+      "testYear": 2000,
+      "healthyParticipants": 11,
+      "reference": "Glucose2h",
+      "availableTestCarbohydrate": 50,
+      "referenceNumber": "74",
+      "limitation": "Specific tested sweetened condensed milk, not evaporated milk or plant condensed products. AFCD regular sweetened cow-milk composition is a regional proxy, not the exact tested formulation; final coffee/yogurt mixture not measured."
+    },
+    {
+      "id": "raw-banana47-57",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        47,
+        57
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "tablePdf": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "tablePdfSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "locator": "Supplement1 printed page73 items1088 and1091",
+      "foods": [
+        {
+          "description": "Raw banana",
+          "gi": 47,
+          "testYear": 2008,
+          "healthyParticipants": 10
+        },
+        {
+          "description": "Raw overripe banana",
+          "gi": 57,
+          "testYear": 2008,
+          "healthyParticipants": 9
+        }
+      ],
+      "reference": "Glucose2h",
+      "referenceNumber": "UO5",
+      "limitation": "Two actual named food observations, not SEM/CI endpoints, category means or physiological bounds. Original assay data are labelled UO5 in the published table. Cultivar/ripeness and mixture uncertainty may extend outside these scenarios. Excludes cooked banana and plantain."
+    },
+    {
+      "id": "raw-banana47",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        47
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "tablePdf": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "tablePdfSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "locator": "Supplement1 printed page73 item1088",
+      "food": "Raw banana, Australia2008",
+      "healthyParticipants": 10,
+      "reference": "Glucose2h",
+      "referenceNumber": "UO5",
+      "limitation": "Specific raw ordinary banana analogy. No overripe/cooked banana or plantain scope; cultivar/ripeness and mixed-meal effects remain unknown."
+    },
+    {
+      "id": "persimmon61",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        61
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "tablePdf": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "tablePdfSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "locator": "Supplement1 printed page78 item1163",
+      "food": "Persimmon, Diospyros kaki, Italy2004",
+      "reference": "Glucose2h",
+      "scale": "GLUCOSE_100",
+      "limitation": "Source reports >=9 healthy participants, exact cultivar/ripeness/peeling incompletely stated. Raw ordinary kaki application, no dried/cooked fruit. Not a measured yogurt/tea mixture or error bound.",
+      "healthyParticipantsMinimum": 9,
+      "referenceNumber": "UO14"
+    },
+    {
+      "id": "wild-blueberry53",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        53
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "tablePdf": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "tablePdfSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "locator": "Supplement1 printed page74 item1092",
+      "food": "Wild blueberries, Wild Blueberries Association Canada,2004-2007",
+      "healthyParticipants": 10,
+      "reference": "Bread2h",
+      "scale": "GLUCOSE_100",
+      "limitation": "GI53 is the table glucose-scale value despite bread-reference testing; do not convert again. Tested Canadian wild blueberry is not verified as European bilberry Vaccinium myrtillus. Cross-species B analogy requires explicit owner decision; neither exact food match nor a physiological bound.",
+      "referenceNumber": "UO5"
+    }
+  ]
+}

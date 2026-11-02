@@ -1,5 +1,6 @@
 /** Closed pilot arithmetic. Public integration requires the separate exact owner-approved GK-only version contract. */
 import {createHash} from 'node:crypto';
+import {verifyFoodinRecord} from './gk-foodin-binding';
 import {readFileSync} from 'node:fs';
 import path from 'node:path';
 import {calculateGlycemicLoad,type GlycemicIndexRecord} from './glycemic-load-model';
@@ -27,9 +28,10 @@ export function verifyComposition(root:string,c:Composition){
   const expected=c.kind==='FINELI_CHOAVL'?'per100g.available_carbohydrate_g_per_100g':'available_carbohydrate_without_sugar_alcohols_g_per_100g';
   if(!f||c.nativeField!==expected||digest(f)!==c.nativeRowSha256||get(f,expected)!==c.availablePer100g)err('native carbohydrate mismatch '+c.id);
  }else{
-  if(textHash(readFileSync(path.join(root,c.path),'utf8'))!==c.fileSha256)err('composition evidence changed '+c.id);
+  if(c.kind!=='LABEL_TOTAL_MINUS_DECLARED_POLYOLS'&&textHash(readFileSync(path.join(root,c.path),'utf8'))!==c.fileSha256)err('composition evidence changed '+c.id);
   if(c.kind==='LABEL_TOTAL_MINUS_DECLARED_POLYOLS'){
-   const label=dataset.find((x:any)=>x.id==='foodin-erythritol-200g-label-2026-10-24');
+   if(c.path!=='docs/nutrition/food-records.json')err('Foodin source path changed');
+   const label=verifyFoodinRecord(dataset,c.fileSha256);
    if(!label?.polyolsSourceVerified||label.per100g.carbohydrate!==100||label.per100g.polyols!==100||c.availablePer100g!==0)err('explicit erythritol label missing');
   }else if(c.kind==='INDEPENDENT_SUGAR_STARCH_SUM'){
    const n=(s:string)=>Number(dataset.nativeValues[s].value.replace(',','.'));

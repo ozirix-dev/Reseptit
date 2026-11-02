@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "approvedReferenceHead": "fc8e2cbddc8d7fabd3df1cb4439db23d79d97964",
+  "packetBodySha256": "92a3e56aae708ef8a5c85ba897c04dec1d6970a94ba30e4300c429111348095d",
+  "questionReference": "request_user_input_async/call_cafa5c107a294ea19a849af1beae05e2/0",
+  "question": "Hyväksytkö [kuuden A-version päätöspaketin](https://github.com/ozirix-dev/Reseptit/blob/fc8e2cbddc8d7fabd3df1cb4439db23d79d97964/docs/research/afcd-polyol-03/six-a-review.md) integraatioon nykyiseen Draft PR #183:een? Paketti koskee kahvijogurttia, dashimakia, täyslehtistä hojichaa, nattoa, pad kee maota ja Chettinadia sekä siinä rajattuja MEXT-/IFCT-lähdekelpuutuksia ja tarkkoja sisältöversioita. Se käyttää nykyistä A-aritmetiikkaa. Uusi B-poisjättöprofiili jää tutkimukseen. Aiempi rajauksesi edellyttää uusille lähdesovelluksille erillistä hyväksyntää; tämä päätös ei salli julkaisua, Readyä, mergeä tai deployta.",
+  "answer": "Kyllä, hyväksyn kuuden version paketin integraatioon",
+  "methodAndContentApproved": true,
+  "integrationAuthorized": true,
+  "releaseAuthorized": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "admittedSourceFamilies": [
+    "MEXT2023_CHOAVL_MASS_NATTO04046_ONLY",
+    "IFCT2017_TABLE6_AVAILABLE_CHO_G010_ONLY"
+  ],
+  "approvedInputs": {
+    "vietnamilainen-kahvijogurtti-banaanilla": "75b3125da4abf6072188d26656629bfacd4d04d83fe169109c3837da1aadc60a",
+    "japanilainen-dashimaki-tamago-aamiaislautasella": "a9f8daa4b86c5b9326eed7a0f35577ed80fcb5e306d9d106276a9f8a84ab3aa8",
+    "japanilainen-hojicha-jogurtti-persimonilla": "2f0e19fde34c89031e3e4a0a11b340b86a49b3a07a9c536d3504b797abed7413",
+    "japanilainen-natto-riisikulho": "a23b798d343f87c31c41b49cd26eda3f66a1d0c48307ac47b50ee19830881c4a",
+    "pad-kee-mao-vhh-konjac": "0c692cf887c1a70c12d537c3685a25284f004653e752f7e3995197129a50370e",
+    "chettinad-kana": "ba7aeeede3d2222a38cf82d7ff2f571c64933269f439b52e4b9e7a4b64aec85e"
+  },
+  "approvedSourceFilesLfSha256": {
+    "docs/nutrition/gk80-operation149/composition-sources.json": "01bfd164993f6d9351d6139b263203871aa2974675b8be94e32cf2030629a3a4",
+    "docs/nutrition/gk80-operation149/gi-sources.json": "1f7b9831179ca1dae27285bffa189a03a47e28018c946e60b438965abb9d880c",
+    "docs/nutrition/gk80-operation149/prepared-route-cases.json": "0d7c814d9f47a1f04143815ae1d39d794c53860ef95616a1e97bfa4793763c8a",
+    "docs/nutrition/gk80-operation149/prepared-route-composition.json": "c127eaed1723e1314d98bc7a2f94e4c8de7a956e16302f84ce2541acb724d6b5",
+    "docs/nutrition/gk80-operation149/prepared-route-gi.json": "4b58df614e2334b0cdae00a8fcb88580a4ec43091db4e368990b761fdf533f7f",
+    "docs/nutrition/gk80-operation149/prepared-route-observations.json": "3bc2549c5c05fc42dbc8ba752452cb82aea4cc74b0fccef1e1a7dcc48cf1baf4",
+    "docs/nutrition/gk80-operation149/recovery-cases.json": "ff5446f6d0caec947f65145aa2abd935d7e48198361d46b7637be55d1c161376",
+    "docs/nutrition/gk80-operation149/recovery-composition.json": "7091d9f4764242b155d90291ced663d8ccdb5b4dc140847d7a0c3e168c528d8c",
+    "docs/nutrition/gk80-operation149/recovery-gi.json": "0e67ea99b717f8bbb0a01ee6084ab5d0175854f906c6b5de188f85fafb89fd62",
+    "docs/nutrition/gk80-operation149/recovery-observations.json": "e07781f8150a378a4646bceb1f9bc42ac0119afaba8bdd54563fc9de7400a896",
+    "docs/nutrition/gk80-operation149/source-observations.json": "2ff56eb6af7a41c478001b839b94430d8c082b2408f39f9e73cc6a46eb26c4e1",
+    "docs/research/afcd-polyol-03/label-carbohydrate-upper.ts": "8d71b87e4fc0944788d0390d8e115f54265ad6753d66139fb35f45750e887f5d",
+    "docs/research/afcd-polyol-03/mext-available-source.ts": "6dcda86604384b8eb60892bed608f687b015b38d688430ff30819b3042f727e7",
+    "docs/research/afcd-polyol-03/six-a-review-packet.json": "02abfb508254b3ed8bfe42780fbc5c6976d1ad22ebed8995e6c75263b08f7eb0",
+    "docs/research/afcd-polyol-03/source-extensions/cases.jsonl": "b591736df5167ccd35b8cc5ee0703fa587063c09107239b42da8a2f5144098d3",
+    "docs/research/afcd-polyol-03/source-extensions/composition-sources.json": "b5886b8d6ddc4090f9d4ae5856b099108f05b6108e29a843e70dfc3866226138",
+    "docs/research/afcd-polyol-03/source-extensions/gi-sources.json": "981cbfdf872d2c7f53d2847fe84f7a1cb1cd4d6fc66fbf3e0059a8c18cab790c",
+    "docs/research/afcd-polyol-03/source-extensions/mext-native-observations.json": "2f4b91884c3aee1604e64c2be0210f0668ad765eaec454e4e04d3ac03c7267cd",
+    "docs/research/afcd-polyol-03/source-extensions/product-observations.json": "9b42b05911ee5e5b989cda4e75128a299f946a3058ddce0c35c6473b92baa03f",
+    "docs/research/afcd-polyol-03/source-extensions/source-observations.json": "d7df672ba70e15376416f3eeef5f6a046733300d657577313972717f30d1a96a"
+  },
+  "scope": "Exactly six A versions and scoped source-family/binding decisions; no parent recipe/macro edits, no B omissions, no other pending prepared-food/source HOLD activation. Original16 approval remains separate.",
+  "recordedAtUtc": "2026-11-02T15:49:00.744041+00:00"
+}
