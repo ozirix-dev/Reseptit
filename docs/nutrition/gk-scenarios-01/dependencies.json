@@ -1,0 +1,774 @@
+{
+  "baselineMain": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+  "method": "FI published ingredient metadata, polyol/chocolate/explicit-tai lexical screening; not a complete semantic substitution audit.",
+  "count": 50,
+  "polyol": 29,
+  "chocolatePolyolProblem": 2,
+  "ketoChocolate": 2,
+  "explicitAlternatives": 23,
+  "verifiedCompositionDifferences": 2,
+  "fullProductOrRecipeGiEvidenceMissingInThisPilot": 50,
+  "newSourceEligibleNumericalResults": 0,
+  "publishedResults": 0,
+  "coverageDelta": 0,
+  "limitation": "Verified composition difference refers only to the two recipes using generic sugar-free chocolate. They could use the same sourced product alternatives; no new GL is computed for cookies. Other rows require product/recipe-specific review. Counts overlap; count is deduplicated.",
+  "rows": [
+    {
+      "recipeId": "aloo-paratha",
+      "path": "reseptit/paaruoat/aloo-paratha.md",
+      "sourceLfSha256": "e6227412661df24116ad197f1d11700f6066c9f78e28064152f1792e11e24206",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "gheetä tai voita"
+      ]
+    },
+    {
+      "recipeId": "gai-yang-vhh",
+      "path": "reseptit/paaruoat/gai-yang-vhh.md",
+      "sourceLfSha256": "ba59fdae92c7ba09eb7c9505d7d114ac6563105c82ee7e5f2bf0e5c8d9fc74a9",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "gazpacho",
+      "path": "reseptit/alkuruoat/gazpacho.md",
+      "sourceLfSha256": "bab07cf3e7fd6a055f6148cc2e19b9860a5e41e24d11678d7bd42381351465e7",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "sherryviinietikkaa tai punaviinietikkaa"
+      ]
+    },
+    {
+      "recipeId": "hyderabadi-kanabiryani",
+      "path": "reseptit/paaruoat/hyderabadi-kanabiryani.md",
+      "sourceLfSha256": "c3434af8d2dbd5b016f9afd18839fa778fb2a13d79c2cf0b9e4c2070d43367d9",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "gheetä tai voita"
+      ]
+    },
+    {
+      "recipeId": "idli-sambar",
+      "path": "reseptit/paaruoat/idli-sambar.md",
+      "sourceLfSha256": "9c0b75e24940dd7a399a88ec7e05bd279429f5cac9f4e3a54a8f4e960a7d14f1",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "idli-riisiä tai puuroriisiä"
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "path": "reseptit/aamupalat/indonesialainen-bubur-sumsum.md",
+      "sourceLfSha256": "b3b37b70b74efc5e310662a4e046caa13f44cda96368d0a765a8997d0cd04ee3",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "vettä tai mietoa lientä"
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+      "path": "reseptit/aamupalat/indonesialainen-lontong-sayur-aamiaiseksi.md",
+      "sourceLfSha256": "6edb30b88df161bea6daeff58d333f752036c79784ea4366d352e8f69bc2ee7b",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "kasvis- tai kanalientä"
+      ]
+    },
+    {
+      "recipeId": "japanilainen-miso-tofu-paksoi",
+      "path": "reseptit/aamupalat/japanilainen-miso-tofu-paksoi.md",
+      "sourceLfSha256": "43e0b80f7058c844e6802ab5f4b061d7851f0626c97ee608d6eba5fbf2054279",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "kasvis- tai kanalientä"
+      ]
+    },
+    {
+      "recipeId": "japanilainen-okayu-umeboshipluumulla",
+      "path": "reseptit/aamupalat/japanilainen-okayu-umeboshipluumulla.md",
+      "sourceLfSha256": "b207cde733db80c11b05dd58e88db319c0c2c9993ca3f85e94878ed37c9e2215",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "vettä tai mietoa lientä"
+      ]
+    },
+    {
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "path": "reseptit/aamupalat/japanilainen-soba-aamiaiskeitto.md",
+      "sourceLfSha256": "d27d97d6e7b065df3372970275ed3e4525910e98d5e780d4d208e536086b0273",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "kasvis- tai kanalientä"
+      ]
+    },
+    {
+      "recipeId": "keltainen-kanacurry-vhh",
+      "path": "reseptit/paaruoat/keltainen-kanacurry-vhh.md",
+      "sourceLfSha256": "8b13271f5d045eceab072e1bd10020805a1edfb3fe00f5ee79ae3736c49ef668",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "keto-korvapuustit",
+      "path": "reseptit/leivonnaiset/keto-korvapuustit.md",
+      "sourceLfSha256": "84f4ef23369a64393f922fd5df3f22079ca56ddcd8e5963d2d5484542252ba24",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "erytritolia"
+      ]
+    },
+    {
+      "recipeId": "keto-mutakakku",
+      "path": "reseptit/jalkiruoat/keto-mutakakku.md",
+      "sourceLfSha256": "11295775a58c43785b65f67d7b717d8f17163f20ac4196337112abd048740c43",
+      "polyol": true,
+      "chocolatePolyolProblem": true,
+      "ketoChocolate": true,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": true,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "sokeritonta tummaa suklaata",
+        "erytritolia"
+      ]
+    },
+    {
+      "recipeId": "keto-suklaakeksit",
+      "path": "reseptit/jalkiruoat/keto-suklaakeksit.md",
+      "sourceLfSha256": "3890f2c40c40685cfde284dcd0e8346c020b46de45dc5387c6d4c490a261c859",
+      "polyol": true,
+      "chocolatePolyolProblem": true,
+      "ketoChocolate": true,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": true,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "erytritolia",
+        "sokeritonta tummaa suklaata paloina"
+      ]
+    },
+    {
+      "recipeId": "khao-kha-moo-vhh",
+      "path": "reseptit/paaruoat/khao-kha-moo-vhh.md",
+      "sourceLfSha256": "13f3bed310f96cbcac9c35cd69d83bce8038fb8873c3878df0850d81e56b04cd",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia",
+        "kiinankaalia tai paksoita"
+      ]
+    },
+    {
+      "recipeId": "khao-man-gai-vhh",
+      "path": "reseptit/paaruoat/khao-man-gai-vhh.md",
+      "sourceLfSha256": "1b5a9239b0b84cffb9af3a7e4ea38a13b12b041c87117de69928d98b55c2dbcc",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "suolatonta kanalientä tai fondia"
+      ]
+    },
+    {
+      "recipeId": "khao-soi-vhh-konjac",
+      "path": "reseptit/paaruoat/khao-soi-vhh-konjac.md",
+      "sourceLfSha256": "c6eeb19825cc92cc820255d39f61e2448a0db8f86c5221db96187dfc982a6d3c",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "kiinalainen-katkarapu-wontonkeitto",
+      "path": "reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md",
+      "sourceLfSha256": "4b40f0444ebb9f98772befef80a5e6751da56b4086cd22df854efcc20d7ed698",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "kasvis- tai kanalientä"
+      ]
+    },
+    {
+      "recipeId": "kimchi-jjigae",
+      "path": "reseptit/paaruoat/kimchi-jjigae.md",
+      "sourceLfSha256": "ddf90c6176447617f9e997b58c8587fb5a3979aa40656aec152cab4407afb561",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "kanalientä tai vettä"
+      ]
+    },
+    {
+      "recipeId": "korealainen-mandu-keitto-aamiaiseksi",
+      "path": "reseptit/aamupalat/korealainen-mandu-keitto-aamiaiseksi.md",
+      "sourceLfSha256": "032a62d408897d6332bc48b64ca104e5960af4953a937d76afdd3edd66a3bd79",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "kasvis- tai kanalientä"
+      ]
+    },
+    {
+      "recipeId": "koshari",
+      "path": "reseptit/paaruoat/koshari.md",
+      "sourceLfSha256": "651620fb69bd05d461229bc5b44fa960bc61917e338ced33f1c328d0e66ca16d",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "kuivia kokonaisia ruskeita tai vihreitä linssejä"
+      ]
+    },
+    {
+      "recipeId": "liha-juureskeitto-perunaton",
+      "path": "reseptit/paaruoat/liha-juureskeitto-perunaton.md",
+      "sourceLfSha256": "00be4efd7123bf423b8798c835b7171b04c598f85ec37c5ab38449f8e6da3191",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "luutonta naudanlapaa tai etuselkää"
+      ]
+    },
+    {
+      "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
+      "path": "reseptit/aamupalat/malesialainen-laksa-lemak-aamiaiseksi.md",
+      "sourceLfSha256": "9f5463c5eba3224d89ca5a7af7adece0bb8359d222edab33d126cea6da537d4e",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "kasvis- tai kanalientä"
+      ]
+    },
+    {
+      "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+      "path": "reseptit/aamupalat/malesialainen-nasi-lemak-aamiaisella.md",
+      "sourceLfSha256": "a6e430aabed3fd11242235a2f89ff564d8d29934f6f9bc1a10161fa5270216fb",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "kuivaa valkoista basmati- tai jasmiiniriisiä"
+      ]
+    },
+    {
+      "recipeId": "massaman-curry-kanalla-vhh",
+      "path": "reseptit/paaruoat/massaman-curry-kanalla-vhh.md",
+      "sourceLfSha256": "43f7ce521d58bba342757e830dbfa2c05e0e156b3031c843e7a0608d6a672734",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "moo-ping-vhh",
+      "path": "reseptit/paaruoat/moo-ping-vhh.md",
+      "sourceLfSha256": "12927430199de73435eb013f4208ab3b5b2db3deaac02e91aae15afffcc25407",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "munakoiso-kesakurpitsalasagne",
+      "path": "reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md",
+      "sourceLfSha256": "4ae15e1b24e86165ef95b0a05ec26806bac14a48618fc9eeaeeb1f089d47d9f8",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "parmesaani tai vastaava kova juusto"
+      ]
+    },
+    {
+      "recipeId": "pad-kee-mao-vhh-konjac",
+      "path": "reseptit/paaruoat/pad-kee-mao-vhh-konjac.md",
+      "sourceLfSha256": "85931d9ea0a5d4d8910ce51bed38af5ac52b8803414114118fde62de007827be",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "pad-kra-pao-vhh",
+      "path": "reseptit/paaruoat/pad-kra-pao-vhh.md",
+      "sourceLfSha256": "24fbf091657c24c9f285a5fdc5b33931d2606425a95623921a5f6854ded695ce",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "pad-see-ew-vhh-konjac",
+      "path": "reseptit/paaruoat/pad-see-ew-vhh-konjac.md",
+      "sourceLfSha256": "f140811f1f8f5b24496579adb69df8a57e655ff1af2cb450d26257b458ec4309",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "pad-thai-vhh-konjac",
+      "path": "reseptit/paaruoat/pad-thai-vhh-konjac.md",
+      "sourceLfSha256": "c2e8418eddf16e77857f1525510d8506ec58d0462e5d3112f542343c6f1a1a39",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "panang-curry-kanalla-vhh",
+      "path": "reseptit/paaruoat/panang-curry-kanalla-vhh.md",
+      "sourceLfSha256": "acb33f7020a710d3eac23067365abf80c449599c4714f2b06f570b2266c3eefe",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "punainen-kanacurry-vhh",
+      "path": "reseptit/paaruoat/punainen-kanacurry-vhh.md",
+      "sourceLfSha256": "c332eb5b3779330a6e6c82a5172b8f7107ece977be6b72249f48ab2c950a4094",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "rahkapiirakka-vhh",
+      "path": "reseptit/jalkiruoat/rahkapiirakka-vhh.md",
+      "sourceLfSha256": "e902035d36263b4ad41d337d5fed8283d76e8fffcbfc87c28d53076c075dfdab",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "erytritolia"
+      ]
+    },
+    {
+      "recipeId": "sichuan-hot-pot",
+      "path": "reseptit/paaruoat/sichuan-hot-pot.md",
+      "sourceLfSha256": "0c1ef97b44a862df2c00529b2cc614e26711d04fd46c41f8d4b1320eb267c858",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "naudan- tai kanalientä"
+      ]
+    },
+    {
+      "recipeId": "som-tam-vhh-kurkkuna",
+      "path": "reseptit/alkuruoat/som-tam-vhh-kurkkuna.md",
+      "sourceLfSha256": "281a4a755a3f337beafcc4bc1e6f03a63d1e07adffbaae3f01ae625f43e42e3d",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "path": "reseptit/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+      "sourceLfSha256": "a4d7a2d111907b2ef34721eeb81bfd32999e112d894a3c39dcfd6b8230899173",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "tom-kha-gai-vhh",
+      "path": "reseptit/paaruoat/tom-kha-gai-vhh.md",
+      "sourceLfSha256": "dd8b9c75be69130d255850296fbb22c4654c3364487cdd7a872a7099632950f1",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia"
+      ]
+    },
+    {
+      "recipeId": "tom-yum-goong-vhh",
+      "path": "reseptit/paaruoat/tom-yum-goong-vhh.md",
+      "sourceLfSha256": "e2ac45c320ad6ecdcde131dcb8cea63c572b5ed14c50001822741232884db308",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "osterivinokkaita tai herkkusieniä"
+      ]
+    },
+    {
+      "recipeId": "tunisialainen-brik",
+      "path": "reseptit/alkuruoat/tunisialainen-brik.md",
+      "sourceLfSha256": "1eb06f3db86fba5a21db1e252bdc307c37cbe146e1de3417d2d6f3f827ffcd7a",
+      "polyol": false,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "filo- tai malsouka-taikinaa"
+      ]
+    },
+    {
+      "recipeId": "vhh-brita-kakku",
+      "path": "reseptit/jalkiruoat/vhh-brita-kakku.md",
+      "sourceLfSha256": "5e50ff8c97ab1c36729d732f7245b8f81b4d9c8fb984bd378f3bd3bcad3e608f",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "erytritolia",
+        "erytritolia marenkiin"
+      ]
+    },
+    {
+      "recipeId": "vhh-juustokakku",
+      "path": "reseptit/jalkiruoat/vhh-juustokakku.md",
+      "sourceLfSha256": "3bcb2bc49ab09f25eaebbe24ab59fe948ba1f86619708b71261adb01b1dddcda",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "erytritolia"
+      ]
+    },
+    {
+      "recipeId": "vhh-korvapuustit",
+      "path": "reseptit/jalkiruoat/vhh-korvapuustit.md",
+      "sourceLfSha256": "d55991f80efa1397c256a867e68c185cdab82c2d650123b95c5890ffdd02fe7e",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin100%erytritolia"
+      ]
+    },
+    {
+      "recipeId": "vhh-letut",
+      "path": "reseptit/jalkiruoat/vhh-letut.md",
+      "sourceLfSha256": "513be36c7bec75f235b0bbec9a1b53d9bbc8e79197b6316fbe970f0f8c801a10",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin100%erytritolia"
+      ]
+    },
+    {
+      "recipeId": "vhh-mansikkakakku",
+      "path": "reseptit/jalkiruoat/vhh-mansikkakakku.md",
+      "sourceLfSha256": "b0273164864447b2d117cbf22d4125d9f7281d7f7dbc0d57c7f2286cc62958fe",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "erytritolia"
+      ]
+    },
+    {
+      "recipeId": "vhh-mokkapalat",
+      "path": "reseptit/jalkiruoat/vhh-mokkapalat.md",
+      "sourceLfSha256": "c8eb392346a9e7e72debb187a16fb2f2c72c210d32d88b61a2c0559c8cc8447c",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "erytritolia",
+        "erytritolijauhetta kuorrutteeseen"
+      ]
+    },
+    {
+      "recipeId": "vhh-omenapiirakka",
+      "path": "reseptit/jalkiruoat/vhh-omenapiirakka.md",
+      "sourceLfSha256": "a22e61974772a696521e6a70376e7eeb132fb81668a5a04df4da700a77952536",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "erytritolia pohjaan",
+        "erytritolia täytteeseen"
+      ]
+    },
+    {
+      "recipeId": "vhh-raparperipiirakka",
+      "path": "reseptit/jalkiruoat/vhh-raparperipiirakka.md",
+      "sourceLfSha256": "3a467afacaac68ffe88a084834e3a084e0563f85432725543e24d67e232454ca",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "erytritolia"
+      ]
+    },
+    {
+      "recipeId": "vhh-runebergintortut",
+      "path": "reseptit/leivonnaiset/vhh-runebergintortut.md",
+      "sourceLfSha256": "e579594baf3d71bd324b1051ab7df2ab2da81c17412ad1ea3d75637d4e5f1cc3",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": false,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "erytritolia"
+      ]
+    },
+    {
+      "recipeId": "yum-woon-sen-vhh",
+      "path": "reseptit/alkuruoat/yum-woon-sen-vhh.md",
+      "sourceLfSha256": "0f9cceee1981e7d8f0c0f68ca54591eb48c4a6ef9a78c99a5b3b35d17e7ef331",
+      "polyol": true,
+      "chocolatePolyolProblem": false,
+      "ketoChocolate": false,
+      "explicitAlternative": true,
+      "verifiedCompositionDifference": false,
+      "wholeRecipeGiMissing": true,
+      "newSourceEligibleNumericalResults": 0,
+      "triggers": [
+        "Foodin-erytritolia",
+        "tuoretta selleriä tai kiinanselleriä"
+      ]
+    }
+  ]
+}
