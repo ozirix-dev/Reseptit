@@ -1,420 +1,704 @@
 {
   "recipeId": "marokkolainen-couscous",
-  "sourceHash": "f3c2fecd4edfc0da38b212dc17d7ca4a4d435a230a41d751d87751645afffc6b",
-  "calculatedAt": "2026-10-24",
-  "batchId": "batch-11",
+  "sourceHash": "cf78907e87b70c2a4d718f6a864cea77859dad69495f3cec5f5e29b49d447675",
+  "calculatedAt": "2026-11-02",
+  "batchId": "batch-144",
   "servings": 4,
-  "scope": "Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.",
+  "scope": "New exact thigh-fillet and freshly boiled whole-chickpea version, complete stock retention. Separate Fineli composition proxies, no old AFCD package relabelled. Owner approval pending.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "broilerin koipia tai paistileikettä",
+      "item": "nahatonta luutonta broilerin paistileikettä",
       "amount": 600,
       "unit": "g",
-      "state": "raw lean chicken thigh flesh",
-      "matchEvidence": "broilerin koipia tai paistileikettä maps to afcd-release-3 record F002806; state: raw lean chicken thigh flesh.",
+      "state": "RAW",
+      "matchEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Original thigh-fillet option, weighed edible raw flesh; not breast strips, skin-on or bone-in600g.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible input.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
       "record": {
-        "id": "afcd-F002806-release-3",
-        "name": "Chicken, thigh, lean flesh, raw",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "raw lean chicken thigh flesh",
-        "basis": "per100g-as-sold",
+        "id": "cc-hold-fineli-30792",
+        "name": "BROILERI, KOIPI-REISI, NAHATON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30792",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; unknown values remain unknown.",
         "per100g": {
           "carbohydrate": 0,
           "fibre": 0,
           "polyols": 0,
-          "protein": 19.1,
-          "fat": 3
+          "protein": 19.65,
+          "fat": 3.42
+        },
+        "primaryReference": {
+          "source_id": "30792",
+          "name": "BROILERI, KOIPI-REISI, NAHATON",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "POULTRY",
+          "food_class": "POULTRY",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0,
+            "fibre_g_per_100g": 0,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 19.65,
+            "fat_g_per_100g": 3.42
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "CG",
+              "method_indicator": "MIR002"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR003"
+            }
+          },
+          "portion_mass_g": {}
         }
       }
     },
     {
-      "item": "couscousia",
+      "item": "San Remo CousCous -durumcouscousia, kuivana",
       "amount": 250,
       "unit": "g",
-      "state": "uncooked couscous",
-      "matchEvidence": "couscousia maps to afcd-release-3 record F003239; state: uncooked couscous.",
+      "state": "RAW",
+      "matchEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Named ordinary fine durum couscous hydrated with boiling water5min and served hot; not pearl couscous, cooled or toasted version. Fineli29208 dry composition is a separate LOW proxy, not the branded label. No test-portion wet/dry yield inference.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible input.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
       "record": {
-        "id": "afcd-F003239-release-3",
-        "name": "Couscous, uncooked",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "uncooked couscous",
-        "basis": "per100g-as-sold",
+        "id": "cc-hold-fineli-29208",
+        "name": "KUSKUS",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29208",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; unknown values remain unknown.",
         "per100g": {
-          "carbohydrate": 73.6,
-          "fibre": 4.2,
+          "carbohydrate": 63.6,
+          "fibre": 3.5,
           "polyols": 0,
-          "protein": 13.8,
-          "fat": 0.2
+          "protein": 11.5,
+          "fat": 1.1
+        },
+        "primaryReference": {
+          "source_id": "29208",
+          "name": "KUSKUS",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "WHEAT",
+          "food_class": "PASTAADD",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 63.6,
+            "fibre_g_per_100g": 3.5,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 11.5,
+            "fat_g_per_100g": 1.1
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "I",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 80,
+            "RKL": 12,
+            "TL": 4
+          }
         }
       }
     },
     {
-      "item": "sipuli",
-      "amount": 1,
-      "unit": "kpl",
-      "state": "yellow onion",
-      "matchEvidence": "sipuli maps to fineli-release-20 record 335; state: yellow onion.",
-      "gramsPerUnit": 55,
-      "conversionEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece.",
+      "item": "kuorittua sipulia",
+      "amount": 55,
+      "unit": "g",
+      "state": "RAW",
+      "matchEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Named chopped nonstarchy vegetable, cooked in the stew; existing PI40 scope.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible input.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
       "record": {
-        "id": "fineli-335-release-20",
+        "id": "cc-hold-fineli-335",
         "name": "SIPULI, KELTASIPULI",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "yellow onion",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "RAW",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 4.8,
-          "FIBT": 1.2,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; unknown values remain unknown.",
         "per100g": {
           "carbohydrate": 4.8,
           "fibre": 1.2,
           "polyols": 0,
           "protein": 1.25,
           "fat": 0.1
+        },
+        "primaryReference": {
+          "source_id": "335",
+          "name": "SIPULI, KELTASIPULI",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "VEGONI",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 4.8,
+            "fibre_g_per_100g": 1.2,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 1.25,
+            "fat_g_per_100g": 0.1
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "T",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MIR006"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_S": 30,
+            "KPL_M": 55,
+            "KPL_L": 200,
+            "DL": 90
+          }
         }
       }
     },
     {
-      "item": "porkkanaa",
-      "amount": 2,
-      "unit": "kpl",
-      "state": "raw carrot",
-      "matchEvidence": "porkkanaa maps to fineli-release-20 record 300; state: raw carrot.",
-      "gramsPerUnit": 55,
-      "conversionEvidence": "Edible piece mass for porkkanaa: 55 g/unit, Fineli portion where available or standard piece.",
+      "item": "kuorittua porkkanaa",
+      "amount": 110,
+      "unit": "g",
+      "state": "RAW",
+      "matchEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Named chopped vegetable cooked in the stew; existing project PI40 scope.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible input.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
       "record": {
-        "id": "fineli-300-release-20",
+        "id": "cc-hold-fineli-300",
         "name": "PORKKANA",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/300",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "raw carrot",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/300",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "RAW",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 5.56,
-          "FIBT": 2.4,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; unknown values remain unknown.",
         "per100g": {
           "carbohydrate": 5.56,
           "fibre": 2.4,
           "polyols": 0,
           "protein": 0.63,
           "fat": 0.2
+        },
+        "primaryReference": {
+          "source_id": "300",
+          "name": "PORKKANA",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "ROOT",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 5.56,
+            "fibre_g_per_100g": 2.4,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 0.63,
+            "fat_g_per_100g": 0.2
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "T",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MIR006"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_S": 35,
+            "KPL_M": 65,
+            "KPL_L": 100
+          }
         }
       }
     },
     {
       "item": "kesäkurpitsaa",
-      "amount": 1,
-      "unit": "kpl",
-      "state": "raw zucchini",
-      "matchEvidence": "kesäkurpitsaa maps to fineli-release-20 record 389; state: raw zucchini.",
-      "gramsPerUnit": 55,
-      "conversionEvidence": "Edible piece mass for kesäkurpitsaa: 55 g/unit, Fineli portion where available or standard piece.",
+      "amount": 200,
+      "unit": "g",
+      "state": "RAW",
+      "matchEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Named chopped nonstarchy vegetable, cooked in the stew; existing PI40 scope.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible input.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
       "record": {
-        "id": "fineli-389-release-20",
+        "id": "cc-hold-fineli-389",
         "name": "KESÄKURPITSA, ZUCCHINI",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/389",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "raw zucchini",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/389",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "RAW",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 2.5,
-          "FIBT": 2,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; unknown values remain unknown.",
         "per100g": {
           "carbohydrate": 2.5,
           "fibre": 2,
           "polyols": 0,
           "protein": 0.65,
           "fat": 0.4
+        },
+        "primaryReference": {
+          "source_id": "389",
+          "name": "KESÄKURPITSA, ZUCCHINI",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "VEGFRU",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 2.5,
+            "fibre_g_per_100g": 2,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 0.65,
+            "fat_g_per_100g": 0.4
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "T",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_S": 200,
+            "KPL_M": 350,
+            "KPL_L": 450
+          }
         }
       }
     },
     {
-      "item": "kikherneitä",
+      "item": "suolavedessä juuri keitettyjä kokonaisia kikherneitä, valutettuna",
       "amount": 400,
       "unit": "g",
-      "state": "cooked drained chickpeas",
-      "matchEvidence": "kikherneitä maps to fineli-release-20 record 11089; state: cooked drained chickpeas.",
+      "state": "BOIL",
+      "matchEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. 400g weighed AFTER boiling and draining, cooked from dry, no canned-food substitution, cooling or15min second stew cooking. Fineli11089 boiled unsalted chickpea is an independent LOW composition proxy; salt-water sodium is outside the four macros.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible input.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
       "record": {
-        "id": "fineli-11089-release-20",
+        "id": "cc-hold-fineli-11089",
         "name": "KIKHERNE SUOLATTOMASSA VEDESSÄ",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11089",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "cooked drained chickpeas",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11089",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "BOIL",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 17.6,
-          "FIBT": 5,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; unknown values remain unknown.",
         "per100g": {
           "carbohydrate": 17.6,
           "fibre": 5,
           "polyols": 0,
           "protein": 8.44,
           "fat": 2.5
+        },
+        "primaryReference": {
+          "source_id": "11089",
+          "name": "KIKHERNE SUOLATTOMASSA VEDESSÄ",
+          "food_type": "FOOD",
+          "process": "BOIL",
+          "edible_portion_percent": 100,
+          "ingredient_class": "PEABEAN",
+          "food_class": "LEGUMES",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 17.6,
+            "fibre_g_per_100g": 5,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 8.44,
+            "fat_g_per_100g": 2.5
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR001"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 60,
+            "RKL": 10
+          }
         }
       }
     },
     {
-      "item": "kanalientä",
+      "item": "käyttövalmista laimennettua kanalientä",
+      "amount": 1000,
+      "unit": "g",
+      "state": "BOIL",
+      "matchEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. New version retains all solids and remaining broth after cooking.1000g is a new weighed input, not assumed1L=1000g. Fineli30315 generic diluted stock is a disclosed LOW composition proxy, not an exact unspecified brand. Its A0.427g/100g is within the existing named stock PI50 scope.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
+      "record": {
+        "id": "cc-hold-fineli-30315",
+        "name": "KANALIEMI, LAIMENNETTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30315",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "BOIL",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; unknown values remain unknown.",
+        "per100g": {
+          "carbohydrate": 0.427,
+          "fibre": 0.029,
+          "polyols": 0,
+          "protein": 0.27,
+          "fat": 0.792
+        },
+        "primaryReference": {
+          "source_id": "30315",
+          "name": "KANALIEMI, LAIMENNETTU",
+          "food_type": "DISH",
+          "process": "BOIL",
+          "edible_portion_percent": 100,
+          "ingredient_class": "DISH",
+          "food_class": "SAVSAUCE",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.427,
+            "fibre_g_per_100g": 0.029,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 0.27,
+            "fat_g_per_100g": 0.792
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "R",
+              "method_indicator": "MI0002"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "R",
+              "method_indicator": "MI0002"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "R",
+              "method_indicator": "MI0002"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "R",
+              "method_indicator": "MI0002"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "R",
+              "method_indicator": "MI0002"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 100,
+            "RKL": 15,
+            "TL": 5
+          }
+        }
+      }
+    },
+    {
+      "item": "jauhettua juustokuminaa",
+      "amount": 2,
+      "unit": "g",
+      "state": "specified edible ingredient",
+      "matchEvidence": "Exact weighed pure ingredient or small-spice source-bound omission.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
+      "excludedReason": "Small whole-ingredient omission within existing cumulative macro limits.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.2212,
+        "protein": 0.08904999999999999,
+        "fat": 0.11135,
+        "netCarbohydrate": 0.2212,
+        "kcal": 1.875
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC170923 Spices, cumin seed: totalCHO includes fibre/unknown polyols and bounds both carbohydrate outputs. Same-source protein, fat and energy caps; no zero polyol inference."
+    },
+    {
+      "item": "jauhettua korianterinsiementä",
+      "amount": 2,
+      "unit": "g",
+      "state": "specified edible ingredient",
+      "matchEvidence": "Exact weighed pure ingredient or small-spice source-bound omission.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
+      "excludedReason": "Small whole-ingredient omission within existing cumulative macro limits.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.27495,
+        "protein": 0.061849999999999995,
+        "fat": 0.08885,
+        "netCarbohydrate": 0.27495,
+        "kcal": 1.49
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC170922 Spices, coriander seed: totalCHO includes fibre/unknown polyols and bounds both carbohydrate outputs. Same-source protein, fat and energy caps; no zero polyol inference."
+    },
+    {
+      "item": "kurkumajauhetta",
       "amount": 1,
-      "unit": "l",
-      "state": "prepared liquid stock",
-      "matchEvidence": "kanalientä maps to afcd-release-3 record F008936; state: prepared liquid stock.",
-      "gramsPerUnit": 1000,
-      "conversionEvidence": "Ingredient-specific volume mass: 1000 g/l for kanalientä.",
+      "unit": "g",
+      "state": "specified edible ingredient",
+      "matchEvidence": "Exact weighed pure ingredient or small-spice source-bound omission.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible input.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "record": {
-        "id": "afcd-F008936-release-3",
-        "name": "Stock, liquid, all flavours (except fish), prepared from commercial powder or cube",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "prepared liquid stock",
-        "basis": "per100g-as-sold",
-        "carbohydrateDefinition": "EU_AVAILABLE",
-        "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
-        "per100g": {
-          "carbohydrate": 0.4,
-          "fibre": 0,
-          "polyols": 0,
-          "protein": 0.2,
-          "fat": 0.2
-        }
-      }
-    },
-    {
-      "item": "juustokuminaa",
-      "amount": 1,
-      "unit": "tl",
-      "state": "ground cumin",
-      "matchEvidence": "juustokuminaa maps to afcd-release-3 record F003327; state: ground cumin.",
-      "gramsPerUnit": 2,
-      "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for juustokuminaa.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "record": {
-        "id": "afcd-F003327-release-3",
-        "name": "Cumin (cummin) seed, dried, ground",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "ground cumin",
-        "basis": "per100g-as-sold",
-        "carbohydrateDefinition": "EU_AVAILABLE",
-        "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
-        "per100g": {
-          "carbohydrate": 33.7,
-          "fibre": 10.5,
-          "polyols": 0,
-          "protein": 17.8,
-          "fat": 22.3
-        }
-      }
-    },
-    {
-      "item": "jauhettua korianteria",
-      "amount": 1,
-      "unit": "tl",
-      "state": "ground coriander seed",
-      "matchEvidence": "jauhettua korianteria maps to afcd-release-3 record F003190; state: ground coriander seed.",
-      "gramsPerUnit": 2,
-      "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for jauhettua korianteria.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "record": {
-        "id": "afcd-F003190-release-3",
-        "name": "Coriander seed, dried, ground",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "ground coriander seed",
-        "basis": "per100g-as-sold",
-        "carbohydrateDefinition": "EU_AVAILABLE",
-        "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
-        "per100g": {
-          "carbohydrate": 8.4,
-          "fibre": 41.9,
-          "polyols": 0,
-          "protein": 12.4,
-          "fat": 17.8
-        }
-      }
-    },
-    {
-      "item": "kurkumaa",
-      "amount": 0.5,
-      "unit": "tl",
-      "state": "ground turmeric",
-      "matchEvidence": "kurkumaa maps to afcd-release-3 record F009335; state: ground turmeric.",
-      "gramsPerUnit": 2,
-      "conversionEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kurkumaa.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "record": {
-        "id": "afcd-F009335-release-3",
-        "name": "Turmeric, dried, ground",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "ground turmeric",
-        "basis": "per100g-as-sold",
-        "carbohydrateDefinition": "EU_AVAILABLE",
-        "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
-        "per100g": {
-          "carbohydrate": 44.4,
-          "fibre": 22.7,
-          "polyols": 0,
-          "protein": 9.7,
-          "fat": 3.2
-        }
-      }
+      "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
+      "excludedReason": "Small whole-ingredient omission within existing cumulative macro limits.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.16785,
+        "protein": 0.0242,
+        "fat": 0.008125,
+        "netCarbohydrate": 0.16785,
+        "kcal": 0.78
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC172231 Spices, turmeric, ground: totalCHO includes fibre/unknown polyols and bounds both carbohydrate outputs. Same-source protein, fat and energy caps; no zero polyol inference."
     },
     {
       "item": "oliiviöljyä",
-      "amount": 2,
-      "unit": "rkl",
-      "state": "olive oil",
-      "matchEvidence": "oliiviöljyä maps to fineli-release-20 record 536; state: olive oil.",
-      "gramsPerUnit": 13.5,
-      "conversionEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä.",
+      "amount": 27,
+      "unit": "g",
+      "state": "IND",
+      "matchEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. ",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible input.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
       "record": {
-        "id": "fineli-536-release-20",
+        "id": "cc-hold-fineli-536",
         "name": "OLIIVIÖLJY",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
-        "retrievedAt": "2026-10-24",
-        "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "olive oil",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "IND",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "componentValues": {
-          "CHO": 0,
-          "FIBT": 0,
-          "POLYL": 0
-        },
-        "componentIds": {
-          "CHO": 2034,
-          "FIBT": 2168,
-          "POLYL": 2260
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "polyolsEvidence": "Explicit frozen Fineli SUGOH; unknown values remain unknown.",
         "per100g": {
           "carbohydrate": 0,
           "fibre": 0,
           "polyols": 0,
           "protein": 0,
           "fat": 100
+        },
+        "primaryReference": {
+          "source_id": "536",
+          "name": "OLIIVIÖLJY",
+          "food_type": "FOOD",
+          "process": "IND",
+          "edible_portion_percent": 100,
+          "ingredient_class": "OIL",
+          "food_class": "OIL",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0,
+            "fibre_g_per_100g": 0,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 0,
+            "fat_g_per_100g": 100
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 90,
+            "RKL": 13.5,
+            "TL": 4.5
+          }
         }
       }
     },
     {
       "item": "suolaa",
-      "amount": 1,
-      "unit": "tl",
-      "state": "documented low-impact seasoning or nutrient-free item",
-      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "amount": 5,
+      "unit": "g",
+      "state": "specified edible ingredient",
+      "matchEvidence": "Exact weighed pure ingredient or small-spice source-bound omission.",
       "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "edibleEvidence": "Weighed edible input.",
       "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Water and salt have no material macro contribution.",
+      "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
+      "excludedReason": "Pure salt or water has no macronutrients.",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
@@ -422,7 +706,27 @@
         "protein": 0,
         "fat": 0
       },
-      "omissionImpactEvidence": "Water and salt have no material macro contribution."
+      "omissionImpactEvidence": "Pure salt/water only, not broth or seasoning. Water volume need not be converted into nutrient mass."
+    },
+    {
+      "item": "vettä couscousin turvottamiseen",
+      "amount": 375,
+      "unit": "ml",
+      "state": "specified edible ingredient",
+      "matchEvidence": "Exact weighed pure ingredient or small-spice source-bound omission.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
+      "excludedReason": "Pure salt or water has no macronutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt/water only, not broth or seasoning. Water volume need not be converted into nutrient mass."
     }
   ]
 }

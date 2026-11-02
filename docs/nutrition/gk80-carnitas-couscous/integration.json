@@ -1,0 +1,174 @@
+{
+  "baseMain": "adda64fda9bf63e69e190b6d888698587a250a2a",
+  "researchPr": 170,
+  "recipes": [
+    {
+      "recipeId": "marokkolainen-couscous",
+      "originalPublishedPath": "reseptit/paaruoat/marokkolainen-couscous.md",
+      "previousSourceLfSha256": "ac56be985edbbaa8d44fd385f50d5b19587f3c34b6acfe9148232605f52778f9",
+      "previousMacroEvidenceLfSha256": "30023b391c59f1704a2414749feb1d94b411169e559f54047dfb10261f141c60",
+      "newInput": {
+        "recipeId": "marokkolainen-couscous",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "nahatonta luutonta broilerin paistileikettä",
+            "grams": 600,
+            "fineliRecordId": "cc-hold-fineli-30792",
+            "giRecordId": null,
+            "massEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Original thigh-fillet option, weighed edible raw flesh; not breast strips, skin-on or bone-in600g."
+          },
+          {
+            "name": "San Remo CousCous -durumcouscousia, kuivana",
+            "grams": 250,
+            "fineliRecordId": "cc-hold-fineli-29208",
+            "giRecordId": "cc-hold-couscous65",
+            "massEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Named ordinary fine durum couscous hydrated with boiling water5min and served hot; not pearl couscous, cooled or toasted version. Fineli29208 dry composition is a separate LOW proxy, not the branded label. No test-portion wet/dry yield inference.",
+            "foodKey": "cc-hold-couscous",
+            "preparationKey": "cc-hold-couscous65",
+            "giMatchEvidence": "Named human GI used only as LOW food/preparation analogue. Named ordinary fine durum couscous hydrated with boiling water5min and served hot; not pearl couscous, cooled or toasted version. Fineli29208 dry composition is a separate LOW proxy, not the branded label. No test-portion wet/dry yield inference."
+          },
+          {
+            "name": "kuorittua sipulia",
+            "grams": 55,
+            "fineliRecordId": "cc-hold-fineli-335",
+            "giRecordId": "cc-hold-vegetable-imputation40",
+            "massEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Named chopped nonstarchy vegetable, cooked in the stew; existing PI40 scope.",
+            "foodKey": "cc-hold-low-carb-vegetable",
+            "preparationKey": "cc-hold-vegetable-imputation40",
+            "giMatchEvidence": "Project PI, not measured food GI. Named chopped nonstarchy vegetable, cooked in the stew; existing PI40 scope."
+          },
+          {
+            "name": "kuorittua porkkanaa",
+            "grams": 110,
+            "fineliRecordId": "cc-hold-fineli-300",
+            "giRecordId": "cc-hold-vegetable-imputation40",
+            "massEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Named chopped vegetable cooked in the stew; existing project PI40 scope.",
+            "foodKey": "cc-hold-low-carb-vegetable",
+            "preparationKey": "cc-hold-vegetable-imputation40",
+            "giMatchEvidence": "Project PI, not measured food GI. Named chopped vegetable cooked in the stew; existing project PI40 scope."
+          },
+          {
+            "name": "kesäkurpitsaa",
+            "grams": 200,
+            "fineliRecordId": "cc-hold-fineli-389",
+            "giRecordId": "cc-hold-vegetable-imputation40",
+            "massEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Named chopped nonstarchy vegetable, cooked in the stew; existing PI40 scope.",
+            "foodKey": "cc-hold-low-carb-vegetable",
+            "preparationKey": "cc-hold-vegetable-imputation40",
+            "giMatchEvidence": "Project PI, not measured food GI. Named chopped nonstarchy vegetable, cooked in the stew; existing PI40 scope."
+          },
+          {
+            "name": "suolavedessä juuri keitettyjä kokonaisia kikherneitä, valutettuna",
+            "grams": 400,
+            "fineliRecordId": "cc-hold-fineli-11089",
+            "giRecordId": "cc-hold-chickpea-boiled36",
+            "massEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. 400g weighed AFTER boiling and draining, cooked from dry, no canned-food substitution, cooling or15min second stew cooking. Fineli11089 boiled unsalted chickpea is an independent LOW composition proxy; salt-water sodium is outside the four macros.",
+            "foodKey": "cc-hold-chickpea-boiled",
+            "preparationKey": "cc-hold-chickpea-boiled36",
+            "giMatchEvidence": "Freshly boiled drained whole chickpeas mixed into the finished hot stew off heat; no canned/chilled/mashed/roasted or15min second-cooking transfer. Exact cultivar, boiling time and serving temperature not reported in the primary study. Separate cooked Fineli composition proxy. Owner must approve this hot-boiled whole-chickpea version, not historical Edgell35 applied to15min reheating."
+          },
+          {
+            "name": "käyttövalmista laimennettua kanalientä",
+            "grams": 1000,
+            "fineliRecordId": "cc-hold-fineli-30315",
+            "giRecordId": "cc-hold-lowcho50-v2",
+            "massEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. New version retains all solids and remaining broth after cooking.1000g is a new weighed input, not assumed1L=1000g. Fineli30315 generic diluted stock is a disclosed LOW composition proxy, not an exact unspecified brand. Its A0.427g/100g is within the existing named stock PI50 scope.",
+            "foodKey": "cc-hold-lowcho-code",
+            "preparationKey": "cc-hold-lowcho50-v2",
+            "giMatchEvidence": "Project PI, not measured food GI. New version retains all solids and remaining broth after cooking.1000g is a new weighed input, not assumed1L=1000g. Fineli30315 generic diluted stock is a disclosed LOW composition proxy, not an exact unspecified brand. Its A0.427g/100g is within the existing named stock PI50 scope."
+          },
+          {
+            "name": "jauhettua juustokuminaa",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Existing source-backed small-portion omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.2212,
+            "upperBoundEvidence": "USDA SR Legacy FDC170923 Spices, cumin seed: total carbohydrate including fibre and unknown polyols is a nominal source-model ceiling; no inferred P0. Whole spice milled without a separated fraction."
+          },
+          {
+            "name": "jauhettua korianterinsiementä",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Existing source-backed small-portion omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.27495,
+            "upperBoundEvidence": "USDA SR Legacy FDC170922 Spices, coriander seed: total carbohydrate including fibre and unknown polyols is a nominal source-model ceiling; no inferred P0. Whole spice milled without a separated fraction."
+          },
+          {
+            "name": "kurkumajauhetta",
+            "grams": 1,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Existing source-backed small-portion omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.16785,
+            "upperBoundEvidence": "USDA SR Legacy FDC172231 Spices, turmeric, ground: total carbohydrate including fibre and unknown polyols is a nominal source-model ceiling; no inferred P0. Whole spice milled without a separated fraction."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 27,
+            "fineliRecordId": "cc-hold-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. "
+          },
+          {
+            "name": "suolaa",
+            "grams": 5,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt has no carbohydrate, not seasoning mix."
+          },
+          {
+            "name": "vettä couscousin turvottamiseen",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure water",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "375ml plain water, no carbohydrate; no density conversion required for zero-macro water."
+          }
+        ]
+      },
+      "ownerApproval": "PENDING_EXACT_VERSION_AND_PROXY_REVIEW",
+      "sourceLfSha256": "fab6a8c2a9ed8d39e4c3238ee25edd019397511ac9424188a3e4edd8a8f02886",
+      "macroEvidenceSha256": "db564350202661ad6ea4b8e7d53858bcd43a9e3dc602c86fd0e5ddfb3aa4cc1f",
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "macroValues": {
+        "carbs_net_per_serving_g": 61.86,
+        "carbs_total_per_serving_g": 70.94,
+        "protein_per_serving_g": 46.45,
+        "fat_per_serving_g": 17.32
+      },
+      "gk": 34.08,
+      "omittedChoPerServingG": 0.664,
+      "localeLfSha256": {
+        "en": "6498f74d229d7fbf4358243076077ea4e59afc1208196954f4d60d0fe35238b1",
+        "sv": "3ec36159816265a8d3a8e7362f21ce7caf6e1866cb6676f53aa116fa9a705baf",
+        "th": "0ab1532e55f0c10c0cfff0a102545b7a5112b241fda066468d5c6d2ec770648c"
+      }
+    }
+  ],
+  "newFoodRecords": [
+    "cc-hold-fineli-30792",
+    "cc-hold-fineli-29208",
+    "cc-hold-fineli-335",
+    "cc-hold-fineli-300",
+    "cc-hold-fineli-389",
+    "cc-hold-fineli-11089",
+    "cc-hold-fineli-30315",
+    "cc-hold-fineli-536"
+  ],
+  "newGiRecords": [
+    "cc-hold-couscous65",
+    "cc-hold-vegetable-imputation40",
+    "cc-hold-lowcho50-v2",
+    "cc-hold-chickpea-boiled36"
+  ],
+  "ownerApproval": "PENDING_DRAFT_REVIEW",
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false
+}

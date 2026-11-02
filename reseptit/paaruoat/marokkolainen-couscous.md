@@ -6,7 +6,7 @@ category: paaruoka
 language: fi
 status: published
 servings: 4
-time_total_min: 75
+time_total_min: 150
 main_ingredient:
   - kana
   - kikherne
@@ -26,72 +26,69 @@ image:
 ingredients:
   - amount: 600
     unit: g
-    item: broilerin koipia tai paistileikettä
+    item: nahatonta luutonta broilerin paistileikettä
   - amount: 250
     unit: g
-    item: couscousia
-  - amount: 1
-    unit: kpl
-    item: sipuli
-    note: hienonnettuna
-  - amount: 2
-    unit: kpl
-    item: porkkanaa
-    note: paloina
-  - amount: 1
-    unit: kpl
+    item: San Remo CousCous -durumcouscousia, kuivana
+  - amount: 55
+    unit: g
+    item: kuorittua sipulia
+  - amount: 110
+    unit: g
+    item: kuorittua porkkanaa
+  - amount: 200
+    unit: g
     item: kesäkurpitsaa
-    note: paloina
   - amount: 400
     unit: g
-    item: kikherneitä
-    note: huuhdeltuna
-  - amount: 1
-    unit: l
-    item: kanalientä
-  - amount: 1
-    unit: tl
-    item: juustokuminaa
-  - amount: 1
-    unit: tl
-    item: jauhettua korianteria
-  - amount: 0.5
-    unit: tl
-    item: kurkumaa
+    item: suolavedessä juuri keitettyjä kokonaisia kikherneitä, valutettuna
+  - amount: 1000
+    unit: g
+    item: käyttövalmista laimennettua kanalientä
   - amount: 2
-    unit: rkl
-    item: oliiviöljyä
+    unit: g
+    item: jauhettua juustokuminaa
+  - amount: 2
+    unit: g
+    item: jauhettua korianterinsiementä
   - amount: 1
-    unit: tl
+    unit: g
+    item: kurkumajauhetta
+  - amount: 27
+    unit: g
+    item: oliiviöljyä
+  - amount: 5
+    unit: g
     item: suolaa
+  - amount: 375
+    unit: ml
+    item: vettä couscousin turvottamiseen
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
-carbs_net_per_serving_g: 67.45
-carbs_total_per_serving_g: 76.5
-protein_per_serving_g: 46.82
-fat_per_serving_g: 14.71
-
+translation_status:
+  en: published
+  sv: published
+  th: published
+carbs_net_per_serving_g: 61.86
+carbs_total_per_serving_g: 70.94
+protein_per_serving_g: 46.45
+fat_per_serving_g: 17.32
 ---
-
 # Marokkolainen couscous kanalla ja kasviksilla
 
-Mausteinen kanaliemi kypsentää porkkanat, kesäkurpitsan ja kikherneet. Tarjoa kasvikset ja liemi höyryävän couscousin päällä.
-
-## Kuvaus
-
-Mausteinen kanaliemi kypsentää porkkanat, kesäkurpitsan ja kikherneet. Tarjoa kasvikset ja liemi höyryävän couscousin päällä.
+Tämä on paistileikeversio juuri keitetyillä kokonaisilla kikherneillä. Kikherneet keitetään erikseen ja lisätään lopuksi kuumina; niitä ei keitetä toista kertaa padassa 15 minuuttia. Kaikki lueteltu liemi käytetään annoksiin. San Remon nimettyyn GI-lähteeseen sovelletaan erillistä Fineli-koostumusvertailua; tulos on LOW-arvio.
 
 ## Valmistus
 
-1. Ruskista broileri öljyssä kattilassa. Lisää sipuli ja kuullota pehmeäksi.
-2. Lisää juustokumina, korianteri ja kurkuma. Sekoita ja kaada joukkoon liemi.
-3. Lisää porkkanat ja hauduta 20 minuuttia. Lisää kesäkurpitsa ja kikherneet ja jatka kypsennystä 15 minuuttia, kunnes broileri ja kasvikset ovat kypsiä.
-4. Valmista couscous pakkauksen ohjeella. Kuohkeuta haarukalla.
-5. Nosta couscous tarjoiluastiaan ja asettele päälle broileri sekä kasvikset. Lusikoi päälle hieman lientä.
+1. Keitä kuivia kokonaisia kikherneitä erikseen suolatussa vedessä pakkauksen mukaan täysin pehmeiksi. Käytä osa mitatusta suolasta. Valuta ja punnitse 400 g kypsiä kikherneitä; ajoita valmistuminen padan loppuvaiheeseen ja käytä kuumina. Keittoaika vaihtelee; 150 minuutin kokonaisaika on arvio eikä sisällä mahdollista pakkauksen edellyttämää esiliotusta.
+2. Leikkaa 600 g nahatonta luutonta paistileikettä paloiksi. Ruskista oliiviöljyssä kattilassa. Lisää hienonnettu sipuli ja kuullota pehmeäksi.
+3. Lisää juustokumina, korianteri, kurkuma, loput suolasta ja 1000 g käyttövalmista kanalientä. Lisää porkkanat ja hauduta 20 minuuttia.
+4. Lisää kesäkurpitsa ja kypsennä vielä 15 minuuttia, kunnes kana on kauttaaltaan kypsää ja kasvikset ovat pehmeitä. Kikherneet eivät ole tässä vaiheessa padassa.
+5. Kaada 250 g:n kuivan couscousin päälle 375 ml kiehuvaa vettä. Sekoita, peitä ja anna turvota 5 minuuttia. Kuohkeuta haarukalla. Älä lisää voita tai ylimääräistä öljyä.
+6. Ota pata pois lämmöltä ja sekoita joukkoon kaikki 400 g vastakeitettyjä kuumia kikherneitä. Jaa koko couscous, kana, kasvikset ja kaikki jäljellä oleva liemi neljään syvään annokseen. Tarjoa heti; älä jäähdytä tai keitä kikherneitä uudelleen.
 
 ## Muistiinpanot
 
-- Lisää harissaa pöytään erikseen, jos ruokailijat haluavat lisää tulisuutta.
+Punnitut määrät koskevat syötävää osaa. Keitinvesi valutetaan ennen kikherneiden punnitsemista; niille käytetään kypsän ruoan koostumusta. Liemestä ei poisteta ravintoaineita: haihtuva vesi ei vähennä laskennan ravintoaineita. Erillinen harissa tai muut lisukkeet eivät kuulu arvioon.

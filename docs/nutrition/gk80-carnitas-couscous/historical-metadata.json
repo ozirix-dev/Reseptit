@@ -1,0 +1,272 @@
+{
+  "recipeIds": [
+    "marokkolainen-couscous"
+  ],
+  "selectedInputs": [
+    {
+      "recipeId": "marokkolainen-couscous",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "broilerin koipia tai paistileikettä",
+          "grams": 600,
+          "fineliRecordId": "afcd-F002806-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "broilerin koipia tai paistileikettä maps to afcd-release-3 record F002806; state: raw lean chicken thigh flesh."
+        },
+        {
+          "name": "couscousia",
+          "grams": 250,
+          "fineliRecordId": "afcd-F003239-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "couscousia maps to afcd-release-3 record F003239; state: uncooked couscous.",
+          "giMatchEvidence": "AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
+        },
+        {
+          "name": "porkkanaa",
+          "grams": 110,
+          "fineliRecordId": "fineli-300-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Edible piece mass for porkkanaa: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "kesäkurpitsaa",
+          "grams": 55,
+          "fineliRecordId": "fineli-389-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Edible piece mass for kesäkurpitsaa: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "kikherneitä",
+          "grams": 400,
+          "fineliRecordId": "fineli-11089-2026-10-24",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "massEvidence": "kikherneitä maps to fineli-release-20 record 11089; state: cooked drained chickpeas.",
+          "giMatchEvidence": "Ingredient-category match: Legumes, category mean; Broad category mean; substantial uncertainty when applied to a specific cooked bean.",
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "name": "kanalientä",
+          "grams": 1000,
+          "fineliRecordId": "afcd-F008936-2026-10-24",
+          "giRecordId": "soups-category-mean-gi-49",
+          "massEvidence": "Ingredient-specific volume mass: 1000 g/l for kanalientä.",
+          "foodKey": "soup",
+          "preparationKey": "soup-category",
+          "giMatchEvidence": "Broth is matched to the published broad soup-category mean (GI 49), not a broth-specific measurement; low-confidence proxy."
+        },
+        {
+          "name": "juustokuminaa",
+          "grams": 2,
+          "fineliRecordId": "afcd-F003327-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for juustokuminaa.",
+          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "jauhettua korianteria",
+          "grams": 2,
+          "fineliRecordId": "afcd-F003190-2026-10-24",
+          "giRecordId": "nuts-category-mean-gi-22",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for jauhettua korianteria.",
+          "giMatchEvidence": "Ingredient-category match: Nuts, category mean; Low-confidence category mean for peanuts.",
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "name": "kurkumaa",
+          "grams": 1,
+          "fineliRecordId": "afcd-F009335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kurkumaa."
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 27,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        }
+      ]
+    }
+  ],
+  "originalBindings": {
+    "recipes": {
+      "marokkolainen-couscous": "abe0287c838972c64acaf251163198aa95fe88a5be44fd763eddb054150ae3a0"
+    },
+    "calculationInputs": {
+      "marokkolainen-couscous": "4c2240d56a5ec6beb4d365275b4e00722c776b711d658562b348316d3e12f7d8"
+    },
+    "calculationEvidence": {
+      "marokkolainen-couscous": "d021b77a537bfe0533c5cd7eb3b710609ba97497432c14d18092a4028de8cd19"
+    }
+  },
+  "selectedCalculationInputs": [
+    {
+      "recipeId": "marokkolainen-couscous",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "broilerin koipia tai paistileikettä",
+          "grams": 600,
+          "fineliRecordId": "afcd-F002806-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "broilerin koipia tai paistileikettä maps to afcd-release-3 record F002806; state: raw lean chicken thigh flesh."
+        },
+        {
+          "name": "couscousia",
+          "grams": 250,
+          "fineliRecordId": "afcd-F003239-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "couscousia maps to afcd-release-3 record F003239; state: uncooked couscous.",
+          "giMatchEvidence": "AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "fineliRecordId": "fineli-335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Edible piece mass for sipuli: 55 g/unit, Fineli portion where available or standard piece. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
+          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "foodKey": "onion",
+          "preparationKey": "recipe-specific-preparation-no-approved-gi",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": null
+          }
+        },
+        {
+          "name": "porkkanaa",
+          "grams": 110,
+          "fineliRecordId": "fineli-300-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Edible piece mass for porkkanaa: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "kesäkurpitsaa",
+          "grams": 55,
+          "fineliRecordId": "fineli-389-2026-10-24",
+          "giRecordId": "vegetables-category-mean-gi-66",
+          "massEvidence": "Edible piece mass for kesäkurpitsaa: 55 g/unit, Fineli portion where available or standard piece.",
+          "giMatchEvidence": "Ingredient-category match: Vegetables other than potatoes, category mean; Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.",
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "name": "kikherneitä",
+          "grams": 400,
+          "fineliRecordId": "fineli-11089-2026-10-24",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "massEvidence": "kikherneitä maps to fineli-release-20 record 11089; state: cooked drained chickpeas.",
+          "giMatchEvidence": "Ingredient-category match: Legumes, category mean; Broad category mean; substantial uncertainty when applied to a specific cooked bean.",
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "name": "kanalientä",
+          "grams": 1000,
+          "fineliRecordId": "afcd-F008936-2026-10-24",
+          "giRecordId": "soups-category-mean-gi-49",
+          "massEvidence": "Ingredient-specific volume mass: 1000 g/l for kanalientä.",
+          "foodKey": "soup",
+          "preparationKey": "soup-category",
+          "giMatchEvidence": "Broth is matched to the published broad soup-category mean (GI 49), not a broth-specific measurement; low-confidence proxy."
+        },
+        {
+          "name": "juustokuminaa",
+          "grams": 2,
+          "fineliRecordId": "afcd-F003327-2026-10-24",
+          "giRecordId": "dairy-category-mean-gi-35",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for juustokuminaa.",
+          "giMatchEvidence": "Ingredient-category match: Dairy products, category mean; Category mean, not a measured GI for the recipe's cream cheese.",
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "name": "jauhettua korianteria",
+          "grams": 2,
+          "fineliRecordId": "afcd-F003190-2026-10-24",
+          "giRecordId": "nuts-category-mean-gi-22",
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for jauhettua korianteria.",
+          "giMatchEvidence": "Ingredient-category match: Nuts, category mean; Low-confidence category mean for peanuts.",
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "name": "kurkumaa",
+          "grams": 1,
+          "fineliRecordId": "afcd-F009335-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific teaspoon mass: 2 g/tl for kurkumaa."
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 27,
+          "fineliRecordId": "fineli-536-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Ingredient-specific tablespoon mass: 13.5 g/rkl for oliiviöljyä."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
+          "excludedReason": "Water and salt have no material macro contribution.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
+        }
+      ]
+    }
+  ],
+  "sourceHashes": {
+    "marokkolainen-couscous": "abe0287c838972c64acaf251163198aa95fe88a5be44fd763eddb054150ae3a0"
+  },
+  "calculationInputHashes": {
+    "marokkolainen-couscous": "4c2240d56a5ec6beb4d365275b4e00722c776b711d658562b348316d3e12f7d8"
+  },
+  "calculationEvidenceHashes": {
+    "marokkolainen-couscous": "d021b77a537bfe0533c5cd7eb3b710609ba97497432c14d18092a4028de8cd19"
+  },
+  "recipeBindingMismatches": [],
+  "calculationInputMismatches": [],
+  "calculationEvidenceMismatches": []
+}

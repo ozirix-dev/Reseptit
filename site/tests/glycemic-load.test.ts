@@ -20,7 +20,12 @@ async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding
  const text=await actualReadFile(filename,encoding);
  const relative=path.relative(path.resolve(import.meta.dirname,'../..'),String(filename)).replaceAll('\\','/');
  const ehold=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-e-hold-release/historical-metadata.json'),'utf8'));
- const eholdText=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-e-hold-release/historical-source-text.json'),'utf8'));if(Object.hasOwn(eholdText,relative))return eholdText[relative];
+
+ const later=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-carnitas-couscous/historical-metadata.json'),'utf8'));
+ for(const key of ['sourceHashes','calculationInputHashes','calculationEvidenceHashes'])ehold[key]={...ehold[key],...later[key]};
+ for(const key of ['recipeIds','selectedInputs','selectedCalculationInputs'])ehold[key]=[...ehold[key],...later[key]];
+ for(const key of ['recipes','calculationInputs','calculationEvidence'])ehold.originalBindings[key]={...ehold.originalBindings[key],...later.originalBindings[key]};
+ const eholdText=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-e-hold-release/historical-source-text.json'),'utf8'));Object.assign(eholdText,JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-carnitas-couscous/historical-source-text.json'),'utf8')));if(Object.hasOwn(eholdText,relative))return eholdText[relative];
  const scopedText=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-scoped-c-release/historical-source-text.json'),'utf8'));if(Object.hasOwn(scopedText,relative))return scopedText[relative];
  const pre7Text=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-7/historical-source-text.json'),'utf8'));if(Object.hasOwn(pre7Text,relative))return pre7Text[relative];
  const pre6Text=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-6/historical-source-text.json'),'utf8'));if(Object.hasOwn(pre6Text,relative))return pre6Text[relative];
@@ -44,6 +49,9 @@ async function historicalSourceReviewView(name:string,value:any):Promise<any>{
   if(name!=='tmp/nutrition/glycemic-load-pilot.json')return value;
   // Replay only the three newly integrated E cases for frozen historical assertions.
   const eh=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-e-hold-release/historical-metadata.json'),'utf8'));
+  const later=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-carnitas-couscous/historical-metadata.json'),'utf8'));
+  for(const key of ['sourceHashes','calculationInputHashes','calculationEvidenceHashes'])eh[key]={...eh[key],...later[key]};
+  for(const key of ['recipeIds','selectedCalculationInputs','recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches'])eh[key]=[...eh[key],...later[key]];
   value=restorePreEHold(value);value.calculationInputs=value.calculationInputs.map((r:any)=>eh.selectedCalculationInputs.find((x:any)=>x.recipeId===r.recipeId)??r);
   for(const key of ['sourceHashes','calculationInputHashes','calculationEvidenceHashes'])value[key]={...value[key],...eh[key]};
   for(const key of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches'])value[key]=[...value[key].filter((id:string)=>!eh.recipeIds.includes(id)),...eh[key]].sort();

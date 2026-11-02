@@ -1,3 +1,4 @@
+import {restoreBeforeCouscous} from './restore-pre-ehold';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -12,7 +13,7 @@ const json=(p:string)=>JSON.parse(readFileSync(new URL(p,root),'utf8'));
 const hash=(p:string)=>createHash('sha256').update(readFileSync(new URL(p,root),'utf8').replaceAll('\r\n','\n')).digest('hex');
 const pack=json('docs/nutrition/gk80-e-hold-release/integration.json');
 test('three E-HOLD candidates preserve every other result object and all143 numeric results',()=>{
- const report=json('tmp/nutrition/glycemic-load-pilot.json'),base=json('docs/nutrition/gk80-e-hold-release/main143-baseline.json');
+ const report=restoreBeforeCouscous(json('tmp/nutrition/glycemic-load-pilot.json')),base=json('docs/nutrition/gk80-e-hold-release/main143-baseline.json');
  const ids=new Set(pack.recipes.map((r:any)=>r.recipeId));assert.equal(ids.size,3);
  assert.equal(report.results.length,326);assert.equal(report.summary.calculated,146);assert.equal(report.summary.insufficientSourceData,180);assert.equal(base.numericIds.length,143);
  for(const r of report.results)if(!ids.has(r.recipeId))assert.equal(createHash('sha256').update(JSON.stringify(r)).digest('hex'),base.resultHashes[r.recipeId],r.recipeId);
