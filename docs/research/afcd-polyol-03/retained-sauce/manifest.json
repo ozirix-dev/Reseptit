@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "repository": "ozirix-dev/Reseptit",
+  "role": "Codex2 / Codex Tutkimus",
+  "startingHead": "63e93c2131809c32dea8f01739390c299dd69956",
+  "ownedBranch": "codex/afcd-polyol-03-gk80-handoff",
+  "activation": false,
+  "ownerApproval": false,
+  "publicationAuthorized": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "inputSha256": {
+    "bulgogi": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1",
+    "jerk-kana": "3ccf63cc452ab542e8a0e12b5298bbebbbb25965751a5cf0ecc14aaac43f4d6c",
+    "sate-ayam": "318845e20f82185754514f9eed937a668cac0271f55a7a02feda7d416dcf5fda"
+  },
+  "filesLfSha256": {
+    "audit-retained-sauce.py": "aa47578b3269f3efcf10e717cd66bed5bfa0ebfdb47deab960d9ff1d8b202b6d",
+    "cases.json": "758317c1a4446d48ad637cbd14c9c16649174e83452bce9e2898286041734c7a",
+    "decimal-results.json": "7381016699f91cc9a1ad0c67b5f88f8b4c3342a370a75fc39a04d19a8e62ee8b",
+    "dependency-map.csv": "a9f99b0b2412a3840aea2d18a916db0761635035435b21baacfde0f795a49fee",
+    "engine-results.json": "c90438172c543fcb832fd27285110f9eda7c9ee2b4bfbd56c9f27f86ee997191",
+    "evaluate-retained-sauce.mts": "53ff88c15166049d5b0bda6cdae122607b1bccd8ff97eec3c79f6ca733e48957",
+    "method-impact.csv": "a82fc012d4ed4ad8b620eaf134d8d076051214b90bbac45b4e361a47dfa1c136",
+    "sources.json": "5b67a28b536777a8707e30eec1dc368361acb75fa123536c77ea945c07c9c322"
+  },
+  "reportLfSha256": "6d7f4a758348ed04a62db2b2cd20a70531c1e944be6b7ecbb4735138d2298a30",
+  "newCurrentContractReviewableA": 1,
+  "newUnapprovedBResearchModels": 2,
+  "newOwnerApproved": 0,
+  "newPublishedByThisTask": 0,
+  "verifiedExternalProduction": 179,
+  "existingApprovedUnpublished": 1,
+  "conditionalAfterAllPreviouslyApprovedReleased": 180,
+  "conditionalIncludingBulgogiSeparatelyApprovedIntegratedReleased": 181,
+  "conditionalIncludingBothNewBMethodsAllSourcesContentApprovedIntegratedReleased": 183,
+  "externalCachePolicy": "sallinen-allspice.html and atkinson2021-table1.pdf raw hashes in sources.json. GI News binary403: rawSHA null, extracted facts only. No full raw source files in Git.",
+  "reproduction": "evaluate-retained-sauce.mts ROOT DATA CACHE EXTERNAL_OUT then audit-retained-sauce.py with same arguments; use installed tsx and Python; only external output."
+}

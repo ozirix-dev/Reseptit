@@ -1,23 +1,18 @@
 # AFCD-POLYOL-03 / GK80: yhteinen menetelmä- ja lähderatkaisu
 
-## Nykytila: PR183 julkaistu
+## Nykytila: PR183 ja PR185 julkaistu
 
-**PR183:n16 hyväksyttyä GK-versiota on yhdistetty mainiin ja julkaistu, merge-HEAD`92dc6db`. Build ja deploy41504708914 läpäisivät. Julkaistu GK-sivu näyttää172/326 reseptiä, joilla on numeerinen GK vähintään yhdessä versiossa: A166 ja B6. Alkuperäisten ohjeiden numeerinen kattavuus säilyy156/326:ssa.** [Julkaisuhavainto](production-observation.json) sitoo nämä luvut tarkkaan HEADiin, deployhin ja julkaistun sivun sisältöhashiin. Tämä Codex2-tutkimusajo ei suorittanut julkaisua.
+**Varmennettu julkaistu kattavuus on179/326 (54,91%): A173 ja B6. Tavoitteeseen261 puuttuu82.** [PR185:n julkaisuhavainto](production-observation-pr185.json) sitoo luvun mainiin`96a25d8`, onnistuneeseen build/deploy41512160461 ja julkisen sivun hashin. Tämä Codex2-ajo ei julkaissut muutoksia. Alkuperäisten ohjeiden kattavuus säilyy156/326:ssa.
 
-| Näkymä | Numeerisia /326 | Ero tavoitteeseen261 |
-| --- | ---: | ---: |
-| Varmennettu julkaistu kattavuus, vähintään yksi versio |172 (52,76%) |89 |
-| Lisäksi kuusi lukittua hyväksyttyä versiota myöhemmin julkaistuna |178 (54,60%) |83 |
-| Lisäksi hyväksytty pad see ew myöhemmin julkaistuna |179 (54,91%) |82 |
-| Lisäksi hyväksytty rahkapiirakkaversio myöhemmin julkaistuna |180 (55,21%), ehdollinen |81 |
+24 hyväksytystä versiosta23 on julkaistu. Hyväksytty rahkapiirakka odottaa integraation omistajaa: sen myöhempi julkaisu veisi180/326:een. Uusi [koko marinadin päätöspaketti](retained-sauce-followup.md) tuo yhden nykyisen A:n katselmointiehdokkaan, bulgogin41,31, ja kaksi erillistä hyväksymätöntä B-tutkimusmallia: jerk43,96 ja sate ayam5,76. Bulgogin erillinen lähde-/sisältöhyväksyntä, integraatio ja julkaisu rahkapiirakan lisäksi veisi181/326:een. Molempien uusien B-menetelmien ja kaikkien lähde-/sisältöehtojen hyväksyminen ja julkaisu voisi viedä183/326:een; nämä eivät ole nykyisiä hyväksyntä- tai kattavuuslukuja.
 
-Yhteisessä36 reseptin laskenta-aineistossa24 versiolla on menetelmä- tai sisältöhyväksyntä:16 julkaistu,6 lukitussa erässä ja2 tutkimusluovutuksessa. Hyväksyttyjä mutta julkaisemattomia on8.12 reseptiltä puuttuu hyväksytty versio; niistä6 pysyy valmistetun ruoan lähde-HOLDissa ja uusi vihreän curryn skenaario yksikkö-/tuote-HOLDissa.30 lähdekelpoisen julkaisuehdokkaan tavoitetta ei ole osoitettu. Uusi B-poisjättöprofiili ja hernekeiton tutkimusmalli säilyvät tutkimuksena.
+[Nykytilakirjaus](current-state.json) ja [päätösmatriisi](current-decision-matrix.csv) sisältävät39 aritmeettista ehdotusta sekä32 muuta HOLD-riippuvuutta, yhteensä71 reseptiä.15 aritmeettiselta reseptiltä puuttuu hyväksytty versio.30 lähdekelpoista julkaisuehdokasta ei ole osoitettu. GI18 on asiantuntijaestimaatti, ei mitattu maapähkinävoin GI; B-poisjättöprofiili ja uusi estimaattilähdetyyppi pysyvät suljettuina. [Sinetöity paketti](retained-sauce/manifest.json) sisältää täsmälliset kolme sisältöversiota, lähteet, marginaaliset menetelmätuotot ja riippumattoman Decimal-tarkistuksen.
 
-[Nykytilakirjaus](current-state.json) ja [nykyinen päätösmatriisi:36 aritmeettista ehdotusta ja34 muuta HOLD-riippuvuutta](current-decision-matrix.csv) ovat vaiheiden ensisijaiset yhteenvedot. Aiemmat`summary.json`,`joint-*`-tiedostot ja [integraatiokuitti](integration-receipt.json) ovat historiallisia tilannekuvia. Niiden alkuperäisiä hyväksyntä-, laskenta- tai hash-kenttiä ei muutettu; nykytilaksi tulkinta on merkitty vanhentuneeksi ja ohjattu tähän uuteen kirjaukseen.
+**Codex2:n kirjoitusrajaus:** vain oma`D:/Projects/tmp/reseptit-afcd-polyol-03-gk80-handoff` ja`codex/afcd-polyol-03-gk80-handoff`. Julkaisijan ja kuuden version säilytyshaaroja ei muokata. Hyväksynnät luovutetaan tarkkojen syötehashien kautta integraation omistajalle. Ei uutta PR:ää, Readya, mergeä, deployta tai ylimääräisiä Actions-ajoja. Projektisäännöt: [AGENTS.md](../../../AGENTS.md) ja [rinnakkaisajo-ohje](../../rinnakkaiset-codex-ajot.md).
 
-**Codex2:n kirjoitusrajaus:** vain`D:/Projects/tmp/reseptit-afcd-polyol-03-gk80-handoff` ja`codex/afcd-polyol-03-gk80-handoff`. PR183:n`codex/gk80-operation149-v2` kuuluu Codex1:lle. Kuuden version säilytyshaaraa ei muokata. Lähdetyö luovutetaan jatkossa omana versionlukittuna pakettinaan; ei Readyä, mergeä tai deployta.
+## Aiemmat tilannekuvat
 
-Uudet projektisäännöt löytyivät mainiin PR184:llä yhdistetyistä [AGENTS.md](../../../AGENTS.md)- ja [rinnakkaisajo-ohjeista](../../rinnakkaiset-codex-ajot.md), commit`061f817`. Ne tuotiin tähän omaan työpuuhun täsmälleen samansisältöisinä. Pelkkää repo_guardin PASSia ei käsitellä haaran kirjoituslukkona. PR182 jää erilliseksi Draftiksi ja sen koko lähdetiedoston hash-/regressioriippuvuus on edelleen avoin.
+Alla olevien raporttien aikamuodot ja määrät kuvaavat niiden omaa ajankohtaa. Nykyinen julkaistu luku on179 ja julkaisemattomia hyväksyttyjä1; vanhat172/8-luvut eivät ole nykytila. Alkuperäiset raportit, syötteet ja hyväksyntäkuitit säilyvät muuttumattomina.
 
 ## Uusin yhteisen lähde-esteen jatko
 

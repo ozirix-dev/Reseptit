@@ -1,0 +1,276 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "results": [
+    {
+      "recipeId": "bulgogi",
+      "profile": "EXISTING_A",
+      "inputSha256": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1",
+      "unrounded": "41.307950",
+      "point": "41.31",
+      "omittedCho": "0.0670125",
+      "traceCodedCho": "0",
+      "sourceQualifiedForOwnerReview": true,
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "terms": [
+        {
+          "sourceId": "F722",
+          "choPerServing": "0.0",
+          "isNominalUpper": false,
+          "giId": null
+        },
+        {
+          "sourceId": "F007682",
+          "choPerServing": "55.5",
+          "isNominalUpper": false,
+          "giId": "rice68"
+        },
+        {
+          "sourceId": "F008065",
+          "choPerServing": "0.576",
+          "isNominalUpper": false,
+          "giId": "soyLime50"
+        },
+        {
+          "sourceId": "F008969",
+          "choPerServing": "3.388",
+          "isNominalUpper": false,
+          "giId": "sucrose60"
+        },
+        {
+          "sourceId": "F006187",
+          "choPerServing": "0",
+          "isNominalUpper": false,
+          "giId": null
+        },
+        {
+          "sourceId": "F393",
+          "choPerServing": "0.427875",
+          "isNominalUpper": false,
+          "giId": "veg40"
+        },
+        {
+          "sourceId": "F11062",
+          "choPerServing": "2.0",
+          "isNominalUpper": false,
+          "giId": "pear38"
+        },
+        {
+          "sourceId": "F335",
+          "choPerServing": "0.33",
+          "isNominalUpper": false,
+          "giId": "veg40"
+        },
+        {
+          "sourceId": "F006250",
+          "choPerServing": "0.46",
+          "isNominalUpper": false,
+          "giId": "veg40"
+        },
+        {
+          "sourceId": "F385",
+          "choPerServing": "0.019125",
+          "isNominalUpper": false,
+          "giId": null
+        },
+        {
+          "sourceId": "F11177",
+          "choPerServing": "0.0478875",
+          "isNominalUpper": false,
+          "giId": null
+        }
+      ]
+    },
+    {
+      "recipeId": "jerk-kana",
+      "profile": "NEW_B_MINOR_OMISSIONS",
+      "inputSha256": "3ccf63cc452ab542e8a0e12b5298bbebbbb25965751a5cf0ecc14aaac43f4d6c",
+      "unrounded": "43.955825",
+      "point": "43.96",
+      "omittedCho": "1.686175",
+      "traceCodedCho": "0",
+      "sourceQualifiedForOwnerReview": false,
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "terms": [
+        {
+          "sourceId": "F002806",
+          "choPerServing": "0",
+          "isNominalUpper": false,
+          "giId": null
+        },
+        {
+          "sourceId": "F006250",
+          "choPerServing": "0.92",
+          "isNominalUpper": false,
+          "giId": "veg40"
+        },
+        {
+          "sourceId": "F393",
+          "choPerServing": "0.427875",
+          "isNominalUpper": false,
+          "giId": "veg40"
+        },
+        {
+          "sourceId": "F002901",
+          "choPerServing": "0.12",
+          "isNominalUpper": false,
+          "giId": "veg40"
+        },
+        {
+          "sourceId": "F004729",
+          "choPerServing": "0.09",
+          "isNominalUpper": false,
+          "giId": "soyLime50"
+        },
+        {
+          "sourceId": "F31",
+          "choPerServing": "0.855",
+          "isNominalUpper": false,
+          "giId": null
+        },
+        {
+          "sourceId": "SALLINEN_ALLSPICE_CAP",
+          "choPerServing": "0.51",
+          "isNominalUpper": true,
+          "giId": null
+        },
+        {
+          "sourceId": "F11194",
+          "choPerServing": "0.033675",
+          "isNominalUpper": false,
+          "giId": null
+        },
+        {
+          "sourceId": "F004210",
+          "choPerServing": "0.2875",
+          "isNominalUpper": false,
+          "giId": null
+        },
+        {
+          "sourceId": "F008969",
+          "choPerServing": "3.388",
+          "isNominalUpper": false,
+          "giId": "sucrose60"
+        },
+        {
+          "sourceId": "F541",
+          "choPerServing": "0.0",
+          "isNominalUpper": false,
+          "giId": null
+        },
+        {
+          "sourceId": "F007682",
+          "choPerServing": "55.5",
+          "isNominalUpper": false,
+          "giId": "rice68"
+        },
+        {
+          "sourceId": "F000448",
+          "choPerServing": "8.4",
+          "isNominalUpper": false,
+          "giId": "kidney36"
+        },
+        {
+          "sourceId": "F29014",
+          "choPerServing": "1.05375",
+          "isNominalUpper": false,
+          "giId": "plant50"
+        },
+        {
+          "sourceId": "F922",
+          "choPerServing": "0.0",
+          "isNominalUpper": false,
+          "giId": null
+        }
+      ]
+    },
+    {
+      "recipeId": "sate-ayam",
+      "profile": "NEW_EXPERT_ESTIMATE_B_REFERENCE",
+      "inputSha256": "318845e20f82185754514f9eed937a668cac0271f55a7a02feda7d416dcf5fda",
+      "unrounded": "5.76000",
+      "point": "5.76",
+      "omittedCho": "0",
+      "traceCodedCho": "0.303",
+      "sourceQualifiedForOwnerReview": false,
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "terms": [
+        {
+          "sourceId": "F002806",
+          "choPerServing": "0",
+          "isNominalUpper": false,
+          "giId": null
+        },
+        {
+          "sourceId": "F008065",
+          "choPerServing": "0.256",
+          "isNominalUpper": false,
+          "giId": "soyLime50"
+        },
+        {
+          "sourceId": "F008969",
+          "choPerServing": "4.356",
+          "isNominalUpper": false,
+          "giId": "sucrose60"
+        },
+        {
+          "sourceId": "F004729",
+          "choPerServing": "0.09",
+          "isNominalUpper": false,
+          "giId": "soyLime50"
+        },
+        {
+          "sourceId": "F393",
+          "choPerServing": "0.28525",
+          "isNominalUpper": false,
+          "giId": "veg40"
+        },
+        {
+          "sourceId": "F003190",
+          "choPerServing": "0.042",
+          "isNominalUpper": false,
+          "giId": "trace50"
+        },
+        {
+          "sourceId": "F009335",
+          "choPerServing": "0.111",
+          "isNominalUpper": false,
+          "giId": "trace50"
+        },
+        {
+          "sourceId": "F006579",
+          "choPerServing": "3.525",
+          "isNominalUpper": false,
+          "giId": "peanutExpert18"
+        },
+        {
+          "sourceId": "F29014",
+          "choPerServing": "1.405",
+          "isNominalUpper": false,
+          "giId": "plant50"
+        },
+        {
+          "sourceId": "F008065",
+          "choPerServing": "0.128",
+          "isNominalUpper": false,
+          "giId": "soyLime50"
+        },
+        {
+          "sourceId": "F008969",
+          "choPerServing": "2.178",
+          "isNominalUpper": false,
+          "giId": "sucrose60"
+        },
+        {
+          "sourceId": "F005199",
+          "choPerServing": "0.15",
+          "isNominalUpper": false,
+          "giId": "trace50"
+        }
+      ]
+    }
+  ]
+}

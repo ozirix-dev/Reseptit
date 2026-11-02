@@ -1,0 +1,674 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "cases": [
+    {
+      "recipeId": "bulgogi",
+      "level": "A",
+      "profile": "EXISTING_A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/bulgogi.md"
+      },
+      "recipeSha256": {
+        "fi": "c84490ec24ce44ad3f0930dbb242db9017a01431f2d910e0723af526fffc8cc8"
+      },
+      "originalIngredients": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "naudan ulkofileetä",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "jasmiiniriisiä",
+          "note": "kuivapaino"
+        },
+        {
+          "amount": 60,
+          "unit": "ml",
+          "item": "soijakastiketta"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "fariinisokeria"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "seesamiöljyä"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "päärynää",
+          "note": "hienoksi raastettuna"
+        },
+        {
+          "amount": 0.5,
+          "unit": "kpl",
+          "item": "keltasipulia",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kevätsipulia",
+          "note": "viipaloituna"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "seesaminsiemeniä"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tl",
+          "item": "mustapippuria"
+        }
+      ],
+      "candidateIngredients": [
+        {
+          "name": "naudan ulkofileetä",
+          "grams": 600,
+          "compositionId": "F722",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 0,
+          "note": "Original600g raw beef sirloin, native Fineli722."
+        },
+        {
+          "name": "jasmiiniriisiä",
+          "grams": 300,
+          "compositionId": "F007682",
+          "giId": "rice68",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 1,
+          "note": "Original300g dry jasmine rice; native dry white rice composition proxy and existing named European-cohort jasmine68. Hot cooked by absorption; all rice served, not porridge or cooled-rice claim."
+        },
+        {
+          "name": "soijakastiketta",
+          "grams": 72,
+          "compositionId": "F008065",
+          "giId": "soyLime50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 2,
+          "note": "NEW WEIGHED CONTENT72g ordinary unsweetened commercial soy replaces original60ml; not proof60ml=72g or Fineli31 density transferable toAFCD. No kecap, dark/sweet soy or glaze concentrate."
+        },
+        {
+          "name": "fariinisokeria",
+          "grams": 14,
+          "compositionId": "F008969",
+          "giId": "sucrose60",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 3,
+          "note": "NEW WEIGHED CONTENT14g brown sugar replaces unspecified-mass1tbsp; not a volume-equivalence claim. Existing sucrose-dominant analogy, not measured brown-sugar GI."
+        },
+        {
+          "name": "seesamiöljyä",
+          "grams": 0,
+          "compositionId": "F006187",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 4,
+          "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_1_TBSP_SESAME_OIL"
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 10.5,
+          "compositionId": "F393",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 5,
+          "note": "Original3 cloves by native Fineli393 KPL_M3.5g; named source measure."
+        },
+        {
+          "name": "päärynää",
+          "grams": 100,
+          "compositionId": "F11062",
+          "giId": "pear38",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 6,
+          "note": "Original100g peeled ordinary pear; existing GI record already names grated briefly heated bulgogi marinade analogy."
+        },
+        {
+          "name": "keltasipulia",
+          "grams": 27.5,
+          "compositionId": "F335",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 7,
+          "note": "Original half onion via native Fineli335 KPL_M55g; source reference measure."
+        },
+        {
+          "name": "kevätsipulia",
+          "grams": 40,
+          "compositionId": "F006250",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 8,
+          "note": "NEW WEIGHED CONTENT40g edible spring onions defines original2pieces, not an unsourced piece-weight conversion."
+        },
+        {
+          "name": "seesaminsiemeniä",
+          "grams": 8.5,
+          "compositionId": "F385",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 9,
+          "note": "Original1tbsp via same food Fineli385 RKL8.5g. PositiveGI omission, notGI0."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 0.5,
+          "compositionId": "F11177",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 10,
+          "note": "Original0.25tsp via same food Fineli11177 TL2g. PositiveGI omission, notGI0."
+        }
+      ],
+      "preparationDecision": "Preserve all original gram amounts, four portions, jasmine dry300g and100g peeled ordinary pear. New weighed content72g ordinary soy,14g brown sugar and40g edible spring onions; no claim of original volume/piece mass equivalence. Fry beef quickly in batches as original; retain all marinade/onion, heat remaining marinade briefly and thoroughly, return all cooked marinade and pan juices over beef and rice. No sauce/solids discarded and no invented retained fraction. Pear38 already explicitly supports grated briefly heated bulgogi marinade as LOW analogy. No rice category mean67 or legume mean34. Sesame and black pepper use unchanged current A omissions.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_SOURCE_CONTENT_REVIEW",
+        "GK_ONLY_MACRO_VERSION_COMPATIBILITY",
+        "WEIGHED_SOY72G_SUGAR14G_SPRING_ONION40G",
+        "FULL_COOKED_MARINADE_AND_PAN_JUICES_SERVED"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "publicationAuthorized": false,
+      "confidence": "LOW",
+      "inputSha256": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1"
+    },
+    {
+      "recipeId": "jerk-kana",
+      "level": "B",
+      "profile": "NEW_B_MINOR_OMISSIONS",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/jerk-kana.md"
+      },
+      "recipeSha256": {
+        "fi": "9a5501f0f5a7e397f211ed3fc6017975122aa8ce7b3e3c9bbb741096157acafc"
+      },
+      "originalIngredients": [
+        {
+          "amount": 1000,
+          "unit": "g",
+          "item": "nahatonta ja luutonta broilerin reisilihaa"
+        },
+        {
+          "amount": 4,
+          "unit": "kpl",
+          "item": "kevätsipulia",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "habanero-chiliä",
+          "note": "siemenet poistettuna miedompaan versioon"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "limettimehua"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "soijakastiketta"
+        },
+        {
+          "amount": 2,
+          "unit": "tl",
+          "item": "maustepippuria"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kuivattua timjamia"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "jauhettua inkivääriä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "fariinisokeria"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "öljyä"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "riisiä",
+          "note": "lisäkkeeksi"
+        },
+        {
+          "amount": 240,
+          "unit": "g",
+          "item": "valutettuja punaisia kidneypapuja",
+          "note": "lisäkkeeksi"
+        },
+        {
+          "amount": 150,
+          "unit": "ml",
+          "item": "kookosmaitoa",
+          "note": "riisiä ja papuja varten"
+        },
+        {
+          "amount": 300,
+          "unit": "ml",
+          "item": "vettä",
+          "note": "riisiä ja papuja varten"
+        }
+      ],
+      "candidateIngredients": [
+        {
+          "name": "nahatonta ja luutonta broilerin reisilihaa",
+          "grams": 1000,
+          "compositionId": "F002806",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 0,
+          "note": "Original1000g boneless skinless chicken thigh."
+        },
+        {
+          "name": "kevätsipulia",
+          "grams": 80,
+          "compositionId": "F006250",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 1,
+          "note": "NEW WEIGHED CONTENT80g edible spring onion defines original4pieces; not a piece-mass claim."
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 10.5,
+          "compositionId": "F393",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 2,
+          "note": "Original3 cloves; native Fineli393 KPL_M3.5g."
+        },
+        {
+          "name": "habanero-chiliä",
+          "grams": 10,
+          "compositionId": "F002901",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 3,
+          "note": "NEW WEIGHED CONTENT10g edible raw habanero, original one-fruit version. AFCD raw red chilli4.8 is disclosed composition/cultivar proxy; no source-derived universal fruit weight."
+        },
+        {
+          "name": "limettimehua",
+          "grams": 30,
+          "compositionId": "F004729",
+          "giId": "soyLime50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 4,
+          "note": "NEW WEIGHED CONTENT30g lime juice replaces original2tbsp; not a volume equivalence."
+        },
+        {
+          "name": "soijakastiketta",
+          "grams": 36,
+          "compositionId": "F31",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 5,
+          "note": "Original2tbsp ordinary soy using ITS OWN Fineli31 RKL18g and nativeCHO9.5; no borrowed density or AFCD3.2 point. PositiveGI omitted only in unapproved new B minor profile."
+        },
+        {
+          "name": "maustepippuria",
+          "grams": 4,
+          "compositionId": "SALLINEN_ALLSPICE_CAP",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "originalIndex": 6,
+          "note": "NEW WEIGHED CONTENT4g Sallinen ground allspice replaces original2tsp, not a density/equivalence claim. Label51 nominal upper, no fibre subtraction, no assumed polyols0."
+        },
+        {
+          "name": "kuivattua timjamia",
+          "grams": 0.5,
+          "compositionId": "F11194",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 7,
+          "note": "Original1tsp thyme by same native Fineli11194 TL0.5g."
+        },
+        {
+          "name": "jauhettua inkivääriä",
+          "grams": 2,
+          "compositionId": "F004210",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 8,
+          "note": "NEW WEIGHED CONTENT2g ground ginger replaces original1tsp; no mass equivalence claimed."
+        },
+        {
+          "name": "fariinisokeria",
+          "grams": 14,
+          "compositionId": "F008969",
+          "giId": "sucrose60",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 9,
+          "note": "NEW WEIGHED CONTENT14g brown sugar replaces original1tbsp, existing named sucrose-dominant analogy."
+        },
+        {
+          "name": "öljyä",
+          "grams": 0,
+          "compositionId": "F541",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 10,
+          "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_2_TBSP_OIL"
+        },
+        {
+          "name": "riisiä",
+          "grams": 300,
+          "compositionId": "F007682",
+          "giId": "rice68",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 11,
+          "note": "Original300g dry rice specified jasmine; source68 was plain cooked rice, target coconut/bean absorption rice is explicit B preparation analogy."
+        },
+        {
+          "name": "valutettuja punaisia kidneypapuja",
+          "grams": 240,
+          "compositionId": "F000448",
+          "giId": "kidney36",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 12,
+          "note": "Original240g canned ordinary red kidney beans weighed after draining; nativeAFCD14 and named Edgell canned/drained36. Not dry-boiled or dark-red43."
+        },
+        {
+          "name": "kookosmaitoa",
+          "grams": 150,
+          "compositionId": "F29014",
+          "giId": "plant50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 13,
+          "note": "Original150ml generic unsweetened coconut milk represented by ITS OWN Fineli29014 DL100g and nativeCHO2.81. Food-reference household measure, not brand density; same named B plant50 family, new exact application pending."
+        },
+        {
+          "name": "vettä",
+          "grams": 0,
+          "compositionId": "F922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 14,
+          "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_300_ML_WATER"
+        }
+      ],
+      "preparationDecision": "Preserve all original gram amounts, four portions, original150ml unbranded unsweetened coconut milk and300ml water. New weighed versions80g edible spring onions,10g edible habanero,30g lime juice,4g named allspice,2g ground ginger and14g brown sugar; do not claim former spoons/pieces weigh these masses. Put entire marinade into chicken baking dish, keep original200C45–55min oven preparation, serve all cooked marinade and pan juices with all rice/beans; no hypothetical absorption or drain fraction. Specify ordinary canned/drained red kidney beans and hot jasmine absorption rice with coconut and beans. No claimed measured mixed-meal GI. Four unresolved positive minor original ingredients are omitted only in an UNAPPROVED new B profile, neverGI0.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_SOURCE_CONTENT_REVIEW",
+        "GK_ONLY_MACRO_VERSION_COMPATIBILITY",
+        "NEW_B_MINOR_OMISSIONS_METHOD",
+        "NAMED_KIDNEY36_AND_REHEATED_COCONUT_BEAN_RICE_ANALOGY",
+        "NAMED_PLANT50_NEW_APPLICATION",
+        "EXACT_NEW_WEIGHED_CONTENT_AND_FULL_PAN_JUICES"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "publicationAuthorized": false,
+      "confidence": "LOW",
+      "originalIngredientGroups": {
+        "nahatonta ja luutonta broilerin reisilihaa": "0",
+        "kevätsipulia": "1",
+        "valkosipulinkynttä": "2",
+        "habanero-chiliä": "3",
+        "limettimehua": "4",
+        "soijakastiketta": "5",
+        "maustepippuria": "6",
+        "kuivattua timjamia": "7",
+        "jauhettua inkivääriä": "8",
+        "fariinisokeria": "9",
+        "öljyä": "10",
+        "riisiä": "11",
+        "valutettuja punaisia kidneypapuja": "12",
+        "kookosmaitoa": "13",
+        "vettä": "14"
+      },
+      "omitOriginalIngredientGroups": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "inputSha256": "3ccf63cc452ab542e8a0e12b5298bbebbbb25965751a5cf0ecc14aaac43f4d6c"
+    },
+    {
+      "recipeId": "sate-ayam",
+      "level": "B",
+      "profile": "NEW_EXPERT_ESTIMATE_B_REFERENCE",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/sate-ayam.md"
+      },
+      "recipeSha256": {
+        "fi": "3ed0776b1f7a4358f11648e9311faef5018a28b758e0826c72a0f62d26dda93b"
+      },
+      "originalIngredients": [
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "broilerin reisilihaa",
+          "note": "kuutioina"
+        },
+        {
+          "amount": 32,
+          "unit": "g",
+          "item": "soijakastiketta",
+          "note": "makeaa marinadia varten"
+        },
+        {
+          "amount": 18,
+          "unit": "g",
+          "item": "fariinisokeria",
+          "note": "makeaa marinadia varten"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "limettimehua",
+          "note": "marinadiin"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "jauhettua korianteria"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "kurkumaa"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "maapähkinävoita",
+          "note": "kastikkeeseen"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaitoa",
+          "note": "kastikkeeseen"
+        },
+        {
+          "amount": 16,
+          "unit": "g",
+          "item": "soijakastiketta",
+          "note": "kastikkeeseen"
+        },
+        {
+          "amount": 9,
+          "unit": "g",
+          "item": "fariinisokeria",
+          "note": "kastikkeeseen"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "limetti",
+          "note": "lohkoina tarjoiluun"
+        }
+      ],
+      "candidateIngredients": [
+        {
+          "name": "broilerin reisilihaa",
+          "grams": 700,
+          "compositionId": "F002806",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 0,
+          "note": "Original700g chicken thigh meat."
+        },
+        {
+          "name": "soijakastiketta",
+          "grams": 32,
+          "compositionId": "F008065",
+          "giId": "soyLime50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 1,
+          "note": "Original32g ordinary commercial soy; actual CURRENT recipe, not stale kecap input."
+        },
+        {
+          "name": "fariinisokeria",
+          "grams": 18,
+          "compositionId": "F008969",
+          "giId": "sucrose60",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 2,
+          "note": "Original18g brown sugar retained."
+        },
+        {
+          "name": "limettimehua",
+          "grams": 30,
+          "compositionId": "F004729",
+          "giId": "soyLime50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 3,
+          "note": "NEW WEIGHED CONTENT30g lime juice replaces original2tbsp; not density proof."
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 7,
+          "compositionId": "F393",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 4,
+          "note": "Original2cloves by native Fineli393 KPL_M3.5g."
+        },
+        {
+          "name": "jauhettua korianteria",
+          "grams": 2,
+          "compositionId": "F003190",
+          "giId": "trace50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 5,
+          "note": "NEW WEIGHED CONTENT2g ground coriander seed replaces original1tsp; explicit new small-seed source application."
+        },
+        {
+          "name": "kurkumaa",
+          "grams": 1,
+          "compositionId": "F009335",
+          "giId": "trace50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 6,
+          "note": "NEW WEIGHED CONTENT1g ground turmeric replaces original0.5tsp; explicit new small-spice source application."
+        },
+        {
+          "name": "maapähkinävoita",
+          "grams": 150,
+          "compositionId": "F006579",
+          "giId": "peanutExpert18",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 7,
+          "note": "Original150g peanut butter specified no-added-sugar/salt type, nativeAFCD9.4. Sydney author reference18 is explicitly ESTIMATED, not measured; new B source-type approval required."
+        },
+        {
+          "name": "kookosmaitoa",
+          "grams": 200,
+          "compositionId": "F29014",
+          "giId": "plant50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 8,
+          "note": "Original200ml generic unsweetened coconut milk via ITS OWN Fineli29014 DL100g and nativeCHO2.81; new exact B plant50 application pending."
+        },
+        {
+          "name": "soijakastiketta",
+          "grams": 16,
+          "compositionId": "F008065",
+          "giId": "soyLime50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 9,
+          "note": "Original16g soy in peanut sauce; same source as marinade32g, total48g; not separately omitted."
+        },
+        {
+          "name": "fariinisokeria",
+          "grams": 9,
+          "compositionId": "F008969",
+          "giId": "sucrose60",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 10,
+          "note": "Original9g brown sugar in sauce; total27g retained."
+        },
+        {
+          "name": "limetti",
+          "grams": 50,
+          "compositionId": "F005199",
+          "giId": "trace50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 11,
+          "note": "NEW WEIGHED CONTENT50g edible peeled ordinary lime serving wedges defines original1fruit; all edible lime included. New named aromatic-garnish trace application, not blanket fruit GI50."
+        }
+      ],
+      "preparationDecision": "Preserve original700g chicken,32+16g ordinary soy,18+9g brown sugar,150g peanut butter, four portions and original200ml coconut milk. Specify no-added-sugar/salt peanut butter,30g weighed lime juice,2g coriander,1g turmeric and50g edible peeled lime as separate content decisions, not spoon/piece equivalence. Choose original permitted PAN-cooked version, not open grill: cook all marinade with chicken and combine ALL cooked pan contents with complete peanut-coconut sauce. Serve all edible lime. Expert-reference18 is an editorial estimate not human-measured, and applying it to warm sauce is unvalidated; new method/source-type/content review required. No peanut14/40, nut category22 or dairy35 substitution.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_SOURCE_CONTENT_REVIEW",
+        "GK_ONLY_MACRO_VERSION_COMPATIBILITY",
+        "NEW_B_EXPERT_ESTIMATE_SOURCE_TYPE_NOT_HUMAN_GI",
+        "NAMED_PEANUT_EXPERT18_AND_NO_ADDED_SUGAR_SALT_TYPE",
+        "NAMED_PLANT50_AND_TRACE50_NEW_APPLICATIONS",
+        "EXACT_NEW_WEIGHED_CONTENT_AND_FULL_PAN_MARINADE"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "publicationAuthorized": false,
+      "confidence": "LOW",
+      "inputSha256": "318845e20f82185754514f9eed937a668cac0271f55a7a02feda7d416dcf5fda"
+    }
+  ]
+}

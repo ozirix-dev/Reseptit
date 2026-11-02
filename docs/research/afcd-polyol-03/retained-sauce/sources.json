@@ -1,0 +1,512 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "sourceFilesLfSha256": {
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+    "docs/research/afcd-polyol-03/minor-omission-model.mts": "2554e35ccfd2904ffbe36cb866ba9d6b269e6108445dfce28e68a22961020131"
+  },
+  "composition": [
+    {
+      "id": "F722",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "722",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 0.0,
+      "name": "NAUDANFILEE, ULKOFILEE",
+      "portionMasses": {
+        "KPL_S": 1500.0,
+        "KPL_M": 1750.0,
+        "KPL_L": 2000.0
+      },
+      "nativeRowPythonJsonSha256": "c4c34945251540426542ac47296d34a56d169146358e3d79721529824551fad6"
+    },
+    {
+      "id": "F393",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "393",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 16.3,
+      "name": "VALKOSIPULI",
+      "portionMasses": {
+        "KPL_M": 3.5
+      },
+      "nativeRowPythonJsonSha256": "d6293feccd34055d94e082db1e5dd878fe791609a617641ce0cdf03730636158"
+    },
+    {
+      "id": "F335",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "335",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 4.8,
+      "name": "SIPULI, KELTASIPULI",
+      "portionMasses": {
+        "KPL_S": 30.0,
+        "KPL_M": 55.0,
+        "KPL_L": 200.0,
+        "DL": 90.0
+      },
+      "nativeRowPythonJsonSha256": "fc933b2defc31567f227521b9fd0aefd02380bae2533d0350afb71d847149959"
+    },
+    {
+      "id": "F385",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "385",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 0.9,
+      "name": "SEESAMINSIEMEN, KUORINEEN",
+      "portionMasses": {
+        "DL": 60.0,
+        "RKL": 8.5,
+        "TL": 3.0
+      },
+      "nativeRowPythonJsonSha256": "1e3d6c3686a21bf5b0ea4e710ea3958222ae1dd797d289d0ad4cfa7022432924"
+    },
+    {
+      "id": "F11177",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "11177",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 38.31,
+      "name": "MUSTAPIPPURI",
+      "portionMasses": {
+        "RKL": 6.5,
+        "TL": 2.0
+      },
+      "nativeRowPythonJsonSha256": "86f1c32056079fea25fdb3667d7c27c0ed6923b80dc34416db5638c746aff731"
+    },
+    {
+      "id": "F11194",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "11194",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 26.94,
+      "name": "TIMJAMI, KUIVATTU",
+      "portionMasses": {
+        "RKL": 1.5,
+        "TL": 0.5
+      },
+      "nativeRowPythonJsonSha256": "ccd218e7d8a4d544b29fa29e503d842ec12dc01ebdeaed6d2b531254fac9c923"
+    },
+    {
+      "id": "F31",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "31",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 9.5,
+      "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+      "portionMasses": {
+        "DL": 120.0,
+        "RKL": 18.0,
+        "TL": 6.0
+      },
+      "nativeRowPythonJsonSha256": "17ad1f94ce553f06a474ae240fd84064b167ccd88ddfaa35929e2dec57d5840e"
+    },
+    {
+      "id": "F29014",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "29014",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 2.81,
+      "name": "KOOKOSMAITO, KOOKOSJUOMA",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      },
+      "nativeRowPythonJsonSha256": "c01a9edfe13ee956e5731621677e15a7bce735aebe0231a9e36f5db1879f1c32"
+    },
+    {
+      "id": "F541",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "541",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 0.0,
+      "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+      "portionMasses": {
+        "DL": 90.0,
+        "RKL": 13.5,
+        "TL": 4.5
+      },
+      "nativeRowPythonJsonSha256": "778e197050af0f4599175e44e94a1b6992de9174eb1853a5acd171c49ddaf25e"
+    },
+    {
+      "id": "F922",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "922",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 0.0,
+      "name": "VESI, VESIJOHTOVESI",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      },
+      "nativeRowPythonJsonSha256": "41972b8a17ac88e177afef853eea1ea77952f50a1f65f36ad4bf2ab36d31a22f"
+    },
+    {
+      "id": "F11062",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "11062",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 8.0,
+      "name": "PÄÄRYNÄ, KUORITTU",
+      "portionMasses": {
+        "KPL_S": 115.0,
+        "KPL_M": 195.0,
+        "KPL_L": 280.0
+      },
+      "nativeRowPythonJsonSha256": "dc43b2e8cae30ce87981ef43d738db2546067b253937c39191946519b344869b"
+    },
+    {
+      "id": "F007682",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F007682",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 74,
+      "name": "Rice, white, uncooked",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "8e418483d9959c0721db5201f2b2092a53bf389c735921a45ad31e9bdafb5932"
+    },
+    {
+      "id": "F008065",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F008065",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 3.2,
+      "name": "Sauce, soy, commercial",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "47d714b632a696b19ada52b26a1f4737cf9f904ed1c901d8f00ec60f8e9e71d0"
+    },
+    {
+      "id": "F008969",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F008969",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 96.8,
+      "name": "Sugar, brown",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "fe8e0658476260258e22dc7b47a95348046b8298261341ea0f02a8d5e5d5b0ef"
+    },
+    {
+      "id": "F006250",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F006250",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 4.6,
+      "name": "Onion, spring, fresh, raw",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "68059d0ade2a80a139836096e35d1f6d4a0837649be0ef9edaebb431c2bb0c0c"
+    },
+    {
+      "id": "F002806",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F002806",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 0,
+      "name": "Chicken, thigh, lean flesh, raw",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "4f489f50f66b69c783509032bff2901f1ca28bd919899772fefd8b0f8f23c43a"
+    },
+    {
+      "id": "F002901",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F002901",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 4.8,
+      "name": "Chilli (chili), red, raw",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "ab769915741b286513cea47028babc8f98b99d61d69212b8807a112985b70166"
+    },
+    {
+      "id": "F004729",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F004729",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 1.2,
+      "name": "Juice, lime",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "bfac95b8cb02872cc7ab52230c685e476c66a06c8832cf21920680b89daa636a"
+    },
+    {
+      "id": "F004210",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F004210",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 57.5,
+      "name": "Ginger, dried, ground",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "fe35ee444fc3a57c6fa572522999b1ffa0a81dc77f272af0addca2ba82347d2d"
+    },
+    {
+      "id": "F000448",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F000448",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 14,
+      "name": "Bean, red kidney, canned, drained",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "02b7661511d8003ecc7cf1f3e4b2a8070fd47232d9e55a68119096caccb4bcf6"
+    },
+    {
+      "id": "F003190",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F003190",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 8.4,
+      "name": "Coriander seed, dried, ground",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "10dfe284dd1e03e71c955178446e5b9ded4a9ec1a8c0c4e2a7d4e74ca828dfbb"
+    },
+    {
+      "id": "F009335",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F009335",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 44.4,
+      "name": "Turmeric, dried, ground",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "99ae74a23e1b5ab8a645889a7ec1612ab818dcabb225f8c7961fb4ad753aefe3"
+    },
+    {
+      "id": "F006579",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F006579",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 9.4,
+      "name": "Peanut butter, smooth & crunchy, no added sugar or salt",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "d4fc635508c61cab18c7e6d8bc9cdb318e579e10c63ff23c93e30e0bd59af179"
+    },
+    {
+      "id": "F005199",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F005199",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 1.2,
+      "name": "Lime, peeled, raw",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "fcb177f27617901108a90106a87478a7e2158537b70e2d6442adca516b960263"
+    },
+    {
+      "id": "F006187",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F006187",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 0,
+      "name": "Oil, sesame",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED",
+      "nativeRowPythonJsonSha256": "eb38cba69b4b26da95832547b3c701e5eff49979b2bea21f9eb0911e62db6ba4"
+    },
+    {
+      "id": "SALLINEN_ALLSPICE_CAP",
+      "kind": "LABEL_CARBOHYDRATE_UPPER",
+      "availablePer100g": 51,
+      "name": "Sallinen Maustepippuri jauhettu320g product100520",
+      "availablePoint": null,
+      "polyolsTotal": null,
+      "sourceObservationId": "sallinen-allspice51"
+    }
+  ],
+  "gi": [
+    {
+      "id": "rice68",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        68
+      ],
+      "nativeId": "ehold-rice-jasmine68",
+      "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+      "locator": "Table2 European cohort glucose-reference column",
+      "limitation": "",
+      "allowedCompositionIds": [
+        "F007682"
+      ],
+      "nativeRowPythonJsonSha256": "8db54250fd0c6f96da967f5ccc0d4112d099cc41cd29d450073b1a68f0b8bd7a"
+    },
+    {
+      "id": "pear38",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        38
+      ],
+      "nativeId": "pear-raw-mean-gi-38-2002",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+      "locator": "Table 1, entries 423–426; mean of four raw-pear studies, GI 38 ± 2 on glucose scale",
+      "limitation": "Food-specific raw-pear mean, used as a low-confidence analogue for grated pear in bulgogi marinade. The pear is added raw, then heated briefly with the marinated beef; neither the recipe nor the mixed meal was tested.",
+      "allowedCompositionIds": [
+        "F11062"
+      ],
+      "nativeRowPythonJsonSha256": "c996460fc20e1af5136aa675bf2f7d62496fd6161c497c640cf1e00c78844ed5"
+    },
+    {
+      "id": "sucrose60",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        60
+      ],
+      "nativeId": "op142-sucrose60",
+      "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+      "locator": "Table2 European cohort glucose-reference column",
+      "limitation": "Human-measured sucrose comparator applied as an explicitly LOW-confidence sucrose-dominant sugar analogy; not a measured whole-recipe GI. European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+      "allowedCompositionIds": [
+        "F008969"
+      ],
+      "nativeRowPythonJsonSha256": "2b896b8ac2ded537f2eb741b37b3ea4327cd23d8a7b828a8a4f2f16027fde580"
+    },
+    {
+      "id": "veg40",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "values": [
+        40
+      ],
+      "nativeId": "op142-vegetable-imputation40",
+      "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+      "locator": "Conclusions: assignment discussion",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+      "allowedCompositionIds": [
+        "F393",
+        "F335",
+        "F006250",
+        "F002901"
+      ],
+      "nativeRowPythonJsonSha256": "529f04e0c0580f4492df49521fb05cede453c7424eb46bdd985457efea57d727"
+    },
+    {
+      "id": "soyLime50",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "values": [
+        50
+      ],
+      "nativeId": "op142-lowcho50-r4",
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "locator": "Author presentation slide 12",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+      "allowedCompositionIds": [
+        "F008065",
+        "F004729"
+      ],
+      "nativeRowPythonJsonSha256": "929238fdd0f046e5fb6acfd84d5d8ae942e97c0bf7c21f9576903f28cb7b8004"
+    },
+    {
+      "id": "plant50",
+      "kind": "PROPOSED_B_CODING",
+      "values": [
+        50
+      ],
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-lowcho50-v2",
+      "nativeRowSha256": "2bdac980b38c841b2f0d0d5783b30b6fe581ef0ab3136aa65c312df3f8c0b460",
+      "locator": "Published low-carbohydrate default50; project application EXTENSION only. Named unsweetened coconut milk/emulsion with independently sourced available CHO<=5g/100g only",
+      "limitation": "New editorial coding reference, GI uncertainty not source-bounded. Requires explicit owner method approval. GI0–150 sensitivity is separate, not a source interval.",
+      "allowedCompositionIds": [
+        "F29014"
+      ],
+      "approvalScope": "Prior approval covers only original exact16 versions. These new source/content applications are unapproved."
+    },
+    {
+      "id": "trace50",
+      "kind": "PROPOSED_B_CODING",
+      "values": [
+        50
+      ],
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-lowcho50-v2",
+      "nativeRowSha256": "2bdac980b38c841b2f0d0d5783b30b6fe581ef0ab3136aa65c312df3f8c0b460",
+      "locator": "Published low-carbohydrate default50; project application EXTENSION only. Named culinary trace spice/seed garnish <=0.5g CHO each and <=1g aggregate per serving",
+      "limitation": "New editorial coding reference, GI uncertainty not source-bounded. Requires explicit owner method approval. GI0–150 sensitivity is separate, not a source interval.",
+      "allowedCompositionIds": [
+        "F003190",
+        "F009335",
+        "F005199"
+      ],
+      "approvalScope": "Research-only new named source applications within old peringredient<=0.5g and total<=1g B trace profile."
+    },
+    {
+      "id": "kidney36",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        36
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 PDF page87 item1290: Edgell red kidney beans canned/drained, Australia2003, n10 glucose25g2h GI36 SEM4 UO5",
+      "limitation": "Named canned ordinary red kidney bean, not dry-boiled/dark-red43 or all-legume mean. AFCD generic canned/drained14gCHO is an independent regional composition proxy. Reheating with rice/coconut is a B preparation analogy; no claim of measured mixed meal or SEM interval.",
+      "allowedCompositionIds": [
+        "F000448"
+      ]
+    },
+    {
+      "id": "peanutExpert18",
+      "kind": "SOURCE_EXPERT_ESTIMATE",
+      "values": [
+        18
+      ],
+      "sourceUrl": "https://glycemicindex.com/2026/11/nut-butter-spreading-the-love/",
+      "locator": "Nicole Senior, published2026-11-01, Better together explicitly says estimated to be18; nutrition table no-added-salt/sugar peanut butter",
+      "limitation": "Expert editorial estimate, not standalone human measuredGI. The n16 peanut-butter-added-to-meal pilot does not establish standaloneGI18. New B source-type admission required; no source-bounded uncertainty or confidence interval.",
+      "humanMeasured": false,
+      "currentContractAdmitted": false,
+      "allowedCompositionIds": [
+        "F006579"
+      ]
+    }
+  ],
+  "externalObservations": [
+    {
+      "id": "sallinen-allspice51",
+      "url": "https://salliselta.fi/tuotteet/mausteet/maustepippuri-jauhettu",
+      "issuer": "Mauste-Sallinen manufacturer",
+      "basis": "per100g-as-sold",
+      "productCode": "100520",
+      "product": "ground allspice320g",
+      "declaredCarbohydrate": 51,
+      "fibre": 22,
+      "polyols": null,
+      "availablePoint": null,
+      "definition": "EU label carbohydrate including any polyols; nominal upper only. Fibre is not subtracted. NoGI assigned.",
+      "rawFile": "sallinen-allspice.html",
+      "rawSha256": "ef2cb28bd9f2ccd81626e3635ba9577bd0f4cea97f2e32b8c0c628fc86eb89ca"
+    },
+    {
+      "id": "pb-expert18",
+      "url": "https://glycemicindex.com/2026/11/nut-butter-spreading-the-love/",
+      "issuer": "Nicole Senior APD writing on University of Sydney GI News",
+      "published": "2026-11-01",
+      "expertEstimatedGi": 18,
+      "humanMeasured": false,
+      "availableChoReferenceTable": 9.4,
+      "rawSha256": null,
+      "retrieval": "Official web-reader text observed2026-11-02; local binary request403; no fabricated binary hash. Extracted facts sealed as this observation, not original HTML."
+    },
+    {
+      "id": "kidney36-2021",
+      "url": "https://doi.org/10.1093/ajcn/nqab233",
+      "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "rawFile": "atkinson2021-table1.pdf",
+      "rawSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "pdfPage1Based": 87,
+      "item": 1290,
+      "food": "Red Kidney beans canned drained Edgell brand",
+      "gi": 36,
+      "sem": 4,
+      "participants": 10,
+      "glucoseReferenceGrams": 25,
+      "meanUsedAsPoint": true,
+      "semUsedAsRecipeInterval": false,
+      "originalObservation": "Unpublished SUGiRS2003 UO5; included in2021 systematic Table1, not a separately published trial"
+    }
+  ],
+  "authoritativeBContract": {
+    "mainHead": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+    "ownerApprovalPath": "docs/nutrition/gk80-operation149/owner-approval.json",
+    "methodPath": "docs/nutrition/gk80-operation149/method-proposal.md",
+    "giPath": "docs/nutrition/gk80-operation149/gi-sources.json",
+    "giFileLfSha256": "1f7b9831179ca1dae27285bffa189a03a47e28018c946e60b438965abb9d880c",
+    "note": "Contract approved for exact16 versions; no implicit extension of owner content approval. Plant50 stays B. Minor B omissions and expert18 type are not admitted."
+  },
+  "nativeQuantityPolicy": "Fineli household measure may only accompany its own source food or be an explicit named content decision. Never use Fineli31 density with AFCD soy composition as if proved. Whole original gram quantities and servings retained. ZeroCHO sentinel preserves original amounts."
+}

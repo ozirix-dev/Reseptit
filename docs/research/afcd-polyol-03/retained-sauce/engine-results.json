@@ -1,0 +1,443 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "results": [
+    {
+      "recipeId": "bulgogi",
+      "inputSha256": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1",
+      "profile": "EXISTING_A",
+      "level": "A",
+      "numericArithmeticProposal": true,
+      "currentContractArithmeticPass": true,
+      "point": 41.31,
+      "unrounded": 41.30794999999999,
+      "omittedCho": 0.0670125,
+      "currentContractBlockers": [],
+      "sourceQualifiedForOwnerReview": true,
+      "newMethodApprovalRequired": false,
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "contributions": [
+        {
+          "name": "naudan ulkofileetä",
+          "choMin": 0,
+          "choMax": 0,
+          "gkMin": null,
+          "gkMax": null,
+          "giId": null
+        },
+        {
+          "name": "jasmiiniriisiä",
+          "choMin": 55.5,
+          "choMax": 55.5,
+          "gkMin": 37.74,
+          "gkMax": 37.74,
+          "giId": "rice68"
+        },
+        {
+          "name": "soijakastiketta",
+          "choMin": 0.5760000000000001,
+          "choMax": 0.5760000000000001,
+          "gkMin": 0.28800000000000003,
+          "gkMax": 0.28800000000000003,
+          "giId": "soyLime50"
+        },
+        {
+          "name": "fariinisokeria",
+          "choMin": 3.388,
+          "choMax": 3.388,
+          "gkMin": 2.0328,
+          "gkMax": 2.0328,
+          "giId": "sucrose60"
+        },
+        {
+          "name": "seesamiöljyä",
+          "choMin": 0,
+          "choMax": 0,
+          "gkMin": null,
+          "gkMax": null,
+          "giId": null
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "choMin": 0.427875,
+          "choMax": 0.427875,
+          "gkMin": 0.17115000000000002,
+          "gkMax": 0.17115000000000002,
+          "giId": "veg40"
+        },
+        {
+          "name": "päärynää",
+          "choMin": 2,
+          "choMax": 2,
+          "gkMin": 0.76,
+          "gkMax": 0.76,
+          "giId": "pear38"
+        },
+        {
+          "name": "keltasipulia",
+          "choMin": 0.33,
+          "choMax": 0.33,
+          "gkMin": 0.132,
+          "gkMax": 0.132,
+          "giId": "veg40"
+        },
+        {
+          "name": "kevätsipulia",
+          "choMin": 0.46,
+          "choMax": 0.46,
+          "gkMin": 0.18400000000000002,
+          "gkMax": 0.18400000000000002,
+          "giId": "veg40"
+        },
+        {
+          "name": "seesaminsiemeniä",
+          "choMin": 0.019125,
+          "choMax": 0.019125,
+          "gkMin": null,
+          "gkMax": null,
+          "giId": null
+        },
+        {
+          "name": "mustapippuria",
+          "choMin": 0.0478875,
+          "choMax": 0.0478875,
+          "gkMin": null,
+          "gkMax": null,
+          "giId": null
+        }
+      ],
+      "editorialGiReferenceContributions": [],
+      "assumptionSensitivityOnly": {
+        "gi": [
+          0,
+          150
+        ],
+        "min": 41.30794999999999,
+        "max": 41.40846874999999,
+        "isSourceBound": false,
+        "isBiologicalBound": false,
+        "isConfidenceInterval": false
+      }
+    },
+    {
+      "recipeId": "jerk-kana",
+      "inputSha256": "3ccf63cc452ab542e8a0e12b5298bbebbbb25965751a5cf0ecc14aaac43f4d6c",
+      "profile": "NEW_B_MINOR_OMISSIONS",
+      "level": "B",
+      "numericArithmeticProposal": true,
+      "currentContractArithmeticPass": false,
+      "point": 43.96,
+      "unrounded": 43.955825,
+      "omittedCho": 1.686175,
+      "currentContractBlockers": [
+        "UNRESOLVED_POSITIVE_GI: soijakastiketta",
+        "UNRESOLVED_POSITIVE_GI: maustepippuria",
+        "UNRESOLVED_POSITIVE_GI: kuivattua timjamia",
+        "UNRESOLVED_POSITIVE_GI: jauhettua inkivääriä"
+      ],
+      "sourceQualifiedForOwnerReview": false,
+      "newMethodApprovalRequired": true,
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "contributions": [
+        {
+          "name": "nahatonta ja luutonta broilerin reisilihaa",
+          "choMin": 0,
+          "choMax": 0,
+          "gkMin": null,
+          "gkMax": null,
+          "giId": null
+        },
+        {
+          "name": "kevätsipulia",
+          "choMin": 0.92,
+          "choMax": 0.92,
+          "gkMin": 0.36800000000000005,
+          "gkMax": 0.36800000000000005,
+          "giId": "veg40"
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "choMin": 0.427875,
+          "choMax": 0.427875,
+          "gkMin": 0.17115000000000002,
+          "gkMax": 0.17115000000000002,
+          "giId": "veg40"
+        },
+        {
+          "name": "habanero-chiliä",
+          "choMin": 0.12,
+          "choMax": 0.12,
+          "gkMin": 0.048,
+          "gkMax": 0.048,
+          "giId": "veg40"
+        },
+        {
+          "name": "limettimehua",
+          "choMin": 0.09,
+          "choMax": 0.09,
+          "gkMin": 0.045,
+          "gkMax": 0.045,
+          "giId": "soyLime50"
+        },
+        {
+          "name": "fariinisokeria",
+          "choMin": 3.388,
+          "choMax": 3.388,
+          "gkMin": 2.0328,
+          "gkMax": 2.0328,
+          "giId": "sucrose60"
+        },
+        {
+          "name": "öljyä",
+          "choMin": 0,
+          "choMax": 0,
+          "gkMin": null,
+          "gkMax": null,
+          "giId": null
+        },
+        {
+          "name": "riisiä",
+          "choMin": 55.5,
+          "choMax": 55.5,
+          "gkMin": 37.74,
+          "gkMax": 37.74,
+          "giId": "rice68"
+        },
+        {
+          "name": "valutettuja punaisia kidneypapuja",
+          "choMin": 8.4,
+          "choMax": 8.4,
+          "gkMin": 3.0240000000000005,
+          "gkMax": 3.0240000000000005,
+          "giId": "kidney36"
+        },
+        {
+          "name": "kookosmaitoa",
+          "choMin": 1.05375,
+          "choMax": 1.05375,
+          "gkMin": 0.526875,
+          "gkMax": 0.526875,
+          "giId": "plant50"
+        },
+        {
+          "name": "vettä",
+          "choMin": 0,
+          "choMax": 0,
+          "gkMin": null,
+          "gkMax": null,
+          "giId": null
+        },
+        {
+          "name": "soijakastiketta",
+          "originalIngredientGroup": "5",
+          "choMin": 0.855,
+          "choMax": 0.855,
+          "giId": null,
+          "gkMin": null,
+          "gkMax": null
+        },
+        {
+          "name": "maustepippuria",
+          "originalIngredientGroup": "6",
+          "choMin": 0,
+          "choMax": 0.51,
+          "giId": null,
+          "gkMin": null,
+          "gkMax": null
+        },
+        {
+          "name": "kuivattua timjamia",
+          "originalIngredientGroup": "7",
+          "choMin": 0.033675000000000004,
+          "choMax": 0.033675000000000004,
+          "giId": null,
+          "gkMin": null,
+          "gkMax": null
+        },
+        {
+          "name": "jauhettua inkivääriä",
+          "originalIngredientGroup": "8",
+          "choMin": 0.2875,
+          "choMax": 0.2875,
+          "giId": null,
+          "gkMin": null,
+          "gkMax": null
+        }
+      ],
+      "editorialGiReferenceContributions": [
+        {
+          "giId": "plant50",
+          "cho": 1.05375,
+          "gk": 0.526875
+        }
+      ],
+      "assumptionSensitivityOnly": {
+        "gi": [
+          0,
+          150
+        ],
+        "min": 43.42895,
+        "max": 47.5388375,
+        "isSourceBound": false,
+        "isBiologicalBound": false,
+        "isConfidenceInterval": false
+      }
+    },
+    {
+      "recipeId": "sate-ayam",
+      "inputSha256": "318845e20f82185754514f9eed937a668cac0271f55a7a02feda7d416dcf5fda",
+      "profile": "NEW_EXPERT_ESTIMATE_B_REFERENCE",
+      "level": "B",
+      "numericArithmeticProposal": true,
+      "currentContractArithmeticPass": false,
+      "point": 5.76,
+      "unrounded": 5.76,
+      "omittedCho": 0,
+      "currentContractBlockers": [
+        "EXPERT_ESTIMATE_TYPE_NOT_ADMITTED_IN_CURRENT_CONTRACT"
+      ],
+      "sourceQualifiedForOwnerReview": false,
+      "newMethodApprovalRequired": true,
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "contributions": [
+        {
+          "name": "broilerin reisilihaa",
+          "choMin": 0,
+          "choMax": 0,
+          "gkMin": null,
+          "gkMax": null,
+          "giId": null
+        },
+        {
+          "name": "soijakastiketta",
+          "choMin": 0.256,
+          "choMax": 0.256,
+          "gkMin": 0.128,
+          "gkMax": 0.128,
+          "giId": "soyLime50"
+        },
+        {
+          "name": "fariinisokeria",
+          "choMin": 4.356,
+          "choMax": 4.356,
+          "gkMin": 2.6136,
+          "gkMax": 2.6136,
+          "giId": "sucrose60"
+        },
+        {
+          "name": "limettimehua",
+          "choMin": 0.09,
+          "choMax": 0.09,
+          "gkMin": 0.045,
+          "gkMax": 0.045,
+          "giId": "soyLime50"
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "choMin": 0.28525,
+          "choMax": 0.28525,
+          "gkMin": 0.11410000000000001,
+          "gkMax": 0.11410000000000001,
+          "giId": "veg40"
+        },
+        {
+          "name": "jauhettua korianteria",
+          "choMin": 0.042,
+          "choMax": 0.042,
+          "gkMin": 0.021,
+          "gkMax": 0.021,
+          "giId": "trace50"
+        },
+        {
+          "name": "kurkumaa",
+          "choMin": 0.111,
+          "choMax": 0.111,
+          "gkMin": 0.0555,
+          "gkMax": 0.0555,
+          "giId": "trace50"
+        },
+        {
+          "name": "maapähkinävoita",
+          "choMin": 3.525,
+          "choMax": 3.525,
+          "gkMin": 0.6345,
+          "gkMax": 0.6345,
+          "giId": "peanutExpert18"
+        },
+        {
+          "name": "kookosmaitoa",
+          "choMin": 1.405,
+          "choMax": 1.405,
+          "gkMin": 0.7025,
+          "gkMax": 0.7025,
+          "giId": "plant50"
+        },
+        {
+          "name": "soijakastiketta",
+          "choMin": 0.128,
+          "choMax": 0.128,
+          "gkMin": 0.064,
+          "gkMax": 0.064,
+          "giId": "soyLime50"
+        },
+        {
+          "name": "fariinisokeria",
+          "choMin": 2.178,
+          "choMax": 2.178,
+          "gkMin": 1.3068,
+          "gkMax": 1.3068,
+          "giId": "sucrose60"
+        },
+        {
+          "name": "limetti",
+          "choMin": 0.15,
+          "choMax": 0.15,
+          "gkMin": 0.075,
+          "gkMax": 0.075,
+          "giId": "trace50"
+        }
+      ],
+      "editorialGiReferenceContributions": [
+        {
+          "giId": "trace50",
+          "cho": 0.042,
+          "gk": 0.021
+        },
+        {
+          "giId": "trace50",
+          "cho": 0.111,
+          "gk": 0.0555
+        },
+        {
+          "giId": "peanutExpert18",
+          "cho": 3.525,
+          "gk": 0.6345
+        },
+        {
+          "giId": "plant50",
+          "cho": 1.405,
+          "gk": 0.7025
+        },
+        {
+          "giId": "trace50",
+          "cho": 0.15,
+          "gk": 0.075
+        }
+      ],
+      "assumptionSensitivityOnly": {
+        "gi": [
+          0,
+          150
+        ],
+        "min": 4.2715,
+        "max": 12.121,
+        "isSourceBound": false,
+        "isBiologicalBound": false,
+        "isConfidenceInterval": false
+      }
+    }
+  ]
+}
