@@ -166,4 +166,3 @@ def main():
             for s,v in row['scenarios'].items():w.writerow({'recipeId':row['recipeId'],'baselineStatus':row['baselineStatus'],'scenario':s,**{k:';'.join(v[k]) if isinstance(v[k],list) else v[k] for k in cols[3:]}})
     print(json.dumps({k:v for k,v in summary.items() if k not in ['chickenBoundDetails']},ensure_ascii=False,indent=2))
 if __name__=='__main__':main()
-
