@@ -1,0 +1,704 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "recipeId": "intialainen-ven-pongal",
+  "inputSha256": "88400041451f8120facd3394a151f79639d901cc4c8359f36859fe9251bc1345",
+  "currentStrictBArithmeticPass": true,
+  "currentSourceAdmission": "EXACT_OWNER_REVIEW_REQUIRED",
+  "ownerApproved": false,
+  "publicationAuthorized": false,
+  "sourceScenarioEnvelope": {
+    "min": 40.1722275,
+    "max": 45.60835,
+    "isConfidenceInterval": false,
+    "isBiologicalBound": false,
+    "analogyErrorQuantified": false
+  },
+  "displayProposal": {
+    "min": 40,
+    "max": 46,
+    "label": "GK-arvio 40–46 · mallinnettu",
+    "activation": false
+  },
+  "omittedCho": 0,
+  "scenarios": [
+    {
+      "scenarioId": "F007682_MUNG31.43_CASHEW22",
+      "unrounded": 40.1722275,
+      "point": 40.17,
+      "omittedCho": 0,
+      "traceCodedCho": 0.3831,
+      "terms": [
+        {
+          "name": "dry white jasmine rice",
+          "compositionId": "F007682",
+          "grams": 100,
+          "choPerServing": 37,
+          "giId": "congee80",
+          "gi": 80,
+          "gk": 29.6
+        },
+        {
+          "name": "whole green mung beans, dry",
+          "compositionId": "F000446",
+          "grams": 150,
+          "choPerServing": 31.425,
+          "giId": "mung31.43",
+          "gi": 31.43,
+          "gk": 9.8768775
+        },
+        {
+          "name": "raw unsalted cashews before ghee toasting",
+          "compositionId": "F006088",
+          "grams": 20,
+          "choPerServing": 2.29,
+          "giId": "cashew22-27",
+          "gi": 22,
+          "gk": 0.5038
+        },
+        {
+          "name": "ground black pepper",
+          "compositionId": "11177",
+          "grams": 2,
+          "choPerServing": 0.3831,
+          "giId": "trace50",
+          "gi": 50,
+          "gk": 0.19155
+        },
+        {
+          "name": "water",
+          "compositionId": "922",
+          "grams": 700,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "ghee",
+          "compositionId": "F004205",
+          "grams": 14,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "pure table salt",
+          "compositionId": "30",
+          "grams": 0,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        }
+      ],
+      "pepperAssumptionSensitivityOnly": {
+        "gi": [
+          0,
+          150
+        ],
+        "min": 39.9806775,
+        "max": 40.5553275,
+        "isSourceInterval": false,
+        "isBiologicalBound": false
+      }
+    },
+    {
+      "scenarioId": "F007682_MUNG31.43_CASHEW27",
+      "unrounded": 40.2867275,
+      "point": 40.29,
+      "omittedCho": 0,
+      "traceCodedCho": 0.3831,
+      "terms": [
+        {
+          "name": "dry white jasmine rice",
+          "compositionId": "F007682",
+          "grams": 100,
+          "choPerServing": 37,
+          "giId": "congee80",
+          "gi": 80,
+          "gk": 29.6
+        },
+        {
+          "name": "whole green mung beans, dry",
+          "compositionId": "F000446",
+          "grams": 150,
+          "choPerServing": 31.425,
+          "giId": "mung31.43",
+          "gi": 31.43,
+          "gk": 9.8768775
+        },
+        {
+          "name": "raw unsalted cashews before ghee toasting",
+          "compositionId": "F006088",
+          "grams": 20,
+          "choPerServing": 2.29,
+          "giId": "cashew22-27",
+          "gi": 27,
+          "gk": 0.6183
+        },
+        {
+          "name": "ground black pepper",
+          "compositionId": "11177",
+          "grams": 2,
+          "choPerServing": 0.3831,
+          "giId": "trace50",
+          "gi": 50,
+          "gk": 0.19155
+        },
+        {
+          "name": "water",
+          "compositionId": "922",
+          "grams": 700,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "ghee",
+          "compositionId": "F004205",
+          "grams": 14,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "pure table salt",
+          "compositionId": "30",
+          "grams": 0,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        }
+      ],
+      "pepperAssumptionSensitivityOnly": {
+        "gi": [
+          0,
+          150
+        ],
+        "min": 40.0951775,
+        "max": 40.6698275,
+        "isSourceInterval": false,
+        "isBiologicalBound": false
+      }
+    },
+    {
+      "scenarioId": "F007682_MUNG42_CASHEW22",
+      "unrounded": 43.49385,
+      "point": 43.49,
+      "omittedCho": 0,
+      "traceCodedCho": 0.3831,
+      "terms": [
+        {
+          "name": "dry white jasmine rice",
+          "compositionId": "F007682",
+          "grams": 100,
+          "choPerServing": 37,
+          "giId": "congee80",
+          "gi": 80,
+          "gk": 29.6
+        },
+        {
+          "name": "whole green mung beans, dry",
+          "compositionId": "F000446",
+          "grams": 150,
+          "choPerServing": 31.425,
+          "giId": "mung42",
+          "gi": 42,
+          "gk": 13.198500000000001
+        },
+        {
+          "name": "raw unsalted cashews before ghee toasting",
+          "compositionId": "F006088",
+          "grams": 20,
+          "choPerServing": 2.29,
+          "giId": "cashew22-27",
+          "gi": 22,
+          "gk": 0.5038
+        },
+        {
+          "name": "ground black pepper",
+          "compositionId": "11177",
+          "grams": 2,
+          "choPerServing": 0.3831,
+          "giId": "trace50",
+          "gi": 50,
+          "gk": 0.19155
+        },
+        {
+          "name": "water",
+          "compositionId": "922",
+          "grams": 700,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "ghee",
+          "compositionId": "F004205",
+          "grams": 14,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "pure table salt",
+          "compositionId": "30",
+          "grams": 0,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        }
+      ],
+      "pepperAssumptionSensitivityOnly": {
+        "gi": [
+          0,
+          150
+        ],
+        "min": 43.3023,
+        "max": 43.87695,
+        "isSourceInterval": false,
+        "isBiologicalBound": false
+      }
+    },
+    {
+      "scenarioId": "F007682_MUNG42_CASHEW27",
+      "unrounded": 43.60835,
+      "point": 43.61,
+      "omittedCho": 0,
+      "traceCodedCho": 0.3831,
+      "terms": [
+        {
+          "name": "dry white jasmine rice",
+          "compositionId": "F007682",
+          "grams": 100,
+          "choPerServing": 37,
+          "giId": "congee80",
+          "gi": 80,
+          "gk": 29.6
+        },
+        {
+          "name": "whole green mung beans, dry",
+          "compositionId": "F000446",
+          "grams": 150,
+          "choPerServing": 31.425,
+          "giId": "mung42",
+          "gi": 42,
+          "gk": 13.198500000000001
+        },
+        {
+          "name": "raw unsalted cashews before ghee toasting",
+          "compositionId": "F006088",
+          "grams": 20,
+          "choPerServing": 2.29,
+          "giId": "cashew22-27",
+          "gi": 27,
+          "gk": 0.6183
+        },
+        {
+          "name": "ground black pepper",
+          "compositionId": "11177",
+          "grams": 2,
+          "choPerServing": 0.3831,
+          "giId": "trace50",
+          "gi": 50,
+          "gk": 0.19155
+        },
+        {
+          "name": "water",
+          "compositionId": "922",
+          "grams": 700,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "ghee",
+          "compositionId": "F004205",
+          "grams": 14,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "pure table salt",
+          "compositionId": "30",
+          "grams": 0,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        }
+      ],
+      "pepperAssumptionSensitivityOnly": {
+        "gi": [
+          0,
+          150
+        ],
+        "min": 43.4168,
+        "max": 43.99145,
+        "isSourceInterval": false,
+        "isBiologicalBound": false
+      }
+    },
+    {
+      "scenarioId": "11521_MUNG31.43_CASHEW22",
+      "unrounded": 42.1722275,
+      "point": 42.17,
+      "omittedCho": 0,
+      "traceCodedCho": 0.3831,
+      "terms": [
+        {
+          "name": "dry white jasmine rice",
+          "compositionId": "11521",
+          "grams": 100,
+          "choPerServing": 39.5,
+          "giId": "congee80",
+          "gi": 80,
+          "gk": 31.6
+        },
+        {
+          "name": "whole green mung beans, dry",
+          "compositionId": "F000446",
+          "grams": 150,
+          "choPerServing": 31.425,
+          "giId": "mung31.43",
+          "gi": 31.43,
+          "gk": 9.8768775
+        },
+        {
+          "name": "raw unsalted cashews before ghee toasting",
+          "compositionId": "F006088",
+          "grams": 20,
+          "choPerServing": 2.29,
+          "giId": "cashew22-27",
+          "gi": 22,
+          "gk": 0.5038
+        },
+        {
+          "name": "ground black pepper",
+          "compositionId": "11177",
+          "grams": 2,
+          "choPerServing": 0.3831,
+          "giId": "trace50",
+          "gi": 50,
+          "gk": 0.19155
+        },
+        {
+          "name": "water",
+          "compositionId": "922",
+          "grams": 700,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "ghee",
+          "compositionId": "F004205",
+          "grams": 14,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "pure table salt",
+          "compositionId": "30",
+          "grams": 0,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        }
+      ],
+      "pepperAssumptionSensitivityOnly": {
+        "gi": [
+          0,
+          150
+        ],
+        "min": 41.9806775,
+        "max": 42.5553275,
+        "isSourceInterval": false,
+        "isBiologicalBound": false
+      }
+    },
+    {
+      "scenarioId": "11521_MUNG31.43_CASHEW27",
+      "unrounded": 42.2867275,
+      "point": 42.29,
+      "omittedCho": 0,
+      "traceCodedCho": 0.3831,
+      "terms": [
+        {
+          "name": "dry white jasmine rice",
+          "compositionId": "11521",
+          "grams": 100,
+          "choPerServing": 39.5,
+          "giId": "congee80",
+          "gi": 80,
+          "gk": 31.6
+        },
+        {
+          "name": "whole green mung beans, dry",
+          "compositionId": "F000446",
+          "grams": 150,
+          "choPerServing": 31.425,
+          "giId": "mung31.43",
+          "gi": 31.43,
+          "gk": 9.8768775
+        },
+        {
+          "name": "raw unsalted cashews before ghee toasting",
+          "compositionId": "F006088",
+          "grams": 20,
+          "choPerServing": 2.29,
+          "giId": "cashew22-27",
+          "gi": 27,
+          "gk": 0.6183
+        },
+        {
+          "name": "ground black pepper",
+          "compositionId": "11177",
+          "grams": 2,
+          "choPerServing": 0.3831,
+          "giId": "trace50",
+          "gi": 50,
+          "gk": 0.19155
+        },
+        {
+          "name": "water",
+          "compositionId": "922",
+          "grams": 700,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "ghee",
+          "compositionId": "F004205",
+          "grams": 14,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "pure table salt",
+          "compositionId": "30",
+          "grams": 0,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        }
+      ],
+      "pepperAssumptionSensitivityOnly": {
+        "gi": [
+          0,
+          150
+        ],
+        "min": 42.0951775,
+        "max": 42.6698275,
+        "isSourceInterval": false,
+        "isBiologicalBound": false
+      }
+    },
+    {
+      "scenarioId": "11521_MUNG42_CASHEW22",
+      "unrounded": 45.49385,
+      "point": 45.49,
+      "omittedCho": 0,
+      "traceCodedCho": 0.3831,
+      "terms": [
+        {
+          "name": "dry white jasmine rice",
+          "compositionId": "11521",
+          "grams": 100,
+          "choPerServing": 39.5,
+          "giId": "congee80",
+          "gi": 80,
+          "gk": 31.6
+        },
+        {
+          "name": "whole green mung beans, dry",
+          "compositionId": "F000446",
+          "grams": 150,
+          "choPerServing": 31.425,
+          "giId": "mung42",
+          "gi": 42,
+          "gk": 13.198500000000001
+        },
+        {
+          "name": "raw unsalted cashews before ghee toasting",
+          "compositionId": "F006088",
+          "grams": 20,
+          "choPerServing": 2.29,
+          "giId": "cashew22-27",
+          "gi": 22,
+          "gk": 0.5038
+        },
+        {
+          "name": "ground black pepper",
+          "compositionId": "11177",
+          "grams": 2,
+          "choPerServing": 0.3831,
+          "giId": "trace50",
+          "gi": 50,
+          "gk": 0.19155
+        },
+        {
+          "name": "water",
+          "compositionId": "922",
+          "grams": 700,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "ghee",
+          "compositionId": "F004205",
+          "grams": 14,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "pure table salt",
+          "compositionId": "30",
+          "grams": 0,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        }
+      ],
+      "pepperAssumptionSensitivityOnly": {
+        "gi": [
+          0,
+          150
+        ],
+        "min": 45.3023,
+        "max": 45.87695,
+        "isSourceInterval": false,
+        "isBiologicalBound": false
+      }
+    },
+    {
+      "scenarioId": "11521_MUNG42_CASHEW27",
+      "unrounded": 45.60835,
+      "point": 45.61,
+      "omittedCho": 0,
+      "traceCodedCho": 0.3831,
+      "terms": [
+        {
+          "name": "dry white jasmine rice",
+          "compositionId": "11521",
+          "grams": 100,
+          "choPerServing": 39.5,
+          "giId": "congee80",
+          "gi": 80,
+          "gk": 31.6
+        },
+        {
+          "name": "whole green mung beans, dry",
+          "compositionId": "F000446",
+          "grams": 150,
+          "choPerServing": 31.425,
+          "giId": "mung42",
+          "gi": 42,
+          "gk": 13.198500000000001
+        },
+        {
+          "name": "raw unsalted cashews before ghee toasting",
+          "compositionId": "F006088",
+          "grams": 20,
+          "choPerServing": 2.29,
+          "giId": "cashew22-27",
+          "gi": 27,
+          "gk": 0.6183
+        },
+        {
+          "name": "ground black pepper",
+          "compositionId": "11177",
+          "grams": 2,
+          "choPerServing": 0.3831,
+          "giId": "trace50",
+          "gi": 50,
+          "gk": 0.19155
+        },
+        {
+          "name": "water",
+          "compositionId": "922",
+          "grams": 700,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "ghee",
+          "compositionId": "F004205",
+          "grams": 14,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        },
+        {
+          "name": "pure table salt",
+          "compositionId": "30",
+          "grams": 0,
+          "choPerServing": 0,
+          "giId": null,
+          "gi": null,
+          "gk": 0
+        }
+      ],
+      "pepperAssumptionSensitivityOnly": {
+        "gi": [
+          0,
+          150
+        ],
+        "min": 45.4168,
+        "max": 45.99145,
+        "isSourceInterval": false,
+        "isBiologicalBound": false
+      }
+    }
+  ],
+  "controls": [
+    {
+      "control": "COOKED_COMPOSITION_CANNOT_USE_DRY150G",
+      "status": "REJECTED",
+      "reason": "Whole dry mung and weighed14g ghee"
+    },
+    {
+      "control": "CASHEW_STALE100G_CANNOT_REPLACE_ORIGINAL20G",
+      "status": "REJECTED",
+      "reason": "Original grams/quantity/source"
+    },
+    {
+      "control": "B_PEPPER_POSITIVE_CHO_CANNOT_BE_OMITTED",
+      "status": "REJECTED",
+      "reason": "Positive B contribution needs reviewed GI"
+    },
+    {
+      "control": "PONGAL45_OR_DIABETIC90_NOT_MUNG_ENDPOINT",
+      "status": "REJECTED",
+      "reason": "Named scenario endpoints only"
+    }
+  ]
+}

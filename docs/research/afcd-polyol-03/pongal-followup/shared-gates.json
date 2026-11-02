@@ -1,0 +1,67 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "cohort": "Reuses original70 IDs only; three source gates do not add three complete proposals",
+  "sources": [
+    {
+      "id": "bong-standard-kanafondi",
+      "url": "https://www.bongtouchoftaste.fi/tuotteet/kanafondi",
+      "observedAtUtc": "2026-11-02T21:25:39.520919+00:00",
+      "rawSha256": "2d99e8ff70d42bd82d4540dfb0e83747bb34205a6be790e013163b78e8408dd1",
+      "labelCarbohydratePer100gConcentrate": 7,
+      "preparedColumnUnitAmbiguous": true,
+      "preparedColumnUsed": false,
+      "productNotOrganic9": true,
+      "proposedWeighedStockExamples": [
+        {
+          "concentrateG": 50,
+          "waterG": 950,
+          "stockTotalG": 1000,
+          "nominalLabelCarbohydrateCapBatchG": 3.5
+        },
+        {
+          "concentrateG": 15,
+          "waterG": 285,
+          "stockTotalG": 300,
+          "nominalLabelCarbohydrateCapBatchG": 1.05
+        }
+      ],
+      "gramsNotAssertedEqualToOriginalLitresOrTablespoons": true,
+      "giReferenceFound": false,
+      "newGi50DefaultApproved": false,
+      "newCompleteNumericResults": 0
+    }
+  ],
+  "recipes": [
+    {
+      "recipeId": "hernekeitto-savupotkalla",
+      "stage": "HOLD",
+      "blockers": [
+        "Boiled marrowfat47 to long-cooked green-pea soup source analogy not approved",
+        "Smoked-hock label cap is not an availableCHO point; GI application missing",
+        "Mustard and removed-leaf/trace portions must be covered in B"
+      ],
+      "newCompleteResult": false
+    },
+    {
+      "recipeId": "paella-valenciana",
+      "stage": "HOLD",
+      "blockers": [
+        "Weighed named stock source/content decision needed; prepared label unit not inferred",
+        "No admitted stock GI coding or omission contract for full B",
+        "Arborio absorption/toasting rice analogy and all seasoning portions require full inputs"
+      ],
+      "newCompleteResult": false
+    },
+    {
+      "recipeId": "kana-tagine-sitruunalla",
+      "stage": "HOLD",
+      "blockers": [
+        "Weighed named stock and GI coding decision needed",
+        "Preserved rind versus whole lemon edible mass/composition unresolved",
+        "Original couscous-or-bread serving must be quantified and included"
+      ],
+      "newCompleteResult": false
+    }
+  ]
+}

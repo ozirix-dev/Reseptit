@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "repository": "ozirix-dev/Reseptit",
+  "observedAtUtc": "2026-11-02T21:25:39.520919+00:00",
+  "mainHead": "554f8a414782497da89640c8e45be1ccf1580a95",
+  "pr": 186,
+  "workflowRun": 41523751037,
+  "workflowUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41523751037",
+  "buildConclusion": "SUCCESS",
+  "deployConclusion": "SUCCESS",
+  "publishedPage": "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/",
+  "publicResponseRawSha256": "a7407a16e2c12c5674c1164e6e5aca3e2a2dd1d5fc13c6905fe579b4f90b9f40",
+  "observedVisibleCounts": {
+    "numericAnyVersion": 179,
+    "denominator": 326,
+    "classA": 173,
+    "classB": 6
+  },
+  "publicResponseMatchesPr185Observation": true,
+  "incrementFromPr186": 0,
+  "newPublishedResultsByThisTask": 0,
+  "explanation": "PR186 is an isolated chocolate scenario pilot; it does not integrate Codex2 pending inputs or change current public numeric coverage. No release action taken by Codex2."
+}

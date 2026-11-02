@@ -14,6 +14,12 @@ Käyttäjä hyväksyi nämä kolme tarkkaa B-lähde-/sisältöversiota ja rajatu
 
 **Codex2:n kirjoitusrajaus:** vain oma`D:/Projects/tmp/reseptit-afcd-polyol-03-gk80-handoff` ja`codex/afcd-polyol-03-gk80-handoff`. Julkaisijan ja säilytyshaaroja ei muokata. Ei uutta PR:ää, Readya, mergeä, deployta tai ylimääräisiä Actions-ajoja. Projektisäännöt: [AGENTS.md](../../../AGENTS.md) ja [rinnakkaisajo-ohje](../../rinnakkaiset-codex-ajot.md).
 
+## Uusin jatko: pongal40–46 katselmointiin, yhteiset label-portit vielä HOLDissa
+
+[Pongalin tarkka B-paketti](pongal-followup.md) säilyttää alkuperäiset100g riisiä,150g kokonaisia kuivia mungpapuja ja20g cashewpähkinöitä sekä kaksi annosta. Uusi punnittu ghee14g, natiivit riisin CHO-pisteet ja kaksi erillistä keitetyn mungin raportoitua GI-keskiarvoa antavat kahdeksassa lähdeskenaariossa **GK-arvio40–46 · mallinnettu**, positiivisia poisjättöjä0. Tämä on lähdevalintojen väli; pehmeän sekaruoan analogia ja yksilövaihtelu eivät ole rajattuja. Vanha75g mungprotokolla ja lähteen ikäraportoinnin ristiriita ovat avoimia rajoitteita. Suoraa pongal45:tä ei siirretä eri riisi–papusuhteelle. Uusi tarkka sovellus odottaa omistajapäätöstä; hyväksyttyjä säilyy30 ja julkaistuja179. Koko hyväksytyn jonon ja tämän yhden version myöhempi julkaisu veisi187:ään vain erillisen hyväksynnän ja integraation jälkeen.
+
+[Liemi-/label-porttien](pongal-followup/shared-gates.json) kolme muuta reseptiriippuvuutta eivät vielä tuota yhtään uutta kokonaista numeerista tulosta. Uutta yleistä GI50-oletusta tai B-poisjättöprofiilia ei oteta käyttöön. [PR186:n julkaisuhavainto](production-observation-pr186.json) vahvistaa mainin suklaapilotin jälkeisenkin julkisen kattavuuden179/326. Oma tutkimusajo ei julkaise.39 aritmeettista tunnusta,71 matriisiriviä, seitsemän hyväksyttyä mutta julkaisematonta versiota ja tavoitevaje82 säilyvät.
+
 ## Aiemmat tilannekuvat
 
 Alla olevien raporttien aikamuodot ja määrät kuvaavat niiden omaa ajankohtaa. Nykyinen julkaistu luku on179 ja julkaisemattomia hyväksyttyjä7; vanhat172/8-luvut eivät ole nykytila. Alkuperäiset raportit, syötteet ja hyväksyntäkuitit säilyvät muuttumattomina.

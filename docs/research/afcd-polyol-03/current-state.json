@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "recordRole": "CURRENT_STATE_AFTER_SEPARATION",
-  "observedAtUtc": "2026-11-02T20:54:06.678142+00:00",
+  "observedAtUtc": "2026-11-02T21:25:39.520919+00:00",
   "repository": "ozirix-dev/Reseptit",
   "role": "Codex2 / Codex Tutkimus",
   "ownedWorktree": "D:\\Projects\\tmp\\reseptit-afcd-polyol-03-gk80-handoff",
   "ownedBranch": "codex/afcd-polyol-03-gk80-handoff",
   "correctionBaseHead": "ac93cbdefe0c7d02ee1c39740c31b1446f24ba6f",
-  "mainHeadObserved": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+  "mainHeadObserved": "554f8a414782497da89640c8e45be1ccf1580a95",
   "rulesMainCommit": "061f8170a7bc31244ce787c13e80d3d757f0c859",
   "ruleFiles": [
     "AGENTS.md",
@@ -136,44 +136,42 @@
   "deployAuthorized": false,
   "publicationActivation": false,
   "latestResearchPass": {
-    "report": "gi-fallback-followup.md",
-    "package": "gi-fallback/",
-    "startingHead": "2a626c560873c0d414508522e1a1173f244f9d1c",
+    "report": "pongal-followup.md",
+    "package": "pongal-followup/",
+    "startingHead": "4ee7ab5521224eab435c9611034e5197681f80d7",
     "selectedMethods": [
-      "FOOD_PREPARATION_ENTITY_LOOKUP",
       "PRIMARY_CITATION_AND_PDF_RECIPE_RECOVERY",
+      "NAMED_COMPATIBLE_PREPARATION_LOOKUP",
       "NATIVE_CHO_SOURCE_SCENARIO_ENVELOPE"
     ],
-    "userApprovedIntegerDisplayPreference": true,
-    "reviewableExactBVersions": 3,
+    "reviewableExactBVersions": 1,
     "newArithmeticRecipeIds": 0,
-    "previousPreparedHoldWithNewVersion": 1,
-    "newOwnerApproved": 3,
+    "newOwnerApproved": 0,
     "newPublicationQualifiedNumericResults": 0,
     "newPublishedResults": 0,
     "candidateInputs": {
-      "intialainen-besan-chilla": "5c0942255538ff47e866006ff3fb40d44bd25abe5c30496c69cdcee8adccd01a",
-      "intialainen-pinaatti-paneer-chilla": "cdfff763f373d92f5142ac772b52068a2e453ebd56bcff5c29b507422c6a8d16",
-      "intialainen-mannasuurimoupma": "365f6eaff17867ea8fc415dd57af8d2ef91176e2c80239dfbc0d69ac2dc2d1cc"
+      "intialainen-ven-pongal": "88400041451f8120facd3394a151f79639d901cc4c8359f36859fe9251bc1345"
     },
     "approvedVersionsStill": 30,
     "approvedButUnpublishedStill": 7,
     "publishedStill": 179,
     "conditionalAfterAlreadyApprovedReleased": 186,
-    "conditionalOnlyAfterTheseThreeSeparatelyAcceptedIntegratedReleased": 186,
-    "conditionalApprovedVersionCount": 30,
-    "conditionalGapTo261": 75,
+    "conditionalOnlyAfterThisVersionAcceptedIntegratedReleased": 187,
+    "conditionalApprovedVersionCount": 31,
+    "conditionalGapTo261": 74,
     "newAssumedGiConstants": 0,
     "newNamedHumanGiObservationsAdmittedForResearch": [
-      "upittu69",
-      "frozen-pea42",
-      "boiled-carrot32"
+      "pirasath2012-whole-green-mung31.43-reported-old-model-reference"
     ],
     "minorBOmissionProfileActivated": false,
+    "newLowChoStockGi50ProfileActivated": false,
     "expertEstimateSourceTypeActivated": false,
     "activeRecipeOrEngineChanges": false,
-    "ownerApprovalReceipt": "gi-fallback-approval.json",
-    "approvalOverlayScope": "Explicit user acceptance of these exact three B source/content/model-reference versions. Reviewed31d2c3c report/manifest retain pre-approval totals27/zero new approvals. No B minor omissions or expert source-type approval."
+    "sourceGatesForThreeOtherExisting70Recipes": {
+      "completeNewResults": 0,
+      "evidence": "pongal-followup/shared-gates.json"
+    },
+    "publicationObservation": "production-observation-pr186.json"
   },
   "approvedResearchHandoff": {
     "recipeId": "pad-see-ew-vhh-konjac",
@@ -399,5 +397,45 @@
     "futureIntegrationOwner": "Named Codex Julkaisu owner of a separately scoped future batch",
     "integrated": false,
     "published": false
+  },
+  "previousResearchPassBeforePongal": {
+    "report": "gi-fallback-followup.md",
+    "package": "gi-fallback/",
+    "startingHead": "2a626c560873c0d414508522e1a1173f244f9d1c",
+    "selectedMethods": [
+      "FOOD_PREPARATION_ENTITY_LOOKUP",
+      "PRIMARY_CITATION_AND_PDF_RECIPE_RECOVERY",
+      "NATIVE_CHO_SOURCE_SCENARIO_ENVELOPE"
+    ],
+    "userApprovedIntegerDisplayPreference": true,
+    "reviewableExactBVersions": 3,
+    "newArithmeticRecipeIds": 0,
+    "previousPreparedHoldWithNewVersion": 1,
+    "newOwnerApproved": 3,
+    "newPublicationQualifiedNumericResults": 0,
+    "newPublishedResults": 0,
+    "candidateInputs": {
+      "intialainen-besan-chilla": "5c0942255538ff47e866006ff3fb40d44bd25abe5c30496c69cdcee8adccd01a",
+      "intialainen-pinaatti-paneer-chilla": "cdfff763f373d92f5142ac772b52068a2e453ebd56bcff5c29b507422c6a8d16",
+      "intialainen-mannasuurimoupma": "365f6eaff17867ea8fc415dd57af8d2ef91176e2c80239dfbc0d69ac2dc2d1cc"
+    },
+    "approvedVersionsStill": 30,
+    "approvedButUnpublishedStill": 7,
+    "publishedStill": 179,
+    "conditionalAfterAlreadyApprovedReleased": 186,
+    "conditionalOnlyAfterTheseThreeSeparatelyAcceptedIntegratedReleased": 186,
+    "conditionalApprovedVersionCount": 30,
+    "conditionalGapTo261": 75,
+    "newAssumedGiConstants": 0,
+    "newNamedHumanGiObservationsAdmittedForResearch": [
+      "upittu69",
+      "frozen-pea42",
+      "boiled-carrot32"
+    ],
+    "minorBOmissionProfileActivated": false,
+    "expertEstimateSourceTypeActivated": false,
+    "activeRecipeOrEngineChanges": false,
+    "ownerApprovalReceipt": "gi-fallback-approval.json",
+    "approvalOverlayScope": "Explicit user acceptance of these exact three B source/content/model-reference versions. Reviewed31d2c3c report/manifest retain pre-approval totals27/zero new approvals. No B minor omissions or expert source-type approval."
   }
 }

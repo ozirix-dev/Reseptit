@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "publicationAuthorized": false,
+  "recipeId": "intialainen-ven-pongal",
+  "inputSha256": "88400041451f8120facd3394a151f79639d901cc4c8359f36859fe9251bc1345",
+  "reportLfSha256": "8ea6d5d3e991fe5d2321bcbbf4ffc41f28caac8c67b8b6101a8e564f4f5b592e",
+  "startingHead": "4ee7ab5521224eab435c9611034e5197681f80d7",
+  "sourceScenarioCount": 8,
+  "displayProposal": {
+    "min": 40,
+    "max": 46,
+    "label": "GK-arvio 40–46 · mallinnettu",
+    "activation": false
+  },
+  "originalCohortCount": 70,
+  "newCohortCreated": false,
+  "newArithmeticRecipeIds": 0,
+  "completeReviewableVersions": 1,
+  "newApprovedVersions": 0,
+  "newPublishedResults": 0,
+  "conditionalCoverageAfterAllEightReleased": 187,
+  "target261ConditionalGap": 74,
+  "filesLfSha256": {
+    "audit-pongal.py": "8aecab8c259af3f8efc69cfcf5c302d96c7380574f1a33d1c9a54f860b5ea1fc",
+    "cases.json": "06894ebbde210559add63903fb187ca0bd874eebc18cbd2c7c6edb5f9d8accd4",
+    "decimal-results.json": "8408d28f1ae9c8d1e132aa1d8bf71720ac2eb9890a12299a0a063f864f909d4c",
+    "engine-results.json": "65f24b1f5c7c0ec39a8995d986c864c6264c8486386b60efaa2ae1c9969ffc06",
+    "evaluate-pongal.mts": "16838cfb7c3978162e76a122c1ecadbf8840535990be2aa7339def6afbe4eb8f",
+    "method-impact.csv": "f2c39921b5c32e7339bdef53f839058b32127a03d147d5e70e4bf1b747b14b5d",
+    "recipe-dependencies.csv": "d7f18f4a13fe8964b4ad5b9d282062dee2629203c6046e1a94dc245239c38c69",
+    "shared-gates.json": "0a8715454b0b64822362e6aa3fc367c1a6e870f23ab87bed36ab70b2896e3b3d",
+    "sources.json": "750c89cc4dd2f62fb28718bfbdc00cd0b4b03fa007165117e256a520d9a5a3da"
+  },
+  "closedResearchOnly": true,
+  "ownerIntegrationRequired": true,
+  "otherBranchWrites": false
+}
