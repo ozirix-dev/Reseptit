@@ -176,6 +176,7 @@ const report = {
   results,
   gkOnlyVariants,
   versionCoverage,
+  coverageViews:{originalRecipe:{total:versionCoverage.total,numeric:versionCoverage.originalNumeric,missing:versionCoverage.total-versionCoverage.originalNumeric},atLeastOneExactVersion:{total:versionCoverage.total,numeric:versionCoverage.numericRecipes,missing:versionCoverage.missing,additionalApprovedVersions:gkOnlyVariants.length}},
   summary: {
     recipes: results.length,
     calculated: results.filter((result) => result.status === "CALCULATED").length,

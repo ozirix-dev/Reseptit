@@ -1,6 +1,6 @@
 # Operaatio 149 V2: hyväksyttyjen GK-versioiden integraatio
 
-**PR #183 on Draft. Menetelmä ja 16 täsmällistä versiota on hyväksytty integraation pohjaksi. Ei Ready-, merge- tai deploy-valtuutusta.**
+**PR #183 on Draft. CONDITIONAL GO koskee vain16 jo hyväksytyn täsmällisen version integraatiota.14 uutta ehdotusta odottavat erillistä hyväksyntää. Ei Ready-, merge- tai deploy-valtuutusta.**
 
 ## Nykytila
 
@@ -52,13 +52,30 @@ Seuraava työjärjestys on: tarkka valmistus- ja tuoterajaus, natiivi saatava hi
 
 Lähteiden uudelleenkäytön ensimmäinen uusi tulos on `additional-proposal.json`: kahvijogurtti **GK ≈ 10,92/annos**, LOW, erillinen hyväksymätön ehdotus. Kondensoidulle maidolle löytyi nimetty Table1/936-havainto (GI61), banaanille Table1/1088 (GI47); makeutettua maitoa ei mallinneta makeuttamattoman maitotuotteen koodilla30. Jogurtin30 on erikseen arvioitava nykyisen koodauksen sovellus. Kahvin0,3g/annos on dokumentoitu A-poisjättö. Uusi ehdotus ei ole sivustoimportissa eikä mukana172:ssa. PDF-sivujen63 ja73 rivikohdistus tarkistettiin kuvasta; SEM ei muodosta reseptin vaihteluväliä.
 
-Kikherneletun Cheela-havainto on sovitettu kahteen erikseen ehdotettuun, kokonaisista kikherneistä jauhettuun versioon. Ne eivät ole kaupallisen kuoritun besanin hyväksyntä eivätkä vielä hyväksyttyjä julkaisunumeroita. Lajit, fermentointi ja valmistus on rajattu lähdepalautuksen katselmoinnissa. Suljettu valmisruoka-/komponenttipilotti ja kaksi uutta ainesosareitin sovellusta lisäävät8 laskentaehdotusta: hyväksytyssä integraatiossa16; erillisiä uusia ehdotuksia14, yhteensä30 eri reseptin ehdotusta. Laskentaehdotusten määrä ei ole julkaisuvalmiiden tai hyväksyttyjen lähdesovellusten määrä. Uudet14 tarvitsevat oman koko erän sisältö- ja menetelmäkatselmointinsa. Katso [viiden version lähdepalautus](recovery-review.md); aikaisempi kahvijogurtti on erillinen kuudes ehdotus.
+Kikherneletun Cheela-havainto on sovitettu kahteen erikseen ehdotettuun, kokonaisista kikherneistä jauhettuun versioon. Ne eivät ole kaupallisen kuoritun besanin hyväksyntä eivätkä vielä hyväksyttyjä julkaisunumeroita. Lajit, fermentointi ja valmistus on rajattu lähdepalautuksen katselmoinnissa. Suljettu valmisruoka-/komponenttipilotti ja kaksi uutta ainesosareitin sovellusta lisäävät8 laskentaehdotusta: hyväksytyssä integraatiossa16; erillisiä uusia ehdotuksia14, yhteensä30 eri reseptin ehdotusta. Laskentaehdotusten määrä ei ole julkaisuvalmiiden tai hyväksyttyjen lähdesovellusten määrä. [Lähdevastaavuuden päätösmatriisi](source-match-matrix.md) pitää6 valmisruoka-/komponenttisovellusta lähde-HOLDissa ja8 muuta ehdotusta erilliseen katselmointiin odottamassa; yhtäkään14:stä ei integroida. Uudet14 tarvitsevat oman koko erän sisältö- ja menetelmäkatselmointinsa. Katso [viiden version lähdepalautus](recovery-review.md); aikaisempi kahvijogurtti on erillinen kuudes ehdotus.
 
 ## Uusi valmistetun ruoan B-pilotti
 
 [30 ehdotuksen koonti ja14 uuden version katselmointi](prepared-route-review.md) tunnistaa mitatut vertailuruoat, dokumentoi olennaiset erot ja laskee GK:n version omasta annoskohtaisesta saatavastaCHO:sta. Koko ruoan GI ja valmistetun komponentin GI pidetään erillään.900g kypsää riisiä on erillinen punnittu ehdotus, ei oletettu300g kuivan riisin saanto. Kaksi kypsän riisin koostumusta ovat vaihtoehtoja; näyttö30–45 ei kata lähderuoan tuntematonta GI-vastaavuusvirhettä. IFCT:n Table6 currylehtikenttä3,66 erotetaan Table1:n erotuslaskennasta4,51.
 
-Kahdeksan uutta laskentaehdotusta: Chettinad1,42; kaakao-kookos-chia1,59; biryani30,60–44,94; baozi31,56; Margherita59,16; roti jala19,62; upma27,63; taatelipuuro21,64. Kaikki ovat hyväksymättömiä LOW-malleja. Kuusi käyttää valmistetun ruoan/osan GI-vertailua; sovellukset ja erityisesti vanhojen potilaskokeiden siirrot voivat vielä päätyä HOLDiin. Erän laskenta ja lähde-/syötehashit on lukittu `proposal-batch.json`:iin. Tuotanto156 ja nykyinen ehdokas172 säilyvät; kaikkien14 hyväksyntä ja myöhempi onnistunut integraatio mahdollistaisivat186/326:n.
+Kahdeksan uutta laskentaehdotusta: Chettinad1,42; kaakao-kookos-chia1,59; biryani30,60–44,94; baozi31,56; Margherita59,16; roti jala19,62; upma27,63; taatelipuuro21,64. Kaikki ovat hyväksymättömiä LOW-malleja. Kuusi käyttää valmistetun ruoan/osan GI-vertailua; nämä kuusi ovat lähdevastaavuuden päätösmatriisissa HOLDissa. Erän laskenta ja lähde-/syötehashit on lukittu `proposal-batch.json`:iin. Tuotanto156 ja nykyinen ehdokas172 säilyvät; kaikkien14 hyväksyntä ja myöhempi onnistunut integraatio mahdollistaisivat186/326:n.
+
+## Rajattu julkaisukatselmoinnin viimeistely
+
+- Pienet alle1:n pisteet näytetään muodossa **laskettu osuus alle1**, ei0,03:n tai0,07:n näennäisellä tarkkuudella. Taustalaskelmat ja hyväksyntähashit eivät muutu. Positiivinen poisjättö näkyy heti arvon alla,ylöspäin yhteen desimaaliin pyöristettynä: mutakakku ja keksit enintään1,4gCHO/annos. Teksti kertoo,että pois jätetty osuus voi kasvattaa kokonais-GK:ta.
+- Alkuperäisohjeiden kattavuus on **156/326 (47,85%)**, puuttuvia170. Vähintään yhden täsmällisen version ehdokaskattavuus on **172/326 (52,76%)**, puuttuvia154. Raportin `coverageViews` ja käyttöliittymä erottavat nämä näkymät.16 erillistä versiota eivät muuta alkuperäisohjeiden tuloksia.
+- Alkuperäisen ohjeen ravintoarvopaneeli nimetään erikseen ja sen yhteydessä kerrotaan näkyvästi,ettei se ole GK-only-version makropaketti. Erottelu on FI/EN/SV/TH-kielillä. Arvoja,evidenssiä tai pidätyksiä ei siirretä versioiden välillä.
+-14 ehdotusta pysyvät lähde-/sisältökatselmointia odottavina.186/326 (57,06%) on vain kaikkien14:n mahdollisen myöhemmän hyväksynnän ja onnistuneen integraation ehdollinen ylätilanne,ei nykyinen ehdokas tai tuotantoluku. Kuusi lähde-HOLDia estää tämän olettamisen valmiiksi eräksi.30 käyttökelpoisen julkaisuehdokkaan tavoitetta ei merkitä valmiiksi pelkän laskennan perusteella.
+
+## PR #182:n vaikutus ennen julkaisua
+
+Tarkistettu main on `4a804757d5f9732938928dcba8f79ea0674ad98c`. [PR #182](https://github.com/ozirix-dev/Reseptit/pull/182),HEAD `924a827b515f4d4e27d70389837e22f904d38c1f`,on erillinen avoin Draft. Sen kahdeksalla muutostiedostolla ei ole mekaanista päällekkäisyyttä tämän PR:n muutostiedostojen kanssa.
+
+**Semanttinen riippuvuus on silti todellinen.** Hyväksytyn `composition-sources.json`:n erytritolitietue on sidottu koko `docs/nutrition/food-records.json`:n hashiin `2f8ff76b97848294c28195bb92c6d202e9754168ddb169d30ee5e8610d2c2b9b`. PR #182 muuttaisi tiedoston hashiksi `361a945c3d6702ec64529dff267f8cd849ba0a8a14fd42ee6798d189a619dcd3`. Gitin täsmällisistä commit-objekteista varmennettiin,että Foodin-erytritolitietue säilyy identtisenä; muuttuvat vain kolme AFCD-hiilihydraattiarvoa. Nykyinen koko tiedoston sidonta pysäyttäisi silti GK149-validoinnin. Sitä ei ohiteta tai kirjoiteta hyväksytyn lähdepaketin päälle.
+
+PR #182:n korjaus muuttaisi myös persikkakulhon4,08→3,97 sekä pidossa olevan pellavapuuron osalaskentaa; numeerinen reseptimäärä pysyisi156:ssa. Siksi tämän PR:n nykyinen326 alkuperäistulosobjektin identtisyysväite ei sellaisenaan soveltuisi uuteen mainiin. Tarvitaan rajattu lähdesidonnan päätös ja kahden oikeutetun lähdekorjauksen erillinen regressiopohja,ei yleistä regressiopoikkeusta.
+
+**Julkaisuehto:** tarkista main ja PR #182 uudelleen ennen PR #183:n lopullista julkaisupäätöstä. Jos #182 yhdistetään,älä käytä tämän HEADin CI:tä tai vanhaa lähdesidontaa automaattisesti muuttuneelle mainille. Ratkaise sidonta ja tarkista muuttuneen HEADin tarpeelliset portit. Tässä ajossa ei yhdistetä tai muuteta kumpaakaan PR:ää tämän riippuvuuden vuoksi,eikä käynnistetä ylimääräistä Actions-ajoa.
 
 ## Tarkistusnäyttö ja rajaukset
 

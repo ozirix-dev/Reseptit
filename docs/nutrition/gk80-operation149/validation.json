@@ -16,21 +16,40 @@
     "preparedRouteRegressions": "PASS;31 targeted tests: original pilot11,integration7,recovery5,prepared8;0 failures. Includes14-input sealed review packet and all326 original result fingerprints.",
     "preparedRouteTypeScript": "PASS;npx tsc --noEmit",
     "preparedRouteMarkdown": "PASS;906 files;git diff --check PASS",
-    "preparedRouteTestCorrection": "Two manually transcribed expected test values corrected after independent ingredient Decimal arithmetic:baozi31.555290,upma27.630005. No recipe/source values changed to satisfy them."
+    "preparedRouteTestCorrection": "Two manually transcribed expected test values corrected after independent ingredient Decimal arithmetic:baozi31.555290,upma27.630005. No recipe/source values changed to satisfy them.",
+    "releaseFinish": "PASS;existing targeted tests31,static-output21,total52;0 failures. TypeScript and721-route build PASS. Markdown907 files PASS.",
+    "releaseFinishBrowser": "PASS;Brave31 recipe-locale pages+4 method pages;16 approved versions,0 pending activated. Tiny partial values and positive omissions,original macro labels,keyboard,servings,320/390/1280px;0 JS errors. Screenshots inspected.",
+    "unchangedBackground": "PASS;all326 original result fingerprints,parent recipe/macro sources,the six approved files and14-proposal source packet remain unchanged."
   },
-  "ci": "Latest preceding HEAD792e7dc: CI41455792873 PASS. New prepared-route commit requires its own exact-HEAD normal PR CI; no manual rerun.",
+  "ci": "Read exact final HEAD Checks. CI41466160221 PASS at e0e761a does not validate subsequent UI/report finish. One normal final push; no manual Actions rerun.",
   "production": "156/326 unchanged",
-  "candidate": "172/326 for at least one exact version, including16 approved GK-only versions",
+  "candidate": "172/326 at least one exact version",
   "pendingAdditionalProposal": 14,
   "pendingCountedInCoverage": false,
   "targetProposals": 30,
   "actualProposals": 30,
-  "targetMet": true,
+  "targetMet": false,
   "targetCoverage": 261,
   "gapAfterCandidate": 89,
   "readyAuthorized": false,
   "mergeAuthorized": false,
   "deployAuthorized": false,
-  "targetMeaning": "30 distinct arithmetic proposals reached; not30 accepted source matches or publication integrations",
-  "hypotheticalCoverageAfterAllPendingAcceptedAndIntegrated": 186
+  "targetMeaning": "30 useful publication candidates not proven:16 approved/integrated,14 pending;6 source HOLDs. Arithmetic proposal count alone is not the target.",
+  "hypotheticalCoverageAfterAllPendingAcceptedAndIntegrated": 186,
+  "integratedApprovedVersions": 16,
+  "pendingSourceReview": {
+    "conditionalReview": 8,
+    "sourceHold": 6,
+    "approved": 0
+  },
+  "originalRecipeCoverage": "156/326;170 missing",
+  "pr182Impact": {
+    "head": "924a827b515f4d4e27d70389837e22f904d38c1f",
+    "state": "OPEN_DRAFT_UNMERGED",
+    "mechanicalOverlap": [],
+    "wholeFileBindingWouldFail": true,
+    "erythritolNativeRowUnchanged": true,
+    "originalResultsRequiringSeparateRebaseline": 2,
+    "automaticAcceptance": false
+  }
 }

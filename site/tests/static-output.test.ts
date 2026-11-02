@@ -1,5 +1,5 @@
 import {gkOnlyVariants} from '../src/generated/gk-only-variants.generated';
-import {gkOnlyUi,gkOnlyValue} from '../src/features/recipes/GkOnlyVariantPanel';
+import {gkOnlyUi,gkOnlyValue,gkScopeUi} from '../src/features/recipes/GkOnlyVariantPanel';
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
@@ -488,14 +488,14 @@ test('approved GK-only versions are explicit on every existing locale page and c
   for(const recipe of siteContent.recipes.filter(r=>r.recipeId===variant.recipeId)){
    const html=await readFile(path.join(dist,recipe.routePath.slice(1),'index.html'),'utf8'),t=gkOnlyUi[recipe.locale];
    assert.ok(html.includes(`data-gk-version="${variant.versionId}"`),recipe.routePath);
-   assert.ok(html.includes(t.scope));assert.ok(html.includes(t.low));assert.ok(html.includes(gkOnlyValue(variant,recipe.locale)));
+   assert.ok(html.includes(t.scope));assert.ok(html.includes(t.low));assert.ok(html.includes(gkScopeUi[recipe.locale].macroNotice));assert.ok(html.includes('data-nutrition-scope="ORIGINAL_RECIPE"'));assert.ok(html.includes('data-macro-separation="gk-only"'));assert.ok(html.includes(gkOnlyValue(variant,recipe.locale)));
    assert.ok(!html.includes('class="recipe-glycemic-load"'),'original unsupported version is not relabeled');
    if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));pages++;
   }
  }
  assert.ok(pages>=16);
  for(const p of ['glykeeminen-kuorma','en/glycemic-load','sv/glykemisk-belastning','th/glycemic-load']){
-  const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.includes('<strong>172</strong>'));assert.ok(html.includes('<strong>154</strong>'));assert.ok(html.includes('data-gk-coverage="version-aware"'));
+  const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.includes('<strong>172</strong>'));assert.ok(html.includes('<strong>154</strong>'));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes('<strong>156</strong>'));assert.ok(html.includes('<strong>170</strong>'));
   for(const v of gkOnlyVariants)assert.ok(html.includes(`data-gk-version="${v.versionId}"`));
  }
 });
