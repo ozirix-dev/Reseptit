@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "repository": "ozirix-dev/Reseptit",
+  "role": "Codex2 / Codex Tutkimus",
+  "startingHead": "2a626c560873c0d414508522e1a1173f244f9d1c",
+  "ownedBranch": "codex/afcd-polyol-03-gk80-handoff",
+  "activation": false,
+  "ownerApproval": false,
+  "publicationAuthorized": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "inputSha256": {
+    "intialainen-besan-chilla": "5c0942255538ff47e866006ff3fb40d44bd25abe5c30496c69cdcee8adccd01a",
+    "intialainen-pinaatti-paneer-chilla": "cdfff763f373d92f5142ac772b52068a2e453ebd56bcff5c29b507422c6a8d16",
+    "intialainen-mannasuurimoupma": "365f6eaff17867ea8fc415dd57af8d2ef91176e2c80239dfbc0d69ac2dc2d1cc"
+  },
+  "filesLfSha256": {
+    "audit-fallback.py": "f7d0221bde7529e09023ea34d25f7adb38da4c32837568c5520dc7548c0fb549",
+    "cases.json": "fd2d6020b05e5565cbf242d46898ebf8ebb651355d76f408530df72c7457b95e",
+    "decimal-results.json": "c1a988d7bd66eb71d45298caa7c928327e6787698c316379ac644c58b495650e",
+    "display-proposals.json": "c5ec6a14ee23043d970c1e0596012c0d08d9114a18086197b959151bfe76d906",
+    "engine-results.json": "b1a766d7e0e11c59ddabad43eea41703c4447ba5c62be8d4f1acd3d55c7774c4",
+    "evaluate-fallback.mts": "3ff43202b293d593e47edc83acdbacff64a3231abbc9ffebdf9b532e73e8e7d5",
+    "method-impact.csv": "0e490c1c32d0bfbb765e9351d78d682cb2f9b33ba6adb0a8a4efc299ddfde283",
+    "recipe-dependencies.csv": "f8b89f6247c38c5237d53775edb2c1eaea2bb77e2db4727b7bd7f97f3da9c937",
+    "source-probe-decisions.csv": "4360d196e0c2d1697f5de6761303d3cb7e9b90bc99d902dbe0fb7e91a80cd2b2",
+    "sources.json": "c4e2b8dacc069de7aeb5312018af87d653b9b2deee44ee68e12aeb0528e17044",
+    "strategy-comparison.csv": "a5ddd4c741d6d2fad4164d58de6746c21c00a717f7cc727de4e96198c7bb8bde"
+  },
+  "reportLfSha256": "1fddad043d1c59e7bb69faad456cfee13d797e41b8603cf1a59521e32befbc44",
+  "selectedMethods": [
+    "FOOD_PREPARATION_ENTITY_LOOKUP",
+    "PRIMARY_CITATION_AND_PDF_RECIPE_RECOVERY",
+    "NATIVE_CHO_SOURCE_SCENARIO_ENVELOPE"
+  ],
+  "displayRoundingStepApprovedByUser": 1,
+  "newArithmeticRecipeIds": 0,
+  "reviewableExactBVersions": 3,
+  "oldPreparedFoodHoldsWithNewMatchedVersion": 1,
+  "newOwnerApproved": 0,
+  "newPublishedByThisTask": 0,
+  "publishedAtStart": 179,
+  "priorApprovedUnpublished": 4,
+  "conditionalOnlyAfterPriorApprovedReleased": 183,
+  "conditionalOnlyAfterTheseThreeSeparatelyAcceptedIntegratedReleased": 186,
+  "conditionalApprovedVersionCount": 30,
+  "remainingTo261AfterConditionalRelease": 75,
+  "externalCachePolicy": "Batra1994 PDF, Urooj2000 publisher PDF and existing Atkinson2021 Table1 PDF remain outside Git. Binary SHA256 in sources.json. GI-index selected web-read facts have rawSha null after HTTP403. IFCT source is reused through pinned previously admitted native observation, not re-researched.",
+  "reproduction": "evaluate-fallback.mts ROOT DATA CACHE EXTERNAL_OUT then audit-fallback.py with same arguments; installed tsx and Python; only external output."
+}

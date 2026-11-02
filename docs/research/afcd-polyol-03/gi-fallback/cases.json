@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "publicationAuthorized": false,
+  "cases": [
+    {
+      "recipeId": "intialainen-besan-chilla",
+      "level": "B",
+      "servings": 2,
+      "paths": {
+        "fi": "reseptit/aamupalat/intialainen-besan-chilla.md"
+      },
+      "recipeSha256": {
+        "fi": "287c9e88b59c37d1ce84bb0c9021b5bc328a285dfba85a8cbba5f8d45e887010"
+      },
+      "candidateIngredients": [
+        {
+          "name": "kokonaisesta kikherneestä jauhettu jauho",
+          "grams": 100,
+          "compositionId": "F002881",
+          "giId": "whole-cheela42-recovery",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Whole dried Cicer arietinum, ground without removing hull; no dehulled commercial besan. Native whole dry chickpea composition. GI42 applies to resulting unfermented thin pancake component, not raw flour."
+        },
+        {
+          "name": "vesi taikinaan",
+          "grams": 222.2,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "paistorasva",
+          "grams": 16.7,
+          "compositionId": "541",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "tomaatti chutneyyn",
+          "grams": 100,
+          "compositionId": "352",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "sipuli chutneyyn",
+          "grams": 70,
+          "compositionId": "335",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "tuore korianteri",
+          "grams": 6,
+          "compositionId": "F003192",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_SALT_TO_TASTE, not asserted0g salt."
+        }
+      ],
+      "preparationDecision": "Whole unhulled dry Cicer100g ground completely, no soaking/dehulling/fermentation. NEW scaled batter water222.2ml (instead of original100ml), represented by its own Fineli922 water100g/dl; NEW weighed oil16.7g instead of unspecified-mass1tbsp. Rest10min, pan-cook thin cheela; no oven or batter fermentation. NEW weighed tomato100g and onion70g make complete chutney, original6g fresh coriander retained; all chutney served. Original100g flour and6g coriander and two servings preserved. Source42 applies to prepared flour/water/oil component, not raw flour. Old-dose/source-method limitations remain.",
+      "requiredDecisions": [
+        "EXACT_WHOLE_UNHULLED_CICER_AND_THIN_UNFERMENTED_PREPARATION",
+        "OLD_HUMAN_STUDY42_REFERENCE_ADMISSION_WITH_DOSE_AND_METHOD_LIMITS",
+        "EXACT_NEW_WEIGHED_VERSION_AND_ALL_SERVING_COMPONENTS",
+        "TWO_NATIVE_DRY_WHOLE_CHICKPEA_COMPOSITION_PROXIES",
+        "NEW_NAMED_SOURCE_APPLICATIONS_WITHIN_EXISTING_B_CONTRACT",
+        "GK_ONLY_MACRO_VERSION_LANGUAGE_AND_OWNER_INTEGRATION"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "previousInputSha256": "afc7beb15b482d6b53c84e7d4c58bee88c007a4232a6984918b0320e6f9ed213",
+      "originalIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kikhernejauho"
+        },
+        {
+          "amount": 100,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "tomaatti"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli"
+        },
+        {
+          "amount": 6,
+          "unit": "g",
+          "item": "tuoretta korianteria"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "publicationAuthorized": false,
+      "originalIndexByCandidate": [
+        0,
+        1,
+        5,
+        2,
+        3,
+        4,
+        6
+      ],
+      "preparedUnits": [
+        {
+          "id": "cheela",
+          "kind": "WHOLE_CICER_UNFERMENTED_PANCAKE",
+          "ingredientIndices": [
+            0,
+            1,
+            2
+          ],
+          "giId": "whole-cheela42-recovery",
+          "unhulled": true,
+          "allGroundFlourRetained": true,
+          "fermented": false,
+          "cookedInPan": true
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "AFCD_WHOLE_DRY_CHICKPEA",
+          "replaceCompositionByIngredientIndex": {}
+        },
+        {
+          "id": "FINELI_WHOLE_DRY_CHICKPEA",
+          "replaceCompositionByIngredientIndex": {
+            "0": "31218"
+          }
+        }
+      ],
+      "inputSha256": "5c0942255538ff47e866006ff3fb40d44bd25abe5c30496c69cdcee8adccd01a"
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "level": "B",
+      "servings": 2,
+      "paths": {
+        "fi": "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md"
+      },
+      "recipeSha256": {
+        "fi": "98e47d0383a3b5ce559858d69fad27f7e3b25d02a6182b91bec803ccbc0e8145"
+      },
+      "candidateIngredients": [
+        {
+          "name": "kokonaisesta kikherneestä jauhettu jauho",
+          "grams": 100,
+          "compositionId": "F002881",
+          "giId": "whole-cheela42-recovery",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Whole dried Cicer arietinum, ground without removing hull; no dehulled commercial besan. Native whole dry chickpea composition. GI42 applies to resulting unfermented thin pancake component, not raw flour."
+        },
+        {
+          "name": "vesi taikinaan",
+          "grams": 222.2,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "paistorasva",
+          "grams": 16.7,
+          "compositionId": "541",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "tuore pinaatti",
+          "grams": 50,
+          "compositionId": "33456",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "paneer",
+          "grams": 100,
+          "compositionId": "650",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "juustokumina",
+          "grams": 2,
+          "compositionId": "F003327",
+          "giId": "trace50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_SALT_TO_TASTE, not asserted0g salt."
+        },
+        {
+          "name": "tuore korianteri koko chutneyyn",
+          "grams": 15,
+          "compositionId": "F003192",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW weighed15g fresh coriander defines original unquantified coriander-chutney serving. All used."
+        },
+        {
+          "name": "laimentamaton sitruunatäysmehu chutneyyn",
+          "grams": 10,
+          "compositionId": "11557",
+          "giId": "lemon50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW weighed10g unsweetened undiluted lemon juice in full coriander chutney; native named lemon-juice binding already in op142-lowcho50-r4."
+        },
+        {
+          "name": "kuorittujen sitruunalohkojen syötävä osa",
+          "grams": 20,
+          "compositionId": "11048",
+          "giId": "lemon50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW weighed20g edible peeled lemon serving defines original unquantified wedge. Entire edible portion counted, not assumed juice yield. Explicit native lemon binding already in r4; not all fruit50."
+        },
+        {
+          "name": "vesi chutneyyn",
+          "grams": 10,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW weighed10g water for chutney; all used."
+        }
+      ],
+      "preparationDecision": "Whole unhulled dry Cicer100g ground completely, no soaking/dehulling/fermentation; scaled batter water222.2ml and NEW weighed oil16.7g; thin pan-cooked cheela after10min rest, not oven. Original100g paneer retained; NEW weighed spinach50g defines original1piece, and cumin2g defines original1tsp, no equivalence claim. All filling served. INCLUDE original serving suggestions: chutney from15g fresh coriander,10g unsweetened lemon juice,10g water and salt-to-taste; plus20g weighed edible peeled lemon. All chutney and edible lemon counted. No unlisted sugar/oil. Original flour100g,paneer100g and two servings unchanged. Source42 prepared-component analogy LOW; all positive B ingredients have named GI or existing named coding.",
+      "requiredDecisions": [
+        "EXACT_WHOLE_UNHULLED_CICER_AND_THIN_UNFERMENTED_PREPARATION",
+        "OLD_HUMAN_STUDY42_REFERENCE_ADMISSION_WITH_DOSE_AND_METHOD_LIMITS",
+        "EXACT_NEW_WEIGHED_VERSION_AND_ALL_SERVING_COMPONENTS",
+        "TWO_NATIVE_DRY_WHOLE_CHICKPEA_COMPOSITION_PROXIES",
+        "NEW_NAMED_SOURCE_APPLICATIONS_WITHIN_EXISTING_B_CONTRACT",
+        "GK_ONLY_MACRO_VERSION_LANGUAGE_AND_OWNER_INTEGRATION"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "previousInputSha256": "6c0b1890e16a526a75f5e8ef7b2729de3f7ef370c17b197dacb3990ece6f0710",
+      "originalIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "kikhernejauho"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "pinaatti"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "paneer"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "juustokumina"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "publicationAuthorized": false,
+      "originalIndexByCandidate": [
+        0,
+        null,
+        4,
+        1,
+        2,
+        3,
+        5,
+        null,
+        null,
+        null,
+        null
+      ],
+      "preparedUnits": [
+        {
+          "id": "cheela",
+          "kind": "WHOLE_CICER_UNFERMENTED_PANCAKE",
+          "ingredientIndices": [
+            0,
+            1,
+            2
+          ],
+          "giId": "whole-cheela42-recovery",
+          "unhulled": true,
+          "allGroundFlourRetained": true,
+          "fermented": false,
+          "cookedInPan": true
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "AFCD_WHOLE_DRY_CHICKPEA",
+          "replaceCompositionByIngredientIndex": {}
+        },
+        {
+          "id": "FINELI_WHOLE_DRY_CHICKPEA",
+          "replaceCompositionByIngredientIndex": {
+            "0": "31218"
+          }
+        }
+      ],
+      "inputSha256": "cdfff763f373d92f5142ac772b52068a2e453ebd56bcff5c29b507422c6a8d16"
+    },
+    {
+      "recipeId": "intialainen-mannasuurimoupma",
+      "level": "B",
+      "servings": 2,
+      "paths": {
+        "fi": "reseptit/aamupalat/intialainen-mannasuurimoupma.md"
+      },
+      "recipeSha256": {
+        "fi": "edc2d2353036c6e400361951048a4be69d4943d9ad78a40058de0458015fd562"
+      },
+      "originalIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "mannasuurimo"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "herne"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "porkkana"
+        },
+        {
+          "amount": 5,
+          "unit": "g",
+          "item": "tuoreita curry-lehtiä"
+        },
+        {
+          "amount": 300,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "candidateIngredients": [
+        {
+          "name": "mannasuurimo",
+          "grams": 100,
+          "compositionId": "112",
+          "giId": "upittu69",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original100g dry semolina; native source point; GI belongs to full prepared base."
+        },
+        {
+          "name": "vihreä pakasteherne",
+          "grams": 150,
+          "compositionId": "34229",
+          "giId": "frozen-pea42",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original150g defined plain frozen green pea, weighed frozen before heating; Fineli frozen composition proxy, source microwave-prepared pea42."
+        },
+        {
+          "name": "porkkana kuorimatta",
+          "grams": 100,
+          "compositionId": "300",
+          "giId": "boiled-carrot32",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW weighed100g edible unpeeled carrot defines original1piece; native raw inputCHO retained through boiling, all liquid served; named boiled-carrot GI32."
+        },
+        {
+          "name": "tuore currylehti",
+          "grams": 5,
+          "compositionId": "IFCT-G010",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original5g fresh leaves; published IFCT Table6 native analytical availableCHO3.66, not by-difference4.51; same prior source family, new recipe application."
+        },
+        {
+          "name": "vesi yhteensä",
+          "grams": 300,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original300ml water via Fineli922 own100g/dl, split192.3+107.7ml; all retained cooking liquids except normal evaporation, no carbohydrate loss inferred."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_SALT_TO_TASTE, not asserted0g salt."
+        },
+        {
+          "name": "uuden version sipuli",
+          "grams": 30.8,
+          "compositionId": "335",
+          "giId": "upittu69",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW weighed30.8g onion joins prepared semolina component; not separately given vegetableGI or double-counted."
+        },
+        {
+          "name": "uuden version rypsiöljy",
+          "grams": 12.3,
+          "compositionId": "541",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW weighed12.3g oil follows named source component ratio; new content, not inferred original tablespoon conversion."
+        },
+        {
+          "name": "maustamaton jogurtti tarjoiluun",
+          "grams": 100,
+          "compositionId": "620",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW weighed100g unsweetened plain3.9% yogurt defines original yogurt serving option; complete amount included, not omitted."
+        }
+      ],
+      "originalIndexByCandidate": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null
+      ],
+      "preparedUnits": [
+        {
+          "id": "upittu-base",
+          "kind": "ROASTED_SEMOLINA_ONION_OIL_COOKED_WATER",
+          "ingredientIndices": [
+            0,
+            6,
+            7
+          ],
+          "giId": "upittu69",
+          "roastMin": 2,
+          "componentWaterMl": 192.3,
+          "vegetableCookingWaterMl": 107.7,
+          "unpublishedYieldConversionUsed": false
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "FINELI_SEMOLINA",
+          "replaceCompositionByIngredientIndex": {}
+        },
+        {
+          "id": "AFCD_SEMOLINA",
+          "replaceCompositionByIngredientIndex": {
+            "0": "F008222"
+          }
+        }
+      ],
+      "preparationDecision": "Retain original semolina100g,peas150g,fresh curry leaves5g,water300ml and two servings. Specify original peas as plain frozen green peas (McCain Australian named comparator),150g weighed frozen before microwave heating. NEW weighed100g edible washed unpeeled carrot defines original1piece; boil until tender, retain all cooking liquid. NEW onion30.8g and neutral rapeseed oil12.3g define separately accepted recipe version. Roast semolina2min; cook semolina/onion/oil with192.3ml of original water, approximating source65:20:8:125 ratio. Remaining107.7ml original water cooks vegetables; fold all cooked vegetables and liquid into base, no discard or guessed loss. Curry leaves all retained. Choose original permitted plain-yogurt serving option and specify NEW100g unsweetened plain3.9% yogurt for complete batch; coconut chutney is not this selected serving variant. Source69 applies to prepared semolina/onion/oil component only. Peas42 and boiled carrot32 separately covered; not whole-meal69. No global mixed-meal adjustment.",
+      "requiredDecisions": [
+        "NEW_UPITTU69_HEALTHY_SOURCE_AND_PREPARED_COMPONENT_ADMISSION",
+        "EXACT_SOURCE_RATIO_NEW_ONION30_8G_AND_OIL12_3G_CONTENT",
+        "FROZEN_PEA150G_CARROT100G_AND_ORIGINAL_WATER300ML_RETAINED",
+        "EXACT_YOGURT_SERVING100G_AND_ALL_POSITIVE_COMPONENTS",
+        "TWO_NATIVE_SEMOLINA_CHO_POINT_SCENARIOS",
+        "IFCT_G010_NEW_NAMED_LEAF_APPLICATION_AND_SOURCE_FAMILY",
+        "GK_ONLY_MACRO_VERSION_LANGUAGE_AND_OWNER_INTEGRATION"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "publicationAuthorized": false,
+      "confidence": "LOW",
+      "inputSha256": "365f6eaff17867ea8fc415dd57af8d2ef91176e2c80239dfbc0d69ac2dc2d1cc"
+    }
+  ],
+  "displayPolicy": {
+    "ownerPreference": "Explicit user answer call_674424a4a82248e18e9349e22bfebf84: Kokonaislukuväli, esimerkiksi9–12",
+    "roundingStep": 1,
+    "lower": "floor(min source-scenario GK)",
+    "upper": "ceil(max source-scenario GK)",
+    "label": "GK-arvio {min}–{max} · mallinnettu",
+    "meaning": "Named source-scenario envelope, not confidence/physiological/person-specific interval",
+    "activation": false
+  }
+}

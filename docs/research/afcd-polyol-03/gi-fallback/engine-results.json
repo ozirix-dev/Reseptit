@@ -1,0 +1,652 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "results": [
+    {
+      "recipeId": "intialainen-besan-chilla",
+      "inputSha256": "5c0942255538ff47e866006ff3fb40d44bd25abe5c30496c69cdcee8adccd01a",
+      "profile": "EXISTING_B_NAMED_PREPARED_COMPONENT_AND_NATIVE_CHO_SCENARIOS",
+      "currentStrictBArithmeticPass": true,
+      "sourceAdmission": "EXACT_NEW_SOURCE_APPLICATION_OWNER_REVIEW_REQUIRED",
+      "sourceScenarioEnvelope": {
+        "min": 9.469800000000001,
+        "max": 11.1288,
+        "isConfidenceInterval": false,
+        "isBiologicalBound": false,
+        "analogyErrorQuantified": false
+      },
+      "displayProposal": {
+        "min": 9,
+        "max": 12,
+        "label": "GK-arvio 9–12 · mallinnettu",
+        "isSourceScenarioEnvelope": true,
+        "activation": false
+      },
+      "omittedCho": 0,
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "scenarios": [
+        {
+          "scenarioId": "AFCD_WHOLE_DRY_CHICKPEA",
+          "unrounded": 9.469800000000001,
+          "point": 9.47,
+          "omittedCho": 0,
+          "traceCodedCho": 0,
+          "terms": [
+            {
+              "name": "kokonaisesta kikherneestä jauhettu jauho",
+              "compositionId": "F002881",
+              "grams": 100,
+              "choPerServing": 19.25,
+              "giId": "whole-cheela42-recovery",
+              "gk": 8.085
+            },
+            {
+              "name": "vesi taikinaan",
+              "compositionId": "922",
+              "grams": 222.2,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "paistorasva",
+              "compositionId": "541",
+              "grams": 16.7,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "tomaatti chutneyyn",
+              "compositionId": "352",
+              "grams": 100,
+              "choPerServing": 1.725,
+              "giId": "veg40",
+              "gk": 0.69
+            },
+            {
+              "name": "sipuli chutneyyn",
+              "compositionId": "335",
+              "grams": 70,
+              "choPerServing": 1.68,
+              "giId": "veg40",
+              "gk": 0.672
+            },
+            {
+              "name": "tuore korianteri",
+              "compositionId": "F003192",
+              "grams": 6,
+              "choPerServing": 0.056999999999999995,
+              "giId": "veg40",
+              "gk": 0.022799999999999997
+            },
+            {
+              "name": "suola",
+              "compositionId": "30",
+              "grams": 0,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            }
+          ],
+          "assumptionSensitivityOnly": {
+            "gi": [
+              0,
+              150
+            ],
+            "min": 8.085,
+            "max": 13.278000000000002,
+            "isSourceInterval": false,
+            "isBiologicalBound": false
+          }
+        },
+        {
+          "scenarioId": "FINELI_WHOLE_DRY_CHICKPEA",
+          "unrounded": 11.1288,
+          "point": 11.13,
+          "omittedCho": 0,
+          "traceCodedCho": 0,
+          "terms": [
+            {
+              "name": "kokonaisesta kikherneestä jauhettu jauho",
+              "compositionId": "31218",
+              "grams": 100,
+              "choPerServing": 23.2,
+              "giId": "whole-cheela42-recovery",
+              "gk": 9.744
+            },
+            {
+              "name": "vesi taikinaan",
+              "compositionId": "922",
+              "grams": 222.2,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "paistorasva",
+              "compositionId": "541",
+              "grams": 16.7,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "tomaatti chutneyyn",
+              "compositionId": "352",
+              "grams": 100,
+              "choPerServing": 1.725,
+              "giId": "veg40",
+              "gk": 0.69
+            },
+            {
+              "name": "sipuli chutneyyn",
+              "compositionId": "335",
+              "grams": 70,
+              "choPerServing": 1.68,
+              "giId": "veg40",
+              "gk": 0.672
+            },
+            {
+              "name": "tuore korianteri",
+              "compositionId": "F003192",
+              "grams": 6,
+              "choPerServing": 0.056999999999999995,
+              "giId": "veg40",
+              "gk": 0.022799999999999997
+            },
+            {
+              "name": "suola",
+              "compositionId": "30",
+              "grams": 0,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            }
+          ],
+          "assumptionSensitivityOnly": {
+            "gi": [
+              0,
+              150
+            ],
+            "min": 9.744,
+            "max": 14.937000000000001,
+            "isSourceInterval": false,
+            "isBiologicalBound": false
+          }
+        }
+      ]
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "inputSha256": "cdfff763f373d92f5142ac772b52068a2e453ebd56bcff5c29b507422c6a8d16",
+      "profile": "EXISTING_B_NAMED_PREPARED_COMPONENT_AND_NATIVE_CHO_SCENARIOS",
+      "currentStrictBArithmeticPass": true,
+      "sourceAdmission": "EXACT_NEW_SOURCE_APPLICATION_OWNER_REVIEW_REQUIRED",
+      "sourceScenarioEnvelope": {
+        "min": 9.1305,
+        "max": 10.789499999999999,
+        "isConfidenceInterval": false,
+        "isBiologicalBound": false,
+        "analogyErrorQuantified": false
+      },
+      "displayProposal": {
+        "min": 9,
+        "max": 11,
+        "label": "GK-arvio 9–11 · mallinnettu",
+        "isSourceScenarioEnvelope": true,
+        "activation": false
+      },
+      "omittedCho": 0,
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "scenarios": [
+        {
+          "scenarioId": "AFCD_WHOLE_DRY_CHICKPEA",
+          "unrounded": 9.1305,
+          "point": 9.13,
+          "omittedCho": 0,
+          "traceCodedCho": 0.337,
+          "terms": [
+            {
+              "name": "kokonaisesta kikherneestä jauhettu jauho",
+              "compositionId": "F002881",
+              "grams": 100,
+              "choPerServing": 19.25,
+              "giId": "whole-cheela42-recovery",
+              "gk": 8.085
+            },
+            {
+              "name": "vesi taikinaan",
+              "compositionId": "922",
+              "grams": 222.2,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "paistorasva",
+              "compositionId": "541",
+              "grams": 16.7,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "tuore pinaatti",
+              "compositionId": "33456",
+              "grams": 50,
+              "choPerServing": 0.0625,
+              "giId": "veg40",
+              "gk": 0.025
+            },
+            {
+              "name": "paneer",
+              "compositionId": "650",
+              "grams": 100,
+              "choPerServing": 2.15,
+              "giId": "dairy30",
+              "gk": 0.645
+            },
+            {
+              "name": "juustokumina",
+              "compositionId": "F003327",
+              "grams": 2,
+              "choPerServing": 0.337,
+              "giId": "trace50",
+              "gk": 0.1685
+            },
+            {
+              "name": "suola",
+              "compositionId": "30",
+              "grams": 0,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "tuore korianteri koko chutneyyn",
+              "compositionId": "F003192",
+              "grams": 15,
+              "choPerServing": 0.1425,
+              "giId": "veg40",
+              "gk": 0.056999999999999995
+            },
+            {
+              "name": "laimentamaton sitruunatäysmehu chutneyyn",
+              "compositionId": "11557",
+              "grams": 10,
+              "choPerServing": 0.08,
+              "giId": "lemon50",
+              "gk": 0.04
+            },
+            {
+              "name": "kuorittujen sitruunalohkojen syötävä osa",
+              "compositionId": "11048",
+              "grams": 20,
+              "choPerServing": 0.22,
+              "giId": "lemon50",
+              "gk": 0.11
+            },
+            {
+              "name": "vesi chutneyyn",
+              "compositionId": "922",
+              "grams": 10,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            }
+          ],
+          "assumptionSensitivityOnly": {
+            "gi": [
+              0,
+              150
+            ],
+            "min": 8.084999999999999,
+            "max": 12.573,
+            "isSourceInterval": false,
+            "isBiologicalBound": false
+          }
+        },
+        {
+          "scenarioId": "FINELI_WHOLE_DRY_CHICKPEA",
+          "unrounded": 10.789499999999999,
+          "point": 10.79,
+          "omittedCho": 0,
+          "traceCodedCho": 0.337,
+          "terms": [
+            {
+              "name": "kokonaisesta kikherneestä jauhettu jauho",
+              "compositionId": "31218",
+              "grams": 100,
+              "choPerServing": 23.2,
+              "giId": "whole-cheela42-recovery",
+              "gk": 9.744
+            },
+            {
+              "name": "vesi taikinaan",
+              "compositionId": "922",
+              "grams": 222.2,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "paistorasva",
+              "compositionId": "541",
+              "grams": 16.7,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "tuore pinaatti",
+              "compositionId": "33456",
+              "grams": 50,
+              "choPerServing": 0.0625,
+              "giId": "veg40",
+              "gk": 0.025
+            },
+            {
+              "name": "paneer",
+              "compositionId": "650",
+              "grams": 100,
+              "choPerServing": 2.15,
+              "giId": "dairy30",
+              "gk": 0.645
+            },
+            {
+              "name": "juustokumina",
+              "compositionId": "F003327",
+              "grams": 2,
+              "choPerServing": 0.337,
+              "giId": "trace50",
+              "gk": 0.1685
+            },
+            {
+              "name": "suola",
+              "compositionId": "30",
+              "grams": 0,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "tuore korianteri koko chutneyyn",
+              "compositionId": "F003192",
+              "grams": 15,
+              "choPerServing": 0.1425,
+              "giId": "veg40",
+              "gk": 0.056999999999999995
+            },
+            {
+              "name": "laimentamaton sitruunatäysmehu chutneyyn",
+              "compositionId": "11557",
+              "grams": 10,
+              "choPerServing": 0.08,
+              "giId": "lemon50",
+              "gk": 0.04
+            },
+            {
+              "name": "kuorittujen sitruunalohkojen syötävä osa",
+              "compositionId": "11048",
+              "grams": 20,
+              "choPerServing": 0.22,
+              "giId": "lemon50",
+              "gk": 0.11
+            },
+            {
+              "name": "vesi chutneyyn",
+              "compositionId": "922",
+              "grams": 10,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            }
+          ],
+          "assumptionSensitivityOnly": {
+            "gi": [
+              0,
+              150
+            ],
+            "min": 9.743999999999998,
+            "max": 14.232,
+            "isSourceInterval": false,
+            "isBiologicalBound": false
+          }
+        }
+      ]
+    },
+    {
+      "recipeId": "intialainen-mannasuurimoupma",
+      "inputSha256": "365f6eaff17867ea8fc415dd57af8d2ef91176e2c80239dfbc0d69ac2dc2d1cc",
+      "profile": "EXISTING_B_NAMED_PREPARED_COMPONENT_AND_NATIVE_CHO_SCENARIOS",
+      "currentStrictBArithmeticPass": true,
+      "sourceAdmission": "EXACT_NEW_SOURCE_APPLICATION_OWNER_REVIEW_REQUIRED",
+      "sourceScenarioEnvelope": {
+        "min": 26.146648000000006,
+        "max": 26.836648000000007,
+        "isConfidenceInterval": false,
+        "isBiologicalBound": false,
+        "analogyErrorQuantified": false
+      },
+      "displayProposal": {
+        "min": 26,
+        "max": 27,
+        "label": "GK-arvio 26–27 · mallinnettu",
+        "isSourceScenarioEnvelope": true,
+        "activation": false
+      },
+      "omittedCho": 0,
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "scenarios": [
+        {
+          "scenarioId": "FINELI_SEMOLINA",
+          "unrounded": 26.836648000000007,
+          "point": 26.84,
+          "omittedCho": 0,
+          "traceCodedCho": 0,
+          "terms": [
+            {
+              "name": "mannasuurimo",
+              "compositionId": "112",
+              "grams": 100,
+              "choPerServing": 31.8,
+              "giId": "upittu69",
+              "gk": 21.942000000000004
+            },
+            {
+              "name": "vihreä pakasteherne",
+              "compositionId": "34229",
+              "grams": 150,
+              "choPerServing": 7.02,
+              "giId": "frozen-pea42",
+              "gk": 2.9484
+            },
+            {
+              "name": "porkkana kuorimatta",
+              "compositionId": "300",
+              "grams": 100,
+              "choPerServing": 2.78,
+              "giId": "boiled-carrot32",
+              "gk": 0.8896
+            },
+            {
+              "name": "tuore currylehti",
+              "compositionId": "IFCT-G010",
+              "grams": 5,
+              "choPerServing": 0.0915,
+              "giId": "veg40",
+              "gk": 0.0366
+            },
+            {
+              "name": "vesi yhteensä",
+              "compositionId": "922",
+              "grams": 300,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "suola",
+              "compositionId": "30",
+              "grams": 0,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "uuden version sipuli",
+              "compositionId": "335",
+              "grams": 30.8,
+              "choPerServing": 0.7392,
+              "giId": "upittu69",
+              "gk": 0.510048
+            },
+            {
+              "name": "uuden version rypsiöljy",
+              "compositionId": "541",
+              "grams": 12.3,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "maustamaton jogurtti tarjoiluun",
+              "compositionId": "620",
+              "grams": 100,
+              "choPerServing": 1.7,
+              "giId": "dairy30",
+              "gk": 0.51
+            }
+          ],
+          "assumptionSensitivityOnly": {
+            "gi": [
+              0,
+              150
+            ],
+            "min": 26.290048000000006,
+            "max": 28.977298000000005,
+            "isSourceInterval": false,
+            "isBiologicalBound": false
+          }
+        },
+        {
+          "scenarioId": "AFCD_SEMOLINA",
+          "unrounded": 26.146648000000006,
+          "point": 26.15,
+          "omittedCho": 0,
+          "traceCodedCho": 0,
+          "terms": [
+            {
+              "name": "mannasuurimo",
+              "compositionId": "F008222",
+              "grams": 100,
+              "choPerServing": 30.8,
+              "giId": "upittu69",
+              "gk": 21.252000000000002
+            },
+            {
+              "name": "vihreä pakasteherne",
+              "compositionId": "34229",
+              "grams": 150,
+              "choPerServing": 7.02,
+              "giId": "frozen-pea42",
+              "gk": 2.9484
+            },
+            {
+              "name": "porkkana kuorimatta",
+              "compositionId": "300",
+              "grams": 100,
+              "choPerServing": 2.78,
+              "giId": "boiled-carrot32",
+              "gk": 0.8896
+            },
+            {
+              "name": "tuore currylehti",
+              "compositionId": "IFCT-G010",
+              "grams": 5,
+              "choPerServing": 0.0915,
+              "giId": "veg40",
+              "gk": 0.0366
+            },
+            {
+              "name": "vesi yhteensä",
+              "compositionId": "922",
+              "grams": 300,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "suola",
+              "compositionId": "30",
+              "grams": 0,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "uuden version sipuli",
+              "compositionId": "335",
+              "grams": 30.8,
+              "choPerServing": 0.7392,
+              "giId": "upittu69",
+              "gk": 0.510048
+            },
+            {
+              "name": "uuden version rypsiöljy",
+              "compositionId": "541",
+              "grams": 12.3,
+              "choPerServing": 0,
+              "giId": null,
+              "gk": 0
+            },
+            {
+              "name": "maustamaton jogurtti tarjoiluun",
+              "compositionId": "620",
+              "grams": 100,
+              "choPerServing": 1.7,
+              "giId": "dairy30",
+              "gk": 0.51
+            }
+          ],
+          "assumptionSensitivityOnly": {
+            "gi": [
+              0,
+              150
+            ],
+            "min": 25.600048000000005,
+            "max": 28.287298000000003,
+            "isSourceInterval": false,
+            "isBiologicalBound": false
+          }
+        }
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "control": "DEHULLED_BESAN_NOT_WHOLE_CICER_STUDY",
+      "status": "REJECTED",
+      "reason": "Not dehulled/fermented/oven/raw-flour GI"
+    },
+    {
+      "control": "FERMENTED45_NOT_UNFERMENTED42_ENDPOINT",
+      "status": "REJECTED",
+      "reason": "Not dehulled/fermented/oven/raw-flour GI"
+    },
+    {
+      "control": "POSITIVE_MAIN_CHO_CANNOT_BE_OMITTED_IN_B",
+      "status": "REJECTED",
+      "reason": "Positive GI missing; no B omissions"
+    },
+    {
+      "control": "CHUTNEY_AND_LEMON_CANNOT_DISAPPEAR",
+      "status": "REJECTED",
+      "reason": "Full chutney and lemon serving required"
+    }
+  ]
+}

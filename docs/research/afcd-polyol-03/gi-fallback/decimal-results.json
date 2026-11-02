@@ -1,0 +1,84 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "results": [
+    {
+      "recipeId": "intialainen-besan-chilla",
+      "inputSha256": "5c0942255538ff47e866006ff3fb40d44bd25abe5c30496c69cdcee8adccd01a",
+      "sourceScenarioMin": "9.4698",
+      "sourceScenarioMax": "11.1288",
+      "integerDisplay": {
+        "min": 9,
+        "max": 12
+      },
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "scenarios": [
+        {
+          "scenarioId": "AFCD_WHOLE_DRY_CHICKPEA",
+          "unrounded": "9.4698",
+          "point": "9.47",
+          "omittedCho": "0"
+        },
+        {
+          "scenarioId": "FINELI_WHOLE_DRY_CHICKPEA",
+          "unrounded": "11.1288",
+          "point": "11.13",
+          "omittedCho": "0"
+        }
+      ]
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "inputSha256": "cdfff763f373d92f5142ac772b52068a2e453ebd56bcff5c29b507422c6a8d16",
+      "sourceScenarioMin": "9.1305",
+      "sourceScenarioMax": "10.7895",
+      "integerDisplay": {
+        "min": 9,
+        "max": 11
+      },
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "scenarios": [
+        {
+          "scenarioId": "AFCD_WHOLE_DRY_CHICKPEA",
+          "unrounded": "9.1305",
+          "point": "9.13",
+          "omittedCho": "0"
+        },
+        {
+          "scenarioId": "FINELI_WHOLE_DRY_CHICKPEA",
+          "unrounded": "10.7895",
+          "point": "10.79",
+          "omittedCho": "0"
+        }
+      ]
+    },
+    {
+      "recipeId": "intialainen-mannasuurimoupma",
+      "inputSha256": "365f6eaff17867ea8fc415dd57af8d2ef91176e2c80239dfbc0d69ac2dc2d1cc",
+      "sourceScenarioMin": "26.146648",
+      "sourceScenarioMax": "26.836648",
+      "integerDisplay": {
+        "min": 26,
+        "max": 27
+      },
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "scenarios": [
+        {
+          "scenarioId": "FINELI_SEMOLINA",
+          "unrounded": "26.836648",
+          "point": "26.84",
+          "omittedCho": "0"
+        },
+        {
+          "scenarioId": "AFCD_SEMOLINA",
+          "unrounded": "26.146648",
+          "point": "26.15",
+          "omittedCho": "0"
+        }
+      ]
+    }
+  ]
+}

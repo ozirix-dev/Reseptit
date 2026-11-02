@@ -1,0 +1,44 @@
+{
+  "activation": false,
+  "ownerPreference": {
+    "ownerPreference": "Explicit user answer call_674424a4a82248e18e9349e22bfebf84: Kokonaislukuväli, esimerkiksi9–12",
+    "roundingStep": 1,
+    "lower": "floor(min source-scenario GK)",
+    "upper": "ceil(max source-scenario GK)",
+    "label": "GK-arvio {min}–{max} · mallinnettu",
+    "meaning": "Named source-scenario envelope, not confidence/physiological/person-specific interval",
+    "activation": false
+  },
+  "entries": [
+    {
+      "recipeId": "intialainen-besan-chilla",
+      "inputSha256": "5c0942255538ff47e866006ff3fb40d44bd25abe5c30496c69cdcee8adccd01a",
+      "text": "GK-arvio 9–12 · mallinnettu",
+      "shortExplanation": "Valittujen lähdeskenaarioiden arvio; valmistuksen ja yksilöllisen vasteen koko vaihtelua ei tunneta.",
+      "sourceScenarioMin": "9.4698",
+      "sourceScenarioMax": "11.1288",
+      "sourceContentApproval": false,
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "inputSha256": "cdfff763f373d92f5142ac772b52068a2e453ebd56bcff5c29b507422c6a8d16",
+      "text": "GK-arvio 9–11 · mallinnettu",
+      "shortExplanation": "Valittujen lähdeskenaarioiden arvio; valmistuksen ja yksilöllisen vasteen koko vaihtelua ei tunneta.",
+      "sourceScenarioMin": "9.1305",
+      "sourceScenarioMax": "10.7895",
+      "sourceContentApproval": false,
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "intialainen-mannasuurimoupma",
+      "inputSha256": "365f6eaff17867ea8fc415dd57af8d2ef91176e2c80239dfbc0d69ac2dc2d1cc",
+      "text": "GK-arvio 26–27 · mallinnettu",
+      "shortExplanation": "Valittujen lähdeskenaarioiden arvio; valmistuksen ja yksilöllisen vasteen koko vaihtelua ei tunneta.",
+      "sourceScenarioMin": "26.146648",
+      "sourceScenarioMax": "26.836648",
+      "sourceContentApproval": false,
+      "publicationAuthorized": false
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "recordRole": "CURRENT_STATE_AFTER_SEPARATION",
-  "observedAtUtc": "2026-11-02T20:17:22.338252+00:00",
+  "observedAtUtc": "2026-11-02T20:48:37.244294+00:00",
   "repository": "ozirix-dev/Reseptit",
   "role": "Codex2 / Codex Tutkimus",
   "ownedWorktree": "D:\\Projects\\tmp\\reseptit-afcd-polyol-03-gk80-handoff",
@@ -57,8 +57,8 @@
     "approvedIntegratedInPr183": 16,
     "approvedParkedSeparately": 4,
     "distinctRecipesWithoutApprovedVersion": 12,
-    "knownPreparedFoodSourceHolds": 6,
-    "otherPendingRecipes": 6,
+    "knownPreparedFoodSourceHolds": 5,
+    "otherPendingRecipes": 7,
     "conditionalAfterBothBatchesReleased": 178,
     "conditionalPercent": 54.6,
     "conditionalGapTo261": 83,
@@ -66,7 +66,7 @@
     "newSourceQualifiedNumericResultsInThisCorrection": 0,
     "newPublishedResults": 0,
     "decisionMatrixRowsIncludingNewHolds": 71,
-    "arithmeticCountScope": "39 distinct arithmetic recipe IDs, including1 new current-A owner-review proposal and2 unapproved B research models in this pass. Other32 are HOLD dependencies without complete inputs. Arithmetic does not prove source qualification or approved coverage.",
+    "arithmeticCountScope": "39 existing distinct arithmetic recipe IDs; latest pass finalizes three exact B source-scenario versions without adding new recipe IDs. Other32 matrix rows are HOLD dependencies without complete inputs. All approval/publication counts are explicit separate fields.",
     "legacyCorrectionFieldsNote": "Fields mentioning ThisCorrection describe the prior correction pass. Latest pass and subsequent approval are in latestResearchPass; current published coverage and current approval counts are the explicit live fields.",
     "approvedLockedSix": 0,
     "approvedResearchHandoff": 4,
@@ -118,7 +118,7 @@
     "peaSoup": "RESEARCH_MODEL_NOT_PUBLICATION_READY",
     "peaSoupOmittedChoPerServing": 1.9868875,
     "peaSoupCountedIn33": false,
-    "sixPreparedGiAnalogies": "SOURCE_HOLD_NO_NEW_EQUIVALENCE_EVIDENCE"
+    "sixPreparedGiAnalogies": "Five remain SOURCE_HOLD; upma has a distinct newly matched roasted-component B version awaiting exact source/content review. Original and old premix71 version remain HOLD."
   },
   "pr182": {
     "head": "924a827b515f4d4e27d70389837e22f904d38c1f",
@@ -131,30 +131,42 @@
   "deployAuthorized": false,
   "publicationActivation": false,
   "latestResearchPass": {
-    "report": "cold-dessert-followup.md",
-    "package": "cold-dessert/",
-    "startingHead": "429f397472d6970006fd3c6c906b9da533c38c46",
+    "report": "gi-fallback-followup.md",
+    "package": "gi-fallback/",
+    "startingHead": "2a626c560873c0d414508522e1a1173f244f9d1c",
+    "selectedMethods": [
+      "FOOD_PREPARATION_ENTITY_LOOKUP",
+      "PRIMARY_CITATION_AND_PDF_RECIPE_RECOVERY",
+      "NATIVE_CHO_SOURCE_SCENARIO_ENVELOPE"
+    ],
+    "userApprovedIntegerDisplayPreference": true,
+    "reviewableExactBVersions": 3,
     "newArithmeticRecipeIds": 0,
-    "newCurrentAAlternativesForExistingBIds": 1,
-    "existingAProposalsFinalized": 1,
-    "reviewableExactAVersions": 2,
-    "newOwnerApproved": 2,
+    "previousPreparedHoldWithNewVersion": 1,
+    "newOwnerApproved": 0,
     "newPublicationQualifiedNumericResults": 0,
     "newPublishedResults": 0,
     "candidateInputs": {
-      "kaakao-kookos-chia": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2",
-      "rahka-marjakerroskulho": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86"
+      "intialainen-besan-chilla": "5c0942255538ff47e866006ff3fb40d44bd25abe5c30496c69cdcee8adccd01a",
+      "intialainen-pinaatti-paneer-chilla": "cdfff763f373d92f5142ac772b52068a2e453ebd56bcff5c29b507422c6a8d16",
+      "intialainen-mannasuurimoupma": "365f6eaff17867ea8fc415dd57af8d2ef91176e2c80239dfbc0d69ac2dc2d1cc"
     },
     "approvedVersionsStill": 27,
     "approvedButUnpublishedStill": 4,
     "publishedStill": 179,
     "conditionalAfterAlreadyApprovedReleased": 183,
-    "conditionalOnlyAfterTheseTwoSeparatelyAcceptedIntegratedReleased": 183,
-    "newGiConstants": 0,
+    "conditionalOnlyAfterTheseThreeSeparatelyAcceptedIntegratedReleased": 186,
+    "conditionalApprovedVersionCount": 30,
+    "conditionalGapTo261": 75,
+    "newAssumedGiConstants": 0,
+    "newNamedHumanGiObservationsAdmittedForResearch": [
+      "upittu69",
+      "frozen-pea42",
+      "boiled-carrot32"
+    ],
     "minorBOmissionProfileActivated": false,
-    "activeRecipeOrEngineChanges": false,
-    "ownerApprovalReceipt": "cold-dessert-approval.json",
-    "approvalOverlayScope": "Scoped user approval covers exactly two current-A versions. Reviewed7272e71 report and manifest retain pre-approval totals25/zero new approvals. No B profile or species-general source approval."
+    "expertEstimateSourceTypeActivated": false,
+    "activeRecipeOrEngineChanges": false
   },
   "approvedResearchHandoff": {
     "recipeId": "pad-see-ew-vhh-konjac",
@@ -335,5 +347,32 @@
     "futureIntegrationOwner": "Named Codex Julkaisu owner of a separately scoped future batch",
     "integrated": false,
     "published": false
+  },
+  "previousColdDessertResearchPass": {
+    "report": "cold-dessert-followup.md",
+    "package": "cold-dessert/",
+    "startingHead": "429f397472d6970006fd3c6c906b9da533c38c46",
+    "newArithmeticRecipeIds": 0,
+    "newCurrentAAlternativesForExistingBIds": 1,
+    "existingAProposalsFinalized": 1,
+    "reviewableExactAVersions": 2,
+    "newOwnerApproved": 2,
+    "newPublicationQualifiedNumericResults": 0,
+    "newPublishedResults": 0,
+    "candidateInputs": {
+      "kaakao-kookos-chia": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2",
+      "rahka-marjakerroskulho": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86"
+    },
+    "approvedVersionsStill": 27,
+    "approvedButUnpublishedStill": 4,
+    "publishedStill": 179,
+    "conditionalAfterAlreadyApprovedReleased": 183,
+    "conditionalOnlyAfterTheseTwoSeparatelyAcceptedIntegratedReleased": 183,
+    "newGiConstants": 0,
+    "minorBOmissionProfileActivated": false,
+    "activeRecipeOrEngineChanges": false,
+    "ownerApprovalReceipt": "cold-dessert-approval.json",
+    "approvalOverlayScope": "Scoped user approval covers exactly two current-A versions. Reviewed7272e71 report and manifest retain pre-approval totals25/zero new approvals. No B profile or species-general source approval.",
+    "recordRole": "FROZEN_PASS_WITH_TWO_EXACT_A_APPROVAL_OVERLAY"
   }
 }
