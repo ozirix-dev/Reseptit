@@ -1,0 +1,107 @@
+{
+  "activation": false,
+  "sourceBasedArithmeticCases": 1,
+  "results": [
+    {
+      "recipeId": "pad-see-ew-vhh-konjac",
+      "inputSha256": "aff3debfb7b5f7bf6f1957b68de41b1bda051e5eeb0d64a7e68fbeb92c235efc",
+      "unroundedPoint": "0.72610",
+      "roundedPoint": "0.73",
+      "omittedCho": "1.57330",
+      "blueDragonComparatorOmissions": "2.15455",
+      "ownerApproval": false,
+      "publicationAuthorized": false,
+      "rows": [
+        {
+          "ingredientIndex": 0,
+          "compositionId": "koro-cap",
+          "choPerServing": "0.15",
+          "gkContribution": null,
+          "positiveUnknownGiOmitted": true,
+          "isNominalUpper": true
+        },
+        {
+          "ingredientIndex": 1,
+          "compositionId": "11565",
+          "choPerServing": "0.0",
+          "gkContribution": null,
+          "positiveUnknownGiOmitted": false,
+          "isNominalUpper": false
+        },
+        {
+          "ingredientIndex": 2,
+          "compositionId": "324",
+          "choPerServing": "1.23",
+          "gkContribution": "0.492",
+          "positiveUnknownGiOmitted": false,
+          "isNominalUpper": false
+        },
+        {
+          "ingredientIndex": 3,
+          "compositionId": "858",
+          "choPerServing": "0.12375",
+          "gkContribution": null,
+          "positiveUnknownGiOmitted": true,
+          "isNominalUpper": false
+        },
+        {
+          "ingredientIndex": 4,
+          "compositionId": "541",
+          "choPerServing": "0.0",
+          "gkContribution": null,
+          "positiveUnknownGiOmitted": false,
+          "isNominalUpper": false
+        },
+        {
+          "ingredientIndex": 5,
+          "compositionId": "F008065",
+          "choPerServing": "0.24",
+          "gkContribution": "0.12",
+          "positiveUnknownGiOmitted": false,
+          "isNominalUpper": false
+        },
+        {
+          "ingredientIndex": 6,
+          "compositionId": "yutaka-dark-cap",
+          "choPerServing": "0.3",
+          "gkContribution": null,
+          "positiveUnknownGiOmitted": true,
+          "isNominalUpper": true
+        },
+        {
+          "ingredientIndex": 7,
+          "compositionId": "F008026",
+          "choPerServing": "0.7875",
+          "gkContribution": null,
+          "positiveUnknownGiOmitted": true,
+          "isNominalUpper": false
+        },
+        {
+          "ingredientIndex": 8,
+          "compositionId": "foodin-erythritol",
+          "choPerServing": "0",
+          "gkContribution": null,
+          "positiveUnknownGiOmitted": false,
+          "isNominalUpper": false
+        },
+        {
+          "ingredientIndex": 9,
+          "compositionId": "393",
+          "choPerServing": "0.28525",
+          "gkContribution": "0.11410",
+          "positiveUnknownGiOmitted": false,
+          "isNominalUpper": false
+        },
+        {
+          "ingredientIndex": 10,
+          "compositionId": "11178",
+          "choPerServing": "0.21205",
+          "gkContribution": null,
+          "positiveUnknownGiOmitted": true,
+          "isNominalUpper": false
+        }
+      ]
+    }
+  ],
+  "starchLedgerCheck": "A0-L+rL = A0-(1-r)L; no empirical L/r or GI inferred"
+}

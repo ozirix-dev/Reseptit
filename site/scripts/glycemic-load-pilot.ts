@@ -1,4 +1,5 @@
 import {buildGkOnlyVariants} from './gk149-integration';
+import {buildApprovedSevenVariants} from './gk-next-seven';
 import {countGkVersions} from '../src/features/recipes/gk-only-types';
 import {classifyGk80Source} from "./gk80-source-classification";
 import {applyScopedPolyolC} from './gk80-polyol-c';
@@ -151,7 +152,7 @@ const legacyResults = rawResults.map((result) => {
   return usesImputation ? {...result, assessmentType: "PUBLISHED_IMPUTATION" as const, modelScenario: "POINT_SCENARIO" as const} : result;
 });
 const results = await applyScopedPolyolC(root, await applyRecovery(root, await withdrawQ09Tea(root, await applyGk80Release(root, legacyResults))));
-const gkOnlyVariants = buildGkOnlyVariants(root);
+const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root)];
 const versionCoverage = countGkVersions(results,gkOnlyVariants);
 const report = {
   generatedAt: new Date().toISOString(),

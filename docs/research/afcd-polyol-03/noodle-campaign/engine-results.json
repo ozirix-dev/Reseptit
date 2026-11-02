@@ -1,0 +1,24 @@
+{
+  "activation": false,
+  "results": [
+    {
+      "recipeId": "pad-see-ew-vhh-konjac",
+      "inputSha256": "aff3debfb7b5f7bf6f1957b68de41b1bda051e5eeb0d64a7e68fbeb92c235efc",
+      "classification": "A",
+      "ownerApproval": false,
+      "publicationAuthorized": false,
+      "status": "CALCULATED",
+      "point": 0.73,
+      "unrounded": 0.7260999999999999,
+      "omittedCho": 1.5733000000000001,
+      "comparator": {
+        "product": "blue-dragon-dark-comparator",
+        "status": "INSUFFICIENT SOURCE DATA",
+        "omittedCho": 2.15455,
+        "blockers": [
+          "pad-see-ew-vhh-konjac: cumulative omitted available carbohydrate is 2.155 g/serving, at or above the 2 g editorial tolerance."
+        ]
+      }
+    }
+  ]
+}
