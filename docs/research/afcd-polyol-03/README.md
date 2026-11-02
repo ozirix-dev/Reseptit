@@ -1,14 +1,14 @@
 # AFCD-POLYOL-03 / GK80: yhteinen menetelmä- ja lähderatkaisu
 
-## Nykytila: 183/326 julkaistu, neljä hyväksyttyä integraatiota odottaa
+## Nykytila: 183/326 julkaistu, seitsemän hyväksyttyä integraatiota odottaa
 
 **Varmennettu julkaistu kattavuus on 183/326 (56,13 %): A177 ja B6. Tavoitteeseen 261 puuttuu 78.** [PR189:n julkaisuhavainto](production-observation-pr189.json) sitoo neljä lisätulosta täsmällisiin hyväksyttyihin syötteisiin ja onnistuneeseen build/deploy-ajoon. Alkuperäisten ohjeiden kattavuus on 156/326. Codex2 ei julkaissut muutoksia.
 
-**31 hyväksytystä versiosta 27 on julkaistu.** Neljä odottavaa ovat [besan-chilla 9–12, pinaatti-paneer-chilla 9–11 ja upma 26–27](gi-fallback-approval.json) sekä [pongal 40–46](pongal-approval.json). Niiden myöhempi julkaisu veisi 187/326:een, vaje 74. Arvot ovat B-lähdeskenaarioita, eivät yksilöllisen vasteen vaihteluvälejä. [Kolmen hakureitin raportti](gi-fallback-followup.md) ja [pongalin raportti](pongal-followup.md) säilyvät hyväksyntää edeltäneinä tilannekuvina.
+**34 hyväksytystä versiosta 27 on julkaistu.** Odottavat neljä B-versiota ovat [besan-chilla 9–12, pinaatti-paneer-chilla 9–11 ja upma 26–27](gi-fallback-approval.json) sekä [pongal 40–46](pongal-approval.json). Niiden myöhempi julkaisu veisi 187/326:een, vaje 74. Arvot ovat B-lähdeskenaarioita, eivät yksilöllisen vasteen vaihteluvälejä. [Kolmen hakureitin raportti](gi-fallback-followup.md) ja [pongalin raportti](pongal-followup.md) säilyvät hyväksyntää edeltäneinä tilannekuvina.
 
-[Paellan, taginen ja hernekeiton uusi A-paketti](current-a-cap-followup.md) käyttää nykyisiä poisjättörajoja. Lasketut GK-osat ovat **40,35; 21,05; 16,22**. Kaksi versiota käyttää samaa punnittua kanafondia; hernekeiton 16 g sinappia sidotaan nimettyyn tuotteeseen. Taginen koko kuskustarjoilu sisältyy. Tuotekatot ovat nimellisiä, ja kolme täsmällistä versiota odottaa lähde- ja sisältöpäätöstä. Kaikkien seitsemän myöhempi julkaisu veisi ehdollisesti 190/326:een, vaje 71. Uutta GI50- tai B-poisjättömallia ei oteta käyttöön.
+[Paellan, taginen ja hernekeiton uusi A-paketti](current-a-cap-followup.md) käyttää nykyisiä poisjättörajoja. Lasketut GK-osat ovat **40,35; 21,05; 16,22**. Kaksi versiota käyttää samaa punnittua kanafondia; hernekeiton 16 g sinappia sidotaan nimettyyn tuotteeseen. Taginen koko kuskustarjoilu sisältyy. Tuotekatot ovat nimellisiä. Käyttäjä hyväksyi kolme täsmällistä lähde- ja sisältöversiota myöhempään integraatioon: [hyväksyntäkuitti](current-a-cap-approval.json). Katselmoitu paketti säilyy muuttumattomana. **Kaikkien seitsemän myöhempi integraatio ja julkaisu veisi 190/326:een (58,28 %), vaje 71.** Uutta GI50- tai B-poisjättömallia ei oteta käyttöön.
 
-[Nykytila](current-state.json) ja [päätösmatriisi](current-decision-matrix.csv) sisältävät 42 aritmeettista reseptitunnusta ja 32 muuta HOLD-riippuvuutta. Aritmeettisista ehdokkaista 11:ltä puuttuu hyväksytty versio. Jerk-/sate-mallit ja muut erilliset menetelmäehdotukset säilyvät tutkimuksessa.
+[Nykytila](current-state.json) ja [päätösmatriisi](current-decision-matrix.csv) sisältävät 42 aritmeettista reseptitunnusta ja 32 muuta HOLD-riippuvuutta. Aritmeettisista ehdokkaista 8:lta puuttuu hyväksytty versio. Jerk-/sate-mallit ja muut erilliset menetelmäehdotukset säilyvät tutkimuksessa.
 
 **Codex2:n kirjoitusrajaus:** oma `D:/Projects/tmp/reseptit-afcd-polyol-03-gk80-handoff` ja `codex/afcd-polyol-03-gk80-handoff`. Ei uusia PR:iä, Readya, mergeä, deployta tai ylimääräisiä Actions-ajoja. [AGENTS.md](../../../AGENTS.md) ja [rinnakkaisajo-ohje](../../rinnakkaiset-codex-ajot.md).
 

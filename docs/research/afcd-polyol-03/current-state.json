@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "recordRole": "CURRENT_STATE_AFTER_SEPARATION",
-  "observedAtUtc": "2026-11-02T21:42:54.844015+00:00",
+  "observedAtUtc": "2026-11-02T21:44:27.420624+00:00",
   "repository": "ozirix-dev/Reseptit",
   "role": "Codex2 / Codex Tutkimus",
   "ownedWorktree": "D:\\Projects\\tmp\\reseptit-afcd-polyol-03-gk80-handoff",
@@ -53,12 +53,12 @@
     "productionGapTo261": 78,
     "productionPercent": 56.13,
     "distinctArithmeticProposalRecipes": 42,
-    "methodOrContentApprovedVersionsAcrossSeparateBatches": 31,
+    "methodOrContentApprovedVersionsAcrossSeparateBatches": 34,
     "approvedIntegratedInPr183": 16,
-    "approvedParkedSeparately": 4,
-    "distinctRecipesWithoutApprovedVersion": 11,
+    "approvedParkedSeparately": 7,
+    "distinctRecipesWithoutApprovedVersion": 8,
     "knownPreparedFoodSourceHolds": 5,
-    "otherPendingRecipes": 6,
+    "otherPendingRecipes": 3,
     "conditionalAfterBothBatchesReleased": 178,
     "conditionalPercent": 54.6,
     "conditionalGapTo261": 83,
@@ -69,13 +69,13 @@
     "arithmeticCountScope": "42 distinct arithmetic IDs including three exact current-A versions;32 other HOLD dependencies. Published and approval counts separate.",
     "legacyCorrectionFieldsNote": "Fields mentioning ThisCorrection describe the prior correction pass. Latest pass and subsequent approval are in latestResearchPass; current published coverage and current approval counts are the explicit live fields.",
     "approvedLockedSix": 0,
-    "approvedResearchHandoff": 4,
+    "approvedResearchHandoff": 7,
     "conditionalAfterAll23ApprovedVersionsReleased": 179,
     "conditionalAfterAll23Percent": 54.91,
     "conditionalAfterAll23GapTo261": 82,
     "originalInstructionsNumeric": 156,
     "originalInstructionsMissing": 170,
-    "approvedButUnpublishedVersions": 4,
+    "approvedButUnpublishedVersions": 7,
     "approvedInPublishedMain": 27,
     "conditionalAfterAll24ApprovedVersionsReleased": 180,
     "conditionalAfterAll24Percent": 55.21,
@@ -96,12 +96,16 @@
     "conditionalAfterAll30Percent": 57.06,
     "conditionalAfterAll30GapTo261": 75,
     "conditionalAfterAll27FieldsScope": "Historical approved subset27 before three source-scenario approvals; use current approval and latestResearchPass fields.",
-    "firstBatch30Milestone": "First30 exact source/content approvals achieved previously. Current31:27 published and4 await owner integration.",
+    "firstBatch30Milestone": "First30 exact source/content approvals achieved previously. Current34:27 published and7 awaiting owner integration.",
     "conditionalAfterAll31ApprovedVersionsReleased": 187,
     "conditionalAfterAll31Percent": 57.36,
     "conditionalAfterAll31GapTo261": 74,
     "conditionalAfterAll30FieldsScope": "Historical approved subset30 before exact pongal acceptance; current approved count31 and latestResearchPass govern.",
-    "approvedIntegratedInPr189": 4
+    "approvedIntegratedInPr189": 4,
+    "conditionalAfterAll34ApprovedVersionsReleased": 190,
+    "conditionalAfterAll34Percent": 58.28,
+    "conditionalAfterAll34GapTo261": 71,
+    "conditionalAfterAll31FieldsScope": "Historical approved subset31, including four future B handoffs from183 to187. Current34 and latestResearchPass govern."
   },
   "historicalEvent": {
     "temporaryIntegrationHead": "80f4360435b978d1cfa81088df1414430a88c222",
@@ -146,7 +150,7 @@
     "startingHead": "65ee5f58a1a8e376c013c8cccd9ed6e8f7d73a96",
     "reviewableExactAVersions": 3,
     "newArithmeticRecipeIds": 3,
-    "newOwnerApproved": 0,
+    "newOwnerApproved": 3,
     "newPublicationQualifiedNumericResults": 0,
     "newPublishedResults": 0,
     "candidateInputs": {
@@ -154,10 +158,10 @@
       "kana-tagine-sitruunalla": "1d9e7a0b626d42571ef29d35a0732982e21f9b94cff8472b9b52a8a824d42c7c",
       "hernekeitto-savupotkalla": "ed3041f5514e3668a93361f9f5c353d38530f9a88a7db07650d2fce46fb61990"
     },
-    "approvedVersionsStill": 31,
-    "approvedButUnpublishedStill": 4,
+    "approvedVersionsStill": 34,
+    "approvedButUnpublishedStill": 7,
     "publishedStill": 183,
-    "conditionalAfterAlreadyApprovedReleased": 187,
+    "conditionalAfterAlreadyApprovedReleased": 190,
     "conditionalOnlyAfterTheseThreeAcceptedIntegratedReleased": 190,
     "conditionalApprovedVersionCount": 34,
     "conditionalGapTo261": 71,
@@ -171,7 +175,9 @@
     "newLowChoStockGi50ProfileActivated": false,
     "activeRecipeOrEngineChanges": false,
     "scope": "Same original70;3 exact A results; no new cohort or changed thresholds",
-    "productionObservation": "production-observation-pr189.json"
+    "productionObservation": "production-observation-pr189.json",
+    "ownerApprovalReceipt": "current-a-cap-approval.json",
+    "approvalOverlayScope": "Exact three source/content applications accepted; reviewed9e7b21e package remains pre-approval snapshot. No new model or publication authority."
   },
   "approvedResearchHandoff": {
     "recipeId": "pad-see-ew-vhh-konjac",
@@ -502,5 +508,23 @@
     "publishedAdditionalVersions": 4,
     "publicationEvidence": "production-observation-pr189.json",
     "changedByThisTask": false
+  },
+  "approvedCurrentACapHandoff": {
+    "recipeIds": [
+      "paella-valenciana",
+      "kana-tagine-sitruunalla",
+      "hernekeitto-savupotkalla"
+    ],
+    "approvedInputs": {
+      "paella-valenciana": "5e9c7deff4c545411210ed1c5979ff29c0c63e37c746f1cc9fcc192d11b9fa69",
+      "kana-tagine-sitruunalla": "1d9e7a0b626d42571ef29d35a0732982e21f9b94cff8472b9b52a8a824d42c7c",
+      "hernekeitto-savupotkalla": "ed3041f5514e3668a93361f9f5c353d38530f9a88a7db07650d2fce46fb61990"
+    },
+    "reviewedContentHead": "9e7b21e8967db8641d27679cd3add757d1e194cc",
+    "sourceAndContentApproved": true,
+    "receipt": "current-a-cap-approval.json",
+    "futureIntegrationOwner": "Named Codex Julkaisu owner of a separately scoped future batch",
+    "integrated": false,
+    "published": false
   }
 }

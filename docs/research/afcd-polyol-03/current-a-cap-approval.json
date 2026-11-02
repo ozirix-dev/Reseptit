@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "GK80_THREE_EXACT_CURRENT_A_PRODUCT_CAP_APPROVAL_2026_11_02",
+  "repository": "ozirix-dev/Reseptit",
+  "reviewedContentCommit": "9e7b21e8967db8641d27679cd3add757d1e194cc",
+  "reviewedCasePath": "docs/research/afcd-polyol-03/current-a-cap-route/cases.json",
+  "reviewedReportPath": "docs/research/afcd-polyol-03/current-a-cap-followup.md",
+  "reviewedReportLfSha256": "17afad290cd84250e42fd42e20a4b053b5e9ddff4edb34b631c48c4166fb6e59",
+  "reviewedPacketFilesLfSha256": {
+    "audit-current-a.py": "7cd8f3aa7397159364fc27ce1ead00c8d52b89b21be01f54cc21af044ad563cd",
+    "cases.json": "4d0864b469bb0cdf289143a393f7c8e956798611f1756c42c78a72b4eb75e8e5",
+    "decimal-results.json": "807975d43bc737327d19af8e64f10a2faa8aeb8a71f1e5704f6ae5eda2fd7379",
+    "engine-results.json": "f775b641e3d14ed4977c1d9aee97b06133f84377ba874c961a73d2d3633905fe",
+    "evaluate-current-a.mts": "4eabb03eafd1d7b5022aa3e8503f92fb377beaaf61c4e9284013aa7cb9aa99e0",
+    "method-impact.csv": "a42c0ab6ba802dd6173c96528fa46232272d396c2f886c13a18fdd43214f7176",
+    "recipe-dependencies.csv": "7b2e0df7d7097373021d59d5cbdf029e1857576ac11d8f3f782361db6c78ff88",
+    "sources.json": "62902dad2771dab9f24117011d8d42963a21c2a8de753dc5723e1456344117cd",
+    "manifest.json": "c33ec7e9e094f49132503637c6197cb418a76079d294c15e08ca55e8c35f1e5a"
+  },
+  "approvedInputs": {
+    "paella-valenciana": "5e9c7deff4c545411210ed1c5979ff29c0c63e37c746f1cc9fcc192d11b9fa69",
+    "kana-tagine-sitruunalla": "1d9e7a0b626d42571ef29d35a0732982e21f9b94cff8472b9b52a8a824d42c7c",
+    "hernekeitto-savupotkalla": "ed3041f5514e3668a93361f9f5c353d38530f9a88a7db07650d2fce46fb61990"
+  },
+  "recordedAtUtc": "2026-11-02T21:44:27.420624+00:00",
+  "decisionSource": "Explicit user answer to scoped async question call_234c09f2ab434871b45b3cf1e3a5dad8",
+  "userAnswer": "Kyllä, hyväksyn kaikki kolme tarkkaa A-versiota myöhempään integraatioon",
+  "sourceAndContentApproved": true,
+  "existingAContractExactSourceApplicationsAccepted": true,
+  "acceptedVersions": [
+    {
+      "recipeId": "paella-valenciana",
+      "inputSha256": "5e9c7deff4c545411210ed1c5979ff29c0c63e37c746f1cc9fcc192d11b9fa69",
+      "originalRecipeSha256Lf": {
+        "fi": "49089d94833037456fa7f21b7e9b258a531c731db6f0344b2a789add6b96b3dd",
+        "en": "08774b35d965bf8664f489d6f2ee29b902ffdc927a4aea2d4ddc59716a17b50f",
+        "sv": "a2c5e9185073eebddb9233ba94bd19e3672231cdb55a3ac831b592ad4a454ca5",
+        "th": "4bb2dd4171bf2ba9e71f06c925a3f6b029427fcd35cce246c36d0706bbc684fa"
+      },
+      "primaryCalculatedPartGk": "40.35",
+      "positiveChoOmittedOrNominalCap": "1.675",
+      "calculatedPartSourceScenarioEnvelope": {
+        "min": 39.5256,
+        "max": 40.3536,
+        "integerMin": 39,
+        "integerMax": 41,
+        "scope": "CALCULATED_PART_ONLY",
+        "isWholeMealBound": false
+      },
+      "exactCandidateRecipeAndPrep": "See sealed reviewed cases.json; no widening of named sources, amounts or preparation."
+    },
+    {
+      "recipeId": "kana-tagine-sitruunalla",
+      "inputSha256": "1d9e7a0b626d42571ef29d35a0732982e21f9b94cff8472b9b52a8a824d42c7c",
+      "originalRecipeSha256Lf": {
+        "fi": "1efaed05eda7723792938f24021539622d044cfa24263c4bacad1eaddb939f49",
+        "en": "16f7bb7d26274894dd47e3c41e15685d4d32db6feaab94b5e7b151f4db98f0e8",
+        "sv": "eb2745df4d7ddaee0c3b7dbb235db8aec044f2e799b0c7061e2dd4788bc41950",
+        "th": "4ddc78d021931c5f72f84061ab0c9b325de90cefeb851a60f49ac87e2ef7ac9a"
+      },
+      "primaryCalculatedPartGk": "21.05",
+      "positiveChoOmittedOrNominalCap": "1.68725",
+      "calculatedPartSourceScenarioEnvelope": {
+        "min": 21.053150000000002,
+        "max": 24.303150000000002,
+        "integerMin": 21,
+        "integerMax": 25,
+        "scope": "CALCULATED_PART_ONLY",
+        "isWholeMealBound": false
+      },
+      "exactCandidateRecipeAndPrep": "See sealed reviewed cases.json; no widening of named sources, amounts or preparation."
+    },
+    {
+      "recipeId": "hernekeitto-savupotkalla",
+      "inputSha256": "ed3041f5514e3668a93361f9f5c353d38530f9a88a7db07650d2fce46fb61990",
+      "originalRecipeSha256Lf": {
+        "fi": "5ecde580ab6f4707451004339aecf82bb956d9a32bfed7851e6fd9c862d2bd6d"
+      },
+      "primaryCalculatedPartGk": "16.22",
+      "positiveChoOmittedOrNominalCap": "1.5628875",
+      "calculatedPartSourceScenarioEnvelope": null,
+      "exactCandidateRecipeAndPrep": "See sealed reviewed cases.json; no widening of named sources, amounts or preparation."
+    }
+  ],
+  "acceptedLimitations": [
+    "Named Bong standard concentrate7gCHO/100g at exact weighed50+950g or15+285g stock; no density claim or prepared-column substitution",
+    "Tagine40g GTIN07311312009104 Santa Maria preserved lemon paste is a new content choice, not whole/rind equivalence; entire200g dry hot-water couscous side and all sauce included",
+    "Kivikylä EAN2363013000008 gross bone-in700g and exact FR215g Maille Dijon16g; no assumed edible yield or salt-to-taste0g claim",
+    "Named boiled Arborio69, rehydrated couscous65 and historical marrowfat47 n6 applied only to reviewed components; LOW analogies; no whole-meal measurement",
+    "Native dry-rice and couscous alternatives span composition scenarios for the calculated part only; omissions can contribute and are not GI0",
+    "Declared total CHO caps are nominal; no verified lot bound, fibre subtraction or inferred polyol value; Maille web-reviewed, raw capture429",
+    "No inheritance or update of original macros; remaining owner GK-only, source/quantity/locale and cooking review"
+  ],
+  "integrationAuthorizedForOwnerInLaterBatch": true,
+  "integrationOwner": "Named Codex Julkaisu owner of a separately scoped future batch",
+  "codex2ReleaseBranchWriteAuthorized": false,
+  "integratedAnywhere": false,
+  "published": false,
+  "publicationAuthorized": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "newGenericGiDefaultAuthorized": false,
+  "minorBOmissionProfileAuthorized": false,
+  "frozenResearchSnapshotPolicy": "Reviewed9e7b21e report, manifest, source catalog, cases and results remain unchanged; receipt overlays exact three current-A source/content approvals only."
+}
