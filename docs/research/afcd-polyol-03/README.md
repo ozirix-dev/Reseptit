@@ -1,22 +1,22 @@
 # AFCD-POLYOL-03 / GK80: yhteinen menetelmä- ja lähderatkaisu
 
-## Nykytila:179/326 julkaistu, neljä hyväksyttyä integraatiota odottaa
+## Nykytila:179/326 julkaistu, seitsemän hyväksyttyä integraatiota odottaa
 
 **Varmennettu julkaistu kattavuus on179/326 (54,91%): A173 ja B6. Tavoitteeseen261 puuttuu82.** [PR185:n julkaisuhavainto](production-observation-pr185.json) sitoo luvun mainiin`96a25d8` ja onnistuneeseen build/deploy41512160461. Alkuperäisten ohjeiden kattavuus säilyy156/326:ssa. Tämä Codex2-ajo ei julkaise muutoksia.
 
-27 hyväksytystä versiosta23 on julkaistu. [Rahkapiirakka](rahkapiirakka-approval.json), [bulgogi](bulgogi-approval.json) ja [kaksi kylmää jälkiruokaa](cold-dessert-approval.json) odottavat omistajaintegraatiota; niiden myöhempi julkaisu veisi183/326:een (56,13%), tavoitevaje78.
+30 hyväksytystä versiosta23 on julkaistu. [Rahkapiirakka](rahkapiirakka-approval.json), [bulgogi](bulgogi-approval.json) ja [kaksi kylmää jälkiruokaa](cold-dessert-approval.json) odottavat omistajaintegraatiota; niiden myöhempi julkaisu veisi183/326:een (56,13%), tavoitevaje78.
 
-Uusi [kolmen GI/GK-hakureitin päätösraportti](gi-fallback-followup.md) käyttää paikallisnimiin ja valmistukseen sidottua hakua, alkuperäisjulkaisujen keittiö-/menetelmätaulukoita sekä yhteensopivien natiivien CHO-pisteiden skenaarioita. Käyttäjä valitsi kokonaislukuvälit. [Kolmen tarkan B-version suljettu paketti](gi-fallback/manifest.json) antaa esitysehdotukset: **besan-chilla9–12, pinaatti-paneer-chilla9–11 ja upma26–27**. Kaikki positiivinen CHO on käsitelty, poisjättöjä0. Väli kuvaa lähdevalintojen eroa; valmistusanalogian ja yksilöllisen vasteen koko vaihtelua ei tunneta.
+Uusi [kolmen GI/GK-hakureitin päätösraportti](gi-fallback-followup.md) käyttää paikallisnimiin ja valmistukseen sidottua hakua, alkuperäisjulkaisujen keittiö-/menetelmätaulukoita sekä yhteensopivien natiivien CHO-pisteiden skenaarioita. Käyttäjä valitsi kokonaislukuvälit. [Kolmen tarkan B-version sinetöity paketti](gi-fallback/manifest.json) antaa esitysehdotukset: **besan-chilla9–12, pinaatti-paneer-chilla9–11 ja upma26–27**. Kaikki positiivinen CHO on käsitelty, poisjättöjä0. Väli kuvaa lähdevalintojen eroa; valmistusanalogian ja yksilöllisen vasteen koko vaihtelua ei tunneta.
 
-Näiden kolmen erillinen lähde-/sisältöhyväksyntä, integraatio ja julkaisu aiempien lisäksi veisi **186/326:een (57,06%), tavoitevaje75**. Hyväksyttyjen versioiden ensimmäinen30:n erätavoite täyttyisi silloin; tämä ei ole nykyinen hyväksyntä- tai kattavuusluku. Nyt uusia hyväksyntöjä tai julkaisuja0. Vanhan kikhernetutkimuksen protokolla-/annosrajoitteet, uuden upman lisätyt sipuli-/öljymäärät ja kaikkien tarjoilujen sisältömuutokset vaativat tarkan päätöksen. Kokonaislukuesityksen valinta ei itsessään hyväksynyt näitä lähteitä tai versioita.
+Käyttäjä hyväksyi nämä kolme tarkkaa B-lähde-/sisältöversiota ja rajatut malliviitteet myöhempään integraatioon: [sinetöity hyväksyntäkuitti](gi-fallback-approval.json). Katselmoitu31d2c3c-raportti ja paketti säilyvät hyväksyntää edeltävinä tilannekuvina. **30 tarkkaa lähde-/sisältöhyväksyttyä versiota on nyt koossa:23 julkaistua ja7 integraatiotarkistuksia odottavaa.** Näiden seitsemän myöhempi julkaisu veisi186/326:een (57,06%), tavoitevaje75. Tämä ei väitä seitsemää vielä julkaisuvalmiiksi tai80% tavoitetta saavutetuksi. Hyväksyntä kattaa vanhan kikhernetutkimuksen protokolla-/annosrajoitteet, uuden upman lisätyt sipuli-/öljymäärät ja tarkat tarjoiluversiot. Se ei poista makroversion/lähdesinettien/kieliversioiden integraatioportteja tai anna julkaisulupaa.
 
-[Nykytilakirjaus](current-state.json) ja [päätösmatriisi](current-decision-matrix.csv):39 aritmeettista ehdotusta ja32 muuta HOLD-riippuvuutta,71 reseptiä.12 aritmeettiselta reseptiltä puuttuu hyväksytty versio; viisi on vanhassa valmistetun ruoan lähde-HOLDissa ja seitsemän muussa katselmoinnissa. Upman vanha premiksi71 ja alkuperäisohje säilyvät HOLDissa; uusi tarkka paahdetun komponentin versio katselmoidaan omana syötteenään. Jerk-/sate-mallit, B-poisjättöprofiili ja asiantuntijaestimaattilähdetyyppi pysyvät erikseen hyväksymättöminä.
+[Nykytilakirjaus](current-state.json) ja [päätösmatriisi](current-decision-matrix.csv):39 aritmeettista ehdotusta ja32 muuta HOLD-riippuvuutta,71 reseptiä.9 aritmeettiselta reseptiltä puuttuu hyväksytty versio; viisi on vanhassa valmistetun ruoan lähde-HOLDissa ja neljä muussa katselmoinnissa. Upman vanha premiksi71 ja alkuperäisohje säilyvät HOLDissa; uusi tarkka paahdetun komponentin versio katselmoidaan omana syötteenään. Jerk-/sate-mallit, B-poisjättöprofiili ja asiantuntijaestimaattilähdetyyppi pysyvät erikseen hyväksymättöminä.
 
 **Codex2:n kirjoitusrajaus:** vain oma`D:/Projects/tmp/reseptit-afcd-polyol-03-gk80-handoff` ja`codex/afcd-polyol-03-gk80-handoff`. Julkaisijan ja säilytyshaaroja ei muokata. Ei uutta PR:ää, Readya, mergeä, deployta tai ylimääräisiä Actions-ajoja. Projektisäännöt: [AGENTS.md](../../../AGENTS.md) ja [rinnakkaisajo-ohje](../../rinnakkaiset-codex-ajot.md).
 
 ## Aiemmat tilannekuvat
 
-Alla olevien raporttien aikamuodot ja määrät kuvaavat niiden omaa ajankohtaa. Nykyinen julkaistu luku on179 ja julkaisemattomia hyväksyttyjä4; vanhat172/8-luvut eivät ole nykytila. Alkuperäiset raportit, syötteet ja hyväksyntäkuitit säilyvät muuttumattomina.
+Alla olevien raporttien aikamuodot ja määrät kuvaavat niiden omaa ajankohtaa. Nykyinen julkaistu luku on179 ja julkaisemattomia hyväksyttyjä7; vanhat172/8-luvut eivät ole nykytila. Alkuperäiset raportit, syötteet ja hyväksyntäkuitit säilyvät muuttumattomina.
 
 ## Uusin yhteisen lähde-esteen jatko
 
