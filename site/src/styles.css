@@ -190,3 +190,9 @@ button { font: inherit; }
   .placeholder-label { font-size: .9rem; font-weight: 700; }
   .placeholder-input { min-height: 2.8rem; }
 }
+
+.chocolate-comparison { grid-column: 1 / -1; }
+.chocolate-comparison > summary { min-height: 44px; padding-block: .6rem; cursor: pointer; }
+.chocolate-comparison > summary h2 { display: inline; font-size: 1.1rem; }
+.chocolate-comparison__body { display: grid; gap: 1rem; padding-top: .75rem; }
+.chocolate-comparison__product { display: grid; gap: .45rem; padding-top: 1rem; border-top: 1px solid var(--line); }
