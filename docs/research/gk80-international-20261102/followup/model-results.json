@@ -1,0 +1,594 @@
+{
+  "mechanicalModelOnly": true,
+  "warning": "CALCULATED is a numeric check, not source or publication approval. Pellava label upper is additionally conditional.",
+  "results": [
+    {
+      "recipeId": "siemengranola-jogurtilla",
+      "sourceLfSha256": "0ea4aec2500d7f974f28db074b912bcb4a2c987dc58f35c5de3ad736bbdd404e",
+      "researchStatus": "SOURCE_DOCUMENTED_LOW_CALCULATION_CANDIDATE_APPLICATION_REVIEW_PENDING",
+      "allEightRowsRepresented": true,
+      "correctedCompositionBeforeSpice": {
+        "status": "INSUFFICIENT SOURCE DATA",
+        "omittedCho": 2.0603125
+      },
+      "after": {
+        "recipeId": "siemengranola-jogurtilla",
+        "servings": 4,
+        "status": "CALCULATED",
+        "unroundedGlycemicLoadPerServing": 2.47170625,
+        "glycemicLoadPerServing": 2.47,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 1.8850000000000002,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+        "confidence": "LOW",
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "kurpitsansiemeniä",
+            "grams": 80,
+            "fineliRecordId": "research-afcd-F008212",
+            "availableCarbohydratePer100g": 2.1,
+            "availableCarbohydratePerServingG": 0.42,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.420 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "auringonkukansiemeniä",
+            "grams": 60,
+            "fineliRecordId": "research-afcd-F008215",
+            "availableCarbohydratePer100g": 3.1,
+            "availableCarbohydratePerServingG": 0.465,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.465 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "pellavansiemenrouhetta",
+            "grams": 40,
+            "fineliRecordId": "research-afcd-F008210",
+            "availableCarbohydratePer100g": 2.8,
+            "availableCarbohydratePerServingG": 0.28,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.280 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "mantelilastuja",
+            "grams": 40,
+            "fineliRecordId": "research-fineli-379",
+            "availableCarbohydratePer100g": 6.6,
+            "availableCarbohydratePerServingG": 0.66,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.660 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "voita",
+            "grams": 30,
+            "fineliRecordId": "research-fineli-500",
+            "availableCarbohydratePer100g": 0.8,
+            "availableCarbohydratePerServingG": 0.06,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.060 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "kanelia",
+            "grams": 2.55,
+            "fineliRecordId": "research-afcd-F002963",
+            "availableCarbohydratePer100g": 27.5,
+            "availableCarbohydratePerServingG": 0.1753125,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 50,
+            "giRecordId": "research-only-cinnamon50-siemengranola-jogurtilla",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "ANALOG",
+            "confidence": "LOW",
+            "giContribution": 0.08765625,
+            "giContributionRange": {
+              "min": 0.08765625,
+              "max": 0.08765625
+            },
+            "giCandidates": [
+              {
+                "id": "research-only-cinnamon50-siemengranola-jogurtilla",
+                "gi": 50,
+                "preparation": "Sourced generic teaspoon-density proxy2.55g/recipe; not weighed batch",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "maustamatonta kreikkalaista jogurttia",
+            "grams": 400,
+            "fineliRecordId": "research-fineli-32201",
+            "availableCarbohydratePer100g": 4.298,
+            "availableCarbohydratePerServingG": 4.298,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 35,
+            "giRecordId": "dairy-category-mean-gi-35",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 1.5043,
+            "giContributionRange": {
+              "min": 1.5043,
+              "max": 1.5043
+            },
+            "giCandidates": [
+              {
+                "id": "dairy-category-mean-gi-35",
+                "gi": 35,
+                "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "vadelmia",
+            "grams": 100,
+            "fineliRecordId": "research-afcd-F007619",
+            "availableCarbohydratePer100g": 6.9,
+            "availableCarbohydratePerServingG": 1.725,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 51,
+            "giRecordId": "fruit-category-mean-gi-51",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.87975,
+            "giContributionRange": {
+              "min": 0.87975,
+              "max": 0.87975
+            },
+            "giCandidates": [
+              {
+                "id": "fruit-category-mean-gi-51",
+                "gi": 51,
+                "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          }
+        ],
+        "blockers": []
+      },
+      "spiceChoG": 0.1753125,
+      "policyLimitsUnchanged": {
+        "eachOmissionStrictlyBelow1g": true,
+        "cumulativeOmissionStrictlyBelow2g": true,
+        "spiceAtMost0_5g": true,
+        "cumulativeSpiceAtMost1g": true
+      },
+      "publicationApproved": false,
+      "newPublishedValue": false,
+      "sourceApplicationApproved": false,
+      "allRecipeAndRegistryFilesReadOnly": true,
+      "recipeInput": {
+        "recipeId": "siemengranola-jogurtilla",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "kurpitsansiemeniä",
+            "grams": 80,
+            "fineliRecordId": "research-afcd-F008212",
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F008212; source state: hulled pumpkin seeds."
+          },
+          {
+            "name": "auringonkukansiemeniä",
+            "grams": 60,
+            "fineliRecordId": "research-afcd-F008215",
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F008215; source state: dried sunflower seeds."
+          },
+          {
+            "name": "pellavansiemenrouhetta",
+            "grams": 40,
+            "fineliRecordId": "research-afcd-F008210",
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F008210; source state: ground linseed."
+          },
+          {
+            "name": "mantelilastuja",
+            "grams": 40,
+            "fineliRecordId": "research-fineli-379",
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to fineli-release-20 record 379; source state: almonds, sliced; whole almond composition proxy."
+          },
+          {
+            "name": "voita",
+            "grams": 30,
+            "fineliRecordId": "research-fineli-500",
+            "giRecordId": null,
+            "massEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+          },
+          {
+            "name": "kanelia",
+            "grams": 2.55,
+            "fineliRecordId": "research-afcd-F002963",
+            "giRecordId": "research-only-cinnamon50-siemengranola-jogurtilla",
+            "massEvidence": "quantity-sources.json: AUSNUT F002963 measure49452 density0.51g/ml * Finnish level teaspoon5ml =2.55g; generic density proxy, not measured batch.",
+            "foodKey": "research-cinnamon",
+            "preparationKey": "ground-cinnamon-fully-retained",
+            "giMatchEvidence": "Research only; no source, content or publication approval inferred from mechanical CALCULATED."
+          },
+          {
+            "name": "maustamatonta kreikkalaista jogurttia",
+            "grams": 400,
+            "fineliRecordId": "research-fineli-32201",
+            "giRecordId": "dairy-category-mean-gi-35",
+            "massEvidence": "Ingredient mapped to fineli-release-20 record 32201; source state: plain Greek yogurt, 10% fat.",
+            "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally.",
+            "foodKey": "dairy",
+            "preparationKey": "unflavoured-dairy"
+          },
+          {
+            "name": "vadelmia",
+            "grams": 100,
+            "fineliRecordId": "research-afcd-F007619",
+            "giRecordId": "fruit-category-mean-gi-51",
+            "massEvidence": "Ingredient mapped to afcd-release-3 record F007619; source state: raw raspberries.",
+            "giMatchEvidence": "Published GI analogue/category record fruit-category-mean-gi-51; source and limitations are listed centrally.",
+            "foodKey": "fruit-category-mean",
+            "preparationKey": "category-mean"
+          }
+        ]
+      }
+    },
+    {
+      "recipeId": "pellava-puuro-pahkinoilla",
+      "sourceLfSha256": "6ef230c98eb7272242996be4d57e594d53e0727f25b4976594bc8e3a74d410f6",
+      "researchStatus": "CONDITIONAL_NAMED_PRODUCT_AND_LABEL_UPPER_REVIEW_PENDING",
+      "allEightRowsRepresented": true,
+      "correctedCompositionBeforeSpice": {
+        "status": "INSUFFICIENT SOURCE DATA",
+        "omittedCho": 2.0803125
+      },
+      "after": {
+        "recipeId": "pellava-puuro-pahkinoilla",
+        "servings": 4,
+        "status": "CALCULATED",
+        "unroundedGlycemicLoadPerServing": 0.21453125,
+        "glycemicLoadPerServing": 0.21,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 1.9049999999999998,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 0.9,
+        "confidence": "LOW",
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "pellavansiemenrouhetta",
+            "grams": 35,
+            "fineliRecordId": "research-afcd-F008210",
+            "availableCarbohydratePer100g": 2.8,
+            "availableCarbohydratePerServingG": 0.245,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.245 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "kookosjauhoa",
+            "grams": 20,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": 0.9,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Named Sukrin defatted coconut flour source-model upper only, CONDITIONAL; no flour GI assigned.",
+            "issues": [
+              "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: Sukrin18g EU label carbohydrate/100g,20g/4servings => nominal label-composition upper0.9g; total including possible polyols bounds available carbohydrate under declared composition. Batch variation NOT covered; use of this upper remains conditional and unapproved."
+            ]
+          },
+          {
+            "name": "makeuttamatonta mantelimaitoa",
+            "grams": 250,
+            "fineliRecordId": "research-fineli-34738",
+            "availableCarbohydratePer100g": 0.132,
+            "availableCarbohydratePerServingG": 0.0825,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.083 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "kuohukermaa",
+            "grams": 50,
+            "fineliRecordId": "research-fineli-631",
+            "availableCarbohydratePer100g": 2.9,
+            "availableCarbohydratePerServingG": 0.3625,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 35,
+            "giRecordId": "dairy-category-mean-gi-35",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.126875,
+            "giContributionRange": {
+              "min": 0.126875,
+              "max": 0.126875
+            },
+            "giCandidates": [
+              {
+                "id": "dairy-category-mean-gi-35",
+                "gi": 35,
+                "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "kanelia",
+            "grams": 2.55,
+            "fineliRecordId": "research-afcd-F002963",
+            "availableCarbohydratePer100g": 27.5,
+            "availableCarbohydratePerServingG": 0.1753125,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 50,
+            "giRecordId": "research-only-cinnamon50-pellava-puuro-pahkinoilla",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "ANALOG",
+            "confidence": "LOW",
+            "giContribution": 0.08765625,
+            "giContributionRange": {
+              "min": 0.08765625,
+              "max": 0.08765625
+            },
+            "giCandidates": [
+              {
+                "id": "research-only-cinnamon50-pellava-puuro-pahkinoilla",
+                "gi": 50,
+                "preparation": "Sourced generic teaspoon-density proxy2.55g/recipe; not weighed batch",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "saksanpähkinöitä",
+            "grams": 20,
+            "fineliRecordId": "research-fineli-376",
+            "availableCarbohydratePer100g": 3.2,
+            "availableCarbohydratePerServingG": 0.16,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.160 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "vadelmia",
+            "grams": 30,
+            "fineliRecordId": "research-afcd-F007619",
+            "availableCarbohydratePer100g": 6.9,
+            "availableCarbohydratePerServingG": 0.5175,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.517 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Plain salt contributes no available carbohydrate.",
+            "issues": [
+              "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
+            ]
+          }
+        ],
+        "blockers": []
+      },
+      "spiceChoG": 0.1753125,
+      "policyLimitsUnchanged": {
+        "eachOmissionStrictlyBelow1g": true,
+        "cumulativeOmissionStrictlyBelow2g": true,
+        "spiceAtMost0_5g": true,
+        "cumulativeSpiceAtMost1g": true
+      },
+      "publicationApproved": false,
+      "newPublishedValue": false,
+      "sourceApplicationApproved": false,
+      "allRecipeAndRegistryFilesReadOnly": true,
+      "recipeInput": {
+        "recipeId": "pellava-puuro-pahkinoilla",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "pellavansiemenrouhetta",
+            "grams": 35,
+            "fineliRecordId": "research-afcd-F008210",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 35 g, mapped to Seed, linseed or flaxseed (linseed/flaxseed meal; whole-seed composition proxy, available carbohydrate is below 1 g per serving)."
+          },
+          {
+            "name": "kookosjauhoa",
+            "grams": 20,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Named Sukrin defatted coconut flour source-model upper only, CONDITIONAL; no flour GI assigned.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.9,
+            "upperBoundEvidence": "Sukrin18g EU label carbohydrate/100g,20g/4servings => nominal label-composition upper0.9g; total including possible polyols bounds available carbohydrate under declared composition. Batch variation NOT covered; use of this upper remains conditional and unapproved."
+          },
+          {
+            "name": "makeuttamatonta mantelimaitoa",
+            "grams": 250,
+            "fineliRecordId": "research-fineli-34738",
+            "giRecordId": null,
+            "massEvidence": "Named Fineli34738 unsweetened Alpro almond beverage, food-specific DL100g:250ml=2.5dl=250g. Native availableCHO0.132g/100g, not dairy milk."
+          },
+          {
+            "name": "kuohukermaa",
+            "grams": 50,
+            "fineliRecordId": "research-fineli-631",
+            "giRecordId": "dairy-category-mean-gi-35",
+            "massEvidence": "Fineli631 whipping cream38%, DL100g:50ml=50g. Whole cream retained in heated porridge.",
+            "foodKey": "dairy",
+            "preparationKey": "unflavoured-dairy",
+            "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          },
+          {
+            "name": "kanelia",
+            "grams": 2.55,
+            "fineliRecordId": "research-afcd-F002963",
+            "giRecordId": "research-only-cinnamon50-pellava-puuro-pahkinoilla",
+            "massEvidence": "quantity-sources.json: AUSNUT F002963 measure49452 density0.51g/ml * Finnish level teaspoon5ml =2.55g; generic density proxy, not measured batch.",
+            "foodKey": "research-cinnamon",
+            "preparationKey": "ground-cinnamon-fully-retained",
+            "giMatchEvidence": "Research only; no source, content or publication approval inferred from mechanical CALCULATED."
+          },
+          {
+            "name": "saksanpähkinöitä",
+            "grams": 20,
+            "fineliRecordId": "research-fineli-376",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 20 g, mapped to PÄHKINÄ, SAKSANPÄHKINÄ (walnuts as sold)."
+          },
+          {
+            "name": "vadelmia",
+            "grams": 30,
+            "fineliRecordId": "research-afcd-F007619",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 30 g, mapped to Raspberry, raw (fresh raw raspberries)."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Plain salt contributes no available carbohydrate.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+            "massEvidence": "Recipe-listed salt; not weighed."
+          }
+        ]
+      }
+    }
+  ]
+}

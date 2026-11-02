@@ -1,5 +1,7 @@
 # GK80: kansainväliset GI-lähteet, Codex1
 
+> **Ajantasainen jatkoluovutus:** [followup/CURRENT.md](followup/CURRENT.md). Kanelimassan lähdepuute on ratkaistu; granola on koottu sovellusarviointiin ja pellavapuurosta on lisäehdollinen tuoteversio. Alla säilyy ensimmäisen tutkimusajon historiallinen tilannekuva.
+
 2.11.2026. Paikallinen tutkimusluovutus Codex2:n käyttöön.
 Lähtö-main `061f8170a7bc31244ce787c13e80d3d757f0c859`.
 

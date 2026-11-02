@@ -1,0 +1,83 @@
+{
+  "baselineMain": "061f8170a7bc31244ce787c13e80d3d757f0c859",
+  "sourceHashes": {
+    "docs/nutrition/afcd-release-3-reference.json": "cfb83649b52a1f599b918c6da01721603d7794f4241aa165ffde5a58b37f2afa",
+    "docs/nutrition/fineli-release-20-reference.json": "1205ae1fc65cbc3f56d48823ed4fcd838eb7f64b77467da100fe789dab460bc1",
+    "docs/nutrition/glycemic-index-records.json": "a5ffa3a6e4b4d48a20fee2f31fa50c3aa0ff6355f63dc58bf7b699ade4205c87",
+    "docs/nutrition/glycemic-load-pilot-input.json": "3745f1a1b806b6153151116518a27d9143fadb6f23c6243d24d70f21d98f6a37",
+    "site/scripts/glycemic-load-model.ts": "4398915a27a853ddb2f1cdf802a7b63fb3060a09474684b09ed900c599b3f74f",
+    "docs/nutrition/gk80-release-review/owner-approval.md": "42b2962e58347a3d05eb1886d8f1db299d02ce21b65328973bc83f3dd1d2dcf0"
+  },
+  "sources": {
+    "sukrin": {
+      "url": "https://sukrin.com/en/products/coconut-flour",
+      "retrievedAtUtc": "2026-11-02T18:13:56.266350+00:00",
+      "documentSha256": "a41befb8361b60856e60b1f0477a4bd562641ac2e1f7729d03ccf3480b3e7f49"
+    },
+    "sukrin-store": {
+      "url": "https://butikk.funksjonellmat.no/products/kokosmel-okologisk-fettredusert",
+      "retrievedAtUtc": "2026-11-02T18:13:57.405288+00:00",
+      "documentSha256": "a3fae795b553876b8e7b149f36ef399c5550013ec4cd6482c58d945eae9bb9b8"
+    },
+    "martat": {
+      "url": "https://www.martat.fi/ruoka/ruoanvalmistus/ruoka-aineiden-mitat-ja-painot/",
+      "retrievedAtUtc": "2026-11-02T18:13:57.722935+00:00",
+      "documentSha256": "47483580e72dec9fcb816320268cc053ea6256b8cc6523630bfb9618e9a2e174"
+    },
+    "norway-coconut": {
+      "url": "https://www.matvaretabellen.no/en/coconut-flour/",
+      "retrievedAtUtc": "2026-11-02T18:13:58.109177+00:00",
+      "documentSha256": "67c8079777d438d602abd14f8b9f4618161b4824242117bd7b5c13644dfa7f59"
+    }
+  },
+  "sourceLimitations": {
+    "afcd": {
+      "name": "Australian Food Composition Database (AFCD), Release 3",
+      "publisher": "Food Standards Australia New Zealand (FSANZ)",
+      "release_date": "2025-12",
+      "source_url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+      "licence": "FSANZ Data User Licence Agreement, based on CC BY-SA 3.0 Australia",
+      "licence_url": "https://www.foodstandards.gov.au/science-data/monitoringnutrients/afcd/datauserlicenceagreement",
+      "copyright_notice": "© Food Standards Australia New Zealand (FSANZ), Australian Food Composition Database, Release 3.",
+      "changes_made": "Converted from the published Excel nutrient profiles to JSON; retained selected per-100-g nutrient columns and source food IDs, names, classifications and derivation labels. Nutrient values are unchanged.",
+      "limitation_of_data_statement": "There are limitations associated with food composition databases. Food composition data used in the database or databases may represent an average of the nutrient content of a particular sample of foods and ingredients, determined at a particular time. The nutrient composition of foods and ingredients can vary substantially between batches and brands because of a number of factors, including changes in season, processing practices and ingredient source, and methods of calculation.",
+      "australian_data_statement": "This work is based on Australian data. Australia data may not be appropriate for use in other countries.",
+      "disclaimer": "The source work is provided as-is. FSANZ gives no warranty concerning the contents or accuracy of the work, its fitness for purpose, or absence of errors.",
+      "component_semantics": {
+        "available_carbohydrate_without_sugar_alcohols_g_per_100g": "Sum of available carbohydrates excluding sugar alcohols; AFCD's equation excludes sugar alcohols.",
+        "available_carbohydrate_with_sugar_alcohols_g_per_100g": "AFCD's equation includes sorbitol, mannitol and glycerol. Other sugar alcohols are not included in this equation.",
+        "missing_values": "Null means no value is reported; it does not mean zero.",
+        "use_limit": "Separate reference dataset only. Do not infer a recipe ingredient match by name alone or use this source outside its stated Australian-data limitation."
+      }
+    },
+    "fineli": {
+      "name": "Fineli Food Composition Database, Release 20",
+      "publisher": "Finnish Institute for Health and Welfare (THL)",
+      "retrieved_from": "https://fineli.fi/fineli/fi/avoin-data",
+      "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Source: Finnish Institute for Health and Welfare (THL), Fineli Food Composition Database, Release 20. The source table was converted from semicolon-separated CSVs to JSON; fields were joined by food ID, names were localized to Finnish, and missing values remain null.",
+      "component_semantics": "Fineli nutrient component codes are retained in this importer: CHOAVL (available carbohydrate), FIBT (total dietary fibre), SUGOH (sugar alcohols), PROT (protein), FAT (fat).",
+      "missing_values": "Null means no source value was reported; it does not mean zero.",
+      "portion_mass_semantics": "Fineli foodaddunit MASS values are grams per the listed food-specific unit; no generic spoon, volume, or piece conversion is inferred.",
+      "use_limit": "Reference data only. Recipe matching, edible-portion state, cooking retention, and serving scope still require review."
+    }
+  },
+  "allFilesResearchOnly": true,
+  "wholeRecipeCandidateIds": [
+    "siemengranola-jogurtilla"
+  ],
+  "additionalConditionalIds": [
+    "pellava-puuro-pahkinoilla"
+  ],
+  "approvedOrPublishedNewIds": [],
+  "deduplicatedPotentialOwnIncrease": {
+    "sourceDocumentedPendingApplicationReview": 1,
+    "conditionalAdditional": 1,
+    "maximumIfBothVersionsSeparatelyApproved": 2
+  },
+  "otherWorkers": {
+    "codex2": "No files edited. Its latest snapshot describes one new A candidate plus earlier22, hypothetical179/326; those are not this research result.",
+    "combinedCountNotAsserted": "Reconcile exact ID lists before adding own1/2 to another pipeline."
+  }
+}
