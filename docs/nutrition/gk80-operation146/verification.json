@@ -166,5 +166,11 @@
     "newWithholdings": 0
   },
   "githubCI": "Use the normal Draft PR check for its exact pushed HEAD; no manual workflow reruns.",
-  "publication": "NOT RELEASED; no Ready/merge/deploy authority."
+  "publication": "NOT RELEASED; no Ready/merge/deploy authority.",
+  "correction": {
+    "reason": "First normal PR CI41409644731 failed on whitespace in newly added source text. Trim only trailing whitespace. Self-review also fixed stale echoed macro result hashes in six research-only objects.",
+    "activeRecipeOrNumericChanges": false,
+    "manualWorkflowRerun": false,
+    "targetedFollowup": "Four operation146 regressions and independent Decimal rerun after metadata/hash fix; no aggregate rebuild repeated."
+  }
 }

@@ -2,8 +2,8 @@
   "files": [
     {
       "path": "sources/frenchs-dijon.pdf.txt",
-      "sha256": "307fdee8fa853ccfbc50de87b96a9275ca1e3bc24d34e67716bc5b9cc1223806",
-      "bytes": 4169
+      "sha256": "6be9a558643e4f0504c84061a7a820d633300c654be733b30dcaa1e786cc7185",
+      "bytes": 4040
     },
     {
       "path": "sources/nevo-documents.json",
@@ -27,8 +27,8 @@
     },
     {
       "path": "sources/sumac.pdf.txt",
-      "sha256": "3fc8e1ab1695ae1256d7c7e36839040bc8c21fd8c980584d86ca413dbae1f17a",
-      "bytes": 1469
+      "sha256": "cb5aa9b1c8b9e643cbb7dff3e0dc6ce7d5354bce905e7f94c3a93b736f7ada02",
+      "bytes": 1428
     },
     {
       "path": "sources/usda-selected.json",
@@ -41,13 +41,17 @@
       "url": "https://www.webstaurantstore.com/documents/nutrition/mustard_dijon_32_oz_frenchs.pdf",
       "originalPdfSha256": "f826fd78058dea6e6cfa1e231a991725fefbcab2af0c4ed245ef065a9e3d81d2",
       "textExtraction": "sources/frenchs-dijon.pdf.txt",
-      "visualInspection": "Original PDF page rendered and inspected during source review; extracted facts checked against page."
+      "visualInspection": "Original PDF page rendered and inspected during source review; extracted facts checked against page.",
+      "textNormalization": "Trailing whitespace removed and final LF normalized; words/numbers unchanged. Original PDF SHA remains separately preserved.",
+      "rawTextExtractionSha256": "307fdee8fa853ccfbc50de87b96a9275ca1e3bc24d34e67716bc5b9cc1223806"
     },
     {
       "url": "https://www.culpepers.com.au/uploaded/files/product_documents/sumac_-_ground.pdf",
       "originalPdfSha256": "6e3d87010cd072999ba171da4c6c76cf0e2fb99e8667184746b4e33735966279",
       "textExtraction": "sources/sumac.pdf.txt",
-      "visualInspection": "Original PDF page rendered and inspected during source review; extracted facts checked against page."
+      "visualInspection": "Original PDF page rendered and inspected during source review; extracted facts checked against page.",
+      "textNormalization": "Trailing whitespace removed and final LF normalized; words/numbers unchanged. Original PDF SHA remains separately preserved.",
+      "rawTextExtractionSha256": "3fc8e1ab1695ae1256d7c7e36839040bc8c21fd8c980584d86ca413dbae1f17a"
     }
   ]
 }

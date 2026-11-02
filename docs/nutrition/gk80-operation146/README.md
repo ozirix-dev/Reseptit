@@ -119,7 +119,7 @@ Ensisijaiset lähteet ja ladattujen PDF:ien SHA:t:
 [NEVO 5579](sources/nevo5579-observation.json), [NEVO718](sources/nevo718-observation.json),
 [NEVO19](sources/nevo19-observation.json).
 Alkuperäiset valmistajan PDF:t renderöitiin ja tarkastettiin myös silmämääräisesti.
-Repossa säilyvät muuttamattomat tekstipoiminnat, alkuperäiset URL:t ja PDF-hashit.
+Repossa säilyvät tekstipoiminnat (rivinloppujen tyhjä tila normalisoitu), alkuperäiset URL:t ja PDF-hashit.
 
 ## H. HOLD-esteet
 
@@ -176,3 +176,7 @@ uusinta-ajoja ei pyydetä. CI:n tarkka tila näkyy PR:n Checks-osiossa.
 Carnitas, teehaudutetut munat ja muut avoimet tutkimus-/Cloudflare/SOURCE01/
 NutritionCore/Recipavo-PR:t sekä ReportHub jätetään erilleen.
 Tämä aineisto odottaa omistajan katselmointia. Ei Ready-siirtymää, mergeä tai deployta.
+
+### CI:n todellisen virheen korjaus
+
+Ensimmäinen PR-CI pysähtyi PDF-tekstipoiminnan rivinloppujen tyhjiin merkkeihin ennen varsinaisia tarkistuksia. Ne poistettiin muuttamatta lähteen sanoja tai lukuja; alkuperäinen PDF-hash säilyy. Samassa rajatussa korjauksessa kuuden tutkimusskenaarion makrotulosobjektin kopioitu hash uudelleenlaskettiin vastaamaan jo oikein sidottua skenaariosyötettä. Aktiiviset yhdeksän reseptiä ja niiden tulokset eivät muuttuneet. Hash-johdonmukaisuus lisättiin kohdennettuun regressioon. Korjaus saa normaalin uuden push-CI:n; Actionsin manuaalista uusinta-ajoa ei käytetä.
