@@ -1,0 +1,345 @@
+{
+  "recipeId": "lahi-ita-pistaasijogurtti",
+  "sourcePath": "reseptit/aamupalat/lahi-ita-pistaasijogurtti.md",
+  "sourceLfSha256": "f9a1d41f86c92902bbda7c9f224cbc8de48900ec7726625a482f1ecea794a9e1",
+  "servings": 2,
+  "sourceIngredients": [
+    {
+      "amount": 200,
+      "unit": "g",
+      "item": "jogurtti"
+    },
+    {
+      "amount": 20,
+      "unit": "g",
+      "item": "pistaasi"
+    },
+    {
+      "amount": 5,
+      "unit": "ml",
+      "item": "ruusuvesi"
+    },
+    {
+      "amount": 60,
+      "unit": "g",
+      "item": "granaattiomenan siemeniä"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "item": "suolaa maun mukaan"
+    }
+  ],
+  "sourceIngredientCount": 5,
+  "publicationApproved": false,
+  "sourceApplicationApproved": false,
+  "newPublishedValue": false,
+  "macroPublicationAuthorized": false,
+  "rulesChanged": false,
+  "researchStatus": "SOURCE_DOCUMENTED_NAMED_VERSION_REVIEW_PENDING",
+  "variant": "Plain unflavoured yogurt matching Fineli619; shelled pistachios matching Fineli31212; raw peeled pomegranate arils; Steenbergs Organic Rose Water; no added unspecified protein, beans or vegetables.",
+  "rows": [
+    {
+      "input": {
+        "name": "jogurtti",
+        "grams": 200,
+        "fineliRecordId": "research-fineli-619",
+        "giRecordId": "dairy-category-mean-gi-35",
+        "massEvidence": "Recipe-listed grams; whole edible input retained.",
+        "foodKey": "dairy",
+        "preparationKey": "unflavoured-dairy",
+        "giMatchEvidence": "Existing LOW category proxy; not measured GI of this exact ingredient. Full food identity and recipe preparation reviewed in this named research version."
+      },
+      "food": {
+        "id": "research-fineli-619",
+        "name": "JOGURTTI, MAUSTAMATON, RASVAA 2,5 %, VL",
+        "state": "JOGURTTI, MAUSTAMATON, RASVAA 2,5 %, VL",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/619",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Native Fineli value, including null; not inferred. Direct CHOAVL without fibre/polyol subtraction.",
+        "per100g": {
+          "carbohydrate": 5.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 3.19,
+          "fat": 2.5
+        }
+      },
+      "nativeSourceRecord": {
+        "source_id": "619",
+        "name": "JOGURTTI, MAUSTAMATON, RASVAA 2,5 %, VL",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "YOGHURHI",
+        "food_class": "YOGHURT",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 5.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 3.19,
+          "fat_g_per_100g": 2.5
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "compositionOrigin": "fineli",
+      "sourceId": "619"
+    },
+    {
+      "input": {
+        "name": "pistaasi",
+        "grams": 20,
+        "fineliRecordId": "research-fineli-31212",
+        "giRecordId": "nuts-category-mean-gi-22",
+        "massEvidence": "Recipe-listed grams; whole edible input retained.",
+        "foodKey": "peanut",
+        "preparationKey": "nuts-category-mean",
+        "giMatchEvidence": "Existing LOW category proxy; not measured GI of this exact ingredient. Full food identity and recipe preparation reviewed in this named research version."
+      },
+      "food": {
+        "id": "research-fineli-31212",
+        "name": "PÄHKINÄ, PISTAASIPÄHKINÄ",
+        "state": "PÄHKINÄ, PISTAASIPÄHKINÄ",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/31212",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Native Fineli value, including null; not inferred. Direct CHOAVL without fibre/polyol subtraction.",
+        "per100g": {
+          "carbohydrate": 16.7,
+          "fibre": 10.3,
+          "polyols": null,
+          "protein": 21.35,
+          "fat": 45.97
+        }
+      },
+      "nativeSourceRecord": {
+        "source_id": "31212",
+        "name": "PÄHKINÄ, PISTAASIPÄHKINÄ",
+        "food_type": "FOOD",
+        "process": "DRIE",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "NUTSEED",
+        "food_class": "SNACKVEG",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 16.7,
+          "fibre_g_per_100g": 10.3,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 21.35,
+          "fat_g_per_100g": 45.97
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_M": 1.0,
+          "DL": 60.0,
+          "RKL": 9.0,
+          "TL": 3.0
+        }
+      },
+      "compositionOrigin": "fineli",
+      "sourceId": "31212"
+    },
+    {
+      "input": {
+        "name": "ruusuvesi",
+        "grams": null,
+        "recipeQuantity": {
+          "amount": 5,
+          "unit": "ml",
+          "massGrams": null
+        },
+        "fineliRecordId": null,
+        "giRecordId": null,
+        "excludedReason": "Named Steenbergs Organic Rose Water source-declared zero carbohydrate, not missing data.",
+        "estimatedAvailableCarbohydratePerServingG": 0,
+        "negligibleAssumption": "Manufacturer declares EU carbohydrate0.0g/100g for this pure distilled food-grade rosewater. Under that declared composition available carbohydrate is zero for any finite5ml portion. No density1g/ml or individual-polyol-zero inference. Label precision is not an analytical zero guarantee.",
+        "massEvidence": "Original5ml retained. No gram conversion invented; GK uses only declared-zero composition. Not suitable for macro publication."
+      },
+      "food": null,
+      "sourceId": "steenbergs-organic-rose-water-100ml",
+      "compositionOrigin": "SOURCE_DECLARED_ZERO_NAMED_PRODUCT",
+      "sourceEvidence": {
+        "url": "https://steenbergs.co.uk/product/organic-rose-water/",
+        "retrievedAtUtc": "2026-11-02T18:32:19.626208+00:00",
+        "documentSha256": "e0bf29784736d37b6c1e00d7e71ee0f162a0ca1d4a8deafd004d2630653d85c1"
+      },
+      "sourceComposition": {
+        "basis": "100g",
+        "euCarbohydrateIncludingPolyolsG": 0,
+        "sugarsG": 0,
+        "individualPolyolsG": null,
+        "ingredients": "Rose Water, organic",
+        "preparation": "Double-distilled rose petals with water; food grade; no syrup or alcohol/glycerin flavour concentrate.",
+        "notAnalyticalZeroGuarantee": true
+      }
+    },
+    {
+      "input": {
+        "name": "granaattiomenan siemeniä",
+        "grams": 60,
+        "fineliRecordId": "research-fineli-31555",
+        "giRecordId": "fruit-category-mean-gi-51",
+        "massEvidence": "Recipe-listed grams; whole edible input retained.",
+        "foodKey": "fruit-category-mean",
+        "preparationKey": "category-mean",
+        "giMatchEvidence": "Existing LOW category proxy; not measured GI of this exact ingredient. Full food identity and recipe preparation reviewed in this named research version."
+      },
+      "food": {
+        "id": "research-fineli-31555",
+        "name": "GRANAATTIOMENA, KUORITTU",
+        "state": "GRANAATTIOMENA, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/31555",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Native Fineli value, including null; not inferred. Direct CHOAVL without fibre/polyol subtraction.",
+        "per100g": {
+          "carbohydrate": 14.7,
+          "fibre": null,
+          "polyols": null,
+          "protein": 1.67,
+          "fat": 1.17
+        }
+      },
+      "nativeSourceRecord": {
+        "source_id": "31555",
+        "name": "GRANAATTIOMENA, KUORITTU",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "FRUITOTH",
+        "food_class": "FRUFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 14.7,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 1.67,
+          "fat_g_per_100g": 1.17
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 120.0,
+          "KPL_M": 190.0,
+          "KPL_L": 250.0,
+          "DL": 60.0
+        }
+      },
+      "compositionOrigin": "fineli",
+      "sourceId": "31555"
+    },
+    {
+      "input": {
+        "name": "suolaa maun mukaan",
+        "grams": null,
+        "fineliRecordId": null,
+        "giRecordId": null,
+        "excludedReason": "Plain salt contributes no available carbohydrate.",
+        "estimatedAvailableCarbohydratePerServingG": 0,
+        "negligibleAssumption": "Plain sodium chloride, not a sweetened seasoning blend. Amount does not affect availableCHO; sodium remains unquantified."
+      },
+      "food": null,
+      "compositionOrigin": "PURE_SALT_DOCUMENTED_ZERO",
+      "sourceId": "NaCl"
+    }
+  ],
+  "expected": {
+    "unroundedGk": "4.3665",
+    "omittedChoG": "0",
+    "availableChoG": "11.08"
+  },
+  "approvalStillRequired": [
+    "Named plain-yogurt and rosewater bindings; original generic ingredients are not all possible products.",
+    "Accept source-declared carbohydrate zero at label precision; do not generalize to rose syrup, glycerin/alcohol concentrates or all brands.",
+    "Existing dairy35/nuts22/fruit51 are LOW category proxies. No new human GI measured or newly approved here.",
+    "Recipe contains generic template instructions for unrelated beans/protein. Calculation includes only its five listed ingredients; editorial cleanup is separate."
+  ],
+  "legacyCorrections": {
+    "yogurtG": [
+      100,
+      200
+    ],
+    "pistachioG": [
+      100,
+      20
+    ],
+    "rosewaterMl": [
+      200,
+      5
+    ],
+    "pomegranateG": [
+      190,
+      60
+    ],
+    "salt": "represented, unweighed"
+  }
+}

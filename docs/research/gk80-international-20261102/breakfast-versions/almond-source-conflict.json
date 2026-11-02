@@ -1,0 +1,162 @@
+{
+  "kind": "REJECTED_SHORTCUT_AND_SIX_RECIPE_SENSITIVITY_SCREEN",
+  "humanGiFound": false,
+  "newCalculableWholeRecipes": 0,
+  "norway": {
+    "url": "https://www.matvaretabellen.no/en/almond-flour/",
+    "documentSha256": "76624fed351f9b997e8a4f6594277a37c92355057685fee7f102f9e42ec60208",
+    "foodId": "05.420",
+    "choGPer100g": 4,
+    "sugarsGPer100g": 4,
+    "starchGPer100g": 0,
+    "starchStatus": "Host-system imputation, not a measured starch result",
+    "upstreamForOtherMacros": "Swedish National Food Agency2017.12.15",
+    "carbohydrateMethod": "MI0181 sum of sugars and starch",
+    "individualPolyols": null,
+    "decision": "No promotion to robust four-recipe source solution without resolving the imputed starch and cross-source conflict."
+  },
+  "sweden": {
+    "url": "https://dataportal.livsmedelsverket.se/livsmedel/api/v1/livsmedel/6087/naringsvarden",
+    "documentSha256": "38e0b7f3e43a89a91915aa2cce70c294858d4aa762c7d8b65188d767e74a9d57",
+    "selectedNativeRows": [
+      {
+        "namn": "Vatten",
+        "euroFIRkod": "WATER",
+        "varde": 4.3,
+        "enhet": "g",
+        "viktGram": 100,
+        "metodindikatorkod": "MI1018"
+      },
+      {
+        "namn": "Sockerarter, totalt",
+        "euroFIRkod": "SUGAR",
+        "varde": 4.0,
+        "enhet": "g",
+        "viktGram": 100,
+        "berakning": "0,000+0,000+3,990+0,000+0,000",
+        "metodindikatorkod": "MI0512"
+      },
+      {
+        "namn": "Kolhydrater, tillgängliga",
+        "euroFIRkod": "CHO",
+        "varde": 7.4,
+        "enhet": "g",
+        "viktGram": 100,
+        "berakning": "100,0-(4,340+2,960+22,43+53,100+9,800+0,000)",
+        "metodindikatorkod": "MI0183"
+      }
+    ],
+    "interpretation": "7.4g is by-difference carbohydrate including possible polyols/organic acids under the source definition. Do NOT call the3.4g difference measured starch or infer polyols0. Methods differ; it does not directly falsify the Norwegian4g either. No invented conversion."
+  },
+  "dabas": {
+    "url": "https://www.dabas.com/productsheet/07331746227745/pdf",
+    "documentSha256": "5918736c9a5af5247d33bec48324c0c40b382fa04dec156fcf2fa14d41687cae",
+    "product": "Boden & Lindeberg40445,300g",
+    "pdfPageOneBased": 2,
+    "visualCheck": true,
+    "actualCarbohydrateGPer100g": 8.8,
+    "actualSaturatedFatGPer100g": 4,
+    "decision": "Search snippet4g is not carbohydrate. Reject that numerical shortcut."
+  },
+  "femtorp": {
+    "url": "https://femtorp.se/product.html/mandelmjol",
+    "documentSha256": "ec9536a14482c603841c2b5063af9946af2d869f3fc0b025af925a10ec540682",
+    "product": "381611,1kg",
+    "declaredEuCarbohydrateGPer100g": 4,
+    "polyols": null,
+    "decision": "Named label upper only, not verified native sugar+starch or biological maximum. No four new openings counted."
+  },
+  "recipes": [
+    {
+      "recipeId": "keto-korvapuustit",
+      "sourceLfSha256": "84f4ef23369a64393f922fd5df3f22079ca56ddcd8e5963d2d5484542252ba24",
+      "flourG": 200.0,
+      "servings": 8,
+      "flourChoPerServingScenarios": {
+        "AFCD_native5_4": "1.35",
+        "Norway_native4_0": "1",
+        "Sweden_residual7_4_includes_possible_polyols": "1.85",
+        "Femtorp_declared4_0_upper_only": "1",
+        "Meira_or_Risenta8_8_label": "2.2"
+      },
+      "norwayNominalBelow1g": false,
+      "decision": "HOLD. Only a flour-portion screen, not complete recipe calculation or source acceptance. No source selected because it happens to cross the omission threshold."
+    },
+    {
+      "recipeId": "rahkapiirakka-vhh",
+      "sourceLfSha256": "e902035d36263b4ad41d337d5fed8283d76e8fffcbfc87c28d53076c075dfdab",
+      "flourG": 150.0,
+      "servings": 8,
+      "flourChoPerServingScenarios": {
+        "AFCD_native5_4": "1.0125",
+        "Norway_native4_0": "0.75",
+        "Sweden_residual7_4_includes_possible_polyols": "1.3875",
+        "Femtorp_declared4_0_upper_only": "0.75",
+        "Meira_or_Risenta8_8_label": "1.65"
+      },
+      "norwayNominalBelow1g": true,
+      "decision": "HOLD. Only a flour-portion screen, not complete recipe calculation or source acceptance. No source selected because it happens to cross the omission threshold."
+    },
+    {
+      "recipeId": "vhh-lihapiirakka",
+      "sourceLfSha256": "8b5071d4c6b08847a0855b630b34ee55471ed00cf6f61b9687e25f56f3ec96a9",
+      "flourG": 200.0,
+      "servings": 8,
+      "flourChoPerServingScenarios": {
+        "AFCD_native5_4": "1.35",
+        "Norway_native4_0": "1",
+        "Sweden_residual7_4_includes_possible_polyols": "1.85",
+        "Femtorp_declared4_0_upper_only": "1",
+        "Meira_or_Risenta8_8_label": "2.2"
+      },
+      "norwayNominalBelow1g": false,
+      "decision": "HOLD. Only a flour-portion screen, not complete recipe calculation or source acceptance. No source selected because it happens to cross the omission threshold."
+    },
+    {
+      "recipeId": "vhh-omenapiirakka",
+      "sourceLfSha256": "a22e61974772a696521e6a70376e7eeb132fb81668a5a04df4da700a77952536",
+      "flourG": 150.0,
+      "servings": 8,
+      "flourChoPerServingScenarios": {
+        "AFCD_native5_4": "1.0125",
+        "Norway_native4_0": "0.75",
+        "Sweden_residual7_4_includes_possible_polyols": "1.3875",
+        "Femtorp_declared4_0_upper_only": "0.75",
+        "Meira_or_Risenta8_8_label": "1.65"
+      },
+      "norwayNominalBelow1g": true,
+      "decision": "HOLD. Only a flour-portion screen, not complete recipe calculation or source acceptance. No source selected because it happens to cross the omission threshold."
+    },
+    {
+      "recipeId": "vhh-raparperipiirakka",
+      "sourceLfSha256": "3a467afacaac68ffe88a084834e3a084e0563f85432725543e24d67e232454ca",
+      "flourG": 150.0,
+      "servings": 8,
+      "flourChoPerServingScenarios": {
+        "AFCD_native5_4": "1.0125",
+        "Norway_native4_0": "0.75",
+        "Sweden_residual7_4_includes_possible_polyols": "1.3875",
+        "Femtorp_declared4_0_upper_only": "0.75",
+        "Meira_or_Risenta8_8_label": "1.65"
+      },
+      "norwayNominalBelow1g": true,
+      "decision": "HOLD. Only a flour-portion screen, not complete recipe calculation or source acceptance. No source selected because it happens to cross the omission threshold."
+    },
+    {
+      "recipeId": "vhh-runebergintortut",
+      "sourceLfSha256": "e579594baf3d71bd324b1051ab7df2ab2da81c17412ad1ea3d75637d4e5f1cc3",
+      "flourG": 120.0,
+      "servings": 6,
+      "flourChoPerServingScenarios": {
+        "AFCD_native5_4": "1.08",
+        "Norway_native4_0": "0.8",
+        "Sweden_residual7_4_includes_possible_polyols": "1.48",
+        "Femtorp_declared4_0_upper_only": "0.8",
+        "Meira_or_Risenta8_8_label": "1.76"
+      },
+      "norwayNominalBelow1g": true,
+      "decision": "HOLD. Only a flour-portion screen, not complete recipe calculation or source acceptance. No source selected because it happens to cross the omission threshold."
+    }
+  ],
+  "methodChangeApplied": false
+}

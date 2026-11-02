@@ -1,5 +1,7 @@
 # GK80: kansainväliset GI-lähteet, Codex1
 
+> **Uusin luovutus:** [breakfast-versions/CURRENT.md](breakfast-versions/CURRENT.md). Pistaasijogurtista on yksi uusi nimetty laskentaehdokas. Chiavanukkaan lähdetuki kuuluu Codex2:n olemassa olevaan tapaukseen, eikä sitä lasketa omaksi avaukseksi. Julkaistu kattavuus156/326.
+
 > **Ajantasainen jatkoluovutus:** [followup/CURRENT.md](followup/CURRENT.md). Kanelimassan lähdepuute on ratkaistu; granola on koottu sovellusarviointiin ja pellavapuurosta on lisäehdollinen tuoteversio. Alla säilyy ensimmäisen tutkimusajon historiallinen tilannekuva.
 
 2.11.2026. Paikallinen tutkimusluovutus Codex2:n käyttöön.

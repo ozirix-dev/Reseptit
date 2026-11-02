@@ -1,0 +1,190 @@
+{
+  "baselineMain": "061f8170a7bc31244ce787c13e80d3d757f0c859",
+  "sourceHashes": {
+    "docs/nutrition/fineli-release-20-reference.json": "1205ae1fc65cbc3f56d48823ed4fcd838eb7f64b77467da100fe789dab460bc1",
+    "docs/nutrition/afcd-release-3-reference.json": "cfb83649b52a1f599b918c6da01721603d7794f4241aa165ffde5a58b37f2afa",
+    "docs/nutrition/glycemic-index-records.json": "a5ffa3a6e4b4d48a20fee2f31fa50c3aa0ff6355f63dc58bf7b699ade4205c87",
+    "docs/nutrition/glycemic-load-pilot-input.json": "3745f1a1b806b6153151116518a27d9143fadb6f23c6243d24d70f21d98f6a37",
+    "site/scripts/glycemic-load-model.ts": "4398915a27a853ddb2f1cdf802a7b63fb3060a09474684b09ed900c599b3f74f"
+  },
+  "sources": {
+    "rose": {
+      "url": "https://steenbergs.co.uk/product/organic-rose-water/",
+      "retrievedAtUtc": "2026-11-02T18:32:19.626208+00:00",
+      "documentSha256": "e0bf29784736d37b6c1e00d7e71ee0f162a0ca1d4a8deafd004d2630653d85c1"
+    },
+    "raspberry-identity": {
+      "url": "https://fineli.fi/fineli/en/elintarvikkeet/448",
+      "retrievedAtUtc": "2026-11-02T18:32:19.628299+00:00",
+      "identityCaptureSha256": "ae0706b83a5ee38419c4e7f404fb2317237112d0ca097682cf4e33a2f0927655",
+      "verifiedIdentityFacts": {
+        "sourceUrl": "https://fineli.fi/fineli/en/elintarvikkeet/448",
+        "foodId": "448",
+        "officialEnglishTitle": "Raspberry Rubus idaeus",
+        "processing": "No treatment",
+        "ingredientClassification": "Berries",
+        "foodUseClassification": "Berries",
+        "ediblePortionPercent": 100,
+        "captureKind": "Selected identity facts transcribed from successful web tool open; direct requests returned403. This is not a hash of the publisher HTML."
+      }
+    },
+    "bilberry-identity": {
+      "url": "https://fineli.fi/fineli/en/elintarvikkeet/442",
+      "retrievedAtUtc": "2026-11-02T18:32:19.628840+00:00",
+      "identityCaptureSha256": "53e5c3d8052089ee42708de8610a516c3a15dcd140bd0931c38970e37ba6b910",
+      "verifiedIdentityFacts": {
+        "sourceUrl": "https://fineli.fi/fineli/en/elintarvikkeet/442",
+        "foodId": "442",
+        "officialEnglishTitle": "Blueberry, Bilberry Vaccinium myrtillus",
+        "processing": "No treatment",
+        "ingredientClassification": "Berries",
+        "foodUseClassification": "Berries",
+        "ediblePortionPercent": 100,
+        "captureKind": "Selected identity facts transcribed from successful web tool open; direct requests returned403. This is not a hash of the publisher HTML."
+      }
+    }
+  },
+  "giRecords": [
+    {
+      "id": "dairy-category-mean-gi-35",
+      "gi": 35,
+      "foodKey": "dairy",
+      "preparationKey": "unflavoured-dairy",
+      "food": "Dairy products, category mean",
+      "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1 summary: dairy products mean GI 35 ± 11 (n=186)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "qualityEvidence": "Published category mean from ISO-screened individual food measurements. This is not a cream-cheese-specific value and is used only as a clearly labelled category-level proxy."
+      },
+      "note": "Category mean, not a measured GI for the recipe's cream cheese."
+    },
+    {
+      "id": "nuts-category-mean-gi-22",
+      "gi": 22,
+      "foodKey": "peanut",
+      "preparationKey": "nuts-category-mean",
+      "food": "Nuts, category mean",
+      "preparation": "Nut category mean",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1, nuts: mean 22, SD 2, n=3",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published category mean with only three observations; not peanut-specific."
+      },
+      "note": "Low-confidence category mean for peanuts.",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "metadataCorrection": "Unverified participant-count field withheld in research copy; numeric22 only a LOW category proxy. Original registry hash preserved."
+    },
+    {
+      "id": "fruit-category-mean-gi-51",
+      "gi": 51,
+      "foodKey": "fruit-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Fruits and fruit products category mean",
+      "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1; mean of Supplemental Table 1 entries for Fruits and fruit products (n=105)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+      },
+      "note": "fruit category mean; used only as a broad tamarind-paste analogue",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    }
+  ],
+  "giMetadataCaveat": "Existing nuts card source.participants=3 is not evidence of trial participant count; no sample-size claim is used. Frozen registry unchanged. Three-food-entry wording also requires primary Table1 verification before promotion.",
+  "nativeSourceAttributions": {
+    "fineli": {
+      "name": "Fineli Food Composition Database, Release 20",
+      "publisher": "Finnish Institute for Health and Welfare (THL)",
+      "retrieved_from": "https://fineli.fi/fineli/fi/avoin-data",
+      "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Source: Finnish Institute for Health and Welfare (THL), Fineli Food Composition Database, Release 20. The source table was converted from semicolon-separated CSVs to JSON; fields were joined by food ID, names were localized to Finnish, and missing values remain null.",
+      "component_semantics": "Fineli nutrient component codes are retained in this importer: CHOAVL (available carbohydrate), FIBT (total dietary fibre), SUGOH (sugar alcohols), PROT (protein), FAT (fat).",
+      "missing_values": "Null means no source value was reported; it does not mean zero.",
+      "portion_mass_semantics": "Fineli foodaddunit MASS values are grams per the listed food-specific unit; no generic spoon, volume, or piece conversion is inferred.",
+      "use_limit": "Reference data only. Recipe matching, edible-portion state, cooking retention, and serving scope still require review."
+    },
+    "afcd": {
+      "name": "Australian Food Composition Database (AFCD), Release 3",
+      "publisher": "Food Standards Australia New Zealand (FSANZ)",
+      "release_date": "2025-12",
+      "source_url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+      "licence": "FSANZ Data User Licence Agreement, based on CC BY-SA 3.0 Australia",
+      "licence_url": "https://www.foodstandards.gov.au/science-data/monitoringnutrients/afcd/datauserlicenceagreement",
+      "copyright_notice": "© Food Standards Australia New Zealand (FSANZ), Australian Food Composition Database, Release 3.",
+      "changes_made": "Converted from the published Excel nutrient profiles to JSON; retained selected per-100-g nutrient columns and source food IDs, names, classifications and derivation labels. Nutrient values are unchanged.",
+      "limitation_of_data_statement": "There are limitations associated with food composition databases. Food composition data used in the database or databases may represent an average of the nutrient content of a particular sample of foods and ingredients, determined at a particular time. The nutrient composition of foods and ingredients can vary substantially between batches and brands because of a number of factors, including changes in season, processing practices and ingredient source, and methods of calculation.",
+      "australian_data_statement": "This work is based on Australian data. Australia data may not be appropriate for use in other countries.",
+      "disclaimer": "The source work is provided as-is. FSANZ gives no warranty concerning the contents or accuracy of the work, its fitness for purpose, or absence of errors.",
+      "component_semantics": {
+        "available_carbohydrate_without_sugar_alcohols_g_per_100g": "Sum of available carbohydrates excluding sugar alcohols; AFCD's equation excludes sugar alcohols.",
+        "available_carbohydrate_with_sugar_alcohols_g_per_100g": "AFCD's equation includes sorbitol, mannitol and glycerol. Other sugar alcohols are not included in this equation.",
+        "missing_values": "Null means no value is reported; it does not mean zero.",
+        "use_limit": "Separate reference dataset only. Do not infer a recipe ingredient match by name alone or use this source outside its stated Australian-data limitation."
+      }
+    }
+  },
+  "distinctNewNamedRecipeIds": [
+    "lahi-ita-pistaasijogurtti"
+  ],
+  "newPublishedRecipeIds": [],
+  "newApprovedRecipeIds": [],
+  "berryIdentitySupportRecipeIds": [
+    "marjainen-chiavanukas",
+    "vhh-mustikkapiirakka",
+    "rahka-marjakerroskulho"
+  ],
+  "otherTwoBerryRecipesCountedAsWholeOpenings": false,
+  "overlap": {
+    "priority77SupportOnly": [
+      "marjainen-chiavanukas"
+    ],
+    "newOwnCandidatesInPriority77": [],
+    "newOwnCandidatesInJoint33": [],
+    "codex2NoodleCoconutFamilyExcluded": true,
+    "audit": "Late exact-ID verification caught priority77 membership before repository writes. No further chia research; already produced identity/optional-branch evidence retained as support only, never counted as own opening."
+  },
+  "modelPreflight": {
+    "configuredModel": "gpt-6.1-sol",
+    "configuredEffort": "high",
+    "liveSelectionIndependentlyExposed": false,
+    "modelSwitched": false
+  },
+  "protectedPublishedCoverage": {
+    "calculated": 156,
+    "denominator": 326,
+    "target": 261,
+    "gap": 105
+  },
+  "codex2SupportOnlyRecipeIds": [
+    "marjainen-chiavanukas"
+  ],
+  "overlapSourceHashes": {
+    "priority77.csv": "8bc3a5c9465b3c89aa57464998b4d2530bd9335dc34febc0caad56e3bf1598a9",
+    "joint-proposal-index.csv": "344abad19adce21def93830d72e1c6a17132913727ca66755c74c94cea4ff2da"
+  }
+}

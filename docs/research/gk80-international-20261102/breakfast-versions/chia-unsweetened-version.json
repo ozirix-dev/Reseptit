@@ -1,0 +1,595 @@
+{
+  "recipeId": "marjainen-chiavanukas",
+  "sourcePath": "reseptit/aamupalat/marjainen-chiavanukas.md",
+  "sourceLfSha256": "c4c9c7a14345199304e7221fab28633a4a9abeffa3c99afc780cb5360824ec22",
+  "servings": 4,
+  "sourceIngredients": [
+    {
+      "amount": 45,
+      "unit": "g",
+      "item": "chia-siemeniä"
+    },
+    {
+      "amount": 250,
+      "unit": "ml",
+      "item": "makeuttamatonta mantelimaitoa"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "maustamatonta kreikkalaista jogurttia"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "vadelmia"
+    },
+    {
+      "amount": 50,
+      "unit": "g",
+      "item": "mustikoita"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "vaniljauutetta"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "item": "makeutusainetta maun mukaan"
+    }
+  ],
+  "sourceIngredientCount": 7,
+  "publicationApproved": false,
+  "sourceApplicationApproved": false,
+  "newPublishedValue": false,
+  "macroPublicationAuthorized": false,
+  "rulesChanged": false,
+  "researchStatus": "SOURCE_DOCUMENTED_NAMED_VERSION_REVIEW_PENDING",
+  "variant": "Explicit no-added-sweetener branch allowed by preparation step3. Named unsweetened Alpro almond beverage Fineli34738 and plain Greek7% yogurt Fineli34611; raw berries added after chilling. No coconut-beverage substitution.",
+  "rows": [
+    {
+      "input": {
+        "name": "chia-siemeniä",
+        "grams": 45,
+        "fineliRecordId": "research-fineli-34847",
+        "giRecordId": null,
+        "massEvidence": "Recipe-listed grams; whole edible input retained."
+      },
+      "food": {
+        "id": "research-fineli-34847",
+        "name": "CHIANSIEMEN",
+        "state": "CHIANSIEMEN",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34847",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Native Fineli value, including null; not inferred. Direct CHOAVL without fibre/polyol subtraction.",
+        "per100g": {
+          "carbohydrate": 0.2,
+          "fibre": 34.4,
+          "polyols": 0.0,
+          "protein": 22.9,
+          "fat": 33.9
+        }
+      },
+      "nativeSourceRecord": {
+        "source_id": "34847",
+        "name": "CHIANSIEMEN",
+        "food_type": "FOOD",
+        "process": "DRIE",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "NUTSEED",
+        "food_class": "SNACKVEG",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.2,
+          "fibre_g_per_100g": 34.4,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 22.9,
+          "fat_g_per_100g": 33.9
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "TL": 3.0,
+          "RKL": 10.0,
+          "DL": 65.0
+        }
+      },
+      "compositionOrigin": "fineli",
+      "sourceId": "34847"
+    },
+    {
+      "input": {
+        "name": "makeuttamatonta mantelimaitoa",
+        "grams": 250,
+        "fineliRecordId": "research-fineli-34738",
+        "giRecordId": null,
+        "massEvidence": "250ml=2.5dl; this exact Fineli34738 record has DL100g =>250g, not a generic liquid density."
+      },
+      "food": {
+        "id": "research-fineli-34738",
+        "name": "MANTELIJUOMA, MAKEUTTAMATON, ALPRO",
+        "state": "MANTELIJUOMA, MAKEUTTAMATON, ALPRO",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34738",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Native Fineli value, including null; not inferred. Direct CHOAVL without fibre/polyol subtraction.",
+        "per100g": {
+          "carbohydrate": 0.132,
+          "fibre": 0.144,
+          "polyols": 0.0,
+          "protein": 0.48,
+          "fat": 1.025
+        }
+      },
+      "nativeSourceRecord": {
+        "source_id": "34738",
+        "name": "MANTELIJUOMA, MAKEUTTAMATON, ALPRO",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "LEGULIQ",
+        "food_class": "VEGJUICE",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.132,
+          "fibre_g_per_100g": 0.144,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.48,
+          "fat_g_per_100g": 1.025
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "compositionOrigin": "fineli",
+      "sourceId": "34738"
+    },
+    {
+      "input": {
+        "name": "maustamatonta kreikkalaista jogurttia",
+        "grams": 100,
+        "fineliRecordId": "research-fineli-34611",
+        "giRecordId": "dairy-category-mean-gi-35",
+        "massEvidence": "Recipe-listed grams; whole edible input retained.",
+        "foodKey": "dairy",
+        "preparationKey": "unflavoured-dairy",
+        "giMatchEvidence": "Existing LOW category proxy; not measured GI of this exact ingredient. Full food identity and recipe preparation reviewed in this named research version."
+      },
+      "food": {
+        "id": "research-fineli-34611",
+        "name": "JOGURTTI, MAUSTAMATON, KREIKKALAINEN, RASVAA 7 %, LAKTOOSITON",
+        "state": "JOGURTTI, MAUSTAMATON, KREIKKALAINEN, RASVAA 7 %, LAKTOOSITON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34611",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Native Fineli value, including null; not inferred. Direct CHOAVL without fibre/polyol subtraction.",
+        "per100g": {
+          "carbohydrate": 2.917,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 8.07,
+          "fat": 7.003
+        }
+      },
+      "nativeSourceRecord": {
+        "source_id": "34611",
+        "name": "JOGURTTI, MAUSTAMATON, KREIKKALAINEN, RASVAA 7 %, LAKTOOSITON",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "YOGHURHI",
+        "food_class": "YOGHURT",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 2.917,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 8.07,
+          "fat_g_per_100g": 7.003
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "compositionOrigin": "fineli",
+      "sourceId": "34611"
+    },
+    {
+      "input": {
+        "name": "vadelmia",
+        "grams": 100,
+        "fineliRecordId": "research-fineli-448",
+        "giRecordId": "fruit-category-mean-gi-51",
+        "massEvidence": "Recipe-listed grams; whole edible input retained.",
+        "foodKey": "fruit-category-mean",
+        "preparationKey": "category-mean",
+        "giMatchEvidence": "Existing LOW category proxy; not measured GI of this exact ingredient. Full food identity and recipe preparation reviewed in this named research version."
+      },
+      "food": {
+        "id": "research-fineli-448",
+        "name": "VADELMA / Raspberry Rubus idaeus",
+        "state": "VADELMA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/448",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Native Fineli value, including null; not inferred. Direct CHOAVL without fibre/polyol subtraction.",
+        "per100g": {
+          "carbohydrate": 5.715,
+          "fibre": 3.7,
+          "polyols": null,
+          "protein": 1.015,
+          "fat": 0.789
+        },
+        "sourceOriginalName": "VADELMA",
+        "verifiedEnglishName": "Raspberry Rubus idaeus",
+        "nameEvidence": {
+          "url": "https://fineli.fi/fineli/en/elintarvikkeet/448",
+          "retrievedAtUtc": "2026-11-02T18:32:19.628299+00:00",
+          "identityCaptureSha256": "ae0706b83a5ee38419c4e7f404fb2317237112d0ca097682cf4e33a2f0927655",
+          "verifiedIdentityFacts": {
+            "sourceUrl": "https://fineli.fi/fineli/en/elintarvikkeet/448",
+            "foodId": "448",
+            "officialEnglishTitle": "Raspberry Rubus idaeus",
+            "processing": "No treatment",
+            "ingredientClassification": "Berries",
+            "foodUseClassification": "Berries",
+            "ediblePortionPercent": 100,
+            "captureKind": "Selected identity facts transcribed from successful web tool open; direct requests returned403. This is not a hash of the publisher HTML."
+          }
+        },
+        "identityExplanation": "Same Fineli ID, species and raw-berry class verified on official English page; nutrient values remain pinned Release20. Bilingual alias fixes literal family recognition, not scientific food identity."
+      },
+      "nativeSourceRecord": {
+        "source_id": "448",
+        "name": "VADELMA",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "BERRY",
+        "food_class": "BERFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 5.715,
+          "fibre_g_per_100g": 3.7,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 1.015,
+          "fat_g_per_100g": 0.789
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 50.0,
+          "RKL": 10.0
+        }
+      },
+      "compositionOrigin": "fineli",
+      "sourceId": "448"
+    },
+    {
+      "input": {
+        "name": "mustikoita",
+        "grams": 50,
+        "fineliRecordId": "research-fineli-442",
+        "giRecordId": "fruit-category-mean-gi-51",
+        "massEvidence": "Recipe-listed grams; whole edible input retained.",
+        "foodKey": "fruit-category-mean",
+        "preparationKey": "category-mean",
+        "giMatchEvidence": "Existing LOW category proxy; not measured GI of this exact ingredient. Full food identity and recipe preparation reviewed in this named research version."
+      },
+      "food": {
+        "id": "research-fineli-442",
+        "name": "MUSTIKKA, METSÄMUSTIKKA / Blueberry, Bilberry Vaccinium myrtillus",
+        "state": "MUSTIKKA, METSÄMUSTIKKA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/442",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Native Fineli value, including null; not inferred. Direct CHOAVL without fibre/polyol subtraction.",
+        "per100g": {
+          "carbohydrate": 10.182,
+          "fibre": 3.1,
+          "polyols": null,
+          "protein": 0.821,
+          "fat": 1.059
+        },
+        "sourceOriginalName": "MUSTIKKA, METSÄMUSTIKKA",
+        "verifiedEnglishName": "Blueberry, Bilberry Vaccinium myrtillus",
+        "nameEvidence": {
+          "url": "https://fineli.fi/fineli/en/elintarvikkeet/442",
+          "retrievedAtUtc": "2026-11-02T18:32:19.628840+00:00",
+          "identityCaptureSha256": "53e5c3d8052089ee42708de8610a516c3a15dcd140bd0931c38970e37ba6b910",
+          "verifiedIdentityFacts": {
+            "sourceUrl": "https://fineli.fi/fineli/en/elintarvikkeet/442",
+            "foodId": "442",
+            "officialEnglishTitle": "Blueberry, Bilberry Vaccinium myrtillus",
+            "processing": "No treatment",
+            "ingredientClassification": "Berries",
+            "foodUseClassification": "Berries",
+            "ediblePortionPercent": 100,
+            "captureKind": "Selected identity facts transcribed from successful web tool open; direct requests returned403. This is not a hash of the publisher HTML."
+          }
+        },
+        "identityExplanation": "Same Fineli ID, species and raw-berry class verified on official English page; nutrient values remain pinned Release20. Bilingual alias fixes literal family recognition, not scientific food identity."
+      },
+      "nativeSourceRecord": {
+        "source_id": "442",
+        "name": "MUSTIKKA, METSÄMUSTIKKA",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "BERRY",
+        "food_class": "BERFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 10.182,
+          "fibre_g_per_100g": 3.1,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 0.821,
+          "fat_g_per_100g": 1.059
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 60.0,
+          "RKL": 12.0
+        }
+      },
+      "compositionOrigin": "fineli",
+      "sourceId": "442"
+    },
+    {
+      "input": {
+        "name": "vaniljauutetta",
+        "grams": 4.2,
+        "fineliRecordId": "research-afcd-F009350",
+        "giRecordId": null,
+        "massEvidence": "USDAFDC173471 vanilla extract, portion92603:1tsp=4.2g. Explicit ingredient-specific cross-database household-measure proxy; no universal liquid density."
+      },
+      "food": {
+        "id": "research-afcd-F009350",
+        "name": "Vanilla bean extract",
+        "state": "Vanilla bean extract, not vanilla sugar or paste",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Native without-sugar-alcohol available CHO; individual unknown polyols remain null.",
+        "per100g": {
+          "carbohydrate": 12.6,
+          "fibre": 0,
+          "polyols": null,
+          "protein": 0.1,
+          "fat": 0.1
+        }
+      },
+      "nativeSourceRecord": {
+        "source_id": "F009350",
+        "classification": 31401,
+        "derivation": "Borrowed",
+        "name": "Vanilla bean extract",
+        "protein_g_per_100g": 0.1,
+        "fat_g_per_100g": 0.1,
+        "fibre_g_per_100g": 0,
+        "glycerol_g_per_100g": null,
+        "erythritol_g_per_100g": null,
+        "maltitol_g_per_100g": null,
+        "mannitol_g_per_100g": null,
+        "xylitol_g_per_100g": null,
+        "sorbitol_g_per_100g": null,
+        "available_carbohydrate_without_sugar_alcohols_g_per_100g": 12.6,
+        "available_carbohydrate_with_sugar_alcohols_g_per_100g": 12.6
+      },
+      "compositionOrigin": "afcd",
+      "sourceId": "F009350",
+      "quantityEvidence": {
+        "url": "https://fdc.nal.usda.gov/food-details/173471/nutrients",
+        "documentSha256": "1bd268d9dbb9537556bf1f78dc49dcb066705e71f1ed7b7060cfc27ceee650b3",
+        "foodDescription": "Vanilla extract",
+        "foodPortion": {
+          "id": 92603,
+          "gramWeight": 4.2,
+          "sequenceNumber": 1,
+          "amount": 1.0,
+          "modifier": "tsp",
+          "measureUnit": {
+            "id": 9999,
+            "name": "undetermined",
+            "abbreviation": "undetermined"
+          }
+        },
+        "use": "Mass only. Available carbohydrate remains AFCD12.6, not USDA total carbohydrate."
+      }
+    },
+    {
+      "input": {
+        "name": "makeutusainetta maun mukaan",
+        "grams": 0,
+        "recipeQuantity": {
+          "amount": null,
+          "unit": null,
+          "massGrams": 0
+        },
+        "fineliRecordId": null,
+        "giRecordId": null,
+        "excludedReason": "Optional sweetener intentionally not used in this explicitly unsweetened branch.",
+        "estimatedAvailableCarbohydratePerServingG": 0,
+        "negligibleAssumption": "Preparation step3 says sweeten if desired. This named variant adds none (0g), not an assertion that an unidentified sweetener has0CHO."
+      },
+      "food": null,
+      "compositionOrigin": "EXPLICIT_OPTION_NOT_USED",
+      "sourceId": "recipe-step3-unsweetened-branch"
+    }
+  ],
+  "expected": {
+    "unroundedGk": "1.6330025",
+    "omittedChoG": "0.2373",
+    "availableChoG": "3.66805"
+  },
+  "approvalStillRequired": [
+    "Bind the result to this explicitly unsweetened branch, not arbitrary sweeteners or the coconut-drink substitution.",
+    "Verify named dairy/almond-beverage composition and vanilla household measure proxy.",
+    "Existing GI35/51 category method is unchanged and LOW; no direct measured berry GI claimed.",
+    "Official bilingual identities are faithful aliases; integration must retain species/food-ID checks, not make any renamed ingredient pass."
+  ],
+  "identityEvidence": {
+    "448": {
+      "url": "https://fineli.fi/fineli/en/elintarvikkeet/448",
+      "retrievedAtUtc": "2026-11-02T18:32:19.628299+00:00",
+      "identityCaptureSha256": "ae0706b83a5ee38419c4e7f404fb2317237112d0ca097682cf4e33a2f0927655",
+      "verifiedIdentityFacts": {
+        "sourceUrl": "https://fineli.fi/fineli/en/elintarvikkeet/448",
+        "foodId": "448",
+        "officialEnglishTitle": "Raspberry Rubus idaeus",
+        "processing": "No treatment",
+        "ingredientClassification": "Berries",
+        "foodUseClassification": "Berries",
+        "ediblePortionPercent": 100,
+        "captureKind": "Selected identity facts transcribed from successful web tool open; direct requests returned403. This is not a hash of the publisher HTML."
+      }
+    },
+    "442": {
+      "url": "https://fineli.fi/fineli/en/elintarvikkeet/442",
+      "retrievedAtUtc": "2026-11-02T18:32:19.628840+00:00",
+      "identityCaptureSha256": "53e5c3d8052089ee42708de8610a516c3a15dcd140bd0931c38970e37ba6b910",
+      "verifiedIdentityFacts": {
+        "sourceUrl": "https://fineli.fi/fineli/en/elintarvikkeet/442",
+        "foodId": "442",
+        "officialEnglishTitle": "Blueberry, Bilberry Vaccinium myrtillus",
+        "processing": "No treatment",
+        "ingredientClassification": "Berries",
+        "foodUseClassification": "Berries",
+        "ediblePortionPercent": 100,
+        "captureKind": "Selected identity facts transcribed from successful web tool open; direct requests returned403. This is not a hash of the publisher HTML."
+      }
+    },
+    "livePageVsPinnedComposition": "Web pages verify IDs/species/raw-berry classification only. Numerical nutrients remain Release20; a newer live fibre value is not silently substituted."
+  },
+  "role": "CODEX2_EXISTING_PRIORITY77_SOURCE_SUPPORT_ONLY",
+  "countedAsOwnNewRecipeCandidate": false,
+  "overlapAudit": "Exact-ID membership confirmed in priority77. No production or Codex2 worktree changes."
+}
