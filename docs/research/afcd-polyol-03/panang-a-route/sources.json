@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "startingHead": "98e1b21ee5bdd4745a041024abb0dde851bbb806",
+  "sourceFilesLfSha256": {
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/food-records.json": "2f8ff76b97848294c28195bb92c6d202e9754168ddb169d30ee5e8610d2c2b9b",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+  },
+  "externalObservations": [
+    {
+      "id": "FTO_1L_08_G",
+      "basis": "per100g",
+      "declaredCarbohydrate": 0.8,
+      "url": "https://www.fairtradeoriginal.nl/product/biologische-kokosmelk-1-l/"
+    },
+    {
+      "id": "VALCOM_PANAENG",
+      "basis": "per100g",
+      "declaredCarbohydrate": 3.8,
+      "url": "https://www.coles.com.au/product/valcom-panaeng-curry-paste-210g-6823683"
+    },
+    {
+      "id": "RED_BOAT_4113",
+      "basis": "per100ml",
+      "declaredCarbohydrate": 0.5,
+      "url": "https://ctfood.se/fish-sauce-12x500ml-red-boat/?language=vi"
+    },
+    {
+      "id": "THAI_KAFFIR_N35_TOTAL",
+      "basis": "per100g",
+      "declaredCarbohydrate": 21.71,
+      "url": "https://inmu.mahidol.ac.th/thaifcd/foodsearch/food_name_result?mode=food_group_result&selected_id=246&selected_dbcode=STD",
+      "availablePoint": null
+    }
+  ],
+  "composition": [
+    {
+      "id": "F322",
+      "kind": "FINELI_NATIVE_POINT",
+      "nativeId": "322",
+      "name": "KUKKAKAALI",
+      "availablePer100g": 2.35,
+      "nativeField": "per100g.available_carbohydrate_g_per_100g"
+    },
+    {
+      "id": "F11134",
+      "kind": "FINELI_NATIVE_POINT",
+      "nativeId": "11134",
+      "name": "BASILIKA, TUORE",
+      "availablePer100g": 1.06,
+      "nativeField": "per100g.available_carbohydrate_g_per_100g"
+    },
+    {
+      "id": "A002806",
+      "kind": "AFCD_NATIVE_POINT",
+      "nativeId": "F002806",
+      "name": "Chicken, thigh, lean flesh, raw",
+      "availablePer100g": 0,
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g"
+    },
+    {
+      "id": "FOODIN_ERYTHRITOL",
+      "kind": "EXPLICIT_LABEL_DIFFERENCE",
+      "nativeId": "foodin-erythritol-200g-label-2026-10-24",
+      "availablePer100g": 0,
+      "carbohydrate": 100,
+      "polyols": 100
+    },
+    {
+      "id": "372",
+      "nativeId": "372",
+      "kind": "FINELI_NATIVE_POINT",
+      "name": "PAPU, VIHREÄ TAITEPAPU, TUORE",
+      "nativeField": "available_carbohydrate_g_per_100g",
+      "availablePer100g": 4.754
+    },
+    {
+      "id": "F006107",
+      "nativeId": "F006107",
+      "kind": "AFCD_NATIVE_POINT",
+      "name": "Nut, peanut, with skin, raw, unsalted",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 8.9
+    }
+  ],
+  "giBinding": {
+    "nativeId": "op142-vegetable-imputation40",
+    "value": 40,
+    "allowedCompositionIds": [
+      "372",
+      "F322"
+    ],
+    "meaning": "Existing named nonstarchy vegetable PI coding; not measured ingredient GI or new category mean."
+  }
+}

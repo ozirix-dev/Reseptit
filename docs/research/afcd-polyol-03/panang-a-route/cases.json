@@ -1,0 +1,167 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "cases": [
+    {
+      "recipeId": "panang-curry-kanalla-vhh",
+      "classification": "CONDITIONAL_A_ARITHMETIC_SOURCE_HOLD",
+      "arithmeticProfile": "EXISTING_A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/panang-curry-kanalla-vhh.md",
+        "en": "kaannokset/en/paaruoat/panang-curry-kanalla-vhh.md",
+        "sv": "kaannokset/sv/paaruoat/panang-curry-kanalla-vhh.md",
+        "th": "kaannokset/th/paaruoat/panang-curry-kanalla-vhh.md"
+      },
+      "recipeSha256Lf": {
+        "fi": "acb33f7020a710d3eac23067365abf80c449599c4714f2b06f570b2266c3eefe",
+        "en": "5847014f8f759fdc024b3a9d0a7e6af738a5dcf6d533b5c4a18edf3c36be40c0",
+        "sv": "a2b86eea620374c36e4bb62baca8d7d134f72b09c3792ef796c3498b707c64fa",
+        "th": "b82394a1aac8983bf1871b635690862c3f6a4f0ee22eb7d9bf6f5e20d8f58cea"
+      },
+      "originalIngredients": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "nahatonta broilerin reisilihaa"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "Mae Ploy Panang -currytahnaa"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "vihreitä papuja",
+          "note": "puolitettuina"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "suolattomia maapähkinöitä",
+          "note": "rouhittuna"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "kaffirlimetinlehtiä, suikaleina"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
+        },
+        {
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "thaibasilikaa"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "kukkakaaliriisiä",
+          "note": "lisukkeeksi"
+        }
+      ],
+      "ingredients": [
+        {
+          "originalIndex": 0,
+          "name": "nahatonta broilerin reisilihaa",
+          "grams": 600,
+          "sourceId": "A002806",
+          "giId": null
+        },
+        {
+          "originalIndex": 1,
+          "name": "Fairtrade Original coconut milk 1 L",
+          "grams": 400,
+          "sourceId": "FTO_1L_08_G",
+          "giId": null
+        },
+        {
+          "originalIndex": 2,
+          "name": "Valcom Panaeng 210 g",
+          "grams": 30,
+          "sourceId": "VALCOM_PANAENG",
+          "giId": null
+        },
+        {
+          "originalIndex": 3,
+          "name": "vihreitä papuja",
+          "grams": 150,
+          "sourceId": "372",
+          "giId": "op142-vegetable-imputation40"
+        },
+        {
+          "originalIndex": 4,
+          "name": "Unsalted raw skin-on peanuts, crushed",
+          "grams": 30,
+          "sourceId": "F006107",
+          "giId": null
+        },
+        {
+          "originalIndex": 5,
+          "name": "kaffirlimetinlehtiä, suikaleina",
+          "grams": 2,
+          "sourceId": "THAI_KAFFIR_N35_TOTAL",
+          "giId": null
+        },
+        {
+          "originalIndex": 6,
+          "name": "Red Boat 40N 500 ml CT Food 4113",
+          "grams": null,
+          "sourceId": "RED_BOAT_4113",
+          "giId": null,
+          "millilitres": 15
+        },
+        {
+          "originalIndex": 7,
+          "name": "Foodin-erytritolia",
+          "grams": 4,
+          "sourceId": "FOODIN_ERYTHRITOL",
+          "giId": null
+        },
+        {
+          "originalIndex": 8,
+          "name": "thaibasilikaa",
+          "grams": 20,
+          "sourceId": "F11134",
+          "giId": null
+        },
+        {
+          "originalIndex": 9,
+          "name": "kukkakaaliriisiä",
+          "grams": 500,
+          "sourceId": "F322",
+          "giId": "op142-vegetable-imputation40"
+        }
+      ],
+      "preparationDecision": "Simmer the green beans in sauce as in the original; add crushed raw skin-on peanuts and sliced fresh makrut lime leaves at the end; serve all sauce and heated cauliflower rice. Stir the named coconut milk before weighing. Measure fish sauce directly.",
+      "requiredDecisions": [
+        "EXACT_PRODUCT_SOURCE_AND_CONTENT_OWNER_REVIEW",
+        "GREEN_CURRY_AU64_VS_UK173_SAME_UPC_LABEL_VERSION",
+        "SQUID700_PRIMARY_LABEL_AND_G_VS_ML_UNIT_RESOLUTION",
+        "THAI_N35_TOTAL_CAP_ADMISSION_WITH_AVAILABLE_UNKNOWN",
+        "GK_ONLY_MACRO_VERSION_COMPATIBILITY"
+      ],
+      "ownerApproval": false,
+      "sourceQualified": false,
+      "publicationAuthorized": false,
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "noNewGiConstants": true,
+      "minorBOmissionProfileActivated": false,
+      "inputSha256": "3439d3bb36c28dd06df3d8dbfc60a0a95f970d53011550c0a449743271954c03"
+    }
+  ]
+}
