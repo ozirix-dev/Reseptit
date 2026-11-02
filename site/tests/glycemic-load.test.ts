@@ -38,7 +38,7 @@ async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding
  const original=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-source-text.json'),'utf8'));if(Object.hasOwn(original,relative))return original[relative];
  const op142=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-operation142/historical-main.json'),'utf8'));
  const op142Text=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-operation142/historical-source-text.json'),'utf8'));if(Object.hasOwn(op142Text,relative))return op142Text[relative];
- if(relative==='docs/nutrition/glycemic-load-recipe-bindings.json'){const value=JSON.parse(text);for(const key of ['recipes','calculationInputs','calculationEvidence'])value[key]={...value[key],...op142.originalBindings[key],...ehold.originalBindings[key]};return JSON.stringify(value);}
+ if(relative==='docs/nutrition/glycemic-load-recipe-bindings.json'){const value=JSON.parse(text);const afcd=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/afcd-field-bindings/before.json'),'utf8'));Object.assign(value.calculationEvidence,afcd.previousCalculationEvidence);for(const key of ['recipes','calculationInputs','calculationEvidence'])value[key]={...value[key],...op142.originalBindings[key],...ehold.originalBindings[key]};return JSON.stringify(value);}
  if(relative==='docs/nutrition/glycemic-load-pilot-input.json'){const value=JSON.parse(text),ids=new Set([...op142.recipeIds,...ehold.recipeIds]);return JSON.stringify({...value,recipes:value.recipes.filter((r:any)=>!ids.has(r.recipeId)).concat(op142.selectedInputs,ehold.selectedInputs)});}
  if(relative==='tmp/nutrition/audit.json'){const v=JSON.parse(text),old=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-7/main-baseline.json'),'utf8')).selectedNutritionInventory;return JSON.stringify({...v,inventory:v.inventory.map((r:any)=>old.find((x:any)=>x.recipe_id===r.recipe_id)??r)});}
  if(relative==='tmp/nutrition/glycemic-load-pilot.json')return JSON.stringify(await historicalSourceReviewView(relative,JSON.parse(text)));
@@ -2509,4 +2509,89 @@ test("exact reviewed text rejects changed preparation even when structural recip
  assert.equal(exactRecipeTextBindingMatches(hash,original.replaceAll('\n','\r\n')),true);
  assert.equal(exactRecipeTextBindingMatches(hash,changed),false);
  assert.equal(exactRecipeTextBindingMatches(undefined,original),false);
+});
+
+// Current data, bypassing the frozen-release readFile wrapper above.
+const currentAfcdJson = async (relative: string): Promise<any> => JSON.parse(await actualReadFile(path.resolve(import.meta.dirname, '../..', relative), 'utf8'));
+async function afcdValueHash(value: unknown): Promise<string> {
+  const {createHash} = await import('node:crypto');
+  return createHash('sha256').update(JSON.stringify(value)).digest('hex');
+}
+
+test('AFCD field correction changes exactly three available-carbohydrate values and two evidence bindings', async () => {
+  const before = await currentAfcdJson('docs/nutrition/afcd-field-bindings/before.json');
+  const foods = await currentAfcdJson('docs/nutrition/food-records.json');
+  const bindings = await currentAfcdJson('docs/nutrition/glycemic-load-recipe-bindings.json');
+  const input = await currentAfcdJson('docs/nutrition/glycemic-load-pilot-input.json');
+  assert.deepEqual(before.fixes.map((f: any) => [f.id, f.after]), [
+    ['afcd-F006573-release-3', 7.7], ['afcd-F007619-release-3', 6.9], ['afcd-F002384-release-3', 2.8],
+  ]);
+  for (const fix of before.fixes) {
+    const food = foods.find((f: FoodRecord) => f.id === fix.id);
+    assert.equal(food.carbohydrateDefinition, 'EU_AVAILABLE');
+    assert.equal(food.per100g.carbohydrate, fix.source.without);
+    assert.equal(fix.after, fix.source.without);
+    assert.equal(fix.before, fix.source.with);
+    const dependencies = input.recipes.filter((r: GlycemicLoadRecipeInput) => r.ingredients.some(i => i.fineliRecordId === fix.id)).map((r: GlycemicLoadRecipeInput) => r.recipeId);
+    assert.deepEqual(dependencies, fix.nativeId === 'F006573' ? [before.affectedIds[0]] : fix.nativeId === 'F007619' ? [before.affectedIds[1]] : []);
+  }
+  const otherFoodFields = structuredClone(foods);
+  for (const food of otherFoodFields) if (before.fixes.some((f: any) => f.id === food.id)) delete food.per100g.carbohydrate;
+  assert.equal(await afcdValueHash(otherFoodFields), before.foodsOtherThanThreeCarbohydrateFieldsSha256);
+  const otherBindings = structuredClone(bindings);
+  for (const id of before.affectedIds) delete otherBindings.calculationEvidence[id];
+  assert.equal(await afcdValueHash(otherBindings), before.bindingsOtherThanTwoEvidenceHashesSha256);
+  assert.equal(await afcdValueHash(input), before.inputSha256);
+  for (const id of ['siemengranola-jogurtilla', 'vhh-runebergintortut']) {
+    const macro = await currentAfcdJson(`docs/nutrition/calculations/${id}.json`);
+    const raspberry = macro.ingredients.find((i: any) => i.record?.id === 'afcd-F007619-release-3');
+    assert.equal(raspberry.record.per100g.carbohydrate, 6.9, 'independent macro copy already correct');
+  }
+});
+
+test('AFCD current pipeline changes only peach GK and held raspberry detail; 324 full results remain identical', async () => {
+  const before = await currentAfcdJson('docs/nutrition/afcd-field-bindings/before.json');
+  const report = await currentAfcdJson('tmp/nutrition/glycemic-load-pilot.json');
+  const foods = await currentAfcdJson('docs/nutrition/food-records.json');
+  const gis = (await currentAfcdJson('docs/nutrition/glycemic-index-records.json')).records;
+  const input = await currentAfcdJson('docs/nutrition/glycemic-load-pilot-input.json');
+  const bindings = await currentAfcdJson('docs/nutrition/glycemic-load-recipe-bindings.json');
+  assert.equal(report.results.length, 326);
+  assert.deepEqual(report.summary, before.summary);
+  const changed: string[] = [];
+  for (const result of report.results) {
+    if (await afcdValueHash(result) !== before.resultHashes[result.recipeId]) changed.push(result.recipeId);
+    if (before.affectedIds.includes(result.recipeId)) {
+      const recipe = input.recipes.find((r: GlycemicLoadRecipeInput) => r.recipeId === result.recipeId);
+      assert.deepEqual(result, calculateGlycemicLoad(recipe, foods, gis), 'fresh pipeline uses corrected composition');
+      const evidence = glycemicLoadEvidenceHash(recipe, foods, gis);
+      assert.equal(evidence, bindings.calculationEvidence[result.recipeId]);
+      assert.equal(evidence, report.calculationEvidenceHashes[result.recipeId]);
+      assert.notEqual(evidence, before.previousCalculationEvidence[result.recipeId], 'old evidence cannot authorize new source values');
+      assert.ok(!report.calculationEvidenceMismatches.includes(result.recipeId));
+      const old = before.selectedResults.find((r: any) => r.recipeId === result.recipeId);
+      assert.equal(result.status, old.status);
+      assert.deepEqual(result.blockers, old.blockers);
+      assert.equal(result.confidence, old.confidence);
+    }
+  }
+  assert.deepEqual(changed.sort(), [...before.affectedIds].sort());
+  const peach = report.results.find((r: any) => r.recipeId === before.affectedIds[0]);
+  assert.ok(Math.abs(peach.unroundedGlycemicLoadPerServing - 3.96885) < 1e-12);
+  assert.equal(peach.glycemicLoadPerServing, 3.97);
+  assert.equal(roundGlycemicLoadForDisplay(peach.glycemicLoadPerServing), 4);
+  const raspberry = report.results.find((r: any) => r.recipeId === before.affectedIds[1]);
+  assert.equal(raspberry.status, 'INSUFFICIENT SOURCE DATA');
+  assert.equal(raspberry.glycemicLoadPerServing, null);
+  assert.match(raspberry.blockers.join(' '), /kookosjauhoa/);
+  assert.ok(Math.abs(raspberry.ingredients.find((i: any) => i.fineliRecordId === 'afcd-F007619-release-3').giContribution - 0.263925) < 1e-12);
+  assert.equal(report.results.find((r: any) => r.recipeId === 'siskonmakkarakeitto-juurekset').glycemicLoadPerServing, 7.04);
+});
+
+test('AFCD public data retains the peach display category and does not publish the held porridge', async () => {
+  const {glycemicLoadPilotResults} = await import('../src/generated/glycemic-load-pilot.generated');
+  const peach = publishedGlycemicLoadForRecipe('valimerellinen-ricotta-persikkakulho', glycemicLoadPilotResults)!;
+  assert.equal(peach.glycemicLoadPerServing, 3.97);
+  assert.deepEqual(classifyGlycemicLoad(3.97), classifyGlycemicLoad(4.08));
+  assert.equal(publishedGlycemicLoadForRecipe('pellava-puuro-pahkinoilla', glycemicLoadPilotResults), null);
 });
